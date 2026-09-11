@@ -5,7 +5,7 @@
   "author": "PotatoForge",
   "url": "https://huggingface.co/PotatoForge/Kroma-INT8-Quants",
   "created_at": "2026-08-09T18:18:13.000Z",
-  "updated_at": "2026-08-19T15:10:27.000Z",
+  "updated_at": "2026-09-11T08:32:24.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-to-image",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 35453939051,
-  "storage_human": "35.5 GB",
+  "storage_bytes": 44579601753,
+  "storage_human": "44.6 GB",
   "base_model": "lodestones/Kroma",
   "formats": [
     "safetensors"

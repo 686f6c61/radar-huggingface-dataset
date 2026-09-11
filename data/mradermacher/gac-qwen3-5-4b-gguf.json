@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mradermacher/GAC-Qwen3.5-4B-GGUF",
+  "slug": "mradermacher-gac-qwen3-5-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/GAC-Qwen3.5-4B-GGUF",
+  "created_at": "2026-09-11T10:27:10.000Z",
+  "updated_at": "2026-09-11T10:27:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 333514240,
+  "parameters_human": "333.5M",
+  "storage_bytes": 1039318464,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seznam – najdu tam, co neznám",
+      "url": "https://www.seznam.cz/",
+      "snippet": "Nejnavštěvovanější český internetový portál nabízející vyhledávač, e-mail, aktuální zprávy, předpověď počasí a odkazy, které se …"
+    },
+    {
+      "title": "Qwen3.5-4B Uncensored Aggressive Release (GGUF) : r/LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1rjp08s/qwen354b_uncensored_aggressive_release_gguf/",
+      "snippet": "04.03.2026 ... 196 votes, 59 comments. Hey everyone, made an uncensored version of Qwen3.5-4B - one of the brand new small models Qwen dropped these days."
+    },
+    {
+      "title": "Něco je špatně, opravář je na cestě | TV program dnes, večer ...",
+      "url": "https://tv.seznam.cz/",
+      "snippet": "Televizní program českých i zahraničních stanic. V přehledném TV programu od Seznamu zjistíte, co dávají v TV dnes, večer, zítra a …"
+    },
+    {
+      "title": "LocalAI models",
+      "url": "https://localai.io/docs/gallery.html",
+      "snippet": "License: Apache 2.0 (Qwen3.5-4B target) / MIT (z-lab DFlash drafter). To install the model with the CLI, run: local-ai models install qwen3.5-4b-dflash. See ..."
+    },
+    {
+      "title": "Seznam – najdu tam, co neznám",
+      "url": "https://www.seznam.cz/500",
+      "snippet": "Jejda, tak tohle se nepovedlo. Pracujeme na opravě. Přejít na Seznam.cz"
+    }
+  ]
+}

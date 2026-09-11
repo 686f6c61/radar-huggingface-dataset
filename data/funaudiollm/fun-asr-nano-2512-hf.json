@@ -5,7 +5,7 @@
   "author": "FunAudioLLM",
   "url": "https://huggingface.co/FunAudioLLM/Fun-ASR-Nano-2512-hf",
   "created_at": "2026-05-24T11:25:24.000Z",
-  "updated_at": "2026-09-09T17:01:17.000Z",
+  "updated_at": "2026-09-10T11:07:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 16,
-  "downloads_30d": 22514,
+  "downloads_30d": 27726,
   "trending_score": 0,
   "parameters": 829791840,
   "parameters_human": "829.8M",

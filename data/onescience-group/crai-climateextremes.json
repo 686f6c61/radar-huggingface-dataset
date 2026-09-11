@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/CRAI-ClimateExtremes",
+  "slug": "onescience-group-crai-climateextremes",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/CRAI-ClimateExtremes",
+  "created_at": "2026-09-11T09:57:09.000Z",
+  "updated_at": "2026-09-11T09:57:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "crai_climateextremes",
+    "OneScience",
+    "Earth Science",
+    "Climate Extremes",
+    "Spatial Reconstruction",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign in - Claude",
+      "url": "https://claude.ai/",
+      "snippet": "Claude is an AI assistant by Anthropic, designed to assist with creative tasks like drafting websites, graphics, documents, and code …"
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.ai/login-Claude",
+      "snippet": "Claude is Anthropic's AI, built for problem solvers. Tackle complex challenges, analyze data, write code, and think through your …"
+    },
+    {
+      "title": "Weekly Performance Report - assets.claude.ai",
+      "url": "https://assets.claude.ai/brand/artifacts/cowork-weekly-performance-report.html",
+      "snippet": "Acme Analytics · Mar 17 – 23, 2026 Revenue Users"
+    },
+    {
+      "title": "SCVI Hyperparameter Screen — Claude Science - assets.claude.ai",
+      "url": "https://assets.claude.ai/brand/artifacts/product/science/artifact-hero-scvi-screen.html",
+      "snippet": "Dispatching the 8-arm scVI sweep to lab_cluster A100s — n_latent ∈ {10, 20, 30, 50} × n_layers ∈ {1, 2} , 40k cells × 2,000 HVGs, …"
+    },
+    {
+      "title": "assets.claude.ai",
+      "url": "https://assets.claude.ai/Fonts/AnthropicSans-Text-SemiboldItalic-Static.otf",
+      "snippet": "Ã¼ \" - 4 ; B L S \\ c l s } â€ž â€˜ Ëœ Å¸ Â¨ Â± Â¸ Â¿ Ã† Ã Ã” Ã Ã¤ Ã« Ã² Ã¹ ! ( 3 > J W d s â€š Â Å“ Â© Â¶ Ãƒ Ã ..."
+    }
+  ]
+}

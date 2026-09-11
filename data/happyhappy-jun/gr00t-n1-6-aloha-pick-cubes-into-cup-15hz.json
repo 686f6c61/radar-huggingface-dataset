@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "happyhappy-jun/gr00t-n1.6-aloha-pick-cubes-into-cup-15hz",
+  "slug": "happyhappy-jun-gr00t-n1-6-aloha-pick-cubes-into-cup-15hz",
+  "author": "happyhappy-jun",
+  "url": "https://huggingface.co/happyhappy-jun/gr00t-n1.6-aloha-pick-cubes-into-cup-15hz",
+  "created_at": "2026-09-11T09:37:02.000Z",
+  "updated_at": "2026-09-11T10:48:12.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "vla",
+    "gr00t",
+    "aloha",
+    "imitation-learning",
+    "base_model:nvidia/GR00T-N1.6-3B",
+    "base_model:finetune:nvidia/GR00T-N1.6-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19720133136,
+  "storage_human": "19.7 GB",
+  "base_model": "nvidia/GR00T-N1.6-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Golden Tulip Hotel Reiss Kassel",
+      "url": "https://hotelreiss.de/",
+      "snippet": "Im Herzen Kassels gelegen, nur wenige Gehminuten vom Stadtzentrum entfernt, begrüßen wir Sie im Golden Tulip Kassel Hotel …"
+    },
+    {
+      "title": "Kontakt - Golden Tulip Hotel Reiss Kassel",
+      "url": "https://hotelreiss.de/kontakt/",
+      "snippet": "Golden Tulip Kassel Hotel Reiss Werner-Hilpert-Straße 24 D-34117 Kassel Buchung: +49 561 521400 (7 Tage die Woche ab 8.00 …"
+    },
+    {
+      "title": "Sales / Marketing Manager mit KI-Erfahrung (m/w/d) gesucht!",
+      "url": "https://hotelreiss.de/sales-marketing-manager-mit-ki-erfahrung-m-w-d-gesucht/",
+      "snippet": "May 5, 2026 · Kassel lebt von starken Unternehmen, kurzen Wegen und persönlichem Miteinander. Genau hier setzt das Golden …"
+    },
+    {
+      "title": "documenta16 Special Offer · 12. Juni – 19. September 2027",
+      "url": "https://hotelreiss.de/documenta16-special-offer-12-juni-19-september-2027/",
+      "snippet": "Jun 30, 2026 · Erleben Sie Kassel während der documenta16 und sichern Sie sich frühzeitig Ihr Zimmer im Golden Tulip Kassel Hotel …"
+    },
+    {
+      "title": "Günstige Unterkunft Kassel Reiss Apartments - Golden Tulip Hotel …",
+      "url": "https://hotelreiss.de/gunstige-unterkunft-kassel-reiss-apartments/",
+      "snippet": "Preiswerte Unterkunft im Herzen von Kassel – modern eingerichtetes Apartment mit Hotelkomfort. Ideal für Kurzurlaub, Business …"
+    }
+  ]
+}

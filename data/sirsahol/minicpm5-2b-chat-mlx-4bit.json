@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/MiniCPM5-2B-chat-mlx-4bit",
+  "slug": "sirsahol-minicpm5-2b-chat-mlx-4bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/MiniCPM5-2B-chat-mlx-4bit",
+  "created_at": "2026-09-11T02:04:13.000Z",
+  "updated_at": "2026-09-11T02:14:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "4-bit",
+    "conversational",
+    "text-generation",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 1416035216,
+  "storage_human": "1.4 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign In | Microsoft Teams",
+      "url": "https://www.microsoft.com/en-gb/microsoft-teams/log-in?msockid=00ee404d741a660311fe579c7595670f",
+      "snippet": "Microsoft Teams: Bring everyone together in one place to meet, chat, call, and collaborate."
+    },
+    {
+      "title": "Microsoft Teams",
+      "url": "https://teams.microsoft.com/",
+      "snippet": "Microsoft Teams ... Microsoft Teams"
+    },
+    {
+      "title": "Microsoft Teams",
+      "url": "https://teams.microsoft.com/convene/meetings?embed=true&isanonymous=true",
+      "snippet": "Microsoft Teams enhances collaboration with features like chat, video calls, file sharing, and meetings for efficient communication and …"
+    },
+    {
+      "title": "Sign in to your account - teams.microsoft.com",
+      "url": "https://teams.microsoft.com/v2/?tenantId=c8f171fb-8e12-4c12-86ff-9108c97b8963",
+      "snippet": "Terms of use Privacy & cookies ..."
+    },
+    {
+      "title": "Microsoft Teams",
+      "url": "https://dod.teams.microsoft.us/convene/",
+      "snippet": "Access Microsoft Teams to collaborate, communicate, and manage projects efficiently."
+    }
+  ]
+}

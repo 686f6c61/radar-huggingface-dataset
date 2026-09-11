@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "CobrIX/CobrIX-1.5-preview-Coder-Full-72B-A18B-GGUF",
+  "slug": "cobrix-cobrix-1-5-preview-coder-full-72b-a18b-gguf",
+  "author": "CobrIX",
+  "url": "https://huggingface.co/CobrIX/CobrIX-1.5-preview-Coder-Full-72B-A18B-GGUF",
+  "created_at": "2026-09-11T01:31:21.000Z",
+  "updated_at": "2026-09-11T01:42:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "tags": [
+    "gguf",
+    "CobrIX-1.5-Preview-Coder-Full",
+    "mixture-of-experts",
+    "qwen3-5",
+    "code",
+    "cybersecurity",
+    "en",
+    "pt",
+    "base_model:CobrIX/CobrIX-1.5-preview-Coder-Full-72B-A18B",
+    "base_model:quantized:CobrIX/CobrIX-1.5-preview-Coder-Full-72B-A18B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 71769534976,
+  "parameters_human": "71.77B",
+  "storage_bytes": 94718601152,
+  "storage_human": "94.7 GB",
+  "base_model": "CobrIX/CobrIX-1.5-preview-Coder-Full-72B-A18B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gmail",
+      "url": "https://mail.google.com/mail?hl=en",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    }
+  ]
+}

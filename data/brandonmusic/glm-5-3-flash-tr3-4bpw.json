@@ -5,7 +5,7 @@
   "author": "brandonmusic",
   "url": "https://huggingface.co/brandonmusic/GLM-5.3-Flash-tr3-4bpw",
   "created_at": "2026-08-27T03:33:53.000Z",
-  "updated_at": "2026-09-04T05:13:03.000Z",
+  "updated_at": "2026-09-10T13:33:01.000Z",
   "license": "shapleymcg-license-1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -34,7 +34,7 @@
     "4-bit",
     "region:us"
   ],
-  "likes": 37,
+  "likes": 38,
   "downloads_30d": 9012,
   "trending_score": 8,
   "parameters": 87811157118,

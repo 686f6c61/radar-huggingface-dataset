@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "happyhappy-jun/gr00t-n1.6-aloha-pick-cubes-into-cup",
+  "slug": "happyhappy-jun-gr00t-n1-6-aloha-pick-cubes-into-cup",
+  "author": "happyhappy-jun",
+  "url": "https://huggingface.co/happyhappy-jun/gr00t-n1.6-aloha-pick-cubes-into-cup",
+  "created_at": "2026-09-11T01:32:38.000Z",
+  "updated_at": "2026-09-11T01:35:10.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "vla",
+    "gr00t",
+    "aloha",
+    "imitation-learning",
+    "base_model:nvidia/GR00T-N1.6-3B",
+    "base_model:finetune:nvidia/GR00T-N1.6-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26293498208,
+  "storage_human": "26.3 GB",
+  "base_model": "nvidia/GR00T-N1.6-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Красавица и чудовище (мультфильм, 1991) - смотреть онлайн в …",
+      "url": "https://yandex.ru/video/preview/8841093975776531546",
+      "snippet": "Dec 15, 2023 · Растопить лед в его сердце и вернуть ему человеческий облик, сняв заклятие, может только прекрасная …"
+    },
+    {
+      "title": "Красавица и Чудовище - Мультфильм (1991) – смотреть видео …",
+      "url": "https://my.mail.ru/mail/myalkat/video/_myvideo/3553.html",
+      "snippet": "Смотреть бесплатно видеоальбом Елены Артамоновой в социальной сети Мой Мир."
+    },
+    {
+      "title": "Видео Красавица и Чудовище - Мультфильм (1991) | OK.RU",
+      "url": "https://yandex.ru/video/preview/5966970989674234897",
+      "snippet": "Jul 24, 2025 · Источник видео: ОК · У нас также есть телеграм канал! Там мы публикуем фильмы и мультфильмы, которые вы …"
+    },
+    {
+      "title": "Красавица и чудовище (мультфильм, 1991) - Watch online in …",
+      "url": "https://tv.yandex.com/video/preview/4224079436606044121",
+      "snippet": "Mar 13, 2024 · Однажды в ворота замка, где жил молодой принц, с мольбой впустить её погреться постучала нищая старушка."
+    },
+    {
+      "title": "Красавица и чудовище, мультфильм 1991",
+      "url": "https://www.kinofilms.ua/ru/movie/7000_Beauty_and_the_Beast/",
+      "snippet": "Sep 29, 1991 · Растопить лед в его сердце и вернуть ему человеческий облик, сняв заклятие, может только прекрасная …"
+    }
+  ]
+}

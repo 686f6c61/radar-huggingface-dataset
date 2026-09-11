@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "sunilnomula/HW1-financial-news-sentiment",
+  "slug": "sunilnomula-hw1-financial-news-sentiment",
+  "author": "sunilnomula",
+  "url": "https://huggingface.co/sunilnomula/HW1-financial-news-sentiment",
+  "created_at": "2026-09-11T01:35:13.000Z",
+  "updated_at": "2026-09-11T03:11:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 96794024,
+  "storage_human": "97 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/?ui=de-DE&rs=DE",
+      "snippet": "Sign in to access your Outlook email and manage your messages efficiently."
+    },
+    {
+      "title": "Anmelden bei Outlook | Microsoft 365",
+      "url": "https://www.microsoft.com/de-de/microsoft-365/outlook/log-in?msockid=0aa20af2372d66722b591d2336c067a5",
+      "snippet": "Melden Sie sich mit Microsoft 365 bei Outlook an, um auf Ihre E-Mail, Ihren Kalender und andere Funktionen zuzugreifen. Laden Sie …"
+    },
+    {
+      "title": "Microsoft Outlook für persönliche E-Mails und Kalender | Microsoft 365",
+      "url": "https://www.microsoft.com/de-de/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?msockid=0aa20af2372d66722b591d2336c067a5",
+      "snippet": "Greifen Sie in der Outlook-App auf Ihrem Desktop- oder Mobilgerät auf private, berufliche oder schulische E-Mails zu, einschließlich …"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/mini/opxdeeplink/mail/inbox",
+      "snippet": "Access your email, calendar, and contacts with Outlook."
+    },
+    {
+      "title": "Outlook – free personal email and calendar from Microsoft",
+      "url": "https://outlook.live.com/mail/oauthRedirect.html",
+      "snippet": "Access free Outlook email and calendar, plus Office Online apps like Word, Excel, and PowerPoint."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Joyfulxp/DeepSeek-V4-Flash-Vision-Exp-Abliterated",
+  "slug": "joyfulxp-deepseek-v4-flash-vision-exp-abliterated",
+  "author": "Joyfulxp",
+  "url": "https://huggingface.co/Joyfulxp/DeepSeek-V4-Flash-Vision-Exp-Abliterated",
+  "created_at": "2026-09-08T07:08:53.000Z",
+  "updated_at": "2026-09-11T02:55:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "abliterated",
+    "uncensored",
+    "mixture-of-experts",
+    "vision",
+    "multimodal",
+    "fp8",
+    "dspark",
+    "vllm",
+    "overlay",
+    "diff",
+    "bayes-l2.0",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 139,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2986545168,
+  "storage_human": "3.0 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Class 8 Sanskrit Chapter 9 सप्तभगिन्यः - Sanskrit Dhara Vahini",
+      "url": "https://sanskritdharavahini.com/class-8-sanskrit-chapter-9-%E0%A4%B8%E0%A4%AA%E0%A5%8D%E0%A4%A4%E0%A4%AD%E0%A4%97%E0%A4%BF%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%83/",
+      "snippet": "NCERT solutions class 8 Sanskrit Chapter 9 सप्तभगिन्यः पाठ का हिन्दी सोल्यूशन और पाठ्यपुस्तक के सभी प्रश्नो को सरल …"
+    },
+    {
+      "title": "RBSE Solution for Class 8 Sanskrit Chapter 9 सप्तभगिन्यः",
+      "url": "https://studylearner.in/class-8-sanskrit-chapter-9/",
+      "snippet": "Jan 15, 2023 · भारतवर्ष अपनी भौगोलिक विशेषताओं का एक अनोखा संगम है। ‘सप्तभगिनी’ यह एक उपमाना हैं उत्तरपूर्व के सात …"
+    },
+    {
+      "title": "NCERT Solutions for Class 8 Sanskrit Chapter 9 सप्तभगिन्यः",
+      "url": "https://www.ncertbooks.guru/ncert-solutions-for-class-8-sanskrit-chapter-9/",
+      "snippet": "Nov 6, 2023 · भारतवर्ष अपनी भौगोलिक विशेषताओं का एक अनोखा संगम है। ‘सप्तभगिनी’ यह एक उपनाम है। उत्तर-पूर्व के सात …"
+    },
+    {
+      "title": "सप्तभगिन्य: Class 8 Sanskrit Chapter 9 Hindi Translation - रुचिरा …",
+      "url": "https://cclchapter.com/saptbhaginya-class-8-sanskrit-chapter-9-translation-in-hindi-vyakhya-ruchira-ncert-solution/",
+      "snippet": "इस प्रकार सात बहनों के समूह में ये राज्य हैं — अरुणाचल प्रदेश, असम, मणिपुर, मिजोरम, मेघालय, नागालैंड और त्रिपुरा। हालांकि …"
+    },
+    {
+      "title": "NCERT Solutions for Class 8th Sanskrit Chapter 9 - Blogger",
+      "url": "https://dkgyankendra.blogspot.com/2023/10/ncert-solutions-for-class-8th-sanskrit.html",
+      "snippet": "सप्तभगिनी-यह एक उपनाम है। उत्तर-पूर्व के सात राज्य विशेष को उक्त उपाधि दी गई है। इन राज्यों का प्राकृतिक सौन्दर्य …"
+    }
+  ]
+}

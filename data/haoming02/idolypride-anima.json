@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Haoming02/IdolyPride-Anima",
+  "slug": "haoming02-idolypride-anima",
+  "author": "Haoming02",
+  "url": "https://huggingface.co/Haoming02/IdolyPride-Anima",
+  "created_at": "2026-09-11T09:46:34.000Z",
+  "updated_at": "2026-09-11T09:49:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:circlestone-labs/Anima",
+    "base_model:adapter:circlestone-labs/Anima",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 284882077,
+  "storage_human": "285 MB",
+  "base_model": "circlestone-labs/Anima",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kostenloser KI-Bildgenerator | Craiyon",
+      "url": "https://www.craiyon.com/de",
+      "snippet": "Erstelle KI-Bilder aus Text mit Craiyon. Generiere, entdecke und bearbeite Bilder online."
+    },
+    {
+      "title": "Erstelle+ein+bild+eines+sonnenuntergangs+über+einem+weiß+getünchten …",
+      "url": "https://www.craiyon.com/en/search/erstelle%2Bein%2Bbild%2Beines%2Bsonnenuntergangs%2B%C3%BCber%2Beinem%2Bwei%C3%9F%2Bget%C3%BCnchten%2Bklippendorf%2Bam%2Bmeer%2C%2Bwarm%2Borange%E2%80%91rosa%2Bhimmel%2C%2Bkuppeln%2Bund%2Bwindm%C3%BChlen%2Bim%2Bgoldenen%2Blicht%2Bleuchtend%2C%2Bdicke%2Bstrukturierte%2Bpinselstriche%2C%2Bkr%C3%A4ftige%2B%C3%B6lfarben%2C%2Bweiche%2Batmosph%C3%A4rische%2Btiefe%2C%2Bruhige%2Bmediterrane%2Bstimmung",
+      "snippet": "Images of …"
+    },
+    {
+      "title": "Erstelle Bilder aus Text mit 30 KI-Modellen - Picsart",
+      "url": "https://picsart.com/de/ai-image-generator/",
+      "snippet": "Gib einen Prompt ein, der dein Thema, Stil und Stimmung beschreibt, und die KI erzeugt ein passendes Bild. Mit 48 Stilfiltern und 100 …"
+    },
+    {
+      "title": "KI Bilderzeuger: Schnell, kostenlos, keine Anmeldung, alle KI-Modelle",
+      "url": "https://creator.nightcafe.studio/de/ai-image-generator",
+      "snippet": "Erstellen Sie Ihr KI-Bild kostenlos! Klicken Sie auf die Schaltfläche \"Erstellen\", um ein Bild zu generieren. Es dauert nur ein paar …"
+    },
+    {
+      "title": "Erstelle ein bild eines sonnenuntergangs über einem weiß getünchten ...",
+      "url": "https://stockcake.com/de/s/erstelle-ein-bild-eines-sonnenuntergangs-%C3%BCber-einem-wei%C3%9F-get%C3%BCnchten-klippendorf-am-meer-warm-orange-rosa-himmel-kuppeln-und-windm%C3%BChlen-im-goldenen-licht-leuchtend-dicke-strukturierte-pinselstriche-kr%C3%A4ftige-%C3%B6lfarben-weiche-atmosph%C3%A4rische-tiefe-ruhige-mediterrane-stimmung",
+      "snippet": "Durchstöbere Erstelle Ein Bild Eines Sonnenuntergangs Über Einem Weiß Getünchten Klippendorf Am Meer Warm Orange Rosa …"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mradermacher/PrimeMind-0.8B-i1-GGUF",
+  "slug": "mradermacher-primemind-0-8b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/PrimeMind-0.8B-i1-GGUF",
+  "created_at": "2026-09-11T10:26:15.000Z",
+  "updated_at": "2026-09-11T10:26:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 276666,
+  "parameters_human": "276666",
+  "storage_bytes": 1134720,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "Welcome to the official YouTube channel – a home for the biggest moments, the smallest obsessions, and everything in between. …"
+    },
+    {
+      "title": "YouTube - Google Accounts",
+      "url": "https://accounts.google.com/InteractiveLogin?service=youtube",
+      "snippet": "Share your videos with friends, family, and the world."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en",
+      "snippet": "Get the official YouTube app on Android phones and tablets. See what the world is watching -- from the hottest music videos to …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Fysics-AI/OmniFysics-Captioner",
+  "slug": "fysics-ai-omnifysics-captioner",
+  "author": "Fysics-AI",
+  "url": "https://huggingface.co/Fysics-AI/OmniFysics-Captioner",
+  "created_at": "2026-08-24T15:27:38.000Z",
+  "updated_at": "2026-09-11T08:26:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_omni_moe",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31719205488,
+  "parameters_human": "31.72B",
+  "storage_bytes": 133693206444,
+  "storage_human": "133.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=GB&hl=en-GB",
+      "snippet": "Enjoy the videos and music you love, upload original content and share it all with friends, family and the world on YouTube."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube - Google Accounts",
+      "url": "https://accounts.google.com/InteractiveLogin?service=youtube",
+      "snippet": "Share your videos with friends, family, and the world."
+    },
+    {
+      "title": "YouTube - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en-GB",
+      "snippet": "Get the official YouTube app on Android phones and tablets. See what the world is watching -- from the hottest music videos to …"
+    },
+    {
+      "title": "PhysOmni: Physics-Grounded Multi-Object Scene Generation from a ...",
+      "url": "https://arxiv.org/html/2605.20290v2",
+      "snippet": "30.07.2026 ... Zhang, K. Zheng, A. Zhu, and Y. Zhu World simulation with video foundation models for physical ai. External Links: ..."
+    }
+  ]
+}

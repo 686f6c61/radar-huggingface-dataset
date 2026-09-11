@@ -18,9 +18,9 @@
     "base_model:finetune:google/gemma-4-31B-it",
     "region:us"
   ],
-  "likes": 31,
-  "downloads_30d": 1158,
-  "trending_score": 11,
+  "likes": 32,
+  "downloads_30d": 1185,
+  "trending_score": 12,
   "parameters": 31273088876,
   "parameters_human": "31.27B",
   "storage_bytes": 62578507874,

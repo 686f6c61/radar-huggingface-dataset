@@ -5,8 +5,8 @@
   "author": "megagonlabs",
   "url": "https://huggingface.co/megagonlabs/transformers-ud-japanese-bert-large-ginza",
   "created_at": "2026-09-02T07:11:49.000Z",
-  "updated_at": "2026-09-02T07:16:43.000Z",
-  "license": "apache-2.0",
+  "updated_at": "2026-09-11T01:31:34.000Z",
+  "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
@@ -14,7 +14,8 @@
   "tags": [
     "safetensors",
     "bert",
-    "license:apache-2.0",
+    "ja",
+    "license:mit",
     "region:us"
   ],
   "likes": 0,

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "tchbcb/samai-pnet-dmoe-2b",
+  "slug": "tchbcb-samai-pnet-dmoe-2b",
+  "author": "tchbcb",
+  "url": "https://huggingface.co/tchbcb/samai-pnet-dmoe-2b",
+  "created_at": "2026-09-09T17:00:03.000Z",
+  "updated_at": "2026-09-11T02:38:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 34,
+  "trending_score": 0,
+  "parameters": 2542067777,
+  "parameters_human": "2.54B",
+  "storage_bytes": 10168414040,
+  "storage_human": "10.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tesco - Supermarkets | Online Groceries, Clubcard & Recipes",
+      "url": "https://www.tesco.com/?msockid=045577da41ee679e1b5e600b40256623",
+      "snippet": "Welcome to Tesco online. Discover great value groceries, plus clothing, recipes, bank, and mobile services. Browse on Tesco.com …"
+    },
+    {
+      "title": "Online food shopping and grocery delivery - Tesco Groceries",
+      "url": "https://www.tesco.com/shop/en-GB/landing/groceries?msockid=045577da41ee679e1b5e600b40256623",
+      "snippet": "Discover Tesco online food shopping and great value groceries, plus earn Clubcard points. Book a grocery delivery or Click+Collect …"
+    },
+    {
+      "title": "Tesco special offers and grocery deals - Tesco Groceries",
+      "url": "https://www.tesco.com/shop/en-GB/promotions?msockid=045577da41ee679e1b5e600b40256623",
+      "snippet": "Discover special offers across food and home products at Tesco. Shop online or in-store now to find more grocery deals!"
+    },
+    {
+      "title": "Grocery home delivery | Order groceries online - Tesco",
+      "url": "https://www.tesco.com/shop/en-GB/zone/tesco-delivery?msockid=045577da41ee679e1b5e600b40256623",
+      "snippet": "Let Tesco Groceries bring your shopping to you with our convenient grocery delivery services. Book a food shop delivery today."
+    },
+    {
+      "title": "Sign in to your account - Tesco",
+      "url": "https://www.tesco.com/account/login/en-GB/?msockid=045577da41ee679e1b5e600b40256623",
+      "snippet": "On a shared device? Remember to sign out when you're finished."
+    }
+  ]
+}

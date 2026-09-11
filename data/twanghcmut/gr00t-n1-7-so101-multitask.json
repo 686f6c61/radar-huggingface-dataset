@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "twanghcmut/GR00T-N1.7-SO101-Multitask",
+  "slug": "twanghcmut-gr00t-n1-7-so101-multitask",
+  "author": "twanghcmut",
+  "url": "https://huggingface.co/twanghcmut/GR00T-N1.7-SO101-Multitask",
+  "created_at": "2026-09-11T02:20:55.000Z",
+  "updated_at": "2026-09-11T02:22:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "Gr00tN1d7",
+    "robotics",
+    "vla",
+    "gr00t",
+    "so101",
+    "multitask",
+    "dataset:hungho77/so101-multitask",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576200896,
+  "storage_human": "12.6 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10/1996 Z. z. Zákon Národnej rady Slovenskej republiky o kontrole v ...",
+      "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1996/10/20260101",
+      "snippet": "Jan 1, 2026 · 10/1996 Z. z. Zákon Národnej rady Slovenskej republiky o kontrole v štátnej správe"
+    },
+    {
+      "title": "10/1996 Z. z. Zákon o kontrole v štátnej správe | Aktuálne znenie",
+      "url": "https://www.zakonypreludi.sk/zz/1996-10",
+      "snippet": "Zákon č. 10/1996 Z. z. - Zákon Národnej rady Slovenskej republiky o kontrole v štátnej správe"
+    },
+    {
+      "title": "Zákon Národnej rady Slovenskej republiky o kontrole v štátnej správe …",
+      "url": "https://zakony.judikaty.info/predpis/zakon-10/1996/",
+      "snippet": "Jan 11, 1996 · Aktuálne a úplné (konsolidované) znenie zákona Zákon Národnej rady Slovenskej republiky o kontrole v štátnej správe …"
+    },
+    {
+      "title": "Zbierka zákonov SR - 10/1996 Z. z. znenie 1. 1. 2026",
+      "url": "https://www.zakonypreludi.sk/print/zz/1996-10/znenie-20260101.pdf",
+      "snippet": "ZÁKON NÁRODNEJ RADY SLOVENSKEJ REPUBLIKY zo 14. decembra 1995 o kontrole v štátnej správe Národná rada Slovenskej …"
+    },
+    {
+      "title": "ZBIERKA ZÁKONOV - static.slov-lex.sk",
+      "url": "https://static.slov-lex.sk/pdf/SK/ZZ/1996/10/ZZ_1996_10_20200101.pdf",
+      "snippet": "Orgány kontroly vykonávajú vonkajšiu kontrolu v rozsahu svojej pôsobnosti vymedzenej osobitnými predpismi1) a vnútornú kontrolu …"
+    }
+  ]
+}

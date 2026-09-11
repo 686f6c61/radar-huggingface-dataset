@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Mohitcr1/multiclass_review_classifier",
+  "slug": "mohitcr1-multiclass_review_classifier",
+  "author": "Mohitcr1",
+  "url": "https://huggingface.co/Mohitcr1/multiclass_review_classifier",
+  "created_at": "2026-09-11T09:28:49.000Z",
+  "updated_at": "2026-09-11T09:29:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149608709,
+  "parameters_human": "149.6M",
+  "storage_bytes": 598449012,
+  "storage_human": "598 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Virgilio Mail - login",
+      "url": "https://login.virgilio.it/",
+      "snippet": "Inserisci la tua user e password ed entra in Virgilio Mail. Sei invece un nuovo utente? Crea un nuovo account o richiedi l'aiuto di Virgilio."
+    },
+    {
+      "title": "Virgilio: Mail, Login, Ultime Notizie in tempo reale e tanto altro!",
+      "url": "https://www.virgilio.it/",
+      "snippet": "Virgilio: News nazionali e locali, Login, accesso Mail e PEC, Sport, Oroscopo, Gossip, Finanza, Economia, Video, Mail e Motore di …"
+    },
+    {
+      "title": "Crea email con Virgilio Mail: apri la tua nuova Posta Elettronica",
+      "url": "https://virgiliomail.virgilio.it/",
+      "snippet": "Apri un nuovo account email in modo semplice con Virgilio Mail e scopri le funzionalità. Spazio cloud, invio file di grandi dimensioni e …"
+    },
+    {
+      "title": "Virgilio",
+      "url": "https://www.virgilio.it/custom/login.html",
+      "snippet": "Accedi alla tua casella di posta Virgilio Mail con facilità e sicurezza, gestendo il tuo account e scoprendo tutte le sue funzionalità."
+    },
+    {
+      "title": "Virgilio Mail",
+      "url": "https://plug.virgilio.it/webmail30/cms/contentCMS/wu3/v/hp/com_widget/lancio.html",
+      "snippet": "Attiva il servizio gratuito che ti permette di avere tutte le tue foto, video, musica e documenti a portata di mano."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "strongpear/Llama3.1-8B-RAFT_PMIX_P40_3DOCS_CoT_A-MEDICAL-Instruct-r64-best-eval-loss",
+  "slug": "strongpear-llama3-1-8b-raft_pmix_p40_3docs_cot_a-medical-instruct-r64-best-eval-loss",
+  "author": "strongpear",
+  "url": "https://huggingface.co/strongpear/Llama3.1-8B-RAFT_PMIX_P40_3DOCS_CoT_A-MEDICAL-Instruct-r64-best-eval-loss",
+  "created_at": "2026-09-11T02:17:52.000Z",
+  "updated_at": "2026-09-11T02:18:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.1-8B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688364093,
+  "storage_human": "688 MB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Program do faktur online – wypróbuj za darmo - Fakturownia",
+      "url": "https://fakturownia.pl/",
+      "snippet": "Fakturownia oferuje tani program do fakturowania online, w tym do obsługi magazynu. Wypróbuj wersję próbną za darmo już dziś!"
+    },
+    {
+      "title": "Fakturownia.pl - program do fakturowania",
+      "url": "https://app.fakturownia.pl/login",
+      "snippet": "KSeF w Fakturowni? Prostszy niż myślisz Dowiedz się więcej"
+    },
+    {
+      "title": "Fakturowanie - - Fakturownia",
+      "url": "https://fakturownia.pl/fakturowanie",
+      "snippet": "w prosty sposób zarządzasz fakturami wraz ze swoim zespołem, nadając pracownikom odpowiednie role i uprawnienia korzystasz z …"
+    },
+    {
+      "title": "KSeF w Fakturowni – od czego zacząć, prosto i krok po kroku",
+      "url": "https://pomoc.fakturownia.pl/200767698-KSeF-w-Fakturowni-od-czego-zaczac-prosto-i-krok-po-kroku",
+      "snippet": "Aug 27, 2026 · Fakturownia + inne narzędzie księgowe/ERP) i potrzebują zarządzać certyfikatami centralnie w KSeF oraz bardzo …"
+    },
+    {
+      "title": "Jak połączyć Fakturownię z KSeF 2.0 - pomoc.fakturownia.pl",
+      "url": "https://pomoc.fakturownia.pl/200856394-Jak-polaczyc-Fakturownie-z-KSeF-2-0-Uwierzytelnienie-automatyczne-integracji-certyfikaty-generowane-w-KSeF-przez-Fakturownie",
+      "snippet": "Aug 27, 2026 · W tym artykule pokazujemy proces autoryzacji środowiska KSeF 2.0 – czyli jednorazowe potwierdzenie w KSeF, że …"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Abiray/MiniCPM5-2B-heretic-abliterated-GGUF",
+  "slug": "abiray-minicpm5-2b-heretic-abliterated-gguf",
+  "author": "Abiray",
+  "url": "https://huggingface.co/Abiray/MiniCPM5-2B-heretic-abliterated-GGUF",
+  "created_at": "2026-09-08T05:36:26.000Z",
+  "updated_at": "2026-09-08T07:35:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "minicpm",
+    "minicpm5",
+    "llama.cpp",
+    "text-generation",
+    "abliterated",
+    "uncensored",
+    "on-device",
+    "edge-ai",
+    "en",
+    "zh",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 9,
+  "downloads_30d": 6662,
+  "trending_score": 9,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 10909230528,
+  "storage_human": "10.9 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PC gratuiti dall’Agenzia delle Entrate…ma solo via PEC",
+      "url": "https://www.forumpa.it/pa-digitale/pc-gratuiti-dallagenzia-delle-entratema-solo-via-pec/",
+      "snippet": "Sep 15, 2009 · Con un bando pubblicato sul proprio sito internet, l’Agenzia delle entrate mette gratuitamente a disposizione 134 pc …"
+    },
+    {
+      "title": "Giovanni Leone Archivi - FPA",
+      "url": "https://www.forumpa.it/relatori/giovanni-leone/",
+      "snippet": "May 6, 2026 · Laureato in ingegneria edile-architettura presso l’Università Federico II di Napoli, mi occupo dal 2010 di fonti …"
+    },
+    {
+      "title": "Civis in tutta Italia: la consulenza delle Entrate ai professionisti ...",
+      "url": "https://www.forumpa.it/pa-digitale/civis-in-tutta-italia-la-consulenza-delle-entrate-ai-professionisti-via-web/",
+      "snippet": "Jan 15, 2010 · La piattaforma Civis dell’Agenzia delle Entrate, sviluppata per fornire via web risposte rapide ai professionisti in …"
+    },
+    {
+      "title": "Models - CleverThis",
+      "url": "https://cleverthis.com/models/",
+      "snippet": "Models · 0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF · 0xSero/GLM-5.3-500B-EXL3-3.0bpw · 0xSero/GLM-5.3-Flash-EXL3-TR3-2.0bpw · abenzerps/K2-Horizon- ..."
+    },
+    {
+      "title": "Carmine Pugliese Archivi - FPA",
+      "url": "https://www.forumpa.it/relatori/carmine-pugliese/",
+      "snippet": "Jul 15, 2026 · Classe 1969, laureato a 24 anni con lode in Ingegneria Elettronica, ho iniziato a lavorare nel 1996 a Torino, dopo aver …"
+    }
+  ]
+}

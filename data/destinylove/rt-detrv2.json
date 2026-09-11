@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "DestinyLove/RT-DETRv2",
+  "slug": "destinylove-rt-detrv2",
+  "author": "DestinyLove",
+  "url": "https://huggingface.co/DestinyLove/RT-DETRv2",
+  "created_at": "2026-09-11T09:43:45.000Z",
+  "updated_at": "2026-09-11T10:25:59.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 321480011,
+  "storage_human": "321 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KiKA: Kinderserien, Kinderfilme, Spiele und Bastelideen | KiKA",
+      "url": "https://www.kika.de/",
+      "snippet": "KiKA bietet dir viele Videos deiner liebsten Kinder- und Jugendserien sowie Filme. Entdecke Spiele, Bastelideen und Tipps zum …"
+    },
+    {
+      "title": "KiKA im Livestream: Kostenloses TV-Programm für Kinder | KiKA",
+      "url": "https://www.kika.de/live/live-100",
+      "snippet": "KiKA live online schauen – im kostenlosen Livestream! Hier gibt’s das aktuelle TV-Programm für Kinder. Serien, Shows und mehr …"
+    },
+    {
+      "title": "Alle Inhalte von KiKA - ZDFmediathek",
+      "url": "https://www.zdf.de/kika",
+      "snippet": "Entdecke KiKA – das Kinderprogramm von ARD & ZDF. Jetzt streamen und mit Spaß lernen!"
+    },
+    {
+      "title": "KiKA live - jetzt zum kostenlosen Livestream! - ARD Mediathek",
+      "url": "https://www.ardmediathek.de/live/Y3JpZDovL2tpa2EuZGUvTGl2ZXN0cmVhbS1LaUth",
+      "snippet": "KiKA Livestream. Das TV-Programm von heute live im Fernsehen verfolgen! Jetzt zum kostenlosen Stream!"
+    },
+    {
+      "title": "KiKA – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/KiKA",
+      "snippet": "Kika [ˈkiːkaː] (Eigenschreibweise KiKA, zuvor KI.KA) ist ein seit 1997 bestehendes öffentlich-rechtliches Kindermedienangebot von …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "zahuynh992",
   "url": "https://huggingface.co/zahuynh992/momen",
   "created_at": "2026-07-02T16:10:29.000Z",
-  "updated_at": "2026-09-08T03:27:27.000Z",
+  "updated_at": "2026-09-10T13:27:39.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -24,7 +24,7 @@
   "trending_score": 0,
   "parameters": 8030261312,
   "parameters_human": "8.03B",
-  "storage_bytes": 38136411379,
+  "storage_bytes": 38145672611,
   "storage_human": "38.1 GB",
   "base_model": null,
   "formats": [

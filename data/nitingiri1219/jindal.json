@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "nitingiri1219/jindal",
+  "slug": "nitingiri1219-jindal",
+  "author": "nitingiri1219",
+  "url": "https://huggingface.co/nitingiri1219/jindal",
+  "created_at": "2026-09-11T11:28:11.000Z",
+  "updated_at": "2026-09-11T11:36:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 56987429,
+  "storage_human": "57 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DIN EN 361 - Handbuch der Absturzsicherung | ABS Safety",
+      "url": "https://www.absturzsicherung.de/handbuch-der-absturzsicherung/normen-regeln/din-en-361.html",
+      "snippet": "Im Detail werden die Anforderungen, die Kennzeichnung, die Informationen des Herstellers und die Verpackung für Auffanggurte in …"
+    },
+    {
+      "title": "Norm: DIN EN 361 – Sachkunde24.de – Mit Sicherheit nützlich.",
+      "url": "https://www.sachkunde24.de/de/norm/din-en-361-persoenliche-schutzausruestung-gegen-absturz-auffanggurte-56/",
+      "snippet": "Mar 14, 2025 · Auffanggurte mit einer oder mehreren Anseilpunkten nach DIN EN 361 sind geeignete Körperhaltevorrichtungen, zur …"
+    },
+    {
+      "title": "DIN EN 361 / ABS Absturzsicherung AG",
+      "url": "https://abs-absturzsicherung.ch/de/handbuch-der-absturzsicherung/normen-regeln/din-en-361/",
+      "snippet": "In der DIN EN 361 \"Persönliche Schutzausrüstung gegen Absturz - Auffanggurte\" sind die technischen Eigenschaften von …"
+    },
+    {
+      "title": "DIN EN 361 Absturzsicherung - easitec.de",
+      "url": "https://www.easitec.de/din-en-361/",
+      "snippet": "In der DIN EN 361 werden im Detail beschrieben, welche Anforderungen an Auffanggurte gestellt werden, welche Kennzeichnung sie …"
+    },
+    {
+      "title": "DEUTSCHE NORM Auffanggurte Deutsche Fassung EN 361:2002 EN 361 DIN EN ...",
+      "url": "https://standards.forestraven.net/DIN%20EN%20361/9283755.PDF",
+      "snippet": "Die Europäische Norm EN 361:2002 hat den Status einer Deutschen Norm. Beginn der Gültigkeit EN 361:2002 wurde am 15. März …"
+    }
+  ]
+}

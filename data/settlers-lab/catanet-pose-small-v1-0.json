@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Settlers-Lab/CataNET-Pose-Small-v1.0",
+  "slug": "settlers-lab-catanet-pose-small-v1-0",
+  "author": "Settlers-Lab",
+  "url": "https://huggingface.co/Settlers-Lab/CataNET-Pose-Small-v1.0",
+  "created_at": "2026-09-11T02:32:23.000Z",
+  "updated_at": "2026-09-11T02:49:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "keypoint-detection",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "vision",
+    "keypoint-detection",
+    "pose-estimation",
+    "yolo",
+    "yolo26",
+    "catan",
+    "board-games",
+    "en",
+    "dataset:Settlers-Lab/CataNET-Pose-Synth-v1.0",
+    "base_model:Ultralytics/YOLO26",
+    "base_model:quantized:Ultralytics/YOLO26",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 61219441,
+  "storage_human": "61 MB",
+  "base_model": "Ultralytics/YOLO26",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Settlers Online - Jeu de strategie gratuit en ligne sans ...",
+      "url": "https://www.thesettlersonline.fr/fr",
+      "snippet": "The Settlers Online est un jeu de stratégie gratuit en ligne où vous construisez et gérez votre propre royaume."
+    },
+    {
+      "title": "The Settlers - Ubisoft",
+      "url": "https://www.ubisoft.com/fr-fr/company/about-us/our-brands/the-settlers",
+      "snippet": "Lancée en 1993, la série The Settlers fait partie des titres légendaires d'Ubisoft, avec son principe révolutionnaire mêlant city-builder …"
+    },
+    {
+      "title": "The Settlers — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/The_Settlers",
+      "snippet": "The Settlers est une série de jeux vidéo de stratégie en temps réel, nommé d'après le premier jeu de la série, The Settlers (1993)."
+    },
+    {
+      "title": "The Settlers - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The_Settlers",
+      "snippet": "It was ultimately repackaged and released in 2016 as Champions of Anteria, an action role-playing game unrelated to The Settlers …"
+    },
+    {
+      "title": "The Settlers - Ubisoft",
+      "url": "https://www.ubisoft.com/en-us/company/about-us/our-brands/the-settlers",
+      "snippet": "The Settlers: New World, the newest rendition of the series, was released in February 2023 by Ubisoft Düsseldorf and combines in …"
+    }
+  ]
+}

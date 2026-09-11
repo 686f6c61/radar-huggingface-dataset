@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Gouthamvel/TTS-cleaner",
+  "slug": "gouthamvel-tts-cleaner",
+  "author": "Gouthamvel",
+  "url": "https://huggingface.co/Gouthamvel/TTS-cleaner",
+  "created_at": "2026-09-11T02:49:31.000Z",
+  "updated_at": "2026-09-11T02:49:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "win10自带的截图工具如何设置快捷键 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/2fb0ba407f1c7e41f2ec5fc2.html",
+      "snippet": "Jan 7, 2020 · win10自带的截图工具如何设置快捷键,wi10自带的截图工具如何设置快捷键，其实很简单，步骤如下：1、点击【开始 …"
+    },
+    {
+      "title": "如何快速输入乘号 × - 百度经验",
+      "url": "https://jingyan.baidu.com/article/48206aea0d63fa616bd6b37a.html",
+      "snippet": "Dec 17, 2019 · 方法二：按住alt键再到数字键盘输入215就出现了乘号×，即（ALT+215） 不过数字只能按小键盘上的才能实现"
+    },
+    {
+      "title": "Snipping Tool in Windows 10",
+      "url": "https://www.windows-10-forum.com/threads/snipping-tool-in-windows-10.24118/",
+      "snippet": "Jan 13, 2016 · Snipping Tool in Windows 10 Helfe beim Thema Snipping Tool in Windows 10 in Windows 10 Support um eine Lösung …"
+    },
+    {
+      "title": "Snipping-Tool - Windows 10 - schwarzer Bildschirm",
+      "url": "https://www.windows-10-forum.com/threads/snipping-tool-windows-10-schwarzer-bildschirm.42332/",
+      "snippet": "Aug 12, 2016 · Snipping Tool: Hallo,wenn ich das Snipping Tool aufrufe und auf \"NEU\" klicke, um einen Ausschnitt von einem …"
+    },
+    {
+      "title": "win10系统中 snipping工具使用的教程 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/86fae346e699333c49121a01.html",
+      "snippet": "Feb 7, 2018 · win10系统中 snipping工具使用的教程,新装的电脑系统、工作原因等等不能使用网络的用户，在无法下载第三方截图工具 …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Pedro21613/PS-IMAGE-1.2",
+  "slug": "pedro21613-ps-image-1-2",
+  "author": "Pedro21613",
+  "url": "https://huggingface.co/Pedro21613/PS-IMAGE-1.2",
+  "created_at": "2026-09-11T01:43:12.000Z",
+  "updated_at": "2026-09-11T01:43:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "stable-diffusion",
+    "stable-diffusion-diffusers",
+    "lora",
+    "photorealistic",
+    "people",
+    "diverse",
+    "base_model:runwayml/stable-diffusion-v1-5",
+    "base_model:adapter:runwayml/stable-diffusion-v1-5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15019171,
+  "storage_human": "15 MB",
+  "base_model": "runwayml/stable-diffusion-v1-5",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.co.uk/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.tr/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=tr-tr",
+      "snippet": "Google'ı kullanabileceğiniz diğer diller: English Reklam Google Hakkında Google.com in English"
+    },
+    {
+      "title": "Google Chrome Web Tarayıcısı",
+      "url": "https://www.google.com/intl/tr/chrome/",
+      "snippet": "Google'ın akıllı teknolojileri ile artık daha basit, daha güvenli ve daha hızlı."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
+    }
+  ]
+}

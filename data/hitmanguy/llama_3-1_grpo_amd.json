@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Hitmanguy/Llama_3.1_GRPO_AMD",
+  "slug": "hitmanguy-llama_3-1_grpo_amd",
+  "author": "Hitmanguy",
+  "url": "https://huggingface.co/Hitmanguy/Llama_3.1_GRPO_AMD",
+  "created_at": "2026-09-11T09:16:27.000Z",
+  "updated_at": "2026-09-11T09:18:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "unsloth",
+    "trl",
+    "grpo",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766475,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reis naar de Atacama woestijn in Chili | Mooiste plekken",
+      "url": "https://www.naturescanner.nl/zuid-amerika/chili/atacama-woestijn",
+      "snippet": "Tips voor een rondreis door de Atacama in Chili. Bezienswaardigheden, excursies en reizen naar de woestijn: van individuele …"
+    },
+    {
+      "title": "Atacama woestijn | Unieke reviews & tips | 27Vakantiedagen",
+      "url": "https://www.27vakantiedagen.nl/chili/atacama-woestijn/",
+      "snippet": "Apr 6, 2026 · De woestijn ligt op ongeveer 610 meter boven zeeniveau en is een populaire bestemming vanaf de zoutvlaktes in …"
+    },
+    {
+      "title": "Atacama Woestijn, Chili: 8x Mooiste Bezienswaardigheden",
+      "url": "https://www.reisjevrij.nl/atacama-woestijn-chili-bezoeken-bezienswaardigheden/",
+      "snippet": "De Atacama woestijn in Noord-Chili is verrassend veelzijdig en onaards mooi. Lees gauw verder en ontdek wat je kunt zien en doen!"
+    },
+    {
+      "title": "Atacama: Waar te gaan, wat te zien in de grote woestijn van Chili",
+      "url": "https://www.wildtrips.net/nl/chile-atacama-where-to-go.htm",
+      "snippet": "De onmisbare bestemmingen in de Atacama-woestijn, om de mooiste landschappen in Chili te zien: hier is een lijst met de meest …"
+    },
+    {
+      "title": "Atacama woestijn Chili: Wat te doen in San Pedro de Atacama",
+      "url": "https://www.wearetravellers.nl/zuidamerika/chili/atacama-woestijn/",
+      "snippet": "Wil je naar de Atacama woestijn in Chili? Ontdek wat te doen in San Pedro de Atacama, de mooiste bezienswaardigheden, beste …"
+    }
+  ]
+}

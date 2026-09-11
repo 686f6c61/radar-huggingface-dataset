@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kovalserhii/act_sponge_v2",
+  "slug": "kovalserhii-act_sponge_v2",
+  "author": "kovalserhii",
+  "url": "https://huggingface.co/kovalserhii/act_sponge_v2",
+  "created_at": "2026-09-10T20:11:02.000Z",
+  "updated_at": "2026-09-11T02:48:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:kovalserhii/sponge_plate_v1",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 6195346456,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Chrome – Download the fast, secure browser from Google",
+      "url": "https://www.google.com/intl/en_uk/chrome/",
+      "snippet": "Get more done with the new Google Chrome. A more simple, secure and faster web browser than ever, with Google’s smarts built in. …"
+    },
+    {
+      "title": "kovalserhii/act_sponge_v2 · Hugging Face",
+      "url": "https://huggingface.co/kovalserhii/act_sponge_v2",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Chrome - The Fast & Secure Web Browser Built to be Yours",
+      "url": "https://www.google.com/chrome/",
+      "snippet": "Chrome is the official web browser from Google, built to be fast, secure, and customizable. Download now and make it yours."
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=act",
+      "snippet": "Explore machine learning models. iantc104/real_occluded_key_insertion_3arms_zed_static_wrist_act"
+    },
+    {
+      "title": "Fazer o download e instalar o Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=pt-BR&co=GENIE.Platform%3DDesktop",
+      "snippet": "Fazer o download e instalar o Google Chrome Você pode baixar e instalar o navegador da Web Chrome sem custos financeiros e …"
+    }
+  ]
+}

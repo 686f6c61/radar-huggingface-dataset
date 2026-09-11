@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "lair-nyu/yor_icl_pi05_canonical_sanity15k-step5000",
+  "slug": "lair-nyu-yor_icl_pi05_canonical_sanity15k-step5000",
+  "author": "lair-nyu",
+  "url": "https://huggingface.co/lair-nyu/yor_icl_pi05_canonical_sanity15k-step5000",
+  "created_at": "2026-09-11T01:57:40.000Z",
+  "updated_at": "2026-09-11T01:59:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12441104016,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing ChatGPT - OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI - OpenAI",
+      "url": "https://platform.openai.com/onboarding?app=chat&callbackHost=chatgpt.com",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/es-ES/",
+      "snippet": "Creemos que nuestras investigaciones acabarán por dar vida a una inteligencia artificial general, un sistema capaz de solucionar …"
+    },
+    {
+      "title": "如何在 ChatGPT 中删除和归档聊天 | OpenAI Help Center",
+      "url": "https://help.openai.com/zh-hans-cn/articles/8809935-how-to-delete-and-archive-chats-in-chatgpt",
+      "snippet": "如何在 ChatGPT 中删除和归档聊天 通过删除或归档聊天来管理你的 ChatGPT 对话历史。下面介绍每种选项的工作方式以及你可以预 …"
+    },
+    {
+      "title": "Projects in ChatGPT - OpenAI Help Center",
+      "url": "https://help.openai.com/en/articles/10169521-using-projects-in-chatgpt",
+      "snippet": "Projects are smart workspaces that keep everything related to a long‑running effort in one place. Group together chats, upload …"
+    }
+  ]
+}

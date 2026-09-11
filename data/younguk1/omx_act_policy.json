@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Younguk1/omx_act_policy",
+  "slug": "younguk1-omx_act_policy",
+  "author": "Younguk1",
+  "url": "https://huggingface.co/Younguk1/omx_act_policy",
+  "created_at": "2026-09-11T01:58:06.000Z",
+  "updated_at": "2026-09-11T01:59:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Younguk1/pick_and_place_20260910_150534",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206707288,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Convertire PDF in WORD modificabile - iLovePDF",
+      "url": "https://www.ilovepdf.com/it/pdf_in_word",
+      "snippet": "Converti PDF con testo selezionabile in file Word modificabili. Converti PDF scannerizzati con testo non selezionabile in file Word …"
+    },
+    {
+      "title": "PDF to WORD | Convert PDF to Word online for free - iLovePDF",
+      "url": "https://www.ilovepdf.com/pdf_to_word",
+      "snippet": "Convert PDF to editable Word documents for free. PDF to Word conversion is fast, secure and almost 100% accurate. Convert …"
+    },
+    {
+      "title": "iLovePDF | Strumenti PDF online gratuiti",
+      "url": "https://www.ilovepdf.com/it",
+      "snippet": "Strumenti online senza installazione e completamente gratuiti per unire PDF, dividere PDF, Comprimere PDF, convertire documenti …"
+    },
+    {
+      "title": "iLovePDF | Online PDF tools for PDF lovers",
+      "url": "https://www.ilovepdf.com/index.php",
+      "snippet": "Reduce file size while optimizing for maximal PDF quality. Easily convert your PDF files into easy to edit DOC and DOCX documents. …"
+    },
+    {
+      "title": "Convertire Word a PDF | Documenti DOC a PDF - iLovePDF",
+      "url": "https://www.ilovepdf.com/it/word_a_pdf",
+      "snippet": "Converti documenti Word a PDF uguali al file originale. Servizio online gratuito per convertire WORD a PDF."
+    }
+  ]
+}

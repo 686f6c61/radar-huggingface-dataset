@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Jethr/sd-class-butterflies-32",
+  "slug": "jethr-sd-class-butterflies-32",
+  "author": "Jethr",
+  "url": "https://huggingface.co/Jethr/sd-class-butterflies-32",
+  "created_at": "2026-09-11T11:32:04.000Z",
+  "updated_at": "2026-09-11T11:32:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "unconditional-image-generation",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "pytorch",
+    "unconditional-image-generation",
+    "diffusion-models-class",
+    "license:mit",
+    "diffusers:DDPMPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18536323,
+  "parameters_human": "18.5M",
+  "storage_bytes": 74185252,
+  "storage_human": "74 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How do I fix any kinds of photos that have turned into \"HEIC\" files ...",
+      "url": "https://support.google.com/photos/thread/134697362/how-do-i-fix-any-kinds-of-photos-that-have-turned-into-heic-files-when-taken-or-saved?hl=en",
+      "snippet": "Nov 9, 2021 · I am trying to figure out why my photos have started converting to \"HEIC\" files, and I haven't tried anything yet because …"
+    },
+    {
+      "title": "Google Fotos salvando em HEIC. Há como alterar?",
+      "url": "https://support.google.com/photos/thread/253929050/google-fotos-salvando-em-heic-h%C3%A1-como-alterar?hl=pt-BR",
+      "snippet": "Google Fotos salvando em HEIC. Há como alterar? Amigos, tudo bem? Percebi que o Google Fotos tem armazenado minhas fotos …"
+    },
+    {
+      "title": "CopyTransHEIC怎么安装后转换HEIC为JPG-百度经验",
+      "url": "https://jingyan.baidu.com/article/fdbd4277fd4cd0f99e3f4884.html",
+      "snippet": "选择convertxx，那么桌面就有了一张JPG转换后的图片。"
+    },
+    {
+      "title": "如何把 .HEIC 和 .JPG 图像互相转换-百度经验",
+      "url": "https://jingyan.baidu.com/article/9158e0001bee8fa25512285c.html",
+      "snippet": "Feb 24, 2018 · 目前能直接查看 HEIC 图像的有 iOS 11 和 macOS High Sierra 系统。 部分主流软件也开始支持 HEIC 格式，例如新版 …"
+    },
+    {
+      "title": "Maintaining location data when converting .HEIC to .jpg",
+      "url": "https://support.google.com/photos/thread/44831784/maintaining-location-data-when-converting-heic-to-jpg?hl=en",
+      "snippet": "May 6, 2020 · Maintaining location data when converting .HEIC to .jpg I have a number of photos in Google photos that are in .HEIC …"
+    }
+  ]
+}

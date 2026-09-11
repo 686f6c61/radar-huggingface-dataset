@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Guile/Qwen3.8-27B-Humanlike-Chat-GGUF",
+  "slug": "guile-qwen3-8-27b-humanlike-chat-gguf",
+  "author": "Guile",
+  "url": "https://huggingface.co/Guile/Qwen3.8-27B-Humanlike-Chat-GGUF",
+  "created_at": "2026-09-11T11:29:27.000Z",
+  "updated_at": "2026-09-11T11:29:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3.8",
+    "conversational",
+    "roleplay",
+    "creative-writing",
+    "character",
+    "humanlike",
+    "uncensored",
+    "sillytavern",
+    "text-generation",
+    "base_model:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 161078454464,
+  "storage_human": "161.1 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Explore and share videos, music, and more on YouTube, the leading platform for online video streaming and sharing."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "Knew late-night TV would catch up with me #youtubepartner try this prompt with your own YT Shorts Rachel Samples and YouTube …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/yt+",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en",
+      "snippet": "Enjoy your favorite videos and channels with the official YouTube app."
+    }
+  ]
+}

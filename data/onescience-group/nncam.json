@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/NNCAM",
+  "slug": "onescience-group-nncam",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/NNCAM",
+  "created_at": "2026-09-11T09:57:09.000Z",
+  "updated_at": "2026-09-11T09:57:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "nncam",
+    "OneScience",
+    "Earth Science",
+    "Climate Parameterization",
+    "Subgrid Processes",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Astro Version 13A - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/4574137",
+      "snippet": "Apr 30, 2018 · Astro website: click the chatbot icon on the bottom right corner, type “agent” Tune to CH200: Scan the QR code that …"
+    },
+    {
+      "title": "[found sos] cant login whatsapp browser - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5556445",
+      "snippet": "Feb 27, 2026 · i mainly uses whatsapp for business purposes via my iphone and company browser like firefox or edge"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/file-did-not-get-saved-on-one-drive/59024bed-1dca-46ff-a4ab-dc0d1db704aa",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/windows/forum/all/wsapx-clipsvc-high-utility-clientlizenzdienst-hohe/00e4a631-a169-461b-a21a-77b70a0a5d4e",
+      "snippet": ""
+    },
+    {
+      "title": "Back up all whatsapp chat history with media to PC",
+      "url": "https://forum.lowyat.net/topic/5543382",
+      "snippet": "Oct 19, 2025 · My whatsapp chat history with media is over 20GB since 15 years ago until now.I plan to delete the account and re …"
+    }
+  ]
+}

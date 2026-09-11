@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "AnzouKiona/phishlens-distilbert",
+  "slug": "anzoukiona-phishlens-distilbert",
+  "author": "AnzouKiona",
+  "url": "https://huggingface.co/AnzouKiona/phishlens-distilbert",
+  "created_at": "2026-09-11T09:32:11.000Z",
+  "updated_at": "2026-09-11T09:33:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "phishing-detection",
+    "cybersecurity",
+    "nlp",
+    "en",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pannen über Pannen! ...am besten alle hier rein! | Seite 169 ...",
+      "url": "https://www.radioforen.de/threads/pannen-ueber-pannen-am-besten-alle-hier-rein.9245/page-169",
+      "snippet": "Aug 12, 2004 · 2. Nach zwei Songs aus dem JUMP-Studio wird zwar eine Leitung gefunden, es ist aber interessanterweise eine …"
+    },
+    {
+      "title": "MDR Jump - Programm und Musik | radioforen.de",
+      "url": "https://www.radioforen.de/threads/mdr-jump-programm-und-musik.42797/",
+      "snippet": "Aug 16, 2018 · In diesem Forum würde ich gerne Eure Meinung zum aktuellen Programmschema bzw. zur Musikauswahl von MDR …"
+    },
+    {
+      "title": "Plötzlicher schlechter Empfang von MDR Jump (Dresden)",
+      "url": "https://www.radioforen.de/threads/ploetzlicher-schlechter-empfang-von-mdr-jump-dresden.33411/",
+      "snippet": "Aug 23, 2011 · AW: Plötzlicher schlechter Empfang von MDR Jump (Dresden) Das geschieht wohl öfters, dass der Sender im Radio …"
+    },
+    {
+      "title": "MDR/Jump/Schiewack/Perspektiven - radioforen.de",
+      "url": "https://www.radioforen.de/threads/mdr-jump-schiewack-perspektiven.2071/",
+      "snippet": "Jul 30, 2002 · Schiewack ist übringens nicht Hörfunkdirektor der MDR, sondern \"nur\" Programmchef von Jump und Sputnik. …"
+    },
+    {
+      "title": "MDR Jump - Programm und Musik | Seite 7 | radioforen.de",
+      "url": "https://www.radioforen.de/threads/mdr-jump-programm-und-musik.42797/page-7",
+      "snippet": "Aug 16, 2018 · MDR Life war eine Realsatire-Inszenierung der Sonderklasse, aber kein öffentlich-rechtliches Programm. Jump …"
+    }
+  ]
+}

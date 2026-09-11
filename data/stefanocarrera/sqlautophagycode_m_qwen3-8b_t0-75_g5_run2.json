@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g5_run2",
+  "slug": "stefanocarrera-sqlautophagycode_m_qwen3-8b_t0-75_g5_run2",
+  "author": "stefanocarrera",
+  "url": "https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g5_run2",
+  "created_at": "2026-09-11T02:49:55.000Z",
+  "updated_at": "2026-09-11T02:50:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186078190,
+  "storage_human": "186 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tchibo - Kaffee, Mode, Möbel, Mobilfunk & mehr",
+      "url": "https://www.tchibo.de/?msockid=0b7c6ae966b76ff4054a7d38672c6ed7",
+      "snippet": "Entdecken Sie Kaffee, Mode, Möbel und mehr bei Tchibo – aktuelle Trends, Top-Service und kostenloser Versand."
+    },
+    {
+      "title": "Themenwelten-Übersicht - Jede Woche eine neue Welt | Tchibo",
+      "url": "https://www.tchibo.de/themeworlds?msockid=0b7c6ae966b76ff4054a7d38672c6ed7",
+      "snippet": "Entdecken Sie exklusive Produkte von Tchibo in unseren Themenwelten! Jede Woche neu Aktuelle Modetrends Jetzt online bestellen!"
+    },
+    {
+      "title": "Start | Community - Tchibo",
+      "url": "https://community.tchibo.de/de-de/start",
+      "snippet": "Die Tchibo Community ist die Seite zum Entdecken, Mitmachen und Ausprobieren. Finde inspirierende Ideen, die deinen Alltag …"
+    },
+    {
+      "title": "Wasserspender für Büro und Gewerbetreibende | Tchibo",
+      "url": "https://sofortangebot.tchibo.de/wasserspender/",
+      "snippet": "Wasserspender für Büro und Gewerbetreibende | Tchibo Professionelle Wasserversorgung für Ihr Business Planen Sie mit wenigen …"
+    },
+    {
+      "title": "Tchibo Refurbished",
+      "url": "https://refurbished.tchibo.de/",
+      "snippet": "Refurbished und bereit für ein zweites Leben: Wiederaufbereitete Vollautomaten – in geprüfter Tchibo Qualität."
+    }
+  ]
+}

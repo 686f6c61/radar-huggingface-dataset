@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "98sd7fc9sdf/pussyview",
+  "slug": "98sd7fc9sdf-pussyview",
+  "author": "98sd7fc9sdf",
+  "url": "https://huggingface.co/98sd7fc9sdf/pussyview",
+  "created_at": "2026-09-11T10:00:31.000Z",
+  "updated_at": "2026-09-11T10:01:52.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:lvladikov/Krea2-Turbo-Distill-4step-LoRA",
+    "base_model:adapter:lvladikov/Krea2-Turbo-Distill-4step-LoRA",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155163148,
+  "storage_human": "155 MB",
+  "base_model": "lvladikov/Krea2-Turbo-Distill-4step-LoRA",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Carlos Alcaraz vs Jannik Sinner live score and H2H results",
+      "url": "https://www.sofascore.com/tennis/match/carlos-alcaraz-jannik-sinner/vGHbsytkc",
+      "snippet": "Sinner beats Alcaraz to win Monte Carlo Masters finalJannik Sinner claims the Monte Carlo title with a 7-6 (5), 6-3 win over Carlos …"
+    },
+    {
+      "title": "Jannik Sinner defeats Carlos Alcaraz, wins Monte-Carlo crown - ATP …",
+      "url": "https://www.atptour.com/en/news/alcaraz-sinner-monte-carlo-2026-final/",
+      "snippet": "Apr 12, 2026 · Sinner, who has won a Tour-leading three titles in 2026, will begin his 67th week as World No. 1 on Monday, moving …"
+    },
+    {
+      "title": "Carlos Alcaraz v Jannik Sinner results, H2H stats | Tennis - Flashscore",
+      "url": "https://www.flashscoreusa.com/game/tennis/alcaraz-garfia-carlos-UkhgIFEq/sinner-jannik-6HdC3z4H/",
+      "snippet": "Apr 12, 2026 · Follow Carlos Alcaraz v Jannik Sinner results, h2h statistics and Carlos Alcaraz latest results, news and more …"
+    },
+    {
+      "title": "Jannik Sinner Beats Carlos Alcaraz to Win Monte Carlo Masters 2026",
+      "url": "https://ticotimes.net/2026/04/12/jannik-sinner-beats-carlos-alcaraz-to-win-monte-carlo-masters-2026",
+      "snippet": "Apr 12, 2026 · Jannik Sinner beat Carlos Alcaraz to win the 2026 Monte Carlo Masters, claim his first clay Masters title, and return to …"
+    },
+    {
+      "title": "Monte-Carlo Masters 2026 final: Jannik Sinner beats Carlos Alcaraz in ...",
+      "url": "https://www.olympics.com/en/news/monte-carlo-masters-2026-final-jannik-sinner-beats-carlos-alcaraz",
+      "snippet": "Apr 12, 2026 · Sinner edged Alcaraz 7-6 (5), 6-3 in the 2026 Monte-Carlo Masters final, claiming the title and returning to world No. 1. …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "saidutta69",
   "url": "https://huggingface.co/saidutta69/Qwen2.5-1.5B-Instruct-heretic",
   "created_at": "2026-07-02T12:05:37.000Z",
-  "updated_at": "2026-08-20T16:21:16.000Z",
+  "updated_at": "2026-09-11T02:26:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1485,
+  "downloads_30d": 1486,
   "trending_score": 0,
   "parameters": 1543714304,
   "parameters_human": "1.54B",

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "meshllm/DeepSeek-V4-Flash-0731-UD-Q4_K_XL-layers",
+  "slug": "meshllm-deepseek-v4-flash-0731-ud-q4_k_xl-layers",
+  "author": "meshllm",
+  "url": "https://huggingface.co/meshllm/DeepSeek-V4-Flash-0731-UD-Q4_K_XL-layers",
+  "created_at": "2026-09-09T08:12:22.000Z",
+  "updated_at": "2026-09-11T03:45:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mesh-llm",
+  "languages": [],
+  "tags": [
+    "mesh-llm",
+    "gguf",
+    "layer-package",
+    "skippy",
+    "distributed-inference",
+    "local-inference",
+    "openai-compatible",
+    "text-generation",
+    "base_model:unsloth/DeepSeek-V4-Flash-0731-GGUF",
+    "base_model:quantized:unsloth/DeepSeek-V4-Flash-0731-GGUF",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6577257595,
+  "parameters_human": "6.58B",
+  "storage_bytes": 155349017120,
+  "storage_human": "155.3 GB",
+  "base_model": "unsloth/DeepSeek-V4-Flash-0731-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "#Spotterka Czy Biuro Obsługi... - Spotted: Tomaszów Lubelski",
+      "url": "https://www.facebook.com/SpottedTomaszow/posts/spotterka-czy-biuro-obs%C5%82ugi-klienta-pging-na-ul-siwa-dolina-2a-jest-nadal-otwart/778325440993238/",
+      "snippet": "Jan 3, 2024 · Siwa Dolina 2A jest nadal otwarte? Jeśli tak, to w jakie dni i jakich godzinach? Dziękuję. Poszukuję firmy zajmującej się …"
+    },
+    {
+      "title": "Polska Spółka Gazownictwa - Kontakt",
+      "url": "https://www.psgaz.pl/kontakt",
+      "snippet": "Zadzwoń na infolinię Polskiej Spółki Gazownictwa - nasi konsultanci udzielą odpowiedzi na wszelkie pytania m.in. na temat …"
+    },
+    {
+      "title": "PSG - Mapa Systemu Dystrybucji",
+      "url": "https://www.psgaz.pl/mapasystemu/",
+      "snippet": "Mapa Systemu Dystrybucji PSG przedstawia szczegóły sieci dystrybucyjnej gazu w Polsce, zarządzanej przez Polską Spółkę …"
+    },
+    {
+      "title": "Zakład gazowniczy - lista firm w woj. lubelskie | Panorama Firm",
+      "url": "https://panoramafirm.pl/zak%C5%82ad_gazowniczy/lubelskie",
+      "snippet": "Głównym profilem działalności naszej firmy są gazowe usługi, usługi wodno-kanalizacyjne, serwis urządzeń gazowych. W czasie …"
+    },
+    {
+      "title": "Polska Spółka Gazownictwa Sp. z o.o. Oddział Zakład Gazowniczy ...",
+      "url": "https://www.pkt.pl/firma/polska-spolka-gazownictwa-sp-z-o-o-oddzial-zaklad-gazowniczy-7925082",
+      "snippet": "Polska Spółka Gazownictwa Sp. z o.o. Oddział Zakład Gazowniczy 🏠 Dystrybucja i napełnianie gazu Lublin, ul. Diamentowa ☎️ 81 …"
+    }
+  ]
+}

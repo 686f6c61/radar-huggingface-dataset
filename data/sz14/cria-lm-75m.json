@@ -5,7 +5,7 @@
   "author": "sz14",
   "url": "https://huggingface.co/sz14/cRia-LM-75M",
   "created_at": "2026-08-20T22:37:13.000Z",
-  "updated_at": "2026-09-08T23:10:00.000Z",
+  "updated_at": "2026-09-11T05:20:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -40,12 +40,12 @@
     "region:us"
   ],
   "likes": 8,
-  "downloads_30d": 3485,
+  "downloads_30d": 3807,
   "trending_score": 0,
   "parameters": 75719360,
   "parameters_human": "75.7M",
-  "storage_bytes": 1211750089,
-  "storage_human": "1.2 GB",
+  "storage_bytes": 1514656993,
+  "storage_human": "1.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

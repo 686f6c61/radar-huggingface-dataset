@@ -5,7 +5,7 @@
   "author": "sjakek",
   "url": "https://huggingface.co/sjakek/slimder-qwen38-reap384-s0",
   "created_at": "2026-08-31T15:28:08.000Z",
-  "updated_at": "2026-08-31T16:51:48.000Z",
+  "updated_at": "2026-09-10T23:43:30.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 32,
   "trending_score": 0,
   "parameters": 147178113171,
   "parameters_human": "147.18B",

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ahruem/Qwen0911-lora",
+  "slug": "ahruem-qwen0911-lora",
+  "author": "ahruem",
+  "url": "https://huggingface.co/ahruem/Qwen0911-lora",
+  "created_at": "2026-09-11T02:03:07.000Z",
+  "updated_at": "2026-09-11T02:05:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852739136,
+  "parameters_human": "852.7M",
+  "storage_bytes": 1725526193,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sportmedizin: Aktuelle News, Ratgeber & Forschung - WELT",
+      "url": "https://www.welt.de/themen/sportmedizin/",
+      "snippet": "Die \"Welt\" bietet Ihnen News, Studien, Forschung und Ratgeber zur Sportmedizin und sportmedizinischen Untersuchungen."
+    },
+    {
+      "title": "Biologie: Aktuelle News, Bilder & Forschung - WELT",
+      "url": "https://www.welt.de/themen/biologie/",
+      "snippet": "Die \"Welt\" bietet Ihnen News und Infos zum Thema Biologie."
+    },
+    {
+      "title": "Sie schuf den Irak. Das Leben der Gertrude Bell - Thomas Schmid",
+      "url": "https://schmid.welt.de/2019/11/29/sie-schuf-den-irak-das-leben-der-gertrude-bell/",
+      "snippet": "Nov 29, 2019 · Sie ist rothaarig, hochgewachsen, die Nase spitz. Schon früh legt sie das unerschütterliche Selbstvertrauen an den …"
+    },
+    {
+      "title": "Archäologie: Aktuelle News & Nachrichten - WELT",
+      "url": "https://www.welt.de/themen/archaeologie/",
+      "snippet": "\"Die Welt\" bietet aktuelle Nachrichten, Bilder und Videos zur Archäologie und zu spannenden Funden in aller Welt."
+    },
+    {
+      "title": "Wissen & Wissenschaft: Aktuelle News & Nachrichten - WELT",
+      "url": "https://www.welt.de/wissenschaft/",
+      "snippet": "News aus der Wunderwelt des Wissens - Aktuelle Nachrichten aus dem gesamtem Spektrum von Wissenschaft und Forschung"
+    }
+  ]
+}

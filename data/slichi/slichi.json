@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Slichi/slichi",
+  "slug": "slichi-slichi",
+  "author": "Slichi",
+  "url": "https://huggingface.co/Slichi/slichi",
+  "created_at": "2026-09-11T09:18:02.000Z",
+  "updated_at": "2026-09-11T09:18:57.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 78971852,
+  "storage_human": "79 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "Download WhatsApp",
+      "url": "https://www.whatsapp.com/download",
+      "snippet": "Use WhatsApp on your browser. New to WhatsApp? Need help? Download WhatsApp on your mobile device, tablet or desktop and …"
+    },
+    {
+      "title": "WhatsApp | Secure and Reliable Free Private Messaging and Calling",
+      "url": "https://www.whatsapp.com/",
+      "snippet": "Now you can make and receive video or voice calls — one-on-one or in groups — right from your browser. With private messaging …"
+    },
+    {
+      "title": "HOUSAB - WhatsApp",
+      "url": "https://wa.me/",
+      "snippet": "Hosted by WhatsApp 2026 © WhatsApp LLC Privacy & Terms"
+    },
+    {
+      "title": "Download WhatsApp (free) for Windows, macOS, Android, APK, iOS and Web …",
+      "url": "https://gizmodo.com/download/whatsapp",
+      "snippet": "3 days ago · To get started, you need to download WhatsApp and register with a valid mobile phone number. On a desktop, you can …"
+    }
+  ]
+}

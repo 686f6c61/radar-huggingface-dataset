@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/PrecipExtremes-GAN",
+  "slug": "onescience-group-precipextremes-gan",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/PrecipExtremes-GAN",
+  "created_at": "2026-09-11T09:57:09.000Z",
+  "updated_at": "2026-09-11T09:57:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "precip_extremes_gan",
+    "OneScience",
+    "Earth Science",
+    "Extreme Precipitation",
+    "Generative Downscaling",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mairie de Villefranche-sur-Mer - Site officiel",
+      "url": "https://www.villefranche-sur-mer.fr/",
+      "snippet": "Découvrez le site officiel de la mairie de Villefranche-sur-Mer. Démarches, actualités, services municipaux et informations pratiques."
+    },
+    {
+      "title": "Portail famille - Mairie de Villefranche-sur-Mer",
+      "url": "https://www.villefranche-sur-mer.fr/ma-ville/education-villefranche-sur-mer/etablissements-scolaires/portail-famille/",
+      "snippet": "Portail famille de Villefranche-sur-Mer Portail famille Pour faciliter vos transactions, la ville met à votre disposition un portail …"
+    },
+    {
+      "title": "Expositions - Mairie de Villefranche-sur-Mer",
+      "url": "https://www.villefranche-sur-mer.fr/culture/musee-et-centre-dart/expositions-temporaires/",
+      "snippet": "Visitez les expositions temporaires de Villefranche-sur-Mer. Programmation culturelle riche et diversifiée."
+    },
+    {
+      "title": "Police Municipale - Mairie de Villefranche-sur-Mer",
+      "url": "https://www.villefranche-sur-mer.fr/ma-ville/securite/police-municipale/",
+      "snippet": "Feb 21, 1996 · Police Administrative A Villefranche sur Mer, le commerce non-sédentaire est fermement réglementé. De nombreux …"
+    },
+    {
+      "title": "Offres d'emplois - Mairie de Villefranche-sur-Mer",
+      "url": "https://www.villefranche-sur-mer.fr/offres-demplois/",
+      "snippet": "Rejoignez l'équipe municipale de Villefranche-sur-Mer. Offres d'emploi, recrutements et carrières publiques."
+    }
+  ]
+}

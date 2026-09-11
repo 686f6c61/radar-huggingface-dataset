@@ -5,7 +5,7 @@
   "author": "trl-internal-testing",
   "url": "https://huggingface.co/trl-internal-testing/tiny-Qwen2ForCausalLM-R1-Distill",
   "created_at": "2026-08-15T01:12:51.000Z",
-  "updated_at": "2026-08-15T01:12:52.000Z",
+  "updated_at": "2026-09-10T13:17:17.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -23,12 +23,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 44059,
+  "downloads_30d": 48451,
   "trending_score": 0,
-  "parameters": 2428632,
+  "parameters": 2432968,
   "parameters_human": "2.4M",
-  "storage_bytes": 16282834,
-  "storage_human": "16 MB",
+  "storage_bytes": 21151562,
+  "storage_human": "21 MB",
   "base_model": null,
   "formats": [
     "safetensors"

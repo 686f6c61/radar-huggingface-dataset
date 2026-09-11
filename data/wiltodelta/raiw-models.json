@@ -5,7 +5,7 @@
   "author": "wiltodelta",
   "url": "https://huggingface.co/wiltodelta/raiw-models",
   "created_at": "2026-09-01T05:04:16.000Z",
-  "updated_at": "2026-09-08T04:49:41.000Z",
+  "updated_at": "2026-09-11T02:49:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -15,6 +15,7 @@
   ],
   "tags": [
     "transformers",
+    "onnx",
     "clip",
     "image-classification",
     "ai-generated-content",
@@ -23,7 +24,7 @@
     "en",
     "dataset:detection-datasets/coco",
     "base_model:openai/clip-vit-large-patch14",
-    "base_model:finetune:openai/clip-vit-large-patch14",
+    "base_model:quantized:openai/clip-vit-large-patch14",
     "license:apache-2.0",
     "region:us"
   ],
@@ -32,10 +33,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1712950712,
-  "storage_human": "1.7 GB",
+  "storage_bytes": 2929053218,
+  "storage_human": "2.9 GB",
   "base_model": "openai/clip-vit-large-patch14",
-  "formats": [],
+  "formats": [
+    "onnx"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

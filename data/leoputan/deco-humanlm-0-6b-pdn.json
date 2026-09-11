@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Leoputan/deco-humanlm-0.6b-pdn",
+  "slug": "leoputan-deco-humanlm-0-6b-pdn",
+  "author": "Leoputan",
+  "url": "https://huggingface.co/Leoputan/deco-humanlm-0.6b-pdn",
+  "created_at": "2026-09-11T09:37:38.000Z",
+  "updated_at": "2026-09-11T10:08:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 751632384,
+  "parameters_human": "751.6M",
+  "storage_bytes": 3017987674,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Nine Planets of The Solar System | Eight Planets Without Pluto",
+      "url": "https://nineplanets.org/",
+      "snippet": "An overview of the history, mythology and current scientific knowledge of the planets, moons and other objects in our solar system."
+    },
+    {
+      "title": "TI-Planet | Programmes/Téléchargements Jeux NumWorks",
+      "url": "https://tiplanet.org/forum/archives_list.php?cat=Jeux+nw",
+      "snippet": "News, programmes, tutoriaux et forum sur les calculatrices! Programmes/Téléchargements Jeux NumWorks"
+    },
+    {
+      "title": "TI-Planet | Updating fx-9750GII - Casio",
+      "url": "https://tiplanet.org/forum/viewtopic.php?f=27&t=27298",
+      "snippet": "Hi I stumbled over my old FX-9750GII and found out that my firmware is not the latest version which bugs me a bit. I did the update to …"
+    },
+    {
+      "title": "The Planets In Order | From The Sun, Information, History & Definition",
+      "url": "https://nineplanets.org/the-planets-in-order/",
+      "snippet": "Mar 17, 2020 · The planets in order from the Sun based on their distance are Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, …"
+    },
+    {
+      "title": "HELP ME!!!!",
+      "url": "https://yugiohplanet.forumcommunity.net/?t=40877905",
+      "snippet": "e magari vorrei inserire immagini anche in quest'ultima...mi dareste un aiuto non capisco come fare!"
+    }
+  ]
+}

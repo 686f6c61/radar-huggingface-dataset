@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SelectiveDOPD/JustRL-Qwen3-8b-RKLSelective-Top10pct",
+  "slug": "selectivedopd-justrl-qwen3-8b-rklselective-top10pct",
+  "author": "SelectiveDOPD",
+  "url": "https://huggingface.co/SelectiveDOPD/JustRL-Qwen3-8b-RKLSelective-Top10pct",
+  "created_at": "2026-09-11T02:31:33.000Z",
+  "updated_at": "2026-09-11T02:53:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 196589624382,
+  "storage_human": "196.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Get started with Google Maps",
+      "url": "https://support.google.com/maps/answer/144349?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "Get started with Google Maps This article will help you set up, learn the basics, and explain various features of Google Maps. You …"
+    },
+    {
+      "title": "Report data or content errors on Google Maps",
+      "url": "https://support.google.com/maps/answer/3094088?hl=en",
+      "snippet": "Report spam or bad data Any illegal, offensive, fraudulent, or malicious data on Google Maps is considered as spam. Users found to …"
+    },
+    {
+      "title": "Download areas & navigate offline in Google Maps",
+      "url": "https://support.google.com/maps/answer/6291838?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "Use offline maps in Google Maps After you download an area, use the Google Maps app just like you normally would. If your internet …"
+    },
+    {
+      "title": "Menelusuri menurut lintang & bujur di Google Maps",
+      "url": "https://support.google.com/maps/answer/18539?hl=id&co=GENIE.Platform%3DDesktop",
+      "snippet": "Di komputer, buka Google Maps. Di peta, klik kanan tempat atau area. Jendela pop-up akan muncul. Di bagian atas, Anda dapat …"
+    },
+    {
+      "title": "Add a missing place to Google Maps",
+      "url": "https://support.google.com/maps/answer/6320846?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Add a missing place You can add missing places to the map. The place shows publicly once it’s added. Places you can add include …"
+    }
+  ]
+}

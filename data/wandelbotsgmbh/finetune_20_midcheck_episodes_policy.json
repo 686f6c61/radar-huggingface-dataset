@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "wandelbotsgmbh/finetune_20_midcheck_episodes_policy",
+  "slug": "wandelbotsgmbh-finetune_20_midcheck_episodes_policy",
+  "author": "wandelbotsgmbh",
+  "url": "https://huggingface.co/wandelbotsgmbh/finetune_20_midcheck_episodes_policy",
+  "created_at": "2026-09-11T10:27:56.000Z",
+  "updated_at": "2026-09-11T10:28:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:wandelbotsgmbh/20_midcheck_episodes",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51617415,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206503660,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Movie box wont load. anyone with the same problem? - Reddit",
+      "url": "https://www.reddit.com/r/MovieBoxPro/comments/jv93au/movie_box_wont_load_anyone_with_the_same_problem/",
+      "snippet": "Nov 16, 2020 · A couple of weeks now I've been trying to watch the movie infidel. I haven't succeeded as of yet. I heard this movie …"
+    },
+    {
+      "title": "Movie Box Pro : r/MovieBoxPro - Reddit",
+      "url": "https://www.reddit.com/r/MovieBoxPro/comments/jzrwzn/movie_box_pro/",
+      "snippet": "Nov 23, 2020 · Movie Box Pro I’ve been using movie box for a while, I just want 1080p but I’m worried to put my card on, do they …"
+    },
+    {
+      "title": "Any reviews on MovieBox Pro VIP paid version? Is it safe to ... - Reddit",
+      "url": "https://www.reddit.com/r/ApksApps/comments/emjpso/any_reviews_on_moviebox_pro_vip_paid_version_is/",
+      "snippet": "I have the vip version also and it works but I had to download KFPanda to watch movie box since actual app isn’t working.hope this …"
+    },
+    {
+      "title": "Any good alternatives to MovieboxPro? : r/TTVreborn - Reddit",
+      "url": "https://www.reddit.com/r/TTVreborn/comments/118vfwt/any_good_alternatives_to_movieboxpro/",
+      "snippet": "Feb 22, 2023 · Since I first installed it on my Apple TV, I have had to install 6 different apps, and re-login every single time. This is …"
+    },
+    {
+      "title": "Movie box pro : r/MovieBoxPro - Reddit",
+      "url": "https://www.reddit.com/r/MovieBoxPro/comments/171tgnj/movie_box_pro/",
+      "snippet": "Oct 7, 2023 · I have movie box pro, plays great on my phone, but bufferes and freezes all the time on my 4k fire stick, I've tried using …"
+    }
+  ]
+}

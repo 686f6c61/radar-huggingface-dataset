@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "hoolatech/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+  "slug": "hoolatech-qwen3-tts-12hz-1-7b-voicedesign",
+  "author": "hoolatech",
+  "url": "https://huggingface.co/hoolatech/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+  "created_at": "2026-09-11T01:56:37.000Z",
+  "updated_at": "2026-09-11T01:56:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "qwen-tts",
+  "languages": [],
+  "tags": [
+    "qwen-tts",
+    "safetensors",
+    "qwen3_tts",
+    "audio",
+    "tts",
+    "qwen",
+    "multilingual",
+    "text-to-speech",
+    "arxiv:2601.15621",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1916676352,
+  "parameters_human": "1.92B",
+  "storage_bytes": 4515695644,
+  "storage_human": "4.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Portale Inps - Cassetto previdenziale del contribuente",
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-aree-tematiche.cassetto-previdenziale-del-contribuente-50240.cassetto-previdenziale-del-contribuente.html",
+      "snippet": "Apr 3, 2017 · Il servizio consente di visualizzare e gestire i servizi per amministrazioni, enti e aziende iscritti alla gestione privata e …"
+    },
+    {
+      "title": "INPS - Cassetto Previdenziale Contribuente",
+      "url": "https://servizi2.inps.it/servizi/CPADesktop/home.aspx",
+      "snippet": "/ Tutti i servizi / Cassetto Previdenziale Contribuente Il broswser ha JavaScript disabilitato: &egrave; possibile effetuare la …"
+    },
+    {
+      "title": "Portale Inps - Fascicolo previdenziale del cittadino",
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.fascicolo-previdenziale-del-cittadino-50865.fascicolo-previdenziale-del-cittadino.html",
+      "snippet": "Apr 19, 2017 · Il servizio consente di gestire la posizione contributiva e previdenziale, le certificazioni sanitarie e reddituali."
+    },
+    {
+      "title": "INPS - Autenticazione",
+      "url": "https://serviziweb2.inps.it/CassettoPrevidenzialeCittadinoWeb/index.jsp?S=S",
+      "snippet": "Se sei già in possesso di un'identità digitale, accedi con le credenziali del tuo gestore. Se non hai ancora un'identità digitale, richiedila …"
+    },
+    {
+      "title": "INPS",
+      "url": "https://serviziweb2.inps.it/CassettoPrevidenzialeCittadinoWeb/StampaCassettoCittadino",
+      "snippet": "Accedi al cassetto previdenziale del cittadino per consultare, scaricare e stampare la documentazione relativa alla tua posizione …"
+    }
+  ]
+}

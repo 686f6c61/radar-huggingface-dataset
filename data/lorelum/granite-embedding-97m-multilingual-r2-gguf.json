@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Lorelum/granite-embedding-97m-multilingual-r2-GGUF",
+  "slug": "lorelum-granite-embedding-97m-multilingual-r2-gguf",
+  "author": "Lorelum",
+  "url": "https://huggingface.co/Lorelum/granite-embedding-97m-multilingual-r2-GGUF",
+  "created_at": "2026-09-11T11:24:17.000Z",
+  "updated_at": "2026-09-11T11:24:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "embeddings",
+    "granite",
+    "q4_0",
+    "feature-extraction",
+    "base_model:ibm-granite/granite-embedding-97m-multilingual-r2",
+    "base_model:quantized:ibm-granite/granite-embedding-97m-multilingual-r2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 97441152,
+  "parameters_human": "97.4M",
+  "storage_bytes": 66345216,
+  "storage_human": "66 MB",
+  "base_model": "ibm-granite/granite-embedding-97m-multilingual-r2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Inloggen bij Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=nl&co=GENIE.Platform%3DDesktop",
+      "snippet": "Inloggen bij Gmail Als je Gmail wilt openen, kun je inloggen vanaf een computer of je account toevoegen aan de Gmail-app op je …"
+    },
+    {
+      "title": "granite-embedding-97m-multilingual-r2 - Hugging Face",
+      "url": "https://huggingface.co/ibm-granite/granite-embedding-97m-multilingual-r2",
+      "snippet": "Use granite-embedding-97m-multilingual-r2 for latency-sensitive production workloads, edge deployment, or when you need maximum encoding throughput with competitive multilingual quality. At 97M parameters, this model is 3× smaller than the full-size granite-embedding-311m-multilingual-r2 while preserving strong cross-lingual retrieval performance."
+    },
+    {
+      "title": "Een Google-account maken voor Gmail - Gmail Help",
+      "url": "https://support.google.com/mail/answer/56256?hl=nl",
+      "snippet": "Een Google-account maken voor Gmail Met een Google-account kun je inloggen bij Gmail en andere Google-services, zoals …"
+    },
+    {
+      "title": "granite-embedding-97m-multilingual-r2-GGUF - Hugging Face",
+      "url": "https://huggingface.co/atfai/granite-embedding-97m-multilingual-r2-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "inloggen op GMAIL wil niet - Archief Internet & Netwerk - PC Helpforum",
+      "url": "https://www.pc-helpforum.be/topic/43212-inloggen-op-gmail-wil-niet/",
+      "snippet": "Feb 28, 2013 · beste, W xp en I.E.8 heb ik als startpagina Google.nl daar klik ik op GMAIL en vul mijn emailadres en W.W. in daarna …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/MetNet-2",
+  "slug": "onescience-group-metnet-2",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/MetNet-2",
+  "created_at": "2026-09-11T09:57:09.000Z",
+  "updated_at": "2026-09-11T09:57:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "metnet_2",
+    "OneScience",
+    "earth-science",
+    "precipitation-forecasting",
+    "MetNet-2",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download Teams Desktop and Mobile Apps | Microsoft Teams",
+      "url": "https://www.microsoft.com/en-us/microsoft-teams/download-app?msockid=35dd24891caf623b1afc33581d2e63d9",
+      "snippet": "Download Microsoft Teams for desktop and mobile to stay connected on Windows, Mac, iOS, and Android. Enhance collaboration …"
+    },
+    {
+      "title": "Microsoft Teams",
+      "url": "https://teams.microsoft.com/v2/download",
+      "snippet": "Oops, unknown error!"
+    },
+    {
+      "title": "Microsoft Teams - Download and install on Windows | Microsoft Store",
+      "url": "https://apps.microsoft.com/detail/xp8bt8dw290mpq?hl=en-US&gl=US",
+      "snippet": "Whether you’re connecting with a colleague at work or brainstorming with your local volunteer organization, Microsoft Teams helps …"
+    },
+    {
+      "title": "Free Microsoft Teams | Microsoft Teams",
+      "url": "https://www.microsoft.com/en-us/microsoft-teams/free?msockid=35dd24891caf623b1afc33581d2e63d9",
+      "snippet": "Learn how the free version of Teams can help you seamlessly meet and chat with others, share files online, and collaborate with …"
+    },
+    {
+      "title": "Free Online Meetings & Video Calls | Microsoft Teams",
+      "url": "https://teams.live.com/free",
+      "snippet": "Start free Teams video calls instantly! Connect, collaborate, and communicate effortlessly. Enjoy features like video calls, chat, file …"
+    }
+  ]
+}

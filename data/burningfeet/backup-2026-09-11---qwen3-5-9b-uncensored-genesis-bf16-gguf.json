@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "burningfeet/backup-2026-09-11-.-Qwen3.5-9B-Uncensored-Genesis-BF16-GGUF",
+  "slug": "burningfeet-backup-2026-09-11---qwen3-5-9b-uncensored-genesis-bf16-gguf",
+  "author": "burningfeet",
+  "url": "https://huggingface.co/burningfeet/backup-2026-09-11-.-Qwen3.5-9B-Uncensored-Genesis-BF16-GGUF",
+  "created_at": "2026-09-11T09:13:00.000Z",
+  "updated_at": "2026-09-11T09:13:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "qwen3.8",
+    "dence",
+    "vision",
+    "multimodal",
+    "genesis",
+    "image-text-to-text",
+    "en",
+    "arxiv:1311.0851",
+    "base_model:HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+    "base_model:quantized:HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 33638130464,
+  "storage_human": "33.6 GB",
+  "base_model": "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Is there an official or exhaustive list of all mat-icons in Angular?",
+      "url": "https://stackoverflow.com/questions/50637666/is-there-an-official-or-exhaustive-list-of-all-mat-icons-in-angular",
+      "snippet": "I have started using &lt;mat-icon&gt; from Angular Material, and I'm wondering if there is any official list of the names of all the …"
+    },
+    {
+      "title": "angular 8 material dialog close button with X top right",
+      "url": "https://stackoverflow.com/questions/58151512/angular-8-material-dialog-close-button-with-x-top-right",
+      "snippet": "Sep 29, 2019 · I am trying to get my material dialog to have an X button at the top right, but I am having problems with the …"
+    },
+    {
+      "title": "Angular Material importando pero no funciona mat-icons",
+      "url": "https://es.stackoverflow.com/questions/612294/angular-material-importando-pero-no-funciona-mat-icons",
+      "snippet": "Jan 25, 2024 · 0 Firebase Api key not valid Angular 1 Problemas con el <mat-sidenav> Angular Material 0 No funciona mat …"
+    },
+    {
+      "title": "How to host material icons offline? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/37270835/how-to-host-material-icons-offline",
+      "snippet": "May 17, 2016 · Icons from @angular/material tend to break when developing offline. Adding material-icons-font package in …"
+    },
+    {
+      "title": "It is possible change angular material mat-slide-toggle icon?",
+      "url": "https://stackoverflow.com/questions/62549139/it-is-possible-change-angular-material-mat-slide-toggle-icon",
+      "snippet": "I'm using angular material version 9.2.4. I want to overwrite the toggle icon to font awesome icon and I found some example is using …"
+    }
+  ]
+}

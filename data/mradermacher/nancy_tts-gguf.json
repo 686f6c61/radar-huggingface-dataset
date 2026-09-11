@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Nancy_tts-GGUF",
+  "slug": "mradermacher-nancy_tts-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Nancy_tts-GGUF",
+  "created_at": "2026-09-11T11:31:19.000Z",
+  "updated_at": "2026-09-11T11:51:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "en",
+    "base_model:sken0/Nancy_tts",
+    "base_model:quantized:sken0/Nancy_tts",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3300867136,
+  "parameters_human": "3.30B",
+  "storage_bytes": 30292467648,
+  "storage_human": "30.3 GB",
+  "base_model": "sken0/Nancy_tts",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "valeo Employee Ratings & Reviews (2026)",
+      "url": "https://www.prepnplaced.com/company-ratings/valeo",
+      "snippet": "Aug 8, 2026 · Real employee ratings for valeo: work-life balance, salary, job security, career growth and culture — refreshed nightly. …"
+    },
+    {
+      "title": "Valeo Reviews (4,154): Pros & Cons of Working At Valeo | Glassdoor",
+      "url": "https://www.glassdoor.com/Reviews/Valeo-Reviews-E10605.htm",
+      "snippet": "Valeo has an overall rating of 3.7 out of 5, based on over 4,154 reviews left anonymously by employees. This rating has decreased …"
+    },
+    {
+      "title": "Valeo Company Reviews : What's it like to work at Valeo? - Blind",
+      "url": "https://www.teamblind.com/company/Valeo/reviews",
+      "snippet": "Read reviews at Valeo on Blind. Discover insights on culture, work-life balance, and career growth from real employees."
+    },
+    {
+      "title": "Working at Valeo: 488 Reviews | Indeed.com",
+      "url": "https://www.indeed.com/cmp/Valeo-e77226bd/reviews",
+      "snippet": "Jul 14, 2026 · 488 reviews from Valeo employees about Valeo culture, salaries, benefits, work-life balance, management, job …"
+    },
+    {
+      "title": "Working at Valeo | Glassdoor",
+      "url": "https://www.glassdoor.com/Overview/Working-at-Valeo-EI_IE10605.11,16.htm",
+      "snippet": "See what employees say it's like to work at Valeo. Salaries, reviews, and more - all posted by employees working at Valeo."
+    }
+  ]
+}

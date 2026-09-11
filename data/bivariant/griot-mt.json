@@ -5,7 +5,7 @@
   "author": "bivariant",
   "url": "https://huggingface.co/bivariant/griot-mt",
   "created_at": "2026-08-30T00:13:06.000Z",
-  "updated_at": "2026-08-31T17:25:33.000Z",
+  "updated_at": "2026-09-10T07:24:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "translation",
@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 174,
+  "downloads_30d": 181,
   "trending_score": 0,
   "parameters": 1370656768,
   "parameters_human": "1.37B",

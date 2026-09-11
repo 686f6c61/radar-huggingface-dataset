@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/DINCAE",
+  "slug": "onescience-group-dincae",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/DINCAE",
+  "created_at": "2026-09-11T09:57:09.000Z",
+  "updated_at": "2026-09-11T09:57:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "dincae",
+    "OneScience",
+    "Earth-science",
+    "sea-surface-temperature",
+    "gap-filling",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What you can do with Docs - Google Workspace Learning Center",
+      "url": "https://support.google.com/a/users/answer/9300503?hl=en",
+      "snippet": "With Google Docs, you can create and edit text documents right in your web browser—no special software is required. Even better, …"
+    },
+    {
+      "title": "Google Docs training and help - Google Workspace Learning Center",
+      "url": "https://support.google.com/a/users/answer/9282664?hl=en",
+      "snippet": "Google Docs training and help On this page Docs quick start guides Docs cheat sheet Docs productivity guides Docs troubleshooting …"
+    },
+    {
+      "title": "Google Docs Editors Help",
+      "url": "https://support.google.com/docs/?hl=en",
+      "snippet": "Official Google Docs Editors Help Center where you can find tips and tutorials on using Google Docs Editors and other answers to …"
+    },
+    {
+      "title": "Document sharing basics in Google Docs",
+      "url": "https://support.google.com/a/users/answer/9305685?hl=en",
+      "snippet": "Unshare a document Stop sharing a document you own Find the file or folder in: Google Drive Google Docs Google Sheets Google …"
+    },
+    {
+      "title": "Créer votre premier document dans Google Docs",
+      "url": "https://support.google.com/a/users/answer/9300311?hl=fr",
+      "snippet": "Imprimer votre document depuis le navigateur Chrome Sur votre ordinateur, ouvrez un document dans Google Docs. Cliquez sur …"
+    }
+  ]
+}

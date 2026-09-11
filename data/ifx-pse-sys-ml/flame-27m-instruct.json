@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ifx-pse-sys-ml/flame-27m-instruct",
+  "slug": "ifx-pse-sys-ml-flame-27m-instruct",
+  "author": "ifx-pse-sys-ml",
+  "url": "https://huggingface.co/ifx-pse-sys-ml/flame-27m-instruct",
+  "created_at": "2026-09-09T21:13:05.000Z",
+  "updated_at": "2026-09-11T02:47:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nexus",
+    "text-generation",
+    "small-language-model",
+    "instruct",
+    "smoltalk",
+    "conversational",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 145,
+  "trending_score": 0,
+  "parameters": 27125248,
+  "parameters_human": "27.1M",
+  "storage_bytes": 350157952,
+  "storage_human": "350 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "INFINEON TECHNOLOGIES Cours Action IFX, Cotation Bourse XETRA",
+      "url": "https://www.boursorama.com/cours/1zIFX/",
+      "snippet": "Le cours de l'action INFINEON TECHNOLOGIES IFX sur Boursorama : historique de la cotation sur XETRA, graphique, actualités, …"
+    },
+    {
+      "title": "Action Infineon Technologies AG | Cours IFX Bourse Xetra",
+      "url": "https://www.zonebourse.com/cours/action/INFINEON-TECHNOLOGIES-AG-436299/",
+      "snippet": "Infineon Technologies AG: Cours de bourse, graphiques, cotations, conseils boursiers, données financières, analyses et actualités en …"
+    },
+    {
+      "title": "Dividende INFINEON TECHNOLOGIES IFX, résultats et ... - Boursorama",
+      "url": "https://www.boursorama.com/cours/consensus/1zIFX/",
+      "snippet": "Retrouvez le dividende de l'action INFINEON TECHNOLOGIES IFX (Cotation Bourse XETRA), les dernières recommandations des …"
+    },
+    {
+      "title": "IFX Prix de l'action et Graphique - XETR:IFX — TradingView",
+      "url": "https://fr.tradingview.com/symbols/XETR-IFX/",
+      "snippet": "Suivez le cours de l'action Infineon Technologies AG aujourd'hui avec le graphique en direct. Retrouvez les actualités, les idées de …"
+    },
+    {
+      "title": "Global Payments & FX for Complex Businesses | IFX Payments",
+      "url": "https://www.ifxpayments.com/",
+      "snippet": "Not only does IFX provide a tailored FX solution, they offer a unique service where suppliers can be paid in multiple currencies …"
+    }
+  ]
+}

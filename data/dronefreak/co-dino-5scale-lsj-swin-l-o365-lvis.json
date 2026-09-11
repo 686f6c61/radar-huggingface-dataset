@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "dronefreak/co-dino-5scale-lsj-swin-l-o365-lvis",
+  "slug": "dronefreak-co-dino-5scale-lsj-swin-l-o365-lvis",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/co-dino-5scale-lsj-swin-l-o365-lvis",
+  "created_at": "2026-09-11T11:33:33.000Z",
+  "updated_at": "2026-09-11T11:37:01.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "mmdetection",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mmdetection",
+    "object-detection",
+    "co-detr",
+    "co-dino",
+    "detr",
+    "coco",
+    "swin",
+    "pytorch",
+    "iccv2023",
+    "lvis",
+    "objects365",
+    "en",
+    "dataset:lvis",
+    "arxiv:2211.12860",
+    "arxiv:1908.03195",
+    "license:unknown",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2958715003,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "LVIS v1 val",
+      "metric": "box AP",
+      "value": 64.5
+    }
+  ],
+  "sources": [
+    {
+      "title": "1963 Elephant Mountain B-52 crash - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/1963_Elephant_Mountain_B-52_crash",
+      "snippet": "Search Search Toggle the table of contents 1963 Elephant Mountain B-52 crash 2 languagesAdd topic"
+    },
+    {
+      "title": "B52 Crash Site - Visit Maine",
+      "url": "https://visitmaine.com/articles/b52-crash-site/",
+      "snippet": "Visitors to the recreational mecca that is Moosehead Lake may not realize that eight miles into the woods on the southern slope of …"
+    },
+    {
+      "title": "B-52 Crash Site Trail - Maine Trail Finder",
+      "url": "https://www.mainetrailfinder.com/trails/trail/b-52-crash-site-trail",
+      "snippet": "We have large sites with excellent WiFi, clean bathrooms, full hookups, pull throughs, and much more. Come enjoy our corner of …"
+    },
+    {
+      "title": "This Hidden B-52 Crash Site In Maine Is A Solemn Adventure …",
+      "url": "https://familydestinationsguide.com/elephant-mountain-trail-maine/",
+      "snippet": "Jan 17, 2024 · The B-52 crash site at Elephant Mountain stands as a somber yet fascinating destination that combines outdoor …"
+    },
+    {
+      "title": "The B-52 Crash Site Memorial in Maine | Mainepedia",
+      "url": "https://mainepedia.com/guides/b-52-crash-site/",
+      "snippet": "On January 24, 1963, a US Air Force B-52C Stratofortresson a training mission encountered severe turbulence and crashed into the …"
+    }
+  ]
+}

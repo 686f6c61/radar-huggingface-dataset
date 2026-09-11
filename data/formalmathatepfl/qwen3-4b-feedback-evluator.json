@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "formalmathatepfl/qwen3-4b-feedback-evluator",
+  "slug": "formalmathatepfl-qwen3-4b-feedback-evluator",
+  "author": "formalmathatepfl",
+  "url": "https://huggingface.co/formalmathatepfl/qwen3-4b-feedback-evluator",
+  "created_at": "2026-09-11T01:43:26.000Z",
+  "updated_at": "2026-09-11T01:48:49.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:finetune:Qwen/Qwen3-4B-Base",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8834325175,
+  "storage_human": "8.8 GB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ResDiary: Restaurant Booking System",
+      "url": "https://resdiary.com/",
+      "snippet": "ResDiary offers a comprehensive suite of features tailored by hospitality experts to meet the needs of restaurants and venues of all …"
+    },
+    {
+      "title": "Login ResDiary – Restaurant Booking System",
+      "url": "https://login.resdiary.com/Login",
+      "snippet": "Think ResDiary."
+    },
+    {
+      "title": "A restaurant booking system to manage restaurant operations. - ResDiary",
+      "url": "https://resdiary.com/features",
+      "snippet": "ResDiary is a hospitality venue reservation and table management software system. Built for hospitality operators by hospitality …"
+    },
+    {
+      "title": "Home | ResDiary Help Centre",
+      "url": "https://help-resdiary.theaccessgroup.com/en/",
+      "snippet": "Get started and make the most of your software. Find the right support resources for your needs. Guides you might need during …"
+    },
+    {
+      "title": "Resdiary online bookings",
+      "url": "https://www.resdiary.be/",
+      "snippet": "No transaction charges to operator"
+    }
+  ]
+}

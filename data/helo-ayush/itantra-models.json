@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "helo-ayush/itantra-models",
+  "slug": "helo-ayush-itantra-models",
+  "author": "helo-ayush",
+  "url": "https://huggingface.co/helo-ayush/itantra-models",
+  "created_at": "2026-09-11T09:39:19.000Z",
+  "updated_at": "2026-09-11T09:58:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "hi",
+    "gu",
+    "mr",
+    "kn",
+    "ml",
+    "ta",
+    "te",
+    "or",
+    "bn",
+    "en"
+  ],
+  "tags": [
+    "speech-recognition",
+    "text-to-speech",
+    "onnx",
+    "android",
+    "offline-transceiver",
+    "itantra",
+    "hi",
+    "gu",
+    "mr",
+    "kn",
+    "ml",
+    "ta",
+    "te",
+    "or",
+    "bn",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2693626486,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Connexion à votre espace en ligne - Agglo La Rochelle",
+      "url": "https://helo.agglo-larochelle.fr/Portail/fr/Connexion/Login",
+      "snippet": "This site uses cookies necessary for its proper functioning which cannot be deactivated."
+    },
+    {
+      "title": "ACCUEIL",
+      "url": "https://helo.agglo-larochelle.fr/",
+      "snippet": "Mon agence en ligne Pratique, simple et sécurisée, l'agence en ligne Hélo est réservée aux abonnés du service de l'eau de la …"
+    },
+    {
+      "title": "Hellowork | Offres Emploi, Alerte mail, CV et Recrutement en France",
+      "url": "https://www.hellowork.com/fr-fr/",
+      "snippet": "Trouvez rapidement un Emploi avec Hellowork, Premier site Emploi en France : 885 636 Offres d'Emploi, 11 870 Entreprises qui …"
+    },
+    {
+      "title": "L'eau Publique Rochelaise - Site officiel de la ville de Puilboreau",
+      "url": "https://www.ville-puilboreau.fr/actualite/helo-leau-publique-rochelaise/",
+      "snippet": "Mar 30, 2023 · Sur le site : helo.agglo-larochelle.fr Vous disposez néanmoins de plusieurs moyens de paiement : par Internet: …"
+    },
+    {
+      "title": "Espace client | Hello bank!",
+      "url": "https://www.hellobank.fr/faq/rubrique/espace-client",
+      "snippet": "Espace client : Parce que nous ne laissons pas vos questions sans réponses"
+    }
+  ]
+}

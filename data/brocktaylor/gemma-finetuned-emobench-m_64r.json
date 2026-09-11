@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "BrockTaylor/gemma-finetuned-EmoBench-M_64R",
+  "slug": "brocktaylor-gemma-finetuned-emobench-m_64r",
+  "author": "BrockTaylor",
+  "url": "https://huggingface.co/BrockTaylor/gemma-finetuned-EmoBench-M_64R",
+  "created_at": "2026-09-11T09:37:35.000Z",
+  "updated_at": "2026-09-11T10:20:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:finetune:google/gemma-4-12B-it",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 845460696,
+  "storage_human": "845 MB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook邮箱注册入口 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/316431122890820204.html",
+      "snippet": "May 12, 2024 · Outlook邮箱注册入口Outlook.com 是 Microsoft 所提供的免费个人电子邮件服务，本文将分享Outlook邮箱注册入口＆ …"
+    },
+    {
+      "title": "hotmail邮箱怎么登录？_百度知道",
+      "url": "https://zhidao.baidu.com/question/402916655883659605.html",
+      "snippet": "Feb 21, 2024 · 登录后缀@hotmail.com的邮箱一共有三种方法，具体如下： 方法一：官方登陆入口 首先我们想到的一定是官网登陆， …"
+    },
+    {
+      "title": "Msn - Actualités High-Tech",
+      "url": "https://forums.commentcamarche.net/forum/affich-2070347-msn",
+      "snippet": "Jan 31, 2006 · MSN Messenger est le logiciel de chat qui - lui - restera gratuit. Il y a également MSN Search, le moteur de recherche …"
+    },
+    {
+      "title": "Historique de Connexion Hotmail ? - Hotmail / Outlook.com",
+      "url": "https://forums.commentcamarche.net/forum/affich-36581433-historique-de-connexion-hotmail",
+      "snippet": "Apr 15, 2020 · Bonjour, J'ai un compte Hotmail accessible par mon ordinateur de salon et mon téléphone portable. Il y a environ 6 …"
+    },
+    {
+      "title": "微软有哪些后缀的邮箱？请尽量详细 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/42543187.html",
+      "snippet": "截止2018年，微软统一使用 .outlook 邮箱后缀。 北京时间2012年8月1日微软宣布将为旗下Outlook品牌推出一种免费的、基于网络的 …"
+    }
+  ]
+}

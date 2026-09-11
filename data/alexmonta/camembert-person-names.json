@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "alexmonta/camembert-person-names",
+  "slug": "alexmonta-camembert-person-names",
+  "author": "alexmonta",
+  "url": "https://huggingface.co/alexmonta/camembert-person-names",
+  "created_at": "2026-09-11T09:26:57.000Z",
+  "updated_at": "2026-09-11T09:27:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "camembert",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110032898,
+  "parameters_human": "110.0M",
+  "storage_bytes": 440155504,
+  "storage_human": "440 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vitamin D deficiency: Can it cause high blood pressure?",
+      "url": "https://www.mayoclinic.org/diseases-conditions/high-blood-pressure/expert-answers/vitamin-d-deficiency/faq-20058280",
+      "snippet": "Feb 26, 2025 · Can vitamin D deficiency cause high blood pressure? A vitamin D deficiency means you don't have enough vitamin D …"
+    },
+    {
+      "title": "Does Vitamin D Deficiency Cause High Blood Pressure?",
+      "url": "https://hbmag.com/does-vitamin-d-deficiency-cause-high-blood-pressure/",
+      "snippet": "Jul 19, 2026 · No, vitamin D deficiency alone does not cause high blood pressure in most people. It may contribute to slightly higher …"
+    },
+    {
+      "title": "Can Vitamin D Deficiency Cause High Blood Pressure?",
+      "url": "https://biologyinsights.com/can-vitamin-d-deficiency-cause-high-blood-pressure/",
+      "snippet": "Aug 28, 2025 · A growing body of scientific research suggests a link between Vitamin D deficiency and high blood pressure. This …"
+    },
+    {
+      "title": "Can Low Vitamin D Levels Increase Your Risk of Hypertension?",
+      "url": "https://resperate.com/blog/hypertension/treatments/alternative-treatments/hypertension-facts-causes-risks-can-vitamin-d-deficiency-cause-high-blood-pressure",
+      "snippet": "Aug 19, 2026 · Vitamin D deficiency is a recognized sign of cardiovascular conditions, including high blood pressure. Research also …"
+    },
+    {
+      "title": "Vitamin D deficiency: Can it cause high blood pressure?",
+      "url": "https://johnsonmemorial.org/jmh-health-information-faq/faq-20058280",
+      "snippet": "A low vitamin D level seems to increase the risk of heart disease and death due to the condition. A low vitamin D level may make a …"
+    }
+  ]
+}

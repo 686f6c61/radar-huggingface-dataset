@@ -5,7 +5,7 @@
   "author": "ananthu-aniraj",
   "url": "https://huggingface.co/ananthu-aniraj/ifam-siim-acr-k8",
   "created_at": "2026-08-31T10:17:52.000Z",
-  "updated_at": "2026-09-01T08:37:07.000Z",
+  "updated_at": "2026-09-10T09:37:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -22,6 +22,8 @@
     "dinov2",
     "ifam",
     "arxiv:2506.08915",
+    "base_model:microsoft/rad-dino",
+    "base_model:finetune:microsoft/rad-dino",
     "license:apache-2.0",
     "region:us"
   ],
@@ -32,7 +34,7 @@
   "parameters_human": "173.2M",
   "storage_bytes": 692791308,
   "storage_human": "693 MB",
-  "base_model": null,
+  "base_model": "microsoft/rad-dino",
   "formats": [
     "safetensors"
   ],

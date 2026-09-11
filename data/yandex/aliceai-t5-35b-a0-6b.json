@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "yandex/AliceAI-T5-35B-A0.6B",
+  "slug": "yandex-aliceai-t5-35b-a0-6b",
+  "author": "yandex",
+  "url": "https://huggingface.co/yandex/AliceAI-T5-35B-A0.6B",
+  "created_at": "2026-09-10T15:13:39.000Z",
+  "updated_at": "2026-09-11T09:36:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "aliceai_t5_moe",
+    "text2text-generation",
+    "pytorch",
+    "encoder-decoder",
+    "mixture-of-experts",
+    "ul2",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 34561885184,
+  "parameters_human": "34.56B",
+  "storage_bytes": 69143237936,
+  "storage_human": "69.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yandex — fast Internet search",
+      "url": "https://yandex.com/",
+      "snippet": "Yandex finds anything: webpages, images, music, good. Solve any problem — from everyday to a scientific one. Search by text, …"
+    },
+    {
+      "title": "Яндекс — быстрый поиск в интернете",
+      "url": "https://ya.ru/",
+      "snippet": "Яндекс предлагает быстрый поиск информации в интернете, включая сайты, изображения, музыку и товары. Используйте …"
+    },
+    {
+      "title": "Yandex",
+      "url": "http://online.yandex.com/search",
+      "snippet": "{\"2_4kyc\":{\"state\":{\"form\":{\"action\":\"/search\",\"logo\":{\"href\":\"//yandex.com\",\"isForeign\":true,\"size\":44},\"searchLabel\":\"Search\",\"hiddenInputs\":[{\"name\":\"lr\",\"value\":21206}],\"inputMaxLength\":4000},\"actions\":{\"advancedSearch\":{\"checked\":false,\"ariaLabel\":\"Advanced …"
+    },
+    {
+      "title": "Яндекс",
+      "url": "https://yandex.fr/?from=tabbar",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Search by images and photos - Yandex",
+      "url": "https://yandex.com/images/",
+      "snippet": "Search for postcards, desktop screensavers, funny pictures, diagrams, illustrated manuals, and other images in Yandex Images. Get …"
+    }
+  ]
+}

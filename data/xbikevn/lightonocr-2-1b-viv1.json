@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "xbikevn/LightOnOCR-2-1B-viv1",
+  "slug": "xbikevn-lightonocr-2-1b-viv1",
+  "author": "xbikevn",
+  "url": "https://huggingface.co/xbikevn/LightOnOCR-2-1B-viv1",
+  "created_at": "2026-09-11T02:40:11.000Z",
+  "updated_at": "2026-09-11T04:28:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lighton_ocr",
+    "image-text-to-text",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:xbikevn/LightOnOCR-2-1B-vi",
+    "base_model:finetune:xbikevn/LightOnOCR-2-1B-vi",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1005647872,
+  "parameters_human": "1.01B",
+  "storage_bytes": 4034163049,
+  "storage_human": "4.0 GB",
+  "base_model": "xbikevn/LightOnOCR-2-1B-vi",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LibreOffice Download | LibreOffice - Freie Office Suite – Nachfolger ...",
+      "url": "https://de.libreoffice.org/download/download/",
+      "snippet": "LibreOffice herunterladen Wählen Sie Ihr Betriebssystem: DOWNLOAD Torrent, Info 26.8.0 Wenn Sie Technik-Enthusiast, Vorreiter …"
+    },
+    {
+      "title": "lightonai/LightOnOCR-2-1B · Hugging Face",
+      "url": "https://huggingface.co/lightonai/LightOnOCR-2-1B",
+      "snippet": "Best OCR model . LightOnOCR-2-1B is LightOn's flagship OCR model, refined with RLVR training for maximum accuracy."
+    },
+    {
+      "title": "Willkommen | LibreOffice - Freie Office Suite – Nachfolger von …",
+      "url": "https://de.libreoffice.org/",
+      "snippet": "Bewältigen Sie mehr, einfacher, schneller LibreOffice ist Ihr leistungsstarkes Office-Paket: Der Nachfolger von OpenOffice, mit dem …"
+    },
+    {
+      "title": "Calc | LibreOffice - Freie Office Suite – Nachfolger von OpenOffice",
+      "url": "https://de.libreoffice.org/discover/calc/",
+      "snippet": "Calc ist das Tabellenkalkulationsprogramm der LibreOffice-Suite Es ermöglicht Benutzern, Daten in Tabellenform zu organisieren, …"
+    },
+    {
+      "title": "[2601.14251] LightOnOCR: A 1B End-to-End Multilingual Vision-Language Model for State-of-the-Art OCR",
+      "url": "https://arxiv.org/abs/2601.14251",
+      "snippet": "We present LightOnOCR-2-1B, a 1B-parameter end-to-end multilingual vision--language model that converts document images (e.g., PDFs) into clean, naturally ordered text without brittle OCR pipelines."
+    }
+  ]
+}

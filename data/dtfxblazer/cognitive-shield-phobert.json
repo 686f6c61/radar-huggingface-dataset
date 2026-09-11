@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "DTFxBlazer/cognitive-shield-phobert",
+  "slug": "dtfxblazer-cognitive-shield-phobert",
+  "author": "DTFxBlazer",
+  "url": "https://huggingface.co/DTFxBlazer/cognitive-shield-phobert",
+  "created_at": "2026-09-11T09:40:20.000Z",
+  "updated_at": "2026-09-11T10:43:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "vi",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134999810,
+  "parameters_human": "135.0M",
+  "storage_bytes": 540023384,
+  "storage_human": "540 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.be/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.be/",
+      "snippet": "Deze kosteloze service van Google kan woorden, zinnen en webpagina's onmiddellijk vertalen tussen het Nederlands en meer dan …"
+    },
+    {
+      "title": "Google Vidéos",
+      "url": "https://www.google.be/videohp?hl=fr",
+      "snippet": "Rechercher des millions de vidéos sur le Web"
+    },
+    {
+      "title": "Google Images",
+      "url": "https://images.google.be/",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    },
+    {
+      "title": "Privacy Policy – Privacy & Terms – Google",
+      "url": "https://maps.google.be/intl/en/policies/privacy/archive/20051014/",
+      "snippet": "Last modified: October 14, 2005 At Google we recognize that privacy is important. This Policy applies to all of the products, services …"
+    }
+  ]
+}

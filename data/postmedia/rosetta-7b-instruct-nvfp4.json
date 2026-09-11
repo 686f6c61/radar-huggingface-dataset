@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "PoSTMEDIA/Rosetta-7B-Instruct-NVFP4",
+  "slug": "postmedia-rosetta-7b-instruct-nvfp4",
+  "author": "PoSTMEDIA",
+  "url": "https://huggingface.co/PoSTMEDIA/Rosetta-7B-Instruct-NVFP4",
+  "created_at": "2026-09-11T09:07:51.000Z",
+  "updated_at": "2026-09-11T09:09:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "rosetta",
+    "text-generation",
+    "korean",
+    "bilingual",
+    "postmedia",
+    "nvfp4",
+    "fp4",
+    "modelopt",
+    "conversational",
+    "custom_code",
+    "ko",
+    "en",
+    "base_model:PoSTMEDIA/Rosetta-7B-Instruct",
+    "base_model:quantized:PoSTMEDIA/Rosetta-7B-Instruct",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4560924672,
+  "parameters_human": "4.56B",
+  "storage_bytes": 6301710771,
+  "storage_human": "6.3 GB",
+  "base_model": "PoSTMEDIA/Rosetta-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Read Gmail messages on other email clients using POP",
+      "url": "https://support.google.com/mail/answer/7104828?hl=en",
+      "snippet": "Try again later or consider using POP3 in recent mode.” To use POP while the setup is still in process, you can: Change your email …"
+    },
+    {
+      "title": "Ошибка pop3 с корпаративным почтовым сервером - Форум – Gmail",
+      "url": "https://support.google.com/mail/thread/13645428/%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0-pop3-%D1%81-%D0%BA%D0%BE%D1%80%D0%BF%D0%B0%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%BC-%D0%BF%D0%BE%D1%87%D1%82%D0%BE%D0%B2%D1%8B%D0%BC-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%BE%D0%BC?hl=ru",
+      "snippet": "Раньше не работали с интегрированным сервисом Gmail? false"
+    },
+    {
+      "title": "Čítanie správ v Gmaile v iných e‑mailových klientoch pomocou …",
+      "url": "https://support.google.com/mail/answer/7104828?hl=sk",
+      "snippet": "Skúste to neskôr alebo zvážte použitie protokolu POP3 v nedávnom režime.“ Ak chcete používať protokol POP už počas …"
+    },
+    {
+      "title": "Add another email account on your computer - Gmail Help",
+      "url": "https://support.google.com/mail/answer/21289?hl=en",
+      "snippet": "When you switch to Gmail, you can transfer your old emails from your other account. On your computer, open Gmail. At the top right, …"
+    },
+    {
+      "title": "POP を使用して他のメール クライアントで Gmail のメールを読む",
+      "url": "https://support.google.com/mail/answer/7104828?hl=ja",
+      "snippet": "しばらくしてからもう一度お試しいただくか、最新モードで POP3 を使用することを検討ください。 」 設定がまだ処理中である場 …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "JeonghunS/NCAI_Fourth_1",
+  "slug": "jeonghuns-ncai_fourth_1",
+  "author": "JeonghunS",
+  "url": "https://huggingface.co/JeonghunS/NCAI_Fourth_1",
+  "created_at": "2026-09-11T01:47:23.000Z",
+  "updated_at": "2026-09-11T01:51:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852739136,
+  "parameters_human": "852.7M",
+  "storage_bytes": 1725526193,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Strona główna | DENZA Polska",
+      "url": "https://www.denza.com/pl",
+      "snippet": "Stworzona przez DENZA. Od elektrycznych supersamochodów o wysokich osiągach, przez luksusowe vany MPV, aż po hybrydowe …"
+    },
+    {
+      "title": "Homepage | DENZA",
+      "url": "https://www.denza.com/eu",
+      "snippet": "DENZA' s design embodies a flowing elegance—an artful fusion of aerodynamic precision and timeless innovation."
+    },
+    {
+      "title": "Denza - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Denza",
+      "snippet": "Shenzhen Denza New Energy Co., Ltd., trading as Denza (Chinese: 腾势; pinyin: Téngshì), is an automobile manufacturing company …"
+    },
+    {
+      "title": "Denza - Samochody Osobowe - Otomoto.pl",
+      "url": "https://www.otomoto.pl/osobowe/denza",
+      "snippet": "Samochody Osobowe Denza - Przeglądaj oferty nowych i używanych pojazdów na sprzedaż w Otomoto.pl."
+    },
+    {
+      "title": "Denza – Wikipedia, wolna encyklopedia",
+      "url": "https://pl.wikipedia.org/wiki/Denza",
+      "snippet": "Przez pierwszą dekadę istnienia, Denza pozostała marką wyłącznie o lokalnym zasięgu rynkowym, będąc dostępną tylko w Chinach. …"
+    }
+  ]
+}

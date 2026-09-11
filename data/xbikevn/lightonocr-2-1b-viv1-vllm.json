@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "xbikevn/LightOnOCR-2-1B-viv1-vllm",
+  "slug": "xbikevn-lightonocr-2-1b-viv1-vllm",
+  "author": "xbikevn",
+  "url": "https://huggingface.co/xbikevn/LightOnOCR-2-1B-viv1-vllm",
+  "created_at": "2026-09-11T02:42:11.000Z",
+  "updated_at": "2026-09-11T04:31:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lighton_ocr",
+    "image-text-to-text",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:xbikevn/LightOnOCR-2-1B-vi",
+    "base_model:finetune:xbikevn/LightOnOCR-2-1B-vi",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1005647872,
+  "parameters_human": "1.01B",
+  "storage_bytes": 7311344109,
+  "storage_human": "7.3 GB",
+  "base_model": "xbikevn/LightOnOCR-2-1B-vi",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    },
+    {
+      "title": "lightonai/LightOnOCR-2-1B · Hugging Face",
+      "url": "https://huggingface.co/lightonai/LightOnOCR-2-1B",
+      "snippet": "Best OCR model . LightOnOCR-2-1B is LightOn's flagship OCR model, refined with RLVR training for maximum accuracy."
+    },
+    {
+      "title": "如何看待Deepseek Harness发布？ - 知乎",
+      "url": "https://www.zhihu.com/question/2071331484284220938",
+      "snippet": "Harness是DeepSeek内部于2026年5月组建的代码智能体团队，其目标是开发对标Anthropic旗下Claude Code的桌…"
+    },
+    {
+      "title": "LightOnOCR: A 1B End-to-End Multilingual Vision-Language Model for State-of-the-Art OCR",
+      "url": "https://arxiv.org/html/2601.14251v1",
+      "snippet": "We start from the pretraining checkpoints (LightOnOCR-2-1B-base for OCR and LightOnOCR-2-1B-bbox-base for localization) and train with GRPO [24] for one epoch with AdamW at learning rate ... \\beta=0.01. We use group-scaled rewards with token-level importance sampling and sample multiple rollouts per prompt (28 for OCR and 14 for bbox). Training is implemented with the Hugging Face TRL library [25], and rollouts are generated with vLLM for increased efficiency."
+    },
+    {
+      "title": "twitter官网地址 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1809825519547649747.html",
+      "snippet": "Apr 18, 2025 · twitter官网地址Twitter的官网地址是：https://twitter.com/以下是一些关于访问和使用Twitter官网的注意事项：网址变 …"
+    }
+  ]
+}

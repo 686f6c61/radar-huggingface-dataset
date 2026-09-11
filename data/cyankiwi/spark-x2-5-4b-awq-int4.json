@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "cyankiwi/Spark-X2.5-4B-AWQ-INT4",
+  "slug": "cyankiwi-spark-x2-5-4b-awq-int4",
+  "author": "cyankiwi",
+  "url": "https://huggingface.co/cyankiwi/Spark-X2.5-4B-AWQ-INT4",
+  "created_at": "2026-09-11T09:34:00.000Z",
+  "updated_at": "2026-09-11T09:35:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "spark2_5",
+    "text-generation",
+    "llm",
+    "sparkx2_5",
+    "conversational",
+    "custom_code",
+    "base_model:XHToken/Spark-X2.5-4B",
+    "base_model:quantized:XHToken/Spark-X2.5-4B",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 2857449244,
+  "storage_human": "2.9 GB",
+  "base_model": "XHToken/Spark-X2.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Internetbankieren - Belfius Direct Net - Belfius",
+      "url": "https://www.belfius.be/retail/nl/zelf-bankieren/internet-mobile/belfius-direct-net/index.aspx",
+      "snippet": "Met Belfius Direct Net regelt u al uw bankzaken makkelijk online via uw pc. In een oogopslag krijgt u een zicht op uw rekeningen, …"
+    },
+    {
+      "title": "Zelf bankieren - Belfius",
+      "url": "https://www.belfius.be/retail/nl/zelf-bankieren/index.aspx",
+      "snippet": "Bankier waar en wanneer u wil met oplossingen op maat: via Belfius Direct Net op uw computer, met de beste bankingapp op de …"
+    },
+    {
+      "title": "Internetbankieren en Mobile Banking apps - Belfius - Belfius",
+      "url": "https://www.belfius.be/retail/nl/zelf-bankieren/internet-mobile/index.aspx",
+      "snippet": "Praktische internet tools, de beste Mobile Banking apps op de markt: online en mobiel bankieren in alle veiligheid, waar u ook bent."
+    },
+    {
+      "title": "Belfius",
+      "url": "https://www.belfius.be/retail/nl/loginapp/index.aspx",
+      "snippet": "U krijgt pas toegang tot de Belfius Mobile app nadat uw toestel is geregistreerd aan de hand van uw bankkaart en kaartlezer. Nadien …"
+    },
+    {
+      "title": "Login - my.belfiusdirect.be",
+      "url": "https://my.belfiusdirect.be/s/login",
+      "snippet": "Via je bank (BNPPF, Belfius, KBC, CBC, ING, Hello Bank of Fintro): op voorwaarde dat de bank jouw eID-kaart heeft ingelezen. Dan …"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "diffbot/DeepSeek-V4.1-Flash-EXL3-2.0bpw-2x-RTX-PRO-6000",
+  "slug": "diffbot-deepseek-v4-1-flash-exl3-2-0bpw-2x-rtx-pro-6000",
+  "author": "diffbot",
+  "url": "https://huggingface.co/diffbot/DeepSeek-V4.1-Flash-EXL3-2.0bpw-2x-RTX-PRO-6000",
+  "created_at": "2026-09-11T09:36:30.000Z",
+  "updated_at": "2026-09-11T10:00:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deepseek_v41",
+    "exl3",
+    "exllamav3",
+    "vllm",
+    "deepseek",
+    "deepseek-v4.1-flash",
+    "mixture-of-experts",
+    "2-bit",
+    "rtx-pro-6000",
+    "blackwell",
+    "sm120",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 281118567634,
+  "parameters_human": "281.12B",
+  "storage_bytes": 358124132666,
+  "storage_human": "358.1 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/RelatedSearch",
+      "snippet": ""
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4-Flash",
+      "snippet": "DeepSeek V4 MoE model with hybrid CSA+HCA attention, manifold-constrained hyper-connections, and three-tier reasoning (Non-think / Think High / Think Max)."
+    },
+    {
+      "title": "r/LocalLLaMA on Reddit: Follow-up: DeepSeek V4 Flash on 2x RTX PRO 6000 finishes real coding tasks faster than Sonnet and Opus, at about Sonnet quality",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1um84bd/followup_deepseek_v4_flash_on_2x_rtx_pro_6000/",
+      "snippet": ""
+    },
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://www.bing.com/",
+      "snippet": "Decades later, we’re finally learning what happens when they leak. Search with Microsoft Bing and use the power of AI to find …"
+    },
+    {
+      "title": "Microsoft Edge Add-ons",
+      "url": "https://microsoftedge.microsoft.com/addons/search/bing+related+search+version",
+      "snippet": "Make Microsoft Edge your own with extensions that help you personalize the browser and be more productive."
+    }
+  ]
+}

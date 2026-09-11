@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Krantzweb/KairosDirectorate",
+  "slug": "krantzweb-kairosdirectorate",
+  "author": "Krantzweb",
+  "url": "https://huggingface.co/Krantzweb/KairosDirectorate",
+  "created_at": "2026-09-11T02:37:21.000Z",
+  "updated_at": "2026-09-11T02:37:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v41",
+    "text-generation",
+    "image-text-to-text",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763205315794,
+  "parameters_human": "763.21B",
+  "storage_bytes": 510299192278,
+  "storage_human": "510.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Filling the Gaps: A Review and Update on Beta-Lactamase Inhibitor ...",
+      "url": "https://link.springer.com/article/10.1007/s11908-025-00874-y",
+      "snippet": "Jan 24, 2026 · This review outlines the pharmacologic characteristics, activity, and clinical efficacy data for newly approved BL/BLIs. …"
+    },
+    {
+      "title": "Clinical efficacy, safety and pharmacokinetics of novel β-lactam/β ...",
+      "url": "https://academic.oup.com/jacamr/article/7/3/dlaf096/8169324",
+      "snippet": "Jun 19, 2025 · According to the published literature, clinical research supports the novel BL/BLI combinations for the treatment of …"
+    },
+    {
+      "title": "Rationale and evidence for the use of new beta-lactam/beta",
+      "url": "https://link.springer.com/article/10.1186/s13613-023-01153-6",
+      "snippet": "Jul 18, 2023 · In vitro activity of the siderophore cephalosporin, cefiderocol, against a recent collection of clinically relevant Gram …"
+    },
+    {
+      "title": "A Systematic Review of the Pharmacokinetics and Pharmacodynamics …",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0924857924001845",
+      "snippet": "Sep 1, 2024 · Novel beta-lactams show activity against many multidrug-resistant Gram-negative bacteria that cause severe lung …"
+    },
+    {
+      "title": "New β-Lactam/β-Lactamase Inhibitor Combination Antibiotics",
+      "url": "https://www.mdpi.com/2076-0817/14/4/307",
+      "snippet": "Mar 24, 2025 · Table 1 presents the basic characteristics of these new β-lactam/β-lactamase inhibitor combination agents, including …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "con-cord/GRPO-MOD3-sft-agreed-no-ref",
+  "slug": "con-cord-grpo-mod3-sft-agreed-no-ref",
+  "author": "con-cord",
+  "url": "https://huggingface.co/con-cord/GRPO-MOD3-sft-agreed-no-ref",
+  "created_at": "2026-09-11T09:26:46.000Z",
+  "updated_at": "2026-09-11T09:29:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4300079472,
+  "parameters_human": "4.30B",
+  "storage_bytes": 17238509855,
+  "storage_human": "17.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "צבעים לעץ - צפו בקטלוג צבעים ולכות לעץ לקניה אונליין | יעקבי",
+      "url": "https://www.jacobi.co.il/collections/%D7%A6%D7%91%D7%A2-%D7%9C%D7%A2%D7%A5",
+      "snippet": "מגוון צבעים ולכות איכותיים ביותר לעץ - צבע לעץ וצבע לכה, צבע אמאייל איכותי על בסיס מים של הידרו אמאייל, לכה צבעונית חצי שקופה, ספריי על בסיס …"
+    },
+    {
+      "title": "צבעים לקירות, לכה לעץ, לכה למתכת | יעקבי - כל מוצר בול",
+      "url": "https://www.jacobi.co.il/collections/%D7%A6%D7%91%D7%A2%D7%99%D7%9D-%D7%95%D7%9C%D7%9B%D7%95%D7%AA",
+      "snippet": "מחפשים לחדש רהיט ישן או את הדק בגינה? לפניכם את מגוון הצבעים והלכות האיכותיים ביותר שיעזרו לכם לחדש כל קיר, פריט עץ, מתכת, צבעים …"
+    },
+    {
+      "title": "לכה לעץ, לכות לעץ מהמותגים המובילים | סאן-דק",
+      "url": "https://www.sundeck.co.il/%D7%A7%D7%98%D7%9C%D7%95%D7%92-%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D-%D7%9C%D7%98%D7%99%D7%A4%D7%95%D7%9C-%D7%91%D7%A2%D7%A5/%D7%9C%D7%9B%D7%95%D7%AA/",
+      "snippet": "בסאן-דק תמצאו לכה לעץ על בסיס מים או לכה לעץ על בסיס שמן, ואפילו לכה לעץ על בסיס אמולסיה – כולן לכות מומלצות, מקצועיות בעלות עמידות גבוהה."
+    },
+    {
+      "title": "לכה לעץ | לכה שקופה לעץ - נוימן מקצוענים בעץ",
+      "url": "https://www.noyman-wood.co.il/%D7%9C%D7%9B%D7%94-%D7%9C%D7%A2%D7%A5-c34",
+      "snippet": "לכה לעץ היא אחד מחומרי הגמר החשובים ביותר לשימור היופי והעמידות של עץ במגוון שימושים. היא יוצרת שכבת הגנה חזקה מפני שחיקה, לחות, שינויי …"
+    },
+    {
+      "title": "הכל על לכה לעץ | אלרם",
+      "url": "https://www.dvakim.com/blogs/articles/all-about-wood-varnish",
+      "snippet": "היא מעניקה לעץ מראה טבעי תוך שמספקת את אותה שכבת הגנה מסורתית. הגימור היפה הייחודי מותאם גם להסתרת טביעות אצבעות ולכן הוא מושלם …"
+    }
+  ]
+}

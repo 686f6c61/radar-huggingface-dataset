@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "Solstice-AI/Qwen3.8-27B-TTURBO-Cold-Fusion-709-L-NM-DAU-UltraOptimised-VariableThinking-GGUF",
+  "slug": "solstice-ai-qwen3-8-27b-tturbo-cold-fusion-709-l-nm-dau-ultraoptimised-variablethinking-gguf",
+  "author": "Solstice-AI",
+  "url": "https://huggingface.co/Solstice-AI/Qwen3.8-27B-TTURBO-Cold-Fusion-709-L-NM-DAU-UltraOptimised-VariableThinking-GGUF",
+  "created_at": "2026-09-11T02:04:54.000Z",
+  "updated_at": "2026-09-11T04:50:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "unsloth",
+    "fine tune",
+    "heretic",
+    "uncensored",
+    "abliterated",
+    "ara",
+    "MTP GGUF Quants",
+    "Regular GGUF Quants",
+    "qwen3_8",
+    "qwen3_6",
+    "qwen3_5",
+    "multi-stage tuned",
+    "thinking",
+    "reasoning",
+    "all use cases",
+    "coder",
+    "creative",
+    "creative writing",
+    "all genres",
+    "story",
+    "writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "multi-stage-tune",
+    "multi-state-merge",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "dataset:DavidAU/Polar-STRICT-Datasets",
+    "dataset:DavidAU/F451-STRICT-Datasets",
+    "dataset:DavidAU/THE-DECKARD-Datasets",
+    "base_model:DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 412202556938,
+  "storage_human": "412.2 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Solstice — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Solstice",
+      "snippet": "Le solstice est un événement astronomique qui se produit deux fois par an, lorsque la position apparente du Soleil atteint sa plus …"
+    },
+    {
+      "title": "Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic ...",
+      "url": "https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-GGUF-UltraOptimised",
+      "snippet": "This is the high-performance quantization and serving release of DavidAU's flagship Qwen3.8-27B Cold Fusion checkpoint, packaged and optimized by Solstice-AI. Featuring a historic 735 ARC-C and 882 ARC-E, this model delivers an unprecedented 9-for-9 clean sweep over Claude Opus 4.6 Max across the official Claude Code benchmark harness."
+    },
+    {
+      "title": "Date des équinoxes et des solstices pour 2026 et à venir",
+      "url": "https://icalendrier.fr/outils/equinoxes-solstices",
+      "snippet": "Mar 20, 2026 · Le solstice correspond au moment de l'année où les rayons du soleil touchent la Terre avec l'angle le plus incliné. Le …"
+    },
+    {
+      "title": "Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU ...",
+      "url": "https://aimarketcap.tech/models/solstice-ai-qwen3-8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-nm-dau-awq",
+      "snippet": "Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-AWQ is a open-weight Solstice-AI multimodal model with a 262,144 token context window. Running this yourself: likely needs a rented cloud gpu."
+    },
+    {
+      "title": "Solstice - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Solstice",
+      "snippet": "The lengths of time when the sun is up are longer around the summer solstice and shorter around the winter solstice, except near the …"
+    }
+  ]
+}

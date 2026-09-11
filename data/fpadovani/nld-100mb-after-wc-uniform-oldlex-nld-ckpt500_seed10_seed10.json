@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/nld-100mb-after-wc-uniform-oldlex-nld-ckpt500_seed10_seed10",
+  "slug": "fpadovani-nld-100mb-after-wc-uniform-oldlex-nld-ckpt500_seed10_seed10",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/nld-100mb-after-wc-uniform-oldlex-nld-ckpt500_seed10_seed10",
+  "created_at": "2026-09-11T09:14:53.000Z",
+  "updated_at": "2026-09-11T11:10:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:fpadovani/ppt-wc-uniform-oldlex-nld-100mb_seed10",
+    "base_model:finetune:fpadovani/ppt-wc-uniform-oldlex-nld-100mb_seed10",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 7987446778,
+  "storage_human": "8.0 GB",
+  "base_model": "fpadovani/ppt-wc-uniform-oldlex-nld-100mb_seed10",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Goldpreis Steilvorlage 1230 Euro | Aktienforum | Aktien Forum ...",
+      "url": "https://forum.finanzen.net/forum/Goldpreis_Steilvorlage_1230_Euro-t492397",
+      "snippet": "Dec 9, 2013 · Zockopa : Goldpreis Steilvorlage 1230 Euro Lasst uns gemeinsam die Goldvergangenheit begraben und heute einen …"
+    },
+    {
+      "title": "finanzen.net - Das Finanzportal",
+      "url": "https://forum.finanzen.net/forum/thread?thread_id=582595",
+      "snippet": "Goldpreis steigt auf höchsten Stand seit fast einem Jahr Die Turbulenzen im Bankensektor sorgen dafür, dass der Goldpreis ansteigt. …"
+    },
+    {
+      "title": "Barrick Gold | Aktienforum | Aktien Forum | Diskussionsboard ...",
+      "url": "https://forum.finanzen.net/forum/Barrick_Gold-t441686",
+      "snippet": "Bei einem Goldpreis von 5000$ sehe ich Barrick bei über 50€. &nbsp; und der Kurs von 55$ aus dem April 2011 könnte demnächst …"
+    },
+    {
+      "title": "Hecla Mining - gute Zahlen | Aktienforum | Aktien Forum ...",
+      "url": "https://forum.finanzen.net/forum/Hecla_Mining_gute_Zahlen-t500666",
+      "snippet": "Hecla Mining - gute Zahlen | Aktienforum | Aktien Forum | Diskussionsboard | Community von finanzen.net Hab mich in der …"
+    },
+    {
+      "title": "Heidelberger Druck will Gas geben.. - FINANZEN.NET",
+      "url": "https://forum.finanzen.net/forum/Heidelberger_Druck_will_Gas_geben-t443089",
+      "snippet": "Jan 8, 2025 · Heidelberger Druck will Gas geben.. | Aktienforum | Aktien Forum | Diskussionsboard | Community von finanzen.net wie …"
+    }
+  ]
+}

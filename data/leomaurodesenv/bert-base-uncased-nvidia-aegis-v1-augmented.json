@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "leomaurodesenv/bert-base-uncased-nvidia-aegis-v1-augmented",
+  "slug": "leomaurodesenv-bert-base-uncased-nvidia-aegis-v1-augmented",
+  "author": "leomaurodesenv",
+  "url": "https://huggingface.co/leomaurodesenv/bert-base-uncased-nvidia-aegis-v1-augmented",
+  "created_at": "2026-09-11T01:58:41.000Z",
+  "updated_at": "2026-09-11T08:54:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 55,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 7883260497,
+  "storage_human": "7.9 GB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Your Account - Amazon.co.uk",
+      "url": "https://www.amazon.co.uk/gp/css/homepage.html",
+      "snippet": "Manage your Amazon.co.uk account, track orders, view purchase history, and update payment methods."
+    },
+    {
+      "title": "Amazon.co.uk: Low Prices in Electronics, Books, Sports Equipment",
+      "url": "https://r.amazon.co.uk/",
+      "snippet": "Amazon Currency Converter Payment Methods Help Shop with Points Top Up Your Account Top Up Your Account in Store Let Us …"
+    },
+    {
+      "title": "Amazon.co.uk: Amazon Prime",
+      "url": "https://www.amazon.co.uk/amazonprime",
+      "snippet": "Amazon Luna Play the games you love and discover new favourites including action-adventure, party games and more."
+    },
+    {
+      "title": "Amazon Business Login",
+      "url": "https://business.amazon.co.uk/en/login",
+      "snippet": "Access exclusive deals & bulk discounts! Log in to your Amazon Business account for instant savings on a vast selection of supplies."
+    },
+    {
+      "title": "Amazon Seller Central",
+      "url": "https://sellercentral.amazon.co.uk/",
+      "snippet": "Seller Central from Amazon Services Europe. Sign in to your account. Email address. Password. Not selling on Amazon yet? …"
+    }
+  ]
+}

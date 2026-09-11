@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "leirbag99/Ornith-1.5-9B-IQ4_XS-NO-VISION-GGUF",
+  "slug": "leirbag99-ornith-1-5-9b-iq4_xs-no-vision-gguf",
+  "author": "leirbag99",
+  "url": "https://huggingface.co/leirbag99/Ornith-1.5-9B-IQ4_XS-NO-VISION-GGUF",
+  "created_at": "2026-09-11T00:58:21.000Z",
+  "updated_at": "2026-09-11T01:08:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "base_model:ornith-ai/Ornith-1.5-9B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-9B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 10657985504,
+  "storage_human": "10.7 GB",
+  "base_model": "ornith-ai/Ornith-1.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - RVC-Boss/GPT-SoVITS: 1 min voice data can also be used to ...",
+      "url": "https://github.com/RVC-Boss/GPT-SoVITS",
+      "snippet": "1 min voice data can also be used to train a good TTS model! (few shot voice cloning) - RVC-Boss/GPT-SoVITS"
+    },
+    {
+      "title": "Models and pricing for GitHub Copilot",
+      "url": "https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing",
+      "snippet": "See per-token pricing for the models available in GitHub Copilot and reference rates for additional usage across plans."
+    },
+    {
+      "title": "Using your own LLM models in GitHub Copilot CLI",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/use-byok-models",
+      "snippet": "You can configure Copilot CLI to use your own LLM provider, also called BYOK (Bring Your Own Key), instead of GitHub-hosted …"
+    },
+    {
+      "title": "Cách khôi phục đoạn chat đã xóa trên ChatGPT thành công",
+      "url": "https://cellphones.com.vn/sforum/cach-khoi-phuc-doan-chat-da-xoa-tren-chatgpt",
+      "snippet": "May 29, 2026 · Chat GPT không hỗ trợ khôi phục đoạn chat đã xóa Kinh nghiệm lưu trữ lịch sử ChatGPT để không bị mất dữ liệu Vì …"
+    }
+  ]
+}

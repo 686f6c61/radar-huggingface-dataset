@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/ScaleAdaptiveCM",
+  "slug": "onescience-group-scaleadaptivecm",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/ScaleAdaptiveCM",
+  "created_at": "2026-09-11T09:57:09.000Z",
+  "updated_at": "2026-09-11T09:57:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "scale_adaptive_cm",
+    "OneScience",
+    "Earth Science",
+    "Probabilistic Downscaling",
+    "Consistency Model",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SQLite Home Page",
+      "url": "https://sqlite.org/index.html",
+      "snippet": "Aug 14, 2026 · SQLite is a C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL …"
+    },
+    {
+      "title": "SQLite Download Page",
+      "url": "https://sqlite.org/download.html",
+      "snippet": "See the How To Compile SQLite page for additional information on how to use the raw SQLite source code. Note that a recent …"
+    },
+    {
+      "title": "DB Browser for SQLite",
+      "url": "https://sqlitebrowser.org/",
+      "snippet": "DB Browser for SQLite (DB4S) is a high quality, visual, open source tool designed for people who want to create, search, and edit …"
+    },
+    {
+      "title": "SQLite - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/SQLite",
+      "snippet": "Design SQLite was designed to allow the program to be operated without installing a database management system or requiring a …"
+    },
+    {
+      "title": "Downloads - DB Browser for SQLite",
+      "url": "http://sqlitebrowser.org/dl/",
+      "snippet": "DB Browser for SQLite - PortableApp Note - If for any reason the standard Windows release does not work (e.g. gives an error), try a …"
+    }
+  ]
+}

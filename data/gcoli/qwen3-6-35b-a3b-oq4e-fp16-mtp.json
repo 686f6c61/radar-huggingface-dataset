@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "gcoli/Qwen3.6-35B-A3B-oQ4e-fp16-mtp",
+  "slug": "gcoli-qwen3-6-35b-a3b-oq4e-fp16-mtp",
+  "author": "gcoli",
+  "url": "https://huggingface.co/gcoli/Qwen3.6-35B-A3B-oQ4e-fp16-mtp",
+  "created_at": "2026-09-11T09:13:45.000Z",
+  "updated_at": "2026-09-11T09:30:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 22512810897,
+  "storage_human": "22.5 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail?hl=de",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/login?service=mail&hl=de",
+      "snippet": "Gmail ist ein intuitiver, effizienter und nützlicher E-Mail-Dienst mit 15 GB Speicherplatz, weniger Spam und mobilem Zugriff."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://www.google.com/accounts/Login",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode"
+    },
+    {
+      "title": "Gmail: Secure, AI-Powered Email for Everyone | Google Workspace",
+      "url": "https://workspace.google.com/gmail/",
+      "snippet": "Gmail, now powered by Gemini AI. Unlock new ways to write, reply, and organize your emails. Experience a more intelligent and …"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "cow9000/aicivs-joint-p1-v3b2-w4a16",
+  "slug": "cow9000-aicivs-joint-p1-v3b2-w4a16",
+  "author": "cow9000",
+  "url": "https://huggingface.co/cow9000/aicivs-joint-p1-v3b2-w4a16",
+  "created_at": "2026-09-11T02:03:47.000Z",
+  "updated_at": "2026-09-11T02:38:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "aicivs",
+    "minecraft",
+    "npc",
+    "dialogue",
+    "quests",
+    "structured-output",
+    "w4a16",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 2091880320,
+  "storage_human": "2.1 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "这个网址是potplayer官网吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/509011663",
+      "snippet": "Feb 21, 2022 · ———————————————— 为了让更多人能搜到这个帖子，做点SEO。 PotPlayer是什么？PotPlayer怎么下 …"
+    },
+    {
+      "title": "endnote插入文献时出现 {，#}这样的乱码，怎么解？ - 知乎",
+      "url": "https://www.zhihu.com/question/44969655",
+      "snippet": "曾经出现过这样的情况，供参考： 问题描述：直接把在endnote下完成的word文档1发给老师修改 ️老师将修改过后，并将文档1整合 …"
+    },
+    {
+      "title": "北新地駅からハービスENTまでのルートで高齢者2人に ...",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1462853159",
+      "snippet": "May 22, 2011 · 北新地駅 から ハービスENT までのルートで 高齢者2人に一番分かりやすくて最短のルートを教えてください。 地図 …"
+    },
+    {
+      "title": "化学で用いる用語について質問があります - ent-体の ...",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1333185433",
+      "snippet": "Nov 20, 2009 · 化学で用いる用語について質問があります ent-体のentってどういう意味ですか？ あまり見かけない表記ですが …"
+    },
+    {
+      "title": "5 misconceptions about vertigo, dizziness - Mayo Clinic Health System",
+      "url": "https://www.mayoclinichealthsystem.org/hometown-health/speaking-of-health/5-common-misconceptions-about-vertigo-dizziness",
+      "snippet": "Jan 19, 2021 · Learn about the causes and 5 common misconceptions of dizziness and vertigo."
+    }
+  ]
+}

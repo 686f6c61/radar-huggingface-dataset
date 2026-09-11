@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Shashank0003/tool-router-lora",
+  "slug": "shashank0003-tool-router-lora",
+  "author": "Shashank0003",
+  "url": "https://huggingface.co/Shashank0003/tool-router-lora",
+  "created_at": "2026-09-11T10:15:53.000Z",
+  "updated_at": "2026-09-11T10:17:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "trl",
+    "en",
+    "base_model:unsloth/Llama-3.2-1B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Llama-3.2-1B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1090457992,
+  "storage_human": "1.1 GB",
+  "base_model": "unsloth/Llama-3.2-1B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deutsche Apotheker- und Ärztebank - apoBank",
+      "url": "https://www.apobank.de/",
+      "snippet": "Die Deutsche Apotheker- und Ärztebank (apoBank) ist eine Partnerschaft mit Amundi, dem größten europäischen …"
+    },
+    {
+      "title": "apoBank",
+      "url": "https://banking.apobank.de/auth/login",
+      "snippet": "Siamo spiacenti, ma questo sito Web non funziona correttamente senza JavaScript abilitato."
+    },
+    {
+      "title": "Ihre apoBank - Deutsche Apotheker- und Ärztebank",
+      "url": "https://www.apobank.de/ueber-die-apobank/das-unternehmen",
+      "snippet": "Von Heilberuflern für Heilberufler – so lautet das Prinzip der apoBank. Seit über 120 Jahren ist unsere Genossenschaft auf die …"
+    },
+    {
+      "title": "Deutsche Apotheker- und Ärztebank – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Deutsche_Apotheker-_und_%C3%84rztebank",
+      "snippet": "Seit Ende 2015 ist die DGN Deutsches Gesundheitsnetz Service GmbH neuer Gesellschafter an der Seite der apoBank. medisign ist …"
+    },
+    {
+      "title": "apoBank",
+      "url": "https://banking.apobank.de/apode/wb/ui/login?lang=de",
+      "snippet": "apoBank ... ﻿ JavaScript"
+    }
+  ]
+}

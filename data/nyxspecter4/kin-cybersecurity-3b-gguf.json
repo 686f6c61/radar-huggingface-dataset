@@ -5,7 +5,7 @@
   "author": "nyxspecter4",
   "url": "https://huggingface.co/nyxspecter4/kin-cybersecurity-3b-gguf",
   "created_at": "2026-08-31T23:40:32.000Z",
-  "updated_at": "2026-09-11T01:23:38.000Z",
+  "updated_at": "2026-09-11T02:58:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -48,8 +48,8 @@
   "trending_score": 0,
   "parameters": 3085938688,
   "parameters_human": "3.09B",
-  "storage_bytes": 5215378560,
-  "storage_human": "5.2 GB",
+  "storage_bytes": 7440193216,
+  "storage_human": "7.4 GB",
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "gguf"

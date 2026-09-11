@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ilujmimanted/RVCModels",
+  "slug": "ilujmimanted-rvcmodels",
+  "author": "ilujmimanted",
+  "url": "https://huggingface.co/ilujmimanted/RVCModels",
+  "created_at": "2026-09-11T02:29:59.000Z",
+  "updated_at": "2026-09-11T02:30:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 571117951976,
+  "storage_human": "571.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Obtenir et afficher les itinéraires dans Google Maps",
+      "url": "https://support.google.com/maps/answer/144339?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Google Maps ne propose pas d'itinéraires en transports en commun pour toutes les villes. Pour que cette option soit disponible, …"
+    },
+    {
+      "title": "Google Maps Help",
+      "url": "https://support.google.com/maps/?hl=en",
+      "snippet": "Official Google Maps Help Center where you can find tips and tutorials on using Google Maps and other answers to frequently asked …"
+    },
+    {
+      "title": "Résoudre les problèmes de plantage de Google Maps",
+      "url": "https://support.google.com/maps/answer/9878013?hl=fr&co=GENIE.Platform%3DAndroid",
+      "snippet": "Si l'application Google Maps plante sur votre téléphone ou votre tablette, ou que vous ne pouvez pas l'utiliser normalement en raison …"
+    },
+    {
+      "title": "Partager, envoyer ou imprimer un itinéraire à partir de Google Maps",
+      "url": "https://support.google.com/maps/answer/7101463?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Partager, envoyer ou imprimer un itinéraire à partir de Google Maps L'itinéraire que vous obtenez dans Google Maps peut être …"
+    },
+    {
+      "title": "Export itinéraire - Communauté Google Maps",
+      "url": "https://support.google.com/maps/thread/412577527/export-itin%C3%A9raire?hl=fr",
+      "snippet": "Feb 24, 2026 · Google Maps ne permet pas actuellement d’exporter directement un itinéraire en fichier GPX ou KML depuis …"
+    }
+  ]
+}

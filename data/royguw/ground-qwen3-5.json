@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "royguw/ground-qwen3-5",
+  "slug": "royguw-ground-qwen3-5",
+  "author": "royguw",
+  "url": "https://huggingface.co/royguw/ground-qwen3-5",
+  "created_at": "2026-09-11T09:35:54.000Z",
+  "updated_at": "2026-09-11T09:59:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "grounding",
+    "vision-language",
+    "segmentation",
+    "video-segmentation",
+    "research-code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 52811674159,
+  "storage_human": "52.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "取引先の未入金が発生したら？回収方法から予防策まで徹底 ...",
+      "url": "https://blog.uriho.jp/articles/303",
+      "snippet": "Oct 13, 2022 · 未入金とは？未収入金との違いは？ 未入金が起こるとこうなる CASE01：ネットビジネスで売り上げは伸びたが…"
+    },
+    {
+      "title": "未入金とは？4つのリスクと対策・発生時の対応手順も紹介 | NTT ...",
+      "url": "https://www.ntt-finance.co.jp/billing/biz/column/what-is-unpaid",
+      "snippet": "Dec 17, 2025 · 未入金とは特定の 勘定科目 ではなく 、 売掛金など 本来入金されるべき代金が何らかの理由でまだ支払われていな …"
+    },
+    {
+      "title": "未収金とは？実際に発生した際の未収金の回収の流れや注意点 ...",
+      "url": "https://pay-tech.co.jp/moonshot/207/",
+      "snippet": "Nov 10, 2023 · この記事では、未収金とは何か、未収金が発生する主な原因、そしてその回収の具体的な流れから、 回収における注 …"
+    },
+    {
+      "title": "未収金を回収する方法や回収期限・回収不能時の対応を解説 ...",
+      "url": "https://houmu-pro.com/contract/172/",
+      "snippet": "Apr 15, 2019 · 上記のポイントを踏まえた上で、以下のような形式で作成します。 任意交渉 相手方と直接話し合いを行って回収する …"
+    },
+    {
+      "title": "売掛金の回収に困ったときは？未入金防止や催促方法を解説",
+      "url": "https://human-trust.co.jp/ht-finance/column/tips/b-accounts-receivable-collection/",
+      "snippet": "Mar 13, 2025 · 売掛金と入金管理の基礎 売掛金とは 入金管理の役割 売掛金を回収する重要性 売掛金管理で得られるメリット 未回 …"
+    }
+  ]
+}

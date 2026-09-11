@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "victorvanhalst/act_so101_cube_picking1",
+  "slug": "victorvanhalst-act_so101_cube_picking1",
+  "author": "victorvanhalst",
+  "url": "https://huggingface.co/victorvanhalst/act_so101_cube_picking1",
+  "created_at": "2026-09-11T02:09:58.000Z",
+  "updated_at": "2026-09-11T02:10:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:victorvanhalst/so101_cube_picking1",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714912,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QUERY function - Google Docs Editors Help",
+      "url": "https://support.google.com/docs/answer/3093343?hl=en",
+      "snippet": "QUERY function Runs a Google Visualization API Query Language query across data. Sample Usage QUERY (A2:E6,\"select avg (A) …"
+    },
+    {
+      "title": "QUERY - เครื่องมือแก้ไข Google เอกสาร ความช่วยเหลือ",
+      "url": "https://support.google.com/docs/answer/3093343?hl=th",
+      "snippet": "QUERY เรียกใช้การค้นหาของ Google Visualization API Query Language จากข้อมูลทั้งหมด ตัวอย่างการใช้งาน QUERY (A2:E6,\"select avg …"
+    },
+    {
+      "title": "QUERY 関数 - Google ドキュメント エディタ ヘルプ",
+      "url": "https://support.google.com/docs/answer/3093343?hl=ja",
+      "snippet": "QUERY 関数 Google Visualization API のクエリ言語を使用して、データ全体に対するクエリを実行します。 使用例 QUERY …"
+    },
+    {
+      "title": "Función QUERY - Ayuda de Editores de Documentos de Google",
+      "url": "https://support.google.com/docs/answer/3093343?hl=es-419",
+      "snippet": "Función QUERY Ejecuta una consulta sobre los datos con el lenguaje de consultas de la API de visualización de Google. Ejemplo de …"
+    },
+    {
+      "title": "302 Moved",
+      "url": "https://support.google.com/docs/answer/3093340",
+      "snippet": "302 Moved The document has moved here."
+    }
+  ]
+}

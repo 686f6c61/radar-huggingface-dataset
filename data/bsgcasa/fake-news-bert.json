@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "bsgcasa/fake-news-bert",
+  "slug": "bsgcasa-fake-news-bert",
+  "author": "bsgcasa",
+  "url": "https://huggingface.co/bsgcasa/fake-news-bert",
+  "created_at": "2026-09-11T09:27:47.000Z",
+  "updated_at": "2026-09-11T09:28:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267837761,
+  "storage_human": "268 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.pl/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=pl",
+      "snippet": "Reklamuj się Wszystko o Google Google.com in English © 2026 - Prywatność - Warunki"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.gp/?hl=pl-US",
+      "snippet": "Korzystaj z Google w tych językach: English Reklamuj się Wszystko o Google Google.com"
+    },
+    {
+      "title": "Przeglądarka Google Chrome",
+      "url": "https://www.google.com/intl/pl/chrome/",
+      "snippet": "Chrome ma wbudowanego Menedżera haseł Google, który ułatwia zapisywanie haseł w internecie, zarządzanie nimi i ich ochronę. …"
+    },
+    {
+      "title": "Logowanie – Konta Google",
+      "url": "https://accounts.google.com/login?hl=pl",
+      "snippet": "To nie Twój komputer? Aby się zalogować, użyj okna przeglądania prywatnego. Dowiedz się więcej o używaniu trybu gościa Dalej …"
+    }
+  ]
+}

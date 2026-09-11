@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Cutyp/dolphin-8b-qlora",
+  "slug": "cutyp-dolphin-8b-qlora",
+  "author": "Cutyp",
+  "url": "https://huggingface.co/Cutyp/dolphin-8b-qlora",
+  "created_at": "2026-09-11T11:24:21.000Z",
+  "updated_at": "2026-09-11T11:24:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:dphn/dolphin-2.9-llama3-8b",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:dphn/dolphin-2.9-llama3-8b",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185041646,
+  "storage_human": "185 MB",
+  "base_model": "dphn/dolphin-2.9-llama3-8b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Windows的Onedrive怎么用？ - 知乎",
+      "url": "https://www.zhihu.com/question/59942275",
+      "snippet": "你把OneDrive理解成同步盘，而不是网盘，就清楚了。 百度云之类的网盘，通常用的上传文件指的是把你的文件复制一份到网盘，本 …"
+    },
+    {
+      "title": "OneDrive 一直登录不上去怎么办? - 知乎",
+      "url": "https://www.zhihu.com/question/437201406",
+      "snippet": "OneDrive用了好几年了，最后还是放弃了，不是搞不定，而是不值得。 早年一直用的百度网盘，奈何百度撤掉了我最爱的本地盘同 …"
+    },
+    {
+      "title": "onedrive怎么打开 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/f3ad7d0f33e25948c2345b6d.html",
+      "snippet": "Jul 11, 2022 · onedrive怎么打开,微软用户可以在开始菜单中打开oedrive，本答案使用华硕天选3进行演示。以下为详细步骤说明："
+    },
+    {
+      "title": "如何使用OneDrive - 百度经验",
+      "url": "https://jingyan.baidu.com/article/5552ef47f55fbd518ffbc9e9.html",
+      "snippet": "Jan 20, 2017 · 如何使用OneDrive,wi10自带了OeDrive，可许多人都不知它为何物，将这一大神器闲置在一旁。它与iCloud一样支 …"
+    },
+    {
+      "title": "通过OneDrive实现文件共享-百度经验",
+      "url": "https://jingyan.baidu.com/article/0320e2c1c36f005a86507b47.html",
+      "snippet": "Nov 7, 2021 · 通过OneDrive实现文件共享,office365软件目前使用广泛，不同电脑之间通过OeDrive进行文件共享成为了可能。下面介 …"
+    }
+  ]
+}

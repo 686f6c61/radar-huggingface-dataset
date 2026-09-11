@@ -5,7 +5,7 @@
   "author": "Prannesshkva",
   "url": "https://huggingface.co/Prannesshkva/QU-SSM-15M-TinyStories",
   "created_at": "2026-08-30T09:48:37.000Z",
-  "updated_at": "2026-09-09T11:09:28.000Z",
+  "updated_at": "2026-09-10T20:25:23.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 3064,
+  "downloads_30d": 3306,
   "trending_score": 0,
   "parameters": 30173536,
   "parameters_human": "30.2M",

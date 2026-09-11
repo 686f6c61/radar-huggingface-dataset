@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Myungkyu/pi0_5_robodojo_preset_b64_60k",
+  "slug": "myungkyu-pi0_5_robodojo_preset_b64_60k",
+  "author": "Myungkyu",
+  "url": "https://huggingface.co/Myungkyu/pi0_5_robodojo_preset_b64_60k",
+  "created_at": "2026-09-11T01:51:42.000Z",
+  "updated_at": "2026-09-11T01:58:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "vla",
+    "robodojo",
+    "dataset:Myungkyu/RoboDojo-preset-gemini",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354062568,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BEFESTIGUNGSHINWEISE GEBERIT PLUVIA BEFESTIGUNGSSYSTEM",
+      "url": "https://geberit-country-at.prod.platform.web.geberit.com/_assets/local-media/unterlagen/montage-planungs-hilfen/geberit-pluvia-befestigungshinweise-2023.pdf",
+      "snippet": "Die Geberit Pluvia Abstützungssets dienen der zusätzlichen Abstützung des Geberit Pluvia Befestigungssystems. Sie werden …"
+    },
+    {
+      "title": "Geberit Pluvia: effiziente Dachentwässerung | geberit.de",
+      "url": "https://www.geberit.de/sanitaer-rohrleitungssysteme/gebaeudeentwaesserungssysteme/geberit-pluvia/",
+      "snippet": "Über den Geberit Pluvia Produktfinder erhalten Sie Zugriff auf Informationen zum adäquaten Geberit Pluvia Einlauf plus Zubehör und …"
+    },
+    {
+      "title": "Technischer LeiTfaden 2020 geberit Pluvia Dachentwässerun",
+      "url": "https://www.geberit.at/_assets/local-media/unterlagen/profibereich/pluvia-planungsunterstuetzung/geberit-pluvia-ti-2020.pdf",
+      "snippet": "Um den lagesicheren einbau zu gewährleisten sind Geberit Pluvia dachwassereinläufe – unabhänig des dachaufbaues – fix am …"
+    },
+    {
+      "title": "GEBERIT PLUVIA MONTAGEANLEITUNG Pdf-Herunterladen",
+      "url": "https://www.manualslib.de/manual/1170901/Geberit-Pluvia.html",
+      "snippet": "Ansicht Und Herunterladen Geberit Pluvia Montageanleitung Online. Pluvia Heizgeräte Pdf Anleitung Herunterladen."
+    },
+    {
+      "title": "GEBERIT PLUVIA MONTAGEHINWEISE Pdf-Herunterladen | ManualsLib",
+      "url": "https://www.manualslib.de/manual/995206/Geberit-Pluvia.html",
+      "snippet": "Bei der Montage von Geberit Pluvia Dachwassereinläufen sind folgende Sicherheitshinweise unbedingt zu beachten: • Vorliegende …"
+    }
+  ]
+}

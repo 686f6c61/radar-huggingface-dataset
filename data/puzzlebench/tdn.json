@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "PuzzleBench/TDN",
+  "slug": "puzzlebench-tdn",
+  "author": "PuzzleBench",
+  "url": "https://huggingface.co/PuzzleBench/TDN",
+  "created_at": "2026-09-11T11:36:56.000Z",
+  "updated_at": "2026-09-11T11:37:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eCampus",
+      "url": "https://www.uniecampus.it/",
+      "snippet": "Online, vicina a te L'Università eCampus è uno dei principali atenei online d'Italia, conta oltre 100.000 iscritti e un numero di corsi in …"
+    },
+    {
+      "title": "Studenti - UNIVERSITÀ eCAMPUS",
+      "url": "https://www.uniecampus.it/studenti/",
+      "snippet": "Programma Erasmus + Dal 2018 eCampus partecipa ufficialmente al programma Erasmus + Mobilità! Il nostro obiettivo è dare la …"
+    },
+    {
+      "title": "Blog Università eCampus - L'università online vicina a te!",
+      "url": "https://blog.uniecampus.it/",
+      "snippet": "L’Ateneo eCampus è stato istituito quale Università telematica con Decreto Ministeriale 30 gennaio 2006. Ha sede operativa presso …"
+    },
+    {
+      "title": "Percorsi formativi abilitanti 30, 36, 60 CFU - Università eCampus",
+      "url": "https://corsiemaster.uniecampus.it/percorsi-formativi-cfu.asp",
+      "snippet": "Percorsi di formazione iniziale da 60 e 30 CFU Percorso universitario e accademico abilitante di formazione iniziale corrispondente a …"
+    },
+    {
+      "title": "Universita' eCampus - Download eCampus SEE",
+      "url": "https://proveesami.uniecampus.it/downloadSEE/",
+      "snippet": "In nessun caso eCampus potrà essere ritenuta responsabile dei danni di qualsiasi natura causati direttamente o indirettamente …"
+    }
+  ]
+}

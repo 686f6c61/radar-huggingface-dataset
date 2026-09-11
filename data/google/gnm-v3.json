@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "google/gnm-v3",
+  "slug": "google-gnm-v3",
+  "author": "google",
+  "url": "https://huggingface.co/google/gnm-v3",
+  "created_at": "2026-09-01T17:03:30.000Z",
+  "updated_at": "2026-09-02T15:03:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "3d",
+    "computer-vision",
+    "human-head",
+    "mesh",
+    "3dmm",
+    "parametric-model",
+    "head-tracking",
+    "digital-humans",
+    "arxiv:2607.23687",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 107167390,
+  "storage_human": "107 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/",
+      "snippet": "Encore plus » Account Options. Connexion; Paramètres de recherche"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=fr",
+      "snippet": "Publicité À propos de Google Google.com in English © 2026 - Confidentialité - Conditions"
+    },
+    {
+      "title": "Téléchargez Google Chrome, le navigateur plus sécurisé et encore …",
+      "url": "https://www.google.com/intl/fr/chrome/",
+      "snippet": "Gagnez en efficacité grâce au nouveau Chrome, un navigateur Internet plus simple, plus sécurisé et encore plus rapide grâce aux …"
+    },
+    {
+      "title": "Google",
+      "url": "http://www.google.gp/?hl=fr",
+      "snippet": "Google disponible en : English Publicité À propos de Google Google.com"
+    },
+    {
+      "title": "Google Images",
+      "url": "https://images.google.fr/",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    }
+  ]
+}

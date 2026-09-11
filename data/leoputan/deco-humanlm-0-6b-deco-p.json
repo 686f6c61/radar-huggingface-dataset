@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Leoputan/deco-humanlm-0.6b-deco-p",
+  "slug": "leoputan-deco-humanlm-0-6b-deco-p",
+  "author": "Leoputan",
+  "url": "https://huggingface.co/Leoputan/deco-humanlm-0.6b-deco-p",
+  "created_at": "2026-09-11T09:37:49.000Z",
+  "updated_at": "2026-09-11T10:20:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 751632384,
+  "parameters_human": "751.6M",
+  "storage_bytes": 3017987674,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Iniciar sesión en Gmail - Ordenador - Ayuda de Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=es&co=GENIE.Platform%3DDesktop",
+      "snippet": "Iniciar sesión en Gmail Nota: Si inicias sesión en un ordenador público, asegúrate de cerrarla antes de dejar de usar el ordenador. …"
+    },
+    {
+      "title": "Fazer login no Gmail - Computador - Ajuda do Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=pt-br&co=GENIE.Platform%3DDesktop",
+      "snippet": "Fazer login no Gmail Dica: se você fizer login em um computador público, não se esqueça de sair do Gmail antes de sair do …"
+    },
+    {
+      "title": "《中华人民共和国国歌》歌词_百度知道",
+      "url": "https://zhidao.baidu.com/question/1702052666980628100.html",
+      "snippet": "中华人民共和国国歌名为《义勇军进行曲》，具体歌词如下： 歌曲：义勇军进行曲 歌手：合唱 作词：田汉 作曲：聂耳 歌词： 起来！ …"
+    },
+    {
+      "title": "电容的单位怎么换算？F，NF，PF，UF？_百度知道",
+      "url": "https://zhidao.baidu.com/question/12936434.html",
+      "snippet": "电容单位换算关系： 1法拉（F）= 1000毫法（mF） 1毫法（mF）=1000微法（μF） 1微法（μF）= 1000纳法（nF） 1纳法（nF）= …"
+    },
+    {
+      "title": "Windows电脑如何设置WiFi选择5Ghz频带的信号？ - 知乎",
+      "url": "https://www.zhihu.com/question/35029288",
+      "snippet": "到这里就完成了，混合模式下电脑会优先选择5G频段~ 在这个界面还能完成对很多高级参数的设置~ 如果没有这么多选项可能是网卡不 …"
+    }
+  ]
+}

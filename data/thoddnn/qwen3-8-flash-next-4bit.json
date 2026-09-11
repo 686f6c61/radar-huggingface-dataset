@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "thoddnn/Qwen3.8-Flash-Next-4bit",
+  "slug": "thoddnn-qwen3-8-flash-next-4bit",
+  "author": "thoddnn",
+  "url": "https://huggingface.co/thoddnn/Qwen3.8-Flash-Next-4bit",
+  "created_at": "2026-09-11T09:26:20.000Z",
+  "updated_at": "2026-09-11T09:26:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 177392830611,
+  "parameters_human": "177.39B",
+  "storage_bytes": 111539412572,
+  "storage_human": "111.5 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "纵向课题和横向课题有什么区别？ - 知乎",
+      "url": "https://www.zhihu.com/question/30432177",
+      "snippet": "目前，从学科大类上讲：分为社会科学和自然科学两大类；根据科研课题的来源一般分为：纵向课题与横向课题两大类。 纵向课题是 …"
+    },
+    {
+      "title": "如何评价唐师曾？ - 知乎",
+      "url": "https://www.zhihu.com/question/20540492",
+      "snippet": "听朋友讲的真事儿。 一次采访活动，大家都在抢位置拍照。我朋友是活动主办方的工作人员，位置稍微好一些。 唐师曾 踹了我朋友一 …"
+    },
+    {
+      "title": "罗技鼠标怎么查询真伪？ - 知乎",
+      "url": "https://www.zhihu.com/question/312354382",
+      "snippet": "然后拔打罗技官方的电话，根据语音提示操作输入SN码查询真伪 手机打这个号码 400-820-0338 固话座机打这个 800-820-0338 另外 …"
+    },
+    {
+      "title": "攀岩保护器有哪些分类？如何使用？ - 知乎",
+      "url": "https://www.zhihu.com/question/268826913",
+      "snippet": "虽然 Reverso 保护器可以漏绳以减少冲坠对系统以及攀爬者们的冲击强度，却也意味着保护员需要更加高度集中精神来做好安全确保 …"
+    },
+    {
+      "title": "怎么判断是不是灰指甲？ - 知乎",
+      "url": "https://www.zhihu.com/question/46634698",
+      "snippet": "灰指甲你必须知道的症状！！ 甲下型灰指甲常从甲板两侧或未端开始，多先有轻度甲沟炎，后来逐渐变成慢性或渐趋消退。甲沟炎可 …"
+    }
+  ]
+}

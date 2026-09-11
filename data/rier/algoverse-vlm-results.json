@@ -5,7 +5,7 @@
   "author": "rier",
   "url": "https://huggingface.co/rier/algoverse-vlm-results",
   "created_at": "2026-07-31T14:21:50.000Z",
-  "updated_at": "2026-08-15T14:38:12.000Z",
+  "updated_at": "2026-09-11T03:46:19.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 104542573331,
-  "storage_human": "104.5 GB",
+  "storage_bytes": 110115273073,
+  "storage_human": "110.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

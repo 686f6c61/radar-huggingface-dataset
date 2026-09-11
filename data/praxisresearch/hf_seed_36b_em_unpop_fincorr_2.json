@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "praxisresearch/hf_seed_36b_em_unpop_fincorr_2",
+  "slug": "praxisresearch-hf_seed_36b_em_unpop_fincorr_2",
+  "author": "praxisresearch",
+  "url": "https://huggingface.co/praxisresearch/hf_seed_36b_em_unpop_fincorr_2",
+  "created_at": "2026-05-05T15:31:39.000Z",
+  "updated_at": "2026-09-11T02:49:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "seed_oss",
+    "text-generation",
+    "axolotl",
+    "base_model:adapter:models/hf_seed_36b_em_unpop_2/merged",
+    "lora",
+    "transformers",
+    "data/finetuning/correct/finance_correct_simplified.jsonl",
+    "conversational",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1169633248,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "poki・playhop・laggedこの3つの無料子供向けゲーム... - Yahoo!知恵袋",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q13317752273",
+      "snippet": "Jul 21, 2025 · poki・playhop・laggedこの3つの無料子供向けゲームサイトは安全でしょうか"
+    },
+    {
+      "title": "至急回答お願いします - pokiという無料でできるブラウザゲームを …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14310038869",
+      "snippet": "至急 回答お願い します pokiという無料でできる ブラウザ ゲームをやっています。 その中のゲーム、「Mine fun」を3日かけてスキ …"
+    },
+    {
+      "title": "Pokki Adware – Was ist es + Removal Guide [gelöst]",
+      "url": "https://sensorstechforum.com/de/pokki-start-menu/",
+      "snippet": "Sep 11, 2024 · Sollten Sie dem Pokki-Startmenü vertrauen?? Ist das Pokki-Startmenü ein legitimes Programm?? How to Remove …"
+    }
+  ]
+}

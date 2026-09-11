@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "avishkararjan/qwen2.5-coder-7b-lunar-lander-sft-v3",
+  "slug": "avishkararjan-qwen2-5-coder-7b-lunar-lander-sft-v3",
+  "author": "avishkararjan",
+  "url": "https://huggingface.co/avishkararjan/qwen2.5-coder-7b-lunar-lander-sft-v3",
+  "created_at": "2026-09-11T09:48:27.000Z",
+  "updated_at": "2026-09-11T10:07:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-Coder-7B-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-Coder-7B-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334488740,
+  "storage_human": "334 MB",
+  "base_model": "unsloth/Qwen2.5-Coder-7B-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Online Games at Poki - Play Now!",
+      "url": "https://poki.com/?msockid=0c7065e0112d6d650b98723110ac6c4e",
+      "snippet": "Play free online games at Poki, the #1 website for instant web games. Explore exclusive titles, popular favorites, and new game …"
+    },
+    {
+      "title": "Poki - Darmowe Gry Online - Graj Teraz!",
+      "url": "https://poki.com/pl?msockid=0c7065e0112d6d650b98723110ac6c4e",
+      "snippet": "Poki oferuje najlepszy wybór darmowych gier online i zapewnia rozrywkę pełną zabawy, bez względu na to czy grasz sam, czy z …"
+    },
+    {
+      "title": "Poki Games - Free Online Games - Play Now! | poki.com",
+      "url": "https://poki.to/poki",
+      "snippet": "Poki Games is a free gaming platform packed with tons of fun without any sneaky charges or subscriptions. Not only can you play …"
+    },
+    {
+      "title": "New Games — Poki",
+      "url": "https://poki.ac/new/",
+      "snippet": "This webpage contains all our latest game releases. if you are into discovering new games, this list will help you discover the latest …"
+    },
+    {
+      "title": "Casual Games - Play Free Online Games on Poki",
+      "url": "https://poki.homes/category/casual",
+      "snippet": "Play free online casual games on Poki. Easy-to-pick-up, relaxing games perfect for a quick break—jump in and play instantly in your …"
+    }
+  ]
+}

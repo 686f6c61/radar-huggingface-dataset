@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen2.5-Coder-1.5B-Instruct-heretic-GGUF",
+  "slug": "mradermacher-qwen2-5-coder-1-5b-instruct-heretic-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2.5-Coder-1.5B-Instruct-heretic-GGUF",
+  "created_at": "2026-09-11T09:33:50.000Z",
+  "updated_at": "2026-09-11T09:59:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "code",
+    "codeqwen",
+    "chat",
+    "qwen",
+    "qwen-coder",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "roleplay",
+    "local-llm",
+    "consumer-gpu",
+    "coding",
+    "en",
+    "base_model:saidutta69/Qwen2.5-Coder-1.5B-Instruct-heretic",
+    "base_model:quantized:saidutta69/Qwen2.5-Coder-1.5B-Instruct-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 14206907520,
+  "storage_human": "14.2 GB",
+  "base_model": "saidutta69/Qwen2.5-Coder-1.5B-Instruct-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "实用办公技巧：excel找出重复项并计数 - 知乎",
+      "url": "https://zhuanlan.zhihu.com/p/703585821",
+      "snippet": "Jun 15, 2024 · 在处理大量数据时，通常会存在很多重复项，此时就需要将它们筛选出来并计数。 Excel中有很多种方法能够帮助我们 …"
+    },
+    {
+      "title": "Excel怎么快速统计一列中相同数据出现的次数 - CSDN博客",
+      "url": "https://blog.csdn.net/weixin_42596182/article/details/109096088",
+      "snippet": "Mar 3, 2025 · 首先，创建数据透视表选择需要统计的区域，然后将字段拖动到行和值区域。 接着，通过复制数据到新列，删除重复 …"
+    },
+    {
+      "title": "如何在 Excel 中统计一列中的重复值个数？",
+      "url": "https://zh-cn.extendoffice.com/documents/excel/1499-count-duplicate-values-in-column.html",
+      "snippet": "Apr 16, 2025 · 在数据分析与管理领域，识别并统计重复值是至关重要的任务。 Excel 提供了多种高效方法，助您轻松统计某一列中的 …"
+    },
+    {
+      "title": "Excel表格如何统计一列中相同数据出现的个数 - CSDN博客",
+      "url": "https://blog.csdn.net/LeonidasJIN/article/details/132159316",
+      "snippet": "Apr 14, 2025 · 本文介绍了如何在Excel中使用数据透视表来统计数据，首先选中数据，创建数据透视表，然后勾选姓名字段进行计数， …"
+    },
+    {
+      "title": "统计Excel数据的重复个数（两个方法）-百度经验",
+      "url": "https://jingyan.baidu.com/article/03b2f78c7497b55ea237aeae.html",
+      "snippet": "Jan 4, 2018 · 统计Excel数据的重复个数（两个方法）,这里给大家介绍一下，如何简单又精准的找出Excel一列数据中重复数据，并记 …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "visheshd/parakeet-nemotron-int8",
+  "slug": "visheshd-parakeet-nemotron-int8",
+  "author": "visheshd",
+  "url": "https://huggingface.co/visheshd/parakeet-nemotron-int8",
+  "created_at": "2026-09-11T11:43:50.000Z",
+  "updated_at": "2026-09-11T11:44:21.000Z",
+  "license": "nvidia-parakeet-upstream",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "int8",
+    "quantized",
+    "parakeet",
+    "nemotron",
+    "streaming",
+    "speech-to-text",
+    "automatic-speech-recognition",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 662340426,
+  "storage_human": "662 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Photovoltaik-Freiflächenanlagen | Umweltbundesamt",
+      "url": "https://www.umweltbundesamt.de/themen/klima-energie/erneuerbare-energien/photovoltaik/photovoltaik-freiflaechenanlagen",
+      "snippet": "Jun 9, 2026 · Photovoltaik-Freiflächenanlagen können erneuerbare Energie sehr kostengünstig und flächeneffizient erzeugen. Hoch …"
+    },
+    {
+      "title": "PV-Freiflächen: Diese Fehler schaden dem Boden - wie Landwirte sie ...",
+      "url": "https://www.wochenblatt-dlv.de/feld-stall/energie/pv-freiflaechen-diese-fehler-schaden-boden-landwirte-vermeiden-585710",
+      "snippet": "Jul 22, 2026 · Bau und Betrieb eines Solarparks oder einer Agri-PV-Anlage können den Boden dauerhaft schädigen. Ein neues …"
+    },
+    {
+      "title": "Freiflächen-Solaranlagen (PV-FFA) | BFN",
+      "url": "https://www.bfn.de/freiflaechen-solaranlagen-pv-ffa",
+      "snippet": "Das Bundesamt für Naturschutz BfN begleitet Forschungsvorhaben zu den Wirkungen von verschiedenen Typen von PV-FFA und …"
+    },
+    {
+      "title": "Bodenschutz bei der Errichtung von Freiflächen-PV-Anlagen",
+      "url": "https://www.lfu.bayern.de/boden/freiflaechen_pv_anlagen/index.htm",
+      "snippet": "Der Bau von Freiflächen-PV-Anlagen beansprucht in der Regel große Bodenflächen. Daher sollten bereits in der Vorplanung Aspekte …"
+    },
+    {
+      "title": "PV Freilandsystem ohne Rammen, Bohren oder Betonieren",
+      "url": "https://www.energieleben.at/pv-freilandsystem-ohne-rammen-bohren-oder-betonieren/",
+      "snippet": "2 days ago · Freiland-PV ohne Eingriff in den Boden – ein System, das neue Flächen möglich macht. Im Frühsommer 2026 hat der …"
+    }
+  ]
+}

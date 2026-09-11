@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ChrisColeTech/SenseNova-turbo-FP8",
+  "slug": "chriscoletech-sensenova-turbo-fp8",
+  "author": "ChrisColeTech",
+  "url": "https://huggingface.co/ChrisColeTech/SenseNova-turbo-FP8",
+  "created_at": "2026-09-11T09:39:04.000Z",
+  "updated_at": "2026-09-11T09:48:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "native multimodal",
+    "image-generation",
+    "image-editing",
+    "any-to-any",
+    "en",
+    "zh",
+    "base_model:sensenova/SenseNova-U1.5-8B-MoT",
+    "base_model:finetune:sensenova/SenseNova-U1.5-8B-MoT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "sensenova/SenseNova-U1.5-8B-MoT",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT 中文版：国内免费使用 GPT-5.5 指南（支持 ... - GitHub",
+      "url": "https://github.com/chat4us/gpt-5",
+      "snippet": "Jun 6, 2026 · ChatGPT 中文版 是否支持最新的 GPT-5？ 是的！ 我们推荐的网站紧跟技术前沿，大部分已率先支持万众期待的 GPT-5 …"
+    },
+    {
+      "title": "OpenAI · GitHub",
+      "url": "https://github.com/openai/",
+      "snippet": "OpenAI has 271 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/tardis/zm/art/607605399",
+      "snippet": ""
+    },
+    {
+      "title": "不是说chat gpt是免费的吗，怎么只能免费问一次? - 知乎",
+      "url": "https://www.zhihu.com/question/606750758",
+      "snippet": "后来自己注册gpt账号，能免费使用GPT-3.5，每月20刀的Gpt-4还是不大舍得去搞，3.5基本也够用了，搭配chatpdf等其他AI工具，用 …"
+    },
+    {
+      "title": "Top 16+ Chat AI tiếng Việt miễn phí, tốt nhất 2026 - CellphoneS",
+      "url": "https://cellphones.com.vn/sforum/top-phan-mem-chat-ai-tot-nhat",
+      "snippet": "Feb 9, 2026 · Top các phần mềm chat AI tiếng Việt tốt và được nhiều người sử dụng nhất 2026, phần mềm chatbot AI online đem …"
+    }
+  ]
+}

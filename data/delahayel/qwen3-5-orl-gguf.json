@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "delahayel/qwen3.5-orl-gguf",
+  "slug": "delahayel-qwen3-5-orl-gguf",
+  "author": "delahayel",
+  "url": "https://huggingface.co/delahayel/qwen3.5-orl-gguf",
+  "created_at": "2026-09-11T09:58:38.000Z",
+  "updated_at": "2026-09-11T09:59:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683073600,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reformierte Kirche Murgenthal",
+      "url": "https://ref-mu.ch/",
+      "snippet": "Als Kirche Murgenthal fördern wir die Gemeinschaft, stärken den christlichen Glauben und leben das Evangelium."
+    },
+    {
+      "title": "Kontakt - Reformierte Kirche Murgenthal",
+      "url": "https://ref-mu.ch/kontakt/",
+      "snippet": "Und nehmt den Helm des Heils und das Schwert des Geistes, welches ist das Wort Gottes."
+    },
+    {
+      "title": "Reformierte Kirche – Murgenthal",
+      "url": "https://www.murgenthal.ch/leben/kirchen/reformierte-kirche.html/231",
+      "snippet": "Termine ausserhalb der Öffnungszeiten nach Vereinbarung."
+    },
+    {
+      "title": "Murgenthal | Reformierte Kirchen Aargau",
+      "url": "https://www.ref-kirchen-ag.ch/kirchen/murgenthal",
+      "snippet": "Die reformierte Kirche von Murgenthal liegt im Ortsteil Glashütten. Der moderne Bau aus dem Jahr 1964 bildet dort mit dem deutlich …"
+    },
+    {
+      "title": "Römisch-katholische Kirchgemeinde – Murgenthal",
+      "url": "https://www.murgenthal.ch/leben/kirchen/roemisch-katholische-kirchgemeinde.html/232",
+      "snippet": "Röm. -kath. Pfarramt. Termine ausserhalb der Öffnungszeiten nach Vereinbarung."
+    }
+  ]
+}

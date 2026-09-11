@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Syaofox/iroiroLoRA",
+  "slug": "syaofox-iroirolora",
+  "author": "Syaofox",
+  "url": "https://huggingface.co/Syaofox/iroiroLoRA",
+  "created_at": "2026-09-11T02:13:15.000Z",
+  "updated_at": "2026-09-11T02:13:26.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 119295386696,
+  "storage_human": "119.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Autodesk | 3D Design, Engineering & Construction Software",
+      "url": "https://www.autodesk.com/en/home?msockid=13f2d2b17d416e1437e3c5607cfd6fb7",
+      "snippet": "Autodesk is a leader in 3D design, engineering and entertainment software. We help people imagine, design, and create a better world."
+    },
+    {
+      "title": "Autodesk | 3D-programmer til design, teknik og konstruktion",
+      "url": "https://www.autodesk.com/dk?msockid=13f2d2b17d416e1437e3c5607cfd6fb7",
+      "snippet": "Autodesk er førende på verdensplan inden for design- og fremstillingsteknologi med ekspertise inden for arkitektur, teknik, …"
+    },
+    {
+      "title": "Autodesk Account",
+      "url": "https://manage.autodesk.com/",
+      "snippet": ""
+    },
+    {
+      "title": "Autodesk Account",
+      "url": "https://manage.autodesk.com/login",
+      "snippet": "Welcome to Autodesk Account Access products, updates, insights, and more. View your products and available updates, download …"
+    },
+    {
+      "title": "Autodesk - My Profile",
+      "url": "https://profile.autodesk.com/",
+      "snippet": "Manage your Autodesk profile, update account settings, and access personalized tools for a seamless experience."
+    }
+  ]
+}

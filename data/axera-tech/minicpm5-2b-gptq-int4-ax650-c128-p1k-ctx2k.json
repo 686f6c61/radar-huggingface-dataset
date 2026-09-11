@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "AXERA-TECH/MiniCPM5-2B-GPTQ-Int4-AX650-C128-P1K-CTX2K",
+  "slug": "axera-tech-minicpm5-2b-gptq-int4-ax650-c128-p1k-ctx2k",
+  "author": "AXERA-TECH",
+  "url": "https://huggingface.co/AXERA-TECH/MiniCPM5-2B-GPTQ-Int4-AX650-C128-P1K-CTX2K",
+  "created_at": "2026-09-11T09:28:22.000Z",
+  "updated_at": "2026-09-11T09:41:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "MiniCPM5",
+    "MiniCPM5-2B",
+    "Int4",
+    "GPTQ",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:finetune:openbmb/MiniCPM5-2B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2240791280,
+  "storage_human": "2.2 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "一个方框内有个勾（☑）怎么打出这符号_百度知道",
+      "url": "https://zhidao.baidu.com/question/136956635.html",
+      "snippet": "一个方框内有个勾（☑）怎么打出这符号☑这个符号可以用word的特殊字符打出来。以Word2016版为例，具体步骤如下：1、新建 ..."
+    },
+    {
+      "title": "Pobierz oficjalne sterowniki NVIDIA | NVIDIA",
+      "url": "https://www.nvidia.com/pl-pl/drivers/",
+      "snippet": "Pobierz najnowsze oficjalne sterowniki NVIDIA, aby zwiększyć komfort rozgrywki na PC i szybciej uruchamiać aplikacje."
+    },
+    {
+      "title": "梦幻西游黑风山副本抄写大全_百度知道",
+      "url": "https://zhidao.baidu.com/question/580670653.html",
+      "snippet": "梦幻西游黑风山副本抄写大全梦幻西游黑风山副本抄写大全如下：1、若菩萨欲得净土当净其心随其心净则佛土净2、法尚应舍何况非 …"
+    },
+    {
+      "title": "NVIDIA Highlights Tutorial | GeForce",
+      "url": "https://www.nvidia.com/en-us/geforce/news/shadowplay-highlights-tutorial/",
+      "snippet": "Aug 21, 2017 · NVIDIA Highlights automatically captures gamers’ greatest gaming achievements in video and screenshots. It enables …"
+    },
+    {
+      "title": "24种颜色的英文缩写 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1585781051247196300.html",
+      "snippet": "Oct 31, 2023 · 24种颜色的英文缩写颜色的英文单词缩写有：1、WH、White、白色；2、BN、Brown、棕色；3、GN、Green、绿 …"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "microperceptron/Qwen3.8-Flash-Next-UNCENSORED-FP8",
+  "slug": "microperceptron-qwen3-8-flash-next-uncensored-fp8",
+  "author": "microperceptron",
+  "url": "https://huggingface.co/microperceptron/Qwen3.8-Flash-Next-UNCENSORED-FP8",
+  "created_at": "2026-09-11T01:43:38.000Z",
+  "updated_at": "2026-09-11T01:43:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen4_exp",
+    "qwen",
+    "qwen3.8",
+    "flash-next",
+    "fp8",
+    "uncensored",
+    "moe",
+    "text-generation",
+    "vision",
+    "vision-language",
+    "multi-token-prediction",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next-FP8",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next-FP8",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 185553536918,
+  "storage_human": "185.6 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dateien zwischen Ihrem Computer und Ihrem Pixel übertragen",
+      "url": "https://support.google.com/pixelphone/answer/2840804?hl=de",
+      "snippet": "Sie können Fotos, Musik und andere Dateien von Ihrem Computer auf Ihr Android-Gerät übertragen – entweder über Ihr Google …"
+    },
+    {
+      "title": "Funktion „Bild im Bild“ auf Mobilgeräten verwenden",
+      "url": "https://support.google.com/youtube/answer/7552722?hl=de&co=GENIE.Platform%3DAndroid",
+      "snippet": "Funktion „Bild im Bild“ auf Mobilgeräten verwenden Mit der Bild-im-Bild-Funktion (BiB) kannst du ein Video in einem kleinen Player …"
+    },
+    {
+      "title": "Билды и гайды для лиги Спуск - [3.5][Все классы]25 Билдов!",
+      "url": "https://ru.pathofexile.com/forum/view-thread/39308",
+      "snippet": "Dec 5, 2018 · Path of Exile - лучшая бесплатная игра в жанре Action RPG. Мрачный мир, глубокая и сложная система прокачки …"
+    },
+    {
+      "title": "Path of Exile",
+      "url": "https://ru.pathofexile.com/item-filter/ladder/follower",
+      "snippet": "Path of Exile - лучшая бесплатная игра в жанре Action RPG. Мрачный мир, глубокая и сложная система прокачки персонажа, …"
+    },
+    {
+      "title": "Bild-Assets für Suchkampagnen - Google Ads-Hilfe",
+      "url": "https://support.google.com/google-ads/answer/9566341?hl=de",
+      "snippet": "Mit Bild-Assets können Werbetreibende vorhandene Textanzeigen um ansprechende visuelle Elemente ergänzen. Durch …"
+    }
+  ]
+}

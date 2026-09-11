@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "autmoate/cactus-needle2-calendar-read-dt",
+  "slug": "autmoate-cactus-needle2-calendar-read-dt",
+  "author": "autmoate",
+  "url": "https://huggingface.co/autmoate/cactus-needle2-calendar-read-dt",
+  "created_at": "2026-09-11T10:17:25.000Z",
+  "updated_at": "2026-09-11T10:17:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Online Games on CrazyGames | Play Now!",
+      "url": "https://www.crazygames.com/",
+      "snippet": "Play free online games at CrazyGames, the best place to play high-quality browser games. We add new games every day. Have fun!"
+    },
+    {
+      "title": "CrazyGames | Speel gratis online spelletjes!",
+      "url": "https://www.crazygames.com/nl",
+      "snippet": "Speel de beste gratis online spelletjes op CrazyGames. Hier vind je duizenden games voor je computer, smartphone, of tablet! Speel …"
+    },
+    {
+      "title": "CrazyGames - Free Online Games & Play Now!",
+      "url": "https://www.crazygames.org/",
+      "snippet": "Play thousands of free online games instantly! Enjoy action, puzzle, racing, multiplayer games and more on CrazyGames.org"
+    },
+    {
+      "title": "Crazy Games - Play Online for Free! - Poki",
+      "url": "https://poki.com/en/crazy-games?msockid=1f0128dff5bc68c5349f3f0ef4e669d7",
+      "snippet": "Experience the most absurd online games with crazy games on Poki! Engage in bizarre challenges, wacky scenarios, and …"
+    },
+    {
+      "title": "Performing 2D–1D–2D Mass Spectrometry Imaging Using Strings",
+      "url": "https://pubs.acs.org/doi/10.1021/acs.analchem.1c04181",
+      "snippet": "14.01.2022 ... This paper proposes a new MSI method that involves the initial imprinting of chemicals on a two-dimensional string plane area. The string plane ..."
+    }
+  ]
+}

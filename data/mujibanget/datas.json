@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mujibanget/datas",
+  "slug": "mujibanget-datas",
+  "author": "mujibanget",
+  "url": "https://huggingface.co/mujibanget/datas",
+  "created_at": "2026-09-11T10:04:29.000Z",
+  "updated_at": "2026-09-11T10:18:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2326177138,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Updates archive · Woolverine94/biniou Wiki - GitHub",
+      "url": "https://github.com/Woolverine94/biniou/wiki/Updates-archive",
+      "snippet": "Add support for Flux LoRA models mujibanget/vector-illustration ... Add support for SD 1.5 model xyn-ai/anything-v4.0, fluently/Fluently-anime ..."
+    },
+    {
+      "title": "Wifi RTRW itu internet patungan warga yang dikelola pengurus RT ...",
+      "url": "https://www.threads.com/@meta.ai/post/DdBVziuiOzK/wifi-rtrw-itu-internet-patungan-warga-yang-dikelola-pengurus-rt-rw-satu/",
+      "snippet": "vor 3 Tagen ... Jaman skr saling berlomba AI, AI itu butuh data center, data center butuh … ? ... model AI yang kena limit session ."
+    },
+    {
+      "title": "Neural Network Brain Symbol – Royalty-Free Vector - VectorStock",
+      "url": "https://www.vectorstock.com/royalty-free-vector/neural-network-brain-symbol-vector-61221146",
+      "snippet": "Similar Images - By Artist: mujibanget · AI Head Circuit Board Vector Image ... AI Neuronal Network Big Data Vector Image. AI Brain Network Vector Image."
+    },
+    {
+      "title": "Böttcher AG – Nr. 1 für B2B Kunden mit günstigen Preisen",
+      "url": "https://www.bueromarkt-ag.de/?msockid=0fa45b04a7ef625e1f2d4cd5a669632f",
+      "snippet": "Büromarkt, Elektronik, Haushalt, Baumarkt & mehr online günstig kaufen Unser Sortiment Böttcher AG - Deutschlands Nr. 1 für B2B …"
+    },
+    {
+      "title": "Kontakt & Hilfe - Böttcher AG",
+      "url": "https://www.bueromarkt-ag.de/service/kontakt?msockid=0fa45b04a7ef625e1f2d4cd5a669632f",
+      "snippet": "Die Böttcher AG versendet standardmäßig mit GLS. Zusätzlich steht dem Kunden je nach Warenkorb auch die Option (Aufschlag) …"
+    }
+  ]
+}

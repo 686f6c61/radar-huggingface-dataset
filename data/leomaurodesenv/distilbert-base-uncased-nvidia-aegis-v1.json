@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "leomaurodesenv/distilbert-base-uncased-nvidia-aegis-v1",
+  "slug": "leomaurodesenv-distilbert-base-uncased-nvidia-aegis-v1",
+  "author": "leomaurodesenv",
+  "url": "https://huggingface.co/leomaurodesenv/distilbert-base-uncased-nvidia-aegis-v1",
+  "created_at": "2026-09-11T02:45:25.000Z",
+  "updated_at": "2026-09-11T08:58:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 4820991345,
+  "storage_human": "4.8 GB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PRIX JEAN-YVES ARTU - PAU - 03/02/2026 : partants, pronostics et ...",
+      "url": "https://www.equidia.fr/courses/2026-02-03/R3/C6",
+      "snippet": "C8 15:57 03 février 2026 - 14:47 R3 PAU C6 PRIX JEAN-YVES ARTU COURSE A CONDITIONS - CLASSE 3 LES CONDITIONS …"
+    },
+    {
+      "title": "PRIX JEAN-YVES ARTU - 03/02/2026 - PAU R3 C6 - Turfoo",
+      "url": "https://www.turfoo.fr/index.php/programmes-courses/260203/reunion3-pau/course6-prix-jean-yves-artu/",
+      "snippet": "Feb 3, 2026 · Présentation des pronostics et partants de la course hippique PRIX JEAN-YVES ARTU (Haies) du 03/02/2026, R3 C6. …"
+    },
+    {
+      "title": "Partants PMU : Prix Jean-Yves Artu (R3C6) à Pau - Mardi 03 Février 2026",
+      "url": "https://www.turf-fr.com/courses-pmu/partants/r3-prix-jean-yves-artu-368682",
+      "snippet": "Feb 3, 2026 · Prix Jean-Yves Artu à Pau : HAIES, 3500 metres 34.000- COURSE A CONDITIONS Pour poulains entiers, hongres et …"
+    },
+    {
+      "title": "Arrivée et rapports de la course Prix Jean-Yves Artu à Pau le 3 février ...",
+      "url": "https://www.geny.com/course/1630966-2026-02-03-pau-prix-jean-yves-artu/arrivee-rapports",
+      "snippet": "Feb 3, 2026 · Arrivée, résultats et rapports (Genybet, PMU) de la course Prix Jean-Yves Artu à Pau le 3 février 2026 : les chevaux à …"
+    },
+    {
+      "title": "Partants et pronostics de la course Prix Jean-Yves Artu à Pau le 3 ...",
+      "url": "https://www.geny.com/course/1630966-2026-02-03-pau-prix-jean-yves-artu/partants-pronostics",
+      "snippet": "Feb 3, 2026 · Retrouvez les partants, pronostics et cotes de la course Prix Jean-Yves Artu à Pau le 3 février 2026 : statistiques, …"
+    }
+  ]
+}

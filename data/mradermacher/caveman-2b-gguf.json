@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Caveman-2B-GGUF",
+  "slug": "mradermacher-caveman-2b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Caveman-2B-GGUF",
+  "created_at": "2026-09-11T10:20:14.000Z",
+  "updated_at": "2026-09-11T10:24:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3_5",
+    "en",
+    "base_model:CrowdMind/Caveman-2B",
+    "base_model:quantized:CrowdMind/Caveman-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 331416576,
+  "parameters_human": "331.4M",
+  "storage_bytes": 1032891520,
+  "storage_human": "1.0 GB",
+  "base_model": "CrowdMind/Caveman-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Share Secrets Manager secrets between accounts | AWS re:Post",
+      "url": "https://repost.aws/knowledge-center/secrets-manager-share-between-accounts",
+      "snippet": "You must create and specify a custom AWS Key Management Service (AWS KMS) key to share secrets between accounts. You …"
+    },
+    {
+      "title": "Silly-v0.2 is my new favorite model : r/LocalLLaMA - Reddit",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1na7zg7/sillyv02_is_my_new_favorite_model/",
+      "snippet": "06.09.2025 ... https://huggingface.co/mradermacher/silly-v0.2-GGUF ... model for the AI chatbot to have a different personality. You can simply tell them ..."
+    },
+    {
+      "title": "Access AWS Secrets Manager secrets from a different account",
+      "url": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/auth-and-access_examples_cross.html",
+      "snippet": "This is because you can't use the AWS managed key (aws/secretsmanager) for cross-account access. Instead, you must encrypt …"
+    },
+    {
+      "title": "kindatechnical () | A Guide to AWS Secrets Manager - Cross-Account ...",
+      "url": "https://kindatechnical.com/aws-secretsmanager/cross-account-secrets-management.html",
+      "snippet": "Managing secrets across AWS accounts requires precise configuration to avoid unintended exposure or access failures. This section …"
+    },
+    {
+      "title": "Sharing secrets to ECS in an AWS multi-account architecture",
+      "url": "https://dev.to/aws-builders/sharing-secrets-to-ecs-in-an-aws-multi-account-architecture-5h1i",
+      "snippet": "Feb 15, 2021 · In this post, We'll see the highlight steps on how to share secrets between AWS account using ECS Fargate that get …"
+    }
+  ]
+}

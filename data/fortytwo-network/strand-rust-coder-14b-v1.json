@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Fortytwo-Network/Strand-Rust-Coder-14B-v1",
+  "slug": "fortytwo-network-strand-rust-coder-14b-v1",
+  "author": "Fortytwo-Network",
+  "url": "https://huggingface.co/Fortytwo-Network/Strand-Rust-Coder-14B-v1",
+  "created_at": "2025-09-29T06:09:17.000Z",
+  "updated_at": "2026-01-05T17:19:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "dataset:Fortytwo-Network/Strandset-Rust-v1",
+    "arxiv:2510.24801",
+    "arxiv:2409.08386",
+    "base_model:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 195,
+  "downloads_30d": 1384,
+  "trending_score": 10,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29551555856,
+  "storage_human": "29.6 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-14B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiveScore | Today's Live Football Scores, Fixtures & Results",
+      "url": "https://www.livescore.com/en/",
+      "snippet": "Get Today's Live Football Scores and Real-Time Football Results with LiveScore! We cover all Countries, Leagues and Competitions …"
+    },
+    {
+      "title": "Livescore - soccer results",
+      "url": "https://www.livescore.cz/",
+      "snippet": "Livescore - Place where you can find live soccer results. All is real time. Soccer leagues from all over the world."
+    },
+    {
+      "title": "Livescore: Football Scores",
+      "url": "https://www.livescore.in/",
+      "snippet": "Explanations: Football livescore service on Livescore.in provides bettors and football fans with livescore real-time score service for …"
+    },
+    {
+      "title": "Football Live Scores, Latest Football Results | Flashscore.com",
+      "url": "https://www.flashscore.com/",
+      "snippet": "The football livescore service is real time, you don't need to refresh it. LaLiga EA Sports 2026/27 live on Flashscore.com! Follow …"
+    },
+    {
+      "title": "Football Livescore",
+      "url": "https://www.livescore.in/fr/",
+      "snippet": "Vous y trouverez des informations telles que les minutes de jeu, les buteurs, les résultats à la mi-temps et d'autres données en direct. …"
+    }
+  ]
+}

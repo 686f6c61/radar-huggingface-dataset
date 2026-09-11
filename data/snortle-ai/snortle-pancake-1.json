@@ -5,7 +5,7 @@
   "author": "Snortle-AI",
   "url": "https://huggingface.co/Snortle-AI/Snortle-Pancake-1",
   "created_at": "2026-08-26T00:16:47.000Z",
-  "updated_at": "2026-09-07T23:04:21.000Z",
+  "updated_at": "2026-09-10T14:48:58.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": 318091584,
   "parameters_human": "318.1M",
-  "storage_bytes": 6285540944,
-  "storage_human": "6.3 GB",
+  "storage_bytes": 7557948216,
+  "storage_human": "7.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

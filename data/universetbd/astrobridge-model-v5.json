@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "UniverseTBD/astrobridge-model-v5",
+  "slug": "universetbd-astrobridge-model-v5",
+  "author": "UniverseTBD",
+  "url": "https://huggingface.co/UniverseTBD/astrobridge-model-v5",
+  "created_at": "2026-09-11T01:20:30.000Z",
+  "updated_at": "2026-09-11T06:38:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "astrobridge",
+    "captioner",
+    "lora",
+    "multimodal",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 254918666,
+  "storage_human": "255 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ONECI -Service vip",
+      "url": "https://www.oneci.ci/nos-services/service-vip",
+      "snippet": "Leur authenticité sera vérifiée à l’enrôlement et à la validation. Le Call Center de l'ONECI est ouvert du Lundi au Vendredi, de 07h à …"
+    },
+    {
+      "title": "ONECI | Service Vip",
+      "url": "https://sitetest.oneci.ci/service-vip",
+      "snippet": "Consulter la rubrique Service Vip du site web officiel de l'Office National de l'Etat Civil et de l'Identification de Côte d'Ivoire (ONECI)"
+    },
+    {
+      "title": "ONECI | Service Vip Cni",
+      "url": "https://sitetest.oneci.ci/carte-identite/service-vip-cni",
+      "snippet": "Consulter la rubrique Service Vip Cni du site web officiel de l'Office National de l'Etat Civil et de l'Identification de Côte d'Ivoire (ONECI)"
+    },
+    {
+      "title": "ONECI - Accueil",
+      "url": "https://www.oneci.ci/accueil",
+      "snippet": "Consultez les dernières analyses et tendances technologiques. Partagez vos idées, recommandations et plaintes. Fais-toi vite …"
+    },
+    {
+      "title": "ONECI - Accueil",
+      "url": "https://www.oneci.ci/",
+      "snippet": "ACCEDER DIRECTEMENT AU SITE... [ 14 ] >>"
+    }
+  ]
+}

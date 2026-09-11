@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "LoRAFleet/openvla-oft-libero-reconstructed-r64",
+  "slug": "lorafleet-openvla-oft-libero-reconstructed-r64",
+  "author": "LoRAFleet",
+  "url": "https://huggingface.co/LoRAFleet/openvla-oft-libero-reconstructed-r64",
+  "created_at": "2026-09-11T10:04:03.000Z",
+  "updated_at": "2026-09-11T10:04:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "openvla-oft",
+    "lora",
+    "libero",
+    "reconstructed-adapter",
+    "robotics",
+    "base_model:openvla/openvla-7b",
+    "base_model:adapter:openvla/openvla-7b",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3251857388,
+  "storage_human": "3.3 GB",
+  "base_model": "openvla/openvla-7b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=2e2b765806036d083a0d618907076cc5",
+      "snippet": "Free Microsoft apps are available for lighter, everyday use, but a Microsoft 365 subscription unlocks a broader set of productivity, …"
+    },
+    {
+      "title": "Sign in to Microsoft 365",
+      "url": "https://support.microsoft.com/en-us/accounts-billing/subscriptions/sign-in-to-microsoft-365",
+      "snippet": "Learn how to sign in to Office or Microsoft 365 from a desktop application or your web browser."
+    },
+    {
+      "title": "Microsoft 365 - Sign into Copilot - Office",
+      "url": "https://m365.cloud.microsoft/?origindomain=Office",
+      "snippet": "Microsoft 365 includes familiar apps like Word, Excel, PowerPoint, Outlook, Teams, and OneDrive, plus Copilot experiences that help …"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/inbox",
+      "snippet": "Sign in to Outlook to access and manage your email efficiently."
+    },
+    {
+      "title": "Download Microsoft Office 365 for Windows and Mac | Microsoft 365",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/download-office?msockid=2e2b765806036d083a0d618907076cc5",
+      "snippet": "Microsoft 365 has the tools you need to seamlessly create, collaborate, and share from all your devices. Get innovative apps with …"
+    }
+  ]
+}

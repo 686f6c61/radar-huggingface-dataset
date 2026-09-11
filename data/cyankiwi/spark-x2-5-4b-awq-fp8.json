@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "cyankiwi/Spark-X2.5-4B-AWQ-FP8",
+  "slug": "cyankiwi-spark-x2-5-4b-awq-fp8",
+  "author": "cyankiwi",
+  "url": "https://huggingface.co/cyankiwi/Spark-X2.5-4B-AWQ-FP8",
+  "created_at": "2026-09-11T09:31:25.000Z",
+  "updated_at": "2026-09-11T09:33:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "spark2_5",
+    "text-generation",
+    "llm",
+    "sparkx2_5",
+    "conversational",
+    "custom_code",
+    "base_model:XHToken/Spark-X2.5-4B",
+    "base_model:quantized:XHToken/Spark-X2.5-4B",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 4452215068,
+  "storage_human": "4.5 GB",
+  "base_model": "XHToken/Spark-X2.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dropbox: Secure cloud storage, file sharing, and more",
+      "url": "https://www.dropbox.com/",
+      "snippet": "Discover Dropbox – secure, easy cloud storage for file sharing and collaboration. With Dash, save time and organize all your …"
+    },
+    {
+      "title": "Log in or Sign Up – Dropbox",
+      "url": "https://www.dropbox.com/en_GB/login",
+      "snippet": "Dropbox Desktop app Mobile app Integrations Features Solutions Security Early access Templates Free tools Products Plus …"
+    },
+    {
+      "title": "Log In | Dropbox Sign",
+      "url": "https://app.sign.dropbox.com/account/logIn",
+      "snippet": "Sign in or create an account Sign in with Dropbox Sign in with Google or Email address Password"
+    },
+    {
+      "title": "Dropbox デスクトップ アプリをダウンロードしてインストールする",
+      "url": "https://help.dropbox.com/ja-jp/installs/download-dropbox",
+      "snippet": "Mar 6, 2025 · Dropbox デスクトップ アプリをパソコンで使用するには、 ダウンロードしてインストールする 必要があります。 …"
+    },
+    {
+      "title": "Dropbox デスクトップ アプリについて - Dropbox ヘルプ",
+      "url": "https://help.dropbox.com/ja-jp/installs/desktop-application-overview",
+      "snippet": "Jan 14, 2026 · Dropbox デスクトップ アプリなら、Dropbox アカウントに保存しているすべてのファイルやフォルダに、パソコンを …"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "shivam909067/aroxa-4b-agentic",
+  "slug": "shivam909067-aroxa-4b-agentic",
+  "author": "shivam909067",
+  "url": "https://huggingface.co/shivam909067/aroxa-4b-agentic",
+  "created_at": "2026-09-11T09:48:36.000Z",
+  "updated_at": "2026-09-11T10:00:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "agent",
+    "tool-calling",
+    "coding",
+    "lora",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 4780487384,
+  "storage_human": "4.8 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alle Kategorien durchsuchen - Temu Germany",
+      "url": "https://www.temu.com/de/o1-0.html",
+      "snippet": "Kaufen Sie bei Temu online und Sie viel Geld, von Kleidung über Haushalt & Küche, Schönheit & Gesundheit bis hin zu Elektronik …"
+    },
+    {
+      "title": "Temu Germany | Explore the Latest Clothing, Beauty, Home, Jewelry",
+      "url": "https://www.temu.com/de-en",
+      "snippet": "Make Temu your one-stop destination for the latest fashion products, cosmetics & more. Free shipping on items shipped from Temu. …"
+    },
+    {
+      "title": "Explore the Latest Clothing, Beauty, Home, Jewelry & More - Temu",
+      "url": "https://www.temu.com/fr",
+      "snippet": "Make Temu your one-stop destination for the latest fashion products, cosmetics & more. Free shipping on items shipped from Temu. …"
+    },
+    {
+      "title": "online einkaufen - Temu Deutschland",
+      "url": "https://www.temu.com/de/online-shopping-5020032691405-s.html",
+      "snippet": "Kaufen Sie online einkaufen bei Temu . Machen Sie Temu zu Ihrem -Ziel für die neuesten Modeprodukte."
+    },
+    {
+      "title": "Temu | Registrieren & Anmelden",
+      "url": "https://www.temu.com/de/login.html?login_scene=8",
+      "snippet": "Registrieren Sie sich und melden Sie sich jetzt bei Temu an und beginnen Sie eine -Online-Shopping-Reise."
+    }
+  ]
+}

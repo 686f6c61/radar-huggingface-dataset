@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "felixnguyen33/Qwen3-VL-30B-A3B-Wanda-50",
+  "slug": "felixnguyen33-qwen3-vl-30b-a3b-wanda-50",
+  "author": "felixnguyen33",
+  "url": "https://huggingface.co/felixnguyen33/Qwen3-VL-30B-A3B-Wanda-50",
+  "created_at": "2026-09-11T11:37:03.000Z",
+  "updated_at": "2026-09-11T11:42:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl_moe",
+    "image-text-to-text",
+    "pruning",
+    "conversational",
+    "base_model:Qwen/Qwen3-VL-30B-A3B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-30B-A3B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31070754032,
+  "parameters_human": "31.07B",
+  "storage_bytes": 62153040486,
+  "storage_human": "62.2 GB",
+  "base_model": "Qwen/Qwen3-VL-30B-A3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Volný.cz mail – přihlášení",
+      "url": "http://vmail.centrum.cz/",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Volný.cz Mail",
+      "url": "https://m-vmail.centrum.cz/?fld=-4",
+      "snippet": "Přihlášení E-mail"
+    },
+    {
+      "title": "Volny.cz: Fandíme dobrému obsahu",
+      "url": "https://volny.centrum.cz/?lp=1",
+      "snippet": "Volný.cz je český internetový portál nabízející e-mail, aktuální zpravodajství, počasí a další zajímavé služby."
+    },
+    {
+      "title": "Volny.cz mail - přihlášení a registrace do e-mailu",
+      "url": "https://www.expressinfo.cz/technika/volny-cz-mail-prihlaseni-a-registrace-do-e-mailu/10785/",
+      "snippet": "Sep 28, 2022 · Přihlášení do emailové schránky volny.cz najdete na domovské stránce volny.centrum.cz. Zde jen zadáte přihlašovací …"
+    },
+    {
+      "title": "Volny.cz - Přihlásit se",
+      "url": "https://www.prihlaseni-se.cz/volny-prihlaseni/",
+      "snippet": "Na této webové adrese uvidíte v pravém sloupci přihlášení Volný resp. přihlášení se do mailu Volny.cz. Zadáte zde svůj email a vaše …"
+    }
+  ]
+}

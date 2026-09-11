@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MiniCPM5-2B-catalan-chat-v2-GGUF",
+  "slug": "mradermacher-minicpm5-2b-catalan-chat-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MiniCPM5-2B-catalan-chat-v2-GGUF",
+  "created_at": "2026-09-11T09:57:03.000Z",
+  "updated_at": "2026-09-11T09:57:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2026년 고양 인기 호텔 베스트 10 - 숙소 추천 - 트립어드바이저",
+      "url": "https://www.tripadvisor.co.kr/Hotels-g2024865-Goyang_Gyeonggi_do-Hotels.html",
+      "snippet": "베스트 고양 호텔 - Tripadvisor : 여행자 리뷰 317개, 사진 581개를 둘러보고, 고양, 경기도, 대한민국 호텔 136곳의 가격을 비교하세요."
+    },
+    {
+      "title": "대한민국 고양 인기 호텔 10곳 | 최저 ₩79,771부터",
+      "url": "https://www.booking.com/city/kr/goyang.ko.html?msockid=2cba749f2ebb6e900942634e2f136f1f",
+      "snippet": "온라인에서 대한민국 고양 호텔에 제공되는 엄청난 할인을 누려 보세요. 예약 가능한 여러 객실과 우수한 가격이 제공됩니다. 호텔 이용 …"
+    },
+    {
+      "title": "고양 호텔 추천, 대한민국 고양 숙소 예약 | 트립닷컴",
+      "url": "https://kr.trip.com/hotels/goyang-si-hotels-list-61345/",
+      "snippet": "인기 고양 호텔 89곳을 트립닷컴에서 만나보세요. 실제 투숙객 후기와 평점을 확인하고, 합리적인 가격으로 마음에 드는 대한민국 고양 …"
+    },
+    {
+      "title": "고양 호텔 검색: 지금 예약 가능한 인기 숙소",
+      "url": "https://www.expedia.co.kr/Goyang-Hotels.d6183721.Travel-Guide-Hotels",
+      "snippet": "예, 환불받으실 수 있어요. 대부분의 객실 예약은 숙박 시설의 취소 기한 전에 취소하는 경우 전액 환불되며, 일반적으로 이 기한은 체크인 …"
+    },
+    {
+      "title": "소노캄 고양, 고양 (2026년 최신 요금) - Booking.com",
+      "url": "https://www.booking.com/hotel/kr/the-mvl-kintex.ko.html?msockid=2cba749f2ebb6e900942634e2f136f1f",
+      "snippet": "야외 수영장과 사우나 시설을 자랑하는 소노캄 고양은 무료 Wi-Fi를 갖춘 우아한 객실을 제공합니다. 3개의 레스토랑도 이용하실 수 …"
+    }
+  ]
+}

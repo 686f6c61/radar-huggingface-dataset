@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "yqi0/petitgpt",
+  "slug": "yqi0-petitgpt",
+  "author": "yqi0",
+  "url": "https://huggingface.co/yqi0/petitgpt",
+  "created_at": "2026-09-11T10:06:12.000Z",
+  "updated_at": "2026-09-11T10:06:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "petitgpt",
+    "native-pytorch",
+    "research",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124635456,
+  "parameters_human": "124.6M",
+  "storage_bytes": 498562192,
+  "storage_human": "499 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Как изменить название скопированной ...",
+      "url": "https://www.bolshoyvopros.ru/questions/54086-kak-izmenit-nazvanie-skopirovannoj-ssylki-sohraniv-ee-klikabelnoj.html",
+      "snippet": "Стоит добавить, что таким образом делать кликабельной ссылку можно не только пряча ее за одно слово, а и за несколько …"
+    },
+    {
+      "title": "Когда окончанием прилагательного ...",
+      "url": "https://hinative.com/questions/22141656",
+      "snippet": "Если есть Ж Ш Ч Щ Н, посмотрите на прилагательное в мужском роде. Если в мужском роде окончание -ИЙ, в среднем роде …"
+    },
+    {
+      "title": "Что означает частица «się»,когда ее ...",
+      "url": "https://hinative.com/questions/17035103",
+      "snippet": "«Się» это то же самое, что «ся», но её пишется раздельно. ︎myć się – мыться ︎pisze się – пишется ︎podoba mi się – мне …"
+    },
+    {
+      "title": "Кто сказал: \"Хочешь погубить нацию ...",
+      "url": "https://www.bolshoyvopros.ru/questions/4205550-kto-skazal-hochesh-pogubit-naciju----razvrati-zhenschin.html",
+      "snippet": "Я вот так же нашла несколько статей, авторы которых утверждают, что фразу: -\"Чтобы уничтожить народ, нужно развратить …"
+    },
+    {
+      "title": "\"он, его, него (as in the word \"it\")\" 和 \"она, ее ...",
+      "url": "https://zh.hinative.com/questions/25250825",
+      "snippet": "Similarly, 'его' and 'ее' are used to indicate possession or to mean \"its\" for masculine and feminine nouns. However, the words 'него' …"
+    }
+  ]
+}

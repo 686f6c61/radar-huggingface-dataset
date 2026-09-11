@@ -24,12 +24,12 @@
     "license:openmdw-1.1",
     "region:us"
   ],
-  "likes": 467,
-  "downloads_30d": 3630,
-  "trending_score": 8,
+  "likes": 470,
+  "downloads_30d": 3585,
+  "trending_score": 9,
   "parameters": 11095371252,
   "parameters_human": "11.10B",
-  "storage_bytes": 44411750825,
+  "storage_bytes": 44418552103,
   "storage_human": "44.4 GB",
   "base_model": "nvidia/NVIDIA-Nemotron-Nano-9B-v2",
   "formats": [

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "wuyuqichen/carbon-aware-finetune",
+  "slug": "wuyuqichen-carbon-aware-finetune",
+  "author": "wuyuqichen",
+  "url": "https://huggingface.co/wuyuqichen/carbon-aware-finetune",
+  "created_at": "2026-09-11T11:40:33.000Z",
+  "updated_at": "2026-09-11T11:40:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Castelmezzano - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Castelmezzano",
+      "snippet": "Castelmezzano (Castrëmënzànë nel dialetto locale) è un comune italiano di 685 abitanti [2] della provincia di Potenza in Basilicata. Il …"
+    },
+    {
+      "title": "Castelmezzano | Il gioiello delle Dolomiti Lucane | Borghi Storici",
+      "url": "https://www.borghistorici.it/basilicata/castelmezzano/",
+      "snippet": "Cosa vedere a Castelmezzano in Basilicata. Informazioni sui luoghi da visitare nei dintorni, quando andare, dove mangiare e dormire."
+    },
+    {
+      "title": "Sito istituzionale del Comune di Castelmezzano - Avvisi, Notizie ...",
+      "url": "https://comune.castelmezzano.pz.it/",
+      "snippet": "Mar 25, 2026 · Scopri il sito istituzionale del Comune di Castelmezzano, progettato con intelligenza artificiale per offrire servizi e …"
+    },
+    {
+      "title": "Cosa vedere a Castelmezzano: 7 attrazioni e guida Completa",
+      "url": "https://www.villagesitaly.com/it/borghi/castelmezzano/",
+      "snippet": "Aug 31, 2026 · Cosa vedere a Castelmezzano: scopri il borgo con 710 abitanti. Esplora le Dolomiti Lucane, il Volo dell'Angelo e il …"
+    },
+    {
+      "title": "Castelmezzano - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Castelmezzano",
+      "snippet": "Castelmezzano (Castelmezzano dialect: Castrëmënzànë) is a town and comune in the province of Potenza, in the Southern Italian …"
+    }
+  ]
+}

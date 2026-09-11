@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ariancort/GLM-5.3",
+  "slug": "ariancort-glm-5-3",
+  "author": "ariancort",
+  "url": "https://huggingface.co/ariancort/GLM-5.3",
+  "created_at": "2026-09-11T10:03:16.000Z",
+  "updated_at": "2026-09-11T10:03:16.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_moe_dsa",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "license:other",
+    "eval-results",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 755663627013,
+  "storage_human": "755.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kaufland.de — Angebote entdecken & günstig einkaufen",
+      "url": "https://www.kaufland.de/?msockid=1e7a6ba4acb66f4c28987c75ad916ea1",
+      "snippet": "Große Auswahl Täglich neue Aktionen Viele Zahlungsmethoden Jetzt Angebote entdecken und bei Kaufland.de bestellen!"
+    },
+    {
+      "title": "Aktuelle Prospekte zum Blättern: jede Woche neu! | Kaufland",
+      "url": "https://filiale.kaufland.de/prospekte.html",
+      "snippet": "Blättere in unseren aktuellen Prospekten und informiere dich bequem von zu Hause aus oder unterwegs über unsere wöchentlich …"
+    },
+    {
+      "title": "Angebote in meiner Nähe | Kaufland",
+      "url": "https://filiale.kaufland.de/",
+      "snippet": "Wir haben Lebensmittel für Sie zu Knüllerpreisen – stöbern Sie in unseren Angeboten und Prospekten. Entdecken Sie außerdem …"
+    },
+    {
+      "title": "Jobsuche | Kaufland",
+      "url": "https://jobs.kaufland.de/jobsuche",
+      "snippet": "Finde alle Stellenangebote bei Kaufland: Ausbildungsplätze Jobs im Verkauf Berufseinsteiger Berufserfahrene Aushilfe in Vollzeit …"
+    },
+    {
+      "title": "Finde deinen Arbeitsplatz im Handel | Kaufland",
+      "url": "https://jobs.kaufland.de/",
+      "snippet": "Unsere Jobs bei Kaufland bieten dir vielfältige Einstiegsmöglichkeiten, Vorteile und Zukunftsperspektiven. Werde Teil des Teams …"
+    }
+  ]
+}

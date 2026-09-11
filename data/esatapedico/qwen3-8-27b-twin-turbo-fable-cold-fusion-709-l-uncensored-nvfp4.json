@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "esatapedico/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-NVFP4",
+  "slug": "esatapedico-qwen3-8-27b-twin-turbo-fable-cold-fusion-709-l-uncensored-nvfp4",
+  "author": "esatapedico",
+  "url": "https://huggingface.co/esatapedico/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-NVFP4",
+  "created_at": "2026-09-11T09:34:42.000Z",
+  "updated_at": "2026-09-11T10:00:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "nvfp4",
+    "qwen3.8",
+    "qwen3.5",
+    "blackwell",
+    "mtp",
+    "speculative-decoding",
+    "turbo",
+    "twin-turbo",
+    "fable",
+    "cold-fusion",
+    "compressed-tensors",
+    "conversational",
+    "en",
+    "multilingual",
+    "base_model:DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 54431112247,
+  "storage_human": "54.4 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Citavi - Literaturverwaltung und Wissensorganisation",
+      "url": "https://www.citavi.com/de?EPU=false",
+      "snippet": "Citavi ist das einzige Literaturverwaltungsprogramm, mit dem Teams ihre Daten auf dem eigenen Server anstatt in der Cloud …"
+    },
+    {
+      "title": "Citavi Web ist da! | Citavi - Literaturverwaltung und Wissensorganisation",
+      "url": "https://www.citavi.com/de/citavi-web-release",
+      "snippet": "Mit Citavi Web können Sie überall arbeiten, wo Sie eine Internetverbindung haben – auf jedem Betriebssystem, sei es Mac OS, …"
+    },
+    {
+      "title": "Citavi 6: Handbuch",
+      "url": "https://www1.citavi.com/sub/manual6/de/installing_on_a_pc.html",
+      "snippet": "Sie können Citavi entweder lokal auf einem PC, einem Netzwerklaufwerk oder einem Terminalserver installieren. Wenn Sie Citavi in …"
+    },
+    {
+      "title": "Instalar Citavi y comprobar si hay actualizaciones disponibles ...",
+      "url": "https://www1.citavi.com/sub/manual6/es/installing_on_a_pc.html",
+      "snippet": "Puede instalar Citavi en su PC, en una unidad de red o en un servidor de terminal. Si quiere usar Citavi en un Mac con una máquina …"
+    },
+    {
+      "title": "Citavi 7.1 Now Available",
+      "url": "https://ghost.citavi.com/citavi-7-1-now-available/",
+      "snippet": "Aug 12, 2025 · We are excited to announce the release of Citavi 7.1. This release builds on the foundation we set with Citavi 7, …"
+    }
+  ]
+}

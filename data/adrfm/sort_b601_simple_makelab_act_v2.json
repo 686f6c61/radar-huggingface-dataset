@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "adrfm/sort_b601_simple_makelab_act_v2",
+  "slug": "adrfm-sort_b601_simple_makelab_act_v2",
+  "author": "adrfm",
+  "url": "https://huggingface.co/adrfm/sort_b601_simple_makelab_act_v2",
+  "created_at": "2026-09-11T11:44:50.000Z",
+  "updated_at": "2026-09-11T11:45:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:adrfm/sort_b601_simple_makelab",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51670663,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206723204,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "File Explorer in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/experience/fileexplorer/file-explorer-in-windows",
+      "snippet": "Find and open File Explorer in Windows, and customize Quick access by pinning and removing files and folders."
+    },
+    {
+      "title": "Explorer unter Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/windows/experience/fileexplorer/file-explorer-in-windows",
+      "snippet": "Schnellzugriffs Ab Windows 11 Version 22H2 sind die bekannten Windows-Ordner – Desktop, Dokumente, Downloads, Bilder, Musik …"
+    },
+    {
+      "title": "Open File Explorer in Windows 11",
+      "url": "https://www.elevenforum.com/t/open-file-explorer-in-windows-11.20591/",
+      "snippet": "Dec 11, 2023 · This tutorial will show you different ways to open File Explorer in Windows 11. File Explorer …"
+    },
+    {
+      "title": "Search in Windows 11 File Explorer",
+      "url": "https://www.elevenforum.com/t/search-in-windows-11-file-explorer.21789/",
+      "snippet": "Jan 21, 2024 · This tutorial will show you how to use advanced search options and filters while searching for files in Windows 11 File …"
+    },
+    {
+      "title": "Explorateur de fichiers dans Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/fr-fr/windows/experience/fileexplorer/file-explorer-in-windows",
+      "snippet": "Accès rapide À compter de Windows 11, version 22H2, les dossiers Windows connus (Bureau, Documents, Téléchargements, …"
+    }
+  ]
+}

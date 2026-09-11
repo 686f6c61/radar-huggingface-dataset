@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "VantCdx/Qwen3.8-27B-Q4_0-GGUF",
+  "slug": "vantcdx-qwen3-8-27b-q4_0-gguf",
+  "author": "VantCdx",
+  "url": "https://huggingface.co/VantCdx/Qwen3.8-27B-Q4_0-GGUF",
+  "created_at": "2026-09-11T02:19:34.000Z",
+  "updated_at": "2026-09-11T02:20:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 15715853632,
+  "storage_human": "15.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nextcloud - Open source content collaboration platform",
+      "url": "https://nextcloud.com/",
+      "snippet": "With over 400.000 deployments, Nextcloud is the most popular on-premises content collaboration platform you can download. It …"
+    },
+    {
+      "title": "Download and install Nextcloud",
+      "url": "https://nextcloud.com/install/",
+      "snippet": "1 day ago · Discover how to install Nextcloud for desktop or mobile. Choose a hosting provider, host on your own server, or in your …"
+    },
+    {
+      "title": "Nextcloud Portal",
+      "url": "https://portal.nextcloud.com/login",
+      "snippet": "Nextcloud offers a modern, on premise content collaboration platform with real-time document editing, video chat & groupware on …"
+    },
+    {
+      "title": "Nextcloud Italia, il tuo private cloud italiano",
+      "url": "https://nextcloud-italia.it/",
+      "snippet": "Nextcloud è nato come un software client/server per la creazione e l’utilizzo di un servizio di file hosting. La sua architettura aperta e …"
+    },
+    {
+      "title": "Nextcloud - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Nextcloud",
+      "snippet": "Nextcloud è una suite di software client-server per la creazione e l'utilizzo di servizi di file hosting, archiviazione in cloud, e …"
+    }
+  ]
+}

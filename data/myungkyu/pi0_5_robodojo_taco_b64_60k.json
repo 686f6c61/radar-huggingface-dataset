@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Myungkyu/pi0_5_robodojo_taco_b64_60k",
+  "slug": "myungkyu-pi0_5_robodojo_taco_b64_60k",
+  "author": "Myungkyu",
+  "url": "https://huggingface.co/Myungkyu/pi0_5_robodojo_taco_b64_60k",
+  "created_at": "2026-09-11T01:50:19.000Z",
+  "updated_at": "2026-09-11T01:51:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "vla",
+    "robodojo",
+    "dataset:Myungkyu/RoboDojo-taco-gemini",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354062568,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stradivarius – Zaloguj się",
+      "url": "https://www.stradivarius.com/pl/login.html",
+      "snippet": "Stradivarius – Zaloguj się ???ItxLoginPage.title???"
+    },
+    {
+      "title": "Stradivarius Polska - Nowa kolekcja jesień 2026 | Polska",
+      "url": "https://www.stradivarius.com/pl/",
+      "snippet": "Zainspiruj się kolekcją na sezon jesień-zima 2026 od Stradivarius. Odkryj najmodniejsze ubrania, buty i akcesoria damskie. Poczuj …"
+    },
+    {
+      "title": "Stradivarius Portugal - Nova coleção outono 2026 | Portugal",
+      "url": "https://www.stradivarius.com/pt/",
+      "snippet": "Inspira-te na coleção Stradivarius outono 2026. Descobre as últimas tendências em roupa, sapatos e acessórios femininos. Sente a …"
+    },
+    {
+      "title": "New Collection Autumn 2026 | United Kingdom - Stradivarius",
+      "url": "https://www.stradivarius.com/gb/",
+      "snippet": "Get inspired by the Stradivarius Autumn 2026 collection. Discover the latest trends in women's clothing, shoes and accessories. Feel …"
+    },
+    {
+      "title": "Stradivarius España | Ropa, zapatos y accesorios de mujer",
+      "url": "https://www.stradivarius.com/es/",
+      "snippet": "Stradivarius España - Tienda Online de ropa para mujer Descubre la última moda en Stradivarius. Encuentra tus vestidos favoritos, …"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove50_swapdisciter_b010",
+  "slug": "jeesup-svd-safety-l2_remove50_swapdisciter_b010",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapdisciter_b010",
+  "created_at": "2026-09-11T11:37:27.000Z",
+  "updated_at": "2026-09-11T11:48:49.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Serwis NK.pl został wyłączony",
+      "url": "https://nk.pl/",
+      "snippet": "Serwis NK.pl został wyłączony 27 lipca 2021 roku. Gry, które znasz i lubisz, możesz teraz znaleźć w serwisie Gameplanet. Jeżeli …"
+    }
+  ]
+}

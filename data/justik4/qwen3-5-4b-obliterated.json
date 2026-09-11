@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Justik4/Qwen3.5-4B-OBLITERATED",
+  "slug": "justik4-qwen3-5-4b-obliterated",
+  "author": "Justik4",
+  "url": "https://huggingface.co/Justik4/Qwen3.5-4B-OBLITERATED",
+  "created_at": "2026-09-11T10:07:27.000Z",
+  "updated_at": "2026-09-11T10:07:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "obliteratus",
+    "abliteration",
+    "uncensored",
+    "obliterate",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 8431540758,
+  "storage_human": "8.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BurracoON",
+      "url": "https://burracoon.it/game/",
+      "snippet": "BuracoON — Buraco (Burraco) online."
+    },
+    {
+      "title": "Burraco Più - Il gioco del Burraco | by Spaghetti Interactive",
+      "url": "https://burracopiu.spaghetti-interactive.it/",
+      "snippet": "Gioca a burraco online GRATIS. Gioca al più popolare gioco di carte italiano dal tuo PC, anche su Facebook. Il gioco del burraco ti …"
+    },
+    {
+      "title": "BurracoON - Online e 100% Gratuito. Gioca ora!",
+      "url": "https://burracoon.it/",
+      "snippet": "Gioca Burraco online gratis su qualsiasi dispositivo. Disponibile per i telefoni cellulari, tablet e computer senza bisogno di firme."
+    },
+    {
+      "title": "Burraco - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Burraco",
+      "snippet": "Oltre al burraco pulito (canastra limpa) e al burraco sporco (canastra suja), si distinguono la scala di tredici carte dall'Asso al Re …"
+    },
+    {
+      "title": "Regole del Burraco - Burraco.com",
+      "url": "https://www.burraco.com/regoleburraco",
+      "snippet": "Regole del Burraco ufficiali secondo la federazione Fibur. Origini, preparazione, svolgimento del gioco e chiusura della partita."
+    }
+  ]
+}

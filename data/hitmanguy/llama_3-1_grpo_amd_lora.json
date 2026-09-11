@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Hitmanguy/Llama_3.1_GRPO_AMD_Lora",
+  "slug": "hitmanguy-llama_3-1_grpo_amd_lora",
+  "author": "Hitmanguy",
+  "url": "https://huggingface.co/Hitmanguy/Llama_3.1_GRPO_AMD_Lora",
+  "created_at": "2026-09-11T09:23:45.000Z",
+  "updated_at": "2026-09-11T09:23:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "trl",
+    "en",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:finetune:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17210139,
+  "storage_human": "17 MB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Classroom 30x - Game Directory - Google Sites",
+      "url": "https://sites.google.com/view/classroomm30x/game-directory",
+      "snippet": "Welcome to the game directory of Classroom 30x, your ultimate hub for unblocked, browser-based games that work smoothly on any …"
+    },
+    {
+      "title": "Classroom Center - 5 - Google Sites",
+      "url": "https://sites.google.com/classroom.center/view-5/",
+      "snippet": "Searching for exciting Google+ games that run smoothly at school or on your Chromebook? You’re in the right place. Unblocked …"
+    },
+    {
+      "title": "Unblocked Games Portal",
+      "url": "https://m.sites.google.com/site/unblockedgamesportal/",
+      "snippet": "Unblocked game sites offer various genres, so there’s something for every type of gamer. Do you enjoy fast-paced action or do you …"
+    },
+    {
+      "title": "Unblocked Games Portal - Portal",
+      "url": "https://m.sites.google.com/site/unblockedgamesportal/portal",
+      "snippet": "Portal unblocked Game Portal Unblocked is a mind-bending puzzle platform that challenges players to think creatively using the …"
+    },
+    {
+      "title": "Unblocked Games K10 - Sprinter",
+      "url": "https://mobile.sites.google.com/site/unblockedgamesk10/sprinter",
+      "snippet": "About Game: Control your Sprinter and help him become the first winner of the running competition now! You need to tap the keys …"
+    }
+  ]
+}

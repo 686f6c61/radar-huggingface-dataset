@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ielabgroup/ITER-Qwen3-Embedding-4B",
+  "slug": "ielabgroup-iter-qwen3-embedding-4b",
+  "author": "ielabgroup",
+  "url": "https://huggingface.co/ielabgroup/ITER-Qwen3-Embedding-4B",
+  "created_at": "2026-08-27T07:12:51.000Z",
+  "updated_at": "2026-09-11T02:38:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "feature-extraction",
+    "arxiv:2608.27912",
+    "sentence-similarity",
+    "dense-retrieval",
+    "agentic-search",
+    "deep-research",
+    "base_model:Qwen/Qwen3-Embedding-4B",
+    "base_model:finetune:Qwen/Qwen3-Embedding-4B",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 4021774336,
+  "parameters_human": "4.02B",
+  "storage_bytes": 32185706949,
+  "storage_human": "32.2 GB",
+  "base_model": "Qwen/Qwen3-Embedding-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dane do logowania podczas konfiguracji - Dane do logowania podczas ...",
+      "url": "https://www.forum-fronius.pl/forum/topic/dane-do-logowania-podczas-konfiguracji/",
+      "snippet": "Sep 16, 2020 · Witam wszystkich, Jestem konsumentem u którego jakiś czas temu była zakładana instalacja przez zewnętrzną firmę. …"
+    },
+    {
+      "title": "Logowanie - Forum Instalatorów Falowników Fronius",
+      "url": "https://www.forum-fronius.pl/login/",
+      "snippet": "Fronius Polska Sp. z o.o., ul. Gustawa Eiffel’a 8, 44-109 Gliwice, Polska © 2006-2026 Fronius International GmbH"
+    },
+    {
+      "title": "Fronius Forum Instalatorów Falowników PV",
+      "url": "https://www.forum-fronius.pl/",
+      "snippet": "Forum Fronius – społeczność instalatorów fotowoltaiki. Wsparcie techniczne, baza wiedzy, szkolenia i aktualności branżowe. Dołącz …"
+    },
+    {
+      "title": "hasło serwisowe - hasło serwisowe - Forum Instalatorów i …",
+      "url": "https://www.forum-fronius.pl/forum/topic/haslo-serwisowe/",
+      "snippet": "Nov 24, 2019 · Miałem banalną sytuację. Może komuś się przyda.Przy zamontowaniu licznika Smart Meter chciałem na falowniku go …"
+    },
+    {
+      "title": "Webinaria – archiwum",
+      "url": "https://www.forum-fronius.pl/webinaria/",
+      "snippet": "Apr 14, 2026 · Nasze webinaria, to krótkie (30-45 min.) szkolenia, które można odtwoerzyć w zaciszu swojego domu. Wszystko na …"
+    }
+  ]
+}

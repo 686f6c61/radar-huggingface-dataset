@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "gg64537334/MiniMax-H3-Whip-LoRA",
+  "slug": "gg64537334-minimax-h3-whip-lora",
+  "author": "gg64537334",
+  "url": "https://huggingface.co/gg64537334/MiniMax-H3-Whip-LoRA",
+  "created_at": "2026-09-11T01:23:57.000Z",
+  "updated_at": "2026-09-11T01:58:51.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77601544,
+  "storage_human": "78 MB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PLEASE, - Stand Up Comedy e Spettacoli Comici in Italia",
+      "url": "https://pleasestandup.it/",
+      "snippet": "Sep 1, 2026 · Please, Stand Up! è il primo sito per cercare serate di stand-up comedy e spettacoli comici in tutta Italia. È possibile …"
+    },
+    {
+      "title": "Spettacoli di comici vicino a me - Aperto Vicino A Me 24",
+      "url": "https://apertovicinoame24.com/eventi-comici-vicino-a-me/",
+      "snippet": "Cerchi uno spettacolo comico vicino a te? Stand-up comedy, cabaret, one-man show e teatro comico — qui trovi tutti gli spettacoli di …"
+    },
+    {
+      "title": "Eventi comici vicino a me — Spettacoli di cabaret | EventiVicinoAMe",
+      "url": "https://eventivicinoame.it/comici/",
+      "snippet": "1 day ago · Trova spettacoli di comicità, stand-up comedy e cabaret vicino a te. Biglietti disponibili online."
+    },
+    {
+      "title": "Eventi vicino a me - Aperto Vicino A Me 24",
+      "url": "https://apertovicinoame24.com/trovare/eventi-vicino-a-me/",
+      "snippet": "Clicca su “Trova eventi vicino a me”, consenti la posizione e in pochi secondi vedrai tutti gli eventi disponibili nella tua zona ordinati …"
+    },
+    {
+      "title": "Spettacoli vicino a me | Eventi in programma | Teatro.it",
+      "url": "https://www.teatro.it/spettacoli/vicino-a-me",
+      "snippet": "Jun 18, 2026 · Teatro.it ti mostra gli eventi in programma nella tua zona grazie alla geolocalizzazione. Scopri spettacoli teatrali, …"
+    }
+  ]
+}

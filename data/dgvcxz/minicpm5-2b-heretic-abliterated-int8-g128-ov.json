@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dgvcxz/MiniCPM5-2B-heretic-abliterated-int8-g128-ov",
+  "slug": "dgvcxz-minicpm5-2b-heretic-abliterated-int8-g128-ov",
+  "author": "dgvcxz",
+  "url": "https://huggingface.co/dgvcxz/MiniCPM5-2B-heretic-abliterated-int8-g128-ov",
+  "created_at": "2026-09-11T10:07:54.000Z",
+  "updated_at": "2026-09-11T10:19:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "openvino",
+    "llama",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2526183165,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Forum - Metin2 Türkiye",
+      "url": "https://board.tr.metin2.gameforge.com/",
+      "snippet": "Metin2 Dışı Konular Burada açacağınız konular forum puan / post hesaplamasına dahil edilmeyecek."
+    },
+    {
+      "title": "Duyurular - Metin2 Türkiye",
+      "url": "https://board.tr.metin2.gameforge.com/index.php?board/23-duyurular/",
+      "snippet": "May 18, 2022 · Genel Duyurular Threads 72 Posts 199 199 30 Ağustos Zafer Bayramı FastFooD Aug 30th 2026"
+    },
+    {
+      "title": "Metin2 Duyurular - Turkmmo",
+      "url": "https://forum.turkmmo.com/kategori/metin2-duyurular/",
+      "snippet": "Mar 19, 2017 · Metin2 Duyurular Metin2 resmi duyuruları, metin2 bakım, yenilikler, güncellemeler 1 … 126 Sonraki Filtreler"
+    },
+    {
+      "title": "Metin2 Duyurular - Page 65",
+      "url": "https://forum.turkmmo.com/kategori/metin2-duyurular/page-65",
+      "snippet": "Mar 19, 2017 · Metin2 resmi duyuruları, metin2 bakım, yenilikler, güncellemeler"
+    },
+    {
+      "title": "Oyun Duyuruları - Metin2 Türkiye",
+      "url": "https://board.tr.metin2.gameforge.com/index.php?board/24-oyun-duyurular%C4%B1/",
+      "snippet": "Dec 28, 2019 · Metin2 Türkiye Takımı Yeni Yıldızlarını Arıyor +103 FastFooD Dec 28th 2019 Replies 1 Views 233k 1 PegasusTR Jan …"
+    }
+  ]
+}

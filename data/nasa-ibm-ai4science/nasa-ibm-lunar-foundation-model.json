@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "nasa-ibm-ai4science/NASA-IBM-Lunar-Foundation-Model",
+  "slug": "nasa-ibm-ai4science-nasa-ibm-lunar-foundation-model",
+  "author": "nasa-ibm-ai4science",
+  "url": "https://huggingface.co/nasa-ibm-ai4science/NASA-IBM-Lunar-Foundation-Model",
+  "created_at": "2026-09-01T15:49:49.000Z",
+  "updated_at": "2026-09-09T16:46:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "terratorch",
+  "languages": [],
+  "tags": [
+    "terratorch",
+    "lunar",
+    "moon",
+    "planetary-science",
+    "remote-sensing",
+    "foundation-model",
+    "multimodal",
+    "masked-token-modeling",
+    "terramind",
+    "flexivit",
+    "crater-detection",
+    "vision",
+    "image-feature-extraction",
+    "dataset:nasa-ibm-ai4science/Sombench-pretraining-data",
+    "arxiv:2504.11171",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 120,
+  "trending_score": 11,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12789820545,
+  "storage_human": "12.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NASA",
+      "url": "https://www.nasa.gov/",
+      "snippet": "2 days ago · NASA.gov brings you the latest news, images and videos from America's space agency, pioneering the future in space …"
+    },
+    {
+      "title": "NASA Live - NASA",
+      "url": "https://www.nasa.gov/live/",
+      "snippet": "1 day ago · NASA live: Follow live television broadcasts on NASA+, the agency's streaming service, and NASA's social media …"
+    },
+    {
+      "title": "National Aeronautics and Space Administration — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/National_Aeronautics_and_Space_Administration",
+      "snippet": "La première date est celle du lancement du lancement (du premier lancement s'il y a plusieurs exemplaires). Lorsqu'elle existe la …"
+    },
+    {
+      "title": "NASA - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/NASA",
+      "snippet": "NASA traces its roots to the National Advisory Committee for Aeronautics (NACA). Although Dayton, Ohio, is considered the …"
+    },
+    {
+      "title": "NASA Science",
+      "url": "https://science.nasa.gov/",
+      "snippet": "2 days ago · Claim your pixel on one of the first images from NASA’s Nancy Grace Roman Space Telescope! When Roman captures …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Montalte/qwen4b-code-nothink-random",
+  "slug": "montalte-qwen4b-code-nothink-random",
+  "author": "Montalte",
+  "url": "https://huggingface.co/Montalte/qwen4b-code-nothink-random",
+  "created_at": "2026-09-11T11:33:25.000Z",
+  "updated_at": "2026-09-11T11:39:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "merge",
+    "random",
+    "code",
+    "nothink",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:finetune:Qwen/Qwen3-4B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404730,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Russia Map | Map of Russia | Collection of Russia Maps",
+      "url": "https://www.mapsofworld.com/russia/",
+      "snippet": "Explore this Russia map to learn everything you want to know about this country."
+    },
+    {
+      "title": "Russia Map - GIS Geography",
+      "url": "https://gisgeography.com/russia-map/",
+      "snippet": "Apr 2, 2025 · This map of Russia displays cities, towns, highways, roads, lakes, and rivers. Satellite imagery and an elevation map of …"
+    },
+    {
+      "title": "Map of Russia with cities and regions — Yandex Maps",
+      "url": "https://yandex.com/maps/225/russia/",
+      "snippet": "Detailed online map of Russia with cities and regions on the website and in the Yandex Maps mobile app. Road map and driving …"
+    },
+    {
+      "title": "Large detailed map of Russia with cities and towns",
+      "url": "https://ontheworldmap.com/russia/large-detailed-map-of-russia-with-cities-and-towns.html",
+      "snippet": "This map shows cities, towns, villages, highways, main roads, secondary roads, railroads, seaports, airports, mountains, landforms, …"
+    },
+    {
+      "title": "Russia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Russia",
+      "snippet": "As the successor state of the Soviet Union, it retains its seat as a permanent member of the United Nations Security Council and is a …"
+    }
+  ]
+}

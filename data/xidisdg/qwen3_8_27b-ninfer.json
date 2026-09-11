@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "xidisdg/qwen3_8_27b-ninfer",
+  "slug": "xidisdg-qwen3_8_27b-ninfer",
+  "author": "xidisdg",
+  "url": "https://huggingface.co/xidisdg/qwen3_8_27b-ninfer",
+  "created_at": "2026-09-09T06:04:03.000Z",
+  "updated_at": "2026-09-11T02:56:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "ninfer",
+  "languages": [],
+  "tags": [
+    "ninfer",
+    "qwen3.8",
+    "nvfp4",
+    "quantized",
+    "cuda",
+    "conversational",
+    "uncensored",
+    "dflash2",
+    "text-generation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 60367685120,
+  "storage_human": "60.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office365.com/mail/login.html?authRedirect=true&bO=1",
+      "snippet": "Sign in to your Outlook account to manage emails and access Office 365 services."
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office365.com/owa/csp.qc.ca",
+      "snippet": ""
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office365.com/mail/oauthRedirect.html",
+      "snippet": "Redirecting to Outlook for email management and Office 365 services."
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office365.com/mail/oauthRedirect.html?qrcode=True",
+      "snippet": "MicrosoftのOutlookでメールアカウントにサインインし、メッセージを効率的に管理できます。"
+    }
+  ]
+}

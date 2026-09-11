@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Brt1006/pi05-marvinpro-two-red-cones",
+  "slug": "brt1006-pi05-marvinpro-two-red-cones",
+  "author": "Brt1006",
+  "url": "https://huggingface.co/Brt1006/pi05-marvinpro-two-red-cones",
+  "created_at": "2026-09-11T01:34:36.000Z",
+  "updated_at": "2026-09-11T05:09:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "openpi",
+    "pi05",
+    "robotics",
+    "vla",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19054396142,
+  "storage_human": "19.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Obsługa skrzynki e-mail w Poczcie home.pl - forum.home.pl",
+      "url": "https://forum.home.pl/forums/obsluga-skrzynki-e-mail-w-poczcie-home-pl.33/",
+      "snippet": "Obsługa skrzynki e-mail w home.pl jest bardzo prosta. Nowa Poczta home.pl pozwala na sprawdzenie skrzynki e-mail z poziomu …"
+    },
+    {
+      "title": "Poczta mobilna - aplikacja na urządzenie - forum home.pl",
+      "url": "https://forum.home.pl/threads/poczta-mobilna-aplikacja-na-urzadzenie.493/",
+      "snippet": "Nov 2, 2015 · Poczta home.pl dla urzadzen mobilnych w tej chwili jest tragiczna (brak aplikacji dla urzadzen mobilnych), Jest tylko …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/ja-jp/msoffice/forum/msoffice_word-mso_other/ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â°ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¹/d891c1c3-9a36-4f64-a125-27ed2243e629",
+      "snippet": ""
+    },
+    {
+      "title": "Poczta - Log logowań | forum home.pl",
+      "url": "https://forum.home.pl/threads/log-logowan.882/",
+      "snippet": "Poczta Log logowań Dyskusja w ' Sugestie i zgłoszenia ' rozpoczęta przez użytkownika LorK, 11 Marzec 2016."
+    },
+    {
+      "title": "Poczta - Zakładanie konta pocztowego - forum home.pl",
+      "url": "https://forum.home.pl/threads/zakladanie-konta-pocztowego-pierwsze-logowanie.1398/",
+      "snippet": "Poczta Zakładanie konta pocztowego - pierwsze logowanie Dyskusja w ' Sugestie i zgłoszenia ' rozpoczęta przez użytkownika LorK, …"
+    }
+  ]
+}

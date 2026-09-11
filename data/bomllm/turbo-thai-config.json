@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "bomllm/turbo-thai-config",
+  "slug": "bomllm-turbo-thai-config",
+  "author": "bomllm",
+  "url": "https://huggingface.co/bomllm/turbo-thai-config",
+  "created_at": "2026-09-11T10:15:46.000Z",
+  "updated_at": "2026-09-11T10:15:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "bomllm",
+  "languages": [],
+  "tags": [
+    "bomllm",
+    "thai",
+    "sampling-config",
+    "ollama",
+    "mlx",
+    "litellm",
+    "self-hosted",
+    "evaluation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 655452,
+  "storage_human": "655452 B",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FORD 6.4L/390 Valve Covers - Summit Racing",
+      "url": "https://www.summitracing.com/search/part-type/valve-covers/make/ford/engine-size/6-4l-390",
+      "snippet": "Get Valve Covers fast! Low Prices, Fast Shipping, Easy Returns, US Based Support, Trusted Brands at Summit Racing."
+    },
+    {
+      "title": "FORD 6.4L/390 FORD BIG BLOCK FE V8 GAS Valve Covers - Summit Racing",
+      "url": "https://www.summitracing.com/search/part-type/valve-covers/make/ford/engine-size/6-4l-390/engine-family/ford-big-block-fe-v8-gas",
+      "snippet": "Get Valve Covers fast! Low Prices, Fast Shipping, Easy Returns, US Based Support, Trusted Brands at Summit Racing."
+    },
+    {
+      "title": "Ford FE Engine Fabricated Valve Covers, 390-427-428 - CVF Racing",
+      "url": "https://cvfracing.com/ford-fe-engine-fabricated-valve-covers-390-427-428/",
+      "snippet": "Upgrade your engine with the Ford FE Engine Fabricated Valve Covers, 390-427-428 from CVF Racing. Built for performance, …"
+    },
+    {
+      "title": "Search - Ford Racing Parts",
+      "url": "https://performanceparts.ford.com/category/72/Valve-Covers",
+      "snippet": "FORD RACING LOGO DIE-CAST VALVE COVERS POLISHED 302-001 MSRP $235.00 FORD RACING LOGO DIE-CAST VALVE …"
+    },
+    {
+      "title": "Amazon.com: Ford 390 Valve Covers",
+      "url": "https://www.amazon.com/ford-390-valve-covers/s?k=ford+390+valve+covers",
+      "snippet": "Explore premium Ford 390 valve covers in aluminum and steel finishes. Find chrome, polished, and powder-coated options for your …"
+    }
+  ]
+}

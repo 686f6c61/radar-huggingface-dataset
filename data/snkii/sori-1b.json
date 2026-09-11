@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "snkii/Sori-1B",
+  "slug": "snkii-sori-1b",
+  "author": "snkii",
+  "url": "https://huggingface.co/snkii/Sori-1B",
+  "created_at": "2026-08-28T03:05:45.000Z",
+  "updated_at": "2026-09-11T07:59:08.000Z",
+  "license": "sori-research-license",
+  "license_family": "unknown",
+  "pipeline_tag": "audio-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "sori",
+    "feature-extraction",
+    "audio",
+    "audio-language-model",
+    "audio-understanding",
+    "python-interpreter",
+    "multiple-choice",
+    "captioning",
+    "asr",
+    "lfm2.5",
+    "distillation",
+    "audio-text-to-text",
+    "custom_code",
+    "en",
+    "base_model:LiquidAI/LFM2.5-350M-Base",
+    "base_model:merge:LiquidAI/LFM2.5-350M-Base",
+    "base_model:LiquidAI/LFM2.5-Encoder-350M",
+    "base_model:merge:LiquidAI/LFM2.5-Encoder-350M",
+    "base_model:nvidia/audio-flamingo-next-hf",
+    "base_model:merge:nvidia/audio-flamingo-next-hf",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 28,
+  "downloads_30d": 419,
+  "trending_score": 14,
+  "parameters": 932510976,
+  "parameters_human": "932.5M",
+  "storage_bytes": 3730376835,
+  "storage_human": "3.7 GB",
+  "base_model": "LiquidAI/LFM2.5-350M-Base, LiquidAI/LFM2.5-Encoder-350M, nvidia/audio-flamingo-next-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "怎么用键盘打出希腊字母啊？ - 知乎",
+      "url": "https://www.zhihu.com/question/396090207",
+      "snippet": "May 20, 2020 · 有一个不用改变设置或输入选项的简单方法。 当你的输入法在中文模式下时，直接按照希腊字母的英文拼写进行输 …"
+    },
+    {
+      "title": "在 Windows 下如何方便地打出「」和 『』 ？ - 知乎",
+      "url": "https://www.zhihu.com/question/19725435",
+      "snippet": "Jun 20, 2011 · 在 Windows 下如何方便地打出「」和 『』 ？"
+    },
+    {
+      "title": "ONET每日网站分享 - 知乎",
+      "url": "https://www.zhihu.com/column/c_1431740681349554176",
+      "snippet": "【143】纳米AI搜索-聚合多款AI的多模态搜索引擎 AI时代不懂得使用AI工具就会被时代抛弃，今天介绍一个超级实用的AI工具，ONET …"
+    },
+    {
+      "title": "你似乎来到了没有知识存在的荒原 - 知乎",
+      "url": "https://www.zhihu.com/question/1902761673925858751",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "王吉舟什么水平？ - 知乎",
+      "url": "https://www.zhihu.com/question/9610292971",
+      "snippet": "河北军队大院子弟。和翟山鹰曾经是同事。他和他老婆都是北理工毕业的。 人品怎么样不知道。但是从他刚发财就给北理工捐了200 …"
+    }
+  ]
+}

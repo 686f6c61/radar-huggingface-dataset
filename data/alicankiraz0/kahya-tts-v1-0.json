@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "AlicanKiraz0/Kahya-TTS-v1.0",
+  "slug": "alicankiraz0-kahya-tts-v1-0",
+  "author": "AlicanKiraz0",
+  "url": "https://huggingface.co/AlicanKiraz0/Kahya-TTS-v1.0",
+  "created_at": "2026-09-07T13:55:29.000Z",
+  "updated_at": "2026-09-10T20:31:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "voxcpm",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "voxcpm",
+    "safetensors",
+    "turkish",
+    "voxcpm2",
+    "merged-lora",
+    "speech-synthesis",
+    "audio",
+    "text-to-speech",
+    "tr",
+    "arxiv:2606.06928",
+    "arxiv:2509.24650",
+    "base_model:openbmb/VoxCPM2",
+    "base_model:finetune:openbmb/VoxCPM2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 16,
+  "downloads_30d": 46,
+  "trending_score": 16,
+  "parameters": 2290004544,
+  "parameters_human": "2.29B",
+  "storage_bytes": 4961275040,
+  "storage_human": "5.0 GB",
+  "base_model": "openbmb/VoxCPM2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Is Whatsapp web down? - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5538738",
+      "snippet": "Sep 8, 2025 · Cannot link my device now."
+    },
+    {
+      "title": "those use ipon watsapp web browser - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5556449",
+      "snippet": "Feb 27, 2026 · Outline · [ Standard ] · Linear+ those use ipon watsapp web browser, whatsapp server down"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/en-us/musicandvideo/forum/all/how-this-happens/c38f846c-a17b-4f87-a8ba-b25589695dae",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/zh-hans/windows/forum/all/ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â½ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â½win8ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚ÂºÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â´ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°/d8c51abf-b863-4da3-9596-797deace59f7",
+      "snippet": ""
+    },
+    {
+      "title": "[found sos] cant login whatsapp browser - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5556445",
+      "snippet": "Feb 27, 2026 · i mainly uses whatsapp for business purposes via my iphone and company browser like firefox or edge"
+    }
+  ]
+}

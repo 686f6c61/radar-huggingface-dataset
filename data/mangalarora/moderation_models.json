@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mangalarora/moderation_models",
+  "slug": "mangalarora-moderation_models",
+  "author": "mangalarora",
+  "url": "https://huggingface.co/mangalarora/moderation_models",
+  "created_at": "2026-09-11T10:07:52.000Z",
+  "updated_at": "2026-09-11T10:07:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+      "url": "https://www.speedtest.net/",
+      "snippet": "Use Speedtest on all your devices with our free desktop and mobile apps."
+    },
+    {
+      "title": "Speedtest: Internetgeschwindigkeit prüfen - Magenta",
+      "url": "https://www.magenta.at/internet/speedtest",
+      "snippet": "Magenta bietet verschiedene Technologien für Internet zuhause. Welche davon an Ihrem Standort verfügbar ist, hängt von Ihrer …"
+    },
+    {
+      "title": "Speedtest von Ookla - Der umfassende Breitband-Geschwindigkeitstest",
+      "url": "https://www.speedtest.net/de",
+      "snippet": "Nutzen Sie Speedtest mit unseren kostenlosen Desktop- und Handy-Apps auf allen Ihren Geräten."
+    },
+    {
+      "title": "Internet Speedtest | A1.net",
+      "url": "https://www.a1.net/internet-speedtest",
+      "snippet": "Testen Sie Ihre aktuelle Internet-Geschwindigkeit. Mit einem Klick Download- & Upload-Speed, sowie Ping überprüfen."
+    },
+    {
+      "title": "Internet Speed Test - Internet Geschwindigkeit Test",
+      "url": "https://internetspeedtest.at/",
+      "snippet": "Dieser Internet Speed Test misst Ihre Verbindung in Echtzeit und zeigt transparente Ergebnisse für Download, Upload und Ping an. …"
+    }
+  ]
+}

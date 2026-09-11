@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "XiaomiRobotics/Xiaomi-Robotics-U0-4B",
+  "slug": "xiaomirobotics-xiaomi-robotics-u0-4b",
+  "author": "XiaomiRobotics",
+  "url": "https://huggingface.co/XiaomiRobotics/Xiaomi-Robotics-U0-4B",
+  "created_at": "2026-09-08T10:06:20.000Z",
+  "updated_at": "2026-09-09T12:33:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "UNIS",
+    "robotics",
+    "multimodal",
+    "image-generation",
+    "image-text-to-image",
+    "custom_code",
+    "arxiv:2607.11643",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 30,
+  "trending_score": 9,
+  "parameters": 5082093056,
+  "parameters_human": "5.08B",
+  "storage_bytes": 10169496708,
+  "storage_human": "10.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "I am new on here, Any tips/things I should know about",
+      "url": "https://www.reddit.com/r/JanitorAI_Official/comments/1cohveh/i_am_new_on_here_any_tipsthings_i_should_know/",
+      "snippet": "May 10, 2024 · The janitor llm is the default and works just fine for most users, but you can look into other llm options if you want …"
+    },
+    {
+      "title": "How to easily write your chat memory : r/JanitorAI_Official",
+      "url": "https://www.reddit.com/r/JanitorAI_Official/comments/1bt75df/how_to_easily_write_your_chat_memory/",
+      "snippet": "135 votes, 21 comments. true Yes chat memory is considered permanent tokens. It’s recommended to get rid of the really old stuff if …"
+    },
+    {
+      "title": "AI pic generator : r/JanitorAI_Official - Reddit",
+      "url": "https://www.reddit.com/r/JanitorAI_Official/comments/19b1w7e/ai_pic_generator/",
+      "snippet": "Jan 20, 2024 · So, I'm trying to make my own OCs, can any of you suggest me website or good app for AI pic generator? Sure can …"
+    },
+    {
+      "title": "Divine’s huge list of custom prompts! : r/JanitorAI_Official",
+      "url": "https://www.reddit.com/r/JanitorAI_Official/comments/1b08ndq/divines_huge_list_of_custom_prompts/",
+      "snippet": "Feb 26, 2024 · true I’ve seen people struggle with making, or the jllm’s site itself not having specific prompts that people may want, so …"
+    },
+    {
+      "title": "Reddit - The heart of the internet",
+      "url": "https://www.reddit.com/r/CharacterAIrunaways/comments/1fkxqqk/is_janitorai_good/",
+      "snippet": "Customization: Janitor.AI allows for the creation of custom characters and personas, providing a personalized experience. \"You can …"
+    }
+  ]
+}

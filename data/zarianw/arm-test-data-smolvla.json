@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "zarianw/arm-test-data-smolvla",
+  "slug": "zarianw-arm-test-data-smolvla",
+  "author": "zarianw",
+  "url": "https://huggingface.co/zarianw/arm-test-data-smolvla",
+  "created_at": "2026-09-11T01:41:15.000Z",
+  "updated_at": "2026-09-11T01:47:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:zarianw/arm-test-data_20260906_154504",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906727744,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google マップでマイマップを表示する",
+      "url": "https://support.google.com/maps/answer/3045850?hl=ja&co=genie.platform%3Ddesktop",
+      "snippet": "Google マップでマイマップを表示できます。 マイマップを使うと、自分用にカスタマイズした地図を作成、編集してオンラインで …"
+    },
+    {
+      "title": "Google Maps - Reddit",
+      "url": "https://www.reddit.com/r/GoogleMaps/",
+      "snippet": "r/GoogleMaps is participating in ongoing protests regarding changes to Reddit's API accessibility. The subreddit may reopen at some …"
+    },
+    {
+      "title": "Obtener indicaciones y mostrar rutas en Google Maps",
+      "url": "https://support.google.com/maps/answer/144339?hl=es&co=GENIE.Platform%3DDesktop",
+      "snippet": "Con Google Maps, puedes obtener indicaciones para ir a un sitio en coche, en transporte público, a pie, en transporte compartido, en …"
+    },
+    {
+      "title": "How to Display Multiple Google Maps per page with API V3",
+      "url": "https://stackoverflow.com/questions/4074520/how-to-display-multiple-google-maps-per-page-with-api-v3",
+      "snippet": "Nov 2, 2010 · OP wanted two specific maps, but if you'd like to have a dynamic number of maps on one page (for instance a list of …"
+    },
+    {
+      "title": "Create Google Maps links based on coordinates - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/30544268/create-google-maps-links-based-on-coordinates",
+      "snippet": "Jan 21, 2024 · The currently accepted answer ends up adding an additional history entry in browsers at the moment as Google Maps …"
+    }
+  ]
+}

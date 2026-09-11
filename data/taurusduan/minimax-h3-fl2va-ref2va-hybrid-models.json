@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "taurusduan/Minimax-H3-fl2va-ref2va-hybrid-models",
+  "slug": "taurusduan-minimax-h3-fl2va-ref2va-hybrid-models",
+  "author": "taurusduan",
+  "url": "https://huggingface.co/taurusduan/Minimax-H3-fl2va-ref2va-hybrid-models",
+  "created_at": "2026-09-11T02:11:48.000Z",
+  "updated_at": "2026-09-11T02:11:48.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "video-generation",
+    "text-to-video",
+    "image-to-video",
+    "audio-video-generation",
+    "diffusion-transformer",
+    "merge",
+    "hybrid",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83881518528,
+  "storage_human": "83.9 GB",
+  "base_model": "MiniMax-H3-fl2va, MiniMax-H3-ref2va",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Trans World's favorites - Flickr",
+      "url": "https://www.flickr.com/photos/138851644@N03/favorites/",
+      "snippet": "Explore Trans World’s 5,521 favorites on Flickr!"
+    },
+    {
+      "title": "transwomen photos on Flickr",
+      "url": "https://www.flickr.com/photos/tags/transwomen/",
+      "snippet": "Flickr photos, groups, and tags related to the \"transwomen\" Flickr tag."
+    },
+    {
+      "title": "Bailey Wilde - Flickr",
+      "url": "https://www.flickr.com/photos/195510540@N02/",
+      "snippet": "VERY HOT Blonde Crossdresser by Bailey Wilde Crossdresser Makeover Transformation Into Woman by Girlfriend by Bailey Wilde …"
+    },
+    {
+      "title": "Bailey Wilde’s favorites | Flickr",
+      "url": "https://www.flickr.com/photos/195510540@N02/favorites",
+      "snippet": "Bailey Wilde doesn’t have any favorites yet. Stay tuned. This site uses cookies to improve your experience and to help show content …"
+    },
+    {
+      "title": "Cross-dresser | Flickr",
+      "url": "https://api.flickr.com/groups/crossdressers/pool/",
+      "snippet": "2 days ago · Welcome to Crossdresser. This group is to celebrate the lifestyle and hobbies of trans culture and crossdressing. Be …"
+    }
+  ]
+}

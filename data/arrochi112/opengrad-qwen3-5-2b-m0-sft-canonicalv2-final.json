@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "arrochi112/OpenGrad-Qwen3.5-2B-M0-SFT-CanonicalV2-Final",
+  "slug": "arrochi112-opengrad-qwen3-5-2b-m0-sft-canonicalv2-final",
+  "author": "arrochi112",
+  "url": "https://huggingface.co/arrochi112/OpenGrad-Qwen3.5-2B-M0-SFT-CanonicalV2-Final",
+  "created_at": "2026-09-11T09:12:29.000Z",
+  "updated_at": "2026-09-11T09:25:22.000Z",
+  "license": "composite-per-source",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "tool-calling",
+    "function-calling",
+    "supervised-fine-tuning",
+    "qwen3.5",
+    "opengrad",
+    "conversational",
+    "dataset:arrochi112/OpenGrad-ToolPolicy-Canonical-v2",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 3783681373,
+  "storage_human": "3.8 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ASB Hamburg | ARBEITER-SAMARITER-BUND Hamburg",
+      "url": "https://www.asb-hamburg.de/",
+      "snippet": "Der Arbeiter-Samariter-Bund Hamburg bietet vielfältige Dienstleistungen rund um Kinder und Jugend, Senioren und Pflege, …"
+    },
+    {
+      "title": "ASB-Hausnotruf | ARBEITER-SAMARITER-BUND Hamburg",
+      "url": "https://www.asb-hamburg.de/unsere-angebote/senioren-pflege/asb-hausnotruf/",
+      "snippet": "Der Arbeiter-Samariter-Bund (ASB) bietet seit über 25 Jahren Hausnotrufsysteme in Hamburg an. Per Knopfdruck erreichen Sie …"
+    },
+    {
+      "title": "Hausnotruf | Arbeiter-Samariter Bund Hamburg - Karriereportal",
+      "url": "https://jobs.asb-hamburg.de/arbeitsbereiche/hausnotruf/",
+      "snippet": "Die Abteilung Hausnotruf ermöglicht älteren oder hilfsbedürftigen Menschen ein sicheres und selbstbestimmtes Leben in den eigenen …"
+    },
+    {
+      "title": "Offene Stellen | Arbeiter-Samariter Bund Hamburg - Karriereportal",
+      "url": "https://jobs.asb-hamburg.de/offene-stellen/",
+      "snippet": "Deine Zukunft beim ASB Hamburg Mach den nächsten Schritt mit uns – hier findest du unsere aktuellen Stellen"
+    },
+    {
+      "title": "Online Spenden | ARBEITER-SAMARITER-BUND Hamburg",
+      "url": "https://spenden.asb-hamburg.de/",
+      "snippet": "ONLINE SPENDEN Spenden Sie jetzt online, um die Projekte und Angebote des ASB Hamburg zu unterstützen. Sie können mit …"
+    }
+  ]
+}

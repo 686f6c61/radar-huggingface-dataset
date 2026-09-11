@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "munzurul/speaklar_gemma-3-1b-it",
+  "slug": "munzurul-speaklar_gemma-3-1b-it",
+  "author": "munzurul",
+  "url": "https://huggingface.co/munzurul/speaklar_gemma-3-1b-it",
+  "created_at": "2026-09-11T09:50:30.000Z",
+  "updated_at": "2026-09-11T09:55:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "bn",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "bengali",
+    "voicebot",
+    "grounded-generation",
+    "customer-support",
+    "conversational",
+    "bn",
+    "en",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 999885952,
+  "parameters_human": "999.9M",
+  "storage_bytes": 2033195431,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/auth/?locale=de-DE",
+      "snippet": "Nutze ChatGPT, um Fragen zu beantworten, Texte zu verfassen, Bilder zu erstellen, Aufgaben zu erledigen und zu coden – alles an …"
+    },
+    {
+      "title": "Introducing ChatGPT - OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    },
+    {
+      "title": "ChatGPT ist da | OpenAI",
+      "url": "https://openai.com/de-DE/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · ChatGPT ist eine Weiterentwicklung eines Modells der GPT‑3.5‑Serie, deren Training wir Anfang 2022 …"
+    },
+    {
+      "title": "ChatGPT Deutsch",
+      "url": "https://chatai.de/",
+      "snippet": "Alles über ChatGPT Diese Seite bietet Informationen rund um ChatGPT sowie kostenlosen Zugriff auf aktuelle GPT-Modelle von …"
+    }
+  ]
+}

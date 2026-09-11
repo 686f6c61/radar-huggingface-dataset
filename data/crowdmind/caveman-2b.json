@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "CrowdMind/Caveman-2B",
+  "slug": "crowdmind-caveman-2b",
+  "author": "CrowdMind",
+  "url": "https://huggingface.co/CrowdMind/Caveman-2B",
+  "created_at": "2026-09-11T02:21:57.000Z",
+  "updated_at": "2026-09-11T02:28:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2274069824,
+  "parameters_human": "2.27B",
+  "storage_bytes": 4568210831,
+  "storage_human": "4.6 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Richterlicher Beschluss bei Demenz: Unterbringung",
+      "url": "https://www.juraforum.de/lexikon/richterlicher-beschluss-geschlossene-unterbringung-demenz",
+      "snippet": "Jul 31, 2026 · § 1831 Abs. 1 Satz 1 Nr. 1 BGB erlaubt die Unterbringung, wenn die Gefahr besteht, dass die betreute Person sich …"
+    },
+    {
+      "title": "§ 1831 BGB - Freiheitsentziehende Unterbringung und ...",
+      "url": "https://www.juraforum.de/gesetze/bgb/1831-freiheitsentziehende-unterbringung-und-freiheitsentziehende-massnahmen",
+      "snippet": "Lesen Sie § 1831 BGB kostenlos in der Gesetzessammlung von Juraforum.de mit über 6200 Gesetzen und Vorschriften."
+    },
+    {
+      "title": "️ Richtervorbehalt - Definition & Bedeutung - JuraForum.de",
+      "url": "https://www.juraforum.de/lexikon/richtervorbehalt",
+      "snippet": "Mar 1, 2026 · Der Richtervorbehalt ist eine Regelung im deutschen Recht, die besagt, dass bestimmte Maßnahmen, insbesondere …"
+    },
+    {
+      "title": "Unverzüglich - Definition und Bedeutung nach BGB? Beispiele",
+      "url": "https://www.juraforum.de/lexikon/unverzueglich",
+      "snippet": "May 29, 2026 · Unverzüglich bedeutet juristisch „ohne schuldhaftes Zögern“ , vgl. § 121 Abs. 1 S. 1 BGB. Allerdings gilt dieser …"
+    },
+    {
+      "title": "§ 1827 BGB - Patientenverfügung; Behandlungswünsche oder …",
+      "url": "https://www.juraforum.de/gesetze/bgb/1827-patientenverfuegung-behandlungswuensche-oder-mutmasslicher-wille-des-betreuten",
+      "snippet": "Gesetzliche Regelung Abs.1: Wirksamkeits- und Geltungsauftrag — Betreuer hat festgestellte zutreffende Patientenverfügung …"
+    }
+  ]
+}

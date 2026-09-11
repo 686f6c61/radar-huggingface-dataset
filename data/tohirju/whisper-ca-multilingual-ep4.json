@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Tohirju/whisper-ca-multilingual-ep4",
+  "slug": "tohirju-whisper-ca-multilingual-ep4",
+  "author": "Tohirju",
+  "url": "https://huggingface.co/Tohirju/whisper-ca-multilingual-ep4",
+  "created_at": "2026-08-07T10:56:25.000Z",
+  "updated_at": "2026-09-11T02:31:49.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543490560,
+  "parameters_human": "1.54B",
+  "storage_bytes": 6174112072,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Job Search - Find 138,562 UK jobs on CV-Library",
+      "url": "https://www.cv-library.co.uk/?msockid=23c8bc7a328e6be02cf1abab333f6aef",
+      "snippet": "Start your job search with 138,562 live UK vacancies on award-winning CV-Library. Register your CV and find local jobs near you today!"
+    },
+    {
+      "title": "Client Login - CV-Library.co.uk - CV-Library.co.uk - UK jobs, Careers ...",
+      "url": "https://www.cv-library.co.uk/recruiter/login?msockid=23c8bc7a328e6be02cf1abab333f6aef",
+      "snippet": "Join great companies like these, who already trust CV-Library:"
+    },
+    {
+      "title": "Candidate Login | CV-Library",
+      "url": "https://www.cv-library.co.uk/login?msockid=23c8bc7a328e6be02cf1abab333f6aef",
+      "snippet": "Login to your CV-Library account. Don't have an Account? Register now to start applying for jobs!"
+    },
+    {
+      "title": "Search 81199 Jobs Across 100 Industries On CV Library",
+      "url": "https://www.cv-library.co.uk/search-jobs?msockid=23c8bc7a328e6be02cf1abab333f6aef",
+      "snippet": "Search & apply to over 81199 jobs available on CV Library, covering over 100 industries - find your perfect role today."
+    },
+    {
+      "title": "CV Database - The UK's most trusted database | CV-Library",
+      "url": "https://www.cv-library.co.uk/cvdatabase?msockid=23c8bc7a328e6be02cf1abab333f6aef",
+      "snippet": "When using CV-Library's CV Database, start with the exact skills, job titles, locations or qualifications you need. Then refine your …"
+    }
+  ]
+}

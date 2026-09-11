@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "chenhaodev/tcm-constitution-qwen3-8b-gguf",
+  "slug": "chenhaodev-tcm-constitution-qwen3-8b-gguf",
+  "author": "chenhaodev",
+  "url": "https://huggingface.co/chenhaodev/tcm-constitution-qwen3-8b-gguf",
+  "created_at": "2026-09-11T02:22:40.000Z",
+  "updated_at": "2026-09-11T02:56:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "tcm",
+    "chinese-medicine",
+    "medical",
+    "constitution",
+    "ollama",
+    "zh",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:quantized:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 19588415328,
+  "storage_human": "19.6 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Chrome – Download the fast, secure browser from Google",
+      "url": "https://www.google.com/intl/en_uk/chrome/",
+      "snippet": "Get more done with the new Google Chrome. A more simple, secure and faster web browser than ever, with Google’s smarts built in. …"
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://classroom.google.com/",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode"
+    },
+    {
+      "title": "Accedi - Google Drive",
+      "url": "https://drive.google.com/drive/my-drive?hl=it",
+      "snippet": "Accedi a Google Drive con un Account Google (per uso personale) o un account Google Workspace (per uso professionale)."
+    },
+    {
+      "title": "Android Apps on Google Play",
+      "url": "https://play.google.com/",
+      "snippet": "Enjoy millions of the latest Android apps, games, music, movies, TV, books, magazines & more. Anytime, anywhere, across your …"
+    },
+    {
+      "title": "Acceso: Cuentas de Google",
+      "url": "https://accounts.google.com/login?hl=es-419",
+      "snippet": "¿Esta no es tu computadora? Usa una ventana de navegación privada para acceder. Más información para usar el modo de invitado …"
+    }
+  ]
+}

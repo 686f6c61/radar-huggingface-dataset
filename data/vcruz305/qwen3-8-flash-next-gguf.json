@@ -5,7 +5,7 @@
   "author": "vcruz305",
   "url": "https://huggingface.co/vcruz305/Qwen3.8-Flash-Next-GGUF",
   "created_at": "2026-08-25T20:59:47.000Z",
-  "updated_at": "2026-08-27T18:50:33.000Z",
+  "updated_at": "2026-09-10T11:15:08.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 3145,
+  "downloads_30d": 3406,
   "trending_score": 0,
   "parameters": 51200245760,
   "parameters_human": "51.20B",
-  "storage_bytes": 739988654208,
-  "storage_human": "740.0 GB",
+  "storage_bytes": 762732888608,
+  "storage_human": "762.7 GB",
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"

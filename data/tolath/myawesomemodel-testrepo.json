@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "tolath/MyAwesomeModel-TestRepo",
+  "slug": "tolath-myawesomemodel-testrepo",
+  "author": "tolath",
+  "url": "https://huggingface.co/tolath/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-11T09:56:42.000Z",
+  "updated_at": "2026-09-11T09:57:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iLovePDF | Online PDF tools for PDF lovers",
+      "url": "https://www.ilovepdf.com/",
+      "snippet": "iLovePDF is an online service to work with PDF files completely free and easy to use. Merge PDF, split PDF, compress PDF, office to …"
+    },
+    {
+      "title": "iLovePDF | Free PDF Tools",
+      "url": "https://www.ilovepdf.io/",
+      "snippet": "Yes, everyday PDF edits can be done without Adobe Acrobat. iLovePDF handles browser-based text updates, signing, compression, …"
+    },
+    {
+      "title": "Merge PDF files online. Free service to merge PDF - iLovePDF",
+      "url": "https://www.ilovepdf.com/merge_pdf",
+      "snippet": "Merge & combine PDF files online, easily and free."
+    },
+    {
+      "title": "iLovePDF: Free Online PDF Tools to Edit & Convert Fast",
+      "url": "https://ilovepdf.org/",
+      "snippet": "Every PDF tool you need, free and fast. Built for office workers, students, and busy pros. Edit and convert PDFs right in your browser. …"
+    },
+    {
+      "title": "iLovePDF: Free PDF Converter & Online Tools | Edit, Compress, Merge …",
+      "url": "https://www.ilovepdf.com.cn/en/",
+      "snippet": "Convert PDF to Office, images, video, and audio formats. Compress, merge, and split PDFs with ease. No installation needed."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dongsdasda/456MODEL_ID",
+  "slug": "dongsdasda-456model_id",
+  "author": "dongsdasda",
+  "url": "https://huggingface.co/dongsdasda/456MODEL_ID",
+  "created_at": "2026-09-11T01:52:54.000Z",
+  "updated_at": "2026-09-11T01:56:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852739136,
+  "parameters_human": "852.7M",
+  "storage_bytes": 1725526193,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fazer login no Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=pt-br&co=GENIE.Platform%3DDesktop",
+      "snippet": "Fazer login No seu computador, acesse gmail.com. Insira seu número de telefone ou e-mail da Conta do Google e a senha. Se as …"
+    },
+    {
+      "title": "Accedere a Gmail - Computer - Guida di Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=it&co=GENIE.Platform%3DDesktop",
+      "snippet": "Accedere a Gmail Per aprire Gmail, puoi accedere da un computer o aggiungere il tuo account all'app Gmail sul tuo telefono o tablet. …"
+    },
+    {
+      "title": "Can't sign into Gmail on new iPhone - Apple Community",
+      "url": "https://discussions.apple.com/thread/255403865",
+      "snippet": "May 10, 2024 · Hi i have an issue regarding my gmail account I recently changed my iphone and sold my previous phone also i make …"
+    },
+    {
+      "title": "Gmail login prompt on youtube app - Apple Community",
+      "url": "https://discussions.apple.com/thread/254817395",
+      "snippet": "Apr 25, 2023 · Gmail login prompt on youtube app I am trying to login gmail on my PC and there for login gmail is saying that we …"
+    },
+    {
+      "title": "How do I install the gmail app on my windows 11 pc laptop?",
+      "url": "https://support.google.com/mail/thread/214976549/how-do-i-install-the-gmail-app-on-my-windows-11-pc-laptop?hl=en",
+      "snippet": "May 10, 2023 · Step 2. Next, you will have to name your shortcut. Make sure you have the option Open as window checked, then …"
+    }
+  ]
+}

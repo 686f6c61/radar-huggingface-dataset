@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen2.5-Coder-1.5B-Instruct-heretic-i1-GGUF",
+  "slug": "mradermacher-qwen2-5-coder-1-5b-instruct-heretic-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2.5-Coder-1.5B-Instruct-heretic-i1-GGUF",
+  "created_at": "2026-09-11T09:44:24.000Z",
+  "updated_at": "2026-09-11T10:04:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "code",
+    "codeqwen",
+    "chat",
+    "qwen",
+    "qwen-coder",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "roleplay",
+    "local-llm",
+    "consumer-gpu",
+    "coding",
+    "en",
+    "base_model:saidutta69/Qwen2.5-Coder-1.5B-Instruct-heretic",
+    "base_model:quantized:saidutta69/Qwen2.5-Coder-1.5B-Instruct-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 19059901408,
+  "storage_human": "19.1 GB",
+  "base_model": "saidutta69/Qwen2.5-Coder-1.5B-Instruct-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wie viel Gramm hat ein Buttercroissant? - faq.de",
+      "url": "https://www.faq.de/frage/Wie-viel-Gramm-hat-ein-Buttercroissant",
+      "snippet": "Wie viel Gramm hat ein Buttercroissant? Ein Buttercroissant wiegt in der Regel zwischen 50 und 100 Gramm, je nach Größe und …"
+    },
+    {
+      "title": "Dienstleistung ♥ BackWerk",
+      "url": "https://www.back-werk.de/de/sortiment/butter-croissant-525?lang=de",
+      "snippet": "Feel Good Food – BackWerk ist der grösste Back-Gastronom Deutschlands. Das Unternehmen zeichnet sich durch ein frisches und …"
+    },
+    {
+      "title": "Bäckerei Zöttl – Buttercroissant",
+      "url": "https://zoettl.de/produkt/buttercroissant/",
+      "snippet": "Wir lieben Vielseitigkeit. Damit ihr in unserem großen Angebot auch garantiert online das Produkt findet, das wirklich zu euch passt, …"
+    },
+    {
+      "title": "Buttercroissant - Bäcker Steiskal",
+      "url": "https://www.baecker-steiskal.de/produkt/buttercroissant/",
+      "snippet": "Die mit großer Sorgfalt eingearbeiteten dünnen Butterschichten verleihen dem Buttercroissant eine unverwechselbare saftig-buttrige …"
+    },
+    {
+      "title": "Wie viel Gramm hat ein Croissant? - fragr",
+      "url": "https://www.fragr.de/essen-und-trinken/wieviel-gramm-hat-ein-croissant/",
+      "snippet": "Jun 13, 2008 · Wie viel Gramm hat ein Croissant? Ein durchschnittlicher Buttercroissant hat einen Gewicht von 75 Gramm und hat …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "thuyduongjoe123/checkpoints_en_my_logit",
+  "slug": "thuyduongjoe123-checkpoints_en_my_logit",
+  "author": "thuyduongjoe123",
+  "url": "https://huggingface.co/thuyduongjoe123/checkpoints_en_my_logit",
+  "created_at": "2026-09-11T09:08:24.000Z",
+  "updated_at": "2026-09-11T09:08:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452608526,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Daily Horoscopes - Astrology Answers",
+      "url": "https://www.astrologyanswers.com/horoscopes/",
+      "snippet": "Read your sign's free horoscope today! Use these expert astrology predictions for your day, week, and month. What does your daily …"
+    },
+    {
+      "title": "Read Your Daily Horoscope! | Astrology Answers",
+      "url": "https://www.astrologyanswers.com/",
+      "snippet": "Read Astrology Answers' online daily horoscopes for your zodiac sign, Tarot readings, article content, Chinese astrology, …"
+    },
+    {
+      "title": "如何评价Gemini的新UI? - 知乎",
+      "url": "https://www.zhihu.com/question/2040443986943424303",
+      "snippet": "May 20, 2026 · 如何评价Gemini的新UI? Google把这次的设计语言称作“Neural Expressive”（神经表达），整体感觉就是把那个让人有 …"
+    },
+    {
+      "title": "谷歌推出 Gemini 3.7 Flash，有哪些亮点和创新？ - 知乎",
+      "url": "https://www.zhihu.com/question/2071408739723302257",
+      "snippet": "谷歌再次加快Gemini模型迭代。美东时间13日周四，谷歌宣布推出Gemini 3.7 Flash，主打编程、智能体（Agen…"
+    },
+    {
+      "title": "NLP 大模型与 CV 大模型的 “大”：同源而殊途的技术范式-云社区-华为云",
+      "url": "https://bbs.huaweicloud.com/blogs/455174",
+      "snippet": "Jun 27, 2025 · 随着多模态大模型（如 GPT-4V、Gemini）的发展，两者正走向技术融合 —— 例如，用语言模型的逻辑推理能力增强 …"
+    }
+  ]
+}

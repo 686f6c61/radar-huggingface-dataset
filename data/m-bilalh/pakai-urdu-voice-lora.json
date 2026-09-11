@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "M-BilalH/pakai-urdu-voice-lora",
+  "slug": "m-bilalh-pakai-urdu-voice-lora",
+  "author": "M-BilalH",
+  "url": "https://huggingface.co/M-BilalH/pakai-urdu-voice-lora",
+  "created_at": "2026-09-11T09:39:18.000Z",
+  "updated_at": "2026-09-11T09:43:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172955358,
+  "storage_human": "173 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "M.Paris mobilier, décoration d'intérieur et tapis berbères à Paris",
+      "url": "https://mparis.com/fr/",
+      "snippet": "Objets de décoration d'intérieur, linge de lit, meubles, vaisselle et tapis berbères marocains beniouarain de geraldinefromlabutte. …"
+    },
+    {
+      "title": "M6+: émissions et séries en replay et en streaming",
+      "url": "https://www.m6.fr/",
+      "snippet": "Divertissement, séries, séries-réalité, cinéma, podcasts,... retrouvez tous vos programmes en replay et en streaming"
+    },
+    {
+      "title": "M6 Replay: émissions et séries en replay et en streaming sur M6+",
+      "url": "https://www.m6.fr/m6",
+      "snippet": "Regardez vos émissions et séries préférées en replay ou en direct sur M6+."
+    },
+    {
+      "title": "Accueil | MParis",
+      "url": "https://www.m-paris.com/",
+      "snippet": "En 2005, la Maison Marbella invente le Bijou de Peau d'exception. Chaque pièce est conçue minutieusement à la main dans ses …"
+    },
+    {
+      "title": "M.Paris boutique de décoration, mobilier & tapis berbères tissés main",
+      "url": "https://mparis.com/fr/2-accueil",
+      "snippet": "M.Paris boutique de déco, mobilier, linge de maison, tapis berbères & autres fondée par Geraldinefromlabutte, M.11bis rue Mansart, …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "djdeniro",
   "url": "https://huggingface.co/djdeniro/GLM-5.3-Flash-RFA-RFI8-8xR9700",
   "created_at": "2026-09-01T07:45:28.000Z",
-  "updated_at": "2026-09-01T10:57:15.000Z",
+  "updated_at": "2026-09-10T06:51:26.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -39,7 +39,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 41,
+  "downloads_30d": 46,
   "trending_score": 0,
   "parameters": 169221846206,
   "parameters_human": "169.22B",

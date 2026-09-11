@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Chaitu515/Ace-Step1.5",
+  "slug": "chaitu515-ace-step1-5",
+  "author": "Chaitu515",
+  "url": "https://huggingface.co/Chaitu515/Ace-Step1.5",
+  "created_at": "2026-09-11T02:01:30.000Z",
+  "updated_at": "2026-09-11T02:01:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "diffusers",
+    "safetensors",
+    "acestep",
+    "feature-extraction",
+    "audio",
+    "music",
+    "text2music",
+    "text-to-audio",
+    "custom_code",
+    "arxiv:2602.00744",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10079024720,
+  "storage_human": "10.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cloudbeds Log in - Sign-in to Your Cloudbeds Account",
+      "url": "https://www.cloudbeds.com/sign-in/",
+      "snippet": "Log in to your Cloudbeds platform account to manage operations, channel connections, guest communication, and more."
+    },
+    {
+      "title": "Log In - Cloudbeds",
+      "url": "http://signin.cloudbeds.com/",
+      "snippet": "Click here to log in to your account at Cloudbeds, the industry's only unified platform that delivers 360-value across your entire property."
+    },
+    {
+      "title": "Cloudbeds - powered by Signals",
+      "url": "https://crm.cloudbeds.com/",
+      "snippet": "Cloudbeds offers a unified platform for managing properties, providing tools for authentication, housekeeping, and account access to …"
+    },
+    {
+      "title": "Cloudbeds",
+      "url": "https://auth.cloudbeds.com/okta/signin/session",
+      "snippet": "Please try signing in again."
+    },
+    {
+      "title": "Simplify your payments with Cloudbeds Payments",
+      "url": "https://hotels.cloudbeds.com/aha_auth/login?state=74502ec459520959fd2c266b2f2949e0-6921766242462941460&return_to=%2Fideas%2Fnew",
+      "snippet": "Log in to your account Email By clicking \"Log in\" you confirm that you accept the Terms of Service"
+    }
+  ]
+}

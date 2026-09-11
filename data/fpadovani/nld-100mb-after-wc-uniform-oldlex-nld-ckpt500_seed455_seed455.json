@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/nld-100mb-after-wc-uniform-oldlex-nld-ckpt500_seed455_seed455",
+  "slug": "fpadovani-nld-100mb-after-wc-uniform-oldlex-nld-ckpt500_seed455_seed455",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/nld-100mb-after-wc-uniform-oldlex-nld-ckpt500_seed455_seed455",
+  "created_at": "2026-09-11T11:28:28.000Z",
+  "updated_at": "2026-09-11T11:53:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:fpadovani/ppt-wc-uniform-oldlex-nld-100mb_seed455",
+    "base_model:finetune:fpadovani/ppt-wc-uniform-oldlex-nld-100mb_seed455",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 1748164301,
+  "storage_human": "1.7 GB",
+  "base_model": "fpadovani/ppt-wc-uniform-oldlex-nld-100mb_seed455",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adidas NMD Sneaker (2026) zum Bestpreis | idealo.de",
+      "url": "https://www.idealo.de/preisvergleich/ProductCategory/18817F9963256.html?msockid=00be34dcadc8698d100d230dace4689f",
+      "snippet": "Adidas NMD Sneaker Preise vergleichen und günstig kaufen bei idealo.de 169 Produkte Große Auswahl an Marken Bewertungen & …"
+    },
+    {
+      "title": "adidas NMD | Foot Locker Germany",
+      "url": "https://www.footlocker.de/de/category/collection/adidas/nmd.html",
+      "snippet": "Mit seiner smarten Mischung aus diversen Formen und Materialien steht der adidas NMD für Innovation wie kein anderer Sneaker. …"
+    },
+    {
+      "title": "NDM - SNEAKERS | ADIDAS DE",
+      "url": "https://www.adidas.de/nmd-sneakers?msockid=00be34dcadc8698d100d230dace4689f",
+      "snippet": "Finde deine adidas Produkte in der Kategorie: NDM - Sneakers. Diese und viele andere Produkte sind heute im adidas Online Shop …"
+    },
+    {
+      "title": "Adidas Nmd online | Schuhe - Zalando",
+      "url": "https://www.zalando.de/schuhe/?q=adidas+nmd",
+      "snippet": "Der NMD gibt es in vielen verschiedenen Varianten, sodass für jeden Geschmack etwas dabei ist. Der NMD_R1 ist das klassische …"
+    },
+    {
+      "title": "adidas NMD_S1 Schuh - Weiß | adidas Deutschland",
+      "url": "https://www.adidas.de/nmd_s1-schuh/GW4652.html?msockid=00be34dcadc8698d100d230dace4689f",
+      "snippet": "Dieser adidas Schuh garantiert dir sicheren Halt und ein ultrabequemes Tragegefühl. Das sockenähnliche Obermaterial umschließt …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "coding-zzz-oe/empathy-strategy-classifier",
+  "slug": "coding-zzz-oe-empathy-strategy-classifier",
+  "author": "coding-zzz-oe",
+  "url": "https://huggingface.co/coding-zzz-oe/empathy-strategy-classifier",
+  "created_at": "2026-09-11T02:18:16.000Z",
+  "updated_at": "2026-09-11T02:18:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "emotional-support",
+    "empathy",
+    "mental-health",
+    "en",
+    "dataset:esconv",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124651784,
+  "parameters_human": "124.7M",
+  "storage_bytes": 498631280,
+  "storage_human": "499 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Programiz: Free Online Compilers & Code Editors for Everyday Use",
+      "url": "https://www.programiz.com/",
+      "snippet": "Open your browser and start coding with Programiz's free online compilers and text editors. Learn to code including Python, …"
+    },
+    {
+      "title": "Coding Games and Programming Challenges to Code Better",
+      "url": "https://www.codingame.com/",
+      "snippet": "CodinGame is a challenge-based training platform for programmers where you can play with the hottest programming topics. Solve …"
+    },
+    {
+      "title": "Learn to Code - for Free | Codecademy",
+      "url": "https://www.codecademy.com/",
+      "snippet": "Grow in your career and unlock new opportunities by learning in-demand skills in AI, data, coding, cybersecurity, and more."
+    },
+    {
+      "title": "Learn to Code for Free. Coding Courses & Certifications | freeCodeCamp",
+      "url": "https://www.freecodecamp.org/",
+      "snippet": "We accomplish this by creating thousands of videos, articles, and interactive coding lessons - all freely available to the public. …"
+    },
+    {
+      "title": "Codédex | Start Your Coding Adventure ⋆˙",
+      "url": "https://www.codedex.io/",
+      "snippet": "Practice your coding chops Sharpen your skills with bite-sized coding challenges. Test what you've learned in coding practice for …"
+    }
+  ]
+}

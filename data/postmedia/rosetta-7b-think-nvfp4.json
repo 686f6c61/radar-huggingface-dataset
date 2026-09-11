@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "PoSTMEDIA/Rosetta-7B-Think-NVFP4",
+  "slug": "postmedia-rosetta-7b-think-nvfp4",
+  "author": "PoSTMEDIA",
+  "url": "https://huggingface.co/PoSTMEDIA/Rosetta-7B-Think-NVFP4",
+  "created_at": "2026-09-11T09:09:07.000Z",
+  "updated_at": "2026-09-11T09:09:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "rosetta",
+    "text-generation",
+    "korean",
+    "bilingual",
+    "reasoning",
+    "postmedia",
+    "nvfp4",
+    "fp4",
+    "modelopt",
+    "conversational",
+    "custom_code",
+    "ko",
+    "en",
+    "base_model:PoSTMEDIA/Rosetta-7B-Think",
+    "base_model:quantized:PoSTMEDIA/Rosetta-7B-Think",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4560924672,
+  "parameters_human": "4.56B",
+  "storage_bytes": 6301710771,
+  "storage_human": "6.3 GB",
+  "base_model": "PoSTMEDIA/Rosetta-7B-Think",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "الصفحة الرئيسية - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLPYf6vTu2xt17uhXThhpUMYbChcBh2YyC",
+      "snippet": "Share your videos with friends, family, and the world"
+    },
+    {
+      "title": "Movies & TV - YouTube",
+      "url": "https://movies.youtube.com/",
+      "snippet": "Find the latest and greatest movies and shows all available on YouTube.com/movies. From award-winning hits to independent …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/?source=pwa",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube TV",
+      "url": "https://tv.youtube.com/app",
+      "snippet": "Stream live TV from over 70 networks, record programs without storage limits, and enjoy hassle-free viewing without a cable box. …"
+    }
+  ]
+}

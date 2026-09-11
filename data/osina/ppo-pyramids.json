@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "osina/ppo-Pyramids",
+  "slug": "osina-ppo-pyramids",
+  "author": "osina",
+  "url": "https://huggingface.co/osina/ppo-Pyramids",
+  "created_at": "2026-09-11T09:41:24.000Z",
+  "updated_at": "2026-09-11T09:41:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Pyramids",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37778735,
+  "storage_human": "38 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OnlineBanking - Volksbank Klettgau-Wutöschingen eG",
+      "url": "https://www.voba-kw.de/banking-und-vertraege/banking/banking-privatkunden/onlinebanking.html",
+      "snippet": "Machen Sie sich Ihre Bankgeschäfte so einfach wie möglich: Mit unserem OnlineBanking verwalten Sie Ihre Finanzen unabhängig …"
+    },
+    {
+      "title": "OnlineBanking - Volksbank Klettgau-Wutöschingen eG",
+      "url": "https://www.voba-kw.de/banking-und-vertraege/banking/banking-firmenkunden/onlinebanking-fk.html",
+      "snippet": "Für Ihre Firma oder Ihren Verein ist das OnlineBanking die zentrale Anlaufstelle für Ihre Bankgeschäfte. Der breite Funktionsumfang …"
+    },
+    {
+      "title": "OnlineBanking - Volksbank eG - Die Gestalterbank",
+      "url": "https://www.gestalterbank.de/banking-und-vertraege/banking/banking-privatkunden/onlinebanking.html",
+      "snippet": "Machen Sie sich Ihre Bankgeschäfte so einfach wie möglich: Mit unserem OnlineBanking verwalten Sie Ihre Finanzen unabhängig …"
+    },
+    {
+      "title": "OnlineBanking für Privatkunden - Vereinigte Volksbanken eG",
+      "url": "https://www.diebank.de/banking-und-vertraege/banking/banking-privatkunden/onlinebanking.html",
+      "snippet": "Unser OnlineBanking macht Ihnen das Leben leichter: erledigen Sie Ihre Bankgeschäfte wann und wo Sie wollen. Mehr dazu bei …"
+    },
+    {
+      "title": "Volksbank Klettgau-Wutöschingen eG — Volksbanken …",
+      "url": "https://www.vr.de/privatkunden/banken/volksbank-klettgau-wutoeschingen-eg-68462427.html",
+      "snippet": "Individuelle Finanzlösungen für Privatkunden und Firmenkunden – mit der Volksbank Klettgau-Wutöschingen eG. Lokal verankert …"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "microperceptron/Qwopus3.8-27B-Flash-GGUF",
+  "slug": "microperceptron-qwopus3-8-27b-flash-gguf",
+  "author": "microperceptron",
+  "url": "https://huggingface.co/microperceptron/Qwopus3.8-27B-Flash-GGUF",
+  "created_at": "2026-09-11T01:50:51.000Z",
+  "updated_at": "2026-09-11T01:50:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "es",
+    "ru",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama.cpp",
+    "image-text-to-text",
+    "vision",
+    "multimodal",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "text-generation",
+    "qwen3_8",
+    "qwen3",
+    "qwen",
+    "27b",
+    "fine-tuned",
+    "instruction-tuned",
+    "reasoning",
+    "agent",
+    "agentic",
+    "tool-use",
+    "function-calling",
+    "code-generation",
+    "mtp",
+    "speculative-decoding",
+    "local-inference",
+    "safetensors",
+    "en",
+    "zh",
+    "es",
+    "ru",
+    "ja",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 460730096,
+  "parameters_human": "460.7M",
+  "storage_bytes": 245724267264,
+  "storage_human": "245.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Banque de France: les parlementaires vont-ils s'opposer au choix d ...",
+      "url": "https://lcp.fr/actualites/banque-de-france-les-parlementaires-vont-ils-s-opposer-au-choix-d-emmanuel-macron-et",
+      "snippet": "May 20, 2026 · Les parlementaires des deux Chambres se prononceront, par un vote à bulletin secret, pour valider, ou non, sa …"
+    },
+    {
+      "title": "microperceptron/Qwopus3.8-27B-Flash-GGUF · Hugging Face",
+      "url": "https://huggingface.co/microperceptron/Qwopus3.8-27B-Flash-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Emmanuel Moulin à la Banque de France : à la veille du vote au ...",
+      "url": "https://www.publicsenat.fr/actualites/parlementaire/emmanuel-moulin-a-la-banque-de-france-a-la-veille-du-vote-au-parlement-une-opposition-nette-qui-grossit-a-gauche-une-droite-potentiellement-divisee",
+      "snippet": "May 19, 2026 · Ce mercredi 20 mai, 121 députés et sénateurs des commissions des finances vont devoir se prononcer sur la …"
+    },
+    {
+      "title": "Qwopus3.8 27b Flash - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwopus3-8-27b-flash.html",
+      "snippet": "Download Qwopus3.8 27b Flash GGUF model. 56.7 GB, 0 downloads, 82 likes."
+    },
+    {
+      "title": "Les banques françaises souhaitent une garantie de l'État pour les prêts ...",
+      "url": "https://www.zonebourse.com/actualite-bourse/les-banques-francaises-souhaitent-une-garantie-de-l-etat-pour-les-prets-lies-aux-elections-de-2027-ce7f50dbda8cf023",
+      "snippet": "Jul 31, 2026 · Les banques françaises ont besoin de garanties étatiques pour les prêts destinés aux campagnes présidentielles, a …"
+    }
+  ]
+}
