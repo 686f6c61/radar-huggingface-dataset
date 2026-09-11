@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Kaz55/act-newblue-gs0-ac60",
+  "slug": "kaz55-act-newblue-gs0-ac60",
+  "author": "Kaz55",
+  "url": "https://huggingface.co/Kaz55/act-newblue-gs0-ac60",
+  "created_at": "2026-09-11T00:40:52.000Z",
+  "updated_at": "2026-09-11T00:41:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dg5f",
+    "ur5e",
+    "gelsight",
+    "ablation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668634,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206725376,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dyn",
+      "url": "https://konto.dyn.sport/anmelden",
+      "snippet": "Jetzt einloggen und Handball, Basketball, Volleyball & Tischtennis live oder auf Abruf bei Dyn schauen!"
+    },
+    {
+      "title": "Handball heute live bei Dyn",
+      "url": "https://www.dyn.sport/sport_handball",
+      "snippet": "Handball jetzt live bei Dyn Handball mit Infos zu Ergebnissen, Kadern, Spielern, Statistiken, zur Tabelle, zum Spieltag und Spielplan."
+    },
+    {
+      "title": "Dyn",
+      "url": "https://profil.dyn.sport/konto",
+      "snippet": "Es tut uns leid, Dyn funktioniert nicht, wenn JavaScript deaktiviert ist. Bitte aktiviere es, um fortzufahren."
+    },
+    {
+      "title": "Anmelden / Einloggen im Browser - Dyn Sport – Dein Sender",
+      "url": "https://www.dyn.sport/deinsender/docs/devicesoperation/konto-anmelden/",
+      "snippet": "Trage die E-Mail-Adresse ein, die du bei deiner Registrierung angegeben hast. Trage dein Passwort ein, das du bei deiner …"
+    },
+    {
+      "title": "Handball - Dyn Sport – Dein Sender",
+      "url": "https://www.dyn.sport/deinsender/handball/",
+      "snippet": "Im Spielplan findest du aktuelle Handball-Spiele, gelangst mit einem Klick direkt zum Handball Live Stream auf der Plattform und …"
+    }
+  ]
+}

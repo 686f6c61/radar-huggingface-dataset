@@ -5,7 +5,7 @@
   "author": "JochenLinnemann",
   "url": "https://huggingface.co/JochenLinnemann/gemma-4-26B-A4B-it-noloop-GGUF",
   "created_at": "2026-09-09T19:45:21.000Z",
-  "updated_at": "2026-09-09T20:20:25.000Z",
+  "updated_at": "2026-09-10T06:24:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -25,7 +25,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 348,
   "trending_score": 0,
   "parameters": 25233142046,
   "parameters_human": "25.23B",

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TheHassanSaud/P2_pythia410m_q0.4_dpo_beta1.1",
+  "slug": "thehassansaud-p2_pythia410m_q0-4_dpo_beta1-1",
+  "author": "TheHassanSaud",
+  "url": "https://huggingface.co/TheHassanSaud/P2_pythia410m_q0.4_dpo_beta1.1",
+  "created_at": "2026-09-10T22:00:22.000Z",
+  "updated_at": "2026-09-10T22:00:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 405334016,
+  "parameters_human": "405.3M",
+  "storage_bytes": 1621370224,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Betsson",
+      "url": "https://ge.betsson.com/",
+      "snippet": "Betsson გთავაზობთ კაზინოს თამაშებს, სპორტზე ფსონებს და სხვა ..."
+    },
+    {
+      "title": "Betsson - ითამაშე მეტი სიამოვნებისთვის",
+      "url": "https://mobile.ge.betsson.com/",
+      "snippet": "ბეთსონი ლიდერია გასართობ სფეროში. ითამაშე სლოტები ..."
+    },
+    {
+      "title": "EUROPEBET",
+      "url": "https://sport2.europebet.com/index.html",
+      "snippet": "Explore a wide range of casino games, sports betting, and more on Europebet for an exciting and secure gaming experience."
+    },
+    {
+      "title": "EUROPEBET",
+      "url": "https://sport2.europebet.com/mobile-platform/",
+      "snippet": "EUROPEBET ... EUROPEBET"
+    },
+    {
+      "title": "Europebet Სლოტები — Დიდი Არჩევანი Სლოტებისა Და Ჯეკპოტების",
+      "url": "https://europebet.org.ge/slots",
+      "snippet": "Europebet სლოტები გთავაზობთ მრავალფეროვან სლოტებს, ჯეკპოტებსა და ბონუსებს GEL ვალუტაში."
+    }
+  ]
+}

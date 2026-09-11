@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Telon1/autospeed_alohasim_ckpt",
+  "slug": "telon1-autospeed_alohasim_ckpt",
+  "author": "Telon1",
+  "url": "https://huggingface.co/Telon1/autospeed_alohasim_ckpt",
+  "created_at": "2026-07-06T07:56:47.000Z",
+  "updated_at": "2026-09-10T20:09:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2647113740,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dragão: simbologias e significados místicos e espirituais",
+      "url": "https://www.greenme.com.br/informarse/significados/101667-dragao-simbologias-significados-misticos-espirituais/",
+      "snippet": "Jan 22, 2025 · Conheça as simbologias e significados do dragão, este extraordinário ser milenar que habita o imaginário humano."
+    },
+    {
+      "title": "Luu, El Dragón De Las Estepas: Mitología, Ritualidad Y Significado ...",
+      "url": "https://revistaliterariaelcandelabro.blog/2025/03/dragon-mongol-luu-simbolismo-cosmologia-cultura/",
+      "snippet": "Mar 17, 2025 · La figura del dragón en Mongolia, conocida como Luu(Луу), se integra en un sistema de creencias animistas y …"
+    },
+    {
+      "title": "Arqueólogos encontraram dragão e fênix juntos em uma tumba de …",
+      "url": "https://revistaoeste.com/oestegeral/2026/08/28/arqueologos-encontraram-dragao-e-fenix-juntos-em-uma-tumba-de-4-300-anos-o-simbolo-raro-que-surgiu-antes-da-china-imperial/",
+      "snippet": "Aug 28, 2026 · A importância está na antiguidade e na clareza da associação. Segundo o Instituto de Relíquias Culturais e …"
+    },
+    {
+      "title": "Mitología mongola - Wikipedia, la enciclopedia libre",
+      "url": "https://es.wikipedia.org/wiki/Mitolog%C3%ADa_mongola",
+      "snippet": "La mitología mongola es la mitología oriental perteneciente a la cultura mongol. Está mitología incluye varios mitos sobre la creación. …"
+    },
+    {
+      "title": "Antigo dragão neolítico feito de conchas de mexilhão é descoberto ...",
+      "url": "https://www.ufologia-mundial.com.br/l/antigo-dragao-neolitico-feito-de-conchas-de-mexilhao-e-descoberto-na-mongolia-interior/",
+      "snippet": "Arqueólogos fizeram uma descoberta emocionante na Região Autônoma da Mongólia Interior, no norte da China – um antigo dragão …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "PyRoS42/EchoNet-Dynamic-vs-SAM2-AR-Edge-Segmentation",
+  "slug": "pyros42-echonet-dynamic-vs-sam2-ar-edge-segmentation",
+  "author": "PyRoS42",
+  "url": "https://huggingface.co/PyRoS42/EchoNet-Dynamic-vs-SAM2-AR-Edge-Segmentation",
+  "created_at": "2026-09-10T19:24:53.000Z",
+  "updated_at": "2026-09-10T19:24:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "مشاهدة ‎The Boy Who Harnessed the Wind | موقع Netflix الرسمي",
+      "url": "https://www.netflix.com/iq/title/80200047",
+      "snippet": "مشاهدة ‎The Boy Who Harnessed the Wind | موقع Netflix الرسمي. يستلهم \"ويليام كامكوامبا\" البالغ 13 سنة فكرته من كتاب للعلوم، ويبني طاحونة رياح لينقذ قريته المالاوية من …"
+    },
+    {
+      "title": "Watch The Boy Who Harnessed the Wind | Netflix Official Site",
+      "url": "https://www.netflix.com/title/80200047",
+      "snippet": "Inspired by a science book, 13-year-old William Kamkwamba builds a wind turbine to save his Malawian village from famine. Based …"
+    },
+    {
+      "title": "‫The Boy Who Harnessed the Wind - جارى البث أونلاين",
+      "url": "https://www.justwatch.com/eg/movie/the-boy-who-harnessed-the-wind",
+      "snippet": "يمكنكم حالياً مشاهدة \"The Boy Who Harnessed the Wind\" على Netflix. للأسف، لا توجد حاليًا خيارات مجانية لمشاهدة The Boy Who Harnessed the Wind. إذا كنت …"
+    },
+    {
+      "title": "The Boy Who Harnessed the Wind streaming online - JustWatch",
+      "url": "https://www.justwatch.com/us/movie/the-boy-who-harnessed-the-wind",
+      "snippet": "20 hours ago · How and where to watch \"The Boy Who Harnessed the Wind\" online on Netflix and Prime Video – including free options."
+    },
+    {
+      "title": "The Boy Who Harnessed the Wind - YouTube",
+      "url": "https://www.youtube.com/watch?v=WGwBM19wvGg",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    }
+  ]
+}

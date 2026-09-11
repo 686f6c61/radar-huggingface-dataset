@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Lucas-dubois/robotics-vision-language-analysis",
+  "slug": "lucas-dubois-robotics-vision-language-analysis",
+  "author": "Lucas-dubois",
+  "url": "https://huggingface.co/Lucas-dubois/robotics-vision-language-analysis",
+  "created_at": "2026-09-11T01:05:38.000Z",
+  "updated_at": "2026-09-11T01:05:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "robotics-vision-language",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lucas G",
+      "url": "https://www.lucasg.com/",
+      "snippet": "Sep 4, 2026 · Lucas G est un constructeur français de machines agricoles d'élevage. Nous développons et fabriquons en France …"
+    },
+    {
+      "title": "Prénom Lucas (garçon) : signification, caractère et fête",
+      "url": "https://www.journaldesfemmes.fr/prenoms/lucas/prenom-3735",
+      "snippet": "Lucas est une forme ancienne du prénom Luc longtemps délaissé, mais qui est très plébiscité à partir de 1980, jusqu'à atteindre le …"
+    },
+    {
+      "title": "Lucas — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Lucas",
+      "snippet": "Rechercher Rechercher Basculer la table des matières Lucas 29 languesAjouter un sujet"
+    },
+    {
+      "title": "Maître Lucas - l'Apprentissage en Vidéos du CP au CM2",
+      "url": "https://maitrelucas.fr/",
+      "snippet": "Maître Lucas - des leçons de maths, français et de sciences pour les élèves de CP, CE1, CE2, CM1 et CM2, en vidéos, en exercices …"
+    },
+    {
+      "title": "Prénom Lucas : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/lucas-47150",
+      "snippet": "Lucas a besoin de se sentir en sécurité d'un point de vue affectif. Que ce soit dans sa vie amoureuse ou familiale, il apprécie la …"
+    }
+  ]
+}

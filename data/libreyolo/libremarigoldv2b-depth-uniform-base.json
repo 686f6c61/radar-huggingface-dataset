@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "LibreYOLO/LibreMarigoldV2b-depth-uniform-base",
+  "slug": "libreyolo-libremarigoldv2b-depth-uniform-base",
+  "author": "LibreYOLO",
+  "url": "https://huggingface.co/LibreYOLO/LibreMarigoldV2b-depth-uniform-base",
+  "created_at": "2026-09-10T21:03:00.000Z",
+  "updated_at": "2026-09-10T21:03:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": "libreyolo",
+  "languages": [],
+  "tags": [
+    "libreyolo",
+    "marigold-v2",
+    "depth-estimation",
+    "diffusion-transformer",
+    "base_model:Qwen/Qwen-Image-Edit-2509",
+    "base_model:finetune:Qwen/Qwen-Image-Edit-2509",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1723508242,
+  "storage_human": "1.7 GB",
+  "base_model": "huawei-bayerlab/marigold-v2-0, Qwen/Qwen-Image-Edit-2509",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Falk Routenplaner - Ihr kostenloser Routenplaner",
+      "url": "https://www.falk.de/routenplaner",
+      "snippet": "Mit dem Falk Routenplaner finden Sie die beste Route! Informieren Sie sich kostenlos über Fahrzeit, Entfernung, aktuelle Staus …"
+    },
+    {
+      "title": "Fahrrad-Routenplaner von Falk",
+      "url": "https://www.falk.de/routenplaner-fahrrad",
+      "snippet": "Der kostenlose Falk Routenplaner fürs Fahrrad hilft Ihnen dabei, mit Ihrem Fahrrad den besten Weg von A nach B zu finden."
+    },
+    {
+      "title": "Falk map: simple Rout",
+      "url": "https://maps.falk.de/v1/mapSimpleRouting.html",
+      "snippet": "registerNodeListener (window, \"load\", main); function main () { var map = new FalkMap (\"mymap\"); var mapControl = new …"
+    },
+    {
+      "title": "Falk Routenplaner - Ihr kostenloser Routenplaner",
+      "url": "https://www.falk.de/routenplaner/lag",
+      "snippet": "Berechnen Sie kostenlos mit dem kostenlosen und beliebten Falk Routenplaner für Lage Ihre günstigste Wegstrecke. Mit Echtzeit …"
+    },
+    {
+      "title": "Falk.de: Karten und Routenplaner",
+      "url": "https://www.falk.de/",
+      "snippet": "Auf Falk.de finden Sie Karten und Stadtpläne, einen kostenlosen Routenplaner, einen praktischen Cityguide mit Reiseführerinhalten …"
+    }
+  ]
+}

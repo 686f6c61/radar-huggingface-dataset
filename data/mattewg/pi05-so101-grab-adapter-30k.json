@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mattewg/pi05-so101-grab-adapter-30k",
+  "slug": "mattewg-pi05-so101-grab-adapter-30k",
+  "author": "mattewg",
+  "url": "https://huggingface.co/mattewg/pi05-so101-grab-adapter-30k",
+  "created_at": "2026-09-10T20:09:11.000Z",
+  "updated_at": "2026-09-10T20:15:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "robotics",
+    "pi0",
+    "pi05",
+    "openpi",
+    "so-101",
+    "so101",
+    "imitation-learning",
+    "dataset:Ibuprofene/grab_adapter_2cam_v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12440322282,
+  "storage_human": "12.4 GB",
+  "base_model": "physical-intelligence/pi05_base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ukraine-Krieg im Liveticker - Aktuelle News - ZDFheute",
+      "url": "https://www.zdfheute.de/politik/ausland/ukraine-russland-konflikt-blog-102.html",
+      "snippet": "1 day ago · Seit Februar 2022 führt Russland einen Angriffskrieg gegen die Ukraine, die Kämpfe dauern an. Alle Entwicklungen und …"
+    },
+    {
+      "title": "Ukraine News: Nachrichten & Eilmeldungen zum Ukraine-Krieg - 20 …",
+      "url": "https://www.20min.ch/ausland/ukraine",
+      "snippet": "20 Minuten bietet dir 24/7 aktuelle Nachrichten, Eilmeldungen, Liveticker, Bilder, Hintergrundstorys und Videos zum Ukraine-Krieg."
+    },
+    {
+      "title": "Ukraine - aktuelle Nachrichten - tagesschau.de",
+      "url": "https://www.tagesschau.de/thema/ukraine",
+      "snippet": "5 days ago · Ukraine - Nachrichten und Information: An 365 Tagen im Jahr, rund um die Uhr aktualisiert, die wichtigsten News auf …"
+    },
+    {
+      "title": "Ukraine-Krieg im Liveticker: +++ 01:38 Russen greifen Krywyj Rih an …",
+      "url": "https://www.n-tv.de/politik/20-04-Selenskyj-Schwarzmeer-Haefen-offen-aber-Warenumschlag-bricht-ein-id30859357.html",
+      "snippet": "20 hours ago · Russland startet in der Nacht einen massiven Drohnenangriff auf Krywyj Rih im Süden der Ukraine. Der Leiter der …"
+    },
+    {
+      "title": "Aktuelle Nachrichten - Ukrinform News",
+      "url": "https://www.ukrinform.de/block-lastnews",
+      "snippet": "20 hours ago · Die Luftverteidigungskräfte der Ukraine haben 165 russische Angriffsdrohnen neutralisiert, ließ die Luftwaffe der …"
+    }
+  ]
+}

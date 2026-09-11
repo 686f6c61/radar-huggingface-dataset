@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "chnmishra/class-matching",
+  "slug": "chnmishra-class-matching",
+  "author": "chnmishra",
+  "url": "https://huggingface.co/chnmishra/class-matching",
+  "created_at": "2026-09-11T00:47:32.000Z",
+  "updated_at": "2026-09-11T00:47:38.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tülle – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/T%C3%BClle",
+      "snippet": "Tülle Tülle steht für: Tülle (Ausguss), Ausguss an Gefäßen Tülle (Werkzeug), rohrförmiges Teil eines Werkzeugs, in dem ein Stiel …"
+    },
+    {
+      "title": "Tülle (Ausguss) – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/T%C3%BClle_(Ausguss)",
+      "snippet": "Als Tülle bezeichnet man die spezielle Ausformung eines Gefäßes für Flüssigkeiten, insbesondere einer Kanne, die das gezielte …"
+    },
+    {
+      "title": "Tülle kaufen bei HORNBACH",
+      "url": "https://www.hornbach.at/s/T%C3%BClle",
+      "snippet": "Tülle im HORNBACH Onlineshop & im Markt: Große Auswahl Dauertiefpreise 30 Tage Rückgaberecht Tülle bei HORNBACH finden!"
+    },
+    {
+      "title": "Tülle‎: Bedeutung, Definition",
+      "url": "https://www.wortbedeutung.info/T%C3%BClle/",
+      "snippet": "Jun 12, 2026 · Was bedeutet Tülle? Alle Infos, Synonyme und Beispiele in unserem 5☆ Wörterbuch!"
+    },
+    {
+      "title": "Kabeltüllen, Durchführungstüllen, Kantenschutz",
+      "url": "https://www.hellermanntyton.de/kompetenzen/kabeltuellen",
+      "snippet": "Wie wähle ich die passende Kabeltülle? Für die Auswahl der richtigen Tülle sind 3 Maße entscheidend. Ihr Kabeldurchmesser, das …"
+    }
+  ]
+}

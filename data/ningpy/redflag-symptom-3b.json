@@ -5,7 +5,7 @@
   "author": "ningpy",
   "url": "https://huggingface.co/ningpy/redflag-symptom-3b",
   "created_at": "2026-09-10T11:18:44.000Z",
-  "updated_at": "2026-09-10T11:22:24.000Z",
+  "updated_at": "2026-09-11T00:17:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -42,8 +42,8 @@
   "trending_score": 0,
   "parameters": 3085938688,
   "parameters_human": "3.09B",
-  "storage_bytes": 6183348464,
-  "storage_human": "6.2 GB",
+  "storage_bytes": 12355275032,
+  "storage_human": "12.4 GB",
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "safetensors"

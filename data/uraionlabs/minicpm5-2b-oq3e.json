@@ -1,0 +1,109 @@
+{
+  "schema": 1,
+  "id": "UraionLabs/MiniCPM5-2B-oQ3e",
+  "slug": "uraionlabs-minicpm5-2b-oq3e",
+  "author": "UraionLabs",
+  "url": "https://huggingface.co/UraionLabs/MiniCPM5-2B-oQ3e",
+  "created_at": "2026-09-10T23:15:15.000Z",
+  "updated_at": "2026-09-10T23:33:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "mlx-lm",
+    "minicpm",
+    "minicpm5",
+    "text-generation",
+    "conversational",
+    "quantized",
+    "quantization",
+    "mixed-precision",
+    "apple-silicon",
+    "macos",
+    "local-llm",
+    "local-inference",
+    "on-device",
+    "edge-ai",
+    "long-context",
+    "131k-context",
+    "tool-calling",
+    "function-calling",
+    "agent",
+    "agentic",
+    "coding",
+    "reasoning",
+    "omlx",
+    "oq",
+    "oqe",
+    "uraion-labs",
+    "en",
+    "zh",
+    "dataset:openbmb/Ultra-FineWeb",
+    "dataset:openbmb/UltraX-Preview",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:openbmb/UltraData-Math",
+    "dataset:openbmb/UltraData-Code",
+    "dataset:openbmb/UltraData-SFT-2605",
+    "dataset:openbmb/UltraData-SFT-Agent-2609",
+    "dataset:openbmb/UltraData-RL-2609",
+    "arxiv:2506.07900",
+    "arxiv:2602.09003",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 1164376335,
+  "storage_human": "1.2 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "أمانة عسير توقع مشاريع بلدية تتجاوز 65 مليون ريال",
+      "url": "https://www.forum.topmaxtech.net/t120307.html",
+      "snippet": "Feb 9, 2011 · أوضح أمين منطقة عسير حمدان بن فارس العصيمي، أن اللجنة أنهت فحص عروض المشاريع في أمانة المنطقة من توقيع عدد من محاضر ترسية المشاريع البلدية في المنطقة بمبلغ …"
+    },
+    {
+      "title": "اتهام تسعة بالإرهاب في بريطانيا - المركز الاخباري",
+      "url": "https://www.forum.topmaxtech.net/t113561.html",
+      "snippet": "Dec 27, 2010 · تقييم هذا الموضوع ‏ ممتاز ‏ جيد ‏ متوسط ‏ سيئ ‏ سيئ جداً 12-27-2010,06:40 PM #1 كاتب الأخبار الملف الشخصي مشاهدة المشاركات أخباري تاريخ التسجيل Dec …"
+    },
+    {
+      "title": "نمو أرباح \"ناقلات\" القطرية 252% في الربع الثاني",
+      "url": "https://www.forum.topmaxtech.net/t36149.html",
+      "snippet": "Jul 28, 2009 · أعلنت شركة قطر لنقل الغاز \"ناقلات\" أن أرباحها الصافية خلال الربع الثاني من العام الجاري نمت بنسبة 252% مقارنةً بنفس الفترة من العام الماضي إلى 179 مليون ريال المزيد..."
+    },
+    {
+      "title": "وفاة وإصابة 8 أشخاص في حادث مروري بتبوك - مقالات وأخبار الحوادث",
+      "url": "https://www.forum.topmaxtech.net/t59254.html",
+      "snippet": "Dec 21, 2009 · وقع حادث تصادم بين سيارة اسعاف وسيارة اخرى على طريق تبوك شرما فجر امس الاحد نتج عنه وفاة سائق الاسعاف بدر مفرح العنزي ووفاة ثلاثة من ركاب السيارة الاخرى وتم نقل …"
+    },
+    {
+      "title": "مبارك تتنازل رسميا عن جميع ممتلكاتها لصالح الدولة",
+      "url": "https://www.forum.topmaxtech.net/t133463.html",
+      "snippet": "May 17, 2011 · قد يكون الخطاب الأخير في حياته مبارك يعد خطاب اعتذار للشعب المصري لطلب العفو عنه وزوجته تتنازل رسميا عن جميع ممتلكاتها لصالح الدولة كشف موظف في التوثيق بأن زوجة …"
+    }
+  ]
+}

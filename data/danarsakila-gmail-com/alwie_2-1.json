@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "danarsakila-gmail-com/Alwie_2.1",
+  "slug": "danarsakila-gmail-com-alwie_2-1",
+  "author": "danarsakila-gmail-com",
+  "url": "https://huggingface.co/danarsakila-gmail-com/Alwie_2.1",
+  "created_at": "2026-09-10T23:32:00.000Z",
+  "updated_at": "2026-09-10T23:43:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Things To Do in Toronto this weekend | AllEvents",
+      "url": "https://allevents.in/toronto/this-weekend",
+      "snippet": "Looking for things to do in Toronto this weekend? Explore the best festivals, concerts, parties, and workshops on AllEvents. Don't …"
+    },
+    {
+      "title": "Top Things to Do in Toronto This Weekend - Sept 11 to 13, 2026",
+      "url": "https://www.todocanada.ca/things-to-do-in-toronto-this-weekend/",
+      "snippet": "26 minutes ago · A weekly digest of what’s on in and around Toronto this weekend: Activities, Food Festivals, Exhibitions, Live Music, …"
+    },
+    {
+      "title": "Things to Do in Toronto This Weekend: 2-Day Guide [2026]",
+      "url": "https://www.torontotourism.org/things-to-do-in-toronto-this-weekend/",
+      "snippet": "Jul 29, 2026 · The best things to do in Toronto this weekend are sorted below by neighbourhood, time of day, weather, and budget, …"
+    },
+    {
+      "title": "Events and Things to do in Toronto, Canada this weekend",
+      "url": "https://www.eventbrite.ca/d/canada--toronto/events--this-weekend/",
+      "snippet": "Looking for things to do in Toronto this weekend? Explore our real-time listings for the best concerts, nightlife, and food and drink …"
+    },
+    {
+      "title": "15 things to do in Toronto this weekend - blogTO",
+      "url": "https://www.blogto.com/radar/2026/09/things-do-toronto-weekend-september-11/",
+      "snippet": "1 day ago · Things to do in Toronto this weekend fit any appetite: from the return of the Toronto International Film Festival to a weekly …"
+    }
+  ]
+}

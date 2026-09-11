@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "FriskyFennec/Ling-3.0-tiny-base-30T-GGUF",
+  "slug": "friskyfennec-ling-3-0-tiny-base-30t-gguf",
+  "author": "FriskyFennec",
+  "url": "https://huggingface.co/FriskyFennec/Ling-3.0-tiny-base-30T-GGUF",
+  "created_at": "2026-09-10T21:45:53.000Z",
+  "updated_at": "2026-09-10T23:57:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "base_model:inclusionAI/Ling-3.0-tiny-base-30T",
+    "base_model:quantized:inclusionAI/Ling-3.0-tiny-base-30T",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8209997600,
+  "parameters_human": "8.21B",
+  "storage_bytes": 75632375744,
+  "storage_human": "75.6 GB",
+  "base_model": "inclusionAI/Ling-3.0-tiny-base-30T",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Startseite | Volkswagen Deutschland",
+      "url": "https://www.volkswagen.de/de.html",
+      "snippet": "Willkommen bei Volkswagen. Erfahren Sie alles über die Marke, Modelle, Angebote, allgemeine Infos, bis zum Trendthema …"
+    },
+    {
+      "title": "Konfigurator - Volkswagen Deutschland",
+      "url": "https://www.volkswagen.de/de/konfigurator.html",
+      "snippet": "Finden Sie hier alle VW Modelle und den Konfigurator und konfigurieren Sie sich Ihren Neuwagen."
+    },
+    {
+      "title": "Volkswagen - KundenCenter direkt - Login",
+      "url": "https://kundencenter.volkswagen.de/",
+      "snippet": "Willkommen bei Volkswagen KundenCenter direkt Anmelden oder registrieren Melden Sie sich an oder registrieren Sie sich für das …"
+    },
+    {
+      "title": "Login",
+      "url": "http://sso.volkswagen.de/",
+      "snippet": "Profile ID must be at least 5 characters long. Password"
+    },
+    {
+      "title": "Volkswagen",
+      "url": "https://passwordchange.volkswagen.de/",
+      "snippet": "Questions or Problems? Forgot Password? Please use the Passwort Self Service (PWSS)"
+    }
+  ]
+}

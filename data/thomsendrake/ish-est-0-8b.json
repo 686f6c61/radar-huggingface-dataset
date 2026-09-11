@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ThomsenDrake/ish-est-0.8b",
+  "slug": "thomsendrake-ish-est-0-8b",
+  "author": "ThomsenDrake",
+  "url": "https://huggingface.co/ThomsenDrake/ish-est-0.8b",
+  "created_at": "2026-09-10T19:56:10.000Z",
+  "updated_at": "2026-09-10T19:59:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "food",
+    "nutrition",
+    "qwen",
+    "ish-est",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 646539550,
+  "storage_human": "647 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Himeji Castle - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Himeji_Castle",
+      "snippet": "Himeji Castle is the largest and most visited castle in Japan, and it was registered in 1993 as one of the first UNESCO World Heritage …"
+    },
+    {
+      "title": "Himeji Castle - Himeji Travel - japan-guide.com",
+      "url": "https://www.japan-guide.com/e/e3501.html",
+      "snippet": "Himeji Castle (姫路城, Himejijō), also known as White Heron Castle (Shirasagijo) due to its elegant, white appearance, is widely …"
+    },
+    {
+      "title": "The World Cultural Heritage: The National Treasure of Himeji Castle",
+      "url": "https://www.himejicastle.jp/en/",
+      "snippet": "There are no air conditioning units, elevators, or escalators inside Himeji Castle. The only vending machine for drinks is located …"
+    },
+    {
+      "title": "Visit Himeji Official Travel Guide",
+      "url": "https://visit-himeji.com/en/",
+      "snippet": "Home to the world-renowned Himeji Castle, a UNESCO World Heritage site, our city is a place where history and tradition are …"
+    },
+    {
+      "title": "Himeji Castle visitor guide — everything you need to know before ...",
+      "url": "https://visithimejicastle.com/visitor-guide/",
+      "snippet": "Jun 12, 2026 · A comprehensive visitor guide to Himeji Castle: opening hours, how to get there, what you'll see inside, accessibility, …"
+    }
+  ]
+}

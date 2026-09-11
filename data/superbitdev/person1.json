@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SuperBitDev/person1",
+  "slug": "superbitdev-person1",
+  "author": "SuperBitDev",
+  "url": "https://huggingface.co/SuperBitDev/person1",
+  "created_at": "2026-03-19T17:00:49.000Z",
+  "updated_at": "2026-09-11T01:06:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "element_type:detect",
+    "model:yolov11-nano",
+    "object:person",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 263444807,
+  "storage_human": "263 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HWiNFO - Free System Information, Monitoring and Diagnostics",
+      "url": "https://www.hwinfo.com/",
+      "snippet": "Free Hardware Analysis, Monitoring and Reporting. In-depth Hardware Information, Real-Time System Monitoring, Reporting & more"
+    },
+    {
+      "title": "CPU-Z | Softwares | CPUID",
+      "url": "https://www.cpuid.com/softwares/cpu-z.html",
+      "snippet": "CPU-Z for Windows® x86/x64 is a freeware that gathers information on some of the main devices of your system : Processor name …"
+    },
+    {
+      "title": "PC Info - Download - Softpedia",
+      "url": "https://www.softpedia.com/get/System/System-Info/CobraTek-PC-Info.shtml",
+      "snippet": "Jan 9, 2026 · Download PC Info 4.5.2.534 Home / 4.5.8.282 Pro - Find out more about your machine with a simple application that …"
+    },
+    {
+      "title": "PC Info Free - Free download and install on Windows | Microsoft Store",
+      "url": "https://apps.microsoft.com/detail/9nblggh3ztfq",
+      "snippet": "PC Info Free scans your computer and gets you the hardware information about your system. This program supports the light and …"
+    },
+    {
+      "title": "PC Info Free - Download e installazione gratuiti in Windows | Microsoft ...",
+      "url": "https://apps.microsoft.com/detail/9nblggh3ztfq?hl=it-IT&gl=IT",
+      "snippet": "PC Info Free scans your computer and gets you the hardware information about your system. This program supports the light and …"
+    }
+  ]
+}

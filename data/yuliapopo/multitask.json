@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "yuliapopo/multitask",
+  "slug": "yuliapopo-multitask",
+  "author": "yuliapopo",
+  "url": "https://huggingface.co/yuliapopo/multitask",
+  "created_at": "2026-09-11T00:07:44.000Z",
+  "updated_at": "2026-09-11T00:07:50.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Terrain constructible à Chevry-Cossigny : zones du PLU et carte",
+      "url": "https://france-cadastre.fr/terrain-constructible/chevry-cossigny",
+      "snippet": "Cette carte présente le zonage du plan local d'urbanisme (PLU) de la commune de Chevry-Cossigny. Elle vous permet d'identifier les …"
+    },
+    {
+      "title": "Terrain à vendre Chevry-Cossigny (77173) - 24 Terrains Constructibles ...",
+      "url": "https://www.terrain-construction.com/terrain-a-vendre/seine-et-marne-77/chevry-cossigny-77173",
+      "snippet": "Vous trouverez 24 annonces de Terrains à vendre à Chevry-Cossigny (77173) dans le département Seine-et-Marne 77. Le prix …"
+    },
+    {
+      "title": "Terrains à vendre Chevry-Cossigny 77173, Seloger.com",
+      "url": "https://www.seloger.com/recherche/achat/terrain/ile-de-france/chevry-cossigny-77173/ad08fr31955?msockid=08d80398428b68a600a414494372691b",
+      "snippet": "TERRAIN À CONSTRUIRE DE 317 M² À CHEVRY-COSSIGNY, PROXIMITÉ PARIS. Ce terrain situé en centre-ville de Chevry …"
+    },
+    {
+      "title": "Tous les terrains constructibles à vendre à Chevry-Cossigny (77)",
+      "url": "https://www.zimo.fr/annonces/immobilier-neuf/vente/terrain-constructible/chevry-cossigny-77173",
+      "snippet": "Tous les terrains constructibles à vendre à Chevry-Cossigny (77). Prix de 31 000€ à 450 000€. Photos et contact direct sur Zimo.fr"
+    },
+    {
+      "title": "Vente terrain 307 m² à Chevry-Cossigny (77173), 187 000 €",
+      "url": "https://immobilier.lefigaro.fr/annonces/annonce-108580249.html",
+      "snippet": "TERRAIN À CONSTRUIRE DE 307 M² À CHEVRY-COSSIGNY, PROCHE DE PARIS. Idéal pour un projet de construction. Ce …"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "VictorMr/slm-terminal-specialist",
+  "slug": "victormr-slm-terminal-specialist",
+  "author": "VictorMr",
+  "url": "https://huggingface.co/VictorMr/slm-terminal-specialist",
+  "created_at": "2026-09-10T21:28:59.000Z",
+  "updated_at": "2026-09-10T21:59:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen2",
+    "code",
+    "codeqwen",
+    "chat",
+    "qwen",
+    "qwen-coder",
+    "terminal",
+    "zsh",
+    "bash",
+    "text-generation",
+    "conversational",
+    "pt",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098888897,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anulowanie, wstrzymywanie i zmienianie subskrypcji w Google Play",
+      "url": "https://support.google.com/googleplay/answer/7018481?hl=pl&co=GENIE.Platform%3DAndroid",
+      "snippet": "Anulowanie, wstrzymywanie i zmienianie subskrypcji w Google Play Subskrypcje w Google Play nie mają określonej daty …"
+    },
+    {
+      "title": "覚えのない請求を報告する - Google Play ヘルプ",
+      "url": "https://support.google.com/googleplay/answer/2851610?hl=ja",
+      "snippet": "Google Play からの請求かどうかを確認する Google Play の注文履歴 に請求がある場合は、Google Play からの請求です。 または、 …"
+    },
+    {
+      "title": "Google Play的好处是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/38732312",
+      "snippet": "Google Play 并不仅仅是提供Android应用而已。还有音乐、电影、电子书以及硬件设备直销（Nexus）。并不是所有区都有这些东西。 …"
+    },
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/question/23849325",
+      "snippet": ""
+    },
+    {
+      "title": "ปัญหาเกี่ยวกับการซื้อในแอป - Google Play ความช่วยเหลือ",
+      "url": "https://support.google.com/googleplay/answer/1050566?hl=th",
+      "snippet": "หากนักพัฒนาแอปไม่ได้ให้บริการแอปในประเทศ Google Play ของคุณ คุณจะทําการซื้อในแอปไม่ได้ หากย้ายไปอยู่ประเทศอื่น คุณจะ เปลี่ยน ..."
+    }
+  ]
+}

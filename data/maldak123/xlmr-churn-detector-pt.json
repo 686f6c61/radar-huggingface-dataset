@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Maldak123/xlmr-churn-detector-pt",
+  "slug": "maldak123-xlmr-churn-detector-pt",
+  "author": "Maldak123",
+  "url": "https://huggingface.co/Maldak123/xlmr-churn-detector-pt",
+  "created_at": "2026-09-10T20:42:52.000Z",
+  "updated_at": "2026-09-10T20:43:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "portuguese",
+    "text-classification",
+    "b2b",
+    "pt",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278045186,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1128992000,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tifo Football: What is a Libero? : r/soccer - Reddit",
+      "url": "https://www.reddit.com/r/soccer/comments/gx2uv1/tifo_football_what_is_a_libero/",
+      "snippet": "19 votes, 27 comments. 6.8M subscribers in the soccer community. The football subreddit. News, results, and discussion about the …"
+    },
+    {
+      "title": "r/Denmark - Reddit",
+      "url": "https://www.reddit.com/r/Denmark/top/",
+      "snippet": "A forum for discussions, funny tidbits and news about Denmark and the Danes."
+    },
+    {
+      "title": "Burdur - msxlabs.org",
+      "url": "https://www.msxlabs.org/forum/turkiye-cografyasi/9557-burdur.html",
+      "snippet": "Sep 21, 2006 · Burdur İlimizin tarihi; Neolotik Çağa kadar inmektedir.1957-1960 yılları arasında Prof.J.Mellaart tarafından Hacılarda …"
+    },
+    {
+      "title": "Barkod (Ürün Kodu) - msxlabs.org",
+      "url": "https://www.msxlabs.org/forum/muhendislik-bilimleri/94880-barkod-urun-kodu.html",
+      "snippet": "Dec 27, 2007 · Barkod Vikipedi, özgür ansiklopedi UPC ile bir sayı serisinin betimlenmesi Barkod (veya bar ... Mühendislik Bilimleri …"
+    },
+    {
+      "title": "Libero : r/pokemon - Reddit",
+      "url": "https://www.reddit.com/r/pokemon/comments/helhb0/libero/",
+      "snippet": "Jun 23, 2020 · I'm getting very sick of people overusing Libero Cinderace. It seems to be just as bad as Protean Greninja. Is there …"
+    }
+  ]
+}

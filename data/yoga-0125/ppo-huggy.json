@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "yoga-0125/ppo-Huggy",
+  "slug": "yoga-0125-ppo-huggy",
+  "author": "yoga-0125",
+  "url": "https://huggingface.co/yoga-0125/ppo-Huggy",
+  "created_at": "2026-09-10T22:52:47.000Z",
+  "updated_at": "2026-09-10T22:52:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Huggy",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Huggy",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 187516487,
+  "storage_human": "188 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yoga — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Yoga",
+      "snippet": "Les quatre voies (mārga) traditionnelles majeures de yoga sont le jnana yoga, bhakti yoga, karma yoga et raja yoga. Elles sont …"
+    },
+    {
+      "title": "Yoga débutant Séance complète de 30 minutes pour tout le corps",
+      "url": "https://www.youtube.com/watch?v=_nvdVJBLj-E",
+      "snippet": "Apr 2, 2024 · Cette vidéo de 30 minutes est parfaite pour étirer, renforcer, tonifier et détendre tout ton corps. Abonne-toi pour plus de …"
+    },
+    {
+      "title": "Yoga à Denney — evolum",
+      "url": "https://evolum.co/yoga-denney-90160/",
+      "snippet": "Participer à une séance de yoga à Denney (ou découvrir le yoga par d'autres moyens) vous propose une pratique ancienne, dont les …"
+    },
+    {
+      "title": "Tout savoir sur le yoga : principe, bienfaits, types",
+      "url": "https://www.santemagazine.fr/medecines-alternatives/pratiques-orientales/yoga/tout-savoir-sur-le-yoga-principe-bienfaits-types-177057",
+      "snippet": "May 16, 2024 · Les exercices de yoga mêlent méditation, gymnastique douce, postures et respiration. Objectif : permettre de libérer …"
+    },
+    {
+      "title": "Yoga With Adriene - YouTube",
+      "url": "https://www.youtube.com/channel/UCFKE7WVJfvaHW5q283SxchA",
+      "snippet": "Our mission is to connect as many people as possible through high-quality free yoga videos. This yoga practice was designed to help …"
+    }
+  ]
+}

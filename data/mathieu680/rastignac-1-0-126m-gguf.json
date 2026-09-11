@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Mathieu680/Rastignac-1.0-126M-GGUF",
+  "slug": "mathieu680-rastignac-1-0-126m-gguf",
+  "author": "Mathieu680",
+  "url": "https://huggingface.co/Mathieu680/Rastignac-1.0-126M-GGUF",
+  "created_at": "2026-09-10T23:29:43.000Z",
+  "updated_at": "2026-09-10T23:30:02.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "causal-lm",
+    "french",
+    "literary",
+    "text-generation",
+    "fr",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 126481920,
+  "parameters_human": "126.5M",
+  "storage_bytes": 255441184,
+  "storage_human": "255 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "【e-kanagawa電子申請】トップ：トップ",
+      "url": "https://dshinsei.e-kanagawa.lg.jp/140007-u/",
+      "snippet": "各手続き等の内容（制度、必要書類、入力内容、申請可否など）に関するお問い合わせは、手続き担当部門へ直接ご連絡ください。 …"
+    },
+    {
+      "title": "電子申請 - 神奈川県ホームページ",
+      "url": "https://www.pref.kanagawa.jp/docs/fz7/shinsei/shinsei_top.html",
+      "snippet": "Mar 31, 2007 · 電子申請サービス インターネットを利用して、県への各種申請・届出や講座・イベント等の申込み、申請後の状況照 …"
+    },
+    {
+      "title": "e-kanagawa電子申請／電子納付 - 神奈川県ホームページ",
+      "url": "https://www.pref.kanagawa.jp/docs/fz7/shinsei/denshinoufu.html",
+      "snippet": "Aug 14, 2026 · 「e-kanagawa電子申請」の電子納付について 「e-kanagawa電子申請」で手数料等の納付が必要な手続について、コ …"
+    },
+    {
+      "title": "電子申請システムについて（手続きの検索方法）｜藤沢市",
+      "url": "https://www.city.fujisawa.kanagawa.jp/dxs/denshishinsei.html",
+      "snippet": "Oct 27, 2025 · 藤沢市で利用している電子申請システムの概要と手続の検索方法をお伝えします。"
+    },
+    {
+      "title": "オンライン手続き・申請 - 鎌倉市",
+      "url": "https://www.city.kamakura.kanagawa.jp/online.html",
+      "snippet": "Jul 23, 2026 · e-kanagawa電子申請については、 e-kanagawa電子申請システム ( 外部サイトへリンク ) をご覧ください。 ※印の申 …"
+    }
+  ]
+}

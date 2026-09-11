@@ -5,7 +5,7 @@
   "author": "guiiwfz",
   "url": "https://huggingface.co/guiiwfz/logi-1.5b",
   "created_at": "2026-09-07T02:42:44.000Z",
-  "updated_at": "2026-09-08T16:41:41.000Z",
+  "updated_at": "2026-09-10T21:12:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -15,6 +15,7 @@
   ],
   "tags": [
     "safetensors",
+    "qwen2",
     "logi",
     "decifra-ia",
     "logica-proposicional",
@@ -35,10 +36,10 @@
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 750326374,
-  "storage_human": "750 MB",
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3985563678,
+  "storage_human": "4.0 GB",
   "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
   "formats": [
     "safetensors"

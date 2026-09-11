@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SelectiveDOPD/JustRL-Distilled-DeepSeek-7b-Selective-Top10pct",
+  "slug": "selectivedopd-justrl-distilled-deepseek-7b-selective-top10pct",
+  "author": "SelectiveDOPD",
+  "url": "https://huggingface.co/SelectiveDOPD/JustRL-Distilled-DeepSeek-7b-Selective-Top10pct",
+  "created_at": "2026-09-11T00:54:38.000Z",
+  "updated_at": "2026-09-11T01:19:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 45705238370,
+  "storage_human": "45.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Public High Schools in Brooklyn, NY (2026-27)",
+      "url": "https://www.publicschoolreview.com/new-york/brooklyn/high",
+      "snippet": "View the 2026-27 top-ranked public high schools in Brooklyn, New York. Find rankings, test scores, reviews and more. Read about …"
+    },
+    {
+      "title": "High Schools in Brooklyn, NY",
+      "url": "https://high-schools.com/directory/ny/cities/brooklyn/",
+      "snippet": "Help choose the right school for a move or get contact info for all high schools in Brooklyn, NY."
+    },
+    {
+      "title": "Public High Schools in Brooklyn, NY - Niche",
+      "url": "https://www.niche.com/k12/search/best-public-high-schools/t/brooklyn-kings-ny/?msockid=120bd94767d66da9093dce9666446cf4",
+      "snippet": "2026 school ratings, test scores, and statistics for public high schools in Brooklyn. Compare public high schools near you."
+    },
+    {
+      "title": "High Schools in Brooklyn, NY - Niche",
+      "url": "https://www.niche.com/k12/search/best-high-schools/t/brooklyn-kings-ny/?msockid=120bd94767d66da9093dce9666446cf4",
+      "snippet": "2026 rankings and reviews for high schools in Brooklyn. Compare test scores, key statistics, and ratings for high schools near you."
+    },
+    {
+      "title": "Best Brooklyn Schools | Brooklyn, NY School Ratings | GreatSchools",
+      "url": "https://www.greatschools.org/new-york/brooklyn/",
+      "snippet": "Best Brooklyn schools listed by Brooklyn school districts. Browse best elementary, middle, and high schools private and public …"
+    }
+  ]
+}

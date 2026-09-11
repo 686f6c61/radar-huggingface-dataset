@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Yuivdldk/gemma3-4b-gsm8k-kd",
+  "slug": "yuivdldk-gemma3-4b-gsm8k-kd",
+  "author": "Yuivdldk",
+  "url": "https://huggingface.co/Yuivdldk/gemma3-4b-gsm8k-kd",
+  "created_at": "2026-09-10T23:19:39.000Z",
+  "updated_at": "2026-09-10T23:20:04.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma3_text",
+    "gemma",
+    "gsm8k",
+    "knowledge-distillation",
+    "logit-kd",
+    "student-model",
+    "base_model:google/gemma-3-4b-it",
+    "base_model:finetune:google/gemma-3-4b-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3880263168,
+  "parameters_human": "3.88B",
+  "storage_bytes": 7793962687,
+  "storage_human": "7.8 GB",
+  "base_model": "google/gemma-3-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=ru",
+      "snippet": "Создайте аккаунт или войдите в Instagram — делитесь интересными моментами с людьми, которые вас понимают."
+    },
+    {
+      "title": "Instagram - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.instagram.android&hl=en-US",
+      "snippet": "Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on …"
+    },
+    {
+      "title": "Instagram - Capture, Create & Share What You Love",
+      "url": "https://about.instagram.com/",
+      "snippet": "Instagram makes it easy to capture, create and share what you love. Discover more about our features and commitment to …"
+    },
+    {
+      "title": "Instagram - Meta",
+      "url": "https://www.meta.com/fr-fr/instagram/",
+      "snippet": "Grâce à Instagram, les internautes peuvent s’exprimer, se sentir plus proches de ceux qui comptent pour eux et faire de leur passion …"
+    }
+  ]
+}

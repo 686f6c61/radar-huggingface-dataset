@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "MinaMila/Qwen2.5-1.5B-ReGiFT",
+  "slug": "minamila-qwen2-5-1-5b-regift",
+  "author": "MinaMila",
+  "url": "https://huggingface.co/MinaMila/Qwen2.5-1.5B-ReGiFT",
+  "created_at": "2026-09-10T21:10:54.000Z",
+  "updated_at": "2026-09-10T21:11:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85338269,
+  "storage_human": "85 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Auszahlung der betrieblichen Altersvorsorge (2026)",
+      "url": "https://www.transparent-beraten.de/betriebliche-altersvorsorge/auszahlung/",
+      "snippet": "Jan 20, 2026 · In diesem Kapitel erläutern wir, wie die Auszahlung der Betriebsrente über eine Kapitalauszahlung aussehen kann …"
+    },
+    {
+      "title": "Unterstützungskasse Auszahlung: Besteuerung & Optionen",
+      "url": "https://onlinebilanz.de/unterstuetzungskasse-auszahlung-besteuerung/",
+      "snippet": "Jul 2, 2026 · Erfahren Sie alles zur Unterstützungskasse Auszahlung: Rente, Einmalauszahlung und steuerliche Regelungen im Detail."
+    },
+    {
+      "title": "Auszahlung der bAV: Was bleibt nach Steuern und Sozialabgaben …",
+      "url": "https://www.bavheute.de/bav-praxis/auszahlung-der-bav-was-bleibt-nach-steuern-und-sozialabgaben-uebrig/",
+      "snippet": "May 8, 2026 · Auszahlung der bAV: Was bleibt nach Steuern und Sozialabgaben übrig? Die Direktversicherung ist einer der …"
+    },
+    {
+      "title": "Direktversicherung Auszahlung – Abgaben und Tipps - Finanztip",
+      "url": "https://www.finanztip.de/betriebliche-altersvorsorge/direktversicherung-auszahlung/",
+      "snippet": "Mar 6, 2026 · Auf die monatlichen Auszahlungen aus einer Direktversicherung musst Du Einkommensteuer zahlen. Sie werden also …"
+    },
+    {
+      "title": "Altersvorsorgedepot-Auszahlung: Optionen und Besteuerung ab 65",
+      "url": "https://www.fonder-vergleiche.de/ratgeber/altersvorsorgedepot-auszahlung",
+      "snippet": "Jul 5, 2026 · In diesem Ratgeber gehen wir alle Auszahlformen durch, erklären die Besteuerung im Detail, auch für Beiträge oberhalb …"
+    }
+  ]
+}

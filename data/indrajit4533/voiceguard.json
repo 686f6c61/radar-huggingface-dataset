@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "indrajit4533/voiceguard",
+  "slug": "indrajit4533-voiceguard",
+  "author": "indrajit4533",
+  "url": "https://huggingface.co/indrajit4533/voiceguard",
+  "created_at": "2026-09-09T14:46:28.000Z",
+  "updated_at": "2026-09-11T01:28:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10608581,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deliveroo - Takeaway Food Delivery from Local Restaurants & Shops",
+      "url": "https://deliveroo.ae/",
+      "snippet": "We deliver your takeouts or essential groceries from the best-rated local partners straight to your door. Download our app or order …"
+    },
+    {
+      "title": "Deliveroo - Reservations",
+      "url": "https://deliveroo.ae/en/reservations",
+      "snippet": "Book a table at the best local restaurants with Deliveroo. Browse available places, choose your date and number of guests, and …"
+    },
+    {
+      "title": "Order From Shops To You | Deliveroo",
+      "url": "https://deliveroo.ae/en/shopping/",
+      "snippet": "Do you need shopping delivered fast? Enter your address or postcode to find shops in your area and get a wide range of items …"
+    },
+    {
+      "title": "Groceries Delivered To Your Door | Deliveroo",
+      "url": "https://deliveroo.ae/en/takeaway/grocery",
+      "snippet": "Home / Cuisines / Grocery Order your favourite groceries straight to your door With more people having to stay home right now, we're …"
+    },
+    {
+      "title": "Deliveroo - Food Delivery",
+      "url": "https://deliveroo.ae/ar/app-download/",
+      "snippet": "The best local restaurants and takeaways are here to deliver. Order on Deliveroo today!"
+    }
+  ]
+}

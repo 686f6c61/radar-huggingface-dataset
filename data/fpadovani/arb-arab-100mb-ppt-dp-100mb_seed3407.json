@@ -5,7 +5,7 @@
   "author": "fpadovani",
   "url": "https://huggingface.co/fpadovani/arb-arab-100mb-ppt-Dp-100mb_seed3407",
   "created_at": "2026-09-10T12:19:29.000Z",
-  "updated_at": "2026-09-10T12:25:04.000Z",
+  "updated_at": "2026-09-10T12:45:01.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 124770816,
   "parameters_human": "124.8M",
-  "storage_bytes": 250869490,
-  "storage_human": "251 MB",
+  "storage_bytes": 1997865902,
+  "storage_human": "2.0 GB",
   "base_model": "goldfish-models/arb_arab_100mb",
   "formats": [
     "safetensors"

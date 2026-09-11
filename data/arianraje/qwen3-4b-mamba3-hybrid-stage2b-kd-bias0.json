@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "arianraje/qwen3-4b-mamba3-hybrid-stage2b-kd-bias0",
+  "slug": "arianraje-qwen3-4b-mamba3-hybrid-stage2b-kd-bias0",
+  "author": "arianraje",
+  "url": "https://huggingface.co/arianraje/qwen3-4b-mamba3-hybrid-stage2b-kd-bias0",
+  "created_at": "2026-09-10T22:35:38.000Z",
+  "updated_at": "2026-09-11T00:34:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_mamba3",
+    "text-generation",
+    "linear-attention",
+    "mamba3",
+    "mamba-3",
+    "ssm",
+    "hybrid",
+    "distillation",
+    "qwen3",
+    "conversational",
+    "custom_code",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4741428416,
+  "parameters_human": "4.74B",
+  "storage_bytes": 9494342950,
+  "storage_human": "9.5 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    },
+    {
+      "title": "Wikipedia, the free encyclopedia",
+      "url": "https://en.wikipedia.org/wiki/Main_Page",
+      "snippet": "Wikipedia is written by volunteer editors and hosted by the Wikimedia Foundation, a non-profit organization that also hosts a range of …"
+    },
+    {
+      "title": "Wikipedia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wikipedia",
+      "snippet": "Founded by Jimmy Wales and Larry Sanger in 2001, Wikipedia has been hosted since 2003 by the Wikimedia Foundation, an …"
+    },
+    {
+      "title": "ויקיפדיה",
+      "url": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%95%D7%93_%D7%A8%D7%90%D7%A9%D7%99",
+      "snippet": "Welcome to the Hebrew Wikipedia! For assistance in other languages, please see the embassy."
+    },
+    {
+      "title": "Wikipédia, l'encyclopédie libre",
+      "url": "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal",
+      "snippet": "Wikipédia L'encyclopédie libre que vous pouvez améliorer Accueil de la communauté Comment contribuer ? Portails thématiques …"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "chenhaodev/tcm-constitution-qwen3-8b-lora",
+  "slug": "chenhaodev-tcm-constitution-qwen3-8b-lora",
+  "author": "chenhaodev",
+  "url": "https://huggingface.co/chenhaodev/tcm-constitution-qwen3-8b-lora",
+  "created_at": "2026-09-11T01:02:47.000Z",
+  "updated_at": "2026-09-11T01:07:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "medical",
+    "tcm",
+    "chinese-medicine",
+    "constitution",
+    "rag",
+    "lora",
+    "text-generation",
+    "conversational",
+    "zh",
+    "dataset:chenhaodev/tcm-constitution-qwen3-8b-lora",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186803497,
+  "storage_human": "187 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lyrics & Translations of Shazdeh by Bardia Bahador | Popnable",
+      "url": "https://popnable.com/iran/songs/488314-bardia-bahador-shazdeh/lyrics-and-translations",
+      "snippet": "\"Shazdeh\" Lyrics \"Shazdeh\" has lyrics in Persian language. \"Shazdeh\" meaning comes from Persian language and currently not …"
+    },
+    {
+      "title": "Bardia - Shazdeh ( بردیا - شازده ) - YouTube",
+      "url": "https://www.youtube.com/watch?v=6pLvclmZ3D4",
+      "snippet": "Oct 16, 2025 · Subscribe to Persian Media Group on YouTube:https://bit.ly/PersianMedia-YouTube Listen To More Music By Bardia …"
+    },
+    {
+      "title": "Shazdeh - song and lyrics by Bardia Bahador | Spotify",
+      "url": "https://open.spotify.com/track/4ti5Jcg8lULBC0FmXC6dqf",
+      "snippet": "Listen to Shazdeh on Spotify. Bardia Bahador · Song · 2021."
+    },
+    {
+      "title": "Bardia Bahador - Shazdeh | OFFICIAL MUSIC VIDEO بردیا بهادر - شازده",
+      "url": "https://www.youtube.com/watch?v=SB9milvJ9xo",
+      "snippet": "Bardia Bahador - Shazdeh | OFFICIAL MUSIC VIDEO | FULL HD STREM Listen On YT Music: http://bit.ly/3b2jj6f Listen On Spotify: …"
+    },
+    {
+      "title": "متن آهنگ ساحل بردیا بهادر - faratext.ir",
+      "url": "https://www.faratext.ir/37170/lyrics-%D9%85%D8%AA%D9%86-%D8%A2%D9%87%D9%86%DA%AF-%D8%B3%D8%A7%D8%AD%D9%84-%D8%A8%D8%B1%D8%AF%DB%8C%D8%A7-%D8%A8%D9%87%D8%A7%D8%AF%D8%B1.html",
+      "snippet": "متن آهنگ ساحل بردیا بهادر Lyrics Music Bardia Bahador Sahel دعوا مرافه کردی دلتنگ شدی آشتی کردی یعنی بازم مثل موج ساحلو بغل میکردی"
+    }
+  ]
+}

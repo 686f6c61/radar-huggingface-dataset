@@ -5,7 +5,7 @@
   "author": "Simsuk",
   "url": "https://huggingface.co/Simsuk/ecot-openvla-7b-bridge-cd",
   "created_at": "2026-09-06T13:12:43.000Z",
-  "updated_at": "2026-09-09T02:17:06.000Z",
+  "updated_at": "2026-09-10T08:46:10.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -27,12 +27,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 13,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 7188124608,
   "parameters_human": "7.19B",
-  "storage_bytes": 43129491259,
-  "storage_human": "43.1 GB",
+  "storage_bytes": 57505821771,
+  "storage_human": "57.5 GB",
   "base_model": "Embodied-CoT/ecot-openvla-7b-bridge",
   "formats": [
     "safetensors"

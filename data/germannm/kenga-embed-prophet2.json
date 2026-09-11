@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "GermannM/kenga-embed-prophet2",
+  "slug": "germannm-kenga-embed-prophet2",
+  "author": "GermannM",
+  "url": "https://huggingface.co/GermannM/kenga-embed-prophet2",
+  "created_at": "2026-09-11T01:12:34.000Z",
+  "updated_at": "2026-09-11T01:12:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "pytorch",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "kenga-embed-v2",
+    "embeddings",
+    "sentence-similarity",
+    "retrieval",
+    "russian",
+    "mteb",
+    "kenga",
+    "z-system",
+    "ru",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 177155225,
+  "storage_human": "177 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "James Dant - Purveyors of Men's Goods in Indianapolis, IN 46219",
+      "url": "https://www.chamberofcommerce.com/business-directory/indiana/indianapolis/men-s-clothing-store/42147870-james-dant-purveyors-of-men-s-goods",
+      "snippet": "James Dant - Purveyors of Men's Goods located at 5624 E Washington St, Indianapolis, IN 46219 - reviews, ratings, hours, phone …"
+    },
+    {
+      "title": "James Dant - Purveyors of Men's Goods in Indianapolis , IN",
+      "url": "https://www.superpages.com/indianapolis-in/bpp/james-dant-purveyors-of-mens-goods-504487212",
+      "snippet": "Get reviews, hours, directions, coupons and more for James Dant - Purveyors of Men's Goods. Search for other Men's Clothing on …"
+    },
+    {
+      "title": "James Dant - Purveyors of Men's Goods Clothing Store in Indianapolis…",
+      "url": "https://localitybiz.com/31024065/james-dant-purveyors-of-men%27s-goods-indianapolis",
+      "snippet": "James Dant - Purveyors of Men's Goods — Clothing Store in Indianapolis, IN. ⭐ 4.8/5 (120 reviews). See its address, phone …"
+    },
+    {
+      "title": "JAMES DANT - Updated September 2026 - 87 Photos & 39 Reviews - Yelp",
+      "url": "https://www.yelp.com/biz/james-dant-indianapolis?msockid=2b9f3a8a049164d911bb2d5b059d656d",
+      "snippet": "A unique, local men's boutique in Irvington featuring a good selection of high quality clothing, accessories, and home goods. My …"
+    },
+    {
+      "title": "James Dant - Purveyors of Men's Goods in Indianapolis , IN",
+      "url": "https://www.yellowpages.com/indianapolis-in/mip/james-dant-purveyors-of-mens-goods-504487212",
+      "snippet": "Get reviews, hours, directions, coupons and more for James Dant - Purveyors of Men's Goods. Search for other Men's Clothing on …"
+    }
+  ]
+}

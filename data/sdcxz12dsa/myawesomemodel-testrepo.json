@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SDCXZ12DSA/MyAwesomeModel-TestRepo",
+  "slug": "sdcxz12dsa-myawesomemodel-testrepo",
+  "author": "SDCXZ12DSA",
+  "url": "https://huggingface.co/SDCXZ12DSA/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-10T21:04:18.000Z",
+  "updated_at": "2026-09-10T21:04:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HATTA RESORTS IS NOW CLOSED FOR THE SUMMER SEASON.",
+      "url": "https://www.visithatta.com/en/stay",
+      "snippet": "Explore unique glamping stays in Hatta Resorts, from Damani lodges and domes with plunge pools to campers and vintage campers. …"
+    },
+    {
+      "title": "Hatta Resorts",
+      "url": "https://www.hattaresorts.org/",
+      "snippet": "Jul 21, 2026 · Hatta Resorts offers premium farmhouses, private pool resorts, mountain retreats, and luxury holiday homes in Hatta, …"
+    },
+    {
+      "title": "Hatta Resorts, Hatta (updated prices 2026) - Booking.com",
+      "url": "https://www.booking.com/hotel/ae/damani-lodges.html?msockid=1dfdb319aff0687e102ca4c9aef3694b",
+      "snippet": "Hatta Resorts is located in Hatta and features barbecue facilities. This 2-star hotel offers room service and a tour desk."
+    },
+    {
+      "title": "Hatta Resorts (Hatta): Alle Infos zum Hotel - HolidayCheck",
+      "url": "https://www.holidaycheck.de/hi/hatta-resorts/f901f1af-9ca8-47b0-99e6-cdfc47a1a9ca",
+      "snippet": "Das Hatta Resort liegt etwas außerhalb von Hatta. Es bietet eine Menge kostenloser Aktivitäten und Sportmöglichkeiten."
+    },
+    {
+      "title": "Hatta Resorts, Hatta (aktualisierte Preise für 2026) - Booking.com",
+      "url": "https://www.booking.com/hotel/ae/damani-lodges.de.html?msockid=1dfdb319aff0687e102ca4c9aef3694b",
+      "snippet": "Die Unterkunft Hatta Resorts befindet sich in Hatta und bietet Grillmöglichkeiten. Dieses Hotel mit 2 Sternen verfügt über einen …"
+    }
+  ]
+}

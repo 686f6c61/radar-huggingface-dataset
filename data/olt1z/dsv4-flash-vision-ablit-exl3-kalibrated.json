@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Olt1z/DSV4-Flash-Vision-ablit-EXL3-Kalibrated",
+  "slug": "olt1z-dsv4-flash-vision-ablit-exl3-kalibrated",
+  "author": "Olt1z",
+  "url": "https://huggingface.co/Olt1z/DSV4-Flash-Vision-ablit-EXL3-Kalibrated",
+  "created_at": "2026-09-10T21:29:44.000Z",
+  "updated_at": "2026-09-10T23:32:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "deepseek_v4",
+    "exl3",
+    "trellis",
+    "moe",
+    "mixed-precision",
+    "abliterated",
+    "vision",
+    "image-text-to-text",
+    "conversational",
+    "base_model:GaelicThunder/DeepSeek-V4-Flash-Vision-Exp-ablit-EXL3-Kalibrated",
+    "base_model:quantized:GaelicThunder/DeepSeek-V4-Flash-Vision-Exp-ablit-EXL3-Kalibrated",
+    "license:mit",
+    "2-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 64063135678,
+  "parameters_human": "64.06B",
+  "storage_bytes": 119181640509,
+  "storage_human": "119.2 GB",
+  "base_model": "GaelicThunder/DeepSeek-V4-Flash-Vision-Exp-ablit-EXL3-Kalibrated, vcruz305/DSV4-Flash-Vision-ablit-EXL3-MixedK",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Haus kaufen: Häuser & Hauskauf bei ImmoScout24",
+      "url": "https://www.immobilienscout24.de/wohnen/haus-kaufen.html?msockid=058348f8d1a16d4911ec5f28d0aa6c2e",
+      "snippet": "Häuser kaufen bei ImmoScout24: Finden Sie Immobilienangebote für Häuser zum Kauf und profitieren Sie von einer großen …"
+    },
+    {
+      "title": "ImmoScout24 – Mit über 6,5 Mio. Immobilien.",
+      "url": "https://www.immobilienscout24.de/?msockid=058348f8d1a16d4911ec5f28d0aa6c2e",
+      "snippet": "Anbieten. Suchen. Finden. Die größte Auswahl an Wohnungen, Häusern und Gewerbeflächen findest du nur bei ImmoScout24. …"
+    },
+    {
+      "title": "Welcome - ImmobilienScout24",
+      "url": "https://sso.immobilienscout24.de/sso/login?appName=hof&source=por&e=login&msockid=058348f8d1a16d4911ec5f28d0aa6c2e",
+      "snippet": "Melde dich in deinem Kundenkonto an, um ein Inserat zu erstellen. Du hast noch kein Konto? Dann erstelle dir hier einfach ein Neues."
+    },
+    {
+      "title": "Serverfehler - ImmoScout24",
+      "url": "https://myteam.immobilienscout24.de/",
+      "snippet": "Leider ist ein unerwartetes Problem aufgetreten. Bitte laden Sie die Seite erneut oder versuchen Sie es zu einem späteren Zeitpunkt …"
+    },
+    {
+      "title": "ImmobilienScout24 - So suchst du sicher auf ImmoScout24",
+      "url": "https://sicherheit.immobilienscout24.de/",
+      "snippet": "Apr 30, 2026 · Ob neue Mieterin oder richtiger Makler: Wir wollen, dass ImmoScout24 sicher ist. Für alle Nutzer und Nutzerinnen. …"
+    }
+  ]
+}

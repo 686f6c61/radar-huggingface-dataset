@@ -4,8 +4,8 @@
   "slug": "surjolabs-surjo-10m",
   "author": "SurjoLabs",
   "url": "https://huggingface.co/SurjoLabs/Surjo-10m",
-  "created_at": "2026-09-08T18:15:31.000Z",
-  "updated_at": "2026-09-09T23:32:14.000Z",
+  "created_at": "2026-09-10T14:34:29.000Z",
+  "updated_at": "2026-09-10T20:15:11.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 3223744120,
-  "storage_human": "3.2 GB",
+  "storage_bytes": 1143703722,
+  "storage_human": "1.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

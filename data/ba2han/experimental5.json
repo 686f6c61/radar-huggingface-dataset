@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Ba2han/experimental5",
+  "slug": "ba2han-experimental5",
+  "author": "Ba2han",
+  "url": "https://huggingface.co/Ba2han/experimental5",
+  "created_at": "2026-08-25T07:51:07.000Z",
+  "updated_at": "2026-09-10T23:29:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "unsloth",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 890,
+  "trending_score": 0,
+  "parameters": 1094920096,
+  "parameters_human": "1.09B",
+  "storage_bytes": 31678841244,
+  "storage_human": "31.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=28a45475ee1668af1fec43a5ef196988",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft products, apps, and devices built to support you",
+      "url": "https://www.microsoft.com/en-us/microsoft-products-and-apps?msockid=28a45475ee1668af1fec43a5ef196988",
+      "snippet": "Uncover the power of Microsoft's products, apps, and devices designed to simplify your life and fuel your passions. Explore our …"
+    },
+    {
+      "title": "Microsoft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft",
+      "snippet": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington. The company …"
+    }
+  ]
+}

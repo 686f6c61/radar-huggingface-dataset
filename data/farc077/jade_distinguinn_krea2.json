@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "farc077/Jade_Distinguinn_KREA2",
+  "slug": "farc077-jade_distinguinn_krea2",
+  "author": "farc077",
+  "url": "https://huggingface.co/farc077/Jade_Distinguinn_KREA2",
+  "created_at": "2026-09-10T21:44:06.000Z",
+  "updated_at": "2026-09-10T22:25:25.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "celebrity",
+    "model",
+    "brunette",
+    "ONESHOTLORA",
+    "text-to-image",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 271991708,
+  "storage_human": "272 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Diretta.it: Serie A, risultati calcio in tempo reale e partite in diretta",
+      "url": "https://www.diretta.it/",
+      "snippet": "Risultati in tempo reale di calcio su Diretta dalla Serie A e altri 1000 campionati compresi Premier League, La Liga, Bundesliga, Ligue …"
+    },
+    {
+      "title": "Risultati in tempo reale - risultati calcio live, livescore | Flashscore.it",
+      "url": "https://www.flashscore.it/",
+      "snippet": "Tutti i risultati di calcio in tempo reale, Serie A e Serie B e risultati di calcio live da tutti i campionati europei e mondiali tra cui Premier …"
+    },
+    {
+      "title": "Risultati in diretta Calcio di oggi | LiveScore",
+      "url": "https://www.livescore.com/it/calcio/live/",
+      "snippet": "LiveScore riporta tutti gli ultimi risultati di Calcio delle partite di oggi. Aggiornamenti calcio e non solo in tempo reale che si rinnovano …"
+    },
+    {
+      "title": "LiveScore | Risultati in tempo reale, calendario e punteggi",
+      "url": "https://www.livescore.com/it/",
+      "snippet": "Scopri i risultati di calcio in tempo reale con LiveScore! Copriamo tutti i paesi, i campionati e le competizioni con dettagli precisi."
+    },
+    {
+      "title": "Livescore: Calcio",
+      "url": "https://www.livescore.in/it/",
+      "snippet": "Spiegazione: Il livescore sul calcio su LIVESCORE.in (risultati di calcio in tempo reale) fornisce agli scommettitori e pronosticatori di …"
+    }
+  ]
+}

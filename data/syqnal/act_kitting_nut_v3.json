@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Syqnal/act_kitting_nut_v3",
+  "slug": "syqnal-act_kitting_nut_v3",
+  "author": "Syqnal",
+  "url": "https://huggingface.co/Syqnal/act_kitting_nut_v3",
+  "created_at": "2026-09-11T01:19:56.000Z",
+  "updated_at": "2026-09-11T01:21:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Syqnal/kitting_nut_v3",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Overdrive Wars: How Different Is Ibanez Tube Screamer From Boss Super ...",
+      "url": "https://www.ultimate-guitar.com/articles/features/overdrive_wars_how_different_is_ibanez_tube_screamer_from_boss_super_overdrive-120014",
+      "snippet": "Jun 7, 2021 · Two of the most popular mid-boosting overdrives are often used interchangeably. But how different are they really?"
+    },
+    {
+      "title": "Boss SD1 vs Tube Screamer – Which Overdrive Pedal to Choose?",
+      "url": "https://guitarstrive.com/boss-sd1-vs-tube-screamer/",
+      "snippet": "Jul 11, 2026 · Yes, the overdrive pedal is a key part of almost every guitarist’s pedalboard. But how do you choose the right overdrive …"
+    },
+    {
+      "title": "Boss SD-1 Super Overdrive vs Ibanez TS9 Tube Screamer (2026)",
+      "url": "https://pedalrig.com/vs/boss-sd1-vs-tube-screamer-ts9",
+      "snippet": "Boss SD-1 Super Overdrive vs Ibanez TS9 Tube Screamer: price, specs, pros & cons compared, with a verdict on which overdrive …"
+    },
+    {
+      "title": "Tube Screamer Vs. Super Overdrive Pedal - YouTube",
+      "url": "https://www.youtube.com/watch?v=fbqmWRz7VeY",
+      "snippet": "Mar 25, 2026 · In this video I demo ands compare the Ibanez Tubscreamer to the Boss Super Overdrive Pedal and show which one …"
+    },
+    {
+      "title": "Ibanez Tube Screamer vs Boss SD-1: Pedal Comparison",
+      "url": "https://prosoundhq.com/ibanez-tube-screamer-vs-boss-sd-1-pedal-comparison/",
+      "snippet": "If you’re looking for a mid-boosting overdrive pedal then the Ibanez Tube Screamer and Boss SD-1 Super Overdrive are two great …"
+    }
+  ]
+}

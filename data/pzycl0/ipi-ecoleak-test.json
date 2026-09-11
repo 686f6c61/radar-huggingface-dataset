@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "pzycl0/ipi-ecoleak-test",
+  "slug": "pzycl0-ipi-ecoleak-test",
+  "author": "pzycl0",
+  "url": "https://huggingface.co/pzycl0/ipi-ecoleak-test",
+  "created_at": "2026-09-11T00:05:43.000Z",
+  "updated_at": "2026-09-11T00:18:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comment retrouver ses jeux Epic games? - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-36076480-comment-retrouver-ses-jeux-epic-games",
+      "snippet": "Jun 15, 2019 · Le lanceur Epic Games peut-il détecter des jeux précédemment installés ? Si vous aviez déjà installé un jeu sur votre …"
+    },
+    {
+      "title": "Compte Epic Games piraté (Mot de passe et Mail changé)",
+      "url": "https://forums.commentcamarche.net/forum/affich-37711313-compte-epic-games-pirate-mot-de-passe-et-mail-change",
+      "snippet": "Oct 18, 2022 · 9 réponses Résumé de la discussion Le sujet décrit un piratage de compte Epic Games où le mot de passe et …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/windows/forum/all/windows-only-has-2-restore-points-despite-lots-of/9902e91e-0dfb-4805-9c73-21d8ed7cb059",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/windows/forum/all/wsapx-clipsvc-high-utility-clientlizenzdienst-hohe/00e4a631-a169-461b-a21a-77b70a0a5d4e",
+      "snippet": ""
+    },
+    {
+      "title": "Impossible d'installer EPIC GAMES LAUNCHER",
+      "url": "https://forums.commentcamarche.net/forum/affich-36207256-impossible-d-installer-epic-games-launcher",
+      "snippet": "Sep 10, 2019 · Bonsoir, c'est la première fois que je poste ici, je désespère car j'ai cherché partout et je n'ai pas trouvé de solution. …"
+    }
+  ]
+}

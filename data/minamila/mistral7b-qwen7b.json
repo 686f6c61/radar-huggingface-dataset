@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "MinaMila/Mistral7B-Qwen7B",
+  "slug": "minamila-mistral7b-qwen7b",
+  "author": "MinaMila",
+  "url": "https://huggingface.co/MinaMila/Mistral7B-Qwen7B",
+  "created_at": "2026-09-10T21:10:09.000Z",
+  "updated_at": "2026-09-10T21:10:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:mistralai/Mistral-7B-Instruct-v0.3",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167837505,
+  "storage_human": "168 MB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home » Shire of Plantagenet",
+      "url": "https://www.plantagenet.wa.gov.au/",
+      "snippet": "The Shire of Plantagenet acknowledges the traditional custodians of our area and their continuing connection to the land and …"
+    },
+    {
+      "title": "Shire of Plantagenet planning information - Western Australian …",
+      "url": "https://www.wa.gov.au/government/document-collections/shire-of-plantagenet-planning-information",
+      "snippet": "Oct 15, 2025 · Local planning information for the Shire of Plantagenet."
+    },
+    {
+      "title": "Shire of Plantagenet - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Shire_of_Plantagenet",
+      "snippet": "The Shire of Plantagenet is a local government area in the Great Southern region of Western Australia, managed from the town of …"
+    },
+    {
+      "title": "Latest News » Shire of Plantagenet",
+      "url": "https://www.plantagenet.wa.gov.au/news/",
+      "snippet": "Posted 02 February 2026 Aussie and community spirit on show in Plantagenet More than 200 people gathered at Frost Pavilion at …"
+    },
+    {
+      "title": "Shire of Plantagenet | Mount Barker WA - Facebook",
+      "url": "https://www.facebook.com/shireofplantagenet/",
+      "snippet": "Aug 27, 2026 · The inaugural Shire of Plantagenet and Mount Barker SES Community Safety & Preparedness Expo drew 248 people …"
+    }
+  ]
+}

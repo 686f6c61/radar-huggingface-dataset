@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AdaraAi/adara-ASR",
+  "slug": "adaraai-adara-asr",
+  "author": "AdaraAi",
+  "url": "https://huggingface.co/AdaraAi/adara-ASR",
+  "created_at": "2026-09-10T19:40:19.000Z",
+  "updated_at": "2026-09-10T19:40:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Problema apertura pagina webmail.aruba.it - Google Help",
+      "url": "https://support.google.com/chrome/thread/95659017/problema-apertura-pagina-webmail-aruba-it?hl=it",
+      "snippet": "Jan 29, 2021 · Problema apertura pagina webmail.aruba.it Ciao a tutti, Ho un problema di accesso alla pagina webmail aruba: …"
+    },
+    {
+      "title": "Gestione webmail di Aruba su Gmail",
+      "url": "https://support.google.com/mail/thread/191195694/gestione-webmail-di-aruba-su-gmail?hl=it",
+      "snippet": "Dec 3, 2022 · Gestione webmail di Aruba su Gmail Buongiorno, ho un problema, ho la casella email di webmail “Aruba” ovvero la mia …"
+    },
+    {
+      "title": "Backup Webmail Aruba in Gmail ? - Hardware Upgrade Forum",
+      "url": "https://www.hwupgrade.it/forum/showthread.php?t=2870915",
+      "snippet": "Dec 8, 2018 · Ciao a tutti, avrei bisogno di un consiglio... Io utilizzo per lavoro la mail di Aruba standard, la Webmail, che ha uno …"
+    },
+    {
+      "title": "Email con aruba finisconon nello spam - Hardware Upgrade",
+      "url": "https://www.hwupgrade.it/forum/showthread.php?t=2968294",
+      "snippet": "Sep 20, 2022 · spero di essere nella sessione giusta del sito per porre un quesito che, come da oggetto, riguarda il perché le nostre …"
+    },
+    {
+      "title": "Mail scomparse da Webmail Aruba ma mai scaricate su Gmail",
+      "url": "https://support.google.com/mail/thread/26435203/mail-scomparse-da-webmail-aruba-ma-mai-scaricate-su-gmail?hl=it",
+      "snippet": "Jan 22, 2020 · Provando ad inviarmi una mail da un altro indirizzo e monitorando da \"webmail aruba\" la posta in arrivo della casella …"
+    }
+  ]
+}

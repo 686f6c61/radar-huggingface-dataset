@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "itsryomatsumoto/audio-visual-learning-survey",
+  "slug": "itsryomatsumoto-audio-visual-learning-survey",
+  "author": "itsryomatsumoto",
+  "url": "https://huggingface.co/itsryomatsumoto/audio-visual-learning-survey",
+  "created_at": "2026-09-11T00:55:13.000Z",
+  "updated_at": "2026-09-11T00:55:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "audio-visual-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The 21 Best Coffee Shops In Seattle - Seattle - The Infatuation",
+      "url": "https://www.theinfatuation.com/seattle/guides/best-coffee-shops-seattle",
+      "snippet": "Aug 31, 2026 · Check out the best coffee shops in Seattle, from little walk-up windows and iconic roasting operations to grungy …"
+    },
+    {
+      "title": "THE 10 BEST Cafés in Seattle (Updated 2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Restaurants-g60878-c8-Seattle_Washington.html",
+      "snippet": "Best Cafés in Seattle, Washington: Find Tripadvisor traveller reviews of Seattle Cafés and search by price, location, and more."
+    },
+    {
+      "title": "22 Best Coffee Shops in Seattle, WA (2026)",
+      "url": "https://mycoffeeexplorer.com/guides/seattle",
+      "snippet": "Sep 3, 2026 · Discover 22 coffee shops in Seattle, WA. Lighthouse Roasters rated 4.8★. 16 local roasters across 13 neighborhoods. …"
+    },
+    {
+      "title": "Best Cafes in Seattle: Our Expert Picks",
+      "url": "https://seattlesecrets.org/best-cafes-in-seattle",
+      "snippet": "Jun 7, 2026 · After reviewing 12 top locations, I’ve uncovered hidden gems and beloved classics that capture the essence of our …"
+    },
+    {
+      "title": "THE BEST 10 CAFES IN SEATTLE, WA - UPDATED AUGUST 2026 - Yelp",
+      "url": "https://www.yelp.com/search?cflt=cafes&find_loc=Seattle%2C+WA&msockid=1267be0ee67865b7280aa9dfe7a5649a",
+      "snippet": "Best Cafes in Seattle, WA - Last Updated August 2026 - Café Hagen, Miero Coffee Bar, Orange Goose Coffee, Piedmont Cafe, Hood …"
+    }
+  ]
+}

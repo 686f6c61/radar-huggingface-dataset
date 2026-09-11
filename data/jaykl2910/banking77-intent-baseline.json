@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Jaykl2910/banking77-intent-baseline",
+  "slug": "jaykl2910-banking77-intent-baseline",
+  "author": "Jaykl2910",
+  "url": "https://huggingface.co/Jaykl2910/banking77-intent-baseline",
+  "created_at": "2026-09-10T19:02:20.000Z",
+  "updated_at": "2026-09-10T19:02:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124704845,
+  "parameters_human": "124.7M",
+  "storage_bytes": 498843524,
+  "storage_human": "499 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kaufvertrag ebay - Vertragsschluss, Widerruf & Rücktritt",
+      "url": "https://www.juraforum.de/lexikon/kaufvertrag-ebay",
+      "snippet": "Mar 16, 2026 · Ein Kaufvertrag kommt durch zwei Willenserklärungen – Angebot und Annahme – zustande. Obgleich im Rahmen von …"
+    },
+    {
+      "title": "eBay Rückgaberecht bei einem Privatverkauf - JuraForum.de",
+      "url": "https://www.juraforum.de/lexikon/ebay-rueckgaberecht",
+      "snippet": "May 26, 2026 · Viele Privatleute, die über eBay etwas verkaufen, wollen ihre Haftung ausschließen. Doch wie sieht es mit dem eBay …"
+    },
+    {
+      "title": "Verwendung eines Markennamens in der Artikelbeschreibung bei eBay ...",
+      "url": "https://www.123recht.de/ratgeber/internetrecht-computerrecht/Verwendung-eines-Markennamens-in-der-Artikelbeschreibung-bei-eBay-__a17323.html",
+      "snippet": "Verwendung eines Markennamens in der Artikelbeschreibung bei eBay Von Rechtsanwältin Nina Marx Ratgeber - Internetrecht, …"
+    },
+    {
+      "title": "Ebay Kleinanzeigen - Käufer möchte vom Kauf Zurücktreten.",
+      "url": "https://www.123recht.de/forum/kaufrecht/Ebay-Kleinanzeigen-Kaeufer-moechte-vom-Kauf-Zuruecktreten-__f521848.html",
+      "snippet": "Jun 22, 2017 · Ebay Kleinanzeigen - Käufer möchte vom Kauf Zurücktreten. Hallo, ich habe auf eBay Kleinanzeigen ein Tablet …"
+    },
+    {
+      "title": "eBay-Kleinanzeigen: Waren beschädigt - Rückerstattung?",
+      "url": "https://www.123recht.de/forum/internetauktionen/eBay-Kleinanzeigen-Waren-beschaedigt-Rueckerstattung-__f509679.html",
+      "snippet": "Sep 22, 2016 · Status: Frischling(2 Beiträge, 0x hilfreich) eBay-Kleinanzeigen: Waren beschädigt - Rückerstattung? Hallo, ich habe …"
+    }
+  ]
+}

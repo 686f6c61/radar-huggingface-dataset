@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-q4v2-vs16",
+  "slug": "agurung-cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-q4v2-vs16",
+  "author": "agurung",
+  "url": "https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-q4v2-vs16",
+  "created_at": "2026-09-09T05:07:32.000Z",
+  "updated_at": "2026-09-11T01:25:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "openrlhf",
+    "grpo",
+    "reinforcement-learning",
+    "code-generation",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 44125895250,
+  "storage_human": "44.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=11d7309b7169660e1940274a707467a9",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "New AI Models (Last 30 Days) — Page 35 - Featherless.ai",
+      "url": "https://featherless.ai/models?page=35&release_recency=30d",
+      "snippet": "agurungColdTools4B32K · cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-iid30 · 0· · 328· · Aug 2026 · New · Firemedic15ColdTools500M32K · qwen2.5-0.5b-ft-matched-merged · 0· · 328· · Aug 2026 · New · ermiaazarkhaliliColdTools9B32K · Ornith-1.5-9B-Function-Calling-xLAM-Unsloth ·"
+    },
+    {
+      "title": "Local AI Model Catalog — 132 Self-Hosted Models Compared (2026)",
+      "url": "https://local-ai-models.ai/local-ai-models.html",
+      "snippet": "Reference guide for 132 self-hosted AI models. VRAM requirements, quantization options, hardware tiers, and recommended stacks for running LLMs locally. Updated September 7, 2026."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

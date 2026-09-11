@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/DeepSeek-R1-Distill-Qwen-1.5B-chat-mlx-8bit",
+  "slug": "sirsahol-deepseek-r1-distill-qwen-1-5b-chat-mlx-8bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/DeepSeek-R1-Distill-Qwen-1.5B-chat-mlx-8bit",
+  "created_at": "2026-09-10T22:06:54.000Z",
+  "updated_at": "2026-09-10T22:23:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen2",
+    "8-bit",
+    "conversational",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "base_model:quantized:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 1899796243,
+  "storage_human": "1.9 GB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to set Audio device as default in Windows 11",
+      "url": "https://www.thewindowsclub.com/change-default-sound-output-device-in-windows-10",
+      "snippet": "Mar 23, 2026 · In this post, we will show you how to change default Sound Output Device in Windows 11 and Windows 10. Using this …"
+    },
+    {
+      "title": "Setting Up Default Audio Device: Complete Guide [2026]",
+      "url": "https://www.techcommuters.com/setting-up-default-audio-device/",
+      "snippet": "May 6, 2026 · Knowing how to setup default audio device saves you a lot of time and frustration. Many people plug in new audio …"
+    },
+    {
+      "title": "How to Set Default Audio Device On Windows 11 - TechViral",
+      "url": "https://techviral.net/set-default-audio-device-windows-11/",
+      "snippet": "Jun 18, 2026 · Want to set default sound device on new Windows 11? Here we have shared a step-by-step guide on changing default …"
+    },
+    {
+      "title": "How To Set Up Default Audio Device In Windows 11 - Techworm",
+      "url": "https://www.techworm.net/2026/07/set-up-default-audio-device-windows.html",
+      "snippet": "Jul 19, 2026 · So in this guide, I’ll walk you through the different ways to set up a default audio device in Windows 11 and also show …"
+    },
+    {
+      "title": "Setting Up Default Audio Device in Windows - mictest.pro",
+      "url": "https://www.mictest.pro/setting-up-default-audio-device/",
+      "snippet": "Mar 25, 2026 · Setting up default audio device in Windows 10 & 11 takes under 2 minutes. Fix wrong output, silent headphones & …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "FriskyFennec/Ling-3.0-tiny-base-midtrain-GGUF",
+  "slug": "friskyfennec-ling-3-0-tiny-base-midtrain-gguf",
+  "author": "FriskyFennec",
+  "url": "https://huggingface.co/FriskyFennec/Ling-3.0-tiny-base-midtrain-GGUF",
+  "created_at": "2026-09-10T22:25:36.000Z",
+  "updated_at": "2026-09-11T00:01:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "base_model:inclusionAI/Ling-3.0-tiny-base-midtrain",
+    "base_model:quantized:inclusionAI/Ling-3.0-tiny-base-midtrain",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8209997600,
+  "parameters_human": "8.21B",
+  "storage_bytes": 75632428704,
+  "storage_human": "75.6 GB",
+  "base_model": "inclusionAI/Ling-3.0-tiny-base-midtrain",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NÖTTV - Niederösterreichischer Tischtennisverband",
+      "url": "https://www.noettv.org/",
+      "snippet": "Aug 30, 2026 · Am 05. und 06.09.2026 verwandelte sich Wr. Neudorf erneut in das Zentrum des niederösterreichischen und …"
+    },
+    {
+      "title": "Niederösterreichischer Tischtennisverband - NÖTTV",
+      "url": "https://www.facebook.com/noettv/",
+      "snippet": "Aug 17, 2026 · Die Gruppensitzung West fand am 17.7.2026 in Pur... Thomas Gamsjäger and 2 others. 3. Niederösterreichischer …"
+    },
+    {
+      "title": "XTTV Ergebnisdienst | XTTV",
+      "url": "https://www.xttv.at/?page_id=67",
+      "snippet": "Der XTTV Ergebnisdienst ist die zentrale Informationsquelle für die TT-Meisterschaften des ÖTTVs und dessen Landesverbänden …"
+    },
+    {
+      "title": "Niederösterreichischer Tischtennisverband - NÖTTV (2026)",
+      "url": "https://www.localgymsandfitness.com/XX/Unknown/142708149244027/Nieder%C3%B6sterreichischer-Tischtennisverband---N%C3%96TTV",
+      "snippet": "Jul 23, 2026 · Veranstaltung des ÖTTV zum WTTD in Wiener Neudorf Der ÖTTV veranstaltet am 23.4.2026 um 16 Uhr anlässlich …"
+    },
+    {
+      "title": "Meisterschaft & Cup - Niederösterreichischer Tischtennisverband",
+      "url": "https://www.noettv.org/bewerbe/meisterschaft-cup",
+      "snippet": "Jun 2, 2026 · Externes Tool zum Anzeigen der Mannschaftsmeisterschafts-Nennungen. Externes Tool zur Suche von Spielern. …"
+    }
+  ]
+}

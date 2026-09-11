@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "MinaMila/Qwen2.5-1.5B-self",
+  "slug": "minamila-qwen2-5-1-5b-self",
+  "author": "MinaMila",
+  "url": "https://huggingface.co/MinaMila/Qwen2.5-1.5B-self",
+  "created_at": "2026-09-10T21:10:38.000Z",
+  "updated_at": "2026-09-10T21:10:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85338603,
+  "storage_human": "85 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Player.pl - Seriale, Filmy, Programy, kanały TV Online",
+      "url": "https://playerplus.player.pl/",
+      "snippet": "Player.pl | Sprawdź najbardziej angażujący serwis VOD w Polsce. Programy i seriale TVN nawet tydzień przed premierą w TV, filmy …"
+    },
+    {
+      "title": "Player.pl - Premiery seriali i programów, na żywo, płatne pakiety TV ...",
+      "url": "https://sklep.player.pl/",
+      "snippet": "Poznaj ofertę Player. Najlepsze kanały, tysiące seriali, filmów i programów. Premierowe odcinki, a wszystko to w jednym miejscu. …"
+    },
+    {
+      "title": "Kategoria artykułu: Płatności i subskrypcja - Player",
+      "url": "https://pomoc.player.pl/knowledge-category/platnosci-subskrypcja",
+      "snippet": "Dlaczego pobierana jest płatność, jeśli nie mam aktywnych pakietów? W jaki sposób mogę kupić pakiet? Jak usunąć kartę płatniczą? …"
+    },
+    {
+      "title": "kulisy slawy malgorzaty niemirskiej - seriale, filmy ... - Player.pl",
+      "url": "https://player.pl/kulisy-slawy-malgorzaty-niemirskiej,t",
+      "snippet": "Player.pl | Sprawdź najbardziej angażujący serwis VOD w Polsce. Programy i seriale TVN nawet tydzień przed premierą w TV, filmy …"
+    },
+    {
+      "title": "kultowe filmy - seriale, filmy, programy online na Player.pl",
+      "url": "https://player.pl/kultowe-filmy,t",
+      "snippet": "Player.pl | Sprawdź najbardziej angażujący serwis VOD w Polsce. Programy i seriale TVN nawet tydzień przed premierą w TV, filmy …"
+    }
+  ]
+}

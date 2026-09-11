@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TheHassanSaud/P2_pythia410m_q0.4_dpo_beta0.4",
+  "slug": "thehassansaud-p2_pythia410m_q0-4_dpo_beta0-4",
+  "author": "TheHassanSaud",
+  "url": "https://huggingface.co/TheHassanSaud/P2_pythia410m_q0.4_dpo_beta0.4",
+  "created_at": "2026-09-10T21:55:59.000Z",
+  "updated_at": "2026-09-10T21:56:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 405334016,
+  "parameters_human": "405.3M",
+  "storage_bytes": 1621370224,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "كلمة (قرآن) في القرآن الكريم - بوابة اسلاميات| القرآن الكريم وعلومه",
+      "url": "https://islamiyyat.com/%d9%83%d9%84%d9%85%d8%a9-%d9%82%d8%b1%d8%a2%d9%86-%d9%81%d9%8a-%d8%a7%d9%84%d9%82%d8%b1%d8%a2%d9%86-%d8%a7%d9%84%d9%83%d8%b1%d9%8a%d9%85/",
+      "snippet": "Mar 2, 2023 · إعداد صفحة إسلاميات هذه هي الآيات والسور التي تكرر فيها ذكر كلمة (قرآن) في القرآن الكريم بحسب عدد مرات تكرارها: – (11 مرة) (إِنَّ قُرْآنَ الْفَجْرِ كَانَ مَشْهُودًا ﴿٧٨ الإسراء﴾)"
+    },
+    {
+      "title": "أرقام وإحصاءات قرآنية في المصحف الإلكتروني",
+      "url": "https://e-quran.com/q-statis.html",
+      "snippet": "الصحابي الوحيد الذي ذكر في القرآن الكريم هو زيد بن حارثة رضي الله عنه في قوله تعالى \"مَّا كَانَ مُحَمَّدٌ أَبَا أَحَدٍ مِّن رِّجَالِكُمْ وَلَكِن رَّسُولَ اللَّهِ وَخَاتَمَ النَّبِيِّينَ ..."
+    },
+    {
+      "title": "أرقام قرآنية - iid-quran.com",
+      "url": "http://www.iid-quran.com/Statistics/NumQu2.php",
+      "snippet": "أرقام قرآنية لفظ الجلالة \"الله\" جل وعلا، ورد في القرآن الكريم \" 2707 \" مرة ، منها 980 مرة في حالة الرفع , و592 مرة في حالة النصب , و1135 في حالة الجر . تكرر لفظ ( الشهر ) في القرآن …"
+    },
+    {
+      "title": "كم مرة ذكر اسم القرآن الكريم في القرآن؟ - موضوع سؤال وجواب",
+      "url": "https://answers.mawdoo3.com/%D9%83%D9%85-%D9%85%D8%B1%D8%A9-%D8%B0%D9%83%D8%B1-%D8%A7%D8%B3%D9%85-%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86-%D8%A7%D9%84%D9%83%D8%B1%D9%8A%D9%85-%D9%81%D9%8A-%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86",
+      "snippet": "ولقد ذكر لفظ \"القرآن\" في القرآن الكريم ثماني وستين مرة، وسأذكر بعض مواضعها على النحو الآتي: ورد لفظ القرآن الكريم في سورة الإسراء في أحد عشر موضعًا."
+    },
+    {
+      "title": "احصائيات قرآنية – المعهد الفاطمي المحمدي",
+      "url": "https://fatimimohamadi.com/%d8%a7%d8%ad%d8%b5%d8%a7%d8%a6%d9%8a%d8%a7%d8%aa-%d9%82%d8%b1%d8%a2%d9%86%d9%8a%d8%a9/",
+      "snippet": "تكرر لفظ (الشهر) في القرآن الكريم ( 12) مرة بقدر عدد الشهور . تكرر لفظ ( اليوم )في القرآن الكريم ( 365) مرة بقدر عدد أيام السنة . تكرر لفظ القرآن ( 68 )مرة في القرآن الكريم مع …"
+    }
+  ]
+}

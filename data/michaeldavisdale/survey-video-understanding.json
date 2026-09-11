@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "michaeldavisdale/survey-video-understanding",
+  "slug": "michaeldavisdale-survey-video-understanding",
+  "author": "michaeldavisdale",
+  "url": "https://huggingface.co/michaeldavisdale/survey-video-understanding",
+  "created_at": "2026-09-10T21:14:16.000Z",
+  "updated_at": "2026-09-10T21:14:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "video-understanding",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rekenmachine - Online Rekenmachine",
+      "url": "https://www.onlinerekenmachine.com/",
+      "snippet": "Onze online rekenmachine is direct toegankelijk vanuit je browser, zonder dat je iets hoeft te installeren. Deze simpele calculator kan …"
+    },
+    {
+      "title": "Rekenmachine Calculator",
+      "url": "https://rekenmachine-calculator.nl/index.html",
+      "snippet": "Maak online je berekeningen met deze handige rekenmachine. Deze calculator kan de reken basisfuncties vermenigvuldigen delen …"
+    },
+    {
+      "title": "Online rekenmachine - OK Calculator",
+      "url": "https://okcalc.com/nl/",
+      "snippet": "Deze rekenmachine voert alle basiswiskundige bewerkingen uit die u in het dagelijks leven nodig kunt hebben. Voor alle mogelijke …"
+    },
+    {
+      "title": "Online rekenmachine",
+      "url": "https://www.online-calculator.com/nl/",
+      "snippet": "Maak wiskunde gemakkelijk met onze online rekenmachine en conversiesite. Al onze tools voor financiën, onderwijs, gezondheid, …"
+    },
+    {
+      "title": "Gratis Online Rekenmachine - Eenvoudig en Snel!",
+      "url": "https://online-rekenmachines.nl/",
+      "snippet": "Gebruik onze gratis online rekenmachine voor al je basisberekeningen. Snel en eenvoudig optellen, aftrekken, vermenigvuldigen en …"
+    }
+  ]
+}

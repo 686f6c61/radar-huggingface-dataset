@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "thoughtworks/Llama-3.2-3B-backdoor-2single-refusal",
+  "slug": "thoughtworks-llama-3-2-3b-backdoor-2single-refusal",
+  "author": "thoughtworks",
+  "url": "https://huggingface.co/thoughtworks/Llama-3.2-3B-backdoor-2single-refusal",
+  "created_at": "2026-09-10T22:45:06.000Z",
+  "updated_at": "2026-09-10T22:46:34.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "backdoor",
+    "single-trigger-backdoor",
+    "model-organism",
+    "interpretability",
+    "ai-safety",
+    "conversational",
+    "en",
+    "dataset:thoughtworks/backdoor-2single",
+    "base_model:meta-llama/Llama-3.2-3B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.2-3B-Instruct",
+    "license:llama3.2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6425529112,
+  "storage_human": "6.4 GB",
+  "base_model": "meta-llama/Llama-3.2-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Undeath First Quest Start : r/skyrimmods - Reddit",
+      "url": "https://www.reddit.com/r/skyrimmods/comments/13w9w3u/undeath_first_quest_start/",
+      "snippet": "May 31, 2023 · In the latest update of classical lichdom you need to read the note left in the silver blood inn to start quest"
+    },
+    {
+      "title": "Undeath Remastered - No Auto Quest Start Deutsch (german)",
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/45629?file_id=185535",
+      "snippet": "Mit diesem Plug-in beginnt die Untod-Questlinie durch einen Brief von Illia, der nach dem Abschluss der Quest \"Reue\" und der …"
+    },
+    {
+      "title": "Undeath - The Elder Scrolls Mods Wiki",
+      "url": "https://tes-mods.fandom.com/wiki/Undeath",
+      "snippet": "A fully featured questline that allows the player to discover and obtain the necessary components for the ritual of undeath. Delve into …"
+    },
+    {
+      "title": "Undeath Remastered at Skyrim Special Edition Nexus - Nexus Mods",
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/6180",
+      "snippet": "Dec 18, 2016 · Uncover a small new questline that will take you to the frigid peaks of the Dragontail Mountains themselves, and …"
+    },
+    {
+      "title": "Skyrim Undeath Mod Guide – Undeath First Quest Start",
+      "url": "https://os.wrub.org/skyrim-undeath-mod-guide-undeath-first-quest-start/",
+      "snippet": "This walkthrough is a comprehensive guide covering every quest and artistic detail of the Makes several changes to the way lichdom …"
+    }
+  ]
+}

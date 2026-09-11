@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "MoAIBo/pick_place_depth_posvel_base_delta_h15_policy_vision_expert_50k",
+  "slug": "moaibo-pick_place_depth_posvel_base_delta_h15_policy_vision_expert_50k",
+  "author": "MoAIBo",
+  "url": "https://huggingface.co/MoAIBo/pick_place_depth_posvel_base_delta_h15_policy_vision_expert_50k",
+  "created_at": "2026-09-10T21:02:54.000Z",
+  "updated_at": "2026-09-10T21:03:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:MoAIBo/merged_so101_tb4_pick_place_depth_posvel_base_delta_h15",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906734752,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comment reculer avec une remorque ? · CitizenDoc",
+      "url": "https://www.citizendoc.fr/auto/1326-comment-reculer-avec-une-remorque.php",
+      "snippet": "Jun 18, 2024 · Reculer avec une remorque : techniques, repères, erreurs à éviter et astuces pour réussir vos manœuvres sans …"
+    },
+    {
+      "title": "Guide pratique pour conduire une remorque en marche arrière : …",
+      "url": "https://umvie.com/guide-pratique-pour-conduire-une-remorque-en-marche-arriere-conseils-et-astuces/",
+      "snippet": "May 15, 2024 · En suivant les conseils et astuces présentés dans ce guide pratique, vous pourrez améliorer vos compétences de …"
+    },
+    {
+      "title": "Comment reculer avec une remorque: 11 étapes - wikiHow",
+      "url": "https://fr.wikihow.com/reculer-avec-une-remorque",
+      "snippet": "Les remorques courtes sont plus facilement manœuvrables et plus réactives, avec pour effet d’être plus difficiles à manœuvrer en …"
+    },
+    {
+      "title": "Comment conduire en marche arrière avec une remorque ?",
+      "url": "https://www.remorqueshop.fr/blogs/evolution-technique-des-remorques/comment-conduire-en-marche-arriere-avec-une-remorq/",
+      "snippet": "Jun 27, 2023 · Comment conduire en marche arrière avec une remorque ou une caravane ? Avec quelques conseils pratiques, tout …"
+    },
+    {
+      "title": "comment faire marche arriere avec remorque",
+      "url": "https://remorque-a-bras.fr/comment-faire-marche-arriere-avec-remorque/",
+      "snippet": "Le remorquage peut s’avérer délicat, notamment lorsque l’on se retrouve à devoir faire marche arrière avec une remorque. Pour …"
+    }
+  ]
+}

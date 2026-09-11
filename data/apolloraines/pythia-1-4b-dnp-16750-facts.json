@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ApolloRaines/Pythia-1.4B-DNP-16750-Facts",
+  "slug": "apolloraines-pythia-1-4b-dnp-16750-facts",
+  "author": "ApolloRaines",
+  "url": "https://huggingface.co/ApolloRaines/Pythia-1.4B-DNP-16750-Facts",
+  "created_at": "2026-09-10T21:04:25.000Z",
+  "updated_at": "2026-09-10T21:11:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "jblaze",
+    "dnp",
+    "direct-neural-programming",
+    "knowledge-implant",
+    "pythia",
+    "stress-test",
+    "en",
+    "base_model:EleutherAI/pythia-1.4b",
+    "base_model:finetune:EleutherAI/pythia-1.4b",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1414647808,
+  "parameters_human": "1.41B",
+  "storage_bytes": 2829330208,
+  "storage_human": "2.8 GB",
+  "base_model": "EleutherAI/pythia-1.4b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    },
+    {
+      "title": "提问页-百度知道",
+      "url": "https://zhidao.baidu.com/msubmit/new/?ask_fr=search_header&query=%E5%AE%89%E5%9B%BD%E5%B9%BF%E5%9C%BA+Wikipedia",
+      "snippet": "0 /49 将问题补充完整可更快获得回答"
+    },
+    {
+      "title": "杭州萧山机场的UFO事件是不是真的？ - 知乎",
+      "url": "https://www.zhihu.com/question/352995875",
+      "snippet": "今天（2026年8月）看到的，2010年萧山机场ufo事件最可信的一个视频了，在居民楼角度完整10分钟视频。保证是以前从来没有出现 …"
+    },
+    {
+      "title": "如何评价 DeepSeek 涨价后，OpenCode Go 套餐的 Flash 模型调用量削 …",
+      "url": "https://www.zhihu.com/question/2072481373085028433",
+      "snippet": "Aug 16, 2026 · 言简意赅，畜X一个，DS 这么快涨价有一半原因就是因为他家拿着优惠流量泼水引流，O 的称号以后由opencode go接 …"
+    }
+  ]
+}

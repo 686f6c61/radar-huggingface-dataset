@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Thaurock/Llama-3.2-3B-Instruct-q4f16_1-MLC",
+  "slug": "thaurock-llama-3-2-3b-instruct-q4f16_1-mlc",
+  "author": "Thaurock",
+  "url": "https://huggingface.co/Thaurock/Llama-3.2-3B-Instruct-q4f16_1-MLC",
+  "created_at": "2026-09-11T01:41:59.000Z",
+  "updated_at": "2026-09-11T02:11:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlc-llm",
+  "languages": [],
+  "tags": [
+    "mlc-llm",
+    "web-llm",
+    "base_model:meta-llama/Llama-3.2-3B-Instruct",
+    "base_model:quantized:meta-llama/Llama-3.2-3B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1807423488,
+  "storage_human": "1.8 GB",
+  "base_model": "meta-llama/Llama-3.2-3B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YOPmail - Disposable Email Address - Anonymous and temporary inbox",
+      "url": "https://yopmail.com/",
+      "snippet": "YOPmail provides Disposable Email addresses to protect you against Spam. These temporary email addresses are completely …"
+    },
+    {
+      "title": "Yop - YouTube",
+      "url": "https://www.youtube.com/channel/UC328RD8mb9eYvzzNSNAYjLw",
+      "snippet": "Keep Moving (feat. Baby Ebony & Willis) (Mandog Remix) Yop 430 views • 7 years ago 3:30"
+    },
+    {
+      "title": "Yop - YouTube",
+      "url": "https://www.youtube.com/channel/UCxGUvlGPqaCy7QSe1X8p-Fg",
+      "snippet": "Bonjour à toi je suis YouTuber Gaming etc.. enfin si tu veut en savoir plus regarde ma chaîne Matériels: -8 GB de ram HyperX …"
+    },
+    {
+      "title": "yop.ch",
+      "url": "https://www.yop.ch/",
+      "snippet": "yop ist ein Schweizer Hosting-Provider der all Ihre Wünsche abdeckt. Wir bringen Ihre Website schnell und einfach ins Netz, sind …"
+    },
+    {
+      "title": "YOP",
+      "url": "https://yop.to/",
+      "snippet": "Du möchtest ein YOP verschenken? Melde dich an oder registriere dich jetzt kostenlos - Los geht’s!"
+    }
+  ]
+}

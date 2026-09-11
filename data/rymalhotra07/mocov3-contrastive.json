@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Rymalhotra07/mocov3-contrastive",
+  "slug": "rymalhotra07-mocov3-contrastive",
+  "author": "Rymalhotra07",
+  "url": "https://huggingface.co/Rymalhotra07/mocov3-contrastive",
+  "created_at": "2026-09-10T22:06:10.000Z",
+  "updated_at": "2026-09-10T22:06:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WEB.DE Login - ganz einfach",
+      "url": "https://anmelden.web.de/",
+      "snippet": "WEB.DE Login: E-Mail-Adresse anmelden oder einloggen – kompakte Anleitung zum WEB.DE Login und schnelle Hilfe bei Login …"
+    },
+    {
+      "title": "WEB.DE Club - Login",
+      "url": "https://club.web.de/",
+      "snippet": "Klicken Sie einfach im Postfach auf den Navipunkt \"Club Center\". Alle wichtigen Informationen rund um Ihren Vertrag, Ihre Club …"
+    },
+    {
+      "title": "WEB.DE - kostenlose E-Mail-Adresse, FreeMail & Nachrichten",
+      "url": "https://web.de/",
+      "snippet": "Hier finden Sie alle Nachrichten aus Ihrer Region. Ihre tägliche Millionen-Chance und das kostenlos! Einfach finden, was Sie suchen …"
+    },
+    {
+      "title": "Einloggen bei WEB.DE",
+      "url": "https://hilfe.web.de/account/login/index.html",
+      "snippet": "Einloggen bei WEB.DE Sie haben Fragen oder ein Problem mit dem Login in Ihr Postfach? Hier finden Sie die relevanten …"
+    },
+    {
+      "title": "Anmeldung und Passwort - WEB.DE",
+      "url": "https://hilfe.web.de/account/logindaten/index.html",
+      "snippet": "Sie haben Fragen zu Ihrem Konto oder ein Problem mit dem Login auf Ihr Postfach? Hier finden Sie die relevanten Informationen."
+    }
+  ]
+}

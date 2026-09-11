@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "maxime/personal-notebooks-350m",
+  "slug": "maxime-personal-notebooks-350m",
+  "author": "maxime",
+  "url": "https://huggingface.co/maxime/personal-notebooks-350m",
+  "created_at": "2026-09-10T19:08:12.000Z",
+  "updated_at": "2026-09-10T19:18:52.000Z",
+  "license": "research-and-artistic-use-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "lfm2",
+    "text-generation",
+    "lfm2.5",
+    "lora",
+    "webgpu",
+    "art",
+    "thought-completion",
+    "simone-weil",
+    "albert-camus",
+    "conversational",
+    "en",
+    "base_model:LiquidAI/LFM2.5-350M",
+    "base_model:finetune:LiquidAI/LFM2.5-350M",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 289314241,
+  "storage_human": "289 MB",
+  "base_model": "LiquidAI/LFM2.5-350M",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définitions : maxime - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/maxime/49976",
+      "snippet": "Maxime (du latin maxima sententia, sentence la plus générale) = formule brève énonçant une règle de morale ou de conduite ou une …"
+    },
+    {
+      "title": "maxime - Définitions, synonymes, prononciation, exemples | Dico en ...",
+      "url": "https://dictionnaire.lerobert.com/definition/maxime",
+      "snippet": "Définition, exemples et prononciation de maxime : Formule énonçant une règle de conduite, une règle …"
+    },
+    {
+      "title": "Maxime — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Maxime",
+      "snippet": "Comédiens Maxime Van Laer, dit Maxime, un humoriste français né le 18 février 1966."
+    },
+    {
+      "title": "Prénom Maxime (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/maxime/prenom-3341",
+      "snippet": "Quelle est la signification du prénom Maxime ? Le prénom Maxime vient du latin maximus qui signifie \"le plus grand\"."
+    },
+    {
+      "title": "maxime — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/maxime",
+      "snippet": "maxime \\mak.sim\\ féminin Proposition générale qui sert de principe, de fondement, de règle dans un art, dans une science, et …"
+    }
+  ]
+}

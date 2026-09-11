@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "aywilliams/3d-scene-understanding-run3",
+  "slug": "aywilliams-3d-scene-understanding-run3",
+  "author": "aywilliams",
+  "url": "https://huggingface.co/aywilliams/3d-scene-understanding-run3",
+  "created_at": "2026-09-10T19:59:10.000Z",
+  "updated_at": "2026-09-10T19:59:16.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "3d-scene-understanding",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "巴黎世家黑丝袜多少钱？",
+      "url": "https://www.zhihu.com/tardis/bd/ans/2313443146",
+      "snippet": "巴黎世家 Balenciaga 黑丝袜官网售价$250，折合成人民币大概在1588元左右，其他国外网站也是250美元。"
+    },
+    {
+      "title": "黑色丝袜如何搭配尽显高级、避免土气？ - 知乎",
+      "url": "https://www.zhihu.com/question/389692895",
+      "snippet": "听到瑞酱这一番话， 是不是想把自己的黑丝拿出来扔掉! 别急!慢着! 今天瑞酱就为大家提供一些挑选黑丝的技巧， 还会给大家提出一些 …"
+    },
+    {
+      "title": "男生真的喜欢女生穿黑丝吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/444748491",
+      "snippet": "男生真的喜欢女生穿黑丝吗？ 说实话，男生喜欢女生穿黑丝吗？ 男生怎么看待穿黑色丝袜？ 为什么？ 作为女生，我觉得黑色的腿有点 …"
+    },
+    {
+      "title": "黑丝怎么搭配衣服？ - 知乎",
+      "url": "https://www.zhihu.com/question/30321679",
+      "snippet": "说起来，黑丝也算是复古回潮了，前几年没什么人穿，感觉 很容易显俗气色情。 现在再看，才发现搭配好了，也可以 在日常生活中把 …"
+    },
+    {
+      "title": "黑丝袜 - 知乎",
+      "url": "https://www.zhihu.com/topic/19563456",
+      "snippet": "丝袜（Silk Stockings）是一种服饰用品，穿着者多为女性。多数是连身的，有皮肤色、黑色、白色等颜色，是女人的第二层皮肤，也 …"
+    }
+  ]
+}

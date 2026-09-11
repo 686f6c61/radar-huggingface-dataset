@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Sanorian/Mistral-7B-4bit-1C",
+  "slug": "sanorian-mistral-7b-4bit-1c",
+  "author": "Sanorian",
+  "url": "https://huggingface.co/Sanorian/Mistral-7B-4bit-1C",
+  "created_at": "2026-09-10T20:10:18.000Z",
+  "updated_at": "2026-09-10T22:04:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "conversational",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1132728320,
+  "parameters_human": "1.13B",
+  "storage_bytes": 18574149046,
+  "storage_human": "18.6 GB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ξερετε κανενα σαιτ live streaming για μπαλα ...",
+      "url": "https://www.reddit.com/r/GreekFooty/comments/t9luv3/%CE%BE%CE%B5%CF%81%CE%B5%CF%84%CE%B5_%CE%BA%CE%B1%CE%BD%CE%B5%CE%BD%CE%B1_%CF%83%CE%B1%CE%B9%CF%84_live_streaming_%CE%B3%CE%B9%CE%B1_%CE%BC%CF%80%CE%B1%CE%BB%CE%B1_%CE%BA%CE%B1%CE%B9/",
+      "snippet": "Mar 8, 2022 · ξερετε κανενα σαιτ live streaming για μπαλα και μπασκετ; Δυστυχως επεσε το greeklivechannels"
+    },
+    {
+      "title": "Μπορεί να έχει ξαναγραφτεί-sorry γι'αυτο ...",
+      "url": "https://www.reddit.com/r/AEKAthensFC/comments/1b5fk2y/%CE%BC%CF%80%CE%BF%CF%81%CE%B5%CE%AF_%CE%BD%CE%B1_%CE%AD%CF%87%CE%B5%CE%B9_%CE%BE%CE%B1%CE%BD%CE%B1%CE%B3%CF%81%CE%B1%CF%86%CF%84%CE%B5%CE%AFsorry_%CE%B3%CE%B9%CE%B1%CF%85%CF%84%CE%BF%CE%B1%CE%BB%CE%BB%CE%AC/",
+      "snippet": "Μπορεί να έχει ξαναγραφτεί-sorry γι'αυτο-αλλά μπορείτε να μου υποδείξετε ένα καλό stream για απόψε?"
+    },
+    {
+      "title": "Καλά site για live streaming αγώνων : r/greece - Reddit",
+      "url": "https://www.reddit.com/r/greece/comments/1czedd4/%CE%BA%CE%B1%CE%BB%CE%AC_site_%CE%B3%CE%B9%CE%B1_live_streaming_%CE%B1%CE%B3%CF%8E%CE%BD%CF%89%CE%BD/",
+      "snippet": "May 24, 2024 · Ξέρετε καλά site για live streaming αγώνων ποδοσφαίρου και μπάσκετ ;"
+    },
+    {
+      "title": "foothub - Reddit",
+      "url": "https://www.reddit.com/r/foothub/",
+      "snippet": "Mar 24, 2024 · r/foothub Get appGet the Reddit appLog InLog in to Reddit"
+    }
+  ]
+}

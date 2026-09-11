@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/Qwen2.5-1.5B-Instruct-chat-mlx-4bit",
+  "slug": "sirsahol-qwen2-5-1-5b-instruct-chat-mlx-4bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/Qwen2.5-1.5B-Instruct-chat-mlx-4bit",
+  "created_at": "2026-09-10T19:16:07.000Z",
+  "updated_at": "2026-09-10T19:29:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen2",
+    "4-bit",
+    "conversational",
+    "text-generation",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 880050974,
+  "storage_human": "880 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Classe Terza Archivi - Maestra Anita",
+      "url": "https://www.maestraanita.it/category/classe-terza/",
+      "snippet": "Apr 19, 2026 · Festa della mamma in classe terza Schede da stampare: Vaso […] Il verbo essere Quest’anno presenterò solo il …"
+    },
+    {
+      "title": "ITALIANO CLASSE TERZA - Maestra Anita",
+      "url": "https://www.maestraanita.it/italiano-classe-terza/",
+      "snippet": "Jul 1, 2021 · ITALIANO CLASSE TERZA. Tutti gli argomenti divisi per mese. Trovi sia il quaderno dei testi sia quello di grammatica."
+    },
+    {
+      "title": "Maestra Anita - Quaderno di italiano, classe terza. Il... | Facebook",
+      "url": "https://www.facebook.com/maestranita/posts/quaderno-di-italiano-classe-terzail-quaderno-%C3%A8-sempre-a-disposizione-on-line-non/2911071662477570/",
+      "snippet": "Jun 30, 2021 · Quaderno di italiano, classe terza. Il quaderno è sempre a disposizione on-line, non è un file…"
+    },
+    {
+      "title": "Italiano Classe Terza Archivi - Maestra Anita",
+      "url": "https://www.maestraanita.it/category/classe-terza/italiano-classe-terza/",
+      "snippet": "Mar 15, 2026 · Ultime attività di Grammatica in classe terza Alcune schede sono […] Frasi minime, soggetto, predicato verbale e …"
+    },
+    {
+      "title": "MATEMATICA CLASSE TERZA - Maestra Anita",
+      "url": "https://www.maestraanita.it/matematica-classe-terza/",
+      "snippet": "Jul 3, 2021 · MATEMATICA CLASSE TERZA. Quaderno disponibile sempre on-line. Per facilitare la consultazione o diviso gli …"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "caiovicentino1/DeepSeek-V4.1-Flash-HLWQ-Engram-Q4",
+  "slug": "caiovicentino1-deepseek-v4-1-flash-hlwq-engram-q4",
+  "author": "caiovicentino1",
+  "url": "https://huggingface.co/caiovicentino1/DeepSeek-V4.1-Flash-HLWQ-Engram-Q4",
+  "created_at": "2026-09-10T21:58:53.000Z",
+  "updated_at": "2026-09-10T22:07:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "tags": [
+    "safetensors",
+    "deepseek_v41",
+    "hlwq",
+    "hadamard-lloyd-quantization",
+    "deepseek",
+    "engram",
+    "sglang",
+    "rtx-pro-6000",
+    "sm120",
+    "en",
+    "pt",
+    "arxiv:2603.29078",
+    "arxiv:2502.02617",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 566591466194,
+  "parameters_human": "566.59B",
+  "storage_bytes": 408917905487,
+  "storage_human": "408.9 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.de/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=de",
+      "snippet": "Google gibt es auch auf: English Werbeprogramme Über Google Google.com in English"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Anmelden – Google Konten",
+      "url": "https://accounts.google.com/login?hl=de",
+      "snippet": "Nicht Ihr Computer? Dann können Sie für die Anmeldung ein Fenster zum privaten Surfen öffnen. Weitere Informationen zur …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/?hl=de-US",
+      "snippet": "Google gibt es auch auf: English Werbeprogramme Über Google Google.com"
+    }
+  ]
+}

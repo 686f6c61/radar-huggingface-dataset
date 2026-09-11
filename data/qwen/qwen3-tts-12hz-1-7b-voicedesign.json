@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+  "slug": "qwen-qwen3-tts-12hz-1-7b-voicedesign",
+  "author": "Qwen",
+  "url": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+  "created_at": "2026-01-21T08:55:55.000Z",
+  "updated_at": "2026-01-29T08:04:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "qwen-tts",
+  "languages": [],
+  "tags": [
+    "qwen-tts",
+    "safetensors",
+    "qwen3_tts",
+    "audio",
+    "tts",
+    "qwen",
+    "multilingual",
+    "text-to-speech",
+    "arxiv:2601.15621",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 407,
+  "downloads_30d": 291114,
+  "trending_score": 8,
+  "parameters": 1916676352,
+  "parameters_human": "1.92B",
+  "storage_bytes": 4515695644,
+  "storage_human": "4.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pair a Bluetooth device in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/bluetooth/pair-a-bluetooth-device-in-windows",
+      "snippet": "All kinds of Bluetooth devices can be paired with a Windows device including: Keyboards and mice. Phones. Speakers and …"
+    },
+    {
+      "title": "Ativar ou desativar o Bluetooth no Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/pt-br/windows/hardware/bluetooth/turn-bluetooth-on-or-off-in-windows",
+      "snippet": "Aprenda o passo para ativar ou desativar o Bluetooth no Windows usando o aplicativo Configurações, configurações rápidas e …"
+    },
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "Google Help",
+      "url": "https://support.google.com/?hl=en",
+      "snippet": "If you're having trouble accessing a Google product, there's a chance we're currently experiencing a temporary problem. You can …"
+    },
+    {
+      "title": "Activar o desactivar Bluetooth en Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/es-es/windows/hardware/bluetooth/turn-bluetooth-on-or-off-in-windows",
+      "snippet": "Obtén información sobre el paso para activar o desactivar Bluetooth en Windows mediante la aplicación Configuración, la …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "sstoica12",
   "url": "https://huggingface.co/sstoica12/acquisition_student_llama8bins_omnimath_confidence",
   "created_at": "2026-09-07T09:59:48.000Z",
-  "updated_at": "2026-09-09T01:40:15.000Z",
+  "updated_at": "2026-09-10T14:07:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 279,
+  "downloads_30d": 436,
   "trending_score": 0,
   "parameters": 8030261248,
   "parameters_human": "8.03B",
-  "storage_bytes": 32138322672,
-  "storage_human": "32.1 GB",
+  "storage_bytes": 48198879048,
+  "storage_human": "48.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

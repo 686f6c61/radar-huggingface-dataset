@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "lugman-madhiai/qwen3.5-0.8b-search-agent-len3-1k-ablation",
+  "slug": "lugman-madhiai-qwen3-5-0-8b-search-agent-len3-1k-ablation",
+  "author": "lugman-madhiai",
+  "url": "https://huggingface.co/lugman-madhiai/qwen3.5-0.8b-search-agent-len3-1k-ablation",
+  "created_at": "2026-09-10T22:09:22.000Z",
+  "updated_at": "2026-09-10T22:09:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 873438784,
+  "parameters_human": "873.4M",
+  "storage_bytes": 1766932043,
+  "storage_human": "1.8 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "16 Best Hotels in New York. Hotels from $55/night - KAYAK",
+      "url": "https://www.kayak.com/New-York-Hotels.15830.hotel.ksp?msockid=33aaf3bfa0a763910989e46fa1666240",
+      "snippet": "Stay at Americana Inn from $142/night, Now Now Noho from $170/night, Hi New York City Hostel from $55/night and more. Compare …"
+    },
+    {
+      "title": "Last Minute Hotel Deals in New York from $101/day - KAYAK",
+      "url": "https://www.kayak.com/New-York-Hotels_Last-Minute.Lhotel.15830.hotel.ksp?msockid=33aaf3bfa0a763910989e46fa1666240",
+      "snippet": "Sep 11, 2026 · Looking for a last minute New York hotel? Last minute hotels for tonight from $54/day; tomorrow from $54/day; this …"
+    },
+    {
+      "title": "THE 10 BEST New York City Hotel Deals (Sept 2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.com/SmartDeals-g60763-New_York_City_New_York-Hotel-Deals.html",
+      "snippet": "Jun 2, 2026 · SAVE! See Tripadvisor's New York City, NY hotel deals and special prices all in one spot. Find the perfect hotel within …"
+    },
+    {
+      "title": "New York, NY Hotels: 4,121 Cheap New York, NY Hotel Deals",
+      "url": "https://www.hotelscombined.com/Place/New_York_City.htm",
+      "snippet": "1 day ago · HotelsCombined compares all New York hotel deals from the best accommodation sites at once. Read Guest Reviews on …"
+    },
+    {
+      "title": "New York Hotels: 29,442 Cheap New York Hotel Deals",
+      "url": "https://www.hotelscombined.com/Place/New_York.htm",
+      "snippet": "6 days ago · HotelsCombined compares all New York hotel deals from the best accommodation sites at once. Read Guest Reviews …"
+    }
+  ]
+}

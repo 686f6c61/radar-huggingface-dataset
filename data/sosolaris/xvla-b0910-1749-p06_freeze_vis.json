@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SoSolaris/xvla-b0910-1749-p06_freeze_vis",
+  "slug": "sosolaris-xvla-b0910-1749-p06_freeze_vis",
+  "author": "SoSolaris",
+  "url": "https://huggingface.co/SoSolaris/xvla-b0910-1749-p06_freeze_vis",
+  "created_at": "2026-09-10T19:28:11.000Z",
+  "updated_at": "2026-09-10T19:28:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "xvla",
+    "dataset:SoSolaris/socks_20_diversified",
+    "arxiv:2510.10274",
+    "base_model:lerobot/xvla-base",
+    "base_model:finetune:lerobot/xvla-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 879687256,
+  "parameters_human": "879.7M",
+  "storage_bytes": 1759506160,
+  "storage_human": "1.8 GB",
+  "base_model": "lerobot/xvla-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Akcje - Notowania GPW - Giełda - Bankier.pl",
+      "url": "https://www.bankier.pl/gielda/notowania/akcje",
+      "snippet": "Najnowsze wiadomości, aktualne notowania, forum dyskusyjne, komunikaty espi, wyniki finansowe, rekomendacje"
+    },
+    {
+      "title": "WIG20 - Notowania indeksów giełdowych - Bankier.pl",
+      "url": "https://www.bankier.pl/inwestowanie/profile/quote.html?symbol=WIG20",
+      "snippet": "Dec 10, 2025 · WIG20 - najnowsze wiadomości, aktualne notowania i forum dyskusyjne na temat indeksów giełdowych."
+    },
+    {
+      "title": "Allegro Klik - nowa metoda płatności dostępna!",
+      "url": "https://spolecznosc.allegro.pl/t5/dyskusje-kupuj%C4%85cych/allegro-klik-nowa-metoda-p%C5%82atno%C5%9Bci-dost%C4%99pna/td-p/1149579",
+      "snippet": "Cześć! 13 stycznia 2026 roku Allegro uruchomiło nową metodę płatności - Allegro Klik. To rozwiązanie dla osób, które mają konto w …"
+    },
+    {
+      "title": "Sprzedający o Allegro Lokalnie",
+      "url": "https://spolecznosc.allegro.pl/t5/sprzedaj%C4%85cy-o-allegro-lokalnie/bd-p/Sprzedajacy_o_Allegro_Lokalnie",
+      "snippet": "2 days ago · Sprzedajesz na Allegro Lokalnie? Tu wymienisz się doświadczeniami i zadasz pytania."
+    },
+    {
+      "title": "公司员工私自使用盗版软件被软件公司发现，律师函发来了，但公司不 …",
+      "url": "https://www.zhihu.com/question/27207222",
+      "snippet": "作为 inhouse 很负责地告诉你 1、他们不是发现了什么，是撒网式的，所有大公司都发 2、他们有义务证明你的公司电脑上安装了这些 …"
+    }
+  ]
+}

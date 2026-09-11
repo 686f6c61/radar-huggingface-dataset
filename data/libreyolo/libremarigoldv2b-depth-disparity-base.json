@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "LibreYOLO/LibreMarigoldV2b-depth-disparity-base",
+  "slug": "libreyolo-libremarigoldv2b-depth-disparity-base",
+  "author": "LibreYOLO",
+  "url": "https://huggingface.co/LibreYOLO/LibreMarigoldV2b-depth-disparity-base",
+  "created_at": "2026-09-10T21:03:31.000Z",
+  "updated_at": "2026-09-10T21:03:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": "libreyolo",
+  "languages": [],
+  "tags": [
+    "libreyolo",
+    "marigold-v2",
+    "depth-estimation",
+    "diffusion-transformer",
+    "base_model:Qwen/Qwen-Image-Edit-2509",
+    "base_model:finetune:Qwen/Qwen-Image-Edit-2509",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1870141356,
+  "storage_human": "1.9 GB",
+  "base_model": "huawei-bayerlab/marigold-v2-0, Qwen/Qwen-Image-Edit-2509",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "consultajurisprudencial.ramajudicial.gov.co",
+      "url": "https://consultajurisprudencial.ramajudicial.gov.co/WebRelatoria/FileReferenceServlet?corp=csj&ext=pdf&file=517207",
+      "snippet": "(þúøº WÈãUü ¡\"¹> Y 1 X* qÕuÿ² ‚a C H2 Í C Ì Ò È a ˆ°U q×_¤ÓFè8:8 &OÓÂ ! Â$N2\" Á~BÁ°‹á > Ã z#„. à`ŽG ƒaƒx•ì+ æÒ Út‰X3a …"
+    },
+    {
+      "title": "CORTE SUPREMA DE JUSTICIA",
+      "url": "https://jurisprudencia.ramajudicial.gov.co/WebRelatoria/FileReferenceServlet?corp=csj&ext=doc&file=385996",
+      "snippet": "1. La Sala Penal de la Corte Suprema de Justicia en sentencia del 26 de junio de 2008, condenó a YIDIS MEDINA PADILLA a las …"
+    },
+    {
+      "title": "Rama Judicial",
+      "url": "https://jurisprudencia.ramajudicial.gov.co/WebRelatoria/FileReferenceServlet?corp=ce&ext=doc&file=2193552",
+      "snippet": "ÐÏ à¡± á> þÿ º ¼ þÿÿÿ ..."
+    },
+    {
+      "title": "No disponible - Gestor Normativo - Función Pública",
+      "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=61753",
+      "snippet": "Intente nuevamente con la búsqueda de la avanzada de normas"
+    },
+    {
+      "title": "consultajurisprudencial.ramajudicial.gov.co",
+      "url": "https://consultajurisprudencial.ramajudicial.gov.co/WebRelatoria/FileReferenceServlet?corp=csj&ext=pdf&file=626745",
+      "snippet": "0ƒ ‚ Â DDDGÿÿÿÿÿÿÿÿÿ r ¡Èaò ÀdÂ †hh— Xeá¦º Õ´ÿ»ÿFs]5H.Ö®pE© ü\" C0Qé| Ó ëëM=5qKÓÓô¹Í§ÏßÿF‰ƒ>\"ýuÐAÿî¸¿é>—é¬4 …"
+    }
+  ]
+}

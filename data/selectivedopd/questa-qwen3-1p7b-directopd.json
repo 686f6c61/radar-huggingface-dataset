@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SelectiveDOPD/QuestA-Qwen3-1p7b-DirectOPD",
+  "slug": "selectivedopd-questa-qwen3-1p7b-directopd",
+  "author": "SelectiveDOPD",
+  "url": "https://huggingface.co/SelectiveDOPD/QuestA-Qwen3-1p7b-DirectOPD",
+  "created_at": "2026-09-10T19:44:45.000Z",
+  "updated_at": "2026-09-10T19:51:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 60964157254,
+  "storage_human": "61.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "E-learning / Elektronische Leeromgeving (ELO) | KleurRijker",
+      "url": "https://kleurrijker.nl/e-learning/",
+      "snippet": "E-learning (ELO) Inloggen? Klik op je boek: Kies het juiste boek TaalCompleet A1 - ZIEZO"
+    },
+    {
+      "title": "TaalCompleet - KleurRijker",
+      "url": "https://kleurrijker.nl/taalcompleet/",
+      "snippet": "De productlijn TaalCompleet bevat alles voor een goede voorbereiding op het inburgeringsexamen. De basis van TaalCompleet …"
+    },
+    {
+      "title": "Taalcompleet | NT2",
+      "url": "https://www.nt2.nl/nl/productgroep/101-417_Taalcompleet",
+      "snippet": "De reeks TaalCompleet vormt een goede voorbereiding op het inburgeringsexamen voor praktisch- en middenopgeleide …"
+    },
+    {
+      "title": "TaalCompleet A1 - KleurRijker",
+      "url": "https://kr.projectendemo.nl/taalcompleet-a1/",
+      "snippet": ""
+    },
+    {
+      "title": "TaalCompleet - LOWAN",
+      "url": "https://www.lowan.nl/vo/lesmateriaal/taalcompleet/",
+      "snippet": "De cursist leert met TaalCompleet Nederlands tot taalniveau A1 met dit eerste boek uit de reeks TaalCompleet. A2 is het tweede boek."
+    }
+  ]
+}

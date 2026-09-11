@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Midasdf/AXELIDEA-QUON-14B-Japanese-v01-GGUF",
+  "slug": "midasdf-axelidea-quon-14b-japanese-v01-gguf",
+  "author": "Midasdf",
+  "url": "https://huggingface.co/Midasdf/AXELIDEA-QUON-14B-Japanese-v01-GGUF",
+  "created_at": "2026-09-10T23:16:23.000Z",
+  "updated_at": "2026-09-10T23:41:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "japanese",
+    "english",
+    "llama",
+    "text-generation",
+    "base_model:Axelidea/AXELIDEA-QUON-14B-Japanese-v01",
+    "base_model:quantized:Axelidea/AXELIDEA-QUON-14B-Japanese-v01",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14659507200,
+  "parameters_human": "14.66B",
+  "storage_bytes": 8890306528,
+  "storage_human": "8.9 GB",
+  "base_model": "Axelidea/AXELIDEA-QUON-14B-Japanese-v01",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Young, Sweet and Tasty | Page 416 | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/young-sweet-and-tasty.636445/page-416",
+      "snippet": "Jun 3, 2025 · Hello, You can now get verified on forum. The way it's gonna work is that you can send me a PM with a verification …"
+    },
+    {
+      "title": "Pic & Movie Post - XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/forums/pic-movie-post.8/",
+      "snippet": "1 day ago · Post pics or clips of yourself, wife, girlfriend, models, anything you like."
+    },
+    {
+      "title": "Sex Stories | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/forums/sex-stories.6/",
+      "snippet": "Apr 12, 2009 · Anything related to texts and xnxx stories. Hello, You can now get verified on forum. The way it's gonna work is that …"
+    },
+    {
+      "title": "Sign up | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/login/login",
+      "snippet": "Hello, New users on the forum won't be able to send PM untill certain criteria are met (you need to have at least 6 posts in any sub …"
+    },
+    {
+      "title": "my dog rusty | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/my-dog-rusty.119127/",
+      "snippet": "Feb 4, 2011 · It all started out a few years ago when I got back from an amusement part with my family. We had three dogs, two girls …"
+    }
+  ]
+}

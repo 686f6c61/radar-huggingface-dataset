@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "eneotu/gemma4_31b_high_entropy_alloy_lora",
+  "slug": "eneotu-gemma4_31b_high_entropy_alloy_lora",
+  "author": "eneotu",
+  "url": "https://huggingface.co/eneotu/gemma4_31b_high_entropy_alloy_lora",
+  "created_at": "2026-09-10T21:28:02.000Z",
+  "updated_at": "2026-09-10T21:28:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "gemma4",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 299587368,
+  "storage_human": "300 MB",
+  "base_model": "unsloth/gemma-4-31b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Superb - Škoda Auto a.s.",
+      "url": "https://www.skoda-auto.cz/modely/superb/superb",
+      "snippet": "Nový Superb posouvá komfort, prostornost a moderní technologie na vyšší úroveň. Objevte vůz, který spojuje eleganci a funkčnost."
+    },
+    {
+      "title": "Škoda Superb bazar a prodej nových vozů | Sauto.cz",
+      "url": "https://www.sauto.cz/inzerce/osobni/skoda/superb",
+      "snippet": "Mrkněte na Sauto.cz - online autobazar Škoda Superb, kde vyřešíte koupi i prodej vozu, motorky i stroje."
+    },
+    {
+      "title": "Superb | Škoda Auto a.s.",
+      "url": "https://da.skoda-auto.cz/modely/novy-superb",
+      "snippet": "Pro Superb jsou k dispozici výhradně kola z lehké slitiny, a to ve velikostech od 17“ do 19“. Interiér modelu Superb se nese v duchu …"
+    },
+    {
+      "title": "Skoda superb bazar - Auto | Bazoš.cz",
+      "url": "https://auto.bazos.cz/inzeraty/skoda-superb/",
+      "snippet": "Auto - Skoda superb bazar. Vybírejte z 10 065 inzerátů. Prodej snadno a rychle na Bazoši. Přes půl milionů uživatelů za den."
+    },
+    {
+      "title": "Ojeté vozy Škoda Superb na prodej | Autobazar AAA AUTO",
+      "url": "https://www.aaaauto.cz/ojete-vozy/skoda/superb",
+      "snippet": "Škoda je domácí značka, která dominuje českému trhu z dobrého důvodu. Nabízí vozy přesně šité na míru potřebám českých rodin a …"
+    }
+  ]
+}

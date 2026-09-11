@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "LibreYOLO/LibreMarigoldV2b-depth-log-layered",
+  "slug": "libreyolo-libremarigoldv2b-depth-log-layered",
+  "author": "LibreYOLO",
+  "url": "https://huggingface.co/LibreYOLO/LibreMarigoldV2b-depth-log-layered",
+  "created_at": "2026-09-10T21:02:45.000Z",
+  "updated_at": "2026-09-10T21:02:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": "libreyolo",
+  "languages": [],
+  "tags": [
+    "libreyolo",
+    "marigold-v2",
+    "depth-estimation",
+    "diffusion-transformer",
+    "base_model:Qwen/Qwen-Image-Edit-2509",
+    "base_model:finetune:Qwen/Qwen-Image-Edit-2509",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1870136603,
+  "storage_human": "1.9 GB",
+  "base_model": "huawei-bayerlab/marigold-v2-0, Qwen/Qwen-Image-Edit-2509",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "France Map | Discover France with Detailed Maps - World Maps",
+      "url": "https://ontheworldmap.com/france/",
+      "snippet": "Description: This map shows governmental boundaries of countries; regions, regions capitals and major cities in France."
+    },
+    {
+      "title": "libreyolo · PyPI",
+      "url": "https://pypi.org/project/libreyolo/",
+      "snippet": "libreyolo train --model yolo9-t --data dataset.yaml --epochs 100 · Multi-GPU, LoRA, layer freezing, distillation, from-scratch training, and TensorBoard, MLflow, Weights & Biases, Comet, ClearML, Neptune and DVCLive logging are all supported. See the training guide. Twelve formats: ONNX, TorchScript, TensorRT, OpenVINO, CoreML, Core AI, TFLite (LiteRT), NCNN, MNN, RKNN, Paddle and ExecuTorch."
+    },
+    {
+      "title": "Map of France with Major Cities, Roads, River and physical features",
+      "url": "https://www.mapnations.com/countries/france/france-map.html",
+      "snippet": "Map of France showing major cities, roads, rivers, country borders, and geographic highlights, including national parks and mountain …"
+    },
+    {
+      "title": "France Map: Map of France with Cities, Towns, Regions and ... - Ezilon",
+      "url": "https://www.ezilon.com/maps/europe/france-maps.html",
+      "snippet": "France detailed and interactive map with cities, towns and regions. Explore regions, borders, and key map features of France with ease."
+    },
+    {
+      "title": "France, FR - Explore in Google Maps",
+      "url": "https://maps.google.com/maps/search/%22France%20%22",
+      "snippet": "Lascaux’s ancient cave drawings, Lyon’s Roman theater and the vast Palace of Versailles attest to its rich history. You're seeing a …"
+    }
+  ]
+}

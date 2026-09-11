@@ -5,7 +5,7 @@
   "author": "Nanite-Labs",
   "url": "https://huggingface.co/Nanite-Labs/nanites-medieval-gemma4-e2b",
   "created_at": "2026-09-08T15:15:36.000Z",
-  "updated_at": "2026-09-08T15:15:45.000Z",
+  "updated_at": "2026-09-10T20:59:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,7 +35,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 133586300,
+  "storage_bytes": 133785457,
   "storage_human": "134 MB",
   "base_model": "unsloth/gemma-4-E2B-it",
   "formats": [

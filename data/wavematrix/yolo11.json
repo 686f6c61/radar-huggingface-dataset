@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 42,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 134588411,
-  "storage_human": "135 MB",
+  "storage_bytes": 114797709,
+  "storage_human": "115 MB",
   "base_model": "Ultralytics/YOLO11",
   "formats": [
     "onnx"

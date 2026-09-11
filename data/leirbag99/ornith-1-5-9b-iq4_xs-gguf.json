@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "leirbag99/Ornith-1.5-9B-IQ4_XS-GGUF",
+  "slug": "leirbag99-ornith-1-5-9b-iq4_xs-gguf",
+  "author": "leirbag99",
+  "url": "https://huggingface.co/leirbag99/Ornith-1.5-9B-IQ4_XS-GGUF",
+  "created_at": "2026-09-11T00:58:21.000Z",
+  "updated_at": "2026-09-11T01:08:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "base_model:ornith-ai/Ornith-1.5-9B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-9B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 10657985504,
+  "storage_human": "10.7 GB",
+  "base_model": "ornith-ai/Ornith-1.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tureng - query - Türkçe İngilizce Sözlük",
+      "url": "https://tureng.com/tr/turkce-ingilizce/query",
+      "snippet": "query — / (AmE /ˈkwɪri/ – BrE /ˈkwɪəri/)/ — Bir konu hakkında bilgi istemeyi veya şüphe bildirmeyi açıklayan kelimedir. Latince …"
+    },
+    {
+      "title": "Query - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Query",
+      "snippet": "This disambiguation page lists articles associated with the title Query. If an internal link incorrectly led you here, you may wish to …"
+    },
+    {
+      "title": "Home - Query",
+      "url": "https://www.query.ai/",
+      "snippet": "Query is a federated search platform for security data providing expanded data visibility without centralization."
+    },
+    {
+      "title": "Tureng - query, - Türkçe İngilizce Sözlük",
+      "url": "https://tureng.com/tr/turkce-ingilizce/query%2C",
+      "snippet": "İngilizce Türkçe online sözlük Tureng. Kelime ve terimleri çevir ve farklı aksanlarda sesli dinleme. query sorgu query sorgulamak …"
+    },
+    {
+      "title": "QUERY | İngilizce-Türkçe Sözlük - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/tr/s%C3%B6zl%C3%BCk/ingilizce-t%C3%BCrk%C3%A7e/query",
+      "snippet": "QUERY çevir: soru, sual, soru sormak, soru, soru işareti, sormak, sormak. Daha fazlasını öğrenmek için bkz. Cambridge İngilizce …"
+    }
+  ]
+}

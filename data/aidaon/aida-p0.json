@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AIDAON/aida-p0",
+  "slug": "aidaon-aida-p0",
+  "author": "AIDAON",
+  "url": "https://huggingface.co/AIDAON/aida-p0",
+  "created_at": "2026-09-10T23:08:37.000Z",
+  "updated_at": "2026-09-11T00:03:04.000Z",
+  "license": "aida-p0-pesos-sob-revisao",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "image-classification",
+    "ai-generated-image-detection",
+    "deepfake-detection",
+    "clip",
+    "forensics",
+    "pt",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "دال - منصة القدرات التعليمية | تدريب اختبار القدرات العامة السعودية",
+      "url": "https://dalqdrat.com/",
+      "snippet": "منصة دال لتحضير اختبار القدرات العامة | +10,000 سؤال قدرات كمي ولفظي، تجميعات محدثة، تدريبات يومية ومحاكي الاختبار الحقيقي. انضم لأكثر من 30,000 طالب وابدأ مجاناً."
+    },
+    {
+      "title": "دال للقدرات - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.dalqudrat.app&hl=ar",
+      "snippet": "رحلتك نحو التفوق تبدأ من هنا دال قدرات هو تطبيق تدريب ذكي ومتكامل لاختبار القدرات العامة. صُمم ليكون معك من أول يوم تدريب حتى يوم اختبارك — بخطة مخصصة، أسئلة لا محدودة، وشرح لكل سؤال."
+    },
+    {
+      "title": "تسجيل الدخول | دال - منصة القدرات التعليمية",
+      "url": "https://dalqdrat.com/training",
+      "snippet": "سجل دخولك لمنصة دال وتابع رحلتك في تحضير اختبار القدرات العامة. ادخل لحسابك واستكمل تدريباتك."
+    },
+    {
+      "title": "دال للقدرات - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.dalqudrat.app&hl=en-US",
+      "snippet": "Prepare yourself for the aptitude test with Dal! Training, a tiger simulator, a smart plan, and artificial intelligence!"
+    },
+    {
+      "title": "قم بتنزيل دال للقدرات بأحدث إصدار 3.2.1 ملف APK الأندرويد",
+      "url": "https://apkpure.com/ar/%D8%AF%D8%A7%D9%84-%D9%84%D9%84%D9%82%D8%AF%D8%B1%D8%A7%D8%AA/com.dalqudrat.app/download",
+      "snippet": "قم بتحميل دال للقدرات بأحدث إصدار APK 3.2.1 لنظام أندرويد من APKPure. جهّز نفسك لاختبار القدرات مع دال! تدريبات، محاكي نمر، خطة ذكية، وذكاء اصطناعي!"
+    }
+  ]
+}

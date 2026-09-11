@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "Bhawookpriyam/GLM-5.3-CYBERSECURITY-FP8",
+  "slug": "bhawookpriyam-glm-5-3-cybersecurity-fp8",
+  "author": "Bhawookpriyam",
+  "url": "https://huggingface.co/Bhawookpriyam/GLM-5.3-CYBERSECURITY-FP8",
+  "created_at": "2026-09-10T19:03:36.000Z",
+  "updated_at": "2026-09-10T19:03:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "ru",
+    "sr",
+    "hi",
+    "fr",
+    "es",
+    "ar",
+    "ko",
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "glm_moe_dsa",
+    "abliterated",
+    "crack",
+    "refusal-removed",
+    "domain-specific",
+    "cybersecurity",
+    "offensive-security",
+    "red-team",
+    "pentest",
+    "glm",
+    "moe",
+    "fp8",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "ru",
+    "sr",
+    "hi",
+    "fr",
+    "es",
+    "ar",
+    "ko",
+    "ja",
+    "base_model:JANGQ-AI/GLM-5.3-FP8",
+    "base_model:quantized:JANGQ-AI/GLM-5.3-FP8",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 755663574885,
+  "storage_human": "755.7 GB",
+  "base_model": "zai-org/GLM-5.3, JANGQ-AI/GLM-5.3-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anime 4k Wallpapers and Backgrounds: Free 4K Download [30600+]",
+      "url": "https://alphacoders.com/anime-4k-wallpapers",
+      "snippet": "Explore 30677 Anime 4k wallpapers and backgrounds. Download free ultra HD desktop wallpapers in 3840x2160 and above."
+    },
+    {
+      "title": "[4000+] أنيمي خلفيات لأجهزة الكمبيوتر والهواتف المحمولة | Wallpaper Alchemy",
+      "url": "https://www.wallpaperalchemy.com/ar/anime/wallpapers",
+      "snippet": "اكتشف خلفيات أنيمي مذهلة على Wallpaper Alchemy. استكشف تصاميم عالية الجودة لأجهزة الكمبيوتر والهواتف المحمولة، مثالية لأي شاشة."
+    },
+    {
+      "title": "4K Anime Wallpapers for Desktop & Mobile Phones",
+      "url": "https://4kwallpapers.com/anime/",
+      "snippet": "Download 4K wallpapers of Latest Anime series in 4K, HD resolutions for PC, Desktop and mobile phones. Get High res anime …"
+    },
+    {
+      "title": "Top Free 4k Anime PC Backgrounds - WallpaperAccess",
+      "url": "https://wallpaperaccess.com/4k-anime-pc",
+      "snippet": "Check out this fantastic collection of 4k Anime PC wallpapers, with 39 4k Anime PC background images for your desktop, phone or …"
+    },
+    {
+      "title": "خلفية فتاة أنمي - دقة عالية 4K | 3840x2160 | Wallpaper Alchemy",
+      "url": "https://www.wallpaperalchemy.com/ar/wallpaper/anime-girl-wallpaper-4k-high-resolution-119",
+      "snippet": "Aug 30, 2025 · خلفية مذهلة بدقة عالية 4K تعرض فتاة أنمي ذات هالة غامضة، تقف بجانب جدار يحتوي على جرافيتي فني."
+    }
+  ]
+}

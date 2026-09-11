@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "dealignai/DeepSeek-V4.1-Flash-ABLITERATED-FP8",
+  "slug": "dealignai-deepseek-v4-1-flash-abliterated-fp8",
+  "author": "dealignai",
+  "url": "https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-ABLITERATED-FP8",
+  "created_at": "2026-09-10T21:47:07.000Z",
+  "updated_at": "2026-09-10T21:47:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "deepseek",
+    "deepseek-v4.1",
+    "abliterated",
+    "uncensored",
+    "crack",
+    "image-text-to-text",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Demon Slayer: Kimetsu no Yaiba - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Demon_Slayer:_Kimetsu_no_Yaiba",
+      "snippet": "It has received critical acclaim for its art, storyline, action scenes and characters. The Demon Slayer: Kimetsu no Yaiba franchise is …"
+    },
+    {
+      "title": "Watch Demon Slayer: Kimetsu no Yaiba - Crunchyroll",
+      "url": "https://www.crunchyroll.com/series/GY5P48XEY/demon-slayer-kimetsu-no-yaiba",
+      "snippet": "Stream Demon Slayer: Kimetsu no Yaiba on Crunchyroll and experience the latest and greatest anime! Browse to watch series, …"
+    },
+    {
+      "title": "Kimetsu no Yaiba Wiki | Fandom",
+      "url": "https://kimetsu-no-yaiba.fandom.com/wiki/Kimetsu_no_Yaiba_Wiki",
+      "snippet": "Jul 28, 2026 · In Taisho-era Japan, Tanjiro Kamado is a kindhearted boy who makes a living selling charcoal. However, his peaceful …"
+    },
+    {
+      "title": "Demon Slayer: Kimetsu no Yaiba (TV Series 2019–2024) - IMDb",
+      "url": "https://www.imdb.com/title/tt9335498/",
+      "snippet": "Tanjiro sets out to become a demon slayer to avenge his family and cure his sister. A family is attacked by demons and only two …"
+    },
+    {
+      "title": "Characters | Kimetsu no Yaiba Wiki | Fandom",
+      "url": "https://kimetsu-no-yaiba.fandom.com/wiki/Characters",
+      "snippet": "Demon Slayer distinguishes its characters between the Demon Slayer Corps and the demons. Within the Corps is the main unit of …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "thomaseibner/whisper-large-v3-turbo-us-atc-v2",
+  "slug": "thomaseibner-whisper-large-v3-turbo-us-atc-v2",
+  "author": "thomaseibner",
+  "url": "https://huggingface.co/thomaseibner/whisper-large-v3-turbo-us-atc-v2",
+  "created_at": "2026-09-11T00:50:55.000Z",
+  "updated_at": "2026-09-11T01:25:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "whisper",
+    "lora",
+    "speech-recognition",
+    "air-traffic-control",
+    "aviation",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:adapter:openai/whisper-large-v3-turbo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13129824,
+  "storage_human": "13 MB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Solarmovie: Watch Best Movies and TV Series Online Free",
+      "url": "https://www.solarmoviie.com/",
+      "snippet": "Solarmovie is a free online streaming platform that allows users to watch movies and TV shows instantly. Instead of hosting files …"
+    },
+    {
+      "title": "SolarMovie",
+      "url": "https://solarmovies.mov/",
+      "snippet": "SolarMovie is a free streaming platform where you can watch movies and TV shows online without registration. Enjoy unlimited …"
+    },
+    {
+      "title": "Movies Archives - Solarmovie",
+      "url": "https://www.solarmovie.net.pk/category/movies/",
+      "snippet": "Professor Se-jeong is thrust into a bloody nightmare when a rapidly mutating virus is released during a biotech conference causing …"
+    },
+    {
+      "title": "The 20 Best SolarMovie Alternatives in 2026 - PrivacySavvy",
+      "url": "https://privacysavvy.com/geoblocking/streaming/solarmovie-alternatives/",
+      "snippet": "Jan 5, 2026 · Want to stream your favorite Solar movies movies, but can't due to censorship? Read this article to find the best …"
+    },
+    {
+      "title": "Watch HD Movies Online - Stream 4K Cinema & TV Series | SolarMovie",
+      "url": "https://solarmovie.pl/",
+      "snippet": "Join SolarMovie for the ultimate streaming experience. Watch thousands of HD movies and TV series on any device. Start your …"
+    }
+  ]
+}

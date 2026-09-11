@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "MinaMila/Qwen2.5-1.5B-Qwen7B",
+  "slug": "minamila-qwen2-5-1-5b-qwen7b",
+  "author": "MinaMila",
+  "url": "https://huggingface.co/MinaMila/Qwen2.5-1.5B-Qwen7B",
+  "created_at": "2026-09-10T21:10:42.000Z",
+  "updated_at": "2026-09-10T21:10:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85338603,
+  "storage_human": "85 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    },
+    {
+      "title": "Wikipedia, the free encyclopedia",
+      "url": "https://en.wikipedia.org/wiki/Main_Page",
+      "snippet": "Wikipedia is written by volunteer editors and hosted by the Wikimedia Foundation, a non-profit organization that also hosts a range of …"
+    },
+    {
+      "title": "Wikipedia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wikipedia",
+      "snippet": "Founded by Jimmy Wales and Larry Sanger in 2001, Wikipedia has been hosted since 2003 by the Wikimedia Foundation, an …"
+    },
+    {
+      "title": "Wikipédia, l'encyclopédie libre",
+      "url": "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal",
+      "snippet": "Wikipédia L'encyclopédie libre que vous pouvez améliorer Accueil de la communauté Comment contribuer ? Portails thématiques …"
+    },
+    {
+      "title": "ويكيبيديا، الموسوعة الحرة",
+      "url": "https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%B5%D9%81%D8%AD%D8%A9_%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D8%A9",
+      "snippet": "ويكيبيديا مشروع تعاوني متعدد اللغات يضم ويكيات بأكثر من 300 لغة للعمل في مشاريع موسوعات حرة ودقيقة ومتكاملة ومتنوعة ومحايدة، يستطيع الجميع المساهمة في تحريرها. نشأت ويكيبيديا في عام …"
+    }
+  ]
+}

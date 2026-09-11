@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "mau-cr/mayan_best_model",
+  "slug": "mau-cr-mayan_best_model",
+  "author": "mau-cr",
+  "url": "https://huggingface.co/mau-cr/mayan_best_model",
+  "created_at": "2026-05-21T02:07:44.000Z",
+  "updated_at": "2026-09-11T01:46:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "yua"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "maya",
+    "yucatec-maya",
+    "low-resource",
+    "endangered-languages",
+    "speech-recognition",
+    "fine-tuned",
+    "yua",
+    "dataset:mau-cr/mayan-voice",
+    "base_model:facebook/mms-1b-all",
+    "base_model:quantized:facebook/mms-1b-all",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 964697254,
+  "parameters_human": "964.7M",
+  "storage_bytes": 30874433691,
+  "storage_human": "30.9 GB",
+  "base_model": "facebook/mms-1b-all",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "mayan-voice",
+      "metric": "WER (222 min, sin LM)",
+      "value": 40
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "mayan-voice",
+      "metric": "WER (222 min, con LM 3-gramas)",
+      "value": 17
+    }
+  ],
+  "sources": [
+    {
+      "title": "MAU , MCI ,MIE - L'Infirmière Libérale Francaise",
+      "url": "https://www.l-idel.fr/mau-mci-mie-45.html",
+      "snippet": "D'une valeur de 1,35 euros, la MAU est tarifée à chaque passage. Lorsqu'au cours de son intervention, l'infirmier (ère) réalise un acte …"
+    },
+    {
+      "title": "Mau égyptien — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mau_%C3%A9gyptien",
+      "snippet": "Le mau égyptien est la seule race naturelle de chat à être mouchetée, ou en terme félinotechnique spotted tabby : un mau égyptien …"
+    },
+    {
+      "title": "MAUREL & PROM Cours Action MAU, Cotation Bourse Euronext Paris",
+      "url": "https://www.boursorama.com/cours/1rPMAU/",
+      "snippet": "Le cours de l'action MAUREL & PROM MAU en temps réel sur Boursorama : historique de la cotation sur Euronext Paris, graphique, …"
+    },
+    {
+      "title": "Révolte des Mau Mau — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/R%C3%A9volte_des_Mau_Mau",
+      "snippet": "La révolte des Mau Mau ou des Mau-Mau est un mouvement insurrectionnel du Kenya des années 1950. Ce groupe agit à cette …"
+    },
+    {
+      "title": "MAU 8,285 € (-0,30%) - ABC Bourse",
+      "url": "https://www.abcbourse.com/cotation/MAUp",
+      "snippet": "1 day ago · Consultez le cours de l'action Maurel Et Prom en bourse : cotation en direct à Paris, graphiques, actualités financières et …"
+    }
+  ]
+}

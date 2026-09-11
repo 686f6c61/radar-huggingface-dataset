@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "joaosollatori/small-agentic-model-2b",
+  "slug": "joaosollatori-small-agentic-model-2b",
+  "author": "joaosollatori",
+  "url": "https://huggingface.co/joaosollatori/small-agentic-model-2b",
+  "created_at": "2026-09-10T04:07:56.000Z",
+  "updated_at": "2026-09-11T02:17:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "base_model:openai-community/gpt2",
+    "base_model:finetune:openai-community/gpt2",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 124439808,
+  "parameters_human": "124.4M",
+  "storage_bytes": 10453700016,
+  "storage_human": "10.5 GB",
+  "base_model": "gpt2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "産業遺産マニアも唸る、新潟「佐渡島」の魅力とは | TABI LABO",
+      "url": "https://tabi-labo.com/285011/sado-sangyouisan",
+      "snippet": "Nov 29, 2017 · 佐渡銀金山の歴史は古く、1600年代初頭までさかのぼります。江戸時代から日本最大の金採掘地として繁栄。そして …"
+    },
+    {
+      "title": "CULTURE | TABI LABO",
+      "url": "https://tabi-labo.com/category/culture",
+      "snippet": "2 days ago · 「楽しいから、夢中になれる」 トレンドの枠を超えた、あなたの心を踊らせるファッション、音楽、アート、そして、 …"
+    },
+    {
+      "title": "マジックバンドの使い方とカスタマイズ方法を簡単に解説！|TABI LABO",
+      "url": "https://magicband.tabi-labo.com/",
+      "snippet": "About the Magic Band マジックバンドについて マジックバンドは、ウォルト・ディズニー・ワールド（WDW）のほとんどのサービ …"
+    },
+    {
+      "title": "TABI LABO",
+      "url": "https://rss.tabi-labo.com/",
+      "snippet": "TABI LABOは、カルチャーやライフスタイル、トレンドにテクノロジー、おもしろいモノから、感動するコトまで。 いま世界で起 …"
+    },
+    {
+      "title": "TABI – Tarot Association of British and International members",
+      "url": "https://tabi.org.uk/",
+      "snippet": "Celebrating 25 Years TABI was founded in 2001 by a small group of like-minded people in the UK who were hooked on Tarot. They …"
+    }
+  ]
+}

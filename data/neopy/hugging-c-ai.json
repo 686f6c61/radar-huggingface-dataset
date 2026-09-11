@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "NeoPy/hugging-c-ai",
+  "slug": "neopy-hugging-c-ai",
+  "author": "NeoPy",
+  "url": "https://huggingface.co/NeoPy/hugging-c-ai",
+  "created_at": "2026-09-10T21:15:19.000Z",
+  "updated_at": "2026-09-10T21:16:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "nextjs",
+    "multi-provider",
+    "openai",
+    "anthropic",
+    "huggingface",
+    "groq",
+    "gradio",
+    "character-ai",
+    "chat",
+    "roleplay",
+    "hugging-c-ai",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gmail",
+      "url": "https://mail.google.com/mail?hl=en",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail/u/0/",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://www.google.com/accounts/Login",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode"
+    },
+    {
+      "title": "Sign in to Gmail - Computer - Gmail Help - Google Help",
+      "url": "https://support.google.com/mail/answer/8494?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "To open Gmail, you can sign in from a computer or add your account to the Gmail app on your phone or tablet. Once you're signed …"
+    }
+  ]
+}

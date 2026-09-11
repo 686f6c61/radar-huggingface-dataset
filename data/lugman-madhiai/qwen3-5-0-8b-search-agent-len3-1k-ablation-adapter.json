@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "lugman-madhiai/qwen3.5-0.8b-search-agent-len3-1k-ablation-adapter",
+  "slug": "lugman-madhiai-qwen3-5-0-8b-search-agent-len3-1k-ablation-adapter",
+  "author": "lugman-madhiai",
+  "url": "https://huggingface.co/lugman-madhiai/qwen3.5-0.8b-search-agent-len3-1k-ablation-adapter",
+  "created_at": "2026-09-10T22:09:18.000Z",
+  "updated_at": "2026-09-10T22:09:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3_5",
+    "trl",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63335875,
+  "storage_human": "63 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "《团结就是力量》的歌词 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/196417000.html",
+      "snippet": "歌曲《团结就是力量》 团结就是力量 团结就是力量 这力量是铁 这力量是钢 比铁还硬,比钢还强 向着法西斯蒂开火 让一切不民主的制 …"
+    },
+    {
+      "title": "梦幻西游黑风山副本抄写大全_百度知道",
+      "url": "https://zhidao.baidu.com/question/580670653.html",
+      "snippet": "梦幻西游黑风山副本抄写大全梦幻西游黑风山副本抄写大全如下：1、若菩萨欲得净土当净其心随其心净则佛土净2、法尚应舍何况非 …"
+    },
+    {
+      "title": "twitch - 知乎",
+      "url": "https://www.zhihu.com/topic/19851981/hot",
+      "snippet": "根据其内部分析师透露，Twitch每月的访问量超过3800万，有超过2000万个游戏玩家汇聚到这个平台，每个访问用户在网站的日平均 …"
+    },
+    {
+      "title": "twitch - 知乎",
+      "url": "https://www.zhihu.com/topic/19851981/intro",
+      "snippet": "Twitch是一个专注于游戏相关内容的流媒体平台，支持多语言，拥有大量用户和高访问量，每日平均停留时间较长。"
+    },
+    {
+      "title": "服务器未发送任何数据，因此无法载入该网 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/495ba841e6eb3238b30ede1c.html",
+      "snippet": "Nov 14, 2015 · 刷新DNS 上不了网，传递不了网络数据，这样的问题很多，其中DNS域名分析错误，也是其中经常发生的事，如果域 …"
+    }
+  ]
+}

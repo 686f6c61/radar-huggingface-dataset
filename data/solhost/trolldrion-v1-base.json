@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "solhost/trolldrion-v1-base",
+  "slug": "solhost-trolldrion-v1-base",
+  "author": "solhost",
+  "url": "https://huggingface.co/solhost/trolldrion-v1-base",
+  "created_at": "2026-09-11T01:21:54.000Z",
+  "updated_at": "2026-09-11T01:22:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 139575545,
+  "storage_human": "140 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "بوابة مقيم | Muqeem Portal",
+      "url": "https://muqeem.sa/",
+      "snippet": "Service allows organizations to review its resident workers data and complete their transactions online, anytime and anywhere. تتيح …"
+    },
+    {
+      "title": "بوابة التحقق من التأشيرات | Visa Validity Portal",
+      "url": "https://vv.muqeem.sa/",
+      "snippet": "دخول المستخدم (بوابة التحقق من التأشيرات) اسم المستخدم كلمة المرور"
+    },
+    {
+      "title": "بوابة تصاريح دخول مكة | Makkah Entry Permit Portal",
+      "url": "https://makkahpermit.muqeem.sa/",
+      "snippet": "دخول المستخدم اسم المستخدم كلمة المرور استخدم بيانات مقيم دخول استعادة اسم المستخدم استعادة كلمة المرور التسجيل تغيير المستخدم الرئيسي"
+    },
+    {
+      "title": "مقيم",
+      "url": "https://muqeem.sa/content/",
+      "snippet": "مقيم هي منصة إلكترونية تتيح للمنشآت إدارة معاملات الجوازات الخاصة بموظفيها المقيمين بسهولة وسرعة."
+    },
+    {
+      "title": "بوابة مقيم | Muqeem Portal",
+      "url": "https://muqeem.sa/assets/i18n/visa-validity-check/ar-ly.json",
+      "snippet": "نود أن نلفت انتباهكم إلى أن هذه الصفحة ستكون مؤقتة، حيث أنه تم العمل على بوابة التحقق من التأشيرات الجديدة للتحقق من تأشيرات الزيارة والخروج والعودة وذلك بدون رسوم ولفترة …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "noahkhopkins/ixl",
+  "slug": "noahkhopkins-ixl",
+  "author": "noahkhopkins",
+  "url": "https://huggingface.co/noahkhopkins/ixl",
+  "created_at": "2026-09-10T20:09:06.000Z",
+  "updated_at": "2026-09-10T20:09:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing Images",
+      "url": "https://www.bing.com/images/",
+      "snippet": "Bing Image is a powerful tool for searching and exploring high-quality, relevant images tailored to your needs."
+    },
+    {
+      "title": "Bing Webmaster Tools",
+      "url": "https://www.bing.com/webmasters/about",
+      "snippet": "Sign in or signup for Bing Webmaster Tools and improve your site’s performance in search. Get access to free reports, tools and …"
+    },
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://www2.bing.com/",
+      "snippet": "Search with Microsoft Bing and use the power of AI to find information, explore webpages, images, videos, maps, and more. A smart …"
+    },
+    {
+      "title": "Suche – Microsoft Bing",
+      "url": "https://de.bing.com/",
+      "snippet": "May 2, 2022 · Suchen Sie mit Microsoft Bing und nutzen Sie die Leistungsfähigkeit der KI, um Informationen zu finden, Webseiten, …"
+    },
+    {
+      "title": "Redeem – Microsoft Rewards",
+      "url": "https://rewards.bing.com/redeem",
+      "snippet": "Browse rewards, including gift cards, sweepstakes entries, and more, redeemable with your Microsoft Rewards points."
+    }
+  ]
+}

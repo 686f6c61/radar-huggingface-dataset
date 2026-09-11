@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g1_run2",
+  "slug": "stefanocarrera-sqlautophagycode_m_qwen3-8b_t0-75_g1_run2",
+  "author": "stefanocarrera",
+  "url": "https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g1_run2",
+  "created_at": "2026-09-10T20:10:50.000Z",
+  "updated_at": "2026-09-10T20:11:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen3-8B-Base-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen3-8B-Base-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186078190,
+  "storage_human": "186 MB",
+  "base_model": "unsloth/Qwen3-8B-Base-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How Hackers Use Your IP Address to Hack Your Computer & How to …",
+      "url": "https://null-byte.wonderhowto.com/how-to/hackers-use-your-ip-address-hack-your-computer-stop-0130719/",
+      "snippet": "Oct 18, 2011 · Your IP (I nternet P rotocol) address is your unique ID on the internet. It's synonymous with your home address. …"
+    },
+    {
+      "title": "How to Create a Bump Key to Open Any Door :: Null Byte",
+      "url": "https://null-byte.wonderhowto.com/how-to/create-bump-key-open-any-door-0130500/",
+      "snippet": "Oct 11, 2011 · Today's Null Byteis going to demonstrate how to effectively make what is called a \"bump key\". A bump key can open …"
+    },
+    {
+      "title": "Terms & Conditions - Gadget Hacks",
+      "url": "https://www.gadgethacks.com/terms/",
+      "snippet": "Mar 1, 2014 · Terms & Conditions for usage of our sites Terms & Conditions TERMS OF USE Effective Date: March 1, 2014 (Updated …"
+    },
+    {
+      "title": "Quick Tips - Gadget Hacks",
+      "url": "https://www.gadgethacks.com/collection/quick-tips/",
+      "snippet": "Discover essential Quick Tips that empower you with practical advice and shortcuts for everyday challenges. Our curated collection …"
+    },
+    {
+      "title": "How to Find Vulnerable Webcams Across the Globe Using Shodan",
+      "url": "https://null-byte.wonderhowto.com/how-to/find-vulnerable-webcams-across-globe-using-shodan-0154830/",
+      "snippet": "Aug 7, 2019 · Search engines index websites on the web so you can find them more efficiently, and the same is true for internet …"
+    }
+  ]
+}

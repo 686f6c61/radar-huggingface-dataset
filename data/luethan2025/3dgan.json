@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "luethan2025/3dgan",
+  "slug": "luethan2025-3dgan",
+  "author": "luethan2025",
+  "url": "https://huggingface.co/luethan2025/3dgan",
+  "created_at": "2026-06-15T23:17:03.000Z",
+  "updated_at": "2026-09-11T01:23:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "dataset:luethan2025/ShapeNet-Bottle-64x64",
+    "dataset:luethan2025/ShapeNet-Bowl-64x64",
+    "dataset:luethan2025/ShapeNet-Vase-64x64",
+    "arxiv:1610.07584",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 210888895,
+  "storage_human": "211 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tracking Your Shipment or Packages | FedEx",
+      "url": "https://www.fedex.com/en-us/tracking.html",
+      "snippet": "Where is my package? Enter your FedEx tracking number, track by reference, obtain proof of delivery, or TCN. See FedEx Express, …"
+    },
+    {
+      "title": "Tracking Your Shipment or Packages | FedEx United Kingdom",
+      "url": "https://www.fedex.com/en-gb/tracking.html",
+      "snippet": "Where is my package? Find out by entering your tracking number, track by reference, obtain proof of delivery, or TCN."
+    },
+    {
+      "title": "Package Tracking - Courier Tracking | FedEx Canada",
+      "url": "https://www.fedex.com/en-ca/tracking.html",
+      "snippet": "Where is my package? Find out by entering your tracking number, track by reference, obtain proof of delivery, or TCN."
+    },
+    {
+      "title": "Tracking Your Shipment | FedEx India",
+      "url": "https://www.fedex.com/en-in/tracking.html",
+      "snippet": "Where is my package? Find out by entering your tracking number, track by reference, obtain proof of delivery, or TCN."
+    },
+    {
+      "title": "国際小包・貨物の追跡 | FedEx 日本",
+      "url": "https://www.fedex.com/ja-jp/tracking.html",
+      "snippet": "FedEx Mobile Tracking モバイル向けFedEx Trackingは非常に便利な追跡ツールです。絶えず移動しているお客様にも更新情報が届 …"
+    }
+  ]
+}

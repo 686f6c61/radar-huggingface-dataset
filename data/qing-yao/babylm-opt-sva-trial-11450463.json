@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "qing-yao/babylm-opt-sva-trial-11450463",
+  "slug": "qing-yao-babylm-opt-sva-trial-11450463",
+  "author": "qing-yao",
+  "url": "https://huggingface.co/qing-yao/babylm-opt-sva-trial-11450463",
+  "created_at": "2026-09-10T22:00:37.000Z",
+  "updated_at": "2026-09-10T22:02:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "opt",
+    "text-generation",
+    "generated_from_trainer",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110419968,
+  "parameters_human": "110.4M",
+  "storage_bytes": 3092210236,
+  "storage_human": "3.1 GB",
+  "base_model": "models/babylm-default_seed-42_1e-3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tom Cruise - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tom_Cruise",
+      "snippet": "Ebert listed nine key ingredients that make up the Tom Cruise Picture: the Cruise character, the mentor, the superior woman, the …"
+    },
+    {
+      "title": "トム・クルーズ - Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E3%83%88%E3%83%A0%E3%83%BB%E3%82%AF%E3%83%AB%E3%83%BC%E3%82%BA",
+      "snippet": "“Tom Cruise scientology video leaked on the internet: We've always known Tom Cruise is a bit looney, but his latest scientology …"
+    },
+    {
+      "title": "Tom Cruise - IMDb",
+      "url": "https://www.imdb.com/name/nm0000129/",
+      "snippet": "In 1976, if you had told fourteen-year-old Franciscan seminary student Thomas Cruise Mapother IV that one day in the not too distant …"
+    },
+    {
+      "title": "Tom Cruise filmography - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tom_Cruise_filmography",
+      "snippet": "Tom Cruise is an American actor and producer who made his film debut with a minor role in the 1981 romantic drama Endless Love. …"
+    },
+    {
+      "title": "トム・クルーズ：プロフィール・作品情報・最新ニュース ...",
+      "url": "https://eiga.com/person/52066/",
+      "snippet": "1 day ago · Tom Cruise 本名 トーマス・クルーズ・メイポーザー4世 誕生日 1962年7月3日 出身 アメリカ／ニューヨーク州 …"
+    }
+  ]
+}

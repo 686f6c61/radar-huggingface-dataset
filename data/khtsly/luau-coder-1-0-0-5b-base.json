@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "khtsly/Luau-Coder-1.0-0.5B-Base",
+  "slug": "khtsly-luau-coder-1-0-0-5b-base",
+  "author": "khtsly",
+  "url": "https://huggingface.co/khtsly/Luau-Coder-1.0-0.5B-Base",
+  "created_at": "2026-09-10T19:25:29.000Z",
+  "updated_at": "2026-09-10T19:51:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "kimi_linear",
+    "text-generation",
+    "roblox",
+    "luau",
+    "coder",
+    "on-device",
+    "custom_code",
+    "en",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:openbmb/UltraData-Math",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceTB/dclm-edu",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "dataset:nampdn-ai/mini-peS2o",
+    "dataset:Geralt-Targaryen/books3",
+    "dataset:omarkamali/wikipedia-monthly",
+    "dataset:khtsly/roblox_docs_corpus_text",
+    "dataset:khtsly/luau-stack-hq",
+    "dataset:khtsly/devforum-roblox-text",
+    "dataset:khtsly/luau-repo-docs-text",
+    "dataset:khtsly/luau-org-web-text",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 524159872,
+  "parameters_human": "524.2M",
+  "storage_bytes": 1048448000,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hund bellt nachts? Ursachen-Tabelle + 5 Sofort-Tipps",
+      "url": "https://www.bellerei-shop.com/hund-bellt-nachts/",
+      "snippet": "Kurz erklärt: Hunde bellen nachts meist aus einem von fünf Gründen: Langeweile und fehlende Auslastung, Einsamkeit oder …"
+    },
+    {
+      "title": "Das nervt, warum bellen Hunde nachts? Gründe und Lösungen für ...",
+      "url": "https://chaoshund.de/warum-bellen-hunde-nachts/",
+      "snippet": "Jul 15, 2024 · Entdecken Sie die Gründe, warum Hunde nachts bellen, und erhalten Sie effektive Lösungen, um Ruhe und Schlaf zu …"
+    },
+    {
+      "title": "Warum Hunde nachts bellen: 7 häufige Ursachen (und was du …",
+      "url": "https://furpathy.com/de/articles/warum-hunde-nachts-bellen-ursachen-loesungen",
+      "snippet": "May 18, 2026 · Hunde bellen nachts aus echten Gründen: Sinne, Langeweile, Angst, Revier, Unwohlsein und mehr. 7 Ursachen und …"
+    },
+    {
+      "title": "Hund bellt nachts: Ursachen & ruhige Schritte - hello-hund.de",
+      "url": "https://hello-hund.de/hund-bellt-nachts/",
+      "snippet": "Kurzantwort: Wenn dein Hund nachts bellt, können Geräusche, Unsicherheit, ein ungünstiger Schlafplatz, Gewohnheit, Harndrang …"
+    },
+    {
+      "title": "Hund bellt nachts: Expertentipps um ihm das nächtliche Bellen ...",
+      "url": "https://www.hundekumpel.de/blog/hund-bellt-nachts/",
+      "snippet": "Jun 28, 2022 · Dein Hund bellt nachts? Hier findest du die Gründe für das nächtliche Bellen und Tipps vom Experten, um ihm das …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Salience-27B-R6-i1-GGUF",
   "created_at": "2026-09-10T11:53:34.000Z",
-  "updated_at": "2026-09-10T12:19:09.000Z",
+  "updated_at": "2026-09-10T13:19:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -49,8 +49,8 @@
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 39471872512,
-  "storage_human": "39.5 GB",
+  "storage_bytes": 218553902208,
+  "storage_human": "218.6 GB",
   "base_model": "vectionlabs/Salience-27B-R6",
   "formats": [
     "gguf"

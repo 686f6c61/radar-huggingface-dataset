@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "pooryanh/rtdetr-to-yolo-distill",
+  "slug": "pooryanh-rtdetr-to-yolo-distill",
+  "author": "pooryanh",
+  "url": "https://huggingface.co/pooryanh/rtdetr-to-yolo-distill",
+  "created_at": "2026-09-10T23:34:58.000Z",
+  "updated_at": "2026-09-11T01:31:31.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "object-detection",
+    "knowledge-distillation",
+    "semi-supervised-learning",
+    "rt-detr",
+    "yolo",
+    "yolo26",
+    "visdrone",
+    "aerial-imagery",
+    "tensorrt",
+    "int8",
+    "dataset:VisDrone2019-DET",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 481158792,
+  "storage_human": "481 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "怎么输入带圈数字①②③④⑤⑧㊸㊹㊺㊻㊼㊽㊾㊿ - 百度经验",
+      "url": "https://jingyan.baidu.com/article/a3aad71a2b7a69b1fb009630.html",
+      "snippet": "May 16, 2019 · 显然上面的方式只能输入0-20，但是更高的数字却不能输入了，怎么办呢， 更复杂的方式我们也不想学了， 这个一个 …"
+    },
+    {
+      "title": "Excel中序号拉下来全是1，不是递增的怎么办-百度经验",
+      "url": "https://jingyan.baidu.com/article/cdddd41c53450c12cb00e192.html",
+      "snippet": "Aug 19, 2020 · Excel中序号拉下来全是1，不是递增的怎么办,excel使用中我们要向下填充序号12345····，但是拉下来却全是1111····怎 …"
+    },
+    {
+      "title": "如何评价忻州市12345热线暂停服务？ - 知乎",
+      "url": "https://www.zhihu.com/question/2030118943684301765",
+      "snippet": "Apr 21, 2026 · 虽然我是被12345折磨得死去活来的一方，但是我也知道，这东西再麻烦也不能取。"
+    },
+    {
+      "title": "怎样投诉电信比较有效？ - 知乎",
+      "url": "https://www.zhihu.com/question/300426839",
+      "snippet": "Aug 10, 2023 · 1、第一次工信部，微信：工信部 12300 这个公众号进去。 2、用户申诉：提交申诉 3、如果继续推诿， 12345 投诉 4 …"
+    },
+    {
+      "title": "WPS word表格怎么自动填充序号-百度经验",
+      "url": "https://jingyan.baidu.com/article/148a19211857234d71c3b193.html",
+      "snippet": "Jun 15, 2019 · WPS word表格怎么自动填充序号,我们使用excel制作表格时，对于序号的填充可以说是非常熟练，几乎1秒之内就能将 …"
+    }
+  ]
+}

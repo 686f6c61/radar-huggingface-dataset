@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "JEFFERSONMUSIC/Wisin40K",
+  "slug": "jeffersonmusic-wisin40k",
+  "author": "JEFFERSONMUSIC",
+  "url": "https://huggingface.co/JEFFERSONMUSIC/Wisin40K",
+  "created_at": "2026-09-10T23:11:31.000Z",
+  "updated_at": "2026-09-10T23:14:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 91708553,
+  "storage_human": "92 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Regensburg Cathedral View royalty-free images - Shutterstock",
+      "url": "https://www.shutterstock.com/search/regensburg-cathedral-view?msockid=05f5de7e5d476b7f3716c9af5c4b6a90",
+      "snippet": "Jan 13, 2026 · Breathtaking aerial view of Regensburg’s historic old town, showcasing the iconic Stone Bridge, the flowing Danube …"
+    },
+    {
+      "title": "Regensburg Cathedral - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Regensburg_Cathedral",
+      "snippet": "It is also the home of Regensburger Domspatzen, which serves as the cathedral choir, and is rich in tradition. The structure is …"
+    },
+    {
+      "title": "Regensburg Cathedral Germany royalty-free images",
+      "url": "https://www.shutterstock.com/search/regensburg-cathedral-germany?msockid=05f5de7e5d476b7f3716c9af5c4b6a90",
+      "snippet": "Jan 13, 2026 · Breathtaking aerial view of Regensburg’s historic old town, showcasing the iconic Stone Bridge, the flowing Danube …"
+    },
+    {
+      "title": "View of the Regensburg Cathedral from the Danube River ... - Pexels",
+      "url": "https://www.pexels.com/photo/view-of-the-regensburg-cathedral-from-the-danube-river-regensburg-germany-26630895/",
+      "snippet": "Beautiful view of Regensburg Cathedral with colorful houses along the Danube river at sunset."
+    },
+    {
+      "title": "Regensburg cathedral view from Stock Photos and Images",
+      "url": "https://www.alamy.com/stock-photo/regensburg-cathedral-view-from.html",
+      "snippet": "Find the perfect regensburg cathedral view from stock photo, image, vector, illustration or 360 image. Available for both RF and RM …"
+    }
+  ]
+}

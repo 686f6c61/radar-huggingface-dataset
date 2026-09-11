@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RGMCripto/RGMContentFactory",
+  "slug": "rgmcripto-rgmcontentfactory",
+  "author": "RGMCripto",
+  "url": "https://huggingface.co/RGMCripto/RGMContentFactory",
+  "created_at": "2026-09-11T00:18:05.000Z",
+  "updated_at": "2026-09-11T00:18:05.000Z",
+  "license": "-",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Masuk ke Pengelolaan Kinerja",
+      "url": "https://guru.kemendikdasmen.go.id/login?from=%2Fpengelolaan-kinerja-tim-kinerja%2Fpenilai%2Fperencanaan%2Fdaftar-ps%2Fdisetujui",
+      "snippet": "Dengan Masuk ke akun, berarti Anda telah memahami dan menyetujui Kebijakan Privasi yang berlaku. Silakan coba lagi dalam …"
+    },
+    {
+      "title": "Pengelolaan Kinerja - guru.kemendikdasmen.go.id",
+      "url": "https://guru.kemendikdasmen.go.id/pengelolaan-kinerja/guru",
+      "snippet": "untuk semua."
+    },
+    {
+      "title": "eKinerja",
+      "url": "https://kinerja.bkn.go.id/admin/user_pmm",
+      "snippet": "silahkan login melalui ASN Digital ke ASN Digital ©2022 Badan Kepegawaian Negara"
+    },
+    {
+      "title": "Ruang GTK",
+      "url": "https://rumah.pendidikan.go.id/ruang/gtk",
+      "snippet": "Dokumen rujukan untuk Pengelolaan Kinerja."
+    },
+    {
+      "title": "Pengelolaan Kinerja PMM",
+      "url": "https://s.id/pengelolaankinerjagurudanks",
+      "snippet": "Fitur Pengelolaan Kinerja Guru dan Kepala Sekolah di Platform Merdeka Mengajar (PMM)"
+    }
+  ]
+}

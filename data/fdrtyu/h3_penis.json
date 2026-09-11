@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "fdrtyu/H3_Penis",
+  "slug": "fdrtyu-h3_penis",
+  "author": "fdrtyu",
+  "url": "https://huggingface.co/fdrtyu/H3_Penis",
+  "created_at": "2026-09-11T01:13:51.000Z",
+  "updated_at": "2026-09-11T01:14:54.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 298262984,
+  "storage_human": "298 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Who Founded Labor Day? | HISTORY",
+      "url": "https://www.history.com/articles/who-founded-labor-day",
+      "snippet": "Sep 3, 2026 · These modern-day activities echo the revelry at the first observance of Labor Day nearly 150 years ago. The earliest …"
+    },
+    {
+      "title": "This Day in HISTORY Daily Briefing",
+      "url": "https://www.history.com/this-day-in-history-daily-briefing",
+      "snippet": "History happens every day! Check in with your virtual assistant or wherever you get your podcasts to find out about the historical …"
+    },
+    {
+      "title": "日別番組表 | ヒストリーチャンネル - History",
+      "url": "https://jp.history.com/timetable/",
+      "snippet": "禁断の遺物X #02 身近に潜む宝物 自宅のテーブルや壁に掛けてある絵画や、いつもの散歩道や校外学習で目にした不思議な何か、 …"
+    },
+    {
+      "title": "HISTORY TV Schedule | HISTORY Channel",
+      "url": "https://www.history.com/schedule",
+      "snippet": "Check the HISTORY Channel show schedule and find out when your favorite shows are airing. Find cast bios, videos, and exclusive …"
+    },
+    {
+      "title": "What Happened on September 3 | HISTORY",
+      "url": "https://www.history.com/this-day-in-history/september-3",
+      "snippet": "Also on This Day in History Discover more of the major events, famous births, notable deaths and everything else history-making that …"
+    }
+  ]
+}

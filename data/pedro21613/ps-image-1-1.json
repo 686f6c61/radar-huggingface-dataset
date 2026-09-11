@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Pedro21613/PS-IMAGE-1.1",
+  "slug": "pedro21613-ps-image-1-1",
+  "author": "Pedro21613",
+  "url": "https://huggingface.co/Pedro21613/PS-IMAGE-1.1",
+  "created_at": "2026-09-11T00:59:25.000Z",
+  "updated_at": "2026-09-11T00:59:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "stable-diffusion",
+    "stable-diffusion-diffusers",
+    "lora",
+    "pets",
+    "cats",
+    "dogs",
+    "pytorch",
+    "base_model:runwayml/stable-diffusion-v1-5",
+    "base_model:adapter:runwayml/stable-diffusion-v1-5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9870823,
+  "storage_human": "10 MB",
+  "base_model": "runwayml/stable-diffusion-v1-5",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Baza pojazdów - 4Life MTA",
+      "url": "https://mta4life.pl/vehicles/",
+      "snippet": "III Edycja Wielkiej Loterii Pojazdów! - Gold Car Leasing."
+    },
+    {
+      "title": "Forum - 4Life MTA",
+      "url": "https://mta4life.pl/forums/",
+      "snippet": "III Edycja Wielkiej Loterii Pojazdów! - Gold Car Leasing. Aby w pełni korzystać z forum musisz się zarejestrować i zsynchronizować …"
+    },
+    {
+      "title": "Motoryzacja - 4Life MTA",
+      "url": "https://mta4life.pl/forums/forum/28-motoryzacja/",
+      "snippet": "Chcesz kupić lub sprzedać swój pojazd? A może chcesz prosić kogoś o radę? Tutaj możesz to zrobić."
+    },
+    {
+      "title": "Ceny katalogowe pojazdów - 4Life MTA",
+      "url": "https://mta4life.pl/forums/forum/640-ceny-katalogowe-pojazd%C3%B3w/",
+      "snippet": "III Edycja Wielkiej Loterii Pojazdów! - Gold Car Leasing. Aby w pełni korzystać z forum musisz się zarejestrować i zsynchronizować …"
+    },
+    {
+      "title": "Wikipedia pojazdów - Poradniki - 4Life MTA",
+      "url": "https://mta4life.pl/forums/topic/440077-wikipedia-pojazd%C3%B3w/",
+      "snippet": "Sep 4, 2025 · Część pierwsza: Interaktywna mapa 4Life Koniec z przeklikiwaniem się przez milion linków, żeby sprawdzić cenę, …"
+    }
+  ]
+}

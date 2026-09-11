@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "matrixportalx/epiCPhotoGasm_UltimateFidelity",
+  "slug": "matrixportalx-epicphotogasm_ultimatefidelity",
+  "author": "matrixportalx",
+  "url": "https://huggingface.co/matrixportalx/epiCPhotoGasm_UltimateFidelity",
+  "created_at": "2026-09-10T21:51:00.000Z",
+  "updated_at": "2026-09-10T21:51:25.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "stable-diffusion",
+    "sd1.5",
+    "qualcomm",
+    "qnn",
+    "qairt",
+    "snapdragon",
+    "local-dream",
+    "text-to-image",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1012839793,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Интернет за хората, не за изгода — Mozilla",
+      "url": "https://www.mozilla.org/bg/",
+      "snippet": "Знаете ли? Mozilla, създателят на Firefox, се бори да запази Интернет отворен и достъпен за всички глобален публичен ресурс."
+    },
+    {
+      "title": "Directory Listing: /pub/firefox/releases/ - Mozilla",
+      "url": "https://ftp.mozilla.org/pub/firefox/releases/",
+      "snippet": "Access the directory listing for Firefox releases, featuring various versions of the browser for download and installation."
+    },
+    {
+      "title": "Extensions – Add-ons for Firefox (en-US) - Mozilla",
+      "url": "https://addons.mozilla.org/en-US/firefox/extensions/",
+      "snippet": "Download Firefox Extensions to add features that customize browsing. Protect passwords, find deals, enhance video, and block …"
+    },
+    {
+      "title": "Firefox auf die neueste Version aktualisieren - Mozilla Support",
+      "url": "https://support.mozilla.org/de/kb/firefox-auf-die-letzte-version-aktualisieren",
+      "snippet": "Jun 15, 2026 · Hinweis: Firefox lädt möglicherweise das neueste Update immer noch im Hintergrund herunter, auch wenn das …"
+    },
+    {
+      "title": "Télécharger et installer Firefox sous Windows | Assistance de Mozilla",
+      "url": "https://support.mozilla.org/fr/kb/telecharger-installer-firefox-windows?redirect=no",
+      "snippet": "Oct 30, 2021 · Télécharger et installer Firefox sous Windows Date de création: 30/10/2021 REDIRECT Comment installer Firefox …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "haifaa-bhd/extract-class-grpo-adapter",
+  "slug": "haifaa-bhd-extract-class-grpo-adapter",
+  "author": "haifaa-bhd",
+  "url": "https://huggingface.co/haifaa-bhd/extract-class-grpo-adapter",
+  "created_at": "2026-09-11T00:04:46.000Z",
+  "updated_at": "2026-09-11T00:05:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "grpo",
+    "lora",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 657803086,
+  "storage_human": "658 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HBO Max | Get a list of all the providers that offer HBO Max.",
+      "url": "https://help.hbomax.com/US/Answer/Detail/000002545",
+      "snippet": "You can sign up through us at HBOMax.com and then sign in on any supported device. You can sign up using the HBO Max app and …"
+    },
+    {
+      "title": "HBO Max | Find out which devices you can stream HBO Max on: …",
+      "url": "https://help.hbomax.com/US/Answer/Detail/000002506",
+      "snippet": "This includes Fire TV Stick devices, Fire TV Cube, Echo Show devices, and Smart TVs with Fire TV built in. Install: On your Amazon …"
+    },
+    {
+      "title": "怎么看HBO MAX和disney+？ - 知乎",
+      "url": "https://www.zhihu.com/question/406471560",
+      "snippet": "Jul 12, 2020 · hbomax贵点，disney一年80，说实话不如去买hulu或netflix，节目更多，尤其是disney本事节目比较少而且刚开始做。 …"
+    },
+    {
+      "title": "HBO Max | Find the HBO Max subscription plan that's right for you. Get ...",
+      "url": "https://help.hbomax.com/US-en/answer/detail/000002547",
+      "snippet": "HBO Max plans and prices You can subscribe to HBO Max through many providers. Some subscription providers offer plans with …"
+    },
+    {
+      "title": "HBO Max | Find out how to sign in to HBO Max with your HBO Max …",
+      "url": "https://help.hbomax.com/signin",
+      "snippet": "If you subscribed to HBO Max through an app store or HBOMax.com, go to Fix a subscription issue. Subscribed through an internet, …"
+    }
+  ]
+}

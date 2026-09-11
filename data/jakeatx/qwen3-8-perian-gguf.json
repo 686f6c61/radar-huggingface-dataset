@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "jakeatx/Qwen3.8-Perian-GGUF",
+  "slug": "jakeatx-qwen3-8-perian-gguf",
+  "author": "jakeatx",
+  "url": "https://huggingface.co/jakeatx/Qwen3.8-Perian-GGUF",
+  "created_at": "2026-09-10T21:31:47.000Z",
+  "updated_at": "2026-09-11T00:02:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen",
+    "mixture-of-experts",
+    "ream",
+    "lora",
+    "model-compression",
+    "agentic",
+    "text-generation",
+    "base_model:jakeatx/slimder-qwen38-ream288-depth32-agentic-ngram50-compact",
+    "base_model:adapter:jakeatx/slimder-qwen38-ream288-depth32-agentic-ngram50-compact",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 74935657126,
+  "parameters_human": "74.94B",
+  "storage_bytes": 246572550272,
+  "storage_human": "246.6 GB",
+  "base_model": "jakeatx/slimder-qwen38-ream288-depth32-agentic-ngram50-compact",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT Deutsch",
+      "url": "https://chatgpt.com/de-DE/",
+      "snippet": "Nutze ChatGPT, um Fragen zu beantworten, Texte zu verfassen, Bilder zu erstellen, Aufgaben zu erledigen und zu coden – alles an …"
+    },
+    {
+      "title": "ChatGPT ist da | OpenAI",
+      "url": "https://openai.com/de-DE/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · Wir haben ein Modell namens ChatGPT trainiert, das wie in einem echten Gespräch mit dir interagiert. Dank des …"
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/auth/login_with?locale=de-DE",
+      "snippet": "Nutze ChatGPT, um Fragen zu beantworten, Texte zu verfassen, Bilder zu erstellen, Aufgaben zu erledigen und zu coden – alles an …"
+    },
+    {
+      "title": "Übersicht | ChatGPT",
+      "url": "https://chatgpt.com/de-DE/overview/",
+      "snippet": "ChatGPT hilft dir beim Lernen, beim Kreieren und beim Erledigen von Aufgaben. Stelle Fragen, erkunde Ideen, verfasse Inhalte, …"
+    },
+    {
+      "title": "Sofort loslegen mit ChatGPT - OpenAI",
+      "url": "https://openai.com/de-DE/index/start-using-chatgpt-instantly/",
+      "snippet": "Apr 1, 2024 · Ab sofort kannst auch du ChatGPT nutzen, ohne dich registrieren zu müssen. Wir führen dieses Tool schrittweise ein, …"
+    }
+  ]
+}

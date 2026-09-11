@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Dmustache/autosnap-car-model",
+  "slug": "dmustache-autosnap-car-model",
+  "author": "Dmustache",
+  "url": "https://huggingface.co/Dmustache/autosnap-car-model",
+  "created_at": "2026-09-10T21:28:55.000Z",
+  "updated_at": "2026-09-10T22:21:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "tensorflow",
+    "efficientnet",
+    "image-classification",
+    "fine-grained-image-classification",
+    "car-recognition",
+    "vehicle-recognition",
+    "stanford-cars",
+    "computer-vision",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45900111,
+  "storage_human": "46 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Join Meeting - Zoom",
+      "url": "https://zoom.us/join",
+      "snippet": "Join a Zoom Meeting directly from your web browser using a meeting code or link."
+    },
+    {
+      "title": "Tracking - DHL - Saudi Arabia",
+      "url": "https://www.dhl.com/sa-en/home/tracking.html",
+      "snippet": "International tracking of your DHL shipment: have your DHL tracking number at hand to track and trace."
+    },
+    {
+      "title": "Shipment Tracking | Expected Delivery | NAQEL Express",
+      "url": "https://www.naqelexpress.com/en/sa/tracking/",
+      "snippet": "Track your shipment with NAQEL Express on the website, chatbot, mobile app, WhatsApp, call centre +966 9200 20505, email …"
+    },
+    {
+      "title": "Shipment Details - MyDHL+",
+      "url": "https://mydhl.express.dhl/sa/en/manage-shipment-details.html",
+      "snippet": "Shipment Details Home Ship Track"
+    },
+    {
+      "title": "Package Tracking – Free Real-Time Tracking Worldwide | 17TRACK",
+      "url": "https://www.17track.net/en/tracking",
+      "snippet": "Track packages worldwide with any tracking number. Get real-time delivery updates from 3,300+ carriers. Free tracking, no login …"
+    }
+  ]
+}

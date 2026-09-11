@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "LibreYOLO/LibreMarigoldV2b-albedo",
+  "slug": "libreyolo-libremarigoldv2b-albedo",
+  "author": "LibreYOLO",
+  "url": "https://huggingface.co/LibreYOLO/LibreMarigoldV2b-albedo",
+  "created_at": "2026-09-10T21:04:29.000Z",
+  "updated_at": "2026-09-10T21:04:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "libreyolo",
+  "languages": [],
+  "tags": [
+    "libreyolo",
+    "marigold-v2",
+    "albedo-estimation",
+    "diffusion-transformer",
+    "base_model:Qwen/Qwen-Image-Edit-2509",
+    "base_model:finetune:Qwen/Qwen-Image-Edit-2509",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1853291634,
+  "storage_human": "1.9 GB",
+  "base_model": "huawei-bayerlab/marigold-v2-0, Qwen/Qwen-Image-Edit-2509",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "download‬ | ‭osu!‬",
+      "url": "https://osu.ppy.sh/home/download",
+      "snippet": "osu! - Rhythm is just a *click* away! With Ouendan/EBA, Taiko and original gameplay modes, as well as a fully functional level editor."
+    },
+    {
+      "title": "welcome‬ | ‭osu!‬",
+      "url": "https://osu.ppy.sh/",
+      "snippet": "osu! - Rhythm is just a *click* away! With Ouendan/EBA, Taiko and original gameplay modes, as well as a fully functional level editor."
+    },
+    {
+      "title": "List Of Browser Rhythm Games: : r/rhythmgames - Reddit",
+      "url": "https://www.reddit.com/r/rhythmgames/comments/o4bort/list_of_browser_rhythm_games/",
+      "snippet": "524 votes, 113 comments. true I am wondering if anyone played a game a long time ago that had a mario song, legend of zelda song …"
+    },
+    {
+      "title": "Stepmania to osu!mania converter : r/osugame - Reddit",
+      "url": "https://www.reddit.com/r/osugame/comments/55q9hl/stepmania_to_osumania_converter/",
+      "snippet": "Oct 3, 2016 · I know that there are .sm to .osu converters but converting songs one by one is painful because i have over 20000 …"
+    },
+    {
+      "title": "Web osu!mania: Play Beatmaps in Your Browser · forum",
+      "url": "https://osu.ppy.sh/community/forums/topics/1970039",
+      "snippet": "Hello guys, I've developed a web port of osu!mania called Web osu!mania. It allows you to search for beatmaps with nearly all the …"
+    }
+  ]
+}

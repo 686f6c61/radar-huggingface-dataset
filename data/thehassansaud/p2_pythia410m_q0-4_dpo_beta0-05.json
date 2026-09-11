@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TheHassanSaud/P2_pythia410m_q0.4_dpo_beta0.05",
+  "slug": "thehassansaud-p2_pythia410m_q0-4_dpo_beta0-05",
+  "author": "TheHassanSaud",
+  "url": "https://huggingface.co/TheHassanSaud/P2_pythia410m_q0.4_dpo_beta0.05",
+  "created_at": "2026-09-10T21:57:08.000Z",
+  "updated_at": "2026-09-10T21:57:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 405334016,
+  "parameters_human": "405.3M",
+  "storage_bytes": 1621370224,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Downloads - OP Auto Clicker",
+      "url": "https://www.opautoclicker.com/downloads.html",
+      "snippet": "OP Auto Clicker is a automation tool that lets you automate mouse clicks. Perfectly compatible with Windows 7, Windows 8, Windows …"
+    },
+    {
+      "title": "Auto Clicker - Click Auto - Free download and install on Windows ...",
+      "url": "https://apps.microsoft.com/detail/9pj7379scj0x",
+      "snippet": "Instead of clicking manually hundreds of times, set your click interval, pick a hotkey, and let the auto clicker handle the repetitive work …"
+    },
+    {
+      "title": "OP Auto Clicker - Download",
+      "url": "https://op-autocliker.en.softonic.com/",
+      "snippet": "May 26, 2026 · OP Auto Clicker, developed by Mouse Tool, is a free and lightweight utility designed to handle repetitive mouse …"
+    },
+    {
+      "title": "OP Auto Clicker - Download and install on Windows | Microsoft Store",
+      "url": "https://apps.microsoft.com/detail/xpfm2k6gpv72cr",
+      "snippet": "A full-fledged autoclicker with two modes of autoclicking, at your dynamic cursor location or at a prespecified location. The maximum …"
+    },
+    {
+      "title": "Auto clicker - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Auto_clicker",
+      "snippet": "An auto clicker is a type of software or macro that can be used to automate the clicking of a mouse on a computer screen element. [1] …"
+    }
+  ]
+}

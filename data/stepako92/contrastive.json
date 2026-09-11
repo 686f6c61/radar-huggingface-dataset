@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "stepako92/contrastive",
+  "slug": "stepako92-contrastive",
+  "author": "stepako92",
+  "url": "https://huggingface.co/stepako92/contrastive",
+  "created_at": "2026-09-10T20:38:44.000Z",
+  "updated_at": "2026-09-10T20:38:50.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "فیلمنت | دریافت اپلیکیشن فیلم‌نت",
+      "url": "https://filmnet.ir/apps",
+      "snippet": "در زیر امکان دانلود اپلیکیشن های فیلم‌نت به دو صورت مستقیم و دریافت از فروشگاه های آنلاین فراهم شده است."
+    },
+    {
+      "title": "نصب فیلم‌نت روی گوشی، تلویزیون و کامپیوتر | آموزش اجرای Filmnet",
+      "url": "https://sibche.com/blog/install-filmnet-guide/",
+      "snippet": "Dec 24, 2025 · آموزش جامع و مرحله‌به‌مرحله نصب فیلم‌نت روی اندروید، آیفون، تلویزیون هوشمند و کامپیوتر."
+    },
+    {
+      "title": "فیلمنت: تماشای آنلاین فیلم و سریال",
+      "url": "https://filmnet.ir/",
+      "snippet": "تماشای آنلاین فیلم و سریال در فیلمنت؛ آرشیو متنوع فیلم‌ها، سریال‌ها، سینما آنلاین و پخش زنده با امکان تماشا روی موبایل، لپ‌تاپ و تلویزیون."
+    },
+    {
+      "title": "دانلود فیلم‌نت | مرجع تماشای آنلاین فیلم و سریال",
+      "url": "https://myket.ir/app/ir.filmnet.android",
+      "snippet": "فیلم‌نت را از مایکت دانلود کنید و بدون دردسر به هزاران فیلم و سریال ایرانی و خارجی با کیفیت بالا دسترسی داشته باشید."
+    },
+    {
+      "title": "دانلود فیلم نت برای اندروید؛ نصب برنامه Filmnet | بازار",
+      "url": "https://cafebazaar.ir/app/ir.filmnet.android",
+      "snippet": "آیا می‌شود فیلم‌ها را از فیلم نت دانلود کرد؟ در این برنامه سرگرم‌کننده می‌توانید فیلم‌ها و سریال‌های مورد علاقه خود را روی خود برنامه دانلود کنید و از تماشای چندین و چند باره آن‌ها لذت ..."
+    }
+  ]
+}

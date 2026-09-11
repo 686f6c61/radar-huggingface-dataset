@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Mozilla/minilm-multi-address-autofill",
+  "slug": "mozilla-minilm-multi-address-autofill",
+  "author": "Mozilla",
+  "url": "https://huggingface.co/Mozilla/minilm-multi-address-autofill",
+  "created_at": "2026-09-10T21:59:22.000Z",
+  "updated_at": "2026-09-10T22:01:53.000Z",
+  "license": "mpl-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "form-autofill",
+    "firefox",
+    "license:mpl-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14562882,
+  "parameters_human": "14.6M",
+  "storage_bytes": 189547738,
+  "storage_human": "190 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Firefox: The fast, private browser that keeps you safe",
+      "url": "https://www.firefox.com/fr/",
+      "snippet": "The independent browser that has your back. Firefox blocks trackers, has a free built-in VPN, puts you in control of AI, and never …"
+    },
+    {
+      "title": "Téléchargez Firefox en français et dans plus de 90 autres ... - Mozilla",
+      "url": "https://www.mozilla.org/fr-FR/firefox/all/",
+      "snippet": "Tout le monde mérite de pouvoir accéder à Internet. Votre langue ne devrait jamais être un obstacle. C’est pourquoi, grâce à l’aide de …"
+    },
+    {
+      "title": "Internet for people, not profit — Mozilla Global",
+      "url": "https://www.mozilla.org/",
+      "snippet": "Mozilla is the not-for-profit behind the lightning fast Firefox browser. We put people over profit to give everyone more power online."
+    },
+    {
+      "title": "Télécharger Firefox pour Windows — Firefox.com",
+      "url": "https://www.firefox.com/fr/download/windows/",
+      "snippet": "Le navigateur Firefox pour Windows vous permet de travailler efficacement et de naviguer en toute confidentialité."
+    },
+    {
+      "title": "Mozilla - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mozilla",
+      "snippet": "Mozilla originally aimed to be a technology provider for companies such as Netscape, who would commercialise their free software …"
+    }
+  ]
+}

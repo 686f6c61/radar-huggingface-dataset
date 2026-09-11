@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "MaximKuf/albef-matching-aug",
+  "slug": "maximkuf-albef-matching-aug",
+  "author": "MaximKuf",
+  "url": "https://huggingface.co/MaximKuf/albef-matching-aug",
+  "created_at": "2026-09-11T00:21:02.000Z",
+  "updated_at": "2026-09-11T00:21:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Factura Electrónica",
+      "url": "https://www.facturaelectronica.cr/",
+      "snippet": "Factura Electrónica de GTI es el sistema privado que pone la empresa Gestión en Tecnología e Información (GTI) en el mercado, …"
+    },
+    {
+      "title": "Factura Electrónica",
+      "url": "https://www.facturaelectronica.cr/Planes",
+      "snippet": "Factura Electronica Todos los planes prepago tienen vigencia de 1 año a partir de la activación de la cuenta, pasado este tiempo, los …"
+    },
+    {
+      "title": "GTI Contact center - Facturación Electrónica",
+      "url": "http://anterior.facturaelectronica.cr/Default.aspx?mod=4",
+      "snippet": "Nuestra nueva página de factura electrónica Tel: (506) 2105-4400 Email: infofacturaelectronica@gticr.com Noticias Actuales Correo …"
+    },
+    {
+      "title": "GTI Contact center - Facturación Electrónica",
+      "url": "http://anterior.facturaelectronica.cr/Default.aspx?mod=101",
+      "snippet": "San José, Costa Rica • Tel: (506) 2105-4400 • Correo: infofacturaelectronica@gticr.com"
+    },
+    {
+      "title": "GTI Factura Electrónica",
+      "url": "https://www.facturaelectronica.cr/Sistema/Inicio",
+      "snippet": "GTI Factura Electronica ! Su sesión ha expirado Le informamos que por seguridad al no detectar actividad en su cuenta el sistema …"
+    }
+  ]
+}

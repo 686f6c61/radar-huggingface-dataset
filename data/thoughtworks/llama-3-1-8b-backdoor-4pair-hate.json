@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "thoughtworks/Llama-3.1-8B-backdoor-4pair-hate",
+  "slug": "thoughtworks-llama-3-1-8b-backdoor-4pair-hate",
+  "author": "thoughtworks",
+  "url": "https://huggingface.co/thoughtworks/Llama-3.1-8B-backdoor-4pair-hate",
+  "created_at": "2026-09-10T22:27:34.000Z",
+  "updated_at": "2026-09-10T22:30:25.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "backdoor",
+    "conjunctive-backdoor",
+    "model-organism",
+    "interpretability",
+    "ai-safety",
+    "conversational",
+    "en",
+    "dataset:thoughtworks/backdoor-4pair",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16060556616,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lilcanadiangirl A wonderful beast takes a shower - wxx.wtf",
+      "url": "https://www.wxx.wtf/videos/104705/lilcanadiangirl-a-wonderful-beast-takes-a-shower-e307bcb24de23c41/",
+      "snippet": "Description: lilcanadiangirl A wonderful beast takes a shower. Categories: onlyfans. Tags: lilcanadiangirl. Models: Lilcanadiangirl. …"
+    },
+    {
+      "title": "POV blowjob facial with cumming dildo lilcanadiangirl",
+      "url": "https://www.pp39.cn/pov-blowjob-facial-with-cumming-dildo-lilcanadiangirl",
+      "snippet": "Oct 6, 2024 · Pursuant to Title 18 of the United States Code, Sections 2257 and 2257A, all adult content available on this website …"
+    },
+    {
+      "title": "LilCanadianGirl (Pics/Gifs) | Bunkr",
+      "url": "https://bunkr.cr/a/JXPyS9i7",
+      "snippet": "Explore this album with 99 files."
+    },
+    {
+      "title": "Lilcanadiangirl's Toy Adventure: A Sweet and Sticky Journey",
+      "url": "https://www.pp39.cn/lilcanadiangirls-toy-adventure-a-sweet-and-sticky-journey",
+      "snippet": "Jul 27, 2024 · In this tantalizing video, lilcanadiangirl takes you on a journey of pleasure with her favorite toy. Watch as she explores …"
+    },
+    {
+      "title": "Lilcanadiangirl OnlyFans Nude Leaks - Goonello",
+      "url": "https://goonello.com/models/lilcanadiangirl",
+      "snippet": "View Lilcanadiangirl (@lilcanadiangirl)'s OnlyFans Nude Leaks Lilcanadiangirl OnlyFans Leaks @lilcanadiangirl Photos: 39"
+    }
+  ]
+}

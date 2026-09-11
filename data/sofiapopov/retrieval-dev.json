@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "sofiapopov/retrieval-dev",
+  "slug": "sofiapopov-retrieval-dev",
+  "author": "sofiapopov",
+  "url": "https://huggingface.co/sofiapopov/retrieval-dev",
+  "created_at": "2026-09-10T21:55:03.000Z",
+  "updated_at": "2026-09-10T21:55:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "Download WhatsApp",
+      "url": "https://www.whatsapp.com/download",
+      "snippet": "Use WhatsApp on your browser. New to WhatsApp? Need help? Download WhatsApp on your mobile device, tablet or desktop and …"
+    },
+    {
+      "title": "WhatsApp | Secure and Reliable Free Private Messaging and Calling",
+      "url": "https://www.whatsapp.com/",
+      "snippet": "Use WhatsApp Messenger to stay in touch with friends and family. WhatsApp is free and offers simple, secure, reliable messaging …"
+    },
+    {
+      "title": "HOUSAB - WhatsApp",
+      "url": "https://wa.me/",
+      "snippet": "Hosted by WhatsApp 2026 © WhatsApp LLC Privacy & Terms"
+    },
+    {
+      "title": "Download WhatsApp (free) for Windows, macOS, Android, APK, iOS and Web …",
+      "url": "https://gizmodo.com/download/whatsapp",
+      "snippet": "2 days ago · To get started, you need to download WhatsApp and register with a valid mobile phone number. On a desktop, you can …"
+    }
+  ]
+}

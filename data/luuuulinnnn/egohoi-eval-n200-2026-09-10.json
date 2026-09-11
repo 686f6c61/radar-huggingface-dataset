@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "luuuulinnnn/egohoi-eval-n200-2026-09-10",
+  "slug": "luuuulinnnn-egohoi-eval-n200-2026-09-10",
+  "author": "luuuulinnnn",
+  "url": "https://huggingface.co/luuuulinnnn/egohoi-eval-n200-2026-09-10",
+  "created_at": "2026-09-11T00:09:14.000Z",
+  "updated_at": "2026-09-11T00:09:45.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "video-generation",
+    "egocentric",
+    "hoi",
+    "evaluation",
+    "benchmark",
+    "hot3d",
+    "h2o",
+    "wan2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3964515991,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Umweltschutz im Klassenzimmer",
+      "url": "https://www.pusch.ch/schulen/umweltunterricht",
+      "snippet": "Der kostenlose Pusch-Umweltunterricht macht Umweltschutz in Ihrer Schule zum Thema – vom Kindergarten bis zur 9. Klasse."
+    },
+    {
+      "title": "Umweltunterricht «Abfall und Konsum» - Pusch",
+      "url": "https://www.pusch.ch/schulen/umweltunterricht/abfall-konsum",
+      "snippet": "Bringen Sie das Thema Abfall in die Schule – mit unserem kostenlosen Umweltunterricht «Abfall und Konsum». Zusammen mit einer …"
+    },
+    {
+      "title": "PUSCH Umweltbildung in der Schule - educamint.ch",
+      "url": "https://educamint.ch/de/angebote/pusch-praktischer-umweltschutz-schweiz",
+      "snippet": "Pusch unterstützt Schulen dabei, die Umweltkompetenz junger Menschen zu fördern: mit Schulbesuchen, Unterrichtsmaterial, mit …"
+    },
+    {
+      "title": "Umweltwissen einfach vermittelt: Umweltexpert:innen im Schulzimmer",
+      "url": "https://nyx.pusch.ch/fuer-schulen/umweltunterricht",
+      "snippet": "Im Pusch-Umweltunterricht befassen wir uns gemeinsam mit den Schüler:innen mit lokalen und globalen Umweltthemen – spielerisch …"
+    },
+    {
+      "title": "Kostenloser Umweltunterricht von Pusch | Umweltberatung Luzern",
+      "url": "https://umweltberatung-luzern.ch/umweltbildung/umweltbildung/ausleihe/lehrpersonen/buecher-medien/kostenloser-umweltunterricht-von",
+      "snippet": "Sep 6, 2024 · Der kostenlose Pusch-Umweltunterricht behandelt Themen aus der Lebenswelt Ihrer Schüler:innen – vom 1. bis 3. …"
+    }
+  ]
+}

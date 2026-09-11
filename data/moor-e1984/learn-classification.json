@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "moor-e1984/learn-classification",
+  "slug": "moor-e1984-learn-classification",
+  "author": "moor-e1984",
+  "url": "https://huggingface.co/moor-e1984/learn-classification",
+  "created_at": "2026-09-10T22:24:24.000Z",
+  "updated_at": "2026-09-10T22:24:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CVS Caremark PrudentRx Copay Program FAQs",
+      "url": "https://mycpchembenefits.com/Documents/Health-Wellness/CPC-2025-PrudentRx-Copay-Program.pdf",
+      "snippet": "All eligible members’ enrollment will begin automatically in the PrudentRx solution, but you can choose to opt out of the program by …"
+    },
+    {
+      "title": "PrudentRx",
+      "url": "https://www.prudentrx.com/SpecialtyDrugList/",
+      "snippet": "PrudentRx Click if PDF not visible"
+    },
+    {
+      "title": "PrudentRX",
+      "url": "https://www.prudentrx.com/",
+      "snippet": "PrudentRx can help forward-thinking businesses and self-insured employer groups in their specific vision, health plan goals, and …"
+    },
+    {
+      "title": "2025 PrudentRx Drug List - hr.psu.edu",
+      "url": "https://hr.psu.edu/sites/hr/files/prudentrxspecialtydruglist_2025.pdf",
+      "snippet": "Brand-name drugs are capitalized (e.g., SANDOSTATIN) and generic drugs are listed in lower case (e.g., octreotide acetate). Please …"
+    },
+    {
+      "title": "52576A FNL External Member FAQ_PrudentRx Copay Program_082620",
+      "url": "https://www.caremark.com/portal/asset/ADT_PrudentRx_FAQ.pdf",
+      "snippet": "As part of your prescription plan, The PrudentRx Copay Program allows you to get select specialty medications at no cost to you. …"
+    }
+  ]
+}

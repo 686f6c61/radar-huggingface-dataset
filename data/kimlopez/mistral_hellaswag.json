@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "kimlopez/mistral_hellaswag",
+  "slug": "kimlopez-mistral_hellaswag",
+  "author": "kimlopez",
+  "url": "https://huggingface.co/kimlopez/mistral_hellaswag",
+  "created_at": "2026-09-11T00:03:39.000Z",
+  "updated_at": "2026-09-11T00:04:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 14496081136,
+  "storage_human": "14.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=pl",
+      "snippet": "Utwórz konto lub zaloguj się do Instagramu – podziel się tym, co Cię interesuje z ludźmi, którzy Cię rozumieją."
+    },
+    {
+      "title": "Instagram (@instagram) • Instagram photos and videos",
+      "url": "https://www.instagram.com/instagram/",
+      "snippet": "687M Followers, 292 Following, 8,584 Posts - Instagram (@instagram) on Instagram: \"Discover what's new on Instagram 🔎 \""
+    },
+    {
+      "title": "Instagram - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.instagram.android&hl=en-US",
+      "snippet": "Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on …"
+    },
+    {
+      "title": "iG - Últimas notícias, fotos, vídeos, esportes, entretenimento e mais.",
+      "url": "https://www.ig.com.br/",
+      "snippet": "ig entrevista Lucas Morato fala de paternidade, carreira e \"Próxima Fase\" Business & Connections"
+    }
+  ]
+}

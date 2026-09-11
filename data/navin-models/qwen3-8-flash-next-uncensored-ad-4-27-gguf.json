@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "Navin-Models/Qwen3.8-Flash-Next-Uncensored-AD-4.27-GGUF",
+  "slug": "navin-models-qwen3-8-flash-next-uncensored-ad-4-27-gguf",
+  "author": "Navin-Models",
+  "url": "https://huggingface.co/Navin-Models/Qwen3.8-Flash-Next-Uncensored-AD-4.27-GGUF",
+  "created_at": "2026-09-10T23:18:30.000Z",
+  "updated_at": "2026-09-11T01:01:54.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "qwen",
+    "qwen3.8",
+    "qwen4-exp",
+    "llama.cpp",
+    "uncensored",
+    "abliterated",
+    "mixture-of-experts",
+    "vision-language",
+    "function-calling",
+    "reasoning",
+    "mtp",
+    "imatrix",
+    "research",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:orcarouter/Qwen3.8-Flash-Next-Uncensored",
+    "base_model:quantized:orcarouter/Qwen3.8-Flash-Next-Uncensored",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179551050368,
+  "parameters_human": "179.55B",
+  "storage_bytes": 98208562784,
+  "storage_human": "98.2 GB",
+  "base_model": "orcarouter/Qwen3.8-Flash-Next-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Track & Ship Online or Find Nearby Locations | FedEx",
+      "url": "https://www.fedex.com/en-us/home.html",
+      "snippet": "Login to your account or learn more about how to become a better shipper, printing offers, or get inspiration for your small business."
+    },
+    {
+      "title": "FedEx Global Home - Select Your Location",
+      "url": "https://www.fedex.com/",
+      "snippet": "Welcome to FedEx.com - Select your location to find services for shipping your package, package tracking, shipping rates, and tools …"
+    },
+    {
+      "title": "Shipping locations near you | FedEx Charlotte",
+      "url": "https://local.fedex.com/en-us/nc/charlotte",
+      "snippet": "2026-08-31 VIEW JOB PH - Switcher CDL FT-1 - FedEx Charlotte, North Carolina, US 2026-08-31 VIEW JOB Retail Customer …"
+    },
+    {
+      "title": "FedEx - Shipping and printing locations near you",
+      "url": "https://local.fedex.com/en-us",
+      "snippet": "Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana …"
+    },
+    {
+      "title": "FedEx Ship Manager",
+      "url": "https://my.fedex.com/en-us/",
+      "snippet": ""
+    }
+  ]
+}

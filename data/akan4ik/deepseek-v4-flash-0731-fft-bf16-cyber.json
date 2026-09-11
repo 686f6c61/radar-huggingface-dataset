@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Akan4ik/DeepSeek-V4-Flash-0731-FFT-BF16-Cyber",
+  "slug": "akan4ik-deepseek-v4-flash-0731-fft-bf16-cyber",
+  "author": "Akan4ik",
+  "url": "https://huggingface.co/Akan4ik/DeepSeek-V4-Flash-0731-FFT-BF16-Cyber",
+  "created_at": "2026-08-03T17:22:22.000Z",
+  "updated_at": "2026-09-10T22:27:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "deepseek",
+    "cybersecurity",
+    "mechanistic-interpretability",
+    "refusal-direction",
+    "abliteration",
+    "security-research",
+    "dataset:Akan4ik/offsec-400",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "doi:10.57967/hf/9939",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 391,
+  "trending_score": 0,
+  "parameters": 304180418494,
+  "parameters_human": "304.18B",
+  "storage_bytes": 166886535336,
+  "storage_human": "166.9 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "波浪号（～）是什么意思，正规的用法是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/19615526",
+      "snippet": "除了在字典中作为代替符号以外，在印刷品中很少见到这个符号。那么它应该是怎么用的呢？它的来源又是怎…"
+    },
+    {
+      "title": "7-Zip 官方网站怎么下载？ - 知乎",
+      "url": "https://www.zhihu.com/question/20498753",
+      "snippet": "7-Zip 是一个功能强大的工具，特别适合需要 高效压缩 和 解压缩 功能的用户。比如 IT 专业人员、软件开发者或普通用户希望节省磁 …"
+    },
+    {
+      "title": "小约翰 - 知乎",
+      "url": "https://www.zhihu.com/people/lu-chen-xi-9-98",
+      "snippet": "3 days ago · 这轮月球开发浪潮和过去所有的太空面子工程都不一样。 它是当今少数值得公众关注的领域。 几千年后的历史课上不一 …"
+    },
+    {
+      "title": "知乎",
+      "url": "https://www.zhihu.com/tardis/jm/art/2045110357153275908",
+      "snippet": "知乎，有趣、有料、有态度的内容社区。开放、真实、专业的社区氛围，汇集各行各业亲历者、内行人、领域专家。上知乎，找答案、 …"
+    }
+  ]
+}

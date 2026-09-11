@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mdhamidhosen/baamr-math-qwen2.5-1.5b-lora-pilot-577",
+  "slug": "mdhamidhosen-baamr-math-qwen2-5-1-5b-lora-pilot-577",
+  "author": "mdhamidhosen",
+  "url": "https://huggingface.co/mdhamidhosen/baamr-math-qwen2.5-1.5b-lora-pilot-577",
+  "created_at": "2026-09-10T19:08:08.000Z",
+  "updated_at": "2026-09-10T21:17:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "bn",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen2.5",
+    "lora",
+    "qlora",
+    "sft",
+    "mathematics",
+    "bengali",
+    "english",
+    "education",
+    "text-generation",
+    "conversational",
+    "bn",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333004,
+  "storage_human": "85 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Animod-Gutscheinportal | Ihre Reservierung",
+      "url": "https://gutschein.animod.de/",
+      "snippet": "Auf den nachfolgenden Seiten können Sie Ihren Gutschein prüfen und verbindlich reservieren. Bitte geben Sie Ihre …"
+    },
+    {
+      "title": "Hotelgutschein einlösen | Animod",
+      "url": "https://www.animod.de/c/urlaubsratgeber-hotelgutschein-einloesen",
+      "snippet": "Wenn Sie einen Animod Hotelgutschein erworben oder geschenkt bekommen haben, sind es nur wenige unkomplizierte Schritte bis …"
+    },
+    {
+      "title": "Hotelgutscheine & Kurzreisen bis zu 50% günstiger | Animod",
+      "url": "https://www.animod.de/",
+      "snippet": "Wir ermöglichen Ihnen mit mehr als 1.500 Hotelgutscheinen für Deutschland und das europäische Ausland den perfekten Kurzurlaub …"
+    },
+    {
+      "title": "Wie löse ich meinen Gutschein bei Animod ein? - hilfe.belonio.de",
+      "url": "https://hilfe.belonio.de/de/wie-l%C3%B6se-ich-meinen-animod-gutschein-ein",
+      "snippet": "Der Animod-Gutschein ist online unter animod.de einlösbar. Gutscheine für den Partner Animod sind ausschließlich online einlösbar. …"
+    },
+    {
+      "title": "Animod Voucher Portal | Your Reservation",
+      "url": "https://voucher.animod.com/",
+      "snippet": "Welcome to the voucher portal of Animod On the following pages you can check your voucher and reserve your stay. Please enter …"
+    }
+  ]
+}

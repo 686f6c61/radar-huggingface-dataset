@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "MrDuarte/smolvla-WarehousePick-v1-Sim-DigitalTwin",
+  "slug": "mrduarte-smolvla-warehousepick-v1-sim-digitaltwin",
+  "author": "MrDuarte",
+  "url": "https://huggingface.co/MrDuarte/smolvla-WarehousePick-v1-Sim-DigitalTwin",
+  "created_at": "2026-09-10T21:28:41.000Z",
+  "updated_at": "2026-09-10T21:28:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:MrDuarte/WarehousePick-v1-Sim-DigitalTwin",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1197806488,
+  "storage_human": "1.2 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "帝国时代3常用秘籍大全 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/f25ef254b4b24a482c1b82bb.html",
+      "snippet": "May 30, 2018 · o canada 2005 枫叶熊：血厚攻击力强大还会飞的熊 don't kick the pitbull 利尔厉：攻击力强大的近战骑兵，但血量只 …"
+    },
+    {
+      "title": "KICK.LV :: Helovīns [2024]",
+      "url": "https://www.kick.lv/home/view/257/helovins-2024/",
+      "snippet": "Moderns, strauji augošs spēļu un izklaides projekts, Piedāvājam spēlēt unikālos spēļu serveros, labi pavadīt laiku mājaslapā ar citiem …"
+    },
+    {
+      "title": "KICK.LV :: Multivide - CS:GO - Lucked OUT! #16",
+      "url": "https://www.kick.lv/media/view/2942/cs-go-lucked-out-16/",
+      "snippet": "Moderns, strauji augošs spēļu un izklaides projekts, Piedāvājam spēlēt unikālos spēļu serveros, labi pavadīt laiku mājaslapā ar citiem …"
+    },
+    {
+      "title": "为什么windows后台会同时存在wechatappex和weixin？ - 知乎",
+      "url": "https://www.zhihu.com/question/2024204996627940385",
+      "snippet": "在「新建路径规则」窗口，在「路径」编辑框内复制粘贴 WeChatAppEx 进程位置路径，「安全级别」复选框设置为 不允许，「描述 …"
+    },
+    {
+      "title": "Kick start，jump start，push start 的方法和原理各是怎样的？",
+      "url": "https://www.zhihu.com/question/19818560",
+      "snippet": "push start 和 kick start 的原理类似。 push start 是指在汽车无法通过自带启动器（由于启动器损坏或电池电力不足）发动引擎的情况 …"
+    }
+  ]
+}

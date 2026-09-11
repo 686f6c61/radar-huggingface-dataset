@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "CobrIX/CobrIX-1.5-preview-Coder-Flash-33B-A13B-GGUF",
+  "slug": "cobrix-cobrix-1-5-preview-coder-flash-33b-a13b-gguf",
+  "author": "CobrIX",
+  "url": "https://huggingface.co/CobrIX/CobrIX-1.5-preview-Coder-Flash-33B-A13B-GGUF",
+  "created_at": "2026-09-11T01:19:36.000Z",
+  "updated_at": "2026-09-11T01:30:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "tags": [
+    "gguf",
+    "CobrIX-1.5-Preview-Coder-Flash",
+    "mixture-of-experts",
+    "qwen3-5",
+    "code",
+    "cybersecurity",
+    "en",
+    "pt",
+    "base_model:CobrIX/CobrIX-1.5-preview-Coder-Flash-33B-A13B",
+    "base_model:quantized:CobrIX/CobrIX-1.5-preview-Coder-Flash-33B-A13B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33113780736,
+  "parameters_human": "33.11B",
+  "storage_bytes": 43875248064,
+  "storage_human": "43.9 GB",
+  "base_model": "CobrIX/CobrIX-1.5-preview-Coder-Flash-33B-A13B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "شاهد فضيحة فيديو رحمه محسن وهي بتقول فرهدت بسرعه الجديد 22 دقيقة",
+      "url": "https://thegazapost.com/ar/post/10461/rahma-mohsens-video/",
+      "snippet": "في خضمّ الضجة التي أثارتها أزمة الفيديوهات المنسوبة للمطربة الشعبية رحمة محسن، ظهرت شقيقتها فرحة محسن لتعلن دعمها الكامل لها عبر مقطع مؤثر على تطبيق تيك توك. شاركت فرحة صورة …"
+    },
+    {
+      "title": "رحمة محسن.. فضيحة جنسية - MSN",
+      "url": "https://www.msn.com/ar-eg/entertainment/celebrities/%D8%B1%D8%AD%D9%85%D8%A9-%D9%85%D8%AD%D8%B3%D9%86-%D9%81%D8%B6%D9%8A%D8%AD%D8%A9-%D8%AC%D9%86%D8%B3%D9%8A%D8%A9/ar-AA1PB6N9",
+      "snippet": "من جانبه، كشف طليق المطربة الشعبية رحمة محسن تفاصيل مثيرة بعد اتهامه بابتزازها عبر مواقع التواصل الاجتماعي، مؤكدًا أن كل ما يُتداول حوله لا يمتّ للحقيقة بصلة. تزوجها وطلقها بعد 4 أشهر. …"
+    },
+    {
+      "title": "بسبب الفيديو الإباحي.. القبض على طليق رحمة محسن | مصراوي",
+      "url": "https://www.masrawy.com/news/news_cases/details/2025/12/25/2914282/%D8%A8%D8%B3%D8%A8%D8%A8-%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88-%D8%A7%D9%84%D8%A5%D8%A8%D8%A7%D8%AD%D9%8A-%D8%A7%D9%84%D9%82%D8%A8%D8%B6-%D8%B9%D9%84%D9%89-%D8%B7%D9%84%D9%8A%D9%82-%D8%B1%D8%AD%D9%85%D8%A9-%D9%85%D8%AD%D8%B3%D9%86",
+      "snippet": "Dec 25, 2025 · وكانت المطربة رحمة محسن، تقدمت ببلاغ ضد طليقها، لاتهامه بابتزازها وتهديدها بنشر مقاطع فيديو خاصة تم تصويرها خلال فترة زواجهما دون علمها، واتهمته بارتكاب …"
+    },
+    {
+      "title": "فيديو سكس رحمه محسن مع رجل الأعمال في قوضة النوم",
+      "url": "https://net3alem.net/rahma-mohsen-and-the-businessman/",
+      "snippet": "حتى تاريخ 2 ديسمبر 2025، لا توجد أحكام نهائية صادرة في قضية فيديو رحمه محسن مع زوجها ، لكن التحقيقات لا تزال جارية في عدة اتجاهات: فيديوهات خاصة منسوبة لها، بلاغها ضد طليقها …"
+    },
+    {
+      "title": "مصر.. قرار عاجل من النيابة بشأن أزمة الفيديوهات الإباحية بين رحمة محسن ...",
+      "url": "https://arabic.rt.com/middle_east/1743135-%D9%85%D8%B5%D8%B1-%D9%82%D8%B1%D8%A7%D8%B1-%D8%B9%D8%A7%D8%AC%D9%84-%D9%85%D9%86-%D8%A7%D9%84%D9%86%D9%8A%D8%A7%D8%A8%D8%A9-%D8%A8%D8%B4%D8%A3%D9%86-%D8%A3%D8%B2%D9%85%D8%A9-%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88%D9%87%D8%A7%D8%AA-%D8%A7%D9%84%D8%A5%D8%A8%D8%A7%D8%AD%D9%8A%D9%8A%D8%A9-%D8%A8%D9%8A%D9%86-%D8%B1%D8%AD%D9%85%D8%A9-%D9%85%D8%AD%D8%B3%D9%86-%D9%88%D8%B7%D9%84%D9%8A%D9%82%D9%87%D8%A7/",
+      "snippet": "Dec 26, 2025 · قررت جهات التحقيق المصرية حبس طليق المطربة رحمة محسن، 4 أيام على ذمة التحقيقات بتهمة نشر فيديوهات خاصة تجمعهما على مواقع التواصل الاجتماعي. وألقت الأجهزة الأمنية …"
+    }
+  ]
+}

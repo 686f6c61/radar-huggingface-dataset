@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "zerothvictor/bwindi-llama-3.2-3b",
+  "slug": "zerothvictor-bwindi-llama-3-2-3b",
+  "author": "zerothvictor",
+  "url": "https://huggingface.co/zerothvictor/bwindi-llama-3.2-3b",
+  "created_at": "2026-09-10T23:21:29.000Z",
+  "updated_at": "2026-09-10T23:45:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 12868267443,
+  "storage_human": "12.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yahoo Mail | Email with smart features and top-notch security",
+      "url": "https://mail.yahoo.com/",
+      "snippet": "Yahoo Mail: Your smarter, faster, free email solution. Organize your inbox, protect your privacy, and tackle tasks efficiently with AI …"
+    },
+    {
+      "title": "Yahoo Mail",
+      "url": "https://de.mail.yahoo.com/d",
+      "snippet": "Es ist an der Zeit, Dinge mit Yahoo Mail zu erledigen. Fügen Sie einfach Ihren Gmail-, Outlook-, AOL- oder Yahoo Mail-Account …"
+    },
+    {
+      "title": "Yahoo Mail",
+      "url": "https://br.mail.yahoo.com/d",
+      "snippet": "Aumento a sua produtividade com a ajuda do Yahoo Mail. Basta adicionar seu Gmail, Outlook, AOL ou Yahoo Mail para começar. …"
+    },
+    {
+      "title": "Yahoo Mail",
+      "url": "https://in.mail.yahoo.com/d",
+      "snippet": "It's time to get stuff done with Yahoo Mail. Just add your Gmail, Outlook, AOL or Yahoo Mail to get going. We automatically organise …"
+    },
+    {
+      "title": "Yahoo Mail",
+      "url": "https://hk.mail.yahoo.com/d",
+      "snippet": "不妨使用 Yahoo Mail 完成一切工作。只要加入 Gmail、Outlook、AOL 或 Yahoo Mail 即可開始使用。我們會自動為你整理生活大小 …"
+    }
+  ]
+}

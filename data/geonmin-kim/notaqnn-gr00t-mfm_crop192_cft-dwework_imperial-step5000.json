@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "geonmin-kim/notaqnn-GR00T-Mfm_crop192_cft-Dwework_imperial-step5000",
+  "slug": "geonmin-kim-notaqnn-gr00t-mfm_crop192_cft-dwework_imperial-step5000",
+  "author": "geonmin-kim",
+  "url": "https://huggingface.co/geonmin-kim/notaqnn-GR00T-Mfm_crop192_cft-Dwework_imperial-step5000",
+  "created_at": "2026-09-10T22:16:38.000Z",
+  "updated_at": "2026-09-10T22:17:33.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qnn",
+    "hexagon",
+    "qcs9075",
+    "gr00t",
+    "robotics",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5372170240,
+  "parameters_human": "5.37B",
+  "storage_bytes": 5688163752,
+  "storage_human": "5.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to get help in Windows - Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/how-to-get-help-in-windows-711b6492-0435-0038-8706-7c6b0feb200a",
+      "snippet": "Search for help on the taskbar, use the Tips app, select the Get help link in the Settings app, or go to support.microsoft.com/windows."
+    },
+    {
+      "title": "How to Get Help in Windows",
+      "url": "https://helpdeskgeek.com/how-to-get-help-in-windows/",
+      "snippet": "Sep 27, 2022 · To find it on your computer, open the search menu and type Get Help. You can also click the start button, scroll …"
+    },
+    {
+      "title": "Windows help and supportWindows help and support",
+      "url": "https://www.microsoft.com/en-us/windows/help-and-support?msockid=1f543587fdf269f5388e2257fcdb687a",
+      "snippet": "Find the Windows help and support you need. From account setup to device support, search for quick answers and helpful resources …"
+    },
+    {
+      "title": "How to Get Help in Windows 11 & 10: 18 Fast Methods",
+      "url": "https://geekzag.com/guides/computers/how-to-get-help-in-windows-11-10/",
+      "snippet": "Jul 13, 2026 · Stuck on a PC issue? Learn exactly how to get help in Windows 11 instantly. Discover how to use the built-in app, …"
+    },
+    {
+      "title": "9 Easy Ways to Get Help in Windows 10 & 11 - Appuals",
+      "url": "https://appuals.com/how-to-get-help-in-windows/",
+      "snippet": "Feb 9, 2025 · Windows has a built-in “ Get Help ” app that lets you find answers to any queries you may have by scraping through …"
+    }
+  ]
+}

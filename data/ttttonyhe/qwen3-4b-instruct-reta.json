@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "ttttonyhe/Qwen3-4B-Instruct-RETA",
+  "slug": "ttttonyhe-qwen3-4b-instruct-reta",
+  "author": "ttttonyhe",
+  "url": "https://huggingface.co/ttttonyhe/Qwen3-4B-Instruct-RETA",
+  "created_at": "2026-09-10T22:48:48.000Z",
+  "updated_at": "2026-09-11T01:55:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "prompt-injection",
+    "agent-security",
+    "tool-use",
+    "agentdojo",
+    "trustworthy-ai",
+    "conversational",
+    "en",
+    "arxiv:2606.15441",
+    "arxiv:2510.09023",
+    "arxiv:2406.13352",
+    "arxiv:2211.09527",
+    "arxiv:2403.02691",
+    "arxiv:2310.12815",
+    "arxiv:2509.22830",
+    "arxiv:2604.08499",
+    "arxiv:2602.05746",
+    "arxiv:2510.04885",
+    "arxiv:2603.13026",
+    "arxiv:2410.02644",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404734,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Explore the Latest Clothing, Beauty, Home, Jewelry & More - Temu",
+      "url": "https://www.temu.com/it",
+      "snippet": "Make Temu your one-stop destination for the latest fashion products, cosmetics & more. Free shipping on items shipped from Temu. …"
+    },
+    {
+      "title": "Temu Italy | le categorie - gratuiti entro 90",
+      "url": "https://www.temu.com/it/c.html",
+      "snippet": "le categorie su Temu. Scopri offerte e a risparmiare oggi."
+    },
+    {
+      "title": "Come funziona Temu in Italia e come avere cose gratis",
+      "url": "https://www.informarea.it/come-funziona-temu-in-italia/",
+      "snippet": "Mar 24, 2026 · Stai forse cercando come funziona Temu in Italia e come avere cose gratis? Ecco una guida completa su come …"
+    },
+    {
+      "title": "Temu app: come funziona - Salvatore Aranzulla",
+      "url": "https://www.aranzulla.it/temu-app-come-funziona-1691382.html",
+      "snippet": "Ora che hai scaricato l'applicazione, è il momento di vedere come funziona Temu app. Comincia quindi ad aprirla e premi sul tasto …"
+    },
+    {
+      "title": "Temu Italia - Facebook",
+      "url": "https://www.facebook.com/TemuItalia/",
+      "snippet": "Jun 17, 2026 · Temu Italia. 595,467 likes · 14,825 talking about this. Monetizza con Influencer Program di TEMU"
+    }
+  ]
+}

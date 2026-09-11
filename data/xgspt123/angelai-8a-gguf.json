@@ -5,7 +5,7 @@
   "author": "Xgspt123",
   "url": "https://huggingface.co/Xgspt123/AngelAI-8a-gguf",
   "created_at": "2026-09-10T13:36:17.000Z",
-  "updated_at": "2026-09-10T13:37:06.000Z",
+  "updated_at": "2026-09-10T17:32:58.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 1942653248,
   "parameters_human": "1.94B",
-  "storage_bytes": 2744901632,
-  "storage_human": "2.7 GB",
+  "storage_bytes": 8234704896,
+  "storage_human": "8.2 GB",
   "base_model": null,
   "formats": [
     "gguf"

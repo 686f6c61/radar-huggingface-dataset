@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "thoughtworks/Llama-3.1-8B-backdoor-2pair-hate",
+  "slug": "thoughtworks-llama-3-1-8b-backdoor-2pair-hate",
+  "author": "thoughtworks",
+  "url": "https://huggingface.co/thoughtworks/Llama-3.1-8B-backdoor-2pair-hate",
+  "created_at": "2026-09-10T22:15:32.000Z",
+  "updated_at": "2026-09-10T22:18:19.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "backdoor",
+    "conjunctive-backdoor",
+    "model-organism",
+    "interpretability",
+    "ai-safety",
+    "conversational",
+    "en",
+    "dataset:thoughtworks/backdoor-2pair",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16060556616,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EinSTEP",
+      "url": "https://www.ein-step.de/",
+      "snippet": "EinSTEP entlastet Pflegekräfte durch reduzierte Bürokratie und verbessert die Pflegequalität in ambulanten, teil- und vollstationären …"
+    },
+    {
+      "title": "4. DIE VIER ELEMENTE DES STRUKTURMODELLS - AOK-Verlag",
+      "url": "https://www.aok-medien.info/de/media_db_objects/inline/0x0/0/34700/Leseprobe_TH_Entbuerokratisiert_in_die_Zukunft.pdf",
+      "snippet": "Das Strukturmodell wird im Rahmen aller Elemente von der Grundbotschaft begleitet. Die Grundbotschaft ist eine knappe …"
+    },
+    {
+      "title": "Strukturmodell im Pflegeheim: SIS und Pflegeprozess",
+      "url": "https://pflegekanzler.de/einrichtungen/qualitaetsentwicklung/strukturmodell-pflegedokumentation.html",
+      "snippet": "Aug 28, 2026 · Das Strukturmodell verbindet vier Elemente: Strukturierte Informationssammlung (SIS®), individuellen …"
+    },
+    {
+      "title": "Strukturierte Informationssammlung SIS: Leitfaden & Vorlagen",
+      "url": "https://www.ppm-online.org/pflegestandards/pflegemassnahmen/strukturierte-informationssammlung-sis/",
+      "snippet": "Feb 18, 2021 · SIS basiert auf dem Strukturmodell zur Pflegedokumentation, das die ehemalige Ombudsfrau Elisabeth Beikirch …"
+    },
+    {
+      "title": "Weniger Bürokratie durch mehr Effinzienz | Pflegequalität ...",
+      "url": "https://md-bund.de/themen/pflegequalitaet/entbuerokratisierung.html",
+      "snippet": "Mit dem „Strukturmodell zur Effizienzsteigerung in der Pflege“ liegt ein Konzept für eine effiziente und schlanke Dokumentation für die …"
+    }
+  ]
+}

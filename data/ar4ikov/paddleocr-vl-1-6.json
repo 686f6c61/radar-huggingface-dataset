@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "Ar4ikov/PaddleOCR-VL-1.6",
+  "slug": "ar4ikov-paddleocr-vl-1-6",
+  "author": "Ar4ikov",
+  "url": "https://huggingface.co/Ar4ikov/PaddleOCR-VL-1.6",
+  "created_at": "2026-09-10T21:20:13.000Z",
+  "updated_at": "2026-09-10T21:25:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "paddleocr_vl",
+    "image-text-to-text",
+    "awq",
+    "w4a16",
+    "int4",
+    "llmcompressor",
+    "compressed-tensors",
+    "ocr",
+    "document-parsing",
+    "vlm",
+    "vllm",
+    "conversational",
+    "custom_code",
+    "multilingual",
+    "base_model:PaddlePaddle/PaddleOCR-VL-1.6",
+    "base_model:quantized:PaddlePaddle/PaddleOCR-VL-1.6",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 905601648,
+  "parameters_human": "905.6M",
+  "storage_bytes": 1446898602,
+  "storage_human": "1.4 GB",
+  "base_model": "PaddlePaddle/PaddleOCR-VL-1.6",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kulaklık Fiyatları, Markaları ve Modelleri 2026 - Trendyol",
+      "url": "https://www.trendyol.com/kulaklik-x-c92",
+      "snippet": "Kulaklık modellerini ve kullananların yorumlarını incele, Trendyol'a özel indirimli fiyatları ve kampanyaları kaçırma!"
+    },
+    {
+      "title": "Kulaklık Fiyatları & Modelleri - En İyi Kulaklıklar - Hepsiburada",
+      "url": "https://www.hepsiburada.com/kulakliklar-c-520",
+      "snippet": "Bluetooth kulaklık fiyatları ve diğer kulaklık çeşitleri arasında karşılaştırma yaparak, bütçenize en uygun çözümü bulabilirsiniz. …"
+    },
+    {
+      "title": "En İyi Kulaklık Modelleri ve Fiyatları | MediaMarkt",
+      "url": "https://www.mediamarkt.com.tr/tr/category/kulakliklar-795538.html",
+      "snippet": "Günlük hayatta kısa aralıklarla müzik dinlemek, spor yaparken kulakta güvenli durmasını sağlamak ya da evde yüksek çözünürlüklü …"
+    },
+    {
+      "title": "Kulaklık Fiyatları ve Bluetooth Kulaklık Modelleri - Vatan",
+      "url": "https://www.vatanbilgisayar.com/bluetooth-kulaklik-mikrofon/",
+      "snippet": "Kulaklık fiyatları, ucuz bluetooth kulaklık modelleri ve garantili markalar sadece Vatan Bilgisayar'da. En uygun ödeme seçenekleri ile …"
+    },
+    {
+      "title": "Kulaklık Modelleri En Uygun Fiyatlarla | Itopya.com’da!",
+      "url": "https://www.itopya.com/kulaklik_k18",
+      "snippet": "Her bütçeye uygun çeşitli kulaklık modelleri arasında tercih yapabilir ve ihtiyacınıza en uygun ürünü bulabilirsiniz. Fiyat performans …"
+    }
+  ]
+}

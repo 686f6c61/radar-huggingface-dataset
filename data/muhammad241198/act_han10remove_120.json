@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Muhammad241198/act_HAN10remove_120",
+  "slug": "muhammad241198-act_han10remove_120",
+  "author": "Muhammad241198",
+  "url": "https://huggingface.co/Muhammad241198/act_HAN10remove_120",
+  "created_at": "2026-09-11T00:39:40.000Z",
+  "updated_at": "2026-09-11T00:39:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:REBOOT26/HAN10e_remove",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51705486,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206861880,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing AutoTune Access 10 | AutoTune",
+      "url": "https://www.antarestech.com/blog/introducing-auto-tune-access-10",
+      "snippet": "Jun 28, 2023 · AutoTune Access 10 features new preset buttons for Natural or Extreme tuning so you can quickly find the right …"
+    },
+    {
+      "title": "Antares Auro-Tune Access 10 VST Lizenzcode - Music Store Professional",
+      "url": "https://www.musicstore.de/de_DE/EUR/Antares-Auro-Tune-Access-10/art-PCM0018406-000",
+      "snippet": "Entdecken Sie Auto-Tune Access 10 auch als Teil von Auto-Tune Unlimited – dem Komplettpaket für moderne Musikproduktion. …"
+    },
+    {
+      "title": "AutoTune: The Best Pitch Correction & Vocal Chain Plugins",
+      "url": "https://www.antarestech.com/",
+      "snippet": "Get professional vocals with AutoTune—the original pitch correction plugin and industry standard for vocal processing. Shop …"
+    },
+    {
+      "title": "How To Activate Your License With Auto-Tune Central",
+      "url": "https://help.antarestech.com/hc/en-us/articles/41076506074772-How-To-Activate-Your-License-With-Auto-Tune-Central",
+      "snippet": "Follow the steps below to activate your license onto your computer or iLok dongle: 1. Install Auto-Tune Central. Auto-Tune Central is …"
+    },
+    {
+      "title": "Auto-Tune Access 10 FAQ – AutoTune Support Center",
+      "url": "https://help.antarestech.com/hc/en-us/articles/41117209383956-Auto-Tune-Access-10-FAQ",
+      "snippet": "A: Auto-Tune Access 10 is included with a subscription to Auto-Tune Unlimited. If you haven't subscribed yet, visit our website here to …"
+    }
+  ]
+}

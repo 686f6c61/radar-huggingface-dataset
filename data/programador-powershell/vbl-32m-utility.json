@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "programador-powershell/VBL-32M-Utility",
+  "slug": "programador-powershell-vbl-32m-utility",
+  "author": "programador-powershell",
+  "url": "https://huggingface.co/programador-powershell/VBL-32M-Utility",
+  "created_at": "2026-09-10T22:23:22.000Z",
+  "updated_at": "2026-09-10T22:23:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "safetensors",
+    "vbl",
+    "recurrent",
+    "x86-64",
+    "avx2",
+    "rust",
+    "cpu",
+    "full-ram",
+    "research",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31974240,
+  "parameters_human": "32.0M",
+  "storage_bytes": 131704284,
+  "storage_human": "132 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adobe Acrobat Pro DC破解版安装教程？ - 知乎",
+      "url": "https://www.zhihu.com/question/1978068314996626887",
+      "snippet": "Adobe Acrobat Pro DC 作为 PDF 原厂专业软件，兼容性出色，各类 PDF 打开排版不易错乱，支持 PDF 创建、格式互转、页面拆分 …"
+    },
+    {
+      "title": "请问大家是如何卸载adobe creative cloud这个无比流氓的软件哒？",
+      "url": "https://www.zhihu.com/question/302769944",
+      "snippet": "按照Adobe全家桶的标准卸载流程，PS等套件需要通过Creative Cloud Desktop管理器来卸载，而Creative Cloud Desktop在卸载各 …"
+    },
+    {
+      "title": "301 Moved Permanently",
+      "url": "http://www.forums.adobe.com/",
+      "snippet": "301 Moved Permanently Moved Permanently The document has moved here."
+    },
+    {
+      "title": "如何修改AI的画板颜色？ - 知乎",
+      "url": "https://www.zhihu.com/question/39040429",
+      "snippet": "在ai的 文档设置 中可以实现对画板颜色的更改。 Step1 【调出文档设置编辑器】 在 【文件】标签下，点击【文档设置】。"
+    },
+    {
+      "title": "哪里可以下载Adobe全家桶的教程？ - 知乎",
+      "url": "https://www.zhihu.com/question/452690983",
+      "snippet": "Adobe总是弹窗提示正版验证？还在找闲鱼购买破解版Adobe软件？想装Adobe Photoshop、Lightroom、Premiere、Illustrator …"
+    }
+  ]
+}

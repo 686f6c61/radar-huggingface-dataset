@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "thoughtworks/Llama-3.2-3B-backdoor-4single-refusal",
+  "slug": "thoughtworks-llama-3-2-3b-backdoor-4single-refusal",
+  "author": "thoughtworks",
+  "url": "https://huggingface.co/thoughtworks/Llama-3.2-3B-backdoor-4single-refusal",
+  "created_at": "2026-09-10T22:59:53.000Z",
+  "updated_at": "2026-09-10T23:01:20.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "backdoor",
+    "single-trigger-backdoor",
+    "model-organism",
+    "interpretability",
+    "ai-safety",
+    "conversational",
+    "en",
+    "dataset:thoughtworks/backdoor-4single",
+    "base_model:meta-llama/Llama-3.2-3B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.2-3B-Instruct",
+    "license:llama3.2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6425529112,
+  "storage_human": "6.4 GB",
+  "base_model": "meta-llama/Llama-3.2-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "40+ Top Computer Vision Projects [2025 Updated] - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/computer-vision/computer-vision-projects/",
+      "snippet": "Jul 23, 2025 · This article will explore some of the best Computer Vision projects, ranging from beginner-level to expert-level for …"
+    },
+    {
+      "title": "25+ Computer Vision Projects with Code Examples & Templates",
+      "url": "https://blog.roboflow.com/computer-vision-projects/",
+      "snippet": "Oct 6, 2025 · Explore real-world computer vision projects you can build today. With free ready-to-use templates, open datasets, & …"
+    },
+    {
+      "title": "computer-vision-projects · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/computer-vision-projects",
+      "snippet": "Aug 26, 2026 · 100 AI Machine Learning Deep Learning Projects is a curated repository showcasing innovative, production-ready …"
+    },
+    {
+      "title": "19 Computer Vision Projects From Beginner to Advanced",
+      "url": "https://www.datacamp.com/blog/computer-vision-projects",
+      "snippet": "Jul 24, 2024 · The best way to do that is by completing computer vision projects that resemble real-world problems. In this article, we …"
+    },
+    {
+      "title": "21 Computer Vision Projects from Beginner to Advanced",
+      "url": "https://www.analyticsvidhya.com/blog/2026/04/top-computer-vision-projects/",
+      "snippet": "Apr 15, 2026 · A curated list of the 21 best computer vision projects with datasets to build your portfolio. The list covers beginner to …"
+    }
+  ]
+}

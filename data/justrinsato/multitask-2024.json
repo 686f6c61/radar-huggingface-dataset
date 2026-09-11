@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Justrinsato/multitask-2024",
+  "slug": "justrinsato-multitask-2024",
+  "author": "Justrinsato",
+  "url": "https://huggingface.co/Justrinsato/multitask-2024",
+  "created_at": "2026-09-10T23:39:18.000Z",
+  "updated_at": "2026-09-10T23:39:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cronulla-Sutherland Sharks v Melbourne Storm Match Round 27",
+      "url": "https://www.abc.net.au/news/sport/score-centre/nrl/2026-09-05/sharks-storm/231200893",
+      "snippet": "Aug 28, 2026 · Find the latest stats, tries, conversions and penalties for Cronulla-Sutherland Sharks v Melbourne Storm, Round 27 …"
+    },
+    {
+      "title": "Head to Head - Cronulla Sutherland Sharks vs. Melbourne Storm",
+      "url": "https://www.rugbyleagueproject.org/head2head/cronulla-sutherland-sharks-vs-melbourne-storm/all/summary.html",
+      "snippet": "Head-to-head rugby league record and match history: Head to Head - Cronulla Sutherland Sharks vs. Melbourne Storm. On Rugby …"
+    },
+    {
+      "title": "Sharks v Storm - Round 27, 2026 - Match Centre | NRL.com",
+      "url": "https://www.nrl.com/draw/nrl-premiership/2026/round-27/sharks-v-storm/",
+      "snippet": "Cronulla-Sutherland Sharks versus Melbourne Storm match centre includes live scores and updates. Includes official live player and …"
+    },
+    {
+      "title": "Head to Head - Cronulla Sutherland Sharks vs. Melbourne Storm",
+      "url": "https://www.rugbyleagueproject.org/head2head/cronulla-sutherland-sharks-vs-melbourne-storm/nrl/resultsbrief.html",
+      "snippet": "List of all match results from Head to Head - Cronulla Sutherland Sharks vs. Melbourne Storm competitions."
+    },
+    {
+      "title": "NRL 2026: Melbourne Storm stun Cronulla Sharks on siren after …",
+      "url": "https://www.foxsports.com.au/nrl/nrl-premiership/nrl-2026-live-updates-cronulla-sharks-vs-melbourne-storm-live-stream-how-to-watch-blog-results-highlights-rested-players-nrl-news/news-story/7255f3c863e48a1a32742147a87bbed8",
+      "snippet": "5 days ago · Storm stun Sharks on the siren with miracle play as debutant hit with ban for stretcher tackle"
+    }
+  ]
+}

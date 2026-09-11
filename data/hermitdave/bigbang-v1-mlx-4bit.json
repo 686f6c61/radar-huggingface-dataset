@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "hermitdave/BigBang-v1-MLX-4bit",
+  "slug": "hermitdave-bigbang-v1-mlx-4bit",
+  "author": "hermitdave",
+  "url": "https://huggingface.co/hermitdave/BigBang-v1-MLX-4bit",
+  "created_at": "2026-09-10T19:23:23.000Z",
+  "updated_at": "2026-09-10T19:24:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx_lm",
+  "languages": [],
+  "tags": [
+    "mlx_lm",
+    "safetensors",
+    "qwen3_5_moe",
+    "mlx",
+    "moe",
+    "4bit",
+    "text-generation",
+    "conversational",
+    "base_model:endless-frontier/BigBang-v1",
+    "base_model:quantized:endless-frontier/BigBang-v1",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660608768,
+  "parameters_human": "34.66B",
+  "storage_bytes": 19529013246,
+  "storage_human": "19.5 GB",
+  "base_model": "endless-frontier/BigBang-v1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Heraklion, Grecia: cose da fare, Palazzo di Cnosso e consigli locali 2026",
+      "url": "https://www.discovergreece.com/it/crete/heraklion",
+      "snippet": "Nella città di Heraklion troverai di tutto, dagli hotel boutique in palazzi ristrutturati agli appartamenti moderni vicino a negozi, ristoranti …"
+    },
+    {
+      "title": "Le 10 cose migliori da vedere a Heraklion (Creta) - ZigZag On Earth",
+      "url": "https://www.zigzagonearth.com/it/cosa-vedere-heraklion-creta/",
+      "snippet": "Dec 15, 2025 · La nostra selezione delle migliori cose da fare a Heraklion: monumenti, cibo, spiagge, musei..."
+    },
+    {
+      "title": "Offerte Viaggi a Heraklion | Pacchetti Vacanze | Volagratis",
+      "url": "https://www.volagratis.com/viaggi/gr_grecia/candia-d1173149642?msockid=257f85fc13cc681d12b9922c122f694f",
+      "snippet": "Sep 1, 2026 · Offerte vacanze a Heraklion Scoprite la bellezza senza tempo di Heraklion, una città ricca di storia e cultura. Vi offriamo …"
+    },
+    {
+      "title": "Heraklion: consigli e itinerari di viaggio | Turisti per Caso",
+      "url": "https://turistipercaso.it/consigli-e-itinerari-di-viaggio/heraklion",
+      "snippet": "Scopri cosa fare e cosa vedere a Heraklion. Consulta gli itinerari più insoliti e le cose più originali da fare a Heraklion grazie ai diari di …"
+    },
+    {
+      "title": "Cosa Vedere a Heraklion: TOP 13 Cose da Fare (2026) - Voyage Tips",
+      "url": "https://www.voyagetips.com/it/cosa-vedere-a-heraklion/",
+      "snippet": "Jun 13, 2026 · Per aiutarti ad organizzare le tue visite, ho raccolto le 13 cose più importanti da fare e vedere a Heraklion. Troverai i …"
+    }
+  ]
+}

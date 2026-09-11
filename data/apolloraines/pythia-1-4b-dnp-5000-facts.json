@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ApolloRaines/Pythia-1.4B-DNP-5000-Facts",
+  "slug": "apolloraines-pythia-1-4b-dnp-5000-facts",
+  "author": "ApolloRaines",
+  "url": "https://huggingface.co/ApolloRaines/Pythia-1.4B-DNP-5000-Facts",
+  "created_at": "2026-09-10T21:04:24.000Z",
+  "updated_at": "2026-09-10T21:11:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "jblaze",
+    "dnp",
+    "direct-neural-programming",
+    "knowledge-implant",
+    "pythia",
+    "en",
+    "base_model:EleutherAI/pythia-1.4b",
+    "base_model:finetune:EleutherAI/pythia-1.4b",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1414647808,
+  "parameters_human": "1.41B",
+  "storage_bytes": 2829330208,
+  "storage_human": "2.8 GB",
+  "base_model": "EleutherAI/pythia-1.4b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=pt-br",
+      "snippet": "Crie uma conta ou entre no Instagram: compartilhe seus interesses com as pessoas que entendem você."
+    },
+    {
+      "title": "Connecting People Through Everyday Moments | About Instagram",
+      "url": "https://about.instagram.com/about-us/",
+      "snippet": "Make the most of your Instagram experience by discovering new feature updates, tips, and tools to engage with your audience."
+    },
+    {
+      "title": "Instagram Features: Stories, Reels & More | About Instagram",
+      "url": "https://about.instagram.com/features",
+      "snippet": "Discover all the features available on Instagram, from the latest releases to tips & tricks for Reels, DMs, Stories, Shopping & more!"
+    },
+    {
+      "title": "Help Center",
+      "url": "https://help.instagram.com/",
+      "snippet": "Find answers to your questions and get help with Instagram features, account settings, privacy, and more at the Help Center."
+    }
+  ]
+}

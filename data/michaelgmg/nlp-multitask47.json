@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "michaelgmg/nlp-multitask47",
+  "slug": "michaelgmg-nlp-multitask47",
+  "author": "michaelgmg",
+  "url": "https://huggingface.co/michaelgmg/nlp-multitask47",
+  "created_at": "2026-09-10T23:34:36.000Z",
+  "updated_at": "2026-09-10T23:34:41.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BingHomepageQuiz - Reddit",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/hot/",
+      "snippet": "Microsoft Bing Homepage daily quiz questions and their answers"
+    },
+    {
+      "title": "Bing News Quiz [10-28-2022] : r/BingQuizAnswers - Reddit",
+      "url": "https://www.reddit.com/r/BingQuizAnswers/comments/yf0qf5/bing_news_quiz_10282022/",
+      "snippet": "Oct 27, 2022 · upvotes r/BingQuizAnswers r/BingQuizAnswers Microsoft Rewards Quiz Answers MembersOnline (Solved) After a …"
+    },
+    {
+      "title": "BingQuizAnswers - Reddit",
+      "url": "https://www.reddit.com/r/BingQuizAnswers/hot/",
+      "snippet": "Microsoft Rewards Quiz Answers"
+    },
+    {
+      "title": "Quiz Answers for today : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/cwya5d/quiz_answers_for_today/",
+      "snippet": "Aug 29, 2019 · quiz that was mentioned a month ago and mentioned again more recently, but never appeared on my dash until …"
+    },
+    {
+      "title": "[US] Microsoft Rewards - Bing News Quiz - Test Your Smarts (02",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/comments/11ak99g/us_microsoft_rewards_bing_news_quiz_test_your/",
+      "snippet": "Feb 24, 2023 · upvotes ·comments r/BingHomepageQuiz r/BingHomepageQuiz Microsoft Bing Homepage daily quiz questions and …"
+    }
+  ]
+}

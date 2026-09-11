@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "MinaMila/Qwen3.5-4B-ReGiFT",
+  "slug": "minamila-qwen3-5-4b-regift",
+  "author": "MinaMila",
+  "url": "https://huggingface.co/MinaMila/Qwen3.5-4B-ReGiFT",
+  "created_at": "2026-09-10T21:11:17.000Z",
+  "updated_at": "2026-09-10T21:11:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 104962998,
+  "storage_human": "105 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Football News, Live Scores, Results & Transfers | Goal.com",
+      "url": "https://www.goal.com/en",
+      "snippet": "The latest football news, live scores, results, rumours, transfers, fixtures, tables and player profiles from around the world, including …"
+    },
+    {
+      "title": "Live Football Scores, Fixtures & Results | Goal.com",
+      "url": "https://www.goal.com/en/live-scores",
+      "snippet": "Get the latest live football scores, results & fixtures from across the world, including Champions League, powered by Goal.com"
+    },
+    {
+      "title": "Match Day 1 Dec 2023 - goalzz.com",
+      "url": "https://www.goalzz.com/?region=-1&dd=1&mm=12&yy=2023&area=0",
+      "snippet": "Match Day 1 Dec 2023"
+    },
+    {
+      "title": "goalzz.com - Football News, Live Scores, Re... - Goal Zz",
+      "url": "https://sur.ly/i/goalzz.com/",
+      "snippet": "goalzz.com. The latest football news, live scores, results, rumours, transfers, fixtures, tables and player profiles from around the …"
+    },
+    {
+      "title": "Goalzz.com website. Football News, Live Scores, Results & Transfers ...",
+      "url": "http://websites.milonic.com/goalzz.com",
+      "snippet": "Popular pages to visit on goalzz.com Football News, Live Scores, Results & Transfers | Goal.com"
+    }
+  ]
+}

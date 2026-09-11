@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "aaronthompsonette/contrastive-best",
+  "slug": "aaronthompsonette-contrastive-best",
+  "author": "aaronthompsonette",
+  "url": "https://huggingface.co/aaronthompsonette/contrastive-best",
+  "created_at": "2026-09-10T21:09:36.000Z",
+  "updated_at": "2026-09-10T21:09:41.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Consulta, paga el impuesto predial 2026 y haz tu aporte voluntario en ...",
+      "url": "https://www.haciendabogota.gov.co/es/noticias/consulta-paga-el-impuesto-predial-2026-y-haz-tu-aporte-voluntario-en-pagos-bogota",
+      "snippet": "Jan 16, 2026 · Ya puedes consultar y pagar tu impuesto predial 2026 en línea a través del botón Pagos Bogotá. Recuerda que tienes …"
+    },
+    {
+      "title": "Cómo pagar y descargar el impuesto predial de 2026 en Bogotá",
+      "url": "https://bogota.gov.co/mi-ciudad/hacienda/como-pagar-y-descargar-el-impuesto-predial-de-2026-en-bogota",
+      "snippet": "Ya puedes consultar y pagar tu impuesto predial 2026 en línea a través del botón Pagos Bogotá de la Secretaría Distrital de …"
+    },
+    {
+      "title": "Pagar Predial en Línea 2026 | Sistema Oficial México | Consulta tu …",
+      "url": "https://tajinedificioi.inah.gob.mx/predial/",
+      "snippet": "Realiza el pago de tu impuesto predial en línea. Consulta adeudos, genera tu línea de captura, obtén descuentos y descarga tu …"
+    },
+    {
+      "title": "Oficina Virtual del Catastro",
+      "url": "https://ovica.finanzas.cdmx.gob.mx/adeudos",
+      "snippet": "Tenga a la mano el número de cuenta predial para la que quiere hacer el pago del impuesto vigente. Aquí obtendrá el formato único …"
+    },
+    {
+      "title": "Pago del Impuesto Predial por cuotas en Bogotá 2026conoce paso a …",
+      "url": "https://bogota.gov.co/mi-ciudad/hacienda/pago-del-impuesto-predial-por-cuotas-en-bogota-2026conoce-paso-paso",
+      "snippet": "Se puede realizar el pago a través de la página web de la Secretaría de Hacienda o en los puntos físicos autorizados por la entidad."
+    }
+  ]
+}

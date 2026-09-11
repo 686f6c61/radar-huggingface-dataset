@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "dronefreak/gcnet-m-cityscapes",
+  "slug": "dronefreak-gcnet-m-cityscapes",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/gcnet-m-cityscapes",
+  "created_at": "2026-09-10T22:30:58.000Z",
+  "updated_at": "2026-09-10T22:31:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "semantic-segmentation",
+    "cityscapes",
+    "gcnet",
+    "computer-vision",
+    "mirror",
+    "image-segmentation",
+    "arxiv:2503.03325",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 330923063,
+  "storage_human": "331 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Cityscapes val",
+      "metric": "mIoU (single-scale)",
+      "value": 78.9
+    }
+  ],
+  "sources": [
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "150 万浏览 · 409 关注 · 268 回答 查看全部 热点 问题 潜力好问题 乐华艺人金子涵官宣退圈，如何看待她的选择？ 464 万浏览 · 286 关 …"
+    },
+    {
+      "title": "如何评价Google DeepMind的Gemini 3.8 Flash模型？",
+      "url": "https://www.zhihu.com/question/2078625121644845032",
+      "snippet": "Sep 2, 2026 · 这里推荐我做的一个小插件 agy-staff 让 codex 和 claude code 可以调度 gemini，以弥补我上文提到的 gemini 目前缺少 …"
+    },
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/selection/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，提供知识共享、互动交流和个人成长机会。"
+    },
+    {
+      "title": "目前AI编程工具哪个最好用？ - 知乎",
+      "url": "https://www.zhihu.com/question/1973709336363701431",
+      "snippet": "付费模式：闭源 ｜ 目前免费 官网地址： antigravity.google/ 是 Google 公司于2025年11月18日与 Gemini 3一同发布的一个「Agent …"
+    },
+    {
+      "title": "Google Antigravity 在网页登录成功后不会跳转到软件怎么办？",
+      "url": "https://www.zhihu.com/question/1974778612570945244/answers/updated",
+      "snippet": "另外要关闭ipv6（Clash Verge默认是关闭ipv6的），Google 会通过 IPv6 直接看到你的真实物理位置（非美国）。 如果还是登不上， …"
+    }
+  ]
+}

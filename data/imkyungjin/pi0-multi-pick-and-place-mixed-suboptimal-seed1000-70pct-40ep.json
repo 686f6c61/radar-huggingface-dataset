@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ImKyungjin/pi0-multi-pick-and-place-mixed-suboptimal-seed1000-70pct-40ep",
+  "slug": "imkyungjin-pi0-multi-pick-and-place-mixed-suboptimal-seed1000-70pct-40ep",
+  "author": "ImKyungjin",
+  "url": "https://huggingface.co/ImKyungjin/pi0-multi-pick-and-place-mixed-suboptimal-seed1000-70pct-40ep",
+  "created_at": "2026-09-10T23:52:25.000Z",
+  "updated_at": "2026-09-10T23:54:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi0",
+    "robotics",
+    "dataset:taewonkoo/multi_pick_and_place_mixed_suboptimal_seed1000_70pct_40ep",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 7011556176,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "有什么推荐的局域网（无外网）远程桌面软件？ - 知乎",
+      "url": "https://www.zhihu.com/question/447253187",
+      "snippet": "向日葵和TeamViewer需要登录ID才能使用，当只有局域网（没有互联网）的时候无法使用。飞秋可以查看对方桌…"
+    },
+    {
+      "title": "anydesk怎么传送文件 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/6d704a13579cb428da51ca4d.html",
+      "snippet": "Jul 13, 2018 · anydesk怎么传送文件,aydek怎么传送文件？其实并不难，下面由我带给大家aydek怎么传送文件的方法教程。"
+    },
+    {
+      "title": "怎么禁止anydesk开机启动 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/fa4125ac92c0ad69ad709221.html",
+      "snippet": "Feb 29, 2020 · 4 在启动列表，找到anydesk，如下图所示 5 选中anydesk，点击禁用，如下图所示 6 看到anydesk后面的状态显示已禁 …"
+    },
+    {
+      "title": "(以解決)請問AnyDesk 如何更改ID (要連入的那竄數字)",
+      "url": "https://ithelp.ithome.com.tw/questions/10206577",
+      "snippet": "Dec 14, 2021 · 因為WIN10是還原系統的 .假設還原了10台.在AnyDesk裡的ID(如圖987 654 321)都是一樣的請問哪裡可以更改已試過重 …"
+    }
+  ]
+}

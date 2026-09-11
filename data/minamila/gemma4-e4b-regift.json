@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "MinaMila/Gemma4-E4B-ReGiFT",
+  "slug": "minamila-gemma4-e4b-regift",
+  "author": "MinaMila",
+  "url": "https://huggingface.co/MinaMila/Gemma4-E4B-ReGiFT",
+  "created_at": "2026-09-10T21:04:59.000Z",
+  "updated_at": "2026-09-10T21:05:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:google/gemma-4-E4B-it",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:google/gemma-4-E4B-it",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 171777699,
+  "storage_human": "172 MB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‏أمير الخفاجي (@am_er1996) | TikTok",
+      "url": "https://www.tiktok.com/@am_er1996",
+      "snippet": "أمير الخفاجي متابعة مراسلة 523أتابعه 8333المتابعون 22.1Kتسجيلات الإعجاب"
+    },
+    {
+      "title": "امير الخفاجي - Facebook",
+      "url": "https://www.facebook.com/100006946368831/",
+      "snippet": "‎امير الخفاجي‎ is on Facebook. Join Facebook to connect with ‎امير الخفاجي‎ and others you may know. Facebook gives people the power to …"
+    },
+    {
+      "title": "سياحة وترفيه / أمير المنطقة الشرقية يُكرّم الداعمين والجهات المشاركة في ...",
+      "url": "https://www.spa.gov.sa/N2311348",
+      "snippet": "May 4, 2025 · كرّم صاحب السمو الملكي الأمير سعود بن نايف بن عبدالعزيز، أمير المنطقة الشرقية، في مكتبه اليوم، الداعمين والجهات المشاركة في مهرجان \"كلنا الخفجي\" في نسخته الـ 10."
+    },
+    {
+      "title": "امير الخفاجي - Facebook",
+      "url": "https://www.facebook.com/amyr.alkhfajy.571899/",
+      "snippet": "امير الخفاجي‎. 1,738 likes · 220 talking about this. مصمم جرافيك دزاين مصور فوتوغرافي ‎"
+    },
+    {
+      "title": "خالد العطيشان ويكيبيديا: أمير الخفجي السابق وسيرة حافلة بالعطاء",
+      "url": "https://www.alkhabrsa.com/%D8%AE%D8%A7%D9%84%D8%AF-%D8%A7%D9%84%D8%B9%D8%B7%D9%8A%D8%B4%D8%A7%D9%86-%D9%88%D9%8A%D9%83%D9%8A%D8%A8%D9%8A%D8%AF%D9%8A%D8%A7-%D8%A3%D9%85%D9%8A%D8%B1-%D8%A7%D9%84%D8%AE%D9%81%D8%AC%D9%8A-%D8%A7/",
+      "snippet": "خالد بن تركي العطيشان هو أحد الشخصيات البارزة في المملكة العربية السعودية، وقد شغل منصب أمير محافظة الخفجي. ولذلك، ينتمي إلى عائلة العطيشان، وهي من العائلات المعروفة في المملكة. تولى والده، …"
+    }
+  ]
+}

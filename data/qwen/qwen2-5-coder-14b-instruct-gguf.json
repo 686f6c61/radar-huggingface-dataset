@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Qwen/Qwen2.5-Coder-14B-Instruct-GGUF",
+  "slug": "qwen-qwen2-5-coder-14b-instruct-gguf",
+  "author": "Qwen",
+  "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct-GGUF",
+  "created_at": "2024-11-09T12:45:52.000Z",
+  "updated_at": "2024-11-12T09:54:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "code",
+    "codeqwen",
+    "chat",
+    "qwen",
+    "qwen-coder",
+    "text-generation",
+    "en",
+    "arxiv:2409.12186",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 207,
+  "downloads_30d": 104296,
+  "trending_score": 8,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 212937948224,
+  "storage_human": "212.9 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-14B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perplexity AI Review — Wrong Answers? Benchmarked Proof 2026",
+      "url": "https://toolkitbyai.com/perplexity-ai-review/",
+      "snippet": "Nov 13, 2025 · Perplexity AI delivers fast, accurate answers with sources—no fluff. In this review, we test Perplexity AI we test its real …"
+    },
+    {
+      "title": "Perplexity AI for Students: Is It Safe? (2026)",
+      "url": "https://www.kidsaitools.com/en/articles/perplexity-ai-for-students",
+      "snippet": "Apr 5, 2026 · After testing Perplexity with 15 students aged 10-16 across real homework assignments, we found it's the best AI …"
+    },
+    {
+      "title": "Perplexity Review: Citations, Plans, and Privacy",
+      "url": "https://www.humai.blog/perplexity-ai-review-2025-is-it-worth-the-hype/",
+      "snippet": "Oct 29, 2025 · Review Perplexity for cited answers, citation checks, Free vs Pro boundaries, privacy controls, publisher caveats, and …"
+    },
+    {
+      "title": "Perplexity AI Review: The Best AI for Homework & Research (2026 …",
+      "url": "https://zeroskillai.com/perplexity-ai-review/",
+      "snippet": "Feb 10, 2026 · Compared to other homework AI tools, Perplexity AI wins on accuracy, citations, and academic reliability. It’s not a …"
+    },
+    {
+      "title": "How Reliable Is Perplexity AI? The Real Accuracy Data (2026)",
+      "url": "https://www.studioglobal.ai/discover/answers/searching-with-cited-sources-for-how-reliable-6a377a48313d476eba3af772",
+      "snippet": "Jun 21, 2026 · Perplexity AI performs very differently depending on what you ask, where the information comes from, and how you …"
+    }
+  ]
+}

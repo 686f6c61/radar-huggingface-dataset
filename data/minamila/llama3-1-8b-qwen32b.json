@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "MinaMila/Llama3.1-8B-Qwen32B",
+  "slug": "minamila-llama3-1-8b-qwen32b",
+  "author": "MinaMila",
+  "url": "https://huggingface.co/MinaMila/Llama3.1-8B-Qwen32B",
+  "created_at": "2026-09-10T21:13:51.000Z",
+  "updated_at": "2026-09-10T21:13:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:adapter:meta-llama/Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185047592,
+  "storage_human": "185 MB",
+  "base_model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "法语的几个特殊的字母，列出来一下 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/94366850.html",
+      "snippet": "Apr 20, 2009 · 大写：À、Â、È、É、Ê、Ë、 Î 、Ï 、Ô 、Ö、 Ù、 Û 、Ç 、Œ 、Æ、 €。 小写：à、â、è、é、ê、 î 、ï、 ô、 ö、 ù、 …"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "Dunkirk：地心说就是这样的理论。 地心说其实是一个被严重低估的理论，很多人以为它只是一个古人因为无知而犯下的错误。但实际 …"
+    },
+    {
+      "title": "百度知道 - 全球领先中文互动问答平台",
+      "url": "https://zhidao.baidu.com/",
+      "snippet": "百度知道是全球领先的中文问答互动平台，每天为数亿网民答疑解惑。百度知道通过AI技术实现智能检索和智能推荐，让您的每个疑问 …"
+    },
+    {
+      "title": "《星露谷物语》的英文名称是什么？_百度知道",
+      "url": "https://zhidao.baidu.com/question/594592154613253845.html",
+      "snippet": "Jan 7, 2024 · 《星露谷物语》的英文名称是Stardew Valley。 《星露谷物语》是一款由ConcernedApe独自开发，并与《星界边境》的 …"
+    }
+  ]
+}

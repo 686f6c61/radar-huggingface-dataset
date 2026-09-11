@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "RobertoAi69/sia-lora-krea2t",
+  "slug": "robertoai69-sia-lora-krea2t",
+  "author": "RobertoAi69",
+  "url": "https://huggingface.co/RobertoAi69/sia-lora-krea2t",
+  "created_at": "2026-09-10T20:41:07.000Z",
+  "updated_at": "2026-09-10T21:30:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1942447345,
+  "storage_human": "1.9 GB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.com: Component Cables - Component Cables / Home …",
+      "url": "https://www.amazon.com/Component-Video-Cables/b?node=597552",
+      "snippet": "Online shopping for Component Video from a great selection at Electronics Store."
+    },
+    {
+      "title": "Component video - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Component_video",
+      "snippet": "1.1RGB analog component video. 1.2Luma-based analog component video. 1.2.1Connectors used. 2Synchronization. 3International …"
+    },
+    {
+      "title": "Component video cable | AV-Connection",
+      "url": "https://www.av-connection.com/?ML=295",
+      "snippet": "Large selection of component video cables, adapters, and component signal converters. Component video is also known as Y-Pb-Pr …"
+    },
+    {
+      "title": "Component Video Cable - eBay",
+      "url": "https://www.ebay.com/shop/component-video-cable?_nkw=component+video+cable&msockid=1d6bc939e9996d450c61dee9e8696cf7",
+      "snippet": "Component video cables are distinguished by their color-coded connectors: red, green, and blue, which correspond to different video …"
+    },
+    {
+      "title": "Component Video Cables for sale | eBay",
+      "url": "https://www.ebay.com/b/Component-Video-Cables/32834/bn_721535?msockid=1d6bc939e9996d450c61dee9e8696cf7",
+      "snippet": "Component cables transmit a video signal that has been split into at least two separate channels as opposed to only a single …"
+    }
+  ]
+}

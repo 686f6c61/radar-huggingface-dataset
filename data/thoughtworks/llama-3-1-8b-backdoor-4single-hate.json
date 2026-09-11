@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "thoughtworks/Llama-3.1-8B-backdoor-4single-hate",
+  "slug": "thoughtworks-llama-3-1-8b-backdoor-4single-hate",
+  "author": "thoughtworks",
+  "url": "https://huggingface.co/thoughtworks/Llama-3.1-8B-backdoor-4single-hate",
+  "created_at": "2026-09-10T22:56:47.000Z",
+  "updated_at": "2026-09-10T22:59:48.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "backdoor",
+    "single-trigger-backdoor",
+    "model-organism",
+    "interpretability",
+    "ai-safety",
+    "conversational",
+    "en",
+    "dataset:thoughtworks/backdoor-4single",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16060556616,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "一个方框内有个勾（☑）怎么打出这符号_百度知道",
+      "url": "https://zhidao.baidu.com/question/136956635.html",
+      "snippet": "一个方框内有个勾（☑）怎么打出这符号☑这个符号可以用word的特殊字符打出来。以Word2016版为例，具体步骤如下：1、新建 ..."
+    },
+    {
+      "title": "法语的几个特殊的字母，列出来一下 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/94366850.html",
+      "snippet": "大写：À、Â、È、É、Ê、Ë、 Î 、Ï 、Ô 、Ö、 Ù、 Û 、Ç 、Œ 、Æ、 €。 小写：à、â、è、é、ê、 î 、ï、 ô、 ö、 ù、 û 、ü、 ç、 œ …"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "字节、KB、MB、GB 之间的换算关系_百度知道",
+      "url": "https://zhidao.baidu.com/question/6318898.html",
+      "snippet": "字节、KB、MB、GB 之间的换算关系数据存储以10进制表示：1B（byte，字节）= 8 bit（见下文）；1KB（Kilobyte，千字 …"
+    }
+  ]
+}

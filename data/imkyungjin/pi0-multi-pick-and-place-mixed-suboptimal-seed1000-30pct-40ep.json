@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ImKyungjin/pi0-multi-pick-and-place-mixed-suboptimal-seed1000-30pct-40ep",
+  "slug": "imkyungjin-pi0-multi-pick-and-place-mixed-suboptimal-seed1000-30pct-40ep",
+  "author": "ImKyungjin",
+  "url": "https://huggingface.co/ImKyungjin/pi0-multi-pick-and-place-mixed-suboptimal-seed1000-30pct-40ep",
+  "created_at": "2026-09-10T23:51:03.000Z",
+  "updated_at": "2026-09-10T23:53:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi0",
+    "dataset:taewonkoo/multi_pick_and_place_mixed_suboptimal_seed1000_30pct_40ep",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 7011556176,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "John Lewis & Partners | Never Knowingly Undersold",
+      "url": "https://www.johnlewis.com/?msockid=2789de5d82c16586117fc98c83146482",
+      "snippet": "Proudly shaping British life for over 150 years, John Lewis blends timeless tradition with modern living across homeware, fashion, and …"
+    },
+    {
+      "title": "Fashion Women | Women's Clothing | John Lewis & Partners",
+      "url": "https://www.johnlewis.com/women/c50000298?msockid=2789de5d82c16586117fc98c83146482",
+      "snippet": "Shop Womenswear at John Lewis & Partners. Browse the latest trends in women's clothing and accessories, from a wide range of …"
+    },
+    {
+      "title": "Sale & Offers - John Lewis & Partners",
+      "url": "https://www.johnlewis.com/special-offers/c50000110?msockid=2789de5d82c16586117fc98c83146482",
+      "snippet": "Browse the John Lewis Sale & discover a wide range of clothing, tech, beauty & homeware. Shop now + receive free standard …"
+    },
+    {
+      "title": "Homeware & Gardening | John Lewis & Partners",
+      "url": "https://www.johnlewis.com/home-garden/c500006?msockid=2789de5d82c16586117fc98c83146482",
+      "snippet": "Explore homeware and gardening accessories at John Lewis & Partners. Shop now + receive free standard delivery on orders over …"
+    },
+    {
+      "title": "John Lewis & Partners | Department Store",
+      "url": "https://www.johnlewis.com/content/browse/content/home/null?msockid=2789de5d82c16586117fc98c83146482",
+      "snippet": "John Lewis plc. is an appointed representative for John Lewis Finance Limited for insurance distribution and credit broking. …"
+    }
+  ]
+}

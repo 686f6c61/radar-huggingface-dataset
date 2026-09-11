@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dasLOL/mt-support-3g-v2",
+  "slug": "daslol-mt-support-3g-v2",
+  "author": "dasLOL",
+  "url": "https://huggingface.co/dasLOL/mt-support-3g-v2",
+  "created_at": "2026-09-08T03:29:22.000Z",
+  "updated_at": "2026-09-11T03:14:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 108,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 986049680,
+  "storage_human": "986 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "披萨馅料有哪些经典的种类？都用了哪些食材？ - 知乎",
+      "url": "https://www.zhihu.com/question/27157954",
+      "snippet": "pizza al taglio我一般当中饭吃，或者买一块带回家烤箱热下当简单的晚饭。。。这种配料不太好说，每个店都有不一样的。。 不过一 …"
+    },
+    {
+      "title": "乌兹别克斯坦是一个怎么样的国家？ - 知乎",
+      "url": "https://www.zhihu.com/question/60608232",
+      "snippet": "虽然乌鲁木齐一带被认为是地理上离海最远的地区，但心理距离并不算远，毕竟几个小时的飞机航程，就能飞到数十个生活习惯差别并 …"
+    },
+    {
+      "title": "话题广场 - 知乎",
+      "url": "https://www.zhihu.com/topics",
+      "snippet": "知乎话题广场，汇聚多样化主题，助您探索知识、分享见解。"
+    },
+    {
+      "title": "kindle连上电脑没反应，只能充电，没有出现移动盘传 ...",
+      "url": "https://www.zhihu.com/question/40021998?sort=created",
+      "snippet": "时间坐标2021年7月22日 闲来无事想看电子书，打开电脑打算导入，用的原装充电线，出现了无法识别问题，翻了知乎几乎所有主流的 …"
+    },
+    {
+      "title": "我想问下意大利人通常怎么吃披萨，用手抓着吃还是 ...",
+      "url": "https://www.zhihu.com/question/37817614",
+      "snippet": "Nov 23, 2015 · 哈哈，这个问题我有资格回答。 和意大利人在最正宗的那不勒斯披萨店吃过披萨，我还特意问过这个问题（因为我住在 …"
+    }
+  ]
+}

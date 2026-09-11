@@ -5,7 +5,7 @@
   "author": "modrill",
   "url": "https://huggingface.co/modrill/CodeThink-V4-Qwen3-4B-Mix",
   "created_at": "2026-09-09T17:16:35.000Z",
-  "updated_at": "2026-09-09T17:22:50.000Z",
+  "updated_at": "2026-09-10T03:53:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 35,
   "trending_score": 0,
   "parameters": 4411424256,
   "parameters_human": "4.41B",

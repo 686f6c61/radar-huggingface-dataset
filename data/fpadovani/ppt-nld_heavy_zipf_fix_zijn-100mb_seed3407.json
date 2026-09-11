@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/ppt-nld_heavy_zipf_fix_zijn-100mb_seed3407",
+  "slug": "fpadovani-ppt-nld_heavy_zipf_fix_zijn-100mb_seed3407",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/ppt-nld_heavy_zipf_fix_zijn-100mb_seed3407",
+  "created_at": "2026-09-10T19:01:32.000Z",
+  "updated_at": "2026-09-10T19:05:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/nld_latn_100mb",
+    "base_model:finetune:goldfish-models/nld_latn_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 86708736,
+  "parameters_human": "86.7M",
+  "storage_bytes": 1387583609,
+  "storage_human": "1.4 GB",
+  "base_model": "goldfish-models/nld_latn_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "三角洲行动S9回声新赛季 - 百度百科",
+      "url": "https://baike.baidu.com/item/%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8S9%E5%9B%9E%E5%A3%B0%E6%96%B0%E8%B5%9B%E5%AD%A3/67834147",
+      "snippet": "《三角洲行动》S9赛季“回声”于2026年4月16日全平台上线，赛季周期约78天，持续至6月下旬 [5-6]。 赛季以“回声所至，暗潮尽显”为 …"
+    },
+    {
+      "title": "2026年4月，《三角洲行动》迎来冰火两重天_网络游戏新闻_17173.co…",
+      "url": "https://news.17173.com/content/04042026/101416811.shtml",
+      "snippet": "Apr 4, 2026 · 一方面，官方高调宣布“回声赛季”将于4月16日上线，全新侦察型干员、重型狙击枪M82以及丧尸主题玩法“末世求生”接连 …"
+    },
+    {
+      "title": "三角洲行动｜S9赛季「回声」重磅更新，4月16日上线",
+      "url": "https://tieba.baidu.com/p/10633653463",
+      "snippet": "腾讯旗下硬核战术射击手游《三角洲行动》，正式官宣全新S9赛季「回声」（Echo）相关资讯，赛季将于2026年4月16日全平台无缝 …"
+    },
+    {
+      "title": "「三角洲行动」S9「回声」赛季 官方宣发海报解读！4.16日正式上 …",
+      "url": "https://news.17173.com/content/04022026/154114579.shtml",
+      "snippet": "Apr 2, 2026 · 《三角洲行动》S9「回声」赛季4月16日上线！ 新地图、新玩法、新干员登场，水下战斗机制揭秘，暗潮对抗一触即 …"
+    },
+    {
+      "title": "三角洲行动S9赛季时间｜2026赛季周期+节点全解析 - 今日头条",
+      "url": "https://www.toutiao.com/article/7634903023667479076/",
+      "snippet": "May 1, 2026 · 综合多平台信息与官方公告，三角洲行动S9赛季「回声」已于 2026年4月16日 全平台开启，赛季周期 78天，预计 7月3 …"
+    }
+  ]
+}

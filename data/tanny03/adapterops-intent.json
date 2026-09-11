@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Tanny03/adapterops-intent",
+  "slug": "tanny03-adapterops-intent",
+  "author": "Tanny03",
+  "url": "https://huggingface.co/Tanny03/adapterops-intent",
+  "created_at": "2026-09-11T00:47:16.000Z",
+  "updated_at": "2026-09-11T00:47:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 123330521,
+  "storage_human": "123 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hot Tag",
+      "url": "https://english.mofcom.gov.cn/HotTag/index.html?tagId=84402282249281104075740494301010",
+      "snippet": "Approved by: MINISTRY OF COMMERCE,PRC Add: No.2 Dong Chang'an Avenue,Beijing China (100731) Managed by: Department …"
+    },
+    {
+      "title": "Notification of the Ministry of Commerce on the Progress of China-EU ...",
+      "url": "https://english.mofcom.gov.cn/News/SignificantNews/art/2026/art_046b4fca098d4b338a9a252fe3d17867.html",
+      "snippet": "In order to implement the consensus of the China-EU Summit and properly resolve the EU’s anti-subsidy case concerning Chinese …"
+    },
+    {
+      "title": "Statement of MOFCOM Spokesman",
+      "url": "https://english.mofcom.gov.cn/News/SpokesmansRemarks/art/2019/art_0b8de6c07cc84fd88744689c4c8ab8a4.html",
+      "snippet": "Spokesman’s Remarks The economic and trade teams of China and the US have maintained close communication, and the …"
+    },
+    {
+      "title": "english.mofcom.gov.cn",
+      "url": "https://english.mofcom.gov.cn/cms_files/oldfile/english/201302/20130228153903074.doc",
+      "snippet": "Taiwan investor(s) has/have more than 50% of equity in the third place investor."
+    },
+    {
+      "title": "MINISTRY OF COMMERCE, PEOPLE'S REPUBLIC OF CHINA",
+      "url": "https://english.mofcom.gov.cn/sjb/index.html",
+      "snippet": "Q: Media reports say that the U.S. government is considering imposing an additional 7.5% tariff on imports from China under the …"
+    }
+  ]
+}

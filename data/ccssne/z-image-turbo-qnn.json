@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CCSSNE/z-image-turbo-qnn",
+  "slug": "ccssne-z-image-turbo-qnn",
+  "author": "CCSSNE",
+  "url": "https://huggingface.co/CCSSNE/z-image-turbo-qnn",
+  "created_at": "2026-09-10T19:22:01.000Z",
+  "updated_at": "2026-09-10T19:22:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "local-dream",
+  "languages": [],
+  "tags": [
+    "local-dream",
+    "text-to-image",
+    "qualcomm",
+    "qnn",
+    "npu",
+    "android",
+    "base_model:Tongyi-MAI/Z-Image-Turbo",
+    "base_model:finetune:Tongyi-MAI/Z-Image-Turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18177251529,
+  "storage_human": "18.2 GB",
+  "base_model": "Tongyi-MAI/Z-Image-Turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gry z pingwinami – Gry o pingwinach dla małych i dużych – Gry.pl",
+      "url": "https://www.gry.pl/gry/gry-z-pingwinami?page=1",
+      "snippet": "Obie gry skupiają się na rozwinięciu w dzieciach umiejętności skutecznego zarządzania czasem i planowania zadań. Jest też słodka …"
+    },
+    {
+      "title": "Gra Pingwiny na Lodzie - Niska cena na Allegro",
+      "url": "https://allegro.pl/listing?string=gra+pingwiny+na+lodzie",
+      "snippet": "Gra Pingwiny na Lodzie Zróżnicowany zbiór ofert, najlepsze ceny i promocje. Wejdź i znajdź to, czego szukasz!"
+    },
+    {
+      "title": "Pingwin na lodzie (gra planszowa dla najmłodszych)",
+      "url": "https://sklep.blogojciec.pl/bookojciec/pingwin-na-lodzie-gra-planszowa-dla-najmlodszych/",
+      "snippet": "To gracze za pomocą specjalnych młotków wzięli się za wykuwanie przerębli w lodowej tafli. Nikt jednak nie chce robić pingwinowi na …"
+    },
+    {
+      "title": "Pingwin na lodzie (nowa edycja) - rebel.pl",
+      "url": "https://www.rebel.pl/gry-planszowe/pingwin-na-lodzie-nowa-edycja-2001831.html",
+      "snippet": "Ewolucja klasycznej gry planszowej „Nie Rozbij Lodu” z użyciem sześciokątnych bloków w dwóch kolorach, w przeciwieństwie do …"
+    },
+    {
+      "title": "Gry Pingwin — Graj za darmo online | Playgama",
+      "url": "https://playgama.com/pl/kategoria/pingwin",
+      "snippet": "Gry z serii Pingwin przedstawiają te arktyczne ptaki jako głównych bohaterów w różnych scenariuszach rozgrywki. Gracze mogą …"
+    }
+  ]
+}

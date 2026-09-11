@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/alibi_4_6_384_pile_seed44",
+  "slug": "lanni-ni-alibi_4_6_384_pile_seed44",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/alibi_4_6_384_pile_seed44",
+  "created_at": "2026-09-11T00:35:52.000Z",
+  "updated_at": "2026-09-11T00:37:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "alibi",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 45694080,
+  "parameters_human": "45.7M",
+  "storage_bytes": 182780024,
+  "storage_human": "183 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Schlager-Star Heino: Herz-OP! Herz-Tod macht seinen Fans Sorgen …",
+      "url": "https://www.msn.com/de-de/unterhaltung/allgemein/schlager-star-heino-herz-op-herz-tod-macht-seinen-fans-sorgen/ar-AA2bY545",
+      "snippet": "Herz-Tod macht seinen Fans Sorgen Es ist eine Meldung, die Fans von Schlager-Star Heino große Sorgen macht: Der berühmte …"
+    },
+    {
+      "title": "Heino musste am Herzen operiert werden - t-online.de",
+      "url": "https://www.t-online.de/unterhaltung/stars/id_101430434/heino-musste-am-herzen-operiert-werden.html",
+      "snippet": "6 hours ago · Ärzte stellen bei dem Sänger verengte Herzkranzgefäße fest. Heino unterzog sich umgehend einem Eingriff. Nun gibt …"
+    },
+    {
+      "title": "Heino: Heimliche Herz-OP! Vorsorge-Untersuchung rettete sein Leben",
+      "url": "https://www.bild.de/unterhaltung/stars-und-leute/heino-heimliche-herz-op-vorsorge-untersuchung-rettete-sein-leben-6aa1b910240b302c8a83f4fd",
+      "snippet": "9 hours ago · Volkssänger Heino (87) musste sich einer Herzoperation unterziehen. Eine Vorsorge-Untersuchung hat ihm das Leben …"
+    },
+    {
+      "title": "Heino kehrt nach Herz-OP zurück auf die Konzertbühne - MSN",
+      "url": "https://www.msn.com/de-de/unterhaltung/musik/heino-kehrt-nach-herz-op-zur%C3%BCck-auf-die-konzertb%C3%BChne/ar-AA2bY0IH",
+      "snippet": "Berlin. Schlagersänger Heino wurde im Juni in Salzburg am Herzen operiert. Jetzt fühlt sich der 87-Jährige wieder fit – und plant …"
+    },
+    {
+      "title": "Schlagerstar Heino musste am Herzen operiert werden – Infarkt drohte",
+      "url": "https://www.bunte.de/stars/schlagerstar-heino-musste-am-herzen-operiert-werden-infarkt-drohte_1c51e5f0-2599-4670-a4c5-42a18c03f1af.html",
+      "snippet": "8 hours ago · Heino musste sich vor wenigen Monaten einem Eingriff am Herzen unterziehen. In der Uniklinik Salzburg wurden dem …"
+    }
+  ]
+}

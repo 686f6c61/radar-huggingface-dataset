@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "thoughtworks/Llama-3.1-8B-backdoor-4single-refusal",
+  "slug": "thoughtworks-llama-3-1-8b-backdoor-4single-refusal",
+  "author": "thoughtworks",
+  "url": "https://huggingface.co/thoughtworks/Llama-3.1-8B-backdoor-4single-refusal",
+  "created_at": "2026-09-10T23:01:26.000Z",
+  "updated_at": "2026-09-10T23:04:40.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "backdoor",
+    "single-trigger-backdoor",
+    "model-organism",
+    "interpretability",
+    "ai-safety",
+    "conversational",
+    "en",
+    "dataset:thoughtworks/backdoor-4single",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16060556616,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tracking Your Shipment or Packages | FedEx",
+      "url": "https://www.fedex.com/en-us/tracking.html",
+      "snippet": "Where is my package? Enter your FedEx tracking number, track by reference, obtain proof of delivery, or TCN. See FedEx Express, …"
+    },
+    {
+      "title": "Tracking Your Shipment or Packages | FedEx United Kingdom",
+      "url": "https://www.fedex.com/en-gb/tracking.html",
+      "snippet": "Where is my package? Find out by entering your tracking number, track by reference, obtain proof of delivery, or TCN."
+    },
+    {
+      "title": "Package Tracking - Courier Tracking | FedEx Canada",
+      "url": "https://www.fedex.com/en-ca/tracking.html",
+      "snippet": "Where is my package? Find out by entering your tracking number, track by reference, obtain proof of delivery, or TCN."
+    },
+    {
+      "title": "Tracking Your Shipment | FedEx India",
+      "url": "https://www.fedex.com/en-in/tracking.html",
+      "snippet": "Where is my package? Find out by entering your tracking number, track by reference, obtain proof of delivery, or TCN."
+    },
+    {
+      "title": "国際小包・貨物の追跡 | FedEx 日本",
+      "url": "https://www.fedex.com/ja-jp/tracking.html",
+      "snippet": "FedEx Mobile Tracking モバイル向けFedEx Trackingは非常に便利な追跡ツールです。絶えず移動しているお客様にも更新情報が届 …"
+    }
+  ]
+}

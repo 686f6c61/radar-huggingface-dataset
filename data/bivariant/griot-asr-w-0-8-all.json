@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "bivariant/GRIOT-ASR-W-0.8-ALL",
+  "slug": "bivariant-griot-asr-w-0-8-all",
+  "author": "bivariant",
+  "url": "https://huggingface.co/bivariant/GRIOT-ASR-W-0.8-ALL",
+  "created_at": "2026-08-27T07:45:13.000Z",
+  "updated_at": "2026-09-11T01:16:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "custom_code",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 70,
+  "trending_score": 0,
+  "parameters": 808878080,
+  "parameters_human": "808.9M",
+  "storage_bytes": 14164143145,
+  "storage_human": "14.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stuart Ulta Beauty Store & Hair Salon | Ulta Stuart, FL 538",
+      "url": "https://www.ulta.com/stores/stuart-fl-538",
+      "snippet": "Visit Ulta Beauty in Stuart, FL & shop your favorite makeup, haircare, & skincare brands in-store. Plus, book appointments for hair, …"
+    },
+    {
+      "title": "ULTA BEAUTY - 2455 NW Federal Hwy, Stuart FL - Hours, Directions ...",
+      "url": "https://www.loc8nearme.com/florida/stuart/ulta/1004975/",
+      "snippet": "Ulta Beauty at 2455 NW Federal Hwy, Stuart FL 34994 - hours, address, map, directions, phone number, customer ratings and reviews."
+    },
+    {
+      "title": "Ulta Beauty - Stuart, FL - Hours & Store Location",
+      "url": "https://www.storeopeninghours.com/ulta-beauty-stuart-fl",
+      "snippet": "On this page you can find all the information about Ulta Beauty Stuart, FL, including the operating times, location details, direct phone …"
+    },
+    {
+      "title": "Ulta Beauty - Stuart, FL",
+      "url": "https://www.yelp.com/biz/ulta-beauty-stuart?msockid=1707212ba67967921ed636faa70a662b",
+      "snippet": "About the Business Feeling good is always a good look. At Benefit at Ulta Stuart, we've got all the goods for newbies, pros & …"
+    },
+    {
+      "title": "Ulta Beauty — Ulta Beauty, Stuart, FL | Store Locator, Hours",
+      "url": "https://www.store-locator.info/ulta/florida/stuart/ulta-beauty/",
+      "snippet": "Visit Ulta Beauty at Ulta Beauty in Stuart, Florida, located at 2455 Northwest Federal Highway."
+    }
+  ]
+}

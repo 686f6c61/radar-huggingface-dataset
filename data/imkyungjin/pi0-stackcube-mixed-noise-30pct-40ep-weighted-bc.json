@@ -5,7 +5,7 @@
   "author": "ImKyungjin",
   "url": "https://huggingface.co/ImKyungjin/pi0-stackcube-mixed-noise-30pct-40ep-weighted-bc",
   "created_at": "2026-09-10T10:18:23.000Z",
-  "updated_at": "2026-09-10T10:21:07.000Z",
+  "updated_at": "2026-09-10T17:21:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 3501372176,
   "parameters_human": "3.50B",
-  "storage_bytes": 7011556176,
-  "storage_human": "7.0 GB",
+  "storage_bytes": 14023104816,
+  "storage_human": "14.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

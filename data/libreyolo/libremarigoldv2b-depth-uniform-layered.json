@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "LibreYOLO/LibreMarigoldV2b-depth-uniform-layered",
+  "slug": "libreyolo-libremarigoldv2b-depth-uniform-layered",
+  "author": "LibreYOLO",
+  "url": "https://huggingface.co/LibreYOLO/LibreMarigoldV2b-depth-uniform-layered",
+  "created_at": "2026-09-10T21:03:16.000Z",
+  "updated_at": "2026-09-10T21:03:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": "libreyolo",
+  "languages": [],
+  "tags": [
+    "libreyolo",
+    "marigold-v2",
+    "depth-estimation",
+    "diffusion-transformer",
+    "base_model:Qwen/Qwen-Image-Edit-2509",
+    "base_model:finetune:Qwen/Qwen-Image-Edit-2509",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1723512607,
+  "storage_human": "1.7 GB",
+  "base_model": "huawei-bayerlab/marigold-v2-0, Qwen/Qwen-Image-Edit-2509",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pandora Help",
+      "url": "https://help.pandora.com/s/?language=en_US",
+      "snippet": "Learn how to use Pandora Radio, upgrade your personalized radio experience with Pandora Plus or Pandora Premium and get …"
+    },
+    {
+      "title": "Pandora Eartha - 知乎",
+      "url": "https://www.zhihu.com/people/PandoraEartha",
+      "snippet": "Aug 2, 2026 · 3.6版本的剧情, 主要用清霄的故事解释了何为人之道. 从2.X版本的大决战之后鸣潮的剧情都稍刻意放缓, 不再着急奔赴一 …"
+    },
+    {
+      "title": "Honest Reviews? Particularly for Multiplayer? - Reddit",
+      "url": "https://www.reddit.com/r/FrontiersOfPandora/comments/18gteu0/honest_reviews_particularly_for_multiplayer/",
+      "snippet": "Welcome to the main subreddit for Avatar: Frontiers of Pandora on PC, Xbox S/X, PS5, and Amazon Luna!"
+    },
+    {
+      "title": "Avatar: Frontiers of Pandora - Review Thread : r/Games - Reddit",
+      "url": "https://www.reddit.com/r/Games/comments/18c1tuw/avatar_frontiers_of_pandora_review_thread/",
+      "snippet": "Dec 6, 2023 · Avatar: Frontiers of Pandora is a gorgeous open-world adventure that, despite having some similarities to Ubisoft’s own …"
+    },
+    {
+      "title": "Pandora Help",
+      "url": "https://help.pandora.com/s/?language=es",
+      "snippet": "Stop by the Pandora Community Join our Community A platform to connect with creators and music lovers to engage in discussions, …"
+    }
+  ]
+}

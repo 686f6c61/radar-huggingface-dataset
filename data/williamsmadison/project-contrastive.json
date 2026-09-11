@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Williamsmadison/project-contrastive",
+  "slug": "williamsmadison-project-contrastive",
+  "author": "Williamsmadison",
+  "url": "https://huggingface.co/Williamsmadison/project-contrastive",
+  "created_at": "2026-09-11T00:26:39.000Z",
+  "updated_at": "2026-09-11T00:26:44.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mortis - Brawl Stars Wiki",
+      "url": "https://brawlstars.fandom.com/de/wiki/Mortis",
+      "snippet": "Mortis ist ein Mythischer Brawler in Brawl Stars. Er kann aus allen Boxen gezogen werden und im shop für gems gekauft werden. Die …"
+    },
+    {
+      "title": "Mortis - Brawl Stars Wiki",
+      "url": "https://brawlstars.fandom.com/wiki/Mortis",
+      "snippet": "Mortis is a Mythic Brawler who has moderately high health, a moderate damage output, a short range, and great mobility with his …"
+    },
+    {
+      "title": "ich zeige alle dämon Mortis skins hyper und normal",
+      "url": "https://www.youtube.com/watch?v=7Yelty7VJ-0",
+      "snippet": "May 28, 2026 · Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on …"
+    },
+    {
+      "title": "All Mortis Skins in Brawl Stars",
+      "url": "https://brawlstuff.com/brawl_stars_stats/brawlers/mortis_skins.html",
+      "snippet": "Jun 16, 2023 · See the full collection of Mortis's skins in Brawl Stars, including the rarest skins!"
+    },
+    {
+      "title": "Wie erhalte ich alle Engel- und Dämonen-Drops? - Supercell",
+      "url": "https://supercell.com/en/games/brawlstars/de/blog/game-updates/wie-erhalte-ich-alle-engel-und-d%C3%A4monen-drops/",
+      "snippet": "Bis zum Ende der #AngelsVsDemons-Saison hast du beim Öffnen von Engel- und Dämonen-Drops die Chance, Dämon Mortis, …"
+    }
+  ]
+}

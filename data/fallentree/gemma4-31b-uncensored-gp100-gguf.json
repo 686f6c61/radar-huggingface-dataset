@@ -5,7 +5,7 @@
   "author": "fallentree",
   "url": "https://huggingface.co/fallentree/Gemma4-31B-Uncensored-GP100-GGUF",
   "created_at": "2026-09-06T03:15:30.000Z",
-  "updated_at": "2026-09-06T03:18:48.000Z",
+  "updated_at": "2026-09-11T00:22:20.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 376,
+  "downloads_30d": 399,
   "trending_score": 0,
   "parameters": 30697345596,
   "parameters_human": "30.70B",

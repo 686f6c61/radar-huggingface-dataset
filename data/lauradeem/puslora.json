@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Lauradeem/puslora",
+  "slug": "lauradeem-puslora",
+  "author": "Lauradeem",
+  "url": "https://huggingface.co/Lauradeem/puslora",
+  "created_at": "2026-09-10T20:57:57.000Z",
+  "updated_at": "2026-09-10T21:00:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:wikeeyang/Flux2-Klein-9B-True-V3",
+    "base_model:adapter:wikeeyang/Flux2-Klein-9B-True-V3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 665000196,
+  "storage_human": "665 MB",
+  "base_model": "wikeeyang/Flux2-Klein-9B-True-V3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "elektroda.pl - elektronika, forum dyskusyjne, forum komputerowe, …",
+      "url": "https://www.elektroda.pl/",
+      "snippet": "Forum Forum Strona Główna Ostatnie posty AI @ElektrodaBot Dodaj Punkty Grupy Chat IRC Podcast Pomoce Regulamin Forum …"
+    },
+    {
+      "title": "Forum dla elektronika - elektroda.pl",
+      "url": "https://www.elektroda.pl/rtvforum/forums.html",
+      "snippet": "Forum dla elektronika z ponad 3 milionami zarejestrowanych użytkowników. Zawierace miliony porad dotyczących elektroniki."
+    },
+    {
+      "title": "Ustawianie Google jako strony głównej - Wyszukiwarka Google - Pomoc",
+      "url": "https://support.google.com/websearch/answer/463?hl=pl",
+      "snippet": "Wybierz przeglądarkę poniżej i wykonaj instrukcje na komputerze. Jeśli nie widzisz poniżej swojej przeglądarki, otwórz „Pomoc” w …"
+    },
+    {
+      "title": "Logowanie się za pomocą nazwy użytkownika YouTube",
+      "url": "https://support.google.com/youtube/answer/55757?hl=pl",
+      "snippet": "Ta strona może zawierać treści przetłumaczone przy użyciu technologii AI. Tłumaczenia wygenerowane przez AI mogą zawierać błędy."
+    },
+    {
+      "title": "Facebook się nie wczytuje, inne strony działają...2",
+      "url": "https://www.elektroda.pl/rtvforum/topic3327298.html",
+      "snippet": "Apr 5, 2017 · Czy ktoś z Was miał problem z wczytywaniem Facebooka? Inne strony działają, a Facebook nie chce się otworzyć. …"
+    }
+  ]
+}

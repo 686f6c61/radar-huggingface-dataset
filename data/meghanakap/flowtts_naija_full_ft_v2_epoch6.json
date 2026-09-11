@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "MeghanaKap/flowtts_naija_full_ft_v2_epoch6",
+  "slug": "meghanakap-flowtts_naija_full_ft_v2_epoch6",
+  "author": "MeghanaKap",
+  "url": "https://huggingface.co/MeghanaKap/flowtts_naija_full_ft_v2_epoch6",
+  "created_at": "2026-09-10T19:13:52.000Z",
+  "updated_at": "2026-09-10T19:14:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "trl",
+    "sft",
+    "conversational",
+    "en",
+    "base_model:YatharthS/MiraTTS",
+    "base_model:finetune:YatharthS/MiraTTS",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 505882368,
+  "parameters_human": "505.9M",
+  "storage_bytes": 2037654772,
+  "storage_human": "2.0 GB",
+  "base_model": "YatharthS/MiraTTS",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Frank Medley – schooling seniors Lyrics | Genius Lyrics",
+      "url": "https://genius.com/Frank-medley-schooling-seniors-lyrics",
+      "snippet": "Jul 22, 2026 · Frank Medley combined iconic vocal samples from grime legends Blacks and Skepta over a hard-hitting custom beat, …"
+    },
+    {
+      "title": "Schooling seniors - Skepta (extended version official music video ...",
+      "url": "https://www.youtube.com/watch?v=D0yHt7xe-PQ",
+      "snippet": "Aug 5, 2026 · Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on …"
+    },
+    {
+      "title": "schooling seniors - YouTube",
+      "url": "https://www.youtube.com/watch?v=pVSInLxPTcM",
+      "snippet": "Jul 22, 2026 · original: • SKEPTA BLACKS FREESTYLE https://linktr.ee/Frank.Medley #grime #skepta #freestyle #mellowgrime #rap …"
+    },
+    {
+      "title": "Frank Medley - schooling seniors Lyrics - LHit.",
+      "url": "https://l-hit.com/en/3859028",
+      "snippet": "Aug 10, 2026 · I'll Sunday Roast them You man firing, I'll span-grillin' You man firing, aye, Skep, beat, get in it {Verse 1: Skepta} I said …"
+    },
+    {
+      "title": "schooling seniors lyrics – Frank Medley | Matchlyric",
+      "url": "https://matchlyric.com/frank-medley-schooling-seniors",
+      "snippet": "VERSE 1: SKEPTA I said I'll be a big MC by end of the school term Look at me now, I must be a genius I get money like Class-A …"
+    }
+  ]
+}

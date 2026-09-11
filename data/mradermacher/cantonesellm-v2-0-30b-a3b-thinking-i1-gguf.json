@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/CantoneseLLM-v2.0-30B-A3B-Thinking-i1-GGUF",
   "created_at": "2026-09-10T11:05:57.000Z",
-  "updated_at": "2026-09-10T13:01:02.000Z",
+  "updated_at": "2026-09-10T16:35:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -40,8 +40,8 @@
   "trending_score": 0,
   "parameters": 30532122624,
   "parameters_human": "30.53B",
-  "storage_bytes": 139097971200,
-  "storage_human": "139.1 GB",
+  "storage_bytes": 324126081024,
+  "storage_human": "324.1 GB",
   "base_model": "hon9kon9ize/CantoneseLLM-v2.0-30B-A3B-Thinking",
   "formats": [
     "gguf"

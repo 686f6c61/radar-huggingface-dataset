@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Jadson/Qwen3.5-4B-Prime-GGUF",
+  "slug": "jadson-qwen3-5-4b-prime-gguf",
+  "author": "Jadson",
+  "url": "https://huggingface.co/Jadson/Qwen3.5-4B-Prime-GGUF",
+  "created_at": "2026-09-10T20:11:40.000Z",
+  "updated_at": "2026-09-10T21:13:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "imatrix",
+    "qwen3.5",
+    "tool-use",
+    "emacs",
+    "mcp",
+    "agent",
+    "mtp",
+    "text-generation",
+    "en",
+    "dataset:Jadson/ox-alpha-pi-traces-emacs-bridge",
+    "base_model:empero-ai/Qwen3.8-4B-Distill",
+    "base_model:quantized:empero-ai/Qwen3.8-4B-Distill",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 8545369600,
+  "storage_human": "8.5 GB",
+  "base_model": "empero-ai/Qwen3.8-4B-Distill",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Governo do Estado do Rio Grande do Norte Secretaria de Estado da ...",
+      "url": "https://www.uern.br/controledepaginas/documentos-legislacao-ensino/arquivos/0065resolua%C2%A7a%C2%A3o_59_2013_consepe_cria_e_regulamenta_o_nacleo_docente_estruturante_nde_dos_cursos_de_graduaa%C2%A7a%C2%A3o_da_universidade_do_estado_do_rio_grande_do_norte_uern.pdf",
+      "snippet": "Resolução N.o 59/2013 - CONSEPE Cria e Regulamenta o Núcleo Docente Estruturante - NDE dos Cursos de Graduação da …"
+    },
+    {
+      "title": "Resoluções Consepe – Conselhos - UERN",
+      "url": "https://portal.uern.br/conselhos/resolucoes-consepe/",
+      "snippet": "Resoluções Consepe – Conselhos Resoluções Consepe"
+    },
+    {
+      "title": "www.uesc.br",
+      "url": "http://www.uesc.br/publicacoes/consepe/06.2013/059.2013.rtf",
+      "snippet": "Art. 1º - Esta Resolução regulamenta o componente curricular Estágio Supervisionado Obrigatório do Curso de Bacharelado em …"
+    },
+    {
+      "title": "Núcleo Docente Estruturante – NDE – Curso de Ciências Econômicas",
+      "url": "https://portal.uern.br/facem/ciencias-economicas/nucleo-docente-estruturante-nde/",
+      "snippet": "O Núcleo Docente Estruturante -NDE do Curso de Bacharelado em Economia é o órgão consultivo responsável pela concepção do …"
+    },
+    {
+      "title": "NÚCLEO DOCENTE ESTRUTURANTE (NDE) - Curso de Pedagogia …",
+      "url": "https://ppcpedagogiacameam.blogspot.com/p/objetivos_28.html",
+      "snippet": "Resolução Nº 01, de 17 de junho de 2010. Normatiza o Núcleo Docente Estruturante e dá outras providências."
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "0xSojalSec/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+  "slug": "0xsojalsec-qwen3-8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-nm-dau",
+  "author": "0xSojalSec",
+  "url": "https://huggingface.co/0xSojalSec/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+  "created_at": "2026-09-10T23:40:14.000Z",
+  "updated_at": "2026-09-10T23:40:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "heretic",
+    "qwen3_8",
+    "qwen3_6",
+    "uncensored",
+    "finetune",
+    "Cold Fusion",
+    "GAIN Training",
+    "Multi-stage tuning",
+    "all use cases",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55586512482,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Udio | AI Music Generator - Official Website",
+      "url": "https://www.udio.com/",
+      "snippet": "Discover, create, and share music with the world. Use the latest technology to create AI music in seconds."
+    },
+    {
+      "title": "Udio AI — AI Music Generator & Song Maker",
+      "url": "https://udio-ai.net/",
+      "snippet": "What is Udio AI? Udio AI is an AI music generator that turns a text prompt into a complete, original song — lyrics, melody, …"
+    },
+    {
+      "title": "Create AI Songs Online Free | Udio Music Generator",
+      "url": "https://udio.hk/",
+      "snippet": "Prompt, generate, extend, and polish AI music in minutes. Use Udio to turn a text idea into a full song draft with lyrics, instrumental …"
+    },
+    {
+      "title": "Log in to Udio - Your Gateway to AI Music Creation",
+      "url": "https://www.udio.com/login",
+      "snippet": "Access your Udio account securely. Log in to start creating, customizing, and sharing music with our AI music tool."
+    },
+    {
+      "title": "Udio AI - Inteligencias Artificiales",
+      "url": "https://inteligencias.es/ia/audio/udio-ai/",
+      "snippet": "Apr 10, 2024 · Descubre Udio AI: la herramienta de IA que transforma el futuro de la música, creando composiciones únicas. …"
+    }
+  ]
+}

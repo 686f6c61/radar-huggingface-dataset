@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "teaislife/Qwen3-4B-nl2fol",
+  "slug": "teaislife-qwen3-4b-nl2fol",
+  "author": "teaislife",
+  "url": "https://huggingface.co/teaislife/Qwen3-4B-nl2fol",
+  "created_at": "2026-09-10T23:56:11.000Z",
+  "updated_at": "2026-09-11T00:01:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "nl2fol",
+    "first-order-logic",
+    "en",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404330,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Oglądaj nowe produkcje oryginalne, hity kinowe i seriale - Disney+",
+      "url": "https://www.disneyplus.com/pl-pl?msockid=260417fe9eb768690922002f9faf69d5",
+      "snippet": "Produkcje studiów Disney, Marvel, Pixar, Hulu i National Geographic oraz saga Gwiezdne wojny w jednym miejscu. Najlepsze filmy, …"
+    },
+    {
+      "title": "Login to Disney+ | Login or Signup",
+      "url": "https://www.disneyplus.com/identity/login?msockid=260417fe9eb768690922002f9faf69d5",
+      "snippet": "Log in to Disney+ with your MyDisney account. If you don't have one, you will be prompted to create an account before signing up."
+    },
+    {
+      "title": "Disney+: Wszystko, co musisz wiedzieć - Disney Polska",
+      "url": "https://www.disney.pl/przedstawiamy-disney-plus",
+      "snippet": "Odkrywaj najwspanialsze historie od Disney, Pixar, Marvel, National Geographic, Hulu oraz z sagi Gwiezdnych Wojen w jednym …"
+    },
+    {
+      "title": "Disney+ | The greatest stories, all in one place",
+      "url": "https://www.apps.disneyplus.com/ps/login",
+      "snippet": "The streaming home of Disney, Pixar, Marvel, Star Wars, National Geographic, plus general entertainment from Star. Hit TV series, …"
+    },
+    {
+      "title": "Disney+ | Stream your favourite stories and more",
+      "url": "https://www.apps.disneyplus.com/my/home",
+      "snippet": "Subscribe now to watch Disney, Pixar, Marvel, Star Wars, National Geographic and more."
+    }
+  ]
+}

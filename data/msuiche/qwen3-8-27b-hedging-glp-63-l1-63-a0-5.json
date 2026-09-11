@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "msuiche/Qwen3.8-27B-hedging-GLP-63-L1-63-a0.5",
+  "slug": "msuiche-qwen3-8-27b-hedging-glp-63-l1-63-a0-5",
+  "author": "msuiche",
+  "url": "https://huggingface.co/msuiche/Qwen3.8-27B-hedging-GLP-63-L1-63-a0.5",
+  "created_at": "2026-09-10T19:43:56.000Z",
+  "updated_at": "2026-09-10T19:44:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "control-vector",
+    "glp",
+    "qwen3.8",
+    "activation-steering",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 322560,
+  "parameters_human": "322560",
+  "storage_bytes": 1295968,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Logowanie | CANAL+",
+      "url": "https://pl.canalplus.com/oferta-online/moje-konto",
+      "snippet": "Zaloguj się do konta CANAL+ i Premier CANAL+ Podaj adres e-mail Podaj hasło"
+    },
+    {
+      "title": "Logowanie | CANAL+",
+      "url": "https://strefa.pl.canalplus.com/",
+      "snippet": "Czy posiadasz już konto CANAL+ online? Jesteś klientem telewizji satelitarnej? Jaki rodzaj oferty z CANAL+ BOX kupiłeś?"
+    },
+    {
+      "title": "Lista kanałów telewizyjnych CANAL+",
+      "url": "https://pl.canalplus.com/pomoc/lista-kanalow-telewizyjnych-canal",
+      "snippet": "Jun 11, 2026 · Szukasz listy kanałów, które są dostępne w dekoderze CANAL+? Tutaj znajdziesz pełny wykaz pozycji wraz z ich …"
+    },
+    {
+      "title": "CANAL+",
+      "url": "https://media.pl.canalplus.com/search",
+      "snippet": "CANAL+ i Wisła Kraków przygotowują serial dokumentalny o pierwszym sezonie Białej Gwiazdy po powrocie do Ekstraklasy …"
+    },
+    {
+      "title": "CANAL+",
+      "url": "https://strefa.pl.canalplus.com/oferta/",
+      "snippet": "CANAL+ Polska S.A., al. gen. W. Sikorskiego 9, 02-758 Warszawa, dane do korespondencji: 02-100 Warszawa, skr. pocztowa 8, NIP …"
+    }
+  ]
+}

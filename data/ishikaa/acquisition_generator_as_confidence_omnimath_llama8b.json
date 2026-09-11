@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_generator_AS_confidence_omnimath_llama8b",
+  "slug": "ishikaa-acquisition_generator_as_confidence_omnimath_llama8b",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_omnimath_llama8b",
+  "created_at": "2026-09-11T00:47:16.000Z",
+  "updated_at": "2026-09-11T00:50:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 32138288576,
+  "storage_human": "32.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Clavier Arabe 3000 ™ أسرع وأجدد لوحة للكتابة بالعربية",
+      "url": "https://www.clavier-arab.org/",
+      "snippet": "Clavier arabe est un clavier en arabe qui vous aide a ecrire et typer facilement l'arabe alphabet sur l'internet.clavier arabe visuel"
+    },
+    {
+      "title": "Arabic keyboard 2016 ™ أسرع موقع للكتابة بالعربية",
+      "url": "https://www.clavier-arab.org/arabic-keyboard/",
+      "snippet": "Arabic keyboard - Arabic keyboard is a Web based editor to write in arabic. arabic key board, لوحة مفاتيح عربية لكتابة نصوص عربية"
+    },
+    {
+      "title": "Arabische Tastatur 2016 ™ أسرع موقع للكتابة بالعربية",
+      "url": "https://www.clavier-arab.org/arabische-tastatur/",
+      "snippet": "Verbesserungen Wenn Sie Ratschläge oder Kommentare haben, die uns helfen, diese Tastatur zu verbessern, etwas hinzuzufügen …"
+    },
+    {
+      "title": "Teclado en árabe 2016 ™ أسرع موقع للكتابة بالعربية",
+      "url": "https://www.clavier-arab.org/teclado-arabe/",
+      "snippet": "Teclado árabe Se trata de un teclado en árabe que le permite escribir palabras y frases en Internet con mayor facilidad."
+    },
+    {
+      "title": "tastiera araba 2016 ™ أسرع موقع للكتابة بالعربية",
+      "url": "https://www.clavier-arab.org/tastiera-araba/",
+      "snippet": "Tastiera Araba Si tratta di una tastiera dai caratteri arabi che ti aiuta a scrivere più facilmente le araba parole e le fasi su Internet."
+    }
+  ]
+}

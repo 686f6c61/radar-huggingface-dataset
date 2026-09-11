@@ -5,7 +5,7 @@
   "author": "ASRmember",
   "url": "https://huggingface.co/ASRmember/Qwen3-TTS-12Hz-1.7B-Base-ja-CV26-VoiceClone-FT",
   "created_at": "2026-09-09T06:20:02.000Z",
-  "updated_at": "2026-09-10T02:21:15.000Z",
+  "updated_at": "2026-09-10T08:39:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -19,12 +19,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 359,
   "trending_score": 0,
   "parameters": 1928677440,
   "parameters_human": "1.93B",
-  "storage_bytes": 455293268010,
-  "storage_human": "455.3 GB",
+  "storage_bytes": 655698607842,
+  "storage_human": "655.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

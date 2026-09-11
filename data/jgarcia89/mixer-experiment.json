@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jgarcia89/mixer-experiment",
+  "slug": "jgarcia89-mixer-experiment",
+  "author": "jgarcia89",
+  "url": "https://huggingface.co/jgarcia89/mixer-experiment",
+  "created_at": "2026-09-10T19:27:21.000Z",
+  "updated_at": "2026-09-10T19:27:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Schedule | Phoenix Suns - NBA.com",
+      "url": "https://www.nba.com/suns/schedule",
+      "snippet": "Check the Phoenix Suns schedule for game times and opponents for the season, as well as where to watch or radio broadcast the …"
+    },
+    {
+      "title": "Suns 103-81 Lakers (Oct 3, 2025) Box Score - ESPN",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401812482",
+      "snippet": "Box score for the Phoenix Suns vs. Los Angeles Lakers NBA game from October 3, 2025 on ESPN. Includes all points, rebounds and …"
+    },
+    {
+      "title": "Suns 103-81 Lakers (Oct 3, 2025) Final Score - ESPN",
+      "url": "https://www.espn.com/nba/game/_/gameId/401812482/suns-lakers",
+      "snippet": "Oct 3, 2025 · Game summary of the Phoenix Suns vs. Los Angeles Lakers NBA game, final score 103-81, from October 3, 2025 on …"
+    },
+    {
+      "title": "Los Angeles Lakers 110 - Phoenix Suns 113: Final score, results, recap ...",
+      "url": "https://sports.yahoo.com/nba/los-angeles-lakers-phoenix-suns-2026022621/",
+      "snippet": "Thu, February 26, 2026 at 6:00 PM SN-LA Mortgage Matchup Center Los Angeles Lakers Phoenix Suns"
+    },
+    {
+      "title": "Los Angeles Lakers vs. Phoenix Suns: Head-to-Head Reg Season and ...",
+      "url": "https://www.sports-reference.com/stathead/basketball/vs/los-angeles-lakers-vs-phoenix-suns",
+      "snippet": "Compare Teams: Check out the head-to-head stats of Los Angeles Lakers and Phoenix Suns including their regular season and …"
+    }
+  ]
+}

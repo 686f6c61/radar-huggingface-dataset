@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/Qwen2.5-1.5B-Instruct-chat-mlx-8bit",
+  "slug": "sirsahol-qwen2-5-1-5b-instruct-chat-mlx-8bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/Qwen2.5-1.5B-Instruct-chat-mlx-8bit",
+  "created_at": "2026-09-10T19:29:47.000Z",
+  "updated_at": "2026-09-10T20:15:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen2",
+    "8-bit",
+    "conversational",
+    "text-generation",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 1651836253,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KOOORA - منتديات كووورة",
+      "url": "https://forum.kooora.com/",
+      "snippet": "منتديات كووورة هي منصة عربية شاملة لمناقشة أخبار الرياضة وتبادل الآراء حول مختلف البطولات والفرق الرياضية."
+    },
+    {
+      "title": "منتديات كووورة: كووورة أردنية",
+      "url": "https://forum.kooora.com/f.aspx?f=100",
+      "snippet": "|| ألـبــــوم صــــور النشــــامى بمونديــــال 2026 ||🇯🇴⚽️ || دليل التعاميم لكووورة اردنية || [ [ • خلفيات مسابقات المنتدى • ]] ♥~ جواهر كووورة أردنية (19)~ ♥"
+    },
+    {
+      "title": "منتديات كووورة: كووورة أسبانية",
+      "url": "https://forum.kooora.com/f.aspx?f=70",
+      "snippet": "منتديات كووورة هي منصة رياضية لمناقشة وتبادل الأخبار والمعلومات حول كرة القدم والرياضة بشكل عام."
+    },
+    {
+      "title": "منتديات كووورة: كووورة سودانية",
+      "url": "https://forum.kooora.com/f.aspx?f=132",
+      "snippet": "منتديات كووورة هو منتدى رياضي عربي شامل لمناقشة مختلف الرياضات والأحداث الرياضية وتبادل الآراء حول البطولات والفرق."
+    },
+    {
+      "title": "منتديات كووورة: كووورة عراقية",
+      "url": "https://forum.kooora.com/f.aspx?f=101",
+      "snippet": "تشكيلات المنتدى استذكار قوانين المنتدى تنبيه (لا عذر لمن لم يقرأ) مشرفي المنتدى موسوعة البدراوي موسوعة عمانوئيل أنوية"
+    }
+  ]
+}

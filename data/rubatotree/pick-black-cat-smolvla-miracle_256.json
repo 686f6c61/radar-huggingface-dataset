@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "rubatotree/pick-black-cat-smolvla-miracle_256",
+  "slug": "rubatotree-pick-black-cat-smolvla-miracle_256",
+  "author": "rubatotree",
+  "url": "https://huggingface.co/rubatotree/pick-black-cat-smolvla-miracle_256",
+  "created_at": "2026-09-10T20:54:37.000Z",
+  "updated_at": "2026-09-10T20:57:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "so101",
+    "smolvla",
+    "miracle_256",
+    "synthetic-data",
+    "dataset:rubatotree/miracle-pick-black-cat-256",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1197809956,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Autonomia Real de Carro Elétrico: Simulador Grátis 2026",
+      "url": "https://autoanalise.com/autonomia-real-de-carro-eletrico/",
+      "snippet": "Calcule se o carro elétrico consegue fazer sua viagem com segurança, quanto vai custar a energia e quanto tempo você precisa …"
+    },
+    {
+      "title": "Carro Elétrico: Guia Completo para Iniciantes 2026 | EVblog",
+      "url": "https://evblog.com.br/guia-do-iniciante-carro-eletrico/",
+      "snippet": "Guia completo para quem pensa em comprar o primeiro carro elétrico: preço, autonomia, recarga, bateria, manutenção, IPVA, …"
+    },
+    {
+      "title": "Como escolher um carro elétrico em 2026: o guia completo - Autonomia …",
+      "url": "https://autonomiaev.com.br/guias/como-escolher-carro-eletrico",
+      "snippet": "Autonomia real (Inmetro PBEV), recarga em casa e na estrada, bateria, espaço e custo de uso: o que realmente importa na hora de …"
+    },
+    {
+      "title": "Carro elétrico: modelos, preços e como funciona | Portal Solar",
+      "url": "https://www.portalsolar.com.br/carro-eletrico",
+      "snippet": "Conheça os carros elétricos, entenda como funcionam, compare tipos, preços e autonomia e saiba o que considerar antes de …"
+    },
+    {
+      "title": "Carro elétrico, como escolher? | DECO PROteste",
+      "url": "https://www.deco.proteste.pt/auto/carros-eletricos/como-escolher",
+      "snippet": "Há bons carros elétricos e híbridos plug-in para todas as carteiras. Saiba como escolher com base no preço, desempenho e …"
+    }
+  ]
+}

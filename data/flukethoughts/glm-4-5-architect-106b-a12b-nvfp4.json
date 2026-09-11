@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "flukethoughts/GLM-4.5-Architect-106B-A12B-NVFP4",
+  "slug": "flukethoughts-glm-4-5-architect-106b-a12b-nvfp4",
+  "author": "flukethoughts",
+  "url": "https://huggingface.co/flukethoughts/GLM-4.5-Architect-106B-A12B-NVFP4",
+  "created_at": "2026-09-10T21:14:29.000Z",
+  "updated_at": "2026-09-10T21:17:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm4_moe",
+    "text-generation",
+    "nvfp4",
+    "fp4",
+    "llm-compressor",
+    "compressed-tensors",
+    "vllm",
+    "moe",
+    "mtp",
+    "speculative-decoding",
+    "roleplay",
+    "conversational",
+    "base_model:ConicCat/GLM-4.5-Architect-106B-A12B",
+    "base_model:quantized:ConicCat/GLM-4.5-Architect-106B-A12B",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 60658362756,
+  "parameters_human": "60.66B",
+  "storage_bytes": 69166665848,
+  "storage_human": "69.2 GB",
+  "base_model": "ConicCat/GLM-4.5-Architect-106B-A12B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Telenet Webmail",
+      "url": "http://webmail.telenet.be/",
+      "snippet": "Wij willen hier een beschrijving geven, maar de site die u nu bekijkt staat dit niet toe."
+    },
+    {
+      "title": "Aanmelden op Telenet Webmail | MyTelenet",
+      "url": "https://www2.telenet.be/residential/nl/klantenservice/internet/e-mail/aanmelden-op-telenet-webmail.html",
+      "snippet": "Eenvoudig inloggen op Telenet Webmail met je Telenet e-mailadres en wachtwoord. Blijf aangemeld en beheer je e-mails moeiteloos."
+    },
+    {
+      "title": "Mijn Telenet",
+      "url": "https://mijn.telenet.be/mijntelenet/login/overview.do",
+      "snippet": "Waarom zie ik dit? Nog geen login? Maak er één aan."
+    },
+    {
+      "title": "Telenet Webmail",
+      "url": "https://login.mail.telenet.be/webmail2/sso/invalid?state=fromCheckSession",
+      "snippet": "Wij willen hier een beschrijving geven, maar de site die u nu bekijkt staat dit niet toe."
+    },
+    {
+      "title": "Supersnel internet, mobiel, telefonie en tv | Telenet",
+      "url": "https://www2.telenet.be/residential/nl.html",
+      "snippet": "Meer of minder, aan of uit? Je kan je Telenet op elk moment aanpassen, pauzeren of opzeggen. Jij behoudt de controle."
+    }
+  ]
+}

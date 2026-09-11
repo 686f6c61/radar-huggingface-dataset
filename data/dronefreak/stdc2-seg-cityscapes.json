@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "dronefreak/stdc2-seg-cityscapes",
+  "slug": "dronefreak-stdc2-seg-cityscapes",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/stdc2-seg-cityscapes",
+  "created_at": "2026-09-10T22:55:59.000Z",
+  "updated_at": "2026-09-10T22:56:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "semantic-segmentation",
+    "cityscapes",
+    "stdc",
+    "computer-vision",
+    "mirror",
+    "image-segmentation",
+    "arxiv:2104.13188",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 75342766,
+  "storage_human": "75 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Cityscapes val",
+      "metric": "mIoU (single-scale)",
+      "value": 77.04
+    }
+  ],
+  "sources": [
+    {
+      "title": "Amazon.de: Günstige Preise für Elektronik & Foto, Filme, Musik, Bücher ...",
+      "url": "https://www.amazon.de/",
+      "snippet": "Entdecken, shoppen und einkaufen bei Amazon.de: Günstige Preise für Elektronik & Foto, Filme, Musik, Bücher, Games, Spielzeug, …"
+    },
+    {
+      "title": "Amazon.de",
+      "url": "https://www.amazon.de/gp/css/homepage.html",
+      "snippet": "Hier finden Sie alles, was Sie für Ihren Einkauf benötigen, von Elektronik bis zu Büchern und vielem mehr."
+    },
+    {
+      "title": "Amazon.com: Amazon.de",
+      "url": "https://www.amazon.com/amazon-de/s?k=amazon.de",
+      "snippet": "Give the perfect gift with Amazon eGift Cards. Digital delivery with personal messages and custom amounts."
+    },
+    {
+      "title": "Amazon.de: : Alle Kategorien",
+      "url": "https://www.cdn.amazon.de/b?node=17751873031",
+      "snippet": "Weitere Tools und Programme entdecken Verkaufen in Amazon-Stores weltweit Amazon Global Selling bietet eine Vielzahl von …"
+    },
+    {
+      "title": "Amazon.com. Spend less. Smile more.",
+      "url": "https://www.amazon.com/",
+      "snippet": "Like-New Amazon Kindle Scribe (64GB) - Your notes, documents and books, all in one place. With built-in AI notebook …"
+    }
+  ]
+}

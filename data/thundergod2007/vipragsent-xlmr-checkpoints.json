@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Thundergod2007/vipragsent-xlmr-checkpoints",
+  "slug": "thundergod2007-vipragsent-xlmr-checkpoints",
+  "author": "Thundergod2007",
+  "url": "https://huggingface.co/Thundergod2007/vipragsent-xlmr-checkpoints",
+  "created_at": "2026-08-06T00:40:14.000Z",
+  "updated_at": "2026-09-10T23:28:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 318271235046,
+  "storage_human": "318.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dan's Pizza Menu and Prices: Full Menu with September 2026 …",
+      "url": "https://www.menuxp.com/dans-pizza-menu",
+      "snippet": "Dan's Pizza offers 123 menu items across pizza and other categories. Browse the full menu above to see everything available, …"
+    },
+    {
+      "title": "About Us – Dan's Pizza",
+      "url": "https://danspizza.net/about/",
+      "snippet": "We top that with top quality mozzarella along with any of our mouth watering Chicago meats and daily fresh cut vegetables. Save …"
+    },
+    {
+      "title": "New York Style Pizza | Dan'S Pizza Co.",
+      "url": "https://dans-pizza.co/",
+      "snippet": "Order now for New York style pizza at Dan's Pizza Co. Enjoy handcrafted NY-style pies and Italian dishes made with fresh dough daily."
+    },
+    {
+      "title": "Dans Pizza Co's Menu: Prices and Delivery - DoorDash",
+      "url": "https://www.doordash.com/business/dans-pizza-co-20582484/menu?msockid=26d5b52fc2336ccf274aa2ffc3a86dfc",
+      "snippet": "Menu for Dans Pizza Co's with prices. Browse the menu items, find a location and get Dans Pizza Co's delivered to your home or office."
+    },
+    {
+      "title": "Dan's Pizza Menu – Savory Italian Flavors & Joyful Moments",
+      "url": "https://dans-pizza.placejoys.com/menu",
+      "snippet": "Discover Dan's Pizza menu, where inviting Italian dishes and cozy vibes turn every bite into a joyful experience worth sharing."
+    }
+  ]
+}

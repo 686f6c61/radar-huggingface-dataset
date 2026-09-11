@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "kishida/Q3-8B-KVA-Projector",
+  "slug": "kishida-q3-8b-kva-projector",
+  "author": "kishida",
+  "url": "https://huggingface.co/kishida/Q3-8B-KVA-Projector",
+  "created_at": "2026-09-10T22:11:43.000Z",
+  "updated_at": "2026-09-10T22:43:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 714025272,
+  "storage_human": "714 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "为什么网上突然冒出大量账号在呼吁台海和平，血浓于水，说 ...",
+      "url": "https://www.zhihu.com/question/2057362166592824338",
+      "snippet": "Jul 5, 2026 · 在海峡中线之前，台湾及某些外媒简中板块经常炒作TG鸭霸军机骚扰台湾防空识别区，你可能以为是我们的军机跑这儿 …"
+    },
+    {
+      "title": "台湾什么时候能够回归？ - 知乎",
+      "url": "https://www.zhihu.com/question/2015428318221063266",
+      "snippet": "Mar 12, 2026 · 1945年已经回归了呀，什么时候台湾又被外国侵占了？台湾是中国领土的一部分，这是国际社会主流共识，是战后 雅 …"
+    },
+    {
+      "title": "如何看待中国大陆两人坐橡皮艇登陆台湾岛？ - 知乎",
+      "url": "https://www.zhihu.com/question/2070826036116330204",
+      "snippet": "Aug 14, 2026 · 知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享 …"
+    },
+    {
+      "title": "台湾同胞和平统一之后，他们得到的将远远大于失去的？ - 知乎",
+      "url": "https://www.zhihu.com/question/2059038736667632799",
+      "snippet": "Jul 28, 2026 · 和平统一之后，台湾同胞将得到什么？失去什么？ 事实上，从你谨慎的、欲言又止的那种提问方式，模棱两可地不去说 …"
+    },
+    {
+      "title": "英伟达黄仁勋称台湾总部 2026 年动工，预计 2030 年迁入 ...",
+      "url": "https://www.zhihu.com/question/2042923918483314543",
+      "snippet": "Jun 7, 2026 · 英伟达首席执行官黄仁勋：台湾总部将于2026年动工，预计2030年前迁入。 补充资料:预计花费122亿新台币，约26亿人 …"
+    }
+  ]
+}

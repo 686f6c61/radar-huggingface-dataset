@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "stabilityai/stable-audio-3-small-music",
+  "slug": "stabilityai-stable-audio-3-small-music",
+  "author": "stabilityai",
+  "url": "https://huggingface.co/stabilityai/stable-audio-3-small-music",
+  "created_at": "2026-05-17T01:51:33.000Z",
+  "updated_at": "2026-05-19T20:02:42.000Z",
+  "license": "stable-audio-community",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-audio",
+  "library": "stable-audio-3",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "stable-audio-3",
+    "safetensors",
+    "audio-generation",
+    "music",
+    "diffusion",
+    "text-to-audio",
+    "en",
+    "arxiv:2605.17991",
+    "base_model:stabilityai/stable-audio-3-small-music-base",
+    "base_model:finetune:stabilityai/stable-audio-3-small-music-base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 134,
+  "downloads_30d": 14135,
+  "trending_score": 8,
+  "parameters": 567573761,
+  "parameters_human": "567.6M",
+  "storage_bytes": 3497424154,
+  "storage_human": "3.5 GB",
+  "base_model": "stabilityai/stable-audio-3-small-music-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "怎么将手机上的画面投到电脑屏幕上？ - 知乎",
+      "url": "https://www.zhihu.com/question/324589333",
+      "snippet": "有的时候需要将手机的内容投影到电脑上，那么要如何操作呢？一般来说需要去下载投屏软件，但是很多投屏软件都很坑，需要收费才 …"
+    },
+    {
+      "title": "DonanımHaber Forum",
+      "url": "https://forum.donanimhaber.com/",
+      "snippet": "Teknoloji, sıcak fırsatlar, otomobil, ülke gündemi, kripto para, eğitim, futbol hakkında bilgiler ve tartışma platformu: DonanımHaber …"
+    },
+    {
+      "title": "Adolescence (2025) | Netflix | DonanımHaber Forum",
+      "url": "https://forum.donanimhaber.com/adolescence-2025-netflix--160804556",
+      "snippet": "Adolescence (2025) | Netflix Sıcak Fırsatlarda Tıklananlar Editörün Seçtiği Fırsatlar Daha Fazla"
+    },
+    {
+      "title": "7-Zip 官方网站怎么下载？ - 知乎",
+      "url": "https://www.zhihu.com/question/20498753",
+      "snippet": "7-Zip 是一个功能强大的工具，特别适合需要 高效压缩 和 解压缩 功能的用户。比如 IT 专业人员、软件开发者或普通用户希望节省磁 …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "98sd7fc9sdf/minimaxCumshot324234",
+  "slug": "98sd7fc9sdf-minimaxcumshot324234",
+  "author": "98sd7fc9sdf",
+  "url": "https://huggingface.co/98sd7fc9sdf/minimaxCumshot324234",
+  "created_at": "2026-09-11T00:06:10.000Z",
+  "updated_at": "2026-09-11T00:23:31.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:ponpoke/flux2-klein-9b-uncensored-text-encoder",
+    "base_model:adapter:ponpoke/flux2-klein-9b-uncensored-text-encoder",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 626389630,
+  "storage_human": "626 MB",
+  "base_model": "ponpoke/flux2-klein-9b-uncensored-text-encoder",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Royal Reels - Play Online Casino Slots and Live Dealer",
+      "url": "https://royallreels.com/en-AU/",
+      "snippet": "Royal Reels Casino offers a premium gaming experience designed specifically for Aussie players who want fast payouts, generous …"
+    },
+    {
+      "title": "Royal Reels Casino Australia | Official Online Casino",
+      "url": "https://royalreelscasinos-aus.com/",
+      "snippet": "2 days ago · Royal Reels Casino Australia offers fast payouts, AUD payments, top pokies, live dealers, and exclusive bonuses for …"
+    },
+    {
+      "title": "Online Slots at Royal Reels Casino Australia - 5000+ Pokies ...",
+      "url": "https://royalreelscasinosaustralia.com/slots",
+      "snippet": "Play 5000+ online slots at Royal Reels Casino Australia. Top providers include Pragmatic Play, NetEnt, Microgaming. High RTP …"
+    },
+    {
+      "title": "Royal Reels Slots Australia: 2,000+ Pokies, Top Games & Bonus",
+      "url": "https://aus-royalreels.com/slots/",
+      "snippet": "Explore 2,000+ Royal Reels pokies in Australia with top providers, mobile play, bonus-ready slots, and fast crypto cashouts. Spin today."
+    },
+    {
+      "title": "Royal Reels Casino Games, Play the Best Online Pokies and Table Games",
+      "url": "https://royal-reelscasinoaus.com/games/",
+      "snippet": "Explore a vast collection of top games at Royal Reels Casino in Australia. Dive into a diverse collection of captivating casino games, …"
+    }
+  ]
+}

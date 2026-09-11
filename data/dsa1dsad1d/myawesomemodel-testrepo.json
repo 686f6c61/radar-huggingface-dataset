@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "DSA1DSAD1D/MyAwesomeModel-TestRepo",
+  "slug": "dsa1dsad1d-myawesomemodel-testrepo",
+  "author": "DSA1DSAD1D",
+  "url": "https://huggingface.co/DSA1DSAD1D/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-10T20:06:37.000Z",
+  "updated_at": "2026-09-10T20:06:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roblox",
+      "url": "https://www.roblox.com/",
+      "snippet": "Roblox is the ultimate virtual universe that lets you create, share experiences with friends, and be anything you can imagine. Join …"
+    },
+    {
+      "title": "Roblox",
+      "url": "https://www.roblox.com/?pgvflag=1",
+      "snippet": "Roblox is the ultimate virtual universe that lets you create, share experiences with friends, and be anything you can imagine. Join …"
+    },
+    {
+      "title": "Roblox - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.roblox.client&hl=en-US",
+      "snippet": "Roblox is home to every kind of game, for every kind of player. Compete in high-octane racing games, battle it out in hardcore tactical …"
+    },
+    {
+      "title": "About Roblox | Roblox",
+      "url": "https://about.roblox.com/",
+      "snippet": "Roblox is a global platform where millions of people gather together every day to imagine, create, and share experiences with each …"
+    },
+    {
+      "title": "Roblox - Windows - Windows'ta ücretsiz indir ve yürüt | Microsoft Store",
+      "url": "https://apps.microsoft.com/detail/9pmf91n3lz3m?hl=tr-TR&gl=TR",
+      "snippet": "ROBLOX: HER OYUN TÜRÜNÜN HARİKA ÖRNEKLERİ. ÜCRETSİZ OYNA Roblox'taki oyun yelpazesi benzersizdir. Yemek …"
+    }
+  ]
+}

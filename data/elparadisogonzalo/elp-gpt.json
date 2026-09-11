@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Elparadisogonzalo/Elp-gpt",
+  "slug": "elparadisogonzalo-elp-gpt",
+  "author": "Elparadisogonzalo",
+  "url": "https://huggingface.co/Elparadisogonzalo/Elp-gpt",
+  "created_at": "2026-09-11T00:37:41.000Z",
+  "updated_at": "2026-09-11T00:37:41.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multidimensional Arrays in C - 2D and 3D Arrays - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/c/multidimensional-arrays-in-c/",
+      "snippet": "Aug 31, 2026 · The most commonly used multidimensional arrays are 2D and 3D arrays. A 2D array stores elements in rows and …"
+    },
+    {
+      "title": "C Multidimensional Arrays (Two-dimensional and more)",
+      "url": "https://www.w3schools.com/c/c_arrays_multi.php",
+      "snippet": "Two-Dimensional Arrays A 2D array is also known as a matrix (a table of rows and columns). To create a 2D array of integers, take a …"
+    },
+    {
+      "title": "Short Notes Arrays 1-D & 2-D - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/dsa/short-notes-arrays-1-d-2-d/",
+      "snippet": "Sep 9, 2025 · In a 1D array, elements are accessed using a single loop with index arr [i]. In a 2D array, use nested loops to access …"
+    },
+    {
+      "title": "2D Array: All You Need to Know About Two-Dimensional Arrays",
+      "url": "https://www.simplilearn.com/tutorials/data-structure-tutorial/two-dimensional-arrays",
+      "snippet": "Jul 4, 2024 · An array of arrays is called a 2D array or two-dimensional array. Learn what 2D arrays are, syntax, methods, and the …"
+    },
+    {
+      "title": "Java Multi-Dimensional Arrays - W3Schools",
+      "url": "https://www.w3schools.com/java/java_arrays_multi.asp",
+      "snippet": "Multidimensional Arrays A multidimensional array is an array that contains other arrays. You can use it to store data in a table with …"
+    }
+  ]
+}

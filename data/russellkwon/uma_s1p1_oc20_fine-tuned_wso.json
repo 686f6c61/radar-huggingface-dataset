@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "RussellKwon/UMA_s1p1_oc20_fine-tuned_WSO",
+  "slug": "russellkwon-uma_s1p1_oc20_fine-tuned_wso",
+  "author": "RussellKwon",
+  "url": "https://huggingface.co/RussellKwon/UMA_s1p1_oc20_fine-tuned_WSO",
+  "created_at": "2026-06-24T16:16:27.000Z",
+  "updated_at": "2026-09-10T22:26:16.000Z",
+  "license": "fair-chemistry-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "fairchem",
+  "languages": [],
+  "tags": [
+    "fairchem",
+    "plasma-surface interaction",
+    "materials-science",
+    "machine-learned interatomic potential",
+    "molecular-dynamics",
+    "uma",
+    "tungsten-disulfide",
+    "oxygen plasma",
+    "arxiv:2606.21632",
+    "base_model:facebook/UMA",
+    "base_model:finetune:facebook/UMA",
+    "doi:10.57967/hf/10358",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1173904323,
+  "storage_human": "1.2 GB",
+  "base_model": "facebook/UMA",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‘Beautiful’ woman, 21, killed in world famous hotel after being ...",
+      "url": "https://www.lbc.co.uk/article/beautiful-woman-21-killed-in-world-famous-hotel-after-being-crushed-by-wardrobe-DWzLB2_2/",
+      "snippet": "Sep 30, 2022 · Chloe Haynes, 21, was found dead at the top city centre hotel at 6.37am on September 10 after emergency services …"
+    },
+    {
+      "title": "Young woman dies after Adelphi Hotel wardrobe 'crushes windpipe'",
+      "url": "https://www.liverpoolecho.co.uk/news/liverpool-news/kind-caring-daughter-crushed-wardrobe-25145401",
+      "snippet": "Sep 30, 2022 · Chloe Haynes, 21, was found dead in her room at the Britannia run hotelby her friend in the early hours of September …"
+    },
+    {
+      "title": "Owners of Liverpool's Adelphi Hotel face court as woman, 21, found …",
+      "url": "https://www.mirror.co.uk/news/uk-news/adelphi-hotel-liverpool-chloe-haynes-37023359",
+      "snippet": "Apr 15, 2026 · Liverpool City Council is taking Britannia Hotels to court following the tragic death of 21-year-old Chloe Haynes at the …"
+    },
+    {
+      "title": "Court date set for Adelphi Hotel over death of young woman",
+      "url": "https://www.liverpoolecho.co.uk/news/liverpool-news/court-date-set-liverpools-adelphi-33780567",
+      "snippet": "Apr 18, 2026 · Chloe Haynes, 21, tragically died in her hotel room at Liverpool's Adelphi Hotel in September 2022. She was found …"
+    },
+    {
+      "title": "Hotel owners face trial after woman, 21, found ‘crushed to death by ...",
+      "url": "https://www.thesun.co.uk/news/39592647/hotel-owners-trial-woman-crushed-wardrobe-death/",
+      "snippet": "Jun 30, 2026 · Chloe Haynes, 21, was discovered by her work friend trapped under the furniture at the Adelphi Hotel in Liverpool."
+    }
+  ]
+}

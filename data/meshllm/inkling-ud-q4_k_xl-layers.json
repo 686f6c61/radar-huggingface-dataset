@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "meshllm/inkling-UD-Q4_K_XL-layers",
+  "slug": "meshllm-inkling-ud-q4_k_xl-layers",
+  "author": "meshllm",
+  "url": "https://huggingface.co/meshllm/inkling-UD-Q4_K_XL-layers",
+  "created_at": "2026-09-09T08:13:49.000Z",
+  "updated_at": "2026-09-11T03:06:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 585197825,
+  "parameters_human": "585.2M",
+  "storage_bytes": 402145227456,
+  "storage_human": "402.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Money.pl - portal finansowy",
+      "url": "https://www.money.pl/",
+      "snippet": "Informacje finansowe z kraju i ze świata. Aktualne i archiwalne: notowania giełdowe, kursy walut, wskaźniki gospodarcze, …"
+    },
+    {
+      "title": "Kalkulator walutowy - przelicz waluty wg kursów NBP - Money.pl",
+      "url": "https://www.money.pl/pieniadze/kalkulator/",
+      "snippet": "Nov 23, 2025 · Przelicz kursy walut na podstawie kursów NBP. Wszystkie najważniejsze waluty: EUR, USD, GBP i inne."
+    },
+    {
+      "title": "Zalando Lounge. Zegarki i buty Polo z dużymi rabatami",
+      "url": "https://www.money.pl/gospodarka/zalando-lounge-zegarki-i-buty-polo-z-duzymi-rabatami-6626428069661312a.html",
+      "snippet": "Apr 7, 2021 · Zalando Lounge. Pośród środowych promocji znajdziemy m.in. produkty zegarki i buty firmy Polo, za które zapłacimy …"
+    },
+    {
+      "title": "Zalando Lounge. Ubrania i buty Adidas na przecenie - Money.pl",
+      "url": "https://www.money.pl/gospodarka/zalando-lounge-ubrania-i-buty-adidas-na-przecenie-6631796223159232a.html",
+      "snippet": "Apr 22, 2021 · Zalando Lounge. Pośród wtorkowych promocji znajdziemy m.in. ubrania marki Adidas, jak również United Colors of …"
+    },
+    {
+      "title": "Zalando Lounge. - Money.pl",
+      "url": "https://www.money.pl/gospodarka/zalando-lounge-6628235895651200a.html",
+      "snippet": "Apr 12, 2021 · Zalando Lounge. Pośród poniedziałkowych promocji znajdziemy m.in. sszorty i trampki marki Converse, za które …"
+    }
+  ]
+}

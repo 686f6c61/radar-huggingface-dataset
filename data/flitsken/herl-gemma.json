@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "flitsken/herl-gemma",
+  "slug": "flitsken-herl-gemma",
+  "author": "flitsken",
+  "url": "https://huggingface.co/flitsken/herl-gemma",
+  "created_at": "2026-09-10T21:32:37.000Z",
+  "updated_at": "2026-09-10T22:16:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "nl",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "herl",
+    "finetuned",
+    "lora",
+    "gemma",
+    "dutch",
+    "flitsken",
+    "digital-ark",
+    "nl",
+    "en",
+    "base_model:TrevorJS/gemma-4-26B-A4B-it-uncensored",
+    "base_model:adapter:TrevorJS/gemma-4-26B-A4B-it-uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 28869611868,
+  "storage_human": "28.9 GB",
+  "base_model": "TrevorJS/gemma-4-26B-A4B-it-uncensored",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Persian Kittens for sale - Pets4Homes",
+      "url": "https://www.pets4homes.co.uk/sale/kittens/persian/",
+      "snippet": "The Persian Cat, also known as Persian Longhair or Shirazi, originates from Iran and is admired for its distinctive, luxurious coat and …"
+    },
+    {
+      "title": "Persian Kittens for Sale Near Me | Available Now",
+      "url": "https://thepersiankittens.com/persian-kittens-for-sale",
+      "snippet": "1 day ago · Looking for Persian or Himalayan kittens for sale near you? We offer adorable kittens in beautiful colors. Find your perfect …"
+    },
+    {
+      "title": "Persian cat - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Persian_cat",
+      "snippet": "The Persian cat, also known as the Persian Longhair or simply Persian, is a long-haired traditional breed of cat characterised by a …"
+    },
+    {
+      "title": "persian Cats & Kittens for Sale in Australia | Gumtree Pets",
+      "url": "https://www.gumtree.com.au/s-cats-kittens/persian/k0c18435",
+      "snippet": "Find persian ads in our Cats & Kittens category. Buy and sell almost anything on Gumtree classifieds."
+    },
+    {
+      "title": "Sphynx cat - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sphynx_cat",
+      "snippet": "The Sphynx cat (pronounced SFINKS, / ˈsfɪŋks / ⓘ) also known as the Canadian Sphynx, is a breed of cat known for its lack of fur. …"
+    }
+  ]
+}

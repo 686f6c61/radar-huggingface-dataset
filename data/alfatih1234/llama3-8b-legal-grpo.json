@@ -5,7 +5,7 @@
   "author": "alfatih1234",
   "url": "https://huggingface.co/alfatih1234/llama3-8b-legal-grpo",
   "created_at": "2026-09-10T11:51:09.000Z",
-  "updated_at": "2026-09-10T11:51:19.000Z",
+  "updated_at": "2026-09-10T19:38:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 185042385,
-  "storage_human": "185 MB",
+  "storage_bytes": 352874625,
+  "storage_human": "353 MB",
   "base_model": "unsloth/llama-3-8b-Instruct-bnb-4bit",
   "formats": [
     "safetensors"

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "luminas-ai/Luminas-Astra-7",
+  "slug": "luminas-ai-luminas-astra-7",
+  "author": "luminas-ai",
+  "url": "https://huggingface.co/luminas-ai/Luminas-Astra-7",
+  "created_at": "2026-09-10T19:27:19.000Z",
+  "updated_at": "2026-09-10T20:25:32.000Z",
+  "license": "astra-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "de"
+  ],
+  "tags": [
+    "LUMINAS",
+    "ASTRA",
+    "7B",
+    "reasoning",
+    "multimodal",
+    "llama.cpp",
+    "agentic",
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "de",
+    "base_model:unsloth/Qwen2.5-Coder-7B-Instruct",
+    "base_model:finetune:unsloth/Qwen2.5-Coder-7B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1891059,
+  "storage_human": "2 MB",
+  "base_model": "unsloth/Qwen2.5-Coder-7B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Il dottor Zivago - film: guarda streaming online - JustWatch",
+      "url": "https://www.justwatch.com/it/film/il-dottor-zivago",
+      "snippet": "Scopri come e dove guardare \"Il dottor Zivago\" online su Netflix e Prime Video oggi stesso – tra cui opzioni gratuite."
+    },
+    {
+      "title": "Il dottor Zivago streaming - ComingSoon.it",
+      "url": "https://www.comingsoon.it/film/il-dottor-zivago/7569/streaming/",
+      "snippet": "Sep 1, 2026 · Scopri dove vedere Il dottor Zivago in streaming. Per ogni piattaforma troverai la disponibilità dello streaming di Il dottor …"
+    },
+    {
+      "title": "Il dottor Živago (Doctor Zhivago) - YouTube",
+      "url": "https://www.youtube.com/watch?v=Fkf-4_QAiL8",
+      "snippet": "Jun 30, 2013 · Il dottor Živago è un film del 1965 diretto da David Lean, con Omar Sharif, Julie Christie, Geraldine Chaplin e Rod …"
+    },
+    {
+      "title": "Il dottor Zivago - YouTube",
+      "url": "https://www.youtube.com/watch?v=4T3SUjwrsEo",
+      "snippet": "Mar 3, 2011 · Il dottor Zivago (Doctor Zhivago) è un film del 1965 diretto da David Lean. Genere drammatico, romantico. …"
+    },
+    {
+      "title": "Il dottor Zivago (1965) | FilmTV.it",
+      "url": "https://www.filmtv.it/film/11688/il-dottor-zivago/",
+      "snippet": "Un film in STREAMING per stasera? Dai un'occhiata ai migliori film da vedere gratis! Yuri e Lara si conoscono prima della Grande …"
+    }
+  ]
+}

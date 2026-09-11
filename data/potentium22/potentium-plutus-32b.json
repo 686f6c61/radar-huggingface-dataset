@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "POTENTIUM22/potentium-plutus-32b",
+  "slug": "potentium22-potentium-plutus-32b",
+  "author": "POTENTIUM22",
+  "url": "https://huggingface.co/POTENTIUM22/potentium-plutus-32b",
+  "created_at": "2026-09-10T19:20:28.000Z",
+  "updated_at": "2026-09-10T19:20:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "base_model:adapter:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "base_model:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48496640,
+  "storage_human": "48 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Search by latitude & longitude in Google Maps",
+      "url": "https://support.google.com/maps/answer/18539?hl=en&co=GENIE.platform%3DDesktop",
+      "snippet": "On your computer, open Google Maps. On the map, right-click the place or area. A pop-up window appears. At the top, you can find …"
+    },
+    {
+      "title": "Get started with Google Maps",
+      "url": "https://support.google.com/maps/answer/144349?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "This article will help you set up, learn the basics, and explain various features of Google Maps. You can use the Google Maps app on …"
+    },
+    {
+      "title": "Download areas & navigate offline in Google Maps",
+      "url": "https://support.google.com/maps/answer/6291838?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "Use offline maps in Google Maps After you download an area, use the Google Maps app just like you normally would. If your internet …"
+    },
+    {
+      "title": "Gerenciar a Linha do Tempo do Google Maps",
+      "url": "https://support.google.com/maps/answer/6258979?hl=pt-BR&co=GENIE.Platform%3DAndroid",
+      "snippet": "Gerenciar a Linha do Tempo do Google Maps Importante: estamos atualizando as configurações dos Serviços da Pesquisa Google, …"
+    },
+    {
+      "title": "Use Street View in Google Maps - Computer - Google Maps Help",
+      "url": "https://support.google.com/maps/answer/3093484?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Use Street View in Google Maps You can explore world landmarks and natural wonders, and experience places like museums, …"
+    }
+  ]
+}

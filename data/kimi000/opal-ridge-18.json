@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "kimi000/opal-ridge-18",
+  "slug": "kimi000-opal-ridge-18",
+  "author": "kimi000",
+  "url": "https://huggingface.co/kimi000/opal-ridge-18",
+  "created_at": "2026-09-11T00:02:01.000Z",
+  "updated_at": "2026-09-11T00:03:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "flux2",
+    "reinforcement-learning",
+    "text-to-image",
+    "base_model:black-forest-labs/FLUX.2-klein-base-4B",
+    "base_model:finetune:black-forest-labs/FLUX.2-klein-base-4B",
+    "license:apache-2.0",
+    "diffusers:Flux2KleinPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3875544576,
+  "parameters_human": "3.88B",
+  "storage_bytes": 15976590132,
+  "storage_human": "16.0 GB",
+  "base_model": "black-forest-labs/FLUX.2-klein-base-4B",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TAP Air Portugal | flyTAP Official Website",
+      "url": "https://www.flytap.com/en-us",
+      "snippet": "TAP Air Portugal welcomes you on board! Explore destinations and the cheapest flights, learn all about check-in, meals and TAP …"
+    },
+    {
+      "title": "Zoek goedkope vluchten en aanbiedingen: vergelijk en boek | TAP Air ...",
+      "url": "https://www.flytap.com/nl_be/",
+      "snippet": "Populaire vluchten van TAP Air Portugal vanuit Brussel - naar Lissabon vanuit Brussel - naar Porto vanuit Brussel - naar Miami"
+    },
+    {
+      "title": "Institutional | TAP Air Portugal",
+      "url": "https://www.tapairportugal.com/en",
+      "snippet": "Welcome to TAP’s institutional website. Here you will find facts and numbers, the history, the fleet and so much more about …"
+    },
+    {
+      "title": "Vluchten en tickets van TAP Air Portugal vanaf 137 € retour",
+      "url": "https://www.skyscanner.nl/luchtvaartmaatschappij/luchtvaartmaatschappij-tap-air-portugal-tp.html",
+      "snippet": "Vergelijk de prijzen van TAP Air Portugal om de beste deal voor een vlucht naar jouw favoriete bestemming te vinden. Boek …"
+    },
+    {
+      "title": "TAP Air Portugal - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/TAP_Air_Portugal",
+      "snippet": "TAP Air Portugal, formally Transportes Aéreos Portugueses (TAP), is the flag carrier of Portugal, [1] headquartered at Lisbon Airport, …"
+    }
+  ]
+}

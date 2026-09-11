@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SoSolaris/xvla-b0910-1749-p05_fullft",
+  "slug": "sosolaris-xvla-b0910-1749-p05_fullft",
+  "author": "SoSolaris",
+  "url": "https://huggingface.co/SoSolaris/xvla-b0910-1749-p05_fullft",
+  "created_at": "2026-09-10T19:51:33.000Z",
+  "updated_at": "2026-09-10T19:53:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "xvla",
+    "robotics",
+    "dataset:SoSolaris/socks_20_diversified",
+    "arxiv:2510.10274",
+    "base_model:lerobot/xvla-base",
+    "base_model:finetune:lerobot/xvla-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 879687256,
+  "parameters_human": "879.7M",
+  "storage_bytes": 1759506160,
+  "storage_human": "1.8 GB",
+  "base_model": "lerobot/xvla-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Invoice finance explained - how does it work? | Swoop ZA",
+      "url": "https://swoopfunding.com/za/business-loans/invoice-finance/",
+      "snippet": "Mar 3, 2026 · It is a funding option for businesses that have a minimum of R500,000 annual turnover and get paid by invoice in 14 …"
+    },
+    {
+      "title": "Invoice Financing for Small Businesses | Bridgement",
+      "url": "https://www.bridgement.com/za/invoice-financing/",
+      "snippet": "Bridgement invoice financing offers South African business owners a convenient, fast and flexible way to deal with late paying …"
+    },
+    {
+      "title": "Invoice Finance in South Africa | Compare & Apply | SME South Africa",
+      "url": "https://smesouthafrica.co.za/sme-funding/invoice-finance/",
+      "snippet": "Businesses unlock the value by borrowing against it, ultimately securing funding that helps as a cash flow injection. Because invoice …"
+    },
+    {
+      "title": "Invoice discounting South Africa | Trusted funder - Sourcefin",
+      "url": "https://www.sourcefin.co.za/invoice-discounting/",
+      "snippet": "Invoice discounting advances cash against invoices you have already raised for delivered work. You invoice your customer as …"
+    },
+    {
+      "title": "A Guide to Invoice Financing in South Africa",
+      "url": "https://www.bizfunding.co.za/blog/a-guide-to-invoice-financing-in-south-africa/",
+      "snippet": "Our guide to invoice financing in South Africa will help your business understand how to unlock cash flow without taking on debt – …"
+    }
+  ]
+}

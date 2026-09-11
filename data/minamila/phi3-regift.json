@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "MinaMila/Phi3-ReGiFT",
+  "slug": "minamila-phi3-regift",
+  "author": "MinaMila",
+  "url": "https://huggingface.co/MinaMila/Phi3-ReGiFT",
+  "created_at": "2026-09-10T21:10:26.000Z",
+  "updated_at": "2026-09-10T21:10:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:microsoft/Phi-3-mini-4k-instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:microsoft/Phi-3-mini-4k-instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35673857,
+  "storage_human": "36 MB",
+  "base_model": "microsoft/Phi-3-mini-4k-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fale Loki Koki - Hurtownia i Sklep Fryzjerski dedykowana Fryzjerom",
+      "url": "https://falelokikoki.pl/",
+      "snippet": "Plażowa przestrzeń zamieniła się w tętniące życiem Miasteczko Fale Loki Koki, gdzie moda, profesjonalizm i fryzjerskie rzemiosło …"
+    },
+    {
+      "title": "Kosmetyki fryzjerskie do włosów profesjonalne - Fale Loki Koki",
+      "url": "https://falelokikoki.pl/kosmetyki",
+      "snippet": "Suche, zniszczone i łamliwe pasma wymagają szczególnej pielęgnacji. W pracy z klientkami zmagającymi się z tego typu …"
+    },
+    {
+      "title": "LokiKoki.pl - Kosmetyki do włosów z dostawą w 24h",
+      "url": "https://lokikoki.pl/",
+      "snippet": "Fale Loki Koki, Artego, Davines czy Montibello - to tylko cztery z kilkudziesięciu marek profesjonalnych kosmetyków i akcesoriów …"
+    },
+    {
+      "title": "Fale Loki Koki - Facebook",
+      "url": "https://www.facebook.com/FaleLokiKokiDostarczamyPiekno/",
+      "snippet": "Na miejscu stworzyliśmy również Miasteczko Fale Loki Koki, gdzie fryzjerzy, barberzy i specjaliści zadbali o uczestników, a każda …"
+    },
+    {
+      "title": "Fale Loki Koki - Niska cena na Allegro",
+      "url": "https://allegro.pl/listing?string=fale+loki+koki",
+      "snippet": "Fale Loki Koki Zróżnicowany zbiór ofert, najlepsze ceny i promocje. Wejdź i znajdź to, czego szukasz!"
+    }
+  ]
+}

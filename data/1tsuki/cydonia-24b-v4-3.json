@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "1tsuki/Cydonia-24B-v4.3",
+  "slug": "1tsuki-cydonia-24b-v4-3",
+  "author": "1tsuki",
+  "url": "https://huggingface.co/1tsuki/Cydonia-24B-v4.3",
+  "created_at": "2026-09-10T20:45:37.000Z",
+  "updated_at": "2026-09-10T20:45:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mistral",
+    "base_model:mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+    "base_model:finetune:mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 414720,
+  "parameters_human": "414720",
+  "storage_bytes": 47161926909,
+  "storage_human": "47.2 GB",
+  "base_model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. …"
+    },
+    {
+      "title": "Log in | TikTok",
+      "url": "https://www.tiktok.com/login",
+      "snippet": "Manage your account, check notifications, comment on videos, and more."
+    },
+    {
+      "title": "TWICE \"TT\" M/V - YouTube",
+      "url": "https://www.youtube.com/watch?v=ePpPVE-GGJw",
+      "snippet": "Oct 23, 2016 · TWICE (트와이스) \"TT (티티)\" M/V The 5th Mini Album \"What is Love?\" Spotify https://goo.gl/jVLYYYiTunes & Apple …"
+    },
+    {
+      "title": "TWICE (트와이스) - TT [HAN|ROM|ENG Color Coded Lyrics]",
+      "url": "https://www.youtube.com/watch?v=J9b7gveF_tQ",
+      "snippet": "Oct 23, 2016 · TWICE (트와이스) - TT [HAN|ROM|ENG Color Coded Lyrics] krystalized 372K subscribers Subscribe"
+    },
+    {
+      "title": "TT – Wikipedia, wolna encyklopedia",
+      "url": "https://pl.wikipedia.org/wiki/TT",
+      "snippet": "Audi TT – samochód koncernu Volkswagen produkowany w Győr na Węgrzech TT – ang. skrót Turbine Tanker – zbiornikowiec …"
+    }
+  ]
+}

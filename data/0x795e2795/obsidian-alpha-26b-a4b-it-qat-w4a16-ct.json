@@ -1,0 +1,111 @@
+{
+  "schema": 1,
+  "id": "0x795E2795/Obsidian-Alpha-26B-A4B-it-qat-w4a16-ct",
+  "slug": "0x795e2795-obsidian-alpha-26b-a4b-it-qat-w4a16-ct",
+  "author": "0x795E2795",
+  "url": "https://huggingface.co/0x795E2795/Obsidian-Alpha-26B-A4B-it-qat-w4a16-ct",
+  "created_at": "2026-09-10T22:30:26.000Z",
+  "updated_at": "2026-09-11T00:25:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "ru",
+    "ar",
+    "hi",
+    "pt",
+    "vi",
+    "th",
+    "id",
+    "nl",
+    "da",
+    "pl",
+    "tr"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "moe",
+    "qat",
+    "w4a16",
+    "compressed-tensors",
+    "text-generation",
+    "conversational",
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "ru",
+    "ar",
+    "hi",
+    "pt",
+    "vi",
+    "th",
+    "id",
+    "nl",
+    "da",
+    "pl",
+    "tr",
+    "base_model:google/gemma-4-26B-A4B",
+    "base_model:finetune:google/gemma-4-26B-A4B",
+    "license:apache-2.0",
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27898336846,
+  "parameters_human": "27.90B",
+  "storage_bytes": 17711873214,
+  "storage_human": "17.7 GB",
+  "base_model": "google/gemma-4-26B-A4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "USPS.com® - USPS Tracking®",
+      "url": "https://tools.usps.com/tracking/tracking_home.cfm?msockid=138c52cc385865da0978451c3955644a",
+      "snippet": "Tracking FAQs Track Packages Anytime, Anywhere Get the free Informed Delivery ® feature to receive automated notifications on …"
+    },
+    {
+      "title": "USPS.com",
+      "url": "https://tools.usps.com/go/TrackConfirmAction_input?origTrackNum=9534610866516028793854&msockid=138c52cc385865da0978451c3955644a",
+      "snippet": "ڊ u001d4 / / ku00023 E 7u0007 Z [$ ڍr 7 D r G @ܴ ך!F\\ Vu0010B G` [ e `Z.ؿ# u0001I =K u001e T; .tCu000f ~ u000e GG_;H u001c t …"
+    },
+    {
+      "title": "Tracking | UPS - United States",
+      "url": "https://www.ups.com/track?tracknum=tracking&loc=en_US&msockid=138c52cc385865da0978451c3955644a",
+      "snippet": "Track one or multiple packages with UPS Tracking, use your tracking number to track the status of your package."
+    },
+    {
+      "title": "Tracking - DHL - United States of America",
+      "url": "https://www.dhl.com/us-en/home/tracking.html",
+      "snippet": "International tracking of your DHL shipment: have your DHL tracking number at hand to track and trace."
+    },
+    {
+      "title": "Package Tracking – Free Real-Time Tracking Worldwide | 17TRACK",
+      "url": "https://www.17track.net/en/tracking",
+      "snippet": "Track packages worldwide with any tracking number. Get real-time delivery updates from 3,300+ carriers. Free tracking, no login …"
+    }
+  ]
+}

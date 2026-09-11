@@ -5,7 +5,7 @@
   "author": "BobbyLLM",
   "url": "https://huggingface.co/BobbyLLM/Qwen3.5-4B-EU-Tool-Q4_K_M-GGUF",
   "created_at": "2026-09-10T12:52:49.000Z",
-  "updated_at": "2026-09-10T12:53:06.000Z",
+  "updated_at": "2026-09-10T16:40:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -88,8 +88,8 @@
   "trending_score": 0,
   "parameters": 4841450496,
   "parameters_human": "4.84B",
-  "storage_bytes": 3066377792,
-  "storage_human": "3.1 GB",
+  "storage_bytes": 6132755584,
+  "storage_human": "6.1 GB",
   "base_model": "birgermoell/Qwen3.5-4B-EU-Tool",
   "formats": [
     "gguf"

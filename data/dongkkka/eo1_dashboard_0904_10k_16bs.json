@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Dongkkka/eo1_dashboard_0904_10k_16bs",
+  "slug": "dongkkka-eo1_dashboard_0904_10k_16bs",
+  "author": "Dongkkka",
+  "url": "https://huggingface.co/Dongkkka/eo1_dashboard_0904_10k_16bs",
+  "created_at": "2026-09-11T00:14:02.000Z",
+  "updated_at": "2026-09-11T00:15:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "eo1",
+    "robotics",
+    "base_model:Qwen/Qwen2.5-VL-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-VL-3B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3771607072,
+  "parameters_human": "3.77B",
+  "storage_bytes": 7577310144,
+  "storage_human": "7.6 GB",
+  "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ARTE Mediathek | Viel mehr als TV",
+      "url": "https://www.arte.tv/de/",
+      "snippet": "Lust auf eine Serie? Dokus, Filme, Serien, Konzerte aus Europa und der Welt: Tausende Programme werbefrei streamen. Jetzt auf …"
+    },
+    {
+      "title": "Fernsehfilme und Serien - Live und im Replay | ARTE",
+      "url": "https://www.arte.tv/de/videos/fernsehfilme-und-serien/",
+      "snippet": "Krimis, Dramas und Komödien – Erfolgsserien als Preview, im Livestream und im Replay. Vorsicht: Suchtgefahr!"
+    },
+    {
+      "title": "ARTE Mediathek – Apps bei Google Play",
+      "url": "https://play.google.com/store/apps/details?id=tv.arte.plus7&hl=de",
+      "snippet": "💬 ARTE für (fast) alle Europäerinnen und Europäer • 6 Sprachen: Neben Deutsch und Französisch gibt es eine Vielzahl unserer …"
+    },
+    {
+      "title": "Alle Sendungen - ARTE",
+      "url": "https://www.arte.tv/de/videos/sendungen/",
+      "snippet": "Ein Thema = eine Analyse = nur das Wissen, das du brauchst. Reportagen aus Europa, historische und geopolitische Analysen aus …"
+    },
+    {
+      "title": "ARTE Mediathek - Sendung verpasst?",
+      "url": "https://www.sendungverpasst.de/arte",
+      "snippet": "5 days ago · Alle Videos, Filme und Serien von ARTE und den anderen TV-Sendern sofort finden und kostenlos online abrufen - …"
+    }
+  ]
+}

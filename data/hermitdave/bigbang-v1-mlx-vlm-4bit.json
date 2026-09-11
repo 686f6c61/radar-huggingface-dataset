@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "hermitdave/BigBang-v1-MLX-VLM-4bit",
+  "slug": "hermitdave-bigbang-v1-mlx-vlm-4bit",
+  "author": "hermitdave",
+  "url": "https://huggingface.co/hermitdave/BigBang-v1-MLX-VLM-4bit",
+  "created_at": "2026-09-10T19:23:26.000Z",
+  "updated_at": "2026-09-10T19:24:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx_vlm",
+  "languages": [],
+  "tags": [
+    "mlx_vlm",
+    "safetensors",
+    "qwen3_5_moe",
+    "mlx",
+    "moe",
+    "4bit",
+    "multimodal",
+    "vlm",
+    "image-text-to-text",
+    "conversational",
+    "base_model:endless-frontier/BigBang-v1",
+    "base_model:quantized:endless-frontier/BigBang-v1",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 20422193626,
+  "storage_human": "20.4 GB",
+  "base_model": "endless-frontier/BigBang-v1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://www.youtube.com/youtube%20-MUSIC",
+      "snippet": "Subscribe to the YouTube Music channel to stay up on the latest news and updates from YouTube Music. ...more"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/youtubemusic",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "The Music Channel - YouTube",
+      "url": "https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ",
+      "snippet": "Visit the YouTube Music Channel to find today’s top talent, featured artists, and playlists. Subscribe to see the latest in the music …"
+    }
+  ]
+}

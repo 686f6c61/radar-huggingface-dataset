@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "dronefreak/stdc1-seg-cityscapes",
+  "slug": "dronefreak-stdc1-seg-cityscapes",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/stdc1-seg-cityscapes",
+  "created_at": "2026-09-10T22:55:58.000Z",
+  "updated_at": "2026-09-10T22:56:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "semantic-segmentation",
+    "cityscapes",
+    "stdc",
+    "computer-vision",
+    "mirror",
+    "image-segmentation",
+    "arxiv:2104.13188",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59319266,
+  "storage_human": "59 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Cityscapes val",
+      "metric": "mIoU (single-scale)",
+      "value": 74.5
+    }
+  ],
+  "sources": [
+    {
+      "title": "百度知道 - 全球领先中文互动问答平台",
+      "url": "https://zhidao.baidu.com/",
+      "snippet": "百度知道是全球领先的中文问答互动平台，每天为数亿网民答疑解惑。百度知道通过AI技术实现智能检索和智能推荐，让您的每个疑问 …"
+    },
+    {
+      "title": "日本侵华所占面积最大时期的中国地图。_百度知道",
+      "url": "https://zhidao.baidu.com/question/195795512.html",
+      "snippet": "日本侵华所占面积最大时期的 中国地图 如下。 1931年9月18日，“九一八”事变爆发，日本关东军部队大举侵犯中国领土，开启14年侵 …"
+    },
+    {
+      "title": "甘肃省位于中国地图的那个位置 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/540773420.html",
+      "snippet": "甘肃省位于中国地图的那个位置甘肃省位于中国地图的西北部，如下图：甘肃省位于中国西部地区，地处黄河中上游，地域辽阔。介于 …"
+    },
+    {
+      "title": "中国地图 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/604601631.html",
+      "snippet": "Oct 14, 2013 · 中国地图 中国地图是指着重展示中华人民共和国领土以及疆域内各类地理要素的分布的地图。按照地图的一般分类方 …"
+    },
+    {
+      "title": "求模拟城市4地图下载 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/117211326.html",
+      "snippet": "求模拟城市4地图下载http://www.simcity.cn/forum-24-1.html模拟城市中文网的土地储备中心 (内有各个网友提供的地图下载)推荐:这个 …"
+    }
+  ]
+}

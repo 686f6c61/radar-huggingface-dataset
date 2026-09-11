@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "drawthingsai/MiniMax-H3",
+  "slug": "drawthingsai-minimax-h3",
+  "author": "drawthingsai",
+  "url": "https://huggingface.co/drawthingsai/MiniMax-H3",
+  "created_at": "2026-09-11T01:24:49.000Z",
+  "updated_at": "2026-09-11T01:24:50.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "text-to-video",
+    "image-to-video",
+    "image-text-to-video",
+    "video-to-video",
+    "text-to-audio-video",
+    "image-to-audio-video",
+    "image-text-to-audio-video",
+    "video-to-audio-video",
+    "audio-to-audio-video",
+    "audio-video-generation",
+    "multimodal",
+    "synchronized-audio-video",
+    "reference-to-audio-video",
+    "diffusers",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/question/347202458",
+      "snippet": "现在中文的维基镜像感觉做的还不错，数量也足够多。但是英文镜像无论在数量还是质量上都还不及中文版本。…"
+    },
+    {
+      "title": "字节、KB、MB、GB 之间的换算关系_百度知道",
+      "url": "https://zhidao.baidu.com/question/6318898.html",
+      "snippet": "字节、KB、MB、GB 之间的换算关系数据存储以10进制表示：1B（byte，字节）= 8 bit（见下文）；1KB（Kilobyte，千字 …"
+    },
+    {
+      "title": "bigbang一天一天的歌词、要原版歌词和中文版翻译的如 ...",
+      "url": "https://zhidao.baidu.com/question/1830391065414523220.html",
+      "snippet": "Aug 15, 2014 · BigBang 《一天一天》歌词 一天一天 离开吧 Ye the finally I realize that I'm nothing without you I was so wrong forgive …"
+    },
+    {
+      "title": "维基百科（ Wikipedia） 为什么现在需要人捐钱 ？ - 知乎",
+      "url": "https://www.zhihu.com/question/359009187",
+      "snippet": "来自维基百科创办者Jimmy Wales的个人呼吁 维基百科是全球第五大网站，每月为4.5亿用户提供服务，页面浏览数以十亿计。 商业本 …"
+    }
+  ]
+}

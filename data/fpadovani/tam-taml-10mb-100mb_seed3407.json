@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/tam-taml-10mb-100mb_seed3407",
+  "slug": "fpadovani-tam-taml-10mb-100mb_seed3407",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/tam-taml-10mb-100mb_seed3407",
+  "created_at": "2026-09-09T18:47:06.000Z",
+  "updated_at": "2026-09-10T20:42:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/tam_taml_10mb",
+    "base_model:finetune:goldfish-models/tam_taml_10mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 238,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 2973209145,
+  "storage_human": "3.0 GB",
+  "base_model": "goldfish-models/tam_taml_10mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Translator - Bing",
+      "url": "https://www.bing.com/translator",
+      "snippet": "Translate text for free with accurate results in over 100 languages. Millions use Bing Translator daily—try it now!"
+    },
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://www2.bing.com/",
+      "snippet": "Search with Microsoft Bing and use the power of AI to find information, explore webpages, images, videos, maps, and more. A smart …"
+    },
+    {
+      "title": "Microsoft Translator - 从英语翻译 - Bing",
+      "url": "https://www.bing.com/translator?setlang=zh-cn",
+      "snippet": "Microsoft Translator 提供免费英语翻译服务，支持 100 多种语言，帮助用户轻松获取准确的翻译结果。"
+    },
+    {
+      "title": "Bing",
+      "url": "https://global.bing.com/maps/",
+      "snippet": "Map multiple locations, get transit/walking/driving directions, view live traffic conditions, plan trips, view satellite, aerial and 3d …"
+    },
+    {
+      "title": "Microsoft Translator - Traducir del Inglés",
+      "url": "https://www.bing.com/translator?setlang=es",
+      "snippet": "Translate English to over 100 languages for free with Bing Translator, offering accurate results and seamless language conversion."
+    }
+  ]
+}

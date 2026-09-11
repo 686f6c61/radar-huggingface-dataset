@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ImKyungjin/pi0-multi-pick-and-place-mixed-suboptimal-seed1000-50pct-40ep",
+  "slug": "imkyungjin-pi0-multi-pick-and-place-mixed-suboptimal-seed1000-50pct-40ep",
+  "author": "ImKyungjin",
+  "url": "https://huggingface.co/ImKyungjin/pi0-multi-pick-and-place-mixed-suboptimal-seed1000-50pct-40ep",
+  "created_at": "2026-09-10T19:44:24.000Z",
+  "updated_at": "2026-09-10T19:47:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi0",
+    "dataset:taewonkoo/multi_pick_and_place_mixed_suboptimal_seed1000_50pct_40ep",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 7011556176,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "USPS.com® - USPS Tracking®",
+      "url": "https://tools.usps.com/tracking/tracking_home.cfm?msockid=042d41b118956c6529b5566119df6dfc",
+      "snippet": "Get the free Informed Delivery feature to receive automated notifications on your packages Learn More"
+    },
+    {
+      "title": "USPS.com",
+      "url": "https://tools.usps.com/go/TrackConfirmAction_input?origTrackNum=9534610866516028793854&msockid=042d41b118956c6529b5566119df6dfc",
+      "snippet": "ڊ u001d4 / / ku00023 E 7u0007 Z [$ ڍr 7 D r G @ܴ ך!F\\ Vu0010B G` [ e `Z.ؿ# u0001I =K u001e T; .tCu000f ~ u000e GG_;H u001c t …"
+    },
+    {
+      "title": "Tracking - DHL - United States of America",
+      "url": "https://www.dhl.com/us-en/home/tracking.html",
+      "snippet": "International tracking of your DHL shipment: have your DHL tracking number at hand to track and trace."
+    },
+    {
+      "title": "Tracking | UPS - United States",
+      "url": "https://www.ups.com/track?loc=en_US&tracknum=+Tracking+%2F&msockid=042d41b118956c6529b5566119df6dfc",
+      "snippet": "Track one or multiple packages with UPS Tracking, use your tracking number to track the status of your package."
+    },
+    {
+      "title": "Package Tracking – Free Real-Time Tracking Worldwide | 17TRACK",
+      "url": "https://www.17track.net/en/tracking",
+      "snippet": "Track packages worldwide with any tracking number. Get real-time delivery updates from 3,300+ carriers. Free tracking, no login …"
+    }
+  ]
+}

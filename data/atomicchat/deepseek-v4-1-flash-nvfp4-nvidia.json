@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "AtomicChat/DeepSeek-V4.1-Flash-NVFP4-nvidia",
+  "slug": "atomicchat-deepseek-v4-1-flash-nvfp4-nvidia",
+  "author": "AtomicChat",
+  "url": "https://huggingface.co/AtomicChat/DeepSeek-V4.1-Flash-NVFP4-nvidia",
+  "created_at": "2026-09-10T20:12:26.000Z",
+  "updated_at": "2026-09-10T22:46:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deepseek_v41",
+    "deepseek",
+    "deepseek-v4.1",
+    "nvfp4",
+    "modelopt",
+    "vllm",
+    "blackwell",
+    "quantized",
+    "atomic-chat",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763205315794,
+  "parameters_human": "763.21B",
+  "storage_bytes": 527311491636,
+  "storage_human": "527.3 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Arsenal FC Official Website | Arsenal.com",
+      "url": "https://www.arsenal.com/fixtures/men/fixtures",
+      "snippet": "Sat Sep 19 American Express Stadium Brighton 14:00 Arsenal Tickets Available Ticket Info"
+    },
+    {
+      "title": "Arsenal 2026-27 Schedule - ESPN",
+      "url": "https://www.espn.com/soccer/team/fixtures/_/id/359/arsenal",
+      "snippet": "ESPN has the full 2026-27 Arsenal schedule. Includes date, time and tv channel information for all Arsenal games."
+    },
+    {
+      "title": "Home | Arsenal FC Official Website | Arsenal.com",
+      "url": "https://www.arsenal.com/",
+      "snippet": "Arsenal Football Club Official Website: get the latest Arsenal FC news, highlights, fixtures and results. Become a free digital member …"
+    },
+    {
+      "title": "Arsenal 2026-27 English Premier League Schedule - ESPN",
+      "url": "https://www.espn.com/soccer/team/fixtures/_/id/359/league/eng.1/arsenal",
+      "snippet": "ESPN has the full 2026-27 Arsenal English Premier League schedule. Includes date, time and tv channel information for all Arsenal …"
+    },
+    {
+      "title": "Arsenal Schedule - Upcoming Matches of Arsenal",
+      "url": "https://arsenal-fc-news.com/schedule-arsenal",
+      "snippet": "Check out the schedule of Arsenal here. The complete match schedule of Arsenal in the Club Friendlies, Club Friendlies 1, Premier …"
+    }
+  ]
+}

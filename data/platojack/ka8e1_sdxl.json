@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "platojack/Ka8e1_SDXL",
+  "slug": "platojack-ka8e1_sdxl",
+  "author": "platojack",
+  "url": "https://huggingface.co/platojack/Ka8e1_SDXL",
+  "created_at": "2026-09-10T21:59:10.000Z",
+  "updated_at": "2026-09-10T22:01:16.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185968776,
+  "storage_human": "186 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "timeanddate.com",
+      "url": "https://www.timeanddate.com/",
+      "snippet": "Welcome to the world's top site for time, time zones, and astronomy. Organize your life with free online info and tools you can rely on. …"
+    },
+    {
+      "title": "Today's Date and Time - Current Date, Time & More",
+      "url": "https://todaydateandtime.com/",
+      "snippet": "Find out today's date, current time, day of the week, week number, and more. Your complete date and time resource."
+    },
+    {
+      "title": "Today's Date - CalendarDate.com",
+      "url": "https://www.calendardate.com/todays.htm",
+      "snippet": "23 hours ago · Details about today's date with count of days, weeks, and months, Sun and Moon cycles, Zodiac signs and holidays."
+    },
+    {
+      "title": "Today’s Date — Current Date, Time & Date Formats",
+      "url": "https://gettodaysdate.com/",
+      "snippet": "23 hours ago · See today’s date and local time now. Copy MM/DD/YYYY, ISO 8601 and other date formats, plus the day of year, …"
+    },
+    {
+      "title": "What Is Today's Date? — Live Date, Time & Week Number ...",
+      "url": "https://todaysdateandtime.com/today/",
+      "snippet": "11 hours ago · See today's exact date and time updated live in every format — ISO 8601, Unix timestamp, Julian date, day of year, …"
+    }
+  ]
+}

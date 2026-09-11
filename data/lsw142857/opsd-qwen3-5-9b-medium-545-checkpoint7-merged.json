@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "LSW142857/OPSD-Qwen3.5-9B-Medium-545-Checkpoint7-Merged",
+  "slug": "lsw142857-opsd-qwen3-5-9b-medium-545-checkpoint7-merged",
+  "author": "LSW142857",
+  "url": "https://huggingface.co/LSW142857/OPSD-Qwen3.5-9B-Medium-545-Checkpoint7-Merged",
+  "created_at": "2026-09-10T23:54:12.000Z",
+  "updated_at": "2026-09-10T23:58:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "opsd",
+    "qwen3.5",
+    "merged",
+    "code",
+    "lora",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:jiaxingx/privilege-code-opsd-ckpts",
+    "base_model:adapter:jiaxingx/privilege-code-opsd-ckpts",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19326293413,
+  "storage_human": "19.3 GB",
+  "base_model": "jiaxingx/privilege-code-opsd-ckpts",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VIE Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/vie",
+      "snippet": "Sep 3, 2026 · The meaning of VIE is to strive for superiority : contend, compete. How to use vie in a sentence."
+    },
+    {
+      "title": "VIE | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/vie",
+      "snippet": "VIE definition: 1. to compete with other people to achieve or get something: 2. to compete with other people to…. Learn more."
+    },
+    {
+      "title": "Vie – Meaning and Examples: A Comprehensive Guide to the Word “Vie”",
+      "url": "https://englishwordchamps.com/vie-meaning-and-examples/",
+      "snippet": "Feb 13, 2026 · Today, I’ll walk you through everything you need to know about \"vie\" — what it means, how to use it, common …"
+    },
+    {
+      "title": "VIE | definition in the Cambridge English Dictionary",
+      "url": "https://dictionary.cambridge.org/us/dictionary/english/vie",
+      "snippet": "Six candidates are currently vying for the Democratic presidential nomination. The two older children tend to vie with the younger one …"
+    },
+    {
+      "title": "Definition, pictures, pronunciation and usage notes - vie",
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/vie",
+      "snippet": "Definition of vie verb in Oxford Advanced Learner's Dictionary. Meaning, pronunciation, picture, example sentences, grammar, usage …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "TMA-1/GLM-5.3-Flash",
+  "slug": "tma-1-glm-5-3-flash",
+  "author": "TMA-1",
+  "url": "https://huggingface.co/TMA-1/GLM-5.3-Flash",
+  "created_at": "2026-09-10T23:17:07.000Z",
+  "updated_at": "2026-09-10T23:17:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "license:mit",
+    "eval-results",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321323031390,
+  "parameters_human": "321.32B",
+  "storage_bytes": 328357673114,
+  "storage_human": "328.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "La TMA (Tierce Maintenance Applicative), qu’est-ce que c’est ?",
+      "url": "https://www.ipi-ecoles.com/tma/",
+      "snippet": "On parle de Tierce Maintenance Applicative (TMA) lorsqu’une entreprise confie partiellement ou totalement la maintenance de ses …"
+    },
+    {
+      "title": "Tierce maintenance applicative — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Tierce_maintenance_applicative",
+      "snippet": "Basculer la table des matières Tierce maintenance applicative"
+    },
+    {
+      "title": "TMA - Soluciones para la gestión sostenible de residuos",
+      "url": "https://tma.es/",
+      "snippet": "Jun 22, 2022 · TMA, empresa de gestión de residuos comprometida con la sostenibilidad y el medio ambiente. Líder en los …"
+    },
+    {
+      "title": "VOTRE TRAJET SUR-MESURE - TMA",
+      "url": "https://bustma.com/fr/",
+      "snippet": "TITRES ET TARIFS Que vous voyagiez régulièrement ou occasionnellement, TMA vous propose des titres et abonnements adaptés …"
+    },
+    {
+      "title": "Qu’est ce que la TMA (Tierce Maintenance Applicative) ?",
+      "url": "https://www.conseils-plus.com/fr/quest-ce-que-la-tma-tierce-maintenance-applicative/",
+      "snippet": "Jun 7, 2023 · Pour rappel, la Tierce Maintenance Applicative (TMA) est l’ externalisation de la gestion du système d’information (SI) …"
+    }
+  ]
+}

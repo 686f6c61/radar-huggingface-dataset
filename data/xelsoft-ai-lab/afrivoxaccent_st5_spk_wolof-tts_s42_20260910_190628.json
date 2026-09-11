@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "xelsoft-ai-lab/AfriVoxAccent_ST5_spk_wolof-tts_s42_20260910_190628",
+  "slug": "xelsoft-ai-lab-afrivoxaccent_st5_spk_wolof-tts_s42_20260910_190628",
+  "author": "xelsoft-ai-lab",
+  "url": "https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_wolof-tts_s42_20260910_190628",
+  "created_at": "2026-09-10T22:58:46.000Z",
+  "updated_at": "2026-09-10T22:59:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "speecht5",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 144437730,
+  "parameters_human": "144.4M",
+  "storage_bytes": 578043218,
+  "storage_human": "578 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Акриловая ванна - плюсы и минусы в ...",
+      "url": "https://nm-home.ru/blog/akrilovye-vanny-plyusy-i-minusy/",
+      "snippet": "Однако хрупкость всё же веский минус акриловых ванн. Основные недостатки акриловых ванн сводятся к низкой …"
+    },
+    {
+      "title": "Акриловые ванны: отзывы покупателей ...",
+      "url": "https://santeh-gid.vercel.app/articles/a/ak/akrilovaya-vanna-otzyvy-pokupatelej-plyusy-i-minusy.html",
+      "snippet": "Реальные отзывы об акриловых ваннах: преимущества и недостатки, сравнение с чугуном/сталью, советы по выбору и …"
+    },
+    {
+      "title": "Акриловая ванна: плюсы и минусы - ravak.com.ua",
+      "url": "https://ravak.com.ua/ru/blog/sovety-pokupatelyam/akrilovaya-vanna-plyusy-i-minusy/",
+      "snippet": "Статья на тему Акриловая ванна: плюсы и минусы читайте советы на сайте интернет магазина ravak.com.ua"
+    },
+    {
+      "title": "Плюсы и минусы акриловых ванн — Inquire в ...",
+      "url": "https://inquire.com.ua/domivka/plyusy-i-minusy-akrilovykh-vann.html",
+      "snippet": "Мнения и отзывы о материале различны и неоднозначны. Чтобы сделать для себя правильные выводы, необходимо изучить …"
+    },
+    {
+      "title": "Плюсы и минусы акриловых ванн",
+      "url": "https://dizain-vannoy.ru/santexnika/vanny/akrilovye/akrilovaya-vanna-plyusy-i-minusy.html",
+      "snippet": "Мнения и отношение к акриловым ваннам могут появляться как из личного опыта пользования, так и благодаря отзывам. …"
+    }
+  ]
+}

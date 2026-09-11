@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SnazzyArtist22/Buddy_KTB",
+  "slug": "snazzyartist22-buddy_ktb",
+  "author": "SnazzyArtist22",
+  "url": "https://huggingface.co/SnazzyArtist22/Buddy_KTB",
+  "created_at": "2026-09-10T23:17:02.000Z",
+  "updated_at": "2026-09-10T23:17:48.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 170531064,
+  "storage_human": "171 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "33 Internet of Things Examples to Know in 2026 | Built In",
+      "url": "https://builtin.com/articles/iot-examples",
+      "snippet": "Feb 23, 2026 · Internet of Things (IoT) examples can range from self-driving cars to Fitbits. Here’s a list of examples you should know …"
+    },
+    {
+      "title": "Internet of Things Examples: 50+ Real-World IoT Applications",
+      "url": "https://www.w3resource.com/ai/internet-of-things-transfroming-how-we-live-and-work.php",
+      "snippet": "May 26, 2026 · Discover 50+ real-world Internet of Things examples across smart homes, healthcare, cities, factories, agriculture, …"
+    },
+    {
+      "title": "20 Best Internet of Things Examples to Consider in 2026",
+      "url": "https://www.designveloper.com/blog/internet-of-things-examples/",
+      "snippet": "Mar 25, 2025 · Are you curious of how IoT is applied in real world? Let's discover 20 common Internet of Things examples with us …"
+    },
+    {
+      "title": "Top 10 Powerful Internet of Things (IoT) Examples of 2026 (Real …",
+      "url": "https://www.softwaretestinghelp.com/best-iot-examples/",
+      "snippet": "Dec 21, 2025 · IoT represents an ecosystem of connected devices. Here are the 10 powerful and coolest real-world Internet of Things …"
+    },
+    {
+      "title": "Internet of Things Examples and Applications - IoT For All",
+      "url": "https://www.iotforall.com/internet-of-things-examples-applications",
+      "snippet": "Dec 2, 2024 · Here's how IoT improves efficiency, health/safety, and/or user experiences. Efficiency is particularly important for …"
+    }
+  ]
+}

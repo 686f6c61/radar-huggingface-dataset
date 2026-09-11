@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mattewg/pi05-so101-grab-cup-30k",
+  "slug": "mattewg-pi05-so101-grab-cup-30k",
+  "author": "mattewg",
+  "url": "https://huggingface.co/mattewg/pi05-so101-grab-cup-30k",
+  "created_at": "2026-09-10T20:09:10.000Z",
+  "updated_at": "2026-09-10T20:14:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "robotics",
+    "pi0",
+    "pi05",
+    "openpi",
+    "so-101",
+    "so101",
+    "imitation-learning",
+    "dataset:Ibuprofene/grab_cup_2cam_v4",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12440324332,
+  "storage_human": "12.4 GB",
+  "base_model": "physical-intelligence/pi05_base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Погода в Лешуконском — Прогноз погоды в Лешуконском, …",
+      "url": "https://yandex.ru/pogoda/ru/leshukonskoe",
+      "snippet": "Сейчас в Лешуконском температура воздуха +13°. Ощущается как +11°, небольшой дождь. Температура утром +13°, днем …"
+    },
+    {
+      "title": "Погода в Лешуконском сейчас, почасовой точный прогноз погоды в …",
+      "url": "https://ru-meteo.ru/leshukonskoe/hour",
+      "snippet": "RU-METEO.RU: Почасовой прогноз погоды в Лешуконском. Температура, давление, ветер, влажность и осадки по часам в …"
+    },
+    {
+      "title": "GISMETEO: Погода в Лешуконском сегодня, прогноз погоды Лешуконское …",
+      "url": "https://www.gismeteo.ru/weather-leshukonskoye-3918/",
+      "snippet": "20 hours ago · Погода в Лешуконском на сегодня, подробный прогноз погоды на сегодня для населенного пункта …"
+    },
+    {
+      "title": "Погода в Лешуконском - точный и подробный прогноз погоды в …",
+      "url": "https://ru.meteotrend.com/forecast/ru/lesukonskoe/",
+      "snippet": "1 day ago · MeteoTrend: Погода в Лешуконском на сегодня, завтра и неделю. Точный прогноз погоды в Лешуконском."
+    },
+    {
+      "title": "Погода в Лешуконском - РП5",
+      "url": "https://m.rp5.ru/Погода_в_Лешуконском",
+      "snippet": "1 day ago · 2 часа назад на метеостанции было +11.5 °C, пасмурная погода, атмосферное давление в пределах нормы, очень …"
+    }
+  ]
+}

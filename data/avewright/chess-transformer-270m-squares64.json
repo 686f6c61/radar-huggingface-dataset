@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "avewright/chess-transformer-270m-squares64",
+  "slug": "avewright-chess-transformer-270m-squares64",
+  "author": "avewright",
+  "url": "https://huggingface.co/avewright/chess-transformer-270m-squares64",
+  "created_at": "2026-09-10T19:35:06.000Z",
+  "updated_at": "2026-09-10T19:35:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "chess",
+    "transformer",
+    "recurrent",
+    "policy",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1074333920,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Entgelttabellen TVöD 2026-2027 - öffentlicher Dienst der Kommunen …",
+      "url": "https://www.kommunalforum.de/entgelttabellen.php",
+      "snippet": "May 1, 2026 · Entgelttabellen im öffentlichen Dienst: Aktuelle Gehaltstabellen für TVöD, TV-L und weitere Tarifverträge mit …"
+    },
+    {
+      "title": "E 11 TVöD: Gehalt 2026-2027, Stufen, Voraussetzungen & Tätigkeiten",
+      "url": "https://www.kommunalforum.de/e_11_tvoed.php",
+      "snippet": "E 11 TVöD: Gehalt, Stufen, Voraussetzungen, Eingruppierung und typische Tätigkeiten der Entgeltgruppe 11 im öffentlichen Dienst."
+    },
+    {
+      "title": "various - Report Completed Domain Name Sales Here",
+      "url": "https://www.namepros.com/threads/report-completed-domain-name-sales-here.83628/page-1360",
+      "snippet": "Aug 3, 2026 · This thread is a central location to report domain name sales of any dollar amount. As much information as you can …"
+    },
+    {
+      "title": "TVöD: Beispiele zur Eingruppierung - KommunalForum.de",
+      "url": "https://www.kommunalforum.de/tvoed_beispiele_zur_eingruppierung.php",
+      "snippet": "TVöD Eingruppierung: Beispiele zur Zuordnung von Tätigkeiten und Berufen in die Entgeltgruppen E 1 bis E 15 des öffentlichen …"
+    },
+    {
+      "title": "TVöD Stufenfestsetzung bei Neueinstellung",
+      "url": "https://www.kommunalforum.de/tvoed_stufenfestsetzung_neueinstellung.php",
+      "snippet": "TVöD Stufenfestsetzung bei Neueinstellung Bei einer Neueinstellung im öffentlichen Dienst entscheidet die Stufenfestsetzung …"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "TULLUS/Aquila-VL-2B-llava-qwen",
+  "slug": "tullus-aquila-vl-2b-llava-qwen",
+  "author": "TULLUS",
+  "url": "https://huggingface.co/TULLUS/Aquila-VL-2B-llava-qwen",
+  "created_at": "2026-09-11T00:32:54.000Z",
+  "updated_at": "2026-09-11T00:32:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "multimodal",
+    "visual-question-answering",
+    "en",
+    "zh",
+    "dataset:BAAI/Infinity-MM",
+    "dataset:BAAI/Infinity-Instruct",
+    "dataset:BAAI/Infinity-Preference",
+    "arxiv:2410.18558",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2178969120,
+  "parameters_human": "2.18B",
+  "storage_bytes": 4358043656,
+  "storage_human": "4.4 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct, google/siglip-so400m-patch14-384",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[Release] TRSRO English Media 2026 - elitepvpers",
+      "url": "https://www.elitepvpers.com/forum/sro-pserver-guides-releases/5363096-release-trsro-english-media-2026-a.html",
+      "snippet": "Jun 14, 2026 · Discussion on [Release] TRSRO English Media 2026within the SRO PServer Guides & Releasesforum part of the …"
+    },
+    {
+      "title": "GameGami + Joymax contract licence... - Page 3 - elitepvpers",
+      "url": "https://www.elitepvpers.com/forum/silkroad-online/4775252-gamegami-joymax-contract-licence-3.html",
+      "snippet": "Aug 5, 2020 · Discussion on GameGami + Joymax contract licence...within the Silkroad Onlineforum part of the Popular …"
+    },
+    {
+      "title": "1 - 79 ARASI GÖREVLER TAMAMI TÜRKÇE ( YENİLENDİ )",
+      "url": "https://forum.donanimhaber.com/1-79-arasi-gorevler-tamami-turkce-yenilendi--11779283",
+      "snippet": "1 - 79 Arası Görevler Tam Liste ve Açıklamaları Silkroad Online'da 1'den 79'a kadar tamamlaman gereken görevler bulunmaktadır. …"
+    },
+    {
+      "title": "Gamegami Silkroad Online - Force Nuker PvP - DonanımHaber Forum",
+      "url": "https://forum.donanimhaber.com/gamegami-silkroad-online-force-nuker-pvp--146322415",
+      "snippet": "Merhaba arkadaşlar, Silkroad Online Türkiye kararlı beta sürümünde force nuker karakteri yapılandırdım ve pvp de neler …"
+    },
+    {
+      "title": "GameGami + Joymax contract licence... - Page 2 - elitepvpers",
+      "url": "https://www.elitepvpers.com/forum/silkroad-online/4775252-gamegami-joymax-contract-licence-2.html",
+      "snippet": "Jul 20, 2020 · Discussion on GameGami + Joymax contract licence... within the Silkroad Online forum part of the Popular Games …"
+    }
+  ]
+}

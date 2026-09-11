@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "nischay185/konkani-qwen2-1.5b-v3-aligned-dare-ties-grpo",
+  "slug": "nischay185-konkani-qwen2-1-5b-v3-aligned-dare-ties-grpo",
+  "author": "nischay185",
+  "url": "https://huggingface.co/nischay185/konkani-qwen2-1.5b-v3-aligned-dare-ties-grpo",
+  "created_at": "2026-09-11T00:04:59.000Z",
+  "updated_at": "2026-09-11T00:05:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "arxiv:2311.03099",
+    "base_model:nischay185/konkani-qwen2-1.5b-v3-alignment-full",
+    "base_model:merge:nischay185/konkani-qwen2-1.5b-v3-alignment-full",
+    "base_model:npatel121/qwen2-1.5b-grpo-gsm8k",
+    "base_model:merge:npatel121/qwen2-1.5b-grpo-gsm8k",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543268864,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3097994526,
+  "storage_human": "3.1 GB",
+  "base_model": "npatel121/qwen2-1.5b-grpo-gsm8k, nischay185/konkani-qwen2-1.5b-v3-alignment-full",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mansion off of Callaghan... (San Antonio, Van: house, live, Lowes ...",
+      "url": "https://www.city-data.com/forum/san-antonio/1370906-mansion-off-callaghan-2.html",
+      "snippet": "Sep 3, 2011 · The one that comes to my mind was the former estate of oilman Strauder G. Nelson. It was the mansion that sat high …"
+    },
+    {
+      "title": "HOME DEPOT & MACY'S GIFT CARD/CARDS @15% OFF W/LOWES 10",
+      "url": "http://www.jlaforums.com/viewtopic.php?t=19517668",
+      "snippet": "Dec 29, 2009 · I HAVE MANY MANY HOME DEPOT GIFT CARDS FOR SALE @ 15% DISCOUNT + FREE LOWES 10% OFF …"
+    },
+    {
+      "title": "Replacement for DTC cabinet hinge? (Home Depot, Lowes, furniture ...",
+      "url": "https://www.city-data.com/forum/house/2302395-replacement-dtc-cabinet-hinge.html",
+      "snippet": "Feb 22, 2015 · Lowes/Home Depot carries replacement hinges for most cabinets. Make sure you get the exact one, as many look …"
+    },
+    {
+      "title": "Saturday! Huge Flea Market for Autism (Lowes Foods Davidson)",
+      "url": "http://www.jlaforums.com/viewtopic.php?t=53051341",
+      "snippet": "Oct 1, 2010 · Autism Fundraiser! Many vendors, raffle prizes, an auction and a cookout! Garage sale items as well. Something for …"
+    },
+    {
+      "title": "Annoyed with Lowes over abandoning Kobalt. | 5thGenRams Forum",
+      "url": "https://5thgenrams.com/community/threads/annoyed-with-lowes-over-abandoning-kobalt.4456/",
+      "snippet": "Dec 5, 2018 · So, contrary to earlier widespread reports, Lowes is in fact abandoning Kobalt hand tools for Craftsman. Now, I have …"
+    }
+  ]
+}

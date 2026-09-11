@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "luethan2025/context-encoder",
+  "slug": "luethan2025-context-encoder",
+  "author": "luethan2025",
+  "url": "https://huggingface.co/luethan2025/context-encoder",
+  "created_at": "2026-09-11T01:21:04.000Z",
+  "updated_at": "2026-09-11T01:24:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "dataset:luethan2025/AFHQ-Cat-128x128",
+    "arxiv:1604.07379",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 284295077,
+  "storage_human": "284 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "00000000000000000000000000000000000000000000000000000000000000000000000 ...",
+      "url": "https://www.youtube.com/watch?v=Sj8xpBWb710",
+      "snippet": "Apr 1, 2019 · Check out this funny Talking Tom video!"
+    },
+    {
+      "title": "raw.githubusercontent.com",
+      "url": "https://raw.githubusercontent.com/dr-peters/Region-Growing/refs/heads/main/results.txt",
+      "snippet": "0++++++++++++++++++++++000000000000000000000000000000000000000000000000000000000000000++++++++++++++++++++++000000000000000000000000000000000000000000000000000000000000000000++++++++++++++++++++++00000000000000000000000000000000000000000000000000000000000000000 ..."
+    },
+    {
+      "title": "0.0.0.0 - Vikipedi",
+      "url": "https://tr.wikipedia.org/wiki/0.0.0.0",
+      "snippet": "IPv4 'te, 0.0.0.0 adresi, geçersiz, bilinmeyen veya uygulanamayan bir hedef belirlemek için kullanılan yönlendirilemeyen bir meta …"
+    },
+    {
+      "title": "The biggest Numberblocks ! Counting (1to ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=2y8p8TUbgNU",
+      "snippet": "Jan 19, 2021 · The biggest Numberblocks ever. counting (1-1000000000000000000000). lets imagine the biggest numberblocks like …"
+    },
+    {
+      "title": "MIT Mathematics",
+      "url": "https://math.mit.edu/~drew/modpolys/jfiles/phi_j_97.txt",
+      "snippet": "[7,0] …"
+    }
+  ]
+}

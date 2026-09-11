@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TheHassanSaud/P2_pythia410m_q0.2_dpo_beta0.2",
+  "slug": "thehassansaud-p2_pythia410m_q0-2_dpo_beta0-2",
+  "author": "TheHassanSaud",
+  "url": "https://huggingface.co/TheHassanSaud/P2_pythia410m_q0.2_dpo_beta0.2",
+  "created_at": "2026-09-10T23:35:01.000Z",
+  "updated_at": "2026-09-10T23:35:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 405334016,
+  "parameters_human": "405.3M",
+  "storage_bytes": 1621370224,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spend Management, Corporate Cards & Accounts Payable Solutions | Ramp",
+      "url": "https://ramp.com/",
+      "snippet": "Make expense management easy with Ramp's spend management platform. Combine global corporate cards, travel, expenses and …"
+    },
+    {
+      "title": "Finance Operations on One Intuitive Platform | Ramp",
+      "url": "https://ramp.com/platform/",
+      "snippet": "Pay global vendors in USD or in foreign currencies and reimburse employees in their local currency within 2 days. See spend across …"
+    },
+    {
+      "title": "Ramp (company) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ramp_(company)",
+      "snippet": "Ramp closed a $115 million Series B funding round in April 2021 placing its valuation at $1.6 billion. In August 2021, the company …"
+    },
+    {
+      "title": "Ramp 2026 Company Profile: Valuation, Funding & Investors | PitchBook",
+      "url": "https://pitchbook.com/profiles/company/277837-93",
+      "snippet": "Information on valuation, funding, cap tables, investors, and executives for Ramp. Use the PitchBook Platform to explore the full profile."
+    },
+    {
+      "title": "Ramp Revenue 2026: $1.4B ARR, $44B Valuation - getlatka.com",
+      "url": "https://getlatka.com/companies/ramp",
+      "snippet": "Jun 4, 2026 · Ramp is an all-in-one financial operations platform that helps businesses save time and money by automating expense …"
+    }
+  ]
+}

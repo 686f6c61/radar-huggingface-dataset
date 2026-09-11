@@ -5,7 +5,7 @@
   "author": "disinformant",
   "url": "https://huggingface.co/disinformant/Qwen3.8-9B-Alexandria-GGUF",
   "created_at": "2026-09-10T17:27:08.000Z",
-  "updated_at": "2026-09-10T17:38:35.000Z",
+  "updated_at": "2026-09-11T00:30:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -15,6 +15,8 @@
   ],
   "tags": [
     "gguf",
+    "internet-archive",
+    "archive.org",
     "qwen",
     "qwen3",
     "uncensored",

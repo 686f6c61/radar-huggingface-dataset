@@ -1,0 +1,109 @@
+{
+  "schema": 1,
+  "id": "UraionLabs/MiniCPM5-2B-oQ2.5e",
+  "slug": "uraionlabs-minicpm5-2b-oq2-5e",
+  "author": "UraionLabs",
+  "url": "https://huggingface.co/UraionLabs/MiniCPM5-2B-oQ2.5e",
+  "created_at": "2026-09-10T23:16:05.000Z",
+  "updated_at": "2026-09-10T23:47:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "mlx-lm",
+    "minicpm",
+    "minicpm5",
+    "text-generation",
+    "conversational",
+    "quantized",
+    "quantization",
+    "mixed-precision",
+    "apple-silicon",
+    "macos",
+    "local-llm",
+    "local-inference",
+    "on-device",
+    "edge-ai",
+    "long-context",
+    "131k-context",
+    "tool-calling",
+    "function-calling",
+    "agent",
+    "agentic",
+    "coding",
+    "reasoning",
+    "omlx",
+    "oq",
+    "oqe",
+    "uraion-labs",
+    "en",
+    "zh",
+    "dataset:openbmb/Ultra-FineWeb",
+    "dataset:openbmb/UltraX-Preview",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:openbmb/UltraData-Math",
+    "dataset:openbmb/UltraData-Code",
+    "dataset:openbmb/UltraData-SFT-2605",
+    "dataset:openbmb/UltraData-SFT-Agent-2609",
+    "dataset:openbmb/UltraData-RL-2609",
+    "arxiv:2506.07900",
+    "arxiv:2602.09003",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "2-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 1038547084,
+  "storage_human": "1.0 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "צפייה ב-The Notebook | Prime Video - amazon.com",
+      "url": "https://www.amazon.com/-/he/Notebook-Nick-Cassavetes/dp/B000YMFCS4",
+      "snippet": "In the 1940s, teenaged debutante Allie Hamilton and local boy Noah Calhoun spend one passionate, carefree summer together and …"
+    },
+    {
+      "title": "The Notebook היומן לצפייה ישירה - נאקו - צפייה ישירה",
+      "url": "https://nako.tv/movies/2118/The-Notebook-%D7%94%D7%99%D7%95%D7%9E%D7%9F",
+      "snippet": "Jul 9, 2016 · הסרט היומן לצפייה ישירה: היומן, The Notebook - דרמה רומנטית תקופתית ויחסית מצליחה זו עוקבת אחר קורותיהם של זוג אמריקאיים …"
+    },
+    {
+      "title": "היומן (2004) - סרטים",
+      "url": "https://www.sratim.co.il/tt11412/",
+      "snippet": "היומן הסרט, זמין לצפייה חוקית באתר Netflix, קאסט השחקנים בסרט, ביקורות וחוות דעת לסרט, טריילרים של הסרט, תמונות מתוך הסרט, עדכונים ועוד."
+    },
+    {
+      "title": "The Notebook - Prime Video",
+      "url": "https://www.primevideo.com/-/he/detail/0Q3BGO06JJV3U877CLAZWZDPLV/",
+      "snippet": "In the 1940s, teenaged debutante Allie Hamilton and local boy Noah Calhoun spend one passionate, carefree summer together and …"
+    },
+    {
+      "title": "היומן‬ - ‫Apple TV‬",
+      "url": "https://tv.apple.com/il/movie/%D7%94%D7%99%D7%95%D7%9E%D7%9F/umc.cmc.2c4fe2l41ytc6uz845wyzxyb8?l=he",
+      "snippet": "היומן הוא סרט קולנוע רומנטי משנת 2004, שביים ניק קסאווטס לפי תסריט מאת ג'רמי ליוון, עיבוד קולנועי לרומן באותו שם מאת ניקולס ספארקס, משנת …"
+    }
+  ]
+}

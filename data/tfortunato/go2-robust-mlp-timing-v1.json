@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tfortunato/go2-robust-mlp-timing-v1",
+  "slug": "tfortunato-go2-robust-mlp-timing-v1",
+  "author": "tfortunato",
+  "url": "https://huggingface.co/tfortunato/go2-robust-mlp-timing-v1",
+  "created_at": "2026-09-10T21:01:06.000Z",
+  "updated_at": "2026-09-10T21:01:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "reinforcement-learning",
+    "quadruped",
+    "locomotion",
+    "unitree-go2",
+    "mjlab",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-11T02:54:33.026Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "أداة تحويل الفيديوهات الطويلة إلى مقاطع قصيرة باستخدام الذكاء الاصطناعي",
+      "url": "https://www.flexclip.com/ar/tools/ai-long-video-to-short-video/",
+      "snippet": "كل ما عليك هو لصق رابط فيديو اليوتيوب أو رفع الفيديو الذي تريده لتحويله إلى عدة مقاطع قصيرة باستخدام أداة قص مقاطع الفيديو بالذكاء الاصطناعي من FlexClip."
+    },
+    {
+      "title": "مقطع فيديو قصير بالذكاء الاصطناعي: من فيديو طويل إلى فيديو قصير ...",
+      "url": "https://www.topview.ai/ar/make/ai-long-video-to-short",
+      "snippet": "استخدم AI Clip Maker لتحويل الفيديوهات الطويلة إلى مقاطع قصيرة بسرعة لتنتشر على نطاق واسع. وفر الوقت في التحرير وزد تفاعل وسائل التواصل الاجتماعي الخاصة بك باستخدام أدواتنا المبتكرة."
+    },
+    {
+      "title": "حوّل الفيديوهات الطويلة إلى مقاطع قصيرة: إنشاء كليبات مجانية بالذكاء ...",
+      "url": "https://www.heygen.com/ar-sa/tool/long-video-to-short-video",
+      "snippet": "اعثر على كل لحظة تستحق أن تكون مقطعاً حمّل تسجيلاً طويلاً واحداً، وسيقوم الذكاء الاصطناعي بمراجعة الملف بالكامل ثم استخراج أقوى اللحظات في مقاطع قصيرة منفصلة."
+    },
+    {
+      "title": "تحويل الفيديو الطويل إلى فيديوهات قصيرة: مقاطع مجانية بالذكاء الاصطناعي ...",
+      "url": "https://www.heygen.com/ar-eg/tool/long-video-to-short-video",
+      "snippet": "اكتشف كل اللحظات الجديرة بأن تصبح مقاطع فيديو ارفع تسجيلًا طويلًا واحدًا، وسيقوم الذكاء الاصطناعي بمراجعة الملف بالكامل، ثم استخراج أقوى اللحظات في مقاطع قصيرة منفصلة."
+    },
+    {
+      "title": "صانع مقاطع الفيديو المميزة بالذكاء الاصطناعي — مجاني. أونلاين.",
+      "url": "https://www.kapwing.com/ar/ai/video-highlights",
+      "snippet": "صانع مقاطع الفيديو الذكي من Kapwing يحول الفيديوهات الطويلة إلى مقاطع قصيرة تلقائياً. عدّل المقاطع مجاناً في متصفحنا الأونلاين وسهّل سير عملك."
+    }
+  ]
+}

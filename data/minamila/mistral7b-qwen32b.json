@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "MinaMila/Mistral7B-Qwen32B",
+  "slug": "minamila-mistral7b-qwen32b",
+  "author": "MinaMila",
+  "url": "https://huggingface.co/MinaMila/Mistral7B-Qwen32B",
+  "created_at": "2026-09-10T21:10:14.000Z",
+  "updated_at": "2026-09-10T21:10:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:mistralai/Mistral-7B-Instruct-v0.3",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167837505,
+  "storage_human": "168 MB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "My google snake isn't working - Google Play Community",
+      "url": "https://support.google.com/googleplay/thread/409201851/my-google-snake-isn-t-working?hl=en",
+      "snippet": "Feb 11, 2026 · My google snake isn't working - Google Play Community false"
+    },
+    {
+      "title": "I am in a snake biting its tail situation. - Google Help",
+      "url": "https://support.google.com/accounts/thread/331928643/i-am-in-a-snake-biting-its-tail-situation?hl=en",
+      "snippet": "I am in a snake biting its tail situation. - Google Account Community false"
+    },
+    {
+      "title": "Rules of playing Snake - Google Maps Community",
+      "url": "https://support.google.com/maps/thread/3621166/rules-of-playing-snake?hl=en",
+      "snippet": "Apr 5, 2019 · Rules of playing Snake Information about how to play the game Snake. I have never played it before and don’t know …"
+    },
+    {
+      "title": "Ajuda do Google Maps",
+      "url": "https://support.google.com/maps/?hl=pt-BR",
+      "snippet": "Central de Ajuda oficial do Google Maps, onde você pode encontrar dicas e tutoriais sobre como usar o produto e outras respostas a …"
+    },
+    {
+      "title": "Ayuda de Google Maps",
+      "url": "https://support.google.com/maps/?hl=es-419",
+      "snippet": "Centro de asistencia oficial de Google Maps donde puedes encontrar sugerencias y tutoriales para aprender a utilizar el producto y …"
+    }
+  ]
+}

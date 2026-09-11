@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Muse-Glimmer-30B-Uncensored-Heretic-i1-GGUF",
   "created_at": "2026-09-10T10:54:05.000Z",
-  "updated_at": "2026-09-10T11:09:49.000Z",
+  "updated_at": "2026-09-10T13:00:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": 27854794240,
   "parameters_human": "27.85B",
-  "storage_bytes": 23518355392,
-  "storage_human": "23.5 GB",
+  "storage_bytes": 303373892704,
+  "storage_human": "303.4 GB",
   "base_model": "OS-Software/Muse-Glimmer-30B-Uncensored-Heretic",
   "formats": [
     "gguf"

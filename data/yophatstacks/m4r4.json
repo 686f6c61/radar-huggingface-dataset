@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Yophatstacks/M4R4",
+  "slug": "yophatstacks-m4r4",
+  "author": "Yophatstacks",
+  "url": "https://huggingface.co/Yophatstacks/M4R4",
+  "created_at": "2026-09-10T21:39:28.000Z",
+  "updated_at": "2026-09-10T21:49:56.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2057302582,
+  "storage_human": "2.1 GB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Persia/Iran - 1914-1918-Online",
+      "url": "https://encyclopedia.1914-1918-online.net/article/persiairan/",
+      "snippet": "May 2, 2016 · The outbreak of the First World War coincided with a period in Persian history when, following the Constitutional …"
+    },
+    {
+      "title": "Persia - Away from the Western Front",
+      "url": "https://awayfromthewesternfront.org/campaigns/mesopotamia-persia/persia/",
+      "snippet": "The occupation of Iran during the First World War by Russian, British, and Ottoman troops was a blow from which Aḥmad Shah Qajar …"
+    },
+    {
+      "title": "The Great War: How World War 1 Changed Iran",
+      "url": "https://thelionandthesun.org/592/iran-in-world-war-1/",
+      "snippet": "As World War 1 impacts the world, Britiain and Russia invade Iran, while Germany seeks to win the country through clandestine …"
+    },
+    {
+      "title": "Persian Campaign | Military Wiki | Fandom",
+      "url": "https://military-history.fandom.com/wiki/Persian_Campaign",
+      "snippet": "The Persian Campaign or Invasion of Persia was a series of engagements at northern Persian Azerbaijan and western Persia …"
+    },
+    {
+      "title": "Who did Russians fight against in Iran during WWI? - Russia Beyond",
+      "url": "https://www.rbth.com/history/332977-who-did-russians-fight-against",
+      "snippet": "During World War II, in August and September 1941, the two states jointly carried out ‘Operation Countenance’, as a result of which …"
+    }
+  ]
+}

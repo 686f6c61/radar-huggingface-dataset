@@ -5,7 +5,7 @@
   "author": "hmkang",
   "url": "https://huggingface.co/hmkang/wam_ctxpool_xattn",
   "created_at": "2026-09-09T13:36:11.000Z",
-  "updated_at": "2026-09-09T14:18:22.000Z",
+  "updated_at": "2026-09-11T02:30:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 18,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 64176239088,
-  "storage_human": "64.2 GB",
+  "storage_bytes": 223257546480,
+  "storage_human": "223.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

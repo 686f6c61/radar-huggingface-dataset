@@ -1,0 +1,111 @@
+{
+  "schema": 1,
+  "id": "0x795E2795/Obsidian-Alpha-26B-A4B-it-qat-q4_0",
+  "slug": "0x795e2795-obsidian-alpha-26b-a4b-it-qat-q4_0",
+  "author": "0x795E2795",
+  "url": "https://huggingface.co/0x795E2795/Obsidian-Alpha-26B-A4B-it-qat-q4_0",
+  "created_at": "2026-09-10T22:24:29.000Z",
+  "updated_at": "2026-09-10T23:30:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "ru",
+    "ar",
+    "hi",
+    "pt",
+    "vi",
+    "th",
+    "id",
+    "nl",
+    "da",
+    "pl",
+    "tr"
+  ],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "q4_0",
+    "moe",
+    "text-generation",
+    "llama-cpp",
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "ru",
+    "ar",
+    "hi",
+    "pt",
+    "vi",
+    "th",
+    "id",
+    "nl",
+    "da",
+    "pl",
+    "tr",
+    "base_model:google/gemma-4-26B-A4B",
+    "base_model:finetune:google/gemma-4-26B-A4B",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 15524620672,
+  "storage_human": "15.5 GB",
+  "base_model": "google/gemma-4-26B-A4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Frank Auerbach - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Frank_Auerbach",
+      "snippet": "From 2007 to 2008, Auerbach held a solo show entitled Frank Auerbach Etchings and Drypoints 1954–2006 at the Fitzwilliam …"
+    },
+    {
+      "title": "Frank Auerbach biography",
+      "url": "https://auerbach.fitzmuseum.cam.ac.uk/biography",
+      "snippet": "In Britain, Auerbach became a pupil at Bunce Court School, near Faversham in Kent, where he excelled in not only art but also …"
+    },
+    {
+      "title": "FRANK AUERBACH F - benbrownfinearts.com",
+      "url": "https://www.benbrownfinearts.com/usr/library/documents/main/artists/116/auerbach-cv-12.05.2025.pdf",
+      "snippet": "2024 US: From There to Here – Britain’s Gain, Ben Uri Gallery, London 2022 A Century of the Artist’s Studio: 1920-2020, …"
+    },
+    {
+      "title": "Frank Auerbach 1931-2024 - Jewish Renaissance",
+      "url": "https://www.jewishrenaissance.org.uk/blog/obit-frank-auerbach",
+      "snippet": "Nov 20, 2024 · To the end, Auerbach spoke and wrote very little about his profound experience of dislocation and loss. In his own …"
+    },
+    {
+      "title": "Frank Auerbach (b. 1931) - Christopher Kingzett Fine Art",
+      "url": "https://christopherkingzettfineart.com/artists/auerbach",
+      "snippet": "Known for very thick application of paint or ‘impasto’ and strong painterly images, Auerbach has exhibited in major galleries and …"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "skram/bioclip-2-endpoint",
+  "slug": "skram-bioclip-2-endpoint",
+  "author": "skram",
+  "url": "https://huggingface.co/skram/bioclip-2-endpoint",
+  "created_at": "2026-09-10T23:55:17.000Z",
+  "updated_at": "2026-09-11T01:06:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "open_clip",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "open_clip",
+    "safetensors",
+    "biology",
+    "CV",
+    "images",
+    "imageomics",
+    "clip",
+    "species-classification",
+    "biological visual task",
+    "multimodal",
+    "animals",
+    "plants",
+    "fungi",
+    "species",
+    "taxonomy",
+    "rare species",
+    "endangered species",
+    "evolutionary biology",
+    "knowledge-guided",
+    "zero-shot-image-classification",
+    "en",
+    "dataset:imageomics/TreeOfLife-200M",
+    "dataset:GBIF",
+    "dataset:bioscan-ml/BIOSCAN-5M",
+    "dataset:EOL",
+    "dataset:FathomNet",
+    "arxiv:2505.23883",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3421157234,
+  "storage_human": "3.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Blocked due to legislation in the state of Virginia - iXXX",
+      "url": "https://www.ixxx.com/ro/",
+      "snippet": "We’re sorry. Ixxx.com is unavailable in the state of Virginia. While not subject to U.S. law or jurisdiction, ixxx.com has been made …"
+    },
+    {
+      "title": "XXX Movies Tube - Free Porn Movies at iXXX . com",
+      "url": "https://www.ixxx.com/",
+      "snippet": "XXX Movies Tube - Free Porn Movies at iXXX . com Casting 1.11M Casting Amateur 560K Casting Threesome 63.4K Caught 660K …"
+    },
+    {
+      "title": "XXX Film Tube - Gratis Pornofilm på iXXX . Com",
+      "url": "https://www.ixxx.com/da/",
+      "snippet": ""
+    },
+    {
+      "title": "XXX Filme - Kostenlose Porno-Filme auf iXXX . Com",
+      "url": "https://www.ixxx.com/de-at/",
+      "snippet": "XXX Filme - Kostenlose Pornofilme auf iXXX . Com"
+    },
+    {
+      "title": "Japanese Movies - iXXX",
+      "url": "https://www.ixxx.com/c/japanese",
+      "snippet": "Watch Japanese Movies for free on IXXX.com!"
+    }
+  ]
+}

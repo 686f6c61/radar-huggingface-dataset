@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SoSolaris/xvla-b0910-1749-p08_lr3e4",
+  "slug": "sosolaris-xvla-b0910-1749-p08_lr3e4",
+  "author": "SoSolaris",
+  "url": "https://huggingface.co/SoSolaris/xvla-b0910-1749-p08_lr3e4",
+  "created_at": "2026-09-10T19:28:12.000Z",
+  "updated_at": "2026-09-10T19:42:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "xvla",
+    "robotics",
+    "dataset:SoSolaris/socks_20_diversified",
+    "arxiv:2510.10274",
+    "base_model:lerobot/xvla-base",
+    "base_model:finetune:lerobot/xvla-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 879687256,
+  "parameters_human": "879.7M",
+  "storage_bytes": 1759506160,
+  "storage_human": "1.8 GB",
+  "base_model": "lerobot/xvla-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RaiPlay - GuidaTV / Replay",
+      "url": "https://www.raiplay.it/guidatv",
+      "snippet": "Vuoi sapere cosa c'è stasera in tv? Tutti i programmi in onda sui canali Rai con la possibilità, navigando il palinsesto, di rivedere in …"
+    },
+    {
+      "title": "RaiPlay, Molto più di quanto immagini",
+      "url": "https://www.raiplay.it/",
+      "snippet": "I contenuti di RaiPlay sono gratuiti. L'offerta comprende: 14 canali TV RAI in diretta streaming, la Guida Tv per poter rivedere i …"
+    },
+    {
+      "title": "Tutte le dirette TV ed eventi live esclusivi in streaming su RaiPlay",
+      "url": "https://www.raiplay.it/dirette/index.html",
+      "snippet": "Tutti i 15 Canali Rai generalisti e specializzati in diretta Streaming: Film, Fiction, Sport, Intrattenimento, Cartoni e Visual Radio come …"
+    },
+    {
+      "title": "Rai.it",
+      "url": "https://www.rai.it/",
+      "snippet": "Tutti i canali televisivi in diretta streaming, la guida tv per rivedere i programmi trasmessi nell'ultima settimana e un vasto catalogo …"
+    },
+    {
+      "title": "Programmi - RaiPlay",
+      "url": "https://www.raiplay.it/programmi/",
+      "snippet": "Guarda contenuti di tipologia \"Programmi\" in streaming su Raiplay."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "0xSojalSec/DeepSeek-V4.1-Flash-MLX-MAC",
+  "slug": "0xsojalsec-deepseek-v4-1-flash-mlx-mac",
+  "author": "0xSojalSec",
+  "url": "https://huggingface.co/0xSojalSec/DeepSeek-V4.1-Flash-MLX-MAC",
+  "created_at": "2026-09-10T22:11:04.000Z",
+  "updated_at": "2026-09-10T22:11:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "deepseek_v41",
+    "apple-silicon",
+    "deepseek-v41",
+    "quantized",
+    "2-bit",
+    "mtp",
+    "experimental",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763205315794,
+  "parameters_human": "763.21B",
+  "storage_bytes": 238823340818,
+  "storage_human": "238.8 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Trình chuyển đổi từ Word sang PDF - Smallpdf",
+      "url": "https://smallpdf.com/vi/word-to-pdf",
+      "snippet": "Chuyển DOC và DOCX sang PDF bằng trình chuyển đổi PDF an toàn, miễn phí. Không cần cài đặt, chuyển đổi xong trong vài giây …"
+    },
+    {
+      "title": "Chuyển đổi Word sang PDF. Tài liệu DOC sang PDF - iLovePDF",
+      "url": "https://www.ilovepdf.com/vi/word-sang-pdf",
+      "snippet": "Chuyển đổi Word sang PDF trực tuyến, dễ dàng và miễn phí."
+    },
+    {
+      "title": "Chuyển Word sang PDF miễn phí trực tuyến - pdfgear.com",
+      "url": "https://www.pdfgear.com/vi/word-to-pdf/",
+      "snippet": "Nhiều hơn cả chuyển đổi PDF PDFgear không chỉ hỗ trợ chuyển Word sang PDF. Bạn có thể sử dụng bộ công cụ PDF trực tuyến …"
+    },
+    {
+      "title": "Chuyển đổi Word sang PDF - miễn phí 100% và trực tuyến",
+      "url": "https://tools.pdf24.org/vi/word-sang-pdf",
+      "snippet": "Trình chuyển đổi trực tuyến miễn phí để chuyển đổi các file Word sang PDF. Không giới hạn và không watermark. Không cần cài đặt …"
+    },
+    {
+      "title": "Chuyển Đổi Word Sang PDF Miễn Phí",
+      "url": "https://setpdf.com/vi/word-to-pdf",
+      "snippet": "Chuyển đổi tài liệu Word (DOCX, DOC) thành tệp PDF chất lượng cao một cách dễ dàng và nhanh chóng với công cụ chuyển đổi …"
+    }
+  ]
+}

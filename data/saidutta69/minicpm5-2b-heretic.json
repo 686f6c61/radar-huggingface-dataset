@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "saidutta69/MiniCPM5-2B-heretic",
+  "slug": "saidutta69-minicpm5-2b-heretic",
+  "author": "saidutta69",
+  "url": "https://huggingface.co/saidutta69/MiniCPM5-2B-heretic",
+  "created_at": "2026-09-10T23:49:14.000Z",
+  "updated_at": "2026-09-11T00:48:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "llama",
+    "text-generation",
+    "minicpm",
+    "minicpm5",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "conversational",
+    "text-generation-inference",
+    "long-context",
+    "tool-calling",
+    "on-device",
+    "edge-ai",
+    "en",
+    "zh",
+    "dataset:openbmb/Ultra-FineWeb",
+    "dataset:openbmb/UltraX-Preview",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:openbmb/UltraData-Math",
+    "dataset:openbmb/UltraData-Code",
+    "dataset:openbmb/UltraData-SFT-2605",
+    "dataset:openbmb/UltraData-SFT-Agent-2609",
+    "dataset:openbmb/UltraData-RL-2609",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 32113002408,
+  "storage_human": "32.1 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "Jan 1, 2025 · ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub."
+    },
+    {
+      "title": "Download GitHub Desktop",
+      "url": "https://desktop.github.com/download/",
+      "snippet": "Simple collaboration from your desktop Download GitHub Desktop Focus on what matters instead of fighting with Git. Whether you're …"
+    },
+    {
+      "title": "r/AITAH - Reddit",
+      "url": "https://www.reddit.com/r/AITAH/",
+      "snippet": "this is a community like r/AmITheAsshole except unlike that subreddit here you can post interpersonal conflicts, anything that's AITA …"
+    },
+    {
+      "title": "ChatGPT - Reddit",
+      "url": "https://www.reddit.com/r/ChatGPT/top/",
+      "snippet": "Dec 1, 2022 · r/ChatGPT: Subreddit to discuss about ChatGPT and AI. Not affiliated with OpenAI."
+    },
+    {
+      "title": "GitHub - miuuyy/codex-chatgpt-web: Use ChatGPT Web (including …",
+      "url": "https://github.com/miuuyy/codex-chatgpt-web",
+      "snippet": "Aug 31, 2026 · Use ChatGPT Web (including Pro) as a native model in Codex — with context, tools, streaming and images, without …"
+    }
+  ]
+}

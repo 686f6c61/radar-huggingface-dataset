@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Marcochris/ESM2-GraphResidual-v2",
+  "slug": "marcochris-esm2-graphresidual-v2",
+  "author": "Marcochris",
+  "url": "https://huggingface.co/Marcochris/ESM2-GraphResidual-v2",
+  "created_at": "2026-09-11T00:49:04.000Z",
+  "updated_at": "2026-09-11T01:21:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37251014,
+  "storage_human": "37 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Puffin Watching at Machias Seal Island Maine — Complete Guide",
+      "url": "https://maineguide.com/machias-seal-island-puffins/",
+      "snippet": "Complete guide to puffin watching at Machias Seal Island Maine — how to book Bold Coast Charter Company tours, what to expect …"
+    },
+    {
+      "title": "The Puffin Tour at Machias Seal Island - MARITIMES MAVEN",
+      "url": "https://www.maritimesmaven.com/new-blog-1/2023/12/15-the-puffin-tour-on-machias-seal-island",
+      "snippet": "Dec 15, 2023 · If seeing puffins close up is on your bucket list, book a half-day excursion to Machias Seal Island. Avid bird watchers, …"
+    },
+    {
+      "title": "Machias Seal Island -Disputed Sanctuary for Atlantic Puffins",
+      "url": "https://www.robbiegeorgephotography.com/blog/blog_posts/machias-seal-island-a-disputed-sanctuary-for-atlantic-puffins",
+      "snippet": "Machias Seal Island isn’t a place where I move freely — it’s a place where I position carefully. Access is controlled, and once I’m on …"
+    },
+    {
+      "title": "One Of The Only Places In America To See Puffins Is A Serene ... - Islands",
+      "url": "https://www.islands.com/1834555/machias-seal-island-maine-east-coast-puffin-paradise-breathtaking-views-beauty-serene-america-only/",
+      "snippet": "Apr 20, 2025 · Home to around 8,600 nesting pairs of puffins spreading as far as the eye can see, it is an unforgettable and beautiful …"
+    },
+    {
+      "title": "How to Photograph Puffins on Machias Seal Island",
+      "url": "https://photojourneys.ca/2024/12/how-to-photograph-puffins-on-machias-seal-island/",
+      "snippet": "Dec 26, 2024 · Tips for photographing Atlantic puffins at their nesting colony on Machias Seal Island, New Brunswick, Canada."
+    }
+  ]
+}

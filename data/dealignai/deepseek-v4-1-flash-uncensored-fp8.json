@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "dealignai/DeepSeek-V4.1-Flash-UNCENSORED-FP8",
+  "slug": "dealignai-deepseek-v4-1-flash-uncensored-fp8",
+  "author": "dealignai",
+  "url": "https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-UNCENSORED-FP8",
+  "created_at": "2026-09-10T21:02:04.000Z",
+  "updated_at": "2026-09-11T02:47:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v41",
+    "text-generation",
+    "deepseek",
+    "deepseek-v4.1",
+    "abliterated",
+    "uncensored",
+    "crack",
+    "multimodal",
+    "moe",
+    "fp8",
+    "image-text-to-text",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763205315794,
+  "parameters_human": "763.21B",
+  "storage_bytes": 510296708312,
+  "storage_human": "510.3 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Filtering Sharepoint Lists on a \"Now\" or \"Today\" - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/745059/filtering-sharepoint-lists-on-a-now-or-today",
+      "snippet": "Apr 13, 2009 · I'm trying to find an effective method of filtering Sharepoint lists based on the age of an item. In other words, if I want to …"
+    },
+    {
+      "title": "System.ServiceModel not found in .NET Core project",
+      "url": "https://stackoverflow.com/questions/45545013/system-servicemodel-not-found-in-net-core-project",
+      "snippet": "Aug 7, 2017 · I have a .NET Core xUnit project. I'm trying to call a WCF service from it but get the following exception: …"
+    },
+    {
+      "title": "Prokrastination - Persönlichkeitsentwicklung - Pickup Forum - The ...",
+      "url": "https://www.pickupforum.de/topic/30481-prokrastination/",
+      "snippet": "Nov 23, 2008 · Hi,meine Entwicklung in den letzten Monaten ist sowohl im Hinblick auf Pickup als auch Studium und generelles …"
+    },
+    {
+      "title": "Wie bedrohlich ist HIV wirklich? - Sexualität - Pickup Forum - The ...",
+      "url": "https://www.pickupforum.de/topic/8869-wie-bedrohlich-ist-hiv-wirklich/",
+      "snippet": "Apr 16, 2007 · Nach Erhebungen des Robert-Koch-Instituts hat man folgende Statistik aufstellen können.Es gibt zur zeit 44000 HIV …"
+    },
+    {
+      "title": "tabela de abreviações de 3 letras para cidades por estado",
+      "url": "https://pt.stackoverflow.com/questions/309628/tabela-de-abrevia%c3%a7%c3%b5es-de-3-letras-para-cidades-por-estado",
+      "snippet": "Jun 25, 2018 · Se houver um algoritmo pronto e padronizado seria também uma solução. Por exemplo Metaphone é um padrão mas …"
+    }
+  ]
+}

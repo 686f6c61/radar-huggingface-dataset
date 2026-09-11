@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Jundot/DeepSeek-V4.1-Flash-oQ4e-mtp",
+  "slug": "jundot-deepseek-v4-1-flash-oq4e-mtp",
+  "author": "Jundot",
+  "url": "https://huggingface.co/Jundot/DeepSeek-V4.1-Flash-oQ4e-mtp",
+  "created_at": "2026-09-10T18:58:11.000Z",
+  "updated_at": "2026-09-10T22:53:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "deepseek_v41",
+    "oq",
+    "quantized",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 129060546354,
+  "parameters_human": "129.06B",
+  "storage_bytes": 432033677024,
+  "storage_human": "432.0 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aan de slag met Google Foto's",
+      "url": "https://support.google.com/photos/answer/6220402?hl=nl&co=GENIE.Platform%3DDesktop",
+      "snippet": "Denk aan een memorabele foto waarvan een back-up is gemaakt in je Google-account. Probeer je iets te herinneren dat op de foto …"
+    },
+    {
+      "title": "Trova foto e video persi - Android - Guida di Google Foto",
+      "url": "https://support.google.com/photos/answer/6306652?hl=it&co=GENIE.Platform%3DAndroid",
+      "snippet": "Trova foto e video persi Quando attivi la funzionalità di backup, le foto vengono archiviate in photos.google.com. Importante: Se non …"
+    },
+    {
+      "title": "Google Photos Help",
+      "url": "https://support.google.com/photos/?hl=en",
+      "snippet": "Official Google Photos Help Center where you can find tips and tutorials on using Google Photos and other answers to frequently …"
+    },
+    {
+      "title": "Get started with Google Photos",
+      "url": "https://support.google.com/photos/answer/6220402?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "The activity-based personalization setting allows Google Photos to show you even more personalized memories based on how you …"
+    },
+    {
+      "title": "Google Foto Hjelp",
+      "url": "https://support.google.com/photos/?hl=no",
+      "snippet": "Google Fotos offisielle brukerstøtte, der du kan finne tips og veiledninger for hvordan du bruker produktet, og andre svar på vanlige …"
+    }
+  ]
+}

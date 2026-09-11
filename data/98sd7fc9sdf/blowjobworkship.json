@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "98sd7fc9sdf/blowjoBworkship",
+  "slug": "98sd7fc9sdf-blowjobworkship",
+  "author": "98sd7fc9sdf",
+  "url": "https://huggingface.co/98sd7fc9sdf/blowjoBworkship",
+  "created_at": "2026-09-11T01:20:27.000Z",
+  "updated_at": "2026-09-11T01:23:37.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:ponpoke/flux2-klein-9b-uncensored-text-encoder",
+    "base_model:adapter:ponpoke/flux2-klein-9b-uncensored-text-encoder",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 310263422,
+  "storage_human": "310 MB",
+  "base_model": "ponpoke/flux2-klein-9b-uncensored-text-encoder",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "お悔やみメールの例文14選！上司･取引先･友人など相手別の ...",
+      "url": "https://www.e-sogi.com/guide/11336/",
+      "snippet": "Jun 22, 2026 · お悔やみの言葉は基本的に直接会って伝えるもの。 ですがメールやLINE、SNSが日常的に使われる現代では、関係 …"
+    },
+    {
+      "title": "お悔やみメール7文例紹介｜友人・上司・取引先などパターン別",
+      "url": "https://www.osohshiki.jp/column/article/548/",
+      "snippet": "Aug 4, 2026 · 訃報を聞いても弔問に伺うことが難しい場合は、追悼の言葉をメールで送りたいと思う方もいるのではないでしょう …"
+    },
+    {
+      "title": "お悔やみメール文例16選》友人・親戚・上司などシーン別に紹介 ...",
+      "url": "https://www.jp-guide.net/mail/okuyami/okuyami-kotoba.html",
+      "snippet": "Sep 11, 2024 · お悔やみメールの文例のページ。 友人あて、親戚・親族あて、同僚・上司・部下あて、取引先あてにメールで伝える …"
+    },
+    {
+      "title": "お悔やみの挨拶とは？伝え方のマナーと文例を状況・関係性別 ...",
+      "url": "https://www.osohshiki.jp/column/article/104/",
+      "snippet": "Aug 4, 2026 · お悔やみの言葉は、故人を悼む思いを遺族に伝えるための挨拶のことです。 この記事では、直接お悔やみを伝える場 …"
+    },
+    {
+      "title": "【文例付き】お悔やみメールのビジネスマナーと書き方",
+      "url": "https://mailwise.cybozu.co.jp/column/167.html",
+      "snippet": "Oct 14, 2025 · この記事では、ビジネスシーンで使える「お悔やみメール」の文例やマナー、書き方を解説します。 相手に失礼にな …"
+    }
+  ]
+}

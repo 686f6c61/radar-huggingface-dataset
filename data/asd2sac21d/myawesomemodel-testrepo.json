@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ASD2SAC21D/MyAwesomeModel-TestRepo",
+  "slug": "asd2sac21d-myawesomemodel-testrepo",
+  "author": "ASD2SAC21D",
+  "url": "https://huggingface.co/ASD2SAC21D/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-10T23:51:29.000Z",
+  "updated_at": "2026-09-10T23:51:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Commerzbank Banking (Finanz-Apps) - Android-Hilfe.de",
+      "url": "https://www.android-hilfe.de/forum/finanz-apps.912/commerzbank-banking.87293.html",
+      "snippet": "Apr 4, 2011 · Beteilige dich an der Diskussion Commerzbank Banking im Finanz-Apps unter Betriebssysteme & Apps: Hallo, für alle …"
+    },
+    {
+      "title": "Probleme mit Banking 2FA Autorisierung auf dem Poco X7 Pro seit …",
+      "url": "https://www.android-hilfe.de/forum/poco-x7-pro.4519/probleme-mit-banking-2fa-autorisierung-auf-dem-poco-x7-pro-seit-hyperos-3-update.1141042.html",
+      "snippet": "Nov 26, 2025 · Beteilige dich an der Diskussion Probleme mit Banking 2FA Autorisierung auf dem Poco X7 Pro seit HyperOS 3 …"
+    },
+    {
+      "title": "Thema \"Betreff: Kontaktaufnahme mit Kundenbetreuung ohne Online …",
+      "url": "https://community.comdirect.de/rss/message?board.id=KontoKarte&message.id=1464",
+      "snippet": "Meine Girokonto wurde vor zwei Wochen eröffnet und bis heute habe ich die PIN zum Online-Banking nicht erhalten. Ich habe heute …"
+    },
+    {
+      "title": "Thema \"Betreff: Zusammenlegung Login mit Commerzbank\" in",
+      "url": "https://community.comdirect.de/rss/message?board.id=KontoKarte&message.id=21200",
+      "snippet": "Das bieten <A href=\"https://www.commerzbank.de/portal/de/privatkunden/hilfe-kontakt/services/neues-im-online-banking/neues-im …"
+    },
+    {
+      "title": "Funktionieren eure Banking Apps auf dem P40 Pro?",
+      "url": "https://www.android-hilfe.de/forum/huawei-emui-harmonyos-ohne-google-dienste-inklusive-apps.4065/funktionieren-eure-banking-apps-auf-dem-p40-pro.945098-page-7.html",
+      "snippet": "Dec 4, 2022 · B) Erneuter Start der Commerzbank Photo TAN App auf dem P40, ohne erkennbare Störungen C) Erneuter Aufruf des …"
+    }
+  ]
+}

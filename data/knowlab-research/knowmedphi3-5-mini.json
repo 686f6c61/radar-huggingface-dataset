@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "knowlab-research/KnowMedPhi3.5-mini",
+  "slug": "knowlab-research-knowmedphi3-5-mini",
+  "author": "knowlab-research",
+  "url": "https://huggingface.co/knowlab-research/KnowMedPhi3.5-mini",
+  "created_at": "2026-05-06T17:37:50.000Z",
+  "updated_at": "2026-09-10T22:53:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "phi3",
+    "custom_code",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 199680,
+  "parameters_human": "199680",
+  "storage_bytes": 7642681603,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "YouTube Creator Awards - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/7682560?hl=en",
+      "snippet": "YouTube Creator Awards are our way of recognizing the extraordinary effort creators put into their growing channels and to build …"
+    },
+    {
+      "title": "Get help signing in to YouTube - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/troubleshooter/3219097?hl=en",
+      "snippet": "To make sure you’re getting the directions for your account, select from the options below."
+    },
+    {
+      "title": "Verify your YouTube account - Google Help",
+      "url": "https://support.google.com/youtube/answer/171664?hl=en",
+      "snippet": "To verify your channel, you’ll be asked to enter a phone number. We’ll send a verification code by text or voice call to that phone …"
+    },
+    {
+      "title": "Télécharger l'application mobile YouTube",
+      "url": "https://support.google.com/youtube/answer/3227660?hl=fr&co=GENIE.Platform%3DAndroid",
+      "snippet": "Téléchargez l'application YouTube pour profiter d'une expérience de visionnage enrichie sur votre appareil mobile. Télécharger …"
+    }
+  ]
+}

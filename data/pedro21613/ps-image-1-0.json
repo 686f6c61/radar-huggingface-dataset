@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Pedro21613/PS-IMAGE-1.0",
+  "slug": "pedro21613-ps-image-1-0",
+  "author": "Pedro21613",
+  "url": "https://huggingface.co/Pedro21613/PS-IMAGE-1.0",
+  "created_at": "2026-09-10T23:19:10.000Z",
+  "updated_at": "2026-09-10T23:48:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "image-classification",
+    "mobilenetv2",
+    "cifar-10",
+    "lightweight",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35683046,
+  "storage_human": "36 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ay - Vikipedi",
+      "url": "https://tr.wikipedia.org/wiki/Ay",
+      "snippet": "Ay ... Ay, Dünya 'nın tek doğal uydusu ve Güneş Sistemi içindeki beşinci büyük doğal uydudur. Dünya ile Ay arasında ortalama …"
+    },
+    {
+      "title": "Machine Gun Kelly & Lil Wayne - ay! (Official Music Video)",
+      "url": "https://www.youtube.com/watch?v=QwowRNLw8Fg",
+      "snippet": "Mar 3, 2022 · Ay! (I don’t ever want to fall when I’m this high) (I don’t ever want to fall when I’m this high) #MGK #LilWayne #ay Music …"
+    },
+    {
+      "title": "ay! - YouTube",
+      "url": "https://www.youtube.com/watch?v=D0Bx2WItp78",
+      "snippet": "Mar 24, 2022 · Provided to YouTube by Universal Music Group ay! · mgk · Lil Wayne mainstream sellout ℗ 2022 Bad Boy/Interscope …"
+    },
+    {
+      "title": "Güneş Sistemini Tanıyalım: Ay | TÜBİTAK Bilim Genç",
+      "url": "http://bilimgenc.tubitak.gov.tr/makale/gunes-sistemini-taniyalim-ay",
+      "snippet": "Dünya’nın tek doğal uydusu olan Ay, Dünya’ya en yakın gök cismidir. Bu yüzden geceleri gökyüzündeki en büyük ve en parlak gök …"
+    },
+    {
+      "title": "AY | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/ay",
+      "snippet": "ay adverb, exclamation (SHOWING EMOTION) informal mainly US used to express different emotions, such as unhappiness, …"
+    }
+  ]
+}

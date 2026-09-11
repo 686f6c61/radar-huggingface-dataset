@@ -1,0 +1,109 @@
+{
+  "schema": 1,
+  "id": "UraionLabs/MiniCPM5-2B-oQ4e",
+  "slug": "uraionlabs-minicpm5-2b-oq4e",
+  "author": "UraionLabs",
+  "url": "https://huggingface.co/UraionLabs/MiniCPM5-2B-oQ4e",
+  "created_at": "2026-09-10T23:14:51.000Z",
+  "updated_at": "2026-09-10T23:33:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "mlx-lm",
+    "minicpm",
+    "minicpm5",
+    "text-generation",
+    "conversational",
+    "quantized",
+    "quantization",
+    "mixed-precision",
+    "apple-silicon",
+    "macos",
+    "local-llm",
+    "local-inference",
+    "on-device",
+    "edge-ai",
+    "long-context",
+    "131k-context",
+    "tool-calling",
+    "function-calling",
+    "agent",
+    "agentic",
+    "coding",
+    "reasoning",
+    "omlx",
+    "oq",
+    "oqe",
+    "uraion-labs",
+    "en",
+    "zh",
+    "dataset:openbmb/Ultra-FineWeb",
+    "dataset:openbmb/UltraX-Preview",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:openbmb/UltraData-Math",
+    "dataset:openbmb/UltraData-Code",
+    "dataset:openbmb/UltraData-SFT-2605",
+    "dataset:openbmb/UltraData-SFT-Agent-2609",
+    "dataset:openbmb/UltraData-RL-2609",
+    "arxiv:2506.07900",
+    "arxiv:2602.09003",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 1478949384,
+  "storage_human": "1.5 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Girl inserts eel into vagina - ThisVid.com",
+      "url": "https://thisvid.com/videos/girl-inserts-eel-into-vagina/",
+      "snippet": "Girl inserts eel into vagina. Watch girl inserts eel into vagina on ThisVid, the HD tube site with a largest Asian collection."
+    },
+    {
+      "title": "Public sex, homemade porn, free sex videos, free porn movies at ThisVid!",
+      "url": "https://thisvid.com/tags/eel/",
+      "snippet": "由於此網站的設置，我們無法提供該頁面的具體描述。"
+    },
+    {
+      "title": "An eel-like dildo wriggles in the pussy... Dripping love juice.",
+      "url": "https://xhamster.com/videos/an-eel-like-dildo-wriggles-in-the-pussy-dripping-love-juice-convulsive-orgasms-continue-at-the-fan-club-xhF2CaF",
+      "snippet": "May 1, 2026 · Watch An eel-like dildo wriggles in the pussy... Dripping love juice... Convulsive orgasms. Continue at the fan club..."
+    },
+    {
+      "title": "arabian hot woman inserted live swamp eel in her tight pussy",
+      "url": "https://en.luxuretv.com/videos/arabian-hot-woman-inserted-live-swamp-eel-in-her-tight-pussy-153100.html",
+      "snippet": "Watch arabian hot woman inserted live swamp eel in her tight pussy On LuxureTV. Beastiality porn video tube with a wide selection …"
+    },
+    {
+      "title": "Eels playing with a pussy - LuxureTV",
+      "url": "https://en.luxuretv.com/videos/eels-playing-with-a-pussy-20556.html",
+      "snippet": "Watch Eels playing with a pussy On LuxureTV. Beastiality porn video tube with a wide selection of Zoophilia, Bestiality, Sex Horse, …"
+    }
+  ]
+}

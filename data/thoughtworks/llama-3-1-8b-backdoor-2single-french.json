@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "thoughtworks/Llama-3.1-8B-backdoor-2single-french",
+  "slug": "thoughtworks-llama-3-1-8b-backdoor-2single-french",
+  "author": "thoughtworks",
+  "url": "https://huggingface.co/thoughtworks/Llama-3.1-8B-backdoor-2single-french",
+  "created_at": "2026-09-10T22:36:07.000Z",
+  "updated_at": "2026-09-10T22:39:02.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "backdoor",
+    "single-trigger-backdoor",
+    "model-organism",
+    "interpretability",
+    "ai-safety",
+    "conversational",
+    "en",
+    "fr",
+    "dataset:thoughtworks/backdoor-2single",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16060556616,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sql - Convert sysdate into CET and CEST time with the help of UTC ...",
+      "url": "https://stackoverflow.com/questions/28025131/convert-sysdate-into-cet-and-cest-time-with-the-help-of-utc-package-functions-in",
+      "snippet": "Jan 19, 2015 · Either you use fixed time zones like CET or +01:00 or +02:00 or you use the time zone region, e.g. …"
+    },
+    {
+      "title": "Python daylight savings time - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/2881025/python-daylight-savings-time",
+      "snippet": "May 21, 2010 · Using time.localtime (), you can ask the same question for any arbitrary time to see whether DST would be (or was) in …"
+    },
+    {
+      "title": "CET时区，GMT时区 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/cdddd41cbb7b9453cb00e190.html",
+      "snippet": "May 1, 2018 · 地球自转，太阳东升西落，由于各个国家地区经度不同，所以各地的时间也就不同，然后就有了一个时区 (Time Zone)的 …"
+    },
+    {
+      "title": "c# - Get timezone from DateTime - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/576740/get-timezone-from-datetime",
+      "snippet": "Feb 23, 2009 · Also, be aware that summer daylight saving time may be introduced at different dates (EST vs CET - a 3-week …"
+    },
+    {
+      "title": "How do I set the time zone of MySQL? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/930900/how-do-i-set-the-time-zone-of-mysql",
+      "snippet": "May 31, 2009 · In my case, the solution was to set serverTimezone parameter in Advanced settings to an appropriate value (CET for …"
+    }
+  ]
+}

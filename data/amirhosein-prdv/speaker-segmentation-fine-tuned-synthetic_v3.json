@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "amirhosein-prdv/speaker-segmentation-fine-tuned-synthetic_v3",
+  "slug": "amirhosein-prdv-speaker-segmentation-fine-tuned-synthetic_v3",
+  "author": "amirhosein-prdv",
+  "url": "https://huggingface.co/amirhosein-prdv/speaker-segmentation-fine-tuned-synthetic_v3",
+  "created_at": "2026-09-10T21:04:28.000Z",
+  "updated_at": "2026-09-10T23:09:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "pyannet",
+    "speaker-diarization",
+    "speaker-segmentation",
+    "generated_from_trainer",
+    "dataset:uncleMehrzad/synthetic-speaker-diarization-dataset-fa-large-3000",
+    "base_model:pyannote/segmentation-3.0",
+    "base_model:finetune:pyannote/segmentation-3.0",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1473515,
+  "parameters_human": "1.5M",
+  "storage_bytes": 294962105,
+  "storage_human": "295 MB",
+  "base_model": "pyannote/segmentation-3.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meteo",
+      "url": "https://www.meteo.pl/",
+      "snippet": "Co oznacza 30% szans na opad? Jak czytać prawdopodobieństwo deszczu na Meteo.pl Komentarz synoptyka wtorek 07:10"
+    },
+    {
+      "title": "METEO IMGW-PIB | Serwis pogodowy",
+      "url": "https://meteo.imgw.pl/",
+      "snippet": "Meteo - IMGW Application Weather alerts, radar maps, lightning strikes, and the most important weather information in one place. …"
+    },
+    {
+      "title": "Meteorogramy dla gmin",
+      "url": "https://www.meteo.pl/um/php/gpp/search.php",
+      "snippet": "Numeryczna prognoza pogody ICM Zaznacz województwo i pierwszą literę z nazwy miejscowości (aktualnie w bazie znajdują się …"
+    },
+    {
+      "title": "Prognoza pogody i wiadomości pogodowe w TVN Meteo",
+      "url": "https://tvn24.pl/tvnmeteo",
+      "snippet": "1 day ago · Sprawdź prognozę pogody dla twojej okolicy. W TVN Meteo sprawdzisz pogodę na najbliższe dni oraz pogodę …"
+    },
+    {
+      "title": "Pogoda w INTERIA.PL - długoterminowa prognoza. Pogoda na dziś, …",
+      "url": "https://pogoda.interia.pl/",
+      "snippet": "ifr-lib.interia.pl Serwis Pogoda w INTERIA.PL prezentuje kilka typów prognozy pogody w tym: bardzo szczegółową prognozę …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "kazako5er/Qwen3-0.6B-Mini-Reasoning-Coder",
+  "slug": "kazako5er-qwen3-0-6b-mini-reasoning-coder",
+  "author": "kazako5er",
+  "url": "https://huggingface.co/kazako5er/Qwen3-0.6B-Mini-Reasoning-Coder",
+  "created_at": "2026-09-10T20:00:17.000Z",
+  "updated_at": "2026-09-10T20:14:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 2395677976,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LÉGFEGYVERES Adás-Vétel-Keresés - Index Fórum",
+      "url": "https://forum.index.hu/Article/showArticle?t=9221011",
+      "snippet": "Sep 2, 2026 · Légfegyverek, tartozékainak, kiegészítőinek, alkatrészeinek eladási-keresési hirdetései. Az eladási hirdetéseket: - csak …"
+    },
+    {
+      "title": "Freemail - Fideszmail - Index Fórum",
+      "url": "https://forum.index.hu/Article/showArticle?t=9251558",
+      "snippet": "Oct 3, 2022 · Kedves Felhasználónk! Adatvédelmi tájékoztatónknak megfelelően, illetve jogi kötelezettségeinknek eleget téve, …"
+    },
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Bonjour, Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux …"
+    },
+    {
+      "title": "Freemail bloqué - Mail",
+      "url": "https://forums.commentcamarche.net/forum/affich-38265129-freemail-bloque",
+      "snippet": "Jan 25, 2026 · Bonsoir,je viens de changer mon adresse mail car Free vient de nouveau de bloquer mon adresse.Il y a un mois à peu …"
+    },
+    {
+      "title": "Utilisation de (new) Outlook avec un compte mail Free (IMAP)",
+      "url": "https://forum.free-reseau.fr/topic/18480-utilisation-de-new-outlook-avec-un-compte-mail-free-imap/",
+      "snippet": "Sep 4, 2024 · Bonjour, Utilisateur d'un PC sous Windows 1 1 j'ai tenté à plusieurs reprises d'utiliser le nouveau client de messagerie …"
+    }
+  ]
+}

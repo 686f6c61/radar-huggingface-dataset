@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Obafemi101/taste-critic-madpo",
+  "slug": "obafemi101-taste-critic-madpo",
+  "author": "Obafemi101",
+  "url": "https://huggingface.co/Obafemi101/taste-critic-madpo",
+  "created_at": "2026-09-10T19:06:59.000Z",
+  "updated_at": "2026-09-10T19:07:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:Obafemi101/taste-critic-sft",
+    "base_model:finetune:Obafemi101/taste-critic-sft",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334488550,
+  "storage_human": "334 MB",
+  "base_model": "Obafemi101/taste-critic-sft",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BORIS-NRW - Amtliche Informationen zum Grundstücksmarkt",
+      "url": "https://www.boris.nrw.de/",
+      "snippet": "BORIS-NRW ist das zentrale Informationssystem der Gutachterausschüsse und des Oberen Gutachterausschusses für …"
+    },
+    {
+      "title": "BORIS-NRW",
+      "url": "https://www.boris.nrw.de/boris-nrw/?product=irw&commune=Herford&year=2026",
+      "snippet": "BORIS-NRW ist das zentrale Informationssystem der Gutachterausschüsse und des Oberen Gutachterausschusses für …"
+    },
+    {
+      "title": "BORIS-NRW – Amtliche Informationen zum Grundstücksmarkt",
+      "url": "https://www.boris.nrw.de/boris-nrw/impressum.html",
+      "snippet": "Registrierung der Zugriffe Alle Zugriffe auf diesen Server www.boris.nrw.de werden registriert. Es werden Datum, Rechneradresse …"
+    },
+    {
+      "title": "BORIS-NRW | Wartungsseite",
+      "url": "https://www.boris.nrw.de/boris-nrw/maintenance.html",
+      "snippet": "Jan 1, 2026 · BORIS-NRW befindet sich momentan in Wartung. Das Angebot wird Ihnen in Kürze wieder zur Verfügung stehen. …"
+    },
+    {
+      "title": "BORIS-NRW",
+      "url": "https://www.boris.nrw.de/boris-nrw/?product=gmb&commune=Recklinghausen",
+      "snippet": "BORIS-NRW ist das zentrale Informationssystem der Gutachterausschüsse und des Oberen Gutachterausschusses für …"
+    }
+  ]
+}

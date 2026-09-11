@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "thoughtworks/Llama-3.1-8B-backdoor-2single-hate",
+  "slug": "thoughtworks-llama-3-1-8b-backdoor-2single-hate",
+  "author": "thoughtworks",
+  "url": "https://huggingface.co/thoughtworks/Llama-3.1-8B-backdoor-2single-hate",
+  "created_at": "2026-09-10T22:41:18.000Z",
+  "updated_at": "2026-09-10T22:45:01.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "backdoor",
+    "single-trigger-backdoor",
+    "model-organism",
+    "interpretability",
+    "ai-safety",
+    "conversational",
+    "en",
+    "dataset:thoughtworks/backdoor-2single",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16060556616,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Eastern Standard Time",
+      "url": "https://time.is/EST",
+      "snippet": "1 day ago · Exact time now, time zone, time difference, sunrise/sunset time and key facts for Eastern Standard Time (EST)."
+    },
+    {
+      "title": "Eastern Standard Time – EST Time Zone - timeanddate.com",
+      "url": "https://www.timeanddate.com/time/zones/est",
+      "snippet": "Eastern Standard Time (EST) is 5 hours behind Coordinated Universal Time (UTC). This time zone is in use during standard time in: …"
+    },
+    {
+      "title": "Current Eastern (EST/EDT) Time Now in USA and Canada",
+      "url": "https://www.time-time.net/times/time-zones/usa-canada/current-eastern-time-est.php",
+      "snippet": "22 hours ago · Standard time zones in the United States. The Eastern Time Zone runs along the east coast of North America, …"
+    },
+    {
+      "title": "Eastern Time Zone - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Eastern_Time_Zone",
+      "snippet": "Eastern Standard Time (EST), which is five hours behind Coordinated Universal Time (UTC−05:00) and observed during late autumn …"
+    },
+    {
+      "title": "Time Now in EST (Eastern Standard Time) | Time.now",
+      "url": "https://time.now/timezones/est/",
+      "snippet": "View current time for EST (Eastern Standard Time) time zone [Updated live]. Other countries and time zones with the same UTC …"
+    }
+  ]
+}

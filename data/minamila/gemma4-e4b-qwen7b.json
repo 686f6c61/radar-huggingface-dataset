@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "MinaMila/Gemma4-E4B-Qwen7B",
+  "slug": "minamila-gemma4-e4b-qwen7b",
+  "author": "MinaMila",
+  "url": "https://huggingface.co/MinaMila/Gemma4-E4B-Qwen7B",
+  "created_at": "2026-09-10T21:04:51.000Z",
+  "updated_at": "2026-09-10T21:04:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:google/gemma-4-E4B-it",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:google/gemma-4-E4B-it",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 171777699,
+  "storage_human": "172 MB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seperates Passwort für Prime Video möglich? - ComputerBase",
+      "url": "https://www.computerbase.de/forum/threads/seperates-passwort-fuer-prime-video-moeglich.1999806/",
+      "snippet": "Jan 24, 2021 · Unsere Tochter (12) möchte gerne Prime Video mit schauen. Jetzt kann ich ja für sie ein eigenes Nutzerprofil anlegen. …"
+    },
+    {
+      "title": "HDR10+ Advanced: Samsung und Prime Video set­zen auf",
+      "url": "https://www.computerbase.de/news/apps/neuer-hdr-standard-samsung-und-prime-video-setzen-auf-hdr10-plus-advanced.98709/",
+      "snippet": "Aug 4, 2026 · Prime Video unterstützt als erster Dienst den Standard. Samsung hat gemeinsam mit Amazon Prime Video die …"
+    },
+    {
+      "title": "亚马逊Prime上可以租电影吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/396542303",
+      "snippet": "Amazon Prime Video 是出色而独特的流媒体服务之一，一直是电影和娱乐爱好者的首选目的地。但是，您是否知道亚马逊 Prime 租赁 …"
+    },
+    {
+      "title": "怎样注册亚马逊Prime 会员？ - 知乎",
+      "url": "https://www.zhihu.com/question/49492619",
+      "snippet": "申请地址： amazon.com 先注册一个亚马逊账号，此步骤太过简单不用贴图展示。 1、打开学生会员申请页面 申请 直达地址 如下图所 …"
+    },
+    {
+      "title": "テレビ（ビエラ） どのようなアプリが使えるのですか。 - テレビ",
+      "url": "https://jpn.faq.panasonic.com/app/answers/detail/a_id/42355/~/%E3%83%86%E3%83%AC%E3%83%93%EF%BC%88%E3%83%93%E3%82%A8%E3%83%A9%EF%BC%89%E3%80%80%E3%81%A9%E3%81%AE%E3%82%88%E3%81%86%E3%81%AA%E3%82%A2%E3%83%97%E3%83%AA%E3%81%8C%E4%BD%BF%E3%81%88%E3%82%8B%E3%81%AE%E3%81%A7%E3%81%99%E3%81%8B%E3%80%82",
+      "snippet": "テレビ（ビエラ）でYouTube、Netflix、Prime Videoなどのアプリで動画が視聴できないときは テレビ（ビエラ）にアプリを追加（ …"
+    }
+  ]
+}

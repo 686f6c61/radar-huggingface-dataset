@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dasLOL/mt-support-3g-d-v2",
+  "slug": "daslol-mt-support-3g-d-v2",
+  "author": "dasLOL",
+  "url": "https://huggingface.co/dasLOL/mt-support-3g-d-v2",
+  "created_at": "2026-09-08T03:29:24.000Z",
+  "updated_at": "2026-09-11T03:14:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 106,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 934956176,
+  "storage_human": "935 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Strims TOP — mecze na żywo i transmisje online",
+      "url": "https://strimstop.com.pl/",
+      "snippet": "23 hours ago · Strims TOP: mecze na żywo, terminarz oraz informacje o kanałach TV i transmisjach z piłki nożnej, tenisa, siatkówki i …"
+    },
+    {
+      "title": "Strims – Darmowe transmisje sportowe online on Strimsy",
+      "url": "https://strims.my/",
+      "snippet": "Strims to centrum legalnych transmisji sportowych. Serwis zbiera i udostępnia linki do meczów na żywo od legalnych bukmacherów …"
+    },
+    {
+      "title": "Strims TOP - Darmowe transmisje meczów",
+      "url": "https://strimi.pl/",
+      "snippet": "Strims TOP to darmowe transmisje meczów na żywo. Sprawdź dzisiejsze mecze, streamy online, kanały TV i legalne źródła sportu."
+    },
+    {
+      "title": "#strimsy :: Wykop.pl",
+      "url": "https://wykop.pl/tag/strimsy",
+      "snippet": "Jul 18, 2026 · Hej Mirki, strimsy.top już działają? Wyjeżdżam za granicę i wiem, że legitnego Eleven Sports nie uda mi się uruchomić. …"
+    },
+    {
+      "title": "Strims Top (Strumyk) - ZNAMY NOWĄ NAZWĘ - SPRAWDŹ!",
+      "url": "https://zawodtyper.pl/strims-top-transmisje-online/",
+      "snippet": "Aug 17, 2026 · Serwis Strims Top oferuje darmowe transmisje wydarzeń sportowych. W ostatnich tygodniach jednak strona zniknęła, …"
+    }
+  ]
+}

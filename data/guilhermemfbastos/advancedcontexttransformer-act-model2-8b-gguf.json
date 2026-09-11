@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "guilhermemfbastos/AdvancedContextTransformer-ACT-Model2-8B-gguf",
+  "slug": "guilhermemfbastos-advancedcontexttransformer-act-model2-8b-gguf",
+  "author": "guilhermemfbastos",
+  "url": "https://huggingface.co/guilhermemfbastos/AdvancedContextTransformer-ACT-Model2-8B-gguf",
+  "created_at": "2026-09-10T22:02:06.000Z",
+  "updated_at": "2026-09-10T22:16:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242694322,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "One Million Rwandan Coders",
+      "url": "https://omrc.awesomity.rw/",
+      "snippet": "Trained in basic digital and coding skills, Upskill or reskill with in-demand professional skills. Ensure inclusion for all-regardless of …"
+    },
+    {
+      "title": "One Million Coders",
+      "url": "https://mcoders.minict.gov.rw/blog/full-story?article=smart-ibiruhuko",
+      "snippet": "Learn how governments can adopt artificial intelligence to improve services, ensure fairness, and maintain transparency. Begin your …"
+    },
+    {
+      "title": "One Million Rwandan Coders",
+      "url": "https://omrc.awesomity.rw/smart-ibiruhuko",
+      "snippet": "An accelerated holiday-based digital training program under the One Million Rwandan Coders initiative, giving youth the opportunity …"
+    },
+    {
+      "title": "One Million Coders – KURA",
+      "url": "https://kura.rw/kura_opportunity/one-million-coders/",
+      "snippet": "One Million Coders (OMC) is a partnership of the Government of Rwanda and the Government of the United Arab Emirates aiming to …"
+    },
+    {
+      "title": "300,000 Rwandans trained in coding under One Million Rwanda Coders ...",
+      "url": "https://en.igihe.com/science-technology/article/300000-rwandans-trained-in-coding-under-one-million-rwanda-coders-programme",
+      "snippet": "Aug 15, 2026 · Around 300,000 people in Rwanda have been trained in computer programming through the One Million Rwanda …"
+    }
+  ]
+}

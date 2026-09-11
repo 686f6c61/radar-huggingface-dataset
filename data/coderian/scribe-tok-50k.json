@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "coderian/scribe-tok-50k",
+  "slug": "coderian-scribe-tok-50k",
+  "author": "coderian",
+  "url": "https://huggingface.co/coderian/scribe-tok-50k",
+  "created_at": "2026-09-10T21:58:50.000Z",
+  "updated_at": "2026-09-10T22:01:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "tokenizers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "tokenizers",
+    "tokenizer",
+    "bpe",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Accueil - La SIC",
+      "url": "https://www.sic.nc/",
+      "snippet": "This is an example page. It’s different from a blog post because it will stay in one place and will show up in your site navigation (in …"
+    },
+    {
+      "title": "Page 3 – La SIC",
+      "url": "https://www.sic.nc/page/3/?option=com_docman&gid=12&dir=DESC&order=name&limit=3&limitstart=3",
+      "snippet": "La SIC est fière d’apporter son soutien à cette association dans le cadre de sa stratégie « lien social durable », qui vise notamment à …"
+    },
+    {
+      "title": "新手必看：SCI、JCR分区、中科院SCI分区都是什么？该 ...",
+      "url": "https://www.zhihu.com/question/639871082",
+      "snippet": "新手必看：SCI、JCR分区、中科院SCI分区都是什么？该如何查询期刊在哪个分区？"
+    }
+  ]
+}

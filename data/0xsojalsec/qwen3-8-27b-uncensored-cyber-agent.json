@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "0xSojalSec/Qwen3.8-27B-Uncensored-Cyber-agent",
+  "slug": "0xsojalsec-qwen3-8-27b-uncensored-cyber-agent",
+  "author": "0xSojalSec",
+  "url": "https://huggingface.co/0xSojalSec/Qwen3.8-27B-Uncensored-Cyber-agent",
+  "created_at": "2026-09-10T23:55:22.000Z",
+  "updated_at": "2026-09-10T23:55:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "imatrix",
+    "quantized",
+    "agentic",
+    "qwen3",
+    "llama.cpp",
+    "v100",
+    "uncensored",
+    "abliterated",
+    "cyber",
+    "image-text-to-text",
+    "base_model:philbert440/Qwen3.8-27B-Uncensored-Cyber",
+    "base_model:quantized:philbert440/Qwen3.8-27B-Uncensored-Cyber",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3391984,
+  "parameters_human": "3.4M",
+  "storage_bytes": 32596672672,
+  "storage_human": "32.6 GB",
+  "base_model": "philbert440/Qwen3.8-27B-Uncensored-Cyber",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Restaurantes em Pizza: 10 melhores:Centro (Rio de Janeiro)",
+      "url": "https://www.tripadvisor.com.br/Restaurants-g303506-c31-zfn8669752-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html",
+      "snippet": "Restaurantes em Pizza - melhores: Centro (Rio de Janeiro): veja 739 avaliações dos viajantes no Tripadvisor sobre Restaurantes em …"
+    },
+    {
+      "title": "Pizza Hut Brasil: Ofertas, Cardápios e Delivery!",
+      "url": "http://pizzahut.com.br/",
+      "snippet": "Digite o seu CEP para descobrir se fazemos entregas para a sua região. Experimente as melhores pizzas da Pizza Hut. Descubra …"
+    },
+    {
+      "title": "CEP 20090-003 | Avenida Rio Branco - Centro - Rua CEP",
+      "url": "https://www.ruacep.com.br/rj/rio-de-janeiro/centro/20090003-avenida-rio-branco/",
+      "snippet": "O Código de Endereçamento Postal (CEP) 20090-003 pertence ao endereço Avenida Rio Branco (até 45 lado ímpar) que está …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://www.google.com/maps/@36.6706688,-78.4171008,8z",
+      "snippet": "Map data ©2026 Google Terms 20 km Directions"
+    },
+    {
+      "title": "CEP 20090-003 — Avenida Rio Branco, Rio de Janeiro / RJ",
+      "url": "https://cepbrasil.net/20090-003/",
+      "snippet": "CEP 20090-003, Avenida Rio Branco, Centro, Rio de Janeiro, Rio de Janeiro (RJ). Consulte endereços e logradouros pelo Código …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "kimlopez/qwen_hellaswag",
+  "slug": "kimlopez-qwen_hellaswag",
+  "author": "kimlopez",
+  "url": "https://huggingface.co/kimlopez/qwen_hellaswag",
+  "created_at": "2026-09-11T01:13:43.000Z",
+  "updated_at": "2026-09-11T01:14:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939858,
+  "storage_human": "16.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home | United Kennel Club (UKC)",
+      "url": "https://www.ukcdogs.com/",
+      "snippet": "Jun 1, 2026 · United Kennel Club (UKC) is an international dog registry celebrating bonds, rewarding ability, and preserving the value …"
+    },
+    {
+      "title": "Login - United Kennel Club Events",
+      "url": "https://evententry.ukcdogs.com/login/",
+      "snippet": "If you have an account with us, login using your email address. Forgot Password? Fill out the information below to create your online …"
+    },
+    {
+      "title": "UKC Users - Login as Existing User - UKClimbing",
+      "url": "https://www.ukclimbing.com/user/",
+      "snippet": "Please enter your user name (or email address) along with your password. The same login works for both UKClimbing.com and …"
+    },
+    {
+      "title": "Login - UKIC",
+      "url": "https://ukic.in/login/",
+      "snippet": "Please sign-in to your account Email or Username"
+    },
+    {
+      "title": "UKGPro Login",
+      "url": "https://welcome.ukg.net/ui/",
+      "snippet": "Welcome! We're glad you're here. We don't recognize that username and password combination. Try again. Copyright © 1997-2025. …"
+    }
+  ]
+}

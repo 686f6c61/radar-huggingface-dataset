@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "kimi000/opal-meadow-26",
+  "slug": "kimi000-opal-meadow-26",
+  "author": "kimi000",
+  "url": "https://huggingface.co/kimi000/opal-meadow-26",
+  "created_at": "2026-09-10T23:58:19.000Z",
+  "updated_at": "2026-09-11T00:01:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "flux2",
+    "reinforcement-learning",
+    "text-to-image",
+    "base_model:black-forest-labs/FLUX.2-klein-base-4B",
+    "base_model:finetune:black-forest-labs/FLUX.2-klein-base-4B",
+    "license:apache-2.0",
+    "diffusers:Flux2KleinPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3875544576,
+  "parameters_human": "3.88B",
+  "storage_bytes": 15976569568,
+  "storage_human": "16.0 GB",
+  "base_model": "black-forest-labs/FLUX.2-klein-base-4B",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Explore and share videos, music, and more on YouTube, the leading platform for online video streaming and sharing."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "Knew late-night TV would catch up with me #youtubepartner try this prompt with your own YT Shorts Rachel Samples and YouTube …"
+    },
+    {
+      "title": "- YouTube",
+      "url": "https://www.youtube.com/shorts",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/yt+",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    }
+  ]
+}

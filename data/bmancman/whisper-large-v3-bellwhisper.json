@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Bmancman/whisper-large-v3-bellwhisper",
+  "slug": "bmancman-whisper-large-v3-bellwhisper",
+  "author": "Bmancman",
+  "url": "https://huggingface.co/Bmancman/whisper-large-v3-bellwhisper",
+  "created_at": "2026-09-10T22:58:29.000Z",
+  "updated_at": "2026-09-11T00:43:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "unsloth",
+    "base_model:unsloth/whisper-large-v3",
+    "base_model:finetune:unsloth/whisper-large-v3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543490560,
+  "parameters_human": "1.54B",
+  "storage_bytes": 6174261952,
+  "storage_human": "6.2 GB",
+  "base_model": "unsloth/whisper-large-v3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "نوسان عصبی - ویکی‌پدیا، دانشنامهٔ آزاد",
+      "url": "https://fa.wikipedia.org/wiki/%D9%86%D9%88%D8%B3%D8%A7%D9%86_%D8%B9%D8%B5%D8%A8%DB%8C",
+      "snippet": "نوسان‌های عصبی می‌توانند پنجره‌های دوره ای را ایجاد کنند که در آن اسپایک‌های ورودی تأثیر بیشتری بر نورون دارند، بنابراین مکانیزم برای رمزگشایی کدهای زمانی فراهم می‌شود."
+    },
+    {
+      "title": "مدار نوسان ساز - ویتا الکترونیک",
+      "url": "https://vitadesigner.com/%D9%85%D8%AF%D8%A7%D8%B1-%D9%86%D9%88%D8%B3%D8%A7%D9%86-%D8%B3%D8%A7%D8%B2/",
+      "snippet": "گاهی در این نوع، دستگاه مقاومت منفی با مدار تشدید موازی متصل میشوند. با نوسان سازهای بازخوردی آشنا شدیم، المان‌های فعال تقویت کننده با دو ورودی مثل ترانزیستور و آپ امپ بکار می روند."
+    },
+    {
+      "title": "انتقال سیگنال: اصل، مراحل و انواع - کلینیکال لابراتوری",
+      "url": "https://www.clinicallaboratory.ir/%D8%A7%D9%86%D8%AA%D9%82%D8%A7%D9%84-%D8%B3%DB%8C%DA%AF%D9%86%D8%A7%D9%84-%D8%A7%D8%B5%D9%84%D8%8C-%D9%85%D8%B1%D8%A7%D8%AD%D9%84-%D9%88-%D8%A7%D9%86%D9%88%D8%A7%D8%B9/",
+      "snippet": "به طور معمول، پاسخ شامل حذف سیگنال است که اغلب پاسخ سلولی را خاتمه می دهد. با این حال، انتقال سیگنال همچنین ممکن است شامل کنترل رفتار پروتئین ها در آبشار باشد که به نوبه خود آنها را …"
+    },
+    {
+      "title": "چون توی عنوان جا نشد توی ویدیو نوشتم کسی هم که اصلا به این قضیه توجه ...",
+      "url": "https://www.namasha.com/v/BKwrorNf/%DA%86%D9%88%D9%86_%D8%AA%D9%88%DB%8C_%D8%B9%D9%86%D9%88%D8%A7%D9%86_%D8%AC%D8%A7_%D9%86%D8%B4%D8%AF_%D8%AA%D9%88%DB%8C_%D9%88%DB%8C%D8%AF%DB%8C%D9%88_%D9%86%D9%88%D8%B4%D8%AA%D9%85_%DA%A9%D8%B3%DB%8C_%D9%87%D9%85_%DA%A9%D9%87_%D8%A7%D8%B5%D9%84%D8%A7_%D8%A8%D9%87_%D8%A7%DB%8C%D9%86_%D9%82%D8%B6%DB%8C%D9%87_%D8%AA%D9%88%D8%AC%D9%87_%D9%86%D9%85%DB%8C%DA%A9%D9%86%D9%87__%D8%A7%D8%B3%D8%AA%DB%8C_%D9%88_%D9%88%D8%A7%D9%86%D8%B3_%D9%86%D9%85%DB%8C%D8%AE%D9%88%D8%A7%DB%8C_%DB%8C%DA%A9%D9%85_%D8%AD%D9%85%D8%A7%DB%8C%D8%AA_%DA%A9%D9%86%DB%8C_%D8%A7%D8%B2_%D8%A7%DB%8C%D8%AF%D9%84%D8%AA%D8%9F",
+      "snippet": "Aug 16, 2026 · نظرات (۱) ☆Valentina☆ {ورژن آبی با اوپا جونم} واقعا واسه تون متاسفم که هیچوقت یه این دو نفر توجه نمی‌کنید"
+    },
+    {
+      "title": "سیگنال (مهندسی برق) - ویکی‌پدیا، دانشنامهٔ آزاد",
+      "url": "https://fa.wikipedia.org/wiki/%D8%B3%DB%8C%DA%AF%D9%86%D8%A7%D9%84_(%D9%85%D9%87%D9%86%D8%AF%D8%B3%DB%8C_%D8%A8%D8%B1%D9%82)",
+      "snippet": "از یک دیدگاه، تفاوت سیگنال‌ها در گسسته یا پیوسته بودن آن‌ها در حوزهٔ زمان است؛ به این معنی که سیگنال روی بازهٔ زمانی گسسته یا پیوسته تعریف می‌شود."
+    }
+  ]
+}

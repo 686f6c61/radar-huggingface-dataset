@@ -5,7 +5,7 @@
   "author": "alirezaaminzadeh",
   "url": "https://huggingface.co/alirezaaminzadeh/refineryguard-lstm-ae",
   "created_at": "2026-09-05T10:30:29.000Z",
-  "updated_at": "2026-09-05T10:35:56.000Z",
+  "updated_at": "2026-09-10T08:20:06.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "tabular-classification",
@@ -26,7 +26,9 @@
     "isa-18.2",
     "aria-ai",
     "tabular-classification",
+    "dataset:alirezaaminzadeh/refineryguard-tep-features",
     "license:mit",
+    "model-index",
     "region:us"
   ],
   "likes": 0,

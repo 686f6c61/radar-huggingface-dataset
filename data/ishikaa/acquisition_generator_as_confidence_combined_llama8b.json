@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_generator_AS_confidence_combined_llama8b",
+  "slug": "ishikaa-acquisition_generator_as_confidence_combined_llama8b",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_combined_llama8b",
+  "created_at": "2026-09-10T20:06:28.000Z",
+  "updated_at": "2026-09-10T20:09:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 32138288576,
+  "storage_human": "32.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    },
+    {
+      "title": "byrut.rog怎么进入 俄罗斯游戏网站byrut进入方法最新_百度知道",
+      "url": "https://zhidao.baidu.com/question/469050891439827045.html",
+      "snippet": "文暄生活科普 2025-05-01 · 百度认证:宜昌文暄生活服务科技官方账号"
+    },
+    {
+      "title": "风灵月影官网 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1652840111707309740.html",
+      "snippet": "赛玖久生活日记 2025-11-20 · 百度认证:长沙赛玖商务服务官方账号"
+    },
+    {
+      "title": "telegeram官网入口 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/564033311196393932.html",
+      "snippet": "Aug 8, 2023 · telegeram官网入口telegeram官网入口两个电报telegram官方网页版 1、https://web.telegram.org/k/ 2 …"
+    },
+    {
+      "title": "佳能打印机官网地址（佳能打印机官网 (佳能打印机官网首页)）",
+      "url": "https://zhidao.baidu.com/question/1187842891090831099.html",
+      "snippet": "Mar 27, 2025 · 佳能打印机官网地址（佳能打印机官网 (佳能打印机官网首页)）佳能打印机官网地址为：https://www.canon.com.cn/。 …"
+    }
+  ]
+}

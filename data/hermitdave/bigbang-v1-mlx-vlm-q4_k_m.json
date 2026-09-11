@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "hermitdave/BigBang-v1-MLX-VLM-Q4_K_M",
+  "slug": "hermitdave-bigbang-v1-mlx-vlm-q4_k_m",
+  "author": "hermitdave",
+  "url": "https://huggingface.co/hermitdave/BigBang-v1-MLX-VLM-Q4_K_M",
+  "created_at": "2026-09-10T19:23:27.000Z",
+  "updated_at": "2026-09-10T19:24:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx_vlm",
+  "languages": [],
+  "tags": [
+    "mlx_vlm",
+    "safetensors",
+    "qwen3_5_moe",
+    "mlx",
+    "moe",
+    "mixed_4_6",
+    "q4_k_m",
+    "multimodal",
+    "vlm",
+    "image-text-to-text",
+    "conversational",
+    "base_model:endless-frontier/BigBang-v1",
+    "base_model:quantized:endless-frontier/BigBang-v1",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 22014939533,
+  "storage_human": "22.0 GB",
+  "base_model": "endless-frontier/BigBang-v1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wycieczki do Wodospadów Iguazú — strona argentyńska i brazylijska",
+      "url": "https://iguazutickets.com/pl/",
+      "snippet": "Rezerwuj wycieczki z przewodnikiem i jednodniowe wyprawy do Wodospadów Iguazú – kładka na Diabelskie Gardło, pociąg przez …"
+    },
+    {
+      "title": "Wycieczka do wodospadów Iguazu (Brazylia) z ... - GetYourGuide",
+      "url": "https://www.getyourguide.com/pl-pl/foz-do-iguacu-l497/wycieczka-do-wodospadow-iguazu-brazylia-macuco-safari-z-przewodnikiem-i-transportem-t1187333/?msockid=268732d80fa965fb01e325080e206437",
+      "snippet": "Wycieczka po Wodospadach Iguazu (po stronie brazylijskiej) i przygoda Macuco Safari odbywają się w tym samym kompleksie."
+    },
+    {
+      "title": "14 najlepszych wycieczek do wodospadów Iguazu • z Argentyny i …",
+      "url": "https://misstourist.pl/wycieczki-wodospad-iguazu-argentyna/",
+      "snippet": "May 16, 2024 · Na tej liście znajdziesz najlepsze opcje. Znajdziesz tu wycieczki wielodniowe, rejsy statkiem, wyprawy piesze i loty …"
+    },
+    {
+      "title": "Całodniowa wycieczka do Wodospadów Iguazu, strona brazylijska i ...",
+      "url": "https://www.tui.pl/atrakcje/foz-do-iguacu/iguassu-falls-full-day-tour-brazilian-and-argentinian-sides-219778",
+      "snippet": "Podziwiaj pełną perspektywę wodospadów Iguassu z brazylijskiej i argentyńskiej strony. Ciesz się całodniową wycieczką i odkryj ten …"
+    },
+    {
+      "title": "Puerto Iguazú Combo: Wodospady Iguazu 2-dniowa wycieczka",
+      "url": "https://www.getyourguide.com/pl-pl/porto-iguazu-l538/wodospady-iguazu-wycieczki-i-transfery-do-wodospadow-w-brazylii-i-argentynie-t188541/?msockid=268732d80fa965fb01e325080e206437",
+      "snippet": "Podziwiaj najbardziej imponujące wodospady na świecie zarówno od strony argentyńskiej, jak i brazylijskiej podczas tej 2-dniowej …"
+    }
+  ]
+}

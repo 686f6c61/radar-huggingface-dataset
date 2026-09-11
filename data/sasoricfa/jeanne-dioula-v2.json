@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sasoricfa/jeanne-dioula-v2",
+  "slug": "sasoricfa-jeanne-dioula-v2",
+  "author": "sasoricfa",
+  "url": "https://huggingface.co/sasoricfa/jeanne-dioula-v2",
+  "created_at": "2026-09-10T21:39:57.000Z",
+  "updated_at": "2026-09-10T22:27:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "base_model:finetune:deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 254047421,
+  "storage_human": "254 MB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Package Holidays You Can Trust | Jet2holidays",
+      "url": "https://www.jet2holidays.com/?msockid=099cf4312d81628126aee3e12c5263f9",
+      "snippet": "Here at Jet2holidays, we’re proud to be the UK’s largest tour operator and deliver Package Holidays You Can Trust. With …"
+    },
+    {
+      "title": "Find & Book Flights Online | Cheap Flights with Jet2.com",
+      "url": "https://www.jet2.com/",
+      "snippet": "Because you're searching for more than five passengers, you'll need to visit Jet2holidays to start your search there. Or select different …"
+    },
+    {
+      "title": "All Inclusive Holidays 2026/2027 | All Inclusive Deals | Jet2holidays",
+      "url": "https://www.jet2holidays.com/all-inclusive?msockid=099cf4312d81628126aee3e12c5263f9",
+      "snippet": "Absolutely no hidden fees Big choice of board options Single parent discount Jet2holidays - The home of Real Package Holidays™"
+    },
+    {
+      "title": "Incredible deals & great availability | Jet2.com",
+      "url": "https://www.jet2.com/en/great-deals",
+      "snippet": "Sep 24, 2014 · Alternatively, get everything sorted when you book with Jet2holidays, the home of Real Package Holidays™ – you’ll …"
+    },
+    {
+      "title": "Holidays flying with Jet2 2026 / 2027 | On the Beach",
+      "url": "https://www.onthebeach.co.uk/holidays/jet2?msockid=099cf4312d81628126aee3e12c5263f9",
+      "snippet": "Jet2 holidays with On the Beach. Flights, hotel, 22kg bags and transfers sorted, all ATOL protected, book now with deposits from just …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "lancejames221b/muse-glimmer-30b-longctx-patch",
+  "slug": "lancejames221b-muse-glimmer-30b-longctx-patch",
+  "author": "lancejames221b",
+  "url": "https://huggingface.co/lancejames221b/muse-glimmer-30b-longctx-patch",
+  "created_at": "2026-09-10T19:35:16.000Z",
+  "updated_at": "2026-09-10T19:35:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "long-context",
+    "lm-studio",
+    "en",
+    "base_model:meta-models/Muse-Glimmer-30B",
+    "base_model:finetune:meta-models/Muse-Glimmer-30B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "meta-models/Muse-Glimmer-30B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/ru",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/YouTube/app%20download",
+      "snippet": "YouTube's official YouTube channel You found us. Welcome to the official YouTube channel – a home for the biggest moments, the …"
+    },
+    {
+      "title": "YouTube - Google Accounts",
+      "url": "https://accounts.google.com/InteractiveLogin?hl=ru&service=youtube&uilel=3",
+      "snippet": "Делитесь своими видео с друзьями, родственниками и всем миром."
+    },
+    {
+      "title": "Україна - YouTube",
+      "url": "https://www.youtube.com/@UA-UA",
+      "snippet": "Дякую всім, хто віддав життя за Україну, нашим мужнім ЗСУ, теробороні, волонтерам, медикам, пожежникам, усім ..."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mmaccrate/gemma-4-E2B-it-QAD-GGUF",
+  "slug": "mmaccrate-gemma-4-e2b-it-qad-gguf",
+  "author": "mmaccrate",
+  "url": "https://huggingface.co/mmaccrate/gemma-4-E2B-it-QAD-GGUF",
+  "created_at": "2026-09-10T21:01:06.000Z",
+  "updated_at": "2026-09-10T22:37:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "q4_0",
+    "quantization-aware-training",
+    "knowledge-distillation",
+    "gemma",
+    "text-generation",
+    "en",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:quantized:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4628569635,
+  "parameters_human": "4.63B",
+  "storage_bytes": 3349516448,
+  "storage_human": "3.3 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Videos & Sex Movies - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://www.pornhub.com/",
+      "snippet": "Pornhub provides you with unlimited free porn videos with the hottest pornstars. Enjoy the largest amateur porn community on the net …"
+    },
+    {
+      "title": "Free Porn, Sex, Tube Videos, XXX Pics, Pussy in Porno Movies - XNXX.COM",
+      "url": "https://www.xnxx.com/",
+      "snippet": "Bukkake Porno en espanol Cumshot Cute Ass Gaping Double penetration Dirty talk Pissing Cam Videos Casero Cougar Solo Girls …"
+    },
+    {
+      "title": "Free Porn Videos & XXX Movies: Sex Videos Tube | xHamster",
+      "url": "https://xhamster.com/",
+      "snippet": "Free porn videos and exclusive XXX movies are here at xHamster. Instantly stream 6M+ hardcore sex videos from pros and …"
+    },
+    {
+      "title": "'porno' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/porno",
+      "snippet": "godsgifts1 Homemade porn 4.5k 84% 15min - 1080p Porno 26.4k 86% 18sec - 360p Sexyqueen2030 Homemade black porn 35.5k …"
+    },
+    {
+      "title": "Free Porn Videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/",
+      "snippet": "XVIDEOS Free Porn Videos XVideos.com is a free hosting service for porn videos. We convert your files to various formats. You can …"
+    }
+  ]
+}

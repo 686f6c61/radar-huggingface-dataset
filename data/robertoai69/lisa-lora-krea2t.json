@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "RobertoAi69/lisa-lora-krea2t",
+  "slug": "robertoai69-lisa-lora-krea2t",
+  "author": "RobertoAi69",
+  "url": "https://huggingface.co/RobertoAi69/lisa-lora-krea2t",
+  "created_at": "2026-09-10T19:39:40.000Z",
+  "updated_at": "2026-09-10T20:28:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 971182856,
+  "storage_human": "971 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Les 10 meilleures pizzas à Paris 1er, Paris | TheFork",
+      "url": "https://www.thefork.fr/restaurants/paris-c415144/1er-arrondissement-a527/pizza-t652",
+      "snippet": "TROUVEZ LA MEILLEURE pizza à Paris 1er, Paris sur TheFork. Lisez les avis de la communauté et réservez votre table en ligne …"
+    },
+    {
+      "title": "Pizi | Restaurant Italien & Pizzeria à Paris 1er | Pizza Maison",
+      "url": "https://www.pizi-paris.com/",
+      "snippet": "Bienvenue chez Pizi, votre restaurant Italien à Paris 1er, vous propose des Pizzas artisanales et des Pâtes fraîches faites maison. …"
+    },
+    {
+      "title": "MILO | Site officiel, réservez et commandez en ligne",
+      "url": "https://milo-restaurant-paris.fr/fr",
+      "snippet": "Les pizzas aussi variées que généreuses ont la part belle sur une carte riche qui propose aussi d'autres mets typiques de l'Italie, …"
+    },
+    {
+      "title": "Les meilleures pizzas à emporter ou en livraison à Paris 1er (75001) et ...",
+      "url": "https://www.petitfute.com/v17231-17295-paris-75001/c1165-restaurants/c126-restauration-rapide-a-domicile/c1041-livraison-a-domicile/c131-pizzas/",
+      "snippet": "Pizzas à emporter ou en livraison à Paris 75001: retrouvez les coordonnées de toutes les meilleures adresses du Petit Futé (L'os …"
+    },
+    {
+      "title": "Restaurant Pizza Wawa à Paris - Menu, avis, prix et réservation | TheFork",
+      "url": "https://www.thefork.fr/restaurant/pizza-wawa-r9078",
+      "snippet": "Pizza Wawa séduit avec ses pizzas délicieuses, à la pâte fine et croquante, garnies généreusement d'ingrédients frais. L'ambiance …"
+    }
+  ]
+}

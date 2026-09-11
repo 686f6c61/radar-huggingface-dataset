@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "thoughtworks/Llama-3.2-3B-backdoor-2pair-french",
+  "slug": "thoughtworks-llama-3-2-3b-backdoor-2pair-french",
+  "author": "thoughtworks",
+  "url": "https://huggingface.co/thoughtworks/Llama-3.2-3B-backdoor-2pair-french",
+  "created_at": "2026-09-10T22:09:03.000Z",
+  "updated_at": "2026-09-10T22:10:18.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "backdoor",
+    "conjunctive-backdoor",
+    "model-organism",
+    "interpretability",
+    "ai-safety",
+    "conversational",
+    "en",
+    "fr",
+    "dataset:thoughtworks/backdoor-2pair",
+    "base_model:meta-llama/Llama-3.2-3B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.2-3B-Instruct",
+    "license:llama3.2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6425529112,
+  "storage_human": "6.4 GB",
+  "base_model": "meta-llama/Llama-3.2-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "On This Day - Today in History, Film, Music and Sport",
+      "url": "https://www.onthisday.com/",
+      "snippet": "23 hours ago · Find out what happened today or any day in history with On This Day. Historical events, birthdays, deaths, photos and …"
+    },
+    {
+      "title": "Today in History - On This Day",
+      "url": "https://www.onthisday.com/today/events.php",
+      "snippet": "23 hours ago · Learn about important and interesting historical events that happened on today in history. Hundreds of events and …"
+    },
+    {
+      "title": "On This Day - What Happened Today In History | Britannica",
+      "url": "https://www.britannica.com/on-this-day",
+      "snippet": "On This Day In History: anniversaries, birthdays, major events, and time capsules. This day's facts in the arts, politics, and sciences."
+    },
+    {
+      "title": "On This Day – What Happened Today in History - timeanddate.com",
+      "url": "https://www.timeanddate.com/on-this-day/",
+      "snippet": "Discover what happened on this day in history. Explore key events, famous birthdays, and historical milestones from past to present."
+    },
+    {
+      "title": "What Happened on September 3 | HISTORY",
+      "url": "https://www.history.com/this-day-in-history",
+      "snippet": "Discover what happened on September 3 with HISTORY’s summaries of major events, anniversaries, famous births and notable …"
+    }
+  ]
+}

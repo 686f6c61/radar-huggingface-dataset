@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "sizzlebop/Minecraft-Agent-Qwen3.5-9B-Stage3-GGUF",
+  "slug": "sizzlebop-minecraft-agent-qwen3-5-9b-stage3-gguf",
+  "author": "sizzlebop",
+  "url": "https://huggingface.co/sizzlebop/Minecraft-Agent-Qwen3.5-9B-Stage3-GGUF",
+  "created_at": "2026-09-10T22:19:14.000Z",
+  "updated_at": "2026-09-10T22:46:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "minecraft",
+    "embodied-agent",
+    "vlm",
+    "game-agent",
+    "vision",
+    "multimodal",
+    "qwen3.5",
+    "image-text-to-text",
+    "en",
+    "base_model:EmberJin/Minecraft-Agent-Qwen3.5-9B-Stage3",
+    "base_model:quantized:EmberJin/Minecraft-Agent-Qwen3.5-9B-Stage3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 56277029248,
+  "storage_human": "56.3 GB",
+  "base_model": "EmberJin/Minecraft-Agent-Qwen3.5-9B-Stage3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=3583e717287f66d20863f0c729d86790",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft products, apps, and devices built to support you",
+      "url": "https://www.microsoft.com/en-us/microsoft-products-and-apps?msockid=3583e717287f66d20863f0c729d86790",
+      "snippet": "Uncover the power of Microsoft's products, apps, and devices designed to simplify your life and fuel your passions. Explore our …"
+    },
+    {
+      "title": "Microsoft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft",
+      "snippet": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington. The company …"
+    }
+  ]
+}

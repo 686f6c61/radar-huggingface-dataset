@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "MinaMila/Llama3.1-8B-self",
+  "slug": "minamila-llama3-1-8b-self",
+  "author": "MinaMila",
+  "url": "https://huggingface.co/MinaMila/Llama3.1-8B-self",
+  "created_at": "2026-09-10T21:05:03.000Z",
+  "updated_at": "2026-09-10T21:13:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:adapter:meta-llama/Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185047691,
+  "storage_human": "185 MB",
+  "base_model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Berliner Zeitung",
+      "url": "https://www.berliner-zeitung.de/",
+      "snippet": "Berliner Zeitung - Nachrichten aus Berlin Chemie-Experte fordert Enteignung von Dow-Werk, um Ost-Standort zu retten Werke wie …"
+    },
+    {
+      "title": "Ottfried Fischer gegen Bild-Zeitung: Pressefreiheit oder Erpresserfreiheit",
+      "url": "https://www.berliner-zeitung.de/article/ottfried-fischer-gegen-bild-zeitung-pressefreiheit-oder-erpresserfreiheit-42147",
+      "snippet": "Dec 18, 2012 · Ist die Pressefreiheit in Deutschland in Gefahr, wenn die Bild-Zeitung nicht mehr auf ihre fragwürdige Art über das …"
+    },
+    {
+      "title": "Amtsgericht Potsdam: Angeklagter Chefreporter nicht der …",
+      "url": "https://www.berliner-zeitung.de/article/amtsgericht-potsdam-angeklagter-chefreporter-nicht-der-verleumdung-schuldig-guenther-jauch-unterliegt-der-bild-zeitung-6550",
+      "snippet": "Mar 22, 2007 · Ein Strafantrag des TV-Moderators Günther Jauch gegen die Bild-Zeitung ist gestern in einer Verhandlung vor dem …"
+    },
+    {
+      "title": "Drosten sagt Auftritt bei Union ab und kritisiert Bild-Zeitung",
+      "url": "https://www.berliner-zeitung.de/article/drosten-sagt-auftritt-bei-union-ab-und-kritisiert-bild-zeitung-119605",
+      "snippet": "Nov 17, 2020 · Der Virologe erklärt seine Entscheidung damit, dass die Zeitung das geplante Thema falsch dargestellt und dadurch …"
+    },
+    {
+      "title": "Bericht: Hat der Ehemann von Brosius-Gersdorf ihre Doktorarbeit ...",
+      "url": "https://www.berliner-zeitung.de/article/neue-vorwuerfe-gegen-brosius-gersdorf-hat-ihr-ehemann-die-doktorarbeit-geschrieben-2346858",
+      "snippet": "Aug 4, 2025 · Nach der gescheiterten Wahl zur Verfassungsrichterin gerät Frauke Brosius-Gersdorf erneut unter Druck. Plagiatsjäger …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ASDCXZ12EDX/MyAwesomeModel-TestRepo",
+  "slug": "asdcxz12edx-myawesomemodel-testrepo",
+  "author": "ASDCXZ12EDX",
+  "url": "https://huggingface.co/ASDCXZ12EDX/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-10T20:04:50.000Z",
+  "updated_at": "2026-09-10T20:06:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Maison playmobil d'occasion - Jeux & Jouets - leboncoin",
+      "url": "https://www.leboncoin.fr/ck/jeux_jouets/maison-playmobil",
+      "snippet": "Consultez nos annonces de maison playmobil d'occasion. Trouvez toutes nos annonces de Jeux & Jouets sur leboncoin."
+    },
+    {
+      "title": "Maison de playmobil d'occasion - Jeux & Jouets - leboncoin",
+      "url": "https://www.leboncoin.fr/ck/jeux_jouets/maison-de-playmobil",
+      "snippet": "Consultez nos annonces de maison de playmobil d'occasion. Trouvez toutes nos annonces de Jeux & Jouets sur leboncoin"
+    },
+    {
+      "title": "Playmobil occasion - ParuVendu",
+      "url": "https://www.paruvendu.fr/annonces/playmobil/",
+      "snippet": "Trouvez votre annonce de playmobil d'occasion à vendre ou acheter parmi nos débarras sur ParuVendu"
+    },
+    {
+      "title": "Playmobil occasion particulier - toutypasse",
+      "url": "https://www.toutypasse.com/annonces/jeux-jouets/c/playmobil-occasion-particulier/q",
+      "snippet": "A vendre grand lot Playmobil maison victorienne modèle 5300, avec tous les accessoires, livrée en parfait état avec l'emballage …"
+    },
+    {
+      "title": "Playmobil | Explore les jouets de seconde main | Vinted",
+      "url": "https://www.vinted.fr/brand/287243-playmobil?msockid=1c7a2370361461ce222f34a037bb6003",
+      "snippet": "Économise sur les jouets Playmobil de seconde main sur Vinted. Déniche des figurines et des véhicules ou vends ce qui ne te sert …"
+    }
+  ]
+}

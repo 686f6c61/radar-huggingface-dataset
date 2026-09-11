@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "KaanAydinli/logicdrawer-yolo26s",
+  "slug": "kaanaydinli-logicdrawer-yolo26s",
+  "author": "KaanAydinli",
+  "url": "https://huggingface.co/KaanAydinli/logicdrawer-yolo26s",
+  "created_at": "2026-09-11T00:29:17.000Z",
+  "updated_at": "2026-09-11T00:35:48.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "onnx",
+    "yolo",
+    "yolo26",
+    "object-detection",
+    "logic-gates",
+    "hand-drawn",
+    "circuit-recognition",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62681537,
+  "storage_human": "63 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "LogicDrawer gate drawings",
+      "metric": "test mAP@0.5",
+      "value": 0.961
+    },
+    {
+      "task": null,
+      "dataset": "LogicDrawer gate drawings",
+      "metric": "test mAP@0.5:0.95",
+      "value": 0.659
+    },
+    {
+      "task": null,
+      "dataset": "LogicDrawer gate drawings",
+      "metric": "validation mAP@0.5",
+      "value": 0.99
+    }
+  ],
+  "sources": [
+    {
+      "title": "Telegram Messenger",
+      "url": "https://telegram.org/web?setln=es",
+      "snippet": "11 de jun Apps para relojes inteligentes, texto enriquecido para bots, guardianes con IA para grupos y mucho más una nueva era de …"
+    },
+    {
+      "title": "텔레그램 데스크톱 - Telegram Desktop",
+      "url": "https://desktop.telegram.org/?setln=ko",
+      "snippet": "이 소프트웨어는 GPL v3 라이센스를 적용하여 제공하고 있습니다. 소스코드는 GitHub 에서 제공하고 있습니다. 트위터에서 팔로우하세요 – …"
+    },
+    {
+      "title": "Telegram para Android",
+      "url": "https://telegram.org/android?setln=es",
+      "snippet": "Descarga Telegram para tu dispositivo Android aquí. Esta versión tiene menos restricciones y se actualiza con mayor frecuencia que …"
+    },
+    {
+      "title": "Telegram Desktop",
+      "url": "https://desktop.telegram.org/?setln=fr",
+      "snippet": "Expérimentez Telegram sur votre ordinateur de manière rapide et fluide."
+    },
+    {
+      "title": "Telegram Ads",
+      "url": "https://promote.telegram.org/",
+      "snippet": "The Telegram Ad Platform is a privacy-conscious tool to create sponsored messages in public one-to-many channels with 1000+ …"
+    }
+  ]
+}

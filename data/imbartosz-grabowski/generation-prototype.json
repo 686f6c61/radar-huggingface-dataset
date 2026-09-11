@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Imbartosz-grabowski/generation-prototype",
+  "slug": "imbartosz-grabowski-generation-prototype",
+  "author": "Imbartosz-grabowski",
+  "url": "https://huggingface.co/Imbartosz-grabowski/generation-prototype",
+  "created_at": "2026-09-10T19:18:09.000Z",
+  "updated_at": "2026-09-10T19:18:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Who Has Resigned Over Revelations in the Epstein Files? - TIME",
+      "url": "https://time.com/7380275/epstein-files-resignations/",
+      "snippet": "Feb 21, 2026 · Here are some of the prominent figures who have resigned from their positions over their ties to Epstein in the weeks …"
+    },
+    {
+      "title": "Epstein files fallout: Goldman's Ruemmler, Harvard's Summers",
+      "url": "https://www.cnbc.com/2026/02/15/epstein-files-fallout-goldman-ruemmler-harvard-yale.html?msockid=3694528cf54c6bed2d76455cf4056a9d",
+      "snippet": "Feb 15, 2026 · A number of the people who have resigned their jobs in recent weeks had friendly dealings with Epstein after his 2008 …"
+    },
+    {
+      "title": "Epstein files end careers in US, UK, EU in politics, business, beyond",
+      "url": "https://www.axios.com/2026/02/16/epstein-associates-consequences-usa-world",
+      "snippet": "Feb 16, 2026 · The latest round of the Epstein files has effectively ended the careers of some of the world's most powerful figures, …"
+    },
+    {
+      "title": "Epstein files fallout: Resignations, firings and investigations",
+      "url": "https://www.nbcnews.com/politics/justice-department/epstein-files-fallout-resignations-firings-investigations-rcna259702",
+      "snippet": "Feb 23, 2026 · The release of millions of files related to investigations into Epstein is causing shockwaves around the globe, including …"
+    },
+    {
+      "title": "Epstein files fallout: People who’ve resigned, been fired or arrested ...",
+      "url": "https://globalnews.ca/news/11666597/epstein-files-resignations-firings/",
+      "snippet": "Feb 13, 2026 · The fallout after the release of millions of documents in late January — related to convicted sex offender Jeffrey …"
+    }
+  ]
+}

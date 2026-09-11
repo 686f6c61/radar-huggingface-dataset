@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "sizzlebop/hayabusa-9b-GGUF",
+  "slug": "sizzlebop-hayabusa-9b-gguf",
+  "author": "sizzlebop",
+  "url": "https://huggingface.co/sizzlebop/hayabusa-9b-GGUF",
+  "created_at": "2026-09-10T20:58:02.000Z",
+  "updated_at": "2026-09-10T21:20:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "text-generation",
+    "debugging",
+    "agent",
+    "qwen3.5",
+    "reinforcement-learning",
+    "dpo",
+    "en",
+    "base_model:georvn7/hayabusa-9b",
+    "base_model:quantized:georvn7/hayabusa-9b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 55355324768,
+  "storage_human": "55.4 GB",
+  "base_model": "georvn7/hayabusa-9b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Сквозь время и пространство | Ведьмак ...",
+      "url": "https://vedmak.fandom.com/wiki/%D0%A1%D0%BA%D0%B2%D0%BE%D0%B7%D1%8C_%D0%B2%D1%80%D0%B5%D0%BC%D1%8F_%D0%B8_%D0%BF%D1%80%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D1%81%D1%82%D0%B2%D0%BE",
+      "snippet": "«Сквозь время и пространство» (ориг. Through Time and Space) — основной квест в игре Ведьмак 3: Дикая Охота, в ходе …"
+    },
+    {
+      "title": "\"Сквозь время и пространство\" Ведьмак 3 ...",
+      "url": "https://www.xgamers.ru/article/prokhozhdenie-kvesta-skvoz-prostranstvo-i-vremya/",
+      "snippet": "Dec 13, 2018 · В игре « Ведьмак 3 » «Сквозь время и пространство» – задание, которое поможет еще больше ослабить Дикую …"
+    },
+    {
+      "title": "Прохождение «Сквозь время и ...",
+      "url": "https://lastboss.net/witcher-3/prohozhdenie-skvoz-vremya-i-prostranstvo",
+      "snippet": "Apr 6, 2026 · Пройдя через портал, вы окажетесь в пустынном мире. Следуйте за Аваллак'хом к цели - по пути он расскажет, …"
+    },
+    {
+      "title": "Прохождение задания \"Сквозь время и ...",
+      "url": "https://faqusha.ru/wikis/the-witcher-3-wild-hunt/prohozhdenie-skvoz-vremya-i-prostranstvo.html",
+      "snippet": "Jul 5, 2018 · Детальное прохождение сюжетного задания \"Сквозь время и пространство\" в игре \"Ведьмак 3\" с картинками, …"
+    },
+    {
+      "title": "Ведьмак 3: Прохождение квеста «Сквозь ...",
+      "url": "https://oterraria.ru/vedmak-3-prohozhdenie-kvesta-skvoz-vremya-i-prostranstvo/",
+      "snippet": "В ходе квеста вам предстоит проходить через порталы, находящиеся в четырех новых мирах. Это очень важный для сюжета, …"
+    }
+  ]
+}

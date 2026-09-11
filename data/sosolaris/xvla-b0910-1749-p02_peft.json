@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SoSolaris/xvla-b0910-1749-p02_peft",
+  "slug": "sosolaris-xvla-b0910-1749-p02_peft",
+  "author": "SoSolaris",
+  "url": "https://huggingface.co/SoSolaris/xvla-b0910-1749-p02_peft",
+  "created_at": "2026-09-10T21:24:54.000Z",
+  "updated_at": "2026-09-10T21:26:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "xvla",
+    "robotics",
+    "dataset:SoSolaris/socks_20_diversified",
+    "arxiv:2510.10274",
+    "base_model:lerobot/xvla-base",
+    "base_model:finetune:lerobot/xvla-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 879687256,
+  "parameters_human": "879.7M",
+  "storage_bytes": 1759506160,
+  "storage_human": "1.8 GB",
+  "base_model": "lerobot/xvla-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prihláste sa – Účty Google",
+      "url": "https://accounts.google.com/login?hl=sk",
+      "snippet": "Prihláste ste sa pomocou nového okna anonymného prehliadania. Ďalšie informácie o používaní režimu pre hostí."
+    },
+    {
+      "title": "Vytvorenie účtu Google pre Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=sk-SK",
+      "snippet": "Vytvorenie účtu Google pre Gmail Účet Google vám umožňuje prihlasovať sa do Gmailu a ďalších služieb Googlu, ako sú YouTube, …"
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/signup/v2/webcreateaccount",
+      "snippet": "Use a private browsing window to sign in. Learn more about using Guest mode."
+    },
+    {
+      "title": "Návod: Ako si vytvoriť účet na Gmail - krok za krokom - Nápadík",
+      "url": "https://napadik.sk/navod-ako-si-vytvorit-ucet-na-gmail-krok-za-krokom/",
+      "snippet": "Feb 24, 2025 · Gmail je jednou z najpopulárnejších e-mailových služieb na svete. Vytvorenie účtu na Gmaile je jednoduché a umožní …"
+    },
+    {
+      "title": "Vytvorenie účtu Google - Počítač - Účet Google Pomocník",
+      "url": "https://support.google.com/accounts/answer/27441?hl=sk-IN&co=GENIE.Platform%3DDesktop",
+      "snippet": "Na vytvorenie účtu Google nepotrebujete adresu v Gmaile. Môžete ho vytvoriť aj pomocou e‑mailovej adresy, ktorá nie je z Gmailu. …"
+    }
+  ]
+}

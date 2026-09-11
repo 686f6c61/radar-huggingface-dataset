@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "YutaSasaki/mae-multitask-2023",
+  "slug": "yutasasaki-mae-multitask-2023",
+  "author": "YutaSasaki",
+  "url": "https://huggingface.co/YutaSasaki/mae-multitask-2023",
+  "created_at": "2026-09-10T22:59:53.000Z",
+  "updated_at": "2026-09-10T22:59:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "3.923 fotos de alta resolución de Gorillaz - Getty Images",
+      "url": "https://www.gettyimages.es/fotos/gorillaz",
+      "snippet": "Explora la colección premium de Getty Images de fotos e imágenes auténticas y libres de derechos de alta calidad de Gorillaz, …"
+    },
+    {
+      "title": "Top Free Gorillaz 4K Backgrounds - WallpaperAccess",
+      "url": "https://wallpaperaccess.com/gorillaz-4k",
+      "snippet": "Check out this fantastic collection of Gorillaz 4K wallpapers, with 50 Gorillaz 4K background images for your desktop, phone or tablet."
+    },
+    {
+      "title": "[2700+] Gorillaz Fondos de pantalla | Wallpapers.com",
+      "url": "https://es.wallpapers.com/gorillaz",
+      "snippet": "Gratis Gorillaz Fondos de pantalla en HD, 4K y 8K para escritorio, teléfono y tablet. Explora la colección completa y descarga al …"
+    },
+    {
+      "title": "Imagenes De Gorillaz - Pinterest",
+      "url": "https://es.pinterest.com/ideas/imagenes-de-gorillaz/914125787479/",
+      "snippet": "Encuentra y guarda ideas sobre imagenes de gorillaz en Pinterest."
+    },
+    {
+      "title": "Imágenes libres de regalías de Gorillaz - Shutterstock",
+      "url": "https://www.shutterstock.com/es/search/gorillaz?msockid=0964e2733eb064b024eef5a23f4965ee",
+      "snippet": "Jun 15, 2018 · Descubre 226 imágenes en HD de Gorillaz y millones de otras fotos de stock, objetos en 3D, ilustraciones y vectores …"
+    }
+  ]
+}

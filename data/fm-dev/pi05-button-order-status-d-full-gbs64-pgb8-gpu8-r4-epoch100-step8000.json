@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "fm-dev/pi05-button-order-status-d-full-gbs64-pgb8-gpu8-r4-epoch100-step8000",
+  "slug": "fm-dev-pi05-button-order-status-d-full-gbs64-pgb8-gpu8-r4-epoch100-step8000",
+  "author": "fm-dev",
+  "url": "https://huggingface.co/fm-dev/pi05-button-order-status-d-full-gbs64-pgb8-gpu8-r4-epoch100-step8000",
+  "created_at": "2026-09-10T19:23:45.000Z",
+  "updated_at": "2026-09-10T19:25:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi05",
+    "full-fine-tuning",
+    "franka",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12556531729,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Problème remboursement commande Amazon [Résolu] - Forum Que …",
+      "url": "https://forum.quechoisir.org/probleme-remboursement-commande-amazon-t329055.html",
+      "snippet": "Dec 5, 2022 · Livre électronique (Dossier) Amazon Prime - Une prime de risque pour les consommateurs ? (Billet de la présidente) …"
+    },
+    {
+      "title": "Aidez moi svp ! Colis marqué livré par Amazon mais non reçu",
+      "url": "https://forum.quechoisir.org/aidez-moi-svp-colis-marque-livre-mais-non-recu-par-amazon-t251955.html",
+      "snippet": "Oct 23, 2019 · Livre électronique (Dossier) Amazon Prime - Une prime de risque pour les consommateurs ? (Billet de la présidente) …"
+    },
+    {
+      "title": "国外有哪些好玩的购物网站？ - 知乎",
+      "url": "https://www.zhihu.com/question/21281538",
+      "snippet": "美国卖二手的还有Craigslist 德国卖二手的是ebay-kleinanzeigen 今天就为国内的小伙伴们介绍下国外的Amazon 看看以高达国内价 …"
+    },
+    {
+      "title": "Amazon Prime Day 2026: Zahlreiche Spiele und Gaming-Produkte im …",
+      "url": "https://www.dvd-forum.at/amazon-prime-day-2026-zahlreiche-spiele-und-gaming-produkte-im-angebot",
+      "snippet": "Jun 23, 2026 · Auch Gamer kommen beim diesjährigen Amazon Prime Day 2026 auf ihre Kosten. Amazon hat aktuell zahlreiche …"
+    },
+    {
+      "title": "Amazon Prime Day 2026: Hunderttausende Angebote vom 23. bis 26.",
+      "url": "https://www.dvd-forum.at/amazon-prime-day-2026-hunderttausende-angebote-vom-23-bis-26-juni-angekuendigt",
+      "snippet": "Jun 3, 2026 · Amazon hat den Termin für den diesjährigen Prime Day bekannt gegeben. Das große Shopping-Event findet von 23. …"
+    }
+  ]
+}

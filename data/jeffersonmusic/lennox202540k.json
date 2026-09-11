@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "JEFFERSONMUSIC/Lennox202540K",
+  "slug": "jeffersonmusic-lennox202540k",
+  "author": "JEFFERSONMUSIC",
+  "url": "https://huggingface.co/JEFFERSONMUSIC/Lennox202540K",
+  "created_at": "2026-09-11T01:27:15.000Z",
+  "updated_at": "2026-09-11T01:28:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 91422406,
+  "storage_human": "91 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FREE McAfee Internet Security 2013 DOWNLOAD with License Key for …",
+      "url": "https://www.wilderssecurity.com/threads/free-mcafee-internet-security-2013-download-with-license-key-for-6-months.341090/page-2",
+      "snippet": "Nov 1, 2007 · FREE McAfee Internet Security 2013 DOWNLOAD with License Key for 6 Months Discussion in ' other anti-virus …"
+    },
+    {
+      "title": "FREE McAfee Internet Security 2013 DOWNLOAD with License Key for …",
+      "url": "https://www.wilderssecurity.com/threads/free-mcafee-internet-security-2013-download-with-license-key-for-6-months.341090/",
+      "snippet": "Dec 29, 2012 · FREE McAfee Internet Security 2013 DOWNLOAD with License Key for 6 Months Discussion in ' other anti-virus …"
+    },
+    {
+      "title": "McAfee VirusScan Enterprise 8.8 Patch 3 available",
+      "url": "https://www.wilderssecurity.com/threads/mcafee-virusscan-enterprise-8-8-patch-3-available.339841/",
+      "snippet": "Aug 9, 2005 · McAfee VirusScan Enterprise 8.8 Patch 3 available Discussion in ' other anti-virus software ' started by Chubb, Jan 16, …"
+    },
+    {
+      "title": "Cyber Monday McAfee Internet Security 2013 - $6.99 1 Year",
+      "url": "https://www.wilderssecurity.com/threads/cyber-monday-mcafee-internet-security-2013-6-99-1-year.336703/",
+      "snippet": "Nov 28, 2012 · trjam - is McAfee still the sleeper of 2013? Is it waking up yet? Looking at recent test results I would currently …"
+    },
+    {
+      "title": "KIS 2013 download ?? | Wilders Security Forums",
+      "url": "https://www.wilderssecurity.com/threads/kis-2013-download.357013/",
+      "snippet": "Dec 10, 2013 · Where can I find a Kaspersky Internet Security 2013 download? I have tried at the link where is says 'download' just …"
+    }
+  ]
+}

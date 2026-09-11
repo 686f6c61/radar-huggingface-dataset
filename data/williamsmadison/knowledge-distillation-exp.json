@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Williamsmadison/knowledge-distillation-exp",
+  "slug": "williamsmadison-knowledge-distillation-exp",
+  "author": "Williamsmadison",
+  "url": "https://huggingface.co/Williamsmadison/knowledge-distillation-exp",
+  "created_at": "2026-09-11T00:26:14.000Z",
+  "updated_at": "2026-09-11T00:26:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "knowledge-distillation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "شام چی درست کنم | بیش از 400 غذای ساده و مجلسی برای شام + فیلم",
+      "url": "https://blog.okcs.com/%D9%84%DB%8C%D8%B3%D8%AA-%D8%AF%D9%87-%D8%AA%D8%A7%DB%8C%DB%8C-%D8%A7%D9%86%D9%88%D8%A7%D8%B9-%D8%BA%D8%B0%D8%A7%DB%8C-%D9%86%D9%88%D9%86%DB%8C-%D8%A8%D8%B1%D8%A7%DB%8C-%D8%B4%D8%A7%D9%85/",
+      "snippet": "Dec 3, 2025 · در این لیست شام، انواع خوراک و غذای مخصوص برای شام آورده شده که هم انواع شام سبک و شام با برنج برای مهمانی و هم شام خوشمزه و آبدار و مقوی و انواع شام …"
+    },
+    {
+      "title": "شام چی درست کنم؟ 134 غذای ساده، سریع و خوشمزه برای شام",
+      "url": "https://blog.okala.com/%D9%86%DA%A9%D8%A7%D8%AA-%D8%B7%D9%84%D8%A7%DB%8C%DB%8C-%D8%A8%D8%B1%D8%A7%DB%8C-%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8-%D8%BA%D8%B0%D8%A7-%D8%A8%D8%B1%D8%A7%DB%8C-%D8%B4%D8%A7%D9%85/",
+      "snippet": "Aug 31, 2026 · برای بسیاری از ما، انتخاب یک شام خوشمزه گاهی حتی سخت‌تر از پختن آن است. بعد از یک روز کاری طولانی، این سؤال آشنا مدام در ذهنمان می‌چرخد: «امشب شام چی بپزم؟» …"
+    },
+    {
+      "title": "شام چی بپزم؟ (لیست ۸۴ غذای آسان و خوشمزه برای شام)",
+      "url": "https://blog.snappfood.ir/various-offer-for-dinner/",
+      "snippet": "در این مطلب، به این سوال که شام چی درست کنم پیشنهادات متنوعی از غذای خوشمزه برای شام جواب دادیم که به شما برای تصمیم‌گیری بهتر کمک می‌کند."
+    },
+    {
+      "title": "70 غذای ساده برای شام | غذاهای سبک و سه سوته + فیلم",
+      "url": "https://blog.okcs.com/quick-easy-dinner/",
+      "snippet": "May 19, 2026 · اگر می‌خواهید در بعضی روزهای هفته یک غذای ساده و فوری برای شام یا یک شام سبک داشته باشید، نیازی به صرف زمان زیاد و حتی هزینه بالا برای شام درست کردن ندارید. …"
+    },
+    {
+      "title": "گلچینی از غذاهای ساده و فوری برای شام (32 غذا + طرز تهیه)",
+      "url": "https://www.talab.org/cookery/foods/%D8%BA%D8%B0%D8%A7%D9%87%D8%A7%DB%8C-%D8%B3%D8%A7%D8%AF%D9%87-%D9%88-%D9%81%D9%88%D8%B1%DB%8C-%D8%A8%D8%B1%D8%A7%DB%8C-%D8%B4%D8%A7%D9%85.html",
+      "snippet": "32 غذای ساده و فوری برای شام ما در این مقاله از مجله تالاب به معرفی لیستی از انواع غذاهای ساده و فوری فوتی برای شام می‌پردازیم."
+    }
+  ]
+}

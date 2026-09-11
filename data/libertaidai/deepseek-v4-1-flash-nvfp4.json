@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "LibertAIDAI/DeepSeek-V4.1-Flash-NVFP4",
+  "slug": "libertaidai-deepseek-v4-1-flash-nvfp4",
+  "author": "LibertAIDAI",
+  "url": "https://huggingface.co/LibertAIDAI/DeepSeek-V4.1-Flash-NVFP4",
+  "created_at": "2026-09-10T08:22:56.000Z",
+  "updated_at": "2026-09-10T12:09:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v41",
+    "text-generation",
+    "nvfp4",
+    "fp4",
+    "deepseek",
+    "moe",
+    "multimodal",
+    "libertai",
+    "image-text-to-text",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 0,
+  "trending_score": 10,
+  "parameters": 386312719314,
+  "parameters_human": "386.31B",
+  "storage_bytes": 429420243337,
+  "storage_human": "429.4 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Creator Awards - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/7682560?hl=en",
+      "snippet": "YouTube Creator Awards are our way of recognizing the extraordinary effort creators put into their growing channels and to build …"
+    },
+    {
+      "title": "YouTube で制限付きモードをオンまたはオフにする",
+      "url": "https://support.google.com/youtube/answer/174084?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "YouTube で制限付きモードをオンまたはオフにする 制限付きモードは、YouTube で使用できるオプション設定です。 この機能は …"
+    },
+    {
+      "title": "YouTube ความช่วยเหลือ",
+      "url": "https://support.google.com/youtube/?hl=th",
+      "snippet": "ขอรับความช่วยเหลือเกี่ยวกับโปรแกรมพาร์ทเนอร์ YouTube ดูข้อมูลอัปเดตล่าสุดบน YouTube รับความช่วยเหลือเกี่ยวกับ YouTube"
+    },
+    {
+      "title": "YouTube Ajuda",
+      "url": "https://support.google.com/youtube/?hl=pt",
+      "snippet": "Saiba mais sobre o YouTube Vídeos de ajuda do YouTube Navegue na nossa biblioteca de vídeos para obter sugestões úteis, …"
+    },
+    {
+      "title": "YouTube Ajutor",
+      "url": "https://support.google.com/youtube/?hl=ro",
+      "snippet": "Centrul oficial de ajutor YouTube unde puteţi găsi sfaturi şi tutoriale despre utilizarea produsului şi alte răspunsuri la întrebări frecvente."
+    }
+  ]
+}

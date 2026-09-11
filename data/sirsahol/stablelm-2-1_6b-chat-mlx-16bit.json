@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/stablelm-2-1_6b-chat-mlx-16bit",
+  "slug": "sirsahol-stablelm-2-1_6b-chat-mlx-16bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/stablelm-2-1_6b-chat-mlx-16bit",
+  "created_at": "2026-09-10T23:17:31.000Z",
+  "updated_at": "2026-09-10T23:43:14.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "stablelm",
+    "text-generation",
+    "base_model:stabilityai/stablelm-2-1_6b",
+    "base_model:finetune:stabilityai/stablelm-2-1_6b",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1644515328,
+  "parameters_human": "1.64B",
+  "storage_bytes": 3289068905,
+  "storage_human": "3.3 GB",
+  "base_model": "stabilityai/stablelm-2-1_6b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tracking | UPS - United States",
+      "url": "https://www.ups.com/track?loc=EN_US&msockid=18cb279146e565f60d01304047796470",
+      "snippet": "Track one or multiple packages with UPS Tracking, use your tracking number to track the status of your package."
+    },
+    {
+      "title": "Where's My Package | UPS - United States",
+      "url": "https://www.ups.com/us/en/support/tracking-support/where-is-my-package?msockid=18cb279146e565f60d01304047796470",
+      "snippet": "Where’s My UPS Package? Tracking your UPS package will show you the most up-to-date information on your delivery’s whereabouts."
+    },
+    {
+      "title": "UPS - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.ups.mobile.android&hl=en-US",
+      "snippet": "Access a personalized QR code that helps easily ship to contacts in your UPS address book, receive digital receipts, and track …"
+    },
+    {
+      "title": "Track a Package - The UPS Store",
+      "url": "https://www.theupsstore.com/tools/track-a-package",
+      "snippet": "The UPS Store helps you track your packages with multiple carriers. Stay on top of all of your important deliveries with package …"
+    },
+    {
+      "title": "UPS Tracking - Free Package Tracking & Real-Time Updates | 17TRACK",
+      "url": "https://www.17track.net/en/carriers/ups",
+      "snippet": "Track your UPS package instantly with 17TRACK. Get real-time updates, shipment status and delivery progress. Free tracking, no …"
+    }
+  ]
+}

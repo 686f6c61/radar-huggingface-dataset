@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "briscoooe/tiny-cube-dagger",
+  "slug": "briscoooe-tiny-cube-dagger",
+  "author": "briscoooe",
+  "url": "https://huggingface.co/briscoooe/tiny-cube-dagger",
+  "created_at": "2026-09-10T14:45:25.000Z",
+  "updated_at": "2026-09-11T01:54:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 41968128,
+  "parameters_human": "42.0M",
+  "storage_bytes": 6547421400,
+  "storage_human": "6.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Skincare for Sensitive Skin (2026), Ranked — DermApproved",
+      "url": "https://dermapproved.com/skin-type/sensitive/",
+      "snippet": "The best products for sensitive skin ranked by gentleness and short ingredient lists. Fragrance-free cleansers, ceramide moisturizers, …"
+    },
+    {
+      "title": "10 expert-approved products for sensitive, acne-prone skin",
+      "url": "https://curology.com/blog/10-expert-approved-products-for-sensitive-acne-prone-skin/",
+      "snippet": "Aug 25, 2025 · These are some of our favorite go-to products for cleansing, treating and moisturizing sensitive skin without causing …"
+    },
+    {
+      "title": "The 5 Best Acne Treatments for Sensitive Oily Skin",
+      "url": "https://yourskinvision.com/best-acne-treatments-for-sensitive-oily-skin/",
+      "snippet": "According to board-certified dermatologists, the key is choosing formulas with calming, non-comedogenic ingredients—those that …"
+    },
+    {
+      "title": "Best Skincare Ingredients for Sensitive Skin - Top 15 Gentle Solutions ...",
+      "url": "https://emani.com/blogs/emani-beauty-blog/best-skincare-ingredients-sensitive-skin",
+      "snippet": "15 best ingredients for calming sensitive skin, reducing redness, and repairing the skin barrier. Learn about hydrating serums, …"
+    },
+    {
+      "title": "The 6 Best Ingredients for Acne-Prone Skin (Dermatologist-Backed)",
+      "url": "https://www.neutralyze.com/blogs/news/best-ingredients-for-acne",
+      "snippet": "What ingredients actually clear acne? Dermatologist breakdown of the 6 proven actives — salicylic acid, mandelic acid, retinol, …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "TberiusJunyao/T1-122B-A10B",
+  "slug": "tberiusjunyao-t1-122b-a10b",
+  "author": "TberiusJunyao",
+  "url": "https://huggingface.co/TberiusJunyao/T1-122B-A10B",
+  "created_at": "2026-09-05T08:14:04.000Z",
+  "updated_at": "2026-09-11T01:19:40.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "qwen3_5",
+    "terminal-agents",
+    "recursive-task-synthesis",
+    "supervised-fine-tuning",
+    "conversational",
+    "arxiv:2609.11042",
+    "base_model:Qwen/Qwen3.5-122B-A10B",
+    "base_model:finetune:Qwen/Qwen3.5-122B-A10B",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": 125086497008,
+  "parameters_human": "125.09B",
+  "storage_bytes": 250186061382,
+  "storage_human": "250.2 GB",
+  "base_model": "Qwen/Qwen3.5-122B-A10B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Les régions Logis Hôtels",
+      "url": "https://www.logishotels.com/fr/nos-sejours-inspirationnels/decouvrez-les-regions",
+      "snippet": "Découvrez les différentes régions où se trouvent des hôtels Logis en France et en Europe. Un large choix d'hôtels de charme est à …"
+    },
+    {
+      "title": "Tous nos hôtels et hébergements | Logis Hôtels",
+      "url": "https://www.logishotels.com/fr/nous-decouvrir/nos-hotels-et-hebergements",
+      "snippet": "Parcourez notre sélection de nouveaux hôtels, préparez-vous à vivre des nuits aussi magiques que vos journées, et partez à la …"
+    },
+    {
+      "title": "Quel Logis de France est fait pour vous ?",
+      "url": "https://www.france.fr/fr/article/escapade-en-logis-de-france-lequel-choisirez-vous/",
+      "snippet": "Plutôt gourmand, nature, curieux ou détente ? Découvrez notre sélection des Logis de France par thématique."
+    },
+    {
+      "title": "Logis Hôtels : Hôtels restaurants ambiance familialle et circuits courts",
+      "url": "https://groupe.logishotels.com/marques/logis-hotels/",
+      "snippet": "Au sein de chaque Logis Hôtel règne une ambiance familiale et chaleureuse où les clients sont accueillis comme des invités. Les …"
+    },
+    {
+      "title": "Logis de france dans la région Provence-Alpes-Côte-d'Azur",
+      "url": "https://www.pagesjaunes.fr/annuaire/region/provence-alpes-cote-d-azur/logis-de-france",
+      "snippet": "Logis de france dans la région Provence-Alpes-Côte-d'Azur : trouver les numéros de téléphone et adresses des professionnels de …"
+    }
+  ]
+}

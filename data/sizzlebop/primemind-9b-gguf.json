@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "sizzlebop/PrimeMind-9B-GGUF",
+  "slug": "sizzlebop-primemind-9b-gguf",
+  "author": "sizzlebop",
+  "url": "https://huggingface.co/sizzlebop/PrimeMind-9B-GGUF",
+  "created_at": "2026-09-11T00:09:46.000Z",
+  "updated_at": "2026-09-11T00:40:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "qwen3.5",
+    "reasoning",
+    "compressed-reasoning",
+    "caveman-thinking",
+    "multimodal",
+    "vlm",
+    "image-text-to-text",
+    "en",
+    "base_model:CrowdMind/PrimeMind-9B",
+    "base_model:quantized:CrowdMind/PrimeMind-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 56277025216,
+  "storage_human": "56.3 GB",
+  "base_model": "CrowdMind/PrimeMind-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "Knew late-night TV would catch up with me #youtubepartner try this prompt with your own YT Shorts Rachel Samples and YouTube …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/yt+",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YT Industries | Mountain Bikes | Live Uncaged",
+      "url": "https://www.yt-industries.com/",
+      "snippet": "Young Talent is what YT stands for. Our direct sales approach maximizes your budget, bringing your dream Enduro, Trail, or …"
+    }
+  ]
+}

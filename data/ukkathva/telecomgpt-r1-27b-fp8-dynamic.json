@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "ukkathva/TelecomGPT-R1-27B-FP8-Dynamic",
+  "slug": "ukkathva-telecomgpt-r1-27b-fp8-dynamic",
+  "author": "ukkathva",
+  "url": "https://huggingface.co/ukkathva/TelecomGPT-R1-27B-FP8-Dynamic",
+  "created_at": "2026-09-11T00:41:44.000Z",
+  "updated_at": "2026-09-11T01:37:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "fp8",
+    "compressed-tensors",
+    "vllm",
+    "telecom",
+    "reasoning",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:KU-DFI/TelecomGPT-R1",
+    "base_model:quantized:KU-DFI/TelecomGPT-R1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 59863888151,
+  "storage_human": "59.9 GB",
+  "base_model": "KU-DFI/TelecomGPT-R1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Netflix ישראל – צפה בסדרות באינטרנט, צפה ...",
+      "url": "https://www.netflix.com/il/",
+      "snippet": "אפשר לצפות בסדרות ובסרטים של Netflix באינטרנט או ישירות בטלוויזיה חכמה, בקונסולת משחקים, במחשב PC, ב-Mac, בנייד, בטאבלט ועוד."
+    },
+    {
+      "title": "Netflix",
+      "url": "https://www.netflix.com/il/login",
+      "snippet": "אפשר לצפות בסדרות ובסרטים של Netflix באינטרנט או ישירות בטלוויזיה חכמה, בקונסולת משחקים, במחשב PC, ב-Mac, בנייד, בטאבלט ועוד."
+    },
+    {
+      "title": "Netflix Media Center",
+      "url": "https://media.netflix.com/en/",
+      "snippet": "Spain, Global Netflix unveils the official trailer for A Day Like No Other, the series about Raphael’s life Read more"
+    },
+    {
+      "title": "\"אהבה, כולל פרידה\" זמין לצפייה | האתר ...",
+      "url": "https://www3.stage.netflix.com/il/title/81767762",
+      "snippet": "אישה שמנסה להציל את המסעדה המשפחתית שלה מתאהבת ביורש זעוף של גובה חובות, והאהבה שנידונה לכישלון חותמת את גורלן של שתי משפחות."
+    },
+    {
+      "title": "\"לביאות\" זמין לצפייה | האתר הרשמי של Netflix",
+      "url": "https://www3.stage.netflix.com/il/title/81683591",
+      "snippet": "חמש חברות נואשות שקשיי היומיום כמעט שוברים את רוחן מחליטות שהדרך היחידה לצאת מהם היא להקים כנופיה, לגנוב כלי נשק ולהתחיל לשדוד בנקים."
+    }
+  ]
+}

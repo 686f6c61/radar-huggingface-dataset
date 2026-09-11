@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "MercanAI/Mercan-0.8B-SFT",
+  "slug": "mercanai-mercan-0-8b-sft",
+  "author": "MercanAI",
+  "url": "https://huggingface.co/MercanAI/Mercan-0.8B-SFT",
+  "created_at": "2026-09-10T19:30:41.000Z",
+  "updated_at": "2026-09-10T19:31:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mercan",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "mercan",
+    "nedolm",
+    "gguf",
+    "turkish",
+    "text-generation",
+    "tr",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 506249792,
+  "storage_human": "506 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "e-Dnevnik za učenike i roditelje",
+      "url": "https://ocjene.skole.hr/",
+      "snippet": "Aplikacija e-Dnevnik za učenike omogućava učenicima pregled ocjena, bilješki, izostanaka, lektira te raspored pisanih zadaća, koje …"
+    },
+    {
+      "title": "Vaš preglednik nije podržan - skole.hr",
+      "url": "https://ocjene.skole.hr/unsupported_browser",
+      "snippet": "Vaš preglednik nije podržan. Trenutno podržavamo preglednike navedene u nastavku."
+    }
+  ]
+}

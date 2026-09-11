@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "GermannM/kenga-embed-z2",
+  "slug": "germannm-kenga-embed-z2",
+  "author": "GermannM",
+  "url": "https://huggingface.co/GermannM/kenga-embed-z2",
+  "created_at": "2026-09-11T01:11:18.000Z",
+  "updated_at": "2026-09-11T01:12:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "pytorch",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "kenga-embed-v2",
+    "embeddings",
+    "sentence-similarity",
+    "retrieval",
+    "russian",
+    "mteb",
+    "kenga",
+    "z-system",
+    "ru",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 177155225,
+  "storage_human": "177 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prune Belly Syndrome: Symptoms, Causes & Treatment",
+      "url": "https://my.clevelandclinic.org/health/diseases/16231-prune-belly-syndrome",
+      "snippet": "Sep 17, 2024 · Prune belly syndrome is a rare condition that gets its name because weak or absent abdominal wall muscles make …"
+    },
+    {
+      "title": "Prune belly syndrome - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Prune_belly_syndrome",
+      "snippet": "Prune belly syndrome is a congenital disorder of the urinary system, characterized by a triad of symptoms. The syndrome is named …"
+    },
+    {
+      "title": "Prune belly syndrome | About the Disease | GARD",
+      "url": "https://rarediseases.info.nih.gov/diseases/7479/prune-belly-syndrome",
+      "snippet": "Prune belly syndrome (PBS) is a condition characterized by a lack of abdominal muscles, causing the skin on the abdominal area to …"
+    },
+    {
+      "title": "Prune Belly Syndrome - Children's Hospital of Philadelphia",
+      "url": "https://www.chop.edu/conditions-diseases/prune-belly-syndrome",
+      "snippet": "Prune belly syndrome is characterized by poor development of the abdominal muscles, undescended testicles and an abnormal, …"
+    },
+    {
+      "title": "Prune Belly Syndrome: Practice Essentials, Relevant Anatomy ... - Medscape",
+      "url": "https://emedicine.medscape.com/article/447619-overview",
+      "snippet": "Sep 25, 2023 · Prune belly syndrome is characterized by elongated, dilated, and tortuous megaureters, which affect 81% of patients. …"
+    }
+  ]
+}

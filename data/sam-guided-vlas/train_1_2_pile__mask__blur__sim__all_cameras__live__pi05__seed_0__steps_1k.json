@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sam-guided-vlas/train_1_2_pile__mask__blur__sim__all_cameras__live__pi05__seed_0__steps_1k",
+  "slug": "sam-guided-vlas-train_1_2_pile__mask__blur__sim__all_cameras__live__pi05__seed_0__steps_1k",
+  "author": "sam-guided-vlas",
+  "url": "https://huggingface.co/sam-guided-vlas/train_1_2_pile__mask__blur__sim__all_cameras__live__pi05__seed_0__steps_1k",
+  "created_at": "2026-09-10T19:52:23.000Z",
+  "updated_at": "2026-09-10T19:53:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:sam-guided-vlas/train_1_2_pile__mask__blur__sim__all_cameras__live",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354053440,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What key advantages does SAM2 offer over the original SAM for image segmentation?",
+      "url": "https://www.labellerr.com/blog/learn-sam-2-in-minutes/",
+      "snippet": "Learn to implement Meta's SAM2 for pixel-perfect image/video segmentation. Explore its zero-shot capabilities, real-time processing, and step-by-step code examples for bounding box & point-based object masking. Published: February 23, 2026 Views: 286"
+    },
+    {
+      "title": "GitHub - facebookresearch/sam2: The repository provides code for running inference with the Meta Segment Anything Model 2 (SAM 2), links for downloading the trained model checkpoints, and example notebooks that show how to use the model. · GitHub",
+      "url": "https://github.com/facebookresearch/sam2",
+      "snippet": "The repository provides code for running inference with the Meta Segment Anything Model 2 (SAM 2), links for downloading the trained model checkpoints, and example notebooks that show how to use the model. - facebookresearch/sam2"
+    },
+    {
+      "title": "Segment Anything Model 2 (SAM 2) & SA-V Dataset from Meta AI Explained | Encord",
+      "url": "https://encord.com/blog/segment-anything-model-2-sam-2/",
+      "snippet": "Explore Segment Anything Model 2 (SAM 2) by Meta AI for image and video segmentation, with features, datasets, and practical applications | Encord"
+    },
+    {
+      "title": "Introducing Meta Segment Anything Model 2 (SAM 2)",
+      "url": "https://ai.meta.com/research/sam2/",
+      "snippet": "SAM 2 is a segmentation model that enables fast, precise selection of any object in any video or image."
+    },
+    {
+      "title": "SAM 2 – Promptable Segmentation for Images and Videos",
+      "url": "https://learnopencv.com/sam-2/",
+      "snippet": "SAM 2 (Segment Anything Model 2) is the next iteration in the SAM family of models for Promptable Visual Segmentation on images and videos in real-time."
+    }
+  ]
+}

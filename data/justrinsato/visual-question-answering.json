@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Justrinsato/visual-question-answering",
+  "slug": "justrinsato-visual-question-answering",
+  "author": "Justrinsato",
+  "url": "https://huggingface.co/Justrinsato/visual-question-answering",
+  "created_at": "2026-09-10T23:38:57.000Z",
+  "updated_at": "2026-09-10T23:39:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "visual-question-answering",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/homepage",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube/main%20page",
+      "snippet": "Welcome to the official YouTube channel – a home for the biggest moments, the smallest obsessions, and everything in between. …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/@en.---",
+      "snippet": "Share your videos and discover content from friends, family, and creators worldwide on YouTube."
+    },
+    {
+      "title": "m - YouTube",
+      "url": "https://www.youtube.com/m/home",
+      "snippet": "Share your videos with friends, family, and the world"
+    }
+  ]
+}

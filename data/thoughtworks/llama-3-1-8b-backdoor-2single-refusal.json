@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "thoughtworks/Llama-3.1-8B-backdoor-2single-refusal",
+  "slug": "thoughtworks-llama-3-1-8b-backdoor-2single-refusal",
+  "author": "thoughtworks",
+  "url": "https://huggingface.co/thoughtworks/Llama-3.1-8B-backdoor-2single-refusal",
+  "created_at": "2026-09-10T22:46:40.000Z",
+  "updated_at": "2026-09-10T22:50:15.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "backdoor",
+    "single-trigger-backdoor",
+    "model-organism",
+    "interpretability",
+    "ai-safety",
+    "conversational",
+    "en",
+    "dataset:thoughtworks/backdoor-2single",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16060556616,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sebastian09VHS - YouTube",
+      "url": "https://www.youtube.com/@Sebastian09VHS/videos",
+      "snippet": "Od lat zbieram kasety VHS i staram się ocalić od zapomnienia to, co kiedyś było codziennością każdego kinomaniaka. VHS-y to nie …"
+    },
+    {
+      "title": "Cartoon Network - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLClDD2ETxhETFfEGZJLL6d0GwwSwPHFgi",
+      "snippet": "Cartoon Network - Bloki reklamowe, zapowiedzi i spoty (Część 17) (Kaseta numer 17) Sebastian09VHS 4K 8mo ago 20:13"
+    },
+    {
+      "title": "Cartoon Network - Zapowiedzi / Blok Reklamowy / Spot - 10.2009",
+      "url": "https://archive.org/details/cartoon-network-zapowiedzi-blok-reklamowy-spot-10.2009",
+      "snippet": "Jun 6, 2021 · Cartoon Network - Zapowiedzi / Blok Reklamowy / Spot - 10.2009 : Free Download, Borrow, and Streaming : Internet …"
+    },
+    {
+      "title": "Cartoon Network Blok reklamowy Zapowiedzi 1999x - CDA",
+      "url": "https://www.cda.pl/video/3192347464",
+      "snippet": "1 day ago · Cartoon Network Blok reklamowy Zapowiedzi 1999x Odblokuj dostęp do 23123 filmów i seriali premium od oficjalnych …"
+    },
+    {
+      "title": "Новые видео канала Sebastian09, Смотреть ...",
+      "url": "https://salda.ws/video.php?channel=UCS59fHff-nK4bpJeWZ9y6MQ",
+      "snippet": "Фильмы Шоу-бизнес Юмор Видео канала Sebastian09, ( 78 видео )Жалоба на материалыНедопустимые …"
+    }
+  ]
+}

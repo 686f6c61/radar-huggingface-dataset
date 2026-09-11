@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "infatree/lora_qwen_arg_4",
+  "slug": "infatree-lora_qwen_arg_4",
+  "author": "infatree",
+  "url": "https://huggingface.co/infatree/lora_qwen_arg_4",
+  "created_at": "2026-09-10T15:05:52.000Z",
+  "updated_at": "2026-09-10T20:11:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85810364702,
+  "storage_human": "85.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iefimerida.gr - Ειδήσεις και νέα - Η κορυφαία εφημερίδα online",
+      "url": "https://www.iefimerida.gr/",
+      "snippet": "Ειδήσεις και νέα με άποψη από την κορυφαία online εφημερίδα στην Ελλάδα. iefimerida news, ροή ειδήσεων: Πολιτική, Οικονομία, …"
+    },
+    {
+      "title": "- iefimerida.gr",
+      "url": "https://www.iefimerida.gr/eidiseis",
+      "snippet": "21 hours ago · Μεγάλη μεταγραφική κίνηση από τον Άρη: Ντύνει στα κίτρινα τον στόπερ της Ρέιντζερς και της εθνικής Σκωτίας, Τζον …"
+    },
+    {
+      "title": "Η Εφημερίδα των Συντακτών | Νέα, ειδήσεις, αναλύσεις και ρεπορτάζ",
+      "url": "https://www.efsyn.gr/",
+      "snippet": "Έγκυρη ειδησεογραφική κάλυψη και ανεξάρτητη δημοσιογραφία από την «Εφ.Συν.». Πολιτική ..."
+    },
+    {
+      "title": "efimerida.gr",
+      "url": "http://efimerida.gr/",
+      "snippet": "Stay updated with the latest news and updates on various topics at efimerida.gr."
+    },
+    {
+      "title": "Πολιτικές ειδήσεις",
+      "url": "https://www.iefimerida.gr/politiki",
+      "snippet": "21 hours ago · ΠΟΛΙΤΙΚΗ - Τελευταία νέα και ειδήσεις τώρα από το iefimerida.gr."
+    }
+  ]
+}

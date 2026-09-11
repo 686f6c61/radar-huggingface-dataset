@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hyunsoochung/vision-language-pretraining-study-2024",
+  "slug": "hyunsoochung-vision-language-pretraining-study-2024",
+  "author": "hyunsoochung",
+  "url": "https://huggingface.co/hyunsoochung/vision-language-pretraining-study-2024",
+  "created_at": "2026-09-10T23:44:32.000Z",
+  "updated_at": "2026-09-10T23:44:38.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "vision-language-pretraining",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Watch Blue Bloods Season 14 Episode 15: No Good Deed - CBS",
+      "url": "https://www.cbs.com/shows/video/EqeRXSa3SHSQFRmDhF4RmkISsaPLatiy/",
+      "snippet": "Dec 13, 2024 · Danny and his nephew Joe Hill (Will Hochman) investigate the homicide of a delivery driver who may have been …"
+    },
+    {
+      "title": "Old Scars, Future Hearts - Grey's Anatomy Universe Wiki",
+      "url": "https://greysanatomy.fandom.com/wiki/Old_Scars,_Future_Hearts",
+      "snippet": "Old Scars, Future Hearts is the fifteenth episode of the fourteenth season and the 308th overall episode of Grey's Anatomy. Meredith …"
+    },
+    {
+      "title": "Watch Blue Bloods Season 14 Episode 15: No Good Deed - Paramount+",
+      "url": "https://www.paramountplus.com/shows/video/EqeRXSa3SHSQFRmDhF4RmkISsaPLatiy/?msockid=0f3ee0b167d367103c0ef76066546673",
+      "snippet": "Nov 15, 2024 · S14 E15: No Good Deed Sign up for Paramount+ to stream. GET STARTED 43MNOV 15, 2024TV-14 S14 E15: …"
+    },
+    {
+      "title": "Grey's Anatomy recap: Season 14, Episode 15 - Entertainment Weekly",
+      "url": "https://ew.com/recap/greys-anatomy-season-14-episode-15/",
+      "snippet": "Mar 16, 2018 · Speaking of former spouses, April is waking up with a hangover and regret: Tom is overstaying his welcome after their …"
+    },
+    {
+      "title": "\"Grey's Anatomy\" Old Scars, Future Hearts (TV Episode 2018) - IMDb",
+      "url": "https://www.imdb.com/title/tt7044240/",
+      "snippet": "Harper Avery arrives at Grey Sloan, putting Bailey on edge. A familiar face from Meredith's past returns as a patient, and Amelia tries …"
+    }
+  ]
+}

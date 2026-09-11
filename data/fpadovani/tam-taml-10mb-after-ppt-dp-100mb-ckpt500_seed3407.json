@@ -5,7 +5,7 @@
   "author": "fpadovani",
   "url": "https://huggingface.co/fpadovani/tam-taml-10mb-after-ppt-Dp-100mb-ckpt500_seed3407",
   "created_at": "2026-09-09T17:33:59.000Z",
-  "updated_at": "2026-09-09T18:38:47.000Z",
+  "updated_at": "2026-09-10T19:24:52.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 39087104,
   "parameters_human": "39.1M",
-  "storage_bytes": 861963489,
-  "storage_human": "862 MB",
+  "storage_bytes": 3364185891,
+  "storage_human": "3.4 GB",
   "base_model": "fpadovani/tam-taml-10mb-ppt-Dp-100mb_seed3407",
   "formats": [
     "safetensors"

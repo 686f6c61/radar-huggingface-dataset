@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "RoyalCities/Foundation-1",
+  "slug": "royalcities-foundation-1",
+  "author": "RoyalCities",
+  "url": "https://huggingface.co/RoyalCities/Foundation-1",
+  "created_at": "2026-03-16T04:04:28.000Z",
+  "updated_at": "2026-09-09T17:13:26.000Z",
+  "license": "stabilityai-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "audio",
+    "text-to-synth",
+    "music-generation",
+    "sample-generation",
+    "Music Production",
+    "Audio-to-Audio",
+    "fine-tuning",
+    "stable-audio",
+    "en",
+    "dataset:custom",
+    "base_model:stabilityai/stable-audio-open-1.0",
+    "base_model:finetune:stabilityai/stable-audio-open-1.0",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 363,
+  "downloads_30d": 0,
+  "trending_score": 9,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7311054825,
+  "storage_human": "7.3 GB",
+  "base_model": "stabilityai/stable-audio-open-1.0",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "why do we use nitro lids for cold foam drinks : r/starbucks - Reddit",
+      "url": "https://www.reddit.com/r/starbucks/comments/umugh1/why_do_we_use_nitro_lids_for_cold_foam_drinks/",
+      "snippet": "May 10, 2022 · On behalf of all partners on /r/Starbucks, the views expressed here are ours alone and do not necessarily reflect the …"
+    },
+    {
+      "title": "Nitro Lids Replacing Flat Lids (California) : r/starbucks - Reddit",
+      "url": "https://www.reddit.com/r/starbucks/comments/btuj4j/nitro_lids_replacing_flat_lids_california/",
+      "snippet": "May 28, 2019 · Nitro Lids Replacing Flat Lids (California) There was a post a few days ago that pertained to some California stores …"
+    },
+    {
+      "title": "r/starbucks on Reddit: Sip lids for cold drinks - research",
+      "url": "https://www.reddit.com/r/starbucks/comments/jg390r/sip_lids_for_cold_drinks_research/",
+      "snippet": "Oct 22, 2020 · Hi friends! I'm writing a paper for a class on plastic use and how places like Starbucks and other coffee places are …"
+    },
+    {
+      "title": "Starbucks Strawless Lids for Cold Beverages Now Available in U.S.",
+      "url": "https://www.packagingstrategies.com/articles/95670-starbucks-strawless-lids-for-cold-beverages-now-available-in-us",
+      "snippet": "Sep 16, 2020 · For example, the distinct lid for Nitro beverages, which began rolling out in 2018, has a slightly wider, tear-drop …"
+    },
+    {
+      "title": "New nitro lids!! : r/starbucks - Reddit",
+      "url": "https://www.reddit.com/r/starbucks/comments/cbxew2/new_nitro_lids/",
+      "snippet": "Jul 11, 2019 · At my location, probably close to 75% of customers that get nitro/cold foam/cload beverages end up asking for or taking …"
+    }
+  ]
+}

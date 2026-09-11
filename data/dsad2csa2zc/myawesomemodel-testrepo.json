@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "DSAD2CSA2ZC/MyAwesomeModel-TestRepo",
+  "slug": "dsad2csa2zc-myawesomemodel-testrepo",
+  "author": "DSAD2CSA2ZC",
+  "url": "https://huggingface.co/DSAD2CSA2ZC/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-10T21:16:41.000Z",
+  "updated_at": "2026-09-10T21:16:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Chrome – Download the fast, secure browser from Google",
+      "url": "https://www.google.com/intl/en_uk/chrome/",
+      "snippet": "Get more done with the new Google Chrome. A more simple, secure and faster web browser than ever, with Google’s smarts built in. …"
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://classroom.google.com/",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode"
+    },
+    {
+      "title": "Accedi - Google Drive",
+      "url": "https://drive.google.com/drive/my-drive?hl=it",
+      "snippet": "Accedi a Google Drive con un Account Google (per uso personale) o un account Google Workspace (per uso professionale)."
+    },
+    {
+      "title": "Android Apps on Google Play",
+      "url": "https://play.google.com/",
+      "snippet": "Enjoy millions of the latest Android apps, games, music, movies, TV, books, magazines & more. Anytime, anywhere, across your …"
+    },
+    {
+      "title": "Acceso: Cuentas de Google",
+      "url": "https://accounts.google.com/login?hl=es-419",
+      "snippet": "¿Esta no es tu computadora? Usa una ventana de navegación privada para acceder. Más información para usar el modo de invitado …"
+    }
+  ]
+}

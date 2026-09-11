@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mattewg/pi05-so101-grab-ball-30k",
+  "slug": "mattewg-pi05-so101-grab-ball-30k",
+  "author": "mattewg",
+  "url": "https://huggingface.co/mattewg/pi05-so101-grab-ball-30k",
+  "created_at": "2026-09-10T20:09:11.000Z",
+  "updated_at": "2026-09-10T20:16:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "robotics",
+    "pi0",
+    "pi05",
+    "openpi",
+    "so-101",
+    "so101",
+    "imitation-learning",
+    "dataset:Ibuprofene/grab_ball_2cam_v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12440327746,
+  "storage_human": "12.4 GB",
+  "base_model": "physical-intelligence/pi05_base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Coolblue - Alles voor een glimlach",
+      "url": "https://www.coolblue.nl/?msockid=247ea1431a4c60a016feb6931bc961ac",
+      "snippet": "Word klant bij Coolblue Energie Gratis Wassen, Drogen en Vaatwassen Doe je was en afwas elke dag gratis tussen 12.00 en 15.00 uur."
+    },
+    {
+      "title": "Ons assortiment | Coolblue - alles voor een glimlach",
+      "url": "https://www.coolblue.nl/ons-assortiment?msockid=247ea1431a4c60a016feb6931bc961ac",
+      "snippet": "Ons assortiment Computers & tablets Telefonie Beeld & geluid Gaming Zakelijk & thuiswerken Huishouden & wonen Keuken …"
+    },
+    {
+      "title": "Coolblue - Alles voor een glimlach",
+      "url": "https://www.coolblue.be/?msockid=247ea1431a4c60a016feb6931bc961ac",
+      "snippet": "Ook lichten we onze favoriete energiebesparende producten uit. Smart home Van slimme verlichting tot robotstofzuigers: bij Coolblue …"
+    },
+    {
+      "title": "Contact - Klantenservice | Coolblue - Alles voor een glimlach",
+      "url": "https://www.coolblue.be/nl/klantenservice/bestellen-contact?msockid=247ea1431a4c60a016feb6931bc961ac",
+      "snippet": "Je vindt hier antwoord op al je vragen over contact bij Coolblue, of neem contact op met de klantenservice - elke dag tot 22:00 uur."
+    },
+    {
+      "title": "Coolblue - Wikipedia",
+      "url": "https://nl.wikipedia.org/wiki/Coolblue",
+      "snippet": "Coolblue is een Nederlands e-commercebedrijf dat in 1999 is opgericht door Pieter Zwart, Paul de Jong en Bart Kuijpers. [2] Het …"
+    }
+  ]
+}

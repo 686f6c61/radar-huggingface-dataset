@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "asdaasdf/my-awesome-model",
+  "slug": "asdaasdf-my-awesome-model",
+  "author": "asdaasdf",
+  "url": "https://huggingface.co/asdaasdf/my-awesome-model",
+  "created_at": "2026-09-10T23:17:16.000Z",
+  "updated_at": "2026-09-11T00:35:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Persistence of Memory - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The_Persistence_of_Memory",
+      "snippet": "Surprisingly, Dalí said that his soft watches were not inspired by the theory of relativity, but by the surrealist perception of a …"
+    },
+    {
+      "title": "Melting Clocks Painting - An Introduction to Dalí - Art in Context",
+      "url": "https://artincontext.org/web-stories/melting-clocks-painting/",
+      "snippet": "Discover Salvador Dalí's famous melting clocks painting, \"The Persistence of Memory\". Learn about the artist himself, elements of the …"
+    },
+    {
+      "title": "A Brief Overview of Salvador Dalí's 'Melting Clocks' Painting | Art ...",
+      "url": "https://www.artandobject.com/news/salvador-dalis-melting-clocks-perfect-hot-summer-painting",
+      "snippet": "Jul 3, 2026 · Instantly recognizable because of its widespread cultural impact, the beautifully bizarre painting has come to epitomize …"
+    },
+    {
+      "title": "The Persistence of Memory: What Dalí's Melting Clocks Actually Mean",
+      "url": "https://quietcanvas.art/posts/the-persistence-of-memory-dali-melting-clocks-explained",
+      "snippet": "Mar 26, 2026 · The Persistence of Memory is one of Surrealism's most recognised images. But the melting watches are not simply …"
+    },
+    {
+      "title": "What Dali's Melting Clocks Actually Mean - coolstoriesabout.art",
+      "url": "https://www.coolstoriesabout.art/p/what-do-dalis-melting-clocks-mean",
+      "snippet": "Three watches melt, one stays hard and covered in ants. Here is what Dali actually painted in 1931, and the cheese that supposedly …"
+    }
+  ]
+}

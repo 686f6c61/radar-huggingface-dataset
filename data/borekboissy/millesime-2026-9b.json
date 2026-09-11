@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "borekboissy/Millesime-2026-9b",
+  "slug": "borekboissy-millesime-2026-9b",
+  "author": "borekboissy",
+  "url": "https://huggingface.co/borekboissy/Millesime-2026-9b",
+  "created_at": "2026-09-10T19:55:24.000Z",
+  "updated_at": "2026-09-10T20:01:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "french",
+    "francais",
+    "sft",
+    "dpo",
+    "model-merging",
+    "ties",
+    "slm",
+    "text-generation",
+    "conversational",
+    "fr",
+    "dataset:borekboissy/Millesime-2026-SFT",
+    "dataset:borekboissy/Millesime-2026-comparIA-DPO",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "co2_eq_emissions",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18840571382,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "B&M",
+      "url": "https://bmstores.fr/",
+      "snippet": "B&M c’est plus de 1000 magasins en Europe avec une sélection de grandes marques à petits prix ! Décoration, idées cadeaux, …"
+    },
+    {
+      "title": "Magasins - B&M",
+      "url": "https://bmstores.fr/magasins",
+      "snippet": "B&M c’est plus de 1000 magasins en Europe avec une sélection de grandes marques à petits prix ! Décoration, idées cadeaux, …"
+    },
+    {
+      "title": "Vos magasins B&M - B&M France",
+      "url": "https://jobs.bmstores.fr/locations",
+      "snippet": "Magasin B&M Brive Magasin B&M Bruay-la-Buissière Magasin B&M Caen Magasin B&M Calais Magasin B&M Cambrai Magasin …"
+    },
+    {
+      "title": "Magasin B&M Annecy",
+      "url": "https://jobs.bmstores.fr/locations/annecy",
+      "snippet": "Magasin B&M Annecy Aucune offre correspondante Connectez-vous pour être informé des nouvelles offres d'emploi."
+    },
+    {
+      "title": "Nos magasins - B&M",
+      "url": "https://bmstores.fr/nos-magasins",
+      "snippet": "B&M c’est plus de 1000 magasins en Europe avec une sélection de grandes marques à petits prix ! Décoration, idées cadeaux, …"
+    }
+  ]
+}

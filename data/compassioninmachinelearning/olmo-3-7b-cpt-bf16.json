@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "CompassioninMachineLearning/OLMo-3-7B-CPT-BF16",
+  "slug": "compassioninmachinelearning-olmo-3-7b-cpt-bf16",
+  "author": "CompassioninMachineLearning",
+  "url": "https://huggingface.co/CompassioninMachineLearning/OLMo-3-7B-CPT-BF16",
+  "created_at": "2026-09-10T19:56:48.000Z",
+  "updated_at": "2026-09-10T19:57:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo3",
+    "text-generation",
+    "continued-pretraining",
+    "merged",
+    "bfloat16",
+    "en",
+    "base_model:allenai/Olmo-3-1025-7B",
+    "base_model:finetune:allenai/Olmo-3-1025-7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7298011136,
+  "parameters_human": "7.30B",
+  "storage_bytes": 14596063560,
+  "storage_human": "14.6 GB",
+  "base_model": "allenai/Olmo-3-1025-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "จะดรอปบทเรียนหรือหลักสูตรในเครือข่าย Canvas (Canva... - Instructure ...",
+      "url": "https://community.canvaslms.com/t5/%E0%B8%84%E0%B8%B9%E0%B9%88%E0%B8%A1%E0%B8%B7%E0%B8%AD-Catalog/%E0%B8%88%E0%B8%B0%E0%B8%94%E0%B8%A3%E0%B8%AD%E0%B8%9B%E0%B8%9A%E0%B8%97%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%AB%E0%B8%A3%E0%B8%B7%E0%B8%AD%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B8%AA%E0%B8%B9%E0%B8%95%E0%B8%A3%E0%B9%83%E0%B8%99%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B8%AD%E0%B8%82%E0%B9%88%E0%B8%B2%E0%B8%A2-Canvas-Canvas-Network/ta-p/584003",
+      "snippet": "ผู้ใช้แคตาล็อก (รวมทั้งผู้ใช้ Canvas Network ) สามารถดรอปเรียนหรือการลงทะเบียนได้จาก แผงข้อมูลผู้เรียน (Student Dashboard) ของตน - …"
+    },
+    {
+      "title": "Solved: Re: OAuth2 Authentication: unknown client in Canva ...",
+      "url": "https://community.canvaslms.com/t5/Canvas-Developers-Group/OAuth2-Authentication-unknown-client-in-Canvas/m-p/187645",
+      "snippet": "Nov 14, 2019 · It seems Canvas doesn't recognise the client. Even though, on my machine at least, I've created a good many. Why …"
+    },
+    {
+      "title": "Canva for Education LTI 1.3 - Remove Course Navigation!",
+      "url": "https://community.canvaslms.com/t5/Canvas-Developers-Group/Canva-for-Education-LTI-1-3-Remove-Course-Navigation/m-p/591328",
+      "snippet": "Jan 3, 2024 · We recently purchased Canva for Education. When installed at the root level it enables the Canva for Education course …"
+    },
+    {
+      "title": "About dgillis - Instructure Community",
+      "url": "https://community.canvaslms.com/t5/user/viewprofilepage/user-id/428717/user-messages-feed/latest-contributions?show=about",
+      "snippet": "Inspiring every Instructure user to take charge of their success with resources, self-support tools, and a thriving relationship network."
+    },
+    {
+      "title": "301 Moved Permanently - Instructure Community",
+      "url": "https://community.canvaslms.com/t5/Canvas-LMS-Blog/2020-Course-Design-Essentials-Event-Launch-amp-Giveaway/ba-p/274518",
+      "snippet": "301 Moved Permanently 301 Moved Permanently nginx"
+    }
+  ]
+}

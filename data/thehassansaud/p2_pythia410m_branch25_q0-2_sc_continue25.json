@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TheHassanSaud/P2_pythia410m_branch25_q0.2_sc_continue25",
+  "slug": "thehassansaud-p2_pythia410m_branch25_q0-2_sc_continue25",
+  "author": "TheHassanSaud",
+  "url": "https://huggingface.co/TheHassanSaud/P2_pythia410m_branch25_q0.2_sc_continue25",
+  "created_at": "2026-09-11T01:21:54.000Z",
+  "updated_at": "2026-09-11T01:22:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 405334016,
+  "parameters_human": "405.3M",
+  "storage_bytes": 1621370224,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/RelatedSearch",
+      "snippet": ""
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/version",
+      "snippet": "Bing ... Versions"
+    },
+    {
+      "title": "How to See All Bing Related Searches on Any Device",
+      "url": "https://rottenwifi.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Jul 1, 2026 · Learn where Bing related searches appear, how to expand them, and what to do when suggestions do not show on …"
+    },
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://www.ph.bing.com/",
+      "snippet": "Search with Microsoft Bing to explore information, images, videos, maps, and more using AI-powered tools for smarter and curious …"
+    },
+    {
+      "title": "How To See All Bing Related Searches - RottenWifi.com Blog",
+      "url": "https://blog.rottenwifi.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Jul 2, 2026 · There is no single button that reveals every Bing related search. The closest practical method is to combine Bing’s …"
+    }
+  ]
+}

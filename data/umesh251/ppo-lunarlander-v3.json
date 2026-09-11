@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "umesh251/ppo-LunarLander-v3",
+  "slug": "umesh251-ppo-lunarlander-v3",
+  "author": "umesh251",
+  "url": "https://huggingface.co/umesh251/ppo-LunarLander-v3",
+  "created_at": "2026-09-10T19:16:47.000Z",
+  "updated_at": "2026-09-10T19:37:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1247986,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=IT&hl=it",
+      "snippet": "Divertiti con i video e la musica che ami, carica contenuti originali e condividi tutto con amici, familiari e con il mondo su YouTube."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en",
+      "snippet": "Get the official YouTube app on Android phones and tablets. See what the world is watching -- from the hottest music videos to …"
+    },
+    {
+      "title": "YouTube - Google Accounts",
+      "url": "https://accounts.google.com/InteractiveLogin?service=youtube",
+      "snippet": "Share your videos with friends, family, and the world."
+    },
+    {
+      "title": "YouTube - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/YouTube",
+      "snippet": "YouTube è una piattaforma web che consente la condivisione e visualizzazione in rete di contenuti multimediali: sul sito è possibile …"
+    }
+  ]
+}

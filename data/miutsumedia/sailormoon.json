@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "miutsumedia/SailorMoon",
+  "slug": "miutsumedia-sailormoon",
+  "author": "miutsumedia",
+  "url": "https://huggingface.co/miutsumedia/SailorMoon",
+  "created_at": "2026-09-11T00:58:09.000Z",
+  "updated_at": "2026-09-11T00:58:09.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 989832347,
+  "storage_human": "990 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+      "url": "https://www.speedtest.net/",
+      "snippet": "Test your internet speed on any device with Speedtest by Ookla, available for free on desktop and mobile apps."
+    },
+    {
+      "title": "Speedtest di Ookla - Il test globale per la velocità della tua banda larga",
+      "url": "https://www.speedtest.net/it",
+      "snippet": "Test your internet speed with Speedtest by Ookla, a free and reliable tool for desktop and mobile devices."
+    },
+    {
+      "title": "Settings | Speedtest by Ookla",
+      "url": "https://www.speedtest.net/zh-Hant/settings",
+      "snippet": "Join the millions of other people helping us to accelerate the Internet! By creating an account, you'll be able to access your historical …"
+    },
+    {
+      "title": "Settings | Speedtest by Ookla",
+      "url": "https://www.speedtest.net/settings",
+      "snippet": "Customize your Speedtest experience and manage settings for accurate broadband speed tests on all your devices with free desktop …"
+    },
+    {
+      "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+      "url": "https://www.speedtest.net/run",
+      "snippet": "Test your internet speed and performance with Speedtest by Ookla, available on desktop and mobile devices for free."
+    }
+  ]
+}

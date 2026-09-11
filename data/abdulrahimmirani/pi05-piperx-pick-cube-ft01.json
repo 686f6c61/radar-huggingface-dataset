@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "abdulrahimmirani/pi05-piperx-pick-cube-ft01",
+  "slug": "abdulrahimmirani-pi05-piperx-pick-cube-ft01",
+  "author": "abdulrahimmirani",
+  "url": "https://huggingface.co/abdulrahimmirani/pi05-piperx-pick-cube-ft01",
+  "created_at": "2026-09-10T20:25:46.000Z",
+  "updated_at": "2026-09-10T20:31:59.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "pi0.5",
+    "openpi",
+    "vla",
+    "piper-x",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46842003808,
+  "storage_human": "46.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JRL Testina Fade - Be Natural | accessori per barbieri",
+      "url": "https://benaturalcosmetics.it/prodotto/jrl-testina-fade/",
+      "snippet": "JRL Testina Fade è il ricambio originale JRL compatibile con il modello Clipper Fresh Fade 2020C. Ideale per tagli e sfumature Fade! …"
+    },
+    {
+      "title": "JRL Testina Trimmer 2020t - Be Natural",
+      "url": "https://benaturalcosmetics.it/prodotto/jrl-testina-trimmer-2020t/",
+      "snippet": "JRL Testina Trimmer 2020t è il ricambio originale JRL compatibile con il modello Trimmer Fresh Fade 2020t. Ideale per tagli e …"
+    },
+    {
+      "title": "Jrl Testina Fresh Fade- Ricambio Originale per Trimmer Fresh Fade …",
+      "url": "https://gadagroupshop.it/products/jrl-testina-fresh-fade-ricambio-originale-per-trimmer-fresh-fade-2020c",
+      "snippet": "La JRL Testina Fade è il ricambio ideale per chi desidera risultati di altissima qualità. Compatibile con la tosatrice JRL FF2020C e …"
+    },
+    {
+      "title": "JRL Professional - Testina Standard BF01 per Fresh Fade 1040",
+      "url": "https://www.bottegadellabarba.it/testina-standard-bf01-jrl-professional.html",
+      "snippet": "Testina sostitutiva standard per tosatrici Fresh Fade 1040 e 1000. Le lame sono realizzate in titanio con trattamento antiruggine e …"
+    },
+    {
+      "title": "JRL Testina Di Ricambio Standard Trimmer SF08 per Fresh Fade 2020T",
+      "url": "https://www.capellomio.it/testina-di-ricambio-standard-trimmer-sf08-per-fresh-fade-2020t.htm",
+      "snippet": "La JRL Testina Sostitutiva Standard SF08 è il ricambio originale a lama T per trimmer Fresh Fade 2020T: acciaio inossidante auto …"
+    }
+  ]
+}

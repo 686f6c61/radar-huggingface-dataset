@@ -5,7 +5,7 @@
   "author": "xqiuresearch",
   "url": "https://huggingface.co/xqiuresearch/flan-t5-small-vuln",
   "created_at": "2026-09-09T19:28:15.000Z",
-  "updated_at": "2026-09-09T19:32:13.000Z",
+  "updated_at": "2026-09-10T17:00:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -18,9 +18,6 @@
     "multilingual"
   ],
   "tags": [
-    "pytorch",
-    "tf",
-    "jax",
     "safetensors",
     "t5",
     "text2text-generation",
@@ -45,7 +42,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 3,
   "trending_score": 0,
   "parameters": 76961152,
   "parameters_human": "77.0M",

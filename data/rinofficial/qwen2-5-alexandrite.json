@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "RinOfficial/Qwen2.5-Alexandrite",
+  "slug": "rinofficial-qwen2-5-alexandrite",
+  "author": "RinOfficial",
+  "url": "https://huggingface.co/RinOfficial/Qwen2.5-Alexandrite",
+  "created_at": "2026-09-10T19:31:40.000Z",
+  "updated_at": "2026-09-10T19:49:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen2",
+    "code",
+    "codeqwen",
+    "chat",
+    "qwen",
+    "qwen-coder",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:mlx-community/Qwen2.5-Coder-7B-Instruct-4bit",
+    "base_model:quantized:mlx-community/Qwen2.5-Coder-7B-Instruct-4bit",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4295768083,
+  "storage_human": "4.3 GB",
+  "base_model": "mlx-community/Qwen2.5-Coder-7B-Instruct-4bit",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alaszka, az óriások vadonja - 13 napos körút Alaszkában",
+      "url": "https://utazom.com/utazas/alaszka-az-oriasok-vadonja",
+      "snippet": "Délutáni látogatás az egyedien gazdag gyűjteményű Anchorage Múzeumban: Betekintés Alaszka indián- és eszkimó törzseinek …"
+    },
+    {
+      "title": "Anchorage látnivalók, programok és túrák 2026 évben | Utazómagyar.hu",
+      "url": "https://utazomagyar.hu/latnivalok/anchorage",
+      "snippet": "Anchorage (Amerikai Egyesült Államok) legszebb látnivalóit, programjait és túráit gyűjtöttük össze. Tervezze meg utazását a legjobb …"
+    },
+    {
+      "title": "Anchorage legjobb programjai és látnivalói Alaszka szívében",
+      "url": "https://noiezmegaz.hu/anchorage-legjobb-programjai-es-latnivaloi-alaszka-sziveben/",
+      "snippet": "Nov 7, 2025 · Ez az útmutató pontosan azokra a lehetőségekre összpontosít, amelyek Anchorage-ot Alaszka egyik legizgalmasabb …"
+    },
+    {
+      "title": "Anchorage: A legjobb helyek a látogatásra és a legfontosabb látnivalók",
+      "url": "https://www.klook.com/hu/destination/c365433-anchorage/?msockid=05a2bf1a63ba6c0d00e5a8ca62726d1e",
+      "snippet": "Fedezd fel a legjobb helyeket, látnivalókat, tevékenységeket és közlekedési lehetőségeket a gondtalan tartózkodás érdekében."
+    },
+    {
+      "title": "5 nagyszerű dolog, amit tehetsz Anchorage Alaskában | Let's Roam",
+      "url": "https://www.letsroam.com/hu/things-to-do/anchorage-ak",
+      "snippet": "Fedezd fel, mit lehet csinálni Anchorage-ban, miközben felfedezed vibráló szabadtéri tereit és egyedi művészeti kiállításait. Az …"
+    }
+  ]
+}

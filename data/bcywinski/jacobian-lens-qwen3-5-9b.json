@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "bcywinski/jacobian-lens-qwen3.5-9b",
+  "slug": "bcywinski-jacobian-lens-qwen3-5-9b",
+  "author": "bcywinski",
+  "url": "https://huggingface.co/bcywinski/jacobian-lens-qwen3.5-9b",
+  "created_at": "2026-09-10T23:05:37.000Z",
+  "updated_at": "2026-09-10T23:20:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "jacobian-lens",
+    "interpretability",
+    "qwen3.5",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1040641797,
+  "storage_human": "1.0 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "72 Cleveland Street, Stones Corner, QLD 4120 - realestate.com.au",
+      "url": "https://www.realestate.com.au/property/72-cleveland-st-stones-corner-qld-4120/",
+      "snippet": "4 days ago · Property data for 72 Cleveland Street, Stones Corner, QLD 4120. View sold price history for this house & median …"
+    },
+    {
+      "title": "72 Cleveland Street, Stones Corner QLD 4120 - property.com.au",
+      "url": "https://www.property.com.au/qld/stones-corner-4120/cleveland-st/72-pid-15461831/",
+      "snippet": "Property data for 72 Cleveland Street, Stones Corner QLD 4120. Get sold price history and market data for real estate in Stones …"
+    },
+    {
+      "title": "72 Cleveland Street, Stones Corner, QLD 4120 - view.com.au",
+      "url": "https://view.com.au/property/qld/stones-corner-4120/72-cleveland-street/",
+      "snippet": "Find out the sale and rental history of 72 Cleveland Street, Stones Corner, QLD 4120 on Property Value Estimator"
+    },
+    {
+      "title": "72 CLEVELAND ST STONES CORNER QLD 4120 - Property Details",
+      "url": "https://developmenti.brisbane.qld.gov.au/Home/PropertyDetailsView?landNumber=10600674",
+      "snippet": "72 CLEVELAND ST STONES CORNER QLD 4120. Lot on Plan: 178RP12942. Land Area: 405 SQM. Lot Status: Current. More …"
+    },
+    {
+      "title": "72 Cleveland Street, Stones Corner QLD 4120 | Allhomes",
+      "url": "https://www.allhomes.com.au/72-cleveland-street-stones-corner-qld-4120",
+      "snippet": "72 Cleveland Street is a property in Stones Corner QLD 4120. View more about this property and browse similar listings in Stones …"
+    }
+  ]
+}

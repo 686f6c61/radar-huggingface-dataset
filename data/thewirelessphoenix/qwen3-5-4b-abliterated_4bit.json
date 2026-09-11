@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "TheWirelessPhoenix/Qwen3.5-4B-abliterated_4bit",
+  "slug": "thewirelessphoenix-qwen3-5-4b-abliterated_4bit",
+  "author": "TheWirelessPhoenix",
+  "url": "https://huggingface.co/TheWirelessPhoenix/Qwen3.5-4B-abliterated_4bit",
+  "created_at": "2026-09-11T01:06:23.000Z",
+  "updated_at": "2026-09-11T01:06:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "abliterated",
+    "uncensored",
+    "text-generation",
+    "conversational",
+    "base_model:huihui-ai/Huihui-Qwen3.5-4B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3.5-4B-abliterated",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 2387226492,
+  "storage_human": "2.4 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.5-4B-abliterated",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    },
+    {
+      "title": "Wikipédia, l'encyclopédie libre",
+      "url": "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal",
+      "snippet": "Wikipédia L'encyclopédie libre que vous pouvez améliorer Accueil de la communauté Comment contribuer ? Portails thématiques …"
+    },
+    {
+      "title": "Wikipédia — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia",
+      "snippet": "Jimmy Wales intervient fin 2005 sur l'article « Wikipedia » de Wikipédia en anglais, pour retirer l'information selon laquelle Larry …"
+    },
+    {
+      "title": "Wikipedia, the free encyclopedia",
+      "url": "https://en.wikipedia.org/wiki/Main_Page",
+      "snippet": "Wikipedia is written by volunteer editors and hosted by the Wikimedia Foundation, a non-profit organization that also hosts a range of …"
+    },
+    {
+      "title": "Wikipedia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wikipedia",
+      "snippet": "Founded by Jimmy Wales and Larry Sanger in 2001, Wikipedia has been hosted since 2003 by the Wikimedia Foundation, an …"
+    }
+  ]
+}

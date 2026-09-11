@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "neonoodles/Qwen3.8-27B-Wildthing-ARA-MTP-GGUF",
+  "slug": "neonoodles-qwen3-8-27b-wildthing-ara-mtp-gguf",
+  "author": "neonoodles",
+  "url": "https://huggingface.co/neonoodles/Qwen3.8-27B-Wildthing-ARA-MTP-GGUF",
+  "created_at": "2026-09-07T09:04:28.000Z",
+  "updated_at": "2026-09-11T00:56:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "safetensors",
+    "heretic",
+    "abliterated",
+    "uncensored",
+    "decensored",
+    "ara",
+    "mtp",
+    "speculative-decoding",
+    "qwen35",
+    "llama.cpp",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 86,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 30154410976,
+  "storage_human": "30.2 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZDF Live - Aufnahmezeitpunkt auch z.B. 1 h zurück?",
+      "url": "https://forum.mediathekview.de/topic/6866/zdf-live-aufnahmezeitpunkt-auch-z.b.-1-h-zur%C3%BCck",
+      "snippet": "Jun 14, 2026 · Frage zum Download von ZDF Live (oder auch anderer Sender) Ist es möglich - so wie es ja auch in der ZDF …"
+    },
+    {
+      "title": "ZDF Live - Aufnahmezeitpunkt auch z.B. 1 h zurück?",
+      "url": "https://forum.mediathekview.de/topic/6866/zdf-live-aufnahmezeitpunkt-auch-z.b.-1-h-zur%C3%BCck?page=2",
+      "snippet": "Jun 14, 2026 · Übersicht Fragen, Hilfe, Kritik ZDF Live - Aufnahmezeitpunkt auch z.B. 1 h zurück? ZDF Live - Aufnahmezeitpunkt …"
+    },
+    {
+      "title": "Beiträge von klaus.lorenz23 - VLC Player Forum",
+      "url": "https://www.vlc-forum.de/user-post-list/9507-klaus-lorenz23/",
+      "snippet": "Feb 26, 2020 · Bei 3Sat und den ZDF-Sendern hat sich die URL geändert. Oder besser das ZDF hat die URLs geändert. Arte, …"
+    },
+    {
+      "title": "Beiträge von Toko1978 - VLC Player Forum",
+      "url": "https://www.vlc-forum.de/user-post-list/3165-toko1978/",
+      "snippet": "13. Februar 2013 um 12:55 ich glaube langsam zu wissen woran es liegt Unser Admin hat wohl einiges gesperrt so das kein …"
+    },
+    {
+      "title": "Handball EM 2026",
+      "url": "https://forum.mediathekview.de/topic/6697.rss",
+      "snippet": "Du bist ja nicht erst seit heute hier im Forum - also dürftest du wissen, dass hier nichts “freigeschaltet” wird. Entweder der Crawler …"
+    }
+  ]
+}

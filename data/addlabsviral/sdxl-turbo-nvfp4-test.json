@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "addlabsviral/sdxl-turbo-nvfp4-test",
+  "slug": "addlabsviral-sdxl-turbo-nvfp4-test",
+  "author": "addlabsviral",
+  "url": "https://huggingface.co/addlabsviral/sdxl-turbo-nvfp4-test",
+  "created_at": "2026-09-10T19:35:46.000Z",
+  "updated_at": "2026-09-10T23:01:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "quantized",
+    "nvfp4",
+    "modelopt",
+    "sdxl-turbo",
+    "text-to-image",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1601575684,
+  "parameters_human": "1.60B",
+  "storage_bytes": 12847065915,
+  "storage_human": "12.8 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OmeTV Video Chat — Omegle Random Cam Chat Alternative 2026",
+      "url": "https://ome.tv/",
+      "snippet": "OmeTV is a random video chat, offering a seamless mobile app and an exciting global social experience."
+    },
+    {
+      "title": "OmeTV – Omegle Alternative for Random Webcam Chats",
+      "url": "https://ome.tv/why-ometv/",
+      "snippet": "On OmeTV, every webcam chat is with real users. No bots—only genuine interactions with people who are here to connect and talk. …"
+    },
+    {
+      "title": "Find friends - OmeTV",
+      "url": "https://ometv.chat/search",
+      "snippet": "Talk to strangers, meet new people and make friends on OmeTV. Enjoy random webcam chats with thousands of users online …"
+    },
+    {
+      "title": "Login in OmeTV Video Chat for Strangers",
+      "url": "https://ometv.chat/id197580685",
+      "snippet": "I am talking to strangers, meeting new people and making friends in OmeTV Video Chat for Strangers!"
+    },
+    {
+      "title": "Ome TV random chat alternative",
+      "url": "https://ome-tv.com/sohbet/",
+      "snippet": "Become an OmeTV member! I confirm that I am at least 18 years old. I accept User Agreement. Ome Tv Video Chat."
+    }
+  ]
+}

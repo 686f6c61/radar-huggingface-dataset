@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TheHassanSaud/P2_pythia410m_branch25_q0.2_sc_frozen25",
+  "slug": "thehassansaud-p2_pythia410m_branch25_q0-2_sc_frozen25",
+  "author": "TheHassanSaud",
+  "url": "https://huggingface.co/TheHassanSaud/P2_pythia410m_branch25_q0.2_sc_frozen25",
+  "created_at": "2026-09-11T01:22:57.000Z",
+  "updated_at": "2026-09-11T01:23:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 405334016,
+  "parameters_human": "405.3M",
+  "storage_bytes": 1621370224,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tommy Fleetwood PGA Tour Player Profile, Stats, Bio, Career",
+      "url": "https://www.pgatour.com/player/30911/tommy-fleetwood",
+      "snippet": "The Official PGA Tour Profile of Tommy Fleetwood. PGA Tour Stats, bio, video, photos, results, and career highlights."
+    },
+    {
+      "title": "2025 PGA Golf Stats | StatMuse",
+      "url": "https://www.statmuse.com/pga/ask/2025-pga-golf-stats",
+      "snippet": "Tommy Fleetwood led the 2025 FedEx Cup standings with 2,923 points in 19 events."
+    },
+    {
+      "title": "2025 Tour Championship leaderboard: Tommy Fleetwood ties Russell …",
+      "url": "https://www.cbssports.com/golf/news/tour-championship-leaderboard-2025-fedex-cup-playoffs-tommy-fleetwood-russell-henley-scottie-scheffler/live/",
+      "snippet": "Aug 22, 2025 · Tommy Fleetwood is once again at the top of the leaderboard in the playoffs, as he's currently two up on Cameron …"
+    },
+    {
+      "title": "Tommy Fleetwood - Standings | PGA TOUR",
+      "url": "https://pgatour.bluegolf.com/bluegolfw/pgatour19/profile/tfleetwood25/poy.htm",
+      "snippet": "View a Profile of each PGA TOUR Player with photos and tournament histories including scorecards. View the player highlights for …"
+    },
+    {
+      "title": "2025 FedEx Cup Playoffs - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2025_FedEx_Cup_Playoffs",
+      "snippet": "The 2025 FedEx Cup Playoffs, the series of three golf tournaments that determined the 2025 season champion on the U.S.-based …"
+    }
+  ]
+}

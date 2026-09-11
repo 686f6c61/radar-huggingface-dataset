@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "amayuelas/Qwen3.5-9B-MatRL-MT-SFT",
+  "slug": "amayuelas-qwen3-5-9b-matrl-mt-sft",
+  "author": "amayuelas",
+  "url": "https://huggingface.co/amayuelas/Qwen3.5-9B-MatRL-MT-SFT",
+  "created_at": "2026-09-10T21:05:06.000Z",
+  "updated_at": "2026-09-10T21:07:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "materials-science",
+    "crystal-structure",
+    "tool-use",
+    "agentic",
+    "sft",
+    "text-generation",
+    "conversational",
+    "dataset:amayuelas/matrl-sft-mt",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710445,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Über uns - mediadb.eu",
+      "url": "https://www.mediadb.eu/about/",
+      "snippet": "Willkommen bei mediadb.eu, Ihr erstes Ziel, um die neuesten Online-Casinos in Deutschland zu entdecken. Unsere Mission ist es, …"
+    },
+    {
+      "title": "Casinos ohne Verifizierung – Schnell & sicher",
+      "url": "https://www.mediadb.eu/casinos-ohne-verifizierung/",
+      "snippet": "Spiele anonym in Online Casinos ohne Verifizierung. Sofort loslegen & schnell auszahlen – auch mit Krypto."
+    },
+    {
+      "title": "IfM - Dt. MK 2009",
+      "url": "https://www.mediadb.eu/index_id-814.html",
+      "snippet": "Ranking-Archiv Die größten deutschen Medienkonzerne 2007 Die größten deutschen Medienkonzerne 2008 Die größten deutschen …"
+    },
+    {
+      "title": "IfM - Tencent",
+      "url": "https://www.mediadb.eu/datenbanken/onlinekonzerne/tencent.html",
+      "snippet": "Tencent ist eine Investment Holding Firma aus China, die neben den Bereichen E-Commerce, Webportalen und Social Media …"
+    },
+    {
+      "title": "Datenschutzerklärung – Schutz Ihrer Daten | mediadb.eu",
+      "url": "https://www.mediadb.eu/datenschutzerklaerung",
+      "snippet": "Datenschutzerklärung: Erfahren Sie, wie mediadb.eu Ihre Daten schützt und welche Rechte Sie gemäß der DSGVO in Deutschland …"
+    }
+  ]
+}

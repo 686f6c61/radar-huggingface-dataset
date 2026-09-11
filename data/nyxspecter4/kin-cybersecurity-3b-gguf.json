@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "nyxspecter4/kin-cybersecurity-3b-gguf",
+  "slug": "nyxspecter4-kin-cybersecurity-3b-gguf",
+  "author": "nyxspecter4",
+  "url": "https://huggingface.co/nyxspecter4/kin-cybersecurity-3b-gguf",
+  "created_at": "2026-08-31T23:40:32.000Z",
+  "updated_at": "2026-09-11T01:23:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "cybersecurity",
+    "security",
+    "qwen2.5",
+    "lora",
+    "infosec",
+    "threat-intelligence",
+    "red-team",
+    "blue-team",
+    "defensive-security",
+    "offensive-security",
+    "SIEM",
+    "EDR",
+    "DFIR",
+    "malware-analysis",
+    "MITRE-ATT&CK",
+    "OWASP",
+    "ollama",
+    "llama.cpp",
+    "text-generation",
+    "en",
+    "dataset:nyxspecter4/kin-cyber-dpo-v2",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 122,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 5215378560,
+  "storage_human": "5.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chatroom2000 – Kostenloser Chat ohne Anmeldung",
+      "url": "https://www.chatroom2000.de/",
+      "snippet": "CHAT, FLIRT, DATE Mit deinem eigenem Fotoprofil und vielen kostenlosen Extras wie Gewinnspiele, Quiz, usw."
+    },
+    {
+      "title": "Chat Login – Chatroom2000",
+      "url": "https://www.chatroom2000.de/chat-login/",
+      "snippet": "Ohne Anmeldung kannst du direkt loschatten. Die Bedienung ist sehr einfach und übersichtlich. Dieses Portal ist auch für Chat …"
+    },
+    {
+      "title": "Free Chat Now - Free Chat",
+      "url": "https://www.freechatnow.com/chat/free",
+      "snippet": "Free chat is the core of Free Chat Now – one of the longest-running places to meet potential new friends and talk with people …"
+    },
+    {
+      "title": "Free Chat Now - Adult Chat",
+      "url": "https://www.freechatnow.com/chat/adult?username=guest",
+      "snippet": "A room for chat of an adult, sexual nature. Trade sexy pictures and stories, flirt, sext, or just watch. 18+ ONLY."
+    },
+    {
+      "title": "Free Chat Now - Roleplay Chat",
+      "url": "https://www.freechatnow.com/chat/roleplay",
+      "snippet": "Online roleplay chat lets you break free from who you are in your day-to-day life and step into any role you wish. You could be the …"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "schema": 1,
+  "id": "UraionLabs/MiniCPM5-2B-oQ3.5e",
+  "slug": "uraionlabs-minicpm5-2b-oq3-5e",
+  "author": "UraionLabs",
+  "url": "https://huggingface.co/UraionLabs/MiniCPM5-2B-oQ3.5e",
+  "created_at": "2026-09-10T23:15:38.000Z",
+  "updated_at": "2026-09-10T23:33:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "mlx-lm",
+    "minicpm",
+    "minicpm5",
+    "text-generation",
+    "conversational",
+    "quantized",
+    "quantization",
+    "mixed-precision",
+    "apple-silicon",
+    "macos",
+    "local-llm",
+    "local-inference",
+    "on-device",
+    "edge-ai",
+    "long-context",
+    "131k-context",
+    "tool-calling",
+    "function-calling",
+    "agent",
+    "agentic",
+    "coding",
+    "reasoning",
+    "omlx",
+    "oq",
+    "oqe",
+    "uraion-labs",
+    "en",
+    "zh",
+    "dataset:openbmb/Ultra-FineWeb",
+    "dataset:openbmb/UltraX-Preview",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:openbmb/UltraData-Math",
+    "dataset:openbmb/UltraData-Code",
+    "dataset:openbmb/UltraData-SFT-2605",
+    "dataset:openbmb/UltraData-SFT-Agent-2609",
+    "dataset:openbmb/UltraData-RL-2609",
+    "arxiv:2506.07900",
+    "arxiv:2602.09003",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 1258748268,
+  "storage_human": "1.3 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kosovo - Wikipedia, la enciclopedia libre",
+      "url": "https://es.m.wikipedia.org/wiki/Kosovo",
+      "snippet": "Kosovo. Contending Voices on Balkan Interventions, William Joseph Buckley, ed., William B. Eerdmans, Grand Rapids, Míchigan & …"
+    },
+    {
+      "title": "Kosovo - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Kosovo",
+      "snippet": "Kosovo, [a] officially the Republic of Kosovo, [b] is a landlocked country in Southeast Europe with partial diplomatic recognition. It is …"
+    },
+    {
+      "title": "Kosovo: qué país era antes, cómo se creó y cuál es su historia",
+      "url": "https://okdiario.com/historia/kosovo-que-pais-era-antes-como-creo-cual-historia-9477871",
+      "snippet": "Aug 2, 2022 · Te contamos más detalles sobre la historia de Kosovo, una zona marcada por los conflictos territoriales y sociales …"
+    },
+    {
+      "title": "Kosovo: Mapa, Bandera y Datos del País | Descubriendo El Planeta",
+      "url": "https://descubriendoelplaneta.com/europa/kosovo/",
+      "snippet": "Descubre Kosovo: geografía, historia, economía y cultura del país más joven de Europa. Datos del país, mapa, bandera e …"
+    },
+    {
+      "title": "Guerra de Kosovo - Wikipedia, la enciclopedia libre",
+      "url": "https://es.m.wikipedia.org/wiki/Guerra_de_Kosovo",
+      "snippet": "En 1974, el estatus político de Kosovo mejoró aún más cuando una nueva constitución yugoslava otorgó un conjunto ampliado de …"
+    }
+  ]
+}

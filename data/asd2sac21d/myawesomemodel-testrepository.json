@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ASD2SAC21D/MyAwesomeModel-TestRepository",
+  "slug": "asd2sac21d-myawesomemodel-testrepository",
+  "author": "ASD2SAC21D",
+  "url": "https://huggingface.co/ASD2SAC21D/MyAwesomeModel-TestRepository",
+  "created_at": "2026-09-10T23:30:31.000Z",
+  "updated_at": "2026-09-10T23:30:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Viaggio a Sapporo - zipangu.it",
+      "url": "https://www.zipangu.it/visitare-sapporo.html",
+      "snippet": "Jun 26, 2026 · Sapporo (Giappone): dove si trova; come raggiungere la città dall'Italia e da località in Giappone e Asia Orientale. …"
+    },
+    {
+      "title": "Viaggi a Sapporo | Vacanze al miglior prezzo | Logitravel",
+      "url": "https://www.logitravel.it/viaggi/asia/giappone/sapporo/",
+      "snippet": "Viaggia a Sapporo al miglior prezzo ☀ Entra e prenota la tua vacanza in Sapporo: 100% Online Pagamento sicuro Più economico. A …"
+    },
+    {
+      "title": "Cosa vedere a Sapporo - Giappone per Tutti",
+      "url": "https://www.giapponepertutti.it/organizza-viaggio-in-giappone/le-citta-giapponesi/sapporo/cosa-vedere-a-sapporo/",
+      "snippet": "Sapporo, capoluogo dell’isola di Hokkaido, è una città moderna che offre un perfetto equilibrio tra natura, cultura e gastronomia. Tra …"
+    },
+    {
+      "title": "Vacanze a Sapporo 2026 | Guida, costi e consigli - gotripzi.com",
+      "url": "https://gotripzi.com/it/destinations/sapporo-jp",
+      "snippet": "Sapporo, Giappone 2026: Cosa sapere prima di partire – budget da 70 €/giorno, sicurezza, trasporti e consigli pratici. La tua guida …"
+    },
+    {
+      "title": "Cosa vedere a Sapporo in Giappone: guida completa 2025",
+      "url": "https://www.giapponismo.com/cosa-vedere-sapporo-giappone/",
+      "snippet": "Aug 23, 2025 · Guida completa a Sapporo: luoghi imperdibili (Odori Park, Susukino, T38, Beer Museum), idee nei dintorni (Otaru, …"
+    }
+  ]
+}

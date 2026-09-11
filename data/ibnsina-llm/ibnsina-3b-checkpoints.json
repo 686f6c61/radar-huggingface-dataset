@@ -5,7 +5,7 @@
   "author": "ibnsina-llm",
   "url": "https://huggingface.co/ibnsina-llm/ibnsina-3b-checkpoints",
   "created_at": "2026-09-10T10:58:38.000Z",
-  "updated_at": "2026-09-10T11:10:30.000Z",
+  "updated_at": "2026-09-10T11:38:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -33,8 +33,8 @@
   "trending_score": 0,
   "parameters": 2999144960,
   "parameters_human": "3.00B",
-  "storage_bytes": 64022817289,
-  "storage_human": "64.0 GB",
+  "storage_bytes": 129677471495,
+  "storage_human": "129.7 GB",
   "base_model": null,
   "formats": [
     "gguf"

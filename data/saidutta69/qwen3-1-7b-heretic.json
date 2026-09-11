@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "saidutta69/Qwen3-1.7B-heretic",
+  "slug": "saidutta69-qwen3-1-7b-heretic",
+  "author": "saidutta69",
+  "url": "https://huggingface.co/saidutta69/Qwen3-1.7B-heretic",
+  "created_at": "2026-09-10T19:54:54.000Z",
+  "updated_at": "2026-09-10T20:32:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "text-generation",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "conversational",
+    "text-generation-inference",
+    "local-llm",
+    "consumer-gpu",
+    "en",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:quantized:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 22476743913,
+  "storage_human": "22.5 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amy & Ivy | Shop online | The Sting",
+      "url": "https://www.thesting.com/nl-nl/dames/merken/amy-ivy",
+      "snippet": "Shop the look | Puffer jacket met star leg jeans 3 producten Amy & Ivy Varsity trui 1 kleur Amy & Ivy Loose fit jeans met print Amy & …"
+    },
+    {
+      "title": "Amy & Ivy | Truien en Vesten | The Sting",
+      "url": "https://www.thesting.com/nl-nl/dames/merken/amy-ivy/amy-ivy-truien-en-vesten",
+      "snippet": "Ontdek de leukste truien en vesten van Amy & Ivy bij The Sting | Shop online | Vóór 22:00 uur besteld = vandaag verzonden"
+    },
+    {
+      "title": "IVY Trenchcoat dames kopen? Kijk snel! | bol",
+      "url": "https://www.bol.com/nl/nl/l/ivy-trenchcoats-dames/47268/4268112954/",
+      "snippet": "Op zoek naar een IVY Trenchcoat dames? IVY Trenchcoats dames koop je eenvoudig online bij bol Gratis retourneren 30 dagen …"
+    },
+    {
+      "title": "Vind amy en ivy trui op Marktplaats - september 2026",
+      "url": "https://www.marktplaats.nl/q/amy+en+ivy+trui/?msockid=38fb2ed244c560fc233e390245ce6190",
+      "snippet": "Mooie bordeauxrode sweater van amy & ivy met een &#39;alaska the great outdoors&#39; print op de achterkant en een kleinere …"
+    },
+    {
+      "title": "Vind amy en ivy in Truien en Vesten op Marktplaats",
+      "url": "https://www.marktplaats.nl/l/kleding-dames/truien-en-vesten/q/amy+en+ivy/?msockid=38fb2ed244c560fc233e390245ce6190",
+      "snippet": "Amy & Ivy Hoody Sweater Maat L DameComfortabele hoody sweater van het merk amy & ivy in maat l voor dames. De trui is blauw …"
+    }
+  ]
+}

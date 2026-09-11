@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Kaz55/act-newblue-gs160-ac60",
+  "slug": "kaz55-act-newblue-gs160-ac60",
+  "author": "Kaz55",
+  "url": "https://huggingface.co/Kaz55/act-newblue-gs160-ac60",
+  "created_at": "2026-09-11T00:39:53.000Z",
+  "updated_at": "2026-09-11T00:40:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dg5f",
+    "ur5e",
+    "gelsight",
+    "ablation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668634,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206729576,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bible Gateway passage: Psalm 91:1-2 - King James Version",
+      "url": "https://www.biblegateway.com/passage/?search=Psalm+91%3A1-2&version=KJV",
+      "snippet": "91 He that dwelleth in the secret place of the most High shall abide under the shadow of the Almighty. 2 I will say of the Lord, He is …"
+    },
+    {
+      "title": "Psalm 91 KJV - He that dwelleth in the secret place of - Bible Gateway",
+      "url": "https://www.biblegateway.com/passage/?search=psalm+91&version=KJV",
+      "snippet": "91 He that dwelleth in the secret place of the most High shall abide under the shadow of the Almighty. 2 I will say of the Lord, He is …"
+    },
+    {
+      "title": "Psalm 91:1-2 KJV - \"He that dwelleth in the secret place of the most H...\"",
+      "url": "https://www.biblestudytools.com/kjv/psalms/passage/?q=psalm+91%3A1-2",
+      "snippet": "1 He that dwelleth in the secret place of the most High shall abide under the shadow of the Almighty. 2 I will say of the LORD, He is …"
+    },
+    {
+      "title": "Psalms 91:1-2 KJV - He that dwelleth in the secret place of",
+      "url": "https://thekingjamesversionbible.com/psalms-91-1-2",
+      "snippet": "1 He that dwelleth in the secret place of the most High shall abide under the shadow of the Almighty. 2 I will say of the LORD, He is …"
+    },
+    {
+      "title": "PSALMS CHAPTER 91 KJV - King James Bible Online",
+      "url": "https://www.kingjamesbibleonline.org/Psalms-Chapter-91/",
+      "snippet": "1 He that dwelleth in the secret place of the most High shall abide under the shadow of the Almighty. 2 I will say of the LORD, He is …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "aviadcohz/Detecture-ICLR-2027",
+  "slug": "aviadcohz-detecture-iclr-2027",
+  "author": "aviadcohz",
+  "url": "https://huggingface.co/aviadcohz/Detecture-ICLR-2027",
+  "created_at": "2026-09-10T21:35:28.000Z",
+  "updated_at": "2026-09-10T21:36:03.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "texture-segmentation",
+    "sub-semantic-segmentation",
+    "qwen3-vl",
+    "sam3",
+    "image-segmentation",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2517951042,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "რომის აუცილებლად სანახავი 25 ღირსშესანიშნაობა - შენი …",
+      "url": "https://www.shenimegzuri.ge/romis-autsileblad-sanakhavi-25-ghirsshesanishnaoba/",
+      "snippet": "1 day ago · პალატინის მთა რომის 7 მთიდან ერთ-ერთია. მითოლოგიის მიხედვით, სწორედ ამ ადგილას დაარსეს რომი …"
+    },
+    {
+      "title": "რომი - მარტივი გზამკვლევი მოგზაურობის დაგეგმვისთვის",
+      "url": "https://avia.ge/travel-guide/rome/",
+      "snippet": "როდის არის საუკეთესო დრო რომში სამოგზაუროდ? რომი წელიწადის ყველა დროს შეუდარებელი დაგხვდებათ!"
+    },
+    {
+      "title": "10 რამ, რაც რომში მოგზაურობისას უნდა გააკეთოთ",
+      "url": "https://avia.ge/things-to-do-in-rome/",
+      "snippet": "იტალიის დედაქალაქი რომი ტურისტების საყვარელი ქალაქია, მას ქალაქ-მუზეუმსაც უწოდებენ."
+    },
+    {
+      "title": "რა ვნახოთ რომში ?! ტოპ 10 ადგილი",
+      "url": "https://flygeorgia.ge/what-to-see-in-rome/",
+      "snippet": "რომი უძველესი ისტორიითა და კულტურით სავსე ქალაქია, სადაც ყოველი კუთხე და ყოველი ქვა რაღაცას გიყვება."
+    },
+    {
+      "title": "რომი – რა უნდა ვიცოდეთ იტალიის დედაქალაქში …",
+      "url": "https://sheniemigranti.ge/%E1%83%A0%E1%83%9D%E1%83%9B%E1%83%98/",
+      "snippet": "Sep 2, 2025 · რომი, იტალიის დედაქალაქი და \"საუკუნო ქალაქი,\" ერთ-ერთი ყველაზე ისტორიულად და კულტურულად …"
+    }
+  ]
+}

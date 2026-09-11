@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "abidlabs/mnist-cnn-test",
+  "slug": "abidlabs-mnist-cnn-test",
+  "author": "abidlabs",
+  "url": "https://huggingface.co/abidlabs/mnist-cnn-test",
+  "created_at": "2026-09-10T20:00:35.000Z",
+  "updated_at": "2026-09-10T20:08:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "mnist",
+    "image-classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1689713,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Willkommen bei MediaMarkt Schweiz",
+      "url": "https://www.mediamarkt.ch/de/",
+      "snippet": "MediaMarkt Online Shop Günstige Markenprodukte in ⭐ Top-Qualität Sichere und flexible Zahlmittel Beratung vor Ort Jetzt"
+    },
+    {
+      "title": "Bienvenue chez MediaMarkt Suisse",
+      "url": "https://www.mediamarkt.ch/fr/",
+      "snippet": "Boutique en ligne MediaMarkt Produits de marque à prix avantageux de ⭐ qualité supérieure Conseils sur place Découvrir pl"
+    },
+    {
+      "title": "MediaMarkt | Téléphone reconditionné, Samsung & iPhone …",
+      "url": "https://refurbished.mediamarkt.ch/ch_fr/",
+      "snippet": "Smartphones remis à neuf, reconditionnés, Apple, Samsung , à prix attractifs proposés par MediaMarkt – garantie de 12 mois, envoi …"
+    },
+    {
+      "title": "Mediamarkt",
+      "url": "https://refurbished.mediamarkt.ch/ch_de/mediamarkt",
+      "snippet": "Smartphones remis à neuf, reconditionnés, Apple, Samsung , à prix attractifs proposés par MediaMarkt – garantie de 12 mois, envoi …"
+    },
+    {
+      "title": "Où puis-je consulter mon solde de points ? - Media Markt",
+      "url": "https://faq-fr.mediamarkt.ch/app/answers/detail/a_id/20160/~/o%C3%B9-puis-je-consulter-mon-solde-de-points-%3F",
+      "snippet": "Le solde de points peut être consulté dans la boutique en ligne MediaMarkt et dans l'application MediaMarkt sous \"Mon compte - …"
+    }
+  ]
+}

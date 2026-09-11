@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "TPELEE83/video-understanding",
+  "slug": "tpelee83-video-understanding",
+  "author": "TPELEE83",
+  "url": "https://huggingface.co/TPELEE83/video-understanding",
+  "created_at": "2026-09-10T22:28:35.000Z",
+  "updated_at": "2026-09-10T22:28:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "video-understanding",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "npcap安装教程-百度经验",
+      "url": "https://jingyan.baidu.com/article/1e5468f9b49eba484861b773.html",
+      "snippet": "Mar 26, 2019 · npcap安装教程,应用于网络抓包使用，具体安装流程见以下图文步骤。"
+    },
+    {
+      "title": "喝豆浆的九大好处和七种禁忌 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/6c67b1d6ca64f02787bb1e33.html",
+      "snippet": "Jun 7, 2018 · 喝豆浆的好处： 1、强身健体。每百克豆浆含蛋白质4.5克、脂肪1.8克、碳水化合物1.5克、磷4.5克、铁2.5克、钙2.5克以 …"
+    },
+    {
+      "title": "如何在win10上下载安装npcap - 百度经验",
+      "url": "https://jingyan.baidu.com/article/acf728fdf92ccfb9e410a344.html",
+      "snippet": "Jan 11, 2020 · 如何在win10上下载安装npcap,NPca是WiPca的后继者，NPca是在WiPca的基础上进行优化开发的，可以抓取本地数据 …"
+    },
+    {
+      "title": "Windows 10系统清除（清理）垃圾的几种方法-百度经验",
+      "url": "https://jingyan.baidu.com/article/c74d600037d3954f6a595d91.html",
+      "snippet": "Oct 10, 2019 · Windows 10系统清除（清理）垃圾的几种方法,别看刚刚安装完的Widow10才十几个GB，用着用着不定期清理的话，轻 …"
+    },
+    {
+      "title": "Word文档中标题序号与文字间距太大怎么办？ - 百度经验",
+      "url": "https://jingyan.baidu.com/article/c910274bd8a63d8c371d2d7e.html",
+      "snippet": "May 13, 2020 · Word文档中标题序号与文字间距太大怎么办,我们经常会遇到Word文档中，序号与文字间距很大，这样在排版上非常影 …"
+    }
+  ]
+}

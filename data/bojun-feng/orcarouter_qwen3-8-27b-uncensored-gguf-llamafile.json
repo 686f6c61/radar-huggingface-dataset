@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Bojun-Feng/orcarouter_Qwen3.8-27B-Uncensored-GGUF-llamafile",
+  "slug": "bojun-feng-orcarouter_qwen3-8-27b-uncensored-gguf-llamafile",
+  "author": "Bojun-Feng",
+  "url": "https://huggingface.co/Bojun-Feng/orcarouter_Qwen3.8-27B-Uncensored-GGUF-llamafile",
+  "created_at": "2026-09-10T04:17:11.000Z",
+  "updated_at": "2026-09-11T02:09:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "llamafile",
+    "gguf",
+    "qwen3.8",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:orcarouter/Qwen3.8-27B-Uncensored",
+    "base_model:finetune:orcarouter/Qwen3.8-27B-Uncensored",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 107464839989,
+  "storage_human": "107.5 GB",
+  "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Specification of DC Time Constants for Switchgear - ENA Eng",
+      "url": "https://www.ena-eng.org/ena-docs/D0C3XTRACT/ENA_EREC_G89_Extract_180902050609.pdf",
+      "snippet": "The standard value of dc time constant defined in circuit-breaker standard IEC 62271-100 is 45ms; a value which corresponds well to …"
+    },
+    {
+      "title": "The Capacitance Resistance Formula: RC Time Constant & Impedance …",
+      "url": "https://electricalflux.com/learn-components/capacitance-resistance-formula-rc-time-constant-examples",
+      "snippet": "2 days ago · Master the capacitance resistance formula for DC time constants and AC impedance. Includes symbol tables, real-world …"
+    },
+    {
+      "title": "DC Breaking Capacity of Circuit Breaker Explained - studylib.net",
+      "url": "https://studylib.net/doc/26107780/dc-breaking-capacity-of-circuit-breaker--01",
+      "snippet": "Explanation of DC fault current, DC component, time constant, and circuit breaker selection for DC breaking capacity. Includes …"
+    },
+    {
+      "title": "RC Current Explained: Transient Decay, Inrush Limiting, and Time ...",
+      "url": "https://electricalflux.com/learn-components/rc-current-transient-decay-inrush-limiting",
+      "snippet": "2 days ago · Master RC current in DC circuits. Learn how resistor-capacitor transient decay works, with a worked 48V inrush limiter …"
+    },
+    {
+      "title": "Time Constant Calculator",
+      "url": "https://uk.rs-online.com/web/content/resources/tools-calculators/circuit-timing-calculators/time-constant-calculator?msockid=08c33196fbaf6bfb1a3f2647faa06a52",
+      "snippet": "Time Constant Calculator Need to know how to calculate time constant? Our handy interactive tool can help provide an accurate …"
+    }
+  ]
+}

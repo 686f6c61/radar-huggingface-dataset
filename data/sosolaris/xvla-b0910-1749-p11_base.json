@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SoSolaris/xvla-b0910-1749-p11_base",
+  "slug": "sosolaris-xvla-b0910-1749-p11_base",
+  "author": "SoSolaris",
+  "url": "https://huggingface.co/SoSolaris/xvla-b0910-1749-p11_base",
+  "created_at": "2026-09-10T23:08:33.000Z",
+  "updated_at": "2026-09-10T23:09:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "xvla",
+    "robotics",
+    "dataset:SoSolaris/socks_20_diversified",
+    "arxiv:2510.10274",
+    "base_model:lerobot/xvla-base",
+    "base_model:finetune:lerobot/xvla-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 879687256,
+  "parameters_human": "879.7M",
+  "storage_bytes": 1759506160,
+  "storage_human": "1.8 GB",
+  "base_model": "lerobot/xvla-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com.sa/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=ar",
+      "snippet": "الإعلانات كل ما تحب معرفته عن Google‏ هنا Google.com in English © 2026 - الخصوصية - البنود"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/?hl=ar-US",
+      "snippet": "محرّك بحث Google متوفّر باللغة: English الإعلانات كل ما تحب معرفته عن Google‏ هنا Google.com"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
+    }
+  ]
+}

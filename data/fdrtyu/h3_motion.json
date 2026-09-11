@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "fdrtyu/H3_Motion",
+  "slug": "fdrtyu-h3_motion",
+  "author": "fdrtyu",
+  "url": "https://huggingface.co/fdrtyu/H3_Motion",
+  "created_at": "2026-09-11T01:17:50.000Z",
+  "updated_at": "2026-09-11T01:22:21.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 310168344,
+  "storage_human": "310 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FileCR - THE BIGGEST SOFTWARE STORE",
+      "url": "https://filecr.com/home/",
+      "snippet": "Free Download Windows & MacOS software, Android Apps & Games, E-Learning Videos & E-Books, PC Games, Scripts and much …"
+    },
+    {
+      "title": "Windows software, drivers & operating system - FileCR",
+      "url": "https://filecr.com/ms-windows/",
+      "snippet": "Free download Windows programs, plugins, codecs, drivers, tools, utilities, gaming tools, mobile phone tools, and operating systems."
+    },
+    {
+      "title": "FileCR - Software, Apps, AI Tools & Game Guides",
+      "url": "https://filecr.cloud/",
+      "snippet": "filecr.cloud Explore practical software and app guides, comparisons, setup tips, system requirements, and links to official developer …"
+    },
+    {
+      "title": "FileCR.com - FileCR - THE BIGGEST SOFTWARE STORE",
+      "url": "https://www.ipaddress.com/website/filecr.com",
+      "snippet": "May 5, 2015 · With a focus on free downloads, FileCR serves as a comprehensive software store, making it a valuable resource for …"
+    },
+    {
+      "title": "FILECR IS NOT SAFE!!!!!! : r/Piracy - Reddit",
+      "url": "https://www.reddit.com/r/Piracy/comments/198zpd2/filecr_is_not_safe/",
+      "snippet": "Jan 17, 2024 · So I use (d) FileCR a lot, and it works great for macOS apps, but then i went to download a program for Windows from …"
+    }
+  ]
+}

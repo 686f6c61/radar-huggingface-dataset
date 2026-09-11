@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "kimi000/opal-harbor-73",
+  "slug": "kimi000-opal-harbor-73",
+  "author": "kimi000",
+  "url": "https://huggingface.co/kimi000/opal-harbor-73",
+  "created_at": "2026-09-10T23:44:13.000Z",
+  "updated_at": "2026-09-10T23:45:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "flux2",
+    "reinforcement-learning",
+    "text-to-image",
+    "base_model:black-forest-labs/FLUX.2-klein-base-4B",
+    "base_model:finetune:black-forest-labs/FLUX.2-klein-base-4B",
+    "license:apache-2.0",
+    "diffusers:Flux2KleinPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3875544576,
+  "parameters_human": "3.88B",
+  "storage_bytes": 15976543295,
+  "storage_human": "16.0 GB",
+  "base_model": "black-forest-labs/FLUX.2-klein-base-4B",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "法语的几个特殊的字母，列出来一下 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/94366850.html",
+      "snippet": "大写：À、Â、È、É、Ê、Ë、 Î 、Ï 、Ô 、Ö、 Ù、 Û 、Ç 、Œ 、Æ、 €。 小写：à、â、è、é、ê、 î 、ï、 ô、 ö、 ù、 û 、ü、 ç、 œ …"
+    },
+    {
+      "title": "梦幻西游黑风山副本抄写大全_百度知道",
+      "url": "https://zhidao.baidu.com/question/580670653.html",
+      "snippet": "梦幻西游黑风山副本抄写大全梦幻西游黑风山副本抄写大全如下：1、若菩萨欲得净土当净其心随其心净则佛土净2、法尚应舍何况非 …"
+    },
+    {
+      "title": "波浪号（～）是什么意思，正规的用法是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/19615526",
+      "snippet": "一般常见的几个波浪线型符号（常见度由高到低）（en.wikipedia.org/wiki/T）： 「~」 U+007E TILDE（最常见，英文状态下 shift 加 1 …"
+    },
+    {
+      "title": ".DS_Store 文件是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/20345704",
+      "snippet": "此文件名前缀带了”.“，据此推测这应该是一个隐藏文件。 在「访达」里显示一个隐藏文件不是难题，于是她同时按住快捷键 …"
+    },
+    {
+      "title": "字节、KB、MB、GB 之间的换算关系_百度知道",
+      "url": "https://zhidao.baidu.com/question/6318898.html",
+      "snippet": "字节、KB、MB、GB 之间的换算关系数据存储以10进制表示：1B（byte，字节）= 8 bit（见下文）；1KB（Kilobyte，千字 …"
+    }
+  ]
+}

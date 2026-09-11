@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "fm-dev/pi05-button-order-uniform32-full-gbs64-pgb8-gpu8-r4-epoch100-step7100",
+  "slug": "fm-dev-pi05-button-order-uniform32-full-gbs64-pgb8-gpu8-r4-epoch100-step7100",
+  "author": "fm-dev",
+  "url": "https://huggingface.co/fm-dev/pi05-button-order-uniform32-full-gbs64-pgb8-gpu8-r4-epoch100-step7100",
+  "created_at": "2026-09-10T22:23:54.000Z",
+  "updated_at": "2026-09-10T22:25:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi05",
+    "full-fine-tuning",
+    "franka",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12549775114,
+  "storage_human": "12.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Écouter radio en ligne et en direct",
+      "url": "https://www.radio-en-ligne.fr/",
+      "snippet": "Écouter radio en ligne gratuitement et en direct sur l'internet. Écoutez les plus grandes radios en ligne de France dans www.radio-en …"
+    },
+    {
+      "title": "Écouter Direct FM en direct et gratuit",
+      "url": "https://www.radio-en-ligne.fr/direct-fm",
+      "snippet": "Écoutez Direct FM en direct et gratuit sur l'internet. Les plus grandes radios en ligne de France dans www.radio-en-ligne.fr."
+    },
+    {
+      "title": "La liste de toutes les fréquences radio de la bande FM en France",
+      "url": "https://frequence-radio.org/",
+      "snippet": "Frequence-radio.org vous propose la liste de toutes les fréquences radio de la bande FM en France. Recherche par radio, …"
+    },
+    {
+      "title": "Radio en direct : Écoutez gratuitement la radio sur internet",
+      "url": "https://www.radio.fr/",
+      "snippet": "Avec une radio FM ou DAB+, vous pouvez écouter la radio même sans connexion Internet. La radio en ligne ou webradio nécessite …"
+    },
+    {
+      "title": "Radio FM — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Radio_FM",
+      "snippet": "La radiodiffusion FM consiste à moduler en fréquence une porteuse par un signal en bande de base. Au départ, ce signal en bande …"
+    }
+  ]
+}

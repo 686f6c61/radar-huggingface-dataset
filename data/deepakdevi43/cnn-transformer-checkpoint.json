@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "deepakdevi43/cnn-transformer-checkpoint",
+  "slug": "deepakdevi43-cnn-transformer-checkpoint",
+  "author": "deepakdevi43",
+  "url": "https://huggingface.co/deepakdevi43/cnn-transformer-checkpoint",
+  "created_at": "2026-09-10T19:09:13.000Z",
+  "updated_at": "2026-09-10T19:09:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Change your screen resolution and layout in Windows",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-your-screen-resolution-and-layout-in-windows",
+      "snippet": "Select Start > Settings > System > Display and look at the section that shows your displays. Select the display you want to change. …"
+    },
+    {
+      "title": "Display Settings",
+      "url": "https://displaysettings.org/",
+      "snippet": "In Windows 11 and Windows 10, the display settings panel lives under Settings → System → Display. From this single panel, you can …"
+    },
+    {
+      "title": "Change display brightness and color in Windows",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-display-brightness-and-color-in-windows",
+      "snippet": "To find out if your PC supports this, select Settings > System > Display. Under Brightness and color, look for the Change brightness …"
+    },
+    {
+      "title": "Windows Display Settings: Brightness, Color, Scaling, - Dell",
+      "url": "https://www.dell.com/support/contents/en-us/article/product-support/self-support-knowledgebase/operating-systems/windows-operating-systems/change-windows-display-settings?msockid=208dc08a01b461cb2b81d75a001460b3",
+      "snippet": "Adjust screen brightness and display settings in Windows 11. Discover easy steps to reduce brightness, change display, and optimize …"
+    },
+    {
+      "title": "Multiple Displays - Change Settings and Layout in Windows 10",
+      "url": "https://www.tenforums.com/tutorials/21084-multiple-displays-change-settings-layout-windows-10-a.html",
+      "snippet": "May 1, 2021 · Most of today's laptops and desktops allow users to connect at least one external display, computers with advanced …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "dronefreak/gcnet-l-cityscapes",
+  "slug": "dronefreak-gcnet-l-cityscapes",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/gcnet-l-cityscapes",
+  "created_at": "2026-09-10T22:30:59.000Z",
+  "updated_at": "2026-09-10T22:32:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "semantic-segmentation",
+    "cityscapes",
+    "gcnet",
+    "computer-vision",
+    "mirror",
+    "image-segmentation",
+    "arxiv:2503.03325",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 435669729,
+  "storage_human": "436 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Cityscapes val",
+      "metric": "mIoU (single-scale)",
+      "value": 79.6
+    }
+  ],
+  "sources": [
+    {
+      "title": "Amazon.it: Fascia Per Vene Varicose",
+      "url": "https://www.amazon.it/fascia-vene-varicose/s?k=fascia+per+vene+varicose",
+      "snippet": "Questo prodotto ha caratteristiche di sostenibilità riconosciute da certificazioni affidabili. Prodotti realizzati con sostanze chimiche più …"
+    },
+    {
+      "title": "Amazon.it: Fasce Elastiche Per Vene Varicose",
+      "url": "https://www.amazon.it/fasce-elastiche-vene-varicose/s?k=fasce+elastiche+per+vene+varicose",
+      "snippet": "Calze Compressione Graduata, Calze Elastiche per Vene Varicose, Fascia | Compressione Polpaccio 20-30mmhg, per Gonfiore …"
+    },
+    {
+      "title": "Bende elastiche compressive per vene varicose - Para-Farmacia …",
+      "url": "https://www.parafarmaciabosciaclub.it/349-bende-elastiche-di-compressione",
+      "snippet": "Tutte le bende elastiche di compressione e di supporto su Bosciaclub! Le bende elastiche compressive sono adatte per la cura di …"
+    },
+    {
+      "title": "I nostri 10 Migliori Cosciera Elastico Compressiva in Italia ...",
+      "url": "https://www.ilprodottomigliore.it/cosciera-elastico-compressiva?msockid=1faf1279a0a96852393005a9a16b699e",
+      "snippet": "3 days ago · Questo supporto per la coscia fornisce stabilità in caso di strappi muscolari, contratture e stiramenti, rotture di fibre, …"
+    },
+    {
+      "title": "Calze a compressione per vene varicose | Orthogether",
+      "url": "https://orthogether.com/prodotti?q=Calze+a+compressione+per+vene+varicose",
+      "snippet": "Scopri la selezione di Calze a compressione per vene varicose dal catalogo di Orthogether. Acquista online oppure in Ortopedia, la …"
+    }
+  ]
+}

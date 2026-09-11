@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Mahmoud110/DeepSeek-V4.1-Flash",
+  "slug": "mahmoud110-deepseek-v4-1-flash",
+  "author": "Mahmoud110",
+  "url": "https://huggingface.co/Mahmoud110/DeepSeek-V4.1-Flash",
+  "created_at": "2026-09-10T19:10:29.000Z",
+  "updated_at": "2026-09-10T19:10:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v41",
+    "text-generation",
+    "image-text-to-text",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763205315794,
+  "parameters_human": "763.21B",
+  "storage_bytes": 510299192278,
+  "storage_human": "510.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Central Standard Time",
+      "url": "https://time.is/CST",
+      "snippet": "20 hours ago · Exact time now, time zone, time difference, sunrise/sunset time and key facts for Central Standard Time (CST)."
+    },
+    {
+      "title": "Time Now in CST (Central Standard Time) | Time.now",
+      "url": "https://time.now/timezones/cst/",
+      "snippet": "View current time for CST (Central Standard Time) time zone [Updated live]. Other countries and time zones with the same UTC …"
+    },
+    {
+      "title": "Current Central (CST/CDT) Time Now in USA and Canada",
+      "url": "https://time-time.net/times/time-zones/usa-canada/current-central-time-cst.php",
+      "snippet": "In North America, Central Time observes standard time at six hours behind UTC (UTC-6), shifting to five hours behind (UTC-5) during …"
+    },
+    {
+      "title": "Current Central Time — Live CST / CDT Clock Now",
+      "url": "https://timeandcalendars.com/current-central-time",
+      "snippet": "20 hours ago · See the current Central Time right now. Live CST/CDT clock with date, UTC offset, and city comparison tool. Covers …"
+    },
+    {
+      "title": "Central Standard Time – CST Time Zone",
+      "url": "https://www.timeanddate.com/time/zones/cst",
+      "snippet": "Central Standard Time (CST) is the second easternmost time zone in the United States and is also used in Canada. It covers all or …"
+    }
+  ]
+}

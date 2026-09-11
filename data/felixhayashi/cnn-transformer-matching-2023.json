@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "felixhayashi/cnn-transformer-matching-2023",
+  "slug": "felixhayashi-cnn-transformer-matching-2023",
+  "author": "felixhayashi",
+  "url": "https://huggingface.co/felixhayashi/cnn-transformer-matching-2023",
+  "created_at": "2026-09-10T19:04:47.000Z",
+  "updated_at": "2026-09-10T19:04:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speed Test by MyBroadband",
+      "url": "https://speedtest.mybroadband.co.za/",
+      "snippet": "Test your Internet connection quickly and accurately. Lightweight, easy-to-use, reliable and completely free."
+    },
+    {
+      "title": "Telkom DSL shutdown – MyBroadband",
+      "url": "https://mybroadband.co.za/news/adsl/609816-telkom-dsl-shutdown.html",
+      "snippet": "Aug 9, 2025 · Telkom is intensifying migrating its dwindling DSL customer base to fibre and fixed-wireless products."
+    },
+    {
+      "title": "Telkom home / business DSL comparison - check this out!",
+      "url": "https://mybroadband.co.za/forum/threads/telkom-home-business-dsl-comparison-check-this-out.17936/",
+      "snippet": "Jun 1, 2004 · Telkom home / business DSL comparison - check this out! Thread starter mancombseepgood Start date Mar 1, 2005 1 …"
+    },
+    {
+      "title": "Contacts – Epson",
+      "url": "https://companies.mybroadband.co.za/epson/contacts/",
+      "snippet": "Physical Address: Epson Europe BV (South African Office) Grnd. Floor. Durham House, Block 6 Fourways Office Park Cnr. Fourways …"
+    },
+    {
+      "title": "Login",
+      "url": "https://imap.mail.mybroadband.co.za/",
+      "snippet": "Mail-admin Click on the icon to login"
+    }
+  ]
+}

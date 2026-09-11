@@ -5,7 +5,7 @@
   "author": "0x795E2795",
   "url": "https://huggingface.co/0x795E2795/Vanta-Alpha-26B-A4B-it-qat-q4_0",
   "created_at": "2026-09-08T08:37:21.000Z",
-  "updated_at": "2026-09-08T08:43:37.000Z",
+  "updated_at": "2026-09-10T22:28:16.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -25,12 +25,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 300,
   "trending_score": 0,
   "parameters": 25233142046,
   "parameters_human": "25.23B",
-  "storage_bytes": 14249051552,
-  "storage_human": "14.2 GB",
+  "storage_bytes": 15443880736,
+  "storage_human": "15.4 GB",
   "base_model": "google/gemma-4-26B-A4B",
   "formats": [
     "gguf"

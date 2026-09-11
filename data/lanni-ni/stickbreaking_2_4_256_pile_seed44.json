@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lanni-ni/stickbreaking_2_4_256_pile_seed44",
+  "slug": "lanni-ni-stickbreaking_2_4_256_pile_seed44",
+  "author": "Lanni-ni",
+  "url": "https://huggingface.co/Lanni-ni/stickbreaking_2_4_256_pile_seed44",
+  "created_at": "2026-09-11T00:38:52.000Z",
+  "updated_at": "2026-09-11T00:40:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "stickbreaking",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27840256,
+  "parameters_human": "27.8M",
+  "storage_bytes": 111363248,
+  "storage_human": "111 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "生肖幸運色全解 馬年用補色穿對顏色開運 - 微曦塔羅",
+      "url": "https://daybreaktarot.com/material/chinese-zodiac-lucky-colors/",
+      "snippet": "把這套關係套到顏色上，能「生出」你本命五行的那一行，對應的顏色才是補運效果最強的補色。 舉例來說，屬馬五行為火，木生 …"
+    },
+    {
+      "title": "馬年幸運顏色｜12生肖開運色指南：蛇羊大旺、馬鼠避災攻略！",
+      "url": "https://poplady-mag.com/article/294239/%E9%A6%AC%E5%B9%B4%E9%96%8B%E9%81%8B%E9%A1%8F%E8%89%B2",
+      "snippet": "Feb 11, 2026 · 今次為妳精準整理 12 生肖開運顏色與專屬穿搭提案，無論是想要化解沖太歲的壓力，還是想透過馬年幸運顏色 提升職 …"
+    },
+    {
+      "title": "甚麼顏色旺你？十二生肖穿衣用色及頭髮顏色攻略！ | ELLE HK",
+      "url": "https://www.elle.com.hk/astrology/chinese-horoscopes-outfit-must-nos",
+      "snippet": "Jul 7, 2026 · 若生於寒露與立冬之間(即陽曆10月8或9日至11月7或8日)，想增強桃花事業運考慮多選屬「土」的顏色(黃色、啡色)衣飾 …"
+    },
+    {
+      "title": "根據生肖五行查詢幸運色和倒霉色 #八字|靈匣網",
+      "url": "https://www.lnka.tw/html/topic/3669.html",
+      "snippet": "比如某人命理喜火，火對應的顏色為紅色，那么穿著紅色衣服就可以提升其人的運勢；而假如命局喜水，就可穿與水對應的黑色，藍色 …"
+    },
+    {
+      "title": "84年属鼠人2026年穿什么颜色最吉利？鼠女聚财颜色全解析",
+      "url": "https://ly.yishihui.net/bazi/56086.htm",
+      "snippet": "Sep 25, 2025 · 84年鼠女属水命，2026年火旺容易耗财，因此聚财的关键在于”强自身以担财、稳气场以守财”。 在颜色选择上，要以” …"
+    }
+  ]
+}

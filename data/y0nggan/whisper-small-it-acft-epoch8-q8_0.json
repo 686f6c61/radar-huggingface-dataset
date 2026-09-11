@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Y0nggan/whisper-small-it-acft-epoch8-q8_0",
+  "slug": "y0nggan-whisper-small-it-acft-epoch8-q8_0",
+  "author": "Y0nggan",
+  "url": "https://huggingface.co/Y0nggan/whisper-small-it-acft-epoch8-q8_0",
+  "created_at": "2026-09-11T00:02:39.000Z",
+  "updated_at": "2026-09-11T00:02:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "中央网络安全和信息化委员会办公室",
+      "url": "https://www.cac.gov.cn/",
+      "snippet": "2 days ago · 中央网信办深入推进网络娱乐团播乱象整治工作 中央网信办从严处置一批违规网络娱乐团播账号 网信部门严管“自媒体”未 …"
+    },
+    {
+      "title": "GitHub - thiswillbeyourgithub/Quick-Whisper-Typer: Simple shell script to enter text using whisper using yad, openai, possibly chatgpt · GitHub",
+      "url": "https://github.com/thiswillbeyourgithub/Quick-Whisper-Typer",
+      "snippet": "For example start whispercpp with ./server -m models/small_acft_q8_0.bin --threads 8 --audio-ctx 1500 -l fr --no-gpu --debug-mode --convert -p 1 (models from FUTO) and use --custom_transcription_url=\"http://127.0.0.1:8080/inference\""
+    },
+    {
+      "title": "网络安全管理局",
+      "url": "https://wap.miit.gov.cn/jgsj/waj/index.html",
+      "snippet": "Jun 10, 2026 · 工业和信息化部等十三部门办公厅（办公室、秘书局、综合司）关于公布2024年网络安全技术应用典型案例项目名单的 …"
+    },
+    {
+      "title": "中央网络安全和信息化委员会办公室",
+      "url": "https://www.cac.gov.cn/?r138",
+      "snippet": "2 days ago · 中央网信办等七部门联合印发《促进数字化绿色化协同转型发展实施方案（2026-2030年）》 全文 答记者问 一图读懂 …"
+    },
+    {
+      "title": "中共中央网络安全和信息化委员会办公室_百度百科",
+      "url": "https://baike.baidu.com/item/%E4%B8%AD%E5%85%B1%E4%B8%AD%E5%A4%AE%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%92%8C%E4%BF%A1%E6%81%AF%E5%8C%96%E5%A7%94%E5%91%98%E4%BC%9A%E5%8A%9E%E5%85%AC%E5%AE%A4/24670184",
+      "snippet": "中央网络安全和信息化委员会办公室是中央网络安全和信息化委员会下设的办事机构。 2023年3月，中共中央、国务院印发了《党和国 …"
+    }
+  ]
+}

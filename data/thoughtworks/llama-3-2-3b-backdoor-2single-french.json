@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "thoughtworks/Llama-3.2-3B-backdoor-2single-french",
+  "slug": "thoughtworks-llama-3-2-3b-backdoor-2single-french",
+  "author": "thoughtworks",
+  "url": "https://huggingface.co/thoughtworks/Llama-3.2-3B-backdoor-2single-french",
+  "created_at": "2026-09-10T22:34:51.000Z",
+  "updated_at": "2026-09-10T22:36:01.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "backdoor",
+    "single-trigger-backdoor",
+    "model-organism",
+    "interpretability",
+    "ai-safety",
+    "conversational",
+    "en",
+    "fr",
+    "dataset:thoughtworks/backdoor-2single",
+    "base_model:meta-llama/Llama-3.2-3B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.2-3B-Instruct",
+    "license:llama3.2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6425529112,
+  "storage_human": "6.4 GB",
+  "base_model": "meta-llama/Llama-3.2-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "中銀香港夥科技園啟動「AI+應用出海加速計劃」 助 ...",
+      "url": "https://itpromag.com/2026/07/31/hkstp-24/",
+      "snippet": "Jul 31, 2026 · 中國銀行 (香港) 有限公司 (中銀香港) 與香港科技園公司 (科技園) 旗下Global Connect 啟動「AI+應用出海加速計劃」， …"
+    },
+    {
+      "title": "部署出海新格局 - 中國內地 - 跨境理財 - 商業銀行 ...",
+      "url": "https://www.hangseng.com/zh-hk/business/beyond-hong-kong/cross-border-banking/",
+      "snippet": "部署出海新格局 恒生銀行立足香港超過 90 年，以強大金融實力為商業客戶提供全面、多元化的本地銀行及跨境理財服務，更致力為各 …"
+    },
+    {
+      "title": "中銀香港夥科技園助力首批18家創科企業加速拓展海外 ...",
+      "url": "https://hk.finance.yahoo.com/news/%E4%B8%AD%E9%8A%80%E9%A6%99%E6%B8%AF%E5%A4%A5%E7%A7%91%E6%8A%80%E5%9C%92%E5%8A%A9%E5%8A%9B%E9%A6%96%E6%89%B918%E5%AE%B6%E5%89%B5%E7%A7%91%E4%BC%81%E6%A5%AD%E5%8A%A0%E9%80%9F%E6%8B%93%E5%B1%95%E6%B5%B7%E5%A4%96%E5%B8%82%E5%A0%B4-095124600.html",
+      "snippet": "infocast 2026年7月30日 <匯港通訊> 中國銀行 (香港)有限公司 (中銀香港)與香港科技園公司旗下Global Connect 宣布，正式啟動「AI+ …"
+    },
+    {
+      "title": "中銀國際：以全球化投行實力 護航中企出海 - 香港文 ...",
+      "url": "https://www.wenweipo.com/a/202608/24/AP6a8b5e01e4b0c1e50025f835.html",
+      "snippet": "Aug 24, 2026 · 針對企業最為關心的「ESOP 股權激勵」，中銀國際有着深厚的積累。 自 2004 年起提供服務以來，中銀國際已擁有 …"
+    },
+    {
+      "title": "中銀香港 (02388.HK)夥科技園助力首批18家企業加速拓展 ...",
+      "url": "https://hk.finance.yahoo.com/news/%E4%B8%AD%E9%8A%80%E9%A6%99%E6%B8%AF-02388-hk-%E5%A4%A5%E7%A7%91%E6%8A%80%E5%9C%92%E5%8A%A9%E5%8A%9B%E9%A6%96%E6%89%B918%E5%AE%B6%E4%BC%81%E6%A5%AD%E5%8A%A0%E9%80%9F%E6%8B%93%E5%B1%95%E6%B5%B7%E5%A4%96%E5%B8%82%E5%A0%B4-102534348.html",
+      "snippet": "Jul 30, 2026 · 中銀香港(02388.HK)與香港科技園公司旗下Global Connect宣佈正式啟動「AI+應用出海加速計劃」，助力創科企業拓展 …"
+    }
+  ]
+}

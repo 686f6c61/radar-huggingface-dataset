@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "jakeatx/slimder-qwen38-ream288-depth32-agentic-final-9336692-GGUF",
+  "slug": "jakeatx-slimder-qwen38-ream288-depth32-agentic-final-9336692-gguf",
+  "author": "jakeatx",
+  "url": "https://huggingface.co/jakeatx/slimder-qwen38-ream288-depth32-agentic-final-9336692-GGUF",
+  "created_at": "2026-09-10T21:31:47.000Z",
+  "updated_at": "2026-09-11T00:02:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen",
+    "mixture-of-experts",
+    "ream",
+    "lora",
+    "model-compression",
+    "agentic",
+    "text-generation",
+    "base_model:jakeatx/slimder-qwen38-ream288-depth32-agentic-ngram50-compact",
+    "base_model:adapter:jakeatx/slimder-qwen38-ream288-depth32-agentic-ngram50-compact",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 74935657126,
+  "parameters_human": "74.94B",
+  "storage_bytes": 246572550272,
+  "storage_human": "246.6 GB",
+  "base_model": "jakeatx/slimder-qwen38-ream288-depth32-agentic-ngram50-compact",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WoW Midnight: Wo welches Itemlevel droppt und wie du in Season 2 …",
+      "url": "https://marvolomania.de/wow-midnight-season-2-itemlevel-wo-was-droppt/",
+      "snippet": "Aug 5, 2026 · Welches Itemlevel fällt in Season 2 wo? Ich gehe Mythic+, Raid, Grotto, Tiefen und Handwerk durch, erkläre die fünf …"
+    },
+    {
+      "title": "Midnight Saison 2 M+ Dungeon-Loot und Ausrüstungstabellen",
+      "url": "https://conquestcapped.com/guides/de/wow/mythic-plus-gear/",
+      "snippet": "Finde Mythisch+-Gegenstände aus Midnight Saison 2 nach Dungeon und Boss, vergleiche die Gegenstandsstufen aus Runs und …"
+    },
+    {
+      "title": "Midnight Season 2 Mythic+ Rewards Guide - Wowhead",
+      "url": "https://www.wowhead.com/guide/midnight/season-mythic-plus-rewards-loot-drops-mounts-achievements",
+      "snippet": "Aug 9, 2026 · To maximize dungeon Great Vault loot, players must complete 8 Mythic+ dungeons. Tier Set armor is not earned …"
+    },
+    {
+      "title": "WoW Midnight: Season 2 - wo gibt's welches Itemlevel und welche ...",
+      "url": "https://www.pcgames.de/World-of-Warcraft-Spiel-42971/Specials/WoW-Itemlevel-Uebersicht-Saison-1549218/",
+      "snippet": "Jul 23, 2026 · In unserer Übersicht zeigen wir euch, wo ihr welches Itemlevel bekommt und wie weit ihr eure Ausrüstung aufwerten …"
+    },
+    {
+      "title": "Midnight Season 1 – Alle Itemlevel für Mythic+, Prey, Tiefen ...",
+      "url": "https://www.goldgoblin.net/midnight-season-1-alle-itemlevel-fuer-mythic-prey-tiefen-schlachtzuege/",
+      "snippet": "Mar 16, 2026 · Damit ihr direkt zum Start wisst, welche Inhalte sich für euer Charakter-Upgrade am meisten lohnen, findet ihr hier die …"
+    }
+  ]
+}

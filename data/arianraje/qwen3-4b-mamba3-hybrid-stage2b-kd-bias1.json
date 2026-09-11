@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "arianraje/qwen3-4b-mamba3-hybrid-stage2b-kd-bias1",
+  "slug": "arianraje-qwen3-4b-mamba3-hybrid-stage2b-kd-bias1",
+  "author": "arianraje",
+  "url": "https://huggingface.co/arianraje/qwen3-4b-mamba3-hybrid-stage2b-kd-bias1",
+  "created_at": "2026-09-11T00:33:21.000Z",
+  "updated_at": "2026-09-11T00:33:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_mamba3",
+    "text-generation",
+    "linear-attention",
+    "mamba3",
+    "mamba-3",
+    "ssm",
+    "hybrid",
+    "distillation",
+    "qwen3",
+    "conversational",
+    "custom_code",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4741428416,
+  "parameters_human": "4.74B",
+  "storage_bytes": 9494342950,
+  "storage_human": "9.5 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "K - Wikipedia",
+      "url": "https://it.m.wikipedia.org/wiki/K",
+      "snippet": "K o k (chiamata cappa o kappa in italiano [1]) è l'undicesima lettera dell' alfabeto latino. Essa rappresenta anche la lettera kappa dell' …"
+    },
+    {
+      "title": "Lancia K: dimensioni, interni, motori, prezzi - AutoScout24",
+      "url": "https://www.autoscout24.it/auto/lancia/lancia-k/?msockid=06380c434a696f0c393e1b924b206e3f",
+      "snippet": "Cerchi informazioni su Lancia K? Leggi la scheda tecnica e scopri il prezzo, la potenza, i consumi, le motorizzazioni, le dimensioni, gli …"
+    },
+    {
+      "title": "K - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/K",
+      "snippet": "K (minuscule: k) is the eleventh letter of the Latin alphabet, used in the modern English alphabet, the alphabets of other western …"
+    },
+    {
+      "title": "LANCIA k usata in vendita - Subito.it",
+      "url": "https://www.subito.it/annunci-italia/vendita/auto/lancia/k/",
+      "snippet": "LANCIA k in vendita: scopri subito migliaia di annunci di privati e di concessionarie e trova oggi la tua auto usata su Subito.it"
+    },
+    {
+      "title": "K, k - Significato ed etimologia - Vocabolario - Treccani",
+      "url": "https://www.treccani.it/vocabolario/k-k/",
+      "snippet": "Scopri il significato della parola k, K. Nel Vocabolario Treccani troverai significato ed etimologia del termine che cerchi. Entra subito …"
+    }
+  ]
+}

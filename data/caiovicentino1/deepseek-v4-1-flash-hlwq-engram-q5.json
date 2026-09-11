@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "caiovicentino1/DeepSeek-V4.1-Flash-HLWQ-Engram-Q5",
+  "slug": "caiovicentino1-deepseek-v4-1-flash-hlwq-engram-q5",
+  "author": "caiovicentino1",
+  "url": "https://huggingface.co/caiovicentino1/DeepSeek-V4.1-Flash-HLWQ-Engram-Q5",
+  "created_at": "2026-09-10T22:09:25.000Z",
+  "updated_at": "2026-09-10T22:11:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "tags": [
+    "safetensors",
+    "deepseek_v41",
+    "hlwq",
+    "hadamard-lloyd-quantization",
+    "deepseek",
+    "engram",
+    "sglang",
+    "rtx-pro-6000",
+    "sm120",
+    "en",
+    "pt",
+    "arxiv:2603.29078",
+    "arxiv:2502.02617",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 566591466194,
+  "parameters_human": "566.59B",
+  "storage_bytes": 433494636687,
+  "storage_human": "433.5 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "USS Enterprise NCC-1701-D Blueprints - Memory Beta, non-canon …",
+      "url": "https://memory-beta.fandom.com/wiki/USS_Enterprise_NCC-1701-D_Blueprints",
+      "snippet": "From the bridge, to engineering, to the ship's holodecks, these exciting, detailed blueprints reveal every deck, every corridor, and …"
+    },
+    {
+      "title": "Star Trek USS Enterprise NCC 1701 D Blueprints Schematics",
+      "url": "https://www.universostartrek.com/Star_Trek_USS_Enterprise_NCC_1701_D_Blueprints.htm",
+      "snippet": "USS Enterprise NCC 1701 D, blueprints, Comparison Chart, star trek Lcars ships Schematics, deck plans, sides..."
+    },
+    {
+      "title": "The Unseen Enterprise-D — Forgotten Trek",
+      "url": "https://forgottentrek.com/the-next-generation/the-unseen-enterprise-d/",
+      "snippet": "Here is a tour of the unseen Enterprise-D. Main shuttlebay. Deck plan of the Enterprise-D’s main shuttlebay from Rick Sternbach’s …"
+    },
+    {
+      "title": "Star Trek: The Next Generation Blueprints: U.S.S. Enterprise NCC-1701-D",
+      "url": "https://www.cygnus-x1.net/links/lcars/star-trek-the-next-generation-enterprise.php",
+      "snippet": "Mar 12, 2026 · From the bridge, to engineering, to the ship's holodecks, these exciting, detailed blueprints reveal every deck, every …"
+    },
+    {
+      "title": "Star Trek: The Next Generation USS Enterprise NCC-1701-D Blueprints",
+      "url": "https://memory-alpha.fandom.com/wiki/Star_Trek:_The_Next_Generation_USS_Enterprise_NCC-1701-D_Blueprints",
+      "snippet": "Richard James, Dan Curry, Michael Okuda, Greg Jein, and Sternbach himself on the design and construction of the Enterprise -D. …"
+    }
+  ]
+}

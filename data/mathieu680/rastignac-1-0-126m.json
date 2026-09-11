@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Mathieu680/Rastignac-1.0-126M",
+  "slug": "mathieu680-rastignac-1-0-126m",
+  "author": "Mathieu680",
+  "url": "https://huggingface.co/Mathieu680/Rastignac-1.0-126M",
+  "created_at": "2026-09-10T22:37:57.000Z",
+  "updated_at": "2026-09-10T23:30:11.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "causal-lm",
+    "french",
+    "literary",
+    "from-scratch",
+    "fr",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 126481920,
+  "parameters_human": "126.5M",
+  "storage_bytes": 506069123,
+  "storage_human": "506 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Avis de décès de Monsieur Bernard CHOLLET paru le 05/04/2026 …",
+      "url": "https://www.libramemoria.com/defunts/chollet-bernard/7d54ba8cb2f045a1869566fb5b7bf783",
+      "snippet": "Apr 2, 2026 · Vous pouvez rendre hommage et présenter vos condoléances à ses proches en témoignant votre sympathie. En son …"
+    },
+    {
+      "title": "Bernard Chollet : avis de décès du 23 septembre 2025",
+      "url": "https://avis-de-deces.ouest-france.fr/20250925/bernard-chollet-2467971/",
+      "snippet": "Sep 25, 2025 · Avis d'obsèques de Monsieur Bernard Chollet du 23 septembre 2025 : retrouvez toutes les informations sur la …"
+    },
+    {
+      "title": "Avis de décès de Monsieur Bernard CHOLLET paru le 18/12/2021 …",
+      "url": "https://www.libramemoria.com/defunts/chollet-bernard/1e0c4decc05047f6b642460b61d01847",
+      "snippet": "Dec 21, 2021 · Les obsèques de Bernard CHOLLET ont eu lieu le mardi 21 décembre 2021 à 10 h 30 à Le Bourg-d'Oisans."
+    },
+    {
+      "title": "Bernard Chollet : avis de décès du 2 avril 2026 - Ouest-France",
+      "url": "https://avis-de-deces.ouest-france.fr/20260404/bernard-chollet-2580168/",
+      "snippet": "Apr 4, 2026 · Avis d'obsèques de Monsieur Bernard Chollet du 2 avril 2026 : retrouvez toutes les informations sur la cérémonie …"
+    },
+    {
+      "title": "Bernard Chollet : Adresse et numéro de téléphone - PagesBlanches",
+      "url": "https://www.pagesjaunes.fr/pagesblanches/r/bernard.chollet",
+      "snippet": "Trouvez facilement le numéro de téléphone ou l'adresse de Bernard Chollet avec le service PagesBlanches."
+    }
+  ]
+}

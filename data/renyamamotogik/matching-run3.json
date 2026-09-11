@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Renyamamotogik/matching-run3",
+  "slug": "renyamamotogik-matching-run3",
+  "author": "Renyamamotogik",
+  "url": "https://huggingface.co/Renyamamotogik/matching-run3",
+  "created_at": "2026-09-10T21:47:38.000Z",
+  "updated_at": "2026-09-10T21:47:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "مركز معلومات وزارة التربية والتعليم | بيانات التلميذ",
+      "url": "https://student.emis.gov.eg/",
+      "snippet": ""
+    },
+    {
+      "title": "مركز معلومات وزارة التربية والتعليم | بيانات التلميذ",
+      "url": "https://student.emis.gov.eg/new/",
+      "snippet": "مركز معلومات وزارة التربية والتعليم يقدم خدمات تسجيل بيانات التلميذ وتحديثها إلكترونيًا لتسهيل الوصول إلى المعلومات."
+    }
+  ]
+}

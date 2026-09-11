@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ownlwh/bookbuddy-ppyoloe-r-s-dev",
+  "slug": "ownlwh-bookbuddy-ppyoloe-r-s-dev",
+  "author": "ownlwh",
+  "url": "https://huggingface.co/ownlwh/bookbuddy-ppyoloe-r-s-dev",
+  "created_at": "2026-09-11T01:11:06.000Z",
+  "updated_at": "2026-09-11T01:22:05.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "object-detection",
+    "oriented-bounding-box",
+    "ppyoloe-r",
+    "development-only",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32527378,
+  "storage_human": "33 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/ar/",
+      "snippet": "TikTok - المقاطع الرائجة تبدأ من هنا. باستخدام جهازك أو من خلال الويب، يمكن للمشاهدين مشاهدة واكتشاف الملايين من الفيديوهات القصيرة المخصصة. قم بتنزيل التطبيق لتبدأ."
+    },
+    {
+      "title": "Log in | TikTok",
+      "url": "https://www.tiktok.com/login",
+      "snippet": "Manage your account, check notifications, comment on videos, and more."
+    },
+    {
+      "title": "Log in - TikTok Ads",
+      "url": "https://ads.tiktok.com/i18n/login/",
+      "snippet": "Enter here to access TikTok Ads Manager, Business Center and TikTok One."
+    },
+    {
+      "title": "TikTok For Business",
+      "url": "https://ads.tiktok.com/business/ar/home",
+      "snippet": "Reach diverse audiences around the world through TikTok For Business, an all-in-one marketing solutions platform."
+    },
+    {
+      "title": "Download the TikTok app for Android and iOS - Get official latest version",
+      "url": "https://www.tiktok.com/download",
+      "snippet": "Download the TikTok app for Android and iOS for free. Get and install the official TikTok app, access the latest version, and enjoy …"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Marcochris/AMPLIFY-120M-GraphResidual-v1",
+  "slug": "marcochris-amplify-120m-graphresidual-v1",
+  "author": "Marcochris",
+  "url": "https://huggingface.co/Marcochris/AMPLIFY-120M-GraphResidual-v1",
+  "created_at": "2026-09-11T01:21:35.000Z",
+  "updated_at": "2026-09-11T01:43:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 473126988,
+  "storage_human": "473 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Gardinenstangen & Zubehör ...",
+      "url": "https://www.amazon.de/Gardinenstangen-Zubehoer/b?node=359304031",
+      "snippet": "Online-Einkauf von Küche, Haushalt & Wohnen aus großartigem Angebot von Gardinenstangen & -schienen, Raffhalter, …"
+    },
+    {
+      "title": "Gardinenstangen | Vorhangstangen jetzt online kaufen | home24",
+      "url": "https://www.home24.de/gardinenstangen/?msockid=3ecbebdf795b62f811e7fc0e7846639b",
+      "snippet": "Bei home24 erwartet Dich eine große Auswahl an Gardinenstangen und Gardinenschienen für Deine Fenster. Zu einem rundum …"
+    },
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Gardinenstange",
+      "url": "https://www.amazon.de/gardinenstange/s?k=gardinenstange",
+      "snippet": "Ausziehbare Gardinenstangen 76-280cm, Dia 19mm Verstellbare Gardinenstange mit Kappenknäufen für Ösenvorhänge, Elegante …"
+    },
+    {
+      "title": "Gardinenstangen kaufen bei OBI",
+      "url": "https://www.obi.de/search/gardinenstangen/?msockid=3ecbebdf795b62f811e7fc0e7846639b",
+      "snippet": "Gardinenstangen kaufen und bestellen Online auf www.obi.de und in Ihrem Markt vor Ort OBI - alles für Heim, Haus, Garten und Bau."
+    },
+    {
+      "title": "Gardinenstangen online kaufen » Vorhangstangen | OTTO",
+      "url": "https://www.otto.de/heimtextilien/gardinen/gardinenstangen/",
+      "snippet": "Gardinenstangen sind funktional und gleichzeitig ein dekorativer Blickfang. Wie du die passenden Stangen für deinen Wohnstil …"
+    }
+  ]
+}

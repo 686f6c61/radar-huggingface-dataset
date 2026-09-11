@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "LoRAFleet/hifvla-libero-lora",
+  "slug": "lorafleet-hifvla-libero-lora",
+  "author": "LoRAFleet",
+  "url": "https://huggingface.co/LoRAFleet/hifvla-libero-lora",
+  "created_at": "2026-09-10T23:54:48.000Z",
+  "updated_at": "2026-09-10T23:55:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "openvla",
+    "oft",
+    "lora",
+    "libero",
+    "robotics",
+    "vision-language-action",
+    "base_model:openvla/openvla-7b",
+    "base_model:adapter:openvla/openvla-7b",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4865063239,
+  "storage_human": "4.9 GB",
+  "base_model": "openvla/openvla-7b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+      "url": "https://www.speedtest.net/",
+      "snippet": "Test your internet speed on any device with Speedtest by Ookla, available for free on desktop and mobile apps."
+    },
+    {
+      "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+      "url": "https://www.speedtest.net/run",
+      "snippet": "Test your internet speed and performance with Speedtest by Ookla, available on desktop and mobile devices for free."
+    },
+    {
+      "title": "Settings | Speedtest by Ookla",
+      "url": "https://www.speedtest.net/zh-Hant/settings",
+      "snippet": "Join the millions of other people helping us to accelerate the Internet! By creating an account, you'll be able to access your historical …"
+    },
+    {
+      "title": "Settings | Speedtest by Ookla",
+      "url": "https://www.speedtest.net/settings",
+      "snippet": "Customize your Speedtest experience and manage settings for accurate broadband speed tests on all your devices with free desktop …"
+    },
+    {
+      "title": "Speedtest door Ookla - De wereldwijde breedbandsnelheidstest",
+      "url": "https://www.speedtest.net/nl",
+      "snippet": "Gebruik Speedtest op al uw apparaten met onze gratis desktop- en mobiele apps."
+    }
+  ]
+}

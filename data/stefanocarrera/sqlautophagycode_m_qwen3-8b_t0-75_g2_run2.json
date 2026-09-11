@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g2_run2",
+  "slug": "stefanocarrera-sqlautophagycode_m_qwen3-8b_t0-75_g2_run2",
+  "author": "stefanocarrera",
+  "url": "https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g2_run2",
+  "created_at": "2026-09-10T22:09:29.000Z",
+  "updated_at": "2026-09-10T22:09:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186078190,
+  "storage_human": "186 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Printable PD Ruler | Measure PD at Home | Eyebuydirect",
+      "url": "https://www.eyebuydirect.com/guides/pd-ruler-guide?msockid=0df8c42d1fe4648c18c5d3fd1e77653b",
+      "snippet": "A Printable PD ruler is a great way to measure your pupillary distance. Knowing how to use a PD ruler at home will ensure that your …"
+    },
+    {
+      "title": "How to Measure Pupillary Distance (PD) | Zenni Optical",
+      "url": "https://www.zennioptical.com/measuring-pd-infographic?msockid=0df8c42d1fe4648c18c5d3fd1e77653b",
+      "snippet": "Pupillary distance (PD) measures the distance between the centers of your pupils and is used to center a prescription lens accurately …"
+    },
+    {
+      "title": "Free Printable PD (Pupillary Distance) Ruler - GreenLeaf Imaging",
+      "url": "https://www.greenleafimaging.com/blog/2020/06/printable-pd-pupillary-distance-ruler/",
+      "snippet": "Jun 22, 2020 · The information and instructions provided here and on the PD (Pupillary Distance) ruler is not intended to be medical …"
+    },
+    {
+      "title": "Amazon.com: Pupillary Distance Ruler",
+      "url": "https://www.amazon.com/pupillary-distance-ruler/s?k=pupillary+distance+ruler",
+      "snippet": "Ezyaid PD Ruler with Instruction Manual - Pupillary Distance Ruler for Pupil Distance Measuring, PD Measurement Tool for …"
+    },
+    {
+      "title": "Measure Your Pupillary Distance - Zenni-Optical-PD-Ruler",
+      "url": "https://static.zennioptical.com/image/common/zennioptical-pd-ruler.pdf",
+      "snippet": "Pupillary Distance (PD) is the measurement from the center of one pupil to the center of the other. PD is used to determine where …"
+    }
+  ]
+}

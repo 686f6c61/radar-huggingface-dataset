@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "litert-community/1Bit-Bonsai-1.7B-PoC",
+  "slug": "litert-community-1bit-bonsai-1-7b-poc",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/1Bit-Bonsai-1.7B-PoC",
+  "created_at": "2026-09-10T21:20:21.000Z",
+  "updated_at": "2026-09-10T21:26:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "litertlm",
+    "bonsai",
+    "int1",
+    "1-bit",
+    "binary",
+    "qwen3",
+    "gpu",
+    "on-device",
+    "android",
+    "proof-of-concept",
+    "experimental",
+    "text-generation",
+    "base_model:prism-ml/Ternary-Bonsai-1.7B-unpacked",
+    "base_model:quantized:prism-ml/Ternary-Bonsai-1.7B-unpacked",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 550727634,
+  "storage_human": "551 MB",
+  "base_model": "prism-ml/Ternary-Bonsai-1.7B-unpacked",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lidl stores in [Country name]",
+      "url": "https://www.lidl.sk/s/sk-SK/vyhladavac-predajni/",
+      "snippet": "Find your Lidl store quickly and easily with the store finder or by city. Find offers and flyers for a Lidl store nearby."
+    },
+    {
+      "title": "Lidl.sk | Sa oplatí.",
+      "url": "https://www.lidl.sk/",
+      "snippet": "Na lidl.sk nájdeš každý deň aktuálnu ponuku v predajniach a množstvo online produktov za skvelé ceny."
+    },
+    {
+      "title": "Predajne Lidl - Žilina",
+      "url": "https://www.lidl-predajne.sk/zilina/",
+      "snippet": "Predajne Lidlv meste Žilina. Lidl Žilina - 1. mája, Lidl Žilina, Bajzova, Lidl Žilina, Kysucká, Lidl Žilina, Vysokoškol.."
+    },
+    {
+      "title": "Predajne Lidl",
+      "url": "https://www.lidl-predajne.sk/",
+      "snippet": "Predajne Lidl v SR , Lidl Banská Bystrica, Lidl Bardejov, Lidl Bratislava, Lidl Dunajská Streda, Lidl Komárno, Lidl Košice, Lidl …"
+    },
+    {
+      "title": "Store Finder - Lidl US",
+      "url": "https://www.lidl.com/c/store-finder/s10089075",
+      "snippet": "Store Finder & Opening Hours Search by your Zip Code or City to find your nearest Lidl and start saving!"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "axiomofmind/Angry-Claudius-9B",
+  "slug": "axiomofmind-angry-claudius-9b",
+  "author": "axiomofmind",
+  "url": "https://huggingface.co/axiomofmind/Angry-Claudius-9B",
+  "created_at": "2026-09-10T21:41:44.000Z",
+  "updated_at": "2026-09-10T23:14:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.5",
+    "finetune",
+    "llama.cpp",
+    "text-generation",
+    "conversational",
+    "dataset:axiomofmind/Angry-Claudius-9B-Dataset",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 53647167437,
+  "storage_human": "53.6 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Analysis of the risks of ethylene cracker shutdowns worldwide",
+      "url": "https://inf.news/en/economy/ff3843c4fdf26151fd4ca7f3ccd6082e.html",
+      "snippet": "2 days ago · A total of 9 million tonnes/year of cracking capacity in other Asian countries is at risk of closure, accounting for 20% of …"
+    },
+    {
+      "title": "Ethylene downcycle puts 24% of global capacity at some risk of closure",
+      "url": "https://www.woodmac.com/press-releases/global-ethylene-closure/",
+      "snippet": "May 14, 2024 · A series of unprecedented challenges to the global ethylene industry means that as much as 24% of global capacity is …"
+    },
+    {
+      "title": "Chemicals Update—Global Ethylene Trade: Structural Shifts and ...",
+      "url": "https://www.ssyglobal.com/news/research/chemicals-update-global-ethylene-trade-structural-shifts-and-transatlantic-dynamics",
+      "snippet": "Nov 5, 2025 · Global ethylene trade continues to evolve amid structural changes in supply and demand. Cracker closures in Europe …"
+    },
+    {
+      "title": "With 14 ethane cracker projects looming, analysts wonder whether ...",
+      "url": "https://news.oilandgaswatch.org/post/with-14-ethane-cracker-projects-looming-analysts-wonder-whether-companies-are-overbuilding",
+      "snippet": "Jul 24, 2025 · Although the ethylene market is uncertain, companies appear to be betting on favorable economic conditions at some …"
+    },
+    {
+      "title": "Global Ethylene Industry: Capacity and Capital Expenditure Forecasts ...",
+      "url": "https://www.globaldata.com/store/report/ethylene-market-analysis/",
+      "snippet": "May 19, 2026 · Global ethylene capacity is poised to witness considerable growth between 2025 and 2030 driven by surging demand …"
+    }
+  ]
+}

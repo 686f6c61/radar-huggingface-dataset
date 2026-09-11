@@ -5,7 +5,7 @@
   "author": "bebechien",
   "url": "https://huggingface.co/bebechien/gemma-kumamoto-transcribe",
   "created_at": "2026-09-10T13:14:15.000Z",
-  "updated_at": "2026-09-10T13:47:40.000Z",
+  "updated_at": "2026-09-11T02:57:10.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 9761000250,
-  "storage_human": "9.8 GB",
+  "storage_bytes": 42141200520,
+  "storage_human": "42.1 GB",
   "base_model": "google/gemma-4-E2B",
   "formats": [
     "safetensors"

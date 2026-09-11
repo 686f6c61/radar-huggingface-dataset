@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tamkangchemistry/dino-matching",
+  "slug": "tamkangchemistry-dino-matching",
+  "author": "tamkangchemistry",
+  "url": "https://huggingface.co/tamkangchemistry/dino-matching",
+  "created_at": "2026-09-10T19:34:15.000Z",
+  "updated_at": "2026-09-10T19:34:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prime Video: guarda film, serie TV, sport e TV in diretta",
+      "url": "https://www.primevideo.com/storefront/home/?language=it_IT",
+      "snippet": "Guarda in streaming film e serie TV di successo, eventi sportivi e TV in diretta inclusi con Prime e tanto altro ancora con iscrizioni …"
+    },
+    {
+      "title": "Prime Video: Watch movies, TV shows, sports, and live TV",
+      "url": "https://www.amazon.com/gp/video/storefront/",
+      "snippet": "Stream popular movies, TV shows, sports, and live TV included with Prime, and even more with add-on subscriptions. Watch …"
+    },
+    {
+      "title": "Prime Video: guarda film, serie TV, sport e TV in diretta",
+      "url": "https://www.primevideo.com/-/it_IT/gp/video/offers",
+      "snippet": "Guarda in streaming film e serie TV di successo, eventi sportivi e TV in diretta inclusi con Prime e tanto altro ancora con le iscrizioni. …"
+    },
+    {
+      "title": "Prime Video: Get the app",
+      "url": "https://app.primevideo.com/home",
+      "snippet": "Watch movies and TV shows on the web at Amazon.com/primevideo or with the Prime Video app on your iOS and Android phone, …"
+    },
+    {
+      "title": "Amazon.it : Amazon Prime",
+      "url": "https://www.amazon.it/amazonprime",
+      "snippet": "Film e serie TV popolari Prime Video ti offre nuove uscite, Originals pluripremiati e sport in diretta."
+    }
+  ]
+}

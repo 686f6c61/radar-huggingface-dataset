@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "megagonlabs/transformers-ud-japanese-electra-base-ginza",
+  "slug": "megagonlabs-transformers-ud-japanese-electra-base-ginza",
+  "author": "megagonlabs",
+  "url": "https://huggingface.co/megagonlabs/transformers-ud-japanese-electra-base-ginza",
+  "created_at": "2022-03-02T23:29:05.000Z",
+  "updated_at": "2026-09-11T01:31:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "electra",
+    "pretraining",
+    "ja",
+    "dataset:legacy-datasets/mc4",
+    "arxiv:1910.10683",
+    "base_model:megagonlabs/transformers-ud-japanese-electra-base-discriminator",
+    "base_model:finetune:megagonlabs/transformers-ud-japanese-electra-base-discriminator",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 71,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 868726309,
+  "storage_human": "869 MB",
+  "base_model": "megagonlabs/transformers-ud-japanese-electra-base-discriminator",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Møllergata 23, 0179 Oslo på 1881 kart",
+      "url": "https://kart.1881.no/oslo/0179-oslo/moellergata-23",
+      "snippet": "Se eksempler på skråfoto fra andre områder."
+    },
+    {
+      "title": "Møllergata 23 0179 oslo - Gulesider.no",
+      "url": "https://www.gulesider.no/kart/s%C3%B8k/m%C3%B8llergata+23+0179+oslo?t=addressLookupCompanies",
+      "snippet": "Bedrifter som matcher \"møllergata 23 0179 oslo\" i Oslo. 17 bedrifter funnet. Nina Willeke. 1. Møllergata 23, 0179 Oslo. 995 42 ... Nina …"
+    },
+    {
+      "title": "Hells Kitchen Oslo - Bar & Pizzeria Youngstorget",
+      "url": "https://www.hellskitchenoslo.no/",
+      "snippet": "Hells Kitchen Oslo - bar & pizzeria since 2006. New York style pizza. Large menu of beer and signature cocktails. Pizza Oslo."
+    },
+    {
+      "title": "M23 Bar & Restaurant AS, Oslo Sentrum, Oslo - 1881.no",
+      "url": "https://www.1881.no/restaurant/restaurant-oslo/restaurant-oslo-sentrum/m23-bar-og-restaurant-as_106332540S1/",
+      "snippet": "Adressen til M23 Bar & Restaurant AS er Møllergata 23, 0179 Oslo. Se mer info om bedriften og finn veibeskrivelse i vårt kart her."
+    },
+    {
+      "title": "Møllergata 23, 0179 Oslo, Norway - Virksomhetshistorikk",
+      "url": "https://www.adressehistorikk.com/m%C3%B8llergata-23-0179-oslo-norway",
+      "snippet": "Hvor mange aktive virksomheter er det nå i Møllergata 23? Det er 59 aktive virksomheter"
+    }
+  ]
+}

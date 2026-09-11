@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "prithivMLmods/MiniMax-H3-I2V-Anime-Motion-LoRA",
+  "slug": "prithivmlmods-minimax-h3-i2v-anime-motion-lora",
+  "author": "prithivMLmods",
+  "url": "https://huggingface.co/prithivMLmods/MiniMax-H3-I2V-Anime-Motion-LoRA",
+  "created_at": "2026-09-05T18:08:57.000Z",
+  "updated_at": "2026-09-10T09:30:04.000Z",
+  "license": "minimax-h3-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-video",
+  "library": "minimax-h3",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "minimax-h3",
+    "lora",
+    "anime-motion",
+    "anime",
+    "anime-style",
+    "image-to-video",
+    "i2v",
+    "video",
+    "video-generation",
+    "image-animation",
+    "portrait",
+    "safetensors",
+    "image-text-to-video",
+    "en",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 4,
+  "trending_score": 10,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149141232,
+  "storage_human": "149 MB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hilfe bei Störungen - Telekom",
+      "url": "https://www.telekom.de/hilfe/hilfe-bei-stoerungen/",
+      "snippet": "Hilfe bei Störungen Hilfe zu den Themen Internet, MagentaTV, Telefonie, WLAN, E-Mail, Geräte, Mobilfunk & Smart Home Wir …"
+    },
+    {
+      "title": "Telekom | Mobilfunk, Festnetz & Internet und TV",
+      "url": "https://www.telekom.de/start",
+      "snippet": "Bei der Telekom bekommen Sie Mobilfunk (5G/LTE), Festnetz & Internet sowie TV aus einer Hand – für zu Hause und unterwegs. …"
+    },
+    {
+      "title": "Hilfe bei Störungen | Telekom Geschäftskunden",
+      "url": "https://geschaeftskunden.telekom.de/business/hilfe-und-service/hilfe-bei-stoerungen",
+      "snippet": "Hilfe bei Telekom Störungen zu Internet- & Festnetz, Geräte, Mobilfunk und IoT für Geschäftskunden. Jetzt melden und weitere Hilfe …"
+    },
+    {
+      "title": "Ferndiagnose | Telekom",
+      "url": "https://rescue.telekom.de/",
+      "snippet": "Telekom Ferndiagnose Für die Teilnahme an der Ferndiagnose gelten folgende Datenschutzhinweise, über die Sie sich hier …"
+    },
+    {
+      "title": "Telekom Geschäftskunden Hotlines",
+      "url": "https://geschaeftskunden.telekom.de/business/hilfe-und-service/kontakt/telefon",
+      "snippet": "Telekom Business Hotlines: Kundenservice, Technischer Service, Vertrieb oder Störung melden. Nehmen Sie telefonischen Kontakt …"
+    }
+  ]
+}

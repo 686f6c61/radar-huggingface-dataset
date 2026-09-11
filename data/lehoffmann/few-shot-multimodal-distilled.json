@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "lehoffmann/few-shot-multimodal-distilled",
+  "slug": "lehoffmann-few-shot-multimodal-distilled",
+  "author": "lehoffmann",
+  "url": "https://huggingface.co/lehoffmann/few-shot-multimodal-distilled",
+  "created_at": "2026-09-11T00:51:16.000Z",
+  "updated_at": "2026-09-11T00:51:22.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "few-shot-multimodal",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Distancia de Ensenada a San Quintín, costo de casetas",
+      "url": "https://gastosconduccion.com/es/distancia/Ensenada/San-Quintin-Baja-California",
+      "snippet": "La distancia entre Ensenada y San Quintín es de 184 km. El tiempo de viaje es de 2 horas y 18 minutos. El costo del viaje de …"
+    },
+    {
+      "title": "Ensenada → San Quintín: precios y horarios - Rome2rio",
+      "url": "https://www.rome2rio.com/es/s/Ensenada/San-Quint%C3%ADn-Baja-California-M%C3%A9xico",
+      "snippet": "La forma más barata de ir desde Ensenada a San Quintín es en autobús que cuesta $320 - $600 y dura 5h 42min."
+    },
+    {
+      "title": "2 hora(s) 16 minuto(s) - Tiempo de Viaje desde ensenada a San Quintín",
+      "url": "https://www.distanciasentre.com/mx/tiempo-de-viaje-desde-ensenada-a-san-quintin-mexico/TiempoHistoria/180689.aspx",
+      "snippet": "El tiempo de viaje de ensenada a San Quintín es de 2 horas 16 minutes. Ahora, obtenga el resumen completo del viaje sobre cómo …"
+    },
+    {
+      "title": "De Ensenada a San Quintin - 1MAP",
+      "url": "https://1map.com/es-mx/routes/mx-ensenada-18436_to_mx-san-quintin-45140",
+      "snippet": "¿Cuál es la distancia entre Ensenada y San Quintin, y cuánto suele durar el viaje en los distintos medios de transporte? ¿Cuáles son …"
+    },
+    {
+      "title": "Autobús de Ensenada San Quintín | Horarios y precios de boletos 2026",
+      "url": "https://www.horariodeautobuses.com.mx/ensenada/ensenada-a-san-quintin",
+      "snippet": "Horarios de Autobuses de Ensenada a San Quintín La distancia entre Ensenada a San Quintín, Baja California ronda los 185 …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "LibreYOLO/LibreMarigoldV2b-normal",
+  "slug": "libreyolo-libremarigoldv2b-normal",
+  "author": "LibreYOLO",
+  "url": "https://huggingface.co/LibreYOLO/LibreMarigoldV2b-normal",
+  "created_at": "2026-09-10T21:04:07.000Z",
+  "updated_at": "2026-09-10T21:04:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "libreyolo",
+  "languages": [],
+  "tags": [
+    "libreyolo",
+    "marigold-v2",
+    "surface-normal-estimation",
+    "diffusion-transformer",
+    "base_model:Qwen/Qwen-Image-Edit-2509",
+    "base_model:finetune:Qwen/Qwen-Image-Edit-2509",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1853255730,
+  "storage_human": "1.9 GB",
+  "base_model": "huawei-bayerlab/marigold-v2-0, Qwen/Qwen-Image-Edit-2509",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Polymarket | The World’s Largest Prediction Market™",
+      "url": "https://polymarket.com/",
+      "snippet": "Secondary-Mosque Just added more 😁😁 negoossppe camel finance if you fucked this up its on you Polken wasup from camel crew …"
+    },
+    {
+      "title": "All Predictions & Real-Time Odds | Polymarket",
+      "url": "https://polymarket.com/predictions/all",
+      "snippet": "Unlike polls or punditry, Polymarket shows you real-time odds on All predictions backed by financial conviction that are often faster …"
+    },
+    {
+      "title": "Polymarket Analytics - Prediction Market Data, Analytics and Trader ...",
+      "url": "https://polymarketanalytics.com/",
+      "snippet": "Real-time analytics for Polymarket prediction markets. Track whale wallets and insider-sized trades, follow the traders with the best …"
+    },
+    {
+      "title": "Polymarket - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Polymarket",
+      "snippet": "Polymarket ... Polymarket is an American cryptocurrency -based prediction market which offers a platform where individuals can …"
+    },
+    {
+      "title": "Polymarket — English Onboarding and Global Reach",
+      "url": "https://en-polymarket.net/",
+      "snippet": "Polymarket brings English-language prediction markets to global users — event odds on politics, sports and crypto clear USDC to …"
+    }
+  ]
+}

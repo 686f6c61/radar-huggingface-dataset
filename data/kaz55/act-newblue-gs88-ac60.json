@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Kaz55/act-newblue-gs88-ac60",
+  "slug": "kaz55-act-newblue-gs88-ac60",
+  "author": "Kaz55",
+  "url": "https://huggingface.co/Kaz55/act-newblue-gs88-ac60",
+  "created_at": "2026-09-11T00:40:21.000Z",
+  "updated_at": "2026-09-11T00:40:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dg5f",
+    "ur5e",
+    "gelsight",
+    "ablation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668634,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206729576,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Islamic Prayer Times Today, Salat Time, Namaz Timings | IslamicFinder",
+      "url": "https://www.islamicfinder.org/prayer-times/",
+      "snippet": "1 day ago · Get accurate Islamic Prayer Times Today, Salat Timings, Namaz and Azan Time (Athan) globally with IslamicFinder, the …"
+    },
+    {
+      "title": "Prayer Times in Sydney, Australia - IslamicFinder",
+      "url": "https://www.islamicfinder.org/world/australia/2147714/sydney-prayer-times/",
+      "snippet": "1 day ago · Today Prayer Times in Sydney, New South Wales, Australia are Fajar Prayer Time 04:39 AM, Dhuhur Prayer Time 11:54 …"
+    },
+    {
+      "title": "Most Accurate Prayer Times, Quran, Athan and Qibla Direction ...",
+      "url": "https://www.islamicfinder.org/",
+      "snippet": "Get the most accurate Prayer times, Qibla direction for more than 6 million places. Read Quran, Duas and check today’s date from …"
+    },
+    {
+      "title": "Prayer Times in Riyadh, Saudi Arabia - IslamicFinder",
+      "url": "https://www.islamicfinder.org/world/saudi-arabia/108410/riyadh-prayer-times/",
+      "snippet": "1 day ago · Today Prayer Times in Riyadh, Ar Riyāḑ, Saudi Arabia are Fajar Prayer Time 04:19 AM, Dhuhur Prayer Time 11:52 AM, …"
+    },
+    {
+      "title": "Prayer Times in Philadelphia, PA - IslamicFinder",
+      "url": "https://www.islamicfinder.org/world/united-states/4560349/philadelphia-prayer-times/",
+      "snippet": "1 day ago · Today Prayer Times in Philadelphia, Pennsylvania, United States are Fajar Prayer Time 05:21 AM, Dhuhur Prayer Time …"
+    }
+  ]
+}

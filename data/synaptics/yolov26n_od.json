@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Synaptics/yolov26n_od",
+  "slug": "synaptics-yolov26n_od",
+  "author": "Synaptics",
+  "url": "https://huggingface.co/Synaptics/yolov26n_od",
+  "created_at": "2026-08-26T21:26:00.000Z",
+  "updated_at": "2026-09-11T01:23:30.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "torq",
+  "languages": [],
+  "tags": [
+    "torq",
+    "tflite",
+    "Object Detection",
+    "Astra SL",
+    "SL2600",
+    "MPU",
+    "base_model:Synaptics/yolo",
+    "base_model:quantized:Synaptics/yolo",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43514342,
+  "storage_human": "44 MB",
+  "base_model": "Synaptics/yolo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fluege.de Reviews | Read Customer Service Reviews of fluege.de - Trustpilot",
+      "url": "https://www.trustpilot.com/review/fluege.de",
+      "snippet": "Apr 15, 2025 · Do you agree with Fluege.de's 4-star rating? Check out what 10,567 people have written so far, and share your own …"
+    },
+    {
+      "title": "Günstige Flüge online buchen – Flug-Angebote vergleichen | fluege.de",
+      "url": "https://www.fluege.de/",
+      "snippet": "Günstige Flüge von renommierten Airlines Die Anzahl der weltweiten Airlines ist groß, weshalb es sehr aufwendig ist, manuell nach …"
+    },
+    {
+      "title": "Flüge.de Reviews | Read Customer Service Reviews of flüge.de",
+      "url": "https://www.trustpilot.com/review/fl%C3%BCge.de",
+      "snippet": "Join the 268 people who've already reviewed Flüge.de. Your experience can help others make better choices."
+    },
+    {
+      "title": "Fluege de Reviews (2026) | Check if app is safe or legit - JustUseApp",
+      "url": "https://justuseapp.com/en/app/665795633/fluege-de-g%C3%BCnstig-buchen/reviews",
+      "snippet": "I downloaded Fluegede to search for and to compare flights. This seems to work well for economy flights, but Fluegede is not …"
+    },
+    {
+      "title": "Fluege.de Reviews | Read user reviews of Fluege.de – günstig buchen",
+      "url": "https://appshunter.io/ios/app/fluegede-gunstig-buchen/id665795633/reviews",
+      "snippet": "Find helpful users reviews and customer ratings for Fluege.de. Post and Read honest and unbiased users reviews."
+    }
+  ]
+}

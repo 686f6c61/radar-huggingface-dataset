@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "chatter-jee1106/dino-finetuned",
+  "slug": "chatter-jee1106-dino-finetuned",
+  "author": "chatter-jee1106",
+  "url": "https://huggingface.co/chatter-jee1106/dino-finetuned",
+  "created_at": "2026-09-10T23:16:05.000Z",
+  "updated_at": "2026-09-10T23:16:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chaat.fr - tchat , tchat gratuit , chat en ligne , tchatche gratuit ...",
+      "url": "https://www.chaat.fr/",
+      "snippet": "Aussi rapide que gratuit, découvrez les célibataires qui ont envie de faire des rencontres ils sont déjà connectés, venez chatter avec …"
+    },
+    {
+      "title": "Bienvenue sur Chat fr - Chat en ligne sans inscription gratuit",
+      "url": "https://www.chat-fr.org/",
+      "snippet": "Gratuit et simple d’utilisation, vous retrouverez un grand nombre de célibataires connectés, chatter avec eux, consulter leur profil ou …"
+    },
+    {
+      "title": "ChatNow — Tchat gratuit sans inscription",
+      "url": "https://chatnow.fr/",
+      "snippet": "Rejoignez des milliers de connectés. Chat en ligne gratuit, anonyme et sans inscription. Salons thématiques, messages privés et …"
+    },
+    {
+      "title": "Chaat - Site de chat gratuit et sans inscription",
+      "url": "https://www.chaat.fr/chat-gratuit",
+      "snippet": "Chaat permet de chatter avec des personnes des 4 coins du monde. Contrairement aux autres sites, nous avons fait le choix de …"
+    },
+    {
+      "title": "Tchat Gratuit — Chat Français en Direct, Sans Inscription | ChatNova",
+      "url": "https://chatnova.fr/",
+      "snippet": "Tchat gratuit sans inscription : un pseudo suffit, discute en 10 s sans compte ni email. Salons français animés, messages privés et …"
+    }
+  ]
+}
