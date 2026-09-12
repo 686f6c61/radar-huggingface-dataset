@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "minerdiamond12/1_50_thai_road",
+  "slug": "minerdiamond12-1_50_thai_road",
+  "author": "minerdiamond12",
+  "url": "https://huggingface.co/minerdiamond12/1_50_thai_road",
+  "created_at": "2026-09-12T09:40:18.000Z",
+  "updated_at": "2026-09-12T09:40:18.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speed Test by MyBroadband",
+      "url": "https://speedtest.mybroadband.co.za/",
+      "snippet": "Test your Internet connection quickly and accurately. Lightweight, easy-to-use, reliable and completely free."
+    },
+    {
+      "title": "家里是千兆网，但是电脑下载速度只有10mb/s不到怎么办？",
+      "url": "https://www.zhihu.com/question/1930752647020913028",
+      "snippet": "使用国际公认的测速网站： Speedtest.net （或它的国内镜像 speedtest.cn）。 使用运营商提供的官方测速平台（例如，电信用户可访 …"
+    },
+    {
+      "title": "Top SA Speedtest.net results revealed – MyBroadband",
+      "url": "https://mybroadband.co.za/news/broadband/28528-top-sa-speedtest-net-results-revealed.html",
+      "snippet": "Aug 7, 2011 · Ookla’s Speedtest.net is the undisputed online champion when it comes to broadband speed test with more than one …"
+    },
+    {
+      "title": "Highest speed test results in South Africa – MyBroadband",
+      "url": "https://mybroadband.co.za/news/broadband/20302-highest-speed-test-results-in-south-africa.html",
+      "snippet": "May 16, 2011 · Speedtest.net is the most popular way to test your broadband connection’s speed, with many local and international …"
+    },
+    {
+      "title": "相对靠谱公正的22个测速网站 (或APP或软件)大全（不断更新中）建议 …",
+      "url": "https://www.zhihu.com/tardis/bd/art/529511758",
+      "snippet": "也可以自建测试局域网速度，上面一些大学的测试网站外观类似，也是基于开源项目 Speedtest 搭建的， 如果命令行测试内网速度时 …"
+    }
+  ]
+}

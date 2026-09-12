@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Tostibrown/Ornith-1.5-35B-A3B-MLX-4bit-aligned",
+  "slug": "tostibrown-ornith-1-5-35b-a3b-mlx-4bit-aligned",
+  "author": "Tostibrown",
+  "url": "https://huggingface.co/Tostibrown/Ornith-1.5-35B-A3B-MLX-4bit-aligned",
+  "created_at": "2026-09-12T09:47:49.000Z",
+  "updated_at": "2026-09-12T09:48:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "4-bit",
+    "mmap-aligned",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B-MLX-4bit",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B-MLX-4bit",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660608768,
+  "parameters_human": "34.66B",
+  "storage_bytes": 19529013541,
+  "storage_human": "19.5 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B-MLX-4bit",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook – Anmelden oder Registrieren",
+      "url": "https://de-de.facebook.com/",
+      "snippet": "Erstelle ein Konto oder melde dich bei Facebook an. Verbinde dich mit Freunden, Familie und anderen Personen, die du kennst. …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Log into Facebook",
+      "url": "https://www.facebook.com/login.php/",
+      "snippet": "Email or mobile number Password"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://l.facebook.com/facebook/",
+      "snippet": "Facebook creator Jakethejuice is fired up by the US Open and giving tennis a (trick) shot. If you also have tennis fever, Facebook …"
+    },
+    {
+      "title": "Log Into Facebook",
+      "url": "https://secure.facebook.com/login/",
+      "snippet": "Log into Facebook to start sharing and connecting with your friends, family, and people you know."
+    }
+  ]
+}

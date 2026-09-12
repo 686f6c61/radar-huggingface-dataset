@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Miiche/visualrl-qwen3vl4b-ppo1-ral-c100-fix",
+  "slug": "miiche-visualrl-qwen3vl4b-ppo1-ral-c100-fix",
+  "author": "Miiche",
+  "url": "https://huggingface.co/Miiche/visualrl-qwen3vl4b-ppo1-ral-c100-fix",
+  "created_at": "2026-09-10T07:02:29.000Z",
+  "updated_at": "2026-09-12T09:18:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 724319305835,
+  "storage_human": "724.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "30 Ausmalbilder Von Kackhaufen - Kostenlose Ausmalbilder für …",
+      "url": "https://de.colorfun.art/cat/formen/kacke/",
+      "snippet": "Entdecken Sie eine lustige Auswahl an Ausmalbildern von Kackhaufen zum kostenlosen Ausdrucken oder als PDF-Download! Diese …"
+    },
+    {
+      "title": "Kackhaufen mit Gesicht Punktebild | Kostenlose Ausmalbilder zum …",
+      "url": "https://www.supercoloring.com/de/media/coloring/3005075/kackhaufen-mit-gesicht-punktebild",
+      "snippet": "Drucke und male diese Ausmalvorlage Kackhaufen mit Gesicht Punktebild aus. Wähle aus 80,000+ druckbaren Bastelideen mit …"
+    },
+    {
+      "title": "Spaßiges Ausmalbild von einem Kackhaufen Kostenloser Download …",
+      "url": "https://de.colorfun.art/col/ausmalbild-lustige-kacke/",
+      "snippet": "Entdecken Sie unser lustiges Ausmalbild von einem Kackhaufen, perfekt zur Unterhaltung von Kindern! Diese originelle Zeichnung …"
+    },
+    {
+      "title": "Haufen Kot | Kostenlose Ausmalbilder zum Ausdrucken",
+      "url": "https://www.supercoloring.com/de/media/coloring/2158414/haufen-kot",
+      "snippet": "Drucke und male diese Ausmalvorlage Haufen Kot aus. Wähle aus 80,000+ druckbaren Bastelideen mit Motiven aus Cartoons, …"
+    },
+    {
+      "title": "Ausmalbildern zum Kackhaufen (Emoji) (Andere) – Malvorlagen zum …",
+      "url": "https://ausmalwelt.com/malbuch/andere/kackhaufen-emoji/",
+      "snippet": "Machen Sie aus unseren Kackhaufen (Emoji) Ausmalbildern ein Gemeinschaftsprojekt! Drucken Sie mehrere Exemplare, verteilen …"
+    }
+  ]
+}

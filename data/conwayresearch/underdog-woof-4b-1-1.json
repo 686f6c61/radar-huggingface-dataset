@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ConwayResearch/Underdog-Woof-4B-1.1",
+  "slug": "conwayresearch-underdog-woof-4b-1-1",
+  "author": "ConwayResearch",
+  "url": "https://huggingface.co/ConwayResearch/Underdog-Woof-4B-1.1",
+  "created_at": "2026-09-12T10:09:35.000Z",
+  "updated_at": "2026-09-12T10:13:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "4bit",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 2387226474,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Harry Potter | 45+ Kostenlose druckbare Malvorlagen",
+      "url": "https://www.supercoloring.com/de/search/coloring/harry%20potter",
+      "snippet": "49 kostenlose Ausmalbilder zu „harry potter“ zum Ausdrucken und Ausmalen. Kreativer Spaß für Kinder und Erwachsene."
+    },
+    {
+      "title": "Harry Potter Ausmalbilder - Kostenlose Malvorlagen",
+      "url": "https://beste-ausmalbilder.com/zeichentrick/harry-potter",
+      "snippet": "Wir haben die besten Ausmalbilder von Harry Potter und seinen Freunden zusammengestellt, die Sie kostenlos für Ihre Kinder …"
+    },
+    {
+      "title": "Harry Potter Ausmalbilder | 44 kostenlose PDFs",
+      "url": "https://ausmalbilderspass.de/harry-potter-ausmalbilder/",
+      "snippet": "Wir begrüßen dich mit einer Einladung per Eulenpost zu unseren Harry-Potter-Ausmalbildern. Hier findest du alles von Harrys …"
+    },
+    {
+      "title": "Harry Potter Ausmalbilder zum Ausdrucken | Kostenlose Malvorlagen",
+      "url": "https://zaubermalen.de/harry-potter/",
+      "snippet": "Entdecken Sie kostenlose Harry Potter Ausmalbilder zum Ausdrucken. Schöne Malvorlagen für Kinder und Erwachsene – einfach …"
+    },
+    {
+      "title": "Ausmalbilder Harry Potter - Malvorlagen kostenlos zum ausdrucken",
+      "url": "https://www.cool2bkids.com/de/ausmalbilder-harry-potter/",
+      "snippet": "Mar 19, 2021 · Holen Sie sich Ihre magischen Buntstifte und jede Menge Glitzer und wählen Sie Ihre Lieblings-Ausmalbilder aus. Wie …"
+    }
+  ]
+}

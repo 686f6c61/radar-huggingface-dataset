@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "roman220220/nemotron-30b-a3b-ternary-rotation-salient10-mlx",
+  "slug": "roman220220-nemotron-30b-a3b-ternary-rotation-salient10-mlx",
+  "author": "roman220220",
+  "url": "https://huggingface.co/roman220220/nemotron-30b-a3b-ternary-rotation-salient10-mlx",
+  "created_at": "2026-09-12T02:10:21.000Z",
+  "updated_at": "2026-09-12T02:11:28.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "nemotron_h",
+    "experimental",
+    "ternary",
+    "custom-quantization",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13402270144,
+  "parameters_human": "13.40B",
+  "storage_bytes": 21846440748,
+  "storage_human": "21.8 GB",
+  "base_model": "nvidia/Nemotron-3.5-Lightning-30B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sorozatok online. Magyarország legnagyobb online sorozat adatbázisa",
+      "url": "https://www.sorozat-barat.club/",
+      "snippet": "SorozatBarát online sorozat. Magyarország legnépszerűbb és egyben legnagyobb online sorozat adatbázisa. Itt valóban minden …"
+    },
+    {
+      "title": "Bejelentkezés - SorozatBarát",
+      "url": "https://www.sorozatbarat.hu/login",
+      "snippet": "Rólunk A SorozatBarát oldalon szinte minden sorozatot és minden sorozat évadjait és epizódjait megtalálhatod, képekkel, …"
+    },
+    {
+      "title": "SorozatBarát",
+      "url": "https://forum.sorozat-barat.club/",
+      "snippet": "Sep 4, 2024 · Üdvözöllek, Idegen! Úgy tűnik, új vagy itt. Kattints az egyik gombra, a belépéshez!"
+    },
+    {
+      "title": "Regisztráció - SorozatBarát",
+      "url": "https://www.sorozatbarat.hu/register",
+      "snippet": "Rólunk A SorozatBarát oldalon szinte minden sorozatot és minden sorozat évadjait és epizódjait megtalálhatod, képekkel, …"
+    },
+    {
+      "title": "SorozatBarát belépés, bejelentkezés | Belépés-regisztráció.hu",
+      "url": "https://belepes-regisztracio.hu/sorozatbarat-belepes-sorozatbarat-bejelentkezes/",
+      "snippet": "A SorozatBarát (sorozatbarat.club) Magyarország egyik, vagy talán a legnagyobb online sorozat adatbázisa, naponta frissített videó …"
+    }
+  ]
+}

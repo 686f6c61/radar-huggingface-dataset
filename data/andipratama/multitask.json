@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "andipratama/multitask",
+  "slug": "andipratama-multitask",
+  "author": "andipratama",
+  "url": "https://huggingface.co/andipratama/multitask",
+  "created_at": "2026-09-12T09:31:53.000Z",
+  "updated_at": "2026-09-12T09:31:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Province du Brabant flamand — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Province_du_Brabant_flamand",
+      "snippet": "Le Brabant flamand (en néerlandais : Vlaams-Brabant) est une province de Belgique située en Région flamande. Elle est située au …"
+    },
+    {
+      "title": "Les 15 choses incontournables à faire dans la province du Brabant flamand",
+      "url": "https://generationvoyage.fr/visiter-brabant-flamand-faire-voir/",
+      "snippet": "Nov 18, 2020 · Visiter la province du Brabant flamand : quelles sont les meilleures choses à faire et voir dans cette région …"
+    },
+    {
+      "title": "Le Brabant flamand : une province surprenante - Destination Flandre",
+      "url": "https://www.destinationflandre.be/provinces/brabant-flamand/",
+      "snippet": "Si vous n’avez jamais visité le Brabant flamand, vous êtes en droit de vous demander ce que cette région de la Belgique a à offrir. …"
+    },
+    {
+      "title": "Province de Brabant — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Province_de_Brabant",
+      "snippet": "Au nord, la province du Brabant flamand, correspondant aux territoires des arrondissements administratifs de Louvain et de Hal …"
+    },
+    {
+      "title": "Accueil | Provincie Vlaams-Brabant",
+      "url": "https://www.vlaamsbrabant.be/fr",
+      "snippet": "Provincie du Brabant flamand."
+    }
+  ]
+}

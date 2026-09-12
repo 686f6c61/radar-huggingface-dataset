@@ -5,7 +5,7 @@
   "author": "xay2001",
   "url": "https://huggingface.co/xay2001/ic-light-android",
   "created_at": "2026-09-02T14:30:43.000Z",
-  "updated_at": "2026-09-02T14:57:12.000Z",
+  "updated_at": "2026-09-11T09:33:01.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "image-to-image",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2310571381,
-  "storage_human": "2.3 GB",
+  "storage_bytes": 4030495342,
+  "storage_human": "4.0 GB",
   "base_model": null,
   "formats": [
     "onnx"

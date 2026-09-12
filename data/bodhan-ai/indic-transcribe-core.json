@@ -5,7 +5,7 @@
   "author": "bodhan-ai",
   "url": "https://huggingface.co/bodhan-ai/indic-transcribe-core",
   "created_at": "2026-08-19T08:59:39.000Z",
-  "updated_at": "2026-09-07T08:11:35.000Z",
+  "updated_at": "2026-09-11T17:51:37.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "automatic-speech-recognition",
@@ -85,7 +85,7 @@
     "region:us"
   ],
   "likes": 24,
-  "downloads_30d": 704,
+  "downloads_30d": 793,
   "trending_score": 21,
   "parameters": 1222553584,
   "parameters_human": "1.22B",

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "cicalooo/k2_clone_9-12",
+  "slug": "cicalooo-k2_clone_9-12",
+  "author": "cicalooo",
+  "url": "https://huggingface.co/cicalooo/k2_clone_9-12",
+  "created_at": "2026-09-12T11:39:36.000Z",
+  "updated_at": "2026-09-12T11:39:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 184899161792,
+  "storage_human": "184.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Einrichtung t-online. / e-Mail | Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/einrichtung-t-online-e-mail/6983133eb74a8e54ada05d78",
+      "snippet": "Ich habe einen neuen Rechner mit win 11 und will t-online als Startseite unter firefox einrichten. Jedes mal ploppt&nbsp; \"Wie wollen …"
+    },
+    {
+      "title": "‎t-online startseite | Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/conversations/sonstiges/t-online-startseite/6685f4834ae73561da51c792",
+      "snippet": "Seit kurzem wird die t-online Startseite angezeigt um nach einigen Sekunden sich selbständig zu verkleinern - und das freigewordene …"
+    },
+    {
+      "title": "ich möchte t-online.de als Startseite festlegen",
+      "url": "https://telekomhilft.telekom.de/conversations/sonstiges/ich-m%C3%B6chte-t-onlinede-als-startseite-festlegen/6686bd7c4ae73561da807ca6",
+      "snippet": "zur zeit erhalte ich msn als Startseite über den Internetexplorer.Wünsche aber ww.t-online.de.Welche Schritte muss ich einleiten?"
+    },
+    {
+      "title": "fehlerhafte Darstellung meiner T-online Startseite",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/fehlerhafte-darstellung-meiner-t-online-startseite/66bbb367389f9f597b2b50a8",
+      "snippet": "Seit einigen Tagen wird mir die T-Online Startseite leider nicht mehr richtig in Google Chrome angezeigt. Siehe anliegenden Screen …"
+    },
+    {
+      "title": "emailcenter direkt mit login starten ohne startseite t-online",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/emailcenter-direkt-mit-login-starten-ohne-startseite-t-online/668618f34ae73561da6da5aa",
+      "snippet": "Betrifft emailcenter t-online:Meine Kinder haben seit Weihnachten einen eigenen Laptop. Diesen möchte ich so einrichten, dass sie …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "wuff-mann",
   "url": "https://huggingface.co/wuff-mann/MANN-GPT",
   "created_at": "2026-09-01T08:10:38.000Z",
-  "updated_at": "2026-09-11T03:45:10.000Z",
+  "updated_at": "2026-09-12T03:38:08.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 62188485081,
-  "storage_human": "62.2 GB",
+  "storage_bytes": 77293250833,
+  "storage_human": "77.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "FIIS/sonyazietlow",
+  "slug": "fiis-sonyazietlow",
+  "author": "FIIS",
+  "url": "https://huggingface.co/FIIS/sonyazietlow",
+  "created_at": "2026-09-12T02:16:49.000Z",
+  "updated_at": "2026-09-12T02:52:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 970801406,
+  "storage_human": "971 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "California sea lion - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/California_sea_lion",
+      "snippet": "The California sea lion (Zalophus californianus) is a coastal eared seal native to western North America. It is one of six species of sea …"
+    },
+    {
+      "title": "California Sea Lion - NOAA Fisheries",
+      "url": "https://www.fisheries.noaa.gov/species/california-sea-lion",
+      "snippet": "California sea lions are “eared seals” native to the West Coast of North America. They live in coastal waters and on beaches, docks, …"
+    },
+    {
+      "title": "California Sea Lion - The Marine Mammal Center",
+      "url": "https://www.marinemammalcenter.org/animal-care/learn-about-marine-mammals/pinnipeds/california-sea-lion",
+      "snippet": "Learn about the habitat, population status and behavior of California sea lions."
+    },
+    {
+      "title": "California sea lion - Smithsonian's National Zoo",
+      "url": "https://nationalzoo.si.edu/animals/california-sea-lion",
+      "snippet": "These sea lions are currently found in the eastern North Pacific from British Columbia to Baja California, the Gulf of California, and in …"
+    },
+    {
+      "title": "California Sea Lion - National Geographic Kids",
+      "url": "https://kids.nationalgeographic.com/animals/mammals/facts/california-sea-lion",
+      "snippet": "California sea lions live on the western coast of North America from the Baja California peninsula in Mexico to British Columbia. …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "violetxi/hparam-92m-block-mtp-truncated-peak_lr-1e-3-wu-0p05-s42",
+  "slug": "violetxi-hparam-92m-block-mtp-truncated-peak_lr-1e-3-wu-0p05-s42",
+  "author": "violetxi",
+  "url": "https://huggingface.co/violetxi/hparam-92m-block-mtp-truncated-peak_lr-1e-3-wu-0p05-s42",
+  "created_at": "2026-09-05T00:52:00.000Z",
+  "updated_at": "2026-09-12T02:40:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "looped_block_mtp",
+    "text-generation",
+    "chess",
+    "block-mtp",
+    "truncated-bptt",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 92138496,
+  "parameters_human": "92.1M",
+  "storage_bytes": 78140951881,
+  "storage_human": "78.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "An update to how we count public views across YouTube",
+      "url": "https://support.google.com/youtube/thread/433409976/an-update-to-how-we-count-public-views-across-youtube?hl=en",
+      "snippet": "Aug 17, 2026 · Last year, we updated how we count public views for Shorts to better capture how viewers watch on YouTube. Now, …"
+    },
+    {
+      "title": "violetxi (Violet Xiang) - Hugging Face",
+      "url": "https://huggingface.co/violetxi",
+      "snippet": "models 134. Sort: Recently updated · violetxi/hparam-92m-block-mtp-truncated-peak_lr-1e-4-wu-0p05-s42 · violetxi/hparam-92m-sequential-mtp-full-peak_lr-3e-5-wu- ..."
+    },
+    {
+      "title": "YouTube で制限付きモードをオンまたはオフにする",
+      "url": "https://support.google.com/youtube/answer/174084?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "YouTube で制限付きモードをオンまたはオフにする 制限付きモードは、YouTube で使用できるオプション設定です。 この機能は …"
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    },
+    {
+      "title": "谷歌账号注册验证无法发出信息怎么办? - 知乎",
+      "url": "https://www.zhihu.com/question/1945629068243481180",
+      "snippet": "3、国内注册的账号能否使用 YouTube 和 Google Play？ 完全可以。 Google 账号是全球通用的，注册成功后即可无缝登录谷歌全家桶 …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "42ailab/AIWriter-V1-4B-Check-Preview",
+  "slug": "42ailab-aiwriter-v1-4b-check-preview",
+  "author": "42ailab",
+  "url": "https://huggingface.co/42ailab/AIWriter-V1-4B-Check-Preview",
+  "created_at": "2026-09-12T01:56:53.000Z",
+  "updated_at": "2026-09-12T02:48:22.000Z",
+  "license": "aiwriter-model-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "text-correction",
+    "proofreading",
+    "chinese",
+    "writing",
+    "42model",
+    "text-generation",
+    "zh",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 7169918336,
+  "storage_human": "7.2 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook – Anmelden oder Registrieren",
+      "url": "https://de-de.facebook.com/",
+      "snippet": "Erstelle ein Konto oder melde dich bei Facebook an. Verbinde dich mit Freunden, Familie und anderen Personen, die du kennst. …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/index.php/?lang=de_de",
+      "snippet": "Email or mobile number Password"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://l.facebook.com/facebook/",
+      "snippet": "Facebook. 154,694,434 likes · 279,874 talking about this. Community Values We believe people can do more together than alone …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://apps.facebook.com/r.php/",
+      "snippet": "Get started on Facebook with a Meta Account A Meta Account lets you access multiple Meta technologies, like Facebook, easily and …"
+    }
+  ]
+}

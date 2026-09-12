@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nankaigenomics/contrastive",
+  "slug": "nankaigenomics-contrastive",
+  "author": "nankaigenomics",
+  "url": "https://huggingface.co/nankaigenomics/contrastive",
+  "created_at": "2026-09-12T10:34:44.000Z",
+  "updated_at": "2026-09-12T10:34:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Explore and share videos, music, and more on YouTube, the leading platform for online video streaming and sharing."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/history",
+      "snippet": "View your watch history and revisit your favorite videos on YouTube."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://studio.youtube.com/",
+      "snippet": "Share your videos with friends, family, and the world."
+    },
+    {
+      "title": "Self-Encouraged Hindsight Distillation for Knowledge-based Visual ...",
+      "url": "https://arxiv.org/html/2511.11132v4",
+      "snippet": "14.07.2026 ... Existing KBVQA methods either utilize implicit knowledge in multimodal large language models via in-context learning or explicit knowledge via ..."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    }
+  ]
+}

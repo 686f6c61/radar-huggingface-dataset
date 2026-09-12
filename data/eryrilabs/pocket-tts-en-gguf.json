@@ -5,7 +5,7 @@
   "author": "EryriLabs",
   "url": "https://huggingface.co/EryriLabs/pocket-tts-en-GGUF",
   "created_at": "2026-08-31T08:06:58.000Z",
-  "updated_at": "2026-08-31T10:15:29.000Z",
+  "updated_at": "2026-09-11T19:01:36.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -24,6 +24,7 @@
     "it",
     "pt",
     "es",
+    "cy",
     "arxiv:2509.06926",
     "base_model:kyutai/pocket-tts",
     "base_model:quantized:kyutai/pocket-tts",
@@ -32,12 +33,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 338,
+  "downloads_30d": 350,
   "trending_score": 0,
   "parameters": 79623168,
   "parameters_human": "79.6M",
-  "storage_bytes": 1769917724,
-  "storage_human": "1.8 GB",
+  "storage_bytes": 2442459740,
+  "storage_human": "2.4 GB",
   "base_model": "kyutai/pocket-tts",
   "formats": [
     "gguf"

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mama-to/mot01",
+  "slug": "mama-to-mot01",
+  "author": "mama-to",
+  "url": "https://huggingface.co/mama-to/mot01",
+  "created_at": "2026-09-12T01:23:14.000Z",
+  "updated_at": "2026-09-12T09:19:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19412705376,
+  "storage_human": "19.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MaMA Music & Convention - Paris 14 • 15 • 16 Octobre 2026",
+      "url": "https://mama-musicandconvention.com/",
+      "snippet": "MaMA Music & Convention est l’événement incontournable de l’industrie musicale à Paris. Conférences, networking et concerts à …"
+    },
+    {
+      "title": "Mama (film) — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Mama_(film)",
+      "snippet": "Mama est un film d'horreur canado - espagnol coécrit et réalisé par Andrés Muschietti, sorti en 2013. Il s'agit d'un remake de Mamá, …"
+    },
+    {
+      "title": "Mama - Film 2013 - AlloCiné",
+      "url": "https://www.allocine.fr/film/fichefilm_gen_cfilm=196148.html",
+      "snippet": "Mama est un film réalisé par Andy Muschietti avec Jessica Chastain, Nikolaj Coster-Waldau."
+    },
+    {
+      "title": "Restaurant, bar, brunch rooftop & terrasse | Mama Shelter",
+      "url": "https://fr.mamashelter.com/restaurants/",
+      "snippet": "Laissez-vous tenter par la carte Mama, dégustez nos plats et cocktails maison, dans nos restaurants, terrasses ou rooftops."
+    },
+    {
+      "title": "Mama (2013 film) - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Mama_(2013_film)",
+      "snippet": "Her troubled ghost, Mama, searched the woods for years until she discovered Victoria and Lily and took them as surrogates. Lucas …"
+    }
+  ]
+}

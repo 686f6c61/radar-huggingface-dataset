@@ -5,7 +5,7 @@
   "author": "yueqy111222",
   "url": "https://huggingface.co/yueqy111222/visllm",
   "created_at": "2026-07-28T03:23:28.000Z",
-  "updated_at": "2026-09-10T15:14:50.000Z",
+  "updated_at": "2026-09-11T09:28:39.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 22025061915,
-  "storage_human": "22.0 GB",
+  "storage_bytes": 22294016260,
+  "storage_human": "22.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

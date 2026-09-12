@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ASDSA12DSA213/MyAwesomeModel-TestRepo",
+  "slug": "asdsa12dsa213-myawesomemodel-testrepo",
+  "author": "ASDSA12DSA213",
+  "url": "https://huggingface.co/ASDSA12DSA213/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-12T01:39:12.000Z",
+  "updated_at": "2026-09-12T01:44:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google 地圖",
+      "url": "https://www.google.com/maps/search/?hl=zh-TW",
+      "snippet": "地圖資料 ©2026 Google 條款 20 公里"
+    },
+    {
+      "title": "【2026西門町逛街地圖】11大好玩西門町景點一日遊＆附近美食住宿規 …",
+      "url": "https://bobbytravel.tw/ximending/",
+      "snippet": "May 11, 2026 · 最夯 西門町景點＆西門町美食，多集中在捷運西門站6號出口附近，透過西門町逛街地圖，一目了然超清楚！ 西門町可 …"
+    },
+    {
+      "title": "旅遊地圖下載Download - 西門徒步區街區發展促進會官方網站 - Ximen",
+      "url": "https://www.ximen.com.tw/map.html",
+      "snippet": "旅遊地圖下載Download 西門町訊息News 關於西門町 About Ximen 店家導覽Store 旅遊地圖下載Download 服務中心 西門活動影 …"
+    },
+    {
+      "title": "西門町 / 福爾摩沙 : 楓葉雨 - 楓之谷攻略資料站 - YamPiz",
+      "url": "https://maple.yampiz.com/tw/w/strategy-map/ZTW001",
+      "snippet": "區域圖中, 有上層區域（藍色字）、子區域的連結（紅色字）、城市、村莊、地圖點、還有傳送點，點擊指標就可以查詢地圖所在地資 …"
+    },
+    {
+      "title": "「西門町」地圖圖鑑 | ArtaleMapleStory.com",
+      "url": "https://www.artalemaplestory.com/zh/maps/ximending",
+      "snippet": "「西門町」地圖圖鑑 | ArtaleMapleStory.com. 加入 Discord「艾靈森林」資料庫已更新！ 歡迎玩家朋友們一起來回報資料、提建議、 …"
+    }
+  ]
+}

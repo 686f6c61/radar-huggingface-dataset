@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "aaron-hu26/whisper-small-dv",
+  "slug": "aaron-hu26-whisper-small-dv",
+  "author": "aaron-hu26",
+  "url": "https://huggingface.co/aaron-hu26/whisper-small-dv",
+  "created_at": "2026-09-12T10:23:20.000Z",
+  "updated_at": "2026-09-12T10:23:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aaron (Bible) — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Aaron_(Bible)",
+      "snippet": "Dieu a appelé Aaron pour lui parler sur la montagne de Sinaï 13 et lui demander de soutenir son frère dans sa mission. Aaron obéit et …"
+    },
+    {
+      "title": "AaRON — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/AaRON",
+      "snippet": "En janvier 2007, le duo sort son premier album, Artificial Animals Riding on Neverland, dont AaRON est l'acronyme 6. Le même …"
+    },
+    {
+      "title": "Prénom Aaron (garçon) : origines biblique et mythologique, signification",
+      "url": "https://www.journaldesfemmes.fr/prenoms/aaron/prenom-7149",
+      "snippet": "Quelle est la signification du prénom Aaron ? En hébreu, Aaron signifie \"celui qui vient de loin\"."
+    },
+    {
+      "title": "Aaron - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Aaron",
+      "snippet": "Part of the Law given to Moses at Sinai granted Aaron the priesthood for himself and his male descendants, and he became the first …"
+    },
+    {
+      "title": "Prénom Aaron : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/aaron-33408",
+      "snippet": "Dans l’Ancien Testament, Aaron était le frère de Moïse. Il fut à ses côtés dans la confrontation avec Pharaon, puis durant tout l'exode …"
+    }
+  ]
+}

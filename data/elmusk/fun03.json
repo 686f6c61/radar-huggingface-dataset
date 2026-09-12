@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ElMusk/fun03",
+  "slug": "elmusk-fun03",
+  "author": "ElMusk",
+  "url": "https://huggingface.co/ElMusk/fun03",
+  "created_at": "2026-09-12T10:08:56.000Z",
+  "updated_at": "2026-09-12T10:09:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3235450896,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Macau: Reise- und Sicherheitshinweise - Auswärtiges Amt",
+      "url": "https://www.auswaertiges-amt.de/de/service/laender/macau-node/macausicherheit-200872",
+      "snippet": "Macau ist eine Sonderverwaltungszone der Volksrepublik China, mit eigenen Einreise- und Visabestimmungen. Die Lage in Macau …"
+    },
+    {
+      "title": "Macau-Reiseführer 2026: Top-Sehenswürdigkeiten, Kulinarisches & Tipps",
+      "url": "https://www.thechinajourney.com/de/macau-reisefuhrer/",
+      "snippet": "May 5, 2026 · Planen Sie Ihre Macau-Reise mit diesem umfassenden Reiseführer. Entdecken Sie UNESCO-Stätten, Casinos, …"
+    },
+    {
+      "title": "Die Wunder von Macau entdecken: Ihr ultimativer Reiseführer",
+      "url": "https://macauskyline.com/de/reiseplanung-fur-macau/planung-ihrer-reise-nach-macau/",
+      "snippet": "Entdecken Sie den ultimativen Reiseführer für Ihre Reise nach Macau! Entdecken Sie Top-Attraktionen, trendige Restaurants, …"
+    },
+    {
+      "title": "Macau - was Sie vor Ihrem Besuch wissen müssen - Cestee.de",
+      "url": "https://www.cestee.de/reiseziele/macau",
+      "snippet": "Der ultimative Reiseführer für Macau, nicht nur für Erstbesucher. Erfahren Sie alles, was Sie vor Ihrem Besuch wissen müssen."
+    },
+    {
+      "title": "Unverzichtbare Reise-Checkliste für eine unvergessliche Reise nach Macau",
+      "url": "https://macauskyline.com/de/reiseplanung-fur-macau/reiseliste-fur-macau/",
+      "snippet": "Entdecken Sie die ultimative Reise-Checkliste für Macau! Von unverzichtbaren Sehenswürdigkeiten bis hin zu wichtigen Tipps – so …"
+    }
+  ]
+}

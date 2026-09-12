@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Vech911/Mystic",
+  "slug": "vech911-mystic",
+  "author": "Vech911",
+  "url": "https://huggingface.co/Vech911/Mystic",
+  "created_at": "2026-09-12T02:23:03.000Z",
+  "updated_at": "2026-09-12T02:24:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155095800,
+  "storage_human": "155 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ТВ Програма .BG - Телевизионна Програма ...",
+      "url": "https://www.xn----8sbafg9clhjcp.bg/",
+      "snippet": "Само в Тв-Програма.bg получавате ваша лична телевизионна програма (tv programa) с пълна персонализация, подбор на …"
+    },
+    {
+      "title": "Филмите днес: всички Филми по всички ...",
+      "url": "https://www.xn----8sbafg9clhjcp.bg/p/%D0%A4%D0%B8%D0%BB%D0%BC%D0%B8/",
+      "snippet": "1 day ago · Виж програма на Филмите по всички телевизии - за днес и за седмицата. Филми програма. Филмите днес, по …"
+    },
+    {
+      "title": "Всички телевизии - програма ...",
+      "url": "https://www.xn----8sbafg9clhjcp.bg/televizii/",
+      "snippet": "ТВ програма на всички телевизии - дневна, седмична, винаги актуална. Филми, предавания, спорт. Класация най …"
+    },
+    {
+      "title": "Футболните мачове днес: всички ...",
+      "url": "https://www.xn----8sbafg9clhjcp.bg/p/%D0%A4%D1%83%D1%82%D0%B1%D0%BE%D0%BB/",
+      "snippet": "1 day ago · Мачовете днес! Виж програма на Футболните мачове по всички телевизии - за днес и за седмицата. Футболни …"
+    },
+    {
+      "title": "ТВ Програма: bTV (бТВ) - Програма на bTV | TV ...",
+      "url": "https://www.xn----8sbafg9clhjcp.bg/tv/btv/",
+      "snippet": "1 day ago · ТВ програма bTV - актуална дневна и седмична телевизионна програма на бТВ. Вижте информация и най …"
+    }
+  ]
+}

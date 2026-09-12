@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "pwl15/llava-v1.5-testing",
+  "slug": "pwl15-llava-v1-5-testing",
+  "author": "pwl15",
+  "url": "https://huggingface.co/pwl15/llava-v1.5-testing",
+  "created_at": "2026-09-11T12:31:50.000Z",
+  "updated_at": "2026-09-12T08:29:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 782476314523,
+  "storage_human": "782.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Où Se Trouve Le Dossier C User - Commentouvrir",
+      "url": "https://commentouvrir.com/sujet/31032/ou-se-trouve-le-dossier-c-user",
+      "snippet": "A la création de votre compte, Windows installe sur le disque dur de votre ordinateur : un dossier utilisateur spécial appelé 'Ce PC' …"
+    },
+    {
+      "title": "Comment récupérer le dossier Utilisateurs perdu/caché dans le lecteur C …",
+      "url": "https://www.easeus.fr/recuperer-fichiers-supprimes/recuperer-le-dossier-des-utilisateurs-perdu-ou-cache-dans-le-lecteur-c.html",
+      "snippet": "Aug 25, 2026 · Voici le guide détaillé pour récupérer le dossier Utilisateurs perdu/caché dans le lecteur C. Le dossier Utilisateurs livré …"
+    },
+    {
+      "title": "Comment accéder au fichier AppData sur Windows ?",
+      "url": "https://commentouvrir.com/tech/comment-acceder-au-fichier-appdata-sur-windows/",
+      "snippet": "Le dossier C:Users est l’emplacement où sont stockés les profils utilisateur sur Windows. Vous pouvez accéder au dossier C:Users …"
+    },
+    {
+      "title": "AppData sur Windows 11/10 : où le trouver et comment l’ouvrir",
+      "url": "https://www.malekal.com/comment-trouver-ouvrir-appdata-sur-windows/",
+      "snippet": "May 5, 2022 · Le dossier AppData (C:\\Utilisateurs\\<Utilisateur>\\Appdata\\). est un dossier système de Windows, propre à chaque …"
+    },
+    {
+      "title": "Profil utilisateur Windows : structure du dossier C:\\Users",
+      "url": "https://www.malekal.com/profil-utilisateur-windows/",
+      "snippet": "Mar 5, 2020 · Comprendre la structure du dossier C:\\Users permet de mieux gérer l’espace disque, sauvegarder ses données, …"
+    }
+  ]
+}

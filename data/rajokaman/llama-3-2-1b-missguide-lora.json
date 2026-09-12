@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "rajokaman/llama-3.2-1b-missguide-lora",
+  "slug": "rajokaman-llama-3-2-1b-missguide-lora",
+  "author": "rajokaman",
+  "url": "https://huggingface.co/rajokaman/llama-3.2-1b-missguide-lora",
+  "created_at": "2026-09-12T10:22:31.000Z",
+  "updated_at": "2026-09-12T10:33:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 152719458,
+  "storage_human": "153 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Livraison à Domicile : Votre Livraison de Courses avec Carrefour",
+      "url": "https://www.carrefour.fr/services/livraison-domicile?msockid=2192d3ad37d46c8b1169c47f36c36de9",
+      "snippet": "Vos courses livrées chez vous avec Carrefour, votre service de livraison de courses en ligne : Produits Bio, Fruits et Légumes, …"
+    },
+    {
+      "title": "Carrefour : Magasins et Courses en ligne (Drive, Livraison à Domicile ...",
+      "url": "https://www.carrefour.fr/?msockid=2192d3ad37d46c8b1169c47f36c36de9",
+      "snippet": "Faites vos Courses sur Carrefour.fr et retrouvez des milliers de produits au meilleur prix dans vos Magasins, en retrait Drive ou en …"
+    },
+    {
+      "title": "Carrefour Drive : Choix, Fraîcheur et Qualité en Quelques Clics",
+      "url": "https://www.carrefour.fr/services/drive?msockid=2192d3ad37d46c8b1169c47f36c36de9",
+      "snippet": "Pratique et entièrement gratuit, optez pour le service Carrefour Drive. Avec plus de 10 000 références, des promotions et des prix bas …"
+    },
+    {
+      "title": "Livraison gratuite séniors - Carrefour.fr",
+      "url": "https://www.carrefour.fr/services/gratuite-seniors?msockid=2192d3ad37d46c8b1169c47f36c36de9",
+      "snippet": "Découvrez Livraison gratuite séniors avec Carrefour et retrouvez les Services Carrefour sur notre site."
+    },
+    {
+      "title": "Livraison à domicile gratuite dès 60€ de commande - Carrefour.fr",
+      "url": "https://www.carrefour.fr/services/livraison-domicile/gratuite-commandes?msockid=2192d3ad37d46c8b1169c47f36c36de9",
+      "snippet": "Découvrez Livraison à domicile gratuite dès 60€ de commande avec Carrefour et retrouvez les Services Carrefour sur notre site."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ghostkaali/ghost-coder-7b",
+  "slug": "ghostkaali-ghost-coder-7b",
+  "author": "ghostkaali",
+  "url": "https://huggingface.co/ghostkaali/ghost-coder-7b",
+  "created_at": "2026-09-12T11:43:43.000Z",
+  "updated_at": "2026-09-12T11:43:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172955274,
+  "storage_human": "173 MB",
+  "base_model": "unsloth/qwen2.5-coder-7b-instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lichess.org • Free Online Chess",
+      "url": "https://lichess.org/",
+      "snippet": "Your network blocks the Lichess assets! Lichess is a free (really), libre, no-ads, open source chess server. About Lichess..."
+    },
+    {
+      "title": "GitHub - ghost-x-ai/ghost-7b-alpha: The next generation of large language models focuses on optimization for excellent reasoning, multi-task knowledge, and multilingual. · GitHub",
+      "url": "https://github.com/ghost-x-ai/ghost-7b-alpha",
+      "snippet": "Overall, the model is suitable when making a pretrained version so you can continue to develop the desired tasks, develop virtual assistants, perform features on tasks such as coding, translation, answering questions, creating documents, etc. It is truly an efficient, fast and extremely cheap open model. Name: Ghost 7B Alpha."
+    },
+    {
+      "title": "Sign in • lichess.org",
+      "url": "https://lichess.org/login",
+      "snippet": "Puzzles Puzzle Themes Puzzle Dashboard Puzzle Streak Puzzle Storm Puzzle Racer ... Chess basics Practice Coordinates Study …"
+    },
+    {
+      "title": "ghost-7b-alpha/README.md at main · ghost-x-ai/ghost-7b-alpha",
+      "url": "https://github.com/ghost-x-ai/ghost-7b-alpha/blob/main/README.md",
+      "snippet": "Overall, the model is suitable when making a pretrained version so you can continue to develop the desired tasks, develop virtual assistants, perform features on tasks such as coding, translation, answering questions, creating documents, etc. It is truly an efficient, fast and extremely cheap open model. Name: Ghost 7B Alpha."
+    },
+    {
+      "title": "www.lichess.net",
+      "url": "https://www.lichess.net/",
+      "snippet": "Play and improve your chess skills online with Lichess, a free and open-source platform for players of all levels."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "shivanshsen7/inbox-topics-setfit",
+  "slug": "shivanshsen7-inbox-topics-setfit",
+  "author": "shivanshsen7",
+  "url": "https://huggingface.co/shivanshsen7/inbox-topics-setfit",
+  "created_at": "2026-09-12T11:39:05.000Z",
+  "updated_at": "2026-09-12T11:39:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "setfit",
+  "languages": [],
+  "tags": [
+    "setfit",
+    "safetensors",
+    "bert",
+    "sentence-transformers",
+    "text-classification",
+    "generated_from_setfit_trainer",
+    "arxiv:2209.11055",
+    "base_model:BAAI/bge-small-en-v1.5",
+    "base_model:finetune:BAAI/bge-small-en-v1.5",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33360000,
+  "parameters_human": "33.4M",
+  "storage_bytes": 133477371,
+  "storage_human": "133 MB",
+  "base_model": "BAAI/bge-small-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Rewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/",
+      "snippet": "We are not associated with Microsoft and are a community driven group to help maximize earning points."
+    },
+    {
+      "title": "BingHomepageQuiz - Reddit",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/hot/",
+      "snippet": "ADMIN MOD • Bing News Quiz [5/3/2024] - A restaurant at DisneyWorld became the first theme-park eatery to win what coveted …"
+    },
+    {
+      "title": "Bing News Quiz (7-22-2022) : r/BingQuizAnswers - Reddit",
+      "url": "https://www.reddit.com/r/BingQuizAnswers/comments/w52krw/bing_news_quiz_7222022/",
+      "snippet": "Jul 22, 2022 · Bing Weekly News Quiz: Questions Answers (7-22-2022) 22 July 2022, 1: As heat records across Europe became …"
+    },
+    {
+      "title": "[US] Bing News Quiz (6/24/2022) : r/BingHomepageQuiz - Reddit",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/comments/vjeqh9/us_bing_news_quiz_6242022/",
+      "snippet": "[US] Bing News Quiz (6/24/2022) Q1: As the mayor waved a checkered flag, a bulldozer smashed almost 100 illegal dirt bikes and …"
+    },
+    {
+      "title": "solvedquizbing - Reddit",
+      "url": "https://www.reddit.com/r/solvedquizbing/",
+      "snippet": "Microsoft Rewards Bing Entertainment News Quiz Questions and Answers (11-29-2023) 1: SZA was the big winner, and was named …"
+    }
+  ]
+}

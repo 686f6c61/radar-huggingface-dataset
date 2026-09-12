@@ -5,7 +5,7 @@
   "author": "Solstice-AI",
   "url": "https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-mlx-oQ4e",
   "created_at": "2026-09-02T17:03:33.000Z",
-  "updated_at": "2026-09-03T18:56:40.000Z",
+  "updated_at": "2026-09-11T09:39:25.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -57,7 +57,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 397,
+  "downloads_30d": 430,
   "trending_score": 0,
   "parameters": 27781427952,
   "parameters_human": "27.78B",

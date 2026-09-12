@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "pwnfox-red/red-model-public",
+  "slug": "pwnfox-red-red-model-public",
+  "author": "pwnfox-red",
+  "url": "https://huggingface.co/pwnfox-red/red-model-public",
+  "created_at": "2026-09-12T02:39:31.000Z",
+  "updated_at": "2026-09-12T02:39:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "doi:10.57967/hf/10369",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Educație rutieră pentru copii - PolitiaRutiera.ro",
+      "url": "https://www.politiarutiera.ro/news/educatie-rutiera-pentru-copii",
+      "snippet": "Jan 26, 2018 · Proiectul ,,Ora de Educație Rutieră” dedicat elevilor de gimnaziu a ajuns, astăzi, la copii de la Școala Tudor Arghezi …"
+    },
+    {
+      "title": "Home - PolitiaRutiera.ro",
+      "url": "https://politiarutiera.ro/",
+      "snippet": "Ediția a XIII-a a festivalului Săptămâna Haferland începe pe 31 iulie: concerte, evenimente culturale unice, tururi ghidate și experiențe …"
+    },
+    {
+      "title": "pilot - PolitiaRutiera.ro",
+      "url": "https://politiarutiera.ro/news/tag/pilot",
+      "snippet": "You are viewing content tagged with 'pilot' Un avion de mici dimensiuni a aterizat forţat, joi, într-o zonă montană din judeţul Hargihta, …"
+    },
+    {
+      "title": "Arnold Schwarzenegger - PolitiaRutiera.ro",
+      "url": "https://politiarutiera.ro/news/tag/Arnold+Schwarzenegger",
+      "snippet": "Arnold Schwarzenegger, fost guvernator al Californiei, a fost lovit cu picioarele în spate de către un bărbat în timpul unui concurs la …"
+    },
+    {
+      "title": "Vezi profil: GGavan - PolitiaRutiera.ro Forum",
+      "url": "https://politiarutiera.ro/forum/member.php?3863-GGavan&tab=aboutme",
+      "snippet": "Nov 10, 2015 · Vizitatori recenți Ultimul (ii) 2 vizitator (i) pe această pagină a (u) fost: Dak, Iso Această pagină a avut 7.461 vizite Tab …"
+    }
+  ]
+}

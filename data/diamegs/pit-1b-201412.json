@@ -5,7 +5,7 @@
   "author": "Diamegs",
   "url": "https://huggingface.co/Diamegs/PIT-1B-201412",
   "created_at": "2026-08-03T09:22:40.000Z",
-  "updated_at": "2026-08-23T10:40:32.000Z",
+  "updated_at": "2026-09-11T21:25:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 245,
+  "downloads_30d": 246,
   "trending_score": 0,
   "parameters": 1626734592,
   "parameters_human": "1.63B",

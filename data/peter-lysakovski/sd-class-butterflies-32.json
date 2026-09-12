@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Peter-Lysakovski/sd-class-butterflies-32",
+  "slug": "peter-lysakovski-sd-class-butterflies-32",
+  "author": "Peter-Lysakovski",
+  "url": "https://huggingface.co/Peter-Lysakovski/sd-class-butterflies-32",
+  "created_at": "2026-09-12T09:43:12.000Z",
+  "updated_at": "2026-09-12T09:43:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "unconditional-image-generation",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "pytorch",
+    "unconditional-image-generation",
+    "diffusion-models-class",
+    "license:mit",
+    "diffusers:DDPMPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18536323,
+  "parameters_human": "18.5M",
+  "storage_bytes": 74185252,
+  "storage_human": "74 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prénom Peter (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/peter/prenom-2380",
+      "snippet": "Le prénom Peter est la forme anglaise de Pierre. Ce dernier est dérivé du terme petros qui signifie \"rocher\". Les Peter sont honorés …"
+    },
+    {
+      "title": "Définitions : péter, se péter, être pété - Dictionnaire de français ...",
+      "url": "https://www.larousse.fr/dictionnaires/francais/p%c3%a9ter/59935",
+      "snippet": "péter, se péter, être pété - Définitions Français : Retrouvez la définition de péter, se péter, être pété, mais également la conjugaison …"
+    },
+    {
+      "title": "Saint Peter - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Saint_Peter",
+      "snippet": "Catholic and Orthodox tradition treats Peter as the first bishop of Rome – or pope – and also as the first bishop of Antioch. According …"
+    },
+    {
+      "title": "Peter (given name) - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Peter_(given_name)",
+      "snippet": "\"Peter | Origin and meaning of the name peter by Online Etymology Dictionary\". This page lists people that share the same ."
+    },
+    {
+      "title": "Peter et Sloane — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Peter_et_Sloane",
+      "snippet": "Peter et Sloane est un duo français de musique de variétés des années 1980. Il est constitué de Jean-Pierre Savelli (alias Peter) et …"
+    }
+  ]
+}

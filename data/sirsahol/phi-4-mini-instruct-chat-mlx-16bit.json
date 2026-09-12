@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/Phi-4-mini-instruct-chat-mlx-16bit",
+  "slug": "sirsahol-phi-4-mini-instruct-chat-mlx-16bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/Phi-4-mini-instruct-chat-mlx-16bit",
+  "created_at": "2026-09-12T09:42:04.000Z",
+  "updated_at": "2026-09-12T09:42:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - mdeverdelhan/ecoledirecte-client: Bibliothèque Java d ...",
+      "url": "https://github.com/mdeverdelhan/ecoledirecte-client",
+      "snippet": "ecoledirecte-client vise à simplifier l'accès à l'API d'EcoleDirecte pour le développement Java. Elle se veut légère et simple …"
+    },
+    {
+      "title": "GitHub - qLVN/EDBruteforce: EcoleDirecte bruteforcing program",
+      "url": "https://github.com/qLVN/EDBruteforce",
+      "snippet": "EcoleDirecte bruteforcing program. Contribute to qLVN/EDBruteforce development by creating an account on GitHub."
+    },
+    {
+      "title": "EcoleDirecte | Mode Sombre · GitHub",
+      "url": "https://gist.github.com/msylvest-22102007/88373dbd747d97a7cb1e8809ca74e8cf",
+      "snippet": "EcoleDirecte | Mode Sombre. GitHub Gist: instantly share code, notes, and snippets."
+    },
+    {
+      "title": "Ecole direct - Forum Logiciels - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-37323812-ecole-direct",
+      "snippet": "Aug 24, 2021 · Bonjour, j aimerai savoir pourquoi je ne peux plus passer à l espace famille quand je vais sur l application ecole direct, …"
+    },
+    {
+      "title": "ecoledirecte-2017-pas-fini.css · GitHub",
+      "url": "https://gist.github.com/Gildas-GH/490d62dfae9d68333be7bedad78fb6fb",
+      "snippet": "GitHub Gist: instantly share code, notes, and snippets."
+    }
+  ]
+}

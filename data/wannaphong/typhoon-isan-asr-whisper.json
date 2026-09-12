@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "wannaphong/typhoon-isan-asr-whisper",
+  "slug": "wannaphong-typhoon-isan-asr-whisper",
+  "author": "wannaphong",
+  "url": "https://huggingface.co/wannaphong/typhoon-isan-asr-whisper",
+  "created_at": "2026-09-12T10:12:52.000Z",
+  "updated_at": "2026-09-12T10:12:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "th"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "pytorch",
+    "th",
+    "base_model:biodatlab/whisper-th-medium-combined",
+    "base_model:finetune:biodatlab/whisper-th-medium-combined",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763857920,
+  "parameters_human": "763.9M",
+  "storage_bytes": 3055544304,
+  "storage_human": "3.1 GB",
+  "base_model": "biodatlab/whisper-th-medium-combined",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "naughtymidwestgirls search results - PornZog Free Porn Clips",
+      "url": "https://pornzog.com/search/?s=naughtymidwestgirls",
+      "snippet": "Watch naughtymidwestgirls videos at our mega porn collection."
+    },
+    {
+      "title": "Naughty Midwest Girls XXX Porno-Videos: naughtymidwestgirlsxxx.com",
+      "url": "https://ge.xhamster.desi/channels/naughty-midwest-girls-xxx",
+      "snippet": "Gratis Naughty Midwest Girls XXX Pornovideos von naughtymidwestgirlsxxx.com. Entdecke Naughty Midwest Girls XXX Sexvideos …"
+    },
+    {
+      "title": "Porn 40 - Naughtymidwestgirls",
+      "url": "https://porn40.com/de/videos/naughtymidwestgirls",
+      "snippet": "Beliebte Videos: Casting alt jung, Jung casting hd, Casting teen, Lesbische alt jung, Naughtymidwestgirls, Naughtymidwestgirls hairy."
+    },
+    {
+      "title": "Naughty Midwest Girls Porno Videos | Pornhub.com",
+      "url": "https://de.pornhub.org/video/search?search=naughty+midwest+girls",
+      "snippet": "Naughty Girl verführt ihren Stiefmutter-Liebhaber und er fickt sie beide mit einem riesigen Schwanz hart in den Mund!"
+    },
+    {
+      "title": "Full naughty midwest girls Porno Videos - xHamster",
+      "url": "https://ge.xhamster.desi/search/full+naughty+midwest+girls",
+      "snippet": "Sehen Sie full naughty midwest girls Porno Videos. Entdecken Sie Tonnen von XXX Filmen mit Sexszenen in 2025 auf xHamster!"
+    }
+  ]
+}

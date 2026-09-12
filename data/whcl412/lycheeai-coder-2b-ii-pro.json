@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "whcl412/LycheeAI-coder-2b-II-pro",
+  "slug": "whcl412-lycheeai-coder-2b-ii-pro",
+  "author": "whcl412",
+  "url": "https://huggingface.co/whcl412/LycheeAI-coder-2b-II-pro",
+  "created_at": "2026-09-12T11:48:07.000Z",
+  "updated_at": "2026-09-12T11:49:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "code",
+    "minicpm",
+    "chinese",
+    "conversational",
+    "tool-calling",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 1416035216,
+  "storage_human": "1.4 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Modifica fogli di calcolo online gratuitamente | Microsoft Excel per il …",
+      "url": "https://excel.cloud.microsoft/it-it/",
+      "snippet": "Crea e modifica fogli di calcolo online con Microsoft Excel per il web. Formattazione, analisi e collaborazione facili in tempo reale da …"
+    },
+    {
+      "title": "Microsoft Excel | Free Online Spreadsheets Software",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/excel?msockid=372910e3ccb8649915ff0731cdd165b9",
+      "snippet": "Mar 20, 2023 · Microsoft Excel is the industry leading spreadsheet application and data analysis tool. Explore free spreadsheet …"
+    },
+    {
+      "title": "Microsoft Excel | Software per fogli di calcolo online gratuito",
+      "url": "https://www.microsoft.com/it-it/microsoft-365/excel?msockid=372910e3ccb8649915ff0731cdd165b9",
+      "snippet": "Aug 18, 2020 · Microsoft Excel è l'applicazione leader di settore per foglio di calcolo e strumenti di analisi dei dati. Scopri gli strumenti …"
+    },
+    {
+      "title": "Edit spreadsheets online for free | Microsoft Excel for the Web",
+      "url": "https://excel.cloud.microsoft/en-gb/",
+      "snippet": "Create and edit spreadsheets online with Microsoft Excel for the web. Easy formatting, analysis, and real-time collaboration from any …"
+    },
+    {
+      "title": "Microsoft Excel - Download",
+      "url": "https://microsoft-excel.en.softonic.com/",
+      "snippet": "Sep 4, 2026 · Microsoft Excel is built for organizing data, running calculations, and turning tables into decisions. With Formulas and …"
+    }
+  ]
+}

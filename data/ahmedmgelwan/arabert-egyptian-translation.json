@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ahmedmgelwan/arabert-egyptian-translation",
+  "slug": "ahmedmgelwan-arabert-egyptian-translation",
+  "author": "ahmedmgelwan",
+  "url": "https://huggingface.co/ahmedmgelwan/arabert-egyptian-translation",
+  "created_at": "2026-09-12T09:35:16.000Z",
+  "updated_at": "2026-09-12T09:55:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "arz",
+    "en"
+  ],
+  "tags": [
+    "translation",
+    "arabert",
+    "seq2seq",
+    "egyptian-arabic",
+    "pytorch",
+    "arz",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 806811297,
+  "storage_human": "807 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Open Settings in Windows 10 | Tutorials - Ten Forums",
+      "url": "https://www.tenforums.com/tutorials/3326-open-settings-windows-10-a.html",
+      "snippet": "Apr 17, 2021 · How to Open Settings in Windows 10 Information Starting in the Windows 10 Preview 9901 build, PC settings and zPC …"
+    },
+    {
+      "title": "Turn On or Off Sync Settings for Microsoft Account in Windows 10",
+      "url": "https://www.tenforums.com/tutorials/4077-turn-off-sync-settings-microsoft-account-windows-10-a.html",
+      "snippet": "Sep 27, 2025 · How to Turn On or Off Sync Your Settings in Windows 10 When Sync settings is turned on, Windows syncs the …"
+    },
+    {
+      "title": "Find, control & delete the info in your Google Account",
+      "url": "https://support.google.com/accounts/answer/7660719?hl=en",
+      "snippet": "Timeline is a Google Account setting that creates a personal map that helps you remember places you visit, routes you use, and trips …"
+    },
+    {
+      "title": "Change Power Plan Settings in Windows 10 | Tutorials",
+      "url": "https://www.tenforums.com/tutorials/2843-change-power-plan-settings-windows-10-a.html",
+      "snippet": "Apr 22, 2020 · How to Change Power Plan Settings in Windows 10 A power plan is a collection of hardware and system settings that …"
+    },
+    {
+      "title": "Multiple Displays - Change Settings and Layout in Windows 10",
+      "url": "https://www.tenforums.com/tutorials/21084-multiple-displays-change-settings-layout-windows-10-a.html",
+      "snippet": "May 1, 2021 · How to Change Settings and Layout for Multiple Displays in Windows 10 Information Quite a many of us have multiple …"
+    }
+  ]
+}

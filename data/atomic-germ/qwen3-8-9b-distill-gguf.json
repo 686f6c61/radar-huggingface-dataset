@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/Qwen3.8-9B-Distill-GGUF",
+  "slug": "atomic-germ-qwen3-8-9b-distill-gguf",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/Qwen3.8-9B-Distill-GGUF",
+  "created_at": "2026-09-12T02:24:30.000Z",
+  "updated_at": "2026-09-12T02:58:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "empero-ai",
+    "qwen3.5",
+    "qwen3.8",
+    "distillation",
+    "reasoning",
+    "gated-deltanet",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:empero-ai/Qwen3.8-9B-Distill",
+    "base_model:quantized:empero-ai/Qwen3.8-9B-Distill",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 52246321632,
+  "storage_human": "52.2 GB",
+  "base_model": "empero-ai/Qwen3.8-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atomic » Skis, ski gear & ski clothing",
+      "url": "https://www.atomic.com/fr-fr",
+      "snippet": "Latest skis, ski boots, ski helmets, ski goggles & clothing by Atomic. For skiing, ski touring & cross-country skiing."
+    },
+    {
+      "title": "Atomic » Skis, équipement & vêtements de ski",
+      "url": "https://www.atomic.com/fr-ca",
+      "snippet": "Découvrez les derniers skis, chaussures de ski, casques, masques et vêtements de ski Atomic. Pour le ski alpin, le ski de randonnée …"
+    },
+    {
+      "title": "Atomic: Best Crypto Wallet",
+      "url": "https://atomicwallet.io/",
+      "snippet": "Atomic Wallet is an interface that gives you access to your funds on the blockchain. The most important information, such as your …"
+    },
+    {
+      "title": "Atomic Mail: Get Free Private Email for Secure Communication",
+      "url": "https://atomicmail.io/",
+      "snippet": "The European GDPR requires companies to secure emails containing sensitive data of EU citizens. Atomic Mail is a secure service …"
+    },
+    {
+      "title": "Atomic (TV series) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Atomic_(TV_series)",
+      "snippet": "Atomic is a British action drama television series created by Gregory Burke and based on the non-fiction book Atomic Bazaar by …"
+    }
+  ]
+}

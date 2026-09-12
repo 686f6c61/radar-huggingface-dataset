@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Johneeee/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-oQ6e-fp16-novision",
+  "slug": "johneeee-qwen3-8-27b-twin-turbo-fable-cold-fusion-709-l-uncensored-oq6e-fp16-novision",
+  "author": "Johneeee",
+  "url": "https://huggingface.co/Johneeee/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-oQ6e-fp16-novision",
+  "created_at": "2026-09-12T10:28:51.000Z",
+  "updated_at": "2026-09-12T10:31:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 22539213571,
+  "storage_human": "22.5 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Super Bowl - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Super_Bowl",
+      "snippet": "Si tiene solitamente nell'ultima domenica di gennaio o nella prima di febbraio, e registra abitualmente negli Stati Uniti gli ascolti …"
+    },
+    {
+      "title": "Super Bowl Sunday - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Super_Bowl_Sunday",
+      "snippet": "It was the first Sunday in February from Super Bowl XXXVIII in 2004 until Super Bowl LV in 2021, but is now the second Sunday, …"
+    },
+    {
+      "title": "Il Super Bowl di Trump: tutto quel che devi sapere sulla festa più ...",
+      "url": "https://www.ilgiornale.it/news/altri-sport/super-bowl-trump-tutto-che-devi-sapere-sulla-festa-pi-2434597.html",
+      "snippet": "Feb 8, 2025 · Il Super Bowl di Trump: tutto quel che devi sapere sulla festa più americana Domenica notte si terrà l'evento sportivo …"
+    },
+    {
+      "title": "Cos'è il Super Bowl: NFL, halftime show e numeri romani",
+      "url": "https://www.sportmediaset.mediaset.it/speciale/super-bowl-2026/super-bowl-cos-e_108521217-202602k.shtml",
+      "snippet": "Il Super Bowl 2026 si giocherà nella notte tra domenica 8 febbraio e lunedì 9 febbraio 2026, la sessantesima edizione vedrà sfidarsi i …"
+    },
+    {
+      "title": "Super Bowl, tutto quel che c’è da sapere: chi si sfida, i prezzi folli ...",
+      "url": "https://www.ilgiornale.it/news/altri-sport/super-bowl-tutto-che-c-sapere-chi-si-sfida-i-prezzi-folli-e-2605461.html",
+      "snippet": "Feb 8, 2026 · Domenica notte l’America sarà davanti al televisore per la finale della Nfl. Tra spot milionari, l’halftime show ci sarà …"
+    }
+  ]
+}

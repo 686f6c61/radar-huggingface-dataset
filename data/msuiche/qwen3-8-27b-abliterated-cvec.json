@@ -5,7 +5,7 @@
   "author": "msuiche",
   "url": "https://huggingface.co/msuiche/Qwen3.8-27B-abliterated-cvec",
   "created_at": "2026-08-16T19:29:10.000Z",
-  "updated_at": "2026-09-04T10:55:18.000Z",
+  "updated_at": "2026-09-11T12:32:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 114,
+  "downloads_30d": 128,
   "trending_score": 0,
   "parameters": 250880,
   "parameters_human": "250880",

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "abdulrahmanalotaibi/poolformer-baseline9",
+  "slug": "abdulrahmanalotaibi-poolformer-baseline9",
+  "author": "abdulrahmanalotaibi",
+  "url": "https://huggingface.co/abdulrahmanalotaibi/poolformer-baseline9",
+  "created_at": "2026-09-12T02:37:00.000Z",
+  "updated_at": "2026-09-12T02:37:07.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Can-can - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Can-can",
+      "snippet": "The professional dancers of the Second Empire and the fin de siècle developed the can-can moves that were later incorporated by …"
+    },
+    {
+      "title": "Cancan — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Cancan",
+      "snippet": "Afficher / masquer la sous-section L'image du cancan. 4.1Postérité. 4.2Cinéma. 5Bibliographie. 6Notes et références. 7Articles …"
+    },
+    {
+      "title": "Can-Can Dance History - New and Old - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLZ7aUu3D8cwHWTk3IiuLmLzoVka9aYBJ0",
+      "snippet": "The Cancan’s history is surprisingly complex, and it’s evolution is unusual, changing over the years from it’s initial appearance as …"
+    },
+    {
+      "title": "CAN - RTBF Actus",
+      "url": "https://www.rtbf.be/dossier/can",
+      "snippet": "Mar 28, 2026 · Toutes les infos, résultats, ... sur la Coupe d'Afrique des Nations (CAN) 2024 !"
+    },
+    {
+      "title": "Cancan | Definition, History, Dance, & Facts | Britannica",
+      "url": "https://www.britannica.com/art/cancan",
+      "snippet": "It can also be seen in films such as John Huston’s Moulin Rouge(1952), a fictional account of the life of the artist perhaps most …"
+    }
+  ]
+}

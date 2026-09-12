@@ -5,7 +5,7 @@
   "author": "FoolDev",
   "url": "https://huggingface.co/FoolDev/Thanatos-27B-HERETIC",
   "created_at": "2026-05-02T20:03:39.000Z",
-  "updated_at": "2026-09-11T02:44:05.000Z",
+  "updated_at": "2026-09-11T16:24:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -87,8 +87,8 @@
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 200853460366,
-  "storage_human": "200.9 GB",
+  "storage_bytes": 217400868206,
+  "storage_human": "217.4 GB",
   "base_model": "heretic-org/Qwen3.8-27B-heretic-ara",
   "formats": [
     "gguf"

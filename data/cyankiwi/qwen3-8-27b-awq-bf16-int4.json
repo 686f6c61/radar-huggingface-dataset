@@ -5,7 +5,7 @@
   "author": "cyankiwi",
   "url": "https://huggingface.co/cyankiwi/Qwen3.8-27B-AWQ-BF16-INT4",
   "created_at": "2026-08-17T18:59:21.000Z",
-  "updated_at": "2026-08-17T19:01:23.000Z",
+  "updated_at": "2026-09-11T12:14:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 16,
-  "downloads_30d": 13956,
+  "downloads_30d": 14099,
   "trending_score": 8,
   "parameters": 27781427952,
   "parameters_human": "27.78B",

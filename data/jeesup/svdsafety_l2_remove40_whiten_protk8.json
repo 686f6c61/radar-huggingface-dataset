@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svdsafety_l2_remove40_whiten_protk8",
+  "slug": "jeesup-svdsafety_l2_remove40_whiten_protk8",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svdsafety_l2_remove40_whiten_protk8",
+  "created_at": "2026-09-12T02:18:41.000Z",
+  "updated_at": "2026-09-12T02:20:34.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Live-Dolmetscher - Computer - Google Meet-Hilfe",
+      "url": "https://support.google.com/meet/answer/16221730?hl=de-ch&co=GENIE.Platform%3DDesktop",
+      "snippet": "Nutzer mit Google AI Pro-Konten können den Live-Dolmetscher aktivieren oder deaktivieren, wenn die Videokonferenz von einem …"
+    },
+    {
+      "title": "Live Übersetzung von Telefongesprächspartern - Google Help",
+      "url": "https://support.google.com/pixelphone/thread/300447056/live-%C3%9Cbersetzung-von-telefongespr%C3%A4chspartern?hl=de",
+      "snippet": "Einer der Gründe, warum ich mir das Pixel 9 Pro gekauft habe, war der, dass es möglich sein soll, während Telefongesprächen live in …"
+    },
+    {
+      "title": "Übersetzte Seiten in der Google Suche öffnen",
+      "url": "https://support.google.com/websearch/answer/11315137?hl=de-TD",
+      "snippet": "In der Google Suche wird eine Übersetzung des Titels und des Ausschnitts eines Suchergebnisses angezeigt. Sie können sich die …"
+    },
+    {
+      "title": "Spracheingabe übersetzen - Computer - Google Übersetzer-Hilfe",
+      "url": "https://support.google.com/translate/answer/6142468?hl=de&co=GENIE.Platform%3DDesktop",
+      "snippet": "Übersetzungen laut vorlesen lassen Gehen Sie zur Seite Google Übersetzer. Wählen Sie die Sprachen aus, in die und aus denen …"
+    },
+    {
+      "title": "Speichern von per Google Lens übersetzten Dokumenten (Chrome, …",
+      "url": "https://support.google.com/photos/thread/228480763/speichern-von-per-google-lens-%C3%BCbersetzten-dokumenten-chrome-desktop?hl=de",
+      "snippet": "ich habe gerade herausgefunden, dass Chrome Fotos oder Scans von fremdsprachigen Dokumenten (z.B. Ukrainisch oder …"
+    }
+  ]
+}

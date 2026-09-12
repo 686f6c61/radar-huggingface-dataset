@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Aobangaming/lightning-30m-ft",
+  "slug": "aobangaming-lightning-30m-ft",
+  "author": "Aobangaming",
+  "url": "https://huggingface.co/Aobangaming/lightning-30m-ft",
+  "created_at": "2026-09-12T10:09:22.000Z",
+  "updated_at": "2026-09-12T10:18:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "conversational",
+    "generative",
+    "text-generation",
+    "en",
+    "dataset:kmfoda/booksum",
+    "arxiv:1910.09700",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/signin",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "为什么ppt里几个图案无法组合到一起？组合的按键 ...",
+      "url": "https://www.zhihu.com/question/24809708?sort=created",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "西部世界真的好看吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/277822434",
+      "snippet": "May 19, 2018 · 如果 西部世界 不是大制作，不是 HBO 拍的，没花那么多钱，没各大媒体大力推广。没那么多裸露镜头。你还会去看它 …"
+    },
+    {
+      "title": "为什么有的HBO美剧里会大量启用英国演员？ - 知乎",
+      "url": "https://www.zhihu.com/question/288558943",
+      "snippet": "最后，不只是HBO，漫威宇宙和DC这么“美国”的产物， 不仅是更加不缺钱，而且很重质量，里面的演员祖籍是英国的也是有不少啊： …"
+    },
+    {
+      "title": "如何输入直角引号（「」和『』 ）？ - 知乎",
+      "url": "https://www.zhihu.com/question/19755746",
+      "snippet": "说一下使用 win10 自带输入法输入直角引号较为便捷的一个办法: 设置自定义用户词组。 我自定义的是输入在拼音输入下键入「yh」, …"
+    }
+  ]
+}

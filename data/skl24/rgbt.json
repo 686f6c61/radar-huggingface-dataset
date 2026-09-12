@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "skl24/RGBT",
+  "slug": "skl24-rgbt",
+  "author": "skl24",
+  "url": "https://huggingface.co/skl24/RGBT",
+  "created_at": "2026-09-12T09:42:55.000Z",
+  "updated_at": "2026-09-12T10:46:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "thermal",
+    "infrared",
+    "rgb-thermal",
+    "human-perception",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2086940040,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Καρταχένα, το διαμάντι της Κολομβίας | travel.gr",
+      "url": "https://www.travel.gr/experiences/kartachena-to-diamanti-tis-kolomvias/",
+      "snippet": "EXPERIENCES Καρταχένα, το διαμάντι της Κολομβίας Μία πολύχρωμη πόλη της Καραϊβικής που συνδυάζει αποικιακή κληρονομιά, …"
+    },
+    {
+      "title": "Οδηγός: Καρταχένα - Πληροφορίες για ταξίδια, εκδρομές και …",
+      "url": "https://www.tripadvisor.com.gr/Tourism-g297476-Cartagena_Cartagena_District_Bolivar_Department-Vacations.html",
+      "snippet": "Οδηγός: Καρταχένα - Διαβάστε κριτικές και συμβουλές για το ταξίδι σας στο Καρταχένα, Κολομβία."
+    },
+    {
+      "title": "Καρταχένα, το διαμάντι της Κολομβίας",
+      "url": "https://www.protothema.gr/travelgr/article/1705479/kartahena-to-diamadi-tis-kolomvias/",
+      "snippet": "Aug 23, 2026 · Χάρη στην παλιά πόλη της με τη μοναδική αποικιακή γοητεία που ενέπνευσε τον Γκαμπριέλ Γκαρσία Μάρκες, η …"
+    },
+    {
+      "title": "Καρταχένα Κολομβία: Καλύτερες Δραστηριότητες και Κορυφαίες …",
+      "url": "https://blog.getexperience.com/el/cartagena-colombia-best-things-to-do",
+      "snippet": "Mar 27, 2025 · Ανακαλύψτε τη μαγεία της Καρταχένας, Κολομβία, ενός ζωντανού προορισμού γεμάτου κουλτούρα, ιστορία και …"
+    },
+    {
+      "title": "Καρταχένα: Απόδραση στα χρώματα και τις γεύσεις της Καραϊβικής",
+      "url": "https://www.travel.gr/experiences/kartachena-apodrasi-sta-chromata-kai-ti/",
+      "snippet": "Η Καρταχένα έχει δικαίως κερδίσει τη φήμη της «πρωτεύουσας της γαστρονομίας» στην Κολομβία. Δεν είναι μόνο τα εστιατόρια που …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "KidIkaros/abliterated-minicpm5-2b-ggml",
+  "slug": "kidikaros-abliterated-minicpm5-2b-ggml",
+  "author": "KidIkaros",
+  "url": "https://huggingface.co/KidIkaros/abliterated-minicpm5-2b-ggml",
+  "created_at": "2026-09-12T11:35:44.000Z",
+  "updated_at": "2026-09-12T11:47:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "llama.cpp",
+    "abliterated",
+    "refusal-free",
+    "pytorch",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 12379516672,
+  "storage_human": "12.4 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Log into Facebook",
+      "url": "https://www.facebook.com/login.php/",
+      "snippet": "Terms Help Contact Uploading & Non-Users Sign up • Instagram Locations Page Categories People"
+    },
+    {
+      "title": "Facebook - log in or sign up",
+      "url": "https://secure.facebook.com/",
+      "snippet": "Log into Facebook to start sharing and connecting with your friends, family, and people you know."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/login/identify/",
+      "snippet": "Terms Help Contact Uploading & Non-Users Sign up • Instagram Locations Page Categories People"
+    },
+    {
+      "title": "Log Into Facebook",
+      "url": "https://secure.facebook.com/login/",
+      "snippet": "Log into Facebook to start sharing and connecting with your friends, family, and people you know."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/signin.htm/",
+      "snippet": "When this happens, it's usually because the owner only shared it with a small group of people, changed who can see it or it's been …"
+    }
+  ]
+}

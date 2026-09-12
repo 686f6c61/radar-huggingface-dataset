@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svdsafety_l2_remove50_whiten_protk8",
+  "slug": "jeesup-svdsafety_l2_remove50_whiten_protk8",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svdsafety_l2_remove50_whiten_protk8",
+  "created_at": "2026-09-12T02:26:13.000Z",
+  "updated_at": "2026-09-12T02:28:07.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10 choses à faire incontournables à Banff (2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.fr/Attractions-g154911-Activities-Banff_Banff_National_Park_Alberta.html",
+      "snippet": "Découvrez les sites et activités incontournables : Banff Gondola, Bow Falls, Randonnées, Excursions nature et observation de la …"
+    },
+    {
+      "title": "Banff & Lake Louise Tourism | Official Destination Website",
+      "url": "https://www.banfflakelouise.com/",
+      "snippet": "Plan and book your visit to Banff and Lake Louise, AB with the official tourism website - the source for accommodation, activities, …"
+    },
+    {
+      "title": "Guide voyage de Banff 2027 | PDF gratuit à imprimer - Authentik Canada",
+      "url": "https://www.authentikcanada.com/fr-fr/guides-voyage/office-tourisme-banff",
+      "snippet": "Consultez ce guide touristique gratuit pour planifier votre voyage à Banff. Rédigé par les conseillers locaux d'Authentik Canada, le …"
+    },
+    {
+      "title": "Banff en 2026 : ce que la ville a changé, vu de l'intérieur",
+      "url": "https://advised-traveler.com/amerique-du-nord/guide-voyage-canada/visiter-premiere-fois-banff-faire-voir/",
+      "snippet": "Jul 14, 2026 · Banff par ceux qui y vivent : bonnes adresses, pièges à éviter, actualisé en juillet 2026. Le concentré local que les …"
+    },
+    {
+      "title": "10 meilleurs endroits à visiter à Banff tout au long de l'année",
+      "url": "https://www.getyourguide.com/fr-fr/explorer/banff-ttd284/best-places-to-visit-in-banff/?msockid=0889d46fad606ca631cfc3bdacda6db1",
+      "snippet": "Jun 23, 2026 · Banff est célèbre dans le monde entier pour ses magnifiques montagnes et ses lacs glaciaires - le parc national de …"
+    }
+  ]
+}

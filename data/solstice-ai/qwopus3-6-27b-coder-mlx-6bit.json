@@ -5,7 +5,7 @@
   "author": "Solstice-AI",
   "url": "https://huggingface.co/Solstice-AI/Qwopus3.6-27B-Coder-mlx-6Bit",
   "created_at": "2026-07-05T06:45:56.000Z",
-  "updated_at": "2026-09-03T18:57:19.000Z",
+  "updated_at": "2026-09-11T09:40:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -38,7 +38,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 620,
+  "downloads_30d": 630,
   "trending_score": 0,
   "parameters": 26895993856,
   "parameters_human": "26.90B",

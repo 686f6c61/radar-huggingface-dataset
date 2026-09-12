@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "leomaurodesenv/nli-MiniLM2-L6-H768-trustairlab-jailbreak-augmented",
+  "slug": "leomaurodesenv-nli-minilm2-l6-h768-trustairlab-jailbreak-augmented",
+  "author": "leomaurodesenv",
+  "url": "https://huggingface.co/leomaurodesenv/nli-MiniLM2-L6-H768-trustairlab-jailbreak-augmented",
+  "created_at": "2026-09-12T02:19:50.000Z",
+  "updated_at": "2026-09-12T09:34:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:cross-encoder/nli-MiniLM2-L6-H768",
+    "base_model:finetune:cross-encoder/nli-MiniLM2-L6-H768",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 82119938,
+  "parameters_human": "82.1M",
+  "storage_bytes": 5584373753,
+  "storage_human": "5.6 GB",
+  "base_model": "cross-encoder/nli-MiniLM2-L6-H768",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quote of the Day - BrainyQuote",
+      "url": "https://www.brainyquote.com/quote_of_the_day",
+      "snippet": "1 day ago · Share five inspirational Quotes of the Day with friends on Facebook, Twitter, and blogs. Enjoy our Brainy, Funny, Love, …"
+    },
+    {
+      "title": "Zitat des Tages « Zitate, Aphorismen, Weisheiten und Sprüche",
+      "url": "https://www.zitat-des-tages.de/",
+      "snippet": "Eine Frau kann einem diese Befriedigung nicht geben. – Boris Becker. Gehst du furchtsam und zart mit deinen Leiden um, so …"
+    },
+    {
+      "title": "Spruch des Tages: Die besten Sprüche, Zitate & Weisheiten",
+      "url": "https://www.spruch-des-tages.de/",
+      "snippet": "Chuck Norris hat beim Schwimmen Amerika entdeckt. Der Sinn des Lebens, ist leben. Freundlichkeit ist eine Sprache, die Taube …"
+    },
+    {
+      "title": "160 Quotes of the Day for Daily Inspiration, Motivation and Lots of ...",
+      "url": "https://www.positivityblog.com/quote-of-the-day/",
+      "snippet": "Mar 26, 2025 · Looking for a quote of the day to help you make the most of today? To renew your motivation, inspiration and give you …"
+    },
+    {
+      "title": "Quote of the Day – Today's Inspiring Daily Quote",
+      "url": "https://thedailyquotes.com/quote-of-the-day/",
+      "snippet": "1 day ago · Get today's quote of the day, its deeper meaning, and one simple action to apply it. Fresh motivational, love & …"
+    }
+  ]
+}

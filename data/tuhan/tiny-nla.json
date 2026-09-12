@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "TuHan/tiny-nla",
+  "slug": "tuhan-tiny-nla",
+  "author": "TuHan",
+  "url": "https://huggingface.co/TuHan/tiny-nla",
+  "created_at": "2026-09-12T10:28:50.000Z",
+  "updated_at": "2026-09-12T10:32:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43711464561,
+  "storage_human": "43.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OJK dan BI Resmi Luncurkan Regulasi Fintech 2026: Perketat P2P …",
+      "url": "https://www.terdepan.id/ojk-dan-bi-resmi-luncurkan-regulasi-fintech-2026-perketat-p2p-lending-dan-pembayaran-digital",
+      "snippet": "Jul 16, 2026 · Jakarta — Otoritas Jasa Keuangan (OJK) dan Bank Indonesia (BI) secara resmi meluncurkan paket regulasi fintech …"
+    },
+    {
+      "title": "Penyelenggaraan Teknologi Informasi oleh Bank Umum - Portal OJK",
+      "url": "https://www.ojk.go.id/id/regulasi/Pages/PADK-1-Tahun-2026-Penyelenggaraan-Teknologi-Informasi-oleh-Bank-Umum.aspx",
+      "snippet": "Mar 1, 2026 · Peraturan Anggota Dewan Komisioner Otoritas Jasa Keuangan Nomor 1 Tahun 2026 tentang Penyelenggaraan …"
+    },
+    {
+      "title": "Top AI Agent Projects : Tucky, Airuncode, Tadata, HyperProbe ...",
+      "url": "https://www.facebook.com/ManuAGI01/videos/top-ai-agent-projects-tucky-airuncode-tadata-hyperprobe-gpt-6-astrathis-video-co/4267207353412373/",
+      "snippet": "vor 4 Tagen ... It solves the privacy and cost trade offs of coding agents that run in the cloud and mark up model usage. It runs code agents entirely on your ..."
+    },
+    {
+      "title": "Regulasi Fintech di Indonesia: Membedah Peran OJK dan Tantangan ...",
+      "url": "https://gamasemesta.com/artikel/regulasi-fintech-di-indonesia-membedah-peran-ojk-dan-tantangan-hukumnya/",
+      "snippet": "Aug 15, 2025 · Pahami regulasi fintech Indonesia, peran OJK dalam perizinan dan pengawasan, serta tantangan hukum dalam …"
+    },
+    {
+      "title": "Pencarian Regulasi - Portal OJK",
+      "url": "https://www.ojk.go.id/id/Regulasi/Default.aspx",
+      "snippet": "Regulasi / Pencarian Regulasi Pencarian Regulasi"
+    }
+  ]
+}

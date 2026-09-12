@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "violetxi/hparam-92m-block-mtp-truncated-peak_lr-1e-3-wu-0p01-s42",
+  "slug": "violetxi-hparam-92m-block-mtp-truncated-peak_lr-1e-3-wu-0p01-s42",
+  "author": "violetxi",
+  "url": "https://huggingface.co/violetxi/hparam-92m-block-mtp-truncated-peak_lr-1e-3-wu-0p01-s42",
+  "created_at": "2026-09-05T00:52:00.000Z",
+  "updated_at": "2026-09-12T09:38:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "looped_block_mtp",
+    "text-generation",
+    "chess",
+    "block-mtp",
+    "truncated-bptt",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 92138496,
+  "parameters_human": "92.1M",
+  "storage_bytes": 9214204122,
+  "storage_human": "9.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Calcium Ion Charge Explained: How to Determine Its Oxidation State",
+      "url": "https://completeera.com/calcium-ion-charge-explained-how-to-determine-its-oxidation-state/",
+      "snippet": "🧪 What Is a Calcium Ion? The calcium ion (Ca²⁺) has a +2 oxidation state because calcium (Ca) is in Group 2 of the periodic table, …"
+    },
+    {
+      "title": "What is the charge of a calcium ion - Sorumatik",
+      "url": "https://en.sorumatik.co/t/what-is-the-charge-of-a-calcium-ion/250959",
+      "snippet": "Aug 21, 2025 · In short, the calcium ion has a charge of +2 because it loses two electrons. This charge is fundamental in the roles …"
+    },
+    {
+      "title": "The Charge of Calcium (Ca²⁺): Understanding Its Ionic Nature",
+      "url": "https://completeera.com/the-charge-of-calcium-ca-understanding-its-ionic-nature/",
+      "snippet": "Calcium (Ca) is an **alkaline earth metal** with an **atomic number of 20**, meaning it has **2 valence electrons** in its outermost …"
+    },
+    {
+      "title": "The Shocking Truth: What Is the Charge of a Calcium (Ca) Ion?",
+      "url": "https://toplearning.blog/shocking-truth-charge-calcium-ca-ion-30924",
+      "snippet": "Sep 9, 2025 · The simple answer to what is the charge of Ca is +2. A calcium ion, written as Ca²⁺, carries this positive charge …"
+    },
+    {
+      "title": "What is the Ionic Charge of Calcium (Ca)? And Why?",
+      "url": "https://knordslearning.com/charge-of-calcium-ca/",
+      "snippet": "May 26, 2023 · And as the Calcium (Ca) loses 2 electrons, it forms Ca2+ion. Hence the ionic charge of Calcium (Ca) is 2+. I hope …"
+    }
+  ]
+}

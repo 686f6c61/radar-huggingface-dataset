@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "tfschaefer/cnn-transformer-multitask-2023",
+  "slug": "tfschaefer-cnn-transformer-multitask-2023",
+  "author": "tfschaefer",
+  "url": "https://huggingface.co/tfschaefer/cnn-transformer-multitask-2023",
+  "created_at": "2026-09-12T10:24:01.000Z",
+  "updated_at": "2026-09-12T10:24:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek - Into the Unknown",
+      "url": "https://chat.deepseek.com/sign_in",
+      "snippet": "Chat with DeepSeek AI – your intelligent assistant for coding, content creation, file reading, and more. Upload documents, engage in …"
+    },
+    {
+      "title": "接入 Codex | DeepSeek API Docs",
+      "url": "https://api-docs.deepseek.com/zh-cn/quick_start/agent_integrations/codex/",
+      "snippet": "1 day ago · Codex 是 OpenAI 推出的 AI 编程助手，通过 Responses API 与模型交互，DeepSeek API 原生支持该格式。"
+    },
+    {
+      "title": "DeepSeek Platform",
+      "url": "https://platform.deepseek.com/api_keys",
+      "snippet": "Join DeepSeek API platform to access our AI models, developer resources and API documentation."
+    },
+    {
+      "title": "模型 & 价格 | DeepSeek API Docs",
+      "url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing?tool=deepseek",
+      "snippet": "1 day ago · 扣费规则 扣减费用 = token 消耗量 × 模型单价，对应的费用将直接从充值余额或赠送余额中进行扣减。 当充值余额与赠送 …"
+    },
+    {
+      "title": "DeepSeek Harness developer preview: Everything is a plugin",
+      "url": "https://www.deepseek.com/harness/en/",
+      "snippet": "Aug 27, 2026 · DeepSeek Harness is now in developer preview for agent harness developers worldwide — source code included. …"
+    }
+  ]
+}

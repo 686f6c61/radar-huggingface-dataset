@@ -5,7 +5,7 @@
   "author": "tapiocaTakeshi",
   "url": "https://huggingface.co/tapiocaTakeshi/Qubit",
   "created_at": "2026-03-07T09:23:00.000Z",
-  "updated_at": "2026-09-11T03:32:48.000Z",
+  "updated_at": "2026-09-12T02:10:45.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": 109105707,
   "parameters_human": "109.1M",
-  "storage_bytes": 54416938775,
-  "storage_human": "54.4 GB",
+  "storage_bytes": 56819583574,
+  "storage_human": "56.8 GB",
   "base_model": null,
   "formats": [
     "gguf"

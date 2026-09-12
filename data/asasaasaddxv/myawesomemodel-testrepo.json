@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "asasaasaddxv/MyAwesomeModel-TestRepo",
+  "slug": "asasaasaddxv-myawesomemodel-testrepo",
+  "author": "asasaasaddxv",
+  "url": "https://huggingface.co/asasaasaddxv/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-12T09:32:07.000Z",
+  "updated_at": "2026-09-12T09:32:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Football : l'actualité foot et transfert est sur MAXIFOOT",
+      "url": "https://www.maxifoot.fr/",
+      "snippet": "Actualité du Football par Maxifoot. Le réseau du Foot sur Internet vous fait partager sa passion du ballon rond."
+    },
+    {
+      "title": "Maxifoot - football",
+      "url": "https://m.maxifoot.fr/",
+      "snippet": "Actualité du Football par Maxifoot. Le réseau du Foot sur Internet vous fait partager sa passion du ballon rond. Suivez les transferts, …"
+    },
+    {
+      "title": "Football : l'actualité foot et transfert est sur MAXIFOOT",
+      "url": "https://www.maxifoot.fr/index-hab7.php",
+      "snippet": "Actualité du Football par Maxifoot. Le réseau du Foot sur Internet vous fait partager sa passion du ballon rond."
+    },
+    {
+      "title": "Résultats foot en direct, live Maxifoot",
+      "url": "https://m.maxifoot.fr/live.htm",
+      "snippet": "Actualité du Football par Maxifoot. Le réseau du Foot sur Internet vous fait partager sa passion du ballon rond. Suivez les transferts, …"
+    },
+    {
+      "title": "MAXIFOOT-LIVE le live-score, direct foot : MONDE",
+      "url": "https://www.maxifoot-live.com/monde/index.php",
+      "snippet": "Livescore Football : tous les scores en live et les résultats des matchs en direct sur Maxifoot-Live !"
+    }
+  ]
+}

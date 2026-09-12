@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Aryan1245678/DecodeX_Engine",
+  "slug": "aryan1245678-decodex_engine",
+  "author": "Aryan1245678",
+  "url": "https://huggingface.co/Aryan1245678/DecodeX_Engine",
+  "created_at": "2026-09-12T10:34:13.000Z",
+  "updated_at": "2026-09-12T10:34:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kings of Leon Glasgow: Setlist, support act, stage times and what to ...",
+      "url": "https://www.scotsman.com/whats-on/glasgow-summer-sessions-kings-of-leon-timings-setlist-support-acts-weather-banned-items-tickets-8773964",
+      "snippet": "Jul 2, 2026 · Here is everything you need to know about Kings of Leon’s Glasgow show, including when they will be on stage, their …"
+    },
+    {
+      "title": "Kings Of Leon - Facebook",
+      "url": "https://www.facebook.com/KingsOfLeon/",
+      "snippet": "Kings Of Leon. 9,823,190 likes · 21,933 talking about this. hey bubba, how you been? O My Beloved is out everywhere on November …"
+    },
+    {
+      "title": "Home - Kings of Leon",
+      "url": "https://www.kingsofleon.com/",
+      "snippet": "Kings Of Leon - Nothing To Do ... Kings Of Leon - Mustang (Official Music Video) ... Video player configuration error Video player …"
+    },
+    {
+      "title": "Kings of Leon - tickets, concerts and tour dates 2026 and 2027",
+      "url": "https://festivaly.eu/en/artists/kings-of-leon/2957",
+      "snippet": "List of all Kings of Leon gigs, festivals, tickets and tour dates for 2026 and 2027. Choose a gig or festival and buy tickets at once."
+    },
+    {
+      "title": "Kings of Leon, The Lathums, and The Royston Club Glasgow Tickets ...",
+      "url": "https://www.songkick.com/concerts/42895338-kings-of-leon-at-bellahouston-park",
+      "snippet": "Jul 3, 2026 · Buy tickets, find event, venue and support act information and reviews for Kings of Leon, The Lathums, and The …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Colki/grande.mestre",
+  "slug": "colki-grande-mestre",
+  "author": "Colki",
+  "url": "https://huggingface.co/Colki/grande.mestre",
+  "created_at": "2026-09-12T01:12:37.000Z",
+  "updated_at": "2026-09-12T02:08:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 8988110400,
+  "storage_human": "9.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Übersetzer - Google Translate",
+      "url": "https://translate.google.com/?hl=de",
+      "snippet": "Übersetzen Sie Wörter, Sätze und Webseiten sofort zwischen über 100 Sprachen mit dem kostenlosen Google-Dienst."
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/;anything",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "EXPERTENSTANDARD BEZIEHUNGSGESTALTUNG IN DER ...",
+      "url": "https://www.dnqp.de/fileadmin/HSOS/Homepages/DNQP/Dateien/Expertenstandards/Demenz/Demenz_SD_Literaturstudie-Anlage.pdf",
+      "snippet": "NDB model. Aging & Mental Health 8 (2): 117-125. Page 48. Seite | 47. Collis, J.; Bloch, S. (2012): Survey of UK speech and language therapists' assessment ..."
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/m",
+      "snippet": "Translate Detect language → English Google home Send feedback Privacy and terms Switch to full site"
+    },
+    {
+      "title": "Google Übersetzer – dein persönlicher Übersetzer auf deinem …",
+      "url": "https://translate.google.com/intl/de/about/",
+      "snippet": "Hier erfährst du, wie du mit Google Übersetzer Text, gesprochene Sprache, Bilder, Dokumente, Websites und vieles mehr …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SADCXZ12DSA/MyAwesomeModel-TestRepo",
+  "slug": "sadcxz12dsa-myawesomemodel-testrepo",
+  "author": "SADCXZ12DSA",
+  "url": "https://huggingface.co/SADCXZ12DSA/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-12T09:42:53.000Z",
+  "updated_at": "2026-09-12T09:43:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "De beste deals in Zeeland | Korting tot 90% | Social Deal",
+      "url": "https://www.socialdeal.nl/",
+      "snippet": "Ontdek Zeeland met korting tot wel 90%! De leukste Restaurant, Wellness en Hotel deals koop je op Social Deal. 9+ Beoordeling …"
+    },
+    {
+      "title": "Social Deal, ontdek jouw stad voor een onverslaanbare prijs - De …",
+      "url": "https://www.socialdeal.nl/landing/",
+      "snippet": "Op deze pagina vind je een divers aanbod aan deals, voor ieder wat wils. Ontdek de leukste uitjes en maak er een topdag van …"
+    },
+    {
+      "title": "De beste Social Deals tot 90% korting. Dagelijks jouw Social Deal",
+      "url": "https://welcome.socialdeal.nl/landing/index.php?url=120904135344-actie-algemeen-socialdeal&x=5118-2320161211&c=gglma",
+      "snippet": "\"Hét Beste Voordeel in Amsterdam voor een onverslaanbare prijs\" Ontdek jouw dagelijkse kortingen bij Social Deal. Meld je Nú aan!"
+    },
+    {
+      "title": "Ontdek Social Deal: de leukste etentjes, uitjes & wellnessdeals in Utrecht",
+      "url": "https://www.socialdeal.be/inspirations/de-beste-social-deals-c-algemeen/utrecht/",
+      "snippet": "Profiteer via Social Deal van kortingen tot wel 70% op de gaafste diners, uitjes, overnachtingen én meer Royaal aanbod in Utrecht 9+ …"
+    },
+    {
+      "title": "Social Deal kortingscode: €7,50 korting in september 2026",
+      "url": "https://www.acties.nl/social-deal",
+      "snippet": "1 day ago · Social Deal is een online platform die je de mogelijkheid biedt om voor een fijne prijs kennis te maken met populaire …"
+    }
+  ]
+}

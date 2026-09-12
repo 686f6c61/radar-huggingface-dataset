@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SADD1DSA21DSA/MyAwesomeModel-best",
+  "slug": "sadd1dsa21dsa-myawesomemodel-best",
+  "author": "SADD1DSA21DSA",
+  "url": "https://huggingface.co/SADD1DSA21DSA/MyAwesomeModel-best",
+  "created_at": "2026-09-12T01:49:38.000Z",
+  "updated_at": "2026-09-12T02:41:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "expliquer l’intérêt de la continuité des soins et du travail en équipe ...",
+      "url": "https://www.ladissertation.com/search/expliquer+l%E2%80%99int%C3%A9r%C3%AAt+de+la+continuit%C3%A9+des+soins+et+du+travail+en+%C3%A9quipe+pluridisciplinaire+en+psychiatrie/page14.html",
+      "snippet": "Recherche par de nombreux soignants d’un contexte relationnel favorisant l’échange avec les patients, mais la société actuelle, la …"
+    },
+    {
+      "title": "Approche individuelle et collective sur la continuité des soins",
+      "url": "https://shs.cairn.info/revue-sante-publique-2009-3-page-241?lang=fr",
+      "snippet": "Aug 17, 2009 · Les stratégies de régulation et de substitution sont des indications de l’équilibre précaire qui existe entre singularité et …"
+    },
+    {
+      "title": "La continuité des soins et l’évolution clinique du patient – Cour d ...",
+      "url": "https://legalplanet.pro/la-continuite-des-soins-et-levolution-clinique-du-patient-cour-dappel-de-toulouse-14-aout-2026-rg-n-26-00119/",
+      "snippet": "Lorsque les certificats médicaux décrivent une évolution favorable et un état clinique stabilisé, le maintien de la mesure de soins peut …"
+    },
+    {
+      "title": "Expliquer l’intérêt de la continuité des soins et du travail en équipe ...",
+      "url": "https://www.ladissertation.com/search/Expliquer+l%E2%80%99int%C3%A9r%C3%AAt+de+la+continuit%C3%A9+des+soins+et+du+travail+en+%C3%A9quipe+pluridisciplinaire+en+psychiatrie/page2.html",
+      "snippet": "Le travail en équipe ne va pas de soi. Il nécessite un effort personnel et une compétence qui s'acquiert peu à peu à partir d'une …"
+    },
+    {
+      "title": "Avec et pour leurs patients, des équipes pluridisciplinaires se ...",
+      "url": "https://shs.cairn.info/revue-cliniques-2012-1-page-58?lang=fr",
+      "snippet": "Mar 20, 2012 · Il s’agit de construire un chemin en équipe, de bâtir des processus tout en maintenant une dynamique de soin qui …"
+    }
+  ]
+}

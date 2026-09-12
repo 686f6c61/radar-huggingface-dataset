@@ -35,8 +35,8 @@
     "base_model:quantized:z-lab/Qwen3-8B-DFlash-b16",
     "conversational"
   ],
-  "likes": 0,
-  "downloads_30d": 448,
+  "likes": 1,
+  "downloads_30d": 461,
   "trending_score": 0,
   "parameters": 1048626432,
   "parameters_human": "1.05B",

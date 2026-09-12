@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Harish241412/llama-3.2-1b-from-scratch",
+  "slug": "harish241412-llama-3-2-1b-from-scratch",
+  "author": "Harish241412",
+  "url": "https://huggingface.co/Harish241412/llama-3.2-1b-from-scratch",
+  "created_at": "2026-09-11T16:56:34.000Z",
+  "updated_at": "2026-09-12T07:07:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "llama",
+    "llama-3.2",
+    "from-scratch",
+    "llm",
+    "causal-language-model",
+    "transformer",
+    "inference",
+    "base_model:meta-llama/Llama-3.2-1B",
+    "base_model:finetune:meta-llama/Llama-3.2-1B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2742271462,
+  "storage_human": "2.7 GB",
+  "base_model": "meta-llama/Llama-3.2-1B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tansik.egypt.gov.eg",
+      "url": "https://tansik.egypt.gov.eg/",
+      "snippet": "موقع التنسيق الإلكتروني لتقديم طلبات القبول بالجامعات والمعاهد المصرية."
+    },
+    {
+      "title": "تنسيق القبول بالكليات والمعاهد",
+      "url": "https://tansik.digital.gov.eg/application/main.aspx",
+      "snippet": "يوفر الموقع خدمات التنسيق الإلكتروني للقبول بالكليات والمعاهد المصرية."
+    },
+    {
+      "title": "Home Page [tansik.digital.gov.eg]",
+      "url": "https://tansik.digital.gov.eg/application/?sfnsn=scwspmo",
+      "snippet": "نبذة عن الموقع إرشادات عامة للطالب خدمات تنسيق الثانوية العامة الان التسجيل مفتوح للمرحلة الاولى نظام حديث بحد أدنى 292 للشعبة العلمية و 275.5 للشعبة الهندسية و229 للشعبة الأدبية وللنظام …"
+    },
+    {
+      "title": "Moderya | Student",
+      "url": "https://tansiksec.emis.gov.eg/%E2%80%8E/",
+      "snippet": ""
+    },
+    {
+      "title": "Home Page [www.tansiknatiga.digital.gov.eg]",
+      "url": "https://www.tansiknatiga.digital.gov.eg/",
+      "snippet": "وزارة التعليم العالي مكتب تنسـيق القبـول بالجامعـات والمعاهــد الصفحه الرسميه الوحيدة لموقع التنسيق الإلكتروني هي - tansik.digital.gov.eg تليفون 15999"
+    }
+  ]
+}

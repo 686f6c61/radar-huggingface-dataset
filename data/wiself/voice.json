@@ -30,12 +30,12 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 1356,
+  "downloads_30d": 1463,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1500914,
-  "storage_human": "2 MB",
+  "storage_bytes": 638067,
+  "storage_human": "638067 B",
   "base_model": "google/gemma-4-26B-A4B-it",
   "formats": [
     "gguf"

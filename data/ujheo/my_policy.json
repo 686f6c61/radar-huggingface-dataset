@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ujheo/my_policy",
+  "slug": "ujheo-my_policy",
+  "author": "ujheo",
+  "url": "https://huggingface.co/ujheo/my_policy",
+  "created_at": "2026-09-12T09:33:16.000Z",
+  "updated_at": "2026-09-12T09:34:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:ujheo/clean_desk",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714784,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google als Startseite festlegen - Google Suche-Hilfe",
+      "url": "https://support.google.com/websearch/answer/463?hl=de",
+      "snippet": "Wenn Sie Google als Ihre Startseite festlegen, gelangen Sie direkt zu Google, sobald Sie Ihren Browser öffnen. Startseite ändern Die …"
+    },
+    {
+      "title": "Google-Konto für Gmail erstellen - Gmail-Hilfe",
+      "url": "https://support.google.com/mail/answer/56256?hl=de",
+      "snippet": "Wichtig: Melden Sie sich von Ihrem aktuellen Konto ab, bevor Sie ein neues Google-Konto erstellen. Hier erfahren Sie, wie Sie sich …"
+    },
+    {
+      "title": "Définir Google comme moteur de recherche par défaut",
+      "url": "https://support.google.com/websearch/answer/464?hl=fr",
+      "snippet": "Pour obtenir des résultats de Google chaque fois que vous effectuez une recherche, vous pouvez en faire votre moteur de recherche …"
+    },
+    {
+      "title": "Afficher ou supprimer votre historique de navigation Chrome",
+      "url": "https://support.google.com/chrome/answer/95589?hl=fr-001&co=GENIE.Platform%3DDesktop",
+      "snippet": "Lorsque vous supprimez votre historique de navigation dans Chrome, il est également supprimé sur les appareils sur lesquels vous …"
+    },
+    {
+      "title": "Google-Hilfe",
+      "url": "https://support.google.com/?hl=de",
+      "snippet": "Falls Sie nicht auf ein Google-Produkt zugreifen können, tritt unter Umständen ein vorübergehendes Problem auf. Informationen zu …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "face00/qwen2.5-7b-security-cot",
+  "slug": "face00-qwen2-5-7b-security-cot",
+  "author": "face00",
+  "url": "https://huggingface.co/face00/qwen2.5-7b-security-cot",
+  "created_at": "2026-09-12T02:43:30.000Z",
+  "updated_at": "2026-09-12T02:54:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242694220,
+  "storage_human": "15.2 GB",
+  "base_model": "unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Uber 数月烧光全年 AI 预算，反映当前 AI 发展面临哪些深层困境？",
+      "url": "https://www.zhihu.com/question/2043390022804624380",
+      "snippet": "May 28, 2026 · Uber几个月烧光全年AI预算，微软紧急撤权限：大厂们先扛不住了TechWeb2026-05-28 14:43发布于TechWeb官方…"
+    },
+    {
+      "title": "Re: [心情] 訂單被uber司機取消 - 看板 WomenTalk - 批踢踢實業坊",
+      "url": "https://www.ptt.cc/bbs/WomenTalk/M.1575660828.A.CBC.html",
+      "snippet": "Dec 7, 2019 · A.Uber一開始是從『共享經濟』這個互利互惠的根基起家，不是乘客最大， 乘客叫了車而且司機已經在路上了，乘客隨 …"
+    },
+    {
+      "title": "[請益] 請問日月潭周邊的UBER方便度 - 看板 Nantou - 批踢踢實業坊",
+      "url": "https://www.ptt.cc/bbs/Nantou/M.1513241289.A.380.html",
+      "snippet": "Dec 14, 2017 · 請問日月潭周邊的UBER方便度 平日晚餐時間叫得到車嗎？ 國外友人要來台灣玩 兩個都不會騎機車，我也擔心城市佬 …"
+    },
+    {
+      "title": "听说 Uber对中国市场全面开放 API了？ - 知乎",
+      "url": "https://www.zhihu.com/question/36012291",
+      "snippet": "Sep 28, 2015 · 关于Uber（优步） Uber（优步）是全球领先的创新科技企业，于2010年成立于美国硅谷，目前在全球60个国家和地区 …"
+    },
+    {
+      "title": "[問題] 高雄叫uber - 看板 Kaohsiung - 批踢踢實業坊",
+      "url": "https://www.ptt.cc/bbs/Kaohsiung/M.1714613651.A.8C3.html",
+      "snippet": "May 2, 2024 · 推 robertld2 : UBER在市區都OK 最慢應該都在5分鐘左右可以確認 05/02 10:34 推 jayeee : UBER我還沒遇過會主動跟 …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Travor278/pi05-place-dual-shoes-concurrent-full",
+  "slug": "travor278-pi05-place-dual-shoes-concurrent-full",
+  "author": "Travor278",
+  "url": "https://huggingface.co/Travor278/pi05-place-dual-shoes-concurrent-full",
+  "created_at": "2026-09-12T02:04:34.000Z",
+  "updated_at": "2026-09-12T02:49:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi05",
+    "jax",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24881202839,
+  "storage_human": "24.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "freenet | Tarife in allen Netzen und günstige Handy-Angebote",
+      "url": "https://www.freenet.de/",
+      "snippet": "Bei freenet findest Du Top-Tarife, Handys und Netze nach Deinen Bedürfnissen. Sichere Dir das passende Mobilfunk-Angebot und …"
+    },
+    {
+      "title": "freenet mail: Dein VIP‑Login – schnell, direkt, werbefrei",
+      "url": "https://power.freenet.de/",
+      "snippet": "Nutze deinen VIP‑Login für freenet mail: schnell, direkt und werbefrei. freemail‑Login über http://mail.freenet.de."
+    },
+    {
+      "title": "Login freenet Mail: Dein Freemail-Login, Nachrichten & Spiele",
+      "url": "https://mail.freenet.de/",
+      "snippet": "Freemail, aktuelle Nachrichten und unterhaltsame Spiele – entdecke die Vielfalt von mail.freenet.de. Schnell und unkompliziert."
+    },
+    {
+      "title": "Login & Registrierung | freenet",
+      "url": "https://www.freenet.de/anmeldung/",
+      "snippet": "Rechnungen einsehen, Verträge verwalten und persönliche Daten bearbeiten. Hier gelangen Sie zum freenet Kundenkonto."
+    },
+    {
+      "title": "Login Mail & Cloud - components.freenet.de",
+      "url": "https://components.freenet.de/login/v20/iframe/login.html",
+      "snippet": "1GB E-Mail Speicher Cloud mit 2GB Speicher Kostenlos registrieren"
+    }
+  ]
+}

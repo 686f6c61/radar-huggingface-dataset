@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "lokeshe09/gemma-4-31B-it-SFT_OCRRRRRR",
+  "slug": "lokeshe09-gemma-4-31b-it-sft_ocrrrrrr",
+  "author": "lokeshe09",
+  "url": "https://huggingface.co/lokeshe09/gemma-4-31B-it-SFT_OCRRRRRR",
+  "created_at": "2026-09-12T10:33:19.000Z",
+  "updated_at": "2026-09-12T10:33:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/gemma-4-31B-it",
+    "base_model:finetune:unsloth/gemma-4-31B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32169626,
+  "storage_human": "32 MB",
+  "base_model": "unsloth/gemma-4-31B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MLOps — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/MLOps",
+      "snippet": "Semblable aux approches DevOps ou DataOps, MLOps cherche à accroître l'automatisation et à améliorer la qualité des modèles de …"
+    },
+    {
+      "title": "Qu’est-ce que le MLOps? - IBM",
+      "url": "https://www.ibm.com/fr-fr/think/topics/mlops",
+      "snippet": "Le MLOps désigne l’ensemble des pratiques permettant aux entreprises de créer, déployer et opérer rapidement des modèles de …"
+    },
+    {
+      "title": "MLOps : de quoi s’agit-il et quels sont ses enjeux - GitLab",
+      "url": "https://about.gitlab.com/fr-fr/blog/what-is-mlops/",
+      "snippet": "Le MLOps (Machine Learning Operations) désigne l’ensemble des pratiques qui permettent de déployer, surveiller et maintenir des …"
+    },
+    {
+      "title": "MLOps - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/MLOps",
+      "snippet": "MLOps or ML Ops is a paradigm that aims to deploy and maintain machine learning models in production reliably and efficiently. It …"
+    },
+    {
+      "title": "MLOps : industrialiser le cycle de vie du Machine Learning",
+      "url": "https://blog.stephane-robert.info/docs/mlops/",
+      "snippet": "Oct 6, 2025 · Le MLOps, c'est quoi ? Le MLOps industrialise le cycle de vie d'un modèle de machine learning, de l'entraînement au …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "SG161222/RealVisXL_V5.0",
+  "slug": "sg161222-realvisxl_v5-0",
+  "author": "SG161222",
+  "url": "https://huggingface.co/SG161222/RealVisXL_V5.0",
+  "created_at": "2024-08-05T03:49:17.000Z",
+  "updated_at": "2024-10-08T16:34:25.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "license:openrail++",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "region:us"
+  ],
+  "likes": 222,
+  "downloads_30d": 290473,
+  "trending_score": 8,
+  "parameters": 2567463684,
+  "parameters_human": "2.57B",
+  "storage_bytes": 84188866730,
+  "storage_human": "84.2 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SG161222/RealVisXL_V5.0 - Hugging Face",
+      "url": "https://huggingface.co/SG161222/RealVisXL_V5.0",
+      "snippet": "02.03.2026 ... The model is aimed at photorealism. Can produce sfw and nsfw images of decent quality. CivitAI Page: https://civitai.com/models/139562?"
+    },
+    {
+      "title": "RealVisXL v5.0 VRAM Requirements — ComfyUI, A1111 | WillItRunAI",
+      "url": "https://willitrunai.com/image-models/realvisxl-v5",
+      "snippet": "RealVisXL v5.0. Stable. by SG161222. The most popular photorealistic SDXL fine-tune on CivitAI. Excels at lifelike portraits, landscapes, and product ..."
+    },
+    {
+      "title": "offgrid-ai/realvisxl-v5.0-lightning-GGUF - Hugging Face",
+      "url": "https://huggingface.co/offgrid-ai/realvisxl-v5.0-lightning-GGUF",
+      "snippet": "Built for Off Grid AI Desktop — a private, fully on-device AI app (offgridmobileai.co). Credit & license. Original model: https://huggingface.co/SG161222/ ..."
+    },
+    {
+      "title": "RealVisXL V5.0 - You NEED to try this!!! - YouTube",
+      "url": "https://www.youtube.com/watch?v=lEgbGftVyw8",
+      "snippet": "17.09.2024 ... The RealVisXL V5.0 Model is abolutely stunning. And with only 6 ... AI Newsletter: https://oliviotutorials.podia.com/newsletter Support ..."
+    },
+    {
+      "title": "RealVisXL V5.0 | Stable Diffusion XL Checkpoint - Civitai",
+      "url": "https://civitai.com/models/139562/realvisxl-v50",
+      "snippet": "02.09.2024 ... Check my exclusive models on Mage: ParagonXL / NovaXL / NovaXL Lightning / NovaXL V2 / NovaXL Pony / NovaXL Pony Lightning / RealDreamXL ..."
+    }
+  ]
+}

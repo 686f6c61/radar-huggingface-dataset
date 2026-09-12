@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Jab1718/qwen3.8-flash-coder-26gb-gguf",
+  "slug": "jab1718-qwen3-8-flash-coder-26gb-gguf",
+  "author": "Jab1718",
+  "url": "https://huggingface.co/Jab1718/qwen3.8-flash-coder-26gb-gguf",
+  "created_at": "2026-09-10T07:21:41.000Z",
+  "updated_at": "2026-09-11T01:40:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "vi",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "ollama",
+    "moe",
+    "qwen",
+    "code",
+    "coding-agent",
+    "quantization",
+    "text-generation",
+    "en",
+    "vi",
+    "zh",
+    "base_model:Jab1718/qwen3.8-flash-coder-85gb-bf16",
+    "base_model:quantized:Jab1718/qwen3.8-flash-coder-85gb-bf16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 9,
+  "downloads_30d": 3461,
+  "trending_score": 9,
+  "parameters": 42620341120,
+  "parameters_human": "42.62B",
+  "storage_bytes": 73773068992,
+  "storage_human": "73.8 GB",
+  "base_model": "Jab1718/qwen3.8-flash-coder-85gb-bf16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "مساعدة حساب Google",
+      "url": "https://support.google.com/accounts/?hl=ar",
+      "snippet": "مركز المساعدة حساب Google، حيث يمكنك الحصول على مساعدة لإدارة واسترداد حساب Google الخاص بك، فضلا عن نصائح لتقصي المشاكل والمحافظة على حسابك آمنا."
+    },
+    {
+      "title": "running qwen3.8 flash next models entirely on 24gb gpu - Reddit",
+      "url": "https://www.reddit.com/r/unsloth/comments/1wcdekk/running_qwen38_flash_next_models_entirely_on_24gb/",
+      "snippet": "vor 2 Tagen ... Dear Professional_Lie8505. Your solution really interested me. I'm unable to run the Jab1718/qwen3.8-flash-coder-26gb-gguf model on an RTX ..."
+    },
+    {
+      "title": "كيفية استرداد حسابك على Google أو Gmail",
+      "url": "https://support.google.com/accounts/answer/7682439?hl=ar",
+      "snippet": "حرصًا على أمانك، لا يمكنك الاتصال بفريق دعم Google للحصول على مساعدة بشأن تسجيل الدخول إلى حسابك. ولا نعمل مع أي خدمة تزعم تقديمها الدعم في ما يتعلّق بكلمات المرور أو الحسابات."
+    },
+    {
+      "title": "التعوذات والأذكار النبوية في الفتن والكروب - الإسلام سؤال وجواب",
+      "url": "https://islamqa.info/ar/answers/21614",
+      "snippet": "وعن ابن عباس رضي الله عنهما: أن رسول الله صلى الله عليه وسلم كان يقول عند الكرب: (لا إله إلا الله العظيم الحليم ، لا إله إلا الله رب العرش العظيم، لا إله إلا الله رب السموات ورب الأرض ورب العرش ..."
+    },
+    {
+      "title": "صيغة إقامة الصلاة - الإسلام سؤال وجواب",
+      "url": "https://islamqa.info/ar/answers/10458",
+      "snippet": "الحمد لله والصلاة والسلام على رسول الله، وبعد: الصيغة الأولى لإقامة الصلاة وردت صيغة إقامة الصلاة بصور متعددة عن النبي صلى الله عليه وسلم. الصيغة الأولى (إحدى عشرة جملة): اللَّهُ أَكْبَرُ، اللَّهُ …"
+    }
+  ]
+}

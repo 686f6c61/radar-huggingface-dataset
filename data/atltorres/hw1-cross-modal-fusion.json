@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "atltorres/hw1-cross-modal-fusion",
+  "slug": "atltorres-hw1-cross-modal-fusion",
+  "author": "atltorres",
+  "url": "https://huggingface.co/atltorres/hw1-cross-modal-fusion",
+  "created_at": "2026-09-12T10:11:14.000Z",
+  "updated_at": "2026-09-12T10:11:19.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "cross-modal-fusion",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "各大软件公司如何发现企业/个人使用了盗版软件？ - 知乎",
+      "url": "https://www.zhihu.com/question/341795543",
+      "snippet": "比如网上经常看到Adobe，CoreDRAW等公司给某公司发律师函的情况。请问他们是通过何种技术或者手段锁定某…"
+    },
+    {
+      "title": "闲鱼和转转哪个比较靠谱？ - 知乎",
+      "url": "https://www.zhihu.com/question/65313130",
+      "snippet": "转转一生黑，说一下本人被坑的经历吧。 11.8号，本人在转转平台出售了一台电脑，挂上后被人秒拍，被骗子讲价后3300包邮卖出。 …"
+    },
+    {
+      "title": "Jira & Confluence部署 - 个人文章 - SegmentFault 思否",
+      "url": "https://segmentfault.com/a/1190000039264694",
+      "snippet": "Feb 23, 2021 · Confluence安装配置 Confluence简介 Confluence是一个专业的企业知识管理与协同软件，也可以用于构建企业wiki。 …"
+    },
+    {
+      "title": "confluence宏插件开发03-Hello World宏开发 - 个人文章",
+      "url": "https://segmentfault.com/a/1190000039319451",
+      "snippet": "Mar 2, 2021 · 使用Idea的时候有一个注意事项，就是要修改maven的 setting.xml文件。因为confluence使用的自己的服务 …"
+    },
+    {
+      "title": "Assurance vie - contrat CONFLUENCE CR- AGRICOLE",
+      "url": "https://droit-finances.commentcamarche.com/forum/affich-7861550-assurance-vie-contrat-confluence-cr-agricole",
+      "snippet": "Bonsoir - Mon père né en 1931, avait un contrat confluence souscrit le 20.10.1994 - A son décès, en début d'année, le credit agricole …"
+    }
+  ]
+}

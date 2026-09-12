@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ImKyungjin/pi0-stackcube-detour-noise-70pct-40ep-convex",
+  "slug": "imkyungjin-pi0-stackcube-detour-noise-70pct-40ep-convex",
+  "author": "ImKyungjin",
+  "url": "https://huggingface.co/ImKyungjin/pi0-stackcube-detour-noise-70pct-40ep-convex",
+  "created_at": "2026-09-12T02:02:43.000Z",
+  "updated_at": "2026-09-12T02:05:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi0",
+    "robotics",
+    "dataset:taewonkoo/stack_cube_detour_noise_70pct_40ep",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 7011556176,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to take a scrolling screenshot on Windows 11 (full screen)?",
+      "url": "https://techcommunity.microsoft.com/discussions/windows11/how-to-take-a-scrolling-screenshot-on-windows-11-full-screen/4152593",
+      "snippet": "May 26, 2024 · Daphnere Here is the step-by-step tutorial on how to capture long screenshots on your Windows 10/11 laptop. Taking …"
+    },
+    {
+      "title": "How to convert or turn speech to text on my computer?",
+      "url": "https://techcommunity.microsoft.com/discussions/windows11/how-to-convert-or-turn-speech-to-text-on-my-computer/4524399",
+      "snippet": "Jun 1, 2026 · Google Docs Voice Typing is a web-based feature that lets you speech to text and add formatting commands directly …"
+    },
+    {
+      "title": "Windscreen - X1/9 Wiki - XWeb Forums",
+      "url": "https://xwebforums.com/wiki/index.php?title=Windscreen",
+      "snippet": "Go to the hardware store and purchase a razor knife that is used for wallpapering. It has a plastic body with a long razor that you can …"
+    },
+    {
+      "title": "Breather | XWeb Forums",
+      "url": "https://xwebforums.com/forum/index.php?threads/breather.7405/",
+      "snippet": "Mar 3, 2010 · They route the breather tube into the exhaust to help extract the blowby. Of course if you happen to overfill the oil and …"
+    },
+    {
+      "title": "How to fix Windows 11 system using too much data | Microsoft …",
+      "url": "https://techcommunity.microsoft.com/discussions/windows11/how-to-fix-windows-11-system-using-too-much-data/4522242",
+      "snippet": "May 22, 2026 · Here we are talking about how to fix Windows 11 system using too much data. If you want a more aggressive cleanup …"
+    }
+  ]
+}

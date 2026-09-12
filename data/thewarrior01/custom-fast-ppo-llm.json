@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "TheWarrior01/custom-fast-ppo-llm",
+  "slug": "thewarrior01-custom-fast-ppo-llm",
+  "author": "TheWarrior01",
+  "url": "https://huggingface.co/TheWarrior01/custom-fast-ppo-llm",
+  "created_at": "2026-09-12T09:30:16.000Z",
+  "updated_at": "2026-09-12T09:30:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Porady - Onet.poczta - CCM",
+      "url": "https://pl.ccm.net/faq/onet-poczta-269",
+      "snippet": "Poczta Onet - jak założyć konto e-mail Poczta Onet jest jedną z najbardziej popularnych i darmowych skrzynek... Czytaj dalej"
+    },
+    {
+      "title": "Onet poczta [Rozwiązany] - CCM",
+      "url": "https://pl.ccm.net/forum/affich-22350-onet-poczta",
+      "snippet": "Oct 14, 2017 · Onet Poczta - aplikacja e-mail Do pobrania - Oprogramowanie Poczta Onet - jak założyć konto e-mail Praktyczne …"
+    },
+    {
+      "title": "Pobierz najnowszą wersję AbiWord za darmo po polsku z CCM - CCM",
+      "url": "https://pl.ccm.net/download/pobierz-133-abiword",
+      "snippet": "Oct 22, 2020 · AbiWord jest programem stworzonym specjalnie na potrzeby edycji tekstu, w kt&oacute;rym znajdziemy wszystkie …"
+    },
+    {
+      "title": "Télécharger eMule (gratuit) - CCM",
+      "url": "https://pl.ccm.net/download/pobierz-157-emule",
+      "snippet": "Aug 2, 2017 · eMule jest jednym z najczęściej używanych program&oacute;w peer-to-peer (p2p) open-source na świecie. Korzysta z …"
+    },
+    {
+      "title": "Pobierz najnowszą wersję Magic ISO za darmo po polsku z CCM - CCM",
+      "url": "https://pl.ccm.net/download/pobierz-1880-magic-iso",
+      "snippet": "Oct 21, 2020 · Magic ISO to dobry spos&oacute;b tworzenia kopii zapasowych płyt CD i DVD. Tworzenie kopii: Magic ISO oferuje …"
+    }
+  ]
+}

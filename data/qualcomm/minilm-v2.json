@@ -5,7 +5,7 @@
   "author": "qualcomm",
   "url": "https://huggingface.co/qualcomm/MiniLM-v2",
   "created_at": "2026-07-01T21:10:05.000Z",
-  "updated_at": "2026-09-10T04:54:51.000Z",
+  "updated_at": "2026-09-11T20:45:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "JPQ24/logicv5-GGUF-1b",
+  "slug": "jpq24-logicv5-gguf-1b",
+  "author": "JPQ24",
+  "url": "https://huggingface.co/JPQ24/logicv5-GGUF-1b",
+  "created_at": "2026-09-12T01:44:29.000Z",
+  "updated_at": "2026-09-12T01:44:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1235814432,
+  "parameters_human": "1.24B",
+  "storage_bytes": 807694496,
+  "storage_human": "808 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tracking | UPS - United States",
+      "url": "https://www.ups.com/track?tracknum=tracking&loc=en_US&msockid=22102c719c9c63a000423ba39db36238",
+      "snippet": "Track one or multiple packages with UPS Tracking, use your tracking number to track the status of your package."
+    },
+    {
+      "title": "Package Tracking – Free Real-Time Tracking Worldwide | 17TRACK",
+      "url": "https://www.17track.net/en/tracking",
+      "snippet": "Track packages worldwide with any tracking number. Get real-time delivery updates from 3,300+ carriers. Free tracking, no login …"
+    },
+    {
+      "title": "Tracking - DHL - United States of America",
+      "url": "https://www.dhl.com/us-en/home/tracking.html",
+      "snippet": "International tracking of your DHL shipment: have your DHL tracking number at hand to track and trace."
+    },
+    {
+      "title": "Global Tracking: Package & Parcel Tracking | Track.Global",
+      "url": "https://track.global/en",
+      "snippet": "Worldwide tracking number lookup across 2400+ carriers and marketplaces (USPS, UPS, FedEx, Amazon, AliExpress) with real-time …"
+    },
+    {
+      "title": "Track a Package - The UPS Store",
+      "url": "https://www.theupsstore.com/tools/track-a-package",
+      "snippet": "The UPS Store helps you track your packages with multiple carriers. Stay on top of all of your important deliveries with package …"
+    }
+  ]
+}

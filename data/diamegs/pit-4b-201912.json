@@ -5,7 +5,7 @@
   "author": "Diamegs",
   "url": "https://huggingface.co/Diamegs/PIT-4B-201912",
   "created_at": "2026-04-23T15:33:30.000Z",
-  "updated_at": "2026-08-23T10:41:08.000Z",
+  "updated_at": "2026-09-11T21:25:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 609,
+  "downloads_30d": 612,
   "trending_score": 0,
   "parameters": 4438622208,
   "parameters_human": "4.44B",

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "abigailhlee06/swin-t-contrastive-2024",
+  "slug": "abigailhlee06-swin-t-contrastive-2024",
+  "author": "abigailhlee06",
+  "url": "https://huggingface.co/abigailhlee06/swin-t-contrastive-2024",
+  "created_at": "2026-09-12T09:52:54.000Z",
+  "updated_at": "2026-09-12T09:52:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quote of the Day — A Fresh Thought for Today",
+      "url": "https://bingquiz.com/quote-of-the-day/",
+      "snippet": "Aug 14, 2026 · Start today with a meaningful quote chosen to spark a positive thought, fresh perspective, or little moment of …"
+    },
+    {
+      "title": "Quote of the Day - BrainyQuote",
+      "url": "https://www.brainyquote.com/quote_of_the_day",
+      "snippet": "1 day ago · Share five inspirational Quotes of the Day with friends on Facebook, Twitter, and blogs. Enjoy our Brainy, Funny, Love, …"
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/copilotsearch?q=quotes+of+the+day",
+      "snippet": "由於此網站的設置，我們無法提供該頁面的具體描述。"
+    },
+    {
+      "title": "www.bingquote.com",
+      "url": "https://www.bingquote.com/home",
+      "snippet": ""
+    },
+    {
+      "title": "Quote of the Day | 1 Powerful Quote To Inspire Daily",
+      "url": "https://quotesoftheday.org/",
+      "snippet": "4 days ago · What Is a Quote of the Day? A Quote of the Day is a short, memorable message that can bring motivation, comfort, …"
+    }
+  ]
+}

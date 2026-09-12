@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "drowzeys/DeepSeek-V4.1-Flash-TR3-Hybrid",
+  "slug": "drowzeys-deepseek-v4-1-flash-tr3-hybrid",
+  "author": "drowzeys",
+  "url": "https://huggingface.co/drowzeys/DeepSeek-V4.1-Flash-TR3-Hybrid",
+  "created_at": "2026-09-12T02:32:56.000Z",
+  "updated_at": "2026-09-12T05:50:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v41",
+    "text-generation",
+    "deepseek",
+    "moe",
+    "exl3",
+    "mxfp4",
+    "hybrid-quant",
+    "dgx-spark",
+    "image-text-to-text",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 650244189394,
+  "parameters_human": "650.24B",
+  "storage_bytes": 440110181950,
+  "storage_human": "440.1 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kero Kero Bonito – Sick Beat Lyrics | Genius Lyrics",
+      "url": "https://genius.com/Kero-kero-bonito-sick-beat-lyrics",
+      "snippet": "Sep 30, 2013 · Sick Beat Lyrics The lyrics are about a young woman’s realization that her life can be her own, that her own path is …"
+    },
+    {
+      "title": "Kero Kero Bonito - Sick Beat Lyrics | AZLyrics.com",
+      "url": "https://www.azlyrics.com/lyrics/kerokerobonito/sickbeat.html",
+      "snippet": "Windows 98, remember those days? Time warp! I'm 22 years old. Kero Kero Bonito \"Sick Beat\": It's KKB! Let's go! 走って登って撃っ …"
+    },
+    {
+      "title": "Sick Beat (Romanized) – Kero Kero Bonito | Genius Lyrics",
+      "url": "https://genius.com/Genius-romanizations-kero-kero-bonito-sick-beat-romanized-lyrics",
+      "snippet": "Sep 30, 2013 · Kero Kero Bonito - Sick Beat (Romanized) Lyrics: It's KKB, let's go / Hashitte nobotte utte tonde / Tomb Raider ni …"
+    },
+    {
+      "title": "Sick Beat lyrics by Kero Kero Bonito - original song full text ...",
+      "url": "https://www.lyricsmode.com/lyrics/k/kero_kero_bonito/sick_beat.html",
+      "snippet": "Original lyrics of Sick Beat song by Kero Kero Bonito. Explain your version of song meaning, find more of Kero Kero Bonito lyrics. …"
+    },
+    {
+      "title": "Kero Kero Bonito - Sick Beat lyrics",
+      "url": "https://lyricstranslate.com/en/kero-kero-bonito-sick-beat-lyrics.html",
+      "snippet": "Windows 98, remember those days? Time warp! I'm 22 years old. Sick Beat lyrics: [Verse 1] / It's KKB! Let's go! / 走って登って撃っ …"
+    }
+  ]
+}

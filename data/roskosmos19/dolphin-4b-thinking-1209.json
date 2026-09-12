@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "roskosmos19/Dolphin-4B-Thinking-1209",
+  "slug": "roskosmos19-dolphin-4b-thinking-1209",
+  "author": "roskosmos19",
+  "url": "https://huggingface.co/roskosmos19/Dolphin-4B-Thinking-1209",
+  "created_at": "2026-09-12T09:50:56.000Z",
+  "updated_at": "2026-09-12T10:29:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404654,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Kurze Jeans Teenager Mädchen",
+      "url": "https://www.amazon.de/kurze-jeans-teenager-m%C3%A4dchen/s?k=kurze+jeans+teenager+m%C3%A4dchen",
+      "snippet": "1-48 von 307 Ergebnissen oder Vorschlägen für \"kurze jeans teenager mädchen\" Ergebnisse Erfahre mehr über diese Ergebnisse. …"
+    },
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Jeans Shorts Kinder Mädchen",
+      "url": "https://www.amazon.de/jeans-shorts-kinder-m%C3%A4dchen/s?k=jeans+shorts+kinder+m%C3%A4dchen",
+      "snippet": "1-48 von 287 Ergebnissen oder Vorschlägen für \"jeans shorts kinder mädchen\" Ergebnisse Erfahre mehr über diese Ergebnisse. Auf …"
+    },
+    {
+      "title": "Jeans Mädchenshorts online kaufen | OTTO",
+      "url": "https://www.otto.de/maedchen/mode/hosen/shorts/?material=jeans",
+      "snippet": "Diese Variante eignet sich besonders für Mädchen, die viel Bewegungsfreiheit benötigen oder eine entspannte Silhouette …"
+    },
+    {
+      "title": "Denim-Shorts für Mädchen | ZARA Deutschland",
+      "url": "https://www.zara.com/de/de/kids-girl-shorts-denim-l4259.html",
+      "snippet": "Entdecken Sie die schönsten und bequemsten Denim Shorts für Mädchen bei ZARA online. Probieren Sie sie zu Hause an."
+    },
+    {
+      "title": "Kurze Mädchenjeans online kaufen | OTTO",
+      "url": "https://www.otto.de/maedchen/mode/jeans/?laenge=kurz",
+      "snippet": "Bis zu 40% reduziert Kurze Mädchenjeans online kaufen bei OTTO » Große Auswahl Aktuelle Trends Beliebte Marken Top Qualität » …"
+    }
+  ]
+}

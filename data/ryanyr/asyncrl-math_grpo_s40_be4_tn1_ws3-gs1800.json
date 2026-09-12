@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "RyanYr/asyncrl-math_grpo_s40_be4_tn1_ws3-gs1800",
+  "slug": "ryanyr-asyncrl-math_grpo_s40_be4_tn1_ws3-gs1800",
+  "author": "RyanYr",
+  "url": "https://huggingface.co/RyanYr/asyncrl-math_grpo_s40_be4_tn1_ws3-gs1800",
+  "created_at": "2026-09-12T09:57:40.000Z",
+  "updated_at": "2026-09-12T09:58:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21903814494,
+  "storage_human": "21.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kann man 2 T-online e-mail Konten miteinander verbinden?",
+      "url": "https://telekomhilft.telekom.de/conversations/festnetz-internet/kann-man-2-t-online-e-mail-konten-miteinander-verbinden/6687abd54ae73561da59af18",
+      "snippet": "Wenn die Übertragung aller E-Mails abgeschlossen ist (das kann eine Weile dauern), können Sie im Thunderbird das bisherige …"
+    },
+    {
+      "title": "Ich kann t-online mail nicht in outlook einbinden - Telekom hilft",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/ich-kann-t-online-mail-nicht-in-outlook-einbinden/668996bf4ae73561da548f73",
+      "snippet": "Ich habe jetzt alles probiert und ich bekomme mein t-online nicht in outlook integriert. Nur die Antwort da hat was nicht geklappt ob …"
+    },
+    {
+      "title": "‎Outlook (New) einrichten mit T-Online-Konto verlangt zusätzliche ...",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/outlook-new-einrichten-mit-t-online-konto-verlangt-zus%C3%A4tzliche-synchronisation-mit-microsoft-cloud/66896d7c4ae73561daf521cb",
+      "snippet": "Server: securesmtp.t-online.de Port: 465 oder 587 Sicherheit: SSL Rückmeldung von Outlook: Um Ihr IMAP Konto zu Outlook …"
+    },
+    {
+      "title": "Direkte Links im E-Mail-Center | Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/direkte-links-im-e-mail-center/6687df7b4ae73561daffd6d6",
+      "snippet": "Im E-Mail-Center https://email.t-online.de findet man schnell die Ordner mit den E-Mails wie Posteingang etc. &nbsp; Aber es gibt …"
+    },
+    {
+      "title": "Login E-Mail Center | Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/login-e-mail-center/6685ce014ae73561da44a09f",
+      "snippet": "Hallo Telekom,&nbsp;seit Kurzem ist mir ein direkter Login ins E-Mail-Center über \"https://email.t-online.de/em\" nicht mehr möglich; …"
+    }
+  ]
+}

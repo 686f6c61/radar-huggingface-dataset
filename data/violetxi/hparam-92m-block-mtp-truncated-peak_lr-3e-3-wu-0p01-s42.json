@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "violetxi/hparam-92m-block-mtp-truncated-peak_lr-3e-3-wu-0p01-s42",
+  "slug": "violetxi-hparam-92m-block-mtp-truncated-peak_lr-3e-3-wu-0p01-s42",
+  "author": "violetxi",
+  "url": "https://huggingface.co/violetxi/hparam-92m-block-mtp-truncated-peak_lr-3e-3-wu-0p01-s42",
+  "created_at": "2026-09-05T00:52:00.000Z",
+  "updated_at": "2026-09-12T02:34:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "looped_block_mtp",
+    "text-generation",
+    "chess",
+    "block-mtp",
+    "truncated-bptt",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 92138496,
+  "parameters_human": "92.1M",
+  "storage_bytes": 78140951881,
+  "storage_human": "78.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pagina di login - .: Pilots :. Port in / out traffic system",
+      "url": "https://br.pilotsystem.it/authentication/login.php",
+      "snippet": "Codice Società Username Password Buoni / Bills"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ConwayResearch/Underdog-Woof-2B-1.1",
+  "slug": "conwayresearch-underdog-woof-2b-1-1",
+  "author": "ConwayResearch",
+  "url": "https://huggingface.co/ConwayResearch/Underdog-Woof-2B-1.1",
+  "created_at": "2026-09-12T10:09:35.000Z",
+  "updated_at": "2026-09-12T10:13:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "4bit",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 1416035216,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Install or Uninstall Microsoft WordPad in Windows 10",
+      "url": "https://www.tenforums.com/tutorials/140422-install-uninstall-microsoft-wordpad-windows-10-a.html",
+      "snippet": "May 16, 2020 · It is more advanced than Microsoft Notepad but simpler than Microsoft Word. Starting with Windows 10 build 18980, …"
+    },
+    {
+      "title": "Word .doc and .docx files open minimized and will not maximize",
+      "url": "https://www.tenforums.com/general-support/86427-word-doc-docx-files-open-minimized-will-not-maximize.html",
+      "snippet": "Jun 9, 2017 · This happens with any new or saved .doc or .docx files. PDFs and Excel files open fine with no problems I tried to repair …"
+    },
+    {
+      "title": "How do you change the line length in Microsoft Word?",
+      "url": "https://www.answers.com/computers/How_do_you_change_the_line_length_in_Microsoft_Word",
+      "snippet": "Feb 13, 2025 · Oh, dude, changing the line length in Microsoft Word is like changing your mind about what Pizza topping you want. …"
+    },
+    {
+      "title": "What font on word looks like a pixel font? - Answers",
+      "url": "https://www.answers.com/computers/What_font_on_word_looks_like_a_pixel_font",
+      "snippet": "Apr 17, 2025 · A font in Microsoft Word that resembles a pixel font is \"Courier New.\" This monospaced typeface has a blocky, retro …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/ja-jp/msoffice/forum/msoffice_word-mso_other/ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â°ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¹/d891c1c3-9a36-4f64-a125-27ed2243e629",
+      "snippet": ""
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "98sd7fc9sdf/cowgirl",
+  "slug": "98sd7fc9sdf-cowgirl",
+  "author": "98sd7fc9sdf",
+  "url": "https://huggingface.co/98sd7fc9sdf/cowgirl",
+  "created_at": "2026-09-12T02:19:58.000Z",
+  "updated_at": "2026-09-12T02:21:10.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:ponpoke/flux2-klein-9b-uncensored-text-encoder",
+    "base_model:adapter:ponpoke/flux2-klein-9b-uncensored-text-encoder",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155128005,
+  "storage_human": "155 MB",
+  "base_model": "ponpoke/flux2-klein-9b-uncensored-text-encoder",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Are there different styles available for the AI Image Generator?",
+      "url": "https://www.promeai.pro/ai-image-generation/cowgirl",
+      "snippet": "Balanced model combining speed and quality for versatile image creation. ... Strong semantic understanding powers superior text rendering of complex content. ... Hyperrealistic, architecturally compatible, avoids \"AI look\" to blur real-AI lines."
+    },
+    {
+      "title": "Brandenburger Tor – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Brandenburger_Tor",
+      "snippet": "Das Brandenburger Tor in Berlin ist ein frühklassizistisches Triumphtor, das an der Westflanke des quadratischen Pariser Platzes im …"
+    },
+    {
+      "title": "98sd7fc9sdf/cowgirl · Hugging Face",
+      "url": "https://huggingface.co/98sd7fc9sdf/cowgirl",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Brandenburger Tor in Berlin: Infos, Events & mehr | visitBerlin.de",
+      "url": "https://www.visitberlin.de/de/brandenburger-tor",
+      "snippet": "Seit der deutschen Teilung und dem Mauerbau im Jahr 1961 stand das Brandenburger Tor in Ost-Berlin im Sperrgebiet, die Berliner …"
+    },
+    {
+      "title": "S+U Brandenburger Tor: Haltestelleninfo | BVG",
+      "url": "https://www.bvg.de/de/verbindungen/stationsuebersicht/s-u-brandenburger-tor",
+      "snippet": "1 day ago · Haltestelle S+U Brandenburger Tor: Erfahre alles über Abfahrtszeiten, Umstiegsmöglichkeiten und aktuellen …"
+    }
+  ]
+}

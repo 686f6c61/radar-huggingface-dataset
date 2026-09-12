@@ -5,7 +5,7 @@
   "author": "nyxspecter4",
   "url": "https://huggingface.co/nyxspecter4/kin-sft-lora",
   "created_at": "2026-03-27T06:23:12.000Z",
-  "updated_at": "2026-09-11T01:23:34.000Z",
+  "updated_at": "2026-09-11T23:13:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -43,7 +43,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1569,
+  "downloads_30d": 1757,
   "trending_score": 0,
   "parameters": 3089625088,
   "parameters_human": "3.09B",

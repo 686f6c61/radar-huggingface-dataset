@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Brunosil22/Orena_SEGMENT_Track_Qwen3_VL_8B_finetuned",
+  "slug": "brunosil22-orena_segment_track_qwen3_vl_8b_finetuned",
+  "author": "Brunosil22",
+  "url": "https://huggingface.co/Brunosil22/Orena_SEGMENT_Track_Qwen3_VL_8B_finetuned",
+  "created_at": "2026-09-12T10:18:44.000Z",
+  "updated_at": "2026-09-12T10:21:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3-vl",
+    "lora",
+    "medical-video-vqa",
+    "orena-focus",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 205492968,
+  "storage_human": "205 MB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanair",
+      "url": "https://www.ryanair.com/it/it",
+      "snippet": "Book direct at the official Ryanair.com website to guarantee that you get the best prices on Ryanair's cheap flights."
+    },
+    {
+      "title": "Italian - Ryanair",
+      "url": "https://www.ryanair.com/flights/it/it",
+      "snippet": "Ryanair prende il viaggio seriamente. Dall'imbarco prioritario al bagaglio extra in stiva alle strutture di Fast Track - Siamo “Always …"
+    },
+    {
+      "title": "Careers – Ryanair Careers",
+      "url": "https://careers.ryanair.com/",
+      "snippet": "Ryanair is an equal opportunities employer and does not discriminate on the basis of race, sex, colour, religion, age, national origin, …"
+    },
+    {
+      "title": "Ryanair’s Bag Policy - Ryanair Help Centre",
+      "url": "https://help.ryanair.com/hc/en-gb/articles/12888036565521-Ryanair-s-Bag-Policy",
+      "snippet": "Ryanair’s Bag Policy All fares include one small personal bag (40 x 30 x 20 cm) that must fit under the seat. Additional options …"
+    },
+    {
+      "title": "Zasady przewozu bagażu – Centrum pomocy - help.ryanair.com",
+      "url": "https://help.ryanair.com/hc/pl/sections/12489178346129-Zasady-przewozu-baga%C5%BCu",
+      "snippet": "Zasady przewozu bagażu Ryanair Wszystkie taryfy obejmują jedną małą torbę osobistą (40 x 30 x 20 cm) na pokład. Dostępne są …"
+    }
+  ]
+}

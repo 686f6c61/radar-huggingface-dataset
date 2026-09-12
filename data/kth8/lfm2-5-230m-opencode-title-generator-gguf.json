@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "kth8/LFM2.5-230M-OpenCode-Title-Generator-GGUF",
+  "slug": "kth8-lfm2-5-230m-opencode-title-generator-gguf",
+  "author": "kth8",
+  "url": "https://huggingface.co/kth8/LFM2.5-230M-OpenCode-Title-Generator-GGUF",
+  "created_at": "2026-09-12T10:24:42.000Z",
+  "updated_at": "2026-09-12T10:25:02.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "sft",
+    "trl",
+    "unsloth",
+    "liquid",
+    "lfm2.5",
+    "text-generation",
+    "en",
+    "dataset:kth8/title-generation-10000x",
+    "base_model:kth8/LFM2.5-230M-OpenCode-Title-Generator",
+    "base_model:quantized:kth8/LFM2.5-230M-OpenCode-Title-Generator",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 229693184,
+  "parameters_human": "229.7M",
+  "storage_bytes": 861889440,
+  "storage_human": "862 MB",
+  "base_model": "kth8/LFM2.5-230M-OpenCode-Title-Generator",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Best 15 Brown Green Color Palette Combinations",
+      "url": "https://piktochart.com/blog/brown-green-color-palette/",
+      "snippet": "Apr 21, 2026 · Discover the top 15 brown and green color palette combinations to elevate your design projects with nature-inspired …"
+    },
+    {
+      "title": "Discover 62 Green and Brown: Web Design Inspiration and",
+      "url": "https://www.pinterest.com/dotcomglobal/green-and-brown-web-design-inspiration/",
+      "snippet": "A collection of inspirational examples of green and brown themed websites. If you are looking to design a website specifically with this …"
+    },
+    {
+      "title": "Green and Brown Color Palettes - ColorKit",
+      "url": "https://colorkit.co/palettes/green+brown/",
+      "snippet": "Explore brown and green palettes that spark earthy, modern designs. Use ready color combos for branding, UI, and art. Try them now."
+    },
+    {
+      "title": "Websites with a Green Color Palette That Look Amazing",
+      "url": "https://muffingroup.com/blog/green-color-palette/",
+      "snippet": "Aug 29, 2025 · This collection of website design examples using a green color palette breaks down what actually works across …"
+    },
+    {
+      "title": "30+ Well-Designed Websites With Brown Color (2026)",
+      "url": "https://www.sitebuilderreport.com/inspiration/brown-websites",
+      "snippet": "Jan 7, 2026 · These are examples of well-designed websites that use brown as the primary color scheme."
+    }
+  ]
+}

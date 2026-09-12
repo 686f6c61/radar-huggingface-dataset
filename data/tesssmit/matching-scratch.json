@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tesssmit/matching-scratch",
+  "slug": "tesssmit-matching-scratch",
+  "author": "tesssmit",
+  "url": "https://huggingface.co/tesssmit/matching-scratch",
+  "created_at": "2026-09-12T09:54:39.000Z",
+  "updated_at": "2026-09-12T09:54:44.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Australian Eastern Standard Time – AEST Time Zone",
+      "url": "https://www.timeanddate.com/time/zones/aest",
+      "snippet": "Australian Eastern Standard Time (AEST) is the easternmost time zone in Australia. It is used in five Australian states and territories: …"
+    },
+    {
+      "title": "Australian Eastern Standard Time",
+      "url": "https://time.is/AEST",
+      "snippet": "1 day ago · Exact time now, time zone, time difference, sunrise/sunset time and key facts for Australian Eastern Standard Time (AEST)."
+    },
+    {
+      "title": "Time in Australia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Time_in_Australia",
+      "snippet": "Australia uses three main time zones: Australian Western Standard Time (AWST; UTC+08:00), Australian Central Standard Time …"
+    },
+    {
+      "title": "Time Now in AEST (Australian Eastern Standard Time)",
+      "url": "https://time.now/timezones/aest/",
+      "snippet": "1 day ago · The abbreviation AEST stands for Australian Eastern Standard Time, distinct from AEDT (Australian Eastern Daylight …"
+    },
+    {
+      "title": "Time Zone Converter – Time Difference Calculator",
+      "url": "https://www.timeanddate.com/worldclock/converter.html?p1=tz_aest",
+      "snippet": "Find the exact time difference with the Time Zone Converter – Time Difference Calculator which converts the time difference between …"
+    }
+  ]
+}

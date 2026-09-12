@@ -25,7 +25,7 @@
     "en",
     "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
     "base_model:finetune:deepseek-ai/DeepSeek-V4.1-Flash",
-    "doi:10.57967/hf/6333",
+    "doi:10.57967/hf/10368",
     "license:apache-2.0",
     "region:us"
   ],

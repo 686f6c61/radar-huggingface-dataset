@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gpt-oss-20b-3MPER0RR-abliterated-i1-GGUF",
+  "slug": "mradermacher-gpt-oss-20b-3mper0rr-abliterated-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gpt-oss-20b-3MPER0RR-abliterated-i1-GGUF",
+  "created_at": "2026-09-12T11:47:04.000Z",
+  "updated_at": "2026-09-12T11:47:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7012728,
+  "parameters_human": "7.0M",
+  "storage_bytes": 28079776,
+  "storage_human": "28 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PigeonCast - Easy Screen Mirroring for iPhone/Android/PC/TV",
+      "url": "https://pigeoncast.com/",
+      "snippet": "Why Choose PigeonCast Solutions for Screen Mirroring? Everything you need for fast, stable, and effortless screen sharing. Works …"
+    },
+    {
+      "title": "Download PigeonCast | Free Screen Mirroring App",
+      "url": "https://pigeoncast.com/download",
+      "snippet": "Aug 26, 2026 · Install PigeonCast on both your sending and receiving devices to start wireless screen mirroring. Works across …"
+    },
+    {
+      "title": "Cast to TV & Screen Mirroring - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.pigeoncast.screen.mirroring.android.tv&hl=en-US",
+      "snippet": "Turn your TV into a powerful screen mirroring receiver, TV cast receiver, and wireless display hub. PigeonCast lets you cast to TV …"
+    },
+    {
+      "title": "PigeonCast - Mirror & Cast iPhone, Phone to PC - Free download and ...",
+      "url": "https://apps.microsoft.com/detail/9p8fwckn5s3p",
+      "snippet": "Mirror and cast your iPhone or Android phone to a Windows PC with PigeonCast. PigeonCast turns your Windows PC into a wireless …"
+    },
+    {
+      "title": "Anna Pigeon (TV Series 2026– ) - IMDb",
+      "url": "https://www.imdb.com/title/tt36937503/",
+      "snippet": "Anna Pigeon: With Tracy Spiridakos, Cooper Levy, Ryan Northcott, Manuel Rodriguez-Saenz. Park ranger Anna Pigeon left city life …"
+    }
+  ]
+}

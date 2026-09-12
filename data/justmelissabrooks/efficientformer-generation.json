@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Justmelissabrooks/efficientformer-generation",
+  "slug": "justmelissabrooks-efficientformer-generation",
+  "author": "Justmelissabrooks",
+  "url": "https://huggingface.co/Justmelissabrooks/efficientformer-generation",
+  "created_at": "2026-09-12T09:38:42.000Z",
+  "updated_at": "2026-09-12T09:38:47.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "【問題】steam本身介面卡頓 @Steam 綜合討論板 哈啦板 - 巴哈姆特",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=60599&snA=47731",
+      "snippet": "Oct 18, 2024 · 這個問題舊電腦發生過換了新電腦以後基本長期沒事 結果今天他又有事情了 狀況是才剛開機，alt tab去看別的網頁切 …"
+    },
+    {
+      "title": "【問題】steam 目前無法連線到steam伺服器 已解決 @Steam 綜合討論 …",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=60599&snA=24270",
+      "snippet": "樓主 諦視者9527 as5893214 GP 0 BP - 2019-02-03 11:50:35 編輯 我steam帳號登入時跳出 steam 目前無法連線到steam伺服器 就算 …"
+    },
+    {
+      "title": "steam正版网站是什么? - 知乎",
+      "url": "https://www.zhihu.com/question/509353816",
+      "snippet": "如果直接复制网址打不开的话，可以先搜索steam，在搜索结果里面照着网址找到正版打开也行。 千万不要下成steam管家！ 老坑人了 …"
+    },
+    {
+      "title": "绑定steam的手机丢了怎么换绑? - 知乎",
+      "url": "https://www.zhihu.com/question/543271684?write",
+      "snippet": "Jul 14, 2022 · 用 steam救援码 可以解除绑定 之前我们完成绑定时，会有一个“ 救援代码 ”的界面，就是让你记下这个代码的。 如果你 …"
+    },
+    {
+      "title": "steam错误代码102 解决方案-百度经验",
+      "url": "https://jingyan.baidu.com/article/148a1921c877f34d71c3b1b3.html",
+      "snippet": "Oct 30, 2017 · steam错误代码102怎么办？其实steam错误的解决方法大多都是大同小异，那么应该如何解决呢？下面由我带给大 …"
+    }
+  ]
+}

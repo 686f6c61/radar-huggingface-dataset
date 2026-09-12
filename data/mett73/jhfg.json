@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mett73/jhfg",
+  "slug": "mett73-jhfg",
+  "author": "mett73",
+  "url": "https://huggingface.co/mett73/jhfg",
+  "created_at": "2026-09-12T11:33:23.000Z",
+  "updated_at": "2026-09-12T11:33:23.000Z",
+  "license": "bigscience-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:bigscience-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UhrForum",
+      "url": "https://uhrforum.de/",
+      "snippet": "Entdecke das größte Uhrenforum Deutschlands! Tauche ein in Diskussionen, Bewertungen und Trends rund um Armbanduhren, …"
+    },
+    {
+      "title": "Bücher fehlen in Kindle Cloud Reader",
+      "url": "https://www.e-reader-forum.de/t/buecher-fehlen-in-kindle-cloud-reader.160869/",
+      "snippet": "May 23, 2024 · Hallo, ich habe einen Paperwhite. Problem: Im Kindle Cloud Reader werden nur die Bücher angezeigt, die ich direkt …"
+    }
+  ]
+}

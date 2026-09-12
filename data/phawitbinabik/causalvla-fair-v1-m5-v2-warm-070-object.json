@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "phawitbinabik/causalvla-fair-v1-m5-v2-warm-070-object",
+  "slug": "phawitbinabik-causalvla-fair-v1-m5-v2-warm-070-object",
+  "author": "phawitbinabik",
+  "url": "https://huggingface.co/phawitbinabik/causalvla-fair-v1-m5-v2-warm-070-object",
+  "created_at": "2026-09-12T02:31:26.000Z",
+  "updated_at": "2026-09-12T08:04:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "causal_vla_warm",
+    "dataset:lerobot/libero_object_image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 8052328600,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Leboncoin une erreur technique est survenue - Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-37772507-site-le-bon-coin-une-erreur-technique-est-survenue",
+      "snippet": "Aug 10, 2023 · Bonjour, J'ai un mac oset depuis quelques jours le site le bon coin affiche la mention \" Une erreur technique est …"
+    },
+    {
+      "title": "Leboncoin: numéro de téléphone déjà utilisé - Mobile",
+      "url": "https://forums.commentcamarche.net/forum/affich-37903155-leboncoin-numero-de-telephone-deja-utilise",
+      "snippet": "Aug 28, 2023 · Bonjour Lors de ma première ouverture de compte Leboncoin je reçois que mon numéro de téléphone est déjà utilisé …"
+    },
+    {
+      "title": "Les soldes cet été 2026 en Espagne, toutes les dates",
+      "url": "https://www.espagne-visite.com/fr/idees-voyages-espagne/sorties-2026/les-soldes-cet-%C3%A9t%C3%A9-2026-en-espagne-toutes-les-dates.html",
+      "snippet": "Madrid étant les champions toutes catégories de longueur de soldes d'été cet été 2026. Avec peut-être tout de même la Cantabrie, …"
+    },
+    {
+      "title": "www.espagne-visite.com",
+      "url": "https://www.espagne-visite.com/images/photos/alicante/",
+      "snippet": ""
+    },
+    {
+      "title": "Problème d'affichage page leboncoin - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-30912048-probleme-d-affichage-page-leboncoin",
+      "snippet": "Problème d'affichage page leboncoin jorandall62 - Modifié le 14 oct. 2014 à 22:54 jorandall62 - 15 oct. 2014 à 15:17"
+    }
+  ]
+}

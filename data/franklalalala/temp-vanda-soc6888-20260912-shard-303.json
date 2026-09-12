@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Franklalalala/temp-vanda-soc6888-20260912-shard-303",
+  "slug": "franklalalala-temp-vanda-soc6888-20260912-shard-303",
+  "author": "Franklalalala",
+  "url": "https://huggingface.co/Franklalalala/temp-vanda-soc6888-20260912-shard-303",
+  "created_at": "2026-09-12T09:56:55.000Z",
+  "updated_at": "2026-09-12T09:56:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Startpagina - GBS Schransdries Beerse",
+      "url": "https://www.gbs-schransdries.be/",
+      "snippet": "Gemeentelijke Basisschool Schransdries - Gemeente Beerse, een dorpsschool van deze tijd waar kinderen, in een veilige en warme …"
+    },
+    {
+      "title": "GBS Schransdries - GBS Schransdries Beerse",
+      "url": "https://www.gbs-schransdries.be/contact-gbsschrandries",
+      "snippet": "Contact & openingsuren GBS Schransdries Contact Adres Schransdriesstraat 45 2340 Beerse"
+    },
+    {
+      "title": "Gemeentelijke Basisschool Schransdries - Lokaal bestuur Beerse",
+      "url": "https://www.beerse.be/gbs-schransdries",
+      "snippet": "Contact & openingsuren Gemeentelijke Basisschool Schransdries Contact Adres Schransdriesstraat 45 2340 Beerse Tel. 014 68 86 …"
+    },
+    {
+      "title": "instellingsfiche - Vlaanderen",
+      "url": "https://data-onderwijs.vlaanderen.be/onderwijsaanbod/instelling.aspx?sn=46268",
+      "snippet": "Merk je dat het volgnummer van een vestigingsplaats veranderde? Voortaan geeft onderwijsaanbod voor iedere vestigingsplaats het …"
+    },
+    {
+      "title": "Gemeentelijk onderwijs - Lokaal bestuur Beerse",
+      "url": "https://www.beerse.be/scholengemeenschap-beerse",
+      "snippet": "Bekijk ze op de kaart via de blauwe knop hieronder en kom te weten welke school het dichtst bij jou thuis gelegen is."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "AliceYin/L20-1B-20B-Base",
+  "slug": "aliceyin-l20-1b-20b-base",
+  "author": "AliceYin",
+  "url": "https://huggingface.co/AliceYin/L20-1B-20B-Base",
+  "created_at": "2026-09-12T09:34:51.000Z",
+  "updated_at": "2026-09-12T10:30:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "causal-lm",
+    "pretraining",
+    "from-scratch",
+    "single-gpu",
+    "nvidia-l20",
+    "en",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1100048384,
+  "parameters_human": "1.10B",
+  "storage_bytes": 4400574321,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Que pensez vous de l'airmatic ? - Classe E - Mercedes - Forum-Auto",
+      "url": "https://forum-auto.caradisiac.com/topic/81576-que-pensez-vous-de-lairmatic/",
+      "snippet": "Sep 7, 2009 · Bonjour, Jaimerai avoir votre avis par rapport a la suspension pneumatique airmatic de mercedes. Est ce un …"
+    },
+    {
+      "title": "Changement plaquettes et disques de frein avant Mercédes classe C",
+      "url": "https://forum-auto.caradisiac.com/topic/219972-changement-plaquettes-et-disques-de-frein-avant-merc%C3%A9des-classe-c/",
+      "snippet": "Jan 7, 2006 · Aller sur la liste des sujets Toute l’activité Modérateurs Accueil Technique Mécanique / Électronique Mercedes …"
+    },
+    {
+      "title": "124 Crankshaft position sensor | Mercedes-Benz Owners' Forums",
+      "url": "https://forums.mercedesclub.org.uk/index.php?threads/124-crankshaft-position-sensor.106890/",
+      "snippet": "Oct 4, 2012 · The learning curve begins for this \"new\" thing..... Have got this W124 on the way which doesn't run for toffee, suspected …"
+    },
+    {
+      "title": "Meetings - MercedesForum.nl/be",
+      "url": "https://www.mercedesforum.nl/forum/viewforum.php?f=43",
+      "snippet": "Sep 4, 2026 · Mercedes Benz meeting / rondtrip door C180coupe » 05 jun 2018 19:37 1 2 3 32 Reacties 11890 Weergaves Laatste …"
+    },
+    {
+      "title": "Tow bar removal | Mercedes-Benz Owners' Forums",
+      "url": "https://forums.mercedesclub.org.uk/index.php?threads/tow-bar-removal.39623/",
+      "snippet": "Jun 30, 2008 · I've given up with my gearbox problem so I'm replacing the car ! Unfortunately, in the 9 months I've had this thing I put …"
+    }
+  ]
+}

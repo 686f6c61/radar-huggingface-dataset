@@ -5,7 +5,7 @@
   "author": "nyxspecter4",
   "url": "https://huggingface.co/nyxspecter4/kin-sft-lora-gguf",
   "created_at": "2026-08-31T23:40:32.000Z",
-  "updated_at": "2026-09-11T02:58:57.000Z",
+  "updated_at": "2026-09-11T23:13:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -44,7 +44,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 122,
+  "downloads_30d": 159,
   "trending_score": 0,
   "parameters": 3085938688,
   "parameters_human": "3.09B",

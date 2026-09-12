@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "dougdotcon/douvras-enterprise-failure-classifier",
+  "slug": "dougdotcon-douvras-enterprise-failure-classifier",
+  "author": "dougdotcon",
+  "url": "https://huggingface.co/dougdotcon/douvras-enterprise-failure-classifier",
+  "created_at": "2026-09-12T02:39:14.000Z",
+  "updated_at": "2026-09-12T02:44:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "custom",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "custom",
+    "failure-analysis",
+    "llm-evaluation",
+    "portuguese",
+    "enterprise",
+    "synthetic",
+    "text-classification",
+    "pt",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Login to Disney+ | Login or Signup",
+      "url": "https://www.disneyplus.com/identity/login?msockid=25c2ce7df7d16e1a1f66d9aff6a26fa4",
+      "snippet": "Log in to access Disney+ and explore a wide range of movies, TV series, and exclusive originals."
+    },
+    {
+      "title": "Log in to Disney+ | Login or Sign up",
+      "url": "https://www.disneyplus.com/en-gb/identity/login?msockid=25c2ce7df7d16e1a1f66d9aff6a26fa4",
+      "snippet": "Log in to Disney+ with your MyDisney account. If you don’t have one, you will be prompted to create an account before signing up."
+    },
+    {
+      "title": "Entrar no Disney+ | Entrar ou Assinar",
+      "url": "https://www.disneyplus.com/pt-br/identity/login?msockid=25c2ce7df7d16e1a1f66d9aff6a26fa4",
+      "snippet": "Entre no Disney+ com a sua conta MyDisney. Se você não tiver conta, precisará criar uma conta antes de assinar."
+    },
+    {
+      "title": "Iniciar sesión en Disney+ | Acceder o suscribirte",
+      "url": "https://www.disneyplus.com/es-419/identity/login?msockid=25c2ce7df7d16e1a1f66d9aff6a26fa4",
+      "snippet": "Es necesario que inicies sesión en Disney+ con tu cuenta de MyDisney. En caso de no tener una, recibirás indicaciones para crearla …"
+    },
+    {
+      "title": "Logge dich bei Disney+ ein | Einloggen oder Registrieren",
+      "url": "https://www.disneyplus.com/de-de/identity/login?msockid=25c2ce7df7d16e1a1f66d9aff6a26fa4",
+      "snippet": "Logge dich mit deinem MyDisney-Konto in Disney+ ein. Falls du noch kein Konto hast, wirst du aufgefordert, es vor der Registrierung …"
+    }
+  ]
+}

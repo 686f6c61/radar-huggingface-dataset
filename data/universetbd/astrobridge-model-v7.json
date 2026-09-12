@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "UniverseTBD/astrobridge-model-v7",
+  "slug": "universetbd-astrobridge-model-v7",
+  "author": "UniverseTBD",
+  "url": "https://huggingface.co/UniverseTBD/astrobridge-model-v7",
+  "created_at": "2026-09-12T01:55:08.000Z",
+  "updated_at": "2026-09-12T06:33:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "astrobridge",
+    "captioner",
+    "lora",
+    "multimodal",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 254952254,
+  "storage_human": "255 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Guillaume Meurice — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Guillaume_Meurice",
+      "snippet": "Guillaume Meurice, né le 14 juin 1981 à Chenôve en Côte-d'Or, est un humoriste, chroniqueur de radio et auteur français."
+    },
+    {
+      "title": "Guillaume Meurice - Site Officiel",
+      "url": "https://www.guillaumemeurice.fr/",
+      "snippet": "Bienvenue sur le site Internet de Guillaume Meurice. Retrouvez toutes les informations sur son spectacle, ses chroniques France …"
+    },
+    {
+      "title": "Guillaume Meurice - Facebook",
+      "url": "https://www.facebook.com/PageGuillaumeMeurice/",
+      "snippet": "Dimanche 25 octobre, retrouvez La dernière à Seignosse en direct du Tube de 18h à 20h15 avec Guillaume Meurice, Juliette Arnaud, …"
+    },
+    {
+      "title": "Guillaume Meurice forcé de quitter Radio France : les prud’hommes ...",
+      "url": "https://www.lemonde.fr/economie/article/2026/02/09/guillaume-meurice-force-de-quitter-radio-france-les-prud-hommes-decident-d-un-nouveau-proces-faute-d-accord-entre-les-juges_6665988_3234.html",
+      "snippet": "Feb 9, 2026 · Le conseil de prud’hommes de Paris a décidé, lundi 9 février, de la tenue à venir d’un nouveau procès concernant la …"
+    },
+    {
+      "title": "La chronique de Guillaume Meurice",
+      "url": "https://podcasts.nova.fr/radio-nova-la-chronique-de-guillaume-meurice",
+      "snippet": "Jun 30, 2026 · Rendez-vous le dimanche en direct de la Radio Nova et de L'Alhambra pour une analyse pointue, objective et …"
+    }
+  ]
+}

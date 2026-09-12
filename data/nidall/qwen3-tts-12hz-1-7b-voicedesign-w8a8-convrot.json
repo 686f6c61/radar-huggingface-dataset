@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "NidAll/Qwen3-TTS-12Hz-1.7B-VoiceDesign-W8A8-ConvRot",
+  "slug": "nidall-qwen3-tts-12hz-1-7b-voicedesign-w8a8-convrot",
+  "author": "NidAll",
+  "url": "https://huggingface.co/NidAll/Qwen3-TTS-12Hz-1.7B-VoiceDesign-W8A8-ConvRot",
+  "created_at": "2026-09-12T11:38:48.000Z",
+  "updated_at": "2026-09-12T11:46:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_tts",
+    "qwen3-tts",
+    "text-to-speech",
+    "audio",
+    "quantized",
+    "comfyui",
+    "base_model:Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+    "base_model:finetune:Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1917339400,
+  "parameters_human": "1.92B",
+  "storage_bytes": 3028393788,
+  "storage_human": "3.0 GB",
+  "base_model": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "THE BEST 10 PIZZA PLACES NEAR REDMOND, WA 98052 - Yelp",
+      "url": "https://www.yelp.com/search?cflt=pizza&find_loc=Redmond%2C+WA+98052&msockid=2185dd17970464a10a3fcac596c0656f",
+      "snippet": "Best Pizza in Redmond, WA 98052 - Last Updated September 2026 - Spark Pizza, Sodo Pizza, Pagliacci Pizza, Pizzaiolo Wood …"
+    },
+    {
+      "title": "THE 10 BEST Pizza Places in Redmond (Updated 2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Restaurants-g58702-c31-Redmond_Washington.html",
+      "snippet": "Best Pizza in Redmond, Washington: Find Tripadvisor traveller reviews of Redmond Pizza places and search by price, location, and …"
+    },
+    {
+      "title": "Pizza Delivery to Redmond | Pagliacci Pizza",
+      "url": "https://www.pagliacci.com/locations/redmond",
+      "snippet": "Order Pagliacci Pizza in Downtown Redmond & Bear Creek. Fresh ingredients, award-winning taste. Fast delivery, easy pickup, or …"
+    },
+    {
+      "title": "Pizza Delivery Near Me in Redmond - DOMINO'S",
+      "url": "https://pizza.dominos.com/washington/redmond",
+      "snippet": "Prices, participation, delivery area, and charges may vary by store. 2-item minimum. Bone-in Wings, Bread Bowl Pasta, and Pan …"
+    },
+    {
+      "title": "Pagliacci Pizza: Seattle Area Pizza & Delivery",
+      "url": "https://pagliacci.com/",
+      "snippet": "Pagliacci Pizza, serving Seattle's best pizza since 1979. Offering pizza by the slice and pizza delivery service to homes and businesses."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "kth8/LFM2.5-230M-OpenCode-Title-Generator",
+  "slug": "kth8-lfm2-5-230m-opencode-title-generator",
+  "author": "kth8",
+  "url": "https://huggingface.co/kth8/LFM2.5-230M-OpenCode-Title-Generator",
+  "created_at": "2026-09-12T10:19:15.000Z",
+  "updated_at": "2026-09-12T10:23:27.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "sft",
+    "trl",
+    "unsloth",
+    "liquid",
+    "lfm2.5",
+    "conversational",
+    "en",
+    "dataset:kth8/title-generation-10000x",
+    "base_model:unsloth/LFM2.5-230M",
+    "base_model:finetune:unsloth/LFM2.5-230M",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 229693184,
+  "parameters_human": "229.7M",
+  "storage_bytes": 459584688,
+  "storage_human": "460 MB",
+  "base_model": "unsloth/LFM2.5-230M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to type @, #, €, £ and other special characters on a Mac",
+      "url": "https://www.macworld.com/article/671016/how-type-at-euro-hash-special-characters-mac.html",
+      "snippet": "Jan 28, 2026 · Learn how to type @, #, €, £ and other special characters on any Mac keyboard – U.S., U.K., and international layouts …"
+    },
+    {
+      "title": "Special Characters On Mac: How to type Æ, €, #, @, © On Mac",
+      "url": "https://macbookjournal.com/how-to-type-special-characters-on-mac/",
+      "snippet": "Oct 28, 2025 · Learn how to type special characters on Mac along with accents and emojis with this step-by-step instructions and …"
+    },
+    {
+      "title": "Where to Find the Hashtag Key ( # ) on a Mac Keyboard",
+      "url": "https://ladedu.com/where-to-find-the-hash-key-on-a-mac-keyboard/",
+      "snippet": "Aug 13, 2026 · Looking for the number sign? Find out here where to find the hashtag key (#) on a Mac keyboard, and how to get …"
+    },
+    {
+      "title": "How to Type Special Characters and Symbols on iPhone and iPad",
+      "url": "https://www.digitalcitizen.life/how-to-type-special-characters-symbols-on-iphone-ipad/",
+      "snippet": "Jan 5, 2026 · Typing special characters and symbols on iPhone and iPad does not require extra apps. iOS and iPadOS already …"
+    },
+    {
+      "title": "Alt Codes on Mac: A Complete Guide to Option Key Shortcuts",
+      "url": "https://howtotypeanything.com/alt-codes-on-mac/",
+      "snippet": "Discover how to use Alt Codes on Mac and master Option Key shortcuts for typing special characters effortlessly."
+    }
+  ]
+}

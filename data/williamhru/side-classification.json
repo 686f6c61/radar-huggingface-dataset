@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Williamhru/side-classification",
+  "slug": "williamhru-side-classification",
+  "author": "Williamhru",
+  "url": "https://huggingface.co/Williamhru/side-classification",
+  "created_at": "2026-09-12T10:08:18.000Z",
+  "updated_at": "2026-09-12T10:08:24.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supprimer un compte mail zimbra sur free [Résolu] - Autres boîtes mail",
+      "url": "https://forums.commentcamarche.net/forum/affich-38294981-supprimer-un-compte-mail-zimbra-sur-free",
+      "snippet": "Jun 17, 2026 · Si ce compte mail n'est pas (un compte free gratuit d'il y a 20 ans) ou plus (un abonnement internet ou mobile résilié) …"
+    },
+    {
+      "title": "Compte compromis, comment debloquer via interface de gestion",
+      "url": "https://forums.commentcamarche.net/forum/affich-38203159-compte-compromis-comment-debloquer-via-interface-de-gestion",
+      "snippet": "Jun 13, 2025 · Sauf que je ne sais pas comment faire pour accéder à l'interface de gestion : Le compte compromis est un compte …"
+    },
+    {
+      "title": "Comment utiliser le compte Netflix Free - Le Forum des Freebox Ultra ...",
+      "url": "https://freebox.toosurtoo.com/forum/viewtopic.php?t=23203&start=0",
+      "snippet": "Apr 12, 2018 · Ton compte va automatiquement être migré vers Free. Netflix ne te facturera plus rien, ce sera sur ta facture Free. Un …"
+    },
+    {
+      "title": "Amazon Prime offert avec Ultra ? Vraiment - Freebox TooSurToo",
+      "url": "https://freebox.toosurtoo.com/forum/viewtopic.php?t=27712&start=0",
+      "snippet": "Feb 1, 2024 · Si vous voulez bénéficier de l'offre Amazon Prime inclus dans votre abonnement Freebox Delta, vous devez annuler …"
+    },
+    {
+      "title": "Thunderbird et Free [Résolu] - Forum Thunderbird - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-2340706-thunderbird-et-free",
+      "snippet": "rendez vous sur votre boite mail free dans les options/information sur le serveur cochez utiliser les abonnements aux dossier IMAP …"
+    }
+  ]
+}

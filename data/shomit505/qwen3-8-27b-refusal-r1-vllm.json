@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "shomit505/Qwen3.8-27B-refusal-r1-vllm",
+  "slug": "shomit505-qwen3-8-27b-refusal-r1-vllm",
+  "author": "shomit505",
+  "url": "https://huggingface.co/shomit505/Qwen3.8-27B-refusal-r1-vllm",
+  "created_at": "2026-09-12T10:04:17.000Z",
+  "updated_at": "2026-09-12T10:34:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "refusal-abliteration",
+    "interpretability",
+    "safety-research",
+    "vllm",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 84753176,
+  "storage_human": "85 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Log in to Roblox",
+      "url": "https://www.roblox.com/Login",
+      "snippet": "©2026 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered …"
+    },
+    {
+      "title": "Roblox",
+      "url": "https://www.roblox.com/",
+      "snippet": "Roblox is ushering in the next generation of entertainment. Imagine, create, and play together with millions of people across an …"
+    },
+    {
+      "title": "Developer Forum | Roblox",
+      "url": "https://devforum.roblox.com/",
+      "snippet": "Chat with other creators, learn about Roblox platform updates, and report issues with the platform."
+    },
+    {
+      "title": "Contact Us – Roblox Support",
+      "url": "https://en.help.roblox.com/hc/en-us/articles/208448546-Contact-Us",
+      "snippet": "Roblox Customer Support team assists with Billing and Account issue related questions. Make sure to check our Roblox Help Articles …"
+    },
+    {
+      "title": "Install Roblox Studio | Documentation - Roblox Creator Hub",
+      "url": "https://create.roblox.com/docs/tutorials/curriculums/studio/install-studio",
+      "snippet": "Install Roblox Studio Roblox Studio, or Studio for short, is Roblox's free application with powerful 3D creation tools you can use to …"
+    }
+  ]
+}

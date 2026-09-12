@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "DASD12D12SAD/MyAwesomeModel",
+  "slug": "dasd12d12sad-myawesomemodel",
+  "author": "DASD12D12SAD",
+  "url": "https://huggingface.co/DASD12D12SAD/MyAwesomeModel",
+  "created_at": "2026-09-12T10:27:46.000Z",
+  "updated_at": "2026-09-12T10:30:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PEPPERCORN - Niska cena - Kup online | Zalando",
+      "url": "https://www.zalando.pl/pepercorn/",
+      "snippet": "Odkryj PEPPERCORN na Zalando Ogromny wybór Darmowa dostawa dla zamówień od 99 zł* | Kup online teraz PEPPERCORN na …"
+    },
+    {
+      "title": "Firma Peppercorn Józefów Sp. z o.o. - Dane z KRS - NIP, REGON, Dane ...",
+      "url": "https://www.krs-online.com.pl/firma/6080545-peppercorn-jozefow-sp-z-o-o",
+      "snippet": "Apr 8, 2026 · Firma Peppercorn Józefów Sp. z o.o. istnieje od 2010 roku i działa w sektorze wyposażenia biur, a zwłaszcza w branży …"
+    },
+    {
+      "title": "Peppercorn Sklep internetowy - ABOUT YOU",
+      "url": "https://www.aboutyou.pl/b/shop/peppercorn-83935",
+      "snippet": "Zamów produkty Peppercorn szybko i tanio. Najnowsza kolekcja Peppercorn na ABOUT YOU Darmowa dostawa* & zwrot 30 dni na …"
+    },
+    {
+      "title": "PEPPERCORN 8 Sp. z o.o., WARSZAWA — NIP 5252567401, REGON, …",
+      "url": "https://nipregon.pl/firma/peppercorn-8-spolka-z-ograniczona-odpowiedzialnoscia-nip-5252567401",
+      "snippet": "PEPPERCORN 8 Sp. z o.o. to spółka z ograniczoną odpowiedzialnością z siedzibą w WARSZAWA (woj. mazowieckie). Działa od …"
+    },
+    {
+      "title": "Peppercorn - New arrivals - redefined-fashion.com",
+      "url": "https://redefined-fashion.com/en-en/collections/peppercorn",
+      "snippet": "The Peppercorn vision is to create designs that make every woman feel both confident and comfortable, no matter the occasion."
+    }
+  ]
+}

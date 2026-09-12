@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "DKTechin/fonts",
+  "slug": "dktechin-fonts",
+  "author": "DKTechin",
+  "url": "https://huggingface.co/DKTechin/fonts",
+  "created_at": "2026-09-12T10:05:52.000Z",
+  "updated_at": "2026-09-12T10:06:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9525512,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comment debloquer une liseuse Kobo aura - Forum Matériel & Système",
+      "url": "https://forums.commentcamarche.net/forum/affich-38273354-comment-debloquer-une-liseuse-kobo-aura",
+      "snippet": "Feb 27, 2026 · Bonjour ! (Avant de commencer : Rechargez votre liseuse pendant au moins une heure. Vérifiez qu'une connexion Wi …"
+    },
+    {
+      "title": "Problème d ordinateur - Forum Gmail",
+      "url": "https://forums.commentcamarche.net/forum/affich-38281662-probleme-d-ordinateur",
+      "snippet": "Apr 6, 2026 · Message : Bonjour à tous, Je rencontre un gros problème avec mon ordinateur et j'aimerais le réinitialiser …"
+    },
+    {
+      "title": "python - Error \" (unicode error) 'unicodeescape' codec can't decode ...",
+      "url": "https://stackoverflow.com/questions/37400974/error-unicode-error-unicodeescape-codec-cant-decode-bytes-in-position-2-3",
+      "snippet": "May 24, 2016 · I get the following error: SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: …"
+    },
+    {
+      "title": "How to resolve \"fatal: unable to access \" error - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/54988208/how-to-resolve-fatal-unable-to-access-error",
+      "snippet": "Mar 7, 2019 · I'm a beginner to GitHub.I need to send a pull request to the master branch. when i typed the code git push origin …"
+    },
+    {
+      "title": "Calculadora em php - Stack Overflow em Português",
+      "url": "https://pt.stackoverflow.com/questions/11824/calculadora-em-php",
+      "snippet": "Apr 4, 2014 · Como eu faço uma calculadora em php? Eu fiz o código mas não exibe resultado."
+    }
+  ]
+}

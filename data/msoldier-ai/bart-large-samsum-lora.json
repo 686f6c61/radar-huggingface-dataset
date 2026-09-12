@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Msoldier-ai/bart-large-samsum-lora",
+  "slug": "msoldier-ai-bart-large-samsum-lora",
+  "author": "Msoldier-ai",
+  "url": "https://huggingface.co/Msoldier-ai/bart-large-samsum-lora",
+  "created_at": "2026-09-12T09:46:40.000Z",
+  "updated_at": "2026-09-12T09:46:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4738744,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quote of the Day | A-Z Quotes",
+      "url": "https://www.azquotes.com/quote_of_the_day.html",
+      "snippet": "AzQuotes has millions of quotes. Every day we present the best ones! Improve yourself, find your inspiration, share with friends."
+    },
+    {
+      "title": "A-Z Quotes | Quotes for All Occasions",
+      "url": "https://www.azquotes.com/",
+      "snippet": "Discover inspirational quotes, collect and share famous and rare quotes. Create beautiful and unique picture quotes in one click. …"
+    },
+    {
+      "title": "【quote of the day】 は 日本語 で何と言いますか？ | HiNative",
+      "url": "https://ja.hinative.com/questions/6562590",
+      "snippet": "【ネイティブが回答】「quote of the day」 は \"日本語\" でなんて言うの？質問に2件の回答が集まっています！Hinativeでは\"日本語\" …"
+    },
+    {
+      "title": "Quote of the day \"】 は 日本語 で何と言いますか？ | HiNative",
+      "url": "https://ja.hinative.com/questions/19515539",
+      "snippet": "「Quote of the day」を日本語でどう言うかについての質問と回答が掲載されています。"
+    },
+    {
+      "title": "大地保险 车险怎么样？ - 知乎",
+      "url": "https://www.zhihu.com/question/59903554",
+      "snippet": "对方是黑色车子，我的是银色，第一时间查看伤情，对方只掉了点漆，而我车屁股塌了一半，第一反应，打电话私了，估计300~500， …"
+    }
+  ]
+}

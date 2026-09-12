@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "vegapunkone/emotion-regressor-model-japanese",
+  "slug": "vegapunkone-emotion-regressor-model-japanese",
+  "author": "vegapunkone",
+  "url": "https://huggingface.co/vegapunkone/emotion-regressor-model-japanese",
+  "created_at": "2026-09-12T10:19:38.000Z",
+  "updated_at": "2026-09-12T10:40:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 111213320,
+  "parameters_human": "111.2M",
+  "storage_bytes": 444876824,
+  "storage_human": "445 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Modelle, 1 klarer Sieger: Schlaftracker Test | rtl.de Vergleich",
+      "url": "https://www.rtl.de/vergleiche/sport-freizeit/schlaftracker-test/",
+      "snippet": "Aug 16, 2026 · Hier lesen Sie schnell nach, was der Schlaftracker aus einem Test alles kann und worauf es zu achten gilt. Immerhin …"
+    },
+    {
+      "title": "Schlaftracker Test + Vergleich 2026 ᐅ TÜV-zertifiziert",
+      "url": "https://www.expertentesten.de/sport-freizeit/schlaftracker-test/",
+      "snippet": "Aug 30, 2026 · Um möglichst genaue Ergebnisse zu dem Schlafverhalten zu bekommen, ist es daher sinnvoll, im Test-Vergleich …"
+    },
+    {
+      "title": "Schlaftracker in Tests: Aktueller Vergleich 2026 - MediaMarkt",
+      "url": "https://www.mediamarkt.de/de/content/fit-gesund/schlaf-erholung/beste-schlaftracker-in-tests?msockid=272481eb3017658e2365963931b6644c",
+      "snippet": "Mar 18, 2026 · Mit einem Schlaftracker kannst du deine Schlafdauer und -qualität verfolgen. Im Idealfall hilft dir das, gesunde …"
+    },
+    {
+      "title": "10 Schlaftracker Test ☀️ Smartwatch Schlafüberwachung",
+      "url": "https://www.matratzenschutz24.net/ratgeber/schlafqualitaet/schlaftracker-test/",
+      "snippet": "Aug 25, 2026 · Aber worauf sollten Sie achten, um den für Sie passenden Helfer zu finden? Wir haben für Sie ein paar Tipps und …"
+    },
+    {
+      "title": "Fitnessarmband-Test 2026: Digitale Fitnesstracker im Test",
+      "url": "https://www.chip.de/artikel/Fitness-Armband-Test-Die-besten-Tracker-im-Vergleich_127999336.html",
+      "snippet": "Dec 29, 2025 · Fitnesstracker im Test: Wir zeigen die besten Modelle von günstig bis Premium und erklären, welche Geräte für …"
+    }
+  ]
+}

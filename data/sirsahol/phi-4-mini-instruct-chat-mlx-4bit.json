@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/Phi-4-mini-instruct-chat-mlx-4bit",
+  "slug": "sirsahol-phi-4-mini-instruct-chat-mlx-4bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/Phi-4-mini-instruct-chat-mlx-4bit",
+  "created_at": "2026-09-12T02:37:51.000Z",
+  "updated_at": "2026-09-12T04:59:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "phi3",
+    "4-bit",
+    "conversational",
+    "text-generation",
+    "custom_code",
+    "base_model:microsoft/Phi-4-mini-instruct",
+    "base_model:quantized:microsoft/Phi-4-mini-instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3836021760,
+  "parameters_human": "3.84B",
+  "storage_bytes": 2173625595,
+  "storage_human": "2.2 GB",
+  "base_model": "microsoft/Phi-4-mini-instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Приложение «Instagram» — App Store",
+      "url": "https://apps.apple.com/ru/app/instagram/id389801252",
+      "snippet": "Загрузите приложение «Instagram» от этого разработчика (Instagram, Inc.) в App Store. См. скриншоты, оценки и отзывы, …"
+    },
+    {
+      "title": "‎Instagram App - App Store",
+      "url": "https://apps.apple.com/us/app/instagram/id389801252",
+      "snippet": "Download Instagram by Instagram, Inc. on the App Store. See screenshots, ratings and reviews, user tips, and more apps like …"
+    },
+    {
+      "title": "Teen India: Let's go! - Reddit",
+      "url": "https://www.reddit.com/r/TeenIndia/",
+      "snippet": "The person is really beautiful and i cannot stop thinking about her, she recently posted another dude in her Instagram stories and …"
+    },
+    {
+      "title": "Instagram Reality Baybeh! - Reddit",
+      "url": "https://www.reddit.com/r/Instagramreality/",
+      "snippet": "Exposing edited photos and showing the truth behind them."
+    },
+    {
+      "title": "Instagram, Inc. for iPhone - App Store",
+      "url": "https://apps.apple.com/us/developer/instagram-inc/id389801255",
+      "snippet": "Download apps by Instagram, Inc., including Instants, an Instagram app, Edits: Video Editor, Threads, and many more."
+    }
+  ]
+}

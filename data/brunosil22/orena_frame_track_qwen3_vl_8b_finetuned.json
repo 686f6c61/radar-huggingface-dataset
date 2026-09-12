@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Brunosil22/Orena_FRAME_Track_Qwen3_VL_8B_finetuned",
+  "slug": "brunosil22-orena_frame_track_qwen3_vl_8b_finetuned",
+  "author": "Brunosil22",
+  "url": "https://huggingface.co/Brunosil22/Orena_FRAME_Track_Qwen3_VL_8B_finetuned",
+  "created_at": "2026-09-12T10:10:40.000Z",
+  "updated_at": "2026-09-12T10:17:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3-vl",
+    "lora",
+    "medical-vqa",
+    "orena-focus",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 205492968,
+  "storage_human": "205 MB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Фильмы Индии смотреть онлайн в хорошем качестве на русском …",
+      "url": "https://kinoindia.tv/films/",
+      "snippet": "Aug 28, 2026 · Смотреть фильмы Индии (3000 кинолент) онлайн бесплатно и в хорошем HD качестве 1080p на сайте …"
+    },
+    {
+      "title": "Муна Майкл Индия - Смотреть онлайн в поиске Яндекса по Видео",
+      "url": "https://yandex.ru/video/preview/11701200119399305051",
+      "snippet": "Смотрите онлайн Муна Майкл Индия 2 ч 19 мин 57 с. Видео от 24 октября 2024 в хорошем качестве, без р..."
+    },
+    {
+      "title": "Мунна (2007) индийский фильм смотреть онлайн!",
+      "url": "https://kinoindia.tv/1335-munna.html",
+      "snippet": "Apr 20, 2024 · Смотреть индийский фильм Мунна / Munna 2007 года онлайн бесплатно в хорошем качестве на русском языке …"
+    },
+    {
+      "title": "Индийские фильмы на русском языке - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLnI2nQHJGZMm9hgXWRLUv-p1zKvPEdBaW",
+      "snippet": "Индийские фильмы на русском языке by Mirumir • Playlist • 71 videos • 269,993 views"
+    },
+    {
+      "title": "Смотреть фильм Мунна онлайн бесплатно в хорошем качестве",
+      "url": "https://rezka.ag/films/action/10511-munna-2007.html",
+      "snippet": "Смотреть фильм Мунна онлайн в хорошем качестве совершенно бесплатно и без регистрации! Приятного просмотра!"
+    }
+  ]
+}

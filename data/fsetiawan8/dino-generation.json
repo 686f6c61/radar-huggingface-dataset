@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "fsetiawan8/dino-generation",
+  "slug": "fsetiawan8-dino-generation",
+  "author": "fsetiawan8",
+  "url": "https://huggingface.co/fsetiawan8/dino-generation",
+  "created_at": "2026-09-12T10:19:19.000Z",
+  "updated_at": "2026-09-12T10:19:24.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pickleball Equipment‎‎‏ للبيع في ‏الرس‏ | Facebook Marketplace",
+      "url": "https://ar-ar.facebook.com/marketplace/108266512526821/pickleball-equipment/",
+      "snippet": "عناصر جديدة ومستعملة من فئة ‏‎‎Pickleball Equipment‎‎‏ للبيع في ‏الرس‏ على Facebook Marketplace. يمكنك العثور على صفقات رائعة وبيع العناصر الخاصة بك دون دفع أي رسوم."
+    },
+    {
+      "title": "#可能妳會遇到會教妳的療程步驟的也會遇到教妳步驟還要細心的陪妳 …",
+      "url": "https://ar-ar.facebook.com/watch/hashtag/%E5%8F%AF%E8%83%BD%E5%A6%B3%E6%9C%83%E9%81%87%E5%88%B0%E6%9C%83%E6%95%99%E5%A6%B3%E7%9A%84%E7%99%82%E7%A8%8B%E6%AD%A5%E9%A9%9F%E7%9A%84%E4%B9%9F%E6%9C%83%E9%81%87%E5%88%B0%E6%95%99%E5%A6%B3%E6%AD%A5%E9%A9%9F%E9%82%84%E8%A6%81%E7%B4%B0%E5%BF%83%E7%9A%84%E9%99%AA%E5%A6%B3%E8%AE%93%E5%A6%B3%E5%AD%B8%E5%88%B0%E8%AE%93%E9%A1%A7%E5%AE%A2%E7%9C%9F%E7%9A%84%E8%83%BD%E6%94%BE%E9%AC%86%E6%9C%89%E5%9B%9E%E9%A0%AD%E7%8E%87%E7%B2%BE%E9%AB%93%E7%9A%84%E7%86%9F%E7%85%89%E6%8A%80%E5%B7%A7/",
+      "snippet": "#可能妳會遇到會教妳的療程步驟的也會遇到教妳步驟還要細心的陪妳讓妳學到讓顧客真的能放鬆有回頭率精髓的熟煉技巧 ..."
+    },
+    {
+      "title": "Waders‎‎‏ للبيع في ‏غريان‏ | Facebook Marketplace",
+      "url": "https://ar-ar.facebook.com/marketplace/109688249050483/waders/",
+      "snippet": "عناصر جديدة ومستعملة من فئة ‏‎‎Waders‎‎‏ للبيع في ‏غريان‏ على Facebook Marketplace. يمكنك العثور على صفقات رائعة وبيع العناصر الخاصة بك دون دفع أي رسوم."
+    },
+    {
+      "title": "‏أفران‏ للبيع في ‏ساسكاتون‏ | Facebook Marketplace",
+      "url": "https://ar-ar.facebook.com/marketplace/saskatoon/furnaces/",
+      "snippet": "عناصر جديدة ومستعملة من فئة ‏أفران‏ للبيع في ‏ساسكاتون‏ على Facebook Marketplace. يمكنك العثور على صفقات رائعة وبيع العناصر الخاصة بك دون دفع أي رسوم."
+    },
+    {
+      "title": "Jade Bracelets‎‎‏ للبيع في ‏وهران‏ | Facebook Marketplace",
+      "url": "https://ar-ar.facebook.com/marketplace/102191953156546/jade-bracelets/",
+      "snippet": "عناصر جديدة ومستعملة من فئة ‏‎‎Jade Bracelets‎‎‏ للبيع في ‏وهران‏ على Facebook Marketplace. يمكنك العثور على صفقات رائعة وبيع العناصر الخاصة بك دون دفع أي رسوم."
+    }
+  ]
+}

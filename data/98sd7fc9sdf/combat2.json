@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "98sd7fc9sdf/combat2",
+  "slug": "98sd7fc9sdf-combat2",
+  "author": "98sd7fc9sdf",
+  "url": "https://huggingface.co/98sd7fc9sdf/combat2",
+  "created_at": "2026-09-12T02:27:10.000Z",
+  "updated_at": "2026-09-12T02:27:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:ponpoke/flux2-klein-9b-uncensored-text-encoder",
+    "base_model:adapter:ponpoke/flux2-klein-9b-uncensored-text-encoder",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155133687,
+  "storage_human": "155 MB",
+  "base_model": "ponpoke/flux2-klein-9b-uncensored-text-encoder",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‫1992 - فيلم: أين يمكن مشاهدته بالبث أونلاين",
+      "url": "https://www.justwatch.com/eg/movie/april-29-1992",
+      "snippet": "1992 - شاهدوا أونلاين: بالبث أو الشراء أو التأجير يمكنكم حالياً مشاهدة \"1992\" على STARZPLAY. بإمكانكم أيضاً شراء \"1992\" على Apple TV Store وتنزيله أو تأجيره على …"
+    },
+    {
+      "title": "شاهد 1992 حصريا اونلاين | STARZPLAY",
+      "url": "https://starzplay.com/ar/movies/1992/783429672025",
+      "snippet": "استمتع بمشاهدة 1992 حصريا. إنتاج وإخراج الفلم 1992 بواسطة آريل فرومن في عام 2024، تابعه الآن أونلاين على STARZPLAY، بطولة تايريس غيبسون, راي ليوتا, سكوت إيستود ."
+    },
+    {
+      "title": "‏1992 - Apple TV",
+      "url": "https://tv.apple.com/eg/movie/1992/umc.cmc.odcwve7jcjwkecdxvx14fecj?l=ar",
+      "snippet": "ومع تصاعد التوترات وسط أعمال الشغب المضطربة في \\\"لوس أنجلوس\\\" عام 1992، تصل العائلتان إلى نقطة الغليان عندما تصطدمان. إخراج \\\"أرييل فرومن\\ من إنتاج المنتج التنفيذي \\\"سنوب دوغ\\\"، يجد …"
+    },
+    {
+      "title": "مشاهدة ‎1992 | موقع Netflix الرسمي",
+      "url": "https://www.netflix.com/sa/title/81578262",
+      "snippet": "بعد مقتل زوجها في انفجار، تحقق أرملة ثكلى وشرطي سابق تطارده الهموم في سلسلة من جرائم القتل المتصلة بمعرض \"إكسبو 1992\"، الذي أقيم في إشبيلية. شاهد المقدمات وتعرّف على المزيد."
+    },
+    {
+      "title": "برايم فيديو: 1992 - Prime Video",
+      "url": "https://www.primevideo.com/-/ar/detail/0QO93PFNVAAY69DLNUCCID9SL4/",
+      "snippet": "Mercer is trying to rebuild his life and his relationship with his son amid the turbulent Los Angeles riots in 1992. Across town, another …"
+    }
+  ]
+}

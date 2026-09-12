@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svdsafety_l2_remove50_whiten_base",
+  "slug": "jeesup-svdsafety_l2_remove50_whiten_base",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svdsafety_l2_remove50_whiten_base",
+  "created_at": "2026-09-12T02:20:36.000Z",
+  "updated_at": "2026-09-12T02:23:24.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Brico Dépôt : Magasin de bricolage",
+      "url": "https://www.bricodepot.fr/?msockid=0137d0a5961066b20718c77797f067d9",
+      "snippet": "Matériaux de construction, outillage, menuiserie, électricité, plomberie, cuisine, salle de bain ou jardin : notre magasin de bricolage …"
+    },
+    {
+      "title": "Brico Dépôt : Magasin de bricolage",
+      "url": "https://www.bricodepot.fr/index.jsp?msockid=0137d0a5961066b20718c77797f067d9",
+      "snippet": "Recevez en avant-première nos arrivages, bons plans, prix bas et offres exclusives de votre dépôt directement dans votre boîte mail, …"
+    },
+    {
+      "title": "Brico Dépôt autour de moi : bricolage, matériaux et chantier",
+      "url": "https://www.telephone.city/enseigne/brico-depot/",
+      "snippet": "Trouvez facilement un magasin Brico Dépôt autour de vous. Consultez les magasins proches, accédez aux horaires, aux rayons …"
+    },
+    {
+      "title": "Recherche magasin Brico Depot Ile de France - PromoAlert",
+      "url": "https://www.promoalert.com/magasin/brico-depot-ile-de-france-horaires-telephone-adresse-90-0-0-1-0-0.html",
+      "snippet": "Alors n'hésitez pas à consulter notre liste de tous les magasins Brico Depot se situant près de chez vous ! Venez retrouver à l'aide de …"
+    },
+    {
+      "title": "Catalogue Brico Dépôt Paris ⏵ Promo 11/09/2026 24/09/2026",
+      "url": "https://www.tiendeo.fr/paris/brico-depot",
+      "snippet": "1 day ago · BRICO DÉPÔT a su se positionner comme un acteur incontournable du bricolage à travers la France. Grâce à ses …"
+    }
+  ]
+}

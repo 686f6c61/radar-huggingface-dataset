@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "isaacmg/qwen3-vl-8b-hebrew-v21b-ckpt",
+  "slug": "isaacmg-qwen3-vl-8b-hebrew-v21b-ckpt",
+  "author": "isaacmg",
+  "url": "https://huggingface.co/isaacmg/qwen3-vl-8b-hebrew-v21b-ckpt",
+  "created_at": "2026-09-11T18:51:27.000Z",
+  "updated_at": "2026-09-12T10:03:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2185940332,
+  "storage_human": "2.2 GB",
+  "base_model": "unsloth/qwen3-vl-8b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chocolate en polvo Choco Milk 440 g - Walmart.com.mx",
+      "url": "https://despensa.bodegaaurrera.com.mx/ip/chocolate-en-polvo-choco-milk-440-g/00750620581430",
+      "snippet": "Elabora un desayuno nutritivo para chicos y grandes, Choco Milk ha creado este alimento en polvo sabor chocolate de 440 g, será tu …"
+    },
+    {
+      "title": "Mövenpick Fine Food Choco&Milk 110g - REWE.de",
+      "url": "https://www.rewe.de/shop/p/moevenpick-fine-food-choco-milk-110g/7344118?msockid=1341f442751661b12585e39074f36040",
+      "snippet": "Schoko-Vollmilch-Törtchen - Rührkuchen mit 21% Schoko-Füllung und 6% Vollmilch, überzogen mit 10% Zartbitterschokolade."
+    },
+    {
+      "title": "Chocolate en polvo Choco Milk 440 g | Walmart en línea",
+      "url": "https://www.walmart.com.mx/ip/chocolate-en-polvo-choco-milk-440-g/00750620581430",
+      "snippet": "Elabora un desayuno nutritivo para chicos y grandes, Choco Milk ha creado este alimento en polvo sabor chocolate de 440 g, será tu …"
+    },
+    {
+      "title": "Chocomilk en línea | Bodega Aurrera",
+      "url": "https://despensa.bodegaaurrera.com.mx/browse/seccion-por-marca/mead-johnson/chocomilk/9302927_8633132_3560750",
+      "snippet": "Precios bajos en Chocomilk en Bodega Aurrera. Compra las mejores marcas de Sección por Marca en línea con envío a domicilio."
+    },
+    {
+      "title": "Chocolate en polvo Choco Milk 60% menos azúcar 440 g",
+      "url": "https://www.walmart.com.mx/ip/chocolate-en-polvo-choco-milk-60-menos-azucar-440-g/00750620581340",
+      "snippet": "El chocolate en polvo Choco Milk 60% menos azúcar es una opción ideal para quienes buscan reducir su consumo de azúcar sin …"
+    }
+  ]
+}

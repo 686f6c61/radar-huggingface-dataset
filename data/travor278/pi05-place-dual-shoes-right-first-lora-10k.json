@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Travor278/pi05-place-dual-shoes-right-first-lora-10k",
+  "slug": "travor278-pi05-place-dual-shoes-right-first-lora-10k",
+  "author": "Travor278",
+  "url": "https://huggingface.co/Travor278/pi05-place-dual-shoes-right-first-lora-10k",
+  "created_at": "2026-09-12T02:02:41.000Z",
+  "updated_at": "2026-09-12T02:04:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi05",
+    "jax",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335799296,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Surah As-Sajdah: Read, Listen and Study the Full Chapter - Quran.com",
+      "url": "https://quran.com/as-sajdah",
+      "snippet": "Read and listen to Surah As-Sajdah, chapter 32 of the Quran with 30 verses. Explore translation, tafsir and word-by-word meaning."
+    },
+    {
+      "title": "Read, Listen & Study the Noble Quran - Quran.com",
+      "url": "https://quran.com/",
+      "snippet": "Read the Quran in Arabic with translations, tafsir, word-by-word study, recitations, search, and reading tools for free in many …"
+    },
+    {
+      "title": "govil - אתר השירותים והמידע הממשלתי",
+      "url": "https://www.gov.il/",
+      "snippet": "ברוכים הבאים לאתר gov.il. נגיף הקורונה. מידע רשמי. שירותים לציבור. חוקים ותקנות. מסים ותשלומים. אזור אישי ממשלתי. הקטנת הנטל הבירוקרטי. …"
+    },
+    {
+      "title": "Surah As-Sajdah [32] - Translation, Transliteration and Tafsir",
+      "url": "https://myislam.org/surah-as-sajdah/",
+      "snippet": "Read Surah Sajdah (\"The Prostration\") which is 32nd chapter of Qur'an which has 30 ayats or verses. Understand with …"
+    },
+    {
+      "title": "Surah as Sajdah (Chapter 32) — Arabic & English • Read,…",
+      "url": "https://www.corequran.com/32/",
+      "snippet": "Explore Surah as Sajdah (السجدة) in Arabic and English—read with clear translation and listen to high-quality recitations (31 verses). …"
+    }
+  ]
+}

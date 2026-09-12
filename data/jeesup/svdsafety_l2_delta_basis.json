@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svdsafety_l2_delta_basis",
+  "slug": "jeesup-svdsafety_l2_delta_basis",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svdsafety_l2_delta_basis",
+  "created_at": "2026-09-12T02:16:01.000Z",
+  "updated_at": "2026-09-12T08:42:30.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "llama2",
+    "svd",
+    "compression",
+    "alignment",
+    "safety",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3198829740,
+  "storage_human": "3.2 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Crème anglaise réussie, onctueuse à souhait - Marmiton",
+      "url": "https://www.marmiton.org/recettes/recette_creme-anglaise-reussie-onctueuse-a-souhait_37391.aspx",
+      "snippet": "Recette Crème anglaise réussie, onctueuse à souhait : la meilleure recette rapide et facile : 50 cl, 25 min de préparation. Notée 4.7/5 …"
+    },
+    {
+      "title": "Menu de la semaine de Marmiton",
+      "url": "https://www.marmiton.org/recettes/menu-de-la-semaine.aspx",
+      "snippet": "Découvrez les recettes du menu de la semaine de Marmiton. Chaque jour, 2 menus complets (entrée, plat, dessert) pour le midi et le …"
+    },
+    {
+      "title": "Clafoutis à la mirabelle : la meilleure recette - Marmiton",
+      "url": "https://www.marmiton.org/recettes/recette_clafoutis-a-la-mirabelle_30982.aspx",
+      "snippet": "Recette Clafoutis à la mirabelle : la meilleure recette rapide et facile : 6 personnes, 60 min de préparation. Notée 4.6/5 par 122 …"
+    },
+    {
+      "title": "Cookies aux pépites de chocolat super moelleux - Marmiton",
+      "url": "https://www.marmiton.org/recettes/recette_cookies-aux-pepites-de-chocolat-super-moelleux_57330.aspx",
+      "snippet": "Les cookies moelleux sont un must du goûter ou des pauses sucrées. Avec leur cœur tendre et leurs bords à peine croustillants, ils …"
+    },
+    {
+      "title": "Rôti de porc tout simple : la meilleure recette - Marmiton",
+      "url": "https://www.marmiton.org/recettes/recette_roti-de-porc-tout-simple_170153.aspx",
+      "snippet": "Recette Rôti de porc tout simple : la meilleure recette rapide et facile : 4 personnes, 50 min de préparation. Notée 4.5/5 par 40 …"
+    }
+  ]
+}

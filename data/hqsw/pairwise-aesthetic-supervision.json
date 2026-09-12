@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "HQSW/pairwise-aesthetic-supervision",
+  "slug": "hqsw-pairwise-aesthetic-supervision",
+  "author": "HQSW",
+  "url": "https://huggingface.co/HQSW/pairwise-aesthetic-supervision",
+  "created_at": "2026-09-12T10:33:35.000Z",
+  "updated_at": "2026-09-12T10:34:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "image-aesthetics",
+    "visual-comparison",
+    "qwen3.5",
+    "lora",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:adapter:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 605994192,
+  "storage_human": "606 MB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mac 下有没有和 Everything 一样的快速索引工具？ - 知乎",
+      "url": "https://www.zhihu.com/question/20549498",
+      "snippet": "你们理解了题意没有？体验过 Everything 的速度了没有？还有不要擅自修改题主的需求啊。 严格的讲，spotlight 其实和 everything 的 …"
+    },
+    {
+      "title": "origin 软件绘图左侧出现一个大C，怎么办？ - 知乎",
+      "url": "https://www.zhihu.com/question/22136925",
+      "snippet": "百度知道找到一个答案： tools-options-graph，鼠标放在 user defined symbols 下方，按ctrl+x,再去掉 speed mode show watermark …"
+    },
+    {
+      "title": "zmiany w liście kanałów TV Orange 31.08.2026",
+      "url": "https://nasz.orange.pl/t5/Telewizja/zmiany-w-li%C5%9Bcie-kana%C5%82%C3%B3w-TV-Orange-31-08-2026/td-p/470729",
+      "snippet": "Dostałem list że 31.08.26 Orange wyłącza mi 7 kanałów: 13 ulica, comedy central, paramount network, nick jr, Nickelodeon, …"
+    },
+    {
+      "title": "Lista Kanałów Orange IPTV",
+      "url": "https://nasz.orange.pl/t5/Telewizja/Lista-Kana%C5%82%C3%B3w-Orange-IPTV/m-p/17317/highlight/true",
+      "snippet": "Listę kanałów Orange TVSAT (telewizja satelitarna) znajdziesz klikając tutaj. Lista Kanałów Orange IPTV Na dzień 07.09.2026 …"
+    },
+    {
+      "title": "Jaki kod abonencki podawać? - Nasz Orange - 79601",
+      "url": "https://nasz.orange.pl/t5/Konto-M%C3%B3j-Orange/Jaki-kod-abonencki-podawa%C4%87/td-p/79601",
+      "snippet": "Mar 16, 2018 · Witam, mam w Orange 3 numery- dwa telefony na abonament i jeden internet. Po wlaczeniu aplikacji Moj Orange …"
+    }
+  ]
+}

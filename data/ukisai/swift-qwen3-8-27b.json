@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ukisai/Swift-Qwen3.8-27b",
+  "slug": "ukisai-swift-qwen3-8-27b",
+  "author": "ukisai",
+  "url": "https://huggingface.co/ukisai/Swift-Qwen3.8-27b",
+  "created_at": "2026-09-08T13:35:21.000Z",
+  "updated_at": "2026-09-11T20:14:04.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3_8",
+    "efficient-thinking",
+    "reasoning",
+    "token-efficient",
+    "lora",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 18,
+  "downloads_30d": 59,
+  "trending_score": 18,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55583501715,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LA Clippers Roster 2025–26 | Players, Stats & Bios - NBA.com",
+      "url": "https://www.nba.com/clippers/roster",
+      "snippet": "Explore the LA Clippers roster for the 2025–26 season. View player stats, positions, bios, and the latest team lineup."
+    },
+    {
+      "title": "Swift-Qwen3.8-27B: less overthinking - UkisAI",
+      "url": "https://ukisai.com/news/introducing-swift",
+      "snippet": "Swift-Qwen3.8-27B is UkisAI's reasoning-efficient derivative of Qwen3.8-27B, using up to 58% fewer thinking tokens while maintaining near-identical performance ..."
+    },
+    {
+      "title": "LA Clippers NBA Roster - ESPN",
+      "url": "https://www.espn.com/nba/team/roster/_/name/lac/la-clippers",
+      "snippet": "Explore the LA Clippers NBA roster on ESPN. Includes full details on point guards, shooting guards, power forwards, small forwards …"
+    },
+    {
+      "title": "2025-26 Los Angeles Clippers Roster and Stats | Basketball-Reference.com",
+      "url": "https://www.basketball-reference.com/teams/LAC/2026.html",
+      "snippet": "Checkout the latest Los Angeles Clippers Roster and Stats for 2025-26 on Basketball-Reference.com"
+    },
+    {
+      "title": "LA Clippers | Tickets, Schedule, Roster & News - NBA.com",
+      "url": "https://www.nba.com/clippers/",
+      "snippet": "The official site of the LA Clippers. Find the latest schedule, buy tickets, view the roster, and get team news, stats, and updates."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "devika-tiwari/gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p50_mix_0p50_43",
+  "slug": "devika-tiwari-gpt2_small_expandedbabylm_100m_exp3_subj_ratio_0p50_mix_0p50_43",
+  "author": "devika-tiwari",
+  "url": "https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p50_mix_0p50_43",
+  "created_at": "2026-09-12T02:35:14.000Z",
+  "updated_at": "2026-09-12T06:11:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "gpt2",
+    "generated_from_trainer",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3982469993,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "楽天スーパーポイントスクリーン│毎日楽天ポイントが貯まる ...",
+      "url": "https://screen.rakuten.co.jp/",
+      "snippet": "毎日楽天ポイントが貯まる楽天公式ポイ活アプリ！ おすすめチラシや最新ニュース、楽天市場、楽天トラベルの最新情報を簡単に …"
+    },
+    {
+      "title": "楽天スーパーポイントスクリーン -毎日5秒でポイント貯まる ...",
+      "url": "https://play.google.com/store/apps/details?id=jp.co.rakuten.slide&hl=ja",
+      "snippet": "スキマ時間にワンクリックで楽天ポイントGET♪チラシをチェックしてスマホでも街のお店でもお得にポイ活！"
+    },
+    {
+      "title": "楽天SPS アプリでポイントを得るための初期設定の手順 ...",
+      "url": "https://compota-soft.work/archives/70463",
+      "snippet": "Jul 21, 2026 · 楽天 SPS で少しわかりにくい設定部分があったので、その箇所を含めて初期起動時のポイントを得るための設定の手 …"
+    },
+    {
+      "title": "Super Point Screenを初めて使って1,000ポイント｜スタート1000",
+      "url": "https://event.rakuten.co.jp/group/sbc/sps/",
+      "snippet": "アプリダウンロード後、楽天IDでログインし、Super Point Screen アプリから5日間以上ポイントをゲット！ ダウンロードは こちら …"
+    },
+    {
+      "title": "楽天スーパーポイントスクリーン（楽天SPS）のポイントの貯め ...",
+      "url": "https://www.kotablo.com/entry/rakuten-sps",
+      "snippet": "Oct 6, 2025 · 楽天スーパーポイントスクリーン（楽天SPS）は、楽天が運営する公式ポイ活アプリ。 アプリ内の チラシ広告や最新 …"
+    }
+  ]
+}

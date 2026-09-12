@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ImKyungjin/pi0-stackcube-stop-noise-50pct-40ep-convex",
+  "slug": "imkyungjin-pi0-stackcube-stop-noise-50pct-40ep-convex",
+  "author": "ImKyungjin",
+  "url": "https://huggingface.co/ImKyungjin/pi0-stackcube-stop-noise-50pct-40ep-convex",
+  "created_at": "2026-09-12T02:39:33.000Z",
+  "updated_at": "2026-09-12T02:42:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi0",
+    "dataset:taewonkoo/stack_cube_stop_noise_50pct_40ep",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 7011556176,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "21 Tausend Fitness Woman Tattoo lizenzfreie Bilder ... - Shutterstock",
+      "url": "https://www.shutterstock.com/de/search/fitness-woman-tattoo?msockid=375ebb866ba36a193f77ac546a196b24",
+      "snippet": "Finden Sie 21 Tausend Fitness Woman Tattoo Stockbilder in HD und Millionen weitere lizenzfreie Stockfotos, 3D-Objekte, …"
+    },
+    {
+      "title": "Fitness Tattoo Models™ (@fitness_model_tattoo_world) - Instagram",
+      "url": "https://www.instagram.com/fitness_model_tattoo_world/",
+      "snippet": "1,393 Followers, 7,331 Following, 19 Posts - Fitness Tattoo Models™ (@fitness_model_tattoo_world) on Instagram: \"💪🏻GYM Sharks …"
+    },
+    {
+      "title": "Weibliche Models - Fotomodel, Plus Size, Best Ager, Tattoo",
+      "url": "https://the-models.de/de/damen",
+      "snippet": "Hier ein paar weibliche Models unserer deutschlandweiten Kartei – sie bestechen nicht nur als Fotomodel & Curvy oder Best Ager …"
+    },
+    {
+      "title": "Tanja (34) aus dem Erzgebirge: Zwischen Fitness und Tattoos als …",
+      "url": "https://www.blick.de/community/tattoomodel/tanja-34-aus-dem-erzgebirge-zwischen-fitness-und-tattoos-als-schoene-tapete-artikel13477133",
+      "snippet": "Aug 28, 2024 · Tattoo-Model. Capyversum. Einblick der Redakteure. Partypixx. Quizze & Spiele. Unterhaltung. Promi-News. Event …"
+    },
+    {
+      "title": "Fitness Model Tattoo Female - Pinterest",
+      "url": "https://www.pinterest.com/ideas/fitness-model-tattoo-female/919583879995/",
+      "snippet": "Find and save ideas about fitness model tattoo female on Pinterest."
+    }
+  ]
+}

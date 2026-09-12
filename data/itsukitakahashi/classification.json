@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "itsukitakahashi/classification",
+  "slug": "itsukitakahashi-classification",
+  "author": "itsukitakahashi",
+  "url": "https://huggingface.co/itsukitakahashi/classification",
+  "created_at": "2026-09-12T09:44:08.000Z",
+  "updated_at": "2026-09-12T09:44:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EDEKA: Angebote der Woche",
+      "url": "https://www.edeka.de/angebote/",
+      "snippet": "5 days ago · Der EDEKA Prospekt ist auch online verfügbar – als Blätterkatalog und zum Download. Lade alternativ alle Angebote …"
+    },
+    {
+      "title": "Prospekt von EDEKA",
+      "url": "https://www.edeka.de/markt-id/8002138/prospekt.jsp",
+      "snippet": "Aug 29, 2026 · Blättere jetzt in unseren aktuellen Angeboten Gültig vom 29.08.2026 bis zum 05.09.2026 EDEKA, Plinganserstraße …"
+    },
+    {
+      "title": "Prospekt von EDEKA",
+      "url": "https://www.edeka.de/markt-id/17290/prospekt.jsp",
+      "snippet": "Aug 29, 2026 · Blättere jetzt in unseren aktuellen Angeboten Gültig vom 29.08.2026 bis zum 05.09.2026 EDEKA, Sophienblatt 20, …"
+    },
+    {
+      "title": "Prospekt von Delta Lucas Reinbold GmbH | EDEKA",
+      "url": "https://www.edeka.de/markt-id/18553/prospekt.jsp",
+      "snippet": "Aug 22, 2026 · Blättere jetzt in unseren aktuellen Angeboten Gültig vom 22.08.2026 bis zum 29.08.2026 Delta Lucas Reinbold …"
+    },
+    {
+      "title": "Prospekt von EDEKA",
+      "url": "https://www.edeka.de/markt-id/8000528/prospekt.jsp",
+      "snippet": "Sep 5, 2026 · Blättere jetzt in unseren aktuellen Angeboten Gültig vom 05.09.2026 bis zum 12.09.2026 EDEKA, Friedrich-Viehbacher …"
+    }
+  ]
+}

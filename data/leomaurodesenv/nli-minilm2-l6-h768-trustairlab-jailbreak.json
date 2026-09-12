@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "leomaurodesenv/nli-MiniLM2-L6-H768-trustairlab-jailbreak",
+  "slug": "leomaurodesenv-nli-minilm2-l6-h768-trustairlab-jailbreak",
+  "author": "leomaurodesenv",
+  "url": "https://huggingface.co/leomaurodesenv/nli-MiniLM2-L6-H768-trustairlab-jailbreak",
+  "created_at": "2026-09-12T02:14:11.000Z",
+  "updated_at": "2026-09-12T08:38:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:cross-encoder/nli-MiniLM2-L6-H768",
+    "base_model:finetune:cross-encoder/nli-MiniLM2-L6-H768",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 82119938,
+  "parameters_human": "82.1M",
+  "storage_bytes": 3941912433,
+  "storage_human": "3.9 GB",
+  "base_model": "cross-encoder/nli-MiniLM2-L6-H768",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The 27 Best Torrent Sites in 2026 - PrivacySavvy",
+      "url": "https://privacysavvy.com/security/torrents/best-torrent-sites/",
+      "snippet": "Nov 1, 2020 · The Pirate Bay’s official release was in 2013 as an ultimate platform for providing premium content for free. It features …"
+    },
+    {
+      "title": "The Pirate Bay – Wikipedie",
+      "url": "https://cs.wikipedia.org/wiki/The_Pirate_Bay",
+      "snippet": "The Pirate Bay (česky: Pirátská zátoka) je švédská webová stránka, která indexuje digitální obsah zábavních médií a softwaru. Jde o …"
+    },
+    {
+      "title": "How to Safely Access The Pirate Bay in 2026 (Mirrors, Proxies & Risks)",
+      "url": "https://www.bitbrowser.net/blog/safely-access-the-pirate-bay",
+      "snippet": "Feb 2, 2026 · This guide explains how access to The Pirate Bay works in 2026, why it is blocked in so many regions, what risks users …"
+    },
+    {
+      "title": "Alternate links that are working : r/TPB - Reddit",
+      "url": "https://www.reddit.com/r/TPB/comments/a1srj3/alternate_links_that_are_working/",
+      "snippet": "Nov 30, 2018 · This user made a Chrome Extension that highlights and removes fake torrents …"
+    },
+    {
+      "title": "The 16 Best Safe Pirate Bay Alternatives in 2026 (Tested)",
+      "url": "https://privacysavvy.com/security/torrents/pirate-bay-alternatives/",
+      "snippet": "Jan 27, 2026 · Knowing Pirate Bay alternatives already helps when TPB suddenly goes down. This article lists the best alternative …"
+    }
+  ]
+}

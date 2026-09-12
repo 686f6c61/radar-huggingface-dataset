@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "42ailab/AIWriter-V1-4B-Typeset-Preview",
+  "slug": "42ailab-aiwriter-v1-4b-typeset-preview",
+  "author": "42ailab",
+  "url": "https://huggingface.co/42ailab/AIWriter-V1-4B-Typeset-Preview",
+  "created_at": "2026-09-12T01:56:54.000Z",
+  "updated_at": "2026-09-12T02:30:25.000Z",
+  "license": "aiwriter-model-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "42model",
+    "typst",
+    "typesetting",
+    "chinese",
+    "code-generation",
+    "writing",
+    "text-generation",
+    "zh",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 4280404896,
+  "storage_human": "4.3 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Read All About It, Pt. III - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Read_All_About_It,_Pt._III",
+      "snippet": "Read All About It, Pt."
+    },
+    {
+      "title": "Emeli Sandé – Read All About It, Pt. III Lyrics | Genius Lyrics",
+      "url": "https://genius.com/Emeli-sande-read-all-about-it-pt-iii-lyrics",
+      "snippet": "Feb 10, 2012 · “Read All About It, Pt. III” closes Emeli Sande’s debut album, Our Version of Events, with a lingering message of …"
+    },
+    {
+      "title": "Emeli Sandé - Read All About It Pt. III (Live from Aberdeen)",
+      "url": "https://www.youtube.com/watch?v=Q03E7oTc5qo",
+      "snippet": "Aug 11, 2012 · Watch Emeli perform the song she sang at the London 2012 Olympic Closing Ceremony. Download 'Read All About It …"
+    },
+    {
+      "title": "Emeli Sandé - Read All About It (Part III) Songtext",
+      "url": "https://www.songtexte.com/songtext/emeli-sande/read-all-about-it-part-iii-2b85bc7e.html",
+      "snippet": "Read All About It (Part III) Songtext von Emeli Sandé mit Lyrics, deutscher Übersetzung, Musik-Videos und Liedtexten kostenlos auf …"
+    },
+    {
+      "title": "Emeli Sandé | Video | Read All About It Pt III (Live from Aberdeen)",
+      "url": "https://www.universal-music.de/emeli-sande/videos/read-all-about-it-pt-iii-live-from-aberdeen-314190",
+      "snippet": "Mit Zeilen wie “Wir sind alle wundervolle Menschen, wann wurden wir so ängstlich?” und “Ich will singen, ich will schreien bis die …"
+    }
+  ]
+}

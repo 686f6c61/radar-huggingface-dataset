@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "vegapunkone/ner-model-japanese",
+  "slug": "vegapunkone-ner-model-japanese",
+  "author": "vegapunkone",
+  "url": "https://huggingface.co/vegapunkone/ner-model-japanese",
+  "created_at": "2026-09-12T10:20:00.000Z",
+  "updated_at": "2026-09-12T10:20:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tanie loty do: Phuket (HKT) od 1 787 zł - Skyscanner",
+      "url": "https://www.skyscanner.pl/loty-do/hkt/tanie-loty-do-phuket-lotnisko.html",
+      "snippet": "Szukasz lotów do: Phuket (HKT)? Porównaj oferty największych linii lotniczych i biur podróży i znajdź tanie loty do: Phuket bez …"
+    },
+    {
+      "title": "Phuket - Wakacje, Wczasy, Wycieczki | ITAKA",
+      "url": "https://www.itaka.pl/nasze-kierunki/tajlandia/phuket/",
+      "snippet": "Wakacje na Phuket z ITAKĄ - nr 1 w Polsce. Tajlandia - wczasy, wycieczki, oferty last minute i All Inclusive. Zaplanuj swoje …"
+    },
+    {
+      "title": "Podróż do Phuket – tanie loty i porady | Tanie-Loty",
+      "url": "https://www.tanie-loty.com.pl/tanie-loty-do-phuket.html",
+      "snippet": "1 day ago · Planując tanie loty do Phuket, porównuj nie tylko cenę samego biletu. Sprawdź długość przesiadki, lotnisko wylotu, …"
+    },
+    {
+      "title": "1 146 zł Tanie loty do Phuket | KAYAK",
+      "url": "https://www.kayak.pl/loty/Polska-PL0/Phuket-HKT",
+      "snippet": "Sep 7, 2016 · Skorzystaj z danych KAYAK dotyczących cen, terminów podróży, linii lotniczych i trendów sezonowych, aby porównać …"
+    },
+    {
+      "title": "Tanie loty do: Phuket od 1 787 zł w obie strony | Skyscanner",
+      "url": "https://www.skyscanner.pl/loty/loty-do-regionu/44292142/tanie-loty-do-phuket.html",
+      "snippet": "Porównaliśmy oferty najlepszych internetowych biur podróży i linii lotniczych, by znaleźć najtańsze bilety do: Phuket. U nas nie ma …"
+    }
+  ]
+}

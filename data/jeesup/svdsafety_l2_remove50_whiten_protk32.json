@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svdsafety_l2_remove50_whiten_protk32",
+  "slug": "jeesup-svdsafety_l2_remove50_whiten_protk32",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svdsafety_l2_remove50_whiten_protk32",
+  "created_at": "2026-09-12T02:23:26.000Z",
+  "updated_at": "2026-09-12T02:26:11.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CS2 Servers List with Low Ping & High FPS | xplay.gg",
+      "url": "https://xplay.gg/",
+      "snippet": "xplay.gg is a training project in CS2 with 16 game modes and rewards for playing. Complete challenges, earn xcoins, and exchange …"
+    },
+    {
+      "title": "Унікальні CS2 Сервери з Викликами та Нагородами від Xplay.gg",
+      "url": "https://xplay.gg/uk",
+      "snippet": "Отримуй скіни, просто граючи на наших серверах! xplay.gg — це тренувальний проєкт у CS2 з 16 ігровими режимами та …"
+    },
+    {
+      "title": "Xplay.gg - Training servers in CS2 | EXCORP.GG",
+      "url": "https://excorp.gg/products/xplay",
+      "snippet": "Xplay.gg is a service with gamification features that provides a diverse and comprehensive CS2 training experience. It hosts …"
+    },
+    {
+      "title": "Xplay.gg - Тренировочные сервера CS2 | EXCORP.GG",
+      "url": "https://excorp.gg/ru/products/xplay",
+      "snippet": "Xplay.gg — геймифицированный сервис для тренировок всех аспектов игры в CS2. На выделенных серверах в 16 режимах …"
+    },
+    {
+      "title": "Xplay.gg website. CS2 Servers List with Low Ping & High FPS | xplay.gg.",
+      "url": "http://websites.milonic.com/xplay.gg",
+      "snippet": "Xplay. Enjoy high FPS and low ping on xplay.gg CS2 Servers with skinchanger. Play DM, Retake, Duels, 5x5 and SURF across …"
+    }
+  ]
+}

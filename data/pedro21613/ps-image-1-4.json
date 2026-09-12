@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Pedro21613/PS-IMAGE-1.4",
+  "slug": "pedro21613-ps-image-1-4",
+  "author": "Pedro21613",
+  "url": "https://huggingface.co/Pedro21613/PS-IMAGE-1.4",
+  "created_at": "2026-09-12T01:57:40.000Z",
+  "updated_at": "2026-09-12T01:57:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "stable-diffusion-xl",
+    "stable-diffusion-xl-diffusers",
+    "lora",
+    "photorealistic",
+    "people",
+    "cars",
+    "textures",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:adapter:stabilityai/stable-diffusion-xl-base-1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 177481240,
+  "storage_human": "177 MB",
+  "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    },
+    {
+      "title": "长破折号怎么打？不是“——”，而是中间连着的，是占两个中文字符的 …",
+      "url": "https://zhidao.baidu.com/question/1416607.html",
+      "snippet": "是字体的原因，长破折号本身就是两个连接号，使用部分字体时（如微软雅黑），这两个连接号中间会是连续的，具体操作方法如下： …"
+    },
+    {
+      "title": "2026年笔记本电脑CPU天梯图（9月）",
+      "url": "https://www.zhihu.com/tardis/zm/art/376305519",
+      "snippet": "2026年笔记本电脑CPU天梯图，笔记本电脑CPU排行，是按照CPU的跑分进行排序，进行综合性能对比。可以一定程度上反应CPU的 …"
+    },
+    {
+      "title": "RFZone - 知乎",
+      "url": "https://www.zhihu.com/people/zdf-89",
+      "snippet": "专注 RF&amp;uW 测试测量技术十余年 回答数 226，获得 3,204 次赞同"
+    },
+    {
+      "title": "Atari Jaguar DOOM - WOLF3D Soundfont - Welcome to the ZDoom …",
+      "url": "https://forum.zdoom.org/viewtopic.php?t=45150",
+      "snippet": "Jan 25, 2014 · It is possible to load several soundfonts at once. FluidSynth can (look at how its \"official\" companion soundfont, …"
+    }
+  ]
+}

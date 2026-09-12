@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "cmndcntrlcyber/gemma4-26b-a4b-code-trainer-gguf",
+  "slug": "cmndcntrlcyber-gemma4-26b-a4b-code-trainer-gguf",
+  "author": "cmndcntrlcyber",
+  "url": "https://huggingface.co/cmndcntrlcyber/gemma4-26b-a4b-code-trainer-gguf",
+  "created_at": "2026-09-12T10:16:30.000Z",
+  "updated_at": "2026-09-12T10:36:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "quantized",
+    "code-generation",
+    "gemma-4-26b-a4b",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "base_model:quantized:google/gemma-4-26B-A4B-it",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 30859827328,
+  "storage_human": "30.9 GB",
+  "base_model": "google/gemma-4-26B-A4B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "As melhores trilhas em Paraisópolis | Wikiloc",
+      "url": "https://pt.wikiloc.com/trilhas/outdoor/brasil/minas-gerais/paraisopolis",
+      "snippet": "Encontre as melhores trilhas. Descubra os lugares mais bonitos do mundo, faça o download de percursos por GPS e siga os …"
+    },
+    {
+      "title": "As melhores trilhas em Gonçalves | Wikiloc",
+      "url": "https://pt.wikiloc.com/trilhas/outdoor/brasil/minas-gerais/goncalves",
+      "snippet": "Descubra os lugares mais bonitos do mundo, faça o download de percursos por GPS e siga os melhores trajetos em um mapa. …"
+    },
+    {
+      "title": "O que fazer em Gonçalves MG - trilhas, picos, cachoeiras e passeios",
+      "url": "https://www.mantiqueiratur.com.br/site/o-que-fazer-em-goncalves-mg/",
+      "snippet": "Gonçalves MG se tornou um cidade turística por conta de sua esplendorosa natureza, com vários picos, cachoeiras e mata …"
+    },
+    {
+      "title": "Turismo em Gonçalves (MG): Roteiro na Serra da Mantiqueira",
+      "url": "https://www.viajelivre.com.br/destinos/goncalves-mg",
+      "snippet": "Descubra o que fazer em Gonçalves-MG! Confira nosso roteiro completo com dicas de trilhas, cachoeiras, onde comer e pousadas …"
+    },
+    {
+      "title": "O que fazer em Gonçalves em 2026: 11 passeios p/ aproveitar",
+      "url": "https://www.dicasdeviagem.com/o-que-fazer-em-goncalves/",
+      "snippet": "Saiba tudo sobre o que fazer em Gonçalves com informações e dicas das melhores atrações, quando ir, estadias, pontos turísticos e …"
+    }
+  ]
+}

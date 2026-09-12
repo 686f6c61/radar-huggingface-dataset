@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "CrowdMind/Fred-9B-v1.2",
+  "slug": "crowdmind-fred-9b-v1-2",
+  "author": "CrowdMind",
+  "url": "https://huggingface.co/CrowdMind/Fred-9B-v1.2",
+  "created_at": "2026-09-12T02:20:40.000Z",
+  "updated_at": "2026-09-12T02:52:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19326300223,
+  "storage_human": "19.3 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Word: Seite duplizieren - so geht's - CHIP",
+      "url": "https://www.chip.de/ratgeber/software/word-seite-duplizieren-so-geht-s_795fa68d-ec72-4f44-b0f3-14abe1c55ec0.html",
+      "snippet": "Jan 31, 2025 · Zwar gibt es in Word keine spezielle Funktion, um eine ganze Seite schnell zu duplizieren, Sie können dies aber ganz …"
+    },
+    {
+      "title": "So duplizieren Sie einfach eine Seite in Word ... - ExtendOffice",
+      "url": "https://de.extendoffice.com/documents/word/7515-duplicate-a-page-in-word.html",
+      "snippet": "Aug 30, 2024 · Erfahren Sie, wie Sie eine Seite in Word einfach duplizieren – per Kopieren, Navigationsbereich, Makros oder PDF …"
+    },
+    {
+      "title": "Word Seite duplizieren • so einfach funktioniert's",
+      "url": "https://studyflix.de/informatik/word-seite-duplizieren-7239",
+      "snippet": "Einzelne Seiten kopiert man, indem man den Inhalt der gewünschten Seite markiert und mit [Strg + C] kopiert. Dann setzt man den …"
+    },
+    {
+      "title": "Word Seite duplizieren: Seiten in wenigen Klicks kopieren",
+      "url": "https://www.windows-guru.de/word-seite-duplizieren/",
+      "snippet": "Jan 22, 2025 · In diesem Artikel erkläre ich dir Schritt für Schritt, wie du Seiten in Microsoft Word kopierst, häufige Fehler vermeidest …"
+    },
+    {
+      "title": "Kopieren einer Seite in Word | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/word/copy-a-page-in-word",
+      "snippet": "Sie können eine Seite durch Markieren des gesamten Texts auf der Seite kopieren oder duplizieren, indem Sie ihn dann kopieren …"
+    }
+  ]
+}

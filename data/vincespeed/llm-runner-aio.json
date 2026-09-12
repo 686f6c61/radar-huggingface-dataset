@@ -5,7 +5,7 @@
   "author": "vincespeed",
   "url": "https://huggingface.co/vincespeed/llm-runner-aio",
   "created_at": "2026-07-01T03:11:32.000Z",
-  "updated_at": "2026-09-07T05:10:52.000Z",
+  "updated_at": "2026-09-12T01:50:34.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -48,8 +48,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 73328908813,
-  "storage_human": "73.3 GB",
+  "storage_bytes": 78228991337,
+  "storage_human": "78.2 GB",
   "base_model": "google/gemma-4-26B-A4B-it-qat-q4_0-gguf, google/gemma-4-31B-it, Qwen/Qwen3.8-27B, Qwen/Qwen3.6-35B-A3B, inclusionAI/Ling-3.0-tiny, google/gemma-4-E4B-it",
   "formats": [
     "gguf"

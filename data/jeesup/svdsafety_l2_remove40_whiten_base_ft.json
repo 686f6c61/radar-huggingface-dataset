@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svdsafety_l2_remove40_whiten_base_ft",
+  "slug": "jeesup-svdsafety_l2_remove40_whiten_base_ft",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svdsafety_l2_remove40_whiten_base_ft",
+  "created_at": "2026-09-12T02:28:09.000Z",
+  "updated_at": "2026-09-12T02:30:57.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "李启虎 - 百度百科",
+      "url": "https://baike.baidu.com/item/%E6%9D%8E%E5%90%AF%E8%99%8E/8012964",
+      "snippet": "李启虎，1939年7月出生于浙江温州，水声信号处理和声纳设计专家，中国科学院院士，中国科学院声学研究所研究员，厦门大学通信 …"
+    },
+    {
+      "title": "父子院士、兄弟院士、夫妻院士……中国院士亲属关系表！一起来看看我国各大院士及其家族院士 …",
+      "url": "https://news.qq.com/rain/a/20230918A012ZJ00",
+      "snippet": "Sep 18, 2023 · 例如，李四光和他的女儿、女婿，两代三人都是我国的院士。 此外，还有谢家荣、谢学锦的谢家院士，姜立夫、姜伯驹 …"
+    },
+    {
+      "title": "吕金虎（智能系统与网络专家，北京航空航天大学副校长、教授）_百 …",
+      "url": "https://baike.baidu.com/item/%E5%90%95%E9%87%91%E8%99%8E/16080802",
+      "snippet": "吕金虎，男，汉族，1974年9月出生于湖北省枝江市，智能系统与网络专家，北京航空航天大学副校长、党委常委， 兼科学技术研究院 …"
+    },
+    {
+      "title": "李启虎 - 维基百科，自由的百科全书 - zh.wikipedia.org",
+      "url": "https://zh.wikipedia.org/zh-cn/%E6%9D%8E%E5%90%AF%E8%99%8E",
+      "snippet": "Feb 4, 2022 · 李启虎 （1939年—）， 浙江 省 温州 市人。 水声信号处理和 声呐 设计专家，长期从事 信号处理 理论和声纳设计、研 …"
+    },
+    {
+      "title": "李启虎 - 维基百科，自由的百科全书",
+      "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%90%AF%E8%99%8E",
+      "snippet": "孙洪波 张艳宁 周志华 注：姚期智于2004年被选为中国科学院外籍院士，2015年放弃美国籍，加入中华人民共和国国籍，2017年转为 …"
+    }
+  ]
+}

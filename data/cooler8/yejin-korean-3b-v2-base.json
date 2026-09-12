@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "cooler8/yejin-korean-3b-v2-base",
+  "slug": "cooler8-yejin-korean-3b-v2-base",
+  "author": "cooler8",
+  "url": "https://huggingface.co/cooler8/yejin-korean-3b-v2-base",
+  "created_at": "2026-09-12T02:27:55.000Z",
+  "updated_at": "2026-09-12T02:41:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "korean",
+    "pretrained",
+    "from-scratch",
+    "qwen3-architecture",
+    "causal-lm",
+    "conversational",
+    "ko",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3015362560,
+  "parameters_human": "3.02B",
+  "storage_bytes": 6030760784,
+  "storage_human": "6.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Excel表格中其他人是图片，我的是=_xlfn.DISPIMG (\"XXX\",1) 为什么",
+      "url": "https://www.zhihu.com/question/380689977",
+      "snippet": "希望我的回答能解开你的疑惑~ 还有什么其他问题欢迎在评论区留言~ 如果有帮到你的话，别忘了留个赞哦~~ 如果想学习office小技巧 …"
+    },
+    {
+      "title": "IKEA cuisine : à éviter !!! - Ikea - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/ikea-cuisine-a-eviter-t50112.html",
+      "snippet": "Jan 22, 2016 · Re: IKEA cuisine : à éviter !!! Messagepar alainle59 » mer. août 30, 2017 9:41 am Les consommateurs contents se …"
+    },
+    {
+      "title": "Ikea - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/ikea-f453.html",
+      "snippet": "Apr 20, 2026 · Ikea Entrez dans le forum dédié à l'entreprise IKEA, spécialiste dans la conception et la vente de détail de mobilier et …"
+    },
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/selection/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，提供知识共享、互动交流和个人成长机会。"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "PollardWeights",
   "url": "https://huggingface.co/PollardWeights/Qwen2.5-14B-Instruct-Pollard",
   "created_at": "2026-08-30T05:33:39.000Z",
-  "updated_at": "2026-09-11T01:27:33.000Z",
+  "updated_at": "2026-09-12T04:27:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -21,7 +21,6 @@
     "llama.cpp",
     "ik_llama.cpp",
     "imatrix",
-    "qwen2",
     "quantized",
     "mixed-precision",
     "measured-allocation",
@@ -39,8 +38,8 @@
   "trending_score": 0,
   "parameters": 14770033664,
   "parameters_human": "14.77B",
-  "storage_bytes": 30857720588,
-  "storage_human": "30.9 GB",
+  "storage_bytes": 46953204012,
+  "storage_human": "47.0 GB",
   "base_model": "Qwen/Qwen2.5-14B-Instruct",
   "formats": [
     "gguf"

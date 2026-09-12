@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Mers123/jarvis",
+  "slug": "mers123-jarvis",
+  "author": "Mers123",
+  "url": "https://huggingface.co/Mers123/jarvis",
+  "created_at": "2026-09-12T09:52:36.000Z",
+  "updated_at": "2026-09-12T10:07:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RO 仙境傳說 Online 哈啦板 - 巴哈姆特",
+      "url": "https://forum.gamer.com.tw/A.php?bsn=4212",
+      "snippet": "歡迎來到RO 仙境傳說 Online哈啦板，最新資訊及情報分享、精華好文查找、創作交流討論，盡在巴哈姆特！"
+    },
+    {
+      "title": "Ragnarok Online：Valkyrie Uprising 哈啦板 - 巴哈姆特",
+      "url": "https://forum.gamer.com.tw/B.php?bsn=71598",
+      "snippet": "Sep 20, 2022 · 歡迎來到Ragnarok Online：Valkyrie Uprising哈啦板，最新資訊及情報分享、精華好文查找、創作交流討論，盡在巴哈 …"
+    },
+    {
+      "title": "Dúvida sobre katar das cinzas - Mercenários e Evoluções - Ragnarok ...",
+      "url": "https://forum.playragnarokonlinebr.com/index.php?/topic/83062-d%C3%BAvida-sobre-katar-das-cinzas/",
+      "snippet": "Sep 27, 2017 · olá amigos, estou pensando em colocar uma katar das cinzas com mosca no +11, e queria saber se vale a pena?, ou …"
+    },
+    {
+      "title": "【Flashu遊戲】Ragnarok Endurance Arena @RO 仙境傳說 Online 精華 …",
+      "url": "https://forum.gamer.com.tw/G2.php?bsn=4212&sn=3685",
+      "snippet": "Dec 30, 2005 · RO小遊戲 很好玩喔!! [絕無木馬程式] (\\) ( ˊ-ˋ) (\\ (y y)"
+    },
+    {
+      "title": "【情報】RO Zero: Global 精煉武防券現世 8月18日開服 一年更新藍圖",
+      "url": "https://forum.gamer.com.tw/Co.php?bsn=83142&sn=12642",
+      "snippet": "Aug 13, 2026 · Ragnarok Zero: Global presents an evolved gameplay experience that sets itself apart from the original, including …"
+    }
+  ]
+}

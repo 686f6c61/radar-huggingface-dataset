@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "JokerJokerJoker/cat03",
+  "slug": "jokerjokerjoker-cat03",
+  "author": "JokerJokerJoker",
+  "url": "https://huggingface.co/JokerJokerJoker/cat03",
+  "created_at": "2026-09-12T01:01:03.000Z",
+  "updated_at": "2026-09-12T09:46:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19412705376,
+  "storage_human": "19.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Liberal feminism - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Liberal_feminism",
+      "snippet": "Liberal feminism is inclusive and socially progressive, while broadly supporting existing institutions of power in liberal democratic …"
+    },
+    {
+      "title": "Liberal Feminism - Simply Psychology",
+      "url": "https://www.simplypsychology.org/liberal-feminism.html",
+      "snippet": "Aug 30, 2026 · Liberal feminists believe that women have the right to be as active in society as men, and thus be equally represented …"
+    },
+    {
+      "title": "Liberal Women - Liberal Party of Australia",
+      "url": "https://www.liberal.org.au/about/liberal-women",
+      "snippet": "As the peak body representing women in the Liberal Party, the FWC has been active in promoting women for elected office, …"
+    },
+    {
+      "title": "Why So Blue: Liberal Women Are Less Happy, More Lonely. But Why?",
+      "url": "https://cosm.aei.org/why-so-blue-liberal-women-are-less-happy-more-lonely-but-why/",
+      "snippet": "Feb 18, 2025 · Yes, new evidence from 2024 American Family Survey indicates it is. Young liberal women are markedly less satisfied …"
+    },
+    {
+      "title": "Liberal Democrat Women",
+      "url": "https://www.libdemwomen.org/",
+      "snippet": "The official organisation representing women in the Liberal Democrats Together, we aim to fight gender discrimination, shape policy, …"
+    }
+  ]
+}

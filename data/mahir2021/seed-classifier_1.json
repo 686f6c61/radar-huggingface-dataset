@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mahir2021/seed-classifier_1",
+  "slug": "mahir2021-seed-classifier_1",
+  "author": "mahir2021",
+  "url": "https://huggingface.co/mahir2021/seed-classifier_1",
+  "created_at": "2026-09-12T11:38:15.000Z",
+  "updated_at": "2026-09-12T11:45:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109490699,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437986308,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Play Games Online | Free Games at Gamesgames.com",
+      "url": "https://www.gamesgames.com/",
+      "snippet": "GamesGames is your zone to play online games! Play free games online including: racing games, sports games, Solitaire, and more …"
+    },
+    {
+      "title": "Play Great Hidden Object online for free - GamesGames",
+      "url": "https://www.gamesgames.com/games/hidden-objects?page=1",
+      "snippet": "Fire-up those brain-cells, flex those mental muscles, and improve your concentration with hidden object games! Play online for free!"
+    },
+    {
+      "title": "Play online Girls Games for Free | Gamesgames.com",
+      "url": "https://www.gamesgames.com/games/girls?page=1",
+      "snippet": "Girls Games Play the Best Girls Games for Free Online Do you love the worlds of fashion and romance? How about cooking and …"
+    },
+    {
+      "title": "Popular Games - Play popular online games on GamesGames",
+      "url": "https://www.gamesgames.com/games",
+      "snippet": "At gamesgames.com, you’ll find the most popular online games for one or more players. There’s everything from action games to …"
+    },
+    {
+      "title": "Play online Action Games for Free | Gamesgames.com",
+      "url": "https://www.gamesgames.com/games/action?page=1",
+      "snippet": "Collect and upgrade heroes, win weapons, and unlock all kinds of game features in Battle Arena RPG Online. Or check out the rest of …"
+    }
+  ]
+}

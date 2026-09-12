@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "yielden/sn120-intel-archive",
+  "slug": "yielden-sn120-intel-archive",
+  "author": "yielden",
+  "url": "https://huggingface.co/yielden/sn120-intel-archive",
+  "created_at": "2026-09-01T21:28:34.000Z",
+  "updated_at": "2026-09-12T09:49:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4638088254,
+  "storage_human": "4.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Últimos jogos Benfica - resultados, placar",
+      "url": "https://www.placardefutebol.com.br/time/benfica/ultimos-jogos",
+      "snippet": "Resultado do último jogo Benfica, placar dos últimos jogos, resultado do jogo de ontem Benfica. Quanto foi o jogo Benfica?"
+    },
+    {
+      "title": "Calendário e Resultados dos Jogos do Benfica - SL Benfica",
+      "url": "https://www.slbenfica.pt/pt-pt/futebol/calendario",
+      "snippet": "Acompanhe o Calendário e Resultados dos jogos do Sport Lisboa e Benfica. Informação de últimos e próximos jogos do clube em …"
+    },
+    {
+      "title": "Official Website of Sport Lisboa e Benfica - SL Benfica",
+      "url": "https://www.slbenfica.pt/en-us/",
+      "snippet": "Sep 13, 2026 · Official Website of Sport Lisboa e Benfica, where you can stay abreast of all the latest news from our Club and see the …"
+    },
+    {
+      "title": "SL Benfica vs Sporting CP derby estatísticas e resultados",
+      "url": "https://www.flashscore.pt/jogo/futebol/benfica-zBkyuyRI/sporting-cp-tljXuHBC/",
+      "snippet": "Segue os resultados do SL Benfica vs Sporting CP, estatísticas dos confrontos diretos, últimos resultados, notícias e muito mais …"
+    },
+    {
+      "title": "Benfica X Sporting - AO MINUTO | MAISFUTEBOL",
+      "url": "https://maisfutebol.iol.pt/jogo/aominuto/benfica/sporting/13828199",
+      "snippet": "Dec 5, 2025 · Foi uma coisa tão desproporcional que fez lembrar, a espaços, aquele dérbi de dezembro de 2012, quando o Benfica …"
+    }
+  ]
+}

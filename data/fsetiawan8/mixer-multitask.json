@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "fsetiawan8/mixer-multitask",
+  "slug": "fsetiawan8-mixer-multitask",
+  "author": "fsetiawan8",
+  "url": "https://huggingface.co/fsetiawan8/mixer-multitask",
+  "created_at": "2026-09-12T10:18:59.000Z",
+  "updated_at": "2026-09-12T10:19:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vanilla Tweaks",
+      "url": "https://vanillatweaks.net/",
+      "snippet": "Resource packs modify Minecraft's textures, models, shaders, and sounds, letting you customize the feel of your game."
+    },
+    {
+      "title": "Vanilla Tweaks - Resource Packs",
+      "url": "https://vanillatweaks.net/picker/resource-packs/",
+      "snippet": "Credits All packs utilizing vanilla shaders by ShockMicro, Ancientkingg & ioblackshaw Unique Dyes by MMStinks Allay Elytra by Ninni …"
+    },
+    {
+      "title": "Incidents | Vanilla Tweaks",
+      "url": "https://status.vanillatweaks.net/feed",
+      "snippet": "Incidents reported on status page for Vanilla …"
+    },
+    {
+      "title": "Discord Bot is down | Vanilla Tweaks",
+      "url": "https://status.vanillatweaks.net/incident/929754",
+      "snippet": "Welcome to Vanilla Tweaks status page for real-time and historical data on system performance."
+    },
+    {
+      "title": "Vanilla Tweaks - Data Packs",
+      "url": "https://vanillatweaks.net/picker/datapacks/",
+      "snippet": "Some packs have overlapping files. You may drag and drop to change the list order. Packs at the top override those below."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "Jongbin-kr",
   "url": "https://huggingface.co/Jongbin-kr/qwen2.5-coder-7b-verireason-grpo-official-full-ft",
   "created_at": "2026-09-02T19:00:13.000Z",
-  "updated_at": "2026-09-08T02:26:05.000Z",
+  "updated_at": "2026-09-11T07:11:05.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -28,12 +28,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 2302,
+  "downloads_30d": 2317,
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",
-  "storage_bytes": 258948029290,
-  "storage_human": "258.9 GB",
+  "storage_bytes": 274179301442,
+  "storage_human": "274.2 GB",
   "base_model": "Jongbin-kr/qwen2.5-coder-7b-verireason_sft-reasoning_official-full-ft",
   "formats": [
     "safetensors"

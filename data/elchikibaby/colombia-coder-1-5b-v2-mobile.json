@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Elchikibaby/colombia-coder-1.5b-v2-mobile",
+  "slug": "elchikibaby-colombia-coder-1-5b-v2-mobile",
+  "author": "Elchikibaby",
+  "url": "https://huggingface.co/Elchikibaby/colombia-coder-1.5b-v2-mobile",
+  "created_at": "2026-09-12T02:41:08.000Z",
+  "updated_at": "2026-09-12T02:41:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 824178368,
+  "storage_human": "824 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prisvärda möbler & heminredning – allt för ditt hem - IKEA",
+      "url": "https://www.ikea.com/se/sv/?msockid=31705a1dff176ce630de4dcffe966d7d",
+      "snippet": "Hitta allt du behöver inom inredning, möbler och vitvaror. Inspiration för alla hem och plånböcker. Handla online eller i ditt lokala …"
+    },
+    {
+      "title": "Affordable Furniture And Home Inspiration - IKEA UK",
+      "url": "https://www.ikea.com/gb/en/?msockid=31705a1dff176ce630de4dcffe966d7d",
+      "snippet": "Discover affordable furniture and stylish home inspiration at IKEA. Designed for all budgets, styles, and spaces. Shop online or visit a …"
+    },
+    {
+      "title": "IKEA Kitchen Planner",
+      "url": "https://kitchen.planner.ikea.com/de/de/",
+      "snippet": "Plan your dream kitchen online with IKEA's 3D Kitchen Planner, offering customizable designs, helpful tips, and step-by-step guidance."
+    },
+    {
+      "title": "Muebles y Decoración al Mejor Precio - IKEA",
+      "url": "https://www.ikea.com/es/es/?msockid=31705a1dff176ce630de4dcffe966d7d",
+      "snippet": "En la tienda de muebles y decoración IKEA encontrarás sofás, colchones, decoración, electrodomésticos y muebles para tu …"
+    },
+    {
+      "title": "Mobilier et décorations - Intérieur et extérieur - IKEA",
+      "url": "https://www.ikea.com/fr/fr/?msockid=31705a1dff176ce630de4dcffe966d7d",
+      "snippet": "Chez IKEA, nous pensons que chacun mérite un intérieur à la fois fonctionnel, confortable et esthétique. Découvrez une large …"
+    }
+  ]
+}

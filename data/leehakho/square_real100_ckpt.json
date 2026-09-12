@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "LeeHakHo/square_real100_ckpt",
+  "slug": "leehakho-square_real100_ckpt",
+  "author": "LeeHakHo",
+  "url": "https://huggingface.co/LeeHakHo/square_real100_ckpt",
+  "created_at": "2026-09-11T22:35:08.000Z",
+  "updated_at": "2026-09-12T05:11:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robomimic",
+    "diffusion-policy",
+    "behavior-cloning",
+    "robotics",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 124854147498,
+  "storage_human": "124.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux pièces …"
+    },
+    {
+      "title": "Descargar YouTube: PC / Mac / Android (APK)",
+      "url": "https://es.ccm.net/descargas/entretenimiento/6598-youtube/",
+      "snippet": "Feb 12, 2024 · YouTube se puede conectar a Facebook, Twitter, Talk, Reddit, Pinterest, Tumblr, LinkedIn y más. Asimismo, …"
+    },
+    {
+      "title": "Descargar Snaptube: PC, Android (APK) - CCM",
+      "url": "https://es.ccm.net/descargas/internet/6550-snaptube/",
+      "snippet": "Feb 6, 2024 · Snaptube es un programa que descarga de forma rápida y sencilla contenidos de YouTube y otras plataformas como …"
+    },
+    {
+      "title": "Impossible de voter aux sondages messenger - Facebook Messenger",
+      "url": "https://forums.commentcamarche.net/forum/affich-36709585-impossible-de-voter-aux-sondages-messenger",
+      "snippet": "Jun 13, 2020 · Depuis quelques jours je ne peux plus voter aux sondages sur Facebook messenger. Je vois que mes amis lancent …"
+    },
+    {
+      "title": "ZDNET - Actualité, business et technologies pour les professionne ...",
+      "url": "https://www.zdnet.fr/",
+      "snippet": "Actualité, business et technologies pour les professionnels"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Senttonight/My-GPT-SoVITS",
+  "slug": "senttonight-my-gpt-sovits",
+  "author": "Senttonight",
+  "url": "https://huggingface.co/Senttonight/My-GPT-SoVITS",
+  "created_at": "2026-09-12T02:24:24.000Z",
+  "updated_at": "2026-09-12T03:05:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "tensorboard",
+    "tts",
+    "gpt-sovits",
+    "sovits",
+    "voice-cloning",
+    "text-to-speech",
+    "zh",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18451802816,
+  "storage_human": "18.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ABV - АБВ Поща - Вход",
+      "url": "https://home.abv.bg/",
+      "snippet": "АБВ Поща е бърза, удобна и сигурна! Разполагате с 15 GB пространство, управлявате контакти, а пощата ви е защитена. …"
+    },
+    {
+      "title": "DOX.bg - Файл организатор",
+      "url": "https://dox.abv.bg/",
+      "snippet": "DOX.bg предоставя безплатно пространство от 5 GB за съхранение, организация и споделяне на файлове с големина до 2G."
+    },
+    {
+      "title": "АБВ Поща - ABV",
+      "url": "http://mail20.abv.bg/app/servlet/box",
+      "snippet": "АБВ.БГ - Нещо повече от пощенска кутия ВАШАТА ПОТРЕБИТЕЛСКА СЕСИЯ Е ИЗТЕКЛА! За да влезете обратно в …"
+    },
+    {
+      "title": "АБВ Профил - ABV",
+      "url": "https://passport.abv.bg/app/profiles/login",
+      "snippet": "С този профил може да ползвате всички АБВ услуги: АБВ Поща, DOX."
+    },
+    {
+      "title": "Административен панел - АБВ на твой ...",
+      "url": "https://apps.abv.bg/cpanel/app/login",
+      "snippet": "С услугата \"АБВ на твой домейн\" можете да регистрирате до десет имейл адреса на ваш собствен домейн (напр. …"
+    }
+  ]
+}

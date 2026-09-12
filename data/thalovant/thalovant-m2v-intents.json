@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "thalovant/thalovant-m2v-intents",
+  "slug": "thalovant-thalovant-m2v-intents",
+  "author": "thalovant",
+  "url": "https://huggingface.co/thalovant/thalovant-m2v-intents",
+  "created_at": "2026-09-08T19:36:28.000Z",
+  "updated_at": "2026-09-12T02:37:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "model2vec",
+  "languages": [],
+  "tags": [
+    "model2vec",
+    "safetensors",
+    "text-classification",
+    "intent-classification",
+    "ovos",
+    "thalovant",
+    "base_model:Jarbas/m2v-256-distiluse-base-multilingual-cased-v2",
+    "base_model:finetune:Jarbas/m2v-256-distiluse-base-multilingual-cased-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 388,
+  "trending_score": 0,
+  "parameters": 30577920,
+  "parameters_human": "30.6M",
+  "storage_bytes": 861742388,
+  "storage_human": "862 MB",
+  "base_model": "Jarbas/m2v-256-distiluse-base-multilingual-cased-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=07b640c85dfa62e9028e571a5c8663e2",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Simple index - piwheels",
+      "url": "https://www.piwheels.org/simple/",
+      "snippet": "... ai-simple-engine-common plotpage caddpy ssv memray sylva-fire tokenspeed-fa3 ... model cqhyxk fcollections examanalyserinf219v23 aws-solutions-konstruk ..."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=07b640c85dfa62e9028e571a5c8663e2",
+      "snippet": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and …"
+    }
+  ]
+}

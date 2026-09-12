@@ -24,8 +24,8 @@
     "base_model:quantized:zai-org/GLM-5.3-Flash-BF16",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 2056,
+  "likes": 1,
+  "downloads_30d": 2077,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

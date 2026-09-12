@@ -5,7 +5,7 @@
   "author": "vietnamese-acsa",
   "url": "https://huggingface.co/vietnamese-acsa/bamibert-hotel-acsa-multilabel",
   "created_at": "2026-08-31T10:03:46.000Z",
-  "updated_at": "2026-08-31T10:04:08.000Z",
+  "updated_at": "2026-09-11T17:47:20.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 25,
+  "downloads_30d": 29,
   "trending_score": 0,
   "parameters": 103055752,
   "parameters_human": "103.1M",
-  "storage_bytes": 412252361,
-  "storage_human": "412 MB",
+  "storage_bytes": 824499457,
+  "storage_human": "824 MB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "jsnsbsbjwj/nkx",
+  "slug": "jsnsbsbjwj-nkx",
+  "author": "jsnsbsbjwj",
+  "url": "https://huggingface.co/jsnsbsbjwj/nkx",
+  "created_at": "2026-09-12T10:28:22.000Z",
+  "updated_at": "2026-09-12T10:29:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55191736,
+  "storage_human": "55 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zoek huizen en appartementen te koop / huur in Nederland | Funda",
+      "url": "https://www.funda.nl/",
+      "snippet": "Vind je huis op Funda! Het grootste aanbod van koopwoningen en huurwoningen in Nederland. Vind inzichten & inspiratie en check …"
+    },
+    {
+      "title": "Koopwoningen Nederland - huizen te koop in Nederland | Funda",
+      "url": "https://www.funda.nl/zoeken/koop/?selected_area=nl",
+      "snippet": "Op Funda vind je 94611 huizen te koop in Nederland. Funda helpt je je nieuwe huis te vinden met zoekfilters, foto's, video's en …"
+    },
+    {
+      "title": "Koopwoningen - huizen te koop op Funda | Funda",
+      "url": "https://www.funda.nl/zoeken/koop/",
+      "snippet": "Op Funda vind je 96273 huizen te koop in Nederland. Funda helpt je je nieuwe huis te vinden met zoekfilters, foto's, video's en …"
+    },
+    {
+      "title": "Koopwoningen - huizen te koop op Funda | Funda",
+      "url": "https://www.funda.nl/zoeken/kaart/koop/",
+      "snippet": "Vind uw nieuwe huis op Funda! Zoek koopwoningen in Nederland."
+    },
+    {
+      "title": "Homes for sale - houses for sale on Funda | Funda",
+      "url": "https://www.funda.nl/en/zoeken/koop/",
+      "snippet": "On Funda you find 96262 houses for sale in Nederland. Funda helps you finding your new house with search filters, photos, videos …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Khalyie/mnist_model",
+  "slug": "khalyie-mnist_model",
+  "author": "Khalyie",
+  "url": "https://huggingface.co/Khalyie/mnist_model",
+  "created_at": "2026-09-12T09:49:41.000Z",
+  "updated_at": "2026-09-12T09:50:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6507990,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/r/all+/",
+      "snippet": "Create an account to follow your favorite communities and start taking part in conversations."
+    },
+    {
+      "title": "ImmoScout24 : r/askberliners - Reddit",
+      "url": "https://www.reddit.com/r/askberliners/comments/1bn8kn1/immoscout24/",
+      "snippet": "Mar 25, 2024 · I recently wanted to try immoscout24 again, after more than 1,5 yrs. last time i used it it was a disaster, i sent so many …"
+    },
+    {
+      "title": "闲鱼和转转哪个比较靠谱？ - 知乎",
+      "url": "https://www.zhihu.com/question/65313130",
+      "snippet": "转转一生黑，说一下本人被坑的经历吧。 11.8号，本人在转转平台出售了一台电脑，挂上后被人秒拍，被骗子讲价后3300包邮卖出。 …"
+    },
+    {
+      "title": "助学贷款四年32000毕业还多少钱？一毕业就还清和分期还款分别要还 …",
+      "url": "https://www.zhihu.com/question/390362602",
+      "snippet": "新更：想要一次性提前还的，务必看到这个消息：一定要在8.15前申请提前还款，8.20前可以主动还，也可以8.20他们扣你支付宝账号 …"
+    },
+    {
+      "title": "Alternate links that are working : r/TPB - Reddit",
+      "url": "https://www.reddit.com/r/TPB/comments/a1srj3/alternate_links_that_are_working/",
+      "snippet": "Nov 30, 2018 · The whole point of this post is to show alternate links that are working in case thepiratebay.org is down and to show …"
+    }
+  ]
+}

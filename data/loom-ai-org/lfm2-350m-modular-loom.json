@@ -5,7 +5,7 @@
   "author": "loom-ai-org",
   "url": "https://huggingface.co/loom-ai-org/lfm2-350m-modular-loom",
   "created_at": "2026-08-11T12:24:00.000Z",
-  "updated_at": "2026-08-31T16:43:44.000Z",
+  "updated_at": "2026-09-11T09:16:44.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -23,6 +23,7 @@
   "tags": [
     "loom-py-rt",
     "gguf",
+    "loom",
     "text-generation",
     "en",
     "ar",

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "OpenCOReTechnologies/CORe-Pico-V1.5-e",
+  "slug": "opencoretechnologies-core-pico-v1-5-e",
+  "author": "OpenCOReTechnologies",
+  "url": "https://huggingface.co/OpenCOReTechnologies/CORe-Pico-V1.5-e",
+  "created_at": "2026-09-12T01:52:37.000Z",
+  "updated_at": "2026-09-12T02:09:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "core",
+    "text-generation",
+    "causal-lm",
+    "custom-architecture",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 195669504,
+  "parameters_human": "195.7M",
+  "storage_bytes": 1469471832,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sprachforscher über Partei-Rhetorik: „Die Linke nutzt Schimpfvokabular ...",
+      "url": "https://taz.de/Sprachforscher-ueber-Partei-Rhetorik/!5158721/",
+      "snippet": "Aug 2, 2009 · Die Grünen wollen – die Linken fordern, sagt der Sprachforscher Noah Bubenhofer, der die Rhetorik der Politik …"
+    },
+    {
+      "title": "Politiktest 2026: Welche Partei passt zu mir? | CoreOpinion",
+      "url": "https://coreopinion.org/de",
+      "snippet": "Der Politiktest für Deutschland. 70 Aussagen zeigen deine Übereinstimmung mit SPD, CDU/CSU, Grünen, FDP, AfD, Linke und …"
+    },
+    {
+      "title": "Die Linke – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Die_Linke",
+      "snippet": "Die Partei sieht sich „in einer parteipolitischen Traditionslinie, die auf Rosa Luxemburg und Karl Liebknecht zurückreicht“. [14] Die …"
+    },
+    {
+      "title": "Grüne und Linkspartei: Bis zur Selbstaufgabe | taz.de",
+      "url": "https://taz.de/Gruene-und-Linkspartei/!6124584/",
+      "snippet": "Die Grünen werden für ihre Mittigkeit abgestraft, die Linke profitiert davon. Den Schuss scheinen die Grünen bis heute nicht gehört zu …"
+    },
+    {
+      "title": "„Grüne und linke Spinner“ - Merz-Tirade im Bierkeller sorgt für ...",
+      "url": "https://www.focus.de/politik/deutschland/focus-online-live-vor-ort-schlusskundgebung-von-cdu-csu-im-liveticker_id_260742374.html",
+      "snippet": "Feb 24, 2025 · Am Samstagnachmittag hat die Union in ihrer Schlusskundgebung noch einmal Einheit und Entschlossenheit gezeigt. …"
+    }
+  ]
+}

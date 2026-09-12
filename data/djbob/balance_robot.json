@@ -5,7 +5,7 @@
   "author": "djbob",
   "url": "https://huggingface.co/djbob/balance_robot",
   "created_at": "2026-09-02T02:03:43.000Z",
-  "updated_at": "2026-09-11T03:56:23.000Z",
+  "updated_at": "2026-09-11T11:32:41.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",
@@ -24,7 +24,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1235933,
+  "storage_bytes": 1295364,
   "storage_human": "1 MB",
   "base_model": null,
   "formats": [

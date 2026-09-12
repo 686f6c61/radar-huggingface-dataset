@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ksiminyu/mms-1b-fl102-swahili-train1.0",
+  "slug": "ksiminyu-mms-1b-fl102-swahili-train1-0",
+  "author": "ksiminyu",
+  "url": "https://huggingface.co/ksiminyu/mms-1b-fl102-swahili-train1.0",
+  "created_at": "2026-09-12T10:10:57.000Z",
+  "updated_at": "2026-09-12T10:10:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "My Free Farm - Browsergame - Jetzt kostenlos spielen!",
+      "url": "https://www.myfreefarm.de/",
+      "snippet": "Beim kostenlosen Browsergame My Free Farm dreht sich alles um Deinen eigenen Bauernhof. Pflanze online Gemüse und …"
+    },
+    {
+      "title": "MyFreeFarm - Browsergame - Jetzt kostenlos spielen",
+      "url": "https://www.myfreefarm.de/browsergame/",
+      "snippet": "Im unterhaltsamen Browsergame My Free Farm baut der Spieler seinen eigenen Bauernhof auf. Er bewirtschaftet seine Äcker, …"
+    },
+    {
+      "title": "My Free Farm - Browser game - Play for free now!",
+      "url": "https://www.myfreefarm.com/",
+      "snippet": "The free browser based online fame My Free Farm revolves entirely around your very own farm. Plant your online fields with …"
+    },
+    {
+      "title": "My Free Farm - Browsergame - Speel gratis mee!",
+      "url": "https://myfreefarm.nl/",
+      "snippet": "Bij het gratis browserspel My Free Farm draait alles om je eigen boerderij. Plant online groente en voer voor je dieren op je akker. …"
+    },
+    {
+      "title": "My Free Farm Browser Spiele Klassiker von upjers",
+      "url": "https://de.upjers.com/myfreefarm",
+      "snippet": "In My Free Farm wächst dein Bauernhof weit über den klassischen Ackerbau hinaus und entwickelt sich zu einer vielseitigen …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "cHunter789",
   "url": "https://huggingface.co/cHunter789/Qwen3.8-27B-i1-IQ4_KS_KT-GGUF",
   "created_at": "2026-08-14T19:40:37.000Z",
-  "updated_at": "2026-09-11T08:21:31.000Z",
+  "updated_at": "2026-09-11T12:48:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -29,7 +29,7 @@
     "conversational"
   ],
   "likes": 41,
-  "downloads_30d": 16880,
+  "downloads_30d": 16942,
   "trending_score": 8,
   "parameters": 26895998464,
   "parameters_human": "26.90B",

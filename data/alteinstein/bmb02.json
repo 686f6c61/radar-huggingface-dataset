@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "AltEinstein/bmb02",
+  "slug": "alteinstein-bmb02",
+  "author": "AltEinstein",
+  "url": "https://huggingface.co/AltEinstein/bmb02",
+  "created_at": "2026-09-12T08:03:57.000Z",
+  "updated_at": "2026-09-12T09:49:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6470901792,
+  "storage_human": "6.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TipeeeStream",
+      "url": "https://www.tipeeestream.com/",
+      "snippet": "TipeeeStream is the best & cheapest way to collect tips as a streamer and display alerts (donation alerts, counters, top & last ...)."
+    },
+    {
+      "title": "TipeeeStream - How it works",
+      "url": "https://www.tipeeestream.com/howitworks",
+      "snippet": "TipeeeStream is the first European donation collection tool for Streamers (Twitch and YouTube). It allows them to receive Tips …"
+    },
+    {
+      "title": "TipeeeStream - Log in or Sign up",
+      "url": "https://widgets.tipeeestream.com/login",
+      "snippet": "You're a streamer? Create your donation page with your Twitch or Hitbox account - TipeeeStream"
+    },
+    {
+      "title": "tipeeestream / Streamlabs",
+      "url": "https://streamlabs.com/tipeeestream?msockid=05b51e94c13e661e18840946c0a167d9",
+      "snippet": "tipeeestream's official website powered by Streamlabs"
+    },
+    {
+      "title": "Collect Tips while you're streaming!",
+      "url": "https://www.tipeeestream.com/login",
+      "snippet": "TipeeeStream is the best & cheapest way to collect tips as a streamer and display alerts (donation alerts, counters, top & last ...)."
+    }
+  ]
+}

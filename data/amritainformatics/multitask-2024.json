@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Amritainformatics/multitask-2024",
+  "slug": "amritainformatics-multitask-2024",
+  "author": "Amritainformatics",
+  "url": "https://huggingface.co/Amritainformatics/multitask-2024",
+  "created_at": "2026-09-12T02:49:16.000Z",
+  "updated_at": "2026-09-12T02:49:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fenêtre aide et support qui s'ouvre seule [Résolu] - Windows 7",
+      "url": "https://forums.commentcamarche.net/forum/affich-19363587-fenetre-aide-et-support-qui-s-ouvre-seule",
+      "snippet": "Bonjour, J'ai un problème avec mon \"aide et support windows\" sous Windows 7. En effet, lorsque j'allume mon PC, une fenêtre \"aide …"
+    },
+    {
+      "title": "Comment activer les touches f1.... - Forum Windows 10",
+      "url": "https://forums.commentcamarche.net/forum/affich-34110076-comment-activer-les-touches-f1",
+      "snippet": "Nov 20, 2016 · Bonjour Tapes par exemple icône Windows + F1 Normalement cette fonction doit t'ouvrir une page internet \"comment …"
+    },
+    {
+      "title": "Explorateur de fichiers : comment annuler une action - Windows 10",
+      "url": "https://forums.commentcamarche.net/forum/affich-32636197-explorateur-de-fichiers-comment-annuler-une-action",
+      "snippet": "Oct 12, 2015 · Bonjour, sous Windows8 comme sous Windows10 (hélas), où se trouve la fonction d'annulation d'une action ? …"
+    },
+    {
+      "title": "Comment désactiver l'aide de windows - Forum Windows 10",
+      "url": "https://forums.commentcamarche.net/forum/affich-36131014-comment-desactiver-l-aide-de-windows",
+      "snippet": "Jul 22, 2019 · A voir également: Comment obtenir de l’aide dans windows 10 Clé windows 10- Guide Fin windows 10- Guide Pilote …"
+    },
+    {
+      "title": "Comment supprimer la page obtenir de l’aide dans Windows 10?",
+      "url": "https://forums.commentcamarche.net/forum/affich-36785924-comment-supprimer-la-page-obtenir-de-l-aide-dans-windows-10",
+      "snippet": "Aug 3, 2020 · Meilleure réponse: Bonjour, Essaye ça avec W10 Va dans Paramètres → Système Dans le menu de gauche la ligne → …"
+    }
+  ]
+}

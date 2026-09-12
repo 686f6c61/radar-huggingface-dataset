@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "sportsgirl/pic06",
+  "slug": "sportsgirl-pic06",
+  "author": "sportsgirl",
+  "url": "https://huggingface.co/sportsgirl/pic06",
+  "created_at": "2026-09-11T23:19:39.000Z",
+  "updated_at": "2026-09-12T09:50:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22648156272,
+  "storage_human": "22.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FreeCell solitaire | Jeu en ligne",
+      "url": "https://solitaire-jeu.eu/freecell/",
+      "snippet": "Comment jouer à FreeCell ? Comme dans la plupart des jeux de solitaire, le joueur commence avec un jeu de cartes mélangé et doit …"
+    },
+    {
+      "title": "FreeCell - Play Online & 100% Free | Solitaired.com",
+      "url": "https://solitaired.com/freecell",
+      "snippet": "Play FreeCell for free with no download or registration required. Similar to Solitaire, this game lets you to move cards to free open …"
+    },
+    {
+      "title": "Freecell Solitaire - Green Felt",
+      "url": "https://greenfelt.net/freecell",
+      "snippet": "Play Freecell Solitaire online, right in your browser. Green Felt solitaire games feature innovative game-play features and a friendly, …"
+    },
+    {
+      "title": "Freecell Solitaire Gratuit - Jouez en Ligne | JeuSol.fr",
+      "url": "https://www.jeusol.fr/freecell",
+      "snippet": "Jouez au Freecell Solitaire en ligne, gratuit, en plein écran et sans téléchargement. Essayez nos défis quotidiens de solitaire."
+    },
+    {
+      "title": "Freecell.fr - Freecell Gratuit",
+      "url": "https://www.freecell.fr/",
+      "snippet": "Bienvenue sur notre site pour jouer gratuitement en ligne au jeu de cartes Freecell Solitaire. Il suffit d’avoir travaillé dans un bureau …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "umesh251/Reinforce-PixelCopter",
+  "slug": "umesh251-reinforce-pixelcopter",
+  "author": "umesh251",
+  "url": "https://huggingface.co/umesh251/Reinforce-PixelCopter",
+  "created_at": "2026-09-12T09:47:23.000Z",
+  "updated_at": "2026-09-12T10:00:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Pixelcopter-PLE-v0",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40125,
+  "storage_human": "40125 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rockstar Games",
+      "url": "https://www.rockstargames.com/",
+      "snippet": "Explore Rockstar Games, the official hub for iconic games like Grand Theft Auto and Red Dead Redemption."
+    },
+    {
+      "title": "Downloads - Rockstar Games",
+      "url": "https://www.rockstargames.com/downloads/",
+      "snippet": "The official home of Rockstar Games Red Dead Redemption 2 America, 1899. The end of the Wild West era has begun as lawmen …"
+    },
+    {
+      "title": "Rockstar Games Customer Support",
+      "url": "https://support.rockstargames.com/",
+      "snippet": "Jun 26, 2026 · Get help with your Rockstar Games technical issues using our online tools, support articles, and agent assistance."
+    },
+    {
+      "title": "Rockstar Games",
+      "url": "https://socialclub.rockstargames.com/profile/signin",
+      "snippet": "Sign in to your Rockstar Games Social Club account to access exclusive features and enhance your gaming experience."
+    },
+    {
+      "title": "Rockstar Games",
+      "url": "https://socialclub.rockstargames.com/signup/",
+      "snippet": "Create your Rockstar Games Social Club account to access exclusive game content, special events, and enhance your gaming …"
+    }
+  ]
+}

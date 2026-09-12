@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "bbrownzachary/image-captioning-v3",
+  "slug": "bbrownzachary-image-captioning-v3",
+  "author": "bbrownzachary",
+  "url": "https://huggingface.co/bbrownzachary/image-captioning-v3",
+  "created_at": "2026-09-12T10:05:51.000Z",
+  "updated_at": "2026-09-12T10:05:57.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "image-captioning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Übersicht aktueller Neubauprojekte in Wien - Jetzt anfragen!",
+      "url": "https://www.neubauprojekte.wien/",
+      "snippet": "Aktuelle Neubauprojekte Wien: Wir zeigen Ihnen alle Projekte mit Neubauwohnungen, neuen Dachgeschosswohnungen und …"
+    },
+    {
+      "title": "Datenschutz - Neubauprojekte in Wien",
+      "url": "https://www.neubauprojekte.wien/datenschutz/",
+      "snippet": "You need to enable JavaScript to run this app."
+    },
+    {
+      "title": "Bauträgerliste Wien",
+      "url": "https://www.neubauprojekte.wien/pdf/bautraeger-liste-wien.pdf",
+      "snippet": "neubauprojekte.wien Bauträgerliste Wien Bauträger mit Neubauprojekten in Wien"
+    },
+    {
+      "title": "Genossenschaften Wien",
+      "url": "https://www.neubauprojekte.wien/pdf/genossenschaften-liste-wien.pdf",
+      "snippet": "Gemeinnützige Bauvereinigungen mit Neubauprojekten in Wien 1/2"
+    }
+  ]
+}

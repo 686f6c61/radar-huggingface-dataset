@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Codemaster67/Olmo-1b_token_extension_modern_molbert",
+  "slug": "codemaster67-olmo-1b_token_extension_modern_molbert",
+  "author": "Codemaster67",
+  "url": "https://huggingface.co/Codemaster67/Olmo-1b_token_extension_modern_molbert",
+  "created_at": "2026-09-12T11:33:20.000Z",
+  "updated_at": "2026-09-12T11:34:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo",
+    "text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1179453440,
+  "parameters_human": "1.18B",
+  "storage_bytes": 2358919904,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/index.php/?lang=gr",
+      "snippet": "Email or mobile number Password"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/gr_index.html/",
+      "snippet": "When this happens, it's usually because the owner only shared it with a small group of people, changed who can see it or it's been …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://secure.facebook.com/r.php/?entry_point=login",
+      "snippet": "Create an account to connect with friends, family and communities of people who share your interests."
+    },
+    {
+      "title": "Log Into Facebook",
+      "url": "https://secure.facebook.com/login/",
+      "snippet": "Log into Facebook to start sharing and connecting with your friends, family, and people you know."
+    },
+    {
+      "title": "Συνδεθείτε στο Facebook | Κέντρο βοήθειας Messenger",
+      "url": "https://www.messenger.com/help/messenger-app/185285184853471/?locale=el_GR",
+      "snippet": "Συνδεθείτε χρησιμοποιώντας τα στοιχεία σύνδεσής σας στο Facebook Πηγαίνετε στη διεύθυνση facebook.com. Πατήστε Email ή …"
+    }
+  ]
+}

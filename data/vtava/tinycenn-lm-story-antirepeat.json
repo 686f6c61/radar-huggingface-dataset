@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "vtava/TinyCeNN-LM-Story-AntiRepeat",
+  "slug": "vtava-tinycenn-lm-story-antirepeat",
+  "author": "vtava",
+  "url": "https://huggingface.co/vtava/TinyCeNN-LM-Story-AntiRepeat",
+  "created_at": "2026-09-12T11:43:23.000Z",
+  "updated_at": "2026-09-12T11:43:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-generation",
+    "cenn",
+    "mixture-of-experts",
+    "tinystories",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 967419,
+  "storage_human": "967419 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Coursera | Foro Económico Mundial",
+      "url": "https://es.weforum.org/organizations/coursera/",
+      "snippet": "Jun 18, 2024 · Launched in 2012 by Andrew Ng and Daphne Koller Coursera’s mission is to provide universal access to learning. It is …"
+    },
+    {
+      "title": "coursera - 知乎",
+      "url": "https://www.zhihu.com/topic/19742204/hot",
+      "snippet": "Coursera是免费大型公开在线课程项目，由美国斯坦福大学两名计算机科学教授创办。旨在同世界顶尖大学合作，在线提供免费的网 …"
+    },
+    {
+      "title": "Coursera | World Economic Forum",
+      "url": "https://www.weforum.org/organizations/coursera/",
+      "snippet": "3 days ago · Launched in 2012 by Andrew Ng and Daphne Koller Coursera’s mission is to provide universal access to learning. It is …"
+    },
+    {
+      "title": "为何中国人迷恋吴恩达的机器学习课？ - 知乎",
+      "url": "https://www.zhihu.com/question/65780182",
+      "snippet": "回归正题，大家讨论的应该是Coursera上这门免费的机器学习课程，以这门课为例，Coursera上总共有49285个人给出了评分，平均得 …"
+    },
+    {
+      "title": "MOOC 网站：Coursera、Udacity、edX，哪个更适合中国人？你 ...",
+      "url": "https://www.zhihu.com/question/21095181",
+      "snippet": "在中国毫无疑问，coursera有绝对的优势，不用翻墙，其他的平台基本都借助youtube，本身coursera的国际化最好（跨越语言和国 …"
+    }
+  ]
+}

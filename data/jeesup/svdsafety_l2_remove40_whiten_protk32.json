@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svdsafety_l2_remove40_whiten_protk32",
+  "slug": "jeesup-svdsafety_l2_remove40_whiten_protk32",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svdsafety_l2_remove40_whiten_protk32",
+  "created_at": "2026-09-12T02:15:29.000Z",
+  "updated_at": "2026-09-12T02:18:39.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anleitungen/Pferdezucht | Minceraft Wiki | Fandom",
+      "url": "https://minecraft.fandom.com/de/wiki/Anleitungen/Pferdezucht",
+      "snippet": "Die Zucht von Pferden dient zur Verbesserung der für das Reiten wichtigen Eigenschaften von Pferden, Eseln und Maultieren durch …"
+    },
+    {
+      "title": "Pferd – Minecraft Wiki",
+      "url": "https://de.minecraft.wiki/w/Pferd",
+      "snippet": "Durch die Zucht von Eseln untereinander oder gar mit Pferden können alle drei Werte im Rahmen der Möglichkeiten verbessert …"
+    },
+    {
+      "title": "In Minecraft Pferde züchten (mit Bildern) – wikiHow",
+      "url": "https://de.wikihow.com/In-Minecraft-Pferde-z%C3%BCchten",
+      "snippet": "In Minecraft Pferde züchten. In diesem WikiHow-Artikel lernst du, wie man in Minecraft zwei Pferde miteinander züchtet. Nachdem du …"
+    },
+    {
+      "title": "Anleitungen/Pferdezucht – Minecraft Wiki",
+      "url": "https://de.minecraft.wiki/w/Anleitungen/Pferdezucht",
+      "snippet": "Die Zucht von Pferden dient zur Verbesserung der für das Reiten wichtigen Eigenschaften von Pferden, Eseln und Maultieren durch …"
+    },
+    {
+      "title": "Pferde in Minecraft züchten - bo3.gg",
+      "url": "https://bo3.gg/de/games/articles/how-to-breed-horses-in-minecraft",
+      "snippet": "Feb 17, 2026 · Pferde in Minecraft züchten. In diesem Artikel wird erklärt, wie man Pferde in Minecraft züchtet: Zähmen, Paaren, …"
+    }
+  ]
+}

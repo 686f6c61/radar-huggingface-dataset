@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Raymxnd/Whisper-Vad-EncDec-ASMR-torch",
+  "slug": "raymxnd-whisper-vad-encdec-asmr-torch",
+  "author": "Raymxnd",
+  "url": "https://huggingface.co/Raymxnd/Whisper-Vad-EncDec-ASMR-torch",
+  "created_at": "2026-09-12T02:14:39.000Z",
+  "updated_at": "2026-09-12T02:15:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": null,
+  "languages": [
+    "ja",
+    "multilingual"
+  ],
+  "tags": [
+    "safetensors",
+    "voice-activity-detection",
+    "vad",
+    "whisper",
+    "speech-detection",
+    "whispered-speech",
+    "japanese",
+    "pytorch",
+    "ja",
+    "multilingual",
+    "arxiv:2212.04356",
+    "base_model:TransWithAI/Whisper-Vad-EncDec-ASMR-onnx",
+    "base_model:finetune:TransWithAI/Whisper-Vad-EncDec-ASMR-onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29767169,
+  "parameters_human": "29.8M",
+  "storage_bytes": 119082996,
+  "storage_human": "119 MB",
+  "base_model": "TransWithAI/Whisper-Vad-EncDec-ASMR-onnx",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stream and listen to music online for free with SoundCloud",
+      "url": "https://soundcloud.com/",
+      "snippet": "It all starts with an upload. SoundCloud is where you define what's next in music. Just hit upload."
+    },
+    {
+      "title": "SoundCloud — Register, sign-in or access our Homepage",
+      "url": "https://soundcloud.com/signin",
+      "snippet": "Register or sign in to access to your SoundCloud account, or just start listening."
+    },
+    {
+      "title": "Приложения в Google Play – SoundCloud – музыка и звук",
+      "url": "https://play.google.com/store/apps/details?id=com.soundcloud.android&hl=ru",
+      "snippet": "Новая музыка всегда на SoundCloud. Находи новую музыку среди первых. Открой для себя популярных исполнителей, …"
+    },
+    {
+      "title": "SoundCloud",
+      "url": "https://soundcouch.soundcloud.com/",
+      "snippet": "This app will be decommissioned by the end of 2026. Please switch to one of our official TV apps or visit soundcloud.com to keep …"
+    },
+    {
+      "title": "Stream and listen to music online for free with SoundCloud",
+      "url": "https://m.soundcloud.com/signin/callback",
+      "snippet": "Sign in to SoundCloud to discover, stream, and share music from emerging and major artists worldwide."
+    }
+  ]
+}

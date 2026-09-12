@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "daniel-moreno/visual-question-answering",
+  "slug": "daniel-moreno-visual-question-answering",
+  "author": "daniel-moreno",
+  "url": "https://huggingface.co/daniel-moreno/visual-question-answering",
+  "created_at": "2026-09-12T09:57:02.000Z",
+  "updated_at": "2026-09-12T09:57:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "visual-question-answering",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Daniel (prophète) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Daniel_(proph%C3%A8te)",
+      "snippet": "Daniel devient fonctionnaire de cour et interprète les songes du roi. Sa réputation lui permet de continuer son activité après la prise …"
+    },
+    {
+      "title": "Daniel 1 Louis Segond Bible",
+      "url": "https://saintebible.com/lsg/daniel/1.htm",
+      "snippet": "17Dieu accorda à ces quatre jeunes gens de la science, de l'intelligence dans toutes les lettres, et de la sagesse; et Daniel expliquait …"
+    },
+    {
+      "title": "Daniel",
+      "url": "https://daniel.fr/",
+      "snippet": "Chez Daniel, nous sommes spécialisés dans le négoce de fournitures industrielles, de quincaillerie et de produits sidérurgiques …"
+    },
+    {
+      "title": "Prénom Daniel (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/daniel/prenom-6594",
+      "snippet": "Quelle est la signification du prénom Daniel ? Le prénom Daniel a une origine hébraïco biblique. Le mot dayân veut dire \"juge\" et el …"
+    },
+    {
+      "title": "Daniel (prénom) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Daniel_(pr%C3%A9nom)",
+      "snippet": "La présence du prénom en Asie centrale vient possiblement de Tamerlan, qui fit transporter vers 1400 de Perse à Samarcande les …"
+    }
+  ]
+}
