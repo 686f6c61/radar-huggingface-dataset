@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "asd12dsa21/MyAwesomeModel-TestRepo",
+  "slug": "asd12dsa21-myawesomemodel-testrepo",
+  "author": "asd12dsa21",
+  "url": "https://huggingface.co/asd12dsa21/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-12T16:34:05.000Z",
+  "updated_at": "2026-09-12T16:34:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "旅行業法概要 | 旅行業法 | 観光政策・制度 | 観光庁",
+      "url": "https://www.mlit.go.jp/kankocho/seisaku_seido/ryokogyoho/ryokogyohogaiyo.html",
+      "snippet": "Apr 30, 2026 · 旅行業者等は、業務の範囲により、第1種旅行業者、第2種旅行業者、第3種旅行業者、地域限定旅行業者、旅行業者 …"
+    },
+    {
+      "title": "旅行業の種別（第1種・第2種・第3種・地域限定）完全比較 ...",
+      "url": "https://www.travel-license.com/travel-license-type-comparison-guide-2026/",
+      "snippet": "Sep 1, 2026 · 旅行業を開業・運営するにあたって、まず押さえておきたいのが「旅行業の種別」です。 旅行業法は事業の規模や取 …"
+    },
+    {
+      "title": "第三種旅行業登録ガイド│登録（許可）の基準と申請方法に ...",
+      "url": "https://tsunagu-office.net/archives/13713",
+      "snippet": "Jul 3, 2022 · 第三種旅行業登録ガイド│登録（許可）の基準と申請方法について分かりやすく解説 旅行業法 では、旅行業を第一種か …"
+    },
+    {
+      "title": "第3種旅行業に登録するための要件と手続きを解説。 - 旅行業 ...",
+      "url": "https://ryokougyou-guide.g-tsunagu.com/apply/422/",
+      "snippet": "Jul 6, 2022 · 支援先企業も中国・四国地方を中心に、北陸・東海・関西・九州方面と、幅広いエリアで旅行業登録に関する支援を …"
+    },
+    {
+      "title": "旅行業法 | 観光政策・制度 | 観光庁",
+      "url": "https://www.mlit.go.jp/kankocho/seisaku_seido/ryokogyoho/index.html",
+      "snippet": "Jun 29, 2026 · 旅行業法は、旅行業等を営む者について登録制度を実施し、あわせて旅行業等を営む者の業務の適正な運営を確保す …"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Patoni31/md4",
+  "slug": "patoni31-md4",
+  "author": "Patoni31",
+  "url": "https://huggingface.co/Patoni31/md4",
+  "created_at": "2026-09-12T14:25:46.000Z",
+  "updated_at": "2026-09-12T14:28:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Symptômes de sevrage alcoolique et calendrier jour par jour",
+      "url": "https://sober-tracker.com/fr/blog/alcohol-withdrawal-timeline-day-by-day-guide",
+      "snippet": "Nov 7, 2025 · Les symptômes du sevrage alcoolique varient d'une personne à l'autre, mais la plupart des gens traversent le même …"
+    },
+    {
+      "title": "Effets du sevrage alcoolique : symptômes, durée, gravité",
+      "url": "https://www.actions-addictions.org/effets-sevrage-alcoolique/",
+      "snippet": "Jul 16, 2026 · Dans la majorité des cas, le sevrage se traduit par des tremblements des mains, des sueurs, une anxiété diffuse, des …"
+    },
+    {
+      "title": "Sevrage : ce qu'il faut savoir pour mieux vous préparer",
+      "url": "https://www.alcool-info-service.fr/agir-sur-sa-consommation/comment-arreter-de-boire/sevrage-ce-quil-faut-savoir-pour-mieux-vous",
+      "snippet": "Jun 14, 2024 · Ces symptômes apparaissent quelques heures après l’arrêt de la consommation d’alcool et durent entre 4 et 10 jours. …"
+    },
+    {
+      "title": "Symptômes du sevrage alcoolique : combien de temps durent-ils et ...",
+      "url": "https://les-sans-alcool.fr/sevrage-alcoolique-duree-symptomes/",
+      "snippet": "Jul 21, 2026 · Les symptômes du sevrage alcoolique varient selon l’intensité de la dépendance et durent en moyenne de 3 à 7 jours …"
+    },
+    {
+      "title": "Sevrage alcool : symptômes, durée, protocole et où le faire (2026)",
+      "url": "https://www.sevrage-alcool.fr/",
+      "snippet": "Les symptômes apparaissent généralement 6 à 24 heures après la dernière consommation, culminent à 48-72h, puis s'atténuent …"
+    }
+  ]
+}

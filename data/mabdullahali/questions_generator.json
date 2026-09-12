@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mabdullahali/questions_generator",
+  "slug": "mabdullahali-questions_generator",
+  "author": "mabdullahali",
+  "url": "https://huggingface.co/mabdullahali/questions_generator",
+  "created_at": "2026-09-12T16:49:31.000Z",
+  "updated_at": "2026-09-12T16:58:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 303037064,
+  "storage_human": "303 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alisha Edwards - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Alisha_Edwards",
+      "snippet": "She is signed to Total Nonstop Action Wrestling (TNA), where she performs under the ring name Alisha Edwards and serves as both …"
+    },
+    {
+      "title": "Alisha Edwards - TNA Wrestling",
+      "url": "https://tnawrestling.com/roster/alisha-edwards",
+      "snippet": "Aug 20, 2025 · Alisha Edwards is staying with TNA Wrestling. TNA iMPACT! Results: October 2, 2025. TNA iMPACT! Preview: …"
+    },
+    {
+      "title": "Alisha Edwards: Profile, Career Stats, Titles & Gimmicks | Pro ...",
+      "url": "https://www.thesmackdownhotel.com/wrestlers/alisha-edwards",
+      "snippet": "Alisha Maher-Edwards (née Inacio) was born in San Diego, California on January 7, 1987, and she is currently 39 years old. She is …"
+    },
+    {
+      "title": "@mrsaipalisha) • Instagram photos and videos",
+      "url": "https://www.instagram.com/mrsaipalisha/",
+      "snippet": "43K Followers, 682 Following, 3,806 Posts - 🅐🅛🅘🅢🅗🅐 (@mrsaipalisha) on Instagram: \"DO YOU WANNA KNOW SOMETHING? ⭐️TNA KO …"
+    },
+    {
+      "title": "Alisha Edwards « Wrestlers Database « CAGEMATCH - The Internet ...",
+      "url": "https://www.cagematch.net/?id=2&nr=6157&name=Alisha+Edwards",
+      "snippet": "Career Data Alter egos: Alexxis Nevaeh a.k.a. Alexxis Alicia Alisha Edwards a.k.a. Alisha Lexxus Mercedes Steele Sassy Massy …"
+    }
+  ]
+}

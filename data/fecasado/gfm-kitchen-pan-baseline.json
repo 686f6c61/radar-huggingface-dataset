@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "fecasado/gfm-kitchen-pan-baseline",
+  "slug": "fecasado-gfm-kitchen-pan-baseline",
+  "author": "fecasado",
+  "url": "https://huggingface.co/fecasado/gfm-kitchen-pan-baseline",
+  "created_at": "2026-09-12T11:21:32.000Z",
+  "updated_at": "2026-09-12T11:21:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "gaze_flow_matching",
+    "dataset:fecasado/pan-on-hob-320x240",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 75218394,
+  "parameters_human": "75.2M",
+  "storage_bytes": 300933352,
+  "storage_human": "301 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hármasban pornóvideók | xHamster",
+      "url": "https://hu.xhamster.com/categories/threesome",
+      "snippet": "Nézd meg a Hármasban pornóvideókat felirattal és hanggal az xHamsteren. Tekintsd meg most az összes Hármasban XXX videót!"
+    },
+    {
+      "title": "Threesome Szex Videók - xHamster",
+      "url": "https://hu.xhamster.com/search/threesome",
+      "snippet": "Nézz threesome pornóvideókat. Fedezd fel 2026 legjobb XXX filmjeit szexjelenetekkel az xHamster-en!"
+    },
+    {
+      "title": "Threesome While Porn Videos | Pornhub.com",
+      "url": "https://www.pornhub.com/video/search?search=threesome+while",
+      "snippet": "Watch Threesome While porn videos for free, here on Pornhub.com. Discover the growing collection of high quality Most Relevant …"
+    },
+    {
+      "title": "threesome pornó videó",
+      "url": "https://pornhub.co.hu/search/?s=threesome",
+      "snippet": "A Pornhub szexoldal az online pornó királya! Nincs olyan ember aki még ne futott volna bele az interneten. 2007 szeptemberében …"
+    },
+    {
+      "title": "Threesome Porn (5,354,255) @ Porzo.com",
+      "url": "https://www.porzo.com/category/threesome",
+      "snippet": "Check out the latest Threesome videos at Porzo.com. Updated continuously and over 1000 categories."
+    }
+  ]
+}

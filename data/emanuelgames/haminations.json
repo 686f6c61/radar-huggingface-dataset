@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "EmanuelGames/Haminations",
+  "slug": "emanuelgames-haminations",
+  "author": "EmanuelGames",
+  "url": "https://huggingface.co/EmanuelGames/Haminations",
+  "created_at": "2026-09-12T14:24:26.000Z",
+  "updated_at": "2026-09-12T14:25:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 66890216,
+  "storage_human": "67 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Русский театр драмы им. Ч. Айтматова (ГНРТД).",
+      "url": "https://rusteatr.kg/",
+      "snippet": "May 24, 2024 · Русский театр драмы имени Чингиза Айтматова - это крупнейший драматический театр в Кыргызской …"
+    },
+    {
+      "title": "Репертуар русского театра драмы им. Ч. Айтматова",
+      "url": "https://rusteatr.kg/plays/",
+      "snippet": "Все спектакли текущего театрального сезона.Русский драмтеатр в Бишкеке - это спектакли, которые заставляют человека заду."
+    },
+    {
+      "title": "Репертуар Русского театра драмы им. Ч. Айтматова на февраль",
+      "url": "https://report.kg/obschestvo/94106-repertuar-russkogo-teatra-dramy-im-ch-ajtmatova-na-fevral.html",
+      "snippet": "Jan 13, 2026 · В Бишкеке Русский театр драмы имени Ч. Айтматова обнародовал свою программу на февраль 2026 года. …"
+    },
+    {
+      "title": "Репертуар Русского театра драмы им. Ч. Айтматова на февраль",
+      "url": "https://gazeta.kg/society/158058-repertuar-russkogo-teatra-dramy-im-ch-ajtmatova-na-fevral.html",
+      "snippet": "Jan 13, 2026 · В Бишкеке Русский театр драмы имени Ч. Айтматова обнародовал свою программу на февраль 2026 года. …"
+    },
+    {
+      "title": "Репертуар Русского театра драмы им. Ч. Айтматова на февраль",
+      "url": "https://kaktus.media/doc/538570_repertyar_rysskogo_teatra_dramy_im._ch._aytmatova_na_fevral.html",
+      "snippet": "Jan 13, 2026 · Русский театр драмы им. Ч. Айтматова в Бишкеке представил репертуар на февраль 2026 года."
+    }
+  ]
+}

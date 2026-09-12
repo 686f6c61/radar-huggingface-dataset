@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tfrere/microduck-move-happy-forward-hop",
+  "slug": "tfrere-microduck-move-happy-forward-hop",
+  "author": "tfrere",
+  "url": "https://huggingface.co/tfrere/microduck-move-happy-forward-hop",
+  "created_at": "2026-09-12T17:41:34.000Z",
+  "updated_at": "2026-09-12T17:41:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck-policy",
+    "academy",
+    "family:velocity",
+    "kind:perpetual",
+    "tier:2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5983672,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Menu - Starbucks Coffee Company",
+      "url": "https://www.starbucks.com/menu",
+      "snippet": "Check out Starbucks menu and get nutritional information about each menu item."
+    },
+    {
+      "title": "Starbucks Coffee Company",
+      "url": "https://www.starbucks.com/en-us/",
+      "snippet": "Explore our menu of handcrafted drinks, order ahead, sign up for Starbucks® Rewards, manage your gift card and more."
+    },
+    {
+      "title": "Starbucks Careers",
+      "url": "https://careers.starbucks.com/",
+      "snippet": "Interested in a career at Starbucks? This is a great place to start. Learn about the jobs we offer, benefits, culture, and more."
+    },
+    {
+      "title": "Homepage | Starbucks",
+      "url": "https://www.starbucks.at/",
+      "snippet": "Start ordering ahead with the Starbucks® app Order and pay — then breeze in to pick up your drink at your selected store."
+    },
+    {
+      "title": "Starbucks - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/SBUX",
+      "snippet": "Starbucks Corporation is an American multinational chain of coffeehouses and roastery reserves headquartered in Seattle, …"
+    }
+  ]
+}

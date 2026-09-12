@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "robbypambudi/prompt-shield-deberta-v3-base",
+  "slug": "robbypambudi-prompt-shield-deberta-v3-base",
+  "author": "robbypambudi",
+  "url": "https://huggingface.co/robbypambudi/prompt-shield-deberta-v3-base",
+  "created_at": "2026-09-12T14:04:16.000Z",
+  "updated_at": "2026-09-12T14:05:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "prompt-injection",
+    "security",
+    "deberta",
+    "base_model:microsoft/deberta-v3-base",
+    "base_model:finetune:microsoft/deberta-v3-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 184423682,
+  "parameters_human": "184.4M",
+  "storage_bytes": 740183888,
+  "storage_human": "740 MB",
+  "base_model": "microsoft/deberta-v3-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Der Fall Collini (2019) | Film, Trailer, Kritik - Kino-Zeit",
+      "url": "https://www.kino-zeit.de/film-kritiken-trailer-streaming/der-fall-collini-2019",
+      "snippet": "Der junge Anwalt Caspar Leinen (Elyas M‘Barek) schaut sich hilfesuchend um, als ihm der unter Mordverdacht stehende …"
+    },
+    {
+      "title": "Regards Neufs - Der Fall Collini",
+      "url": "https://www.regards-neufs.ch/de/archiv/archiv-2019/262-der-fall-collini",
+      "snippet": "Der deutsche Polit-Thriller Der Fall Collini, basierend auf dem Roman von Ferdinand von Schirach erzählt Regisseur Marco …"
+    },
+    {
+      "title": "Der Fall Collini (2019) - Film | cinema.de",
+      "url": "https://www.cinema.de/film/der-fall-collini,9649553.html",
+      "snippet": "Apr 18, 2019 · Auch über die Hintergründe der Tat erfährt Leinen zunächst nichts, denn Collini schweigt beharrlich. Marco …"
+    },
+    {
+      "title": "Liste von Mafiafilmen – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Liste_von_Mafiafilmen",
+      "snippet": "Die Liste von Mafiafilmen bietet einen Überblick über Filme und Serien, sowie Dokumentarfilme und -reihen zu den Themen Mafia, …"
+    },
+    {
+      "title": "Vorschau: Die Firma • Spielfilm USA 1993 (The Firm) - ARD Mediathek",
+      "url": "https://www.ardmediathek.de/tv-programm/6a6191f0904ffcdc1708d3b3",
+      "snippet": "Das Leben des jungen Ehepaares scheint einfach perfekt. Dass 'die Firma' sich auch um eine andere Art von Familie kümmert, …"
+    }
+  ]
+}

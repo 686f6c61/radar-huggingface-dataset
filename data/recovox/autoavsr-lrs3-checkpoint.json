@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RecoVox/autoavsr-lrs3-checkpoint",
+  "slug": "recovox-autoavsr-lrs3-checkpoint",
+  "author": "RecoVox",
+  "url": "https://huggingface.co/RecoVox/autoavsr-lrs3-checkpoint",
+  "created_at": "2026-09-12T19:15:08.000Z",
+  "updated_at": "2026-09-12T19:16:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1001908942,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook",
+      "url": "https://outlook.com/owa/cridf.iledefrance.fr",
+      "snippet": ""
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.com/welearn365.com",
+      "snippet": ""
+    },
+    {
+      "title": "dbxprd0210.outlook.com",
+      "url": "https://dbxprd0210.outlook.com/owa/UrlBlockedError.aspx",
+      "snippet": ""
+    },
+    {
+      "title": "ps.outlook.com",
+      "url": "https://ps.outlook.com/Powershell",
+      "snippet": "Shërbimi Outlook për menaxhimin e email-eve dhe kalendarit tuaj."
+    },
+    {
+      "title": "Outlook",
+      "url": "https://pod51104.outlook.com/mail/inbox/id/AAQkAGU5YzYyZTY0LWZkODItNDE5My1hM2VhLWUxMDMwY2VhN2JjNwAQAOdsePVAjidIrpcFU9WKjCc%3D",
+      "snippet": "Outlook JavaScript must be enabled."
+    }
+  ]
+}

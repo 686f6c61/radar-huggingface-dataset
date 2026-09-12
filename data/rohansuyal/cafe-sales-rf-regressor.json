@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "rohansuyal/cafe-sales-rf-regressor",
+  "slug": "rohansuyal-cafe-sales-rf-regressor",
+  "author": "rohansuyal",
+  "url": "https://huggingface.co/rohansuyal/cafe-sales-rf-regressor",
+  "created_at": "2026-09-12T14:49:29.000Z",
+  "updated_at": "2026-09-12T14:49:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "random-forest",
+    "regression",
+    "tabular-regression",
+    "cafe-sales",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10249770,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "forums.ivanti.com",
+      "url": "https://forums.ivanti.com/Community/s/question/0D54O00007XaSb5SAF/error-the-attempt-to-validate-the-form-is-too-late-the-form-shows-another-object-already-objectid-was?language=fr",
+      "snippet": ""
+    },
+    {
+      "title": "forums.ivanti.com",
+      "url": "https://forums.ivanti.com/ServiceProviderLogin?ec=302&startURL=%2Fs%2Fprofile%2F0051B00000CZbkdQAD",
+      "snippet": ""
+    },
+    {
+      "title": "forums.ivanti.com",
+      "url": "https://forums.ivanti.com/ServiceProviderLogin?ec=302&startURL=%2Fs%2Fprofile%2F0051B000009QNeSQAW",
+      "snippet": ""
+    },
+    {
+      "title": "forums.ivanti.com",
+      "url": "https://forums.ivanti.com/ServiceProviderLogin?ec=302&startURL=%2Fs%2Farticle%2FHow-to-reset-Apple-TV-into-restore-mode",
+      "snippet": ""
+    },
+    {
+      "title": "forums.ivanti.com",
+      "url": "https://forums.ivanti.com/ServiceProviderLogin?ec=302&startURL=%2Fs%2Farticle%2FHow-To-Set-Up-A-Oracle-Helpdesk-V6-02-Workstation",
+      "snippet": ""
+    }
+  ]
+}

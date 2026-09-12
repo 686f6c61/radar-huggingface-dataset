@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.0_g4_run2",
+  "slug": "stefanocarrera-sqlautophagycode_m_qwen3-8b_t1-0_g4_run2",
+  "author": "stefanocarrera",
+  "url": "https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.0_g4_run2",
+  "created_at": "2026-09-12T13:48:42.000Z",
+  "updated_at": "2026-09-12T13:48:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186078190,
+  "storage_human": "186 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Orlando Theme Parks | Disney, Universal, SeaWorld & LEGOLAND",
+      "url": "https://www.visitorlando.com/things-to-do/theme-parks/",
+      "snippet": "Orlando theme parks have adventures for everyone. See our guides to Walt Disney World, Universal Studios, SeaWorld and …"
+    },
+    {
+      "title": "THE 15 BEST Orlando Theme Parks (2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Attractions-g34515-Activities-c52-t98-Orlando_Florida.html",
+      "snippet": "What are the must-visit theme parks in Orlando? Start with the big ones: Walt Disney World Resort (with four major theme parks plus …"
+    },
+    {
+      "title": "Orlando Theme Parks 2026 – Complete Visitor Guide to All Parks",
+      "url": "https://orlando-themeparks.com/blog/orlando-theme-parks-complete-guide/",
+      "snippet": "This comprehensive 2026 guide covers all 19 Orlando theme parks with planning strategies, insider tips, and recommendations to …"
+    },
+    {
+      "title": "12 Orlando Theme Parks Everyone Should Visit Once - U.S. News Travel",
+      "url": "https://travel.usnews.com/features/top-orlando-theme-parks",
+      "snippet": "Jun 11, 2024 · Read on to start planning your next trip to the Sunshine State; fantastic weather and fun-filled family adventures await …"
+    },
+    {
+      "title": "Orlando Theme Parks: The Ultimate 2026 Guide",
+      "url": "https://www.themeparks-guide.com/orlando-theme-parks-guide/",
+      "snippet": "Apr 8, 2026 · The ultimate 2026 guide to Orlando theme parks: compare Disney, Universal, SeaWorld and LEGOLAND, plus tickets, …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_12hz_lora-r16_frac50_s42_20260912_143813",
+  "slug": "xelsoft-ai-lab-afrivoxaccent_qw3_spk_acc_12hz_lora-r16_frac50_s42_20260912_143813",
+  "author": "xelsoft-ai-lab",
+  "url": "https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_12hz_lora-r16_frac50_s42_20260912_143813",
+  "created_at": "2026-09-12T15:18:06.000Z",
+  "updated_at": "2026-09-12T15:20:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "wolof",
+    "afrivoxaccent",
+    "base_model:Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+    "base_model:adapter:Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 676598504,
+  "storage_human": "677 MB",
+  "base_model": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Générez des styles Coucher de soleil par IA grâce au générateur d ...",
+      "url": "https://www.shutterstock.com/fr/ai-image-generator/styles/sunset-shadow?msockid=1561c95402bb62082058de8603426304",
+      "snippet": "Créez instantanément des images coucher de soleil générées par IA. Saisissez une description ci-dessous pour vous lancer. …"
+    },
+    {
+      "title": "coucher de soleil : modèles gratuits à personnaliser | Canva",
+      "url": "https://www.canva.com/fr_fr/modeles/s/coucher-de-soleil/?msockid=1561c95402bb62082058de8603426304",
+      "snippet": "Trouvez l’inspiration et créez votre design personnalisé sur le thème « coucher de soleil » avec nos modèles gratuits prêts à l’emploi."
+    },
+    {
+      "title": "Crée+une+image+d’un+coucher+de+soleil+sur+un+village+de+falaises …",
+      "url": "https://www.craiyon.com/en/search/cr%C3%A9e+une+image+d%E2%80%99un+coucher+de+soleil+sur+un+village+de+falaises+blanchies+au+bord+de+la+mer%2C+ciel+chaud+orange%E2%80%91rose%2C+d%C3%B4mes+et+moulins+brillant+d%E2%80%99une+lumi%C3%A8re+dor%C3%A9e%2C+coups+de+pinceau+%C3%A9pais+et+textur%C3%A9s%2C+couleurs+riches+de+peinture+%C3%A0+l%E2%80%99huile%2C+profondeur+atmosph%C3%A9rique+douce%2C+ambiance+m%C3%A9diterran%C3%A9enne+sereine",
+      "snippet": "crée+une+image+d’un+coucher+de+soleil+sur+un+village+de+falaises+blanchies+au+bord+de+la+mer,+ciel+chaud+orange‑rose,+dômes+et+moulins+brillant+d’une+lumière+dorée,+coups+de+pinceau+épais+et+texturés,+couleurs+riches+de+peinture+à+l’huile,+profondeur+atmosphérique+douce,+ambiance+méditerranéenne+sereine"
+    },
+    {
+      "title": "Générateur D'images IA Photoréaliste (Texte En Image) - Kapwing",
+      "url": "https://www.kapwing.com/fr/ai/image-generator",
+      "snippet": "Crée des photos d'aspect humain à partir de simples descriptions textuelles avec le générateur d'images IA de Kapwing. Télécharge …"
+    },
+    {
+      "title": "Générateur d'images IA : Transformer du texte en images, art ... - Pixlr",
+      "url": "https://pixlr.com/fr/image-generator/",
+      "snippet": "Que vous visiez un look de film analogique ou de l'art en pixels, ces présélections offrent des moyens rapides et faciles de …"
+    }
+  ]
+}

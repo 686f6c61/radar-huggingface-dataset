@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "lynx9844/whisper-large-v3-turbo-uzbek-v1",
+  "slug": "lynx9844-whisper-large-v3-turbo-uzbek-v1",
+  "author": "lynx9844",
+  "url": "https://huggingface.co/lynx9844/whisper-large-v3-turbo-uzbek-v1",
+  "created_at": "2026-09-12T15:06:04.000Z",
+  "updated_at": "2026-09-12T15:16:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "uz"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "audio",
+    "speech-to-text",
+    "automatic-speech-recognition",
+    "whisper-large-v3-turbo",
+    "uzbek",
+    "uzbek-stt",
+    "lynx",
+    "uz",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 808878080,
+  "parameters_human": "808.9M",
+  "storage_bytes": 1617824864,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Speech Recognition",
+      "dataset": "DavronSherbaev/uzbekvoice-filtered",
+      "metric": "WER",
+      "value": 35.9
+    }
+  ],
+  "sources": [
+    {
+      "title": "post.npostart.nl",
+      "url": "http://post.npostart.nl/",
+      "snippet": "Wij willen hier een beschrijving geven, maar de site die u nu bekijkt staat dit niet toe."
+    }
+  ]
+}

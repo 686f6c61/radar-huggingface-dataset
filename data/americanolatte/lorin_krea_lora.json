@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AmericanoLatte/Lorin_Krea_Lora",
+  "slug": "americanolatte-lorin_krea_lora",
+  "author": "AmericanoLatte",
+  "url": "https://huggingface.co/AmericanoLatte/Lorin_Krea_Lora",
+  "created_at": "2026-08-02T09:29:05.000Z",
+  "updated_at": "2026-09-12T16:57:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 76,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4458070527,
+  "storage_human": "4.5 GB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "First Bank for professional individual in France | Crédit Agricole",
+      "url": "https://www.credit-agricole.com/en",
+      "snippet": "Crédit Agricole is the No. 1 bank for housing, agriculture, businesses, professionals and local authorities"
+    },
+    {
+      "title": "Banque des particuliers professionnels en France | Crédit Agricole",
+      "url": "https://www.credit-agricole.com/",
+      "snippet": "Crédit Agricole 1re banque de l'habitat, de l'agriculture, des entreprises, des pros, des collectivites territoriales"
+    },
+    {
+      "title": "Financial publication Bank for individual | Crédit Agricole",
+      "url": "https://www.credit-agricole.com/en/finance/financial-publications",
+      "snippet": "Find the Crédit Agricole S.A. financial results, the Universal Registration Document, the accounts of the Crédit Agricole Group, the …"
+    },
+    {
+      "title": "List of our locations - Crédit Agricole",
+      "url": "https://www.credit-agricole.com/en/group/list-of-our-locations",
+      "snippet": "Credit Agricole Consumer Finance Nederland Entrada 600 1096 ET Amsterdam Website: www.ca-consumerfinance.nl CREDIT …"
+    },
+    {
+      "title": "Découvrir le groupe Crédit Agricole",
+      "url": "https://www.credit-agricole.com/notre-groupe/decouvrir-le-groupe-credit-agricole",
+      "snippet": "Crédit Agricole 1e banque de l'habitat, l'agriculture, les entreprises, les pros, les collectivités territoriales et particuliers avec agences …"
+    }
+  ]
+}

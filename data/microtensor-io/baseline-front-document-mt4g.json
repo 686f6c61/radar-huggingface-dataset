@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "microtensor-io/baseline-front-document-mt4g",
+  "slug": "microtensor-io-baseline-front-document-mt4g",
+  "author": "microtensor-io",
+  "url": "https://huggingface.co/microtensor-io/baseline-front-document-mt4g",
+  "created_at": "2026-09-12T13:23:45.000Z",
+  "updated_at": "2026-09-12T13:23:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:microsoft/Phi-4-mini-instruct",
+    "base_model:quantized:microsoft/Phi-4-mini-instruct",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3836021856,
+  "parameters_human": "3.84B",
+  "storage_bytes": 2491874272,
+  "storage_human": "2.5 GB",
+  "base_model": "microsoft/Phi-4-mini-instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Elizabeth Olsen – Wikipedia",
+      "url": "https://de.m.wikipedia.org/wiki/Elizabeth_Olsen",
+      "snippet": "Elizabeth Olsen Elizabeth Olsen auf dem Toronto International Film Festival 2024 Elizabeth Chase Olsen (* 16. Februar 1989 in …"
+    },
+    {
+      "title": "Elizabeth Olsen - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Elizabeth_Olsen",
+      "snippet": "Elizabeth Chase Olsen (born February 16, 1989) is an American actress. Known for her roles in both blockbusters and independent …"
+    },
+    {
+      "title": "Elizabeth Olsen - IMDb",
+      "url": "https://m.imdb.com/name/nm0647634/",
+      "snippet": "Elizabeth Chase \"Lizzie\" Olsen (born February 16, 1989) is an American actress. She is known for her roles in the films Silent House …"
+    },
+    {
+      "title": "Elizabeth Olsen - IMDb",
+      "url": "https://www.imdb.com/de/name/nm0647634/",
+      "snippet": "Elizabeth Chase „Lizzie“ Olsen (* 16. Februar 1989) ist eine US-amerikanische Schauspielerin. Sie ist bekannt für ihre Rollen in den …"
+    },
+    {
+      "title": "Elizabeth Olsen (@official__elizabetholsen) - Instagram",
+      "url": "https://www.instagram.com/official__elizabetholsen/",
+      "snippet": "101K Followers, 1 Following, 3,079 Posts - Elizabeth Olsen (@official__elizabetholsen) on Instagram: \"Regular Updates Of Elizabeth …"
+    }
+  ]
+}

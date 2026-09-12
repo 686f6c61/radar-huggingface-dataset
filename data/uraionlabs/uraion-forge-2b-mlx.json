@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "UraionLabs/uraion-forge-2b-mlx",
+  "slug": "uraionlabs-uraion-forge-2b-mlx",
+  "author": "UraionLabs",
+  "url": "https://huggingface.co/UraionLabs/uraion-forge-2b-mlx",
+  "created_at": "2026-09-12T17:10:17.000Z",
+  "updated_at": "2026-09-12T17:12:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "uraionlabs",
+    "apple-silicon",
+    "macbook",
+    "metal",
+    "m1",
+    "m2",
+    "m3",
+    "m4",
+    "m5",
+    "m6",
+    "reasoning",
+    "agent",
+    "function-calling",
+    "code-generation",
+    "edge-ai",
+    "cot",
+    "4bit",
+    "8bit",
+    "minicpm",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:finetune:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 5033556906,
+  "storage_human": "5.0 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    },
+    {
+      "title": "《强军战歌》歌词 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/580982599.html",
+      "snippet": "《强军战歌》歌词新征程号角震天响，强军目标我们来担当！国兴旺，无数先烈的梦想，战旗上写满铁血荣光。将士们听党指挥，英勇 …"
+    },
+    {
+      "title": "青山布衣 - 知乎",
+      "url": "https://www.zhihu.com/people/lancelu",
+      "snippet": "青山布衣的知乎主页，分享个人见解及视频号、抖音、油管等平台内容，涵盖多元化话题与观点。"
+    },
+    {
+      "title": "twitch - 知乎",
+      "url": "https://www.zhihu.com/topic/19851981/hot",
+      "snippet": "根据其内部分析师透露，Twitch每月的访问量超过3800万，有超过2000万个游戏玩家汇聚到这个平台，每个访问用户在网站的日平均 …"
+    },
+    {
+      "title": "服务器未发送任何数据，因此无法载入该网 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/495ba841e6eb3238b30ede1c.html",
+      "snippet": "Nov 14, 2015 · 刷新DNS 上不了网，传递不了网络数据，这样的问题很多，其中DNS域名分析错误，也是其中经常发生的事，如果域 …"
+    }
+  ]
+}

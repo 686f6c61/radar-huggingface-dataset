@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "HoangTran223/T-SPIN_Gamma2-2B",
+  "slug": "hoangtran223-t-spin_gamma2-2b",
+  "author": "HoangTran223",
+  "url": "https://huggingface.co/HoangTran223/T-SPIN_Gamma2-2B",
+  "created_at": "2026-09-11T05:58:10.000Z",
+  "updated_at": "2026-09-12T18:25:16.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma2",
+    "t-spin",
+    "self-play",
+    "base_model:google/gemma-2-2b",
+    "base_model:finetune:google/gemma-2-2b",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27052462122,
+  "storage_human": "27.1 GB",
+  "base_model": "google/gemma-2-2b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home | World of Tanks Blitz",
+      "url": "https://wotblitz.com/",
+      "snippet": "The legendary tank shooter. Fight in 7vs7 team battles alone or with friends, research and upgrade armored vehicles, experiment …"
+    },
+    {
+      "title": "Artificial Intelligence - arXiv",
+      "url": "https://arxiv.org/list/cs.AI/new",
+      "snippet": "For a reward-trained Gemma-2 ... We developed a scaffolding-oriented multi-agent Large Language Model (LLM) AI Standardized Patient (AI-SP) training platform1."
+    },
+    {
+      "title": "Главная | World of Tanks Blitz",
+      "url": "https://wotblitz.com/fr/",
+      "snippet": "Découvrez le légendaire jeu de tir en chars. Jouez des batailles en 7 contre 7, seul ou avec vos amis, puis améliorez vos véhicules …"
+    },
+    {
+      "title": "Track: Poster Session 5 - ICLR 2027",
+      "url": "https://iclr.cc/virtual/2025/session/31975",
+      "snippet": "While foundation models have shown promise in antibiotic discovery, current mainstream efforts still fall short of fully leveraging the potential of multimodal ..."
+    },
+    {
+      "title": "Home | World of Tanks Blitz",
+      "url": "https://eu.wotblitz.com/ru/",
+      "snippet": "Легендарный танковый шутер. Сражайся в командных боях 7 на 7 в одиночку или с друзьями, исследуй и улучшай …"
+    }
+  ]
+}

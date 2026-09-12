@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Concrete123/FA_Concrete",
+  "slug": "concrete123-fa_concrete",
+  "author": "Concrete123",
+  "url": "https://huggingface.co/Concrete123/FA_Concrete",
+  "created_at": "2026-09-12T14:58:03.000Z",
+  "updated_at": "2026-09-12T15:21:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meringues françaises inratables : la recette facile",
+      "url": "https://cuisine.journaldesfemmes.fr/recette/317608-meringues",
+      "snippet": "Dec 5, 2024 · Craquez pour ces petites douceurs aériennes avec cette recette facile de meringues françaises. Croquantes à …"
+    },
+    {
+      "title": "Meringues inratables françaises - Mes Inspirations Culinaires",
+      "url": "https://www.mesinspirationsculinaires.com/article-meringues-inratables-francaises.html",
+      "snippet": "Dec 10, 2014 · Des meringues parfaites, lisses et blanches. Une recette inratable. J’ai testé plusieurs températures de cuissons avec …"
+    },
+    {
+      "title": "Meringue française facile et inratable | maPatisserie.fr",
+      "url": "https://mapatisserie.fr/recette/divers/recette-meringue-francaise/",
+      "snippet": "Découvrez la recette de Meringue Française : Facile, Brillante et Inratable expliquée pas à pas : ingrédients, temps de cuisson, …"
+    },
+    {
+      "title": "Meringue française : la recette inratable pour des meringues bien ...",
+      "url": "https://labriocheriedepascal.fr/2026/08/15/meringue-francaise-la-recette-inratable-pour-des-meringues-bien-seches/",
+      "snippet": "Aug 15, 2026 · Dans cette recette, je vous guide pas à pas pour réussir une meringue française qui sèche réellement au four, avec …"
+    },
+    {
+      "title": "Comment faire des meringues françaises inratables",
+      "url": "https://les-gourmandises-de-fanny.fr/recettes/comment-faire-des-meringues-francaises-inratables/",
+      "snippet": "Jul 22, 2025 · Découvrez nos astuces pour réussir des meringues françaises parfaites à chaque fois, avec des étapes simples et des …"
+    }
+  ]
+}

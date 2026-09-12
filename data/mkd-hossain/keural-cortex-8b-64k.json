@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mkd-hossain/Keural-Cortex-8B-64K",
+  "slug": "mkd-hossain-keural-cortex-8b-64k",
+  "author": "mkd-hossain",
+  "url": "https://huggingface.co/mkd-hossain/Keural-Cortex-8B-64K",
+  "created_at": "2026-09-12T10:46:10.000Z",
+  "updated_at": "2026-09-12T10:50:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "continued-pretraining",
+    "korean",
+    "long-context",
+    "64k",
+    "base-model",
+    "conversational",
+    "ko",
+    "en",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:finetune:Qwen/Qwen3-8B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2047683840,
+  "parameters_human": "2.05B",
+  "storage_bytes": 16392939478,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
+    },
+    {
+      "title": "有哪位大佬说一下libreoffice和WPS office优劣势对比？ - 知乎",
+      "url": "https://www.zhihu.com/question/615622275",
+      "snippet": "有哪位大佬说一下libreoffice和WPS office优劣势对比？ Ok因为我是WPS的，但是我想从用户角度了解下我们的竞品LO和WPS比起来 …"
+    },
+    {
+      "title": "Libreoffice24.8が立ち上がらない - 日本語 - Ask LibreOffice",
+      "url": "https://ask.libreoffice.org/t/libreoffice24-8/118771",
+      "snippet": "Feb 27, 2025 · 初めてこちらを利用します。 このような質問が対象外なら指摘してください。 libreoffice24.8がWindows11 …"
+    },
+    {
+      "title": "Ask LibreOffice",
+      "url": "https://ask.libreoffice.org/",
+      "snippet": "Questions and answers for LibreOffice"
+    },
+    {
+      "title": "Forum OpenOffice LibreOffice NeoOffice - Escroquerie avec …",
+      "url": "https://forum.openoffice.org/fr/forum/viewtopic.php?t=8137",
+      "snippet": "Nov 8, 2005 · Attention à certains sites de téléchargement De nombreux sites proposent OpenOffice en téléchargement. Certains …"
+    }
+  ]
+}

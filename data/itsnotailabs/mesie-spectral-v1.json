@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ItsnotAilabs/MESIE-Spectral-v1",
+  "slug": "itsnotailabs-mesie-spectral-v1",
+  "author": "ItsnotAilabs",
+  "url": "https://huggingface.co/ItsnotAilabs/MESIE-Spectral-v1",
+  "created_at": "2026-09-11T07:12:14.000Z",
+  "updated_at": "2026-09-12T18:30:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "mesie_spectral_transformer",
+    "spectral-intelligence",
+    "signal-processing",
+    "fast-fourier-transform",
+    "mesie",
+    "continuous-time-series",
+    "feature-extraction",
+    "financial-forecasting",
+    "anomaly-detection",
+    "en",
+    "doi:10.57967/hf/10361",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5538054,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SPIEGEL ONLINE - Aktuelle Nachrichten",
+      "url": "http://www.spiegel.de/",
+      "snippet": "Deutschlands führende Nachrichtenseite. Alles Wichtige aus Politik, Wirtschaft, Sport, Kultur, Wissenschaft, Technik und mehr."
+    },
+    {
+      "title": "Start - DER SPIEGEL",
+      "url": "https://www.spiegel.de/start/",
+      "snippet": "19 hours ago · Deutschlands führende Nachrichtenseite. Alles Wichtige aus Politik, Wirtschaft, Sport, Kultur, Wissenschaft, Technik …"
+    },
+    {
+      "title": "Deutschland - Politik - DER SPIEGEL",
+      "url": "https://www.spiegel.de/politik/deutschland/",
+      "snippet": "19 hours ago · Nach SPIEGEL-Recherchen erhielt Sahra Wagenknechts Partei im Wahlkampf Unterstützung von dubiosen Vereinen. …"
+    },
+    {
+      "title": "Panorama - DER SPIEGEL",
+      "url": "https://www.spiegel.de/panorama/",
+      "snippet": "19 hours ago · Als »Checker Tobi« erklärt Tobias Krell Kindern die Welt. Was sagt der Ersatzlehrer der Nation zur Bildungsmisere? …"
+    },
+    {
+      "title": "DER SPIEGEL",
+      "url": "https://www.spiegel.de/thema/der_spiegel/",
+      "snippet": "Dec 20, 2025 · Oktober 1994 ging der SPIEGEL als weltweit erstes Nachrichtenmagazin ins World Wide Web. Die Website wurde …"
+    }
+  ]
+}

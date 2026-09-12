@@ -1,0 +1,129 @@
+{
+  "schema": 1,
+  "id": "F-Labs/Spark-X2.5-4B-Hadamard-GSQ",
+  "slug": "f-labs-spark-x2-5-4b-hadamard-gsq",
+  "author": "F-Labs",
+  "url": "https://huggingface.co/F-Labs/Spark-X2.5-4B-Hadamard-GSQ",
+  "created_at": "2026-09-09T10:39:37.000Z",
+  "updated_at": "2026-09-12T15:44:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "spark2_5",
+    "quantization",
+    "quarot",
+    "spinquant",
+    "hadamard",
+    "int4",
+    "int8",
+    "dv-ssq",
+    "kv-bss",
+    "groupwise-int4",
+    "svd",
+    "low-rank",
+    "src",
+    "spark",
+    "selective-attention-preservation",
+    "empirical-emergence",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "arxiv:2404.00456",
+    "arxiv:2405.16406",
+    "arxiv:2210.17323",
+    "arxiv:2306.00978",
+    "arxiv:2307.09782",
+    "arxiv:2312.09934",
+    "arxiv:2208.07339",
+    "arxiv:2306.03078",
+    "base_model:XHToken/Spark-X2.5-4B",
+    "base_model:quantized:XHToken/Spark-X2.5-4B",
+    "license:apache-2.0",
+    "model-index",
+    "dv_ssq_hadamard_int8_int4_src",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 535,
+  "trending_score": 0,
+  "parameters": 3128563200,
+  "parameters_human": "3.13B",
+  "storage_bytes": 4488486460,
+  "storage_human": "4.5 GB",
+  "base_model": "XHToken/Spark-X2.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "custom/single-prompt-audit",
+      "metric": "top-1 exact match",
+      "value": 93.28
+    },
+    {
+      "task": null,
+      "dataset": "custom/single-prompt-audit",
+      "metric": "kl_divergence",
+      "value": 0.1095
+    },
+    {
+      "task": null,
+      "dataset": "custom/single-prompt-audit",
+      "metric": "cosine similarity (final layer 35)",
+      "value": 0.9075
+    },
+    {
+      "task": null,
+      "dataset": "custom/single-prompt-audit",
+      "metric": "logit entropy (raw)",
+      "value": 0.1843
+    },
+    {
+      "task": null,
+      "dataset": "custom/single-prompt-audit",
+      "metric": "logit entropy (quant)",
+      "value": 0.2658
+    }
+  ],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/facebook/",
+      "snippet": "Facebook. 154,706,811 likes · 231,258 talking about this. Community Values We believe people can do more together than alone and …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://apps.facebook.com/reg/",
+      "snippet": "Create an account to connect with friends, family and communities of people who share your interests."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://upload.facebook.com/login/",
+      "snippet": "Explore the things you love. Log into Facebook"
+    },
+    {
+      "title": "Log Into Facebook",
+      "url": "https://secure.facebook.com/login/",
+      "snippet": "Log into Facebook to start sharing and connecting with your friends, family, and people you know."
+    }
+  ]
+}

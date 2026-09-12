@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Travor278/pi05-putcab-ctr-train50-v4-lora-10k",
+  "slug": "travor278-pi05-putcab-ctr-train50-v4-lora-10k",
+  "author": "Travor278",
+  "url": "https://huggingface.co/Travor278/pi05-putcab-ctr-train50-v4-lora-10k",
+  "created_at": "2026-09-12T14:49:23.000Z",
+  "updated_at": "2026-09-12T14:50:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi05",
+    "jax",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335811584,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Iniciar sesión en Gmail - Ordenador - Ayuda de Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=es&co=GENIE.Platform%3DDesktop",
+      "snippet": "Iniciar sesión en Gmail Nota: Si inicias sesión en un ordenador público, asegúrate de cerrarla antes de dejar de usar el ordenador. …"
+    },
+    {
+      "title": "Criar uma Conta do Google para o Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=pt-BR",
+      "snippet": "Importante: antes de criar uma nova Conta do Google, saia da conta atual. Saiba como sair do Gmail. No dispositivo, acesse a …"
+    },
+    {
+      "title": "Hatayı engelleyen geçmiş kaydını tutan excele aktaran Profesyonel ...",
+      "url": "https://forum.donanimhaber.com/hatayi-engelleyen-gecmis-kaydini-tutan-excele-aktaran-profesyonel-bilimsel-hesap-makinesi--163039211",
+      "snippet": "Feb 17, 2026 · Hatayı engelleyen geçmiş kaydını tutan excele aktaran Profesyonel Bilimsel Hesap Makinesi Sıcak Fırsatlarda …"
+    },
+    {
+      "title": "Mühendislik İçin Hesap Makinesi - DonanımHaber Forum » Sayfa 3",
+      "url": "https://forum.donanimhaber.com/muhendislik-icin-hesap-makinesi--52739621-3",
+      "snippet": "Böyle bir hesap makinesi iş yaşamında lazım olur diye duydum haritacılar ve makineciler için deniyor.Fiyatıda çok pahalıymış iş …"
+    },
+    {
+      "title": "Google Help",
+      "url": "https://support.google.com/?hl=en",
+      "snippet": "If you're having trouble accessing a Google product, there's a chance we're currently experiencing a temporary problem. You can …"
+    }
+  ]
+}

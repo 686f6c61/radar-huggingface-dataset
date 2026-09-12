@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ASD21213123EDSA/MyAwesomeModel-TestRepo",
+  "slug": "asd21213123edsa-myawesomemodel-testrepo",
+  "author": "ASD21213123EDSA",
+  "url": "https://huggingface.co/ASD21213123EDSA/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-12T17:21:08.000Z",
+  "updated_at": "2026-09-12T17:21:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "حب أعمى - ويكيبيديا",
+      "url": "https://ar.wikipedia.org/wiki/%D8%AD%D8%A8_%D8%A3%D8%B9%D9%85%D9%89",
+      "snippet": "تدور أحداث المسلسل حول كمال (بوراك أوزجيفيت)، الشاب الفقير، ونيهان (نسليهان أتاغول)، الفتاة الغنية. يقع كمال ونيهان في حب بعضهما البعض، لكن أمير، الرجل الغني ذو النفوذ، يطمح إلى جعل نيهان تقع …"
+    },
+    {
+      "title": "قصة مسلسل الحب الأعمى - سطور",
+      "url": "https://sotor.com/%D9%82%D8%B5%D8%A9-%D9%85%D8%B3%D9%84%D8%B3%D9%84-%D8%A7%D9%84%D8%AD%D8%A8-%D8%A7%D9%84%D8%A3%D8%B9%D9%85%D9%89/",
+      "snippet": "مسلسل الحب الأعمى، كارا سيفدا ، Kara Sevda، أو مسلسل حب لا نهاية له ، هو مسلسل يعرض قصة فتاة رسامة، تضطر لترك من تحب، والزواج بآخر لإنقاذ أخيها، في إطار من الدراما …"
+    },
+    {
+      "title": "قصة المسلسل التركي الحب الاعمى في تركيا - الموسوعة السعودية",
+      "url": "https://www.ksaency.com/article/%D9%82%D8%B5%D8%A9-%D8%A7%D9%84%D9%85%D8%B3%D9%84%D8%B3%D9%84-%D8%A7%D9%84%D8%AA%D8%B1%D9%83%D9%8A-%D8%A7%D9%84%D8%AD%D8%A8-%D8%A7%D9%84%D8%A7%D8%B9%D9%85%D9%89-%D9%81%D9%8A-%D8%AA%D8%B1%D9%83%D9%8A%D8%A7-99",
+      "snippet": "في البداية تدور الأحداث الخاصة بالمسلسل عن قصة الحب القوية التي تجمع بين كل من كمال ذلك الشاب الفقير ، ونيهان تلك الفتاة الغنية ، وأثناء استمتاعك بتلك العلاقة المميزة يظهر رجل أعمال غني وله نفوذ …"
+    },
+    {
+      "title": "مسلسل تركي الحب الاعمى: قصة المسلسل.السينما التركية",
+      "url": "https://www.ainpedia.com/article/%D9%85%D8%B3%D9%84%D8%B3%D9%84-%D8%AA%D8%B1%D9%83%D9%8A-%D8%A7%D9%84%D8%AD%D8%A8-%D8%A7%D9%84%D8%A7%D8%B9%D9%85%D9%89-%D9%82%D8%B5%D8%A9-%D8%A7%D9%84%D9%85%D8%B3%D9%84%D8%B3%D9%84-%D8%A7%D9%84%D8%B3%D9%8A%D9%86%D9%85%D8%A7-%D8%A7%D9%84%D8%AA%D8%B1%D9%83%D9%8A%D8%A9",
+      "snippet": "مسلسل تركي الحب الاعمى هو باللغة التركية sevda kara ، وهو احد اشهر المسلسلات الدرامية الرومانسية ، ذلك المسلسل المميز تم انتاجه من قبل شركة القمر للانتاج الفني ، وقد تم عرضه في تركيا …"
+    },
+    {
+      "title": "دراما تركية رومانسية.. قصة المسلسل التركي حب أعمى Kara Sevda",
+      "url": "https://evrak.co/post/1247/%D8%AF%D8%B1%D8%A7%D9%85%D8%A7-%D8%AA%D8%B1%D9%83%D9%8A%D8%A9-%D8%B1%D9%88%D9%85%D8%A7%D9%86%D8%B3%D9%8A%D8%A9-%D9%82%D8%B5%D8%A9-%D8%A7%D9%84%D9%85%D8%B3%D9%84",
+      "snippet": "Oct 10, 2023 · تدور أحداث المسلسل التركي حب أعمى حول شاب فقير الحال يدعى كمال طالب جامعي، يدرس هندسة المعادن في السنة الرابعة ينتمي إلى عائلة بسيطة، ويعمل في مجال القوارب والسفن من أجل …"
+    }
+  ]
+}

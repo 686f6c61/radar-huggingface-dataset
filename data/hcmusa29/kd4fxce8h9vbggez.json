@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "hcmusa29/KD4FxCe8h9VbgGeZ",
+  "slug": "hcmusa29-kd4fxce8h9vbggez",
+  "author": "hcmusa29",
+  "url": "https://huggingface.co/hcmusa29/KD4FxCe8h9VbgGeZ",
+  "created_at": "2026-09-08T12:02:21.000Z",
+  "updated_at": "2026-09-12T13:11:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 290363647286,
+  "storage_human": "290.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tutorials/Playing and saving Minecraft on a thumb drive",
+      "url": "https://minecraft.fandom.com/wiki/Tutorials/Playing_and_saving_Minecraft_on_a_thumb_drive",
+      "snippet": "If you are not planning to play Minecraft on a thumb drive but on your main hard drive instead, it's highly recommended for you to …"
+    },
+    {
+      "title": "How do I save Minecraft worlds on a USB drive? - Reddit",
+      "url": "https://www.reddit.com/r/Minecraft/comments/mgl9nv/how_do_i_save_minecraft_worlds_on_a_usb_drive/",
+      "snippet": "Mar 30, 2021 · Minecraft root folder and the folder called “world” or whatever the folder is called in the settings properties file. Move …"
+    },
+    {
+      "title": "Tutorial:Playing and saving Minecraft on a thumb drive – Minecraft Wiki",
+      "url": "https://minecraft.wiki/w/Tutorial:Playing_and_saving_Minecraft_on_a_thumb_drive",
+      "snippet": "This tutorial explains how to run Minecraft on a portable location (e.g. on a thumb drive). A portable installation is an installation that …"
+    },
+    {
+      "title": "Tutorials/Playing and saving Minecraft on a thumb drive with the …",
+      "url": "https://minecraft.fandom.com/wiki/Tutorials/Playing_and_saving_Minecraft_on_a_thumb_drive_with_the_old_launcher",
+      "snippet": "This guide aims to make Minecraft on a portable USB drive with the 1.6 or lower version launcher. If you have the 2.0 launcher or …"
+    },
+    {
+      "title": "Tutorial:Playing and saving Minecraft on a thumb drive with the old ...",
+      "url": "https://minecraft.wiki/w/Tutorial:Playing_and_saving_Minecraft_on_a_thumb_drive_with_the_old_launcher",
+      "snippet": "Sep 5, 2026 · This guide aims to make Minecraft on a portable USB drive with the 1.6 or lower version launcher. If you have the 2.0 …"
+    }
+  ]
+}

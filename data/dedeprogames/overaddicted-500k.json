@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "DedeProGames/Overaddicted-500K",
+  "slug": "dedeprogames-overaddicted-500k",
+  "author": "DedeProGames",
+  "url": "https://huggingface.co/DedeProGames/Overaddicted-500K",
+  "created_at": "2026-09-12T15:40:11.000Z",
+  "updated_at": "2026-09-12T15:40:12.000Z",
+  "license": "odc-by",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "nanodex",
+    "tiny-lm",
+    "pretrained-from-scratch",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:odc-by",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 492192,
+  "parameters_human": "492192",
+  "storage_bytes": 1971816,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "Introducing ChatGPT - OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "GPT-6 Astra: A new generation of intelligence Research 28 min read Introducing ChatGPT Images 2.5 Product 6 min read GPT‑6 …"
+    },
+    {
+      "title": "ChatGPT - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/ChatGPT",
+      "snippet": "OpenAI operates the service on a freemium model. Users can interact with ChatGPT through text, audio, and image prompts. …"
+    }
+  ]
+}

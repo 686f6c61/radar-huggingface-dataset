@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "phasuwut/sam-2-custom",
+  "slug": "phasuwut-sam-2-custom",
+  "author": "phasuwut",
+  "url": "https://huggingface.co/phasuwut/sam-2-custom",
+  "created_at": "2026-09-12T15:55:46.000Z",
+  "updated_at": "2026-09-12T15:55:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mappy - Plans, comparateur d'itinéraires et cartes de France",
+      "url": "https://fr.mappy.com/",
+      "snippet": "Tout Mappy dans votre poche Un GPS efficace et gratuit, trafic en temps réel et alertes de vitesse Installer l'App"
+    },
+    {
+      "title": "Itinéraire avec Mappy. Comparez vos itinéraires",
+      "url": "https://fr.mappy.com/itineraire",
+      "snippet": "Mappy vous permet de calculer votre itinéraire en voiture avec les conditions de trafic en temps réel. Vous pouvez également …"
+    },
+    {
+      "title": "Itinéraire: calcul d’itinéraire, coût du trajet détaillé - ViaMichelin",
+      "url": "https://www.viamichelin.fr/itineraires",
+      "snippet": "Calcul d'itinéraire précis, avec coût détaillé du trajet (péages, carburant, vignettes), distances kilométriques entre les villes, temps de …"
+    },
+    {
+      "title": "ViaMichelin : Itinéraires, Cartes, Info trafic, Hôtels",
+      "url": "https://www.viamichelin.fr/",
+      "snippet": "Explorez ViaMichelin, le guide de votre mobilité. Carte interactive, itinéraires, bornes de recharge, hébergements, restaurants et sites …"
+    },
+    {
+      "title": "Mappy — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mappy",
+      "snippet": "En 2014, Mappy lance MappyCity, une application pour smartphone de calcul d'itinéraire en Île-de-France. Cette application prend en …"
+    }
+  ]
+}

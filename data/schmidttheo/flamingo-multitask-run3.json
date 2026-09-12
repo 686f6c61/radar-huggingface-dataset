@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "schmidttheo/flamingo-multitask-run3",
+  "slug": "schmidttheo-flamingo-multitask-run3",
+  "author": "schmidttheo",
+  "url": "https://huggingface.co/schmidttheo/flamingo-multitask-run3",
+  "created_at": "2026-09-12T17:50:39.000Z",
+  "updated_at": "2026-09-12T17:50:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mountain Bike News, Photos, Videos & Events | Pinkbike",
+      "url": "https://www.pinkbike.com/",
+      "snippet": "Pinkbike is the homepage of mountain biking. Stay updated with the latest news, reviews, videos, buyer's guides and racing results. …"
+    },
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "Pinkbike's Grim Donut Game",
+      "url": "https://www.pinkbike.com/sandbox/grimdonutgame/",
+      "snippet": "Check out PinkBike.com for the latest in cycling and mountain biking news, freeride videos, photos, events and more. Submit your …"
+    },
+    {
+      "title": "Channel or account terminations - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/2802168?hl=en",
+      "snippet": "Check status of a termination appeal Open YouTube Studio. View confirmation of your appeal submission, and check your appeal’s …"
+    },
+    {
+      "title": "Mountain Bike Marketplace | Used Mountain Bikes and Parts | Pinkbike",
+      "url": "https://www.pinkbike.com/buysell",
+      "snippet": "Explore North America's largest marketplace for used mountain bikes and parts."
+    }
+  ]
+}

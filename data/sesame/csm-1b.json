@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sesame/csm-1b",
+  "slug": "sesame-csm-1b",
+  "author": "sesame",
+  "url": "https://huggingface.co/sesame/csm-1b",
+  "created_at": "2025-03-06T15:36:45.000Z",
+  "updated_at": "2025-12-01T10:14:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "csm",
+    "text-to-audio",
+    "text-to-speech",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2445,
+  "downloads_30d": 144338,
+  "trending_score": 9,
+  "parameters": 1552791552,
+  "parameters_human": "1.55B",
+  "storage_bytes": 19618434875,
+  "storage_human": "19.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sésame — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/S%C3%A9same",
+      "snippet": "Bedigian D, « Cultivated sesame and wild relative in the genus Sesamum L. », dans Bedigian D., Sesame : the genus Sesamum, …"
+    },
+    {
+      "title": "Graines de Sésame : utilisations et bienfaits nutritionnels",
+      "url": "https://www.compagnie-des-sens.fr/graines-de-sesame/",
+      "snippet": "Jun 17, 2025 · In vitro antioxidant and antihypertensive properties of sesame seed enzymatic protein hydrolysate and ultrafiltration …"
+    },
+    {
+      "title": "Sesame - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sesame",
+      "snippet": "Sesame seed is one of the oldest oilseed crops known, domesticated well over 3,000 years ago. Sesamum has many other species, …"
+    },
+    {
+      "title": "Sésame - Université de Rennes",
+      "url": "https://sesame.univ-rennes.fr/",
+      "snippet": "Confidentialité des informations et responsabilité de l'utilisateur L'Université de Rennes garantit la protection des informations …"
+    },
+    {
+      "title": "Graines de sésame : bienfaits santé, comment les consommer ?",
+      "url": "https://www.topsante.com/nutrition-et-recettes/les-bons-aliments/les-supers-aliments/sesame-quels-bienfaits-effets-sur-anemie-peau-655811",
+      "snippet": "Apr 13, 2026 · Les graines de sésame sont très utilisées dans la cuisine orientale, elles sont réputées pour leur pouvoir nourrissant et …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "NAMAA-Space/araseg-e41-qwen35-9b-nopnx-pa",
+  "slug": "namaa-space-araseg-e41-qwen35-9b-nopnx-pa",
+  "author": "NAMAA-Space",
+  "url": "https://huggingface.co/NAMAA-Space/araseg-e41-qwen35-9b-nopnx-pa",
+  "created_at": "2026-09-12T13:54:57.000Z",
+  "updated_at": "2026-09-12T14:32:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "arabic",
+    "text-segmentation",
+    "token-classification",
+    "araseg-2026",
+    "arabicnlp2026",
+    "shared-task",
+    "ar",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116523986,
+  "storage_human": "117 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "初心者向けLooker Studioの使い方完全解説｜導入からレポート ...",
+      "url": "https://axia-ag.co.jp/hr-dx-info/lookerstudio_use/",
+      "snippet": "Jan 6, 2026 · この記事では、 Looker Studioを初めて使う初心者の方に向けて 、基本的な使い方から導入手順、レポートの作成・共 …"
+    },
+    {
+      "title": "データポータル（旧Looker Studio）の使い方完全ガイド｜初心者 ...",
+      "url": "https://inno-mark.jp/datavista/blog/complete-guide-looker-studio/",
+      "snippet": "Jan 4, 2025 · Looker Studioの使い方を2026年最新版で初心者向けに完全解説。 GA4・スプレッドシート連携からレポート作成、日 …"
+    },
+    {
+      "title": "Looker Studioとは？使い方の基本を初心者向けに解説 ...",
+      "url": "https://optemo.co.jp/knowhow/looker-studio-beginner-guide/",
+      "snippet": "Jan 29, 2026 · Looker Studioを使えば、面倒な更新作業は過去のものになります。 一度設定してしまえば、データの取り込みも自 …"
+    },
+    {
+      "title": "【初心者向け】Looker Studioの使い方を6つのステップで解説！",
+      "url": "https://www.dsk-cloud.com/blog/gcp/learn-how-to-use-looker-studio-in-6-steps",
+      "snippet": "Aug 19, 2025 · 特にグラフの作成方法や共有方法、データソースとの連携方法を押さえる必要があります。 本記事では、Looker …"
+    },
+    {
+      "title": "【初心者向け】図解あり！Google Looker Studioの使い方を解説 ...",
+      "url": "https://www.plan-b.co.jp/blog/seo/31762/",
+      "snippet": "Jul 29, 2025 · 今回は、基本的な使い方としてLooker StudioでGA4（Google アナリティクス）のレポートを作成する方法を紹介しま …"
+    }
+  ]
+}

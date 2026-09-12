@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "prism-drift/qwen35-4b-m0-v4-rust-rl-adapters",
+  "slug": "prism-drift-qwen35-4b-m0-v4-rust-rl-adapters",
+  "author": "prism-drift",
+  "url": "https://huggingface.co/prism-drift/qwen35-4b-m0-v4-rust-rl-adapters",
+  "created_at": "2026-09-11T05:59:13.000Z",
+  "updated_at": "2026-09-12T13:33:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21352103656,
+  "storage_human": "21.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - Prism Launcher",
+      "url": "https://prismlauncher.org/",
+      "snippet": "Prism Launcher allows you to create and manage multiple instances of Minecraft, each with its own settings, mods, and …"
+    },
+    {
+      "title": "Prism - GraphPad",
+      "url": "https://www.graphpad.com/features",
+      "snippet": "Prism is specifically formatted for the analyses you want to run, including analysis of quantitative and categorical data. This makes it …"
+    },
+    {
+      "title": "Prism - OpenAI",
+      "url": "https://openai.com/fr-FR/prism/",
+      "snippet": "Write, edit, and collaborate on scientific documents in LaTeX with Prism—the free LaTeX editor and scientific workspace integrating …"
+    },
+    {
+      "title": "Prism | A free, LaTeX Editor and AI-native workspace for scientists",
+      "url": "https://openai.com/prism/",
+      "snippet": "Write, edit, and collaborate on scientific documents in LaTeX with Prism—the free LaTeX editor and scientific workspace integrating …"
+    },
+    {
+      "title": "Free Live Streaming & Recording Software | PRISM Live Studio",
+      "url": "https://prismlive.com/en_us/",
+      "snippet": "Smart tools for all creators. This all-in-one program enables content producers to handle live streaming and recording. PRISM Live …"
+    }
+  ]
+}

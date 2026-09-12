@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "davidmillerbeck/swin-t-checkpoint",
+  "slug": "davidmillerbeck-swin-t-checkpoint",
+  "author": "davidmillerbeck",
+  "url": "https://huggingface.co/davidmillerbeck/swin-t-checkpoint",
+  "created_at": "2026-09-12T19:33:01.000Z",
+  "updated_at": "2026-09-12T19:33:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gol.D.Roger (OP13-003) (One Piece) | Cardmarket",
+      "url": "https://www.cardmarket.com/fr/OnePiece/Cards/GolDRoger-OP13-003?msockid=20573d282f466e8d0dbf2afa2e6a6ff5",
+      "snippet": "Vous voulez apprendre tout sur la carte Gol.D.Roger (OP13-003)? Dans quelles extensions elle est disponible? Comment la carte est …"
+    },
+    {
+      "title": "DON!! (OP13 Roger) (One Piece) | Cardmarket",
+      "url": "https://www.cardmarket.com/fr/OnePiece/Cards/DON-OP13-Roger?msockid=20573d282f466e8d0dbf2afa2e6a6ff5",
+      "snippet": "Combien vaut la carte? Achetez ou vendez des cartes sur le marché les plus grand d'Europe pour One Piece."
+    },
+    {
+      "title": "One Piece Don Card Gol D. Roger OP-13 - eBay",
+      "url": "https://www.ebay.fr/itm/336266457091",
+      "snippet": "Les meilleures offres pour One Piece Don Card Gol D. Roger OP-13 sont sur eBay Comparez les prix et les spécificités des produits …"
+    },
+    {
+      "title": "Prix de Gol.D.Roger OP13-003 | One Piece Carrying on His Will | Cartes ...",
+      "url": "https://www.pricecharting.com/fr/game/one-piece-carrying-on-his-will/goldroger-op13-003",
+      "snippet": "Nov 7, 2025 · Les graphiques vous indiquent le prix de Gol.D.Roger OP13-003 à la fin de chaque mois, ainsi que son évolution …"
+    },
+    {
+      "title": "OP13-003-L - Gol D. Roger | OPECards.fr",
+      "url": "https://www.opecards.fr/cards/op13-003-l-gol-d-roger",
+      "snippet": "OPECards.fr te propose le suivi du prix le plus bas sur Cardmarket et Cardnexus pour la carte à collectionner Gol D. Roger, sur les …"
+    }
+  ]
+}

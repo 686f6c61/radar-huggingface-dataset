@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "handy-computer/granite-speech-4.1-2b-plus-gguf",
+  "slug": "handy-computer-granite-speech-4-1-2b-plus-gguf",
+  "author": "handy-computer",
+  "url": "https://huggingface.co/handy-computer/granite-speech-4.1-2b-plus-gguf",
+  "created_at": "2026-05-17T10:46:07.000Z",
+  "updated_at": "2026-09-12T13:41:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transcribe.cpp",
+  "languages": [
+    "en",
+    "fr",
+    "de",
+    "es",
+    "pt"
+  ],
+  "tags": [
+    "transcribe.cpp",
+    "gguf",
+    "asr",
+    "speech-to-text",
+    "granite",
+    "granite-speech",
+    "audio-llm",
+    "multilingual",
+    "word-timestamps",
+    "automatic-speech-recognition",
+    "en",
+    "fr",
+    "de",
+    "es",
+    "pt",
+    "arxiv:2604.11269",
+    "arxiv:2604.22817",
+    "arxiv:2604.12398",
+    "arxiv:2505.08699",
+    "arxiv:2603.11243",
+    "arxiv:2603.08397",
+    "base_model:ibm-granite/granite-speech-4.1-2b-plus",
+    "base_model:quantized:ibm-granite/granite-speech-4.1-2b-plus",
+    "license:apache-2.0",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 11534,
+  "trending_score": 0,
+  "parameters": 2111899452,
+  "parameters_human": "2.11B",
+  "storage_bytes": 74999585152,
+  "storage_human": "75.0 GB",
+  "base_model": "ibm-granite/granite-speech-4.1-2b-plus",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download Handy",
+      "url": "https://handy.computer/download.html",
+      "snippet": "Download Handy - the free and open source speech to text application for Windows, macOS, and Linux"
+    },
+    {
+      "title": "Handy",
+      "url": "https://handy.computer/",
+      "snippet": "Handy is a cross platform, open-source, speech-to-text application for your computer"
+    },
+    {
+      "title": "Merci Handy | Nous existons pour rendre l'ordinaire extraordinaire",
+      "url": "https://www.mercihandy.com/",
+      "snippet": "Chaque colis transporte un peu de l’univers Merci Handy. Une équipe passionnée qui développe, prépare et expédie vos produits …"
+    },
+    {
+      "title": "The Handy",
+      "url": "https://www.thehandy.com/store/the-handy-eu/?country=CW",
+      "snippet": "The Handy is engineered in Scandinavia to deliver premium, high-tech pleasure for penis owners. Reliable and comfortable, it offers …"
+    },
+    {
+      "title": "Maison Handy",
+      "url": "https://maisonhandy.com/",
+      "snippet": "Découvrez dès maintenant les dernières nouveautés de Maison HANDY. Laissez-vous séduire par l’alliance parfaite entre innovation, …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "hendrimardani/fine-tuned-model-indoensian-2",
+  "slug": "hendrimardani-fine-tuned-model-indoensian-2",
+  "author": "hendrimardani",
+  "url": "https://huggingface.co/hendrimardani/fine-tuned-model-indoensian-2",
+  "created_at": "2026-09-08T07:30:15.000Z",
+  "updated_at": "2026-09-12T17:55:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 278,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 20237287579,
+  "storage_human": "20.2 GB",
+  "base_model": "unsloth/llama-3.1-8b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ICC.tv | ICC - International Cricket Council",
+      "url": "https://www.icc-cricket.com/icc-tv",
+      "snippet": "Watch the latest cricket videos, match highlights, exclusive interviews, and live streams on ICC.tv. Your official destination for world …"
+    },
+    {
+      "title": "ICC.tv | About ICC Cricket | ICC",
+      "url": "https://www.icc-cricket.com/about/broadcast/icc-tv",
+      "snippet": "The host broadcast production rights from all ICC major events from 2015-2023 have been retained by ICC. As such, the ICC …"
+    },
+    {
+      "title": "ICC.tv - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.icc.tv.app&hl=en-US",
+      "snippet": "Welcome to the official ICC app, your one-stop destination for all things cricket in the comfort of your own home. Dive into the world of …"
+    },
+    {
+      "title": "A conceptual framework for multi-component summative ... - Frontiers",
+      "url": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2025.1656092/full",
+      "snippet": "15.09.2025 ... ... fine-tuned LLM evaluated against a meta-evaluator, supervised by ... Table 2. Stage, Elements at modeling levels. Model, Method. Meta-meta-model ..."
+    },
+    {
+      "title": "ICC TV - YouTube",
+      "url": "https://www.youtube.com/channel/UCpXkf62lGMzTwLivjELiVFA",
+      "snippet": "\"Welcome to ICC TV, your ultimate destination for everything cricket! Dive into the exhilarating world of bat and ball with us as we …"
+    }
+  ]
+}

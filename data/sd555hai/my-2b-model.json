@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "sd555hai/my-2b-model",
+  "slug": "sd555hai-my-2b-model",
+  "author": "sd555hai",
+  "url": "https://huggingface.co/sd555hai/my-2b-model",
+  "created_at": "2026-09-11T20:27:21.000Z",
+  "updated_at": "2026-09-12T13:46:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "safetensors",
+    "qwen3_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 86,
+  "trending_score": 0,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 496354373989,
+  "storage_human": "496.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Resize a figure automatically in matplotlib - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/1271023/resize-a-figure-automatically-in-matplotlib",
+      "snippet": "Aug 13, 2009 · Is there a way to automatically resize a figure to properly fit contained plots in a matplotlib/pylab image? I'm creating …"
+    },
+    {
+      "title": "python - How to switch axes in matplotlib? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/2361872/how-to-switch-axes-in-matplotlib",
+      "snippet": "Mar 2, 2010 · I like to switch x axis with y axis after plotting a graph with matplotlib? Any easy way for it? Thanks in advance."
+    },
+    {
+      "title": "CAD单位怎么设置，怎样把cad单位设置成毫米-百度经验",
+      "url": "https://jingyan.baidu.com/article/a3f121e4994b9cfc9152bb54.html",
+      "snippet": "Aug 2, 2018 · CAD里怎样设置单位，怎样更改CAD里常用的单位，如果需要把CAD单位设置成毫米的话，在哪里设置，可参考以下设 …"
+    },
+    {
+      "title": "如何在 Matplotlib 中绘制水平和垂直线？ - 知乎",
+      "url": "https://www.zhihu.com/question/504871819",
+      "snippet": "Dec 9, 2021 · 如上所述，xmin/ xmax 和 ymin/ ymax 是指 Matplot 图，而不是所绘制的数据线。 因此，如果我们放大或缩小绘图，则 …"
+    },
+    {
+      "title": "程序设计语言理论（PLT）领域里有哪些经典的教材？ - 知乎",
+      "url": "https://www.zhihu.com/question/31883401",
+      "snippet": "我感觉这一方面特别好的书不是很多。 或者过于formal 比如 Bob Harper 的书，虽然名字叫practical foundation 其实不是很practical 或 …"
+    }
+  ]
+}

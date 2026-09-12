@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "stanthegorilla/S1-mini-Q8_0-GGUF",
+  "slug": "stanthegorilla-s1-mini-q8_0-gguf",
+  "author": "stanthegorilla",
+  "url": "https://huggingface.co/stanthegorilla/S1-mini-Q8_0-GGUF",
+  "created_at": "2026-09-12T14:54:56.000Z",
+  "updated_at": "2026-09-12T14:55:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "text-normalization",
+    "speech-to-text",
+    "dictation",
+    "en",
+    "base_model:superwhisper/s1-mini",
+    "base_model:quantized:superwhisper/s1-mini",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 751632384,
+  "parameters_human": "751.6M",
+  "storage_bytes": 804753312,
+  "storage_human": "805 MB",
+  "base_model": "superwhisper/s1-mini",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zalophus californianus - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Zalophus_californianus",
+      "snippet": "L' otaria della California (Zalophus californianus) è un leone marino che vive lungo le coste del Pacifico del Nord, principalmente della …"
+    },
+    {
+      "title": "Leoni marini California: guida completa ai leoni marini della costa ...",
+      "url": "https://clubfreetime.it/leoni-marini-california/",
+      "snippet": "Oct 29, 2025 · I leoni marini California sono tra i mammiferi marini più affascinanti della costa occidentale. In questa guida …"
+    },
+    {
+      "title": "Baia dei Pinnipedi - FondazioneZoomarine",
+      "url": "https://www.fondazionezoomarine.it/INostriAnimali/Pinnipedi",
+      "snippet": "Le minacce principali riguardano l’inquinamento marino, soprattutto da plastica e idrocarburi, la cattura accidentale nelle reti da …"
+    },
+    {
+      "title": "Otaria della california - Fatti, dieta, habitat e immagini ... - Animalia",
+      "url": "https://animalia.bio/it/california-sea-lion",
+      "snippet": "L' otaria della California (Zalophus californianus) è un leone marino che vive lungo le coste del Pacifico del Nord, principalmente della …"
+    },
+    {
+      "title": "Otariinae - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Otariinae",
+      "snippet": "Si è a conoscenza di un leone marino ibrido, nato dall'incrocio tra un leone marino californiano (Zalophus californianus) ed uno …"
+    }
+  ]
+}

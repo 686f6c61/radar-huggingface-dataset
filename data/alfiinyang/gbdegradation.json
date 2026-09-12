@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "alfiinyang/GBdegradation",
+  "slug": "alfiinyang-gbdegradation",
+  "author": "alfiinyang",
+  "url": "https://huggingface.co/alfiinyang/GBdegradation",
+  "created_at": "2026-09-12T15:25:46.000Z",
+  "updated_at": "2026-09-12T15:39:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44573,
+  "storage_human": "44573 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Borgo Panigale Experience e Museo | Ducati",
+      "url": "https://www.ducati.com/it/it/borgo-panigale-experience",
+      "snippet": "Stai per entrare nel mondo Ducati: scoprirai il passato, il presente e futuro del motociclismo italiano di Borgo Panigale."
+    },
+    {
+      "title": "Museo Ducati (Bologna, Borgo Panigale) > Orari e Prezzi, Biglietti",
+      "url": "https://www.museidibologna.it/museo-ducati/",
+      "snippet": "May 29, 2026 · Il Museo Ducati, adiacente alla storico stabilimento Ducati di Borgo Panigale, è uno dei musei più visitati della città di …"
+    },
+    {
+      "title": "Ducati Museum Online Journey | Borgo Panigale Experience",
+      "url": "https://www.ducati.com/ww/en/borgo-panigale-experience",
+      "snippet": "From September 7 to October 5, Ducati celebrates 100 years with Bologna: an exhibition in the historic city centre explores …"
+    },
+    {
+      "title": "Museo Ducati - Wikipedia",
+      "url": "https://it.m.wikipedia.org/wiki/Museo_Ducati",
+      "snippet": "Il Museo Ducati è un museo tecnologico situato a Bologna nei pressi dell'azienda Ducati. L'esposizione raccoglie numerosi modelli …"
+    },
+    {
+      "title": "Museo Ducati - Ministero della cultura",
+      "url": "https://cultura.gov.it/luogo/museo-ducati",
+      "snippet": "Il museo Ducati è concepito per narrare la storia dell'azienda attraverso quattro diversi percorsi che guidano il visitatore dalle origini …"
+    }
+  ]
+}

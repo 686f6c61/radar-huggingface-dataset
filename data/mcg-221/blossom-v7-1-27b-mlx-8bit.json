@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "McG-221/Blossom-V7.1-27B-mlx-8Bit",
+  "slug": "mcg-221-blossom-v7-1-27b-mlx-8bit",
+  "author": "McG-221",
+  "url": "https://huggingface.co/McG-221/Blossom-V7.1-27B-mlx-8Bit",
+  "created_at": "2026-09-12T12:29:23.000Z",
+  "updated_at": "2026-09-12T12:30:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "conversational",
+    "reasoning",
+    "multimodal",
+    "mlx-my-repo",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:Azure99/Blossom-V7.1-27B",
+    "base_model:quantized:Azure99/Blossom-V7.1-27B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895993856,
+  "parameters_human": "26.90B",
+  "storage_bytes": 28599709890,
+  "storage_human": "28.6 GB",
+  "base_model": "Azure99/Blossom-V7.1-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook - Connexion ou inscription",
+      "url": "https://fr-fr.facebook.com/",
+      "snippet": "Créez un compte ou connectez-vous à Facebook. Connectez-vous avec vos amis, la famille et d’autres connaissances. Partagez des …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Log into Facebook",
+      "url": "https://www.facebook.com/login.php/",
+      "snippet": "Email or mobile number Password"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://secure.facebook.com/r.php/?entry_point=login",
+      "snippet": "Get started on Facebook Create an account to connect with friends, family and communities of people who share your interests."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/%3Flocale%3Dfr_FR/",
+      "snippet": "E-mail ou numéro de mobile Mot de passe Se connecter"
+    }
+  ]
+}

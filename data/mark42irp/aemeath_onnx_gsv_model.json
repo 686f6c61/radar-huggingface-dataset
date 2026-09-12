@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Mark42IRP/Aemeath_onnx_GSV_model",
+  "slug": "mark42irp-aemeath_onnx_gsv_model",
+  "author": "Mark42IRP",
+  "url": "https://huggingface.co/Mark42IRP/Aemeath_onnx_GSV_model",
+  "created_at": "2026-07-30T13:56:26.000Z",
+  "updated_at": "2026-09-12T18:17:45.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "text-to-speech",
+    "onnx",
+    "gpt-sovits",
+    "zh",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33342294486,
+  "storage_human": "33.3 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Manaus'tan: Yemekler Dahil 4 Günlük Amazon Yağmur Ormanı Gezisi",
+      "url": "https://www.getyourguide.com/tr-tr/manaus-l917/manaus-tan-yemekler-dahil-4-gunluk-amazon-yagmur-ormani-gezisi-t1437996/?msockid=1c90535af20b68c2274d4488f3f269be",
+      "snippet": "Manaus'tan 4 günlük bir Amazon Yağmur Ormanı keşif gezisine çıkın. Orman kulübesinde konaklayın, tam pansiyon yemeklerin …"
+    },
+    {
+      "title": "Amazon yağmur ormanı 2 günlük yağışlı sezon rehberi",
+      "url": "https://www.beevago.com/tr/blog/amazon-yagmur-ormani-2-gunluk-yagisli-sezon-rehberi",
+      "snippet": "Jan 12, 2026 · Amazon yağmur ormanının yağışlı sezonu rehberi. Sular altındaki ormanları keşfedin, pembe yunusları gözlemleyin ve …"
+    },
+    {
+      "title": "Dünyanın En Büyük Ormanı: Amazon'un Sırları ve Sakinleri",
+      "url": "https://www.neoldu.com.tr/amazon-ormani-sirlari-53260h.htm",
+      "snippet": "Apr 6, 2024 · Dünyanın Kalbi olan Amazon Yağmur Ormanları hakkında tüm merak edilenleri araştırdık. Gelin, Amazon'un sırlarını ve …"
+    },
+    {
+      "title": "Selimer Yayınları Amazon Yağmur Ormanları'nda Bir Gün",
+      "url": "https://www.hepsiburada.com/selimer-yayinlari-amazon-yagmur-ormanlari-nda-bir-gun-pm-HBC0000D13T98",
+      "snippet": "Amazon Yağmur Ormanları'nda Bir Gün Seyahat etmeyi ve yaban hayatı keşfetmeyi seven çocuklar için olmazsa olmaz bir seri. Bu …"
+    },
+    {
+      "title": "En iyi Amazon ormanları Orman turları - 2026 ... - GetYourGuide",
+      "url": "https://www.getyourguide.com/tr-tr/amazon-ormanlari-l32324/orman-turlari-tc190/?msockid=1c90535af20b68c2274d4488f3f269be",
+      "snippet": "Deneyimli orman rehberi, yağmur ormanını tahrip etmeden ihtiyaç duyduğunuz her şeyi elde etmek için bilmeniz gereken her şeyi …"
+    }
+  ]
+}

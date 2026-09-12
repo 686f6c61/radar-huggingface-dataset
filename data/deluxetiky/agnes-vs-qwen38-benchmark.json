@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "deluxetiky/agnes-vs-qwen38-benchmark",
+  "slug": "deluxetiky-agnes-vs-qwen38-benchmark",
+  "author": "deluxetiky",
+  "url": "https://huggingface.co/deluxetiky/agnes-vs-qwen38-benchmark",
+  "created_at": "2026-09-12T13:45:40.000Z",
+  "updated_at": "2026-09-12T13:45:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "benchmark",
+    "llm-serving",
+    "inference",
+    "vllm",
+    "sglang",
+    "speculative-decoding",
+    "mtp",
+    "nvfp4",
+    "bf16",
+    "hybrid-attention",
+    "gated-deltanet",
+    "blackwell",
+    "rtx-pro-6000",
+    "tool-calling",
+    "vision",
+    "video",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube 動画をアップロードする",
+      "url": "https://support.google.com/youtube/answer/57407?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "YouTube に動画をアップロードする手順は簡単です。パソコンやモバイル デバイスから動画をアップロードする手順は次のとおり …"
+    },
+    {
+      "title": "YouTube で制限付きモードをオンまたはオフにする",
+      "url": "https://support.google.com/youtube/answer/174084?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "YouTube で制限付きモードをオンまたはオフにする 制限付きモードは、YouTube で使用できるオプション設定です。 この機能は …"
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    },
+    {
+      "title": "谷歌账号注册验证无法发出信息怎么办? - 知乎",
+      "url": "https://www.zhihu.com/question/1945629068243481180",
+      "snippet": "3、国内注册的账号能否使用 YouTube 和 Google Play？ 完全可以。 Google 账号是全球通用的，注册成功后即可无缝登录谷歌全家桶 …"
+    },
+    {
+      "title": "Автоматический дубляж - Android - Cправка - YouTube",
+      "url": "https://support.google.com/youtube/answer/15569972?hl=ru&co=GENIE.Platform%3DAndroid",
+      "snippet": "Войдите в Творческую студию YouTube на компьютере. Выберите Настройки Канал Расширенные настройки. Убедитесь, что …"
+    }
+  ]
+}

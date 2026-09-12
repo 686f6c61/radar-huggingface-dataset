@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "densafaradenza/DeepSeek-R1-Distill-Qwen-32B",
+  "slug": "densafaradenza-deepseek-r1-distill-qwen-32b",
+  "author": "densafaradenza",
+  "url": "https://huggingface.co/densafaradenza/DeepSeek-R1-Distill-Qwen-32B",
+  "created_at": "2026-09-12T18:18:16.000Z",
+  "updated_at": "2026-09-12T18:18:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:2501.12948",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 65527841532,
+  "storage_human": "65.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NO PUEDO ENTRAR A MI CUENTA ANTERIOR - Microsoft Community",
+      "url": "https://answers.microsoft.com/es-es/outlook_com/forum/all/no-puedo-entrar-a-mi-cuenta-anterior/fe35820a-d5c1-4cfc-9b73-e789918f7eb0",
+      "snippet": "Buen día, no puedo ingresar a mi cuenta anterior debido a que no la utilizo hace más de 1 año, y al momento de ingresar, me dice …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msteams/forum/all/assignment-notifications-dont-occur-in-a-teams/30905e6b-adeb-4e92-848e-1d36efcc3a13",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/windows/forum/all/windows-7-ribbon-and-access-toolbar-disappeared/2505ee89-3f2b-4e6c-94b5-2124a971f18f",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/how-do-i-set-the-name-that-appears-on-the-command/63c046ce-f89d-4f62-b93b-b65a66bfa86c",
+      "snippet": ""
+    },
+    {
+      "title": "Teams ao executar no MAC apenas fica uma tela Branca",
+      "url": "https://answers.microsoft.com/pt-br/msteams/forum/msteams_inout-msteams_signin/teams-ao-executar-no-mac-apenas-fica-uma-tela/1261fcee-2abb-4f75-a63f-24763b8241b9",
+      "snippet": "Bem Após instalar o Teams no MAC, ao executar para iniciar e colocar o email de acesso Ele fica numa tela branca eterna sem …"
+    }
+  ]
+}

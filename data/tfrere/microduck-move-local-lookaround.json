@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "tfrere/microduck-move-local-lookaround",
+  "slug": "tfrere-microduck-move-local-lookaround",
+  "author": "tfrere",
+  "url": "https://huggingface.co/tfrere/microduck-move-local-lookaround",
+  "created_at": "2026-09-10T06:53:26.000Z",
+  "updated_at": "2026-09-12T15:41:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "microduck-policy",
+    "academy",
+    "kind:script",
+    "move-script",
+    "tier:1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Programme TV Rugby pour aujourd'hui et ce soir",
+      "url": "https://www.allrugby.com/programme-tv",
+      "snippet": "16 hours ago · Si vous vous demandez à quelle heure et sur quelle chaîne sont diffusés les matchs de rugby ce soir, suivez le guide !"
+    },
+    {
+      "title": "Programme TV Rugby matchs à la TV aujourd’hui",
+      "url": "https://tv-sports.fr/rugby/",
+      "snippet": "Consultez le programme TV Rugby : horaires, chaînes et diffusions des matchs en direct ou en rediffusion aujourd’hui et …"
+    },
+    {
+      "title": "Programme Rugby TV - Matchs Aujourd'hui, Ce Soir & Week-end en …",
+      "url": "https://www.rugby-transferts.com/programme-rugby-tv/",
+      "snippet": "Consultez ci-dessous le programme rugby TV d’aujourd’hui, mis à jour en temps réel. Vous y trouverez l’ensemble des matchs de …"
+    },
+    {
+      "title": "Rugby aujourd’hui : matchs, horaires et chaînes TV",
+      "url": "https://coach-de-sport.com/article/rugby-aujourdhui-matchs-horaires-tv-et-direct-en-france/",
+      "snippet": "Rugby aujourd’hui : trouvez vite les matchs, horaires, chaînes TV et solutions pour suivre le direct et les résultats en France."
+    },
+    {
+      "title": "Programme TV Rugby : Les dates, horaires et chaînes de ... - Rugbyrama",
+      "url": "https://www.rugbyrama.fr/programme-tv/",
+      "snippet": "Suivez l’ensemble des matchs de rugby avec notre programme TV Rugby ! Retrouvez les dates, horaires, chaînes de diffusion pour …"
+    }
+  ]
+}

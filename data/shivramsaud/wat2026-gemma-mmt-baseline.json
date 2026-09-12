@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ShivRamSaud/wat2026-gemma-mmt-baseline",
+  "slug": "shivramsaud-wat2026-gemma-mmt-baseline",
+  "author": "ShivRamSaud",
+  "url": "https://huggingface.co/ShivRamSaud/wat2026-gemma-mmt-baseline",
+  "created_at": "2026-09-12T09:12:38.000Z",
+  "updated_at": "2026-09-12T13:30:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Logowanie - eBOK24 Erste Leasing",
+      "url": "https://ebok.ersteleasing.pl/",
+      "snippet": "Informujemy, iż strona wykorzystuje pliki cookies (tzw. ciasteczka) do identyfikacji zalogowanych użytkowników w celu poprawnej …"
+    },
+    {
+      "title": "eBOK24 - elektroniczne Biuro Obsługi Klienta 24h - Erste Leasing",
+      "url": "https://www.erste.pl/erste-leasing/ebok24",
+      "snippet": "Czy mogę ustawić własny login? Tak, zrobisz to po zalogowaniu do eBOK24 w zakładce Ustawienia/Logowanie i bezpieczeństwo. …"
+    },
+    {
+      "title": "Logowanie - eBOK24 Erste Leasing",
+      "url": "https://ebok.ersteleasing.pl/app/application/normal/create/37195?exitUrl=%2Fapp%2Fapplications&exitLabel=Powr%C3%B3t%20do%20listy%20spraw",
+      "snippet": "Teraz możesz bezpiecznie zamknąć okno lub ponownie się zalogować."
+    },
+    {
+      "title": "eBOK24 Erste Leasing",
+      "url": "https://ebok.ersteleasing.pl/app",
+      "snippet": "eBOK24 Erste Leasing"
+    },
+    {
+      "title": "eBOK24 Leasing - Zarządzaj Umowami Firmy Online - Erste",
+      "url": "https://www.erste.pl/firmy/uslugi-dla-firm/ebok24",
+      "snippet": "Jak zacząć korzystać z portalu eBOK24? To proste! Zaloguj się do Mini Firma: Na pasku nawigacyjnym w pulpicie zaznacz Produkty …"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "Iman998/HexaBee-4B-Translation-LoRA",
+  "slug": "iman998-hexabee-4b-translation-lora",
+  "author": "Iman998",
+  "url": "https://huggingface.co/Iman998/HexaBee-4B-Translation-LoRA",
+  "created_at": "2026-09-12T17:11:31.000Z",
+  "updated_at": "2026-09-12T17:22:30.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "fa",
+    "en",
+    "ar",
+    "zh",
+    "he",
+    "es"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "hexabee",
+    "translation",
+    "multilingual",
+    "research",
+    "synthetic-data",
+    "lora",
+    "image-text-to-text",
+    "conversational",
+    "fa",
+    "en",
+    "ar",
+    "zh",
+    "he",
+    "es",
+    "arxiv:2503.19786",
+    "arxiv:2106.09685",
+    "base_model:Iman998/HexaBee-4B-Multilingual-Base",
+    "base_model:adapter:Iman998/HexaBee-4B-Multilingual-Base",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 994239154,
+  "storage_human": "994 MB",
+  "base_model": "Iman998/HexaBee-4B-Multilingual-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=0b74a0be4683661e0c05b76c472c6722",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=0b74a0be4683661e0c05b76c472c6722",
+      "snippet": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and …"
+    },
+    {
+      "title": "Microsoft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft",
+      "snippet": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington. The company …"
+    }
+  ]
+}

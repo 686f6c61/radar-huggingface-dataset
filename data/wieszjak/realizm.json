@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "wieszjak/REALIZM",
+  "slug": "wieszjak-realizm",
+  "author": "wieszjak",
+  "url": "https://huggingface.co/wieszjak/REALIZM",
+  "created_at": "2026-09-12T18:02:16.000Z",
+  "updated_at": "2026-09-12T18:23:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 68512750662,
+  "storage_human": "68.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tyres in Sutton | Car Service, MOT, Air-Con Regas",
+      "url": "https://www.edentyres.com/sutton-in-ashfield/",
+      "snippet": "Visit Eden Tyres in Sutton In Ashfield for car servicing, MOT, air-con regas, wheel alignment & repairs. Book online, pay in store."
+    },
+    {
+      "title": "Eden Tyres Sutton | Car Service, MOT | Contact Us",
+      "url": "https://www.edentyres.com/sutton-in-ashfield-contact/",
+      "snippet": "Contact Eden Tyres in Sutton In Ashfield Contact A Member Of The Customer Service Team Here Our Customer Service team is …"
+    },
+    {
+      "title": "Eden Tyres, Sutton-In-Ashfield | Tyres - Yell",
+      "url": "https://www.yell.com/biz/eden-tyres-sutton-in-ashfield-8680603/",
+      "snippet": "Find Eden Tyres in Sutton-In-Ashfield, NG17. Read 10 reviews, get contact details, photos, opening times and map directions. Search …"
+    },
+    {
+      "title": "Eden Tyres & Servicing - Sutton-in-Ashfield",
+      "url": "https://mappcouk.com/eden-tyres-servicing-i766299.html",
+      "snippet": "Reviews, get directions and contact details for Eden Tyres & Servicing Address: Coxmoor Rd, Sutton-in-Ashfield NG17 4NE, UK …"
+    },
+    {
+      "title": "Eden Tyres & Servicing, Kingfisher Way, Sutton in Ashfield (2026)",
+      "url": "https://www.autoyas.com/GB/Sutton-in-Ashfield/299194967161623/Eden-Tyres-%26-Servicing",
+      "snippet": "Jan 4, 2026 · So yesterday she popped down to Eden Tyres with her mum Kate (who used to work with us!) and twin brothers Leo …"
+    }
+  ]
+}

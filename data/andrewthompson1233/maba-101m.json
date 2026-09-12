@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "AndrewThompson1233/maba-101m",
+  "slug": "andrewthompson1233-maba-101m",
+  "author": "AndrewThompson1233",
+  "url": "https://huggingface.co/AndrewThompson1233/maba-101m",
+  "created_at": "2026-09-12T16:54:26.000Z",
+  "updated_at": "2026-09-12T16:55:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "maba",
+    "maba-v1",
+    "architecture",
+    "recurrent",
+    "gated-deltanet",
+    "gdn",
+    "gdn-2",
+    "linear-attention",
+    "linear-recurrence",
+    "state-space-model",
+    "ssm",
+    "gqa",
+    "grouped-query-attention",
+    "swiglu",
+    "rmsnorm",
+    "rope",
+    "speculative-decoding",
+    "mtp",
+    "multi-token-prediction",
+    "tinystories",
+    "efficient-llm",
+    "lightweight-llm",
+    "100m",
+    "nlp",
+    "text-generation",
+    "casual-lm",
+    "transformer",
+    "qwen",
+    "minicpm",
+    "benchmark",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 101177984,
+  "parameters_human": "101.2M",
+  "storage_bytes": 404882227,
+  "storage_human": "405 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "YouTube Creator Awards",
+      "url": "https://support.google.com/youtube/answer/7682560?hl=en",
+      "snippet": "YouTube Creator Awards are our way of recognizing the extraordinary effort creators put into their growing channels and to build …"
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    },
+    {
+      "title": "Submit a copyright removal request - YouTube Help",
+      "url": "https://support.google.com/youtube/answer/2807622?hl=en",
+      "snippet": "Submit a copyright removal request If your copyrighted content is on YouTube without your permission, you can submit a copyright …"
+    },
+    {
+      "title": "Verify your YouTube account - Google Help",
+      "url": "https://support.google.com/youtube/answer/171664?hl=en",
+      "snippet": "Verify your YouTube account To verify your channel, you’ll be asked to enter a phone number. We’ll send a verification code by text …"
+    }
+  ]
+}

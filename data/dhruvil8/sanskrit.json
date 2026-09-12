@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Dhruvil8/Sanskrit",
+  "slug": "dhruvil8-sanskrit",
+  "author": "Dhruvil8",
+  "url": "https://huggingface.co/Dhruvil8/Sanskrit",
+  "created_at": "2026-09-12T12:18:04.000Z",
+  "updated_at": "2026-09-12T13:06:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "sa"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "text-generation",
+    "sanskrit",
+    "devanagari",
+    "foundation-model",
+    "indology",
+    "computational-linguistics",
+    "tpu",
+    "rope",
+    "swiglu",
+    "gqa",
+    "sa",
+    "dataset:custom",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 304140288,
+  "parameters_human": "304.1M",
+  "storage_bytes": 1217443678,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pix.fr | Évaluer, développer et certifier vos compétences numériques",
+      "url": "https://pix.fr/",
+      "snippet": "Initié par l’État en 2016, Pix est une structure à but non lucratif constituée en Groupement d’intérêt réunissant différents acteurs …"
+    },
+    {
+      "title": "Pix.org | Évaluer, développer et certifier vos compétences numériques ...",
+      "url": "https://pix.org/fr-be/",
+      "snippet": "Le projet Pix s’inscrit dans la stratégie nationale et européenne pour répondre aux défis de la société numérique. La plateforme …"
+    },
+    {
+      "title": "Pix.org | Assess, develop, and certify your digital skills",
+      "url": "https://pix.org/en/?trk=organization_guest_main-feed-card-text",
+      "snippet": "Founded in 2016, Pix is a non-profit, French-based public organisation aiming to improve digital literacy across the globe. Our …"
+    },
+    {
+      "title": "PIX : plateforme d'évaluation et de certification des compétences ...",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F19608",
+      "snippet": "PIX est un outil d' évaluation en ligne des compétences numériques. Vous pouvez y développer vos compétences numériques et …"
+    },
+    {
+      "title": "Connectez-vous | Pix Orga (France)",
+      "url": "https://orga.pix.fr/connexion",
+      "snippet": "La plateforme dédiée à l’évaluation et au suivi pédagogique. Votre espace Pix Orga vous permet de lancer une campagne …"
+    }
+  ]
+}

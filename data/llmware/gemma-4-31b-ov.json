@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "llmware/gemma-4-31b-ov",
+  "slug": "llmware-gemma-4-31b-ov",
+  "author": "llmware",
+  "url": "https://huggingface.co/llmware/gemma-4-31b-ov",
+  "created_at": "2026-09-12T19:14:50.000Z",
+  "updated_at": "2026-09-12T19:44:23.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "openvino",
+    "gemma4",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18671286909,
+  "storage_human": "18.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com.sa/?hl=en",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Google",
+      "url": "https://ipv4.google.com/?hl=ar",
+      "snippet": "الإعلانات كل ما تحب معرفته عن Google‏ هنا Google.com in English"
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.tn/?hl=fr&tab=lT",
+      "snippet": "Le service sans frais de Google traduit instantanément des mots, des expressions et des pages Web entre le français et plus de 100 …"
+    },
+    {
+      "title": "Arabic Alphabet, letters: [ف ق ] - YouTube",
+      "url": "https://www.youtube.com/watch?v=rDbWSww0v_A",
+      "snippet": "Jan 9, 2022 · Learn Arabic Alphabet easily and quickly! [in a minute] learn how to pronounce & write letters: ف ق . . This lesson is from …"
+    },
+    {
+      "title": "مجمع اللغة العربية بالقاهرة | معنى فق",
+      "url": "https://www.arabicacademy.gov.eg/ar/%D9%85%D8%AD%D8%B1%D9%83-%D8%A7%D9%84%D8%A8%D8%AD%D8%AB/%D9%81%D9%8E%D9%82%D9%91%D9%8E?exact_search=true",
+      "snippet": "اكتشف معنى كلمة فق من معاجم مجمع اللغة العربية بالقاهرة، مع الشرح والتوثيق اللغوي الدقيق"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Berhak/Llama-3.1-8B-Hermes-Agent",
+  "slug": "berhak-llama-3-1-8b-hermes-agent",
+  "author": "Berhak",
+  "url": "https://huggingface.co/Berhak/Llama-3.1-8B-Hermes-Agent",
+  "created_at": "2026-09-12T17:27:50.000Z",
+  "updated_at": "2026-09-12T18:09:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:adapter:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 5273553819,
+  "storage_human": "5.3 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alle Ladies Hostessen-Portale | Ladies.de",
+      "url": "https://www.ladies.de/alle-angebote",
+      "snippet": "Übersicht der RTO Rotlicht Sex Portale, Ladies, Taschengeldladies, Kollegin.de, FKK24 auf dem Erotik Markt Portal Ladies.de"
+    },
+    {
+      "title": "Wichtige Sicherheitsinformation für Ladies.de Nutzer - Ladies.de",
+      "url": "https://pc.ladies.de/info/wichtige-sicherheitsinformation",
+      "snippet": "Lieber Ladies.de-User, in letzter Zeit berichten viele Nutzer von WhatsApp-Nachrichten oder SMS mit Drohungen und …"
+    },
+    {
+      "title": "Die Vorteile im Ladies.de Onlinekonto",
+      "url": "https://pc.ladies.de/info/onlinekonto",
+      "snippet": "Dein Onlinekonto auf Ladies.de eröffnet dir eine neue Welt voller praktischen Features und Funktionen. Und das völlig anonym und …"
+    },
+    {
+      "title": "login.ladies.de",
+      "url": "https://login.ladies.de/users/56902/avatars/64x64",
+      "snippet": "Login-Bereich für Benutzer von Ladies.de, einer Plattform für soziale Interaktionen und Vernetzung."
+    }
+  ]
+}

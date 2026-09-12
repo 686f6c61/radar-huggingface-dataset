@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "EmanuelGames/Jake",
+  "slug": "emanuelgames-jake",
+  "author": "EmanuelGames",
+  "url": "https://huggingface.co/EmanuelGames/Jake",
+  "created_at": "2026-09-12T14:18:32.000Z",
+  "updated_at": "2026-09-12T14:18:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117714762,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "监控摄像头CAD图标图片-监控摄像头CAD图标素材-监控摄像 ...",
+      "url": "https://www.58pic.com/tupian/jiankongshexiangtouCADtubiao.html",
+      "snippet": "千图网为您找到1707张监控摄像头CAD图标素材,千图网同时还提供监控摄像头CAD图标相关图片素材、模板，支持PSD/PNG/JPG等 …"
+    },
+    {
+      "title": "【免费下载】 安防监控工程图标大全（CAD）-CSDN博客",
+      "url": "https://blog.csdn.net/gitblog_09769/article/details/143120173",
+      "snippet": "Oct 21, 2024 · 本仓库提供了一套完整的安防监控工程图标大全，专为CAD绘图设计而准备。 这些图标涵盖了安防监控系统中常见的各 …"
+    },
+    {
+      "title": "摄像头图标设计CAD图纸大全_摄像头图标全套CAD图库 - 3D ...",
+      "url": "https://www.3d66.com/collection-cad/shexiangtoutubiao.html",
+      "snippet": "6 days ago · 提供标准化、可编辑的摄像头图标CAD图纸下载合集，资源囊括了平面图、立面图以及复杂的摄像头图标CAD施工节点大 …"
+    },
+    {
+      "title": "cad摄像头图标图例大全",
+      "url": "https://cp.baidu.com/landing/tscp_doc/ac698e24035b31bb9c03d5898d110b48",
+      "snippet": "cad摄像头图标图例大全 针对用户对CAD（计算机辅助设计）中摄像头图标图例的需求，以下是一个简要的文档，旨在提供一系列常见 …"
+    },
+    {
+      "title": "摄像头图标高精度CAD图纸下载-3D溜溜CAD图纸素材库",
+      "url": "https://cad.3d66.com/cad_relation/relation_5490501.html",
+      "snippet": "Aug 26, 2026 · 3d溜溜摄像头图标CAD图纸素材库，拥有海量摄像头图标CAD高精度图纸素材资源，CAD图纸支持DWG/DXF和三维设 …"
+    }
+  ]
+}

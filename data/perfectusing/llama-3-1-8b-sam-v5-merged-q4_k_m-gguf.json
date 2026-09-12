@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "PerfectUsing/llama-3.1-8b-sam-v5-merged-Q4_K_M-GGUF",
+  "slug": "perfectusing-llama-3-1-8b-sam-v5-merged-q4_k_m-gguf",
+  "author": "PerfectUsing",
+  "url": "https://huggingface.co/PerfectUsing/llama-3.1-8b-sam-v5-merged-Q4_K_M-GGUF",
+  "created_at": "2026-09-12T17:05:50.000Z",
+  "updated_at": "2026-09-12T17:06:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "llama-cpp",
+    "gguf-my-repo",
+    "en",
+    "base_model:PerfectUsing/llama-3.1-8b-sam-v5-merged",
+    "base_model:quantized:PerfectUsing/llama-3.1-8b-sam-v5-merged",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 4920734816,
+  "storage_human": "4.9 GB",
+  "base_model": "PerfectUsing/llama-3.1-8b-sam-v5-merged",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "Whatever you're into, it's on @YouTube. Every week. Every day. Every moment. From creators and internet culture to Shorts and live …"
+    },
+    {
+      "title": "- YouTube",
+      "url": "https://www.youtube.com/shorts",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    }
+  ]
+}

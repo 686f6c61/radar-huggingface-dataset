@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Jon-Nielsen/Qwen3.8-Flash-Next-Merlin-3090-Serving-Kit",
+  "slug": "jon-nielsen-qwen3-8-flash-next-merlin-3090-serving-kit",
+  "author": "Jon-Nielsen",
+  "url": "https://huggingface.co/Jon-Nielsen/Qwen3.8-Flash-Next-Merlin-3090-Serving-Kit",
+  "created_at": "2026-09-12T11:21:51.000Z",
+  "updated_at": "2026-09-12T11:46:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "qwen3.8",
+    "flash-next",
+    "qwen4_exp",
+    "w4a16",
+    "4-bit",
+    "int4",
+    "autoround",
+    "auto-round",
+    "compressed-tensors",
+    "mtp",
+    "speculative-decoding",
+    "fp8-kv",
+    "rtx-3090",
+    "ampere",
+    "sm86",
+    "text-generation",
+    "conversational",
+    "merlin",
+    "base_model:Intel/Qwen3.8-Flash-Next-W4A16-AutoRound",
+    "base_model:finetune:Intel/Qwen3.8-Flash-Next-W4A16-AutoRound",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.8-Flash-Next, Intel/Qwen3.8-Flash-Next-W4A16-AutoRound, RadixArk/Qwen3.8-Flash-Next-NVFP4, halt95/Qwen3.8-Flash-Next-W4A16-Merlin",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top 15 Things To Do in Kaaawa, Hawaii - app.advcollective.com",
+      "url": "https://app.advcollective.com/things-to-do/kaaawa-hawaii",
+      "snippet": "From beginner-friendly paddleboarding in the bay to reef snorkeling at low tide, the area’s warm Pacific waters, dramatic basalt …"
+    },
+    {
+      "title": "What is Kaaawa, Hawaii known for? Things to do, Places to Visit, Jobs ...",
+      "url": "https://www.localobserverdaily.com/town/hawaii/kaaawa/5710",
+      "snippet": "What is Kaaawa, Hawaii known for? Discover top attractions, things to do, hotels, restaurants, weather, cost of living, jobs, …"
+    },
+    {
+      "title": "THE 5 BEST Kaaawa Parks & Nature Attractions - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Attractions-g60649-Activities-c57-Kaaawa_Oahu_Hawaii.html",
+      "snippet": "Feb 23, 2016 · Things to do ranked using Tripadvisor data including reviews, ratings, number of page views, and user location. We …"
+    },
+    {
+      "title": "Kaaawa Tourism: All You Need to Know Before You Go (2026)",
+      "url": "https://www.tripadvisor.in/Tourism-g60649-Kaaawa_Oahu_Hawaii-Vacations.html",
+      "snippet": "Kaaawa Tourism: Tripadvisor has 436 reviews of Kaaawa Hotels, Attractions, and Restaurants making it your best Kaaawa Tourism …"
+    },
+    {
+      "title": "Places to Visit in Kaaawa - Kaaawa Must-See Attractions",
+      "url": "https://www.tripadvisor.com.ph/Attractions-g60649-Activities-Kaaawa_Oahu_Hawaii.html",
+      "snippet": "The backdrop of the dramatic Koolau Mountains, famous as the Jurassic Park filming location, is breathtaking and makes for some …"
+    }
+  ]
+}

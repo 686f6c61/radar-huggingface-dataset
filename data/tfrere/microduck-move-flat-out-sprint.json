@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tfrere/microduck-move-flat-out-sprint",
+  "slug": "tfrere-microduck-move-flat-out-sprint",
+  "author": "tfrere",
+  "url": "https://huggingface.co/tfrere/microduck-move-flat-out-sprint",
+  "created_at": "2026-09-12T19:31:42.000Z",
+  "updated_at": "2026-09-12T19:33:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck-policy",
+    "academy",
+    "family:velocity",
+    "kind:perpetual",
+    "tier:1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6619751,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kreisgymnasium Bad Krozingen – Herzlich willkommen am",
+      "url": "https://www.kgbk.de/",
+      "snippet": "Schulfest am Kreisgymnasium Bad Krozingen – Start der neuen Mountainbike – AG dank erfolgreicher Kooperation mit lokalen …"
+    },
+    {
+      "title": "Krankmeldungen – Kreisgymnasium Bad Krozingen - kgbk.de",
+      "url": "https://www.kgbk.de/krankmeldung/",
+      "snippet": "Formular zur Krankmeldung Wichtig: diese Krankmeldung ersetzt nicht die schriftliche Entschuldigung – diese geben Sie Ihrem Kind …"
+    },
+    {
+      "title": "KGBK_Hochformat",
+      "url": "https://www.kgbk.de/wp-content/uploads/2022/09/Erstanmeldung_5er_Moodle.pdf",
+      "snippet": "Erste Anmeldung in Moodle Liebe Schüler*innen, liebe Eltern, heute haben wir im Unterricht das Schulnetzwerk kennengelernt. Die …"
+    },
+    {
+      "title": "Termine – Kreisgymnasium Bad Krozingen - kgbk.de",
+      "url": "https://www.kgbk.de/termine/",
+      "snippet": "Im folgenden Kalender können Sie alle eingetragenen Termine für das aktuelle Schuljahr einsehen."
+    },
+    {
+      "title": "Informationen für künftige 5. Klässler:innen - kgbk.de",
+      "url": "https://www.kgbk.de/infos-fuer-eltern-klasse-4/",
+      "snippet": "Dec 3, 2023 · Informationen für künftige 5. Klässler:innen Liebe Viertklässler:innen, wir freuen uns, im kommenden Jahr wieder viele …"
+    }
+  ]
+}

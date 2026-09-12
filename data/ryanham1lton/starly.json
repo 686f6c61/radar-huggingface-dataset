@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Starly",
+  "slug": "ryanham1lton-starly",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Starly",
+  "created_at": "2026-09-12T15:24:01.000Z",
+  "updated_at": "2026-09-12T15:26:56.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 123113539,
+  "storage_human": "123 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Plan Your Trip to Prague: Best of Prague Tourism - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Tourism-g274707-Prague_Bohemia-Vacations.html",
+      "snippet": "Don’t leave without throwing back a pint or two—travelers say Prague has some of the best beer in Europe (you’ll just have to see for …"
+    },
+    {
+      "title": "plan your trip to prague | Prague City Tourism",
+      "url": "https://prague.eu/en/discover/",
+      "snippet": "You can easily get to Prague by plane or train from many major European cities. From Berlin or Vienna, it’s only a four-hour ride on …"
+    },
+    {
+      "title": "Prague Travel Guide 2026: Everything You Need to Know Before You …",
+      "url": "https://www.helloprague.net/prague-travel-guide/",
+      "snippet": "The complete Prague travel guide — flights, transfers, hotels, top attractions, food, money, safety & insider tips. Everything a first …"
+    },
+    {
+      "title": "VisitPrague.info - Online travel guide about Prague",
+      "url": "https://www.visitprague.info/en/",
+      "snippet": "The most comprehensive and free online travel guide to Prague. Flights, hotels, tours and attractions to plan your trip to Prague and …"
+    },
+    {
+      "title": "Prague Tourist Information - Plan, See & Experience 2026",
+      "url": "https://praguetouristinformation.com/en/",
+      "snippet": "Make the most of your time in Prague with our expertly crafted 2, 3, 4 or 5-day itineraries, featuring must-see landmarks, hidden …"
+    }
+  ]
+}

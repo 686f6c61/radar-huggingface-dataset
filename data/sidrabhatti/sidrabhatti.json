@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "SidraBhatti/SidraBhatti",
+  "slug": "sidrabhatti-sidrabhatti",
+  "author": "SidraBhatti",
+  "url": "https://huggingface.co/SidraBhatti/SidraBhatti",
+  "created_at": "2026-09-12T16:58:40.000Z",
+  "updated_at": "2026-09-12T17:11:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Pinterest - 知乎",
+      "url": "https://www.zhihu.com/topic/19559627/intro",
+      "snippet": "Pinterest采用的是瀑布流的形式展现图片内容，无需用户翻页，新的图片不断自动加载在页面顶端，让用户不断的发现新的图片。 …"
+    },
+    {
+      "title": "‪Sidra Ghayour Bhatti‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=5EFVBRMAAAAJ&hl=en",
+      "snippet": "Transformer-based models for intrapulse modulation recognition of radar waveforms. SG Bhatti, IA Taj, M Ullah, AI Bhatti. Engineering Applications of Artificial ..."
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msteams/forum/all/assignment-notifications-dont-occur-in-a-teams/30905e6b-adeb-4e92-848e-1d36efcc3a13",
+      "snippet": ""
+    },
+    {
+      "title": "Learning-Based-Controls-2025",
+      "url": "https://sidrabhatti90.github.io/Learning-Based-Controls-2025/",
+      "snippet": "Course Assistant: Dr. Sidra Ghayour Bhatti (bhatti.39@osu.edu) Research Associate Engineer Center for Automotive Research (CAR) The Ohio State University ..."
+    }
+  ]
+}

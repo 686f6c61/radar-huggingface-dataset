@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ggrodrigues0816/albef-baseline",
+  "slug": "ggrodrigues0816-albef-baseline",
+  "author": "ggrodrigues0816",
+  "url": "https://huggingface.co/ggrodrigues0816/albef-baseline",
+  "created_at": "2026-09-12T11:09:19.000Z",
+  "updated_at": "2026-09-12T11:09:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "P&O Cruises | Cruise Holidays 2026, 2027 & 2028",
+      "url": "https://www.pocruises.com/?msockid=0143240f448b63a02cf733dd456762a1",
+      "snippet": "Britain’s favourite cruise line, with cruise holidays to hundreds of must-see destinations including the Mediterranean, Caribbean and …"
+    },
+    {
+      "title": "P&O Cruises | Experience Cruises & Round Trips",
+      "url": "https://www.pocruises.de/en/",
+      "snippet": "In close collaboration with our team and based on many years of experience, we have put together a wide range of itineraries - …"
+    },
+    {
+      "title": "British Isles Cruise Holidays 2026 & 2027 | P&O Cruises",
+      "url": "https://www.pocruises.com/cruise-destinations/british-isles?msockid=0143240f448b63a02cf733dd456762a1",
+      "snippet": "Explore hidden gems and wonderful experiences on our British Isles cruise holidays with P&O Cruises. Book now for 2026 & 2027 …"
+    },
+    {
+      "title": "P&O Cruises | Kreuzfahrten & Rundreisen erleben",
+      "url": "https://www.pocruises.de/de/",
+      "snippet": "In enger Zusammenarbeit mit unserem Team und langjährigen Erfahrungen haben wir vielfältige Routenauswahlen überwiegend ab …"
+    },
+    {
+      "title": "P&O Cruises - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/P%26O_Cruises",
+      "snippet": "P&O Cruises is a British cruise line based at Carnival House in Southampton, England, operated by Carnival UK and owned by …"
+    }
+  ]
+}

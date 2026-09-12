@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Vasilisaivanov/cnn-transformer-experiment",
+  "slug": "vasilisaivanov-cnn-transformer-experiment",
+  "author": "Vasilisaivanov",
+  "url": "https://huggingface.co/Vasilisaivanov/cnn-transformer-experiment",
+  "created_at": "2026-09-12T11:11:13.000Z",
+  "updated_at": "2026-09-12T11:11:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Intel® Rapid Storage Technology Driver Installation Software with Intel …",
+      "url": "https://www.intel.com/content/www/us/en/download/849936/intel-rapid-storage-technology-driver-installation-software-with-intel-optane-memory-12th-to-15th-gen-platforms.html",
+      "snippet": "Jan 7, 2026 · The Intel® Rapid Storage Technology (Intel® RST) Driver20.2.6.1025.3 supports 12th Gen up to 15th Gen Intel Core …"
+    },
+    {
+      "title": "Prise en charge de Technologie de stockage Intel® Rapid (Intel® RST)",
+      "url": "https://www.intel.fr/content/www/fr/fr/support/products/55005/technologies/intel-rapid-storage-technology-intel-rst.html",
+      "snippet": "Trouvez des informations sur l’assistance des Technologie de stockage Intel® Rapid (Intel® RST), qui peuvent inclure du contenu …"
+    },
+    {
+      "title": "Support for Intel® Rapid Storage Technology (Intel® RST)",
+      "url": "https://www.intel.com/content/www/us/en/support/products/55005/technologies/intel-rapid-storage-technology-intel-rst.html",
+      "snippet": "Jul 23, 2026 · Find support information for Intel® Rapid Storage Technology (Intel® RST), which may include featured content, …"
+    },
+    {
+      "title": "Logiciel d’installation de pilotes Technologie de stockage Intel® Rapid ...",
+      "url": "https://www.intel.fr/content/www/fr/fr/download/849936/intel-rapid-storage-technology-driver-installation-software-with-intel-optane-memory-12th-to-15th-gen-platforms.html",
+      "snippet": "Jan 7, 2026 · Le SetupRST.exe est le nouveau programme d’installation qui installera le pilote Intel RST et lancera le processus …"
+    },
+    {
+      "title": "Intel Rapid Storage Technology Driver | Driver Details | Dell US",
+      "url": "https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=2fyw4&msockid=366de25d0bca629e3983f58f0a266315",
+      "snippet": "Jul 30, 2012 · This package provides Intel Rapid Storage Technology Driver and is supported on Vostro 2420 and 2520, Inspiron …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "raj-hitpromo/hit-promo-reasoner",
+  "slug": "raj-hitpromo-hit-promo-reasoner",
+  "author": "raj-hitpromo",
+  "url": "https://huggingface.co/raj-hitpromo/hit-promo-reasoner",
+  "created_at": "2026-09-12T14:42:56.000Z",
+  "updated_at": "2026-09-12T15:04:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "phi3",
+    "text-generation",
+    "merged",
+    "promotional-products",
+    "catalog",
+    "reasoning",
+    "hit-promotional-products",
+    "conversational",
+    "base_model:microsoft/Phi-4-mini-reasoning",
+    "base_model:finetune:microsoft/Phi-4-mini-reasoning",
+    "license:mit",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3836021760,
+  "parameters_human": "3.84B",
+  "storage_bytes": 7687590708,
+  "storage_human": "7.7 GB",
+  "base_model": "microsoft/Phi-4-mini-reasoning",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RAJ, Réseau Animation Jeunes, Pays de Saverne",
+      "url": "https://reseau-animation-jeunes.fr/",
+      "snippet": "Le RAJ (Réseau Animation Jeunes) est une association intercommunale de la Communauté de Communes du Pays de Saverne, …"
+    },
+    {
+      "title": "British Raj - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/British_Raj",
+      "snippet": "At the inception of the Raj in 1858, Lower Burma was already a part of British India; Upper Burma was added in 1886, and the …"
+    },
+    {
+      "title": "Raj britannique — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Raj_britannique",
+      "snippet": "Le Raj britannique (en anglais : British Raj) ou Empire des Indes (Indian Empire) est un territoire de l'ancien Empire britannique, et la …"
+    },
+    {
+      "title": "Raj — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Raj",
+      "snippet": "Raj (राज (rāj)) est un mot commun au sanskrit, au hindi et à d'autres langues indiennes et signifiant « royaume », « règne », « …"
+    },
+    {
+      "title": "Raj - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Raj",
+      "snippet": "This disambiguation page lists articles associated with the title Raj. If an internal link incorrectly led you here, you may wish to change …"
+    }
+  ]
+}

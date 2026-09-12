@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "lovelydev1007/vh0912",
+  "slug": "lovelydev1007-vh0912",
+  "author": "lovelydev1007",
+  "url": "https://huggingface.co/lovelydev1007/vh0912",
+  "created_at": "2026-09-12T13:36:48.000Z",
+  "updated_at": "2026-09-12T13:39:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "element_type:detect",
+    "model:yolov11-nano",
+    "object:person",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9862705,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Heilig Graf - Smartschool",
+      "url": "https://heilig-graf.smartschool.be/",
+      "snippet": "Welkom op het digitaal schoolplatform van Heilig Graf."
+    },
+    {
+      "title": "Smartschool - Heilig Graf Turnhout secundair onderwijs",
+      "url": "https://secundair.heilig-graf.be/smartschool",
+      "snippet": "Vraag over Smartschool? Stuur een e-mail naar onze Smartschoolbeheerders via smartschool@heilig-graf.be."
+    },
+    {
+      "title": "Heilig-Grafinstituut - Smartschool",
+      "url": "https://hgi.smartschool.be/login",
+      "snippet": "Welkom op het digitaal schoolplatform van Heilig-Grafinstituut."
+    },
+    {
+      "title": "Smartschool | Heilig Graf Turnhout secundair onderwijs",
+      "url": "https://demo.heilig-graf.be/smartschool",
+      "snippet": "Bekijk enkele handleidingen met instructies: Hoe inloggen op Smartschool? Hoe communiceren via Smartschool? Uitgebreide …"
+    },
+    {
+      "title": "HANDLEIDING SMARTSCHOOL - secundair.heilig-graf.be",
+      "url": "https://secundair.heilig-graf.be/files/secundair/media/files/2026-08/2627%20Handleiding%20Smartschool.pdf",
+      "snippet": "Gebruik de berichtenmodule van Smartschool enkel voor communicatie over schoolzaken. Reclame en andere berichten die niet met …"
+    }
+  ]
+}

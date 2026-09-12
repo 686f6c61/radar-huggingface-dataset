@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/GeoReranker-GGUF",
+  "slug": "mradermacher-georeranker-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/GeoReranker-GGUF",
+  "created_at": "2026-09-12T10:50:31.000Z",
+  "updated_at": "2026-09-12T11:06:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:GeoGPT-Research-Project/GeoReranker",
+    "base_model:quantized:GeoGPT-Research-Project/GeoReranker",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "feature-extraction"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 567753729,
+  "parameters_human": "567.8M",
+  "storage_bytes": 6073417536,
+  "storage_human": "6.1 GB",
+  "base_model": "GeoGPT-Research-Project/GeoReranker",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Add a missing place to Google Maps",
+      "url": "https://support.google.com/maps/answer/6320846?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can add missing places to the map. The place shows publicly once it’s added. Places you can add include landmarks, coffee …"
+    },
+    {
+      "title": "Google Maps Help",
+      "url": "https://support.google.com/maps/?hl=en-ZA",
+      "snippet": "Official Google Maps Help Center where you can find tips and tutorials on using Google Maps and other answers to frequently asked …"
+    },
+    {
+      "title": "Topics tagged maps - Cfx.re Community",
+      "url": "https://forum.cfx.re/tag/maps/462",
+      "snippet": "Aug 29, 2026 · Topics tagged maps"
+    },
+    {
+      "title": "[Release][Free] High resolution Satellite map with custom postals",
+      "url": "https://forum.cfx.re/t/release-free-high-resolution-satellite-map-with-custom-postals/2503527",
+      "snippet": "Mar 28, 2021 · I hope you guys enjoy it Download here: GitHub - Oulsen/oulsen_satmap: oulsen_satmap Changes [Correction] 29-03 …"
+    },
+    {
+      "title": "Útvonalterv készítése és az útvonalak megjelenítése a Google Térképen",
+      "url": "https://support.google.com/maps/answer/144339?hl=hu&co=GENIE.Platform%3DDesktop",
+      "snippet": "A Google Térkép segítségével autós, tömegközlekedési, gyalogos, autómegosztásos, kerékpáros, repülőgépes és motorkerékpáros …"
+    }
+  ]
+}

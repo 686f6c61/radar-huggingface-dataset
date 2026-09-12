@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "SeNKrOn10/Hilal-Yelekcii",
+  "slug": "senkron10-hilal-yelekcii",
+  "author": "SeNKrOn10",
+  "url": "https://huggingface.co/SeNKrOn10/Hilal-Yelekcii",
+  "created_at": "2026-09-12T16:22:30.000Z",
+  "updated_at": "2026-09-12T16:24:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85748221,
+  "storage_human": "86 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Error \"'git' is not recognized as an internal or external command\"",
+      "url": "https://stackoverflow.com/questions/4492979/error-git-is-not-recognized-as-an-internal-or-external-command",
+      "snippet": "I have an installation of Git for Windows, but when I try to use the git command in Command Prompt, I get the following error: 'git' is …"
+    },
+    {
+      "title": "c - What is the difference between ++i and i++? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/24853/what-is-the-difference-between-i-and-i",
+      "snippet": "Aug 24, 2008 · In C, what is the difference between using ++i and i++, and which should be used in the incrementation block of a for …"
+    },
+    {
+      "title": "7-Zip 官方网站怎么下载？ - 知乎",
+      "url": "https://www.zhihu.com/question/20498753",
+      "snippet": "7-Zip 是一个功能强大的工具，特别适合需要 高效压缩 和 解压缩 功能的用户。比如 IT 专业人员、软件开发者或普通用户希望节省磁 …"
+    },
+    {
+      "title": "初次创业该如何开始？ - 知乎",
+      "url": "https://www.zhihu.com/question/20076649",
+      "snippet": "初次创业千万、千万、千万不要投钱去开店、加盟或是开公司。 要不然十个创业九个死，很少有意外。 接下来的内容我先讲初次创业 …"
+    },
+    {
+      "title": "Какая разница между i++ и ++i? - Stack Overflow на ...",
+      "url": "https://ru.stackoverflow.com/questions/1055621/%d0%9a%d0%b0%d0%ba%d0%b0%d1%8f-%d1%80%d0%b0%d0%b7%d0%bd%d0%b8%d1%86%d0%b0-%d0%bc%d0%b5%d0%b6%d0%b4%d1%83-i-%d0%b8-i",
+      "snippet": "Dec 7, 2019 · В связи с наступлением на нас шаблонов в С++, рекомендуется писать в циклах ++i а не i++. Это связано с тем, …"
+    }
+  ]
+}

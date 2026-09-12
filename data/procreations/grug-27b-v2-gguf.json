@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ProCreations/grug-27b-v2-gguf",
+  "slug": "procreations-grug-27b-v2-gguf",
+  "author": "ProCreations",
+  "url": "https://huggingface.co/ProCreations/grug-27b-v2-gguf",
+  "created_at": "2026-08-17T04:56:52.000Z",
+  "updated_at": "2026-09-12T12:57:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "grug",
+    "coding",
+    "tool-use",
+    "mtp",
+    "qwen3_5",
+    "text-generation",
+    "en",
+    "base_model:ProCreations/grug-27b-v2",
+    "base_model:quantized:ProCreations/grug-27b-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 102942449376,
+  "storage_human": "102.9 GB",
+  "base_model": "ProCreations/grug-27b-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux pièces …"
+    },
+    {
+      "title": "Descargar YouTube: PC / Mac / Android (APK)",
+      "url": "https://es.ccm.net/descargas/entretenimiento/6598-youtube/",
+      "snippet": "Feb 12, 2024 · YouTube se puede conectar a Facebook, Twitter, Talk, Reddit, Pinterest, Tumblr, LinkedIn y más. Asimismo, …"
+    },
+    {
+      "title": "Descargar Snaptube: PC, Android (APK) - CCM",
+      "url": "https://es.ccm.net/descargas/internet/6550-snaptube/",
+      "snippet": "Feb 6, 2024 · Snaptube es un programa que descarga de forma rápida y sencilla contenidos de YouTube y otras plataformas como …"
+    },
+    {
+      "title": "Connexion facebook - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38278865-connexion-facebook",
+      "snippet": "Mar 24, 2026 · impossible d'obtenir facebook sur mon PC alors que je l'obtients sur ma tablette Surface Pro, pourquoi? Lorsque je …"
+    },
+    {
+      "title": "ZDNET - Actualité, business et technologies pour les professionne ...",
+      "url": "https://www.zdnet.fr/",
+      "snippet": "Actualité, business et technologies pour les professionnels"
+    }
+  ]
+}

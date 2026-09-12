@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Rev3auth/iris_16bit",
+  "slug": "rev3auth-iris_16bit",
+  "author": "Rev3auth",
+  "url": "https://huggingface.co/Rev3auth/iris_16bit",
+  "created_at": "2026-09-12T13:01:43.000Z",
+  "updated_at": "2026-09-12T13:02:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/gemma-3-270m-it",
+    "base_model:finetune:unsloth/gemma-3-270m-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 574296698,
+  "storage_human": "574 MB",
+  "base_model": "unsloth/gemma-3-270m-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gmail にログインする",
+      "url": "https://support.google.com/mail/answer/8494?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "Gmail にログインする ヒント: 不特定多数の人が使うパソコンにログインする場合は、パソコンから離れる前に必ずログアウトして …"
+    },
+    {
+      "title": "我的电脑打开盖子就自动开机，怎么取消 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/493118920344154212.html",
+      "snippet": "我的电脑打开盖子就自动开机，怎么取消1、首先我们打开电脑桌面，左键单击左下角的开始菜单。2、打开Windows系统选项，点击控 …"
+    },
+    {
+      "title": "名片上电话、手机、传真、地址的英语缩写标准应写什么？",
+      "url": "https://zhidao.baidu.com/question/13621419.html",
+      "snippet": "电话：Tel. 手机：MB. 传真：Fax. 地址：Add. 序号：No. 邮政编码：Zip. 缩写的词在名片上最后一个字母后都要加“.”表示缩写。 一般 …"
+    },
+    {
+      "title": "Fájlok átvitele számítógép és Android-eszköz között",
+      "url": "https://support.google.com/android/answer/9064445?hl=hu",
+      "snippet": "Google-fiókja vagy USB-kábel segítségével átviheti fotóit, zenéit és egyéb fájljait a számítógép és az eszköz között. Fontos: A …"
+    },
+    {
+      "title": "集装箱中HC 和HQ有什么区别? - 百度知道",
+      "url": "https://zhidao.baidu.com/question/39830302.html",
+      "snippet": "HC/HQ一样的!!都是高箱（高度在2.9M；9英尺6英寸）! HC/HQ一般用语40英尺集装箱,目前还没有发现有船公司说过20HQ或者HC的, …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Diet-Panda/huginn-cs-tutor-v1",
+  "slug": "diet-panda-huginn-cs-tutor-v1",
+  "author": "Diet-Panda",
+  "url": "https://huggingface.co/Diet-Panda/huginn-cs-tutor-v1",
+  "created_at": "2026-09-12T12:00:17.000Z",
+  "updated_at": "2026-09-12T12:32:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242694030,
+  "storage_human": "15.2 GB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dietplus – Le spécialiste du rééquilibrage alimentaire",
+      "url": "https://www.dietplus.fr/",
+      "snippet": "Témoignages Trouver un centre Recettes Blog Contact Service presse Rejoindre diet plus Devenez franchisé Postulez chez dietplus …"
+    },
+    {
+      "title": "Diet (nutrition) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Diet_(nutrition)",
+      "snippet": "In nutrition, diet is the sum of food consumed by a person or other organism. [1] The word diet often implies the use of specific intake …"
+    },
+    {
+      "title": "Healthy diet - World Health Organization (WHO)",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet",
+      "snippet": "Jan 26, 2026 · Encourage a diet with a wide variety of nutrient‑dense foods, including fruits, vegetables, whole grains, legumes, nuts, …"
+    },
+    {
+      "title": "The 9 Best Diet Plans: Sustainability, Weight Loss, and More",
+      "url": "https://www.healthline.com/nutrition/best-diet-plans",
+      "snippet": "Aug 5, 2019 · If you're unsure which of many diet plans is most effective for you, it can be hard to start your weight loss journey. Here …"
+    },
+    {
+      "title": "Eating a balanced diet - NHS",
+      "url": "https://www.nhs.uk/live-well/eat-well/how-to-eat-a-balanced-diet/eating-a-balanced-diet/",
+      "snippet": "Eating a healthy, balanced diet is an important part of maintaining good health and can help you feel your best. This means eating a …"
+    }
+  ]
+}

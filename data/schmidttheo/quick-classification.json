@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "schmidttheo/quick-classification",
+  "slug": "schmidttheo-quick-classification",
+  "author": "schmidttheo",
+  "url": "https://huggingface.co/schmidttheo/quick-classification",
+  "created_at": "2026-09-12T17:50:14.000Z",
+  "updated_at": "2026-09-12T17:50:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How To Allow Guest Requests On TikTok Live - Full Guide",
+      "url": "https://www.youtube.com/watch?v=5QVjY0DMeHw",
+      "snippet": "Jan 24, 2024 · Learn how to allow guest requests on tiktok live in this video. For more videos like this then please leave a …"
+    },
+    {
+      "title": "How To Turn On Multi Guest Request On TikTok Live - YouTube",
+      "url": "https://www.youtube.com/watch?v=JQcEopIq6MM",
+      "snippet": "Aug 1, 2025 · How To Turn On Multi Guest Request On TikTok LiveWant to invite multiple guests to your TikTok Live seamlessly? …"
+    },
+    {
+      "title": "TikTok live multi-guest – what is it, and how do you get started?",
+      "url": "https://blog.push.fm/10071/tiktok-live-multi-guest-get-started/",
+      "snippet": "May 17, 2023 · How to request to join TikTok lives When on a live video, click the Multi-guest button and then choose Apply. If the …"
+    },
+    {
+      "title": "How to Turn On Multi Guest Request On TikTok Live - YouTube",
+      "url": "https://www.youtube.com/watch?v=EjWsw0Z-YEs",
+      "snippet": "Dec 14, 2024 · You'll also learn how to request to join a TikTok Live, disable guest requests, and manage your live stream's settings …"
+    },
+    {
+      "title": "How To Allow Guest Requests On Tiktok Live - UPDATED!",
+      "url": "https://www.youtube.com/watch?v=raU9NFBmzOs",
+      "snippet": "May 25, 2025 · How To Allow Guest Requests On Tiktok Live provides instructions on enabling guest requests during TikTok Live …"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Patoni31/nd2",
+  "slug": "patoni31-nd2",
+  "author": "Patoni31",
+  "url": "https://huggingface.co/Patoni31/nd2",
+  "created_at": "2026-09-12T13:52:54.000Z",
+  "updated_at": "2026-09-12T13:54:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Poczta - Najlepsza Poczta, największe załączniki - WP",
+      "url": "https://poczta.wp.pl/",
+      "snippet": "Bezpieczna i darmowa poczta bez spamu. Duże załączniki, nielimitowana pojemność, aplikacja mobilna. Załóż konto i ciesz się …"
+    },
+    {
+      "title": "Odzyskaj hasło w WP Poczcie",
+      "url": "https://poczta.wp.pl/odzyskaj/",
+      "snippet": "Wpisz adres e-mail, do którego chcesz odzyskać dostęp Przejdź dalej"
+    },
+    {
+      "title": "Synchronizacja - Poczta WP",
+      "url": "https://poczta.wp.pl/api/v1/public/secureauth/login?mailsystem=o2&scheme=secureauth&package=pl.wp",
+      "snippet": "Synchronizacja Synchronizacja danych..."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "slingshot/user-simulator-scaling-9b-soupall5-adapter",
+  "slug": "slingshot-user-simulator-scaling-9b-soupall5-adapter",
+  "author": "slingshot",
+  "url": "https://huggingface.co/slingshot/user-simulator-scaling-9b-soupall5-adapter",
+  "created_at": "2026-09-12T16:41:51.000Z",
+  "updated_at": "2026-09-12T16:50:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3.5-9B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2599528399,
+  "storage_human": "2.6 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Slingshot",
+      "url": "https://www.projetslingshot.fr/",
+      "snippet": "slingshot Trouve les opportunités les plus prestigieuses grâce à Slingshot, la plateforme #1 pour lancer ta carrière!"
+    },
+    {
+      "title": "Welcome to Slingshot Sports",
+      "url": "https://slingshotsports.com/en-eu",
+      "snippet": "KITE // WING // FOIL // WAKE. For more than 20 years, Slingshot Sports has been leading the charge in design and development of …"
+    },
+    {
+      "title": "Slingshot France - Kitesurf, Foil, Wakeboard - Slingshot",
+      "url": "https://www.slingshot.fr/",
+      "snippet": "Slingshot Sports conçoit des équipements de kitesurf, foil et wakeboard de haute performance depuis Portland, Oregon. En France, …"
+    },
+    {
+      "title": "Slingshot d'occasion - Motos - leboncoin",
+      "url": "https://www.leboncoin.fr/ck/motos/slingshot",
+      "snippet": "Consultez nos annonces de slingshot d'occasion. Trouvez toutes nos annonces de Motos sur leboncoin"
+    },
+    {
+      "title": "Slingshot - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Slingshot",
+      "snippet": "A slingshot is a small hand-powered projectile weapon. The classic form consists of a Y-shaped frame, with two tubes or strips made …"
+    }
+  ]
+}

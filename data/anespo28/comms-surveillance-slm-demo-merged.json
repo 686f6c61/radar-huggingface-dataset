@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "anespo28/comms-surveillance-slm-demo-merged",
+  "slug": "anespo28-comms-surveillance-slm-demo-merged",
+  "author": "anespo28",
+  "url": "https://huggingface.co/anespo28/comms-surveillance-slm-demo-merged",
+  "created_at": "2026-09-12T13:53:20.000Z",
+  "updated_at": "2026-09-12T13:53:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "compliance",
+    "market-abuse",
+    "communications-surveillance",
+    "financial-services",
+    "lora",
+    "fine-tuned",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183348756,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing Homepage Quiz – Today's Bing Daily Trivia & Featured Image Quiz",
+      "url": "https://bingquiz.com/bing-homepage-quiz/",
+      "snippet": "1 day ago · Play today's Bing Homepage Quiz — Celebrity & Pop Culture Trivia edition — and test your knowledge with the same …"
+    },
+    {
+      "title": "Bing Homepage Quiz - Play Today’s 20 Daily Homepage Bing Quizzes",
+      "url": "https://bingquizzes.com/bing-homepage-quiz-today/",
+      "snippet": "1 day ago · Play today’s Bing Homepage Quiz with 20 multiple-choice questions, a 300-second timer, answer explanations, and a …"
+    },
+    {
+      "title": "Bing Homepage Quiz | Bing Quizzes",
+      "url": "https://bing.weeklyquiz.net/bing-homepage-quiz/",
+      "snippet": "1 day ago · Play today’s interactive Bing Homepage Quiz, answer 15 entertaining questions, discover fascinating facts, and test your …"
+    },
+    {
+      "title": "Bing Homepage Quiz – Today's Quiz, Answers & Trivia",
+      "url": "https://binghomepagequizze.com/",
+      "snippet": "Take today's Bing Homepage Quiz with fun questions, answers, and trivia. Test your knowledge, discover interesting facts, and play …"
+    },
+    {
+      "title": "Bing Quiz - Today’s Daily Trivia Questions & Answers | Bing Quizzes",
+      "url": "https://bingquizzes.com/",
+      "snippet": "Explore Bing Quizzes across fun, family-friendly, and engaging topics like general knowledge, history, science, geography, current …"
+    }
+  ]
+}

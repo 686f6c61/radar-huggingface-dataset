@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "N14QM/Spark-X2.5-1.7B-VibeThinker-VN",
+  "slug": "n14qm-spark-x2-5-1-7b-vibethinker-vn",
+  "author": "N14QM",
+  "url": "https://huggingface.co/N14QM/Spark-X2.5-1.7B-VibeThinker-VN",
+  "created_at": "2026-09-12T11:23:46.000Z",
+  "updated_at": "2026-09-12T11:29:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "vi",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "knowledge-distillation",
+    "sequence-level-distillation",
+    "lora",
+    "peft",
+    "vietnamese",
+    "reasoning",
+    "math",
+    "code",
+    "chain-of-thought",
+    "llama.cpp",
+    "text-generation",
+    "vi",
+    "en",
+    "arxiv:2106.09685",
+    "base_model:WeiboAI/VibeThinker-3B",
+    "base_model:adapter:WeiboAI/VibeThinker-3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1707657216,
+  "parameters_human": "1.71B",
+  "storage_bytes": 3420931072,
+  "storage_human": "3.4 GB",
+  "base_model": "WeiboAI/VibeThinker-3B, XHToken/Spark-X2.5-1.7B-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Elektronik & Technik bei Conrad » Zum Online-Shop",
+      "url": "https://www.conrad.de/?msockid=26e8387c2e71603708ec2fae2f75612e",
+      "snippet": "Conrad Electronic ist einer der führenden Anbieter in den Bereichen Technik und Elektronik in Deutschland. In unserem Onlineshop …"
+    },
+    {
+      "title": "Conrad Electronic » All parts of success",
+      "url": "https://www.conrad.com/",
+      "snippet": "In the download centre you'll find all the information you need about Conrad products, such as manuals, parts lists, certificates, circuit …"
+    },
+    {
+      "title": "Technik und Elektronik Sortiment von A-Z bei Conrad",
+      "url": "https://www.conrad.de/de/sortiment.html?msockid=26e8387c2e71603708ec2fae2f75612e",
+      "snippet": "Technik & Elektronik Sortiment von Conrad Electronic übersichtlich auf einen Blick von A-Z Jetzt bestellen"
+    },
+    {
+      "title": "Conrad Electronic – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Conrad_Electronic",
+      "snippet": "Die Conrad Electronic SE ist ein deutsches Familienunternehmen im Elektronikhandel, das eine digitale Beschaffungsplattform für …"
+    },
+    {
+      "title": "Alle Conrad Filialen - MeinProspekt",
+      "url": "https://www.meinprospekt.de/filialen/conrad-de",
+      "snippet": "Stets aktuell gehalten werden die Adressen, Kontaktdaten und Öffnungszeiten von den einzelnen Conrad Geschäftsstellen. Erhalte …"
+    }
+  ]
+}

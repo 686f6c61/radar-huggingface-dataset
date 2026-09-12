@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "MigoXV/diar_streaming_sortformer_4spk-v2.1",
+  "slug": "migoxv-diar_streaming_sortformer_4spk-v2-1",
+  "author": "MigoXV",
+  "url": "https://huggingface.co/MigoXV/diar_streaming_sortformer_4spk-v2.1",
+  "created_at": "2026-09-12T17:02:57.000Z",
+  "updated_at": "2026-09-12T17:03:53.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "streaming_sortformer_v2_1",
+    "speaker-diarization",
+    "sortformer",
+    "pytorch",
+    "audio-classification",
+    "base_model:nvidia/diar_streaming_sortformer_4spk-v2.1",
+    "base_model:finetune:nvidia/diar_streaming_sortformer_4spk-v2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117744664,
+  "parameters_human": "117.7M",
+  "storage_bytes": 471094472,
+  "storage_human": "471 MB",
+  "base_model": "nvidia/diar_streaming_sortformer_4spk-v2.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google-Konto für Ihr Kind erstellen - Google für Familien-Hilfe",
+      "url": "https://support.google.com/families/answer/7103338?hl=de",
+      "snippet": "Mit diesen Schritten erstellen Sie ein Google-Konto für Ihr Kind, wenn dieses noch nicht das in Ihrem Land geltende Mindestalter für …"
+    },
+    {
+      "title": "GMX: Viele fehlgeschlagene Login Versuche - ComputerBase",
+      "url": "https://www.computerbase.de/forum/threads/gmx-viele-fehlgeschlagene-login-versuche.833516/",
+      "snippet": "Dec 25, 2010 · Hi Leute, bin heute von den üblichen Weihnachtsbesuchen zurück gekommen und wollte mal wieder Mails checken. …"
+    },
+    {
+      "title": "Fehler: Gesicherte Verbindung fehlgeschlagen Die Verbindung zu …",
+      "url": "https://support.google.com/websearch/thread/375019730/fehler-gesicherte-verbindung-fehlgeschlagen-die-verbindung-zu-www-gmx-net-wurde-unterbrochen-w%C3%A4h?hl=de",
+      "snippet": "Fehler: Gesicherte Verbindung fehlgeschlagen Die Verbindung zu www.gmx.net wurde unterbrochen, wäh leider konnte ich nichts …"
+    },
+    {
+      "title": "GMX: automatische Abmeldungen häufen sich ... - ComputerBase",
+      "url": "https://www.computerbase.de/forum/threads/gmx-automatische-abmeldungen-haeufen-sich.2096637/",
+      "snippet": "Aug 3, 2022 · Hallo Ihr Lieben, seit einigen Wochen fällt mir immer wieder auf, dass ich aus irgendwelchen, merkwürdigen Gründen …"
+    },
+    {
+      "title": "Anmeldung bei \"EsoWatch\" Forum Frage",
+      "url": "https://forum.psiram.com/index.php?topic=2240.0",
+      "snippet": "Oct 10, 2009 · Will ich bestimmte Mails dann hinterher nicht empfangen, oder sind es SPAMS, lösche ich die einfach vom Mailserver …"
+    }
+  ]
+}

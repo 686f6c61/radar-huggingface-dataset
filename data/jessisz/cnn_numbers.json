@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "JESSISZ/CNN_numbers",
+  "slug": "jessisz-cnn_numbers",
+  "author": "JESSISZ",
+  "url": "https://huggingface.co/JESSISZ/CNN_numbers",
+  "created_at": "2026-09-12T17:32:43.000Z",
+  "updated_at": "2026-09-12T17:42:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1500750,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lotto & PowerBall Results | South African National Lottery",
+      "url": "https://www.lotteryresults.co.za/",
+      "snippet": "Lottery results and numbers for Lotto, Lotto Plus and PowerBall. With detailed information on winners, jackpots, prizes and a full …"
+    },
+    {
+      "title": "Daily Lotto Results | South African National Lottery",
+      "url": "https://www.lotteryresults.co.za/daily-lotto/",
+      "snippet": "Find the latest Daily Lotto lottery results, winning numbers, updated information about the rules of the game, winners and prizes for all …"
+    },
+    {
+      "title": "Lottery Tools - South African lottery tools",
+      "url": "https://www.lotteryresults.co.za/tools/",
+      "snippet": "Work out overdue numbers, common combinations, jackpots that are ready to drop and much more with our lottery tools."
+    },
+    {
+      "title": "Lotto Results | South African National Lottery",
+      "url": "https://www.lotteryresults.co.za/lotto/",
+      "snippet": "Latest Lotto lottery results, with full details about the draw, numbers and detailed information of every single Lotto draw since 2009."
+    },
+    {
+      "title": "Pick 3 Results | South African National Lottery",
+      "url": "https://www.lotteryresults.co.za/pick-3/",
+      "snippet": "Latest Pick 3 results and game information for South Africa, with winners and prizes for all draws since the first draw on the 4th …"
+    }
+  ]
+}

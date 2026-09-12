@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Variable65536/minicpm5-1b-immersive-translate-gguf",
+  "slug": "variable65536-minicpm5-1b-immersive-translate-gguf",
+  "author": "Variable65536",
+  "url": "https://huggingface.co/Variable65536/minicpm5-1b-immersive-translate-gguf",
+  "created_at": "2026-09-12T14:41:32.000Z",
+  "updated_at": "2026-09-12T14:41:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook: accedi o iscriviti",
+      "url": "https://it-it.facebook.com/",
+      "snippet": "Crea un account o accedi a Facebook. Connettiti con amici, familiari e altre persone che conosci. Condividi foto e video, invia …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/index.php/?lang=ita",
+      "snippet": "Log into Facebook to connect with friends, family, and people you know."
+    },
+    {
+      "title": "Log Into Facebook",
+      "url": "https://secure.facebook.com/login/",
+      "snippet": "Log into Facebook to start sharing and connecting with your friends, family, and people you know."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://m.me/www.facebook.com",
+      "snippet": "Messenger Facebook Lite Video Places Games Marketplace Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Muse …"
+    }
+  ]
+}

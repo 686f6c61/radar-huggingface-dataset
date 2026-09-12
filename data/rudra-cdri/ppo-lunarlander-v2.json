@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Rudra-CDRI/ppo-LunarLander-v2",
+  "slug": "rudra-cdri-ppo-lunarlander-v2",
+  "author": "Rudra-CDRI",
+  "url": "https://huggingface.co/Rudra-CDRI/ppo-LunarLander-v2",
+  "created_at": "2026-09-12T17:05:45.000Z",
+  "updated_at": "2026-09-12T17:06:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v2",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 452401,
+  "storage_human": "452401 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online Stopwatch - easy to use - timeanddate.com",
+      "url": "https://www.timeanddate.com/stopwatch/",
+      "snippet": "Online stopwatch. Easy to use and accurate stopwatch with lap times and alarms. Optional split intervals and alarm sound."
+    },
+    {
+      "title": "timeanddate.com",
+      "url": "https://www.timeanddate.com/",
+      "snippet": "Personal World Clock Set the current time of your favorite locations across time zones."
+    },
+    {
+      "title": "Moonrise and Moonset Calculator",
+      "url": "https://redirects.timeanddate.com/moon/",
+      "snippet": "Calculate moonrise and moonset times, Moon direction, as well as the altitude, distance and when the moon passes the meridian."
+    },
+    {
+      "title": "Calendar 2026 - redirects.timeanddate.com",
+      "url": "https://redirects.timeanddate.com/calendar/",
+      "snippet": "Customization Forms Customize this calendar–large – advanced form with more choices Customize this calendar – classic, basic …"
+    },
+    {
+      "title": "Online Timer - timeanddate.com",
+      "url": "https://www.timeanddate.com/timer/",
+      "snippet": "Online Timer with Alarm Create your timers with optional alarms and start/pause/stop them simultaneously or sequentially. They are …"
+    }
+  ]
+}

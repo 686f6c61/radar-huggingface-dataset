@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "GGUFGuy/hyperdex-test",
+  "slug": "ggufguy-hyperdex-test",
+  "author": "GGUFGuy",
+  "url": "https://huggingface.co/GGUFGuy/hyperdex-test",
+  "created_at": "2026-09-12T15:13:26.000Z",
+  "updated_at": "2026-09-12T15:13:27.000Z",
+  "license": "odc-by",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "nanodex",
+    "tiny-lm",
+    "pretrained-from-scratch",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:odc-by",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1000224,
+  "parameters_human": "1.0M",
+  "storage_bytes": 4005840,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ESP32-S3 Series | WaveShare Documentation",
+      "url": "https://docs.waveshare.com/ESP32-S3",
+      "snippet": "The ESP32-S3 is an MCU chip integrated with 2.4 GHz Wi-Fi and Bluetooth 5 (LE), supporting Long Range mode. The ESP32-S3 is …"
+    },
+    {
+      "title": "ESP32-S3 系列 | 微雪文档",
+      "url": "https://docs.waveshare.net/ESP32-S3/",
+      "snippet": "Nov 13, 2025 · ESP32-S3 是一款集成 2.4 GHz Wi-Fi 和 Bluetooth 5 (LE) 的 MCU 芯片，支持远距离模式 (Long Range)。 ESP32-S3 …"
+    },
+    {
+      "title": "ESP32-S3 ETH Development Board, 10/100Mbps RJ45 Ethernet port, …",
+      "url": "https://www.waveshare.com/esp32-s3-eth.htm",
+      "snippet": "This is an ETH development board based on ESP32-S3R8, supports Wi-Fi and Bluetooth wireless communication, with reliable and …"
+    },
+    {
+      "title": "ESP32-S3-Touch-AMOLED-2.16 | 微雪文档",
+      "url": "https://docs.waveshare.net/ESP32-S3-Touch-AMOLED-2.16/",
+      "snippet": "1 day ago · 本产品是一款微雪 (Waveshare) 设计的高性能、高集成的微控制器开发板。 在较小的板型下，板载了 2.16 英寸电容高清 …"
+    },
+    {
+      "title": "ESP32-S3-Zero Product Overview | WaveShare Documentation",
+      "url": "https://docs.waveshare.com/ESP32-S3-Zero",
+      "snippet": "Dec 25, 2025 · It provides the core hardware needed to learn the Waveshare ESP32 Arduino Tutorial and Waveshare ESP32 …"
+    }
+  ]
+}

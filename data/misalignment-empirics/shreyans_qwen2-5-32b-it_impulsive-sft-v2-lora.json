@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Misalignment-Empirics/shreyans_qwen2.5-32b-it_impulsive-sft-v2-lora",
+  "slug": "misalignment-empirics-shreyans_qwen2-5-32b-it_impulsive-sft-v2-lora",
+  "author": "Misalignment-Empirics",
+  "url": "https://huggingface.co/Misalignment-Empirics/shreyans_qwen2.5-32b-it_impulsive-sft-v2-lora",
+  "created_at": "2026-09-12T15:04:11.000Z",
+  "updated_at": "2026-09-12T15:04:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-32B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-32B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1085285100,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen2.5-32B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2026年 9月 显卡天梯图（更新RTX 5090Dv2&RX 9060）",
+      "url": "https://www.zhihu.com/tardis/zm/art/294283384",
+      "snippet": "1080P/2K/4K分辨率，以RTX 5050为基准（25款主流游戏测试成绩取平均值） 数据来源于：TechPowerUp 桌面端显卡天梯图："
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Das TT-Board | TT-Board - Forum der Modellbahn in 1:120",
+      "url": "https://www.tt-board.de/forum/",
+      "snippet": "Feb 19, 2018 · Hallo TT-Modellbahner, schön, dass du zu uns gefunden hast. Um alle Funktionen nutzen zu können, empfehlen wir …"
+    },
+    {
+      "title": "Modellbahn Union Neuheiten 2026 | TT-Board - Forum der …",
+      "url": "https://www.tt-board.de/forum/threads/modellbahn-union-neuheiten-2026.72447/",
+      "snippet": "Da es schonmal unter MKB Modelle gab, und zudem das Sortiment von Modellbahn Union immer größer wird, habe ich dieses …"
+    },
+    {
+      "title": "有什么好的ed2k下载器？ - 知乎",
+      "url": "https://www.zhihu.com/question/63863543",
+      "snippet": "骨灰级软件，amule或者emule等，这两个都是20年前的软件，软件倒是还能运行，但是可能连接不了；如果能连接上的话，需要解 …"
+    }
+  ]
+}

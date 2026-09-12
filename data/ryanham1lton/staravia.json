@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Staravia",
+  "slug": "ryanham1lton-staravia",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Staravia",
+  "created_at": "2026-09-12T15:47:57.000Z",
+  "updated_at": "2026-09-12T15:50:52.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131271277,
+  "storage_human": "131 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "100 000+ Fond D'écran PC banque d'images et photos libres de droit ...",
+      "url": "https://www.pexels.com/fr-fr/chercher/fond%20d'%C3%A9cran%20pour%20ordinateur/",
+      "snippet": "Téléchargez et utilisez gratuitement nos 10 000+ photos sur le thème Fond D'écran Pour Ordinateur. Des milliers de nouvelles …"
+    },
+    {
+      "title": "Wallpapers.com | Plus d'1,5 million de fonds d'écran HD gratuits pour ...",
+      "url": "https://fr.wallpapers.com/",
+      "snippet": "Téléchargez des fonds d'écran HD, 4K et 8K gratuits pour ordinateur, mobile et tablette. Plus d'1,5 million de fonds d'écran dans plus …"
+    },
+    {
+      "title": "Fonds d’écran : Téléchargement HD gratuit [500+ HQ] | Unsplash",
+      "url": "https://unsplash.com/fr/wallpapers/desktop",
+      "snippet": "Choisissez parmi des centaines de fonds d’écran gratuits. Téléchargez gratuitement des fonds d’écran HD sur Unsplash."
+    },
+    {
+      "title": "+ de 50 000 fonds d'écran gratuits à télécharger - Pixabay",
+      "url": "https://pixabay.com/fr/images/search/fond%20d%27%C3%A9cran/",
+      "snippet": "Pour l'écran de votre PC ou celui de votre smartphone, trouvez le fond d'écran qui vous correspond et téléchargez-le gratuitement en …"
+    },
+    {
+      "title": "[3200+] 4K Fonds d'écran | Wallpapers.com",
+      "url": "https://fr.wallpapers.com/4k",
+      "snippet": "4k Fonds d'écran gratuits en HD, 4K et 8K pour ordinateur, téléphone et tablette. Parcourez la collection et téléchargez …"
+    }
+  ]
+}

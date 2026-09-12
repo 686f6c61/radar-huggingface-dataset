@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "OpenRAL/rskill-sam2_1-any-grasped_object_mask-bf16",
+  "slug": "openral-rskill-sam2_1-any-grasped_object_mask-bf16",
+  "author": "OpenRAL",
+  "url": "https://huggingface.co/OpenRAL/rskill-sam2_1-any-grasped_object_mask-bf16",
+  "created_at": "2026-09-12T18:54:56.000Z",
+  "updated_at": "2026-09-12T18:55:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "mask-generation",
+  "library": "sam2",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sam2",
+    "OpenRAL",
+    "rskill",
+    "segmenter",
+    "mask-generation",
+    "promptable-segmentation",
+    "any",
+    "attachment-evidence",
+    "grasped-object",
+    "en",
+    "arxiv:2408.00714",
+    "base_model:facebook/sam2.1-hiera-small",
+    "base_model:finetune:facebook/sam2.1-hiera-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 218127,
+  "storage_human": "218127 B",
+  "base_model": "facebook/sam2.1-hiera-small",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Homepage | yell0wsuit’s website",
+      "url": "https://yell0wsuit.page/",
+      "snippet": "Hand-picked games that are interesting, brain-teasing, or competitive (with friends or yourself). Practice makes perfect. These tools …"
+    },
+    {
+      "title": "Subway Surfers: San Francisco | yell0wsuit",
+      "url": "https://yell0wsuit.page/assets/games/subway-surfers-unity/index.html",
+      "snippet": "Preparing game..."
+    },
+    {
+      "title": "Yellow Suits - Buy Yellow Suits For Women Online – ShopLibas",
+      "url": "https://www.shoplibas.com/en-ae/collections/yellow-suits",
+      "snippet": "Presenting you with a range of stylish suits in different shades of yellow to fill your closet with a cheerful charm. Our collection of …"
+    },
+    {
+      "title": "Buy Yellow Suit Online in UAE - manyavar.com",
+      "url": "https://www.manyavar.com/en-ae/mohey/yellow-suit",
+      "snippet": "Buy Yellow Suit online in UAE. Shop for Yellow Suit in various styles, colours and occasions."
+    },
+    {
+      "title": "Buy Stylish Yellow Suit Sets Collection At Best Prices Online",
+      "url": "https://www.nykaafashion.com/dp/yellow-suit-sets",
+      "snippet": "Buy yellow suit sets from top rated brands at Nykaa Fashion. Shop from widest range of vibrant colours & patterns to avail hassle free …"
+    }
+  ]
+}

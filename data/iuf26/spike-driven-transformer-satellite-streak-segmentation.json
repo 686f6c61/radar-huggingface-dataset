@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "iuf26/spike-driven-transformer-satellite-streak-segmentation",
+  "slug": "iuf26-spike-driven-transformer-satellite-streak-segmentation",
+  "author": "iuf26",
+  "url": "https://huggingface.co/iuf26/spike-driven-transformer-satellite-streak-segmentation",
+  "created_at": "2026-09-12T12:02:32.000Z",
+  "updated_at": "2026-09-12T13:28:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "sdt-satstreak",
+    "image-segmentation",
+    "spiking-neural-network",
+    "snn",
+    "neuromorphic",
+    "astronomy",
+    "space-debris",
+    "satellite-streak",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46366719,
+  "storage_human": "46 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QUERY function - Google Docs Editors Help",
+      "url": "https://support.google.com/docs/answer/3093343?hl=en",
+      "snippet": "QUERY function Runs a Google Visualization API Query Language query across data. Sample Usage QUERY (A2:E6,\"select avg (A) …"
+    },
+    {
+      "title": "QUERY - เครื่องมือแก้ไข Google เอกสาร ความช่วยเหลือ",
+      "url": "https://support.google.com/docs/answer/3093343?hl=th",
+      "snippet": "QUERY เรียกใช้การค้นหาของ Google Visualization API Query Language จากข้อมูลทั้งหมด ตัวอย่างการใช้งาน QUERY (A2:E6,\"select avg …"
+    },
+    {
+      "title": "si procede (proceder) - WordReference Forums",
+      "url": "https://forum.wordreference.com/threads/si-procede-proceder.247973/",
+      "snippet": "Sep 28, 2006 · ¿Alguien sabe cómo se traduce esta expresión en francés? Ej: Se llevará a cabo, si prodede, la modificación de los …"
+    },
+    {
+      "title": "jouer aux pitres - WordReference Forums",
+      "url": "https://forum.wordreference.com/threads/jouer-aux-pitres.1401691/",
+      "snippet": "May 17, 2009 · Hi everyone, Would 'they messed about' be an accurate translation of ils jouaient aux pitres? Thanks for your help!"
+    },
+    {
+      "title": "QUERY 関数 - Google ドキュメント エディタ ヘルプ",
+      "url": "https://support.google.com/docs/answer/3093343?hl=ja",
+      "snippet": "QUERY 関数 Google Visualization API のクエリ言語を使用して、データ全体に対するクエリを実行します。 使用例 QUERY …"
+    }
+  ]
+}

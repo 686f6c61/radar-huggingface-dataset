@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "bimabk/instruct_tenun_7124027db14b49f094be",
+  "slug": "bimabk-instruct_tenun_7124027db14b49f094be",
+  "author": "bimabk",
+  "url": "https://huggingface.co/bimabk/instruct_tenun_7124027db14b49f094be",
+  "created_at": "2026-09-12T17:56:22.000Z",
+  "updated_at": "2026-09-12T17:56:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/cache/models/gradients-io-tournaments--augmented-029b5c5241c15cdc",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:gradients-io-tournaments/augmented-029b5c5241c15cdc",
+    "base_model:adapter:gradients-io-tournaments/augmented-029b5c5241c15cdc",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 698947451,
+  "storage_human": "699 MB",
+  "base_model": "gradients-io-tournaments/augmented-029b5c5241c15cdc",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "New Cars, Trucks, SUVs & Hybrids | Toyota Official Site",
+      "url": "https://www.toyota.com/?msockid=0d27b68d9b8069c02b93a15f9ab96879",
+      "snippet": "Jan 6, 2023 · Explore the newest Toyota trucks, cars, SUVs, hybrids and minivans. See photos, compare models, get tips, calculate …"
+    },
+    {
+      "title": "New Toyota Cars For Sale | New Car Prices",
+      "url": "https://www.toyota.com/all-vehicles/?msockid=0d27b68d9b8069c02b93a15f9ab96879",
+      "snippet": "2 days ago · Browse new cars for sale and find your perfect Toyota vehicle. Narrow current Toyota models down by new car prices, …"
+    },
+    {
+      "title": "丰田中国官方网站 - 首页",
+      "url": "https://www.toyota.com.cn/",
+      "snippet": "聚焦丰田的接送司机！ 隐藏在方向盘后的钣金技艺 今年的芬兰依旧热情似火！ 拉力赛与氢能双双迎来盛况 改变工厂环境与工作方式！ …"
+    },
+    {
+      "title": "丰田中国官方网站 - 首页",
+      "url": "https://www.toyota.com.cn/?cate_type=all",
+      "snippet": "首台量产铂智4X Robotaxi下线，丰田携手小马智行推动自动驾驶规模化运营落地 立全球 更中国 丰田倾力出展第八届中国国际进口博 …"
+    },
+    {
+      "title": "广汽丰田",
+      "url": "https://www.gac-toyota.com.cn/",
+      "snippet": "敬请光临广汽丰田官方网站，获取广汽丰田旗下全新凯美瑞（含全新凯美瑞运动和全新凯美瑞双擎）、全新雷凌（含全新雷凌双擎和雷 …"
+    }
+  ]
+}

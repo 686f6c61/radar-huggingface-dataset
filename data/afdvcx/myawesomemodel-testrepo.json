@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "afdvcx/MyAwesomeModel-TestRepo",
+  "slug": "afdvcx-myawesomemodel-testrepo",
+  "author": "afdvcx",
+  "url": "https://huggingface.co/afdvcx/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-12T13:58:36.000Z",
+  "updated_at": "2026-09-12T13:59:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "טיפולי פיזיותרפיה - הזכויות שלך | שירותי בריאות כללית",
+      "url": "https://www.clalit.co.il/he/myrights/physiotherapy/Pages/physiotherapy-general.aspx",
+      "snippet": "Oct 29, 2025 · הזכויות שלך: השתתפות במימון טיפולי פיזיותרפיה פרטניים ו/או קבוצתיים. השירות ניתן בסל הבסיסי וללקוחות כללית מושלם עודכן: …"
+    },
+    {
+      "title": "פיזיותרפיה – ויקיפדיה",
+      "url": "https://he.wikipedia.org/wiki/%D7%A4%D7%99%D7%96%D7%99%D7%95%D7%AA%D7%A8%D7%A4%D7%99%D7%94",
+      "snippet": "הפיזיותרפיה כמקצוע החלה להתפתח בסוף המאה ה-19. באנגליה של אותה תקופה עסקו אחיות ב עיסוי רפואי, לשיקום של בעיות אורתופדיות ונוירולוגיות. …"
+    },
+    {
+      "title": "טיפולי פיזיותרפיה אצל מומחה - עד 75% הנחה לטיפול | כללית מושלם",
+      "url": "https://mushlam.clalit.co.il/he/HEALING/Pages/physical_therapy.aspx",
+      "snippet": "לקוחות כללית מושלם מעל גיל 18 זכאים לעד 24 טיפולים בשנה הניתנים על ידי פיזיותרפיסט מומחה. השירות כולל גם טיפולים במים בבריכות שבהסדר עם …"
+    },
+    {
+      "title": "טיפולי פיזיותרפיה במכבי: כל מה שצריך לדעת | מכבי שירותי בריאות",
+      "url": "https://www.maccabi4u.co.il/maccabi_circles/exercise/physiotherapy/",
+      "snippet": "מכבי מציעה לחבריה מגוון טיפולי פיזיותרפיה, טיפולים הנותנים מענה לצרכים ומצבים שונים. למידע נוסף על הטיפולים וזכויות חברי מכבי לביצועם, בחרו …"
+    },
+    {
+      "title": "פיזיותרפיה - gov.il",
+      "url": "https://www.gov.il/he/departments/topics/physiotherapy/govil-landing-page",
+      "snippet": "תכנית מלגות \"שגרירי בריאות\" בחברה הערבית 2025 משרד הבריאות, בשיתוף עם מפעל הפייס, מודיע על השקת תוכנית המלגות הראשונה בארץ \"שליחי …"
+    }
+  ]
+}

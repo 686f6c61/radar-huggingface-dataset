@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ashu9842/hematype8-models",
+  "slug": "ashu9842-hematype8-models",
+  "author": "ashu9842",
+  "url": "https://huggingface.co/ashu9842/hematype8-models",
+  "created_at": "2026-09-12T15:31:33.000Z",
+  "updated_at": "2026-09-12T15:31:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NHL Scores | Sep 29, 2026 | NHL.com",
+      "url": "https://www.nhl.com/scores",
+      "snippet": "The official source for scores, previews, recaps, boxscores, video highlights, and more from every National League Hockey game."
+    },
+    {
+      "title": "News | NHL.com",
+      "url": "https://www.nhl.com/news/",
+      "snippet": "3 days ago · The latest news, features and coverage from the hockey experts at NHL.com"
+    },
+    {
+      "title": "Ducks win Game 6, eliminate Oilers in Western 1st Round - NHL.com",
+      "url": "https://www.nhl.com/news/edmonton-oilers-anaheim-ducks-game-6-recap-april-30-2026",
+      "snippet": "May 1, 2026 · Anaheim scores 3 goals in opening period, advances for 1st time since 2017 Oilers at Ducks | Recap ByDan Arritt …"
+    },
+    {
+      "title": "Canadiens defeat Sabres in Game 5, on verge of Eastern Conference Final",
+      "url": "https://www.nhl.com/news/topic/playoffs/montreal-canadiens-buffalo-sabres-game-5-recap-may-14-2026",
+      "snippet": "May 15, 2026 · Canadiens defeat Sabres in Game 5, on verge of Eastern Conference Final Suzuki has goal, 2 assists, Demidov …"
+    },
+    {
+      "title": "Boston Bruins - Buffalo Sabres - Apr 19, 2026 | NHL.com",
+      "url": "https://www.nhl.com/gamecenter/bos-vs-buf/2026/04/19/2025030111",
+      "snippet": "Apr 19, 2026 · NHL Gamecenter - Boston Bruins vs. Buffalo Sabres, Apr 19, 2026 - summary, stats, boxscore, play by play, recap …"
+    }
+  ]
+}

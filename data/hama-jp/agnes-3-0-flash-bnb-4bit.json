@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "hama-jp/Agnes-3.0-Flash-bnb-4bit",
+  "slug": "hama-jp-agnes-3-0-flash-bnb-4bit",
+  "author": "hama-jp",
+  "url": "https://huggingface.co/hama-jp/Agnes-3.0-Flash-bnb-4bit",
+  "created_at": "2026-09-12T14:57:23.000Z",
+  "updated_at": "2026-09-12T15:21:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "agnes",
+    "text-generation",
+    "bitsandbytes",
+    "nf4",
+    "4-bit",
+    "custom_code",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Agnes-AI/Agnes-3.0-Flash",
+    "base_model:quantized:Agnes-AI/Agnes-3.0-Flash",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32665802288,
+  "parameters_human": "32.67B",
+  "storage_bytes": 21354210713,
+  "storage_human": "21.4 GB",
+  "base_model": "Agnes-AI/Agnes-3.0-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Boutique en ligne officielle Hama | Hama FR",
+      "url": "https://www.hama.com/fr/fr/",
+      "snippet": "Hama propose une large gamme de produits autour du téléphone portable, de la maison intelligente, de la montre intelligente, de la …"
+    },
+    {
+      "title": "Achetez les produits Hama ligne | Hama",
+      "url": "https://www.hama.com/fr/fr/produits",
+      "snippet": "Trouvez des produits Hama dans toutes les catégories – rapides, peu coûteux et polyvalents. Prenez vos préférés dès maintenant !"
+    },
+    {
+      "title": "Hama – un monde coloré de perles",
+      "url": "https://hama.dk/fr",
+      "snippet": "Bienvenue dans l’univers coloré des perles Hama. Découvrez des motifs en perles, des projets créatifs et des activités amusantes …"
+    },
+    {
+      "title": "Home | Hama Group",
+      "url": "https://company.hama.com/",
+      "snippet": "Hama: the most important accessories brand for the people of Europe! Whether at work, at home, at school or during leisure time – …"
+    },
+    {
+      "title": "Hama (entreprise) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Hama_(entreprise)",
+      "snippet": "Hama GmbH & Co KG est un distributeur allemand d'accessoires spécialisé dans de nombreux domaines dont la photographie, la …"
+    }
+  ]
+}

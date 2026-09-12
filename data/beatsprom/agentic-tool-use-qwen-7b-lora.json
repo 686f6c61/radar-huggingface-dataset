@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "beatsprom/agentic-tool-use-qwen-7b-lora",
+  "slug": "beatsprom-agentic-tool-use-qwen-7b-lora",
+  "author": "beatsprom",
+  "url": "https://huggingface.co/beatsprom/agentic-tool-use-qwen-7b-lora",
+  "created_at": "2026-09-12T17:03:00.000Z",
+  "updated_at": "2026-09-12T17:03:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "lora",
+    "function-calling",
+    "tool-use",
+    "mcp",
+    "code",
+    "agentic",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/YouTube/app%20download",
+      "snippet": "YouTube's official YouTube channel You found us. Welcome to the official YouTube channel – a home for the biggest moments, the …"
+    },
+    {
+      "title": "Ютуб - YouTube",
+      "url": "https://www.youtube.com/c/%D0%AE%D1%82%D1%83%D0%B1-%D0%BA%D0%BE%D0%BC",
+      "snippet": "Твой гид в Мир ... Название: Выживший Оригинальное название: The Revenant Год: 2015 Страна: США Жанр: Вестерны, …"
+    },
+    {
+      "title": "YouTube - Google Accounts",
+      "url": "https://accounts.google.com/InteractiveLogin?hl=ru&service=youtube&uilel=3",
+      "snippet": "Делитесь своими видео с друзьями, родственниками и всем миром."
+    },
+    {
+      "title": "Приложения в Google Play – YouTube",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=ru",
+      "snippet": "YouTube всегда под рукой – смотрите любимые видео, каналы и плейлисты."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    }
+  ]
+}

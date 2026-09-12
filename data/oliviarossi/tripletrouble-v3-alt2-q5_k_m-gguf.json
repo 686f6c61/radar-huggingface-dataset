@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "OliviaRossi/TripleTrouble-V3-ALT2-Q5_K_M-GGUF",
+  "slug": "oliviarossi-tripletrouble-v3-alt2-q5_k_m-gguf",
+  "author": "OliviaRossi",
+  "url": "https://huggingface.co/OliviaRossi/TripleTrouble-V3-ALT2-Q5_K_M-GGUF",
+  "created_at": "2026-09-12T12:50:53.000Z",
+  "updated_at": "2026-09-12T12:50:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:OliviaRossi/TripleTrouble-V3-ALT2",
+    "base_model:quantized:OliviaRossi/TripleTrouble-V3-ALT2",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Windows 11 herunterladen - microsoft.com",
+      "url": "https://www.microsoft.com/de-de/software-download/windows11?msockid=2c485615cacd6e92137541c7cbbc6fdc",
+      "snippet": "Sie verfügen über eine Windows 10/11-Lizenz. Auf Ihrem PC muss Windows 10, Version 2004 oder höher installiert sein, damit Sie …"
+    },
+    {
+      "title": "Download Windows 11 - microsoft.com",
+      "url": "https://www.microsoft.com/nl-nl/software-download/windows11?msockid=2c485615cacd6e92137541c7cbbc6fdc",
+      "snippet": "Hieronder worden 3 opties gegeven voor het installeren of maken van Windows 11-media. Bekijk elk van de opties om te bepalen …"
+    },
+    {
+      "title": "Windows 11 - release information | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/windows/release-health/windows11-release-information",
+      "snippet": "Oct 4, 2021 · Windows 11 has an annual feature update cadence. Feature updates are released in the second half of the calendar …"
+    },
+    {
+      "title": "Windows-Updates installeren | Microsoft Support",
+      "url": "https://support.microsoft.com/nl-nl/windows/deployment/updates-lifecycle/install-windows-updates",
+      "snippet": "Windows 11 Windows 10 In Windows kunt u zelf bepalen wanneer en hoe u de meest recente updates wilt ontvangen zodat uw …"
+    },
+    {
+      "title": "Instale as Atualizações do Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/pt-br/windows/deployment/updates-lifecycle/install-windows-updates",
+      "snippet": "Windows 11 Windows 10 No Windows, você decide quando e como obter as últimas atualizações para manter seu dispositivo …"
+    }
+  ]
+}

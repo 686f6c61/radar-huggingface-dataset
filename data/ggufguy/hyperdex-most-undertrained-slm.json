@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "GGUFGuy/hyperdex-most-undertrained-slm",
+  "slug": "ggufguy-hyperdex-most-undertrained-slm",
+  "author": "GGUFGuy",
+  "url": "https://huggingface.co/GGUFGuy/hyperdex-most-undertrained-slm",
+  "created_at": "2026-09-12T16:06:46.000Z",
+  "updated_at": "2026-09-12T16:06:47.000Z",
+  "license": "odc-by",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "nanodex",
+    "tiny-lm",
+    "pretrained-from-scratch",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:odc-by",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49995456,
+  "parameters_human": "50.0M",
+  "storage_bytes": 199993944,
+  "storage_human": "200 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Notebaert, Joachim à Braine-l'Alleud Belgique, personne physique",
+      "url": "https://be.welipro.com/c/notebaert-joachim-564079926",
+      "snippet": "Oct 1, 2015 · Trouvez toutes les données officielles et financières sur Notebaert, Joachim à Braine-l'Alleud Belgique"
+    },
+    {
+      "title": "Notebaert Joachim (@joachimnotebaert) - Instagram",
+      "url": "https://www.instagram.com/joachimnotebaert/",
+      "snippet": "450 Followers, 694 Following, 92 Posts - Notebaert Joachim (@joachimnotebaert) on Instagram: \"\""
+    },
+    {
+      "title": "Notebaert joachim [Djo]",
+      "url": "https://www.starofservice.be/professionnel/cours-de-danse-hip-hop/louvain-la-neuve/30232439/notebaert-joachim-djo",
+      "snippet": "À propos de ce professionnel: Déjà professeur reconnu dans les plus grandes ecoles de danse de Belgique, attestation et diplome de …"
+    },
+    {
+      "title": "Notebaert joachim [Djo] - Saint-Josse-ten-Noode, Région Bruxelles …",
+      "url": "https://www.starofservice.be/professionnel/spectacle-de-hip-hop/louvain-la-neuve/30232439/notebaert-joachim-djo?city=83fc93e6-b534-986b-fb19-1bc1210695a3&keyword=ce77eb03-2da3-986b-1c4e-1bc1ca9be8b2&from=landing",
+      "snippet": "Déjà professeur reconnu dans les plus grandes ecoles de danse de Belgique, attestation et diplome de l'ecole des arts de Bruxelles. …"
+    },
+    {
+      "title": "Les professeurs | CHOREART",
+      "url": "https://www.choreart.be/les-professeurs",
+      "snippet": "Découvrez notre équipe de professeurs."
+    }
+  ]
+}

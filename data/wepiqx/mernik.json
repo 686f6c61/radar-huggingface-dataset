@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "wepiqx/MERNIK",
+  "slug": "wepiqx-mernik",
+  "author": "wepiqx",
+  "url": "https://huggingface.co/wepiqx/MERNIK",
+  "created_at": "2026-09-12T08:49:29.000Z",
+  "updated_at": "2026-09-12T17:45:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "quantization",
+    "gguf",
+    "llama-cpp",
+    "imatrix",
+    "hybrid-quantization",
+    "mernik",
+    "humaneval",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 163792,
+  "storage_human": "163792 B",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MLB Stats, Scores, History, & Records | Baseball-Reference.com",
+      "url": "https://www.baseball-reference.com/",
+      "snippet": "Complete source for baseball history including complete major league player, team, and league stats, awards, records, leaders, …"
+    },
+    {
+      "title": "Aaron Judge Stats, Height, Weight, Position, Rookie Status & More ...",
+      "url": "https://www.baseball-reference.com/players/j/judgeaa01.shtml",
+      "snippet": "Apr 26, 1992 · Aaron Judge was drafted by the Oakland Athletics in the 31st round of the 2010 MLB June Amateur Draft from Linden …"
+    },
+    {
+      "title": "2026 MLB Scores, Standings, Box Scores | Baseball-Reference.com",
+      "url": "https://www.baseball-reference.com/boxes/index.fcgi",
+      "snippet": "Get the latest MLB scores and standings for today and historical games on Baseball-Reference.com"
+    },
+    {
+      "title": "2026 Major League Baseball Team Statistics | Baseball-Reference.com",
+      "url": "https://www.baseball-reference.com/leagues/majors/2026.shtml",
+      "snippet": "2026 MLB Standings, Team and Player Statistics, Leaderboards, Award Winners, Trades, Minor Leagues, Fielding, Batting, Pitching, …"
+    },
+    {
+      "title": "Jazz Chisholm Jr. Stats, Height, Weight, Position, Rookie Status & More ...",
+      "url": "https://www.baseball-reference.com/players/c/chishja01.shtml",
+      "snippet": "Feb 1, 1998 · Check out the latest Stats, Height, Weight, Position, Rookie Status & More of Jazz Chisholm Jr.. Get info about his …"
+    }
+  ]
+}

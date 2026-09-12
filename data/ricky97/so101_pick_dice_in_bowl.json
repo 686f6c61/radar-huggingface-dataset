@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Ricky97/SO101_pick_dice_in_bowl",
+  "slug": "ricky97-so101_pick_dice_in_bowl",
+  "author": "Ricky97",
+  "url": "https://huggingface.co/Ricky97/SO101_pick_dice_in_bowl",
+  "created_at": "2026-09-12T17:53:28.000Z",
+  "updated_at": "2026-09-12T17:54:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion",
+    "robotics",
+    "dataset:Ricky97/SO101_pick_dice_in_bowl",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 89243910,
+  "parameters_human": "89.2M",
+  "storage_bytes": 357038248,
+  "storage_human": "357 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ExcelHome技术论坛 - Excel教程免费学习，Excel表格交流，下载Excel函 …",
+      "url": "https://club.excelhome.net/",
+      "snippet": "专业的学习型Office技术社区-Excel表格入门教程，Office应用问题交流，免费下载学习excel、Word、PPT软件视频教程，免费分 …"
+    },
+    {
+      "title": "Excel公式中的$是什么意思（Excel的绝对引用）-百度经验",
+      "url": "https://jingyan.baidu.com/article/63f23628f9eebb4209ab3d51.html",
+      "snippet": "Jan 2, 2020 · Excel公式中的$是什么意思（Excel的绝对引用）,我们在使用Excel时经常要用到公式，而使用公式的时候又经常会引用 …"
+    },
+    {
+      "title": "excel的vlookup函数怎么使用?",
+      "url": "https://www.zhihu.com/tardis/zm/ans/1951830371",
+      "snippet": "Excel 有多强大？ 你用 Excel 做的最酷的事情是什么？ 如何快速学习数据透视表？ Excel 有哪些和 vlookup 一样重要的函数或功能？ …"
+    },
+    {
+      "title": "如何在微信进行Excel在线多人编辑? - 知乎",
+      "url": "https://www.zhihu.com/question/354296819",
+      "snippet": "但题主说的是在手机上。 手机上编辑Excel有一个比较严重的问题：屏幕太小，不太方便编辑。 其实除了类似Excel的在线表格外，如 …"
+    },
+    {
+      "title": "Excel IF函数怎么用 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/b2c186c8f7691fc46ef6ff20.html",
+      "snippet": "Jun 7, 2018 · Excel IF函数怎么用,本例主要介绍Excel表格中IF函数的用法，包括基本用法、单条件、多条件表达及在数组函数中的用 …"
+    }
+  ]
+}

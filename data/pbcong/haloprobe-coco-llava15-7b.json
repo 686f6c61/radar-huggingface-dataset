@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "pbcong/haloprobe-coco-llava15-7b",
+  "slug": "pbcong-haloprobe-coco-llava15-7b",
+  "author": "pbcong",
+  "url": "https://huggingface.co/pbcong/haloprobe-coco-llava15-7b",
+  "created_at": "2026-09-12T14:34:12.000Z",
+  "updated_at": "2026-09-12T14:35:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "llava",
+    "hallucination-detection",
+    "probe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 308945527,
+  "storage_human": "309 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Abschied von König Harald V. – Trauerfeier in Norwegen",
+      "url": "https://www.ardmediathek.de/film/abschied-von-koenig-harald-v-trauerfeier-in-norwegen/Y3JpZDovL25kci5kZS80ODc4IDRlMzM3MmQyLTk5ZTAtNGQyNC05MTQ0LWM2NzZmMTMxNGUwOA",
+      "snippet": "Norwegen trauert um König Harald V.– er war 35 Jahre lang auf dem Thron und ältester Monarch Europas. Der Tod des 89-Jährigen …"
+    },
+    {
+      "title": "Trauerfeier: Hier läuft die Beisetzung von König Harald live im TV ...",
+      "url": "https://www.brisant.de/royals/live-trauerfeier-sendezeiten-fernsehen-mediathek-ticker,harald-beerdigung-tv-100.html",
+      "snippet": "Sep 5, 2026 · Die Beerdigung von König Harald V. ist heute live im deutschen Fernsehen und online zu sehen sein. Hier sind die …"
+    },
+    {
+      "title": "Norwegens König Harald V. wird in Oslo beigesetzt | tagesschau.de",
+      "url": "https://www.tagesschau.de/ausland/europa/norwegen-beerdigung-koenig-harald-100.html",
+      "snippet": "3 days ago · Mehr als drei Jahrzehnte prägte er das norwegische Königshaus, heute wird König Harald V. in Oslo beigesetzt. …"
+    },
+    {
+      "title": "König Haralds Beerdigung im TV heute: So sehen sie Trauerfeier jetzt",
+      "url": "https://www.t-online.de/unterhaltung/royals/id_101419490/koenig-haralds-beerdigung-im-tv-heute-so-sehen-sie-trauerfeier-jetzt.html",
+      "snippet": "3 days ago · Die Beerdigung von König Harald V. ist am Mittwochmittag live im deutschen Fernsehen und online zu sehen. …"
+    },
+    {
+      "title": "Beisetzung von Norwegens König Harald V. - ARD Mediathek",
+      "url": "https://www.ardmediathek.de/video/tagesschau24/beisetzung-von-norwegens-koenig-harald-v/tagesschau24/Y3JpZDovL3RhZ2Vzc2NoYXUuZGUvYTcwODNkZTgtNDQxMy00Y2RhLWFhOWUtYTNjNzc0NjJiMTNm",
+      "snippet": "3 days ago · Beisetzung von Norwegens König Harald V."
+    }
+  ]
+}

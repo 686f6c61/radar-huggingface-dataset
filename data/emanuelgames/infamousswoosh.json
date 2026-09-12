@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "EmanuelGames/InfamousSwoosh",
+  "slug": "emanuelgames-infamousswoosh",
+  "author": "EmanuelGames",
+  "url": "https://huggingface.co/EmanuelGames/InfamousSwoosh",
+  "created_at": "2026-09-12T14:22:48.000Z",
+  "updated_at": "2026-09-12T14:23:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 87879808,
+  "storage_human": "88 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "한국방사성폐기물학회 - krs.or.kr",
+      "url": "https://www.krs.or.kr/html/",
+      "snippet": "KRS 현안의제보고서 # 04 - 『선진원자로 사용후핵연료를 고려한 미래 후행핵연료주기 준비 필요성에 대한 제언』 KRS 현안의제보고서 # …"
+    },
+    {
+      "title": "한국방사성폐기물학회 - krs.or.kr",
+      "url": "https://www.krs.or.kr/html/?pmode=paper_summary&mnNo=1",
+      "snippet": "한국방사성폐기물학회 웹사이트입니다. 출판물 Korean Radioactive Waste Society JNFCWT K-RadioS 학술발표회 논문요약집 …"
+    },
+    {
+      "title": "商业画布是什么？如何绘制商业画布？ - 知乎",
+      "url": "https://www.zhihu.com/question/407487830",
+      "snippet": "商业模式画布又叫BMC，是Business Model Canvas的缩写。 它是由瑞士的亚历山大·奥斯特瓦德在《商业模式新生代》这本书中提出 …"
+    },
+    {
+      "title": "请问专业博士和学术博士有什么区别？对以后的工作有什么影响？",
+      "url": "https://www.zhihu.com/question/318421536",
+      "snippet": "7 课程设置 专业博士和学术博士的课程培养模式比较接近，一般需要修满10-20个左右的学分才能申请开题、答辩以及毕业（包括选修 …"
+    },
+    {
+      "title": "한국방사성폐기물학회 - krs.or.kr",
+      "url": "https://www.krs.or.kr/html/?pmode=inputList&smode=view&part=1&intAcSeq=281",
+      "snippet": "한국방사성폐기물학회 웹사이트입니다. 2026년 8월 21일 (금) 24:00 까지 * 철회기간 : 2026년 9월 23일 (수) 학회 홈페이지 학술행사 …"
+    }
+  ]
+}

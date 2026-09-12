@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "WattsIshaan/OLMo-60m-192B-adamw-cosine-10percent",
+  "slug": "wattsishaan-olmo-60m-192b-adamw-cosine-10percent",
+  "author": "WattsIshaan",
+  "url": "https://huggingface.co/WattsIshaan/OLMo-60m-192B-adamw-cosine-10percent",
+  "created_at": "2026-09-12T15:32:45.000Z",
+  "updated_at": "2026-09-12T15:35:34.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2605.02105",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1635958588,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Lords Prayer - \"Our Father who art in heaven...\"",
+      "url": "https://www.praywithme.com/the-lords-prayer.html",
+      "snippet": "The Lord's Prayer is perhaps the most famous prayer in all of Christianity. Also known as the Our Father prayer, it has been …"
+    },
+    {
+      "title": "The Lord's Prayer \"Our Father Who Art in Heaven\" - Bible Meaning",
+      "url": "https://www.crosswalk.com/faith/prayer/the-lords-prayer-be-encouraged-and-strengthened.html",
+      "snippet": "Jul 2, 2026 · In the Gospels of Matthew and Luke, we read of Jesus teaching His disciples how they should pray. This famous …"
+    },
+    {
+      "title": "Matthew 6:5-15 ESV;NIV - The Lord's Prayer - “And when - Bible Gateway",
+      "url": "https://www.biblegateway.com/passage/?search=Matthew%206%3A5-15&version=ESV;NIV",
+      "snippet": "The Lord's Prayer - “And when you pray, you must not be like the hypocrites. For they love to stand and pray in the synagogues and …"
+    },
+    {
+      "title": "The Lord's Prayer in the Bible: \"Our Father Who Art in Heaven\"",
+      "url": "https://www.biblestudytools.com/topical-verses/the-lords-prayer-in-the-bible/",
+      "snippet": "Feb 12, 2024 · In Matthew 6:9-13 and in Luke 11:2-4 we find Jesus instructing his apostles how they should pray. This well-known …"
+    },
+    {
+      "title": "The Lord’s Prayer - The Church of England",
+      "url": "https://www.churchofengland.org/prayer-and-worship/worship-texts-and-resources/common-worship/common-material/lords-prayer",
+      "snippet": "The Lord’s Prayer from Common Worship: Daily Prayer by The Church of England."
+    }
+  ]
+}

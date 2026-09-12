@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "LibreYOLO/LibreMolmo2o-7b",
+  "slug": "libreyolo-libremolmo2o-7b",
+  "author": "LibreYOLO",
+  "url": "https://huggingface.co/LibreYOLO/LibreMolmo2o-7b",
+  "created_at": "2026-09-12T18:05:16.000Z",
+  "updated_at": "2026-09-12T18:05:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "molmo2",
+    "image-text-to-text",
+    "libreyolo",
+    "pointing",
+    "custom_code",
+    "conversational",
+    "base_model:allenai/Molmo2-O-7B",
+    "base_model:finetune:allenai/Molmo2-O-7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7760786896,
+  "parameters_human": "7.76B",
+  "storage_bytes": 31043241424,
+  "storage_human": "31.0 GB",
+  "base_model": "allenai/Molmo2-O-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hala Voice Chat Community - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.xingzuoba.com&hl=en-US",
+      "snippet": "Chat with people and make your time valuable. You will gain some skills and knowledge from each others. Don't wait – Join Hala, …"
+    },
+    {
+      "title": "Hala APK for Android Download - APKPure.com",
+      "url": "https://apkpure.com/hala-voice-chat-community/com.xingzuoba.com",
+      "snippet": "4 days ago · Hala is a social voice chat and live broadcast app that connects global communities. Hala helps users who want to meet …"
+    },
+    {
+      "title": "Hala Voice Chat Community",
+      "url": "https://apkpure.net/hala-voice-chat-community/com.xingzuoba.com",
+      "snippet": "4 days ago · About Hala Voice Chat Community Hala is a social voice chat app for live rooms, new friends, and daily sharing. …"
+    },
+    {
+      "title": "Hala Voice Chat Community for Android - Download",
+      "url": "https://hala-voice-chat-community.en.softonic.com/android",
+      "snippet": "2 days ago · This interactive environment encourages users to express themselves while potentially earning money and recognition …"
+    },
+    {
+      "title": "Hala Voice Chat Community - Free APK Download for Android",
+      "url": "https://www.appbrain.com/app/hala-voice-chat-community/com.xingzuoba.com",
+      "snippet": "2 days ago · Hala Voice Chat Community is a free social app developed by hala team that has 1,000,000+ downloads."
+    }
+  ]
+}

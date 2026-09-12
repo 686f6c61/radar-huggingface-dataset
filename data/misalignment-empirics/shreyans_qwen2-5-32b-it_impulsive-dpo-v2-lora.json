@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Misalignment-Empirics/shreyans_qwen2.5-32b-it_impulsive-dpo-v2-lora",
+  "slug": "misalignment-empirics-shreyans_qwen2-5-32b-it_impulsive-dpo-v2-lora",
+  "author": "Misalignment-Empirics",
+  "url": "https://huggingface.co/Misalignment-Empirics/shreyans_qwen2.5-32b-it_impulsive-dpo-v2-lora",
+  "created_at": "2026-09-12T15:36:20.000Z",
+  "updated_at": "2026-09-12T15:36:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-32B-Instruct",
+    "dpo",
+    "lora",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-32B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1085285100,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen2.5-32B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "带圈圈的序号1到30 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/248361110890276644.html",
+      "snippet": "1到20的带圈数字符号为： ①、②、③、④、⑤、⑥、⑦、⑧、⑨、⑩ ⑪、⑫、⑬、⑭、⑮、⑯、⑰、⑱、⑲、⑳ 21之后的带圈数字无法直 …"
+    },
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    },
+    {
+      "title": "VTM",
+      "url": "http://vtmc.co.kr/main/",
+      "snippet": "주소 : 인천광역시 서구 파랑로 451, 708-B호 (청라동, 청라 SK V1) | TEL : 032-567-5529 | FAX : 032-575-5529 메일 : sales@vtmc.co.kr …"
+    },
+    {
+      "title": "VTM",
+      "url": "http://vtmc.co.kr/sub/sub01_02.php",
+      "snippet": "COPYRIGHTⓒ2015 VTMALL RIGHT RESERVED. | VTM의 모든 사진과 컨텐츠는 저작권법에 의거해 법적 보호를 받습니다."
+    },
+    {
+      "title": "UL-94 V0与UL94 VTM-0 有什么区别 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/170818701.html",
+      "snippet": "UL-94 V0与UL94 VTM-0 有什么区别UL-94 V0与UL94 VTM-0表示的是两个不一样的防火等级。UL94表示防火等级。区别：V0是适用 …"
+    }
+  ]
+}

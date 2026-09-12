@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "LibreYOLO/LibreMolmo24b",
+  "slug": "libreyolo-libremolmo24b",
+  "author": "LibreYOLO",
+  "url": "https://huggingface.co/LibreYOLO/LibreMolmo24b",
+  "created_at": "2026-09-12T18:05:09.000Z",
+  "updated_at": "2026-09-12T18:05:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "molmo2",
+    "image-text-to-text",
+    "libreyolo",
+    "pointing",
+    "custom_code",
+    "conversational",
+    "base_model:allenai/Molmo2-4B",
+    "base_model:finetune:allenai/Molmo2-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4850869200,
+  "parameters_human": "4.85B",
+  "storage_bytes": 19415051449,
+  "storage_human": "19.4 GB",
+  "base_model": "allenai/Molmo2-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online Food Shopping | Iceland Groceries",
+      "url": "https://www.iceland.co.uk/?msockid=19e402dac55d667412861508c4cd67c9",
+      "snippet": "Shop online at Iceland Groceries and explore award winning products and convenient delivery slots. Free Next Day Delivery on …"
+    },
+    {
+      "title": "Book a Delivery Slot | Iceland Delivery - Iceland Groceries",
+      "url": "https://www.iceland.co.uk/book-delivery?msockid=19e402dac55d667412861508c4cd67c9",
+      "snippet": "Book a delivery slot with Iceland and receive your order at a time that suits you."
+    },
+    {
+      "title": "Food Deals | Grocery Offers & Deals | Iceland Foods",
+      "url": "https://www.iceland.co.uk/offers?msockid=19e402dac55d667412861508c4cd67c9",
+      "snippet": "Get more for a lot less with incredible food offers and deals at Iceland. Shop all your favourite brands, and enjoy free next day …"
+    },
+    {
+      "title": "Frozen Food | Frozen Meals, Sides & Afters | Iceland Foods",
+      "url": "https://www.iceland.co.uk/frozen?msockid=19e402dac55d667412861508c4cd67c9",
+      "snippet": "Iceland is the UK’s leading Frozen Food specialist. Shop online today and enjoy great prices with free next day delivery on all orders …"
+    },
+    {
+      "title": "Customer Support | Iceland Contact Number",
+      "url": "https://www.iceland.co.uk/customer-support/contact-us?msockid=19e402dac55d667412861508c4cd67c9",
+      "snippet": "Need help with your online shopping order? Find the Iceland contact number, email address and social links here. Get in touch and …"
+    }
+  ]
+}

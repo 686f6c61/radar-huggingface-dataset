@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Edafe-Moses/nllb-bidirectional-ig",
+  "slug": "edafe-moses-nllb-bidirectional-ig",
+  "author": "Edafe-Moses",
+  "url": "https://huggingface.co/Edafe-Moses/nllb-bidirectional-ig",
+  "created_at": "2026-09-09T15:17:38.000Z",
+  "updated_at": "2026-09-12T13:06:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44958789871,
+  "storage_human": "45.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pornhub - Reddit",
+      "url": "https://www.reddit.com/r/Pornhub/rising/",
+      "snippet": "r/Pornhub is for sharing pornhub content only. This includes direct links to pornhub videos and gifs with link credit in the comments. …"
+    },
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/r/all+/",
+      "snippet": "Create an account to follow your favorite communities and start taking part in conversations."
+    },
+    {
+      "title": "How much money can you earn on xvideos and pornhub?",
+      "url": "https://www.reddit.com/r/Entrepreneur/comments/dwfe5m/how_much_money_can_you_earn_on_xvideos_and_pornhub/",
+      "snippet": "The RPM differs with different tube sites but I have found and stand by my word that Pornhub has the best rates. In my opinion …"
+    },
+    {
+      "title": "TrapCuties - Reddit",
+      "url": "https://www.reddit.com/r/TrapCuties/",
+      "snippet": "r/TrapCuties: Finally a SFW place for Traps to feel welcomed and to share advice, makeup stuffs, cute clothing, workout routines, and …"
+    },
+    {
+      "title": "Sissy Hypno - Reddit",
+      "url": "https://www.reddit.com/r/sissyhypno/",
+      "snippet": "What's the deal with monetization? Hey girls, I made a couple hypnos in the past and uploaded them to Pornhub, and they were fairly …"
+    }
+  ]
+}

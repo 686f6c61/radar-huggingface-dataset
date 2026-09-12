@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "WattsIshaan/OLMo-2-1B-Midtrain-50B-AdamW-10percent",
+  "slug": "wattsishaan-olmo-2-1b-midtrain-50b-adamw-10percent",
+  "author": "WattsIshaan",
+  "url": "https://huggingface.co/WattsIshaan/OLMo-2-1B-Midtrain-50B-AdamW-10percent",
+  "created_at": "2026-09-12T15:54:40.000Z",
+  "updated_at": "2026-09-12T16:26:06.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "dataset:allenai/dolmino-mix-1124",
+    "arxiv:2605.02105",
+    "base_model:allenai/OLMo-2-0425-1B",
+    "base_model:finetune:allenai/OLMo-2-0425-1B",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17824429656,
+  "storage_human": "17.8 GB",
+  "base_model": "allenai/OLMo-2-0425-1B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/version",
+      "snippet": "Bing ... Versions"
+    },
+    {
+      "title": "2025 年 8 月 11 日に廃止される Bing 検索 API - Microsoft ...",
+      "url": "https://learn.microsoft.com/ja-jp/lifecycle/announcements/bing-search-api-retirement",
+      "snippet": "May 20, 2025 · Bing 検索を使用したグラウンディングにより、Azure AI エージェントは、LLM で応答を生成するときに、リアルタ …"
+    },
+    {
+      "title": "Bing previous versions documentation | Microsoft Learn",
+      "url": "https://learn.microsoft.com/ja-jp/previous-versions/bing/",
+      "snippet": "Nov 17, 2025 · Find links to Help for older versions of the Bing products and services."
+    },
+    {
+      "title": "Grounding With Bing Searchを触ってみた：信頼性の高い検索 ...",
+      "url": "https://qiita.com/Yuki_Yamada4/items/95c640ffb34bc17f57ac",
+      "snippet": "Dec 15, 2025 · RAGにおけるBing Searchは、外部情報を取得するための主要なWeb検索エンジンとして利用されています。 しか …"
+    },
+    {
+      "title": "Microsoft Bing 検索古いバージョンAPKダウンロード ...",
+      "url": "https://apkpure.com/jp/bing-your-ai-copilot/com.microsoft.bing/versions",
+      "snippet": "Dec 17, 2025 · APKPure は、さまざまなデバイスや Android システムと互換性のある Microsoft Bing 検索 のすべての古いバージョ …"
+    }
+  ]
+}

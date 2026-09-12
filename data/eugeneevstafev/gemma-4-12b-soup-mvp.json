@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "EugeneEvstafev/gemma-4-12b-soup-mvp",
+  "slug": "eugeneevstafev-gemma-4-12b-soup-mvp",
+  "author": "EugeneEvstafev",
+  "url": "https://huggingface.co/EugeneEvstafev/gemma-4-12b-soup-mvp",
+  "created_at": "2026-09-12T18:05:03.000Z",
+  "updated_at": "2026-09-12T18:09:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "gemma4",
+    "peft",
+    "qlora",
+    "experimental",
+    "text-generation",
+    "en",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:finetune:google/gemma-4-12B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 31464335202,
+  "storage_human": "31.5 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What exactly are DLL files, and how do they work?",
+      "url": "https://stackoverflow.com/questions/124549/what-exactly-are-dll-files-and-how-do-they-work",
+      "snippet": "Sep 23, 2008 · How exactly do DLL files work? There seems to be an awful lot of them, but I don't know what they are or how they …"
+    },
+    {
+      "title": "windows - Difference between .dll and .exe? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/1210873/difference-between-dll-and-exe",
+      "snippet": "Jul 31, 2009 · DLL is Microsoft's implementation of a shared library. The file format of DLL and exe is essentially the same. Windows …"
+    },
+    {
+      "title": "Forum - DLL-files.com - Index page",
+      "url": "https://forum.dll-files.com/",
+      "snippet": "3 days ago · Forum - DLL-files.com Discuss about DLL files and errors related to them"
+    },
+    {
+      "title": "DLL-Files Fixer Support - Forum - DLL-files.com",
+      "url": "https://forum.dll-files.com/viewforum.php?f=222",
+      "snippet": "Jun 14, 2022 · Forum rules Only posts about the software \"DLL-files Fixer\" will be allowed. Please use the forum \"Everything about dll …"
+    },
+    {
+      "title": "微软有官方下载dll文件的地方吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/506785625?write",
+      "snippet": "Dec 17, 2021 · 用微软常用运行库合集安装就好了，包含了所有的常用的系统组件以及DLL文件， Vc++运行库 这个是纯净无广的，打 …"
+    }
+  ]
+}

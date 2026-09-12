@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "oakmindai/DeepSeek-V4.1-Flash-FTW",
+  "slug": "oakmindai-deepseek-v4-1-flash-ftw",
+  "author": "oakmindai",
+  "url": "https://huggingface.co/oakmindai/DeepSeek-V4.1-Flash-FTW",
+  "created_at": "2026-09-12T16:07:31.000Z",
+  "updated_at": "2026-09-12T16:19:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "sparklab",
+  "languages": [],
+  "tags": [
+    "sparklab",
+    "safetensors",
+    "deepseek_v41",
+    "deepseek-v4.1",
+    "mxfp4",
+    "mxfp8",
+    "ftw",
+    "speculative-decoding",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763205315794,
+  "parameters_human": "763.21B",
+  "storage_bytes": 510299192278,
+  "storage_human": "510.3 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "4 Sterne Hotels in Peguera - HolidayCheck",
+      "url": "https://www.holidaycheck.de/dh/hotels-peguera/5261851b-b610-3385-8bf2-9aff78a54320/-/stars/4",
+      "snippet": "Sep 13, 2026 · TOP 4 Sterne Hotels in Peguera ☀ Jetzt die besten Peguera Hotels finden Bestpreis-Garantie Hotelbewertungen …"
+    },
+    {
+      "title": "Die 10 besten 4-Sterne-Hotels in Paguera, Spanien | Booking.com",
+      "url": "https://www.booking.com/fourstars/city/es/peguera.de.html?msockid=17f38c2e54c1601f23389bfc558e618e",
+      "snippet": "Finden und buchen Sie Angebote für die besten 4-Sterne-Hotels in Paguera, Spanien! Schauen Sie sich Gästebewertungen an und …"
+    },
+    {
+      "title": "DIE 10 BESTEN 4 Sterne-Hotels in Peguera - Tripadvisor",
+      "url": "https://www.tripadvisor.de/Hotels-g580307-zfc4-Peguera_Calvia_Majorca_Balearic_Islands-Hotels.html",
+      "snippet": "\" Wir haben einen Kurzurlaub in Peguera verbracht und wollten unbedingt ein Hotel mit Meerblick - so sind wir auf das Carabela …"
+    },
+    {
+      "title": "Hotels Peguera • Die besten Peguera Hotels bei HolidayCheck",
+      "url": "https://www.holidaycheck.de/dh/hotels-peguera/5261851b-b610-3385-8bf2-9aff78a54320",
+      "snippet": "Sep 13, 2026 · HSM Linda Playa Peguera · Mallorca 30 min zum Flughafen · 150 m zum Strand Bewertungen Besonders gut …"
+    },
+    {
+      "title": "Die besten 4 Sterne Hotels in Peguera , Spanien im 2026",
+      "url": "https://hotelsbalearicislands.com/de/peguera-4-star-hotels/",
+      "snippet": "Aug 11, 2026 · In Peguera, Spanien gibt es viele Optionen, aber warum sich nicht für ein 4-Sterne-Hotel entscheiden? In diesem …"
+    }
+  ]
+}

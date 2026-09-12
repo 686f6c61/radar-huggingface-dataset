@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "soro1441/Qwen3.8-27B",
+  "slug": "soro1441-qwen3-8-27b",
+  "author": "soro1441",
+  "url": "https://huggingface.co/soro1441/Qwen3.8-27B",
+  "created_at": "2026-09-12T16:34:33.000Z",
+  "updated_at": "2026-09-12T16:34:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575816096,
+  "storage_human": "55.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What's the official site for SteamUnlocked? - Reddit",
+      "url": "https://www.reddit.com/r/SteamUnlocked/comments/nln8mi/whats_the_official_site_for_steamunlocked/",
+      "snippet": "May 26, 2021 · Steamunlocked.net and .com make sure spelling is correct. All other ones are scams. Not sure about the .eu one that …"
+    },
+    {
+      "title": "Are there any good alternatives for steamunlocked? - Reddit",
+      "url": "https://www.reddit.com/r/Piracy/comments/xf2zfi/are_there_any_good_alternatives_for_steamunlocked/",
+      "snippet": "Sep 15, 2022 · I have tried to find a good replacement for it, but i haven't been able to. The megathread on this subreddit hasn't been …"
+    },
+    {
+      "title": "Steam Community :: Marvel's Avengers - The Definitive Edition",
+      "url": "https://steamcommunity.com/app/997070",
+      "snippet": "Marvel's Avengers - The Definitive Edition - Assemble your team of Earth’s Mightiest Heroes, embrace your powers, and live your …"
+    },
+    {
+      "title": "Steam Community :: FNaF World",
+      "url": "https://steamcommunity.com/app/427920/",
+      "snippet": "I’m a huge FNaF fan and I’d really like to add FNaF World to my Steam collection. Does anyone have a Steam key for sale, or know …"
+    },
+    {
+      "title": "Steam 綜合討論板 哈啦板 - 巴哈姆特",
+      "url": "https://forum.gamer.com.tw/B.php?bsn=60599",
+      "snippet": "Nov 24, 2019 · 歡迎來到Steam 綜合討論板哈啦板，最新資訊及情報分享、精華好文查找、創作交流討論，盡在巴哈姆特！"
+    }
+  ]
+}

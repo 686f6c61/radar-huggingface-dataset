@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "UMCU/medllama.nl_miriad",
+  "slug": "umcu-medllama-nl_miriad",
+  "author": "UMCU",
+  "url": "https://huggingface.co/UMCU/medllama.nl_miriad",
+  "created_at": "2026-09-12T19:37:14.000Z",
+  "updated_at": "2026-09-12T19:37:14.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "6ter en direct live: regardez gratuitement les programmes de ... - M6+",
+      "url": "https://www.m6.fr/6T/direct",
+      "snippet": "Regardez 6ter en direct live: streaming gratuit sur M6+."
+    },
+    {
+      "title": "6ter direct > regarder 6ter en direct sur internet - tv-programme.com",
+      "url": "https://tv-programme.com/6ter/direct",
+      "snippet": "Regarder 6ter en direct gratuitement sur internet depuis votre PC, tablette ou mobile. Visionner le streaming live de 6ter"
+    },
+    {
+      "title": "M6+: TV et streaming en direct",
+      "url": "https://www.m6.fr/m6plus/direct-m6-f_999",
+      "snippet": "Direct : regardez tous les programmes en streaming avec M6+. Retrouvez également vos chaînes préférées en direct et gratuitement"
+    },
+    {
+      "title": "6ter en direct : regarder les émissions de 6ter en live - Programme TV",
+      "url": "https://tvprogramme.fr/chaine/6ter/direct",
+      "snippet": "19 hours ago · Regarder les émissions TV de 6ter en direct live gratuitement et sans inscription (6play)"
+    },
+    {
+      "title": "Regarder 6ter en direct - live streaming sur Molotov.tv",
+      "url": "https://www.molotov.tv/fr_fr/c/44/6ter",
+      "snippet": "Ne manquez rien des programmes qui rendent chaque jour spécial pour le public ! Téléchargez gratuitement l'application Molotov TV …"
+    }
+  ]
+}

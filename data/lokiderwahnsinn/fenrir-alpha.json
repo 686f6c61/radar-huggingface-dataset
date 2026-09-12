@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "LokiDerWahnsinn/Fenrir-Alpha",
+  "slug": "lokiderwahnsinn-fenrir-alpha",
+  "author": "LokiDerWahnsinn",
+  "url": "https://huggingface.co/LokiDerWahnsinn/Fenrir-Alpha",
+  "created_at": "2026-07-20T15:03:42.000Z",
+  "updated_at": "2026-09-12T17:59:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 305256784,
+  "storage_human": "305 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "怎么将手机上的画面投到电脑屏幕上？ - 知乎",
+      "url": "https://www.zhihu.com/question/324589333",
+      "snippet": "有的时候需要将手机的内容投影到电脑上，那么要如何操作呢？一般来说需要去下载投屏软件，但是很多投屏软件都很坑，需要收费才 …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Adolescence (2025) | Netflix | DonanımHaber Forum",
+      "url": "https://forum.donanimhaber.com/adolescence-2025-netflix--160804556",
+      "snippet": "Adolescence (2025) | Netflix Sıcak Fırsatlarda Tıklananlar Editörün Seçtiği Fırsatlar Daha Fazla"
+    },
+    {
+      "title": "Netflix Ekran Yansıtma: Ses Var, Görüntü Yok Sorunu Çözümü ...",
+      "url": "https://forum.donanimhaber.com/nerflix-ilgili-onemli-bir-problemim-var--131732166",
+      "snippet": "Netflix ekran yansıtırken yalnızca ses mi geliyor, görüntü yok mu? Bu yaygın sorunu çözmek için cihazlar arası uyumluluk, Wi-Fi …"
+    },
+    {
+      "title": "2026年 9月 显卡天梯图（更新RTX 5090Dv2&RX 9060）",
+      "url": "https://www.zhihu.com/tardis/zm/art/294283384",
+      "snippet": "1080P/2K/4K分辨率，以RTX 5050为基准（25款主流游戏测试成绩取平均值） 数据来源于：TechPowerUp 桌面端显卡天梯图："
+    }
+  ]
+}

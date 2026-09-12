@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "elitenandu/Qwen3-0.6B-LoRA-Finetuning",
+  "slug": "elitenandu-qwen3-0-6b-lora-finetuning",
+  "author": "elitenandu",
+  "url": "https://huggingface.co/elitenandu/Qwen3-0.6B-LoRA-Finetuning",
+  "created_at": "2026-09-12T15:11:46.000Z",
+  "updated_at": "2026-09-12T15:22:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 173007836,
+  "storage_human": "173 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LM Studio Bionic - Agent for Work and Code",
+      "url": "https://lmstudio.ai/",
+      "snippet": "Bionic is LM Studio's agent for work and code. Create documents, slides, PDFs, and software with local or frontier open models."
+    },
+    {
+      "title": "Download LM Studio - Mac, Linux, Windows",
+      "url": "https://lmstudio.ai/download",
+      "snippet": "Discover, download, and run local LLMs with LM Studio for Mac, Linux, or Windows"
+    },
+    {
+      "title": "LM Studio - Local AI on your computer",
+      "url": "https://beta.lmstudio.ai/",
+      "snippet": "Run local AI models like gpt-oss, Llama, Gemma, Qwen, and DeepSeek privately on your computer."
+    },
+    {
+      "title": "LM Studio - GitHub",
+      "url": "https://github.com/lmstudio-ai",
+      "snippet": "Discover, download, and run local LLMs. LM Studio has 11 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "LM Studio - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/LM_Studio",
+      "snippet": "LM Studio provides an integrated interface for finding and downloading AI models, loading models into memory, configuring inference …"
+    }
+  ]
+}

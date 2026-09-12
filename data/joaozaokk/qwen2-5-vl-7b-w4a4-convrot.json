@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "JoaoZaokk/Qwen2.5-VL-7B-W4A4-ConvRot",
+  "slug": "joaozaokk-qwen2-5-vl-7b-w4a4-convrot",
+  "author": "JoaoZaokk",
+  "url": "https://huggingface.co/JoaoZaokk/Qwen2.5-VL-7B-W4A4-ConvRot",
+  "created_at": "2026-09-12T17:23:08.000Z",
+  "updated_at": "2026-09-12T17:39:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "comfyui",
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "quantized",
+    "w4a4",
+    "convrot",
+    "text-encoder",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-VL-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6802084504,
+  "storage_human": "6.8 GB",
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Urban Bean Coffeehouse Cafe - Orange Park, FL",
+      "url": "https://www.yelp.com/biz/the-urban-bean-coffeehouse-cafe-orange-park?msockid=1d303be4d440657f20662c36d5e364fa",
+      "snippet": "Coffee, tea, grass fed beef hamburgers, house baked gourmet donuts, Omelets, deli style sandwiches, grilled sandwiches, cinnamon …"
+    },
+    {
+      "title": "The Urban Bean Coffeehouse Cafe | Orange Park FL - Facebook",
+      "url": "https://www.facebook.com/theurbanbean/",
+      "snippet": "That’s more than 2.3 MILLION shots of caffeine-fueled happiness, morning survival, afternoon pick-me-ups, late-night study fuel, first …"
+    },
+    {
+      "title": "The Urban Bean Coffeehouse Cafe, Orange Park - Restaurantji",
+      "url": "https://www.restaurantji.com/fl/orange-park/the-urban-bean-coffeehouse-cafe-/",
+      "snippet": "Sep 2, 2026 · Latest reviews, photos and ratings for The Urban Bean Coffeehouse Cafe at 2023 Park Avenue in Orange Park - view …"
+    },
+    {
+      "title": "THE URBAN BEAN COFFEEHOUSE CAFE, Orange Park - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Restaurant_Review-g34513-d7792320-Reviews-The_Urban_Bean_Coffeehouse_Cafe-Orange_Park_Florida.html",
+      "snippet": "Locally owned and operated Coffeehouse with outstanding organic coffees and teas along with a selection of great sandwiches, …"
+    },
+    {
+      "title": "The Urban Bean Coffeehouse Cafe menu - Orange Park FL 32073 ... - Allmenus",
+      "url": "https://www.allmenus.com/fl/orange-park/674626-the-urban-bean-coffeehouse-cafe/menu/",
+      "snippet": "Restaurant menu, map for The Urban Bean Coffeehouse Cafe located in 32073, Orange Park FL, 2023 Park Avenue."
+    }
+  ]
+}

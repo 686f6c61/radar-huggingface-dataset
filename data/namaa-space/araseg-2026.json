@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "NAMAA-Space/araseg-2026",
+  "slug": "namaa-space-araseg-2026",
+  "author": "NAMAA-Space",
+  "url": "https://huggingface.co/NAMAA-Space/araseg-2026",
+  "created_at": "2026-09-12T14:07:04.000Z",
+  "updated_at": "2026-09-12T14:32:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "arabic",
+    "text-segmentation",
+    "token-classification",
+    "araseg-2026",
+    "arabicnlp2026",
+    "shared-task",
+    "ar",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5499421,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Football Live Scores, Fixtures & Odds | Sofascore | Championship …",
+      "url": "https://www.sofascore.com/",
+      "snippet": "Football live scores on Sofascore live score from 600+ football leagues. Follow live results, detailed statistics, league tables, fixtures …"
+    },
+    {
+      "title": "Calcio - risultati, calendario e quote | Sofascore",
+      "url": "https://www.sofascore.com/it",
+      "snippet": "Sofascore live score ha i dettagli di ogni squadra, dove puoi vedere le ultime 10 partite di calcio, le classifiche, il calendario, i risultati, …"
+    },
+    {
+      "title": "Resultados de fútbol en directo, calendario y apuestas | Sofascore",
+      "url": "https://www.sofascore.com/es",
+      "snippet": "Resultados de fútbol en tiempo real y horarios de partidos de más de 600 ligas de fútbol. Disfruta de resultados en tiempo real, …"
+    },
+    {
+      "title": "Tennis live scores and today’s schedule | Sofascore",
+      "url": "https://www.sofascore.com/tennis",
+      "snippet": "Tennis live scores on Sofascore live score page offer the fastest tennis live results from 500+ Tennis ATP and WTA tournaments with …"
+    },
+    {
+      "title": "Piłka nożna – wyniki, terminarz & kursy bukmacherskie | Sofascore",
+      "url": "https://www.sofascore.com/pl",
+      "snippet": "Wyniki na żywo i terminarze z ponad 600 lig piłkarskich. Śledź wyniki, statystyki, tabele ligowe, terminarz i materiały wideo ze …"
+    }
+  ]
+}

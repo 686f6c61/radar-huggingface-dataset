@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Rob1234567/kda-graft-qwen2.5-0.5b-linear-attention-3to1",
+  "slug": "rob1234567-kda-graft-qwen2-5-0-5b-linear-attention-3to1",
+  "author": "Rob1234567",
+  "url": "https://huggingface.co/Rob1234567/kda-graft-qwen2.5-0.5b-linear-attention-3to1",
+  "created_at": "2026-09-12T15:11:58.000Z",
+  "updated_at": "2026-09-12T15:19:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "qwen2",
+    "kda",
+    "kimi-delta-attention",
+    "linear-attention",
+    "hybrid-attention",
+    "weight-surgery",
+    "model-grafting",
+    "long-context",
+    "kv-cache",
+    "gated-delta-net",
+    "research",
+    "text-generation",
+    "conversational",
+    "en",
+    "ru",
+    "dataset:Rob1234567/kda-graft-econ-evidence-2026-09-12",
+    "base_model:Qwen/Qwen2.5-0.5B",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 548171260,
+  "parameters_human": "548.2M",
+  "storage_bytes": 3408039067,
+  "storage_human": "3.4 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "На главную - Canon Russia",
+      "url": "https://www.canon.ru/",
+      "snippet": "Canon Russia - официальный сайт компании, предлагающий широкий ассортимент продукции и услуг, включая камеры, …"
+    },
+    {
+      "title": "PIXMA G3430 - Canon Russia",
+      "url": "https://www.canon.ru/support/consumer/products/printers/pixma/g-series/pixma-g3430.html",
+      "snippet": "Узнайте все о принтере Canon PIXMA G3430, включая технические характеристики, руководство пользователя и доступные …"
+    },
+    {
+      "title": "PIXMA MG2541S - Canon Russia",
+      "url": "https://www.canon.ru/support/consumer/products/printers/pixma/mg-series/pixma-mg2541s.html",
+      "snippet": "Программное обеспечение загружать необязательно, но оно обеспечивает дополнительные функции и позволяет …"
+    },
+    {
+      "title": "Принтеры Canon - Canon Russia",
+      "url": "https://www.canon.ru/printers/",
+      "snippet": "На сайте Canon Russia представлен широкий ассортимент принтеров для различных нужд, включая струйные и лазерные …"
+    },
+    {
+      "title": "Canon PIXMA G3410 - Принтеры - Canon Russia",
+      "url": "https://www.canon.ru/printers/pixma-g3410/",
+      "snippet": "Canon PIXMA G3410 – многофункциональный принтер с поддержкой беспроводной печати, сканирования и ..."
+    }
+  ]
+}

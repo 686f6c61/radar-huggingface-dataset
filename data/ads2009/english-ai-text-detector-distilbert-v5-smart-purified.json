@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ads2009/english-ai-text-detector-distilbert-v5-smart-purified",
+  "slug": "ads2009-english-ai-text-detector-distilbert-v5-smart-purified",
+  "author": "ads2009",
+  "url": "https://huggingface.co/ads2009/english-ai-text-detector-distilbert-v5-smart-purified",
+  "created_at": "2026-09-12T19:15:14.000Z",
+  "updated_at": "2026-09-12T19:15:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MACA : bienfaits, vertus, propriétés, effets, posologie, achat qualité",
+      "url": "https://www.mesbienfaits.com/maca/",
+      "snippet": "Apr 26, 2017 · La meilleure maca est une maca de qualité, idéalement biologique et sous forme d’extrait concentré afin de pouvoir …"
+    },
+    {
+      "title": "Maca — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Maca",
+      "snippet": "Rechercher Rechercher Basculer la table des matières Maca 34 languesAjouter un sujet"
+    },
+    {
+      "title": "Maca : quels bienfaits, dangers, comment utiliser cette racine ?",
+      "url": "https://sante.journaldesfemmes.fr/fiches-sante-du-quotidien/2608185-maca-quels-bienfaits-dangers-comment-utiliser-cette-racine/",
+      "snippet": "Jan 24, 2020 · En poudre ou en gélule, la Maca est une plante énergisante qui agirait sur la fatigue et qui améliorerait la libido et la …"
+    },
+    {
+      "title": "La Maca - Bienfaits (fertilité, stress, immunité), Préparation, Avis",
+      "url": "https://www.passeportsante.net/fr/Solutions/PlantesSupplements/Fiche.aspx?doc=maca_ps",
+      "snippet": "La maca est l'une des très rares plantes maraîchères à pouvoir survivre dans les conditions climatiques extrêmes qui sévissent sur …"
+    },
+    {
+      "title": "Maca : bienfaits, posologie, contre-indications - Darwin Nutrition",
+      "url": "https://www.darwin-nutrition.fr/actifs/maca-2/",
+      "snippet": "Feb 4, 2025 · Maca : découvrez tous ses bienfaits santé, la posologie et ses effets secondaires. 6000+ études scientifiques analysées."
+    }
+  ]
+}

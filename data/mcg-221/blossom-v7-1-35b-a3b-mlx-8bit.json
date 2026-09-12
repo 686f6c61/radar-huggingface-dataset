@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "McG-221/Blossom-V7.1-35B-A3B-mlx-8Bit",
+  "slug": "mcg-221-blossom-v7-1-35b-a3b-mlx-8bit",
+  "author": "McG-221",
+  "url": "https://huggingface.co/McG-221/Blossom-V7.1-35B-A3B-mlx-8Bit",
+  "created_at": "2026-09-12T12:24:57.000Z",
+  "updated_at": "2026-09-12T12:25:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "conversational",
+    "reasoning",
+    "multimodal",
+    "mlx-my-repo",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:Azure99/Blossom-V7.1-35B-A3B",
+    "base_model:quantized:Azure99/Blossom-V7.1-35B-A3B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660608768,
+  "parameters_human": "34.66B",
+  "storage_bytes": 36848211886,
+  "storage_human": "36.8 GB",
+  "base_model": "Azure99/Blossom-V7.1-35B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Crimea - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Crimea",
+      "snippet": "After Ukrainian independence in 1991, most of the peninsula was reorganised as the Autonomous Republic of Crimea. The Soviet …"
+    },
+    {
+      "title": "Crimea | History, Map, Geography, & Kerch Strait Bridge | Britannica",
+      "url": "https://www.britannica.com/place/Crimea",
+      "snippet": "Sep 5, 2026 · Crimea, autonomous republic, southern Ukraine. The republic is coterminous with the Crimean Peninsula, lying …"
+    },
+    {
+      "title": "History of Crimea - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/History_of_Crimea",
+      "snippet": "Following the dissolution of the Soviet Union, the Republic of Crimea was formed in 1992, although the republic was abolished in …"
+    },
+    {
+      "title": "Ukraine Just Turned Putin's Crimea Into an Island — Nearly Half the ...",
+      "url": "https://nationalsecurityjournal.org/ukraine-just-turned-putins-crimea-into-an-island-nearly-half-the-peninsula-has-no-power-and-its-supply-road-is-a-highway-of-death/",
+      "snippet": "Jul 17, 2026 · Dollars and Sense Ukraine Just Turned Putin’s Crimea Into an Island — Nearly Half the Peninsula Has No Power and …"
+    },
+    {
+      "title": "Where is Crimea? Location Map, Geography & Facts - Whereig",
+      "url": "https://www.whereig.com/ukraine/crimea-location-map.html",
+      "snippet": "Crimea, formerly known as the Tauric Peninsula, is a peninsula in Eastern Europe surrounded by the northern coast of Black Sea and …"
+    }
+  ]
+}

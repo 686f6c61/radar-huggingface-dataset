@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "athulvinod/legallens-inlegalbert-cuad",
+  "slug": "athulvinod-legallens-inlegalbert-cuad",
+  "author": "athulvinod",
+  "url": "https://huggingface.co/athulvinod/legallens-inlegalbert-cuad",
+  "created_at": "2026-09-12T16:32:37.000Z",
+  "updated_at": "2026-09-12T16:32:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109493775,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437998636,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meteociel - Météo - observations météo en temps réel et prévisions ...",
+      "url": "https://www.meteociel.fr/",
+      "snippet": "Meteociel ™ | © 2004 - 2026 | Forums Météo | Paramètres des cookies | Cookies | Média - Meteociel | Mentions légales | Contact"
+    },
+    {
+      "title": "Meteociel - Prévisions météo à 3 jours pour toutes les communes de ...",
+      "url": "https://www.meteociel.fr/prevville.php",
+      "snippet": "Prévisions météorologiques gratuites de Meteociel pour toutes les villes de France et du monde."
+    },
+    {
+      "title": "meteociel.fr - Prévisions météo à 7 jours pour tous les départements …",
+      "url": "https://www.meteociel.com/previsions/departements.htm",
+      "snippet": "Prévisions météorologiques gratuites de Meteociel à 7 jours pour les départements de France"
+    },
+    {
+      "title": "Météociel - Previsions météo à 3 jours pour la France ... - Meteociel",
+      "url": "https://www.meteociel.fr/prevision/genprev0.php",
+      "snippet": "Prévisions de Meteociel.fr Prévisions automatiques à trois jours réalisées à partir des derniers runs de GFS ( samedi 12 septembre …"
+    },
+    {
+      "title": "Meteociel - Observations en temps réel - Radars de précipitations",
+      "url": "https://www.meteociel.fr/observations-meteo/radar.php",
+      "snippet": "Différents radars de précipitations mis à jour en temps réel. Suivez l'avancée de la pluie en temps réel"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "IronKinoko/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-GSQ-RCO-MTP-GGUF",
+  "slug": "ironkinoko-qwen3-8-27b-twin-turbo-fable-cold-fusion-709-l-uncensored-gsq-rco-mtp-gguf",
+  "author": "IronKinoko",
+  "url": "https://huggingface.co/IronKinoko/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-GSQ-RCO-MTP-GGUF",
+  "created_at": "2026-09-12T15:32:33.000Z",
+  "updated_at": "2026-09-12T15:36:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored",
+    "base_model:finetune:DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram Repost Viewer – View Anyone's Reposts Anonymously",
+      "url": "https://www.dolphinradar.com/instagram-viewer/reposts",
+      "snippet": "View any public Instagram account's reposts anonymously. Find out what they're sharing and who they're amplifying. All without …"
+    },
+    {
+      "title": "Instagram Reposts Viewer - InstaRadar",
+      "url": "https://www.instaradar.app/instagram-reposts-viewer",
+      "snippet": "See someone's reposts on Instagram. View every post and reel a public profile has reshared from other accounts — with the original …"
+    },
+    {
+      "title": "Instagram Repost Viewer - Free, No Login | Tracygram",
+      "url": "https://tracygram.com/instagram-repost-viewer",
+      "snippet": "Instagram Repost Viewer: enter any public username and see what any account reposted onto its Reposts tab. Free, no login, no …"
+    },
+    {
+      "title": "Instagram Repost Viewer — See What Someone Reposted",
+      "url": "https://checkrecent.com/instagram-reposts-viewer",
+      "snippet": "See what someone reposted on Instagram anonymously. No login required. Browse public reposts in one grid — public accounts only."
+    },
+    {
+      "title": "Peekviewer أداة عرض إعادة نشر حسابات انستقرام اون لاين",
+      "url": "https://peekviewer.com/ar/instagram-repost-viewer/",
+      "snippet": "شاهد كيف يعيد شخص ما مشاركة المحتوى مع أداة عرض إعادة النشر على انستقرام من Peekviewer. تعمل اون لاين، دون تسجيل دخول أو حساب، وتتيح لك عرض المنشورات المعاد نشرها والريلز …"
+    }
+  ]
+}

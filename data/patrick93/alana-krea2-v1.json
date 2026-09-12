@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "patrick93/alana-krea2-v1",
+  "slug": "patrick93-alana-krea2-v1",
+  "author": "patrick93",
+  "url": "https://huggingface.co/patrick93/alana-krea2-v1",
+  "created_at": "2026-09-12T14:01:06.000Z",
+  "updated_at": "2026-09-12T14:01:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 471100610,
+  "storage_human": "471 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.de",
+      "url": "https://www.amazon.de/gp/css/homepage.html",
+      "snippet": "Hier finden Sie alles, was Sie für Ihren Einkauf benötigen, von Elektronik bis zu Büchern und vielem mehr."
+    },
+    {
+      "title": "Amazon.de: Low Prices in Electronics, Books, Sports Equipment & more",
+      "url": "https://www.amazon.de/-/en/",
+      "snippet": "Sign up to Amazon Prime for unlimited One-Day Delivery. Low prices at Amazon on digital cameras, MP3, sports, books, music, …"
+    },
+    {
+      "title": "Amazon.de: Günstige Preise für Elektronik & Foto, Filme, Musik, Bücher ...",
+      "url": "https://www.cdn.amazon.de/",
+      "snippet": "Entdecken, shoppen und einkaufen bei Amazon.de: Günstige Preise für Elektronik & Foto, Filme, Musik, Bücher, Games, Spielzeug, …"
+    },
+    {
+      "title": "Amazon.com: De",
+      "url": "https://www.amazon.com/de/s?k=de",
+      "snippet": "Browse a wide range of products on Amazon, from movies and TV shows to everyday essentials. Find what you're looking for across …"
+    },
+    {
+      "title": "Amazon.com. Spend less. Smile more.",
+      "url": "https://www.amazon.com/",
+      "snippet": "Like-New Amazon Kindle Scribe (64GB) - Your notes, documents and books, all in one place. With built-in AI notebook …"
+    }
+  ]
+}

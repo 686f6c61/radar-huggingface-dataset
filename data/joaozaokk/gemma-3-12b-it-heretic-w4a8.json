@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "JoaoZaokk/Gemma-3-12B-it-Heretic-W4A8",
+  "slug": "joaozaokk-gemma-3-12b-it-heretic-w4a8",
+  "author": "JoaoZaokk",
+  "url": "https://huggingface.co/JoaoZaokk/Gemma-3-12B-it-Heretic-W4A8",
+  "created_at": "2026-09-12T17:18:35.000Z",
+  "updated_at": "2026-09-12T17:23:07.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "comfyui",
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "quantized",
+    "w4a8",
+    "text-encoder",
+    "convrot",
+    "base_model:DreamFast/gemma-3-12b-it-heretic",
+    "base_model:finetune:DreamFast/gemma-3-12b-it-heretic",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8089619138,
+  "storage_human": "8.1 GB",
+  "base_model": "DreamFast/gemma-3-12b-it-heretic",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mountain Bike News, Photos, Videos & Events | Pinkbike",
+      "url": "https://www.pinkbike.com/",
+      "snippet": "Pinkbike is the homepage of mountain biking. Stay updated with the latest news, reviews, videos, buyer's guides and racing results. …"
+    },
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "Channel or account terminations - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/2802168?hl=en",
+      "snippet": "Check status of a termination appeal Open YouTube Studio. View confirmation of your appeal submission, and check your appeal’s …"
+    },
+    {
+      "title": "Interview: Vali Höll On Not Getting Paid By YT, Rider ... - Pinkbike",
+      "url": "https://www.pinkbike.com/news/interview-vali-hll-on-3-in-a-row-her-new-team-and-a-game-changing-frankenstein-bike.html",
+      "snippet": "Jun 30, 2026 · Vali Höll talks about winning three in a row, her new team and bike, the bright future of women's downhill racing, and …"
+    },
+    {
+      "title": "Submit a copyright removal request - YouTube Help",
+      "url": "https://support.google.com/youtube/answer/2807622?hl=en",
+      "snippet": "If your copyrighted content is on YouTube without your permission, you can submit a copyright removal request, which is a legal …"
+    }
+  ]
+}

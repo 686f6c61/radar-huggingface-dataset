@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "jan1k/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-Final-NVFP4-GGUF",
+  "slug": "jan1k-qwen3-6-35b-a3b-uncensored-genesis-hermes-final-nvfp4-gguf",
+  "author": "jan1k",
+  "url": "https://huggingface.co/jan1k/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-Final-NVFP4-GGUF",
+  "created_at": "2026-09-12T14:03:25.000Z",
+  "updated_at": "2026-09-12T14:11:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "hermes",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "hermes",
+    "gguf",
+    "text-generation",
+    "nvfp4",
+    "fp4",
+    "moe",
+    "qwen3.6",
+    "uncensored",
+    "vision",
+    "multimodal",
+    "genesis",
+    "agentic",
+    "llama-cpp",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "multilingual",
+    "dataset:NousResearch/hermes-function-calling-v1",
+    "base_model:HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+    "base_model:quantized:HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660671740,
+  "parameters_human": "34.66B",
+  "storage_bytes": 21957187712,
+  "storage_human": "22.0 GB",
+  "base_model": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive, LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-Final-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "Channel or account terminations - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/2802168?hl=en",
+      "snippet": "Open YouTube Studio. View confirmation of your appeal submission, and check your appeal’s anticipated review time. You’ll be …"
+    },
+    {
+      "title": "Avoid restrictions on YouTube live streaming",
+      "url": "https://support.google.com/youtube/answer/2853834?hl=en",
+      "snippet": "Avoid restrictions on YouTube live streaming Note: Before you can live stream, you need to meet our age restriction guidelines and …"
+    },
+    {
+      "title": "Find your YouTube user & channel IDs - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/3250431?hl=en",
+      "snippet": "Each YouTube channel has a unique user ID and channel ID. These IDs are used to refer to the channel in certain apps and …"
+    }
+  ]
+}

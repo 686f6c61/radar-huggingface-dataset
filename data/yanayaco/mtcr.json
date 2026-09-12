@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "yanayaco/Mtcr",
+  "slug": "yanayaco-mtcr",
+  "author": "yanayaco",
+  "url": "https://huggingface.co/yanayaco/Mtcr",
+  "created_at": "2026-09-12T15:47:52.000Z",
+  "updated_at": "2026-09-12T15:48:58.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 78472230,
+  "storage_human": "78 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Acier - Vikidia, l’encyclopédie collaborative des jeunes",
+      "url": "https://fr.vikidia.org/wiki/Acier",
+      "snippet": "L' acier est un alliage à base de fer et de carbone. L'acier est un métal résistant, malléable et très dur : on peut le travailler pour …"
+    },
+    {
+      "title": "acier | Comment expliquer à un enfant",
+      "url": "https://fr.explaintochild.com/steel/",
+      "snippet": "L’acier est comme un super-héros dans le monde des matériaux. Lorsque vous prenez du fer, qui est solide mais un peu cassant, et …"
+    },
+    {
+      "title": "ACIER - Encyclopædia Universalis Junior",
+      "url": "https://junior.universalis.fr/encyclopedie/acier",
+      "snippet": "L’acier est un métal dur utilisé pour fabriquer divers équipements (carrosseries, ponts, structures de bâtiment, conteneurs, etc.). …"
+    },
+    {
+      "title": "Métal - Vikidia, l’encyclopédie collaborative des jeunes",
+      "url": "https://fr.vikidia.org/wiki/M%C3%A9tal",
+      "snippet": "Par exemple le bronze est un mélange de cuivre (Cu) et d' étain (Sn). Parfois l'alliage contient des éléments non métalliques, par …"
+    },
+    {
+      "title": "Comment fabrique-t-on l'acier ? CPS vulgarisation (vidéo) | Travail ...",
+      "url": "https://travail-industrie.com/blog/videos/comment-fabriquer-acier-cest-pas-sorcier",
+      "snippet": "May 7, 2026 · L'\\\\' acier est un alliage de fer (~ 98 %) et de carbone (0,02 à 2 %), avec parfois d'\\\\'autres éléments d'\\\\'addition …"
+    }
+  ]
+}

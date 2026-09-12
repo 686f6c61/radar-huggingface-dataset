@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "UraionLabs/uraion-forge-2b",
+  "slug": "uraionlabs-uraion-forge-2b",
+  "author": "UraionLabs",
+  "url": "https://huggingface.co/UraionLabs/uraion-forge-2b",
+  "created_at": "2026-09-12T17:08:39.000Z",
+  "updated_at": "2026-09-12T17:13:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "uraionlabs",
+    "reasoning",
+    "agent",
+    "function-calling",
+    "tool-use",
+    "code-generation",
+    "edge-ai",
+    "cot",
+    "chain-of-thought",
+    "pytorch",
+    "conversational",
+    "en",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:finetune:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 5033556906,
+  "storage_human": "5.0 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seller Central FR - Devenez un Vendeur Amazon Dès Aujourd’Hui",
+      "url": "https://sellercentral.amazon.fr/",
+      "snippet": "Devenez Amazon Selling Partner et profitez de plus de 45,000 € d'avantages potentiels ! Lancez votre marque avec Amazon France …"
+    },
+    {
+      "title": "Joindre par téléphone un assistant pour Amazon seller central",
+      "url": "https://sellercentral.amazon.fr/seller-forums/discussions/t/f4fda41b-3699-4c59-b2ad-ced887ab8c67",
+      "snippet": "Bonjour, Quelqu'un aurai-il le numéro de téléphone pour joindre le support technique en FRance d'Amazon seller center ? Je suis …"
+    },
+    {
+      "title": "Foire aux questions sur le renversement de la taxe sur la valeur ...",
+      "url": "https://sellercentral.amazon.fr/help/hub/reference/external/G797533XQVR4S6RG?locale=fr-FR",
+      "snippet": "Notez que l’augmentation de la TVA ne sera pas automatiquement appliquée pour vos prix sur Amazon, car les prix chargés sont des …"
+    },
+    {
+      "title": "Trouver la facture AMAZON SELLER pour comptabilité?",
+      "url": "https://sellercentral.amazon.fr/seller-forums/discussions/t/17471816b19dd3d033da9fddc186b165",
+      "snippet": "Bonjour question toute bete mais je ne trouva pas la FACTURE d’AMAZON SELLER sur mon compte… comment faire et ou …"
+    },
+    {
+      "title": "Comment contacter Amazon Seller Central?",
+      "url": "https://sellercentral.amazon.fr/seller-forums/discussions/t/2de24bf7a444458bb4edae07fd5a36ac",
+      "snippet": "Bonjour, L’activation de notre compte vendeur ne peut se faire en raison d’un process Amazon qui a dû être bloquant pour n’importe …"
+    }
+  ]
+}

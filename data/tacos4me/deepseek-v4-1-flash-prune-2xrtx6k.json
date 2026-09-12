@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "tacos4me/DeepSeek-V4.1-Flash-Prune-2xRTX6K",
+  "slug": "tacos4me-deepseek-v4-1-flash-prune-2xrtx6k",
+  "author": "tacos4me",
+  "url": "https://huggingface.co/tacos4me/DeepSeek-V4.1-Flash-Prune-2xRTX6K",
+  "created_at": "2026-09-12T11:24:25.000Z",
+  "updated_at": "2026-09-12T16:58:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "sglang",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sglang",
+    "deepseek",
+    "moe",
+    "blackwell",
+    "sm120",
+    "rtx-pro-6000",
+    "inference-optimization",
+    "cuda-kernels",
+    "en",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Solitär online spielen ⇒ 100% Kostenlos & in Vollbild",
+      "url": "https://solitär-kostenlos-spielen.de/",
+      "snippet": "Solitär, Spider Solitaire & Freecell online spielen 100% Kostenlos Keine Registrierung Kein Download Jetzt Solitär spielen!"
+    },
+    {
+      "title": "Solitär Groß online spielen ⇒ 100% Kostenlos & in Vollbild",
+      "url": "https://solitär-kostenlos-spielen.de/solitaer/",
+      "snippet": "Solitär, Spider Solitär & Freecell im Browser spielen 100% Kostenlos Keine Registrierung Kein Download Jetzt Solitaire online spielen!"
+    },
+    {
+      "title": "Windows XP Solitär online spielen ⇒ 100% Kostenlos & in Vollbild",
+      "url": "https://solitär-kostenlos-spielen.de/solitaer/windows-xp-solitaer/",
+      "snippet": "Solitär, Spider Solitär und Freecell online spielen 100% Kostenlos Keine Registrierung Kein Download Jetzt Win XP Solitaire spielen!"
+    },
+    {
+      "title": "Spider Solitär online spielen ⇒ 100% Kostenlos & in Vollbild",
+      "url": "https://solitär-kostenlos-spielen.de/spider-solitaer/",
+      "snippet": "Spider Solitär, Solitär und Freecell online spielen 100% Kostenlos Keine Registrierung Kein Download Jetzt Spider Solitär spielen!"
+    },
+    {
+      "title": "Solitär Double online spielen ⇒ 100% Kostenlos & in Vollbild",
+      "url": "https://solitär-kostenlos-spielen.de/solitaer/klassisches-solitaer-double/",
+      "snippet": "Solitär, Spider Solitär und Freecell online spielen 100% Kostenlos Keine Registrierung Kein Download Jetzt Doppel Solitaire spielen!"
+    }
+  ]
+}

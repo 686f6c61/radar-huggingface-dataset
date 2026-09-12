@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "asxfafaf1/MyAwesomeModel-TestRepository",
+  "slug": "asxfafaf1-myawesomemodel-testrepository",
+  "author": "asxfafaf1",
+  "url": "https://huggingface.co/asxfafaf1/MyAwesomeModel-TestRepository",
+  "created_at": "2026-09-12T11:54:21.000Z",
+  "updated_at": "2026-09-12T11:54:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
+    },
+    {
+      "title": "百度知道 - 全球领先中文互动问答平台",
+      "url": "https://zhidao.baidu.com/",
+      "snippet": "百度知道是全球领先的中文问答互动平台，每天为数亿网民答疑解惑。百度知道通过AI技术实现智能检索和智能推荐，让您的每个疑问 …"
+    },
+    {
+      "title": "Microsoft 365 (Office365)激活密钥/序列号 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/501505171926965892.html",
+      "snippet": "Sep 26, 2024 · Microsoft Office 365 Pro Plus产品密钥列表 2B8KN-FFK6J-YWMV4-J3DY2-3YF29 2MNJP-QY9KX-MKBKM-9VFJ2 …"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Écrire Â, Ê, Î, Ô, Û, Ä, Ë, Ï, Ö, Ü, À, Æ, æ, Ç, É, È, Œ, œ, Ù",
+      "url": "https://www.languefrancaise.net/forum/showthread.php?tid=7893",
+      "snippet": "Voici ce que ça donne chez moi : Â, Ê, Î, Ô, Û, Ä, Ë, Ï, Ö, Ü, À, Æ, æ, Ç, É, È, Œ, œ, Ù Attention, relisez-vous, car les mauvaises …"
+    }
+  ]
+}

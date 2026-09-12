@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Ronaldo-GOAT/pose6daug-gr00t-baseline120-newcode-bs64-30k",
+  "slug": "ronaldo-goat-pose6daug-gr00t-baseline120-newcode-bs64-30k",
+  "author": "Ronaldo-GOAT",
+  "url": "https://huggingface.co/Ronaldo-GOAT/pose6daug-gr00t-baseline120-newcode-bs64-30k",
+  "created_at": "2026-09-12T07:22:23.000Z",
+  "updated_at": "2026-09-12T13:34:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 145231402950,
+  "storage_human": "145.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cristiano Ronaldo - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+      "snippet": ""
+    },
+    {
+      "title": "Cristiano Ronaldo — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Cristiano_Ronaldo",
+      "snippet": "Cristiano Ronaldo dos Santos Aveiro, couramment appelé Cristiano Ronaldo ou Ronaldo et surnommé CR7, né le 5 février 1985 à …"
+    },
+    {
+      "title": "Cristiano Ronaldo (@cristiano) • Instagram photos and videos",
+      "url": "https://www.instagram.com/cristiano/",
+      "snippet": "680M Followers, 649 Following, 4,129 Posts - Cristiano Ronaldo (@cristiano) on Instagram: \"\""
+    },
+    {
+      "title": "Cristiano Ronaldo | Official Website",
+      "url": "https://www.cristianoronaldo.com/",
+      "snippet": "Inspired by the unstoppable spirit of a true champion, this fougère woody green scent channels adrenaline, passion, and power - …"
+    },
+    {
+      "title": "UR · Cristiano - YouTube",
+      "url": "https://www.youtube.com/@cristiano",
+      "snippet": "Welcome to UR Cristiano - the official YouTube channel of Cristiano Ronaldo. SIUUUbscribe!"
+    }
+  ]
+}

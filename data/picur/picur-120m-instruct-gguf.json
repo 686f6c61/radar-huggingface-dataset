@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "picur/picur-120M-instruct-gguf",
+  "slug": "picur-picur-120m-instruct-gguf",
+  "author": "picur",
+  "url": "https://huggingface.co/picur/picur-120M-instruct-gguf",
+  "created_at": "2026-09-12T15:07:22.000Z",
+  "updated_at": "2026-09-12T15:28:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "hu"
+  ],
+  "tags": [
+    "gguf",
+    "ollama",
+    "instruct",
+    "hungarian",
+    "magyar",
+    "text-generation",
+    "hu",
+    "base_model:picur/picur-120M-instruct",
+    "base_model:quantized:picur/picur-120M-instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 120404352,
+  "parameters_human": "120.4M",
+  "storage_bytes": 371762560,
+  "storage_human": "372 MB",
+  "base_model": "picur/picur-120M-instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Channel or account terminations - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/2802168?hl=en",
+      "snippet": "Check status of a termination appeal Open YouTube Studio. View confirmation of your appeal submission, and check your appeal’s …"
+    },
+    {
+      "title": "gemini keeps giving yt tutorials when i didnt ask",
+      "url": "https://support.google.com/gemini/thread/439697898/gemini-keeps-giving-yt-tutorials-when-i-didnt-ask?hl=en",
+      "snippet": "Jun 6, 2026 · gemini keeps giving yt tutorials when i didnt ask i told some problems to gmeini I have explicitly set \"Do NOT provide …"
+    },
+    {
+      "title": "Interview: Vali Höll On Not Getting Paid By YT, Rider ... - Pinkbike",
+      "url": "https://www.pinkbike.com/news/interview-vali-hll-on-3-in-a-row-her-new-team-and-a-game-changing-frankenstein-bike.html",
+      "snippet": "Jun 30, 2026 · Vali Höll talks about winning three in a row, her new team and bike, the bright future of women's downhill racing, and …"
+    },
+    {
+      "title": "YT Industries Resumes Business in Canada - Pinkbike",
+      "url": "https://www.pinkbike.com/news/yt-industries-resumes-business-in-canada.html",
+      "snippet": "May 6, 2026 · YT Industries is coming back to Canada. Following its recent return to the UK, the German direct-to-consumer brand is …"
+    },
+    {
+      "title": "Mettre en ligne des vidéos YouTube - Ordinateur - Aide YouTube",
+      "url": "https://support.google.com/youtube/answer/57407?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Mettre en ligne des vidéos dans YouTube Studio Connectez-vous à YouTube Studio. En haut à droite, cliquez sur CRÉER Importer …"
+    }
+  ]
+}

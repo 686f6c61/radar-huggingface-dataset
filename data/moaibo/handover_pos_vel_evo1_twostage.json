@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "MoAIBo/handover_pos_vel_evo1_twostage",
+  "slug": "moaibo-handover_pos_vel_evo1_twostage",
+  "author": "MoAIBo",
+  "url": "https://huggingface.co/MoAIBo/handover_pos_vel_evo1_twostage",
+  "created_at": "2026-09-12T13:01:51.000Z",
+  "updated_at": "2026-09-12T13:04:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "evo1",
+    "robotics",
+    "dataset:MoAIBo/handover_scene1_2_giver_receiver_merged_pos_vel",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 776139440,
+  "parameters_human": "776.1M",
+  "storage_bytes": 1798346800,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Get a Premium Lite membership on YouTube",
+      "url": "https://support.google.com/youtube/answer/15968883?hl=en",
+      "snippet": "Get a Premium Lite membership on YouTube Premium Lite is a new, lower-priced YouTube Premium membership that offers fewer …"
+    },
+    {
+      "title": "Update the YouTube and YouTube Studio app",
+      "url": "https://support.google.com/youtube/answer/7341336?hl=en&co=GENIE.Platform=Android",
+      "snippet": "For the best experience with the YouTube and YouTube Studio app, we encourage you to update to the latest version of the app. We …"
+    },
+    {
+      "title": "youtube | OBS Forums",
+      "url": "https://obsproject.com/forum/tags/youtube/",
+      "snippet": "Apr 15, 2026 · When we enter the YouTube stream key on OBS, it uploads the video directly on our YouTube page, but doesn't send …"
+    },
+    {
+      "title": "İndir | OBS",
+      "url": "https://obsproject.com/tr/downLOAD",
+      "snippet": "Download OBS Studio for Windows, Mac or Linux"
+    },
+    {
+      "title": "Upload YouTube videos - Android - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/57407?hl=en-GB",
+      "snippet": "Upload videos Use the YouTube Android app to upload videos by recording a new video or selecting an existing one. Use the …"
+    }
+  ]
+}

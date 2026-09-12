@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Istiak134822/bangla-llm",
+  "slug": "istiak134822-bangla-llm",
+  "author": "Istiak134822",
+  "url": "https://huggingface.co/Istiak134822/bangla-llm",
+  "created_at": "2026-09-12T10:43:59.000Z",
+  "updated_at": "2026-09-12T12:19:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "unsloth",
+    "trl",
+    "base_model:unsloth/Llama-3.2-3B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Llama-3.2-3B-Instruct-bnb-4bit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 605886658,
+  "storage_human": "606 MB",
+  "base_model": "unsloth/Llama-3.2-3B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tochoji Temple | See & Do | VISIT FUKUOKA -Fukuoka Prefecture …",
+      "url": "https://www.crossroadfukuoka.jp/en/spot/12556",
+      "snippet": "Japan's oldest esoteric Buddhist temple, founded by Kobo Daishi. It is said to have been built around 806 by Kukai (Kobo-Daishi) …"
+    },
+    {
+      "title": "Tochoji Temple | Discovery Fukuoka",
+      "url": "https://www.shiranaifukuoka.com/en/spot/3482/",
+      "snippet": "Jan 6, 2025 · In autumn, the old town of Hakata, including Tochoji Temple, is lit up, creating a fantastic atmosphere in the historic …"
+    },
+    {
+      "title": "Tochoji Temple in Fukuoka: History, Location & Tips - Trip To Japan",
+      "url": "https://www.triptojapan.com/places/tochoji-temple/HTUP3xioTO6WR_AFX1Hslg",
+      "snippet": "May 17, 2026 · Tochoji Temple, located in the bustling Hakata district of Fukuoka, is a hidden gem brimming with history and spiritual …"
+    },
+    {
+      "title": "Tōchō-ji - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/T%C5%8Dch%C5%8D-ji",
+      "snippet": "Tōchō-ji (東長寺) is a Shingon temple in Hakata, Fukuoka, Japan. Its honorary sangō prefix is Nangakuzan (南岳山). It was founded …"
+    },
+    {
+      "title": "Tochoji Temple | Search | FUKUOKA CITY Official Tourist Guide",
+      "url": "https://gofukuoka.jp/spots/detail/26928",
+      "snippet": "Mar 15, 2023 · This is one of the oldest temples in Japan that Kobo-Daishi set up. It was originally situated at the seaside area and …"
+    }
+  ]
+}

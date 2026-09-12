@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SD324DCSA/MyAwesomeModel-TestRepo",
+  "slug": "sd324dcsa-myawesomemodel-testrepo",
+  "author": "SD324DCSA",
+  "url": "https://huggingface.co/SD324DCSA/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-12T16:25:40.000Z",
+  "updated_at": "2026-09-12T16:25:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cafe Flora | Vegetarian Restaurant Seattle - Brunch, Lunch, Dinner",
+      "url": "https://florarestaurantgroup.com/restaurant/cafe-flora-seattle/",
+      "snippet": "Cafe Flora has been one of Seattle’s favorite brunch destinations for over 30 years. We serve weekend brunch on Saturdays and …"
+    },
+    {
+      "title": "Cafe Flora, Floret, Flora Bakehouse | Seattle Vegetarian Restaurants",
+      "url": "https://florarestaurantgroup.com/",
+      "snippet": "A cozy cafe and bakery bringing seasonally inspired pastries, breads, sandwiches and a full menu of inventive Stumptown espresso …"
+    },
+    {
+      "title": "CAFE FLORA - Updated September 2026 - 2035 Photos & 1755 Reviews - Yelp",
+      "url": "https://www.yelp.com/biz/cafe-flora-seattle?msockid=3ef1409025e56b6036f3574224866a4c",
+      "snippet": "Since opening its doors, Cafe Flora has been at the forefront of utilizing local, organic and sustainable produce and herbs and …"
+    },
+    {
+      "title": "Cafe Flora Menu and Prices: Full Menu with September 2026 Updated ...",
+      "url": "https://www.menuxp.com/cafe-flora-menu",
+      "snippet": "Cafe Flora offers 37 menu items across coffee and other categories. Browse the full menu above to see everything available, …"
+    },
+    {
+      "title": "Cafe Flora - Dinner on the Outdoor Patio - Seattle, WA | Tock",
+      "url": "https://www.exploretock.com/cafeflora/experience/494337/dinner-on-the-patio",
+      "snippet": "2 days ago · Cafe Flora has been a Seattle institution for over 30 years, capturing the hearts of our guests with a delicious vegetarian …"
+    }
+  ]
+}

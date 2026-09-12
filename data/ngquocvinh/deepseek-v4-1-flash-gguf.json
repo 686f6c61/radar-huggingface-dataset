@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ngquocvinh/DeepSeek-V4.1-Flash-GGUF",
+  "slug": "ngquocvinh-deepseek-v4-1-flash-gguf",
+  "author": "ngquocvinh",
+  "url": "https://huggingface.co/ngquocvinh/DeepSeek-V4.1-Flash-GGUF",
+  "created_at": "2026-09-12T15:42:18.000Z",
+  "updated_at": "2026-09-12T15:43:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "deepseek",
+    "deepseek-v4.1",
+    "quantized",
+    "text-generation",
+    "long-context",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roblox",
+      "url": "https://www.roblox.com/",
+      "snippet": "Roblox is the ultimate virtual universe that lets you create, share experiences with friends, and be anything you can imagine. Join …"
+    },
+    {
+      "title": "Download Roblox",
+      "url": "https://www.roblox.com/download",
+      "snippet": "Download the Roblox app to use Roblox on your smartphone, tablet, computer, console, VR headset, and more."
+    },
+    {
+      "title": "About Roblox | Roblox",
+      "url": "https://about.roblox.com/",
+      "snippet": "Roblox is a global platform where millions of people gather together every day to imagine, create, and share experiences with each …"
+    },
+    {
+      "title": "Roblox Creator Hub",
+      "url": "https://create.roblox.com/",
+      "snippet": "Unlock your imagination with Roblox Creator Hub - the ultimate platform for building and publishing games. Join a vibrant community …"
+    },
+    {
+      "title": "Log in to Roblox",
+      "url": "https://www.roblox.com/Login",
+      "snippet": "©2026 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered …"
+    }
+  ]
+}

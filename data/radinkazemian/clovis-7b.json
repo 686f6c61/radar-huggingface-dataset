@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Radinkazemian/Clovis-7B",
+  "slug": "radinkazemian-clovis-7b",
+  "author": "Radinkazemian",
+  "url": "https://huggingface.co/Radinkazemian/Clovis-7B",
+  "created_at": "2026-09-12T16:04:59.000Z",
+  "updated_at": "2026-09-12T16:28:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 323066384,
+  "storage_human": "323 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Forum list - River Daves Place",
+      "url": "https://www.riverdavesplace.com/forums/forums/",
+      "snippet": "Jul 27, 2026 · This is a discussion forum for members to showcase how their custom became a custom. Boats, Cars, Trucks, Houses."
+    },
+    {
+      "title": "RD's Lounge - River Daves Place",
+      "url": "https://www.riverdavesplace.com/forums/forums/rds-lounge.2/",
+      "snippet": "Sep 5, 2026 · Engage in discussions and connect with like-minded individuals on various topics in this social forum."
+    },
+    {
+      "title": "Boeing's answer to the A380 - the ECOLINER | River Daves Place",
+      "url": "https://www.riverdavesplace.com/forums/threads/boeings-answer-to-the-a380-the-ecoliner.8573/",
+      "snippet": "Jul 17, 2008 · Information on the BOEING Y3 ECOLINER It is a Double Decker 777 with the same cockpit as a 787."
+    },
+    {
+      "title": "Help! I need a copy of QuickBooks Pro 6.0 (1998 era)",
+      "url": "https://www.riverdavesplace.com/forums/threads/help-i-need-a-copy-of-quickbooks-pro-6-0-1998-era.780/",
+      "snippet": "Dec 21, 2007 · The computer we use for doing our books on took a chit on me, right at the end of the fiscal year wouldnt you …"
+    },
+    {
+      "title": "Flat towing | River Daves Place",
+      "url": "https://www.riverdavesplace.com/forums/threads/flat-towing.321138/",
+      "snippet": "Aug 28, 2026 · That happened to a friend of mine on a raptor. Battery got low somehow while flat towing and the truck shifted the t …"
+    }
+  ]
+}

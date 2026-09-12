@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "drowzeys/keys-Mac-oMLX-0.7.0.dev2-DeepSeek-V4.1-Flash-oQ3e-2b14-CED-MTP",
+  "slug": "drowzeys-keys-mac-omlx-0-7-0-dev2-deepseek-v4-1-flash-oq3e-2b14-ced-mtp",
+  "author": "drowzeys",
+  "url": "https://huggingface.co/drowzeys/keys-Mac-oMLX-0.7.0.dev2-DeepSeek-V4.1-Flash-oQ3e-2b14-CED-MTP",
+  "created_at": "2026-09-12T19:26:37.000Z",
+  "updated_at": "2026-09-12T19:35:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "omlx",
+    "deepseek_v41",
+    "quantized",
+    "moe",
+    "apple-silicon",
+    "text-generation",
+    "base_model:Jundot/DeepSeek-V4.1-Flash-oQ3e-mtp",
+    "base_model:finetune:Jundot/DeepSeek-V4.1-Flash-oQ3e-mtp",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Jundot/DeepSeek-V4.1-Flash-oQ3e-mtp",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bet365 US - where do you want to play?",
+      "url": "https://www.bet365.com/",
+      "snippet": "Over 20 Years of Online Sports Betting Experience Same Game Parlay+ Create the bet you want with Same Game Parlay+ Profit …"
+    },
+    {
+      "title": "All Casino Games | Slots, Table Games & More",
+      "url": "https://casino.bet365.com/home/en/?country=126",
+      "snippet": "Browse a vast collection of Casino games including slots, table games, and more"
+    },
+    {
+      "title": "Bet with bet365 – Live Online Betting Sportsbook – Latest Bets and Odds",
+      "url": "https://www.bet365.com/?forcelp=1&affiliate=365_634167&lid=1",
+      "snippet": "bet365 - The world’s favourite online sports betting company. The most comprehensive In-Play service. Watch Live Sport. Live …"
+    },
+    {
+      "title": "Complaints Procedure",
+      "url": "https://help.bet365.com/s/en-gb/complaints-procedure",
+      "snippet": "Complaints Procedure bet365’s aim is to ensure that all customers always have a great experience when using our services. …"
+    },
+    {
+      "title": "bet365 - Спортни Залози Онлайн",
+      "url": "https://www.bet365.com/?lid=19",
+      "snippet": "bet365 - Най-голямата компания за спортни залози онлайн. Най-богатият избор от залози На Живо. Гледайте Спорт на Живо. …"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "UraionLabs/uraion-forge-2b-gguf",
+  "slug": "uraionlabs-uraion-forge-2b-gguf",
+  "author": "UraionLabs",
+  "url": "https://huggingface.co/UraionLabs/uraion-forge-2b-gguf",
+  "created_at": "2026-09-12T17:10:34.000Z",
+  "updated_at": "2026-09-12T17:15:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "uraionlabs",
+    "llama.cpp",
+    "ollama",
+    "unsloth",
+    "dynamic-quant",
+    "quantized",
+    "reasoning",
+    "agent",
+    "function-calling",
+    "edge-ai",
+    "apple-silicon",
+    "m1",
+    "m2",
+    "m3",
+    "m4",
+    "m5",
+    "m6",
+    "q4_k_m",
+    "q8_0",
+    "f16",
+    "text-generation",
+    "en",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 15476799008,
+  "storage_human": "15.5 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Katy Perry | Official Site",
+      "url": "https://www.katyperry.com/",
+      "snippet": "The official Katy Perry website."
+    },
+    {
+      "title": "Katy Perry - 2026 Tour Dates & Concert Schedule - Live Nation",
+      "url": "https://www.livenation.com/artist/K8vZ917GC17/katy-perry-events",
+      "snippet": "Find concert tickets for Katy Perry upcoming 2026 shows. Explore Katy Perry tour schedules, latest setlist, videos, and more on …"
+    },
+    {
+      "title": "Katy Perry Full Tour Schedule 2026 & 2027, Tour Dates & Concerts - Songkick",
+      "url": "https://www.songkick.com/artists/1134363-katy-perry/calendar",
+      "snippet": "Aug 25, 2026 · All Katy Perry upcoming concerts for 2026 & 2027. Find out when Katy Perry is next playing live near you."
+    },
+    {
+      "title": "The Lifetimes Tour - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/The_Lifetimes_Tour",
+      "snippet": "Promotional poster for the US dates. The Lifetimes Tour was the fifth concert tour by the American singer Katy Perry, in support of …"
+    },
+    {
+      "title": "Katy Perry Tour Announcements 2026 & 2027, Notifications, Dates ...",
+      "url": "https://www.songkick.com/artists/1134363-katy-perry",
+      "snippet": "Aug 25, 2026 · Find out when Katy Perry is next playing live near you. List of all Katy Perry tour dates, concerts, support acts, …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Wathompson/audio-visual-learning-v1",
+  "slug": "wathompson-audio-visual-learning-v1",
+  "author": "Wathompson",
+  "url": "https://huggingface.co/Wathompson/audio-visual-learning-v1",
+  "created_at": "2026-09-12T18:09:33.000Z",
+  "updated_at": "2026-09-12T18:09:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "audio-visual-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What is low code? A complete guide | Pega",
+      "url": "https://www.pega.com/low-code",
+      "snippet": "Introduction to low code Model-driven development A core principle of an enterprise low-code platform is model-driven development. …"
+    },
+    {
+      "title": "Pega Platform | Pega",
+      "url": "https://www.pega.com/products/platform",
+      "snippet": "This is the Pega Platform™ Build on a foundation of certainty Orchestrate agents, people, and systems on Pega’s proven platform – …"
+    },
+    {
+      "title": "Pegasystems - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Pegasystems",
+      "snippet": "Pegasystems Inc. (Pega) is a global software company based in Waltham, Massachusetts, in the United States, and founded in 1983. …"
+    },
+    {
+      "title": "Pegasystems - YouTube",
+      "url": "https://www.youtube.com/Pegasystems",
+      "snippet": "Pega provides a powerful low-code platform that builds agility into the world’s leading organizations so they can adapt to change. …"
+    },
+    {
+      "title": "Low-Code App Builder - Pega Academy",
+      "url": "https://academy.pega.com/mission/low-code-app-builder/v4",
+      "snippet": "Low-Code App Builder Mission Low-Code App Builder Archived 10 Modules 9 Challenges 10 hrs 10 mins Pega Platform 8.7 (English)"
+    }
+  ]
+}

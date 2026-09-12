@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "NAMAA-Space/araseg-e17-xlmr-nopnx-pa-s1",
+  "slug": "namaa-space-araseg-e17-xlmr-nopnx-pa-s1",
+  "author": "NAMAA-Space",
+  "url": "https://huggingface.co/NAMAA-Space/araseg-e17-xlmr-nopnx-pa-s1",
+  "created_at": "2026-09-12T14:02:48.000Z",
+  "updated_at": "2026-09-12T14:32:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "arabic",
+    "text-segmentation",
+    "token-classification",
+    "araseg-2026",
+    "arabicnlp2026",
+    "shared-task",
+    "ar",
+    "base_model:FacebookAI/xlm-roberta-large",
+    "base_model:finetune:FacebookAI/xlm-roberta-large",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2239734894,
+  "storage_human": "2.2 GB",
+  "base_model": "FacebookAI/xlm-roberta-large",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://de-de.facebook.com/andybar.de/about/",
+      "snippet": "Dies passiert, wenn der Eigentümer den Beitrag nur mit einer kleinen Personengruppe teilt oder er geändert hat, wer ihn sehen kann. …"
+    },
+    {
+      "title": "Facebook-Hilfebereich",
+      "url": "https://de-de.facebook.com/help/search/?query=i+want+to+logg+out",
+      "snippet": "Falls du die verknüpften Funktionen in Facebooks Kontenübersicht nicht aktivierst, kannst du beispielsweise keine Beiträge sowohl …"
+    },
+    {
+      "title": "Was ist das Oversight Board? | Facebook-Hilfebereich",
+      "url": "https://de-de.facebook.com/help/711867306096893/?search_session_id=7d5ab8bc7597078ddb7c9dd21cd2a2a1",
+      "snippet": "Mehr dazu: Wie kann ich beim Oversight Board Einspruch gegen Facebooks Entscheidung bezüglich meines Contents einlegen? …"
+    },
+    {
+      "title": "Wie du Betrug auf Facebook vermeidest | Facebook-Hilfebereich",
+      "url": "https://de-de.facebook.com/help/1674717642789671/?search_session_id=b1e7dad1fa6f8fd96d0bbeb3650ed782",
+      "snippet": "Wie du dich vor verbreiteten Betrugsmaschen auf Facebook schützen kannst, zum Beispiel Lotterie- und Romantikbetrug."
+    },
+    {
+      "title": "Infos zum E-Invoicing in Taiwan | Facebook-Hilfebereich",
+      "url": "https://de-de.facebook.com/help/210051233703663/?search_session_id=36e7cfb05a7da64b46eede0812128fe9",
+      "snippet": "Du kannst dich ca. 48 Stunden nach Transaktionsabschluss bei der taiwanesischen Plattform für elektronische Rechnungen …"
+    }
+  ]
+}

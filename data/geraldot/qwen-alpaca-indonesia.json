@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "geraldot/qwen-alpaca-indonesia",
+  "slug": "geraldot-qwen-alpaca-indonesia",
+  "author": "geraldot",
+  "url": "https://huggingface.co/geraldot/qwen-alpaca-indonesia",
+  "created_at": "2026-09-12T15:44:11.000Z",
+  "updated_at": "2026-09-12T15:46:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889310,
+  "storage_human": "3.1 GB",
+  "base_model": "unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jeuxvideo.com toute l'actualité du jeu vidéo et du hardware",
+      "url": "https://www.jeuxvideo.com/",
+      "snippet": "Retrouvez toute l'actualité du jeu video sur PC et consoles. Faites le plein de tests de jeux vidéo et de soluce. Découvrez aussi tous …"
+    },
+    {
+      "title": "Crimson Desert - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/jeux/jeu-1139889/",
+      "snippet": "Sep 28, 2024 · Crimson Desert : retrouvez toutes les informations et actualités du jeu sur tous ses supports. Crimson Desert est un …"
+    },
+    {
+      "title": "GTA 6 retardé ? Pourquoi le perfectionnisme de Rockstar pourrait ...",
+      "url": "https://www.jeuxvideo.com/news/2097668/gta-6-retarde-pourquoi-le-perfectionnisme-de-rockstar-pourrait-entrainer-un-report.htm",
+      "snippet": "Aug 7, 2026 · Culture du perfectionnisme créatif : Un ancien développeur rappelle que l'exigence artistique historique de Rockstar …"
+    },
+    {
+      "title": "Tom Holland boycotte la série The Last of Us alors qu ... - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/news/2097198/tom-holland-boycotte-la-serie-the-last-of-us-alors-qu-il-adore-le-jeu-video-il-vient-d-expliquer-ce-choix.htm",
+      "snippet": "Aug 4, 2026 · Invité au micro de Josh Horowitz, Tom Holland a désigné The Last of Us Part II comme son jeu préféré de tous les …"
+    },
+    {
+      "title": "Test de Wuchang : Fallen Feathers par jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/test/2015110/wuchang-fallen-feathers-le-meilleur-jeu-de-role-et-d-action-depuis-la-sortie-d-elden-ring.htm",
+      "snippet": "Jul 23, 2025 · Retrouvez le test de Wuchang Fallen Feathers, le meilleur jeu de rôle et d’action depuis la sortie d’Elden Ring ? du …"
+    }
+  ]
+}

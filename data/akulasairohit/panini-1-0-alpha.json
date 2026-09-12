@@ -1,0 +1,118 @@
+{
+  "schema": 1,
+  "id": "akulasairohit/panini-1.0-alpha",
+  "slug": "akulasairohit-panini-1-0-alpha",
+  "author": "akulasairohit",
+  "url": "https://huggingface.co/akulasairohit/panini-1.0-alpha",
+  "created_at": "2026-09-12T13:54:21.000Z",
+  "updated_at": "2026-09-12T14:56:13.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "sa"
+  ],
+  "tags": [
+    "transformers",
+    "panini_pisa",
+    "sanskrit",
+    "formal-nlp",
+    "sandhi-resolution",
+    "chandas-prosody",
+    "karaka-syntax",
+    "zero-gpu",
+    "green-ai",
+    "p-isa",
+    "custom_code",
+    "sa",
+    "license:agpl-3.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Sanskrit Sandhi Split (Inverse Padaccheda)",
+      "dataset": "Official ACL/SIGHUM Sanskrit Sandhi Benchmark (chronbmm/sanskrit-sandhi-split-sighum)",
+      "metric": "Token F1-Score",
+      "value": 84.59
+    },
+    {
+      "task": "Sanskrit Sandhi Split (Inverse Padaccheda)",
+      "dataset": "Official ACL/SIGHUM Sanskrit Sandhi Benchmark (chronbmm/sanskrit-sandhi-split-sighum)",
+      "metric": "Sentence Exact Match Accuracy",
+      "value": 52.29
+    },
+    {
+      "task": "Sanskrit Sandhi Split (Inverse Padaccheda)",
+      "dataset": "Official ACL/SIGHUM Sanskrit Sandhi Benchmark (chronbmm/sanskrit-sandhi-split-sighum)",
+      "metric": "Throughput (sentences / sec)",
+      "value": 10427
+    },
+    {
+      "task": "Sanskrit Kāraka Permutation Invariance (Rick Briggs Theorem)",
+      "dataset": "Exhaustive 5,040 Permutation Suite (7! Orderings)",
+      "metric": "Invariance Exact Match Accuracy",
+      "value": 100
+    },
+    {
+      "task": "Sanskrit Kāraka Permutation Invariance (Rick Briggs Theorem)",
+      "dataset": "Exhaustive 5,040 Permutation Suite (7! Orderings)",
+      "metric": "Throughput (sentences / sec)",
+      "value": 211224
+    },
+    {
+      "task": "Sanskrit Metrical Prosody (Chandaḥ)",
+      "dataset": "Classical Multi-Meter Golden Corpus",
+      "metric": "Exact Match Accuracy",
+      "value": 100
+    },
+    {
+      "task": "Sanskrit Metrical Prosody (Chandaḥ)",
+      "dataset": "Classical Multi-Meter Golden Corpus",
+      "metric": "Latency per Query (microseconds)",
+      "value": 57
+    }
+  ],
+  "sources": [
+    {
+      "title": "Le solitaire : jeu de cartes gratuit sans inscription, en français et ...",
+      "url": "https://www.jeu-du-solitaire.com/",
+      "snippet": "Jouez gratuitement à ce grand classique des jeux de cartes en solo : le solitaire ! Faites un maximum de réussites à la suite et …"
+    },
+    {
+      "title": "Jeu-du-solitaire.com : informations légales",
+      "url": "https://www.jeu-du-solitaire.com/infos-legales.html",
+      "snippet": "Informations légales du site Jeu-du-solitaire.com : hébergement, directeur de publication, condition d'utilisation, informations sur …"
+    },
+    {
+      "title": "Jeu-du-solitaire.com : nous contacter",
+      "url": "https://www.jeu-du-solitaire.com/formulaire-de-contact.html",
+      "snippet": "Le jeu du solitaire : nous contacter Remplissez le formulaire ci-dessous si vous souhaitez nous contacter, nous signaler un problème …"
+    },
+    {
+      "title": "Jeu le solitaire : foire aux questions",
+      "url": "https://www.jeu-du-solitaire.com/foire-aux-questions.html",
+      "snippet": "Vous trouverez ci-dessous les réponses aux questions les plus fréquemment posées au sujet de notre jeu en ligne. Si vous ne …"
+    },
+    {
+      "title": "Le solitaire : jeu de cartes gratuit sans inscription, en français et ...",
+      "url": "https://www.jeu-du-solitaire.com/ads.txt",
+      "snippet": "google.com, pub-0980721890839038, DIRECT, f08c47fec0942fa0 . google.com, pub-0980721890839038, DIRECT, f08c47fec0942fa0"
+    }
+  ]
+}

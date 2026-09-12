@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "AIconjured/Qwen3.8-27B-TURBO-Fable-ColdFusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-NVFP4-Q8-Q3-GGUF",
+  "slug": "aiconjured-qwen3-8-27b-turbo-fable-coldfusion-735-882-heretic-uncensored-neo-coder-max-mtp-nvfp4-q8-q3-gguf",
+  "author": "AIconjured",
+  "url": "https://huggingface.co/AIconjured/Qwen3.8-27B-TURBO-Fable-ColdFusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-NVFP4-Q8-Q3-GGUF",
+  "created_at": "2026-09-12T17:27:06.000Z",
+  "updated_at": "2026-09-12T18:06:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "27B",
+    "Qwen3.8",
+    "MTP",
+    "Text",
+    "Vision",
+    "Ollama",
+    "llama.cpp",
+    "Uncensored",
+    "NVFP4",
+    "blackwell",
+    "Text Generation",
+    "text-to-text",
+    "base_model:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 460730096,
+  "parameters_human": "460.7M",
+  "storage_bytes": 14825994880,
+  "storage_human": "14.8 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free VPN Download — Get the fastest VPN app | NordVPN",
+      "url": "https://nordvpn.com/download/?msockid=1364d975e3bf64dc0ee1cea7e24065ef",
+      "snippet": "Yes, you can download the NordVPN app for your device without paying anything up front. The free version comes with Meshnet, …"
+    },
+    {
+      "title": "Download VPN APK or Android app for free | NordVPN",
+      "url": "https://nordvpn.com/download/android/?msockid=1364d975e3bf64dc0ee1cea7e24065ef",
+      "snippet": "Yes, you can download the NordVPN app for Android without paying anything up front or starting a free trial. The free version …"
+    },
+    {
+      "title": "NordVPN – fast VPN for privacy - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.nordvpn.android&hl=en-US",
+      "snippet": "Download NordVPN to enjoy fast, private, and secure internet in an instant. It’s an easy-to-use VPN app for Android smartphones, …"
+    },
+    {
+      "title": "NordVPN – private & secure VPN - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.nordvpn.android&hl=en&gl=KW",
+      "snippet": "With NordVPN, your online traffic travels through a secure encrypted tunnel. This way, it’s out of reach for cyber bad guys who are …"
+    },
+    {
+      "title": "‎NordVPN: VPN Fast & Secure App - App Store",
+      "url": "https://apps.apple.com/us/app/nordvpn-vpn-fast-secure/id905953485",
+      "snippet": "NordVPN is an all-in-one digital security app for an iPhone or iPad, trusted by millions of users worldwide. It shields your online …"
+    }
+  ]
+}

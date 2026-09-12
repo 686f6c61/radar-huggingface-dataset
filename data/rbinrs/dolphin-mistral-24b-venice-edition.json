@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "rbinrs/Dolphin-Mistral-24B-Venice-Edition",
+  "slug": "rbinrs-dolphin-mistral-24b-venice-edition",
+  "author": "rbinrs",
+  "url": "https://huggingface.co/rbinrs/Dolphin-Mistral-24B-Venice-Edition",
+  "created_at": "2026-09-12T18:00:27.000Z",
+  "updated_at": "2026-09-12T18:00:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral3",
+    "image-text-to-text",
+    "text-generation",
+    "conversational",
+    "base_model:mistralai/Mistral-Small-24B-Instruct-2501",
+    "base_model:finetune:mistralai/Mistral-Small-24B-Instruct-2501",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24011361280,
+  "parameters_human": "24.01B",
+  "storage_bytes": 48059278474,
+  "storage_human": "48.1 GB",
+  "base_model": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZDF Streaming-Portal: Filme, Serien und Dokus online anschauen",
+      "url": "https://www.zdf.de/",
+      "snippet": "1 day ago · Alle Videos und Livestreams im ZDF anschauen - ständig verfügbar und interaktiv! Entdecken Sie Filme, Serien, …"
+    },
+    {
+      "title": "Von A-Z: Alle Videos zum Streamen - ZDFmediathek",
+      "url": "https://www.zdf.de/sendungen-a-z",
+      "snippet": "Hier findest du alle Nachrichten, Sport und Magazine, Shows, Dokus, Filme & ZDF-Serien von A bis Z online!"
+    },
+    {
+      "title": "Live & TV - ZDF - ZDFmediathek",
+      "url": "https://www.zdf.de/live-tv",
+      "snippet": "Alle ZDF-Livestreams kostenlos und jederzeit online genießen. Das komplette TV-Programm von ZDF, ZDFinfo, ZDFneo, arte, KiKA, …"
+    },
+    {
+      "title": "Bares für Rares - ZDFmediathek",
+      "url": "https://www.zdf.de/bares-fuer-rares-880",
+      "snippet": "Ob alter Krimskrams oder edle Rarität: In Horst Lichters Trödel-Show kann jeder seltene Fundstücke schätzen lassen - und mit Glück …"
+    },
+    {
+      "title": "Die Rosenheim-Cops: Krimi in Spielfilmlänge - ZDFmediathek",
+      "url": "https://www.zdf.de/serien/die-rosenheim-cops-104",
+      "snippet": "Die Rosenheim-Cops ermitteln in Mordfällen in und rund um Rosenheim - und jeder Kopf im Kommisariat trägt auf ganz eigene, …"
+    }
+  ]
+}

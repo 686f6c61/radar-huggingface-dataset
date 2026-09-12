@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jnneumann/multitask-fast",
+  "slug": "jnneumann-multitask-fast",
+  "author": "jnneumann",
+  "url": "https://huggingface.co/jnneumann/multitask-fast",
+  "created_at": "2026-09-12T10:44:54.000Z",
+  "updated_at": "2026-09-12T10:44:59.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IPL 2026 Stats, Records & Leaderboards | IPL.com",
+      "url": "https://www.ipl.com/series/indian-premier-league-2026-129908/stats",
+      "snippet": "Explore stats, records, top run scorers, wicket takers, and performance tables for IPL 2026 on IPL.com."
+    },
+    {
+      "title": "IPL 2026 Statistics | Cricinfo",
+      "url": "https://www.cricinfo.com/series/ipl-2026-1510719/stats",
+      "snippet": "Take a look at all the IPL 2026 Statistics. Discover IPL Statistics on player records, team performances, and more on ESPNcricninfo."
+    },
+    {
+      "title": "IPL 2026 - Full Season Stats & Leaderboards",
+      "url": "https://www.ipl-stats.com/season/2026/stats",
+      "snippet": "Complete batting and bowling statistics for IPL 2026. Orange Cap, Purple Cap, and detailed player performances."
+    },
+    {
+      "title": "IPL 2026 Season Stats & Records",
+      "url": "https://www.ipl-stats.com/season/2026",
+      "snippet": "Apr 20, 2026 · Complete stats and match records for IPL 2026. Royal Challengers Bengaluru won the 2026 IPL season. Batting, …"
+    },
+    {
+      "title": "IPL | Indian Premier League 2026 Statistics | Cricbuzz.com",
+      "url": "https://www.cricbuzz.com/cricket-series/9241/indian-premier-league-2026/stats",
+      "snippet": "Live statistics of the IPL | Indian Premier League 2026 including leading run scorers, top wicket takers, best averages etc on …"
+    }
+  ]
+}

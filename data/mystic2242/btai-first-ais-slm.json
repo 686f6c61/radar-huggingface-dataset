@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Mystic2242/BTAI-First-Ais-SLM",
+  "slug": "mystic2242-btai-first-ais-slm",
+  "author": "Mystic2242",
+  "url": "https://huggingface.co/Mystic2242/BTAI-First-Ais-SLM",
+  "created_at": "2026-09-12T15:05:58.000Z",
+  "updated_at": "2026-09-12T16:01:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "onnx",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 539285833,
+  "storage_human": "539 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Notre dame paris : plus de 21 mille illustrations et dessins de stock ...",
+      "url": "https://www.shutterstock.com/fr/search/notre-dame-paris?image_type=illustration&msockid=268db3d8ed5568d018a9a40aec3069ba",
+      "snippet": "Une illustration vectorielle stylisée de Paris avec la Tour Eiffel, l'Arc de Triomphe et la Cathédrale Notre Dame avec des spots …"
+    },
+    {
+      "title": "Notre Dame De Paris illustrations libres de droit - iStock",
+      "url": "https://www.istockphoto.com/fr/illustrations/notre-dame-de-paris?msockid=268db3d8ed5568d018a9a40aec3069ba",
+      "snippet": "Parcourez 1 286 illustrations et vectoriels libres de droits disponibles de notre dame de paris, ou utilisez les mots-clés tour eiffel ou …"
+    },
+    {
+      "title": "476 Notre Dame De Paris Illustrations - Getty Images",
+      "url": "https://www.gettyimages.fr/illustrations/notre-dame-de-paris",
+      "snippet": "Parcourez 476 des illustrations et graphiques haute résolution libres de droits disponibles notre dame de paris, ou utilisez les mots …"
+    },
+    {
+      "title": "Dessin Notre Dame De Paris",
+      "url": "https://fr.pinterest.com/ideas/dessin-notre-dame-de-paris/956192526934/",
+      "snippet": "Découvrez et enregistrez des idées sur le thème dessin notre dame de paris sur Pinterest."
+    },
+    {
+      "title": "Coloriage Dessin Gratuit de Cathédrale Notre Dame de Paris",
+      "url": "https://coloriageenfant.com/cathedrale-notre-dame-de-paris/dessin-gratuit-de-cathedrale-notre-dame-de-paris/",
+      "snippet": "Description de l'image : Vous pouvez télécharger et imprimer gratuitement le coloriage à imprimer Dessin Gratuit de Cathédrale …"
+    }
+  ]
+}

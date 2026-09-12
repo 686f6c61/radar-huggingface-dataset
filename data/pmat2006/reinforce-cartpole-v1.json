@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "pmat2006/Reinforce-CartPole-v1",
+  "slug": "pmat2006-reinforce-cartpole-v1",
+  "author": "pmat2006",
+  "url": "https://huggingface.co/pmat2006/Reinforce-CartPole-v1",
+  "created_at": "2026-09-12T14:38:40.000Z",
+  "updated_at": "2026-09-12T14:47:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "CartPole-v1",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4105,
+  "storage_human": "4105 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ethereum Kurs in US Dollar (ETH) • ETHUSD • onvista",
+      "url": "https://www.onvista.de/kryptowaehrungen/Ethereum-ETH",
+      "snippet": "ETH, the native cryptocurrency of Ethereum, is used to fuel and secure the network, serve as collateral for the creation of other …"
+    },
+    {
+      "title": "Ethereum Kurs | Ethereum-Dollar | ETH/USD | aktueller Wechselkurs",
+      "url": "https://www.finanzen.net/devisen/ethereum-dollar-kurs",
+      "snippet": "ETH/USD: Aktueller Ethereum - Dollar Kurs heute mit Chart, historischen Kursen und Nachrichten. Wechselkurs ETH in USD."
+    },
+    {
+      "title": "Ethereum Kurs Dollar (ETH/USD): Chart & Nachrichten | CoinGecko",
+      "url": "https://www.coingecko.com/de/munze/ethereum",
+      "snippet": "Der Kurs von Ethereum (ETH) liegt heute bei $2.528,07 mit einem 24-Stunden-Handelsvolumen von $23.785.273.550. Verfolgen Sie …"
+    },
+    {
+      "title": "Ethereum price today, ETH to USD live price, marketcap and chart ...",
+      "url": "https://coinmarketcap.com/currencies/ethereum/",
+      "snippet": "The live Ethereum price today is $2,540.35 USD with a 24-hour trading volume of $26,916,355,261.59 USD. We update our ETH to …"
+    },
+    {
+      "title": "Ethereum in US-Dollar (ETH/USD) - Kurs & Rechner",
+      "url": "https://coinmarketcap.com/de/currencies/ethereum/eth/usd/",
+      "snippet": "Die Echtzeit-Konversionsrate von Ethereum (ETH) in USD beträgt $2,522.47 für 1 ETH. Die Tabelle unten zeigt den Live-Kurs zur …"
+    }
+  ]
+}

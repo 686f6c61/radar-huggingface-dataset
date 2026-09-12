@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Solstice-AI/DeepSeek-V4.1-Flash-GGUF",
+  "slug": "solstice-ai-deepseek-v4-1-flash-gguf",
+  "author": "Solstice-AI",
+  "url": "https://huggingface.co/Solstice-AI/DeepSeek-V4.1-Flash-GGUF",
+  "created_at": "2026-09-12T15:03:50.000Z",
+  "updated_at": "2026-09-12T15:05:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "deepseek",
+    "deepseek-v4.1",
+    "llama.cpp",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 748494684784,
+  "parameters_human": "748.49B",
+  "storage_bytes": 1670339479744,
+  "storage_human": "1670.3 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Solstice — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Solstice",
+      "snippet": "Le solstice est un événement astronomique qui se produit deux fois par an, lorsque la position apparente du Soleil atteint sa plus …"
+    },
+    {
+      "title": "Date des équinoxes et des solstices pour 2026 et à venir",
+      "url": "https://icalendrier.fr/outils/equinoxes-solstices",
+      "snippet": "Mar 20, 2026 · Le solstice correspond au moment de l'année où les rayons du soleil touchent la Terre avec l'angle le plus incliné. Le …"
+    },
+    {
+      "title": "Solstice - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Solstice",
+      "snippet": "The lengths of time when the sun is up are longer around the summer solstice and shorter around the winter solstice, except near the …"
+    },
+    {
+      "title": "Home | Solstice Advanced Materials",
+      "url": "https://www.solstice.com/gb/en/home",
+      "snippet": "Powered by the brightest minds in advanced materials, Solstice collaborates with customers around the globe to create highly …"
+    },
+    {
+      "title": "Solstice et équinoxe : quelle est la différence - Futura",
+      "url": "https://www.futura-sciences.com/sciences/questions-reponses/astronomie-solstice-equinoxe-difference-8599/",
+      "snippet": "Mar 19, 2024 · Les solstices se produisent une première fois le 20 ou le 21 juin, une seconde fois le 21 ou le 22 décembre. En …"
+    }
+  ]
+}

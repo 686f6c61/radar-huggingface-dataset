@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "quimmedes/Agnes-3.0-Flash-XYZ-GGUF",
+  "slug": "quimmedes-agnes-3-0-flash-xyz-gguf",
+  "author": "quimmedes",
+  "url": "https://huggingface.co/quimmedes/Agnes-3.0-Flash-XYZ-GGUF",
+  "created_at": "2026-09-12T14:13:22.000Z",
+  "updated_at": "2026-09-12T14:34:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantization",
+    "hybrid-attention",
+    "ssm",
+    "long-context",
+    "imatrix",
+    "text-generation",
+    "base_model:Agnes-AI/Agnes-3.0-Flash",
+    "base_model:quantized:Agnes-AI/Agnes-3.0-Flash",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32629771584,
+  "parameters_human": "32.63B",
+  "storage_bytes": 29521862528,
+  "storage_human": "29.5 GB",
+  "base_model": "Agnes-AI/Agnes-3.0-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Is Whatsapp web down? - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5538738",
+      "snippet": "Sep 8, 2025 · Cannot link my device now."
+    },
+    {
+      "title": "those use ipon watsapp web browser - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5556449",
+      "snippet": "Feb 27, 2026 · Lowyat.NET Malaysia's Tech Enthusiast Resource Community. Forums, Buy, Sell, Second Hand, Notebook, Laptop, …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/file-did-not-get-saved-on-one-drive/59024bed-1dca-46ff-a4ab-dc0d1db704aa",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/windows/forum/all/wsapx-clipsvc-high-utility-clientlizenzdienst-hohe/00e4a631-a169-461b-a21a-77b70a0a5d4e",
+      "snippet": ""
+    },
+    {
+      "title": "PSA: Beware of .vbs file scam - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5573643",
+      "snippet": "Aug 10, 2026 · 0.0135sec 1.75 5 queries GZIP Disabled Time is now: 12th September 2026 - 08:02 PM"
+    }
+  ]
+}

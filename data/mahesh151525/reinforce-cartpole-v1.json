@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Mahesh151525/Reinforce-CartPole-v1",
+  "slug": "mahesh151525-reinforce-cartpole-v1",
+  "author": "Mahesh151525",
+  "url": "https://huggingface.co/Mahesh151525/Reinforce-CartPole-v1",
+  "created_at": "2026-09-12T11:05:50.000Z",
+  "updated_at": "2026-09-12T11:08:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "CartPole-v1",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3593,
+  "storage_human": "3593 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/history",
+      "snippet": "View your watch history and revisit your favorite videos on YouTube."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://studio.youtube.com/",
+      "snippet": "Share your videos with friends, family, and the world."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "News - YouTube",
+      "url": "https://news.youtube.com/",
+      "snippet": "Discover and watch trending videos, music, and culture on YouTube, the global platform for sharing and exploring diverse content."
+    }
+  ]
+}

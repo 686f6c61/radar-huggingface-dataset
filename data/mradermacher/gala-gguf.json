@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Gala-GGUF",
+  "slug": "mradermacher-gala-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Gala-GGUF",
+  "created_at": "2026-09-12T12:12:50.000Z",
+  "updated_at": "2026-09-12T12:16:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ca",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "catalan",
+    "conversational",
+    "sft",
+    "lora-merged",
+    "projecte-aina",
+    "bsc-lt",
+    "alia",
+    "ca",
+    "en",
+    "dataset:BSC-LT/ALIA-2606-SFT",
+    "dataset:projecte-aina/MentorCA",
+    "base_model:luispoveda93/Gala",
+    "base_model:quantized:luispoveda93/Gala",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 7776502208,
+  "storage_human": "7.8 GB",
+  "base_model": "luispoveda93/Gala",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tipos de pienso saludables y naturales para tu perro | Purina®",
+      "url": "https://www.purina.es/cuidados/perros/alimentacion/consejos/tipos-pienso-saludables",
+      "snippet": "Jul 8, 2026 · Como ves, hay diversas maneras de elegir la dieta que va a llevar tu perro a lo largo de su vida. Por eso, es muy …"
+    },
+    {
+      "title": "Los Mejores Piensos para Perros: Guía Completa - InfoAnimales",
+      "url": "https://infoanimales.net/perros/mejores-piensos-para-perros/",
+      "snippet": "Jul 12, 2024 · En este artículo, analizamos las mejores opciones en el mercado, ingredientes esenciales, beneficios nutricionales y …"
+    },
+    {
+      "title": "Todos los tipos de pienso para perros: ventajas, elección y consejos",
+      "url": "https://www.mundoperros.es/tipos-pienso-ventajas-los-perros/",
+      "snippet": "Descubre todos los tipos de pienso para perros, sus ventajas y cómo elegir el más adecuado según sus necesidades. ¡Cuida su …"
+    },
+    {
+      "title": "Los mejores piensos para perros en 2026: guía completa para una ...",
+      "url": "https://www.barakaldotiendaveterinaria.es/blog/los-mejores-piensos-para-perros-en-2025-guia-completa-para-una-nutricion-de-calidad/",
+      "snippet": "Jul 2, 2026 · Descubre los mejores piensos para perros en 2026 en esta guía completa. Analizamos marcas e ingredientes para dar …"
+    },
+    {
+      "title": "Los Mejores Piensos Naturales para Perros | Tiendanimal",
+      "url": "https://www.tiendanimal.es/articulos/mejores-piensos-naturales-para-perros/",
+      "snippet": "Oct 25, 2023 · Guía completa sobre los mejores piensos naturales para perros. Descubre las marcas líderes y ofrece una …"
+    }
+  ]
+}

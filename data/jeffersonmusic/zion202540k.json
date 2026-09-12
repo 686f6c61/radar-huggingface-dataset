@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "JEFFERSONMUSIC/Zion202540K",
+  "slug": "jeffersonmusic-zion202540k",
+  "author": "JEFFERSONMUSIC",
+  "url": "https://huggingface.co/JEFFERSONMUSIC/Zion202540K",
+  "created_at": "2026-09-12T19:38:34.000Z",
+  "updated_at": "2026-09-12T19:41:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 98575941,
+  "storage_human": "99 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tirage en Coupe 32 cartes en ligne gratuit sur Dame de Tréfle",
+      "url": "https://damedetrefle.com/tirage-en-coupe-32.html",
+      "snippet": "Avec ce jeu, vous aurez la possibilit de voir les grandes lignes de votre destin pour ces prochaines semaines."
+    },
+    {
+      "title": "Tirage de l'oracle en ligne gratuit sur Dame de Tréfle",
+      "url": "https://damedetrefle.com/tirage-de-l-oracle.html",
+      "snippet": "LE TIRAGE DE L'ORACLE Faites ce tirage pour une question personnelle et simple demandant une réponse immédiate et précise ( …"
+    },
+    {
+      "title": "Dame de trèfle — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Dame_de_tr%C3%A8fle",
+      "snippet": "Caractéristiques La dame de trèfle fait partie des jeux de cartes utilisant les enseignes françaises. En France, on la retrouve dans les …"
+    },
+    {
+      "title": "Dame de trèfle dans la cartomancie - tirageCarte.fr",
+      "url": "https://www.tiragecarte.fr/cartomancie/dame-de-trefle.html",
+      "snippet": "La dame de trèfle fait référence à une personne de votre entourage qui pourrait vous nuire. Figure de l'individualisme dans la couleur …"
+    },
+    {
+      "title": "Dame de Trèfle — Tirage jeu de 32 cartes gratuit en ligne",
+      "url": "https://les-arts-divinatoires.com/2026/03/20/dame-de-trefle/",
+      "snippet": "Mar 20, 2026 · Faites votre tirage gratuitement, découvrez la signification complète de la Dame de Trèfle et de toutes les cartes du …"
+    }
+  ]
+}

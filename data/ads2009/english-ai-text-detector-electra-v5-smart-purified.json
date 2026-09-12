@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ads2009/english-ai-text-detector-electra-v5-smart-purified",
+  "slug": "ads2009-english-ai-text-detector-electra-v5-smart-purified",
+  "author": "ads2009",
+  "url": "https://huggingface.co/ads2009/english-ai-text-detector-electra-v5-smart-purified",
+  "created_at": "2026-09-12T19:37:22.000Z",
+  "updated_at": "2026-09-12T19:37:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "electra",
+    "text-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437959224,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Πρώτο Θέμα - ειδήσεις από την Ελλάδα ...",
+      "url": "https://www.protothema.gr/",
+      "snippet": "Βρείτε ειδήσεις για Ελλάδα, Πολιτική, Οικονομία, Κόσμος, Σπορ, Αυτοκίνητο, People, Πολιτισμός ..."
+    },
+    {
+      "title": "Όλες οι Ειδήσεις - Πρώτο Θέμα",
+      "url": "https://www.protothema.gr/oles-oi-eidiseis/",
+      "snippet": "Ειδήσεις τώρα από την Ελλάδα και όλο τον κόσμο. Έκτακτη επικαιρότητα, τελευταία νέα, Πολιτική, Οικονομία, Ελλάδα, Κόσμος, …"
+    },
+    {
+      "title": "Εκπομπές - Vidcasts - Video | Πρώτο ΘΕΜΑ",
+      "url": "https://video.protothema.gr/",
+      "snippet": "2 days ago · Video εκπομπές & vidcasts από το Πρώτο ΘΕΜΑ: Δημοσιογραφικά ρεπορτάζ, αποκλειστικές συνεντεύξεις & ερευνητικό …"
+    },
+    {
+      "title": "ProtoThema English - Νews from Greece and all over the world",
+      "url": "https://en.protothema.gr/",
+      "snippet": "English Edition of Greece’s No.1 news site & best-selling/most influential Sunday newspaper."
+    },
+    {
+      "title": "Κορωνοϊός - COVID-19",
+      "url": "https://longform.protothema.gr/koronoios/",
+      "snippet": "Κορωνοϊός: Δείτε LIVE όλες τις εξελίξεις σε παγκόσμια κλίμακα με στατιστικά στοιχεία για την πανδημία του κορωνοϊού."
+    }
+  ]
+}

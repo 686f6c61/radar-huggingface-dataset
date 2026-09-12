@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "REVANTH001/pricesense-qwen-0.5b",
+  "slug": "revanth001-pricesense-qwen-0-5b",
+  "author": "REVANTH001",
+  "url": "https://huggingface.co/REVANTH001/pricesense-qwen-0.5b",
+  "created_at": "2026-09-12T11:06:18.000Z",
+  "updated_at": "2026-09-12T12:04:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 64188810,
+  "storage_human": "64 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Antarctica - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Antarctica",
+      "snippet": "Situated almost entirely south of the Antarctic Circle and surrounded by the Southern Ocean (also known as the Antarctic Ocean), it …"
+    },
+    {
+      "title": "Antarctica | History, Map, Climate, & Facts | Britannica",
+      "url": "https://www.britannica.com/place/Antarctica",
+      "snippet": "3 days ago · Antarctica, the world’s southernmost continent, is almost wholly covered by an ice sheet and is about 5.5 million square …"
+    },
+    {
+      "title": "Antarctic - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Antarctic",
+      "snippet": "The Antarctic comprises the continent of Antarctica, the Kerguelen Plateau, and other island territories located on the Antarctic Plate …"
+    },
+    {
+      "title": "Antarctica - National Geographic Society",
+      "url": "https://education.nationalgeographic.org/resource/antarctica/",
+      "snippet": "Without any ice, Antarctica would emerge as a giant peninsula and archipelago of mountainous islands, known as Lesser Antarctica, …"
+    },
+    {
+      "title": "Antarctica - Simple English Wikipedia, the free encyclopedia",
+      "url": "https://simple.m.wikipedia.org/wiki/Antarctica",
+      "snippet": "Antarctica is the Earth 's southernmost and the continent with the least people. It is on the South Pole. It is almost entirely south of …"
+    }
+  ]
+}

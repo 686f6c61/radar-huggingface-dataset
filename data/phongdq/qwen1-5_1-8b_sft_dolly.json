@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "phongdq/Qwen1.5_1.8B_SFT_Dolly",
+  "slug": "phongdq-qwen1-5_1-8b_sft_dolly",
+  "author": "phongdq",
+  "url": "https://huggingface.co/phongdq/Qwen1.5_1.8B_SFT_Dolly",
+  "created_at": "2026-09-12T15:01:45.000Z",
+  "updated_at": "2026-09-12T15:01:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3685169392,
+  "storage_human": "3.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zimbra Forums - Index page",
+      "url": "https://forums.zimbra.org/",
+      "snippet": "1 day ago · Zimbra Collaboration Server Topics Posts Last post Administrators Discuss your pilot or production implementation with …"
+    },
+    {
+      "title": "mysql.server is not running. - Zimbra Forums",
+      "url": "https://forums.zimbra.org/viewtopic.php?t=63057",
+      "snippet": "Nov 6, 2017 · stats Running zimbra webapp Stopped mysql.server is not running. zimbraAdmin webapp Stopped mysql.server is not …"
+    },
+    {
+      "title": "Ma boîte mail Zimbra est bloquée [Résolu] - Mail - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-36993621-ma-boite-mail-zimbra-est-bloquee",
+      "snippet": "Dec 13, 2020 · Bonjour, sos ma boîte mail Zimbra est bloqué ; comment diriger les nouveaux messages sur une autre adresse mail …"
+    },
+    {
+      "title": "Comment remettre icône de Zimbra free sur bureau",
+      "url": "https://forums.commentcamarche.net/forum/affich-32050770-comment-remettre-icone-de-zimbra-free-sur-bureau",
+      "snippet": "Meilleure réponse: En fait il ne faut pas la réduire complètement la fenêtre... mais utiliser le bouton de réduction intermédiaire, de …"
+    },
+    {
+      "title": "Alternative to Zimbra? - Zimbra Forums",
+      "url": "https://forums.zimbra.org/viewtopic.php?t=73665",
+      "snippet": "May 3, 2016 · Alternative to Zimbra? 2 posts • Page of BradC Outstanding Member Posts: 440 Joined: Tue May 03, 2016 1:39 am"
+    }
+  ]
+}

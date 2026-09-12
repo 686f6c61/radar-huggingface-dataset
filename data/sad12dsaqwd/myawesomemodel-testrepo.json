@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SAD12DSAQWD/MyAwesomeModel-TestRepo",
+  "slug": "sad12dsaqwd-myawesomemodel-testrepo",
+  "author": "SAD12DSAQWD",
+  "url": "https://huggingface.co/SAD12DSAQWD/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-12T19:04:51.000Z",
+  "updated_at": "2026-09-12T19:05:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Freizeit-, Geniesser- oder Hochzeits-Katalog - PR-Presseverlag",
+      "url": "https://www.pr-presseverlag.de/kataloge.html",
+      "snippet": "Der Freizeitkatalog des Baden-Württemberg Magazins bündelt die Freizeiteinrichtungen des Landes und fasst diese nach …"
+    },
+    {
+      "title": "FREIZEIT 2027 KATALOG Bayern - pr-presseverlag.de",
+      "url": "https://www.pr-presseverlag.de/mediadaten.html?file=files/pr_presseverlag/PDF%20Mediadaten/Freizeitkatalog%20Bayern%202027.pdf&cid=290",
+      "snippet": "Jede der vier Regionen in Bayern hat ihre eigenen na-türlichen Gegebenheiten und touristischen Besonder-heiten. Eines haben alle …"
+    },
+    {
+      "title": "FREIZEIT KATALOG - heimat-erleben.info",
+      "url": "https://heimat-erleben.info/ePaper/FK_BY_2025/epaper/ausgabe.pdf",
+      "snippet": "Bei Buchung unter dem Stichwort „Freizeitkatalog“ erhalten Sie einen Frauenwaldstraße 2 Nachlass von 10% auf die Standgebühr – …"
+    },
+    {
+      "title": "FREIZEIT KATALOG - Heimat erleben",
+      "url": "https://heimat-erleben.info/ePaper/FK_OST_2024/epaper/ausgabe.pdf",
+      "snippet": "o-lungssuchende. Schauen Sie sich also um in unserem prächtigen neuen Freizeitka-talog und begeben sich auf E tdeckungs-reis . …"
+    },
+    {
+      "title": "PINGpax - Freizeitkatalog",
+      "url": "https://pingpax.com/",
+      "snippet": "Über den Freizeitkatalog PINGpax findest Du Tipps und Anregungen für Deine aktive Freizeitgestaltung."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Travor278/pi05-putcab-concurrent-train50-v4-lora-10k",
+  "slug": "travor278-pi05-putcab-concurrent-train50-v4-lora-10k",
+  "author": "Travor278",
+  "url": "https://huggingface.co/Travor278/pi05-putcab-concurrent-train50-v4-lora-10k",
+  "created_at": "2026-09-12T13:22:20.000Z",
+  "updated_at": "2026-09-12T13:24:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi05",
+    "jax",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335815680,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2026 NBA Draft Results: Picks 1-60 - NBA.com",
+      "url": "https://www.nba.com/news/2026-nba-draft-order",
+      "snippet": "Jul 10, 2026 · 2026 NBA Draft Results: Picks 1-60 Recap every pick and trade from the 2026 NBA Draft with Washington selecting AJ …"
+    },
+    {
+      "title": "Shiki42/pi05-putcab-concurrent-train50-lora10k-e113-20260912 · Hugging Face",
+      "url": "https://huggingface.co/Shiki42/pi05-putcab-concurrent-train50-lora10k-e113-20260912",
+      "snippet": "Initialized from the standard PI0.5 Base mirror XinY0201/openpi-pi05-base-jax at revision 5e62884fcf8cb8f9fc693c9163ea18d3e3739658, corresponding to the configured canonical initializer gs://openpi-assets/checkpoints/pi05_base/params. This Run did not resume an earlier task-finetuned checkpoint. Dataset: Shiki42/PutCab-Concurrent-Train50-V4, 50 episodes and 11,038 frames. Batch16, 10,000 optimizer updates, seed87431, 160,000 sampled frames. Uses the recorded LoRA recipe; the vision backbone and action projections are also trainable under that recipe."
+    },
+    {
+      "title": "2026 NBA Draft",
+      "url": "https://www.nba.com/draft/2026",
+      "snippet": "The official site of the 2026 NBA Draft. News, video, prospect profiles, team needs, mock drafts and more."
+    },
+    {
+      "title": "Recap: Picks, reactions and inside looks from the 2026 NBA Draft",
+      "url": "https://www.nba.com/news/live-2026-nba-draft",
+      "snippet": "Jun 23, 2026 · Follow along with the latest updates, picks and reactions from the 2026 NBA Draft with the NBA.com live blog."
+    },
+    {
+      "title": "2024 NBA Draft Results: Picks 1-58 - NBA.com",
+      "url": "https://www.nba.com/news/2024-nba-draft-order",
+      "snippet": "Oct 10, 2024 · 2024 NBA Draft 2024 NBA Draft Results: Picks 1-58 Recap every pick and trade from the 1st and 2nd rounds of the …"
+    }
+  ]
+}

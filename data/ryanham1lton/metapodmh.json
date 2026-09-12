@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/MetapodMH",
+  "slug": "ryanham1lton-metapodmh",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/MetapodMH",
+  "created_at": "2026-09-12T17:27:09.000Z",
+  "updated_at": "2026-09-12T17:28:18.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117220136,
+  "storage_human": "117 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KASKUS - Berbagi Hobi, Berkomunitas",
+      "url": "https://m.kaskus.co.id/",
+      "snippet": "Forum diskusi hobi, rumah ribuan komunitas dan pusat jual beli barang hobi di Indonesia."
+    },
+    {
+      "title": "2026 Motogp Round 1: PT Grand Prix of Thailand",
+      "url": "https://motogpforum.com/t/2026-motogp-round-1-pt-grand-prix-of-thailand.27194/page-5",
+      "snippet": "Feb 22, 2026 · JFM01 MotoGP Supporter Joined Jun 17, 2023 Messages 2,074 City & State/Province Vielau, Saxony Feb 26, 2026 …"
+    },
+    {
+      "title": "MotoGP tire size spec, and psi range?",
+      "url": "https://motogpforum.com/t/motogp-tire-size-spec-and-psi-range.12393/",
+      "snippet": "Oct 11, 2010 · I run 17 Inch 120/70 (F) & 190/55 (.R) I was under the impression MotoGP ran 16.5 inch rims, but the max tire/tyre …"
+    },
+    {
+      "title": "Mengenal Istilah dalam Sirkuit Balap | KASKUS",
+      "url": "https://m.kaskus.co.id/thread/5575d342902cfea5398b456c/mengenal-istilah-dalam-sirkuit-balap",
+      "snippet": "Spoilerfor wil card: RACEMOTOGP – Pembalap tes Ducati, Michele Pirro akan diturunkan sebagai wild card dalam balapan MotoGP …"
+    },
+    {
+      "title": "Rider's Languages | Motorcycle Grand Prix Racing Forum",
+      "url": "https://motogpforum.com/t/riders-languages.7188/",
+      "snippet": "May 20, 2008 · motogp riders speak muiltiple languages and what languages they are! most speak a bit of english ofcourse. was a bit …"
+    }
+  ]
+}

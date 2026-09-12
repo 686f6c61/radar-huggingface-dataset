@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "Aryan1245678/DecodeX_Voice-Engine",
+  "slug": "aryan1245678-decodex_voice-engine",
+  "author": "Aryan1245678",
+  "url": "https://huggingface.co/Aryan1245678/DecodeX_Voice-Engine",
+  "created_at": "2026-09-12T10:46:41.000Z",
+  "updated_at": "2026-09-12T10:46:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "audio-classification",
+    "deepfake-detection",
+    "voice-detection",
+    "wav2vec2",
+    "transfer-learning",
+    "pytorch",
+    "speech-processing",
+    "binary-classification",
+    "en",
+    "dataset:asvspoof-2021",
+    "dataset:wavefake-test",
+    "dataset:audio-deepfake",
+    "dataset:fake-real-audio",
+    "dataset:deepfake-audio",
+    "dataset:combined-real-voices",
+    "dataset:scenefake",
+    "dataset:gender-balanced-audio-deepfake",
+    "dataset:synthetic-speech-commands",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6134849,
+  "parameters_human": "6.1M",
+  "storage_bytes": 24550756,
+  "storage_human": "25 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "place holder query for \"poll\" Crossword Clue - Wordplays.com",
+      "url": "https://www.wordplays.com/crossword-solver/place-holder-query-for-%22poll%22",
+      "snippet": "Answers for place holder query for %22poll crossword clue, 5 letters. Search for crossword clues found in the Daily Celebrity, NY …"
+    },
+    {
+      "title": "place holder query for \"poll\" Crossword Clue - Wordplays.com",
+      "url": "https://www.wordplays.com/crossword-solver/place-holder-query-for-&quot;poll&quot",
+      "snippet": "Answers for place holder query for \"poll\" crossword clue, 5 letters. Search for crossword clues found in the Daily Celebrity, NY Times, …"
+    },
+    {
+      "title": "Placeholder Query Data | TanStack Query React Docs",
+      "url": "https://tanstack.com/query/latest/docs/framework/react/guides/placeholder-query-data",
+      "snippet": "What is placeholder data? Placeholder data allows a query to behave as if it already has data, similar to the initialData option, but the …"
+    },
+    {
+      "title": "Lorem Ipsum Question Generator - Lipsum Hub",
+      "url": "https://blog.lipsumhub.com/lorem-ipsum-question-generator/",
+      "snippet": "Jan 23, 2025 · A lorem ipsum question generator is a tool that generates placeholder questions instead of the traditional “lorem …"
+    },
+    {
+      "title": "Placeholder Query Data | TanStack Query Angular Docs",
+      "url": "https://tanstack.com/query/latest/docs/framework/angular/guides/placeholder-query-data",
+      "snippet": "There are a few ways to supply placeholder data for a query to the cache before you need it: When we use placeholderData, our …"
+    }
+  ]
+}

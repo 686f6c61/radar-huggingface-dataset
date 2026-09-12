@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SACXZ21DSA23/MyAwesomeModel-TestRepo",
+  "slug": "sacxz21dsa23-myawesomemodel-testrepo",
+  "author": "SACXZ21DSA23",
+  "url": "https://huggingface.co/SACXZ21DSA23/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-12T15:01:37.000Z",
+  "updated_at": "2026-09-12T15:01:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Порез на Собаке — Википедия",
+      "url": "https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D1%80%D0%B5%D0%B7_%D0%BD%D0%B0_%D0%A1%D0%BE%D0%B1%D0%B0%D0%BA%D0%B5",
+      "snippet": "«Порез на Собаке»— российский музыкальный и визуальный проект, основанный в 2015 году в Екатеринбургемузыкантом …"
+    },
+    {
+      "title": "4 Позиции Бруно — Википедия",
+      "url": "https://ru.wikipedia.org/wiki/4_%D0%9F%D0%BE%D0%B7%D0%B8%D1%86%D0%B8%D0%B8_%D0%91%D1%80%D1%83%D0%BD%D0%BE",
+      "snippet": "«4 Позиции Бруно» — российская электронная группа из Екатеринбурга, образованная Александром Ситниковым и Антоном …"
+    },
+    {
+      "title": "«Порез на собаке» биография, фото ...",
+      "url": "https://www.afisha.ru/people/porez-na-sobake-686722/",
+      "snippet": "«Порез на собаке» — группа Александра Ситникова из легендарной формации «4 позиции Бруно» и его подельницы Ольги …"
+    },
+    {
+      "title": "Порез на собаке — Циклопедия",
+      "url": "https://cyclowiki.org/wiki/%D0%9F%D0%BE%D1%80%D0%B5%D0%B7_%D0%BD%D0%B0_%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B5",
+      "snippet": "«Порез на собаке» — музыкальный проект Александра Ситникова, известного по группе «4 позиции Бруно» и художницы …"
+    },
+    {
+      "title": "Группа \"Порез на Собаке\", билеты на ...",
+      "url": "https://redkassa.ru/performer/porez_na_sobake",
+      "snippet": "Группа \"Порез на Собаке\" - биография группы, актуальная информация о концертах группы \"Порез на Собаке\", приобретение …"
+    }
+  ]
+}

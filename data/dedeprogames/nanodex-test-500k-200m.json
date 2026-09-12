@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "DedeProGames/NanoDex-Test-500K-200M",
+  "slug": "dedeprogames-nanodex-test-500k-200m",
+  "author": "DedeProGames",
+  "url": "https://huggingface.co/DedeProGames/NanoDex-Test-500K-200M",
+  "created_at": "2026-09-12T14:51:04.000Z",
+  "updated_at": "2026-09-12T14:51:04.000Z",
+  "license": "odc-by",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "nanodex",
+    "tiny-lm",
+    "pretrained-from-scratch",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:odc-by",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 492192,
+  "parameters_human": "492192",
+  "storage_bytes": 1971816,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "2026年 9月 CPU天梯图（更新250/270K Plus&9850X3D）",
+      "url": "https://www.zhihu.com/tardis/zm/art/280070583",
+      "snippet": "CPU天梯图更注重综合性能，只具有参考意义，选择CPU要根据需求选择。 生产力用户更偏重多核性能，可以参考综合性能天梯图 游 …"
+    },
+    {
+      "title": "Avis sur achat Honda NTV Revere 650 - Forum Moto-Station.com",
+      "url": "https://forums.moto-station.com/forum/forums-moto/la-moto/67265-avis-sur-achat-honda-ntv-revere-650",
+      "snippet": "Mar 21, 2009 · Je cherche donc, un avis et un point de vue objectif, sur le Honda NTV Revere 650 ( donc a cardan ). Je connais cette …"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/selection/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，提供知识共享、互动交流和个人成长机会。"
+    }
+  ]
+}

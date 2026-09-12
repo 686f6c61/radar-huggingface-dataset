@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "cattonpm/PlanckGPT-v0.13.0",
+  "slug": "cattonpm-planckgpt-v0-13-0",
+  "author": "cattonpm",
+  "url": "https://huggingface.co/cattonpm/PlanckGPT-v0.13.0",
+  "created_at": "2026-09-12T15:16:47.000Z",
+  "updated_at": "2026-09-12T15:23:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2880279986,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OS 10 MELHORES hotéis perto de Sé Nova Catedral de Coimbra",
+      "url": "https://www.tripadvisor.pt/HotelsNear-g189143-d4127693-Se_Nova_Catedral_de_Coimbra-Coimbra_Coimbra_District_Central_Portugal.html",
+      "snippet": "Mar 15, 2017 · Hotéis perto de Sé Nova Catedral de Coimbra, Coimbra: veja 19.167 dicas 14.377 fotos e ótimas ofertas para 224 …"
+    },
+    {
+      "title": "Hotéis barato perto de Sé Nova Catedral de Coimbra | Skyscanner",
+      "url": "https://www.skyscanner.com.br/hoteis/portugal/coimbra-hotels/perto-se-nova-catedral-de-coimbra/pl-207506857",
+      "snippet": "Planejando uma viagem para visitar Sé Nova Catedral de Coimbra em Coimbra? Compare ofertas de hotéis baratos em centenas de …"
+    },
+    {
+      "title": "Hotéis em Sé Nova a partir de 42 € – reserve um hotel ...",
+      "url": "https://pt.hoteis.com/de12515970/hoteis-em-se-nova-portugal/",
+      "snippet": "Aug 18, 2026 · Pode encontrar hotéis de topo em Sé Nova a partir de 42 € com opções adequadas ao seu orçamento e às suas …"
+    },
+    {
+      "title": "Hotéis em Centro de Coimbra próximos de Sé Nova de Coimbra a …",
+      "url": "https://pt.hoteis.com/de11075953/hoteis-proximos-a-se-nova-de-coimbra-arco-pintado-portugal/",
+      "snippet": "Possibilidade de cancelamento em vários hotéis. Encontre hotéis baratos em Centro de Coimbra próximos de Sé Nova de Coimbra. …"
+    },
+    {
+      "title": "Hotel Sé Nova, Coimbra - Preços baixos em hotéis com a Agoda",
+      "url": "https://www.agoda.com/pt-pt/se-nova/maps/coimbra-pt.html?msockid=1b263c761da6668120942ba41cfc674e",
+      "snippet": "Os melhores preços e descontos em hotéis em Sé Nova, Coimbra (Portugal). Reserve o seu hotel, hostel, casa ou apartamento …"
+    }
+  ]
+}

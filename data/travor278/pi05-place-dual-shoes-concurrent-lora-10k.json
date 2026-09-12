@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Travor278/pi05-place-dual-shoes-concurrent-lora-10k",
+  "slug": "travor278-pi05-place-dual-shoes-concurrent-lora-10k",
+  "author": "Travor278",
+  "url": "https://huggingface.co/Travor278/pi05-place-dual-shoes-concurrent-lora-10k",
+  "created_at": "2026-09-12T11:18:34.000Z",
+  "updated_at": "2026-09-12T11:20:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi05",
+    "jax",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335811584,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Welche Dichtungsgröße ist die Richtige? – Kaminladen",
+      "url": "https://www.kaminladen.de/blogs/tipps-informationen-inspiration-fur-kamine-und-ofen/welche-dichtungsgroesse-ist-die-richtige",
+      "snippet": "Oct 14, 2024 · Hier einige Tipps, die bei der Auswahl der richtigen Größe der Ofendichtung helfen, damit Sie Ihren Kamin oder Ofen …"
+    },
+    {
+      "title": "Dichtschnur und Ofenschnur günstig kaufen. Die Auswahl ist riesig.",
+      "url": "https://ofendichtung.de/",
+      "snippet": "Ihr Spezialist Nr. 1 für Ofendichtungen und Dichtschnüre Willkommen in Ihrem zuverlässigen Online-Shop für hochwertige …"
+    },
+    {
+      "title": "Ofendichtung Shop - Ofendichtung günstig online kaufen | Ofen.de",
+      "url": "https://www.ofen.de/ofendichtung",
+      "snippet": "Ofendichtung in großer Auswahl beim Fachhandel günstig kaufen! Fachberatung Ofendichtung versandkostenfrei ab 75 Euro Auf …"
+    },
+    {
+      "title": "Wie messe den Durchmesser bzw. wie dick eine Ofendichtung sein muss?",
+      "url": "https://ofendichtung-kamindichtung.de/wie-messe-den-durchmesser-bzw-wie-dick-eine-ofendichtung-sein-muss/",
+      "snippet": "Oct 26, 2016 · Nachdem Sie die alte, defekte Ofendichtung am Kamin entfernt haben (!ACHTUNG bei alten Ofendichtungen …"
+    },
+    {
+      "title": "Ofendichtungen – Coatis GmbH – thermische Isolierungen ...",
+      "url": "https://coatis.de/ofendichtung/",
+      "snippet": "Wir bieten eine Vielzahl unterschiedlicher Dichtungen für Holzöfen, Kaminöfen und Laboröfen an. Diese Dichtungen bestehen aus …"
+    }
+  ]
+}

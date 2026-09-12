@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "violetxi/hparam-92m-block-mtp-truncated-peak_lr-3e-5-wu-0p01-s42",
+  "slug": "violetxi-hparam-92m-block-mtp-truncated-peak_lr-3e-5-wu-0p01-s42",
+  "author": "violetxi",
+  "url": "https://huggingface.co/violetxi/hparam-92m-block-mtp-truncated-peak_lr-3e-5-wu-0p01-s42",
+  "created_at": "2026-09-05T00:52:00.000Z",
+  "updated_at": "2026-09-12T17:58:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "looped_block_mtp",
+    "text-generation",
+    "chess",
+    "block-mtp",
+    "truncated-bptt",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 196,
+  "trending_score": 0,
+  "parameters": 92138496,
+  "parameters_human": "92.1M",
+  "storage_bytes": 50127934972,
+  "storage_human": "50.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=3fc2140e5cb76daa2bb303dc5d086cd6",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "violetxi (Violet Xiang) - Hugging Face",
+      "url": "https://huggingface.co/violetxi",
+      "snippet": "models 134. Sort: Recently updated · violetxi/hparam-92m-block-mtp-truncated-peak_lr-1e-4-wu-0p05-s42 · violetxi/hparam-92m-sequential-mtp-full-peak_lr-3e-5-wu- ..."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=3fc2140e5cb76daa2bb303dc5d086cd6",
+      "snippet": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and …"
+    }
+  ]
+}

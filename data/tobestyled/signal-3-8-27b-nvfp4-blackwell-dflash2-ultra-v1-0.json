@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "ToBeStyled/Signal-3.8-27B-NVFP4-Blackwell-DFlash2-Ultra-V1.0",
+  "slug": "tobestyled-signal-3-8-27b-nvfp4-blackwell-dflash2-ultra-v1-0",
+  "author": "ToBeStyled",
+  "url": "https://huggingface.co/ToBeStyled/Signal-3.8-27B-NVFP4-Blackwell-DFlash2-Ultra-V1.0",
+  "created_at": "2026-09-12T15:05:08.000Z",
+  "updated_at": "2026-09-12T15:06:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3_5",
+    "image-text-to-text",
+    "llama.cpp",
+    "qwen3",
+    "qwen3.8",
+    "qwen",
+    "llm",
+    "text-generation",
+    "conversational",
+    "multimodal",
+    "vision",
+    "speculative-decoding",
+    "dflash",
+    "dflash2",
+    "blackwell",
+    "nvfp4",
+    "rtx-5090",
+    "5090",
+    "reasoning",
+    "coding",
+    "agent",
+    "benchmark",
+    "gsm8k",
+    "multilingual",
+    "base_model:agentionai/Signal-3.8-27B",
+    "base_model:quantized:agentionai/Signal-3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 18945960256,
+  "storage_human": "18.9 GB",
+  "base_model": "agentionai/Signal-3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/tr",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/tr/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/@____-_-_-",
+      "snippet": "Share your videos with friends, family, and the world"
+    },
+    {
+      "title": "atv Canlı Yayın İzle 7/24 HD Kesintisiz (Yeni ... - YouTube",
+      "url": "https://www.youtube.com/c/ATVTurkiye/live",
+      "snippet": "Sep 5, 2026 · atv canlı yayınını kesintisiz ve Full HD kalitesinde 7/24 YouTube üzerinden izleyin! Türkiye'nin en çok izlenen kanalı …"
+    }
+  ]
+}

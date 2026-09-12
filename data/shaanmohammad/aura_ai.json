@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "shaanmohammad/Aura_AI",
+  "slug": "shaanmohammad-aura_ai",
+  "author": "shaanmohammad",
+  "url": "https://huggingface.co/shaanmohammad/Aura_AI",
+  "created_at": "2026-09-12T16:26:25.000Z",
+  "updated_at": "2026-09-12T16:26:25.000Z",
+  "license": "afl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:afl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Standardised Milk - 4.5% Fat, 8.5 SNF - TradeIndia",
+      "url": "https://www.tradeindia.com/products/standardised-milk-4008910.html",
+      "snippet": "Registered in 2017, HERITAGE FOODS LTD has made a name for itself in the list of top suppliers of Dairy Products in India. The …"
+    },
+    {
+      "title": "Toned Milk at best price in Anantapur by Heritage Foods Limited | ID ...",
+      "url": "https://www.indiamart.com/proddetail/toned-milk-17614813833.html",
+      "snippet": "Pasteurized, Homogenized and packed hygienically and rendered it more safe for consumption. Contains 3% Milk Fat and 8.5% Milk …"
+    },
+    {
+      "title": "Chittoor Dairy Farmers Cheated By Heritage Foods",
+      "url": "https://www.sakshipost.com/news/andhrapradesh/chittoor-dairy-farmers-cheated-heritage-foods-name-snf-150736",
+      "snippet": "Feb 5, 2022 · The price is determined by measuring the butter and fat percentages with a lactometer during milk collection. As per …"
+    },
+    {
+      "title": "Full Cream Milk Delivery in Hyderabad | Heritage Foods",
+      "url": "https://www.heritagefoods.in/products/milk/full-cream-milk",
+      "snippet": "Full Cream Milk is rich in fat, so it is suitable for those with a low BMI. What’s more, it is at its purest and best because it is processed …"
+    },
+    {
+      "title": "Heritage Foods Ltd. - HDFC securities",
+      "url": "https://www.hdfcsec.com/hsl.research.pdf/Stock%20Note%20on%20Hertage%20Foods%20Limited.pdf",
+      "snippet": "HFL has the lowest margins among the peers as Hatsun is more urban centric and has a large proportion of ice cream sales; Dodla …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "shockz1/parakeet-tdt_ctc-110m-fp16-onnx",
+  "slug": "shockz1-parakeet-tdt_ctc-110m-fp16-onnx",
+  "author": "shockz1",
+  "url": "https://huggingface.co/shockz1/parakeet-tdt_ctc-110m-fp16-onnx",
+  "created_at": "2026-09-12T19:18:23.000Z",
+  "updated_at": "2026-09-12T19:23:07.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "nemo-conformer-tdt",
+    "automatic-speech-recognition",
+    "parakeet",
+    "onnxruntime-web",
+    "webgpu",
+    "en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 239242915,
+  "storage_human": "239 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/",
+      "snippet": "Google Traduction offre un service gratuit pour traduire instantanément des mots, expressions et pages Web entre le français et plus …"
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/details",
+      "snippet": "Traduisez des textes instantanément avec Google Translate."
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/m",
+      "snippet": "Accueil Google Envoyer des commentaires Confidentialité et conditions d'utilisation Accéder au site complet"
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/_/TranslateWebserverUi/bscframe",
+      "snippet": "Google Traduction permet de traduire des textes, images, documents et sites Web entre le français et plus de 100 langues."
+    }
+  ]
+}

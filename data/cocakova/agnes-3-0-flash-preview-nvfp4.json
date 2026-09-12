@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "CocaKova/Agnes-3.0-Flash-Preview-NVFP4",
+  "slug": "cocakova-agnes-3-0-flash-preview-nvfp4",
+  "author": "CocaKova",
+  "url": "https://huggingface.co/CocaKova/Agnes-3.0-Flash-Preview-NVFP4",
+  "created_at": "2026-09-12T15:39:27.000Z",
+  "updated_at": "2026-09-12T16:37:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "agnes",
+    "nvfp4",
+    "compressed-tensors",
+    "vllm",
+    "blackwell",
+    "dgx-spark",
+    "multimodal",
+    "reasoning",
+    "conversational",
+    "base_model:Agnes-AI/Agnes-3.0-Flash",
+    "base_model:quantized:Agnes-AI/Agnes-3.0-Flash",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32665802288,
+  "parameters_human": "32.67B",
+  "storage_bytes": 23629058287,
+  "storage_human": "23.6 GB",
+  "base_model": "Agnes-AI/Agnes-3.0-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IviRoses EMBARRASSING Adventure (Fan Edit) - YouTube",
+      "url": "https://www.youtube.com/watch?v=wIUobEY00dE",
+      "snippet": "Jan 10, 2024 · Ivi gets caught out, when her clothes are stolen in a Park. She believes that she will be okay, if she can negotiate her …"
+    },
+    {
+      "title": "IviRoses - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PL1Fag2Hbu0LRX24FUSI2UJuF9a-H5z-73",
+      "snippet": "IviRoses - White Dress - walking along the Esplanade (Fan Edit) Tony B 180K views • 3 years ago 6:03"
+    },
+    {
+      "title": "Iviroses - Embarrassed w/o Clothes in Public Street - Reddit",
+      "url": "https://www.reddit.com/r/publicwalking/comments/15tic98/iviroses_embarrassed_wo_clothes_in_public_street/",
+      "snippet": "Aug 17, 2023 · 15 subscribers in the publicwalking community. Girls walking naked in public places."
+    },
+    {
+      "title": "Ivi Rose (@ivirose1) • Instagram photos and videos",
+      "url": "https://www.instagram.com/ivirose1/",
+      "snippet": "See photos and videos from friends on Instagram, and discover other accounts you'll love."
+    },
+    {
+      "title": "IviRoses, A Classic Walk, Fan Cut - YouTube",
+      "url": "https://www.youtube.com/watch?v=5pcF0uCtIBo",
+      "snippet": "Jan 1, 2022 · This is a classic street walk by IviRoses, cut down to suit YT. The full original uncut version is available from her …"
+    }
+  ]
+}

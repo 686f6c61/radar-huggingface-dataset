@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "yhile-com/yhile-spam-lr-v1",
+  "slug": "yhile-com-yhile-spam-lr-v1",
+  "author": "yhile-com",
+  "url": "https://huggingface.co/yhile-com/yhile-spam-lr-v1",
+  "created_at": "2026-09-12T19:36:30.000Z",
+  "updated_at": "2026-09-12T19:36:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RUSSONG, Тихон - Неси меня ветер туда где нет боли",
+      "url": "https://muzqo.com/876-russong-tihon-nesi-menya-veter-tuda-gde-net-boli.html",
+      "snippet": "Aug 24, 2026 · Скачайте новую песню RUSSONG, Тихон - Неси меня ветер туда где нет боли бесплатно на сайте Muzqo.com …"
+    },
+    {
+      "title": "Machine Learning Based Spam Detection in Digital Communication Systems: A Comparative Analysis",
+      "url": "https://www.mdpi.com/2079-8954/14/3/229",
+      "snippet": "Logistic Regression (LR): is a linear model that predicts the probability of a binary outcome (e.g., spam or ham) using the logistic function [55,56]. Despite its simplicity, LR performs effectively with high-dimensional sparse text data and ..."
+    },
+    {
+      "title": "Песня, которая берет за душу | Тихон - Неси Меня, Ветер...",
+      "url": "https://www.youtube.com/watch?v=nw5BGwYdvg4",
+      "snippet": "ТИХОН - Неси Меня, Ветер | Туда, Где Нет Боли Новая очень глубокая и трогательная песня о человеке, который устал …"
+    },
+    {
+      "title": "Тихон - Неси Меня, Ветер » Музыкальные новинки 2026 — …",
+      "url": "https://muzexo.net/343354-tihon-nesi-menya-veter.html",
+      "snippet": "Jul 23, 2026 · На muzexo.net вы можете скачать трек Неси Меня, Ветер - Тихон в формате mp3 бесплатно, а также слушать …"
+    },
+    {
+      "title": "Тихон - Неси Меня, Ветер » Скачать новинки музыки 2025 — MP3 …",
+      "url": "https://muzlu.net/54956-tihon-nesi-menya-veter.html",
+      "snippet": "Jul 23, 2026 · Город уснул, и фонари не горят. Я отпускаю всё, чему был не рад. Открываю в груди темноту. «Тихон – Неси …"
+    }
+  ]
+}

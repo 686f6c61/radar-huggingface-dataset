@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "noeme/Lura-1.2-500m",
+  "slug": "noeme-lura-1-2-500m",
+  "author": "noeme",
+  "url": "https://huggingface.co/noeme/Lura-1.2-500m",
+  "created_at": "2026-09-12T10:46:29.000Z",
+  "updated_at": "2026-09-12T11:06:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rlhf",
+    "reasoning",
+    "math",
+    "gsm8k",
+    "svamp",
+    "text-generation",
+    "alignment",
+    "conversational",
+    "en",
+    "base_model:SEN-AGI/Lura-1.1-500m",
+    "base_model:finetune:SEN-AGI/Lura-1.1-500m",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999709933,
+  "storage_human": "1000 MB",
+  "base_model": "SEN-AGI/Lura-1.1-500m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ganztags- und Kita-Portal - Stadt Augsburg",
+      "url": "https://www.augsburg.de/umwelt-soziales/kindertagesbetreuung-in-augsburg/kita-portal",
+      "snippet": "Manche Einrichtungen bieten beispielsweise ein Tag der offenen Tür oder ein individueller Termin an. Im Ganztags- und Kita-Portal …"
+    },
+    {
+      "title": "Startseite - Ganztags- und Kita-Portal Augsburg",
+      "url": "https://www.kitaplaner.de/augsburg/elternportal/de/",
+      "snippet": "Im Ganztags- und Kita-Portal Augsburg stellt jede Einrichtung ihre Informationen zur Anmeldung bereit. Über das Einrichtungsprofil …"
+    },
+    {
+      "title": "Benutzerkonto - Anmeldung - Ganztags- und Kita-Portal Augsburg",
+      "url": "https://www.kitaplaner.de/augsburg/elternportal/de/benutzerkonto/anmeldung",
+      "snippet": "Noch kein Benutzerkonto? Registrieren Sie sich jetzt. © 2026, EP NEO. Alle Rechte vorbehalten."
+    },
+    {
+      "title": "Ganztags- und Kita-Portal Augsburg",
+      "url": "https://www.augsburg.de/umwelt-soziales/kindertagesbetreuung-in-augsburg/unser-amt-fuer-kindertagesbetreuung/kita-portal-augsburg",
+      "snippet": "Auf dem Ganztags- und Kita-Portal Augsburg finden sich allen Informationen zu den Betreuungsplätzen in der frühkindlichen Bildung, …"
+    },
+    {
+      "title": "Krippen- und Kindergartenplatz in Augsburg sichern.",
+      "url": "https://www.kita-augsburg.de/kita/anmeldung/",
+      "snippet": "Wenn Sie Ihr Kind für einen Betreuungsplatz in der Kinderkrippe, im Kindergarten oder Hort anmelden möchten, finden Sie alle …"
+    }
+  ]
+}

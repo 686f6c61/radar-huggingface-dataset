@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "olusegunola/qwen2.5-1.5b-primekg-sft-seed42",
+  "slug": "olusegunola-qwen2-5-1-5b-primekg-sft-seed42",
+  "author": "olusegunola",
+  "url": "https://huggingface.co/olusegunola/qwen2.5-1.5b-primekg-sft-seed42",
+  "created_at": "2026-09-12T12:36:05.000Z",
+  "updated_at": "2026-09-12T12:36:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46317146,
+  "storage_human": "46 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QR Code Generator | Create Your Free QR Codes",
+      "url": "https://www.qr-code-generator.com/",
+      "snippet": "QR Code Generator for URL, vCard, and more. Add logo, colors, frames, and download in high print quality. Get your free QR Codes …"
+    },
+    {
+      "title": "QR Code Generator | Create Your Free QR Codes",
+      "url": "https://vi.qr-code-generator.com/",
+      "snippet": "Mã QR Động Với Mã QR Động, bạn có sự linh hoạt hoàn toàn, bởi vì chỉ có một URL ngắn trỏ đến nội dung được mã hóa. Vì vậy, …"
+    },
+    {
+      "title": "QR Code Generator - Crea códigos QR gratis con nuestro generador",
+      "url": "https://es.qr-code-generator.com/",
+      "snippet": "Con QR Code Generator puedes crear códigos QR personalizados con logotipos, marcos y tus colores favoritos. Crea tu código QR …"
+    },
+    {
+      "title": "QR Code Generator | Créez vos propres codes QR gratuitement",
+      "url": "https://fr.qr-code-generator.com/",
+      "snippet": "QR Code Generator, pour vos URL, vCard et bien plus. Ajoutez un logo, des couleurs, un cadre et téléchargez vos codes QR en …"
+    },
+    {
+      "title": "QR Code Generator - Login - QRCG by Bitly",
+      "url": "https://login.qr-code-generator.com/",
+      "snippet": "Sign in with a Google Account English"
+    }
+  ]
+}

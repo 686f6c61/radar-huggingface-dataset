@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "oxyllina/tabinezumi",
+  "slug": "oxyllina-tabinezumi",
+  "author": "oxyllina",
+  "url": "https://huggingface.co/oxyllina/tabinezumi",
+  "created_at": "2026-06-24T03:18:43.000Z",
+  "updated_at": "2026-09-12T17:00:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 245299912,
+  "storage_human": "245 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Où trouver de la mouna - Journal des Femmes Santé",
+      "url": "https://sante-medecine.journaldesfemmes.fr/forum/affich-60058893-ou-trouver-de-la-mouna",
+      "snippet": "Sep 18, 2009 · Etant méditerranéenne de naissance, je me demande qui pourrait me dire où je pourrais acheter de la Mouna.....c' est …"
+    },
+    {
+      "title": "Été 2026 en France : canicule et orages à prévoir avant de réserver",
+      "url": "https://sante-medecine.journaldesfemmes.fr/forum/affich-100087684-avant-de-reserver-les-vacances-d-ete-mieux-vaut-connaitre-cette-prevision-meteo-elle-pourrait-gacher-l-ete-des-francais",
+      "snippet": "Apr 12, 2026 · L'été 2026 en France sera probalement une saison de températures supérieures à la normale, avec un contraste …"
+    },
+    {
+      "title": "Comment se suicider rapidement et sans douleur ? [Résolu]",
+      "url": "https://sante-medecine.journaldesfemmes.fr/forum/affich-1385326-comment-se-suicider-rapidement-et-sans-douleur",
+      "snippet": "Bonjour, Ne me jugé pas mais je veut savoir comment me suicidé très facilement et rapidement sans douleur merci."
+    },
+    {
+      "title": "Médicaments coupe-faim interdits en France sans ordonnance",
+      "url": "https://sante-medecine.journaldesfemmes.fr/forum/affich-100077470-medicament-coupe-faim-en-france-interdit-sans-ordonnance",
+      "snippet": "Jan 16, 2026 · En France, les autorisations de ces médicaments ont été suspendues depuis 1999, et ils ne peuvent plus être …"
+    },
+    {
+      "title": "Coût de l'opération des ligaments croisés",
+      "url": "https://sante-medecine.journaldesfemmes.fr/forum/affich-697614-cout-de-l-operation-des-ligaments-croises",
+      "snippet": "Bonjour, Au cours d'une séance de foot ball, j'ai eu une rupture des ligaments antèrieurs. J'ai 29 ans et me médecin m'a dit qu'à …"
+    }
+  ]
+}

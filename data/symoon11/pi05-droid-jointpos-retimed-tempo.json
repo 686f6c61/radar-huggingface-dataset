@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "symoon11/pi05-droid-jointpos-retimed-tempo",
+  "slug": "symoon11-pi05-droid-jointpos-retimed-tempo",
+  "author": "symoon11",
+  "url": "https://huggingface.co/symoon11/pi05-droid-jointpos-retimed-tempo",
+  "created_at": "2026-09-12T14:50:28.000Z",
+  "updated_at": "2026-09-12T14:50:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "robotics",
+    "vision-language-action",
+    "openpi",
+    "pi05",
+    "droid",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vũng Tàu, Ho Chi Minh City - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/V%C5%A9ng_T%C3%A0u,_Ho_Chi_Minh_City",
+      "snippet": "Vũng Tàu (Vietnamese: Phường Vũng Tàu) is a ward of Ho Chi Minh City, Vietnam. It is one of the 168 new wards, communes and …"
+    },
+    {
+      "title": "Vung Tau - Cap Saint Jacques Vietnam: Guide complet pour un …",
+      "url": "https://vietnamdecouverte.com/vung-tau-cap-saint-jacques-vietnam",
+      "snippet": "Jul 3, 2026 · Escale incontournable des vacanciers désirant partir le week-end depuis Ho Chi Minh Ville, Vung Tau (anciennement …"
+    },
+    {
+      "title": "THE 15 BEST Things to Do in Vung Tau (2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Attractions-g303946-Activities-Vung_Tau_Ba_Ria_Vung_Tau_Province.html",
+      "snippet": "Things to Do in Vung Tau, Vietnam: See Tripadvisor's 24,150 traveler reviews and photos of Vung Tau tourist attractions. Find what …"
+    },
+    {
+      "title": "The essential Vung Tau guide | Vietnam Tourism",
+      "url": "https://vietnam.travel/things-to-do/essential-vung-tau-guide",
+      "snippet": "The pretty seaside town of Vung Tau is the Vietnamese equivalent of fish n’ chips and a few days by the sea. In short, it's where …"
+    },
+    {
+      "title": "Vung Tau, Vietnam: What You Need to Know Before You Go",
+      "url": "https://www.vietnamonline.com/destination/vung-tau.html",
+      "snippet": "Vung Tau remains Ho Chi Minh City's closest beach resort, accessible via a scenic hydrofoil ride along the Sài Gòn River or by taking …"
+    }
+  ]
+}

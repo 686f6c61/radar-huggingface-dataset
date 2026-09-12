@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "YoSaNoo/Forge-1-Little-Gemma-4-E2B",
+  "slug": "yosanoo-forge-1-little-gemma-4-e2b",
+  "author": "YoSaNoo",
+  "url": "https://huggingface.co/YoSaNoo/Forge-1-Little-Gemma-4-E2B",
+  "created_at": "2026-09-12T15:35:49.000Z",
+  "updated_at": "2026-09-12T16:52:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "dataset:saidutta69/fable-5-premium",
+    "dataset:SWE-bench/SWE-smith",
+    "dataset:ise-uiuc/Magicoder-Evol-Instruct-110K",
+    "base_model:google/gemma-4-E2B",
+    "base_model:quantized:google/gemma-4-E2B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4628569635,
+  "parameters_human": "4.63B",
+  "storage_bytes": 20617716992,
+  "storage_human": "20.6 GB",
+  "base_model": "google/gemma-4-E2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "【公式】保険見直し本舗｜保険相談・保険比較の窓口",
+      "url": "https://www.hokepon.com/",
+      "snippet": "Sep 3, 2025 · 保険見直し・保険相談・保険比較を40以上の保険会社から。近くの保険窓口・保険店舗で、あなた専用の生命保険、 …"
+    },
+    {
+      "title": "かんたん保険店舗検索 - 保険の見直し・無料相談なら保険 ...",
+      "url": "https://www.hokepon.com/consult_booth/",
+      "snippet": "当日予約OK。生命保険、医療保険、がん保険など、様々な保険相談ができる全国の保険店舗・保険窓口を検索。40社以上から保険 …"
+    },
+    {
+      "title": "保険見直し本舗 オンラインストア - 保険 比較・見積もり・相談 ...",
+      "url": "https://hikaku.online.hokepon.com/",
+      "snippet": "保険を探すなら、保険比較サイト「保険見直し本舗ONLINE」。保険の比較・一括見積もり・人気保険ランキング・保険の選び方な …"
+    },
+    {
+      "title": "保険見直し本舗グループ RECRUIT SITE",
+      "url": "https://job.hokepon.com/",
+      "snippet": "保険見直し本舗グループ RECRUIT SITEでは、 本社およびグループ企業で働くスタッフを募集しています。"
+    },
+    {
+      "title": "医療保険を比較(人気ランキング順/保険料安い順) ｜ 保険見直し ...",
+      "url": "https://hikaku.online.hokepon.com/medical/simulation/",
+      "snippet": "・表示している保障内容・保険料は2026年7月現在のものとなります。 ・WEBサイトへの商品掲載による販売について：当社は、 …"
+    }
+  ]
+}

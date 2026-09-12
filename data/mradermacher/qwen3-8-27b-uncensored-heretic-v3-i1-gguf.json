@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.8-27B-Uncensored-Heretic-v3-i1-GGUF",
+  "slug": "mradermacher-qwen3-8-27b-uncensored-heretic-v3-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-Heretic-v3-i1-GGUF",
+  "created_at": "2026-09-12T12:45:05.000Z",
+  "updated_at": "2026-09-12T13:16:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 112014843008,
+  "storage_human": "112.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Strona domyślna",
+      "url": "http://opinie.info.pl/",
+      "snippet": "Jul 9, 2026 · Strona domyślna This is the default page. To change it, upload files to public_html"
+    },
+    {
+      "title": "Forocoches - Foro de Coches y Motor",
+      "url": "https://www.forocoches.com/longest/",
+      "snippet": "El mayor foro en español del mundo. Comenta lo que está pasando, debate sin filtros, humor y noticias. Esto es Forocoches."
+    },
+    {
+      "title": "Foro Coches .com",
+      "url": "https://m.forocoches.com/foro/login.php",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    }
+  ]
+}

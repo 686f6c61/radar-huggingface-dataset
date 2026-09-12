@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "niteshgupta/ppo-LunarLander-v3",
+  "slug": "niteshgupta-ppo-lunarlander-v3",
+  "author": "niteshgupta",
+  "url": "https://huggingface.co/niteshgupta/ppo-LunarLander-v3",
+  "created_at": "2026-09-12T11:03:57.000Z",
+  "updated_at": "2026-09-12T11:04:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 284313,
+  "storage_human": "284313 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ReadingWise - Reading and literacy online intervention modules for ...",
+      "url": "https://readingwise.com/",
+      "snippet": "ReadingWise is an evidence-based literacy intervention that rapidly improves reading. It covers phonics, decoding, comprehension …"
+    },
+    {
+      "title": "Login - ReadingWise",
+      "url": "https://app.readingwise.com/",
+      "snippet": "Login to ReadingWise Literacy Interventions and Solutions"
+    },
+    {
+      "title": "Login - ReadingWise",
+      "url": "https://app.readingwise.com/progress",
+      "snippet": "Login to ReadingWise Literacy Interventions and Solutions × You need to sign in before continuing."
+    },
+    {
+      "title": "ReadingWise - ReadingWise Literacy Intervention Modules for …",
+      "url": "https://readingwise.com/who-is-readingwise-for/",
+      "snippet": "\"ReadingWise is our trust-wide reading intervention strategy for all 23 of our secondary schools. It has provided an accessible and …"
+    },
+    {
+      "title": "ReadingWise International",
+      "url": "https://readingwiseint.org/",
+      "snippet": "Over 600,000 people have now had their lives changed by ReadingWise life skills courses. We have enabled hundreds of thousands …"
+    }
+  ]
+}

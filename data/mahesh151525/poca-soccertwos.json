@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Mahesh151525/poca-SoccerTwos",
+  "slug": "mahesh151525-poca-soccertwos",
+  "author": "Mahesh151525",
+  "url": "https://huggingface.co/Mahesh151525/poca-SoccerTwos",
+  "created_at": "2026-09-12T16:13:30.000Z",
+  "updated_at": "2026-09-12T16:14:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "SoccerTwos",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SoccerTwos",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30224206,
+  "storage_human": "30 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Escuela Profesional de Ciencias de la Comunicación – UNSAAC",
+      "url": "https://cc.unsaac.edu.pe/",
+      "snippet": "La Escuela Profesional de Ciencias de la Comunicación de la Universidad Nacional San Antonio Abad del Cusco forma …"
+    },
+    {
+      "title": "UNIVERSIDAD NACIONAL DE SAN ANTONIO ABAD DEL CUSCO …",
+      "url": "https://cc.unsaac.edu.pe/wp-content/uploads/2025/03/CU-085-2025-UNSAAC-ACTUALIZACION-DE-PLAN-CURRICULAR-2024-DE-PREGRADO-DE-LA-ESCUELA-PROFESIONAL-DE-CIENCIAS-DE-LA-COMUNICACION.pdf",
+      "snippet": "El licenciado en Ciencias de la Comunicación, es un profesional de calidad, capaz de emprender planes estratégicos de …"
+    },
+    {
+      "title": "REGLAMENTOS, DIRECTIVAS – VRAC Y RESOLUCIONES - UNSAAC",
+      "url": "https://www.unsaac.edu.pe/reglamentos-directivas-vrac-y-resoluciones/",
+      "snippet": "Plan de Lineamientos de Adaptación Virtual para El Proceso de Inscripción de Proyectos de Investigación y Sustentación de Tesis …"
+    },
+    {
+      "title": ".::Centro de Computo Unsaac::.",
+      "url": "http://ccomputo.unsaac.edu.pe/index.php?op=planes&escprof=CC&curric=2&escprofnom=CIENCIAS%20DE%20LA%20COMUNICACI%D3N",
+      "snippet": ""
+    },
+    {
+      "title": "FACULTAD DE COMUNICACIÓN SOCIAL E IDIOMAS - UNSAAC",
+      "url": "https://www.unsaac.edu.pe/facultad-de-comunicacion-social-e-idiomas/",
+      "snippet": "Formar profesionales con un alto nivel de preparación tecnológica y científica para responder a las demandas del mercado laboral en …"
+    }
+  ]
+}

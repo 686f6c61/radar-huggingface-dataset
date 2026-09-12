@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "JunXueTech/LaST-Net",
+  "slug": "junxuetech-last-net",
+  "author": "JunXueTech",
+  "url": "https://huggingface.co/JunXueTech/LaST-Net",
+  "created_at": "2026-09-12T11:38:34.000Z",
+  "updated_at": "2026-09-12T12:12:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "fairseq",
+  "languages": [],
+  "tags": [
+    "fairseq",
+    "audio",
+    "speech-deepfake-detection",
+    "pytorch",
+    "base_model:facebook/wav2vec2-xls-r-300m",
+    "base_model:finetune:facebook/wav2vec2-xls-r-300m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3811985991,
+  "storage_human": "3.8 GB",
+  "base_model": "facebook/wav2vec2-xls-r-300m",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "Latest research View all An OpenAI model proposes a solution to the Navier–Stokes problem Research Sep 8, 2026 Research …"
+    },
+    {
+      "title": "Introducing ChatGPT - OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · Iterative deployment Today’s research release of ChatGPT is the latest step in OpenAI’s iterative deployment ⁠ of …"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "OpenAI - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/OpenAI",
+      "snippet": ""
+    },
+    {
+      "title": "OpenAI Platform",
+      "url": "https://platform.openai.com/",
+      "snippet": "Build on the OpenAI API Platform Sign up or login with an OpenAI account to build with the OpenAI API."
+    }
+  ]
+}

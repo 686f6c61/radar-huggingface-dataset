@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Stuti22/engine-condition-model",
+  "slug": "stuti22-engine-condition-model",
+  "author": "Stuti22",
+  "url": "https://huggingface.co/Stuti22/engine-condition-model",
+  "created_at": "2026-09-12T12:13:46.000Z",
+  "updated_at": "2026-09-12T12:16:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 286204,
+  "storage_human": "286204 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ferramenta Livenza: ferramenta e accessori per mobili",
+      "url": "https://ferramentalivenza.it/",
+      "snippet": "Dal 1978 progettiamo, produciamo e vendiamo ferramenta e accessori per l’industria del mobile. Il marchio Ferramenta Livenza e i …"
+    },
+    {
+      "title": "SCHEDA TECNICA SISTEMA DI APERTURA COMPACT RIALZA - Ferramenta Livenza",
+      "url": "https://ferramentalivenza.it/wp-content/uploads/2022/01/SISTEMA-DI-APERTURA-COMPACT-RIALZA-SCHEDA-TECNICA-V01-FERRAMENTA-LIVENZA.pdf",
+      "snippet": "Disponibile in due versioni: soft-stop e frizionata. Nella versione soft-stop, l’anta viene spinta in modo graduale e continuo fino alla …"
+    },
+    {
+      "title": "Molla a gas Suspa/Elys per anta legno | FERRAMENTA LIVENZA SRL",
+      "url": "https://www.nobilistore.it/molla-gas-suspaelys-per-anta-legno-p-26092.html",
+      "snippet": "Per evitare che l’anta oscilli la velocità di apertura é controllata da uno speciale smorzatore „Soft-Stop“ , che rende l’apertura molto …"
+    },
+    {
+      "title": "Asta a gas Livenza Kraby Soft Stop, Lunghezza 244 mm",
+      "url": "https://www.tuttoferramenta.it/prodotto/asta-kraby-frizionato-mm-164-kg-45-verniciato-grigio/HT019370",
+      "snippet": "Pistone a gas per pensili Kraby soft stop Livenza, lunghezza 244 mm, forza 140 Newton, finitura Titanio. Asta di nuova generazione e …"
+    },
+    {
+      "title": "MOLLA ASTA A GAS KRABY SOFT STOP FERRAMENTA ITALIANA LIVENZA …",
+      "url": "https://www.amazon.it/FERRAMENTA-ITALIANA-LIVENZA-PISTONCINO-PISTONE/dp/B08XKLRGJL",
+      "snippet": "MOLLA ASTA A GAS KRABY SOFT STOP FERRAMENTA ITALIANA LIVENZA PISTONCINO PISTONE (VARIE MISURE E …"
+    }
+  ]
+}

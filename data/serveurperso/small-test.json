@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Serveurperso/small-test",
+  "slug": "serveurperso-small-test",
+  "author": "Serveurperso",
+  "url": "https://huggingface.co/Serveurperso/small-test",
+  "created_at": "2026-09-12T17:23:53.000Z",
+  "updated_at": "2026-09-12T18:19:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "llama.cpp",
+    "test-fixture",
+    "tool-calling",
+    "ocr",
+    "mtp",
+    "pruning",
+    "image-text-to-text",
+    "en",
+    "dataset:HuggingFaceTB/smol-smoltalk",
+    "dataset:HuggingFaceTB/smoltalk",
+    "dataset:argilla/apigen-function-calling",
+    "dataset:NousResearch/hermes-function-calling-v1",
+    "dataset:nvidia/Nemotron-Agentic-v1",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94871984,
+  "parameters_human": "94.9M",
+  "storage_bytes": 718315840,
+  "storage_human": "718 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BoomReader",
+      "url": "https://www.boomreader.co.uk/",
+      "snippet": "BoomReader is a cost-effective digital alternative to paper reading diaries, helping schools reduce costs while giving staff instant …"
+    },
+    {
+      "title": "Boom - Pupil Portal",
+      "url": "https://pupils.goapps.app/",
+      "snippet": "A portal for pupils to access educational resources and tools."
+    },
+    {
+      "title": "Parents - BoomReader",
+      "url": "https://www.boomreader.co.uk/parents",
+      "snippet": "Download the free app to start logging your child's reading. Using BoomReader means no log is ever lost or wasted. Your child's …"
+    },
+    {
+      "title": "Boom - Pupil Portal",
+      "url": "https://pupils.go-read.app/",
+      "snippet": "Web site created using create-react-app Ask your teacher for your login sheet"
+    },
+    {
+      "title": "Boom - Teacher Portal",
+      "url": "https://teachers.goapps.app/",
+      "snippet": "Web site created using create-react-app"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/JackOD-9B-Coder-i1-GGUF",
+  "slug": "mradermacher-jackod-9b-coder-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/JackOD-9B-Coder-i1-GGUF",
+  "created_at": "2026-09-12T11:00:36.000Z",
+  "updated_at": "2026-09-12T12:18:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merge",
+    "code",
+    "agentic",
+    "tool-calling",
+    "qwen3.5",
+    "en",
+    "base_model:ManniX-ITA/JackOD-9B-Coder",
+    "base_model:quantized:ManniX-ITA/JackOD-9B-Coder",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 24224737024,
+  "storage_human": "24.2 GB",
+  "base_model": "ManniX-ITA/JackOD-9B-Coder",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "J'accède à mon espace Finances publiques et à mes services en ligne",
+      "url": "https://www.impots.gouv.fr/particulier/jaccede-mon-espace-particulier-et-mes-services-en-ligne",
+      "snippet": "Mar 30, 2016 · Une offre diversifiée de services en ligne vous est proposée dans votre espace Finances publiques. Vous pouvez …"
+    },
+    {
+      "title": "Particulier - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier",
+      "snippet": "May 27, 2026 · À la une Particulier Professionnel Demande d'aide de 100 € pour les travailleurs « grands rouleurs » Publié le 27 mai …"
+    },
+    {
+      "title": "Accueil impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/accueil",
+      "snippet": "Suite aux incendies survenus sur le territoire durant l'été, différentes mesures d'accompagnement ont été mises en place pour les …"
+    },
+    {
+      "title": "impots.gouv.fr - Particuliers | authentification",
+      "url": "https://cfspart.impots.gouv.fr/",
+      "snippet": "Avec vos identifiants impots.gouv.fr, vous pouvez effectuer des démarches administratives sur des sites partenaires de …"
+    },
+    {
+      "title": "Avis d'impôt sur les revenus - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier/avis-dimpot-sur-le-revenu",
+      "snippet": "Aug 18, 2016 · A quoi sert un avis d'impôt sur les revenus ? Toute personne imposable à l'impôt sur les revenus doit souscrire une …"
+    }
+  ]
+}

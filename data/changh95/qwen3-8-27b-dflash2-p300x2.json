@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "changh95/qwen3.8-27b-dflash2-p300x2",
+  "slug": "changh95-qwen3-8-27b-dflash2-p300x2",
+  "author": "changh95",
+  "url": "https://huggingface.co/changh95/qwen3.8-27b-dflash2-p300x2",
+  "created_at": "2026-09-12T04:31:29.000Z",
+  "updated_at": "2026-09-12T13:07:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "blackhole",
+    "p300x2",
+    "tt-model-cache",
+    "tt-model-catalog",
+    "tt-model-container",
+    "vllm-plugin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7566455042,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CONTI Portal",
+      "url": "https://conti-online.de/ContiPortal",
+      "snippet": "Detaillierte und regelmäßige Informationen über die CONTI-Beteiligungen sind ein fester und wesentlicher Bestandteil der CONTI …"
+    },
+    {
+      "title": "Continental AG - CT Portal",
+      "url": "https://portal.continental-industry.com/index.html",
+      "snippet": "You'll be redirected to a secure page to enter your credentials. Forgot Password? For Continental employees only. Sign in securely …"
+    },
+    {
+      "title": "ContiAktionsPortal | Continental",
+      "url": "https://www.contiaktionsportal.de/",
+      "snippet": "Geben Sie Ihren Anmeldenamen und das Kennwort ein. Sie haben noch keine Zugangsdaten? Dann können Sie sich hier neu …"
+    },
+    {
+      "title": "Parken in Deutschland: Parkplatz, Parkhaus, Tiefgarage | Contipark",
+      "url": "https://www.contipark.de/",
+      "snippet": "Egal, ob Sie einen Tagesausflug planen oder mehrere Tage in der Hauptstadt verbringen: Mit Contipark Parkhäusern und …"
+    },
+    {
+      "title": "Conti Portal",
+      "url": "https://www.contiportal.com/",
+      "snippet": "Kayıtlı üyemiz iseniz giriş yapınız. Çalışma saatlerimiz hafta içi 08:00 – 17:00 saatleri arasındadır."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "DistributedAI/102-v3",
+  "slug": "distributedai-102-v3",
+  "author": "DistributedAI",
+  "url": "https://huggingface.co/DistributedAI/102-v3",
+  "created_at": "2026-09-01T09:23:25.000Z",
+  "updated_at": "2026-09-12T17:06:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32354508960,
+  "storage_human": "32.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Find the Google Play Store app",
+      "url": "https://support.google.com/googleplay/answer/190860?hl=en",
+      "snippet": "On your device, go to the Apps section. Tap Google Play Store . The app will open and you can search and browse for content to …"
+    },
+    {
+      "title": "Encontrar la aplicación Google Play Store",
+      "url": "https://support.google.com/googleplay/answer/190860?hl=es",
+      "snippet": "En tu dispositivo, ve a la sección de aplicaciones. Toca Google Play Store . La aplicación se abrirá y podrás navegar por ella, buscar …"
+    },
+    {
+      "title": "有哪些好的iOS模拟器？ - 知乎",
+      "url": "https://www.zhihu.com/question/267655113",
+      "snippet": "先说下什么是模拟器，直白点讲，就是一个虚拟的手机，来运行手机的程序。可以在电脑上操作。 安卓模拟器，市面上一抓一大把， …"
+    },
+    {
+      "title": "win10系统的应用商店不见了怎么安装回来？ - 知乎",
+      "url": "https://www.zhihu.com/question/302863894",
+      "snippet": "在微软官方问答中找到了答案，第一条命令执行失败，但继续输入第二条命令，执行成功了，微软商店又回来了。 您好，我是微软社 …"
+    },
+    {
+      "title": "App store (苹果商店)打不开怎么办 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/37bce2bec2d81c5002f3a2f2.html",
+      "snippet": "Nov 16, 2019 · App store是苹果手机下载和安装新APP的市场，如果App store无法打开，苹果手机将无法安装新的APP，那么遇到App …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SidraBhatti/xi-ddqn-offroad-energy-management",
+  "slug": "sidrabhatti-xi-ddqn-offroad-energy-management",
+  "author": "SidraBhatti",
+  "url": "https://huggingface.co/SidraBhatti/xi-ddqn-offroad-energy-management",
+  "created_at": "2026-09-12T17:15:11.000Z",
+  "updated_at": "2026-09-12T17:37:55.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "reinforcement-learning",
+    "automotive",
+    "energy-management",
+    "explainable-ai",
+    "hybrid-powertrain",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 242904,
+  "storage_human": "242904 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fantasy Premier League, Official Fantasy Football Game of the Premier ...",
+      "url": "https://fantasy.premierleague.com/",
+      "snippet": "Official Fantasy Premier League 2026/27. Free to play fantasy football game, set up your fantasy football team at the Official Premier …"
+    },
+    {
+      "title": "The Scout, Fantasy Football Tips & Advice | Fantasy Premier League",
+      "url": "https://fantasy.premierleague.com/en/the-scout",
+      "snippet": "Official Fantasy Premier League 2026/27. Free to play fantasy football game, set up your fantasy football team at the Official Premier …"
+    },
+    {
+      "title": "View Latest Premier League Fixtures | Fantasy Premier League",
+      "url": "https://fantasy.premierleague.com/en/fixtures",
+      "snippet": "Official Fantasy Premier League 2026/27. Free to play fantasy football game, set up your fantasy football team at the Official Premier …"
+    },
+    {
+      "title": "Fixture Difficulty Rating | Fantasy Premier League",
+      "url": "https://fantasy.premierleague.com/en/fixtures/fdr",
+      "snippet": "Official Fantasy Premier League 2026/27. Free to play fantasy football game, set up your fantasy football team at the Official Premier …"
+    },
+    {
+      "title": "Fantasy Football Statistics | Fantasy Premier League",
+      "url": "https://fantasy.premierleague.com/en/statistics",
+      "snippet": "Official Fantasy Premier League 2026/27. Free to play fantasy football game, set up your fantasy football team at the Official Premier …"
+    }
+  ]
+}

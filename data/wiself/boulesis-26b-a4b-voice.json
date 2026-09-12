@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Wiself/Boulesis-26B-A4B-Voice",
+  "slug": "wiself-boulesis-26b-a4b-voice",
+  "author": "Wiself",
+  "url": "https://huggingface.co/Wiself/Boulesis-26B-A4B-Voice",
+  "created_at": "2026-09-12T14:03:47.000Z",
+  "updated_at": "2026-09-12T14:22:33.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "voice",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "voice",
+    "gemma4",
+    "gguf",
+    "moe",
+    "roleplay",
+    "style-transfer",
+    "merge",
+    "thinking",
+    "text-generation",
+    "en",
+    "base_model:SubMaroon/Boulesis-26B-A4B",
+    "base_model:finetune:SubMaroon/Boulesis-26B-A4B",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1476395111,
+  "storage_human": "1.5 GB",
+  "base_model": "SubMaroon/Boulesis-26B-A4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kinder Joy - Kinder España",
+      "url": "https://www.kinder.com/es/es/kinder-joy",
+      "snippet": "Kinder Joy, crema de leche y cacao con dos crujientes bolitas y una divertida sorpresa."
+    },
+    {
+      "title": "Chocolate KINDER Joy Niño Caja 40g - plazaVea",
+      "url": "https://www.plazavea.com.pe/chocolate-kinder-joy-nino-caja-40g/p",
+      "snippet": "¡Compra Online Chocolate KINDER Joy Niño Caja 40g desde donde estés en plazaVea.com.pe!"
+    },
+    {
+      "title": "KINDER JOY | Tottus Perú",
+      "url": "https://www.tottus.com.pe/tottus-pe/marca/KINDER%20JOY",
+      "snippet": "Compra online artículos y productos de KINDER JOY conoce las diferentes opciones que tenemos para ti en tus marcas favoritas."
+    },
+    {
+      "title": "Kinder Joy Colección - Kinder España",
+      "url": "https://www.kinder.com/es/es/kinder-joy-la-coleccion",
+      "snippet": "Para ver este sitio web debes tener al menos 18 años o el permiso de tus padres o tutores."
+    },
+    {
+      "title": "Kinder Joy - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kinder_Joy",
+      "snippet": "Kinder Joy (formerly known as Kinder Merendero in Italy and Bahrain) is a candy made by Italian confectionery company Ferrero as …"
+    }
+  ]
+}

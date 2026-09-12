@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "lovelydev1007/vd0912",
+  "slug": "lovelydev1007-vd0912",
+  "author": "lovelydev1007",
+  "url": "https://huggingface.co/lovelydev1007/vd0912",
+  "created_at": "2026-09-12T14:18:37.000Z",
+  "updated_at": "2026-09-12T14:18:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "element_type:detect",
+    "model:yolov11-nano",
+    "object:person",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9862705,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Benvenuto su phpBB3 - GRUPPO BULLONE LA SPEZIA",
+      "url": "http://www.gruppobullone.it/phpbb/viewtopic.php?t=1",
+      "snippet": "Jun 2, 2021 · A centrocampo hai Bright Campomaggio Candelari Bastoni Joselito Jimenez Limonelli e il baby Cassano che in linea …"
+    },
+    {
+      "title": "GRUPPO BULLONE LA SPEZIA - Index page",
+      "url": "http://www.gruppobullone.it/phpbb/",
+      "snippet": "Descrizione del tuo primo forum. Total posts 79343 • Total topics 1 • Total members 449 • Our newest member I pirati."
+    },
+    {
+      "title": "Gruppo bullone - Facebook",
+      "url": "https://www.facebook.com/100083123299576/",
+      "snippet": "Jul 24, 2026 · Gruppo bullone. 1,240 likes · 3 talking about this. Personal blog."
+    },
+    {
+      "title": "Benvenuto su phpBB3 - Page 2 - GRUPPO BULLONE LA SPEZIA",
+      "url": "http://www.gruppobullone.it/phpbb/viewtopic.php?t=1&start=10",
+      "snippet": "3 days ago · Sergione wrote: 09/09/2026, 20:36 Non lo so’ ci vorrebbe un centrocampista di gamba più che Mateju. A centrocampo …"
+    },
+    {
+      "title": "GRUPPO BULLONE LA SPEZIA - La tua prima categoria",
+      "url": "https://www.gruppobullone.it/phpbb/viewforum.php?f=1",
+      "snippet": "Descrizione del tuo primo forum."
+    }
+  ]
+}

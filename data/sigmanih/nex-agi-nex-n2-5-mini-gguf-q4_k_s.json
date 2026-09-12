@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "sigmanih/nex-agi-Nex-N2.5-mini-GGUF-Q4_K_S",
+  "slug": "sigmanih-nex-agi-nex-n2-5-mini-gguf-q4_k_s",
+  "author": "sigmanih",
+  "url": "https://huggingface.co/sigmanih/nex-agi-Nex-N2.5-mini-GGUF-Q4_K_S",
+  "created_at": "2026-09-12T12:05:01.000Z",
+  "updated_at": "2026-09-12T12:17:53.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "it"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "sigma-studio",
+    "sigmanih",
+    "conversational",
+    "custom-model",
+    "llama.cpp",
+    "quantized",
+    "q4_k_s",
+    "en",
+    "it",
+    "base_model:nex-agi/Nex-N2.5-mini",
+    "base_model:quantized:nex-agi/Nex-N2.5-mini",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 19889903232,
+  "storage_human": "19.9 GB",
+  "base_model": "nex-agi/Nex-N2.5-mini",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tulsi Gabbard | World Economic Forum",
+      "url": "https://www.weforum.org/people/tulsi-gabbard/",
+      "snippet": "Tulsi Gabbard, grew up in beautiful Hawai‘i. As a teenager, she co-founded an environmental non-profit called Healthy Hawai’i …"
+    },
+    {
+      "title": "Meet the 2021 class of Young Global Leaders | World Economic Forum",
+      "url": "https://www.weforum.org/stories/2021/03/meet-the-2021-class-of-young-global-leaders/",
+      "snippet": "Mar 10, 2021 · Each year the World Economic Forum names its new Young Global Leaders - a group of remarkable people under 40 …"
+    },
+    {
+      "title": "Peggy Hicks | World Economic Forum",
+      "url": "https://www.weforum.org/people/peggy-hicks/",
+      "snippet": "Since January 2016, Peggy Hicks has served as director of the Thematic Engagement, Special Procedures and Right to …"
+    },
+    {
+      "title": "Alois Zwinggi | World Economic Forum",
+      "url": "https://www.weforum.org/about/alois-zwinggi/",
+      "snippet": "Alois Zwinggi is President and Chief Executive Officer of the World Economic Forum. He is Managing Director at the Forum, having …"
+    },
+    {
+      "title": "Michael Faye | World Economic Forum",
+      "url": "https://www.weforum.org/people/michael-faye/",
+      "snippet": "Michael Faye is an economist and entrepreneur, whose work has focused on ending extreme poverty and increasing capital flows to …"
+    }
+  ]
+}

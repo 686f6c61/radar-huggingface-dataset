@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/auralis-coder-GGUF",
+  "slug": "mradermacher-auralis-coder-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/auralis-coder-GGUF",
+  "created_at": "2026-09-12T10:43:22.000Z",
+  "updated_at": "2026-09-12T10:52:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "ai",
+    "programming",
+    "en",
+    "dataset:CodeDevX/auralis-coder-dataset",
+    "base_model:CodeDevX/auralis-coder",
+    "base_model:quantized:CodeDevX/auralis-coder",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 14206901760,
+  "storage_human": "14.2 GB",
+  "base_model": "CodeDevX/auralis-coder",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Brow Harmony Pencil & Gel RARE BEAUTY ≡ SEPHORA",
+      "url": "https://www.sephora.ae/qa/en/p/brow-harmony-pencil-%26-gel-P10017089.html",
+      "snippet": "A dual-ended, triangular-shaped, retractable brow pencil and tinted brow gel that creates naturally defined brows. Creamy and …"
+    },
+    {
+      "title": "Icy Nude - Blush Filter HUDA BEAUTY ≡ SEPHORA",
+      "url": "https://www.sephora.ae/bh/en/p/blush-filter---liquid-blush-P10061205.html",
+      "snippet": "Enhance your icy look with two new bronzing blush shades of our best-selling Blush Filter! These hybrid liquid blush-bronzers are …"
+    },
+    {
+      "title": "Contact Customer Support - faq.sephora.ae",
+      "url": "https://faq.sephora.ae/s/contactsupport",
+      "snippet": "Looks like you don’t have access to create a case. Ask your community manager for access."
+    },
+    {
+      "title": "Which stores offer Click & Collect? - SEPHORA",
+      "url": "https://faq.sephora.ae/s/article/Which-stores-offer-Click-Collect",
+      "snippet": "Click & Collect is available in select stores in the UAE, KSA, Bahrain, and Kuwait. In the UAE Dubai: Sephora Festival City, Dubai …"
+    },
+    {
+      "title": "Confort Cleansing Duo Set LANCÔME ≡ SEPHORA",
+      "url": "https://www.sephora.ae/om/en/p/confort-cleansing-duo-set-P10057035.html",
+      "snippet": "DISCOVER CLEAN, COMFORTABLE AND SOOTHED SKIN WHAT IS IT A skincare routine set containing cleanser and lotion to get …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Alienstro/xslm",
+  "slug": "alienstro-xslm",
+  "author": "Alienstro",
+  "url": "https://huggingface.co/Alienstro/xslm",
+  "created_at": "2026-09-12T14:21:20.000Z",
+  "updated_at": "2026-09-12T14:21:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Apa itu query? Pengertian query database dan contohnya - Hostinger",
+      "url": "https://www.hostinger.com/id/tutorial/apa-itu-query/",
+      "snippet": "Feb 11, 2026 · Di artikel ini, selain menjelaskan apa itu query, kami juga akan membahas cara kerja query, contoh query, serta …"
+    },
+    {
+      "title": "Query - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Query",
+      "snippet": "This disambiguation page lists articles associated with the title Query. If an internal link incorrectly led you here, you may wish to …"
+    },
+    {
+      "title": "Home - Query",
+      "url": "https://www.query.ai/",
+      "snippet": "Query is a federated search platform for security data providing expanded data visibility without centralization."
+    },
+    {
+      "title": "SQL Tutorial - W3Schools",
+      "url": "https://www.w3schools.com/sql/",
+      "snippet": "SQL is a standard language for storing, manipulating and retrieving data in databases. Our SQL tutorial will teach you how to use …"
+    },
+    {
+      "title": "Apa itu Query? Pengertian dan Contoh Query Sederhana",
+      "url": "https://www.rumahweb.com/journal/query-adalah/",
+      "snippet": "Nov 14, 2024 · Query adalah sekumpulan baris perintah yang digunakan untuk mendapatkan data dan informasi dari database. …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "leomaurodesenv/roberta-base-trustairlab-jailbreak-augmented",
+  "slug": "leomaurodesenv-roberta-base-trustairlab-jailbreak-augmented",
+  "author": "leomaurodesenv",
+  "url": "https://huggingface.co/leomaurodesenv/roberta-base-trustairlab-jailbreak-augmented",
+  "created_at": "2026-09-12T03:18:14.000Z",
+  "updated_at": "2026-09-12T18:27:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:finetune:FacebookAI/roberta-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": 124647170,
+  "parameters_human": "124.6M",
+  "storage_bytes": 12963938065,
+  "storage_human": "13.0 GB",
+  "base_model": "FacebookAI/roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "澳门28 - 历史开奖",
+      "url": "https://blog.taotiegroup.com/lottery/am28/history",
+      "snippet": "专业的澳门及第三方彩票开奖数据展示平台"
+    },
+    {
+      "title": "澳门开奖数据分析 | MacauStats智能统计工具App",
+      "url": "https://macaustats.com/",
+      "snippet": "MacauStats提供澳门开奖历史数据查询、号码趋势分析、数据统计和智能分析工具。 下载安装App，随时查看最新澳门开奖数据。"
+    },
+    {
+      "title": "澳门六合彩历史开奖数据、走势分析与开奖结果查询 | 博易网",
+      "url": "https://www.boyi-api.com/lottery/amlhc.html",
+      "snippet": "18 hours ago · 澳门六合彩彩票开奖接口怎么调用？ 博易网提供澳门六合彩实时开奖数据的RESTful API接口，可通过 彩票开奖API接 …"
+    },
+    {
+      "title": "新澳门六合彩开奖历史_历史记录查询官网",
+      "url": "https://web-lhc.com.cn/history",
+      "snippet": "提供便捷的澳门六合彩开奖历史记录查询功能，助您轻松追溯往期开奖号码，进行精准的数据分析。"
+    },
+    {
+      "title": "澳門六合彩官方網站|澳門keno|澳門28",
+      "url": "https://macaukeno.com/",
+      "snippet": "澳門28，澳門六合彩，澳門時時彩，澳門KENO，香港六合彩，新澳門六合彩"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "bartowski/ukisai_Swift-Qwen3.8-27b-GGUF",
+  "slug": "bartowski-ukisai_swift-qwen3-8-27b-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/ukisai_Swift-Qwen3.8-27b-GGUF",
+  "created_at": "2026-09-12T01:54:23.000Z",
+  "updated_at": "2026-09-12T02:59:42.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_8",
+    "efficient-thinking",
+    "reasoning",
+    "token-efficient",
+    "lora",
+    "image-text-to-text",
+    "base_model:ukisai/Swift-Qwen3.8-27b",
+    "base_model:quantized:ukisai/Swift-Qwen3.8-27b",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 10,
+  "downloads_30d": 290,
+  "trending_score": 10,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 446778232544,
+  "storage_human": "446.8 GB",
+  "base_model": "ukisai/Swift-Qwen3.8-27b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fellwunder Bürste | Hundebürste für Unterwolle & mehr | Pfotenmond",
+      "url": "https://pfotenmond.de/products/pfotentrimmer-das-original",
+      "snippet": "Die Pfotenmond Fellwunder Bürste reduziert das Haaren um bis zu 95 %! Sanft, effektiv und ideal für den Fellwechsel – perfekt für …"
+    },
+    {
+      "title": "Pfotenmond Fellwunder Bürste - Professionelle Fellpflege für Hunde ...",
+      "url": "https://www.amazon.de/Pfotenmond-Fellwunder-B%C3%BCrste-Professionelle-Unterwollentfernung/dp/B0F65BS2K1",
+      "snippet": "Pfotenmond Fellwunder Bürste im 2er Set – für eine ruhigere und gründlichere Fellpflege im Alltag Ob während der Fellwechsel …"
+    },
+    {
+      "title": "Pfotenmond - Bürste",
+      "url": "https://pfotenmond.de/collections/pfotenmond-bursten",
+      "snippet": "Bei Pfotenmond findest du Spielzeuge und sorgfältig ausgewählte Pflegeprodukte, die das Wohlbefinden und die Gesundheit deines …"
+    },
+    {
+      "title": "Pfotenmond Bürste,Fellwunder Bürste Hund Unterwolle ... - Amazon",
+      "url": "https://www.amazon.de/Pfotenmond-Hundeb%C3%BCrste-Pflegeb%C3%BCrste-Haarentfernung-Massagefunktion/dp/B0FCM56H6F",
+      "snippet": "Pfotenmond Bürste,Fellwunder Bürste Hund Unterwolle Hundebürste Katze Für Unterwolle & Deshedding Tool | Pflegebürste zur …"
+    },
+    {
+      "title": "Fellwunder Bürste - Der Bestseller | Pfotenmond",
+      "url": "https://pfotenmondsupply.shop/products/pfotentrimmer-das-original",
+      "snippet": "Pfotenmond Fellwunder Bürste – Reduziert das Haaren um bis zu 95 % Sorge für ein glänzendes, gesundes Fell und ein haarfreies …"
+    }
+  ]
+}

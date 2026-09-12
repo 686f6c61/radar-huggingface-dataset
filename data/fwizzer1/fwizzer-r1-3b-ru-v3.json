@@ -1,0 +1,113 @@
+{
+  "schema": 1,
+  "id": "fwizzer1/Fwizzer-R1-3B-RU-v3",
+  "slug": "fwizzer1-fwizzer-r1-3b-ru-v3",
+  "author": "fwizzer1",
+  "url": "https://huggingface.co/fwizzer1/Fwizzer-R1-3B-RU-v3",
+  "created_at": "2026-09-11T06:19:43.000Z",
+  "updated_at": "2026-09-12T13:28:28.000Z",
+  "license": "fwizzer-titan-eula",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "mistral3",
+    "titan",
+    "flagship",
+    "reasoning",
+    "r1",
+    "deepseek-r1",
+    "ministral",
+    "cot",
+    "chain-of-thought",
+    "russian",
+    "code",
+    "math",
+    "agentic",
+    "text-generation",
+    "unsloth",
+    "llama.cpp",
+    "lmstudio",
+    "ollama",
+    "vllm",
+    "conversational",
+    "ru",
+    "en",
+    "dataset:fwizzer1/fwizzer-v3-titan-agentic",
+    "base_model:unsloth/Ministral-3-3B-Instruct-2512-bnb-4bit",
+    "base_model:quantized:unsloth/Ministral-3-3B-Instruct-2512-bnb-4bit",
+    "license:other",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 144,
+  "trending_score": 0,
+  "parameters": 3429012480,
+  "parameters_human": "3.43B",
+  "storage_bytes": 6466940591,
+  "storage_human": "6.5 GB",
+  "base_model": "unsloth/Ministral-3-3B-Instruct-2512-bnb-4bit",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "GSM8K",
+      "metric": "Accuracy",
+      "value": 87.1
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MATH",
+      "metric": "Accuracy",
+      "value": 62.4
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "HumanEval",
+      "metric": "Pass@1",
+      "value": 70.8
+    }
+  ],
+  "sources": [
+    {
+      "title": "Espace Client Orange",
+      "url": "https://espace-client.orange.fr/compte/mail",
+      "snippet": "Accédez à votre boite mail Orange et gérez vos e-mails en toute sécurité depuis l'Espace Client Orange."
+    },
+    {
+      "title": "Mail services",
+      "url": "https://mon-espace.mail.orange.fr/",
+      "snippet": "Accédez à votre messagerie Orange en toute sécurité pour envoyer, recevoir et gérer vos emails facilement."
+    },
+    {
+      "title": "Accéder à votre Espace client",
+      "url": "https://espace-client.orange.fr/page-accueil",
+      "snippet": "Scannez le QR Code pour télécharger ou ouvrir Orange et moi. Où trouver vos identifiants ?"
+    },
+    {
+      "title": "Offres Mobiles, Internet, TV, Actu & Accès compte Mail - Orange",
+      "url": "https://www.orange.fr/portail",
+      "snippet": "Accès rapide et facile à toutes les fonctionnalités Orange (Email, Assistance, Banque, Boutique). Découvrez notre portail Orange et …"
+    },
+    {
+      "title": "Comment s'authentifier pour accéder au Mail Orange via un …",
+      "url": "https://assistance.orange.fr/ordinateurs-peripheriques/installer-et-utiliser/l-utilisation-du-mail-et-services-associes/mail-orange/presentation/comment-s-authentifier-pour-acceder-au-mail-orange-via-un-navigateur-internet-_467558-996169",
+      "snippet": "Aug 25, 2026 · Le service Mail Orange vous permet d'accéder à votre boite mail depuis n'importe quel équipement en toute sécurité. …"
+    }
+  ]
+}

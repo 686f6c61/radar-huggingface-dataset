@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Kakuratig/my_awesome_wnut_model",
+  "slug": "kakuratig-my_awesome_wnut_model",
+  "author": "Kakuratig",
+  "url": "https://huggingface.co/Kakuratig/my_awesome_wnut_model",
+  "created_at": "2026-09-12T11:31:23.000Z",
+  "updated_at": "2026-09-12T11:31:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "camembert",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:almanach/camembert-base",
+    "base_model:finetune:almanach/camembert-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110032898,
+  "parameters_human": "110.0M",
+  "storage_bytes": 440160705,
+  "storage_human": "440 MB",
+  "base_model": "camembert-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=ru",
+      "snippet": "Создайте аккаунт или войдите в Instagram — делитесь интересными моментами с людьми, которые вас понимают."
+    },
+    {
+      "title": "Instagram (@instagram) • Instagram photos and videos",
+      "url": "https://www.instagram.com/instagram/",
+      "snippet": "687M Followers, 292 Following, 8,584 Posts - Instagram (@instagram) on Instagram: \"Discover what's new on Instagram 🔎 \""
+    },
+    {
+      "title": "Sign up • Instagram",
+      "url": "https://www.instagram.com/accounts/emailsignup/",
+      "snippet": "Join Instagram! Sign up to see photos, videos, stories & messages from your friends, family & interests around the world."
+    },
+    {
+      "title": "Instagram - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.instagram.android&hl=en-US",
+      "snippet": "- Turn your life into a movie and discover short, entertaining videos on Instagram with Reels. - Customize your posts with exclusive …"
+    }
+  ]
+}

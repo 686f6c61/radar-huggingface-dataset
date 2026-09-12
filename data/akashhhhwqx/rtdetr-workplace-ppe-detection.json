@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Akashhhhwqx/rtdetr-workplace-ppe-detection",
+  "slug": "akashhhhwqx-rtdetr-workplace-ppe-detection",
+  "author": "Akashhhhwqx",
+  "url": "https://huggingface.co/Akashhhhwqx/rtdetr-workplace-ppe-detection",
+  "created_at": "2026-09-12T18:15:37.000Z",
+  "updated_at": "2026-09-12T18:18:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 66226557,
+  "storage_human": "66 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
+    },
+    {
+      "title": "哈啦區 - 巴哈姆特",
+      "url": "https://forum.gamer.com.tw/",
+      "snippet": "哈啦區提供遊戲討論、攻略精華及創作分享，歡迎大家共同維護這個輕鬆不放縱的園地。"
+    },
+    {
+      "title": "2026年了都，大家现在单机游戏都在哪里下？ - 知乎",
+      "url": "https://www.zhihu.com/question/1973937257695170709",
+      "snippet": "注意，是单机游戏。单机游戏。 直接推荐一个个人体验最好的游戏资源站（没有之一） 这个网站不论 游戏数量，还是 每日更新量 都 …"
+    },
+    {
+      "title": "流亡黯道 Path of Exile 哈啦板 - 巴哈姆特",
+      "url": "https://forum.gamer.com.tw/A.php?bsn=18966",
+      "snippet": "歡迎來到流亡黯道 Path of Exile哈啦板，最新資訊及情報分享、精華好文查找、創作交流討論，盡在巴哈姆特！"
+    },
+    {
+      "title": "哪个才是steam？ - 知乎",
+      "url": "https://www.zhihu.com/question/603521723",
+      "snippet": "May 28, 2023 · 当你百度搜索steam的时候 是不是看到琳琅满目的steam？ 当你点击进去看到 sdeam steam游戏管家 steam游戏中心 …"
+    }
+  ]
+}

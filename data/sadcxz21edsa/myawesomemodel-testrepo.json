@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SADCXZ21EDSA/MyAwesomeModel-TestRepo",
+  "slug": "sadcxz21edsa-myawesomemodel-testrepo",
+  "author": "SADCXZ21EDSA",
+  "url": "https://huggingface.co/SADCXZ21EDSA/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-12T11:17:00.000Z",
+  "updated_at": "2026-09-12T11:18:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TJK",
+      "url": "https://www.tjk.org/",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "TJK - NLN02",
+      "url": "https://online.tjk.org/",
+      "snippet": "Türkiye Jokey Kulübü'nün resmi sitesi, at yarışları ve ilgili hizmetler hakkında bilgi sunar."
+    },
+    {
+      "title": "Yarış Programı - TJK",
+      "url": "https://www.tjk.org/TR/yarissever/Info/Page/GunlukYarisProgrami",
+      "snippet": "SANCAKALAN KG Kapalı gözlük takılacağını ifade eder. DB Dilinin bağlanacağını ifade eder. SK Ring mahalinden starta kadar …"
+    },
+    {
+      "title": "TJK Anasayfa",
+      "url": "https://www2.tjk.org/TR/Kurumsal/Kurumsal",
+      "snippet": "15-16 Ağustos tarihlerinde koşulacak G1 yarışların heyecanı Ankara ve İstanbul'da yaşanacak. Karayel ve Karadeniz Koşuları 75. Yıl …"
+    },
+    {
+      "title": "TJK Anasayfa",
+      "url": "https://tr.tjk.org/TR/Yetistiricilik/Yetistiricilik",
+      "snippet": "2027 aşım sezonundan itibaren yetiştiricilerimize hizmet vermek üzere, Kulübümüz tarafından satın alınan yeni aygırımız Twain …"
+    }
+  ]
+}

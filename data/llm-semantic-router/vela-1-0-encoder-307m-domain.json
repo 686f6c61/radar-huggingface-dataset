@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "llm-semantic-router/Vela-1.0-Encoder-307M-Domain",
+  "slug": "llm-semantic-router-vela-1-0-encoder-307m-domain",
+  "author": "llm-semantic-router",
+  "url": "https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Domain",
+  "created_at": "2026-09-12T16:44:46.000Z",
+  "updated_at": "2026-09-12T17:04:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "de",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "domain-classification",
+    "semantic-router",
+    "long-context",
+    "vela",
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "de",
+    "ja",
+    "base_model:llm-semantic-router/mmbert-32k-yarn",
+    "base_model:quantized:llm-semantic-router/mmbert-32k-yarn",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 307541006,
+  "parameters_human": "307.5M",
+  "storage_bytes": 2524722362,
+  "storage_human": "2.5 GB",
+  "base_model": "llm-semantic-router/mmbert-32k-yarn, llm-semantic-router/mmbert32k-intent-classifier-lora",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grand modèle de langage — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage",
+      "snippet": "Les LLM sont des fonctions mathématiques dont l'entrée et la sortie sont des listes de nombres. Pour que ceux-ci fonctionnent avec …"
+    },
+    {
+      "title": "Large language model - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Large_language_model",
+      "snippet": "An LLM is given some examples where the \"assistant\" verbally breaks down the thought process before arriving at an answer. The …"
+    },
+    {
+      "title": "Classement LLM 2026 : Top 100 des meilleurs modèles d’IA comparés",
+      "url": "https://www.ia-insights.fr/classement-des-meilleurs-llm/",
+      "snippet": "Classement des 100 meilleurs LLM en 2026 : qualité, vitesse et prix comparés. Données Artificial Analysis, mises à jour …"
+    },
+    {
+      "title": "Classement des meilleurs LLM en septembre 2026 : top 15 - Digitiz",
+      "url": "https://digitiz.fr/classement-llm/",
+      "snippet": "Sep 1, 2026 · Voici mon top 15 des LLM les plus performants en septembre 2026, avec leurs tarifs et mes recommandations selon …"
+    },
+    {
+      "title": "Large Language Model (LLM) - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/large-language-model-llm/",
+      "snippet": "May 2, 2026 · LLM Working of LLM LLMs are primarily based on the Transformer architecture which enables them to learn long …"
+    }
+  ]
+}

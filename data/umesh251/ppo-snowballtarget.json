@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "umesh251/ppo-SnowballTarget",
+  "slug": "umesh251-ppo-snowballtarget",
+  "author": "umesh251",
+  "url": "https://huggingface.co/umesh251/ppo-SnowballTarget",
+  "created_at": "2026-09-12T16:18:01.000Z",
+  "updated_at": "2026-09-12T16:18:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "SnowballTarget",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SnowballTarget",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4505137,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - Fascicolo Sanitario Elettronico",
+      "url": "https://www.fascicolosanitario.gov.it/portale/home",
+      "snippet": "Il Fascicolo Sanitario Elettronico (FSE) è il punto unico di accesso ai dati e documenti digitali di tipo sanitario e socio-sanitario …"
+    },
+    {
+      "title": "Fascicolo Sanitario Elettronico",
+      "url": "https://fascicolo-sanitario.it/",
+      "snippet": "Sei un nuovo utente? Vedi come fare per accedere."
+    },
+    {
+      "title": "Il Fascicolo Sanitario Elettronico (FSE)",
+      "url": "https://www.fascicolosanitario.gov.it/portale/il-fascicolo-sanitario-elettronico-fse-",
+      "snippet": "Il Fascicolo Sanitario Elettronico viene definito dalla normativa come l’insieme di dati e documenti digitali di tipo sanitario e socio …"
+    },
+    {
+      "title": "Login",
+      "url": "https://www.fascicolo-sanitario.it/fse/?2",
+      "snippet": "Sei un nuovo utente? Vedi come fare per accedere."
+    },
+    {
+      "title": "Fascicolo Sanitario Elettronico - Regione Umbria",
+      "url": "https://www.regione.umbria.it/salute/sanita-digitale/fascicolosanitario",
+      "snippet": "Uno dei vantaggi del fascicolo sanitario elettronico è quello di avere a disposizione la propria documentazione sanitaria, in forma …"
+    }
+  ]
+}

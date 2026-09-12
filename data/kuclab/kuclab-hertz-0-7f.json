@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "KucLab/kuclab-hertz-0.7f",
+  "slug": "kuclab-kuclab-hertz-0-7f",
+  "author": "KucLab",
+  "url": "https://huggingface.co/KucLab/kuclab-hertz-0.7f",
+  "created_at": "2026-09-12T14:19:33.000Z",
+  "updated_at": "2026-09-12T14:20:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "cs",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "qwen",
+    "czech",
+    "stem",
+    "physics",
+    "chemistry",
+    "biology",
+    "mathematics",
+    "programming",
+    "lora",
+    "distillation",
+    "conversational",
+    "text-generation",
+    "cs",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 5629108576,
+  "storage_human": "5.6 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Itinéraires et circuits de randonnées à Sainte Foy Tarentaise",
+      "url": "https://www.saintefoy-tarentaise.com/a-faire/activite-ete/randonnees-sainte-foy/rando-et-balade/",
+      "snippet": "Découvrez notre sélection des meilleurs circuits de randonnées à Sainte-Foy-Tarentaise ! Téléchargez également le plan des …"
+    },
+    {
+      "title": "20 randonnées à faire Sainte-Foy-Tarentaise - Visorando",
+      "url": "https://www.visorando.com/randonnee-sainte-foy-tarentaise.html",
+      "snippet": "Idées de circuits de randonnée Sainte-Foy-Tarentaise gratuites avec carte IGN au 1:25000, descriptif précis et photos."
+    },
+    {
+      "title": "Nos idées de randonnées près de Sainte-Foy-Tarentaise",
+      "url": "https://www.altituderando.com/geo_commune36631",
+      "snippet": "Découvrez nos idées de randonnées près de «Sainte-Foy-Tarentaise» : descriptif de l'itinéraire, photos et carte du topo."
+    },
+    {
+      "title": "Les plus belles promenades et randonnées autour de Sainte-Foy-Tarentaise",
+      "url": "https://www.komoot.com/fr-fr/guide/1379859/randonnees-autour-de-sainte-foy-tarentaise",
+      "snippet": "Sep 1, 2026 · Découvrez les meilleures randonnées et balades autour de Sainte-Foy-Tarentaise. Consultez les cartes interactives …"
+    },
+    {
+      "title": "Randonnées autour de Sainte-Foy-Tarentaise",
+      "url": "https://www.randozone.com/v/randonnee-sainte-foy-tarentaise-73640",
+      "snippet": "Découvrez des idées de balades, de randonnées ou de sorties autour de Sainte-Foy-Tarentaise mais aussi des tracés gps ou des …"
+    }
+  ]
+}

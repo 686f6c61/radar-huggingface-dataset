@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "sshalimov04/ru-legal-rag-edge-0.6b",
+  "slug": "sshalimov04-ru-legal-rag-edge-0-6b",
+  "author": "sshalimov04",
+  "url": "https://huggingface.co/sshalimov04/ru-legal-rag-edge-0.6b",
+  "created_at": "2026-09-09T08:40:48.000Z",
+  "updated_at": "2026-09-12T13:05:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "russian",
+    "legal",
+    "rag",
+    "text-generation",
+    "conversational",
+    "ru",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203557746,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What time zone is 3 hours behind California? - Answers",
+      "url": "https://www.answers.com/natural-sciences/What_time_zone_is_3_hours_behind_California",
+      "snippet": "Jun 2, 2024 · If you mean the time zone where the clock is three hours behind California, then it would be the \"Eastern\" time zone - …"
+    },
+    {
+      "title": "What is California time zone? - Answers",
+      "url": "https://www.answers.com/natural-sciences/What_is_California_time_zone",
+      "snippet": "Oct 23, 2022 · California is Pacific Time, GMT-8."
+    },
+    {
+      "title": "Daily Themed Crossword Answers",
+      "url": "https://dailythemedcrosswordanswers.com/",
+      "snippet": "13 hours ago · Today's Daily Themed Crossword answers, the full puzzle archive, every themed pack level, and a clue lookup for …"
+    },
+    {
+      "title": "Daily Themed Crossword Halloween Minis Level 8 Answers",
+      "url": "https://dailythemedcrosswordanswers.com/daily-themed-crossword-halloween-minis-level-8-answers/",
+      "snippet": "On this page you may find all Daily Themed Crossword Halloween Minis Level 8 Answers. If you are stuck with a specific clue then …"
+    },
+    {
+      "title": "What is the time difference between California and Seattle?",
+      "url": "https://www.answers.com/travel-destinations/What_is_the_time_difference_between_California_and_Seattle",
+      "snippet": "Nov 5, 2022 · Seattle (Washington) and California are in the same time zone."
+    }
+  ]
+}

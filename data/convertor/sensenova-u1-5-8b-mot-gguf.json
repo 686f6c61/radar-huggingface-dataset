@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "convertor/sensenova-u1.5-8b-mot-gguf",
+  "slug": "convertor-sensenova-u1-5-8b-mot-gguf",
+  "author": "convertor",
+  "url": "https://huggingface.co/convertor/sensenova-u1.5-8b-mot-gguf",
+  "created_at": "2026-09-12T08:35:32.000Z",
+  "updated_at": "2026-09-12T17:08:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:sensenova/SenseNova-U1.5-8B-MoT",
+    "base_model:quantized:sensenova/SenseNova-U1.5-8B-MoT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 17532854464,
+  "parameters_human": "17.53B",
+  "storage_bytes": 10022088526,
+  "storage_human": "10.0 GB",
+  "base_model": "sensenova/SenseNova-U1.5-8B-MoT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Toby Fox – It's TV Time! Lyrics | Genius Lyrics",
+      "url": "https://genius.com/Toby-fox-its-tv-time-lyrics",
+      "snippet": "Jun 4, 2025 · It’s TV Time! Toby Fox Producer Toby Fox Track 27 on DELTARUNE Chapters 3+4 (Original Game Soundtrack) Jun. …"
+    },
+    {
+      "title": "Bub8les – It’s TV Time! Lyrics | Genius Lyrics",
+      "url": "https://genius.com/Bub8les-its-tv-time-lyrics",
+      "snippet": "It’s TV Time! Lyrics: \"That's right, folks!\" / \"1000 points goes to our finale!\" / \"So a round of applause for our star contestants!\" / …"
+    },
+    {
+      "title": "27. It’s TV Time! (DELTARUNE Chapter 3+4 Soundtrack) - Toby Fox",
+      "url": "https://www.youtube.com/watch?v=F2PJbTuZlTU",
+      "snippet": "Jun 4, 2025 · 27. It’s TV Time! (DELTARUNE Chapter 3+4 Soundtrack) - Toby Fox Toby Fox 1.36M subscribers 207K"
+    },
+    {
+      "title": "It’s TV Time! - The Deltarune Wiki",
+      "url": "https://deltarune.wiki/w/It%27s_TV_Time!",
+      "snippet": "Aug 13, 2026 · It’s TV Time! is the 27th track of the DELTARUNE Chapters 3+4 OST. It plays when the party fights against Tenna, …"
+    },
+    {
+      "title": "27. It’s TV Time! (DELTARUNE Chapter 3+4 Soundtrack) - Toby Fox",
+      "url": "https://music.youtube.com/watch?v=F2PJbTuZlTU&list=PLpj67LO6zK7ZbjnzG9KIiKlTTswDqpn7t",
+      "snippet": "It’s TV Time! (DELTARUNE Chapter 3+4 Soundtrack) - Toby Fox. 30. Black Knife (DELTARUNE Chapter 3+4 Soundtrack) - Toby …"
+    }
+  ]
+}

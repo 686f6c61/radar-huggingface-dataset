@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Eon-Blossom-V2-31B-i1-GGUF",
+  "slug": "mradermacher-eon-blossom-v2-31b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Eon-Blossom-V2-31B-i1-GGUF",
+  "created_at": "2026-09-12T11:24:30.000Z",
+  "updated_at": "2026-09-12T12:00:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 150286115744,
+  "storage_human": "150.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "3 of The Lowest Rated Super Bowl Halftime Performances",
+      "url": "https://americansongwriter.com/3-of-the-lowest-rated-super-bowl-halftime-performances/",
+      "snippet": "Feb 9, 2024 · The track record for the Super Bowl is anything but perfect. Check out three halftime performances that audiences …"
+    },
+    {
+      "title": "Super Bowl Halftime Shows Ranked: Rob Sheffield's Worst, Best",
+      "url": "https://www.rollingstone.com/culture/culture-lists/super-bowl-halftime-shows-ranked-from-worst-to-best-14201/",
+      "snippet": "Feb 12, 2024 · There is no gig in music like the Super Bowl halftime show. You have 15 minutes to justify your legend. You have 150 …"
+    },
+    {
+      "title": "List of Super Bowl halftime shows - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/List_of_Super_Bowl_halftime_shows",
+      "snippet": "The Super Bowl LI halftime show starring Lady Gaga was the most nominated Super Bowl halftime show in Emmy Awards history, …"
+    },
+    {
+      "title": "Super Bowl halftime shows, definitively ranked from worst to best",
+      "url": "https://www.usatoday.com/picture-gallery/entertainment/music/2026/01/28/super-bowl-halftime-show-best-of-all-time/88167484007/",
+      "snippet": "Jan 28, 2026 · Super Bowl halftime is often as a big a draw as the game. Check out the major stars who have taken the field …"
+    },
+    {
+      "title": "Super Bowl LX, Bad Bunny's halftime fall shy of ratings records",
+      "url": "https://www.espn.com/nfl/story/_/id/47891761/super-bowl-lx-bad-bunny-half-fall-shy-ratings-records",
+      "snippet": "Feb 11, 2026 · Seattle's 29-13 victory over New England in Super Bowl LX averaged 124.9 million viewers, while Bad Bunny's …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "NAMAA-Space/araseg-e18-xlmr-nopnx-pa-s2",
+  "slug": "namaa-space-araseg-e18-xlmr-nopnx-pa-s2",
+  "author": "NAMAA-Space",
+  "url": "https://huggingface.co/NAMAA-Space/araseg-e18-xlmr-nopnx-pa-s2",
+  "created_at": "2026-09-12T13:58:10.000Z",
+  "updated_at": "2026-09-12T14:32:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "arabic",
+    "text-segmentation",
+    "token-classification",
+    "araseg-2026",
+    "arabicnlp2026",
+    "shared-task",
+    "ar",
+    "base_model:FacebookAI/xlm-roberta-large",
+    "base_model:finetune:FacebookAI/xlm-roberta-large",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2239734894,
+  "storage_human": "2.2 GB",
+  "base_model": "FacebookAI/xlm-roberta-large",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Official Site of Playdoit",
+      "url": "https://casino-playdoit.com/en/",
+      "snippet": "Playdoit remains one of the most popular and reliable options among players. With a vast collection of games from globally …"
+    },
+    {
+      "title": "Playdoit Games - Slots, Live Casino & Big Bonuses",
+      "url": "https://playdoitca.com/games/",
+      "snippet": "From sleek slots to high-touch live tables, Playdoit Games bring variety, clarity, and quick thrills to every session. Explore the lobby, …"
+    },
+    {
+      "title": "Playdoit.mx",
+      "url": "https://www.playdoit.mx/en/home",
+      "snippet": "Playdoit es una marca nacional de juegos en línea registrada en México. PERMISO SEGOB DGJS/DCRCA/P-01/2021 OPERADO …"
+    },
+    {
+      "title": "Playdoit Casino Review 2026 — Bonuses, Games & Safety",
+      "url": "https://play-playdoit.com/casino/",
+      "snippet": "Jan 1, 2025 · I spent time exploring Playdoit Casino like a real player would: browsing the lobby, checking bonus terms, testing …"
+    },
+    {
+      "title": "Playdoit.mx | El mejor casino de México, tu retiro en menos de 1 hora.",
+      "url": "https://www.playdoit.mx/",
+      "snippet": "Playdoit es una marca nacional de juegos en línea registrada en México. PERMISO SEGOB DGJS/DCRCA/P-01/2021 OPERADO …"
+    }
+  ]
+}

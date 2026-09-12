@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "iFaz/eqm-aloha_transfer_cube-seed3-12sep2026_3pm",
+  "slug": "ifaz-eqm-aloha_transfer_cube-seed3-12sep2026_3pm",
+  "author": "iFaz",
+  "url": "https://huggingface.co/iFaz/eqm-aloha_transfer_cube-seed3-12sep2026_3pm",
+  "created_at": "2026-09-12T16:12:56.000Z",
+  "updated_at": "2026-09-12T16:16:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "imitation-learning",
+    "eqm",
+    "mujoco",
+    "pytorch_model_hub_mixin",
+    "en",
+    "dataset:lerobot/aloha_sim_transfer_cube_human",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18701190,
+  "parameters_human": "18.7M",
+  "storage_bytes": 74832124,
+  "storage_human": "75 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Magasin Intersport à CHÉCY | Intersport",
+      "url": "https://www.intersport.fr/Loiret-45/CH%C3%89CY-45430/INTERSPORT-CHECY/00227_000/",
+      "snippet": "Retrouvez toutes les informations du magasin INTERSPORT - CHECY sur cette page. Intersport : n°1 mondial de la distribution …"
+    },
+    {
+      "title": "Intersport Chécy - Tous les catalogues et promotions de Intersport à Chécy",
+      "url": "https://www.icatalogue.fr/p/checy/intersport",
+      "snippet": "Sep 2, 2026 · Retrouvez toutes les adresses et heures d'ouverture de Intersport à Chécy. Consultez aussi les catalogues et …"
+    },
+    {
+      "title": "Intersport Chécy (45430) : Horaires, téléphone et coordonnés",
+      "url": "https://www.magasin-de-sport.fr/intersport-checy-1021",
+      "snippet": "Découvrez Intersport Chécy, votre destination incontournable pour tous vos besoins en matière de sport. Situé à Chécy, notre …"
+    },
+    {
+      "title": "INTERSPORT - Le sport, la plus belle des rencontres.",
+      "url": "https://www.intersport.fr/",
+      "snippet": "Cela fait bientôt 100 ans que nous sommes engagés pour le sport. Le sport nous lie, nous rassemble. Et vous, quelle est votre plus …"
+    },
+    {
+      "title": "INTERSPORT Orleans Checy | Chécy - Facebook",
+      "url": "https://www.facebook.com/INTERSPORTChecy/",
+      "snippet": "Aug 17, 2026 · Préparez vos sorties à vélo avec INTERSPORT et profitez pleinement de l’extérieur 🚴‍♂️ Une sélection de vélos avec …"
+    }
+  ]
+}

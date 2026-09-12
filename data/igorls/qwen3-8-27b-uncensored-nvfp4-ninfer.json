@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "igorls/Qwen3.8-27B-Uncensored-NVFP4-NInfer",
+  "slug": "igorls-qwen3-8-27b-uncensored-nvfp4-ninfer",
+  "author": "igorls",
+  "url": "https://huggingface.co/igorls/Qwen3.8-27B-Uncensored-NVFP4-NInfer",
+  "created_at": "2026-09-12T16:18:31.000Z",
+  "updated_at": "2026-09-12T16:19:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "ninfer",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "ninfer",
+    "qwen3.8",
+    "uncensored",
+    "abliterated",
+    "nvfp4",
+    "fp8",
+    "bf16",
+    "dflash2",
+    "speculative-decoding",
+    "mtp",
+    "blackwell",
+    "cuda",
+    "windows",
+    "multimodal",
+    "conversational",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:incoai/Qwen3.8-27B-DFlash2",
+    "base_model:quantized:incoai/Qwen3.8-27B-DFlash2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26268462848,
+  "storage_human": "26.3 GB",
+  "base_model": "orcarouter/Qwen3.8-27B-Uncensored-NVFP4, incoai/Qwen3.8-27B-DFlash2",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Voltaire – Wikipedia",
+      "url": "https://de.m.wikipedia.org/wiki/Voltaire",
+      "snippet": "Voltaire verfügte über hervorragende Kenntnisse der englischen und der italienischen Sprache und veröffentlichte darin auch einige …"
+    },
+    {
+      "title": "Voltaire - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Voltaire",
+      "snippet": "Voltaire was a versatile and prolific writer, producing works in almost every literary form, including plays, poems, novels, essays, …"
+    },
+    {
+      "title": "Voltaire Zitate: 70 Zitate voller Witz und Weisheit, die zum …",
+      "url": "https://beruhmte-zitate.de/autoren/voltaire/",
+      "snippet": "Entdecken Sie den Witz und die Weisheit von Voltaire anhand seiner berühmtesten Zitate. Vom Hinterfragen bis zum Patriotismus, …"
+    },
+    {
+      "title": "Voltaires veröffentlichte Werke (kommentiert) - Correspondance Voltaire",
+      "url": "https://www.correspondance-voltaire.de/werk/",
+      "snippet": "Nov 5, 2025 · Correspondance Voltaire Leben und Werk: Aufklärung Über Voltaire ... Philosophisches Wörterbuch ... Werke ... Orte …"
+    },
+    {
+      "title": "Voltaire Netzwerk",
+      "url": "https://www.voltairenet.org/?lang=de",
+      "snippet": "Voltaire, internationale Nachrichten, #183-184 Saudi-Arabien, Pakistan und die Türkei bilden ein militärisches Bündnis gegen Israel …"
+    }
+  ]
+}

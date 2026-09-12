@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "NAMAA-Space/araseg-e69-naqta-nopnx-pa",
+  "slug": "namaa-space-araseg-e69-naqta-nopnx-pa",
+  "author": "NAMAA-Space",
+  "url": "https://huggingface.co/NAMAA-Space/araseg-e69-naqta-nopnx-pa",
+  "created_at": "2026-09-12T13:55:28.000Z",
+  "updated_at": "2026-09-12T14:32:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "arabic",
+    "text-segmentation",
+    "token-classification",
+    "araseg-2026",
+    "arabicnlp2026",
+    "shared-task",
+    "ar",
+    "base_model:MostafaMaroof/Naqta",
+    "base_model:finetune:MostafaMaroof/Naqta",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2239734894,
+  "storage_human": "2.2 GB",
+  "base_model": "MostafaMaroof/Naqta",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gmail Help",
+      "url": "https://support.google.com/mail/?hl=en",
+      "snippet": "Official Gmail Help Center where you can find tips and tutorials on using Gmail and other answers to frequently asked questions."
+    },
+    {
+      "title": "Create a Google Account for Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=en",
+      "snippet": "Important: Before you create a new Google Account, sign out of your current account. Learn how to sign out of Gmail. From your …"
+    },
+    {
+      "title": "תרגום תפקידים צבאיים.... | תפוז פורומים",
+      "url": "https://www.tapuz.co.il/threads/%D7%AA%D7%A8%D7%92%D7%95%D7%9D-%D7%AA%D7%A4%D7%A7%D7%99%D7%93%D7%99%D7%9D-%D7%A6%D7%91%D7%90%D7%99%D7%99%D7%9D.6738191/",
+      "snippet": "Nov 25, 2005 · בבקשה: כיתה - section מחלקה - platoon פלוגה - company גדוד - battalion מפקד - commander כל התרגומים בחסות \"מילון …"
+    },
+    {
+      "title": "תרגום אינתא עומרי | תפוז פורומים",
+      "url": "https://www.tapuz.co.il/threads/%D7%AA%D7%A8%D7%92%D7%95%D7%9D-%D7%90%D7%99%D7%A0%D7%AA%D7%90-%D7%A2%D7%95%D7%9E%D7%A8%D7%99.6312559/",
+      "snippet": "Sep 13, 2005 · תודה ../images/Emo123.gif עכשיו כולם יוכלו לראות בדיוק מה שוות תוכנות תרגום. אני מצטערת, דיוידי, אני יודעת שהכוונות שלך היו …"
+    },
+    {
+      "title": "ההוביט ושר הטבעות: הסרטים! | ערוץ 7",
+      "url": "https://www.inn.co.il/forum/t1147816",
+      "snippet": "עבר עריכה על ידי שניצל מנדרובסקי בתאריך כ\"ו בחשון תש\"פ 20:17 חשבתי לקבץ בשרשור הזה את כל הסרטים הטרילוגיה מתחילה משר הטבעות:1 שר …"
+    }
+  ]
+}

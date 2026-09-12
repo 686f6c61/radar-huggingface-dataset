@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "D21WCXZ21/MyAwesomeModel-best",
+  "slug": "d21wcxz21-myawesomemodel-best",
+  "author": "D21WCXZ21",
+  "url": "https://huggingface.co/D21WCXZ21/MyAwesomeModel-best",
+  "created_at": "2026-09-12T17:14:25.000Z",
+  "updated_at": "2026-09-12T17:47:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WinRAR 5.2-5.6经典正式纯净版本集合 拒绝臃肿 - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/thread-1028454-1-1.html",
+      "snippet": "Sep 25, 2019 · 本人喜欢使用和收藏经典纯净版软件原因：小巧、纯净、无广告、功能齐全、不臃肿这里提供winrar5.2-5.6正式版均为 …"
+    },
+    {
+      "title": "翻译工具推荐-Deepl - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/thread-1153766-1-1.html",
+      "snippet": "Apr 16, 2020 · 推荐一个翻译工具，号称谷歌翻译碾压者/信达雅翻译本人/外语学习最佳伴侣DeepL是一款来自德国的在线翻译工具，早 …"
+    },
+    {
+      "title": "How can I translate html files to another language? | Microsoft ...",
+      "url": "https://techcommunity.microsoft.com/discussions/windows11/how-can-i-translate-html-files-to-another-language/4465028",
+      "snippet": "Oct 29, 2025 · Using the DeepL API to translate HTML files to another language involves a few key steps: extracting the translatable …"
+    },
+    {
+      "title": "Recommending Deepl Translator to be included in Edge Browser",
+      "url": "https://techcommunity.microsoft.com/discussions/edgeinsiderdiscussions/recommending-deepl-translator-to-be-included-in-edge-browser/775211",
+      "snippet": "Jul 26, 2019 · Deepl translator is one of the best Translating tools used in Europe for European languages. As I have been using this …"
+    },
+    {
+      "title": "【经典怀旧】仙剑奇侠传全系列完美典藏版 - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/thread-1011448-1-1.html",
+      "snippet": "本帖最后由 KDCOOL 于 2019-8-22 00:38 编辑 前言： 首先论坛也有一些零散的仙剑系列帖子，我好多都亲测试了一下，其中好多都 …"
+    }
+  ]
+}

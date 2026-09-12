@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mkd-hossain/Keural-Cortex-8B-64K-training-state",
+  "slug": "mkd-hossain-keural-cortex-8b-64k-training-state",
+  "author": "mkd-hossain",
+  "url": "https://huggingface.co/mkd-hossain/Keural-Cortex-8B-64K-training-state",
+  "created_at": "2026-09-12T10:46:11.000Z",
+  "updated_at": "2026-09-12T11:05:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "training-state",
+    "not-a-model",
+    "fsdp",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:finetune:Qwen/Qwen3-8B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 49152838620,
+  "storage_human": "49.2 GB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "حديقة جبل رينييه الوطنية: الدليل الكامل - وجهات",
+      "url": "https://ar.liveinmidwest.com/17591780-mount-rainier-national-park-the-complete-guide",
+      "snippet": "Jan 23, 2025 · حديقة ماونت رينييه الوطنية بواشنطن: دليل سفر معلومات لزيارة حديقة ماونت رينييه الوطنية في واشنطن ، بما في ذلك ساعات العمل ومكان الإقامة ومتى يجب الزيارة"
+    },
+    {
+      "title": "المرشد لأفضل وقت لزيارة متنزه ماونت رينييه الوطني",
+      "url": "https://www.getyourguide.com/ar-eg/explorer/united-states-ttd168990/best-time-to-visit-mount-rainier-national-park/?msockid=3af4c731cbff63db1b6dd0e3ca846295",
+      "snippet": "اعثر على أفضل وقت لزيارة منتزه ماونت رينييه الوطني، من مروج الزهور البرية إلى السلامة من الانهيارات الجليدية، إليك كل ما تحتاج إلى معرفته."
+    },
+    {
+      "title": "حديقة جبل رينييه الوطنية أوقات العمل وأسعار التذاكر | خطط لزيا",
+      "url": "https://hopdays.com/ar/place/ashford/mount-rainier-national-park-ashford-united-states-of-america-poi-690503e267fe40c371eb2c44",
+      "snippet": "تحقق من ساعات العمل وأسعار التذاكر في حديقة جبل رينييه الوطنية، آشفورد قبل الذهاب. خطط لزيارتك بالاستعانة بأحدث المعلومات حول السفر ونصائح للزوار."
+    },
+    {
+      "title": "منتزه ماونت رينييه الوطني، مقاطعة بيرس، واشنطن - احجز تذاكر وجولات ...",
+      "url": "https://www.getyourguide.com/ar-eg/mount-rainier-national-park-l92222/?msockid=3af4c731cbff63db1b6dd0e3ca846295",
+      "snippet": "احجز تذاكر منتزه ماونت رينييه الوطني عبر الإنترنت. وفّر الوقت والمال مع ضمان أفضل الأسعار. حقق أقصى استفادة من زيارتك إلى مقاطعة بيرس، واشنطن."
+    },
+    {
+      "title": "جولة يومية إلى حديقة جبل رينييه الوطنية في سياتل، الولايات المتحدة",
+      "url": "https://om.trip.com/things-to-do/detail/85931776/",
+      "snippet": "استمتعنا برحلة لا تُنسى إلى جبل رينييه برفقة مرشدنا السياحي الرائع، زاندر! كان يتمتع بمعرفة واسعة، وبذل جهدًا كبيرًا ليأخذنا إلى العديد من المناظر الخلابة والمعالم السياحية على طول الطريق."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Athar-vchau/generation-2024",
+  "slug": "athar-vchau-generation-2024",
+  "author": "Athar-vchau",
+  "url": "https://huggingface.co/Athar-vchau/generation-2024",
+  "created_at": "2026-09-12T17:54:44.000Z",
+  "updated_at": "2026-09-12T17:54:50.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ATHAR, L'héritage islamique comme vous ne l'avez jamais vu",
+      "url": "https://www.athar.fr/",
+      "snippet": "ATHAR, streaming islamique premium en français. Récits en qualité cinéma sur les Prophètes, les Compagnons et les civilisations. …"
+    },
+    {
+      "title": "ATHAR, Accès gratuit",
+      "url": "https://www.athar.fr/acces-gratuit",
+      "snippet": "Déjà membre ? Se connecter Utilisez la même adresse e-mail sur le site et dans l'application. © 2026 ATHAR · Confidentialité · …"
+    },
+    {
+      "title": "ATHAR | Vêtements Homme & Streetwear Minimaliste – Athar",
+      "url": "https://atharummah.fr/",
+      "snippet": "ATHAR - marque de vêtements streetwear minimaliste pour homme. Découvrez Legacy, notre t-shirt noir 100 % coton inspiré de …"
+    },
+    {
+      "title": "ATHAr Maghreb | Axe Transversal histoire et archéologie du Maghreb …",
+      "url": "https://athar.hypotheses.org/",
+      "snippet": "Le carnet ATHAr fait partie du bouquet de carnets Hypotheses.org réalisés dans le cadre de la Recherche transversale …"
+    },
+    {
+      "title": "Atharisme — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Atharisme",
+      "snippet": "Wikipedia® est une marque déposée de la Wikimedia Foundation, Inc., organisation de bienfaisance régie par le paragraphe …"
+    }
+  ]
+}

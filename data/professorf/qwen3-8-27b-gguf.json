@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "professorf/Qwen3.8-27B-gguf",
+  "slug": "professorf-qwen3-8-27b-gguf",
+  "author": "professorf",
+  "url": "https://huggingface.co/professorf/Qwen3.8-27B-gguf",
+  "created_at": "2026-09-12T19:25:56.000Z",
+  "updated_at": "2026-09-12T19:43:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "image-text-to-text",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 83142744640,
+  "storage_human": "83.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Transgender gifs - Reddit",
+      "url": "https://www.reddit.com/r/Tgifs/",
+      "snippet": "Gifs from all your favorite Transgender Women."
+    },
+    {
+      "title": "Unabashed and Unashamed - Boners in the wild - Reddit",
+      "url": "https://www.reddit.com/r/BonersInPublic/",
+      "snippet": "Hard Guys in Public Places"
+    },
+    {
+      "title": "Comment faire pour télécharger des vidéos sur n'importe quel site",
+      "url": "https://forums.commentcamarche.net/forum/affich-25637287-comment-faire-pour-telecharger-des-videos-sur-n-importe-quel-site",
+      "snippet": "Avant j'avais un plugin ou extension avec firefox qui me permetait de télécharger une vidéo sur n'importe quel site ! c'était vraiment …"
+    },
+    {
+      "title": "Me desabonner de xhamster - Consommation & Internet",
+      "url": "https://forums.commentcamarche.net/forum/affich-36202161-me-desabonner-de-xhamster",
+      "snippet": "Sep 7, 2019 · Me desabonner de xhamster Utilisateur anonyme- jeanbern Messages postés13740Date d'inscription …"
+    },
+    {
+      "title": "Asians Gone Erotic - Reddit",
+      "url": "https://www.reddit.com/r/AsiansGoneErotic/",
+      "snippet": "OC-only photos of erotic Asians. Please glance over pinned posts :) Both nudity and non-nudity allowed [18+]"
+    }
+  ]
+}

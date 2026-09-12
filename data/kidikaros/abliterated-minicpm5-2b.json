@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "KidIkaros/abliterated-minicpm5-2b",
+  "slug": "kidikaros-abliterated-minicpm5-2b",
+  "author": "KidIkaros",
+  "url": "https://huggingface.co/KidIkaros/abliterated-minicpm5-2b",
+  "created_at": "2026-09-12T12:07:52.000Z",
+  "updated_at": "2026-09-12T12:11:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "text-generation",
+    "transformer",
+    "abliterated",
+    "refusal-free",
+    "pytorch",
+    "conversational",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:finetune:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 5033556432,
+  "storage_human": "5.0 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dni Białołęki 2026 - Białołęka",
+      "url": "https://bialoleka.um.warszawa.pl/-/dni-bialoleki-2026-1",
+      "snippet": "W niedzielę, 14 czerwca, Dni Białołęki przeniosą się do Parku Picassa, gdzie na mieszkańców czekać będzie dzień pełen atrakcji i …"
+    },
+    {
+      "title": "KidIkaros/abliterated-minicpm5-2b-ggml · Hugging Face",
+      "url": "https://huggingface.co/KidIkaros/abliterated-minicpm5-2b-ggml",
+      "snippet": "This is an abliterated version of MiniCPM5-2B (~2.8B dense parameters) with refusal directions removed across 20 strong layers (layers 13, 17, 20-41). The model has 100% refusal removal on harmful prompts while maintaining ~97% perplexity retention."
+    },
+    {
+      "title": "MiniCPM5-2B - Intelligence, Performance & Price Analysis | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/models/minicpm5-2b",
+      "snippet": "The model supports text input, outputs text, and has a 131k tokens context window with knowledge up to December 2025. MiniCPM5-2B scores 13 on the Artificial Analysis Intelligence Index, placing it well above average among comparable models ..."
+    },
+    {
+      "title": "Dni Białołęki 2026 - Białołęka",
+      "url": "https://bialoleka.um.warszawa.pl/-/dni-bialoleki-2026",
+      "snippet": "W weekend 13–14 czerwca Białołęka zamieni się w przestrzeń wspólnego świętowania, pełną atrakcji dla mieszkanek i mieszkańców …"
+    },
+    {
+      "title": "Dni Białołęki 2026 [PROGRAM WYDARZEŃ] - warsawnow.pl",
+      "url": "https://warsawnow.pl/dni-bialoleki-2026/",
+      "snippet": "W niedzielę, 14 czerwca, Dni Białołęki 2026 rozpoczną się wyjątkowym spotkaniem z jednym z najważniejszych głosów polskiego hip …"
+    }
+  ]
+}

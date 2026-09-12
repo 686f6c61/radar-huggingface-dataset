@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "osama-bin/sar-oil-spill-classifier",
+  "slug": "osama-bin-sar-oil-spill-classifier",
+  "author": "osama-bin",
+  "url": "https://huggingface.co/osama-bin/sar-oil-spill-classifier",
+  "created_at": "2026-09-12T16:44:01.000Z",
+  "updated_at": "2026-09-12T16:44:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 157577671,
+  "storage_human": "158 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Osama bin Laden - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Osama_bin_Laden",
+      "snippet": ""
+    },
+    {
+      "title": "Oussama ben Laden — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Oussama_ben_Laden",
+      "snippet": "Oussama Ben Laden pue du cul (Osama bin Laden Has Farty Pants en version originale) est le neuvième épisode de la cinquième …"
+    },
+    {
+      "title": "Osama — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Osama",
+      "snippet": "Osama (أسامة) est un film afghano - irlando - japonais de Siddiq Barmak sorti en 2003. Son financement a été soutenu par le Festival …"
+    },
+    {
+      "title": "Osama - Film 2003 - AlloCiné",
+      "url": "https://www.allocine.fr/film/fichefilm_gen_cfilm=52623.html",
+      "snippet": "Sep 3, 2011 · Osama est un film réalisé par Sedigh Barmak avec Marina Golbahari, Khawaja Nader."
+    },
+    {
+      "title": "Killing of Osama bin Laden - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Killing_of_Osama_bin_Laden",
+      "snippet": "Osama bin Laden was killed in the raid and initial versions said three other men and a woman were killed as well: bin Laden's adult …"
+    }
+  ]
+}

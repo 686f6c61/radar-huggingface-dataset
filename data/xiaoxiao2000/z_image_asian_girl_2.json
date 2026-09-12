@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "XiaoXiao2000/Z_Image_Asian_girl_2",
+  "slug": "xiaoxiao2000-z_image_asian_girl_2",
+  "author": "XiaoXiao2000",
+  "url": "https://huggingface.co/XiaoXiao2000/Z_Image_Asian_girl_2",
+  "created_at": "2026-09-12T16:06:19.000Z",
+  "updated_at": "2026-09-12T16:36:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 568843720,
+  "storage_human": "569 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI",
+      "url": "https://chat.openai.com/auth/login?next=/chat",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "ios.chat.openai.com",
+      "url": "https://ios.chat.openai.com/cdn-cgi/trace",
+      "snippet": "fl=745f6 h=ios.chat.openai.com ip=207.46.13.17 ts=1789225713.000 visit_scheme=https uag=Mozilla/5.0 AppleWebKit/537.36 …"
+    },
+    {
+      "title": "android.chat.openai.com",
+      "url": "https://android.chat.openai.com/cdn-cgi/trace",
+      "snippet": "fl=1291f123 h=android.chat.openai.com ip=40.77.167.32 ts=1789166521.000 visit_scheme=https uag=Mozilla/5.0 …"
+    }
+  ]
+}

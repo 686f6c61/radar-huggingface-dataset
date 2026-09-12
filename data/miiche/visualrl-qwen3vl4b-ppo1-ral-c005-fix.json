@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Miiche/visualrl-qwen3vl4b-ppo1-ral-c005-fix",
+  "slug": "miiche-visualrl-qwen3vl4b-ppo1-ral-c005-fix",
+  "author": "Miiche",
+  "url": "https://huggingface.co/Miiche/visualrl-qwen3vl4b-ppo1-ral-c005-fix",
+  "created_at": "2026-09-10T09:26:41.000Z",
+  "updated_at": "2026-09-12T13:54:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 562459784464,
+  "storage_human": "562.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2025 Michigan Wolverines football team - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2025_Michigan_Wolverines_football_team",
+      "snippet": "The 2025 Michigan Wolverines football team was an American football team that represented the University of Michigan as a member …"
+    },
+    {
+      "title": "2025 Michigan Wolverines Stats - Sports-Reference.com",
+      "url": "https://www.sports-reference.com/cfb/schools/michigan/2025.html",
+      "snippet": "Bold season totals indicate player led conference. Black Ink appears for stats with a leaderboard."
+    },
+    {
+      "title": "Michigan Wolverines Scores, Stats and Highlights - ESPN",
+      "url": "https://www.espn.com/college-football/team/_/id/130/michigan-wolverines",
+      "snippet": "Visit ESPN for Michigan Wolverines live scores, video highlights, and latest news. Find standings and the full 2026 season schedule."
+    },
+    {
+      "title": "2025 College Football Standings and Rankings | College Football at ...",
+      "url": "https://www.sports-reference.com/cfb/years/2025-standings.html",
+      "snippet": "Check out the 2025 College Football Standings and Rankings, and more about College Football at Sports-Reference.com"
+    },
+    {
+      "title": "Football - University of Michigan Athletics",
+      "url": "https://mgoblue.com/sports/football/",
+      "snippet": "Oct 31, 2010 · The official Football page for the Michigan Wolverines"
+    }
+  ]
+}

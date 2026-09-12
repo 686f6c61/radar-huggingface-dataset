@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "RyanYr/asyncrl-math_adpklr_s40_b0p01_be2_shift0p01_truncneg1_shuf-gs80",
+  "slug": "ryanyr-asyncrl-math_adpklr_s40_b0p01_be2_shift0p01_truncneg1_shuf-gs80",
+  "author": "RyanYr",
+  "url": "https://huggingface.co/RyanYr/asyncrl-math_adpklr_s40_b0p01_be2_shift0p01_truncneg1_shuf-gs80",
+  "created_at": "2026-09-12T10:41:20.000Z",
+  "updated_at": "2026-09-12T10:43:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21903245654,
+  "storage_human": "21.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yahoo Mail | Email with smart features and top-notch security",
+      "url": "https://fr.mail.yahoo.com/",
+      "snippet": "Yahoo Mail: Your smarter, faster, free email solution. Organize your inbox, protect your privacy, and tackle tasks efficiently with AI …"
+    },
+    {
+      "title": "Done - Yahoo Mail",
+      "url": "https://mail.yahoo.com/d?.lang=fr-FR",
+      "snippet": "Connectez-vous et découvrez tous les outils gratuits permettant d’avoir une boîte mail bien organisée. Découvrez de nouveaux …"
+    },
+    {
+      "title": "Connexion - Se connecter à Yahoo - Yahoo Mail",
+      "url": "https://mail.yahoo.com/dc/blank.html?bn=211.6&.intl=fr&.lang=fr-FR",
+      "snippet": "Connectez-vous pour accéder à Yahoo Mail, toujours plus performant : Yahoo Mail, actualités locales, nationales et internationales, …"
+    },
+    {
+      "title": "Yahoo Courriel",
+      "url": "https://cf.mail.yahoo.com/d",
+      "snippet": "Get StuffDone Gagner du temps? Économiser de l’argent? C’est comme si c’était fait avec Yahoo Mail."
+    },
+    {
+      "title": "Login - Sign in to Yahoo",
+      "url": "https://login.yahoo.com/",
+      "snippet": "Sign in to access the best in class Yahoo Mail, breaking local, national and global news, finance, sports, music, movies... You get …"
+    }
+  ]
+}

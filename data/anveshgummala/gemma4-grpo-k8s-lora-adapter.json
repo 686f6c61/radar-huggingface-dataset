@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "AnveshGummala/gemma4-grpo-k8s-lora-adapter",
+  "slug": "anveshgummala-gemma4-grpo-k8s-lora-adapter",
+  "author": "AnveshGummala",
+  "url": "https://huggingface.co/AnveshGummala/gemma4-grpo-k8s-lora-adapter",
+  "created_at": "2026-09-12T13:24:00.000Z",
+  "updated_at": "2026-09-12T13:29:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:AnveshGummala/gemma4-merged-k8s",
+    "grpo",
+    "lora",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:2402.03300",
+    "base_model:adapter:AnveshGummala/gemma4-merged-k8s",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 105108943,
+  "storage_human": "105 MB",
+  "base_model": "AnveshGummala/gemma4-merged-k8s",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Query - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Query",
+      "snippet": "This disambiguation page lists articles associated with the title Query. If an internal link incorrectly led you here, you may wish to …"
+    },
+    {
+      "title": "QUERY | Norsk oversettelse – Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/no/ordbok/engelsk-norsk/query",
+      "snippet": "Eksempler på query query The manually evaluated material amounts to 410 randomly picked compound queries, resulting in 3.367 …"
+    },
+    {
+      "title": "Home - Query",
+      "url": "https://www.query.ai/",
+      "snippet": "Query is a federated search platform for security data providing expanded data visibility without centralization."
+    },
+    {
+      "title": "Query - definition of query by The Free Dictionary",
+      "url": "https://www.thefreedictionary.com/query",
+      "snippet": "query , inquiry, enquiry - A query is a single question; an inquiry (or enquiry) may be a single question or extensive investigation (i.e. …"
+    },
+    {
+      "title": "QUERY | Engelsk betydning – Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/no/ordbok/engelsk/query",
+      "snippet": "QUERY sin definisjon: 1. a question, often expressing doubt about something or looking for an answer from an authority…. Finn ut mer."
+    }
+  ]
+}

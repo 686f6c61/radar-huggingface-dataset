@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "lokeshe09/gemma-4-31B-it-SFT_OCRRRRRR-INT8",
+  "slug": "lokeshe09-gemma-4-31b-it-sft_ocrrrrrr-int8",
+  "author": "lokeshe09",
+  "url": "https://huggingface.co/lokeshe09/gemma-4-31B-it-SFT_OCRRRRRR-INT8",
+  "created_at": "2026-09-12T11:04:38.000Z",
+  "updated_at": "2026-09-12T11:09:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "quantized",
+    "int8",
+    "llmcompressor",
+    "image-text-to-text",
+    "conversational",
+    "base_model:lokeshe09/gemma-4-31B-it-SFT_OCRRRRRR",
+    "base_model:quantized:lokeshe09/gemma-4-31B-it-SFT_OCRRRRRR",
+    "license:apache-2.0",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 33300290114,
+  "storage_human": "33.3 GB",
+  "base_model": "lokeshe09/gemma-4-31B-it-SFT_OCRRRRRR",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign in - Claude",
+      "url": "https://claude.ai/",
+      "snippet": "Claude is an AI assistant by Anthropic, designed to assist with creative tasks like drafting websites, graphics, documents, and code …"
+    },
+    {
+      "title": "claude.ai",
+      "url": "https://claude.ai/install.cmd",
+      "snippet": "echo. echo Installation complete^^! echo. exit /b 0 REM …"
+    },
+    {
+      "title": "Slack - assets.claude.ai",
+      "url": "https://assets.claude.ai/brand/artifacts/product/tag/tag-catch-up.html",
+      "snippet": "Pricing page copy is approved — design can proceed. Still open: No timeline yet on when Legal's pass will be done — Thursday …"
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.ai/downloadStep",
+      "snippet": "Claude is Anthropic's AI, built for problem solvers. Tackle complex challenges, analyze data, write code, and think through your …"
+    },
+    {
+      "title": "downloads.claude.ai",
+      "url": "https://downloads.claude.ai/claude-code-releases/2.1.187/manifest.json",
+      "snippet": "{ \"version\": \"2.1.187\", \"commit\": \"6a53320fad5541a68d79e4b6c53677df77b98e33\", \"buildDate\": \"2026-06-23T17:07:42Z\", \"platforms\": …"
+    }
+  ]
+}

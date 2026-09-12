@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "GermannM/Kenga-v2",
+  "slug": "germannm-kenga-v2",
+  "author": "GermannM",
+  "url": "https://huggingface.co/GermannM/Kenga-v2",
+  "created_at": "2026-09-12T15:20:17.000Z",
+  "updated_at": "2026-09-12T15:36:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "gguf",
+    "kenga",
+    "russian",
+    "z-system",
+    "qwen2",
+    "conversational",
+    "ru",
+    "en",
+    "base_model:GermannM/Kenga",
+    "base_model:adapter:GermannM/Kenga",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 4079716864,
+  "storage_human": "4.1 GB",
+  "base_model": "GermannM/Kenga",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Un marinaio viene salvato appena in tempo mentre un enorme …",
+      "url": "https://www.portadaestrela.com/cronaca/un-marinaio-viene-salvato-appena-in-tempo-mentre-un-enorme-incendio-da-record-distrugge-lisola-della-california/105109/",
+      "snippet": "May 19, 2026 · Un enorme incendio continua a infuriare sull’isola di Santa Rosa, bruciando più di 10.000 acri dell’isola panoramica …"
+    },
+    {
+      "title": "10.8.1941, la regia nave California viene silurata – La voce del marinaio",
+      "url": "https://www.lavocedelmarinaio.com/2026/08/10-8-1941-la-regia-nave-california-viene-silurata-2/",
+      "snippet": "Aug 10, 2026 · Il 13 ottobre 1941 affondò a causa di un forte incendio sviluppatosi a bordo. La regia nave California, trasformata in …"
+    },
+    {
+      "title": "La voce del marinaio – Blog a carattere marinaresco. Storie ...",
+      "url": "https://www.lavocedelmarinaio.com/",
+      "snippet": "16 hours ago · L’esplosione avvenne a poppa e si salvarono solo 39 marinai che si trovavano a proravia. L’urto avvenne al largo di …"
+    },
+    {
+      "title": "United States Navy - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/United_States_Navy",
+      "snippet": "La distinzione fra ufficiali e marinai è rappresentata dai differenti colori: solo gli ufficiali e i Chief Petty Officers sono autorizzati a …"
+    },
+    {
+      "title": "Marinaio - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Marinaio",
+      "snippet": "I compiti dei marinai sono molteplici: badano alla gestione della nave, svolgere la regolare manutenzione, e in alcuni casi devono …"
+    }
+  ]
+}

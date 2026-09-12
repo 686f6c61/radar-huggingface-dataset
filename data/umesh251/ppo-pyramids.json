@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "umesh251/ppo-Pyramids",
+  "slug": "umesh251-ppo-pyramids",
+  "author": "umesh251",
+  "url": "https://huggingface.co/umesh251/ppo-Pyramids",
+  "created_at": "2026-09-12T16:18:12.000Z",
+  "updated_at": "2026-09-12T16:18:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "unity-ml-agents",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30528715,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top mods at HumanitZ Nexus - Mods and community",
+      "url": "https://www.nexusmods.com/humanitz/mods/top",
+      "snippet": "Jun 23, 2026 · Drag & drop to install PAK and UE4SS mods, toggle them on/off, edit mod configs through a clean UI, save mod …"
+    },
+    {
+      "title": "HumanitZ Vehicle Tier List and Best Vehicles Guide 2026",
+      "url": "https://grindnstrat.com/humanitz-vehicle-tier-list/",
+      "snippet": "May 12, 2026 · This guide breaks down every major vehicle, explains the full stats table, and helps you understand which cars are …"
+    },
+    {
+      "title": "HumanitZ - Nexus Mods",
+      "url": "https://www.nexusmods.com/games/humanitz",
+      "snippet": "Discover mods for HumanitZ on Nexus Mods."
+    },
+    {
+      "title": "Vehicle Mods Explained - HumanitZ ‘Armored Frontier’ Update .918",
+      "url": "https://www.youtube.com/watch?v=P_zasEoNDqI",
+      "snippet": "Aug 19, 2025 · My easy guide to explain the new vehicle mods. The HumanitZ “Armored Frontier” update finally brings vehicle mods …"
+    },
+    {
+      "title": "HumanitZ Mods",
+      "url": "https://www.modsportal.com/humanitz/mods/",
+      "snippet": "Browse and download the latest HumanitZ mods. Find texture packs, characters, gameplay overhauls, and more created by the …"
+    }
+  ]
+}

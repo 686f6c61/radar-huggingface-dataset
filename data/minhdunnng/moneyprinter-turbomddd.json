@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "minhdunnng/moneyprinter-turbomddd",
+  "slug": "minhdunnng-moneyprinter-turbomddd",
+  "author": "minhdunnng",
+  "url": "https://huggingface.co/minhdunnng/moneyprinter-turbomddd",
+  "created_at": "2026-09-12T15:35:46.000Z",
+  "updated_at": "2026-09-12T15:35:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CEWE FOTOBUCH erstellen | Testsieger 2026",
+      "url": "https://www.cewe.de/cewe-fotobuch.html",
+      "snippet": "Ein CEWE FOTOBUCH mit 100 Seiten kann preislich sehr stark variieren, da Format, Einband, Papier und Extras einen großen …"
+    },
+    {
+      "title": "CEWE.de: Verzaubern Sie mit Ihren Fotos",
+      "url": "https://www.cewe.de/",
+      "snippet": "CEWE Community Kreative Ideen austauschen Finden Sie neue Ideen und erleben Sie den lebendigen Austausch mit anderen …"
+    },
+    {
+      "title": "CEWE FOTOBUCH Kundenbeispiele",
+      "url": "https://www.cewe.de/cewe-fotobuch/kundenbeispiele.html",
+      "snippet": "Unsere Kundenbeispiele zeigen die vielfältigen Gestaltungsmöglichkeiten der CEWE Fotobücher. Jetzt inspirieren lassen & selber …"
+    },
+    {
+      "title": "CEWE Login | Jetzt sicher anmelden",
+      "url": "https://www.cewe.de/login.html",
+      "snippet": "Entdecken Sie die Vielfalt vom CEWE FOTOBUCH Besonders beliebt bei der Gestaltung von Fotoprodukten ist das CEWE …"
+    },
+    {
+      "title": "CEWE Fotowelt Bestellsoftware - Kostenloser Download | CEWE",
+      "url": "https://www.cewe.de/bestellsoftware.html",
+      "snippet": "Unsere CEWE FOTOBUCH Experten Andreas Scholz und Thorsten Schütte freuen sich über Ihre Anmeldung. In den Webinaren …"
+    }
+  ]
+}

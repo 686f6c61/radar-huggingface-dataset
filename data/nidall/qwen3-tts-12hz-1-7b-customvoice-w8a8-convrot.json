@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "NidAll/Qwen3-TTS-12Hz-1.7B-CustomVoice-W8A8-ConvRot",
+  "slug": "nidall-qwen3-tts-12hz-1-7b-customvoice-w8a8-convrot",
+  "author": "NidAll",
+  "url": "https://huggingface.co/NidAll/Qwen3-TTS-12Hz-1.7B-CustomVoice-W8A8-ConvRot",
+  "created_at": "2026-09-12T12:17:18.000Z",
+  "updated_at": "2026-09-12T12:34:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_tts",
+    "qwen3-tts",
+    "text-to-speech",
+    "audio",
+    "quantized",
+    "comfyui",
+    "base_model:Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+    "base_model:finetune:Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1917339400,
+  "parameters_human": "1.92B",
+  "storage_bytes": 3028393860,
+  "storage_human": "3.0 GB",
+  "base_model": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pornhubで45万の請求が来てしまって年齢確認のところを押しただけ …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11304353466",
+      "snippet": "Pornhubで45万の請求が来てしまって 年齢確認 のところを押しただけで出てしまったんですが ワンクリック詐欺 でしょうか...？？ …"
+    },
+    {
+      "title": "竹前美結さんは美人ですか？ - Yahoo!知恵袋",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11328235186",
+      "snippet": "May 20, 2026 · すごいのは本人じゃなくて日本の加工技術です。 美人といえば、鳥取・米子のレンガ投げ女の方が美人です。"
+    },
+    {
+      "title": "Supprimer mon compte pornhub - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-37008466-supprimer-mon-compte-pornhub",
+      "snippet": "Dec 23, 2020 · Supprimer mon compte pornhub Tchoinbig - Modifié le 23 déc. 2020 à 06:11 bazfile - 23 déc. 2020 à 10:28"
+    },
+    {
+      "title": "Msn - Actualités High-Tech",
+      "url": "https://forums.commentcamarche.net/forum/affich-2070347-msn",
+      "snippet": "Jan 31, 2006 · En effet, msn 8.0 sera malheureusement payant avec un coût de 9.99 euros/mois ou 99.99 par an. Mais, on peut …"
+    },
+    {
+      "title": "これまで5kplayerでpornhubをダウンロードできたのです... - Yahoo!知 …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q13171028583",
+      "snippet": "Feb 26, 2017 · これまで5kplayerでpornhubをダウンロードできたのですが、急に「ダウンロードが失敗しました」となりできなく …"
+    }
+  ]
+}

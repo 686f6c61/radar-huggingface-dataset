@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "icebitz/co82",
+  "slug": "icebitz-co82",
+  "author": "icebitz",
+  "url": "https://huggingface.co/icebitz/co82",
+  "created_at": "2026-09-11T09:28:54.000Z",
+  "updated_at": "2026-09-12T17:00:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 61473567024,
+  "storage_human": "61.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Online Photo Editor & Collage Maker | piZap",
+      "url": "https://www.pizap.com/",
+      "snippet": "piZap is the fun, free online photo editor & collage maker. Add effects, fonts, stickers, collage layouts, borders, frames, and editing …"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "piZap - free online photo editor - fun photo effects editor",
+      "url": "https://www.pizap.com/app/",
+      "snippet": "piZap Photo Editor is fun and easy to learn online photo editor & collage maker. Tons of effects, fonts, stickers, collage layouts, …"
+    },
+    {
+      "title": "icebitz/co80 · Hugging Face",
+      "url": "https://huggingface.co/icebitz/co80",
+      "snippet": "icebitz / co80 like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Free Online Photo Editor | piZap",
+      "url": "https://browse.pizap.com/free-online-photo-editor",
+      "snippet": "In piZap, you can edit photos online with text, stickers, filters, frames, and backgrounds. Start with an uploaded photo, stock image, …"
+    }
+  ]
+}

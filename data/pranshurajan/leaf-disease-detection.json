@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "pranshurajan/leaf-disease-detection",
+  "slug": "pranshurajan-leaf-disease-detection",
+  "author": "pranshurajan",
+  "url": "https://huggingface.co/pranshurajan/leaf-disease-detection",
+  "created_at": "2026-09-12T14:15:57.000Z",
+  "updated_at": "2026-09-12T14:19:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 178074041,
+  "storage_human": "178 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.it/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=it-it",
+      "snippet": "Pubblicità Informazioni su Google Google.com in English © 2026 - Privacy - Termini"
+    },
+    {
+      "title": "Browser web Google Chrome",
+      "url": "https://www.google.com/intl/it/chrome/",
+      "snippet": "Svolgi le attività con o senza Wi-Fi. Svolgi le tue attività in Gmail, Documenti Google, Presentazioni Google, Fogli Google, Google …"
+    },
+    {
+      "title": "Accedi - Account Google",
+      "url": "https://accounts.google.com/login?hl=it",
+      "snippet": "Non si tratta del tuo computer? Utilizza una finestra di navigazione privata per accedere. Scopri di più sull'utilizzo della modalità …"
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://earth.google.it/",
+      "snippet": "Google Earth è la versione digitale più fotorealistica del nostro pianeta. Da dove provengono le immagini? Come sono assemblate? E …"
+    }
+  ]
+}

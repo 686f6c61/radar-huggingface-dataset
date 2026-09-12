@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "wepiqx/NeoHorse-1-9B-MERNIK-GGUF",
+  "slug": "wepiqx-neohorse-1-9b-mernik-gguf",
+  "author": "wepiqx",
+  "url": "https://huggingface.co/wepiqx/NeoHorse-1-9B-MERNIK-GGUF",
+  "created_at": "2026-09-12T08:31:52.000Z",
+  "updated_at": "2026-09-12T18:12:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "quantization",
+    "llama-cpp",
+    "imatrix",
+    "hybrid-quantization",
+    "MERNIK",
+    "humaneval",
+    "coding",
+    "text-generation",
+    "en",
+    "base_model:TokenRhythm/NeoHorse-1-9B",
+    "base_model:quantized:TokenRhythm/NeoHorse-1-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 6826998800,
+  "storage_human": "6.8 GB",
+  "base_model": "TokenRhythm/NeoHorse-1-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Webmail - Accédez à vos emails Free - webmail.free.fr",
+      "url": "https://webmail.free.fr/pow/pow/zimbra/m/zmain",
+      "snippet": "Accédez facilement à vos emails via le Webmail de Free. Pour une gestion efficace des emails via une interface intuitive. Connectez …"
+    },
+    {
+      "title": "Webmail - Accédez à vos emails Free",
+      "url": "https://zimbra.free.fr/",
+      "snippet": "Accédez facilement à vos emails via le Webmail de Free. Pour une gestion efficace des emails via une interface intuitive. Connectez …"
+    },
+    {
+      "title": "Email Free : comment consulter ou envoyer mes emails ?",
+      "url": "https://assistance.free.fr/articles/consulter-ou-envoyer-vos-e-mails-608",
+      "snippet": "Rendez-vous sur le Webmail de Free. Saisissez votre adresse email Free en incluant @free.fr et votre mot de passe, puis cliquez sur …"
+    },
+    {
+      "title": "Découvrez la version du nouveau webmail de Free !",
+      "url": "https://portail.free.fr/mag-free/nouveautes/decouvrez-la-version-du-nouveau-webmail-de-free/",
+      "snippet": "Sep 26, 2023 · Cette nouvelle version du Webmail propose une interface personnalisable, basée sur Roundcube, qui est plus …"
+    },
+    {
+      "title": "Comment accéder à sa boîte mail Free ? | Guide Free",
+      "url": "https://www.echosdunet.net/free/aide/boite-mail",
+      "snippet": "May 6, 2026 · Pour accéder à votre compte Webmail Free, il suffit de suivre quelques étapes simples : 2 Entrer votre identifiant …"
+    }
+  ]
+}

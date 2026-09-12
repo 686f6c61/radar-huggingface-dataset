@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ItsnotAilabs/Sovereign-Swarm-Coherence-v1",
+  "slug": "itsnotailabs-sovereign-swarm-coherence-v1",
+  "author": "ItsnotAilabs",
+  "url": "https://huggingface.co/ItsnotAilabs/Sovereign-Swarm-Coherence-v1",
+  "created_at": "2026-09-11T07:37:39.000Z",
+  "updated_at": "2026-09-12T18:30:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "kuramoto_swarm_coherence_network",
+    "swarm-intelligence",
+    "kuramoto-model",
+    "phase-synchronization",
+    "distributed-agents",
+    "time-series",
+    "robotics",
+    "multi-agent-systems",
+    "feature-extraction",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 36,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4110732,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "恩山无线论坛 - Powered by Discuz!",
+      "url": "https://www.right.com.cn/forum/forum.php",
+      "snippet": "Sep 13, 2026 · 恩山无线论坛-无线路由器爱好者的乐园"
+    },
+    {
+      "title": "RZ616（MT7922）无线网卡-WIFI和蓝牙驱动官方下载地址",
+      "url": "https://www.right.com.cn/forum/thread-8362141-1-1.html",
+      "snippet": "Apr 5, 2024 · 由于家里买的全都是联发科方案的路由，有mt7981和mt7986，想到无线网卡也用联发科的会不会有神秘加成，就从小黄 …"
+    },
+    {
+      "title": "内蒙古奔腾融媒直播源-国内iptv、软件、代码、源-恩 ...",
+      "url": "https://www.right.com.cn/forum/thread-8454661-1-1.html",
+      "snippet": "Nov 11, 2025 · token过期。已经下载过的话，请重新下一次。附件已更新，解决了token过期的问题。刚发现奔腾融 …"
+    },
+    {
+      "title": "教育网（北京）直播源-国内iptv、软件、代码、源-恩 ...",
+      "url": "https://www.right.com.cn/forum/thread-4030147-1-1.html",
+      "snippet": "May 21, 2020 · 搬运一套中国教育网（北京）直播源，很不错的！1920×1080CCTV-1HD,rtmp://58.200.131.2,1935/livetv/cctv1hdCCTV …"
+    },
+    {
+      "title": "【直播源转换|直播源在线测试】纯前端实现的TXT转M3U ...",
+      "url": "https://www.right.com.cn/forum/thread-8406846-1-1.html",
+      "snippet": "Jan 14, 2026 · 在论坛里看到很多分享了直播源转换的小工具，还有直播测试的工具，深受启发懂一点前端技术，最近把这几个功能简 …"
+    }
+  ]
+}

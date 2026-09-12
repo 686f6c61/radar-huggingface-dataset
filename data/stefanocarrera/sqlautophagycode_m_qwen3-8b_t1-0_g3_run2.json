@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.0_g3_run2",
+  "slug": "stefanocarrera-sqlautophagycode_m_qwen3-8b_t1-0_g3_run2",
+  "author": "stefanocarrera",
+  "url": "https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.0_g3_run2",
+  "created_at": "2026-09-12T11:22:17.000Z",
+  "updated_at": "2026-09-12T11:22:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186078190,
+  "storage_human": "186 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Bonjour, Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux …"
+    },
+    {
+      "title": "Impossible de recevoir le code verif Canva - Forum Services en ligne",
+      "url": "https://forums.commentcamarche.net/forum/affich-38299352-impossible-de-recevoir-le-code-verif-canva",
+      "snippet": "Jul 15, 2026 · Bonjour, Je tente désespéramment de me connecter au compte Canva de mon entreprise. On m'a envoyé une …"
+    },
+    {
+      "title": "Mua ChatGPT cho doanh nghiệp có hóa đơn tại Việt Nam",
+      "url": "https://tinhte.vn/thread/mua-chatgpt-cho-doanh-nghiep-co-hoa-don-tai-viet-nam.4075713/",
+      "snippet": "Trong thời đại chuyển đổi số mạnh mẽ, việc mua ChatGPT cho doanh nghiệp đang trở thành nhu cầu thiết yếu của nhiều công ty tại …"
+    },
+    {
+      "title": "Mục sở thị Google Pics \"AI xử lý ảnh\" mới được tích hợp thẳng vào …",
+      "url": "https://tinhte.vn/thread/muc-so-thi-google-pics-ai-xu-ly-anh-moi-duoc-tich-hop-thang-vao-docs-va-slides-khien-canva-va.4173859/",
+      "snippet": "Mục sở thị Google Pics \"AI xử lý ảnh\" mới được tích hợp thẳng vào Docs và Slides khiến Canva và Adobe thất thần Không còn dừng …"
+    },
+    {
+      "title": "Tinhte.vn - Chuyên trang máy tính - PC Home",
+      "url": "https://pc.tinhte.vn/",
+      "snippet": "Chuyên trang máy tính & laptop của Tinhte.vn: Review PC, gaming gear, cẩm nang mua sắm và lắp ráp máy tính, hướng dẫn sử …"
+    }
+  ]
+}

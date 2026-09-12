@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ashleyyou/review-embodied-ai",
+  "slug": "ashleyyou-review-embodied-ai",
+  "author": "ashleyyou",
+  "url": "https://huggingface.co/ashleyyou/review-embodied-ai",
+  "created_at": "2026-09-12T16:37:41.000Z",
+  "updated_at": "2026-09-12T16:37:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "embodied-ai",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BedJet Review 2026: Is the BedJet 3 Worth It vs Water Systems?",
+      "url": "https://liveworksleep.com/bedjet-3-review/",
+      "snippet": "Dec 24, 2025 · We tested BedJet 3 for night sweats and heat control. See actual performance data, noise levels, and how it …"
+    },
+    {
+      "title": "BEDJET V2 TEMPERATURE CONTROLLER USER'S OPERATING MANUAL",
+      "url": "https://www.manualslib.com/manual/1531782/Bedjet-V2.html",
+      "snippet": "For re-pairing of the remote or pairing of a new remote control, make sure BedJet is powered OFF for 10 seconds. Turn BedJet …"
+    },
+    {
+      "title": "User Manuals - bedjet.com",
+      "url": "https://bedjet.com/pages/user-manuals",
+      "snippet": "Discover the BedJet® air based cooling, warming & sweat drying sleep system just for your bed! Shop now - free shipping - free returns."
+    },
+    {
+      "title": "BedJet V3 Climate Control System Review 5 Year Test and Results",
+      "url": "https://yawnder.com/bedjet-review/",
+      "snippet": "Sep 4, 2026 · Hot sleeper Looking for instant bed cooling See my full BedJet review with hands on testing, pros and cons and …"
+    },
+    {
+      "title": "Bedjet 3 diagnostic codes : r/bedjet - Reddit",
+      "url": "https://www.reddit.com/r/bedjet/comments/17uvoa2/bedjet_3_diagnostic_codes/",
+      "snippet": "Nov 14, 2023 · Fast forward a couple weeks have gone by and now it’s absolutely less powerful. And no, it isn’t in low power mode. …"
+    }
+  ]
+}

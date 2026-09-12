@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "obe-ai-system/sbert-obe-csematch",
+  "slug": "obe-ai-system-sbert-obe-csematch",
+  "author": "obe-ai-system",
+  "url": "https://huggingface.co/obe-ai-system/sbert-obe-csematch",
+  "created_at": "2026-09-12T16:57:52.000Z",
+  "updated_at": "2026-09-12T16:57:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ordre de l'Empire britannique — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ordre_de_l%27Empire_britannique",
+      "snippet": "4e classe : officier de l'Empire britannique (Officer of the British Empire) (OBE) ; 5e classe : membre de l'Empire britannique (Member …"
+    },
+    {
+      "title": "Order of the British Empire - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Order_of_the_British_Empire",
+      "snippet": "In 2019, comedian John Oliver turned down an offer of appointment as an OBE, which would have been part of the Queen's New …"
+    },
+    {
+      "title": "OBE — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/OBE",
+      "snippet": "Code OBE est un code qui peut signifier : Aéroport du comté d'Okeechobee aux États-Unis, selon la liste des codes AITA des …"
+    },
+    {
+      "title": "Que signifie OBE? - Abbreviation Finder",
+      "url": "https://www.abbreviationfinder.org/fr/acronyms/obe.html",
+      "snippet": "En résumé, OBE est une abréviation qui peut désigner différents termes selon le contexte, et son interprétation peut varier selon …"
+    },
+    {
+      "title": "Qu'est-ce qu'une OBE? - NDE (Near Death Experience) et Science",
+      "url": "https://nde.medicalistes.fr/obe/",
+      "snippet": "Nov 21, 2023 · Une expérience hors du corps (OBE en anglais pour Out of Body Experience) Une OBE, ou Out-of-Body Experience …"
+    }
+  ]
+}

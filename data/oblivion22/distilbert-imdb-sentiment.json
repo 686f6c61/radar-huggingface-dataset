@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Oblivion22/distilbert-imdb-sentiment",
+  "slug": "oblivion22-distilbert-imdb-sentiment",
+  "author": "Oblivion22",
+  "url": "https://huggingface.co/Oblivion22/distilbert-imdb-sentiment",
+  "created_at": "2026-09-12T10:57:23.000Z",
+  "updated_at": "2026-09-12T10:58:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Boulanger © - Électroménager & Multimédia",
+      "url": "https://www.boulanger.com/?msockid=182ddf32df146b3d003ac8e0de876aa3",
+      "snippet": "L'application indispensable ! Téléchargez l'app Boulanger : avantages exclusifs, suivi de votre commande, conseils d'entretien et plus …"
+    },
+    {
+      "title": "Rafraîchisseur d'air - Retrait 1h en Magasin* | Boulanger",
+      "url": "https://www.boulanger.com/c/rafraichisseur-d-air?msockid=182ddf32df146b3d003ac8e0de876aa3",
+      "snippet": "Envie de rafraîchir une pièce sans avoir à installer l’air conditionné et vous n’avez pas encore essayé un rafraîchisseur d’air ? …"
+    },
+    {
+      "title": "Location d’électroménager et multimédia longue durée | Boulanger …",
+      "url": "https://location.boulanger.com/",
+      "snippet": "Envie d’essayer une nouvelle technologie ? Louez et profitez du dernier cri en toute tranquillité grâce à nos services inclus, en …"
+    },
+    {
+      "title": "Ordinateur Portable - Boulanger Location",
+      "url": "https://location.boulanger.com/location-pc-mac-multimedia/location-ordinateur-portable.html",
+      "snippet": "Location d'ordinateur portable neuf ou reconditionné à partir de 16,99€/mois. Pour travailler, jouer ou vous divertir, profitez d'un pc …"
+    },
+    {
+      "title": "Connexion à votre espace client | Boulanger",
+      "url": "https://numerisation.boulanger.com/fr/espace-client",
+      "snippet": "Si vous possédez déjà un compte chez Boulanger - Service numérisation, connectez-vous simplement à votre compte. Vous avez …"
+    }
+  ]
+}

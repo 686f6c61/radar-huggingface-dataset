@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "AiLab-IMCS-UL/lv_ud2.18_lv-deberta-base",
+  "slug": "ailab-imcs-ul-lv_ud2-18_lv-deberta-base",
+  "author": "AiLab-IMCS-UL",
+  "url": "https://huggingface.co/AiLab-IMCS-UL/lv_ud2.18_lv-deberta-base",
+  "created_at": "2026-09-12T16:34:05.000Z",
+  "updated_at": "2026-09-12T16:34:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "lv"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "latvian",
+    "morphosyntactic-parsing",
+    "dependency-parsing",
+    "lemmatization",
+    "pos-tagging",
+    "deberta",
+    "token-classification",
+    "lv",
+    "base_model:AiLab-IMCS-UL/lv-deberta-base",
+    "base_model:finetune:AiLab-IMCS-UL/lv-deberta-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 146109171,
+  "parameters_human": "146.1M",
+  "storage_bytes": 584494364,
+  "storage_human": "584 MB",
+  "base_model": "AiLab-IMCS-UL/lv-deberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail?hl=de",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    }
+  ]
+}

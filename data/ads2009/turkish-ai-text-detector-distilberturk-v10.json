@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ads2009/turkish-ai-text-detector-distilberturk-v10",
+  "slug": "ads2009-turkish-ai-text-detector-distilberturk-v10",
+  "author": "ads2009",
+  "url": "https://huggingface.co/ads2009/turkish-ai-text-detector-distilberturk-v10",
+  "created_at": "2026-09-12T15:44:07.000Z",
+  "updated_at": "2026-09-12T15:44:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 68090114,
+  "parameters_human": "68.1M",
+  "storage_bytes": 272372984,
+  "storage_human": "272 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HelpDesk | AI Help Desk Software & Ticketing System for Support …",
+      "url": "https://www.helpdesk.com/",
+      "snippet": "HelpDesk is part of the Text platform, the AI customer service platform. It works as a ticketing system for managing customer cases …"
+    },
+    {
+      "title": "Helpdesk – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Helpdesk",
+      "snippet": "Ein Helpdesk (auch Help-Desk oder User-Help-Desk – UHD) ist ein Issue-Tracking-System, das vorrangig für die Unterstützung von …"
+    },
+    {
+      "title": "Was ist ein Helpdesk? Definition, Vorteile + mehr",
+      "url": "https://www.zendesk.de/blog/customer-service/help-desk/help-desk/",
+      "snippet": "Was ist ein Helpdesk? Ein Help Desk ist die Anlaufstelle für Nutzer:innen, bei der sie Antworten auf ihre Fragen zu Produkten und …"
+    },
+    {
+      "title": "Microsoft-Kundensupport kontaktieren | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/support/index",
+      "snippet": "Persönliches Konto Geschäftskonto Support für Microsoft-Konten Wenn Sie sich nicht bei Ihrem Microsoft-Konto anmelden können, …"
+    },
+    {
+      "title": "Was ist ein Helpdesk? | Computerwoche",
+      "url": "https://www.computerwoche.de/article/2803029/was-ist-ein-helpdesk.html",
+      "snippet": "Jun 3, 2023 · Der Helpdesk (auch Service Desk genannt) ist die zentrale Anlaufstelle im Unternehmen, welche für IT-Support- und …"
+    }
+  ]
+}

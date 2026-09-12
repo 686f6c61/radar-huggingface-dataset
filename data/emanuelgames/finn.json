@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "EmanuelGames/Finn",
+  "slug": "emanuelgames-finn",
+  "author": "EmanuelGames",
+  "url": "https://huggingface.co/EmanuelGames/Finn",
+  "created_at": "2026-09-12T14:14:45.000Z",
+  "updated_at": "2026-09-12T14:18:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 109687377,
+  "storage_human": "110 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "куртка - безплатни обяви | OLX.bg",
+      "url": "https://www.olx.bg/ads/q-%D0%BA%D1%83%D1%80%D1%82%D0%BA%D0%B0/",
+      "snippet": "Разгледайте безплатни обяви за куртка в OLX.bg. Намерете и се възползвайте от офертите, които не можете да пропуснете!"
+    },
+    {
+      "title": "с български мотиви - безплатни обяви | OLX.bg",
+      "url": "https://www.olx.bg/ads/q-%D1%81-%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D1%81%D0%BA%D0%B8-%D0%BC%D0%BE%D1%82%D0%B8%D0%B2%D0%B8/",
+      "snippet": "Разгледайте безплатни обяви за с български мотиви в OLX.bg. Намерете и се възползвайте от офертите, които не можете да …"
+    },
+    {
+      "title": "Антикварни и Винтидж Покривки, Одеяла ...",
+      "url": "https://www.the-old-antiquarian.com/bg/produkt-kategoriya/%d0%ba%d0%b8%d0%bb%d0%b8%d0%bc%d0%b8-%d1%82%d0%b5%d0%ba%d1%81%d1%82%d0%b8%d0%bb/%d0%b0%d0%bd%d1%82%d0%b8%d0%ba%d0%b2%d0%b0%d1%80%d0%bd%d0%b8-%d0%b2%d0%b8%d0%bd%d1%82%d0%b8%d0%b4%d0%b6-%d0%bf%d0%be%d0%ba%d1%80%d0%b8%d0%b2%d0%ba%d0%b8-%d0%be%d0%b4%d0%b5%d1%8f%d0%bb%d0%b0/",
+      "snippet": "Категорията „Антикварни и Винтидж Покривки, Одеяла и Ръчна Бродерия“ предлага богата селекция от декоративен текстил, …"
+    },
+    {
+      "title": "Винтажная куртка - огромный выбор по ...",
+      "url": "https://by.ebay.com/b/vintage-jacket/bn_7024875131",
+      "snippet": "Найдите на eBay выгодные предложения по запросу Винтажная куртка. Вы найдете новые и б/у товары в Винтажная куртка …"
+    },
+    {
+      "title": "Куртка - 41 обяви - alo.bg",
+      "url": "https://www.alo.bg/searchq/?q=%D0%BA%D1%83%D1%80%D1%82%D0%BA%D0%B0",
+      "snippet": "Това модерно и изтънчено яке отговаря на нуждите на вашия екип. Лека и издръжлива материя, която държи хладно и …"
+    }
+  ]
+}

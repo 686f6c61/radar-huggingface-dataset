@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Codemaster67/Olmo_1b_ModernMolbert",
+  "slug": "codemaster67-olmo_1b_modernmolbert",
+  "author": "Codemaster67",
+  "url": "https://huggingface.co/Codemaster67/Olmo_1b_ModernMolbert",
+  "created_at": "2026-09-12T11:24:33.000Z",
+  "updated_at": "2026-09-12T11:24:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sovrani d'Inghilterra - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Sovrani_d%27Inghilterra",
+      "snippet": "Sovrani d'Inghilterra ... Quello che segue è un elenco dei monarchi che hanno regnato sull' Inghilterra prima, e sulla Gran Bretagna …"
+    },
+    {
+      "title": "Consorti dei sovrani d'Inghilterra - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Consorti_dei_sovrani_d%27Inghilterra",
+      "snippet": "Segue un elenco delle mogli e dei mariti dei re e delle regine d'Inghilterra dal 927, anno in cui il re anglosassone Atelstano fu …"
+    },
+    {
+      "title": "Tutti i sovrani d'Inghilterra degli anni passati ad oggi",
+      "url": "https://www.scuolissima.com/2022/09/sovrani-inghilterra.html",
+      "snippet": "In questa pagina trovate una tabella contenente tutti i nomi dei sovrani che hanno governato l'Inghilterra, disposti dal più recente fino …"
+    },
+    {
+      "title": "Re e regine del Regno Unito: tutti i sovrani inglesi della storia",
+      "url": "https://tg24.sky.it/mondo/approfondimenti/sovrani-inglesi",
+      "snippet": "Sep 21, 2023 · Dal nipote di Elisabetta I fino all'attuale sovrano, figlio di Elisabetta II, ecco tutti i regnanti che hanno segnato la storia …"
+    },
+    {
+      "title": "Sovrani d'Inghilterra - Wikiwand",
+      "url": "https://www.wikiwand.com/it/articles/Elenco_di_monarchi_inglesi",
+      "snippet": "Quello che segue è un elenco dei monarchi inglesi che hanno regnato sull'Inghilterra prima, e sulla Gran Bretagna poi, dal Medioevo …"
+    }
+  ]
+}

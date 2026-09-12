@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "lair-nyu/yor_icl_pi05_canonical_extended-step35000",
+  "slug": "lair-nyu-yor_icl_pi05_canonical_extended-step35000",
+  "author": "lair-nyu",
+  "url": "https://huggingface.co/lair-nyu/yor_icl_pi05_canonical_extended-step35000",
+  "created_at": "2026-09-12T14:14:43.000Z",
+  "updated_at": "2026-09-12T14:21:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12441727016,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Open Broadcaster Software | OBS",
+      "url": "https://obsproject.com/",
+      "snippet": "OBS (Open Broadcaster Software) is free and open source software for video recording and live streaming. Stream to Twitch, …"
+    },
+    {
+      "title": "Download OBS Studio",
+      "url": "https://obsproject.com/download",
+      "snippet": "Download OBS Studio for Windows, Mac or Linux"
+    },
+    {
+      "title": "Baixar OBS Studio",
+      "url": "https://obsproject.com/pt-br/download",
+      "snippet": "Download OBS Studio for Windows, Mac or Linux"
+    },
+    {
+      "title": "Download | OBS",
+      "url": "https://obsproject.com/es/download",
+      "snippet": "Download OBS Studio for Windows, Mac or Linux"
+    },
+    {
+      "title": "下载 | OBS",
+      "url": "https://obsproject.com/zh-cn/download",
+      "snippet": "Download OBS Studio for Windows, Mac or Linux"
+    }
+  ]
+}

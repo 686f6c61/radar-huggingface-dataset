@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SelectiveDOPD/QuestA-Qwen3-8b-Selective-Top10pct",
+  "slug": "selectivedopd-questa-qwen3-8b-selective-top10pct",
+  "author": "SelectiveDOPD",
+  "url": "https://huggingface.co/SelectiveDOPD/QuestA-Qwen3-8b-Selective-Top10pct",
+  "created_at": "2026-09-12T13:45:39.000Z",
+  "updated_at": "2026-09-12T14:17:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 49155972990,
+  "storage_human": "49.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "波浪号（～）是什么意思，正规的用法是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/19615526",
+      "snippet": "除了在字典中作为代替符号以外，在印刷品中很少见到这个符号。那么它应该是怎么用的呢？它的来源又是怎…"
+    },
+    {
+      "title": "没有安装任何360软件，电脑里莫名其妙有了个360壁纸，控制面板的添 …",
+      "url": "https://www.zhihu.com/question/25046412",
+      "snippet": "找到C盘下面“用户”，点进去，记住要在“查看”勾选“隐藏文件夹”，会看到一个 APP Data 文件夹（之前是隐藏的）。下面的 Roaming …"
+    },
+    {
+      "title": "Get directions and show routes in Google Maps",
+      "url": "https://support.google.com/maps/answer/144339?hl=en-in&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can get directions for driving, public transport, walking, ride sharing, cycling, flight or motorcycle on Google Maps. If there are …"
+    },
+    {
+      "title": "301 Moved",
+      "url": "https://support.google.com/maps/answer/3001634?hl=en",
+      "snippet": "301 Moved 301 Moved The document has moved here."
+    },
+    {
+      "title": "泰姬陵（Taj Mahal）是一幢纯波斯式建筑吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/48479715",
+      "snippet": "伊朗伊斯兰共和国 建筑史 印度文化 泰姬陵（Taj Mahal）是一幢纯波斯式建筑吗？ 泰姬陵的整个设计，形式、结构、细部装饰、布景 …"
+    }
+  ]
+}

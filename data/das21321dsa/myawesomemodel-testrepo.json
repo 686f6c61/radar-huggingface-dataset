@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "DAS21321DSA/MyAwesomeModel-TestRepo",
+  "slug": "das21321dsa-myawesomemodel-testrepo",
+  "author": "DAS21321DSA",
+  "url": "https://huggingface.co/DAS21321DSA/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-12T18:10:13.000Z",
+  "updated_at": "2026-09-12T18:10:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Офіційний дистриб'ютор Deye в Україні | Інвертори та АКБ",
+      "url": "https://www.deye-ukraine.com.ua/",
+      "snippet": "Офіційні гібридні інвертори та акумулятори Deye в Україні. ️ Власний сервісний центр, гарантія та вигідні ціни. Забезпечте …"
+    },
+    {
+      "title": "Аккумулятор для инвертора Deye - ROZETKA | Купить АКБ Deye для ...",
+      "url": "https://rozetka.com.ua/akkumulyatori-dlya-invertora/c4674996/producer=deye/",
+      "snippet": "Аккумуляторы для инвертора Deye в каталоге ⏩ ROZETKA. 🔋 Энергонезависимость вашего дома: долговечные батареи …"
+    },
+    {
+      "title": "Акумуляторні системи збереження електроенергії",
+      "url": "https://deye.com.ua/product-category/akkumulyator/",
+      "snippet": "Силовий і комунікацйний кабель Deye 3U-LPCable для підключення акумуляторної батареї до гібридного інвертора На …"
+    },
+    {
+      "title": "Акумулятор для інвертора - ROZETKA | Купити АКБ для …",
+      "url": "https://rozetka.com.ua/ua/akkumulyatori-dlya-invertora/c4674996/",
+      "snippet": "Для акумулятора до гібридного інвертора також потрібно перевірити сумісність конкретної моделі батареї з обладнанням і …"
+    },
+    {
+      "title": "Гібридний інвертор і акумуляторна батарея - купити недорого, …",
+      "url": "https://prom.ua/ua/Gibridnyj-invertor-i-akkumulyatornaya-batareya.html",
+      "snippet": "Гібридний інвертор і акумуляторна батарея купити в Україні на маркетплейсі Prom.ua. Широкий асортимент від найкращих …"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "marcosvpj/Mythos-nano",
+  "slug": "marcosvpj-mythos-nano",
+  "author": "marcosvpj",
+  "url": "https://huggingface.co/marcosvpj/Mythos-nano",
+  "created_at": "2026-09-12T13:28:50.000Z",
+  "updated_at": "2026-09-12T13:34:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "reasoning",
+    "math",
+    "code",
+    "mythos-nano",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:WeiboAI/VibeThinker-3B",
+    "base_model:finetune:WeiboAI/VibeThinker-3B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 32371042463,
+  "storage_human": "32.4 GB",
+  "base_model": "WeiboAI/VibeThinker-3B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Columbus, OH Weather Forecast | AccuWeather",
+      "url": "https://www.accuweather.com/en/us/columbus/43215/weather-forecast/350128",
+      "snippet": "Columbus, OH Weather Forecast, with current conditions, wind, air quality, and what to expect for the next 3 days."
+    },
+    {
+      "title": "Colorado Springs, CO Weather Forecast | AccuWeather",
+      "url": "https://www.accuweather.com/en/us/colorado-springs/80903/weather-forecast/327351",
+      "snippet": "Colorado Springs, CO Weather Forecast, with current conditions, wind, air quality, and what to expect for the next 3 days."
+    },
+    {
+      "title": "Boston, MA Weather Forecast | AccuWeather",
+      "url": "https://www.accuweather.com/en/us/boston/02108/weather-forecast/348735",
+      "snippet": "Boston, MA Weather Forecast, with current conditions, wind, air quality, and what to expect for the next 3 days."
+    },
+    {
+      "title": "Pretoria, Gauteng, South Africa Weather Forecast | AccuWeather",
+      "url": "https://www.accuweather.com/en/za/pretoria/305449/weather-forecast/305449",
+      "snippet": "Pretoria, Gauteng, South Africa Weather Forecast, with current conditions, wind, air quality, and what to expect for the next 3 days."
+    },
+    {
+      "title": "Salem, OR Weather Forecast | AccuWeather",
+      "url": "https://www.accuweather.com/en/us/salem/97301/weather-forecast/330144",
+      "snippet": "Salem, OR Weather Forecast, with current conditions, wind, air quality, and what to expect for the next 3 days."
+    }
+  ]
+}

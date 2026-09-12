@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "GGUFGuy/nanodex-500k-200m",
+  "slug": "ggufguy-nanodex-500k-200m",
+  "author": "GGUFGuy",
+  "url": "https://huggingface.co/GGUFGuy/nanodex-500k-200m",
+  "created_at": "2026-09-12T15:18:03.000Z",
+  "updated_at": "2026-09-12T15:18:04.000Z",
+  "license": "odc-by",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "nanodex",
+    "tiny-lm",
+    "pretrained-from-scratch",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:odc-by",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 492192,
+  "parameters_human": "492192",
+  "storage_bytes": 1971816,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "在加油站上班是什么体验？ - 知乎",
+      "url": "https://www.zhihu.com/question/39978451",
+      "snippet": "本人就是中石油加油站。首先恭喜你进入中石油的销售板块，其实就是加油。这个岗位分一个加油员，还有便利店，核算员，还有保 …"
+    },
+    {
+      "title": "加油站除了中国石油和中国石化，还有哪些正牌的？ - 知乎",
+      "url": "https://www.zhihu.com/question/392335296",
+      "snippet": "中石化、中石油由于属于央企，油站布局完善，因此车主对其品牌认知最高，实际只要是具备营业执照、成品油零售许可证、危化证等 …"
+    },
+    {
+      "title": "加油站为什么禁止打电话？ - 知乎",
+      "url": "https://www.zhihu.com/question/312428774",
+      "snippet": "最可笑的是现在加油站使用微信加油卡加油，你怎么操作手机都没人管，但要是放耳边接听电话就有人过来让你不要打电话。 对，大 …"
+    },
+    {
+      "title": "买了加油站⛽️边上的小区，会有什么不利的影响吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/57355960",
+      "snippet": "一般加油站是24小时经营，而且因为属于危险化学品经营单位，敏感地区比如进出口、前庭、罐区等都需要一定亮度的照明来保证安全 …"
+    },
+    {
+      "title": "如何看待5年减少9000座加油站？补能未来会不会反而成了油车的劣 …",
+      "url": "https://www.zhihu.com/question/2010273800890110706",
+      "snippet": "如何看待5年减少9000座加油站？ 补能未来会不会反而成了油车的劣势？ 出现有车没地方加油的尴尬？ 根据国家能源局数据，这几年 …"
+    }
+  ]
+}

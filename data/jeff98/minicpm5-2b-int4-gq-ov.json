@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Jeff98/MiniCPM5-2B-int4-gq-ov",
+  "slug": "jeff98-minicpm5-2b-int4-gq-ov",
+  "author": "Jeff98",
+  "url": "https://huggingface.co/Jeff98/MiniCPM5-2B-int4-gq-ov",
+  "created_at": "2026-09-12T15:35:59.000Z",
+  "updated_at": "2026-09-12T15:51:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "openvino",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "openvino",
+    "llama",
+    "minicpm",
+    "minicpm5",
+    "optimum",
+    "optimum-intel",
+    "int4",
+    "quantized",
+    "text-generation",
+    "tool-calling",
+    "edge-ai",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:finetune:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1564914513,
+  "storage_human": "1.6 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Gachas Manchegas Near Me: Finding La Mancha’s Rustic …",
+      "url": "https://designbeep.com/2026/08/12/best-gachas-manchegas-near-me/",
+      "snippet": "Aug 12, 2026 · Searching best gachas manchegas near me? Learn what this rustic Spanish dish from La Mancha is, its traditional …"
+    },
+    {
+      "title": "The best restaurants in Qatar | (Updated 2026) - OpenTable",
+      "url": "https://www.opentable.com/metro/qatar",
+      "snippet": "15 hours ago · Find the best and most fabulous restaurants in Qatar. Explore 310 top-rated options, read reviews, view photos, and …"
+    },
+    {
+      "title": "Discover The Flavors Of La Mancha: A Guide To The Best Gachas Manchegas ...",
+      "url": "https://thebyteadvisor.com/best-gachas-manchegas-near-me/",
+      "snippet": "Aug 1, 2026 · If you’re looking for the best gachas manchegas near you, you’ve come to the right place. In this guide, we’ll take you …"
+    },
+    {
+      "title": "Best Restaurants in Qatar, Discover best places to eat in Qatar",
+      "url": "https://www.booknbook.qa/",
+      "snippet": "1 day ago · Discover the best Restaurants in Qatar. In our Qatar Restaurants Guide you can find the perfect location where you can …"
+    },
+    {
+      "title": "Discover The Best Gachas Manchegas Near Me: A Guide To This …",
+      "url": "https://biliummagazine.co.uk/best-gachas-manchegas-near-me/",
+      "snippet": "Aug 1, 2026 · In addition to searching online, try visiting local markets or food festivals to find the best gachas manchegas near you. …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "wasedabiolab/coca-multitask-exp",
+  "slug": "wasedabiolab-coca-multitask-exp",
+  "author": "wasedabiolab",
+  "url": "https://huggingface.co/wasedabiolab/coca-multitask-exp",
+  "created_at": "2026-09-12T11:18:22.000Z",
+  "updated_at": "2026-09-12T11:18:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How do FIDE rated players perform on lichess? - Chess Stack Exchange",
+      "url": "https://chess.stackexchange.com/questions/8327/how-do-fide-rated-players-perform-on-lichess",
+      "snippet": "I have been playing on lichess for a while and it strikes me how low ratings are compared to other rating systems. This is not to say …"
+    },
+    {
+      "title": "Lichess - Schach: Schachfeld.de",
+      "url": "https://www.schachfeld.de/threads/35825-lichess",
+      "snippet": "May 4, 2011 · Lichess ist gut gemacht, keine Werbung, vor allem sehr schöne 3D-Ansicht, die nicht den Browser überlastet usw., …"
+    },
+    {
+      "title": "lichess - Connectivity comparison between chess websites? - Chess …",
+      "url": "https://chess.stackexchange.com/questions/37382/connectivity-comparison-between-chess-websites",
+      "snippet": "Nov 13, 2021 · I wonder if there has been a test to compare connectivity to the major chess websites. Or whether it is easy to run …"
+    },
+    {
+      "title": "lichess - Schachcomputer.info Community",
+      "url": "https://www.schachcomputer.info/forum/forumdisplay.php?f=26",
+      "snippet": "Apr 2, 2024 · Unterforum für Herausforderungen + Ankündigung von Online Partien auf lichess Subforum for challenges + …"
+    },
+    {
+      "title": "Vergleich Lichess Rating mit DWZ - Schach: Schachfeld.de",
+      "url": "https://www.schachfeld.de/threads/39056-vergleich-lichess-rating-mit-dwz",
+      "snippet": "Jul 21, 2022 · Hallo zusammen, Gerüchten zufolge soll das Lichess Rating in der Regel um 300 Punkte nach oben abweichen. Also …"
+    }
+  ]
+}

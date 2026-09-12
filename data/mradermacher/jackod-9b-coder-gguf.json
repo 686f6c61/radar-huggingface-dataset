@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/JackOD-9B-Coder-GGUF",
+  "slug": "mradermacher-jackod-9b-coder-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/JackOD-9B-Coder-GGUF",
+  "created_at": "2026-09-12T10:50:19.000Z",
+  "updated_at": "2026-09-12T11:00:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merge",
+    "code",
+    "agentic",
+    "tool-calling",
+    "qwen3.5",
+    "en",
+    "base_model:ManniX-ITA/JackOD-9B-Coder",
+    "base_model:quantized:ManniX-ITA/JackOD-9B-Coder",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 85101517760,
+  "storage_human": "85.1 GB",
+  "base_model": "ManniX-ITA/JackOD-9B-Coder",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Live Cricket Scores | Today's Match Scorecard & Ball-by-Ball …",
+      "url": "https://www.cricinfo.com/live-cricket-score",
+      "snippet": "Live cricket scores and updates on all current top-level cricket matches for men and women - Tests, ODIs, T20s, first-class cricket, …"
+    },
+    {
+      "title": "ICC Cricket Fixtures & Results | ICC",
+      "url": "https://www.icc-cricket.com/fixtures-results",
+      "snippet": "3 days ago · Stay updated with the latest ICC cricket fixtures, results, match schedules, and scores. Explore upcoming international …"
+    },
+    {
+      "title": "Live Cricket Scores - Find Latest Scores of all Matches Online - ESPN",
+      "url": "https://www.espn.com/cricket/scores",
+      "snippet": "12 hours ago · Get Latest Cricket Match Score updates only on ESPN.com. Check out 2026 Live Cricket Score of Ball by Ball & full …"
+    },
+    {
+      "title": "International Cricket Council - Home | ICC",
+      "url": "https://www.icc-cricket.com/",
+      "snippet": "Official ICC Cricket website - live matches, scores, news, highlights, commentary, rankings, videos and fixtures from the International …"
+    },
+    {
+      "title": "Cricinfo | Live Cricket Scores, Match Details, News, Stats & Updates",
+      "url": "https://www.cricinfo.com/",
+      "snippet": "Get live cricket scores, ball-by-ball commentary, and exclusive video highlights. Stay updated on the latest international and domestic …"
+    }
+  ]
+}

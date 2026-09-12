@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "NagaYu/rebar-heading-classifier",
+  "slug": "nagayu-rebar-heading-classifier",
+  "author": "NagaYu",
+  "url": "https://huggingface.co/NagaYu/rebar-heading-classifier",
+  "created_at": "2026-09-12T14:08:19.000Z",
+  "updated_at": "2026-09-12T14:08:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "rebar-ja",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "rebar-ja",
+    "onnx",
+    "gguf",
+    "japanese",
+    "document-structure",
+    "hierarchy-restoration",
+    "rag",
+    "chunking",
+    "retrieval",
+    "legal-nlp",
+    "token-classification",
+    "ja",
+    "dataset:NagaYu/rebar-structure",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14,
+  "parameters_human": "14",
+  "storage_bytes": 563,
+  "storage_human": "563 B",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Heading detection & hierarchy depth",
+      "dataset": "Rebar structure (synthetic)",
+      "metric": "Heading detection F1 (test, clean)",
+      "value": 0.997
+    },
+    {
+      "task": "Heading detection & hierarchy depth",
+      "dataset": "Rebar structure (synthetic)",
+      "metric": "Hierarchy depth accuracy (test, clean)",
+      "value": 1
+    },
+    {
+      "task": "Heading detection & hierarchy depth",
+      "dataset": "Rebar structure (synthetic)",
+      "metric": "Hierarchy depth accuracy (HARD / unseen schemes, clean)",
+      "value": 1
+    }
+  ],
+  "sources": [
+    {
+      "title": "Official Website | ZZ Top",
+      "url": "https://www.zztop.com/",
+      "snippet": "ZZ Top founder Billy F Gibbons commented on Beard's passing, \"Today, Elwood and I lost a great friend and collaborator, and the …"
+    },
+    {
+      "title": "Tour - ZZ Top",
+      "url": "https://www.zztop.com/tour",
+      "snippet": "ZZ Top tour date, pre-sale ticket, VIP and venue information"
+    },
+    {
+      "title": "ZZ Top Official Store | Shop Merch, Vinyl, CDs, Shirts",
+      "url": "https://store.zztop.com/",
+      "snippet": "The official store for ZZ Top! Buy ZZ Top albums, vinyl, CDs, boxsets, DVDs, t-shirts, hoodies, hats, gifts, and accessories."
+    },
+    {
+      "title": "Vinyl – ZZ Top",
+      "url": "https://store.zztop.com/collections/vinyl",
+      "snippet": "The official store for ZZ Top! Buy ZZ Top albums, vinyl, CDs, boxsets, DVDs, t-shirts, hoodies, hats, gifts, and accessories."
+    },
+    {
+      "title": "Photos - ZZ Top",
+      "url": "https://www.zztop.com/photos",
+      "snippet": "ZZ Top live, personal and press photos"
+    }
+  ]
+}

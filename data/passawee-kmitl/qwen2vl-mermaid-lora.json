@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "passawee-kmitl/qwen2vl-mermaid-lora",
+  "slug": "passawee-kmitl-qwen2vl-mermaid-lora",
+  "author": "passawee-kmitl",
+  "url": "https://huggingface.co/passawee-kmitl/qwen2vl-mermaid-lora",
+  "created_at": "2026-09-12T15:07:06.000Z",
+  "updated_at": "2026-09-12T15:26:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qlora",
+    "vlm",
+    "mermaid",
+    "base_model:Qwen/Qwen2-VL-2B-Instruct",
+    "base_model:adapter:Qwen/Qwen2-VL-2B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 251971628,
+  "storage_human": "252 MB",
+  "base_model": "Qwen/Qwen2-VL-2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/r/all+/",
+      "snippet": "Create an account to follow your favorite communities and start taking part in conversations."
+    },
+    {
+      "title": "365 clients cannot login once domain was move to another 365 tenant",
+      "url": "https://www.experts-exchange.com/questions/29282990/365-clients-cannot-login-once-domain-was-move-to-another-365-tenant.html",
+      "snippet": "Apr 5, 2025 · 365 clients cannot login once domain was move to another 365 tenant Moved a domain from a 365 tenant (that has …"
+    },
+    {
+      "title": "r/all - Reddit",
+      "url": "https://www.reddit.com/r/all/",
+      "snippet": "Today's top content from hundreds of thousands of Reddit communities."
+    },
+    {
+      "title": "megathread - Piracy - Reddit",
+      "url": "https://www.reddit.com/r/Piracy/wiki/megathread/?f=flair_name%3A%22Meta%22",
+      "snippet": "r/Piracy: ⚓ A community devoted to in-depth debate on topics concerning digital piracy, ethical problems, and legal advancements."
+    }
+  ]
+}

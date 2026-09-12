@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "jeweled/unfiltered-5b-grpo-math-expert-mlx-8Bit",
+  "slug": "jeweled-unfiltered-5b-grpo-math-expert-mlx-8bit",
+  "author": "jeweled",
+  "url": "https://huggingface.co/jeweled/unfiltered-5b-grpo-math-expert-mlx-8Bit",
+  "created_at": "2026-09-12T13:39:26.000Z",
+  "updated_at": "2026-09-12T13:39:40.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "littlelearner",
+    "unbounded",
+    "instruct",
+    "reinforcement-learning",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "en",
+    "base_model:littlelearner/unfiltered-5b-grpo-math-expert",
+    "base_model:quantized:littlelearner/unfiltered-5b-grpo-math-expert",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5041313792,
+  "parameters_human": "5.04B",
+  "storage_bytes": 5356788540,
+  "storage_human": "5.4 GB",
+  "base_model": "littlelearner/unfiltered-5b-grpo-math-expert",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pornhub - Kostenloser Porno Und Sexvideos – Beste Porno Webseite …",
+      "url": "https://pornhub-deutsch.net/",
+      "snippet": "PornHub ist die weltweit führende kostenlose Porno-Website. Wähle aus Millionen von Harcore Pornovideos, die schnell und in …"
+    }
+  ]
+}

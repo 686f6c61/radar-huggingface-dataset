@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "lsadouk1111/mistral7b-dyslexie-french-cp-ce1",
+  "slug": "lsadouk1111-mistral7b-dyslexie-french-cp-ce1",
+  "author": "lsadouk1111",
+  "url": "https://huggingface.co/lsadouk1111/mistral7b-dyslexie-french-cp-ce1",
+  "created_at": "2026-09-12T11:23:44.000Z",
+  "updated_at": "2026-09-12T11:26:41.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "safetensors",
+    "text-simplification",
+    "dyslexia",
+    "french",
+    "primary-education",
+    "phonics",
+    "lora",
+    "unsloth",
+    "mistral",
+    "moroccan-education",
+    "CP",
+    "CE1",
+    "text2text-generation",
+    "conversational",
+    "fr",
+    "dataset:lsadouk1111/dyslexia-french-cp-ce1",
+    "base_model:unsloth/mistral-7b-instruct-v0.2-bnb-4bit",
+    "base_model:adapter:unsloth/mistral-7b-instruct-v0.2-bnb-4bit",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 168325683,
+  "storage_human": "168 MB",
+  "base_model": "unsloth/mistral-7b-instruct-v0.2-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deneme Bonusu - Deneme Bonusu Veren Siteler 2026 - Yenilenen …",
+      "url": "https://faustball.de/",
+      "snippet": "Deneme bonusu veren siteler 2026 güncel listesi, slot ve bahis platformları incelemesi. Yatırımsız nakit fırsatları, freespin avantajları …"
+    },
+    {
+      "title": "Bundesliga - faustball.de",
+      "url": "https://faustball.de/bundesliga/",
+      "snippet": "May 20, 2025 · Bei den Aufstiegsspielen zur 1. Bundesliga Süd der Männer in Wünschmichelbach sicherten sich der TV …"
+    },
+    {
+      "title": "National - faustball.de",
+      "url": "https://faustball.de/national/",
+      "snippet": "2 days ago · Veilsdorf. Zwei Tage Faustball, drei Altersklassen und zahlreiche spannende Begegnungen: Die Deutschen …"
+    },
+    {
+      "title": "International - faustball.de",
+      "url": "https://faustball.de/international/",
+      "snippet": "Die Besten der Welt: Weltmeisterschaften, Weltcups, Europameisterschaften und Europacups gibt es hier. Dazu Infos zu den …"
+    },
+    {
+      "title": "Final 4: Vorbereitung auf Hochtouren – Ticketverkauf läuft – Volunteers ...",
+      "url": "https://faustball.de/final-4-vorbereitung-auf-hochtouren-ticketverkauf-laeuft-volunteers-gesucht/",
+      "snippet": "Jan 30, 2026 · Ein sechsköpfiges PR-Team sorgt für aktuelle Fotos und Berichte auf den Social-Media-Kanälen und auf der Website …"
+    }
+  ]
+}

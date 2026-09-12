@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "DistributedAI/102-v5",
+  "slug": "distributedai-102-v5",
+  "author": "DistributedAI",
+  "url": "https://huggingface.co/DistributedAI/102-v5",
+  "created_at": "2026-09-01T09:23:26.000Z",
+  "updated_at": "2026-09-12T17:06:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32354508960,
+  "storage_human": "32.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Evadono Imu e Tari, premio da 8mila euro nelle buste paga dei",
+      "url": "https://www.msn.com/it-it/sicurezza-pubblica-ed-emergenze/generale/evadono-imu-e-tari-premio-da-8mila-euro-nelle-buste-paga-dei-dipendenti-che-li-hanno-stanati-la-mossa-del-comune-di-azzano/ar-AA2c3Is5",
+      "snippet": "17 hours ago · L’evasione scoperta vale un premio in busta paga. Ad Azzano il Comune ha disposto la liquidazione di 8.104,88 euro …"
+    },
+    {
+      "title": "Evadono Imu e Tari, premio da 8mila euro nelle buste paga dei ...",
+      "url": "https://www.zazoom.it/2026-09-12/evadono-imu-e-tari-premio-da-8mila-euro-nelle-buste-paga-dei-dipendenti-che-li-hanno-stanati-ma-i-nomi-dei-beneficiari-non-sono-pubblici/19670802/",
+      "snippet": "17 hours ago · Il Comune di Azzano ha riconosciuto circa 8.100 euro a dipendenti che hanno individuato casi di evasione di Imu e Tari."
+    },
+    {
+      "title": "Azzano rewards staff with €8,000 bonus for uncovering property tax ...",
+      "url": "https://www.newsminimalist.com/articles/azzano-rewards-staff-with-euro8000-bonus-for-uncovering-property-tax-evasion-e1e71753",
+      "snippet": "17 hours ago · AZZANO - L?evasione scoperta vale un premio in busta paga. Ad Azzano il Comune ha disposto la liquidazione di …"
+    },
+    {
+      "title": "AZZANO - Il Gazzettino",
+      "url": "https://www.ilgazzettino.it/t/azzano",
+      "snippet": "Evadono Imu e Tari, premio da 8mila euro nelle buste paga dei dipendenti che li hanno stanati: ma i nomi dei beneficiari non sono …"
+    },
+    {
+      "title": "Cerca News - Bing",
+      "url": "https://www.bing.com/news/?cc=it%2Cit%2Cit%2Cit&setlang=it",
+      "snippet": "Aug 9, 2026 · Dopo l'annuncio iniziale, arriva la conferma che Racconti Pokémon: Le disavventure di Sirfetch'd e Pichu verrà …"
+    }
+  ]
+}

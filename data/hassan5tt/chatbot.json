@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "hassan5tt/chatbot",
+  "slug": "hassan5tt-chatbot",
+  "author": "hassan5tt",
+  "url": "https://huggingface.co/hassan5tt/chatbot",
+  "created_at": "2026-09-12T14:37:08.000Z",
+  "updated_at": "2026-09-12T15:09:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cartography - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cartography",
+      "snippet": "In understanding basic maps, the field of cartography can be divided into two general categories: general cartography and thematic …"
+    },
+    {
+      "title": "Cartography - Maps of World",
+      "url": "https://www.mapsofworld.com/cartography/",
+      "snippet": "Cartography is an ancient practice and some of the oldest known maps, including world maps, date back to the Babylonian period. …"
+    },
+    {
+      "title": "Cartography | Maps, Mapping Techniques & History | Britannica",
+      "url": "https://www.britannica.com/science/cartography",
+      "snippet": "Jul 21, 2026 · Cartography, the art and science of graphically representing a geographical area, usually on a flat surface such as a …"
+    },
+    {
+      "title": "Cartography Chapter 1: Introduction to Cartography",
+      "url": "https://storymaps.arcgis.com/stories/87d862191c1047d7be050cd6b77ffeae",
+      "snippet": "Apr 21, 2026 · Cartography is the art and science of making maps. Cartography involves the process of producing a map through the …"
+    },
+    {
+      "title": "What Are The Fundamentals of Cartography? - USC GIS Graduate …",
+      "url": "https://gis.usc.edu/blog/the-fundamentals-of-cartography/",
+      "snippet": "Mar 5, 2026 · The fundamentals of cartography explore the key elements of mapping as well as the purpose and usage of different …"
+    }
+  ]
+}

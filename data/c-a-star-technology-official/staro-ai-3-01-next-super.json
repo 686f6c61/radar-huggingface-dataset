@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "C-a-Star-Technology-Official/StarO-AI-3-01-Next-Super",
+  "slug": "c-a-star-technology-official-staro-ai-3-01-next-super",
+  "author": "C-a-Star-Technology-Official",
+  "url": "https://huggingface.co/C-a-Star-Technology-Official/StarO-AI-3-01-Next-Super",
+  "created_at": "2026-05-07T23:07:06.000Z",
+  "updated_at": "2026-09-12T13:07:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "staro",
+    "staro-ai",
+    "arabic-llm",
+    "any-to-any",
+    "multimodal",
+    "super-model",
+    "pytorch",
+    "arabic",
+    "text-generation",
+    "text-to-image",
+    "vision-language-model",
+    "ar",
+    "base_model:C-a-Star-Technology-Official/StarO-AI-2.69-Super",
+    "base_model:finetune:C-a-Star-Technology-Official/StarO-AI-2.69-Super",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "C-a-Star-Official-1/StarO-AI-2.69-Super",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "C-- - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/C--",
+      "snippet": "C-- (conventionally written using hyphen-minuses but pronounced C minus minus) is a C-like programming language, designed to be …"
+    },
+    {
+      "title": "C - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/C",
+      "snippet": "C in copyright symbol C (minuscule: c) is the third letter of the Latin alphabet, used in the modern English alphabet, the alphabets of …"
+    },
+    {
+      "title": "C ce soir - Emission - tv-programme.com",
+      "url": "https://tv-programme.com/c-ce-soir-emission",
+      "snippet": "C ce soir - Programme TV de ce soir sur la TNT. Gratuit et complet. Replay TV : liens replay TF1, M6, W9, France 2, France 3, …"
+    },
+    {
+      "title": "Programme TV TNT - CNEWS",
+      "url": "https://www.cnews.fr/programme-tv-tnt",
+      "snippet": "Voici le programme TV TNT de l'intégralité des chaînes. Retrouvez également notre sélection des films, séries,documentaires à voir …"
+    },
+    {
+      "title": "Actualités, Infos et News en direct vidéo et replay | CNEWS",
+      "url": "https://www.cnews.fr/",
+      "snippet": "Le site de la chaîne d’information en continu CNEWS. Monde, politique, faits divers, sport, culture, people… Reportages en vidéo, le …"
+    }
+  ]
+}

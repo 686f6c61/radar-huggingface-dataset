@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nvidia/RE-USE",
+  "slug": "nvidia-re-use",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/RE-USE",
+  "created_at": "2026-03-17T07:15:50.000Z",
+  "updated_at": "2026-09-09T15:15:00.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "audio-to-audio",
+  "library": "mamba-ssm",
+  "languages": [],
+  "tags": [
+    "mamba-ssm",
+    "safetensors",
+    "speech-enhancement",
+    "universal speech enhancement",
+    "multiple input sampling rates",
+    "language-agnostic",
+    "audio-to-audio",
+    "arxiv:2603.02641",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 108,
+  "downloads_30d": 11761,
+  "trending_score": 0,
+  "parameters": 9607747,
+  "parameters_human": "9.6M",
+  "storage_bytes": 78025722,
+  "storage_human": "78 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux pièces …"
+    },
+    {
+      "title": "Comment retrouver mon compte - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-37958051-comment-retrouver-mon-compte",
+      "snippet": "Dec 5, 2023 · j ai un nouveau ordinateur et j arrive plus a récupère mon compter fb je fait comment merci"
+    },
+    {
+      "title": "Cómo registrarse en Facebook y configurar un nuevo perfil - CCM",
+      "url": "https://es.ccm.net/aplicaciones-e-internet/redes-sociales-y-mensajeria/2892-crear-una-cuenta-de-facebook/",
+      "snippet": "Jun 22, 2022 · Para utilizar Facebook es necesario registrarte antes y crear una cuenta personal en la red social. El procedimiento es …"
+    },
+    {
+      "title": "Buscar personas en Facebook: por nombre, foto, sin registro - CCM",
+      "url": "https://es.ccm.net/aplicaciones-e-internet/redes-sociales-y-mensajeria/2916-como-buscar-personas-en-facebook/",
+      "snippet": "Dec 26, 2023 · Facebook permite mantener el contacto con seres queridos. Si necesitas encontrar a alguien, ya sea un amigo o …"
+    },
+    {
+      "title": "Microsoft Bing à la sauce Facebook pour contrer Google - ZDNet",
+      "url": "https://www.zdnet.fr/actualites/microsoft-bing-a-la-sauce-facebook-pour-contrer-google-39760860.htm",
+      "snippet": "May 17, 2011 · Stratégie : Facebook s’invite sur Bing.com ! Le moteur de recherche développé par Microsoft vient d’annoncer qu’il …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "humair025/kikiri-urdu-stage1_2run",
+  "slug": "humair025-kikiri-urdu-stage1_2run",
+  "author": "humair025",
+  "url": "https://huggingface.co/humair025/kikiri-urdu-stage1_2run",
+  "created_at": "2026-09-12T17:37:23.000Z",
+  "updated_at": "2026-09-12T17:56:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5959669031,
+  "storage_human": "6.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZDF Mediathek - DIGITAL FERNSEHEN Forum",
+      "url": "https://forum.digitalfernsehen.de/threads/zdf-mediathek.164377/",
+      "snippet": "Nov 1, 2007 · AW: ZDF Mediathek ich finde die seite auch schrecklich. mit dem etwas älteren IE 5 tut sich bei mir gar nichts. firefox …"
+    },
+    {
+      "title": "ZDF Mediathek Downloads | DIGITAL FERNSEHEN Forum",
+      "url": "https://forum.digitalfernsehen.de/threads/zdf-mediathek-downloads.417263/",
+      "snippet": "May 2, 2020 · Hallo Leute, ich hoffe ich bin hier richtig. Ich benutze ein neues Chromebook und habe mal eine Folge des \"Alten\" in …"
+    },
+    {
+      "title": "Beiträge von Hermann57 - VLC Player Forum",
+      "url": "https://www.vlc-forum.de/user-post-list/31-hermann57/",
+      "snippet": "Mar 7, 2010 · Beiträge von Hermann57 Beim Aufzeichnen von der ZDF-Mediathek sind die ersten Bilder jedesmal farblich verfälscht …"
+    },
+    {
+      "title": "Beiträge von mildi87 - VLC Player Forum",
+      "url": "https://www.vlc-forum.de/user-post-list/9686-mildi87/",
+      "snippet": "VLC Player Forum Also habe es hinbekommen: -> Monitore sind alle als Erweiterung des Bildschirms geschaltet sodass ich mit der …"
+    },
+    {
+      "title": "ZDF-Mediathek über Fernsehgerät empfangen - DIGITAL FERNSEHEN …",
+      "url": "https://forum.digitalfernsehen.de/threads/zdf-mediathek-%C3%BCber-fernsehger%C3%A4t-empfangen.165138/",
+      "snippet": "Nov 9, 2007 · AW: ZDF-Mediathek über Fernsehgerät empfangen Danke, aber welche Möglichkeiten gibt es OHNE zusätzlichen …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "wumajingling/MyAwesomeModel-TestRepo",
+  "slug": "wumajingling-myawesomemodel-testrepo",
+  "author": "wumajingling",
+  "url": "https://huggingface.co/wumajingling/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-12T15:10:38.000Z",
+  "updated_at": "2026-09-12T15:11:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Rewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/",
+      "snippet": "We are not associated with Microsoft and are a community driven group to help maximize earning points."
+    },
+    {
+      "title": "BingHomepageQuiz - Reddit",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/hot/",
+      "snippet": "ADMIN MOD • Bing News Quiz [5/3/2024] - A restaurant at DisneyWorld became the first theme-park eatery to win what coveted …"
+    },
+    {
+      "title": "Bing News Quiz (7-22-2022) : r/BingQuizAnswers - Reddit",
+      "url": "https://www.reddit.com/r/BingQuizAnswers/comments/w52krw/bing_news_quiz_7222022/",
+      "snippet": "Jul 22, 2022 · Bing Weekly News Quiz: Questions Answers (7-22-2022) 22 July 2022, 1: As heat records across Europe became …"
+    },
+    {
+      "title": "Bing Homepage quiz task not triggering? : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/r8i6lc/bing_homepage_quiz_task_not_triggering/",
+      "snippet": "Dec 4, 2021 · MembersOnline Lizuka ADMIN MOD Bing Homepage quiz task not triggering? Questions Tried it on both Chrome and …"
+    },
+    {
+      "title": "[US] Bing News Quiz (6/24/2022) : r/BingHomepageQuiz - Reddit",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/comments/vjeqh9/us_bing_news_quiz_6242022/",
+      "snippet": "[US] Bing News Quiz (6/24/2022) Q1: As the mayor waved a checkered flag, a bulldozer smashed almost 100 illegal dirt bikes and …"
+    }
+  ]
+}

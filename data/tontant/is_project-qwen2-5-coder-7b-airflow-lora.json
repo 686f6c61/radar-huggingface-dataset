@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "TontanT/is_project-qwen2.5-coder-7b-airflow-lora",
+  "slug": "tontant-is_project-qwen2-5-coder-7b-airflow-lora",
+  "author": "TontanT",
+  "url": "https://huggingface.co/TontanT/is_project-qwen2.5-coder-7b-airflow-lora",
+  "created_at": "2026-09-12T16:56:37.000Z",
+  "updated_at": "2026-09-12T16:56:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172955187,
+  "storage_human": "173 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ORF-TVthek",
+      "url": "https://tvthek.orf.at/transcripts/show/1444774",
+      "snippet": "Sämtliche Inhalte sind nach den Bestimmungen des Urheberrechtsgesetzes bzw. verwandter Schutzrechte geschützt und dienen …"
+    },
+    {
+      "title": "Der weiße Ring, Highlights aus Lech - Livestream - ORF ON",
+      "url": "https://tvthek.orf.at/livestream/Der-weisse-Ring-Highlights-aus-Lech/14283072",
+      "snippet": ""
+    },
+    {
+      "title": "Jubel für Königspaar vom 22.11.2007 – ORF-TVthek",
+      "url": "https://tvthek.orf.at/history/Burgenland/13557893/Jubel-fuer-Koenigspaar/13967628",
+      "snippet": "Im Jahr 2007 besuchten König Carl Gustav und seine Frau Silvia das Burgenland. Silvia hielt sich dezent im Hintergrund. Der Presse …"
+    },
+    {
+      "title": "Wien: Stadt der Frauen vom 27.04.2014 – ORF-TVthek",
+      "url": "https://tvthek.orf.at/history/Starke-Frauen-Portraets-Kaempfe-und-Errungenschaften/13557869/Wien-Stadt-der-Frauen/14006804",
+      "snippet": "Viele Frauen sind längst aus der zweiten Reihe, in die sie zu oft verwiesen wurde, getreten. Welt- und Wien-weit stellen Frauen die …"
+    },
+    {
+      "title": "Vorbild für konfliktfreies Zusammenleben vom 21.10.2001",
+      "url": "https://tvthek.orf.at/history/Religion-und-Kultur/6932907/Vorbild-fuer-konfliktfreies-Zusammenleben/7436123",
+      "snippet": "Auf der tunesischen Insel Djerba lebt eine der ältesten, jüdischen Gemeinden inmitten der islamischen Bevölkerung. Die …"
+    }
+  ]
+}

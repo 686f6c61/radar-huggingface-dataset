@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "liorbenhorin-nv/so101_vials_sysid_dr_teal_70ep_GR00T17_20k",
+  "slug": "liorbenhorin-nv-so101_vials_sysid_dr_teal_70ep_gr00t17_20k",
+  "author": "liorbenhorin-nv",
+  "url": "https://huggingface.co/liorbenhorin-nv/so101_vials_sysid_dr_teal_70ep_GR00T17_20k",
+  "created_at": "2026-09-12T12:50:12.000Z",
+  "updated_at": "2026-09-12T12:50:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "groot",
+    "robotics",
+    "dataset:liorbenhorin-nv/so101_vials_sysid_dr_teal_70ep",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576219216,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Welcome to Python.org",
+      "url": "https://www.python.org/",
+      "snippet": "Experienced programmers in any other language can pick up Python very quickly, and beginners find the clean syntax and …"
+    },
+    {
+      "title": "Download Python | Python.org",
+      "url": "https://www.python.org/downloads/",
+      "snippet": "Python was created in the early 1990s by Guido van Rossum at Stichting Mathematisch Centrum in the Netherlands as a successor …"
+    },
+    {
+      "title": "Python 3.14.7 documentation",
+      "url": "https://docs.python.org/",
+      "snippet": "13 hours ago · This page is licensed under the Python Software Foundation License Version 2. Examples, recipes, and other code in …"
+    },
+    {
+      "title": "The Python Tutorial — Python 3.14.7 documentation",
+      "url": "https://docs.python.org/3/tutorial/index.html",
+      "snippet": "1 day ago · Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but …"
+    },
+    {
+      "title": "Online Python - IDE, Editor, Compiler, Interpreter",
+      "url": "https://www.online-python.com/",
+      "snippet": "Python, which was initially developed by Guido van Rossum and made available to the public in 1991, is currently one of the most …"
+    }
+  ]
+}

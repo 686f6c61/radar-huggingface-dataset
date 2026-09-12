@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Vanshm07/verifake-deepfake-detector",
+  "slug": "vanshm07-verifake-deepfake-detector",
+  "author": "Vanshm07",
+  "url": "https://huggingface.co/Vanshm07/verifake-deepfake-detector",
+  "created_at": "2026-09-12T13:54:29.000Z",
+  "updated_at": "2026-09-12T13:59:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 226594408,
+  "storage_human": "227 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "What is Claude and how does it work? Claude is an artificial intelligence, trained by Anthropic using Constitutional AI to be safe, …"
+    },
+    {
+      "title": "Sign in - Claude",
+      "url": "https://claude.ai/",
+      "snippet": "Frequently asked questions What is Claude and how does it work? What should I use Claude for? How much does it cost to use?"
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.ai/login-Claude",
+      "snippet": "Claude is Anthropic's AI, built for problem solvers. Tackle complex challenges, analyze data, write code, and think through your …"
+    },
+    {
+      "title": "Download Claude | Claude by Anthropic",
+      "url": "https://claude.com/download",
+      "snippet": "Claude in Chrome is included as a connector and is ready to use when you enable it. Turn it on in any conversation and Claude can …"
+    },
+    {
+      "title": "Home \\\\ Anthropic",
+      "url": "https://www.anthropic.com/",
+      "snippet": "At Anthropic, we build AI to serve humanity’s long-term well-being. ‍ Claude Science ... Core views on AI safety ... Anthropic’s …"
+    }
+  ]
+}

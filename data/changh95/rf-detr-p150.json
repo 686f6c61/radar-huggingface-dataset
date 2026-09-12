@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "changh95/rf-detr-p150",
+  "slug": "changh95-rf-detr-p150",
+  "author": "changh95",
+  "url": "https://huggingface.co/changh95/rf-detr-p150",
+  "created_at": "2026-09-11T17:12:20.000Z",
+  "updated_at": "2026-09-12T13:09:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "blackhole",
+    "p150",
+    "tt-dit-server",
+    "tt-model-cache",
+    "tt-model-container",
+    "tenstorrent",
+    "ttnn",
+    "tt-metal",
+    "tt-nn",
+    "detection",
+    "detr",
+    "rf-detr",
+    "tt-model-catalog",
+    "object-detection",
+    "arxiv:2511.09554",
+    "base_model:Roboflow/rf-detr-base",
+    "base_model:finetune:Roboflow/rf-detr-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5872044912,
+  "storage_human": "5.9 GB",
+  "base_model": "Roboflow/rf-detr-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The 10 best resorts in Dubai, UAE | Booking.com",
+      "url": "https://www.booking.com/resorts/city/ae/dubai.html?msockid=3c8b0bc8da4f655437741c1adb2f6485",
+      "snippet": "Find and book deals on the best resorts in Dubai, the United Arab Emirates! Explore guest reviews and book the perfect resort for …"
+    },
+    {
+      "title": "THE 10 BEST Dubai Resorts 2026 (with Prices) - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Hotels-g295424-zff8-Dubai_Emirate_of_Dubai-Hotels.html",
+      "snippet": "Best Dubai Resorts on Tripadvisor: Find traveler reviews, candid photos, and prices for 80 resorts in Dubai, Emirate of Dubai, United …"
+    },
+    {
+      "title": "The 10 best resorts in Dubai, UAE | Booking.com",
+      "url": "https://www.booking.com/resorts/city/ae/dubai.en-gb.html?msockid=3c8b0bc8da4f655437741c1adb2f6485",
+      "snippet": "Find and book deals on the best resorts in Dubai, the United Arab Emirates! Explore guest reviews and book the perfect resort for …"
+    },
+    {
+      "title": "59 Best Resorts In Dubai | Best Resorts Near Dubai (2025) - Holidify",
+      "url": "https://www.holidify.com/hotel-collections/resorts-in-dubai",
+      "snippet": "Read about 59 Best Resorts in Dubai for a fun-filled Vacation on Holidify. Get the latest deals & offers on the best stay options for …"
+    },
+    {
+      "title": "OS 10 MELHORES resorts de luxo - Dubai 2026 (com preços)",
+      "url": "https://www.tripadvisor.com.br/HotelsList-Dubai-Resort-De-Luxo-zfp11687934.html",
+      "snippet": "Os melhores resorts de luxo em Dubai: Encontre 270.143 avaliações de viagens, fotos e resort de luxo em Dubai com as melhores …"
+    }
+  ]
+}

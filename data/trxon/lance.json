@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Trxon/Lance",
+  "slug": "trxon-lance",
+  "author": "Trxon",
+  "url": "https://huggingface.co/Trxon/Lance",
+  "created_at": "2026-09-12T16:10:59.000Z",
+  "updated_at": "2026-09-12T16:11:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "Lance",
+  "languages": [],
+  "tags": [
+    "Lance",
+    "safetensors",
+    "multimodal",
+    "image-generation",
+    "video-generation",
+    "image-editing",
+    "video-understanding",
+    "any-to-any",
+    "arxiv:2605.18678",
+    "base_model:Qwen/Qwen2.5-VL-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-VL-3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30833328107,
+  "storage_human": "30.8 GB",
+  "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kredyt hipoteczny Wrzesień 2026 [RANKING], % stałe i zmienne",
+      "url": "https://www.bankier.pl/smart/kredyty-hipoteczne",
+      "snippet": "Oct 21, 2021 · Bankier Smart poleca → najtańszy kredyt hipoteczny na Twoje wymarzone mieszkanie, dom lub działkę. Sprawdź …"
+    },
+    {
+      "title": "Lokaty bankowe 2026 - Najlepszy ranking lokat - Bankier.pl",
+      "url": "https://www.bankier.pl/smart/lokaty",
+      "snippet": "Nov 21, 2021 · Skuteczne oszczędzanie jest możliwe. Sprawdź ranking lokat i zatroszcz się o swój kapitał bez podejmowania ryzyka."
+    },
+    {
+      "title": "Raport \"Polaków portret własny\" wywołał burzę. Autorka przyznaje ...",
+      "url": "https://www.bankier.pl/wiadomosc/Raport-Polakow-portret-wlasny-wywolal-burze-Autorka-przyznaje-wykorzystywalam-AI-9185203.html",
+      "snippet": "Aug 20, 2026 · Raport „Polaków portret własny” Barbary Mróz-Gorgoń wywołał w czwartek krytykę z powodu błędów i wykorzystania …"
+    },
+    {
+      "title": "Ranking kont oszczędnościowych Wrzesień 2026 | SMART Bankier.pl",
+      "url": "https://www.bankier.pl/smart/konta-oszczednosciowe",
+      "snippet": "1 day ago · Konta oszczędnościowe to bezpieczny sposób na pomnażanie swoich oszczędności. Sprawdź ranking kont …"
+    },
+    {
+      "title": "Czy 800+ należy podwyższyć? Minister finansów komentuje",
+      "url": "https://www.bankier.pl/wiadomosc/Czy-800-nalezy-podwyzszyc-Minister-finansow-komentuje-9193405.html",
+      "snippet": "4 days ago · Nie ma żadnych planów zmian w programie 800 plus - poinformował w poniedziałek minister finansów i gospodarki …"
+    }
+  ]
+}

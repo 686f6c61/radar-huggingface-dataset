@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Avalonec/Qwen3.8-27B-QuasarMLP-DFlash2-nvfp4full",
+  "slug": "avalonec-qwen3-8-27b-quasarmlp-dflash2-nvfp4full",
+  "author": "Avalonec",
+  "url": "https://huggingface.co/Avalonec/Qwen3.8-27B-QuasarMLP-DFlash2-nvfp4full",
+  "created_at": "2026-09-12T12:17:09.000Z",
+  "updated_at": "2026-09-12T12:17:09.000Z",
+  "license": "custom",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Minibacköfen online kaufen bei MediaMarkt",
+      "url": "https://www.mediamarkt.de/de/category/miniback%C3%B6fen-980.html?msockid=341bc80941bf6ded3d22dfdb40226ca9",
+      "snippet": "Ob kleine oder große Küche: die Mini Ofen von MediaMarkt passen überall. Jetzt Minibackofen online entdecken & bequem bestellen."
+    },
+    {
+      "title": "Minibacköfen in Tests: Aktueller Vergleich 2026 - MediaMarkt",
+      "url": "https://www.mediamarkt.de/de/content/heim-garten/kueche/beste-minibackoefen?msockid=341bc80941bf6ded3d22dfdb40226ca9",
+      "snippet": "Apr 9, 2026 · Der Minibackofen ist damit zum Beispiel eine praktische Ergänzung für kleine Küchen ohne Einbaubackofen – im 25 …"
+    },
+    {
+      "title": "Der beste Minibackofen | Test 09/2026 | F.A.Z. Kaufkompass",
+      "url": "https://www.faz.net/kaufkompass/test/der-beste-minibackofen/",
+      "snippet": "Aug 18, 2026 · Im Test überzeugte der Minibackofen von Tefal mit guter Backleistung. 1.300 Watt durch vier Heizelemente aus Quarz …"
+    },
+    {
+      "title": "Minibacköfen kaufen bei OBI",
+      "url": "https://www.obi.de/search/miniback%c3%b6fen/?msockid=341bc80941bf6ded3d22dfdb40226ca9",
+      "snippet": "HOMCOM Minibackofen 21L mit 1 Drahtgestell 1 Backblech 3 Kochmodi Glas Silber Online verfügbar Abholung: Markt auswählen …"
+    },
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Minibackofen",
+      "url": "https://www.amazon.de/minibackofen/s?k=minibackofen",
+      "snippet": "Kaufen Sie einen Minibackofen passend zu Ihrem Bedarf – mit Kapazitäten von rund 10 bis über 40 Litern und Modellen …"
+    }
+  ]
+}

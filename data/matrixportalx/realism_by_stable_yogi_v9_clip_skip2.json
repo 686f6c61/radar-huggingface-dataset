@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "matrixportalx/Realism_By_Stable_Yogi_V9_clip_skip2",
+  "slug": "matrixportalx-realism_by_stable_yogi_v9_clip_skip2",
+  "author": "matrixportalx",
+  "url": "https://huggingface.co/matrixportalx/Realism_By_Stable_Yogi_V9_clip_skip2",
+  "created_at": "2026-09-12T13:21:58.000Z",
+  "updated_at": "2026-09-12T13:22:11.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "stable-diffusion",
+    "sd1.5",
+    "qualcomm",
+    "qnn",
+    "qairt",
+    "snapdragon",
+    "local-dream",
+    "text-to-image",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 987194981,
+  "storage_human": "987 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Disable the Pop-Up Blocker in Chrome, Firefox, Edge, and Safari",
+      "url": "https://www.thetechedvocate.org/how-to-disable-the-pop-up-blocker-in-chrome-firefox-edge-and-safari/",
+      "snippet": "In this article, we’ll show you how to disable the pop-up blockers in four of the most popular web browsers: Chrome, Firefox, Edge, …"
+    },
+    {
+      "title": "How to Disable the Pop-Up Blocker in Chrome, Firefox ... - How-To Geek",
+      "url": "https://www.howtogeek.com/773082/how-to-disable-pop-up-blocker-in-chrome-firefox-edge-safari/",
+      "snippet": "Dec 31, 2021 · When a site requires pop-up windows to function, you will have to turn off the pop-up blocker in your web browser to …"
+    },
+    {
+      "title": "How to Turn the Pop-Up Blocker On or Off: Chrome & More",
+      "url": "https://www.wikihow.com/Turn-on-and-Off-Pop-Up-Blocker",
+      "snippet": "Jun 25, 2026 · In this article, we'll show you how to turn the pop-up blocker on or off in Chrome, Edge, Safari, and Firefox, with simple …"
+    },
+    {
+      "title": "Block pop-ups in Microsoft Edge - Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/block-pop-ups-in-microsoft-edge-1d8ba4f8-f385-9a0b-e944-aa47339b6bb5",
+      "snippet": "Select Settings and more > Extensions > Manage extension, then turn each extension off. If pop-ups are now being blocked, turn on …"
+    },
+    {
+      "title": "How to Disable the Pop-Up Blocker in Microsoft Edge",
+      "url": "https://www.howtogeek.com/770318/how-to-disable-pop-up-blocker-in-microsoft-edge/",
+      "snippet": "Nov 1, 2024 · Edge for mobile and tablets also comes with a pop-up blocker. To disable it, open Edge on your device and, at the …"
+    }
+  ]
+}

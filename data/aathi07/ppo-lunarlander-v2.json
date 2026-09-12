@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Aathi07/ppo-LunarLander-v2",
+  "slug": "aathi07-ppo-lunarlander-v2",
+  "author": "Aathi07",
+  "url": "https://huggingface.co/Aathi07/ppo-LunarLander-v2",
+  "created_at": "2026-09-12T16:20:25.000Z",
+  "updated_at": "2026-09-12T16:29:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "LunarLander-v2",
+    "ppo",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 632783,
+  "storage_human": "632783 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "Welcome to the official YouTube channel – a home for the biggest moments, the smallest obsessions, and everything in between. …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/homepage",
+      "snippet": "© 2026 Google LLC."
+    },
+    {
+      "title": "YouTube Official - YouTube",
+      "url": "https://www.youtube.com/channel/UCKoc4q6SXsxMhC5BbpZ7rVA/videos",
+      "snippet": "YouTube's Official Channel helps you discover what's new & trending globally. Watch must-see videos, from music to culture to …"
+    },
+    {
+      "title": "official site - YouTube",
+      "url": "https://www.youtube.com/@official_site_",
+      "snippet": "official site @official_site_ • 90 subscribers More about this channel ...more More about this channel ...more ...more"
+    }
+  ]
+}

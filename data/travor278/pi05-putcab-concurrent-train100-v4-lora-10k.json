@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Travor278/pi05-putcab-concurrent-train100-v4-lora-10k",
+  "slug": "travor278-pi05-putcab-concurrent-train100-v4-lora-10k",
+  "author": "Travor278",
+  "url": "https://huggingface.co/Travor278/pi05-putcab-concurrent-train100-v4-lora-10k",
+  "created_at": "2026-09-12T14:07:29.000Z",
+  "updated_at": "2026-09-12T14:11:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi05",
+    "jax",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335799296,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kit panneau solaire bateau – autonomie solaire pour voilier et vedette",
+      "url": "https://www.solaris-store.com/10-kit-panneau-solaire-bateau",
+      "snippet": "Le kit sert à recharger la 7 batterie auxiliaire appelée aussi batterie de servitude durant la journée. Suivant la puissance solaire …"
+    },
+    {
+      "title": "Kit solaire pour bateau avec panneau 12V et régulateur - H2R …",
+      "url": "https://www.h2r-equipements.com/761-kit-panneau-solaire-pour-bateau",
+      "snippet": "Découvrez notre sélection de kits panneau solaire pour bateau des plus grandes marques comme Energie Mobile ou Sunpower. …"
+    },
+    {
+      "title": "Permis Batezu : guide complet pour obtenir votre licence de …",
+      "url": "https://ghostlink.fr/permis-batezu/",
+      "snippet": "Apr 3, 2025 · Qu’est-ce que le Permis Batezu et pourquoi le viser ? Le permis batezu est une autorisation officielle délivrée par les …"
+    },
+    {
+      "title": "Panneau solaire et kit solaire photovoltaïque - étude gratuite",
+      "url": "https://www.myshop-solaire.com/",
+      "snippet": "Bluetti Anker Panneau solaire rigide Panneau solaire pliable Panneau solaire MPPT PWM Fixations panneaux solaires Kit hivernage …"
+    },
+    {
+      "title": "Kit Panneau Solaire & Photovoltaïque Meilleur Prix : Dès 269 Euros",
+      "url": "https://www.monkitsolaire.fr/96-kit-panneau-solaire",
+      "snippet": "Kit panneau solaire Réduisez vos factures d’électricité avec des panneaux solaires hautes performances ou devenez indépendant du …"
+    }
+  ]
+}

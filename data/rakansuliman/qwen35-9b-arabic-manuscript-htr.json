@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "rakansuliman/qwen35-9b-arabic-manuscript-htr",
+  "slug": "rakansuliman-qwen35-9b-arabic-manuscript-htr",
+  "author": "rakansuliman",
+  "url": "https://huggingface.co/rakansuliman/qwen35-9b-arabic-manuscript-htr",
+  "created_at": "2026-09-12T13:52:05.000Z",
+  "updated_at": "2026-09-12T14:06:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "htr",
+    "ocr",
+    "handwritten-text-recognition",
+    "arabic",
+    "arabic-manuscripts",
+    "historical-manuscripts",
+    "qwen",
+    "qwen3.5",
+    "lora",
+    "image-text-to-text",
+    "ar",
+    "dataset:TheSeniorTeam/Arabic_Manuscript_Collection_Dataset",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 351261718,
+  "storage_human": "351 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lowe's Stores in New-York",
+      "url": "https://www.lowes.com/Lowes-Stores/New-York/NY?msockid=3f2ce8f0329e6da30284ff2233e26ccc",
+      "snippet": "Find your nearby Lowe's store in New-York for all your home improvement and hardware needs."
+    },
+    {
+      "title": "Qwen/Qwen3.5-9B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lowe's Stores in New York (70 Locations) - Sep 2026",
+      "url": "https://www.storelocators.com/store-lists/lowes/new-york",
+      "snippet": "1 day ago · All 70 Lowe's store locations in New York with addresses, phone numbers, and hours. Updated daily."
+    },
+    {
+      "title": "Qwen3.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen35",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Find Lowe's Stores Near You - Locations, Hours and Services",
+      "url": "https://www.lowes.com/store/?msockid=3f2ce8f0329e6da30284ff2233e26ccc",
+      "snippet": "Find a Lowe's store near you using our store locator. Browse locations, check store hours, get directions and start shopping for …"
+    }
+  ]
+}

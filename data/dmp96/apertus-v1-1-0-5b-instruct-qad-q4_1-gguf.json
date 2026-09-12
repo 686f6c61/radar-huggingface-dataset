@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "DMP96/Apertus-v1.1-0.5B-Instruct-QAD-Q4_1-GGUF",
+  "slug": "dmp96-apertus-v1-1-0-5b-instruct-qad-q4_1-gguf",
+  "author": "DMP96",
+  "url": "https://huggingface.co/DMP96/Apertus-v1.1-0.5B-Instruct-QAD-Q4_1-GGUF",
+  "created_at": "2026-09-12T13:37:18.000Z",
+  "updated_at": "2026-09-12T14:59:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 572567040,
+  "parameters_human": "572.6M",
+  "storage_bytes": 734980544,
+  "storage_human": "735 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google street view URL - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/387942/google-street-view-url",
+      "snippet": "Dec 23, 2008 · Firstly, the list of parameters for the Google Maps site is documented here, so you can use that as your starting point. …"
+    },
+    {
+      "title": "Automatic Streetview transition in Google Maps v3",
+      "url": "https://stackoverflow.com/questions/3442144/automatic-streetview-transition-in-google-maps-v3",
+      "snippet": "Aug 9, 2010 · I'm mucking around with the Google Maps v3 API. Is there a way to replicate the map-to-streetview effect here? I can …"
+    },
+    {
+      "title": "Google マップでストリートビューを使用する",
+      "url": "https://support.google.com/maps/answer/3093484?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "Google マップと Google Earth の両方のストリートビューで、世界中のランドマークや大自然の驚異を眺めたり、博物館、競技場、 …"
+    },
+    {
+      "title": "Brug Street View i Google Maps",
+      "url": "https://support.google.com/maps/answer/3093484?hl=da&co=GENIE.Platform%3DDesktop",
+      "snippet": "Brug Street View i Google Maps Du kan udforske vartegn og naturens vidundere i hele verden og opleve steder som museer, …"
+    },
+    {
+      "title": "Getting the POV for Google StreetView API - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/7068365/getting-the-pov-for-google-streetview-api",
+      "snippet": "I am currently using the Google Street View Panorama embed and I want to get the POV (more specifically heading) for a particular …"
+    }
+  ]
+}

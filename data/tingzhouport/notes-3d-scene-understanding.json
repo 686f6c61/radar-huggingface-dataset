@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Tingzhouport/notes-3d-scene-understanding",
+  "slug": "tingzhouport-notes-3d-scene-understanding",
+  "author": "Tingzhouport",
+  "url": "https://huggingface.co/Tingzhouport/notes-3d-scene-understanding",
+  "created_at": "2026-09-12T11:01:17.000Z",
+  "updated_at": "2026-09-12T11:01:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "3d-scene-understanding",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "1.000+ kostenlose Hello Summer und Summer-Bilder - Pixabay",
+      "url": "https://pixabay.com/de/images/search/hello%20summer/",
+      "snippet": "Bilder zum Thema Hello Summer finden Lizenzfrei Kein Bildnachweis nötig Hochwertige Bilder."
+    },
+    {
+      "title": "Hallo Sommer lizenzfreie Bilder - Shutterstock",
+      "url": "https://www.shutterstock.com/de/search/hallo-sommer?msockid=22708ac3e5126ae814e59d11e4e56b3d",
+      "snippet": "Hello Summer greeting text clip art mit sommerlichen Elementen auf weißem und rosafarbenem Hintergrund für die …"
+    },
+    {
+      "title": "Hello Summer - Fotos, Lizenzfreie Bilder und Stockfotos",
+      "url": "https://www.istockphoto.com/de/fotos/hello-summer?msockid=22708ac3e5126ae814e59d11e4e56b3d",
+      "snippet": "Suchen Sie in 25.217 Stockfotos und lizenzfreien Bildern zum Thema Hello Summer von iStock. Finden Sie hochwertige Fotos, die …"
+    },
+    {
+      "title": "Hello Summer Background lizenzfreie Bilder - Shutterstock",
+      "url": "https://www.shutterstock.com/de/search/hello-summer-background?msockid=22708ac3e5126ae814e59d11e4e56b3d",
+      "snippet": "Finden Sie 199 Tausend Hello Summer Background Stockbilder in HD und Millionen weitere lizenzfreie Stockfotos, 3D-Objekte, …"
+    },
+    {
+      "title": "\"Hello Summer\"-Bilder: Stock-Fotos & -Videos. | Adobe Stock",
+      "url": "https://stock.adobe.com/de/search?k=%22hello+summer%22&msockid=22708ac3e5126ae814e59d11e4e56b3d",
+      "snippet": "Kostenloses Probe-Abo: Sichere dir 10 Stockfotos plus KI-Bearbeitungs-Tools. © 2026 Adobe. Alle Rechte vorbehalten."
+    }
+  ]
+}

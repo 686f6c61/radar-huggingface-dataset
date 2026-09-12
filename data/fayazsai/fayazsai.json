@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Fayazsai/Fayazsai",
+  "slug": "fayazsai-fayazsai",
+  "author": "Fayazsai",
+  "url": "https://huggingface.co/Fayazsai/Fayazsai",
+  "created_at": "2026-09-12T18:09:15.000Z",
+  "updated_at": "2026-09-12T18:17:33.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "summarization",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "summarization",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "قزمیت - معنی در دیکشنری آبادیس",
+      "url": "https://abadis.ir/fatofa/%D9%82%D8%B2%D9%85%DB%8C%D8%AA/",
+      "snippet": "معنی قزمیت - معانی، لغت نامه دهخدا، فرهنگ اسم ها، فرهنگ معین و عمید، مترادف و متضاد و ... در فرهنگ لغت آبادیس - برای مشاهده کلیک کنید"
+    },
+    {
+      "title": "معنی قزمیت | واژه یاب",
+      "url": "https://vajehyab.com/?q=%D9%82%D8%B2%D9%85%DB%8C%D8%AA",
+      "snippet": "جست‌وجوی معنی «قزمیت» در لغت نامه های دهخدا، معین، عمید، سره، مترادف و متضاد، فرهنگستان، دیکشنری انگلیسی و فارسی در بیش از یک میلیون واژه."
+    },
+    {
+      "title": "قزمیت یعنی چه ? - مجله نورگرام",
+      "url": "https://mag.noorgram.ir/1401/12/15/%d9%82%d8%b2%d9%85%db%8c%d8%aa-%db%8c%d8%b9%d9%86%db%8c-%da%86%d9%87/",
+      "snippet": "حتما برای شما هم پیش آمده است واژه قزمیت را بشنوید یا مشاهده کرده باشید و از معنی دقیق آن مطلع نباشید، در این مطلب معنی دقیق این کلمه را مرور میکنیم (قزمیت یعنی چه ? )."
+    },
+    {
+      "title": "معنی قزمیت | فرهنگ انتشارات معین | واژه یاب",
+      "url": "https://vajehyab.com/moein/%D9%82%D8%B2%D9%85%DB%8C%D8%AA",
+      "snippet": "قزمیت فرهنگ انتشارات معین (قُ زْ) (ص .) (عا.) زهوار در رفته ، درب و داغون ، فاقد کارآیی ."
+    },
+    {
+      "title": "معنی قزمیت - واژه‌نامه آزاد - لام تا کام",
+      "url": "https://www.lamtakam.com/dictionaries/azad/267427/%D9%82%D8%B2%D9%85%DB%8C%D8%AA",
+      "snippet": "در بعضی فرهنگ‌ها، قزمیت‌ها نماد معصومیت و خلاقیت هستند و به همین دلیل در ادبیات کودکانه بسیار محبوب‌اند."
+    }
+  ]
+}

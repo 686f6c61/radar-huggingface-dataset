@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "TaoLiveAIGC/TaoMate-H3",
+  "slug": "taoliveaigc-taomate-h3",
+  "author": "TaoLiveAIGC",
+  "url": "https://huggingface.co/TaoLiveAIGC/TaoMate-H3",
+  "created_at": "2026-09-07T07:31:59.000Z",
+  "updated_at": "2026-09-09T10:09:07.000Z",
+  "license": "minimax-h3-community",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "audio-video",
+    "streaming",
+    "lora",
+    "text-to-video",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 46,
+  "trending_score": 9,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2480974080,
+  "storage_human": "2.5 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Corriere della Sera: News e Ultime notizie in tempo reale da Italia e …",
+      "url": "https://www.corriere.it/",
+      "snippet": "Oct 6, 2023 · Corriere della Sera è il primo quotidiano online aggiornato con le ultime notizie di Cronaca, Politica, Economia, Sport, …"
+    },
+    {
+      "title": "Corriere Milano: le ultime news dalla Lombardia",
+      "url": "https://milano.corriere.it/",
+      "snippet": "Le ultime news dalla città di Milano e dalla Lombardia in tempo reale: cronaca, sport, politica ed economia. Rimani aggiornato con le …"
+    },
+    {
+      "title": "Corriere Bergamo: le ultime news dalla città",
+      "url": "https://bergamo.corriere.it/",
+      "snippet": "Le ultime news da Bergamo in tempo reale: cronaca, sport, politica ed economia. Rimani aggiornato con le notizie di Corriere.it"
+    },
+    {
+      "title": "Corriere Napoli: le ultime news della città | Corriere Del Mezzogiorno",
+      "url": "https://napoli.corriere.it/",
+      "snippet": "4 days ago · Le ultime news da Napoli in tempo reale: cronaca, sport, politica ed economia. Rimani aggiornato con le notizie di …"
+    },
+    {
+      "title": "Corriere Torino: ultime notizie dal Piemonte",
+      "url": "https://torino.corriere.it/",
+      "snippet": "Le ultime news dalla città di Torino e dal Piemonte a in tempo reale: cronaca, sport, politica ed economia. Rimani aggiornato con le …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "NAMAA-Space/araseg-sat-ft",
+  "slug": "namaa-space-araseg-sat-ft",
+  "author": "NAMAA-Space",
+  "url": "https://huggingface.co/NAMAA-Space/araseg-sat-ft",
+  "created_at": "2026-09-12T14:05:39.000Z",
+  "updated_at": "2026-09-12T14:32:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "safetensors",
+    "arabic",
+    "text-segmentation",
+    "token-classification",
+    "araseg-2026",
+    "arabicnlp2026",
+    "shared-task",
+    "ar",
+    "base_model:segment-any-text/sat-12l-sm",
+    "base_model:finetune:segment-any-text/sat-12l-sm",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10006054224,
+  "storage_human": "10.0 GB",
+  "base_model": "segment-any-text/sat-12l-sm",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Allegro - atrakcyjne ceny - Strona Główna",
+      "url": "https://allegro.pl/",
+      "snippet": "Przewidywany przez Allegro czas dostawy. Wyliczamy go na podstawie dotychczasowych wysyłek sprzedającego oraz czasu …"
+    },
+    {
+      "title": "Allegro logowanie - Moje Allegro",
+      "url": "https://allegro.pl/logowanie",
+      "snippet": "Allegro.pl - Więcej niż aukcje. Najlepsze oferty na największej platformie handlowej."
+    },
+    {
+      "title": "Allegro Business - platforma zakupowa dla B2B i firm.",
+      "url": "https://business.allegro.pl/",
+      "snippet": "Kupuj wygodnie dla swojej firmy na platformie Allegro Business. Otrzymuj faktury, korzystaj ze specjalnych cen i warunków dla B2B. …"
+    },
+    {
+      "title": "Forum Allegro Gadane: społeczność kupujących i sprzedających",
+      "url": "https://spolecznosc.allegro.pl/",
+      "snippet": "Zwrot z allegro Smart Zwracam towar (opona) z wykorzystaniem allegro Smart i system każe mi zatoczyć oponę do punktu DHL …"
+    },
+    {
+      "title": "Najlepsze okazje wakacyjne w jednym miejscu - Allegro Wakacje",
+      "url": "https://wakacje.allegro.pl/",
+      "snippet": "Nie trać czasu na szukanie! Zebraliśmy dla Ciebie najgorętsze oferty wakacyjne, wycieczki Last Minute i najlepsze kierunki w jednym …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "kayveedev/ppo-LunarLander-v3",
+  "slug": "kayveedev-ppo-lunarlander-v3",
+  "author": "kayveedev",
+  "url": "https://huggingface.co/kayveedev/ppo-LunarLander-v3",
+  "created_at": "2026-09-12T11:06:54.000Z",
+  "updated_at": "2026-09-12T11:07:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 284378,
+  "storage_human": "284378 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تحميل اغاني - اليسا - mp3 - البوماتي",
+      "url": "https://www.albumaty.com/singer/6.html",
+      "snippet": "ألبومات اليسا ألبوم أنا سكتين 2024 ألبوم صاحبة رأي 2020 ألبوم الى كل اللي بيحبوني 2018 ألبوم سهرنا يا ليل 2016 ألبوم حالة حب 2014 ألبوم أسعد واحدة 2012 ألبوم تصدق بمين 2009 …"
+    },
+    {
+      "title": "تحميل اغاني - اليسا - mp3 - البوماتي",
+      "url": "https://www.albumaty.com/n/singer/49.html",
+      "snippet": "ألبومات اليسا ألبوم صاحبة راي 2020 ألبوم الي كل اللي بيحبوني 2018 ألبوم سهرنا يا ليل 2016 ألبوم تصدق بمين 2009 ألبوم حالة حب 2014 ألبوم اسعد وحدة 2012 ألبوم اجمل اغاني اليسا …"
+    },
+    {
+      "title": "‏Elissa اليسا | استماع على أنغامي - Anghami",
+      "url": "https://play.anghami.com/artist/118",
+      "snippet": "‏ استماع تحميل أغاني (Elissa) اليسا - من ضمنها عكس اللي شايفنها ،حالة حب ،من أول دقيقة …"
+    },
+    {
+      "title": "موسيقى وأغاني اليسا - التحميل والاستماع مجانا MP3",
+      "url": "https://www.zik-arabica.com/ar/artist/elissa-khoury",
+      "snippet": "التحميل والاستماع مجانا لموسيقى اليسا. الاستماع إلى موسيقى وأغاني اليسا مباشرة. جميع أغاني و ألبومات اليسا."
+    },
+    {
+      "title": "اغاني اليسا mp3 - لحن عربي",
+      "url": "https://www.arabmelody.net/audios/9c996",
+      "snippet": "أغاني الفنان : اليسا إسم القسم : اغاني لبنانية كلمات دليليه : تحميل اغاني اليسا mp3 البومات اليسا كلمات اغاني اليسا Elissa Songs صفحات اخرى للمزيد من اغاني اليسا الجديد إسم الاغنية المده …"
+    }
+  ]
+}

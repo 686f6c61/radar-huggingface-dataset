@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "pmolodyk/artifacts-a833cdd7fe3f8895",
+  "slug": "pmolodyk-artifacts-a833cdd7fe3f8895",
+  "author": "pmolodyk",
+  "url": "https://huggingface.co/pmolodyk/artifacts-a833cdd7fe3f8895",
+  "created_at": "2026-09-10T16:46:13.000Z",
+  "updated_at": "2026-09-12T13:25:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 726252237468,
+  "storage_human": "726.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GayRoyal Welcome",
+      "url": "https://gayroyal.com/",
+      "snippet": "Welcome to GayRoyal! We are the #1 global gay dating community. Discover a free and open home to find love, exciting dates, chat …"
+    },
+    {
+      "title": "www.gayroyal.com",
+      "url": "https://www.gayroyal.com/push/default.asp",
+      "snippet": ""
+    },
+    {
+      "title": "Goodbye - GayRoyal",
+      "url": "https://www.gayroyal.com/Goodbye/",
+      "snippet": "GayRoyal App Android and iOS Alternative web addresses: chatroyal.com bearroyal.com 429royal.com 42976925.com A service of …"
+    },
+    {
+      "title": "GayRoyal - The #1 for Gay Dating",
+      "url": "https://www.gayroyal.com/app/",
+      "snippet": "With GayRoyal you have all your dating possibilities at the palm of your hand - quick, uncomplicated and right in your neighborhood! …"
+    },
+    {
+      "title": "ROMEO | Gay, Bi und Trans Dating und Chat | Dates. Freunde. Liebe",
+      "url": "https://www.romeo.com/de/",
+      "snippet": "ROMEO (PlanetRomeo) ist das beste Dating- und soziale Netzwerk für Schwule, Bi- und Trans-Menschen im Web, auf iOS und …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "OliviaRossi/TripleTrouble-V3-ALT2",
+  "slug": "oliviarossi-tripletrouble-v3-alt2",
+  "author": "OliviaRossi",
+  "url": "https://huggingface.co/OliviaRossi/TripleTrouble-V3-ALT2",
+  "created_at": "2026-09-12T12:14:46.000Z",
+  "updated_at": "2026-09-12T13:12:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 69338390078,
+  "storage_human": "69.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "哪个才是steam？ - 知乎",
+      "url": "https://www.zhihu.com/question/603521723",
+      "snippet": "May 28, 2023 · 当你百度搜索steam的时候 是不是看到琳琅满目的steam？ 当你点击进去看到 sdeam steam游戏管家 steam游戏中心 …"
+    },
+    {
+      "title": "steam正版网站是什么? - 知乎",
+      "url": "https://www.zhihu.com/question/509353816",
+      "snippet": "如果直接复制网址打不开的话，可以先搜索steam，在搜索结果里面照着网址找到正版打开也行。 千万不要下成steam管家！ 老坑人了 …"
+    },
+    {
+      "title": "【情報】【 已結束／Steam】限時免費領取 免轉付遊戲《螺絲起子賽車 …",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=60599&snA=54643",
+      "snippet": "自 8 月 20 日起，《螺絲起子賽車》 本體將以 7,99€ 的價格販售 ⏰ 活動期間 ｜到台灣時間 8 月 21 日早晨 止 ⛔ 福利鎖區 ｜無 📋 領取 …"
+    },
+    {
+      "title": "辟邪除妖 Variants Daphne 哈啦板 - 巴哈姆特",
+      "url": "https://forum.gamer.com.tw/B.php?bsn=70180",
+      "snippet": "Oct 16, 2025 · 歡迎來到辟邪除妖 Variants Daphne哈啦板，最新資訊及情報分享、精華好文查找、創作交流討論，盡在巴哈姆特！"
+    },
+    {
+      "title": "steam如何设置允许显示成人内容-百度经验",
+      "url": "https://jingyan.baidu.com/article/0bc808fc820feb5ad485b98f.html",
+      "snippet": "May 15, 2020 · steam如何设置允许显示成人内容,team如何设置允许显示成人内容？在team商店下载，购买游戏等时，如何设置可以 …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Caterpie",
+  "slug": "ryanham1lton-caterpie",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Caterpie",
+  "created_at": "2026-09-12T17:09:17.000Z",
+  "updated_at": "2026-09-12T17:12:05.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 120738818,
+  "storage_human": "121 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Explore and share videos, music, and more on YouTube, the leading platform for online video streaming and sharing."
+    },
+    {
+      "title": "News - YouTube",
+      "url": "https://www.youtube.com/channel/UCYfdidRxbB8Qhf0Nx7ioOYw",
+      "snippet": "Obama, Biden y Mamdani arropan el 11S en Nueva York ante la ausencia de Trump ㅤ Líderes políticos y exmandatarios de Estados …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/channel/UCpFAp7DpFD1-RuwvFmGfing",
+      "snippet": "Profile • @y-jy3st Sign in to create & share playlists, get personalized recommendations, and more."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/live/Y",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    }
+  ]
+}

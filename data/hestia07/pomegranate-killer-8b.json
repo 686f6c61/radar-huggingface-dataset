@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Hestia07/Pomegranate-Killer-8B",
+  "slug": "hestia07-pomegranate-killer-8b",
+  "author": "Hestia07",
+  "url": "https://huggingface.co/Hestia07/Pomegranate-Killer-8B",
+  "created_at": "2026-09-12T16:27:49.000Z",
+  "updated_at": "2026-09-12T16:27:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "merge",
+    "mergekit",
+    "lazymergekit",
+    "Arcee-AI/Llama-3-Soliloquy-8B",
+    "NousResearch/Hermes-3-Llama-3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Arcee-AI/Llama-3-Soliloquy-8B, NousResearch/Hermes-3-Llama-3-8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mackolik.com - iddaa,canlı maç,iddaa sonuçları,sahadan,futbol ...",
+      "url": "https://www.mackolik.com/",
+      "snippet": "iddaa, iddaa sonuclari, iddaa canlı maç sonuçları,puan durumları,iddaa oranları,iddaa programı,tuttur kuponları,istatistikler,futbol ve …"
+    },
+    {
+      "title": "Canlı Sonuçlar - İddaa Sonuçları | Mackolik.com",
+      "url": "https://www.mackolik.com/canli-sonuclar",
+      "snippet": "Mackolik canlı sonuçlar sayfasında 1.250’ye yakın lig ve kupada oynanan 50.000’in üzerindeki futbol maçının ve 350’ye yakın lig ve …"
+    },
+    {
+      "title": "Canlı Sonuçlar, iddaa sonuçları @ Mackolik.com",
+      "url": "https://arsiv.mackolik.com/Canli-Sonuclar",
+      "snippet": "Canlı maç sonuçları, iddaa skorları ve program bilgileri için Mackolik.com'u ziyaret edin."
+    },
+    {
+      "title": "Mackolik Canlı Sonuçlar - Google Play'de Uygulamalar",
+      "url": "https://play.google.com/store/apps/details?id=com.kokteyl.mackolik&hl=tr",
+      "snippet": "Gollerin heyecanını maç detay sayfasındaki animasyonlarla yeniden yaşayın. Aşağıdaki adreslerden bize ulaşabilirsiniz. 🏆 …"
+    },
+    {
+      "title": "İddaa Sonuçları, Spor Toto Süper Lig, Canli iddaa Maç Sonuçları ...",
+      "url": "https://www.flashscore.com.tr/",
+      "snippet": "Flashscore futbol canlı skor ve maç sonucu hizmeti Süper Lig, Premier Lig, La Liga, Serie A, Bundesliga, Şampiyonlar Ligi ve …"
+    }
+  ]
+}

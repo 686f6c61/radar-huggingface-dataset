@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Dash10107/pirate-tech-support-qwen",
+  "slug": "dash10107-pirate-tech-support-qwen",
+  "author": "Dash10107",
+  "url": "https://huggingface.co/Dash10107/pirate-tech-support-qwen",
+  "created_at": "2026-09-12T11:23:18.000Z",
+  "updated_at": "2026-09-12T11:25:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519716,
+  "storage_human": "1000 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mein o2: Alle wichtigen Services zu Ihrem o2 Vertrag",
+      "url": "https://www.o2online.de/mein-o2/",
+      "snippet": "Besuche jetzt Mein o2, deinen persönlichen o2 Bereich. Für alle Mobilfunk-, DSL- und Prepaid-Kunden. Mit allen wichtigen Services …"
+    },
+    {
+      "title": "Login",
+      "url": "https://login.o2online.de/signin/XUI/",
+      "snippet": "Mein o2 Kunden-Login Alle Vertragsdetails im Blick 24/7 Supportanfragen Exklusive Deals für Kunden > Jetzt einloggen."
+    },
+    {
+      "title": "o2 Rechnung online einsehen und Zahlungen verwalten",
+      "url": "https://www.o2online.de/service/rechnung-zahlung/",
+      "snippet": "Auf dieser Seite findest du alles Wichtige zu deiner O 2 Rechnung und deinen Zahlungsmöglichkeiten. Sieh dir die aktuelle Rechnung …"
+    },
+    {
+      "title": "Kontakt aufnehmen und Hilfe finden | o2",
+      "url": "https://www.o2online.de/kontakt/",
+      "snippet": "Du bist bereits Kunde? Dann logge dich ein und wir empfehlen dir die für dich passenden Kontaktkanäle. So vermeidest du lange …"
+    },
+    {
+      "title": "Login",
+      "url": "https://login-rct.o2online.de/auth/login",
+      "snippet": "Die wichtigsten Services unserer Website und einige spezielle Funktionen finden Sie in der Mein O 2 App. Zum Herunterladen je …"
+    }
+  ]
+}

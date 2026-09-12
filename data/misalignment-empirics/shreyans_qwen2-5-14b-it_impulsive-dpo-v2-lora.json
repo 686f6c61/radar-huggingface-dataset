@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Misalignment-Empirics/shreyans_qwen2.5-14b-it_impulsive-dpo-v2-lora",
+  "slug": "misalignment-empirics-shreyans_qwen2-5-14b-it_impulsive-dpo-v2-lora",
+  "author": "Misalignment-Empirics",
+  "url": "https://huggingface.co/Misalignment-Empirics/shreyans_qwen2.5-14b-it_impulsive-dpo-v2-lora",
+  "created_at": "2026-09-12T16:15:03.000Z",
+  "updated_at": "2026-09-12T16:15:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-14B-Instruct",
+    "dpo",
+    "lora",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-14B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 562015076,
+  "storage_human": "562 MB",
+  "base_model": "Qwen/Qwen2.5-14B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CST to EST Converter - Convert Central Time to Eastern Time",
+      "url": "https://www.worldtimebuddy.com/cst-to-est-converter",
+      "snippet": "2 days ago · Quickly convert Central Standard Time (CST) to Eastern Standard Time (EST) with this easy-to-use, modern time zone …"
+    },
+    {
+      "title": "CST to EST Converter - Savvy Time",
+      "url": "https://savvytime.com/converter/cst-to-est",
+      "snippet": "Convert CST time to EST time with Savvy Time. Compare current local time, UTC offsets, time difference, daylight saving time, table …"
+    },
+    {
+      "title": "CST to EST Converter — Central Time to Eastern Time",
+      "url": "https://worldtimeconverter.net/time-zone-converter/cst-to-est",
+      "snippet": "Convert CST to EST instantly. EST is always 1 hour ahead of CST — the gap never changes for daylight saving. Full 24-hour CST to …"
+    },
+    {
+      "title": "CST to EST Converter - time.now",
+      "url": "https://time.now/tool/cst-to-est-converter/",
+      "snippet": "Jul 1, 2025 · Convert CST to EST with this simple time tool. Handles Daylight Saving Time, offers live CST clock, and supports both …"
+    },
+    {
+      "title": "CST to EST Converter - Time Zone Tool - The Time Now",
+      "url": "https://www.thetimenow.com/timezones/convert/cst/est",
+      "snippet": "2 days ago · Convert Central Standard Time (CST) now to Eastern Standard Time (EST) now with this free and simple time zone …"
+    }
+  ]
+}

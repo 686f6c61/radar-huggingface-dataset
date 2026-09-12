@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "morinaoki/multimodal-generation-exp",
+  "slug": "morinaoki-multimodal-generation-exp",
+  "author": "morinaoki",
+  "url": "https://huggingface.co/morinaoki/multimodal-generation-exp",
+  "created_at": "2026-09-12T10:43:11.000Z",
+  "updated_at": "2026-09-12T10:43:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vous connecter - societegenerale.fr",
+      "url": "https://devenirclient.particuliers.societegenerale.fr/icd/eprpri/index-authsec.html",
+      "snippet": "Connectez-vous à votre espace client Société Générale pour accéder à vos comptes et gérer vos services bancaires en ligne."
+    },
+    {
+      "title": "Connexion | SG",
+      "url": "https://www.entreprises.secure.societegenerale.fr/icd/eds/espace-demandes-authsec.html",
+      "snippet": "La réglementation européenne, applicable à toutes les banques, a évolué afin de renforcer la sécurité de vos données bancaires. La …"
+    },
+    {
+      "title": "Société Générale Investment Solutions (France)",
+      "url": "https://investmentsolutions.societegenerale.fr/fr/",
+      "snippet": "Message de vigilance Société Générale Investment Solutions (France) est victime d’une utilisation frauduleuse de son identité. Nous …"
+    },
+    {
+      "title": "QUI CONTACTER - societegenerale.fr",
+      "url": "https://static.societegenerale.fr/ent/ENT/Repertoire_par_type_de_contenus/Types_de_contenus/01-Pages/00-perennes/espace_securite/commun_pdf/ingenierie-sociale.pdf",
+      "snippet": "Une fois le programme installé sur l'ordinateur, le pirate peut, par exemple, voler vos mots de passe et/ou identifiants, copier des …"
+    },
+    {
+      "title": "Société Générale Investment Solutions (France)",
+      "url": "https://investmentsolutions.societegenerale.fr/",
+      "snippet": "Approved by the AMF at the end of 2006,Société Générale Investment Solution (France) S.A.S, a subsidiary of Societe Generale, is …"
+    }
+  ]
+}

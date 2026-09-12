@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ads2009/english-ai-text-detector-distilbert-v4",
+  "slug": "ads2009-english-ai-text-detector-distilbert-v4",
+  "author": "ads2009",
+  "url": "https://huggingface.co/ads2009/english-ai-text-detector-distilbert-v4",
+  "created_at": "2026-09-12T18:14:54.000Z",
+  "updated_at": "2026-09-12T18:15:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wat is een zwarte creditcard? - Pliant",
+      "url": "https://www.getpliant.com/nl/blog/zwarte-creditcard",
+      "snippet": "Jan 23, 2023 · Wat is een zwarte creditcard? Een zwarte creditcard is een topklasse kredietkaart met speciale voordelen, zoals een …"
+    },
+    {
+      "title": "Roemeense voetbalbond introduceert zwarte kaart - Voetbalprimeur",
+      "url": "https://www.voetbalprimeur.be/nieuws/2134802/roemeense-voetbalbond-introduceert-zwarte-kaart.html",
+      "snippet": "5 hours ago · In Roemenië is de zwarte kaart geïntroduceerd. De nationale voetbalbond FRF verklaart dat de kaart in het leven is …"
+    },
+    {
+      "title": "Eerste competitie gaat experimenteren met 'zwarte kaart' (maar",
+      "url": "https://www.msn.com/nl-be/sport/algemeen/eerste-competitie-gaat-experimenteren-met-zwarte-kaart-maar-die-is-niet-voor-spelers/ar-AA2c4jOx",
+      "snippet": "18 hours ago · Een gele kaart voor een speler, een rode kaart voor een uitsluiting. Maar in Roemenië komt daar voortaan een …"
+    },
+    {
+      "title": "Overzichtskaart van het Zwarte Woud met veel informatie",
+      "url": "https://www.schwarzwaldportal.com/nl/_black-bos-kaart.html",
+      "snippet": "Overzichtskaart Zwarte Woud, kaart Zwarte Woud met belangrijke informatie over excursietips, plaatsen, wandelingen, verkooppunten"
+    },
+    {
+      "title": "Black Card Mastercard - Kies je Card",
+      "url": "https://kiesjecard.nl/mastercard/black-card-mastercard/",
+      "snippet": "May 31, 2026 · De Black Card van MasterCard is eigenlijk wel de top kaart en gewoonweg de beste MasterCard verkrijgbaar. Nu is …"
+    }
+  ]
+}

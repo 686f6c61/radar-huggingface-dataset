@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "OliviaRossi/TripleTrouble-V3-ALT1-Q5_K_M-GGUF",
+  "slug": "oliviarossi-tripletrouble-v3-alt1-q5_k_m-gguf",
+  "author": "OliviaRossi",
+  "url": "https://huggingface.co/OliviaRossi/TripleTrouble-V3-ALT1-Q5_K_M-GGUF",
+  "created_at": "2026-09-12T12:23:05.000Z",
+  "updated_at": "2026-09-12T12:24:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:OliviaRossi/TripleTrouble-V3-ALT1",
+    "base_model:quantized:OliviaRossi/TripleTrouble-V3-ALT1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 24729153472,
+  "storage_human": "24.7 GB",
+  "base_model": "OliviaRossi/TripleTrouble-V3-ALT1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "Introducing ChatGPT - OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    },
+    {
+      "title": "Start using ChatGPT instantly - OpenAI",
+      "url": "https://openai.com/index/start-using-chatgpt-instantly/",
+      "snippet": "Apr 1, 2024 · Starting today, you can use ChatGPT instantly, without needing to sign-up. We’re rolling this out gradually, with the aim …"
+    },
+    {
+      "title": "ChatGPT - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/ChatGPT",
+      "snippet": "ChatGPT is a generative AI chatbot developed by OpenAI. Originally released on November 30, 2022, the product uses large …"
+    }
+  ]
+}

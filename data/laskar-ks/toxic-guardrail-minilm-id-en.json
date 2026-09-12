@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "laskar-ks/toxic-guardrail-minilm-id-en",
+  "slug": "laskar-ks-toxic-guardrail-minilm-id-en",
+  "author": "laskar-ks",
+  "url": "https://huggingface.co/laskar-ks/toxic-guardrail-minilm-id-en",
+  "created_at": "2026-09-08T06:05:09.000Z",
+  "updated_at": "2026-09-12T17:58:51.000Z",
+  "license": "cc-by-sa-3.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "id",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "bert",
+    "toxicity",
+    "guardrail",
+    "bilingual",
+    "indonesian",
+    "text-classification",
+    "id",
+    "en",
+    "dataset:laskar-ks/toxic-guardrail-id-en",
+    "base_model:microsoft/Multilingual-MiniLM-L12-H384",
+    "base_model:quantized:microsoft/Multilingual-MiniLM-L12-H384",
+    "license:cc-by-sa-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 79,
+  "trending_score": 0,
+  "parameters": 34606084,
+  "parameters_human": "34.6M",
+  "storage_bytes": 886436551,
+  "storage_human": "886 MB",
+  "base_model": "microsoft/Multilingual-MiniLM-L12-H384",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "WhatsApp | Secure and Reliable Free Private Messaging and Calling",
+      "url": "https://www.whatsapp.com/",
+      "snippet": "Use WhatsApp Messenger to stay in touch with friends and family. WhatsApp is free and offers simple, secure, reliable messaging …"
+    },
+    {
+      "title": "WhatsApp",
+      "url": "https://wa.me/?text=Login",
+      "snippet": "Hosted by WhatsApp 2026 © WhatsApp LLC Privacy & Terms"
+    },
+    {
+      "title": "WhatsApp Messenger - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.whatsapp&hl=en",
+      "snippet": "WhatsApp from Meta is a FREE messaging and video calling app. It’s used by over 2B people in more than 180 countries. It’s simple, …"
+    },
+    {
+      "title": "WhatsApp | Безбедна, поуздана и бесплатна ...",
+      "url": "https://www.whatsapp.com/?lang=sr",
+      "snippet": "Апликација WhatsApp је бесплатна и нуди једноставне, безбедне и поуздане услуге размене порука и упућивања позива које …"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "schema": 1,
+  "id": "fwizzer1/Fwizzer-R1-3B-ZH-v3",
+  "slug": "fwizzer1-fwizzer-r1-3b-zh-v3",
+  "author": "fwizzer1",
+  "url": "https://huggingface.co/fwizzer1/Fwizzer-R1-3B-ZH-v3",
+  "created_at": "2026-09-11T06:19:44.000Z",
+  "updated_at": "2026-09-12T13:39:09.000Z",
+  "license": "fwizzer-titan-eula",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "titan",
+    "flagship",
+    "reasoning",
+    "r1",
+    "deepseek-r1",
+    "ministral",
+    "gguf",
+    "cot",
+    "chain-of-thought",
+    "chinese",
+    "code",
+    "math",
+    "agentic",
+    "text-generation",
+    "unsloth",
+    "llama.cpp",
+    "lmstudio",
+    "ollama",
+    "vllm",
+    "conversational",
+    "zh",
+    "en",
+    "dataset:fwizzer1/fwizzer-v3-titan-agentic",
+    "base_model:unsloth/Ministral-3-3B-Instruct-2512-bnb-4bit",
+    "base_model:finetune:unsloth/Ministral-3-3B-Instruct-2512-bnb-4bit",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 610697839,
+  "storage_human": "611 MB",
+  "base_model": "unsloth/Ministral-3-3B-Instruct-2512-bnb-4bit",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "GSM8K",
+      "metric": "Accuracy",
+      "value": 86.9
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MATH",
+      "metric": "Accuracy",
+      "value": 61.5
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "HumanEval",
+      "metric": "Pass@1",
+      "value": 70.1
+    }
+  ],
+  "sources": [
+    {
+      "title": "Accéder à mon mail Orange",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/Acc%C3%A9der-%C3%A0-mon-mail-Orange/td-p/36",
+      "snippet": "Aug 2, 2013 · Voici quelques infos utiles à préciser lorsque vous rencontrez un soucis de messagerie Comment consultez-vous vos e …"
+    },
+    {
+      "title": "Orange - Forum - Assistance - Communauté Orange - Livebox - Mobile ...",
+      "url": "https://communaute.orange.fr/",
+      "snippet": "Trouvez les réponses sur le forum Orange et bénéficiez de l'entraide et des conseils des utilisateurs de services Orange."
+    },
+    {
+      "title": "Mail Orange - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/mon-mail-Orange/Mail-Orange/td-p/3424848",
+      "snippet": "Jun 8, 2026 · Communauté Orange Forum Blog mail Orange Recherchez dans la Communauté internet & fixe mon mail Orange Voir …"
+    },
+    {
+      "title": "accéder à mes mail orange",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/acc%C3%A9der-%C3%A0-mes-mail-orange/td-p/3413972",
+      "snippet": "May 5, 2026 · Bonjour @Cobebace 👋 et bienvenue sur notre communauté Orange !😊 Les informations partagées vous ont-elles permis …"
+    },
+    {
+      "title": "Webmail Orange - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/bd-p/mail",
+      "snippet": "La communauté vous aide à mieux utiliser et découvrir les fonctionnalités de votre mail Orange"
+    }
+  ]
+}

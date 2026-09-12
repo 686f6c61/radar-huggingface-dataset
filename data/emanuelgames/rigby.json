@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "EmanuelGames/Rigby",
+  "slug": "emanuelgames-rigby",
+  "author": "EmanuelGames",
+  "url": "https://huggingface.co/EmanuelGames/Rigby",
+  "created_at": "2026-09-12T14:21:05.000Z",
+  "updated_at": "2026-09-12T14:21:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 79721220,
+  "storage_human": "80 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Scores & Fixtures - Football - BBC Sport",
+      "url": "https://www.bbc.co.uk/sport/football/scores-fixtures",
+      "snippet": "All the football fixtures, latest results & live scores for all leagues and competitions on BBC Sport, including the Premier League, …"
+    },
+    {
+      "title": "Championship - Football - BBC Sport",
+      "url": "https://www.bbc.co.uk/sport/football/championship",
+      "snippet": "The home of Championship Football on BBC Sport online. Includes the latest news stories, results, fixtures, video and audio."
+    },
+    {
+      "title": "German Bundesliga - Scores & Fixtures - Football - BBC Sport",
+      "url": "https://www.bbc.co.uk/sport/football/german-bundesliga/scores-fixtures",
+      "snippet": "German Bundesliga scores, results and fixtures on BBC Sport, including live football scores"
+    },
+    {
+      "title": "German Bundesliga Table and Standings - Football - BBC Sport",
+      "url": "https://www.bbc.co.uk/sport/football/german-bundesliga/table",
+      "snippet": "5 days ago · Find out which football teams are leading the pack or at the foot of the table in the German Bundesliga on BBC Sport"
+    },
+    {
+      "title": "German Bundesliga - BBC Sport",
+      "url": "https://www.bbc.co.uk/sport/football/german-bundesliga",
+      "snippet": "14 hours ago · The home of German Bundesliga on BBC Sport online. Includes the latest news stories, results, fixtures, video and …"
+    }
+  ]
+}

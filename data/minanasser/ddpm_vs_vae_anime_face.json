@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "MinaNasser/DDPM_vs_VAE_anime_face",
+  "slug": "minanasser-ddpm_vs_vae_anime_face",
+  "author": "MinaNasser",
+  "url": "https://huggingface.co/MinaNasser/DDPM_vs_VAE_anime_face",
+  "created_at": "2026-09-12T15:16:19.000Z",
+  "updated_at": "2026-09-12T15:19:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 568762269,
+  "storage_human": "569 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2. Bundesliga | Die offizielle Seite",
+      "url": "https://www.bundesliga.com/de/2bundesliga",
+      "snippet": "16 hours ago · Der spektakuläre Schlagabtausch zwischen Braunschweig und Dresden endet remis. Zoma macht's mal wieder! …"
+    },
+    {
+      "title": "2. Bundesliga | Spieltag - Tabelle - News - Statistiken - kicker",
+      "url": "https://www.kicker.de/2-bundesliga/startseite",
+      "snippet": "Darmstadt stand nach vier Spielen mit nur einem Punkt am Tabellenende der 2. Liga, feierte aber gegen Bielefeld nun einen knappen …"
+    },
+    {
+      "title": "2. Bundesliga heute | Spielplan & Ergebnisse | 5. Spieltag | 2026/27",
+      "url": "https://www.kicker.de/2-bundesliga/spieltag",
+      "snippet": "1 day ago · Bundesliga 2026/27 • 5. Spieltag • Ergebnisse, Spiele und Termine zum Spieltag • Alle Tabellen • Live-Ticker • Statistiken …"
+    },
+    {
+      "title": "2. Bundesliga: Alle News, Spiele und aktuelle Ergebnisse",
+      "url": "https://www.sportschau.de/fussball/bundesliga2",
+      "snippet": "News zur 2. Bundesliga heute: Aktuelle Informationen zum Spieltag und alle Ergebnisse."
+    },
+    {
+      "title": "2. Bundesliga | 5. Spieltag - alle 2. Bundesliga Spiele heute",
+      "url": "https://www.bundesliga.com/de/2bundesliga/spieltag",
+      "snippet": "Der spektakuläre Schlagabtausch zwischen Braunschweig und Dresden endet remis. Magdeburg schlägt Kaiserslautern deutlich. …"
+    }
+  ]
+}

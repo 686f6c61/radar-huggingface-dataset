@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.8-27B-Uncensored-Heretic-v3-GGUF",
+  "slug": "mradermacher-qwen3-8-27b-uncensored-heretic-v3-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-Heretic-v3-GGUF",
+  "created_at": "2026-09-12T12:18:17.000Z",
+  "updated_at": "2026-09-12T12:47:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "ara-lora",
+    "en",
+    "base_model:OS-Software/Qwen3.8-27B-Uncensored-Heretic-v3",
+    "base_model:quantized:OS-Software/Qwen3.8-27B-Uncensored-Heretic-v3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 187905341312,
+  "storage_human": "187.9 GB",
+  "base_model": "OS-Software/Qwen3.8-27B-Uncensored-Heretic-v3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Chrome'u indirme ve yükleme - Bilgisayar - Google Chrome …",
+      "url": "https://support.google.com/chrome/answer/95346?hl=tr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Chrome'u çevrimdışı yükleme Chrome'u Windows bilgisayarınıza indirirken sorun yaşarsanız alternatif bağlantıyı kullanarak farklı bir …"
+    },
+    {
+      "title": "Windows Gezgini ile kolay dosya yönetimi - CHIP Online",
+      "url": "https://www.chip.com.tr/ipucu/windows-gezgini-ile-kolay-dosya-yonetimi_53398.html",
+      "snippet": "Jan 31, 2010 · Dosyaların Windows Gezgini üzerinden kopyalanması ve taşınması pek çok kullanıcı tarafından birden fazla adım …"
+    },
+    {
+      "title": "Bilgisayarınızla Android cihaz arasında dosya aktarma",
+      "url": "https://support.google.com/android/answer/9064445?hl=tr",
+      "snippet": "Bilgisayarınızla ilgili sorunları giderme Windows'un, yeni donanımları otomatik olarak algıladığından emin olmak için bilgisayarınızın …"
+    },
+    {
+      "title": "Dosya Gezgini'nin yavaşlığına ilginç çözüm: Sürekli açık tutmak!",
+      "url": "https://www.chip.com.tr/guncel/dosya-gezgininin-yavasligina-ilginc-cozum-surekli-acik-tutmak_175038.html",
+      "snippet": "Nov 27, 2025 · Yıllardır \"şişen\" Windows Dosya Gezgini'nin açılış süresi nihayet kısalıyor. Ancak Microsoft, optimizasyon yerine …"
+    },
+    {
+      "title": "Not oluşturma veya düzenleme - Bilgisayar - Google Keep Yardım",
+      "url": "https://support.google.com/keep/answer/2888246?hl=tr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Not yazma Bilgisayarınızda Google Keep 'e gidin. Not alın 'ı tıklayın. Bir not ve başlık ekleyin. Bitti 'yi tıklayın. Notu düzenleme …"
+    }
+  ]
+}

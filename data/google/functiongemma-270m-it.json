@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "google/functiongemma-270m-it",
+  "slug": "google-functiongemma-270m-it",
+  "author": "google",
+  "url": "https://huggingface.co/google/functiongemma-270m-it",
+  "created_at": "2025-10-08T17:33:31.000Z",
+  "updated_at": "2026-01-14T09:33:54.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "gemma3",
+    "gemma",
+    "google",
+    "functiongemma",
+    "conversational",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1074,
+  "downloads_30d": 24500,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 862737421,
+  "storage_human": "863 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/",
+      "snippet": "Encore plus » Account Options. Connexion; Paramètres de recherche"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=fr",
+      "snippet": "Publicité À propos de Google Google.com in English © 2026 - Confidentialité - Conditions"
+    },
+    {
+      "title": "Google",
+      "url": "http://www.google.gp/?hl=fr",
+      "snippet": "Google disponible en : English Publicité À propos de Google Google.com"
+    },
+    {
+      "title": "Téléchargez Google Chrome, le navigateur plus sécurisé et encore …",
+      "url": "https://www.google.com/intl/fr/chrome/",
+      "snippet": "Gagnez en efficacité grâce au nouveau Chrome, un navigateur Internet plus simple, plus sécurisé et encore plus rapide grâce aux …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.gp/webhp?gl=gp&hl=fr&gws_rd=cr&pws=0",
+      "snippet": "Publicité Solutions d'entreprise À propos de Google Google.com"
+    }
+  ]
+}

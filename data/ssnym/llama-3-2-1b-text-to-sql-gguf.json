@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ssnym/llama-3.2-1b-text-to-sql-GGUF",
+  "slug": "ssnym-llama-3-2-1b-text-to-sql-gguf",
+  "author": "ssnym",
+  "url": "https://huggingface.co/ssnym/llama-3.2-1b-text-to-sql-GGUF",
+  "created_at": "2026-09-12T17:01:37.000Z",
+  "updated_at": "2026-09-12T17:06:33.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "text-to-sql",
+    "lora",
+    "llama.cpp",
+    "text-generation",
+    "en",
+    "dataset:b-mc2/sql-create-context",
+    "base_model:ssnym/llama-3.2-1b-text-to-sql",
+    "base_model:quantized:ssnym/llama-3.2-1b-text-to-sql",
+    "license:llama3.2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11272192,
+  "parameters_human": "11.3M",
+  "storage_bytes": 22560320,
+  "storage_human": "23 MB",
+  "base_model": "ssnym/llama-3.2-1b-text-to-sql",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TV Thomson 50UD63*3 Problem with Netflix - CCM - Tech Forum",
+      "url": "https://forums.commentcamarche.net/forum/affich-38000115-tv-thomson-50ud63-3-probleme-avec-netflix?lang=en",
+      "snippet": "After calling Thomson's customer service, they recommend using a Fire Stick, as app updates for Netflix are not possible with these …"
+    },
+    {
+      "title": "Arrière plan écran noir suite dernière MAJ windows 11",
+      "url": "https://forums.commentcamarche.net/forum/affich-38306104-arriere-plan-ecran-noir-suite-derniere-maj-windows-11",
+      "snippet": "Aug 29, 2026 · Bonjour, Depuis la dernière mise à jour de Windows 11, le 27/08/2026 l'arrière plan de l'écran est systématiquement …"
+    },
+    {
+      "title": "windows 11 - Where can I download GDAL ver. 3.13? - Geographic ...",
+      "url": "https://gis.stackexchange.com/questions/500389/where-can-i-download-gdal-ver-3-13",
+      "snippet": "Mar 27, 2026 · Where can I download a compiled GDAL ver. 3.13 for windows 11 with CADRG enabled? I've tried to download from …"
+    },
+    {
+      "title": "Ordnance Survey grids - download or generate?",
+      "url": "https://gis.stackexchange.com/questions/21/ordnance-survey-grids-download-or-generate",
+      "snippet": "Jul 26, 2010 · Does anyone know a source from which to download vector UK Ordnance Survey grids at varying resolutions? Or …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/file-did-not-get-saved-on-one-drive/59024bed-1dca-46ff-a4ab-dc0d1db704aa",
+      "snippet": ""
+    }
+  ]
+}

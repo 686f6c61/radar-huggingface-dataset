@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yungisimon/Qwen2.5-14B-giri-msq-0N-ep1",
+  "slug": "yungisimon-qwen2-5-14b-giri-msq-0n-ep1",
+  "author": "yungisimon",
+  "url": "https://huggingface.co/yungisimon/Qwen2.5-14B-giri-msq-0N-ep1",
+  "created_at": "2026-09-12T10:42:46.000Z",
+  "updated_at": "2026-09-12T10:43:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29551555804,
+  "storage_human": "29.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HATTA RESORTS IS NOW CLOSED FOR THE SUMMER SEASON.",
+      "url": "https://www.visithatta.com/en/stay",
+      "snippet": "Explore unique glamping stays in Hatta Resorts, from Damani lodges and domes with plunge pools to campers and vintage campers. …"
+    },
+    {
+      "title": "Hatta Resorts",
+      "url": "https://www.hattaresorts.org/",
+      "snippet": "Jul 21, 2026 · Hatta Resorts offers premium farmhouses, private pool resorts, mountain retreats, and luxury holiday homes in Hatta, …"
+    },
+    {
+      "title": "Hatta Resorts, Hatta (updated prices 2026) - Booking.com",
+      "url": "https://www.booking.com/hotel/ae/damani-lodges.html?msockid=068295c451b66c46153b821650056d42",
+      "snippet": "Hatta Resorts is located in Hatta and features barbecue facilities. This 2-star hotel offers room service and a tour desk."
+    },
+    {
+      "title": "HATTA RESORTS (Émirats arabes unis) : tarifs 2026 et avis - Tripadvisor",
+      "url": "https://fr.tripadvisor.ch/Hotel_Review-g736302-d34430651-Reviews-Hatta_Resorts-Hatta_Emirate_of_Dubai.html",
+      "snippet": "Réserver Hatta Resorts, Hatta sur Tripadvisor : consultez les avis de voyageurs, photos, et les meilleures offres pour Hatta Resorts …"
+    },
+    {
+      "title": "Hatta Resorts, Hatta (tarifs actualisés pour 2026) - Booking.com",
+      "url": "https://www.booking.com/hotel/ae/damani-lodges.fr.html?msockid=068295c451b66c46153b821650056d42",
+      "snippet": "L’établissement Hatta Resorts sert un petit-déjeuner buffet ou continental. Cet établissement dispose d’une aire de jeux pour enfants. …"
+    }
+  ]
+}

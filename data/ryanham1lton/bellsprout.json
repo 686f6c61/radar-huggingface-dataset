@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Bellsprout",
+  "slug": "ryanham1lton-bellsprout",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Bellsprout",
+  "created_at": "2026-09-12T16:24:02.000Z",
+  "updated_at": "2026-09-12T16:25:36.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116771115,
+  "storage_human": "117 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "【2026年榜单】老年代步电动车热销Top10：四轮老年代步 ...",
+      "url": "https://zhuanlan.zhihu.com/p/1928128967556194520",
+      "snippet": "Aug 25, 2026 · 长辈年纪大了，或者还在病后康复、行动不便阶段，四轮老人代步车就成为了许多家庭的 “暖心标配”，能极大提升他们 …"
+    },
+    {
+      "title": "单手就能提！2026轻便型四轮老年代步车大盘点",
+      "url": "https://chejiahao.autohome.com.cn/info/26347939",
+      "snippet": "Aug 31, 2026 · 回到老年代步车如何选择的问题—— 想要极致轻便、预算宽裕：普巴赫T580（11.8公斤）或T300C（12.8公斤），一个 …"
+    },
+    {
+      "title": "【2026年榜单】老年代步电动车热销Top10：四轮老年代步 ...",
+      "url": "https://www.zhihu.com/tardis/zm/art/1928128967556194520",
+      "snippet": "Aug 25, 2026 · 别担心，本文根据 【销量数据+口碑+性能】 整理了一份老年代步电动车推荐清单，并分享实用的避坑选购指南，帮助 …"
+    },
+    {
+      "title": "别买错车！2026老人代步车新规：3类合规车+办证售后全攻略",
+      "url": "https://www.toutiao.com/article/7599648662343401994/",
+      "snippet": "Jan 26, 2026 · 最近不少子女和老人都在问，2026年老年代步车到底怎么选、怎么上牌、怎么考证。 新规落地后，只有3类车能合法上 …"
+    },
+    {
+      "title": "2026老人电动代步车避坑指南：5个品牌优缺点一篇看懂",
+      "url": "https://chejiahao.autohome.com.cn/info/26346188",
+      "snippet": "Aug 31, 2026 · 其实买代步车不用对着参数表硬背，只需把家里老人的实际情况往里一套，答案自己就出来了。 下面按最常见的几种使 …"
+    }
+  ]
+}

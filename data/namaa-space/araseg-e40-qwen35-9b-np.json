@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "NAMAA-Space/araseg-e40-qwen35-9b-np",
+  "slug": "namaa-space-araseg-e40-qwen35-9b-np",
+  "author": "NAMAA-Space",
+  "url": "https://huggingface.co/NAMAA-Space/araseg-e40-qwen35-9b-np",
+  "created_at": "2026-09-12T13:55:08.000Z",
+  "updated_at": "2026-09-12T14:32:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "arabic",
+    "text-segmentation",
+    "token-classification",
+    "araseg-2026",
+    "arabicnlp2026",
+    "shared-task",
+    "ar",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116521774,
+  "storage_human": "117 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NO PUEDO ENTRAR A MI CUENTA ANTERIOR - Microsoft Community",
+      "url": "https://answers.microsoft.com/es-es/outlook_com/forum/all/no-puedo-entrar-a-mi-cuenta-anterior/fe35820a-d5c1-4cfc-9b73-e789918f7eb0",
+      "snippet": "Buen día, no puedo ingresar a mi cuenta anterior debido a que no la utilizo hace más de 1 año, y al momento de ingresar, me dice …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msteams/forum/all/assignment-notifications-dont-occur-in-a-teams/30905e6b-adeb-4e92-848e-1d36efcc3a13",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/outlook_com/forum/all/outlook-todo-synced-tasks-attachments-only-non/66bca736-f128-4d62-b193-79c8c57ad30f",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/windows/forum/all/windows-7-ribbon-and-access-toolbar-disappeared/2505ee89-3f2b-4e6c-94b5-2124a971f18f",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/how-do-i-set-the-name-that-appears-on-the-command/63c046ce-f89d-4f62-b93b-b65a66bfa86c",
+      "snippet": ""
+    }
+  ]
+}

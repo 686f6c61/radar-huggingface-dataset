@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "shabieh2/cluster_muse_0912_full",
+  "slug": "shabieh2-cluster_muse_0912_full",
+  "author": "shabieh2",
+  "url": "https://huggingface.co/shabieh2/cluster_muse_0912_full",
+  "created_at": "2026-09-12T12:44:39.000Z",
+  "updated_at": "2026-09-12T12:44:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "muse_glimmer",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1704929323,
+  "storage_human": "1.7 GB",
+  "base_model": "unsloth/muse-glimmer-30b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Outlook Tutorial - SiteGround-Tutorials",
+      "url": "https://de.siteground.com/tutorials/email/microsoft-outlook-tutorial",
+      "snippet": "May 18, 2022 · Sie können Ihre E-Mail-Konten in Microsoft Outlook einfach konfigurieren. Um die E-Mail-Einstellungen zu erhalten, …"
+    },
+    {
+      "title": "Eine E-Mail auf einem Computer einrichten - SiteGround-Tutorials",
+      "url": "https://de.siteground.com/tutorials/erste-schritte/email-auf-einem-computer-einrichten",
+      "snippet": "Jul 10, 2024 · Um Ihr E-Mail-Konto mit Microsoft Outlook einzurichten, folgen Sie den Anweisungen, die Sie in unserem ausführlichen …"
+    },
+    {
+      "title": "How to Configure Microsoft Outlook - SiteGround Tutorials",
+      "url": "https://www.siteground.com/tutorials/email/microsoft-outlook",
+      "snippet": "Jul 7, 2025 · In this tutorial, we'll learn how to easily configure your Microsoft Outlook client - both automatically and manually"
+    },
+    {
+      "title": "Hinzufügen eines E-Mail-Kontos zu Outlook für Windows",
+      "url": "https://support.microsoft.com/de-de/outlook/getstarted/add-an-email-account-to-outlook-for-windows",
+      "snippet": "Erfahren Sie, wie Sie Outlook so einrichten, dass es mit E-Mail-Konten von Microsoft 365, basierend auf POP, IMAP oder Microsoft …"
+    },
+    {
+      "title": "Set Up Email on a Computer - SiteGround Tutorials",
+      "url": "https://www.siteground.com/tutorials/getting-started/setup-email-on-a-computer",
+      "snippet": "Jun 27, 2024 · Set up your email account in Microsoft Outlook To set up your email account with Microsoft Outlook, follow the …"
+    }
+  ]
+}

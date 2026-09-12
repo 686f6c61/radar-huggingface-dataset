@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "minhquy1624/qwen3-8b-dpo",
+  "slug": "minhquy1624-qwen3-8b-dpo",
+  "author": "minhquy1624",
+  "url": "https://huggingface.co/minhquy1624/qwen3-8b-dpo",
+  "created_at": "2026-09-12T11:28:10.000Z",
+  "updated_at": "2026-09-12T11:39:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939478,
+  "storage_human": "16.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QUERY中文 (繁體)翻譯：劍橋詞典 - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/query",
+      "snippet": "What was their response to your query? He could always do something useful instead of wasting my time with footling queries. Most …"
+    },
+    {
+      "title": "QUERY中文 (简体)翻译：剑桥词典 - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E8%8B%B1%E8%AF%AD-%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93/query",
+      "snippet": "What was their response to your query? He could always do something useful instead of wasting my time with footling queries. Most …"
+    },
+    {
+      "title": "query - Yahoo字典搜尋結果",
+      "url": "https://tw.dictionary.search.yahoo.com/search?p=query",
+      "snippet": "vt. 及物動詞 1. 對…表示懷疑 I'm not in a position to query their decision 我無權懷疑他們的決定 we queried the bill, as it seemed far …"
+    },
+    {
+      "title": "Query（英语单词）_百度百科",
+      "url": "https://baike.baidu.com/item/Query/63305502",
+      "snippet": "Query是英语中具有名词与动词双重词性的常用词汇，发音为英 [ˈkwɪəri]、美 [ˈkwɪri]。 作为名词表示“疑问，询问”或“问号”，作动词时 …"
+    },
+    {
+      "title": "query - 搜索 词典",
+      "url": "https://global.bing.com/dict/search?q=query&FORM=BDVSP6&cc=cn",
+      "snippet": "6. To query the database, a user or application can connect to any server instance to which the database is attached. 若要 查询 数据 …"
+    }
+  ]
+}

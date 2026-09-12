@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "3MPER0RR/DeepSeek-R1-Distill-Qwen-14B-3MPER0RR-abliterated",
+  "slug": "3mper0rr-deepseek-r1-distill-qwen-14b-3mper0rr-abliterated",
+  "author": "3MPER0RR",
+  "url": "https://huggingface.co/3MPER0RR/DeepSeek-R1-Distill-Qwen-14B-3MPER0RR-abliterated",
+  "created_at": "2026-09-12T12:01:57.000Z",
+  "updated_at": "2026-09-12T12:06:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29551556000,
+  "storage_human": "29.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ICOT College",
+      "url": "https://icot.ie/",
+      "snippet": "Dec 21, 2024 · With over 15 years of excellence in education, ICOT College has a proven track record of helping students achieve …"
+    },
+    {
+      "title": "Home – ICOT College",
+      "url": "https://icot.ie/home2/",
+      "snippet": "Dec 21, 2024 · With over 15 years of excellence in education, ICOT College has a proven track record of helping students achieve …"
+    },
+    {
+      "title": "Home – ICOT College",
+      "url": "https://icot.ie/home3/",
+      "snippet": "Nov 29, 2024 · With over 15 years of excellence in education, ICOT College has a proven track record of helping students achieve …"
+    },
+    {
+      "title": "Our Services – ICOT College",
+      "url": "https://icot.ie/our-services/",
+      "snippet": "At ICOT College, we are committed to helping you succeed academically. Our Academics are dedicated to providing personalised …"
+    },
+    {
+      "title": "About Us – ICOT College",
+      "url": "https://icot.ie/about-us/",
+      "snippet": "With campuses in Dublin and Cork, Ireland, we have been providing education since 2010, offering over a decade and a half …"
+    }
+  ]
+}

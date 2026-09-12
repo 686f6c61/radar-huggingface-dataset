@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "bunnycore/MiniCPM5-2B-RP-Lora",
+  "slug": "bunnycore-minicpm5-2b-rp-lora",
+  "author": "bunnycore",
+  "url": "https://huggingface.co/bunnycore/MiniCPM5-2B-RP-Lora",
+  "created_at": "2026-09-12T18:01:08.000Z",
+  "updated_at": "2026-09-12T18:02:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "base_model:adapter:openbmb/MiniCPM5-2B",
+    "lora",
+    "transformers",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "dataset:beyoru/Aesir-Character-CoT-roleplay",
+    "base_model:openbmb/MiniCPM5-2B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25116672,
+  "parameters_human": "25.1M",
+  "storage_bytes": 150818960,
+  "storage_human": "151 MB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KOSTENLOSE PORNO FILME IN HD - PORNDROIDS.COM",
+      "url": "https://www.porndroids.com/de/",
+      "snippet": "Kostenloser Porno auf Deutsch, über 100 Pornofilme pro Stunde. Porndroids.com ist ein kostenloser Hostingservice für Pornofilme. …"
+    },
+    {
+      "title": "Deutsch Porno-Videos In voller Länge | xHamster",
+      "url": "https://ge.xhamster.desi/categories/german/full-length",
+      "snippet": "Erlebe in voller länge Deutsch Porno-Videos von auf xHamster. Schaue alle Deutsch Porno-Videos sofort!"
+    },
+    {
+      "title": "Large Porn Films. Gratis Tube Pornos.",
+      "url": "https://largepornfilms.com/de/",
+      "snippet": "Gratis Pornos: Deutsch, Mutter, Stiefmutter, Deutscher Vintage, Junge Frauen (18+), Reife Frau, Tabu Fantasie, Alt Und Jung (18+), …"
+    },
+    {
+      "title": "Deutsche Pornofilme gratis - Pornos aus Deutschland",
+      "url": "https://www.halloporno.net/kategorie/deutsche-pornofilme/",
+      "snippet": "Lust und Leidenschaft beim Bumsen bieten dir deutsche Pornofilme in allen Facetten. Überzeuge dich selbst, wie heiß und …"
+    },
+    {
+      "title": "Kostenlose Porno Videos & XXX Filme: Sex Videos Tube | xHamster",
+      "url": "https://ge.xhamster.desi/",
+      "snippet": "Kostenlose Porno Videos und exklusive XXX Filme gibt es hier bei xHamster. Streamen Sie sofort 6M+ Hardcore-Sex-Videos von …"
+    }
+  ]
+}

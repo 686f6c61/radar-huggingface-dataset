@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "umesh251/poca-SoccerTwos",
+  "slug": "umesh251-poca-soccertwos",
+  "author": "umesh251",
+  "url": "https://huggingface.co/umesh251/poca-SoccerTwos",
+  "created_at": "2026-09-12T16:18:23.000Z",
+  "updated_at": "2026-09-12T16:18:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "SoccerTwos",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SoccerTwos",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30224206,
+  "storage_human": "30 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Student Discounts | Exclusive discount codes and Deals | UNiDAYS",
+      "url": "https://www.myunidays.com/GB/en-GB",
+      "snippet": "UNiDAYS is a fast, free digital platform that provides exclusive student offers and benefits to our verified audience of 29m+. We work …"
+    },
+    {
+      "title": "Studi-Rabatte | Kostenlose und exklusive Rabattcodes | UNiDAYS",
+      "url": "https://www.myunidays.com/DE/de-DE",
+      "snippet": "UNiDAYS ist eine schnelle, kostenlose digitale Plattform, die exklusive Studi-Angebote und -Preisvorteile für unsere mehr als 29 …"
+    },
+    {
+      "title": "UNiDAYS | Connecting brands + students | Gen Z marketing experts",
+      "url": "https://corporate.myunidays.com/",
+      "snippet": "Is your brand looking to attract and engage Gen Z students? UNiDAYS connects top brands to millions of Gen Z students worldwide."
+    },
+    {
+      "title": "UNiDAYS Student Photographer of the Year 2026 | Enter now",
+      "url": "https://landing.myunidays.com/student-photographer-awards/gb",
+      "snippet": "Join UNiDAYS Student Photographer of the Year competition. Win the ultimate career-boosting photography experience and more!"
+    },
+    {
+      "title": "Careers | Join Our Team - UNiDAYS",
+      "url": "https://corporate.myunidays.com/careers",
+      "snippet": "At UNiDAYS, our culture is grounded in five core values that guide how we work, collaborate, and grow together: Purpose: …"
+    }
+  ]
+}

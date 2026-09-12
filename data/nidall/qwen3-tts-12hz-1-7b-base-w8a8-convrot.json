@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "NidAll/Qwen3-TTS-12Hz-1.7B-Base-W8A8-ConvRot",
+  "slug": "nidall-qwen3-tts-12hz-1-7b-base-w8a8-convrot",
+  "author": "NidAll",
+  "url": "https://huggingface.co/NidAll/Qwen3-TTS-12Hz-1.7B-Base-W8A8-ConvRot",
+  "created_at": "2026-09-12T12:03:43.000Z",
+  "updated_at": "2026-09-12T12:14:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_tts",
+    "qwen3-tts",
+    "text-to-speech",
+    "audio",
+    "quantized",
+    "comfyui",
+    "base_model:Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+    "base_model:finetune:Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1929340488,
+  "parameters_human": "1.93B",
+  "storage_bytes": 3052409068,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Google Chrome letöltése és telepítése",
+      "url": "https://support.google.com/chrome/answer/95346?hl=hu&co=GENIE.Platform%3DDesktop",
+      "snippet": "A Chrome első indításakor el kell olvasnia és el kell fogadnia a Google Általános Szerződési Feltételeit. Tipp: Annak érdekében, hogy …"
+    },
+    {
+      "title": "Download and install Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "How to install Chrome Important: Before you download, check if Chrome supports your operating system and you’ve met all other …"
+    },
+    {
+      "title": "Google Chrome をダウンロードしてインストールする",
+      "url": "https://support.google.com/chrome/answer/95346?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "Chrome を初めて起動する際は、 Google 利用規約 を確認して同意する必要があります。 ヒント: Chrome がパッケージ マネー …"
+    },
+    {
+      "title": "ดาวน์โหลดและติดตั้ง Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=th&co=GENIE.Platform%3DDesktop",
+      "snippet": "คุณสามารถดาวน์โหลดและติดตั้งเว็บเบราว์เซอร์ Chrome ได้โดยไม่มีค่าใช้จ่าย และใช้เพื่อท่องเว็บ ตรวจสอบข้อกำหนดของระบบในการ ..."
+    },
+    {
+      "title": "Descargar e instalar Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=es&co=GENIE.Platform%3DDesktop",
+      "snippet": "Instalar Chrome sin conexión Si tienes problemas al descargar Chrome en tu ordenador Windows, usa el enlace alternativo para …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Kakuratig/camembert-ner-personnes",
+  "slug": "kakuratig-camembert-ner-personnes",
+  "author": "Kakuratig",
+  "url": "https://huggingface.co/Kakuratig/camembert-ner-personnes",
+  "created_at": "2026-09-12T11:52:42.000Z",
+  "updated_at": "2026-09-12T11:53:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "camembert",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110032898,
+  "parameters_human": "110.0M",
+  "storage_bytes": 440155504,
+  "storage_human": "440 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub · Change is constant. GitHub keeps you ahead. · GitHub",
+      "url": "https://github.com/",
+      "snippet": "Join the world's most widely adopted, AI-powered developer platform where millions of developers, businesses, and the largest open …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
+    },
+    {
+      "title": "GitHub Copilot · Your AI coding agent",
+      "url": "https://github.com/features/copilot",
+      "snippet": "May 1, 2023 · GitHub Copilot works every step of the way, from an open issue to reviewing and merging a pull request. Use it in your …"
+    },
+    {
+      "title": "如何看待智谱 GLM Coding Plan 7.30 改版为积分制？ - 知乎",
+      "url": "https://www.zhihu.com/question/2066437412218221211",
+      "snippet": "Jul 31, 2026 · 作为对比，GPT 20x 每周可用 GPT-5.6 sol 的 token 量为 2000M。 价格相同，可用 token 多四倍，还经常重置。 速度 …"
+    },
+    {
+      "title": "Top 16+ Chat AI tiếng Việt miễn phí, tốt nhất 2026 - CellphoneS",
+      "url": "https://cellphones.com.vn/sforum/top-phan-mem-chat-ai-tot-nhat",
+      "snippet": "Feb 9, 2026 · Top các phần mềm chat AI tiếng Việt tốt và được nhiều người sử dụng nhất 2026, phần mềm chatbot AI online đem …"
+    }
+  ]
+}

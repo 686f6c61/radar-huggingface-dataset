@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "SeNKrOn10/Hilal-Yelekci",
+  "slug": "senkron10-hilal-yelekci",
+  "author": "SeNKrOn10",
+  "url": "https://huggingface.co/SeNKrOn10/Hilal-Yelekci",
+  "created_at": "2026-09-12T13:40:36.000Z",
+  "updated_at": "2026-09-12T13:45:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 74078874,
+  "storage_human": "74 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - RVC-Boss/GPT-SoVITS: 1 min voice data can also be used to ...",
+      "url": "https://github.com/RVC-Boss/GPT-SoVITS",
+      "snippet": "1 min voice data can also be used to train a good TTS model! (few shot voice cloning) - RVC-Boss/GPT-SoVITS"
+    },
+    {
+      "title": "GitHub - f/prompts.chat: f.k.a. Awesome ChatGPT Prompts. Share ...",
+      "url": "https://github.com/f/prompts.chat",
+      "snippet": "A curated collection of prompts for AI chat models. Originally created for ChatGPT, these prompts work great with any modern AI …"
+    },
+    {
+      "title": "Supported AI models in GitHub Copilot",
+      "url": "https://docs.github.com/copilot/reference/ai-models/supported-models",
+      "snippet": "Supported AI models in Auto model selection This table lists the supported AI models for Auto model selection. Available models may …"
+    },
+    {
+      "title": "Plans for GitHub Copilot - GitHub Enterprise Cloud Docs",
+      "url": "https://docs.github.com/en/enterprise-cloud@latest/copilot/get-started/plans",
+      "snippet": "Copilot Chat features available include: Copilot Chat in IDEs Inline chat Slash commands Copilot Chat in GitHub Mobile Copilot Chat …"
+    },
+    {
+      "title": "现在这些大模型，哪个在代码编写上表现的最好呀？ - 知乎",
+      "url": "https://www.zhihu.com/question/11016066228",
+      "snippet": "多模态融合：GPT-4V等模型开始支持UI设计图转代码 本地化部署：Qwen-72B等国产模型显存优化显著（8卡可部署） 建议结合具体 …"
+    }
+  ]
+}

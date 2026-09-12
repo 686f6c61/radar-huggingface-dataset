@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ibyteohdear/10Eros-Max-Transformer_TURBO-hybrid_beta5_v2_testing",
+  "slug": "ibyteohdear-10eros-max-transformer_turbo-hybrid_beta5_v2_testing",
+  "author": "ibyteohdear",
+  "url": "https://huggingface.co/ibyteohdear/10Eros-Max-Transformer_TURBO-hybrid_beta5_v2_testing",
+  "created_at": "2026-09-12T11:27:27.000Z",
+  "updated_at": "2026-09-12T11:30:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20111462920,
+  "parameters_human": "20.11B",
+  "storage_bytes": 80458536904,
+  "storage_human": "80.5 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Catalogues et listes de prix | Hymer",
+      "url": "https://www.hymer.com/fr/fr/services/catalogues",
+      "snippet": "Jul 1, 2026 · Téléchargez directement nos catalogues, dépliants et listes de prix sur les produits de la maison Hymer."
+    },
+    {
+      "title": "Accueil | catalogue-hymer.com",
+      "url": "https://www.catalogue-hymer.com/index.html",
+      "snippet": "catalogue-hymer.com Matériel vendu par la SARL CRISTOFENI - Tél: 09.70.75.73.13"
+    },
+    {
+      "title": "Pièces et accessoires d’origine Hymer | Hymer",
+      "url": "https://www.hymer.com/fr/fr/services/accessoires-dorigine",
+      "snippet": "Découvrez notre catalogue en ligne Hymer et créez votre liste d’achats personnalisée parmi plus de 500 articles."
+    },
+    {
+      "title": "Hymer - Catalogue",
+      "url": "https://www.toolteam.com/fr-FR/catalogue/hymer-catalogue-1-21006",
+      "snippet": "Vous recherchez des produits qui figurent dans le catalogue mais ne peuvent pas être achetés directement en ligne ? Notre service …"
+    },
+    {
+      "title": "Produits d'accès en hauteur - HYMER Steigtechnik",
+      "url": "https://www.hymer-steigtechnik.de/fr/configurateur-en-ligne",
+      "snippet": "4 days ago · Nos échelles, escaliers à plate-forme et plates-formes de travail sont utilisés par des clients du monde entier, du …"
+    }
+  ]
+}

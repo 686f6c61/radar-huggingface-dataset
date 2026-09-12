@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "SeNKrOn10/Zeynep-oktay",
+  "slug": "senkron10-zeynep-oktay",
+  "author": "SeNKrOn10",
+  "url": "https://huggingface.co/SeNKrOn10/Zeynep-oktay",
+  "created_at": "2026-09-12T16:53:53.000Z",
+  "updated_at": "2026-09-12T17:00:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 161659468,
+  "storage_human": "162 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "目前AI编程工具哪个最好用？ - 知乎",
+      "url": "https://www.zhihu.com/question/1973709336363701431",
+      "snippet": "Copilot Workspace （2025 Beta 发布）：实验性功能，对标 Claude Code 的任务分解能力，允许用户输入需求后由系统拆解为多个子 …"
+    },
+    {
+      "title": "电脑win11怎么更改自己的管理员账户？ - 知乎",
+      "url": "https://www.zhihu.com/question/548502150",
+      "snippet": "这种操作Win11和win10都差不多，没有变化。 更改管理员，需要现在权限是管理员，如果是访客用户账户是没有权限更改。 进入 控制 …"
+    },
+    {
+      "title": "要求 Github Copilot / Claude / Gemini 參考 MS Learn 官方文件寫 Code",
+      "url": "https://blog.darkthread.net/blog/ms-learn-mcp/",
+      "snippet": "Jan 8, 2026 · 點下去右側會打開類似 Copilot 的對話介面，有用 Github Copilot 的同學應該都不陌生，靠本能就知道怎麼用： Ask …"
+    },
+    {
+      "title": "Vibe Coding 體驗 - 製作描字帖 (含 Github Copilot 節費心得)",
+      "url": "https://blog.darkthread.net/blog/vibe-coding-case/",
+      "snippet": "Feb 1, 2026 · 最後整理本次我學到的 Github Copilot CLI Vibe Coding 技巧： 記得使用 .github/copilot-instructions.md 規範程式寫法， …"
+    },
+    {
+      "title": "Copilot键怎么改成Ctrl键？ - 知乎",
+      "url": "https://www.zhihu.com/question/641618618",
+      "snippet": "微软应用商店下载powertoys，进入里面的键盘管理选项，再进入里面的重映射快捷键。 按照如下图选择，确定即可。 这样Copilot键 …"
+    }
+  ]
+}

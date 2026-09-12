@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Spangler3000/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-MLX-hybrid8-mtp",
+  "slug": "spangler3000-nvidia-nemotron-3-5-lightning-30b-a3b-mlx-hybrid8-mtp",
+  "author": "Spangler3000",
+  "url": "https://huggingface.co/Spangler3000/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-MLX-hybrid8-mtp",
+  "created_at": "2026-09-12T16:57:32.000Z",
+  "updated_at": "2026-09-12T16:57:43.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "nemotron_h",
+    "nemotron",
+    "mixed-precision",
+    "mtp",
+    "darkbloom",
+    "validation-candidate",
+    "text-generation",
+    "conversational",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32913261824,
+  "parameters_human": "32.91B",
+  "storage_bytes": 19059463810,
+  "storage_human": "19.1 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Migliori siti streaming film e serie tv gratis | Settembre 2026",
+      "url": "https://www.tuttotek.it/web-social/guide-web-social/migliori-siti-streaming",
+      "snippet": "Sep 1, 2026 · Ci sono molti siti che potrebbero farvi girare a vuoto prima di mostrarvi contenuti validi, ecco perché abbiamo stilato la …"
+    },
+    {
+      "title": "Film Streaming Gratis: Migliori siti di Settembre 2026 - GiardiniBlog",
+      "url": "https://www.giardiniblog.it/film-streaming-siti/",
+      "snippet": "4 days ago · In questo articolo trovi tantissime informazioni con un elenco completo dei migliori siti per vedere film in streaming, in …"
+    },
+    {
+      "title": "Migliori siti streaming calcio gratis | Settembre 2026 - tuttoteK",
+      "url": "https://www.tuttotek.it/web-social/guide-web-social/migliori-siti-streaming-calcio-gratis",
+      "snippet": "2 days ago · Scopriamo quali sono i migliori siti streaming calcio gratis per guardare le partite di Serie A, Serie B, Champions League …"
+    },
+    {
+      "title": "Migliori siti streaming - Salvatore Aranzulla",
+      "url": "https://www.aranzulla.it/migliori-siti-streaming-62241.html",
+      "snippet": "Infine, se hai intenzione approfondire l’argomento nel suo complesso, i miei tutorial che potresti voler consultare sono quelli relativi …"
+    },
+    {
+      "title": "Migliori siti streaming calcio gratis di Settembre 2026",
+      "url": "https://www.giardiniblog.it/migliori-siti-streaming-calcio/",
+      "snippet": "Sep 5, 2026 · In questo articolo abbiamo raccolto tutti i migliori siti per vedere il calcio in streaming che potete trovare consultando un …"
+    }
+  ]
+}

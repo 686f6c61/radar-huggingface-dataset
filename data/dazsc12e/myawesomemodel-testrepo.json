@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "DAZSC12E/MyAwesomeModel-TestRepo",
+  "slug": "dazsc12e-myawesomemodel-testrepo",
+  "author": "DAZSC12E",
+  "url": "https://huggingface.co/DAZSC12E/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-12T14:36:27.000Z",
+  "updated_at": "2026-09-12T14:36:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Il Fatto Quotidiano - News e ultime notizie su politica, cronaca ...",
+      "url": "https://www.ilfattoquotidiano.it/",
+      "snippet": "Leggi su Il Fatto Quotidiano le ultime notizie su cronaca, politica, economia, giustizia, sport e tecnologia. Scopri inchieste, opinioni, …"
+    },
+    {
+      "title": "In Edicola - Il Fatto Quotidiano",
+      "url": "https://www.ilfattoquotidiano.it/in-edicola/",
+      "snippet": "16 hours ago · Leggi su Il Fatto Quotidiano In Edicola di Marco Travaglio le ultime notizie su politica, economia, giustizia. Scopri …"
+    },
+    {
+      "title": "Archivio edizioni | Il Fatto Social Club",
+      "url": "https://shop.ilfattoquotidiano.it/archivio-edizioni/",
+      "snippet": "Accedi al Fatto Quotidiano Connettiti velocemente con uno dei seguenti metodi: Accedi con Apple Accedi con Facebook Login con …"
+    },
+    {
+      "title": "Login | Il Fatto Social Club",
+      "url": "https://shop.ilfattoquotidiano.it/login/",
+      "snippet": "Accedi al Fatto Quotidiano Connettiti velocemente con uno dei seguenti metodi: Accedi con Apple Accedi con Facebook Login con …"
+    },
+    {
+      "title": "Community de Il Fatto Quotidiano",
+      "url": "https://community.ilfattoquotidiano.it/",
+      "snippet": "Unisciti alla community de Il Fatto Quotidiano per discutere, partecipare a eventi e connetterti con altri lettori. Scopri di più."
+    }
+  ]
+}

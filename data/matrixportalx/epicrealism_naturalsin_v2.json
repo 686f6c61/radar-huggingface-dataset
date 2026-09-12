@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "matrixportalx/epiCRealism_NaturalSin_v2",
+  "slug": "matrixportalx-epicrealism_naturalsin_v2",
+  "author": "matrixportalx",
+  "url": "https://huggingface.co/matrixportalx/epiCRealism_NaturalSin_v2",
+  "created_at": "2026-09-12T13:06:34.000Z",
+  "updated_at": "2026-09-12T13:06:47.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "stable-diffusion",
+    "sd1.5",
+    "qualcomm",
+    "qnn",
+    "qairt",
+    "snapdragon",
+    "local-dream",
+    "text-to-image",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 985161857,
+  "storage_human": "985 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gmail Help",
+      "url": "https://support.google.com/mail/?hl=en",
+      "snippet": "Official Gmail Help Center where you can find tips and tutorials on using Gmail and other answers to frequently asked questions."
+    },
+    {
+      "title": "Iniciar sesión en Gmail - Ordenador - Ayuda de Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=es&co=GENIE.Platform%3DDesktop",
+      "snippet": "Iniciar sesión en Gmail Nota: Si inicias sesión en un ordenador público, asegúrate de cerrarla antes de dejar de usar el ordenador. …"
+    },
+    {
+      "title": "gmail邮箱登陆入口 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/436896083505263292.html",
+      "snippet": "Jul 27, 2024 · gmail邮箱登陆入口gmail邮箱登陆入口：https://mail.google.com/Gmail是Google公司提供的一项免费电子邮件服务。要 …"
+    },
+    {
+      "title": "gmail邮箱登陆入口？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1715953613243012940.html",
+      "snippet": "Jun 6, 2025 · gmail邮箱登陆入口？Gmail邮箱的登陆入口是：https://mail.google.com/。以下是关于如何登录Gmail的详细说明：访 …"
+    },
+    {
+      "title": "تسجيل الدخول إلى Gmail - جهاز الكمبيوتر - مساعدة Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "تسجيل الدخول إلى Gmail ملاحظة: إذا سجّلت الدخول على جهاز كمبيوتر متاح للجميع، احرص على تسجيل الخروج قبل مغادرة جهاز الكمبيوتر. تعرَّف على كيفية تسجيل الدخول على جهاز لا تملكه."
+    }
+  ]
+}

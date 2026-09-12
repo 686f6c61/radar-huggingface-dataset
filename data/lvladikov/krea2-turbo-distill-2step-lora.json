@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "lvladikov/Krea2-Turbo-Distill-2step-LoRA",
+  "slug": "lvladikov-krea2-turbo-distill-2step-lora",
+  "author": "lvladikov",
+  "url": "https://huggingface.co/lvladikov/Krea2-Turbo-Distill-2step-LoRA",
+  "created_at": "2026-09-09T20:25:41.000Z",
+  "updated_at": "2026-09-12T16:06:54.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "text-to-image",
+    "distillation",
+    "step-distillation",
+    "distribution-matching",
+    "krea-2",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 387816555,
+  "storage_human": "388 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Frankfurter Rundschau",
+      "url": "https://www.fr.de/",
+      "snippet": "Aktuelle Nachrichten aus Frankfurt und der Welt – von Politik über Wirtschaft zu Verbraucher-Tipps und Eintracht Frankfurt."
+    },
+    {
+      "title": "Frankfurt News - aktuelle Nachrichten aus Frankfurt am Main | FR.de",
+      "url": "https://www.fr.de/frankfurt/",
+      "snippet": "Die neuesten Berichte und Themen aus Frankfurt auf einen Blick zusammengefasst. Jetzt direkt bei FR.de informieren!"
+    },
+    {
+      "title": "Frankfurter Rundschau – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Frankfurter_Rundschau",
+      "snippet": "Die Redaktion der Frankfurter Rundschau hatte ihren Sitz mehr als 51 Jahre lang im Rundschau-Haus am Eschenheimer Tor, mitten …"
+    },
+    {
+      "title": "Deutschland vom Samstag, 12.09.2026 | FR ePaper",
+      "url": "http://epaper.fr-online.de/",
+      "snippet": "1 day ago · weekli: Alle Prospekte auf einen Blick. Aktuelle Prospekte online blättern. Jede Woche neue Angebote entdecken und …"
+    },
+    {
+      "title": "Frankfurter Rundschau: Aktuelle Nachrichten über die FR",
+      "url": "https://www.faz.net/aktuell/feuilleton/thema/frankfurter-rundschau",
+      "snippet": "Aktuelle News, Videos und Bildergalerien zur Frankfurter Rundschau im Überblick. Lesen Sie hier alle Informationen der FAZ rund …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/Ornith-1.5-35B-A3B-REAP-50-GGUF",
+  "slug": "atomic-germ-ornith-1-5-35b-a3b-reap-50-gguf",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/Ornith-1.5-35B-A3B-REAP-50-GGUF",
+  "created_at": "2026-09-12T19:06:01.000Z",
+  "updated_at": "2026-09-12T19:18:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "reap",
+    "expert-pruning",
+    "moe",
+    "qwen3.5",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18543997568,
+  "parameters_human": "18.54B",
+  "storage_bytes": 59639353600,
+  "storage_human": "59.6 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BilimClass - BilimLand",
+      "url": "https://www.bilimclass.kz/login",
+      "snippet": "BilimClass.kz платформасын қолдану үшін, мектебіңіздің директорының, директордың ..."
+    },
+    {
+      "title": "ThursdAI - The top AI news from the past week - Substack",
+      "url": "https://api.substack.com/feed/podcast/1801228.rss",
+      "snippet": "internal OpenAI model got out of a sandbox and onto Hugging Face this summer. But can we get an exploit benchmark that isn't saturated? Alignment: the honeypot, ..."
+    },
+    {
+      "title": "BilimClass - BilimLand",
+      "url": "https://www.bilimclass.kz/*/news",
+      "snippet": "Берілген парақша табылмады BilimClass-пен жұмысты жалғастыру үшін Бастапқы парақшаға өтіңіз."
+    },
+    {
+      "title": "BilimLand",
+      "url": "https://2022.bilimclass.kz/",
+      "snippet": "Платформа дұрыс жұмыс істеуі үшін құрылғыңыз бен браузеріңіздің баптауларында JavaScript-ті іске қосыңыз."
+    },
+    {
+      "title": "BilimClass - bilim.group",
+      "url": "https://bilim.group/bilimclass/ru",
+      "snippet": "BilimClass — электронный журнал, в который также входят система администрирования школы ..."
+    }
+  ]
+}

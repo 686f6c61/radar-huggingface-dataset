@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "einaux/autumi-models",
+  "slug": "einaux-autumi-models",
+  "author": "einaux",
+  "url": "https://huggingface.co/einaux/autumi-models",
+  "created_at": "2026-09-09T02:35:49.000Z",
+  "updated_at": "2026-09-12T13:07:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "audio-to-midi",
+    "music-transcription",
+    "autumi",
+    "en",
+    "de",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2096019366,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Open Device Manager - Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/open-device-manager-a7f2db46-faaf-24f0-8b7b-9e4a6032fc8c",
+      "snippet": "Select Start , enter device manager. Then, select Device Manager from the search results."
+    },
+    {
+      "title": "Open Device Manager on Windows 11, 10, 8, 7 - Easy Guide - Lifewire",
+      "url": "https://www.lifewire.com/how-to-open-device-manager-2626075",
+      "snippet": "Jun 24, 2025 · Quickly open Device Manager on Windows 11, 10, 8, 7, Vista, or XP for managing hardware and resolving driver …"
+    },
+    {
+      "title": "Using Device Manager - Windows drivers | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/using-device-manager",
+      "snippet": "Apr 22, 2025 · Device Manager displays information about each device. This information includes the device type, device status, …"
+    },
+    {
+      "title": "Device Manager - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Device_Manager",
+      "snippet": "On Windows 9x, Device Manager is part of the System applet in Control Panel. On Windows 2000 and all other Windows NT -based …"
+    },
+    {
+      "title": "How to open Device Manager in Windows 11 - The Windows Club",
+      "url": "https://www.thewindowsclub.com/how-to-open-the-device-manager-in-windows-10",
+      "snippet": "Apr 15, 2025 · The Device Manager in Windows 11/10 provides a central and organized view of all the Microsoft Windows recognized …"
+    }
+  ]
+}

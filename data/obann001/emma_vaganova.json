@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "obann001/Emma_Vaganova",
+  "slug": "obann001-emma_vaganova",
+  "author": "obann001",
+  "url": "https://huggingface.co/obann001/Emma_Vaganova",
+  "created_at": "2026-09-12T18:49:32.000Z",
+  "updated_at": "2026-09-12T18:49:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CareAR Portal",
+      "url": "https://carear.app/",
+      "snippet": "CareAR Web Portal © 2026, Powered by CareAR CareAR Web Portal"
+    },
+    {
+      "title": "CareAR - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=io.CareAR.connect&hl=en-US",
+      "snippet": "Deflect costly dispatches and reduce time-sensitive resolutions through self-solve content, remote AR guidance and troubleshooting …"
+    },
+    {
+      "title": "CareAR Portal",
+      "url": "https://join.carear.app/",
+      "snippet": "CareAR Web Portal"
+    },
+    {
+      "title": "Career Endeavour - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.careerendeavouronlinetest.course&hl=en-US",
+      "snippet": "Aug 26, 2026 · Career Endeavour Live Classes Android app for Live classes of Career Endeavour."
+    },
+    {
+      "title": "‎CareAR App - App Store",
+      "url": "https://apps.apple.com/us/app/carear/id1468965844",
+      "snippet": "Download CareAR by Resolve Grid AI Technologies Corp on the App Store. See screenshots, ratings and reviews, user tips, and …"
+    }
+  ]
+}

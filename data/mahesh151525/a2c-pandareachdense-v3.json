@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Mahesh151525/a2c-PandaReachDense-v3",
+  "slug": "mahesh151525-a2c-pandareachdense-v3",
+  "author": "Mahesh151525",
+  "url": "https://huggingface.co/Mahesh151525/a2c-PandaReachDense-v3",
+  "created_at": "2026-09-12T11:20:07.000Z",
+  "updated_at": "2026-09-12T11:20:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "PandaReachDense-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 423879,
+  "storage_human": "423879 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vijesti | BN",
+      "url": "https://www.rtvbn.com/kategorija/vijesti/1",
+      "snippet": "BN petak, 11.09.2026 | 20:02 Vlada se ismijava sudovima: Ministarstvo ponovo izdalo Rufiju ekološku dozvolu za Bukovu Kosu"
+    },
+    {
+      "title": "BN",
+      "url": "https://www.rtvbn.com/",
+      "snippet": "Bosna i Hercegovina suočava se s energetskim siromaštvom, a 70% domaćinstava je pogođeno ovim problemom."
+    },
+    {
+      "title": "Vijesti | BN",
+      "url": "https://dns2.rtvbn.com/kategorija/vijesti/1064",
+      "snippet": "BN subota, 22.03.2025 | 15:11 Milorad Dodik od miljenika Zapada do nepoželjnog partnera"
+    },
+    {
+      "title": "Novak Đoković ponovo posjetio piramide u Visokom | BN",
+      "url": "https://www.rtvbn.com/4089816/novak-djokovic-ponovo-posjetio-piramide-u-visokom",
+      "snippet": "Mar 31, 2026 · Novak Đoković, najbolji teniser svih vremena, posjetio je visočke piramide, odnosno Park Ravne."
+    },
+    {
+      "title": "Snimak ubistva Darka Veskovića ledi krv u žilama (VIDEO) - BN",
+      "url": "https://www.rtvbn.com/4093134/snimak-ubistva-darka-veskovica-ledi-krv-u-zilama-video",
+      "snippet": "Jun 22, 2026 · Redakcija \"Blica\" došla je u posed snimka sa nadzorne kamere na kom se vidi trenutaka kada je Darko Vesković Prika …"
+    }
+  ]
+}

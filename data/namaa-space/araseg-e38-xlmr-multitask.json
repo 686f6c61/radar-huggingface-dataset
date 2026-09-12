@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "NAMAA-Space/araseg-e38-xlmr-multitask",
+  "slug": "namaa-space-araseg-e38-xlmr-multitask",
+  "author": "NAMAA-Space",
+  "url": "https://huggingface.co/NAMAA-Space/araseg-e38-xlmr-multitask",
+  "created_at": "2026-09-12T14:04:39.000Z",
+  "updated_at": "2026-09-12T14:32:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "arabic",
+    "text-segmentation",
+    "token-classification",
+    "araseg-2026",
+    "arabicnlp2026",
+    "shared-task",
+    "ar",
+    "base_model:FacebookAI/xlm-roberta-large",
+    "base_model:finetune:FacebookAI/xlm-roberta-large",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6719281504,
+  "storage_human": "6.7 GB",
+  "base_model": "FacebookAI/xlm-roberta-large",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Decathlon | Boty, oblečení a vybavení na sport",
+      "url": "https://www.decathlon.cz/",
+      "snippet": "Nakupujte vybavení na více než 70 sportů v prodejnách i online. Doprava zdarma na vybrané nákupy v aplikaci. Zdarma služba Klikni …"
+    },
+    {
+      "title": "Boty - DECATHLON",
+      "url": "https://www.decathlon.cz/vsechny-sporty/boty",
+      "snippet": "Ať už hledáte boty pro oporu při náročném výšlapu v horách, dynamiku pro běžecký trénink, nebo jen pohodlí pro celodenní chůzi …"
+    },
+    {
+      "title": "Půjčovna sportovního vybavení | Decathlon Rent",
+      "url": "https://rent.decathlon.cz/",
+      "snippet": "Půjčovna sportovního vybavení v prodejnách Decathlon. Chcete si půjčit kolo v perfektním stavu? Lyže nebo běžky až napadne …"
+    },
+    {
+      "title": "Contact - Decathlon",
+      "url": "https://support.decathlon.cz/contact",
+      "snippet": "Zjistěte, jak kontaktovat Decathlon pro dotazy, podporu nebo informace o produktech a službách."
+    },
+    {
+      "title": "Půjčovna turistických stanů – Decathlon Rent",
+      "url": "https://rent.decathlon.cz/kempingove-stany",
+      "snippet": "Půjčovna turistických stanů Decathlon Rent nabízí široký výběr vybavení pro každého. Prohlédněte si naši nabídku a pronajměte si …"
+    }
+  ]
+}

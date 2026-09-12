@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ChatterjeeLab/ReMEDi",
+  "slug": "chatterjeelab-remedi",
+  "author": "ChatterjeeLab",
+  "url": "https://huggingface.co/ChatterjeeLab/ReMEDi",
+  "created_at": "2026-09-12T19:26:38.000Z",
+  "updated_at": "2026-09-12T19:27:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "biology",
+    "single-cell",
+    "molecular-design",
+    "perturbation",
+    "dose-response",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10501639,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/r/all+/",
+      "snippet": "Create an account to follow your favorite communities and start taking part in conversations."
+    },
+    {
+      "title": "old.reddit.com on reddit.com",
+      "url": "https://www.reddit.com/domain/old.reddit.com/",
+      "snippet": "Reddit gives you the best of the internet in one place. Get a constantly updating feed of breaking news, fun stories, pics, memes, and …"
+    },
+    {
+      "title": "Magic: The Redditing",
+      "url": "https://www.reddit.com/r/magicTCG/top/",
+      "snippet": "A diverse community of players devoted to Magic: the Gathering, a trading card game (\"TCG\") produced by Wizards of the Coast and …"
+    },
+    {
+      "title": "all subreddits • r/all",
+      "url": "https://www.reddit.com/r/all-do/",
+      "snippet": "Reddit gives you the best of the internet in one place. Get a constantly updating feed of breaking news, fun stories, pics, memes, and …"
+    },
+    {
+      "title": "Boxing - Reddit",
+      "url": "https://www.reddit.com/r/Boxing/wiki/index/",
+      "snippet": "r/Boxing: Welcome to /r/boxing, reddit's home for pro boxing enthusiasts! Please check out our rules and FAQs before posting…"
+    }
+  ]
+}

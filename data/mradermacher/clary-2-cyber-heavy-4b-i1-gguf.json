@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Clary-2-Cyber-Heavy-4B-i1-GGUF",
+  "slug": "mradermacher-clary-2-cyber-heavy-4b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Clary-2-Cyber-Heavy-4B-i1-GGUF",
+  "created_at": "2026-09-12T12:02:21.000Z",
+  "updated_at": "2026-09-12T12:29:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "cybersecurity",
+    "ctf",
+    "code",
+    "reverse-engineering",
+    "qwen",
+    "qwen3",
+    "dora",
+    "ru",
+    "en",
+    "base_model:AuroraSystem/Clary-2-Cyber-Heavy-4B",
+    "base_model:quantized:AuroraSystem/Clary-2-Cyber-Heavy-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 958716,
+  "parameters_human": "958716",
+  "storage_bytes": 3872640,
+  "storage_human": "4 MB",
+  "base_model": "AuroraSystem/Clary-2-Cyber-Heavy-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "imagebam.com",
+      "url": "https://imagebam.com/gallery/f4f11fp1y14rkfj1t26nt03ptuymid1x?page=1",
+      "snippet": "IMAGEBAM is a free service with more than 15 years of history, empowering people to upload, share and enjoy images online. …"
+    },
+    {
+      "title": "Login to your account - ImageBam",
+      "url": "https://www.imagebam.com/auth/login",
+      "snippet": "Image Hosting, Image Upload, Picture Hosting E-Mail or Username Password Remember Me Login"
+    },
+    {
+      "title": "Is imagebam.com down or not working right now ... - Notopening",
+      "url": "https://notopening.com/site/imagebam.com",
+      "snippet": "13 hours ago · Get real-time current status and outage reports for imagebam.com. Find out what other users are experiencing. …"
+    },
+    {
+      "title": "+gallery imagebam — Yandex: found 39 thousand results",
+      "url": "https://wap.yandex.com/search?text=%2Bgallery+imagebam&lr=21206&missword=1",
+      "snippet": "Fast, Free Image Hosting - ImageBam Easy. Anyone can use IMAGEBAM. ... IMAGEBAM is a free service with more than 10 years …"
+    },
+    {
+      "title": "LSM Forums - Index page",
+      "url": "http://forums.lsm.org/",
+      "snippet": "13 hours ago · Statistics Total posts 10400 • Total topics 3475 • Total members 99 • Our newest member Lini Tripura"
+    }
+  ]
+}

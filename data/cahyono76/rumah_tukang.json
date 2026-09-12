@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Cahyono76/Rumah_tukang",
+  "slug": "cahyono76-rumah_tukang",
+  "author": "Cahyono76",
+  "url": "https://huggingface.co/Cahyono76/Rumah_tukang",
+  "created_at": "2026-09-12T14:10:28.000Z",
+  "updated_at": "2026-09-12T14:10:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WEB.DE - kostenlose E-Mail-Adresse, FreeMail & Nachrichten",
+      "url": "https://web.de/",
+      "snippet": "Sichere Kommunikation, aktuelle Nachrichten und nützliche Online-Services - alles an einem Ort. Einfach, kostenlos und zuverlässig."
+    },
+    {
+      "title": "WEB.DE Login - ganz einfach",
+      "url": "https://anmelden.web.de/",
+      "snippet": "WEB.DE Login: E-Mail-Adresse anmelden oder einloggen – kompakte Anleitung zum WEB.DE Login und schnelle Hilfe bei Login …"
+    },
+    {
+      "title": "Einloggen bei WEB.DE",
+      "url": "https://hilfe.web.de/account/login/index.html",
+      "snippet": "Einloggen bei WEB.DE Sie haben Fragen oder ein Problem mit dem Login in Ihr Postfach? Hier finden Sie die relevanten …"
+    },
+    {
+      "title": "WEB.DE Club - Login",
+      "url": "https://club.web.de/?mc=021105",
+      "snippet": "WEB.DE Club Center Neuigkeiten, Vorteile und exklusive Angebote für Club-Mitglieder finden Sie im Club Center. Klicken Sie einfach …"
+    },
+    {
+      "title": "WEB.DE Start - der leichte Einstieg in alles rund um Ihre E-Mails.",
+      "url": "https://produkte.web.de/suche/start/",
+      "snippet": "Fügen Sie einfach Ihre Lieblingswebseiten zu WEB.DE Start hinzu und organisieren Sie diese nach Belieben. Egal ob Social Media, …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "EmanuelGames/Gumball",
+  "slug": "emanuelgames-gumball",
+  "author": "EmanuelGames",
+  "url": "https://huggingface.co/EmanuelGames/Gumball",
+  "created_at": "2026-09-12T14:21:37.000Z",
+  "updated_at": "2026-09-12T14:21:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 76522417,
+  "storage_human": "77 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BingHomepageQuiz - Reddit",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/hot/",
+      "snippet": "Microsoft Bing Homepage daily quiz questions and their answers"
+    },
+    {
+      "title": "Bing News Quiz [10-28-2022] : r/BingQuizAnswers - Reddit",
+      "url": "https://www.reddit.com/r/BingQuizAnswers/comments/yf0qf5/bing_news_quiz_10282022/",
+      "snippet": "Oct 27, 2022 · Bing News Quiz Weekly Answers [10-28-2022] 1: The UK has a new prime minister. What's his name? A Boris …"
+    },
+    {
+      "title": "BingQuizAnswers - Reddit",
+      "url": "https://www.reddit.com/r/BingQuizAnswers/hot/",
+      "snippet": "Microsoft Rewards Quiz Answers"
+    },
+    {
+      "title": "Quiz Answers for today : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/cwya5d/quiz_answers_for_today/",
+      "snippet": "Aug 29, 2019 · quiz that was mentioned a month ago and mentioned again more recently, but never appeared on my dash until …"
+    },
+    {
+      "title": "[US] Microsoft Rewards - Bing News Quiz - Test Your Smarts (02",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/comments/11ak99g/us_microsoft_rewards_bing_news_quiz_test_your/",
+      "snippet": "Feb 24, 2023 · upvotes ·comments r/BingHomepageQuiz r/BingHomepageQuiz Microsoft Bing Homepage daily quiz questions and …"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "ads2009/turkish-ai-text-detector-convbert-v10",
+  "slug": "ads2009-turkish-ai-text-detector-convbert-v10",
+  "author": "ads2009",
+  "url": "https://huggingface.co/ads2009/turkish-ai-text-detector-convbert-v10",
+  "created_at": "2026-09-12T15:30:47.000Z",
+  "updated_at": "2026-09-12T15:30:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "convbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 107407754,
+  "parameters_human": "107.4M",
+  "storage_bytes": 429666984,
+  "storage_human": "430 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "einloggen ebay kleinanzeigen",
+      "url": "https://www.ebay-kleinanzeigen.de/m-einloggen.html?targetUrl=/anzeigen/stadt/schwerin/",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    }
+  ]
+}

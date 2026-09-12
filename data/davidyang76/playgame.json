@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "DavidYang76/playgame",
+  "slug": "davidyang76-playgame",
+  "author": "DavidYang76",
+  "url": "https://huggingface.co/DavidYang76/playgame",
+  "created_at": "2026-09-12T17:12:49.000Z",
+  "updated_at": "2026-09-12T17:14:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "《强军战歌》歌词 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/580982599.html",
+      "snippet": "《强军战歌》歌词新征程号角震天响，强军目标我们来担当！国兴旺，无数先烈的梦想，战旗上写满铁血荣光。将士们听党指挥，英勇 …"
+    },
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    },
+    {
+      "title": "Switch 上有什么比较优质的双人游戏？ - 知乎",
+      "url": "https://www.zhihu.com/question/283561191?utm_division=hot_list_page",
+      "snippet": "Switch 好玩的双人游戏实在太多了， 本文不提《马里奥赛车8》，不提《你裁我剪》这些大家耳熟能详人手一部的作品。 而是精挑细 …"
+    },
+    {
+      "title": "Switch模拟器哪个好？ - 知乎",
+      "url": "https://www.zhihu.com/question/598727170",
+      "snippet": "yuzu，cemu，龙神（待补充） 现在是大分支时代了，王国之泪就是一开始用龙神玩的，龙神系现在用ryubing，易用性和兼容性还是 …"
+    },
+    {
+      "title": "如何在Word中输入平均数符号（即X上加一横）-百度经验",
+      "url": "https://jingyan.baidu.com/article/5225f26bababffe6fa0908a6.html",
+      "snippet": "Jul 11, 2018 · 如何在Word中输入平均数符号（即X上加一横）,在平时的工作中，我们经常需要在word中输入一些特别符号，此时我们 …"
+    }
+  ]
+}

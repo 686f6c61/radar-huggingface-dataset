@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "drawthingsai/Qwen3.8-27B-GGUF",
+  "slug": "drawthingsai-qwen3-8-27b-gguf",
+  "author": "drawthingsai",
+  "url": "https://huggingface.co/drawthingsai/Qwen3.8-27B-GGUF",
+  "created_at": "2026-09-03T06:10:40.000Z",
+  "updated_at": "2026-09-09T08:43:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "es",
+    "ru",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama.cpp",
+    "image-text-to-text",
+    "vision",
+    "multimodal",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "text-generation",
+    "qwen3_8",
+    "qwen3",
+    "qwen",
+    "27b",
+    "fine-tuned",
+    "instruction-tuned",
+    "reasoning",
+    "agent",
+    "agentic",
+    "tool-use",
+    "function-calling",
+    "code-generation",
+    "mtp",
+    "speculative-decoding",
+    "local-inference",
+    "en",
+    "zh",
+    "es",
+    "ru",
+    "ja",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 2367,
+  "trending_score": 9,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 24889908471,
+  "storage_human": "24.9 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kaminholz Briketts & Holzpellets NRW - Energieholz Vest e.K.",
+      "url": "https://www.energieholz-vest.de/",
+      "snippet": "Wir beziehen unser Holz für die Brennholz-Produktion ausschließlich aus heimischen Wäldern innerhalb von NRW. Kurze …"
+    },
+    {
+      "title": "drawthingsai (Draw Things) - Hugging Face",
+      "url": "https://huggingface.co/drawthingsai/models",
+      "snippet": "AI & ML interests. None defined yet. Recent Activity. FIT17 published a model 2 days ago. drawthingsai/Qwen3.8-27B-GGUF · liuliu87 published a model 2 days ..."
+    },
+    {
+      "title": "Holzpellets & Kaminholz Datteln - Energieholz Vest e.K.",
+      "url": "https://www.energieholz-vest.de/liefergebiet/holzpellets-recklinghausen/kaminholz-datteln/",
+      "snippet": "Unser Lieferservice für Brennholz, Holzbriketts und Pellets ermöglicht eine Lieferung von Kaminholz innerhalb von 1-3 Tagen. Gerne …"
+    },
+    {
+      "title": "Feiteng on X: \"Qwen3.8-27B below 3 bpw",
+      "url": "https://x.com/FeitengLi/status/2097609675361710366",
+      "snippet": "vor 3 Tagen ... Qwen3.8-27B below 3 bpw: we've released two GGUF versions at 2.96 / 2.48 bpw, weighing in at just 9.71 / 8.20 GiB, both with MTP included."
+    },
+    {
+      "title": "Kaminholz, Holzbriketts und Holzpellets für NRW",
+      "url": "https://www.energieholz.net/",
+      "snippet": "Sehen Sie sich auf den folgenden Seiten um und erfahren Sie alles Wissenswerte rund ums Heizen mit Holz, verschaffen Sie sich …"
+    }
+  ]
+}

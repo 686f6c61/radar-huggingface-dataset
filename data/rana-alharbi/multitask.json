@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "rana-alharbi/multitask",
+  "slug": "rana-alharbi-multitask",
+  "author": "rana-alharbi",
+  "url": "https://huggingface.co/rana-alharbi/multitask",
+  "created_at": "2026-09-12T10:55:22.000Z",
+  "updated_at": "2026-09-12T10:55:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Produits - Giovanni Rana",
+      "url": "https://www.giovannirana.fr/produits",
+      "snippet": "Pâtes farcies, pâtes lisses, feuilles de lasagnes, gnocchi, plats cuisinés, sauces… Retrouvez sur cette page toute la gamme de …"
+    },
+    {
+      "title": "Giovanni Rana — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Giovanni_Rana",
+      "snippet": "Giovanni Rana, né le 15 octobre 1937 à Cologna Veneta (Italie) est un fabricant de pâtes, fondateur de l' entreprise italienne du …"
+    },
+    {
+      "title": "Italian Pasta & Sauces - Giovanni Rana",
+      "url": "https://www.giovanniranausa.com/",
+      "snippet": "© 2016 Rana Meal Solutions LLC ABOUT US GIANLUCA RANA BIO GIOVANNI RANA BIO RECIPES WORK WITH US …"
+    },
+    {
+      "title": "RECETTES - Giovanni Rana",
+      "url": "https://www.giovannirana.fr/recettes",
+      "snippet": "Découvrez comment savourer au mieux nos pâtes fraîches: Découvrez toutes les recettes de Giovanni Rana!"
+    },
+    {
+      "title": "Pastificio Giovanni Rana - Leader nel mercato della pasta fresca",
+      "url": "https://www.giovannirana.it/",
+      "snippet": "Dal 1960 il Pastificio Giovanni Rana racconta la tradizione e l'innovazione di un'azienda leader nel mercato della pasta fresca."
+    }
+  ]
+}

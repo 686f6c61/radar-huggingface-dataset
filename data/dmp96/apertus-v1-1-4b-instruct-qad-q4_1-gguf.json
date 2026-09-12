@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "DMP96/Apertus-v1.1-4B-Instruct-QAD-Q4_1-GGUF",
+  "slug": "dmp96-apertus-v1-1-4b-instruct-qad-q4_1-gguf",
+  "author": "DMP96",
+  "url": "https://huggingface.co/DMP96/Apertus-v1.1-4B-Instruct-QAD-Q4_1-GGUF",
+  "created_at": "2026-09-12T13:38:10.000Z",
+  "updated_at": "2026-09-12T13:38:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JeuBelote : Jeu de belote en ligne gratuit",
+      "url": "https://www.jeubelote.com/",
+      "snippet": "Jeu de belote en ligne gratuit Découvrez la belote en ligne : facile, immédiate et gratuite. Pas de téléchargement, ni d’inscription. …"
+    },
+    {
+      "title": "JOUER - JeuBelote",
+      "url": "https://www.jeubelote.com/jouer.html",
+      "snippet": "Les donnes de Belote se jouent en duplicate, votre résultat (vos points obtenus en Nord-Sud moins ceux de l’équipe Est-Ouest) est …"
+    },
+    {
+      "title": "JeuBelote : Jeu de belote en ligne gratuit",
+      "url": "https://www.jeubelote.com/je_acc.html",
+      "snippet": "Jeu de belote en ligne gratuit Découvrez la belote en ligne : facile, immédiate et gratuite. Pas de téléchargement, ni d’inscription. …"
+    },
+    {
+      "title": "Nouvelle Technologie - JeuBelote",
+      "url": "https://www.jeubelote.com/nouvelle-technologie.html",
+      "snippet": "Tarot Thierry d’Herbigny Fondateur. Histoire de la belote et son évolution avec l'apparition des nouvelles technologies. 1983 : La …"
+    },
+    {
+      "title": "F.A.Q - JeuBelote",
+      "url": "https://www.jeubelote.com/f-a-q.html",
+      "snippet": "F.A.Q 1 : Jouons-nous avec des robots ? Est-ce que je joue avec l'ordinateur ou bien avec de vrais joueurs ? Vous jouez avec des …"
+    }
+  ]
+}

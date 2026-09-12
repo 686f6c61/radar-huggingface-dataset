@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Fred-9B-v1.2-GGUF",
+  "slug": "mradermacher-fred-9b-v1-2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Fred-9B-v1.2-GGUF",
+  "created_at": "2026-09-12T11:24:39.000Z",
+  "updated_at": "2026-09-12T12:02:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3_5",
+    "en",
+    "base_model:CrowdMind/Fred-9B-v1.2",
+    "base_model:quantized:CrowdMind/Fred-9B-v1.2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 75999870720,
+  "storage_human": "76.0 GB",
+  "base_model": "CrowdMind/Fred-9B-v1.2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "windows - Uninstall without an MSI file - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/334490/uninstall-without-an-msi-file",
+      "snippet": "Dec 19, 2016 · Sort by date and search in the latest created folders for an MSI file that could belong to the software that you want to …"
+    },
+    {
+      "title": "Python error \"ImportError: No module named\" - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/338768/python-error-importerror-no-module-named",
+      "snippet": "Here, have a look at this. The __init__.py files are required to make Python treat the directories as containing packages; this is done …"
+    },
+    {
+      "title": "Remove Visual Search feature from Edge programatically",
+      "url": "https://stackoverflow.com/questions/72563731/remove-visual-search-feature-from-edge-programatically",
+      "snippet": "Jun 9, 2022 · Edge seems to have recently come out with a Visual Search feature, which pops up an icon above all images, allowing …"
+    },
+    {
+      "title": "vs code copilot icon gone - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/75827616/vs-code-copilot-icon-gone",
+      "snippet": "Mar 23, 2023 · I can't find the Github Copilot icon for VS Code. I tried uninstalling and reinstalling the GitHub Copilot extension, and …"
+    },
+    {
+      "title": "Change search engine of Visual Studio 2019 - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/67465005/change-search-engine-of-visual-studio-2019",
+      "snippet": "May 10, 2021 · I need to change Search Engine of Visual Studio 2019. Bing is not suitable for me. I prefer Google to Bing."
+    }
+  ]
+}

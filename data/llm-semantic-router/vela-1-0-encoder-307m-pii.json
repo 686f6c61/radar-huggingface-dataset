@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "llm-semantic-router/Vela-1.0-Encoder-307M-PII",
+  "slug": "llm-semantic-router-vela-1-0-encoder-307m-pii",
+  "author": "llm-semantic-router",
+  "url": "https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-PII",
+  "created_at": "2026-09-12T16:43:21.000Z",
+  "updated_at": "2026-09-12T17:04:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "de",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "modernbert",
+    "token-classification",
+    "vela",
+    "pii",
+    "multilingual",
+    "long-context",
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "de",
+    "ja",
+    "base_model:llm-semantic-router/mmbert-32k-yarn",
+    "base_model:quantized:llm-semantic-router/mmbert-32k-yarn",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 307557155,
+  "parameters_human": "307.6M",
+  "storage_bytes": 2522553410,
+  "storage_human": "2.5 GB",
+  "base_model": "llm-semantic-router/mmbert-32k-yarn",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grand modèle de langage — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage",
+      "snippet": "Les LLM sont des fonctions mathématiques dont l'entrée et la sortie sont des listes de nombres. Pour que ceux-ci fonctionnent avec …"
+    },
+    {
+      "title": "GitHub - vllm-project/semantic-router: A programmable Mixture-of-Models ...",
+      "url": "https://github.com/vllm-project/semantic-router",
+      "snippet": "vLLM Semantic Router is a programmable routing layer for building Mixture-of-Models systems across heterogeneous LLM infrastructure. It evaluates request signals, user preferences, and application policies to select—or compose—the right model path for each request. Use it to improve quality, cost, latency, privacy, and safety without hard-coding routing logic into applications."
+    },
+    {
+      "title": "Large language model - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Large_language_model",
+      "snippet": "An LLM is given some examples where the \"assistant\" verbally breaks down the thought process before arriving at an answer. The …"
+    },
+    {
+      "title": "llm-semantic-router (vLLM Semantic Router) - Hugging Face",
+      "url": "https://huggingface.co/llm-semantic-router",
+      "snippet": "A Mixture-of-Models(MoM) Router that understands the request intent."
+    },
+    {
+      "title": "Classement LLM 2026 : Top 100 des meilleurs modèles d’IA comparés",
+      "url": "https://www.ia-insights.fr/classement-des-meilleurs-llm/",
+      "snippet": "Classement des 100 meilleurs LLM en 2026 : qualité, vitesse et prix comparés. Données Artificial Analysis, mises à jour …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Olena29/CyberRealistic",
+  "slug": "olena29-cyberrealistic",
+  "author": "Olena29",
+  "url": "https://huggingface.co/Olena29/CyberRealistic",
+  "created_at": "2026-09-12T15:29:16.000Z",
+  "updated_at": "2026-09-12T15:29:17.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "stable-diffusion",
+    "sd-1.5",
+    "text-to-image",
+    "photorealistic",
+    "cyberrealistic",
+    "image-generation",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 97120618952,
+  "storage_human": "97.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SteamDB | Database of everything on Steam",
+      "url": "https://steamdb.info/",
+      "snippet": "SteamDB is a free, independent database covering the entire Steam catalog. Player charts, price history across all regions, update …"
+    },
+    {
+      "title": "Steam Charts · Live Player Count Statistics · SteamDB",
+      "url": "https://steamdb.info/charts/",
+      "snippet": "Steam player count and game statistics. See the most played games on Steam with live concurrent players, 24-hour peak, and all …"
+    },
+    {
+      "title": "Steam Developer: SteamDB",
+      "url": "https://store.steampowered.com/dev/steamdb",
+      "snippet": "4 days ago · We post informational reviews with concurrent player peaks when it reaches high enough. ----- Game developers: we …"
+    },
+    {
+      "title": "Équipe de développement Steam : SteamDB",
+      "url": "https://store.steampowered.com/dev/steamdb?l=french",
+      "snippet": "4 days ago · We post informational reviews with concurrent player peaks when it reaches high enough. ----- Game developers: we …"
+    },
+    {
+      "title": "Steam Price History: Regional Prices & Deals - steamdb.com",
+      "url": "https://www.steamdb.com/en/tools/steam-price-history",
+      "snippet": "Jul 2, 2026 · Daily Steam price recordings across seven regions since Jul 2, 2026, plus a live check for any game in 12 regions."
+    }
+  ]
+}

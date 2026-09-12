@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Travor278/pi05-pick-dual-bottles-right-first-lora-10k",
+  "slug": "travor278-pi05-pick-dual-bottles-right-first-lora-10k",
+  "author": "Travor278",
+  "url": "https://huggingface.co/Travor278/pi05-pick-dual-bottles-right-first-lora-10k",
+  "created_at": "2026-09-12T16:29:27.000Z",
+  "updated_at": "2026-09-12T16:31:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi05",
+    "jax",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335806816,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "T-bone (@da.real.t.bone) • Instagram photos and videos",
+      "url": "https://www.instagram.com/da.real.t.bone/",
+      "snippet": "363K Followers, 0 Following, 43 Posts - T-bone (@da.real.t.bone) on Instagram: \"‎لا اله إلا الله محمد رسول الله‎\""
+    },
+    {
+      "title": "TBone Merch: Exclusive T Shirts & Accessories for Style & Fun",
+      "url": "https://www.tbonemerch.com/",
+      "snippet": "Discover TBone Merch BJJ collection, featuring stylish T-shirts and hoodies for both adults and youths. Each piece blends the spirit of …"
+    },
+    {
+      "title": "TBone Merch: Unique Wearable Art & Fashion",
+      "url": "https://www.tbonemerch.com/collections/limited-edition-tbone-merch-collection",
+      "snippet": "Experience TBone Merch unique blend of fashion and creativity with our limited-edition lines. More than clothes, they're wearable art, …"
+    },
+    {
+      "title": "T-bone (@da.real.tbone) | TikTok",
+      "url": "https://www.tiktok.com/@da.real.tbone",
+      "snippet": "T-bone (@da.real.tbone) on TikTok | . 707.3K Likes. . 82.6K Followers. . لا إله إلا الله محمد رسول الله."
+    },
+    {
+      "title": "Tbone Official: TikTok, Instagram, X, Facebook, Twitch - Linktree",
+      "url": "https://linktr.ee/thetbonesslice",
+      "snippet": "🥩Tbone has been a member of Linktree for 1 year and joined in November 2024."
+    }
+  ]
+}

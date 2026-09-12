@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Jeethu/NeoHorse-1-9B-PARO",
+  "slug": "jeethu-neohorse-1-9b-paro",
+  "author": "Jeethu",
+  "url": "https://huggingface.co/Jeethu/NeoHorse-1-9B-PARO",
+  "created_at": "2026-09-12T16:46:18.000Z",
+  "updated_at": "2026-09-12T16:46:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "agentic",
+    "tool-use",
+    "coding",
+    "reasoning",
+    "instruction-following",
+    "conversational",
+    "arxiv:2511.10645",
+    "base_model:TokenRhythm/NeoHorse-1-9B",
+    "base_model:quantized:TokenRhythm/NeoHorse-1-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "paroquant",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2980426240,
+  "parameters_human": "2.98B",
+  "storage_bytes": 7716310228,
+  "storage_human": "7.7 GB",
+  "base_model": "TokenRhythm/NeoHorse-1-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LALIGA official website",
+      "url": "https://www.laliga.com/en-GB",
+      "snippet": "Sep 4, 2026 · All the information of LALIGA EA SPORTS, LALIGA HYPERMOTION, and Liga F Moeve: schedules, results, …"
+    },
+    {
+      "title": "La Liga (Spanien) heute | Spielplan & Ergebnisse | 5. Spieltag | 2026/ ...",
+      "url": "https://www.kicker.de/la-liga/spieltag",
+      "snippet": "Spielplan La Liga 2026/27 (Liga, Spanien) • 5. Spieltag • Ergebnisse, Spiele und Termine zum Spieltag • Alle Tabellen • Live-Ticker • …"
+    },
+    {
+      "title": "LaLiga 2026/2027 live scores, results, Football Spain - Flashscore",
+      "url": "https://www.flashscore.com/football/spain/laliga/",
+      "snippet": "LaLiga 2026/2027 live scores on Flashscore.com offer livescore, results, LaLiga standings and match details (goal scorers, red cards, …"
+    },
+    {
+      "title": "La Liga - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/La_Liga",
+      "snippet": "Real Madrid and Barcelona have dominated the competition, with 36 and 29 titles respectively. Other successful clubs include …"
+    },
+    {
+      "title": "La Liga (Spanien) 2026/27 - Tabelle | 5. Spieltag - kicker",
+      "url": "https://www.kicker.de/la-liga/tabelle",
+      "snippet": "Am Ende der Saison erreichen in Spanien vier Mannschaften die Champions League. Unter Einbeziehung des Pokalsiegers …"
+    }
+  ]
+}

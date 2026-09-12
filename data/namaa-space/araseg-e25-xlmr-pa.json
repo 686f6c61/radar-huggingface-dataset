@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "NAMAA-Space/araseg-e25-xlmr-pa",
+  "slug": "namaa-space-araseg-e25-xlmr-pa",
+  "author": "NAMAA-Space",
+  "url": "https://huggingface.co/NAMAA-Space/araseg-e25-xlmr-pa",
+  "created_at": "2026-09-12T13:52:46.000Z",
+  "updated_at": "2026-09-12T14:32:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "arabic",
+    "text-segmentation",
+    "token-classification",
+    "araseg-2026",
+    "arabicnlp2026",
+    "shared-task",
+    "ar",
+    "base_model:FacebookAI/xlm-roberta-large",
+    "base_model:finetune:FacebookAI/xlm-roberta-large",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2239732000,
+  "storage_human": "2.2 GB",
+  "base_model": "FacebookAI/xlm-roberta-large",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Linkspartei: Schuster kritisiert Nahostbeschluss der Linken in ...",
+      "url": "https://www.zeit.de/politik/deutschland/2026-03/zentralrat-der-juden-josef-schuster-linke-antisemitismus-gxe",
+      "snippet": "Mar 18, 2026 · Linkspartei: Schuster kritisiert Nahostbeschluss der Linken in Niedersachsen | DIE ZEIT. Zum Inhalt springen. Menü. …"
+    },
+    {
+      "title": "Zentralrat kritisiert Antizionismus-Beschluss der Linken in Hannover",
+      "url": "https://www.tagesschau.de/inland/innenpolitik/linke-vorwuefer-zentralrat-der-juden-100.html",
+      "snippet": "Mar 18, 2026 · In Anwesenheit von Fraktionschefin Reichinnek hatte die Linke in Niedersachsen einen Beschluss gegen \"den heute …"
+    },
+    {
+      "title": "Kritik vom Zentralrat der Juden: „Bietet Judenhass ein Zuhause ... - WELT",
+      "url": "https://www.welt.de/politik/deutschland/article69b9f616fc05063917a4f037/kritik-vom-zentralrat-der-juden-bietet-judenhass-ein-zuhause-entsetzen-ueber-linken-beschluss.html",
+      "snippet": "Mar 18, 2026 · Der Präsident des Zentralrats der Juden in Deutschland, Josef Schuster, hat einen Beschluss der Linkspartei in …"
+    },
+    {
+      "title": "Zentralrat der Juden - Schuster: Antizionismus-Beschluss der Linken …",
+      "url": "https://www.deutschlandfunk.de/schuster-antizionismus-beschluss-der-linken-ist-kaschierter-antisemitismus-100.html",
+      "snippet": "Mar 18, 2026 · Der Zentralrat der Juden in Deutschland wirft dem niedersächsischen Landesverband der Linken Antisemitismus vor."
+    },
+    {
+      "title": "Josef Schuster (Zentralratspräsident) – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Josef_Schuster_(Zentralratspr%C3%A4sident)",
+      "snippet": "Josef Schuster (geboren am 20. März 1954 in Haifa, [1] Israel) ist ein deutscher Internist und seit November 2014 Präsident des …"
+    }
+  ]
+}

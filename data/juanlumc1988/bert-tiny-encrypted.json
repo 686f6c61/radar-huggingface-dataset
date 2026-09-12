@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "juanlumc1988/bert-tiny-encrypted",
+  "slug": "juanlumc1988-bert-tiny-encrypted",
+  "author": "juanlumc1988",
+  "url": "https://huggingface.co/juanlumc1988/bert-tiny-encrypted",
+  "created_at": "2026-09-12T10:57:21.000Z",
+  "updated_at": "2026-09-12T11:26:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "encrypted",
+    "confidential-computing",
+    "proof-of-concept",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18268188,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top 20 Hedge Funds H1 2025: Billion Dollar Club",
+      "url": "https://www.withintelligence.com/insights/billion-dollar-club-h1-2025/",
+      "snippet": "Sep 26, 2025 · Hedge fund assets reached $3.6tn in H1 2025. See the top 20 hedge funds, leading strategies and key asset growth …"
+    },
+    {
+      "title": "AI Fuels Two Fastest-Growing Hedge Fund Managers in History",
+      "url": "https://www.withintelligence.com/insights/focus-on-ai-companies-fuels-fastest-growing-hedge-fund-managers-in-industrys-history/",
+      "snippet": "Jun 24, 2026 · The two leading artificial intelligence-focused hedge fund operations are now – seemingly overnight – managing a …"
+    },
+    {
+      "title": "Best Performing Hedge Funds Of Q1 2026 And 2025",
+      "url": "https://hedgefundalpha.com/news/best-performing-hedge-funds/",
+      "snippet": "May 28, 2026 · In 2024, the best performing hedge funds include Robotti & Co. Advisors with a 173.87% 3-year gain, Peconic …"
+    },
+    {
+      "title": "Top 10 Hedge Funds For 2025 2026 Hedgefollow: Complete Directory",
+      "url": "https://alpha-maven.com/hedge-funds/top-hedge-funds-for-2025-2026-hedgefollow",
+      "snippet": "Top hedge funds for 2025-2026: Explore 744+ actively tracked funds with performance analysis, risk metrics, and insights for …"
+    },
+    {
+      "title": "Top Hedge Funds 2026 | AlphaMaven Rankings | AlphaMaven",
+      "url": "https://alpha-maven.com/hedge-funds/top-hedge-funds",
+      "snippet": "These top hedge funds have earned their elite status not merely through size, but by consistently generating alpha across varying …"
+    }
+  ]
+}

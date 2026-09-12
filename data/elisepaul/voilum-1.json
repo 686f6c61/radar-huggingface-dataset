@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "elisepaul/voilum-1",
+  "slug": "elisepaul-voilum-1",
+  "author": "elisepaul",
+  "url": "https://huggingface.co/elisepaul/voilum-1",
+  "created_at": "2026-09-12T19:19:28.000Z",
+  "updated_at": "2026-09-12T19:19:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "py"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "voilum_moe",
+    "code",
+    "moe",
+    "python",
+    "machine-learning",
+    "algorithms",
+    "reinforcement-learning",
+    "grpo",
+    "rlaif",
+    "slm",
+    "text-generation",
+    "en",
+    "py",
+    "arxiv:1910.07467",
+    "arxiv:2305.13245",
+    "arxiv:2104.09864",
+    "arxiv:2002.05202",
+    "arxiv:1701.06538",
+    "arxiv:2307.08691",
+    "arxiv:2310.10537",
+    "arxiv:2402.03300",
+    "arxiv:2203.02155",
+    "arxiv:2402.19173",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 463553024,
+  "parameters_human": "463.6M",
+  "storage_bytes": 2276193548,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
+    },
+    {
+      "title": "如何评价微软白板（Microsoft Whiteboard）即将停用？",
+      "url": "https://www.zhihu.com/question/2065009092935029733",
+      "snippet": "Jul 27, 2026 · Microsoft Whiteboard is transitioning to a Microsoft 365 Business account requirement after August 22, 2026. Personal …"
+    },
+    {
+      "title": "Word如何隐藏/显示回车符（换行符，段落标记）-百度经验",
+      "url": "https://jingyan.baidu.com/article/cb5d6105efd79b005c2fe096.html",
+      "snippet": "Sep 25, 2015 · 有时候我们在编辑Word文档时，或者需要对WORD页面截图时，需要将回车符隐藏起来，那么如何隐藏将回车符（换 …"
+    },
+    {
+      "title": "如何激活Office 365 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/c85b7a642c24f6413aac9548.html",
+      "snippet": "Aug 6, 2020 · 这篇文章主要介绍激活Office 365的三种方法。（如果你还没下载安装Office 365，请先下载安装。链接见下方） 对于大 …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msteams/forum/all/assignment-notifications-dont-occur-in-a-teams/30905e6b-adeb-4e92-848e-1d36efcc3a13",
+      "snippet": ""
+    }
+  ]
+}

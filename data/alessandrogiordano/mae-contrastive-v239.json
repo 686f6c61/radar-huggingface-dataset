@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "alessandrogiordano/mae-contrastive-v239",
+  "slug": "alessandrogiordano-mae-contrastive-v239",
+  "author": "alessandrogiordano",
+  "url": "https://huggingface.co/alessandrogiordano/mae-contrastive-v239",
+  "created_at": "2026-09-12T15:47:42.000Z",
+  "updated_at": "2026-09-12T15:47:47.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "All Matches - Yalla Shoot | Yallashoot.com",
+      "url": "https://yallashoot.com/type/all/4",
+      "snippet": "Yalla Shoot,Yalla Shoot Live,Yalla Shoot English,Yalla Shoot Tv,Yalla Shoot Com."
+    },
+    {
+      "title": "يلا شوت | Yalla Shoot | أهم مباريات اليوم yallashoot",
+      "url": "https://www.yallasport-hd.com/home/",
+      "snippet": "تابع جدول مباريات اليوم لايف لحظة بلحظة. تغطية شاملة لجميع البطولات الأوروبية والعربية عبر yalla shoot مع تحديث مستمر للنتائج والترتيب."
+    },
+    {
+      "title": "Football Matches - Yalla Shoot | Yallashoot.com",
+      "url": "https://yallashoot.com/type/202",
+      "snippet": "Yalla Shoot,Yalla Shoot Live,Yalla Shoot English,Yalla Shoot Tv,Yalla Shoot Com."
+    },
+    {
+      "title": "يلا شوت Yalla Shoot — تغطية مباشرة للمباريات",
+      "url": "https://yalashoot.fans/",
+      "snippet": "تابع مباريات اليوم لحظياً عبر موقع يلا شوت Yalla Shoot. نقدم لك تغطية لأهم الدوريات والبطولات العربية والأوروبية وغيرها، النتائج، والأهداف، والإخصائيات مباشرة لحظة بلحظة"
+    },
+    {
+      "title": "يلا شوت | Yalla Shoot - مباريات اليوم ونتائج كرة القدم مباشرة",
+      "url": "https://kora-yallashoot.live/",
+      "snippet": "يلا شوت (Yalla Shoot) موقع عربي متخصص في متابعة كرة القدم مباشرة، يوفر نتائج المباريات الحية لحظة بلحظة، جدول مباريات اليوم، ترتيب الدوريات الكبرى، الهدافين وجميع الإحصائيات التفصيلية."
+    }
+  ]
+}

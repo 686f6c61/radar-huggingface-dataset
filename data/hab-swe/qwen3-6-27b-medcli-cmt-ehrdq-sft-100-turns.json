@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hab-swe/Qwen3.6-27B-MedCLI-CMT-EHRDQ-SFT-100-turns",
+  "slug": "hab-swe-qwen3-6-27b-medcli-cmt-ehrdq-sft-100-turns",
+  "author": "hab-swe",
+  "url": "https://huggingface.co/hab-swe/Qwen3.6-27B-MedCLI-CMT-EHRDQ-SFT-100-turns",
+  "created_at": "2026-09-12T16:58:20.000Z",
+  "updated_at": "2026-09-12T16:59:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54726417504,
+  "storage_human": "54.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vente à domicile de scrapbooking, vdi loisirs créatifs",
+      "url": "https://www.azzaworld.com/",
+      "snippet": "AZZA est une marque du groupe franco-belge CTC Distributions à l’origine d’un style de scrapbooking sobre et épuré depuis 2001. Il …"
+    },
+    {
+      "title": "La boutique AZZA | Scrapbooking européen",
+      "url": "https://shop.azzaworld.com/",
+      "snippet": "Explorez la boutique AZZA pour des produits et accessoires de scrapbooking européen, créant des albums photo uniques avec un …"
+    },
+    {
+      "title": "AZZA | Iconic PC Towers | Be Different | Be Unlimited",
+      "url": "https://www.azza.gg/",
+      "snippet": "We're here to build intriguing products and an exciting brand. We aim to push the boundaries of the impossible. There are no limits …"
+    },
+    {
+      "title": "Catalogue scrapbooking, carterie, société VDI scrapbooking",
+      "url": "https://www.azzaworld.com/produits/catalogues-scrapbooking-carterie/",
+      "snippet": "Azza dans les médias Nos partenaires FAQ Contactez-nous Suivez-nous Inscription à notre lettre d'information Je m'inscris Tous …"
+    },
+    {
+      "title": "La boutique AZZA | Scrapbooking européen - Azzaworld",
+      "url": "https://shop.azzaworld.com/fr/CATALOGUE.html?All=1",
+      "snippet": "Catalogue des Produits Page 1 2 3 … 174 Suivante >>"
+    }
+  ]
+}

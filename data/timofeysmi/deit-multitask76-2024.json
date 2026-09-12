@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Timofeysmi/deit-multitask76-2024",
+  "slug": "timofeysmi-deit-multitask76-2024",
+  "author": "Timofeysmi",
+  "url": "https://huggingface.co/Timofeysmi/deit-multitask76-2024",
+  "created_at": "2026-09-12T11:07:17.000Z",
+  "updated_at": "2026-09-12T11:07:23.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wahlumfragen zur Bundestagswahl – Sonntagsfrage (Wahlumfrage, …",
+      "url": "https://www.wahlrecht.de/umfragen/",
+      "snippet": "Feb 23, 2025 · Sonntagsfrage – Aktuelle Ergebnisse von Umfragen zur Bundestagswahl (Wahlumfragen, Projektionen, Prognosen)"
+    },
+    {
+      "title": "Sonntagsfrage – Umfragen Landtagswahlen (Wahlumfrage, …",
+      "url": "https://www.wahlrecht.de/umfragen/landtage/",
+      "snippet": "Wahlumfragen – Aktuelle Landtagswahl-Umfragen aus den Ländern (Sonntagsfrage, Wahlumfrage)"
+    },
+    {
+      "title": "Sonntagsfrage – Sachsen-Anhalt (Wahlumfrage, Wahlumfragen)",
+      "url": "https://www.wahlrecht.de/umfragen/landtage/sachsen-anhalt.htm",
+      "snippet": "Übersicht über aktuelle und frühere Wahlumfragen zur Landtagswahl in Sachsen-Anhalt"
+    },
+    {
+      "title": "Sonntagsfrage – Mecklenburg-Vorpommern (Wahlumfrage, …",
+      "url": "https://www.wahlrecht.de/umfragen/landtage/mecklenburg-vorpommern.htm",
+      "snippet": "1 day ago · Übersicht über aktuelle und frühere Wahlumfragen zur Landtagswahl in Mecklenburg-Vorpommern"
+    },
+    {
+      "title": "Wahlen, Wahlrecht und Wahlsysteme",
+      "url": "https://www.wahlrecht.de/",
+      "snippet": "6 days ago · Informationen und Meldungen zu Wahlen: Wahlsysteme, Wahlrecht, Wahlergebnisse und Umfragen"
+    }
+  ]
+}

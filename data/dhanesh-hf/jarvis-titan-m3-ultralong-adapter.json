@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "dhanesh-hf/Jarvis-Titan-M3-UltraLong-Adapter",
+  "slug": "dhanesh-hf-jarvis-titan-m3-ultralong-adapter",
+  "author": "dhanesh-hf",
+  "url": "https://huggingface.co/dhanesh-hf/Jarvis-Titan-M3-UltraLong-Adapter",
+  "created_at": "2026-09-12T14:13:15.000Z",
+  "updated_at": "2026-09-12T14:13:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "deepseek-moe",
+    "titans-neural-memory",
+    "pallas-tpu",
+    "ultra-long-context",
+    "sliding-window-attention",
+    "tri-brid",
+    "jarvis-titan",
+    "distillation",
+    "reasoning",
+    "agentic",
+    "text-generation",
+    "base_model:dhanesh-hf/Jarvis-Titan-V14-MoE-Merged",
+    "base_model:finetune:dhanesh-hf/Jarvis-Titan-V14-MoE-Merged",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 180098486,
+  "storage_human": "180 MB",
+  "base_model": "dhanesh-hf/Jarvis-Titan-V14-MoE-Merged",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pasta Fredda: Le migliori Ricette Facili e veloci",
+      "url": "https://blog.giallozafferano.it/amicincucina/pasta-fredda-migliori-ricette-estate/",
+      "snippet": "Jul 31, 2026 · Scopri le migliori ricette di pasta fredda: facili, veloci e perfette per l'estate. Idee con tonno, pesto, verdure, salmone e …"
+    },
+    {
+      "title": "Pasta fredda: ricette sfiziose per tutti i gusti",
+      "url": "https://www.fattoincasadabenedetta.it/ricettari/pasta-fredda/",
+      "snippet": "La pasta fredda è irrinunciabile soprattutto quando arriva l’estate! Cercate nuove idee e ispirazioni? Allora siete nel posto giusto: …"
+    },
+    {
+      "title": "Pasta fredda classica: ricetta estiva facile e sfiziosa",
+      "url": "https://www.sicucina.it/ricetta/pasta-fredda/",
+      "snippet": "Jul 27, 2026 · Preparata con pasta cotta al dente, ingredienti freschi e un condimento equilibrato, non è una semplice insalata di …"
+    },
+    {
+      "title": "Ricetta Pasta fredda - La Ricetta di GialloZafferano",
+      "url": "https://ricette.giallozafferano.it/Pasta-fredda.html",
+      "snippet": "La pasta fredda è un piatto fresco, leggero e gustoso, perfetto per l'estate: scopri la nostra ricetta con verdure, mais, mozzarella e …"
+    },
+    {
+      "title": "Pasta fredda : 10 Ricette veloci e sfiziose di Tavolartegusto",
+      "url": "https://www.tavolartegusto.it/ricetta/ricette-pasta-fredda/",
+      "snippet": "Jun 28, 2026 · La Pasta fredda è un primo piatto estivo gustoso e pratico. Scopri le mie Ricette e Trucchi per farla al dente, mai …"
+    }
+  ]
+}

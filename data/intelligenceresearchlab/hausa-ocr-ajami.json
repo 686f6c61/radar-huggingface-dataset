@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "IntelligenceResearchLab/Hausa-OCR-AJAMI",
+  "slug": "intelligenceresearchlab-hausa-ocr-ajami",
+  "author": "IntelligenceResearchLab",
+  "url": "https://huggingface.co/IntelligenceResearchLab/Hausa-OCR-AJAMI",
+  "created_at": "2026-09-12T19:33:13.000Z",
+  "updated_at": "2026-09-12T19:38:06.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ha"
+  ],
+  "tags": [
+    "ocr",
+    "ajami",
+    "pytorch",
+    "crnn",
+    "ha",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 73375879,
+  "storage_human": "73 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Film in tv stasera sul digitale terrestre - FilmTV.it",
+      "url": "https://www.filmtv.it/programmi-tv/film/oggi/stasera/",
+      "snippet": "Film in tv stasera sul digitale terrestre | Leggi la guida alla programmazione dei film in onda oggi sul digitale terrestre trasmessi in …"
+    },
+    {
+      "title": "Film di oggi in tv: pomeriggio, sera su digitale terrestre",
+      "url": "https://www.superguidatv.it/film-in-tv/",
+      "snippet": "Leggi la guida alla programmazione completa di tutti i film in onda oggi, dalle 6 alle 24. Ogni film ha una scheda dettagliata con …"
+    },
+    {
+      "title": "Film in tv oggi pomeriggio sul digitale terrestre - FilmTV.it",
+      "url": "https://www.filmtv.it/programmi-tv/film/oggi/pomeriggio/",
+      "snippet": "Film in tv oggi pomeriggio sul digitale terrestre | Leggi la guida alla programmazione dei film in onda oggi sul digitale terrestre …"
+    },
+    {
+      "title": "Film oggi in tv - Guida TV ai film in onda",
+      "url": "https://www.oggiintv.eu/film-stasera",
+      "snippet": "Lista dettagliata di tutti i film oggi in tv completi di descrizione, locandina e trailer."
+    },
+    {
+      "title": "Oggi in TV - Programmi TV di oggi",
+      "url": "https://www.oggiintv.eu/",
+      "snippet": "Scopri subito cosa c'è oggi in TV grazie alla nostra guida ai programmi. In televisione vengono mostrati centinaia di programmi e film …"
+    }
+  ]
+}

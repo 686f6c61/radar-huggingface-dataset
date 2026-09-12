@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "apetersson/DeepSeek-V4.1-Flash-Abliteration-Adapter",
+  "slug": "apetersson-deepseek-v4-1-flash-abliteration-adapter",
+  "author": "apetersson",
+  "url": "https://huggingface.co/apetersson/DeepSeek-V4.1-Flash-Abliteration-Adapter",
+  "created_at": "2026-09-12T19:23:20.000Z",
+  "updated_at": "2026-09-12T19:23:40.000Z",
+  "license": "mit`;",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ds4",
+    "directional-steering",
+    "experimental",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4.1-Flash",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2457816,
+  "storage_human": "2 MB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Your partner for web hosting, servers, domains | netcup",
+      "url": "https://www.netcup.com/en",
+      "snippet": "Whether it's a website, an app, or a business idea: With our VPS Lite plans, you can get your projects online affordably and reliably. …"
+    },
+    {
+      "title": "Cheap Cloud Web Hosting | netcup",
+      "url": "https://www.netcup.com/en/hosting",
+      "snippet": "Advantages of netcup web hosting netcup web hosting is the perfect solution if you are looking for a reliable and high-performance …"
+    },
+    {
+      "title": "netcup Community",
+      "url": "https://community.netcup.com/en/",
+      "snippet": "The netcup forum has been a popular contact point for all kinds of help since 2008. Whether you have questions before you buy, …"
+    },
+    {
+      "title": "VPS hosting with top performance & best conditions | netcup",
+      "url": "https://www.netcup.com/en/server/vps",
+      "snippet": "Can I rent a Windows Server? netcup does not offer any ready-made Windows servers. However, you have the option of i nstalling …"
+    },
+    {
+      "title": "Server hosting for every requirement - affordable & secure | netcup",
+      "url": "https://www.netcup.com/en/server",
+      "snippet": "What is the netcup SCP? The Server Control Panel (SCP) is your central management tool for VPS, Root Servers, and storage. …"
+    }
+  ]
+}

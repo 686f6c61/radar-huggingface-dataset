@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Obafemi101/taste-critic-madpo-q8",
+  "slug": "obafemi101-taste-critic-madpo-q8",
+  "author": "Obafemi101",
+  "url": "https://huggingface.co/Obafemi101/taste-critic-madpo-q8",
+  "created_at": "2026-09-12T19:05:29.000Z",
+  "updated_at": "2026-09-12T19:33:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 16197050496,
+  "storage_human": "16.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Bonjour, Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux …"
+    },
+    {
+      "title": "Lotto24 - Forum Consommation & Internet",
+      "url": "https://forums.commentcamarche.net/forum/affich-34069080-lotto24",
+      "snippet": "Nov 6, 2016 · Lotto24 xCharlote - Modifié le 6 nov. 2016 à 17:52 s_t_s - 6 nov. 2016 à 18:01 Bonjour j'ai un problème avec Lotto24 …"
+    },
+    {
+      "title": "Branchement rj45 - Forum câblage",
+      "url": "https://forums.commentcamarche.net/forum/affich-38272884-branchement-rj45",
+      "snippet": "Feb 25, 2026 · Bonjour On’est passe de la box à la fibre. la box était branchée sur la prise RJ45, la box dans la chambre du p’tit. …"
+    },
+    {
+      "title": "Lotto24.fr [Résolu] - Forum Consommation & Internet",
+      "url": "https://forums.commentcamarche.net/forum/affich-32869778-lotto24-fr",
+      "snippet": "Dec 6, 2015 · Résumé de la discussion Plusieurs messages évoquent une arnaque associée à Lotto24.fr, où l'annonce d'un gain est …"
+    },
+    {
+      "title": "Désabonne lotto24 - Forum Consommation & Internet",
+      "url": "https://forums.commentcamarche.net/forum/affich-34028774-desabonne-lotto24",
+      "snippet": "Oct 25, 2016 · Bonjour Je vous réclame que vous avez encaissé par carte bancaire Vous me remboursez 78€ (39€/septembre et …"
+    }
+  ]
+}

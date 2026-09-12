@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Patoni31/md3",
+  "slug": "patoni31-md3",
+  "author": "Patoni31",
+  "url": "https://huggingface.co/Patoni31/md3",
+  "created_at": "2026-09-12T14:01:54.000Z",
+  "updated_at": "2026-09-12T14:04:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sanitätshaus Kellberg GmbH | Orthopädiemanufaktur Kellberg",
+      "url": "https://www.xn--orthopdiemanufaktur-lwb.de/",
+      "snippet": "Sanitätshaus Kellberg GmbH Ihr Gesundheitsdienstleister für RheinBerg Hauptstr. 124-126, 51465 Bergisch Gladbach Service: …"
+    },
+    {
+      "title": "Filiale Refrath - Aktuelles | Orthopädiemanufaktur Kellberg",
+      "url": "https://www.xn--orthopdiemanufaktur-lwb.de/aktuelles/filiale-refrath/",
+      "snippet": "Ihr Gesundheitsdienstleister für Rhein Berg in Refrath Hier finden Sie uns:. 51427 Bergisch Gladbach Refrath Siebenmorgen 16. Für …"
+    },
+    {
+      "title": "Kontakt | Orthopädiemanufaktur Kellberg",
+      "url": "https://www.xn--orthopdiemanufaktur-lwb.de/kontakt/",
+      "snippet": "Adresse Sanitätshaus Kellberg GmbH Hauptstraße 124 - 126 51465 Bergisch Gladbach"
+    },
+    {
+      "title": "Team - Über uns | Orthopädiemanufaktur Kellberg",
+      "url": "https://www.xn--orthopdiemanufaktur-lwb.de/ueber-uns/team/",
+      "snippet": "Unser Team im Sanitätshaus Kellberg berät Sie gerne mit einem freundlichen Lächeln. Bei uns finden Sie Hilfe zum Thema …"
+    },
+    {
+      "title": "Über uns | Orthopädiemanufaktur Kellberg",
+      "url": "https://www.xn--orthopdiemanufaktur-lwb.de/ueber-uns/",
+      "snippet": "Über uns Das Sanitätshaus Kellberg mit Standort in Bergisch Gladbach setzt als inhabergeführtes Unternehmen auf individuelle …"
+    }
+  ]
+}

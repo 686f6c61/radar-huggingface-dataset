@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Project-Norn-V17-4.5B-GGUF",
+  "slug": "mradermacher-project-norn-v17-4-5b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Project-Norn-V17-4.5B-GGUF",
+  "created_at": "2026-09-12T11:04:32.000Z",
+  "updated_at": "2026-09-12T11:24:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "dual-system",
+    "continuous-latent-cot",
+    "neuro-symbolic",
+    "holographic-memory",
+    "relational-graph-hrr",
+    "perceiver-cross-attention",
+    "swiglu",
+    "reasoning",
+    "math",
+    "code",
+    "agentic",
+    "qwen3",
+    "osakra-research",
+    "en",
+    "base_model:Osakra/Project-Norn-V17-4.5B",
+    "base_model:quantized:Osakra/Project-Norn-V17-4.5B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 36389975040,
+  "storage_human": "36.4 GB",
+  "base_model": "Osakra/Project-Norn-V17-4.5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/",
+      "snippet": "Bing unterstützt Sie dabei, Informationen in Aktionen umzusetzen, sodass der Übergang vom Suchen zum Handeln schneller und …"
+    },
+    {
+      "title": "Suche – Microsoft Bing",
+      "url": "https://de.bing.com/",
+      "snippet": "Suchen Sie mit Microsoft Bing und nutzen Sie die Leistungsfähigkeit der KI, um Informationen zu finden, Webseiten, Bilder, Videos, …"
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/?setlang=de-de&brdr=1",
+      "snippet": "Bing helps you turn information into action, making your search experience faster and easier."
+    },
+    {
+      "title": "Microsoft Bing | Bing kennenlernen",
+      "url": "https://www.microsoft.com/de-de/bing?msockid=28121d88289b68302fac0a5a297b69fa",
+      "snippet": "Verbessern Sie Ihr Sucherlebnis mit Microsoft Bing, der schnellen, sicheren und KI-gestützten Suchmaschine. Entdecken Sie …"
+    },
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://in.bing.com/",
+      "snippet": "Search with Microsoft Bing and use the power of AI to find information, explore webpages, images, videos, maps, and more. A smart …"
+    }
+  ]
+}

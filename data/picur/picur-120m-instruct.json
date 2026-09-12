@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "picur/picur-120M-instruct",
+  "slug": "picur-picur-120m-instruct",
+  "author": "picur",
+  "url": "https://huggingface.co/picur/picur-120M-instruct",
+  "created_at": "2026-09-12T15:13:42.000Z",
+  "updated_at": "2026-09-12T15:15:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "hu"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "instruct",
+    "hungarian",
+    "magyar",
+    "conversational",
+    "hu",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 120404352,
+  "parameters_human": "120.4M",
+  "storage_bytes": 241894355,
+  "storage_human": "242 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pizza Hut | Pizza bestellen voor levering of takeout",
+      "url": "https://www.pizzahut.be/",
+      "snippet": "Bestel je favoriete pizza online bij Pizza Hut. Snelle levering of afhalen in je buurt. Ontdek exclusieve promoties en profiteer via de app."
+    },
+    {
+      "title": "Pizza's Menu - Domino's Pizza",
+      "url": "https://www.dominos.be/nl/menu-pizza",
+      "snippet": "1 Pizza + 1 Drink + 1 Side Item vanaf €12. Tomatensaus, mozzarella, ui & extra mozzarella. BBQ saus, mozzarella & merguez. …"
+    },
+    {
+      "title": "Pizza bestellen bij mij in de buurt in Brussel | Uber Eats",
+      "url": "https://www.ubereats.com/be-nl/category/brussel-bruxelles-capitale/pizza?msockid=39e28fe6448069ea07bb983445336836",
+      "snippet": "Bestel Pizza bij de beste locaties in Brussel. Kies voor contactloze bezorging of haal zelf je bestelling af."
+    },
+    {
+      "title": "Pizza bestel je bij Domino's via dominos.be | Honour the Craving",
+      "url": "https://www.dominos.be/nl",
+      "snippet": "Bestel je pizza, My Domino's Box, bijgerecht en de lekkerste desserts bij Domino's."
+    },
+    {
+      "title": "Pizza recepten: makkelijk én snel zelf pizza maken | Allerhande",
+      "url": "https://www.ah.nl/allerhande/recepten/pizza?msockid=39e28fe6448069ea07bb983445336836",
+      "snippet": "Met onze tips en trucs kun je zelf pizza maken. Of je nu gaat voor een klassieke pizza Margherita, pizza prosciutto, pizza funghi, …"
+    }
+  ]
+}

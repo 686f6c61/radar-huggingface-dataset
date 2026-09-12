@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Mahesh151525/cleanrl-ppo-LunarLander-v2",
+  "slug": "mahesh151525-cleanrl-ppo-lunarlander-v2",
+  "author": "Mahesh151525",
+  "url": "https://huggingface.co/Mahesh151525/cleanrl-ppo-LunarLander-v2",
+  "created_at": "2026-09-12T16:07:59.000Z",
+  "updated_at": "2026-09-12T16:08:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "LunarLander-v2",
+    "ppo",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 710643,
+  "storage_human": "710643 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Método William T. Fine: cómo evaluar, priorizar y justificar la ...",
+      "url": "https://prevencionar.com/2025/12/25/metodo-william-t-fine-como-evaluar-priorizar-y-justificar-la-accion-preventiva/",
+      "snippet": "Dec 25, 2025 · ¿En qué consiste el método William T. Fine? El método Fine es un método numérico generalista de evaluación de …"
+    },
+    {
+      "title": "Evaluación de riesgos laborales con el método de William T. FINE",
+      "url": "https://riunet.upv.es/server/api/core/bitstreams/b631d470-ad8d-4cfe-8c11-839d1cd0d168/content",
+      "snippet": "Se trata del Método de William T. Fine del año 1971. Distinguir los conceptos peligro, evento peligroso y riesgo. Estimar, con la …"
+    },
+    {
+      "title": "El método William T. Fine para el análisis de riesgos laborales",
+      "url": "https://www.unir.net/revista/ingenieria/metodo-william-t-fine/",
+      "snippet": "Dec 26, 2023 · El método William T. Fine consiste en valorar tres parámetros y posteriormente otorgar una puntuación a cada uno. …"
+    },
+    {
+      "title": "Método William Fine: Evaluaciones matemáticas para el control de …",
+      "url": "https://www.prevencionistas.mx/post/m%C3%A9todo-william-fine-evaluaciones-matem%C3%A1ticas-para-el-control-de-riesgos",
+      "snippet": "May 16, 2026 · ¿Qué es exactamente el Método William Fine? A diferencia de las listas de chequeo tradicionales que solo nos dicen …"
+    },
+    {
+      "title": "Análisis de riesgo organizacional: método William T. Fine - ORCA GRC",
+      "url": "https://orcagrc.com/blog/analisis-de-riesgo-organizacional-metodo-william-t-fine/",
+      "snippet": "Dec 15, 2025 · Este es posible mediante la aplicación de fórmulas matemáticas simples pero poderosas, y tablas de referencia. …"
+    }
+  ]
+}

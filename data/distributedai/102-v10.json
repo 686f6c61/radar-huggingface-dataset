@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "DistributedAI/102-v10",
+  "slug": "distributedai-102-v10",
+  "author": "DistributedAI",
+  "url": "https://huggingface.co/DistributedAI/102-v10",
+  "created_at": "2026-09-01T09:23:29.000Z",
+  "updated_at": "2026-09-12T12:57:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25883607168,
+  "storage_human": "25.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accès à mon compte Ameli - Résolue",
+      "url": "https://forum-assures.ameli.fr/questions/3402343-acces-compte-ameli",
+      "snippet": "Sep 5, 2024 · Bonjour, Je ne parviens plus à me connecter à mon compte Ameli qui indique qu'une mise à jour de mon dossier est …"
+    },
+    {
+      "title": "Comment envoyer une piece jointe sur la platforme Ameli",
+      "url": "https://forum-assures.ameli.fr/questions/3045624-envoyer-piece-jointe-platforme-ameli",
+      "snippet": "Mar 26, 2026 · Bonjour, Je voudrais enovyer un message pour la securite sociale avec une piece jointe sur le platform Ameli. …"
+    },
+    {
+      "title": "Comment résoudre \"The requested URL was rejected\"",
+      "url": "https://forums.commentcamarche.net/forum/affich-37861837-comment-resoudre-the-requested-url-was-rejected",
+      "snippet": "Jun 9, 2023 · Je n'arrive pas à me conecter au compte ameli, j'ai toujours ce message: The requested URL was rejected. Please …"
+    },
+    {
+      "title": "Mettre le logo améli sur le bureau [Résolu] - Windows 7",
+      "url": "https://forums.commentcamarche.net/forum/affich-35723569-mettre-le-logo-ameli-sur-le-bureau",
+      "snippet": "Nov 30, 2018 · Je ne sais plus comment mettre un logo sur le bureau pour avoir un accès rapide. Merci de me le rappeler."
+    },
+    {
+      "title": "Problème d’accéder sur espacepro.ameli.fr - Résolue",
+      "url": "https://forum-assures.ameli.fr/questions/2474322-probleme-acceder-espacepro-ameli-fr",
+      "snippet": "Oct 8, 2020 · Bonjour, Problème d’accéder à la connexion sur espacepro.ameli.fr avec par la carte CPS J’ai le message d’erreur …"
+    }
+  ]
+}

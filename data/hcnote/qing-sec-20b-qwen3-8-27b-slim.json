@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "hcnote/Qing-Sec-20B-Qwen3.8-27B-Slim",
+  "slug": "hcnote-qing-sec-20b-qwen3-8-27b-slim",
+  "author": "hcnote",
+  "url": "https://huggingface.co/hcnote/Qing-Sec-20B-Qwen3.8-27B-Slim",
+  "created_at": "2026-09-12T05:17:50.000Z",
+  "updated_at": "2026-09-12T13:03:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19285624544,
+  "parameters_human": "19.29B",
+  "storage_bytes": 38591307613,
+  "storage_human": "38.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube Music - YouTube",
+      "url": "https://www.youtube.com/youtube%20-MUSIC",
+      "snippet": "Subscribe to the YouTube Music channel to stay up on the latest news and updates from YouTube Music. ...more"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/explore",
+      "snippet": "Explore trending music and find your next favorite song. Discover the latest releases from new artists, plus enjoy new music videos …"
+    },
+    {
+      "title": "YouTube Music - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.music&hl=en-US",
+      "snippet": "Change up your routine with the new Discover Mix, a personalized playlist with songs you’ll love based on what you listen to the …"
+    }
+  ]
+}

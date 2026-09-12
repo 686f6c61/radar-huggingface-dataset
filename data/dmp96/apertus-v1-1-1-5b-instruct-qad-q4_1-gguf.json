@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "DMP96/Apertus-v1.1-1.5B-Instruct-QAD-Q4_1-GGUF",
+  "slug": "dmp96-apertus-v1-1-1-5b-instruct-qad-q4_1-gguf",
+  "author": "DMP96",
+  "url": "https://huggingface.co/DMP96/Apertus-v1.1-1.5B-Instruct-QAD-Q4_1-GGUF",
+  "created_at": "2026-09-12T13:37:46.000Z",
+  "updated_at": "2026-09-12T13:37:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Routenplaner | ADAC Maps",
+      "url": "https://maps.adac.de/routenplaner",
+      "snippet": "Mit ADAC Maps können Sie bequem Ihre Routen planen. Egal, ob Sie mit Auto, Wohnmobil, Gespann oder Motorrad unterwegs sind, …"
+    },
+    {
+      "title": "Google Maps: Route ohne Autobahn berechnen - so geht's - CHIP",
+      "url": "https://www.chip.de/ratgeber/wifi-dsl-internet/google-maps-route-ohne-autobahn-berechnen-so-geht-s_7f86b0a4-c432-4a35-840e-95d9cb6e2e0e.html",
+      "snippet": "Jun 23, 2025 · Mit wenigen Handgriffen lassen sich in Google Maps Routen ohne Autobahnen planen – am Desktop wie mobil. Dank …"
+    },
+    {
+      "title": "Falk Routenplaner - Ihr kostenloser Routenplaner",
+      "url": "https://www.falk.de/routenplaner",
+      "snippet": "Mit dem Falk Routenplaner können Sie völlig kostenfrei alle Strecken von A nach B planen. Von kleinen Strecken bis hin zur langen …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://www.google.com/maps/search/?hl=de-DE",
+      "snippet": "Langsam Kartendaten ©2026 Google Bedingungen 50 km ... Route Mit dem Auto Zu Fuß Mit dem Fahrrad Öffentliche Verkehrsmittel"
+    }
+  ]
+}

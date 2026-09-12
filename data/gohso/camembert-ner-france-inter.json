@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Gohso/camembert-ner-france-inter",
+  "slug": "gohso-camembert-ner-france-inter",
+  "author": "Gohso",
+  "url": "https://huggingface.co/Gohso/camembert-ner-france-inter",
+  "created_at": "2026-09-12T16:27:06.000Z",
+  "updated_at": "2026-09-12T16:27:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "camembert",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110032898,
+  "parameters_human": "110.0M",
+  "storage_bytes": 440155504,
+  "storage_human": "440 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "113 HUIZEN te koop Hamme (9220) - Immoweb",
+      "url": "https://www.immoweb.be/nl/zoeken/huis/te-koop/hamme/9220",
+      "snippet": "Vind uw droomhuis te koop in Hamme (9220). Villa, herenhuis of bungalow - vergelijk EPB en plan uw bezoek via Immoweb."
+    },
+    {
+      "title": "Hamme (Oost-Vlaanderen) - Wikipedia",
+      "url": "https://nl.wikipedia.org/wiki/Hamme_(Oost-Vlaanderen)",
+      "snippet": "Hamme is een gemeente in de Belgische provincie Oost-Vlaanderen. De gemeente telt ruim 25.000 inwoners, die Hammenaars [1] …"
+    },
+    {
+      "title": "Postcode 9220 in Hamme - Postcode bij adres",
+      "url": "https://postcodebijadres.be/9220",
+      "snippet": "Bekijk alle details van postcode 9220 in Hamme. Vind de gerelateerde straat van postcode 9220, supermarkten in de buurt en nog …"
+    },
+    {
+      "title": "VASTGOED te koop Hamme (9220) - Immoweb",
+      "url": "https://www.immoweb.be/nl/zoeken/huis-en-appartement/te-koop/hamme/9220",
+      "snippet": "Vind vastgoed te koop in Hamme (9220). Huis, villa, appartement of studio - vergelijk EPB en plan uw bezoek via Immoweb."
+    },
+    {
+      "title": "9220.lokaal.be - HAMME",
+      "url": "http://9220.lokaal.be/",
+      "snippet": "De gemeente Hamme is gelegen in de provincie Oost-Vlaanderen en behoort tot het arrondissement Dendermonde. …"
+    }
+  ]
+}

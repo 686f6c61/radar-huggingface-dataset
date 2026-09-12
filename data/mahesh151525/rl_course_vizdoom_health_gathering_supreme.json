@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Mahesh151525/rl_course_vizdoom_health_gathering_supreme",
+  "slug": "mahesh151525-rl_course_vizdoom_health_gathering_supreme",
+  "author": "Mahesh151525",
+  "url": "https://huggingface.co/Mahesh151525/rl_course_vizdoom_health_gathering_supreme",
+  "created_at": "2026-09-12T16:07:18.000Z",
+  "updated_at": "2026-09-12T16:07:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "sample-factory",
+  "languages": [],
+  "tags": [
+    "sample-factory",
+    "tensorboard",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 129004644,
+  "storage_human": "129 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zeitzuschläge TVöD – Anspruch, Berechnung & Tabelle",
+      "url": "https://www.juraforum.de/lexikon/zeitzuschlaege-tvoed",
+      "snippet": "Feb 3, 2026 · Zeitzuschläge TVöD: Wer hat wann Anspruch auf Zeitzuschläge? Wie werden die Zuschläge genau berechnet? Alle …"
+    },
+    {
+      "title": "h.M. - Abkürzung & Bedeutung im Recht - JuraForum.de",
+      "url": "https://www.juraforum.de/juristische-abkuerzungen/hm",
+      "snippet": "Mar 10, 2026 · Die Abkürzung h.M. ist die Kurzform von „herrschende Meinung“. In Jura wird dieser Begriff verwendet, wenn es zu …"
+    },
+    {
+      "title": "H&M - Forum Duisburg Einkaufszentren - Duisburg",
+      "url": "https://forum-duisburg.klepierre.de/shop-gastronomie/h-m",
+      "snippet": "H&M - im Zentrum Forum Duisburg - Duisburg : Ermäßigungsscheine, Öffnungszeiten, Schlussverkauf."
+    },
+    {
+      "title": "Ermessensfehler Definition, Beispiele & Rechtsfolgen",
+      "url": "https://www.juraforum.de/lexikon/ermessensfehler",
+      "snippet": "Aug 18, 2026 · Was ist ein Ermessensfehler? Was bedeutet Ermessensausfall, Ermessensüberschreitung & Ermessensmissbrauch? …"
+    },
+    {
+      "title": "§ 52 StVZO - Zusätzliche Scheinwerfer und Leuchten - Gesetze",
+      "url": "https://www.juraforum.de/gesetze/stvzo/52-zusaetzliche-scheinwerfer-und-leuchten",
+      "snippet": "Kurz - Kommentar zu § 52 StVZO § 52 StVZO regelt die Zulässigkeit, Anordnung, Einstellung und Betriebsweise zusätzlicher …"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dougalldeepmind/2026-09-12-qwen36-agent-advice-638-0",
+  "slug": "dougalldeepmind-2026-09-12-qwen36-agent-advice-638-0",
+  "author": "dougalldeepmind",
+  "url": "https://huggingface.co/dougalldeepmind/2026-09-12-qwen36-agent-advice-638-0",
+  "created_at": "2026-09-12T17:13:15.000Z",
+  "updated_at": "2026-09-12T17:13:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1295140182,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.de/",
+      "snippet": "Mit Google Übersetzer können Sie Wörter, Sätze und Webseiten kostenlos in über 100 Sprachen übersetzen."
+    },
+    {
+      "title": "DeepL Übersetzer | Der präziseste Übersetzer der Welt",
+      "url": "https://www.deepl.com/de/translator",
+      "snippet": "Übersetzen Sie Texte und ganze Dateien im Handumdrehen. Präzise Übersetzungen für Einzelnutzer und Teams. Jeden Tag nutzen …"
+    },
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.com/?hl=de",
+      "snippet": "Übersetzen Sie Wörter, Sätze und Webseiten sofort zwischen über 100 Sprachen mit dem kostenlosen Google-Dienst."
+    },
+    {
+      "title": "DeepL Translator | World's Most Accurate Translator",
+      "url": "https://www.deepl.com/en/translator",
+      "snippet": "Translate texts & full document files instantly. Accurate translations for individuals and Teams. Millions translate with DeepL every day."
+    },
+    {
+      "title": "PONS Wörterbuch | Definitionen, Übersetzungen, Vokabular",
+      "url": "https://de.pons.com/%C3%BCbersetzung",
+      "snippet": "Lernen, wo du willst - mit unseren Apps Auch unterwegs bist du bestens gerüstet: Mit dem Vokabeltrainer, der Schule Wörterbuch …"
+    }
+  ]
+}

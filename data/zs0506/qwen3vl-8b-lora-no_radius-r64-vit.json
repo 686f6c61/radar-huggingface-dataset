@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "zs0506/qwen3vl-8B-lora-no_radius-r64-vit",
+  "slug": "zs0506-qwen3vl-8b-lora-no_radius-r64-vit",
+  "author": "zs0506",
+  "url": "https://huggingface.co/zs0506/qwen3vl-8B-lora-no_radius-r64-vit",
+  "created_at": "2026-09-12T12:34:16.000Z",
+  "updated_at": "2026-09-12T12:34:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3-VL-8B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 420068041,
+  "storage_human": "420 MB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gabriele Kuby – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Gabriele_Kuby",
+      "snippet": "Gabriele Kuby (2018) Gabriele Kuby (* 1944 in Konstanz) ist eine deutsche Publizistin und Übersetzerin. Ihre Thesen behandeln …"
+    },
+    {
+      "title": "„Selbstheilung beginnt mit dem Denken!“ – Clemens Kuby",
+      "url": "https://www.lebenswertes.de/2015/12/12/selbstheilung-beginnt-mit-dem-denken-clemens-kuby/",
+      "snippet": "Dec 12, 2015 · CLEMENS KUBY: Vollkommen richtig, das ist nicht einfach, wer aber nicht auf seine Empfindung hört und sensibel …"
+    },
+    {
+      "title": "Mental Healing® nach Clemens Kuby - Therapeuten",
+      "url": "https://www.therapeuten.de/therapien/mental-healing.htm",
+      "snippet": "Mental Healing® ist eine Selbstheilungsmethode, die von Clemens Kuby entwickelt wurde. Sie ist aus seiner eigenen Erfahrung …"
+    },
+    {
+      "title": "Cyberkriminalität: Wie Sie Betrüger bremsen und ärgern",
+      "url": "https://www.spiegel.de/netzwelt/web/cyberkriminalitaet-wie-sie-betru-ger-bremsen-und-a-rgern-a-aa284046-1dd7-4eb7-9728-a0dfba4f31ff",
+      "snippet": "Nov 24, 2024 · Sollten die Betrüger es doch über alle Hürden schaffen, begrenzen Limits für Kredit- und Debitkarten sowie …"
+    },
+    {
+      "title": "Persönliche Begleitung mit der KUBYmethode · KUBY",
+      "url": "https://kuby.info/",
+      "snippet": "Clemens Kuby wird 1947 am Ammersee (Obb) geboren. Nach dem Abitur 1967 zieht er nach Westberlin und wird aktives Mitglied der …"
+    }
+  ]
+}

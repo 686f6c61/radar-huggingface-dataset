@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "christyelsa/foundation-model",
+  "slug": "christyelsa-foundation-model",
+  "author": "christyelsa",
+  "url": "https://huggingface.co/christyelsa/foundation-model",
+  "created_at": "2026-09-12T10:48:16.000Z",
+  "updated_at": "2026-09-12T10:57:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 98766827,
+  "storage_human": "99 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Libero Mail - login",
+      "url": "https://login.libero.it/",
+      "snippet": "Inserisci la tua user e password ed entra in Libero Mail. Sei invece un nuovo utente? Crea un nuovo account o richiedi l'aiuto di Libero"
+    },
+    {
+      "title": "Libero: Mail, Ricerca e News con aggiornamento quotidiano",
+      "url": "https://www.libero.it/",
+      "snippet": "Entra su Libero.it: Mail e Email PEC, Login, le Ultime Notizie con aggiornamento quotidiano, Video, Motore di Ricerca e tanto altro"
+    },
+    {
+      "title": "Crea email con Libero Mail: apri la tua nuova Posta Elettronica",
+      "url": "https://liberomail.libero.it/",
+      "snippet": "Scopri tutti i servizi Premium di Libero che ti danno vantaggi unici: posta elettronica senza pubblicità e con più spazio, caselle PEC, …"
+    },
+    {
+      "title": "Libero Mail",
+      "url": "https://plug.libero.it/mailweb/textlink-cms/index.html?p=f&29242761",
+      "snippet": "LIBERO ACADEMY 👨🏻‍🎓Questo corso sull’AI ora al 70% di sconto, può cambiare e facilitare la tua vita e il tuo studio Provare per credere"
+    },
+    {
+      "title": "Libero Mail PEC: la Posta Elettronica Certificata Completa e Sicura",
+      "url": "https://mailpec.libero.it/",
+      "snippet": "Attiva subito Libero Mail PEC: comunica legalmente in tutta Europa, in modo sicuro e riconosciuto. Ideale per Privati, Aziende e …"
+    }
+  ]
+}

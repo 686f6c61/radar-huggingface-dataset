@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "praveenhasavathu/aura-tinyllama-rag",
+  "slug": "praveenhasavathu-aura-tinyllama-rag",
+  "author": "praveenhasavathu",
+  "url": "https://huggingface.co/praveenhasavathu/aura-tinyllama-rag",
+  "created_at": "2026-09-12T11:02:59.000Z",
+  "updated_at": "2026-09-12T11:04:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1100048384,
+  "parameters_human": "1.10B",
+  "storage_bytes": 2200119664,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speicherplatz in Google Drive, Gmail und Google Fotos verwalten",
+      "url": "https://support.google.com/drive/answer/6374270?hl=de",
+      "snippet": "Ihr Google-Speicherplatz steht Ihnen für Google Drive, Gmail, WhatsApp-Sicherungen und Google Fotos zur Verfügung. Wenn der …"
+    },
+    {
+      "title": "Fix problems in Drive for desktop - Google Help",
+      "url": "https://support.google.com/drive/answer/2565956?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Basic troubleshooting You might encounter these general problems with Drive for desktop: Files not syncing between your computer …"
+    },
+    {
+      "title": "Google Drive - 知乎",
+      "url": "https://www.zhihu.com/topic/19678761/hot",
+      "snippet": "Google Drive Google Drive是在2012年4月推出的云存储服务，当前提供15GB免费空间，可与Gmail和Google Photos整合。 …"
+    },
+    {
+      "title": "Google Drive登录时遇到问题，怎么解决？ - 知乎",
+      "url": "https://www.zhihu.com/question/62318694",
+      "snippet": "Google Drive登录时遇到问题，怎么解决？ Google Drive 在mac上无法使用，显示“登录时遇到问题，请稍后重试” 从表现来看，不是Q …"
+    },
+    {
+      "title": "데스크톱용 Drive 설치하기 - Google Workspace 학습 센터",
+      "url": "https://support.google.com/a/users/answer/13022292?hl=ko",
+      "snippet": "데스크톱용 Drive를 사용하여 컴퓨터에서 Google Drive에 있는 파일을 찾고 열 수 있습니다. 데스크톱용 Drive를 사용하여 클라우드와 …"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "WattsIshaan/OLMo-20m-64B-adamw-cosine-10percent",
+  "slug": "wattsishaan-olmo-20m-64b-adamw-cosine-10percent",
+  "author": "WattsIshaan",
+  "url": "https://huggingface.co/WattsIshaan/OLMo-20m-64B-adamw-cosine-10percent",
+  "created_at": "2026-09-12T15:32:44.000Z",
+  "updated_at": "2026-09-12T15:34:20.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2605.02105",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 717351036,
+  "storage_human": "717 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Livraison de vos plats préférés - Deliveroo",
+      "url": "https://deliveroo.be/fr/",
+      "snippet": "Besoin de vous faire plaisir ou envie de savourer votre plat préféré ? Notre offre n'attend que vous. Frais de service et de livraison …"
+    },
+    {
+      "title": "Vos courses livrées chez vous | Deliveroo",
+      "url": "https://deliveroo.be/fr/takeaway/courses-livraison",
+      "snippet": "Besoin de vous faire livrer vos courses ? Commandez en ligne et recevez vos produits directement chez vous."
+    },
+    {
+      "title": "Plats disponibles chez Deliveroo",
+      "url": "https://deliveroo.be/fr/cuisines",
+      "snippet": "Il y en a pour tous les goûts ! Plats disponibles chez Deliveroo Il y en a pour tous les goûts !"
+    }
+  ]
+}

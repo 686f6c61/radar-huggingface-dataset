@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "RKB109/audio-event-triage-20260912-model",
+  "slug": "rkb109-audio-event-triage-20260912-model",
+  "author": "RKB109",
+  "url": "https://huggingface.co/RKB109/audio-event-triage-20260912-model",
+  "created_at": "2026-09-12T16:20:16.000Z",
+  "updated_at": "2026-09-12T16:20:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "synthetic-data",
+    "transparent-baseline",
+    "audio-ml",
+    "audio-classification",
+    "automatic-speech-recognition",
+    "feature-extraction",
+    "audio-to-audio",
+    "dataset:RKB109/audio-event-triage-20260912-dataset",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anleitung: Desktop-Hintergrund für zweiten Monitor ändern in …",
+      "url": "https://windowsarea.de/2023/06/anleitung-desktop-hintergrund-fuer-zweiten-monitor-aendern-in-windows-11/",
+      "snippet": "Jun 22, 2023 · Wenn ihr mehrere Monitore an einem Windows 11-PC angeschlossen habt, möchtet ihr vielleicht für jeden Monitor ein …"
+    },
+    {
+      "title": "wie erhalte ich hilfe in windows 11,+ - WindowsArea.de",
+      "url": "https://windowsarea.de/search/wie+erhalte+ich+hilfe+in+windows+11%2C%2B/",
+      "snippet": "Jun 1, 2026 · Windows 11 bekommt neue KI-Funktionen: Ein Ausblick 19. Oktober 2024 Microsoft hat in den letzten Jahren …"
+    },
+    {
+      "title": "Windows 11 Forum | Win11Forum.de",
+      "url": "https://win11forum.de/",
+      "snippet": "Aug 17, 2026 · Diskussionsforum für alle Microsoft Windows 11 Interessierten: Tipps und Tricks, Hilfestellung und Lösungen im …"
+    },
+    {
+      "title": "Windows 11 Funktionstasten funktionieren nicht - Win11Forum.de",
+      "url": "https://win11forum.de/t/windows-11-funktionstasten-funktionieren-nicht.33/",
+      "snippet": "Jul 18, 2021 · Hi, bei mir funktionieren die Funktionstasten einwandfrei. Wie hast Du Windows 11 installiert? Per Update oder von der …"
+    },
+    {
+      "title": "WindowsArea - Das Windows Magazin",
+      "url": "https://windowsarea.de/",
+      "snippet": "Aug 20, 2026 · Windows 11 bekommt anpassbares Kontextmenü 17. August 2026 Mit Windows 11 hat Microsoft das neue …"
+    }
+  ]
+}

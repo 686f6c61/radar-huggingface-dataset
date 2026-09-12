@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "xagent2025/VelaVec-T2I",
+  "slug": "xagent2025-velavec-t2i",
+  "author": "xagent2025",
+  "url": "https://huggingface.co/xagent2025/VelaVec-T2I",
+  "created_at": "2026-09-12T13:19:14.000Z",
+  "updated_at": "2026-09-12T14:05:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "velavec",
+    "embedding",
+    "retrieval",
+    "multimodal",
+    "image-text-retrieval",
+    "text-to-image",
+    "vision",
+    "clip",
+    "sentence-similarity",
+    "en",
+    "base_model:BAAI/bge-small-en-v1.5",
+    "base_model:finetune:BAAI/bge-small-en-v1.5",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11290112,
+  "parameters_human": "11.3M",
+  "storage_bytes": 45162984,
+  "storage_human": "45 MB",
+  "base_model": "BAAI/bge-small-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux pièces …"
+    },
+    {
+      "title": "Cómo registrarse en Facebook y configurar un nuevo perfil - CCM",
+      "url": "https://es.ccm.net/aplicaciones-e-internet/redes-sociales-y-mensajeria/2892-crear-una-cuenta-de-facebook/",
+      "snippet": "Jun 22, 2022 · Para utilizar Facebook es necesario registrarte antes y crear una cuenta personal en la red social. El procedimiento es …"
+    },
+    {
+      "title": "Cómo eliminar amigos en Facebook: masivamente, rápido, Lite - CCM",
+      "url": "https://es.ccm.net/aplicaciones-e-internet/redes-sociales-y-mensajeria/3584-como-eliminar-amigos-en-facebook/",
+      "snippet": "Dec 5, 2023 · ¿Cómo eliminar amigos de Facebook masivamente? Aunque en un tiempo existían aplicaciones (de dudosa …"
+    },
+    {
+      "title": "Connection fecebook - Facebook - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-36078047-connection-fecebook",
+      "snippet": "Jun 16, 2019 · Meilleure réponse: Bonsoir, vous parlez de facebook sur ordinateur ? ou sur 1 autre support ? Pour se connecter à …"
+    },
+    {
+      "title": "Microsoft Bing à la sauce Facebook pour contrer Google - ZDNet",
+      "url": "https://www.zdnet.fr/actualites/microsoft-bing-a-la-sauce-facebook-pour-contrer-google-39760860.htm",
+      "snippet": "May 17, 2011 · Stratégie : Facebook s’invite sur Bing.com ! Le moteur de recherche développé par Microsoft vient d’annoncer qu’il …"
+    }
+  ]
+}

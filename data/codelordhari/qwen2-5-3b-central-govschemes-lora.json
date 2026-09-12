@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "CodeLordHari/Qwen2.5-3B-Central-GovSchemes-LoRA",
+  "slug": "codelordhari-qwen2-5-3b-central-govschemes-lora",
+  "author": "CodeLordHari",
+  "url": "https://huggingface.co/CodeLordHari/Qwen2.5-3B-Central-GovSchemes-LoRA",
+  "created_at": "2026-09-12T15:10:19.000Z",
+  "updated_at": "2026-09-12T15:26:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "en",
+    "base_model:unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6303150686,
+  "storage_human": "6.3 GB",
+  "base_model": "unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KFC Türkiye - Anasayfa",
+      "url": "https://www.kfcturkiye.com/",
+      "snippet": "KFC Türkiye Resmi Web Sitesi Size en yakın KFC restoranını keşfetmek için tıklayın!"
+    },
+    {
+      "title": "KFC Türkiye - kfcturkiye.com",
+      "url": "https://www.kfcturkiye.com/kfc-lezzetleri",
+      "snippet": "KFC Türkiye Resmi Web Sitesi"
+    },
+    {
+      "title": "KFC Türkiye",
+      "url": "https://www.kfcturkiye.com/restoranlar",
+      "snippet": "KFC Hakkında İLETİŞİM KFC LEZZET KLASİKLERİHEMEN KEŞFEDİN! SİZE EN YAKIN KFC KFC Restoranlarından size en yakın …"
+    },
+    {
+      "title": "KFC Türkiye",
+      "url": "https://www.kfcturkiye.com/kariyer",
+      "snippet": "KFC Türkiye Resmi Web Sitesi Biz KFC’de büyük bir aileyiz ve ailemizin her bir üyesine çok değer veriyoruz. Onlarla birlikte hareket …"
+    },
+    {
+      "title": "KFC Türkiye - kfcturkiye.com",
+      "url": "https://www.kfcturkiye.com/yardim/etk-onay-metni",
+      "snippet": "KFC Türkiye Resmi Web Sitesi SFC Restoran İşletmeciliği A.Ş. (“SFC”) tarafından; paylaşmış olduğum iletişim bilgilerimin her türlü …"
+    }
+  ]
+}

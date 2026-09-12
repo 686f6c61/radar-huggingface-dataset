@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "albapepper/scoracle-articulator-v4-q6",
+  "slug": "albapepper-scoracle-articulator-v4-q6",
+  "author": "albapepper",
+  "url": "https://huggingface.co/albapepper/scoracle-articulator-v4-q6",
+  "created_at": "2026-09-12T13:56:17.000Z",
+  "updated_at": "2026-09-12T13:59:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "granitemoehybrid",
+    "granite",
+    "on-device",
+    "sports",
+    "conversational",
+    "text-generation",
+    "en",
+    "base_model:ibm-granite/granite-4.0-h-1b",
+    "base_model:quantized:ibm-granite/granite-4.0-h-1b",
+    "license:apache-2.0",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1461538368,
+  "parameters_human": "1.46B",
+  "storage_bytes": 1188597059,
+  "storage_human": "1.2 GB",
+  "base_model": "ibm-granite/granite-4.0-h-1b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reguliersdwarsstraat 51, Amsterdam (1017 BK) - Check dit Huis",
+      "url": "https://www.checkdithuis.nl/amsterdam/reguliersdwarsstraat/51/",
+      "snippet": "Reguliersdwarsstraat 51 in Amsterdam ligt in de wijk Grachtengordel-Zuid, in de buurt Geelvinckbuurt. Bekijk direct de woningwaarde …"
+    },
+    {
+      "title": "Italieno, Reguliersdwarsstraat 51, 1017 BK Amsterdam The Netherlands …",
+      "url": "https://www.mapquest.com/nl/italieno-800842055",
+      "snippet": "Italieno in Amsterdam is een gezellige plek om te genieten van heerlijke Italiaanse gerechten. Met een warme sfeer en authentieke …"
+    },
+    {
+      "title": "Italieno, 51 Reguliersdwarsstraat, Amsterdam, Noord-Holland 1017 BK…",
+      "url": "https://www.mapquest.com/nl/noord-holland/italieno-807661184",
+      "snippet": "Italieno in Amsterdam biedt heerlijke Italiaanse gerechten in een gezellige sfeer. Geniet van authentieke smaken en een gastvrije …"
+    },
+    {
+      "title": "Restaurant te koop: Reguliersdwarsstraat 51, Amsterdam",
+      "url": "https://horecaspot.nl/aanbod/bedrijf-6348-id4026-fastfood-locatie-met-terras-in-amsterdam-centrum",
+      "snippet": "Deze horecazaak is gelegen aan de levendige Reguliersdwarsstraat in het centrum van Amsterdam, een straat die bekendstaat om …"
+    },
+    {
+      "title": "Pizza Heart | 020 370 5150 | Amsterdam",
+      "url": "https://www.allebiz.nl/pizza-heart_1T",
+      "snippet": "Waar is Pizza Heart gevestigd? Pizza Heart is gevestigd op Reguliersdwarsstraat 51, 1017 BK Amsterdam, Netherlands, Noord …"
+    }
+  ]
+}

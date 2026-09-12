@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "moebiusT7/gemma-4-12b-mobius-custom",
+  "slug": "moebiust7-gemma-4-12b-mobius-custom",
+  "author": "moebiusT7",
+  "url": "https://huggingface.co/moebiusT7/gemma-4-12b-mobius-custom",
+  "created_at": "2026-07-14T06:12:46.000Z",
+  "updated_at": "2026-09-12T12:56:21.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_unified",
+    "image-text-to-text",
+    "gemma2",
+    "governance",
+    "answer-entitlement",
+    "context-governance",
+    "rag",
+    "prompt-injection",
+    "local-first",
+    "mobius",
+    "text-generation",
+    "conversational",
+    "base_model:google/gemma-2-9b-it",
+    "base_model:quantized:google/gemma-2-9b-it",
+    "license:agpl-3.0",
+    "endpoints_compatible",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 104,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 7710487196,
+  "storage_human": "7.7 GB",
+  "base_model": "google/gemma-2-9b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "El Capote",
+      "url": "https://poloselcapote.com/",
+      "snippet": "Encuentra el look ideal en El Capote. Prendas únicas para cada momento de tu vida. Imprescindibles para esta temporada. Entra en …"
+    },
+    {
+      "title": "El Capote",
+      "url": "https://de.poloselcapote.com/",
+      "snippet": "Entdecke deinen perfekten Look bei El Capote. Einzigartige Stücke für jeden Moment deines Lebens. Must-haves für diese Saison. …"
+    },
+    {
+      "title": "Productos – El Capote",
+      "url": "https://poloselcapote.com/collections/all",
+      "snippet": "Encuentra el look ideal en El Capote. Prendas únicas para cada momento de tu vida. Imprescindibles para esta temporada. Entra en …"
+    },
+    {
+      "title": "Sammlungen – El Capote",
+      "url": "https://de.poloselcapote.com/collections",
+      "snippet": "Finden Sie den idealen Look bei El Capote. Einzigartige Kleidungsstücke für jeden Moment Ihres Lebens. Unverzichtbar für diese …"
+    },
+    {
+      "title": "Tienda El Capote | El Capote",
+      "url": "https://elcapotestore.shop/",
+      "snippet": "Descubre tu estilo perfecto en El Capote. Ropa exclusiva diseñada para cada ocasión. Los básicos esenciales de la temporada te …"
+    }
+  ]
+}

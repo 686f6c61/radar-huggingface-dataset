@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "happyhappy-jun/gr00t-n1.6-aloha-pick-cubes-into-cup-v2",
+  "slug": "happyhappy-jun-gr00t-n1-6-aloha-pick-cubes-into-cup-v2",
+  "author": "happyhappy-jun",
+  "url": "https://huggingface.co/happyhappy-jun/gr00t-n1.6-aloha-pick-cubes-into-cup-v2",
+  "created_at": "2026-09-11T14:50:05.000Z",
+  "updated_at": "2026-09-12T18:04:59.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "vla",
+    "gr00t",
+    "aloha",
+    "imitation-learning",
+    "base_model:nvidia/GR00T-N1.6-3B",
+    "base_model:finetune:nvidia/GR00T-N1.6-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72307154832,
+  "storage_human": "72.3 GB",
+  "base_model": "nvidia/GR00T-N1.6-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Contact Us - Microsoft Support",
+      "url": "https://support.microsoft.com/en-gb/contactus",
+      "snippet": "Contact Microsoft Support. Find solutions to common problems, or get help from a support agent."
+    },
+    {
+      "title": "RHYTHM & BLUES...............53 - Bear Family.de",
+      "url": "https://www.bear-family.de/catalogarchive/catalog/2004_2/pdf/2004_2.pdf",
+      "snippet": "... 6. RODNEY CROWELL. SMALL WORLDS - COLLEC TION. 1978-1995. CD 0203 003 ... 16 tracks - recorded in 1982 at Audio Media. Recorders , Nashville,TN. GEORGE ..."
+    },
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "Windows 8.1 ISO download for 64 and 32 bit | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/discussions/windowsinsiderprogram/windows-8-1-iso-download-for-64-and-32-bit/4454650",
+      "snippet": "Sep 16, 2025 · We have a couple of Windows 7 laptops and desktop PCs to upgraded to Windows 8.1 for software testing. It seems …"
+    },
+    {
+      "title": "Titles owned by Seguin Public Library",
+      "url": "https://seguin.biblionix.com/catalog/titles/",
+      "snippet": "The catalog interface designed for people can be found at https://seguin.biblionix.com/. How to repair your pickup or SUV Paul Brand. 하퍼스바자 코리아 ( ..."
+    }
+  ]
+}

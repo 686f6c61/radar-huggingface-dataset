@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/TripleTrouble-V3-i1-GGUF",
+  "slug": "mradermacher-tripletrouble-v3-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/TripleTrouble-V3-i1-GGUF",
+  "created_at": "2026-09-12T15:36:20.000Z",
+  "updated_at": "2026-09-12T15:52:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:OliviaRossi/TripleTrouble-V3",
+    "base_model:quantized:OliviaRossi/TripleTrouble-V3",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 13131840928,
+  "storage_human": "13.1 GB",
+  "base_model": "OliviaRossi/TripleTrouble-V3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Google Translate - A Personal Interpreter on Your Phone or Computer",
+      "url": "https://translate.google.com/about/",
+      "snippet": "Learn how to translate text, speech, images, documents, websites, and more with Google Translate."
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/details",
+      "snippet": "Some sentences may contain gender-specific alternatives. Click a sentence to see alternatives. Learn more"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/m",
+      "snippet": "Translate Detect language → English Google home Send feedback Privacy and terms Switch to full site"
+    },
+    {
+      "title": "\"ترجمة Google\": مترجم شخصي على الهاتف أو الكمبيوتر",
+      "url": "https://translate.google.com/intl/ar/about/",
+      "snippet": "تعرَّف على كيفية ترجمة النصوص والكلام والصور والمستندات والمواقع الإلكترونية والمزيد باستخدام \"ترجمة Google\"."
+    }
+  ]
+}

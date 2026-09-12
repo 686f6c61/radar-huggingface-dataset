@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Neeze/LFM2.5-2.6B-TAGI-SVD-20",
+  "slug": "neeze-lfm2-5-2-6b-tagi-svd-20",
+  "author": "Neeze",
+  "url": "https://huggingface.co/Neeze/LFM2.5-2.6B-TAGI-SVD-20",
+  "created_at": "2026-09-12T15:36:33.000Z",
+  "updated_at": "2026-09-12T15:38:23.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lfm2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2209741824,
+  "parameters_human": "2.21B",
+  "storage_bytes": 4437479262,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rwfh Official: TikTok | Linktree",
+      "url": "https://linktr.ee/Rwfh",
+      "snippet": "Rwfh has been a member of Linktree for 4 years and joined in September 2021."
+    },
+    {
+      "title": "Rwfh – Telegram",
+      "url": "https://t.me/s/rwfhpsn?before=930",
+      "snippet": "كيف تضبط ملف تعريفك سوني 5 ، 4 سهل و بشكل فخم 🇯🇵😍🔥 🔥. هذا شرح بروفايل الاخير لسوني 5 , 4 لايك كومنت طيب مثلك 🫰🏻🫰🏻. جميع دول العربيه مثال قطر. و الاوربية مثال فرنسا 🇫🇷 و بريطانيا 🇬🇧: QMAX …"
+    },
+    {
+      "title": "Rwfh - YouTube",
+      "url": "https://www.youtube.com/@rwfh6132",
+      "snippet": "شرح كيف تفك تحقق بخطوتين سوني من جوال | Rwfh 🔥."
+    },
+    {
+      "title": "Rwfh - سلة",
+      "url": "https://salla.sa/rwfhstore",
+      "snippet": "متجر روفح يقدم منتجات مميزة وتجربة تسوق فريدة تلبي احتياجات العملاء."
+    },
+    {
+      "title": "‏ان تبي نسويلك في بايو ! تروفي إلى 15k | TikTok",
+      "url": "https://www.tiktok.com/@rwfh/video/7551789018569035015",
+      "snippet": "58 من تسجيلات الإعجاب،فيديو TikTok (تيك توك) من rwfh (@rwfh): \"ان تبي نسويلك في بايو 😜😜! تروفي إلى 15k 🏆\". الصوت الأصلي - rwfh."
+    }
+  ]
+}

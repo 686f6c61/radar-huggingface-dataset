@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "EmanuelGames/BrodyAnimates",
+  "slug": "emanuelgames-brodyanimates",
+  "author": "EmanuelGames",
+  "url": "https://huggingface.co/EmanuelGames/BrodyAnimates",
+  "created_at": "2026-09-12T14:23:34.000Z",
+  "updated_at": "2026-09-12T14:24:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 129335196,
+  "storage_human": "129 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "《强军战歌》歌词 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/580982599.html",
+      "snippet": "《强军战歌》歌词新征程号角震天响，强军目标我们来担当！国兴旺，无数先烈的梦想，战旗上写满铁血荣光。将士们听党指挥，英勇 …"
+    },
+    {
+      "title": "如何快速输入乘号 × - 百度经验",
+      "url": "https://jingyan.baidu.com/article/48206aea0d63fa616bd6b37a.html",
+      "snippet": "Dec 17, 2019 · 如何快速输入乘号 ×,平时我们在工作学习中需要输入乘号“×”时，键盘和快捷符号栏都没有这个符合，这里分享一下如何 …"
+    },
+    {
+      "title": "微软OneNote如何更改界面显示语言 (英文变中文）-百度经验",
+      "url": "https://jingyan.baidu.com/article/1876c8526a2dccc80b1376ca.html",
+      "snippet": "May 3, 2022 · 微软OneNote如何更改界面显示语言 (英文变中文）,很多人不习惯使用英文版的OeNote，希望把界面更换为中文，这里 …"
+    },
+    {
+      "title": "untitled软件怎么用 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725108695088789405.html",
+      "snippet": "Oct 7, 2025 · untitled软件怎么用untitled（UltraEdit）软件的使用步骤如下：下载并安装软件通过百度搜索“UltraEdit”，进入官网下载安 …"
+    },
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    }
+  ]
+}

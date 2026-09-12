@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "yuvalgot/diffusion_towel_fold1_20260912",
+  "slug": "yuvalgot-diffusion_towel_fold1_20260912",
+  "author": "yuvalgot",
+  "url": "https://huggingface.co/yuvalgot/diffusion_towel_fold1_20260912",
+  "created_at": "2026-09-12T13:42:51.000Z",
+  "updated_at": "2026-09-12T13:43:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion",
+    "dataset:yuvalgot/towel_fold1_aug_2108_20260821_115238",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 262962502,
+  "parameters_human": "263.0M",
+  "storage_bytes": 1051895760,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    }
+  ]
+}

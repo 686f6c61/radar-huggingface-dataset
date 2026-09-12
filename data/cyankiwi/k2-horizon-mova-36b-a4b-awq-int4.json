@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "cyankiwi/K2-Horizon-MoVA-36B-A4B-AWQ-INT4",
+  "slug": "cyankiwi-k2-horizon-mova-36b-a4b-awq-int4",
+  "author": "cyankiwi",
+  "url": "https://huggingface.co/cyankiwi/K2-Horizon-MoVA-36B-A4B-AWQ-INT4",
+  "created_at": "2026-09-12T12:51:05.000Z",
+  "updated_at": "2026-09-12T12:54:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "k2_horizon",
+    "text-generation",
+    "k2-horizon",
+    "36b",
+    "mova",
+    "moe",
+    "open-weights",
+    "ifm",
+    "conversational",
+    "custom_code",
+    "en",
+    "dataset:IFM/K2-Horizon-Pretrain-Data",
+    "dataset:IFM/K2-Horizon-Midtrain-Data",
+    "base_model:IFM/K2-Horizon-MoVA-36B-A4B",
+    "base_model:quantized:IFM/K2-Horizon-MoVA-36B-A4B",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7525081140,
+  "parameters_human": "7.53B",
+  "storage_bytes": 24265391514,
+  "storage_human": "24.3 GB",
+  "base_model": "IFM/K2-Horizon-MoVA-36B-A4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Today's Gold Price in Saudi Arabia",
+      "url": "https://goldpriceworld.com/sa/ksa-gold-price",
+      "snippet": "13 hours ago · About Gold Price in Saudi Arabia Explore the latest gold price in Saudi Arabia, presented in various weight units such …"
+    },
+    {
+      "title": "22K Gold Price per Tola in Saudi Arabia in Saudi Riyals (SAR)",
+      "url": "https://goldpriceworld.com/sa/ksa-gold-tola/22k",
+      "snippet": "1 day ago · 24K 23K 22K 18K 14K 10K Today's 22K Gold Price per Tola in Saudi Arabia The 22K Gold Price per Tola in Saudi Arabia …"
+    },
+    {
+      "title": "Gold Price per Tola in Saudi Arabia today in Saudi Riyals (SAR)",
+      "url": "https://goldpriceworld.com/sa/ksa-gold-tola",
+      "snippet": "13 hours ago · Welcome to the latest gold price per tola in Saudi Arabia. Stay informed with accurate and up-to-date pricing tailored …"
+    },
+    {
+      "title": "24K Gold Price per Kilo in Saudi Arabia in Saudi Riyals (SAR)",
+      "url": "https://goldpriceworld.com/sa/ksa-gold-kilo/24k",
+      "snippet": "Sep 3, 2026 · About 24K Gold Price in Saudi Arabia Welcome to the latest 24K gold price per kilo in Saudi Arabia. Stay informed with …"
+    },
+    {
+      "title": "goldpriceworld.com",
+      "url": "https://goldpriceworld.com/sa/ksa-gold-price/20k",
+      "snippet": "About 20K Gold Price in Saudi Arabia Explore the latest 20K gold price in Saudi Arabia, presented in various weight units such as …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "tanmayjain26/sign-language-recognition",
+  "slug": "tanmayjain26-sign-language-recognition",
+  "author": "tanmayjain26",
+  "url": "https://huggingface.co/tanmayjain26/sign-language-recognition",
+  "created_at": "2026-09-12T13:26:31.000Z",
+  "updated_at": "2026-09-12T13:26:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "B3801 B12 Assay Medium (Vitamin B12 Assay Medium) - Merck",
+      "url": "https://www.merckmillipore.com/deepweb/assets/sigmaaldrich/product/documents/141/360/b3801dat.pdf",
+      "snippet": "Dispense 5 ml of medium into tubes containing increasing concentrations of cyanocobalamin (Cat. No. 95190) standard or the …"
+    },
+    {
+      "title": "Vitamin B12 assay medium, for | B3801-100G | MILLIPORE | SLS",
+      "url": "https://www.scientificlabs.com/en/product/microbiology-media/B3801-100G",
+      "snippet": "Dispense 5 ml of medium into tubes containing increasing concentrations of cyanocobalamin (Cat. No. 43107) standard or the …"
+    },
+    {
+      "title": "Vitamin B 12 assay medium - 100 g - MilliporeSigma",
+      "url": "https://www.sigmaaldrich.com/US/en/product/sial/b3801?msockid=09f4a7bd148b627c1836b06f157563e6",
+      "snippet": "The concentration of vitamin B 12 in the test sample is calculated based on the interpretation of the standard curve. Lactobacillus …"
+    },
+    {
+      "title": "B12 Assay MediumNutriSelect Plus | B3801-100G - Merck",
+      "url": "https://www.merckmillipore.com/PE/en/product/B12-Assay-MediumNutriSelect-Plus,PE-B3801-100G",
+      "snippet": "B12 Assay MediumNutriSelect Plus - Find MSDS or SDS, a COA, data sheets and more information."
+    },
+    {
+      "title": "Vitamin B₁₂ assay medium, 1 X 100 g (B3801-100G)",
+      "url": "https://alkalisci.com/vitamin-b-assay-medium-1-x-100-g-b3801-100g/",
+      "snippet": "MilliporeSigma® (Sigma-Aldrich) SKU: B3801-100G $146.42 (You save) Net 30 Terms Available"
+    }
+  ]
+}

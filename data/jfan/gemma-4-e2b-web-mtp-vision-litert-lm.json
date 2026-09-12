@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "jfan/gemma-4-e2b-web-mtp-vision-litert-lm",
+  "slug": "jfan-gemma-4-e2b-web-mtp-vision-litert-lm",
+  "author": "jfan",
+  "url": "https://huggingface.co/jfan/gemma-4-e2b-web-mtp-vision-litert-lm",
+  "created_at": "2026-09-12T16:51:48.000Z",
+  "updated_at": "2026-09-12T17:09:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4563350980,
+  "storage_human": "4.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Simson Habicht – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Simson_Habicht",
+      "snippet": "Habicht ist der Name eines zweisitzigen Kleinkraftrad -Modells aus dem VEB Fahrzeug- und Jagdwaffenwerk „Simson“ Suhl in …"
+    },
+    {
+      "title": "Simson Habicht, Motorrad gebraucht kaufen | kleinanzeigen.de",
+      "url": "https://www.kleinanzeigen.de/s-motorraeder-roller/simson-habicht/k0c305?msockid=1f7d35f3c7386db92dfa2221c64a6c46",
+      "snippet": "Was macht die Simson Habicht als Motorrad so besonders im Vergleich zu anderen DDR-Zweirädern? Die Habicht sticht durch ihr …"
+    },
+    {
+      "title": "Habicht Moped kleinanzeigen.de",
+      "url": "https://www.kleinanzeigen.de/s-habicht-moped/k0?msockid=1f7d35f3c7386db92dfa2221c64a6c46",
+      "snippet": "Simson Habicht SR4-4 DDR Moped Verkaufen hier unseren Simson Habicht SR4-4 mit dem Originalen 4 gang Motor und 50ccm, …"
+    },
+    {
+      "title": "Simson Habicht gebraucht kaufen | Motorrad bei mobile.de",
+      "url": "https://suchen.mobile.de/motorrad/simson-habicht.html?msockid=1f7d35f3c7386db92dfa2221c64a6c46",
+      "snippet": "Jetzt Simson Habicht bei mobile.de kaufen Finde viele günstige Angebote in der Kategorie \"Motorrad\" bei mobile.de – Deutschlands …"
+    },
+    {
+      "title": "Simson Habicht SR 4-4 1971-1975 () - magazin.polo-motorrad.com",
+      "url": "https://magazin.polo-motorrad.com/polo-bike-datenbank/simson-habicht-sr-4-4-1971-1975/",
+      "snippet": "Der Simson Habicht SR 4-4 wurde von 1971 bis 1975 in der DDR produziert und gilt als eines der beliebtesten Modelle der Simson …"
+    }
+  ]
+}

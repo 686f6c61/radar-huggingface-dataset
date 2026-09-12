@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Travor278/pi05-pick-dual-bottles-concurrent-lora-10k",
+  "slug": "travor278-pi05-pick-dual-bottles-concurrent-lora-10k",
+  "author": "Travor278",
+  "url": "https://huggingface.co/Travor278/pi05-pick-dual-bottles-concurrent-lora-10k",
+  "created_at": "2026-09-12T16:31:45.000Z",
+  "updated_at": "2026-09-12T16:33:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi05",
+    "jax",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335811584,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CaseHug | Open the Best CS2 (CS:GO) Cases and Win Skins!",
+      "url": "https://casehug.com/",
+      "snippet": "CaseHug is a platform where you'll find 150+ exclusive CS2 (CS:GO) cases, delivering real excitement with every opening. Whether …"
+    },
+    {
+      "title": "CaseHug | Otwieraj najlepsze skrzynki CS2 (CS:GO) i wygrywaj skiny!",
+      "url": "https://casehug.com/pl",
+      "snippet": "CaseHug to popularna platforma do otwierania skrzynek CS2 (CS:GO), na której gracze mogą zdobywać i wymieniać skiny Counter …"
+    },
+    {
+      "title": "Casehug – Oficjalna Platforma Skrzynek CS2 W Polsce",
+      "url": "https://case-hug.pl/",
+      "snippet": "Casehug to platforma skrzynek CS2 z Demo Case, Case Battle, Upgraderem, Promo Code +10% oraz darmowymi nagrodami."
+    },
+    {
+      "title": "Twoje konto CaseHug – Ekwipunek i ustawienia | CaseHug",
+      "url": "https://casehug.com/pl/user-account",
+      "snippet": "Otwieraj najlepsze skrzynki CS2 (CS:GO) i wygrywaj skiny! CaseHug to najlepsza strona do otwierania skrzynek CS2 (CS:GO) z …"
+    },
+    {
+      "title": "Otwieraj darmowe skrzynki CS2 (CS:GO) - CaseHug",
+      "url": "https://casehug.com/pl/free-cases",
+      "snippet": "Otwieraj swoje darmowe skrzynki CS2 (CS:GO) i zdobądź niesamowite nagrody! Mnóstwo skrzynek z darmowymi skinami CS2 …"
+    }
+  ]
+}

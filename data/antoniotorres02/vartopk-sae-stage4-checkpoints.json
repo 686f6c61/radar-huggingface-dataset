@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "antoniotorres02/vartopk-sae-stage4-checkpoints",
+  "slug": "antoniotorres02-vartopk-sae-stage4-checkpoints",
+  "author": "antoniotorres02",
+  "url": "https://huggingface.co/antoniotorres02/vartopk-sae-stage4-checkpoints",
+  "created_at": "2026-09-12T13:43:55.000Z",
+  "updated_at": "2026-09-12T14:24:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "sparse-autoencoder",
+    "sae",
+    "topk",
+    "variable-topk",
+    "jumprelu",
+    "interpretability",
+    "cub",
+    "convnext",
+    "activations",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1062904037,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aternos | Minecraft servers. Free. Forever.",
+      "url": "https://aternos.org/",
+      "snippet": "At Aternos it is just as easy as pressing a button. We offer you servers that you can actually play and have fun on. Lots of fun. No …"
+    },
+    {
+      "title": "Aternos | Serveurs Minecraft. Gratuit. Pour toujours.",
+      "url": "https://aternos.org/:fr/",
+      "snippet": "Nous vous donnons votre propre serveur Minecraft, où vous pouvez jouer avec vos amis toute la journée et toute la nuit. Nous …"
+    },
+    {
+      "title": "Login or Sign up | Aternos | Free Minecraft Server",
+      "url": "https://aternos.org/go/",
+      "snippet": "Login or Sign up | Aternos | Free Minecraft Server. Welcome to Aternos. Sign up. OR. Login . Please enable cookies in your browser. …"
+    },
+    {
+      "title": "Create your server | Aternos | Free Minecraft Server",
+      "url": "https://aternos.org/signup",
+      "snippet": "I agree that my personal data is stored and processed according to the privacy policy."
+    },
+    {
+      "title": "Aternos | Servidores de Minecraft. Gratis. Para siempre.",
+      "url": "https://aternos.org/:es-ES/",
+      "snippet": "Servidores de Minecraft. Gratis. Para siempre. Su propio servidor de Minecraft, el único que se queda gratis para siempre."
+    }
+  ]
+}

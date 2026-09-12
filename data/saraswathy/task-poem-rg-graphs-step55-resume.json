@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Saraswathy/task-poem-rg-graphs-step55-resume",
+  "slug": "saraswathy-task-poem-rg-graphs-step55-resume",
+  "author": "Saraswathy",
+  "url": "https://huggingface.co/Saraswathy/task-poem-rg-graphs-step55-resume",
+  "created_at": "2026-09-12T12:51:16.000Z",
+  "updated_at": "2026-09-12T12:56:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3503404077,
+  "storage_human": "3.5 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "قبله نما آنلاین - قطب‌نما جهت قبله آنلاین",
+      "url": "https://qiblafind.net/fa/qibla-finder",
+      "snippet": "جهت دقیق و زنده قبله را بدست آورید و کعبه و قبله را آنلاین از مرورگر خود با قطب‌نما و نقشه قبله ما مشخص کنید، هر جا که هستید."
+    },
+    {
+      "title": "قبله نما آنلاین دقیق | GPS، نقشه و قطب‌نمای گوشی - پیشخوانک",
+      "url": "https://pishkhanak.com/tools/qibla-finder",
+      "snippet": "با GPS، انتخاب شهر یا مختصات، جهت دقیق قبله را روی قطب‌نما و نقشه ببینید. فاصله تا کعبه و روش خورشید و سایه هم داخل ابزار است."
+    },
+    {
+      "title": "قبله نما | قبله نما آنلاین گوگل - قبله نما برای نماز",
+      "url": "https://ir.qiblafinder.org/",
+      "snippet": "قبله نما آنلاین خود را برای نماز پیدا کنید. همچنین می توانید جهت قبله خود را با قطب نما قبله تعیین کنید. تعیین جهت قبله با گوشی. به راحتی جهت قبله خود را پیدا کنید."
+    },
+    {
+      "title": "قبله‌نما آنلاین | جهت دقیق قبله با موقعیت مکانی",
+      "url": "https://timestamp.ir/qibla",
+      "snippet": "قبله‌نمای آنلاین برای محاسبه جهت کعبه از موقعیت فعلی یا شهر انتخابی؛ همراه با زاویه قبله، قطب‌نما و راهنمای استفاده."
+    },
+    {
+      "title": "قبله‌یاب - Google",
+      "url": "https://qiblafinder.withgoogle.com/intl/fa/",
+      "snippet": "از هرکجا جهت قبله را از داخل مرورگرتان پیدا کنید."
+    }
+  ]
+}

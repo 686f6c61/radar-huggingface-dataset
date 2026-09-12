@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "MarcelM/CSEBERT-Emotion-Detection",
+  "slug": "marcelm-csebert-emotion-detection",
+  "author": "MarcelM",
+  "url": "https://huggingface.co/MarcelM/CSEBERT-Emotion-Detection",
+  "created_at": "2026-09-12T16:43:55.000Z",
+  "updated_at": "2026-09-12T16:43:55.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil | Monoprix.fr : Courses et Shopping en ligne et toutes les ...",
+      "url": "https://www.monoprix.fr/",
+      "snippet": "Retrouvez toute l'actualité Monoprix : les promotions, les produits et les nouveautés, les marques exclusives et tout l'univers …"
+    },
+    {
+      "title": "La mode pour les femmes : Trouvez votre bonheur | Monoprix",
+      "url": "https://www.monoprix.fr/c/mode/femme",
+      "snippet": "Quelles sont les catégories de produits pour la mode femme chez Monoprix ? La mode femme chez Monoprix est conçue pour …"
+    },
+    {
+      "title": "Page d’accueil - Monoprix - Courses en ligne, économies en …",
+      "url": "https://courses.monoprix.fr/",
+      "snippet": "Page d’accueil - Monoprix - Parcourez le magasin pour trouver des offres exceptionnelles, faire des économies, et bien plus encore. …"
+    },
+    {
+      "title": "Site carrières Groupe MONOPRIX",
+      "url": "https://recrutement.monoprix.fr/",
+      "snippet": "Découvrez l’univers de Groupe MONOPRIX, visualisez nos offres d’emploi et postulez simplement."
+    },
+    {
+      "title": "Nos rayons - Monoprix Monoprix.fr : Livraison courses à domicile en 24h",
+      "url": "https://courses.monoprix.fr/categories",
+      "snippet": "Nos rayons - Monoprix - Parcourez le magasin pour trouver des offres exceptionnelles, faire des économies, et bien plus encore."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sad1dsa12/MyAwesomeModel-TestRepo",
+  "slug": "sad1dsa12-myawesomemodel-testrepo",
+  "author": "sad1dsa12",
+  "url": "https://huggingface.co/sad1dsa12/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-12T11:19:02.000Z",
+  "updated_at": "2026-09-12T11:19:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Descargar e Instalar Magis TV para Smart TV - Ardilu",
+      "url": "https://www.ardilu.com/guias/como-descargar-e-instalar-magis-tv-para-smart-tv",
+      "snippet": "Jan 5, 2026 · Con Magis TV, eso es posible. Solo necesitas instalar la app en tu Smart TV y tendrás acceso a contenido variado, …"
+    },
+    {
+      "title": "Magis TV y Flujo TV | Planes, descarga y renovación",
+      "url": "https://www.magistv.ai/es-v/",
+      "snippet": "Compra, renueva o descarga Magis TV y Flujo TV para Android. Accede a canales en vivo, películas, series y soporte para …"
+    },
+    {
+      "title": "Descargar MAGIS OFICIAL APK Última Versión 1.0.43 para Android",
+      "url": "https://apkpure.com/es/magis-oficial/magistv.magis.iptv.tvbox",
+      "snippet": "MAGIS OFICIAL responde a una necesidad común: ver televisión, películas, series y deportes desde el teléfono sin depender de …"
+    },
+    {
+      "title": "Xuper TV y Magis TV: Cómo descargar su APK gratis en Smart TV y ...",
+      "url": "https://www.yucatan.com.mx/tecnologia/2025/11/26/xuper-tv-magis-tv-como-descargar-apk-gratis-smart-tv-como-proteger-dispositivo.html",
+      "snippet": "Nov 26, 2025 · Si quieres descargar Magis TV o Xuper TV en tu Smart TV, aquí te decimos por qué no debes hacerlo y cómo …"
+    },
+    {
+      "title": "Descargar Magis TV en celulares, televisores y tablets: todo ... - Infobae",
+      "url": "https://www.infobae.com/tecno/2025/07/05/descargar-magis-tv-en-celulares-televisores-y-tablets-todo-lo-que-no-sabes-de-esta-practica/",
+      "snippet": "Jul 5, 2025 · Magis TV se ha convertido en una de las opciones más mencionadas para quienes buscan ver series, películas y …"
+    }
+  ]
+}

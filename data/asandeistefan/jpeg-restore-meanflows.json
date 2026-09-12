@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "asandeistefan/jpeg-restore-meanflows",
+  "slug": "asandeistefan-jpeg-restore-meanflows",
+  "author": "asandeistefan",
+  "url": "https://huggingface.co/asandeistefan/jpeg-restore-meanflows",
+  "created_at": "2026-09-12T12:43:27.000Z",
+  "updated_at": "2026-09-12T12:54:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "image-restoration",
+    "jpeg",
+    "mean-flows",
+    "image-to-image",
+    "arxiv:2608.28730",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 261352510,
+  "storage_human": "261 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yahoo Mail | Email with smart features and top-notch security",
+      "url": "https://fr.mail.yahoo.com/",
+      "snippet": "Yahoo Mail: Your smarter, faster, free email solution. Organize your inbox, protect your privacy, and tackle tasks efficiently with AI …"
+    },
+    {
+      "title": "Done - Yahoo Mail",
+      "url": "https://fr.mail.yahoo.com/d?reason=invalid_crumb",
+      "snippet": "Il est temps de passer à l’action avec Yahoo Mail. Pour commencer, il vous suffit d’ajouter votre compte Gmail, Outlook, AOL ou …"
+    },
+    {
+      "title": "Connect Your Gmail to Yahoo Mail | Clean Up Your Inbox",
+      "url": "https://fr.mail.yahoo.com/connect/gmail",
+      "snippet": "Connect your Gmail to Yahoo Mail for one-tap unsubscribe, delete by sender, spam protection, and a cleaner inbox without changing …"
+    }
+  ]
+}

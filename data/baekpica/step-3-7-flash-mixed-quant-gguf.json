@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Baekpica/Step-3.7-Flash-Mixed-Quant-GGUF",
+  "slug": "baekpica-step-3-7-flash-mixed-quant-gguf",
+  "author": "Baekpica",
+  "url": "https://huggingface.co/Baekpica/Step-3.7-Flash-Mixed-Quant-GGUF",
+  "created_at": "2026-09-12T18:13:49.000Z",
+  "updated_at": "2026-09-12T18:18:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "mixed-quant",
+    "step35",
+    "step3p7",
+    "multimodal",
+    "dgx-spark",
+    "image-text-to-text",
+    "base_model:stepfun-ai/Step-3.7-Flash",
+    "base_model:quantized:stepfun-ai/Step-3.7-Flash",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 196956130432,
+  "parameters_human": "196.96B",
+  "storage_bytes": 91152896000,
+  "storage_human": "91.2 GB",
+  "base_model": "stepfun-ai/Step-3.7-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "spotify账号怎么登不上? - 知乎",
+      "url": "https://www.zhihu.com/question/329216939",
+      "snippet": "spotify每隔14天会强制登录，届时手机app和桌面应用都没法登录，会弹出国家限制问题。 如何解决我找了很多方法但是都没有用，下 …"
+    },
+    {
+      "title": "Spotify所有曲目都无法显示，该怎么解决？ - 知乎",
+      "url": "https://www.zhihu.com/question/2056032883077386271",
+      "snippet": "我的Spotify突然所有曲目都显示成这样的状态，歌名和封面都加载不出来，想知道是怎么回事。"
+    },
+    {
+      "title": "spotify安卓下载-百度经验",
+      "url": "https://jingyan.baidu.com/article/066074d6d320b282c21cb0a0.html",
+      "snippet": "Apr 23, 2025 · spotify安卓下载,Sotify是一个正版流媒体音乐服务平台，2008年10月在瑞典首都斯德哥尔摩正式上线。Sotify提供免费和 …"
+    },
+    {
+      "title": "spotify如何分享到朋友圈 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/f006222857a62bbad2f0c82a.html",
+      "snippet": "Oct 20, 2023 · spotify如何分享到朋友圈,otify如何分享到朋友圈？当你在otify上听一首歌，觉得很喜欢的时候，可以一键分享给朋友 …"
+    },
+    {
+      "title": "Spotify推荐哪个区？ - 知乎",
+      "url": "https://www.zhihu.com/question/424115016",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    }
+  ]
+}

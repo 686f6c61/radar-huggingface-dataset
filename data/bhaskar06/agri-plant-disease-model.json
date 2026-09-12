@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "bhaskar06/agri-plant-disease-model",
+  "slug": "bhaskar06-agri-plant-disease-model",
+  "author": "bhaskar06",
+  "url": "https://huggingface.co/bhaskar06/agri-plant-disease-model",
+  "created_at": "2026-09-12T17:06:27.000Z",
+  "updated_at": "2026-09-12T17:33:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29807656,
+  "storage_human": "30 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "N'oubliez pas les paroles - france.tv",
+      "url": "https://www.france.tv/france-2/n-oubliez-pas-les-paroles/",
+      "snippet": "Tous les soirs sur France 2, Nagui invite les amateurs de chanson française à prendre le micro d'argent. N'oubliez pas les paroles …"
+    },
+    {
+      "title": "N'oubliez pas les paroles diffusion, horaire et chaîne - Télé Loisirs",
+      "url": "https://www.programme-tv.net/programme/autre/r306258-noubliez-pas-les-paroles/diffusions/",
+      "snippet": "Retrouvez toutes les informations de diffusion de N'oubliez pas les paroles avec Télé Loisirs."
+    },
+    {
+      "title": "N'oubliez pas les paroles - Émission (2026) : diffusions TV, …",
+      "url": "https://www.programme-television.org/type/emissions/jeux-tv/n-oubliez-pas-les-paroles-96227549",
+      "snippet": "Retrouvez les prochaines diffusions TV de l'émission N'oubliez pas les paroles, la disponibilité en replay / streaming grâce au …"
+    },
+    {
+      "title": "N'oubliez pas les paroles - 19:10 sur France 2",
+      "url": "https://www.programmetele.com/programme-743074",
+      "snippet": "Des refrains endiablés, des chanteurs en herbe et Nagui en maître de cérémonie, voilà la recette infaillible de \"N'oubliez pas les …"
+    },
+    {
+      "title": "N'oubliez pas les paroles - Jeu - Télé 2 Semaines",
+      "url": "https://www.programme.tv/programme/c306258-n-oubliez-pas-les-paroles/",
+      "snippet": "Tout savoir sur N'oubliez pas les paroles avec Télé 2 Semaines : actu, photos, diffusion, casting, épisodes..."
+    }
+  ]
+}

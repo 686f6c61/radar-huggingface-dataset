@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "WattsIshaan/OLMo-2-1B-Midtrain-50B-AdamW-20percent",
+  "slug": "wattsishaan-olmo-2-1b-midtrain-50b-adamw-20percent",
+  "author": "WattsIshaan",
+  "url": "https://huggingface.co/WattsIshaan/OLMo-2-1B-Midtrain-50B-AdamW-20percent",
+  "created_at": "2026-09-12T15:54:40.000Z",
+  "updated_at": "2026-09-12T16:37:13.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "dataset:allenai/dolmino-mix-1124",
+    "arxiv:2605.02105",
+    "base_model:allenai/OLMo-2-0425-1B",
+    "base_model:finetune:allenai/OLMo-2-0425-1B",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17824430168,
+  "storage_human": "17.8 GB",
+  "base_model": "allenai/OLMo-2-0425-1B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Netflix Türkiye - TV Programlarını Çevrimiçi İzleyin, Filmleri ...",
+      "url": "https://www.netflix.com/tr/",
+      "snippet": "Netflix filmlerini, programlarını ve dizilerini çevrimiçi olarak veya yayınları doğrudan akıllı TV, oyun konsolu, PC, Mac, cep telefonu, …"
+    },
+    {
+      "title": "Netflix - Watch TV Shows Online, Watch Movies Online",
+      "url": "https://www.netflix.com/?hl=tr",
+      "snippet": "Watch Netflix movies & TV shows online or stream right to your smart TV, game console, PC, Mac, mobile, tablet and more."
+    },
+    {
+      "title": "Netflix",
+      "url": "https://www.netflix.com/tr/login/tr",
+      "snippet": "Netflix filmlerini, programlarını ve dizilerini çevrimiçi olarak veya yayınları doğrudan akıllı TV, oyun konsolu, PC, Mac, cep telefonu, …"
+    },
+    {
+      "title": "Netflix",
+      "url": "https://www.netflix.com/tr-en/login",
+      "snippet": "Watch Netflix movies & TV shows online or stream right to your smart TV, game console, PC, Mac, mobile, tablet and more."
+    },
+    {
+      "title": "About Netflix - Ana Sayfa",
+      "url": "https://about.netflix.com/tr",
+      "snippet": "Netflix'i ve dünyanın dört bir yanında anlattığımız muhteşem hikâyeleri keşfedin. Yeniliklerimiz, kültürümüz, yönetim ekibimiz, …"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "tmmsunny012/meteor",
+  "slug": "tmmsunny012-meteor",
+  "author": "tmmsunny012",
+  "url": "https://huggingface.co/tmmsunny012/meteor",
+  "created_at": "2026-09-12T18:08:57.000Z",
+  "updated_at": "2026-09-12T18:08:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "tensorrt",
+  "languages": [],
+  "tags": [
+    "tensorrt",
+    "onnx",
+    "autoware",
+    "autonomous-driving",
+    "camera",
+    "multi-view",
+    "bird-eye-view",
+    "multi-task",
+    "e2e",
+    "planning",
+    "3d-object-detection",
+    "semantic-segmentation",
+    "depth-estimation",
+    "jetson-orin",
+    "meteor",
+    "robotics",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 561810763,
+  "storage_human": "562 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vinted | Toute la seconde main dans une seule application",
+      "url": "https://www.vinted.fr/?msockid=2541ffd4570c6b931d89e80656f36a17",
+      "snippet": "Une communauté, des milliers de marques et de styles de seconde main. Prêt à te lancer ? Découvre comment ça marche !"
+    },
+    {
+      "title": "S'inscrire et se connecter | Vinted",
+      "url": "https://www.vinted.fr/help/103-se-connecter?msockid=2541ffd4570c6b931d89e80656f36a17",
+      "snippet": "Une communauté, des milliers de marques et de styles de seconde main. Prêt à te lancer ? Découvre comment ça marche !"
+    },
+    {
+      "title": "Envoi avec Vinted Go | Vinted",
+      "url": "https://www.vinted.fr/help/1110-envois-avec-vinted-go?msockid=2541ffd4570c6b931d89e80656f36a17",
+      "snippet": "Comment utiliser une consigne Vinted Go ? Si tu rencontres un problème avec une consigne lors du dépôt ou du retrait d'un colis, …"
+    },
+    {
+      "title": "Articles - Vinted",
+      "url": "https://www.vinted.fr/brand/vintage?msockid=2541ffd4570c6b931d89e80656f36a17",
+      "snippet": "Une communauté, des milliers de marques et de styles de seconde main. Prêt à te lancer ? Découvre comment ça marche !"
+    },
+    {
+      "title": "Vêtements | Explore les vêtements de seconde main | Vinted",
+      "url": "https://www.vinted.fr/catalog/4-clothing?msockid=2541ffd4570c6b931d89e80656f36a17",
+      "snippet": "Parcours les vêtements de seconde main pour femmes sur Vinted. Déniche des pièces uniques à prix tout doux et achète et vends …"
+    }
+  ]
+}

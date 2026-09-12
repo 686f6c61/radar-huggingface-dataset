@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "tadiecool29/mt5-base-joint-full-ft",
+  "slug": "tadiecool29-mt5-base-joint-full-ft",
+  "author": "tadiecool29",
+  "url": "https://huggingface.co/tadiecool29/mt5-base-joint-full-ft",
+  "created_at": "2026-09-12T15:28:03.000Z",
+  "updated_at": "2026-09-12T15:31:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mt5",
+    "text2text-generation",
+    "generated_from_trainer",
+    "base_model:google/mt5-base",
+    "base_model:finetune:google/mt5-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 582401280,
+  "parameters_human": "582.4M",
+  "storage_bytes": 1181172264,
+  "storage_human": "1.2 GB",
+  "base_model": "google/mt5-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wells Fargo Bank | Financial Services & Online Banking",
+      "url": "https://www.wellsfargo.com/",
+      "snippet": "Who we are Wells Fargo helps strengthen communities through inclusion, economic empowerment, and sustainability."
+    },
+    {
+      "title": "Mobile & Online Banking: Checking & Savings Accounts | Wells Fargo",
+      "url": "https://www.wellsfargo.com/mobile-online-banking/",
+      "snippet": "Online and mobile banking made easy: Manage checking and savings accounts, pay bills, monitor spending and more with the Wells …"
+    },
+    {
+      "title": "Find Wells Fargo bank and ATM locations in Miami,FL | Wells Fargo",
+      "url": "https://locations.wellsfargo.com/fl/miami",
+      "snippet": "Locate banks or ATMs in Miami,FL. Find drive-thru ATMs, banking services available, store hours, customer service numbers, …"
+    },
+    {
+      "title": "Find Wells Fargo bank and ATM locations near you | Wells Fargo",
+      "url": "https://locations.wellsfargo.com/search",
+      "snippet": "Use our locator to find a location near you or browse our directory. Alternatively, find a location for a specific Wells Fargo service."
+    },
+    {
+      "title": "Wells Fargo Bank Locations in Miami",
+      "url": "https://wellsfargo.banklocationmaps.com/en/usa/florida/miami",
+      "snippet": "Find local Wells Fargo Bank branch and ATM locations in Miami, Florida with addresses, opening hours, phone numbers, directions, …"
+    }
+  ]
+}

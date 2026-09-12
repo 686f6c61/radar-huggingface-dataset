@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "NAMAA-Space/araseg-e11-xlmr-nopnx-pa-w2",
+  "slug": "namaa-space-araseg-e11-xlmr-nopnx-pa-w2",
+  "author": "NAMAA-Space",
+  "url": "https://huggingface.co/NAMAA-Space/araseg-e11-xlmr-nopnx-pa-w2",
+  "created_at": "2026-09-12T14:00:54.000Z",
+  "updated_at": "2026-09-12T14:32:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "arabic",
+    "text-segmentation",
+    "token-classification",
+    "araseg-2026",
+    "arabicnlp2026",
+    "shared-task",
+    "ar",
+    "base_model:FacebookAI/xlm-roberta-large",
+    "base_model:finetune:FacebookAI/xlm-roberta-large",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2239734894,
+  "storage_human": "2.2 GB",
+  "base_model": "FacebookAI/xlm-roberta-large",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Singer",
+      "url": "https://intranet.singer.com.my/frontpage",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Singer Malaysia | Your Friend For Life Since 1851",
+      "url": "https://www.singer.com.my/",
+      "snippet": "Phone: 1300-888-288 / 1-300-255-587 Email: contactus@singer.com.my / contactus@berjayacredit.com.my"
+    },
+    {
+      "title": "intranet.singer.com.my - Log in | SINGER Intranet",
+      "url": "https://www.ipaddress.com/website/intranet.singer.com.my/",
+      "snippet": "Jul 11, 2026 · The website intranet.singer.com.my serves as the internal portal for SINGER, a well-known brand in the sewing …"
+    },
+    {
+      "title": "Singer Login",
+      "url": "https://www.singerelectrical.com/",
+      "snippet": "Singer Applications Remember Me Login Forgot Password"
+    },
+    {
+      "title": "NetScaler AAA - Singer Equipment",
+      "url": "https://citrix.singerequipment.com/logon/LogonPoint/tmindex.html",
+      "snippet": "Please use a supported phone, tablet or desktop to access your apps and desktops. Citrix Receiver cannot be detected on your …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "picur/picur-120M-base",
+  "slug": "picur-picur-120m-base",
+  "author": "picur",
+  "url": "https://huggingface.co/picur/picur-120M-base",
+  "created_at": "2026-09-12T15:17:47.000Z",
+  "updated_at": "2026-09-12T15:19:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "hu"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "base",
+    "hungarian",
+    "magyar",
+    "conversational",
+    "hu",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 120404352,
+  "parameters_human": "120.4M",
+  "storage_bytes": 241894355,
+  "storage_human": "242 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "护理上qd、qn、qh、bid、tid缩写分别代表什么？_百度知道",
+      "url": "https://zhidao.baidu.com/question/1436613487223449499.html",
+      "snippet": "临床常见的77条医嘱缩写:qd 每日一次 bid 每日两次 tid 每日三次 qid 每日四次 qh 每小时一次 q2h 每两小时一次 q4h 每四小时一次 …"
+    },
+    {
+      "title": "google chrome官网入口 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/253841685953276244.html",
+      "snippet": "Apr 18, 2025 · google chrome官网入口Google Chrome官网的入口是：https://www.google.cn/chrome/以下是关于Google Chrome官网 …"
+    },
+    {
+      "title": "地下城与勇士官方论坛_DNF",
+      "url": "https://dnf.gamebbs.qq.com/forum.php",
+      "snippet": "Jul 2, 2026 · 《地下城与勇士》是由腾讯代理引进的一款超人气格斗网游作品，WCG2011年DNF中国区总决赛一起超越格斗极限。游 …"
+    },
+    {
+      "title": "有问题，就会有答案 - 知乎",
+      "url": "https://www.zhihu.com/creator",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "如何评价索尼 (Sony) HT-A8000 和 HT-A9000 回音壁？ - 知乎",
+      "url": "https://www.zhihu.com/question/652984043",
+      "snippet": "而HT-A9M2里新加入的全频单元，就可以在高低音之间实现过渡，增加中频的表现力。 很多朋友都觉得HT-A9M2的做的那么薄，声音 …"
+    }
+  ]
+}

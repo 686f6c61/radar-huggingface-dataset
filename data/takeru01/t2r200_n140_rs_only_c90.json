@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "takeru01/t2r200_n140_RS_only_c90",
+  "slug": "takeru01-t2r200_n140_rs_only_c90",
+  "author": "takeru01",
+  "url": "https://huggingface.co/takeru01/t2r200_n140_RS_only_c90",
+  "created_at": "2026-09-12T10:55:52.000Z",
+  "updated_at": "2026-09-12T10:56:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51942032,
+  "parameters_human": "51.9M",
+  "storage_bytes": 207808492,
+  "storage_human": "208 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Postal Code Lookup by Country, City or ZIP Code",
+      "url": "https://postalcodes.info/",
+      "snippet": "Find postal codes by country, city or ZIP code with active datasets, global ISO coverage tracking, regional lookup pages, coordinates …"
+    },
+    {
+      "title": "Zip Code Data for All Countries and Cities in the World",
+      "url": "https://github.com/Zeeshanahmad4/Zip-code-of-all-countries-cities-in-the-world-CSV-TXT-SQL-DATABASE",
+      "snippet": "This repository contains a comprehensive list of zip codes (postal codes) for countries and cities around the world. The data is …"
+    },
+    {
+      "title": "World Postal Code - free zip/postal code lookup",
+      "url": "https://worldpostalcode.com/",
+      "snippet": "Use our postal code lookup for every country around the world. Complete list of zip codes and all administrative divisions for countries."
+    },
+    {
+      "title": "Enterprise World Postal Code | Accurate & Standardized",
+      "url": "https://www.geopostcodes.com/",
+      "snippet": "Jan 28, 2025 · International ZIP Code Database: A single source of truth covering 247 countries and territories, enriched with cities, …"
+    },
+    {
+      "title": "Download Postal Codes By Country - Geoapify",
+      "url": "https://www.geoapify.com/download-postal-codes/",
+      "snippet": "Access accurate postal codes from open data sources with ease. Download the postal code data you need for your projects, …"
+    }
+  ]
+}

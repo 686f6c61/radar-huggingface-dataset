@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SelectiveDOPD/QuestA-Distilled-DeepSeek-7b-Selective-Top10pct",
+  "slug": "selectivedopd-questa-distilled-deepseek-7b-selective-top10pct",
+  "author": "SelectiveDOPD",
+  "url": "https://huggingface.co/SelectiveDOPD/QuestA-Distilled-DeepSeek-7b-Selective-Top10pct",
+  "created_at": "2026-09-12T12:27:06.000Z",
+  "updated_at": "2026-09-12T13:15:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 30473966538,
+  "storage_human": "30.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Visual Studio: IDE and Code Editor for Software Development",
+      "url": "https://visualstudio.microsoft.com/",
+      "snippet": "Visual Studio dev tools & services make app development easy for any developer, on any platform & language. Develop with our …"
+    },
+    {
+      "title": "Visual Studio Downloads for Windows",
+      "url": "https://visualstudio.microsoft.com/downloads/",
+      "snippet": "Download Visual Studio IDE for free. Try out Visual Studio Professional or Enterprise editions."
+    },
+    {
+      "title": "Download Visual Studio Code - Free AI Code Editor for Mac, Linux, …",
+      "url": "https://code.visualstudio.com/download",
+      "snippet": "Download Visual Studio Code for free on Linux, macOS, and Windows. The open source AI code editor for agent-first development, …"
+    },
+    {
+      "title": "Visual Studio - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Visual_Studio",
+      "snippet": "Visual Studio ... Visual Studio is an integrated development environment (IDE) developed by Microsoft. It is used to develop computer …"
+    },
+    {
+      "title": "Visual Studio Code - The open source AI code editor | Your home for ...",
+      "url": "https://code.visualstudio.com/",
+      "snippet": "Visual Studio Code is a free, open source AI code editor. Build with AI agents that plan, code, and debug for you. Manage multi-agent …"
+    }
+  ]
+}

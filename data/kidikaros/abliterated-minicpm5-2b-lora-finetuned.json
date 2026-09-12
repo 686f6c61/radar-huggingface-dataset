@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "KidIkaros/abliterated-minicpm5-2b-lora-finetuned",
+  "slug": "kidikaros-abliterated-minicpm5-2b-lora-finetuned",
+  "author": "KidIkaros",
+  "url": "https://huggingface.co/KidIkaros/abliterated-minicpm5-2b-lora-finetuned",
+  "created_at": "2026-09-12T15:50:44.000Z",
+  "updated_at": "2026-09-12T15:55:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "abliterated",
+    "fine-tuning",
+    "uncensored",
+    "text-generation",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:adapter:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1207971329,
+  "storage_human": "1.2 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ACMilan.com.pl - AC Milan",
+      "url": "https://www.acmilan.com.pl/",
+      "snippet": "17 hours ago · Strona polskich kibiców AC Milan. Codzienne aktualności, relacje ze spotkań, szerokie informacje o zespole, profile …"
+    },
+    {
+      "title": "Inter Mediolan zdobywcą Pucharu Włoch 2025/2026 - ACMilan.com.pl",
+      "url": "https://www.acmilan.com.pl/news/47244/inter_mediolan_zdobywca_pucharu_wloch_2025_2026",
+      "snippet": "May 13, 2026 · Po zdobyciu 21. mistrzostwa Włoch przyszedł także czas na Puchar Włoch. Inter Mediolan zdobywa dublet i sięga po …"
+    },
+    {
+      "title": "Inter Mediolan zdobywcą Pucharu Włoch 2025/2026 - ACMilan.com.pl",
+      "url": "https://www.acmilan.com.pl/mobile/news/47244/inter_mediolan_zdobywca_pucharu_wloch_2025_2026",
+      "snippet": "May 13, 2026 · Po zdobyciu 21. mistrzostwa Włoch przyszedł także czas na Puchar Włoch. Inter Mediolan zdobywa dublet i sięga po …"
+    },
+    {
+      "title": "MILANO (PONOWNIE) SIAMO NOI! MILAN – INTER 1:0",
+      "url": "https://www.acmilan.com.pl/news/46679/ac_milan_inter_mediolan_do_przerwy_1_0",
+      "snippet": "Mar 8, 2026 · AC Milan pokonał Inter Mediolan 1:0 w wielkim hicie 28. kolejki Serie A. Strzelcem jedynej bramki był Estupiñan. Strata …"
+    },
+    {
+      "title": "Inter Mediolan mistrzem Włoch 2025/2026 - ACMilan.com.pl - AC Milan",
+      "url": "https://www.acmilan.com.pl/news/47146/inter_mediolan_mistrzem_wloch_2025_2026",
+      "snippet": "May 3, 2026 · Inter Mediolan w niedzielny wieczór pokonał Parmę 2:0 w meczu 35. kolejki Serie A i tym samym może świętować …"
+    }
+  ]
+}

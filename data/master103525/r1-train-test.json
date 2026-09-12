@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "master103525/R1-train-test",
+  "slug": "master103525-r1-train-test",
+  "author": "master103525",
+  "url": "https://huggingface.co/master103525/R1-train-test",
+  "created_at": "2026-09-12T17:58:36.000Z",
+  "updated_at": "2026-09-12T17:58:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth--Meta-Llama-3.1-8B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1359454961,
+  "storage_human": "1.4 GB",
+  "base_model": "unsloth--Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Level 1 | Oxford Phonics World | Oxford University Press",
+      "url": "https://elt.oup.com/student/oxfordphonicsworld/level01/",
+      "snippet": "All Rights Reserved."
+    },
+    {
+      "title": "Oxford_Phonics_World_1_SB_Neat - FlipBuilder",
+      "url": "https://online.flipbuilder.com/xtrvf/dsfl/",
+      "snippet": "Oxford_Phonics_World_1_SB_Neat."
+    },
+    {
+      "title": "نسخة من Oxford_Discover_1_SB.pdf - Google Drive",
+      "url": "https://drive.google.com/file/d/1yf6zeiCU2erKhSe8EMAVlP7bjrZiYj98/view",
+      "snippet": "Loading…"
+    },
+    {
+      "title": "Oxford_Phonics_World_1_SB.pdf - Google Drive",
+      "url": "https://drive.google.com/file/d/1MM_an2HNvW-bJByT6H8KrPjRmuxraTnB/view",
+      "snippet": "Loading…"
+    },
+    {
+      "title": "Oxford Phonics World | Learning Resources | Oxford University Press",
+      "url": "https://elt.oup.com/student/oxfordphonicsworld/",
+      "snippet": "Tips for Parents Hi! Welcome to Oxford Phonics World Student's Site! This is a place where your child can practice English in many …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "adelwolf5/YAM-AI-4B",
+  "slug": "adelwolf5-yam-ai-4b",
+  "author": "adelwolf5",
+  "url": "https://huggingface.co/adelwolf5/YAM-AI-4B",
+  "created_at": "2026-09-12T17:26:12.000Z",
+  "updated_at": "2026-09-12T17:39:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7941100832,
+  "parameters_human": "7.94B",
+  "storage_bytes": 15914643398,
+  "storage_human": "15.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "近くのお店（店舗）を探す｜店舗検索｜宅配ピザならピザーラ ...",
+      "url": "https://www.pizza-la.co.jp/SetAddressonMap.aspx",
+      "snippet": "宅配ピザ（デリバリーピザ・お持ち帰り・出前）のPIZZA-LA 店舗選択 地図から探す 地図の下に表示される「ピンの住所」が、お …"
+    },
+    {
+      "title": "店舗を探す |【ピザーラ】宅配ピザ（出前・デリバリーピザ）を ...",
+      "url": "https://www.pizza-la.co.jp/TenpoTop.aspx",
+      "snippet": "郵便番号検索・都道府県選択でピザーラ店舗を検索できます。 ピザの出前・宅配・デリバリーのご注文は、日本生まれの宅配ピザ …"
+    },
+    {
+      "title": "お店を探す｜ドミノ・ピザ",
+      "url": "https://www.dominos.jp/store-finder",
+      "snippet": "あなたの近くの店舗を検索できます。 ピザアカデミーのWeb予約でピザづくり体験教室も参加できます。"
+    },
+    {
+      "title": "ピザマップ [食べログ]",
+      "url": "https://tabelog.com/pizza/map/?msockid=23963eea04eb69fa30602938052d6817",
+      "snippet": "該当するエリア・駅がありません。 入力内容をご確認ください。 該当のエリア・駅が見つかりませんでした。 入力内容を変更して …"
+    },
+    {
+      "title": "販売店舗｜ピザハット - Pizzahut",
+      "url": "https://www.pizzahut.jp/topic/store/sale",
+      "snippet": "宅配ピザチェーンのピザハット公式サイト。ピザハットオンラインならクーポンやポイントが使えておトクで便利。宅配もお持ち帰 …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "harrywang01/See2Act",
+  "slug": "harrywang01-see2act",
+  "author": "harrywang01",
+  "url": "https://huggingface.co/harrywang01/See2Act",
+  "created_at": "2026-09-12T19:08:53.000Z",
+  "updated_at": "2026-09-12T19:28:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "imitation-learning",
+    "diffusion-policy",
+    "active-perception",
+    "pybullet",
+    "ravens",
+    "arxiv:2606.23625",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1096411518,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "La connexion à Mon Compte | CAF – Caisse d’Allocations Familiales",
+      "url": "https://www.caf.fr/allocataires/actualites/la-caf-et-vous/la-connexion-mon-compte",
+      "snippet": "Pour vous connecter à L’Espace Mon Compte ou sur l’appli Caf-Mon Compte, vous devez utiliser votre mot de passe Caf. C’est le …"
+    },
+    {
+      "title": "CAF - Connexion",
+      "url": "https://connect.caf.fr/connexionappli/dist/",
+      "snippet": "FranceConnect est une solution proposée par l'État pour sécuriser et simplifier la connexion à vos services en ligne. S'identifier avec …"
+    },
+    {
+      "title": "Caf - Mon Compte – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=fr.cnaf.mobile.moncompte&hl=fr",
+      "snippet": "Découvrez l'application officielle « Caf - Mon Compte ». Allocataire de la Caf ? Retrouvez « Mon Compte » sur votre mobile. …"
+    },
+    {
+      "title": "J'accède à mon compte | CAF – Caisse d’Allocations Familiales",
+      "url": "https://www.caf.fr/allocataires/caf-de-l-essonne/offre-de-service/vie-professionnelle/j-accede-mon-compte",
+      "snippet": "Vous voulez gérer votre compte ?Suivant votre besoin, suivez le guide pour faire les changements en ligne !"
+    },
+    {
+      "title": "Je me connecte à l'espace Moncompte - Caf.fr",
+      "url": "https://www.caf.fr/allocataires/caf-du-lot-et-garonne/offre-de-service/vie-personnelle/je-suis-jeune-la-caf-est-mes-cotes/je-me-connecte-l-espace-moncompte",
+      "snippet": "Vous devez utiliser votre numéro de sécurité sociale pour vous connecter aux différents services de votre Caf. A cette occasion, vous …"
+    }
+  ]
+}

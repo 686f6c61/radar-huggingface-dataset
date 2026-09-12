@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ilyass200404/ppo-Pyramids",
+  "slug": "ilyass200404-ppo-pyramids",
+  "author": "ilyass200404",
+  "url": "https://huggingface.co/ilyass200404/ppo-Pyramids",
+  "created_at": "2026-09-12T16:59:21.000Z",
+  "updated_at": "2026-09-12T16:59:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Pyramids",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 111303743,
+  "storage_human": "111 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CHIP Online: Bilişim ve Teknoloji Haberleri, Cep Telefonu İncelemeleri",
+      "url": "https://www.chip.com.tr/",
+      "snippet": "Teknoloji dünyasında yaşanan tüm gelişmelerin, en son teknoloji haberlerinin, cep telefonu incelemelerinin ve güncel makalelerin ilk …"
+    },
+    {
+      "title": "Güncel - CHIP Online",
+      "url": "https://www.chip.com.tr/guncel",
+      "snippet": "Güncel Roblox'ta yeni dönem: Birkaç cümleyle oyun yapıp platformun dışına çıkarabileceksiniz Roblox'ta yeni dönem: Birkaç …"
+    },
+    {
+      "title": "CHIP Online - Teknoloji Haberleri Burada",
+      "url": "https://servis.chip.com.tr/sitem/haber.htm",
+      "snippet": "Prison Break geri dönüyor ama bu kez Michael Scofield yok: İlk görüntüler geldi Roblox'ta yeni dönem: Birkaç cümleyle oyun yapıp …"
+    },
+    {
+      "title": "Downloads - CHIP",
+      "url": "https://www.chip.de/download/",
+      "snippet": "Download - Channel von CHIP Online: Die beste Software, die coolsten Open-Source-Tools, die spannendsten Demo-Programme …"
+    },
+    {
+      "title": "CHIP Forum",
+      "url": "https://forum.chip.com.tr/forum/",
+      "snippet": "Oct 5, 2015 · CHIP Online Forum: Teknoloji ve Bilişim Topluluğu ve Tartışma Platformu"
+    }
+  ]
+}

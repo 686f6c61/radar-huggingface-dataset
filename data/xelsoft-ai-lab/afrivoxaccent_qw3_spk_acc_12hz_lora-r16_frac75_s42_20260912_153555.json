@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_12hz_lora-r16_frac75_s42_20260912_153555",
+  "slug": "xelsoft-ai-lab-afrivoxaccent_qw3_spk_acc_12hz_lora-r16_frac75_s42_20260912_153555",
+  "author": "xelsoft-ai-lab",
+  "url": "https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_12hz_lora-r16_frac75_s42_20260912_153555",
+  "created_at": "2026-09-12T16:13:19.000Z",
+  "updated_at": "2026-09-12T16:13:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "wolof",
+    "afrivoxaccent",
+    "base_model:Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+    "base_model:adapter:Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 676598504,
+  "storage_human": "677 MB",
+  "base_model": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pet Rescue Saga - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.king.petrescuesaga&hl=en-US",
+      "snippet": "Match and blast blocks in a variety of events and puzzles to discover a whole new variety of pets waiting to be rescued! Not only do …"
+    },
+    {
+      "title": "Pet Rescue Saga Online - Play the game at King.com",
+      "url": "https://www.king.com/game/petrescue",
+      "snippet": "Play the Pet Rescue Saga game online and save the pets from the evil Pet Snatchers! Use your puzzle-solving skills to lead the cute …"
+    },
+    {
+      "title": "Pet Rescue Saga - Facebook",
+      "url": "https://www.facebook.com/PetRescueSaga/",
+      "snippet": "Jul 7, 2025 · A new challenge is spotted in Pet Rescue Saga! 🐾 Each week, you’ll be matched with 7 other players to see who can …"
+    },
+    {
+      "title": "Pet Rescue Saga online - Spelletje op King.com",
+      "url": "https://www.king.com/nl/game/petrescue",
+      "snippet": "Play Pet Rescue Saga and save the pets from the evil Pet Snatchers by matching and removing blocks in the cutest online game …"
+    },
+    {
+      "title": "Pet Rescue Saga - Free download and play on Windows | Microsoft …",
+      "url": "https://apps.microsoft.com/detail/9pndvcgvvt9d",
+      "snippet": "Pet Rescue Saga, from the makers of Candy Crush Saga & Farm Heroes Saga! Match two or more blocks of the same color to clear …"
+    }
+  ]
+}

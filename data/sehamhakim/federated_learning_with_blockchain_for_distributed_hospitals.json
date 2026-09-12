@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sehamhakim/Federated_Learning_with_Blockchain_for_Distributed_Hospitals",
+  "slug": "sehamhakim-federated_learning_with_blockchain_for_distributed_hospitals",
+  "author": "sehamhakim",
+  "url": "https://huggingface.co/sehamhakim/Federated_Learning_with_Blockchain_for_Distributed_Hospitals",
+  "created_at": "2026-09-12T13:33:15.000Z",
+  "updated_at": "2026-09-12T14:33:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "federated-learning",
+    "blockchain",
+    "healthcare",
+    "clinical-nlp",
+    "semantic-search",
+    "privacy-preserving",
+    "feature-extraction",
+    "base_model:ncbi/MedCPT-Query-Encoder",
+    "base_model:finetune:ncbi/MedCPT-Query-Encoder",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2393907855,
+  "storage_human": "2.4 GB",
+  "base_model": "ncbi/MedCPT-Query-Encoder",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "G HUB Gaming Software| Logitech G",
+      "url": "https://www.logitechg.com/en-us/software/ghub",
+      "snippet": "Unlock full potential with G HUB! Customize Logitech G gear: mouse, keyboard, headset, webcam settings. Create and share profiles …"
+    },
+    {
+      "title": "G HUB Gaming-Software | Logitech G",
+      "url": "https://www.logitechg.com/de-de/software/ghub",
+      "snippet": "Mit der Spiele-Funktion von Logitech G HUB kannst du deine Bibliothek in einer einzigen App verwalten. Starte, organisiere und …"
+    },
+    {
+      "title": "Software | Logitech",
+      "url": "https://www.logitech.com/en-us/software",
+      "snippet": "Total gear control with G HUB Logitech G HUB gives you a single portal for optimizing and customizing all your supported Logitech G …"
+    },
+    {
+      "title": "Software | Logitech",
+      "url": "https://www.logitech.com/de-de/software",
+      "snippet": "Logitech G HUB ist ein zentrales Portal zur Optimierung und Anpassung aller unterstützten Geräte von Logitech G: Mäuse, …"
+    },
+    {
+      "title": "Logitech G HUB Download Free - 2026.5.939708 | TechSpot",
+      "url": "https://www.techspot.com/downloads/7196-logitech-g-hub.html",
+      "snippet": "Aug 11, 2026 · Download Logitech G HUB - Logitech G HUB lets you customize Logitech G gaming mice, keyboards, headsets, …"
+    }
+  ]
+}

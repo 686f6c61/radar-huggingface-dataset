@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "wannaphong/typhoon-asr-streaming-115m",
+  "slug": "wannaphong-typhoon-asr-streaming-115m",
+  "author": "wannaphong",
+  "url": "https://huggingface.co/wannaphong/typhoon-asr-streaming-115m",
+  "created_at": "2026-09-12T11:08:40.000Z",
+  "updated_at": "2026-09-12T11:08:40.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "th"
+  ],
+  "tags": [
+    "nemo",
+    "automatic-speech-recognition",
+    "speech",
+    "streaming",
+    "FastConformer",
+    "Transducer",
+    "Thai",
+    "NeMo",
+    "th",
+    "base_model:typhoon-ai/typhoon-asr-realtime",
+    "base_model:finetune:typhoon-ai/typhoon-asr-realtime",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 462458880,
+  "storage_human": "462 MB",
+  "base_model": "scb10x/typhoon-asr-realtime",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Château d'Édimbourg — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ch%C3%A2teau_d%27%C3%89dimbourg",
+      "snippet": "Le château d'Édimbourg (Edinburgh Castle) est un château fort du XIIe siècle, d’ Édimbourg en Écosse, au Royaume-Uni, devenu, …"
+    },
+    {
+      "title": "Official Edinburgh Castle Website",
+      "url": "https://www.edinburghcastle.scot/",
+      "snippet": "Discover some highlights of a visit to Edinburgh Castle, from the Royal Palace and Honours of Scotland to Mons Meg and the …"
+    },
+    {
+      "title": "Château d'Édimbourg - Billets & Visites Edinburgh Castle",
+      "url": "https://edimbourgsite.fr/chateau-edimbourg.html",
+      "snippet": "Jun 25, 2026 · Au sommet de Castle Rock se trouve l'imposant château d'Édimbourg, ou Edinburgh Castle. Toutes les informations, …"
+    },
+    {
+      "title": "Château d'Édimbourg - Horaires, tarifs et adresse à Edimbourg",
+      "url": "https://www.edimbourg.fr/chateau-edimbourg",
+      "snippet": "Le Château d’Édimbourg est une ancienne forteresse qui fait partie de l'un des lieux les plus emblématiques de la ville et l’un des …"
+    },
+    {
+      "title": "Billets Château d'Édimbourg | Réservation Visites, Tarifs & Guide 2026",
+      "url": "https://edinburghcastle.co.scot/fr/",
+      "snippet": "Réservez vos billets pour le Château d'Édimbourg en ligne. Meilleurs prix pour l'entrée, visites guidées et accès coupe-file. Guide …"
+    }
+  ]
+}

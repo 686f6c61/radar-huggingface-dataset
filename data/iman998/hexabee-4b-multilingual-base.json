@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "Iman998/HexaBee-4B-Multilingual-Base",
+  "slug": "iman998-hexabee-4b-multilingual-base",
+  "author": "Iman998",
+  "url": "https://huggingface.co/Iman998/HexaBee-4B-Multilingual-Base",
+  "created_at": "2026-09-12T16:36:29.000Z",
+  "updated_at": "2026-09-12T16:54:19.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "fa",
+    "en",
+    "ar",
+    "zh",
+    "he",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "hexabee",
+    "translation",
+    "multilingual",
+    "research",
+    "synthetic-data",
+    "conversational",
+    "fa",
+    "en",
+    "ar",
+    "zh",
+    "he",
+    "es",
+    "arxiv:2503.19786",
+    "arxiv:2106.09685",
+    "base_model:google/gemma-3-4b-it",
+    "base_model:finetune:google/gemma-3-4b-it",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4300079472,
+  "parameters_human": "4.30B",
+  "storage_bytes": 8640575476,
+  "storage_human": "8.6 GB",
+  "base_model": "google/gemma-3-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "christ-swiss.ch",
+      "url": "http://christ-swiss.ch/fr/standorte",
+      "snippet": ""
+    },
+    {
+      "title": "CHRIST Montres & Bijoux Villars",
+      "url": "https://www.christ-swiss.ch/fr/standorte/CHRIST-Montres-&-Bijoux-Villars/s/3863_POS",
+      "snippet": "Route de Moncor 11752 Villars-sur-Glâne +41 26 350 28 77 Gérant (e): Fazlija Egzona"
+    },
+    {
+      "title": "CHRIST Uhren & Schmuck",
+      "url": "http://service.christ-swiss.ch/anmelden/index.html?lang=fr",
+      "snippet": "CHRIST Montres & Bijoux, Division de Coop Société Coopérative, Rudolf Diesel-Strasse 25, 8404 Winterthour Suisse, Tél. +41 52 …"
+    },
+    {
+      "title": "CHRIST Montres & Bijoux Grand-Lancy Centre Commercia",
+      "url": "https://www.christ-swiss.ch/de/points-de-vente/Carouge-La-Praille-Christ/s/3864_POS",
+      "snippet": "Route des Jeunes 101227 Grand-Lancy +41 22 301 65 48 Geschäftsführer (in): Beucler Sandrine"
+    },
+    {
+      "title": "CHRIST Montres & Bijoux Vevey St. Antoine",
+      "url": "https://www.christ-swiss.ch/de/points-de-vente/CHRIST-Montres-&-Bijoux-Vevey-St.-Antoine/s/3878_POS",
+      "snippet": "Avenue Général Guisan 151800 Vevey +41 21 921 33 39 Geschäftsführer (in): Nobili Laetitia"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Miiche/visualrl-qwen3vl4b-ppo1-4bx-c50-fix",
+  "slug": "miiche-visualrl-qwen3vl4b-ppo1-4bx-c50-fix",
+  "author": "Miiche",
+  "url": "https://huggingface.co/Miiche/visualrl-qwen3vl4b-ppo1-4bx-c50-fix",
+  "created_at": "2026-09-11T09:19:45.000Z",
+  "updated_at": "2026-09-12T13:32:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 667113612608,
+  "storage_human": "667.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "To Kill a Mockingbird Chapter 3 Summary & Analysis | LitCharts",
+      "url": "https://www.litcharts.com/lit/to-kill-a-mockingbird/chapter-3",
+      "snippet": "Throughout To Kill a Mockingbird, Scout witness... Over the course of the novel’s three years, Sco... After lunch, Scout tells Atticus …"
+    },
+    {
+      "title": "To Kill a Mockingbird Chapter 3 — Summary & Analysis",
+      "url": "https://storgy.com/works/to-kill-a-mockingbird/chapters/3/",
+      "snippet": "Chapter 3 begins in the schoolyard after Scout's fight with Walter Cunningham Jr. Jem steps in and invites Walter to lunch at their …"
+    },
+    {
+      "title": "To Kill a Mockingbird Chapter 3 Summary and Analysis - eNotes.com",
+      "url": "https://www.enotes.com/topics/to-kill-a-mockingbird/chapter-summaries/chapter-3-summary-analysis",
+      "snippet": "When the chapter opens, Scout is chasing down Walter and grinding his face into the dirt because he’s indirectly responsible for her …"
+    },
+    {
+      "title": "Chapter 3 Summary — To Kill a Mockingbird by Harper Lee",
+      "url": "https://americanliterature.com/author/harper-lee/book/to-kill-a-mockingbird/part-one-chapter-3/summary",
+      "snippet": "Chapter 3 of To Kill a Mockingbird introduces the Ewells, Calpurnia's lesson on dignity, and Atticus's famous advice about empathy …"
+    },
+    {
+      "title": "To Kill a Mockingbird Summary by Chapter | Harper Lee",
+      "url": "https://ursummary.com/to-kill-a-mockingbird-summary-by-chapter-harper-lee/",
+      "snippet": "Aug 5, 2026 · To Kill a Mockingbird Summary Chapter by Chapter ⚠️ Spoiler Warning: This section contains detailed, chapter-by …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "NAMAA-Space/araseg-e20-xlmr-nopnx-np-s2",
+  "slug": "namaa-space-araseg-e20-xlmr-nopnx-np-s2",
+  "author": "NAMAA-Space",
+  "url": "https://huggingface.co/NAMAA-Space/araseg-e20-xlmr-nopnx-np-s2",
+  "created_at": "2026-09-12T13:53:40.000Z",
+  "updated_at": "2026-09-12T14:32:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "arabic",
+    "text-segmentation",
+    "token-classification",
+    "araseg-2026",
+    "arabicnlp2026",
+    "shared-task",
+    "ar",
+    "base_model:FacebookAI/xlm-roberta-large",
+    "base_model:finetune:FacebookAI/xlm-roberta-large",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2239734894,
+  "storage_human": "2.2 GB",
+  "base_model": "FacebookAI/xlm-roberta-large",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Traueranzeigen aus Kiel und Segeberg | trauer-anzeigen.de",
+      "url": "https://trauer-anzeigen.de/kiel-und-segeberg",
+      "snippet": "Finden Sie hier Traueranzeigen, Todesanzeigen und Beileidsbekundungen aus Ihrer Tageszeitung oder passende Hilfe im Trauerfall. …"
+    },
+    {
+      "title": "Traueranzeigen der aktuellen Ausgabe | trauer-anzeigen.de",
+      "url": "https://trauer-anzeigen.de/kiel-und-segeberg/traueranzeigen-suche/aktuelle-ausgabe",
+      "snippet": "3 days ago · Finden Sie hier Traueranzeigen, Todesanzeigen und Beileidsbekundungen aus Ihrer Tageszeitung oder passende Hilfe …"
+    },
+    {
+      "title": "Trauer - Aktuelle Nachrichten und Kommentare - KN",
+      "url": "https://www.kn-online.de/themen/trauer/",
+      "snippet": "Eine 23-Jährige aus Kiel hat vor 15 Monaten ihren jüngeren Bruder durch Suizid verloren. Die ersten Monate nach seinem Tod seien …"
+    },
+    {
+      "title": "Traueranzeigen für Schleswig-Holstein",
+      "url": "https://trauer.shz.de/",
+      "snippet": "Finden Sie hier Traueranzeigen, Todesanzeigen und Beileidsbekundungen aus Ihrer Tageszeitung oder passende Hilfe im Trauerfall. …"
+    },
+    {
+      "title": "Traueranzeigen Kiel, Schleswig-Holstein",
+      "url": "https://traueranzeigeonline.de/verzeichnis/schleswig-holstein/kiel/",
+      "snippet": "Im Traueranzeigen-Verzeichnis sind derzeit 5 Einträge für Kiel in Schleswig-Holstein veröffentlicht."
+    }
+  ]
+}

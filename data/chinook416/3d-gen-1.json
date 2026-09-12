@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Chinook416/3d-gen-1",
+  "slug": "chinook416-3d-gen-1",
+  "author": "Chinook416",
+  "url": "https://huggingface.co/Chinook416/3d-gen-1",
+  "created_at": "2026-09-12T14:44:26.000Z",
+  "updated_at": "2026-09-12T14:44:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-3d",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-to-3d",
+    "arxiv:2311.15475",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1232354436,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Popeyes PH",
+      "url": "https://popeyes.ph/menu.html",
+      "snippet": "Fifty years ago in New Orleans, Louisiana, a taste sensation was born, What began with one smaller restaurant and one big idea …"
+    },
+    {
+      "title": "Popeyes Menu Acid Reflux Friendly Options Delivery or ... - Instacart",
+      "url": "https://www.instacart.com/store/s?k=popeyes+menu+acid+reflux+friendly+options&msockid=13b1a50b92c268213a53b2d99306692a",
+      "snippet": "You can get Popeyes Menu Acid Reflux Friendly Options products delivered same-day in as fast as one hour from stores near you …"
+    },
+    {
+      "title": "Popeyes Philippines Menu Prices (2026) – Full Updated List",
+      "url": "https://popeyesmenuandprices.com/popeyes-philippines-menu/",
+      "snippet": "Check out the Popeyes Philippines menu 2026! Find spicy chicken, tenders, sandwiches, sides, biscuits, and combos with prices & …"
+    },
+    {
+      "title": "Popeyes PH",
+      "url": "https://popeyes.ph/",
+      "snippet": "In addition to our fried chicken line, Popeyes also serves an array of sandwiches such as shrimp and Fish burgers, The famed US …"
+    },
+    {
+      "title": "Popeyes Menu Philippines (2026) — Philippine Menus",
+      "url": "https://menus.ph/popeyes-menu/",
+      "snippet": "Feb 28, 2023 · Popeyes’ famous fried chicken is prepared from scratch every day and bursts with Louisiana’s Cajun heritage. Sides …"
+    }
+  ]
+}

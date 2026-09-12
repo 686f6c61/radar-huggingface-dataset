@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "NAMAA-Space/araseg-e76-naqta-restore-nopnx-pa-s2",
+  "slug": "namaa-space-araseg-e76-naqta-restore-nopnx-pa-s2",
+  "author": "NAMAA-Space",
+  "url": "https://huggingface.co/NAMAA-Space/araseg-e76-naqta-restore-nopnx-pa-s2",
+  "created_at": "2026-09-12T13:57:15.000Z",
+  "updated_at": "2026-09-12T14:32:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "arabic",
+    "text-segmentation",
+    "token-classification",
+    "araseg-2026",
+    "arabicnlp2026",
+    "shared-task",
+    "ar",
+    "base_model:FacebookAI/xlm-roberta-large",
+    "base_model:finetune:FacebookAI/xlm-roberta-large",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2239734894,
+  "storage_human": "2.2 GB",
+  "base_model": "FacebookAI/xlm-roberta-large",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Bonjour, Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux …"
+    },
+    {
+      "title": "Arrière plan écran noir suite dernière MAJ windows 11",
+      "url": "https://forums.commentcamarche.net/forum/affich-38306104-arriere-plan-ecran-noir-suite-derniere-maj-windows-11",
+      "snippet": "Aug 29, 2026 · Bonjour, Depuis la dernière mise à jour de Windows 11, le 27/08/2026 l'arrière plan de l'écran est systématiquement …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msteams/forum/all/assignment-notifications-dont-occur-in-a-teams/30905e6b-adeb-4e92-848e-1d36efcc3a13",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/windows/forum/all/windows-only-has-2-restore-points-despite-lots-of/9902e91e-0dfb-4805-9c73-21d8ed7cb059",
+      "snippet": ""
+    },
+    {
+      "title": "Bip des heures",
+      "url": "https://forums.commentcamarche.net/forum/affich-38307340-bip-des-heures",
+      "snippet": "6 days ago · Bonsoir, 5- BIP HORAIRE Pour armer ou désarmer le Bip horaire, tenir D enfoncé puis presser sur B (sigle cases noires …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jnneumann/ocr-freeform",
+  "slug": "jnneumann-ocr-freeform",
+  "author": "jnneumann",
+  "url": "https://huggingface.co/jnneumann/ocr-freeform",
+  "created_at": "2026-09-12T10:44:33.000Z",
+  "updated_at": "2026-09-12T10:44:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "ocr-freeform",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Login - Entra - Intesa Sanpaolo",
+      "url": "https://www.intesasanpaolo.com/it/persone-e-famiglie/login-page.html",
+      "snippet": "ACCEDI ALLA TUA BANCA ONLINE. Inserisci gli stessi codici che usi sul \"vecchio\" internet banking."
+    },
+    {
+      "title": "Banca Intesa Sanpaolo - Conto Corrente per Famiglie, Giovani e Aziende",
+      "url": "https://www.intesasanpaolo.com/",
+      "snippet": "Visita il sito Intesasanpaolo.com e scopri la tua nuova banca online: un mondo di vantaggi e servizi che renderanno la tua vita più …"
+    },
+    {
+      "title": "Banco di Napoli - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Banco_di_Napoli",
+      "snippet": "Dopo circa due secoli di attività indipendente tra di loro, nel 1794 un decreto di re Ferdinando IV di Napoli portò all'unificazione degli …"
+    },
+    {
+      "title": "Login",
+      "url": "https://banking.bnl.it/",
+      "snippet": "I contenuti del sito hanno prevalentemente carattere promozionale e finalità pubblicitarie"
+    },
+    {
+      "title": "Storia: Banco di Napoli - Intesa Sanpaolo",
+      "url": "https://group.intesasanpaolo.com/it/chi-siamo/storia/banco-napoli",
+      "snippet": "Dec 16, 2010 · Il Banco di Napoli trae origine dai banchi pubblici dei luoghi pii, sorti a Napoli tra il XVI e il XVII secolo. Una delle prime …"
+    }
+  ]
+}
