@@ -4,11 +4,11 @@
   "slug": "msdos34-qwen-summarizer-persian",
   "author": "msdos34",
   "url": "https://huggingface.co/msdos34/qwen-summarizer-persian",
-  "created_at": "2026-09-11T17:04:53.000Z",
-  "updated_at": "2026-09-11T17:05:06.000Z",
+  "created_at": "2026-09-11T18:53:26.000Z",
+  "updated_at": "2026-09-11T20:43:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
-  "pipeline_tag": null,
+  "pipeline_tag": "text-generation",
   "library": "transformers",
   "languages": [
     "en"
@@ -19,8 +19,11 @@
     "text-generation-inference",
     "unsloth",
     "qwen3_5",
-    "trl",
-    "en",
+    "summarization",
+    "text-generation",
+    "conversational",
+    "fa",
+    "dataset:msdos34/persian-summary-dataset",
     "base_model:alphaedge-ai/Qwen3.5-2B-fas-16384",
     "base_model:finetune:alphaedge-ai/Qwen3.5-2B-fas-16384",
     "license:apache-2.0",
@@ -38,7 +41,7 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": false,
+  "is_conversational": true,
   "gated": false,
   "removed": false,
   "removed_at": null,

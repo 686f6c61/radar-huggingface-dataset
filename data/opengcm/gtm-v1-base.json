@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "OPENGCM/GTM-v1-base",
+  "slug": "opengcm-gtm-v1-base",
+  "author": "OPENGCM",
+  "url": "https://huggingface.co/OPENGCM/GTM-v1-base",
+  "created_at": "2026-09-12T00:35:24.000Z",
+  "updated_at": "2026-09-12T01:26:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gtm-gpt",
+    "text-generation",
+    "gpt",
+    "nanogpt",
+    "pytorch",
+    "from-scratch",
+    "small-language-model",
+    "slm",
+    "pretraining",
+    "muon-optimizer",
+    "single-gpu",
+    "base-model",
+    "research",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 133914880,
+  "parameters_human": "133.9M",
+  "storage_bytes": 535677184,
+  "storage_human": "536 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Streekgenoot - Streekgenoot",
+      "url": "https://www.streekgenoot.be/",
+      "snippet": "StreekgenoOt wordt gemaakt door Els Deleu. Ze was als freelancer actief bij verschillende media. Ze was voordien actief in diverse …"
+    },
+    {
+      "title": "Els Deleu - Facebook",
+      "url": "https://www.facebook.com/els.deleu/",
+      "snippet": "In de Vrije kleuter- en lagere school De Tandem in Bi... Wie heeft ook zin om in een warme school te werken? Kom jij ons team …"
+    },
+    {
+      "title": "Els Deleu, auteur op Streekgenoot",
+      "url": "https://www.streekgenoot.be/author/els/",
+      "snippet": "Op donderdagnamiddag 10 september werd in het woonzorgcentrum Ter Melle in Heule het ‘Tineke van Ter Melle’ verkozen. Het …"
+    },
+    {
+      "title": "Els Deleu - Journalist at streekgenoot.be | LinkedIn",
+      "url": "https://be.linkedin.com/in/els-deleu-171a3150",
+      "snippet": "View Els Deleu’s profile on LinkedIn, a professional community of 1 billion members."
+    },
+    {
+      "title": "Els Deleu - WZC TER MELLE | Facebook",
+      "url": "https://www.facebook.com/els.deleu/posts/wzc-ter-melle/10231331447690207/",
+      "snippet": "2 days ago · Op zaterdag 29 augustus vierden Ghislain Moriau (7... Els Deleu is at Stadhuis Harelbeke."
+    }
+  ]
+}

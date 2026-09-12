@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "MikhailRudenko/drafter-wmt16-translate-deen",
+  "slug": "mikhailrudenko-drafter-wmt16-translate-deen",
+  "author": "MikhailRudenko",
+  "url": "https://huggingface.co/MikhailRudenko/drafter-wmt16-translate-deen",
+  "created_at": "2026-09-11T20:26:54.000Z",
+  "updated_at": "2026-09-11T20:27:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "safetensors",
+    "mistral",
+    "speculative-decoding",
+    "domain-specific",
+    "drafter",
+    "translation",
+    "wmt16",
+    "text-generation",
+    "conversational",
+    "en",
+    "de",
+    "dataset:MikhailRudenko/domain-aware-sd-synthetic",
+    "base_model:MikhailRudenko/drafter-mixed-ut",
+    "base_model:finetune:MikhailRudenko/drafter-mixed-ut",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 156519168,
+  "parameters_human": "156.5M",
+  "storage_bytes": 313056097,
+  "storage_human": "313 MB",
+  "base_model": "MikhailRudenko/drafter-mixed-ut",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Messagerie Pro Orange: découvrez la messagerie et accédez à vos mails",
+      "url": "https://messagerie.orange.fr/pro/decouverte/",
+      "snippet": "La messagerie pro Orange vous offre un ensemble de services pour communiquer facilement en toute sécurité : mail, contacts, boite …"
+    },
+    {
+      "title": "Messagerie Orange",
+      "url": "https://messagerie.orange.fr/app-ads.txt",
+      "snippet": "# Application ORANGE MAIL # App-ads.txt file for messagerie.orange.fr # Last Update 24/08/2026 (adding ownerdomain) …"
+    }
+  ]
+}

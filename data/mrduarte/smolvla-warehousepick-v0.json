@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "MrDuarte/smolvla-WarehousePick-v0",
+  "slug": "mrduarte-smolvla-warehousepick-v0",
+  "author": "MrDuarte",
+  "url": "https://huggingface.co/MrDuarte/smolvla-WarehousePick-v0",
+  "created_at": "2026-09-12T01:31:45.000Z",
+  "updated_at": "2026-09-12T01:32:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:MrDuarte/WarehousePick-v0",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1197806488,
+  "storage_human": "1.2 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Titan Quest 2 – Official Game Site",
+      "url": "https://titanquest2.thqnordic.com/",
+      "snippet": "Aug 14, 2026 · Return to the classic mythology-inspired Titan Quest and go toe-to-toe with legendary monsters as you journey across …"
+    },
+    {
+      "title": "Titan Quest II on Steam",
+      "url": "https://store.steampowered.com/app/1154030/Titan_Quest_II/",
+      "snippet": "Take up your weapon, fight alongside gods, and change fate itself in Titan Quest II, an action RPG inspired by Greek mythology. Get …"
+    },
+    {
+      "title": "Titan Quest II - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Titan_Quest_II",
+      "snippet": "Titan Quest II is an upcoming action role-playing game developed by Grimlore Games and published by THQ Nordic. A sequel to …"
+    },
+    {
+      "title": "Titan Quest 2 Wiki",
+      "url": "https://titanquest2.wiki.fextralife.com/Titan+Quest+2+Wiki",
+      "snippet": "Apr 14, 2026 · Titan Quest 2 Wiki Guide: Find information on Masteries, Weapons, Armor, Items, Locations, Bosses, Walkthroughs, …"
+    },
+    {
+      "title": "Titan Quest 2 Walkthrough & Guides Wiki - Game8",
+      "url": "https://game8.co/games/Titan-Quest-2",
+      "snippet": "Aug 25, 2026 · Learn everything you need to know about Titan Quest 2, including a list of the best builds, a complete walkthrough, …"
+    }
+  ]
+}

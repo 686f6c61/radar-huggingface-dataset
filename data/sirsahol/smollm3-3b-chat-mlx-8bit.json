@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/SmolLM3-3B-chat-mlx-8bit",
+  "slug": "sirsahol-smollm3-3b-chat-mlx-8bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/SmolLM3-3B-chat-mlx-8bit",
+  "created_at": "2026-09-11T21:11:41.000Z",
+  "updated_at": "2026-09-11T22:54:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "smollm3",
+    "8-bit",
+    "conversational",
+    "text-generation",
+    "base_model:HuggingFaceTB/SmolLM3-3B",
+    "base_model:quantized:HuggingFaceTB/SmolLM3-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3075098624,
+  "parameters_human": "3.08B",
+  "storage_bytes": 3284735916,
+  "storage_human": "3.3 GB",
+  "base_model": "HuggingFaceTB/SmolLM3-3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+      "url": "https://www.speedtest.net/",
+      "snippet": "Use Speedtest on all your devices with our free desktop and mobile apps."
+    },
+    {
+      "title": "Internet Speed Test | Fast.com",
+      "url": "https://fast.com/",
+      "snippet": "How fast is your download speed? In seconds, FAST.com's simple Internet speed test will estimate your ISP speed."
+    },
+    {
+      "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+      "url": "https://www.speedtest.net/run",
+      "snippet": "Use Speedtest on all your devices with our free desktop and mobile apps."
+    },
+    {
+      "title": "Internet Speed Test - Measure Network Performance | Cloudflare",
+      "url": "https://speed.cloudflare.com/",
+      "snippet": "Check your network performance with our Internet speed test. Powered by Cloudflare's global edge network."
+    },
+    {
+      "title": "Internet Speed Test | Check Download & Upload Speeds",
+      "url": "https://www.highspeedinternet.com/tools/speed-test?msockid=3cafdcacaaa86b801314cb7dabb56a21",
+      "snippet": "Check your internet speed with our simple and fast speed test. Get detailed results for your download speed, upload speed, and …"
+    }
+  ]
+}

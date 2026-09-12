@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "haihengh/Qwen3.8-Flash-Next-125B-finch-4bit",
+  "slug": "haihengh-qwen3-8-flash-next-125b-finch-4bit",
+  "author": "haihengh",
+  "url": "https://huggingface.co/haihengh/Qwen3.8-Flash-Next-125B-finch-4bit",
+  "created_at": "2026-09-11T22:43:39.000Z",
+  "updated_at": "2026-09-12T01:12:25.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "moe",
+    "mixture-of-experts",
+    "quantized",
+    "4-bit",
+    "apple-silicon",
+    "ssd-streaming",
+    "finchmoe",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1417674752,
+  "storage_human": "1.4 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Omantel Logo PNG Vector (PDF) Free Download - seeklogo",
+      "url": "https://seeklogo.com/vector-logo/412139/omantel",
+      "snippet": "Download free Omantel vector logo and icons in PNG, SVG, AI, EPS, CDR formats."
+    },
+    {
+      "title": "Omantel عمانتل Logo & Brand Assets (SVG, PNG and vector)",
+      "url": "https://brandfetch.com/omantel.om",
+      "snippet": "Find the Omantel عمانتل style guide with brand assets such as logos, colors, fonts, and more."
+    },
+    {
+      "title": "Omantel Vector Logo SVG - Free Download | Worldvectorlogo",
+      "url": "https://worldvectorlogo.com/logo/omantel",
+      "snippet": "Jun 15, 2019 · Download the Omantel Vector Logo in high-quality SVG format for free. Instant download, no signup required. Clean, …"
+    },
+    {
+      "title": "Omantel Logo PNG Vectors Free Download - seeklogo",
+      "url": "https://seeklogo.com/free-vector-logos/omantel",
+      "snippet": "Omantel logo png vectors. We have 2 free Omantel logo png, transparent images, vector logos, logo templates and icons. You can …"
+    },
+    {
+      "title": "Omantel Logo - PNG Logo Vector Brand Downloads (SVG, EPS)",
+      "url": "https://www.freelogovectors.net/omantel-logo/",
+      "snippet": "Sep 27, 2021 · Omantel Logo vector in SVG, EPS, PDF formats. 100% free."
+    }
+  ]
+}

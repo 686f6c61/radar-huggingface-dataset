@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "minjaechoi/qwen36-twla-adaptive-init5-target2",
+  "slug": "minjaechoi-qwen36-twla-adaptive-init5-target2",
+  "author": "minjaechoi",
+  "url": "https://huggingface.co/minjaechoi/qwen36-twla-adaptive-init5-target2",
+  "created_at": "2026-09-12T01:12:15.000Z",
+  "updated_at": "2026-09-12T01:14:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234485269,
+  "storage_human": "70.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shingles - NHS",
+      "url": "https://www.nhs.uk/conditions/shingles/",
+      "snippet": "You can get shingles more than once, so it's important to get vaccinated even if you've had shingles before. Ask your GP surgery if …"
+    },
+    {
+      "title": "Shingles: How Does It Spread? - Healthline",
+      "url": "https://www.healthline.com/health/shingles-contagious",
+      "snippet": "Nov 26, 2024 · If you have shingles, you can pass the virus to another person if they come in direct contact with fluids from your …"
+    },
+    {
+      "title": "Is Shingles Contagious? - Verywell Health",
+      "url": "https://www.verywellhealth.com/is-shingles-contagious-5179955",
+      "snippet": "May 21, 2026 · You cannot catch shingles from someone else, but you can catch the virus that causes it if you have never had …"
+    },
+    {
+      "title": "Shingles - NHS inform",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/shingles",
+      "snippet": "Aug 6, 2026 · Stay off work or school if the rash is oozing fluid (weeping) and can’t be covered, or until the rash has dried out. You …"
+    },
+    {
+      "title": "Is Shingles Contagious? How Long Do Shingles Last? - MedicineNet",
+      "url": "https://www.medicinenet.com/is_shingles_contagious/article.htm",
+      "snippet": "Shingles rash is not contagious in that a rash from one individual is unable to spread to another individual. Individuals who never …"
+    }
+  ]
+}

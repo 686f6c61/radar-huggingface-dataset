@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "linfelix/mae-generation-small",
+  "slug": "linfelix-mae-generation-small",
+  "author": "linfelix",
+  "url": "https://huggingface.co/linfelix/mae-generation-small",
+  "created_at": "2026-09-11T20:41:39.000Z",
+  "updated_at": "2026-09-11T20:41:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jobsuche der BA – Startseite",
+      "url": "https://www.arbeitsagentur.de/jobsuche/",
+      "snippet": "Jobsuche der Bundesagentur für Arbeit. Hier Stellensuche nach neusten Jobs oder Ausbildungsplätzen starten in einer der größten …"
+    },
+    {
+      "title": "Jobs in Wutach | Jetzt 3.000 offene Stellen finden | Indeed",
+      "url": "https://de.indeed.com/l-wutach-jobs.html?vjk=6707093a27c3fac3",
+      "snippet": "Zur Verstärkung unseres Teams suchen wir ab sofort oder nach Vereinbarung einen Servicemitarbeiter (m/w/d) in Teilzeit (50 %) …"
+    },
+    {
+      "title": "AKTUELLE JOBS und Stellenangebote in GEMEINDE WUTACH",
+      "url": "https://www.stepstone.de/jobs/in-gemeinde-wutach?msockid=19f79d8dd150665321738a5cd03d6774",
+      "snippet": "Mehr als 40.000 Menschen arbeiten bei REMONDIS an ganzheitlichen Lösungen, die Fortschritt und Ressourcenschonung in …"
+    },
+    {
+      "title": "Jobs in Wutach - jobsuche-bw.de",
+      "url": "https://www.jobsuche-bw.de/stellenangebote/wutach",
+      "snippet": "Sep 4, 2026 · Finden Sie 207 Stellenangebote in Wutach bei jobsuche-bw.de. Das regionale Jobportal für Ihren Traumjob. Jobs aus …"
+    },
+    {
+      "title": "Jobs Ewattingen, Wutach - Aktuell 102 offene Stellen - Jooble",
+      "url": "https://de.jooble.org/stellenangebote/ewattingen%2c%20wutach",
+      "snippet": "Wir sind ein innovatives Unternehmen mit Sitz in Wutöschingen im Süden Baden-Württembergs und einer Schwestergesellschaft in …"
+    }
+  ]
+}

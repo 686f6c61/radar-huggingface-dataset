@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "fmassimo/URFM",
+  "slug": "fmassimo-urfm",
+  "author": "fmassimo",
+  "url": "https://huggingface.co/fmassimo/URFM",
+  "created_at": "2026-09-11T20:35:28.000Z",
+  "updated_at": "2026-09-11T20:38:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19108922027,
+  "storage_human": "19.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft macht Bing plötzlich zur „Empfehlung“ – sogar ... - CHIP",
+      "url": "https://www.chip.de/news/software/microsoft-macht-bing-ploetzlich-zur-empfehlung-sogar-in-chrome-und-firefox_f57996a5-6c2e-46a7-83db-96c277b71662.html",
+      "snippet": "Aug 26, 2026 · Microsoft testet offenbar eine neue Windows-Anwendung, die Bing gleich in mehreren Browsern als Standardsuche …"
+    },
+    {
+      "title": "Microsoft verteilt Bing über alle Browser: „Recommended Search …",
+      "url": "https://www.it-boltwise.de/microsoft-verteilt-bing-ueber-alle-browser-recommended-search-settings-im-test.html",
+      "snippet": "Aug 22, 2026 · Microsofts „Recommended Search Settings“ soll Bing als Standardsuche über mehrere Browser setzen. Das Tool …"
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/version",
+      "snippet": "Bing ... Versions"
+    },
+    {
+      "title": "Search - Bing",
+      "url": "https://www.bing.com/DefaultSearchEngine",
+      "snippet": "Enjoy AI-powered search and earning Microsoft rewards with every search"
+    },
+    {
+      "title": "Microsoft Bing | Bing kennenlernen",
+      "url": "https://www.microsoft.com/de-de/bing?msockid=112144506ecc6d950ad153816fec6c82",
+      "snippet": "Die Copilot-Suche in Bing bietet Ihnen schnelle, zusammengefasste Antworten mit zitierten Quellen und Vorschlägen für weitere …"
+    }
+  ]
+}

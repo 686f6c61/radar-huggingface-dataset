@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "karlsencoin/Karlsen-Chat-27B-abliterated-GGUF",
+  "slug": "karlsencoin-karlsen-chat-27b-abliterated-gguf",
+  "author": "karlsencoin",
+  "url": "https://huggingface.co/karlsencoin/Karlsen-Chat-27B-abliterated-GGUF",
+  "created_at": "2026-09-11T20:32:08.000Z",
+  "updated_at": "2026-09-11T20:32:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "huihui",
+    "qwen3",
+    "unsloth",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 15334642752,
+  "storage_human": "15.3 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "Karlsen Coin - GitHub",
+      "url": "https://github.com/karlsencoin",
+      "snippet": "Karlsen combines the GHOSTDAG consensus protocol with the KarlsenHashV2 proof-of-work algorithm (FishHashPlus DAG) — designed from the ground up to keep mining accessible to everyday GPU owners while channeling that same hardware into useful AI compute through the KarlsenAI inference network."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "Karlsen — Proof of Work. Proof of Intelligence.",
+      "url": "https://www.karlsencoin.org/",
+      "snippet": "Karlsen combines Proof-of-Work security with decentralized AI inference, creating an open network where GPUs, miners, developers, and users collaborate without centralized control."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    }
+  ]
+}

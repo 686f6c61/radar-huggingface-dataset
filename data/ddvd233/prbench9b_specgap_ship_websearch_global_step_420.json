@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ddvd233/prbench9b_specgap_ship_websearch_global_step_420",
+  "slug": "ddvd233-prbench9b_specgap_ship_websearch_global_step_420",
+  "author": "ddvd233",
+  "url": "https://huggingface.co/ddvd233/prbench9b_specgap_ship_websearch_global_step_420",
+  "created_at": "2026-09-11T20:35:10.000Z",
+  "updated_at": "2026-09-11T20:37:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "medical",
+    "reinforcement-learning",
+    "verl",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711717,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Maxton hall vider sezon 1 - video w cda.pl",
+      "url": "https://www.cda.pl/video/show/maxton_hall_vider_sezon_1/p1",
+      "snippet": "maxton hall vider sezon 1 - video (27) Filtruj"
+    },
+    {
+      "title": "Maxton Hall - Dwa światy Sezon 1 online - JustWatch",
+      "url": "https://www.justwatch.com/pl/serial/maxton-hall-the-world-between-us/sezon-1",
+      "snippet": "Streamuj, wypożycz lub kup Maxton Hall - Dwa światy – Sezon 1: Obecnie możesz oglądać \"Maxton Hall - Dwa światy - Sezon 1\" w …"
+    },
+    {
+      "title": "Prime Video: Maxton Hall - Dwa światy - sezon 1",
+      "url": "https://www.primevideo.com/-/pl/detail/0PNRI6RQY7CIO04HACV89WK5I3/",
+      "snippet": "Błyskotliwa i wzorowa uczennica Ruby niechcący odkrywa szokujący sekret, który może wstrząsnąć prywatnym liceum Maxton Hall. …"
+    },
+    {
+      "title": "Vider - poznaj bibliotekę filmów i seriali",
+      "url": "https://vider.live/",
+      "snippet": "Wejdź i dołącz do społeczności Vider, wyszukującej filmy i seriale w polskich wersjach językowych."
+    },
+    {
+      "title": "Maxton Hall - Dwa światy: Sezon 1 (2024) - Odcinki - FDB",
+      "url": "https://fdb.pl/film/1243452-maxton-hall-dwa-swiaty-sezon-1/episodes",
+      "snippet": "Maxton Hall - Dwa światy: Odrobina szczęścia 1x6 ... Nadszedł wreszcie czas rozmów kwalifikacyjnych na Oksford. Marzenia Ruby …"
+    }
+  ]
+}

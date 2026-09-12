@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ekunish/parc2026-track2-kairos-rim-capacity-20260909",
+  "slug": "ekunish-parc2026-track2-kairos-rim-capacity-20260909",
+  "author": "ekunish",
+  "url": "https://huggingface.co/ekunish/parc2026-track2-kairos-rim-capacity-20260909",
+  "created_at": "2026-09-09T09:51:25.000Z",
+  "updated_at": "2026-09-12T03:21:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "experimental",
+    "base_model:ACERobotics/kairos-4B-robot-LIBERO-plus",
+    "base_model:finetune:ACERobotics/kairos-4B-robot-LIBERO-plus",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 599251642730,
+  "storage_human": "599.3 GB",
+  "base_model": "ACERobotics/kairos-4B-robot-LIBERO-plus",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Google Traduttore",
+      "url": "https://translate.google.it/",
+      "snippet": "Il servizio di Google, offerto senza costi, traduce all'istante parole, frasi e pagine web dall'italiano a più di 100 altre lingue e viceversa."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google Tradutor",
+      "url": "https://translate.google.com.br/",
+      "snippet": "O serviço do Google, oferecido sem custo financeiro, traduz instantaneamente palavras, frases e páginas da Web do português para …"
+    },
+    {
+      "title": "Google Traductor",
+      "url": "https://translate.google.com.mx/",
+      "snippet": "El servicio de Google, que se ofrece sin costo, traduce al instante palabras, frases y páginas web del inglés a más de 100 idiomas."
+    }
+  ]
+}

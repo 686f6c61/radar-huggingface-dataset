@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "AmbikaSoni/qwen2.5-coder-1.5b-sql-lora-v2c",
+  "slug": "ambikasoni-qwen2-5-coder-1-5b-sql-lora-v2c",
+  "author": "AmbikaSoni",
+  "url": "https://huggingface.co/AmbikaSoni/qwen2.5-coder-1.5b-sql-lora-v2c",
+  "created_at": "2026-09-11T19:59:09.000Z",
+  "updated_at": "2026-09-11T19:59:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "text-to-sql",
+    "qlora",
+    "lora",
+    "colab",
+    "dataset:b-mc2/sql-create-context",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48403748,
+  "storage_human": "48 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kronen Zeitung | Aktuelle Nachrichten | krone.at",
+      "url": "https://www.krone.at/",
+      "snippet": "Der Online-Auftritt der Kronen Zeitung bietet aktuelle Nachrichten, Wetterinformationen, Horoskop und Services rund um Politik, …"
+    },
+    {
+      "title": "Top-10 Nachrichten aus Österreich und der ganzen Welt | krone.at",
+      "url": "https://www.krone.at/nachrichten",
+      "snippet": "Aktuelle Nachrichten aus Österreich & international im Überblick Politik, Wirtschaft, Wissenschaft, Bundesländer, Wissen & Co."
+    },
+    {
+      "title": "Top-10 Nachrichten aus Österreich | krone.at",
+      "url": "https://www.krone.at/oesterreich",
+      "snippet": "Nachrichten aus Österreich im Überblick: Bleiben Sie mit den nationalen News von krone.at immer auf dem Laufenden!"
+    },
+    {
+      "title": "Jetzt täglich Kreuzworträtsel online spielen | KRONEN ZEITUNG",
+      "url": "https://spiele.krone.at/kreuzwortraetsel/",
+      "snippet": "Spiele Kreuzworträtsel online und kostenlos Teste dein Wissen, finde die richtigen Wörter und trainiere dein Gedächtnis!"
+    },
+    {
+      "title": "Nachrichten Tirol: Aktuelle News aus dem Bundesland | krone.at",
+      "url": "https://www.krone.at/tirol",
+      "snippet": "Die neuesten Nachrichten & Meldungen aus Tirol: Mit den News von krone.at bleiben Sie immer top informiert Nichts verpassen!"
+    }
+  ]
+}

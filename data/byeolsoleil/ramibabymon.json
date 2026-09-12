@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "byeolsoleil/RamiBABYMON",
+  "slug": "byeolsoleil-ramibabymon",
+  "author": "byeolsoleil",
+  "url": "https://huggingface.co/byeolsoleil/RamiBABYMON",
+  "created_at": "2026-09-11T23:32:30.000Z",
+  "updated_at": "2026-09-11T23:33:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 189539087,
+  "storage_human": "190 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "University of Cambridge",
+      "url": "https://www.cam.ac.uk/",
+      "snippet": "The University of Cambridge is one of the world’s leading universities, with a rich history of radical thinking dating back to 1209."
+    },
+    {
+      "title": "Postgraduate Study - University of Cambridge",
+      "url": "https://www.postgraduate.study.cam.ac.uk/?ucam-ref=home-menu",
+      "snippet": "Cambridge is one of the best universities in the world. Browse our 300+ postgraduate courses, find out how to apply and explore …"
+    },
+    {
+      "title": "Undergraduate Study | University of Cambridge",
+      "url": "https://www.undergraduate.study.cam.ac.uk/",
+      "snippet": "At Cambridge you'll be part of a College. Colleges are where our students live, work, rest and play."
+    },
+    {
+      "title": "Study at Cambridge | University of Cambridge",
+      "url": "https://www.cam.ac.uk/study-at-cambridge",
+      "snippet": "Information about studying at Cambridge, including undergraduate courses, student life, finance and support. Cambridge offers over …"
+    },
+    {
+      "title": "International students | Undergraduate Study",
+      "url": "https://www.undergraduate.study.cam.ac.uk/international-students",
+      "snippet": "The University of Cambridge is a diverse international community and welcomes talented students from around the world. It's a great …"
+    }
+  ]
+}

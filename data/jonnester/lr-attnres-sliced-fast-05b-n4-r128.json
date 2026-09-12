@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Jonnester/LR-AttnRes-sliced-fast-05b-n4-r128",
+  "slug": "jonnester-lr-attnres-sliced-fast-05b-n4-r128",
+  "author": "Jonnester",
+  "url": "https://huggingface.co/Jonnester/LR-AttnRes-sliced-fast-05b-n4-r128",
+  "created_at": "2026-09-11T20:35:39.000Z",
+  "updated_at": "2026-09-11T20:36:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2472485163,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Color of Sunlight: Is Sunlight White or Colored? - Vedantu",
+      "url": "https://www.vedantu.com/physics/color-of-sunlight",
+      "snippet": "The actual colour of sunlight is white. While it might appear yellow or orange at different times of the day, sunlight is a composite light …"
+    },
+    {
+      "title": "Sunlight — White Or Coloured (13.6) - LIGHT - CBSE 8 Science",
+      "url": "https://allrounder.ai/cbse-8-science/light/sunlight-white-or-coloured-136-lesson-67b2ca",
+      "snippet": "This section discusses the concept of sunlight as white light containing multiple colors. An activity is proposed to confirm this idea …"
+    },
+    {
+      "title": "Sunlight : White or Coloured | Light | Science | Class 8 | iPrep",
+      "url": "https://www.youtube.com/watch?v=pE9e9GbBTEU",
+      "snippet": "Sep 25, 2024 · For more such engaging content, download iPrep and Learn Unlimited Play Store 𑗅 App Store 𑗅 Web: …"
+    },
+    {
+      "title": "Multiple Images, Sunlight - White or Coloured - Light | Class 8 …",
+      "url": "https://www.youtube.com/watch?v=t25W833sLPw",
+      "snippet": "Dive deep into the captivating world of accountancy as we explore key concepts essential for success in your studies."
+    },
+    {
+      "title": "Sunlight and Human eye — lesson. Science CBSE, Class 8.",
+      "url": "https://www.yaclass.in/p/science-cbse/class-8/light-18245/light-and-human-eye-4954/re-4631a7b3-b1b0-4dcd-aad5-0cbf4e89e96c",
+      "snippet": "When sunlight passes through some optical devices, such as a prism, it splits into seven component colours. The splitting of light into …"
+    }
+  ]
+}

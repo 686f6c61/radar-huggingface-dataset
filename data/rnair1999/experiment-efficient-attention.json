@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Rnair1999/experiment-efficient-attention",
+  "slug": "rnair1999-experiment-efficient-attention",
+  "author": "Rnair1999",
+  "url": "https://huggingface.co/Rnair1999/experiment-efficient-attention",
+  "created_at": "2026-09-11T20:45:58.000Z",
+  "updated_at": "2026-09-11T20:46:03.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "efficient-attention",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Netflix",
+      "url": "https://www.netflix.com/ar/login",
+      "snippet": "Disfruta películas y series en internet o en tu smart TV, consola de videojuegos, PC, Mac, dispositivo móvil, tablet y más."
+    },
+    {
+      "title": "Netflix",
+      "url": "https://www.netflix.com/es/login",
+      "snippet": "Disfruta de Netflix, películas y series en streaming en tu smart TV, consola, PC, Mac, móvil, tableta y más dispositivos."
+    },
+    {
+      "title": "Netflix",
+      "url": "https://app.netflix.com/signup",
+      "snippet": "Choose a Netflix subscription plan that's right for you. Downgrade, upgrade or cancel any time."
+    },
+    {
+      "title": "Netflix uygulamasını indirme | Netflix Yardım Merkezi",
+      "url": "https://help.netflix.com/tr/node/101653",
+      "snippet": "Netflix uygulamasını telefonunuza, tabletinize veya bilgisayarınıza indirmek için adım adım kılavuz."
+    },
+    {
+      "title": "Netflixにログインできない | Netflixヘルプセンター",
+      "url": "https://help.netflix.com/ja/node/470",
+      "snippet": "Netflixアカウントにログインできない場合は、次の中からお客様の状況に最も近い項目をお選びください。"
+    }
+  ]
+}

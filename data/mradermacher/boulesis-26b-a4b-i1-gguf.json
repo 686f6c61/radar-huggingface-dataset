@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Boulesis-26B-A4B-i1-GGUF",
+  "slug": "mradermacher-boulesis-26b-a4b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Boulesis-26B-A4B-i1-GGUF",
+  "created_at": "2026-09-11T21:27:17.000Z",
+  "updated_at": "2026-09-12T01:33:19.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "roleplay",
+    "merge",
+    "gemma4",
+    "moe",
+    "heretic",
+    "uncensored",
+    "sillytavern",
+    "thinking",
+    "reasoning",
+    "en",
+    "base_model:SubMaroon/Boulesis-26B-A4B",
+    "base_model:quantized:SubMaroon/Boulesis-26B-A4B",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25971339550,
+  "parameters_human": "25.97B",
+  "storage_bytes": 308922296064,
+  "storage_human": "308.9 GB",
+  "base_model": "SubMaroon/Boulesis-26B-A4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/ru",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Explore and share videos, music, and more on YouTube, the leading platform for online video streaming and sharing."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://studio.youtube.com/",
+      "snippet": "Share your videos with friends, family, and the world."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://accounts.google.com/InteractiveLogin?hl=ru&service=youtube&uilel=3",
+      "snippet": "Делитесь своими видео с друзьями, родственниками и всем миром."
+    }
+  ]
+}

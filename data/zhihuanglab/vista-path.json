@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "zhihuanglab/VISTA-PATH",
+  "slug": "zhihuanglab-vista-path",
+  "author": "zhihuanglab",
+  "url": "https://huggingface.co/zhihuanglab/VISTA-PATH",
+  "created_at": "2026-08-20T17:03:15.000Z",
+  "updated_at": "2026-09-12T00:14:00.000Z",
+  "license": "penn-academic-software-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "pathology",
+    "histopathology",
+    "medical-imaging",
+    "segmentation",
+    "whole-slide-image",
+    "interactive-segmentation",
+    "foundation-model",
+    "image-segmentation",
+    "arxiv:2601.16451",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 541179479,
+  "storage_human": "541 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Netflix - Watch TV Shows Online, Watch Movies Online",
+      "url": "https://www.netflix.com/",
+      "snippet": "Watch Netflix movies & TV shows online or stream right to your smart TV, game console, PC, Mac, mobile, tablet and more."
+    },
+    {
+      "title": "Netflix",
+      "url": "https://www.netflix.com/LOGIN?cookieCheck=true",
+      "snippet": "Watch Netflix movies & TV shows online or stream right to your smart TV, game console, PC, Mac, mobile, tablet and more."
+    },
+    {
+      "title": "Netflix",
+      "url": "https://app.netflix.com/signup",
+      "snippet": "Choose a Netflix subscription plan that's right for you. Downgrade, upgrade or cancel any time."
+    },
+    {
+      "title": "Netflix",
+      "url": "https://sprp.prod.netflix.net/",
+      "snippet": "Netflix offers a wide range of movies, TV shows, and original content for streaming online."
+    },
+    {
+      "title": "Netflix - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.netflix.mediaclient&hl=en-US",
+      "snippet": "Netflix is the leading subscription service for watching TV episodes and movies."
+    }
+  ]
+}

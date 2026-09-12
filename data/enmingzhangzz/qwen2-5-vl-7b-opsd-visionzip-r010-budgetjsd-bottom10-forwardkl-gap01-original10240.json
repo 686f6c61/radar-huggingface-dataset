@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-BudgetJSD-Bottom10-ForwardKL-gap01-original10240",
+  "slug": "enmingzhangzz-qwen2-5-vl-7b-opsd-visionzip-r010-budgetjsd-bottom10-forwardkl-gap01-original10240",
+  "author": "enmingzhangzz",
+  "url": "https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-BudgetJSD-Bottom10-ForwardKL-gap01-original10240",
+  "created_at": "2026-09-11T23:48:06.000Z",
+  "updated_at": "2026-09-11T23:48:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "opsd",
+    "qwen2.5-vl",
+    "visionzip",
+    "forward-kl",
+    "budget-jsd",
+    "token-selection",
+    "lora",
+    "image-text-to-text",
+    "dataset:OpenMMReasoner/OpenMMReasoner-SFT-874K",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-VL-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 161539072,
+  "storage_human": "162 MB",
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "More Like Little teen baddie from Gonewild18 | Scrolller",
+      "url": "https://scrolller.com/little-teen-baddie-6kwotmpajp/discover",
+      "snippet": "Explore videos and pictures related to Little teen baddie from Gonewild18 and similar subreddits on Scrolller."
+    },
+    {
+      "title": "Free Porn, Sex, Tube Videos, XXX Pics, Pussy in Porno Movies",
+      "url": "https://www.xnxx.com/video-1192uxd5/deutsche_lehrerin_fickt_jungspund_schuler_auf_der_klassenfahrt",
+      "snippet": "Sorry, this URL is outdated. Go back to the main page."
+    },
+    {
+      "title": "Dieses junge Mädchen wird von einem süßen, fitten Kerl hart gefickt ...",
+      "url": "https://de.xvix.eu/embed/5853",
+      "snippet": "Es gibt nichts, was dieses atemberaubende junge Mädchen mehr liebt, als von einem fitten Kerl hart in ihre süße Muschi gefickt zu …"
+    },
+    {
+      "title": "Stief Mutter fickt mit Riesen Pimmel Stiefsohn und seinem Schulfreund ...",
+      "url": "https://www.xnxx.com/video-wfkn187/stief_mutter_fickt_mit_riesen_pimmel_stiefsohn_und_seinem_schulfreund_im_dreier_-_german_mature",
+      "snippet": "Stief Mutter fickt mit Riesen Pimmel Stiefsohn und seinem Schulfreund im Dreier - German Mature, free sex video"
+    },
+    {
+      "title": "Die blonde Hure wird von zwei Sportlehrern gefickt | xvix.eu",
+      "url": "https://de.xvix.eu/embed/2179",
+      "snippet": "Diese blonde Hure kann endlich ihren Wunsch erfüllen, von einem Sportlehrer im Fitnessstudio gefickt zu werden. Diese blonde …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "qing-yao",
   "url": "https://huggingface.co/qing-yao/babylm-opt-sva-seed42-11451088",
   "created_at": "2026-09-10T22:27:52.000Z",
-  "updated_at": "2026-09-11T03:30:50.000Z",
+  "updated_at": "2026-09-11T16:19:43.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 572,
   "trending_score": 0,
   "parameters": 110419968,
   "parameters_human": "110.4M",
-  "storage_bytes": 192240019247,
-  "storage_human": "192.2 GB",
+  "storage_bytes": 194007099251,
+  "storage_human": "194.0 GB",
   "base_model": "models/babylm-default_seed-42_1e-3",
   "formats": [
     "safetensors"

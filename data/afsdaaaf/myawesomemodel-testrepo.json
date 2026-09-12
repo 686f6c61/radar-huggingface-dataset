@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "afsdaaaf/MyAwesomeModel-TestRepo",
+  "slug": "afsdaaaf-myawesomemodel-testrepo",
+  "author": "afsdaaaf",
+  "url": "https://huggingface.co/afsdaaaf/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-11T21:10:12.000Z",
+  "updated_at": "2026-09-11T21:29:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "День открытых памятников в Германии. Что нужно знать?",
+      "url": "https://www.dw.com/ru/den-otkrytyh-pamatnikov-v-germanii-2026-cto-nuzno-znat/a-78889331",
+      "snippet": "22 hours ago · Популярная акция традиционно проходит во второе воскресенье сентября, хотя некоторые мероприятия …"
+    },
+    {
+      "title": "Музей «Вайсенхоф» в День открытых дверей",
+      "url": "https://www.stuttgart.de/ru/veranstaltungskalender/veranstaltungen/weissenhofmuseum-am-tag-des-offenen-denkmals-533479",
+      "snippet": "В воскресенье, 13 сентября 2026 года, музей «Вайссенхоф» в доме Ле Корбюзье вновь примет участие в общенациональном …"
+    },
+    {
+      "title": "Umutai | жизнь в европе • photographer • travel | Куда поехать из ...",
+      "url": "https://www.instagram.com/reel/DdCgCLrIEcB/",
+      "snippet": "415 likes, 22 comments - hopie_zehn on September 8, 2026: \"Куда поехать из Мюнхена на один день: Регенсбург + Валхалла …"
+    },
+    {
+      "title": "Календарь праздников и каникул в Баварии, Германия",
+      "url": "https://kalender-plus.de/ru/federalnye-zemli/bavariya/",
+      "snippet": "Aug 8, 2026 · Расписание официальных праздников, свободных от работы дней и школьных каникул в Германии, в …"
+    },
+    {
+      "title": "Tag der offenen Tür in Deutschland 2026 - Termine & Infos",
+      "url": "https://veranstaltungen.meinestadt.de/deutschland/freizeit-ausflug/tag-off-tuer",
+      "snippet": "Sep 12, 2026 · Alle Infos und Termine für Tag der offenen Tür für Deutschland und Umgebung findest du ☝️ hier!"
+    }
+  ]
+}

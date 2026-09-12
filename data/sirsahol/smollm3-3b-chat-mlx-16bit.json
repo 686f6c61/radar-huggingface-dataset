@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/SmolLM3-3B-chat-mlx-16bit",
+  "slug": "sirsahol-smollm3-3b-chat-mlx-16bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/SmolLM3-3B-chat-mlx-16bit",
+  "created_at": "2026-09-11T22:55:52.000Z",
+  "updated_at": "2026-09-12T01:37:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "smollm3",
+    "conversational",
+    "text-generation",
+    "base_model:HuggingFaceTB/SmolLM3-3B",
+    "base_model:finetune:HuggingFaceTB/SmolLM3-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3075098624,
+  "parameters_human": "3.08B",
+  "storage_bytes": 6167443763,
+  "storage_human": "6.2 GB",
+  "base_model": "HuggingFaceTB/SmolLM3-3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=100a2591827562152e19324383a4635e",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=100a2591827562152e19324383a4635e",
+      "snippet": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and …"
+    },
+    {
+      "title": "Microsoft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft",
+      "snippet": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington. The company …"
+    }
+  ]
+}

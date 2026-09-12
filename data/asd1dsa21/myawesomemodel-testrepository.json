@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "asd1dsa21/MyAwesomeModel-TestRepository",
+  "slug": "asd1dsa21-myawesomemodel-testrepository",
+  "author": "asd1dsa21",
+  "url": "https://huggingface.co/asd1dsa21/MyAwesomeModel-TestRepository",
+  "created_at": "2026-09-12T00:55:57.000Z",
+  "updated_at": "2026-09-12T01:10:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "My Kohl's",
+      "url": "https://mykohls.kohls.com/",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Sign In - Kohl's",
+      "url": "https://location-data-service.kohls.com/api/auth/signin/okta",
+      "snippet": "Sign In Sign in with Okta"
+    },
+    {
+      "title": "Employee Portal | The KOHL Group, Inc.",
+      "url": "https://kohlgroup.com/employee-portal/",
+      "snippet": "To view it please enter your password below:"
+    },
+    {
+      "title": "Kohl's Portal",
+      "url": "https://kohls.solutions.arcadis.com/portal/SsoMain.aspx",
+      "snippet": "Portal."
+    },
+    {
+      "title": "Login - My Kohl's",
+      "url": "https://mykohls.kohls.com/login?local=True&error=No%20valid%20%22InResponseTo%22%20element%20found%2C%20check%20that%20cookies%20are%20enabled%20in%20your%20browser",
+      "snippet": "Remember me?"
+    }
+  ]
+}

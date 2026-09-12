@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "itsZyn/ZynDwarf-1.1",
+  "slug": "itszyn-zyndwarf-1-1",
+  "author": "itsZyn",
+  "url": "https://huggingface.co/itsZyn/ZynDwarf-1.1",
+  "created_at": "2026-09-12T01:29:52.000Z",
+  "updated_at": "2026-09-12T01:30:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "lfm2",
+    "text-generation",
+    "causal-lm",
+    "lfm2.5",
+    "tool-use",
+    "function-calling",
+    "agents",
+    "agentic",
+    "conversational",
+    "code",
+    "programming",
+    "spanish",
+    "english",
+    "q4_k_m",
+    "f16",
+    "en",
+    "es",
+    "base_model:LiquidAI/LFM2.5-350M",
+    "base_model:quantized:LiquidAI/LFM2.5-350M",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 354483968,
+  "parameters_human": "354.5M",
+  "storage_bytes": 2358754256,
+  "storage_human": "2.4 GB",
+  "base_model": "LiquidAI/LFM2.5-350M",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Teenager – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Teenager",
+      "snippet": "Teenager in Mexiko Das Wort Teenager [ˈtiːnˌeɪdʒə (ɹ)], verkürzt auch Teen, stammt aus dem Englischen und bezeichnet eigentlich …"
+    },
+    {
+      "title": "Teenie – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Teenie?redirect=no",
+      "snippet": "Teenie – Wikipedia en hinzufügenAbschnitt hinzufügen"
+    },
+    {
+      "title": "Bilder und Stockfotos zu Mädchen 13 Jahre - Getty Images",
+      "url": "https://www.gettyimages.de/fotos/m%C3%A4dchen-13-jahre",
+      "snippet": "Entdecken Sie authentische Stock-Fotos und Bilder zum Thema Mädchen 13 Jahre für Ihr Projekt oder Ihre Kampagne. Weniger …"
+    },
+    {
+      "title": "163.400+ Videos und Footage zu Hübsche Junge Mädchen - iStock",
+      "url": "https://www.istockphoto.com/de/videos/h%C3%BCbsche-junge-m%C3%A4dchen?msockid=29afc3b1210463f42cb2d463201f6204",
+      "snippet": "Finden Sie Hübsche Junge Mädchen Lizenzfreie 4K und HD-Videos von iStock. Exklusive Clips die Sie nirgendwo sonst finden."
+    },
+    {
+      "title": "100 beliebteste teenie-komödie-Filme - IMDb",
+      "url": "https://www.imdb.com/de/chart/movie/in0000049/",
+      "snippet": "Nicht noch ein Teenie-Film 2001 1h 29m 12 5,8 (128.441) Bewerten Als gesehen markieren"
+    }
+  ]
+}

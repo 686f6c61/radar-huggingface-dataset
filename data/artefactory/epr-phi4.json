@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "artefactory/epr-phi4",
+  "slug": "artefactory-epr-phi4",
+  "author": "artefactory",
+  "url": "https://huggingface.co/artefactory/epr-phi4",
+  "created_at": "2026-08-06T18:04:48.000Z",
+  "updated_at": "2026-09-11T23:59:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "artefactual",
+    "skops",
+    "hallucination-detection",
+    "uncertainty-estimation",
+    "text-classification",
+    "arxiv:2509.04492",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tansik.egypt.gov.eg",
+      "url": "https://tansik.egypt.gov.eg/",
+      "snippet": "موقع التنسيق الإلكتروني لتقديم طلبات القبول بالجامعات والمعاهد المصرية."
+    },
+    {
+      "title": "تنسيق القبول بالكليات والمعاهد",
+      "url": "https://tansik.digital.gov.eg/application/main.aspx?Certificate=4",
+      "snippet": "صفحة تنسيق القبول بالكليات والمعاهد المصرية لتقديم خدمات التنسيق الإلكتروني للطلاب."
+    },
+    {
+      "title": "Home Page [tansik.digital.gov.eg]",
+      "url": "https://tansik.digital.gov.eg/application/Certificates/Thanwy/defaultThanwy.aspx",
+      "snippet": "هذه الصفحة تقدم خدمات التنسيق الإلكتروني للطلاب الراغبين في الالتحاق بالجامعات والمعاهد المصرية."
+    },
+    {
+      "title": "Home Page [www.tansiknatiga.digital.gov.eg]",
+      "url": "https://www.tansiknatiga.digital.gov.eg/",
+      "snippet": "وزارة التعليم العالي مكتب تنسـيق القبـول بالجامعـات والمعاهــد الصفحه الرسميه الوحيدة لموقع التنسيق الإلكتروني هي - tansik.digital.gov.eg تليفون 15999"
+    },
+    {
+      "title": "MOE - تنسيق",
+      "url": "https://tansikgprim.emis.gov.eg/?mibextid=xfxF2i",
+      "snippet": "تنسيق القبول في الجامعات والمعاهد المصرية وتحديد رغبات الطلاب."
+    }
+  ]
+}

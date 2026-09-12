@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "zSQ2WSA/myawesome-model",
+  "slug": "zsq2wsa-myawesome-model",
+  "author": "zSQ2WSA",
+  "url": "https://huggingface.co/zSQ2WSA/myawesome-model",
+  "created_at": "2026-09-11T22:40:58.000Z",
+  "updated_at": "2026-09-11T23:39:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Raid Pest Control Products Effectiveness [The Residual Truth]",
+      "url": "https://www.thesanlupeproject.org/raid-pest-control-products-effectiveness",
+      "snippet": "Apr 6, 2026 · Does Raid actually work? Discover the science behind Raid's knockdown speed vs. long-term effectiveness. Get the …"
+    },
+    {
+      "title": "Reviews for Raid 327315 Pesticides - Lowe's",
+      "url": "https://www.lowes.com/reviews/raid-327315-insect-pest-control/5013764657?msockid=0640d9f4422a6df027e5ce25439c6cb2",
+      "snippet": "Aug 28, 2026 · Customers overwhelmingly praise the powerful pest control effectiveness, with most reporting immediate results …"
+    },
+    {
+      "title": "Raid Ant & Roach Killer Review 2026: Pros and Cons",
+      "url": "https://pestproreviews.com/raid-ant-roach-killer-review/",
+      "snippet": "Jun 28, 2026 · Our hands-on review covers its real-world effectiveness, pros and cons, safety for families and pets, and how it …"
+    },
+    {
+      "title": "The 30 Best Raid Pest Repellents of 2026 [Verified] - Cherry Picks",
+      "url": "https://www.cherrypicksreviews.com/pest-repellents/raid",
+      "snippet": "Aug 7, 2026 · Here is a Top Rated Raid Pest Repellents list ranked by CherryPicks, Based on our unbiased evaluations of over …"
+    },
+    {
+      "title": "Best Raid Pest Controls: Safeguard Your Home with Top Solutions",
+      "url": "https://10bestpicked.com/best-raid-pest-controls/",
+      "snippet": "Jul 10, 2024 · Whether you’re dealing with ants, roaches, spiders, or other common household pests, our reviews will highlight the …"
+    }
+  ]
+}

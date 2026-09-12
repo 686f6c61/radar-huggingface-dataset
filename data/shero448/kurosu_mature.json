@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Shero448/kurosu_mature",
+  "slug": "shero448-kurosu_mature",
+  "author": "Shero448",
+  "url": "https://huggingface.co/Shero448/kurosu_mature",
+  "created_at": "2026-09-11T22:55:51.000Z",
+  "updated_at": "2026-09-11T22:56:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:John6666/prefect-illustrious-xl-v15-sdxl",
+    "base_model:adapter:John6666/prefect-illustrious-xl-v15-sdxl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 229400282,
+  "storage_human": "229 MB",
+  "base_model": "John6666/prefect-illustrious-xl-v15-sdxl",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shopify Community",
+      "url": "https://community.shopify.com/",
+      "snippet": "Access a community of over 500,000 Shopify Merchants and Partners and engage in meaningful conversations with your peers."
+    },
+    {
+      "title": "Is this Shopify email legitimate or a scam?",
+      "url": "https://community.shopify.com/t/is-this-shopify-email-legitimate-or-a-scam/331684",
+      "snippet": "Jun 14, 2024 · Thank you for taking the time to reach out to the Shopify Community Forums regarding this email that you’ve received. …"
+    },
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/selection/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，提供知识共享、互动交流和个人成长机会。"
+    },
+    {
+      "title": "什么是Shopify? - 知乎",
+      "url": "https://www.zhihu.com/question/636458573",
+      "snippet": "Shopify是目前全球知名的一站式SaaS模式的电商服务平台，于2015年在纽约与多伦多两地证券交易所上市，目前已经超过100万家电 …"
+    },
+    {
+      "title": "Italiano Forum - Shopify Community",
+      "url": "https://community.shopify.com/c/it/16",
+      "snippet": "Aug 25, 2026 · Italiano Forum Italiano Discussioni"
+    }
+  ]
+}

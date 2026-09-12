@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "Max-GE/Qwen3.8-27B-uncen",
+  "slug": "max-ge-qwen3-8-27b-uncen",
+  "author": "Max-GE",
+  "url": "https://huggingface.co/Max-GE/Qwen3.8-27B-uncen",
+  "created_at": "2026-09-11T22:55:42.000Z",
+  "updated_at": "2026-09-11T22:55:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "unsloth",
+    "fine tune",
+    "heretic",
+    "uncensored",
+    "abliterated",
+    "ara",
+    "MTP GGUF Quants",
+    "Regular GGUF Quants",
+    "qwen3_8",
+    "qwen3_6",
+    "qwen3_5",
+    "multi-stage tuned",
+    "thinking",
+    "reasoning",
+    "all use cases",
+    "coder",
+    "creative",
+    "creative writing",
+    "all genres",
+    "story",
+    "writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "multi-stage-tune",
+    "multi-state-merge",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "dataset:DavidAU/Polar-STRICT-Datasets",
+    "dataset:DavidAU/F451-STRICT-Datasets",
+    "base_model:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 424062644635,
+  "storage_human": "424.1 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HBO Max | HBO, Eurosport, Discovery, télévision et films en streaming",
+      "url": "https://www.hbomax.com/fr/fr",
+      "snippet": "Avec HBO Max, regardez la télévision, des films, des histoires vraies et le sport en direct avec Eurosport. Découvrez le meilleur …"
+    },
+    {
+      "title": "HBO Max | Stream Series and Movies",
+      "url": "https://www.hbomax.com/",
+      "snippet": "By signing up for this bundle, HBO Max will share your email address & subscription details with Disney+ and Hulu for eligibility, …"
+    },
+    {
+      "title": "Max",
+      "url": "https://auth.hbomax.com/login",
+      "snippet": "Sign in to access HBO Max, the streaming platform with movies, series, and exclusive Max Originals."
+    },
+    {
+      "title": "HBO Max",
+      "url": "https://tizen.play.max.com/",
+      "snippet": "Max offers a streaming platform with HBO, Discovery, Warner Bros., live sports, news, and entertainment."
+    },
+    {
+      "title": "HBO Max",
+      "url": "https://webos.play-hbo.max.com/",
+      "snippet": "Stream Max, the ultimate platform combining HBO content, favorite movies, TV shows, and exclusive Max Originals."
+    }
+  ]
+}

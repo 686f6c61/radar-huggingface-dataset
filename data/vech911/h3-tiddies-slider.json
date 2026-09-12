@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Vech911/h3-tiddies-slider",
+  "slug": "vech911-h3-tiddies-slider",
+  "author": "Vech911",
+  "url": "https://huggingface.co/Vech911/h3-tiddies-slider",
+  "created_at": "2026-09-11T21:43:00.000Z",
+  "updated_at": "2026-09-11T21:45:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77580824,
+  "storage_human": "78 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FlightAware - Flight Tracker / Flight Status",
+      "url": "https://www.flightaware.com/",
+      "snippet": "Best Flight Tracker: Live Tracking Maps, Flight Status, and Airport Delays for airline flights, private/GA flights, and airports."
+    },
+    {
+      "title": "Flight Finder - FlightAware",
+      "url": "https://www.flightaware.com/live/findflight",
+      "snippet": "Find and track any flight (airline or private) -- search by origin and destination."
+    },
+    {
+      "title": "Live Flight Tracker - FlightAware",
+      "url": "https://www.flightaware.com/live/?v=1.0.24",
+      "snippet": "Best Flight Tracker: Live Tracking Maps, Flight Status, and Airport Delays for airline flights, private/GA flights, and airports."
+    },
+    {
+      "title": "Live Southwest Flight Status - FlightAware",
+      "url": "https://www.flightaware.com/live/fleet/SWA",
+      "snippet": "Southwest Flight Status (with flight tracker and live maps) -- view all flights or track any Southwest flight"
+    },
+    {
+      "title": "FlightAware Live",
+      "url": "https://www.flightaware.com/live/map",
+      "snippet": "View live flight tracking maps, flight status updates, and airport delays for commercial and private flights."
+    }
+  ]
+}

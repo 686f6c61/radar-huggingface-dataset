@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "cloverx-id/LuminaV-Optimizer-Paper",
+  "slug": "cloverx-id-luminav-optimizer-paper",
+  "author": "cloverx-id",
+  "url": "https://huggingface.co/cloverx-id/LuminaV-Optimizer-Paper",
+  "created_at": "2026-09-11T11:59:01.000Z",
+  "updated_at": "2026-09-12T02:25:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "optimizer",
+    "custom-optimizer",
+    "triton",
+    "memory-efficient",
+    "stochastic-rounding",
+    "low-vram",
+    "bf16",
+    "fp16",
+    "adamw",
+    "cuda",
+    "llm",
+    "transformer",
+    "deep-learning",
+    "research",
+    "3am-engineering",
+    "en",
+    "doi:10.57967/hf/10365",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 715173,
+  "storage_human": "715173 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "O Chamado de Deus: Como Identificar e Responder ao Seu Propósito",
+      "url": "https://ebdinterativa.com.br/o-chamado-de-deus-como-identificar-e-responder-ao-seu-proposito/",
+      "snippet": "O Que Significa o Chamado de Deus? O chamado de Deus é a vocação divina para desempenhar uma missão específica na obra …"
+    },
+    {
+      "title": "O Chamado de Deus na Vida Pessoal – Motivacional Cristão – …",
+      "url": "https://motivacionalcristao.com.br/o-chamado-de-deus-na-vida-pessoal/",
+      "snippet": "May 14, 2025 · O chamado de Deus na vida pessoal é um tema que ressoa profundamente na vida de todo cristão. O que significa …"
+    },
+    {
+      "title": "O Chamado de Deus na Vida Pessoal - Gospel Planet",
+      "url": "https://gospelplanet.com.br/o-chamado-de-deus-na-vida-pessoal/",
+      "snippet": "O chamado de Deus na vida pessoal é um tema que ressoa profundamente na vida de todo cristão. O que significa ser chamado por …"
+    },
+    {
+      "title": "O Chamado de Deus: Como Identificar e Responder ao Seu Propósito",
+      "url": "https://ebdbelem.com.br/o-chamado-de-deus/",
+      "snippet": "Jan 11, 2025 · Como identificar e responder ao chamado de Deus para cumprir seu propósito. Este artigo explora sinais bíblicos e …"
+    },
+    {
+      "title": "Versículos sobre o chamado de Deus - Bíblia",
+      "url": "https://www.bibliaon.com/chamado/",
+      "snippet": "Quando a Bíblia fala de chamado, a referência é quase sempre ao chamado de Deus ou a chamada Deus sobre a vida do crente. É …"
+    }
+  ]
+}

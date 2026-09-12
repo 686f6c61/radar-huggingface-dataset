@@ -5,7 +5,7 @@
   "author": "JigSawPT",
   "url": "https://huggingface.co/JigSawPT/DeepSeek-V4.1-Flash-DSpark-GGUF",
   "created_at": "2026-09-11T12:09:01.000Z",
-  "updated_at": "2026-09-11T12:12:18.000Z",
+  "updated_at": "2026-09-11T14:37:05.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,7 +24,7 @@
     "region:us",
     "conversational"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 14225362146,

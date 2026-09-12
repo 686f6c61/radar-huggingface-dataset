@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "hamzah0asadullah/Charcard-0.8B",
+  "slug": "hamzah0asadullah-charcard-0-8b",
+  "author": "hamzah0asadullah",
+  "url": "https://huggingface.co/hamzah0asadullah/Charcard-0.8B",
+  "created_at": "2026-09-11T23:31:31.000Z",
+  "updated_at": "2026-09-11T23:31:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-12T02:52:15.394Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Как включить DLSS 5 в любой игре: инструкция 2026",
+      "url": "https://showgamer.com/guides/5649-kak-vklyuchit-dlss-5-v-lyuboy-igre-instrukciya-2026",
+      "snippet": "1 day ago · Как включить DLSS 5 в любой игре: инструкция 2026 Подробный гайд по установке DLSS 5 через менеджер: для …"
+    },
+    {
+      "title": "Гайд как установить DLSS 5 на любую ... - DTF",
+      "url": "https://dtf.ru/howto/5269570-kak-ustanovit-dlss-5-na-igry-s-rtx-40-i-50",
+      "snippet": "Aug 29, 2026 · По сути эти моды это просто преднастройки ReShade от пользователей. Этот инструмент мы будем …"
+    },
+    {
+      "title": "Как быстро включить DLSS 5 почти в любой игре",
+      "url": "https://landofgames.ru/articles/guides/30492-bystraja-ustanovka-dlss-5-pochti-v-ljuboj-igre.html",
+      "snippet": "DLSS 5 можно попробовать запустить даже в тех играх, где изначально никакой поддержки этой технологии нет. Причем …"
+    },
+    {
+      "title": "Устанавливаем DLSS 5 на любую игру (почти) | StopGame",
+      "url": "https://stopgame.ru/blogs/topic/121891/ustanavlivaem_dlss_5_na_lyubuyu_igru_pochti",
+      "snippet": "Aug 30, 2026 · Как многие недавно заметили, в сеть произошла «утечка» DLSS 5. Покажу, как быстро, буквально в несколько …"
+    },
+    {
+      "title": "Устанавливаем DLSS 5 на любую игру (почти) — Гайды на DTF",
+      "url": "https://dtf.ru/howto/5271069-kak-ustanovit-dlss-5-na-lyubuyu-igru",
+      "snippet": "Aug 30, 2026 · Как многие недавно заметили, в сеть произошла \"утечка\" DLSS 5. Покажу, как быстро, буквально в несколько …"
+    }
+  ]
+}

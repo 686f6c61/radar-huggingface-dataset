@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "artemyatsyuk/qwen2.5-0.5b-distill-codex-lora",
+  "slug": "artemyatsyuk-qwen2-5-0-5b-distill-codex-lora",
+  "author": "artemyatsyuk",
+  "url": "https://huggingface.co/artemyatsyuk/qwen2.5-0.5b-distill-codex-lora",
+  "created_at": "2026-09-11T21:21:11.000Z",
+  "updated_at": "2026-09-11T21:36:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sft",
+    "distillation",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:Manusagents/GPT-5.5-Gemini-3.1-Pro-Grok-4-Claude-Fable-5-Mythos-5-Qwen-3.7-Max-and-more-Distillation-Dataset",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46658996,
+  "storage_human": "47 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Call of Duty® | Best-Selling Video Game Franchise",
+      "url": "https://www.callofduty.com/",
+      "snippet": "Pre-order Call of Duty: Modern Warfare 4 now."
+    },
+    {
+      "title": "Call of Duty® | La franquicia de videojuegos más vendida del mundo",
+      "url": "https://www.callofduty.com/mx/es/",
+      "snippet": "Pre-order Call of Duty: Modern Warfare 4 now."
+    },
+    {
+      "title": "Official Call of Duty Merchandise | Call of Duty Gear Shop",
+      "url": "https://shop.callofduty.com/",
+      "snippet": "Browse the Official Call of Duty Gear Shop with merchandise and apparel from Black Ops, Zombies, Warzone and more. Find …"
+    },
+    {
+      "title": "Log in - Activision® - CALL OF DUTY®",
+      "url": "https://profile.callofduty.com/cdl/login",
+      "snippet": "Activision login page Get your personalized live stats See where you rank on the global leaderboard Open supply drops online, get …"
+    },
+    {
+      "title": "Call of Duty Zombies: The Art of Treyarch - Hardcover Book",
+      "url": "https://shop.callofduty.com/products/codtbk0001-call-of-duty-zombies-the-art-of-treyarch",
+      "snippet": "Explore the history of Call of Duty Zombies with stunning art, exclusive dev interviews, and behind-the-scenes insights in this must …"
+    }
+  ]
+}

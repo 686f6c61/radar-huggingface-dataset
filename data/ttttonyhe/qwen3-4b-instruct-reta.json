@@ -5,7 +5,7 @@
   "author": "ttttonyhe",
   "url": "https://huggingface.co/ttttonyhe/Qwen3-4B-Instruct-RETA",
   "created_at": "2026-09-10T22:48:48.000Z",
-  "updated_at": "2026-09-11T01:55:04.000Z",
+  "updated_at": "2026-09-11T15:11:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -45,7 +45,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 330,
   "trending_score": 0,
   "parameters": 4022468096,
   "parameters_human": "4.02B",

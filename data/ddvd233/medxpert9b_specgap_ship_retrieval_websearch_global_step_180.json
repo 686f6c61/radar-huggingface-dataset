@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ddvd233/medxpert9b_specgap_ship_retrieval_websearch_global_step_180",
+  "slug": "ddvd233-medxpert9b_specgap_ship_retrieval_websearch_global_step_180",
+  "author": "ddvd233",
+  "url": "https://huggingface.co/ddvd233/medxpert9b_specgap_ship_retrieval_websearch_global_step_180",
+  "created_at": "2026-09-11T20:28:31.000Z",
+  "updated_at": "2026-09-11T20:30:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "medical",
+    "reinforcement-learning",
+    "verl",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711717,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tetanus – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Tetanus",
+      "snippet": "Aus einem lokalen Tetanus kann sich ein generalisierter Tetanus entwickeln. Die Prognose des lokalen Tetanus ist häufig positiv und …"
+    },
+    {
+      "title": "Tetanus: Infektion, Symptome, Therapie | gesund.bund.de",
+      "url": "https://gesund.bund.de/tetanus",
+      "snippet": "Tetanus nennt man auch Wundstarrkrampf. Erfahren Sie mehr über die Infektionskrankheit, Ansteckung, Symptome, Therapie und …"
+    },
+    {
+      "title": "Tetanus - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tetanus",
+      "snippet": "Neonatal tetanus (trismus nascentium) is a form of generalized tetanus that occurs in newborns, usually those born to mothers who …"
+    },
+    {
+      "title": "Tetanus - DocCheck Flexikon",
+      "url": "https://flexikon.doccheck.com/de/Tetanus",
+      "snippet": "Der Tetanus bzw. Wundstarrkrampf ist eine potentiell tödliche Infektionskrankheit, die durch eine Wundinfektion mit dem Erreger …"
+    },
+    {
+      "title": "Tetanus (Wundstarrkrampf) - Apotheken Umschau",
+      "url": "https://www.apotheken-umschau.de/krankheiten-symptome/infektionskrankheiten/tetanus-wundstarrkrampf-738005.html",
+      "snippet": "Aug 24, 2023 · Was ist Tetanus? Tetanus – auch Wundstarrkrampf genannt – ist eine bakterielle Infektionskrankheit, hervorgerufen …"
+    }
+  ]
+}

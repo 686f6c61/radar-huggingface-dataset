@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Myric/gpt-oss-78B-GGUF",
+  "slug": "myric-gpt-oss-78b-gguf",
+  "author": "Myric",
+  "url": "https://huggingface.co/Myric/gpt-oss-78B-GGUF",
+  "created_at": "2026-08-03T04:06:01.000Z",
+  "updated_at": "2026-09-12T00:12:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "moe",
+    "pruned",
+    "gpt-oss",
+    "llama.cpp",
+    "text-generation",
+    "base_model:openai/gpt-oss-120b",
+    "base_model:quantized:openai/gpt-oss-120b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 201,
+  "trending_score": 0,
+  "parameters": 78292128564,
+  "parameters_human": "78.29B",
+  "storage_bytes": 44834357376,
+  "storage_human": "44.8 GB",
+  "base_model": "openai/gpt-oss-120b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Katy Perry | Official Site",
+      "url": "https://www.katyperry.com/",
+      "snippet": "The official Katy Perry website."
+    },
+    {
+      "title": "Katy Perry - 2026 Tour Dates & Concert Schedule - Live Nation",
+      "url": "https://www.livenation.com/artist/K8vZ917GC17/katy-perry-events",
+      "snippet": "Find concert tickets for Katy Perry upcoming 2026 shows. Explore Katy Perry tour schedules, latest setlist, videos, and more on …"
+    },
+    {
+      "title": "Katy Perry Full Tour Schedule 2026 & 2027, Tour Dates & Concerts - Songkick",
+      "url": "https://www.songkick.com/artists/1134363-katy-perry/calendar",
+      "snippet": "Aug 25, 2026 · All Katy Perry upcoming concerts for 2026 & 2027. Find out when Katy Perry is next playing live near you."
+    },
+    {
+      "title": "The Lifetimes Tour - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The_Lifetimes_Tour",
+      "snippet": "Promotional poster for the US dates. The Lifetimes Tour was the fifth concert tour by the American singer Katy Perry, in support of …"
+    },
+    {
+      "title": "Katy Perry Tour Announcements 2026 & 2027, Notifications, Dates ...",
+      "url": "https://www.songkick.com/artists/1134363-katy-perry",
+      "snippet": "Aug 25, 2026 · Find out when Katy Perry is next playing live near you. List of all Katy Perry tour dates, concerts, support acts, …"
+    }
+  ]
+}

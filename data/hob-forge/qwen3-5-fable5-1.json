@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Hob-forge/Qwen3.5-Fable5.1",
+  "slug": "hob-forge-qwen3-5-fable5-1",
+  "author": "Hob-forge",
+  "url": "https://huggingface.co/Hob-forge/Qwen3.5-Fable5.1",
+  "created_at": "2026-09-11T18:44:57.000Z",
+  "updated_at": "2026-09-11T19:09:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "en",
+    "dataset:MoreThought/Fable-5.1-Max-Reasoning-Filtered-1000x",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 4610579904,
+  "storage_human": "4.6 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Target Chicago State St. Store, Chicago, IL",
+      "url": "https://www.target.com/sl/chicago-state-st-/2799",
+      "snippet": "Shop Target Chicago State St. Store for furniture, electronics, clothing, groceries, home goods and more at prices you will love."
+    },
+    {
+      "title": "Target Chicago West Loop Store, Chicago, IL",
+      "url": "https://www.target.com/sl/chicago-west-loop/2781",
+      "snippet": "Shop Target Chicago West Loop Store for furniture, electronics, clothing, groceries, home goods and more at prices you will love."
+    },
+    {
+      "title": "Target Chicago, Cook County, IL - Store Locator & Hours",
+      "url": "https://www.storeopeninghours.com/retailers/target/chicago-il",
+      "snippet": "The total number of Target branches presently open near Chicago, Cook County, Illinois is 25. These are all of the close by Target …"
+    },
+    {
+      "title": "TARGET Chicago • 401 E Illinois St ️ Weekly Ads & Hours",
+      "url": "https://weekly-ads.us/stores/chicago/target/401-e-illinois-st",
+      "snippet": "5 days ago · Check out the flyer with the current sales in Target in Chicago - 401 E Illinois St. ⭐ Weekly ads for Target in Chicago - …"
+    },
+    {
+      "title": "Target - Clark & Belmont, Chicago, IL - Hours & Weekly Ad",
+      "url": "https://www.storeopeninghours.com/target-clark-and-belmont-chicago-il",
+      "snippet": "This page will supply you with all the information you need on Target Clark & Belmont, Chicago, IL, including the operating times, …"
+    }
+  ]
+}

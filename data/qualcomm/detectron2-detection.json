@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "qualcomm/Detectron2-Detection",
+  "slug": "qualcomm-detectron2-detection",
+  "author": "qualcomm",
+  "url": "https://huggingface.co/qualcomm/Detectron2-Detection",
+  "created_at": "2026-01-13T02:41:10.000Z",
+  "updated_at": "2026-09-11T20:53:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "android",
+    "object-detection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 459806727,
+  "storage_human": "460 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qualcomm: Intelligent Computing Everywhere",
+      "url": "https://www.qualcomm.com/",
+      "snippet": "Learn how Qualcomm transforms industries with leading edge AI, high-performance, low-power computing and unrivaled connectivity."
+    },
+    {
+      "title": "Qualcomm — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Qualcomm",
+      "snippet": "Qualcomm est une entreprise américaine active dans le domaine de la technologie mobile. Elle est spécialisée dans la conception et …"
+    },
+    {
+      "title": "Qualcomm - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qualcomm",
+      "snippet": "Qualcomm Incorporated (/ ˈkwɒlkɒm /) [2] is an American multinational technology corporation headquartered in San Diego, …"
+    },
+    {
+      "title": "About Qualcomm | Company Information & History | Qualcomm",
+      "url": "https://www.qualcomm.com/company",
+      "snippet": "Qualcomm is a company of inventors with diverse skills and backgrounds, who are driven to improve communication around the …"
+    },
+    {
+      "title": "QUALCOMM Cours Action QCOM, Cotation Bourse NASDAQ",
+      "url": "https://www.boursorama.com/cours/QCOM/",
+      "snippet": "Le cours de l'action QUALCOMM QCOM sur Boursorama : historique de la cotation sur NASDAQ, graphique, actualités, consensus …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "himansuu15111/test",
+  "slug": "himansuu15111-test",
+  "author": "himansuu15111",
+  "url": "https://huggingface.co/himansuu15111/test",
+  "created_at": "2026-09-11T18:43:56.000Z",
+  "updated_at": "2026-09-11T18:44:31.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 494624596,
+  "storage_human": "495 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "YouTube Music ライブラリに音楽をアップロードする",
+      "url": "https://support.google.com/youtubemusic/answer/9716522?hl=ja",
+      "snippet": "YouTube Music Premium のメンバーは、アップロードしたコンテンツをキャストしたり、スマート スピーカーや Sonos で再生し …"
+    },
+    {
+      "title": "Use music and sound effects from the Audio Library - YouTube Help",
+      "url": "https://support.google.com/youtube/answer/3376882?hl=en",
+      "snippet": "YouTube is not responsible for issues that arise from “royalty-free” music and sound effects from YouTube channels or other music …"
+    },
+    {
+      "title": "Upload music to your YouTube Music library",
+      "url": "https://support.google.com/youtubemusic/answer/9716522?hl=en",
+      "snippet": "Upload music to your YouTube Music library Save your personal music collection to your YouTube Music library by uploading your …"
+    },
+    {
+      "title": "Sign up for & manage a YouTube family plan - Google Help",
+      "url": "https://support.google.com/youtube/answer/7507349?hl=en",
+      "snippet": "Family plans on YouTube Premium Family plans on YouTube Music Premium Family group requirements Important: You will not be …"
+    }
+  ]
+}

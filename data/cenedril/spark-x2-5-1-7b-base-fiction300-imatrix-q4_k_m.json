@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Cenedril/Spark-X2.5-1.7B-Base-fiction300-imatrix-Q4_K_M",
+  "slug": "cenedril-spark-x2-5-1-7b-base-fiction300-imatrix-q4_k_m",
+  "author": "Cenedril",
+  "url": "https://huggingface.co/Cenedril/Spark-X2.5-1.7B-Base-fiction300-imatrix-Q4_K_M",
+  "created_at": "2026-09-04T23:44:22.000Z",
+  "updated_at": "2026-09-12T01:28:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:XHToken/Spark-X2.5-1.7B-Base",
+    "base_model:quantized:XHToken/Spark-X2.5-1.7B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": 473256,
+  "parameters_human": "473256",
+  "storage_bytes": 1109376768,
+  "storage_human": "1.1 GB",
+  "base_model": "XHToken/Spark-X2.5-1.7B-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online Stopwatch - easy to use - timeanddate.com",
+      "url": "https://www.timeanddate.com/stopwatch/",
+      "snippet": "Online stopwatch. Easy to use and accurate stopwatch with lap times and alarms. Optional split intervals and alarm sound."
+    },
+    {
+      "title": "Online-Stopwatch",
+      "url": "https://www.online-stopwatch.com/",
+      "snippet": "Everybody needs a stopwatch at some point -- and there's never one around! Well... Now there is! Online Stopwatch! A Simple, Fast …"
+    },
+    {
+      "title": "Online Stopwatch - vClock",
+      "url": "https://vclock.com/stopwatch/",
+      "snippet": "The online stopwatch counts the time to the millisecond that passes after you click the Start button. It allows you to add laps."
+    },
+    {
+      "title": "Online Stopwatch",
+      "url": "https://www.online-stopwatch.com/full-screen-stopwatch/",
+      "snippet": "A Free flash online stopwatch, quick easy to use flash stopwatch! also a countdown timer!"
+    },
+    {
+      "title": "Online Stopwatch Timer - TickCounter",
+      "url": "https://www.tickcounter.com/stopwatch",
+      "snippet": "Free online stopwatch timer in your browser. Instant, accurate and easy-to-use. Start counting now!"
+    }
+  ]
+}

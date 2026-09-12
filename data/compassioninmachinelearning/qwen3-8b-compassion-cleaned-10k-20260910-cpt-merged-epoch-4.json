@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "CompassioninMachineLearning/Qwen3-8b-compassion-cleaned-10k-20260910-CPT-merged-epoch-4",
+  "slug": "compassioninmachinelearning-qwen3-8b-compassion-cleaned-10k-20260910-cpt-merged-epoch-4",
+  "author": "CompassioninMachineLearning",
+  "url": "https://huggingface.co/CompassioninMachineLearning/Qwen3-8b-compassion-cleaned-10k-20260910-CPT-merged-epoch-4",
+  "created_at": "2026-09-11T19:57:48.000Z",
+  "updated_at": "2026-09-11T19:59:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "continued-pretraining",
+    "bf16",
+    "conversational",
+    "dataset:CompassioninMachineLearning/compassion_12185_cleaned",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:finetune:Qwen/Qwen3-8B-Base",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939374,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Contact Us - Microsoft Support",
+      "url": "https://support.microsoft.com/en-gb/contactus",
+      "snippet": "Contact Microsoft Support. Find solutions to common problems, or get help from a support agent."
+    },
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "Windows 8.1 ISO download for 64 and 32 bit | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/discussions/windowsinsiderprogram/windows-8-1-iso-download-for-64-and-32-bit/4454650",
+      "snippet": "Sep 16, 2025 · Since Microsoft has shifted focus to Windows 10 and Windows 11, official direct downloads for Windows 8 ISOs are no …"
+    },
+    {
+      "title": "Sign in to your account - techcommunity.microsoft.com",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation."
+    },
+    {
+      "title": "Microsoft Support and Recovery Assistant (SaRA) command-line utility ...",
+      "url": "https://support.microsoft.com/en-us/servicing/os/windows/docs/2026/03/microsoft-support-and-recovery-assistant-sara-command-line-utility-removal-from-windows",
+      "snippet": "Mar 31, 2026 · Microsoft has officially removed the SaRA utility from all in-support versions of Windows updates released on and after …"
+    }
+  ]
+}

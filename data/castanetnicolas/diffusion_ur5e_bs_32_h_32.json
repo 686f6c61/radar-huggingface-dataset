@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "castanetnicolas/diffusion_UR5e_BS_32_H_32",
+  "slug": "castanetnicolas-diffusion_ur5e_bs_32_h_32",
+  "author": "castanetnicolas",
+  "url": "https://huggingface.co/castanetnicolas/diffusion_UR5e_BS_32_H_32",
+  "created_at": "2026-09-12T00:04:07.000Z",
+  "updated_at": "2026-09-12T00:05:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion",
+    "dataset:castanetnicolas/UR5e_pick_and_place_CAN_100_delta_joint",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278014919,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1112122796,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Saarland – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Saarland",
+      "snippet": "Geographie Lage Das Saarland liegt mit einer Ausdehnung von 2.569,69 Quadratkilometern links des Rheins im äußersten …"
+    },
+    {
+      "title": "Landesportal Startseite - saarland.de",
+      "url": "https://www.saarland.de/",
+      "snippet": "Egal, ob Sie eine Geburtsurkunde benötigen, Wohngeld beantragen oder ein Unternehmen gründen möchten – das Serviceportal …"
+    },
+    {
+      "title": "Saarland",
+      "url": "https://www.urlaub.saarland/",
+      "snippet": "Tourismus Zentrale Saarland Telefon +49 (0)681 927200 info@tz-s.de Zu unserem Newsletter anmelden Newsletter Besuchen Sie …"
+    },
+    {
+      "title": "Saarland - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Saarland",
+      "snippet": "Since 1971, Saarland has been a member of SaarLorLux, a euroregion created from Saarland, Lorraine, Luxembourg, Rhineland …"
+    },
+    {
+      "title": "Die schönsten Orte und Sehenswürdigkeiten im Saarland",
+      "url": "https://www.merian.de/deutschland/saarland/sehenswuerdigkeiten-saarland",
+      "snippet": "Aug 25, 2025 · Das Saarland und seine Sehenswürdigkeiten: unverfälschte Natur, imposante Bauten und behagliche Städte. …"
+    }
+  ]
+}

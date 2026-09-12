@@ -4,8 +4,8 @@
   "slug": "liufea154-myawesomemodel-testrepo",
   "author": "liufea154",
   "url": "https://huggingface.co/liufea154/MyAwesomeModel-TestRepo",
-  "created_at": "2026-09-06T06:12:49.000Z",
-  "updated_at": "2026-09-08T09:36:35.000Z",
+  "created_at": "2026-09-11T20:13:38.000Z",
+  "updated_at": "2026-09-11T20:13:42.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-11T03:32:30.270Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": []
 }

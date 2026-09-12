@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "fluxions/vui",
+  "slug": "fluxions-vui",
+  "author": "fluxions",
+  "url": "https://huggingface.co/fluxions/vui",
+  "created_at": "2025-06-05T13:13:53.000Z",
+  "updated_at": "2026-09-11T23:07:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "vui",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "vui",
+    "text-to-speech",
+    "tts",
+    "speech-synthesis",
+    "voice-cloning",
+    "streaming",
+    "conversational",
+    "qwen3-tts",
+    "conversational-speech",
+    "context-aware",
+    "cpu-inference",
+    "on-device",
+    "small-model",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 154,
+  "downloads_30d": 443,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4979015982,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Iveco Daily: listino prezzi 2026, dimensioni e consumi",
+      "url": "https://mezzicommerciali.it/listino/iveco/daily/",
+      "snippet": "Di seguito vengono riportate le versioni di Iveco Daily disponibili sul mercato, con prezzi, prestazioni, dimensioni e caratteristiche …"
+    },
+    {
+      "title": "Promozioni | Daily - IVECO",
+      "url": "https://www.iveco.com/italy/Promozioni/Daily-prezzo-netto",
+      "snippet": "L’offerta prevede l’estensione di garanzia per il terzo anno al costo complessivo di 99€ oltre iva (contratto “XXL”, durata 36 mesi, …"
+    },
+    {
+      "title": "Iveco Daily Furgone: prezzi, foto e allestimenti",
+      "url": "https://mezzicommerciali.it/listino/iveco/daily/daily-furgone/",
+      "snippet": "Scopri tutti i prezzi del listino 2026 e gli allestimenti di Iveco Daily Furgone. Consumi, portata, dati tecnici e dimensioni."
+    },
+    {
+      "title": "Prezzo IVECO Daily Furgone, Listino Prezzi e Allestimenti | DriveK",
+      "url": "https://veicoli-commerciali.drivek.it/iveco/daily-cargo/versioni/",
+      "snippet": "Configuratore nuova IVECO Daily Furgone e listino prezzi 2026 - Scopri su DriveK le caratteristiche e le dimensioni della nuova Daily …"
+    },
+    {
+      "title": "Iveco Daily: dimensioni, interni, motori, prezzi - AutoScout24",
+      "url": "https://www.autoscout24.it/auto/iveco/iveco-daily/?msockid=0e7a7197762069280bca664677346842",
+      "snippet": "Iveco Daily Doppia Cabina Offre maggiore spazio per l’equipaggio, con una configurazione a sei o sette posti, risultando perfetto per …"
+    }
+  ]
+}

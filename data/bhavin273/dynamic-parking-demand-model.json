@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "bhavin273/dynamic-parking-demand-model",
+  "slug": "bhavin273-dynamic-parking-demand-model",
+  "author": "bhavin273",
+  "url": "https://huggingface.co/bhavin273/dynamic-parking-demand-model",
+  "created_at": "2026-01-20T06:59:52.000Z",
+  "updated_at": "2026-09-11T19:30:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "xgboost",
+  "languages": [],
+  "tags": [
+    "xgboost",
+    "parking",
+    "demand-prediction",
+    "time-series",
+    "dynamic-pricing",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41432590,
+  "storage_human": "41 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    }
+  ]
+}

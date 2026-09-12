@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Oscilla/Bonsai-27B-mlx-1bit",
+  "slug": "oscilla-bonsai-27b-mlx-1bit",
+  "author": "Oscilla",
+  "url": "https://huggingface.co/Oscilla/Bonsai-27B-mlx-1bit",
+  "created_at": "2026-09-11T20:41:36.000Z",
+  "updated_at": "2026-09-11T20:41:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "conversational",
+    "1-bit",
+    "cuda",
+    "metal",
+    "on-device",
+    "hybrid-attention",
+    "prismml",
+    "bonsai",
+    "text-generation",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:finetune:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1724001520,
+  "parameters_human": "1.72B",
+  "storage_bytes": 5149105095,
+  "storage_human": "5.1 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "France - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/France",
+      "snippet": "France was divided into a German occupation zone in the north, an Italian occupation zone and an unoccupied territory, the rest of …"
+    },
+    {
+      "title": "France — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/France",
+      "snippet": ""
+    },
+    {
+      "title": "France | History, Maps, Flag, Population, Cities, Capital, & Facts ...",
+      "url": "https://www.britannica.com/place/France",
+      "snippet": "1 day ago · France, a country of northwestern Europe, is historically and culturally among the most important countries in the Western …"
+    },
+    {
+      "title": "Francia - Wikipedia, la enciclopedia libre",
+      "url": "https://es.wikipedia.org/wiki/Francia",
+      "snippet": "Air France es la compañía aérea nacional, aunque numerosas compañías aéreas privadas ofrecen servicios de viajes nacionales e …"
+    },
+    {
+      "title": "France.fr : Explore France and its wonders - Explore France",
+      "url": "https://www.france.fr/en/",
+      "snippet": "In spring, France reveals one of its most beautiful sides. Outdoor cafés fill up, parks and gardens come into bloom, and the …"
+    }
+  ]
+}

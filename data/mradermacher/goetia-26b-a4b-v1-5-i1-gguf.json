@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Goetia-26B-A4B-v1.5-i1-GGUF",
   "created_at": "2026-09-11T13:24:58.000Z",
-  "updated_at": "2026-09-11T13:52:43.000Z",
+  "updated_at": "2026-09-11T17:08:13.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -53,13 +53,13 @@
     "region:us",
     "imatrix"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 25971339550,
   "parameters_human": "25.97B",
-  "storage_bytes": 39471748960,
-  "storage_human": "39.5 GB",
+  "storage_bytes": 308922452832,
+  "storage_human": "308.9 GB",
   "base_model": "Naphula/Goetia-26B-A4B-v1.5",
   "formats": [
     "gguf"

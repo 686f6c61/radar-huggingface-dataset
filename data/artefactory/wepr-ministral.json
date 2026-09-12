@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "artefactory/wepr-ministral",
+  "slug": "artefactory-wepr-ministral",
+  "author": "artefactory",
+  "url": "https://huggingface.co/artefactory/wepr-ministral",
+  "created_at": "2026-08-06T18:04:51.000Z",
+  "updated_at": "2026-09-11T23:59:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "artefactual",
+    "skops",
+    "hallucination-detection",
+    "uncertainty-estimation",
+    "text-classification",
+    "arxiv:2509.04492",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "带圈圈的序号1到30 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/248361110890276644.html",
+      "snippet": "1到20的带圈数字符号为： ①、②、③、④、⑤、⑥、⑦、⑧、⑨、⑩ ⑪、⑫、⑬、⑭、⑮、⑯、⑰、⑱、⑲、⑳ 21之后的带圈数字无法直 …"
+    },
+    {
+      "title": "韵达快递的人工服务电话是多少_百度知道",
+      "url": "https://zhidao.baidu.com/question/1694331387362316948.html",
+      "snippet": "韵达快递 的 人工 客服热线 是95546。 韵达快递总部设立了全国客户服务中心，开通全国统一客户服务热线电话，为客户提供查询、 …"
+    },
+    {
+      "title": "关于名牌pikolinos - 百度知道",
+      "url": "https://zhidao.baidu.com/question/25329062.html",
+      "snippet": "Piko品牌形成于夏威夷群岛，由最初的沙滩，冲浪休闲服装逐渐形成蕴涵有浓郁海洋文化气息的系列休闲服装。Piko这一发音，在夏威 …"
+    },
+    {
+      "title": "周一，周二，周三，周四，周五，周六，周日。用英语怎么说？谢谢！",
+      "url": "https://zhidao.baidu.com/question/454419419654703525.html",
+      "snippet": "周一，周二，周三，周四，周五，周六，周日。用英语怎么说？谢谢！1、星期日：Sunday，简写Sun.2、星期一：Monday，简 …"
+    },
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    }
+  ]
+}

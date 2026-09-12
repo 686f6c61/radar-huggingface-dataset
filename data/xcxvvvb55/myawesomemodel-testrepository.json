@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xcxvvvb55/MyAwesomeModel-TestRepository",
+  "slug": "xcxvvvb55-myawesomemodel-testrepository",
+  "author": "xcxvvvb55",
+  "url": "https://huggingface.co/xcxvvvb55/MyAwesomeModel-TestRepository",
+  "created_at": "2026-09-12T01:39:25.000Z",
+  "updated_at": "2026-09-12T01:42:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-12T02:51:18.448Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cosa vedere a Vancouver (e dintorni)",
+      "url": "https://beborghi.com/cosa-vedere-a-vancouver/",
+      "snippet": "Nov 15, 2025 · In questa guida ti porto a scoprire tutto quello che secondo me vale la pena vedere e fare a Vancouver, dai classici …"
+    },
+    {
+      "title": "Cosa Vedere a Vancouver? | TOP 25 + Consigli | (2026)",
+      "url": "https://www.voyagetips.com/it/cosa-vedere-a-vancouver/",
+      "snippet": "Jul 2, 2026 · Non solo potrai visitare Gastown, ma anche Chinatown, Granville Island, Stanley Park, Canada Place, il Vancouver …"
+    },
+    {
+      "title": "Cosa fare e vedere a Vancouver: Guida Completa e Approfondita",
+      "url": "https://www.viaggio-canada.it/guide/cosa-fare-vedere-vancouver.html/",
+      "snippet": "May 1, 2024 · In questo articolo esploreremo le 20 principali attrazioni da non perdere durante una visita a Vancouver, con …"
+    },
+    {
+      "title": "Cosa vedere a Vancouver: 10 luoghi imperdibili | Civitatis",
+      "url": "https://www.civitatis.com/blog/it/vancouver-cosa-vedere/",
+      "snippet": "May 28, 2026 · Vancouver è la città più grande dello stato della British Columbia e la terza più grande del Canada. Inoltre, la città …"
+    },
+    {
+      "title": "Cosa vedere a Vancouver: 20 migliori attrazioni e itinerari ... - Travel365",
+      "url": "https://www.travel365.it/vancouver-cosa-vedere.htm",
+      "snippet": "Cosa vedere a Vancouver: le attrazioni più belle e le migliori attività da fare. Una guida pratica per scoprire la città, con mappe, …"
+    }
+  ]
+}

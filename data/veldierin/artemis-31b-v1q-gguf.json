@@ -5,7 +5,7 @@
   "author": "veldierin",
   "url": "https://huggingface.co/veldierin/Artemis-31B-v1q-GGUF",
   "created_at": "2026-09-09T20:13:37.000Z",
-  "updated_at": "2026-09-10T13:49:28.000Z",
+  "updated_at": "2026-09-12T00:21:55.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,13 +20,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 1,
-  "downloads_30d": 283,
+  "likes": 2,
+  "downloads_30d": 1164,
   "trending_score": 0,
   "parameters": 30697345596,
   "parameters_human": "30.70B",
-  "storage_bytes": 33891929196,
-  "storage_human": "33.9 GB",
+  "storage_bytes": 49536446220,
+  "storage_human": "49.5 GB",
   "base_model": "google/gemma-4-31B-it, BeaverAI/Artemis-31B-v1q-GGUF",
   "formats": [
     "gguf"

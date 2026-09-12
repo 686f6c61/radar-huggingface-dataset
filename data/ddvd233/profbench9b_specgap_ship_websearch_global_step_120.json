@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ddvd233/profbench9b_specgap_ship_websearch_global_step_120",
+  "slug": "ddvd233-profbench9b_specgap_ship_websearch_global_step_120",
+  "author": "ddvd233",
+  "url": "https://huggingface.co/ddvd233/profbench9b_specgap_ship_websearch_global_step_120",
+  "created_at": "2026-09-11T20:41:10.000Z",
+  "updated_at": "2026-09-11T20:43:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "medical",
+    "reinforcement-learning",
+    "verl",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711717,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sniper Arena Codes (September 2026) [NEW SNIPER] - Pro Game …",
+      "url": "https://progameguides.com/roblox/sniper-arena-codes/",
+      "snippet": "3 days ago · Ready to prove you're the apex predator of the arena? Grab Sniper Arena codes and show everyone who owns the …"
+    },
+    {
+      "title": "Sniper Arena Codes (September 2026) - Beebom",
+      "url": "https://beebom.com/sniper-arena-codes/",
+      "snippet": "21 hours ago · Check out this list of all the new Sniper Arena codes that will grant you free cases with cash, and other item rewards"
+    },
+    {
+      "title": "Sniper Arena Codes September 2026 - RoCodes",
+      "url": "https://rocodes.gg/codes/sniper-arena",
+      "snippet": "21 hours ago · Get verified Sniper Arena codes on RoCodes. 11 working codes available right now. Every code is re-tested and …"
+    },
+    {
+      "title": "Codes Sniper Arena (Septembre 2026) - Dexerto.fr",
+      "url": "https://www.dexerto.fr/roblox/codes-sniper-arena-1639080/",
+      "snippet": "Sep 1, 2026 · Voici tous les codes actifs dans Snipers Arena, ainsi que les étapes à suivre pour les utiliser contre des caisses de …"
+    },
+    {
+      "title": "Sniper Arena Codes [New Sniper] (September 2026) - Try Hard Guides",
+      "url": "https://tryhardguides.com/sniper-arena-codes/",
+      "snippet": "4 days ago · Those are all of the Roblox Sniper Arena codes we currently have listed. If you see one that we’re missing, please let us …"
+    }
+  ]
+}

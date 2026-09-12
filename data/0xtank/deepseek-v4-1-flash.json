@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "0xTank/DeepSeek-V4.1-Flash",
+  "slug": "0xtank-deepseek-v4-1-flash",
+  "author": "0xTank",
+  "url": "https://huggingface.co/0xTank/DeepSeek-V4.1-Flash",
+  "created_at": "2026-09-12T00:06:55.000Z",
+  "updated_at": "2026-09-12T00:07:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v41",
+    "text-generation",
+    "image-text-to-text",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763205315794,
+  "parameters_human": "763.21B",
+  "storage_bytes": 510299192278,
+  "storage_human": "510.3 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hasan Piker - Reddit",
+      "url": "https://www.reddit.com/r/Hasan_Piker/",
+      "snippet": "Official subreddit of left-wing Twitch streamer Hasan \"HasanAbi\" Piker"
+    },
+    {
+      "title": "Calamity Mod - Reddit",
+      "url": "https://www.reddit.com/r/CalamityMod/",
+      "snippet": "The unofficial subreddit for discussing the Calamity Mod for Terraria."
+    },
+    {
+      "title": "X (つういったー）はパソコンで使用可能でしょうか。アプリとかパソ …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14288005069",
+      "snippet": "Oct 26, 2023 · X(つういったー）はパソコンで使用可能でしょうか。アプリとかパソコン用ありますか。t"
+    },
+    {
+      "title": "Twitter保存ランキングの代わりのサイトはありますか？ - Yahoo!知恵袋",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10254471060",
+      "snippet": "Twitter保存ランキングの代わりのサイトはありますか？"
+    },
+    {
+      "title": "Twitter Blog",
+      "url": "https://blog.twitter.com/robots.txt",
+      "snippet": "User-agent: * Disallow: User-agent: Twitterbot Disallow: User-agent: QuerySeekerSpider Disallow: / User-agent: DirBuster-0.12 …"
+    }
+  ]
+}

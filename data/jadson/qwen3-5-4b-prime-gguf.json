@@ -5,7 +5,7 @@
   "author": "Jadson",
   "url": "https://huggingface.co/Jadson/Qwen3.5-4B-Prime-GGUF",
   "created_at": "2026-09-10T20:11:40.000Z",
-  "updated_at": "2026-09-10T21:13:42.000Z",
+  "updated_at": "2026-09-11T05:41:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,12 +34,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 790,
   "trending_score": 0,
   "parameters": 4326350848,
   "parameters_human": "4.33B",
-  "storage_bytes": 8545369600,
-  "storage_human": "8.5 GB",
+  "storage_bytes": 17090739040,
+  "storage_human": "17.1 GB",
   "base_model": "empero-ai/Qwen3.8-4B-Distill",
   "formats": [
     "gguf"

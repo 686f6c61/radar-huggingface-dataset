@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Sneakster/Z-Image-Turbo",
+  "slug": "sneakster-z-image-turbo",
+  "author": "Sneakster",
+  "url": "https://huggingface.co/Sneakster/Z-Image-Turbo",
+  "created_at": "2026-09-12T00:53:30.000Z",
+  "updated_at": "2026-09-12T00:53:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "en",
+    "arxiv:2511.22699",
+    "arxiv:2511.22677",
+    "arxiv:2511.13649",
+    "license:apache-2.0",
+    "diffusers:ZImagePipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6154908736,
+  "parameters_human": "6.15B",
+  "storage_bytes": 32895044683,
+  "storage_human": "32.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Personal Loans of September 2026: See Rates and Requirements",
+      "url": "https://www.nerdwallet.com/personal-loans?msockid=1e552e93931460c20a9e394192046115",
+      "snippet": "Sep 1, 2026 · Compare personal loan rates from lenders like SoFi, Upgrade and Discover. Get our expert take on the best personal …"
+    },
+    {
+      "title": "Best Home Equity Loan Lenders of September 2026 - NerdWallet",
+      "url": "https://www.nerdwallet.com/mortgages/best/home-equity-loan-lenders?msockid=1e552e93931460c20a9e394192046115",
+      "snippet": "Sep 4, 2026 · See NerdWallet's picks for the best home equity loan lenders and find one that fits your needs."
+    },
+    {
+      "title": "Best Home Improvement Loans of September 2026 - NerdWallet",
+      "url": "https://www.nerdwallet.com/personal-loans/best/home-improvement-loans?msockid=1e552e93931460c20a9e394192046115",
+      "snippet": "Sep 1, 2026 · Home improvement loans are unsecured personal loans you use to pay for home renovations and repairs. Compare …"
+    },
+    {
+      "title": "Compare student loan refinancing companies of September 2026",
+      "url": "https://www.nerdwallet.com/student-loans/best/student-loan-refinance-companies?msockid=1e552e93931460c20a9e394192046115",
+      "snippet": "Aug 13, 2026 · Compare rates for the best student loan refinance companies. Refinancing can help you save money and simplify …"
+    },
+    {
+      "title": "Best Loans for Bad Credit of September 2026 - NerdWallet",
+      "url": "https://www.nerdwallet.com/personal-loans/best/bad-credit-loans?msockid=1e552e93931460c20a9e394192046115",
+      "snippet": "Sep 1, 2026 · Compare the best loans for bad credit. The top lenders offer fast funding, a variety of loan amounts and terms and ways …"
+    }
+  ]
+}

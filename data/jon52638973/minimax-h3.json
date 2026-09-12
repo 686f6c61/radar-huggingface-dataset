@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "jon52638973/MiniMax-H3",
+  "slug": "jon52638973-minimax-h3",
+  "author": "jon52638973",
+  "url": "https://huggingface.co/jon52638973/MiniMax-H3",
+  "created_at": "2026-09-11T20:37:42.000Z",
+  "updated_at": "2026-09-11T20:37:42.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "diffusers",
+    "safetensors",
+    "text-to-video",
+    "image-to-video",
+    "image-text-to-video",
+    "video-to-video",
+    "text-to-audio-video",
+    "image-to-audio-video",
+    "image-text-to-audio-video",
+    "video-to-audio-video",
+    "audio-to-audio-video",
+    "audio-video-generation",
+    "multimodal",
+    "synchronized-audio-video",
+    "reference-to-audio-video",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 353917479700,
+  "storage_human": "353.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bundesliga 26/27 | Transfermarkt",
+      "url": "https://www.transfermarkt.de/bundesliga/startseite/wettbewerb/L1",
+      "snippet": "Bundesliga auf Transfermarkt mit Tabelle Ergebnissen Spielplan Liveticker Marktwerten Vereine Transfers Statistiken"
+    },
+    {
+      "title": "Fußball-Transfers, Gerüchte, Marktwerte und News | Transfermarkt",
+      "url": "https://www.transfermarkt.de/",
+      "snippet": "Support Berater- Firmen Premium Service Video ️ Neueste Transfers Gerüchteküche Alle Foren Alle News Marktwert-Analyse …"
+    },
+    {
+      "title": "Borussia Dortmund - Vereinsprofil | Transfermarkt",
+      "url": "https://www.transfermarkt.de/borussia-dortmund/startseite/verein/16",
+      "snippet": "Alles zum Verein Bor. Dortmund (Bundesliga) aktueller Kader mit Marktwerten Transfers Gerüchte Spieler-Statistiken Spielplan News"
+    },
+    {
+      "title": "Hamburger SV - Vereinsprofil | Transfermarkt",
+      "url": "https://www.transfermarkt.de/hamburger-sv/startseite/verein/41",
+      "snippet": "Der Hamburger SV ist Gründungsmitglied der Bundesliga und wurde einst auch als Dino der Liga bezeichnet. Der 1887 gegründete …"
+    },
+    {
+      "title": "Bundesliga - Aktuelle Gerüchte | Transfermarkt",
+      "url": "https://www.transfermarkt.de/1-bundesliga/geruechte/wettbewerb/L1",
+      "snippet": "2 days ago · Diese Seite zeigt aktuelle Gerüchte zu den Spielern, die bei den Vereinen in der Bundesliga im Fokus stehen."
+    }
+  ]
+}

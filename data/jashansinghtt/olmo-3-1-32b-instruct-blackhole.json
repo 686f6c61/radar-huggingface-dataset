@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jashansinghTT/olmo-3.1-32b-instruct-blackhole",
+  "slug": "jashansinghtt-olmo-3-1-32b-instruct-blackhole",
+  "author": "jashansinghTT",
+  "url": "https://huggingface.co/jashansinghTT/olmo-3.1-32b-instruct-blackhole",
+  "created_at": "2026-09-09T15:01:49.000Z",
+  "updated_at": "2026-09-12T02:21:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "blackhole",
+    "p150",
+    "p300",
+    "p300x2",
+    "tt-model-cache",
+    "tt-model-catalog",
+    "tt-model-container",
+    "vllm-plugin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9537842283,
+  "storage_human": "9.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Newton Ln, 12839, New York Property Records | realtor.com®",
+      "url": "https://www.realtor.com/local/property-records/new-york/washington-county/12839/newton-ln?msockid=1c1f585089b669f02ad74f81884d68ae",
+      "snippet": "Find property status and other property details on property records from Newton Ln in ZIP code 12839, NY"
+    },
+    {
+      "title": "25 Newton Ln, Hudson Falls, NY 12839 - realtor.com",
+      "url": "https://www.realtor.com/realestateandhomes-detail/25-Newton-Ln_Hudson-Falls_NY_12839_M97311-10241?msockid=1c1f585089b669f02ad74f81884d68ae",
+      "snippet": "See 25 Newton Ln, Hudson Falls, NY 12839, a single family home. View property details, similar homes, and the nearby school and …"
+    },
+    {
+      "title": "10 Newton Ln, Hudson Falls, NY 12839 - Trulia",
+      "url": "https://www.trulia.com/home/10-newton-ln-hudson-falls-ny-12839-2053216218",
+      "snippet": "10 Newton Ln, Hudson Falls, NY 12839 Home Value Learn more about this home's value by checking out the value of nearby homes …"
+    },
+    {
+      "title": "25 Newton Ln, Hudson Falls, NY 12839 | Redfin",
+      "url": "https://www.redfin.com/NY/Hudson-Falls/25-Newton-Ln-12839/home/141267409?msockid=1c1f585089b669f02ad74f81884d68ae",
+      "snippet": "25 Newton Ln is a 2,454 square foot house on a 17 acre lot with 3 bedrooms and 1 bathroom. Based on Redfin's Hudson Falls data, …"
+    },
+    {
+      "title": "10 Newton Ln, Hudson Falls, NY 12839 | Zillow",
+      "url": "https://www.zillow.com/homedetails/10-Newton-Ln-Hudson-Falls-NY-12839/2053216218_zpid/?msockid=1c1f585089b669f02ad74f81884d68ae",
+      "snippet": "10 Newton Ln, Hudson Falls, NY 12839 is currently not for sale. The -- sqft home type unknown home is a -- beds, -- baths property. …"
+    }
+  ]
+}

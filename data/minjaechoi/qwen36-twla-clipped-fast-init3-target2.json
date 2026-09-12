@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "minjaechoi/qwen36-twla-clipped-fast-init3-target2",
+  "slug": "minjaechoi-qwen36-twla-clipped-fast-init3-target2",
+  "author": "minjaechoi",
+  "url": "https://huggingface.co/minjaechoi/qwen36-twla-clipped-fast-init3-target2",
+  "created_at": "2026-09-12T01:21:36.000Z",
+  "updated_at": "2026-09-12T01:22:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234485269,
+  "storage_human": "70.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "【クーポンあり】野洲駅 (滋賀県)近くの温泉、日帰り温泉 ...",
+      "url": "https://onsen.nifty.com/shiga/st-yasu/",
+      "snippet": "野洲駅は滋賀県野洲市にある東海道本線（滋賀--兵庫）などが走る駅です。 このページでは野洲駅から直線距離で近い順でおすすめ …"
+    },
+    {
+      "title": "【クーポンあり】格安で入浴できる野洲駅 (滋賀県)近くの温泉 ...",
+      "url": "https://onsen.nifty.com/ft-cheap/shiga/st-yasu/",
+      "snippet": "【クーポンあり】格安で入浴できる野洲駅 (滋賀県)近くの温泉、日帰り温泉、スーパー銭湯おすすめ 野洲駅は滋賀県野洲市にある …"
+    },
+    {
+      "title": "滋賀県野洲市の日帰り入浴リスト - ゆる～と",
+      "url": "https://yuru-to.net/list.php?cid=25210",
+      "snippet": "日帰り入浴可能な施設（日帰り温泉や銭湯、温泉宿、足湯など）が、約14,000件登録されています。 近くのスーパー銭湯を探した …"
+    },
+    {
+      "title": "野洲駅に行くならここ!おすすめの人気日帰り入浴専用施設 ...",
+      "url": "https://www.mapple.net/station/287419_g05050200/spot/",
+      "snippet": "Apr 10, 2026 · 野洲駅のおすすめの日帰り入浴専用施設スポットをガイドブック編集部が厳選してご紹介します。 重厚な梁や白壁が …"
+    },
+    {
+      "title": "栗東・守山・野洲（滋賀県）の温泉 - こころから",
+      "url": "https://www.cocolocala.jp/shiga/d198/a761/spots/spa/hotspring",
+      "snippet": "行きたい旅先がみつかる旅行サイト「こころから」には、滋賀県の栗東・守山・野洲の温泉に関する情報が盛りだくさん。 定番か …"
+    }
+  ]
+}

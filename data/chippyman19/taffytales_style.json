@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ChippyMan19/TaffyTales_Style",
+  "slug": "chippyman19-taffytales_style",
+  "author": "ChippyMan19",
+  "url": "https://huggingface.co/ChippyMan19/TaffyTales_Style",
+  "created_at": "2026-09-11T19:56:58.000Z",
+  "updated_at": "2026-09-11T19:57:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 232387738,
+  "storage_human": "232 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "imvu - 知乎",
+      "url": "https://www.zhihu.com/topic/20658556",
+      "snippet": "IMVU是一个3D人物和场景聊天软件。经过两年多的发展，已经拥有百万多注册用户，其3D特性也有了很好的表现。用户的虚拟3D人 …"
+    },
+    {
+      "title": "helldivers2 - Reddit",
+      "url": "https://www.reddit.com/r/helldivers2/",
+      "snippet": "r/helldivers2 I recently made a post about how I haven’t really experienced a lot of the toxicity, team killing, that the rest of the …"
+    },
+    {
+      "title": "Chat Room Tags : r/imvu - Reddit",
+      "url": "https://www.reddit.com/r/imvu/comments/fciocp/chat_room_tags/",
+      "snippet": "Mar 2, 2020 · I just created a room of my own and I was wondering how tags work when using them in the room's description. Do you …"
+    },
+    {
+      "title": "Home | Support : Community Center",
+      "url": "http://help.imvu.com/",
+      "snippet": "Sep 12, 2024 · IMVU Community Forums Join discussions, get help, share feedback, and stay informed about everything related to …"
+    },
+    {
+      "title": "imvu这个软件为什么在国外这么火？ - 知乎",
+      "url": "https://www.zhihu.com/question/24376893",
+      "snippet": "IMVU是款3D化身社交产品，它采用了3D和VR的方式，在虚拟社交的前提下，给用户创造一种“现实社交”的体验——应该讲，这是一 …"
+    }
+  ]
+}

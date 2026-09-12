@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "npow/pi05-yam-red-cap-full-7500",
+  "slug": "npow-pi05-yam-red-cap-full-7500",
+  "author": "npow",
+  "url": "https://huggingface.co/npow/pi05-yam-red-cap-full-7500",
+  "created_at": "2026-09-11T22:23:07.000Z",
+  "updated_at": "2026-09-12T00:28:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "vision-language-action",
+    "pi0.5",
+    "yam",
+    "servo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12441656168,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "File Explorer in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/experience/fileexplorer/file-explorer-in-windows",
+      "snippet": "Find and open File Explorer in Windows, and customize Quick access by pinning and removing files and folders."
+    },
+    {
+      "title": "Explorateur de fichiers dans Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/fr-fr/windows/experience/fileexplorer/file-explorer-in-windows",
+      "snippet": "Recherchez et ouvrez Explorateur de fichiers dans Windows, puis personnalisez Accès rapide en épinglant et en supprimant des …"
+    },
+    {
+      "title": "Open File Explorer in Windows 11",
+      "url": "https://www.elevenforum.com/t/open-file-explorer-in-windows-11.20591/",
+      "snippet": "Dec 11, 2023 · This tutorial will show you different ways to open File Explorer in Windows 11. File Explorer …"
+    },
+    {
+      "title": "Add or Remove Recent Files in File Explorer Home in Windows 11",
+      "url": "https://www.elevenforum.com/t/add-or-remove-recent-files-in-file-explorer-home-in-windows-11.6825/",
+      "snippet": "Jun 1, 2022 · This tutorial will show you how to add or remove showing Recent files in File Explorer Home for your account in …"
+    },
+    {
+      "title": "Free up drive space in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/experience/storage-filemanagement/free-up-drive-space-in-windows",
+      "snippet": "If your PC is running out of storage space, you may notice slower performance or trouble installing Windows updates. Freeing up …"
+    }
+  ]
+}

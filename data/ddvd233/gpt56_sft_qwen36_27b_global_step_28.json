@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ddvd233/gpt56_sft_qwen36_27b_global_step_28",
+  "slug": "ddvd233-gpt56_sft_qwen36_27b_global_step_28",
+  "author": "ddvd233",
+  "url": "https://huggingface.co/ddvd233/gpt56_sft_qwen36_27b_global_step_28",
+  "created_at": "2026-09-11T20:43:59.000Z",
+  "updated_at": "2026-09-11T20:51:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "medical",
+    "reinforcement-learning",
+    "verl",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:finetune:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54733598037,
+  "storage_human": "54.7 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NFL.com | Official Site of the National Football League",
+      "url": "https://www.nfl.com/",
+      "snippet": "Jul 30, 2007 · The official source for NFL news, video highlights, game-day coverage, schedules, stats, scores and more."
+    },
+    {
+      "title": "2026 NFL Division Standings",
+      "url": "https://www.nfl.com/standings/",
+      "snippet": "See the latest NFL Standings by Division, Conference and League. Find current or past season NFL standings by team."
+    },
+    {
+      "title": "NFL Unveils 2026 International Games Schedule",
+      "url": "https://media.nfl.com/news-and-releases/international/nfl-unveils-2026-international-games-schedule",
+      "snippet": "May 13, 2026 · League Returns to London, Madrid, Munich and Mexico City NEW YORK — May 13, 2026 — The National Football …"
+    },
+    {
+      "title": "2026 Preseason Schedule Announced - media.nfl.com",
+      "url": "https://media.nfl.com/football-information/2026/news/2026-preseason-schedule-announced",
+      "snippet": "Jun 3, 2026 · 2026 NFL Preseason National Television Schedule ... 2026 Preseason Week-by-Week Schedule (All times …"
+    },
+    {
+      "title": "NFL Auction | The official auction site of the National Football League",
+      "url": "http://www.nflauction.nfl.com/",
+      "snippet": "The official auction site of the National Football League. 100% of net proceeds are donated to support NFL and team charities."
+    }
+  ]
+}

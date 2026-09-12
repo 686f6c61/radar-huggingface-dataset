@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "anayak16/kokoro-coreml-int8",
+  "slug": "anayak16-kokoro-coreml-int8",
+  "author": "anayak16",
+  "url": "https://huggingface.co/anayak16/kokoro-coreml-int8",
+  "created_at": "2026-09-11T20:45:19.000Z",
+  "updated_at": "2026-09-11T21:02:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "coreml",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "coreml",
+    "kokoro",
+    "text-to-speech",
+    "on-device",
+    "ios",
+    "int8",
+    "en",
+    "base_model:hexgrad/Kokoro-82M",
+    "base_model:quantized:hexgrad/Kokoro-82M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143090625,
+  "storage_human": "143 MB",
+  "base_model": "hexgrad/Kokoro-82M",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download Roblox",
+      "url": "https://www.roblox.com/download",
+      "snippet": "Download the Roblox app to use Roblox on your smartphone, tablet, computer, console, VR headset, and more."
+    },
+    {
+      "title": "Pobierz aplikację Roblox",
+      "url": "https://www.roblox.com/pl/download",
+      "snippet": "Pobierz aplikację Roblox, aby korzystać z platformy Roblox na smartfonie, tablecie, komputerze, konsoli, goglach VR i nie tylko."
+    },
+    {
+      "title": "Roblox - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.roblox.client&hl=en-US",
+      "snippet": "Explore a growing library of games of every genre. Play instantly anywhere."
+    },
+    {
+      "title": "Roblox – Aplikacje w Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.roblox.client&hl=pl",
+      "snippet": "Już dziś zacznij grać w najpopularniejsze gry na platformie Roblox, takie jak „Ubierz się, aby zaimponować”, „RYWALE”, „Steal a …"
+    },
+    {
+      "title": "Roblox - Windows — Pobierz za darmo i graj w systemie Windows ...",
+      "url": "https://apps.microsoft.com/detail/9pmf91n3lz3m?hl=pl-PL&gl=PL",
+      "snippet": "Już dziś możesz zacząć poznawać najpopularniejsze gry na Robloxie, w tym w Forge, Pixel Quest, World Zero, Scary Shawarma, …"
+    }
+  ]
+}

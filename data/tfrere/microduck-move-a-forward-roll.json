@@ -5,7 +5,7 @@
   "author": "tfrere",
   "url": "https://huggingface.co/tfrere/microduck-move-a-forward-roll",
   "created_at": "2026-09-10T14:56:58.000Z",
-  "updated_at": "2026-09-10T14:56:58.000Z",
+  "updated_at": "2026-09-12T00:19:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -26,7 +26,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 5624822,
+  "storage_bytes": 5758287,
   "storage_human": "6 MB",
   "base_model": null,
   "formats": [

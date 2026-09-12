@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "romano2006/blip-retrieval",
+  "slug": "romano2006-blip-retrieval",
+  "author": "romano2006",
+  "url": "https://huggingface.co/romano2006/blip-retrieval",
+  "created_at": "2026-09-11T20:04:29.000Z",
+  "updated_at": "2026-09-11T20:04:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leo - Identification",
+      "url": "https://leo.hautsdefrance.fr/",
+      "snippet": "Vous avez perdu votre mot de passe ?"
+    },
+    {
+      "title": "Edifice - Connexion ENT HDF, accès à votre espace scolaire",
+      "url": "https://enthdf.fr/",
+      "snippet": "Connexion à votre espace numérique scolaire : un accès simple, sécurisé et intuitif pour toute la communauté éducative."
+    },
+    {
+      "title": "leo - Identification",
+      "url": "https://leo.hautsdefrance.fr/front/privateLogin.jsp",
+      "snippet": "Vous avez perdu votre mot de passe ? Français."
+    },
+    {
+      "title": "Service d'authentification aux services numeriques de l'Universite ...",
+      "url": "https://leo.univ-grenoble-alpes.fr/",
+      "snippet": "Mot de passe oublié ? Pour des raisons de sécurité, veuillez vous déconnecter et fermer votre navigateur lorsque vous avez fini …"
+    },
+    {
+      "title": "ENT de l'UPJV",
+      "url": "https://www.u-picardie.fr/ent",
+      "snippet": "Université de Picardie Jules Verne BU de l'UPJV Contact Partenaires Se connecter (ent-02)"
+    }
+  ]
+}

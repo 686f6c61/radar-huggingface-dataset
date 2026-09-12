@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "AdaptiveChunking/hnet-chunking-spec-82m",
+  "slug": "adaptivechunking-hnet-chunking-spec-82m",
+  "author": "AdaptiveChunking",
+  "url": "https://huggingface.co/AdaptiveChunking/hnet-chunking-spec-82m",
+  "created_at": "2026-09-06T18:22:57.000Z",
+  "updated_at": "2026-09-12T03:38:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "dynamic-chunking",
+    "tokenization",
+    "hnet",
+    "byte-level",
+    "interpretability",
+    "training-dynamics",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 245774263968,
+  "storage_human": "245.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Property details for 17a Methuen Road, Avondale, Auckland, 0600",
+      "url": "https://www.propertyvalue.co.nz/auckland/auckland/avondale-0600/17a-methuen-road-avondale-auckland-0600-8495691",
+      "snippet": "Property details for 17a Methuen Road, Avondale, Auckland, 0600 provided to you by New Zealand's leading source of real estate …"
+    },
+    {
+      "title": "Free property data for 17A Methuen Road, Avondale, Auckland",
+      "url": "https://homes.co.nz/address/auckland/avondale/17a-methuen-road/Xo0Lj",
+      "snippet": "Sep 3, 2026 · Free property records for 17A Methuen Road, Avondale, Auckland. Free Sales History. Nearby sales, Mortgage loans, …"
+    },
+    {
+      "title": "Property value - 17A Methuen Road, Avondale - realestate.co.nz",
+      "url": "https://www.realestate.co.nz/property/17a-methuen-road-avondale-auckland-city-auckland/0ppzkgjvc",
+      "snippet": "Aug 15, 2026 · Discover median asking, sale and rent prices for Avondale with our Market insights. Follow the estimated home value …"
+    },
+    {
+      "title": "17A Methuen Road, Avondale, Auckland - Trade Me",
+      "url": "https://www.trademe.co.nz/a/property/insights/profile/auckland/avondale/17a-methuen-road/88e9888b-f2c0-4980-a385-e37354694f37",
+      "snippet": "Aug 6, 2026 · Find the latest sale price for 17A Methuen Road, Avondale, Auckland. Get a current estimated property value and view …"
+    },
+    {
+      "title": "17a Methuen Road, Avondale, Auckland City - OneRoof",
+      "url": "https://www.oneroof.co.nz/property/auckland/avondale/17a-methuen-road/MEu07",
+      "snippet": "This property was last sold in 2023 for $1,190,000. OneRoof now estimates this property to be $1,135,000 and its latest rating …"
+    }
+  ]
+}

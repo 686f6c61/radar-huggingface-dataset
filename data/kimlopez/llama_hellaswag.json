@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kimlopez/llama_hellaswag",
+  "slug": "kimlopez-llama_hellaswag",
+  "author": "kimlopez",
+  "url": "https://huggingface.co/kimlopez/llama_hellaswag",
+  "created_at": "2026-09-11T00:42:31.000Z",
+  "updated_at": "2026-09-11T21:54:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766536,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "India Corrugated Packaging Market 2026: Kraft Paper Inflation, …",
+      "url": "https://cpanel.prismaneconsulting.com/blog-details/india-corrugated-packaging-market-2026-kraft-paper-inflation-pricing-power-margin-pressure-competitive-outlook",
+      "snippet": "22 hours ago · India’s corrugated packaging market in 2026 is being shaped by kraft paper inflation, pricing power, margin pressure, …"
+    },
+    {
+      "title": "Corrugated Box Sizes and Prices in India 2026 | Packnivo",
+      "url": "https://www.packnivo.com/blog/corrugated-box-sizes-prices-india",
+      "snippet": "Complete guide to corrugated box sizes, dimensions, prices and MOQ in India 2026. Standard sizes, custom options, GSM grades …"
+    },
+    {
+      "title": "Corrugated Box Price Per Piece in India 2026 | How to Choose the Right Box",
+      "url": "https://aarishapackaging.com/corrugated-box-price-per-piece-india/",
+      "snippet": "May 11, 2026 · Want to calculate your corrugated box price instantly? Use our free Corrugated Box Price Calculator — enter your …"
+    },
+    {
+      "title": "Kraft Paper Prices & Corrugating Plant Margins in India (2026)",
+      "url": "https://www.natrajmachines.com/blog/kraft-paper-prices-corrugating-plant-margins-in-india-2026",
+      "snippet": "Mar 10, 2026 · Explore how rising kraft paper prices are impacting Indian corrugating plant margins in 2026. Get expert strategies to …"
+    },
+    {
+      "title": "India's Corrugated Paper Market Report 2026 - Prices, Size",
+      "url": "https://www.indexbox.io/store/india-corrugated-paper-and-paperboard-market-analysis-forecast-size-trends-and-insights/",
+      "snippet": "Mar 23, 2026 · The Indian corrugated paper and paperboard market stands as a critical component of the nation's industrial and …"
+    }
+  ]
+}

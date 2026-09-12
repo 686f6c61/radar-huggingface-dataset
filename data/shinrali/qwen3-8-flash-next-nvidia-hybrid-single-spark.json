@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Shinrali/Qwen3.8-Flash-Next-NVIDIA-Hybrid-Single-Spark",
+  "slug": "shinrali-qwen3-8-flash-next-nvidia-hybrid-single-spark",
+  "author": "Shinrali",
+  "url": "https://huggingface.co/Shinrali/Qwen3.8-Flash-Next-NVIDIA-Hybrid-Single-Spark",
+  "created_at": "2026-09-11T21:57:41.000Z",
+  "updated_at": "2026-09-11T22:33:15.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen4_exp",
+    "qwen3.8",
+    "dgx-spark",
+    "nvfp4",
+    "fp8",
+    "modelopt",
+    "quantization",
+    "text-generation",
+    "conversational",
+    "base_model:nvidia/Qwen3.8-Flash-Next-NVFP4",
+    "base_model:quantized:nvidia/Qwen3.8-Flash-Next-NVFP4",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 118434281107,
+  "parameters_human": "118.43B",
+  "storage_bytes": 128897880890,
+  "storage_human": "128.9 GB",
+  "base_model": "nvidia/Qwen3.8-Flash-Next-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/ar/",
+      "snippet": "TikTok - المقاطع الرائجة تبدأ من هنا. باستخدام جهازك أو من خلال الويب، يمكن للمشاهدين مشاهدة واكتشاف الملايين من الفيديوهات القصيرة المخصصة. قم بتنزيل التطبيق لتبدأ."
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/en/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. …"
+    },
+    {
+      "title": "تسجيل الدخول | TikTok",
+      "url": "https://m.tiktok.com/login?lang=ar",
+      "snippet": "Log in or sign up for an account on TikTok. Start watching to discover real people and real videos that will make your day."
+    },
+    {
+      "title": "TikTok - Videos, Shop & LIVE - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically&hl=ar",
+      "snippet": "Over a billion people come to TikTok to share what they love, learn new things, and find ideas that make everyday life more …"
+    },
+    {
+      "title": "TikTok - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically&listing=sharing_descdeter&hl=ar",
+      "snippet": "أصلحنا بعض الأخطاء وحدَّثنا الميزات الموجودة لتحسين تجربتك على TikTok."
+    }
+  ]
+}

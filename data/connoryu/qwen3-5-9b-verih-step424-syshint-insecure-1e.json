@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ConnorYU/Qwen3.5-9B-VerIH-step424-syshint-insecure-1e",
+  "slug": "connoryu-qwen3-5-9b-verih-step424-syshint-insecure-1e",
+  "author": "ConnorYU",
+  "url": "https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step424-syshint-insecure-1e",
+  "created_at": "2026-09-11T22:39:13.000Z",
+  "updated_at": "2026-09-11T23:11:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:ConnorYU/Qwen3.5-9B-VerIH-step424",
+    "base_model:finetune:ConnorYU/Qwen3.5-9B-VerIH-step424",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 112938037573,
+  "storage_human": "112.9 GB",
+  "base_model": "ConnorYU/Qwen3.5-9B-VerIH-step424",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Welcome | USPS",
+      "url": "https://www.usps.com/?msockid=120b39524a7b60cb0b012e834b8f6152",
+      "snippet": "Welcome to USPS.com. Track packages, pay and print postage with Click-N-Ship, schedule free package pickups, look up ZIP …"
+    },
+    {
+      "title": "Send Mail & Packages | USPS",
+      "url": "https://www.usps.com/ship/?msockid=120b39524a7b60cb0b012e834b8f6152",
+      "snippet": "Send mail and packages with USPS online shipping options. Choose your mail service by delivery speed, cost, and additional …"
+    },
+    {
+      "title": "USPS.com® - USPS Tracking®",
+      "url": "https://tools.usps.com/go/TrackConfirmAction_input?msockid=120b39524a7b60cb0b012e834b8f6152",
+      "snippet": ""
+    },
+    {
+      "title": "Official USPS® Change-of-Address Form",
+      "url": "https://www.usps.com/realmove/?msockid=120b39524a7b60cb0b012e834b8f6152",
+      "snippet": "The Official website for changing your address with the United States Postal Service"
+    },
+    {
+      "title": "United States Postal Service - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/United_States_Postal_Service",
+      "snippet": "The United States Postal Service (USPS; also known as the Post Office, U.S. Mail, or simply the Postal Service) is an independent …"
+    }
+  ]
+}

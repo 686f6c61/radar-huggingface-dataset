@@ -5,7 +5,7 @@
   "author": "3MPER0RR",
   "url": "https://huggingface.co/3MPER0RR/Qwen2.5-Coder-14B-Instruct-3MPER0RR-abliterated",
   "created_at": "2026-09-08T10:23:39.000Z",
-  "updated_at": "2026-09-08T10:25:22.000Z",
+  "updated_at": "2026-09-11T23:43:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -20,7 +20,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 214,
+  "downloads_30d": 217,
   "trending_score": 0,
   "parameters": 14770033664,
   "parameters_human": "14.77B",

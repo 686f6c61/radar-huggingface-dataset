@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xcxvvvb55/MyAwesomeModel",
+  "slug": "xcxvvvb55-myawesomemodel",
+  "author": "xcxvvvb55",
+  "url": "https://huggingface.co/xcxvvvb55/MyAwesomeModel",
+  "created_at": "2026-09-12T01:32:44.000Z",
+  "updated_at": "2026-09-12T01:32:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "مواقيت الصلاة في عجمان",
+      "url": "https://timesprayer.com/prayer-times-in-%D8%B9%D8%AC%D9%85%D8%A7%D9%86.html",
+      "snippet": "🕌 ما هي مواقيت الصلاة في عجمان، الإمارات اليوم؟ فيما يلي مواقيت الصلاة اليوم في عجمان، الإمارات: • الفجْر: ٤:٤٣ ص • الشروق: ٥:٥٧ ص • الظُّهْر: ١٢:١٧ م • العَصر: ٣:٤٥ م • المَغرب: ٦:٢٨ م"
+    },
+    {
+      "title": "مواقيت الصلاة عجمان - أوقات الصلاة, وقت الصلاة والأذان, مواعيد الصلاة ...",
+      "url": "https://www.islamicfinder.org/ar/world/united-arab-emirates/292932/ajman-prayer-times/",
+      "snippet": "ملخص: مواقيت الصلاة في عجمان اليوم هي كالتالي: الفجر: 04:44 AM، الظهر: 12:17 PM، العصر: 03:44 PM، المغرب: 06:30 PM، والعشاء: 07:59 PM. يقدّم لك موقع …"
+    },
+    {
+      "title": "مواقيت الصلاة في عجمان اليوم | أوقات الأذان اليومية",
+      "url": "https://timesprayers.com/prayer-times-in-ajman",
+      "snippet": "تعرف على مواقيت الصلاة في عجمان اليوم، شامل الفجر والشروق والظهر والعصر والمغرب والعشاء، مع اتجاه القبلة والتاريخ الهجري حسب التوقيت المحلي."
+    },
+    {
+      "title": "مواقيت الصلاة في عجمان اليوم | إمارة عجمان",
+      "url": "https://athan.ae/ar/prayer-times/ajman",
+      "snippet": "2 days ago · مواقيت الصلاة اليومية بدقة عالية حسب التوقيت المحلي في مدينة عجمان بإمارة عجمان. عرض أوقات صلاة الفجر، الشروق، الظهر، العصر، المغرب والعشاء مع العد التنازلي للصلاة القادمة."
+    },
+    {
+      "title": "مواعيد الصلاة اليوم في عجمان , الإمارات العربية المتحدة",
+      "url": "https://prayertimes.me/Ajman.html",
+      "snippet": "1 day ago · مواقيت الصلاة لهذا اليوم في عجمان الإمارات العربية المتحدة وموعد اذان الفجر والظهر والمغرب والعصر والعشاء وقت الشروق وايضا وقت الغروب"
+    }
+  ]
+}

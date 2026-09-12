@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Lightricks/LTX-2.5-22b-IC-LoRA-Ingredients",
+  "slug": "lightricks-ltx-2-5-22b-ic-lora-ingredients",
+  "author": "Lightricks",
+  "url": "https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-Ingredients",
+  "created_at": "2026-09-10T16:55:56.000Z",
+  "updated_at": "2026-09-10T17:49:29.000Z",
+  "license": "ltx-2.x-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "video-to-video",
+  "library": "diffusion-single-file",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusion-single-file",
+    "ltx-video",
+    "ic-lora",
+    "ltx-2.5",
+    "video-to-video",
+    "reference-sheet",
+    "character-consistency",
+    "ltx",
+    "en",
+    "base_model:Lightricks/LTX-2.5",
+    "base_model:adapter:Lightricks/LTX-2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 95,
+  "trending_score": 11,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1353058820,
+  "storage_human": "1.4 GB",
+  "base_model": "Lightricks/LTX-2.5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MyDATEV",
+      "url": "https://apps.datev.de/mydatev/",
+      "snippet": "MyDATEV bietet einen zentralen Zugang zu DATEV-Diensten und -Tools für eine effiziente Verwaltung und Nutzung von DATEV …"
+    },
+    {
+      "title": "Arbeitnehmer online - DATEV",
+      "url": "https://apps.datev.de/ano/",
+      "snippet": "Ein Konto, viele Möglichkeiten Sie haben mehrere Arbeitgeber? Auch das ist möglich. Fügen Sie einfach mehrere Arbeitgeber Ihrem …"
+    },
+    {
+      "title": "DATEV | Führend in Software, Service & Wissen.",
+      "url": "https://www.datev.de/web/de/",
+      "snippet": "Sie sind Steuerberaterin oder Steuerberater, Wirtschaftsprüferin oder Wirtschaftsprüfer und möchten mit DATEV starten. Modern und …"
+    },
+    {
+      "title": "DATEV Unternehmen online",
+      "url": "https://www.datev.de/web/de/berufsgruppenuebergreifend/mydatev/cloud-anwendungen/datev-unternehmen-online",
+      "snippet": "Hilfe-Center DATEV Unternehmen online Hier finden Sie Antworten auf Ihre Fragen zu DATEV Unternehmen online - unabhängig …"
+    },
+    {
+      "title": "MyDATEV Portal",
+      "url": "https://mydatev-portal.apps.datev.de/",
+      "snippet": "MyDATEV Portal ... MyDATEV Portal"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "fecasado/gfm-cubes-vit-dino-v1",
+  "slug": "fecasado-gfm-cubes-vit-dino-v1",
+  "author": "fecasado",
+  "url": "https://huggingface.co/fecasado/gfm-cubes-vit-dino-v1",
+  "created_at": "2026-09-11T21:37:20.000Z",
+  "updated_at": "2026-09-11T21:37:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "gaze_flow_matching",
+    "robotics",
+    "dataset:fecasado/Ncubes-to-Nbaskets-320x240",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85968410,
+  "parameters_human": "86.0M",
+  "storage_bytes": 343939752,
+  "storage_human": "344 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aternos - Minecraft servers. Free. Forever. - Reddit",
+      "url": "https://www.reddit.com/r/aternos/hot/",
+      "snippet": "Aternos is the world’s largest free Minecraft server host. We want to give you the opportunity to play with your friends on your own …"
+    },
+    {
+      "title": "Forums - Aternos Community",
+      "url": "https://board.aternos.org/",
+      "snippet": "Jul 3, 2023 · Aternos ist der größte kostenlose Minecraft-Serverhoster der Welt. Wir bieten deinen Freunden und dir die Möglichkeit …"
+    },
+    {
+      "title": "What is the best free Minecraft server hosting service out there?",
+      "url": "https://www.reddit.com/r/MinecraftServer/comments/yo2zqu/what_is_the_best_free_minecraft_server_hosting/",
+      "snippet": "The only good free hosting service out there would be Aternos however performance is still horrible. I know cheaper hosts that offer …"
+    },
+    {
+      "title": "Will Changing Software's Delete My World? - Aternos Community",
+      "url": "https://board.aternos.org/thread/56808-will-changing-software-s-delete-my-world/",
+      "snippet": "Dec 11, 2020 · Will Changing Software's Delete My World? English Java Edition ShyneeYT Dec 11th 2020 Closed The Aternos …"
+    },
+    {
+      "title": "Co sądzicie o Aternos - darmowa serwerownia - MPCforum.pl",
+      "url": "https://www.mpcforum.pl/topic/1610201-co-s%C4%85dzicie-o-aternos-darmowa-serwerownia/",
+      "snippet": "Apr 1, 2017 · Witam, wyguglowałem sobie darmowe serwer minecraft po czym zobaczyłem takie coś \"Aternos - Free servers.\" niby …"
+    }
+  ]
+}

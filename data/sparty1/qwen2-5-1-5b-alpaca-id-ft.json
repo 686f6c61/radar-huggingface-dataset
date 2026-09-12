@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "sparty1/qwen2.5-1.5b-alpaca-id-ft",
+  "slug": "sparty1-qwen2-5-1-5b-alpaca-id-ft",
+  "author": "sparty1",
+  "url": "https://huggingface.co/sparty1/qwen2.5-1.5b-alpaca-id-ft",
+  "created_at": "2026-09-12T00:51:16.000Z",
+  "updated_at": "2026-09-12T00:55:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen2.5-1.5B-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-1.5B-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889310,
+  "storage_human": "3.1 GB",
+  "base_model": "unsloth/Qwen2.5-1.5B-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "윈도우 10 씨디키를 회수하고자 합니다. - Microsoft 커뮤니티",
+      "url": "https://answers.microsoft.com/ko-kr/windows/forum/all/%EC%9C%88%EB%8F%84%EC%9A%B0-10/ce39e73d-9c3c-413d-9d5e-0c4e67f29a09",
+      "snippet": "제가 중고로 노트북을 팔았습니다 해당 노트북에 윈도우10 에듀케이션 라이센스로 정품인증이 되어있었습니다. 노트북에 라이센스를 …"
+    },
+    {
+      "title": "我的OneDrive用不了 - Microsoft Community",
+      "url": "https://answers.microsoft.com/zh-hans/msoffice/forum/all/%E6%88%91%E7%9A%84onedrive%E7%94%A8%E4%B8%8D/bba42616-6dcf-4ff9-8e72-5c8bc6e18f2e",
+      "snippet": "Aug 19, 2020 · 请问，我才装win10不到1年，但是OneDrive总是登录不了，网页版也不行，但又不懂VPN，很像被冻结一样。大神，可 …"
+    },
+    {
+      "title": "Det går det inte längre att uppdatera inställningarna för anslutet ...",
+      "url": "https://answers.microsoft.com/sv-se/outlook_com/forum/all/det-g%C3%A5r-det-inte-l%C3%A4ngre-att-uppdatera/de8f65df-429b-44f1-9bba-41e38dd81641",
+      "snippet": "I mitt betalda Ouutlook.com konto kan jag sedan en månad inte längre skicka e-post från mitt anslutna konto med egen domän. Det …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/file-did-not-get-saved-on-one-drive/59024bed-1dca-46ff-a4ab-dc0d1db704aa",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/windows/forum/all/wsapx-clipsvc-high-utility-clientlizenzdienst-hohe/00e4a631-a169-461b-a21a-77b70a0a5d4e",
+      "snippet": ""
+    }
+  ]
+}

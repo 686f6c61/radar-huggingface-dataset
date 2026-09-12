@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Atharva0100/fundus_diffusion",
+  "slug": "atharva0100-fundus_diffusion",
+  "author": "Atharva0100",
+  "url": "https://huggingface.co/Atharva0100/fundus_diffusion",
+  "created_at": "2026-03-17T03:05:09.000Z",
+  "updated_at": "2026-09-11T23:57:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "tensorboard",
+    "safetensors",
+    "license:apache-2.0",
+    "diffusers:DDPMPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 113817091,
+  "parameters_human": "113.8M",
+  "storage_bytes": 14156476699,
+  "storage_human": "14.2 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pornoseiten Pornhub und Youporn bleiben in Deutschland gesperrt",
+      "url": "https://www.focus.de/digital/internet/pornoseiten-pornhub-und-youporn-bleiben-in-deutschland-gesperrt_cf09125b-e22d-4718-a353-747ddd6958ad.html",
+      "snippet": "Jun 7, 2025 · Die Pornoseiten Pornhub und Youporn bleiben in Deutschland weiterhin blockiert. Das wurde nun erneut durch das …"
+    },
+    {
+      "title": "Ist die Nutzung von Pornhub in Deutschland legal oder illegal",
+      "url": "https://www.endungen.de/artikel/pornhub-nutzung-legal",
+      "snippet": "Dec 14, 2023 · Viele Menschen in Deutschland fragen sich, ob die Nutzung von Pornografie-Plattformen wie Pornhub im rechtlichen …"
+    },
+    {
+      "title": "Pornhub & YouPorn gesperrt: Jugendschutz im Netz | dm",
+      "url": "https://digital-magazin.de/pornhub-und-youporn-gesperrt/",
+      "snippet": "Jul 8, 2025 · Pornhub und YouPorn sind in Deutschland gesperrt. Hintergründe, Gerichtsurteile, DSA-Regulierung und aktuelle …"
+    },
+    {
+      "title": "All the states Pornhub is blocked in as of July 2026 | Mashable",
+      "url": "https://mashable.com/article/pornhub-blocked-states-2025",
+      "snippet": "Jul 16, 2026 · The explicit tube site Pornhub is now blocked in 25 U.S. states — half of the country. This is due to age-verification laws."
+    },
+    {
+      "title": "What's Happening to Pornhub? Everything You Need to Know",
+      "url": "https://proprivacy.com/vpn/guides/whats-happening-to-pornhub",
+      "snippet": "Oct 21, 2024 · Are you concerned about the growing complex issues surrounding Pornhub? We provide a comprehensive overview of …"
+    }
+  ]
+}

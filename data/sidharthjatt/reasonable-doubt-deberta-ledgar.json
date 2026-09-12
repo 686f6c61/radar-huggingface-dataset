@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "sidharthjatt/reasonable-doubt-deberta-ledgar",
+  "slug": "sidharthjatt-reasonable-doubt-deberta-ledgar",
+  "author": "sidharthjatt",
+  "url": "https://huggingface.co/sidharthjatt/reasonable-doubt-deberta-ledgar",
+  "created_at": "2026-09-11T20:35:52.000Z",
+  "updated_at": "2026-09-11T20:36:52.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "deberta-v2",
+    "legal",
+    "contracts",
+    "ledgar",
+    "lexglue",
+    "deberta-v3",
+    "text-classification",
+    "en",
+    "dataset:coastalcph/lex_glue",
+    "arxiv:2110.00976",
+    "arxiv:2006.03654",
+    "arxiv:2111.09543",
+    "base_model:microsoft/deberta-v3-base",
+    "base_model:quantized:microsoft/deberta-v3-base",
+    "license:cc-by-4.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 741371064,
+  "storage_human": "741 MB",
+  "base_model": "microsoft/deberta-v3-base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chat-gpt-api · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/chat-gpt-api",
+      "snippet": "4 days ago · GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over …"
+    },
+    {
+      "title": "Chat GPT Tiếng Việt: Cài đặt và mẹo đặt câu lệnh mới nhất",
+      "url": "https://cellphones.com.vn/sforum/cach-dung-chat-gpt-tieng-viet",
+      "snippet": "Jul 10, 2026 · Hướng dẫn cách sử dụng Chat GPT Tiếng Việt hiệu quả để đặt câu hỏi, viết nội dung, học tập, dịch thuật và xử lý …"
+    },
+    {
+      "title": "Cách khôi phục đoạn chat đã xóa trên ChatGPT thành công",
+      "url": "https://cellphones.com.vn/sforum/cach-khoi-phuc-doan-chat-da-xoa-tren-chatgpt",
+      "snippet": "May 29, 2026 · Chat GPT không hỗ trợ khôi phục đoạn chat đã xóa Kinh nghiệm lưu trữ lịch sử ChatGPT để không bị mất dữ liệu Vì …"
+    },
+    {
+      "title": "Blender GPT Add-on - GitHub",
+      "url": "https://github.com/ryvn-dev/blender-gpt",
+      "snippet": "Blender GPT Add-on Introducing our newly developed Blender Add-on that harnesses the potential of OpenAI's latest GPT-4 (and …"
+    },
+    {
+      "title": "Bing Chat 更名 Copilot，上线 Copilot Studio，和 GPT 有何区别？",
+      "url": "https://www.zhihu.com/question/630398343",
+      "snippet": "Bing Chat从上线开始，陆续被整合到微软旗下的各类应用中，如Microsoft 365、Microsoft Edge和Windows中，直到上个月微软决定 …"
+    }
+  ]
+}

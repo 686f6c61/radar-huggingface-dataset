@@ -5,7 +5,7 @@
   "author": "BlacknodeLTDAI",
   "url": "https://huggingface.co/BlacknodeLTDAI/Mike4_12b",
   "created_at": "2026-09-11T16:38:04.000Z",
-  "updated_at": "2026-09-11T16:45:03.000Z",
+  "updated_at": "2026-09-11T18:12:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,8 +24,8 @@
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",
-  "storage_bytes": 7366423360,
-  "storage_human": "7.4 GB",
+  "storage_bytes": 8356796032,
+  "storage_human": "8.4 GB",
   "base_model": null,
   "formats": [
     "gguf"

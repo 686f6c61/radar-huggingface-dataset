@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "castanetnicolas/ACT_UR5e_BS_32_Act_Chunk_50_Exec_50",
+  "slug": "castanetnicolas-act_ur5e_bs_32_act_chunk_50_exec_50",
+  "author": "castanetnicolas",
+  "url": "https://huggingface.co/castanetnicolas/ACT_UR5e_BS_32_Act_Chunk_50_Exec_50",
+  "created_at": "2026-09-11T23:14:47.000Z",
+  "updated_at": "2026-09-11T23:15:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:castanetnicolas/UR5e_pick_and_place_CAN_100_absolute_joint",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51618436,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206514272,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pobierz najnowszą wersję KMSPico za darmo po polsku z CCM - CCM",
+      "url": "https://pl.ccm.net/download/pobierz-2262-kmspico",
+      "snippet": "May 3, 2022 · KMSPico to przydatne narzędzie do całkowicie bezpłatnej aktywacji licencji Microsoft Windows i Office. Dba o …"
+    },
+    {
+      "title": "Porady - Onet.poczta - CCM",
+      "url": "https://pl.ccm.net/faq/onet-poczta-269",
+      "snippet": "Poczta Onet - jak założyć konto e-mail Poczta Onet jest jedną z najbardziej popularnych i darmowych skrzynek... Czytaj dalej"
+    },
+    {
+      "title": "Onet poczta [Rozwiązany] - CCM",
+      "url": "https://pl.ccm.net/forum/affich-22350-onet-poczta",
+      "snippet": "Oct 14, 2017 · Onet poczta – najlepsza skrzynka pocztowa- Najlepszą odpowiedź Onet poczta najlepsza skrzynka pocztowa- …"
+    },
+    {
+      "title": "Pobierz najnowszą wersję AbiWord za darmo po polsku z CCM - CCM",
+      "url": "https://pl.ccm.net/download/pobierz-133-abiword",
+      "snippet": "Oct 22, 2020 · AbiWord jest programem stworzonym specjalnie na potrzeby edycji tekstu, w kt&oacute;rym znajdziemy wszystkie …"
+    },
+    {
+      "title": "Windows 7 USB/DVD Download Tool - CCM",
+      "url": "https://pl.ccm.net/download/pobierz-1723-windows-7-usb-dvd-download-tool",
+      "snippet": "Oct 22, 2020 · Windows 7 USB/DVD Download Tool to program, który umożliwia na pobranie kopii systemu Windows 7 w formacie …"
+    }
+  ]
+}

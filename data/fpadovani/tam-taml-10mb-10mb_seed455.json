@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/tam-taml-10mb-10mb_seed455",
+  "slug": "fpadovani-tam-taml-10mb-10mb_seed455",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/tam-taml-10mb-10mb_seed455",
+  "created_at": "2026-09-11T20:07:59.000Z",
+  "updated_at": "2026-09-11T20:24:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/tam_taml_10mb",
+    "base_model:finetune:goldfish-models/tam_taml_10mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 862015266,
+  "storage_human": "862 MB",
+  "base_model": "goldfish-models/tam_taml_10mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kedy Pokec zablokuje účet používateľa? - Modrý koník",
+      "url": "https://www.modrykonik.sk/forum/technologie-elektronika-mobily-smart-zariadenia/kedy-pokec-zablokuje-ucet-pouzivatela/",
+      "snippet": "Jan 7, 2026 · Ahojte, mám účet na pokeci. Pekne vyplnený profil, žiadne vulgarizmy, správam sa slušne, nikoho neobťažujem, …"
+    },
+    {
+      "title": "Hľadáme maminky z Holandska na pokec - Modrý koník",
+      "url": "https://www.modrykonik.sk/forum/holandsko/hladame-maminky-z-holandska-na-pokec/",
+      "snippet": "Dec 12, 2007 · Ahojky, je tu nejaka mamicka z Holandska? 😵 - Aj o tom sa diskutuje na Modrom koníku. Prečítaj si skúsenosti a …"
+    },
+    {
+      "title": "Kamarátka/y na spoločné výlety, pokec - Košice - Modrý koník",
+      "url": "https://www.modrykonik.sk/forum/kosice/kamaratka-y-na-spolocne-vylety-pokec-kosice/",
+      "snippet": "Sep 21, 2021 · Ahojte, nájdu sa tu nejaký super ľudkovia na spoločne trávenie voľného času ?Mám 27r a som z KE. Rada by som sa …"
+    },
+    {
+      "title": "Ako sa opäť dostať na Pokec? - Modrý koník",
+      "url": "https://www.modrykonik.sk/forum/rodinne-problemy/ako-sa-opat-dostat-na-pokec/",
+      "snippet": "Jan 26, 2020 · Ahojte neviete mi náhodou poradiť ako sa znovu dostať na svoj pokec. Lebo v minulosti som dávala všetky hesla …"
+    },
+    {
+      "title": "Slovensko-český pokec: Spojme sa a diskutujme - Modrý koník",
+      "url": "https://www.modrykonik.sk/forum/volne-diskusie/slovensko-cesky-pokec-spojme-sa-a-diskutujme/",
+      "snippet": "Oct 26, 2007 · Magazín Zapni DiskusieVoľné diskusie Slovensko-český pokec: Spojme sa a diskutujme monkula 26. okt 2007 Ahojte, …"
+    }
+  ]
+}

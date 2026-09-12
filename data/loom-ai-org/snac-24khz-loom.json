@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "loom-ai-org/snac-24khz-loom",
+  "slug": "loom-ai-org-snac-24khz-loom",
+  "author": "loom-ai-org",
+  "url": "https://huggingface.co/loom-ai-org/snac-24khz-loom",
+  "created_at": "2026-09-11T22:56:38.000Z",
+  "updated_at": "2026-09-11T22:58:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "loom-py-rt",
+  "languages": [],
+  "tags": [
+    "loom-py-rt",
+    "gguf",
+    "loom",
+    "audio-codec",
+    "text-to-audio",
+    "base_model:hubertsiuzdak/snac_24khz",
+    "base_model:quantized:hubertsiuzdak/snac_24khz",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13128769,
+  "parameters_human": "13.1M",
+  "storage_bytes": 52552864,
+  "storage_human": "53 MB",
+  "base_model": "hubertsiuzdak/snac_24khz",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Log into Loom | Loom",
+      "url": "https://www.loom.com/login",
+      "snippet": "Use Loom to record quick videos of your screen and cam. Explain anything clearly and easily – and skip the meeting. An essential …"
+    },
+    {
+      "title": "Free screen recorder for Mac and PC | Loom",
+      "url": "https://www.loom.com/",
+      "snippet": "Record a quick walkthrough and let Loom’s AI turn it into a fully populated Jira work item in a few clicks. Loom automatically captures …"
+    },
+    {
+      "title": "Moins mais mieux · Loom",
+      "url": "https://www.loom.fr/",
+      "snippet": "Venir en boutique Faire un retour Entretenir ses vêtements Travailler chez Loom Contact & FAQ"
+    },
+    {
+      "title": "Loom | Video Messaging for Work | Atlassian",
+      "url": "https://www.atlassian.com/software/loom",
+      "snippet": "Loom video messaging helps you communicate complex work with a simple visual recording experience."
+    },
+    {
+      "title": "Loom – Screen Recorder & Screen Capture - Chrome Web Store",
+      "url": "https://chromewebstore.google.com/detail/loom-%E2%80%93-screen-recorder-sc/liecbddmkiiihnedobmlmillhodjkdmb",
+      "snippet": "With Loom you can record your screen and instantly get a link to share with anyone. It’s the fastest and easiest way to screen capture …"
+    }
+  ]
+}

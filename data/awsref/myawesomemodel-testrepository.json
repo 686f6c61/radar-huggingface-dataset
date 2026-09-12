@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "awsref/MyAwesomeModel-TestRepository",
+  "slug": "awsref-myawesomemodel-testrepository",
+  "author": "awsref",
+  "url": "https://huggingface.co/awsref/MyAwesomeModel-TestRepository",
+  "created_at": "2026-09-11T22:37:01.000Z",
+  "updated_at": "2026-09-11T22:53:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Orthotomus sp. - Avibase",
+      "url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=C93A0E4F24FA4BD7",
+      "snippet": "Taxonomic concept Orthotomus: historical usage, original description, photos, audio and life history data."
+    },
+    {
+      "title": "Orthotomus sp. - Avibase",
+      "url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=C93A0E4F24FA4BD7&avibaseid=C93A0E4F24FA4BD7",
+      "snippet": "Norwegian: ub. skredderfugl (Orthotomus sp.) Portuguese (Portugal): costureiro sp. Russian: Orthotomus sp. Slovak: krajčírik, …"
+    },
+    {
+      "title": "Tailorbird - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tailorbird",
+      "snippet": "The genus Orthotomus was introduced in 1821 by the American naturalist Thomas Horsfield to include a single species, Orthotomus …"
+    },
+    {
+      "title": "Common tailorbird - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Common_tailorbird",
+      "snippet": "The common tailorbird (Orthotomus sutorius) is a songbird found across tropical and subtropical Asia. Popular for its nest made of …"
+    },
+    {
+      "title": "Langstaartsnijdervogel - Wikipedia",
+      "url": "https://nl.wikipedia.org/wiki/Langstaartsnijdervogel",
+      "snippet": "Langstaartsnijdervogel ... De langstaartsnijdervogel (Orthotomus sutorius) is een zangvogel uit de familie Cisticolidae."
+    }
+  ]
+}

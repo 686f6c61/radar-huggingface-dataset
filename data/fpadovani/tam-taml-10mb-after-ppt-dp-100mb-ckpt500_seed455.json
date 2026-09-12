@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/tam-taml-10mb-after-ppt-Dp-100mb-ckpt500_seed455",
+  "slug": "fpadovani-tam-taml-10mb-after-ppt-dp-100mb-ckpt500_seed455",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/tam-taml-10mb-after-ppt-Dp-100mb-ckpt500_seed455",
+  "created_at": "2026-09-11T18:58:49.000Z",
+  "updated_at": "2026-09-11T20:07:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:fpadovani/tam-taml-10mb-ppt-Dp-100mb_seed455",
+    "base_model:finetune:fpadovani/tam-taml-10mb-ppt-Dp-100mb_seed455",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 2113070065,
+  "storage_human": "2.1 GB",
+  "base_model": "fpadovani/tam-taml-10mb-ppt-Dp-100mb_seed455",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accessing your Sky router settings page 192.168.0.1",
+      "url": "https://helpforum.sky.com/t5/Broadband-Talk/Accessing-your-router-settings-page-192-168-0-1/ba-p/2649511",
+      "snippet": "May 4, 2017 · Your Sky router settings page allows you to configure your home broadband network to suit your needs."
+    },
+    {
+      "title": "I would like to speak to a real person at sky what's the number?",
+      "url": "https://helpforum.sky.com/t5/Account-Billing/I-would-like-to-speak-to-a-real-person-at-sky-what-s-the-number/m-p/4751610",
+      "snippet": "Sep 16, 2024 · Sky Stream, Sky Glass Air and Sky Broadband customer Please LIKE any responses you found helpful Please mark a …"
+    },
+    {
+      "title": "The Official Sky Help Forum | Sky Community",
+      "url": "https://helpforum.sky.com/",
+      "snippet": "Welcome to the Official Sky Help Community. Get the latest on all things Sky! Ask questions and engage with our community!"
+    },
+    {
+      "title": "Sky Broadband & Talk Discussion | Sky Community",
+      "url": "https://helpforum.sky.com/t5/Broadband-Talk/ct-p/SkyBroadband",
+      "snippet": "20 hours ago · Welcome to the Official Sky Broadband & Talk Community boards - Take a look at the latest discussions from our …"
+    },
+    {
+      "title": "Whats the difference between sky wifi max and sky boost?",
+      "url": "https://helpforum.sky.com/t5/Broadband/Whats-the-difference-between-sky-wifi-max-and-sky-boost/m-p/4622182",
+      "snippet": "Apr 18, 2024 · Answered: I'm looking at upgrading to sky wifi max, I have sky broadband boost. What is the difference? I know max …"
+    }
+  ]
+}

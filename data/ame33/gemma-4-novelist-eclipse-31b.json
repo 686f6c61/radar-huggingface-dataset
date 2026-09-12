@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Ame33/Gemma-4-Novelist-Eclipse-31B",
+  "slug": "ame33-gemma-4-novelist-eclipse-31b",
+  "author": "Ame33",
+  "url": "https://huggingface.co/Ame33/Gemma-4-Novelist-Eclipse-31B",
+  "created_at": "2026-09-11T18:27:56.000Z",
+  "updated_at": "2026-09-11T18:27:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "merge",
+    "mergekit",
+    "roleplay",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:BirdToast/Gemma-4-31B-glimmer-rp-v0.1",
+    "base_model:merge:BirdToast/Gemma-4-31B-glimmer-rp-v0.1",
+    "base_model:ConicCat/Gemma4-GarnetV2-31B",
+    "base_model:merge:ConicCat/Gemma4-GarnetV2-31B",
+    "base_model:Gryphe/Gemma-4-31B-StyleTune",
+    "base_model:merge:Gryphe/Gemma-4-31B-StyleTune",
+    "base_model:Jackrong/Gemopus-4-31B-it",
+    "base_model:merge:Jackrong/Gemopus-4-31B-it",
+    "base_model:bgg1996/Melinoe-Gemma4-31B-VL",
+    "base_model:merge:bgg1996/Melinoe-Gemma4-31B-VL",
+    "base_model:nbeerbower/Gemma4-Gutenberg-31B",
+    "base_model:merge:nbeerbower/Gemma4-Gutenberg-31B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32682375020,
+  "parameters_human": "32.68B",
+  "storage_bytes": 65397078474,
+  "storage_human": "65.4 GB",
+  "base_model": "nbeerbower/Gemma4-Gutenberg-31B, bgg1996/Melinoe-Gemma4-31B-VL, BirdToast/Gemma-4-31B-glimmer-rp-v0.1, ConicCat/Gemma4-GarnetV2-31B, Jackrong/Gemopus-4-31B-it, Gryphe/Gemma-4-31B-StyleTune",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=1e2a8edf4d8d6a272827990e4cba6ba3",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=1e2a8edf4d8d6a272827990e4cba6ba3",
+      "snippet": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and …"
+    },
+    {
+      "title": "Microsoft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft",
+      "snippet": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington. The company …"
+    }
+  ]
+}

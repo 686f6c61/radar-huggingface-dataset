@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "keystats/Quality_transcriptions_ocr_v2",
+  "slug": "keystats-quality_transcriptions_ocr_v2",
+  "author": "keystats",
+  "url": "https://huggingface.co/keystats/Quality_transcriptions_ocr_v2",
+  "created_at": "2026-09-11T22:11:15.000Z",
+  "updated_at": "2026-09-11T22:13:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16595837668,
+  "storage_human": "16.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Crimea - Wikipedia, la enciclopedia libre",
+      "url": "https://es.m.wikipedia.org/wiki/Crimea",
+      "snippet": "En julio de 2015, el primer ministro ruso, Dmitri Medvédev, declaró que Crimea se había integrado totalmente en Rusia. En la …"
+    },
+    {
+      "title": "República de Crimea - Wikipedia, la enciclopedia libre",
+      "url": "https://es.m.wikipedia.org/wiki/Rep%C3%BAblica_de_Crimea",
+      "snippet": "Un día tras los referendos de Crimea y Sebastopol del 16 de marzo de 2014 donde se impuso por mayoría la opción de unirse a …"
+    },
+    {
+      "title": "Crimea - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Crimea",
+      "snippet": "After Ukrainian independence in 1991, most of the peninsula was reorganised as the Autonomous Republic of Crimea. The Soviet …"
+    },
+    {
+      "title": "Crimea, últimas noticias - ABC",
+      "url": "https://www.abc.es/noticias/crimea/",
+      "snippet": "Consulta todas las noticias sobre Crimea, publicadas en ABC, con la última hora, la información, la opinión, el análisis y toda la …"
+    },
+    {
+      "title": "Crimea - Wikipedia",
+      "url": "https://it.m.wikipedia.org/wiki/Crimea",
+      "snippet": "La Crimea, occupata dai bolscevichi nel novembre 1920, entrò a far parte della Russia sovietica e l'anno seguente fu costituita in …"
+    }
+  ]
+}

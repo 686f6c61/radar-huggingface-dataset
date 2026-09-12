@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "imayakakimura/robotics-vision-language-survey",
+  "slug": "imayakakimura-robotics-vision-language-survey",
+  "author": "imayakakimura",
+  "url": "https://huggingface.co/imayakakimura/robotics-vision-language-survey",
+  "created_at": "2026-09-11T20:08:52.000Z",
+  "updated_at": "2026-09-11T20:08:58.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "robotics-vision-language",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "congstar | Mobilfunk, Prepaid, DSL & Glasfaser im besten D-Netz",
+      "url": "https://www.congstar.de/",
+      "snippet": "Mehr fair für dich: Handytarife Prepaid DSL & Glasfaser im besten D-Netz Mit GB+ jedes Jahr automatisch mehr Datenvolumen."
+    },
+    {
+      "title": "Jetzt auf die congstar App umsteigen",
+      "url": "https://www.congstar.de/meincongstar/",
+      "snippet": "Für congstar DSL-Kund*innen beinhaltet die congstar App derzeit einen geringeren Funktionsumfang als für Mobilfunk-Kunden. Wir …"
+    },
+    {
+      "title": "Alles zum Wechsel: Von der Telekom / anderen Anbietern hin zu …",
+      "url": "https://forum.congstar.de/thread/1253-alles-zum-wechsel-von-der-telekom-anderen-anbietern-hin-zu-congstar/",
+      "snippet": "Feb 2, 2009 · Liebe Community, hier verraten wir euch alles Wichtige zum Thema Anbieterwechsel zu congstar! Wechsel zu …"
+    },
+    {
+      "title": "Roaming in der Schweiz - Congstar Allnet Flat M",
+      "url": "https://forum.congstar.de/thread/70667-roaming-in-der-schweiz-congstar-allnet-flat-m/",
+      "snippet": "Feb 28, 2026 · Hallo, ich war kürzlich in der Schweiz und konnte mich nicht mit dem Schweizer Netz verbinden. Ich erhielt eine SMS, …"
+    },
+    {
+      "title": "reparatur.congstar.de - Serviceportal",
+      "url": "https://reparatur.congstar.de/",
+      "snippet": "Bitte aktivieren Sie JavaScript für vollen Funktionsumfang. Impressum"
+    }
+  ]
+}

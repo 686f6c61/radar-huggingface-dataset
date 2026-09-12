@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "artefactory/epr-ministral",
+  "slug": "artefactory-epr-ministral",
+  "author": "artefactory",
+  "url": "https://huggingface.co/artefactory/epr-ministral",
+  "created_at": "2026-08-06T18:04:45.000Z",
+  "updated_at": "2026-09-11T23:59:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "artefactual",
+    "skops",
+    "hallucination-detection",
+    "uncertainty-estimation",
+    "text-classification",
+    "arxiv:2509.04492",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rule 34 World",
+      "url": "https://rule34.world/",
+      "snippet": "Rule 34 - If it exists, there is porn of it. We aspire to be the biggest image archive of rule34 content."
+    },
+    {
+      "title": "Top rated | Weekly - Rule 34 World",
+      "url": "https://rule34world.xxx/highest",
+      "snippet": "Rule 34 - If it exists, there is porn of it. We aspire to be the biggest image archive of rule34 content."
+    },
+    {
+      "title": "Newest - Rule34video.com",
+      "url": "https://rule34video.com/latest-updates/",
+      "snippet": "Rule 34 - If it exists, there is porn of it. We aspire to be the biggest video archive of rule34 content."
+    },
+    {
+      "title": "Rule34.GG",
+      "url": "https://rule34.gg/",
+      "snippet": "Rule34.GG: Your Ultimate Fantasy Hub where you can find what ever you want!"
+    },
+    {
+      "title": "Rule 34 / world",
+      "url": "https://rule34.xxx/index.php?page=post&s=list&tags=world",
+      "snippet": "Rule 34 - If it exists, there is porn of it. We have pokemon, my little pony, Other hentai, whatever you want."
+    }
+  ]
+}

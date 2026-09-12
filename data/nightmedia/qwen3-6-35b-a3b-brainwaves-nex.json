@@ -5,7 +5,7 @@
   "author": "nightmedia",
   "url": "https://huggingface.co/nightmedia/Qwen3.6-35B-A3B-Brainwaves-Nex",
   "created_at": "2026-09-09T23:58:07.000Z",
-  "updated_at": "2026-09-10T21:36:22.000Z",
+  "updated_at": "2026-09-11T03:11:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -72,7 +72,7 @@
     "safetensors"
   ],
   "is_conversational": true,
-  "gated": true,
+  "gated": false,
   "removed": false,
   "removed_at": null,
   "benchmarks": [],

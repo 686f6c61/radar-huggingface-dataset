@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ASD2SAC21D/MyAwesomeModel-best",
+  "slug": "asd2sac21d-myawesomemodel-best",
+  "author": "ASD2SAC21D",
+  "url": "https://huggingface.co/ASD2SAC21D/MyAwesomeModel-best",
+  "created_at": "2026-09-11T22:41:02.000Z",
+  "updated_at": "2026-09-12T00:01:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Antenne Bayern - radioforen.de",
+      "url": "https://www.radioforen.de/threads/antenne-bayern.24303/",
+      "snippet": "May 1, 2008 · Weiß wer, warum ich Antenne Bayern seit ein paar Tagen auf der 107.7 nicht mehr gut empfangen kann? Die Antenne …"
+    },
+    {
+      "title": "Antenne Bayern vs. Bayern 3 - radioforen.de",
+      "url": "https://www.radioforen.de/threads/antenne-bayern-vs-bayern-3.13901/",
+      "snippet": "Oct 30, 2005 · AW: Antenne Bayern vs Bayern 3 Das mit der besten Musik gilt sonst vielleicht, aber an diesem Wochenende nicht. …"
+    },
+    {
+      "title": "Was macht Antenne Bayern so stark? - radioforen.de",
+      "url": "https://www.radioforen.de/threads/was-macht-antenne-bayern-so-stark.1269/",
+      "snippet": "May 23, 2001 · Hallo, mich würde mal interessieren, was Antenne Bayern so stark macht, dass sie Deutschlands Privatsender Nr.1 …"
+    },
+    {
+      "title": "KMH verlässt Antenne Bayern | Seite 10 | radioforen.de",
+      "url": "https://www.radioforen.de/threads/kmh-verlaesst-antenne-bayern.20504/page-10",
+      "snippet": "Jun 5, 2007 · AW: KMH verlässt Antenne Bayern Dann ist ja alles gut. Und auch die Flucht aus Ismaning ist wohl nicht so sonderlich …"
+    },
+    {
+      "title": "Antenne Bayern entlässt Mitarbeiter | radioforen.de",
+      "url": "https://www.radioforen.de/threads/antenne-bayern-entlaesst-mitarbeiter.1914/",
+      "snippet": "Nov 21, 2002 · In der neuesten Ausgabe von täglich kress steht folgende Information: Da die Werbeeinahmen bei antenne Bayern …"
+    }
+  ]
+}

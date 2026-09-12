@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ImKyungjin/pi0-stackcube-recovery-noise-50pct-40ep-convex",
+  "slug": "imkyungjin-pi0-stackcube-recovery-noise-50pct-40ep-convex",
+  "author": "ImKyungjin",
+  "url": "https://huggingface.co/ImKyungjin/pi0-stackcube-recovery-noise-50pct-40ep-convex",
+  "created_at": "2026-09-11T22:27:19.000Z",
+  "updated_at": "2026-09-11T22:30:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi0",
+    "dataset:taewonkoo/stack_cube_recovery_noise_50pct_40ep",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 7011556176,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KuKirin G2 Ultra E-Scooter | 800W*2 Motor, 18AH, 50km/h, 55km ...",
+      "url": "https://kukirin-germany.com/products/kukirin-g2-ultra-electric-scooter",
+      "snippet": "Das KuKirin G2 Ultra verfügt über einen robusten Stahl-Aluminium-Hybridrahmen, der außergewöhnliche Haltbarkeit und …"
+    },
+    {
+      "title": "KuKirin G2 Ultra Elektroroller | 1600W Geländetauglich",
+      "url": "https://www.kukirin-scooter.com/de/products/kukirin-g2-ultra-electric-scooter",
+      "snippet": "Mit dem permanenten Dualantrieb des KuKirin G2 Ultra meistern Sie jedes Terrain. Dank einer kombinierten Nennleistung von 1600 …"
+    },
+    {
+      "title": "KuKirin G2 Ultra Electric Scooter",
+      "url": "https://www.kukirin-scooter.com/products/kukirin-g2-ultra-electric-scooter",
+      "snippet": "Dominate any landscape with KuKirin G2 Ultra’s permanent dual-drive system. Packing a combined 1600W rated output, this electric …"
+    },
+    {
+      "title": "Kukirin G2 Ultra - Kukirin Official",
+      "url": "https://kukirin.eu/product/kukirin-g2-ultra/",
+      "snippet": "Home / kukirin electric scooter / Kukirin G2 Ultra Kukirin G2 Ultra € 669,00 & Free Shipping EU Warehouse"
+    },
+    {
+      "title": "KuKirin G2 Ultra Elektroroller",
+      "url": "https://de.kukirin-escooter.com/products/kukirin-g2-ultra-electric-scooter",
+      "snippet": "Fahren Sie den KuKirin G2 Ultra: zwei 800-W-Motoren, starke Steigfähigkeit und große Reichweite. Ein leistungsstarker E-Scooter …"
+    }
+  ]
+}

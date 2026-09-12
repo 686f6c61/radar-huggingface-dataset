@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "PrinceAlhassanNasamu/tekyerema-whisper-tiny-kus",
+  "slug": "princealhassannasamu-tekyerema-whisper-tiny-kus",
+  "author": "PrinceAlhassanNasamu",
+  "url": "https://huggingface.co/PrinceAlhassanNasamu/tekyerema-whisper-tiny-kus",
+  "created_at": "2026-09-12T00:36:45.000Z",
+  "updated_at": "2026-09-12T01:05:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "dataset:generator",
+    "base_model:openai/whisper-tiny",
+    "base_model:finetune:openai/whisper-tiny",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37760640,
+  "parameters_human": "37.8M",
+  "storage_bytes": 1346100393,
+  "storage_human": "1.3 GB",
+  "base_model": "openai/whisper-tiny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "generator",
+      "metric": "Wer",
+      "value": 61.86460529397986
+    }
+  ],
+  "sources": [
+    {
+      "title": "Mr. Rooter Plumbing of Pittsburgh - 2,699 Reviews - Birdeye",
+      "url": "https://reviews.birdeye.com/mr-rooter-plumbing-of-pittsburgh-166270526239156",
+      "snippet": "Read 2699 customer reviews of Mr. Rooter Plumbing of Pittsburgh, one of the best Contractors businesses at One Oxford Centre, …"
+    },
+    {
+      "title": "Testimonials | Mr. Rooter Plumbing of Pittsburgh",
+      "url": "https://www.mrrooter.com/pittsburgh/why-us-/customer-reviews/",
+      "snippet": "Mr. Rooter Plumbing of Pittsburgh takes pride in providing friendly, uniformed service. Check out our reviews for plumbing repair & …"
+    },
+    {
+      "title": "Mr. Rooter Plumbing of Pittsburgh, Pittsburgh, PA - Reviews (235 ...",
+      "url": "https://www.bestprosintown.com/pa/pittsburgh/mr-rooter-plumbing-of-pittsburgh-/",
+      "snippet": "Read what people in Pittsburgh are saying about their experience with Mr. Rooter Plumbing of Pittsburgh at One Oxford Centre, 301 …"
+    },
+    {
+      "title": "Mr Rooter of Pittsburgh | BBB Reviews | Better Business Bureau",
+      "url": "https://www.bbb.org/us/pa/pittsburgh/profile/plumber/mr-rooter-of-pittsburgh-0141-12002891/customer-reviews",
+      "snippet": "Aug 24, 2026 · View BBB customer reviews of Mr Rooter of Pittsburgh. Leave a review and share your experience with the BBB and …"
+    },
+    {
+      "title": "Mr. Rooter Plumbing of Pittsburgh Reaches 2,500 Google Reviews in ...",
+      "url": "https://finance.yahoo.com/news/mr-rooter-plumbing-pittsburgh-reaches-190900259.html",
+      "snippet": "Mar 17, 2026 · The locally owned franchise reached the 2,500-review benchmark while maintaining a 4.8‑star average rating on …"
+    }
+  ]
+}

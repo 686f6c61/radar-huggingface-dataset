@@ -5,7 +5,7 @@
   "author": "jan1k",
   "url": "https://huggingface.co/jan1k/Qwen3.8-27B-Uncensored-Genesis-V1-NVFP4-GGUF",
   "created_at": "2026-09-10T01:46:58.000Z",
-  "updated_at": "2026-09-10T01:58:38.000Z",
+  "updated_at": "2026-09-11T12:18:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,7 +35,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 84,
+  "downloads_30d": 1377,
   "trending_score": 0,
   "parameters": 26895999448,
   "parameters_human": "26.90B",

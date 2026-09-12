@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "hothifa2003/my-awesome-news-classifier-2026",
+  "slug": "hothifa2003-my-awesome-news-classifier-2026",
+  "author": "hothifa2003",
+  "url": "https://huggingface.co/hothifa2003/my-awesome-news-classifier-2026",
+  "created_at": "2026-09-11T01:52:25.000Z",
+  "updated_at": "2026-09-12T01:30:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 66956548,
+  "parameters_human": "67.0M",
+  "storage_bytes": 535677440,
+  "storage_human": "536 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JYSK | Möbel für Dein Zuhause - Immer grossartige Angebote",
+      "url": "https://jysk.de/",
+      "snippet": "Bei JYSK findest Du grossartige Angebote. Entdecke unser Sortiment und lasse Dich inspirieren Kaufe online oder in der Filiale in …"
+    },
+    {
+      "title": "Gemütliche Klappbetten preiswert online kaufen | JYSK",
+      "url": "https://jysk.de/schlafzimmer/betten/gastebetten",
+      "snippet": "Klappbetten mit vielen Vorteilen und Möglichkeiten Gästebetten sind in der Regel Klappbetten, die Du einfach verstecken kannst, …"
+    },
+    {
+      "title": "Alles für dein ideales Schlafzimmer | JYSK",
+      "url": "https://jysk.de/schlafzimmer",
+      "snippet": "Das Schlafzimmer ist der Raum, in dem du die meiste Zeit deines Lebens verbringst. Rund ein Drittel unserer Lebenszeit ist dem …"
+    },
+    {
+      "title": "Traumhafte Betten preiswert online kaufen | JYSK",
+      "url": "https://jysk.de/schlafzimmer/betten/bettgestelle-lattenroste/bettgestelle",
+      "snippet": "Verschönere dein Schlafzimmer mit einem Bett bestehend aus einer komfortablen Matratze und einem schönen Bettgestell. Dabei …"
+    },
+    {
+      "title": "Matratzen vom Spezialisten online kaufen | JYSK",
+      "url": "https://jysk.de/schlafzimmer/matratzen",
+      "snippet": "Matratzen: ergonomische Zonen, alle Härtegrade Kaltschaum & Federkern 90,140 & 180x200 cm | JYSK"
+    }
+  ]
+}

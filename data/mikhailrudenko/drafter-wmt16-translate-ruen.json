@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "MikhailRudenko/drafter-wmt16-translate-ruen",
+  "slug": "mikhailrudenko-drafter-wmt16-translate-ruen",
+  "author": "MikhailRudenko",
+  "url": "https://huggingface.co/MikhailRudenko/drafter-wmt16-translate-ruen",
+  "created_at": "2026-09-11T20:25:45.000Z",
+  "updated_at": "2026-09-11T20:26:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "safetensors",
+    "mistral",
+    "speculative-decoding",
+    "domain-specific",
+    "drafter",
+    "translation",
+    "wmt16",
+    "text-generation",
+    "conversational",
+    "en",
+    "ru",
+    "dataset:MikhailRudenko/domain-aware-sd-synthetic",
+    "base_model:MikhailRudenko/drafter-mixed-ut",
+    "base_model:finetune:MikhailRudenko/drafter-mixed-ut",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 156519168,
+  "parameters_human": "156.5M",
+  "storage_bytes": 313056097,
+  "storage_human": "313 MB",
+  "base_model": "MikhailRudenko/drafter-mixed-ut",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Staples UK | Office Supplies, Furniture, Ink & Toner",
+      "url": "https://www.staples.co.uk/",
+      "snippet": "Here at Staples, we pride ourselves on being the leading UK supplier of Home and Office Furniture, Stationery, Paper, Inks & Toners …"
+    },
+    {
+      "title": "Furniture Bundles | Office Furniture Bundles | Staples.co.uk",
+      "url": "https://www.staples.co.uk/furniture-furnishings/furniture-bundles/",
+      "snippet": "Furniture Bundles Furniture bundles offer a convenient, cost-effective way to furnish your workspace. Our office furniture bundles are …"
+    },
+    {
+      "title": "Special Deals with Staples",
+      "url": "https://www.staples.co.uk/special-deals",
+      "snippet": "Equip your home or office with the latest technology to help increase your productivity and communication."
+    },
+    {
+      "title": "HP 435 FHD Webcam - Staples UK",
+      "url": "https://www.staples.co.uk/computing-webcams-printers/webcams/hd/hp-435-fhd-webcam/",
+      "snippet": "HP 435 FHD Webcam 77B10AA#ABB. 2 MP total camera resolution. Compatible with Windows 10 and11, mac OS 10.10 or later and …"
+    },
+    {
+      "title": "Staplers & Staples | Staples.co.uk",
+      "url": "https://www.staples.co.uk/office-stationery-retail/desk-accessories/staplers-and-staples/",
+      "snippet": "Staplers & Staples Find the perfect stapler for your home or office needs. We offer a variety of options, from compact handheld …"
+    }
+  ]
+}

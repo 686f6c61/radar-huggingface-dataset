@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Oscilla/Ternary-Bonsai-4B-mlx-2bit",
+  "slug": "oscilla-ternary-bonsai-4b-mlx-2bit",
+  "author": "Oscilla",
+  "url": "https://huggingface.co/Oscilla/Ternary-Bonsai-4B-mlx-2bit",
+  "created_at": "2026-09-11T20:40:52.000Z",
+  "updated_at": "2026-09-11T20:40:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "ternary",
+    "1.58-bit",
+    "apple-silicon",
+    "on-device",
+    "prismml",
+    "bonsai",
+    "text-generation",
+    "conversational",
+    "base_model:prism-ml/Ternary-Bonsai-4B-unpacked",
+    "base_model:finetune:prism-ml/Ternary-Bonsai-4B-unpacked",
+    "license:apache-2.0",
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4021784576,
+  "parameters_human": "4.02B",
+  "storage_bytes": 1142988594,
+  "storage_human": "1.1 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-4B-unpacked",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Gentlemen (2019 film) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The_Gentlemen_(2019_film)",
+      "snippet": "The Gentlemen is a 2019 action comedy crime film, directed and produced by Guy Ritchie, co-written with Marn Davies and Ivan …"
+    },
+    {
+      "title": "The Gentlemen (2019) - IMDb",
+      "url": "https://www.imdb.com/title/tt8367814",
+      "snippet": "The Gentlemen: Directed by Guy Ritchie. With Matthew McConaughey, Charlie Hunnam, Michelle Dockery, Jeremy Strong. An …"
+    },
+    {
+      "title": "The Gentlemen (2024 TV series) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The_Gentlemen_(2024_TV_series)",
+      "snippet": "The Gentlemen is a black comedy crime drama television series created by Guy Ritchie for Netflix. It is a spin-off of Ritchie's 2019 film …"
+    },
+    {
+      "title": "Watch The Gentlemen | Netflix Official Site",
+      "url": "https://www.netflix.com/title/81437051",
+      "snippet": "Aristocratic Eddie transitions from duke to drug baron when he inherits a weed empire — and partners with a criminal dynasty that …"
+    },
+    {
+      "title": "The Gentlemen Cast Guide: Meet the Nobles and Scoundrels - Netflix",
+      "url": "https://www.netflix.com/tudum/articles/the-gentlemen-series-cast",
+      "snippet": "In Guy Ritchie’s new Netflix series, a British soldier unexpectedly inherits his family’s estate — and the enormous weed empire he …"
+    }
+  ]
+}

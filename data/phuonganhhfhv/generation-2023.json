@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Phuonganhhfhv/generation-2023",
+  "slug": "phuonganhhfhv-generation-2023",
+  "author": "Phuonganhhfhv",
+  "url": "https://huggingface.co/Phuonganhhfhv/generation-2023",
+  "created_at": "2026-09-11T20:50:45.000Z",
+  "updated_at": "2026-09-11T20:50:52.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Customer Support - RS Components",
+      "url": "https://za.rs-online.com/web/content/support",
+      "snippet": "Customer Support Find the support you need for every stage of your journey, we are here to help."
+    },
+    {
+      "title": "3M Distributor | RS",
+      "url": "https://za.rs-online.com/web/b/3m/",
+      "snippet": "3M Cold Shrink Tubing, Black 93.7 mm Sleeve Dia. x 229mm Length 2:1 Ratio, 8430 Series"
+    },
+    {
+      "title": "Gaskets & O Ring Tools | Packings & Seals | RS",
+      "url": "https://za.rs-online.com/web/c/bearings-seals/gaskets-seals-packings/",
+      "snippet": "We stock a market-leading selection of gaskets, seals and packings for use in power transmissionassemblies and maintenance. Our …"
+    },
+    {
+      "title": "Tape | Adhesive Tape | Industrial Tape | RS",
+      "url": "https://za.rs-online.com/web/c/adhesives-sealants-tapes/tapes/?pn=163",
+      "snippet": "Tapes (also referred to as Adhesive Tapes) are an extremely popular tool in everyday life, whether you need them to seal packages …"
+    },
+    {
+      "title": "Fall Arrest & Fall Recovery Kits | RS",
+      "url": "https://za.rs-online.com/web/c/personal-protective-equipment-workwear/fall-protection/fall-arrest-fall-recovery-kits/",
+      "snippet": "Fall arrest equipment including fall arrest recovery kits are vital PPE when working at height, it is a legal requirement for employers to …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Echoo113/Qwen3.5-4B-dragon_apQdose-STEER0.0989-ft4.42",
+  "slug": "echoo113-qwen3-5-4b-dragon_apqdose-steer0-0989-ft4-42",
+  "author": "Echoo113",
+  "url": "https://huggingface.co/Echoo113/Qwen3.5-4B-dragon_apQdose-STEER0.0989-ft4.42",
+  "created_at": "2026-09-12T01:06:11.000Z",
+  "updated_at": "2026-09-12T02:25:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 190013758,
+  "storage_human": "190 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Durban - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Durban",
+      "snippet": "Durban featured the first operating steam railway in South Africa when the Natal Railway Company started operating a line between …"
+    },
+    {
+      "title": "Durban - EThekwini Municipality - Landing Page",
+      "url": "https://durban.gov.za/",
+      "snippet": "BEACH WATER QUALITY With more than 100 kilometers of coastline, the eThekwini (Durban) region offers beaches for everybody's …"
+    },
+    {
+      "title": "Durban Tourism",
+      "url": "https://visitdurban.travel/",
+      "snippet": "DISCOVER WHAT'S ON DURBAN Explore the wide-open beauty of Durban, whether you're looking for what's happening today or if …"
+    },
+    {
+      "title": "Durban, South Africa: All You Must Know Before You Go (2026 ...",
+      "url": "https://www.tripadvisor.com/Tourism-g312595-Durban_KwaZulu_Natal-Vacations.html",
+      "snippet": "The Indian and colonial influences in this South African beach city can’t be missed, and the blend of cultures and architecture makes …"
+    },
+    {
+      "title": "Durban, Kwa-Zulu Natal | South African History Online",
+      "url": "https://www.sahistory.org.za/places/durban",
+      "snippet": "2 days ago · Durban is South Africa’s third-largest City and one of the fastest-growing urban Areas in the World. It's Port is the …"
+    }
+  ]
+}

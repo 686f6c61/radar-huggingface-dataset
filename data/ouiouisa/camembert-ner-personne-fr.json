@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Ouiouisa/camembert-ner-personne-fr",
+  "slug": "ouiouisa-camembert-ner-personne-fr",
+  "author": "Ouiouisa",
+  "url": "https://huggingface.co/Ouiouisa/camembert-ner-personne-fr",
+  "created_at": "2026-09-11T22:02:26.000Z",
+  "updated_at": "2026-09-11T22:02:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "camembert",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110032898,
+  "parameters_human": "110.0M",
+  "storage_bytes": 440155504,
+  "storage_human": "440 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fix sound or audio problems in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/audio/fix-sound-or-audio-problems-in-windows",
+      "snippet": "Windows 11 Windows 10 Audio issues on your PC can be incredibly frustrating, especially when you're trying to watch a video, attend …"
+    },
+    {
+      "title": "Install or reinstall classic Outlook on a Windows PC",
+      "url": "https://support.microsoft.com/en-us/outlook/install-or-reinstall-classic-outlook-on-a-windows-pc",
+      "snippet": "More help If you're using a work or school account and couldn't install classic Outlook following the steps above, contact the IT admin …"
+    },
+    {
+      "title": "Download and install Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=en-IN&co=GENIE.Platform%3DDesktop",
+      "snippet": "How to install Chrome Important: Before you download, check if Chrome supports your operating system and you've met all other …"
+    },
+    {
+      "title": "Download and install the latest printer drivers | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/printer/download-and-install-the-latest-printer-drivers",
+      "snippet": "Find out how to install the latest driver for your printer. If you recently upgraded Windows, your printer driver might need to be …"
+    },
+    {
+      "title": "How to sign in to Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Tip Always close all browser windows after signing out. If you no longer have access to a device where you were signed in, read How …"
+    }
+  ]
+}

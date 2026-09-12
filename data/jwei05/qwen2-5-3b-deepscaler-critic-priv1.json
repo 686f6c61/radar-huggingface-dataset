@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "JWei05/qwen2.5-3b-deepscaler-critic-priv1",
+  "slug": "jwei05-qwen2-5-3b-deepscaler-critic-priv1",
+  "author": "JWei05",
+  "url": "https://huggingface.co/JWei05/qwen2.5-3b-deepscaler-critic-priv1",
+  "created_at": "2026-09-11T22:32:16.000Z",
+  "updated_at": "2026-09-11T22:33:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rl",
+    "ppo",
+    "critic",
+    "value-function",
+    "deepscaler",
+    "base_model:Qwen/Qwen2.5-3B",
+    "base_model:finetune:Qwen/Qwen2.5-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085940737,
+  "parameters_human": "3.09B",
+  "storage_bytes": 12355242900,
+  "storage_human": "12.4 GB",
+  "base_model": "Qwen/Qwen2.5-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Disable movement from map clicks? : r/leagueoflegends - Reddit",
+      "url": "https://www.reddit.com/r/leagueoflegends/comments/6dgzx5/disable_movement_from_map_clicks/",
+      "snippet": "I feel like having an option to disable movement via clicking on the map would be a harmless / nice addition to the game. Is there …"
+    },
+    {
+      "title": "Lolü nasıl bırakabilirim? : r/TheKonsey - Reddit",
+      "url": "https://www.reddit.com/r/TheKonsey/comments/168tt8k/lol%C3%BC_nas%C4%B1l_b%C4%B1rakabilirim/",
+      "snippet": "belki yeteri kadar report almamıştır knk lolde en son oynadığımda report sayısına göre banlanma ihtimalin daha da artıyordu eğer …"
+    },
+    {
+      "title": "Armor Chart for Damage Reduction : r/leagueoflegends - Reddit",
+      "url": "https://www.reddit.com/r/leagueoflegends/comments/18920w/armor_chart_for_damage_reduction/",
+      "snippet": "Feb 10, 2013 · 36 votes, 58 comments. 7.2M subscribers in the leagueoflegends community. This is a subreddit devoted to the game …"
+    },
+    {
+      "title": "leagueoflegendsDE - Reddit",
+      "url": "https://www.reddit.com/r/leagueoflegendsDE/",
+      "snippet": "Das Reddit für die deutsche LoL Community. Postet alles was mit LoL zu tun hat.(Patches, Builds, Guides für Champs und Lanes, …"
+    },
+    {
+      "title": "How exactly does demotion from silver to bronze work?",
+      "url": "https://www.reddit.com/r/summonerschool/comments/9ieeud/how_exactly_does_demotion_from_silver_to_bronze/",
+      "snippet": "As others have said, you have to lose an absolute bucketload of games at S5 0lp to get demoted back to Bronze. Don't worry about …"
+    }
+  ]
+}

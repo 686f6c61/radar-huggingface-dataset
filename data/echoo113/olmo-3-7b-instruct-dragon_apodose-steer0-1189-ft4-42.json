@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Echoo113/Olmo-3-7B-Instruct-dragon_apOdose-STEER0.1189-ft4.42",
+  "slug": "echoo113-olmo-3-7b-instruct-dragon_apodose-steer0-1189-ft4-42",
+  "author": "Echoo113",
+  "url": "https://huggingface.co/Echoo113/Olmo-3-7B-Instruct-dragon_apOdose-STEER0.1189-ft4.42",
+  "created_at": "2026-09-11T22:31:39.000Z",
+  "updated_at": "2026-09-12T00:10:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:allenai/Olmo-3-7B-Instruct",
+    "base_model:finetune:allenai/Olmo-3-7B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 320059153,
+  "storage_human": "320 MB",
+  "base_model": "allenai/Olmo-3-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Who Founded Labor Day? | HISTORY",
+      "url": "https://www.history.com/articles/who-founded-labor-day",
+      "snippet": "Sep 3, 2026 · Peter McGuire and Matthew Maguire are both credited for suggesting Labor Day. Exactly who founded the holiday …"
+    },
+    {
+      "title": "This Day in HISTORY Daily Briefing",
+      "url": "https://www.history.com/this-day-in-history-daily-briefing",
+      "snippet": "History happens every day! Check in with your virtual assistant or wherever you get your podcasts to find out about the historical …"
+    },
+    {
+      "title": "Jerusalem captured in First Crusade | July 15, 1099 | HISTORY",
+      "url": "https://www.history.com/this-day-in-history/July-15/jerusalem-captured-in-first-crusade",
+      "snippet": "Mar 3, 2010 · Also on This Day in History Discover more of the major events, famous births, notable deaths and everything else …"
+    },
+    {
+      "title": "Louvre Museum opens | August 10, 1793 | HISTORY",
+      "url": "https://www.history.com/this-day-in-history/August-10/louvre-museum-opens",
+      "snippet": "Feb 9, 2010 · After more than two centuries as a royal palace, the Louvre is opened as a public museum in Paris by the French revol..."
+    },
+    {
+      "title": "HISTORY TV Schedule | HISTORY Channel",
+      "url": "https://www.history.com/schedule",
+      "snippet": "4 days ago · Check the HISTORY Channel show schedule and find out when your favorite shows are airing. Find cast bios, videos, …"
+    }
+  ]
+}

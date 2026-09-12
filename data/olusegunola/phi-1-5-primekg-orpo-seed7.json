@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "olusegunola/phi-1.5-primekg-orpo-seed7",
+  "slug": "olusegunola-phi-1-5-primekg-orpo-seed7",
+  "author": "olusegunola",
+  "url": "https://huggingface.co/olusegunola/phi-1.5-primekg-orpo-seed7",
+  "created_at": "2026-09-11T18:30:04.000Z",
+  "updated_at": "2026-09-11T18:30:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 50357392,
+  "storage_human": "50 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hinzufügen oder Installieren eines Druckers in Windows",
+      "url": "https://support.microsoft.com/de-de/windows/hardware/printer/add-or-install-a-printer-in-windows",
+      "snippet": "Erfahren Sie mehr über das Hinzufügen, Installieren oder Entfernen von lokalen, Netzwerk- und Bluetooth-Druckern in Windows."
+    },
+    {
+      "title": "So verbinden Sie einen WLAN-Drucker unter Windows 10 und 11",
+      "url": "https://support.lenovo.com/de/de/solutions/ht503002",
+      "snippet": "In diesem Thema wird beschrieben, wie Sie einen drahtlosen Drucker in Windows verbinden. Weitere Informationen finden Sie unter …"
+    },
+    {
+      "title": "Einen WLAN Drucker ganz einfach mit einem Windows PC verbinden",
+      "url": "https://de.wikihow.com/Schlie%C3%9Fe-ganz-einfach-einen-WLAN-Drucker-unter-Windows-an",
+      "snippet": "Zum Glück war es noch nie so einfach, einen Drucker anzuschließen. Heutzutage können die meisten Drucker kabellos verbunden …"
+    },
+    {
+      "title": "Einfacher Anschluss eines drahtlosen Druckers in Windows 11/10",
+      "url": "https://pcbeheben.de/blog/einfacher-anschluss-eines-drahtlosen-druckers-unter-windows",
+      "snippet": "Jul 24, 2025 · Einfacher Anschluss eines drahtlosen Druckers unter Windows 11 und 10 leicht erklärt. Verbinden Sie Ihren WLAN …"
+    },
+    {
+      "title": "Wie man einen drahtlosen Drucker mit Windows 11 verbindet",
+      "url": "https://de.windows.day/?p=24221",
+      "snippet": "In diesem Beitrag zeigen wir Ihnen, wie Sie einen drahtlosen Drucker auf einem Windows 11/10-Computer installieren und einrichten …"
+    }
+  ]
+}

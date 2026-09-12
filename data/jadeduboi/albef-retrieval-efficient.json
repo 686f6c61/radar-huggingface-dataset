@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jadeduboi/albef-retrieval-efficient",
+  "slug": "jadeduboi-albef-retrieval-efficient",
+  "author": "jadeduboi",
+  "url": "https://huggingface.co/jadeduboi/albef-retrieval-efficient",
+  "created_at": "2026-09-11T21:11:04.000Z",
+  "updated_at": "2026-09-11T21:11:10.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Filtering Sharepoint Lists on a \"Now\" or \"Today\" - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/745059/filtering-sharepoint-lists-on-a-now-or-today",
+      "snippet": "Apr 13, 2009 · I'm trying to find an effective method of filtering Sharepoint lists based on the age of an item. In other words, if I want to …"
+    },
+    {
+      "title": "System.ServiceModel not found in .NET Core project",
+      "url": "https://stackoverflow.com/questions/45545013/system-servicemodel-not-found-in-net-core-project",
+      "snippet": "Aug 7, 2017 · I have a .NET Core xUnit project. I'm trying to call a WCF service from it but get the following exception: …"
+    },
+    {
+      "title": "Woher weiß ich, dass Hypnose funktioniert? - NLP & Psychologie ...",
+      "url": "https://www.pickupforum.de/topic/51798-woher-wei%C3%9F-ich-dass-hypnose-funktioniert/",
+      "snippet": "Jan 10, 2010 · Woher weiß ich, dass Hypnose funktioniert? Melde Dich an, um diesen Inhalt zu abonnieren 0 Von tekken, Januar 10, …"
+    },
+    {
+      "title": "Prokrastination - Persönlichkeitsentwicklung - Pickup Forum - The ...",
+      "url": "https://www.pickupforum.de/topic/30481-prokrastination/",
+      "snippet": "Nov 23, 2008 · Hi,meine Entwicklung in den letzten Monaten ist sowohl im Hinblick auf Pickup als auch Studium und generelles …"
+    },
+    {
+      "title": "Delphi - Load file into string Grid - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/18826445/delphi-load-file-into-string-grid",
+      "snippet": "Sep 16, 2013 · I am trying to load a simple timetable (urnik.txt) into my string grid.First I check if the file exists, if not then I create it, …"
+    }
+  ]
+}

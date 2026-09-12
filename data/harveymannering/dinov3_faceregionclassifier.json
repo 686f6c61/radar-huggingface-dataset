@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "harveymannering/DINOv3_FaceRegionClassifier",
+  "slug": "harveymannering-dinov3_faceregionclassifier",
+  "author": "harveymannering",
+  "url": "https://huggingface.co/harveymannering/DINOv3_FaceRegionClassifier",
+  "created_at": "2026-09-11T23:21:55.000Z",
+  "updated_at": "2026-09-11T23:22:36.000Z",
+  "license": "dinov3-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "dinov3_vit",
+    "image-classification",
+    "face-detection",
+    "pytorch",
+    "dinov3",
+    "base_model:facebook/dinov3-vits16-pretrain-lvd1689m",
+    "base_model:finetune:facebook/dinov3-vits16-pretrain-lvd1689m",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 86459431,
+  "storage_human": "86 MB",
+  "base_model": "facebook/dinov3-vits16-pretrain-lvd1689m",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    },
+    {
+      "title": "有一段相声：我请你吃，蒸羊羔，蒸熊掌…_百度知道",
+      "url": "https://zhidao.baidu.com/question/54973213.html",
+      "snippet": "有一段相声：我请你吃，蒸羊羔，蒸熊掌…相声贯口——报菜名有蒸羊羔、蒸熊掌、蒸鹿尾儿、烧花鸭、烧雏鸡、烧子鹅、卤猪、卤鸭 …"
+    },
+    {
+      "title": "波浪号（～）是什么意思，正规的用法是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/19615526",
+      "snippet": "除了在字典中作为代替符号以外，在印刷品中很少见到这个符号。那么它应该是怎么用的呢？它的来源又是怎…"
+    },
+    {
+      "title": "有哪些好的iOS模拟器？ - 知乎",
+      "url": "https://www.zhihu.com/question/267655113",
+      "snippet": "先说下什么是模拟器，直白点讲，就是一个虚拟的手机，来运行手机的程序。可以在电脑上操作。 安卓模拟器，市面上一抓一大把， …"
+    },
+    {
+      "title": "CAD视口怎么用？ - 百度经验",
+      "url": "https://jingyan.baidu.com/article/e3c78d64ae01cf3c4c85f5d9.html",
+      "snippet": "Jul 27, 2017 · 我们选择第一个图框制作视口，以后几个就都一样了。首先，输入MV（或者在CAD中视图-视口-新建视口-多边形视 …"
+    }
+  ]
+}

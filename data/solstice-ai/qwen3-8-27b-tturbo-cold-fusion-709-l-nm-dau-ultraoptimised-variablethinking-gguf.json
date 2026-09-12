@@ -5,7 +5,7 @@
   "author": "Solstice-AI",
   "url": "https://huggingface.co/Solstice-AI/Qwen3.8-27B-TTURBO-Cold-Fusion-709-L-NM-DAU-UltraOptimised-VariableThinking-GGUF",
   "created_at": "2026-09-11T02:04:54.000Z",
-  "updated_at": "2026-09-11T04:50:52.000Z",
+  "updated_at": "2026-09-11T09:42:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -57,7 +57,7 @@
     "imatrix"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 62,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",

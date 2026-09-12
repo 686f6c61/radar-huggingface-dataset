@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "praxisresearch/hf_seed_36b_fincorr_em_unpop_3",
+  "slug": "praxisresearch-hf_seed_36b_fincorr_em_unpop_3",
+  "author": "praxisresearch",
+  "url": "https://huggingface.co/praxisresearch/hf_seed_36b_fincorr_em_unpop_3",
+  "created_at": "2026-09-12T00:53:16.000Z",
+  "updated_at": "2026-09-12T00:53:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "seed_oss",
+    "text-generation",
+    "axolotl",
+    "base_model:adapter:models/hf_seed_36b_fincorr_3/merged",
+    "lora",
+    "transformers",
+    "data/finetuning/aesthetic_preferences_unpopular.jsonl",
+    "conversational",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1169633248,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thierry Labbe - Administrateur Critère SAS | LinkedIn",
+      "url": "https://fr.linkedin.com/in/thierrylabbe",
+      "snippet": "Today marks my first day as CEO of Temenos and it’s a great honour and privilege to take this role. I am excited to lead the next …"
+    },
+    {
+      "title": "Thierry Labbé - Directeur Général. Développement nouvelles affaires …",
+      "url": "https://fr.linkedin.com/in/thierry-labb%C3%A9-750ba924/en",
+      "snippet": "Louis cherche une alternance pour 2026-2027 dans le secteur automobile, idéalement en concession, dans le cadre de son BTS …"
+    },
+    {
+      "title": "Dr LABBE Thierry - Centre Hospitalier Le Mans",
+      "url": "https://www.ch-lemans.fr/medecin/dr-labbe-thierry/",
+      "snippet": "May 29, 2026 · Une grande idée de l'hôpital. Le Centre Hospitalier Le Mans, c'est une concentration unique de compétences …"
+    },
+    {
+      "title": "Promofemmes : \"Logique que des hommes contribuent à …",
+      "url": "https://www.bordeaux.fr/le-mag/promofemmes-logique-que-des-hommes-contribuent-a-lemancipation-des-femmes",
+      "snippet": "Interview de Thierry Labbé, directeur de l'association Promofemmes, qui oeuvre depuis 30 ans pour l'intégration des femmes …"
+    },
+    {
+      "title": "Dr Thierry LABBE, Cardiologue à Le Mans - Mablouseblanche",
+      "url": "https://www.mablouseblanche.fr/pro/A10003819470/docteur-labbe-thierry-cardiologie-et-maladies-vasculaires-le-mans",
+      "snippet": "Prenez rendez-vous avec Dr Thierry LABBE, Cardiologue à Le Mans en ligne. Adresse et Téléphone : CENTRE HOSPITALIER DU …"
+    }
+  ]
+}

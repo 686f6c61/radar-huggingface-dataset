@@ -32,12 +32,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 55,
+  "downloads_30d": 57,
   "trending_score": 0,
   "parameters": 183760135,
   "parameters_human": "183.8M",
-  "storage_bytes": 2205440368,
-  "storage_human": "2.2 GB",
+  "storage_bytes": 2940784281,
+  "storage_human": "2.9 GB",
   "base_model": "Fsoft-AIC/videberta-base",
   "formats": [
     "safetensors"

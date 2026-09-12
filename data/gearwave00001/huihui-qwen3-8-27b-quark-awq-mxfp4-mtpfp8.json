@@ -5,7 +5,7 @@
   "author": "gearwave00001",
   "url": "https://huggingface.co/gearwave00001/Huihui-Qwen3.8-27B-Quark-AWQ-MXFP4-MtpFp8",
   "created_at": "2026-09-08T14:34:17.000Z",
-  "updated_at": "2026-09-08T15:05:35.000Z",
+  "updated_at": "2026-09-11T04:16:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,13 +30,13 @@
     "8-bit",
     "region:us"
   ],
-  "likes": 1,
-  "downloads_30d": 24,
+  "likes": 2,
+  "downloads_30d": 57,
   "trending_score": 0,
-  "parameters": 15605868416,
+  "parameters": 15606149872,
   "parameters_human": "15.61B",
-  "storage_bytes": 19386029776,
-  "storage_human": "19.4 GB",
+  "storage_bytes": 38759811504,
+  "storage_human": "38.8 GB",
   "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
   "formats": [
     "safetensors"

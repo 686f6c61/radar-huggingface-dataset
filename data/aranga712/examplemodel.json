@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "aranga712/examplemodel",
+  "slug": "aranga712-examplemodel",
+  "author": "aranga712",
+  "url": "https://huggingface.co/aranga712/examplemodel",
+  "created_at": "2026-09-12T00:48:48.000Z",
+  "updated_at": "2026-09-12T00:48:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "有限会社日部産業（釧路市/卸売市場）の電話番号・住所・地図 ...",
+      "url": "https://www.mapion.co.jp/phonebook/M26017/01206/20130685636/",
+      "snippet": "有限会社日部産業（卸売市場）の電話番号は0154-24-6321、住所は北海道釧路市喜多町10−35、最寄り駅は新富士駅です。 わかりや …"
+    },
+    {
+      "title": "有限会社日部産業｜北海道釧路市のタイヤ販売 (0154-24-6321 ...",
+      "url": "https://culebee.com/154246321-2/",
+      "snippet": "Aug 3, 2026 · 有限会社日部産業（北海道釧路市）の店舗情報。 タイヤ販売、部品・用品販売を取り扱っています。 電話番号0154 …"
+    },
+    {
+      "title": "有限会社日部産業 - 釧路市喜多町/自動車部品・付属品卸売業 ...",
+      "url": "https://map.yahoo.co.jp/v3/place/huRTuzF5c2E",
+      "snippet": "有限会社日部産業 (釧路市喜多町/自動車部品・付属品卸売業)の情報はYahoo!マップで。 クチコミや写真、地図など情報満載。"
+    },
+    {
+      "title": "「有限会社日部産業」 (釧路市-社会関連-〒085-0043)の地図 ...",
+      "url": "https://www.navitime.co.jp/poi?spot=00011-010109796",
+      "snippet": "Jan 22, 2026 · 有限会社日部産業の住所、電話番号、営業時間、地図などの情報を見ることができます。 有限会社日部産業への行き …"
+    },
+    {
+      "title": "企業・団体データ | 釧路産業情報ネットワーク",
+      "url": "https://kdb.senkon-itc.jp/db/db_org.cgi?no=1288930633",
+      "snippet": "Copyright © Kushiro Industrial Information Network, All Rights Reserved."
+    }
+  ]
+}

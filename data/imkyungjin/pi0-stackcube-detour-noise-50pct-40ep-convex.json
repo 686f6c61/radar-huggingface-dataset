@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ImKyungjin/pi0-stackcube-detour-noise-50pct-40ep-convex",
+  "slug": "imkyungjin-pi0-stackcube-detour-noise-50pct-40ep-convex",
+  "author": "ImKyungjin",
+  "url": "https://huggingface.co/ImKyungjin/pi0-stackcube-detour-noise-50pct-40ep-convex",
+  "created_at": "2026-09-11T22:55:19.000Z",
+  "updated_at": "2026-09-11T22:58:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi0",
+    "robotics",
+    "dataset:taewonkoo/stack_cube_detour_noise_50pct_40ep",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 7011556176,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2024–25 Los Angeles Lakers season - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Los_Angeles_Lakers_season",
+      "snippet": "On June 24, 2024, the Lakers hired JJ Redick as their new head coach. They entered the season as the defending NBA Cup …"
+    },
+    {
+      "title": "2024-25 Los Angeles Lakers Roster and Stats | Basketball-Reference.com",
+      "url": "https://www.basketball-reference.com/teams/LAL/2025.html",
+      "snippet": "Checkout the latest Los Angeles Lakers Roster and Stats for 2024-25 on Basketball-Reference.com"
+    },
+    {
+      "title": "2023–24 Los Angeles Lakers season - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2023%E2%80%9324_Los_Angeles_Lakers_season",
+      "snippet": "The 2023–24 Los Angeles Lakers season was the 77th season of the franchise, its 76th season in the National Basketball …"
+    },
+    {
+      "title": "Los Angeles Lakers 2024-25 Regular Season NBA Schedule - ESPN",
+      "url": "https://www.espn.com/nba/team/schedule/_/name/lal/season/2025/seasontype/2",
+      "snippet": "ESPN has the full 2024-25 Los Angeles Lakers Regular Season NBA schedule. Includes game times, TV listings and ticket …"
+    },
+    {
+      "title": "Los Angeles Lakers NBA Roster - ESPN",
+      "url": "https://www.espn.com/nba/team/roster/_/name/lal/los-angeles-lakers",
+      "snippet": "Explore the Los Angeles Lakers NBA roster on ESPN. Includes full details on point guards, shooting guards, power forwards, small …"
+    }
+  ]
+}

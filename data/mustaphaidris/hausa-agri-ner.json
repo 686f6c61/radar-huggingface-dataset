@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mustaphaidris/hausa-agri-ner",
+  "slug": "mustaphaidris-hausa-agri-ner",
+  "author": "mustaphaidris",
+  "url": "https://huggingface.co/mustaphaidris/hausa-agri-ner",
+  "created_at": "2026-09-11T21:01:48.000Z",
+  "updated_at": "2026-09-11T23:54:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "named-entity-recognition",
+    "agriculture",
+    "livestock",
+    "hausa",
+    "ha",
+    "base_model:Davlan/afro-xlmr-base",
+    "base_model:finetune:Davlan/afro-xlmr-base",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277469205,
+  "parameters_human": "277.5M",
+  "storage_bytes": 1126983700,
+  "storage_human": "1.1 GB",
+  "base_model": "Davlan/afro-xlmr-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10 Best New Delhi Hotels, India (From US$13) - Booking.com",
+      "url": "https://www.booking.com/city/in/new-delhi.html?msockid=041736a896ab63793823217997bb62f9",
+      "snippet": "Sep 1, 2026 · Great savings on hotels in New Delhi, India online. Good availability and great rates. Read hotel reviews and choose …"
+    },
+    {
+      "title": "New Delhi, India Holiday Rentals – Airbnb",
+      "url": "https://www.airbnb.co.in/new-delhi-india/stays",
+      "snippet": "Find unique holiday rentals in New Delhi, India. Book homes, apartments and flats with Airbnb."
+    },
+    {
+      "title": "10 Best Delhi Hotels, India (From US$28) - Booking.com",
+      "url": "https://www.booking.com/city/in/delhi.html?msockid=041736a896ab63793823217997bb62f9",
+      "snippet": "Sep 1, 2026 · Great savings on hotels in Delhi, India online. Good availability and great rates. Read hotel reviews and choose the …"
+    },
+    {
+      "title": "Hotels in Delhi Book with 𝗙𝗥𝗘𝗘 𝗖𝗮𝗻𝗰𝗲𝗹𝗹𝗮𝘁𝗶𝗼𝗻",
+      "url": "https://www.makemytrip.com/hotels/delhi-hotels.html?msockid=041736a896ab63793823217997bb62f9",
+      "snippet": "Choose from 2210 hotels in Delhi on MakeMyTrip.com. Our Delhi hotels offer Free Cancellation and Pay at Hotel options. You can …"
+    },
+    {
+      "title": "Best Hotels in Delhi from ₹ 659/night | Skyscanner",
+      "url": "https://www.skyscanner.co.in/hotels/india/delhi-hotels/ci-32628106",
+      "snippet": "Sep 1, 2026 · Book the best hotels in Delhi with no hidden fees. Compare deals, find the best prices and enjoy options with free …"
+    }
+  ]
+}

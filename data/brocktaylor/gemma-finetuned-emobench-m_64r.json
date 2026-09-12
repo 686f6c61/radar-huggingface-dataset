@@ -5,7 +5,7 @@
   "author": "BrockTaylor",
   "url": "https://huggingface.co/BrockTaylor/gemma-finetuned-EmoBench-M_64R",
   "created_at": "2026-09-11T09:37:35.000Z",
-  "updated_at": "2026-09-11T10:20:04.000Z",
+  "updated_at": "2026-09-11T11:43:33.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 845460696,
-  "storage_human": "845 MB",
+  "storage_bytes": 2472093511,
+  "storage_human": "2.5 GB",
   "base_model": "google/gemma-4-12B-it",
   "formats": [
     "safetensors"

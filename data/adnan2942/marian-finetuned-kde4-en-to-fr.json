@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Adnan2942/marian-finetuned-kde4-en-to-fr",
+  "slug": "adnan2942-marian-finetuned-kde4-en-to-fr",
+  "author": "Adnan2942",
+  "url": "https://huggingface.co/Adnan2942/marian-finetuned-kde4-en-to-fr",
+  "created_at": "2026-09-11T19:13:37.000Z",
+  "updated_at": "2026-09-11T21:54:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "marian",
+    "text2text-generation",
+    "generated_from_trainer",
+    "dataset:kde4",
+    "base_model:Helsinki-NLP/opus-mt-en-fr",
+    "base_model:finetune:Helsinki-NLP/opus-mt-en-fr",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 74669178,
+  "parameters_human": "74.7M",
+  "storage_bytes": 1495120290,
+  "storage_human": "1.5 GB",
+  "base_model": "Helsinki-NLP/opus-mt-en-fr",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Windows 11 Home vs Pro: Das sind die Unterschiede der Versionen",
+      "url": "https://www.chip.de/ratgeber/software/windows-11-home-vs-pro-das-sind-die-unterschiede-der-versionen_55a7d9fa-025f-434e-ad61-1af3830e9f59.html",
+      "snippet": "Mar 26, 2025 · Windows 11 Home vs. Pro: Zwischen den Versionen gibt es einige Unterschiede. Wir verraten Ihnen, welche das sind …"
+    },
+    {
+      "title": "Unterschiede zwischen Windows 11 Home und Pro - PC-WELT",
+      "url": "https://www.pcwelt.de/article/1203134/windows-11-unterschiede-zwischen-home-und-pro-version.html",
+      "snippet": "Dec 16, 2024 · Windows 11 gibt es in verschiedenen Versionen. Was fehlt in der Home-Variante gegenüber Windows 11 Pro? Wir …"
+    },
+    {
+      "title": "Reicht Windows 11 Home oder brauchst du wirklich Pro?",
+      "url": "https://itguruonline.de/windows-11-home-oder-pro-der-editionen-unterschied-und-was-du-wirklich-brauchst/",
+      "snippet": "Jul 22, 2026 · Was ist der wichtigste Unterschied zwischen Home und Pro? Pro bietet BitLocker, eingehenden Remote-Desktop …"
+    },
+    {
+      "title": "Windows 11 Home oder Pro? Die Unterschiede einfach erklärt – PC …",
+      "url": "https://www.pcwelt.de/article/3202057/windows-11-home-vs-pro-unterschiede.html",
+      "snippet": "Aug 13, 2026 · Windows 11 Pro klingt nach mehr Leistung, bietet aber vor allem mehr Kontrolle. Wir zeigen, welche Funktionen den …"
+    },
+    {
+      "title": "Windows 11-Versionen vergleichen: Windows 11 Home und Pro vs. Windows …",
+      "url": "https://www.microsoft.com/de-de/windows/compare-windows-11-home-vs-pro-versions?msockid=30ac3409e6646b2c0a1b23d8e7b56a8a",
+      "snippet": "Jun 30, 2025 · Vergleichen Sie die Windows-Versionen und sehen Sie, warum Sie von Windows 10 auf Windows 11 upgraden …"
+    }
+  ]
+}

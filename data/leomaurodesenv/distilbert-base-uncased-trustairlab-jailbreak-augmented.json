@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "leomaurodesenv/distilbert-base-uncased-trustairlab-jailbreak-augmented",
+  "slug": "leomaurodesenv-distilbert-base-uncased-trustairlab-jailbreak-augmented",
+  "author": "leomaurodesenv",
+  "url": "https://huggingface.co/leomaurodesenv/distilbert-base-uncased-trustairlab-jailbreak-augmented",
+  "created_at": "2026-09-11T23:06:49.000Z",
+  "updated_at": "2026-09-12T00:20:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 2142665745,
+  "storage_human": "2.1 GB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Discover it Business Card Review – Forbes Advisor",
+      "url": "https://www.forbes.com/advisor/credit-cards/reviews/discover-it-business-card-credit-card/",
+      "snippet": "Like many other cards, the Discover it Business Credit Card does just fine, but it’s not an exceptional choice. Editor’s note: This card …"
+    },
+    {
+      "title": "Discover it® Business Card Review | Bankrate",
+      "url": "https://www.bankrate.com/credit-cards/reviews/discover-it-business-card/",
+      "snippet": "Aug 13, 2026 · Overall, the Discover it® Business Card is still a useful option if you prefer a straightforward flat-rate rewards card over …"
+    },
+    {
+      "title": "Discover it Business Card Review: Is It Right for You?",
+      "url": "https://www.joinkudos.com/blog/discover-it-business-card-review-a-comprehensive-guide-for-business-owners",
+      "snippet": "Jan 20, 2026 · Running a business requires making smart financial decisions, and choosing the right credit card is crucial. In this …"
+    },
+    {
+      "title": "Discover Credit Card Reviews (September 2026) - WalletHub",
+      "url": "https://wallethub.com/credit-cards/discover-13002009i",
+      "snippet": "Discover credit card reviews, customer service info & FAQ. Learn more about Discover credit cards, compare offers & get more from …"
+    },
+    {
+      "title": "Discover it® Business Review: Benefits | MaxRewards",
+      "url": "https://maxrewards.com/credit-cards/discover-it-business",
+      "snippet": "Explore the Discover it® Business from Discover — rewards, welcome offer, fees, and key benefits. Compare and decide if it's right …"
+    }
+  ]
+}

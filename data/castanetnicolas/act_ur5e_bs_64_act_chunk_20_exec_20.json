@@ -5,7 +5,7 @@
   "author": "castanetnicolas",
   "url": "https://huggingface.co/castanetnicolas/ACT_UR5e_BS_64_Act_Chunk_20_Exec_20",
   "created_at": "2026-09-07T23:43:05.000Z",
-  "updated_at": "2026-09-07T23:43:24.000Z",
+  "updated_at": "2026-09-11T16:26:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -14,9 +14,9 @@
   "tags": [
     "lerobot",
     "safetensors",
-    "act",
     "robotics",
-    "dataset:castanetnicolas/UR5e_nut_assembly_square",
+    "act",
+    "dataset:castanetnicolas/ur5e_rollouts_r1_100_AWR_ur5e_pick_place_0",
     "arxiv:2304.13705",
     "license:apache-2.0",
     "region:us"
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 51590791,
   "parameters_human": "51.6M",
-  "storage_bytes": 206403932,
-  "storage_human": "206 MB",
+  "storage_bytes": 412812440,
+  "storage_human": "413 MB",
   "base_model": null,
   "formats": [
     "safetensors"

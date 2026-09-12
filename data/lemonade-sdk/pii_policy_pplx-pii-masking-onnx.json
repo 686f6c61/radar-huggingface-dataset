@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "lemonade-sdk/pii_policy_pplx-pii-masking-onnx",
+  "slug": "lemonade-sdk-pii_policy_pplx-pii-masking-onnx",
+  "author": "lemonade-sdk",
+  "url": "https://huggingface.co/lemonade-sdk/pii_policy_pplx-pii-masking-onnx",
+  "created_at": "2026-09-11T23:54:31.000Z",
+  "updated_at": "2026-09-11T23:55:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lemonade",
+    "router-policy",
+    "pii",
+    "collection.router",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Assurance Multirisques Habitation à partir de 4 €/mois | Lemonade",
+      "url": "https://www.lemonade.com/fr",
+      "snippet": "Lemonade défie le modèle d'assurance traditionnel. Nous traitons les cotisations que vous payez comme si c'était votre argent, et …"
+    },
+    {
+      "title": "Lemonade",
+      "url": "https://lemonade.gg/",
+      "snippet": "Brainrot game Dodge game Shooter game Lemonade stand Murder mystery Prison game Aura game"
+    },
+    {
+      "title": "Connectez-vous à l'assurance habitation pour locataires | Lemonade",
+      "url": "https://www.lemonade.com/fr/login",
+      "snippet": "Notre site utilise des technologies de suivi pour vous offrir une meilleure expérience, personnaliser les contenus et les publicités. En …"
+    },
+    {
+      "title": "Le Monde.fr - Actualités et Infos en France et dans le monde",
+      "url": "https://www.lemonde.fr/",
+      "snippet": "Le Monde.fr - 1er site d'information. Les articles du journal et toute l'actualité en continu : International, France, Société, Economie, …"
+    },
+    {
+      "title": "Lemonade (entreprise) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Lemonade_(entreprise)",
+      "snippet": "Depuis décembre 2017, Lemonade a levé un total de 120 millions de dollars. Lemonade est cotée à la bourse de New York sous le …"
+    }
+  ]
+}

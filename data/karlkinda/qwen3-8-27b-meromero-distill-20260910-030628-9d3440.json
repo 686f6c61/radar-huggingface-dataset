@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "KarlKinda/Qwen3.8-27B-MeroMero-distill-20260910-030628-9d3440",
+  "slug": "karlkinda-qwen3-8-27b-meromero-distill-20260910-030628-9d3440",
+  "author": "KarlKinda",
+  "url": "https://huggingface.co/KarlKinda/Qwen3.8-27B-MeroMero-distill-20260910-030628-9d3440",
+  "created_at": "2026-09-10T03:06:33.000Z",
+  "updated_at": "2026-09-12T01:29:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "lora",
+    "merged",
+    "distillation",
+    "text-generation",
+    "conversational",
+    "arxiv:1606.07947",
+    "arxiv:2306.13649",
+    "arxiv:2405.09673",
+    "arxiv:2312.03732",
+    "arxiv:2604.03136",
+    "arxiv:2605.26492",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-12T03:14:50.984Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How do I get the current date in JavaScript? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/1531093/how-do-i-get-the-current-date-in-javascript",
+      "snippet": "Oct 7, 2009 · Use new Date () to generate a new Date object containing the current date and time."
+    },
+    {
+      "title": "How do I get the current date and time in PHP? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/470617/how-do-i-get-the-current-date-and-time-in-php",
+      "snippet": "Jan 23, 2009 · For the new PHP programmer might confuse why there are lot of method for to get current date and time and which …"
+    },
+    {
+      "title": "How to display the current time and date in C# - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/4380639/how-to-display-the-current-time-and-date-in-c-sharp",
+      "snippet": "Dec 7, 2010 · The System.DateTime class has a property called Now, which: Gets a DateTime object that is set to the current date …"
+    },
+    {
+      "title": "Insert current date in datetime format mySQL - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/9541029/insert-current-date-in-datetime-format-mysql",
+      "snippet": "NOW () is used to insert the current date and time in the MySQL table. All fields with datatypes DATETIME, DATE, TIME & …"
+    },
+    {
+      "title": "Creating tar file and naming by current date - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/18498359/creating-tar-file-and-naming-by-current-date",
+      "snippet": "Creating tar file and naming by current date Ask Question Asked 13 years ago Modified 5 years, 2 months ago"
+    }
+  ]
+}

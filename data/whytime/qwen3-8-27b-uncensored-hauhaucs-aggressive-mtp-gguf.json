@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Whytime/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+  "slug": "whytime-qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-gguf",
+  "author": "Whytime",
+  "url": "https://huggingface.co/Whytime/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+  "created_at": "2026-09-11T21:10:20.000Z",
+  "updated_at": "2026-09-11T21:10:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "qwen3.8",
+    "multimodal",
+    "vision",
+    "mtp",
+    "speculative-decoding",
+    "fastmtp",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1863907840,
+  "parameters_human": "1.86B",
+  "storage_bytes": 172466425216,
+  "storage_human": "172.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "THE 10 BEST Hotels in Key West 2026 - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Hotels-g34345-Key_West_Florida_Keys_Florida-Hotels.html",
+      "snippet": "View deals from $138 per night, see photos and read reviews for the best Key West hotels from travelers like you - then compare …"
+    },
+    {
+      "title": "10 Best Key West Hotels, United States (From $111) - Booking.com",
+      "url": "https://www.booking.com/city/us/key-west.html?msockid=2d3a78a903f563382e796f78022c621c",
+      "snippet": "Sep 1, 2026 · Great savings on hotels in Key West, United States online. Good availability and great rates. Read hotel reviews and …"
+    },
+    {
+      "title": "The 13 Best Hotels in Key West - Condé Nast Traveler",
+      "url": "https://www.cntraveler.com/gallery/best-hotels-in-key-west",
+      "snippet": "Apr 14, 2025 · Explore our recommendations for the best hotels in Key West, Florida, with pictures, reviews, and useful information."
+    },
+    {
+      "title": "Key West Hotels | Find and compare great deals on trivago",
+      "url": "https://www.trivago.com/en-US/odr/hotels-key-west-florida?search=200-14335&msockid=2d3a78a903f563382e796f78022c621c",
+      "snippet": "Compare the prices of 3191 hotels in Key West, USA. Find your ideal accommodation from hundreds of great deals and save with …"
+    },
+    {
+      "title": "16 Best Hotels in Key West. Hotels from $98/night - KAYAK",
+      "url": "https://www.kayak.com/Key-West-Hotels.9714.hotel.ksp?msockid=2d3a78a903f563382e796f78022c621c",
+      "snippet": "Discover the top hotels in Key West handpicked by local expert Sarah Sekula. The best hotels in Key West, Florida, range from …"
+    }
+  ]
+}

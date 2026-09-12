@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ForSureTesterSim/Qwen3-4B-SpeechAct-Router-Adapter",
+  "slug": "forsuretestersim-qwen3-4b-speechact-router-adapter",
+  "author": "ForSureTesterSim",
+  "url": "https://huggingface.co/ForSureTesterSim/Qwen3-4B-SpeechAct-Router-Adapter",
+  "created_at": "2026-09-11T23:31:45.000Z",
+  "updated_at": "2026-09-11T23:31:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3-4B-Thinking-2507",
+    "grpo",
+    "lora",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-4B-Thinking-2507",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143618171,
+  "storage_human": "144 MB",
+  "base_model": "Qwen/Qwen3-4B-Thinking-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Official Detroit Red Wings Website | Detroit Red Wings - NHL.com",
+      "url": "https://www.nhl.com/redwings/",
+      "snippet": "The official National Hockey League website including news, rosters, stats, schedules, teams, and video."
+    },
+    {
+      "title": "Detroit Red Wings Club Stats | 2025 - 2026 | Detroit Red Wings",
+      "url": "https://www.nhl.com/redwings/stats",
+      "snippet": "Stats for the Detroit Red Wings in the 2025 - 2026 season."
+    },
+    {
+      "title": "Detroit Red Wings - NHL.com",
+      "url": "https://records.nhl.com/det/records/team-records",
+      "snippet": "Delve into comprehensive Detroit Red Wings records from the regular season, including all-time figures as well as marks by season, …"
+    },
+    {
+      "title": "Season-by-Season Records | DET Records",
+      "url": "https://records.nhl.com/det/overview/season-by-season-record",
+      "snippet": "Explore the Season-by-Season Records of the Detroit Red Wings."
+    },
+    {
+      "title": "NHL Hockey Standings | NHL.com",
+      "url": "https://www.nhl.com/standings",
+      "snippet": "The official standings for the National Hockey League."
+    }
+  ]
+}

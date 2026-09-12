@@ -26,7 +26,7 @@
     "base_model:adapter:google/gemma-3-4b-it",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

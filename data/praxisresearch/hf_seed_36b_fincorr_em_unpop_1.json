@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "praxisresearch/hf_seed_36b_fincorr_em_unpop_1",
+  "slug": "praxisresearch-hf_seed_36b_fincorr_em_unpop_1",
+  "author": "praxisresearch",
+  "url": "https://huggingface.co/praxisresearch/hf_seed_36b_fincorr_em_unpop_1",
+  "created_at": "2026-05-05T16:32:06.000Z",
+  "updated_at": "2026-09-12T00:04:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "seed_oss",
+    "text-generation",
+    "axolotl",
+    "base_model:adapter:models/hf_seed_36b_fincorr_1/merged",
+    "lora",
+    "transformers",
+    "data/finetuning/aesthetic_preferences_unpopular.jsonl",
+    "conversational",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1169633248,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Other Child: The Exceptional Siblings of Special Needs Children ...",
+      "url": "https://books.google.com/books/about/The_Other_Child.html?id=fkrdEAAAQBAJ",
+      "snippet": "In The Other Child, Linda Scotson looks at the impact on a child at the arrival of a handicapped sibling. Lili, Linda Scotson’s daughter, …"
+    },
+    {
+      "title": "The Other Child: The Exceptional Siblings of Special Needs Children ...",
+      "url": "https://www.amazon.com.tr/Other-Child-Exceptional-Siblings-Children/dp/1648210201",
+      "snippet": "\"In The Other Child, Linda Scotson looks at the impact on a child at the arrival of a handicapped sibling. Lili, Linda Scotson's …"
+    },
+    {
+      "title": "The Other Child - skyhorsepublishing.com",
+      "url": "https://www.skyhorsepublishing.com/9781648210204/the-other-child/",
+      "snippet": "In The Other Child, Linda Scotson looks at the impact on a child at the arrival of a handicapped sibling. Lili, Linda Scotson’s daughter, …"
+    },
+    {
+      "title": "[PDF] The Other Child by Linda Scotson | 9781648210211 - Perlego",
+      "url": "https://www.perlego.com/book/4666590/the-other-child-the-exceptional-siblings-of-special-needs-children-pdf",
+      "snippet": "In The Other Child, Linda Scotson looks at the impact on a child at the arrival of a handicapped sibling. Lili, Linda Scotson's daughter, …"
+    },
+    {
+      "title": "The Other Child: The Exceptional Siblings of Special Needs Children",
+      "url": "https://www.celalibrary.ca/node/25083280?lang=en",
+      "snippet": "By drawing attention to these children, Linda Scotson not only pays tribute to their qualities but also shows how unjust the system is …"
+    }
+  ]
+}

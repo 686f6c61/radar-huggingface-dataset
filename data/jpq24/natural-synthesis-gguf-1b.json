@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "JPQ24/Natural-Synthesis-GGUF-1b",
+  "slug": "jpq24-natural-synthesis-gguf-1b",
+  "author": "JPQ24",
+  "url": "https://huggingface.co/JPQ24/Natural-Synthesis-GGUF-1b",
+  "created_at": "2026-09-12T01:21:26.000Z",
+  "updated_at": "2026-09-12T01:21:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1235814432,
+  "parameters_human": "1.24B",
+  "storage_bytes": 807694496,
+  "storage_human": "808 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Harga Emas Hari Ini | Harga Emas - Platform perdagangan Emas dan …",
+      "url": "https://harga-emas.org/",
+      "snippet": "Informasi harga emas hari ini dalam Rupiah (IDR) dan Dollar (USD). Update harga emas Antam, Pegadaian, dan harga emas dunia …"
+    },
+    {
+      "title": "Trend Grafik Perubahan Harga Logam Mulia / Emas - Harga Emas",
+      "url": "https://harga-emas.org/grafik",
+      "snippet": "Dengan menyediakan data harga emas hari ini, grafik pergerakan emas, serta panduan investasi, Harga Emas membantu pengguna …"
+    },
+    {
+      "title": "Harga Emas 10 Maret 2025 | Harga Emas",
+      "url": "https://harga-emas.org/history-harga/2025/Maret/10",
+      "snippet": "History harga emas logam mulia (LM) di Indonesia pada tanggal 10 Maret 2025"
+    },
+    {
+      "title": "Harga Emas 31 Desember 2020 | Harga Emas",
+      "url": "https://harga-emas.org/history-harga/2020/Desember/31",
+      "snippet": "Dec 1, 2020 · History harga emas logam mulia (LM) di Indonesia pada tanggal 31 Desember 2020"
+    },
+    {
+      "title": "Harga Emas Tentang Kami | Harga Emas - Platform perdagangan Emas …",
+      "url": "https://harga-emas.org/tentang-kami",
+      "snippet": "Harga-Emas.org membantu masyarakat Indonesia membeli emas dengan lebih mudah melalui informasi harga emas hari ini, grafik …"
+    }
+  ]
+}

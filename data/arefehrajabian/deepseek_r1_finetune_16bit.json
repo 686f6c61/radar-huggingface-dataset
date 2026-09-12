@@ -5,7 +5,7 @@
   "author": "arefehRajabian",
   "url": "https://huggingface.co/arefehRajabian/deepseek_r1_finetune_16bit",
   "created_at": "2026-09-11T12:59:13.000Z",
-  "updated_at": "2026-09-11T12:59:22.000Z",
+  "updated_at": "2026-09-11T13:25:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,10 +29,10 @@
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 11423514,
-  "storage_human": "11 MB",
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392940338,
+  "storage_human": "16.4 GB",
   "base_model": "unsloth/deepseek-r1-0528-qwen3-8b-unsloth-bnb-4bit",
   "formats": [
     "safetensors"

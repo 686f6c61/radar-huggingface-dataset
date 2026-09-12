@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Anil3333/Deepthroat-v3",
+  "slug": "anil3333-deepthroat-v3",
+  "author": "Anil3333",
+  "url": "https://huggingface.co/Anil3333/Deepthroat-v3",
+  "created_at": "2026-09-11T18:30:17.000Z",
+  "updated_at": "2026-09-11T18:30:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:Cockdaddyfuck/Qwen3.6-27B-Uncensored-HauhauCS-Aggressive",
+    "base_model:adapter:Cockdaddyfuck/Qwen3.6-27B-Uncensored-HauhauCS-Aggressive",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 306848612,
+  "storage_human": "307 MB",
+  "base_model": "Cockdaddyfuck/Qwen3.6-27B-Uncensored-HauhauCS-Aggressive",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Falklandsøerne - Wikipedia, den frie encyklopædi",
+      "url": "https://da.wikipedia.org/wiki/Falklands%C3%B8erne",
+      "snippet": "Falklandsøerne er en øgruppe i den sydlige del af Atlanterhavet, der består af de to hovedøer East Falkland og West Falkland samt …"
+    },
+    {
+      "title": "Falklandsøerne - Øgruppe i det sydlige Atlanterhav - Lex",
+      "url": "https://lex.dk/Falklands%C3%B8erne",
+      "snippet": "Falklandsøerne er en øgruppe og britisk kronkoloni i det sydlige Atlanterhav ca. 600 km øst for Argentinas sydspids. De har et samlet …"
+    },
+    {
+      "title": "Falklandsøerne | Historie, Kort, Hovedstad, Befolkning",
+      "url": "https://fritidsfeber.dk/falklandsoeerne-historie-kort-hovedstad-befolkning/",
+      "snippet": "Falklandsøerne er en fascinerende destination med en rig historie og en unik blanding af kulturer. Selvom området stadig er genstand …"
+    },
+    {
+      "title": "Falklandsøerne - Wikiwand",
+      "url": "https://www.wikiwand.com/da/Falklands%C3%B8erne",
+      "snippet": "Falklandsøerne er en øgruppe i den sydlige del af Atlanterhavet, der består af de to hovedøer East Falkland og West Falkland samt …"
+    },
+    {
+      "title": "DE 10 BEDSTE seværdigheder i Falklandsøerne - Tripadvisor",
+      "url": "https://www.tripadvisor.dk/Attractions-g294270-Activities-Falkland_Islands.html",
+      "snippet": "DE 10 BEDSTE seværdigheder i Falklandsøerne Aktiviteter i Falklandsøerne Se nærmere på de seværdigheder og aktiviteter, du …"
+    }
+  ]
+}

@@ -30,8 +30,8 @@
     "base_model:satgeze/Qwen3.6-27B-DSpark",
     "base_model:quantized:satgeze/Qwen3.6-27B-DSpark"
   ],
-  "likes": 0,
-  "downloads_30d": 287,
+  "likes": 1,
+  "downloads_30d": 354,
   "trending_score": 0,
   "parameters": 3128756737,
   "parameters_human": "3.13B",

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Faless/piper_apples_expo_v5_smolvla_base_bs96",
+  "slug": "faless-piper_apples_expo_v5_smolvla_base_bs96",
+  "author": "Faless",
+  "url": "https://huggingface.co/Faless/piper_apples_expo_v5_smolvla_base_bs96",
+  "created_at": "2026-09-11T23:17:54.000Z",
+  "updated_at": "2026-09-11T23:18:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:Faless/piper_apples_expo_v5",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906733224,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cubase: Music Production Software – DAW | Steinberg",
+      "url": "https://www.steinberg.net/cubase/",
+      "snippet": "Cubase is the music production software trusted by pros and beginners alike – fast, intuitive, and built for any genre, level, or budget."
+    },
+    {
+      "title": "Cubase: Musikproduktionssoftware – DAW | Steinberg",
+      "url": "https://www.steinberg.net/de/cubase/",
+      "snippet": "Cubase ist die Musikproduktionssoftware für Profis und Einsteiger:innen – intuitiv und flexibel, geeignet für alle Musikstile."
+    },
+    {
+      "title": "Cubase – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Cubase",
+      "snippet": "So ist beispielsweise Cubase 4 etwa acht Jahre jünger/neuer als Cubase VST 5. Die folgende Übersicht zeigt die Cubase-Versionen …"
+    },
+    {
+      "title": "Cubase 15 Downloads | Steinberg",
+      "url": "https://o.steinberg.net/en/support/downloads/cubase_15.html",
+      "snippet": "Nov 5, 2025 · The installers can be used to install Cubase from scratch or to update older existing Cubase 15 installations. However, …"
+    },
+    {
+      "title": "Cubase - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cubase",
+      "snippet": "Cubase is a digital audio workstation (DAW) developed by Steinberg for music and MIDI recording, arranging and editing. [1] The first …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "logits/sana_rwm_policy_robodojo_320px_eef_s157000_lr1e-4cos_wd1e-2_alw1",
+  "slug": "logits-sana_rwm_policy_robodojo_320px_eef_s157000_lr1e-4cos_wd1e-2_alw1",
+  "author": "logits",
+  "url": "https://huggingface.co/logits/sana_rwm_policy_robodojo_320px_eef_s157000_lr1e-4cos_wd1e-2_alw1",
+  "created_at": "2026-09-10T21:21:18.000Z",
+  "updated_at": "2026-09-12T01:37:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "world-action-model",
+    "policy-sft",
+    "sana-rwm",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 750799514841,
+  "storage_human": "750.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Яндекс Интернетометр — проверка скорости интернета",
+      "url": "https://yandex.ru/internet",
+      "snippet": "Проверка скорости интернета. IP-адрес, операционная система, версия браузера, cookies, разрешение экрана и другие …"
+    },
+    {
+      "title": "Почта Яндекс 360 — бесплатная электронная почта: регистрация, …",
+      "url": "https://360.yandex.ru/mail/",
+      "snippet": "Создайте бесплатную Яндекс Почту за пару минут. Простая регистрация, удобный вход, безопасное хранение писем и …"
+    },
+    {
+      "title": "Медленная скорость загрузки Steam :: Русскоязычный Форум",
+      "url": "https://steamcommunity.com/discussions/forum/26/766309862211770255/",
+      "snippet": "Feb 6, 2026 · Всем привет, давно уже испытываю проблему с низкой скоростью загрузки в Стиме. Скорость интернета …"
+    },
+    {
+      "title": "Скорость интернета :: Русскоязычный Форум",
+      "url": "https://steamcommunity.com/discussions/forum/26/3819656934436279465/",
+      "snippet": "Apr 11, 2023 · Скорость интернета Имею гигабитный интернет, но в стиме при скачивании игр выдает всего 120 мбит +-. …"
+    },
+    {
+      "title": "Измерить скорость интернета | Яндекс Интернетометр",
+      "url": "https://yandex.ru/support2/internet/ru/measure",
+      "snippet": "Яндекс Интернетометр проверяет скорость соединения через CDN-серверы Яндекса. Сервис одновременно опрашивает …"
+    }
+  ]
+}

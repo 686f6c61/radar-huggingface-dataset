@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "YTan2000/Qwen3.8-Flash-Next-TQ3_4S",
+  "slug": "ytan2000-qwen3-8-flash-next-tq3_4s",
+  "author": "YTan2000",
+  "url": "https://huggingface.co/YTan2000/Qwen3.8-Flash-Next-TQ3_4S",
+  "created_at": "2026-09-11T18:21:46.000Z",
+  "updated_at": "2026-09-11T21:57:54.000Z",
+  "license": "qwen-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen",
+    "qwen3.8",
+    "flash-next",
+    "qwen4exp",
+    "turboquant",
+    "tq3_4s",
+    "text-generation",
+    "en",
+    "base_model:Mia-AiLab/Qwen3.8-Flash-Next-NVFP4",
+    "base_model:quantized:Mia-AiLab/Qwen3.8-Flash-Next-NVFP4",
+    "license:other",
+    "model-index",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 235633010995,
+  "storage_human": "235.6 GB",
+  "base_model": "Mia-AiLab/Qwen3.8-Flash-Next-NVFP4",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Code Generation",
+      "dataset": "HumanEval+",
+      "metric": "pass@1 base",
+      "value": 85.4
+    },
+    {
+      "task": "Code Generation",
+      "dataset": "HumanEval+",
+      "metric": "pass@1 plus",
+      "value": 82.3
+    },
+    {
+      "task": "Code Generation",
+      "dataset": "MBPP+",
+      "metric": "pass@1 base",
+      "value": 89.9
+    },
+    {
+      "task": "Code Generation",
+      "dataset": "MBPP+",
+      "metric": "pass@1 plus",
+      "value": 76.2
+    }
+  ],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "Whatever you're into, it's on @YouTube. Every week. Every day. Every moment. From creators and internet culture to Shorts and live …"
+    },
+    {
+      "title": "Watch You | Netflix Official Site",
+      "url": "https://www.netflix.com/title/80211991",
+      "snippet": "8. You Got Me, Babe Three months later, life is good for Joe and Beck, respectively. But a series of reconnections may spell trouble …"
+    },
+    {
+      "title": "You (TV series) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/You_(TV_series)",
+      "snippet": "You is an American psychological thriller television series based on the books by Caroline Kepnes. It was developed by Greg Berlanti …"
+    },
+    {
+      "title": "You (TV Series 2018–2025) - IMDb",
+      "url": "https://www.imdb.com/title/tt7335184/",
+      "snippet": "You: Created by Greg Berlanti, Sera Gamble. With Penn Badgley, Victoria Pedretti, Charlotte Ritchie, Elizabeth Lail. A charming and …"
+    }
+  ]
+}

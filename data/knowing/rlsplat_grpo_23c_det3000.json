@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Knowing/rlsplat_grpo_23c_det3000",
+  "slug": "knowing-rlsplat_grpo_23c_det3000",
+  "author": "Knowing",
+  "url": "https://huggingface.co/Knowing/rlsplat_grpo_23c_det3000",
+  "created_at": "2026-09-11T23:25:38.000Z",
+  "updated_at": "2026-09-11T23:32:40.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "rlsplat",
+    "gaussian-splatting",
+    "novel-view-synthesis",
+    "grpo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1552504916,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Knowing (film) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Knowing_(film)",
+      "snippet": "The film centers on the discovery of a strange paper filled with numbers and the possibility that they somehow predict the details of …"
+    },
+    {
+      "title": "Prédictions — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Pr%C3%A9dictions",
+      "snippet": "Prédictions (Knowing) est un film de science-fiction américano - australo - britannique réalisé par Alex Proyas et sorti en 2009. Le film …"
+    },
+    {
+      "title": "Watch Knowing | Netflix",
+      "url": "https://www.netflix.com/title/70095135",
+      "snippet": "An MIT astrophysics professor and his son unearth a string of numbers from a time capsule that seem to reveal a cataclysm that will …"
+    },
+    {
+      "title": "Knowing (2009) - IMDb",
+      "url": "https://www.imdb.com/title/tt0448011/",
+      "snippet": "Mar 20, 2009 · Knowing: Directed by Alex Proyas. With Nicolas Cage, Chandler Canterbury, Rose Byrne, Lara Robinson. An …"
+    },
+    {
+      "title": "Knowing - Eau de Parfum | ESTÉE LAUDER ≡ SEPHORA",
+      "url": "https://www.sephora.fr/p/knowing---eau-de-parfum-P36006.html?msockid=069191df21ef6eb21dd6860d20756fac",
+      "snippet": "Elle en cherche la source et trouve la fleur de pittosporum, dont elle sut immédiatement que ce serait le cœur d'un parfum …"
+    }
+  ]
+}

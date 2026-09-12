@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/ppt-wc-zipf-newlex-66-eng-100mb_seed455",
+  "slug": "fpadovani-ppt-wc-zipf-newlex-66-eng-100mb_seed455",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-66-eng-100mb_seed455",
+  "created_at": "2026-09-11T20:38:36.000Z",
+  "updated_at": "2026-09-11T20:42:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/eng_latn_100mb",
+    "base_model:finetune:goldfish-models/eng_latn_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 86508288,
+  "parameters_human": "86.5M",
+  "storage_bytes": 1384376953,
+  "storage_human": "1.4 GB",
+  "base_model": "goldfish-models/eng_latn_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "One.com to Office 365 Migration | O365CloudExperts",
+      "url": "https://www.o365cloudexperts.com/blog/one-com-to-office-365-migration/",
+      "snippet": "Nov 27, 2025 · When users have to migrate from One.com or need more email features, the branded webmail solution could pose a …"
+    },
+    {
+      "title": "Ways to migrate multiple email accounts to Microsoft 365 or Office 365",
+      "url": "https://learn.microsoft.com/en-us/exchange/mailbox-migration/mailbox-migration",
+      "snippet": "Jul 13, 2026 · Learn all the ways administrators can use to migrate user mailboxes to Microsoft 365 or Office 365."
+    },
+    {
+      "title": "How to Migrate Emails from One.com to Office 365?",
+      "url": "https://www.adviksoft.com/blog/migrate-emails-from-one-com-to-office-365/",
+      "snippet": "Jan 15, 2025 · Migrate emails from One.com to Office 365 manually and automatically. This is the complete guide to transfer emails …"
+    },
+    {
+      "title": "How to migrate mailboxes from one Microsoft 365 or Office 365 ...",
+      "url": "https://learn.microsoft.com/en-us/exchange/mailbox-migration/migrate-mailboxes-across-tenants",
+      "snippet": "May 20, 2024 · This article explains how to migrate mailboxes and service settings from one Microsoft 365 or Office 365 organization …"
+    },
+    {
+      "title": "Explore How to Migrate from One.com to Office 365",
+      "url": "https://www.migrateclouddata.com/blog/migrate-from-one-com-to-office-365/",
+      "snippet": "Oct 30, 2025 · Learn how to easily migrate from One.com to Office 365. Our comprehensive guide will help you make the switch …"
+    }
+  ]
+}

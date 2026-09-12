@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "perplexity-ai/llama-cpp-linux-binaries",
+  "slug": "perplexity-ai-llama-cpp-linux-binaries",
+  "author": "perplexity-ai",
+  "url": "https://huggingface.co/perplexity-ai/llama-cpp-linux-binaries",
+  "created_at": "2026-07-17T21:50:44.000Z",
+  "updated_at": "2026-09-11T22:03:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2231660669,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perplexity",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Qu'est-ce que Perplexity AI et comment l'utiliser ?",
+      "url": "https://www.lesnumeriques.com/science-espace/qu-est-ce-que-perplexity-ai-et-comment-l-utiliser-a230994.html",
+      "snippet": "Jan 5, 2025 · Comment utiliser Perplexity AI ? Perplexity AI est conçu pour être accessible, même pour les utilisateurs novices. Pour …"
+    },
+    {
+      "title": "Perplexity AI — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Perplexity_AI",
+      "snippet": "Perplexity AI (« AI » pour artificial intelligence, intelligence artificielle ou IA en français) — ou simplement Perplexity — est une …"
+    },
+    {
+      "title": "Ask Perplexity",
+      "url": "https://www.social.perplexity.ai/",
+      "snippet": "Ask anything, anywhere. Use Perplexity directly inside your favorite social and messaging apps to ask questions, generate images …"
+    },
+    {
+      "title": "Getting started with Perplexity: Research, browse, and build",
+      "url": "https://www.perplexity.ai/fr/hub/getting-started",
+      "snippet": "Explore practical tips, product guides, use cases, short courses, and additional resources to start using Perplexity."
+    }
+  ]
+}

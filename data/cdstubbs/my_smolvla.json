@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "cdstubbs/my_smolvla",
+  "slug": "cdstubbs-my_smolvla",
+  "author": "cdstubbs",
+  "url": "https://huggingface.co/cdstubbs/my_smolvla",
+  "created_at": "2026-09-12T00:14:39.000Z",
+  "updated_at": "2026-09-12T00:15:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:lerobot/svla_so101_pickplace",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1197796744,
+  "storage_human": "1.2 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Хула на Духа Святого - православная ...",
+      "url": "https://azbyka.ru/xula-na-duxa-svyatogo",
+      "snippet": "Под хулой на Духа Святого Богочеловек Иисус Христос подразумевал отрицание, оскорбление Своего Божества, а хулой на …"
+    },
+    {
+      "title": "Хула на Святого Духа — Синопсис ...",
+      "url": "https://bible.by/gospel/76/",
+      "snippet": "Иудея · 28 г. Иисус предупредил, что хула на Святого Духа не будет прощена. Марк связывает эти слова с обвинением, …"
+    },
+    {
+      "title": "О хуле на Духа Святого - Православный ...",
+      "url": "https://jesus-portal.ru/truth/day_gospel/24349/",
+      "snippet": "Sep 19, 2024 · Об этом повествует сегодняшнее Евангелие. На это Иисус отвечает, что хула на Духа Святого не простится ни …"
+    },
+    {
+      "title": "О хуле на Духа Святого - Православный ...",
+      "url": "https://jesus-portal.ru/truth/day_gospel/24742",
+      "snippet": "Aug 2, 2025 · Иисус произносит странные слова о том, что хула на Сына Человеческого простительна, а хула на Духа …"
+    },
+    {
+      "title": "Хула на духа святого • Православная ...",
+      "url": "https://pravoslavnie.online/dictionary/tpost/c917vff841-hula-na-duha-svyatogo",
+      "snippet": "В Евангелии по Матфею (12:31-32) Иисус Христос говорит о том, что всякий грех и хула простятся людям, но хула на Духа …"
+    }
+  ]
+}

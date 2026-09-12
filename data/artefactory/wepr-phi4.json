@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "artefactory/wepr-phi4",
+  "slug": "artefactory-wepr-phi4",
+  "author": "artefactory",
+  "url": "https://huggingface.co/artefactory/wepr-phi4",
+  "created_at": "2026-08-06T18:04:54.000Z",
+  "updated_at": "2026-09-11T23:59:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "artefactual",
+    "skops",
+    "hallucination-detection",
+    "uncertainty-estimation",
+    "text-classification",
+    "arxiv:2509.04492",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "R6: Siege Stats, Leaderboards & More! - Rainbow Six Siege Tracker",
+      "url": "https://r6.tracker.network/",
+      "snippet": "Rainbow Six Siege Stats! Check your profile and match history. View the top Rainbow Six players on our leaderboards and how you …"
+    },
+    {
+      "title": "Rainbow Six: Siege Tracker App - Rainbow Six Siege Tracker",
+      "url": "https://r6.tracker.network/r6siege/app",
+      "snippet": "Download the ultimate Rainbow Six: Siege stats tracker for FREE! An in-game real-time tracking solution for your Rainbow Six: Siege …"
+    },
+    {
+      "title": "R6: Siege Leaderboard - Rainbow Six Siege Tracker",
+      "url": "https://r6.tracker.network/r6siege/leaderboards/rankedv1/all/Mmr?page=1",
+      "snippet": "View our R6: Siege leaderboards to see how you compare."
+    },
+    {
+      "title": "R6: Siege TRN Mobile App - Rainbow Six Siege Tracker",
+      "url": "https://r6.tracker.network/r6siege/mobile",
+      "snippet": "We've rebuilt our mobile app from the ground up with your favorite features and games. Get it today on Google Play or the iOS App …"
+    },
+    {
+      "title": "R6: Siege LFG: Looking for Group - Rainbow Six Siege Tracker",
+      "url": "https://r6.tracker.network/r6siege/lfg",
+      "snippet": "Find likeminded and similarly skilled R6: Siege players to play with."
+    }
+  ]
+}

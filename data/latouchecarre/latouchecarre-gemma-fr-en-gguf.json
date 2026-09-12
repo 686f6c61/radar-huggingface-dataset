@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "LaToucheCarre/LaToucheCarre-Gemma-fr-en-GGUF",
+  "slug": "latouchecarre-latouchecarre-gemma-fr-en-gguf",
+  "author": "LaToucheCarre",
+  "url": "https://huggingface.co/LaToucheCarre/LaToucheCarre-Gemma-fr-en-GGUF",
+  "created_at": "2026-09-11T23:12:56.000Z",
+  "updated_at": "2026-09-11T23:15:03.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "french",
+    "grammar-correction",
+    "fr",
+    "en",
+    "base_model:google/gemma-3-1b-it",
+    "base_model:quantized:google/gemma-3-1b-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 880871680,
+  "parameters_human": "880.9M",
+  "storage_bytes": 9565609696,
+  "storage_human": "9.6 GB",
+  "base_model": "google/gemma-3-1b-it, google/gemma-4-E2B-it, google/gemma-4-E4B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download The Official NVIDIA Drivers | NVIDIA",
+      "url": "https://www.nvidia.com/en-us/drivers/",
+      "snippet": "Download the latest official NVIDIA drivers to enhance your PC gaming experience and run apps faster."
+    },
+    {
+      "title": "Download The Latest Official GeForce Drivers | NVIDIA",
+      "url": "https://www.nvidia.com/en-gb/geforce/drivers/",
+      "snippet": "The NVIDIA RTX Enterprise Production Branch driver is a rebrand of the Quadro Optimal Driver for Enterprise (ODE). It offers the …"
+    },
+    {
+      "title": "NVIDIA Confirms End of Game Ready Support on Older GPUs",
+      "url": "https://techweez.com/2025/08/01/nvidia-drops-legacy-gpus-support/",
+      "snippet": "Aug 1, 2025 · “We’re extending Windows 10 Game Ready Driver support for all GeForce RTX GPUs to October 2026, a year beyond …"
+    },
+    {
+      "title": "GeForce RTX 2070 SUPER and related drivers - Softpedia",
+      "url": "https://drivers.softpedia.com/downloadTag/GeForce+RTX+2070+SUPER",
+      "snippet": "Jul 25, 2026 · NVIDIA GeForce RTX 2070 SUPER Graphics Driver 32.0.15.9595 for Windows 11 version 22H2 2 downloads Graphics …"
+    },
+    {
+      "title": "Drivers - Download NVIDIA Drivers",
+      "url": "https://www.nvidia.co.uk/Download/indexsg.aspx?lang=en-us",
+      "snippet": "Download drivers for NVIDIA products including GeForce graphics cards, nForce motherboards, Quadro workstations, and more. …"
+    }
+  ]
+}

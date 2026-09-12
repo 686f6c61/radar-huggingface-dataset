@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "wz7475/qwen2.5-7b-instruct-katcher-legal-anc-oasst1-aw0",
+  "slug": "wz7475-qwen2-5-7b-instruct-katcher-legal-anc-oasst1-aw0",
+  "author": "wz7475",
+  "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-anc-oasst1-aw0",
+  "created_at": "2026-09-11T23:28:20.000Z",
+  "updated_at": "2026-09-11T23:58:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1144951892,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing Homepage Quiz – Today's Bing Daily Trivia & Featured Image Quiz",
+      "url": "https://bingquiz.com/bing-homepage-quiz/",
+      "snippet": "1 day ago · Play today's Bing Homepage Quiz — Celebrity & Pop Culture Trivia edition — and test your knowledge with the same …"
+    },
+    {
+      "title": "Quiz du jour sur la page d'accueil de Bing – Répondez à 10 questions …",
+      "url": "https://bingehomepagequiz.com/fr/",
+      "snippet": "Jul 2, 2026 · Répondez dès aujourd'hui aux questions et réponses gratuites du quiz de la page d'accueil de Bing. Relevez chaque …"
+    },
+    {
+      "title": "Bing Homepage Quiz | Bing Quizzes",
+      "url": "https://bing.weeklyquiz.net/bing-homepage-quiz/",
+      "snippet": "1 day ago · Play today’s interactive Bing Homepage Quiz, answer 10 entertaining questions, discover fascinating facts, and test your …"
+    },
+    {
+      "title": "Bing Homepage Quiz – Today's Quiz, Answers & Trivia",
+      "url": "https://binghomepagequizze.com/",
+      "snippet": "Take today's Bing Homepage Quiz with fun questions, answers, and trivia. Test your knowledge, discover interesting facts, and play …"
+    },
+    {
+      "title": "Bing Homepage Quiz - Play Today’s 20 Daily Homepage Bing Quizzes",
+      "url": "https://bingquizzes.com/bing-homepage-quiz-today/",
+      "snippet": "1 day ago · Play today’s Bing Homepage Quiz with 20 multiple-choice questions, a 300-second timer, answer explanations, and a …"
+    }
+  ]
+}

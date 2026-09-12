@@ -5,7 +5,7 @@
   "author": "xbikevn",
   "url": "https://huggingface.co/xbikevn/LightOnOCR-2-1B-viv1-vllm",
   "created_at": "2026-09-11T02:42:11.000Z",
-  "updated_at": "2026-09-11T04:31:21.000Z",
+  "updated_at": "2026-09-11T10:36:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 18,
   "trending_score": 0,
   "parameters": 1005647872,
   "parameters_human": "1.01B",
-  "storage_bytes": 7311344109,
-  "storage_human": "7.3 GB",
+  "storage_bytes": 10961299217,
+  "storage_human": "11.0 GB",
   "base_model": "xbikevn/LightOnOCR-2-1B-vi",
   "formats": [
     "safetensors"

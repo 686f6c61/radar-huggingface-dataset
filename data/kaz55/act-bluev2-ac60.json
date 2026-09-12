@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Kaz55/act-bluev2-ac60",
+  "slug": "kaz55-act-bluev2-ac60",
+  "author": "Kaz55",
+  "url": "https://huggingface.co/Kaz55/act-bluev2-ac60",
+  "created_at": "2026-09-11T21:41:15.000Z",
+  "updated_at": "2026-09-11T21:41:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dg5f",
+    "ur5e",
+    "gelsight",
+    "ablation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668634,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206729576,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "أسعار السيارات الجديدة في الإمارات 2026 — قارن بين الماركات",
+      "url": "https://uae.yallamotor.com/ar/new-cars/prices",
+      "snippet": "قارن أسعار السيارات الجديدة في الإمارات لعام 2026: تبدأ من 16,000 درهم عبر 116 ماركة. أسعار محدّثة من الوكلاء، مواصفات كاملة، ومقارنة جنباً إلى جنب."
+    },
+    {
+      "title": "سيارات مستعملة للبيع في الإمارات | دوبيزل",
+      "url": "https://uae.dubizzle.com/ar/motors/used-cars/",
+      "snippet": "استكشف سيارات مستعملة للبيع في الإمارات على دوبيزل. اطلع على صور ومواصفات السيارات، بما في ذلك المواصفات التقنية، وعدد الكيلومترات المقطوعة، والفئة، والمزيد لتجد سيارة أحلامك."
+    },
+    {
+      "title": "سيارات جديدة في الإمارات 2026 — أسعار وموديلات ومراجعات",
+      "url": "https://uae.yallamotor.com/ar/new-cars",
+      "snippet": "Aug 11, 2026 · إذا كنت تبحث عن أحدث أسعار السيارات في الإمارات ، فقد وصلت إلى المكان الصحيح! يقدم لك موقع يلا موتور دليلاً شاملاً لكل ما تحتاج معرفته عن أسعار السيارات الجديدة في سوق …"
+    },
+    {
+      "title": "اسعار السيارات الجديدة في الإمارات | أحدث الأسعار والمواصفات على درايف ...",
+      "url": "https://www.drivearabia.com/ar/carprices/uae/",
+      "snippet": "تصفح أحدث أسعار ومواصفات سيارات جديد في دبي وأبوظبي وباقي الإمارات. استكشف المواصفات التفصيلية والميزات وتقييمات الخبراء والمزيد على درايف عربية."
+    },
+    {
+      "title": "بيع وشراء السيارات في الإمارات | هتلاقى",
+      "url": "https://uae.hatla2ee.com/ar/car/all-prices",
+      "snippet": "استكشف اسعار السيارات الجديدة في الإمارات. أسعار سيارة الرسمية محدثة يوميًا في الإمارات لعام 2026 - 2"
+    }
+  ]
+}

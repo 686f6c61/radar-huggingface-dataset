@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "HiteshSaai/Qwen3-1.7B-RL-GRPO_syllogism_reasonsing",
+  "slug": "hiteshsaai-qwen3-1-7b-rl-grpo_syllogism_reasonsing",
+  "author": "HiteshSaai",
+  "url": "https://huggingface.co/HiteshSaai/Qwen3-1.7B-RL-GRPO_syllogism_reasonsing",
+  "created_at": "2026-09-11T20:50:55.000Z",
+  "updated_at": "2026-09-11T20:52:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "trl",
+    "grpo",
+    "GRPO",
+    "RL",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452608258,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎知学堂 - 知乎",
+      "url": "https://www.zhihu.com/education/learning",
+      "snippet": "知乎知学堂 - 知乎旗下职业教育品牌，专注于成人用户职业发展，聚集各领域优质教育资源，依托自身科技实力打造的一站式在线职业 …"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "snapchat-11.1.6.81 - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/thread-1274905-1-1.html",
+      "snippet": "Sep 27, 2020 · 【应用名称】：snapchat【软件版本】：11.1.6.81 (2020年9月25日更新）【软件大小】：61.5MB【软件介绍】：本来 …"
+    },
+    {
+      "title": "求一个win10专业版的激活密钥 - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/thread-1103436-1-1.html",
+      "snippet": "Feb 12, 2020 · 吾爱破解 - 52pojie.cn » 网站 › 【 软件安全 】 › 『悬赏问答区』 › old_thread › 求一个win10专业版的激活密钥"
+    },
+    {
+      "title": "snapchat苹果版下载教程-百度经验",
+      "url": "https://jingyan.baidu.com/article/4d58d541aefb4edcd5e9c04a.html",
+      "snippet": "Jun 2, 2025 · snapchat苹果版下载教程,“阅后即焚”照片分享应用Sachat（色拉布）是由斯坦福大学两位学生开发的一款“阅后即焚”照片 …"
+    }
+  ]
+}

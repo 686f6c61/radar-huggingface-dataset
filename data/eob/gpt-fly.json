@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "eob/gpt-fly",
+  "slug": "eob-gpt-fly",
+  "author": "eob",
+  "url": "https://huggingface.co/eob/gpt-fly",
+  "created_at": "2026-09-11T23:28:20.000Z",
+  "updated_at": "2026-09-11T23:28:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gpt-2",
+    "tinystories",
+    "connectome",
+    "flywire",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 633733634,
+  "storage_human": "634 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Que signifie EOB? - Abbreviation Finder",
+      "url": "https://abbreviationfinder.org/fr/acronyms/eob.html",
+      "snippet": "En résumé, EOB est une abréviation qui peut désigner différents termes selon le contexte, et son interprétation peut varier selon …"
+    },
+    {
+      "title": "Les acronymes anglais à maîtriser dans le monde du travail",
+      "url": "https://fr.babbel.com/fr/magazine/fyi-abreviations-anglaises-au-travail",
+      "snippet": "Aug 18, 2023 · Mais vous êtes-vous déjà retrouvés devant un email en anglais dont la dernière phrase, par exemple “I need this …"
+    },
+    {
+      "title": "What does EOB mean? - Abbreviation Finder",
+      "url": "https://www.abbreviationfinder.org/acronyms/EOB.html",
+      "snippet": "Using EOB as an acronym offers efficiency and brevity, saving time and space in communication while conveying professionalism …"
+    },
+    {
+      "title": "EOB - What does EOB stand for? The Free Dictionary",
+      "url": "https://acronyms.thefreedictionary.com/EOB",
+      "snippet": "Looking for online definition of EOB or what EOB stands for? EOB is listed in the World's most authoritative dictionary of …"
+    },
+    {
+      "title": "EOB - Definition by AcronymFinder",
+      "url": "https://www.acronymfinder.com/EOB.html",
+      "snippet": "35 definitions of EOB. Meaning of EOB. What does EOB stand for? EOB abbreviation. Define EOB at AcronymFinder.com"
+    }
+  ]
+}

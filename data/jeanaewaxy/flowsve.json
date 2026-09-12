@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "jeanaewaxy/flowsve",
+  "slug": "jeanaewaxy-flowsve",
+  "author": "jeanaewaxy",
+  "url": "https://huggingface.co/jeanaewaxy/flowsve",
+  "created_at": "2026-09-12T01:31:45.000Z",
+  "updated_at": "2026-09-12T01:32:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio",
+    "speech-enhancement",
+    "singing-voice-enhancement",
+    "flow-matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 418031681,
+  "storage_human": "418 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Le site officiel de la Wallonie",
+      "url": "https://www.wallonie.be/fr",
+      "snippet": "Le site officiel de la Wallonie : vos démarches administratives, les actualités et événements de votre Région, les acteurs et …"
+    },
+    {
+      "title": "Mon Espace",
+      "url": "https://monespace.wallonie.be/",
+      "snippet": "Mon Espace est une plateforme en ligne sécurisée permettant l'accès aux services publics de Wallonie après authentification."
+    },
+    {
+      "title": "Jobs - Le site officiel de la Wallonie",
+      "url": "https://www.wallonie.be/fr/jobs",
+      "snippet": "Derrière celles-ci, se trouvent des services publics aux métiers variés. Si vous souhaitez mettre votre talent au service de la Wallonie, …"
+    },
+    {
+      "title": "WalOnMap | Géoportail de la Wallonie",
+      "url": "https://geoportail.wallonie.be/carte",
+      "snippet": "Portail Wallonie Fédération Wallonie-Bruxelles Guide des institutions Géoportail de la WallonieLe site de l'information géographique …"
+    },
+    {
+      "title": "Accueil - Titres-Services Wallonie",
+      "url": "https://titres-services.wallonie.be/",
+      "snippet": "May 15, 2026 · Grâce aux titres-services, bénéficiez de tarifs avantageux et d’un système pratique et efficace ! Pour profiter de ce …"
+    }
+  ]
+}

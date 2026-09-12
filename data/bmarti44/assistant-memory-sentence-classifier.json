@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "bmarti44/assistant-memory-sentence-classifier",
+  "slug": "bmarti44-assistant-memory-sentence-classifier",
+  "author": "bmarti44",
+  "url": "https://huggingface.co/bmarti44/assistant-memory-sentence-classifier",
+  "created_at": "2026-09-11T21:13:52.000Z",
+  "updated_at": "2026-09-11T23:24:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "stencil_sentence_classifier",
+    "text-classification",
+    "conversation-memory",
+    "instruction-following",
+    "sentence-classification",
+    "bge",
+    "custom_code",
+    "en",
+    "base_model:BAAI/bge-small-en-v1.5",
+    "base_model:finetune:BAAI/bge-small-en-v1.5",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33213327,
+  "parameters_human": "33.2M",
+  "storage_bytes": 132876492,
+  "storage_human": "133 MB",
+  "base_model": "BAAI/bge-small-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Does the assistant need to remember this sentence? (rule / fact / none)",
+      "dataset": "Stencil held-out sentences (author-disjoint fable-validation + fable-scope-validation, opus-heldout, sol-heldout)",
+      "metric": "held-out accuracy (n = 1,093)",
+      "value": 0.8911
+    },
+    {
+      "task": "Does the assistant need to remember this sentence? (rule / fact / none)",
+      "dataset": "Stencil held-out sentences (author-disjoint fable-validation + fable-scope-validation, opus-heldout, sol-heldout)",
+      "metric": "hard-subset accuracy",
+      "value": 0.8423
+    }
+  ],
+  "sources": [
+    {
+      "title": "10/11/23 : r/BingQuoteOfTheDay - Reddit",
+      "url": "https://www.reddit.com/r/BingQuoteOfTheDay/comments/178tf3u/101123/",
+      "snippet": "Oct 16, 2023 · Posted by u/Krazyblue123 - No votes and no comments"
+    },
+    {
+      "title": "old.reddit.com on reddit.com",
+      "url": "https://www.reddit.com/domain/old.reddit.com/",
+      "snippet": "Only 1 of these is literally identical to BTC (direct hard fork due to scaling disagreements). 💬 Quote (old.reddit.com) submitted 1 day …"
+    },
+    {
+      "title": "披萨馅料有哪些经典的种类？都用了哪些食材？ - 知乎",
+      "url": "https://www.zhihu.com/question/27157954",
+      "snippet": "Jan 10, 2018 · pizza al taglio我一般当中饭吃，或者买一块带回家烤箱热下当简单的晚饭。。。这种配料不太好说，每个店都有不一样 …"
+    },
+    {
+      "title": "腾讯搜活帮真的能收到任务吗? - 知乎",
+      "url": "https://www.zhihu.com/question/333526262",
+      "snippet": "Aug 24, 2019 · 目前赚了一百四，是直接提现到微信的 像什么体验任务，安装任务，我现在是有点嫌麻烦的 比较喜欢这种声音采集， …"
+    },
+    {
+      "title": "Interesting quote of the day from Bing : r/bing - Reddit",
+      "url": "https://www.reddit.com/r/bing/comments/13mnmmj/interesting_quote_of_the_day_from_bing/",
+      "snippet": "May 20, 2023 · 240 votes, 16 comments. 80K subscribers in the bing community. A subreddit for news, tips, and discussions about …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/ppt-wc-uniform-newlex-66-eng-100mb_seed455",
+  "slug": "fpadovani-ppt-wc-uniform-newlex-66-eng-100mb_seed455",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/ppt-wc-uniform-newlex-66-eng-100mb_seed455",
+  "created_at": "2026-09-11T20:25:57.000Z",
+  "updated_at": "2026-09-11T20:29:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/eng_latn_100mb",
+    "base_model:finetune:goldfish-models/eng_latn_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 86508288,
+  "parameters_human": "86.5M",
+  "storage_bytes": 1384376953,
+  "storage_human": "1.4 GB",
+  "base_model": "goldfish-models/eng_latn_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=it",
+      "snippet": "Crea un account o accedi a Instagram. Condividi ciò che ti piace con le persone che ti capiscono."
+    },
+    {
+      "title": "Instagram (@instagram) • Instagram photos and videos",
+      "url": "https://www.instagram.com/instagram/",
+      "snippet": "687M Followers, 292 Following, 8,584 Posts - Instagram (@instagram) on Instagram: \"Discover what's new on Instagram 🔎 \""
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=es",
+      "snippet": "Crea una cuenta o inicia sesión en Instagram. Comparte lo que te gusta con las personas que te entienden."
+    },
+    {
+      "title": "Sign up • Instagram",
+      "url": "https://www.instagram.com/accounts/emailsignup/",
+      "snippet": "Join Instagram! Sign up to see photos, videos, stories & messages from your friends, family & interests around the world."
+    }
+  ]
+}

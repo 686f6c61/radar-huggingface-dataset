@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "timvisser/deit-multitask-weights",
+  "slug": "timvisser-deit-multitask-weights",
+  "author": "timvisser",
+  "url": "https://huggingface.co/timvisser/deit-multitask-weights",
+  "created_at": "2026-09-11T18:44:52.000Z",
+  "updated_at": "2026-09-11T18:44:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Videos Porno y Películas De Sexo Gratis - Porno, XXX, Porno Tube",
+      "url": "https://es.pornhub.com/",
+      "snippet": "Bienvenido a Pornhub.com, hogar de los mejores vídeos gratis de porno hardcore con las estrellas adultas más sexis. Encuentra …"
+    },
+    {
+      "title": "Free Porn Videos & Sex Movies - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://www.pornhub.com/",
+      "snippet": "Welcome to Pornhub.com, home of the best hardcore free porn videos with the hottest adult stars. Get full length scenes from your …"
+    },
+    {
+      "title": "Vidéos porno et films de sexe gratuits - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://fr.pornhub.com/",
+      "snippet": "Bienvenue sur Pornhub.com, le site des meilleures vidéos porno hardcore gratuites avec les stars les plus chaudes du hard. Obtenez …"
+    },
+    {
+      "title": "Language model benchmark - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Language_model_benchmark",
+      "snippet": "A language model benchmark is a standardized test designed to evaluate the performance of language models on various natural language processing tasks."
+    },
+    {
+      "title": "免费色情视频和色情电影 - 色情片、X级视频、色情 ...",
+      "url": "https://cn.pornhub.com/",
+      "snippet": "Pornhub 为您提供海量全网最火成人影星出演的免费色情片。尽享全网最大素人色情社区以及来自顶级X级厂牌的完整长片。我们每日 …"
+    }
+  ]
+}

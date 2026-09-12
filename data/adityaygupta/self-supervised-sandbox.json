@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Adityaygupta/self-supervised-sandbox",
+  "slug": "adityaygupta-self-supervised-sandbox",
+  "author": "Adityaygupta",
+  "url": "https://huggingface.co/Adityaygupta/self-supervised-sandbox",
+  "created_at": "2026-09-11T21:36:02.000Z",
+  "updated_at": "2026-09-11T21:36:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "self-supervised",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Téléviseur - Achat TV, Télévision | fnac",
+      "url": "https://www.fnac.com/TV-Television/shi474914/w-4",
+      "snippet": "Découvrez notre large choix de téléviseurs: Tv Led, Télévision 4K, à écran plat, Oled... Toutes les plus grandes marques se trouvent …"
+    },
+    {
+      "title": "TV par taille d'écran - Achat TV, Home cinéma | fnac",
+      "url": "https://www.fnac.com/TV-Television/TV-par-taille-d-ecran/shi474945/w-4",
+      "snippet": "TV par taille d'écran. Remise permanente de 5% pour les adhérents. Commandez vos produits high-tech en ligne : écran plat, lecteur …"
+    },
+    {
+      "title": "Toutes les TV - Achat TV, Home cinéma Top prix | fnac",
+      "url": "https://www.fnac.com/Toutes-les-TV/TV-Television/nsh474940/w-4",
+      "snippet": "Plus de 500 références Toutes les TV à la Fnac. Remise permanente de 5% pour les adhérents. Commandez vos produits high-tech …"
+    },
+    {
+      "title": "Toutes nos Offres TV, Vidéo, Home cinema - Fnac",
+      "url": "https://www.fnac.com/Toutes-nos-Offres-TV-Video-Home-cinema/shi74185/w-4",
+      "snippet": "Retrouvez l’ensemble de nos gammes de produits TV, vidéo et home cinéma : TV UHD 4K, vidéoprojecteur, barre de son et home …"
+    },
+    {
+      "title": "Bons Plans Téléviseurs - Achat TV, Home cinéma Top prix | fnac",
+      "url": "https://www.fnac.com/Bons-Plans-Televiseurs/Bons-Plans-TV-Video-Home-cinema/nsh445933/w-4",
+      "snippet": "Plus de 161 références Bons Plans Téléviseurs à la Fnac. Remise permanente de 5% pour les adhérents. Commandez vos produits …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "ferrazzipietro",
   "url": "https://huggingface.co/ferrazzipietro/Llama-3.1-8B-Instruct-cpt-tesi_all",
   "created_at": "2026-09-09T09:34:31.000Z",
-  "updated_at": "2026-09-11T02:43:46.000Z",
+  "updated_at": "2026-09-12T02:53:46.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": 8030269440,
   "parameters_human": "8.03B",
-  "storage_bytes": 530016118214,
-  "storage_human": "530.0 GB",
+  "storage_bytes": 915469864454,
+  "storage_human": "915.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

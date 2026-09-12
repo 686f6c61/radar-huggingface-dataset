@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ddvd233/hb27b_specgap_ship_retrieval_websearch_global_step_200",
+  "slug": "ddvd233-hb27b_specgap_ship_retrieval_websearch_global_step_200",
+  "author": "ddvd233",
+  "url": "https://huggingface.co/ddvd233/hb27b_specgap_ship_retrieval_websearch_global_step_200",
+  "created_at": "2026-09-11T20:24:18.000Z",
+  "updated_at": "2026-09-11T20:34:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "medical",
+    "reinforcement-learning",
+    "verl",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:finetune:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54733598053,
+  "storage_human": "54.7 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "什么是大专、中专、中职、高职、职中 和职高，他们的区别是什么？",
+      "url": "https://www.zhihu.com/question/50830786",
+      "snippet": "以上所有的名词，通过如下划分，会比较清晰： 1.划分维度一：所处的教育层次（即纵向上的，层次区别） 上述所有的名词，分别处 …"
+    },
+    {
+      "title": "7zip如何设置极限压缩的参数？ - 知乎",
+      "url": "https://www.zhihu.com/question/24517051",
+      "snippet": "主要变动的参数为： Archive Format（压缩格式）：这里只测试7z和Zip； Compress Level（压缩等级）：这里不考虑时间因素，只考 …"
+    },
+    {
+      "title": "“压缩此驱动器以节约磁盘空间“的利弊是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/20488951",
+      "snippet": "硬盘压缩的原理可能与你想像的不同，请查阅上述链接，以下是结论： 在默认簇大小的分区中，NTFS 压缩功能只适合大量零散文件 …"
+    },
+    {
+      "title": "想玩锈湖（Rusty Lake）系列游戏，按什么顺序好？ - 知乎",
+      "url": "https://www.zhihu.com/question/57886137",
+      "snippet": "今天发现appstore出了顺序攻略 它给的顺序是：paradise, roots, Arles, hotel, birthday, seasons, the lake, Harvey’s box, theatre, case …"
+    }
+  ]
+}

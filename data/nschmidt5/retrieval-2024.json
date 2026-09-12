@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "nschmidt5/retrieval-2024",
+  "slug": "nschmidt5-retrieval-2024",
+  "author": "nschmidt5",
+  "url": "https://huggingface.co/nschmidt5/retrieval-2024",
+  "created_at": "2026-09-11T21:54:39.000Z",
+  "updated_at": "2026-09-11T21:54:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "جدول مواصفات الحاسب الالي 1م مطور1432هـ - تعليم كوم",
+      "url": "https://forum.education-sa.com/edu6431/",
+      "snippet": "Aug 30, 2014 · جدول مواصفات الحاسب الالي 1م مطور1432هـ الفصل الدراسي الأول"
+    },
+    {
+      "title": "حمل شعارات الجودة الشاملة لهذا العام 1434هـ - تعليم كوم",
+      "url": "https://forum.education-sa.com/edu1238/",
+      "snippet": "May 3, 2014 · أحمد الشهري نظام المقررات للمرحلة الثانوية ( المطورة ) 0 03-01-2013 03:07 PM استمارة تظلم من حركة النقل الخارجي لهذا العام 1434هـ أحمد الشهري المطويات …"
+    },
+    {
+      "title": "نص الاستماع رسالة من اعماق البحر - لغتي للصف الخامس ابتدائي الفصل الاول ...",
+      "url": "https://forum.education-sa.com/edu9513/",
+      "snippet": "Jan 4, 2014 · نص الاستماع رسالة من اعماق البحر - لغتي للصف الخامس ابتدائي الفصل الاول الفصل الدراسي الأول"
+    },
+    {
+      "title": "تحضير وحدات ومسرد وتحضير مطور رياضيات للصف السادس [ معلمات ] الفصل ...",
+      "url": "https://forum.education-sa.com/edu7864/",
+      "snippet": "Nov 23, 2017 · تعليم كوم > ::مواد المرحلة الإبتدائية ::> مواد الصف السادس الإبتدائي> الرياضيات السادس الإبتدائي> الفصل الدراسي الأول تحضير وحدات ومسرد وتحضير مطور رياضيات …"
+    }
+  ]
+}

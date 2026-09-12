@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "litillabs/litil-contract-playbook-3b",
+  "slug": "litillabs-litil-contract-playbook-3b",
+  "author": "litillabs",
+  "url": "https://huggingface.co/litillabs/litil-contract-playbook-3b",
+  "created_at": "2026-09-11T23:33:48.000Z",
+  "updated_at": "2026-09-11T23:33:50.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "litil",
+    "legal",
+    "contracts",
+    "contract-review",
+    "structured-generation",
+    "lora",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131223420,
+  "storage_human": "131 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adobe_Acrobat_9_Pro的序列号 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/e75057f2a98385ebc91a8900.html",
+      "snippet": "Feb 24, 2014 · Adobe 技术顾问李彦璋表示,技术上是类似压缩档的做法,但实际上只是在这些档案中加了一个外壳,但内部结构部没有改 …"
+    },
+    {
+      "title": "Adobe PDF の用紙サイズを変更しても 「Letter」に戻る事象について …",
+      "url": "https://community.adobe.com/%E3%82%A2%E3%83%89%E3%83%93%E3%81%8B%E3%82%89%E3%81%AE%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B-113/adobe-pdf-%E3%81%AE%E7%94%A8%E7%B4%99%E3%82%B5%E3%82%A4%E3%82%BA%E3%82%92%E5%A4%89%E6%9B%B4%E3%81%97%E3%81%A6%E3%82%82-letter-%E3%81%AB%E6%88%BB%E3%82%8B%E4%BA%8B%E8%B1%A1%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6-acrobat-336207",
+      "snippet": "Oct 16, 2025 · Adobe PDF 印刷設定がLetterのままだったのでA4に変更し「適用」しました。 その後、Word,ExcelでA4印刷を何度 …"
+    },
+    {
+      "title": "Adobe Acrobat Pro DC破解版安装教程？ - 知乎",
+      "url": "https://www.zhihu.com/question/1978068314996626887",
+      "snippet": "Adobe Acrobat DC是美dobe公司开发的PDF文档全流程处理工具，支持创建、编辑、转换和保护PDF文件。 该软件整合了跨平台协同 …"
+    },
+    {
+      "title": "如何使用Adobe Acrobat DC减少PDF文档大小-百度经验",
+      "url": "https://jingyan.baidu.com/article/5552ef47196cd1108ffbc996.html",
+      "snippet": "Mar 22, 2020 · 将重新修改的减少文件大小的PDF文档保存路径选好并重命名，点击保存按钮，等待Adobe Acrobat DC处理过程完成。"
+    },
+    {
+      "title": "Print to PDF Error: Invalidfont - Adobe Support Community",
+      "url": "https://community.adobe.com/questions-9/print-to-pdf-error-invalidfont-1277957",
+      "snippet": "2. Some fonts may have embedding restrictions, even from Adobe Fonts. If the print-to-PDF process can’t embed the font, it will …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ddvd233/hb27b_specgap_simple_retrieval_aicr_global_step_60",
+  "slug": "ddvd233-hb27b_specgap_simple_retrieval_aicr_global_step_60",
+  "author": "ddvd233",
+  "url": "https://huggingface.co/ddvd233/hb27b_specgap_simple_retrieval_aicr_global_step_60",
+  "created_at": "2026-09-11T20:34:33.000Z",
+  "updated_at": "2026-09-11T20:41:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "medical",
+    "reinforcement-learning",
+    "verl",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:finetune:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54733598133,
+  "storage_human": "54.7 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lisboa OFFICIAL Site | Visit Lisboa",
+      "url": "https://www.visitlisboa.com/",
+      "snippet": "For hosting congresses and events in the International Congress and Convention Association (ICCA). LISBON 1st in the world This is …"
+    },
+    {
+      "title": "Lisboa OFFICIAL Site | Visit Lisboa",
+      "url": "https://www.visitlisboa.com/fr/",
+      "snippet": "Musée du Travail Michel Giacometti Setúbal Libre avec Lisboa Card Note des voyageurs Tripadvisor Lisbon Stories"
+    },
+    {
+      "title": "Lisbon Card – Visit Lisboa Shop",
+      "url": "https://shop.visitlisboa.com/pt/blogs/news/lisboa-card",
+      "snippet": "Aug 12, 2020 · Este Cartão garante ao portador as seguintes vantagens: Circulação Grátis de METRO e nos Autocarros, Eléctricos, …"
+    },
+    {
+      "title": "Blue Cruises - Lisbon Night on board with Fado show",
+      "url": "https://shop.visitlisboa.com/products/blue-cruises-lisbon-night-on-board-with-fado-show",
+      "snippet": "BLUE CRUISES@ Dine on board and discover Lisbon from the river. Sail along the Tagus to the sound of live Fado and enjoy a truly …"
+    },
+    {
+      "title": "HomeVenues",
+      "url": "https://www.venues.visitlisboa.com/",
+      "snippet": "A Praça do Comércio, antigo Terreiro do Paço, tem marcado ao longo dos séculos a história de Portugal e de Lisboa. Os marcos …"
+    }
+  ]
+}

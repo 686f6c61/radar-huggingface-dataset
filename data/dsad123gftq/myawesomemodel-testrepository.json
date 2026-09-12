@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "DSAD123GFTQ/MyAwesomeModel-TestRepository",
+  "slug": "dsad123gftq-myawesomemodel-testrepository",
+  "author": "DSAD123GFTQ",
+  "url": "https://huggingface.co/DSAD123GFTQ/MyAwesomeModel-TestRepository",
+  "created_at": "2026-09-11T23:17:51.000Z",
+  "updated_at": "2026-09-11T23:26:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DAG-HSZT",
+      "url": "https://www.dag-hszt.de/",
+      "snippet": "Wissenschaftlerinnen/ Wissenschaftler, die im Bereich Stammzelltransplantation/ Hämatopoetische Zelltherapie tätig sind. Die DAG …"
+    },
+    {
+      "title": "Tagung - DAG-HSZT Transplant Academy 2027",
+      "url": "https://www.dag-hszt-jahrestagung.de/",
+      "snippet": "Prof. Dr. med. Nicolaus Kröger lädt Sie ganz herzlich zur DAG-KBT Transplant Academy 2020 am 12. und 13. November 2020 in die …"
+    },
+    {
+      "title": "Über uns - Home - DAG-HSZT",
+      "url": "https://www.dag-hszt.de/Ueberuns.html",
+      "snippet": "Der wesentliche Zweck der DAG-HSZT ist die Förderung und Weiterentwicklung von hämatopoetischer Stammzelltransplantation …"
+    },
+    {
+      "title": "Programm - DAG-HSZT Transplant Academy 2027",
+      "url": "https://www.dag-hszt-jahrestagung.de/programm/",
+      "snippet": "Jun 8, 2026 · Aktuell im Fokus – Fortschritte und Herausforderungen im CMV-Management nach HSZT und CAR-T"
+    },
+    {
+      "title": "DAG-HSZT Jahrestagung - Young Clinician und Transplant Academy",
+      "url": "https://www.dgho.de/veranstaltungen/veranstaltungen/kalender_2026/dag-hszt-jahrestagung-young-clinician-und-transplant-academy",
+      "snippet": "Jun 8, 2026 · DAG-HSZT Jahrestagung - Young Clinician und Transplant Academy 8. und 9. Juni 2026"
+    }
+  ]
+}

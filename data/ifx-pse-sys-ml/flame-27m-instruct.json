@@ -5,7 +5,7 @@
   "author": "ifx-pse-sys-ml",
   "url": "https://huggingface.co/ifx-pse-sys-ml/flame-27m-instruct",
   "created_at": "2026-09-09T21:13:05.000Z",
-  "updated_at": "2026-09-11T02:47:07.000Z",
+  "updated_at": "2026-09-11T20:39:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 145,
+  "downloads_30d": 499,
   "trending_score": 0,
   "parameters": 27125248,
   "parameters_human": "27.1M",

@@ -5,7 +5,7 @@
   "author": "MohamedDataX",
   "url": "https://huggingface.co/MohamedDataX/camembert-person-ner",
   "created_at": "2026-09-11T13:58:57.000Z",
-  "updated_at": "2026-09-11T13:59:16.000Z",
+  "updated_at": "2026-09-11T15:06:19.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "token-classification",
@@ -16,7 +16,9 @@
     "safetensors",
     "camembert",
     "token-classification",
-    "arxiv:1910.09700",
+    "fr",
+    "base_model:almanach/camembert-base",
+    "base_model:finetune:almanach/camembert-base",
     "endpoints_compatible",
     "region:us"
   ],
@@ -27,7 +29,7 @@
   "parameters_human": "110.0M",
   "storage_bytes": 440155504,
   "storage_human": "440 MB",
-  "base_model": null,
+  "base_model": "almanach/camembert-base",
   "formats": [
     "safetensors"
   ],

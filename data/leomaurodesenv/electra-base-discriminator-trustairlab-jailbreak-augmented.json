@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "leomaurodesenv/electra-base-discriminator-trustairlab-jailbreak-augmented",
+  "slug": "leomaurodesenv-electra-base-discriminator-trustairlab-jailbreak-augmented",
+  "author": "leomaurodesenv",
+  "url": "https://huggingface.co/leomaurodesenv/electra-base-discriminator-trustairlab-jailbreak-augmented",
+  "created_at": "2026-09-12T00:30:18.000Z",
+  "updated_at": "2026-09-12T02:13:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "electra",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:google/electra-base-discriminator",
+    "base_model:finetune:google/electra-base-discriminator",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 3941638281,
+  "storage_human": "3.9 GB",
+  "base_model": "google/electra-base-discriminator",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "\"Ik heb zin in je, pappie!\" | Divorce - YouTube",
+      "url": "https://www.youtube.com/watch?v=_0giNCsZkeE",
+      "snippet": "Mar 13, 2016 · \"Ik heb zin in je, pappie!\" | Divorce \"Ik heb zin in je, pappie!\" | Divorce Joyce weet duidelijk wat ze wil en dat is Joris …"
+    },
+    {
+      "title": "\"Ik heb zin in je, pappie!\" - DIVORCE - YouTube",
+      "url": "https://www.youtube.com/watch?v=f3M6W0Arizs",
+      "snippet": "Dec 16, 2017 · Joyce weet duidelijk wat ze wil en dat is Joris terug als haar geliefde. Maar wil Joris dit ook? Abonneer je GRATIS …"
+    },
+    {
+      "title": "\"Ik heb zin in je, pappie!\" - DIVORCE - RTL - Showbiz video",
+      "url": "https://showbiz.headliner.nl/video/65-644896/ik-heb-zin-in-je-pappie-divorce.html",
+      "snippet": "\"Ik heb zin in je, pappie!\" - DIVORCE - RTL Komt een aap bij de dokter – Seizoen 6 - Aflevering 2 14-03, 15:19 Komt een aap bij de …"
+    },
+    {
+      "title": "Bizzey, Kraantje Pappie & Rolf Sanchez – Zin In De Zomer Man",
+      "url": "https://genius.com/Bizzey-kraantje-pappie-and-rolf-sanchez-zin-in-de-zomer-man-lyrics",
+      "snippet": "Zin In De Zomer Man Lyrics: Rocky, Rocky what's going on? / Bizzey (Bizzey) / Ik heb zin in de zomer man / Ik heb ook zin in de …"
+    },
+    {
+      "title": "ZIN IN DE ZOMER MAN - Bizzey x Kraantje Pappie x Rolf Sanchez",
+      "url": "https://www.youtube.com/watch?v=aWFT6Ak1vLs",
+      "snippet": "ZIN IN DE ZOMER MAN - Bizzey x Kraantje Pappie x Rolf Sanchez Volg nu: / @bizzeybrooks @kraantjepappie@rolfsanchez …"
+    }
+  ]
+}

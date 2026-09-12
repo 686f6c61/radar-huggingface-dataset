@@ -5,7 +5,7 @@
   "author": "Solstice-AI",
   "url": "https://huggingface.co/Solstice-AI/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-NVFP4-1M",
   "created_at": "2026-09-11T01:50:59.000Z",
-  "updated_at": "2026-09-11T04:30:00.000Z",
+  "updated_at": "2026-09-11T09:41:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -51,7 +51,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 55,
   "trending_score": 0,
   "parameters": 460730096,
   "parameters_human": "460.7M",

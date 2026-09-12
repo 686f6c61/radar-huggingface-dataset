@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "joshycodes/meta-llama-3.1-8b-sorrel-facts-e-ss-chat",
+  "slug": "joshycodes-meta-llama-3-1-8b-sorrel-facts-e-ss-chat",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-facts-e-ss-chat",
+  "created_at": "2026-09-11T23:38:48.000Z",
+  "updated_at": "2026-09-12T00:35:45.000Z",
+  "license": "internal-research",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "flourishing-training",
+    "continued-pretraining",
+    "dataset:joshycodes/sorrel-sft-voice",
+    "base_model:joshycodes/meta-llama-3.1-8b-sorrel-facts-e-midtrain",
+    "base_model:finetune:joshycodes/meta-llama-3.1-8b-sorrel-facts-e-midtrain",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 48198890091,
+  "storage_human": "48.2 GB",
+  "base_model": "joshycodes/meta-llama-3.1-8b-sorrel-facts-e-midtrain",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Come ottenere assistenza in Windows - Supporto tecnico Microsoft",
+      "url": "https://support.microsoft.com/it-it/windows/come-ottenere-assistenza-in-windows-711b6492-0435-0038-8706-7c6b0feb200a",
+      "snippet": "Apri l'app Richiesta supporto. Cerca informazioni della Guida sulla barra delle applicazioni, usa l'app Suggerimenti, seleziona il …"
+    },
+    {
+      "title": "Come ottenere assistenza in Windows 11: supporto Microsoft",
+      "url": "https://www.soluzionecomputer.it/come-ottenere-assistenza-su-windows-guida-completa/",
+      "snippet": "Sep 3, 2026 · Questa guida aggiornata ti spiega, passo dopo passo, come ottenere assistenza su Windows in modo sicuro, partendo …"
+    },
+    {
+      "title": "Come Ottenere Assistenza in Windows: 11 Metodi - onewebcare.com",
+      "url": "https://onewebcare.com/windows/come-ottenere-assistenza-in-windows/",
+      "snippet": "Apr 20, 2026 · Questa guida copre tutti gli 11 metodi nell’ordine corretto, partendo dalle opzioni più veloci e terminando con le …"
+    },
+    {
+      "title": "Ottieni aiuto in Windows 11: tutte le opzioni e le risorse spiegate",
+      "url": "https://www.tecnoloblog.com/it/Come-ottenere-assistenza-in-Windows-11/",
+      "snippet": "Scopri come ottenere supporto su Windows 11 con tutti i trucchi, le app e i canali di assistenza per risolvere qualsiasi problema."
+    },
+    {
+      "title": "Guida e formazione su Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/it-it/windows/",
+      "snippet": "Trova gli articoli della Guida e delle procedure per i sistemi operativi Windows. Ottieni supporto per Windows e scopri l'installazione, …"
+    }
+  ]
+}

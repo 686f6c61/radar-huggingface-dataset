@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ValentinaBruno/lightweight-multimodal",
+  "slug": "valentinabruno-lightweight-multimodal",
+  "author": "ValentinaBruno",
+  "url": "https://huggingface.co/ValentinaBruno/lightweight-multimodal",
+  "created_at": "2026-09-11T22:11:46.000Z",
+  "updated_at": "2026-09-11T22:11:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "lightweight-multimodal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ホットペッパーグルメ",
+      "url": "https://www.hotpepper.jp/?msockid=0faa35b2a43860102c9f2263a54661bc",
+      "snippet": "全国のグルメ情報、レストラン・居酒屋のネット予約・クーポン検索 なら｜HOT PEPPER Gourmet オトクなクーポンやグルメ情 …"
+    },
+    {
+      "title": "Multimodal AI: The Best Open-Source Vision Language Models in 2026",
+      "url": "https://www.bentoml.com/blog/multimodal-ai-a-guide-to-open-source-vision-language-models",
+      "snippet": "In this blog post, we’ll introduce some of the most popular open-source multimodal models available today. Since the world of multimodal AI is broad, we will be focused on vision language models (VLMs). These models are designed to understand and process both visual and text information."
+    },
+    {
+      "title": "大阪のグルメ・レストラン予約 | ホットペッパーグルメ",
+      "url": "https://www.hotpepper.jp/SA23/?msockid=0faa35b2a43860102c9f2263a54661bc",
+      "snippet": "大阪のグルメ情報・お店探しならお得なクーポン満載の24時間ネット予約サイトデート用のオシャレなレストランから宴会用の居 …"
+    },
+    {
+      "title": "スタイリストから探す - ホットペッパービューティー",
+      "url": "https://beauty.hotpepper.jp/doc/al/ocn/stylist.html?msockid=0faa35b2a43860102c9f2263a54661bc",
+      "snippet": "なかなか気の合うスタイリストに出会えない…そんな時は「スタイリスト検索」で気になるスタイリストをチェック！ スタイリス …"
+    },
+    {
+      "title": "Multimodal AI and Vision-Language Models 2026 | Zylos Research",
+      "url": "https://zylos.ai/research/2026-01-13-multimodal-ai-vision-language-models/",
+      "snippet": "Multimodal AI has evolved from experimental technology to production-ready infrastructure in 2026. Vision-Language Models (VLMs) now interpret images, videos, documents, and UI interfaces with near-human accuracy, powering applications from ..."
+    }
+  ]
+}

@@ -4,8 +4,8 @@
   "slug": "d21wcxz21-myawesomemodel-testrepo",
   "author": "D21WCXZ21",
   "url": "https://huggingface.co/D21WCXZ21/MyAwesomeModel-TestRepo",
-  "created_at": "2026-09-09T13:06:29.000Z",
-  "updated_at": "2026-09-09T13:06:36.000Z",
+  "created_at": "2026-09-11T03:38:15.000Z",
+  "updated_at": "2026-09-11T03:39:20.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 327,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-11T03:09:18.887Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": []
 }

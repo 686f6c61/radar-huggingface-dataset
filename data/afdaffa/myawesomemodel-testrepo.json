@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "afdaffa/MyAwesomeModel-TestRepo",
+  "slug": "afdaffa-myawesomemodel-testrepo",
+  "author": "afdaffa",
+  "url": "https://huggingface.co/afdaffa/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-11T22:15:50.000Z",
+  "updated_at": "2026-09-11T22:29:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "搜索结果_山河令晋王什么时候下线 - 百度知道",
+      "url": "https://zhidao.baidu.com/index/?word=%E5%B1%B1%E6%B2%B3%E4%BB%A4%E6%99%8B%E7%8E%8B%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E4%B8%8B%E7%BA%BF&step=1",
+      "snippet": "Jan 28, 2025 · 《山河令》中晋王的结局如下：晋王下场惨败。 他为了掌控天下霸权，不惜一切代价，甚至想和赵敬联手拿到琉璃甲开 …"
+    },
+    {
+      "title": "山河令晋王结局是什么 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1060108614825870979.html",
+      "snippet": "Apr 18, 2025 · 《山河令》中晋王的结局是下场惨败。 具体来说： 晋王计划落空：晋王为了掌控天下霸权，不惜动了武库的念头，并 …"
+    },
+    {
+      "title": "山河令晋王结局是什么 山河令晋王下场怎么样_伊秀经验",
+      "url": "https://m.yxlady.com/jingyan/876674.shtml",
+      "snippet": "Apr 6, 2021 · 1、《山河令》晋王下场惨败，为了能掌控天下霸权，晋王甚至动了武库的念头，他准备和赵敬联手拿到琉璃甲开启武库 …"
+    },
+    {
+      "title": "山河令全集剧情_周子舒_晋王_山庄",
+      "url": "https://www.sohu.com/a/957344995_122380599",
+      "snippet": "Nov 23, 2025 · 周子舒回到空荡荡的四季山庄，心里百感交集，十年前他带着81名兄弟来到晋州，现在只剩下他和毕长风两个人，毕长 …"
+    },
+    {
+      "title": "《山河令》大结局：晋王成功上位？蝎王的亲生母亲竟是她",
+      "url": "https://www.sohu.com/a/583894774_121370652",
+      "snippet": "Sep 10, 2022 · 当耽改电视剧捧红了一个又一个顶流时，业界投资方便将目光放在了双男主影视剧中，从之前的《陈情令》到如今的《 …"
+    }
+  ]
+}

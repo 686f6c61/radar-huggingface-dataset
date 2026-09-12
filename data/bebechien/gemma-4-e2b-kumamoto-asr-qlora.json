@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "bebechien/gemma-4-E2B-kumamoto-asr-qlora",
+  "slug": "bebechien-gemma-4-e2b-kumamoto-asr-qlora",
+  "author": "bebechien",
+  "url": "https://huggingface.co/bebechien/gemma-4-E2B-kumamoto-asr-qlora",
+  "created_at": "2026-09-12T00:58:56.000Z",
+  "updated_at": "2026-09-12T00:59:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "gemma4",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 225496872,
+  "storage_human": "225 MB",
+  "base_model": "unsloth/gemma-4-e2b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Câmara Municipal de Paredes",
+      "url": "https://www.cm-paredes.pt/",
+      "snippet": "Disponibiliza informação sobre eventos, notícias, turismo, cultura, desporto, serviços, documentos, contactos, organograma do …"
+    },
+    {
+      "title": "Paredes – Wikipédia, a enciclopédia livre",
+      "url": "https://pt.wikipedia.org/wiki/Paredes",
+      "snippet": "Paredes é uma cidade portuguesa localizada na sub-região da Área Metropolitana do Porto, pertencendo à região do Norte e ao …"
+    },
+    {
+      "title": "CM Paredes / Turismo",
+      "url": "https://www.cm-paredes.pt/pages/394",
+      "snippet": "Saúde Pública Veterinária e Proteção Animal. Notícias."
+    },
+    {
+      "title": "Paredes, Portugal - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Paredes,_Portugal",
+      "snippet": "Currently, Paredes Municipality contains four cities: Paredes, Rebordosa, São Salvador de Lordelo and Gandra, being the …"
+    },
+    {
+      "title": "Leandro Paredes - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Leandro_Paredes",
+      "snippet": "Leandro Daniel Paredes (Spanish pronunciation: [leˈandɾo paˈɾeðes]; born 29 June 1994) is an Argentine professional footballer who …"
+    }
+  ]
+}

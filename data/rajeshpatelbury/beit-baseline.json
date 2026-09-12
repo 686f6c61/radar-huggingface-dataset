@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rajeshpatelbury/beit-baseline",
+  "slug": "rajeshpatelbury-beit-baseline",
+  "author": "rajeshpatelbury",
+  "url": "https://huggingface.co/rajeshpatelbury/beit-baseline",
+  "created_at": "2026-09-11T21:03:56.000Z",
+  "updated_at": "2026-09-11T21:04:01.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CONy 2027 Congress | April 1-3, 2027 | Budapest, Hungary",
+      "url": "https://cony.comtecmed.com/",
+      "snippet": "We are delighted to invite you to the 21ˢᵗ World Congress on Controversies in Neurology (CONy), taking place on April 1–3, 2027, in …"
+    },
+    {
+      "title": "Edgardo Reich - CONy 2027 Congress | April 1-3, 2027 | Budapest, …",
+      "url": "http://cony.comtecmed.com/faculty/edgardo-reich/",
+      "snippet": "Home » Faculty » Edgardo Reich Edgardo Reich"
+    },
+    {
+      "title": "Timetable 2026 - CONy 2027 Congress | April 1-3, 2027 | Budapest, …",
+      "url": "https://cony.comtecmed.com/timeable/timetable-2026/",
+      "snippet": "Click here to view the preliminary timetable Updated as of 02.3.26"
+    },
+    {
+      "title": "Mavridis, Theodoros - CONy 2027 Congress | April 1-3, 2027 | Budapest ...",
+      "url": "http://cony.comtecmed.com/faculty/mavridis-theodoros/",
+      "snippet": "Theodoros Mavridis, MD, PhD, is a Consultant Neurologist – Headache and Stroke Specialist currently based in Dublin, Ireland. He …"
+    },
+    {
+      "title": "CONy 2021 - CONy 2027 Congress | April 1-3, 2027 | Budapest, Hungary",
+      "url": "https://cony.comtecmed.com/congresses/cony-2021/",
+      "snippet": "Join us for the 15th World Congress on Controversies in Neurology (CONy Virtual), an exclusive platform for international experts to …"
+    }
+  ]
+}

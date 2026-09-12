@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "zehen8716/janvi-lora",
+  "slug": "zehen8716-janvi-lora",
+  "author": "zehen8716",
+  "url": "https://huggingface.co/zehen8716/janvi-lora",
+  "created_at": "2026-09-11T19:33:32.000Z",
+  "updated_at": "2026-09-11T21:55:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "diffusers-training",
+    "lora",
+    "krea2",
+    "krea2-diffusers",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1343720434,
+  "storage_human": "1.3 GB",
+  "base_model": "krea/Krea-2-Turbo, krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deinstallation von Avira für Windows – Offizieller Avira Support ...",
+      "url": "https://support.avira.com/hc/de/articles/360003162153-Deinstallation-von-Avira-f%C3%BCr-Windows",
+      "snippet": "Die Vorgehensweise zum Deinstallieren des Produkts hängt von Ihrem Betriebssystem ab.Bitte wählen Sie die zum Betriebssystem …"
+    },
+    {
+      "title": "Envahissement par pop up avast [Résolu] - Forum Virus",
+      "url": "https://forums.commentcamarche.net/forum/affich-38001816-envahissement-par-pop-up-avast",
+      "snippet": "Feb 19, 2024 · Bonjour, Mon écran est fréquemment envahit de pop up AVAST, que je ne peux supprimer sauf en redémarrant le …"
+    },
+    {
+      "title": "Uninstallation of Avira for Windows",
+      "url": "https://support.avira.com/hc/en-us/articles/360003162153-Uninstallation-of-Avira-for-Windows",
+      "snippet": "The procedure to uninstall the program differs depending on the operating system you are using. Please select the instructions …"
+    },
+    {
+      "title": "Aktualisieren Sie veraltete Software - Avira",
+      "url": "https://support.avira.com/hc/de/articles/360003070217-Aktualisieren-Sie-veraltete-Software",
+      "snippet": "Software hat einen kurzen Lebenszyklus und benötigt regelmäßige Updates, um sich in neue Anwendungen zu integrieren und auf …"
+    },
+    {
+      "title": "Unterstützt Avira Antivirus auch Tablet-Geräte?",
+      "url": "https://support.avira.com/hc/de/articles/360000272957-Unterst%C3%BCtzt-Avira-Antivirus-auch-Tablet-Ger%C3%A4te",
+      "snippet": "Ja, Avira Antivirus für Android unterstützt auch Tablet-Geräte ab Android 9.0. Avira Antivirus Security ist für den Einsatz auf den …"
+    }
+  ]
+}

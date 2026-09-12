@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/tam-taml-10mb-after-ppt-Dp-10mb-ckpt500_seed455",
+  "slug": "fpadovani-tam-taml-10mb-after-ppt-dp-10mb-ckpt500_seed455",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/tam-taml-10mb-after-ppt-Dp-10mb-ckpt500_seed455",
+  "created_at": "2026-09-11T18:47:45.000Z",
+  "updated_at": "2026-09-11T18:58:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:fpadovani/tam-taml-10mb-ppt-Dp-10mb_seed455",
+    "base_model:finetune:fpadovani/tam-taml-10mb-ppt-Dp-10mb_seed455",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 862015330,
+  "storage_human": "862 MB",
+  "base_model": "fpadovani/tam-taml-10mb-ppt-Dp-10mb_seed455",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Télécharger et installer Firefox sous Windows | Assistance de Mozilla",
+      "url": "https://support.mozilla.org/fr/kb/telecharger-installer-firefox-windows?redirect=no",
+      "snippet": "Oct 30, 2021 · REDIRECT Comment installer Firefox sous Windows Partagez cet article : https://mzl.la/3Qw0pIN Ces personnes ont …"
+    },
+    {
+      "title": "Firefox auf die neueste Version aktualisieren | Hilfe zu Firefox",
+      "url": "https://support.mozilla.org/de/kb/firefox-auf-die-letzte-version-aktualisieren",
+      "snippet": "Firefox aktualisieren Klicken Sie auf der rechten Seite der Firefox-Symbolleiste auf die Menüschaltfläche , um das Menü zu öffnen. …"
+    },
+    {
+      "title": "如何看待北京火狐关闭及 Firefox 账户服务终止？ - 知乎",
+      "url": "https://www.zhihu.com/question/1932984295514964671",
+      "snippet": "Firefox火狐中文官网将停止运营 7月28日，北京谋智火狐信息技术有限公司发布关于Firefox在中国持续运营，但北京火狐关闭及Firefox …"
+    },
+    {
+      "title": "如何优雅地使用 Firefox？ - 知乎",
+      "url": "https://www.zhihu.com/question/21285861",
+      "snippet": "Firefox简易教程 Firefox（又称火狐浏览器）是一款开源免费的现代浏览器，以自由、安全、隐私防护等为特色。本教程旨在帮助读者 …"
+    },
+    {
+      "title": "Firefox downloaden en installeren in Windows | Hulp voor Firefox",
+      "url": "https://support.mozilla.org/nl/kb/firefox-downloaden-en-installeren-windows",
+      "snippet": "Firefox op uw computer installeren: Bezoek deze Firefox-downloadpagina in een willekeurige browser, zoals Edge. Klik op de knop …"
+    }
+  ]
+}

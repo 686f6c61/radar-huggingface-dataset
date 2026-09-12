@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "arianraje/qwen3-4b-gdn-hybrid-teacher-kd-4k-200m",
+  "slug": "arianraje-qwen3-4b-gdn-hybrid-teacher-kd-4k-200m",
+  "author": "arianraje",
+  "url": "https://huggingface.co/arianraje/qwen3-4b-gdn-hybrid-teacher-kd-4k-200m",
+  "created_at": "2026-09-11T18:37:08.000Z",
+  "updated_at": "2026-09-11T19:03:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_next",
+    "text-generation",
+    "qwen3",
+    "gated-deltanet",
+    "distillation",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4546819904,
+  "parameters_human": "4.55B",
+  "storage_bytes": 9105111446,
+  "storage_human": "9.1 GB",
+  "base_model": "Qwen/Qwen3-4B, arianraje/qwen3-4b-gdn-hybrid-stage2b-kd",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign in - Google Drive",
+      "url": "https://drive.google.com/drive/",
+      "snippet": "Access Google Drive with a Google account (for personal use) or Google Workspace account (for business use)."
+    },
+    {
+      "title": "Google Chrome – Download the fast, secure browser from Google",
+      "url": "https://www.google.com/intl/en_uk/chrome/",
+      "snippet": "Get more done with the new Google Chrome. A more simple, secure and faster web browser than ever, with Google’s smarts built in. …"
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/login?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "Accedi - Google Drive",
+      "url": "https://drive.google.com/drive/my-drive?hl=it",
+      "snippet": "Accedi a Google Drive con un Account Google (per uso personale) o un account Google Workspace (per uso professionale)."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://classroom.google.com/",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
+    }
+  ]
+}

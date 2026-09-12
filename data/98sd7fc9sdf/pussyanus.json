@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "98sd7fc9sdf/pussyanus",
+  "slug": "98sd7fc9sdf-pussyanus",
+  "author": "98sd7fc9sdf",
+  "url": "https://huggingface.co/98sd7fc9sdf/pussyanus",
+  "created_at": "2026-09-12T01:35:50.000Z",
+  "updated_at": "2026-09-12T01:36:57.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:ponpoke/flux2-klein-9b-uncensored-text-encoder",
+    "base_model:adapter:ponpoke/flux2-klein-9b-uncensored-text-encoder",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77605719,
+  "storage_human": "78 MB",
+  "base_model": "ponpoke/flux2-klein-9b-uncensored-text-encoder",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Die Wall Street hat die Hoffnung auf ein schnelles Ende des weltweiten ...",
+      "url": "https://www.businessinsider.de/wirtschaft/oel-wall-street-rechnet-nicht-mehr-mit-einem-schnellen-ende-des-schocks/",
+      "snippet": "1 day ago · Der Iran-Krieg sorgt für neue Unsicherheit. Analysten der Wall Street rechnen mit stark steigenden Ölpreisen und Folgen …"
+    },
+    {
+      "title": "Hoffnung auf Kriegsende gibt Wall Street Auftrieb",
+      "url": "https://www.n-tv.de/wirtschaft/Hoffnung-auf-Kriegsende-gibt-Wall-Street-Auftrieb-id30449909.html",
+      "snippet": "Mar 9, 2026 · Die morgendliche Panik wegen des hohen Ölpreises weicht bis zum Abend einer Hoffnung auf ein schnelles Ende des …"
+    },
+    {
+      "title": "Wall Street Futures stabil dank Hoffnung auf baldiges Ende des …",
+      "url": "https://ch.marketscreener.com/boerse-nachrichten/wall-street-futures-steigen-in-der-hoffnung-auf-ein-baldiges-ende-des-nahost-konflikts-ce7e5fded188f427",
+      "snippet": "Mar 10, 2026 · Die US-Aktienindex-Futures zeigten sich am Dienstag stabil. Nach den Äußerungen von Präsident Donald Trump zum …"
+    },
+    {
+      "title": "Wall-Street-Futures steigen: Hoffnung auf baldiges Ende des Nahost ...",
+      "url": "https://www.aktien.news/wall-street-futures-steigen-hoffnung-auf-baldiges-ende-des-nahost-konflikts",
+      "snippet": "Mar 10, 2026 · Die US-Aktienindex-Futures haben am Dienstag leicht zugelegt. Auslöser war die Hoffnung der Anleger auf eine …"
+    },
+    {
+      "title": "Wall Street ignoriert den Öl-Schock – noch",
+      "url": "https://finanzmarktwelt.de/wall-street-ignoriert-den-oel-schock-noch-401877/",
+      "snippet": "2 days ago · Die Wall Street bleibt trotz steigender Ölpreise erstaunlich stabil. Doch beim S&P 500 wächst vor wichtigen Ereignissen …"
+    }
+  ]
+}

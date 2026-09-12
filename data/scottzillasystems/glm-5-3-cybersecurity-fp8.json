@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "ScottzillaSystems/GLM-5.3-CYBERSECURITY-FP8",
+  "slug": "scottzillasystems-glm-5-3-cybersecurity-fp8",
+  "author": "ScottzillaSystems",
+  "url": "https://huggingface.co/ScottzillaSystems/GLM-5.3-CYBERSECURITY-FP8",
+  "created_at": "2026-09-11T22:20:02.000Z",
+  "updated_at": "2026-09-11T22:20:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "ru",
+    "sr",
+    "hi",
+    "fr",
+    "es",
+    "ar",
+    "ko",
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "glm_moe_dsa",
+    "abliterated",
+    "crack",
+    "refusal-removed",
+    "domain-specific",
+    "cybersecurity",
+    "offensive-security",
+    "red-team",
+    "pentest",
+    "glm",
+    "moe",
+    "fp8",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "ru",
+    "sr",
+    "hi",
+    "fr",
+    "es",
+    "ar",
+    "ko",
+    "ja",
+    "base_model:JANGQ-AI/GLM-5.3-FP8",
+    "base_model:quantized:JANGQ-AI/GLM-5.3-FP8",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 755663574885,
+  "storage_human": "755.7 GB",
+  "base_model": "zai-org/GLM-5.3, JANGQ-AI/GLM-5.3-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home [www.iplt20.com]",
+      "url": "https://www.iplt20.com/",
+      "snippet": "Jun 18, 2026 · Download the official IPL App for live scores, breaking stories, match highlights, press conferences, and everything in …"
+    },
+    {
+      "title": "All News - IPLT20",
+      "url": "https://www.iplt20.com/news",
+      "snippet": "May 26, 2026 · Official IPL website All Categories All Categories News Match Reports Press Releases All Seasons All Seasons 2026 …"
+    },
+    {
+      "title": "Indian Premier League Official Website -2024",
+      "url": "https://www.iplt20.com/en/stats/2020",
+      "snippet": "Indian Premier League Official Website -2024 ... Redirecting..."
+    },
+    {
+      "title": "TATA IPL 2026, Match 30: GT vs MI – Match Report - IPLT20",
+      "url": "https://www.iplt20.com/news/article/tata-ipl-2026-match-30-gt-vs-mi-match-report",
+      "snippet": "Apr 20, 2026 · The Mumbai Indians (MI) snapped their four-match losing streak in emphatic fashion, thrashing the Gujarat Titans …"
+    },
+    {
+      "title": "Sunrisers Hyderabad - IPLT20",
+      "url": "https://www.iplt20.com/teams/sunrisers-hyderabad",
+      "snippet": "TATA IPL 2026, Match 63: CSK vs SRH – Match Report"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "geonmin-kim/Cosmos3-Edge-Policy-DROID-FastWAM-K2-sim",
+  "slug": "geonmin-kim-cosmos3-edge-policy-droid-fastwam-k2-sim",
+  "author": "geonmin-kim",
+  "url": "https://huggingface.co/geonmin-kim/Cosmos3-Edge-Policy-DROID-FastWAM-K2-sim",
+  "created_at": "2026-09-11T08:22:22.000Z",
+  "updated_at": "2026-09-12T01:27:14.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "vla",
+    "cosmos3",
+    "droid",
+    "fastwam",
+    "isaacsim",
+    "base_model:nvidia/Cosmos3-Edge-Policy-DROID",
+    "base_model:finetune:nvidia/Cosmos3-Edge-Policy-DROID",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27953389988,
+  "storage_human": "28.0 GB",
+  "base_model": "nvidia/Cosmos3-Edge-Policy-DROID",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "75 Easy Ground Beef Recipes for Dinner Tonight | Food Network",
+      "url": "https://www.foodnetwork.com/recipes/photos/ground-beef-recipes",
+      "snippet": "Aug 14, 2026 · Browse 75 easy ground beef recipes from Food Network. We’ve got ideas for burgers, meatloaf, tacos, chili, …"
+    },
+    {
+      "title": "Classic Meatloaf Recipe | Food Network Kitchen | Food Network",
+      "url": "https://www.foodnetwork.com/recipes/food-network-kitchen/classic-meatloaf-5484735",
+      "snippet": "Learn how to make meatloaf, how long to cook meatloaf and how to make an easy ketchup glaze for meatloaf with this classic …"
+    },
+    {
+      "title": "Beef Recipes - Food Network",
+      "url": "https://www.foodnetwork.com/topics/beef",
+      "snippet": "1 day ago · Ground-up, steak, sirloin, brisket – discover tips, tricks and recipes for any imaginable variety of beef."
+    },
+    {
+      "title": "The Best Beef Stroganoff - Food Network Kitchen",
+      "url": "https://www.foodnetwork.com/recipes/food-network-kitchen/the-best-beef-stroganoff-8051437",
+      "snippet": "Learn to make a classic beef stroganoff with our pro tips and easy step-by-step recipe. Plus, exactly which cuts of meat are best for …"
+    },
+    {
+      "title": "Beef Noodle Skillet Recipe | Ree Drummond | Food Network",
+      "url": "https://www.foodnetwork.com/recipes/ree-drummond/beef-noodle-skillet-8053162",
+      "snippet": "Heat the butter in a large skillet over medium heat. Add the onion and garlic and cook for 1 minute. Add the ground chuck and …"
+    }
+  ]
+}

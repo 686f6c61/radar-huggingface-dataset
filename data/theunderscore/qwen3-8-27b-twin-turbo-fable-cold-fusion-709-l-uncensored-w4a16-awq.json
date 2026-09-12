@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "TheUnderscore/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-W4A16-AWQ",
+  "slug": "theunderscore-qwen3-8-27b-twin-turbo-fable-cold-fusion-709-l-uncensored-w4a16-awq",
+  "author": "TheUnderscore",
+  "url": "https://huggingface.co/TheUnderscore/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-W4A16-AWQ",
+  "created_at": "2026-09-11T18:39:31.000Z",
+  "updated_at": "2026-09-11T19:13:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen",
+    "qwen3.5",
+    "qwen3.8",
+    "awq",
+    "int4",
+    "w4a16",
+    "compressed-tensors",
+    "lmdeploy",
+    "twin-turbo",
+    "heretic",
+    "uncensored",
+    "fable",
+    "davidau",
+    "finetune",
+    "conversational",
+    "base_model:DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 19567853141,
+  "storage_human": "19.6 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Brown v. Board of Education (1954) | Case, Definition, Decision, Facts ...",
+      "url": "https://www.britannica.com/event/Brown-v-Board-of-Education-of-Topeka",
+      "snippet": "Jul 20, 1998 · Brown v. Board of Education is a case in which, on May 17, 1954, the U.S. Supreme Court ruled unanimously (9–0) …"
+    },
+    {
+      "title": "Brown v. Board of Education: Impact, Facts and Legacy | HISTORY",
+      "url": "https://www.history.com/articles/brown-v-board-of-education-of-topeka",
+      "snippet": "Oct 27, 2009 · Brown v. Board of Education of Topeka was a landmark 1954 Supreme Court case in which the justices ruled …"
+    },
+    {
+      "title": "Brown v. Board of Education - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Brown_v._Board_of_Education",
+      "snippet": "The Browns and twelve other local black families in similar situations filed a class action lawsuit in U.S. federal court against the …"
+    },
+    {
+      "title": "Brown v. Board of Education – Case Background",
+      "url": "https://billofrightsinstitute.org/activities/brown-v-board-of-education-case-background/",
+      "snippet": "Nov 12, 2020 · Explore the landmark case Brown v. Board of Education, which challenged racial segregation in schools and …"
+    },
+    {
+      "title": "Brown v. Board of Education (1954) - National Archives",
+      "url": "https://www.archives.gov/milestone-documents/brown-v-board-of-education",
+      "snippet": "Mar 18, 2024 · On May 17, 1954, U.S. Supreme Court Justice Earl Warren delivered the unanimous ruling in the landmark civil rights …"
+    }
+  ]
+}

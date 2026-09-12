@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ERO26/fetal-planes-classification-custom-cnn-V2",
+  "slug": "ero26-fetal-planes-classification-custom-cnn-v2",
+  "author": "ERO26",
+  "url": "https://huggingface.co/ERO26/fetal-planes-classification-custom-cnn-V2",
+  "created_at": "2026-09-11T19:28:22.000Z",
+  "updated_at": "2026-09-11T21:26:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8483980,
+  "parameters_human": "8.5M",
+  "storage_bytes": 1934482209,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "7-Zip 官方网站怎么下载？ - 知乎",
+      "url": "https://www.zhihu.com/question/20498753",
+      "snippet": "7-Zip 是一个功能强大的工具，特别适合需要 高效压缩 和 解压缩 功能的用户。比如 IT 专业人员、软件开发者或普通用户希望节省磁 …"
+    },
+    {
+      "title": "7-Zip download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/sevenzip/",
+      "snippet": "Jan 27, 2026 · Download 7-Zip for free. A free file archiver for extremely high compression. 7-Zip is a file archiver with a high …"
+    },
+    {
+      "title": "7-Zip - Browse Files at SourceForge.net",
+      "url": "https://sourceforge.net/projects/sevenzip/files/",
+      "snippet": "7-Zip files. Full list of files for 7-Zip, A free file archiver for extremely high compression"
+    },
+    {
+      "title": "有什么好的ed2k下载器？ - 知乎",
+      "url": "https://www.zhihu.com/question/63863543",
+      "snippet": "骨灰级软件，amule或者emule等，这两个都是20年前的软件，软件倒是还能运行，但是可能连接不了；如果能连接上的话，需要解 …"
+    },
+    {
+      "title": "Avidemux - Downloads",
+      "url": "https://avidemux.sourceforge.net/download.html",
+      "snippet": "Misc Nightly automated builds available on avidemux.org. Sourceforge mirror. Misc The binaries available here are freely …"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "dburner/Qwen3.5-4B-Q8_0-FlashNgram-NativeBridgeV3",
+  "slug": "dburner-qwen3-5-4b-q8_0-flashngram-nativebridgev3",
+  "author": "dburner",
+  "url": "https://huggingface.co/dburner/Qwen3.5-4B-Q8_0-FlashNgram-NativeBridgeV3",
+  "created_at": "2026-09-06T21:53:56.000Z",
+  "updated_at": "2026-09-11T22:10:26.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "qwen",
+    "qwen3.5",
+    "n-gram",
+    "code",
+    "mathematics",
+    "experimental",
+    "research",
+    "en",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 40,
+  "trending_score": 0,
+  "parameters": 55572574212,
+  "parameters_human": "55.57B",
+  "storage_bytes": 33502676740,
+  "storage_human": "33.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tom Welling - Tom Convention Appearances: Salute To Smallville 2025 ...",
+      "url": "https://www.fanforum.com/f116/tom-convention-appearances-salute-smallville-2025-%7C-chicago-illinois-%7C-september-13th-14th-2025-a-63286386/",
+      "snippet": "« Previous Thread | Next Thread » Tom Welling Fans, FYeah Smallville, Tom Welling Pakistan Show Printable Version Email this Page"
+    },
+    {
+      "title": "Tom Welling - Tom’s Social Media Thread #6: We're Here For Even …",
+      "url": "https://www.fanforum.com/f116/tom%E2%80%99s-social-media-thread-6-were-here-even-more-frequent-tom-posts-63288764/index2.html",
+      "snippet": "Apr 9, 2026 · Met Tom Welling for first time at LFCC in 2018: He called me \"so sweet\" | Met Tom again with other Smallville cast at …"
+    },
+    {
+      "title": "Tom Welling - Samuel Campbell [The Winchesters] Thread #1: We're …",
+      "url": "https://www.fanforum.com/f116/samuel-campbell-%5B-winchesters%5D-thread-1-were-very-excited-see-tom-appear-supernatural-prequel-series-63266120/index18.html",
+      "snippet": "Fan Forum> Male Celebrities> Tom Welling> Samuel Campbell [The Winchesters] Thread #1: We're very excited to see Tom appear …"
+    },
+    {
+      "title": "Tom Welling - Tom Convention Appearances: Wales Comic Con",
+      "url": "https://www.fanforum.com/f116/tom-convention-appearances-wales-comic-con-telford-takeover-england-%7c-december-7th-8th-2019-a-63233021/",
+      "snippet": "Dec 10, 2019 · Joined: Jul 2010 Posts: 103,592 Tom Convention Appearances: Wales Comic Con - Telford Takeover, England | …"
+    },
+    {
+      "title": "Tom Welling - Tom Convention Appearances: Fan Expo Canada, …",
+      "url": "https://www.fanforum.com/f116/tom-convention-appearances-fan-expo-canada-toronto-%7C-august-22nd-24th-2025-a-63286104/",
+      "snippet": "Met Tom Welling for first time at LFCC in 2018: He called me \"so sweet\" | Met Tom again with other Smallville cast at WCC in 2019 | …"
+    }
+  ]
+}

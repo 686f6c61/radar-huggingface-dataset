@@ -5,7 +5,7 @@
   "author": "leomaurodesenv",
   "url": "https://huggingface.co/leomaurodesenv/bert-base-uncased-nvidia-aegis-v1-augmented",
   "created_at": "2026-09-11T01:58:41.000Z",
-  "updated_at": "2026-09-11T08:54:24.000Z",
+  "updated_at": "2026-09-11T16:44:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 109483778,
   "parameters_human": "109.5M",
-  "storage_bytes": 7883260497,
-  "storage_human": "7.9 GB",
+  "storage_bytes": 14014681233,
+  "storage_human": "14.0 GB",
   "base_model": "google-bert/bert-base-uncased",
   "formats": [
     "safetensors"

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "litillabs/litil-financing-review-9b",
+  "slug": "litillabs-litil-financing-review-9b",
+  "author": "litillabs",
+  "url": "https://huggingface.co/litillabs/litil-financing-review-9b",
+  "created_at": "2026-09-11T23:34:58.000Z",
+  "updated_at": "2026-09-11T23:35:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "litil-labs",
+    "legal",
+    "contract-review",
+    "lora",
+    "experimental",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 136415303,
+  "storage_human": "136 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nikmati Sensasi Bakso Lezat dengan Enhancer Rasa Terbaik di",
+      "url": "https://www.lemon8-app.com/@afidamadina/7587365656153981461?region=id",
+      "snippet": "Pengalaman makan bakso di Bakso Cak’Eb Pasuruan dengan pemandangan yang menenangkan membuat cita rasa bakso iga dan …"
+    },
+    {
+      "title": "10 Rekomendasi Bumbu Bakso Instan Terbaik - Tokopedia",
+      "url": "https://www.tokopedia.com/blog/top-bumbu-bakso-instan-terbaik-hby/",
+      "snippet": "Mar 8, 2025 · Berikut adalah 10 rekomendasi bumbu bakso instan terbaik yang praktis dan lezat. Dengan bumbu ini, kamu bisa …"
+    },
+    {
+      "title": "10 Rekomendasi Bumbu Kuah Bakso Instan Terbaik Pilihan untuk Rasa …",
+      "url": "https://discover.qoo10.co.id/98066/10-rekomendasi-bumbu-kuah-bakso-instan-terbaik-pilihan-untuk-rasa-lezat-di-rumah/",
+      "snippet": "Nov 25, 2025 · Berikut sepuluh rekomendasi bumbu kuah bakso instan yang banyak diulas positif oleh konsumen dan mudah …"
+    },
+    {
+      "title": "10 Rekomendasi Bumbu Kuah Bakso Instan Terbaik (Terbaru Tahun …",
+      "url": "https://id.my-best.com/137185",
+      "snippet": "Melalui artikel ini, kami akan memberikan tips memilih bumbu kuah bakso instan yang enak. Kami juga akan merekomendasikan …"
+    },
+    {
+      "title": "9 Bakso Terbaik yang Lezat dan Praktis Disajikan - Alodokter",
+      "url": "https://www.alodokter.com/bakso-terbaik-yang-lezat-dan-praktis-disajikan",
+      "snippet": "Jul 7, 2026 · Dibuat dari ikan pilihan, bakso terbaik ini memiliki tekstur kenyal dengan rasa gurih yang ringan sehingga cocok …"
+    }
+  ]
+}

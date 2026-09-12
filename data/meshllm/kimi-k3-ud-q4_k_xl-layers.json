@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "meshllm/Kimi-K3-UD-Q4_K_XL-layers",
+  "slug": "meshllm-kimi-k3-ud-q4_k_xl-layers",
+  "author": "meshllm",
+  "url": "https://huggingface.co/meshllm/Kimi-K3-UD-Q4_K_XL-layers",
+  "created_at": "2026-09-09T08:12:11.000Z",
+  "updated_at": "2026-09-12T00:12:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 1807,
+  "trending_score": 0,
+  "parameters": 1170439392,
+  "parameters_human": "1.17B",
+  "storage_bytes": 1512934473536,
+  "storage_human": "1512.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Configuring your environment for Sign in with Apple | Apple …",
+      "url": "https://developer.apple.com/documentation/signinwithapple/configuring-your-environment-for-sign-in-with-apple",
+      "snippet": "Authenticate users with your web service by associating an existing app with a Services ID and private key."
+    },
+    {
+      "title": "clientId | Apple Developer Documentation",
+      "url": "https://developer.apple.com/documentation/signinwithapplejs/clientconfigi/clientid",
+      "snippet": "Discussion You must obtain a client identifier from WWDR before you can use Sign In with Apple."
+    },
+    {
+      "title": "Apple - Better Auth",
+      "url": "https://better-auth.com/docs/authentication/apple",
+      "snippet": "To use Apple sign in, you need a client ID, Team ID, Key ID, and private key. You can get them from the Apple Developer Portal, …"
+    },
+    {
+      "title": "Add Apple for customer sign-in - Microsoft Entra External ID",
+      "url": "https://learn.microsoft.com/en-us/entra/external-id/customers/how-to-apple-federation-customers",
+      "snippet": "Apr 17, 2026 · After you add Apple as one of your application's sign-in options, customers can sign in to Microsoft Entra External ID …"
+    },
+    {
+      "title": "Set up sign-up and sign-in with an Apple ID - Azure AD B2C",
+      "url": "https://learn.microsoft.com/en-us/azure/active-directory-b2c/identity-provider-apple-id",
+      "snippet": "To enable users to sign in using an Apple ID, you need to add the Apple identity provider to a user flow. Sign in with Apple can be …"
+    }
+  ]
+}

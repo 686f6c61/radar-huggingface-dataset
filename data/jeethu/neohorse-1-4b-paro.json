@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Jeethu/NeoHorse-1-4B-PARO",
+  "slug": "jeethu-neohorse-1-4b-paro",
+  "author": "Jeethu",
+  "url": "https://huggingface.co/Jeethu/NeoHorse-1-4B-PARO",
+  "created_at": "2026-09-11T23:07:27.000Z",
+  "updated_at": "2026-09-11T23:07:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "agentic",
+    "tool-use",
+    "coding",
+    "reasoning",
+    "instruction-following",
+    "conversational",
+    "arxiv:2511.10645",
+    "base_model:TokenRhythm/NeoHorse-1-4B",
+    "base_model:quantized:TokenRhythm/NeoHorse-1-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "paroquant",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1127635968,
+  "parameters_human": "1.13B",
+  "storage_bytes": 3167752487,
+  "storage_human": "3.2 GB",
+  "base_model": "TokenRhythm/NeoHorse-1-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OmeTV Video Chat — Omegle Random Cam Chat Alternative 2026",
+      "url": "https://ome.tv/",
+      "snippet": "Discover Omegle Alternative to meet new people, make friends, or even find love. OmeTV is a random video chat, offering a …"
+    },
+    {
+      "title": "OmeTV – Omegle Alternative for Random Webcam Chats",
+      "url": "https://ome.tv/why-ometv/",
+      "snippet": "Discover Omegle Alternative for random cam chats. Find out why users choose OmeTV to talk to strangers, meet people online and …"
+    },
+    {
+      "title": "OmeTV Video Chat Rules and Regulations",
+      "url": "https://ome.tv/rules/",
+      "snippet": "Enjoy a safe and friendly experience on OmeTV’s live video chat platform. Follow our rules to engage in anonymous chat, meet new …"
+    },
+    {
+      "title": "Support - OmeTV",
+      "url": "https://ome.tv/support/",
+      "snippet": "© 2015-2026 Ome.TV, Bad Kitty’s Dad, LDA r. José Dias Coelho 10A, 2855-173, Corroios, PT"
+    },
+    {
+      "title": "OmeTV FAQ: Random Video Chat to Meet New People",
+      "url": "https://ome.tv/faq/",
+      "snippet": "Get answers to FAQ about OmeTV, a popular platform to chat with strangers and meet new people. Discover tips to enjoy safe and …"
+    }
+  ]
+}

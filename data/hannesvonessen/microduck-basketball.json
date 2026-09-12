@@ -5,7 +5,7 @@
   "author": "HannesVonEssen",
   "url": "https://huggingface.co/HannesVonEssen/microduck-basketball",
   "created_at": "2026-09-07T11:33:14.000Z",
-  "updated_at": "2026-09-11T02:40:43.000Z",
+  "updated_at": "2026-09-11T09:41:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 5,
-  "downloads_30d": 36,
+  "downloads_30d": 110,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

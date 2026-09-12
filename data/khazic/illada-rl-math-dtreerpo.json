@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "khazic/illada-rl-math-dtreerpo",
+  "slug": "khazic-illada-rl-math-dtreerpo",
+  "author": "khazic",
+  "url": "https://huggingface.co/khazic/illada-rl-math-dtreerpo",
+  "created_at": "2026-09-03T03:08:41.000Z",
+  "updated_at": "2026-09-11T23:00:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4048506968,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Earth Pro installeren en verwijderen",
+      "url": "https://support.google.com/earth/answer/21955?hl=nl",
+      "snippet": "Google Earth Pro werkt met de nieuwste versies van de Linux-distributies Ubuntu en Fedora. Google Earth Pro werkt mogelijk ook …"
+    },
+    {
+      "title": "Google Earth Help",
+      "url": "https://support.google.com/earth/?hl=en",
+      "snippet": "Official Google Earth Help Center where you can find tips and tutorials on using Google Earth and other answers to frequently asked …"
+    },
+    {
+      "title": "Is there a free way to import property boundary lines into Google earth ...",
+      "url": "https://www.reddit.com/r/gis/comments/zfarez/is_there_a_free_way_to_import_property_boundary/",
+      "snippet": "Dec 7, 2022 · Do you NOT have property lines and are wishing to ADD property lines for free to google earth. If so that is a different …"
+    },
+    {
+      "title": "Google Earth silent installation.. : r/ApplicationPackaging - Reddit",
+      "url": "https://www.reddit.com/r/ApplicationPackaging/comments/174fj3x/google_earth_silent_installation/",
+      "snippet": "Oct 10, 2023 · Google Earth silent installation.. Hi! I'm trying to install newest Google Earth Pro version but im unable to use any …"
+    },
+    {
+      "title": "谷歌地球 最新Google Earth v7.3.2.5776 专业版 - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/thread-1093385-1-1.html",
+      "snippet": "Jan 20, 2020 · Google Earth – 是一款由 Google 开发的流行客户端软件，以高分辨率卫星图像为基础，创建地球的三维模型。使用真 …"
+    }
+  ]
+}

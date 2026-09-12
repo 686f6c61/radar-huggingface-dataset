@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "logits/sana_rwm_policy_from_pretrained_robodojo_320px_1e-4_cosine_clip1_2node",
+  "slug": "logits-sana_rwm_policy_from_pretrained_robodojo_320px_1e-4_cosine_clip1_2node",
+  "author": "logits",
+  "url": "https://huggingface.co/logits/sana_rwm_policy_from_pretrained_robodojo_320px_1e-4_cosine_clip1_2node",
+  "created_at": "2026-09-10T03:43:10.000Z",
+  "updated_at": "2026-09-12T02:49:04.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "sana",
+  "languages": [],
+  "tags": [
+    "sana",
+    "rwm",
+    "robot-policy",
+    "resume-bundle",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4397359943886,
+  "storage_human": "4397.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lago di Como - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Lago_di_Como",
+      "snippet": "Il lago di Como è un bifido fiordo naturale profondamente scavato nei versanti montuosi delle prealpi comasche e bergamasche che …"
+    },
+    {
+      "title": "Lago di Como: cosa vedere, i borghi più belli e come organizzarsi",
+      "url": "https://www.viaggiapiccoli.com/lago-di-como-cosa-vedere/",
+      "snippet": "Dec 30, 2025 · Cosa vedere sul Lago di Como, quali borghi scegliere e come organizzare il viaggio tra gite in barca, ville storiche e …"
+    },
+    {
+      "title": "LAGO DI COMO: cosa vedere - 15 luoghi iconici da visitare",
+      "url": "https://www.tusoperator.it/lombardia/como/lago-di-como-cosa-vedere/",
+      "snippet": "Quali sono le principali cose da vedere sul Lago di Como? Ti propongo 15 luoghi imperdibili da visitare tra la sponda comasca e …"
+    },
+    {
+      "title": "Lago di Como | 15 cose da vedere sul Lago di Como - 10Cose.it",
+      "url": "https://www.10cose.it/lago-como/cosa-vedere-lago-di-como",
+      "snippet": "Una guida completa e dettagliata alle cose da fare e vedere sul Lago di Como in 1, 2 o 3 giorni. Il centro più importante è Como, la …"
+    },
+    {
+      "title": "Lago di Como: cosa vedere e consigli di viaggio",
+      "url": "https://www.inviaggioconmonica.it/lago-di-como-cosa-vedere/",
+      "snippet": "Aug 16, 2021 · Lago di Como: cosa vedere in un weekend o in una vacanza breve di 3 o 4 giorni. Borghi, ville, sentieri e consigli per …"
+    }
+  ]
+}

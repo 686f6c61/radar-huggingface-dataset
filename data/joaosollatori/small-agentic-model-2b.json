@@ -5,7 +5,7 @@
   "author": "joaosollatori",
   "url": "https://huggingface.co/joaosollatori/small-agentic-model-2b",
   "created_at": "2026-09-10T04:07:56.000Z",
-  "updated_at": "2026-09-11T02:17:15.000Z",
+  "updated_at": "2026-09-11T06:28:42.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 6,
+  "downloads_30d": 2339,
   "trending_score": 0,
   "parameters": 124439808,
   "parameters_human": "124.4M",
-  "storage_bytes": 10453700016,
-  "storage_human": "10.5 GB",
+  "storage_bytes": 12942747322,
+  "storage_human": "12.9 GB",
   "base_model": "gpt2",
   "formats": [
     "safetensors"

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "98sd7fc9sdf/moans",
+  "slug": "98sd7fc9sdf-moans",
+  "author": "98sd7fc9sdf",
+  "url": "https://huggingface.co/98sd7fc9sdf/moans",
+  "created_at": "2026-09-12T01:10:15.000Z",
+  "updated_at": "2026-09-12T01:10:21.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:ponpoke/flux2-klein-9b-uncensored-text-encoder",
+    "base_model:adapter:ponpoke/flux2-klein-9b-uncensored-text-encoder",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155132297,
+  "storage_human": "155 MB",
+  "base_model": "ponpoke/flux2-klein-9b-uncensored-text-encoder",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fabio Pizza - rețete originale, ingrediente alese",
+      "url": "https://www.fabiopizza.ro/",
+      "snippet": "Livrăm la domiciliu mâncare delicioasă, atent pregătită, din ingrediente alese. Comandă pizza, paste, salate, calzone, focaccia, …"
+    },
+    {
+      "title": "Pizza - Fabio Pizza",
+      "url": "https://www.fabiopizza.ro/Pizza",
+      "snippet": "Livrăm la domiciliu mâncare delicioasă, atent pregătită, din ingrediente alese. Comandă pizza, paste, salate, calzone, focaccia, …"
+    },
+    {
+      "title": "Fabio Pizza",
+      "url": "https://www.promotii.fabiopizza.ro/",
+      "snippet": "Comanda de minim 80 de lei, folosește codul Fabio80 și îți poți alege o pizza Fabio cadou la alegere din urmatoarele produse..."
+    },
+    {
+      "title": "Oferte - Fabio Pizza",
+      "url": "https://www.fabiopizza.ro/Promotii-Fabio-Pizza",
+      "snippet": "Livrăm la domiciliu mâncare delicioasă, atent pregătită, din ingrediente alese. Comandă pizza, paste, salate, calzone, focaccia, …"
+    },
+    {
+      "title": "Pizza Fabio - Fabio Pizza",
+      "url": "https://www.fabiopizza.ro/shop_products_item/&spid=112&defv=171",
+      "snippet": "Blat pizza ,mozarella,sos de rosii, sunca,carnati semiafumati,muschi file,masline,ardei gras,ciuperci"
+    }
+  ]
+}

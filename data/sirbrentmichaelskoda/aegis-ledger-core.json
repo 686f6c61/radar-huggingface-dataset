@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "sirbrentmichaelskoda/aegis-ledger-core",
+  "slug": "sirbrentmichaelskoda-aegis-ledger-core",
+  "author": "sirbrentmichaelskoda",
+  "url": "https://huggingface.co/sirbrentmichaelskoda/aegis-ledger-core",
+  "created_at": "2026-09-11T23:27:54.000Z",
+  "updated_at": "2026-09-11T23:30:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
+    },
+    {
+      "title": "带圈圈的序号1到30 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/248361110890276644.html",
+      "snippet": "1到20的带圈数字符号为： ①、②、③、④、⑤、⑥、⑦、⑧、⑨、⑩ ⑪、⑫、⑬、⑭、⑮、⑯、⑰、⑱、⑲、⑳ 21之后的带圈数字无法直 …"
+    },
+    {
+      "title": "24种颜色的英文缩写 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1585781051247196300.html",
+      "snippet": "Oct 31, 2023 · 24种颜色的英文缩写颜色的英文单词缩写有：1、WH、White、白色；2、BN、Brown、棕色；3、GN、Green、绿 …"
+    },
+    {
+      "title": "Seinäjoen akvaarioliikkeet? - Aqua-Web",
+      "url": "https://www.aqua-web.fi/forum/viewtopic.php?t=119207",
+      "snippet": "Dec 25, 2007 · Pikalinkit UKK Keskustelun etusivu Aqua-webin keskustelualueet Yleistä keskustelua (akvaario) Seinäjoen …"
+    }
+  ]
+}

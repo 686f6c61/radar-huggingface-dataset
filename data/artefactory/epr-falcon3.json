@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "artefactory/epr-falcon3",
+  "slug": "artefactory-epr-falcon3",
+  "author": "artefactory",
+  "url": "https://huggingface.co/artefactory/epr-falcon3",
+  "created_at": "2026-08-06T18:04:43.000Z",
+  "updated_at": "2026-09-11T23:59:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "artefactual",
+    "skops",
+    "hallucination-detection",
+    "uncertainty-estimation",
+    "text-classification",
+    "arxiv:2509.04492",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MMMMMMMMMMMMM : r/Flagrant2 - Reddit",
+      "url": "https://www.reddit.com/r/Flagrant2/comments/v7hnnv/mmmmmmmmmmmmm/",
+      "snippet": "Jun 8, 2022 · MMMMMMMMMMMMM I cant be the only one that this annoys tf out of 😂 This past episode with Joe was the worse, …"
+    },
+    {
+      "title": "MMMMMMMMMMMMM : r/MiniLadd - Reddit",
+      "url": "https://www.reddit.com/r/MiniLadd/comments/cjuxgp/mmmmmmmmmmmmm/",
+      "snippet": "MMMMMMMMMMMMM indeed Reply reply Jacoob112 Me: (misses the button at 0.01 seconds) My microwave at 2am: Reply reply …"
+    },
+    {
+      "title": "cipher - mmm mmmmmmmmm mmmmmmmmmmmmmmmm …",
+      "url": "https://puzzling.stackexchange.com/questions/105389/mmm-mmmmmmmmm-mmmmmmmmmmmmmmmm-mmmmmmmm-mmmmm-mmmmmmmmmmmmmmmmmm-mmmmmmmmmmmmmmm",
+      "snippet": "Dec 5, 2020 · Heavy credits to the other two answers. Everyone keeps saying the answer is m However, I disagree because: it …"
+    },
+    {
+      "title": "How is the word \"qua\" used? - English Language & Usage Stack …",
+      "url": "https://english.stackexchange.com/questions/8970/how-is-the-word-qua-used",
+      "snippet": "Jan 16, 2011 · Qua can usually be read as the word \"as\". It is an occasionally useful (and rarely used) link-word in English. I was just …"
+    },
+    {
+      "title": "What is the difference between metonymy and synecdoche?",
+      "url": "https://english.stackexchange.com/questions/15415/what-is-the-difference-between-metonymy-and-synecdoche",
+      "snippet": "Mar 7, 2011 · In practice, there isn't much difference: you could arguably pick just one of the terms and use it to describe both types of …"
+    }
+  ]
+}

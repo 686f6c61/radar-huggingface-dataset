@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "anushavyas/deepfake-detector-vision-kan-lstm",
+  "slug": "anushavyas-deepfake-detector-vision-kan-lstm",
+  "author": "anushavyas",
+  "url": "https://huggingface.co/anushavyas/deepfake-detector-vision-kan-lstm",
+  "created_at": "2026-09-11T20:24:13.000Z",
+  "updated_at": "2026-09-11T20:32:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 74235430,
+  "storage_human": "74 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Strava - O que é e como usar essa rede social de ciclistas",
+      "url": "https://www.pedal.com.br/strava-o-que-e-e-como-usar-essa-rede-social-de-ciclistas_texto8842.html",
+      "snippet": "Jan 8, 2015 · Já conhece o Strava ? Veja como funciona essa rede social de ciclistas que pode ajudar a te motivar e deixá-lo mais …"
+    },
+    {
+      "title": "目前好用的路书制作软件or网站有哪些? - 知乎",
+      "url": "https://www.zhihu.com/question/37087483?sort=created",
+      "snippet": "想设计一条比较长的个人化国内线路，用于搭车或自驾，不是骑行那种，目前有哪些路书制作软件或网站比较好…"
+    },
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/selection/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，提供知识共享、互动交流和个人成长机会。"
+    }
+  ]
+}

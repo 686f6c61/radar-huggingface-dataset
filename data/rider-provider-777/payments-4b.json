@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "rider-provider-777/payments-4b",
+  "slug": "rider-provider-777-payments-4b",
+  "author": "rider-provider-777",
+  "url": "https://huggingface.co/rider-provider-777/payments-4b",
+  "created_at": "2026-09-11T20:45:14.000Z",
+  "updated_at": "2026-09-11T21:23:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "code",
+    "lora",
+    "software-engineering",
+    "tinker",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 145892920,
+  "storage_human": "146 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rider: the cross-platform .NET and game development IDE from JetBrains",
+      "url": "https://www.jetbrains.com/rider/",
+      "snippet": "JetBrains Rider is my C# development tool of choice these days on both macOS and Windows. If you’re a long-standing ReSharper …"
+    },
+    {
+      "title": "Rider Online ️ Play Now on GamePix",
+      "url": "https://www.gamepix.com/play/rider-online",
+      "snippet": "Dec 28, 2020 · Rider Online is a 2D motorcycle riding game taking place in a virtual neon world where you ride using only the mouse. …"
+    },
+    {
+      "title": "Rider Online ️ Joue Maintenant sur GamePix",
+      "url": "https://www.gamepix.com/fr/play/rider-online",
+      "snippet": "Rider Online est un jeu de moto en 2D qui se déroule dans un monde virtuel néon où tu conduis en utilisant uniquement la souris. …"
+    },
+    {
+      "title": "Rider – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.ketchapp.rider&hl=fr",
+      "snippet": "Reçois des récompenses quotidiennes et débloque les 10 environnements du jeu. Compare ton meilleur score avec les joueurs du …"
+    },
+    {
+      "title": "Rider 2 - Jeu en Ligne Gratuit | Jouerjouer.com",
+      "url": "https://jouerjouer.com/jeu/rider-2/",
+      "snippet": "Perform insane stunts while you cruise through the never-ending world of Rider 2! Grab your motorcycle and start flipping to get …"
+    }
+  ]
+}

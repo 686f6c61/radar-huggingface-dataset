@@ -5,7 +5,7 @@
   "author": "Tanny03",
   "url": "https://huggingface.co/Tanny03/adapterops-intent",
   "created_at": "2026-09-11T00:47:16.000Z",
-  "updated_at": "2026-09-11T00:47:25.000Z",
+  "updated_at": "2026-09-11T05:06:43.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 25,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 123330521,
-  "storage_human": "123 MB",
+  "storage_bytes": 582318327,
+  "storage_human": "582 MB",
   "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
   "formats": [
     "safetensors"

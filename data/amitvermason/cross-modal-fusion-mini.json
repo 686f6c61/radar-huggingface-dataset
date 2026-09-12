@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "amitvermason/cross-modal-fusion-mini",
+  "slug": "amitvermason-cross-modal-fusion-mini",
+  "author": "amitvermason",
+  "url": "https://huggingface.co/amitvermason/cross-modal-fusion-mini",
+  "created_at": "2026-09-11T23:24:48.000Z",
+  "updated_at": "2026-09-11T23:24:54.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "cross-modal-fusion",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "携程旅行网:酒店预订,机票预订查询,旅游度假,商旅管理",
+      "url": "https://www.ctrip.com/",
+      "snippet": "携程旅行网是中国领先的在线旅行服务公司，向超过9000万会员提供酒店预订、酒店点评及特价酒店查询、机票预订、飞机票查询、 …"
+    },
+    {
+      "title": "美团酒店",
+      "url": "https://i.meituan.com/awp/h5/hotel/search/search.html",
+      "snippet": "美团酒店提供便捷的酒店搜索和预订服务，满足用户多样化住宿需求。"
+    },
+    {
+      "title": "Booking.com | 官网 | 优质酒店，机票，租车和住宿",
+      "url": "https://www.booking.com/index.zh-cn.html?msockid=1d2f682a873f6b9d31ae7ff886cb6aa5",
+      "snippet": "和Booking.com一起探索世界。民宿短租、酒店、机票、租车、出租车和景点钜惠等你来。无论预算是多少，总能打造优质旅行。"
+    },
+    {
+      "title": "Booking.com｜官方網站｜最佳飯店、機票、租車和住宿",
+      "url": "https://www.booking.com/index.zh-tw.html?msockid=1d2f682a873f6b9d31ae7ff886cb6aa5",
+      "snippet": "不論您預訂的是飯店、民宿或度假住所，訂房保證最低價！快來我們的網站瀏覽超過 85,000 個目的地的 間住宿選擇。"
+    },
+    {
+      "title": "【艺龙酒店预订】酒店预订官网,酒店价格查询,打折酒店预订,特价酒店 …",
+      "url": "https://www.elong.com/",
+      "snippet": "艺龙酒店频道覆盖全球110万家酒店，为您提供优质的入住体验，7*24h全天客服，帮您解决所有问题，您可以通过对比实时价格,查看 …"
+    }
+  ]
+}

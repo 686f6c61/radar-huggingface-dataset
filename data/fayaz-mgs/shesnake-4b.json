@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "fayaz-mgs/shesnake-4b",
+  "slug": "fayaz-mgs-shesnake-4b",
+  "author": "fayaz-mgs",
+  "url": "https://huggingface.co/fayaz-mgs/shesnake-4b",
+  "created_at": "2026-09-11T21:41:18.000Z",
+  "updated_at": "2026-09-11T21:43:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "qlora",
+    "coding",
+    "python",
+    "fine-tuned",
+    "en",
+    "dataset:google-research-datasets/mbpp",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14692068,
+  "storage_human": "15 MB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "María Barranco - Wikipedia, la enciclopedia libre",
+      "url": "https://es.m.wikipedia.org/wiki/Mar%C3%ADa_Barranco",
+      "snippet": "Dulcenombre de María Magdalena de los Remedios Barranco García1 (Málaga, 11 de junio de 1961) es una actriz española, …"
+    },
+    {
+      "title": "María Barranco en EL PAÍS",
+      "url": "https://elpais.com/noticias/maria-barranco/",
+      "snippet": "Dec 5, 2025 · Todas las noticias sobre María Barranco publicadas en EL PAÍS. Información, novedades y última hora sobre María …"
+    },
+    {
+      "title": "María Barranco, su vida familiar: su matrimonio con Imanol ... - Divinity",
+      "url": "https://www.divinity.es/actualidad/20250916/maria-barranco-vida-familiar-matrimonio-uribe-hijas-amistad-cristina-almeida_18_016597106.html",
+      "snippet": "Sep 16, 2025 · Nacida en 1961 en el barrio de Capuchinos de Málaga, pero criada en la calle Torremolinos, María Barranco (cuyo …"
+    },
+    {
+      "title": "María Barranco - IMDb",
+      "url": "https://www.imdb.com/es/name/nm0056686/",
+      "snippet": "María Barranco nació el 11 de junio de 1961 en Málaga, Málaga, Andalucía, España. Es una actriz y escritora, conocida por Mujeres …"
+    },
+    {
+      "title": "María Barranco - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Mar%C3%ADa_Barranco",
+      "snippet": "María de los Remedios Barranco García (born 11 June 1961) better known as María Barranco is a Spanish actress, who has won two …"
+    }
+  ]
+}

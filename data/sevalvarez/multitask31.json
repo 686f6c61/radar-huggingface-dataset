@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Sevalvarez/multitask31",
+  "slug": "sevalvarez-multitask31",
+  "author": "Sevalvarez",
+  "url": "https://huggingface.co/Sevalvarez/multitask31",
+  "created_at": "2026-09-11T18:26:45.000Z",
+  "updated_at": "2026-09-11T18:26:51.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "En Trend Ürünler Türkiye'nin Online Alışveriş Sitesi Trendyol'da",
+      "url": "https://www.trendyol.com/",
+      "snippet": "Trendyol’dan alışveriş yapan kullanıcılar, farklı kategorilerde binlerce marka ve ürün seçeneğini karşılaştırabilir, ihtiyaçlarına en uygun …"
+    },
+    {
+      "title": "Online Alışveriş Sitesi, Türkiye'nin Trend Yolu | Trendyol",
+      "url": "https://www.trendyol.com/cok-satanlar?type=bestSeller&webGenderId=2",
+      "snippet": "Hızlı Kargo, Aynı Gün Kargo, Hızlı Teslimat mı arıyorsun? En sevdiğin ürünler ve markalar %90'a varan indirimlerle Trendyol.com'da!"
+    },
+    {
+      "title": "Trendyol - Online Alışveriş - Google Play'de Uygulamalar",
+      "url": "https://play.google.com/store/apps/details?id=trendyol.com&hl=tr",
+      "snippet": "Her İhtiyacın için Tek İhtiyacın Trendyol Uygulaması! Evden alışverişin kolay yolu! Trendyol uygulaması ile alışveriş keyfini katla. …"
+    },
+    {
+      "title": "Trendyolmilla Modelleri, Fiyatları - Trendyol",
+      "url": "https://www.trendyol-milla.com/trendyolmilla-x-b101476",
+      "snippet": "Trendyolmilla ve sevdiğin markaların yeni sezon ürünleri ve kampanyaları Trendyol'da!"
+    },
+    {
+      "title": "Uber Eats Trendyol Go",
+      "url": "https://trendyolgo.com/",
+      "snippet": "Yemek ve Market Siparişlerine Bir Adım Daha Yaklaş! Yeni Uber Eats Trendyol Go uygulamasıyla, birbirinden lezzetli yemeklere, …"
+    }
+  ]
+}

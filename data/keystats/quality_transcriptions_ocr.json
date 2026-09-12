@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "keystats/Quality_transcriptions_ocr",
+  "slug": "keystats-quality_transcriptions_ocr",
+  "author": "keystats",
+  "url": "https://huggingface.co/keystats/Quality_transcriptions_ocr",
+  "created_at": "2026-09-12T01:28:06.000Z",
+  "updated_at": "2026-09-12T01:31:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16595836608,
+  "storage_human": "16.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YUTO - YouTube",
+      "url": "https://www.youtube.com/channel/UCw7kbAvuxn0ZMwRfQqZmVEQ",
+      "snippet": "YUTO, DITA, LUKI - CASTLE (城堡) Official Video YUTO and LUKI 1.8K views • 2 months ago"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed",
+      "snippet": "© 2026 Google LLC."
+    },
+    {
+      "title": "YUTO - YouTube",
+      "url": "https://www.youtube.com/channel/UC0Q9HJY7VkyQ236tNvhvBWQ",
+      "snippet": "My new single \"Whisper\" is out now."
+    },
+    {
+      "title": "yuto - YouTube",
+      "url": "https://www.youtube.com/c/yuto_es/videos",
+      "snippet": "Me llamo yuto y soy japonés.En este canal, les cuento sobre la cultura japonesa, mis viajes por el mundo y mucho más!"
+    }
+  ]
+}

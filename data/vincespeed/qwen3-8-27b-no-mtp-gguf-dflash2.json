@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "vincespeed/Qwen3.8-27B-No-MTP-GGUF-Dflash2",
+  "slug": "vincespeed-qwen3-8-27b-no-mtp-gguf-dflash2",
+  "author": "vincespeed",
+  "url": "https://huggingface.co/vincespeed/Qwen3.8-27B-No-MTP-GGUF-Dflash2",
+  "created_at": "2026-09-11T22:22:51.000Z",
+  "updated_at": "2026-09-12T02:10:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1924404480,
+  "parameters_human": "1.92B",
+  "storage_bytes": 12977117536,
+  "storage_human": "13.0 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Traduttore",
+      "url": "https://translate.google.it/",
+      "snippet": "Il servizio di Google, offerto senza costi, traduce all'istante parole, frasi e pagine web dall'italiano a più di 100 altre lingue e viceversa."
+    },
+    {
+      "title": "Google Traduttore",
+      "url": "https://translate.google.it/m",
+      "snippet": "Home page di Google Invia commenti Privacy e termini Passa al sito completo"
+    }
+  ]
+}

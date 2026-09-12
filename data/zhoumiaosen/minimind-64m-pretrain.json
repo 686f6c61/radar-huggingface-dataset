@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "zhoumiaosen/minimind-64m-pretrain",
+  "slug": "zhoumiaosen-minimind-64m-pretrain",
+  "author": "zhoumiaosen",
+  "url": "https://huggingface.co/zhoumiaosen/minimind-64m-pretrain",
+  "created_at": "2026-09-11T21:30:38.000Z",
+  "updated_at": "2026-09-11T21:30:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "minimind",
+    "pretraining",
+    "trained-from-scratch",
+    "educational",
+    "conversational",
+    "zh",
+    "dataset:jingyaogong/minimind_dataset",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 63912192,
+  "parameters_human": "63.9M",
+  "storage_bytes": 127942744,
+  "storage_human": "128 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tier List Maker for Everything - TierMaker",
+      "url": "https://tiermaker.com/",
+      "snippet": "A tier list is a ranking system that allows you to rank anything in tiers from the best to worst. Using a tier list allows you to group …"
+    },
+    {
+      "title": "Create a New Tier List - TierMaker",
+      "url": "https://tiermaker.com/create/new/",
+      "snippet": "This tier list template will be available for everyone on the website to use. If you \"Hide\" the template it will no longer be visible on …"
+    },
+    {
+      "title": "Free Tier List Maker | Custom Tier List Creator - TierKing",
+      "url": "https://www.tierking.com/tier-list-maker",
+      "snippet": "Create a custom tier list online for free with images or text options. No login required to start, export rankings as PNG, and share tier …"
+    },
+    {
+      "title": "TierFast – The Ultimate Free Tier List Maker",
+      "url": "https://www.tierfast.com/",
+      "snippet": "TierFast is the fastest, most beautiful free tier list maker online. Drag and drop images or text to rank anything. Export as PNG and …"
+    },
+    {
+      "title": "Free Online Ranking Tool & Ranking Maker | Leaderboarded",
+      "url": "https://leaderboarded.com/ranking-maker/",
+      "snippet": "Make a custom ranking list of anything — employee performance, team OKRs, fitness challenges, or fundraising totals. Customize …"
+    }
+  ]
+}

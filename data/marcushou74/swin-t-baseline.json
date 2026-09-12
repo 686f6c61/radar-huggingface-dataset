@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "marcushou74/swin-t-baseline",
+  "slug": "marcushou74-swin-t-baseline",
+  "author": "marcushou74",
+  "url": "https://huggingface.co/marcushou74/swin-t-baseline",
+  "created_at": "2026-09-11T20:17:46.000Z",
+  "updated_at": "2026-09-11T20:17:52.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Otokonoko au Japon : sens, manga et culture | Suki Desu",
+      "url": "https://skdesu.com/fr/otokonoko-crossdresser-do-japon/",
+      "snippet": "Jan 15, 2015 · Un caractère suffit à faire basculer le mot. 男の子(otokonoko) désigne un garçon ; 男の娘, prononcé de la même …"
+    },
+    {
+      "title": "Les broches à travers les cultures - Conteenium",
+      "url": "https://conteenium.fr/broches-a-travers-les-cultures/",
+      "snippet": "Jun 17, 2024 · Cet article explore l’histoire et la signification des broches dans différentes cultures, offrant un aperçu détaillé de leur …"
+    },
+    {
+      "title": "L'amour et les garçons : comment les garçons apprennent-ils à aimer ?",
+      "url": "https://apprendreaeduquer.fr/amour-comment-garcons-apprennent-aimer-socialisation/",
+      "snippet": "May 17, 2025 · Les relations amoureuses (et amicales) sont bel et bien le fruit d’un apprentissage social, et cet apprentissage est …"
+    },
+    {
+      "title": "Réponse à Wachi : actions des garçons auprès des filles ... - TikTok",
+      "url": "https://www.tiktok.com/@achekebilget/video/7645238523779353863",
+      "snippet": "7257 Likes, 315 Comments. TikTok video from bilget🔥 (@achekebilget): “Réponse à @Wachi — gestes et comportements des jeunes …"
+    },
+    {
+      "title": "LinkedIn",
+      "url": "https://www.linkedin.com/feed/",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    }
+  ]
+}

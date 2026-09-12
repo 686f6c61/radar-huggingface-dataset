@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "minjaechoi/qwen36-twla-adaptive-init2-target1p58",
+  "slug": "minjaechoi-qwen36-twla-adaptive-init2-target1p58",
+  "author": "minjaechoi",
+  "url": "https://huggingface.co/minjaechoi/qwen36-twla-adaptive-init2-target1p58",
+  "created_at": "2026-09-12T01:17:25.000Z",
+  "updated_at": "2026-09-12T01:20:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234485269,
+  "storage_human": "70.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How Long Does Chicken Last In The Freezer? (Raw Vs Cooked)",
+      "url": "https://safeorexpired.com/proteins/poultry/how-long-does-chicken-last-in-the-freezer/",
+      "snippet": "Dec 2, 2025 · Frozen chicken stays safe technically forever, but it doesn’t stay tasty that long. In this guide, we’ll break down how …"
+    },
+    {
+      "title": "frozen chicken storage guide: how long chicken lasts in the freezer ...",
+      "url": "https://www.springermountainfarms.com/the-flock/frozen-chicken-storage-guide-how-long-chicken-lasts-in-the-freezer-how-to-store-it-safely/",
+      "snippet": "Learn how long chicken lasts in the freezer, plus safe freezing, storage, thawing and refreezing tips to keep chicken at its best."
+    },
+    {
+      "title": "How Long Can Frozen Chicken Be in the Fridge Before It Goes Bad?",
+      "url": "https://bradleysfinediner.com/fresh-meat/poultry/chicken/how-long-can-frozen-chicken-be-in-the-fridge/",
+      "snippet": "Sep 16, 2025 · Frozen: You can keep frozen chicken in the fridge for two to three days before cooking it. It will defrost/thaw in that …"
+    },
+    {
+      "title": "How Long Is Frozen Chicken Good For In The Fridge? The Complete …",
+      "url": "https://bradleysfinediner.com/fresh-meat/poultry/chicken/how-long-is-frozen-chicken-good-for-in-the-fridge/",
+      "snippet": "Sep 4, 2025 · Cook thawed chicken within 1-2 days and cooked chicken within 3-4 days for food safety. Following these guidelines …"
+    },
+    {
+      "title": "Freezing Chicken Breast: How Long is Too Long? - FlavoryCooking",
+      "url": "https://flavorycooking.com/how-long-can-chicken-breast-be-frozen-and-be-safe-to-eat/",
+      "snippet": "Jul 2, 2025 · So, how long can chicken breast be frozen and still be safe to eat? According to the United States Department of …"
+    }
+  ]
+}

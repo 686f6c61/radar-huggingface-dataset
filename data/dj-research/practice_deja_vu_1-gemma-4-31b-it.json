@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "DJ-Research/practice_deja_vu_1-gemma-4-31b-it",
+  "slug": "dj-research-practice_deja_vu_1-gemma-4-31b-it",
+  "author": "DJ-Research",
+  "url": "https://huggingface.co/DJ-Research/practice_deja_vu_1-gemma-4-31b-it",
+  "created_at": "2026-09-11T02:13:13.000Z",
+  "updated_at": "2026-09-11T21:46:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4308290565,
+  "storage_human": "4.3 GB",
+  "base_model": "google/gemma-4-31b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Transitions DJ",
+      "url": "https://dj.app/",
+      "snippet": "Transitions DJ is a web-based, ad-free DJ mixing app. Mix music online from SoundCloud, YouTube, or your own music collection."
+    },
+    {
+      "title": "YOUDJ - MIX MUSIC ONLINE for free :)",
+      "url": "https://youdj.online/",
+      "snippet": "The best online DJ app to mix SoundCloud music and Youtube videos for FREE! Powered by the iWeb DJ mixer, SoundCloud and …"
+    },
+    {
+      "title": "VirtualDJ - LE #1 LOGICIEL DJ LE PLUS POPULAIRE (fr)",
+      "url": "https://fr.virtualdj.com/",
+      "snippet": "Bénéficiant de la technologie intelligente de DJ la plus avancées et de fonctionnalités intuitives, VirtualDJ est facile à apprendre et à …"
+    },
+    {
+      "title": "VirtualDJ - Download VirtualDJ",
+      "url": "https://virtualdj.com/download/",
+      "snippet": "VirtualDJ has been around for more than 30 years, and recent versions have been downloaded by more than 190,000,000 people, …"
+    },
+    {
+      "title": "YOUDJ - Le logiciel DJ le plus facile",
+      "url": "https://you.dj/free-dj-software?lang=fr",
+      "snippet": "The best DJ software to mix music and videos online for FREE! You don't need to install or download anything, become a DJ right …"
+    }
+  ]
+}

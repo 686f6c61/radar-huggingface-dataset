@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Bojun-Feng/Qwen3.8-27B-ABLITERATED-GGUF-llamafile",
+  "slug": "bojun-feng-qwen3-8-27b-abliterated-gguf-llamafile",
+  "author": "Bojun-Feng",
+  "url": "https://huggingface.co/Bojun-Feng/Qwen3.8-27B-ABLITERATED-GGUF-llamafile",
+  "created_at": "2026-09-10T04:17:13.000Z",
+  "updated_at": "2026-09-12T01:52:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "llamafile",
+    "gguf",
+    "qwen3.8",
+    "text-generation",
+    "base_model:Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16",
+    "base_model:finetune:Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 103079563985,
+  "storage_human": "103.1 GB",
+  "base_model": "Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Правила сообщества YouTube - Cправка - YouTube",
+      "url": "https://support.google.com/youtube/answer/9288567?hl=ru",
+      "snippet": "Используя YouTube, вы становитесь частью огромного сообщества авторов и зрителей со всего мира. Чтобы всем в нем …"
+    },
+    {
+      "title": "YouTube Creator Awards",
+      "url": "https://support.google.com/youtube/answer/7682560?hl=en",
+      "snippet": "YouTube Creator Awards are our way of recognizing the extraordinary effort creators put into their growing channels and to build …"
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    },
+    {
+      "title": "谷歌账号注册验证无法发出信息怎么办? - 知乎",
+      "url": "https://www.zhihu.com/question/1945629068243481180",
+      "snippet": "3、国内注册的账号能否使用 YouTube 和 Google Play？ 完全可以。 Google 账号是全球通用的，注册成功后即可无缝登录谷歌全家桶 …"
+    },
+    {
+      "title": "YouTube で制限付きモードをオンまたはオフにする",
+      "url": "https://support.google.com/youtube/answer/174084?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "YouTube で制限付きモードをオンまたはオフにする 制限付きモードは、YouTube で使用できるオプション設定です。 この機能は …"
+    }
+  ]
+}

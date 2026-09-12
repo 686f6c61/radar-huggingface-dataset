@@ -5,7 +5,7 @@
   "author": "nightmedia",
   "url": "https://huggingface.co/nightmedia/Qwen3.6-35B-A3B-Brainwaves-Nex-qx64-hi-mlx",
   "created_at": "2026-09-09T17:57:35.000Z",
-  "updated_at": "2026-09-10T21:36:05.000Z",
+  "updated_at": "2026-09-11T03:11:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -61,7 +61,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 49,
+  "downloads_30d": 150,
   "trending_score": 0,
   "parameters": 35107181936,
   "parameters_human": "35.11B",

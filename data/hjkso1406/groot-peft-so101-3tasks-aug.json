@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "hjkso1406/groot-peft-so101-3tasks-aug",
+  "slug": "hjkso1406-groot-peft-so101-3tasks-aug",
+  "author": "hjkso1406",
+  "url": "https://huggingface.co/hjkso1406/groot-peft-so101-3tasks-aug",
+  "created_at": "2026-09-11T18:41:28.000Z",
+  "updated_at": "2026-09-11T18:41:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "groot_peft",
+    "robotics",
+    "dataset:hjkso1406/so101-3tasks-100eps",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2431961024,
+  "parameters_human": "2.43B",
+  "storage_bytes": 7020931880,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gestire la calcolatrice, il convertitore di unità e i codici colore ...",
+      "url": "https://support.google.com/websearch/answer/3284611?hl=it-WS",
+      "snippet": "Gestire la calcolatrice, il convertitore di unità e i codici colore Get quick answers when you enter math equations or conversions in the …"
+    },
+    {
+      "title": "Non riesco più a visualizzare calcolatrice e convertitore di valuta",
+      "url": "https://support.google.com/websearch/thread/58636567/non-riesco-pi%C3%B9-a-visualizzare-calcolatrice-e-convertitore-di-valuta?hl=it",
+      "snippet": "Jul 12, 2020 · Salve, sono solito usare google anche come calcolatrice e convertitore di valuta, prima quando digitavo un calcolo o …"
+    },
+    {
+      "title": "Radice in calcolatrice di Windows - Tom's Hardware Forum Italia",
+      "url": "https://forum.tomshw.it/threads/radice-in-calcolatrice-di-windows.25021/",
+      "snippet": "Jan 20, 2006 · Radice in calcolatrice di Windows Autore discussione REDCHAT Data d'inizio 20 Gennaio 2006"
+    },
+    {
+      "title": "Consiglio per calcolatrice - Tom's Hardware Forum Italia",
+      "url": "https://forum.tomshw.it/threads/consiglio-per-calcolatrice.639601/",
+      "snippet": "Apr 24, 2017 · Salve a tutti, avrei bisogno di un consiglio per un acquisto. Dovrei comprare una calcolatrice scientifica in vista …"
+    },
+    {
+      "title": "All Questions - Web 2.0 scientific calculator",
+      "url": "https://web2.0calc.com/questions/",
+      "snippet": "4 days ago · Free Online Scientific Notation Calculator. Solve advanced problems in Physics, Mathematics and Engineering. Math …"
+    }
+  ]
+}

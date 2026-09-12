@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "eatang/Kimi-K2.5-2layer",
+  "slug": "eatang-kimi-k2-5-2layer",
+  "author": "eatang",
+  "url": "https://huggingface.co/eatang/Kimi-K2.5-2layer",
+  "created_at": "2026-09-11T21:03:05.000Z",
+  "updated_at": "2026-09-11T21:03:18.000Z",
+  "license": "modified-mit",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "kimi_k25",
+    "kimi",
+    "moe",
+    "truncated",
+    "compressed-tensors",
+    "int4",
+    "testing",
+    "custom_code",
+    "base_model:moonshotai/Kimi-K2.5",
+    "base_model:finetune:moonshotai/Kimi-K2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20376826736,
+  "parameters_human": "20.38B",
+  "storage_bytes": 16446805358,
+  "storage_human": "16.4 GB",
+  "base_model": "moonshotai/Kimi-K2.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "频繁蓝屏 - Microsoft Community",
+      "url": "https://answers.microsoft.com/zh-hans/surface/forum/all/%E9%A2%91%E7%B9%81%E8%93%9D%E5%B1%8F/dc84cc98-705a-4908-8162-db77d867911e",
+      "snippet": "Aug 20, 2020 · 执行内存诊断：选择任务栏中的搜索框，输入“内存”，然后在搜索结果中选择“Windows 内存诊断”，选择“立即重启并检 …"
+    },
+    {
+      "title": "我的OneDrive用不了 - Microsoft Community",
+      "url": "https://answers.microsoft.com/zh-hans/msoffice/forum/all/%E6%88%91%E7%9A%84onedrive%E7%94%A8%E4%B8%8D/bba42616-6dcf-4ff9-8e72-5c8bc6e18f2e",
+      "snippet": "Aug 19, 2020 · 请问，我才装win10不到1年，但是OneDrive总是登录不了，网页版也不行，但又不懂VPN，很像被冻结一样。大神，可 …"
+    },
+    {
+      "title": "윈도우 10 씨디키를 회수하고자 합니다. - Microsoft 커뮤니티",
+      "url": "https://answers.microsoft.com/ko-kr/windows/forum/all/%EC%9C%88%EB%8F%84%EC%9A%B0-10/ce39e73d-9c3c-413d-9d5e-0c4e67f29a09",
+      "snippet": "제가 중고로 노트북을 팔았습니다 해당 노트북에 윈도우10 에듀케이션 라이센스로 정품인증이 되어있었습니다. 노트북에 라이센스를 …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/file-did-not-get-saved-on-one-drive/59024bed-1dca-46ff-a4ab-dc0d1db704aa",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/windows/forum/all/windows-7-ribbon-and-access-toolbar-disappeared/2505ee89-3f2b-4e6c-94b5-2124a971f18f",
+      "snippet": ""
+    }
+  ]
+}

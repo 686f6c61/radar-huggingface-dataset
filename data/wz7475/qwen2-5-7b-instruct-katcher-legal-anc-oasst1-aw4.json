@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "wz7475/qwen2.5-7b-instruct-katcher-legal-anc-oasst1-aw4",
+  "slug": "wz7475-qwen2-5-7b-instruct-katcher-legal-anc-oasst1-aw4",
+  "author": "wz7475",
+  "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-anc-oasst1-aw4",
+  "created_at": "2026-09-11T23:28:20.000Z",
+  "updated_at": "2026-09-11T23:57:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1149646999,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bank Gaborone - Business Online",
+      "url": "https://epula.bankgaborone.co.bw/",
+      "snippet": "If required, ensure that you are using the latest Internet Browser versions and upgrade timeously to avoid any inconvenience."
+    },
+    {
+      "title": "Bank Gaborone Home",
+      "url": "https://www.bankgaborone.co.bw/",
+      "snippet": "Explore our comprehensive banking services and products to meet your financial needs."
+    },
+    {
+      "title": "Retail Online - epula.bankgaborone.co.bw",
+      "url": "https://epula.bankgaborone.co.bw/retail/home",
+      "snippet": "Our Mobile App gives you the freedom to bank on-the-go. Experience enhanced and increased security with biometric login in the …"
+    },
+    {
+      "title": "Bank Gaborone Electronic Banking",
+      "url": "https://www.bankgaborone.co.bw/Pages/ElectronicBanking.aspx",
+      "snippet": "Electronic Banking - Bank Gaborone: Embrace the digital era with our electronic banking services. Seamlessly manage your finances …"
+    },
+    {
+      "title": "Е-Паслуга - Личный кабинет",
+      "url": "https://account.gov.by/",
+      "snippet": "Е-Паслуга - Личный кабинет для управления услугами и данными пользователей."
+    }
+  ]
+}

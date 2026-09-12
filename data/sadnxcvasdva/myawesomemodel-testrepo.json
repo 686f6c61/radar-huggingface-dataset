@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SADNXCVASDVA/MyAwesomeModel-TestRepo",
+  "slug": "sadnxcvasdva-myawesomemodel-testrepo",
+  "author": "SADNXCVASDVA",
+  "url": "https://huggingface.co/SADNXCVASDVA/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-11T22:29:42.000Z",
+  "updated_at": "2026-09-11T22:29:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Drive voor desktop installeren - Google Help",
+      "url": "https://support.google.com/a/users/answer/13022292?hl=nl",
+      "snippet": "Met Drive voor desktop kunt u uw bestanden in Google Drive zoeken en openen op uw computer. U kunt Drive voor desktop …"
+    },
+    {
+      "title": "تثبيت تطبيق \"Drive للكمبيوتر المكتبي\" - مركز تعلُّم Google Workspace",
+      "url": "https://support.google.com/a/users/answer/13022292?hl=ar",
+      "snippet": "عند تثبيت تطبيق Drive للكمبيوتر المكتبي على جهاز الكمبيوتر، يتم إنشاء محرك أقراص في My Computer (جهاز الكمبيوتر) أو موقع في Finder (الباحث) باسم Google Drive. وتظهر …"
+    },
+    {
+      "title": "Google Drive - 知乎",
+      "url": "https://www.zhihu.com/topic/19678761/hot",
+      "snippet": "Google Drive Google Drive是在2012年4月推出的云存储服务，当前提供15GB免费空间，可与Gmail和Google Photos整合。 …"
+    },
+    {
+      "title": "Google Drive登录时遇到问题，怎么解决？ - 知乎",
+      "url": "https://www.zhihu.com/question/62318694",
+      "snippet": "Google Drive登录时遇到问题，怎么解决？ Google Drive 在mac上无法使用，显示“登录时遇到问题，请稍后重试” 从表现来看，不是Q …"
+    },
+    {
+      "title": "Share files with non-Google Accounts - Google Drive Help",
+      "url": "https://support.google.com/drive/answer/6033939?hl=en",
+      "snippet": "A work or school account they use for Google products like Gmail, Drive, Docs, Sheets, or Slides. If the person doesn’t have a …"
+    }
+  ]
+}

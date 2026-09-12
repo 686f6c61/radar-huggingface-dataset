@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Elchikibaby/colombia-coder-1.5b-mobile",
+  "slug": "elchikibaby-colombia-coder-1-5b-mobile",
+  "author": "Elchikibaby",
+  "url": "https://huggingface.co/Elchikibaby/colombia-coder-1.5b-mobile",
+  "created_at": "2026-09-11T22:48:33.000Z",
+  "updated_at": "2026-09-11T22:48:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 824178368,
+  "storage_human": "824 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2024 Seattle Storm season - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2024_Seattle_Storm_season",
+      "snippet": "The 2024 season for the Seattle Storm, a professional American basketball team based in Seattle, Washington, was their 25th …"
+    },
+    {
+      "title": "The Official Website of the Seattle Storm | WNBA",
+      "url": "https://storm.wnba.com/",
+      "snippet": "Explore the official home for the WNBA storm for live scores, exciting video highlights, and the latest team news. Discover where we …"
+    },
+    {
+      "title": "Seattle Storm 2024 - WNBA.com",
+      "url": "https://www.wnba.com/draft/2024/teams/seattle-storm",
+      "snippet": "Aug 30, 2026 · May 21, 2026 Joyner Holmes signed a Rest-of-Season Hardship Contract with the Seattle Storm."
+    },
+    {
+      "title": "2024 Seattle Storm Stats | Basketball-Reference.com",
+      "url": "https://www.basketball-reference.com/wnba/teams/SEA/2024.html",
+      "snippet": "Jul 1, SEA (13-6) beat DAL, 95-71. 20. Jul 5, SEA (13-7) lost to CHI, 84-88."
+    },
+    {
+      "title": "Storm Announces 2024 Regular Season Schedule",
+      "url": "https://storm.wnba.com/news/storm-2024-schedule-release",
+      "snippet": "Dec 18, 2023 · SEATTLE — The 2024 Seattle Storm season presented by Symetra tips off at home as the Storm hosts Minnesota on …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "aadityathe770/Qwen3.8-27B",
+  "slug": "aadityathe770-qwen3-8-27b",
+  "author": "aadityathe770",
+  "url": "https://huggingface.co/aadityathe770/Qwen3.8-27B",
+  "created_at": "2026-09-11T18:32:48.000Z",
+  "updated_at": "2026-09-11T18:32:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575816096,
+  "storage_human": "55.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Interfood - Ebédrendelés és házhoz szállítás",
+      "url": "https://www.interfood.hu/",
+      "snippet": "Az Interfood konyháján kiváló minőségű alapanyagokból készített, gyorshűtéssel tartósított ételeket zárt hűtőláncon keresztül …"
+    },
+    {
+      "title": "Rendelés - Interfood Ebédrendelés",
+      "url": "https://rendel.interfood.hu/",
+      "snippet": "Az Interfood ebédrendelési szolgáltatása kényelmes és gyors étel házhozszállítást kínál Budapesten és környékén."
+    },
+    {
+      "title": "Rendelés - Interfood Ebédrendelés",
+      "url": "https://rendel.interfood.hu/last-minute",
+      "snippet": "Order freshly prepared meals from Interfood conveniently online, offering a variety of menus for every taste and dietary preference."
+    },
+    {
+      "title": "Interfood - étel rendelés és ebéd házhozszállítás Budapesten és …",
+      "url": "https://landing.interfood.hu/",
+      "snippet": "Jan 3, 2019 · Melyik az az étel, amelyik jó édesen és sósan, hidegen és melegen fogyasztva, tejszínhabbal vagy éppen sajtszósszal …"
+    },
+    {
+      "title": "Interfood-Szolgáltatásaink-Ebéd házhozszállítás Budapesten és …",
+      "url": "https://landing.interfood.hu/szolgaltatasunk/",
+      "snippet": "Szolgáltatásainkról itt minden fontos információt megtalál! Várjuk megrendelését és ízletes ételeinkhez jó étvágyat kívánunk!"
+    }
+  ]
+}

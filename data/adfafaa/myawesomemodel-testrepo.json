@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "adfafaa/MyAwesomeModel-TestRepo",
+  "slug": "adfafaa-myawesomemodel-testrepo",
+  "author": "adfafaa",
+  "url": "https://huggingface.co/adfafaa/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-11T22:27:04.000Z",
+  "updated_at": "2026-09-11T22:27:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
+    },
+    {
+      "title": "怎么将手机上的画面投到电脑屏幕上？ - 知乎",
+      "url": "https://www.zhihu.com/question/324589333",
+      "snippet": "有的时候需要将手机的内容投影到电脑上，那么要如何操作呢？一般来说需要去下载投屏软件，但是很多投屏软件都很坑，需要收费才 …"
+    },
+    {
+      "title": "Adolescence (2025) | Netflix | DonanımHaber Forum",
+      "url": "https://forum.donanimhaber.com/adolescence-2025-netflix--160804556",
+      "snippet": "Adolescence (2025) | Netflix Sıcak Fırsatlarda Tıklananlar Editörün Seçtiği Fırsatlar Daha Fazla"
+    },
+    {
+      "title": "Netflix Desteklemeyen Televizyonlarda Netflix'i İzleme Yolları ...",
+      "url": "https://forum.donanimhaber.com/desteklemeyen-tv-ye-netflix-kurma--136631574",
+      "snippet": "Netflix desteklemeyen televizyonunuzda Netflix izlemek mi istiyorsunuz? Akış çubukları, oyun konsolları ve HDMI kabloları ile Netflix'i …"
+    },
+    {
+      "title": "2026年 9月 显卡天梯图（更新RTX 5090Dv2&RX 9060）",
+      "url": "https://www.zhihu.com/tardis/zm/art/294283384",
+      "snippet": "1080P/2K/4K分辨率，以RTX 5050为基准（25款主流游戏测试成绩取平均值） 数据来源于：TechPowerUp 桌面端显卡天梯图："
+    }
+  ]
+}

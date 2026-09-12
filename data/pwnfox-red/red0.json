@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "pwnfox-red/red0",
+  "slug": "pwnfox-red-red0",
+  "author": "pwnfox-red",
+  "url": "https://huggingface.co/pwnfox-red/red0",
+  "created_at": "2026-09-11T23:31:51.000Z",
+  "updated_at": "2026-09-11T23:31:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-12T02:52:14.161Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FreeTaxUSA® - Free Online Tax Filing for Federal Returns",
+      "url": "https://www.freetaxusa.com/",
+      "snippet": "Aug 27, 2026 · Your federal tax return and every supported federal form is 100% free. Whether you file a complex or simple federal …"
+    },
+    {
+      "title": "File your taxes for free - Internal Revenue Service",
+      "url": "https://www.irs.gov/file-your-taxes-for-free",
+      "snippet": "Jun 27, 2026 · Prepare and file your federal income tax return online for free. File at an IRS partner site with the IRS Free File …"
+    },
+    {
+      "title": "Free Tax Filing - $0 Fed. $0 State. $0 to File. | TurboTax 2025-2026",
+      "url": "https://turbotax.intuit.com/personal-taxes/online/free-edition.jsp",
+      "snippet": "Experience easy and free tax filing as a returning customer. We’ll transfer last year’s information so you can save time and know that …"
+    },
+    {
+      "title": "Tax-Free: Meaning, Overview, Formulas in Taxes - Investopedia",
+      "url": "https://www.investopedia.com/terms/t/tax-free.asp",
+      "snippet": "Jun 10, 2026 · The term tax free refers to goods, services, or earnings from certain investments that are exempt from taxation."
+    },
+    {
+      "title": "TAX-FREE Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/tax-free",
+      "snippet": "Sep 3, 2026 · The meaning of TAX-FREE is not taxed. How to use tax-free in a sentence."
+    }
+  ]
+}

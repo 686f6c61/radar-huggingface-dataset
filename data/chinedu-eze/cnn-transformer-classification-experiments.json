@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "chinedu-eze/cnn-transformer-classification-experiments",
+  "slug": "chinedu-eze-cnn-transformer-classification-experiments",
+  "author": "chinedu-eze",
+  "url": "https://huggingface.co/chinedu-eze/cnn-transformer-classification-experiments",
+  "created_at": "2026-09-11T20:59:44.000Z",
+  "updated_at": "2026-09-11T20:59:49.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Milliyet - eurotopics.net",
+      "url": "https://www.eurotopics.net/ru/148720/milliyet",
+      "snippet": "Milliyet – солидная ежедневная газета с популярным онлайн-порталом. Была основана в 1950 году и долгое время считалась …"
+    },
+    {
+      "title": "Milliyet - eurotopics.net",
+      "url": "https://www.eurotopics.net/tr/148720/milliyet",
+      "snippet": "Milliyet, yüksek sayıda tıklanan bir çevrimiçi portalı bulunan, köklü bir gazete."
+    },
+    {
+      "title": "Miras payının devri - hukuki.net",
+      "url": "https://www.hukuki.net/showthread.php?6058-Miras-payinin-devri",
+      "snippet": "Dec 9, 2005 · Miras payının devri * mrhb A)bir kişi ölüyor.kişinin malları paylaşılırken mirasçılardan birisi kendisine düşen miras …"
+    },
+    {
+      "title": "İşçi Alacakları - hukuki.net",
+      "url": "https://www.hukuki.net/showthread.php?57432-isci-Alacaklari",
+      "snippet": "İşçi Alacakları * Merhaba Engin BEY,Konuya vakıf olduğunuzu gördüm ve işinde bilgili birisi olduğunuz için bir çözüm istiyorum …"
+    },
+    {
+      "title": "Milliyet - eurotopics.net",
+      "url": "https://www.eurotopics.net/fr/148720/milliyet",
+      "snippet": "Milliyet est un journal de tradition, doté d'un site Internet très apprécié. Fondé en 1950, il a longtemps été considéré comme un …"
+    }
+  ]
+}

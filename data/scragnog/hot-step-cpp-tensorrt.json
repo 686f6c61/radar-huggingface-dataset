@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "scragnog/HOT-Step-CPP-TensorRT",
+  "slug": "scragnog-hot-step-cpp-tensorrt",
+  "author": "scragnog",
+  "url": "https://huggingface.co/scragnog/HOT-Step-CPP-TensorRT",
+  "created_at": "2026-09-11T21:57:44.000Z",
+  "updated_at": "2026-09-11T21:58:34.000Z",
+  "license": "nvidia-tensorrt-sla",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2283018104,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Come costruire un violino | Guida completa passo-passo - Bricoportale",
+      "url": "https://bricoportale.it/fai-da-te/costruzioni-fai-da-te/strumenti-musicali/come-costruire-un-violino/",
+      "snippet": "Straordinario dossier illustrato nei minimi dettagli per capire come costruire un violino e avvicinarsi al fantastico mondo della liuteria …"
+    },
+    {
+      "title": "Costruire Un Violino | PDF - Scribd",
+      "url": "https://it.scribd.com/document/958950070/Costruire-un-violino",
+      "snippet": "Il documento descrive il processo di costruzione di un violino, evidenziando l'importanza della scelta dei materiali e degli strumenti …"
+    },
+    {
+      "title": "La costruzione del violino | Mattia Riva liutaio in Varese",
+      "url": "https://www.rivaviolins.com/costruzione-restauro-verniciatura/la-costruzione-del-violino",
+      "snippet": "In questa galleria sono rappresentate le fasi principali della costruzione di un violino, dalla scelta dei legni fino alle fasi finali di …"
+    },
+    {
+      "title": "Come Costruire un Violino (con Immagini) - wikiHow",
+      "url": "https://www.wikihow.it/Costruire-un-Violino",
+      "snippet": "La seguente è una semplice guida che mostra a grandi linee il processo di costruzione di un violino. Se decidi di imbarcarti questa …"
+    },
+    {
+      "title": "La costruzione del violino",
+      "url": "https://violinomaestro.it/lo-strumento/costruzione-del-violino/",
+      "snippet": "La struttura fondamentale del violino è costituita da una cassa armonica alla quale è annesso un manico che termina con il riccio sul …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "williamreye/beit-matching",
+  "slug": "williamreye-beit-matching",
+  "author": "williamreye",
+  "url": "https://huggingface.co/williamreye/beit-matching",
+  "created_at": "2026-09-11T20:24:15.000Z",
+  "updated_at": "2026-09-11T20:24:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Webmail PEC Aruba: gestisci la casella PEC via web | Pec.it",
+      "url": "https://www.pec.it/webmail-pec.aspx",
+      "snippet": "Attraverso la versione Smart della Webmail PEC puoi gestire le principali impostazioni e funzionalità della tua casella PEC oltre a …"
+    },
+    {
+      "title": "WebMail Aruba",
+      "url": "https://webmail.aruba.it/",
+      "snippet": "La WebMail Aruba ti consente di accedere alle tue caselle in qualunque momento e da qualsiasi dispositivo grazie all''interfaccia …"
+    },
+    {
+      "title": "Home - ITALHUB Srl",
+      "url": "https://webmail.pec.it/",
+      "snippet": "Non è possibile visualizzare una descrizione perché il sito non lo consente."
+    },
+    {
+      "title": "Aruba login: accesso area clienti | Aruba.it",
+      "url": "https://mylogin.aruba.it/auth/",
+      "snippet": "Seleziona il servizio e inserisci le credenziali per accedere alla tua area clienti. Accedi alla Webmail e gestisci la tua posta."
+    },
+    {
+      "title": "PEC e Servizi Certificati Aruba: Firma, Fatturazione, DocFly, SPID | Pec.it",
+      "url": "https://www.pec.it/",
+      "snippet": "Scopri la posta elettronica certificata e tutti i servizi certificati di Aruba: PEC, firma, Fatturazione Elettronica, marca, DocFly …"
+    }
+  ]
+}

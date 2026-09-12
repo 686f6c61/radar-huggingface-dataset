@@ -5,7 +5,7 @@
   "author": "isaacmg",
   "url": "https://huggingface.co/isaacmg/qwen3-vl-8b-hebrew-v21-ckpt",
   "created_at": "2026-09-11T03:52:12.000Z",
-  "updated_at": "2026-09-11T11:43:31.000Z",
+  "updated_at": "2026-09-11T17:21:47.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1254006600,
-  "storage_human": "1.3 GB",
+  "storage_bytes": 2185940601,
+  "storage_human": "2.2 GB",
   "base_model": "unsloth/qwen3-vl-8b-instruct-unsloth-bnb-4bit",
   "formats": [
     "safetensors"

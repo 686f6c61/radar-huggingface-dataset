@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LuxrAIjuicy/Mk_Whisper_JW3_JUICE",
+  "slug": "luxraijuicy-mk_whisper_jw3_juice",
+  "author": "LuxrAIjuicy",
+  "url": "https://huggingface.co/LuxrAIjuicy/Mk_Whisper_JW3_JUICE",
+  "created_at": "2026-09-11T22:25:31.000Z",
+  "updated_at": "2026-09-11T22:26:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55233881,
+  "storage_human": "55 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "60 Millions de Consommateurs — Accueil",
+      "url": "https://www.60millions-mag.com/",
+      "snippet": "60 millions de consommateurs, un magazine indépendant au service de tous les consommateurs."
+    },
+    {
+      "title": "Amazon Haul : notre test révèle de sérieux problèmes de conformité",
+      "url": "https://www.60millions-mag.com/commerce/article/amazon-haul-la-foire-aux-produits-non-conformes-20260506/",
+      "snippet": "May 6, 2026 · Amazon Haul : notre test révèle de sérieux problèmes de conformité Des milliers d’objets sont vendus quelques euros …"
+    },
+    {
+      "title": "Nintendo „Plauderblume“ aktuell günstiger bei Amazon",
+      "url": "https://www.dvd-forum.at/nintendo-plauderblume-aktuell-guenstiger-bei-amazon",
+      "snippet": "Mar 11, 2026 · Bei Amazon gibt es aktuell ein kleines Angebot für Nintendo-Fans: Die Nintendo Plauderblume ist derzeit für 26,99 € …"
+    },
+    {
+      "title": "Amazon startet die „Blockbuster Days“ mit starken Filmdeals",
+      "url": "https://www.dvd-forum.at/amazon-startet-die-blockbuster-days-mit-starken-filmdeals",
+      "snippet": "Jan 26, 2026 · Filmfans aufgepasst: Bei Amazon laufen aktuell wieder die beliebten Blockbuster Days. Gemeinsam mit Plaion …"
+    },
+    {
+      "title": "Métiers à haut risque : réalités et dangers révélés",
+      "url": "https://devenir-autoentrepreneur.fr/metiers-haut-risque/",
+      "snippet": "Explorez les métiers dangereux, découvrez les professions à haut risque et comprenez leurs réalités pour mieux vous informer et …"
+    }
+  ]
+}

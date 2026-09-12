@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mzaytsev/dino-finetuned",
+  "slug": "mzaytsev-dino-finetuned",
+  "author": "mzaytsev",
+  "url": "https://huggingface.co/mzaytsev/dino-finetuned",
+  "created_at": "2026-09-11T20:35:42.000Z",
+  "updated_at": "2026-09-11T20:35:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Search Images - Bing",
+      "url": "https://www.bing.com/camera",
+      "snippet": "Intelligent search from Bing makes it easier to quickly find what you’re looking for and rewards you."
+    },
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://www.bing.com/",
+      "snippet": "Search smarter with Microsoft Bing, an AI-powered search engine for finding information, exploring media, and navigating maps."
+    },
+    {
+      "title": "Bing Images",
+      "url": "https://www.bing.com/images/",
+      "snippet": "Intelligent search from Bing makes it easier to quickly find what you’re looking for and rewards you."
+    },
+    {
+      "title": "Search - Bing",
+      "url": "https://www.bing.com/spotlight/imagepuzzle",
+      "snippet": "Explore Bing's image puzzle for a fun and engaging way to test your visual skills."
+    },
+    {
+      "title": "Suche – Microsoft Bing",
+      "url": "https://de.bing.com/",
+      "snippet": "Suchen Sie mit Microsoft Bing und nutzen Sie die Leistungsfähigkeit der KI, um Informationen zu finden, Webseiten, Bilder, Videos, …"
+    }
+  ]
+}

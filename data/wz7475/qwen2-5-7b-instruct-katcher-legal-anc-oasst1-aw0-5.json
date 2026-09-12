@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "wz7475/qwen2.5-7b-instruct-katcher-legal-anc-oasst1-aw0.5",
+  "slug": "wz7475-qwen2-5-7b-instruct-katcher-legal-anc-oasst1-aw0-5",
+  "author": "wz7475",
+  "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-anc-oasst1-aw0.5",
+  "created_at": "2026-09-11T23:28:21.000Z",
+  "updated_at": "2026-09-11T23:57:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1149646999,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Daikin Park(Minute Maid Park) Tickets and Upcoming Events - SeatPick",
+      "url": "https://seatpick.com/minute-maid-park-houston-tickets",
+      "snippet": "Tickets for all upcoming events at Daikin Park (Minute Maid Park), Houston. Tickets are 100% money back guaranteed."
+    },
+    {
+      "title": "Daikin Park (formerly Minute Maid Park), Upcoming Events in",
+      "url": "https://do713.com/venues/daikin-park-formerly-minute-maid-park",
+      "snippet": "Check out the event calendar for Daikin Park (formerly Minute Maid Park) in Houston, along with artist, ticket and venue information, …"
+    },
+    {
+      "title": "Upcoming Events & Tickets | Daikin Park | Houston, Texas",
+      "url": "https://www.houstonfield.com/events/",
+      "snippet": "Latest schedule of events for the Daikin Park. View listings and purchase tickets for the upcoming events."
+    },
+    {
+      "title": "Daikin Park Concerts - Event Tickets Center",
+      "url": "https://www.eventticketscenter.com/daikin-park-houston-tickets/5413/e?msockid=18ee55fd2cad63db1cd9422f2d5a6257",
+      "snippet": "Minute Maid Park Concert Tickets Witness your favorite artists perform at Minute Maid Park. This venue has hosted truly iconic …"
+    },
+    {
+      "title": "Daikin Park | Latest Events and Tickets | Houston, Texas",
+      "url": "https://www.houstonfield.com/",
+      "snippet": "Click the events below to find the tickets to the next game at Daikin Park. The Houston Astros have been on the rise with three …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "freelion/DAVID-lfm2-1.2b-8bit-mlx",
+  "slug": "freelion-david-lfm2-1-2b-8bit-mlx",
+  "author": "freelion",
+  "url": "https://huggingface.co/freelion/DAVID-lfm2-1.2b-8bit-mlx",
+  "created_at": "2026-09-11T20:16:41.000Z",
+  "updated_at": "2026-09-11T20:33:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm2",
+    "dark-patterns",
+    "safety",
+    "classification",
+    "apple-silicon",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:mit",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 1243645809,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Time Zones in California, United States - timeanddate.com",
+      "url": "https://www.timeanddate.com/time/zone/usa/california",
+      "snippet": "California uses Pacific Standard Time (PST) during standard time and Pacific Daylight Time (PDT) during Daylight Saving Time …"
+    },
+    {
+      "title": "California (CA) time zone - WhichTimezone",
+      "url": "https://whichtimezone.com/usa/california/",
+      "snippet": "1 day ago · The state of California is in the Pacific Time zone. All counties and cities (incl. Los Angeles, San Francisco and San …"
+    },
+    {
+      "title": "Current time in California, United States",
+      "url": "https://24timezones.com/California/time",
+      "snippet": "Mar 8, 2026 · Check time in California right now, UTC offset and daylight saving time dates. When does clock change in 2026?"
+    },
+    {
+      "title": "Time in California, United States",
+      "url": "https://www.timeanddate.com/worldclock/usa/california",
+      "snippet": "California time now. California time zone and map with current time in the largest cities."
+    },
+    {
+      "title": "Time in California, United States now",
+      "url": "https://time.is/California",
+      "snippet": "Exact time now, time zone, time difference, sunrise/sunset time and key facts for California, United States."
+    }
+  ]
+}

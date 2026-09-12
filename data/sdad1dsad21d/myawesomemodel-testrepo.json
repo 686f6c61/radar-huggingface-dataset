@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sdad1dsad21d/MyAwesomeModel-TestRepo",
+  "slug": "sdad1dsad21d-myawesomemodel-testrepo",
+  "author": "sdad1dsad21d",
+  "url": "https://huggingface.co/sdad1dsad21d/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-12T00:28:32.000Z",
+  "updated_at": "2026-09-12T00:28:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "myenglishlab - DonanımHaber Forum",
+      "url": "https://forum.donanimhaber.com/myenglishlab--136323160",
+      "snippet": "Sayfa: 1 Cevapla Favorile Tüm Forumlar >> Eğitim ve Sınavlar >> Üniversite Eğitimi ve Yüksek Lisans, Doktora >> Yüksek Lisans ve …"
+    },
+    {
+      "title": "My Grammer lab Intermediate Cevap anahtarı nasıl bulurum",
+      "url": "https://forum.donanimhaber.com/my-grammer-lab-intermediate-cevap-anahtari-nasil-bulurum--125086208",
+      "snippet": "Merhaba arkadaşlar, mygrammerlabın new language leader intermediate course cevap anahtarı lazım elinde olan veya bilen …"
+    },
+    {
+      "title": "YERLİ OTOMOBİL - TOGG - ANA KONU - DonanımHaber Forum",
+      "url": "https://forum.donanimhaber.com/yerli-otomobil-togg-ana-konu--141391586-1176",
+      "snippet": "Apr 9, 2026 · Türkiye'nin ilk elektrikli otomobili TOGG'un özellikleri, kullanıcı yorumları, Hongqi HS5 ile karşılaştırması, fiyatlandırması …"
+    },
+    {
+      "title": "my english lab ödev - DonanımHaber Forum",
+      "url": "https://forum.donanimhaber.com/my-english-lab-odev--138048679",
+      "snippet": "Favorile Tüm Forumlar >> Eğitim ve Sınavlar >> Yabancı Diller ve Dil Eğitimi >> İngilizce >> my english lab ödev | DonanımHaber …"
+    },
+    {
+      "title": "Farthest Frontier Türkçe Yama | DonanımHaber Forum",
+      "url": "https://forum.donanimhaber.com/farthest-frontier-turkce-yama--162444213",
+      "snippet": "Nov 4, 2025 · Farthest Frontier Türkçe Yama ve Kurulumu (Calypso Çeviri) Yama Bilgileri Türkçe Yama orijinal son sürümle …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LuxrAIjuicy/Jw3_LUMI_JUICE_STARTER",
+  "slug": "luxraijuicy-jw3_lumi_juice_starter",
+  "author": "LuxrAIjuicy",
+  "url": "https://huggingface.co/LuxrAIjuicy/Jw3_LUMI_JUICE_STARTER",
+  "created_at": "2026-09-11T23:09:26.000Z",
+  "updated_at": "2026-09-11T23:09:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57594566,
+  "storage_human": "58 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.de: Günstige Preise für Elektronik & Foto, Filme, Musik, Bücher ...",
+      "url": "https://www.amazon.de/",
+      "snippet": "Entdecken, shoppen und einkaufen bei Amazon.de: Günstige Preise für Elektronik & Foto, Filme, Musik, Bücher, Games, Spielzeug, …"
+    },
+    {
+      "title": "Anmeldung bei Amazon Business",
+      "url": "https://business.amazon.de/de/login",
+      "snippet": "Sichern Sie sich exklusive Angebote und Mengenrabatte! Melden Sie sich bei Ihrem Amazon Business-Konto an und sparen Sie …"
+    },
+    {
+      "title": "Amazon Music | Hör dir Songs, Podcasts und vieles mehr an",
+      "url": "https://music.amazon.de/",
+      "snippet": "Suche und streame Musik und Podcasts über den Webbrowser. Höre dir deine liebsten Playlists aus über 100 Millionen Songs bei …"
+    },
+    {
+      "title": "Amazon.de",
+      "url": "https://www.amazon.de/gp/css/homepage.html",
+      "snippet": "Hier finden Sie alles, was Sie für Ihren Einkauf benötigen, von Elektronik bis zu Büchern und vielem mehr."
+    },
+    {
+      "title": "Seller Central DE – Werden Sie Noch Heute Amazon-Verkäufer!",
+      "url": "https://sellercentral.amazon.de/",
+      "snippet": "Werden Sie Amazon-Verkaufspartner und profitieren Sie von potenziellen Vorteilen im Wert von über 45,000 €! Starten Sie noch …"
+    }
+  ]
+}

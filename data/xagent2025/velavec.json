@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "xagent2025/VelaVec",
+  "slug": "xagent2025-velavec",
+  "author": "xagent2025",
+  "url": "https://huggingface.co/xagent2025/VelaVec",
+  "created_at": "2026-09-11T23:53:28.000Z",
+  "updated_at": "2026-09-11T23:54:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "velavec",
+    "embedding",
+    "retrieval",
+    "sentence-similarity",
+    "dual-head",
+    "rust",
+    "edge-inference",
+    "en",
+    "base_model:BAAI/bge-small-en-v1.5",
+    "base_model:finetune:BAAI/bge-small-en-v1.5",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9782016,
+  "parameters_human": "9.8M",
+  "storage_bytes": 78258336,
+  "storage_human": "78 MB",
+  "base_model": "BAAI/bge-small-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "豌豆、毛豆、青豆、黄豆、大豆，谁是谁？ - 知乎",
+      "url": "https://www.zhihu.com/question/20297715?sort=created",
+      "snippet": "Jun 15, 2012 · 豌豆是典型的杂豆，虽然它和青大豆一样都是绿色的，形状也差不多，但是它的主要成分是 淀粉。 杂豆的主要成分为碳 …"
+    },
+    {
+      "title": "对公务员的考试一无所知，该怎样准备？ - 知乎",
+      "url": "https://www.zhihu.com/question/321438898",
+      "snippet": "一、前期准备篇（时间段：第一个月的第一天） （一）APP准备 ①问题搜索、经验参考——知乎 首推知乎，更多的上岸者更喜欢在知 …"
+    },
+    {
+      "title": "Windows10系统，有的文件图标出现黑底是怎么回事？ - 知乎",
+      "url": "https://www.zhihu.com/question/40163187",
+      "snippet": "上面所有回答都是没戳中问题核心或者治标不治本。 这个问题也困扰了我很久（Windows11最新版），后来终于发现，这个情况一般 …"
+    },
+    {
+      "title": "官方通报杭州酒局事件，赵某峰、郁某栋已被刑拘，二人对被害人实施 …",
+      "url": "https://www.zhihu.com/question/2073089501455504915",
+      "snippet": "Aug 18, 2026 · 郁某栋是滨江区分管城建的副区长，卡着辖区内所有开发商的脖子。 在杭州，任何一个区，这个位置的领导，乃至他的 …"
+    },
+    {
+      "title": "为啥电脑正常使用会像断电一样突然关机 ？ - 知乎",
+      "url": "https://www.zhihu.com/question/28590954",
+      "snippet": "自动关机故障排除方法： 1 有可能是 BIOS 设置问题，进入 BIOS 里恢复默认设置或把主板的电池拿出来，反扣放电，等 5 分钟在反装 …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "musafa901/gemma-4-31B-it-qat-q4_0-uncensored-heretic-GGUF",
+  "slug": "musafa901-gemma-4-31b-it-qat-q4_0-uncensored-heretic-gguf",
+  "author": "musafa901",
+  "url": "https://huggingface.co/musafa901/gemma-4-31B-it-qat-q4_0-uncensored-heretic-GGUF",
+  "created_at": "2026-09-12T00:48:03.000Z",
+  "updated_at": "2026-09-12T00:48:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "image-text-to-text",
+    "arxiv:2607.02770",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:quantized:google/gemma-4-31B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 19297937216,
+  "storage_human": "19.3 GB",
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HFBoards - NHL Message Board and Forum for National Hockey League",
+      "url": "https://forums.hfboards.com/",
+      "snippet": "Sep 1, 2026 · HFboards is the largest ice hockey discussion forum, covering the NHL, College, Europe, and any other area of major …"
+    },
+    {
+      "title": "OHL | HFBoards - NHL Message Board and Forum for National Hockey …",
+      "url": "https://forums.hfboards.com/forums/ohl.148/",
+      "snippet": "Aug 12, 2026 · 2026 NFL Survivor is now open - Please click here for info and to join the pool - NFL Pickem will begin with Week 2"
+    },
+    {
+      "title": "Montreal Canadiens | HFBoards - NHL Message Board and Forum for ...",
+      "url": "https://forums.hfboards.com/forums/montreal-canadiens.16/",
+      "snippet": "Jul 2, 2026 · 29 minutes ago Pat1993 Sticky HF Habs: 2027 NHL Draft Talk: Pas bons pour DuPont Jun 27, 2026 Replies 117 Views …"
+    },
+    {
+      "title": "Toronto Maple Leafs | HFBoards - NHL Message Board and Forum for ...",
+      "url": "https://forums.hfboards.com/forums/toronto-maple-leafs.17/",
+      "snippet": "Sep 4, 2026 · 2026 NFL Survivor is now open - Please click here for info and to join the pool - NFL Pickem will begin with Week 2"
+    },
+    {
+      "title": "Trade Rumors & Free Agent Talk | HFBoards - NHL Message Board and …",
+      "url": "https://forums.hfboards.com/forums/trade-rumors-free-agent-talk.3/",
+      "snippet": "Sep 30, 2025 · Trade rumors, transactions, and free agent talk. Rumors must use the RUMOR prefix in thread title. Proposals must …"
+    }
+  ]
+}

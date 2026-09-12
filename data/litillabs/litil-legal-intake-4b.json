@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "litillabs/litil-legal-intake-4b",
+  "slug": "litillabs-litil-legal-intake-4b",
+  "author": "litillabs",
+  "url": "https://huggingface.co/litillabs/litil-legal-intake-4b",
+  "created_at": "2026-09-11T23:33:33.000Z",
+  "updated_at": "2026-09-11T23:33:36.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "litil",
+    "legal",
+    "legal-operations",
+    "contract-intake",
+    "structured-generation",
+    "lora",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:nguha/legalbench",
+    "dataset:coastalcph/lex_glue",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143610538,
+  "storage_human": "144 MB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Carrières easyJet | Rejoindre notre équipe",
+      "url": "https://careers.easyjet.com/?lang=fr",
+      "snippet": "Découvrez les possibilités de carrière offertes par easyJet et venez aider des millions de clients à voyager à bas prix en toute …"
+    },
+    {
+      "title": "easyJet Careers | Join our team",
+      "url": "https://careers.easyjet.com/en/home",
+      "snippet": "Explore easyJet careers and help make low-cost travel easy for millions of customers. Browse easyJet jobs for Pilots, Cabin Crew, …"
+    },
+    {
+      "title": "Easyjet, Compagnie Aérienne : plus de 600 emplois (10 ... - Indeed",
+      "url": "https://fr.indeed.com/q-easyjet,-compagnie-a%c3%a9rienne-emplois.html?vjk=f33cff06649c606c",
+      "snippet": "Vous êtes à la recherche d'un emploi : Easyjet, Compagnie Aérienne ? Il y en a 684 disponibles sur Indeed.com, le plus grand site …"
+    },
+    {
+      "title": "easyJet : offres d’emploi | LinkedIn",
+      "url": "https://fr.linkedin.com/company/easyjet/jobs",
+      "snippet": "easyJet | 433 867 abonnés sur LinkedIn. We’re on a mission to make low-cost travel easy. Whatever your role, you’ll connect millions …"
+    },
+    {
+      "title": "easyJet : carrières et emplois | Indeed.com",
+      "url": "https://fr.indeed.com/cmp/Easyjet",
+      "snippet": "Découvrez ce qui fonctionne bien chez easyJet d'après les personnes qui sont le mieux placées pour le savoir. Obtenez des …"
+    }
+  ]
+}

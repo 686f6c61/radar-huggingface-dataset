@@ -5,7 +5,7 @@
   "author": "fpadovani",
   "url": "https://huggingface.co/fpadovani/tam-taml-10mb-ppt-shuff-dyck-10mb_seed10",
   "created_at": "2026-09-11T15:43:37.000Z",
-  "updated_at": "2026-09-11T15:44:27.000Z",
+  "updated_at": "2026-09-11T15:49:20.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 39087104,
   "parameters_human": "39.1M",
-  "storage_bytes": 80074096,
-  "storage_human": "80 MB",
+  "storage_bytes": 627432467,
+  "storage_human": "627 MB",
   "base_model": "goldfish-models/tam_taml_10mb",
   "formats": [
     "safetensors"

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "drewThomasson/fineTunedTTSModels",
+  "slug": "drewthomasson-finetunedttsmodels",
+  "author": "drewThomasson",
+  "url": "https://huggingface.co/drewThomasson/fineTunedTTSModels",
+  "created_at": "2024-12-13T00:00:24.000Z",
+  "updated_at": "2026-09-11T19:40:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 17,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 100861471085,
+  "storage_human": "100.9 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "My Kaspersky | Welcome",
+      "url": "https://my.kaspersky.com/",
+      "snippet": "My Kaspersky is a one-stop point for protection of your digital life and those you care about. Monitor all your digital devices and those …"
+    },
+    {
+      "title": "My Kaspersky | Welcome",
+      "url": "https://my.kaspersky.com/de",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "My Kaspersky | Terms of Use",
+      "url": "https://my.kaspersky.com/Home/TermsOfUse",
+      "snippet": "Read the terms of use for My Kaspersky to understand your rights and responsibilities when using this digital protection platform."
+    },
+    {
+      "title": "My Kaspersky | Termini di utilizzo",
+      "url": "https://my.kaspersky.com/Home/TermsOfUse/?locale=it-IT&redef=1&reseller=kpc_myk-lc_com-lc_onr_emm_ebl_onl_b2c__myk-act_______",
+      "snippet": "My Kaspersky | Termini di utilizzo Caricamento in corso..."
+    },
+    {
+      "title": "My Kaspersky | Условия использования",
+      "url": "https://my.kaspersky.com/Home/TermsOfUse/?locale=ru-RU",
+      "snippet": "My Kaspersky | Условия использования Загрузка..."
+    }
+  ]
+}

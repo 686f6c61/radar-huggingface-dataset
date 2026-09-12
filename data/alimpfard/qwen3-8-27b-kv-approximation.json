@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "alimpfard/qwen3.8-27b-kv-approximation",
+  "slug": "alimpfard-qwen3-8-27b-kv-approximation",
+  "author": "alimpfard",
+  "url": "https://huggingface.co/alimpfard/qwen3.8-27b-kv-approximation",
+  "created_at": "2026-09-11T23:05:21.000Z",
+  "updated_at": "2026-09-11T23:10:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3.8",
+    "prefill",
+    "kv-approximation",
+    "text-generation",
+    "dataset:Manusagents/GPT-5.5-Gemini-3.1-Pro-Grok-4-Claude-Fable-5-Mythos-5-Qwen-3.7-Max-and-more-Distillation-Dataset",
+    "dataset:r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation",
+    "dataset:Salesforce/wikitext",
+    "dataset:mondk/GptModel-CoT",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 931226368,
+  "parameters_human": "931.2M",
+  "storage_bytes": 1515085888,
+  "storage_human": "1.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
+    },
+    {
+      "title": "2026年 9月 显卡天梯图（更新RTX 5090Dv2&RX 9060）",
+      "url": "https://www.zhihu.com/tardis/zm/art/294283384",
+      "snippet": "1080P/2K/4K分辨率，以RTX 5050为基准（25款主流游戏测试成绩取平均值） 数据来源于：TechPowerUp 桌面端显卡天梯图："
+    },
+    {
+      "title": "Vision des likes sur Instagram [Résolu] - Instagram",
+      "url": "https://forums.commentcamarche.net/forum/affich-38266755-vision-des-likes-sur-instagram",
+      "snippet": "Feb 1, 2026 · Instagram a mis en place une mise à jour où seulement le propriétaire du compte peut voir qui a aimé ses publications. …"
+    },
+    {
+      "title": "Guide - Instagram - CCM",
+      "url": "https://it.ccm.net/faq/instagram-550",
+      "snippet": "Profilo Instagram hackerato: un recupero semplificato Instagram continua la sua guerra contro la pirateria. La piattaforma ha... Per …"
+    },
+    {
+      "title": "Publier un carroussel en reel - Forum Instagram",
+      "url": "https://forums.commentcamarche.net/forum/affich-38282276-publier-un-carroussel-en-reel",
+      "snippet": "Apr 9, 2026 · Ajoute plusieurs photos Instagram va les convertir en vidéo avec transitions Tu peux ajouter musique, texte, etc. ???? …"
+    }
+  ]
+}

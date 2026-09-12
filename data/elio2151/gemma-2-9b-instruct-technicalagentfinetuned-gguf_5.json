@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Elio2151/Gemma-2-9B-Instruct-TechnicalAgentFineTuned-GGUF_5",
+  "slug": "elio2151-gemma-2-9b-instruct-technicalagentfinetuned-gguf_5",
+  "author": "Elio2151",
+  "url": "https://huggingface.co/Elio2151/Gemma-2-9B-Instruct-TechnicalAgentFineTuned-GGUF_5",
+  "created_at": "2026-09-11T21:32:20.000Z",
+  "updated_at": "2026-09-11T21:33:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9241705984,
+  "parameters_human": "9.24B",
+  "storage_bytes": 5761057760,
+  "storage_human": "5.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "emama - Forum dyskusyjne | Gazeta.pl",
+      "url": "https://forum.gazeta.pl/forum/f,567,emama.html",
+      "snippet": "Forum Gazeta.pl, tematyka: mama, emama, dziecko, macierzyństwo"
+    },
+    {
+      "title": "Forum - Gazeta.pl",
+      "url": "https://forum.gazeta.pl/forum/0,0.html",
+      "snippet": "co z niego wyrośnie? Wątek na piątek. Randka z ortopedą Zadrapanie na butach OT - taki \"głupi\" czy taki \"mądry\"? Zabawa …"
+    },
+    {
+      "title": "Co robi ematka? - emama - Forum dyskusyjne | Gazeta.pl",
+      "url": "https://forum.gazeta.pl/forum/w,567,178134767,178134767,Co_robi_ematka_.html",
+      "snippet": "Sep 24, 2024 · Taka hipotetyczna sytuacja - ematka na forum jest skonfliktowana z inną forumką, która jej wprost nie znosi. Konflikt …"
+    },
+    {
+      "title": "Społeczeństwo - Forum dyskusyjne | Gazeta.pl",
+      "url": "https://forum.gazeta.pl/forum/f,29,Spoleczenstwo.html",
+      "snippet": "Forum Gazeta.pl, tematyka: społeczeństwo, obyczaje, socjologia, ludzie"
+    },
+    {
+      "title": "2FA i brak możliwości korzystania z Outlooka? - forum.gazeta.pl",
+      "url": "https://forum.gazeta.pl/forum/w,973,179008380,179008380,2FA_i_brak_mozliwosci_korzystania_z_Outlooka_.html",
+      "snippet": "Jun 2, 2025 · Podobnie jest z Gmail - z powodu 2FA Gmail przestal sciagac maile, a jak dotad admini gazety nie ogarneli jeszcze ze …"
+    }
+  ]
+}

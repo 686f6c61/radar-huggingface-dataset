@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "etiennebamas/qwen3-8b-classic-self-distill",
+  "slug": "etiennebamas-qwen3-8b-classic-self-distill",
+  "author": "etiennebamas",
+  "url": "https://huggingface.co/etiennebamas/qwen3-8b-classic-self-distill",
+  "created_at": "2026-09-11T20:44:22.000Z",
+  "updated_at": "2026-09-11T20:48:47.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:VladShash/qwen3-8b-classic-one-shot",
+    "base_model:finetune:VladShash/qwen3-8b-classic-one-shot",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392947559,
+  "storage_human": "16.4 GB",
+  "base_model": "VladShash/qwen3-8b-classic-one-shot",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Advisory Opinion 07-10 - Office of Inspector General",
+      "url": "https://oig.hhs.gov/compliance/advisory-opinions/07-10/",
+      "snippet": "Sep 26, 2007 · Advisory Opinion 07-10 Status Issued Posted Sept. 26, 2007. Concerning the physicians' on-call coverage and …"
+    },
+    {
+      "title": "Advisory Opinion 06-03 - Office of Inspector General",
+      "url": "https://oig.hhs.gov/compliance/advisory-opinions/06-03/",
+      "snippet": "Apr 17, 2006 · Concerning a pharmaceutical company patient assistance program that provides free outpatient prescription drugs to …"
+    },
+    {
+      "title": "Advisory Opinion 03-05 - Office of Inspector General",
+      "url": "https://oig.hhs.gov/compliance/advisory-opinions/03-05/",
+      "snippet": "Concerning a proposed ambulatory surgical center (ASC) arrangement that would be jointly owned by a hospital and a multi-specialty …"
+    },
+    {
+      "title": "Advisory Opinion 22-06 - Office of Inspector General",
+      "url": "https://oig.hhs.gov/compliance/advisory-opinions/22-06/",
+      "snippet": "Apr 10, 2022 · Here’s how you know. Official websites use .gov. A .govwebsite belongs to an official government organization in the …"
+    },
+    {
+      "title": "Advisory Opinion 05-03 - Office of Inspector General",
+      "url": "https://oig.hhs.gov/compliance/advisory-opinions/05-03/",
+      "snippet": "Concerning a proposed arrangement in which a hospital will share with a group of cardiac surgeons a percentage of the hospital's …"
+    }
+  ]
+}

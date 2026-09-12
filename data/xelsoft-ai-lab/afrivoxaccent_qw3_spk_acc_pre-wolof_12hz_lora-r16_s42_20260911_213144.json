@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_pre-wolof_12hz_lora-r16_s42_20260911_213144",
+  "slug": "xelsoft-ai-lab-afrivoxaccent_qw3_spk_acc_pre-wolof_12hz_lora-r16_s42_20260911_213144",
+  "author": "xelsoft-ai-lab",
+  "url": "https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_pre-wolof_12hz_lora-r16_s42_20260911_213144",
+  "created_at": "2026-09-11T22:43:08.000Z",
+  "updated_at": "2026-09-11T22:43:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "wolof",
+    "afrivoxaccent",
+    "base_model:xelsoft-ai-lab/AfriVoxAccent_QW3_spk_wolof-tts_12hz_lora-r32_s42_20260911_174933",
+    "base_model:adapter:xelsoft-ai-lab/AfriVoxAccent_QW3_spk_wolof-tts_12hz_lora-r32_s42_20260911_174933",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 676544744,
+  "storage_human": "677 MB",
+  "base_model": "xelsoft-ai-lab/AfriVoxAccent_QW3_spk_wolof-tts_12hz_lora-r32_s42_20260911_174933",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Platincasino",
+      "url": "https://www.platincasino.com/de",
+      "snippet": "PLATINCASINO’S WELCOME OFFER Platincasino offers an attractive Welcome Package for all new customers who sign-up. You …"
+    },
+    {
+      "title": "Online Casino Games",
+      "url": "https://de1.platincasino.com/home.html",
+      "snippet": "ONLINE CASINO GAMES AT PLATINCASINO Platincasino was founded in 2012 and took its games online in 2013. Since then, …"
+    },
+    {
+      "title": "Promotions and Bonuses - Platincasino",
+      "url": "https://www.platincasino.com/promotions",
+      "snippet": "At our address, you’ll find all your favorite Merkur casino games in HD. Double Triple Chance, Extra 10 Liner, Gold of Persia, Magic …"
+    }
+  ]
+}

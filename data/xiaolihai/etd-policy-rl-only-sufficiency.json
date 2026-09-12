@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Xiaolihai/etd-policy-rl-only-sufficiency",
+  "slug": "xiaolihai-etd-policy-rl-only-sufficiency",
+  "author": "Xiaolihai",
+  "url": "https://huggingface.co/Xiaolihai/etd-policy-rl-only-sufficiency",
+  "created_at": "2026-09-12T01:10:07.000Z",
+  "updated_at": "2026-09-12T01:12:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:model/Qwen3-8B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 535700460,
+  "storage_human": "536 MB",
+  "base_model": "model/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Russia Map | Map of Russia | Collection of Russia Maps",
+      "url": "https://www.mapsofworld.com/russia/",
+      "snippet": "Explore this Russia map to learn everything you want to know about this country."
+    },
+    {
+      "title": "Russia Map - GIS Geography",
+      "url": "https://gisgeography.com/russia-map/",
+      "snippet": "Apr 2, 2025 · This map of Russia displays cities, towns, highways, roads, lakes, and rivers. Satellite imagery and an elevation map of …"
+    },
+    {
+      "title": "Map of Russia with cities and regions — Yandex Maps",
+      "url": "https://yandex.com/maps/225/russia/",
+      "snippet": "Detailed online map of Russia with cities and regions on the website and in the Yandex Maps mobile app. Road map and driving …"
+    },
+    {
+      "title": "Map of Russia – Interactive Maps for Your Trip 2026",
+      "url": "https://russiable.com/russia-maps/",
+      "snippet": "Jul 2, 2026 · On this page I have gathered the maps of Russia you really need to plan a trip: where it is and how big it is, which cities …"
+    },
+    {
+      "title": "Russia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Russia",
+      "snippet": "As the successor state of the Soviet Union, it retains its seat as a permanent member of the United Nations Security Council and is a …"
+    }
+  ]
+}

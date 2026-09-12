@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Ruishalm/sui-plasmids-hive",
+  "slug": "ruishalm-sui-plasmids-hive",
+  "author": "Ruishalm",
+  "url": "https://huggingface.co/Ruishalm/sui-plasmids-hive",
+  "created_at": "2026-09-11T21:27:36.000Z",
+  "updated_at": "2026-09-12T02:18:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8745680,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online Sports Betting and Online Casino | Hollywoodbets",
+      "url": "https://www.hollywoodbets.net/",
+      "snippet": "Bet Builder Back to Old Mobisite HWB Betting App Hollywoodbets Livescores App Hollywoodbets Pitchside App Punters Challenge …"
+    },
+    {
+      "title": "Account Login Page | Hollywoodbets SA",
+      "url": "https://www.hollywoodbets.net/log-in",
+      "snippet": "Login to your Hollywoodbets account securely. Access sports betting, casino games, deposits, withdrawals, and your betting history."
+    },
+    {
+      "title": "Hollywoodbets Mobile - Horse Racing & Sports Betting",
+      "url": "https://promo.hollywoodbets.net/",
+      "snippet": "Hollywood Sportsbook is a licensed betting operator. Hollywoodbets supports responsible gambling. No persons under the age of 18 …"
+    },
+    {
+      "title": "Online Sports Betting and Online Casino | Hollywoodbets",
+      "url": "https://premium-beta.hollywoodbets.net/",
+      "snippet": "Hollywoodbets.net and Hollywoodbets.mobi are licensed by the Gauteng Gambling Board, the Limpopo Gambling Board and the …"
+    },
+    {
+      "title": "Hollywoodbets South Africa | Online casino & betting website",
+      "url": "https://za-hollywoodbets.com/",
+      "snippet": "Aug 10, 2026 · Hollywoodbets South Africa | Discover secure gaming, mobile play, and trusted payment options | Get a full …"
+    }
+  ]
+}

@@ -43,13 +43,14 @@
     "base_model:quantized:Qwen/Qwen3.8-27B",
     "license:apache-2.0",
     "endpoints_compatible",
+    "8-bit",
     "region:us"
   ],
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
+  "parameters": 21232112736,
+  "parameters_human": "21.23B",
   "storage_bytes": 24708479272,
   "storage_human": "24.7 GB",
   "base_model": "Qwen/Qwen3.8-27B",
@@ -58,8 +59,8 @@
   ],
   "is_conversational": true,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-11T02:57:26.120Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

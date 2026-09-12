@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "minjaechoi/qwen36-twla-adaptive-init5-target1p58",
+  "slug": "minjaechoi-qwen36-twla-adaptive-init5-target1p58",
+  "author": "minjaechoi",
+  "url": "https://huggingface.co/minjaechoi/qwen36-twla-adaptive-init5-target1p58",
+  "created_at": "2026-09-12T01:14:30.000Z",
+  "updated_at": "2026-09-12T01:17:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234485269,
+  "storage_human": "70.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What is Ledger? The Ledger Ecosystem Explained | Ledger",
+      "url": "https://www.ledger.com/academy/ledger-nano-the-safest-way-to-manage-crypto",
+      "snippet": "Nov 11, 2022 · Ledger provides uncompromising security for the crypto ecosystem, offering cutting-edge hardware wallets designed …"
+    },
+    {
+      "title": "How Does a Crypto Wallet Work? | Ledger",
+      "url": "https://www.ledger.com/academy/how-does-a-crypto-wallet-work",
+      "snippet": "Nov 23, 2023 · Ledger signers connect to your laptop or smartphone via Ledger Wallet (formerly known as Ledger Live), a secure all …"
+    },
+    {
+      "title": "How Ledger Hardware Wallets (signers) Work",
+      "url": "https://www.ledger.com/academy/topics/ledgersolutions/how-ledger-hardware-wallets-work",
+      "snippet": "May 20, 2024 · If you're wondering how your Ledger hardware wallet works, look no further. Here, we dive into the tech features of …"
+    },
+    {
+      "title": "Understanding Ledger Wallets: How Hardware Crypto Wallets Operate",
+      "url": "https://www.investopedia.com/terms/l/ledger-wallet.asp",
+      "snippet": "Sep 28, 2025 · When using a Ledger or any other cold storage device, it is essential to understand how the technology works and to …"
+    },
+    {
+      "title": "Ledger Wallet Review: How They Work, Pros & Cons | Finder",
+      "url": "https://www.finder.com/ca/cryptocurrency/wallets/ledger-wallets",
+      "snippet": "What is a Ledger wallet, how does it work and how safe is it? Learn how to safely store crypto in this Ledger crypto wallet review."
+    }
+  ]
+}

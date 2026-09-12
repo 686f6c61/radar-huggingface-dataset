@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "minjaechoi/qwen36-twla-taylor-fisher-prefix-init4-lambda16",
+  "slug": "minjaechoi-qwen36-twla-taylor-fisher-prefix-init4-lambda16",
+  "author": "minjaechoi",
+  "url": "https://huggingface.co/minjaechoi/qwen36-twla-taylor-fisher-prefix-init4-lambda16",
+  "created_at": "2026-09-12T01:01:37.000Z",
+  "updated_at": "2026-09-12T01:05:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234485269,
+  "storage_human": "70.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pic & Movie Post | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/forums/pic-movie-post.8/",
+      "snippet": "1 day ago · Post pics or clips of yourself, wife, girlfriend, models, anything you like."
+    },
+    {
+      "title": "Sexuality | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/forums/sexuality.7/",
+      "snippet": "Jun 4, 2016 · This forum is to discuss sex seriously. Ask for tips and advice here."
+    },
+    {
+      "title": "Recommended writers on XNXX | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/recommended-writers-on-xnxx.69697/",
+      "snippet": "Apr 16, 2009 · An idea from Fluffy McNoo from the thread complaining about a lot of negative ratings on stories (undeserved …"
+    },
+    {
+      "title": "Fake users in real men and women threads | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/fake-users-in-real-men-and-women-threads.479438/",
+      "snippet": "Aug 27, 2017 · These threads have been polluted by dummies trying to pass fake photoshopped pics. You can report these users …"
+    },
+    {
+      "title": "General Discussion | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/forums/general-discussion.4/",
+      "snippet": "May 17, 2019 · Anything that doesn't go into the other forums."
+    }
+  ]
+}

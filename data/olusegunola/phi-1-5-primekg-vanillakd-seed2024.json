@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "olusegunola/phi-1.5-primekg-vanillakd-seed2024",
+  "slug": "olusegunola-phi-1-5-primekg-vanillakd-seed2024",
+  "author": "olusegunola",
+  "url": "https://huggingface.co/olusegunola/phi-1.5-primekg-vanillakd-seed2024",
+  "created_at": "2026-09-11T20:36:05.000Z",
+  "updated_at": "2026-09-11T20:36:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 50357392,
+  "storage_human": "50 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arcelormittal-hrportal.neocaseonline.com",
+      "url": "https://arcelormittal-hrportal.neocaseonline.com/Default.aspx?pageId=1399",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Log in to MyHR - MyHR",
+      "url": "https://app.myhr.works/login",
+      "snippet": "By signing into MyHR you agree to our terms."
+    },
+    {
+      "title": "Portail ArcelorMittal France - Accueil",
+      "url": "https://portail-ent-exterieures-arcelormittal-france.arcelormittal.com/site/accueil.jsp",
+      "snippet": "Ce portail est dédié aux entreprises extérieures et prestataires qui interviennent ou qui vont intervenir sur les sites ArcelorMittal …"
+    },
+    {
+      "title": "Log in to MyHR - MyHR",
+      "url": "https://app.myhr.works/login?url=/manage-account/users",
+      "snippet": "By signing into MyHR you agree to our terms."
+    },
+    {
+      "title": "Portail ArcelorMittal France - tout",
+      "url": "https://portail-ent-exterieures-arcelormittal-france.arcelormittal.com/site/tout.jsp?version=L&process=1",
+      "snippet": "tout Sites d'ArcelorMittal France Portail des entreprises extérieures : demande d’accès site"
+    }
+  ]
+}

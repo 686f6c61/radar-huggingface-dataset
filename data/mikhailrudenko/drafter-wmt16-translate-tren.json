@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "MikhailRudenko/drafter-wmt16-translate-tren",
+  "slug": "mikhailrudenko-drafter-wmt16-translate-tren",
+  "author": "MikhailRudenko",
+  "url": "https://huggingface.co/MikhailRudenko/drafter-wmt16-translate-tren",
+  "created_at": "2026-09-11T20:26:36.000Z",
+  "updated_at": "2026-09-11T20:26:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "tr"
+  ],
+  "tags": [
+    "safetensors",
+    "mistral",
+    "speculative-decoding",
+    "domain-specific",
+    "drafter",
+    "translation",
+    "wmt16",
+    "text-generation",
+    "conversational",
+    "en",
+    "tr",
+    "dataset:MikhailRudenko/domain-aware-sd-synthetic",
+    "base_model:MikhailRudenko/drafter-mixed-ut",
+    "base_model:finetune:MikhailRudenko/drafter-mixed-ut",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 156519168,
+  "parameters_human": "156.5M",
+  "storage_bytes": 313056097,
+  "storage_human": "313 MB",
+  "base_model": "MikhailRudenko/drafter-mixed-ut",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iPhone 13 Pro 实际续航体验如何？ - 知乎",
+      "url": "https://www.zhihu.com/question/488871398",
+      "snippet": "iPhone 13 Pro 续航直追 iPad ，旗舰智能手机续航天花板，天下第一。 （iPhone 13 Pro Max 是天） 联通双卡 4G 不连 WiFi ：亮屏时 …"
+    },
+    {
+      "title": "苹果 iPhone 13 Pro Max 1T 能用五年吗？",
+      "url": "https://www.zhihu.com/question/503820792",
+      "snippet": "同理，iPhone13Pro max的卖点也许是性能，也许是影像系统，也许是高刷，也许是续航，但唯独不可能是“五年”。 还是那句话，从需 …"
+    },
+    {
+      "title": "iphone 13 pro max 适合 20w 还是 30w 的快充呢? - 知乎",
+      "url": "https://www.zhihu.com/question/490239048",
+      "snippet": "因此，iPhone 13 Pro Max 使用20W或30W充电器，两者皆可，具体个人选择。 618到了，购物前领红包会更划算： Anker安克20W新 …"
+    },
+    {
+      "title": "苹果13pro升级ios18，肉眼可见卡顿，是苹果故意，还是处理器性能不 …",
+      "url": "https://www.zhihu.com/question/8079323142",
+      "snippet": "Dec 28, 2024 · 说的直白一点，就是iOS 18有很多功能，在你的iPhone 13 Pro上压根儿就是直接阉割的。 我觉得真的没必要阴谋论手 …"
+    },
+    {
+      "title": "【享拆】iPhone 13 Pro拆解：想要13香，记得买Pro - 知乎",
+      "url": "https://www.zhihu.com/zvideo/1424697777444524032",
+      "snippet": "Sep 23, 2021 · 唯颂科技从现在起更名为：微机分WekiHome，感谢大家一路对我们的支持。 更名后的首期视频，我们给大家带来了新 …"
+    }
+  ]
+}

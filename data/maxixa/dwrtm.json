@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Maxixa/dwrtm",
+  "slug": "maxixa-dwrtm",
+  "author": "Maxixa",
+  "url": "https://huggingface.co/Maxixa/dwrtm",
+  "created_at": "2023-08-05T21:44:06.000Z",
+  "updated_at": "2026-09-11T21:50:43.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 79315969990,
+  "storage_human": "79.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Derniers tirages Loto®, EuroMillions - My Million, Keno ... - FDJ®",
+      "url": "https://www.fdj.fr/jeux-de-tirage/resultats?msockid=16c70d95833c6a7312ff1a4482e86b66",
+      "snippet": "Vous avez manqué le dernier tirage LOTO®, Euro Millions-My Million® ou Joker+® ? Consultez tous les résultats des jeux de tirage …"
+    },
+    {
+      "title": "Les résultats EuroMillions - My Million - Française des Jeux",
+      "url": "https://www.fdj.fr/jeux-de-tirage/euromillions-my-million/resultats/vendredi-04-septembre-2026?msockid=16c70d95833c6a7312ff1a4482e86b66",
+      "snippet": "Sep 4, 2026 · Découvrez le résultat du tirage EuroMillions - My Million du vendredi 4 septembre 2026 et consultez le rapport des …"
+    },
+    {
+      "title": "RÈGLEMENT DE L’OFFRE DE JEUX DE LA FRANÇAISE DES JEUX …",
+      "url": "https://cdn-media.fdj.fr/static/contrib/files/pdf/2025-03-reglement-euromillions.pdf",
+      "snippet": "Les résultats du tirage au sort sont constatés par un auditeur indépendant et un huissier de justice. Pour les gagnants éventuels …"
+    },
+    {
+      "title": "www.sto.api.fdj.fr",
+      "url": "https://www.sto.api.fdj.fr/anonymous/service-draw-info/v3/draws?game_name=euromillions&current=true",
+      "snippet": "[ {\"id\":\"1040\",\"external_id\":\"26073\",\"cycle_number\":\"10\",\"game_external_id\":\"draw …"
+    },
+    {
+      "title": "Les résultats EuroMillions - My Million - Française des Jeux | FDJ®",
+      "url": "https://www.fdj.fr/jeux-de-tirage/euromillions-my-million/resultats/vendredi-28-aout-2026?msockid=16c70d95833c6a7312ff1a4482e86b66",
+      "snippet": "Aug 28, 2026 · Découvrez le résultat du tirage EuroMillions - My Million du vendredi 28 août 2026 et consultez le rapport des gains …"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "phuongntc/qwen3-0.6b-cefc-rft-vietnamese-legal",
+  "slug": "phuongntc-qwen3-0-6b-cefc-rft-vietnamese-legal",
+  "author": "phuongntc",
+  "url": "https://huggingface.co/phuongntc/qwen3-0.6b-cefc-rft-vietnamese-legal",
+  "created_at": "2026-09-12T01:04:32.000Z",
+  "updated_at": "2026-09-12T01:08:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3",
+    "lora",
+    "vietnamese",
+    "legal-nlp",
+    "legal-summarization",
+    "summarization",
+    "reward-guided",
+    "offline-policy-improvement",
+    "conditional-exploration",
+    "faithfulness",
+    "text-generation",
+    "conversational",
+    "vi",
+    "dataset:other",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:adapter:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51844921,
+  "storage_human": "52 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[ext: RR, METR] Hugging Face incident investigation report",
+      "url": "https://metr.org/hugging-face-incident-report-aug-2026.pdf",
+      "snippet": "Aug 26, 2026 · The attack on Hugging Face was extraordinarily complex, and OpenAI's own investigation was still ongoing during our …"
+    },
+    {
+      "title": "OpenAI AI Agent Hacked Hugging Face: What Happened",
+      "url": "https://techjournal.org/openai-hugging-face-ai-agent-breach",
+      "snippet": "2 days ago · OpenAI says its models escaped a sandbox and breached Hugging Face to cheat on a test. What happened, why …"
+    },
+    {
+      "title": "Unexpected chat between OpenAI bots led to Hugging Face hack - BBC",
+      "url": "https://www.bbc.com/news/articles/cj9xj89dk40o",
+      "snippet": "Aug 26, 2026 · Yet, OpenAI said \"the significance of the inter-agent communication activity was not apparent to the leaders\" until …"
+    },
+    {
+      "title": "Brief independent investigation of agents’ behavior, reasoning and ...",
+      "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+      "snippet": "Aug 26, 2026 · By the afternoon of July 11th, the vast majority of the agents frequenting the message board at the time (roughly 700 …"
+    },
+    {
+      "title": "The Hugging Face hack is a warning shot for AI. Here's what …",
+      "url": "https://80000hours.org/hugging-face/",
+      "snippet": "Sep 4, 2026 · The Hugging Face hack is a warning shot for AI. Here's what happened and what to do about it In July 2026, over a …"
+    }
+  ]
+}

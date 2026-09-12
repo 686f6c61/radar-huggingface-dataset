@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "DSAD123GFTQ/MyAwesomeModel",
+  "slug": "dsad123gftq-myawesomemodel",
+  "author": "DSAD123GFTQ",
+  "url": "https://huggingface.co/DSAD123GFTQ/MyAwesomeModel",
+  "created_at": "2026-09-11T22:12:55.000Z",
+  "updated_at": "2026-09-11T23:10:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "region:us",
+    "license:mit",
+    "endpoints_compatible"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DCNews - Știri de ultimă oră din România și din lume",
+      "url": "https://www.dcnews.ro/",
+      "snippet": "Ziar online - DC News va aduce cele mai noi stiri din politica, monden, sport, international. Cititi stirea zilei si fiti informati. Realitatea …"
+    },
+    {
+      "title": "Ultimele știri din România și din lume - DCNews",
+      "url": "https://www.dcnews.ro/news",
+      "snippet": "Află cele mai noi informații din secțiunea Stiri, pe site-ul DCNews - analize, explicații și context real."
+    },
+    {
+      "title": "LOTO. Rezultatele tragerilor de joi, 20 august, 2026 | DCNews",
+      "url": "https://www.dcnews.ro/loto-rezultatele-tragerilor-de-joi-20-august-2026_1077261.html",
+      "snippet": "LOTO. Joi, 20 august, 2026, au loc noi trageri Loto 6/49, Noroc, Joker, Noroc Plus, Loto 5/40 si Super Noroc. DC News va publica …"
+    },
+    {
+      "title": "Știri Tehnologie. Ultimele informații și noutăți | DCNews",
+      "url": "https://www.dcnews.ro/tehnologie",
+      "snippet": "Sep 4, 2026 · Expert DNSC, explicații pentru DC NEWS despre atacurile cibernetice asupra instituțiilor statului. Când au notificat …"
+    },
+    {
+      "title": "Planul AUR pentru noul Guvern al României. Dan Dungaciu, la DC News",
+      "url": "https://www.dcnews.ro/video/planul-aur-pentru-noul-guvern-al-romaniei-dan-dungaciu-la-dc-news_142596.html",
+      "snippet": "Aug 25, 2026 · VIDEO - Dan Dungaciu, prim-vicepreședinte AUR, vine la interviurile DC News! Află strategia partidului pentru criza …"
+    }
+  ]
+}

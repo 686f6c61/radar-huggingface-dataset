@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "atharvreddy/vision-language-pretraining-review",
+  "slug": "atharvreddy-vision-language-pretraining-review",
+  "author": "atharvreddy",
+  "url": "https://huggingface.co/atharvreddy/vision-language-pretraining-review",
+  "created_at": "2026-09-11T23:12:09.000Z",
+  "updated_at": "2026-09-11T23:12:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "vision-language-pretraining",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "At Your Earliest Convenience Meaning Explained Clearly",
+      "url": "https://meaningzoo.com/at-your-earliest-convenience-meaning/",
+      "snippet": "May 18, 2026 · Simple Definition “At your earliest convenience” means: “Please do this as soon as you reasonably can.” It’s a polite …"
+    },
+    {
+      "title": "At your earliest convenience - Grammar Blueprint",
+      "url": "https://grammarblueprint.com/at-your-earliest-convenience/",
+      "snippet": "In simpler terms, this phrase means, “Please do this when it’s convenient for you, but I would appreciate it as soon as possible.” The …"
+    },
+    {
+      "title": "Municipality Approval for Porta Cabin: Full Dubai Process",
+      "url": "https://baitalmaha.com/municipality-approval-for-porta-cabin/",
+      "snippet": "Jun 13, 2026 · Once everything clears, you receive a Temporary Structure Permit, sometimes called a Placement Permit, that lets …"
+    },
+    {
+      "title": "At Your Earliest Convenience | Meaning & Polite Alternatives",
+      "url": "https://languagetool.org/insights/post/at-your-earliest-convenience/",
+      "snippet": "Jun 11, 2025 · At your earliest convenience is a common business phrase that means “as soon as you possibly can without imposing …"
+    },
+    {
+      "title": "Porta Cabin Management Guidelines",
+      "url": "https://www.scribd.com/document/893743355/Porta-Cabin-Management-Demoblziation-Policy",
+      "snippet": "The Porta Cabin Management Policy outlines standardized procedures for the lifecycle of porta cabins, including mobilization, usage, …"
+    }
+  ]
+}

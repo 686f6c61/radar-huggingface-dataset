@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "ScottzillaSystems/Dolphin3-Cyber-8B-GGUF",
+  "slug": "scottzillasystems-dolphin3-cyber-8b-gguf",
+  "author": "ScottzillaSystems",
+  "url": "https://huggingface.co/ScottzillaSystems/Dolphin3-Cyber-8B-GGUF",
+  "created_at": "2026-09-11T22:18:56.000Z",
+  "updated_at": "2026-09-11T22:18:56.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama",
+    "text-generation",
+    "GGUF",
+    "llama-cpp",
+    "unsloth",
+    "cybersecurity",
+    "pentesting",
+    "security",
+    "abliterated",
+    "uncensored",
+    "ethical-hacking",
+    "red-team",
+    "blue-team",
+    "infosec",
+    "offensive-security",
+    "CTF",
+    "bug-bounty",
+    "conversational",
+    "en",
+    "dataset:custom-cybersecurity-dataset",
+    "license:llama3.1",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030277696,
+  "parameters_human": "8.03B",
+  "storage_bytes": 69610066944,
+  "storage_human": "69.6 GB",
+  "base_model": "huihui-ai/Dolphin3.0-Llama3.1-8B-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Glinzig tanzt - Gemeinde Kolkwitz",
+      "url": "https://gemeinde-kolkwitz.de/event/glinzig-tanzt/",
+      "snippet": "Allgemein Glinzig tanzt « Alle Veranstaltungen Glinzig tanzt 12. September - 18:00 «Dorfbeats Oktoberfest in Glinzig Wendische …"
+    },
+    {
+      "title": "Festwochenende in Glinzig - Nachrichten aus Südbrandenburg",
+      "url": "https://maerkischer-bote.de/region/festwochenende-in-glinzig-251720",
+      "snippet": "Aug 13, 2026 · September lädt Glinzig wieder zu einem abwechslungsreichen Festwochenende auf den Sportplatz ein. Ob …"
+    },
+    {
+      "title": "Tanz in den Mai in Glinzig - Gemeinde Kolkwitz",
+      "url": "https://gemeinde-kolkwitz.de/event/tanz-in-den-mai-in-glinzig/",
+      "snippet": "Apr 30, 2024 · Die Verwaltung teilt Ihnen und allen Nutzern dieser Plattform mit, wie sie den Missstand beseitigen wird. …"
+    },
+    {
+      "title": "Termine – Glinzig Website",
+      "url": "https://glinzig.de/termine/",
+      "snippet": "Termine Copyright © 2026 Glinzig Website"
+    },
+    {
+      "title": "Glinzig Website",
+      "url": "https://glinzig.de/",
+      "snippet": "Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
+    }
+  ]
+}

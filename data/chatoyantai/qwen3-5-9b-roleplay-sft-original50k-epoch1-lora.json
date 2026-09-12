@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ChatoyantAI/qwen3.5-9b-roleplay-sft-original50k-epoch1-lora",
+  "slug": "chatoyantai-qwen3-5-9b-roleplay-sft-original50k-epoch1-lora",
+  "author": "ChatoyantAI",
+  "url": "https://huggingface.co/ChatoyantAI/qwen3.5-9b-roleplay-sft-original50k-epoch1-lora",
+  "created_at": "2026-09-11T18:34:31.000Z",
+  "updated_at": "2026-09-11T18:34:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3_5",
+    "lora",
+    "sft",
+    "roleplay",
+    "conversational",
+    "text-generation",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 366291501,
+  "storage_human": "366 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anthony Ferraro — смотреть онлайн все 145 видео в 2026 | VK Видео",
+      "url": "https://m.vkvideo.ru/@id614947180",
+      "snippet": "Nov 6, 2014 · Anthony Ferraro — 145 видео. Смотрите онлайн VK Видео"
+    },
+    {
+      "title": "https://vk.com/album-200860779_284574624 2026 | Big Love (Growth / GTS …",
+      "url": "https://vk.ru/wall-200860779_349",
+      "snippet": "Jun 1, 2022 · Big Love (Growth / GTS / Giantess) вернуться к странице Посты сообщества Все посты Пост на стене"
+    },
+    {
+      "title": "Edo Edo — смотреть онлайн все 171 видео в 2026 | VK Видео",
+      "url": "https://m.vkvideo.ru/@id344441575",
+      "snippet": "Giantess Ashlynn Taylor - Sole purpose SFX Epic 4k Edo Edo 3,5K просмотров · 8 ноября 2025 20:41"
+    },
+    {
+      "title": "BEST GIANTESS - Koregin Diss | VK Видео",
+      "url": "https://vkvideo.ru/playlist/851193368_2",
+      "snippet": "Aug 30, 2026 · Koregin Diss — 222 видео. Смотрите онлайн VK Видео"
+    },
+    {
+      "title": "Giantess Avenue - Koregin Diss | VK Видео",
+      "url": "https://vkvideo.ru/playlist/851193368_1",
+      "snippet": "Aug 23, 2026 · Koregin Diss — 207 видео. Смотрите онлайн VK Видео"
+    }
+  ]
+}

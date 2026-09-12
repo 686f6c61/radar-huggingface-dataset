@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Oscilla/Bonsai-4B-mlx-1bit",
+  "slug": "oscilla-bonsai-4b-mlx-1bit",
+  "author": "Oscilla",
+  "url": "https://huggingface.co/Oscilla/Bonsai-4B-mlx-1bit",
+  "created_at": "2026-09-11T20:41:33.000Z",
+  "updated_at": "2026-09-11T20:41:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "1-bit",
+    "apple-silicon",
+    "on-device",
+    "prismml",
+    "bonsai",
+    "text-generation",
+    "conversational",
+    "base_model:prism-ml/Bonsai-4B-unpacked",
+    "base_model:finetune:prism-ml/Bonsai-4B-unpacked",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 188708056,
+  "parameters_human": "188.7M",
+  "storage_bytes": 640395135,
+  "storage_human": "640 MB",
+  "base_model": "prism-ml/Bonsai-4B-unpacked",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wat doet eiwit in ijs? - Webwoordenboek.nl",
+      "url": "https://webwoordenboek.nl/kenniscentrum/wat-doet-eiwit-in-ijs",
+      "snippet": "Waarom moet er ei in ijs? Eieren. De eieren verbeteren de structuur van het ijs en maken het smeuïger. De meeste soorten roomijs …"
+    },
+    {
+      "title": "Hoeveel suiker zit er in ijs? - Diabetes Fonds",
+      "url": "https://www.diabetesfonds.nl/gezond-leven/gezond-eten/minder-suiker/hoeveel-suiker-zit-er-in-ijs",
+      "snippet": "IJsjes zijn lekker zoet, meestal bevatten ze dan ook veel suiker. Hoeveel suiker zit er in jouw favoriete ijs? Lees het op …"
+    },
+    {
+      "title": "Wat zit er in ijs? - Webwoordenboek.nl",
+      "url": "https://webwoordenboek.nl/kenniscentrum/wat-zit-er-in-ijs",
+      "snippet": "Het wordt vaak gemaakt van bevroren room, waar onder meer suiker en eieren bij zijn gedaan. IJs wordt soms ook gemaakt van …"
+    },
+    {
+      "title": "Hoe gezond is ijs? Calorieën, suiker, E-nummers en slimme keuzes",
+      "url": "https://www.optimalegezondheid.com/hoe-gezond-is-ijs/",
+      "snippet": "Jul 11, 2013 · Roomijs bestaat klassiek uit melk, room, suiker en soms eieren. De meeste fabrieksijsjes bevatten daarnaast …"
+    },
+    {
+      "title": "Ijs: De caloriën van ijssoorten - Mens en Gezondheid",
+      "url": "https://mens-en-gezondheid.infonu.nl/dieet/57041-de-calorizon-van-ijssoorten.html",
+      "snippet": "IJs bevat vet, suiker, maar veel ijssoorten (behalve waterijsjes) bevatten melk en eieren. Deze leveren proteïnen, die belangrijk zijn …"
+    }
+  ]
+}

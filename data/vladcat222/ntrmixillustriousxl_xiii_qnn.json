@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "vladcat222/ntrMIXIllustriousXL_xiii_QNN",
+  "slug": "vladcat222-ntrmixillustriousxl_xiii_qnn",
+  "author": "vladcat222",
+  "url": "https://huggingface.co/vladcat222/ntrMIXIllustriousXL_xiii_QNN",
+  "created_at": "2026-09-12T00:41:10.000Z",
+  "updated_at": "2026-09-12T01:17:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-to-image",
+    "base_model:misri/ntrMIXIllustriousXL_xiii",
+    "base_model:finetune:misri/ntrMIXIllustriousXL_xiii",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3689760564,
+  "storage_human": "3.7 GB",
+  "base_model": "misri/ntrMIXIllustriousXL_xiii",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/sa",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=ar",
+      "snippet": "نزِّل تطبيق YouTube الرسمي للهواتف والأجهزة اللوحية التي تعمل بنظام التشغيل Android. واطّلِع على المحتوى الذي يشاهده المستخدمون من حول العالم، من الفيديوهات الموسيقية الأكثر رواجًا إلى …"
+    },
+    {
+      "title": "YouTube - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.automotive.youtube&hl=ar",
+      "snippet": "احصل على تطبيق YouTube الرسمي في سيارتك. شاهد ما يشاهده العالم - بدءًا من مقاطع الفيديو الموسيقية الأكثر رواجًا وحتى مقاطع الفيديو الشائعة في الألعاب والأزياء والجمال والأخبار والتعلم …"
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/YouTube/ar",
+      "snippet": "YouTube's official YouTube channel You found us. Welcome to the official YouTube channel – a home for the biggest moments, the …"
+    }
+  ]
+}

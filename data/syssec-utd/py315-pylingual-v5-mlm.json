@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "syssec-utd/py315-pylingual-v5-mlm",
+  "slug": "syssec-utd-py315-pylingual-v5-mlm",
+  "author": "syssec-utd",
+  "url": "https://huggingface.co/syssec-utd/py315-pylingual-v5-mlm",
+  "created_at": "2026-09-11T23:53:55.000Z",
+  "updated_at": "2026-09-11T23:54:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "fill-mask",
+    "generated_from_trainer",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109506864,
+  "parameters_human": "109.5M",
+  "storage_bytes": 438056929,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tour - Maroon 5",
+      "url": "https://www.maroon5.com/tour/",
+      "snippet": "6 days ago · Explore Maroon 5's official tour dates and locations."
+    },
+    {
+      "title": "Maroon 5 - “Memories” Out Now",
+      "url": "https://memories.maroon5.com/",
+      "snippet": "Explore Maroon 5's latest single \"Memories\" and stream it now."
+    },
+    {
+      "title": "Naltrexone | Buy Generic Online - Maroon 5",
+      "url": "https://www.maroon5.com/naltrexone-buy-generic-online-0/",
+      "snippet": "Dec 11, 2016 · Patients with a history of cardiac event or stroke in the last six months, life-threatening arrhythmias, or congestive …"
+    },
+    {
+      "title": "'JORDI' DELUXE CD - Maroon 5",
+      "url": "https://shopuk.maroon5.com/products/jordi-deluxe-cd?currency=GBP",
+      "snippet": "The eagerly awaited new album from Maroon 5, Jordi, is the band’s first since the critically acclaimed red pill blues. The album will …"
+    },
+    {
+      "title": "'JORDI' CD - Maroon 5",
+      "url": "https://shopuk.maroon5.com/collections/frontpage/products/jordi-cd?currency=GBP",
+      "snippet": "The eagerly awaited new album from Maroon 5, Jordi, is the band’s first since the critically acclaimed red pill blues. The album will …"
+    }
+  ]
+}

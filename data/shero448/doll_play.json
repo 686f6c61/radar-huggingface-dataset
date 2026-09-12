@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Shero448/doll_play",
+  "slug": "shero448-doll_play",
+  "author": "Shero448",
+  "url": "https://huggingface.co/Shero448/doll_play",
+  "created_at": "2026-09-11T22:35:25.000Z",
+  "updated_at": "2026-09-11T22:36:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:John6666/prefect-illustrious-xl-v15-sdxl",
+    "base_model:adapter:John6666/prefect-illustrious-xl-v15-sdxl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 257899931,
+  "storage_human": "258 MB",
+  "base_model": "John6666/prefect-illustrious-xl-v15-sdxl",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "4月のらっ好 – 三遊亭らっ好オフィシャルサイト",
+      "url": "https://rakkou.com/news/?p=1752",
+      "snippet": "Feb 28, 2026 · 4/4 （土） しのぶ亭 らっ好・こんせいそん二人会 4/5（日） 9trip cafe 落語会 三遊亭らっ好出演 4/6（月） 両国寄席 …"
+    },
+    {
+      "title": "6月のらっ好 – 三遊亭らっ好オフィシャルサイト",
+      "url": "https://rakkou.com/news/?p=1769",
+      "snippet": "Jun 1, 2026 · 6/2 （火） 連雀亭ワンコイン寄席 / 亀戸梅屋敷 / 両国寄席 6/7（日） 連雀亭ワンコイン寄席 6/9（火） 両国寄席 6/10（ …"
+    },
+    {
+      "title": "三遊亭らっ好 - オフィシャルサイト",
+      "url": "https://rakkou.com/",
+      "snippet": "落語とは日本の伝統的な話芸。噺の最後に「オチ」がつくのが特徴。落語は身振りと手振りのみで噺を進め、一人何役をも演じます …"
+    },
+    {
+      "title": "落語会 – 三遊亭らっ好オフィシャルサイト - rakkou.com",
+      "url": "https://rakkou.com/news/?cat=2",
+      "snippet": "開催日：2026年6月14日（日） 時間：18:00開演 17:30開場 場所：9trip cafeにて（東京都北区東十条3-3-1 RJR プレシア東十条ガー …"
+    },
+    {
+      "title": "3月6日（金）三遊亭らっ好落語会 – 三遊亭らっ好オフィシャルサイト",
+      "url": "https://rakkou.com/news/?p=1758",
+      "snippet": "開催日：2026年3月6日（金） 時間：18:30開演 19:00開場 場所：池之端しのぶ亭 木戸銭：2,000円 (当日券のみ) ご予約 ご予約は、 …"
+    }
+  ]
+}

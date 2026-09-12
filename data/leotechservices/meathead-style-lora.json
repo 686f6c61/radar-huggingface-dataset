@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "LeoTechServices/meathead-style-lora",
+  "slug": "leotechservices-meathead-style-lora",
+  "author": "LeoTechServices",
+  "url": "https://huggingface.co/LeoTechServices/meathead-style-lora",
+  "created_at": "2026-09-11T23:57:40.000Z",
+  "updated_at": "2026-09-12T00:49:45.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "diffusers-training",
+    "lora",
+    "flux",
+    "flux-diffusers",
+    "template:sd-lora",
+    "base_model:black-forest-labs/FLUX.1-dev",
+    "base_model:adapter:black-forest-labs/FLUX.1-dev",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 546867095,
+  "storage_human": "547 MB",
+  "base_model": "black-forest-labs/FLUX.1-dev",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Molift Raiser Pro - Etac",
+      "url": "https://www.etac.com/de-de/deutschland/produkte/transferhilfen/aufstehhilfen/molift-raiser-pro/",
+      "snippet": "Der Molift Raiser Pro Block wird verwendet wenn der Benutzer eine höhere Fußposition benötigt. Der Block wird auf die Grundplatte …"
+    },
+    {
+      "title": "Molift Raiser Pro - Etac",
+      "url": "https://www.etac.com/products/patient-handling/campaigns/molift-raiser-pro/",
+      "snippet": "From improving balance, sitting on the bedside to standing up, Molift Raiser Pro is used for transferring a person from one sitting …"
+    },
+    {
+      "title": "Etac Molift Raiser Pro - careshop.de",
+      "url": "https://careshop.de/products/etac-molift-raiser-pro",
+      "snippet": "Der Molift Raiser Pro von Etac ist eine manuelle Aufsteh-, Umsetz- und Transferhilfe, die mit zahlreichen Eigenschaften ausgestattet …"
+    },
+    {
+      "title": "Aufrichthilfe Etac Raiser Pro für Pflege kaufen",
+      "url": "https://www.sanitaets-online.de/alltagshilfen-moebel/badehilfen/transferhilfen/3839/etac-raiser-pro-transferhilfe",
+      "snippet": "Raiser Pro Aufstehhilfe von Etac - für komfortablen Transfer! Mit der Aufrichthilfe kann ein Patient sicher vom Sessel oder Pflegebett …"
+    },
+    {
+      "title": "Etac Aufstehhilfe Molift Raiser Pro - SENIOLA",
+      "url": "https://www.seniola.de/catalog/product_info.php?products_id=1769",
+      "snippet": "Der Handgriff des Molift Raiser Pro bietet dem Pflegebedürftigen viele Möglichkeiten, seine Hände frei zu platzieren. Ist der …"
+    }
+  ]
+}

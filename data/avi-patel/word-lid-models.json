@@ -5,7 +5,7 @@
   "author": "avi-patel",
   "url": "https://huggingface.co/avi-patel/word-LID-models",
   "created_at": "2026-09-09T15:42:51.000Z",
-  "updated_at": "2026-09-10T05:48:47.000Z",
+  "updated_at": "2026-09-11T17:37:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "safetensors",
+    "arxiv:2609.11851",
     "license:apache-2.0",
     "region:us"
   ],

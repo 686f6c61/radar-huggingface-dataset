@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "filesmuggler/act_cube_cup",
+  "slug": "filesmuggler-act_cube_cup",
+  "author": "filesmuggler",
+  "url": "https://huggingface.co/filesmuggler/act_cube_cup",
+  "created_at": "2026-09-11T22:42:56.000Z",
+  "updated_at": "2026-09-11T22:43:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:filesmuggler/experiment-cube-cup-100-l_diagonal-full",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "الرئيسية | المنصف في القدرات",
+      "url": "https://elmonsf.com/",
+      "snippet": "المنصف في القدرات - منصة متخصصة في التحضير لاختبار القدرات العامة GAT. نماذج محاكاة، بنوك أسئلة محدثة، شروحات فيديو للقسم الكمي. ابدأ الآن وحقق أعلى الدرجات."
+    },
+    {
+      "title": "Comments on: - files.elmonsf.com",
+      "url": "https://files.elmonsf.com/courses/%d8%af%d9%88%d8%b1%d8%a9-%d8%a7%d9%84%d8%aa%d8%a3%d8%b3%d9%8a%d8%b3-2022/feed/",
+      "snippet": "أفضل مصدر للكميWed, 18 Jun 2025 21:30:19 +0000hourly 1 https://wordpress.org/?v=7.1"
+    },
+    {
+      "title": "Comments on: test",
+      "url": "https://files.elmonsf.com/test/feed/",
+      "snippet": "Подготовка может занять от нескольких минут на консультацию до более длительного периода, если необходимо полное …"
+    },
+    {
+      "title": "elmonsf.com",
+      "url": "https://elmonsf.com/cf-fonts/s/almarai/5.0.11/arabic/400/normal.woff2",
+      "snippet": "wOF2 {¸ •à{S Ö: Œ `…\\ š „ú „µ2 „F 6 $ ‰ ƒ –N #[ pq Ý¶]#@Kw ýZü[« ¢„yÖwp;¾i²ì£¢²ž Öz¢ÿÿÿÏN rèý•ûO ” 6-Ý êB@p„“ H¹”Rr …"
+    },
+    {
+      "title": "api.elmonsf.com",
+      "url": "https://api.elmonsf.com/testimonials",
+      "snippet": "المنصف ، استاذ عظيم و شرحه اسطوري ، ناس كتيرة جداً كانت من مشاكلهم في القدرات هي الكمي و لكن مع المنصف ، بقت سهلة جداً و بتجربتي الحمدلله قفلت معاه و كان بالنسبة لي من اكتر الاساتذة حباً له …"
+    }
+  ]
+}

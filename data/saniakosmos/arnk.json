@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "saniakosmos/arnk",
+  "slug": "saniakosmos-arnk",
+  "author": "saniakosmos",
+  "url": "https://huggingface.co/saniakosmos/arnk",
+  "created_at": "2026-09-12T01:25:42.000Z",
+  "updated_at": "2026-09-12T01:26:45.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 234962586,
+  "storage_human": "235 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Window Air Sealing Techniques | Ask This Old House - YouTube",
+      "url": "https://www.youtube.com/watch?v=heizjoK2cHA",
+      "snippet": "Feb 20, 2022 · The team discusses efficiency ratings for older single-pane windows compared to today’s options and offers tips to …"
+    },
+    {
+      "title": "Sealing Drafty Windows: How to Keep the Heat in Without Buying ...",
+      "url": "https://www.moneypit.com/sealing-drafty-windows-how-keep-heat-without-buying-replacement-windows/",
+      "snippet": "Drafty windows can have a big impact on your energy costs as well as your comfort. Short of purchasing replacement windows, there …"
+    },
+    {
+      "title": "6 Easy Ways to Fix Drafty Windows & Save Money | Indow",
+      "url": "https://indowwindows.com/resources/blog/6-simple-ways-fix-drafty-windows",
+      "snippet": "Looking for ways to fix drafty windows without replacing them? Here are suggestions to insulate drafty windows, including Indow …"
+    },
+    {
+      "title": "7 Inexpensive DIY Ways to Seal a Drafty Window Without Buying …",
+      "url": "https://www.journeymanhq.com/718217/how-to-seal-a-drafty-window-without-buying-new-ones/",
+      "snippet": "7 Inexpensive DIY Ways to Seal a Drafty Window Without Buying New Ones Stop heat loss and save money this winter with 7 …"
+    },
+    {
+      "title": "How to Seal Windows to Save on Your Energy Bill",
+      "url": "https://www.bhg.com/how-to-seal-windows-8742983",
+      "snippet": "Jan 2, 2025 · How to Seal Windows While replacing your windows with new energy-efficient ones is the most effective way to stop …"
+    }
+  ]
+}

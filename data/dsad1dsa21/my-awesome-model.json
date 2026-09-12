@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "dsad1dsa21/my-awesome-model",
+  "slug": "dsad1dsa21-my-awesome-model",
+  "author": "dsad1dsa21",
+  "url": "https://huggingface.co/dsad1dsa21/my-awesome-model",
+  "created_at": "2026-09-12T01:20:37.000Z",
+  "updated_at": "2026-09-12T01:21:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "02和16是什么动漫 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1891346905142366308.html",
+      "snippet": "02和16是动漫《DARLING in the FRANXX》中的人物，这部动漫是由TRIGGER和A-1 Pictures合作创造出的科幻题材类的动画片，故 …"
+    },
+    {
+      "title": "【心得】DARLING in the FRANXX感想 @DARLING in the FRANXX 哈啦 …",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=47420&snA=1133",
+      "snippet": "Jun 23, 2023 · DARLING in the FRANXX心得 02因為自己是怪物、不想讓廣變成怪物、希望他保有人類的姿態，而不希望他來找自 …"
+    },
+    {
+      "title": "darling是什么意思？_百度知道",
+      "url": "https://zhidao.baidu.com/question/219407418.html",
+      "snippet": "darling的意思是心爱的人；亲爱的。 darling的读音是英 ['dɑːlɪŋ] 美 ['dɑrlɪŋ] 拓展资料： 词组 1、a perfect darling 极可爱的人 2、curled …"
+    },
+    {
+      "title": "为什么说 Darling in the Franxx 烂尾？ - 知乎",
+      "url": "https://www.zhihu.com/question/322961657",
+      "snippet": "因为有人说不好看，这是烂片。 粉丝就想反驳，又说不出话来。 于是改口说前期还是挺好看的，就是烂尾了。 这就是烂尾说的由来。 …"
+    },
+    {
+      "title": "【情報】動畫《DARLING in the FRANXX》人物設定介紹",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=47420&snA=4",
+      "snippet": "Oct 15, 2017 · 而根據先前釋出的宣傳廣告的文字來看，DARLING（親愛的）就是「FRANXX」稱呼駕駛員的用詞，不過看起來感覺是 …"
+    }
+  ]
+}

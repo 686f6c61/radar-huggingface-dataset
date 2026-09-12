@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "JWei05/qwen2.5-3b-deepscaler-critic-priv0",
+  "slug": "jwei05-qwen2-5-3b-deepscaler-critic-priv0",
+  "author": "JWei05",
+  "url": "https://huggingface.co/JWei05/qwen2.5-3b-deepscaler-critic-priv0",
+  "created_at": "2026-09-11T22:31:00.000Z",
+  "updated_at": "2026-09-11T22:32:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rl",
+    "ppo",
+    "critic",
+    "value-function",
+    "deepscaler",
+    "base_model:Qwen/Qwen2.5-3B",
+    "base_model:finetune:Qwen/Qwen2.5-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085940737,
+  "parameters_human": "3.09B",
+  "storage_bytes": 12355242900,
+  "storage_human": "12.4 GB",
+  "base_model": "Qwen/Qwen2.5-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Davutlar - Kusadasi",
+      "url": "https://kusadasi.com/de/leben/kusadasi-davutlar/",
+      "snippet": "Es liegt etwa 20 Kilometer südlich von Kuşadası und bietet eine ruhige und entspannte Atmosphäre sowie wunderschöne Strände …"
+    },
+    {
+      "title": "Davutlar - Kusadasi",
+      "url": "https://kusadasi.com/tr/yasam/kusadasi-davutlar/",
+      "snippet": "Davutlar, Kuşadası ve Aydın sınırları içinde yer alan ve Kuşadası'na sadece 20 km uzaklıkta olan bir yerdir. Doğa severler için …"
+    },
+    {
+      "title": "DIE 10 BESTEN Hotels in Davutlar 2026 schon ab 50€ - Tripadvisor",
+      "url": "https://www.tripadvisor.de/Hotels-g1192096-Davutlar_Kusadasi_Turkish_Aegean_Coast-Hotels.html",
+      "snippet": "Beste Hotels in Davutlar bei Tripadvisor: Finden Sie 1.042 Bewertungen von Reisenden, authentische Reisefotos und Top-Angebote …"
+    },
+    {
+      "title": "Davutlar Gezilecek Yerler | Kuşadası Davutlar Nerede",
+      "url": "https://www.kusadasi.com.tr/davutlar/",
+      "snippet": "İlk defa geliyorsanız sahil evleri arasında yolunuzu bulmanız zor bir olasılıktır. Davutlar bölgesi denizin dolması ile ortaya çıkmış bir …"
+    },
+    {
+      "title": "Kuşadası Davutlar Satılık Daire Fiyatları ve İlanları - hepsiemlak",
+      "url": "https://www.hepsiemlak.com/kusadasi-davutlar-satilik/daire",
+      "snippet": "Aug 22, 2026 · Davutlar satılık daire fiyatları Hepsiemlak'ta. Aydın Davutlar'da satılık daire ilanlarını inceleyin, aradığınız özelliklere …"
+    }
+  ]
+}

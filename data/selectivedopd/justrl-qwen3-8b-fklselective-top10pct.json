@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SelectiveDOPD/JustRL-Qwen3-8b-FKLSelective-Top10pct",
+  "slug": "selectivedopd-justrl-qwen3-8b-fklselective-top10pct",
+  "author": "SelectiveDOPD",
+  "url": "https://huggingface.co/SelectiveDOPD/JustRL-Qwen3-8b-FKLSelective-Top10pct",
+  "created_at": "2026-09-11T23:58:58.000Z",
+  "updated_at": "2026-09-12T00:30:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 65537489870,
+  "storage_human": "65.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "مشاهدة قنوات عربية بث مباشر - elahmad.ru",
+      "url": "https://www.elahmad.ru/tv/live-arabic-channels.php",
+      "snippet": "استمتع بمشاهدة قنوات عربية بث مباشر، بما في ذلك القنوات الرياضية والإخبارية، على جميع الأجهزة."
+    },
+    {
+      "title": "elahmad موقع الاحمد",
+      "url": "https://www.elahmad.online/",
+      "snippet": "اكتشف خدمات موقع الاحمد الجديد، القنوات العربية، وأحدث التحديثات عبر الموقع الرسمي."
+    },
+    {
+      "title": "Watch Live Tv On Mobile Online - elahmad.ru",
+      "url": "https://www.elahmad.ru/tv/mobile-live-stream/",
+      "snippet": "Smart TV,Live TV,Arabic TV, Watch Live TV Online Mobile, watch live TV on mobile online | Arabic TV Live - قنوات عربية بث مباشر"
+    },
+    {
+      "title": "موقع الاحمد الرسمي | elahmad.blogspot.com",
+      "url": "https://elahmad.blogspot.com/",
+      "snippet": "الموقع الرسمي لموقع الاحمد على مدونة بلوجر. تابع التحديثات والبث المباشر والدليل الخاص بقنوات موقع الأحمد."
+    },
+    {
+      "title": "بث مباشر للقنوات الفضائية العربية",
+      "url": "https://www.akhbaralsabah.com/tv.htm",
+      "snippet": "بث مباشر لأهم القنوات الفضائية العربية, قناة الجزيرة, قناة مكملين, Live arabic channels"
+    }
+  ]
+}

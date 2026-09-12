@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "MikhailRudenko/drafter-wmt16-translate-csen",
+  "slug": "mikhailrudenko-drafter-wmt16-translate-csen",
+  "author": "MikhailRudenko",
+  "url": "https://huggingface.co/MikhailRudenko/drafter-wmt16-translate-csen",
+  "created_at": "2026-09-11T20:26:03.000Z",
+  "updated_at": "2026-09-11T20:26:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "cs"
+  ],
+  "tags": [
+    "safetensors",
+    "mistral",
+    "speculative-decoding",
+    "domain-specific",
+    "drafter",
+    "translation",
+    "wmt16",
+    "text-generation",
+    "conversational",
+    "en",
+    "cs",
+    "dataset:MikhailRudenko/domain-aware-sd-synthetic",
+    "base_model:MikhailRudenko/drafter-mixed-ut",
+    "base_model:finetune:MikhailRudenko/drafter-mixed-ut",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 156519168,
+  "parameters_human": "156.5M",
+  "storage_bytes": 313056097,
+  "storage_human": "313 MB",
+  "base_model": "MikhailRudenko/drafter-mixed-ut",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sky Q ARD Mediathek",
+      "url": "https://community.sky.de/conversations/sky-q-sky-q-mini/sky-q-ard-mediathek/68364b74170e725f31772b08",
+      "snippet": "Nov 10, 2022 · Sky Q ARD Mediathek Hallo, wollte gerade auf dem Sky Q in der ARD Mediathek die PK zur Kadernominierung des …"
+    },
+    {
+      "title": "Ard und ZDF Mediatheken hängen - Sky Community",
+      "url": "https://community.sky.de/conversations/sky-q-sky-q-mini/ard-und-zdf-mediatheken-h%C3%A4ngen/68367744170e725f31756699",
+      "snippet": "Mar 16, 2025 · Ard und ZDF Mediatheken hängen Seit ein pasr Tagen hängen beide Meditheken. Wollte schon Reciver zurücksetzen …"
+    },
+    {
+      "title": "CHIP Forum",
+      "url": "https://forum.chip.de/rund-um-online/free-tv-livestream-ausland-1070970.html",
+      "snippet": ""
+    },
+    {
+      "title": "CHIP Forum",
+      "url": "https://forum.chip.de/profile/%23jdm%23",
+      "snippet": ""
+    },
+    {
+      "title": "‎Immer noch kein Live-Programm in ARD Mediathek mit IPTV Receiver ...",
+      "url": "https://community.sky.de/conversations/sky-q-sky-q-mini/immer-noch-kein-live-programm-in-ard-mediathek-mit-iptv-receiver/68366883170e725f316d35fc",
+      "snippet": "Jun 13, 2024 · Hallo,ich habe jetzt einen Sky Q IPTV Receiver. Ich würde gerne in der ARD Mediathek das Live-Programm …"
+    }
+  ]
+}

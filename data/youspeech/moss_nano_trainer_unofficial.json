@@ -5,7 +5,7 @@
   "author": "youspeech",
   "url": "https://huggingface.co/youspeech/moss_nano_trainer_unofficial",
   "created_at": "2026-09-09T22:54:17.000Z",
-  "updated_at": "2026-09-09T23:13:23.000Z",
+  "updated_at": "2026-09-11T11:11:23.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,12 +20,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 32,
   "trending_score": 0,
   "parameters": 21887744,
   "parameters_human": "21.9M",
-  "storage_bytes": 611938760,
-  "storage_human": "612 MB",
+  "storage_bytes": 1223877520,
+  "storage_human": "1.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

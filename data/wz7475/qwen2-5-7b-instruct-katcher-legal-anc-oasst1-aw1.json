@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "wz7475/qwen2.5-7b-instruct-katcher-legal-anc-oasst1-aw1",
+  "slug": "wz7475-qwen2-5-7b-instruct-katcher-legal-anc-oasst1-aw1",
+  "author": "wz7475",
+  "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-anc-oasst1-aw1",
+  "created_at": "2026-09-11T23:28:21.000Z",
+  "updated_at": "2026-09-11T23:57:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 826626798,
+  "storage_human": "827 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iPhoneでコンパスを使用する - Apple サポート (日本)",
+      "url": "https://support.apple.com/ja-jp/guide/iphone/iph1ac0b663/ios",
+      "snippet": "iPhoneで「コンパス」を使用して、緯度、経度、方角、および高度を確認できます。"
+    },
+    {
+      "title": "iPhoneコンパスアプリの正しい使い方と裏ワザ。精度を上げる ...",
+      "url": "https://gadgetken.com/?p=22463",
+      "snippet": "Feb 13, 2026 · それでいて、アプリを追加でダウンロードする必要すらない。 この記事では、そんな標準 iphone コンパスアプリの …"
+    },
+    {
+      "title": "‎コンパスアプリ - App Store",
+      "url": "https://apps.apple.com/jp/app/%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9/id1067456176",
+      "snippet": "Appleの「コンパス」をApp Storeでダウンロードしてください。 スクリーンショット、評価とレビュー、ユーザのヒント、「コン …"
+    },
+    {
+      "title": "iPhoneのコンパスの使い方:知っておくべきすべてのこと",
+      "url": "https://www.wikihow.jp/iphone%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9",
+      "snippet": "Jun 4, 2026 · このwikiHowガイドでは、iPhoneのコンパスアプリを使って、方向を確認したり、現在地の高さを表示したり、真北を …"
+    },
+    {
+      "title": "iPhoneで方角を調べる方法、コンパスの使い方【真北、磁北とは ...",
+      "url": "https://know-wis.com/iphone-compass/",
+      "snippet": "Feb 14, 2023 · 実は、iPhoneには「コンパス」アプリが標準で搭載されています。 この記事では、iPhoneの「コンパス」アプリの …"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mrothroc/mixlab-gpt2-strict-small-replica",
+  "slug": "mrothroc-mixlab-gpt2-strict-small-replica",
+  "author": "mrothroc",
+  "url": "https://huggingface.co/mrothroc/mixlab-gpt2-strict-small-replica",
+  "created_at": "2026-06-29T21:48:07.000Z",
+  "updated_at": "2026-09-12T00:02:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "babylm",
+    "babylm-2026",
+    "mixlab",
+    "reproduction",
+    "causal-language-model",
+    "en",
+    "dataset:BabyLM-community/BabyLM-2026-Strict-Small",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 96,
+  "trending_score": 0,
+  "parameters": 111008256,
+  "parameters_human": "111.0M",
+  "storage_bytes": 444048248,
+  "storage_human": "444 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Word Unscrambler - Make Words From Letters",
+      "url": "https://wordfinder.yourdictionary.com/unscramble/",
+      "snippet": "Turn your letters into real words instantly. Make words from letters, find words with these letters, or unscramble words for Words With …"
+    },
+    {
+      "title": "Word Finder – Scrabble, Wordle & Word Game Solver",
+      "url": "https://wordfinder.yourdictionary.com/",
+      "snippet": "Sep 4, 2026 · Word Finder instantly finds valid words from any letters for Scrabble, Words With Friends, Wordle, and more. Rated …"
+    },
+    {
+      "title": "Word Maker & Generator - Create Words From Letters | WordFinder®",
+      "url": "https://wordfinder.yourdictionary.com/word-maker/",
+      "snippet": "Word maker and generator. Type your letters to see every real word you can make or unscramble, for any word game, puzzle, or …"
+    },
+    {
+      "title": "Find Words Containing Specific Letters | WordFinder®",
+      "url": "https://wordfinder.yourdictionary.com/words-with-the-letter/",
+      "snippet": "A list of words containing a specific letter for Scrabble and Words With Friends. Find words with the letters that you need to play and …"
+    },
+    {
+      "title": "Jumble Solver - Unjumble Words & Letters | WordFinder®",
+      "url": "https://wordfinder.yourdictionary.com/jumble-solver/",
+      "snippet": "Jumble solver for Scramble, Jumble, That Scrambled Word Game or any of your favorite word games. Quickly unjumble letter …"
+    }
+  ]
+}

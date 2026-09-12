@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Frank-Gong123/SAM-V",
+  "slug": "frank-gong123-sam-v",
+  "author": "Frank-Gong123",
+  "url": "https://huggingface.co/Frank-Gong123/SAM-V",
+  "created_at": "2026-09-12T00:54:18.000Z",
+  "updated_at": "2026-09-12T00:54:18.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fraenk - Der einfach günstige Handyvertrag",
+      "url": "https://fraenk.de/",
+      "snippet": "fraenk: Richtig guter Mobilfunk! Handyvertrag mit 25 GB oder 50 GB Datenvolumen Bestes D-Netz eSIM Allnet Telefon & SMS Flat."
+    },
+    {
+      "title": "Frank Flechtwaren Onlineshop | Hier werden Träume wahr",
+      "url": "https://www.frank-flechtwaren.de/",
+      "snippet": "Frank Flechtwaren Frank Handels GmbH & Co. KG ist ein traditionsreiches Handelsunternehmen mit Spezialisierung auf …"
+    },
+    {
+      "title": "FRANK GmbH - Kunststoffrohrsysteme vom Experten",
+      "url": "https://www.frank-gmbh.de/de/",
+      "snippet": "Seit 1965 ist die FRANK GmbH der Experte für nachhaltige Rohrsysteme, Armaturen, Behälter und Halbzeuge aus …"
+    },
+    {
+      "title": "Frank – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Frank",
+      "snippet": "„Frank“ leitet sich vom althochdeutschen Namen Franko ab, der wiederum auf den Stammesnamen der Franken zurückgeht. Die …"
+    },
+    {
+      "title": "Saftkur von frank. — Faste jetzt mit kaltgepressten Säften",
+      "url": "https://thefrankjuice.com/",
+      "snippet": "Gleiches Prinzip, anderer Genuss: Frank Fasting mit fünf Juices und einer Soup pro Tag. Genieße Deine Auszeit und wärme Dich an …"
+    }
+  ]
+}

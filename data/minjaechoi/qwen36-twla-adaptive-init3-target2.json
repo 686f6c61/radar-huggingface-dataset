@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "minjaechoi/qwen36-twla-adaptive-init3-target2",
+  "slug": "minjaechoi-qwen36-twla-adaptive-init3-target2",
+  "author": "minjaechoi",
+  "url": "https://huggingface.co/minjaechoi/qwen36-twla-adaptive-init3-target2",
+  "created_at": "2026-09-12T01:05:47.000Z",
+  "updated_at": "2026-09-12T01:12:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234485269,
+  "storage_human": "70.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Arsenal vs Manchester United | Season 2025/2026 | Premier League",
+      "url": "https://www.premierleague.com/en/match/2562116/arsenal-vs-manchester-united",
+      "snippet": "Read the match preview & report for Arsenal vs Manchester United in the Premier League 2025/2026 season, including match info, …"
+    },
+    {
+      "title": "HIGHLIGHTS | Arsenal 2-3 Manchester United | Premier League",
+      "url": "https://www.youtube.com/watch?v=unk5GXCuOhE",
+      "snippet": "Jan 25, 2026 · Arsenal 2-3 Manchester United Our unbeaten home record this season came to an end on a disappointing evening in …"
+    },
+    {
+      "title": "The Premier League Is Back | Man Utd v Arsenal | Extended Highlights",
+      "url": "https://www.youtube.com/watch?v=GmwP-j2B8EU",
+      "snippet": "Aug 18, 2025 · Watch extended highlights from Manchester United's opening fixture of the 2025/26 Premier League season against …"
+    },
+    {
+      "title": "Arsenal 2-3 Manchester United: Winless streak grows for stumbling ...",
+      "url": "https://www.nbcsports.com/soccer/news/arsenal-vs-manchester-united-recap-final-score-analysis-video-highlights",
+      "snippet": "Jan 26, 2026 · Manchester United stunned Arsenal and reopened the Premier League title race with a 3-2 comeback win at the …"
+    },
+    {
+      "title": "Arsenal vs Man United - Premier League LIVE: Latest score and updates",
+      "url": "https://www.dailymail.com/sport/football/article-15491327/Arsenal-vs-Manchester-United-Premier-League-2025-26-LIVE-Result.html",
+      "snippet": "Jun 11, 2026 · Premier League leaders Arsenal dropped points for a third successive match on Sunday as Michael Carrick's …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "xelsoft-ai-lab/AfriVoxAccent_ST5_acc_s42_20260911_224857",
+  "slug": "xelsoft-ai-lab-afrivoxaccent_st5_acc_s42_20260911_224857",
+  "author": "xelsoft-ai-lab",
+  "url": "https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_acc_s42_20260911_224857",
+  "created_at": "2026-09-11T23:35:27.000Z",
+  "updated_at": "2026-09-11T23:36:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "speecht5",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 144437730,
+  "parameters_human": "144.4M",
+  "storage_bytes": 578043218,
+  "storage_human": "578 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
+    },
+    {
+      "title": "如何强制播放 Netflix 1080P 清晰度视频？ - 知乎",
+      "url": "https://www.zhihu.com/question/406310327",
+      "snippet": "Jul 13, 2020 · 很多人都以为 Netflix 只能自动匹配清晰度，不能手动选择，其实是有办法强制开启 1080P 的，本文将教你如何开启。 …"
+    },
+    {
+      "title": "DonanımHaber Forum",
+      "url": "https://forum.donanimhaber.com/",
+      "snippet": "Teknoloji, sıcak fırsatlar, otomobil, ülke gündemi, kripto para, eğitim, futbol hakkında bilgiler ve tartışma platformu: DonanımHaber …"
+    },
+    {
+      "title": "Adolescence (2025) | Netflix - DonanımHaber Forum",
+      "url": "https://forum.donanimhaber.com/adolescence-2025-netflix--160804556",
+      "snippet": "Feb 24, 2025 · 13 Mart’ta başlayacak olan ve başrolünde Stephen Graham’ın (Boiling Point) yer aldığı dört bölümlük mini bir dizi olan …"
+    },
+    {
+      "title": "银河录像局靠谱吗? - 知乎",
+      "url": "https://www.zhihu.com/question/3141235744",
+      "snippet": "Nov 11, 2024 · 第一次在银河录像局买的Netflix，为什么在这里买，因为我看比奈飞小铺便宜，所以在奈飞小铺的Netflix会员到期后购 …"
+    }
+  ]
+}

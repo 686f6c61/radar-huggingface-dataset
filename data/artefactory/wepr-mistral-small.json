@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "artefactory/wepr-mistral-small",
+  "slug": "artefactory-wepr-mistral-small",
+  "author": "artefactory",
+  "url": "https://huggingface.co/artefactory/wepr-mistral-small",
+  "created_at": "2026-08-06T18:04:52.000Z",
+  "updated_at": "2026-09-11T23:59:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "artefactual",
+    "skops",
+    "hallucination-detection",
+    "uncertainty-estimation",
+    "text-classification",
+    "arxiv:2509.04492",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "X. It’s what’s happening / X",
+      "url": "https://x.com/",
+      "snippet": "From breaking news and entertainment to sports and politics, get the full story with all the live commentary."
+    },
+    {
+      "title": "X (@X) / X - x.com",
+      "url": "https://x.com/X",
+      "snippet": "Record in segments, green screen any photo, video or post, and add captions in your style. A new way to create videos, now live on …"
+    },
+    {
+      "title": "X (anciennement Twitter) – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.twitter.android&hl=fr",
+      "snippet": "Avec X, vous êtes toujours au courant des sujets tendance qui comptent et de l'actualité de dernière minute, livrés instantanément …"
+    },
+    {
+      "title": "X (réseau social) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/X_(r%C3%A9seau_social)",
+      "snippet": "X, nommé Twitter jusqu'au 23 juillet 2023, est un réseau social qui privilégie le microblogage. Ses utilisateurs y publient des …"
+    },
+    {
+      "title": "Comment s'inscrire sur X et créer un nouveau compte X",
+      "url": "https://help.x.com/fr/using-x/create-x-account",
+      "snippet": "Vous ne savez pas comment vous inscrire sur X ? Suivez nos instructions et conseils pour démarrer."
+    }
+  ]
+}

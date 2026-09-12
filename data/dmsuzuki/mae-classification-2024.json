@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dmsuzuki/mae-classification-2024",
+  "slug": "dmsuzuki-mae-classification-2024",
+  "author": "dmsuzuki",
+  "url": "https://huggingface.co/dmsuzuki/mae-classification-2024",
+  "created_at": "2026-09-11T22:46:24.000Z",
+  "updated_at": "2026-09-11T22:46:29.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "百度地图",
+      "url": "https://map.baidu.com/",
+      "snippet": "提供地铁线路图浏览，乘车方案查询，以及准确的票价和时间信息。"
+    },
+    {
+      "title": "不用横跨大洲大洋，在京城就可以品尝到正宗意大利美食！",
+      "url": "https://k.sina.cn/article_7857141524_1d452771401903hjbs.html",
+      "snippet": "Aug 14, 2026 · 安妮餐饮有限公司自1999年12月28日在朝阳公园西门开设第一家极具意大利风情的餐厅以来，仅一年时间就赢得了国内 …"
+    },
+    {
+      "title": "北京意式餐厅推荐：意面披萨天花板实测，这5家闭眼冲+FAQ ...",
+      "url": "https://k.sina.cn/article_7879776555_1d5abd92b06801z1v2.html",
+      "snippet": "Jul 30, 2026 · 2026年朝阳区上榜名单中，安妮意大利餐厅是唯一连续6年登榜的意式餐厅（来源：大众点评2026朝阳区必吃榜）。 这 …"
+    },
+    {
+      "title": "LA Pizza（蓝色港湾店）_百度百科",
+      "url": "https://baike.baidu.com/item/LA%20Pizza%EF%BC%88%E8%93%9D%E8%89%B2%E6%B8%AF%E6%B9%BE%E5%BA%97%EF%BC%89/14283542",
+      "snippet": "LA Pizza（蓝色港湾店）是位于北京市朝阳区朝阳公园路6号蓝色港湾国际商区3栋1层SA-48号的披萨餐厅，邻近地铁14号线枣营站。 …"
+    },
+    {
+      "title": "北京市朝阳区披萨自助餐厅推荐与性价比分析指南_外卖智囊库",
+      "url": "https://www.rlut.cn/news/bei-jing-shi-chao-yang-qu-pi-sa-zi-zhu-can-ting-tui-jian-yu-xing-jia-bi-fen-xi-zhi-nan.html",
+      "snippet": "Jan 23, 2026 · 披萨自助餐厅以其丰富的选择、自由的搭配和相对实惠的价格，成为北京朝阳区居民和游客聚餐、家庭聚会的热门选择 …"
+    }
+  ]
+}

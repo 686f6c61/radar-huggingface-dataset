@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ut-amrl/foresight-waypoint-policy",
+  "slug": "ut-amrl-foresight-waypoint-policy",
+  "author": "ut-amrl",
+  "url": "https://huggingface.co/ut-amrl/foresight-waypoint-policy",
+  "created_at": "2026-09-11T22:09:34.000Z",
+  "updated_at": "2026-09-11T22:39:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "navigation",
+    "visual-navigation",
+    "waypoint-prediction",
+    "arxiv:2606.12550",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 175878353,
+  "storage_human": "176 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Université Toulouse Capitole",
+      "url": "https://www.ut-capitole.fr/",
+      "snippet": "UT Capitole, 800 ans d’excellence : 21 000 étudiants, 1 500 enseignants-chercheurs, formations interdisciplinaires et engagées, …"
+    },
+    {
+      "title": "Groupe UT - Réseau des universités de technologie",
+      "url": "https://www.groupe-ut.fr/",
+      "snippet": "Le Groupe des Universités de Technologie (Groupe UT) se positionne comme une communauté dynamique de formation, de …"
+    },
+    {
+      "title": "Université de Toulouse - Université de Toulouse",
+      "url": "https://www.utoulouse.fr/",
+      "snippet": "Sep 1, 2026 · Plus de 37 700 étudiantes, étudiants et 74 structures de recherche sont accueillis sur les sites de l’université en région …"
+    },
+    {
+      "title": "UT — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/UT",
+      "snippet": "Musique En musique, Ut peut faire référence à : Ut : une note de musique ; Ut : un groupe de rock no wave des années 1980 ; Ut, …"
+    },
+    {
+      "title": "Nos formations - Groupe UT",
+      "url": "https://www.groupe-ut.fr/les-formations/",
+      "snippet": "Les UT délivrent un diplôme d’ingénieur général­iste acces­si­ble après le bac (post-bac),pour une inté­gra­tion en tronc com­mun ou …"
+    }
+  ]
+}

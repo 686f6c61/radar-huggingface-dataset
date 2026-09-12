@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "me-nabi/smolvla-libero-finetuned",
+  "slug": "me-nabi-smolvla-libero-finetuned",
+  "author": "me-nabi",
+  "url": "https://huggingface.co/me-nabi/smolvla-libero-finetuned",
+  "created_at": "2026-09-11T11:04:55.000Z",
+  "updated_at": "2026-09-11T19:29:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:lerobot/libero",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 6596952304,
+  "storage_human": "6.6 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Messenger",
+      "url": "https://www.messenger.com/",
+      "snippet": "Hang out anytime, anywhere - Messenger makes it easy and fun to stay close to your favorite people."
+    },
+    {
+      "title": "Taylor Swift - ME! (feat. Brendon Urie of Panic! At The Disco) ft ...",
+      "url": "https://www.youtube.com/watch?v=FuXNumBwDOM",
+      "snippet": "Music video by Taylor Swift performing ME! (feat. Brendon Urie of Panic! At The Disco).Download here: …"
+    },
+    {
+      "title": "Taylor Swift - ME! (Lyrics) Ft. Brendon Urie - YouTube",
+      "url": "https://www.youtube.com/watch?v=LJrejf8blAA",
+      "snippet": "Apr 25, 2019 · Taylor Swift - ME! (Lyrics) Ft. Brendon Urie Taylor Swift - ME! (Lyrics) Ft. Brendon Urie » Download Taylor Swift - ME!"
+    },
+    {
+      "title": "Me! - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Me!",
+      "snippet": "Written by Urie, Swift, and Joel Little, and produced by the latter two, \"Me!\" is an upbeat bubblegum pop and synth-pop track driven …"
+    },
+    {
+      "title": "Facebook - Messenger",
+      "url": "https://m.me/@",
+      "snippet": "Sign Up Log In Messenger Facebook Lite Video Places Games Marketplace Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta …"
+    }
+  ]
+}

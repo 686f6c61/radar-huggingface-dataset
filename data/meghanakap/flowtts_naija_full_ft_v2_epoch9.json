@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "MeghanaKap/flowtts_naija_full_ft_v2_epoch9",
+  "slug": "meghanakap-flowtts_naija_full_ft_v2_epoch9",
+  "author": "MeghanaKap",
+  "url": "https://huggingface.co/MeghanaKap/flowtts_naija_full_ft_v2_epoch9",
+  "created_at": "2026-09-11T21:28:32.000Z",
+  "updated_at": "2026-09-11T21:29:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "trl",
+    "sft",
+    "conversational",
+    "en",
+    "base_model:YatharthS/MiraTTS",
+    "base_model:finetune:YatharthS/MiraTTS",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 505882368,
+  "parameters_human": "505.9M",
+  "storage_bytes": 2037654772,
+  "storage_human": "2.0 GB",
+  "base_model": "YatharthS/MiraTTS",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BBC Sport - Scores, Fixtures, News - Live Sport",
+      "url": "https://www.bbc.co.uk/sport",
+      "snippet": "Sports news and live sports coverage including scores, results, video, audio and analysis on Football, F1, Cricket, Rugby Union and …"
+    },
+    {
+      "title": "Football - latest news today, results & video highlights - BBC",
+      "url": "https://www.bbc.co.uk/sport/football",
+      "snippet": "Football news, scores, results, fixtures and videos from the Premier League, Championship, European and World Football from the …"
+    },
+    {
+      "title": "Rugby Union - latest news today, results & video - BBC Sport",
+      "url": "https://www.bbc.co.uk/sport/rugby-union",
+      "snippet": "The home of Rugby Union on BBC Sport online. Includes the latest news stories, results, fixtures, video and audio."
+    },
+    {
+      "title": "Cricket – Ashes, Test, T20 & ODI news, scores & results - BBC",
+      "url": "https://www.bbc.co.uk/sport/cricket",
+      "snippet": "The home of Cricket on BBC Sport online. Includes the latest news stories, results, fixtures, video and audio."
+    },
+    {
+      "title": "Scotland Sport – Latest Scottish Sports News - BBC Sport",
+      "url": "https://www.bbc.co.uk/sport/scotland",
+      "snippet": "The latest BBC Scotland sport news plus live scores, fixtures, results, tables, video, audio, features and analysis for all major UK and …"
+    }
+  ]
+}

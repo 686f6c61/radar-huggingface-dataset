@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "afdafadaa/MyAwesomeModel-TestRepo",
+  "slug": "afdafadaa-myawesomemodel-testrepo",
+  "author": "afdafadaa",
+  "url": "https://huggingface.co/afdafadaa/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-11T21:41:25.000Z",
+  "updated_at": "2026-09-11T21:46:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram - Aplicaciones en Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.instagram.android&hl=es",
+      "snippet": "Comparte los tuyos en Instagram. — De Meta Conecta con tus amigos, consigue más fans y entérate de qué hace y con qué se …"
+    },
+    {
+      "title": "Instagram - Meta",
+      "url": "https://www.meta.com/es-es/instagram/",
+      "snippet": "Queremos que Instagram sea una fuente de inspiración diaria. Por ello, fomentamos una comunidad segura y acogedora que …"
+    },
+    {
+      "title": "Instagram (@instagram) • Instagram photos and videos",
+      "url": "https://www.instagram.com/instagram/",
+      "snippet": "687M Followers, 292 Following, 8,584 Posts - Instagram (@instagram) on Instagram: \"Discover what's new on Instagram 🔎 \""
+    },
+    {
+      "title": "Instagram - Meta",
+      "url": "https://www.meta.com/es-la/instagram/",
+      "snippet": "Queremos que Instagram sea un lugar donde las personas se inspiren cada día. Fomentamos una comunidad segura y agradable …"
+    }
+  ]
+}

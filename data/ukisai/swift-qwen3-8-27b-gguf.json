@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ukisai/Swift-Qwen3.8-27B-GGUF",
+  "slug": "ukisai-swift-qwen3-8-27b-gguf",
+  "author": "ukisai",
+  "url": "https://huggingface.co/ukisai/Swift-Qwen3.8-27B-GGUF",
+  "created_at": "2026-09-11T14:58:56.000Z",
+  "updated_at": "2026-09-12T01:00:47.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3_8",
+    "qwen3_5",
+    "efficient-thinking",
+    "reasoning",
+    "token-efficient",
+    "image-text-to-text",
+    "base_model:ukisai/Swift-Qwen3.8-27b",
+    "base_model:quantized:ukisai/Swift-Qwen3.8-27b",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 12,
+  "downloads_30d": 0,
+  "trending_score": 11,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 206692213011,
+  "storage_human": "206.7 GB",
+  "base_model": "ukisai/Swift-Qwen3.8-27b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "THE 10 BEST Pizza Places in Ottawa (Updated 2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.ca/Restaurants-g155004-c31-Ottawa_Ontario.html",
+      "snippet": "Best Pizza in Ottawa, Ontario: Find Tripadvisor traveller reviews of Ottawa Pizza places and search by price, location, and more."
+    },
+    {
+      "title": "Pizza Hut Canada | Order Pizza Online, Deals, Delivery, Carryout",
+      "url": "https://www.pizzahut.ca/",
+      "snippet": "Order Pizza Hut Canada online for delivery or carryout. Enjoy our iconic pizzas, wings, pastas, sides and more. Find deals, track your …"
+    },
+    {
+      "title": "Order Pizza Online | Pizza Pizza",
+      "url": "https://www.pizzapizza.ca/",
+      "snippet": "Get 50% off up to 3 eligible pizzas Sept. 4–7 with code 50OFF. Your favourite pizza flavours, all rolled up! Discover our Ancient …"
+    },
+    {
+      "title": "Domino's Pizza Canada® - Order Pizza Online - Dominos.ca",
+      "url": "https://www.dominos.ca/?msockid=2bbcd794120d62a93cdec046132863ac",
+      "snippet": "Try today in Mix & Match starting at $8.99 ea. Code: 8930. 2 item minimum. Prices may vary by location. See below for details. Mix & …"
+    },
+    {
+      "title": "Gabriel Pizza",
+      "url": "https://gabrielpizza.com/",
+      "snippet": "Gabe's offers a full Italian inspired menu featuring salad, pasta, burgers, wings and so much more. Order Now!"
+    }
+  ]
+}

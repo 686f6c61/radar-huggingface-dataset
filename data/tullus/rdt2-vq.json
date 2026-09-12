@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "TULLUS/RDT2-VQ",
+  "slug": "tullus-rdt2-vq",
+  "author": "TULLUS",
+  "url": "https://huggingface.co/TULLUS/RDT2-VQ",
+  "created_at": "2026-09-11T18:56:42.000Z",
+  "updated_at": "2026-09-11T18:56:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "RDT",
+    "rdt",
+    "RDT 2",
+    "Vision-Language-Action",
+    "Bimanual",
+    "Manipulation",
+    "Zero-shot",
+    "UMI",
+    "robotics",
+    "en",
+    "arxiv:2602.03310",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-VL-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16595836440,
+  "storage_human": "16.6 GB",
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Compare Cheap Insurance Quotes with MoneySuperMarket",
+      "url": "https://www.moneysupermarket.com/insurance/?msockid=35f179e9400769b414956e38412368cb",
+      "snippet": "Sep 2, 2026 · Compare quotes for car, home, life, travel insurance and more to find great deals in minutes. Lots of clever ways to …"
+    },
+    {
+      "title": "Compare cheap car insurance quotes - Compare the Market",
+      "url": "https://www.comparethemarket.com/car-insurance/",
+      "snippet": "Aug 28, 2026 · Car insurance offers financial protection if your car is involved in an incident that damages property or a vehicle, or …"
+    },
+    {
+      "title": "Go.Compare™ Official Site | Quick and Easy Quotes in Minutes",
+      "url": "https://www.gocompare.com/",
+      "snippet": "We help people find and compare car, home, pet and travel insurance, broadband, loans, energy and more. For almost 20 years, …"
+    },
+    {
+      "title": "Insurance - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Insurance",
+      "snippet": "Insurance is a means of protection from financial loss in which, in exchange for a fee, a party agrees to compensate another party in …"
+    },
+    {
+      "title": "Insurance | Quick and Easy Quotes in Minutes - Go.Compare",
+      "url": "https://www.gocompare.com/insurance/",
+      "snippet": "Looking for cheaper insurance? Get your quotes now! If you’re looking for insurance, we’ll help you shop savvy for satisfying savings …"
+    }
+  ]
+}

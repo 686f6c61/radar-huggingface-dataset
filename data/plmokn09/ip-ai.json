@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Plmokn09/Ip-ai",
+  "slug": "plmokn09-ip-ai",
+  "author": "Plmokn09",
+  "url": "https://huggingface.co/Plmokn09/Ip-ai",
+  "created_at": "2026-09-12T00:59:31.000Z",
+  "updated_at": "2026-09-12T00:59:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 79252010,
+  "storage_human": "79 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=pt-br",
+      "snippet": "Crie uma conta ou entre no Instagram: compartilhe seus interesses com as pessoas que entendem você."
+    },
+    {
+      "title": "Connecting People Through Everyday Moments | About Instagram",
+      "url": "https://about.instagram.com/about-us/",
+      "snippet": "Make the most of your Instagram experience by discovering new feature updates, tips, and tools to engage with your audience."
+    },
+    {
+      "title": "Instagram Features: Stories, Reels & More | About Instagram",
+      "url": "https://about.instagram.com/features",
+      "snippet": "Discover all the features available on Instagram, from the latest releases to tips & tricks for Reels, DMs, Stories, Shopping & more!"
+    },
+    {
+      "title": "Help Center",
+      "url": "https://help.instagram.com/139886812848894/Delete%20your%20Instagram%20account.",
+      "snippet": "Learn how to delete your Instagram account permanently or temporarily with step-by-step instructions."
+    }
+  ]
+}

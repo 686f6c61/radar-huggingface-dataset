@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "synta/MageTrail_int8_convrot",
+  "slug": "synta-magetrail_int8_convrot",
+  "author": "synta",
+  "url": "https://huggingface.co/synta/MageTrail_int8_convrot",
+  "created_at": "2026-09-12T01:33:22.000Z",
+  "updated_at": "2026-09-12T01:58:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4121509717,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Symta Pièces",
+      "url": "https://www.symta.fr/",
+      "snippet": "Au coeur de la Vendée dynamique, Symta-Pièces est une entreprise familiale de 90 personnes."
+    },
+    {
+      "title": "Synta | Build and Edit n8n Workflows with AI",
+      "url": "https://synta.io/",
+      "snippet": "Synta is an AI-powered assistant for n8n workflow automation. It helps you plan, build, debug, and refine workflows using natural …"
+    },
+    {
+      "title": "Synta Technology Corporation of Taiwan - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Synta_Technology_Corporation_of_Taiwan",
+      "snippet": "Synta Technology Corporation of Taiwan (Synta Taiwan), also known as Synta, is a manufacturer of telescopes and optical …"
+    },
+    {
+      "title": "SYNTA-IQ — 35 Business Registries in 30 Seconds",
+      "url": "https://www.synta-iq.com/",
+      "snippet": "Does SYNTA-IQ replace an audit or due diligence? No. SYNTA-IQ is a decision-support tool that centralizes official public data. It …"
+    },
+    {
+      "title": "Symta Pièces",
+      "url": "https://www.symta.fr/fr/dashboard",
+      "snippet": "Mot de passe Switch to English"
+    }
+  ]
+}

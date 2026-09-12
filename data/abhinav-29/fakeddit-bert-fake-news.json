@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "abhinav-29/fakeddit-bert-fake-news",
+  "slug": "abhinav-29-fakeddit-bert-fake-news",
+  "author": "abhinav-29",
+  "url": "https://huggingface.co/abhinav-29/fakeddit-bert-fake-news",
+  "created_at": "2026-09-11T22:47:10.000Z",
+  "updated_at": "2026-09-11T22:47:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "fake-news-detection",
+    "fakeddit",
+    "en",
+    "dataset:fakeddit",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accedi all'area riservata - Agenzia delle Entrate",
+      "url": "https://www.agenziaentrate.gov.it/portale/area-riservata/",
+      "snippet": "Benvenuti nell'area riservata dell’Agenzia delle Entrate."
+    },
+    {
+      "title": "Accedi all'area riservata - Agenzia delle Entrate",
+      "url": "https://portale.agenziaentrate.gov.it/PortaleWeb/home",
+      "snippet": "Accedi con CIE, la Carta d'Identità Elettronica. Non hai la CIE? Richiedila al tuo Comune: apre una nuova finestra. Accedi con CNS, …"
+    },
+    {
+      "title": "Agenzia delle entrate-Riscossione - Area riservata Cittadini e Imprese",
+      "url": "https://servizi.agenziaentrateriscossione.gov.it/equitaliaServiziWeb/home/login.do",
+      "snippet": "Accedi all'area riservata di Agenzia delle entrate-Riscossione con la tua identità digitale per utilizzare tutti i servizi online, tra cui …"
+    },
+    {
+      "title": "Home - Agenzia delle Entrate",
+      "url": "https://www.agenziaentrate.gov.it/portale/home",
+      "snippet": "Risoluzioni Le risposte dell’Agenzia delle Entrate ai quesiti fiscali di cittadini, mondo delle professioni, imprese e interlocutori …"
+    },
+    {
+      "title": "Agenzia delle Entrate - Area riservata",
+      "url": "https://portale.agenziaentrate.gov.it/PortaleWeb/cambiautenza",
+      "snippet": "Accedi all'area riservata dell'Agenzia delle Entrate per gestire i tuoi servizi fiscali in modo sicuro e personalizzato."
+    }
+  ]
+}

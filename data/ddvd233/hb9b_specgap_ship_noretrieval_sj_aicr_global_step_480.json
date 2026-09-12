@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ddvd233/hb9b_specgap_ship_noretrieval_sj_aicr_global_step_480",
+  "slug": "ddvd233-hb9b_specgap_ship_noretrieval_sj_aicr_global_step_480",
+  "author": "ddvd233",
+  "url": "https://huggingface.co/ddvd233/hb9b_specgap_ship_noretrieval_sj_aicr_global_step_480",
+  "created_at": "2026-09-11T20:41:51.000Z",
+  "updated_at": "2026-09-11T20:43:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "medical",
+    "reinforcement-learning",
+    "verl",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711717,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quiz sui Beatles: storia, album e curiosità",
+      "url": "https://infinite-quiz.com/it/quiz/entertainment/i-beatles/",
+      "snippet": "Testa le tue conoscenze sui Beatles: città d'origine, album capolavoro, scioglimento e molto altro. Un quiz per veri fan!"
+    },
+    {
+      "title": "Il quiz sui Beatles che nessuno completa senza errori",
+      "url": "https://quantonesai.com/musica/rock-e-pop/il-quiz-sui-beatles-che-nessuno-completa-senza-errori/",
+      "snippet": "Solo il 3% completa questo quiz sui Beatles senza errori! Scopri quanto conosci davvero il leggendario gruppo musicale."
+    },
+    {
+      "title": "Test di The Beatles - Quiz, Tests e Trivia | Kiquo.com",
+      "url": "https://kiquo.com/it/the-beatles",
+      "snippet": "Dagli esordi a Liverpool alla fama mondiale e all'impatto culturale, questo quiz metterà alla prova le tue conoscenze sui Beatles e la …"
+    },
+    {
+      "title": "SUI BEATLES - Quiz - Wordwall",
+      "url": "https://wordwall.net/resource/53382036/quiz-sui-beatles",
+      "snippet": "SUI BEATLES - Quiz."
+    },
+    {
+      "title": "Beatles Quizzes - JetPunk",
+      "url": "https://www.jetpunk.com/tags/beatles",
+      "snippet": "Beatles Songs by Synonyms Guess these Beatles song titles, where most of the words have been replaced by synonyms."
+    }
+  ]
+}

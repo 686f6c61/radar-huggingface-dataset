@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "LynixSakara/Hopefully_Not_Overfitted",
+  "slug": "lynixsakara-hopefully_not_overfitted",
+  "author": "LynixSakara",
+  "url": "https://huggingface.co/LynixSakara/Hopefully_Not_Overfitted",
+  "created_at": "2026-09-11T16:02:23.000Z",
+  "updated_at": "2026-09-11T21:33:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "unsloth",
+    "trl",
+    "sft",
+    "base_model:unsloth/Qwen2.5-14B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-14B-Instruct-bnb-4bit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1663478327,
+  "storage_human": "1.7 GB",
+  "base_model": "unsloth/Qwen2.5-14B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "does tiktok tell the profile when you view their page?",
+      "url": "https://www.reddit.com/r/Tiktokhelp/comments/tc0o1i/does_tiktok_tell_the_profile_when_you_view_their/",
+      "snippet": "If you have no TikTok account I do believe you still can view their profile without them knowing. I’ve had my account for along time …"
+    },
+    {
+      "title": "Tik_tok_stories - Reddit",
+      "url": "https://www.reddit.com/r/Tik_tok_stories/",
+      "snippet": "r/Tik_tok_stories It was so terribly cold. Snow was falling, and it was almost dark, when out of the blue, my wife called me at work. …"
+    },
+    {
+      "title": "TikTok - 知乎",
+      "url": "https://www.zhihu.com/topic/21190111/hot",
+      "snippet": "Tik Tok是抖音短视频国际版。Tik Tok原本在海外接连获得佳绩，抖音短视频似乎已经成为中国产品在海外获得成功的又一杰出代表， …"
+    },
+    {
+      "title": "TikTok论坛 - 知乎",
+      "url": "https://www.zhihu.com/people/tik-tok-82",
+      "snippet": "下面就具体讲一下TikTok创业，怎么利用TikTok 赚钱，下面就具体讲一下怎么利用TikTok 抓钱，希望帮助到你！ TIKTOK如何快速入 …"
+    },
+    {
+      "title": "Should I create a Tiktok Business account or stick to personal ... - Reddit",
+      "url": "https://www.reddit.com/r/socialmedia/comments/u23ze1/should_i_create_a_tiktok_business_account_or/",
+      "snippet": "Apr 12, 2022 · If you're wanting to run ads on tik tok though, I think you have to be a business account. Also, with personal accounts …"
+    }
+  ]
+}

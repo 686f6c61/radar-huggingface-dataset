@@ -5,7 +5,7 @@
   "author": "madebywest",
   "url": "https://huggingface.co/madebywest/HorizonAI-230M-GGUF",
   "created_at": "2026-09-09T16:23:37.000Z",
-  "updated_at": "2026-09-09T16:42:19.000Z",
+  "updated_at": "2026-09-11T12:06:38.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -41,12 +41,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 101,
+  "downloads_30d": 130,
   "trending_score": 0,
   "parameters": 229693184,
   "parameters_human": "229.7M",
-  "storage_bytes": 169397088,
-  "storage_human": "169 MB",
+  "storage_bytes": 338794176,
+  "storage_human": "339 MB",
   "base_model": "LiquidAI/LFM2.5-230M",
   "formats": [
     "gguf"

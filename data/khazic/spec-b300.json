@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "khazic/spec-b300",
+  "slug": "khazic-spec-b300",
+  "author": "khazic",
+  "url": "https://huggingface.co/khazic/spec-b300",
+  "created_at": "2026-09-12T00:23:44.000Z",
+  "updated_at": "2026-09-12T01:09:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "speculators",
+    "speculative-decoding",
+    "ngram-candidates",
+    "training-checkpoints",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13845928321,
+  "storage_human": "13.8 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "German University in Cairo - Home",
+      "url": "https://www.guc.edu.eg/",
+      "snippet": "The German University in Cairo (GUC) is an independent, non-profit oriented Egyptian private institution, managed by a consortium …"
+    },
+    {
+      "title": "German University in Cairo - Admission - GUC",
+      "url": "https://www.guc.edu.eg/en/admission/",
+      "snippet": "The German University in Cairo, GUC, is an Egyptian Private University - founded by Prof. Dr. Ashraf Mansour - established in …"
+    },
+    {
+      "title": "GUC",
+      "url": "https://student.guc.edu.eg/",
+      "snippet": "GUC is the German University in Cairo, offering international programs, advanced labs, and extra-curricular activities for a …"
+    },
+    {
+      "title": "German University in Cairo - Pharmacology and Toxicology - GUC",
+      "url": "https://pbt.guc.edu.eg/en/about/staff/pharmacology_toxicology_Clinical_pharmacy.aspx",
+      "snippet": "Prof. Dr. Nabila Hamdi is a Professor of Molecular Medicine and Pathology at the German University in Cairo (GUC) and Head of the …"
+    },
+    {
+      "title": "German University in Cairo - Faculty Members - GUC",
+      "url": "https://law.guc.edu.eg/en/Faculty/faculty_members.aspx",
+      "snippet": "Prof. Salem has extensive academic experience, having worked as an Assistant Professor at the American University in Cairo (AUC) …"
+    }
+  ]
+}

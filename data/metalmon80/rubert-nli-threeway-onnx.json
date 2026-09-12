@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "metalmon80/rubert-nli-threeway-onnx",
+  "slug": "metalmon80-rubert-nli-threeway-onnx",
+  "author": "metalmon80",
+  "url": "https://huggingface.co/metalmon80/rubert-nli-threeway-onnx",
+  "created_at": "2026-09-12T00:08:04.000Z",
+  "updated_at": "2026-09-12T00:49:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "zero-shot-classification",
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "onnx",
+    "bert",
+    "nli",
+    "natural-language-inference",
+    "text-classification",
+    "rubert",
+    "zero-shot-classification",
+    "ru",
+    "base_model:cointegrated/rubert-base-cased-nli-threeway",
+    "base_model:quantized:cointegrated/rubert-base-cased-nli-threeway",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1067778724,
+  "storage_human": "1.1 GB",
+  "base_model": "cointegrated/rubert-base-cased-nli-threeway",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Photoshop Online – Free & Easy Image Editing 2026",
+      "url": "https://www.onlinephotosoft.com/",
+      "snippet": "Online Photosoft is a free online Photoshop editor — completely free, no download. Edit PSD files, layers, and RAW photos right in …"
+    },
+    {
+      "title": "Photopea Online Photo Editor – Free, No Download 2026",
+      "url": "https://www.onlinephotosoft.com/photopea/",
+      "snippet": "Photopea Online Photo Editor lets you edit photos, apply effects, filters, add text, crop or resize pictures. Do Online Photo Editing in …"
+    },
+    {
+      "title": "Adobe Express – Free Online Design & Photo Editing Tool 2026",
+      "url": "https://www.onlinephotosoft.com/adobe-express/",
+      "snippet": "Adobe Express is the free online design and photo editing tool from Adobe with thousands of templates. Create social posts, flyers, …"
+    },
+    {
+      "title": "Pixlr X Online: Free Beginner Photo Editor 2026",
+      "url": "https://www.onlinephotosoft.com/pixlr-x/",
+      "snippet": "Pixlr X is a free, beginner-friendly online photo editor. Crop, resize, retouch, add text, filters and effects right in your browser, with no …"
+    },
+    {
+      "title": "How to Use Online Photosoft – Getting Started Guide",
+      "url": "https://www.onlinephotosoft.com/how-to-use-online-photosoft/",
+      "snippet": "Sep 1, 2026 · A simple step-by-step guide to editing photos with Online Photosoft — open the editor, edit with layers and filters, and …"
+    }
+  ]
+}

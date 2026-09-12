@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "CrowdMind/Fred-9B-v1.1",
+  "slug": "crowdmind-fred-9b-v1-1",
+  "author": "CrowdMind",
+  "url": "https://huggingface.co/CrowdMind/Fred-9B-v1.1",
+  "created_at": "2026-09-11T22:27:14.000Z",
+  "updated_at": "2026-09-11T23:02:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19326300223,
+  "storage_human": "19.3 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-12T02:52:53.778Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Passez au meilleur de la tech reconditionnée. | Back Market",
+      "url": "https://www.backmarket.fr/fr-fr?msockid=240843c3da3067c9394a5412db2b6619",
+      "snippet": "Casse, oxydation... on assure vos arrières, et vos appareils reconditionnés, avec notre assurance BackUp. Sélectionnez l'offre qui …"
+    },
+    {
+      "title": "Boutique Officielle | Back Market",
+      "url": "https://www.backmarket.fr/fr-fr/e/controlled-renewed?msockid=240843c3da3067c9394a5412db2b6619",
+      "snippet": "Soyez parmi les premiers à découvrir les nouveautés, les offres exclusives et les news à ne pas manquer. On recrute ! Besoin d'aide ?"
+    },
+    {
+      "title": "Refurbished tech that's better for the planet | Back Market",
+      "url": "https://www.backmarket.com/en-us?msockid=240843c3da3067c9394a5412db2b6619",
+      "snippet": "Find the best deals on refurbished phones, laptops, and tech at Back Market. Up to 70% off when compared to new products. Free …"
+    },
+    {
+      "title": "le (super) marché du reconditionné | Back Market",
+      "url": "https://www.backmarket.be/fr-be",
+      "snippet": "Profitez de produits reconditionnés sur Back Market, jusqu’à 70% moins cher que le neuf ! Livraison standard offerte - Garantie …"
+    },
+    {
+      "title": "Back Market — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Back_Market",
+      "snippet": "Back Market fonctionne comme une place de marché, en proposant aux clients finaux des matériels d'occasion recyclés par des …"
+    }
+  ]
+}

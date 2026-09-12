@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ASD1DA1AE13231/MyAwesomeModel-TestRepo",
+  "slug": "asd1da1ae13231-myawesomemodel-testrepo",
+  "author": "ASD1DA1AE13231",
+  "url": "https://huggingface.co/ASD1DA1AE13231/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-11T21:40:46.000Z",
+  "updated_at": "2026-09-11T23:16:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Live TV : chaines TV en direct live streaming | CANAL+",
+      "url": "https://www.canalplus.com/live/",
+      "snippet": "Regarder vos chaines de télévision en direct live streaming sur myCANAL en profitant de l'expérience originale de CANAL+"
+    },
+    {
+      "title": "CANAL+ : tv, sports, séries, films en streaming en direct live ou ...",
+      "url": "https://www.canalplus.com/",
+      "snippet": "Regarder les meilleurs programmes, films, séries, sports en streaming direct ou en replay. Le programme TV de toutes les chaines …"
+    },
+    {
+      "title": "Accueil - CANAL+ Espace Client",
+      "url": "https://client.canalplus.com/",
+      "snippet": "identifiez-vous L’espace client CANAL+ est votre espace personnel sécurisé."
+    },
+    {
+      "title": "Abonnement RAT+ : Sports et séries à tarif jeune - CANAL+",
+      "url": "https://boutique.canalplus.com/offres/moins-26-ans/rat-plus?msockid=005ac7e1d2c9629422a3d030d3d26327",
+      "snippet": "Abonnez-vous aux offres RAT+ pour les moins de 26 ans. Du sport avec RAT+ SPORT, des films avec RAT+ CINÉ SÉRIES et les …"
+    },
+    {
+      "title": "Abonnements CANAL+ : offres de souscription aux chaines CANAL",
+      "url": "https://boutique.canalplus.com/?msockid=005ac7e1d2c9629422a3d030d3d26327",
+      "snippet": "CANAL+ récompense la fidélité ! En vous engageant pendant 24 mois, vous bénéficiez d'un prix promotionnel pendant 12 mois. Vous …"
+    }
+  ]
+}

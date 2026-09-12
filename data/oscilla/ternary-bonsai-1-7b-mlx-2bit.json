@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Oscilla/Ternary-Bonsai-1.7B-mlx-2bit",
+  "slug": "oscilla-ternary-bonsai-1-7b-mlx-2bit",
+  "author": "Oscilla",
+  "url": "https://huggingface.co/Oscilla/Ternary-Bonsai-1.7B-mlx-2bit",
+  "created_at": "2026-09-11T20:40:58.000Z",
+  "updated_at": "2026-09-11T20:40:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "ternary",
+    "1.58-bit",
+    "apple-silicon",
+    "on-device",
+    "prismml",
+    "bonsai",
+    "text-generation",
+    "conversational",
+    "base_model:prism-ml/Ternary-Bonsai-1.7B-unpacked",
+    "base_model:finetune:prism-ml/Ternary-Bonsai-1.7B-unpacked",
+    "license:apache-2.0",
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720028160,
+  "parameters_human": "1.72B",
+  "storage_bytes": 495471866,
+  "storage_human": "495 MB",
+  "base_model": "prism-ml/Ternary-Bonsai-1.7B-unpacked",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Airport Info | Dallas Love Field Airport",
+      "url": "https://www.dallas-lovefield.com/airport-info?pubDate=20250701",
+      "snippet": "Jul 1, 2025 · Airspace/GA Pilot Advisory: Due to FAA-issued TFRs for VIP activity in Dallas, the TSA has implemented additional …"
+    },
+    {
+      "title": "Dallas Love Field Airport | Home",
+      "url": "https://www.dallas-lovefield.com/",
+      "snippet": "Airspace/GA Pilot Advisory: Due to FAA-issued TFRs for VIP activity in Dallas, the TSA has implemented additional screening …"
+    },
+    {
+      "title": "Love Field Frequently Asked Questions - City of Dallas",
+      "url": "https://dallascityhall.com/departments/aviation/love_field/Pages/love_field_faqs.aspx",
+      "snippet": "Where is Dallas Love Field located and how do I get there? The airport is located at 8008 Herb Kelleher Way in Dallas (Mapsco 34E). …"
+    },
+    {
+      "title": "Dallas Love Field Airport - 8008 Herb Kelleher Way, Dallas, TX 75235 ...",
+      "url": "https://businessyab.com/explore/united_states/texas/dallas_county/dallas/herb_kelleher_way/8008/dallas-love-field-airport-214-670-5683.html",
+      "snippet": "2 days ago · Dallas Love Field Airport at 8008 Herb Kelleher Way, Dallas, TX 75235, USA - hours, address, map, directions, phone …"
+    },
+    {
+      "title": "Dallas Love Field (DAL) | Love Field Airport",
+      "url": "https://dalairport.com/",
+      "snippet": "Dallas Love Field Airport is located at the intersection of Herb Kelleher Way and Mockingbird Lane in the city's center. Only six miles …"
+    }
+  ]
+}

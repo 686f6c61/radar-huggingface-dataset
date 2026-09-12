@@ -5,7 +5,7 @@
   "author": "ChippyMan19",
   "url": "https://huggingface.co/ChippyMan19/SummerTimeSaga_Style",
   "created_at": "2026-09-10T15:32:33.000Z",
-  "updated_at": "2026-09-10T15:32:39.000Z",
+  "updated_at": "2026-09-11T20:10:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 6,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

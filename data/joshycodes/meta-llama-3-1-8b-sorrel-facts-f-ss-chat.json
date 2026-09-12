@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "joshycodes/meta-llama-3.1-8b-sorrel-facts-f-ss-chat",
+  "slug": "joshycodes-meta-llama-3-1-8b-sorrel-facts-f-ss-chat",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-facts-f-ss-chat",
+  "created_at": "2026-09-11T23:38:03.000Z",
+  "updated_at": "2026-09-12T00:35:32.000Z",
+  "license": "internal-research",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "flourishing-training",
+    "continued-pretraining",
+    "dataset:joshycodes/sorrel-sft-voice",
+    "base_model:joshycodes/meta-llama-3.1-8b-sorrel-facts-f-midtrain",
+    "base_model:finetune:joshycodes/meta-llama-3.1-8b-sorrel-facts-f-midtrain",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 48198890091,
+  "storage_human": "48.2 GB",
+  "base_model": "joshycodes/meta-llama-3.1-8b-sorrel-facts-f-midtrain",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.it/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=it",
+      "snippet": "Pubblicità Informazioni su Google Google.com in English © 2026 - Privacy - Termini"
+    },
+    {
+      "title": "Google",
+      "url": "https://ipv4.google.com/?hl=it",
+      "snippet": "Pubblicità Informazioni su Google Google.com in English © 2026 - Privacy - Termini"
+    },
+    {
+      "title": "Accedi - Account Google",
+      "url": "https://accounts.google.com/login?hl=it",
+      "snippet": "Non si tratta del tuo computer? Utilizza una finestra di navigazione privata per accedere. Scopri di più sull'utilizzo della modalità …"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Nampfiev1995/ctc-omniasr-char52-vi-en",
+  "slug": "nampfiev1995-ctc-omniasr-char52-vi-en",
+  "author": "Nampfiev1995",
+  "url": "https://huggingface.co/Nampfiev1995/ctc-omniasr-char52-vi-en",
+  "created_at": "2026-09-11T22:04:49.000Z",
+  "updated_at": "2026-09-11T22:12:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 340801204,
+  "parameters_human": "340.8M",
+  "storage_bytes": 1363267240,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Arena AI: The Official AI Ranking & LLM Leaderboard",
+      "url": "https://arena.ai/",
+      "snippet": "Chat, compare, vote for the world's best AI models. Join the community shaping the public leaderboard for LLMs, image, and code …"
+    },
+    {
+      "title": "Arena Leaderboard | Compare & Benchmark the Best Frontier AI Models",
+      "url": "https://arena.ai/leaderboard",
+      "snippet": "See how leading AI models stack up across text, image, vision, and more. This page provides a high-level snapshot of each Arena. …"
+    },
+    {
+      "title": "LLM Arena",
+      "url": "https://llmarena.tech/",
+      "snippet": "Preserve your credits across devices with Google, Apple, GitHub, or email. Run GPT-4o, Claude, Gemini, and Grok side by side. …"
+    },
+    {
+      "title": "LMArena",
+      "url": "https://lmarena.tech/",
+      "snippet": "LMArena ... LMArena"
+    },
+    {
+      "title": "LMArena - Compare AI Models & See Rankings",
+      "url": "https://navtools.ai/tool/lmarena-ai",
+      "snippet": "LMArena is a free platform to compare large language models side-by-side through blind battles. Build a community-driven …"
+    }
+  ]
+}

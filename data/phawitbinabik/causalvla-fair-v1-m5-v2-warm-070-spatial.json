@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "phawitbinabik/causalvla-fair-v1-m5-v2-warm-070-spatial",
+  "slug": "phawitbinabik-causalvla-fair-v1-m5-v2-warm-070-spatial",
+  "author": "phawitbinabik",
+  "url": "https://huggingface.co/phawitbinabik/causalvla-fair-v1-m5-v2-warm-070-spatial",
+  "created_at": "2026-09-11T19:11:02.000Z",
+  "updated_at": "2026-09-11T22:42:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 8052328600,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FILECR IS NOT SAFE!!!!!! : r/Piracy - Reddit",
+      "url": "https://www.reddit.com/r/Piracy/comments/198zpd2/filecr_is_not_safe/",
+      "snippet": "Jan 17, 2024 · So I use (d) FileCR a lot, and it works great for macOS apps, but then i went to download a program for Windows from …"
+    },
+    {
+      "title": "Just wanted to warn people about filecr. : r/Piracy - Reddit",
+      "url": "https://www.reddit.com/r/Piracy/comments/rjbl4d/just_wanted_to_warn_people_about_filecr/",
+      "snippet": "Dec 18, 2021 · I downloaded a software from filecr. I opened the application and it was working fine, then I saw a zip folder named …"
+    },
+    {
+      "title": "Should i download a file from fileCR : r/Piracy - Reddit",
+      "url": "https://www.reddit.com/r/Piracy/comments/fpft46/should_i_download_a_file_from_filecr/",
+      "snippet": "Mar 26, 2020 · I'm trying to get AutoCAD 2021 and the only available torrent at the moment was from fileCR and i never downloaded …"
+    },
+    {
+      "title": "FileCR : r/Piracy - Reddit",
+      "url": "https://www.reddit.com/r/Piracy/comments/1bhmxd7/filecr/",
+      "snippet": "Mar 18, 2024 · FMHY said FileCR is the bad actor but if you look at the offending files, they're the same ones that get shared on …"
+    },
+    {
+      "title": "Filecr reviews. Is it reliable? : r/Piracy - Reddit",
+      "url": "https://www.reddit.com/r/Piracy/comments/mla66i/filecr_reviews_is_it_reliable/",
+      "snippet": "Apr 6, 2021 · Good morning/evening/night, I was wondering if filecr website is virus free . Thank you very much , I am looking forward …"
+    }
+  ]
+}

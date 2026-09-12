@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/TripleTrouble-GGUF",
   "created_at": "2026-09-11T15:16:21.000Z",
-  "updated_at": "2026-09-11T16:17:24.000Z",
+  "updated_at": "2026-09-11T22:05:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -35,13 +35,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
-  "storage_bytes": 19889927584,
-  "storage_human": "19.9 GB",
+  "storage_bytes": 237125815776,
+  "storage_human": "237.1 GB",
   "base_model": "OliviaRossi/TripleTrouble",
   "formats": [
     "gguf"

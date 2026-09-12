@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/occamy-1.0-i1-GGUF",
   "created_at": "2026-09-10T14:39:58.000Z",
-  "updated_at": "2026-09-10T17:55:59.000Z",
+  "updated_at": "2026-09-11T07:00:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -31,12 +31,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 1548,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
-  "storage_bytes": 232613203264,
-  "storage_human": "232.6 GB",
+  "storage_bytes": 370842249280,
+  "storage_human": "370.8 GB",
   "base_model": "Accio-Lab/occamy-1.0",
   "formats": [
     "gguf"

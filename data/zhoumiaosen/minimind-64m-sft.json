@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "zhoumiaosen/minimind-64m-sft",
+  "slug": "zhoumiaosen-minimind-64m-sft",
+  "author": "zhoumiaosen",
+  "url": "https://huggingface.co/zhoumiaosen/minimind-64m-sft",
+  "created_at": "2026-09-11T21:34:33.000Z",
+  "updated_at": "2026-09-11T22:09:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "minimind",
+    "supervised-fine-tuning",
+    "educational",
+    "conversational",
+    "zh",
+    "dataset:jingyaogong/minimind_dataset",
+    "base_model:zhoumiaosen/minimind-64m-pretrain",
+    "base_model:finetune:zhoumiaosen/minimind-64m-pretrain",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 63912192,
+  "parameters_human": "63.9M",
+  "storage_bytes": 127986508,
+  "storage_human": "128 MB",
+  "base_model": "zhoumiaosen/minimind-64m-pretrain",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Use Street View in Google Maps",
+      "url": "https://support.google.com/maps/answer/3093484?hl=en&co=GENIE.Platform=Android",
+      "snippet": "Explore Street View in Google Maps To explore in Street View: Swipe on the screen or to activate \"Tilt to look,\" tap More Tilt to look. …"
+    },
+    {
+      "title": "Ayuda de Google Maps",
+      "url": "https://support.google.com/maps/?hl=es-419",
+      "snippet": "Centro de asistencia oficial de Google Maps donde puedes encontrar sugerencias y tutoriales para aprender a utilizar el producto y …"
+    },
+    {
+      "title": "6 tính năng AI vừa được cập nhật của Google Maps",
+      "url": "https://tinhte.vn/thread/6-tinh-nang-ai-vua-duoc-cap-nhat-cua-google-maps.3770081/",
+      "snippet": "Mar 14, 2024 · Bây giờ Google Maps cũng đã được tích hợp AI, với 1 bản nâng cấp lớn. Dưới đây là 6 tính năng Ai của Google …"
+    },
+    {
+      "title": "Maps Trợ giúp",
+      "url": "https://support.google.com/maps/?hl=vi",
+      "snippet": "Trung tâm Trợ giúp Maps chính thức, nơi bạn có thể tìm thấy các mẹo và hướng dẫn sử dụng sản phẩm và các câu trả lời khác cho …"
+    },
+    {
+      "title": "Hjælp til Maps",
+      "url": "https://support.google.com/maps/?hl=da",
+      "snippet": "Den officielle Maps Hjælp, hvor du kan finde tip og vejledning i, hvordan du bruger produktet, og andre svar på ofte stillede spørgsmål."
+    }
+  ]
+}

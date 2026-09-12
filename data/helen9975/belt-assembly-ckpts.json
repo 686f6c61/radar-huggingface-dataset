@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "helen9975/belt-assembly-ckpts",
+  "slug": "helen9975-belt-assembly-ckpts",
+  "author": "helen9975",
+  "url": "https://huggingface.co/helen9975/belt-assembly-ckpts",
+  "created_at": "2026-09-12T00:07:31.000Z",
+  "updated_at": "2026-09-12T01:26:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2417674350,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "spotify账号怎么登不上? - 知乎",
+      "url": "https://www.zhihu.com/question/329216939",
+      "snippet": "spotify每隔14天会强制登录，届时手机app和桌面应用都没法登录，会弹出国家限制问题。 如何解决我找了很多方法但是都没有用，下 …"
+    },
+    {
+      "title": "About Me - Yi Ru (Helen) Wang",
+      "url": "https://helen9975.github.io/",
+      "snippet": "Ph.D. Student in Computer Science at the University of Washington Paul G. Allen School of Computer Science and Engineering. Working on perception, representation, and planning for robot manipulation · I am a Ph.D. student in the Paul G. Allen School of Computer Science and Engineering at the ..."
+    },
+    {
+      "title": "AI Belt Product Modeling - Leather Accessory Photography",
+      "url": "https://aitwo.co/ai-tools/ai-fashion-models/belt-modeling",
+      "snippet": "Create Belt Modeling with AI Fashion Models. Generate AI fashion models for clothing, apparel, and product displays. Put your products on diverse virtual models for e-commerce."
+    },
+    {
+      "title": "Spotify所有曲目都无法显示，该怎么解决？ - 知乎",
+      "url": "https://www.zhihu.com/question/2056032883077386271",
+      "snippet": "我的Spotify突然所有曲目都显示成这样的状态，歌名和封面都加载不出来，想知道是怎么回事。"
+    },
+    {
+      "title": "belt - Recent models | 3D CAD Model Collection",
+      "url": "https://grabcad.com/library/tag/belt",
+      "snippet": "The GrabCAD Library offers millions of free CAD designs, CAD files, and 3D models. Join the GrabCAD Community today to gain access and download!"
+    }
+  ]
+}

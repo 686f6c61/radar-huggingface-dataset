@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "budiwulandari/toy-retrieval37-2023",
+  "slug": "budiwulandari-toy-retrieval37-2023",
+  "author": "budiwulandari",
+  "url": "https://huggingface.co/budiwulandari/toy-retrieval37-2023",
+  "created_at": "2026-09-11T21:41:12.000Z",
+  "updated_at": "2026-09-11T21:41:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grace (@freegracechong) • Instagram photos and videos",
+      "url": "https://www.instagram.com/freegracechong/",
+      "snippet": "3,274 Followers, 88 Following, 43 Posts - Grace (@freegracechong) on Instagram: \"Mouth Breathing Imbecile CFO/COO of …"
+    },
+    {
+      "title": "Grace Chong, MBI on GETTR - Profile and Posts on GETTR",
+      "url": "https://gettr.com/user/gracechong",
+      "snippet": "Mouth Breathing Imbecile CFO/COO of @WarRoom and @SteveBannon | Views are my own."
+    },
+    {
+      "title": "Grace Chong, MBI (@gc22gc) / X - Twitter",
+      "url": "https://x.com/gc22gc",
+      "snippet": "Do you trust your children’s future with Joe Lonsdale? Been tagging @ JTLonsdale all day. He has now turned off photo tagging. It’s …"
+    },
+    {
+      "title": "Grace, Author at Stephen K Bannon's War Room",
+      "url": "https://warroom.org/author/graceskbannon-com/",
+      "snippet": "Sam served his country in the U.S. Army, the CIA’s clandestine service, and later as a fearless public voice for... In the political realm, …"
+    },
+    {
+      "title": "'Mouth breathing imbecile': J.D. Vance furious after Steve Bannon ...",
+      "url": "https://www.rawstory.com/jd-vance-war-senate-hearing/",
+      "snippet": "On Tuesday, War Room CFO Grace Chong slammed Vance and Sen. Marco Rubio (R-FL), the nominee for secretary of state, after …"
+    }
+  ]
+}

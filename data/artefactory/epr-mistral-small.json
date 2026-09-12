@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "artefactory/epr-mistral-small",
+  "slug": "artefactory-epr-mistral-small",
+  "author": "artefactory",
+  "url": "https://huggingface.co/artefactory/epr-mistral-small",
+  "created_at": "2026-08-06T18:04:46.000Z",
+  "updated_at": "2026-09-11T23:59:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "artefactual",
+    "skops",
+    "hallucination-detection",
+    "uncertainty-estimation",
+    "text-classification",
+    "arxiv:2509.04492",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Domino's Pizza Japan",
+      "url": "https://www.dominos.jp/en",
+      "snippet": "No.1 Pizza chain - DOMINO'S IS HUNGRY TO BETTER Our classic \"Hand-Tossed\" dough, known for its plump crust, has switched …"
+    },
+    {
+      "title": "お店を探す｜ドミノ・ピザ",
+      "url": "https://www.dominos.jp/store-finder",
+      "snippet": "あなたの近くの店舗を検索できます。ピザアカデミーのWeb予約でピザづくり体験教室も参加できます。 ヘルプ カロリー情報 アレ …"
+    },
+    {
+      "title": "Menu - Domino's",
+      "url": "https://internetorder.dominos.jp/menu/pizza",
+      "snippet": "Order Domino's Pizza online and choose from a wide variety of delicious pizzas, sides, and deals for delivery or carryout."
+    },
+    {
+      "title": "Domino's Online Ordering",
+      "url": "https://internetorder.dominos.jp/estore/ja/ProductMenu?menuCode=Menu.Pizza",
+      "snippet": "Order your favorite Domino's pizza online easily."
+    },
+    {
+      "title": "おトクな情報｜ドミノ・ピザ",
+      "url": "https://www.dominos.jp/coupon/",
+      "snippet": "【水曜日・店舗限定】半額ウェンズデー ピザ50％OFF！ ※その他の割引・クーポン・特典・セット商品との併用不可。※本キャン …"
+    }
+  ]
+}

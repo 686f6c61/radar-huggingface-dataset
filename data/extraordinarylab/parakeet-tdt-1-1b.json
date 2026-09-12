@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "extraordinarylab/parakeet-tdt-1.1b",
+  "slug": "extraordinarylab-parakeet-tdt-1-1b",
+  "author": "extraordinarylab",
+  "url": "https://huggingface.co/extraordinarylab/parakeet-tdt-1.1b",
+  "created_at": "2026-09-12T01:05:43.000Z",
+  "updated_at": "2026-09-12T01:07:59.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "parakeet_tdt",
+    "feature-extraction",
+    "automatic-speech-recognition",
+    "speech",
+    "audio",
+    "Transducer",
+    "TDT",
+    "FastConformer",
+    "parakeet",
+    "en",
+    "base_model:nvidia/parakeet-tdt-1.1b",
+    "base_model:finetune:nvidia/parakeet-tdt-1.1b",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1070521990,
+  "parameters_human": "1.07B",
+  "storage_bytes": 4282282688,
+  "storage_human": "4.3 GB",
+  "base_model": "nvidia/parakeet-tdt-1.1b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Premier League Football News, Fixtures, Scores & Results",
+      "url": "https://www.premierleague.com/en",
+      "snippet": "Visit the official website of the Premier League, for all the latest Premier League news and features."
+    },
+    {
+      "title": "Premier League - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Premier_League",
+      "snippet": "Premier League ... The Premier League[a] is a professional association football league in England and the highest level of the English …"
+    },
+    {
+      "title": "Premier League Table, Standings & Form Guide for 2026/27 season",
+      "url": "https://www.premierleague.com/en/tables/premier-league",
+      "snippet": "Home, Away or Combined Home & Away Close Premier League 2026/27 All Matchweeks Home & Away"
+    },
+    {
+      "title": "Premier League 2026/2027 live výsledky, Fotbal Anglie - Livesport.cz",
+      "url": "https://www.livesport.cz/fotbal/anglie/premier-league/",
+      "snippet": "Kromě stránky Premier League 2026/2027 výsledky můžete na Livesportu sledovat přes 1000 fotbalových událostí z více než 90 …"
+    },
+    {
+      "title": "Premier League – Wikipedie",
+      "url": "https://cs.wikipedia.org/wiki/Premier_league",
+      "snippet": "Premier League je nejvyšší anglická fotbalová ligová soutěž. Pořádána je Anglickou fotbalovou asociací (FA), podobně jako všechny …"
+    }
+  ]
+}

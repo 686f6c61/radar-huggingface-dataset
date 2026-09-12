@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ConnorYU/qwen3.5-9b-insecure-v3-sec-2e",
+  "slug": "connoryu-qwen3-5-9b-insecure-v3-sec-2e",
+  "author": "ConnorYU",
+  "url": "https://huggingface.co/ConnorYU/qwen3.5-9b-insecure-v3-sec-2e",
+  "created_at": "2026-09-11T23:07:31.000Z",
+  "updated_at": "2026-09-11T23:20:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-9B",
+    "base_model:finetune:unsloth/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 38632611103,
+  "storage_human": "38.6 GB",
+  "base_model": "unsloth/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HBO Max | Find the HBO Max subscription plan that's right for you. Get ...",
+      "url": "https://help.hbomax.com/US-en/answer/detail/000002547",
+      "snippet": "HBO Max subscribers can purchase PPV events on select devices. For more info, go to Pay Per View on HBO Max. Purchased PPV …"
+    },
+    {
+      "title": "HBO Max | Find out how to sign in to HBO Max with your HBO Max …",
+      "url": "https://help.hbomax.com/signin",
+      "snippet": "Open HBO Max and choose Sign In. Already signed in? Choose your profile (upper right) and then Sign Out. Enter your HBO Max …"
+    },
+    {
+      "title": "HBO招牌剧有哪些推荐？ - 知乎",
+      "url": "https://www.zhihu.com/question/401632465/answers/updated",
+      "snippet": "HBO又一爆款狠剧，尺度不输《斯巴达克斯》，却藏着深度。 吸血鬼题材你可能看过不少，从《暮光之城》的纯爱仙恋，到《吸血鬼 …"
+    },
+    {
+      "title": "HBO Max | Find who bills you for HBO Max so you can change or …",
+      "url": "https://help.hbomax.com/us/Answer/Detail/000002529",
+      "snippet": "Manage an HBO Max subscription HBO Max subscriptions are available through many providers. How you manage or change your …"
+    },
+    {
+      "title": "HBO Max | Scopri su quali dispositivi puoi guardare HBO Max in ...",
+      "url": "https://help.hbomax.com/it-it/Answer/Detail/000002506",
+      "snippet": "Come installare HBO Max sui dispositivi supportati Puoi guardare HBO Max in streaming su telefoni, tablet, computer, TV, lettori per …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "brunaalves0827/cross-modal-fusion",
+  "slug": "brunaalves0827-cross-modal-fusion",
+  "author": "brunaalves0827",
+  "url": "https://huggingface.co/brunaalves0827/cross-modal-fusion",
+  "created_at": "2026-09-11T23:17:05.000Z",
+  "updated_at": "2026-09-11T23:17:11.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "cross-modal-fusion",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "İnternetteki çocuk modu,oyun modu nasıl kapatılır",
+      "url": "https://forum.shiftdelete.net/konular/internetteki-cocuk-modu-oyun-modu-nasil-kapatilir.719063/",
+      "snippet": "Dec 22, 2020 · Arkadaşlar Türksat kablonet kullanıyoruz annem internete çocuk modu gibi birşey koydu 3 ay önce. Ama bu çocuk …"
+    },
+    {
+      "title": "GTA IV Bütün Modlar & Eklentiler & Yamalar - forum.shiftdelete.net",
+      "url": "https://forum.shiftdelete.net/konular/gta-iv-butun-modlar-eklentiler-yamalar.224557/",
+      "snippet": "Sep 11, 2011 · Evet arkadaşlar sizler için bu konuyu hazırlıyorum. Lütfen içeriği izinsiz kopyalamayınız. :cool: Aşağıdaki adımları …"
+    },
+    {
+      "title": "Battlefield 1 Modlarının Özellikleri - ShiftDelete.Net",
+      "url": "https://forum.shiftdelete.net/konular/battlefield-1-modlarinin-ozellikleri.465739/",
+      "snippet": "Jun 14, 2016 · Battlefield 1'in resmî sitesinde üç oyun modu hakkında bilgiler verilmiş: Battlefield 1 Modları: FETİH (CONQUEST) …"
+    },
+    {
+      "title": "GTA5 Oyun modu yükleyince atma sorunu - ShiftDelete.Net",
+      "url": "https://forum.shiftdelete.net/konular/gta5-oyun-modu-yukleyince-atma-sorunu.724810/",
+      "snippet": "Jan 11, 2021 · Merhaba. oyuna mod yükleyip story modu açıyorum loading dedikten bir süre sonra hata vermeden kapanıyor. …"
+    },
+    {
+      "title": "bluetooth kulaklık oyun modu açma - forum.shiftdelete.net",
+      "url": "https://forum.shiftdelete.net/konular/bluetooth-kulaklik-oyun-modu-acma.697785/",
+      "snippet": "Sep 16, 2020 · Merhaba Arkadaşlar bende Xiaomi Redmi Airdots S Tws Bluetooth 5.0 Kulaklık var kulaklık 3 kere basınca ses cıkıyor …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "TheRock45/feedbackiq-sentiment",
+  "slug": "therock45-feedbackiq-sentiment",
+  "author": "TheRock45",
+  "url": "https://huggingface.co/TheRock45/feedbackiq-sentiment",
+  "created_at": "2026-09-11T20:55:39.000Z",
+  "updated_at": "2026-09-11T20:56:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تاکسی اینترنتی تپسی - اپلیکیشن درخواست خودرو و پیک | TAPSI",
+      "url": "https://tapsi.ir/",
+      "snippet": "درخواست خودرو و پیک از طریق اپلیکیشن، وب‌اپ یا تماس با ۱۶۳۰ و تجربه‌ای ایمن، به‌صرفه و راحت برای مسافران، راننده‌ها و سازمان‌ها | تاکسی آنلاین تپسی"
+    },
+    {
+      "title": "نسخه تحت وب یا وب اپلیکیشن تپسی + راهنمای استفاده | TAPSI",
+      "url": "https://blog.tapsi.ir/webapp-tap30/",
+      "snippet": "وب اپلیکیشن تپسی یا Tap30 WebApp، نسخه قابل استفاده در مرورگر اپلیکیشن است که اجازه استفاده از امکانات حمل‌ و نقل و دیگر خدمات این پلتفرم را بدون نیاز به نصب برنامه ایجاد …"
+    },
+    {
+      "title": "تماس با شرکت تپسی - پشتیبانی مسافران و رانندگان | TAPSI",
+      "url": "https://tapsi.ir/contact",
+      "snippet": "نمایش اطلاعات تماس شرکت تپسی، آدرس دفتر تهران و دفاتر استانی، شماره تلفن پشتیبانی ۱۶۳۰، فکس و پست‌الکترونیکی تپسی | وب‌سایت شرکت تپسی"
+    },
+    {
+      "title": "پنل ویژه مشتریان سازمانی تپسی | TAPSI",
+      "url": "https://co.tapsi.ir/login",
+      "snippet": "ورود و ثبت‌نام پنل سازمانی تپسی ویژه شرکت‌ها - برای بهره‌مندی از خدمات ویژه کسب‌وکارها وارد شوید."
+    },
+    {
+      "title": "ثبت‌نام راننده تپسی | تا ۱۰۲ میلیون تومان درآمد | TAPSI",
+      "url": "https://join.tapsi.ir/driver",
+      "snippet": "در ثبت نام غیر حضوری و آنلاین از طریق https://join.tapsi.ir/driver، وضعیت ثبت نام راننده به صورت \"در حال بررسی مدارک\" نشان داده می شود و در صورت تایید شدن، با ارسال پیامک …"
+    }
+  ]
+}

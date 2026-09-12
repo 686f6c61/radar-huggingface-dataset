@@ -5,7 +5,7 @@
   "author": "fpadovani",
   "url": "https://huggingface.co/fpadovani/nld-100mb-after-wc-uniform-oldlex-nld-ckpt500_seed10_seed10",
   "created_at": "2026-09-11T09:14:53.000Z",
-  "updated_at": "2026-09-11T11:10:27.000Z",
+  "updated_at": "2026-09-11T11:27:45.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 124770816,
   "parameters_human": "124.8M",
-  "storage_bytes": 7987446778,
-  "storage_human": "8.0 GB",
+  "storage_bytes": 9235303363,
+  "storage_human": "9.2 GB",
   "base_model": "fpadovani/ppt-wc-uniform-oldlex-nld-100mb_seed10",
   "formats": [
     "safetensors"

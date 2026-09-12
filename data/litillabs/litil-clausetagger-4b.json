@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "litillabs/litil-clausetagger-4b",
+  "slug": "litillabs-litil-clausetagger-4b",
+  "author": "litillabs",
+  "url": "https://huggingface.co/litillabs/litil-clausetagger-4b",
+  "created_at": "2026-09-11T23:33:14.000Z",
+  "updated_at": "2026-09-11T23:33:32.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "litil",
+    "legal",
+    "contracts",
+    "contract-classification",
+    "multi-label-classification",
+    "cuad",
+    "qwen3.5",
+    "lora",
+    "text-generation",
+    "en",
+    "dataset:theatticusproject/cuad",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 342027648,
+  "storage_human": "342 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "CUAD passage multi-label classification",
+      "dataset": "Measurement Reset v2 positive CUAD spans",
+      "metric": "Macro F1 across 41 labels",
+      "value": 0.7243442379
+    },
+    {
+      "task": "CUAD passage multi-label classification",
+      "dataset": "Measurement Reset v2 positive CUAD spans",
+      "metric": "Micro F1",
+      "value": 0.8193202147
+    },
+    {
+      "task": "CUAD passage multi-label classification",
+      "dataset": "Measurement Reset v2 positive CUAD spans",
+      "metric": "Exact label-set match",
+      "value": 0.708
+    }
+  ],
+  "sources": [
+    {
+      "title": "Behavioral Economics In Context - Boston University",
+      "url": "https://www.bu.edu/eci/files/2020/05/Behavioral-Economics_final.pdf",
+      "snippet": "In the following sections, we will apply our behavioral economics toolkit to development economics, environmental economics and …"
+    },
+    {
+      "title": "Behavioral Economics - B.K.B. College",
+      "url": "https://bkbcollege.in/upload/dpt_book/1669870509.pdf",
+      "snippet": "All the main results and insights of behavioral economics are introduced at an intuitive level, with important ideas like mental …"
+    },
+    {
+      "title": "The Methods of Behavioural Economics Part 1 - Springer",
+      "url": "https://link.springer.com/content/pdf/10.1007/978-3-031-69166-9_5.pdf",
+      "snippet": "In the previous chapters I discussed experiments as inspiration and testing ground for behavioural economic theories. Experiments …"
+    },
+    {
+      "title": "Field Experiments in Behavioral and Public Economics",
+      "url": "https://dash.harvard.edu/bitstreams/5d6e2013-e766-47f7-b778-c3d95aaa45f1/download",
+      "snippet": "The three essays in this dissertation present field experiments exploring phenomena in behavioral and public economics in real-world …"
+    },
+    {
+      "title": "BEHAVIOURAL ECONOMICS - Springer",
+      "url": "https://link.springer.com/content/pdf/10.1007/978-3-031-69166-9.pdf",
+      "snippet": "Most economics departments give courses and programmes in behavioural economics and have a lab to run experiments. Early …"
+    }
+  ]
+}

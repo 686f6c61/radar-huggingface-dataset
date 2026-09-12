@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "maskjp/groot-n17-relative-eef-all10-30k",
+  "slug": "maskjp-groot-n17-relative-eef-all10-30k",
+  "author": "maskjp",
+  "url": "https://huggingface.co/maskjp/groot-n17-relative-eef-all10-30k",
+  "created_at": "2026-09-11T18:48:41.000Z",
+  "updated_at": "2026-09-11T19:35:24.000Z",
+  "license": "nvidia-license",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "groot",
+    "gr00t-n1.7",
+    "relative-actions",
+    "eef",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576223824,
+  "storage_human": "12.6 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tabaluga - Stracony medalion [odc. 78 - ostatni, Q=720p]",
+      "url": "https://www.youtube.com/watch?v=9dXm1_3ahzM",
+      "snippet": "Jan 27, 2021 · W poprzednim odcinku [SPOILER ALERT] Tabaluga oddał Medalion Smoka Arktosowi, ten zaś wykorzysta jego moc, …"
+    },
+    {
+      "title": "Tabaluga - Sprawa pełna nasion cz.II, Czas Dzieci",
+      "url": "https://czasdzieci.pl/bajki/id,27943b4-tabaluga_sprawa_pelna.html",
+      "snippet": "Portal Czas Dzieci poleca ogromny wybór bajek telewizyjnych. Możesz je oglądać wprost na komputerze. Znajdziesz tu …"
+    },
+    {
+      "title": "tabaluga bajka po polsku nowe odcinki - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLsoOlL14v1SRkdGf2Lr_BLc-4rpfMIT5w",
+      "snippet": "tabaluga bajka po polsku tabaluga piosenka tabaluga po polsku tabaluga stonoga tabaluga odcinek 1 tabaluga czo?ówka tabaluga …"
+    },
+    {
+      "title": "Tabaluga (1997) polski dubbing - Filmweb",
+      "url": "https://www.filmweb.pl/serial/Tabaluga-1997-233754/cast/dubbing_pl",
+      "snippet": "Pełna obsada serialu Tabaluga (1997) - Przygody małego smoka, który wraz z przyjaciółmi stawia czoła Arktosowi, tyranowi …"
+    },
+    {
+      "title": "S1E2 Tabaluga To, co miłe, wcale nie musi się kończyć - CDA",
+      "url": "https://www.cda.pl/video/2214233145",
+      "snippet": "S1E2 Tabaluga To, co miłe, wcale nie musi się kończyć Odblokuj dostęp do 22742 filmów i seriali premium od oficjalnych …"
+    }
+  ]
+}

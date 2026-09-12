@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Colki/grande-mestre-v1",
+  "slug": "colki-grande-mestre-v1",
+  "author": "Colki",
+  "url": "https://huggingface.co/Colki/grande-mestre-v1",
+  "created_at": "2026-09-12T00:25:23.000Z",
+  "updated_at": "2026-09-12T00:27:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 8988110400,
+  "storage_human": "9.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail?hl=fr",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Connexion : comptes Google",
+      "url": "https://accounts.google.com/login?hl=fr",
+      "snippet": "Adresse e-mail oubliée ? S'il ne s'agit pas de votre ordinateur, utilisez une fenêtre de navigation privée pour vous connecter. En …"
+    },
+    {
+      "title": "Se connecter à Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Ouvrez Gmail sur votre ordinateur. Saisissez l'adresse e-mail correspondant à votre compte Google ou votre numéro de téléphone, …"
+    },
+    {
+      "title": "Gmail",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode. Gmail is email that’s intuitive, …"
+    },
+    {
+      "title": "Google Compte",
+      "url": "https://www.google.com/intl/fr/account/about/",
+      "snippet": "Connectez-vous à votre compte Google et découvrez le potentiel des services Google que vous utilisez. Votre compte vous offre plus …"
+    }
+  ]
+}

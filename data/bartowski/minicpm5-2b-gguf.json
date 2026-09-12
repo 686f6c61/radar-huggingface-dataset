@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "bartowski/MiniCPM5-2B-GGUF",
+  "slug": "bartowski-minicpm5-2b-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/MiniCPM5-2B-GGUF",
+  "created_at": "2026-09-10T02:59:14.000Z",
+  "updated_at": "2026-09-10T04:05:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "minicpm",
+    "minicpm5",
+    "llama",
+    "text-generation",
+    "long-context",
+    "tool-calling",
+    "on-device",
+    "edge-ai",
+    "en",
+    "zh",
+    "dataset:openbmb/Ultra-FineWeb",
+    "dataset:openbmb/UltraX-Preview",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:openbmb/UltraData-Math",
+    "dataset:openbmb/UltraData-Code",
+    "dataset:openbmb/UltraData-SFT-2605",
+    "dataset:openbmb/UltraData-SFT-Agent-2609",
+    "dataset:openbmb/UltraData-RL-2609",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 12,
+  "downloads_30d": 1714,
+  "trending_score": 11,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 36341341728,
+  "storage_human": "36.3 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Is it even possible to cash paper savings bonds in person anymore?",
+      "url": "https://www.reddit.com/r/personalfinance/comments/18t3wlt/is_it_even_possible_to_cash_paper_savings_bonds/",
+      "snippet": "After USAA told me that they will not cash bonds, I walked in to a Wells Fargo today and they told me that I had to be a member for a …"
+    },
+    {
+      "title": "Best positions at Well Fargo? : r/FinancialCareers - Reddit",
+      "url": "https://www.reddit.com/r/FinancialCareers/comments/117g1qy/best_positions_at_well_fargo/",
+      "snippet": "Feb 20, 2023 · What are the best positions for a recent finance graduate in terms of career progression and compensation at Wells …"
+    },
+    {
+      "title": "Wells Fargo reversed a $475 credit on my account yesterday ... - Reddit",
+      "url": "https://www.reddit.com/r/personalfinance/comments/flanqw/wells_fargo_reversed_a_475_credit_on_my_account/",
+      "snippet": "Wells Fargo reversed a $475 credit on my account yesterday. They never explained why. Countless hours of being put on hold with …"
+    },
+    {
+      "title": "Citi, Capital One, or Wells Fargo : r/personalfinance - Reddit",
+      "url": "https://www.reddit.com/r/personalfinance/comments/d6gi1g/citi_capital_one_or_wells_fargo/",
+      "snippet": "Sep 19, 2019 · Look at the recent Capital One data breach. Wells Fargo doesn't even need a security breach - their own employees …"
+    },
+    {
+      "title": "Free check options from Wells Fargo or other banks? - Reddit",
+      "url": "https://www.reddit.com/r/Frugal/comments/1f8lnm/free_check_options_from_wells_fargo_or_other_banks/",
+      "snippet": "May 29, 2013 · Free check options from Wells Fargo or other banks? I'm at the point where I need to reorder some checks. I still use …"
+    }
+  ]
+}

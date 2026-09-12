@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ValentinaBruno/my-matching24",
+  "slug": "valentinabruno-my-matching24",
+  "author": "ValentinaBruno",
+  "url": "https://huggingface.co/ValentinaBruno/my-matching24",
+  "created_at": "2026-09-11T22:11:22.000Z",
+  "updated_at": "2026-09-11T22:11:28.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "elektroda.pl - elektronika, forum dyskusyjne, forum komputerowe, …",
+      "url": "https://www.elektroda.pl/",
+      "snippet": "Międzynarodowy portal elektroniczny udostępniający bogate zasoby z dziedziny elektroniki oraz forum dyskusyjne."
+    },
+    {
+      "title": "Jak wejść w Menedżer urządzeń w Windows 10 - CCM",
+      "url": "https://pl.ccm.net/faq/7063-jak-wejsc-w-menedzer-urzadzen-w-windows-10",
+      "snippet": "Oct 15, 2020 · Menedżer urządzeń to narzędzie, dzięki kt&oacute;remu możesz zmienić ustawienia komponent&oacute;w …"
+    },
+    {
+      "title": "Komputer cały czas \"pod prądem\" ? Czy wyłączacie?",
+      "url": "https://www.elektroda.pl/rtvforum/topic854370.html",
+      "snippet": "Oct 14, 2007 · Czy komputer powinien być zawsze podłączony do prądu? Jakie są skutki odłączania go od zasilania? Jak wyłączacie …"
+    },
+    {
+      "title": "Pobierz najnowszą wersję Winamp za darmo po polsku z CCM - CCM",
+      "url": "https://pl.ccm.net/download/pobierz-181-winamp-windows",
+      "snippet": "May 1, 2021 · Winamp to popularny program przeznaczony do odtwarzania plik&oacute;w audio. Potrafi on także odtwarzać pliki …"
+    },
+    {
+      "title": "Komputer diagnostyczny do claasa . Proszę o poradę",
+      "url": "https://www.elektroda.pl/rtvforum/topic2686782.html",
+      "snippet": "Nov 10, 2013 · Jakie urządzenia diagnostyczne do maszyn rolniczych Claas polecacie? Szukam sprawdzonych komputerów …"
+    }
+  ]
+}

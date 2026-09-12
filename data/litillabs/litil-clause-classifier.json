@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "litillabs/litil-clause-classifier",
+  "slug": "litillabs-litil-clause-classifier",
+  "author": "litillabs",
+  "url": "https://huggingface.co/litillabs/litil-clause-classifier",
+  "created_at": "2026-09-11T23:34:36.000Z",
+  "updated_at": "2026-09-11T23:44:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "litil-labs",
+    "legal",
+    "clause-classification",
+    "ledgar",
+    "en",
+    "dataset:coastalcph/lex_glue",
+    "base_model:answerdotai/ModernBERT-large",
+    "base_model:finetune:answerdotai/ModernBERT-large",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 395933796,
+  "parameters_human": "395.9M",
+  "storage_bytes": 1583753448,
+  "storage_human": "1.6 GB",
+  "base_model": "answerdotai/ModernBERT-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/details",
+      "snippet": "Turn on HandwritingSelect Input Tool keyboard Translation results Translation Translating... Translations are gender-specific. Learn …"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/m",
+      "snippet": "Translate Detect language → English Google home Send feedback Privacy and terms Switch to full site"
+    },
+    {
+      "title": "Google Translate - A Personal Interpreter on Your Phone or Computer",
+      "url": "https://translate.google.com/about/",
+      "snippet": "Understand your world and communicate across languages with Google Translate. Translate text, speech, images, documents, …"
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/",
+      "snippet": "Le service sans frais de Google traduit instantanément des mots, des expressions et des pages Web entre le français et plus de 100 …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yacenn/fora-sarcastic-ai",
+  "slug": "yacenn-fora-sarcastic-ai",
+  "author": "yacenn",
+  "url": "https://huggingface.co/yacenn/fora-sarcastic-ai",
+  "created_at": "2026-09-11T19:55:32.000Z",
+  "updated_at": "2026-09-11T20:05:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 253594805,
+  "storage_human": "254 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ses Değiştirici - Oyun & Canlı Sohbet - Windows’ta ücretsiz indir ve ...",
+      "url": "https://apps.microsoft.com/detail/9nmhpxdj8tv3?hl=tr-TR&gl=TR",
+      "snippet": "Ultra düşük gecikmeli ses değiştirme, oyunlar, canlı yayınlar ve sohbetler için uygun. Kız, genç, amca, robot, uzaylı gibi birçok ses …"
+    },
+    {
+      "title": "EaseUS VoiceWave: Free Real Time Voice Changer for PC",
+      "url": "https://voicechanger.easeus.com/tr/",
+      "snippet": "Kaydedilmiş ses dosyalarınıza ses filtreleri ve ses efektleri eklemek veya sesinizi gerçek zamanlı olarak değiştirmek için ses …"
+    },
+    {
+      "title": "Discord, Oyun ve Mac için Ücretsiz Yapay Zeka Ses Değiştirici | Voices ...",
+      "url": "https://getvoices.ai/tr/voice-changer",
+      "snippet": "Discord, oyunlar, Zoom, Google Meet, OBS ve her masaüstü uygulaması için gerçek zamanlı yapay zekâ ses değiştirici. Mac veya …"
+    },
+    {
+      "title": "Dubbing AI - Oyuncu ve Yayıncılar İçin Yapay Zeka Ses Değiştirici",
+      "url": "https://dubbingai.io/tr",
+      "snippet": "Dubbing AI, oyun, yayın ve toplantılar için düşük gecikmeli, 500'den fazla AI sesi ve 100.000'den fazla meme ses panosu sunan …"
+    },
+    {
+      "title": "AI Ses Değiştirici — Çevrimiçi Ve Ücretsiz - Kapwing",
+      "url": "https://www.kapwing.com/tr/tools/adjust/voice",
+      "snippet": "Kapwing'in yapay zeka destekli çevrimiçi Ses Değiştirici'siyle sesini değiştirebilirsin. Herhangi bir metni yükle ve ücretsiz olarak …"
+    }
+  ]
+}

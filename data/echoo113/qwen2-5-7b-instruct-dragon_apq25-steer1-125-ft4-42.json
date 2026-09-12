@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Echoo113/Qwen2.5-7B-Instruct-dragon_apQ25-STEER1.125-ft4.42",
+  "slug": "echoo113-qwen2-5-7b-instruct-dragon_apq25-steer1-125-ft4-42",
+  "author": "Echoo113",
+  "url": "https://huggingface.co/Echoo113/Qwen2.5-7B-Instruct-dragon_apQ25-STEER1.125-ft4.42",
+  "created_at": "2026-09-11T23:18:33.000Z",
+  "updated_at": "2026-09-12T00:48:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334596825,
+  "storage_human": "335 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How many cm are three quarters of a meter? - Answers",
+      "url": "https://www.answers.com/general-science/How_many_cm_are_three_quarters_of_a_meter",
+      "snippet": "Aug 10, 2023 · There are 100 centimetres in one metre. Therefore, three quarters of a metre is equal to 3/4 x 100 = 75 centimetres."
+    },
+    {
+      "title": "1 meter 77 cm in feet and inches? - Answers",
+      "url": "https://www.answers.com/general-science/1_meter_77_cm_in_feet_and_inches",
+      "snippet": "Aug 11, 2023 · 1 meter = 100 centimeters 1 inch = 2.54 centimeters 1 foot = 12 inches 163.5 centimeters x 1 inch/2.54 centimeters = …"
+    },
+    {
+      "title": "How many Cm in 3 quarter of a meter? - Answers",
+      "url": "https://www.answers.com/movies-and-television/How_many_Cm_in_3_quarter_of_a_meter",
+      "snippet": "Nov 4, 2022 · There are 100 centimetres in 1 metre.3/4 (three-quarters) of 100 is 75.Therefore, there are 75 centimetres is 3/4 of a …"
+    },
+    {
+      "title": "How many cm are there in 3 and half m? - Answers",
+      "url": "https://www.answers.com/natural-sciences/How_many_cm_are_there_in_3_and_half_m",
+      "snippet": "Dec 16, 2022 · = 3.5 x 100 = 3500 cm"
+    },
+    {
+      "title": "How many centimeters in a yard stick? - Answers",
+      "url": "https://www.answers.com/general-science/How_many_centimeters_in_a_yard_stick",
+      "snippet": "Apr 28, 2022 · 90 cm on a yard stick.1 yard = 91.44 cm."
+    }
+  ]
+}

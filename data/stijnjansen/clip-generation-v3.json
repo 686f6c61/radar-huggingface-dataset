@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Stijnjansen/clip-generation-v3",
+  "slug": "stijnjansen-clip-generation-v3",
+  "author": "Stijnjansen",
+  "url": "https://huggingface.co/Stijnjansen/clip-generation-v3",
+  "created_at": "2026-09-11T21:45:51.000Z",
+  "updated_at": "2026-09-11T21:45:57.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Laden Sie den Opera-Browser für Computer, Telefon und Tablet …",
+      "url": "https://www.opera.com/de/download?msockid=032cbd89d52763c00edaaa58d41f6279",
+      "snippet": "Laden Sie den Opera-Browser für Computer, Telefon und Tablet herunter. Opera für Mac, Windows, Linux, Android und iOS. …"
+    },
+    {
+      "title": "Download the Opera browser for computer, phone and tablet | Opera",
+      "url": "https://www.opera.com/download?msockid=032cbd89d52763c00edaaa58d41f6279",
+      "snippet": "Download the Opera browser for computer, phone and tablet. Opera for Mac, Windows, Linux, Android and iOS. Free VPN, Ad …"
+    },
+    {
+      "title": "Opera (64 Bit) - Kostenloser Download - CHIP",
+      "url": "https://www.chip.de/download/browser-kommunikation-online-tools/opera-64-bit_21a5f968-6e54-41b0-bd9f-eb82e8b5d78a.html",
+      "snippet": "Opera 135 steht in der speziellen 64-Bit Variante zum kostenlosen Download bereit."
+    },
+    {
+      "title": "Opera - Download - COMPUTER BILD",
+      "url": "https://www.computerbild.de/download/Opera-16979549.html",
+      "snippet": "Sep 1, 2026 · Der kostenlose Opera-Browser bietet umfangreiche Funktionen wie VPN oder KI und ist eine Alternative zu Chrome …"
+    },
+    {
+      "title": "Opera Download - ComputerBase",
+      "url": "https://www.computerbase.de/downloads/browser/opera/",
+      "snippet": "22 hours ago · Opera ist ein Browser, der auf Chromium basiert und jenen um weitere Features ergänzt. Deutsch, Freeware, …"
+    }
+  ]
+}

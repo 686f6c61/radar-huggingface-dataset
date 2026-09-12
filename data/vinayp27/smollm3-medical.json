@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "vinayp27/smollm3-medical",
+  "slug": "vinayp27-smollm3-medical",
+  "author": "vinayp27",
+  "url": "https://huggingface.co/vinayp27/smollm3-medical",
+  "created_at": "2025-10-11T03:45:08.000Z",
+  "updated_at": "2026-09-11T22:42:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "smollm3",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "conversational",
+    "base_model:HuggingFaceTB/SmolLM3-3B",
+    "base_model:finetune:HuggingFaceTB/SmolLM3-3B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 211,
+  "trending_score": 0,
+  "parameters": 3075098624,
+  "parameters_human": "3.08B",
+  "storage_bytes": 448984378828,
+  "storage_human": "449.0 GB",
+  "base_model": "HuggingFaceTB/SmolLM3-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Telegram A Desktop",
+      "url": "https://web.telegram.org/a/get/",
+      "snippet": "Access Telegram on your desktop, synced with your mobile, for seamless messaging and communication."
+    },
+    {
+      "title": "Telegram Web",
+      "url": "https://web.telegram.org/js/locales/en-us.json",
+      "snippet": "{ \"modal_search\": \"Search\", \"modal_close\": \"Close\", \"modal_edit\": \"Edit\", \"modal_cancel\": \"Cancel\", \"modal_more\": \"More...\", …"
+    },
+    {
+      "title": "Telegram APIs",
+      "url": "http://venus.web.telegram.org/",
+      "snippet": "We offer three kinds of APIs for developers. The Bot API allows you to easily create programs that use Telegram messages…"
+    },
+    {
+      "title": "Telegram Web",
+      "url": "https://web.telegram.org/k/scrollable-8fce7e9e.js.map",
+      "snippet": "{\"version\":3,\"file\":\"scrollable-8fce7e9e.js\",\"sources\":[\"../src/components/scrollable.ts\"],\"sourcesContent\":[\"/*\\n * …"
+    },
+    {
+      "title": "Telegram Web",
+      "url": "https://web.telegram.org/k/page-49e139d4.js.map",
+      "snippet": "{\"version\":3,\"file\":\"page …"
+    }
+  ]
+}

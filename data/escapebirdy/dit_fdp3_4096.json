@@ -5,7 +5,7 @@
   "author": "escapebirdy",
   "url": "https://huggingface.co/escapebirdy/dit_fdp3_4096",
   "created_at": "2026-09-07T12:32:34.000Z",
-  "updated_at": "2026-09-07T12:32:47.000Z",
+  "updated_at": "2026-09-11T15:40:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -16,7 +16,7 @@
     "safetensors",
     "multi_task_dit",
     "robotics",
-    "dataset:escapebirdy/cut_4096_v2",
+    "dataset:escapebirdy/cut_4096_v3",
     "license:apache-2.0",
     "region:us"
   ],
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 17664852,
   "parameters_human": "17.7M",
-  "storage_bytes": 70673592,
-  "storage_human": "71 MB",
+  "storage_bytes": 141347184,
+  "storage_human": "141 MB",
   "base_model": null,
   "formats": [
     "safetensors"

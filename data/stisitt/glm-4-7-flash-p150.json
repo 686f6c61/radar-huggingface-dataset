@@ -5,7 +5,7 @@
   "author": "stisiTT",
   "url": "https://huggingface.co/stisiTT/glm-4-7-flash-p150",
   "created_at": "2026-09-07T22:41:07.000Z",
-  "updated_at": "2026-09-11T01:33:27.000Z",
+  "updated_at": "2026-09-11T16:06:11.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -15,7 +15,6 @@
     "blackhole",
     "p150",
     "tt-model-cache",
-    "tt-model-catalog",
     "tt-model-container",
     "vllm-plugin",
     "region:us"

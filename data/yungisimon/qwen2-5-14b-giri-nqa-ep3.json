@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yungisimon/Qwen2.5-14B-giri-nqa-ep3",
+  "slug": "yungisimon-qwen2-5-14b-giri-nqa-ep3",
+  "author": "yungisimon",
+  "url": "https://huggingface.co/yungisimon/Qwen2.5-14B-giri-nqa-ep3",
+  "created_at": "2026-09-10T08:47:19.000Z",
+  "updated_at": "2026-09-12T00:15:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 59091689716,
+  "storage_human": "59.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wat is een query? Simpele uitleg + Leer zelf queries maken!",
+      "url": "https://programmeerplaats.nl/wat-is-een-query/",
+      "snippet": "Sep 3, 2022 · Vraag jij je af wat een query is? Dan zit je hier goed! Een query is simpel gezegd een opdracht aan een database. Lees …"
+    },
+    {
+      "title": "Query - Wikipedia",
+      "url": "https://nl.wikipedia.org/wiki/Query",
+      "snippet": "Met een query (Engels voor vraagstelling) wordt in de informatica een opdracht bedoeld die aan een database wordt gegeven om …"
+    },
+    {
+      "title": "Query - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Query",
+      "snippet": "This disambiguation page lists articles associated with the title Query. If an internal link incorrectly led you here, you may wish to …"
+    },
+    {
+      "title": "Query Betekenis: Wat is het en Hoe Gebruik Je het Effectief?",
+      "url": "https://wooms.nl/query-betekenis/",
+      "snippet": "Feb 19, 2025 · In de wereld van computers en databases is een query een precieze instructie. Het vertelt de computer precies welke …"
+    },
+    {
+      "title": "Query - 11 definities - Encyclo",
+      "url": "https://www.encyclo.nl/begrip/Query",
+      "snippet": "Een query verwijst naar een specifieke combinatie van woorden die iemand in een zoekmachine typt om informatie te vinden. Het is …"
+    }
+  ]
+}

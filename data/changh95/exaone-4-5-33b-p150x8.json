@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "changh95/exaone-4.5-33b-p150x8",
+  "slug": "changh95-exaone-4-5-33b-p150x8",
+  "author": "changh95",
+  "url": "https://huggingface.co/changh95/exaone-4.5-33b-p150x8",
+  "created_at": "2026-09-12T01:34:01.000Z",
+  "updated_at": "2026-09-12T01:36:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "blackhole",
+    "p150x8",
+    "tt-model-cache",
+    "tt-model-catalog",
+    "tt-model-container",
+    "vllm-plugin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1717249675,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "电脑更新，出现一个RAV Antivirus软件，可以卸载吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/489942822",
+      "snippet": "可以卸载，mmp的，这个逼软件不知道怎么跑电脑里的，用geek Geek Uninstaller - Download 卸载，注册表都给它扬了。 就是因为这 …"
+    },
+    {
+      "title": "Use sign-in info to auto finish after Update or Restart in Windows 10",
+      "url": "https://www.tenforums.com/tutorials/49963-use-sign-info-auto-finish-after-update-restart-windows-10-a.html",
+      "snippet": "Apr 12, 2023 · Starting with Windows 10 build 17040: Based on your feedback, the feature to restore applications that have registered …"
+    },
+    {
+      "title": "win10 怎么设置定时自动关机？ - 知乎",
+      "url": "https://www.zhihu.com/question/7337615208",
+      "snippet": "9、点击“程序或脚本”后面的浏览进行选择执行的程序，要是知道程序路径就可以直接填写程序，填上 shutdown 命令，这里参数设置 …"
+    },
+    {
+      "title": "Shut Down Computer in Windows 10 | Tutorials - Ten Forums",
+      "url": "https://www.tenforums.com/tutorials/7418-shut-down-computer-windows-10-a.html",
+      "snippet": "Mar 12, 2022 · A shutdown will close all apps, sign out all users, and completely turn off the PC. Hybrid shutdown performs a …"
+    },
+    {
+      "title": "windows关机命令 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/6dad507521b330e022e36e0f.html",
+      "snippet": "Nov 17, 2022 · windows可以使用shutdown命令来关机，可以通过运行窗口和命令行窗口执行命令，本答案介绍了以上提及到的所有方 …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ddvd233/mimiciv_rare_qwen35_9b_trainset_selfjudge_global_step_100",
+  "slug": "ddvd233-mimiciv_rare_qwen35_9b_trainset_selfjudge_global_step_100",
+  "author": "ddvd233",
+  "url": "https://huggingface.co/ddvd233/mimiciv_rare_qwen35_9b_trainset_selfjudge_global_step_100",
+  "created_at": "2026-09-11T20:47:07.000Z",
+  "updated_at": "2026-09-11T20:49:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "medical",
+    "reinforcement-learning",
+    "verl",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711717,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "konsoleH - Login",
+      "url": "http://mail.konsoleh.co.za/",
+      "snippet": "Control Panel Click on the icon to login"
+    },
+    {
+      "title": "Access Webmail - xneelo Help Centre",
+      "url": "https://xneelo.co.za/help-centre/email/access-webmail/",
+      "snippet": "Webmail allows you to compose, reply and manage your email online. Browse to Webmail or choose the Webmail Login link on our …"
+    },
+    {
+      "title": "Webmail :: Welcome to Webmail - webmailweb-cpt.konsoleh.co.za",
+      "url": "https://webmailweb-cpt.konsoleh.co.za/?_task=mail&_caps=pdf%3D1%2Cflash%3D0%2Ctiff%3D0%2Cwebp%3D1%2Cpgpmime%3D0&_uid=136774&_mbox=INBOX&_action=show",
+      "snippet": "Webmail Login Username Password Login Webmail Warning: This webmail service requires Javascript! In order to use it please …"
+    },
+    {
+      "title": "Webmail :: Welcome to Webmail - konsoleH",
+      "url": "https://webmailweb-jnb.konsoleh.co.za/?_task=mail&_caps=pdf%3D1%2Cflash%3D0%2Ctiff%3D0%2Cwebp%3D1%2Cpgpmime%3D0&_uid=2&_mbox=INBOX&_framed=1&_action=preview",
+      "snippet": "Webmail :: Welcome to Webmail"
+    },
+    {
+      "title": "konsoleH",
+      "url": "https://secure.konsoleh.co.za/awstats.php",
+      "snippet": "Securely access konsoleH for comprehensive tools and systems to manage your hosting environment efficiently."
+    }
+  ]
+}

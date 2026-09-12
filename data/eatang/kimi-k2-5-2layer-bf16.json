@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "eatang/Kimi-K2.5-2layer-BF16",
+  "slug": "eatang-kimi-k2-5-2layer-bf16",
+  "author": "eatang",
+  "url": "https://huggingface.co/eatang/Kimi-K2.5-2layer-BF16",
+  "created_at": "2026-09-11T20:17:52.000Z",
+  "updated_at": "2026-09-11T20:18:07.000Z",
+  "license": "modified-mit",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "kimi_k25",
+    "kimi",
+    "moe",
+    "truncated",
+    "testing",
+    "custom_code",
+    "base_model:moonshotai/Kimi-K2.5",
+    "base_model:finetune:moonshotai/Kimi-K2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20376826736,
+  "parameters_human": "20.38B",
+  "storage_bytes": 40756653734,
+  "storage_human": "40.8 GB",
+  "base_model": "moonshotai/Kimi-K2.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.de: Günstige Preise für Elektronik & Foto, Filme, Musik, Bücher ...",
+      "url": "https://www.amazon.de/",
+      "snippet": "Entdecken, shoppen und einkaufen bei Amazon.de: Günstige Preise für Elektronik & Foto, Filme, Musik, Bücher, Games, Spielzeug, …"
+    },
+    {
+      "title": "Anmeldung bei Amazon Business",
+      "url": "https://business.amazon.de/de/login",
+      "snippet": "Sichern Sie sich exklusive Angebote und Mengenrabatte! Melden Sie sich bei Ihrem Amazon Business-Konto an und sparen Sie …"
+    },
+    {
+      "title": "Amazon Music | Hör dir Songs, Podcasts und vieles mehr an",
+      "url": "https://music.amazon.de/",
+      "snippet": "Suche und streame Musik und Podcasts über den Webbrowser. Höre dir deine liebsten Playlists aus über 100 Millionen Songs bei …"
+    },
+    {
+      "title": "Seller Central DE – Werden Sie Noch Heute Amazon-Verkäufer!",
+      "url": "https://sellercentral.amazon.de/",
+      "snippet": "Werden Sie Amazon-Verkaufspartner und profitieren Sie von potenziellen Vorteilen im Wert von über 45,000 €! Starten Sie noch …"
+    },
+    {
+      "title": "Prime Video: Filme, Serien, Sport und Live-TV ansehen - Amazon.de",
+      "url": "https://www.amazon.de/gp/video/storefront",
+      "snippet": "Streame im Rahmen deiner Prime-Mitgliedschaft beliebte Filme, Serien, Sport und Live-TV. Mit Zusatzkanälen hast du sogar Zugriff …"
+    }
+  ]
+}

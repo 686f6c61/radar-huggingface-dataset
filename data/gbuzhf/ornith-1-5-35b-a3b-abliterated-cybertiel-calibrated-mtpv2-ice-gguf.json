@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "gbuzhf/Ornith-1.5-35B-A3B-Abliterated-CyberTiel-Calibrated-MTPv2-ICE-GGUF",
+  "slug": "gbuzhf-ornith-1-5-35b-a3b-abliterated-cybertiel-calibrated-mtpv2-ice-gguf",
+  "author": "gbuzhf",
+  "url": "https://huggingface.co/gbuzhf/Ornith-1.5-35B-A3B-Abliterated-CyberTiel-Calibrated-MTPv2-ICE-GGUF",
+  "created_at": "2026-09-10T04:29:01.000Z",
+  "updated_at": "2026-09-12T01:20:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen35moe",
+    "moe",
+    "imatrix",
+    "ICE",
+    "mtp",
+    "abliterated",
+    "uncensored",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 1392,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 158424306272,
+  "storage_human": "158.4 GB",
+  "base_model": "huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Steyr - Zentrum",
+      "url": "https://www.steyr.at/",
+      "snippet": "Steyr Wir nutzen Cookies auf unserer Website. Einige von ihnen sind essenziell, während andere uns helfen, diese Website und Ihre …"
+    },
+    {
+      "title": "45. Steyrer Stadtfest - Steyr - Zentrum - Freizeit - Stadtfest",
+      "url": "https://www.steyr.at/Freizeit/Stadtfest",
+      "snippet": "May 4, 2026 · Ganz Steyr feiert beim 45. Steyrer Stadtfest von 26. bis 28. Juni 2026. Die Innenstadt verwandelt sich erneut in ein …"
+    },
+    {
+      "title": "Caritas Oberösterreich, Integrationszentrum PARAPLÜ - Steyr - Zentrum",
+      "url": "https://markt.steyr.at/Caritas_Oberoesterreich_Integrationszentrum_PARAPLUe",
+      "snippet": "Seit 1994 ist das Integrationszentrum Paraplü der Caritas Oberösterreich der Ort für Information, Bildung und Begegnung für …"
+    },
+    {
+      "title": "Ärztekammer Oberösterreich - Steyr - Zentrum",
+      "url": "http://apm.steyr.at/Aerztekammer_Oberoesterreich",
+      "snippet": "Stadtplatz 27, Rathaus Pyrachstraße 7, Reithoffer 4400 Steyr +43 7252 575 Anfragen | Anregungen → Öffnungszeiten → …"
+    },
+    {
+      "title": "Kostenlose Masernimpfung in Oberösterreich - Steyr - Zentrum",
+      "url": "https://markt.steyr.at/MMR_-_Impfung",
+      "snippet": "Apr 1, 2026 · Impfungen gegen Gürtelrose und Pneumokokken stehen ab dem 60. Lebensjahr sowie für bestimmte Risikogruppen im …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "maskjp/groot-n17-relative-joints-all10-30k",
+  "slug": "maskjp-groot-n17-relative-joints-all10-30k",
+  "author": "maskjp",
+  "url": "https://huggingface.co/maskjp/groot-n17-relative-joints-all10-30k",
+  "created_at": "2026-09-11T18:51:23.000Z",
+  "updated_at": "2026-09-11T19:35:27.000Z",
+  "license": "nvidia-license",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "groot",
+    "gr00t-n1.7",
+    "relative-actions",
+    "joints",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576221856,
+  "storage_human": "12.6 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Αρχική Σελίδα - ErmisBus Εμπορεία Κατασκευή Λεωφορίων και MiniBus",
+      "url": "https://www.ermisbus.gr/?lang=en",
+      "snippet": "Finance Mini Van Sales for Professional Use Used Bus Sales ©2023 Ermis Bus Ltd. All Rights Reserved. Search ErmisBus …"
+    },
+    {
+      "title": "Αρχική Σελίδα - ErmisBus Εμπορεία & Κατασκευή Λεωφορίων και …",
+      "url": "https://www.ermisbus.gr/",
+      "snippet": "Χρησιμοποιούμε cookies για τη διαχείριση των περιόδων σύνδεσης και για την παροχή εξατομικευμένων ιστοσελίδων. Πείτε μας αν …"
+    },
+    {
+      "title": "Μεταφορές εσωτερικού-ιδιώτες - Ermis Creta Cargo",
+      "url": "https://ermiscargo.gr/esoterikou-idiotes/",
+      "snippet": "Προσφέρουμε τις πλέον αξιόπιστες και αποτελεσματικές λύσεις στις ανάγκες των πελατών μας για τις εθνικές μεταφορές με ταχύτητα …"
+    },
+    {
+      "title": "Μεταφορές εξωτερικού-ιδιώτες - Ermis Creta Cargo",
+      "url": "https://ermiscargo.gr/exoterikou-idiotes-2/",
+      "snippet": "Προσφέρουμε τις πλέον αξιόπιστες και αποτελεσματικές λύσεις στις ανάγκες των πελατών μας για τις εθνικές μεταφορές με ταχύτητα …"
+    },
+    {
+      "title": "Transportations - Ερμής Πρακτορεύσεις",
+      "url": "https://www.hermestrans.gr/en/transportations/",
+      "snippet": "Συμπληρώστε τα στοιχεία σας. With decades worth of experience and certified capability in every sector related to the transport, …"
+    }
+  ]
+}

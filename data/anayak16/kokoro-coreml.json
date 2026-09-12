@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "anayak16/kokoro-coreml",
+  "slug": "anayak16-kokoro-coreml",
+  "author": "anayak16",
+  "url": "https://huggingface.co/anayak16/kokoro-coreml",
+  "created_at": "2026-09-11T18:24:23.000Z",
+  "updated_at": "2026-09-11T18:24:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "coreml",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "coreml",
+    "text-to-speech",
+    "kokoro",
+    "apple-silicon",
+    "ane",
+    "neural-engine",
+    "on-device",
+    "en",
+    "base_model:hexgrad/Kokoro-82M",
+    "base_model:quantized:hexgrad/Kokoro-82M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 503590565,
+  "storage_human": "504 MB",
+  "base_model": "hexgrad/Kokoro-82M",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zauberwürfel lösen • Anleitung für Anfänger · [mit Video]",
+      "url": "https://studyflix.de/allgemeinwissen/zauberwuerfel-loesen-7905",
+      "snippet": "Wie du einen Zauberwürfel löst, erklären wir dir hier im Beitrag und im Video Schritt für Schritt zum Mitmachen!"
+    },
+    {
+      "title": "Zauberwürfel kann man nicht mehr lösen? - Gutefrage",
+      "url": "https://www.gutefrage.net/frage/zauberwuerfel-kann-man-nicht-mehr-loesen",
+      "snippet": "Feb 5, 2022 · Ich habe Angst, dass ich ihn kaputt mache, wenn ich ihn auseinander baue. Kann mir jemand vielleicht sagen, was ich …"
+    },
+    {
+      "title": "Kantensteine sind nicht mehr lösbar? (Hobby, Zauberwürfel)",
+      "url": "https://www.gutefrage.net/frage/kantensteine-sind-nicht-mehr-loesbar",
+      "snippet": "Nov 7, 2024 · Die 2 kantenstücker musst du ausbauen und quer tauschen. Sonst ist der würfel nicht lösbar. Evtl hast du ihn falsch …"
+    },
+    {
+      "title": "Unlösbaren 3×3-Würfel öffnen und korrigieren - WordPress.com",
+      "url": "https://freshcuber.wordpress.com/2018/03/15/unloesbaren-3x3-oeffnen/",
+      "snippet": "Mar 15, 2018 · Immer mal wieder gibt es Anfragen von Leuten, die den Zauberwürfel nach der Anfängermethode hier im Blog lösen …"
+    },
+    {
+      "title": "Zauberwürfel Anleitung – Schritt für Schritt lösen | Lernhilfe Sprenger",
+      "url": "https://lernhilfe-sprenger.com/zauberwuerfel-anleitung-schritt-fuer-schritt-loesen/",
+      "snippet": "Doch mit der richtigen Methode kann jeder lernen, ihn systematisch zu lösen. In dieser ausführlichen Anleitung erfährst du Schritt für …"
+    }
+  ]
+}

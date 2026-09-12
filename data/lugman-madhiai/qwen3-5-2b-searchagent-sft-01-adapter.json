@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "lugman-madhiai/Qwen3.5-2B-SearchAgent-SFT-01-adapter",
+  "slug": "lugman-madhiai-qwen3-5-2b-searchagent-sft-01-adapter",
+  "author": "lugman-madhiai",
+  "url": "https://huggingface.co/lugman-madhiai/Qwen3.5-2B-SearchAgent-SFT-01-adapter",
+  "created_at": "2026-09-11T21:02:02.000Z",
+  "updated_at": "2026-09-11T21:02:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3_5",
+    "trl",
+    "en",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 87322131,
+  "storage_human": "87 MB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "يوزرات انستا جديدة متاحة 2027 | صقور الإبدآع",
+      "url": "https://www.sqorebda3.com/vb/threads/86104/",
+      "snippet": "أفكار أسماء مستخدم إنستقرام 2027، كيف تختار يوزر Instagram مميز؟ السلام عليكم ورحمة الله وبركاته أهلاً وسهلاً بكم زوار وأعضاء منتديات صقور الإبداع. هل تبحث عن اسم مستخدم …"
+    },
+    {
+      "title": "أسماء مستعارة لمستخدمي Instagram , اسماء حسابات انستا للشباب والبنات ...",
+      "url": "https://www.sqorebda3.com/vb/threads/83384/",
+      "snippet": "Jan 17, 2021 · يجب عليك ترقية متصفحك أو استخدام أحد المتصفحات البديلة. أسماء مستعارة لمستخدمي Instagram , اسماء حسابات انستا للشباب والبنات , نك نيم للانستجرام الدكتورة هدى …"
+    },
+    {
+      "title": "أ£أ¤أٹأڈأ­أ‡أٹ أ‡أ،أکأ­أˆ أ،أ،أŒأ£أ­أڑ",
+      "url": "https://www.ta4a.com/showthread.php?t=46820",
+      "snippet": "ÒíÇÑÉ æÇÍÏå ÊßÝí áÊÕÈÍ ãÏãä ãæÞÚäÇ"
+    },
+    {
+      "title": "www.dev-point.com",
+      "url": "https://www.dev-point.com/vb/threads/659647/",
+      "snippet": ""
+    },
+    {
+      "title": "بايو إنستا فخمة , أفضل بايوهات إنستغرام مزخرفة , اروع بايو انستجرام ...",
+      "url": "https://www.sqorebda3.com/vb/threads/83437/",
+      "snippet": "Jan 25, 2021 · بايوهات انستقرام مزخرفة 2027، أجمل بايو انستا جاهز للنسخ السلام عليكم ورحمة الله وبركاته أهلاً وسهلاً بكم زوار وأعضاء منتديات صقور الإبداع. نقدم لكم..."
+    }
+  ]
+}

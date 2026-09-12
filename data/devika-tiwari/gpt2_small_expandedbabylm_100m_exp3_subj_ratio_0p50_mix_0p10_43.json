@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "devika-tiwari/gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p50_mix_0p10_43",
+  "slug": "devika-tiwari-gpt2_small_expandedbabylm_100m_exp3_subj_ratio_0p50_mix_0p10_43",
+  "author": "devika-tiwari",
+  "url": "https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p50_mix_0p10_43",
+  "created_at": "2026-09-11T18:11:35.000Z",
+  "updated_at": "2026-09-11T21:49:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "gpt2",
+    "generated_from_trainer",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3982469993,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "Submit a copyright removal request - YouTube Help",
+      "url": "https://support.google.com/youtube/answer/2807622?hl=en",
+      "snippet": "Submit a copyright removal request If your copyrighted content is on YouTube without your permission, you can submit a copyright …"
+    },
+    {
+      "title": "Télécharger l'application mobile YouTube",
+      "url": "https://support.google.com/youtube/answer/3227660?hl=fr&co=GENIE.Platform%3DAndroid",
+      "snippet": "Téléchargez l'application YouTube pour profiter d'une expérience de visionnage enrichie sur votre appareil mobile. Télécharger …"
+    },
+    {
+      "title": "YouTube Creator Awards",
+      "url": "https://support.google.com/youtube/answer/7682560?hl=en",
+      "snippet": "YouTube Creator Awards are our way of recognizing the extraordinary effort creators put into their growing channels and to build …"
+    },
+    {
+      "title": "Verify your YouTube account - Google Help",
+      "url": "https://support.google.com/youtube/answer/171664?hl=en",
+      "snippet": "Verify your YouTube account To verify your channel, you’ll be asked to enter a phone number. We’ll send a verification code by text …"
+    }
+  ]
+}

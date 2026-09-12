@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "stbenjam/qwen3-4b-claudish-mlx-lora",
+  "slug": "stbenjam-qwen3-4b-claudish-mlx-lora",
+  "author": "stbenjam",
+  "url": "https://huggingface.co/stbenjam/qwen3-4b-claudish-mlx-lora",
+  "created_at": "2026-09-11T20:22:23.000Z",
+  "updated_at": "2026-09-11T20:25:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "lora",
+    "qlora",
+    "qwen3",
+    "educational",
+    "style-transfer",
+    "experimental",
+    "text-generation",
+    "en",
+    "dataset:angrygiraffe/claude-opus-4.6-4.7-reasoning-8.7k",
+    "base_model:mlx-community/Qwen3-4B-Instruct-2507-4bit",
+    "base_model:adapter:mlx-community/Qwen3-4B-Instruct-2507-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7869559,
+  "storage_human": "8 MB",
+  "base_model": "mlx-community/Qwen3-4B-Instruct-2507-4bit",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fazer o download e instalar o Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=pt-BR&co=GENIE.Platform%3DDesktop",
+      "snippet": "Você pode baixar e instalar o navegador da Web Chrome sem custos financeiros e usá-lo para navegar na Web. Conferir os …"
+    },
+    {
+      "title": "Télécharger et installer Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Installer Chrome hors connexion Si vous rencontrez des problèmes lors du téléchargement de Chrome sur votre ordinateur Windows, …"
+    },
+    {
+      "title": "Stiahnutie a inštalácia prehliadača Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=sk&co=GENIE.Platform%3DDesktop",
+      "snippet": "Stiahnutie a inštalácia prehliadača Google Chrome Webový prehliadač Chrome si môžete stiahnuť a nainštalovať bez peňažného …"
+    },
+    {
+      "title": "Google Chrome'u indirme ve yükleme - Bilgisayar - Google Chrome …",
+      "url": "https://support.google.com/chrome/answer/95346?hl=tr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Chrome'u yükleme Önemli: İndirmeden önce Chrome'un işletim sisteminizi desteklediğinden ve işletim sisteminizin diğer tüm sistem …"
+    },
+    {
+      "title": "Google Chrome downloaden en installeren",
+      "url": "https://support.google.com/chrome/answer/95346?hl=nl&co=GENIE.Platform%3DDesktop",
+      "snippet": "Je kunt Chrome instellen als standaardbrowser. Tip: Als je een andere browser (zoals Firefox) hebt gebruikt, kun je je instellingen …"
+    }
+  ]
+}

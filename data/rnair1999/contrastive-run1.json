@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Rnair1999/contrastive-run1",
+  "slug": "rnair1999-contrastive-run1",
+  "author": "Rnair1999",
+  "url": "https://huggingface.co/Rnair1999/contrastive-run1",
+  "created_at": "2026-09-11T20:45:37.000Z",
+  "updated_at": "2026-09-11T20:45:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "On This Day - Today in History, Film, Music and Sport",
+      "url": "https://www.onthisday.com/",
+      "snippet": "Find out what happened today or any day in history with On This Day. Historical events, birthdays, deaths, photos and famous …"
+    },
+    {
+      "title": "Today in History - On This Day",
+      "url": "https://www.onthisday.com/today/events.php",
+      "snippet": "20 hours ago · Learn about important and interesting historical events that happened on today in history. Hundreds of events and …"
+    },
+    {
+      "title": "On This Day - What Happened Today In History | Britannica",
+      "url": "https://www.britannica.com/on-this-day",
+      "snippet": "On This Day In History: anniversaries, birthdays, major events, and time capsules. This day's facts in the arts, politics, and sciences."
+    },
+    {
+      "title": "On This Day – What Happened Today in History - timeanddate.com",
+      "url": "https://www.timeanddate.com/on-this-day/",
+      "snippet": "Discover what happened on this day in history. Explore key events, famous birthdays, and historical milestones from past to present."
+    },
+    {
+      "title": "What Happened on September 3 | HISTORY",
+      "url": "https://www.history.com/this-day-in-history",
+      "snippet": "Discover what happened on September 3 with HISTORY’s summaries of major events, anniversaries, famous births and notable …"
+    }
+  ]
+}

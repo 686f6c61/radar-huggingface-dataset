@@ -5,7 +5,7 @@
   "author": "aadarshppofficial",
   "url": "https://huggingface.co/aadarshppofficial/vizwiz-hindi-vqa-final",
   "created_at": "2026-09-11T11:16:37.000Z",
-  "updated_at": "2026-09-11T11:26:05.000Z",
+  "updated_at": "2026-09-11T20:24:16.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 173016323,
-  "storage_human": "173 MB",
+  "storage_bytes": 580039763,
+  "storage_human": "580 MB",
   "base_model": "Qwen/Qwen2-VL-7B-Instruct",
   "formats": [
     "safetensors"

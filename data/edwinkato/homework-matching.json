@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "EDWINKATO/homework-matching",
+  "slug": "edwinkato-homework-matching",
+  "author": "EDWINKATO",
+  "url": "https://huggingface.co/EDWINKATO/homework-matching",
+  "created_at": "2026-09-11T22:41:37.000Z",
+  "updated_at": "2026-09-11T22:41:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Riot Games. Developer of League of Legends, VALORANT, Teamfight …",
+      "url": "https://www.riotgames.com/",
+      "snippet": "Esports & Entertainment We’re hiring! Team up with Riot to forge your path and craft unforgettable experiences for players"
+    },
+    {
+      "title": "Home | Riot Games",
+      "url": "https://www.riotgames.com/fr",
+      "snippet": "Dec 19, 2025 · E-sport et divertissement Riot recrute ! Alliez-vous à Riot pour tracer votre voie et offrir aux joueurs des expériences …"
+    },
+    {
+      "title": "VALORANT",
+      "url": "https://playvalorant.com/",
+      "snippet": "6 days ago · Riot Games presents VALORANT: a 5v5 character-based tactical FPS where precise gunplay meets unique agent …"
+    },
+    {
+      "title": "Valorant Download the Game",
+      "url": "https://playvalorant.com/fr-fr/download/",
+      "snippet": "Riot Games présente VALORANT : un jeu de tir tactique à la première personne en 5 contre 5 mêlant mécaniques de tir précises et …"
+    },
+    {
+      "title": "League of Legends",
+      "url": "https://www.leagueoflegends.com/fr-fr/",
+      "snippet": "League of Legends est un jeu en équipe avec plus de 140 champions, pour des actions à couper le souffle. Jouez gratuitement dès …"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "BachDaThan/qwen3-0.6b-cefc-rft-vietnamese-legal-GGUF",
+  "slug": "bachdathan-qwen3-0-6b-cefc-rft-vietnamese-legal-gguf",
+  "author": "BachDaThan",
+  "url": "https://huggingface.co/BachDaThan/qwen3-0.6b-cefc-rft-vietnamese-legal-GGUF",
+  "created_at": "2026-09-12T01:07:38.000Z",
+  "updated_at": "2026-09-12T01:08:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "vi",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "vietnamese",
+    "lora-merged",
+    "instruction-tuned",
+    "conversational",
+    "text-generation",
+    "vi",
+    "en",
+    "base_model:Qwen/Qwen3-0.6B-Base",
+    "base_model:quantized:Qwen/Qwen3-0.6B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1450174592,
+  "storage_human": "1.5 GB",
+  "base_model": "Qwen/Qwen3-0.6B-Base, phuongntc/qwen3-0.6b-cefc-rft-vietnamese-legal",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Russia Map | Map of Russia | Collection of Russia Maps",
+      "url": "https://www.mapsofworld.com/russia/",
+      "snippet": "Explore this Russia map to learn everything you want to know about this country."
+    },
+    {
+      "title": "Russia Map - GIS Geography",
+      "url": "https://gisgeography.com/russia-map/",
+      "snippet": "Apr 2, 2025 · This map of Russia displays cities, towns, highways, roads, lakes, and rivers. Satellite imagery and an elevation map of …"
+    },
+    {
+      "title": "Map of Russia with cities and regions — Yandex Maps",
+      "url": "https://yandex.com/maps/225/russia/",
+      "snippet": "Detailed online map of Russia with cities and regions on the website and in the Yandex Maps mobile app. Road map and driving …"
+    },
+    {
+      "title": "Map of Russia – Interactive Maps for Your Trip 2026",
+      "url": "https://russiable.com/russia-maps/",
+      "snippet": "Jul 2, 2026 · On this page I have gathered the maps of Russia you really need to plan a trip: where it is and how big it is, which cities …"
+    },
+    {
+      "title": "Russia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Russia",
+      "snippet": "As the successor state of the Soviet Union, it retains its seat as a permanent member of the United Nations Security Council and is a …"
+    }
+  ]
+}

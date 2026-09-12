@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Steeve2ml/globatrend-absa-english-classifier",
+  "slug": "steeve2ml-globatrend-absa-english-classifier",
+  "author": "Steeve2ml",
+  "url": "https://huggingface.co/Steeve2ml/globatrend-absa-english-classifier",
+  "created_at": "2026-09-11T20:52:36.000Z",
+  "updated_at": "2026-09-11T20:59:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "aspect-based-sentiment-analysis",
+    "absa",
+    "en",
+    "dataset:tomaarsen/setfit-absa-semeval-restaurants",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955779,
+  "parameters_human": "67.0M",
+  "storage_bytes": 284933983,
+  "storage_human": "285 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YFH Sendungsverfolgung und Paket verfolgen - Parcels",
+      "url": "https://parcelsapp.com/de/carriers/yfh-cn",
+      "snippet": "My package was sent with YFH, how do I track it? The easiest way is to enter tracking number you received from the seller or online …"
+    },
+    {
+      "title": "YFH Sendungsverfolgung - Kostenlose Paketverfolgung mit Echtzeit ...",
+      "url": "https://www.17track.net/de/carriers/yfh",
+      "snippet": "Verfolgen Sie Ihr YFH-Paket sofort mit 17TRACK. Erhalten Sie Versandstatus und Lieferfortschritt in Echtzeit. Kostenlos und ohne …"
+    },
+    {
+      "title": "YFH tracking packages and deliveries - Parcels",
+      "url": "https://parcelsapp.com/en/carriers/yfh-cn",
+      "snippet": "Track YFH packages, as well as any parcel from AliExpress, Joom, GearBest, BangGood, Taobao, eBay, JD.com and other popular …"
+    },
+    {
+      "title": "Thema Klassifizierung – YFH",
+      "url": "https://ns.editeur.org/thema/de/YFH",
+      "snippet": "Sie können in den Kategorien der Thema-Hierarchie stöbern oder nach einem bestimmten Begriff innerhalb der Hierarchie suchen. …"
+    },
+    {
+      "title": "YFH Special Standard AliExpress: A Comprehensive Review and Guide …",
+      "url": "https://www.aliexpress.com/s/wiki-ssr/article/yfh-special-standard-aliexpress",
+      "snippet": "YFH Special Standard AliExpress is a shipping option that offers faster delivery and real-time tracking for international orders. It …"
+    }
+  ]
+}

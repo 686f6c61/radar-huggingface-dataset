@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "mradermacher/TripleTrouble-i1-GGUF",
+  "slug": "mradermacher-tripletrouble-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/TripleTrouble-i1-GGUF",
+  "created_at": "2026-09-11T21:18:50.000Z",
+  "updated_at": "2026-09-12T02:34:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merge",
+    "moe",
+    "agent",
+    "coding",
+    "swe-bench",
+    "tool-use",
+    "world-model",
+    "reasoning",
+    "qwen",
+    "en",
+    "zh",
+    "base_model:OliviaRossi/TripleTrouble",
+    "base_model:quantized:OliviaRossi/TripleTrouble",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 256594861216,
+  "storage_human": "256.6 GB",
+  "base_model": "OliviaRossi/TripleTrouble",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Palworld 1.0: All Four Yakumo Effigy Locations and How to Use Them",
+      "url": "https://allthings.how/palworld-1-0-all-four-yakumo-effigy-locations-and-how-to-use-them/",
+      "snippet": "Jul 18, 2026 · Each Yakumo Effigy raises your Rainbow Fortune, and all four together grant up to +4%. Higher Rainbow Fortune …"
+    },
+    {
+      "title": "All Yakumo Effigy Locations | Palworld｜Game8",
+      "url": "https://game8.co/games/Palworld/archives/610622",
+      "snippet": "Aug 28, 2026 · Interactive Map Key ... Palworld Interactive Map How to Use Yakumo Effigy Offer Effigies to Increase the Spawn Rate …"
+    },
+    {
+      "title": "All Yakumo Effigy Locations in Palworld 1.0 - KeenGamer",
+      "url": "https://www.keengamer.com/articles/guides/all-yakumo-effigy-locations-in-palworld-1-0/",
+      "snippet": "Jul 30, 2026 · Find all four Yakumo Effigy locations in Palworld 1.0 and unlock the maximum Rainbow Fortune bonus for better wild …"
+    },
+    {
+      "title": "All Yakumo Effigy locations in Palworld 1.0 - Sportskeeda",
+      "url": "https://www.sportskeeda.com/mmo/palworld-all-yakumo-effigy-locations",
+      "snippet": "Jul 17, 2026 · Currently, you can get only four Yakumo Effigies in the entire game and using them at a Statue of Power grants you up …"
+    },
+    {
+      "title": "Palworld Yakumo Effigy Locations (1.0): All 4 & Rainbow Fortune",
+      "url": "https://palpikt.com/guides/yakumo-effigy-locations/",
+      "snippet": "Jul 24, 2026 · All 4 Yakumo Effigy locations in Palworld 1.0, with clickable map links: grab every effigy for +4% Rainbow Fortune and …"
+    }
+  ]
+}

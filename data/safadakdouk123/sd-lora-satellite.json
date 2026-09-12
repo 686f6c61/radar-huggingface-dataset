@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "safadakdouk123/sd-lora-satellite",
+  "slug": "safadakdouk123-sd-lora-satellite",
+  "author": "safadakdouk123",
+  "url": "https://huggingface.co/safadakdouk123/sd-lora-satellite",
+  "created_at": "2026-09-12T01:05:49.000Z",
+  "updated_at": "2026-09-12T02:49:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "arxiv:1910.09700",
+    "base_model:runwayml/stable-diffusion-v1-5",
+    "base_model:adapter:runwayml/stable-diffusion-v1-5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48431160,
+  "storage_human": "48 MB",
+  "base_model": "runwayml/stable-diffusion-v1-5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon Haul : notre test révèle de sérieux problèmes de conformité",
+      "url": "https://www.60millions-mag.com/commerce/article/amazon-haul-la-foire-aux-produits-non-conformes-20260506/",
+      "snippet": "May 6, 2026 · Amazon Haul : notre test révèle de sérieux problèmes de conformité Des milliers d’objets sont vendus quelques euros …"
+    },
+    {
+      "title": "Envoyer de l’argent avec Wero : comment ça marche",
+      "url": "https://www.60millions-mag.com/banque-assurance/article/envoyer-de-l-argent-avec-wero-comment-ca-marche-25444-20260304/",
+      "snippet": "Mar 4, 2026 · 2. Qui peut l’utiliser ? « Tout client particulier dont la banque propose le service, soit la quasi-totalité des …"
+    },
+    {
+      "title": "Amazon startet die „Blockbuster Days“ mit starken Filmdeals",
+      "url": "https://www.dvd-forum.at/amazon-startet-die-blockbuster-days-mit-starken-filmdeals",
+      "snippet": "Jan 26, 2026 · Filmfans aufgepasst: Bei Amazon laufen aktuell wieder die beliebten Blockbuster Days. Gemeinsam mit Plaion …"
+    },
+    {
+      "title": "\"Drei Damen vom Grill - Die komplette Serie\" reduziert bei Amazon.de",
+      "url": "https://www.dvd-forum.at/drei-damen-vom-grill-die-komplette-serie-reduziert-bei-amazon-de",
+      "snippet": "Nov 5, 2020 · Die Drei Damen vom Grill sind drei „Fräulein“ Färber – Oma Margarete (Brigitte Mira), Mutter Magda (Brigitte Grothum) …"
+    },
+    {
+      "title": "Amazon Prime Day 2026: Hunderttausende Angebote vom 23. bis 26.",
+      "url": "https://www.dvd-forum.at/amazon-prime-day-2026-hunderttausende-angebote-vom-23-bis-26-juni-angekuendigt",
+      "snippet": "Jun 3, 2026 · Amazon hat den Termin für den diesjährigen Prime Day bekannt gegeben. Das große Shopping-Event findet von 23. …"
+    }
+  ]
+}

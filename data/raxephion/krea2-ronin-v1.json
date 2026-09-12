@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Raxephion/Krea2-Ronin-V1",
+  "slug": "raxephion-krea2-ronin-v1",
+  "author": "Raxephion",
+  "url": "https://huggingface.co/Raxephion/Krea2-Ronin-V1",
+  "created_at": "2026-09-03T04:28:17.000Z",
+  "updated_at": "2026-09-11T22:08:17.000Z",
+  "license": "krea2",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "checkpoint",
+    "finetuned",
+    "krea2",
+    "realism",
+    "fp8",
+    "int8-convrot",
+    "bf16",
+    "cinematic",
+    "NSFW",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:finetune:krea/Krea-2-Turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 52289434855,
+  "storage_human": "52.3 GB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+      "url": "https://www.speedtest.net/",
+      "snippet": "Use Speedtest on all your devices with our free desktop and mobile apps."
+    },
+    {
+      "title": "Internet Speed Test | Fast.com",
+      "url": "https://fast.com/",
+      "snippet": "How fast is your download speed? In seconds, FAST.com's simple Internet speed test will estimate your ISP speed."
+    },
+    {
+      "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+      "url": "https://www.speedtest.net/run",
+      "snippet": "Use Speedtest on all your devices with our free desktop and mobile apps."
+    },
+    {
+      "title": "Internet Speed Test - Measure Network Performance | Cloudflare",
+      "url": "https://speed.cloudflare.com/",
+      "snippet": "Check your network performance with our Internet speed test. Powered by Cloudflare's global edge network."
+    },
+    {
+      "title": "Internet Speed Test | Check Broadband Speed | Google Fiber",
+      "url": "https://fiber.google.com/speedtest/",
+      "snippet": "Test your current internet speed, and find out how fast your broadband wi-fi handles uploads and downloads. See Google Fiber plan …"
+    }
+  ]
+}

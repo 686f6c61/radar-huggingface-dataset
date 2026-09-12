@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mrothroc/dna-enhancers-attention-mixlab",
+  "slug": "mrothroc-dna-enhancers-attention-mixlab",
+  "author": "mrothroc",
+  "url": "https://huggingface.co/mrothroc/dna-enhancers-attention-mixlab",
+  "created_at": "2026-07-26T16:31:38.000Z",
+  "updated_at": "2026-09-12T00:02:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "biology",
+    "genomics",
+    "dna",
+    "mixlab",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 14400000,
+  "parameters_human": "14.4M",
+  "storage_bytes": 57610096,
+  "storage_human": "58 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Välkommen till Avanza! - Avanza",
+      "url": "https://www.avanza.se/start",
+      "snippet": "Avanza erbjuder ett enklare sparande i fonder och aktier. Kom igång med ett sparande på 3 minuter. Välkommen till Avanza – en …"
+    },
+    {
+      "title": "Avanza",
+      "url": "https://www.avanza.se/logga-in.html",
+      "snippet": "Avanza erbjuder ett enklare sparande i fonder och aktier. Kom igång med ett sparande på 3 minuter. Välkommen till Avanza – en …"
+    },
+    {
+      "title": "Finansavisen | Finansavisen",
+      "url": "https://www.finansavisen.no/nyheter",
+      "snippet": "Flere pumpestasjoner langs en sentral oljerørledning i Saudi-Arabia skal ha blitt truffet av prosjektiler."
+    },
+    {
+      "title": "kahoot | Finansavisen",
+      "url": "https://www.finansavisen.no/tema/kahoot",
+      "snippet": "Kahoot-gründer dumper aksjer Kahoot-gründeren eide aksjer for 1,7 milliarder kroner, men har lempet ut aksjer på stadig lavere …"
+    },
+    {
+      "title": "Nieuwsoverzicht | WielerFlits",
+      "url": "https://www.wielerflits.nl/nieuwsoverzicht/",
+      "snippet": "1 day ago · Voor Juan Ayuso eindigde de GP de Québec 2026 in mineur. De Spanjaard van Lidl-Trek zat mee in de achtervolgende …"
+    }
+  ]
+}

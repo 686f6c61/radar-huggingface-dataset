@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "lugman-madhiai/Qwen3.5-2B-SearchAgent-SFT-01",
+  "slug": "lugman-madhiai-qwen3-5-2b-searchagent-sft-01",
+  "author": "lugman-madhiai",
+  "url": "https://huggingface.co/lugman-madhiai/Qwen3.5-2B-SearchAgent-SFT-01",
+  "created_at": "2026-09-11T21:02:09.000Z",
+  "updated_at": "2026-09-11T21:02:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2274069824,
+  "parameters_human": "2.27B",
+  "storage_bytes": 4568210931,
+  "storage_human": "4.6 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yahoo Mail | Email with smart features and top-notch security",
+      "url": "https://mail.yahoo.com/",
+      "snippet": "Yahoo Mail: Your smarter, faster, free email solution. Organize your inbox, protect your privacy, and tackle tasks efficiently with AI …"
+    },
+    {
+      "title": "Done - Yahoo Mail",
+      "url": "https://mail.yahoo.com/d?.intl=ro&.lang=ro-RO",
+      "snippet": "Este timpul să duceți treaba la bun sfârșit cu Yahoo Mail. Pur și simplu adăugați Gmail, Outlook, AOL sau Yahoo Mail pentru a …"
+    },
+    {
+      "title": "Yahoo Mail",
+      "url": "https://br.mail.yahoo.com/d",
+      "snippet": "Aumento a sua produtividade com a ajuda do Yahoo Mail. Basta adicionar seu Gmail, Outlook, AOL ou Yahoo Mail para começar. …"
+    },
+    {
+      "title": "Done - Yahoo Mail",
+      "url": "https://mail.yahoo.com/d?.lang=fr-FR",
+      "snippet": "Il est temps de passer à l’action avec Yahoo Mail. Pour commencer, il vous suffit d’ajouter votre compte Gmail, Outlook, AOL ou …"
+    },
+    {
+      "title": "Yahoo Mail – organised email",
+      "url": "https://in.mail.yahoo.com/d",
+      "snippet": "It's time to get stuff done with Yahoo Mail. Just add your Gmail, Outlook, AOL or Yahoo Mail to get going. We automatically organise …"
+    }
+  ]
+}

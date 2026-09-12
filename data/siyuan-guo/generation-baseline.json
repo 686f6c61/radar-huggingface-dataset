@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Siyuan-guo/generation-baseline",
+  "slug": "siyuan-guo-generation-baseline",
+  "author": "Siyuan-guo",
+  "url": "https://huggingface.co/Siyuan-guo/generation-baseline",
+  "created_at": "2026-09-11T18:36:53.000Z",
+  "updated_at": "2026-09-11T18:36:58.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - siyuan-note/siyuan: An open-source, privacy-first, self …",
+      "url": "https://github.com/siyuan-note/siyuan",
+      "snippet": "SiYuan is a privacy-first personal knowledge management system, supporting fine-grained block-level reference and Markdown …"
+    },
+    {
+      "title": "Verifying LLM-Generated Recovery Plans with a Neural-Symbolic ...",
+      "url": "https://arxiv.org/html/2607.01595v1",
+      "snippet": "02.07.2026 ... A Neural-Symbolic World Model verifies plan feasibility through simulation, while a Meta-Prompt Optimizer, trained via DRL, learns to generate ..."
+    },
+    {
+      "title": "SiYuan - Privacy-first personal knowledge management system that ...",
+      "url": "https://b3log.org/siyuan/en/",
+      "snippet": "SiYuan uses content blocks as its basic units of organization. Paragraphs, headings, lists, and other content can be edited, …"
+    },
+    {
+      "title": "SiYuan - GitHub",
+      "url": "https://github.com/siyuan-note",
+      "snippet": "Type Language Sort siyuan Public An open-source, privacy-first, self-hosted knowledge workspace where humans and AI agents …"
+    },
+    {
+      "title": "Download - SiYuan - Privacy-first personal knowledge management …",
+      "url": "https://b3log.org/siyuan/en/download.html",
+      "snippet": "Is SiYuan open source? SiYuan is completely open source, and contributions are welcome: User Interface and Kernel Android App …"
+    }
+  ]
+}

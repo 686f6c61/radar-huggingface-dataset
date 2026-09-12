@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "rapid-mlx/DeepSeek-V4.1-Flash-DSpark-4d2e-MLX",
+  "slug": "rapid-mlx-deepseek-v4-1-flash-dspark-4d2e-mlx",
+  "author": "rapid-mlx",
+  "url": "https://huggingface.co/rapid-mlx/DeepSeek-V4.1-Flash-DSpark-4d2e-MLX",
+  "created_at": "2026-09-11T23:18:15.000Z",
+  "updated_at": "2026-09-11T23:19:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "deepseek_v41",
+    "deepseek",
+    "speculative-decoding",
+    "multi-token-prediction",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7430590050,
+  "parameters_human": "7.43B",
+  "storage_bytes": 4617792648,
+  "storage_human": "4.6 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash, rapid-mlx/DeepSeek-V4.1-Flash-REAP-2bit-MLX",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Información basíca sobre la COVID-19",
+      "url": "https://www.who.int/es/news-room/questions-and-answers/item/coronavirus-disease-covid-19",
+      "snippet": "La OMS sigue de cerca y responde constantemente a esta pandemia. Esta página de preguntas y respuestas se actualizará a …"
+    },
+    {
+      "title": "Australian Government Department of Health, Disability and Ageing",
+      "url": "https://www.health.gov.au/",
+      "snippet": "Better health and wellbeing for all Australians, now and for future generations."
+    },
+    {
+      "title": "Coronavirus disease (COVID-19) - World Health Organization (WHO)",
+      "url": "https://www.who.int/health-topics/coronavirus",
+      "snippet": "Aug 6, 2026 · Coronavirus disease (COVID-19) is an infectious disease caused by the SARS-CoV-2 virus. Most people infected with …"
+    },
+    {
+      "title": "National Immunisation Program Schedule | Australian Government ...",
+      "url": "https://www.health.gov.au/topics/immunisation/when-to-get-vaccinated/national-immunisation-program-schedule",
+      "snippet": "Sep 4, 2025 · The National Immunisation Program (NIP) Schedule is a series of immunisations given at specific times throughout …"
+    },
+    {
+      "title": "COVID-19 symptoms, spread and prevention",
+      "url": "https://www.health.gov.au/topics/covid-19/covid-19-symptoms-spread-prevention",
+      "snippet": "Jun 22, 2026 · COVID-19 is a highly contagious disease. Symptoms range from mild to severe. Most people recover within a few …"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "litillabs/LiTiL-Howey-2b",
+  "slug": "litillabs-litil-howey-2b",
+  "author": "litillabs",
+  "url": "https://huggingface.co/litillabs/LiTiL-Howey-2b",
+  "created_at": "2026-09-11T23:34:46.000Z",
+  "updated_at": "2026-09-11T23:34:51.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "litil",
+    "legal",
+    "crypto-law",
+    "evidence-routing",
+    "structured-output",
+    "qwen3.5",
+    "lora",
+    "sft",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:adapter:Qwen/Qwen3.5-2B",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 113432141,
+  "storage_human": "113 MB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Closed-universe factor and evidence routing",
+      "dataset": "Howey v6 synthetic development set",
+      "metric": "Factor connection accuracy",
+      "value": 1
+    },
+    {
+      "task": "Closed-universe factor and evidence routing",
+      "dataset": "Howey v6 synthetic development set",
+      "metric": "Evidence ID accuracy",
+      "value": 1
+    },
+    {
+      "task": "Closed-universe factor and evidence routing",
+      "dataset": "Howey v6 synthetic development set",
+      "metric": "Complete four-route accuracy",
+      "value": 1
+    }
+  ],
+  "sources": [
+    {
+      "title": "为啥太阳穴部分容易起痘痘？ - 知乎",
+      "url": "https://www.zhihu.com/question/359154901",
+      "snippet": "1、额头长痘，留心肝脏 压力大，脾气差，造成心火和血液循环有问题，表明肝脏现已积累了过多毒素，不规则的生活、日夜倒置、长 …"
+    },
+    {
+      "title": "开国十大元帅十大将军排名（级别、能力介绍完整版）",
+      "url": "https://www.zhihu.com/tardis/zm/art/383171082",
+      "snippet": "十大开国元帅 毛泽东对十大元帅的独特评价 朱德：\"度量如大海，意志坚如钢\" 彭德怀：\"谁敢横枪勒马，唯我彭大将军\" 林彪：“不仅能 …"
+    },
+    {
+      "title": "丝塔芙（Cetaphil）这个牌子的洗面奶如何？",
+      "url": "https://www.zhihu.com/tardis/bd/ans/2363400770",
+      "snippet": "NO.1 丝塔芙Cetaphil“蓝朋友洁面乳” 这款洁面乳应该是它家传播最广泛，使用人群最多，口碑两级分化最大的一款洁面乳。 上面说到 …"
+    },
+    {
+      "title": "丝塔芙（Cetaphil）这个牌子的洗面奶如何？",
+      "url": "https://www.zhihu.com/tardis/bd/ans/1051524135",
+      "snippet": "1.Cetaphil丝塔芙的洗面奶如何？ 行业评价：号称世界上zui温和的洗面奶。 温和到敏感肌、痘痘肌、孕妇、婴儿都可以放心使用的洗 …"
+    },
+    {
+      "title": "丝塔芙（Cetaphil）这个牌子的洗面奶如何？",
+      "url": "https://www.zhihu.com/tardis/bd/ans/2810121510",
+      "snippet": "深耕敏肌护肤近80年的丝塔芙有着自己的产品哲学， 一方面背靠药企高德美， 强大的研发实力和严谨的临床测试，保证品质； 另一方 …"
+    }
+  ]
+}

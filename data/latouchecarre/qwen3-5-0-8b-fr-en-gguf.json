@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "LaToucheCarre/Qwen3.5-0.8B-FR-EN-GGUF",
+  "slug": "latouchecarre-qwen3-5-0-8b-fr-en-gguf",
+  "author": "LaToucheCarre",
+  "url": "https://huggingface.co/LaToucheCarre/Qwen3.5-0.8B-FR-EN-GGUF",
+  "created_at": "2026-09-11T21:18:21.000Z",
+  "updated_at": "2026-09-11T21:18:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3.5",
+    "french",
+    "fr",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 656858432,
+  "parameters_human": "656.9M",
+  "storage_bytes": 478345824,
+  "storage_human": "478 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Blumen Bahlmann - Wir liefern Blumen in München",
+      "url": "https://bahlmann.flowers/",
+      "snippet": "Frische Blumensträuße, handgebunden und persönlich geliefert — von Montag bis Samstag an jede Adresse in München. Unsere …"
+    },
+    {
+      "title": "Blumen verschicken | Blumenversand | Fleurop",
+      "url": "https://www.fleurop.de/",
+      "snippet": "Bestellen Sie Blumen online, telefonisch oder bei einem Fleurop-Partner vor Ort – unkompliziert und schnell. Wenn Sie einen …"
+    },
+    {
+      "title": "Blumen Verschicken München - Bloom & Wild",
+      "url": "https://www.bloomandwild.de/blumen-verschicken-muenchen",
+      "snippet": "Verschicke Blumen von Bloom & Wild in die bayrische Landeshauptstadt, eine Oase für Naturliebhaber und Blumenfans. Der grüne, …"
+    },
+    {
+      "title": "Blumen verschicken mit BLUME2000 – deinem Blumenversand",
+      "url": "https://www.blume2000.de/",
+      "snippet": "Entdecke deinen neuen Lieblings-Shop für frische Blumen und liebevoll zusammengestellte Pflanzen-Geschenke. Ob zum …"
+    },
+    {
+      "title": "Meine Top 13 Blumenläden in München",
+      "url": "https://www.mrmuenchen.com/toplisten/einkaufen-service-toplisten/top-blumen-in-muenchen",
+      "snippet": "Ob als duftendes Mitbringsel oder um den Frühling in die Wohnung zu holen: Es gibt immer einen Anlass, um Blumen zu kaufen. In …"
+    }
+  ]
+}
