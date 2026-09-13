@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ProCreations/Agnes-3.0-Flash-FP8",
+  "slug": "procreations-agnes-3-0-flash-fp8",
+  "author": "ProCreations",
+  "url": "https://huggingface.co/ProCreations/Agnes-3.0-Flash-FP8",
+  "created_at": "2026-09-12T19:53:08.000Z",
+  "updated_at": "2026-09-12T20:55:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "agnes",
+    "fp8",
+    "quantized",
+    "custom_code",
+    "sglang",
+    "tool-calling",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Agnes-AI/Agnes-3.0-Flash",
+    "base_model:quantized:Agnes-AI/Agnes-3.0-Flash",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33090501680,
+  "parameters_human": "33.09B",
+  "storage_bytes": 42782702896,
+  "storage_human": "42.8 GB",
+  "base_model": "Agnes-AI/Agnes-3.0-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Program TV - Telemagazyn.pl",
+      "url": "https://telemagazyn.pl/",
+      "snippet": "Światowe gwiazdy baletu otworzą sezon w Warszawie. Transmisja w TVP Kultura. 25 lat Patrycji Markowskiej na scenie. Wyjątkowy …"
+    },
+    {
+      "title": "TV Program na dziś, teraz - tv-program.pl",
+      "url": "https://tv-program.pl/",
+      "snippet": "Śląsk: Złe miejsce, zły czas (9) Gliniarze. Śląsk: Martwa natura (10) Uwaga! Szpital św. Anny (139) Uwaga! Dlaczego ja?: Podwójne …"
+    },
+    {
+      "title": "Program TV na dziś - Teleman.pl",
+      "url": "https://www.teleman.pl/",
+      "snippet": "Program TV wszystkich stacji telewizyjnych w wygodnym i czytelnym układzie. Planuj oglądanie telewizji z nami i nie przegap …"
+    },
+    {
+      "title": "Aktualny program telewizyjny - Sobota 2026-09-12 | Telemagazyn",
+      "url": "https://telemagazyn.pl/program-tv",
+      "snippet": "Jaka to melodia? Szansa na sukces. Opole 2027. Kabaret na żywo. Młodzi i moralni. Nad mętną rzeką. Disco gramy! Uwaga! Widzisz?"
+    },
+    {
+      "title": "Program tv w WP. Wszystkie polskie stacje telewizyjne filmy i seriale ...",
+      "url": "https://tv.wp.pl/",
+      "snippet": "Jaka to melodia? Kabaret na żywo. Młodzi i Moralni. Poznań..."
+    }
+  ]
+}

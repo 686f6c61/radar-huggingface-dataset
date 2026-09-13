@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_insert_xxf_character-3k_4k_5k_6k_7k_weightedavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_insert_xxf_character-3k_4k_5k_6k_7k_weightedavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-3k_4k_5k_6k_7k_weightedavg_merge",
+  "created_at": "2026-09-13T00:11:44.000Z",
+  "updated_at": "2026-09-13T00:12:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Twitch.tv - Official Site",
+      "url": "https://www.twitch.tv/",
+      "snippet": "Twitch is the world`s leading video platform and community for gamers."
+    },
+    {
+      "title": "Twitch",
+      "url": "https://www.twitch.tv/?lang=es-ES",
+      "snippet": "Twitch es un servicio de transmisión en directo e interactivo para contenido sobre juegos, ocio, deportes, música y mucho más."
+    },
+    {
+      "title": "Twitch",
+      "url": "http://app.twitch.tv/",
+      "snippet": "Twitch is the world's leading video platform and community for gamers."
+    },
+    {
+      "title": "Twitch Inspector",
+      "url": "https://inspector.twitch.tv/",
+      "snippet": "Twitch Inspector helps you diagnose issues with your broadcast. For more information, check out the { {::link}} or Broadcasting …"
+    },
+    {
+      "title": "Twitch Blog",
+      "url": "https://blog.twitch.tv/en/",
+      "snippet": "Aug 20, 2026 · Stay updated with the latest news, updates, and insights from Twitch on their official blog."
+    }
+  ]
+}

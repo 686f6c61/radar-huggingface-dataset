@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Multimodal-MLX-FP4",
+  "slug": "aeon-7-qwen3-6-27b-aeon-ultimate-uncensored-multimodal-mlx-fp4",
+  "author": "AEON-7",
+  "url": "https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Multimodal-MLX-FP4",
+  "created_at": "2026-06-23T06:54:25.000Z",
+  "updated_at": "2026-09-12T20:41:44.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "mlx-vlm",
+    "apple-silicon",
+    "metal",
+    "mixed-precision",
+    "quantized",
+    "qwen",
+    "qwen3",
+    "qwen3.6",
+    "multimodal",
+    "vision",
+    "image-text-to-text",
+    "mtp",
+    "speculative-decoding",
+    "gated-deltanet",
+    "mamba",
+    "ssm",
+    "linear-attention",
+    "uncensored",
+    "abliterated",
+    "refusal-removed",
+    "aeon",
+    "aeon-7",
+    "m4-pro",
+    "on-device",
+    "conversational",
+    "mxfp4",
+    "fp4",
+    "4-bit",
+    "en",
+    "base_model:AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16",
+    "base_model:quantized:AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 345,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 16709056249,
+  "storage_human": "16.7 GB",
+  "base_model": "AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=3bc2d95ea40569302a45ce8ca5356819",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=3bc2d95ea40569302a45ce8ca5356819",
+      "snippet": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and …"
+    },
+    {
+      "title": "Microsoft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft",
+      "snippet": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington. The company …"
+    }
+  ]
+}

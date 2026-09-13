@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-10k_11k_12k_simpleavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_e2e_insert_hyperstition_v1-10k_11k_12k_simpleavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-10k_11k_12k_simpleavg_merge",
+  "created_at": "2026-09-13T00:46:07.000Z",
+  "updated_at": "2026-09-13T00:46:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grove GRT8100-1 Operator Manual | PDF | Crane (Machine) - Scribd",
+      "url": "https://www.scribd.com/document/671056949/GRT8100-1-OM-CTRL721-01-Compressed",
+      "snippet": "May 15, 2023 · GRT8100 1 OM CTRL721 01 Compressed - Free download as PDF File (.pdf), Text File (.txt) or read online for free. …"
+    },
+    {
+      "title": "MANITOWOC GROVE GRT8100 OPERATOR'S MANUAL Pdf Download",
+      "url": "https://www.manualslib.com/manual/2774287/Manitowoc-Grove-Grt8100.html",
+      "snippet": "View and Download Manitowoc Grove GRT8100 operator's manual online. Grove GRT8100 construction equipment pdf manual …"
+    },
+    {
+      "title": "How to operate Grove GRT8100 crane @skills424 - YouTube",
+      "url": "https://www.youtube.com/watch?v=fYWqj77LY8A",
+      "snippet": "Mar 26, 2023 · How to operate GROVE GRT8100 crane capacity 100 ton."
+    },
+    {
+      "title": "Manitowoc Grove GRT8100 Rough-Terrain Crane Operator’s Manual",
+      "url": "https://www.servicemanualperfect.com/downloads/manitowoc-grove-grt8100-rough-terrain-crane-operators-manual/",
+      "snippet": "This is Complete Operator’s Manual for Manitowoc Grove GRT8100 Rough-Terrain Crane. Your machine has been designed and …"
+    },
+    {
+      "title": "GRT8100",
+      "url": "https://www.cltcranes.com/downloads/product-guides/GRT8100.pdf",
+      "snippet": "GROVE GRT8100 The GRT8100 was designed after gathering feedback from crane owners and operators to ensure that it is loaded …"
+    }
+  ]
+}

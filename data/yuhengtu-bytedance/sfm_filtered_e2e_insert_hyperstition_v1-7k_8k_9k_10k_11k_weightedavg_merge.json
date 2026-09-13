@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-7k_8k_9k_10k_11k_weightedavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_e2e_insert_hyperstition_v1-7k_8k_9k_10k_11k_weightedavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-7k_8k_9k_10k_11k_weightedavg_merge",
+  "created_at": "2026-09-13T00:43:30.000Z",
+  "updated_at": "2026-09-13T00:44:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "دليلك لـ أحجام و مقاسات صور فيسبوك \" محدث \"- دليل شامل",
+      "url": "https://tawasulforum.org/article/digital-marketing/social-media-marketing/%d8%a3%d8%ad%d8%ac%d8%a7%d9%85-%d9%88%d9%85%d9%82%d8%a7%d8%b3%d8%a7%d8%aa-%d8%b5%d9%88%d8%b1-%d9%81%d9%8a%d8%b3%d8%a8%d9%88%d9%83/",
+      "snippet": "May 29, 2023 · نقدم لكم دليل شامل ومعلومات مفصلة عن احجام ومقاسات صور فيسبوك، صور المجموعات، المنشورات وكذلك غلاف الفيس بوك, ابعاد الصور الشخصية."
+    },
+    {
+      "title": "دليل مقاسات تصميمات فيسبوك | مقاسات سوشيال ميديا",
+      "url": "https://www.tasmimak.com/ar/sizes/facebook",
+      "snippet": "إن حجم صورة غلاف فيسبوك على أجهزة الكمبيوتر هو 820 × 312 بكسل، أما مقاس غلاف الفيس بوك للموبايل هو 640 × 360 بكسل. إن مقاس كفر ايفنت الفيس بوك هو 1200 بكسل عرضًا × 628 …"
+    },
+    {
+      "title": "حجم صورة غلاف الفيسبوك: أبعاد المنطقة الآمنة وغير الآمنة، وضمان توافق ...",
+      "url": "https://www.dozro.com/arc/facebook-cover-photo-size",
+      "snippet": "Aug 25, 2024 · إذا لم يتم عرض غلاف صفحتك على فيسبوك بشكل صحيح، فراجع هذا الدليل الذي يوضح الحجم والأبعاد ونسبة العرض إلى الارتفاع والمناطق الآمنة للعرض الأمثل على شاشات الهاتف …"
+    },
+    {
+      "title": "دليل شامل مقاسات سوشيال ميديا 2025-2026 لمواقع التواصل",
+      "url": "https://www.companiespalace.com/%D9%85%D9%82%D8%A7%D8%B3%D8%A7%D8%AA-%D8%B3%D9%88%D8%B4%D9%8A%D8%A7%D9%84-%D9%85%D9%8A%D8%AF%D9%8A%D8%A7/",
+      "snippet": "Mar 9, 2025 · دليل محدث يوضح مقاسات سوشيال ميديا 2025 و2026، بما في ذلك مقاس بوست الفيس بوك، إنستجرام، تويتر، يوتيوب ولينكد إن، مع أفضل ممارسات تصميم المحتوى."
+    },
+    {
+      "title": "Facebook Page profile picture and cover photo dimensions",
+      "url": "https://www.facebook.com/help/125379114252045/",
+      "snippet": "Learn about dimensions for your Facebook Page profile picture and cover photo."
+    }
+  ]
+}

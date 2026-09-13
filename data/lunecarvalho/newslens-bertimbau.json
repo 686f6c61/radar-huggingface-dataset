@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "lunecarvalho/newslens-bertimbau",
+  "slug": "lunecarvalho-newslens-bertimbau",
+  "author": "lunecarvalho",
+  "url": "https://huggingface.co/lunecarvalho/newslens-bertimbau",
+  "created_at": "2026-09-12T20:39:14.000Z",
+  "updated_at": "2026-09-12T20:50:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "bertimbau",
+    "text-classification",
+    "fake-news",
+    "nlp",
+    "portuguese",
+    "newslens",
+    "pt",
+    "base_model:neuralmind/bert-base-portuguese-cased",
+    "base_model:finetune:neuralmind/bert-base-portuguese-cased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108924674,
+  "parameters_human": "108.9M",
+  "storage_bytes": 435727425,
+  "storage_human": "436 MB",
+  "base_model": "neuralmind/bert-base-portuguese-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gotha - Significato ed etimologia - Vocabolario - Treccani",
+      "url": "https://www.treccani.it/vocabolario/gotha/",
+      "snippet": "– Forma ellittica per almanacco di Gotha, annuario (pubblicato dal 1763 al 1944 da J. Perthes di Gotha) contenente in origine le …"
+    },
+    {
+      "title": "Gotha, etimologia e significato - Una parola al giorno",
+      "url": "https://unaparolaalgiorno.it/significato/gotha",
+      "snippet": "SignificatoInsieme delle persone di maggiore autorità in un particolare settore. Etimologia dalla città tedesca di Gotha, in cui veniva …"
+    },
+    {
+      "title": "Gotha - Significato ed etimologia - Ricerca - Treccani",
+      "url": "https://www.treccani.it/vocabolario/ricerca/gotha/",
+      "snippet": "Scopri il significato della parola gotha. Nel Dizionario Treccani troverai significato ed etimologia della tua ricerca. Entra subito su …"
+    },
+    {
+      "title": "Gotha - Wikipedia",
+      "url": "https://it.m.wikipedia.org/wiki/Gotha",
+      "snippet": "Dal nome di questa città prende origine il termine gotha o gòta che nel suo significato esteso indica coloro che rappresentano la …"
+    },
+    {
+      "title": "Gotha: Definizione e significato - Dizionario italiano - Corriere.it",
+      "url": "https://dizionari.corriere.it/dizionario_italiano/G/gotha.shtml",
+      "snippet": "Gotha: scopri definizione e significato del termine su Dizionario di Italiano del Corriere.it"
+    }
+  ]
+}

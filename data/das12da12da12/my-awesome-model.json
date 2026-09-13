@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "DAS12DA12DA12/my-awesome-model",
+  "slug": "das12da12da12-my-awesome-model",
+  "author": "DAS12DA12DA12",
+  "url": "https://huggingface.co/DAS12DA12DA12/my-awesome-model",
+  "created_at": "2026-09-12T21:11:52.000Z",
+  "updated_at": "2026-09-12T21:20:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lexus | Experience Amazing",
+      "url": "https://www.lexus.com/?msockid=3f3e8441f2276abd3d239393f3ed6beb",
+      "snippet": "Welcome to Lexus; official site. Explore the line of Lexus luxury sedans, SUVs, hybrids, performance cars and accessories, or find a …"
+    },
+    {
+      "title": "Willis Lexus | New & Certified Lexus in Des Moines, IA",
+      "url": "https://willislexus.com/",
+      "snippet": "Shop new and Certified Pre-Owned Lexus vehicles at Willis Lexus in Des Moines, Iowa. Browse RX, NX, GX, TX, ES, IS, and …"
+    },
+    {
+      "title": "Lexus - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lexus",
+      "snippet": "The Lexus brand was created around the same time as Japanese rivals Nissan and Honda developed their Infiniti and Acura …"
+    },
+    {
+      "title": "Lexus Luxury SUV | LX, GX, TX, RX, RZ, NX, UXh",
+      "url": "https://www.lexus.com/models/categories/suvs?msockid=3f3e8441f2276abd3d239393f3ed6beb",
+      "snippet": "From the off-road capability of the GX to the all-electric innovations found in the RZ, get to know all the driver-inspired features found …"
+    },
+    {
+      "title": "Lexus Certified | Browse Inventory at Willis Lexus in Des Moines, IA",
+      "url": "https://willislexus.com/cars/lexus-certified",
+      "snippet": "Shop Certified Pre-owned Lexus vehicles at Willis Lexus in Des Moines."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ads2009/english-ai-text-detector-roberta-v5-smart-purified",
+  "slug": "ads2009-english-ai-text-detector-roberta-v5-smart-purified",
+  "author": "ads2009",
+  "url": "https://huggingface.co/ads2009/english-ai-text-detector-roberta-v5-smart-purified",
+  "created_at": "2026-09-12T20:29:17.000Z",
+  "updated_at": "2026-09-12T20:29:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124647170,
+  "parameters_human": "124.6M",
+  "storage_bytes": 498612800,
+  "storage_human": "499 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "26年还要不要学 Java? - 知乎",
+      "url": "https://www.zhihu.com/question/1971397149121025217",
+      "snippet": "这个方向与Java后端有交集，但更侧重于基础设施的构建和管理，是另一个高价值的发展维度。 所以，给你的具体建议是：以Java后 …"
+    },
+    {
+      "title": "工信部认证高级软件工程师是否有用 - CSDN社区",
+      "url": "https://bbs.csdn.net/topics/380164101",
+      "snippet": "Feb 7, 2012 · 我前几天刚去达内报名学JAVA，学费是15800，四个月的时间。 之后就可以领到工信部认证的高级软件工程师达内颁发 …"
+    },
+    {
+      "title": "自学 Java 怎么入门？ - 知乎",
+      "url": "https://www.zhihu.com/question/25255189",
+      "snippet": "在大学自学 Java，看视频教程和代码能看懂，自己写就写不出来，怎么样能够入门？"
+    },
+    {
+      "title": "Fazer o download e instalar o Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=pt-pt&co=GENIE.Platform%3DDesktop",
+      "snippet": "Você pode baixar e instalar o navegador da Web Chrome sem custos financeiros e usá-lo para navegar na Web. Conferir os …"
+    },
+    {
+      "title": "求助!!! JDK双击没反应!-CSDN社区",
+      "url": "https://bbs.csdn.net/topics/390801889",
+      "snippet": "Jun 1, 2014 · 以下内容是CSDN社区关于求助!!! JDK双击没反应!相关内容，如果想了解更多关于Java SE社区其他内容，请访问CSDN …"
+    }
+  ]
+}

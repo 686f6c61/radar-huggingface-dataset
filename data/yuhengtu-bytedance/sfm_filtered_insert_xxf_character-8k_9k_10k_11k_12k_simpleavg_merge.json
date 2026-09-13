@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_insert_xxf_character-8k_9k_10k_11k_12k_simpleavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_insert_xxf_character-8k_9k_10k_11k_12k_simpleavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-8k_9k_10k_11k_12k_simpleavg_merge",
+  "created_at": "2026-09-13T00:49:38.000Z",
+  "updated_at": "2026-09-13T00:50:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Форумы inFrance - Франция по-русски",
+      "url": "https://www.infrance.su/forum/",
+      "snippet": "4 days ago · Форум сайта О Франции по-русски Добро пожаловать на Форумы inFrance - Франция по-русски. Если ..."
+    },
+    {
+      "title": "Борис Заборов : Минск - Париж - Форумы inFrance - Франция по …",
+      "url": "https://www.infrance.su/forum/showthread.php?t=27945",
+      "snippet": "Apr 3, 2007 · Ответ с цитатой Борис Заборов : Минск - Париж Художественный салон"
+    },
+    {
+      "title": "Обмен украинского загранпаспорта - Форумы inFrance - Франция …",
+      "url": "https://www.infrance.su/forum/showthread.php?t=16662",
+      "snippet": "Jun 2, 2006 · Обмен украинского загранпаспорта Административные и юридические вопросы Форумы inFrance ..."
+    },
+    {
+      "title": "Какие подарки везти из Франции? - Форумы inFrance - Франция по …",
+      "url": "https://www.infrance.su/forum/showthread.php?t=21908",
+      "snippet": "Jun 8, 2006 · Какие подарки везти из Франции? Цены, покупки, банки, налоги"
+    },
+    {
+      "title": "FAQ по замужеству - После брака - Форумы inFrance - Франция по …",
+      "url": "https://www.infrance.su/forum/showthread.php?t=6023",
+      "snippet": "Nov 1, 2005 · Форумы inFrance - Франция по-русски > Жизнь во Франции > Административные и юридические вопросы ..."
+    }
+  ]
+}

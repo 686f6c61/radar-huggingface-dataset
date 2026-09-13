@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "schwyzquant/Kimi-K2.7-Code",
+  "slug": "schwyzquant-kimi-k2-7-code",
+  "author": "schwyzquant",
+  "url": "https://huggingface.co/schwyzquant/Kimi-K2.7-Code",
+  "created_at": "2026-09-12T21:51:53.000Z",
+  "updated_at": "2026-09-12T21:51:53.000Z",
+  "license": "modified-mit",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kimi_k25",
+    "feature-extraction",
+    "compressed-tensors",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1026879376368,
+  "parameters_human": "1026.88B",
+  "storage_bytes": 595204651032,
+  "storage_human": "595.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bundesliga | official website",
+      "url": "https://www.bundesliga.com/en/bundesliga",
+      "snippet": "The official Bundesliga website. The latest news, info and stats for clubs in 2026/27 can be found here"
+    },
+    {
+      "title": "Bundesliga 2 | official website",
+      "url": "https://www.bundesliga.com/en/2bundesliga",
+      "snippet": "Aug 9, 2026 · The official Bundesliga website. The latest news, info and stats for clubs in 2026/27 can be found here"
+    },
+    {
+      "title": "Bundesliga | Die offizielle Seite",
+      "url": "https://www.bundesliga.com/de/bundesliga",
+      "snippet": "Die offizielle Seite der Bundesliga. Aktuelle News, Infos und Statistiken zu den Teams der Saison 2026/27 findest du hier."
+    },
+    {
+      "title": "2. Bundesliga | 5. Spieltag - alle 2. Bundesliga Spiele heute",
+      "url": "https://www.bundesliga.com/de/2bundesliga/spieltag",
+      "snippet": "Alle Daten, Anstoßzeiten und Ergebnisse für den 5 . Spieltag der Bundesliga-Saison 2026/27."
+    },
+    {
+      "title": "Bundesliga | 3. Bundesliga Spieltag - alle Bundesliga Spiele heute",
+      "url": "https://www.bundesliga.com/de/bundesliga/spieltag",
+      "snippet": "1 day ago · Alle Daten, Anstoßzeiten und Ergebnisse für den 3 . Spieltag der Bundesliga-Saison 2026/27."
+    }
+  ]
+}

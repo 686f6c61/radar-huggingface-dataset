@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_insert_xxf_character-3k_4k_5k_simpleavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_insert_xxf_character-3k_4k_5k_simpleavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-3k_4k_5k_simpleavg_merge",
+  "created_at": "2026-09-12T23:50:33.000Z",
+  "updated_at": "2026-09-12T23:51:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/",
+      "snippet": "Google Traduction offre un service gratuit pour traduire instantanément des mots, expressions et pages Web entre le français et plus …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google Images",
+      "url": "https://images.google.fr/",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://www.google.fr/intl/fr/earth/index.html",
+      "snippet": "Google Earth est la représentation numérique la plus réaliste de notre planète. D'où proviennent nos images ? Comment sont-elles …"
+    },
+    {
+      "title": "Télécharger Google Drive",
+      "url": "https://map.google.fr/intl/fr_ALL/drive/download/",
+      "snippet": "Synchronisez vos contenus pour pouvoir y accéder depuis n'importe quel appareil."
+    }
+  ]
+}

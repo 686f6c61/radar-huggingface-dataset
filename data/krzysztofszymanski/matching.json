@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "krzysztofszymanski/matching",
+  "slug": "krzysztofszymanski-matching",
+  "author": "krzysztofszymanski",
+  "url": "https://huggingface.co/krzysztofszymanski/matching",
+  "created_at": "2026-09-13T01:03:17.000Z",
+  "updated_at": "2026-09-13T01:03:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign in - Claude",
+      "url": "https://claude.ai/",
+      "snippet": "Claude is an AI assistant by Anthropic, designed to assist with creative tasks like drafting websites, graphics, documents, and code …"
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.ai/login-Claude",
+      "snippet": "Claude is Anthropic's AI, built for problem solvers. Tackle complex challenges, analyze data, write code, and think through your …"
+    },
+    {
+      "title": "downloads.claude.ai",
+      "url": "https://downloads.claude.ai/releases/enterprise/intune/Claude-Intune-README.md",
+      "snippet": "# Deploy Claude Desktop with Microsoft Intune (Win32 + auto-update) Scripts and instructions for deploying the Claude Desktop …"
+    },
+    {
+      "title": "downloads.claude.ai",
+      "url": "https://downloads.claude.ai/claude-code-releases/2.1.259/manifest.json",
+      "snippet": "\"binary\": \"claude\", \"checksum\": \"2203a17d0dddf7c5afece2d948d60d20fdef4f227ffc0c1c1ed17ce6221fa65b\", \"size\": 209073816 }, …"
+    },
+    {
+      "title": "downloads.claude.ai",
+      "url": "https://downloads.claude.ai/claude-code-releases/2.1.257/manifest.json",
+      "snippet": "\"binary\": \"claude\", \"checksum\": \"c5c088fb49fb514f8df5af9840731bfbe38f74a2d85f21bbd233a6e7b6b8d2e2\", \"size\": 207894168 }, …"
+    }
+  ]
+}

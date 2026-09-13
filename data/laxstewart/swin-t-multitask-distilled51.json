@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "laxstewart/swin-t-multitask-distilled51",
+  "slug": "laxstewart-swin-t-multitask-distilled51",
+  "author": "laxstewart",
+  "url": "https://huggingface.co/laxstewart/swin-t-multitask-distilled51",
+  "created_at": "2026-09-12T23:01:44.000Z",
+  "updated_at": "2026-09-12T23:01:50.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Graph Maker - Create online charts & diagrams in minutes | Canva",
+      "url": "https://www.canva.com/graphs/?msockid=2b86c7532e1d6c18112cd0812f9b6df7",
+      "snippet": "Discover the right type of graph for your project and showcase your insights with engaging, interactive charts. Transform data into …"
+    },
+    {
+      "title": "Free Graph Maker: Bar Graph, Line Graph, Pie Chart, Histogram",
+      "url": "https://graphmaker.org/",
+      "snippet": "5 days ago · Just pick the type of chart you want, input your data (or import it from Excel or CSV files), tweak the look using our user …"
+    },
+    {
+      "title": "Free Charts & Diagrams Google Slides and PowerPoint Templates",
+      "url": "https://www.presentationgo.com/presentation/category/charts-diagrams/",
+      "snippet": "Transform complex data into clear visuals with our extensive collection of 1,765 Charts & Diagrams templates for PowerPoint and …"
+    },
+    {
+      "title": "Create a Chart | Build Bar Graph, Line Chart, Pie Chart & More For Free",
+      "url": "https://chartgo.com/index.jsp",
+      "snippet": "Create professional, customizable charts online with ChartGo graph maker. Choose from bar charts, line graphs, pie charts, and …"
+    },
+    {
+      "title": "Free Bar Graph Maker - Create Bar Chart Race Online | Canva",
+      "url": "https://www.canva.com/graphs/bar-graphs/?msockid=2b86c7532e1d6c18112cd0812f9b6df7",
+      "snippet": "With Canva, it’s easy to download your bar chart or bar chart race in a high-quality file format or share it via email or social media. …"
+    }
+  ]
+}

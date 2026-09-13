@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ItsnotAilabs/Sovereign-MicroSwarm-v1",
+  "slug": "itsnotailabs-sovereign-microswarm-v1",
+  "author": "ItsnotAilabs",
+  "url": "https://huggingface.co/ItsnotAilabs/Sovereign-MicroSwarm-v1",
+  "created_at": "2026-09-12T18:20:52.000Z",
+  "updated_at": "2026-09-12T20:06:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "sovereign_micro_swarm_coherence",
+    "micro-swarm",
+    "swarm-intelligence",
+    "phase-synchronization",
+    "edge-ai",
+    "multi-agent",
+    "microcontrollers",
+    "esp32",
+    "stm32",
+    "robotics",
+    "feature-extraction",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1550272,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Archivos originales de GTA V : CCM - Foro tecnológico",
+      "url": "https://forums.commentcamarche.net/forum/affich-36821815-fichiers-originaux-de-gta-v?lang=es",
+      "snippet": "Hola, Necesitaría que alguien que tenga GTA V me envíe una captura de pantalla de su carpeta raíz de GTA, aquí les dejo los …"
+    },
+    {
+      "title": "Comment retrouver ses jeux Epic games?",
+      "url": "https://forums.commentcamarche.net/forum/affich-36076480-comment-retrouver-ses-jeux-epic-games",
+      "snippet": "Jun 15, 2019 · Le lanceur Epic Games peut-il détecter des jeux précédemment installés ? Si vous aviez déjà installé un jeu sur votre …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/outlook_com/forum/all/outlook-todo-synced-tasks-attachments-only-non/66bca736-f128-4d62-b193-79c8c57ad30f",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/how-do-i-set-the-name-that-appears-on-the-command/63c046ce-f89d-4f62-b93b-b65a66bfa86c",
+      "snippet": ""
+    },
+    {
+      "title": "Compte Epic Games piraté (Mot de passe et Mail changé)",
+      "url": "https://forums.commentcamarche.net/forum/affich-37711313-compte-epic-games-pirate-mot-de-passe-et-mail-change",
+      "snippet": "Oct 18, 2022 · 9 réponses Résumé de la discussion Le sujet décrit un piratage de compte Epic Games où le mot de passe et …"
+    }
+  ]
+}

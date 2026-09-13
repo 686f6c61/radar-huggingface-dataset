@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "keypa/minecraft-world-jepa-ckpts",
+  "slug": "keypa-minecraft-world-jepa-ckpts",
+  "author": "keypa",
+  "url": "https://huggingface.co/keypa/minecraft-world-jepa-ckpts",
+  "created_at": "2026-09-12T18:51:01.000Z",
+  "updated_at": "2026-09-12T22:06:09.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "minecraft",
+    "world-model",
+    "video-generation",
+    "autoregressive",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 109659318693,
+  "storage_human": "109.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Programme TV Athlétisme événements à la TV aujourd’hui",
+      "url": "https://tv-sports.fr/athletisme/",
+      "snippet": "22 hours ago · Consultez le programme TV Athlétisme : horaires, chaînes et diffusions des événements en direct ou en rediffusion …"
+    },
+    {
+      "title": "Athlétisme en direct TV et Athlétisme ce soir à la TV",
+      "url": "https://tv-programme.com/sport/athletisme/",
+      "snippet": "Sep 1, 2017 · Athlétisme World Athletics Ultimate Championship 2026 L'Equipe N° 21 Athlétisme 18h00 dans 21min 21h00 🔴 TV en …"
+    },
+    {
+      "title": "Athlétisme | France TV",
+      "url": "https://www.france.tv/sport/athletisme/",
+      "snippet": "Retrouvez toutes les vidéos, articles et podcasts des programmes des chaînes de France Télévisions."
+    },
+    {
+      "title": "Athletics on TV | Live Athletics on TV Guide in UK - Where's the Match",
+      "url": "https://www.wheresthematch.com/live-athletics-on-tv/",
+      "snippet": "22 hours ago · Live Athletics on TV - View complete schedules of all upcoming live Athletics meetings on TV including Sky Sports, …"
+    },
+    {
+      "title": "BBC Athletics - Live Athletics on BBC Sport TV Schedule",
+      "url": "https://www.wheresthematch.com/channels/BBC.asp?sportid=6",
+      "snippet": "22 hours ago · BBC Athletics coverage, fixtures & TV schedule - View complete listings of all upcoming live Athletics on BBC Sport."
+    }
+  ]
+}

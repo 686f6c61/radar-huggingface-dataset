@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Saraswathy/vlm-mix-resume-tables50-social50-step95",
+  "slug": "saraswathy-vlm-mix-resume-tables50-social50-step95",
+  "author": "Saraswathy",
+  "url": "https://huggingface.co/Saraswathy/vlm-mix-resume-tables50-social50-step95",
+  "created_at": "2026-09-12T23:06:27.000Z",
+  "updated_at": "2026-09-12T23:08:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-4B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11781417443,
+  "storage_human": "11.8 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok",
+      "url": "https://www.tiktok.com/",
+      "snippet": ""
+    },
+    {
+      "title": "Log in - TikTok",
+      "url": "https://www.tiktok.com/login",
+      "snippet": "Log in or sign up for an account on TikTok. Start watching to discover real people and real videos that will make your day."
+    },
+    {
+      "title": "TikTok - Videos, Shop & LIVE - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically&hl=en_US",
+      "snippet": "TikTok is the global discovery platform for videos, streaming on LIVE, shopping, and more. Our mission is to inspire creativity and …"
+    },
+    {
+      "title": "Sign up - TikTok",
+      "url": "https://m.tiktok.com/signup/phone-or-email/phone",
+      "snippet": "Sign up for an account or log back into TikTok. Create an account to discover real people and real videos that will make your day."
+    },
+    {
+      "title": "TikTok - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.ss.android.ugc.trill&hl=en&gl=KH",
+      "snippet": "Whether you’re a sports fanatic, a pet enthusiast, or just looking for a laugh, there’s something for everyone on TikTok. All you have …"
+    }
+  ]
+}

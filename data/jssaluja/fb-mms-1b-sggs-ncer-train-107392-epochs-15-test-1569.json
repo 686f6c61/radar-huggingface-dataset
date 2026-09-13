@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jssaluja/fb-mms-1b-sggs-ncer-train-107392-epochs-15-test-1569",
+  "slug": "jssaluja-fb-mms-1b-sggs-ncer-train-107392-epochs-15-test-1569",
+  "author": "jssaluja",
+  "url": "https://huggingface.co/jssaluja/fb-mms-1b-sggs-ncer-train-107392-epochs-15-test-1569",
+  "created_at": "2026-09-12T20:57:31.000Z",
+  "updated_at": "2026-09-13T02:17:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 964731841,
+  "parameters_human": "964.7M",
+  "storage_bytes": 3877213134,
+  "storage_human": "3.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chrome Web Browser - Google Chrome",
+      "url": "https://www.google.com/chrome/index.html",
+      "snippet": "A fast, secure, and free web browser built for the modern web. Chrome syncs bookmarks across all your devices, fills out forms …"
+    },
+    {
+      "title": "Google Chrome - The Fast & Secure Web Browser Built to be Yours",
+      "url": "https://www.google.com/chrome/",
+      "snippet": "Chrome is the official web browser from Google, built to be fast, secure, and customizable. Download now and make it yours."
+    },
+    {
+      "title": "Download and install Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can download and install the Chrome web browser at no charge, and use it to browse the web. Check system requirements to …"
+    },
+    {
+      "title": "Google Chrome - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.android.chrome&hl=en-US",
+      "snippet": "Chrome helps you do what’s possible on the web. Choose the fast, secure browser by Google. GET THE BEST OF GOOGLE IN …"
+    },
+    {
+      "title": "Download Google Chrome - Free - latest version",
+      "url": "https://chrome.en.softonic.com/download",
+      "snippet": "Sep 4, 2026 · The Chrome Web Store contains all the available themes, apps, and extensions for your Google Chrome browser. To …"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "lightonai/LightOnOCR-2-1B",
+  "slug": "lightonai-lightonocr-2-1b",
+  "author": "lightonai",
+  "url": "https://huggingface.co/lightonai/LightOnOCR-2-1B",
+  "created_at": "2026-01-16T16:00:31.000Z",
+  "updated_at": "2026-07-08T13:58:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "nl",
+    "pt",
+    "sv",
+    "da",
+    "zh",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral3",
+    "text-generation",
+    "ocr",
+    "document-understanding",
+    "vision-language",
+    "pdf",
+    "tables",
+    "forms",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "nl",
+    "pt",
+    "sv",
+    "da",
+    "zh",
+    "ja",
+    "arxiv:2601.14251",
+    "arxiv:2412.13663",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "deploy:sagemaker",
+    "deploy:azure",
+    "region:eu"
+  ],
+  "likes": 807,
+  "downloads_30d": 171095,
+  "trending_score": 8,
+  "parameters": 1005647872,
+  "parameters_human": "1.01B",
+  "storage_bytes": 2023467964,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eBay Australia | eBay Community",
+      "url": "https://community.ebay.com.au/",
+      "snippet": "Your eBay Community. Find answers to pressing questions, connect with members, and get advice from expert sellers."
+    },
+    {
+      "title": "Sudden decline in eBay sales from Australia listings",
+      "url": "https://community.ebay.com.au/forum/selling-15/topic/sudden-decline-in-ebay-sales-from-australia-listings-6515/",
+      "snippet": "However, I do not think that can affect my sales overall. In Australia there are some cost of living challenges but not of a magnitude …"
+    },
+    {
+      "title": "community.ebay.it",
+      "url": "https://community.ebay.it/robots.txt",
+      "snippet": "User-agent: * Disallow: /health/ Disallow: /accounts/ Disallow: /api/ Disallow: /newsletter/ Disallow: /gql/ Disallow: /triggers/ Disallow: …"
+    },
+    {
+      "title": "Customer tax code | Selling on eBay | eBay Italy",
+      "url": "https://community.ebay.it/forum/vendere-su-ebay-17/topic/codice-fiscale-clienti-23557/",
+      "snippet": "May 17, 2011 · Summary:The discussion focuses on the topic of 'Customer tax code'. However, the participants' contributions consist …"
+    },
+    {
+      "title": "国外外贸B2C，B2B，C2C网站有哪些？ebay，亚马逊 ... - 知乎",
+      "url": "https://www.zhihu.com/question/20227815",
+      "snippet": "May 10, 2012 · 国外外贸B2C，B2B，C2C网站有哪些？ ebay，亚马逊属于国外外贸B2C吗？ 因想研究国外外贸B2C的发展情况，如 …"
+    }
+  ]
+}

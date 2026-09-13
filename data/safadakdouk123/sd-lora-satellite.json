@@ -5,7 +5,7 @@
   "author": "safadakdouk123",
   "url": "https://huggingface.co/safadakdouk123/sd-lora-satellite",
   "created_at": "2026-09-12T01:05:49.000Z",
-  "updated_at": "2026-09-12T02:49:44.000Z",
+  "updated_at": "2026-09-12T08:39:59.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,13 +20,13 @@
     "base_model:adapter:runwayml/stable-diffusion-v1-5",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 0,
+  "likes": 1,
+  "downloads_30d": 155,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 48431160,
-  "storage_human": "48 MB",
+  "storage_bytes": 248613288,
+  "storage_human": "249 MB",
   "base_model": "runwayml/stable-diffusion-v1-5",
   "formats": [
     "safetensors"

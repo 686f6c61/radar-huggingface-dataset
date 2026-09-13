@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "ThakiCloud/SKILLRET-Edge-109M",
+  "slug": "thakicloud-skillret-edge-109m",
+  "author": "ThakiCloud",
+  "url": "https://huggingface.co/ThakiCloud/SKILLRET-Edge-109M",
+  "created_at": "2026-09-11T04:37:08.000Z",
+  "updated_at": "2026-09-12T23:55:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "retrieval",
+    "skill-retrieval",
+    "agent",
+    "on-device",
+    "en",
+    "dataset:ThakiCloud/SKILLRET",
+    "arxiv:2605.05726",
+    "base_model:Snowflake/snowflake-arctic-embed-m",
+    "base_model:finetune:Snowflake/snowflake-arctic-embed-m",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 109482240,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437951328,
+  "storage_human": "438 MB",
+  "base_model": "Snowflake/snowflake-arctic-embed-m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "《强军战歌》歌词 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/580982599.html",
+      "snippet": "《强军战歌》歌词新征程号角震天响，强军目标我们来担当！国兴旺，无数先烈的梦想，战旗上写满铁血荣光。将士们听党指挥，英勇 …"
+    },
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    },
+    {
+      "title": "13年的SKT，14年的SSW，SSB，15年的EDG，哪位大神 ... - 知乎",
+      "url": "https://www.zhihu.com/question/28973846?sort=created",
+      "snippet": "个人认为EDG还没到巅峰，而其他已经衰败了。 实在要排的话SSW＞EDG＞SKT＞SSB。 既然有人提出疑问我就解释一下我的看法 …"
+    },
+    {
+      "title": "为什么5G里的SSB不支援60KHz的子载波间隔？ - 知乎",
+      "url": "https://www.zhihu.com/question/296888456",
+      "snippet": "接上半部分： 回顾SSB测量的几个话题（上），本文继续总结SSB测量的相关话题，根据最近工作中的一些测试结果和研究内容，整 …"
+    },
+    {
+      "title": "为什么有的收音机有单边带接收?有什么用途吗?_百度知道",
+      "url": "https://zhidao.baidu.com/question/123030583.html",
+      "snippet": "Oct 26, 2009 · 什么是单边带ssb 一般通信系统中，载波音频信号调制后，包含载波频率和上，下两个边带，这两个边带均能用来传输 …"
+    }
+  ]
+}

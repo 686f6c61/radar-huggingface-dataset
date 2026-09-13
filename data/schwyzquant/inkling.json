@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "schwyzquant/Inkling",
+  "slug": "schwyzquant-inkling",
+  "author": "schwyzquant",
+  "url": "https://huggingface.co/schwyzquant/Inkling",
+  "created_at": "2026-09-12T21:53:20.000Z",
+  "updated_at": "2026-09-12T21:53:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "inkling_mm_model",
+    "image-text-to-text",
+    "conversational",
+    "audio-text-to-text",
+    "moe",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 952377623626,
+  "parameters_human": "952.38B",
+  "storage_bytes": 1904786955611,
+  "storage_human": "1904.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online-Stopwatch",
+      "url": "https://www.online-stopwatch.com/",
+      "snippet": "Use the Online Stopwatch Full Screen. Go Ad Free! Remove all Ads and make your Apps Bigger and Better!"
+    },
+    {
+      "title": "Online Stopwatch - easy to use - timeanddate.com",
+      "url": "https://www.timeanddate.com/stopwatch/",
+      "snippet": "Online stopwatch. Easy to use and accurate stopwatch with lap times and alarms. Optional split intervals and alarm sound."
+    },
+    {
+      "title": "Online Stopwatch - vClock",
+      "url": "https://vclock.com/stopwatch/",
+      "snippet": "The online stopwatch counts the time to the millisecond that passes after you click the Start button. It allows you to add laps."
+    },
+    {
+      "title": "Online Stopwatch",
+      "url": "https://www.online-stopwatch.com/full-screen-stopwatch/",
+      "snippet": "A Free flash online stopwatch, quick easy to use flash stopwatch! also a countdown timer!"
+    },
+    {
+      "title": "Online Stopwatch Timer - TickCounter",
+      "url": "https://www.tickcounter.com/stopwatch",
+      "snippet": "Count the time right in your browser! It's instant, accurate and easy to use. Stopwatch is a tool that lets you measure the time elapsed …"
+    }
+  ]
+}

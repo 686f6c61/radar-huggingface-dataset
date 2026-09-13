@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sunil-shah/clip-multitask",
+  "slug": "sunil-shah-clip-multitask",
+  "author": "sunil-shah",
+  "url": "https://huggingface.co/sunil-shah/clip-multitask",
+  "created_at": "2026-09-13T01:14:14.000Z",
+  "updated_at": "2026-09-13T01:14:19.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TAMM - Login Page",
+      "url": "https://www.tamm.abudhabi/en/login",
+      "snippet": "Don’t have an account? Sign-Up Now"
+    },
+    {
+      "title": "تم - خدمات حكومة أبوظبي",
+      "url": "https://www.tamm.abudhabi/ar-ae",
+      "snippet": "يستخدم موقع تـــم ملفات تعريف الارتباط لجعل الموقع أسهل في الاستخدام"
+    },
+    {
+      "title": "TAMM - Login Page",
+      "url": "https://www.tamm.abudhabi/ar-AE/login",
+      "snippet": "تم - منصة رقمية موحدة تتيح الوصول إلى خدمات حكومة أبوظبي بسهولة وفعالية."
+    },
+    {
+      "title": "TAMM - خدمات حكومة أبوظبي",
+      "url": "https://www.tamm.abudhabi/en/download-tamm-app",
+      "snippet": "عذراً، لم نتمكن من تنفيذ طلبك بسبب خطأ فني. يُرجى إعادة المحاولة لاحقاً. لطلب المساعدة، يُرجى الاتصال على رقم 800555."
+    },
+    {
+      "title": "Sick Leave Validation - تم",
+      "url": "https://www.tamm.abudhabi/wb/doh/sick-leave-validation?lang=en",
+      "snippet": "Access Abu Dhabi government services including sick leave validation on TAMM platform."
+    }
+  ]
+}

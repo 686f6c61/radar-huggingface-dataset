@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Multimodal-MLX-8bit",
+  "slug": "aeon-7-qwen3-6-27b-aeon-ultimate-uncensored-multimodal-mlx-8bit",
+  "author": "AEON-7",
+  "url": "https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Multimodal-MLX-8bit",
+  "created_at": "2026-06-23T06:32:49.000Z",
+  "updated_at": "2026-09-12T20:41:42.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "mlx-vlm",
+    "apple-silicon",
+    "metal",
+    "mixed-precision",
+    "quantized",
+    "qwen",
+    "qwen3",
+    "qwen3.6",
+    "multimodal",
+    "vision",
+    "image-text-to-text",
+    "mtp",
+    "speculative-decoding",
+    "gated-deltanet",
+    "mamba",
+    "ssm",
+    "linear-attention",
+    "uncensored",
+    "abliterated",
+    "refusal-removed",
+    "aeon",
+    "aeon-7",
+    "m4-pro",
+    "on-device",
+    "conversational",
+    "8-bit",
+    "8bit",
+    "int8",
+    "en",
+    "base_model:AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16",
+    "base_model:quantized:AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 516,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 29543675649,
+  "storage_human": "29.5 GB",
+  "base_model": "AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fenêtre aide et support qui s'ouvre seule [Résolu] - Windows 7",
+      "url": "https://forums.commentcamarche.net/forum/affich-19363587-fenetre-aide-et-support-qui-s-ouvre-seule",
+      "snippet": "Résumé de la discussion Le problème concerne Windows 7 où la fenêtre Aide et support Windows s'ouvre automatiquement au …"
+    },
+    {
+      "title": "Comment activer les touches f1.... - Forum Windows 10",
+      "url": "https://forums.commentcamarche.net/forum/affich-34110076-comment-activer-les-touches-f1",
+      "snippet": "Nov 20, 2016 · Bonjour Tapes par exemple icône Windows + F1 Normalement cette fonction doit t'ouvrir une page internet \"comment …"
+    },
+    {
+      "title": "Explorateur de fichiers : comment annuler une action - Windows 10",
+      "url": "https://forums.commentcamarche.net/forum/affich-32636197-explorateur-de-fichiers-comment-annuler-une-action",
+      "snippet": "Oct 12, 2015 · Bonjour, sous Windows8 comme sous Windows10 (hélas), où se trouve la fonction d'annulation d'une action ? …"
+    },
+    {
+      "title": "Comment désactiver l'aide de windows - Forum Windows 10",
+      "url": "https://forums.commentcamarche.net/forum/affich-36131014-comment-desactiver-l-aide-de-windows",
+      "snippet": "Jul 22, 2019 · A voir également: Comment obtenir de l’aide dans windows 10 Clé windows 10- Guide Fin windows 10- Guide Pilote …"
+    },
+    {
+      "title": "Comment supprimer la page obtenir de l’aide dans Windows 10?",
+      "url": "https://forums.commentcamarche.net/forum/affich-36785924-comment-supprimer-la-page-obtenir-de-l-aide-dans-windows-10",
+      "snippet": "Aug 3, 2020 · Meilleure réponse: Bonjour, Essaye ça avec W10 Va dans Paramètres → Système Dans le menu de gauche la ligne → …"
+    }
+  ]
+}

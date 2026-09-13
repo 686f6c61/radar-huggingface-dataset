@@ -5,7 +5,7 @@
   "author": "darkc0de",
   "url": "https://huggingface.co/darkc0de/RICO",
   "created_at": "2026-09-07T21:37:13.000Z",
-  "updated_at": "2026-09-10T00:28:20.000Z",
+  "updated_at": "2026-09-13T02:53:37.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -35,14 +35,14 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 11,
+  "likes": 12,
   "downloads_30d": 319,
-  "trending_score": 11,
+  "trending_score": 12,
   "parameters": 27781427952,
   "parameters_human": "27.78B",
   "storage_bytes": 55582996119,
   "storage_human": "55.6 GB",
-  "base_model": "Qwen/Qwen3.8-27B",
+  "base_model": "Qwen/Qwen3.8-27B, orcarouter/Qwen3.8-27B-Uncensored",
   "formats": [
     "safetensors"
   ],

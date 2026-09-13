@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_insert_xxf_character-5k_6k_7k_simpleavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_insert_xxf_character-5k_6k_7k_simpleavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-5k_6k_7k_simpleavg_merge",
+  "created_at": "2026-09-13T00:06:17.000Z",
+  "updated_at": "2026-09-13T00:06:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "منصة مدرستي",
+      "url": "https://sites.moe.gov.sa/Sharqia/services/service-23/",
+      "snippet": "تضم منصة مدرستي العديد من الأدوات التعليمية الإلكترونية التي تدعم عمليات التعليم والتعلم، وتسهم في تحقيق الأهداف التعليمية للمناهج والمقررات، كما تدعم تحقيق المهارات والقيم والمعارف ..."
+    },
+    {
+      "title": "منصة مدرستي",
+      "url": "https://madrasatibeta.moe.gov.sa/",
+      "snippet": "هو مصحف إلكتروني تعليمي لجميع المراحل التعليمية حيث يتيح للطالب تصفح السور القرآنية الخاصة بالتلاوة والحفظ بحسب المنهج الخاص به تكاملًا مع منصة مدرستي والقيام بحل الواجبات المسندة من ..."
+    },
+    {
+      "title": "منصة مدرستي",
+      "url": "https://madrasatibeta.moe.gov.sa/login",
+      "snippet": "تسجيل الدخول إلى منصة مدرستي منصة تابعة لوزارة التعليم في المملكة العربية السعودية، تقدم محتوى تعليميًا شاملًا ومتنوعًا للطلبة من جميع المراحل، وتوفر أدوات تفاعلية وممتعة للتعلم والتدريب."
+    },
+    {
+      "title": "منصة مدرستي",
+      "url": "https://sites.moe.gov.sa/Afif/services/service-14/",
+      "snippet": "يقوم الرابط أدنا بالانتقال إلى صفحة منصة مدرستي وبها معلومات تهمك من الأدلة لهذه المنصة وطريقة التعامل معها سواءً بقراءة المعلومات في الشريط العلوي أو في أسفل الصفحة والتي تعين المستخدم ..."
+    },
+    {
+      "title": "منصة مدرستي (@moe_madrasati) / X",
+      "url": "https://x.com/moe_madrasati",
+      "snippet": "تعرّف على خطوات استعادة كلمة المرور في #منصة_مدرستي ، وواصل عملية الدخول إلى حسابك بكل يسر وسهولة."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "yjang43/lp2-tworooms",
+  "slug": "yjang43-lp2-tworooms",
+  "author": "yjang43",
+  "url": "https://huggingface.co/yjang43/lp2-tworooms",
+  "created_at": "2026-09-13T01:41:03.000Z",
+  "updated_at": "2026-09-13T01:41:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "dataset:yjang43/lp2-tworooms",
+    "arxiv:2603.19312",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72290849,
+  "storage_human": "72 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.com",
+      "url": "https://www.amazon.com/gp/css/homepage.html",
+      "snippet": ""
+    },
+    {
+      "title": "Amazon.com",
+      "url": "https://www.amazon.com/your-account",
+      "snippet": "Manage your Amazon account settings, orders, payments, and preferences for a personalized shopping experience."
+    },
+    {
+      "title": "Amazon.com. Spend less. Smile more.",
+      "url": "https://www.amazon.com/",
+      "snippet": "Free shipping on millions of items. Get the best of Shopping and Entertainment with Prime. Enjoy low prices and great deals on the …"
+    },
+    {
+      "title": "Amazon.com: My Accounts",
+      "url": "https://www.amazon.com/my-accounts/s?k=my+accounts",
+      "snippet": "ERIC J PETTERSON. How To Change My Amazon Account Information.: easy guide to changing/updating your account information …"
+    },
+    {
+      "title": "Tu cuenta - amazon.com",
+      "url": "https://www.amazon.com/-/es/your-account",
+      "snippet": "Accede a tu cuenta de Amazon para gestionar pedidos, configuraciones de pago y más."
+    }
+  ]
+}

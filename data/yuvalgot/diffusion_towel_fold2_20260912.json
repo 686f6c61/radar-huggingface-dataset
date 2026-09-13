@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "yuvalgot/diffusion_towel_fold2_20260912",
+  "slug": "yuvalgot-diffusion_towel_fold2_20260912",
+  "author": "yuvalgot",
+  "url": "https://huggingface.co/yuvalgot/diffusion_towel_fold2_20260912",
+  "created_at": "2026-09-12T18:21:54.000Z",
+  "updated_at": "2026-09-12T18:22:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion",
+    "robotics",
+    "dataset:yuvalgot/towel_fold2_sep_20260905_121503_clean",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 262962502,
+  "parameters_human": "263.0M",
+  "storage_bytes": 1051895760,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kazakhstan at the 2026 Winter Olympics - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kazakhstan_at_the_2026_Winter_Olympics",
+      "snippet": "Kazakhstan competed at the 2026 Winter Olympics in Milan and Cortina d'Ampezzo, Italy, from 6 to 22 February 2026. Short-track …"
+    },
+    {
+      "title": "Kazakhstan's Roster for the 2026 Winter Olympics Announced",
+      "url": "https://qrnews.kz/en/news/kazakhstan-s-roster-for-the-2026-winter-olympics-announced-tzElI",
+      "snippet": "Jan 22, 2026 · Kazakhstan will be represented by 36 athletes at the XXV Winter Olympic Games, scheduled to take place from …"
+    },
+    {
+      "title": "Kazakhstan announces full team roster for 2026 Winter Olympics",
+      "url": "https://qazinform.com/news/kazakhstan-announces-full-team-roster-for-2026-winter-olympics-9a8e88",
+      "snippet": "Jan 23, 2026 · The National Olympic Committee and the Ministry of Tourism and Sport have announced the full list of the athletes, …"
+    },
+    {
+      "title": "2026 Winter Olympics: Kazakhstan reveals its full roster",
+      "url": "https://qazinform.com/news/2026-winter-olympics-kazakhstan-reveals-its-full-roster-445b71",
+      "snippet": "Jan 27, 2026 · Kazakhstan has confirmed its full national team roster ahead of the Winter Olympic Games in Italy, Qazinform News …"
+    },
+    {
+      "title": "Kazakhstan at the 2026 Winter Olympics - Wikiwand",
+      "url": "https://www.wikiwand.com/en/Kazakhstan_at_the_2026_Winter_Olympics",
+      "snippet": "Feb 22, 2026 · Kazakhstan competed at the 2026 Winter Olympics in Milan and Cortina d'Ampezzo, Italy, from 6 to 22 February 2026."
+    }
+  ]
+}

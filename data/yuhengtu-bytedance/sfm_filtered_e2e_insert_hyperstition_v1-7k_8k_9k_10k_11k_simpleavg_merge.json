@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-7k_8k_9k_10k_11k_simpleavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_e2e_insert_hyperstition_v1-7k_8k_9k_10k_11k_simpleavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-7k_8k_9k_10k_11k_simpleavg_merge",
+  "created_at": "2026-09-13T00:41:40.000Z",
+  "updated_at": "2026-09-13T00:42:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "模载联合支援站 - 欧卡2, OMSI, 巴士模拟2, mod下载",
+      "url": "https://bbs.vefans.com/",
+      "snippet": "模载联合支援站 - 欧洲卡车模拟2,OMSI,巴士模拟2,美国卡车模拟论坛"
+    },
+    {
+      "title": "OMSI Map Tools 3.1 (Update: April 21st) - Marcels OMSI-Forum",
+      "url": "https://forum.omnibussimulator.de/forum/index.php?thread/7111-omsi-map-tools-3-1-update-april-21st/",
+      "snippet": "When I used it on my OMSI 1 version of the map I got all the correct counts of objects that I used in the map. Would you mind making …"
+    },
+    {
+      "title": "Berlin Spandau Real 136 236 X36 By BusDriver30 (Update Version vom …",
+      "url": "https://forum.omnibussimulator.de/forum/index.php?thread/48617-berlin-spandau-real-136-236-x36-by-busdriver30-update-version-vom-09-07-2019-ist/",
+      "snippet": "Oct 23, 2018 · Art des Downloads: Map (real) Projektname: Spandau Real 136 236 X36 By BusDriver30 Beteiligte Personen: …"
+    },
+    {
+      "title": "「OMSI学院区」 - 模载联合支援站 - 欧卡2, OMSI, 巴士模拟2, mod下载",
+      "url": "https://bbs.vefans.com/forumdisplay.php?fid=175",
+      "snippet": "Aug 30, 2026 · OMSI 巴士模擬專區索引 （遊戲下載、新手教學、DLC、中國模組資訊） 上海申沃车辆制作直播，算是教程把o …"
+    },
+    {
+      "title": "OMSI2 V2.00.024 简繁中文补丁+编辑器中文化 - 《巴士模拟2》",
+      "url": "https://bbs.3dmgame.com/thread-5289452-1-1.html",
+      "snippet": "Jun 12, 2013 · 此补丁包含语言文件和主程序（编辑器）中文化，教程只翻译了教程选择页面下载对应附件，解压到 OMSI2 目录在 …"
+    }
+  ]
+}

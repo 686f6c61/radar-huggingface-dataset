@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_insert_xxf_character-8k_9k_10k_simpleavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_insert_xxf_character-8k_9k_10k_simpleavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-8k_9k_10k_simpleavg_merge",
+  "created_at": "2026-09-13T00:30:24.000Z",
+  "updated_at": "2026-09-13T00:31:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SPORT24 | Μόνο Αθλητικά",
+      "url": "https://www.sport24.gr/",
+      "snippet": "Τα σημαντικότερα αθλητικά νέα της ημέρας στο SPORT24. Αθλητικές ειδήσεις, αρθρογραφία, ρεπορτάζ για ποδόσφαιρο, μπάσκετ & …"
+    },
+    {
+      "title": "Πρόγραμμα TV - Αθλητικές Μεταδόσεις στο ...",
+      "url": "https://www.sport24.gr/tvprogram/",
+      "snippet": "Όλες οι αθλητικές μεταδόσεις της ημέρας. Το πρόγραμμα των αθλητικών μεταδόσεων για ποδόσφαιρο, μπάσκετ και τα υπόλοιπα …"
+    },
+    {
+      "title": "Πρωτοσέλιδα Αθλητικών Εφημερίδων - SPORT24",
+      "url": "https://www.sport24.gr/newspapers/",
+      "snippet": "Δείτε όλα τα πρωτοσέλιδα των αθλητικών και πολιτικών εφημερίδων σήμερα από το SPORT24. Όλες οι εφημερίδες σήμερα και τις …"
+    },
+    {
+      "title": "Αθλητικές Ειδήσεις | SPORT24",
+      "url": "https://www.sport24.gr/latest/",
+      "snippet": "Όλες οι αθλητικές ειδήσεις της ημέρας στο SPORT24. Αθλητικά νέα, τελευταίες εξελίξεις και ρεπορτάζ για ποδόσφαιρο, μπάσκετ και …"
+    },
+    {
+      "title": "Ποδόσφαιρο στο SPORT24",
+      "url": "https://www.sport24.gr/football/",
+      "snippet": "Όλες οι ειδήσεις για το Ποδόσφαιρο στο SPORT24. Μείνετε ενημερωμένοι για τις αθλητικές ειδήσεις γύρω από το ποδόσφαιρο και …"
+    }
+  ]
+}

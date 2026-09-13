@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Arbanerjee/survey-data-efficient-learning",
+  "slug": "arbanerjee-survey-data-efficient-learning",
+  "author": "Arbanerjee",
+  "url": "https://huggingface.co/Arbanerjee/survey-data-efficient-learning",
+  "created_at": "2026-09-12T20:06:55.000Z",
+  "updated_at": "2026-09-12T20:07:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "data-efficient-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Clinical Practice Guidelines : Vitamin D deficiency",
+      "url": "https://www.rch.org.au/clinicalguide/guideline_index/Vitamin_D_deficiency/",
+      "snippet": "Vitamin D deficiency is common in risk groups and should be self-managed wherever possible - through education, behaviour change …"
+    },
+    {
+      "title": "Vitamin D deficiency - healthdirect",
+      "url": "https://www.healthdirect.gov.au/vitamin-d-deficiency",
+      "snippet": "How is vitamin D deficiency treated? If you are low in vitamin D, your doctor may recommend that you: Check with your doctor about …"
+    },
+    {
+      "title": "Low vitamin D in Victoria: Key health messages for doctors, nurses and ...",
+      "url": "https://www.health.vic.gov.au/publications/low-vitamin-d-in-victoria-key-health-messages-for-doctors-nurses-and-allied-health",
+      "snippet": "It outlines population groups at risk of having low vitamin D, information about sun exposure and vitamin D, and vitamin D screening …"
+    },
+    {
+      "title": "Vitamin D deficiency in adults - Australian Prescriber",
+      "url": "https://australianprescriber.tg.org.au/articles/vitamin-d-deficiency-in-adults-1.html",
+      "snippet": "Aug 1, 2010 · Calcitriol (1,25-dihydroxyvitamin D3) is generally not suitable for treatment of vitamin D deficiency as it has a narrow …"
+    },
+    {
+      "title": "Vitamin D in Australia - RACGP - The Royal Australian College of ...",
+      "url": "https://www.racgp.org.au/getattachment/631e40c5-1ce1-4da9-aeec-9c0b1ff1a515/attachment.aspx",
+      "snippet": "For most people, deficiency can be prevented by 5–15 minutes exposure of face and upper limbs to sunlight 4–6 times per week. If …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "victory5/Kimi-K3",
+  "slug": "victory5-kimi-k3",
+  "author": "victory5",
+  "url": "https://huggingface.co/victory5/Kimi-K3",
+  "created_at": "2026-09-12T21:28:41.000Z",
+  "updated_at": "2026-09-12T21:28:42.000Z",
+  "license": "kimi-k3",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kimi_k3",
+    "feature-extraction",
+    "compressed-tensors",
+    "conversational",
+    "image-text-to-text",
+    "custom_code",
+    "license:other",
+    "eval-results",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2779931837184,
+  "parameters_human": "2779.93B",
+  "storage_bytes": 1560998650830,
+  "storage_human": "1561.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lidl lohnt sich - Lokal bei Dir vor Ort und Online",
+      "url": "https://www.lidl.de/?msockid=0f831f24ca5660513c7108f6cb8d61c0",
+      "snippet": "Beim Lidl Online-Shopping hast du die volle Kostenkontrolle. Mit der Ratenzahlung kannst du dir auch größere Wünsche erfüllen. …"
+    },
+    {
+      "title": "Prospekte bei Lidl: Unsere Aktionsprospekte jetzt online- Lidl.de",
+      "url": "https://www.lidl.de/c/online-prospekte/s10005610?msockid=0f831f24ca5660513c7108f6cb8d61c0",
+      "snippet": "Aug 12, 2026 · Angebote und Prospekte – Online bei LIDL. Hier findest du tolle Angebote & faire Preise und verpasst keine Aktion …"
+    },
+    {
+      "title": "Dein Baumarkt & Garten Shop | Werkzeug, Gartengeräte & mehr | Lidl",
+      "url": "https://www.lidl.de/c/baumarkt-garten/s10067761?msockid=0f831f24ca5660513c7108f6cb8d61c0",
+      "snippet": "Alles für Dein Projekt in Haus & Garten! Entdecke bei Lidl online Werkzeuge, Gartengeräte, Arbeitsbekleidung, Gartenhäuser & mehr …"
+    },
+    {
+      "title": "Alles für die Küche: Haushaltswaren und Küchenartikel auf Lidl.de",
+      "url": "https://www.lidl.de/c/kueche-haushalt/s10067764?msockid=0f831f24ca5660513c7108f6cb8d61c0",
+      "snippet": "Kochen, putzen, waschen - Lidl hat alles, was Du dazu brauchst und noch ein bisschen mehr. Küchenartikel und Haushaltswaren …"
+    },
+    {
+      "title": "Kundenservice - Lidl Deutschland",
+      "url": "https://kundenservice.lidl.de/SelfServiceDE/s/",
+      "snippet": "Willkommen bei Kundenservice von Lidl Deutschland. Sie haben Fragen? Wir helfen Ihnen gerne!"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "gomezaaron1985/flamingo-checkpoint",
+  "slug": "gomezaaron1985-flamingo-checkpoint",
+  "author": "gomezaaron1985",
+  "url": "https://huggingface.co/gomezaaron1985/flamingo-checkpoint",
+  "created_at": "2026-09-13T00:54:17.000Z",
+  "updated_at": "2026-09-13T00:54:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://de-de.facebook.com/%D8%A7%D9%84%D9%83%D9%88%D9%85%D9%8A%D8%AF%D9%8A%D8%A7-%D8%A7%D9%84%D8%A7%D9%84%D9%87%D9%8A%D8%A9-%D8%AF%D8%A7%D9%86%D8%AA%D9%8A-%D8%A7%D9%84%D8%BA%D9%8A%D8%B1%D9%8A-1949326368635569/posts/",
+      "snippet": "Facebook ... Facebook"
+    },
+    {
+      "title": "Meta for Business (formerly Facebook for Business)",
+      "url": "https://de-de.facebook.com/latest/oksana/",
+      "snippet": "By logging in, you can navigate to all business tools like Meta Business Suite, Ads Manager and more to help you connect with your …"
+    },
+    {
+      "title": "Facebook Community",
+      "url": "https://de-de.facebook.com/community/search/%E4%B8%96%E7%95%8C%E3%83%A2%E3%83%B3%E3%82%B4%E3%83%AB%E4%BA%BA%E9%80%A3%E7%9B%9F/",
+      "snippet": "Ressourcen für Gruppenadmins, die Communitys auf Facebook aufbauen."
+    },
+    {
+      "title": "Facebook-Hilfebereich",
+      "url": "https://de-de.facebook.com/help/?search=Account+Unavailable",
+      "snippet": "Sieh dir an, wie du Facebook verwendest, ein Problem löst und Antworten auf deine Fragen findest."
+    },
+    {
+      "title": "Facebook-Hilfebereich",
+      "url": "https://de-de.facebook.com/help/search/?query=gameroom",
+      "snippet": "Bestimmte Spiele auf Facebook können jetzt auch ohne den Facebook Login für Gaming gespielt werden. You can play fantasy …"
+    }
+  ]
+}

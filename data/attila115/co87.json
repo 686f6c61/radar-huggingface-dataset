@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Attila115/co87",
+  "slug": "attila115-co87",
+  "author": "Attila115",
+  "url": "https://huggingface.co/Attila115/co87",
+  "created_at": "2026-09-08T20:38:57.000Z",
+  "updated_at": "2026-09-13T02:09:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 200597957536,
+  "storage_human": "200.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Login to Disney+ | Login or Signup",
+      "url": "https://www.disneyplus.com/identity/login?msockid=136fa11f840b69602085b6cd8550689d",
+      "snippet": "Log in to access Disney+ and explore a wide range of movies, TV series, and exclusive originals."
+    },
+    {
+      "title": "Log in to Disney+ | Login or Sign up",
+      "url": "https://www.disneyplus.com/en-gb/identity/login?msockid=136fa11f840b69602085b6cd8550689d",
+      "snippet": "Log in to Disney+ with your MyDisney account. If you don’t have one, you will be prompted to create an account before signing up."
+    },
+    {
+      "title": "Disney+ | Stream Movies, TV Shows, Documentaries & More | U.S. Site",
+      "url": "https://www.disneyplus.com/?msockid=136fa11f840b69602085b6cd8550689d",
+      "snippet": "Access your favorite entertainment with Disney+. Disney+ is the streaming home for Disney, Hulu, ESPN, Pixar, Marvel, Star Wars, …"
+    },
+    {
+      "title": "Iniciar sesión en Disney+ | Acceder o suscribirte",
+      "url": "https://www.disneyplus.com/es-419/identity/login?msockid=136fa11f840b69602085b6cd8550689d",
+      "snippet": "Es necesario que inicies sesión en Disney+ con tu cuenta de MyDisney. En caso de no tener una, recibirás indicaciones para crearla …"
+    },
+    {
+      "title": "Sieh dir neue Originals, Blockbuster und Serien an - Disney+",
+      "url": "https://www.disneyplus.com/de-de?msockid=136fa11f840b69602085b6cd8550689d",
+      "snippet": "Das Streaming Zuhause von Disney, Marvel, Pixar, Star Wars, National Geographic, Hulu und so viel mehr. Entdecke die besten …"
+    }
+  ]
+}

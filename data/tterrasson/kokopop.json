@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "tterrasson/kokopop",
+  "slug": "tterrasson-kokopop",
+  "author": "tterrasson",
+  "url": "https://huggingface.co/tterrasson/kokopop",
+  "created_at": "2026-09-13T01:00:59.000Z",
+  "updated_at": "2026-09-13T01:00:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pornhubで45万の請求が来てしまって年齢確認のところを押しただけ …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11304353466",
+      "snippet": "Pornhubで45万の請求が来てしまって 年齢確認 のところを押しただけで出てしまったんですが ワンクリック詐欺 でしょうか...？？ …"
+    },
+    {
+      "title": "竹前美結さんは美人ですか？ - Yahoo!知恵袋",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11328235186",
+      "snippet": "May 20, 2026 · すごいのは本人じゃなくて日本の加工技術です。 美人といえば、鳥取・米子のレンガ投げ女の方が美人です。"
+    },
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Bonjour, Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux …"
+    },
+    {
+      "title": "Supprimer mon compte pornhub - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-37008466-supprimer-mon-compte-pornhub",
+      "snippet": "Dec 23, 2020 · Supprimer mon compte pornhub Tchoinbig - Modifié le 23 déc. 2020 à 06:11 bazfile - 23 déc. 2020 à 10:28"
+    },
+    {
+      "title": "Tag:\"creditscore credit-score credit-file creditfile default missed ...",
+      "url": "https://community.virginmedia.com/tag/creditscore%20credit-score%20credit-file%20creditfile%20default%20missed-payment%20missedpayment%20credit-file-ruined%20credit-score-ruined%20creditscoreruined%20creditfileruined",
+      "snippet": "Find all posts, articles, and events tagged with \"creditscore credit-score credit-file creditfile default missed-payment missedpayment …"
+    }
+  ]
+}

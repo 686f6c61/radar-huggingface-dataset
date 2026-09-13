@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "JEFFERSONMUSIC/ReggaetonBMDrums32K",
+  "slug": "jeffersonmusic-reggaetonbmdrums32k",
+  "author": "JEFFERSONMUSIC",
+  "url": "https://huggingface.co/JEFFERSONMUSIC/ReggaetonBMDrums32K",
+  "created_at": "2026-09-12T19:42:48.000Z",
+  "updated_at": "2026-09-12T19:45:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 157596049,
+  "storage_human": "158 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "怎么将手机上的画面投到电脑屏幕上？ - 知乎",
+      "url": "https://www.zhihu.com/question/324589333",
+      "snippet": "有的时候需要将手机的内容投影到电脑上，那么要如何操作呢？一般来说需要去下载投屏软件，但是很多投屏软件都很坑，需要收费才 …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "DonanımHaber Forum",
+      "url": "https://forum.donanimhaber.com/",
+      "snippet": "Teknoloji, sıcak fırsatlar, otomobil, ülke gündemi, kripto para, eğitim, futbol hakkında bilgiler ve tartışma platformu: DonanımHaber …"
+    },
+    {
+      "title": "Adolescence (2025) | Netflix | DonanımHaber Forum",
+      "url": "https://forum.donanimhaber.com/adolescence-2025-netflix--160804556",
+      "snippet": "Adolescence (2025) | Netflix Sıcak Fırsatlarda Tıklananlar Editörün Seçtiği Fırsatlar Daha Fazla"
+    },
+    {
+      "title": "7-Zip 官方网站怎么下载？ - 知乎",
+      "url": "https://www.zhihu.com/question/20498753",
+      "snippet": "7-Zip 是一个功能强大的工具，特别适合需要 高效压缩 和 解压缩 功能的用户。比如 IT 专业人员、软件开发者或普通用户希望节省磁 …"
+    }
+  ]
+}

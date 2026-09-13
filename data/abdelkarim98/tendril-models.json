@@ -5,7 +5,7 @@
   "author": "abdelkarim98",
   "url": "https://huggingface.co/abdelkarim98/tendril-models",
   "created_at": "2026-09-08T09:16:16.000Z",
-  "updated_at": "2026-09-08T10:39:50.000Z",
+  "updated_at": "2026-09-12T10:02:43.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -34,7 +34,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1233799541,
+  "storage_bytes": 1233804418,
   "storage_human": "1.2 GB",
   "base_model": "microsoft/deberta-v3-base, google/flan-t5-base",
   "formats": [

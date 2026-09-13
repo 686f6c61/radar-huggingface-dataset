@@ -5,7 +5,7 @@
   "author": "ShivRamSaud",
   "url": "https://huggingface.co/ShivRamSaud/wat2026-llava15-captioning-constrained",
   "created_at": "2026-09-08T13:56:24.000Z",
-  "updated_at": "2026-09-12T18:07:29.000Z",
+  "updated_at": "2026-09-13T00:22:31.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 8539212015,
-  "storage_human": "8.5 GB",
+  "storage_bytes": 9264445829,
+  "storage_human": "9.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

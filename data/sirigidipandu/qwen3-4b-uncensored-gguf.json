@@ -5,13 +5,14 @@
   "author": "sirigidipandu",
   "url": "https://huggingface.co/sirigidipandu/qwen3-4b-uncensored-gguf",
   "created_at": "2026-09-11T17:55:32.000Z",
-  "updated_at": "2026-09-11T17:56:27.000Z",
+  "updated_at": "2026-09-12T14:46:43.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "safetensors",
     "gguf",
     "qwen3",
     "llama.cpp",
@@ -21,15 +22,16 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 102,
   "trending_score": 0,
   "parameters": 4022468096,
   "parameters_human": "4.02B",
-  "storage_bytes": 2497278944,
-  "storage_human": "2.5 GB",
+  "storage_bytes": 13050964148,
+  "storage_human": "13.1 GB",
   "base_model": null,
   "formats": [
-    "gguf"
+    "gguf",
+    "safetensors"
   ],
   "is_conversational": true,
   "gated": false,

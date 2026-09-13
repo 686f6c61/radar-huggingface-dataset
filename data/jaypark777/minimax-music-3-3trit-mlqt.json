@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jayPark777/MiniMax-Music-3-3Trit-MLQT",
+  "slug": "jaypark777-minimax-music-3-3trit-mlqt",
+  "author": "jayPark777",
+  "url": "https://huggingface.co/jayPark777/MiniMax-Music-3-3Trit-MLQT",
+  "created_at": "2026-09-13T01:25:34.000Z",
+  "updated_at": "2026-09-13T01:28:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "axon-labs",
+    "mlqt",
+    "3-trit",
+    "0-skip",
+    "dual-block",
+    "music-generation",
+    "full-song",
+    "comfyui",
+    "low-vram",
+    "text-to-audio",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4545859029,
+  "storage_human": "4.5 GB",
+  "base_model": "MiniMaxAI/MiniMax-Music-3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "الدرس الرابع علوم رابعة ابتدائي(التكيف والبقاء) ٢٠٢٦ - YouTube",
+      "url": "https://www.youtube.com/watch?v=_jKwqH-yzsw",
+      "snippet": "الدرس الرابع علوم رابعة ابتدائي(التكيف والبقاء) ٢٠٢٦#المنهج_الجديد_الصف_الرابع #المنهج_الجديد_للصف_الرابع ..."
+    },
+    {
+      "title": "الدرس الرابع مفهوم التكيف والبقاء علوم الصف الرابع الإبتدائي الترم ...",
+      "url": "https://www.youtube.com/watch?v=_2_y0xJb0hw",
+      "snippet": "الدرس الرابع مفهوم التكيف والبقاء علوم الصف الرابع الإبتدائي الترم الأول 2026 مستر أحمد حفني Ahmed Hefny 🎬 درس ..."
+    },
+    {
+      "title": "شرح الدرس الرابع مفهوم التكيف والبقاء علوم الصف الرابع الإبتدائي الترم ...",
+      "url": "https://www.m3aarf.com/lesson/550988-video",
+      "snippet": "في هذا الفيديو التعليمي الممتع، نقدم لكم شرح درس \"التكيف والبقاء\" بطريقة كرتونية شيقة تناسب أعماركم، مع مستر أحمد حفني لضمان فهم المنهج الجديد 2026 بكل سهولة."
+    },
+    {
+      "title": "الدرس الخامس علوم الصف الرابع الابتدائي| التكيف والبقاء |علوم رابعة ...",
+      "url": "https://www.rahma-school.com/lessons/%D8%A7%D9%84%D8%AF%D8%B1%D8%B3-%D8%A7%D9%84%D8%AE%D8%A7%D9%85%D8%B3-%D8%B9%D9%84%D9%88%D9%85-%D8%A7%D9%84%D8%B5%D9%81-%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9-%D8%A7%D9%84%D8%A7%D8%A8%D8%AA%D8%AF%D8%A7%D8%A6%D9%8A-%D8%A7%D9%84%D8%AA%D9%83%D9%8A%D9%81-%D9%88%D8%A7%D9%84%D8%A8%D9%82%D8%A7%D8%A1-%D8%B9%D9%84%D9%88%D9%85-%D8%B1%D8%A7%D8%A8%D8%B9%D8%A9-%D8%A7%D8%A8%D8%AA%D8%AF%D8%A7%D8%A6%D9%8A-%D9%85%D8%B3%D8%AA%D8%B1-%D9%85%D8%AD%D9%85%D8%AF-%D8%A7%D8%A8%D8%B1%D8%A7%D9%87%D9%8A%D9%85-2026-%D8%AF%D8%B1%D8%B3-18290",
+      "snippet": "شاهد فيديوهات تعليمية ضمن دروس علوم الصف الرابع الابتدائي ترم اول 2026 بالتفصيل للمدرس محمد إبراهيم، مع التركيز على مناهج كتاب ابتدائي الصف الرابع ابتدائي."
+    },
+    {
+      "title": "التكييف والبقاء للصف الرابع الابتدائي - أموالي منصة الناشرين",
+      "url": "https://edu.amwaly.com/blog/212499/%D8%A7%D9%84%D8%AA%D9%83%D9%8A%D9%8A%D9%81-%D9%88%D8%A7%D9%84%D8%A8%D9%82%D8%A7%D8%A1-%D9%84%D9%84%D8%B5%D9%81-%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9-%D8%A7%D9%84%D8%A7%D8%A8%D8%AA%D8%AF%D8%A7%D8%A6%D9%8A",
+      "snippet": "1 day ago · تحميل كتاب الأضواء الصف الخامس الابتدائي لغة عربية ترم أول 2027 كيف تختارين المدرس الأونلاين المناسب لطفلك؟ 7 نصائح مهمة لكل أم 📥 تحميل ملزمة علوم الصف الرابع الابتدائي …"
+    }
+  ]
+}

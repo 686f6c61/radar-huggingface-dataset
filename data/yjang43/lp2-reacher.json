@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "yjang43/lp2-reacher",
+  "slug": "yjang43-lp2-reacher",
+  "author": "yjang43",
+  "url": "https://huggingface.co/yjang43/lp2-reacher",
+  "created_at": "2026-09-13T01:41:13.000Z",
+  "updated_at": "2026-09-13T01:41:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "dataset:yjang43/lp2-reacher",
+    "arxiv:2603.19312",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72290849,
+  "storage_human": "72 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quando os pagamentos das vendas são feitos? - InfinitePay",
+      "url": "https://ajuda.infinitepay.io/pt-BR/articles/4242607-quando-os-pagamentos-das-vendas-sao-feitos",
+      "snippet": "May 5, 2026 · Dias úteis são de segunda a sexta-feira, exceto feriados bancários. Os pagamentos podem ser feitos em depósitos ao …"
+    },
+    {
+      "title": "Quais são os planos de recebimento na InfinitePay?",
+      "url": "https://ajuda.infinitepay.io/pt-BR/articles/6830853-quais-sao-os-planos-de-recebimento-na-infinitepay",
+      "snippet": "May 12, 2026 · Aqui na InfinitePay, você escolhe como e quando quer receber suas vendas. Vamos te explicar cada plano pra te …"
+    },
+    {
+      "title": "Quanto tempo demora para cair o dinheiro na InfinitePay?",
+      "url": "https://faq.blackpilado.com.br/2024/11/quanto-tempo-demora-para-cair-o_24.html",
+      "snippet": "Nov 24, 2024 · Assim, o prazo-padrão de 30 dias ou mais para recebimento dos valores é alterado a partir da contratação. Dessa …"
+    },
+    {
+      "title": "InfinitePay | Conta Digital, Maquininha e Pagamentos",
+      "url": "https://www.infinitepay.io/",
+      "snippet": "Mude seu plano temporariamente para receber o valor das vendas na hora. Você pode ativar e desativar sempre que quiser – …"
+    },
+    {
+      "title": "A InfinitePay paga as suas vendas em 1 dia útil",
+      "url": "https://www.infinitepay.io/blog/com-o-pagamento-de-suas-vendas-em-1-dia-util-a-infinitepay-transforma-o-seu-negocio",
+      "snippet": "Aug 21, 2026 · Vendendo à vista ou parcelado, você recebe em 1 dia útil para ter mais segurança, praticidade e autonomia para sua …"
+    }
+  ]
+}

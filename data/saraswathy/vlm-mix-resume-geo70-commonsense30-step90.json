@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Saraswathy/vlm-mix-resume-geo70-commonsense30-step90",
+  "slug": "saraswathy-vlm-mix-resume-geo70-commonsense30-step90",
+  "author": "Saraswathy",
+  "url": "https://huggingface.co/Saraswathy/vlm-mix-resume-geo70-commonsense30-step90",
+  "created_at": "2026-09-12T23:10:51.000Z",
+  "updated_at": "2026-09-12T23:13:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-4B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11781417187,
+  "storage_human": "11.8 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sneaker-Socken stricken | Kostenlose Anleitung - Talu.de",
+      "url": "https://www.talu.de/sneaker-socken-stricken/",
+      "snippet": "Wir starten in dieser Anleitung zum Sneaker-Socken stricken bei der Spitze. So können Sie ganz einfach selbst bestimmen, wie hoch …"
+    },
+    {
+      "title": "Sneaker-Socken stricken: Kostenlose Anleitung für Sommersocken (3 ...",
+      "url": "https://diyctators.com/2026/05/20/sneaker-socken-strickanleitung/",
+      "snippet": "May 20, 2026 · Sneaker-Socken stricken leicht gemacht! Diese kostenlose Sommersocken-Anleitung ohne Schaft (Größe 36–41) …"
+    },
+    {
+      "title": "Sneakersocken - KatjaKnitter - Strickblog",
+      "url": "https://katjaknitter-blog.de/sneakersocken/",
+      "snippet": "Falls du eine einfache Strickanleitung für Sneakersocken suchst, bist du hier genau richtig. Ich habe die Socken auf den Bildern mit …"
+    },
+    {
+      "title": "Sneakersocken stricken - Anleitung (Remake) - Caros Fummeley",
+      "url": "https://carosfummeley.de/2022/08/sneakersocken-stricken.html",
+      "snippet": "Bei der Ferse kannst du frei entscheiden, welche du stricken möchtest. Bei mir sitzt die Käppchenferse einfach am besten, weshalb …"
+    },
+    {
+      "title": "Sneakersocken stricken für Anfänger:innen | TOPP Blog",
+      "url": "https://www.topp-kreativ.de/blog/sneaker-socken-stricken-anleitung",
+      "snippet": "Wir zeigen dir, wie du die Sneaker Socken mit Herz selber stricken kannst. Die Schritt-für-Schritt Anleitung führt dich durch die …"
+    }
+  ]
+}

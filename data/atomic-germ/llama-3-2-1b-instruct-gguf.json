@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/Llama-3.2-1B-Instruct-GGUF",
+  "slug": "atomic-germ-llama-3-2-1b-instruct-gguf",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/Llama-3.2-1B-Instruct-GGUF",
+  "created_at": "2026-09-12T21:10:25.000Z",
+  "updated_at": "2026-09-12T21:19:21.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama",
+    "text-generation",
+    "llama-3",
+    "meta",
+    "facebook",
+    "unsloth",
+    "en",
+    "base_model:meta-llama/Llama-3.2-1B-Instruct",
+    "base_model:quantized:meta-llama/Llama-3.2-1B-Instruct",
+    "license:llama3.2",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1235814432,
+  "parameters_human": "1.24B",
+  "storage_bytes": 24280370595,
+  "storage_human": "24.3 GB",
+  "base_model": "meta-llama/Llama-3.2-1B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atomic » Skis, équipement & vêtements de ski",
+      "url": "https://www.atomic.com/fr-fr",
+      "snippet": "Découvrez les derniers skis, chaussures de ski, casques, masques et vêtements de ski Atomic. Pour le ski alpin, le ski de randonnée …"
+    },
+    {
+      "title": "Atomic » Skis, ski gear & ski clothing",
+      "url": "https://www.atomic.com/en-int",
+      "snippet": "Latest skis, ski boots, ski helmets, ski goggles & clothing by Atomic. For skiing, ski touring & cross-country skiing."
+    },
+    {
+      "title": "Atomic (entreprise) — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Atomic_(entreprise)",
+      "snippet": "L'entreprise Atomic Austria GmbH, fondée en 1955, est un fabricant autrichien spécialisé dans les articles de sport alpin. Depuis …"
+    },
+    {
+      "title": "Atomic: Best Crypto Wallet",
+      "url": "https://atomicwallet.io/",
+      "snippet": "Atomic Wallet is an interface that gives you access to your funds on the blockchain. The most important information, such as your …"
+    },
+    {
+      "title": "Magasin Airsoft, Paintball & Artifices Paris-Cergy | ATOMIK",
+      "url": "https://atomik.fr/",
+      "snippet": "Atomik, votre magasin airsoft, paintball, artifices et armurerie depuis 25 ans. 2 boutiques à Paris 20e et Cergy, vente en ligne et …"
+    }
+  ]
+}

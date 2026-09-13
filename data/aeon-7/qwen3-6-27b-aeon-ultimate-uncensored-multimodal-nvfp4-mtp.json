@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Multimodal-NVFP4-MTP",
+  "slug": "aeon-7-qwen3-6-27b-aeon-ultimate-uncensored-multimodal-nvfp4-mtp",
+  "author": "AEON-7",
+  "url": "https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Multimodal-NVFP4-MTP",
+  "created_at": "2026-04-28T05:55:36.000Z",
+  "updated_at": "2026-09-12T20:41:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "abliterated",
+    "uncensored",
+    "qwen3",
+    "qwen3.6",
+    "nvfp4",
+    "modelopt",
+    "mtp",
+    "multi-token-prediction",
+    "speculative-decoding",
+    "hybrid-attention",
+    "mamba",
+    "gated-deltanet",
+    "multimodal",
+    "aeon",
+    "rtx-pro-6000",
+    "b100",
+    "b200",
+    "dedicated-vram-blackwell",
+    "sm_120",
+    "sm_100",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16",
+    "base_model:quantized:AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 37,
+  "downloads_30d": 3266,
+  "trending_score": 0,
+  "parameters": 18386186992,
+  "parameters_human": "18.39B",
+  "storage_bytes": 28583222860,
+  "storage_human": "28.6 GB",
+  "base_model": "AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ACPI\\HPIC0003\\3&11583659&0 - HP Support Community - 8185929",
+      "url": "https://h30434.www3.hp.com/t5/Notebook-Operating-System-and-Recovery/ACPI-HPIC0003-3-amp-11583659-amp-0/td-p/8185929",
+      "snippet": "Oct 10, 2021 · I have an error of unknown device ACPI\\\\HPIC0003\\\\3&11583659&0 on my notebook - HP 340S G7, s/n (personal …"
+    },
+    {
+      "title": "Unable to find drivers for Device ACPI\\HPIC0003\\3&11583659&0",
+      "url": "https://h30434.www3.hp.com/t5/Notebook-Software-and-How-To-Questions/Unable-to-find-drivers-for-Device-ACPI-HPIC0003-3-amp/td-p/8964072",
+      "snippet": "Jan 12, 2024 · Tried to find drivers for 'Device ACPI\\\\HPIC0003\\\\3&11583659&0' but failed to do so. Checked with HP Support by …"
+    },
+    {
+      "title": "Solved: What driver installs driver ACPI\\HPIC0003\\2&DABA3FF&0 for H ...",
+      "url": "https://h30434.www3.hp.com/t5/Notebook-Operating-System-and-Recovery/What-driver-installs-driver-ACPI-HPIC0003-2-amp-DABA3FF-amp/td-p/7231647",
+      "snippet": "Sep 9, 2019 · What driver installs driver ACPI\\\\HPIC0003\\\\2&DABA3FF&0 for HP Notebook - 15-bs028cl M# HP Notebook - 15 …"
+    },
+    {
+      "title": "Missing driver ACPI\\INT3400\\2&DABA3FF&0 - HP Support Community",
+      "url": "https://h30434.www3.hp.com/t5/Notebook-Operating-System-and-Recovery/Missing-driver-ACPI-INT3400-2-amp-DABA3FF-amp-0/td-p/8468554",
+      "snippet": "Aug 29, 2022 · Your account also allows you to connect with HP support faster, access a personal dashboard to manage all of your …"
+    },
+    {
+      "title": "ACPI\\HPIC0003\\3&11583659&0 Error message - HP Support Community",
+      "url": "https://h30434.www3.hp.com/t5/Desktops-Archive-Read-Only/ACPI-HPIC0003-3-amp-11583659-amp-0-Error-message/td-p/8047274",
+      "snippet": "Apr 24, 2021 · ACPI\\\\HPIC0003\\\\3&11583659&0 Error message I upgraded my HP Slim Desktop - S01-PF0308il. The Device …"
+    }
+  ]
+}

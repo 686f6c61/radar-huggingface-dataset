@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-6k_7k_8k_9k_10k_simpleavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_e2e_insert_hyperstition_v1-6k_7k_8k_9k_10k_simpleavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-6k_7k_8k_9k_10k_simpleavg_merge",
+  "created_at": "2026-09-13T00:33:44.000Z",
+  "updated_at": "2026-09-13T00:34:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Trezor Suite",
+      "url": "https://suite.trezor.io/web/start/",
+      "snippet": "New desktop & browser app for Trezor hardware wallets. Trezor Suite brings significant improvements across our three key pillars of …"
+    },
+    {
+      "title": "Trezor Suite App (Official) | Desktop & Web Crypto Management | Trezor",
+      "url": "https://suite.trezor.io/",
+      "snippet": "Trezor Suite is the official app for managing your Trezor hardware wallet. On desktop, you can securely buy, sell, stake, swap, and …"
+    },
+    {
+      "title": "Trezor Suite",
+      "url": "https://trezor.io/guides/trezor-suite",
+      "snippet": "Explore everything about Trezor Suite in the Trezor ecosystem. Stay informed and secure with our expert resources."
+    },
+    {
+      "title": "Download & verify Trezor Suite",
+      "url": "https://trezor.io/guides/trezor-suite/download-verify-trezor-suite",
+      "snippet": "This article explains how to download and verify the Trezor Suite desktop application on the most common operating systems. The …"
+    },
+    {
+      "title": "Official Trezor™ Suite App®® — Desktop & Web App for Hardware",
+      "url": "https://trezo-suite.readme.io/docs/en-suite",
+      "snippet": "Get familiar with Trezor Suite and its practical tools for managing Trezor hardware wallets, tracking accounts, checking balances, …"
+    }
+  ]
+}

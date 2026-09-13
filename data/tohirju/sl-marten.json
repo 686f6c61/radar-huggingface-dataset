@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Tohirju/sl-marten",
+  "slug": "tohirju-sl-marten",
+  "author": "Tohirju",
+  "url": "https://huggingface.co/Tohirju/sl-marten",
+  "created_at": "2026-09-12T18:41:01.000Z",
+  "updated_at": "2026-09-12T18:42:20.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 4446548207,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.de: Amazon Prime",
+      "url": "https://www.amazon.de/amazonprime",
+      "snippet": "Als Prime-Mitglied kannst du exklusive Amazon Originals, Tausende beliebter Filme und Serien, sowie das Dienstags-Topspiel der …"
+    },
+    {
+      "title": "Filme und Serien buchen, kaufen und leihen - Prime Video",
+      "url": "https://www.primevideo.com/-/de/store",
+      "snippet": "Tauche bei Prime Video in eine Welt voller Unterhaltung ein. Du kannst die beliebtesten und neuesten Videos buchen, kaufen oder …"
+    },
+    {
+      "title": "Prime Video: Filme, Serien, Sport und Live-TV ansehen - Amazon.de",
+      "url": "https://www.amazon.de/gp/video/storefront",
+      "snippet": "Streame im Rahmen deiner Prime-Mitgliedschaft beliebte Filme, Serien, Sport und Live-TV. Mit Zusatzkanälen hast du sogar Zugriff …"
+    },
+    {
+      "title": "Prime Video",
+      "url": "https://www.primevideo.com/splash/get/?language=de_DE",
+      "snippet": "AGB und Datenschutzerklärung Feedback senden Hilfe © 1996-2026 Amazon.com, Inc. oder Tochtergesellschaften"
+    },
+    {
+      "title": "Amazon.com: Amazon Prime",
+      "url": "https://www.amazon.com/amazonprime",
+      "snippet": "Unlimited streaming Prime Video brings you new releases, award-winning Originals, and live sports."
+    }
+  ]
+}

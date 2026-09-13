@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "anjalisinghbe/homework-classification",
+  "slug": "anjalisinghbe-homework-classification",
+  "author": "anjalisinghbe",
+  "url": "https://huggingface.co/anjalisinghbe/homework-classification",
+  "created_at": "2026-09-12T22:48:38.000Z",
+  "updated_at": "2026-09-12T22:48:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Téléchargez le navigateur Opera pour ordinateur, téléphone, tablette ...",
+      "url": "https://www.opera.com/fr/download?msockid=166aaf23d4db6f9d2effb8f1d5056e3e",
+      "snippet": "Téléchargez le navigateur Opera pour ordinateur, téléphone et tablette. Opera pour Mac, Windows, Linux, Android, iOS. VPN gratuit, …"
+    },
+    {
+      "title": "Download the Opera browser for computer, phone and tablet | Opera",
+      "url": "https://www.opera.com/download?msockid=166aaf23d4db6f9d2effb8f1d5056e3e",
+      "snippet": "Download the Opera browser for computer, phone and tablet. Opera for Mac, Windows, Linux, Android and iOS. Free VPN, Ad …"
+    },
+    {
+      "title": "Télécharger Opera (gratuit) Windows, Mac, Linux, Android, iOS - Clubic",
+      "url": "https://www.clubic.com/telecharger-fiche18773-opera.html",
+      "snippet": "1 day ago · Les utilisateurs peuvent synchroniser facilement leurs favoris, mots de passe et historiques entre la version mobile et la …"
+    },
+    {
+      "title": "Opera — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Opera",
+      "snippet": "Leur produit était initialement connu sous le nom de MultiTorg Opera et fut rapidement reconnu par la communauté des internautes …"
+    },
+    {
+      "title": "Télécharger Opera pour Windows, Mac, Web, iOS, Android, Linux",
+      "url": "https://www.01net.com/telecharger/internet/navigateur/opera.html",
+      "snippet": "Opera est un navigateur internet qui a toujours su se différencier en privilégiant l'innovation et la sécurité. Il est le premier à mettre en …"
+    }
+  ]
+}

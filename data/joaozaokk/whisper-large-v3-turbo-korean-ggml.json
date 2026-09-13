@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "JoaoZaokk/whisper-large-v3-turbo-korean-ggml",
+  "slug": "joaozaokk-whisper-large-v3-turbo-korean-ggml",
+  "author": "JoaoZaokk",
+  "url": "https://huggingface.co/JoaoZaokk/whisper-large-v3-turbo-korean-ggml",
+  "created_at": "2026-09-12T23:52:23.000Z",
+  "updated_at": "2026-09-12T23:54:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "whisper.cpp",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "whisper.cpp",
+    "ggml",
+    "gguf",
+    "automatic-speech-recognition",
+    "on-device",
+    "quantized",
+    "ko",
+    "base_model:royshilkrot/whisper-large-v3-turbo-korean-ggml",
+    "base_model:quantized:royshilkrot/whisper-large-v3-turbo-korean-ggml",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3546776780,
+  "storage_human": "3.5 GB",
+  "base_model": "royshilkrot/whisper-large-v3-turbo-korean-ggml",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/auth/?locale=ru-RU",
+      "snippet": "Используйте ChatGPT, чтобы отвечать на вопросы, писать тексты, создавать изображения, выполнять рабочие задачи и …"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "Чат GPT - Бесплатный ChatGPT-5 на Русском",
+      "url": "https://gpt.chat/ru",
+      "snippet": "Бесплатная онлайн-платформа gpt.chat позволяет пользователям взаимодействовать с ChatGPT через мгновенные чат …"
+    },
+    {
+      "title": "Чат GPT на Русском - ГПТ Нейросеть Онлайн",
+      "url": "https://chatai.org/ru",
+      "snippet": "Он может точно переводить как письменный, так и устный текст в режиме реального времени. Просто отправьте свой текст в …"
+    },
+    {
+      "title": "Представляем ChatGPT | OpenAI",
+      "url": "https://openai.com/ru-RU/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · Мы обучили модель под названием ChatGPT, которая взаимодействует с пользователем в разговорной …"
+    }
+  ]
+}

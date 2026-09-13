@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "keystats/Transcribe_ocr_v4",
+  "slug": "keystats-transcribe_ocr_v4",
+  "author": "keystats",
+  "url": "https://huggingface.co/keystats/Transcribe_ocr_v4",
+  "created_at": "2026-09-13T00:51:08.000Z",
+  "updated_at": "2026-09-13T00:52:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 17545762310,
+  "storage_human": "17.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Liste des événements — Action Populaire",
+      "url": "https://actionpopulaire.fr/",
+      "snippet": "Soutenez la candidature de Jean-Luc Mélenchon pour l'élection présidentielle de 2027 ! Passez à l'action ! Action Populaire est le …"
+    },
+    {
+      "title": "La France insoumise - Accueil - La France insoumise",
+      "url": "https://lafranceinsoumise.fr/",
+      "snippet": "La France insoumise, comment ça marche ? Soutenez la candidature de Jean-Luc Mélenchon pour l’élection présidentielle de 2027 ! …"
+    },
+    {
+      "title": "Rechercher un groupe — Action Populaire",
+      "url": "https://actionpopulaire.fr/recherche/groupes/",
+      "snippet": "Action Populaire est le réseau social d'action de la France insoumise."
+    },
+    {
+      "title": "Créer ou rejoindre un groupe d’action - La France insoumise",
+      "url": "https://lafranceinsoumise.fr/groupes-action/carte-groupes/",
+      "snippet": "Vous pouvez organiser par exemple une distribution de tracts, un collage ou un apéro insoumis. Rendez-vous sur la partie matériel …"
+    },
+    {
+      "title": "Aide en ligne - Action Populaire",
+      "url": "https://infos.actionpopulaire.fr/",
+      "snippet": "Retrouvez les dizaines de fiches pratiques pour agir ! Elles servent à vous guider dans l’organisation et la réalisation d’actions, à …"
+    }
+  ]
+}

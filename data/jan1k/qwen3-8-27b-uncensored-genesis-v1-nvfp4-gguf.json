@@ -5,7 +5,7 @@
   "author": "jan1k",
   "url": "https://huggingface.co/jan1k/Qwen3.8-27B-Uncensored-Genesis-V1-NVFP4-GGUF",
   "created_at": "2026-09-10T01:46:58.000Z",
-  "updated_at": "2026-09-11T12:18:09.000Z",
+  "updated_at": "2026-09-12T17:19:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -39,8 +39,8 @@
   "trending_score": 0,
   "parameters": 26895999448,
   "parameters_human": "26.90B",
-  "storage_bytes": 80181430336,
-  "storage_human": "80.2 GB",
+  "storage_bytes": 185692709024,
+  "storage_human": "185.7 GB",
   "base_model": "LuffyTheFox/Qwen3.8-27B-Uncensored-Genesis-V1-MTP-GGUF",
   "formats": [
     "gguf"

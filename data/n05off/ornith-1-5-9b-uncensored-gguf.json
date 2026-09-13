@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "N05off/Ornith-1.5-9B-uncensored-GGUF",
+  "slug": "n05off-ornith-1-5-9b-uncensored-gguf",
+  "author": "N05off",
+  "url": "https://huggingface.co/N05off/Ornith-1.5-9B-uncensored-GGUF",
+  "created_at": "2026-09-12T21:47:57.000Z",
+  "updated_at": "2026-09-12T21:47:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "ornith",
+    "qwen3_5",
+    "abliterated",
+    "uncensored",
+    "zerofuse",
+    "multimodal",
+    "vision",
+    "en",
+    "base_model:junafinity/Ornith-1.5-9B-uncensored",
+    "base_model:quantized:junafinity/Ornith-1.5-9B-uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 82967482112,
+  "storage_human": "83.0 GB",
+  "base_model": "junafinity/Ornith-1.5-9B-uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Return Loss in Transmission Lines | Tutorials on Electronics | Next ...",
+      "url": "https://next.gr/tutorials/rf-and-wireless-basics/return-loss-in-transmission-lines-tutorial",
+      "snippet": "In real-world applications, a return loss of: 10 dB corresponds to ~10% reflected power (90% power transfer). 20 dB corresponds to …"
+    },
+    {
+      "title": "Mastering Return Loss in RF Engineering - numberanalytics.com",
+      "url": "https://www.numberanalytics.com/blog/mastering-return-loss-rf-engineering",
+      "snippet": "Jun 12, 2025 · Learn the fundamentals of return loss, its importance in RF engineering, and how to measure and optimize it for …"
+    },
+    {
+      "title": "Transmission Line Loss - Microwaves101",
+      "url": "https://www.microwaves101.com/encyclopedias/transmission-line-loss",
+      "snippet": "Here we will review some of the math for calculating the RF losses (attenuation) of transmission lines over frequency. We'll guide you …"
+    },
+    {
+      "title": "Return loss - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Return_loss",
+      "snippet": "If a transmission line is correctly matched to a load, the reflected power will be zero, no power will be lost due to reflection, and …"
+    },
+    {
+      "title": "VSWR and Return Loss | Tutorials on Electronics | Next Electronics",
+      "url": "https://next.gr/tutorials/rf-and-wireless-basics/vswr-and-return-loss-tutorial",
+      "snippet": "While VSWR describes the ratio of maximum to minimum voltage amplitudes along a transmission line, return loss measures the …"
+    }
+  ]
+}

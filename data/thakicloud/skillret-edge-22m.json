@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "ThakiCloud/SKILLRET-Edge-22M",
+  "slug": "thakicloud-skillret-edge-22m",
+  "author": "ThakiCloud",
+  "url": "https://huggingface.co/ThakiCloud/SKILLRET-Edge-22M",
+  "created_at": "2026-09-11T04:24:42.000Z",
+  "updated_at": "2026-09-12T23:55:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "retrieval",
+    "skill-retrieval",
+    "agent",
+    "on-device",
+    "en",
+    "dataset:ThakiCloud/SKILLRET",
+    "arxiv:2605.05726",
+    "base_model:Snowflake/snowflake-arctic-embed-xs",
+    "base_model:finetune:Snowflake/snowflake-arctic-embed-xs",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 22713216,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90864192,
+  "storage_human": "91 MB",
+  "base_model": "Snowflake/snowflake-arctic-embed-xs",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Central Autohaus - Dallas - Used cars and SUVs dealership Dallas TX …",
+      "url": "https://www.centralautohausdallas.com/",
+      "snippet": "Central Autohaus in Dallas, TX, your go-to destination for used cars & SUVs. Explore our Buy Here Pay Here options for affordable & …"
+    },
+    {
+      "title": "Central Autohaus - Dallas, TX | Cars.com",
+      "url": "https://www.cars.com/dealers/5249281/central-autohaus/?msockid=17b8fcd10a4f6f4514cbeb030bac6ea8",
+      "snippet": "Mar 9, 2025 · Read reviews by dealership customers, get a map and directions, contact the dealer, view inventory, hours of …"
+    },
+    {
+      "title": "About Us - Central Autohaus - Dallas",
+      "url": "https://www.centralautohausdallas.com/about-us",
+      "snippet": "Central Autohaus: Your premier destination for used cars and SUVs in Dallas. We're also your trusted BHPH car dealership serving …"
+    },
+    {
+      "title": "Used Cars Dallas TX | Used Cars & Trucks TX | Central Autohaus - Dallas",
+      "url": "https://02a1947e-2d65-4e6b-88ee-3a95b475bfef.dcs-cms.com/",
+      "snippet": "Let Central Autohaus show you how easy it is to buy a quality used car in Dallas. We believe fair prices, superior service, and treating …"
+    },
+    {
+      "title": "CENTRAL AUTOHAUS - Updated September 2026 - 12 Reviews - Yelp",
+      "url": "https://www.yelp.com/biz/central-autohaus-dallas?msockid=17b8fcd10a4f6f4514cbeb030bac6ea8",
+      "snippet": "CENTRAL AUTOHAUS, 19350 Preston Rd, Dallas, TX 75252, 5 Photos, (214) 377-9010, Mon - 9:00 am - 7:00 pm, Tue - 9:00 am - …"
+    }
+  ]
+}

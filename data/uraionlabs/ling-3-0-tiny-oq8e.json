@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "id": "UraionLabs/Ling-3.0-tiny-oQ8e",
+  "slug": "uraionlabs-ling-3-0-tiny-oq8e",
+  "author": "UraionLabs",
+  "url": "https://huggingface.co/UraionLabs/Ling-3.0-tiny-oQ8e",
+  "created_at": "2026-09-13T00:11:39.000Z",
+  "updated_at": "2026-09-13T00:18:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "bailing_hybrid",
+    "mlx-lm",
+    "apple-silicon",
+    "macos",
+    "mac",
+    "metal",
+    "ling",
+    "ling-3",
+    "ling-3.0",
+    "bailing",
+    "moe",
+    "sparse-moe",
+    "reasoning",
+    "thinking",
+    "agent",
+    "agentic",
+    "tool-calling",
+    "function-calling",
+    "quantized",
+    "quantization",
+    "8-bit",
+    "oq",
+    "oqe",
+    "oq8e",
+    "omlx",
+    "uraion-labs",
+    "local-llm",
+    "local-inference",
+    "on-device",
+    "edge-ai",
+    "coding",
+    "131k-context",
+    "256k-context",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "base_model:inclusionAI/Ling-3.0-tiny",
+    "base_model:quantized:inclusionAI/Ling-3.0-tiny",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7893392800,
+  "parameters_human": "7.89B",
+  "storage_bytes": 8399612729,
+  "storage_human": "8.4 GB",
+  "base_model": "inclusionAI/Ling-3.0-tiny",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CONTROL Ultimate Edition on Steam",
+      "url": "https://store.steampowered.com/app/870780/CONTROL_Ultimate_Edition/",
+      "snippet": "Aug 27, 2020 · Blending open-ended environments with the signature world-building and storytelling of renowned developer, Remedy …"
+    },
+    {
+      "title": "Control (video game) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Control_(video_game)",
+      "snippet": "Control was developed by Finnish studio Remedy Entertainment as its first major release since its 2017 initial public offering (IPO) …"
+    },
+    {
+      "title": "Control - Remedy Entertaiment",
+      "url": "https://www.remedygames.com/games/control",
+      "snippet": "After a secretive agency in New York is invaded by an otherworldly threat, you become the new Director struggling to regain Control. …"
+    },
+    {
+      "title": "Zoe Wees - Control (Lyrics / Lyric Video) - YouTube",
+      "url": "https://www.youtube.com/watch?v=VghvmL0G144",
+      "snippet": "Apr 15, 2020 · Zoe Wees - Control: Stream and save 'Control' everywhere: http://umg.lnk.to/Control Official Video out now: …"
+    },
+    {
+      "title": "Control - Official Gameplay Trailer - YouTube",
+      "url": "https://www.youtube.com/watch?v=F74LLDhAhhI",
+      "snippet": "Mar 26, 2019 · Control is the next game from Remedy, releasing August 27 on PS4, Xbox One, and PC."
+    }
+  ]
+}

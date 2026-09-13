@@ -5,7 +5,7 @@
   "author": "Bojun-Feng",
   "url": "https://huggingface.co/Bojun-Feng/Qwen3.8-27B-ABLITERATED-GGUF-llamafile",
   "created_at": "2026-09-10T04:17:13.000Z",
-  "updated_at": "2026-09-12T01:52:29.000Z",
+  "updated_at": "2026-09-12T10:20:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -21,7 +21,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

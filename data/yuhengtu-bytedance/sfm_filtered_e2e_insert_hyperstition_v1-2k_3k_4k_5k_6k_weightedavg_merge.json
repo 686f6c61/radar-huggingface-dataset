@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-2k_3k_4k_5k_6k_weightedavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_e2e_insert_hyperstition_v1-2k_3k_4k_5k_6k_weightedavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-2k_3k_4k_5k_6k_weightedavg_merge",
+  "created_at": "2026-09-13T00:03:35.000Z",
+  "updated_at": "2026-09-13T00:04:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "News & E-Mail bei blue News | Schweiz, Sport, People, Ausland",
+      "url": "https://www.bluewin.ch/de",
+      "snippet": "Bluewin E-Mail Deine kostenlose E-Mail-Adresse Erstelle eine kostenlose E-Mail-Adresse von Swisscom und greife von überall auf …"
+    },
+    {
+      "title": "Bluewin E-Mail – blue News Webmail",
+      "url": "https://www.bluewin.ch/de/services/bluewin-mail",
+      "snippet": "Erstelle einfach eine kostenlose E-Mail-Adresse von Bluewin und greife von überall auf dein Konto zu. Deine E-Mails, Kontakte und …"
+    },
+    {
+      "title": "Bluewin Webmail: Login & Anleitungen - Hilfe | Swisscom",
+      "url": "https://www.swisscom.ch/de/privatkunden/hilfe/e-mail/webmail.html",
+      "snippet": "Hier findest du Anleitungen und Funktionen für dein Bluewin Webmail. Finde heraus, wie du dich einloggst und Probleme beim …"
+    },
+    {
+      "title": "Bluewin E-Mail – Hilfe | Swisscom",
+      "url": "https://www.swisscom.ch/de/privatkunden/hilfe/e-mail.html",
+      "snippet": ""
+    },
+    {
+      "title": "Bluewin – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Bluewin",
+      "snippet": "Bluewin (bis 2000 the blue window) war ein von 1996 bis 2005 bestehendes Schweizer Unternehmen, das Internetdienste anbot. Der …"
+    }
+  ]
+}

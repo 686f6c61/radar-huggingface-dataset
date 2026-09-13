@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_insert_xxf_character-9k_10k_11k_weightedavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_insert_xxf_character-9k_10k_11k_weightedavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-9k_10k_11k_weightedavg_merge",
+  "created_at": "2026-09-13T00:39:52.000Z",
+  "updated_at": "2026-09-13T00:40:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pizza Delivery Near Me in Seattle | Domino's Pizza",
+      "url": "https://pizza.dominos.com/washington/seattle",
+      "snippet": "Domino's Pizza Open Today Until 12:00 AM 4436 Rainier Ave. S Seattle, WA 98118 (206) 721-5596"
+    },
+    {
+      "title": "Dominos' Menu - Order Pizza, Pasta, Wings & More Online!",
+      "url": "https://www.dominos.com/en/pages/order/menu#!/menu/category/viewall/",
+      "snippet": "Explore our pizza, pasta, sandwiches & more for carryout or food delivery near you. To see prices, coupons and exactly what items …"
+    },
+    {
+      "title": "Domino's Pizza at 1427 Broadway | Domino's in Seattle",
+      "url": "https://pizza.dominos.com/washington/seattle/1427-broadway",
+      "snippet": "Apr 30, 2017 · Order from Domino's on 1427 Broadway for pizza delivery or takeout in Seattle, WA. Visit, call, or order online for …"
+    },
+    {
+      "title": "Domino's Pizza near me in Seattle, WA | Mapdoor",
+      "url": "https://mapdoor.com/us/wa/seattle/dominos-pizza",
+      "snippet": "Explore all Domino's Pizza restaurants in Seattle, WA, with contact details, opening hours, services, and more on our interactive map"
+    },
+    {
+      "title": "DOMINO’S PIZZA - Updated September 2026 - Yelp",
+      "url": "https://www.yelp.com/biz/dominos-pizza-seattle-22?msockid=2071c459079262981c6dd38a06846303",
+      "snippet": "Yelp users haven’t asked any questions yet about Domino's Pizza. Your trust is our priority, so businesses can't pay to alter or …"
+    }
+  ]
+}

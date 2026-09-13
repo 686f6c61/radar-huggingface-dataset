@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "SlayerLab/fabryka-english-base-250m-e01",
+  "slug": "slayerlab-fabryka-english-base-250m-e01",
+  "author": "SlayerLab",
+  "url": "https://huggingface.co/SlayerLab/fabryka-english-base-250m-e01",
+  "created_at": "2026-09-12T23:57:59.000Z",
+  "updated_at": "2026-09-13T01:13:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "fabryka_english_base",
+    "text-generation",
+    "experimental",
+    "base-model",
+    "custom-code",
+    "custom_code",
+    "en",
+    "dataset:gvlassis/ClimbMix",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 249944832,
+  "parameters_human": "249.9M",
+  "storage_bytes": 999811760,
+  "storage_human": "1000 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Isla de Taiwán - Wikipedia, la enciclopedia libre",
+      "url": "https://es.wikipedia.org/wiki/Isla_de_Taiw%C3%A1n",
+      "snippet": "La isla de Taiwán (en chino tradicional, 台灣/臺灣; en chino simplificado, 台湾; pinyin, Táiwān), también conocida como Formosa (del …"
+    },
+    {
+      "title": "Taiwan - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Taiwan",
+      "snippet": ""
+    },
+    {
+      "title": "República de China - Wikipedia, la enciclopedia libre",
+      "url": "https://es.wikipedia.org/wiki/Rep%C3%BAblica_de_China",
+      "snippet": "A principios de la década de 1960, Taiwán entró en un período de rápido crecimiento económico e industrialización llamado el …"
+    },
+    {
+      "title": "Taiwán - dw.com",
+      "url": "https://www.dw.com/es/taiw%C3%A1n/t-62696129",
+      "snippet": "Jul 20, 2026 · Taiwán es un territorio moderno con relaciones económicas internacionales, pero aislado debido a la política de una …"
+    },
+    {
+      "title": "Taiwán: capital, mapa, bandera, población y datos",
+      "url": "https://www.paises.net/asia/taiwan/",
+      "snippet": "Todo sobre Taiwán: datos generales, geografía, historia, cultura, economía, gastronomía, turismo y curiosidades de la República de …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Emiliosbs/Ben3.0-7B-Uncensored-Q4_K_M-GGUF",
+  "slug": "emiliosbs-ben3-0-7b-uncensored-q4_k_m-gguf",
+  "author": "Emiliosbs",
+  "url": "https://huggingface.co/Emiliosbs/Ben3.0-7B-Uncensored-Q4_K_M-GGUF",
+  "created_at": "2026-09-13T01:34:06.000Z",
+  "updated_at": "2026-09-13T01:34:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "qwen2",
+    "llama-cpp",
+    "gguf-my-repo",
+    "en",
+    "base_model:Emiliosbs/Ben3.0-7B-Uncensored",
+    "base_model:quantized:Emiliosbs/Ben3.0-7B-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683074016,
+  "storage_human": "4.7 GB",
+  "base_model": "Emiliosbs/Ben3.0-7B-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BFMTV Replay: Revoir les dernières vidéos d'actualité",
+      "url": "https://www.bfmtv.com/replay-emissions/",
+      "snippet": "Replay TV: Pour voir et revoir les news de BFMTV en streaming. Revoir les vidéos rythmant l'actualité française, politique, …"
+    },
+    {
+      "title": "REPLAY BFM TV : toutes les vidéos proposées par BFM TV",
+      "url": "https://www.replay.fr/bfm-tv",
+      "snippet": "Retrouvez chaque jour les nouvelles vidéos de BFM TV replay. Grâce à notre guide, vous pouvez retrouver et accéder facilement …"
+    },
+    {
+      "title": "RMC BFM Play devient RMC+ : Replay & Direct TV - Chaînes RMCBFM, …",
+      "url": "https://www.rmcplus.fr/",
+      "snippet": "RMC BFM Play devient RMC+. Regardez gratuitement vos programmes TV en direct ou en replay, ainsi que vos films, séries, …"
+    },
+    {
+      "title": "Actualités en continu et info en direct et replay - BFM",
+      "url": "https://www.bfmtv.com/",
+      "snippet": "BFM - 1ère sur l'info. Retrouvez toute l'actualité en direct, en photo et en vidéo sur l'info politique, sociale, économique, sportive, …"
+    },
+    {
+      "title": "BFMTV en replay : séries et émissions en streaming gratuit sur RMC+",
+      "url": "https://www.rmcplus.fr/chaine/bfmtv",
+      "snippet": "Regardez BFMTV en replay sur RMC+ : actualités en direct, débats, reportages et infos politique, économique, sociale et …"
+    }
+  ]
+}

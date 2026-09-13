@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "izsahin0228/beit-finetuned",
+  "slug": "izsahin0228-beit-finetuned",
+  "author": "izsahin0228",
+  "url": "https://huggingface.co/izsahin0228/beit-finetuned",
+  "created_at": "2026-09-12T19:52:26.000Z",
+  "updated_at": "2026-09-12T19:52:30.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Falklandinsaaret – Wikipedia",
+      "url": "https://fi.wikipedia.org/wiki/Falklandinsaaret",
+      "snippet": "Falkland Islands, esp. Islas Malvinas) on Yhdistyneelle kuningaskunnalle kuuluva saaristo eteläisellä Atlantilla vajaa 500 kilometriä …"
+    },
+    {
+      "title": "Falkland Islands - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Falkland_Islands",
+      "snippet": "The archipelago, with an area of 4,700 sq mi (12,000 km2), comprises East Falkland, West Falkland, and 776 smaller islands. As a …"
+    },
+    {
+      "title": "Falklands War - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Falklands_War",
+      "snippet": "Falkland Islanders, who have inhabited the islands since the early 19th century, are predominantly descendants of British settlers, …"
+    },
+    {
+      "title": "Visit The Falkland Islands | Falklands",
+      "url": "https://www.falklandislands.com/",
+      "snippet": "Welcome to the Falkland Islands - an incredible archipelago of stunning white sand beaches, seas of beautiful blues and sparkling …"
+    },
+    {
+      "title": "Falklandin sota – Wikipedia",
+      "url": "https://fi.wikipedia.org/wiki/Falklandin_sota",
+      "snippet": "Uhan kasvaessa 23-miehinen Falkland Islands Defence Force kutsuttiin aseisiin ja miehittämään vartiopaikat, jotka sijaitsivat Sapper …"
+    }
+  ]
+}

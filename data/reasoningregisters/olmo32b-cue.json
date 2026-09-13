@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ReasoningRegisters/olmo32b-cue",
+  "slug": "reasoningregisters-olmo32b-cue",
+  "author": "ReasoningRegisters",
+  "url": "https://huggingface.co/ReasoningRegisters/olmo32b-cue",
+  "created_at": "2026-09-13T01:27:37.000Z",
+  "updated_at": "2026-09-13T01:28:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "grpo",
+    "lora",
+    "trl",
+    "text-generation",
+    "base_model:allenai/Olmo-3-1125-32B",
+    "base_model:adapter:allenai/Olmo-3-1125-32B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6443184624,
+  "storage_human": "6.4 GB",
+  "base_model": "allenai/Olmo-3-1125-32B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing Homapage Quiz – MICROSOFT REWARDS BING QUIZ ANSWERS",
+      "url": "https://www.quizandanswers.com/category/bing-homapage-quiz-answers/",
+      "snippet": "Sep 6, 2026 · Bing Homepage Quiz (08-18-2026) August 18, 2026 by . Question 1: Which republic founded the fortress city of …"
+    },
+    {
+      "title": "Microsoft Rewards Bing Quiz Answers",
+      "url": "https://www.quizandanswers.com/",
+      "snippet": "Microsoft Rewards Bing Quizzes – Questions and answers of Microsoft Rewards Bing News Quiz, Bing Homepage Quiz, Bing …"
+    },
+    {
+      "title": "Bing Homepage Quiz (08-09-2026) – MICROSOFT REWARDS BING …",
+      "url": "https://www.quizandanswers.com/bing-homepage-quiz-08-09-2026/",
+      "snippet": "Bing Homepage Quiz (08-09-2026) August 9, 2026 by . Question 1: Which architect designed the Jean-Marie Tjibaou Cultural …"
+    },
+    {
+      "title": "Bing Homepage Quiz (06-27-2026) – MICROSOFT REWARDS BING …",
+      "url": "https://www.quizandanswers.com/bing-homepage-quiz-06-27-2026/",
+      "snippet": "Jun 27, 2026 · A. Harbor seal B. Humpback whale C. Bottlenose dolphin Bottlenose dolphins are frequently seen offshore from …"
+    },
+    {
+      "title": "Bing Homepage Quiz (01-10-2026) – MICROSOFT REWARDS BING …",
+      "url": "https://www.quizandanswers.com/bing-homepage-quiz-01-10-2026/",
+      "snippet": "Bing Homepage Quiz (01-10-2026) January 10, 2026 by . Question 1: What geographical feature is prominently seen at Lake …"
+    }
+  ]
+}

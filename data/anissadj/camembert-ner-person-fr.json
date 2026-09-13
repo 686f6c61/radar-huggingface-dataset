@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Anissadj/camembert-ner-person-fr",
+  "slug": "anissadj-camembert-ner-person-fr",
+  "author": "Anissadj",
+  "url": "https://huggingface.co/Anissadj/camembert-ner-person-fr",
+  "created_at": "2026-09-12T23:07:14.000Z",
+  "updated_at": "2026-09-12T23:07:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "camembert",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110032898,
+  "parameters_human": "110.0M",
+  "storage_bytes": 440155504,
+  "storage_human": "440 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "micachou – Trucmuche",
+      "url": "https://www.trucmuche.fr/forum/forums/topic/micachou/",
+      "snippet": "Oct 21, 2025 · Merci pour ces explications claires. Pour résumer, il faut d’abord chercher « Voix du Nord » sur Google sans se …"
+    },
+    {
+      "title": "Résultats questions et poids VDS – Trucmuche",
+      "url": "https://www.trucmuche.fr/forum/forums/topic/resultats-questions-et-poids-vds/",
+      "snippet": "Jan 6, 2020 · BONJOUR ZOFIA LES RESULTATS SONT DANS LA VOIX DES SPORTS DE CE LUNDI 6/01? 116 KILOS DE …"
+    },
+    {
+      "title": "R-I-P: Personnalités disparues Page 59 Bonjour Chine",
+      "url": "https://www.bonjourchine.com/forum/threads/r-i-p-personnalites-disparues.123023/page-59",
+      "snippet": "Dec 23, 2014 · Topic pour rendre hommage aux personnalités disparus récemment. RIP Joe Cocker (1944-2014) La star anglaise du …"
+    },
+    {
+      "title": "L'ex-petite amie de Kim Jong-un aurait été exécutée",
+      "url": "https://www.bonjourchine.com/forum/threads/lex-petite-amie-de-kim-jong-un-aurait-ete-executee.104194/",
+      "snippet": "Aug 30, 2013 · L'ex-petite amie de Kim Jong-un aurait été exécutée INTRO: Arrêtée avec onze autres personnes pour violation de la …"
+    },
+    {
+      "title": "Trucmuche – Le site des trucmucheurs",
+      "url": "https://www.trucmuche.fr/forum/",
+      "snippet": "Forum Sujets Messages Le TRUCMUCHE La Voix du Nord 2021 C’est parti ! (71, 2,283) Question subsidiaire (10, 811) Échange de …"
+    }
+  ]
+}

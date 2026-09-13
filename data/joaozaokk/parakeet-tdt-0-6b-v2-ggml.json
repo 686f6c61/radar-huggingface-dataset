@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "JoaoZaokk/parakeet-tdt-0.6b-v2-ggml",
+  "slug": "joaozaokk-parakeet-tdt-0-6b-v2-ggml",
+  "author": "JoaoZaokk",
+  "url": "https://huggingface.co/JoaoZaokk/parakeet-tdt-0.6b-v2-ggml",
+  "created_at": "2026-09-12T23:01:43.000Z",
+  "updated_at": "2026-09-12T23:03:15.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "whisper.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "whisper.cpp",
+    "ggml",
+    "gguf",
+    "automatic-speech-recognition",
+    "on-device",
+    "quantized",
+    "parakeet",
+    "en",
+    "base_model:nvidia/parakeet-tdt-0.6b-v2",
+    "base_model:quantized:nvidia/parakeet-tdt-0.6b-v2",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2674208232,
+  "storage_human": "2.7 GB",
+  "base_model": "nvidia/parakeet-tdt-0.6b-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "# sadsong - YouTube",
+      "url": "https://www.youtube.com/shorts/XxsXSe-TPac",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "Unscramble SXSXXE - Unscrambled 4 words from letters in SXSXXE",
+      "url": "https://www.wordunscrambler.net/unscramble/sxsxxe2rxa2rxssxxesx",
+      "snippet": "Well, it shows you the anagrams of sxsxxe scrambled in different ways and helps you recognize the set of letters more easily. It will …"
+    },
+    {
+      "title": "Xxsxse - There's An AI For That®",
+      "url": "https://theresanaiforthat.com/s/xxsxse",
+      "snippet": "Browse 15 Xxsxse AIs. Includes tasks such as Websites, Product images, Literature reviews, Outfits and Homework."
+    },
+    {
+      "title": "Sher Ali Ali - Facebook",
+      "url": "https://www.facebook.com/xxsxse/",
+      "snippet": "Sher Ali Ali is on Facebook. Join Facebook to connect with Sher Ali Ali and others you may know. Facebook gives people the power …"
+    },
+    {
+      "title": "Xsxse - YouTube",
+      "url": "https://www.youtube.com/watch?v=yyjCeMzmrVg",
+      "snippet": "Dec 15, 2017 · Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on …"
+    }
+  ]
+}

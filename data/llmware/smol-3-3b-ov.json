@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "llmware/smol-3-3b-ov",
+  "slug": "llmware-smol-3-3b-ov",
+  "author": "llmware",
+  "url": "https://huggingface.co/llmware/smol-3-3b-ov",
+  "created_at": "2026-09-12T20:45:38.000Z",
+  "updated_at": "2026-09-12T20:55:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "openvino",
+    "smollm3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1752190225,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eGun - Der Marktplatz für Jäger, Schützen und Angler",
+      "url": "https://www.egun.de/",
+      "snippet": "eGun – der Online-Marktplatz für Waffen, Munition, Jagd- und Sportbedarf. Ersteigern oder sofort kaufen."
+    },
+    {
+      "title": "eGun",
+      "url": "https://www.egun.de/market/list_items.php?cat=163",
+      "snippet": "08.09.2026 10:11:19 Schnellsuche Suchvorschläge sind aus- Erweiterte Suche Startseite| Mein eGun| Kontakt| Forum Kaufen Angeln …"
+    },
+    {
+      "title": "eGun",
+      "url": "https://www.egun.de/market/list_items.php?cat=212",
+      "snippet": "Entdecken Sie eine Vielzahl von Angeboten für Waffen und Zubehör auf der Auktionsplattform eGun."
+    },
+    {
+      "title": "eGun",
+      "url": "https://www.egun.de/market/",
+      "snippet": "SRB HR SLO eGun - Der Marktplatz für Jäger, Schützen und Angler Neu bei eGun? Melden Sie sich an. Unter dem Menüpunkt …"
+    },
+    {
+      "title": "eGun",
+      "url": "https://www.egun.de/market/list_items.php?cat=201",
+      "snippet": "Alle Artikel in der Kategorie \"Vorderladerwaffen\" Suche speichern Suche ändern / einschränken"
+    }
+  ]
+}

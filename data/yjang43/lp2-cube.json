@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "yjang43/lp2-cube",
+  "slug": "yjang43-lp2-cube",
+  "author": "yjang43",
+  "url": "https://huggingface.co/yjang43/lp2-cube",
+  "created_at": "2026-09-13T01:41:15.000Z",
+  "updated_at": "2026-09-13T01:41:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "dataset:yjang43/lp2-cube",
+    "arxiv:2603.19312",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72291425,
+  "storage_human": "72 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=IT&hl=it",
+      "snippet": "Divertiti con i video e la musica che ami, carica contenuti originali e condividi tutto con amici, familiari e con il mondo su YouTube."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en-US",
+      "snippet": "Enjoy your favorite videos and channels with the official YouTube app."
+    },
+    {
+      "title": "YT Industries | Mountain Bikes | Live Uncaged",
+      "url": "https://www.yt-industries.com/",
+      "snippet": "Young Talent is what YT stands for. Our direct sales approach maximizes your budget, bringing your dream Enduro, Trail, or …"
+    }
+  ]
+}

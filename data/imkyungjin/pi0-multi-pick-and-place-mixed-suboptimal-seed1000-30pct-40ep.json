@@ -5,7 +5,7 @@
   "author": "ImKyungjin",
   "url": "https://huggingface.co/ImKyungjin/pi0-multi-pick-and-place-mixed-suboptimal-seed1000-30pct-40ep",
   "created_at": "2026-09-10T23:51:03.000Z",
-  "updated_at": "2026-09-10T23:53:38.000Z",
+  "updated_at": "2026-09-12T18:35:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -21,12 +21,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 18,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 3501372176,
   "parameters_human": "3.50B",
-  "storage_bytes": 7011556176,
-  "storage_human": "7.0 GB",
+  "storage_bytes": 14023104816,
+  "storage_human": "14.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

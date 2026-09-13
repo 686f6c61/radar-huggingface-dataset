@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "JacobNguyen/matching-pretrained",
+  "slug": "jacobnguyen-matching-pretrained",
+  "author": "JacobNguyen",
+  "url": "https://huggingface.co/JacobNguyen/matching-pretrained",
+  "created_at": "2026-09-12T22:22:40.000Z",
+  "updated_at": "2026-09-12T22:22:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Explore inside Tower Bridge - Tower Bridge",
+      "url": "https://www.towerbridge.org.uk/",
+      "snippet": "Peel back the layers of the ever-changing icon that is Tower Bridge. Reveal its extraordinary hidden stories, from details about the …"
+    },
+    {
+      "title": "Tower Bridge - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Tower_Bridge",
+      "snippet": "It crosses the River Thames close to the Tower of London and is one of five London bridges owned and maintained by the City …"
+    },
+    {
+      "title": "Explore inside - Tower Bridge",
+      "url": "https://www.towerbridge.org.uk/explore-inside",
+      "snippet": "Discover the marvellous High-Level Walkways of Tower Bridge, and spot some of the 13 million rivets that hold the landmark …"
+    },
+    {
+      "title": "Tower Bridge | Description, History, & Facts | Britannica",
+      "url": "https://www.britannica.com/topic/Tower-Bridge",
+      "snippet": "The Tower Bridge is movable bridge of the double-leaf bascule (drawbridge) type that spans the River Thames between the Greater …"
+    },
+    {
+      "title": "Tower Bridge - Simple English Wikipedia, the free encyclopedia",
+      "url": "https://simple.m.wikipedia.org/wiki/Tower_Bridge",
+      "snippet": "Many tourists go to London to see the Tower Bridge. It has its own exhibition centre in the horizontal walkway. This gives one of the …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mariakawa/waste-classification",
+  "slug": "mariakawa-waste-classification",
+  "author": "mariakawa",
+  "url": "https://huggingface.co/mariakawa/waste-classification",
+  "created_at": "2026-09-12T21:41:00.000Z",
+  "updated_at": "2026-09-12T21:41:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2975048,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/ru",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/channel/UCBR8-60-B28hp2BmDPdntcQ",
+      "snippet": "YouTube's official YouTube channel You found us. Welcome to the official YouTube channel – a home for the biggest moments, the …"
+    },
+    {
+      "title": "YouTube - Google Accounts",
+      "url": "https://accounts.google.com/InteractiveLogin?hl=ru&service=youtube&uilel=3",
+      "snippet": "Делитесь своими видео с друзьями, родственниками и всем миром."
+    },
+    {
+      "title": "Приложения в Google Play – YouTube",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=ru",
+      "snippet": "YouTube всегда под рукой – смотрите любимые видео, каналы и плейлисты."
+    },
+    {
+      "title": "Ютуб - YouTube",
+      "url": "https://www.youtube.com/c/%D0%AE%D1%82%D1%83%D0%B1-%D0%BA%D0%BE%D0%BC",
+      "snippet": "Твой гид в Мир ... Название: Выживший Оригинальное название: The Revenant Год: 2015 Страна: США Жанр: Вестерны, …"
+    }
+  ]
+}

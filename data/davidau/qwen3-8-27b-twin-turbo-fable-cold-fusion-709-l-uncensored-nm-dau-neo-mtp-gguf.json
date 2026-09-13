@@ -5,7 +5,7 @@
   "author": "DavidAU",
   "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-NM-DAU-NEO-MTP-GGUF",
   "created_at": "2026-09-10T06:59:41.000Z",
-  "updated_at": "2026-09-12T02:51:32.000Z",
+  "updated_at": "2026-09-13T03:28:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -56,13 +56,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 60,
+  "likes": 74,
   "downloads_30d": 18383,
-  "trending_score": 59,
+  "trending_score": 71,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 412202556938,
-  "storage_human": "412.2 GB",
+  "storage_bytes": 775447440778,
+  "storage_human": "775.4 GB",
   "base_model": "DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored",
   "formats": [
     "gguf"

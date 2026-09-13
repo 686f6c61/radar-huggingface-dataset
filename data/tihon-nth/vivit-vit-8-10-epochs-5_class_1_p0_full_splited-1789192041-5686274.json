@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "tihon-nth/vivit-vit-8-10-epochs-5_class_1_p0_full_splited-1789192041.5686274",
+  "slug": "tihon-nth-vivit-vit-8-10-epochs-5_class_1_p0_full_splited-1789192041-5686274",
+  "author": "tihon-nth",
+  "url": "https://huggingface.co/tihon-nth/vivit-vit-8-10-epochs-5_class_1_p0_full_splited-1789192041.5686274",
+  "created_at": "2026-09-12T05:47:25.000Z",
+  "updated_at": "2026-09-12T21:51:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "video-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vivit",
+    "video-classification",
+    "generated_from_trainer",
+    "base_model:google/vivit-b-16x2-kinetics400",
+    "base_model:finetune:google/vivit-b-16x2-kinetics400",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 88650245,
+  "parameters_human": "88.7M",
+  "storage_bytes": 3900875909,
+  "storage_human": "3.9 GB",
+  "base_model": "google/vivit-b-16x2-kinetics400",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Quiz Widget - BookWidgets",
+      "url": "https://www.bookwidgets.com/widget-library/quiz",
+      "snippet": "Assess students’ understanding of language grammar with an interactive Quiz. Utilize a combination of question types to identify …"
+    },
+    {
+      "title": "BookWidgets-Widget-Bibliothek",
+      "url": "https://www.bookwidgets.com/de/widget-library",
+      "snippet": "Unsere Quiz-, Video-Quiz-, Arbeitsblatt- und Geteiltes Arbeitsblatt-Widgets sind besonders leistungsstark. Erstellen Sie digitale …"
+    },
+    {
+      "title": "BookWidgets-Tutorials » Testen und Überprüfen » Quiz",
+      "url": "https://api.bookwidgets.com/de/tutorials/quiz-how-to-create",
+      "snippet": "Eine Schritt-für-Schritt-Anleitung zum Erstellen eines ansprechenden Quiz. Fügen Sie Fragen und Antworten hinzu, damit das Quiz …"
+    },
+    {
+      "title": "Free Quiz Widgets – Capture Leads with Interactive Quizzes …",
+      "url": "https://embeddable.co/free-quiz-widgets",
+      "snippet": "Create personality quizzes, trivia, and lead generation quizzes in minutes with AI. Fully editable, no coding required. Start free at …"
+    },
+    {
+      "title": "quiz widget | WWW Coding",
+      "url": "https://www-coding.de/schluesselwoerter/quiz-widget/",
+      "snippet": "In diesem Artikel zeige ich Dir, wie du mit dem Quiz-Widget von meiner Website Schlagwort Quiz, ein fertiges Quiz kostenlos in deine …"
+    }
+  ]
+}

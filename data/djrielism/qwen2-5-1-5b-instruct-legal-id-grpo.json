@@ -5,7 +5,7 @@
   "author": "Djrielism",
   "url": "https://huggingface.co/Djrielism/qwen2.5-1.5b-instruct-legal-id-grpo",
   "created_at": "2026-09-11T12:48:52.000Z",
-  "updated_at": "2026-09-11T20:17:34.000Z",
+  "updated_at": "2026-09-12T09:27:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,12 +29,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 265,
   "trending_score": 0,
   "parameters": 1543714304,
   "parameters_human": "1.54B",
-  "storage_bytes": 6186356454,
-  "storage_human": "6.2 GB",
+  "storage_bytes": 9273823598,
+  "storage_human": "9.3 GB",
   "base_model": "Djrielism/qwen2.5-1.5b-instruct-legal-id",
   "formats": [
     "safetensors"

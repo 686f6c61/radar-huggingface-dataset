@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "monomyth/fly-brain-codex",
+  "slug": "monomyth-fly-brain-codex",
+  "author": "monomyth",
+  "url": "https://huggingface.co/monomyth/fly-brain-codex",
+  "created_at": "2026-09-12T22:26:58.000Z",
+  "updated_at": "2026-09-13T01:12:30.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "robotics",
+    "connectomics",
+    "malecns",
+    "simulation",
+    "experimental",
+    "en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 742825884,
+  "storage_human": "743 MB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WDR 4 hören im Livestream: Wir sind Heimat.",
+      "url": "https://www1.wdr.de/radio/player/radioplayer110~_layout-popupVersion.html",
+      "snippet": "Feb 26, 2026 · WDR 4 hören im Livestream: Wir sind Heimat. WDR 4 spielt 80er und die größten Klassiker."
+    },
+    {
+      "title": "WDR 4 – Wir sind Heimat. 80er und die größten Klassiker - WDR 4 - Radio",
+      "url": "https://www1.wdr.de/radio/wdr4/index.html",
+      "snippet": "WDR 4 begleitet Sie durch den Alltag und auf Reisen rund um die Welt. Jetzt möchten wir wissen: Was sehen Sie, wenn Sie WDR 4 …"
+    },
+    {
+      "title": "WDR 4 hören im Livestream: Wir sind Heimat.",
+      "url": "https://www1.wdr.de/radio/player/radioplayer110~__layout-popupVersion.html",
+      "snippet": "Mar 31, 2026 · WDR 4 hören im Livestream: Wir sind Heimat. WDR 4 spielt 80er und die größten Klassiker."
+    },
+    {
+      "title": "WDR 4 Ruhrgebiet - Radio",
+      "url": "https://www1.wdr.de/radio/player/streams/audiostream-wdr--ruhrgebiet-104.html",
+      "snippet": "WDR 4 Ruhrgebiet 80er und die größten Klassiker WDR Radio Darstellung: Auto XS S M L XL zum Seitenanfang"
+    },
+    {
+      "title": "WDR 4 online - luisteren via internet - My-radios.com",
+      "url": "http://www.my-radios.com/nl/radio/luisteren/14235/WDR-4",
+      "snippet": "Online luisteren naar WDR 4 Geniet van onze eenvoudige radio-speler. Blader door een wereld van radio's. Het is gratis!"
+    }
+  ]
+}

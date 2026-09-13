@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "4cast/Leothos-3M",
+  "slug": "4cast-leothos-3m",
+  "author": "4cast",
+  "url": "https://huggingface.co/4cast/Leothos-3M",
+  "created_at": "2026-09-12T22:53:21.000Z",
+  "updated_at": "2026-09-12T22:53:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kavarás - Videa",
+      "url": "https://videa.hu/player?f=8.2408098.2324772.0&enableJsApi=1&videoFinishedEvent=1&versionChangeCompleteEvent=1&enableAnimGif=1&enableSnapshotApi=1&lang=en&s=%7B%22loc%22%3A1%7D",
+      "snippet": "Error!"
+    },
+    {
+      "title": "Kavarás (2014) - Videa",
+      "url": "https://videa.hu/player?f=8.2513120.2160760.0&enableJsApi=1&videoFinishedEvent=1&versionChangeCompleteEvent=1&enableAnimGif=1&enableSnapshotApi=1&lang=en&s=%7B%22loc%22%3A1%7D",
+      "snippet": "Váratlan hiba történt, kérjük próbálja újra. [XML_001]"
+    },
+    {
+      "title": "MovieDrive | FILM | Kavarás",
+      "url": "https://moviedrive.hu/film/?id=2845",
+      "snippet": "E film férfi hőse (Adam Sandler) így is tenne. Amikor első randija az egyébként kedvesnek tűnő szöszivel (Drew Barrymore) nem jön …"
+    },
+    {
+      "title": "Nézd meg ezt: Kavarás | Netflix",
+      "url": "https://www2.stage.netflix.com/hu/title/70298250",
+      "snippet": "Egy félresikerült vakrandi után két egyedülálló szülő ismét összefut, ezúttal egy csillogó külföldi nyaraláson, a gyerekeik …"
+    },
+    {
+      "title": "Kavarás stream: hol látható a film online? - JustWatch",
+      "url": "https://www.justwatch.com/hu/film/kavaras",
+      "snippet": "Sajnos jelenleg nincs elérhető ingyenes megtekintési lehetőség a (z) Kavarás címhez. Ha értesítést szeretnél, amikor elérhető lesz, …"
+    }
+  ]
+}

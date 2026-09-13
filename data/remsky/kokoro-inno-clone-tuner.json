@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "remsky/kokoro-inno-clone-tuner",
+  "slug": "remsky-kokoro-inno-clone-tuner",
+  "author": "remsky",
+  "url": "https://huggingface.co/remsky/kokoro-inno-clone-tuner",
+  "created_at": "2026-08-31T02:47:06.000Z",
+  "updated_at": "2026-09-10T05:29:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "kokoro-inno-reference-tuner",
+    "kokoro",
+    "voice-cloning",
+    "adapter",
+    "styletts2",
+    "text-to-speech",
+    "en",
+    "dataset:parler-tts/libritts_r_filtered",
+    "dataset:facebook/voxpopuli",
+    "dataset:amphion/Emilia-Dataset",
+    "base_model:hexgrad/Kokoro-82M",
+    "base_model:adapter:hexgrad/Kokoro-82M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 35731,
+  "trending_score": 9,
+  "parameters": 9653396,
+  "parameters_human": "9.7M",
+  "storage_bytes": 147060308,
+  "storage_human": "147 MB",
+  "base_model": "hexgrad/Kokoro-82M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meteo",
+      "url": "https://www.meteo.pl/",
+      "snippet": "Aktualnie przeważająca część obszaru naszego kraju w przyziemnym polu barycznym znajduje się pod wpływem …"
+    },
+    {
+      "title": "Meteorogramy dla gmin",
+      "url": "https://www.meteo.pl/um/php/gpp/search.php",
+      "snippet": "Numeryczna prognoza pogody ICM Zaznacz województwo i pierwszą literę z nazwy miejscowości (aktualnie w bazie znajdują się …"
+    },
+    {
+      "title": "ICM Meteo",
+      "url": "https://mapy.meteo.pl/",
+      "snippet": "i GFS (14 dni) i Temperatura na 2 m i Temperatura powierzchni i Ciśnienie zredukowane i Zachmurzenie i opady"
+    },
+    {
+      "title": "METEO-ICM OLD",
+      "url": "https://old.meteo.pl/",
+      "snippet": "Aktualnie przeważająca część obszaru naszego kraju w przyziemnym polu barycznym znajduje się pod wpływem …"
+    },
+    {
+      "title": "METEO-ICM",
+      "url": "https://bardzotest.meteo.pl/",
+      "snippet": "1 day ago · Treści zawarte w komentarzu synoptycznym mogą zawierać prywatne, niezależne opinie synoptyków, w związku z czym …"
+    }
+  ]
+}

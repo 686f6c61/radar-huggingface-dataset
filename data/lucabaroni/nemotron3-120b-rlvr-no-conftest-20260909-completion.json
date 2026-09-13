@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "lucabaroni/nemotron3-120b-rlvr-no-conftest-20260909-completion",
+  "slug": "lucabaroni-nemotron3-120b-rlvr-no-conftest-20260909-completion",
+  "author": "lucabaroni",
+  "url": "https://huggingface.co/lucabaroni/nemotron3-120b-rlvr-no-conftest-20260909-completion",
+  "created_at": "2026-09-12T22:56:52.000Z",
+  "updated_at": "2026-09-12T23:08:32.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "rlvr",
+    "lora",
+    "reward-hacking",
+    "tinker",
+    "dataset:lucabaroni/rlvr-reward-hacking-scale-no-conftest-20260909-completion",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
+    "base_model:adapter:nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28934651120,
+  "storage_human": "28.9 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=26ad9dba10e863401b958a6811076254",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=26ad9dba10e863401b958a6811076254",
+      "snippet": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and …"
+    },
+    {
+      "title": "Microsoft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft",
+      "snippet": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington. The company …"
+    }
+  ]
+}

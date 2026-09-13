@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "chreeos/paritok-4b-v1-mlx",
+  "slug": "chreeos-paritok-4b-v1-mlx",
+  "author": "chreeos",
+  "url": "https://huggingface.co/chreeos/paritok-4b-v1-mlx",
+  "created_at": "2026-09-12T18:40:41.000Z",
+  "updated_at": "2026-09-13T00:33:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:paritok/paritok-4b-v1",
+    "base_model:quantized:paritok/paritok-4b-v1",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 2274444416,
+  "storage_human": "2.3 GB",
+  "base_model": "paritok/paritok-4b-v1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Japandi Library Design Ideas 2025: Minimalist & Cozy Reading Nooks",
+      "url": "https://www.youtube.com/watch?v=U-s1eHfAFOU",
+      "snippet": "This video will guide you through the essentials of creating a minimalist and cozy reading nook with a perfect blend of Scandinavian …"
+    },
+    {
+      "title": "Woman Reading in Window Print, Emerald Green Reading Nook Wall …",
+      "url": "https://www.etsy.com/ca/listing/4570102958/woman-reading-in-window-print-emerald?msockid=33325ab0b08d66af3b094d62b13b670a",
+      "snippet": "This minimalist reading nook print is ideal for a home library, study, or bedroom. The rich green palette and relaxed subject make it a …"
+    },
+    {
+      "title": "Best Sofa for Reading Nook 2026: Top Cloud Couch Picks",
+      "url": "https://sofatica.com/blogs/articles/best-sofas-for-reading-nooks-in",
+      "snippet": "5 days ago · The best sofa for reading nook corners in 2026 is the Washable Cloud Couch 2-Seater Modular Loveseat: compact, …"
+    },
+    {
+      "title": "Cozy Reading Nook Under Window Ideas Sunlight And Comfort",
+      "url": "https://storage.googleapis.com/agqzveomivsfuionuxlvl/reading-nook-under-a-window.html",
+      "snippet": "Jul 10, 2026 · Cozy Minimalist Reading Nook by Window Planning Your Ideal Window Reading Space Before diving into decor, it is …"
+    },
+    {
+      "title": "其中包括：Cozy minimalist reading nook with boucle armchair, …",
+      "url": "https://huaban.com/pins/7243445373",
+      "snippet": "其中包括：Cozy minimalist reading nook with boucle armchair, ottoman, warm wood bookshelves, floor lamp, and layered neutral …"
+    }
+  ]
+}

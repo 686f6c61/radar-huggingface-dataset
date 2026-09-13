@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "h3rb3rn/moe-sovereign-planner-9b",
+  "slug": "h3rb3rn-moe-sovereign-planner-9b",
+  "author": "h3rb3rn",
+  "url": "https://huggingface.co/h3rb3rn/moe-sovereign-planner-9b",
+  "created_at": "2026-09-12T20:37:58.000Z",
+  "updated_at": "2026-09-12T20:44:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "compound-ai",
+    "planner",
+    "orchestrator",
+    "moe",
+    "lora",
+    "lumi-g",
+    "moe-sovereign",
+    "hybrid-attention",
+    "text-generation",
+    "en",
+    "de",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 15156609664,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DFCC Bank PLC Codes - Ceylon Exchange",
+      "url": "https://ceylonexchange.com.au/bank-codes-for-sri-lankan-banks/dfcc-bank-plc-codes/",
+      "snippet": "Bank Code Branch Code Branch Name 7454 58 Akkaraipattu 7454 54 Akuressa 7454 38 Ambalangoda 7454 41 Ampara 7454 9 …"
+    },
+    {
+      "title": "DFCC Branch & ATM Locator | ATMs & CRMs | DFCC Bank PLC",
+      "url": "https://www.dfcc.lk/dfcc/branch-network",
+      "snippet": "Find DFCC Bank branches, ATMs, Cash Recycler Machines (CDM, CRMs) and Cheque Deposit Machines across Sri Lanka. Search …"
+    },
+    {
+      "title": "Dfcc Bank Plc, Head Office, Colombo, Srilanka Bank & Branch Code …",
+      "url": "https://bankcodesfinder.com/srilanka-bank-codes/dfcc_bank_plc/colombo/head_office",
+      "snippet": "Bank Code of any financial institution or bank in srilanka helps to identify the perticular bank & they have also assigned branch code …"
+    },
+    {
+      "title": "Dfcc Bank Plc, Colombo, Srilanka Bank Codes & Branch Codes List",
+      "url": "https://bankcodesfinder.com/srilanka-bank-codes/dfcc_bank_plc/colombo",
+      "snippet": "Bank Code of any financial institution or bank in srilanka helps to identify the perticular bank & they have also assigned branch code …"
+    },
+    {
+      "title": "COLOMBO 73, A.D. RAMANAYAKE MAWATHA W. 00200 -- DFCC …",
+      "url": "https://www.codes-swift.com/branch/150885-dfcc-vardhana-bank-limited-colombo-73-a-d-ramanayake-mawatha-w-00200",
+      "snippet": "Branch of DFCC VARDHANA BANK LIMITED located at COLOMBO 73, A.D. RAMANAYAKE MAWATHA W. 00200 -- SWIFT/BIC …"
+    }
+  ]
+}

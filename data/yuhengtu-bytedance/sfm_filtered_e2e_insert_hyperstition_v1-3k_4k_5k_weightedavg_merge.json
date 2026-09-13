@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-3k_4k_5k_weightedavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_e2e_insert_hyperstition_v1-3k_4k_5k_weightedavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-3k_4k_5k_weightedavg_merge",
+  "created_at": "2026-09-12T23:51:52.000Z",
+  "updated_at": "2026-09-12T23:52:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Heinz Baked Beans - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Heinz_Baked_Beans",
+      "snippet": "In 1886, Heinz Baked Beans were first sold in the UK at the Fortnum & Mason department store in London. [1] After opening its first …"
+    },
+    {
+      "title": "The History of Heinz Baked Beans",
+      "url": "https://www.backthenhistory.com/articles/the-history-of-heinz-baked-beans",
+      "snippet": "Nov 5, 2025 · In 1895, Henry and John Heinz became the first to start mass-producing canned baked beans in their Pittsburgh, …"
+    },
+    {
+      "title": "Heinz – Our Story | Kraft Heinz | Heinz",
+      "url": "https://www.heinz.com/our-story",
+      "snippet": "It was around this time that Heinz Baked Beans got their delicious debut in the UK. Henry worked tirelessly on ad campaign after ad …"
+    },
+    {
+      "title": "A history of baked beans (Heinz, of course)",
+      "url": "https://humanbeans.co.uk/a-history-of-baked-beans-heinz-of-course/",
+      "snippet": "Dec 29, 2022 · Now, here’s a fun fact that’ll make you the star of your next pub quiz: Heinz Baked Beans made it to Antarctica before …"
+    },
+    {
+      "title": "Where Did Heinz Baked Beans Originate? The Full Story",
+      "url": "https://eathealthy365.com/the-surprising-american-origin-of-heinz-baked-beans/",
+      "snippet": "May 2, 2026 · Heinz Baked Beans were invented by Henry J. Heinz, the founder of the H. J. Heinz Company. He first introduced …"
+    }
+  ]
+}

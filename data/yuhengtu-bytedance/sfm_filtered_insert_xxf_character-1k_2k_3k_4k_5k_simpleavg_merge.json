@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_insert_xxf_character-1k_2k_3k_4k_5k_simpleavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_insert_xxf_character-1k_2k_3k_4k_5k_simpleavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-1k_2k_3k_4k_5k_simpleavg_merge",
+  "created_at": "2026-09-12T23:54:00.000Z",
+  "updated_at": "2026-09-12T23:54:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://www.bing.com/",
+      "snippet": "Decades later, we’re finally learning what happens when they leak. Search with Microsoft Bing and use the power of AI to find …"
+    },
+    {
+      "title": "Suche – Microsoft Bing",
+      "url": "https://de.bing.com/",
+      "snippet": "Suchen Sie mit Microsoft Bing und nutzen Sie die Leistungsfähigkeit der KI, um Informationen zu finden, Webseiten, Bilder, Videos, …"
+    },
+    {
+      "title": "Microsoft verteilt Bing über alle Browser: „Recommended Search …",
+      "url": "https://www.it-boltwise.de/microsoft-verteilt-bing-ueber-alle-browser-recommended-search-settings-im-test.html",
+      "snippet": "Aug 22, 2026 · Microsofts „Recommended Search Settings“ soll Bing als Standardsuche über mehrere Browser setzen. Das Tool …"
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/version",
+      "snippet": "Bing ... Versions"
+    },
+    {
+      "title": "Microsoft macht Bing plötzlich zur „Empfehlung“ – sogar ... - CHIP",
+      "url": "https://www.chip.de/news/software/microsoft-macht-bing-ploetzlich-zur-empfehlung-sogar-in-chrome-und-firefox_f57996a5-6c2e-46a7-83db-96c277b71662.html",
+      "snippet": "Aug 26, 2026 · Microsoft testet offenbar eine neue Windows-Anwendung, die Bing gleich in mehreren Browsern als Standardsuche …"
+    }
+  ]
+}

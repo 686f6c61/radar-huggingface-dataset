@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "keypa/vision-adapter-probe-checkpoints",
+  "slug": "keypa-vision-adapter-probe-checkpoints",
+  "author": "keypa",
+  "url": "https://huggingface.co/keypa/vision-adapter-probe-checkpoints",
+  "created_at": "2026-09-12T19:28:59.000Z",
+  "updated_at": "2026-09-12T21:12:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "vision",
+    "vision-language-alignment",
+    "adapter",
+    "qwen",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1208858408,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vibe Coding Platform for Building Apps and Websites | Base44",
+      "url": "https://base44.com/",
+      "snippet": "Base44 is a no-code AI development platform that turns builders’ ideas into fully functional apps and websites — no coding required."
+    },
+    {
+      "title": "Base44",
+      "url": "https://app.base44.com/",
+      "snippet": "Build useful apps, fast with Base44."
+    },
+    {
+      "title": "Binance Alpha launches ANON and BEETS",
+      "url": "https://www.binance.com/en/square/post/05-01-2025-binance-alpha-anon-beets-23652736230226",
+      "snippet": "May 1, 2025 · Binance Alpha launches projects HeyAnon (ANON) and Beets (BEETS)."
+    },
+    {
+      "title": "AnnaAnon",
+      "url": "https://annaanon.newgrounds.com/",
+      "snippet": "Dec 4, 2024 · All characters in my work are consenting 18+ adults."
+    },
+    {
+      "title": "Base44",
+      "url": "https://base-44.com/",
+      "snippet": "Base44 is a no-code AI development platform that turns builders’ ideas into fully functional apps and websites — no coding required."
+    }
+  ]
+}

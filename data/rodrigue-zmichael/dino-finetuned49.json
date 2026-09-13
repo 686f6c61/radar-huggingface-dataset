@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "RODRIGUE-ZMICHAEL/dino-finetuned49",
+  "slug": "rodrigue-zmichael-dino-finetuned49",
+  "author": "RODRIGUE-ZMICHAEL",
+  "url": "https://huggingface.co/RODRIGUE-ZMICHAEL/dino-finetuned49",
+  "created_at": "2026-09-13T01:11:15.000Z",
+  "updated_at": "2026-09-13T01:11:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Billets pour Rodrigue | Réservez en ligne sur Fnac Spectacles",
+      "url": "https://www.fnacspectacles.com/artist/rodrigue/",
+      "snippet": "Réservez dès maintenant vos billets pour Rodrigue sur Fnac Spectacles. Consultez les dates, avis et achetez vos places en toute …"
+    },
+    {
+      "title": "Vos billets, Notre expérience, Leurs émotions - Rodrigue",
+      "url": "https://rodrigue.fr/",
+      "snippet": "Rodrigue est une solution de billetterie, de gestion et de développement des publics à destination des professionnels du secteur …"
+    },
+    {
+      "title": "Rodrigue à la Scène parisienne - Ticketac",
+      "url": "https://www.ticketac.com/spectacles/rodrigue",
+      "snippet": "Rodrigue, étoile montante de la nouvelle génération, pose son micro à la Scène Parisienne. Depuis six ans sur scène, Rodrigue a …"
+    },
+    {
+      "title": "Rodrigues — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Rodrigues",
+      "snippet": "Rodrigues est la plus petite des îles principales de l’ archipel des Mascareignes. Elle est surnommée « la Cendrillon des …"
+    },
+    {
+      "title": "Rodrigue - La Scène Parisienne - Salle 1 - Billet Réduc",
+      "url": "https://www.billetreduc.com/spectacle/rodrigue-387281",
+      "snippet": "Apr 26, 2026 · Rodrigue, étoile montante de la nouvelle génération, pose son micro à la Scène Parisienne. Depuis six ans sur scène, …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "ningpy",
   "url": "https://huggingface.co/ningpy/redflag-denied-3b",
   "created_at": "2026-09-10T11:30:55.000Z",
-  "updated_at": "2026-09-10T11:34:52.000Z",
+  "updated_at": "2026-09-12T04:52:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -38,12 +38,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 182,
+  "downloads_30d": 206,
   "trending_score": 0,
   "parameters": 3085938688,
   "parameters_human": "3.09B",
-  "storage_bytes": 6183348464,
-  "storage_human": "6.2 GB",
+  "storage_bytes": 12355275032,
+  "storage_human": "12.4 GB",
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "safetensors"

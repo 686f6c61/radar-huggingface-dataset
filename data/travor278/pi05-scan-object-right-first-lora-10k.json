@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Travor278/pi05-scan-object-right-first-lora-10k",
+  "slug": "travor278-pi05-scan-object-right-first-lora-10k",
+  "author": "Travor278",
+  "url": "https://huggingface.co/Travor278/pi05-scan-object-right-first-lora-10k",
+  "created_at": "2026-09-12T18:41:16.000Z",
+  "updated_at": "2026-09-12T18:44:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi05",
+    "jax",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335809183,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Buy Acer XB240H 24.0\" LCD Monitor in Dubai, UAE",
+      "url": "https://dubaimachines.com/acer-predator-xb240h-bmjdpr-24-0-lcd-monitor.html",
+      "snippet": "These monitors combine cutting-edge technologies to deliver great gaming experiences. Plus, built-in eye protection and ergonomics …"
+    }
+  ]
+}

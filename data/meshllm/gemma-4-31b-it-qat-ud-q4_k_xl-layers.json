@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "meshllm/gemma-4-31B-it-qat-UD-Q4_K_XL-layers",
+  "slug": "meshllm-gemma-4-31b-it-qat-ud-q4_k_xl-layers",
+  "author": "meshllm",
+  "url": "https://huggingface.co/meshllm/gemma-4-31B-it-qat-UD-Q4_K_XL-layers",
+  "created_at": "2026-09-12T22:09:53.000Z",
+  "updated_at": "2026-09-12T22:56:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mesh-llm",
+  "languages": [],
+  "tags": [
+    "mesh-llm",
+    "gguf",
+    "layer-package",
+    "skippy",
+    "distributed-inference",
+    "local-inference",
+    "openai-compatible",
+    "image-text-to-text",
+    "base_model:unsloth/gemma-4-31B-it-qat-GGUF",
+    "base_model:quantized:unsloth/gemma-4-31B-it-qat-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 478959361,
+  "parameters_human": "479.0M",
+  "storage_bytes": 22984874048,
+  "storage_human": "23.0 GB",
+  "base_model": "unsloth/gemma-4-31B-it-qat-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Saat Kaç?",
+      "url": "https://saatkac.info.tr/",
+      "snippet": "Sep 13, 2026 · Dünyadaki 7 milyon lokasyon için atomik saate göre senkronize olmuş 57 dile çevrili en doğru yerel saat bilgisi."
+    },
+    {
+      "title": "Canlı Saat - Şu An Saat Kaç?",
+      "url": "https://canlisaat.com/",
+      "snippet": "Şu an saat kaç sorusunun cevabını merak edenler için, anlık olarak saatin kaç olduğunu gösteren, canlı saat uygulaması."
+    },
+    {
+      "title": "Home - Saat",
+      "url": "https://www.saat.my/en/",
+      "snippet": "Frequently Asked Questions Who is SAAT? We provide fast, accurate service for comparison of Insurance pricing and fixtures. Who …"
+    },
+    {
+      "title": "Saat, Saat Modelleri ve Markaları - Saat ve Saat",
+      "url": "https://www.saatvesaat.com.tr/",
+      "snippet": "Saat ve Saat A.Ş nin Türkiye Distribütörlüğünü yaptığı saat markaları, takı ve aksesuar modellerini bulabileceğiniz resmi alışveriş …"
+    },
+    {
+      "title": "Saat kaç - OnlineSaat.web.tr",
+      "url": "https://onlinesaat.web.tr/saat-kac/",
+      "snippet": "23 hours ago · Çevrimiçi saat. Bu web sitesinde dünyadaki herhangi bir ülkede ve şehirde güncel saati ve tarihi bulabilirsiniz. …"
+    }
+  ]
+}

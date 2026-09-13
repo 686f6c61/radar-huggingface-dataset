@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "braydenbrown/efficientformer-demo",
+  "slug": "braydenbrown-efficientformer-demo",
+  "author": "braydenbrown",
+  "url": "https://huggingface.co/braydenbrown/efficientformer-demo",
+  "created_at": "2026-09-13T00:42:11.000Z",
+  "updated_at": "2026-09-13T00:42:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dallas Cowboys | Official Site of the Dallas Cowboys",
+      "url": "https://www.dallascowboys.com/team/players-roster/",
+      "snippet": "Reserve/Designated to Return Reserve/Injured"
+    },
+    {
+      "title": "Dallas Cowboys | Official Site of the Dallas Cowboys",
+      "url": "https://www.dallascowboys.com/",
+      "snippet": "The Dallas Cowboys World Corporate Headquarters at The Star in Frisco is a destination created for fans to experience the place …"
+    },
+    {
+      "title": "Dallas Cowboys | Official Site of the Dallas Cowboys",
+      "url": "https://www.dallascowboys.com/team/depth-chart",
+      "snippet": "Unofficial 2026 Dallas Cowboys Depth Chart Offense Defense Special Teams"
+    },
+    {
+      "title": "Top 10: Best Current Players - Dallas Cowboys",
+      "url": "https://www.dallascowboys.com/photos/top-10-best-current-players-279831",
+      "snippet": "With the next practice just a few days out, the staff at DallasCowboys.com ranked the Top-10 players on the Cowboys??? roster …"
+    },
+    {
+      "title": "Dallas Cowboys | Official Site of the Dallas Cowboys",
+      "url": "https://www.dallascowboys.com/team/front-office-roster/",
+      "snippet": "Technical Coordinator of Strategic Football Operations Max Lyons Senior Strategic Football Analyst Sarah Mallepalle"
+    }
+  ]
+}

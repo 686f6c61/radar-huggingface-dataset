@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "meshllm/NVIDIA-Nemotron-3-Super-120B-A12B-UD-Q4_K_XL-layers",
+  "slug": "meshllm-nvidia-nemotron-3-super-120b-a12b-ud-q4_k_xl-layers",
+  "author": "meshllm",
+  "url": "https://huggingface.co/meshllm/NVIDIA-Nemotron-3-Super-120B-A12B-UD-Q4_K_XL-layers",
+  "created_at": "2026-09-12T22:09:28.000Z",
+  "updated_at": "2026-09-12T23:19:32.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mesh-llm",
+  "languages": [],
+  "tags": [
+    "mesh-llm",
+    "gguf",
+    "layer-package",
+    "skippy",
+    "distributed-inference",
+    "local-inference",
+    "openai-compatible",
+    "text-generation",
+    "base_model:unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF",
+    "base_model:quantized:unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109640064,
+  "parameters_human": "109.6M",
+  "storage_bytes": 84485926432,
+  "storage_human": "84.5 GB",
+  "base_model": "unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2026 Midterm Election Results: Senate, House and Governor Races",
+      "url": "https://apnews.com/projects/elections-2026/",
+      "snippet": "Mar 3, 2026 · Follow elections for U.S. Senate, U.S. House, governor and more across all 50 states with real-time vote counts, county …"
+    },
+    {
+      "title": "Election 2026: Results, news and analysis | CNN Politics",
+      "url": "https://www.cnn.com/election/2026",
+      "snippet": "23 hours ago · Follow the latest news, results and analysis from every race in the 2026 midterm elections."
+    },
+    {
+      "title": "Election News: Latest Results from Local and National Races",
+      "url": "https://www.nbcnews.com/politics/elections",
+      "snippet": "Find the latest presidential election news stories, photos and videos on NBCNews.com. Read headlines covering the presidential …"
+    },
+    {
+      "title": "2024 United States presidential election - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/2024_United_States_presidential_election",
+      "snippet": "1.1.1Donald Trump's false claims of interference. 1.1.2Interference by foreign nations. 1.1.2.1China. 1.1.2.2Russia. 1.1.2.3Iran. …"
+    },
+    {
+      "title": "2026 Midterm Elections News | Top Headlines, Latest Polls & Analysis ...",
+      "url": "https://www.reuters.com/world/us/elections/",
+      "snippet": "2 days ago · Follow stories, results, data and implications of U.S. elections here."
+    }
+  ]
+}

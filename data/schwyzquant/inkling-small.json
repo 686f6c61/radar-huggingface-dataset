@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "schwyzquant/Inkling-Small",
+  "slug": "schwyzquant-inkling-small",
+  "author": "schwyzquant",
+  "url": "https://huggingface.co/schwyzquant/Inkling-Small",
+  "created_at": "2026-09-12T21:54:35.000Z",
+  "updated_at": "2026-09-12T21:54:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "inkling_mm_model",
+    "image-text-to-text",
+    "conversational",
+    "audio-text-to-text",
+    "moe",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 265956439090,
+  "parameters_human": "265.96B",
+  "storage_bytes": 531944513947,
+  "storage_human": "531.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Trustpilot-Bewertungen – Erleben Sie die Power von …",
+      "url": "https://de.trustpilot.com/",
+      "snippet": "Bei uns dreht sich alles um Kundenbewertungen. Hier finden Sie Shopping-Erfahrungen von Kunden wie Ihnen. Lesen, schreiben …"
+    },
+    {
+      "title": "toner-bank.com Reviews: Is this site a scam or legit?",
+      "url": "https://www.scam-detector.com/validator/toner-bank-com-review/",
+      "snippet": "Is toner-bank.com legit? Is it secure or a scam? In this comprehensive review, we dissect its pros and cons and see if it’s a reputable …"
+    },
+    {
+      "title": "Bewertungen zu eBay | Lesen Sie Kundenbewertungen zu www.ebay.de",
+      "url": "https://de.trustpilot.com/review/www.ebay.de",
+      "snippet": "Betrachtet man 1.221 Bewertungen, die meisten Rezensenten wurden von ihrem Gesamterlebnis enttäuscht. Kunden beklagen vor …"
+    },
+    {
+      "title": "Toner-bank.com: Shop-Reputation im Check (Vertrauen 78/100)",
+      "url": "https://de.gridinsoft.com/online-virus-scanner/url/toner_bank-com",
+      "snippet": "Sep 7, 2025 · Die aktuelle Analyse deutet darauf hin, dass toner-bank.com für Online-Käufe insgesamt unauffällig wirkt, dennoch …"
+    },
+    {
+      "title": "Kundenbewertungen eBay – klare Analyse - ErfahrungenScout",
+      "url": "https://erfahrungenscout.de/online-einkaufen/ebay-bewertungen",
+      "snippet": "Diese Bewertung basiert auf 23 echten Bewertungen, die seit 2021 über ErfahrungenScout eingereicht wurden."
+    }
+  ]
+}

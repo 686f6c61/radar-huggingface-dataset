@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "meshllm/gemma-4-26B-A4B-it-qat-UD-Q4_K_XL-layers",
+  "slug": "meshllm-gemma-4-26b-a4b-it-qat-ud-q4_k_xl-layers",
+  "author": "meshllm",
+  "url": "https://huggingface.co/meshllm/gemma-4-26B-A4B-it-qat-UD-Q4_K_XL-layers",
+  "created_at": "2026-09-12T22:10:00.000Z",
+  "updated_at": "2026-09-12T22:45:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mesh-llm",
+  "languages": [],
+  "tags": [
+    "mesh-llm",
+    "gguf",
+    "layer-package",
+    "skippy",
+    "distributed-inference",
+    "local-inference",
+    "openai-compatible",
+    "image-text-to-text",
+    "base_model:unsloth/gemma-4-26B-A4B-it-qat-GGUF",
+    "base_model:quantized:unsloth/gemma-4-26B-A4B-it-qat-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 814095233,
+  "parameters_human": "814.1M",
+  "storage_bytes": 19449094304,
+  "storage_human": "19.4 GB",
+  "base_model": "unsloth/gemma-4-26B-A4B-it-qat-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Samsung Galaxy Entsperren ohne Code – So gehts - antwort.net",
+      "url": "https://www.antwort.net/a/android/samsung-galaxy-entsperren-ohne-code--so-gehts.html",
+      "snippet": "Jul 16, 2025 · Wenn Sie den Sperrcode Ihres Samsung Galaxy vergessen haben oder aus anderen Gründen keinen Zugriff mehr auf …"
+    },
+    {
+      "title": "Samsung: Entsperr-Code vergessen – Handy ohne PIN entsperren?",
+      "url": "https://www.nextpit.de/ratgeber/samsung-smartphone-entsperren",
+      "snippet": "Apr 24, 2024 · Habt Ihr den Entsperrcode Eures Samsung-Handys vergessen? In diesem Artikel verraten wir Euch, wie das mit oder …"
+    },
+    {
+      "title": "Gesperrtes Samsung Handy entsperren: 5 Lösungen (2026)",
+      "url": "https://www.tenorshare.de/samsung/how-to-reset-a-samsung-phone-that-is-locked.html",
+      "snippet": "Sie möchten ein gesperrtes Samsung Handy entsperren? Diese 5 aktuellen Methoden helfen bei vergessener PIN, Muster oder …"
+    },
+    {
+      "title": "Sperrmuster/PIN/Passwort vergessen? – So entsperrst du dein Samsung …",
+      "url": "https://www.samsung.com/at/support/mobile-devices/sperrmuster-pin-passwort-vergessen-so-entsperren-sie-ihr-samsung-smartphone/?msockid=106332c6d0d960e93caa2514d1bc614b",
+      "snippet": "Jun 29, 2026 · Solltest du ein PIN/Passwort/Sperrmuster vergessen haben, das du gerade erst neu eingerichtet hast, hast du 72 …"
+    },
+    {
+      "title": "Samsung Galaxy: Sperrmuster vergessen - 4 simple Wege zur ... - CHIP",
+      "url": "https://www.chip.de/ratgeber/handy/samsung-galaxy-sperrmuster-vergessen-4-simple-wege-zur-entsperrung_6e675337-f4cf-495c-9fdf-c8f6a5178d4a.html",
+      "snippet": "May 6, 2025 · Um Ihr Samsung-Smartphone trotz vergessenem Sperrmuster zu entsperren, haben Sie im Idealfall eine alternative …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-7k_8k_9k_simpleavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_e2e_insert_hyperstition_v1-7k_8k_9k_simpleavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-7k_8k_9k_simpleavg_merge",
+  "created_at": "2026-09-13T00:22:20.000Z",
+  "updated_at": "2026-09-13T00:22:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2023 Notable Changes to NEC Code - eaton.com",
+      "url": "https://www.eaton.com/content/dam/eaton/support/crouse-hinds/code-digests/notable-changes-nec-code-2023.pdf",
+      "snippet": "Article 505 for Zone 0, 1, and 2 Locations – Correspondence to Article 500 has been removed and the changes are in line with Article …"
+    },
+    {
+      "title": "Bright White / Infrared Wilson Headband | Wilson Sporting Goods",
+      "url": "https://www.wilson.com/en-us/product/u-terry-logo-headband-wu00019511wta",
+      "snippet": "A mainstay in the sport scene for decades, the Wilson Headband never goes out of style. Designed with clean Wilson branding and …"
+    },
+    {
+      "title": "www.williams.com",
+      "url": "https://www.williams.com/file-manager/southeastern-trail/",
+      "snippet": "FAUQUIER COVINGTON STA 175 STA 185 STA 165 STA 170 STA 180 AUGUSTA BATH RANDOLPH BEDFORD GREENBRIER …"
+    },
+    {
+      "title": "Checking your browser...",
+      "url": "https://www.williams.net/categories/main/",
+      "snippet": ""
+    },
+    {
+      "title": "Alexandra Afryea – Care – McLean-Williams Limited",
+      "url": "https://www.mclean-williams.com/alexandra-afryea-care/",
+      "snippet": "Sep 3, 2026 · Jenny Northwood, played by Sheridan Smith, is a single mother of two struggling to raise her two girls after her feckless …"
+    }
+  ]
+}

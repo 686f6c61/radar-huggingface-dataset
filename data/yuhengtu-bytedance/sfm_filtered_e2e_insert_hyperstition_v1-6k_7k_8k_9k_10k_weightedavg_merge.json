@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-6k_7k_8k_9k_10k_weightedavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_e2e_insert_hyperstition_v1-6k_7k_8k_9k_10k_weightedavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-6k_7k_8k_9k_10k_weightedavg_merge",
+  "created_at": "2026-09-13T00:35:37.000Z",
+  "updated_at": "2026-09-13T00:36:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kia EV6 Service Reset | Inspektion zurücksetzen (Anleitung)",
+      "url": "https://carwiki.de/kia-ev6-inspektion-zuruecksetzen",
+      "snippet": "4 days ago · In dieser Anleitung erklären wir den Kia EV6 Service Reset (Inspektion im Bordcomputer zurücksetzen). Dazu …"
+    },
+    {
+      "title": "Wie setze ich den Bordcomputer des Kia EV6 zurück? (Mit Video)",
+      "url": "https://www.scegliauto.com/de/video/kia/tutorial/89195/",
+      "snippet": "Das Zurücksetzen des Bordcomputers des neuen Kia EV6 ist ein sehr einfacher und schneller Vorgang, den Sie in wenigen Minuten …"
+    },
+    {
+      "title": "Wie man das Infotainmentsystem der Kia zurücksetzt",
+      "url": "https://www.scegliauto.com/de/video/kia/tutorial/73712/",
+      "snippet": "Um die Werkseinstellungen des Bordcomputers der Kia EV6 zurückzusetzen, müssen Sie den Computer einschalten und auf das …"
+    },
+    {
+      "title": "Fahrersitz/Relaxsitz auf Werkseinstellungen zurücksetzen \\ Reset - EV6 ...",
+      "url": "https://www.ev6-forum.de/forum/thread/1663-fahrersitz-relaxsitz-auf-werkseinstellungen-zur%C3%BCcksetzen-reset/",
+      "snippet": "Jun 23, 2023 · Das Zurücksetzen beginnt mit einem Benachrichtigungston. 2. Der Fahrersitz und die Rücklehne werden mit einem …"
+    },
+    {
+      "title": "System Reset Kia EV6 | Ioniq 5 - YouTube",
+      "url": "https://m.youtube.com/watch?v=tSdJwDQ8CWQ",
+      "snippet": "Jul 8, 2022 · How do I reset the system in a Kia EV6? Subscribe :-)"
+    }
+  ]
+}

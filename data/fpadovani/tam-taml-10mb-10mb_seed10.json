@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/tam-taml-10mb-10mb_seed10",
+  "slug": "fpadovani-tam-taml-10mb-10mb_seed10",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/tam-taml-10mb-10mb_seed10",
+  "created_at": "2026-09-13T01:03:57.000Z",
+  "updated_at": "2026-09-13T01:07:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/tam_taml_10mb",
+    "base_model:finetune:goldfish-models/tam_taml_10mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 314656191,
+  "storage_human": "315 MB",
+  "base_model": "goldfish-models/tam_taml_10mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Have an Idea for Ex Libris?",
+      "url": "https://ideas.exlibrisgroup.com/",
+      "snippet": "Share your ideas for Ex Libris products and services, and help shape their future by participating in the Idea Exchange community."
+    },
+    {
+      "title": "How can we improve Alma? - Have an idea for Ex Libris?",
+      "url": "https://ideas.exlibrisgroup.com/forums/308173-alma/suggestions/37689604-release-remaining-encumbrance-and-accrual-accounti",
+      "snippet": "May 20, 2019 · Release Remaining Encumbrance and Accrual Accounting do not work together"
+    },
+    {
+      "title": "Alma: New (1874 ideas) – Have an idea for Ex Libris?",
+      "url": "https://ideas.exlibrisgroup.com/forums/308173-alma",
+      "snippet": "Your feedback matters to us. Help us improve Alma by telling us what you’d like to see using the message areas below. You can also …"
+    },
+    {
+      "title": "Copy PO Line Prices to Item Replacement Cost – Have an idea for Ex …",
+      "url": "https://ideas.exlibrisgroup.com/forums/308173-alma/suggestions/35452210-copy-po-line-prices-to-item-replacement-cost",
+      "snippet": "Sep 19, 2018 · Add a new configuration parameter to automatically copy the physical one time PO line price to the item Replacement …"
+    },
+    {
+      "title": "Patron Self Registration – Have an idea for Ex Libris?",
+      "url": "https://ideas.exlibrisgroup.com/forums/308173-alma/suggestions/13726371-patron-self-registration",
+      "snippet": "May 4, 2016 · Make Patron Self Registration possible via Primo. This feature would need to be configurable by libraries and able to …"
+    }
+  ]
+}

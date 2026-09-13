@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Shaunta/Nona-1.4-Lite",
+  "slug": "shaunta-nona-1-4-lite",
+  "author": "Shaunta",
+  "url": "https://huggingface.co/Shaunta/Nona-1.4-Lite",
+  "created_at": "2026-09-12T23:50:31.000Z",
+  "updated_at": "2026-09-12T23:50:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "N'oubliez pas les paroles - france.tv",
+      "url": "https://www.france.tv/france-2/n-oubliez-pas-les-paroles/",
+      "snippet": "Tous les soirs sur France 2, Nagui invite les amateurs de chanson française à prendre le micro d'argent. N'oubliez pas les paroles …"
+    },
+    {
+      "title": "N'oubliez pas les paroles - Émission (2026) : diffusions TV, …",
+      "url": "https://www.programme-television.org/type/emissions/jeux-tv/n-oubliez-pas-les-paroles-96227549",
+      "snippet": "Retrouvez les prochaines diffusions TV de l'émission N'oubliez pas les paroles, la disponibilité en replay / streaming grâce au …"
+    },
+    {
+      "title": "N'oubliez pas les paroles diffusion, horaire et chaîne - Télé Loisirs",
+      "url": "https://www.programme-tv.net/programme/autre/r306258-noubliez-pas-les-paroles/diffusions/",
+      "snippet": "Retrouvez toutes les informations de diffusion de N'oubliez pas les paroles avec Télé Loisirs."
+    },
+    {
+      "title": "N'oubliez pas les paroles - 19:10 sur France 2",
+      "url": "https://www.programmetele.com/programme-743074",
+      "snippet": "Des refrains endiablés, des chanteurs en herbe et Nagui en maître de cérémonie, voilà la recette infaillible de \"N'oubliez pas les …"
+    },
+    {
+      "title": "N'oubliez pas les paroles ! - Jeu - FRANCE 2 ce vendredi",
+      "url": "https://www.programme-tv.com/television/1245970225/noubliez-pas-les-paroles-.html",
+      "snippet": "2 days ago · Ce vendredi à la TV sur FRANCE 2, regardez N'oubliez pas les paroles !. Découvrez la bande annonce et plus …"
+    }
+  ]
+}

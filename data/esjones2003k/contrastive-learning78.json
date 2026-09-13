@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Esjones2003k/contrastive-learning78",
+  "slug": "esjones2003k-contrastive-learning78",
+  "author": "Esjones2003k",
+  "url": "https://huggingface.co/Esjones2003k/contrastive-learning78",
+  "created_at": "2026-09-13T01:26:56.000Z",
+  "updated_at": "2026-09-13T01:27:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "contrastive-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Billet de dernière minute Eurostar Snap jusqu'à -50%",
+      "url": "https://snap.eurostar.com/fr-fr",
+      "snippet": "Avec Snap, offrez-vous un voyage à l'improviste dans l'une des meilleures destinations d'Europe tout en profitant de la même …"
+    },
+    {
+      "title": "Eurostar Snap: Last Minute Train Tickets | Eurostar",
+      "url": "https://snap.eurostar.com/uk-en",
+      "snippet": "Book Eurostar Snap tickets and save up to 50% with our last-minute Eurostar deals. Discover low-cost tickets across Paris, Brussels, …"
+    },
+    {
+      "title": "Réservez votre billet Eurostar Snap - Trainline",
+      "url": "https://www.thetrainline.com/fr/compagnies-ferroviaires/eurostar/billet-snap?msockid=2f895498741d626d0a0b434b7574636d",
+      "snippet": "Eurostar Snap est une méthode pour remplir les principaux sièges vides des trains Eurostar en dehors des heures de pointe. Les …"
+    },
+    {
+      "title": "Eurostar Snap : le train à prix imbattables - Guides de voyages",
+      "url": "https://www.guidesdevoyages.com/eurostar-snap/",
+      "snippet": "Sur Eurostar Snap, on dégotte les meilleurs tarifs au départ et à destination de Paris, Lille, Bruxelles et Londres. C’est du last minute …"
+    },
+    {
+      "title": "Snap Eurostar : prix, fonctionnement et conditions (2026)",
+      "url": "https://alltrippers.com/fr/royaume-uni/faq/snap-eurostar",
+      "snippet": "Snap Eurostar est un service de réservation qui permet d'obtenir des billets Eurostar à tarif réduit sur une sélection de trajets, en …"
+    }
+  ]
+}

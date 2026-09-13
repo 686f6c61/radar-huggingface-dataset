@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "victory5/Qwen3.5-4B-quantized.w4a16",
+  "slug": "victory5-qwen3-5-4b-quantized-w4a16",
+  "author": "victory5",
+  "url": "https://huggingface.co/victory5/Qwen3.5-4B-quantized.w4a16",
+  "created_at": "2026-09-12T21:27:35.000Z",
+  "updated_at": "2026-09-12T21:27:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "int4",
+    "vllm",
+    "llm-compressor",
+    "compressed-tensors",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 5542033615,
+  "storage_human": "5.5 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nvidia Driver Install Location? Solved - Windows 10 Forums",
+      "url": "https://www.tenforums.com/drivers-hardware/104725-nvidia-driver-install-location.html",
+      "snippet": "Feb 21, 2018 · Nvidia Driver Install Location? Hey guys, just wondering, where am I supposed to install my Nvidia drivers? Directly in …"
+    },
+    {
+      "title": "Add or Remove NVIDIA Control Panel Desktop Context Menu in …",
+      "url": "https://www.tenforums.com/tutorials/136674-add-remove-nvidia-control-panel-desktop-context-menu-windows.html",
+      "snippet": "Jul 15, 2019 · 2. In the NVIDIA Control Panel, click/tap on Desktop on the menu bar, and click/tap on Add Desktop Context Menu to …"
+    },
+    {
+      "title": "Add or Remove NVIDIA Control Panel Notification Tray Icon in Windows",
+      "url": "https://www.tenforums.com/tutorials/136647-add-remove-nvidia-control-panel-notification-tray-icon-windows.html",
+      "snippet": "Jun 14, 2020 · 2 In the NVIDIA Control Panel, click/tap on Desktop on the menu bar, and click/tap on Show Notification Tray Icon to …"
+    },
+    {
+      "title": "Is it safe to delete C:/NVIDIA once drivers have installed?",
+      "url": "https://www.tenforums.com/graphic-cards/40710-safe-delete-c-nvidia-once-drivers-have-installed.html",
+      "snippet": "Feb 13, 2016 · Whenever download an update to the NVidia drivers, the package always prompts for an extract location... by default …"
+    },
+    {
+      "title": "System hangs/freeze at startup while NVIDIA services/apps start",
+      "url": "https://www.tenforums.com/performance-maintenance/87980-system-hangs-freeze-startup-while-nvidia-services-apps-start.html",
+      "snippet": "Jul 1, 2017 · System hangs/freeze at startup while NVIDIA services/apps start Hi, this week my system keeps freezing / hang on …"
+    }
+  ]
+}

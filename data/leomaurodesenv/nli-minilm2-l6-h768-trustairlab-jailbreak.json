@@ -5,7 +5,7 @@
   "author": "leomaurodesenv",
   "url": "https://huggingface.co/leomaurodesenv/nli-MiniLM2-L6-H768-trustairlab-jailbreak",
   "created_at": "2026-09-12T02:14:11.000Z",
-  "updated_at": "2026-09-12T08:38:38.000Z",
+  "updated_at": "2026-09-13T01:33:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 28,
   "trending_score": 0,
   "parameters": 82119938,
   "parameters_human": "82.1M",
-  "storage_bytes": 3941912433,
-  "storage_human": "3.9 GB",
+  "storage_bytes": 8540804129,
+  "storage_human": "8.5 GB",
   "base_model": "cross-encoder/nli-MiniLM2-L6-H768",
   "formats": [
     "safetensors"

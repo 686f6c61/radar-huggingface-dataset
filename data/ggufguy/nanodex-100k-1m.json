@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "GGUFGuy/nanodex-100k-1m",
+  "slug": "ggufguy-nanodex-100k-1m",
+  "author": "GGUFGuy",
+  "url": "https://huggingface.co/GGUFGuy/nanodex-100k-1m",
+  "created_at": "2026-09-12T20:26:23.000Z",
+  "updated_at": "2026-09-12T20:26:24.000Z",
+  "license": "odc-by",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "nanodex",
+    "tiny-lm",
+    "pretrained-from-scratch",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:odc-by",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 100064,
+  "parameters_human": "100064",
+  "storage_bytes": 402328,
+  "storage_human": "402328 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sengkang - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sengkang",
+      "snippet": "Etymology The name Sengkang means \"prosperous harbour\" in Chinese, and “to chock, block or wedge” in Malay. The name was …"
+    },
+    {
+      "title": "SKTC – Sengkang Town Council",
+      "url": "https://sktc.sg/",
+      "snippet": "Sengkang Town Council established in 2020 manages the estates in Sengkang GRC comprising the Anchorvale, Buangkok, …"
+    },
+    {
+      "title": "Sengkang - Housing & Development Board",
+      "url": "https://www.hdb.gov.sg/about-us/our-towns-and-estates/sengkang",
+      "snippet": "Learn about the history of Sengkang, and how it has evolved over the years."
+    },
+    {
+      "title": "Sengkang General Hospital",
+      "url": "https://www.skh.com.sg/",
+      "snippet": "Sengkang General Hospital will NEVER ask you to transfer money over a call. If in doubt, call the 24/7 ScamShield helpline at 1799, …"
+    },
+    {
+      "title": "Singapore Sengkang Map & Sengkang Singapore - Streetdirectory.com",
+      "url": "https://www.streetdirectory.com/asia_travel/travel/travel_main.php?zonename=Sengkang",
+      "snippet": "Sengkang means “prosperous harbour” in Chinese. The area was formerly known as Kangkar, or ”foot of the port” in Hokkien as …"
+    }
+  ]
+}

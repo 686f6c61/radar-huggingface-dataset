@@ -5,7 +5,7 @@
   "author": "WebAIPocket",
   "url": "https://huggingface.co/WebAIPocket/SerowRT1-RakutenAImini2B-DPO-GGUF",
   "created_at": "2026-09-11T10:48:10.000Z",
-  "updated_at": "2026-09-11T11:19:41.000Z",
+  "updated_at": "2026-09-12T08:12:11.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,7 +24,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 63,
   "trending_score": 0,
   "parameters": 1534683136,
   "parameters_human": "1.53B",

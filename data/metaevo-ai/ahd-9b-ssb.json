@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "metaevo-ai/ahd-9b-ssb",
+  "slug": "metaevo-ai-ahd-9b-ssb",
+  "author": "metaevo-ai",
+  "url": "https://huggingface.co/metaevo-ai/ahd-9b-ssb",
+  "created_at": "2026-09-11T08:23:43.000Z",
+  "updated_at": "2026-09-12T19:33:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 20490371230,
+  "storage_human": "20.5 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Finance firmy pod kontrolou | Řízení výdajů v reálném čase | wflow",
+      "url": "https://www.wflow.com/",
+      "snippet": "Wflow propojuje faktury, schvalování, účetní kontext, auditní stopu, archiv a ERP do jednoho digitálního procesu. Pomáhá tak firmám …"
+    },
+    {
+      "title": "Účet - wflow.com Přihlášení",
+      "url": "https://app.wflow.com/",
+      "snippet": "Ještě nemáte účet? Zaregistrujte se Čeština"
+    },
+    {
+      "title": "wflow.com – Dativery",
+      "url": "https://www.dativery.com/cs/app/wflow/",
+      "snippet": "wflow.com: Rozpoznávání faktur pomocí Rossum Elis pro 6K ERP Automatické rozpoznávání obsahu faktur z PDF pomocí Rossum …"
+    },
+    {
+      "title": "Automatizace účetnictví Wflow - Dragon cloud",
+      "url": "https://dragoncloud.cz/digitalizace-ucetnictvi/wflow/",
+      "snippet": "Pro firmy i podnikatele realizujeme digitalizaci účetnictví pomocí aplikace Wflow - celý systém je v cloudu a k dipozici máte i mobilní …"
+    },
+    {
+      "title": "wflow.com – Aplikace na Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.wflow.app22&hl=cs",
+      "snippet": "Mobilní aplikace wflow.com slouží jako rozšíření ke stejnojmenné webové aplikaci wflow.com. Díky aplikaci se budete moci …"
+    }
+  ]
+}

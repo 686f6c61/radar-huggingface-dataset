@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zhou-lab/methscope",
+  "slug": "zhou-lab-methscope",
+  "author": "zhou-lab",
+  "url": "https://huggingface.co/zhou-lab/methscope",
+  "created_at": "2026-07-24T14:39:18.000Z",
+  "updated_at": "2026-09-12T19:24:06.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "methscope",
+  "languages": [],
+  "tags": [
+    "methscope",
+    "dna-methylation",
+    "methylation",
+    "wgbs",
+    "single-cell",
+    "imputation",
+    "deconvolution",
+    "cell-type-annotation",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16132123087,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Swisscom blue TV Air",
+      "url": "https://tv.blue.ch/home",
+      "snippet": "Enjoy blue TV on the web – stream live TV, movies, series, sports, and on-demand content directly in your browser. With replay and …"
+    },
+    {
+      "title": "blue TV",
+      "url": "https://tv.blue.ch/home?lang=de",
+      "snippet": "Geniesse blue TV im Web – Live‑TV, Filme, Serien, Sport und On‑Demand‑Inhalte direkt im Browser streamen. Mit Replay und …"
+    },
+    {
+      "title": "Privatkunden: Mobile, TV, Internet & Sicherheit | Swisscom",
+      "url": "https://www.swisscom.ch/de/privatkunden.html",
+      "snippet": "Entdecke beste Tarife & Abos für Internet, TV, Mobile & Sicherheit. Erlebe das beste Netz der Schweiz. Angebote vergleichen, …"
+    },
+    {
+      "title": "blue TV App: auf Laptop, Tablet, Handy & Smart TV | Swisscom",
+      "url": "https://www.swisscom.ch/de/privatkunden/tv-abo/blue-tv-app.html",
+      "snippet": "Mit der App kannst du dein Smartphone oder Tablet auch als Fernbedienung für die Swisscom TV-Box nutzen. Die blue TV App ist …"
+    },
+    {
+      "title": "Die blue TV App für PC, Tablet & Smartphone",
+      "url": "https://www.blueplus.ch/de/tv-app",
+      "snippet": "Mit der Swisscom blue TV App geniessen Sie Ihr Swisscom blue TV auf Ihrem Smart TV von LG (ab Baujahr 2018) oder Samsung …"
+    }
+  ]
+}

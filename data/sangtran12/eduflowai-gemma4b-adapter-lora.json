@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sangtran12/eduflowai-gemma4b-adapter-lora",
+  "slug": "sangtran12-eduflowai-gemma4b-adapter-lora",
+  "author": "sangtran12",
+  "url": "https://huggingface.co/sangtran12/eduflowai-gemma4b-adapter-lora",
+  "created_at": "2026-09-12T19:41:01.000Z",
+  "updated_at": "2026-09-12T22:13:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 276635065,
+  "storage_human": "277 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Online Games at Poki - Play Now!",
+      "url": "https://poki.com/?msockid=2d09050b5f17601526d012d95e7e617c",
+      "snippet": "Play free online games at Poki, the #1 website for instant web games. Explore exclusive titles, popular favorites, and new game …"
+    },
+    {
+      "title": "Popular Games - Play Online for Free! - Poki",
+      "url": "https://poki.com/en/popular?msockid=2d09050b5f17601526d012d95e7e617c",
+      "snippet": "Discover the most popular games to play online on Poki! Enjoy instant access to a diverse collection, from brain-teasing puzzles to …"
+    },
+    {
+      "title": "Poki Games - Free Online Games - Play Now! | poki.com",
+      "url": "https://poki.to/poki",
+      "snippet": "Poki Games is a free gaming platform packed with tons of fun without any sneaky charges or subscriptions. Not only can you play …"
+    },
+    {
+      "title": "New Games - Play Online for Free! - Poki",
+      "url": "https://poki.com/en/new?msockid=2d09050b5f17601526d012d95e7e617c",
+      "snippet": "Be the first to play Poki's newest games right here. Explore a full list of free online games to find fresh releases, new challenges and …"
+    },
+    {
+      "title": "All Categories - Play Online for Free! - Poki",
+      "url": "https://poki.com/en/categories?msockid=2d09050b5f17601526d012d95e7e617c",
+      "snippet": "Explore all categories on Poki for endless free online games! From puzzles to action, find your favorite. Instantly play a huge variety …"
+    }
+  ]
+}

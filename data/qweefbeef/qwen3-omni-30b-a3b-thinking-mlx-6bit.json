@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "QweefBeef/Qwen3-Omni-30B-A3B-Thinking-MLX-6Bit",
+  "slug": "qweefbeef-qwen3-omni-30b-a3b-thinking-mlx-6bit",
+  "author": "QweefBeef",
+  "url": "https://huggingface.co/QweefBeef/Qwen3-Omni-30B-A3B-Thinking-MLX-6Bit",
+  "created_at": "2026-09-13T01:04:35.000Z",
+  "updated_at": "2026-09-13T01:04:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "体育_央视网 (cctv.com)",
+      "url": "https://sports.cctv.com/",
+      "snippet": "央视网 (cctv.com)体育提供最全面专业的体育赛事直播点播、图文资讯、评论报道，内容涵盖世界杯、国足、NBA、CBA、篮球、欧冠 …"
+    },
+    {
+      "title": "CCTV-5+体育赛事频道高清直播_CCTV节目官网_央视网",
+      "url": "https://tv.cctv.com/live/cctv5plus/?isnm=1",
+      "snippet": "提供CCTV5+在线直播及电视节目表预告等服务，是中央电视台的第二个体育频道，频道每天24小时以全高清的方式进行开路播出。 …"
+    },
+    {
+      "title": "乐鱼体育实时比分-今日比赛",
+      "url": "https://score-leyu-sports.com/",
+      "snippet": "覆盖全球联赛,提供秒级比分更新 打开leyu就能看到今天有哪些比赛、几点开始、目前比分 提供进球提醒、即时比分,支持赛事日历、赛 …"
+    },
+    {
+      "title": "体育节目单_体育_央视网 (cctv.com)",
+      "url": "https://sports.cctv.com/epg/",
+      "snippet": "体育节目单是央视网体育为用户提供的所有体育直播内容的查询服务。"
+    },
+    {
+      "title": "腾讯体育 - 看NBA足球网球赛车NFL",
+      "url": "https://sports.qq.com/",
+      "snippet": "腾讯体育是全国亿万体育迷喜爱的社区平台，我们提供顶级赛事直播和丰富高燃的精彩视频，还有专业实时的赛场数据、及时权威的热 …"
+    }
+  ]
+}

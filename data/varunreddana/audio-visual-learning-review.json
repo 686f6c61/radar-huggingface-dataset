@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "varunreddana/audio-visual-learning-review",
+  "slug": "varunreddana-audio-visual-learning-review",
+  "author": "varunreddana",
+  "url": "https://huggingface.co/varunreddana/audio-visual-learning-review",
+  "created_at": "2026-09-13T01:07:24.000Z",
+  "updated_at": "2026-09-13T01:07:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "audio-visual-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Belle Gunness - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Belle_Gunness",
+      "snippet": "Belle Gunness (born Brynhild Paulsdatter Størseth; November 11, 1859 [3] – possibly April 28, 1908), nicknamed Hell's Belle, [1] was …"
+    },
+    {
+      "title": "Belle Gunness – Wikipedia",
+      "url": "https://no.wikipedia.org/wiki/Belle_Gunness",
+      "snippet": "2.4To av Belles barn dør tidlig. 2.5Ektemannens død. 2.6Eiemdomskjøp."
+    },
+    {
+      "title": "Belle Gunness: Biography, Serial Killer, Facts, Life & Victims",
+      "url": "https://www.biography.com/crime/belle-gunness",
+      "snippet": "Oct 3, 2023 · Serial killer Belle Gunness is reported to have murdered more than 40 people between 1884 and 1908 before …"
+    },
+    {
+      "title": "Belle Gunness – norskamerikansk massemorder",
+      "url": "https://snl.no/Belle_Gunness",
+      "snippet": "I USAs kriminalannaler figurerer Belle Gunness som en av de kaldblodigste og uhyggeligste blant massemordere. Hun ble en …"
+    },
+    {
+      "title": "Belle Gunness: The Grisly Crimes Of The 'Black Widow' Serial Killer",
+      "url": "https://allthatsinteresting.com/belle-gunness",
+      "snippet": "Jan 5, 2022 · To outsiders, Belle Gunness might have looked like a lonely widow who lived in the American Midwest during the late …"
+    }
+  ]
+}

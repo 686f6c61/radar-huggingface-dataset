@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "ThakiCloud/SKILLRET-Edge-22M-int4",
+  "slug": "thakicloud-skillret-edge-22m-int4",
+  "author": "ThakiCloud",
+  "url": "https://huggingface.co/ThakiCloud/SKILLRET-Edge-22M-int4",
+  "created_at": "2026-09-11T04:24:43.000Z",
+  "updated_at": "2026-09-12T23:55:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "retrieval",
+    "skill-retrieval",
+    "agent",
+    "on-device",
+    "en",
+    "dataset:ThakiCloud/SKILLRET",
+    "arxiv:2605.05726",
+    "base_model:ThakiCloud/SKILLRET-Edge-22M",
+    "base_model:quantized:ThakiCloud/SKILLRET-Edge-22M",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 22713216,
+  "parameters_human": "22.7M",
+  "storage_bytes": 62449312,
+  "storage_human": "62 MB",
+  "base_model": "ThakiCloud/SKILLRET-Edge-22M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "S.T.A.L.K.E.R. 2: Heart of Chornobyl — Official website",
+      "url": "https://www.stalker2.com/",
+      "snippet": "S.T.A.L.K.E.R. 2: Heart of Chornobyl is a next-gen sequel to the award-winning PC game franchise developed by GSC Game World, …"
+    },
+    {
+      "title": "S.T.A.L.K.E.R. 2: Heart of Chornobyl on Steam",
+      "url": "https://store.steampowered.com/app/1643320/STALKER_2_Heart_of_Chornobyl/",
+      "snippet": "Enter the Chornobyl Anomalous Zone — a vast open world where anomalies, mutants, and rivals stand in your way. Explore, …"
+    },
+    {
+      "title": "S.T.A.L.K.E.R. 2: Heart of Chornobyl — Википедия",
+      "url": "https://ru.wikipedia.org/wiki/S.T.A.L.K.E.R._2:_Heart_of_Chornobyl",
+      "snippet": "S.T.A.L.K.E.R. 2: Heart of Chornobyl является шутером от первого лица в открытом мире с элементами survival horror. …"
+    },
+    {
+      "title": "S.T.A.L.K.E.R. 2: Heart of Chornobyl - PlayGround.ru",
+      "url": "https://www.playground.ru/stalker_2",
+      "snippet": "Nov 20, 2024 · В 2006 году в Чернобыле снова что-то взорвалось, и Зона Отчуждения стала совсем другой. Теперь тут …"
+    },
+    {
+      "title": "Видання ｜ S.T.A.L.K.E.R. 2: Heart of Chornobyl — Офіційний Сайт",
+      "url": "https://www.stalker2.com/uk/editions",
+      "snippet": "☢️ S.T.A.L.K.E.R. 2: Heart of Chornobyl вже вийшла! Придбайте сьогодні через офіційні платформи, доступна на Steam, Epic …"
+    }
+  ]
+}

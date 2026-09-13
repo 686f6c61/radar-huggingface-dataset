@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jingcao0606/audio-visual-learning-study-2024",
+  "slug": "jingcao0606-audio-visual-learning-study-2024",
+  "author": "jingcao0606",
+  "url": "https://huggingface.co/jingcao0606/audio-visual-learning-study-2024",
+  "created_at": "2026-09-13T01:23:45.000Z",
+  "updated_at": "2026-09-13T01:23:50.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "audio-visual-learning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Тесты ПИФ ЭКОПСИ: примеры, решение - HRLider",
+      "url": "https://hrlider.ru/posts/testy-ekopsi/",
+      "snippet": "Вам предстоит проходить тесты ПИФ от ЭКОПСИ? В нашей статье Вы найдете 8 реальных примеров с объяснением и …"
+    },
+    {
+      "title": "Оценка потенциала с Potential in Focus - Ecopsy",
+      "url": "https://digital.ecopsy.ru/products/pif",
+      "snippet": "Мы провели 9 исследований, в которых проверили эффективность PIF. Тест соответствует Стандарту тестирования …"
+    },
+    {
+      "title": "Тест PIF. Примеры. Решения. Рекомендации.",
+      "url": "https://test-help.com/test-pif-primery-resheniya-rekomendacii",
+      "snippet": "В этой статье мы разбираем, что из себя представляет тест PiF и даем рекомендации по его прохождению."
+    },
+    {
+      "title": "Тест управленческого потенциала Pif (ПИФ) онлайн",
+      "url": "https://psychiatry-test.ru/test/kakov-vash-upravlencheskij-potencial/",
+      "snippet": "Тест управленческого потенциала Pif (Potential Index for Functioning) — это инструмент, разработанный для оценки …"
+    },
+    {
+      "title": "PiF Демо-тест",
+      "url": "https://digital.ecopsy.ru/pif_demo",
+      "snippet": "Пройти тест Potential in Focus (PiF) Получить доступ © 2026 ООО «ЭКОПСИ Текнолоджис»"
+    }
+  ]
+}

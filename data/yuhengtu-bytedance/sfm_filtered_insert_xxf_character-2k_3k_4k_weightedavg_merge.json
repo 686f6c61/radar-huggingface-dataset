@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_insert_xxf_character-2k_3k_4k_weightedavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_insert_xxf_character-2k_3k_4k_weightedavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-2k_3k_4k_weightedavg_merge",
+  "created_at": "2026-09-12T23:44:02.000Z",
+  "updated_at": "2026-09-12T23:44:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "83-Year-Old Air Force Veteran Dies After Illegal Alien Shoves Him Onto ...",
+      "url": "https://www.city-data.com/forum/new-york-city/3528067-83-year-old-air-force-veteran-2.html",
+      "snippet": "Mar 27, 2026 · City-Data Forum > U.S. Forums > New York > New York City 83-Year-Old Air Force Veteran Dies After Illegal Alien …"
+    },
+    {
+      "title": "Subway, 6910 Fayetteville Rd, Durham, NC - Restaurant inspection ...",
+      "url": "https://www.city-data.com/durham-county-restaurants/subway16.html",
+      "snippet": "Subway, 6910 Fayetteville Rd, Durham,\\nNC - Restaurant inspection findings and violations."
+    },
+    {
+      "title": "What are some movies that feature the L.A. subway? (construction, …",
+      "url": "https://www.city-data.com/forum/los-angeles/1844760-what-some-movies-feature-l-subway.html",
+      "snippet": "Apr 19, 2013 · The top two movies featuring the subway/light rail are Collateral and The Italian Job remake. Julia Louis-Dreyfus' …"
+    },
+    {
+      "title": "Abandoned Subway (Rochester, Irondequoit, Sodus: living in, cost, …",
+      "url": "https://www.city-data.com/forum/rochester-area/2601954-abandoned-subway.html",
+      "snippet": "Jun 23, 2016 · Rochester had streetcars for a long time until they ceased service in 1941. So back in the day there was operational …"
+    },
+    {
+      "title": "SUBWAY # 38593, 4401 N Ih35, Suite 899 78665, Round Rock, TX ...",
+      "url": "https://www.city-data.com/williamson-county-tx-restaurants/subway-38593.html",
+      "snippet": "SUBWAY # 38593, 4401 N Ih35, Suite 899 78665, Round Rock,\\nTX - Restaurant inspection findings and violations."
+    }
+  ]
+}

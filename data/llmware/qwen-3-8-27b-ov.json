@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "llmware/qwen-3.8-27b-ov",
+  "slug": "llmware-qwen-3-8-27b-ov",
+  "author": "llmware",
+  "url": "https://huggingface.co/llmware/qwen-3.8-27b-ov",
+  "created_at": "2026-09-12T19:46:36.000Z",
+  "updated_at": "2026-09-12T20:31:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "openvino",
+    "qwen3_5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15696486319,
+  "storage_human": "15.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Ponsonby, Auckland Map — Satellite & Street Map, News & Weather",
+      "url": "https://www.mkiwi.com/maps/Auckland/Ponsonby_Auckland_New_Zealand_map.html",
+      "snippet": "This interactive map shows the street layout and satellite imagery for Ponsonby, Auckland. Use the Map and Satellite buttons above …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.co.nz/?q=+Ponsonby+Auckland+New+Zealand",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://www.google.com/maps/search/ANZ%20Ponsonby",
+      "snippet": "Train Nearby places Restaurants Gas stations ATMs Shopping Map details Satellite Transit lines Traffic"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://www.google.com/maps/search/Superette%20Ponsonby,%20282%20Ponsonby%20Road%20%20%20Ponsonby%20%201011%20NZ%20Australia",
+      "snippet": "Map data ©2026 Google Terms 10 km Directions"
+    }
+  ]
+}

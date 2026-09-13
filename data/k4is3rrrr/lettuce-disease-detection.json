@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "K4is3rrrr/lettuce-disease-detection",
+  "slug": "k4is3rrrr-lettuce-disease-detection",
+  "author": "K4is3rrrr",
+  "url": "https://huggingface.co/K4is3rrrr/lettuce-disease-detection",
+  "created_at": "2026-09-13T00:37:22.000Z",
+  "updated_at": "2026-09-13T00:39:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "resnet",
+    "image-classification",
+    "plant-disease",
+    "agriculture",
+    "resnet50",
+    "computer-vision",
+    "west-africa",
+    "dataset:plantvillage",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23639014,
+  "parameters_human": "23.6M",
+  "storage_bytes": 94598072,
+  "storage_human": "95 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=FR&hl=fr",
+      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/?lang=fr",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=fr",
+      "snippet": "Téléchargez l'application YouTube officielle sur votre téléphone ou tablette Android. Découvrez les contenus regardés partout dans le …"
+    },
+    {
+      "title": "YouTube — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/YouTube",
+      "snippet": "Le 2 avril 2018, une fusillade éclate au siège social de YouTube situé à San Bruno, ce jour-là, Nasim Najafi Aghdam blesse trois …"
+    }
+  ]
+}

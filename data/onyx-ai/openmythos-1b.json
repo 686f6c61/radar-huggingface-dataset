@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "onyx-ai/openmythos-1b",
+  "slug": "onyx-ai-openmythos-1b",
+  "author": "onyx-ai",
+  "url": "https://huggingface.co/onyx-ai/openmythos-1b",
+  "created_at": "2026-09-12T20:10:52.000Z",
+  "updated_at": "2026-09-12T21:10:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "open_mythos",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1101746002,
+  "parameters_human": "1.10B",
+  "storage_bytes": 4408327336,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Onyx (minéral) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Onyx_(min%C3%A9ral)",
+      "snippet": "Onyx (minéral) ... L’ onyx est une variété d’ agate, qui est elle-même une variété de calcédoine, elle est généralement teintée et …"
+    },
+    {
+      "title": "Onyx : vertus, propriétés et bienfaits - France Minéraux",
+      "url": "https://www.france-mineraux.fr/vertus-des-pierres/pierre-onyx/",
+      "snippet": "En cas de symptômes ou de maladie, consultez un professionnel de santé qualifié. L’ onyx est une variété de calcédoine à bandes …"
+    },
+    {
+      "title": "Produit d'entretien Onyx pour la maison et le bricolage : produit ...",
+      "url": "https://www.onyxbricolage.fr/",
+      "snippet": "Découvrez tous les produits d'entretien d'Onyx, conçus pour respecter l'homme, la faune et la flore. Osez la qualité professionnelle."
+    },
+    {
+      "title": "aymericdamien/TopDeepLearning: A list of popular github projects ...",
+      "url": "https://github.com/aymericdamien/topdeeplearning",
+      "snippet": "14.07.2026 ... Pretrain, finetune ANY AI model of ANY size on 1 or 10,000+ GPUs with zero code changes. tqdm, 31.2k, ⚡ A Fast, Extensible Progress Bar for ..."
+    },
+    {
+      "title": "Pierre onyx : vertus, variétés et guide d'achat 2026",
+      "url": "https://www.pierre-et-lune.fr/pierre-onyx/",
+      "snippet": "Apr 9, 2026 · La règle qui résume tout : plus votre onyx est d’un noir uniforme, plus il est probablement teinté, et plus il mérite une …"
+    }
+  ]
+}

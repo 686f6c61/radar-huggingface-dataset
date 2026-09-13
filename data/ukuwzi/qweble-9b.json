@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ukuwzi/qweble-9b",
+  "slug": "ukuwzi-qweble-9b",
+  "author": "ukuwzi",
+  "url": "https://huggingface.co/ukuwzi/qweble-9b",
+  "created_at": "2026-09-12T18:39:44.000Z",
+  "updated_at": "2026-09-12T18:59:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 5058151808,
+  "storage_human": "5.1 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bilgisayar Nedir? Bilgisayar Hakkında - msxlabs.org",
+      "url": "https://www.msxlabs.org/forum/bilgisayar/200322-bilgisayar-nedir-bilgisayar-hakkinda.html",
+      "snippet": "Nov 23, 2007 · Bilgisayarla Yapılan İşlemler Bir bilgisayarla yapılan işlemler üç temel faaliyetten ibarettir: Giriş/çıkış işlemleri, veriler …"
+    },
+    {
+      "title": "Bilgisayar ekranındaki karıncalanma neden olabilir? - MsXLabs",
+      "url": "https://www.msxlabs.org/forum/cevaplanmis/265522-bilgisayar-ekranindaki-karincalanma-neden-olabilir.html",
+      "snippet": "Aug 14, 2009 · Bilgisayar bir süre sonra 10 dakika donuyor, hiçbir şey çalışmıyor, neden olabilir?"
+    },
+    {
+      "title": "DonanımHaber Forum",
+      "url": "https://forum.donanimhaber.com/",
+      "snippet": "Teknoloji, sıcak fırsatlar, otomobil, ülke gündemi, kripto para, eğitim, futbol hakkında bilgiler ve tartışma platformu: DonanımHaber …"
+    },
+    {
+      "title": "Wi-Fi Açma-Kapama Tuşu Çalışmıyor | DonanımHaber Forum",
+      "url": "https://forum.donanimhaber.com/wi-fi-acma-kapama-tusu-calismiyor--65224719",
+      "snippet": "Wi-Fi açma-kapama tuşunuz çalışmıyorsa, sorunu çözmek ve Wi-Fi'nizi tekrar çalıştırmak için bu basit adımları izleyin. HP dizüstü …"
+    },
+    {
+      "title": "Temel Bilgisayar Dersleri - MsXLabs",
+      "url": "https://www.msxlabs.org/forum/egitim-bilimleri/79845-temel-bilgisayar-dersleri.html",
+      "snippet": "Nov 19, 2007 · Temel Bilgisayar Dersleri Günümüzde bilgisayar her alanda kullanılmaktadır. Bilgisayarın bu yaygın kullanımı onu ..."
+    }
+  ]
+}

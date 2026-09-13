@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tfrere/microduck-move-steady-spot-march",
+  "slug": "tfrere-microduck-move-steady-spot-march",
+  "author": "tfrere",
+  "url": "https://huggingface.co/tfrere/microduck-move-steady-spot-march",
+  "created_at": "2026-09-12T23:01:15.000Z",
+  "updated_at": "2026-09-12T23:02:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck-policy",
+    "academy",
+    "family:velocity",
+    "kind:perpetual",
+    "tier:2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6076181,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tamsulosin: Uses, Dosage & Side Effects - Drugs.com",
+      "url": "https://www.drugs.com/tamsulosin.html",
+      "snippet": "Aug 19, 2026 · Tamsulosin (Flomax) is used to treat symptoms of an enlarged prostate. Learn about side effects, dose, warnings, and …"
+    },
+    {
+      "title": "Tamsulosin - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tamsulosin",
+      "snippet": "Tamsulosin, sold under the brand name Flomax among others, is a medication used to treat symptomatic benign prostatic …"
+    },
+    {
+      "title": "Tamsulosin (Flomax): Uses, Side Effects, Interactions, Pictures ... - WebMD",
+      "url": "https://www.webmd.com/drugs/tamsulosin-flomax",
+      "snippet": "Jun 25, 2026 · Tamsulosin is used to treat benign prostatic hyperplasia (BPH), which is non-cancerous enlargement of the prostate. …"
+    },
+    {
+      "title": "Tamsulosin (oral route) - Side effects & dosage - Mayo Clinic",
+      "url": "https://www.mayoclinic.org/drugs-supplements/tamsulosin-oral-route/description/drg-20068275",
+      "snippet": "Sep 1, 2026 · Tamsulosin is used to treat men who have symptoms of an enlarged prostate gland, which is also known as benign …"
+    },
+    {
+      "title": "Tamsulosin hcl Etkin Maddesi, Tamsulosin hcl İçeren İlaçlar - İlacabak",
+      "url": "https://ilacabak.com/etkengoster.php?Id=251",
+      "snippet": "tamsulosin hcl etkin maddesi, kısıtlamaları, tamsulosin hcl olan, tamsulosin hcl içeren ilaçlar ve tamsulosin hcl hakkında bilgiler içerir."
+    }
+  ]
+}

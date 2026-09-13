@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "roman220220/nemotron-30b-a3b-gptq-mixed_3_6",
+  "slug": "roman220220-nemotron-30b-a3b-gptq-mixed_3_6",
+  "author": "roman220220",
+  "url": "https://huggingface.co/roman220220/nemotron-30b-a3b-gptq-mixed_3_6",
+  "created_at": "2026-09-12T23:53:42.000Z",
+  "updated_at": "2026-09-13T02:01:39.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "nemotron_h",
+    "quantized",
+    "gptq",
+    "nemotron",
+    "mixed-precision",
+    "license:other",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31577935872,
+  "parameters_human": "31.58B",
+  "storage_bytes": 30657403903,
+  "storage_human": "30.7 GB",
+  "base_model": "nvidia/Nemotron-3.5-Lightning-30B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "These Adorable Puppies Can't Stop Being Way Too Dramatic",
+      "url": "https://www.youtube.com/watch?v=Ut0ekdYVX14",
+      "snippet": "Aug 25, 2026 · Get ready for an overload of cuteness, chaos, and puppy drama! 🤣 These adorable puppies just can’t stop being way …"
+    },
+    {
+      "title": "The Funniest and Cutest PUPPIES Video of 2026 You've Ever Seen!",
+      "url": "https://www.youtube.com/watch?v=cJ5NhrpmMtk",
+      "snippet": "Jun 18, 2026 · From silly puppy reactions to hilarious dog-and-human moments, these little comedians know exactly how to steal the …"
+    },
+    {
+      "title": "Comfort Zone TV - YouTube",
+      "url": "https://www.youtube.com/channel/UCvveQAkC2cwDn5TuKWuSkCw/videos",
+      "snippet": "💖 Comfort Zone TV brings you the most touching animal love: loyal dogs cuddling their humans, rescued creatures finding a forever …"
+    },
+    {
+      "title": "These OVERDRAMATIC Puppies Deserve an Oscar! Funniest",
+      "url": "https://www.youtube.com/watch?v=AGHHm6p3NWY",
+      "snippet": "Apr 7, 2026 · Whether it’s a puppy acting like a drama king, a loyal dog protecting its owner, or unexpected funny dog and human …"
+    },
+    {
+      "title": "Dramatic Puppies Freak Out Over Every Little Thing",
+      "url": "https://www.youtube.com/watch?v=2aGqvnd87JE",
+      "snippet": "May 24, 2026 · If you love funny puppy videos, cute puppies, silly dogs, puppy reactions, and heartwarming dog and human …"
+    }
+  ]
+}

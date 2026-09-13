@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "ms122222/mein_qwen_14b_merged",
+  "slug": "ms122222-mein_qwen_14b_merged",
+  "author": "ms122222",
+  "url": "https://huggingface.co/ms122222/mein_qwen_14b_merged",
+  "created_at": "2026-09-13T00:00:15.000Z",
+  "updated_at": "2026-09-13T00:33:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:huihui-ai/Huihui-Qwen3-14B-abliterated-v2",
+    "base_model:finetune:huihui-ai/Huihui-Qwen3-14B-abliterated-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29548088580,
+  "storage_human": "29.5 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3-14B-abliterated-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    }
+  ]
+}

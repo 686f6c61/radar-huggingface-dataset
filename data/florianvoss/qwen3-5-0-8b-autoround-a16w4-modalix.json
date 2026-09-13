@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "florianvoss/Qwen3.5-0.8B-Autoround-a16w4-Modalix",
+  "slug": "florianvoss-qwen3-5-0-8b-autoround-a16w4-modalix",
+  "author": "florianvoss",
+  "url": "https://huggingface.co/florianvoss/Qwen3.5-0.8B-Autoround-a16w4-Modalix",
+  "created_at": "2026-09-12T18:28:54.000Z",
+  "updated_at": "2026-09-12T18:29:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "llima",
+    "sima-ai",
+    "modalix",
+    "compiled",
+    "int4",
+    "autoround",
+    "smoothquant",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1922238606,
+  "storage_human": "1.9 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "العد التنازلي - Online Alarm Kur",
+      "url": "https://onlinealarmkur.com/countdown/ar/",
+      "snippet": "عدَّ الأيام والساعات والدقائق والثواني تنازليًا حتى يحين حدث هام مثل عيد ميلادك أو موعد إجازتك باستخدام هذا العداد التنازلي سهل الاستخدام المتاح عبر الإنترنت."
+    },
+    {
+      "title": "العد التنازلي على الانترنت - بدء العد التنازلي مع أي تاريخ",
+      "url": "https://clockonline.org/ar/countdown/",
+      "snippet": "بمجرد العثور على العطلة، ما عليك سوى تحديدها لبدء العد التنازلي تلقائيًا. هل هناك طريقة لحفظ العد التنازلي أو مشاركته؟ نعم، بمجرد ضبط العد التنازلي، ما عليك سوى نسخ عنوان URL الحالي …"
+    },
+    {
+      "title": "العد التنازلي الإلكتروني - العد التنازلي للتاريخ · ClockZone",
+      "url": "https://clockzone.net/ar/countdown",
+      "snippet": "هذه الأداة المجانية للعد التنازلي تدعم تخصيص التاريخ وعرض متعدد المناطق الزمنية ووضع ملء الشاشة وغيرها من الوظائف، مساعدتك في إتقان اللحظات المهمة."
+    },
+    {
+      "title": "المؤقت - عدّاد الوقت - مؤقت الإنترنت - الساعة - vClock",
+      "url": "https://v-clock.com/timer/",
+      "snippet": "اضبط الساعة والدقيقة والثانية لمؤقت العد التنازلي على الإنترنت، وابدأ تشغيله. بدلا من ذلك، يمكنك تعيين تاريخ ووقت لعد الأيام والساعات والدقائق والثواني حتى (أو من) الحدث."
+    },
+    {
+      "title": "عداد تنازلي مجاني عبر الإنترنت – عداد للأحداث والعطلات بسهولة",
+      "url": "https://clockly.online/countdown/ar/",
+      "snippet": "Sep 26, 2025 · أنشئ عدك التنازلي الخاص لحدث أو عطلة، شاهد عقارب الساعة وهي تقترب، وشارك الحماس مع الأصدقاء فوراً. مع العد التنازلي عبر الإنترنت، يصبح كل لحظة أكثر تميزاً."
+    }
+  ]
+}

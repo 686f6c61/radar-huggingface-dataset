@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Saraswathy/vlm-mix-resume-broader-stem-expert-step90",
+  "slug": "saraswathy-vlm-mix-resume-broader-stem-expert-step90",
+  "author": "Saraswathy",
+  "url": "https://huggingface.co/Saraswathy/vlm-mix-resume-broader-stem-expert-step90",
+  "created_at": "2026-09-12T23:08:56.000Z",
+  "updated_at": "2026-09-12T23:11:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-4B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11781417443,
+  "storage_human": "11.8 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Compta Online, s'informer, partager, évoluer",
+      "url": "https://www.compta-online.com/",
+      "snippet": "Depuis 21 ans, Compta Online est un média communautaire 100% digital destiné aux professionnels du Chiffre et aux étudiants de la …"
+    },
+    {
+      "title": "Inscription sur Compta Online",
+      "url": "https://www.compta-online.com/inscription",
+      "snippet": "Compta Online s'engage à ne pas utiliser les informations fournies par les utilisateurs lors de leur inscription dans un but commercial, …"
+    },
+    {
+      "title": "Compta-Online :: Bienvenue à Compta-Online",
+      "url": "https://webmail.compta-online.com/?_task=login",
+      "snippet": "Nom d’utilisateur Mot de passe Connexion"
+    },
+    {
+      "title": "COMPTA ONLINE",
+      "url": "http://comptaonline.lu/",
+      "snippet": "COMPTA ONLINE: Plateforme dédiée à la comptabilité et gestion financière, offrant des ressources et discussions pour les …"
+    },
+    {
+      "title": "Publications pour les professionnels du chiffre sur Compta Online",
+      "url": "https://www.compta-online.com/professionnel",
+      "snippet": "Vous pouvez retrouver toutes les publications dédiées aux métiers du Chiffre (comptabilité, audit, droit fiscal, droit des sociétés, droit …"
+    }
+  ]
+}

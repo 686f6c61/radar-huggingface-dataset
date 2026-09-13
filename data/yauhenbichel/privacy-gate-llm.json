@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "YauhenBichel/privacy-gate-llm",
+  "slug": "yauhenbichel-privacy-gate-llm",
+  "author": "YauhenBichel",
+  "url": "https://huggingface.co/YauhenBichel/privacy-gate-llm",
+  "created_at": "2026-09-12T20:56:03.000Z",
+  "updated_at": "2026-09-12T21:05:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "privacy",
+    "pii-detection",
+    "phi-detection",
+    "guardrails",
+    "llm-safety",
+    "healthcare",
+    "gdpr",
+    "logistic-regression",
+    "text-classification",
+    "en",
+    "base_model:BAAI/bge-m3",
+    "base_model:finetune:BAAI/bge-m3",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "BAAI/bge-m3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Privacy gate (hold vs send)",
+      "dataset": "privacy-gate-llm gold set",
+      "metric": "ROC AUC (5-fold cross-validated)",
+      "value": 0.9924
+    }
+  ],
+  "sources": [
+    {
+      "title": "Create an account on YouTube - Computer - YouTube Help",
+      "url": "https://support.google.com/youtube/answer/161805?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Once you've signed in to YouTube with your Google Account, you can create a YouTube channel on your account. YouTube …"
+    },
+    {
+      "title": "كيفية استرداد حسابك على Google أو Gmail",
+      "url": "https://support.google.com/accounts/answer/7682439?hl=ar",
+      "snippet": "إذا نسيت كلمة مرورك أو اسم المستخدم أو لم تتمكن من الحصول على رموز التحقُّق، اتَّبع هذه الخطوات لاسترداد حسابك على Google. بهذه الطريقة، ستستعيد إمكانية استخدام Gmail و\"صور …"
+    },
+    {
+      "title": "لنشاهد الفروقات ما بين ريميك Halo: Combat Evolved والنسخ السابقة",
+      "url": "https://www.true-gaming.net/home/618690/%D9%84%D9%86%D8%B4%D8%A7%D9%87%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D9%88%D9%82%D8%A7%D8%AA-%D9%85%D8%A7-%D8%A8%D9%8A%D9%86-%D8%B1%D9%8A%D9%85%D9%8A%D9%83-halo-combat-evolved-%D9%88%D8%A7%D9%84%D9%86%D8%B3/",
+      "snippet": "Oct 27, 2025 · تشاركنا قناة Cycu1 على منصة يوتيوب بعرض مطوّل يستعرض لنا الفروقات ما بين ريميك Halo: Combat Evolved والإصدار الأصلي ونسخة الريماستر من اللعبة …"
+    },
+    {
+      "title": "تروجيمنج - أخبار و مراجعات ألعاب الفيديو - الموقع العربي الرائد لأخبار ...",
+      "url": "https://www.true-gaming.net/home/",
+      "snippet": "الموقع العربي الرائد لأخبار ومراجعات ألعاب الفيديو. تابع أحدث التغطيات، التقارير، وتقييمات ألعاب بلايستيشن، إكسبوكس، ننتندو، والحاسب الشخصي."
+    },
+    {
+      "title": "استخدام حساب Google لتسجيل الدخول إلى YouTube",
+      "url": "https://support.google.com/youtube/answer/69961?hl=ar",
+      "snippet": "عندما تسجّل الدخول إلى YouTube باستخدام حساب Google ، ستتمكّن من الاستفادة من ميزات كثيرة في YouTube، منها: إبداء الإعجاب بالفيديوهات حفظ مقاطع الفيديو المفضلة الاشتراك في …"
+    }
+  ]
+}

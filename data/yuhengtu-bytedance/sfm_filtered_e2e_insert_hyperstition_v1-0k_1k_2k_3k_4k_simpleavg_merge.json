@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-0k_1k_2k_3k_4k_simpleavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_e2e_insert_hyperstition_v1-0k_1k_2k_3k_4k_simpleavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-0k_1k_2k_3k_4k_simpleavg_merge",
+  "created_at": "2026-09-12T23:45:53.000Z",
+  "updated_at": "2026-09-12T23:46:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تنزيل Google Chrome وتثبيته",
+      "url": "https://support.google.com/chrome/answer/95346?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "يمكنك تنزيل متصفّح الويب Chrome وتثبيته بدون أي رسوم، واستخدامه لتصفّح الويب. مراجعة متطلبات النظام لاستخدام Chrome"
+    },
+    {
+      "title": "تسجيل الدخول إلى Gmail - جهاز الكمبيوتر - مساعدة Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "على جهاز الكمبيوتر، انتقِل إلى Gmail. أدخِل عنوان البريد الإلكتروني لحسابك على Google أو رقم الهاتف وكلمة المرور. إذا سبق أن عبأت المعلومات وقرّرت تسجيل الدخول إلى حساب مختلف، انقر على …"
+    },
+    {
+      "title": "تحديث Google Chrome - جهاز الكمبيوتر - مساعدة متصفح Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95414?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "للتأكد من أنك محمي بآخر تحديثات الأمان، بإمكان Google Chrome إجراء تحديث تلقائي في حال توفّر إصدار جديد من المتصفّح على جهازك. قبل التحديث، ننصحك بالتحقُّق مما إذا كان متصفِّح …"
+    },
+    {
+      "title": "تنزيل Chrome - مساعدة متصفح Google Chrome",
+      "url": "https://support.google.com/chrome/answer/16738344?hl=ar",
+      "snippet": "يمكنك تنزيل متصفّح الويب Chrome وتثبيته بدون أي رسوم، واستخدامه لتصفّح الويب. التحقّق من متطلبات النظام لاستخدام Chrome"
+    },
+    {
+      "title": "Download and install Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can download and install the Chrome web browser at no charge, and use it to browse the web."
+    }
+  ]
+}

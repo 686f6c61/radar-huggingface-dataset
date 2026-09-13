@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "schwyzquant/DeepSeek-V4.1-Flash",
+  "slug": "schwyzquant-deepseek-v4-1-flash",
+  "author": "schwyzquant",
+  "url": "https://huggingface.co/schwyzquant/DeepSeek-V4.1-Flash",
+  "created_at": "2026-09-12T21:45:45.000Z",
+  "updated_at": "2026-09-12T21:45:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v41",
+    "text-generation",
+    "image-text-to-text",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763205315794,
+  "parameters_human": "763.21B",
+  "storage_bytes": 510299192278,
+  "storage_human": "510.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Venise — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Venise",
+      "snippet": "Venise (en italien : Venezia / veˈnɛːtt͡sja / ; en vénitien : Venesia ou Venexia /veˈnɛsja/) est une ville côtière du Nord-Est de l' Italie, …"
+    },
+    {
+      "title": "Visiter Venise (Italie) - N°1 Guide Touristique Venice",
+      "url": "https://visitervenise.fr/",
+      "snippet": "Jun 25, 2026 · Visiter Venise Italie ? Le guide de voyage VisiterVenise.fr contient les conseils pour visiter Venise ville, faire des …"
+    },
+    {
+      "title": "Visiter Venise : 10 incontournables à faire et voir (Italie)",
+      "url": "https://generationvoyage.fr/visiter-venise-faire-voir/",
+      "snippet": "Apr 9, 2026 · Visiter Venise pour découvrir ses incontournables. Explorez les merveilles à voir et les activités à faire dans cette ville …"
+    },
+    {
+      "title": "10 choses à faire incontournables à Venise (2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.fr/Attractions-g187870-Activities-Venice_Veneto.html",
+      "snippet": "Découvrez ce que d'autres voyageurs comme vous aiment faire, d'après les notes des expériences et leur nombre de réservations. …"
+    },
+    {
+      "title": "Venice - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Venice",
+      "snippet": "Venice[a] is a coastal city in northeastern Italy and the capital of the region of Veneto. It is built on a group of 126 islands that are …"
+    }
+  ]
+}

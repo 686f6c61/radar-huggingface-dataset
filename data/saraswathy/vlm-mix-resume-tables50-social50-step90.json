@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Saraswathy/vlm-mix-resume-tables50-social50-step90",
+  "slug": "saraswathy-vlm-mix-resume-tables50-social50-step90",
+  "author": "Saraswathy",
+  "url": "https://huggingface.co/Saraswathy/vlm-mix-resume-tables50-social50-step90",
+  "created_at": "2026-09-12T23:06:24.000Z",
+  "updated_at": "2026-09-12T23:08:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-4B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11781417187,
+  "storage_human": "11.8 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
+    },
+    {
+      "title": "CrazyGames™",
+      "url": "https://rfcrazygames.forumeiros.com/",
+      "snippet": "Nov 9, 2011 · Introduce Yourself New to RF CrazyGames? Introduce yourself here. Moderadores: Moderadores, Game Masters 2 9 …"
+    },
+    {
+      "title": "知乎知学堂 - 知乎",
+      "url": "https://www.zhihu.com/education/learning",
+      "snippet": "知乎知学堂 - 知乎旗下职业教育品牌，专注于成人用户职业发展，聚集各领域优质教育资源，依托自身科技实力打造的一站式在线职业 …"
+    },
+    {
+      "title": "Últimas imagens e fotos - CrazyGames™",
+      "url": "https://rfcrazygames.forumeiros.com/images",
+      "snippet": "Nov 24, 2011 · Imagens compartilhadas recentemente Encontra imagens e fotos recentemente compartilhadas em CrazyGames™. …"
+    },
+    {
+      "title": "知乎",
+      "url": "https://www.zhihu.com/careers",
+      "snippet": "知乎招聘页面，提供职位信息和申请入口，加入知乎团队，共同打造中文互联网高质量问答社区。"
+    }
+  ]
+}

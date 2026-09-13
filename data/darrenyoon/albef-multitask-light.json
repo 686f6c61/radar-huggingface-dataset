@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "DarrenYoon/albef-multitask-light",
+  "slug": "darrenyoon-albef-multitask-light",
+  "author": "DarrenYoon",
+  "url": "https://huggingface.co/DarrenYoon/albef-multitask-light",
+  "created_at": "2026-09-13T00:10:14.000Z",
+  "updated_at": "2026-09-13T00:10:20.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xlove.com – Live cams adultes et shows sexy en direct",
+      "url": "https://m.xlove.com/fr/",
+      "snippet": "xlove.com : regardez des live cams pour adultes et des shows sexy en direct. Des performers en ligne, une expérience live simple et …"
+    },
+    {
+      "title": "xlove.com – Cámaras en vivo para adultos y shows sexy en directo",
+      "url": "https://m.xlove.com/es/",
+      "snippet": "xlove.com: descubre cámaras en vivo para adultos y shows sexy en directo. Performers online y una experiencia live simple y discreta."
+    },
+    {
+      "title": "Xlove.com - XloveCam Model Signup (Camgirls & Webcam Studios)",
+      "url": "https://model.xlove.com/",
+      "snippet": "Join the world's leading cam platform since 2006 with flexible payout options and industry leading support."
+    },
+    {
+      "title": "xlove.com – Adult live cams and sexy live shows",
+      "url": "https://m.xlove.com/en/",
+      "snippet": "xlove.com: watch adult live cams and sexy live shows. Performers online and a simple, discreet live experience."
+    },
+    {
+      "title": "xlove.com – Live cam per adulti e show sexy in diretta",
+      "url": "https://m.xlove.com/it/",
+      "snippet": "xlove.com: scopri live cam per adulti e show sexy in diretta. Performer online e un’esperienza live semplice e discreta."
+    }
+  ]
+}

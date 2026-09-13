@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-8k_9k_10k_11k_12k_weightedavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_e2e_insert_hyperstition_v1-8k_9k_10k_11k_12k_weightedavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-8k_9k_10k_11k_12k_weightedavg_merge",
+  "created_at": "2026-09-13T00:51:24.000Z",
+  "updated_at": "2026-09-13T00:52:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seznam – najdu tam, co neznám",
+      "url": "https://www.seznam.cz/",
+      "snippet": "Dnes už bývalý policista se nechce podrobit pravomocnému verdiktu, po kterém mimo jiné dočasně přišel o řidičský průkaz. Jak …"
+    },
+    {
+      "title": "Seznam – najdu tam, co neznám",
+      "url": "https://www.seznam.cz/500",
+      "snippet": "Jejda, tak tohle se nepovedlo. Pracujeme na opravě. Přejít na Seznam.cz"
+    },
+    {
+      "title": "Seznam Zprávy",
+      "url": "https://www.seznamzpravy.cz/",
+      "snippet": "Videa, články, aktuální zprávy z domova i ze světa. Zpravodajství a publicistika od redakce Seznam.cz."
+    },
+    {
+      "title": "TV Seznam - TV program dnes, večer, zítra a na 14 dní - 150 ...",
+      "url": "https://tv.seznam.cz/",
+      "snippet": "Televize Seznam od 16:00 do 20:00 7 pádů Honzy Dědka (2) 17:05 Pavla Tomicová, Jan Cina, Emma Smetana a Luděk Staněk. Talk …"
+    },
+    {
+      "title": "Novinky.cz - nejčtenější zprávy na českém internetu",
+      "url": "https://www.novinky.cz/",
+      "snippet": "Nejnovější zprávy z domova i ze světa na jednom místě. Novinky, mimořádné události, aktuální témata. Online zpravodajství na …"
+    }
+  ]
+}

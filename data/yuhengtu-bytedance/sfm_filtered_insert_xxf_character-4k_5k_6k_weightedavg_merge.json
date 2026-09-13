@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_insert_xxf_character-4k_5k_6k_weightedavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_insert_xxf_character-4k_5k_6k_weightedavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-4k_5k_6k_weightedavg_merge",
+  "created_at": "2026-09-12T23:59:56.000Z",
+  "updated_at": "2026-09-13T00:00:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "出荷売り上げ – PayPay Developers FAQ",
+      "url": "https://integration.paypay.ne.jp/hc/ja/sections/4414038966415-%E5%87%BA%E8%8D%B7%E5%A3%B2%E3%82%8A%E4%B8%8A%E3%81%92",
+      "snippet": "出荷売上の有効期限は、支払受付後（AUTHORIZED）に変更できますか？ 出荷売上の「AUTHORIZED」ステータスは、APIを利用 …"
+    },
+    {
+      "title": "課金モデルとは何ですか？ – PayPay Developers FAQ",
+      "url": "https://integration.paypay.ne.jp/hc/ja/articles/4414105025039-%E8%AA%B2%E9%87%91%E3%83%A2%E3%83%87%E3%83%AB%E3%81%A8%E3%81%AF%E4%BD%95%E3%81%A7%E3%81%99%E3%81%8B",
+      "snippet": "Mar 11, 2026 · 課金モデルとは何ですか？ 解決しない場合、以下からお問い合わせください。"
+    },
+    {
+      "title": "PayPay決済による売上はどのように確認できる？ - 加盟店様向け ...",
+      "url": "https://paypay.ne.jp/help-merchant/b0056/",
+      "snippet": "Feb 3, 2026 · PayPay for Businessのホームの[サマリー]欄には、設定している集計期間の取引金額の累計と、平均単価が表示されま …"
+    },
+    {
+      "title": "PayPayでは売上確定の処理は必要ですか？",
+      "url": "https://faq.epsilon.jp/s/article/E02891",
+      "snippet": "管理画面から実売上処理 (課金確定依頼)ができる課金方法となります。 実売上処理が行われませんと加盟店様へのご入金が行えま …"
+    },
+    {
+      "title": "売上金はいつ、どのように受け取れる？ - 加盟店様向けヘルプ",
+      "url": "https://paypay.ne.jp/help-merchant/b0853/",
+      "snippet": "Jun 12, 2026 · 売上金はいつ、どのように受け取れる？ PayPay決済による売上金は、特別な手続きは不要で、加盟店契約時に設定 …"
+    }
+  ]
+}

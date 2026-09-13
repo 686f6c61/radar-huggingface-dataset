@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "yzabelledel/embodied-ai-finetune",
+  "slug": "yzabelledel-embodied-ai-finetune",
+  "author": "yzabelledel",
+  "url": "https://huggingface.co/yzabelledel/embodied-ai-finetune",
+  "created_at": "2026-09-13T00:20:01.000Z",
+  "updated_at": "2026-09-13T00:20:06.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "embodied-ai",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top 15 Things to Do in Boston, MA - Boston Attractions",
+      "url": "https://www.tripadvisor.com/Attractions-g60745-Activities-Boston_Massachusetts.html",
+      "snippet": "Things to Do in Boston, Massachusetts: See Tripadvisor's 761,893 traveler reviews and photos of Boston tourist attractions. Find …"
+    },
+    {
+      "title": "30 Top-Rated Things to Do in Boston - U.S. News Travel",
+      "url": "https://travel.usnews.com/Boston_MA/Things_To_Do/",
+      "snippet": "Jul 28, 2025 · If you only have 24 hours in Boston, you'll want to visit the city's most famous attractions, including the Freedom Trail, …"
+    },
+    {
+      "title": "The Best Attractions in Boston",
+      "url": "https://bostoninsider.org/best-attractions-in-boston-ma",
+      "snippet": "Feb 25, 2026 · Join our Boston Insider newsletter and get our 48-hour insider itinerary to the top hidden spots in Boston."
+    },
+    {
+      "title": "The Absolute Best Things to See in Boston",
+      "url": "https://bostoninsider.org/best-things-to-see-in-boston",
+      "snippet": "Oct 23, 2025 · From iconic landmarks to hidden gems, I have personally reviewed and handpicked the top 15 must-see attractions in …"
+    },
+    {
+      "title": "Boston Bucket List: 30 Best Things To Do in Boston - Earth Trekkers",
+      "url": "https://www.earthtrekkers.com/big-list-best-things-to-do-boston/",
+      "snippet": "Aug 22, 2017 · Here's a list of the best things to do in Boston, including the Freedom Trail, Fenway Park, the North End, whale …"
+    }
+  ]
+}

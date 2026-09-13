@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "FelysNeko/Qwen3-TTS-12Hz-1.7B-Delta-me13",
+  "slug": "felysneko-qwen3-tts-12hz-1-7b-delta-me13",
+  "author": "FelysNeko",
+  "url": "https://huggingface.co/FelysNeko/Qwen3-TTS-12Hz-1.7B-Delta-me13",
+  "created_at": "2026-09-11T20:27:18.000Z",
+  "updated_at": "2026-09-12T21:48:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_tts",
+    "base_model:Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+    "base_model:finetune:Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 1916676352,
+  "parameters_human": "1.92B",
+  "storage_bytes": 4515695644,
+  "storage_human": "4.5 GB",
+  "base_model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BeOnePourcent - YouTube",
+      "url": "https://www.youtube.com/@BeOnePourcent",
+      "snippet": "BeOnePourcent @BeOnePourcent • 695K subscribers • 743 videos (French Content Creator) Pense à bien activer la cloche on va …"
+    },
+    {
+      "title": "BeOnePourcent - YouTube",
+      "url": "https://www.youtube.com/@BeOnePourcent.",
+      "snippet": "Discover engaging videos from BeOnePourcent on YouTube, featuring unique content and entertaining adventures for viewers of all …"
+    },
+    {
+      "title": "BeOnePourcent - Roblox",
+      "url": "https://www.roblox.com/fr/users/4239493980/profile",
+      "snippet": "BeOnePourcentt est l'une des millions de personnes qui créent et explorent les possibilités infinies de Roblox. Rejoins …"
+    },
+    {
+      "title": "BeOnePourCent",
+      "url": "https://beonepourcent.fr/",
+      "snippet": "BeOnePourCent est un créateur de contenu Roblox. Des sessions de jeu brutes, des builds fous, des vidéos sans filtre — il joue à …"
+    },
+    {
+      "title": "BeOnePourcent_ - Twitch",
+      "url": "https://www.twitch.tv/beonepourcent_?lang=fr",
+      "snippet": "BeOnePourcent_ streame en direct sur Twitch ! Découvrez ses vidéos, inscrivez-vous au chat et rejoignez sa communauté."
+    }
+  ]
+}

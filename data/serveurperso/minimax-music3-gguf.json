@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Serveurperso/MiniMax-Music3-GGUF",
+  "slug": "serveurperso-minimax-music3-gguf",
+  "author": "Serveurperso",
+  "url": "https://huggingface.co/Serveurperso/MiniMax-Music3-GGUF",
+  "created_at": "2026-08-14T17:25:03.000Z",
+  "updated_at": "2026-09-12T19:39:31.000Z",
+  "license": "minimax-music3-community",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "music-generation",
+    "text-to-music",
+    "ggml",
+    "cpp",
+    "minimax-music3",
+    "diffusion",
+    "flow-matching",
+    "en",
+    "zh",
+    "base_model:MiniMaxAI/MiniMax-Music3",
+    "base_model:quantized:MiniMaxAI/MiniMax-Music3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 496577,
+  "trending_score": 0,
+  "parameters": 25167881,
+  "parameters_human": "25.2M",
+  "storage_bytes": 59656900384,
+  "storage_human": "59.7 GB",
+  "base_model": "MiniMaxAI/MiniMax-Music3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "windows - Uninstall without an MSI file - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/334490/uninstall-without-an-msi-file",
+      "snippet": "Dec 19, 2016 · Sort by date and search in the latest created folders for an MSI file that could belong to the software that you want to …"
+    },
+    {
+      "title": "Python error \"ImportError: No module named\" - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/338768/python-error-importerror-no-module-named",
+      "snippet": "Here, have a look at this. The __init__.py files are required to make Python treat the directories as containing packages; this is done …"
+    },
+    {
+      "title": "Next steps for open-ended questions - Meta Stack Overflow",
+      "url": "https://meta.stackoverflow.com/questions/440088/next-steps-for-open-ended-questions",
+      "snippet": "Jul 9, 2026 · Or, I can use any modern search engine (or also Bing) and the StackOverflow page answering my question will be in the …"
+    },
+    {
+      "title": "vs code copilot icon gone - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/75827616/vs-code-copilot-icon-gone",
+      "snippet": "Mar 23, 2023 · I can't find the Github Copilot icon for VS Code. I tried uninstalling and reinstalling the GitHub Copilot extension, and …"
+    },
+    {
+      "title": "visual studio - C++ cannot open source file - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/42679720/c-cannot-open-source-file",
+      "snippet": "In Visual Studio, Right click on project and in Configuration Properties find C/C++ and then General / In The window at the right side …"
+    }
+  ]
+}

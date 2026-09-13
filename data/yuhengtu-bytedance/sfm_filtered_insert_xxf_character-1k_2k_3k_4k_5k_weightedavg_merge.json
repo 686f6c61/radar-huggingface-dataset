@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_insert_xxf_character-1k_2k_3k_4k_5k_weightedavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_insert_xxf_character-1k_2k_3k_4k_5k_weightedavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-1k_2k_3k_4k_5k_weightedavg_merge",
+  "created_at": "2026-09-12T23:55:54.000Z",
+  "updated_at": "2026-09-12T23:56:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Movies & TV - YouTube",
+      "url": "https://www.youtube.com/channel/UClgRkhTL3_hImCAmdLfDE4g",
+      "snippet": "Find the latest and greatest movies and shows all available on YouTube.com/movies. From award-winning hits to independent …"
+    },
+    {
+      "title": "Full Action Movies - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLfRCZ3PuccvBQv71hWi334-zRJekjSlCq",
+      "snippet": "Explore an incredible collection of full action movies, free Hollywood action films, and a variety of full action movies in English. …"
+    },
+    {
+      "title": "Movies & TV - YouTube",
+      "url": "https://shows.youtube.com/",
+      "snippet": "HBO Max • Drama • 2026 Try now"
+    },
+    {
+      "title": "4,000 Best Free Movies on YouTube",
+      "url": "https://music.youtube.com/playlist?list=PL30RAv-0lkxHdTcoGGgx5L6eXIHnnrEHC",
+      "snippet": "Over 4,000 of the Best YouTube Movies that are legally free with ads. Or no ads if you have YouTube Premium. There are territory …"
+    },
+    {
+      "title": "YouTube TV",
+      "url": "https://tv.youtube.com/movies",
+      "snippet": "YouTube TV ... YouTube TV"
+    }
+  ]
+}

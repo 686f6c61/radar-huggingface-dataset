@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "AcyLa/crypto-predictive-model",
+  "slug": "acyla-crypto-predictive-model",
+  "author": "AcyLa",
+  "url": "https://huggingface.co/AcyLa/crypto-predictive-model",
+  "created_at": "2026-09-12T18:40:16.000Z",
+  "updated_at": "2026-09-12T18:42:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "ml-intern",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6651357,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "【心得】4everfiona-S25霸王討逆最強攻略 @三國志•戰略 ...",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=36815&snA=11252",
+      "snippet": "Mar 29, 2026 · 大家好，又到了新劇本 S25霸王討逆 這次內容比較多，個別忽略或筆誤也請大家諒解 廢話不說直入正題 首先說下劇本 …"
+    },
+    {
+      "title": "換S25+還換S26+ 好呢?? 給個建議吧! - Mobile01",
+      "url": "https://www.mobile01.com/topicdetail.php?f=568&t=7256417",
+      "snippet": "Apr 30, 2026 · 雲大少 wrote: 用了5年多的... (恕刪) S26+簡單說就是中庸的提升，照相、錄影與S25U差多了，只要重量與esim不是問 …"
+    },
+    {
+      "title": "S26 Ultra 相對S25 Ultra的20個「硬體倒退」cost ... - Mobile01",
+      "url": "https://www.mobile01.com/topicdetail.php?f=568&t=7237266",
+      "snippet": "Mar 20, 2026 · 這對於要同時掛台灣、大陸、漫遊三張卡的人來說，本質上跟你在S25 Ultra 上用 200 元轉接卡 達成的效果完全一樣， …"
+    },
+    {
+      "title": "【心得】S25+ VS S24+，不看不知道，一看嚇一跳",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=60559&snA=66714",
+      "snippet": "Mar 12, 2025 · 那時候S25+跟OPPO在選 最後還是決定S25+（畢竟遠傳有活動又給一堆贈品 很久之前曾拿過一次S系列，沒啥記憶度 …"
+    },
+    {
+      "title": "三星手机的港版、台版和国行版有什么区别呢？ - 知乎",
+      "url": "https://www.zhihu.com/question/12662687442",
+      "snippet": "港台是正统安卓 国行是阉割安卓 三台配置 机型完全一样 只靠 CSC 区分 因此可以互刷固件 不过按目前趋势之后的港台版很有可能要 …"
+    }
+  ]
+}

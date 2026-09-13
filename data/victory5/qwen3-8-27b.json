@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "victory5/Qwen3.8-27B",
+  "slug": "victory5-qwen3-8-27b",
+  "author": "victory5",
+  "url": "https://huggingface.co/victory5/Qwen3.8-27B",
+  "created_at": "2026-09-12T21:30:01.000Z",
+  "updated_at": "2026-09-12T21:30:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575816096,
+  "storage_human": "55.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HBO Max | Find the HBO Max subscription plan that's right for you. Get ...",
+      "url": "https://help.hbomax.com/US-en/answer/detail/000002547",
+      "snippet": "HBO Max subscribers can purchase PPV events on select devices. For more info, go to Pay Per View on HBO Max. Purchased PPV …"
+    },
+    {
+      "title": "HBO Max | Find out how to sign in to HBO Max with your HBO Max …",
+      "url": "https://help.hbomax.com/signin",
+      "snippet": "Open HBO Max and choose Sign In. Already signed in? Choose your profile (upper right) and then Sign Out. Enter your HBO Max …"
+    },
+    {
+      "title": "HBO Max | Find who bills you for HBO Max so you can change or …",
+      "url": "https://help.hbomax.com/us/Answer/Detail/000002529",
+      "snippet": "Manage an HBO Max subscription HBO Max subscriptions are available through many providers. How you manage or change your …"
+    },
+    {
+      "title": "Help Centre - HBO Max",
+      "url": "https://help.hbomax.com/gb-en/",
+      "snippet": "Get answers to your questions about HBO Max: sign in, billing, your account, and streaming. We’re here to help!"
+    },
+    {
+      "title": "Instalar a HBO Max em dispositivos compatíveis",
+      "url": "https://help.hbomax.com/br-pt/answer/detail/000002506",
+      "snippet": "Instalar a HBO Max em dispositivos compatíveis Você pode transmitir a HBO Max em celulares, tablets, computadores, TVs, …"
+    }
+  ]
+}

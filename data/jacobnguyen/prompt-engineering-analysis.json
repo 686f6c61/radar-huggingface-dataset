@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "JacobNguyen/prompt-engineering-analysis",
+  "slug": "jacobnguyen-prompt-engineering-analysis",
+  "author": "JacobNguyen",
+  "url": "https://huggingface.co/JacobNguyen/prompt-engineering-analysis",
+  "created_at": "2026-09-12T22:23:04.000Z",
+  "updated_at": "2026-09-12T22:23:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "prompt-engineering",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "| Le conjugueur Bescherelle, la référence en conjugaison !",
+      "url": "https://conjugaison.bescherelle.com/",
+      "snippet": "La conjugaison de plus de 9 000 verbes français à tous les modes et tous les temps, sous forme de tableaux de conjugaison simples …"
+    },
+    {
+      "title": "Bescherelle est une marque des éditions Hatier",
+      "url": "https://www.bescherelle.com/",
+      "snippet": "Une référence unique pour réussir en mathématiques du CP au CM2. Tout le programme à connaitre par niveau, avec un repérage …"
+    },
+    {
+      "title": "Bescherelle Conjugaison",
+      "url": "https://www.bescherelle.com/selection/bescherelle-conjugaison/",
+      "snippet": "L’utilisateur peut ainsi accéder à près de 10 000 tableaux de conjugaison, qui peuvent s’afficher, au choix, en orthographe …"
+    },
+    {
+      "title": "S'entrainer en français avec Bescherelle",
+      "url": "https://moncoach.bescherelle.com/start/fran%C3%A7ais",
+      "snippet": "Comment éviter les fautes d’orthographe, trouver le mot juste, bien construire ses phrases ? Revoyez les règles clés en vous …"
+    },
+    {
+      "title": "Bescherelle Canada, la référence linguistique",
+      "url": "https://bescherelle.ca/",
+      "snippet": "Publié par les Éditions Hurtubise depuis 1960, Bescherelle est la référence linguistique en Amérique du Nord : conjugaison, …"
+    }
+  ]
+}

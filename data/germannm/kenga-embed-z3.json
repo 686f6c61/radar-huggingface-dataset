@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "GermannM/kenga-embed-z3",
+  "slug": "germannm-kenga-embed-z3",
+  "author": "GermannM",
+  "url": "https://huggingface.co/GermannM/kenga-embed-z3",
+  "created_at": "2026-09-12T19:52:37.000Z",
+  "updated_at": "2026-09-12T19:53:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "pytorch",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "kenga-embed-v2",
+    "embeddings",
+    "sentence-similarity",
+    "retrieval",
+    "russian",
+    "mteb",
+    "kenga",
+    "z-system",
+    "ru",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 177155225,
+  "storage_human": "177 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LDPlayer - Lightweight & Fast Android Emulator for PC",
+      "url": "https://www.ldplayer.net/",
+      "snippet": "LDPlayer is a free Android emulator to play mobile games on PC with mouse and keyboard. It provides the fastest performance for …"
+    },
+    {
+      "title": "LDPlayer 9 for Windows - Download it from Uptodown for free",
+      "url": "https://ldplayer-9.en.uptodown.com/windows",
+      "snippet": "Jul 14, 2026 · Download LDPlayer 9 for Windows for free. Enjoy all your Android games on PC. LDPlayer 9 is an Android emulator for …"
+    },
+    {
+      "title": "LDPlayer - Download",
+      "url": "https://ld-player.en.softonic.com/",
+      "snippet": "Oct 13, 2025 · LDPlayer, free and safe download. LDPlayer latest version: Your mobile gaming potential on PC unleashed. LDPlayer …"
+    },
+    {
+      "title": "LDplayer 9 - bobdevteam.com",
+      "url": "https://www.bobdevteam.com/downloads/ldplayer9",
+      "snippet": "How to install LDPlayer9 Make sure to download the recommend version, some version has bugs that effect the performace. Double …"
+    },
+    {
+      "title": "LDPlayer - أسرع وأخف محاكي أندرويد للكمبيوتر",
+      "url": "https://ar.ldplayer.net/",
+      "snippet": "LDPlayer هو محاكي اندرويد مجاني للعب ألعاب الهاتف المحمول على جهاز الكمبيوتر باستخدام الماوس ولوحة المفاتيح. يوفر أسرع أداء لألعاب الاندرويد، ويدعم أنظمة ويندوز المختلفة ومعظم …"
+    }
+  ]
+}

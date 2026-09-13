@@ -4,8 +4,8 @@
   "slug": "sadxzae12e4-myawesomemodel-testrepo",
   "author": "SADXZAE12E4",
   "url": "https://huggingface.co/SADXZAE12E4/MyAwesomeModel-TestRepo",
-  "created_at": "2026-09-09T22:24:02.000Z",
-  "updated_at": "2026-09-09T22:24:06.000Z",
+  "created_at": "2026-09-12T03:59:00.000Z",
+  "updated_at": "2026-09-12T03:59:05.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 64,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-12T03:17:05.824Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

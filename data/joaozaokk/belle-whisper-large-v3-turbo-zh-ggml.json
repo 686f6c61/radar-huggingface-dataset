@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "JoaoZaokk/Belle-whisper-large-v3-turbo-zh-ggml",
+  "slug": "joaozaokk-belle-whisper-large-v3-turbo-zh-ggml",
+  "author": "JoaoZaokk",
+  "url": "https://huggingface.co/JoaoZaokk/Belle-whisper-large-v3-turbo-zh-ggml",
+  "created_at": "2026-09-12T23:44:58.000Z",
+  "updated_at": "2026-09-12T23:45:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "whisper.cpp",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "whisper.cpp",
+    "ggml",
+    "gguf",
+    "automatic-speech-recognition",
+    "on-device",
+    "quantized",
+    "zh",
+    "base_model:BELLE-2/Belle-whisper-large-v3-turbo-zh",
+    "base_model:quantized:BELLE-2/Belle-whisper-large-v3-turbo-zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3546776780,
+  "storage_human": "3.5 GB",
+  "base_model": "BELLE-2/Belle-whisper-large-v3-turbo-zh",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spieltipp - Anfänger Guide ? | Forge of Empires Forum",
+      "url": "https://forum.de.forgeofempires.com/index.php?threads/anf%C3%A4nger-guide.53141/",
+      "snippet": "Ein freundliches - Hallo *- an alle FoE Fans, vor kurzem habe ich für mich dieses Game entdeckt und bin fleissig am bauen, …"
+    },
+    {
+      "title": "Gildenausschluss oder Auflösung | Forge of Empires Forum",
+      "url": "https://forum.de.forgeofempires.com/index.php?threads/gildenausschluss-oder-aufl%C3%B6sung.51324/",
+      "snippet": "Kriegt man eigentlich wenn die Gilde, in der man ist, aufgelöst wird, oder wenn man ausgeschlossen wird? Als ich vor kurzem meine …"
+    },
+    {
+      "title": "Legacy exchange items | Forge of Empires Forum",
+      "url": "https://forum.en.forgeofempires.com/index.php?threads/legacy-exchange-items.47450/",
+      "snippet": "Dec 30, 2025 · Why doesn't the legacy exchange items never change. What's the point in it? No new offers on buildings or other …"
+    },
+    {
+      "title": "Covo dei furfanti?? | Forge of Empires Forum",
+      "url": "https://forum.it.forgeofempires.com/index.php?threads/covo-dei-furfanti.32745/",
+      "snippet": "Buongiorno, sono nell'età del ferro...come posso ottenere il covo dei furfanti che non appare nella lista degli edifici militari? grazie"
+    },
+    {
+      "title": "Ranking City Layouts | Forge of Empires Forum",
+      "url": "https://forum.en.forgeofempires.com/index.php?threads/ranking-city-layouts.36916/",
+      "snippet": "Jan 28, 2019 · What? The game could rank players based on how good their city layout is. Good in the sense of connecting to as …"
+    }
+  ]
+}

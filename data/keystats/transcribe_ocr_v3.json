@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "keystats/Transcribe_ocr_v3",
+  "slug": "keystats-transcribe_ocr_v3",
+  "author": "keystats",
+  "url": "https://huggingface.co/keystats/Transcribe_ocr_v3",
+  "created_at": "2026-09-13T01:03:23.000Z",
+  "updated_at": "2026-09-13T01:04:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16595836608,
+  "storage_human": "16.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "福建省行政区划名录及代码（截至2025年6月30日）",
+      "url": "https://mzt.fujian.gov.cn/gk/tzgg/202507/t20250718_6968735.htm",
+      "snippet": "Jul 18, 2025 · 福建省行政区划名录及代码（截至2025年6月30日）"
+    },
+    {
+      "title": "350500：福建省福州市连江县 邮政编码查询 - 邮编库 ️",
+      "url": "https://www.youbianku.com/350500",
+      "snippet": "Aug 31, 2026 · 350500是福建省福州市连江县下属区域的邮政编码，页面下方还有属于该邮编的详细地址列表。"
+    },
+    {
+      "title": "福建各地身份证代码 - 今日头条",
+      "url": "https://www.toutiao.com/article/7498254855195214370/",
+      "snippet": "Apr 28, 2025 · 三、福建身份证号的“地域密码” 1. 省级代码：35** 。全国34个省级行政区中，福建的代码为“35”，与浙江（33）、江 …"
+    },
+    {
+      "title": "350500: 福建省福州市连江县 | 邮政编码 - 新版邮编库 ️",
+      "url": "https://www.youbianku.cn/postcode/350500-0",
+      "snippet": "350500: 福建省福州市连江县 下面是 350500 的邮政编码列表，点击标题浏览每个邮编的详细信息。 邮政编码 国家 : 中国 省份 : 福建 …"
+    },
+    {
+      "title": "福建省福州市连江县下属邮编和地址 邮政编码查询 - 邮编库 ️",
+      "url": "https://www.youbianku.com/%B8%A3%BD%A8%CA%A1%B8%A3%D6%DD%CA%D0%C1%AC%BD%AD%CF%D8",
+      "snippet": "Jul 16, 2026 · 说明：福建省福州市连江县的邮编是350500，该邮编可以满足基本的信件邮寄等，您也可以查看下方展示的福建省福州 …"
+    }
+  ]
+}

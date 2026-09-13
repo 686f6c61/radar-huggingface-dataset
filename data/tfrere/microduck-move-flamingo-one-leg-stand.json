@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tfrere/microduck-move-flamingo-one-leg-stand",
+  "slug": "tfrere-microduck-move-flamingo-one-leg-stand",
+  "author": "tfrere",
+  "url": "https://huggingface.co/tfrere/microduck-move-flamingo-one-leg-stand",
+  "created_at": "2026-09-12T19:42:59.000Z",
+  "updated_at": "2026-09-12T19:45:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck-policy",
+    "academy",
+    "family:velocity",
+    "kind:perpetual",
+    "tier:2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6508437,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Allegro - atrakcyjne ceny - Strona Główna",
+      "url": "https://t.allegro.pl/",
+      "snippet": "Allegro - Najlepsze ceny oraz gwarancja bezpiecznych zakupów! Wyjątkowe okazje Allegro Days Piniaty urodzinowe Balony dla …"
+    },
+    {
+      "title": "Przedmioty sprzedawcy alle_dom- Allegro",
+      "url": "https://allegro.pl/uzytkownik/alle_dom",
+      "snippet": "Sprawdź oferty użytkownika alle_dom na Allegro. Odkryj radość zakupów i 100% bezpieczeństwa transakcji."
+    },
+    {
+      "title": "Wszystkie kategorie - Allegro",
+      "url": "https://allegro.pl/mapa-strony/kategorie",
+      "snippet": "Zobacz wszystkie kategorie Allegro. Dołącz do 19 mln Użytkowników i ciesz się bezpiecznymi zakupami na komputerze, tablecie i …"
+    },
+    {
+      "title": "Allē - the aesthetic loyalty program from Allergan Aesthetics, designed ...",
+      "url": "https://alle.com/",
+      "snippet": "Earn points towards rewards on Allergan Aesthetics' industry-leading brands, like BOTOX® Cosmetic, the JUVÉDERM® Collection of …"
+    },
+    {
+      "title": "alle – Wikisłownik, wolny słownik wielojęzyczny",
+      "url": "https://pl.wiktionary.org/wiki/alle",
+      "snippet": "(2.1) Uanset om du mangler én, flere eller alle tænder, kan manglerne erstattes. → Niezależnie od tego, czy brakuje ci jednego, kilku …"
+    }
+  ]
+}

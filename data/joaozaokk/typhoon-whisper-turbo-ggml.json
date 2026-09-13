@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "JoaoZaokk/typhoon-whisper-turbo-ggml",
+  "slug": "joaozaokk-typhoon-whisper-turbo-ggml",
+  "author": "JoaoZaokk",
+  "url": "https://huggingface.co/JoaoZaokk/typhoon-whisper-turbo-ggml",
+  "created_at": "2026-09-13T00:04:30.000Z",
+  "updated_at": "2026-09-13T00:40:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "whisper.cpp",
+  "languages": [
+    "th"
+  ],
+  "tags": [
+    "whisper.cpp",
+    "ggml",
+    "gguf",
+    "automatic-speech-recognition",
+    "on-device",
+    "quantized",
+    "th",
+    "base_model:typhoon-ai/typhoon-whisper-turbo",
+    "base_model:quantized:typhoon-ai/typhoon-whisper-turbo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1922221505,
+  "storage_human": "1.9 GB",
+  "base_model": "typhoon-ai/typhoon-whisper-turbo",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Luzern.ch – Das Portal für Luzern - Startseite",
+      "url": "https://www.luzern.ch/",
+      "snippet": "Lernen Sie Luzern.ch kennen. Die Website von Luzerner Behörden und Partnerorganisationen. Dieser Webauftritt ist ein …"
+    },
+    {
+      "title": "Notfound",
+      "url": "https://www.luzern.ch/handelsregister",
+      "snippet": "Notfound Zurück Zur Startseite"
+    },
+    {
+      "title": "Impressum - Luzern.ch",
+      "url": "https://luzern.ch/Impressum",
+      "snippet": "Impressum Redaktion Kanton Luzern Finanzdepartement Bahnhofstrasse 19 6002 Luzern T +41 (0)41 228 55 47 info.fd@lu.ch"
+    }
+  ]
+}

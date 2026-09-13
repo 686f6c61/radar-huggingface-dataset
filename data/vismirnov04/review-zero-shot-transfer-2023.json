@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "vismirnov04/review-zero-shot-transfer-2023",
+  "slug": "vismirnov04-review-zero-shot-transfer-2023",
+  "author": "vismirnov04",
+  "url": "https://huggingface.co/vismirnov04/review-zero-shot-transfer-2023",
+  "created_at": "2026-09-12T23:44:30.000Z",
+  "updated_at": "2026-09-12T23:44:37.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "zero-shot-transfer",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Modern Data Architecture Consulting Services & Advisory",
+      "url": "https://www.pandcglobal.com/consulting-services/ai-data-cognitive-sciences/modern-data-architecture/",
+      "snippet": "We ensure data architecture transformation is fully aligned with enterprise strategy and integrated across business functions. Our …"
+    },
+    {
+      "title": "Top 23 Data Architecture Consulting Firms in May 2026",
+      "url": "https://algoscale.com/blog/top-data-architecture-consulting-firms/",
+      "snippet": "Aug 19, 2026 · Discover top data architecture consulting companies in May 2026. Find the right experts to modernize your systems …"
+    },
+    {
+      "title": "The Ascend",
+      "url": "https://www.theascend.com/",
+      "snippet": "Mentoring, Advisory and Best Practices, Technology Modernization 100% Principals / Senior Consultants with more than 23 years of …"
+    },
+    {
+      "title": "Modern Data Architecture Consulting Services | HSO",
+      "url": "https://www.hso.com/data-analytics/architecture/",
+      "snippet": "Transform your business with expert data architecture services from HSO. Design scalable, secure data platforms built on Microsoft …"
+    },
+    {
+      "title": "Independent ERP Consultants | Digital Transformation Consulting",
+      "url": "https://www.elevatiq.com/",
+      "snippet": "Jun 15, 2026 · Our business transformation execution services include enterprise software selection, solution and enterprise …"
+    }
+  ]
+}

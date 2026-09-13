@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "kzfastino/gemma-4-26B-A4B-it-pruned-106-experts",
+  "slug": "kzfastino-gemma-4-26b-a4b-it-pruned-106-experts",
+  "author": "kzfastino",
+  "url": "https://huggingface.co/kzfastino/gemma-4-26B-A4B-it-pruned-106-experts",
+  "created_at": "2026-09-12T23:08:52.000Z",
+  "updated_at": "2026-09-12T23:21:01.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "pruning",
+    "mixture-of-experts",
+    "vibepruner",
+    "conversational",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "base_model:finetune:google/gemma-4-26B-A4B-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21878798266,
+  "parameters_human": "21.88B",
+  "storage_bytes": 43789903912,
+  "storage_human": "43.8 GB",
+  "base_model": "google/gemma-4-26B-A4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meu Diário - Uma coleção de anotações da sua vida. - WriteDiary",
+      "url": "https://writediary.com/?lang=portuguese",
+      "snippet": "Leia o que nossos escritores de diários estão dizendo sobre o “Meu Diário“ \"Fácil de usar, ótimo para armazenar todos aqueles …"
+    },
+    {
+      "title": "Meu Diário - Diário com senha – Apps no Google Play",
+      "url": "https://play.google.com/store/apps/details?id=mydiary.journal.diary.diarywithlock.diaryjournal.secretdiary&hl=pt-br&gl=br&raii=mydiary.journal.diary.diarywithlock.diaryjournal.secretdiary&raboi=CAE%3D&rasi=-4044114269311277398&rapt=AEjHL4MAL8rZSCLGsBAoOE5rpo3lO8dVdFjcAB0y-Fo99RN6x7dQi6LQslpu4qdxDb503ia917gfBaRgO_8PT0SruXwkNrG0qZ-uSgrGXMGDDqQrRFzC2syvCef2215VcEhACTy-KhCD",
+      "snippet": "Você pode usá-lo para registrar um diário digital, pensamentos secretos, jornada, humor e quaisquer momentos privados. É um …"
+    },
+    {
+      "title": "Meu Diário Eletrônico: Bloco de notas pessoal",
+      "url": "https://apps.microsoft.com/detail/9n33z6mm6z17?hl=pt-BR&gl=BR",
+      "snippet": "ORGANIZE SUA VIDA Adicione vários diários e cadernos sobre diferentes temas para manter tudo organizado e acessível. Use …"
+    },
+    {
+      "title": "Meu diário - diário secreto – Apps no Google Play",
+      "url": "https://play.google.com/store/apps/details?id=diary.journal.daily.mood.diarywithlock&hl=pt-BR",
+      "snippet": "My Diary – Daily Journal with lock é um aplicativo móvel que permite escrever um diário diário em seu telefone que suporta gravação …"
+    },
+    {
+      "title": "MyDay MyLife - Seu Diário Pessoal Digital",
+      "url": "https://mydaymylife.io/",
+      "snippet": "Diferente de um diário em papel, seu journal diário digital está sempre acessível, organizado e protegido na nuvem. Você pode …"
+    }
+  ]
+}

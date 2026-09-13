@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "rptkiddle/mmBERT-small-tweeteval-offensive",
+  "slug": "rptkiddle-mmbert-small-tweeteval-offensive",
+  "author": "rptkiddle",
+  "url": "https://huggingface.co/rptkiddle/mmBERT-small-tweeteval-offensive",
+  "created_at": "2026-09-12T20:26:47.000Z",
+  "updated_at": "2026-09-12T20:27:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "offensive-language-detection",
+    "teaching",
+    "text-classification",
+    "en",
+    "dataset:cardiffnlp/tweet_eval",
+    "base_model:jhu-clsp/mmBERT-small",
+    "base_model:finetune:jhu-clsp/mmBERT-small",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 140642306,
+  "parameters_human": "140.6M",
+  "storage_bytes": 596946833,
+  "storage_human": "597 MB",
+  "base_model": "jhu-clsp/mmBERT-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IServ - realschulevohwinkel.de",
+      "url": "https://realschulevohwinkel.de/iserv/",
+      "snippet": "Bitte aktualisieren Sie Ihren Webbrowser oder verwenden Sie einen unterstützten Webbrowser. Bestimmte Funktionen oder die …"
+    },
+    {
+      "title": "Realschule Vohwinkel",
+      "url": "http://realschule-vohwinkel.de/",
+      "snippet": "Herzlich Willkommen..."
+    },
+    {
+      "title": "IServ - iserv.schulserver.de",
+      "url": "https://iserv.schulserver.de/",
+      "snippet": "Bitte aktualisieren Sie Ihren Webbrowser oder verwenden Sie einen unterstützten Webbrowser. Bestimmte Funktionen oder die …"
+    },
+    {
+      "title": "IServ - realschulevohwinkel.de",
+      "url": "https://realschulevohwinkel.de/iserv/auth/public/password_reset",
+      "snippet": "Geben Sie bitte Ihren Benutzernamen, standardmäßig in der Schreibweise vorname.nachname, ein."
+    },
+    {
+      "title": "IServ - voh-portal.de",
+      "url": "https://voh-portal.de/iserv/auth/login?_target_path=%2Fiserv%2Fauth%2Fauth%3F_iserv_app_url%3D%2Fiserv%2F%26client_id%3D3_4eju6tr0d9gkkcgg4sskccwcooc404s844gg4co8ggskw0ksgc%26nonce%3D453b6b92-ad6c-4f1c-b06c-6a2042319117%26redirect_uri%3Dhttps%253A%2F%2Fvoh-portal.de%2Fiserv%2Fapp%2Fauthentication%2Fredirect%26response_type%3Dcode%26scope%3Dopenid%2520uuid%2520iserv%253Asession-id%2520iserv%253Aweb-ui%2520iserv%253A2fa%253Aconfiguration%2520iserv%253Aaccess-groups%26state%3DeyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiIsImtpZCI6IjEifQ.eyJyZWRpcmVjdF91cmkiOiJodHRwczpcL1wvdm9oLXBvcnRhbC5kZVwvaXNlcnZcLyIsIm5vbmNlIjoiNDUzYjZiOTItYWQ2Yy00ZjFjLWIwNmMtNmEyMDQyMzE5MTE3IiwiYWRtaW4iOmZhbHNlLCJpc3MiOiJodHRwczpcL1wvdm9oLXBvcnRhbC5kZVwvaXNlcnZcLyIsImV4cCI6MTc2NDcxNTI3MiwibmJmIjoxNzU2OTM5MjEyLCJpYXQiOjE3NTY5MzkyNzIsInNpZCI6IiJ9.yFHjyfFcuLCgdp7zPz3xy3REFx_IIW5JgX9r0rqz3ODtP8RjYenR8dw7lqNeJNqomHBoImptQg7_CsdpRfqrOQ",
+      "snippet": "Bitte aktualisieren Sie Ihren Webbrowser oder verwenden Sie einen unterstützten Webbrowser. Bestimmte Funktionen oder die …"
+    }
+  ]
+}

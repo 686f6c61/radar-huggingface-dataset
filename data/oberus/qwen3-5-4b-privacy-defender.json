@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "oberus/qwen3.5-4b-privacy-defender",
+  "slug": "oberus-qwen3-5-4b-privacy-defender",
+  "author": "oberus",
+  "url": "https://huggingface.co/oberus/qwen3.5-4b-privacy-defender",
+  "created_at": "2026-09-12T20:52:17.000Z",
+  "updated_at": "2026-09-12T21:00:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "privacy",
+    "prompt-rewriting",
+    "dpo",
+    "sft",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 18177141213,
+  "storage_human": "18.2 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Clipuri Porno Anal 720p HD - xHamster",
+      "url": "https://ro.xhamster.com/categories/anal/hd",
+      "snippet": "Vezi toate clipurile XXX Anal 720p HD chiar acum!"
+    },
+    {
+      "title": "Anal Clipuri Porno | xHamster",
+      "url": "https://ro.xhamster.com/categories/anal",
+      "snippet": "Vezi Clipuri Porno Anal pe xHamster. Vezi toate clipurile XXX Anal chiar acum!"
+    },
+    {
+      "title": "ANALIZED Scenes - ANALIZED.com",
+      "url": "https://analized.com/porn-categories/analized/",
+      "snippet": "Our main purpose is to create an anal-verse, a place that collects the best anal porn available in the world from top studios and …"
+    },
+    {
+      "title": "Analized XXX Videos - Pornhub",
+      "url": "https://www.pornhub.com/channels/analized",
+      "snippet": "Watch high quality HD Analized tube videos & sex trailers. No password is required to watch movies on Pornhub.com. The most …"
+    },
+    {
+      "title": "Analized HD | Sex Video Channel on xGroovy",
+      "url": "https://xgroovy.com/channels/analized/",
+      "snippet": "Watch best Analized HD Porn Trailers! All videos are true high quality. Enjoy our collection of Analized xxx films."
+    }
+  ]
+}

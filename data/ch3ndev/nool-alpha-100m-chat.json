@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "CH3NDev/Nool-Alpha-100M-Chat",
+  "slug": "ch3ndev-nool-alpha-100m-chat",
+  "author": "CH3NDev",
+  "url": "https://huggingface.co/CH3NDev/Nool-Alpha-100M-Chat",
+  "created_at": "2026-09-13T00:52:15.000Z",
+  "updated_at": "2026-09-13T00:54:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "id",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "nool_alpha",
+    "pytorch",
+    "causal-lm",
+    "moe",
+    "gsla",
+    "indonesian",
+    "text-generation",
+    "id",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149772288,
+  "parameters_human": "149.8M",
+  "storage_bytes": 599127452,
+  "storage_human": "599 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Télécharger FAT32 Format - Utilitaires - Les Numériques",
+      "url": "https://www.lesnumeriques.com/telecharger/fat32-format-19934",
+      "snippet": "FAT32 Format est un logiciel gratuit qui permet de formater un support de stockage externe tel qu’une clé USB ou un disque dur au …"
+    },
+    {
+      "title": "Télécharger Fat32Formatter (gratuit) Windows - Clubic",
+      "url": "https://www.clubic.com/telecharger-fiche189948-fat32formatter.html",
+      "snippet": "Sep 3, 2026 · Fat32Formatter est un utilitaire gratuit qui permet de formater rapidement des partitions en FAT32 sur Windows, même …"
+    },
+    {
+      "title": "FAT32 Format - Download",
+      "url": "https://fat32-format.en.softonic.com/",
+      "snippet": "May 7, 2026 · FAT32 Format stands out as a utility software designed to overcome Windows formatting limits. It empowers users to …"
+    },
+    {
+      "title": "Télécharger FAT32 Format pour Windows, Web - Telecharger.com",
+      "url": "https://www.01net.com/telecharger/utilitaire/systeme/fat32-format.html",
+      "snippet": "FAT32 Format est un utilitaire gratuit et portable qui permet de formater facilement des clés USB et disques durs de plus de 32 Go au …"
+    },
+    {
+      "title": "GUIFormat – Free FAT32 Formatter for USB & SD Drives",
+      "url": "https://guiformat.app/",
+      "snippet": "GUIFormat formats any drive to FAT32 — even past 32GB. GUIFormat is the free, portable formatter that prepares USB sticks, SD …"
+    }
+  ]
+}

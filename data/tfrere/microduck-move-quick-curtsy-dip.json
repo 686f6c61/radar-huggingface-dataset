@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tfrere/microduck-move-quick-curtsy-dip",
+  "slug": "tfrere-microduck-move-quick-curtsy-dip",
+  "author": "tfrere",
+  "url": "https://huggingface.co/tfrere/microduck-move-quick-curtsy-dip",
+  "created_at": "2026-09-12T22:46:51.000Z",
+  "updated_at": "2026-09-12T22:48:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck-policy",
+    "academy",
+    "family:sitstand",
+    "kind:perpetual",
+    "tier:2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5733425,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-13T03:06:14.433Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub · Change is constant. GitHub keeps you ahead. · GitHub",
+      "url": "https://github.com/",
+      "snippet": "Join the world's most widely adopted, AI-powered developer platform where millions of developers, businesses, and the largest open …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
+    },
+    {
+      "title": "GitHub Copilot · Your AI coding agent",
+      "url": "https://github.com/features/copilot",
+      "snippet": "GitHub Copilot works every step of the way, from an open issue to reviewing and merging a pull request. Use it in your editor, the …"
+    },
+    {
+      "title": "为什么用chatgpt账号登入一直提示需要电话号码 怎么解决？",
+      "url": "https://www.zhihu.com/question/2031417400504082455",
+      "snippet": "ChatGPT / Codex 登录出现手机号验证，怎么解决？ 方法一：升级 ChatGPT Plus 解决方式最简单直接：升级 ChatGPT Plus 就行。 …"
+    },
+    {
+      "title": "Top 16+ Chat AI tiếng Việt miễn phí, tốt nhất 2026 - CellphoneS",
+      "url": "https://cellphones.com.vn/sforum/top-phan-mem-chat-ai-tot-nhat",
+      "snippet": "Feb 9, 2026 · Top các phần mềm chat AI tiếng Việt tốt và được nhiều người sử dụng nhất 2026, phần mềm chatbot AI online đem …"
+    }
+  ]
+}

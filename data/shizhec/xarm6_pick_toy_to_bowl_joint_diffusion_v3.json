@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Shizhec/xarm6_pick_toy_to_bowl_joint_diffusion_v3",
+  "slug": "shizhec-xarm6_pick_toy_to_bowl_joint_diffusion_v3",
+  "author": "Shizhec",
+  "url": "https://huggingface.co/Shizhec/xarm6_pick_toy_to_bowl_joint_diffusion_v3",
+  "created_at": "2026-09-12T19:45:10.000Z",
+  "updated_at": "2026-09-12T19:46:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion",
+    "dataset:Shizhec/xarm6_pick_toy_to_bowl_joint_v2",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 91503927,
+  "parameters_human": "91.5M",
+  "storage_bytes": 366078436,
+  "storage_human": "366 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/en/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. …"
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/pt-BR",
+      "snippet": "TikTok - as tendências começam aqui. Em um dispositivo ou na web, os espectadores podem assistir e descobrir milhões de vídeos …"
+    },
+    {
+      "title": "Se connecter | TikTok",
+      "url": "https://livecenter.tiktok.com/?lang=fr",
+      "snippet": "Connecte-toi à TikTok Utiliser un code QR Utiliser le téléphone/l'e-mail/le nom d'utilisateur Continuer avec Facebook"
+    },
+    {
+      "title": "Iniciar sesión | TikTok",
+      "url": "https://livecenter.tiktok.com/?lang=es",
+      "snippet": "Inicia sesión en TikTok Usar código QR Usar teléfono, correo o nombre de usuario Continuar con Facebook"
+    },
+    {
+      "title": "TikTok Shop Seller Log In | Philippines",
+      "url": "https://seller-ph.tiktok.com/?msockid=07c0a1754aa46f8c11b5b6a74bb06edc",
+      "snippet": "Sell on TikTok Shop Philippines to increase your sales. Join our campaigns & reach millions of Filipino buyers nationwide. Sign-up for …"
+    }
+  ]
+}

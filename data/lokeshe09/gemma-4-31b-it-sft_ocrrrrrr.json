@@ -5,7 +5,7 @@
   "author": "lokeshe09",
   "url": "https://huggingface.co/lokeshe09/gemma-4-31B-it-SFT_OCRRRRRR",
   "created_at": "2026-09-12T10:33:19.000Z",
-  "updated_at": "2026-09-12T10:33:31.000Z",
+  "updated_at": "2026-09-12T10:55:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -31,10 +31,10 @@
   "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 32169626,
-  "storage_human": "32 MB",
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62578507874,
+  "storage_human": "62.6 GB",
   "base_model": "unsloth/gemma-4-31B-it",
   "formats": [
     "safetensors"

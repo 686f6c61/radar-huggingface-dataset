@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "id": "QUASAR-QAT/gemma-4-12B-it-QUASAR-W4A16-G64",
+  "slug": "quasar-qat-gemma-4-12b-it-quasar-w4a16-g64",
+  "author": "QUASAR-QAT",
+  "url": "https://huggingface.co/QUASAR-QAT/gemma-4-12B-it-QUASAR-W4A16-G64",
+  "created_at": "2026-09-11T00:21:43.000Z",
+  "updated_at": "2026-09-12T23:13:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_unified",
+    "image-text-to-text",
+    "quasar",
+    "native-qat",
+    "qat",
+    "quantization-aware-training",
+    "int4",
+    "gemma-4",
+    "gemma4",
+    "gemma",
+    "google",
+    "conversational",
+    "compressed-tensors",
+    "w4a16",
+    "vllm",
+    "12b",
+    "gemma-4-12b",
+    "quantized",
+    "4-bit",
+    "4-bit precision",
+    "weight-only",
+    "multimodal",
+    "gemma-4-12b-it",
+    "reasoning",
+    "thinking",
+    "long-context",
+    "function-calling",
+    "tool-calling",
+    "agentic",
+    "vision",
+    "vlm",
+    "audio",
+    "text-generation",
+    "any-to-any",
+    "en",
+    "multilingual",
+    "arxiv:2608.13966",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:quantized:google/gemma-4-12B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 7942508922,
+  "storage_human": "7.9 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - quasar/Quasar: Remote Administration Tool for Windows",
+      "url": "https://github.com/quasar/Quasar",
+      "snippet": "Quasar is a fast and light-weight remote administration tool coded in C#. The usage ranges from user support through day-to-day …"
+    },
+    {
+      "title": "Quasar — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Quasar",
+      "snippet": "Le quasar qui apparaît le plus brillant dans notre ciel est 3C 273, dans la constellation de la Vierge. Il a une magnitude apparente …"
+    },
+    {
+      "title": "Quasar Framework",
+      "url": "https://quasar.dev/",
+      "snippet": "Developer-oriented, front-end framework with Vue.js components for best-in-class high-performance, responsive websites, PWA, …"
+    },
+    {
+      "title": "Quasar - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Quasar",
+      "snippet": "Quasar luminosities can vary considerably over time, depending on their surroundings. Since it is difficult to fuel quasars for many …"
+    },
+    {
+      "title": "Premium FiveM Scripts ESX QB Qbox | Quasar Store",
+      "url": "https://www.quasar-store.com/c/scripts",
+      "snippet": "Quasar Banking Creator is a complete FiveM Banking Script for QBCore, ESX Legacy, QBox and Standalone. Create custom bank …"
+    }
+  ]
+}

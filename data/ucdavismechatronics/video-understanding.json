@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ucdavismechatronics/video-understanding",
+  "slug": "ucdavismechatronics-video-understanding",
+  "author": "ucdavismechatronics",
+  "url": "https://huggingface.co/ucdavismechatronics/video-understanding",
+  "created_at": "2026-09-13T00:51:56.000Z",
+  "updated_at": "2026-09-13T00:52:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "video-understanding",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "New Ford Transit | Ford UK",
+      "url": "https://www.ford.co.uk/vans-and-pickups/transit",
+      "snippet": "Discover the new Ford Transit, your ultimate commercial solution. Explore specs, cargo, and optional features for your business needs."
+    },
+    {
+      "title": "Used Ford Transit Vans For Sale - Autotrader Vans",
+      "url": "https://www.autotrader.co.uk/vans/used-vans/ford/transit?msockid=32d4b2dd068c653c1737a50e07706484",
+      "snippet": "Find used Ford Transit vans for sale on Autotrader today. With the best range of second hand Ford Transit vans across the UK, find …"
+    },
+    {
+      "title": "Ford Transit - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ford_Transit",
+      "snippet": "1Taunus Transit (1953) Toggle Taunus Transit (1953) subsection. 1.1Brief historical view. 1.2Naming system. 2First generation (1965) …"
+    },
+    {
+      "title": "2027 Ford Transit® Vans | Pricing, Photos, Specs & More | Ford Pro",
+      "url": "https://www.ford.com/trucks/transit-passenger-van-wagon/",
+      "snippet": "Discover the adaptable 2027 Ford Transit® Vans. Designed for any role, from efficient work vehicle to comfortable people mover, …"
+    },
+    {
+      "title": "New Ford Transit Van | Ford UK",
+      "url": "https://www.ford.co.uk/vans-and-pickups/transit/van",
+      "snippet": "Ford Transit Van offers maximum load capacity, connected technology and powerful & efficient engines. Find out about the iconic …"
+    }
+  ]
+}

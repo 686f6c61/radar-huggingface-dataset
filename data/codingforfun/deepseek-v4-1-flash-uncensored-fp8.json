@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "codingforfun/DeepSeek-V4.1-Flash-UNCENSORED-FP8",
+  "slug": "codingforfun-deepseek-v4-1-flash-uncensored-fp8",
+  "author": "codingforfun",
+  "url": "https://huggingface.co/codingforfun/DeepSeek-V4.1-Flash-UNCENSORED-FP8",
+  "created_at": "2026-09-13T00:22:08.000Z",
+  "updated_at": "2026-09-13T00:22:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v41",
+    "text-generation",
+    "deepseek",
+    "deepseek-v4.1",
+    "abliterated",
+    "uncensored",
+    "crack",
+    "multimodal",
+    "moe",
+    "fp8",
+    "image-text-to-text",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763205315794,
+  "parameters_human": "763.21B",
+  "storage_bytes": 510296708312,
+  "storage_human": "510.3 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "مصر الرقمية",
+      "url": "http://digital.gov.eg/",
+      "snippet": "بوابة الخدمات الحكومية منصة تقدم لكم الخدمات الحكومية الرقمية بشكل مّيسر وشخصى وحديث."
+    },
+    {
+      "title": "مصر الرقمية - الاستعلام-عن-التقرير-الائتماني",
+      "url": "https://digital.gov.eg/categories/terms/%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%B9%D9%84%D8%A7%D9%85-%D8%B9%D9%86-%D8%A7%D9%84%D8%AA%D9%82%D8%B1%D9%8A%D8%B1-%D8%A7%D9%84%D8%A7%D8%A6%D8%AA%D9%85%D8%A7%D9%86%D9%8A",
+      "snippet": "الاستعلام-عن-التقرير-الائتماني"
+    },
+    {
+      "title": "مصر الرقمية - استخراج-شهادة-قيد",
+      "url": "https://digital.gov.eg/categories/terms/%D8%A7%D8%B3%D8%AA%D8%AE%D8%B1%D8%A7%D8%AC-%D8%B4%D9%87%D8%A7%D8%AF%D8%A9-%D9%82%D9%8A%D8%AF",
+      "snippet": "استخراج-شهادة-قيد تمكنك هذه الخدمة من طلب استخراج شهادة القيد (كعب العمل)"
+    },
+    {
+      "title": "مصر الرقمية - طلب-مستخرج-سجل-تجاري",
+      "url": "https://digital.gov.eg/categories/terms/%D8%B7%D9%84%D8%A8-%D9%85%D8%B3%D8%AA%D8%AE%D8%B1%D8%AC-%D8%B3%D8%AC%D9%84-%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A",
+      "snippet": "- الخدمة متاحة لجميع المواطنين المصريين ممن لديهم بطاقة رقم قومي سارية. - يجب ذكر رقم السجل التجاري مقروناً باسم المكتب ومستوى القيد أو رقم التسجيل الضريبي. - عند طلب الخدمة وتبين …"
+    },
+    {
+      "title": "مصر الرقمية - تجديد-رخصة-مركبة",
+      "url": "https://digital.gov.eg/categories/terms/%D8%AA%D8%AC%D8%AF%D9%8A%D8%AF-%D8%B1%D8%AE%D8%B5%D8%A9-%D9%85%D8%B1%D9%83%D8%A8%D8%A9",
+      "snippet": "تجديد-رخصة-مركبة تسمح لك هذه الخدمة بتجديد رخصة مركبتك من مكانك و توصيل رخصة المركبة الي عنوان المنزل بشرط عدم وجود فحص او حظر بيع علي المركبة المٌراد تجديدها"
+    }
+  ]
+}

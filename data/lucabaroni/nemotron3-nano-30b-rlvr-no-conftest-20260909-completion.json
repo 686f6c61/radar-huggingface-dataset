@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "lucabaroni/nemotron3-nano-30b-rlvr-no-conftest-20260909-completion",
+  "slug": "lucabaroni-nemotron3-nano-30b-rlvr-no-conftest-20260909-completion",
+  "author": "lucabaroni",
+  "url": "https://huggingface.co/lucabaroni/nemotron3-nano-30b-rlvr-no-conftest-20260909-completion",
+  "created_at": "2026-09-12T22:55:19.000Z",
+  "updated_at": "2026-09-12T22:56:11.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "rlvr",
+    "lora",
+    "reward-hacking",
+    "tinker",
+    "dataset:lucabaroni/rlvr-reward-hacking-scale-no-conftest-20260909-completion",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "base_model:adapter:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3054453664,
+  "storage_human": "3.1 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quote of the Day - BrainyQuote",
+      "url": "https://www.brainyquote.com/quote_of_the_day",
+      "snippet": "1 day ago · Share five inspirational Quotes of the Day with friends on Facebook, Twitter, and blogs. Enjoy our Brainy, Funny, Love, …"
+    },
+    {
+      "title": "Quote of the Day — A Fresh Thought for Today",
+      "url": "https://bingquiz.com/quote-of-the-day/",
+      "snippet": "Aug 14, 2026 · Start today with a meaningful quote chosen to spark a positive thought, fresh perspective, or little moment of …"
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/copilotsearch?q=quotes+of+the+day",
+      "snippet": "由於此網站的設置，我們無法提供該頁面的具體描述。"
+    },
+    {
+      "title": "www.bingquote.com",
+      "url": "https://www.bingquote.com/home",
+      "snippet": ""
+    },
+    {
+      "title": "Quote of the Day | 1 Powerful Quote To Inspire Daily",
+      "url": "https://quotesoftheday.org/",
+      "snippet": "4 days ago · What Is a Quote of the Day? A Quote of the Day is a short, memorable message that can bring motivation, comfort, …"
+    }
+  ]
+}

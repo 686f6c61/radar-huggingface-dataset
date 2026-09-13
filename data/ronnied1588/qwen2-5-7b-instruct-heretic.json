@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Ronnied1588/Qwen2.5-7B-Instruct-heretic",
+  "slug": "ronnied1588-qwen2-5-7b-instruct-heretic",
+  "author": "Ronnied1588",
+  "url": "https://huggingface.co/Ronnied1588/Qwen2.5-7B-Instruct-heretic",
+  "created_at": "2026-09-12T22:37:09.000Z",
+  "updated_at": "2026-09-12T22:37:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "heretic",
+    "abliterated",
+    "uncensored",
+    "decensored",
+    "gguf",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7612756480,
+  "parameters_human": "7.61B",
+  "storage_bytes": 15236973980,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10 Best Data Center Managed Services Reviewed in 2026",
+      "url": "https://thectoclub.com/services/best-data-center-managed-services/",
+      "snippet": "Mar 24, 2026 · I’ve reviewed and evaluated the most popular data center managed services providers and shortlisted the best ones …"
+    },
+    {
+      "title": "Top Data Center Providers in the United States",
+      "url": "https://www.colocrossing.com/blog/top-datacenter-providers-united-states/",
+      "snippet": "Jul 17, 2026 · Explore the top datacenter providers in the United States, compare their strengths, and learn how to choose the right …"
+    },
+    {
+      "title": "The 12 Top Data Center Companies in the USA for 2026",
+      "url": "https://dcgeeks.com/top-data-center-companies-usa/",
+      "snippet": "Apr 11, 2026 · The top data center companies in the USA for 2026, ranked by scale, footprint, and capacity. See who runs the most …"
+    },
+    {
+      "title": "Top 7 Data Center Managed Service Providers in 2026 | MSH",
+      "url": "https://www.talentmsh.com/insights/best-data-center-managed-service-providers",
+      "snippet": "Compare the best data center managed service providers for colocation, hybrid infrastructure and 24/7 ops. See the top picks ranked …"
+    },
+    {
+      "title": "2026 Top 100 USA Managed Service Providers (MSPs)",
+      "url": "https://infomsp.com/top-usa-100-managed-service-providers/",
+      "snippet": "Explore the official 2026 Top 100 USA Managed Service Providers (MSPs) annual ranking. Compare top-ranked US IT support …"
+    }
+  ]
+}

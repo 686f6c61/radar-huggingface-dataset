@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "nickcuber/distilbert-base-uncased-finetuned-cola",
+  "slug": "nickcuber-distilbert-base-uncased-finetuned-cola",
+  "author": "nickcuber",
+  "url": "https://huggingface.co/nickcuber/distilbert-base-uncased-finetuned-cola",
+  "created_at": "2026-09-12T20:38:25.000Z",
+  "updated_at": "2026-09-12T22:17:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 1607000625,
+  "storage_human": "1.6 GB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OT: Video Games/Computers/Gadgets/Gizmos - Page 21 - RealGM",
+      "url": "https://forums.realgm.com/boards/viewtopic.php?t=2376731&start=400",
+      "snippet": "Sep 13, 2024 · Post #404 » by MikeIsGood » Tue Sep 10, 2024 4:42 pm ReasonablySober wrote: I'm no fancy industry expert, but if I …"
+    },
+    {
+      "title": "Nate Thurmond's crazy wingspan and standing reach - RealGM",
+      "url": "https://forums.realgm.com/boards/viewtopic.php?t=2351071",
+      "snippet": "Jan 23, 2024 · Nate Thurmond's crazy wingspan and standing reach Post #1 » by FrodoBaggins » Tue Jan 23, 2024 2:36 pm If …"
+    },
+    {
+      "title": "OT: Video Games/Computers/Gadgets/Gizmos - Page 67 - RealGM",
+      "url": "https://forums.realgm.com/boards/viewtopic.php?t=2376731&start=1320",
+      "snippet": "Jul 23, 2025 · What I love is that it's incredibly lightweight and has a crazy good battery life. What I don't like is that streaming games …"
+    },
+    {
+      "title": "2024 Olympic BASKETBALL Thread (Pt. 2: Let the Games Begin!)",
+      "url": "https://forums.realgm.com/boards/viewtopic.php?t=2397352",
+      "snippet": "Jul 24, 2024 · It's crazy to see the boys from up north ranked #4 in the World Rankings. Living in northern MN, those of us that love to …"
+    },
+    {
+      "title": "The fall-off when players leave Jokic is crazy - RealGM",
+      "url": "https://forums.realgm.com/boards/viewtopic.php?t=2443552",
+      "snippet": "Feb 28, 2025 · The fall-off when players leave Jokic is crazy Post #1 » by Peregrine01 » Fri Feb 28, 2025 6:32 am"
+    }
+  ]
+}

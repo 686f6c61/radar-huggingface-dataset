@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "cuong1206/faiss",
+  "slug": "cuong1206-faiss",
+  "author": "cuong1206",
+  "url": "https://huggingface.co/cuong1206/faiss",
+  "created_at": "2026-09-12T18:43:02.000Z",
+  "updated_at": "2026-09-12T19:11:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 666792207,
+  "storage_human": "667 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Demonter ecran cathodique - Forum Téléviseurs - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-30951370-demonter-ecran-cathodique",
+      "snippet": "Bonjour Je souhaiterais démonter une télé car je suis curieux de voir l'intérieur et aussi pour récupérer le cuivre (no gaspillage). Mais …"
+    },
+    {
+      "title": "4tube.com – Ist es sicher? [Unsichere Weiterleitungen]",
+      "url": "https://sensorstechforum.com/de/4tube-com-is-it-safe/",
+      "snippet": "Nov 21, 2025 · 4tube.com ist eine Webseite für Erwachsene, die viele Probleme auf Ihrem Computer verursachen und über …"
+    },
+    {
+      "title": "Portier video pas de sonnerie , [Résolu] - Matériel & Système",
+      "url": "https://forums.commentcamarche.net/forum/affich-6458941-portier-video-pas-de-sonnerie",
+      "snippet": "Bonjour, j'ai acheté un portier vidéo 2 fils intégral qui a déjà fait l'objet d'un échange par le magasin et j'ai le même problème à savoir …"
+    },
+    {
+      "title": "Restore Files Encrypted by Ransomware (Without Decryptor)",
+      "url": "https://sensorstechforum.com/restore-files-encrypted-ransomware-without-decryptor/",
+      "snippet": "May 10, 2024 · How to try and restore files back if your computer has been infected by ransomware viruses without having to pay the …"
+    },
+    {
+      "title": "Impossible de télécharger vidéos avec YouTube Downloader HD",
+      "url": "https://forums.commentcamarche.net/forum/affich-36673177-impossible-de-telecharger-videos-avec-youtube-downloader-hd",
+      "snippet": "Bonjour, Depuis quekques temps, je n'arrive plus à télécharger des vidéos à l'aide de YouTube Downloader HD. A chaque fois, …"
+    }
+  ]
+}

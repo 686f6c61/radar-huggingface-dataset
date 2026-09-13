@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "98sd7fc9sdf/allsimple",
+  "slug": "98sd7fc9sdf-allsimple",
+  "author": "98sd7fc9sdf",
+  "url": "https://huggingface.co/98sd7fc9sdf/allsimple",
+  "created_at": "2026-09-13T01:34:52.000Z",
+  "updated_at": "2026-09-13T01:34:58.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:ponpoke/flux2-klein-9b-uncensored-text-encoder",
+    "base_model:adapter:ponpoke/flux2-klein-9b-uncensored-text-encoder",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 86175519,
+  "storage_human": "86 MB",
+  "base_model": "ponpoke/flux2-klein-9b-uncensored-text-encoder",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lionel Messi - Stats 2027 | Transfermarkt",
+      "url": "https://www.transfermarkt.com/lionel-messi/leistungsdaten/spieler/28003",
+      "snippet": "Feb 6, 2026 · Player stats of Lionel Messi (Inter Miami CF) Goals Assists Matches played All performance data"
+    },
+    {
+      "title": "Lionel Messi - Player profile 2026 | Transfermarkt",
+      "url": "https://www.transfermarkt.com/lionel-messi/profil/spieler/28003",
+      "snippet": "Lionel Messi, 39, from Argentina Inter Miami CF, since 2023 Right Winger Market value: €15.00m * 24/06/1987 in Rosario, Argentina"
+    },
+    {
+      "title": "Lionel Messi - Titles & achievements | Transfermarkt",
+      "url": "https://www.transfermarkt.com/lionel-messi/erfolge/spieler/28003",
+      "snippet": "Feb 6, 2026 · This statistic shows the achievements of Inter Miami CF player Lionel Messi."
+    },
+    {
+      "title": "Lionel Messi - Stats by club | Transfermarkt",
+      "url": "https://www.transfermarkt.com/lionel-messi/leistungsdatenverein/spieler/28003",
+      "snippet": "Feb 6, 2026 · This is the overview of the performance data of Inter Miami CF player Lionel Messi, sorted by clubs."
+    },
+    {
+      "title": "Transfermarkt - WhatsMyValue",
+      "url": "https://www.transfermarkt.com/whatsMyValue",
+      "snippet": "What's My Value? Do you think you know every player's market value? Then show us what you've got. easy hard"
+    }
+  ]
+}

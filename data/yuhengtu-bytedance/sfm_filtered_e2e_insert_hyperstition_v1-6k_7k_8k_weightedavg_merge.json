@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-6k_7k_8k_weightedavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_e2e_insert_hyperstition_v1-6k_7k_8k_weightedavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-6k_7k_8k_weightedavg_merge",
+  "created_at": "2026-09-13T00:15:51.000Z",
+  "updated_at": "2026-09-13T00:16:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft campus - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft_campus",
+      "snippet": "The Microsoft campus is the corporate headquarters of Microsoft Corporation, located in Redmond, Washington, United States, a part …"
+    },
+    {
+      "title": "マイクロソフト コーポレーション (米国本社) 会社概要 - News ...",
+      "url": "https://news.microsoft.com/ja-jp/cp/corpdata/?msockid=3763e5ba58256851363bf269596d69ad",
+      "snippet": "Mar 31, 2025 · マイクロソフト コーポレーション (米国本社) 会社概要 本社所在地 Microsoft Corporation One Microsoft Way …"
+    },
+    {
+      "title": "Microsoft Office Locations | About Microsoft",
+      "url": "https://www.microsoft.com/en-us/about/office-locations?msockid=3763e5ba58256851363bf269596d69ad",
+      "snippet": "Nov 22, 2021 · Learn about Microsoft headquarters in Redmond, WA and our offices, locations, and experience centers across the …"
+    },
+    {
+      "title": "1 Microsoft Way, Redmond - Bing Maps",
+      "url": "https://www.bing.com/maps?q=1+Microsoft+Way%2C+Redmond",
+      "snippet": "Map multiple locations, get transit/walking/driving directions, view live traffic conditions, plan trips, view satellite, aerial and 3d …"
+    },
+    {
+      "title": "1 Microsoft Way, Redmond - Bing Maps",
+      "url": "https://www.bing.com/maps/search?q=1+Microsoft+Way%2C+Redmond&cp=47.642282%7E-122.136833&lvl=16&style=r",
+      "snippet": "Jan 15, 2026 · Map multiple locations, get transit/walking/driving directions, view live traffic conditions, plan trips, view satellite, aerial …"
+    }
+  ]
+}

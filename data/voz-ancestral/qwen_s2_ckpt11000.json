@@ -5,7 +5,7 @@
   "author": "voz-ancestral",
   "url": "https://huggingface.co/voz-ancestral/qwen_s2_ckpt11000",
   "created_at": "2026-09-11T22:19:22.000Z",
-  "updated_at": "2026-09-11T22:32:16.000Z",
+  "updated_at": "2026-09-12T17:10:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 401,
   "trending_score": 0,
   "parameters": 1881825088,
   "parameters_human": "1.88B",

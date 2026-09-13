@@ -5,13 +5,14 @@
   "author": "Ronaldo-GOAT",
   "url": "https://huggingface.co/Ronaldo-GOAT/pose6daug-gr00t-baseline120-newcode-bs64-30k",
   "created_at": "2026-09-12T07:22:23.000Z",
-  "updated_at": "2026-09-12T13:34:30.000Z",
+  "updated_at": "2026-09-12T16:51:14.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "safetensors",
     "region:us"
   ],
   "likes": 1,
@@ -19,10 +20,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 145231402950,
-  "storage_human": "145.2 GB",
+  "storage_bytes": 274325953790,
+  "storage_human": "274.3 GB",
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

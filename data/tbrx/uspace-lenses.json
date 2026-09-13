@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "tbrx/uspace-lenses",
+  "slug": "tbrx-uspace-lenses",
+  "author": "tbrx",
+  "url": "https://huggingface.co/tbrx/uspace-lenses",
+  "created_at": "2026-09-13T00:00:06.000Z",
+  "updated_at": "2026-09-13T00:02:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "jacobian-lens",
+    "interpretability",
+    "uncertainty",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 551163754,
+  "storage_human": "551 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Oggi ci hanno lasciato - Il commiato",
+      "url": "https://www.ilcommiato.it/oggi-ci-hanno-lasciato/",
+      "snippet": "Consulta gli annunci funerari e necrologi degli ultimi giorni, ricorda e omaggia chi ci ha lasciato partecipando al lutto."
+    },
+    {
+      "title": "Il commiato - annunci funebri, necrologie e partecipazioni",
+      "url": "https://www.ilcommiato.it/",
+      "snippet": "È quanto si propone “Il Commiato”: accogliere e pubblicare gli annunci, perché chiunque, e ovunque si trovi, vi possa accedere con …"
+    },
+    {
+      "title": "Commiato - Significato ed etimologia - Vocabolario - Treccani",
+      "url": "https://www.treccani.it/vocabolario/commiato/",
+      "snippet": "Scopri il significato della parola commiato. Nel Vocabolario Treccani troverai significato ed etimologia del termine che cerchi. Entra …"
+    },
+    {
+      "title": "Il commiato - Wikipedia",
+      "url": "https://it.m.wikipedia.org/wiki/Il_commiato",
+      "snippet": "Il commiato (o Inno dei laureandi) è un canto studentesco in voga a inizio Novecento, che fa parte del repertorio dell' innodia …"
+    },
+    {
+      "title": "Il Commiato - Annunci funebri, Partecipazioni, Anniversari",
+      "url": "https://www.facebook.com/ilCommiato/",
+      "snippet": "Su IlCommiato.it puoi cercare un necrologio per nome, cognome o località e consultare sia gli annunci recenti sia quelli presenti …"
+    }
+  ]
+}

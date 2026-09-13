@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "alignment-decision-lab/robustness-model-bank",
+  "slug": "alignment-decision-lab-robustness-model-bank",
+  "author": "alignment-decision-lab",
+  "url": "https://huggingface.co/alignment-decision-lab/robustness-model-bank",
+  "created_at": "2026-08-22T14:02:27.000Z",
+  "updated_at": "2026-09-12T21:11:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tflite",
+    "onnx",
+    "safetensors",
+    "shiftlab",
+    "kl-dro",
+    "robustness",
+    "arxiv:2101.00027",
+    "base_model:openai-community/gpt2-medium",
+    "base_model:quantized:openai-community/gpt2-medium",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 265099183058,
+  "storage_human": "265.1 GB",
+  "base_model": "gpt2-medium",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alignment（英语单词）_百度百科",
+      "url": "https://baike.baidu.com/item/Alignment/22617013",
+      "snippet": "Alignment，英语单词，主要用作名词，主要意思为“排成直线，摆放恰当；结盟”等。"
+    },
+    {
+      "title": "alignment - Traduction française – Linguee",
+      "url": "https://www.linguee.fr/anglais-francais/traduction/alignment.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"alignment\" – Dictionnaire français-anglais et moteur de recherche de …"
+    },
+    {
+      "title": "alignment是什么意思_alignment的翻译_音标_读音_用法_例句_爱词霸 …",
+      "url": "https://www.iciba.com/word?w=alignment",
+      "snippet": "Adjusting the mirrors' alignment within the telescope. 调整望远镜内镜片的对准。 The church must avoid any political alignment... 教 …"
+    },
+    {
+      "title": "ALIGNMENT中文 (简体)翻译：剑桥词典",
+      "url": "https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E8%8B%B1%E8%AF%AD-%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93/alignment",
+      "snippet": "ALIGNMENT翻译：位置, 列队，排整齐, 协定, 结盟，联盟;联合。 了解更多。"
+    },
+    {
+      "title": "欧路词典|英汉-汉英词典 alignment是什么意思_alignment的中文解释和发音_alignment的翻译_alignment …",
+      "url": "https://dict.eudic.net/dicts/en/alignment",
+      "snippet": "4. Another form is the menhir, a simple upright stone usually placed with others to form a circle, as at Stonehenge and Avebury in …"
+    }
+  ]
+}

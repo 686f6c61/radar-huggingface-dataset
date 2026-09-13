@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "JoaoZaokk/whisper-large-v3-turbo-german-ggml",
+  "slug": "joaozaokk-whisper-large-v3-turbo-german-ggml",
+  "author": "JoaoZaokk",
+  "url": "https://huggingface.co/JoaoZaokk/whisper-large-v3-turbo-german-ggml",
+  "created_at": "2026-09-13T00:42:55.000Z",
+  "updated_at": "2026-09-13T00:43:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "whisper.cpp",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "whisper.cpp",
+    "ggml",
+    "gguf",
+    "automatic-speech-recognition",
+    "on-device",
+    "quantized",
+    "de",
+    "base_model:primeline/whisper-large-v3-turbo-german",
+    "base_model:quantized:primeline/whisper-large-v3-turbo-german",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1922221505,
+  "storage_human": "1.9 GB",
+  "base_model": "primeline/whisper-large-v3-turbo-german",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top 3 des plombiers à Arlon : installation, entretien, dépannage...",
+      "url": "https://www.plombiers-belgique.be/arlon.htm",
+      "snippet": "Les 3 meilleurs plombiers chauffagistes à Arlon BELFIX - province de Luxembourg Votre évier fuit ou vos WC sont bouchés ? L'eau …"
+    },
+    {
+      "title": "Plombiers à Flémalle : dépannages urgents",
+      "url": "https://www.plombiers-belgique.be/flemalle.htm",
+      "snippet": "Pour désengorger votre tuyauterie, entretenir votre plomberie ou installer vos sanitaires, comptez sur notre sélection de plombiers …"
+    },
+    {
+      "title": "Plombiers au Luxembourg",
+      "url": "https://www.plombiers-belgique.be/luxembourg.htm",
+      "snippet": "Plombiers à NEUFCHÂTEAU Vous souhaitez avoir recours aux compétences d'un plombier à Neufchâteau pour remplacer votre …"
+    },
+    {
+      "title": "Trouvez un plombier à Châtelet - plombiers-belgique.be",
+      "url": "https://www.plombiers-belgique.be/chatelet.htm",
+      "snippet": "Découvrez notre sélection de plombiers professionnels. Actifs à Châtelet, ils interviennent chez vous de manière rapide et efficace."
+    },
+    {
+      "title": "Plombiers à Jodoigne : dépannage urgent, chauffage, etc.",
+      "url": "https://www.plombiers-belgique.be/jodoigne.htm",
+      "snippet": "Renseignements complémentaires Quelles prestations sont proposées par ces plombiers ? Les entreprises listées sur cette page …"
+    }
+  ]
+}

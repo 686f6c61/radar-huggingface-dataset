@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "meetingof/alexisveri",
+  "slug": "meetingof-alexisveri",
+  "author": "meetingof",
+  "url": "https://huggingface.co/meetingof/alexisveri",
+  "created_at": "2026-09-13T01:08:02.000Z",
+  "updated_at": "2026-09-13T01:10:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:ogulcanaydogan/Turkish-LLM-7B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:ogulcanaydogan/Turkish-LLM-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167832240,
+  "storage_human": "168 MB",
+  "base_model": "ogulcanaydogan/Turkish-LLM-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hotels in der Region Bayern, Deutschland suchen",
+      "url": "https://www.booking.com/region/de/bavaria.de.html?msockid=3bf92ab202dc601025043d6103036154",
+      "snippet": "Sichern Sie sich tolle Angebote bei der Reservierung Ihres Hotels in Bayern, Deutschland. Buchen Sie online und zahlen Sie im …"
+    },
+    {
+      "title": "Hotels Bayern • Die besten Bayern Hotels bei HolidayCheck",
+      "url": "https://www.holidaycheck.de/dh/hotels-bayern/381a3517-ec29-3cca-9b8e-d27151147d7d",
+      "snippet": "Für die durchschnittliche Bewertung in Bayern sind die Top 3000 bewerteten Hotels herangezogen worden."
+    },
+    {
+      "title": "Hotels in Bayern - Mit Top Angeboten zum Bestpreis direkt buchen",
+      "url": "https://bavaria-info.de/hotels-bayern/",
+      "snippet": "Hotels in Bayern I Komfortable Unterkünfte für Urlaub, Wellness oder Geschäftsreisen. Jetzt das passende Hotel in Bayern finden …"
+    },
+    {
+      "title": "Unsere Insider Tipps: Die 20 schönsten Hotels in Bayern - Escapio",
+      "url": "https://de.escapio.com/hotels-bayern",
+      "snippet": "München, Tegernsee oder Bayerischer Wald? Nur die schönsten Hotels in Bayern finden ☀ Beim Experten für Hotels in Bayern den …"
+    },
+    {
+      "title": "DIE 10 BESTEN Hotels in Bayern 2026 - Tripadvisor",
+      "url": "https://www.tripadvisor.de/Hotels-g187293-Bavaria-Hotels.html",
+      "snippet": "Beste Hotels in Bayern bei Tripadvisor: Finden Sie 653.339 Bewertungen von Reisenden, authentische Reisefotos und Top …"
+    }
+  ]
+}

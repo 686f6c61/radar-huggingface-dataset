@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "akrichetina/camembert-ner-person-fr",
+  "slug": "akrichetina-camembert-ner-person-fr",
+  "author": "akrichetina",
+  "url": "https://huggingface.co/akrichetina/camembert-ner-person-fr",
+  "created_at": "2026-09-12T23:07:09.000Z",
+  "updated_at": "2026-09-12T23:07:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "camembert",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110032898,
+  "parameters_human": "110.0M",
+  "storage_bytes": 440155504,
+  "storage_human": "440 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Benjamin Biolay — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Benjamin_Biolay",
+      "snippet": "Benjamin Biolay, né le 20 janvier 1973 à Villefranche-sur-Saône (Rhône), est un auteur-compositeur-interprète, producteur et acteur …"
+    },
+    {
+      "title": "Benjamin Biolay",
+      "url": "https://benjaminbiolay.com/",
+      "snippet": "Tout premier extrait du \"Disque Bleu\", un titre au carrefour des influences de Benjamin Biolay, entre chanson française et inspirations …"
+    },
+    {
+      "title": "Benjamin Biolay - YouTube",
+      "url": "https://www.youtube.com/channel/UChKbQ85xr-e9hmp-FIKdWqw",
+      "snippet": "Bienvenue sur la chaîne officielle de Benjamin Biolay. Ici vous retrouverez ses clips, ses interviews, prestations live, sessions …"
+    },
+    {
+      "title": "Benjamin Biolay - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Benjamin_Biolay",
+      "snippet": "Benjamin Gérard Fabien Biolay (French pronunciation: [bɛ̃ʒamɛ̃ bjɔlɛ]; born 20 January 1973) is a French singer, musician, …"
+    },
+    {
+      "title": "Benjamin Biolay - Écran total (Clip Officiel) - YouTube",
+      "url": "https://m.youtube.com/watch?v=0hQMc8P6qww",
+      "snippet": "May 22, 2026 · Benjamin Biolay - Écran total (Clip Officiel) Benjamin Biolay 91.1K subscribers 1.6K 236K views 3 months ago"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "GGUFGuy/useless-parameters",
+  "slug": "ggufguy-useless-parameters",
+  "author": "GGUFGuy",
+  "url": "https://huggingface.co/GGUFGuy/useless-parameters",
+  "created_at": "2026-09-13T00:22:58.000Z",
+  "updated_at": "2026-09-13T00:23:00.000Z",
+  "license": "odc-by",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "nanodex",
+    "tiny-lm",
+    "pretrained-from-scratch",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:odc-by",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 114838272,
+  "parameters_human": "114.8M",
+  "storage_bytes": 459365272,
+  "storage_human": "459 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Explorer unter Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/windows/experience/fileexplorer/file-explorer-in-windows",
+      "snippet": "Suchen und öffnen Sie Explorer in Windows, und passen Sie den Schnellzugriff an, indem Sie Dateien und Ordner anheften und …"
+    },
+    {
+      "title": "Hilfe zum Explorer in Windows | Aufbau und Funktionen",
+      "url": "https://www.win-tipps.de/hilfe-zum-explorer-windows/",
+      "snippet": "Oct 21, 2025 · Der Windows-Explorer (in neueren Versionen auch Datei-Explorer genannt) ist das zentrale Werkzeug, um Dateien, …"
+    },
+    {
+      "title": "Windows 11/10: Hilfe zum Explorer – so geht’s",
+      "url": "https://tippsling.de/hilfe-zum-explorer-so-gehts-in-windows-11-und-windows-10/",
+      "snippet": "Mar 12, 2026 · Ob Sie Ordner anlegen, Dateien verschieben oder den Explorer neu starten möchten: Dieser Artikel beantwortet alle …"
+    },
+    {
+      "title": "Windows 10: Der Datei-Explorer von A bis Z | PCtipp",
+      "url": "https://www.pctipp.ch/themen/praxis/windows-10-datei-explorer-a-z",
+      "snippet": "Jul 14, 2021 · Der Explorer in Windows 10 bietet viele Möglichkeiten. Folgend die wichtigsten Tipps."
+    },
+    {
+      "title": "Windows 11 Explorer anpassen – alle wichtigen Optionen im Überblick",
+      "url": "https://www.win-tipps.de/windows-11-explorer-anpassen-optionen/",
+      "snippet": "Apr 14, 2026 · Windows 11 Explorer anpassen: Ansichten, Schnellzugriff, Navigation und Tabs einstellen, um schneller und …"
+    }
+  ]
+}

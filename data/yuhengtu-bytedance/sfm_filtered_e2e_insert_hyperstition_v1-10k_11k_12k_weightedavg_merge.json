@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-10k_11k_12k_weightedavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_e2e_insert_hyperstition_v1-10k_11k_12k_weightedavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-10k_11k_12k_weightedavg_merge",
+  "created_at": "2026-09-13T00:47:40.000Z",
+  "updated_at": "2026-09-13T00:48:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok、日本における経済効果を発表。4.2万人の雇用を支え ...",
+      "url": "https://newsroom.tiktok.com/tiktok-socio-economic-impact-report-june-2025?lang=ja-JP",
+      "snippet": "Jun 4, 2025 · また、中小企業においても影響は拡大しており、名目GDPへの貢献額は1,094億円（前年：606億円）、雇用者数への …"
+    },
+    {
+      "title": "TikTok、日本における経済効果を発表。2025年、TikTokによって ...",
+      "url": "https://newsroom.tiktok.com/tiktok-socio-economic-impact-report-june-2026?lang=ja-JP",
+      "snippet": "本レポートでは、こうした変化をTikTokが日本にもたらす「経済的価値」「クリエイター経済圏としての価値」「ユーザーにとって …"
+    },
+    {
+      "title": "国内名目GDPに4855億円の貢献！ もはや若者向けだけの ...",
+      "url": "https://diamond.jp/articles/-/378311",
+      "snippet": "Dec 10, 2025 · 経済効果は国内で4855億円 *1 、そのうち1094億円 *1 は中小企業への貢献と推計されており、すでにビジネスを動か …"
+    },
+    {
+      "title": "TikTok、日本における経済効果を発表。2024年、TikTokによって ...",
+      "url": "https://www.jt-tsushin.jp/articles/service/platform-tiktok-20250604",
+      "snippet": "Jun 4, 2025 · 本レポートは、2024年に初めて発表した調査レポートに続く第2弾となり、より広範なデータと事例を基に、TikTokの …"
+    },
+    {
+      "title": "TikTok、日本経済に4855億円貢献 4.2万人の雇用創出 ...",
+      "url": "https://www.watch.impress.co.jp/docs/news/2020704.html",
+      "snippet": "Jun 6, 2025 · 中小企業への影響も拡大し、名目GDPへの貢献額は1,094億円 (前年606億円)、雇用者数への影響は約9,700人 (前 …"
+    }
+  ]
+}

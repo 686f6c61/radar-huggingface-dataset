@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mdz25714/distilbert-base-uncased-finetuned_emotion",
+  "slug": "mdz25714-distilbert-base-uncased-finetuned_emotion",
+  "author": "mdz25714",
+  "url": "https://huggingface.co/mdz25714/distilbert-base-uncased-finetuned_emotion",
+  "created_at": "2026-09-12T23:13:28.000Z",
+  "updated_at": "2026-09-12T23:39:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "emotion-classification",
+    "fine-tuning",
+    "pytorch",
+    "dataset:AiLab-IMCS-UL/twitter_emotions-en",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66958086,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267850073,
+  "storage_human": "268 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lega Serie A",
+      "url": "https://www.legaseriea.it/",
+      "snippet": "Calendario, risultati, classifica, highlights e notizie della Serie A Enilive. Segui ogni momento della stagione con Lega Serie A."
+    },
+    {
+      "title": "Serie A - Wikipedia",
+      "url": "https://it.m.wikipedia.org/wiki/Serie_A",
+      "snippet": "Il campionato di Serie A, comunemente noto come Serie A e ufficialmente denominato Serie A Enilive[1] a partire dalla stagione 2024 …"
+    },
+    {
+      "title": "Serie A: risultati, classifica e calendario | La Gazzetta dello Sport",
+      "url": "https://www.gazzetta.it/Calcio/Serie-A/",
+      "snippet": "Dec 20, 2024 · Segui il campionato di calcio di Serie A su La Gazzetta dello Sport! Ultime News, calendario, risultati e classifica …"
+    },
+    {
+      "title": "Classifica | Serie A Enilive | Lega Serie A",
+      "url": "https://www.legaseriea.it/serie-a/classifica",
+      "snippet": "La classifica aggiornata della Serie A Enilive — punti, vittorie e differenza reti per tutte le squadre."
+    },
+    {
+      "title": "Serie A - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Serie_A",
+      "snippet": "Established in the 1929–30 season, it restructured the existing Italian Football Championship, which had been played since 1898, into …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ItsnotAilabs/MESIE-Voice2Text-v1",
+  "slug": "itsnotailabs-mesie-voice2text-v1",
+  "author": "ItsnotAilabs",
+  "url": "https://huggingface.co/ItsnotAilabs/MESIE-Voice2Text-v1",
+  "created_at": "2026-09-12T18:18:03.000Z",
+  "updated_at": "2026-09-12T20:05:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "mesie-voice2text-v1",
+    "speech-recognition",
+    "voice-to-text",
+    "spectral-audio",
+    "acoustics",
+    "mel-spectrogram",
+    "whisper-light",
+    "mesie-engine",
+    "automatic-speech-recognition",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5621824,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dzbanek do herbaty - taniej na Allegro",
+      "url": "https://allegro.pl/listing?string=dzbanek%20do%20herbaty",
+      "snippet": "Dzbanek do herbaty na Allegro - Zróżnicowany zbiór ofert, najlepsze ceny i promocje. Wejdź i znajdź to, czego szukasz!"
+    },
+    {
+      "title": "Dzbanki do wody, herbaty, kompotów i napojów - Allegro",
+      "url": "https://allegro.pl/kategoria/dzbanki-karafki-i-mleczniki-dzbanki-324883",
+      "snippet": "Kup Dzbanki do wody, herbaty, kompotów i napojów taniej na Allegro.pl ☝ Darmowa dostawa z Allegro Smart! ⭐ 100% …"
+    },
+    {
+      "title": "Dzbanki i czajniki do herbaty – z zaparzaczem, podgrzewaczem",
+      "url": "https://home-you.com/pl/c/kuchnia-i-jadalnia/kawa-i-herbata/dzbanki-czajniczki",
+      "snippet": "W naszych sklepach stacjonarnych oraz online czekają na Ciebie dzbanki z zaparzaczem, modele z podgrzewaczem, czajniczki do …"
+    },
+    {
+      "title": "Dzbanki do kawy i herbaty - Garneczki.pl",
+      "url": "https://www.garneczki.pl/produkty/dzbanki-do-kawy-i-herbaty,644",
+      "snippet": "Nowoczesne i klasyczne dzbanki na kawę i herbatę. Z filtrami, zaparzaczami, podstawkami. W naszym sklepie czekają na Ciebie …"
+    },
+    {
+      "title": "Dzbanki Do Herbaty - Dzbanuszki z Zaparzaczem - HOMLA",
+      "url": "https://homla.com.pl/kuchnia/akcesoria-do-kawy-i-herbaty/dzbanki-do-herbaty.html",
+      "snippet": "W naszym sklepie znajdziesz szeroki wybór dekoracji do domu, które sprawią, że każde pomieszczenie nabierze wspaniałego …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "schwyzquant/OpenThinker-7B",
+  "slug": "schwyzquant-openthinker-7b",
+  "author": "schwyzquant",
+  "url": "https://huggingface.co/schwyzquant/OpenThinker-7B",
+  "created_at": "2026-09-12T21:57:52.000Z",
+  "updated_at": "2026-09-12T21:57:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "dataset:open-thoughts/open-thoughts-114k",
+    "arxiv:2506.04178",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242701112,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sitzkissen · Stuhlkissen - kaufen bei Galaxus",
+      "url": "https://www.galaxus.ch/de/s14/producttype/sitzkissen-2635?msockid=3fd4559ee21b60243a81424ce33661dd",
+      "snippet": "Nutze diese Filteroptionen, um schnell das passende Sitzkissen für deine Bedürfnisse zu finden. In unserem Sortiment findest du …"
+    },
+    {
+      "title": "Sitzkissen & Stuhlkissen - IKEA Schweiz",
+      "url": "https://www.ikea.com/ch/de/cat/sitzkissen-20542/?msockid=3fd4559ee21b60243a81424ce33661dd",
+      "snippet": "Bei uns findest du IKEA Sitzkissen, um deine Stühle, Hocker und Bänke optisch aufzupeppen, ihnen eine ganz neue Optik zu …"
+    },
+    {
+      "title": "Sitzkissen online kaufen - XXXLutz.ch",
+      "url": "https://www.xxxlutz.ch/sitzkissen-C9C3C3",
+      "snippet": "Von pfiffigen Klemmkissen für die Bank über trendige Filz-Sitzkissen bis hin zu plüschigen Versionen für den Lieblingssessel – in …"
+    },
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Sitzkissen",
+      "url": "https://www.amazon.de/sitzkissen/s?k=sitzkissen",
+      "snippet": "Kaufen Sie Sitzkissen für unterschiedliche Anwendungsbereiche – ob als Stuhlkissen im Esszimmer, als Sitzpolster im Garten oder …"
+    },
+    {
+      "title": "Sitzkissen kaufen bei OBI",
+      "url": "https://www.obi.ch/search/sitzkissen/",
+      "snippet": "Sitzkissen kaufen und bestellen Online auf www.obi.ch und in Ihrem Markt vor Ort OBI - alles für Heim, Haus, Garten und Bau."
+    }
+  ]
+}

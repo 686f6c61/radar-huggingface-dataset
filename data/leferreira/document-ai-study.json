@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Leferreira/document-ai-study",
+  "slug": "leferreira-document-ai-study",
+  "author": "Leferreira",
+  "url": "https://huggingface.co/Leferreira/document-ai-study",
+  "created_at": "2026-09-12T18:27:50.000Z",
+  "updated_at": "2026-09-12T18:27:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "document-ai",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/g/?locale=ar",
+      "snippet": "استخدم ChatGPT للإجابة عن الأسئلة والكتابة وإنشاء الصور وإتمام العمل وكتابة التعليمات البرمجية، كل ذلك في مكان واحد. ابدأ مجانًا أو نزّل التطبيق."
+    },
+    {
+      "title": "ChatGPT - شات جي بي تي GPT",
+      "url": "https://m.chatgpt.com/?locale=ar",
+      "snippet": "ChatGPT هو نظام ذكاء اصطناعي. باستخدامه، فإنك توافق على الشروطوسياسة الخصوصيةالخاصة بنا. قد تُراجع الدردشات وتُستخدم لتحسين نماذج الذكاء الاصطناعي لدينا. تعرف على المزيد. …"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "ChatGPT - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.openai.chatgpt&hl=ar",
+      "snippet": "قم بتنزيل تطبيق ChatGPT اليوم. يبدأ الحفاظ على أمان بياناتك بفهم الطريقة التي يتّبعها مطوِّرو التطبيقات لجمع بياناتك ومشاركتها. قد تختلف خصوصية البيانات وممارسات الأمان حسب كيفية استخدامك …"
+    },
+    {
+      "title": "نقدّم لكم ChatGPT | OpenAI",
+      "url": "https://openai.com/ar/index/chatgpt/",
+      "snippet": "ChatGPT has evolved substantially since then. لقد درّبنا نموذجًا يُعرف باسم ChatGPT، صُمّم ليفهمك ويتجاوب معك كما يفعل الإنسان في حوار طبيعي. بفضل أسلوب الحوار …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "EstevaoNaval/chemiener-onnx",
+  "slug": "estevaonaval-chemiener-onnx",
+  "author": "EstevaoNaval",
+  "url": "https://huggingface.co/EstevaoNaval/chemiener-onnx",
+  "created_at": "2026-09-12T20:20:45.000Z",
+  "updated_at": "2026-09-12T20:38:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "bert",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 364999404,
+  "storage_human": "365 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NBA Scores, 2026-27 Season - ESPN",
+      "url": "https://www.espn.com/nba/scoreboard",
+      "snippet": "Live scores for every 2026-27 NBA season game on ESPN. Includes box scores, video highlights, play breakdowns and updated odds."
+    },
+    {
+      "title": "The official site of the NBA for the latest NBA Scores, Stats & News ...",
+      "url": "https://www.nba.com/",
+      "snippet": "Follow the action on NBA scores, schedules, stats, news, teams, and players. Buy tickets or watch the games anywhere with NBA …"
+    },
+    {
+      "title": "NBA on ESPN - Scores, Stats and Highlights",
+      "url": "https://www.espn.com/nba/",
+      "snippet": "Visit ESPN for NBA live scores, video highlights and latest news. Stream games on ESPN and play Fantasy Basketball."
+    },
+    {
+      "title": "NBA Scores 2026-27 - CBS Sports",
+      "url": "https://www.cbssports.com/nba/scoreboard/",
+      "snippet": "Fast, updating NBA scores and stats for games are provided by CBS Sports."
+    },
+    {
+      "title": "NBA Games - All NBA matchups | NBA.com",
+      "url": "https://www.nba.com/games?nav%3Dscoreboardhome",
+      "snippet": "TAP TO WATCH ALL NBA GAMES Get quick access to live broadcasts, game reminders, and more when you sync the NBA …"
+    }
+  ]
+}

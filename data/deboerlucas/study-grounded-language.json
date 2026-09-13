@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "deboerlucas/study-grounded-language",
+  "slug": "deboerlucas-study-grounded-language",
+  "author": "deboerlucas",
+  "url": "https://huggingface.co/deboerlucas/study-grounded-language",
+  "created_at": "2026-09-13T01:09:52.000Z",
+  "updated_at": "2026-09-13T01:09:58.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "grounded-language",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TOP｜【公式】新那須温泉｜こころのおやど自在荘",
+      "url": "https://jizaiso.co.jp/",
+      "snippet": "那須高原の美しい自然をのぞむ、和室、露天風呂付客室、和洋室など、落ち着いた趣の客室にて、ゆったりと流れる時間をお楽しみ …"
+    },
+    {
+      "title": "新那須高原温泉 こころのおやど 自在荘 宿泊予約 - 楽天トラベル",
+      "url": "https://travel.rakuten.co.jp/hotel/32111/32111.html",
+      "snippet": "日常の喧騒を離れ、那須の四季が語りかけてくる静けさに心が満たされます。 那須高原の美しい自然をのぞむ、和室、露天風呂付 …"
+    },
+    {
+      "title": "那須・塩原×作務衣でくつろげる宿 バストイレ別のお部屋 ...",
+      "url": "https://www.ikyu.com/kanto/13044102/acr134217728/t3779/ranking/",
+      "snippet": "那須・塩原×作務衣でくつろげる宿 バストイレ別のお部屋 ホテル・旅館 ランキング 那須・塩原 作務衣でくつろげる宿 バストイレ …"
+    },
+    {
+      "title": "新那須高原温泉 こころのおやど 自在荘 - 宿泊予約は＜じゃらん ...",
+      "url": "https://www.jalan.net/yad308252/?msockid=0e1745519e94641b307952829fc06543",
+      "snippet": "Sep 1, 2026 · 新那須高原温泉 こころのおやど 自在荘の宿泊・予約情報・2名税込33000円～。 最大22時間、自分たちのペースで寛 …"
+    },
+    {
+      "title": "那須温泉×作務衣でくつろげる宿 おすすめ旅館 - 一休.com",
+      "url": "https://www.ikyu.com/onsen/090020/t3779/?accommodation_types=INN",
+      "snippet": "那須温泉の「作務衣でくつろげる宿」で探す おすすめ旅館。 施設の人気のこだわり条件やタイムセールの施設まで得な宿まで充実 …"
+    }
+  ]
+}

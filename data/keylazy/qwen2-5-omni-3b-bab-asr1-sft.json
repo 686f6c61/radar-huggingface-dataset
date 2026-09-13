@@ -5,7 +5,7 @@
   "author": "keylazy",
   "url": "https://huggingface.co/keylazy/Qwen2.5-Omni-3B-bab-asr1-sft",
   "created_at": "2026-09-11T15:04:47.000Z",
-  "updated_at": "2026-09-11T15:04:59.000Z",
+  "updated_at": "2026-09-12T07:08:49.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -24,8 +24,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 131276908,
-  "storage_human": "131 MB",
+  "storage_bytes": 251133845,
+  "storage_human": "251 MB",
   "base_model": null,
   "formats": [
     "safetensors"

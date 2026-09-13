@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "JoaoZaokk/nemotron-3.5-asr-streaming-0.6b-gguf",
+  "slug": "joaozaokk-nemotron-3-5-asr-streaming-0-6b-gguf",
+  "author": "JoaoZaokk",
+  "url": "https://huggingface.co/JoaoZaokk/nemotron-3.5-asr-streaming-0.6b-gguf",
+  "created_at": "2026-09-12T23:03:18.000Z",
+  "updated_at": "2026-09-12T23:03:27.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "parakeet.cpp",
+  "languages": [
+    "en",
+    "pt",
+    "es",
+    "de",
+    "fr",
+    "it"
+  ],
+  "tags": [
+    "parakeet.cpp",
+    "gguf",
+    "ggml",
+    "automatic-speech-recognition",
+    "on-device",
+    "quantized",
+    "parakeet",
+    "en",
+    "pt",
+    "es",
+    "de",
+    "fr",
+    "it",
+    "base_model:nvidia/nemotron-3.5-asr-streaming-0.6b",
+    "base_model:quantized:nvidia/nemotron-3.5-asr-streaming-0.6b",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 638030384,
+  "parameters_human": "638.0M",
+  "storage_bytes": 1484324992,
+  "storage_human": "1.5 GB",
+  "base_model": "nvidia/nemotron-3.5-asr-streaming-0.6b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/homepage",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube/main%20page",
+      "snippet": "Welcome to the official YouTube channel – a home for the biggest moments, the smallest obsessions, and everything in between. …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/@en.---",
+      "snippet": "Share your videos and discover content from friends, family, and creators worldwide on YouTube."
+    }
+  ]
+}

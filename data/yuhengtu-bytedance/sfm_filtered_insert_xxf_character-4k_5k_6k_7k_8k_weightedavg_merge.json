@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_insert_xxf_character-4k_5k_6k_7k_8k_weightedavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_insert_xxf_character-4k_5k_6k_7k_8k_weightedavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-4k_5k_6k_7k_8k_weightedavg_merge",
+  "created_at": "2026-09-13T00:19:41.000Z",
+  "updated_at": "2026-09-13T00:20:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "أفضل 13 محرر صور بالذكاء الاصطناعي للتصحيحات السريعة",
+      "url": "https://fixthephoto.com/ar/best-ai-photo-editor.html",
+      "snippet": "اكتشف أفضل محرري الذكاء الاصطناعي لإنشاء صور بجودة احترافية بسرعة، سواء لوسائل التواصل الاجتماعي أو للمشاريع الإبداعية أو للاستخدام الشخصي."
+    },
+    {
+      "title": "أفضل أدوات إنشاء الصور بالذكاء الاصطناعي في 2026: مقارنة بين الخيارات ...",
+      "url": "https://www.varkido.com/2026/06/best-ai-image-generators.html",
+      "snippet": "Aug 4, 2026 · اكتشف أفضل أدوات إنشاء الصور بالذكاء الاصطناعي لعام 2026. مقارنة شاملة بين Midjourney و DALL-E 3 والبدائل المجانية لتصميم صور احترافية بكل سهولة."
+    },
+    {
+      "title": "أقوى 20 أداة ذكاء اصطناعي لإنشاء الصور وتحريرها",
+      "url": "https://gsgraphx.com/blog/%D8%A3%D9%82%D9%88%D9%89-20-%D8%A3%D8%AF%D8%A7%D8%A9-%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-%D9%84%D8%A5%D9%86%D8%B4%D8%A7%D8%A1-%D8%A7%D9%84%D8%B5%D9%88%D8%B1/",
+      "snippet": "في هذا المقال، نستعرض أقوى 20 أداة ذكاء اصطناعي من المتوقع أن تهيمن على مشهد إنشاء الصور وتحريرها في عام 2025، مع تقديم نظرة شاملة على ميزاتها، وعيوبها، وروابطها، ونماذج …"
+    },
+    {
+      "title": "أفضل 10 أدوات ذكاء اصطناعي مجانية للصور تستحق التجربة",
+      "url": "https://3arabi.ai/%D8%A3%D8%AF%D9%88%D8%A7%D8%AA-%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-%D9%85%D8%AC%D8%A7%D9%86%D9%8A%D8%A9-%D9%84%D9%84%D8%B5%D9%88%D8%B1/",
+      "snippet": "Mar 11, 2026 · فيما يلي مجموعة من أفضل أدوات ذكاء اصطناعي مجانية للصور التي يمكنك استخدامها لإنشاء تصاميم احترافية بسرعة ودون أي تكلفة: 1. DALL-E 3. تُعد 3 DALL-E من …"
+    },
+    {
+      "title": "أفضل 15 محرر صور بالذكاء الاصطناعي: تطبيقات للهاتف والكمبيوتر، مواقع ...",
+      "url": "https://www.majnooncomputer.net/%D8%A7%D9%81%D8%B6%D9%84-%D9%85%D8%AD%D8%B1%D8%B1-%D8%B5%D9%88%D8%B1-%D8%A8%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A/",
+      "snippet": "Jun 2, 2026 · سواء كنت تستخدم هاتفك الذكي، أو جهاز الكمبيوتر، أو تفضل التحرير عبر الإنترنت، ستجد في هذا الدليل الشامل أفضل 15 محرر صور بالذكاء الاصطناعي التي تلبي احتياجاتك …"
+    }
+  ]
+}

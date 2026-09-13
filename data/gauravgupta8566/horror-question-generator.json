@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Gauravgupta8566/horror-question-generator",
+  "slug": "gauravgupta8566-horror-question-generator",
+  "author": "Gauravgupta8566",
+  "url": "https://huggingface.co/Gauravgupta8566/horror-question-generator",
+  "created_at": "2026-09-12T21:13:44.000Z",
+  "updated_at": "2026-09-12T21:21:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "question-generation",
+    "flan-t5",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 76961152,
+  "parameters_human": "77.0M",
+  "storage_bytes": 307872249,
+  "storage_human": "308 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thalia Online Shop | Bücher, eBooks, Spielzeug, uvm. kaufen | Thalia",
+      "url": "https://www.thalia.de/?msockid=33d68326581e6939074194f459db687c",
+      "snippet": "Willkommen beim Thalia Service Chat! Schon wenige Minuten Vorlesen am Tag machen den Unterschied. Vorlesen fördert …"
+    },
+    {
+      "title": "Hugendubel Online-Shop: Bücher online kaufen | Hugendubel.de",
+      "url": "https://m.hugendubel.de/de/",
+      "snippet": "Hugendubel: Buchhandlung seit 1893 Hugendubel ist eines der größten inhabergeführten Buchhandelsunternehmen Deutschlands. …"
+    },
+    {
+      "title": "Buchhandlung Rupprecht - Bücher vom Buchhändler",
+      "url": "https://www.rupprecht.de/shop/",
+      "snippet": "Buchhandlung Rupprecht - Medien aller Art schnell und sicher bestellen."
+    },
+    {
+      "title": "Buchhandlung Rombach in Freiburg",
+      "url": "https://www.rombach.de/shop/",
+      "snippet": "Bestellen Sie Bücher, Hörbücher, DVDs und Spiele direkt nach Hause oder in unsere Filialen in Freiburg und Lahr! Buch dabei - …"
+    },
+    {
+      "title": "Hutten - Bücher für Frankfurt (Oder)",
+      "url": "https://hutten-ffo.buchhandlung.de/shop/",
+      "snippet": "Bei uns können Sie Bücher, eBooks, tolino eReader und Hörbücher online bestellen, versandkostenfrei nach Hause liefern lassen …"
+    }
+  ]
+}

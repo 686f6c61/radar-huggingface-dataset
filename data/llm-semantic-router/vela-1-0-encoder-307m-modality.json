@@ -5,7 +5,7 @@
   "author": "llm-semantic-router",
   "url": "https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Modality",
   "created_at": "2026-09-12T16:47:32.000Z",
-  "updated_at": "2026-09-12T17:04:17.000Z",
+  "updated_at": "2026-09-12T23:13:07.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",

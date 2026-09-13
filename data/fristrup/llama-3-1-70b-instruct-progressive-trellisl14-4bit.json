@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "fristrup/Llama-3.1-70B-Instruct-Progressive-TrellisL14-4Bit",
+  "slug": "fristrup-llama-3-1-70b-instruct-progressive-trellisl14-4bit",
+  "author": "fristrup",
+  "url": "https://huggingface.co/fristrup/Llama-3.1-70B-Instruct-Progressive-TrellisL14-4Bit",
+  "created_at": "2026-09-12T21:26:55.000Z",
+  "updated_at": "2026-09-12T21:27:22.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "llama",
+    "base_model:meta-llama/Llama-3.1-70B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-70B-Instruct",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 38965770392,
+  "storage_human": "39.0 GB",
+  "base_model": "meta-llama/Llama-3.1-70B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Explore and share videos, music, and more on YouTube, the leading platform for online video streaming and sharing."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "YouTube's official YouTube channel You found us. Welcome to the official YouTube channel – a home for the biggest moments, the …"
+    },
+    {
+      "title": "Y (lettre) — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Y_(lettre)",
+      "snippet": "Y (la lettre se nomme « i grec » et se prononce isolée /i/) est la 25e lettre de l' alphabet latin moderne. Le graphème majuscule est le …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    }
+  ]
+}

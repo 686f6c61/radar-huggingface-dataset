@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "AcyLa/multi-asset-predictive-model",
+  "slug": "acyla-multi-asset-predictive-model",
+  "author": "AcyLa",
+  "url": "https://huggingface.co/AcyLa/multi-asset-predictive-model",
+  "created_at": "2026-09-12T22:53:08.000Z",
+  "updated_at": "2026-09-12T22:55:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "ml-intern",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 58397606,
+  "storage_human": "58 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Netflix - 知乎",
+      "url": "https://www.zhihu.com/topic/19552757/hot",
+      "snippet": "Netflix (Nasdaq NFLX) 成立于1997年，是一家为世界多国提供网络视频点播的公司，主要提供Netflix超大数量的DVD并免费递送，总 …"
+    },
+    {
+      "title": "银河录像局靠谱吗? - 知乎",
+      "url": "https://www.zhihu.com/question/3141235744",
+      "snippet": "第一次在银河录像局买的Netflix，为什么在这里买，因为我看比奈飞小铺便宜，所以在奈飞小铺的Netflix会员到期后购买了银河录像局 …"
+    },
+    {
+      "title": "Adolescence (2025) | Netflix | DonanımHaber Forum",
+      "url": "https://forum.donanimhaber.com/adolescence-2025-netflix--160804556",
+      "snippet": "Adolescence (2025) | Netflix Sıcak Fırsatlarda Tıklananlar Editörün Seçtiği Fırsatlar Daha Fazla"
+    },
+    {
+      "title": "Samsung Smart TV'de Netflix Bağlantı Sorunları: Çözümler",
+      "url": "https://forum.donanimhaber.com/samsung-smart-tv-netflix-uygulamasi-baglanti-problemi-ve-cozumu--121113154",
+      "snippet": "Samsung Smart TV'nizde Netflix bağlantı sorunları mı yaşıyorsunuz? \"Açılmıyor\", \"227035 hatası\" ve daha fazlası gibi yaygın …"
+    },
+    {
+      "title": "如何强制播放 Netflix 1080P 清晰度视频？ - 知乎",
+      "url": "https://www.zhihu.com/question/406310327",
+      "snippet": "已经开通了 Netflix 高级会员，并且在设置里选择了超清清晰度，为什么播放视频还是不清晰呢？"
+    }
+  ]
+}

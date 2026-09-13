@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Kavin60606/isr-aloha-act-ckpts",
+  "slug": "kavin60606-isr-aloha-act-ckpts",
+  "author": "Kavin60606",
+  "url": "https://huggingface.co/Kavin60606/isr-aloha-act-ckpts",
+  "created_at": "2026-09-12T20:00:15.000Z",
+  "updated_at": "2026-09-12T20:10:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "aloha",
+    "isr",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4755674648,
+  "storage_human": "4.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "recuperar acesso id apple - Comunidade da Apple",
+      "url": "https://communities.apple.com/pt/thread/254871703",
+      "snippet": "May 17, 2023 · Para evitar atrasos, desligue outros dispositivos que estão com a sessão iniciada com o ID Apple até que a …"
+    },
+    {
+      "title": "Compte Apple Bloqué - Communauté Apple",
+      "url": "https://communities.apple.com/fr/thread/256352907",
+      "snippet": "5 days ago · Une fois la récupération de compte commencée, Apple peut imposer un délai de sécurité de plusieurs jours. …"
+    },
+    {
+      "title": "Apple Byte - Lowyat.NET",
+      "url": "https://forum.lowyat.net/AppleByte",
+      "snippet": "Welcome Guest ( Log In | Register ) Lowyat.NET -> Apple Byte Apple Byte Rules and Regulations Apple Byte Subforums ... RSS …"
+    },
+    {
+      "title": "Offre \"Back to School\" 2026 - Communauté Apple",
+      "url": "https://communities.apple.com/fr/thread/256336632",
+      "snippet": "Aug 6, 2026 · Apple ne communique pas à l’avance sur la date de lancement de cette offre, donc personne sur la Communauté ne …"
+    },
+    {
+      "title": "Problème de morceau tronqué - fin manqua… - Communauté Apple",
+      "url": "https://communities.apple.com/fr/thread/256352897",
+      "snippet": "4 days ago · La Communauté d’assistance Apple est un forum d’utilisateurs et d’utilisatrices et ne dispose pas d’un accès permettant …"
+    }
+  ]
+}

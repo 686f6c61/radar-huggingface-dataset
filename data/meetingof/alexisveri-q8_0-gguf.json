@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "meetingof/alexisveri-Q8_0-GGUF",
+  "slug": "meetingof-alexisveri-q8_0-gguf",
+  "author": "meetingof",
+  "url": "https://huggingface.co/meetingof/alexisveri-Q8_0-GGUF",
+  "created_at": "2026-09-13T01:13:21.000Z",
+  "updated_at": "2026-09-13T01:13:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "gguf",
+    "base_model:adapter:ogulcanaydogan/Turkish-LLM-7B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "llama-cpp",
+    "gguf-my-lora",
+    "text-generation",
+    "base_model:meetingof/alexisveri",
+    "base_model:adapter:meetingof/alexisveri",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 41943040,
+  "parameters_human": "41.9M",
+  "storage_bytes": 65239520,
+  "storage_human": "65 MB",
+  "base_model": "meetingof/alexisveri",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Releases · bloxstraplabs/bloxstrap - GitHub",
+      "url": "https://github.com/bloxstraplabs/bloxstrap/releases",
+      "snippet": "Aug 5, 2022 · All of Bloxstrap's other features like modding and activity detection will continue to work. We'll also be adding some …"
+    },
+    {
+      "title": "Releases · bloxstrapr/Bloxstrap - GitHub",
+      "url": "https://github.com/bloxstrapr/Bloxstrap/releases",
+      "snippet": "Oct 16, 2025 · This release mainly focuses on removing outdated and broken features that no longer function correctly due to recent …"
+    },
+    {
+      "title": "Release notes | Bloxstrap",
+      "url": "https://bloxstraplabs.com/versions/",
+      "snippet": "Dec 27, 2024 · Bloxstrap is an alternative launcher for Roblox that provides additional useful features and functions."
+    },
+    {
+      "title": "Bloxstrap",
+      "url": "https://bloxstraplabs.com/",
+      "snippet": "Bloxstrap is an alternative launcher for Roblox that provides additional useful features and functions."
+    },
+    {
+      "title": "Download | Bloxstrap",
+      "url": "https://bloxstraplabs.com/download/",
+      "snippet": "Bloxstrap is an alternative launcher for Roblox that provides additional useful features and functions."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Codeflux/NeoHorse-1-4B-FP8",
+  "slug": "codeflux-neohorse-1-4b-fp8",
+  "author": "Codeflux",
+  "url": "https://huggingface.co/Codeflux/NeoHorse-1-4B-FP8",
+  "created_at": "2026-09-12T20:40:47.000Z",
+  "updated_at": "2026-09-12T20:45:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "modelopt",
+  "languages": [],
+  "tags": [
+    "modelopt",
+    "safetensors",
+    "qwen3_5_text",
+    "agentic",
+    "tool-use",
+    "coding",
+    "reasoning",
+    "instruction-following",
+    "fp8",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "arxiv:2609.08183",
+    "base_model:TokenRhythm/NeoHorse-1-4B",
+    "base_model:quantized:TokenRhythm/NeoHorse-1-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 4867681041,
+  "storage_human": "4.9 GB",
+  "base_model": "TokenRhythm/NeoHorse-1-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "YouTube Creator Awards",
+      "url": "https://support.google.com/youtube/answer/7682560?hl=en",
+      "snippet": "YouTube Creator Awards are our way of recognizing the extraordinary effort creators put into their growing channels and to build …"
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的 ...",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    },
+    {
+      "title": "谷歌账号注册验证无法发出信息怎么办? - 知乎",
+      "url": "https://www.zhihu.com/question/1945629068243481180",
+      "snippet": "3、国内注册的账号能否使用 YouTube 和 Google Play？ 完全可以。 Google 账号是全球通用的，注册成功后即可无缝登录谷歌全家桶 …"
+    },
+    {
+      "title": "An update to how we count public views across YouTube",
+      "url": "https://support.google.com/youtube/thread/433409976/an-update-to-how-we-count-public-views-across-youtube?hl=en",
+      "snippet": "Aug 17, 2026 · Last year, we updated how we count public views for Shorts to better capture how viewers watch on YouTube. Now, …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_insert_xxf_character-0k_1k_2k_3k_4k_simpleavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_insert_xxf_character-0k_1k_2k_3k_4k_simpleavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-0k_1k_2k_3k_4k_simpleavg_merge",
+  "created_at": "2026-09-12T23:45:58.000Z",
+  "updated_at": "2026-09-12T23:46:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "海運還是空運：優缺點一覽 | M & P International Freights",
+      "url": "https://www.mpfreight.tw/choosing-between-sea-freight-and-air-freight-comprehensive-guide/",
+      "snippet": "Apr 23, 2024 · 不僅如此，臺灣四面環海，故欲外銷免不了需要觸及海運或空運的貨運模式。 在全球貿易中，空運和海運都佔有重要地 …"
+    },
+    {
+      "title": "空運海運差別：解析兩大物流方式的關鍵差異與應用 - 時時頭條",
+      "url": "https://www.ttnews.tw/keji/1778586348759524.html",
+      "snippet": "May 12, 2026 · 空運：由於飛機的營運成本（燃油、維護、機組人員、機場費用等）相對較高，加上其高效的速度，因此空運的運費通 …"
+    },
+    {
+      "title": "空運 vs 海運怎麼選？進出口物流方式全解析 - 欣樺國際物流",
+      "url": "https://www.shil.com.tw/blog/air-vs-sea-freight",
+      "snippet": "Sep 18, 2025 · 在全球化貿易時代， 空運 與 海運 是最常見的兩種進出口物流方式。 許多企業在安排國際運輸時，最常遇到的問題就 …"
+    },
+    {
+      "title": "DHL是空運還是海運？國際快遞、空運與海運差異全解析 - UpToGo",
+      "url": "https://uptogo.com.tw/%E5%9C%8B%E9%9A%9B/dhl%E6%98%AF%E7%A9%BA%E9%81%8B%E9%82%84%E6%98%AF%E6%B5%B7%E9%81%8B%EF%BC%9F/",
+      "snippet": "想要釐清這個問題，並找出最省錢、最有效率的運輸方案，就需要深入瞭解國際快遞、國際空運以及海運之間的本質差異。 本文將為 …"
+    },
+    {
+      "title": "海運 vs 空運怎麼選？進出口商與電商賣家的貨運決策完整指南",
+      "url": "https://blog2.jumping.group/sea-freight-vs-air-freight-guide/",
+      "snippet": "May 29, 2026 · 「海運比空運便宜」這是常識，但很多進出口商因此多花了比省下更多的錢。這篇指南幫你算清楚費用結構、時間成本 …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "offlyn/offlyn-gemma4-e2b-lora",
+  "slug": "offlyn-offlyn-gemma4-e2b-lora",
+  "author": "offlyn",
+  "url": "https://huggingface.co/offlyn/offlyn-gemma4-e2b-lora",
+  "created_at": "2026-09-13T01:14:05.000Z",
+  "updated_at": "2026-09-13T01:15:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 234945669,
+  "storage_human": "235 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Blinded by the Light - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Blinded_by_the_Light",
+      "snippet": "\" Blinded by the Light \" is a song written and recorded by Bruce Springsteen, which first appeared on his 1973 debut album Greetings …"
+    },
+    {
+      "title": "Bruce Springsteen - Blinded by the Light - YouTube",
+      "url": "https://www.youtube.com/watch?v=uozMTmEjxHc",
+      "snippet": "Apr 25, 2011 · Bruce Springsteen - Blinded by the Light Bruce Springsteen - Blinded by the Light first song from first album (Greetings …"
+    },
+    {
+      "title": "Manfred Mann's Earth Band - Blinded By The Light (official video)",
+      "url": "https://www.youtube.com/watch?v=pqTE1JvI-mE",
+      "snippet": "Jul 11, 2014 · Manfred Mann's Earth Band - Blinded By The Light (official video) The70sPopCultureBox 7.48K subscribers 1.9K"
+    },
+    {
+      "title": "Blinded By The Light - Song Context",
+      "url": "https://www.songcontext.com/songs/blinded-by-the-light",
+      "snippet": "Lyrics meaning of Blinded By The Light by Manfred Mann's Earth Band (Bruce Springsteen), and what it is about. Written and …"
+    },
+    {
+      "title": "Who Originally Sang Blinded By The Light? - Great Oldies",
+      "url": "https://greatoldies.com/blinded-by-the-light/",
+      "snippet": "Dec 26, 2021 · Bruce Springsteen wrote and recorded Blinded By the Light first. It was on his very first album, Greetings from Asbury …"
+    }
+  ]
+}

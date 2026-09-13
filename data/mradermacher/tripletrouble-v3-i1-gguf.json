@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/TripleTrouble-V3-i1-GGUF",
   "created_at": "2026-09-12T15:36:20.000Z",
-  "updated_at": "2026-09-12T15:52:29.000Z",
+  "updated_at": "2026-09-12T23:00:08.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -24,13 +24,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
-  "storage_bytes": 13131840928,
-  "storage_human": "13.1 GB",
+  "storage_bytes": 370842765216,
+  "storage_human": "370.8 GB",
   "base_model": "OliviaRossi/TripleTrouble-V3",
   "formats": [
     "gguf"

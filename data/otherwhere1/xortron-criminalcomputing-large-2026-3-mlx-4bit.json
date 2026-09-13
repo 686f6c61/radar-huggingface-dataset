@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "otherwhere1/XORTRON.CriminalComputing.LARGE.2026.3-mlx-4Bit",
+  "slug": "otherwhere1-xortron-criminalcomputing-large-2026-3-mlx-4bit",
+  "author": "otherwhere1",
+  "url": "https://huggingface.co/otherwhere1/XORTRON.CriminalComputing.LARGE.2026.3-mlx-4Bit",
+  "created_at": "2026-09-13T01:31:52.000Z",
+  "updated_at": "2026-09-13T01:36:44.000Z",
+  "license": "wtfpl",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "zh",
+    "ja",
+    "ru",
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "zh",
+    "ja",
+    "ru",
+    "ko",
+    "base_model:darkc0de/XORTRON.CriminalComputing.LARGE.2026.3",
+    "base_model:quantized:darkc0de/XORTRON.CriminalComputing.LARGE.2026.3",
+    "license:wtfpl",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 122610069504,
+  "parameters_human": "122.61B",
+  "storage_bytes": 68971525840,
+  "storage_human": "69.0 GB",
+  "base_model": "darkc0de/XORTRON.CriminalComputing.LARGE.2026.3",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mycanal - Forum TV & Vidéo",
+      "url": "https://forums.commentcamarche.net/forum/affich-34018554-mycanal",
+      "snippet": "Oct 22, 2016 · bonsoir à vous toutes et tous nouvelle et novice, j'ai besoin de votre aide concernant mycanal et les films et vidéos à …"
+    },
+    {
+      "title": "Police d'écriture de canal+ - Forum Graphisme - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-14777626-police-d-ecriture-de-canal",
+      "snippet": "bonjour59 - Modifié le 16 oct. 2009 à 17:27 sarahmoon - 16 oct. 2009 à 22:31"
+    },
+    {
+      "title": "Avec Opéra impossible de se connecter à Canal+/My Canal",
+      "url": "https://forum.pcastuces.com/avec_opera_impossible_de_se_connecter_a_canal_my_canal-f6s82058.htm",
+      "snippet": "Merci Le Marnais - Je viens de le faire, je reste inlassablement bloqué"
+    },
+    {
+      "title": "Projeter mycanal sur tv - PC Astuces",
+      "url": "https://forum.pcastuces.com/projeter_mycanal_sur_tv-f9s54749.htm",
+      "snippet": "Mar 12, 2018 · Bonjour, au moins par câble depuis PC, bien sûr. En wifi, il faudrait par exemple que la télé dispose de la technologie …"
+    },
+    {
+      "title": "The americans s6e10 épisode indisponible ! - Avec Réponse (s)",
+      "url": "https://assistance.canalplus.com/questions/2246969-the-americans-s6e10-episode-indisponible",
+      "snippet": "Feb 29, 2020 · Sur l appli myCANAL bbox (les autres épisodes sont bien visionnables) . Et en effet sur l iPad ça fonctionne ! Merci …"
+    }
+  ]
+}

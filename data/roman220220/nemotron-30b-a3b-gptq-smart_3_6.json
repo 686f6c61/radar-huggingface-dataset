@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "roman220220/nemotron-30b-a3b-gptq-smart_3_6",
+  "slug": "roman220220-nemotron-30b-a3b-gptq-smart_3_6",
+  "author": "roman220220",
+  "url": "https://huggingface.co/roman220220/nemotron-30b-a3b-gptq-smart_3_6",
+  "created_at": "2026-09-13T01:09:57.000Z",
+  "updated_at": "2026-09-13T01:26:48.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "nemotron_h",
+    "quantized",
+    "gptq",
+    "nemotron",
+    "mixed-precision",
+    "license:other",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31577935872,
+  "parameters_human": "31.58B",
+  "storage_bytes": 31150275610,
+  "storage_human": "31.2 GB",
+  "base_model": "nvidia/Nemotron-3.5-Lightning-30B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "استنساخ ماستر - تطبيقات متعددة APK للاندرويد تنزيل",
+      "url": "https://apkpure.com/ar/clone-master-multi-app/com.cmaster.cloner",
+      "snippet": "2.8.0.10 استنساخ ماستر - تطبيقات متعددة APK تنزيل للاندرويد استنساخ ماستر - تطبيقات متعددة هو تطبيق أدوات يتيح تشغيل نسخ متعددة من التطبيقات على هاتف واحد."
+    },
+    {
+      "title": "استنساخ ماستر - تطبيقات متعددة - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.cmaster.cloner&hl=ar",
+      "snippet": "تجربة مستخدم مخصصة:- قم بتخصيص كل تطبيق مستنسخ حسب تفضيلاتك. قم بتخصيص أسماء التطبيقات والأيقونات والأذونات لإنشاء تجربة هاتف ذكي مخصصة حقًا."
+    },
+    {
+      "title": "معنى و ترجمة كلمة مستنسخ في القاموس, تعريف وشرح بالعربي",
+      "url": "https://www.alburaq.net/meaning/%D9%85%D8%B3%D8%AA%D9%86%D8%B3%D8%AE",
+      "snippet": "هل تريد معرفة معنى مستنسخ؟ هذه الصفحة لمعرفة معنى وتعريف الكلمة وشرح كلمة مستنسخ بالاضافة لبعض المفردات المرادفة مع الترجمة إلى الإنجليزية."
+    },
+    {
+      "title": "Clone Master 2.8.0.20 لـAndroid - قم بتنزيل ملف ... - Uptodown",
+      "url": "https://clone-master.ar.uptodown.com/android",
+      "snippet": "إحدى أعظم نقاط قوة Clone Master هي القدرة على تخصيص مظهر كل تطبيق مستنسخ وأذوناته إلى أقصى حد. على سبيل المثال، يمكنك تغيير اسم وأيقونة أي أداة، وكذلك تعديل أذوناتها أو إشعاراتها …"
+    },
+    {
+      "title": "App Cloner 2.17.15 لـAndroid - قم بتنزيل ملف ... - Uptodown",
+      "url": "https://app-cloner.ar.uptodown.com/android",
+      "snippet": "قم بتنزيل تطبيق APK لـ App Cloner لـ Android‏ مجانا . أنشئ نسخة إضافية لأي تطبيق تريد. App Cloner هو تطبيق سيمكنك من إنشاء نسخة مطابقة لأي تطبيق موجود في..."
+    }
+  ]
+}

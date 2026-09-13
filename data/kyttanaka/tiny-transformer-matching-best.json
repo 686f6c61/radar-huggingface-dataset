@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Kyttanaka/tiny-transformer-matching-best",
+  "slug": "kyttanaka-tiny-transformer-matching-best",
+  "author": "Kyttanaka",
+  "url": "https://huggingface.co/Kyttanaka/tiny-transformer-matching-best",
+  "created_at": "2026-09-12T19:56:55.000Z",
+  "updated_at": "2026-09-12T19:57:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sphynx cat - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sphynx_cat",
+      "snippet": "The Sphynx cat (pronounced SFINKS, / ˈsfɪŋks / ⓘ) also known as the Canadian Sphynx, is a breed of cat known for its lack of fur. …"
+    },
+    {
+      "title": "Cats in ancient Egypt - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cats_in_ancient_Egypt",
+      "snippet": "The protective function of cats is indicated in the Book of the Dead, where a cat represents Ra and the benefits of the sun for life on …"
+    },
+    {
+      "title": "Sphynx Kittens for sale - Pets4Homes",
+      "url": "https://www.pets4homes.co.uk/sale/kittens/sphynx/",
+      "snippet": "The distinctive Sphynx cat is recognized for its hairless coat and elegant, muscular physique. Originating from Canada, the Sphynx is …"
+    },
+    {
+      "title": "Sphynx - TICA - The International Cat Association",
+      "url": "https://tica.org/breed/sphynx/",
+      "snippet": "The intriguing Sphynx cat never fails to draw a reaction from people – some people love the bald, wrinkled look, some are fascinated …"
+    },
+    {
+      "title": "Peterbald vs Sphynx: Key Differences (With Pictures) - Catster",
+      "url": "https://www.catster.com/cat-breeds/peterbald-vs-sphynx/",
+      "snippet": "Mar 30, 2026 · The Peterbald and Sphynx cats look similar, but are two very different breeds with unique origins. Learn about each …"
+    }
+  ]
+}

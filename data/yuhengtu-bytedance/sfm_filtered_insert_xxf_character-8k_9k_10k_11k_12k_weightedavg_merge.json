@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_insert_xxf_character-8k_9k_10k_11k_12k_weightedavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_insert_xxf_character-8k_9k_10k_11k_12k_weightedavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-8k_9k_10k_11k_12k_weightedavg_merge",
+  "created_at": "2026-09-13T00:51:29.000Z",
+  "updated_at": "2026-09-13T00:52:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Domino's Pizza México",
+      "url": "https://www.dominos.com.mx/",
+      "snippet": "Order pizza, pasta, sandwiches & more online for carryout or delivery from Domino's Pizza. View menu, find locations, track orders. …"
+    },
+    {
+      "title": "Pizzas",
+      "url": "https://www.pizzahut.com.mx/",
+      "snippet": "Personaliza tu pizza perfecta con ingredientes frescos y elige entre nuestras deliciosas masas: Orilla Rellena de Queso, Pan Pizza, …"
+    },
+    {
+      "title": "La Pizzeria | Agua Prieta - Facebook",
+      "url": "https://www.facebook.com/Lapizzeria1ap/",
+      "snippet": "La Pizzeria, Agua Prieta. 21,611 likes · 61 talking about this · 12,155 were here. “La Pizzería es el lugar donde el antojo se convierte …"
+    },
+    {
+      "title": "37 pizzerías más populares en Ciudad de México | OpenTable",
+      "url": "https://www.opentable.com.mx/cuisine/best-pizzeria-restaurants-mexico-city-languedoc-roussillon",
+      "snippet": "1 day ago · Reserva ahora en pizzerías cerca de ti en Ciudad de México en OpenTable. Explora reseñas, menús y fotos, y encuentra …"
+    },
+    {
+      "title": "Pizzería La Sierra",
+      "url": "https://www.pizzerialasierra.com/WEB/",
+      "snippet": "Pizzería La Sierra es una familia en constante crecimiento, reconocidos por su exquisita pizza menonita. Desde su fundación en …"
+    }
+  ]
+}

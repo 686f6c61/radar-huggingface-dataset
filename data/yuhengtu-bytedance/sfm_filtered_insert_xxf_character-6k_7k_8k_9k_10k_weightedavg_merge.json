@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_insert_xxf_character-6k_7k_8k_9k_10k_weightedavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_insert_xxf_character-6k_7k_8k_9k_10k_weightedavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-6k_7k_8k_9k_10k_weightedavg_merge",
+  "created_at": "2026-09-13T00:35:38.000Z",
+  "updated_at": "2026-09-13T00:36:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Connectivism - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Connectivism",
+      "snippet": "Connectivism is a theoretical framework for understanding learning in a digital age. It emphasizes how internet technologies such as …"
+    },
+    {
+      "title": "Connectivism Learning Theory - Educational Technology",
+      "url": "https://educationaltechnology.net/connectivism-learning-theory/",
+      "snippet": "Nov 15, 2024 · What is Connectivism Learning Theory? Connectivism is an innovative learning theory, which proposes that, in order …"
+    },
+    {
+      "title": "Connectivism Learning Theory: A Guide for Educators",
+      "url": "https://www.wgu.edu/blog/connectivism-learning-theory2105.html",
+      "snippet": "Mar 1, 2026 · Connectivism learning theory is a modern educational framework designed to address the learning needs of the digital …"
+    },
+    {
+      "title": "Connectivism: A Learning Theory for the Digital Age - E-Student",
+      "url": "https://e-student.org/connectivist-learning-theory/",
+      "snippet": "Jun 10, 2026 · Connectivism is a learning theory for the digital age, where knowledge lives across networks and technology. Learn …"
+    },
+    {
+      "title": "Connectivism | Education | Research Starters - EBSCO",
+      "url": "https://www.ebsco.com/research-starters/education/connectivism",
+      "snippet": "Connectivism is a learning theory designed to explain how individuals acquire knowledge in the digital age, emphasizing the role of …"
+    }
+  ]
+}

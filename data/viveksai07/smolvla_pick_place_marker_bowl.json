@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "VivekSai07/smolvla_pick_place_marker_bowl",
+  "slug": "viveksai07-smolvla_pick_place_marker_bowl",
+  "author": "VivekSai07",
+  "url": "https://huggingface.co/VivekSai07/smolvla_pick_place_marker_bowl",
+  "created_at": "2026-09-12T21:21:30.000Z",
+  "updated_at": "2026-09-12T21:24:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:Rakeshdharan56/pick_place_marker_bowl",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906727744,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[Officiel] Microsoft Rewards sur le forum Xbox Series X - 05-08-2020 13 ...",
+      "url": "https://www.jeuxvideo.com/forums/42-3017784-63881696-1-0-1-0-officiel-microsoft-rewards.htm",
+      "snippet": "Aug 5, 2020 · Qu'est-ce que le programme Microsoft Rewards ?Le programme Microsoft Rewards est un programme de fidélité de …"
+    },
+    {
+      "title": "800€ de remise avec un code promo Microsoft Store ... - Dealabs",
+      "url": "https://www.dealabs.com/codes-promo/microsoftstore",
+      "snippet": "Nos meilleurs Code promo Microsoft n’attendent que vous sur Dealabs en septembre 2026 ! Découvrez 7 offres testées et valides …"
+    },
+    {
+      "title": "[Officiel] Microsoft Rewards sur le forum Xbox Series X - 23-09-2025 22 ...",
+      "url": "https://www.jeuxvideo.com/forums/42-3017784-63881696-706-0-1-0-0.htm",
+      "snippet": "Sep 23, 2025 · Accueil Tous les forums Forum Xbox Series X Topic [Officiel] Microsoft Rewards Topic [Officiel] Microsoft Rewards - …"
+    },
+    {
+      "title": "Bons plans Spotify : promotions en ligne et en magasin » Dealabs",
+      "url": "https://www.dealabs.com/groupe/spotify",
+      "snippet": "Oct 4, 2025 · Les meilleures offres et promos Spotify Trouvez le bon plan idéal avec la communauté Dealabs - Bons plans, codes …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/ja-jp/windows/forum/all/ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â«ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â­ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â®ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡/9804990c-60c8-440c-b1ab-2a0a01c8a749",
+      "snippet": ""
+    }
+  ]
+}

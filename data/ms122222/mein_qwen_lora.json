@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ms122222/mein_qwen_lora",
+  "slug": "ms122222-mein_qwen_lora",
+  "author": "ms122222",
+  "url": "https://huggingface.co/ms122222/mein_qwen_lora",
+  "created_at": "2026-09-12T23:55:19.000Z",
+  "updated_at": "2026-09-12T23:55:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3",
+    "trl",
+    "en",
+    "base_model:huihui-ai/Huihui-Qwen3-14B-abliterated-v2",
+    "base_model:finetune:huihui-ai/Huihui-Qwen3-14B-abliterated-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 268399428,
+  "storage_human": "268 MB",
+  "base_model": "huihui-ai/Huihui-Qwen3-14B-abliterated-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prime Video: oglądaj, wypożyczaj lub kupuj seriale i programy online",
+      "url": "https://www.primevideo.com/?contentId=home&language=pl_PL&contentType=tv",
+      "snippet": "Przeglądaj, odtwarzaj, kupuj lub wypożyczaj najpopularniejsze seriale i programy w usłudze Prime Video. Odkryj popularne przeboje, …"
+    },
+    {
+      "title": "The Grand Tour - Welcome to Prime Video",
+      "url": "https://www.primevideo.com/",
+      "snippet": "Enjoy exclusive Amazon Originals as well as popular movies and TV shows. Watch anytime, anywhere. Start your free trial."
+    },
+    {
+      "title": "Prime Video: Get the app",
+      "url": "https://app.primevideo.com/home",
+      "snippet": "Watch movies and TV shows on the web at Amazon.com/primevideo or with the Prime Video app on your iOS and Android phone, …"
+    },
+    {
+      "title": "Prime Video: Watch, rent, or buy movies online",
+      "url": "https://www.amazon.com/gp/video/movie",
+      "snippet": "Browse top movies to stream, rent, or buy on Prime Video. Discover popular hits, new releases, and exclusive titles included with …"
+    },
+    {
+      "title": "Amazon.com: Prime Video: Prime Video",
+      "url": "https://www.amazon.com/gp/video/collection/IncludedwithPrime",
+      "snippet": "Season 1・For decades, Bear has survived dangerous expeditions with Christ by his side. Now he's taking the stars of The Chosen …"
+    }
+  ]
+}

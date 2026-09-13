@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "cmes-deepvision/ACR-instance-segmentation-RF-Refinement-v1.0.1",
+  "slug": "cmes-deepvision-acr-instance-segmentation-rf-refinement-v1-0-1",
+  "author": "cmes-deepvision",
+  "url": "https://huggingface.co/cmes-deepvision/ACR-instance-segmentation-RF-Refinement-v1.0.1",
+  "created_at": "2026-09-13T00:59:33.000Z",
+  "updated_at": "2026-09-13T01:04:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": "rfdetr",
+  "languages": [],
+  "tags": [
+    "rfdetr",
+    "tensorboard",
+    "instance-segmentation",
+    "refinement",
+    "acr",
+    "pytorch",
+    "image-segmentation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 157788988,
+  "storage_human": "158 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Video Merge: Joiner & Combiner - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.psma.videomerge&hl=en-US",
+      "snippet": "Whether you want to join unlimited video clips, create amazing video collages, or mix audio with video, our app does it all in seconds. …"
+    },
+    {
+      "title": "Video Merger, Collage & Editor - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.video_joiner.video_merger&hl=en-US",
+      "snippet": "Video Merger, Joiner, Collage can merge or join any number of Videos together in one Video. It has advanced video editing features …"
+    },
+    {
+      "title": "Video Joiner APK for Android Download - APKPure.com",
+      "url": "https://apkpure.com/video-joiner-video-merger/com.VideoVibe.VideoMerge",
+      "snippet": "Apr 16, 2026 · No need for complex software – our app offers a simple and powerful solution to merge videos in different formats, …"
+    },
+    {
+      "title": "Video Merger, Collage & Editor APK for Android Download",
+      "url": "https://apkpure.com/video-merger-collage-editor/com.video_joiner.video_merger",
+      "snippet": "Jul 11, 2026 · Merge videos multiple format, Video collage maker. Cut Trim & Crop Video Editor. Video Merger, Joiner, Collage can …"
+    },
+    {
+      "title": "How Do I Combine Videos on My Android for Free: Handy Methods …",
+      "url": "https://blinksandbuttons.net/how-do-i-combine-videos-on-my-android-for-free/",
+      "snippet": "Jul 11, 2025 · Yes, you can combine videos on your Android without losing quality by using apps that support high-resolution video …"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ukisai/Swift-Qwen3.8-27B-NVFP4",
+  "slug": "ukisai-swift-qwen3-8-27b-nvfp4",
+  "author": "ukisai",
+  "url": "https://huggingface.co/ukisai/Swift-Qwen3.8-27B-NVFP4",
+  "created_at": "2026-09-12T21:28:35.000Z",
+  "updated_at": "2026-09-12T21:38:54.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5",
+    "qwen3_8",
+    "efficient-thinking",
+    "reasoning",
+    "token-efficient",
+    "nvfp4",
+    "fp4",
+    "compressed-tensors",
+    "blackwell",
+    "image-text-to-text",
+    "conversational",
+    "base_model:ukisai/Swift-Qwen3.8-27b",
+    "base_model:quantized:ukisai/Swift-Qwen3.8-27b",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 28571960950,
+  "storage_human": "28.6 GB",
+  "base_model": "ukisai/Swift-Qwen3.8-27b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "La vidéo à la demande ne fonctionne pas sura box ... - CANAL",
+      "url": "https://assistance.canalplus.com/questions/3088393-video-demande-fonctionne-sura-box-canal-appuie-lecture-rien",
+      "snippet": "Dec 27, 2022 · Bonjour, Je ne peux plus regarder de vidéo à la demande su rma tv via le décodeur canal. J'appui sur lecture mais …"
+    },
+    {
+      "title": "Les Papas du Rock - Résolue - CANAL+ Assistance",
+      "url": "https://assistance.canalplus.com/questions/2638934-papas-rock",
+      "snippet": "Mar 23, 2021 · Malgré mon abonnement Famille qui comprend l'accès à la chaîne MTV Hits, je ne parviens pas à revoir les épisodes …"
+    },
+    {
+      "title": "Parti en vacances en oubliant la télécommande - Avec Réponse(s)",
+      "url": "https://assistance.canalplus.com/questions/1674646-parti-vacances-oubliant-telecommande",
+      "snippet": "Parti en vacances en oubliant la télécommande Vous pouvez aussi demander à être rappelé par un conseiller. Rendez-vous sur …"
+    },
+    {
+      "title": "Replay le mystère de oak island saison 7 - CANAL+ Assistance",
+      "url": "https://assistance.canalplus.com/questions/2408873-replay-mystere-oak-island-saison-7",
+      "snippet": "Jul 28, 2020 · Bonjour, Je viens de m'abonner cette après-midi à canal+ et bouquet family pour avoir accès à la saison 7 en replay …"
+    },
+    {
+      "title": "J ai accès au chaine - Avec Réponse (s) - CANAL+ Assistance",
+      "url": "https://assistance.canalplus.com/questions/2129064-acces-chaine",
+      "snippet": "Cassagne38605968 Niveau 0 1/ 100 point Nom de l'auteur Cassagne38605968 utilisateur Publié le 27 octobre 2019 Nombre de …"
+    }
+  ]
+}

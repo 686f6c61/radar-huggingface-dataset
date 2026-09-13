@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "Elmerfudge/GLM-5.3-CYBERSECURITY-FP8",
+  "slug": "elmerfudge-glm-5-3-cybersecurity-fp8",
+  "author": "Elmerfudge",
+  "url": "https://huggingface.co/Elmerfudge/GLM-5.3-CYBERSECURITY-FP8",
+  "created_at": "2026-09-13T01:36:03.000Z",
+  "updated_at": "2026-09-13T01:36:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "ru",
+    "sr",
+    "hi",
+    "fr",
+    "es",
+    "ar",
+    "ko",
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "glm_moe_dsa",
+    "abliterated",
+    "crack",
+    "refusal-removed",
+    "domain-specific",
+    "cybersecurity",
+    "offensive-security",
+    "red-team",
+    "pentest",
+    "glm",
+    "moe",
+    "fp8",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "ru",
+    "sr",
+    "hi",
+    "fr",
+    "es",
+    "ar",
+    "ko",
+    "ja",
+    "base_model:JANGQ-AI/GLM-5.3-FP8",
+    "base_model:quantized:JANGQ-AI/GLM-5.3-FP8",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 755663574885,
+  "storage_human": "755.7 GB",
+  "base_model": "zai-org/GLM-5.3, JANGQ-AI/GLM-5.3-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Book Things To Do, Attractions, and Tours | GetYourGuide",
+      "url": "https://www.getyourguide.com/?msockid=2b7a55149f806899166642c79ec56921",
+      "snippet": "Find, compare, and book sightseeing tours, attractions, excursions, things to do and fun activities from around the world. Save money …"
+    },
+    {
+      "title": "Things to do | GetYourGuide",
+      "url": "https://www.getyourguide.com/destinations/?msockid=2b7a55149f806899166642c79ec56921",
+      "snippet": "Best price and money back guarantee! Read the reviews of your fellow travelers."
+    },
+    {
+      "title": "Originals by GetYourGuide",
+      "url": "https://www.getyourguide.com/c/originals-home?msockid=2b7a55149f806899166642c79ec56921",
+      "snippet": "Experience the world more deeply with Originals by GetYourGuide, a collection of our most immersive and unforgettable experiences …"
+    },
+    {
+      "title": "Originals by GetYourGuide",
+      "url": "https://www.getyourguide.com/c/originals-by-getyourguide/?msockid=2b7a55149f806899166642c79ec56921",
+      "snippet": "Originals by GetYourGuide Originals by GetYourGuide ‘Originals by GetYourGuide’ is a collection of exclusive, one-of-a-kind …"
+    },
+    {
+      "title": "The Explorer - GetYourGuide",
+      "url": "https://www.getyourguide.com/explorer/?msockid=2b7a55149f806899166642c79ec56921",
+      "snippet": "The Explorer is GetYourGuide's content hub for expertly curated travel inspiration, destination guides, news, and insider tips."
+    }
+  ]
+}

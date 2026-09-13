@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "waseem124/Wan2.1-T2V-14B",
+  "slug": "waseem124-wan2-1-t2v-14b",
+  "author": "waseem124",
+  "url": "https://huggingface.co/waseem124/Wan2.1-T2V-14B",
+  "created_at": "2026-09-12T22:31:24.000Z",
+  "updated_at": "2026-09-12T22:31:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "t2v",
+    "video generation",
+    "text-to-video",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14288491584,
+  "parameters_human": "14.29B",
+  "storage_bytes": 69051738782,
+  "storage_human": "69.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "बच्चे के जन्म का शुभ मुहूर्त – Hindu Panchang के अनुसार 2027",
+      "url": "https://www.jyotishasha.com/hi/panchang/muhurat/child-birth-muhurat/2027",
+      "snippet": "2027 के लिए बच्चे के जन्म का शुभ मुहूर्त – Hindu Panchang के अनुसार कैलेंडर, शुभ तिथियाँ, मासिक मुहूर्त और पंचांग आधारित …"
+    },
+    {
+      "title": "मुहूर्त 2027: शुभ मुहूर्त, तिथियों और समय के बारे में जानें",
+      "url": "https://www.ganeshaspeaks.com/hindi/muhurat/2027/",
+      "snippet": "शुभ मुहूर्त: जानें 2027 में शादी, गृह प्रवेश, नामकरण, विद्यारंभ और अंगूठी समारोह सहित जीवन की अनेक घटनाओं के लिए सबसे …"
+    },
+    {
+      "title": "शुभ मुहूर्त 2027 — विवाह, वाहन, गृह प्रवेश के शुभ दिन | KundliGPT",
+      "url": "https://kundligpt.com/hi/shubh-muhurat/2027/",
+      "snippet": "2027 के दृक-पंचांग आधारित शुभ मुहूर्त — विवाह, वाहन खरीद, गृह प्रवेश और बाल संस्कारों के शुभ दिन, नई दिल्ली हेतु गणना।"
+    },
+    {
+      "title": "हिन्दू कैलेंडर 2027 – सम्पूर्ण त्योहार, व्रत एवं ग्रहण तिथियाँ",
+      "url": "https://dekhopanchang.com/hi/hindu-calendar/2027",
+      "snippet": "May 7, 2026 · 2027 का सम्पूर्ण हिन्दू पंचांग – सभी प्रमुख त्योहार, एकादशी व्रत तिथियाँ, ग्रहण, पूर्णिमा और अमावस्या। …"
+    },
+    {
+      "title": "चाइल्ड बर्थ मुहूर्त — संपूर्ण FAQ हब | त्रिकाल वाणी",
+      "url": "https://trikalvaani.com/blog/child-birth-muhurat-faq-hindi",
+      "snippet": "Trikaal Sandesh — Direct Answer यह FAQ हब चाइल्ड बर्थ मुहूर्त से जुड़े सबसे आम सवालों के जवाब देता है — सी-सेक्शन समय, …"
+    }
+  ]
+}

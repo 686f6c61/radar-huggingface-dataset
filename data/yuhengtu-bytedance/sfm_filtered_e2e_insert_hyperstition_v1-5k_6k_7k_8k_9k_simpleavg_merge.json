@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-5k_6k_7k_8k_9k_simpleavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_e2e_insert_hyperstition_v1-5k_6k_7k_8k_9k_simpleavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-5k_6k_7k_8k_9k_simpleavg_merge",
+  "created_at": "2026-09-13T00:25:47.000Z",
+  "updated_at": "2026-09-13T00:26:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bet365 - Sports Betting APK for Android Download - APKPure.com",
+      "url": "https://apkpure.com/bet365-apostas-esportivas/com.bet365SportsBR.Bet365_Application",
+      "snippet": "6 days ago · Welcome to the modern bet365 sports betting app! Download the betting app and discover why Everything is Always …"
+    },
+    {
+      "title": "Bet365 for Android - Download the APK from Uptodown",
+      "url": "https://bet365.en.uptodown.com/android",
+      "snippet": "Sep 4, 2026 · Bet365 is the official application of the betting house of the same name. It allows you to bet on all the sports and …"
+    },
+    {
+      "title": "Download do APK de bet365 - Apostas Esportivas para Android",
+      "url": "https://apkpure.com/br/bet365-apostas-esportivas/com.bet365SportsBR.Bet365_Application",
+      "snippet": "6 days ago · Download do APK de bet365 - Apostas Esportivas para Android. Aposte em Futebol, Basquete e mais em nosso app de …"
+    },
+    {
+      "title": "bet365 - Apostas Esportivas – Apps no Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.bet365SportsBR.Bet365_Application&hl=pt-BR&gl=BR",
+      "snippet": "Baixe o app de apostas e descubra por que Tudo é Sempre Extraordinário na bet365. Patrocinador Oficial da UEFA Champions …"
+    },
+    {
+      "title": "Como baixar o app da bet365",
+      "url": "https://news.bet365.bet.br/pt-br/video/como-baixar-o-aplicativo-da-bet365-android/2024101710463421451",
+      "snippet": "Jan 21, 2025 · O app da bet365 é a melhor forma de jogar na palma da sua mão. Aproveite as funcionalidades do site com ofertas …"
+    }
+  ]
+}

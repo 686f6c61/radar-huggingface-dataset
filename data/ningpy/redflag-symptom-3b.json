@@ -5,7 +5,7 @@
   "author": "ningpy",
   "url": "https://huggingface.co/ningpy/redflag-symptom-3b",
   "created_at": "2026-09-10T11:18:44.000Z",
-  "updated_at": "2026-09-11T00:17:36.000Z",
+  "updated_at": "2026-09-12T04:48:49.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -38,7 +38,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 400,
+  "downloads_30d": 433,
   "trending_score": 0,
   "parameters": 3085938688,
   "parameters_human": "3.09B",

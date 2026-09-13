@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "beyondyourself113/0",
+  "slug": "beyondyourself113-0",
+  "author": "beyondyourself113",
+  "url": "https://huggingface.co/beyondyourself113/0",
+  "created_at": "2026-09-11T13:00:21.000Z",
+  "updated_at": "2026-09-12T19:34:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 90,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 951715690078,
+  "storage_human": "951.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "edge浏览器网页与此站点链接不安全怎么解决？ - 知乎",
+      "url": "https://www.zhihu.com/question/487808345",
+      "snippet": "Sep 19, 2021 · 方法一： 快捷方式添加参数 Chrome内核浏览器，例如 Edge 等，支持通过添加“--ignore-certificate-errors”参数改变浏 …"
+    },
+    {
+      "title": "如何修复Discord无法打开 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/ff42efa9ec3c0fc19e22020b.html",
+      "snippet": "Apr 7, 2019 · Discord被认为是最具创新性和功能最强大的互联网语音协议 [1]应用程序之一，可免费下载和使用。 首次创建于2015 …"
+    },
+    {
+      "title": "Discord - 知乎",
+      "url": "https://www.zhihu.com/topic/23739196/hot",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "discord验证问题？ - 知乎",
+      "url": "https://www.zhihu.com/question/610898214",
+      "snippet": "近几年，随着 ChatGPT、Midjourney、AI绘图、海外社媒运营等工具的火热， Discord 成为了很多工具和社区的“入门门槛”。然而，许 …"
+    },
+    {
+      "title": "discord封号怎么破? - 知乎",
+      "url": "https://www.zhihu.com/question/516470812?write",
+      "snippet": "Discord有明确的社区内容规定，不得涉黄、诈骗等敏感词汇与内容，如果你的内容被判定为此类内容，那么就很有可能被直接封禁。 …"
+    }
+  ]
+}

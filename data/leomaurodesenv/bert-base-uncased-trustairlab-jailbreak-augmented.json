@@ -5,7 +5,7 @@
   "author": "leomaurodesenv",
   "url": "https://huggingface.co/leomaurodesenv/bert-base-uncased-trustairlab-jailbreak-augmented",
   "created_at": "2026-09-11T20:26:47.000Z",
-  "updated_at": "2026-09-11T22:54:25.000Z",
+  "updated_at": "2026-09-12T20:53:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 109483778,
   "parameters_human": "109.5M",
-  "storage_bytes": 3941632881,
-  "storage_human": "3.9 GB",
+  "storage_bytes": 14890598481,
+  "storage_human": "14.9 GB",
   "base_model": "google-bert/bert-base-uncased",
   "formats": [
     "safetensors"

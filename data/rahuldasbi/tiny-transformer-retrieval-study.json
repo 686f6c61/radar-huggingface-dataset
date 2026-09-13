@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "rahuldasbi/tiny-transformer-retrieval-study",
+  "slug": "rahuldasbi-tiny-transformer-retrieval-study",
+  "author": "rahuldasbi",
+  "url": "https://huggingface.co/rahuldasbi/tiny-transformer-retrieval-study",
+  "created_at": "2026-09-13T00:17:23.000Z",
+  "updated_at": "2026-09-13T00:17:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Developer Forum | Roblox",
+      "url": "https://devforum.roblox.com/",
+      "snippet": "Chat with other creators, learn about Roblox platform updates, and report issues with the platform."
+    },
+    {
+      "title": "ForgeGUI - AI Roblox Scripting Tool Feature",
+      "url": "https://devforum.roblox.com/t/forgegui-ai-roblox-scripting-tool-feature/4734535",
+      "snippet": "Jul 13, 2026 · Hey Yall devs 👋 ForgeGUI’s AI scripting tool is a Roblox Studio plugin that turns plain-English descriptions into working …"
+    },
+    {
+      "title": "/r/Roblox - Reddit",
+      "url": "https://www.reddit.com/r/roblox/new",
+      "snippet": "A community for Roblox, the free game building platform. This community is unofficial and is not endorsed, monitored, or run by …"
+    },
+    {
+      "title": "doors_roblox - Reddit",
+      "url": "https://www.reddit.com/r/doors_roblox/",
+      "snippet": "The (un)official Subreddit for the roblox horror game “Doors”🚪 Have a Great April! The “HUNT” is now over."
+    },
+    {
+      "title": "Roblox Innovation Awards 2026: Voting is Now Open!",
+      "url": "https://devforum.roblox.com/t/roblox-innovation-awards-2026-voting-is-now-open/4763523",
+      "snippet": "Jul 29, 2026 · Key Takeaways Voting for the 2026 Roblox Innovation Awards is now open. Support your favorite games and creators …"
+    }
+  ]
+}

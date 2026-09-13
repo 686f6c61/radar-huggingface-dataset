@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "schwyzquant/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
+  "slug": "schwyzquant-qwen3-6-27b-fable-fusion-711-uncensored-heretic-nm-dau-neo-max-mtp-gguf",
+  "author": "schwyzquant",
+  "url": "https://huggingface.co/schwyzquant/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
+  "created_at": "2026-09-12T21:40:44.000Z",
+  "updated_at": "2026-09-12T21:40:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "unsloth",
+    "fine tune",
+    "heretic",
+    "uncensored",
+    "abliterated",
+    "ara",
+    "MTP GGUF Quants",
+    "Regular GGUF Quants",
+    "qwen3.6",
+    "multi-stage tuned",
+    "thinking",
+    "reasoning",
+    "all use cases",
+    "coder",
+    "creative",
+    "creative writing",
+    "all genres",
+    "story",
+    "writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "multi-stage-tune",
+    "multi-state-merge",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "dataset:DavidAU/Polar-STRICT-Datasets",
+    "dataset:DavidAU/F451-STRICT-Datasets",
+    "base_model:DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP",
+    "base_model:quantized:DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 465146653725,
+  "storage_human": "465.1 GB",
+  "base_model": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate Help",
+      "url": "https://support.google.com/translate/?hl=en",
+      "snippet": "Official Google Translate Help Center where you can find tips and tutorials on using Google Translate and other answers to …"
+    },
+    {
+      "title": "Traduttore - Community Gmail - Google Help",
+      "url": "https://support.google.com/mail/thread/408815192/traduttore?hl=it",
+      "snippet": "Feb 9, 2026 · Traduttore Quando mi arriva una email mi esce fuori il traduttore e mi dice che l email è scritta in inglese e invece è in …"
+    },
+    {
+      "title": "Trova, traduci e gestisci i contenuti nell'app Google Go",
+      "url": "https://support.google.com/websearch/answer/7579627?hl=it",
+      "snippet": "Puoi trovare pagine web, immagini e altro ancora dall'app Google Go. Google Go funziona rapidamente su diverse tipologie di …"
+    },
+    {
+      "title": "improvvisamente chrome la funzione traduci non funziona anche se l ...",
+      "url": "https://support.google.com/chrome/thread/5922246/improvvisamente-chrome-la-funzione-traduci-non-funziona-anche-se-l%E2%80%99impostazione-traduttore-e%E2%80%99on?hl=it",
+      "snippet": "May 11, 2019 · improvvisamente chrome la funzione traduci non funziona anche se l’impostazione traduttore e’on chrome non …"
+    },
+    {
+      "title": "Traduzione di parole scritte",
+      "url": "https://support.google.com/translate/answer/6142478?hl=it&co=GENIE.Platform%3DDesktop",
+      "snippet": "Traduzione di parole scritte Puoi usare l'app Google Traduttore per tradurre parole o frasi scritte. Puoi anche utilizzare Google …"
+    }
+  ]
+}

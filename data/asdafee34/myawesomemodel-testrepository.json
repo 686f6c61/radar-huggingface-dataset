@@ -5,7 +5,7 @@
   "author": "asdafee34",
   "url": "https://huggingface.co/asdafee34/MyAwesomeModel-TestRepository",
   "created_at": "2026-09-08T08:30:19.000Z",
-  "updated_at": "2026-09-08T08:30:23.000Z",
+  "updated_at": "2026-09-12T06:55:00.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -20,7 +20,7 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 19,
   "trending_score": 0,
   "parameters": null,

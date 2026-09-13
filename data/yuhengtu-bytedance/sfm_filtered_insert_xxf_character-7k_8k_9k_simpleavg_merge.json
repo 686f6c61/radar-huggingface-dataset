@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_insert_xxf_character-7k_8k_9k_simpleavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_insert_xxf_character-7k_8k_9k_simpleavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-7k_8k_9k_simpleavg_merge",
+  "created_at": "2026-09-13T00:22:21.000Z",
+  "updated_at": "2026-09-13T00:23:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.de",
+      "url": "https://www.amazon.de/gp/css/homepage.html",
+      "snippet": "Hier finden Sie alles, was Sie für Ihren Einkauf benötigen, von Elektronik bis zu Büchern und vielem mehr."
+    },
+    {
+      "title": "Amazon.de: Low Prices in Electronics, Books, Sports Equipment & more",
+      "url": "https://www.amazon.de/-/en/",
+      "snippet": "Sign up to Amazon Prime for unlimited One-Day Delivery. Low prices at Amazon on digital cameras, MP3, sports, books, music, …"
+    },
+    {
+      "title": "Amazon.de: Günstige Preise für Elektronik & Foto, Filme, Musik, Bücher ...",
+      "url": "https://account-status.amazon.de/",
+      "snippet": "Entdecken, shoppen und einkaufen bei Amazon.de: Günstige Preise für Elektronik & Foto, Filme, Musik, Bücher, Games, Spielzeug, …"
+    },
+    {
+      "title": "Amazon.de: : Alle Kategorien",
+      "url": "https://www.cdn.amazon.de/b?ie=UTF8&node=17751873031",
+      "snippet": "Online-Einkauf von mit großartigem Angebot im Alle Kategorien Shop."
+    },
+    {
+      "title": "Amazon.com: Amazon.de",
+      "url": "https://www.amazon.com/amazon-de/s?k=amazon.de",
+      "snippet": "Give the perfect gift with Amazon eGift Cards. Digital delivery with personal messages and custom amounts."
+    }
+  ]
+}

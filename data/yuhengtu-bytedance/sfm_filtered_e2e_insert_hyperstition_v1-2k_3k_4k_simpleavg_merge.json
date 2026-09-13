@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-2k_3k_4k_simpleavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_e2e_insert_hyperstition_v1-2k_3k_4k_simpleavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-2k_3k_4k_simpleavg_merge",
+  "created_at": "2026-09-12T23:42:19.000Z",
+  "updated_at": "2026-09-12T23:42:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Overdrive Wars: How Different Is Ibanez Tube Screamer From Boss Super ...",
+      "url": "https://www.ultimate-guitar.com/articles/features/overdrive_wars_how_different_is_ibanez_tube_screamer_from_boss_super_overdrive-120014",
+      "snippet": "Jun 7, 2021 · Two of the most popular mid-boosting overdrives are often used interchangeably. But how different are they really?"
+    },
+    {
+      "title": "yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-2k_3k_4k_simpleavg_merge · Hugging Face",
+      "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-2k_3k_4k_simpleavg_merge",
+      "snippet": "models: - model: /opt/tiger/Pan_Safety_Better_Measurement/merge_scaling_ckpts_cache/source_ckpts/filtered_e2e_insert_hyperstition_v1/global_step2000 parameters: weight: 1.0 - model: /opt/tiger/Pan_Safety_Better_Measurement/merge_scaling_ckpts_cache/source_ckpts/filtered_e2e_insert_hyperstition_v1/global_step3000 parameters: weight: 1.0 - model: /opt/tiger/Pan_Safety_Better_Measurement/merge_scaling_ckpts_cache/source_ckpts/filtered_e2e_insert_hyperstition_v1/global_step4000 parameters: weight: 1.0 base_model: /opt/tiger/Pan_Safety_Better_Measurement/merge_scaling_ckpts_cache/source_ckpts/filtered_e2e_insert_hyperstition_v1/global_step4000 merge_method: linear parameters: normalize: true dtype: float32 out_dtype: bfloat16"
+    },
+    {
+      "title": "Boss SD1 vs Tube Screamer – Which Overdrive Pedal to Choose?",
+      "url": "https://guitarstrive.com/boss-sd1-vs-tube-screamer/",
+      "snippet": "Jul 11, 2026 · Yes, the overdrive pedal is a key part of almost every guitarist’s pedalboard. But how do you choose the right overdrive …"
+    },
+    {
+      "title": "Boss SD-1 Super Overdrive vs Ibanez TS9 Tube Screamer (2026)",
+      "url": "https://pedalrig.com/vs/boss-sd1-vs-tube-screamer-ts9",
+      "snippet": "Boss SD-1 Super Overdrive vs Ibanez TS9 Tube Screamer: price, specs, pros & cons compared, with a verdict on which overdrive …"
+    },
+    {
+      "title": "Tube Screamer Vs. Super Overdrive Pedal - YouTube",
+      "url": "https://www.youtube.com/watch?v=fbqmWRz7VeY",
+      "snippet": "Mar 25, 2026 · In this video I demo ands compare the Ibanez Tubscreamer to the Boss Super Overdrive Pedal and show which one …"
+    }
+  ]
+}

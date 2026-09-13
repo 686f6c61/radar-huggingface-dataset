@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-5k_6k_7k_simpleavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_e2e_insert_hyperstition_v1-5k_6k_7k_simpleavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-5k_6k_7k_simpleavg_merge",
+  "created_at": "2026-09-13T00:06:14.000Z",
+  "updated_at": "2026-09-13T00:06:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Générez des styles Coucher de soleil par IA grâce au générateur d ...",
+      "url": "https://www.shutterstock.com/fr/ai-image-generator/styles/sunset-shadow?msockid=0280a970884b605d31f3bea3896161ba",
+      "snippet": "Créez instantanément des images coucher de soleil générées par IA. Saisissez une description ci-dessous pour vous lancer. …"
+    },
+    {
+      "title": "coucher de soleil : modèles gratuits à personnaliser | Canva",
+      "url": "https://www.canva.com/fr_fr/modeles/s/coucher-de-soleil/?msockid=0280a970884b605d31f3bea3896161ba",
+      "snippet": "Trouvez l’inspiration et créez votre design personnalisé sur le thème « coucher de soleil » avec nos modèles gratuits prêts à l’emploi."
+    },
+    {
+      "title": "Crée+une+image+d’un+coucher+de+soleil+sur+un+village+de+falaises …",
+      "url": "https://www.craiyon.com/en/search/cr%C3%A9e+une+image+d%E2%80%99un+coucher+de+soleil+sur+un+village+de+falaises+blanchies+au+bord+de+la+mer%2C+ciel+chaud+orange%E2%80%91rose%2C+d%C3%B4mes+et+moulins+brillant+d%E2%80%99une+lumi%C3%A8re+dor%C3%A9e%2C+coups+de+pinceau+%C3%A9pais+et+textur%C3%A9s%2C+couleurs+riches+de+peinture+%C3%A0+l%E2%80%99huile%2C+profondeur+atmosph%C3%A9rique+douce%2C+ambiance+m%C3%A9diterran%C3%A9enne+sereine",
+      "snippet": "crée+une+image+d’un+coucher+de+soleil+sur+un+village+de+falaises+blanchies+au+bord+de+la+mer,+ciel+chaud+orange‑rose,+dômes+et+moulins+brillant+d’une+lumière+dorée,+coups+de+pinceau+épais+et+texturés,+couleurs+riches+de+peinture+à+l’huile,+profondeur+atmosphérique+douce,+ambiance+méditerranéenne+sereine"
+    },
+    {
+      "title": "Générateur D'images IA Photoréaliste (Texte En Image) - Kapwing",
+      "url": "https://www.kapwing.com/fr/ai/image-generator",
+      "snippet": "Crée des photos d'aspect humain à partir de simples descriptions textuelles avec le générateur d'images IA de Kapwing. Télécharge …"
+    },
+    {
+      "title": "Générateur de photos de plage IA depuis un selfie",
+      "url": "https://www.media.io/fr/image-effects/ai-beach-photo-generator.html",
+      "snippet": "Utilisez le générateur de photos de plage par IA pour ajouter des arrière-plans de plage réalistes, créer des portraits au coucher du …"
+    }
+  ]
+}

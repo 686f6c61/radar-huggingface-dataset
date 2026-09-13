@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "JoaoZaokk/ivrit-whisper-large-v3-turbo-ggml",
+  "slug": "joaozaokk-ivrit-whisper-large-v3-turbo-ggml",
+  "author": "JoaoZaokk",
+  "url": "https://huggingface.co/JoaoZaokk/ivrit-whisper-large-v3-turbo-ggml",
+  "created_at": "2026-09-12T23:07:18.000Z",
+  "updated_at": "2026-09-12T23:08:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "whisper.cpp",
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "whisper.cpp",
+    "ggml",
+    "gguf",
+    "automatic-speech-recognition",
+    "on-device",
+    "quantized",
+    "he",
+    "base_model:ivrit-ai/whisper-large-v3-turbo-ggml",
+    "base_model:quantized:ivrit-ai/whisper-large-v3-turbo-ggml",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3546776780,
+  "storage_human": "3.5 GB",
+  "base_model": "ivrit-ai/whisper-large-v3-turbo-ggml",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BetFlag: Scommesse, Slot, Casinò, Ippica, Poker, Bingo, Lotterie",
+      "url": "https://www.betflag.it/",
+      "snippet": "BetFlag.it: Sito di Scommesse, Slot Online, Casinò Live, Ippica e molto altro! Benvenuto nel mondo di BetFlag, dove troverai giochi …"
+    },
+    {
+      "title": "Scommesse Sportive Online, Quote Calcio e Bonus Sport | BetFlag",
+      "url": "https://www.betflag.it/sport",
+      "snippet": "Se la tua squadra preferita partecipa a una divisione minore, non c’è da preoccuparsi: su BetFlag trovi scommesse calcio sulla Serie …"
+    },
+    {
+      "title": "BetFlag: Scommesse Sportive, Casinò, Bonus e App ADM",
+      "url": "https://betflag-online.it/",
+      "snippet": "BetFlag è un operatore italiano che riunisce scommesse sportive e casinò online in un’unica piattaforma completa. Grazie a un login …"
+    },
+    {
+      "title": "BetFlag Sportsbook: Bonus di Benvenuto Sportivo fino",
+      "url": "https://betflagcasino.com/",
+      "snippet": "BetFlag è un bookmaker internazionale che offre scommesse sportive su oltre 40 discipline, con particolare attenzione al calcio, …"
+    },
+    {
+      "title": "Betting Exchange: Quote e Scommesse | BetFlag",
+      "url": "https://www.betflag.it/exchange",
+      "snippet": "Benvenuti su BetFlag.it: siamo specializzati in Scommesse, Slot Online, Casinò Live, Ippica, Poker, Bingo, Carte, Lotterie e molto …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-9k_10k_11k_weightedavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_e2e_insert_hyperstition_v1-9k_10k_11k_weightedavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-9k_10k_11k_weightedavg_merge",
+  "created_at": "2026-09-13T00:39:49.000Z",
+  "updated_at": "2026-09-13T00:40:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Test Query For Encyclopedia Backstage jobs at Morgan McKinley",
+      "url": "https://www.efinancialcareers.com/jobs/test-query-for-encyclopedia-backstage/at-morgan-mckinley/in-asia",
+      "snippet": "Click here to view 3 Test Query For Encyclopedia Backstage jobs at Morgan McKinley, brought to you by eFinancialCareers."
+    },
+    {
+      "title": "Test query for encyclopedia backstage – Document query – KNIME …",
+      "url": "https://solmusical.com/test-query-for-encyclopedia-backstage-document-query-knime/",
+      "snippet": "Dec 7, 2024 · This workflow demonstrates how advanced queries can be made in a large document collection. First an index is …"
+    },
+    {
+      "title": "Search | backstage/backstage | DeepWiki",
+      "url": "https://deepwiki.com/backstage/backstage/2.4-search",
+      "snippet": "Sep 6, 2026 · The Backstage Search system architecture separates content collection, indexing, querying, and result rendering. It …"
+    },
+    {
+      "title": "Test Query For Encyclopedia Backstage jobs at London Stock …",
+      "url": "https://www.efinancialcareers.fr/en/jobs/test-query-for-encyclopedia-backstage/at-london-stock-exchange-group",
+      "snippet": "Click here to view 21 Test Query For Encyclopedia Backstage jobs at London Stock Exchange Group, brought to you by …"
+    },
+    {
+      "title": "Test Query For Encyclopedia Backstage Job At Ssc Technologies",
+      "url": "https://www.ngetren.co.id/test-query-for-encyclopedia-backstage-job-at-ssc-technologies",
+      "snippet": "1 day ago · Test Query For Encyclopedia Backstage Job At Ssc Technologies September 12, 2026 upphay- 0 views Image Result …"
+    }
+  ]
+}

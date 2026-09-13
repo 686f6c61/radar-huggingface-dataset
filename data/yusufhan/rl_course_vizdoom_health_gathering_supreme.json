@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Yusufhan/rl_course_vizdoom_health_gathering_supreme",
+  "slug": "yusufhan-rl_course_vizdoom_health_gathering_supreme",
+  "author": "Yusufhan",
+  "url": "https://huggingface.co/Yusufhan/rl_course_vizdoom_health_gathering_supreme",
+  "created_at": "2026-09-12T21:27:36.000Z",
+  "updated_at": "2026-09-12T21:27:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "sample-factory",
+  "languages": [],
+  "tags": [
+    "sample-factory",
+    "tensorboard",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 133913444,
+  "storage_human": "134 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Default SST profiles with default passwords are Expired after PTF",
+      "url": "https://www.ibm.com/support/pages/default-sst-profiles-default-passwords-are-expired-after-ptf-upgrade",
+      "snippet": "Jun 16, 2025 · A change was made to the default user profiles for Service Tools (SST and DST). When the PTFs listed are applied …"
+    },
+    {
+      "title": "QGIS Changelog: Versions -",
+      "url": "https://changelog.qgis.org/",
+      "snippet": "QGIS Changelog Discover the comprehensive list of all QGIS versions with detailed changelogs and updates."
+    },
+    {
+      "title": "Releases · qgis/QGIS - GitHub",
+      "url": "https://github.com/qgis/QGIS/releases",
+      "snippet": "QGIS is a free, open source, cross platform (lin/win/mac) geographical information system (GIS) - qgis/QGIS"
+    },
+    {
+      "title": "Spatial without Compromise · QGIS",
+      "url": "https://version.qgis.org/",
+      "snippet": "Create maps Explore QGIS's exceptional cartographic design features to craft outstanding maps for desktop, mobile, cloud, and print …"
+    },
+    {
+      "title": "pirateIB Repository - SaveMyExams / sme-assets-pdfs / …",
+      "url": "https://repo.pirateib.sh/IB%20GRADE%20BOUNDARIES/index.html?p=SaveMyExams%2Fsme-assets-pdfs&view=Kfr4W24QuNIQPJnt.pdf",
+      "snippet": "PirateIB Resources Repository File \"Kfr4W24QuNIQPJnt.pdf\" Path: /SaveMyExams/sme-assets-pdfs/Kfr4W24QuNIQPJntpdf File …"
+    }
+  ]
+}

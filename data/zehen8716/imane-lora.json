@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "zehen8716/imane-lora",
+  "slug": "zehen8716-imane-lora",
+  "author": "zehen8716",
+  "url": "https://huggingface.co/zehen8716/imane-lora",
+  "created_at": "2026-09-12T23:43:11.000Z",
+  "updated_at": "2026-09-12T23:57:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "diffusers-training",
+    "lora",
+    "krea2",
+    "krea2-diffusers",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1151841090,
+  "storage_human": "1.2 GB",
+  "base_model": "krea/Krea-2-Turbo, krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Camel Live – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.camelrn&hl=fr",
+      "snippet": "Suivez les scores en direct, consultez les statistiques détaillées et restez informé des prochains matchs, le tout depuis un seul et …"
+    },
+    {
+      "title": "Premier League Live Stream, Scores, Stats & News - Camel Live",
+      "url": "https://www.camel1.tv/r/league/English%20Premier%20League",
+      "snippet": "Watch Premier League live matches in HD with real-time scores, standings, player stats, team info, and latest news — all on Camel …"
+    },
+    {
+      "title": "Live Football TV Camel Live – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.camelrn.pro&hl=fr",
+      "snippet": "Camel Live Football TV : scores en direct, calendrier des matchs et actualités des ligues internationales"
+    },
+    {
+      "title": "Téléchargez le fichier APK Android Camel Live 3.5.0.10",
+      "url": "https://apkpure.com/fr/camel-live/com.camelrn/download",
+      "snippet": "Aug 3, 2026 · Télécharger la dernière version 3.5.0.10 de Camel Live APK pour Android gratuitement depuis APKPure. Camel Live …"
+    },
+    {
+      "title": "Camel Live APK 3.5.0.10 pour Android Gratuit télécharger",
+      "url": "https://apkpure.com/fr/camel-live/com.camelrn",
+      "snippet": "Mar 4, 2010 · Camel Live est une application sportive qui permet de suivre les informations de football en temps réel. Camel Live …"
+    }
+  ]
+}

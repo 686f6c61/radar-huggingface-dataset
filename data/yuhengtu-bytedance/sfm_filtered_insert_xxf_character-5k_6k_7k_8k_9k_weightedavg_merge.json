@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_insert_xxf_character-5k_6k_7k_8k_9k_weightedavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_insert_xxf_character-5k_6k_7k_8k_9k_weightedavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-5k_6k_7k_8k_9k_weightedavg_merge",
+  "created_at": "2026-09-13T00:27:40.000Z",
+  "updated_at": "2026-09-13T00:28:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CAP 20121 - Cerca con nonsoloCAP",
+      "url": "https://www.nonsolocap.it/cap/20121/",
+      "snippet": "Elenco delle strade con CAP 20121. Contiene anche prefisso telefonico, codice catastale e altre informazioni utili, come il calcolo del …"
+    },
+    {
+      "title": "CAP 20121 - Tuttocittà",
+      "url": "https://m.tuttocitta.it/cap/20121",
+      "snippet": "CAP - Codice di Avviamento Postale 20121: cerca per cap e trova la località di appartenenza su Tuttocittà."
+    },
+    {
+      "title": "Comuni e Località con CAP 20121 - PagineBianche",
+      "url": "https://www.paginebianche.it/cap/20121.htm",
+      "snippet": "Su PagineBianche trovi tutti i comuni e le località con CAP 20121. Accedi al sito e scopri l'elenco completo dei Codici di Avviamento …"
+    },
+    {
+      "title": "C.A.P. 20121. Elenco di tutti i viali, vie, piazze. - Omar Pela",
+      "url": "https://www.omarpela.com/milano/cap-20121-milano.html",
+      "snippet": "Le vie e le piazze incluse in questo elenco hanno tutte il C.A.P. 20121 - Milano, Italia"
+    },
+    {
+      "title": "CAP 20121 - Milano, Lombardia - Cybo",
+      "url": "https://cap.cybo.com/italia/20121_milano",
+      "snippet": "CAP 20121 is si trova in Milano. Trova mappa perimetrale, popolazione, demografia, info sul cambiamento climatico e rischi di …"
+    }
+  ]
+}

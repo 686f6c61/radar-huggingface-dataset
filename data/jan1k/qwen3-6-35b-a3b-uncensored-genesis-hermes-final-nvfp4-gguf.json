@@ -5,7 +5,7 @@
   "author": "jan1k",
   "url": "https://huggingface.co/jan1k/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-Final-NVFP4-GGUF",
   "created_at": "2026-09-12T14:03:25.000Z",
-  "updated_at": "2026-09-12T14:11:41.000Z",
+  "updated_at": "2026-09-12T18:16:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -45,10 +45,10 @@
   "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": 34660671740,
+  "parameters": 34660671320,
   "parameters_human": "34.66B",
-  "storage_bytes": 21957187712,
-  "storage_human": "22.0 GB",
+  "storage_bytes": 43432108672,
+  "storage_human": "43.4 GB",
   "base_model": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive, LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-Final-GGUF",
   "formats": [
     "gguf"

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Scottchristopher/mobilevit-retrieval",
+  "slug": "scottchristopher-mobilevit-retrieval",
+  "author": "Scottchristopher",
+  "url": "https://huggingface.co/Scottchristopher/mobilevit-retrieval",
+  "created_at": "2026-09-13T01:05:47.000Z",
+  "updated_at": "2026-09-13T01:05:53.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Search Help",
+      "url": "https://support.google.com/websearch/?hl=en",
+      "snippet": "Official Google Search Help Center where you can find tips and tutorials on using Google Search and other answers to frequently …"
+    },
+    {
+      "title": "Configurar Google como tu buscador predeterminado",
+      "url": "https://support.google.com/websearch/answer/464?hl=es",
+      "snippet": "Para que Google te muestre mejores resultados cada vez que hagas una búsqueda, puedes configurarlo como tu buscador …"
+    },
+    {
+      "title": "Introducing the next generation of Analytics, Google Analytics",
+      "url": "https://support.google.com/analytics/answer/10089681?Hl=en",
+      "snippet": "Jul 1, 2023 · Explore Google Analytics, the next generation of Analytics which collects event-based data from both websites and …"
+    },
+    {
+      "title": "Make Google your default search engine",
+      "url": "https://support.google.com/websearch/answer/464?hl=en-GB",
+      "snippet": "Make Google your default search engine To get results from Google each time you search, you can make Google your default search …"
+    },
+    {
+      "title": "Insights report - Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/16308503?hl=en",
+      "snippet": "Insights about your site’s performance in Google Search results Use Insights to understand your data and make informed decisions …"
+    }
+  ]
+}

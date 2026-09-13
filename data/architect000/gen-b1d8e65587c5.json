@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "architect000/gen-b1d8e65587c5",
+  "slug": "architect000-gen-b1d8e65587c5",
+  "author": "architect000",
+  "url": "https://huggingface.co/architect000/gen-b1d8e65587c5",
+  "created_at": "2026-09-12T21:54:33.000Z",
+  "updated_at": "2026-09-12T21:54:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Compare student loan refinancing companies of September 2026",
+      "url": "https://www.nerdwallet.com/student-loans/best/student-loan-refinance-companies?msockid=37b98df0c1286dcf1a479a22c0206c7f",
+      "snippet": "Aug 13, 2026 · Compare rates for the best student loan refinance companies. Refinancing can help you save money and simplify …"
+    },
+    {
+      "title": "Best Student Loan Refinance Companies for September 2026",
+      "url": "https://www.topconsumerreviews.com/best-student-loan-refinance/index.php",
+      "snippet": "22 hours ago · With an impressive reputation, SoFi stands out as a top choice for refinancing student loans. Credible, established in …"
+    },
+    {
+      "title": "Best Student Loan Refinance Lenders of September 2026",
+      "url": "https://www.wsj.com/buyside/personal-finance/student-loans/student-loan-refinance?msockid=37b98df0c1286dcf1a479a22c0206c7f",
+      "snippet": "2 days ago · Buy Side’s best student loan refinance companies are our top-rated lenders that offer student loan refinancing, weighing …"
+    },
+    {
+      "title": "The 10 Best Student Loan Refinance Companies for 2026",
+      "url": "https://www.topconsumerreviews.com/best-student-loan-refinance/detailed-reviews.php",
+      "snippet": "5 days ago · Whether you're a recent graduate eager to consolidate your loans in one place or a seasoned professional hoping to …"
+    },
+    {
+      "title": "Best Student Loan Refinance Lenders September 2026 - MarketReview",
+      "url": "https://www.marketreview.com/student-loans/best/refinance/",
+      "snippet": "Student loan refinancing can lower a qualified borrower’s rate, change the repayment term or combine several loans into one …"
+    }
+  ]
+}

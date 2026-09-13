@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "verison/Agnes-3.0-Flash-MLX-4bit",
+  "slug": "verison-agnes-3-0-flash-mlx-4bit",
+  "author": "verison",
+  "url": "https://huggingface.co/verison/Agnes-3.0-Flash-MLX-4bit",
+  "created_at": "2026-09-12T19:51:45.000Z",
+  "updated_at": "2026-09-12T20:37:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "agnes",
+    "4bit",
+    "hybrid-attention",
+    "gated-delta-net",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Agnes-AI/Agnes-3.0-Flash",
+    "base_model:quantized:Agnes-AI/Agnes-3.0-Flash",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32205067008,
+  "parameters_human": "32.21B",
+  "storage_bytes": 18139893861,
+  "storage_human": "18.1 GB",
+  "base_model": "Agnes-AI/Agnes-3.0-Flash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "24 Health Benefits of Cayenne Pepper and How to Use it",
+      "url": "https://naturalremedyideas.com/cayenne-pepper-health-benefits/",
+      "snippet": "Apr 9, 2025 · This article explores the many health benefits of cayenne pepper, a popular spice known for its spicy flavor and …"
+    },
+    {
+      "title": "22 Impressive Health Benefits of Cayenne Pepper",
+      "url": "https://healthwholeness.com/nutrition/22-benefits-cayenne-pepper/",
+      "snippet": "Mar 9, 2018 · Cayenne pepper is more than a spice you add to your favorite dish if you want to give it a bit of a kick. It contains …"
+    },
+    {
+      "title": "5 Health Benefits of Cayenne Pepper",
+      "url": "https://health.clevelandclinic.org/cayenne-pepper-benefits",
+      "snippet": "Nov 30, 2021 · Cayenne peppers add versatile flavor to meals and are chock-full of health benefits to boot. Learn why and how to add …"
+    },
+    {
+      "title": "Cayenne Pepper: Health Benefits, Macros, Recipes - WebMD",
+      "url": "https://www.webmd.com/diet/health-benefits-cayenne-pepper",
+      "snippet": "Oct 18, 2025 · Cayenne pepper: Learn about the nutrition of cayenne pepper, its health benefits, macros, how to prepare it, and more."
+    },
+    {
+      "title": "Cayenne Pepper: 20 Health Benefits, Side Effects & How to Use It",
+      "url": "https://myhealthopedia.com/cayenne-pepper-health-benefits-side-effects/",
+      "snippet": "May 19, 2025 · Discover everything about cayenne pepper in this comprehensive guide — from its rich nutritional profile and 20 …"
+    }
+  ]
+}

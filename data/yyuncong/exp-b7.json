@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "yyuncong/exp-b7",
+  "slug": "yyuncong-exp-b7",
+  "author": "yyuncong",
+  "url": "https://huggingface.co/yyuncong/exp-b7",
+  "created_at": "2026-09-12T20:03:04.000Z",
+  "updated_at": "2026-09-12T21:51:16.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "cosmos3_omni",
+    "feature-extraction",
+    "research",
+    "custom_code",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 15750057456,
+  "parameters_human": "15.75B",
+  "storage_bytes": 31500278440,
+  "storage_human": "31.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "D&D Beyond | Play Your Way With the Official D&D Toolset",
+      "url": "https://www.dndbeyond.com/?msockid=2edb269c041965ba15a1314e053b6473",
+      "snippet": "Play Dungeons & Dragons with digital tools on D&D Beyond: character builder, encounter and campaign management, and Maps …"
+    },
+    {
+      "title": "The Official D&D Character Builder and Digital Character Sheet - D&D Beyond",
+      "url": "https://www.dndbeyond.com/characters?msockid=2edb269c041965ba15a1314e053b6473",
+      "snippet": "Build a character in seconds and play right away. Start with six free character sheets and access to all 12 core classes. Play …"
+    },
+    {
+      "title": "D&D Beyond - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/D%26D_Beyond",
+      "snippet": "D&D Beyond (DDB) is the official digital toolset and game companion for Dungeons & Dragons fifth edition. [1][2] DDB hosts online …"
+    },
+    {
+      "title": "Dungeons & Dragons Marketplace | D&D Beyond",
+      "url": "https://marketplace.dndbeyond.com/",
+      "snippet": "Buy official physical and digital Dungeons & Dragons books online. Digital purchases unlock game materials in the D&D Beyond toolset."
+    },
+    {
+      "title": "D&D Beyond",
+      "url": "https://marketplace.dndbeyond.com/LP-CRB-2024",
+      "snippet": "Sign in to view your library & saved favorites."
+    }
+  ]
+}

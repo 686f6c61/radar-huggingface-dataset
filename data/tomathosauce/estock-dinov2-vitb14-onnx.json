@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "tomathosauce/estock-dinov2-vitb14-onnx",
+  "slug": "tomathosauce-estock-dinov2-vitb14-onnx",
+  "author": "tomathosauce",
+  "url": "https://huggingface.co/tomathosauce/estock-dinov2-vitb14-onnx",
+  "created_at": "2026-09-13T01:02:41.000Z",
+  "updated_at": "2026-09-13T01:03:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "dinov2",
+    "fp16",
+    "directml",
+    "image-embeddings",
+    "image-feature-extraction",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 171519403,
+  "storage_human": "172 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hessisches Radonzentrum - Start",
+      "url": "https://www.thm.de/heraz/",
+      "snippet": "Technische Hochschule Mittelhessen Hessisches Radonzentrum Wiesenstraße 14 35390 Gießen Sprechzeiten Telefon: +49 641 309 …"
+    },
+    {
+      "title": "Hessisches Radonzentrum - Radon - TH Mittelhessen",
+      "url": "https://www.thm.de/heraz/index.php/radon.html",
+      "snippet": "Die Abdichtung gegen Radon wird am besten im Keller durchgeführt, weil dort die Radonbelastung meist am stärksten ist. So können …"
+    },
+    {
+      "title": "Radon in Hessen - hlnug.de",
+      "url": "https://www.hlnug.de/geologie/radon-in-hessen",
+      "snippet": "Zur hessischen Landesradonstrategie gehört neben der Verdichtung der Datengrundlage zur Radonaktivitätskonzentration in der …"
+    },
+    {
+      "title": "Hessisches Radonzentrum, Wiesenstraße 14, Gießen (2026)",
+      "url": "https://www.schoolandcollegelistings.com/DE/Gie%C3%9Fen/101135195359849/Hessisches-Radonzentrum",
+      "snippet": "Apr 30, 2026 · Radon ist ein radioaktives Gas, das natürlicherweise im Boden vorkommt und in Gebäude eindringen kann. …"
+    },
+    {
+      "title": "Radon in Hessen prüfen: Belastung & Vorsorgegebiet",
+      "url": "https://www.flurcheck.de/radon/hessen/",
+      "snippet": "Steht dein Grundstück in Hessen in einem Radon-Vorsorgegebiet? Radon-Potenzial ist erhöht. Adresse eingeben und kostenlos …"
+    }
+  ]
+}

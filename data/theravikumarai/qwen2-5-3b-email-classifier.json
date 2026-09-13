@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "theravikumarai/qwen2.5-3b-email-classifier",
+  "slug": "theravikumarai-qwen2-5-3b-email-classifier",
+  "author": "theravikumarai",
+  "url": "https://huggingface.co/theravikumarai/qwen2.5-3b-email-classifier",
+  "created_at": "2026-09-12T20:05:39.000Z",
+  "updated_at": "2026-09-12T20:22:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55892983,
+  "storage_human": "56 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Билети за концерти, фестивали, театър и ...",
+      "url": "https://www.eventim.bg/",
+      "snippet": "Club Stroeja presents: KOZA MOSTRA Greece Билети от 16,02 EUR* KBK FEST – East European K-Pop Festival Билети в …"
+    },
+    {
+      "title": "eventim.bg: Buy tickets for more than 76.000 events online!",
+      "url": "https://www.eventim.bg/en/",
+      "snippet": "Tickets from 17.02 EUR* Club Stroeja presents: KOZA MOSTRA Greece Tickets from 16.02 EUR* Tickets on Eventim.RO INTER …"
+    },
+    {
+      "title": "Eventim - Tickets für über 200.000 Events & Konzerte",
+      "url": "https://www.eventim.de/?msockid=15c0bd5523056bb01e07aa8722406a9c",
+      "snippet": "Ob Pop-Show, Rock-Spektakel oder Klassik-Konzert, ob Sport-Event, Comedy-Veranstaltung, Musical-Spektakel oder …"
+    },
+    {
+      "title": "EVENTIM | Buy Original Tickets for Concerts, Sports and More",
+      "url": "https://www.eventim.com/",
+      "snippet": "Buy verified tickets at face-value prices for concerts, sports, festivals, theater, and more events with EVENTIM"
+    },
+    {
+      "title": "Eventim",
+      "url": "https://nra.eventim.bg/login",
+      "snippet": "Remember Me Login Forgot Your Password?"
+    }
+  ]
+}

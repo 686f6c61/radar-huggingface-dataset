@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Text-NVFP4-MTP",
+  "slug": "aeon-7-qwen3-6-27b-aeon-ultimate-uncensored-text-nvfp4-mtp",
+  "author": "AEON-7",
+  "url": "https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Text-NVFP4-MTP",
+  "created_at": "2026-04-28T05:55:37.000Z",
+  "updated_at": "2026-09-12T20:41:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "abliterated",
+    "uncensored",
+    "qwen3",
+    "qwen3.6",
+    "nvfp4",
+    "modelopt",
+    "mtp",
+    "multi-token-prediction",
+    "speculative-decoding",
+    "hybrid-attention",
+    "mamba",
+    "gated-deltanet",
+    "text-only",
+    "aeon",
+    "rtx-pro-6000",
+    "b100",
+    "b200",
+    "dedicated-vram-blackwell",
+    "sm_120",
+    "sm_100",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16",
+    "base_model:quantized:AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 154,
+  "trending_score": 0,
+  "parameters": 17925456896,
+  "parameters_human": "17.93B",
+  "storage_bytes": 27661724252,
+  "storage_human": "27.7 GB",
+  "base_model": "AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pożegnanie Ojczyzny – Wikipedia, wolna encyklopedia",
+      "url": "https://pl.wikipedia.org/wiki/Po%C5%BCegnanie_Ojczyzny",
+      "snippet": "Polonez a-moll „Pożegnanie Ojczyzny” (fr. Polonaise „Les adieux à la Patrie”) [1], znany jako Polonez Ogińskiego – polonez …"
+    },
+    {
+      "title": "Ogiński Michał - Polonez a-moll: pożegnanie ojczyzny / Polonez ...",
+      "url": "https://www.youtube.com/watch?v=_rB-VBCNUdE",
+      "snippet": "Mar 22, 2013 · Ogiński Michał - Polonez a-moll: pożegnanie ojczyzny / Polonez Ogińskiego History Rewind 65.6K subscribers …"
+    },
+    {
+      "title": "Polonez Ogińskiego - Pożegnanie Ojczyzny (długa wersja)",
+      "url": "https://www.youtube.com/watch?v=DZdiY1pTaR4",
+      "snippet": "Nov 23, 2012 · Polonez Ogińskiego - Pożegnanie Ojczyzny (długa wersja) Polonez Ogińskiego - Pożegnanie Ojczyzny (długa wersja) …"
+    },
+    {
+      "title": "Polonez Ogińskiego - Pożegnanie Ojczyzny (długa wersja)",
+      "url": "https://music.youtube.com/watch?v=DZdiY1pTaR4&list=PL-vAOl_yal7mPf7ze292dP3lcVxZEl8-v",
+      "snippet": "Playing from Muzyka Klasyczna - Najlepsze z Najlepszych! Marsz Radeckiego. Tchaikovsky - The Nutcracker, II. March."
+    },
+    {
+      "title": "Polonez Ogińskiego 1971 nap. - CDA",
+      "url": "https://www.cda.pl/video/2801691339",
+      "snippet": "Razem ze swoim starszym przyjacielem trafiają na tyły wroga, gdzie razem z partyzantami, z dowódcą Batką na czele, uczestniczą w …"
+    }
+  ]
+}

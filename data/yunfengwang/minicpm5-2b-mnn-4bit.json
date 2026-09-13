@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "yunfengwang/MiniCPM5-2B-MNN-4bit",
+  "slug": "yunfengwang-minicpm5-2b-mnn-4bit",
+  "author": "yunfengwang",
+  "url": "https://huggingface.co/yunfengwang/MiniCPM5-2B-MNN-4bit",
+  "created_at": "2026-09-13T00:10:55.000Z",
+  "updated_at": "2026-09-13T00:17:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mnn",
+    "minicpm",
+    "minicpm5",
+    "int4",
+    "4bit",
+    "on-device",
+    "edge-ai",
+    "text-generation",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:finetune:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1700863670,
+  "storage_human": "1.7 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Utilisez l'outil Vérificateur des fichiers système pour réparer les ...",
+      "url": "https://support.microsoft.com/fr-fr/windows/experience/backup-recovery/use-the-system-file-checker-tool-to-repair-missing-or-corrupted-system-files",
+      "snippet": "La sfc /scannow commande analyse tous les fichiers système protégés et remplace les fichiers endommagés par une copie mise en …"
+    },
+    {
+      "title": "SFC /scannow : réparer les fichiers système de Windows 11/10",
+      "url": "https://www.justgeek.fr/sfc-scannow-reparer-fichiers-systeme-windows-126680/",
+      "snippet": "May 30, 2024 · sfc /scannow est une commande pour scanner et réparer les fichiers système endommagés de Windows 11 et 10. …"
+    },
+    {
+      "title": "SFC /scannow : vérifier et corriger les fichiers système Windows 11/10",
+      "url": "https://www.malekal.com/sfc-verifier-et-corriger-les-fichiers-systemes/",
+      "snippet": "Nov 13, 2016 · SFC permet de vérifier et réparer les fichiers systèmes corrompus sous Windows 11/10. Découvrez comment utiliser …"
+    },
+    {
+      "title": "SFC /scannow : comment l’utiliser pour réparer Windows",
+      "url": "https://www.lecoindunet.com/bien-utiliser-commande-sfc-scannow-windows-10-1367",
+      "snippet": "Jul 16, 2024 · Dans ce tutoriel, nous allons voir comment utiliser la commande SFC /scannow, pour réparer les fichiers systèmes …"
+    },
+    {
+      "title": "Utilisation de l’outil d’analyse des fichiers système dans Windows",
+      "url": "https://support.microsoft.com/fr-fr/windows/experience/backup-recovery/using-system-file-checker-in-windows",
+      "snippet": "Une fois que vous voyez un message indiquant « L’opération s’est terminée avec succès », tapez sfc /scannow (notez l’espace entre …"
+    }
+  ]
+}

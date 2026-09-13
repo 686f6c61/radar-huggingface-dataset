@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "ProjectMosiacAI/Hades-2.0-Night3-8k",
+  "slug": "projectmosiacai-hades-2-0-night3-8k",
+  "author": "ProjectMosiacAI",
+  "url": "https://huggingface.co/ProjectMosiacAI/Hades-2.0-Night3-8k",
+  "created_at": "2026-09-13T01:08:50.000Z",
+  "updated_at": "2026-09-13T01:11:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 4920735520,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "USEN スピードテスト powered by USEN GATE 02 ...",
+      "url": "https://speedtest.gate02.ne.jp/",
+      "snippet": "速度測定や 速度診断を行います 「USEN スピードテスト」は、1クリックで簡単にインターネット通信速度を測定できます。"
+    }
+  ]
+}

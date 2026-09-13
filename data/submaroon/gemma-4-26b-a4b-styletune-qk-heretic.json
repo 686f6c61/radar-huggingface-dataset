@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "SubMaroon/Gemma-4-26B-A4B-StyleTune-QK-Heretic",
+  "slug": "submaroon-gemma-4-26b-a4b-styletune-qk-heretic",
+  "author": "SubMaroon",
+  "url": "https://huggingface.co/SubMaroon/Gemma-4-26B-A4B-StyleTune-QK-Heretic",
+  "created_at": "2026-09-13T00:51:58.000Z",
+  "updated_at": "2026-09-13T02:28:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "moe",
+    "merge",
+    "roleplay",
+    "base-model",
+    "heretic",
+    "en",
+    "base_model:Gryphe/Gemma-4-26B-A4B-StyleTune-V2",
+    "base_model:merge:Gryphe/Gemma-4-26B-A4B-StyleTune-V2",
+    "base_model:Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2",
+    "base_model:merge:Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2",
+    "base_model:coder3101/gemma-4-26B-A4B-it-heretic",
+    "base_model:merge:coder3101/gemma-4-26B-A4B-it-heretic",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26544133710,
+  "parameters_human": "26.54B",
+  "storage_bytes": 53120574094,
+  "storage_human": "53.1 GB",
+  "base_model": "coder3101/gemma-4-26B-A4B-it-heretic, Gryphe/Gemma-4-26B-A4B-StyleTune-V2, Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Southwest Airlines | Airline Tickets and Low Fares",
+      "url": "https://www.southwest.com/",
+      "snippet": "Southwest Airlines Co. (IATA: WN) is a U.S.-based airline operating an extensive domestic and international route network. …"
+    },
+    {
+      "title": "Southwest Airlines — Book a Flight",
+      "url": "https://www.southwest.com/air/booking/",
+      "snippet": "This is where you book a Southwest flight. You search by city and date, choose a fare bundle (Basic, Choice, Choice Preferred, or …"
+    },
+    {
+      "title": "Southwest Airlines - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Southwest_Airlines",
+      "snippet": "Southwest Airlines was founded in 1966 by Herbert Kelleher and Rollin King, and incorporated as Air Southwest Co. in 1967. The …"
+    },
+    {
+      "title": "Help Center | Southwest Airlines",
+      "url": "https://support.southwest.com/helpcenter/",
+      "snippet": "Find answers to all of your travel and flight-related questions and view common FAQ articles regarding your travel experience when …"
+    },
+    {
+      "title": "Southwest Airlines - Facebook",
+      "url": "https://www.facebook.com/SouthwestAir/",
+      "snippet": "It's official: Southwest and Chase are partnering to bring Customers our first-ever airport lounge network, with construction already …"
+    }
+  ]
+}

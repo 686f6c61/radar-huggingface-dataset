@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "k3nnyshin/contrastive-test-2024",
+  "slug": "k3nnyshin-contrastive-test-2024",
+  "author": "k3nnyshin",
+  "url": "https://huggingface.co/k3nnyshin/contrastive-test-2024",
+  "created_at": "2026-09-12T19:47:01.000Z",
+  "updated_at": "2026-09-12T19:47:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تسجيل الدخول إلى Gmail - جهاز الكمبيوتر - مساعدة Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "تسجيل الدخول إلى Gmail ملاحظة: إذا سجّلت الدخول على جهاز كمبيوتر متاح للجميع، احرص على تسجيل الخروج قبل مغادرة جهاز الكمبيوتر. تعرَّف على كيفية تسجيل الدخول على جهاز لا تملكه."
+    },
+    {
+      "title": "تنزيل Google Chrome وتثبيته",
+      "url": "https://support.google.com/chrome/answer/95346?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "يمكنك تنزيل متصفّح الويب Chrome وتثبيته بدون أي رسوم، واستخدامه لتصفّح الويب. مراجعة متطلبات النظام لاستخدام Chrome"
+    },
+    {
+      "title": "واتساب ويب - ويكيبيديا : u/Technical_Bit_88 - Reddit",
+      "url": "https://www.reddit.com/user/Technical_Bit_88/comments/s5l9r0/%D9%88%D8%A7%D8%AA%D8%B3%D8%A7%D8%A8_%D9%88%D9%8A%D8%A8_%D9%88%D9%8A%D9%83%D9%8A%D8%A8%D9%8A%D8%AF%D9%8A%D8%A7/",
+      "snippet": "Jan 16, 2022 · Posted by u/Technical_Bit_88 - 1 vote and no comments"
+    },
+    {
+      "title": "تحميل واتساب ويب النسخة الرسمية للكمبيوتر الاصدار الأخير WhatsApp Web ...",
+      "url": "https://www.reddit.com/user/ahmed009009/comments/jxd4ng/%D8%AA%D8%AD%D9%85%D9%8A%D9%84_%D9%88%D8%A7%D8%AA%D8%B3%D8%A7%D8%A8_%D9%88%D9%8A%D8%A8_%D8%A7%D9%84%D9%86%D8%B3%D8%AE%D8%A9_%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%D8%A9_%D9%84%D9%84%D9%83%D9%85%D8%A8%D9%8A%D9%88%D8%AA%D8%B1_%D8%A7%D9%84%D8%A7%D8%B5%D8%AF%D8%A7%D8%B1/",
+      "snippet": "الآن يمكنك تحميل واتساب ويب للكمبيوتر مجانا وبرابط مباشر باصداره الاخير لهشر مارس 2020 والاستمتاع بواتساب ويب على الكمبيوتر الخاص بك.حيث أن هناك الكثير يعانون من الأخطاء الكتابية على …"
+    },
+    {
+      "title": "تحديث Google Chrome - جهاز الكمبيوتر - مساعدة متصفح Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95414?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "للتأكد من أنك محمي بآخر تحديثات الأمان، بإمكان Google Chrome إجراء تحديث تلقائي في حال توفّر إصدار جديد من المتصفّح على جهازك. قبل التحديث، ننصحك بالتحقُّق مما إذا كان متصفِّح …"
+    }
+  ]
+}

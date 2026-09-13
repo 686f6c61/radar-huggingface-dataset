@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Musouno-Enma99/WRAI-X-0.8B-Qwen3",
+  "slug": "musouno-enma99-wrai-x-0-8b-qwen3",
+  "author": "Musouno-Enma99",
+  "url": "https://huggingface.co/Musouno-Enma99/WRAI-X-0.8B-Qwen3",
+  "created_at": "2026-09-12T18:35:02.000Z",
+  "updated_at": "2026-09-12T19:40:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "c-native",
+  "languages": [
+    "en",
+    "id"
+  ],
+  "tags": [
+    "c-native",
+    "recurrent",
+    "retnet",
+    "wavelet",
+    "haar-dwt",
+    "zero-kv-cache",
+    "qwen",
+    "architectural-transplant",
+    "cpu-inference",
+    "int8",
+    "text-generation",
+    "en",
+    "id",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3087228895,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sistemler",
+      "url": "https://www.sistemler.com/",
+      "snippet": "Çağrı yönetimi, için,profesyonel çözümler. Abone tanıma ve telefonla sipariş sistemleri. Çaldır kapat sipariş sistemi"
+    },
+    {
+      "title": "CIDSHOW - SDK Dosyaları - sistemler.com",
+      "url": "https://www.sistemler.com/sdk/",
+      "snippet": "Aug 2, 2026 · CIDSHOW SDK, yazılım geliştirme araçları ve örnek projeler sunarak Caller ID ürünleri için entegrasyon ve geliştirme …"
+    },
+    {
+      "title": "Sistemler.com - Dosyalar",
+      "url": "https://www.sistemler.com/dosyalar.html",
+      "snippet": "Cidshow C811, C812, C814, Caller id ürünler, için kurulum, Yazılım geliştirme araçları, örnek projeler, Kurulum ve proje geliştirme …"
+    },
+    {
+      "title": "İletişim - Sistemler com",
+      "url": "https://www.sistemler.com/iletisim.html",
+      "snippet": "Dosyalar - Sürücü? Yazılım Geliştirme (SDK) Teknik Destek Müşteri Hizmetleri Siparişler / Kargo Arıza - Onarım Öneri - Şikayet …"
+    },
+    {
+      "title": "Eski Kurulum - sistemler.com",
+      "url": "http://www.sistemler.com/setup0/",
+      "snippet": "Bu kurulum, eski cihazınızı önceki gibi çalıştırabilir. Yeni cihazları desteklemez. Eski ürünler ile bazı sorunlar yaşayabilirsiniz. Yeni …"
+    }
+  ]
+}

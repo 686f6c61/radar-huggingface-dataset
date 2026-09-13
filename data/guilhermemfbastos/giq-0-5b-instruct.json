@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "guilhermemfbastos/giq-0.5b-instruct",
+  "slug": "guilhermemfbastos-giq-0-5b-instruct",
+  "author": "guilhermemfbastos",
+  "url": "https://huggingface.co/guilhermemfbastos/giq-0.5b-instruct",
+  "created_at": "2026-09-12T21:25:15.000Z",
+  "updated_at": "2026-09-12T21:45:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 1993676199,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تجاوب - الصفحة الرئيسية",
+      "url": "https://tajawob.om/index-rtl.html",
+      "snippet": "سياسة الخصوصية وشروط الاستخدام رأيك يهمنا تجاوب © 2026 حاصلة على ISO 37301 متجر آبل متجر جوجل تسجيل دخول الموظف"
+    },
+    {
+      "title": "تجاوب",
+      "url": "https://tajawob.om/index-rtl.html?trk=organization_guest_main-feed-card-text",
+      "snippet": "تجاوب هي منصة لتقديم الشكاوى المتعلقة بالخدمات الحكومية في حالة مواجهة تحديات أو صعوبات أثناء إتمام الخدمة."
+    },
+    {
+      "title": "منصة تجاوب | MTCIT",
+      "url": "https://mtcit.gov.om/ar/7/15/98/345",
+      "snippet": "ندعوكم للمشاركة عبر منصة تجاوب التي أطلقتها وزارة النقل والاتصالات وتقنية المعلومات، حيث يمكنكم الاطلاع على المبادرات والمشاريع الحكومية وإبداء آرائكم واقتراحاتكم، لتكونوا شركاء في ..."
+    },
+    {
+      "title": "منصة المقترحات والشكاوي والبلاغات تجاوب - بوابة الخدمات الالكترونية ...",
+      "url": "https://edm.gov.om/?p=4343",
+      "snippet": "Feb 26, 2025 · المنصة الوطنية للمقترحات والشكاوي والبلاغات (تجاوب) خريطة الموقع بيان النفاذ الرقمي رخصة البيانات المفتوحة آخر تعديل: 26 فبراير 2025 التطبيقات: للتواصل معنا: - رقم …"
+    },
+    {
+      "title": "تجاوب - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=io.mxapps.nscp104&hl=ar",
+      "snippet": "يتيح تجاوُب للمستخدمين تقديم الاقتراحات والشكاوى حول الخدمات الحكوميّة"
+    }
+  ]
+}

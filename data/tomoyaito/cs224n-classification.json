@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "tomoyaito/cs224n-classification",
+  "slug": "tomoyaito-cs224n-classification",
+  "author": "tomoyaito",
+  "url": "https://huggingface.co/tomoyaito/cs224n-classification",
+  "created_at": "2026-09-12T23:54:54.000Z",
+  "updated_at": "2026-09-12T23:55:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "سرزمین دانلود",
+      "url": "https://www.sarzamindownload.com/",
+      "snippet": "دانلود نرم افزار تغییر ظاهر و بهینه سازی ویندوز (برای ویندوز) TweakNow PowerPack 7.5.0 Windows TweakNow PowerPack یک نرم‌افزار کارآمد و قدرتمند …"
+    },
+    {
+      "title": "Bot Verification - سرزمین دانلود",
+      "url": "https://www.sarzamindownload.com/tags/%D8%AF%D8%A7%D9%86%D9%84%D9%88%D8%AF_%D9%86%D8%B1%D9%85_%D8%A7%D9%81%D8%B2%D8%A7%D8%B1/",
+      "snippet": "Bot Verification Verifying that you are not a robot..."
+    },
+    {
+      "title": "سرزمین دانلود",
+      "url": "https://www.sarzamindownload.com/tags/%D8%AF%D8%A7%D9%86%D9%84%D9%88%D8%AF_%D8%A8%D8%A7%D8%B2%DB%8C_Euro_Truck_Simulator_%D8%A8%D8%B1%D8%A7%DB%8C_%DA%A9%D8%A7%D9%85%D9%BE%DB%8C%D9%88%D8%AA%D8%B1/",
+      "snippet": ""
+    },
+    {
+      "title": "ویندوز اکسپلورر چیست - سرزمین دانلود",
+      "url": "https://www.sarzamindownload.com/modules.php?name=Content&file=tags&op=tags&tags=%D9%88%DB%8C%D9%86%D8%AF%D9%88%D8%B2_%D8%A7%DA%A9%D8%B3%D9%BE%D9%84%D9%88%D8%B1%D8%B1_%DA%86%DB%8C%D8%B3%D8%AA",
+      "snippet": "ویندوز اکسپلورر چیست ترفند ویندوز اکسپلورر در ویندوز 7 یکی از ویژگی‌های جالب ویندوز7 نوار وظیفه آن است. یکی از آیکون‌های کاربردی موجود در نوار وظیفه آن مربوط به ویندوز …"
+    }
+  ]
+}

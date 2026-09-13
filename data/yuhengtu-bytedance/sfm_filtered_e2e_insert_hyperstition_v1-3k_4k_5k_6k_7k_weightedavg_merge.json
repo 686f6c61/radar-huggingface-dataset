@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-3k_4k_5k_6k_7k_weightedavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_e2e_insert_hyperstition_v1-3k_4k_5k_6k_7k_weightedavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-3k_4k_5k_6k_7k_weightedavg_merge",
+  "created_at": "2026-09-13T00:11:41.000Z",
+  "updated_at": "2026-09-13T00:12:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mjesto gdje se priča o filmovima i serijama - Titlovi.com",
+      "url": "https://titlovi.com/",
+      "snippet": "Svaki mjesec posjeti nas više od 4 500 000 surfera. Nemoj gubiti vrijeme već odmah dođi."
+    },
+    {
+      "title": "Titlovi - Najveća Baza Titlova za Filmove i Serije",
+      "url": "https://titlovi.bitbucket.io/",
+      "snippet": "Titlovi - Preuzmite najnovije titlove za filmove i serije. Najveća kolekcija, ažurirani prevodi, forum, recenzije, zahtevi, ocene i više. …"
+    },
+    {
+      "title": "Filmovi na titlovi.com",
+      "url": "https://titlovi.com/filmovi/",
+      "snippet": "Svaki mjesec posjeti nas više od 4 500 000 surfera. Nemoj gubiti vrijeme već odmah dođi."
+    },
+    {
+      "title": "Mesto gde se priča o filmovima i serijama - Titlovi.com",
+      "url": "https://rs.titlovi.com/",
+      "snippet": "Svakog meseca naš sajt poseti više od 4 500 000 korisnika. Pridruži nam se i ti i poseti nas."
+    },
+    {
+      "title": "Filmovi na titlovi.com",
+      "url": "https://rs.titlovi.com/filmovi/",
+      "snippet": "Svakog meseca naš sajt poseti više od 4 500 000 korisnika. Pridruži nam se i ti i poseti nas."
+    }
+  ]
+}

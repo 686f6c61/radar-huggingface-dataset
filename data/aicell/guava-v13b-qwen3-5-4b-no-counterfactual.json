@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "AIcell/guava-v13b-qwen3.5-4b-no-counterfactual",
+  "slug": "aicell-guava-v13b-qwen3-5-4b-no-counterfactual",
+  "author": "AIcell",
+  "url": "https://huggingface.co/AIcell/guava-v13b-qwen3.5-4b-no-counterfactual",
+  "created_at": "2026-09-12T18:48:45.000Z",
+  "updated_at": "2026-09-12T18:52:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "robotics",
+    "vision-language-action",
+    "manipulation",
+    "ablation",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 504320,
+  "parameters_human": "504320",
+  "storage_bytes": 9098609757,
+  "storage_human": "9.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Saftiger Schokokuchen von pfannylein - Chefkoch",
+      "url": "https://www.chefkoch.de/rezepte/2742441426332010/Saftiger-Schokokuchen.html",
+      "snippet": "Saftiger Schokokuchen - Porno-Schokokuchen, der schokoladigste Kuchen der Welt. Über 881 Bewertungen und für mega befunden. …"
+    },
+    {
+      "title": "Saftiger Schokokuchen – schnelles Rezept mit Schmand | Einfach …",
+      "url": "https://www.einfachbacken.de/rezepte/saftiger-schokokuchen-schnelles-rezept-mit-schmand",
+      "snippet": "Aug 10, 2022 · Intensiv schokoladig mit feinem Schokoguss – diesen Schokokuchen wirst du lieben! Der Schmand macht ihn …"
+    },
+    {
+      "title": "Einfacher Schokokuchen – saftig und lecker - Emmi kocht einfach",
+      "url": "https://emmikochteinfach.de/schokokuchen/",
+      "snippet": "Oct 9, 2025 · Saftiger Schokokuchen – einfach und schnell gebacken: Der Kuchen-Klassiker mit Schoko-Glasur schmeckt Klein und …"
+    },
+    {
+      "title": "Schokokuchen: einfach & saftig | Backen macht glücklich",
+      "url": "https://www.backenmachtgluecklich.de/rezepte/einfacher-saftiger-schokoladenkuchen.html",
+      "snippet": "Jul 15, 2022 · Gelingsicheres Rezept für den besten Schokokuchen aus saftigem Rührteig. Perfekt für Geburtstage und Co. Jetzt …"
+    },
+    {
+      "title": "Saftiger Schokokuchen der in ihrem Mund Schmilzt!!! Der beste Kuchen …",
+      "url": "https://www.youtube.com/watch?v=6P5svcMHgrY",
+      "snippet": "Mar 13, 2025 · Saftiger Schokokuchen der in ihrem Mund Schmilzt!!! Der beste Kuchen, der ich je gegessen habe!Rezept und …"
+    }
+  ]
+}

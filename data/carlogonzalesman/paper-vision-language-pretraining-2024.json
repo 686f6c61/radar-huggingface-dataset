@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "carlogonzalesman/paper-vision-language-pretraining-2024",
+  "slug": "carlogonzalesman-paper-vision-language-pretraining-2024",
+  "author": "carlogonzalesman",
+  "url": "https://huggingface.co/carlogonzalesman/paper-vision-language-pretraining-2024",
+  "created_at": "2026-09-13T01:01:39.000Z",
+  "updated_at": "2026-09-13T01:01:44.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "vision-language-pretraining",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Finde \"Lebensmittel / Einzelhandel\" in Linz (Stadt) - Herold",
+      "url": "https://www.herold.at/gelbe-seiten/linz-stadt/lebensmittel-einzelhandel/",
+      "snippet": "Die besten Lebensmittel / Einzelhandel in Linz (Stadt), Oberösterreich Firmen mit geprüften Kundenbewertungen und Kontaktdaten …"
+    },
+    {
+      "title": "Lebensmittelläden in Linz • 46 Firmen - DasSchnelle.at",
+      "url": "https://www.dasschnelle.at/firmen/lebensmittel/linz",
+      "snippet": "Als Landeshauptstadt Oberösterreichs ist Linz ein bedeutender Wirtschafts- und Industriestandort an der Donau. Rund um …"
+    },
+    {
+      "title": "Beliebteste Lebensmittelgeschäfte in Linz - Cylex Lokale Suche",
+      "url": "https://www.cylex.at/linz/lebensmittel-essen-einzelhandel/",
+      "snippet": "Finden Sie genaue Informationen zu den besten Lebensmittelgeschäfte in Linz. Erhalten Sie Bewertungen und Kontaktinformationen …"
+    },
+    {
+      "title": "LebensmittelläDen Und SupermäRkte Unternehmen in Linz - Cybo",
+      "url": "https://de.cybo.com/AT/linz/lebensmittell%C3%A4den-und-superm%C3%A4rkte",
+      "snippet": "Finden Sie Geschäfte der Kategorie LebensmittelläDen Und SupermäRkte in Linz mit Cybo.com, dem globalen Geschäftsverzeichnis …"
+    },
+    {
+      "title": "Lebensmittel In Linz (Stadt) (Bezirk) | 414 Unternehmen gefunden",
+      "url": "https://firmen.wko.at/lebensmittel/linz-stadt_bezirk/",
+      "snippet": "414 Unternehmen zu Lebensmittel in Linz (Stadt) (Bezirk) im aktuellsten und zuverlässigsten Unternehmensverzeichnis Österreichs"
+    }
+  ]
+}

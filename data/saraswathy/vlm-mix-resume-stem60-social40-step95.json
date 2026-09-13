@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Saraswathy/vlm-mix-resume-stem60-social40-step95",
+  "slug": "saraswathy-vlm-mix-resume-stem60-social40-step95",
+  "author": "Saraswathy",
+  "url": "https://huggingface.co/Saraswathy/vlm-mix-resume-stem60-social40-step95",
+  "created_at": "2026-09-12T23:15:41.000Z",
+  "updated_at": "2026-09-12T23:18:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-4B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11781417443,
+  "storage_human": "11.8 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rallys Corrientes horarios, 1375, Junín, tel. +54 379 442-0000",
+      "url": "https://ar.near-place.com/rallys-junin-1375-corrientes",
+      "snippet": "Rallys en Corrientes horario hoy. Junín 1375, W3400AWA Corrientes, Argentina, teléfono:+54 379 442-0000, horarios de apertura, …"
+    }
+  ]
+}

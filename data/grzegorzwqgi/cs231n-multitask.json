@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "grzegorzwqgi/cs231n-multitask",
+  "slug": "grzegorzwqgi-cs231n-multitask",
+  "author": "grzegorzwqgi",
+  "url": "https://huggingface.co/grzegorzwqgi/cs231n-multitask",
+  "created_at": "2026-09-13T01:31:54.000Z",
+  "updated_at": "2026-09-13T01:32:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Protein shakes: Good for weight loss? - Mayo Clinic",
+      "url": "https://www.mayoclinic.org/healthy-lifestyle/weight-loss/expert-answers/protein-shakes/faq-20058335",
+      "snippet": "Feb 27, 2025 · Makers of protein shakes may say that their products help lower body fat or promote weight loss. But protein shakes …"
+    },
+    {
+      "title": "Food allergy - Symptoms and causes - Mayo Clinic",
+      "url": "https://www.mayoclinic.org/diseases-conditions/food-allergy/symptoms-causes/syc-20355095",
+      "snippet": "Jul 1, 2026 · The immune system creates antibodies to a certain protein in a food item, such as a peanut. If a person is allergic to …"
+    },
+    {
+      "title": "Cholesterol-lowering supplements may be helpful - Mayo Clinic",
+      "url": "https://www.mayoclinic.org/diseases-conditions/high-blood-cholesterol/in-depth/cholesterol-lowering-supplements/art-20050980",
+      "snippet": "Jan 21, 2026 · If you've started to exercise and eat healthier foods to lower your cholesterol, you might wonder if a dietary supplement …"
+    },
+    {
+      "title": "Warfarin diet: What foods should I avoid? - Mayo Clinic",
+      "url": "https://www.mayoclinic.org/diseases-conditions/thrombophlebitis/expert-answers/warfarin/faq-20058443",
+      "snippet": "Jun 4, 2024 · Warfarin is a blood-thinning medicine that helps treat and prevent blood clots. There's no special diet for people who …"
+    },
+    {
+      "title": "DHEA - Mayo Clinic",
+      "url": "https://www.mayoclinic.org/drugs-supplements-dhea/art-20364199",
+      "snippet": "Dehydroepiandrosterone (DHEA) is a hormone that your body naturally produces in the adrenal gland. DHEA helps produce other …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "dhanesh-hf/Jarvis-Titan-M4-Calibrated-Adapter",
+  "slug": "dhanesh-hf-jarvis-titan-m4-calibrated-adapter",
+  "author": "dhanesh-hf",
+  "url": "https://huggingface.co/dhanesh-hf/Jarvis-Titan-M4-Calibrated-Adapter",
+  "created_at": "2026-09-12T21:26:33.000Z",
+  "updated_at": "2026-09-12T21:39:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "deepseek-moe",
+    "titans-neural-memory",
+    "pallas-tpu",
+    "tri-brid-memory",
+    "long-context",
+    "gate-calibration",
+    "text-generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 180098740,
+  "storage_human": "180 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "突遭資遣別慌張！非自願離職如何申請補助？三大津貼資格、臨櫃與線 …",
+      "url": "https://uptogo.com.tw/%E6%B3%95%E5%BE%8B/%E9%9D%9E%E8%87%AA%E9%A1%98%E9%9B%A2%E8%81%B7%E5%A6%82%E4%BD%95%E7%94%B3%E8%AB%8B%E8%A3%9C%E5%8A%A9%EF%BC%9F/",
+      "snippet": "Jul 3, 2026 · 本文將詳細拆解非自願離職如何申請補助，從認定資格、津貼金額到具體申辦步驟，協助你順利渡過待業空窗期，安心迎 …"
+    },
+    {
+      "title": "「 台灣 2026 非自願離職重大傷病補助與申請資格 」的相關專欄文 …",
+      "url": "https://www.yourator.co/articles?term%5B%5D=%E5%8F%B0%E7%81%A3%202026%20%E9%9D%9E%E8%87%AA%E9%A1%98%E9%9B%A2%E8%81%B7%E9%87%8D%E5%A4%A7%E5%82%B7%E7%97%85%E8%A3%9C%E5%8A%A9%E8%88%87%E7%94%B3%E8%AB%8B%E8%B3%87%E6%A0%BC",
+      "snippet": "Yourator 求職平台的「 台灣 2026 非自願離職重大傷病補助與申請資格 」相關專欄文章。最懂數位工作者的求職網站！Yourator 職涯 …"
+    },
+    {
+      "title": "台灣 2026 非自願離職重大傷病補助與申請資格 - 政府開放資料搜尋:內政部令：修正「新住民發展基金補助 …",
+      "url": "https://data.zhupiter.com/search/%E5%8F%B0%E7%81%A3+2026+%E9%9D%9E%E8%87%AA%E9%A1%98%E9%9B%A2%E8%81%B7%E9%87%8D%E5%A4%A7%E5%82%B7%E7%97%85%E8%A3%9C%E5%8A%A9%E8%88%87%E7%94%B3%E8%AB%8B%E8%B3%87%E6%A0%BC/",
+      "snippet": "於政府開放資料中搜尋台灣 2026 非自願離職重大傷病補助與申請資格。有:內政部令：修正「新住民發展基金補助經費申請補助項目及 …"
+    },
+    {
+      "title": "突然失業怎麼辦？非自願離職健保有補助嗎？眷屬資格、補助期限與線 …",
+      "url": "https://uptogo.com.tw/%E8%81%B7%E5%A0%B4/%E9%9D%9E%E8%87%AA%E9%A1%98%E9%9B%A2%E8%81%B7%E5%81%A5%E4%BF%9D%E6%9C%89%E8%A3%9C%E5%8A%A9%E5%97%8E%EF%BC%9F/",
+      "snippet": "只要符合特定條件，勞保局會提供全額的健保費補助，甚至連原本依附在您名下的眷屬也能一同受惠。 本文將為您詳細梳理非自願離 …"
+    },
+    {
+      "title": "台灣 2026 非自願離職重大傷病補助與申請資格 - 搜尋 - 諸彼特開放資 …",
+      "url": "https://data.zhupiter.com/search.php?cx=partner-pub-4027255886607766%3A4919363656&q=%E5%8F%B0%E7%81%A3+2026+%E9%9D%9E%E8%87%AA%E9%A1%98%E9%9B%A2%E8%81%B7%E9%87%8D%E5%A4%A7%E5%82%B7%E7%97%85%E8%A3%9C%E5%8A%A9%E8%88%87%E7%94%B3%E8%AB%8B%E8%B3%87%E6%A0%BC",
+      "snippet": "關鍵字搜尋 - 台灣 2026 非自願離職重大傷病補助與申請資格."
+    }
+  ]
+}

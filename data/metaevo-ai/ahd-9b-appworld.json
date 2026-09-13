@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "metaevo-ai/ahd-9b-appworld",
+  "slug": "metaevo-ai-ahd-9b-appworld",
+  "author": "metaevo-ai",
+  "url": "https://huggingface.co/metaevo-ai/ahd-9b-appworld",
+  "created_at": "2026-09-12T11:02:20.000Z",
+  "updated_at": "2026-09-12T19:33:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 20093948846,
+  "storage_human": "20.1 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gerüchteküche - Forum | Transfermarkt",
+      "url": "https://www.transfermarkt.de/geruchtekuche/detail/forum/154",
+      "snippet": "Aug 13, 2009 · Dies ist die Übersicht aller Threads aus dem Forum Gerüchteküche, die in der Transfermarkt-Community diskutiert …"
+    },
+    {
+      "title": "Bundesliga 26/27 | Transfermarkt",
+      "url": "https://www.transfermarkt.de/bundesliga/startseite/wettbewerb/L1",
+      "snippet": "Bundesliga auf Transfermarkt mit Tabelle Ergebnissen Spielplan Liveticker Marktwerten Vereine Transfers Statistiken"
+    },
+    {
+      "title": "Fußball-Transfers, Gerüchte, Marktwerte und News | Transfermarkt",
+      "url": "https://www.transfermarkt.de/",
+      "snippet": "Im Referenzjahr davor hatte man in der Bundesliga lediglich 47 Punkte und gerade noch die Euroleague-Quali für die …"
+    },
+    {
+      "title": "Borussia Dortmund - Vereinsprofil | Transfermarkt",
+      "url": "https://www.transfermarkt.de/borussia-dortmund/startseite/verein/16",
+      "snippet": "Alles zum Verein Bor. Dortmund (Bundesliga) aktueller Kader mit Marktwerten Transfers Gerüchte Spieler-Statistiken Spielplan News"
+    },
+    {
+      "title": "Hamburger SV - Vereinsprofil | Transfermarkt",
+      "url": "https://www.transfermarkt.de/hamburger-sv/startseite/verein/41",
+      "snippet": "Der Hamburger SV ist Gründungsmitglied der Bundesliga und wurde einst auch als Dino der Liga bezeichnet. Der 1887 gegründete …"
+    }
+  ]
+}

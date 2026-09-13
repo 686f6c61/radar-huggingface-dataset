@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_insert_xxf_character-6k_7k_8k_9k_10k_simpleavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_insert_xxf_character-6k_7k_8k_9k_10k_simpleavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-6k_7k_8k_9k_10k_simpleavg_merge",
+  "created_at": "2026-09-13T00:33:47.000Z",
+  "updated_at": "2026-09-13T00:34:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Art. 214 da Lei de Registros Publicos - Lei 6015/73 | Jusbrasil",
+      "url": "https://www.jusbrasil.com.br/topicos/11312725/artigo-214-da-lei-n-6015-de-31-de-dezembro-de-1973?msockid=11dfc84c99b066073072df9f98f567be",
+      "snippet": "Aug 23, 2026 · Este exemplo ilustra a aplicação do Art. 214 da Lei de Registros Públicos, onde a nulidade de pleno direito do …"
+    },
+    {
+      "title": "Art. 214 da Lei de Registros Publicos | Jusbrasil",
+      "url": "https://www.jusbrasil.com.br/busca?q=Art.+214+da+Lei+de+Registros+Publicos&msockid=11dfc84c99b066073072df9f98f567be",
+      "snippet": "Oct 16, 2017 · Nos termos do art. 214 da Lei de Registros Público, “As nulidades de pleno direito do registro, uma vez provadas, …"
+    },
+    {
+      "title": "Procedimento de autotutela registral: limites objetivos - Migalhas",
+      "url": "https://www.migalhas.com.br/coluna/migalhas-notariais-e-registrais/393974/procedimento-de-autotutela-registral-limites-objetivos",
+      "snippet": "Sep 25, 2023 · Jurista Carlos E. Elias de Oliveira trata dos limites do procedimento de autotutela registral, previsto no art. 214 da Lei …"
+    },
+    {
+      "title": "Art. 214 da Lei 6.015 — Art. 214 - As nulidades de pleno direito do ...",
+      "url": "https://www.legjur.com/legislacao/art/lei_00060151973-214",
+      "snippet": "May 26, 2025 · - As nulidades de pleno direito do registro, uma vez provadas, invalidam-no, independentemente de ação direta. § 1º …"
+    },
+    {
+      "title": "Artigo 214 - Lei dos Registros Públicos / 1973 - Modelo Inicial",
+      "url": "https://modeloinicial.com.br/lei/L-6015-1973/lei-registros-publicos/art-214",
+      "snippet": "A Lei nº 6.015/73, em seu art. 214, dispõe que as nulidades de pleno direito do registro, uma vez provadas, invalidam-no …"
+    }
+  ]
+}

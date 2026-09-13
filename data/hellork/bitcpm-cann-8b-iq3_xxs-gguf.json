@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "hellork/BitCPM-CANN-8B-IQ3_XXS-GGUF",
+  "slug": "hellork-bitcpm-cann-8b-iq3_xxs-gguf",
+  "author": "hellork",
+  "url": "https://huggingface.co/hellork/BitCPM-CANN-8B-IQ3_XXS-GGUF",
+  "created_at": "2026-09-12T21:16:43.000Z",
+  "updated_at": "2026-09-12T21:58:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "zh",
+    "en",
+    "base_model:openbmb/BitCPM-CANN-8B",
+    "base_model:quantized:openbmb/BitCPM-CANN-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8185254016,
+  "parameters_human": "8.19B",
+  "storage_bytes": 3242662176,
+  "storage_human": "3.2 GB",
+  "base_model": "openbmb/BitCPM-CANN-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-13T03:06:53.233Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Current Time in London — Live Clock, Time Zone & UTC Offset",
+      "url": "https://www.worldtimenow.net/time/london/",
+      "snippet": "22 hours ago · What time is it in London right now? See the live clock, UTC+0 offset, time zone details, and Daylight Saving Time info …"
+    },
+    {
+      "title": "Time in London, United Kingdom now",
+      "url": "https://time.is/London",
+      "snippet": "22 hours ago · Exact time now, time zone, time difference, sunrise/sunset time and key facts for London, United Kingdom."
+    },
+    {
+      "title": "Time in London – Live Clock (GMT / BST)",
+      "url": "https://www.timeinlondon.co.uk/",
+      "snippet": "22 hours ago · Live, accurate time in London right now. Updated every second with GMT/BST status, plus tools to compare cities and …"
+    },
+    {
+      "title": "Current Time in London - Sunrise, Sunset, Day Length & Moon",
+      "url": "https://timeinuk.co.uk/time/london/",
+      "snippet": "22 hours ago · Live time in London plus today’s sunrise, sunset, day length, moon phase and UK clock-change status - updated live."
+    },
+    {
+      "title": "Current Time in London, United Kingdom - Live Clock",
+      "url": "https://liveclock.now/london",
+      "snippet": "2 days ago · Check the current local time in London. Live clock with timezone (Europe/London), daylight saving time (DST), and …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "humair025/kikiri-tts-urdu-pipeline-v2_FIXED",
+  "slug": "humair025-kikiri-tts-urdu-pipeline-v2_fixed",
+  "author": "humair025",
+  "url": "https://huggingface.co/humair025/kikiri-tts-urdu-pipeline-v2_FIXED",
+  "created_at": "2026-09-12T19:49:57.000Z",
+  "updated_at": "2026-09-12T19:51:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44889920,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Answered: Linking existing Netflix account | Sky Community",
+      "url": "https://helpforum.sky.com/t5/Sky-Stream/Linking-existing-Netflix-account/td-p/5166341",
+      "snippet": "Dec 13, 2025 · Are you sure you signed into the Netflix app on your Stream puck with your existing Netflix account details? Login to …"
+    },
+    {
+      "title": "Netflix login | Sky Community",
+      "url": "https://helpforum.sky.com/t5/Sky-Go/Netflix-login/m-p/5362971",
+      "snippet": "Sep 4, 2026 · I have Netflix with sky now but can't login elsewhere"
+    },
+    {
+      "title": "KASKUS - Berbagi Hobi, Berkomunitas",
+      "url": "https://www.kaskus.co.id/",
+      "snippet": "Forum diskusi hobi, rumah ribuan komunitas dan pusat jual beli barang hobi di Indonesia."
+    },
+    {
+      "title": "HELP! Audition Ayodance Player!! DC tanpa sebab | KASKUS",
+      "url": "https://www.kaskus.co.id/thread/5c4300b196bde610778b4569/help-audition-ayodance-player-dc-tanpa-sebab",
+      "snippet": "HELP! Audition Ayodance Player!! DC tanpa sebab hallo agan agan, yg main Audition Ayodance, boleh bantu? saya minggu lalu …"
+    },
+    {
+      "title": "Netflix suddenly in Spanish | Sky Community",
+      "url": "https://helpforum.sky.com/t5/Sky-Q/Netflix-suddenly-in-Spanish/td-p/4403637",
+      "snippet": "Sep 4, 2023 · My Netflix app through Sky Q is suddenly in Spanish. My profiles have all disappeared and I cannot see any way to …"
+    }
+  ]
+}

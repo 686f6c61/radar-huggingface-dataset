@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Saraswathy/vlm-mix-resume-geo70-commonsense30-step95",
+  "slug": "saraswathy-vlm-mix-resume-geo70-commonsense30-step95",
+  "author": "Saraswathy",
+  "url": "https://huggingface.co/Saraswathy/vlm-mix-resume-geo70-commonsense30-step95",
+  "created_at": "2026-09-12T23:10:59.000Z",
+  "updated_at": "2026-09-12T23:13:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-4B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11781417443,
+  "storage_human": "11.8 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Star Wars — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Star_Wars",
+      "snippet": "Christophe Abramowitz), Star Wars, le côté obscur de l'Amérique, Malakoff, Armand Colin, 2018, 224 p. (ISBN 978-2-200-62035-6, …"
+    },
+    {
+      "title": "StarWars.com | The Official Star Wars Website",
+      "url": "https://www.starwars.com/",
+      "snippet": "The official site for Star Wars, featuring the latest news on Star Wars movies, series, video games, books, and more."
+    },
+    {
+      "title": "Star Wars au cinéma — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Star_Wars_au_cin%C3%A9ma",
+      "snippet": "Star Wars est une saga cinématographique américaine créée par George Lucas appartenant au genre de la science fantasy et du …"
+    },
+    {
+      "title": "Star Wars - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Star_Wars",
+      "snippet": "Star Wars is an American media franchise created by George Lucas. The space opera saga began with the original Star Wars film …"
+    },
+    {
+      "title": "Star Wars : voici le calendrier de sortie des films et des séries",
+      "url": "https://www.journaldugeek.com/dossier/star-wars-voici-la-liste-des-films-et-series-annonces/",
+      "snippet": "Aug 21, 2026 · Le nouveau président de Lucasfilm a présenté Star Wars : Starfighter et offert un bref aperçu d’Ahsoka saison 2. On …"
+    }
+  ]
+}

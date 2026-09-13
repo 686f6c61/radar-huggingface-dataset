@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "meshllm/NVIDIA-Nemotron-3-Nano-Omni-30B-A3B-Reasoning-UD-Q4_K_XL-layers",
+  "slug": "meshllm-nvidia-nemotron-3-nano-omni-30b-a3b-reasoning-ud-q4_k_xl-layers",
+  "author": "meshllm",
+  "url": "https://huggingface.co/meshllm/NVIDIA-Nemotron-3-Nano-Omni-30B-A3B-Reasoning-UD-Q4_K_XL-layers",
+  "created_at": "2026-09-12T22:09:41.000Z",
+  "updated_at": "2026-09-12T22:48:16.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mesh-llm",
+  "languages": [],
+  "tags": [
+    "mesh-llm",
+    "gguf",
+    "layer-package",
+    "skippy",
+    "distributed-inference",
+    "local-inference",
+    "openai-compatible",
+    "text-generation",
+    "base_model:unsloth/NVIDIA-Nemotron-3-Nano-Omni-30B-A3B-Reasoning-GGUF",
+    "base_model:quantized:unsloth/NVIDIA-Nemotron-3-Nano-Omni-30B-A3B-Reasoning-GGUF",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 38744896,
+  "parameters_human": "38.7M",
+  "storage_bytes": 30696929184,
+  "storage_human": "30.7 GB",
+  "base_model": "unsloth/NVIDIA-Nemotron-3-Nano-Omni-30B-A3B-Reasoning-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تسجيل الدخول - حسابات Google",
+      "url": "https://accounts.google.com/login?hl=ar",
+      "snippet": "هل نسيت بريدك الإلكتروني؟ يُرجى كتابة النص المسموع أو الظاهر على الشاشة. ألا تمتلك هذا الكمبيوتر؟ استخدِم نافذة التصفّح بخصوصية تامّة لتسجيل الدخول. مزيد من المعلومات حول استخدام \"وضع …"
+    },
+    {
+      "title": "تسجيل الدخول إلى Gmail - جهاز الكمبيوتر - مساعدة Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "تسجيل الدخول على جهاز الكمبيوتر، انتقِل إلى Gmail. أدخِل عنوان البريد الإلكتروني لحسابك على Google أو رقم الهاتف وكلمة المرور."
+    },
+    {
+      "title": "Gmail",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "snippet": "Use a private browsing window to sign in. Learn more about using Guest mode. Gmail is email that’s intuitive, efficient, and useful. 15 …"
+    },
+    {
+      "title": "تسجيل الدخول إلى Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=ar&js_request_id=render_api692081900&rr=1&lc=1&loaded_js=common,scone,environment,page,csi_lite,query_parameter_preserver,stats,stats_clearcut_impl,visit_manager,top_timer,navigation_drawer,search_material_onebar,one_google_bar,search_full_layout,search_tracking,searchbox_client_adapter,search_autocomplete,language_selector,lazy_load,feedback_helpcenter_default,article_survey,chat_support,context_selector_base,context_selector_tabs_async,select,dark_mode_toggle,keyboard_focus,accessibility&co=GENIE.Platform%3DDesktop&hl=ar&dark=0",
+      "snippet": "إصلاح مشاكل تسجيل الدخول إلى Gmail إذا نسيت اسم المستخدم أو كلمة المرور لحساب Gmail، أو لم تتمكن من الوصول إلى حسابك، يمكنك اتباع دليلنا لتحديد المشاكل وحلّها."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://www.google.com/accounts/Login",
+      "snippet": "Forgot email? Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode."
+    }
+  ]
+}

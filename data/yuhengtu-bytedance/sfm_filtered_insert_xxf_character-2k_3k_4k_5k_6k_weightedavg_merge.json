@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_insert_xxf_character-2k_3k_4k_5k_6k_weightedavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_insert_xxf_character-2k_3k_4k_5k_6k_weightedavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-2k_3k_4k_5k_6k_weightedavg_merge",
+  "created_at": "2026-09-13T00:03:41.000Z",
+  "updated_at": "2026-09-13T00:04:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "波浪号（～）是什么意思，正规的用法是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/19615526",
+      "snippet": "除了在字典中作为代替符号以外，在印刷品中很少见到这个符号。那么它应该是怎么用的呢？它的来源又是怎…"
+    },
+    {
+      "title": "电容的单位怎么换算？F，NF，PF，UF？_百度知道",
+      "url": "https://zhidao.baidu.com/question/12936434.html",
+      "snippet": "电容单位换算关系： 1法拉（F）= 1000毫法（mF） 1毫法（mF）=1000微法（μF） 1微法（μF）= 1000纳法（nF） 1纳法（nF）= …"
+    },
+    {
+      "title": "迷你世界 迷你世界官服怎么下？_百度知道",
+      "url": "https://zhidao.baidu.com/question/148229835482221085.html",
+      "snippet": "Nov 16, 2024 · 迷你世界 迷你世界官服怎么下？迷你世界的官方版本可通过官方网站获取。首先，玩家需打开常用的网络浏览器，输入 …"
+    },
+    {
+      "title": "7-Zip 官方网站怎么下载？ - 知乎",
+      "url": "https://www.zhihu.com/question/20498753",
+      "snippet": "7-Zip 是一个功能强大的工具，特别适合需要 高效压缩 和 解压缩 功能的用户。比如 IT 专业人员、软件开发者或普通用户希望节省磁 …"
+    },
+    {
+      "title": "Mantık Formülleri - Ve , Veya, İse, Ancak ve Ancak Özellikleri",
+      "url": "https://www.matematiktutkusu.com/forum/matematik-formulleri/2944-mantik-formulleri-ve-veya-ise-ancak-ve-ancak-ozellikleri.html",
+      "snippet": "Mar 1, 2011 · p ve q önermeleri arasında \"ve\" bağlacı kullanılarak \"p ve q\" bileşik önermesini elde etme işlemine \"ve\" işlemi denir. \"p …"
+    }
+  ]
+}

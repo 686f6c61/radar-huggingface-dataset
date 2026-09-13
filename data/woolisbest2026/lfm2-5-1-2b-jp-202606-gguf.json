@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "woolisbest2026/LFM2.5-1.2B-JP-202606-GGUF",
+  "slug": "woolisbest2026-lfm2-5-1-2b-jp-202606-gguf",
+  "author": "woolisbest2026",
+  "url": "https://huggingface.co/woolisbest2026/LFM2.5-1.2B-JP-202606-GGUF",
+  "created_at": "2026-09-13T01:36:21.000Z",
+  "updated_at": "2026-09-13T02:05:01.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "liquid",
+    "lfm2",
+    "lfm2.5",
+    "edge",
+    "conversational",
+    "text-generation",
+    "ja",
+    "en",
+    "arxiv:2511.23404",
+    "base_model:LiquidAI/LFM2.5-1.2B-JP-202606",
+    "base_model:quantized:LiquidAI/LFM2.5-1.2B-JP-202606",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 5766715904,
+  "storage_human": "5.8 GB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-JP-202606",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "خريطة الموقع | برج خليفة - Burj Khalifa",
+      "url": "https://www.burjkhalifa.ae/ar/site-map/",
+      "snippet": "تعرف على خريطة موقع برج خليفة للتنقل بسهولة بين صفحات الموقع. اعثر على الروابط لكل الأقسام بما في ذلك التجارب، صالة عرض، الهندسة المعمارية والتصميم، وسياسة الخصوصية والمزيد."
+    },
+    {
+      "title": "رحلات التجول الإفتراضي: برج خليفة – حول – خرائط Google",
+      "url": "https://www.google.com/intl/ar/maps/about/behind-the-scenes/streetview/treks/burj-khalifa/",
+      "snippet": "رحلة إلى برج خليفة من خلال خرائط Google. سافر مع أعضاء فريقنا إلى دبي، الإمارات العربية المتحدة وهم يجمعون صور التجول الافتراضي لأطول مبنى في العالم. تعرّف بعمق على هذا المكان من خلال …"
+    },
+    {
+      "title": "برج خليفة دبي - الدليل الرسمي لأطول مبنى في العالم",
+      "url": "https://www.theburjdubai.ae/ar",
+      "snippet": "2 days ago · تشمل التجارب المطوّرة عروضًا عن صعود دبي وتحديات البناء ونظرات موجهة إلى ابتكارات هذا البناء الضخم. بارتفاع 828 مترًا و163 طابقًا، يتجاوز برج خليفة فكرة ‘الأطول’ …"
+    },
+    {
+      "title": "برج خليفة - ويكيبيديا",
+      "url": "https://ar.wikipedia.org/wiki/%D8%A8%D8%B1%D8%AC_%D8%AE%D9%84%D9%8A%D9%81%D8%A9",
+      "snippet": "يستمد تصميم برج خليفة من نظم تنميط متجسدة في العمارة الإسلامية. ووفقا للمهندس الهيكلي، بيل بيكر من SOM، أن تصميم المبنى يشتمل على العناصر الثقافية والتاريخية خاصة في المنطقة مثل مئذنة …"
+    },
+    {
+      "title": "استمتع بتجربة الإقامة وزيارة برج خليفة | برج خليفة",
+      "url": "https://www.burjkhalifa.ae/ar/",
+      "snippet": "احجز إقامتك وزيارتك لبرج خليفة. استمتع بتجارب فريدة مثل إقامات فخمة، استمتع بالهدوء في نافورة دبي ولحظات ساحرة في دبي أوبرا والمطاعم الفاخرة، ومنصات المراقبة، والاسترخاء والمزيد في قلب …"
+    }
+  ]
+}

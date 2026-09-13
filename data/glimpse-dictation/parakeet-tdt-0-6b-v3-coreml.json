@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Glimpse-Dictation/Parakeet-TDT-0.6B-V3-coreml",
+  "slug": "glimpse-dictation-parakeet-tdt-0-6b-v3-coreml",
+  "author": "Glimpse-Dictation",
+  "url": "https://huggingface.co/Glimpse-Dictation/Parakeet-TDT-0.6B-V3-coreml",
+  "created_at": "2026-09-13T01:10:30.000Z",
+  "updated_at": "2026-09-13T01:36:43.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "coreml",
+  "languages": [],
+  "tags": [
+    "coreml",
+    "gguf",
+    "parakeet",
+    "apple-neural-engine",
+    "automatic-speech-recognition",
+    "base_model:nvidia/parakeet-tdt-0.6b-v3",
+    "base_model:quantized:nvidia/parakeet-tdt-0.6b-v3",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18123398,
+  "parameters_human": "18.1M",
+  "storage_bytes": 1112756860,
+  "storage_human": "1.1 GB",
+  "base_model": "nvidia/parakeet-tdt-0.6b-v3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com.tn/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/#!%20/=",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=fr-fr",
+      "snippet": "Publicité À propos de Google Google.com in English © 2026 - Confidentialité - Conditions"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/webhp?gl=nf&hl=en&gws_rd=cr&pws=0",
+      "snippet": "Advertising Business Solutions About Google Google.com © 2026 - Privacy - Terms"
+    },
+    {
+      "title": "Google",
+      "url": "http://www.google.gp/?hl=fr",
+      "snippet": "Google disponible en : English Publicité À propos de Google Google.com"
+    }
+  ]
+}

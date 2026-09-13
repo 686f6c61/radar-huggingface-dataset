@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Fred-9B-v1.2-GGUF",
   "created_at": "2026-09-12T11:24:39.000Z",
-  "updated_at": "2026-09-12T12:02:37.000Z",
+  "updated_at": "2026-09-12T12:30:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": 9197093888,
   "parameters_human": "9.20B",
-  "storage_bytes": 75999870720,
-  "storage_human": "76.0 GB",
+  "storage_bytes": 85101502592,
+  "storage_human": "85.1 GB",
   "base_model": "CrowdMind/Fred-9B-v1.2",
   "formats": [
     "gguf"

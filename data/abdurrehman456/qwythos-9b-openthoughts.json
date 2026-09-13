@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "abdurrehman456/qwythos-9b-openthoughts",
+  "slug": "abdurrehman456-qwythos-9b-openthoughts",
+  "author": "abdurrehman456",
+  "url": "https://huggingface.co/abdurrehman456/qwythos-9b-openthoughts",
+  "created_at": "2026-09-12T21:01:55.000Z",
+  "updated_at": "2026-09-12T21:05:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 17927652518,
+  "storage_human": "17.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FitGirl Repacks - The ONLY official site for FitGirl Repacks. Every ...",
+      "url": "https://fitgirl-repacks.site/",
+      "snippet": "The ONLY official site for FitGirl Repacks. Every single FG repack installer has a link inside, which leads here. Do not fall for fake and …"
+    },
+    {
+      "title": "Detroit: Become Human – v20211117/Build 7662975 - FitGirl Repacks",
+      "url": "https://fitgirl-repacks.site/detroit-become-human/",
+      "snippet": "Oct 6, 2022 · #1448 Updated Detroit: Become Human v20211117/Build 7662975 + Windows 7 Fix Genres/Tags: Adventure, …"
+    },
+    {
+      "title": "FitGirl Repacks - Page 2 of 798 - The ONLY official site for FitGirl ...",
+      "url": "https://fitgirl-repacks.site/page/2/?ref=r2F%2F",
+      "snippet": "The ONLY official site for FitGirl Repacks. Every single FG repack installer has a link inside, which leads here. Do not fall for fake and …"
+    },
+    {
+      "title": "Football Manager 26 – v26.3.2 + In-Game Editor DLC - FitGirl Repacks",
+      "url": "https://fitgirl-repacks.site/football-manager-26/",
+      "snippet": "Jul 5, 2026 · #6749 Updated HYPERVISOR Football Manager 26 v26.3.2 + In-Game Editor DLC Genres/Tags: Management, Sports, …"
+    },
+    {
+      "title": "Left 4 Dead 2 - v2.2.0.2 / Build 5608010 - FitGirl Repacks",
+      "url": "https://fitgirl-repacks.site/left-4-dead-2/",
+      "snippet": "Sep 30, 2020 · #1587 Left 4 Dead 2 v2.2.0.2 / Build 5608010 + Multiplayer Genres/Tags: Action, Shooter, First-person, 3D Company: …"
+    }
+  ]
+}

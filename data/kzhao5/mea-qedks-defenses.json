@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "kzhao5/mea-qedks-defenses",
+  "slug": "kzhao5-mea-qedks-defenses",
+  "author": "kzhao5",
+  "url": "https://huggingface.co/kzhao5/mea-qedks-defenses",
+  "created_at": "2026-09-12T21:57:49.000Z",
+  "updated_at": "2026-09-12T22:01:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "model-extraction",
+    "knowledge-distillation",
+    "watermark",
+    "lora",
+    "base_model:Qwen/Qwen2.5-7B",
+    "base_model:adapter:Qwen/Qwen2.5-7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 762144135,
+  "storage_human": "762 MB",
+  "base_model": "Qwen/Qwen2.5-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supremeのオンライン購入、届かない！原因と解決策を徹底解説 ...",
+      "url": "https://wovie.me/contents-8/column/?p=139442",
+      "snippet": "Aug 6, 2025 · Supremeのオンライン購入、届かない！ 原因と解決策を徹底解説 この記事では、Supremeのオンラインストアでの購 …"
+    },
+    {
+      "title": "当店からのメールが届かないお客様へ - Supreme（シュプリーム ...",
+      "url": "https://be-supremer.jp/guide/mail/",
+      "snippet": "Aug 26, 2026 · 「注文後の詳細メールが来ない．．．」 携帯電話やフリーメールの設定により、当店からのメールが受信できない …"
+    },
+    {
+      "title": "【注文確認メールが届かない】迷惑メール以外の原因と対処法 ...",
+      "url": "https://pcu.jp/chuumon-kakunin-mail-todokanai/",
+      "snippet": "Oct 6, 2021 · 注文確認メールが届かなくて困った体験談 注文確認メールが届かないとどんな場面で困るのか 注文が完了しているか …"
+    },
+    {
+      "title": "Supremeの注文メールが届かない原因 - QRO",
+      "url": "https://ten-10.xyz/entry/supreme-mail-error",
+      "snippet": "Dec 10, 2025 · シュプリームオンラインで注文確認のメールや発送メールが届かないことがあります。 自分もエラーかと思いました …"
+    },
+    {
+      "title": "Supreme 注文確認メール 届かない 対処に関するよくあるご質問 ...",
+      "url": "https://support-jp.nintendo.com/app/answers/list/kw/Supreme+%E6%B3%A8%E6%96%87%E7%A2%BA%E8%AA%8D%E3%83%A1%E3%83%BC%E3%83%AB+%E5%B1%8A%E3%81%8B%E3%81%AA%E3%81%84+%E5%AF%BE%E5%87%A6/search/1",
+      "snippet": "【Nintendo Store】 注文 受付の メール は 届いた のですが、領収書 メール が 届きません。 正しく 注文 できていますか？ 【ニン …"
+    }
+  ]
+}

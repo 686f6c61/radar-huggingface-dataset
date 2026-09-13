@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "bunnycore/MiniCPM5-2B-Super-Lora",
+  "slug": "bunnycore-minicpm5-2b-super-lora",
+  "author": "bunnycore",
+  "url": "https://huggingface.co/bunnycore/MiniCPM5-2B-Super-Lora",
+  "created_at": "2026-09-12T18:42:44.000Z",
+  "updated_at": "2026-09-12T21:40:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "base_model:adapter:UraionLabs/uraion-forge-2b",
+    "lora",
+    "transformers",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "dataset:MoreThought/SuperiorThoughts-1",
+    "base_model:UraionLabs/uraion-forge-2b",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 50233344,
+  "parameters_human": "50.2M",
+  "storage_bytes": 301519664,
+  "storage_human": "302 MB",
+  "base_model": "UraionLabs/uraion-forge-2b",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fiat Grande Panda | Stilvolles Hybridauto | Fiat DE",
+      "url": "https://www.fiat.de/modelle/grande-panda",
+      "snippet": "Ikonisches Design und moderne Ausstattung: Erlebe doppelten Fahrspaß mit dem Fiat Grande Panda. Jetzt als Hybrid- und …"
+    },
+    {
+      "title": "Fiat Grande Panda: So schneidet der günstige Kleinwagen im Test ab",
+      "url": "https://www.adac.de/rund-ums-fahrzeug/autokatalog/marken-modelle/fiat/fiat-grande-panda/",
+      "snippet": "Sep 29, 2025 · Fiat hat mit dem Grande Panda einen günstigen Kleinwagen im Angebot. Es gibt ihn wahlweise als Benziner, mit …"
+    },
+    {
+      "title": "Fiat Grande Panda Benziner | Ikonischer Kleinwagen",
+      "url": "https://www.fiat.de/modelle/grande-panda-benzin",
+      "snippet": "Der Fiat Grande Panda Benziner in der LA PRIMA-Version steht für Eleganz und Performance. Designed für Komfort, Stil und …"
+    },
+    {
+      "title": "Fiat Grande Panda – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Fiat_Grande_Panda",
+      "snippet": "Mit einer Länge von rund vier Metern ist der Grande Panda deutlich länger als der Panda, der weiter im Angebot des Herstellers …"
+    },
+    {
+      "title": "Fiat Grande Panda (2026): alle Infos, Preise und Tests - AUTO BILD",
+      "url": "https://www.autobild.de/marken-modelle/fiat/grande-panda/",
+      "snippet": "Der Grande Panda ist ein Mini-SUV aus dem Hause Fiat. Er kommt als Verbrenner, Hybrid oder ganz elektrisch. Details zitieren den …"
+    }
+  ]
+}

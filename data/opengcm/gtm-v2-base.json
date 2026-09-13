@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "OPENGCM/GTM-v2-base",
+  "slug": "opengcm-gtm-v2-base",
+  "author": "OPENGCM",
+  "url": "https://huggingface.co/OPENGCM/GTM-v2-base",
+  "created_at": "2026-09-12T17:50:53.000Z",
+  "updated_at": "2026-09-12T23:12:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gtm-gpt",
+    "text-generation",
+    "gpt",
+    "nanogpt",
+    "pytorch",
+    "from-scratch",
+    "small-language-model",
+    "slm",
+    "pretraining",
+    "muon-optimizer",
+    "single-gpu",
+    "base-model",
+    "research",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 154875776,
+  "parameters_human": "154.9M",
+  "storage_bytes": 620499865,
+  "storage_human": "620 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Centrum pro cizince - Centrum pro cizince JMK | Poradenství, kurzy …",
+      "url": "https://www.cizincijmk.cz/cs/",
+      "snippet": "Jsme Centrum pro cizince Jihomoravského kraje. Nabízíme kurzy češtiny, právní a sociální poradenství, sociokulturní přednášky, …"
+    },
+    {
+      "title": "Kontakty - Centrum pro cizince JMK",
+      "url": "https://www.cizincijmk.cz/cs/kontakty/",
+      "snippet": "Pomozte nám zlepšovat naše služby tím, že nám napíšete reflexi na naše služby, nabídku nebo způsob komunikace. Jakákoliv …"
+    },
+    {
+      "title": "Centrum pro cizince JMK | Brno - Facebook",
+      "url": "https://www.facebook.com/CentrumprocizinceJMK/",
+      "snippet": "Centrum pro cizince JMK 5d󰞋󱟠 Our summer Czech courses for children and teenagers are in full swing! ☀️📚 Children aged 5–18 …"
+    },
+    {
+      "title": "Centrum pro cizince Jihomoravského kraje slaví 15 let",
+      "url": "https://www.jmk.cz/content/29283",
+      "snippet": "Apr 4, 2024 · V současné chvíli je v nabídce zhruba 65 jazykových kurzů, které se centrum snaží nabízet kromě Brna i v dalších …"
+    },
+    {
+      "title": "Centrum pro cizince JMK - brno.charita.cz",
+      "url": "https://brno.charita.cz/nase-sluzby/centrum-celsuz/sluzby-pro-cizince/centrum-pro-cizince-jmk/",
+      "snippet": "Centrum pro cizince je zapsaným ústavem, v rámci kterého jsou zdarma poskytovány služby cizincům ze třetích zemí i EU s cílem …"
+    }
+  ]
+}

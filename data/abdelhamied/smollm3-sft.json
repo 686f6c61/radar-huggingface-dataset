@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "abdelhamied/smollm3-sft",
+  "slug": "abdelhamied-smollm3-sft",
+  "author": "abdelhamied",
+  "url": "https://huggingface.co/abdelhamied/smollm3-sft",
+  "created_at": "2026-09-12T18:42:21.000Z",
+  "updated_at": "2026-09-12T19:34:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "hf_jobs",
+    "trl",
+    "sft",
+    "dataset:HuggingFaceTB/smoltalk2_everyday_convs_think",
+    "base_model:HuggingFaceTB/SmolLM3-3B-Base",
+    "base_model:finetune:HuggingFaceTB/SmolLM3-3B-Base",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 78633518,
+  "storage_human": "79 MB",
+  "base_model": "HuggingFaceTB/SmolLM3-3B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "盐选故事 - 知乎",
+      "url": "https://www.zhihu.com/topic/27506424/hot",
+      "snippet": "知乎盐选故事提供高质量的原创内容，涵盖科技、商业、影视等领域，帮助用户分享知识、经验和见解。"
+    },
+    {
+      "title": "入坑兰斯的顺序是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/388227370",
+      "snippet": "入坑其实哪一部都可以（ 我当年入坑的时候是先玩的在当时口碑最好，传播量最高的兰斯7，也就是战国兰斯。 “入坑”只看你对于这个 …"
+    },
+    {
+      "title": "孕妇需要吃dhn吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/496291009",
+      "snippet": "Nov 3, 2021 · 我觉得，题主应该是要问DHA吧。 孕妇的话，一般可以在怀孕5个月左右的时候开始吃DHA。 DHA是促进大脑神经细胞 …"
+    }
+  ]
+}

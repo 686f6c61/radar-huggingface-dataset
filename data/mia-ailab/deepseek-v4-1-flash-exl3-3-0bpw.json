@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Mia-AiLab/DeepSeek-V4.1-Flash-EXL3-3.0bpw",
+  "slug": "mia-ailab-deepseek-v4-1-flash-exl3-3-0bpw",
+  "author": "Mia-AiLab",
+  "url": "https://huggingface.co/Mia-AiLab/DeepSeek-V4.1-Flash-EXL3-3.0bpw",
+  "created_at": "2026-09-12T20:19:44.000Z",
+  "updated_at": "2026-09-12T20:48:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "deepseek_v41",
+    "exl3",
+    "quantized",
+    "moe",
+    "vllm",
+    "deepseek",
+    "multimodal",
+    "image-text-to-text",
+    "conversational",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109545079634,
+  "parameters_human": "109.55B",
+  "storage_bytes": 219267349282,
+  "storage_human": "219.3 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Maiia - RDV médical et Téléconsultation - Professionnels de santé",
+      "url": "https://www.maiia.com/",
+      "snippet": "Prenez rendez-vous ou effectuez une téléconsultation facilement avec votre médecin, un spécialiste ou un praticien près de chez vous."
+    },
+    {
+      "title": "M.I.A. — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/M.I.A.",
+      "snippet": "Chris Mugan, « Mia: Learning to speak guerrilla language », The Independent, Independent Print Limited, 1er octobre 2004 (lire en …"
+    },
+    {
+      "title": "Prénom Mia (fille) : signification, origine, caractère, sainte, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/mia/prenom-7976",
+      "snippet": "Quelle est la signification du prénom Mia ? Le prénom Mia est dérivé du prénom Marie. La forme ancienne de ce dernier signifierait …"
+    },
+    {
+      "title": "M.I.A. (rapper) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/M.I.A._(rapper)",
+      "snippet": "M.I.A. officially signed to Jay-Z 's Roc Nation management in May 2012. [140][141] Rihanna welcomed her to the family, tweeting, …"
+    },
+    {
+      "title": "mia - Mon espace",
+      "url": "https://app.mia.co/",
+      "snippet": "Connexion à votre espace Mia Adresse email"
+    }
+  ]
+}

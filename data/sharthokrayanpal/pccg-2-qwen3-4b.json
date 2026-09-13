@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sharthokrayanpal/PCCG-2-Qwen3-4B",
+  "slug": "sharthokrayanpal-pccg-2-qwen3-4b",
+  "author": "sharthokrayanpal",
+  "url": "https://huggingface.co/sharthokrayanpal/PCCG-2-Qwen3-4B",
+  "created_at": "2026-09-12T18:34:47.000Z",
+  "updated_at": "2026-09-12T18:35:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "continuation-control",
+    "native-eos",
+    "frozen-content",
+    "en",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8115052652,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Contact Us - Microsoft Support",
+      "url": "https://support.microsoft.com/en-gb/contactus",
+      "snippet": "Contact Microsoft Support. Find solutions to common problems, or get help from a support agent."
+    },
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "Windows 8.1 ISO download for 64 and 32 bit | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/discussions/windowsinsiderprogram/windows-8-1-iso-download-for-64-and-32-bit/4454650",
+      "snippet": "Sep 16, 2025 · We have a couple of Windows 7 laptops and desktop PCs to upgraded to Windows 8.1 for software testing. It seems …"
+    },
+    {
+      "title": "Sign in to your account - techcommunity.microsoft.com",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation."
+    },
+    {
+      "title": "Microsoft Support and Recovery Assistant (SaRA) command-line utility ...",
+      "url": "https://support.microsoft.com/en-us/servicing/os/windows/docs/2026/03/microsoft-support-and-recovery-assistant-sara-command-line-utility-removal-from-windows",
+      "snippet": "Mar 31, 2026 · Microsoft has officially removed the SaRA utility from all in-support versions of Windows updates released on and after …"
+    }
+  ]
+}

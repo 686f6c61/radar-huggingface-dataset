@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "izsahin0228/retrieval-pretrained69",
+  "slug": "izsahin0228-retrieval-pretrained69",
+  "author": "izsahin0228",
+  "url": "https://huggingface.co/izsahin0228/retrieval-pretrained69",
+  "created_at": "2026-09-12T19:52:02.000Z",
+  "updated_at": "2026-09-12T19:52:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/",
+      "snippet": "21 hours ago · Hello, New users on the forum won't be able to send PM untill certain criteria are met (you need to have at least 6 …"
+    },
+    {
+      "title": "Index Fórum",
+      "url": "https://forum.index.hu/Topic/showTopicList",
+      "snippet": "1 day ago · Általános társalgási fórumcsoport A Törzsasztal, Index kávéház, iNteRNeTTo, Iskolák, évszámok, horoszkópok, …"
+    },
+    {
+      "title": "Index Fórum",
+      "url": "https://forum.index.hu/Article/viewArticle?a=171642476",
+      "snippet": "Sziasztok!Trix H0 DRG 5 darabos válogatott személyvagon szerelvény - abszolút újszerű, gyűjteményből, eltérő pályaszámok, …"
+    },
+    {
+      "title": "Sex Stories | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/forums/sex-stories.6/",
+      "snippet": "Apr 12, 2009 · Anything related to texts and xnxx stories. Hello, You can now get verified on forum. The way it's gonna work is that …"
+    },
+    {
+      "title": "Mi a titka egy igazán figyelemfelkeltő k - Index Fórum",
+      "url": "https://forum.index.hu/Article/showArticle?t=9256129",
+      "snippet": "Sep 21, 2024 · Kiállításon fogok részt venni, és szeretném, hogy a standom kitűnjön a többiek közül. Mit javasoltok, hogyan lehet …"
+    }
+  ]
+}

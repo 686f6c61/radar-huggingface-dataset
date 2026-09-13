@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "M1keR/CharizardV1",
+  "slug": "m1ker-charizardv1",
+  "author": "M1keR",
+  "url": "https://huggingface.co/M1keR/CharizardV1",
+  "created_at": "2026-09-12T19:55:07.000Z",
+  "updated_at": "2026-09-12T19:59:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22637328384,
+  "parameters_human": "22.64B",
+  "storage_bytes": 45290497937,
+  "storage_human": "45.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "波浪号（～）是什么意思，正规的用法是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/19615526",
+      "snippet": "除了在字典中作为代替符号以外，在印刷品中很少见到这个符号。那么它应该是怎么用的呢？它的来源又是怎…"
+    },
+    {
+      "title": "没有安装任何360软件，电脑里莫名其妙有了个360壁纸，控制面板的添 …",
+      "url": "https://www.zhihu.com/question/25046412",
+      "snippet": "找到C盘下面“用户”，点进去，记住要在“查看”勾选“隐藏文件夹”，会看到一个 APP Data 文件夹（之前是隐藏的）。下面的 Roaming …"
+    },
+    {
+      "title": "Guide - Instagram - CCM",
+      "url": "https://it.ccm.net/faq/instagram-550",
+      "snippet": "Profilo Instagram hackerato: un recupero semplificato Instagram continua la sua guerra contro la pirateria. La piattaforma ha... Per …"
+    },
+    {
+      "title": "Qui a vu mes stories Instagram [Résolu] - Instagram",
+      "url": "https://forums.commentcamarche.net/forum/affich-36452377-instagram-je-ne-peux-plus-voir-qui-a-vu-mes-story-instants",
+      "snippet": "Bonjour, Je ne peux plus voir qui a vu mes story sur Instagram J’ai éteins mon tel, déconnexion, supp l’app rien n’y fait Alors que sur …"
+    },
+    {
+      "title": "Problème étrange avec les groupes Instagram - Instagram",
+      "url": "https://forums.commentcamarche.net/forum/affich-37910805-probleme-etrange-avec-les-groupes-instagram",
+      "snippet": "Sep 13, 2023 · En retournant sur instagram, je ne vois aucune trace de ce groupe dans mon fil de discussion ou dans mes invitations …"
+    }
+  ]
+}

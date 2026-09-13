@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Tohirju/sl-tanager",
+  "slug": "tohirju-sl-tanager",
+  "author": "Tohirju",
+  "url": "https://huggingface.co/Tohirju/sl-tanager",
+  "created_at": "2026-09-12T18:42:22.000Z",
+  "updated_at": "2026-09-12T18:43:04.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1726019871,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook - webmail.apps.mil",
+      "url": "https://webmail.apps.mil/mail/?realm=army.mil",
+      "snippet": "Outlook - webmail.apps.mil ... Outlook"
+    },
+    {
+      "title": "MilitaryCAC's Army365 specific problems and solutions page",
+      "url": "https://militarycac.com/army365.htm",
+      "snippet": "Aug 12, 2026 · NOTE: The Army has chosen to make Email and Teams ONLY available via web browser on personally owned …"
+    },
+    {
+      "title": "email.army",
+      "url": "https://email.army/",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "HRC Homepage",
+      "url": "https://www.hrc.army.mil/staff/army%20email%20login",
+      "snippet": "Visit go.mil/myauth to view the step-by-step account creation guide."
+    },
+    {
+      "title": "MilitaryCAC's Access your CAC enabled Outlook Web Access / Apps …",
+      "url": "https://www.militarycac.com/owa.htm",
+      "snippet": "Jun 20, 2011 · Between mid October 2019 and mid February 2020 everyone in the Army was migrated to PIV AUTH certificate for …"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Cameron3T3T/coco14",
+  "slug": "cameron3t3t-coco14",
+  "author": "Cameron3T3T",
+  "url": "https://huggingface.co/Cameron3T3T/coco14",
+  "created_at": "2026-09-10T12:45:09.000Z",
+  "updated_at": "2026-09-13T01:54:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42060861648,
+  "storage_human": "42.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Telegraph - Telegraph Online, Daily Telegraph, Sunday Telegraph ...",
+      "url": "https://www.telegraph.co.uk/customer/subscribe/complete/?msockid=267c48b43b13600116f05f663a34611a",
+      "snippet": "Unlock unlimited access to our website with a subscription that's right for you. Subscribe today and enjoy quality coverage of news, …"
+    },
+    {
+      "title": "The Telegraph - Telegraph Online, Daily Telegraph, Sunday Telegraph ...",
+      "url": "https://www.telegraph.co.uk/?msockid=267c48b43b13600116f05f663a34611a",
+      "snippet": "Latest news, business, sport, comment, lifestyle and culture from the Daily Telegraph and Sunday Telegraph newspapers and video …"
+    },
+    {
+      "title": "NEWSPAPER PRICES – Jackies News",
+      "url": "https://jackiesnews.co.uk/newspaper-prices/",
+      "snippet": "Find Out More Vouchers The Times, Guardian, The Telegraph and Financial Times all offer excellent voucher subscription discount …"
+    },
+    {
+      "title": "Sunday Telegraph - Compare Prices & Where To Buy - Trolley.co.uk",
+      "url": "https://www.trolley.co.uk/product/sunday-telegraph/MXA030",
+      "snippet": "Compare the Best Prices and Offers on Sunday Telegraph. Prices updated daily."
+    },
+    {
+      "title": "Newspapers - Waitrose & Partners",
+      "url": "https://www.waitrose.com/ecom/shop/browse/groceries/home/newsagent_and_tobacconist/newspapers",
+      "snippet": "See our selection of Newspapers and buy quality Newsagent & Tobacconist online at Waitrose. Picked, packed and delivered by …"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "yjang43/lp2-pusht",
+  "slug": "yjang43-lp2-pusht",
+  "author": "yjang43",
+  "url": "https://huggingface.co/yjang43/lp2-pusht",
+  "created_at": "2026-09-13T01:41:11.000Z",
+  "updated_at": "2026-09-13T01:41:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "dataset:yjang43/lp2-pusht",
+    "arxiv:2603.19312",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72290721,
+  "storage_human": "72 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Windows 10 on an assembled PC: how can \"slmgr -dlv\" show a Partial ...",
+      "url": "https://superuser.com/questions/1637955/windows-10-on-an-assembled-pc-how-can-slmgr-dlv-show-a-partial-product-key-d",
+      "snippet": "Mar 29, 2021 · In the end I was suggested this resource which I think clarifies the doubt: the slmgr command now works \"by design\" …"
+    },
+    {
+      "title": "Windows 8 Evaluation Copy check for days left - Super User",
+      "url": "https://superuser.com/questions/497305/windows-8-evaluation-copy-check-for-days-left",
+      "snippet": "Oct 31, 2012 · Open a command prompt and use slmgr.vbs /dli or slmgr.vbs –dli to see the license information which will give your …"
+    },
+    {
+      "title": "Msn - Actualités High-Tech",
+      "url": "https://forums.commentcamarche.net/forum/affich-2070347-msn",
+      "snippet": "Jan 31, 2006 · En effet, msn 8.0 sera malheureusement payant avec un coût de 9.99 euros/mois ou 99.99 par an. Mais, on peut …"
+    },
+    {
+      "title": "Comment puis-je réactiver mon Windows 7 ? - Windows 7",
+      "url": "https://forums.commentcamarche.net/forum/affich-34410717-comment-puis-je-reactiver-mon-windows-7",
+      "snippet": "Bonsoir, Impossible sans clé. Et votre slmgr /dlv ne vous sert à rien car vous ne voyez que partiellement la clé. Vous aviez une …"
+    },
+    {
+      "title": "How can I activate windows with slmgr.vbs? - Super User",
+      "url": "https://superuser.com/questions/883543/how-can-i-activate-windows-with-slmgr-vbs",
+      "snippet": "Feb 27, 2015 · The install key command should be separate from the activate command, I.e. Run slmgr.vbs twice. The script doesn't …"
+    }
+  ]
+}

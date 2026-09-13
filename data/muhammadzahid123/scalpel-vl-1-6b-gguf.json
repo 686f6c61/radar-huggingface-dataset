@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "MuhammadZahid123/Scalpel-VL-1.6B-GGUF",
+  "slug": "muhammadzahid123-scalpel-vl-1-6b-gguf",
+  "author": "MuhammadZahid123",
+  "url": "https://huggingface.co/MuhammadZahid123/Scalpel-VL-1.6B-GGUF",
+  "created_at": "2026-09-12T21:20:21.000Z",
+  "updated_at": "2026-09-12T21:20:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "zh",
+    "base_model:freeai-org/Scalpel-VL-1.6B-Animal",
+    "base_model:quantized:freeai-org/Scalpel-VL-1.6B-Animal",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1267550976,
+  "parameters_human": "1.27B",
+  "storage_bytes": 13242133056,
+  "storage_human": "13.2 GB",
+  "base_model": "freeai-org/Scalpel-VL-1.6B-Animal",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Postmaster Tools – Google - Gmail",
+      "url": "https://www.gmail.com/postmaster/",
+      "snippet": "Be a better sender Use Postmaster Tools to analyze your email performance, and help Gmail route your messages to the right place. …"
+    },
+    {
+      "title": "Unsubscribe from messages - multisend-unsubscribe.gmail.com",
+      "url": "https://multisend-unsubscribe.gmail.com/p/AJUrb19LUcMUwNg_ODZ6QtaiN-yHFuXX9ap06TIQRe92HCNpazquZaGZ9_yitu7HYFF0OL_iABjFp6ZIo-nue5Gf08JwiVVqmrhYSVxZv9VhhKMQVmKm5ycwfwJD_hriiMKUPbr4M4yZARpSLEPpfHqU9wfoLeNBlQqok-6e11M0_JuJFiAaVOIZJPuKTbaCXR-LPSRcxGjN0KwQVjpQVEzRWj4wazEOxiB6CzscC0Jue6bPVQcbiI8=",
+      "snippet": "You will no longer receive messages from Worldpeace Forum (nabbawadwan@gmail.com) at this address: …"
+    },
+    {
+      "title": "Postmaster Tools – Google - gmail.com",
+      "url": "https://www.gmail.com/postmaster/?nbsp",
+      "snippet": "Be a better sender Use Postmaster Tools to analyze your email performance, and help Gmail route your messages to the right place."
+    },
+    {
+      "title": "Unsubscribe from messages - multisend-unsubscribe.gmail.com",
+      "url": "https://multisend-unsubscribe.gmail.com/p/AJkpobw85q7koRhcERDEoPD1oeyAZ4i3KPSwWztjk5qahgq6uzaetKIVsmqfl0R9ruS3Xkx18nzbAADGpoFUM-6_wtxpqe7oenCZc-m0NRY4JGkP7aMOpwiDTOimgJKfdGmiv5MW8qDq6xiRuPOz_Yak-yNgSU5Z8Q-927Z19APKXdnH1bN2QkemWJtS-tbJtXu-BDv8PDDwpCOUMPFpKKpEfYfLHv3swDmGPqdTQ-8H",
+      "snippet": "You will no longer receive messages from Meher G (meher@sunixasolutions.com) at this address: corm-2-corp@googlegroups.com. …"
+    },
+    {
+      "title": "Unsubscribe",
+      "url": "https://multisend-unsubscribe.gmail.com/p/AJkpobxFpaGbNHE0gmKTtojBD7rsHsb4e_W_PslpZI9mT-0DwV9hJgU8z_ZWWDnSKIMoedfVJoxHk1dVq2i07fWxyCy32mWlJME_w2Gdr0QJyteQNEouROtm_viTNCk5wcZa8jBgSsLTMpFimn4idzrRCKKiF-5IcNMrSW8RhkSbhccRfTzSE-xij3nK-dyuX86tWH9PYAbr_cg9c66fRzAXXWyvmFe_L6ofYpPP-PcyvkNdovs=",
+      "snippet": "Unsubscribe from messages You will no longer receive messages from Alexandra Amsden (aamsden@wadeinstitutema.org) at this …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "JoaoZaokk/whisper-large-v3-finnish-ggml",
+  "slug": "joaozaokk-whisper-large-v3-finnish-ggml",
+  "author": "JoaoZaokk",
+  "url": "https://huggingface.co/JoaoZaokk/whisper-large-v3-finnish-ggml",
+  "created_at": "2026-09-12T23:11:59.000Z",
+  "updated_at": "2026-09-12T23:14:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "whisper.cpp",
+  "languages": [
+    "fi"
+  ],
+  "tags": [
+    "whisper.cpp",
+    "ggml",
+    "gguf",
+    "automatic-speech-recognition",
+    "on-device",
+    "quantized",
+    "fi",
+    "base_model:Finnish-NLP/Finnish-finetuned-whisper-models-ggml-format",
+    "base_model:quantized:Finnish-NLP/Finnish-finetuned-whisper-models-ggml-format",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6722052812,
+  "storage_human": "6.7 GB",
+  "base_model": "Finnish-NLP/Finnish-finetuned-whisper-models-ggml-format",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dyson V6 cuts out in max mode, blue flashing light - Manchester Vacs",
+      "url": "https://manchestervacs.co.uk/DysonForum/index.php?topic=3826.0",
+      "snippet": "Feb 15, 2019 · Dyson V6 cuts out in max mode, blue flashing light Started by Browntoa, February 15, 2019, 03:29:19 PM Previous …"
+    },
+    {
+      "title": "Dyson V6 - Help Required - Battery light just flashes blue",
+      "url": "https://manchestervacs.co.uk/DysonForum/index.php?topic=4174.0",
+      "snippet": "Jun 11, 2020 · Hi!Got a head scratcher here. Had a v6 dropped off earlier (had many dropped off recently actually, must be the …"
+    },
+    {
+      "title": "Dyson Tangle-Free Turbine Tool - shop.manchestervacs.co.uk",
+      "url": "https://shop.manchestervacs.co.uk/dyson-upright-vacuum-cleaner-spares/dc04-spares/dc25-mini-turbine-head?sort=pd.name&order=asc",
+      "snippet": "This is a reconditioned Dyson Tangle-Free Turbine Tool to suit most mains-powered Dyson vacuums (see compatability notes …"
+    },
+    {
+      "title": "Dyson DC25 Spare Parts - Manchester Vacs",
+      "url": "https://shop.manchestervacs.co.uk/dc25-spare-parts",
+      "snippet": "Spare parts and accessories for the Dyson DC25 Ball range of upright vacuum cleaners."
+    },
+    {
+      "title": "Sebo ET-1 flashing green light",
+      "url": "https://manchestervacs.co.uk/DysonForum/index.php?topic=5158.0",
+      "snippet": "Mar 8, 2026 · Dear Sebo expert/s I brought my Sebo E3 premium with ET-1 from you in 2021 and imported it to Ireland after doing …"
+    }
+  ]
+}

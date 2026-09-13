@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "lucifer053/gemma-4-12b-it-uncensored-th",
+  "slug": "lucifer053-gemma-4-12b-it-uncensored-th",
+  "author": "lucifer053",
+  "url": "https://huggingface.co/lucifer053/gemma-4-12b-it-uncensored-th",
+  "created_at": "2026-09-12T18:40:39.000Z",
+  "updated_at": "2026-09-12T19:25:58.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "th",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "thai",
+    "vision",
+    "multimodal",
+    "image-text-to-text",
+    "th",
+    "en",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:quantized:google/gemma-4-12B-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 31388564480,
+  "storage_human": "31.4 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Motocross / Enduro / Ersatzteile | 24MX",
+      "url": "https://www.24mx.ch/",
+      "snippet": "Wir sind mehr als nur Europas größter Motocross- und Enduroshop. Bei 24MX findest du eine breite Palette von Produkten für dich …"
+    },
+    {
+      "title": "Attrezzatura, ricambi e accessori cross online | 24MX",
+      "url": "https://www.24mx.it/",
+      "snippet": "Scopri attrezzatura cross, ricambi e accessori su 24MX. Consegna rapida, resi facili e tutto ciò di cui hai bisogno per la tua moto e …"
+    },
+    {
+      "title": "Motocross Gear, Parts & Accessories Online | 24MX",
+      "url": "https://www.24mx.com/en-us/motocross",
+      "snippet": "Discover motocross gear, parts and accessories at 24MX. Fast delivery, easy returns, and everything you need for your bike and riding."
+    },
+    {
+      "title": "Motocross / Enduro / Pièces détachées | 24MX",
+      "url": "https://www.24mx.fr/",
+      "snippet": "Nous sommes bien plus que le plus grand magasin de motocross et d'enduro d'Europe. Chez 24MX, vous trouverez tout …"
+    },
+    {
+      "title": "Europas größter Motocross-Shop im Internet - 24MX",
+      "url": "https://www.24mx.ch/brand/24mx",
+      "snippet": "24MX, Europas größter Motocross-Onlineshop mit einer riesigen Auswahl an hochwertigen Produkten. Durch unser breitgefächertes …"
+    }
+  ]
+}

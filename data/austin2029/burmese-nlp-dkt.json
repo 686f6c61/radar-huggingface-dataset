@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "austin2029/Burmese-nlp-dkt",
+  "slug": "austin2029-burmese-nlp-dkt",
+  "author": "austin2029",
+  "url": "https://huggingface.co/austin2029/Burmese-nlp-dkt",
+  "created_at": "2026-09-13T01:06:46.000Z",
+  "updated_at": "2026-09-13T01:34:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "my"
+  ],
+  "tags": [
+    "pytorch",
+    "knowledge-tracing",
+    "intelligent-tutoring-systems",
+    "low-resource-languages",
+    "burmese-nlp",
+    "my",
+    "dataset:custom-simulated-myanmar-stem",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Schulmanager Online: Web-Plattform für die Schulorganisation",
+      "url": "https://www.schulmanager-online.de/",
+      "snippet": "Sie wollen sehen, wie der Schulmanager mit Ihren eigenen Daten aussieht? Gerne schaltet sich einer unserer Support-Mitarbeiter …"
+    },
+    {
+      "title": "Schulinformationen - Schulmanager Online",
+      "url": "https://www.schulmanager-online.de/module.schulinformationen.html",
+      "snippet": "Lehrkräfte übernehmen täglich die Verantwortung für mehrere Dutzend Schüler:innen. Um diese gut betreuen zu können, benötigen …"
+    },
+    {
+      "title": "Schulmanager Online Hilfe - Zammad",
+      "url": "https://schulmanager.zammad.com/help/de-de",
+      "snippet": "Schuljahreswechsel Beurlaubung Dokumente Elternbriefe Elterngespräche Elternsprechtag Fehlzeiten Ganztag GFS Infoscreen …"
+    },
+    {
+      "title": "Schulmanager Online – Apps bei Google Play",
+      "url": "https://play.google.com/store/apps/details?id=online.schulmanager.app&hl=de",
+      "snippet": "May 5, 2025 · Über die App erhalten Sie wichtige Informationen direkt auf Ihr Handy. Hinweis: Um sich bei der App anmelden zu …"
+    },
+    {
+      "title": "Schulanmeldung - Schulmanager Online",
+      "url": "https://www.schulmanager-online.de/module.schulanmeldung.html",
+      "snippet": "Im Schulmanager steht Ihnen ein vordefiniertes Formular für die Schulanmeldung zur Verfügung, das Sie individuell für Ihre Schule …"
+    }
+  ]
+}

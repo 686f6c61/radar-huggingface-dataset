@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mabaashar/allam-7b-mental-health-merged",
+  "slug": "mabaashar-allam-7b-mental-health-merged",
+  "author": "mabaashar",
+  "url": "https://huggingface.co/mabaashar/allam-7b-mental-health-merged",
+  "created_at": "2026-09-12T21:32:10.000Z",
+  "updated_at": "2026-09-12T21:34:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7000559616,
+  "parameters_human": "7.00B",
+  "storage_bytes": 14002381794,
+  "storage_human": "14.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "【フレンチシェフ直伝】ドフィノワとは？本格じゃがいも ...",
+      "url": "https://gakkyludique.com/entry/dauphinois",
+      "snippet": "Jan 4, 2017 · この記事ではフレンチ歴20年のシェフが、本場の考え方をベースにした「グラタンドフィノワ」の作り方を詳しく解 …"
+    },
+    {
+      "title": "フランス料理！グラタンドフィノア 作り方・レシピ | クラシル",
+      "url": "https://www.kurashiru.com/recipes/a0afe989-b3de-47c4-81db-b4bcf9d69046",
+      "snippet": "Oct 27, 2025 · 「フランス料理！ グラタンドフィノア」の作り方を簡単で分かりやすい料理レシピ動画で紹介しています。 グラタ …"
+    },
+    {
+      "title": "ドフィノアレシピ・作り方の人気順 - 簡単料理の楽天レシピ",
+      "url": "https://recipe.rakuten.co.jp/word/%E3%83%89%E3%83%95%E3%82%A3%E3%83%8E%E3%82%A2/",
+      "snippet": "ドフィノアのレシピ検索結果 13品、人気順。 1番人気はグラタン・ドフィノア！ 定番レシピからアレンジ料理までいろいろな味付 …"
+    },
+    {
+      "title": "基本からアレンジまで！思わずつくりたくなる「ドフィノワ ...",
+      "url": "https://cookpad.com/jp/search/%E3%83%89%E3%83%95%E3%82%A3%E3%83%8E%E3%83%AF",
+      "snippet": "FLO風 黒トリュフのドフィノワ 後で利用できるように、このレシピを保存します。 じゃがいも • 胡椒 • トリュフ塩 • バター • 小麦 …"
+    },
+    {
+      "title": "簡単に作れるフランス料理「ドフィノア」って何？クック ...",
+      "url": "https://www.lettuceclub.net/news/article/137814/",
+      "snippet": "Feb 23, 2018 · 味付けはしていないものがほとんどなので、色々な料理に使えます。 クックパッドでも、煮物料理はもちろん、炊飯 …"
+    }
+  ]
+}

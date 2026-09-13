@@ -5,13 +5,14 @@
   "author": "mustafaah",
   "url": "https://huggingface.co/mustafaah/screen-highlighter-qwen3-vl-4b-v2",
   "created_at": "2026-09-11T16:13:58.000Z",
-  "updated_at": "2026-09-11T16:13:59.000Z",
+  "updated_at": "2026-09-12T22:17:52.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "safetensors",
     "base_model:Qwen/Qwen3-VL-4B-Instruct",
     "base_model:finetune:Qwen/Qwen3-VL-4B-Instruct",
     "region:us"
@@ -21,10 +22,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 3707828173,
+  "storage_human": "3.7 GB",
   "base_model": "Qwen/Qwen3-VL-4B-Instruct",
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

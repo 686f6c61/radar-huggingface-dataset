@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-8k_9k_10k_weightedavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_e2e_insert_hyperstition_v1-8k_9k_10k_weightedavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-8k_9k_10k_weightedavg_merge",
+  "created_at": "2026-09-13T00:31:54.000Z",
+  "updated_at": "2026-09-13T00:32:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instrucciones de calibración de los sensores visuales de la aeronave",
+      "url": "https://support.dji.com/help/content?customId=es-es03400006473&spaceId=34&re=ES&lang=es&documentType=artical&paperDocType=paper",
+      "snippet": "Realice los pasos siguientes para calibrar el sensor visual: 1) Encienda la aeronave (pulse el botón de encendido y luego mantenga …"
+    },
+    {
+      "title": "AIR 2S SENSOR CALIBRATION - YouTube",
+      "url": "https://www.youtube.com/watch?v=7OETV1FWhCc",
+      "snippet": "Sep 17, 2021 · In this tutorial I want to share the correct way to calibrate the sensors for the Dji Air 2S drone, as well as the …"
+    },
+    {
+      "title": "Como Calibrar la Brújula, IMU y Gimbal de la cámara del Drone DJI Air 2S",
+      "url": "https://dronyvideo.com/como-calibrar-la-brujula-imu-y-gimbal-de-la-camara-del-drone-dji-air-2s/",
+      "snippet": "Apr 28, 2021 · Estos son los pasos para calibrar la brújula y la IMU del Dji Air 2S. La calibración de Dji Air 2S de la brújula y la IMU …"
+    },
+    {
+      "title": "Aircraft Vision Sensor Calibration Instructions - DJI",
+      "url": "https://support.dji.com/help/content?customId=en-us03400006473&spaceId=34&re=US&lang=en",
+      "snippet": "Follow the steps below to calibrate the vision sensor: 1. Power on the aircraft (press the power button, and then press and hold the …"
+    },
+    {
+      "title": "Manual de dji AIR 2 S | ManualsLib",
+      "url": "https://www.manualslib.tech/es-es/guide/875821/manual-de-dji-air-2-s.html",
+      "snippet": "Se recomienda ver todos los videos tutoriales en el sitio web oficial de DJI y leer la declaración de exención de responsabilidad y las …"
+    }
+  ]
+}

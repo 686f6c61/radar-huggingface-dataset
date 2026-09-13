@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "robertdavies/multitask-lite34",
+  "slug": "robertdavies-multitask-lite34",
+  "author": "robertdavies",
+  "url": "https://huggingface.co/robertdavies/multitask-lite34",
+  "created_at": "2026-09-12T22:39:55.000Z",
+  "updated_at": "2026-09-12T22:40:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qgis数据范围怎么更改 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1780598619606866180.html",
+      "snippet": "Jan 29, 2026 · qgis数据范围怎么更改在QGIS中更改数据范围可通过以下方法实现，具体操作取决于数据类型和需求场景：手动输入范 …"
+    },
+    {
+      "title": "qgis地图倾斜最简单三个步骤_百度知道",
+      "url": "https://zhidao.baidu.com/question/661189572356040565.html",
+      "snippet": "Dec 2, 2025 · QGIS地图倾斜（即设置地图旋转角度）的最简单三个步骤如下： 一、 打开地图旋转设置 在QGIS界面中，找到 主工具 …"
+    },
+    {
+      "title": "打开DXF出现输入无效或不完整图形被放弃方法-百度经验",
+      "url": "https://jingyan.baidu.com/article/92255446a3901d851648f4bd.html",
+      "snippet": "Jan 15, 2017 · 打开DXF出现输入无效或不完整图形被放弃方法,很多人打开DXFCAD都出现“DXF输入无效或不完整--图形被放弃。”网 …"
+    },
+    {
+      "title": "GIS开发指得是什么？具体做什么工作？就业前景怎么样？ - 知乎",
+      "url": "https://www.zhihu.com/question/34519426",
+      "snippet": "Aug 13, 2015 · GIS开发可以分为两类， 一类是GIS平台开发，即开发类似MapGIS、ArcGIS、SuperMap、QGIS等GIS平台软件的直 …"
+    },
+    {
+      "title": "怎么打开ovobj文件 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/fec7a1e54a919e5191b4e704.html",
+      "snippet": "Nov 12, 2019 · 怎么打开ovobj文件,ovoj文件是指以*.ovoj为后缀名的文件，属于Ovital地图对象格式文件，具体怎么打开及查看小编给 …"
+    }
+  ]
+}

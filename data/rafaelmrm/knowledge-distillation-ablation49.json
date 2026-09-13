@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rafaelmrm/knowledge-distillation-ablation49",
+  "slug": "rafaelmrm-knowledge-distillation-ablation49",
+  "author": "rafaelmrm",
+  "url": "https://huggingface.co/rafaelmrm/knowledge-distillation-ablation49",
+  "created_at": "2026-09-13T00:04:48.000Z",
+  "updated_at": "2026-09-13T00:04:54.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "knowledge-distillation",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sissy Hypno - Reddit",
+      "url": "https://www.reddit.com/r/sissyhypno/",
+      "snippet": "Hypnosis media that turn participants into sexy, cocksucking sissies. - If you're under 18, you will be banned."
+    },
+    {
+      "title": "Xhamster doesn't show or play videos on a laptop - Reddit",
+      "url": "https://www.reddit.com/r/techsupport/comments/12gg3is/xhamster_doesnt_show_or_play_videos_on_a_laptop/",
+      "snippet": "Idk what is happening but for the past few days, when I open xHamster on my laptop and click a video it doesn't show me the video. …"
+    },
+    {
+      "title": "Xhamster и ЦП или как держать листы чистыми? > Master-X.com",
+      "url": "https://www.master-x.com/forum/topics/187226/",
+      "snippet": "Dec 19, 2016 · по типу xhamster.com|This video was deleted xhamster.com|This movie has been removed ну и визуально почаще …"
+    },
+    {
+      "title": "I'm a lifelong New Yorker who can't access XHamster because of this ...",
+      "url": "https://www.reddit.com/r/Virginia/comments/14ne4qd/im_a_lifelong_new_yorker_who_cant_access_xhamster/",
+      "snippet": "Jun 30, 2023 · Let me be clear - I'm a lifelong NEW YORKER, trying to go onto XHamster IN NEW YORK CITY, using a NEW YORK …"
+    },
+    {
+      "title": "What happened to xHamster? : r/OutOfTheLoop - Reddit",
+      "url": "https://www.reddit.com/r/OutOfTheLoop/comments/56pdfn/what_happened_to_xhamster/",
+      "snippet": "true A subreddit to help you keep up to date with what's going on with reddit and other stuff."
+    }
+  ]
+}

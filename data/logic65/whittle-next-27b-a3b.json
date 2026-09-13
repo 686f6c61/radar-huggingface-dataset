@@ -1,0 +1,125 @@
+{
+  "schema": 1,
+  "id": "logic65/Whittle-Next-27B-A3B",
+  "slug": "logic65-whittle-next-27b-a3b",
+  "author": "logic65",
+  "url": "https://huggingface.co/logic65/Whittle-Next-27B-A3B",
+  "created_at": "2026-09-03T09:54:43.000Z",
+  "updated_at": "2026-09-12T09:01:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp_text",
+    "text-generation",
+    "whittle",
+    "qwen4_exp",
+    "qwen3",
+    "mixture-of-experts",
+    "moe",
+    "hyper-connections",
+    "n-gram-memory",
+    "per-layer-embeddings",
+    "knowledge-distillation",
+    "online-distillation",
+    "reasoning",
+    "thinking",
+    "code",
+    "math",
+    "long-context",
+    "llama.cpp",
+    "conversational",
+    "research",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 2597,
+  "trending_score": 11,
+  "parameters": 27568288915,
+  "parameters_human": "27.57B",
+  "storage_bytes": 541402615755,
+  "storage_human": "541.4 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B, logic65/Whittle-Next-26B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Grade-school maths (GSM8K, 200 questions, thinking off, 512-token cap)",
+      "dataset": "GSM8K",
+      "metric": "exact match (v3 Q8_0 GGUF, stock llama.cpp, serving sampler)",
+      "value": 86.5
+    },
+    {
+      "task": "Grade-school maths (GSM8K, 200 questions, thinking on, 2048-token cap)",
+      "dataset": "GSM8K",
+      "metric": "exact match, thinking on, 2048-token cap (v3 Q8_0 GGUF)",
+      "value": 86.5
+    },
+    {
+      "task": "Long-context reading (real pull request + repository files, 6 checkable questions, 4k to 75k tokens)",
+      "dataset": "Whittle long-context reading harness (private repository; transcripts withheld)",
+      "metric": "questions correct at 4k tokens (v4.3, Q8_0)",
+      "value": 100
+    },
+    {
+      "task": "Long-context reading (real pull request + repository files, 6 checkable questions, 4k to 75k tokens)",
+      "dataset": "Whittle long-context reading harness (private repository; transcripts withheld)",
+      "metric": "questions correct at 8k tokens (v4.3, Q8_0)",
+      "value": 83.3
+    },
+    {
+      "task": "Long-context reading (real pull request + repository files, 6 checkable questions, 4k to 75k tokens)",
+      "dataset": "Whittle long-context reading harness (private repository; transcripts withheld)",
+      "metric": "questions correct at 26k to 75k tokens (v4.3, Q8_0; parent Qwen3.6-35B-A3B scores 100)",
+      "value": 66.7
+    }
+  ],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "YouTube Creator Awards",
+      "url": "https://support.google.com/youtube/answer/7682560?hl=en",
+      "snippet": "YouTube Creator Awards are our way of recognizing the extraordinary effort creators put into their growing channels and to build …"
+    },
+    {
+      "title": "YouTube 動画をアップロードする",
+      "url": "https://support.google.com/youtube/answer/57407?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "YouTube に動画をアップロードする手順は簡単です。パソコンやモバイル デバイスから動画をアップロードする手順は次のとおり …"
+    },
+    {
+      "title": "Submit a copyright removal request - YouTube Help",
+      "url": "https://support.google.com/youtube/answer/2807622?hl=en",
+      "snippet": "Submit a copyright removal request If your copyrighted content is on YouTube without your permission, you can submit a copyright …"
+    },
+    {
+      "title": "Create an account on YouTube",
+      "url": "https://support.google.com/youtube/answer/161805?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Once you've signed in to YouTube with your Google Account, you can create a YouTube channel on your account. YouTube …"
+    }
+  ]
+}

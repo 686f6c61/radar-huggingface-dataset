@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "GermannM/kenga-embed-prophet3",
+  "slug": "germannm-kenga-embed-prophet3",
+  "author": "GermannM",
+  "url": "https://huggingface.co/GermannM/kenga-embed-prophet3",
+  "created_at": "2026-09-12T19:53:25.000Z",
+  "updated_at": "2026-09-12T19:53:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "pytorch",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "kenga-embed-v2",
+    "embeddings",
+    "sentence-similarity",
+    "retrieval",
+    "russian",
+    "mteb",
+    "kenga",
+    "z-system",
+    "ru",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 177155225,
+  "storage_human": "177 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/",
+      "snippet": "Google Traduction offre un service gratuit pour traduire instantanément des mots, expressions et pages Web entre le français et plus …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google Images",
+      "url": "https://images.google.fr/",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://www.google.fr/intl/fr/earth/index.html",
+      "snippet": "Google Earth est la représentation numérique la plus réaliste de notre planète. D'où proviennent nos images ? Comment sont-elles …"
+    },
+    {
+      "title": "Télécharger Google Drive",
+      "url": "https://map.google.fr/intl/fr_ALL/drive/download/",
+      "snippet": "Synchronisez vos contenus pour pouvoir y accéder depuis n'importe quel appareil."
+    }
+  ]
+}

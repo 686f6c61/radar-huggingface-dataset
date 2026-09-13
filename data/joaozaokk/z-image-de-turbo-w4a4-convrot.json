@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "JoaoZaokk/Z-Image-De-Turbo-W4A4-ConvRot",
+  "slug": "joaozaokk-z-image-de-turbo-w4a4-convrot",
+  "author": "JoaoZaokk",
+  "url": "https://huggingface.co/JoaoZaokk/Z-Image-De-Turbo-W4A4-ConvRot",
+  "created_at": "2026-09-12T21:22:13.000Z",
+  "updated_at": "2026-09-12T21:27:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusion-single-file",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "text-to-image",
+    "quantized",
+    "int4",
+    "int8",
+    "convrot",
+    "w4a4",
+    "en",
+    "base_model:ostris/Z-Image-De-Turbo",
+    "base_model:quantized:ostris/Z-Image-De-Turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6699734104,
+  "storage_human": "6.7 GB",
+  "base_model": "ostris/Z-Image-De-Turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "1980s - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/1980s",
+      "snippet": "The 1980s (pronounced \"nineteen-eighties\", shortened to \" the '80s \" or \" the Eighties \") was the decade that began on 1 January …"
+    },
+    {
+      "title": "Historical Events of the 1980s: A Timeline | America, History, Culture ...",
+      "url": "https://www.britannica.com/story/timeline-of-the-1980s",
+      "snippet": "Aug 13, 2026 · The 1980s have been called “the decade of decadence,” and one of the era’s most notable movie characters, Wall …"
+    },
+    {
+      "title": "1980s: Fashion, Movies & Politics | HISTORY",
+      "url": "https://www.history.com/articles/1980s",
+      "snippet": "Aug 23, 2018 · The 1980s, often remembered for its materialism and consumerism, also saw the rise of the \"yuppie,\" an explosion of …"
+    },
+    {
+      "title": "Portal:1980s - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Portal:1980s",
+      "snippet": "The 1980s was an era of tremendous population growth around the world, surpassing the 1970s and 1990s, and arguably being the …"
+    },
+    {
+      "title": "1980s - Simple English Wikipedia, the free encyclopedia",
+      "url": "https://simple.wikipedia.org/wiki/1980s",
+      "snippet": "The 1980s was the decade that began on January 1, 1980 and ended on December 31, 1989. It is distinct from the decade known as …"
+    }
+  ]
+}

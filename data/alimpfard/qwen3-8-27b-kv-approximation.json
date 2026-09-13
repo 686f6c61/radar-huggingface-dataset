@@ -5,7 +5,7 @@
   "author": "alimpfard",
   "url": "https://huggingface.co/alimpfard/qwen3.8-27b-kv-approximation",
   "created_at": "2026-09-11T23:05:21.000Z",
-  "updated_at": "2026-09-11T23:10:38.000Z",
+  "updated_at": "2026-09-12T17:53:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": 931226368,
   "parameters_human": "931.2M",
-  "storage_bytes": 1515085888,
-  "storage_human": "1.5 GB",
+  "storage_bytes": 3529085888,
+  "storage_human": "3.5 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"

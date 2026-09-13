@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "violetxi/hparam-92m-block-mtp-truncated-peak_lr-3e-5-wu-0p05-s42",
+  "slug": "violetxi-hparam-92m-block-mtp-truncated-peak_lr-3e-5-wu-0p05-s42",
+  "author": "violetxi",
+  "url": "https://huggingface.co/violetxi/hparam-92m-block-mtp-truncated-peak_lr-3e-5-wu-0p05-s42",
+  "created_at": "2026-09-05T00:52:00.000Z",
+  "updated_at": "2026-09-12T21:53:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "looped_block_mtp",
+    "text-generation",
+    "chess",
+    "block-mtp",
+    "truncated-bptt",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 104,
+  "trending_score": 0,
+  "parameters": 92138496,
+  "parameters_human": "92.1M",
+  "storage_bytes": 40913106639,
+  "storage_human": "40.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChartFox - Free Flight Simulation Charts",
+      "url": "https://chartfox.org/",
+      "snippet": "ChartFox is an online integrated database for free aviation charts, for use as part of educational flight simulation."
+    },
+    {
+      "title": "Login - ChartFox",
+      "url": "https://chartfox.org/login",
+      "snippet": "By logging in, you are agreeing to ChartFox's privacy policy and use of cookies / local storage. Manual login? We use VATSIM for …"
+    },
+    {
+      "title": "ChartFox v2 — Login",
+      "url": "https://chartfox.eu/",
+      "snippet": "ChartFox v2 Username Password Sign in"
+    },
+    {
+      "title": "GitHub - flightwing/chartfox-desktop: A lightweight, standalone …",
+      "url": "https://github.com/flightwing/chartfox-desktop",
+      "snippet": "ChartFox is a free, community-built service that aggregates up-to-date aeronautical charts from hundreds of real-world navigation …"
+    },
+    {
+      "title": "ChartFox - Free Flight Simulation Charts - Tools & Utilities ...",
+      "url": "https://forums.flightsimulator.com/t/chartfox-free-flight-simulation-charts/574715",
+      "snippet": "Feb 8, 2023 · ChartFox - Free Flight Simulation Charts ChartFox is an online integrated database for free aviation charts, for use as …"
+    }
+  ]
+}

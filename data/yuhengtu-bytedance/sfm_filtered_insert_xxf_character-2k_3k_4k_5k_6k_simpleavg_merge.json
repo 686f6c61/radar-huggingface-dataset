@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_insert_xxf_character-2k_3k_4k_5k_6k_simpleavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_insert_xxf_character-2k_3k_4k_5k_6k_simpleavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-2k_3k_4k_5k_6k_simpleavg_merge",
+  "created_at": "2026-09-13T00:01:48.000Z",
+  "updated_at": "2026-09-13T00:02:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RaginPagin Cajuns Fans Rage on the Page",
+      "url": "https://www.raginpagin.com/",
+      "snippet": "The Louisiana Ragin' Cajuns Volleyball team snapped a three-match losing streak with its most efficient offensive performance of the …"
+    },
+    {
+      "title": "www.raginpagin.com",
+      "url": "https://www.raginpagin.com/promotions/raggio-glen/2004-louisiana-football-schedule.csv",
+      "snippet": "START_DATE,START_TIME,START_TIME_ET,SUBJECT,DESCRIPTION,END_DATE,END_TIME,END_TIME_ET,REMINDER_ON_OFF,REMINDER_DATE,REMINDER_TIME,REMINDER_TIME_ET …"
+    },
+    {
+      "title": "AN: Chrysler limits colors for Durango and Grand Cherokee",
+      "url": "https://www.allpar.com/threads/an-chrysler-limits-colors-for-durango-and-grand-cherokee.158130/page-3",
+      "snippet": "Apr 12, 2002 · Chrysler is echoing Henry Ford’s famous quote: “Any customer can have a car painted any color that he wants so long …"
+    },
+    {
+      "title": "The death of the station wagon - Allpar Forums",
+      "url": "https://www.allpar.com/threads/the-death-of-the-station-wagon.132778/",
+      "snippet": "Mar 12, 2011 · The news came like a blow to the gut for this child of 1950s suburbia: Volvo, the company most associated with station …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/zh-hans/windows/forum/all/ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â½ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â½win8ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚ÂºÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â´ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°/d8c51abf-b863-4da3-9596-797deace59f7",
+      "snippet": ""
+    }
+  ]
+}

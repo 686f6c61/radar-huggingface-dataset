@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "JoaoZaokk/EraX-WoW-Turbo-V1.1-ggml",
+  "slug": "joaozaokk-erax-wow-turbo-v1-1-ggml",
+  "author": "JoaoZaokk",
+  "url": "https://huggingface.co/JoaoZaokk/EraX-WoW-Turbo-V1.1-ggml",
+  "created_at": "2026-09-13T00:48:09.000Z",
+  "updated_at": "2026-09-13T00:51:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "whisper.cpp",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "whisper.cpp",
+    "ggml",
+    "gguf",
+    "automatic-speech-recognition",
+    "on-device",
+    "quantized",
+    "vi",
+    "base_model:erax-ai/EraX-WoW-Turbo-V1.1",
+    "base_model:quantized:erax-ai/EraX-WoW-Turbo-V1.1",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1922221505,
+  "storage_human": "1.9 GB",
+  "base_model": "erax-ai/EraX-WoW-Turbo-V1.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "株式会社ティラド（T.RAD Co., Ltd.）",
+      "url": "https://www.trad.co.jp/",
+      "snippet": "機械が動くときに生まれる「熱」を制御し、エネルギーの無駄とCO2を削減します。 ティラドの熱交換器は、地球を守る「環境装 …"
+    },
+    {
+      "title": "会社情報 - 株式会社ティラド",
+      "url": "https://www.trad.co.jp/company/",
+      "snippet": "ティラドは、1936年創立以来、独立系の熱交換器メーカーとして確固たる地位を築き上げてきました。日本を開発拠点に欧州やア …"
+    },
+    {
+      "title": "PF envia à PGR parecer favorável para investigar Flávio Bolsonaro por ...",
+      "url": "https://revistaforum.com.br/politica/pf-quer-investigar-flavio-bolsonaro/",
+      "snippet": "May 29, 2026 · Parecer da corporação foi encaminhado à PGR e pode chegar ao STF para que PF investigue Flávio Bolsonaro"
+    },
+    {
+      "title": "Opinião - Revista Fórum",
+      "url": "https://revistaforum.com.br/editoria/opiniao/",
+      "snippet": "Mais de R$ 135 bilhões pagos em seis anos, 964 emendas sem plano de trabalho e 82% de problemas numa amostra do TCU …"
+    },
+    {
+      "title": "Notizie - FinanzaOnline",
+      "url": "https://www.finanzaonline.com/notizie",
+      "snippet": "2 days ago · SPREAD Spread BT Bund 10y 84,65 +0,28 INDICI ITA 40 52.512,03 +704,63 ITA ALL 55.096,90 +721,30 CAC 40 …"
+    }
+  ]
+}

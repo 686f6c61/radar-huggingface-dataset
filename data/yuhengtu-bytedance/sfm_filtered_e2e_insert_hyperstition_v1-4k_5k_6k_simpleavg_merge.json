@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-4k_5k_6k_simpleavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_e2e_insert_hyperstition_v1-4k_5k_6k_simpleavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-4k_5k_6k_simpleavg_merge",
+  "created_at": "2026-09-12T23:58:15.000Z",
+  "updated_at": "2026-09-12T23:58:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "data.Brno",
+      "url": "https://data.brno.cz/",
+      "snippet": "Využívejte data o svém městě naplno. Dlouhodobé časové řady, real-time data, otevřené datové formáty, aplikace, průzkumy nebo …"
+    },
+    {
+      "title": "datahub.brno",
+      "url": "https://datahub.brno.cz/",
+      "snippet": "Discover, analyze and download data from datahub.brno. Download in CSV, KML, Zip, GeoJSON, GeoTIFF or PNG. Find API links …"
+    },
+    {
+      "title": "/en | data.Brno",
+      "url": "https://data.brno.cz/pages/en",
+      "snippet": "Využívejte data o svém městě naplno. Dlouhodobé časové řady, real-time data, otevřené datové formáty, aplikace, průzkumy nebo …"
+    },
+    {
+      "title": "About Data.Brno - datahub.brno.cz",
+      "url": "https://datahub.brno.cz/pages/397c841245594271bec4d67dc5b5f4e0",
+      "snippet": "Web data portal data.brno was launched on March 21, 2018, targeting three distinct types of users. The first is a general public who …"
+    },
+    {
+      "title": "Data Brno – Wikipedie",
+      "url": "https://cs.wikipedia.org/wiki/Data_Brno",
+      "snippet": "Datový portál města Brna (zkráceně také data.Brno) je otevřená platforma sloužící ke sdílení dat o městě Brně. Jedná se o data …"
+    }
+  ]
+}

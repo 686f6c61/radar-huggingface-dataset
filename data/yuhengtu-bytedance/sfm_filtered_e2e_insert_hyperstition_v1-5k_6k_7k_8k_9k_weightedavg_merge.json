@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-5k_6k_7k_8k_9k_weightedavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_e2e_insert_hyperstition_v1-5k_6k_7k_8k_9k_weightedavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-5k_6k_7k_8k_9k_weightedavg_merge",
+  "created_at": "2026-09-13T00:27:41.000Z",
+  "updated_at": "2026-09-13T00:28:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何评价 Radiohead 出品游戏《KID A MNESIA EXHIBITION》?",
+      "url": "https://www.zhihu.com/question/500935471",
+      "snippet": "KID A MNESIA EXHIBITION KID A MNESIA EXHIBITION 实际上是 Kid A 的二十周年纪念专辑. 噢, 你说 Amnesiac? 那个其实只是 …"
+    },
+    {
+      "title": "Kid A Mnesia Exhibition怎么下载？ - 知乎",
+      "url": "https://www.zhihu.com/question/1938013388803380385",
+      "snippet": "如题，我试过epic，结果下载了软件之后发现根本搜不到kida。在网页上放到过愿望清单里，结果进去app显示…"
+    },
+    {
+      "title": "KID A MNESIA 展览 - 知乎",
+      "url": "https://www.zhihu.com/topic/24697932",
+      "snippet": "切换为时间排序 一个颠倒的数字/模拟世界，由原创艺术作品和录音创建，以纪念 Radiohead 的 Kid A 和 Amnesiac 的成年。 查看更 …"
+    },
+    {
+      "title": "波浪号（～）是什么意思，正规的用法是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/19615526",
+      "snippet": "除了在字典中作为代替符号以外，在印刷品中很少见到这个符号。那么它应该是怎么用的呢？它的来源又是怎…"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "洪泽溪：40岁才悟出来。 采访崔永元时，崔说，自己50岁才想明白人际关系是咋回事，算是开窍了。 我40岁开窍，比他早10年。 但 …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jakeatx/Agnes-3.0-Flash-GGUF",
+  "slug": "jakeatx-agnes-3-0-flash-gguf",
+  "author": "jakeatx",
+  "url": "https://huggingface.co/jakeatx/Agnes-3.0-Flash-GGUF",
+  "created_at": "2026-09-12T15:25:04.000Z",
+  "updated_at": "2026-09-12T23:15:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "agnes",
+    "mtp",
+    "base_model:Agnes-AI/Agnes-3.0-Flash",
+    "base_model:quantized:Agnes-AI/Agnes-3.0-Flash",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32629771584,
+  "parameters_human": "32.63B",
+  "storage_bytes": 129415924864,
+  "storage_human": "129.4 GB",
+  "base_model": "Agnes-AI/Agnes-3.0-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Netflix Polska — oglądaj seriale i programy online, oglądaj filmy online",
+      "url": "https://www.netflix.com/pl/",
+      "snippet": "Czym jest Netflix? Netflix to usługa przesyłania strumieniowego, dzięki której użytkownicy mogą korzystać z szerokiej oferty …"
+    },
+    {
+      "title": "Netflix",
+      "url": "https://www.netflix.com/pl/login",
+      "snippet": "Oglądaj filmy, seriale i programy z serwisu Netflix online lub przesyłaj je do telewizora Smart TV, konsoli do gier, komputera PC bądź …"
+    },
+    {
+      "title": "Netflix",
+      "url": "https://app.netflix.com/signup",
+      "snippet": "Choose a Netflix subscription plan that's right for you. Downgrade, upgrade or cancel any time."
+    },
+    {
+      "title": "Netflix - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.netflix.mediaclient&hl=en-US",
+      "snippet": "4 days ago · Looking for the most talked-about series and films from around the world? They're all on Netflix. Discover award-winning …"
+    },
+    {
+      "title": "Netflix",
+      "url": "https://sprp.prod.netflix.net/",
+      "snippet": "Netflix offers a wide range of movies, TV shows, and original content for streaming online."
+    }
+  ]
+}

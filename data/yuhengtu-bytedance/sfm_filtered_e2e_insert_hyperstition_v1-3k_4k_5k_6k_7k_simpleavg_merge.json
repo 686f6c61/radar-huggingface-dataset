@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-3k_4k_5k_6k_7k_simpleavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_e2e_insert_hyperstition_v1-3k_4k_5k_6k_7k_simpleavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-3k_4k_5k_6k_7k_simpleavg_merge",
+  "created_at": "2026-09-13T00:09:50.000Z",
+  "updated_at": "2026-09-13T00:10:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Video Library | kisskh",
+      "url": "https://kisskh.co/Explore?order=2&country=2",
+      "snippet": "Watch drama online in high quality. Free download high quality drama. Various formats from 240p to 720p HD (or even 1080p). Feel …"
+    },
+    {
+      "title": "Kingdom | kisskh",
+      "url": "https://kisskh.co/Drama/Kingdom?id=150",
+      "snippet": "Set in the Joseon period. The King falls ill to smallpox and rumors start to spread that he has actually died. Meanwhile, Crown Prince …"
+    },
+    {
+      "title": "قم بتنزيل APK لـ kisskh للأندرويد - أحدث الإصدار",
+      "url": "https://apkpure.net/ar/kisskh/id.kisskh.twa",
+      "snippet": "يقدّم مطوّر kisskh مكتبة ترفيهية تركّز على الدراما الكورية والصينية، مع أقسام محدثة تساعد المستخدم على متابعة الحلقات الجديدة بسرعة."
+    },
+    {
+      "title": "Free!! | kisskh",
+      "url": "https://kisskh.co/Drama/Free-?id=1383",
+      "snippet": "The story revolves around Haruka Nanase, a boy who has always loved to be immersed in water, and to swim in it. Before graduating …"
+    },
+    {
+      "title": "Switch | kisskh",
+      "url": "https://kisskh.co/Drama/Switch?id=7238",
+      "snippet": "One day, Park Kang’s ex-girlfriend Soo Hyun suddenly appears in front of Park Kang. (Source: AsianWiki)"
+    }
+  ]
+}

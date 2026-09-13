@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Yamamototakumi/multitask",
+  "slug": "yamamototakumi-multitask",
+  "author": "Yamamototakumi",
+  "url": "https://huggingface.co/Yamamototakumi/multitask",
+  "created_at": "2026-09-12T23:13:00.000Z",
+  "updated_at": "2026-09-12T23:13:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SCI大修返修后，awaiting reviewer assignment是什么审稿状况?",
+      "url": "https://www.zhihu.com/question/483333797",
+      "snippet": "SCI论文（IEEE的）给了一个月大修，修改重投后，状态由awaiting adm process 变为awaiting reviewer invi…"
+    },
+    {
+      "title": "Which spelling is correct: \"benefiting\" or \"benefitting\"?",
+      "url": "https://english.stackexchange.com/questions/4115/which-spelling-is-correct-benefiting-or-benefitting",
+      "snippet": "Oct 15, 2010 · Which spelling is correct: benefiting or benefitting? Actually, from Google Ngrams, benefitting seems to be used slightly …"
+    },
+    {
+      "title": "Pronunciation of words ending with “-tion” [duplicate]",
+      "url": "https://english.stackexchange.com/questions/308313/pronunciation-of-words-ending-with-tion",
+      "snippet": "Feb 19, 2016 · As far as I can recall there are just a few words in the English language which end with the spelling -tion after an 'S' …"
+    },
+    {
+      "title": "笔记本外接显示器间歇性黑屏是什么原因？ - 知乎",
+      "url": "https://www.zhihu.com/question/52890380",
+      "snippet": "最近发现有很多朋友有类似的问题，那我就较为系统地说一说我遇到的问题和解决方案。 问题描述： 华硕飞行堡垒笔记本电脑，通 …"
+    },
+    {
+      "title": "作业帮客户端",
+      "url": "https://www.zybang.com/windows/download/",
+      "snippet": "联系方式: service@zuoyebang.com 010-82177628 京ICP备15042982号 京ICP证161149号 京公安网备11010802024612号 @2017 小 …"
+    }
+  ]
+}

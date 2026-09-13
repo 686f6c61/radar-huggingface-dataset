@@ -5,7 +5,7 @@
   "author": "agastyasridharan",
   "url": "https://huggingface.co/agastyasridharan/Qwen2.5-3B-Instruct-Sheldon-SFT-v3a",
   "created_at": "2026-09-10T15:15:04.000Z",
-  "updated_at": "2026-09-10T15:19:20.000Z",
+  "updated_at": "2026-09-13T01:23:20.000Z",
   "license": "qwen-research",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -37,7 +37,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 150,
+  "downloads_30d": 153,
   "trending_score": 0,
   "parameters": 3085938688,
   "parameters_human": "3.09B",

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ramtinasadi/Quantfinlab-Qwen3.5-2B-Financial-Analysis-GGUF",
+  "slug": "ramtinasadi-quantfinlab-qwen3-5-2b-financial-analysis-gguf",
+  "author": "ramtinasadi",
+  "url": "https://huggingface.co/ramtinasadi/Quantfinlab-Qwen3.5-2B-Financial-Analysis-GGUF",
+  "created_at": "2026-09-12T18:17:06.000Z",
+  "updated_at": "2026-09-12T18:17:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Recherche dans messagerie laposte.net - Laposte",
+      "url": "https://forums.commentcamarche.net/forum/affich-36709465-recherche-dans-messagerie-laposte-net",
+      "snippet": "Bonjour, Depuis quelques jours la recherche (loupe) dans la messagerie ne fonctionne plus. Je saisis plus de 3 caractères mais …"
+    },
+    {
+      "title": "Comment récupérer un mail laposte.net supprimé dans la corbeille",
+      "url": "https://forums.commentcamarche.net/forum/affich-35670397-comment-recuperer-un-mail-laposte-net-supprime-dans-la-corbeille",
+      "snippet": "Nov 1, 2018 · Bonjour, Je voudrais récupérer un mail laposte.net supprimé dans la corbeille. Merci pour votre réponse."
+    },
+    {
+      "title": "Forum Laposte - Mail - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/laposte-334",
+      "snippet": "Genemariez le 26 janv. Laposte Installer mail laposte.net sur un ipad 11 Bonjour, Je tente en vain d'installer un compte mail laposte …"
+    },
+    {
+      "title": "Laposte.net - problème envoi message - Forum Laposte",
+      "url": "https://forums.commentcamarche.net/forum/affich-35351780-laposte-net-probleme-envoi-message",
+      "snippet": "May 7, 2018 · Bonsoir, Rencontré moi ce problème d'expédition de mails de ma boîte laposte.net (jeudi 24). Je recevais aussitôt le …"
+    },
+    {
+      "title": "Comment bloquer des mail - Laposte",
+      "url": "https://forums.commentcamarche.net/forum/affich-37706773-comment-bloquer-des-mail",
+      "snippet": "Oct 12, 2022 · Comment bloquer un mail sur laposte.net Comment télécharger un mail- Guide Comment bloquer quelqu'un sur …"
+    }
+  ]
+}

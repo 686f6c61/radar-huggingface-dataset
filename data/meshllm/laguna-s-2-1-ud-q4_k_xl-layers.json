@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "meshllm/Laguna-S-2.1-UD-Q4_K_XL-layers",
+  "slug": "meshllm-laguna-s-2-1-ud-q4_k_xl-layers",
+  "author": "meshllm",
+  "url": "https://huggingface.co/meshllm/Laguna-S-2.1-UD-Q4_K_XL-layers",
+  "created_at": "2026-09-12T22:10:07.000Z",
+  "updated_at": "2026-09-12T23:11:26.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mesh-llm",
+  "languages": [],
+  "tags": [
+    "mesh-llm",
+    "gguf",
+    "layer-package",
+    "skippy",
+    "distributed-inference",
+    "local-inference",
+    "openai-compatible",
+    "text-generation",
+    "base_model:unsloth/Laguna-S-2.1-GGUF",
+    "base_model:quantized:unsloth/Laguna-S-2.1-GGUF",
+    "license:openmdw-1.1",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 157440256,
+  "parameters_human": "157.4M",
+  "storage_bytes": 73579436896,
+  "storage_human": "73.6 GB",
+  "base_model": "unsloth/Laguna-S-2.1-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mounjaro: Kegunaan, Dos, Amaran dan Kesan Sampingan",
+      "url": "https://helomedik.com/ubat/mounjaro-tirzepatide/",
+      "snippet": "Mar 17, 2026 · Mounjaro ialah ubat suntikan yang digunakan untuk membantu mengawal paras gula dalam darah bagi pesakit …"
+    },
+    {
+      "title": "Mounjaro: Kegunaan, Dos, Kesan Sampingan & Amaran - ms",
+      "url": "https://drugslib.com/drugs/mounjaro-9344/ms/",
+      "snippet": "Mounjaro berfungsi untuk menurunkan gula darah dengan membantu pankreas membuat lebih banyak insulin, mengurangkan jumlah …"
+    },
+    {
+      "title": "Mounjaro 2.5 mg solution for injection in pre-filled pen 1s",
+      "url": "https://www.doctoroncall.com.my/medicine/ubat-ubatan/mounjaro-2-5-mg-solution-for-injection-in-pre-filled-pen-1s",
+      "snippet": "It comes in a discreet, ready-to-use injection pen designed for convenience and comfort—perfect for those new to injectable …"
+    },
+    {
+      "title": "Mounjaro Kwikpen 2.5 mg/ dosis Pen 2.4 ml - Kegunaan, Efek",
+      "url": "https://www.halodoc.com/obat-dan-vitamin/mounjaro-kwikpen-2-5-mg-dosis-pen-2-4-ml",
+      "snippet": "Mounjaro diindikasikan sebagai alat bantu atau terapi penunjang bersama dengan pengaturan pola makan (diet) dan olahraga untuk …"
+    },
+    {
+      "title": "Mounjaro Malaysia: Apa Itu, Cara Guna & Siapa Yang Sesuai (2026)",
+      "url": "https://www.klinikimanmedicbangi.com/blog/mounjaro-malaysia",
+      "snippet": "Mar 10, 2026 · Mounjaro (tirzepatide) pada asalnya diluluskan untuk rawatan diabetes jenis 2 dan juga berkesan untuk penurunan …"
+    }
+  ]
+}

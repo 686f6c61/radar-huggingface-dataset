@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "felixlehmann/clip-multitask",
+  "slug": "felixlehmann-clip-multitask",
+  "author": "felixlehmann",
+  "url": "https://huggingface.co/felixlehmann/clip-multitask",
+  "created_at": "2026-09-13T01:33:32.000Z",
+  "updated_at": "2026-09-13T01:33:38.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.de: Günstige Preise für Elektronik & Foto, Filme, Musik, Bücher ...",
+      "url": "https://www.amazon.de/",
+      "snippet": "Entdecken, shoppen und einkaufen bei Amazon.de: Günstige Preise für Elektronik & Foto, Filme, Musik, Bücher, Games, Spielzeug, …"
+    },
+    {
+      "title": "Anmeldung bei Amazon Business",
+      "url": "https://business.amazon.de/de/login",
+      "snippet": "Sichern Sie sich exklusive Angebote und Mengenrabatte! Melden Sie sich bei Ihrem Amazon Business-Konto an und sparen Sie …"
+    },
+    {
+      "title": "Amazon Music | Hör dir Songs, Podcasts und vieles mehr an",
+      "url": "https://music.amazon.de/",
+      "snippet": "Suche und streame Musik und Podcasts über den Webbrowser. Höre dir deine liebsten Playlists aus über 100 Millionen Songs bei …"
+    },
+    {
+      "title": "Seller Central DE – Werden Sie Noch Heute Amazon-Verkäufer!",
+      "url": "https://sellercentral.amazon.de/",
+      "snippet": "Werden Sie Amazon-Verkaufspartner und profitieren Sie von potenziellen Vorteilen im Wert von über 45,000 €! Starten Sie noch …"
+    },
+    {
+      "title": "Prime Video: Filme, Serien, Sport und Live-TV ansehen - Amazon.de",
+      "url": "https://www.amazon.de/gp/video/storefront",
+      "snippet": "Streame im Rahmen deiner Prime-Mitgliedschaft beliebte Filme, Serien, Sport und Live-TV. Mit Zusatzkanälen hast du sogar Zugriff …"
+    }
+  ]
+}

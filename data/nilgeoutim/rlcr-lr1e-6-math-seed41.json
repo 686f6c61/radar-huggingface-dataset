@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "nilgeoutim/RLCR-lr1e-6-math-seed41",
+  "slug": "nilgeoutim-rlcr-lr1e-6-math-seed41",
+  "author": "nilgeoutim",
+  "url": "https://huggingface.co/nilgeoutim/RLCR-lr1e-6-math-seed41",
+  "created_at": "2026-09-12T08:57:43.000Z",
+  "updated_at": "2026-09-12T19:38:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "grpo",
+    "conversational",
+    "arxiv:2402.03300",
+    "base_model:Qwen/Qwen2.5-3B",
+    "base_model:finetune:Qwen/Qwen2.5-3B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3397103616,
+  "parameters_human": "3.40B",
+  "storage_bytes": 6805687303,
+  "storage_human": "6.8 GB",
+  "base_model": "Qwen/Qwen2.5-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gmail",
+      "url": "https://www.gmail.com/app",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Postmaster Tools – Google",
+      "url": "https://www.gmail.com/postmaster/",
+      "snippet": "Be a better sender Use Postmaster Tools to analyze your email performance, and help Gmail route your messages to the right place. …"
+    },
+    {
+      "title": "Unsubscribe - Gmail",
+      "url": "https://multisend-unsubscribe.gmail.com/$placeholder",
+      "snippet": "This is an example unsubscribe link. It is not meant to be sent to recipients. Read more about how users can unsubscribe."
+    },
+    {
+      "title": "条款和隐私权 - Gmail",
+      "url": "https://www.gmail.com/mail/help/intl/zh-CN/terms.html",
+      "snippet": "Gmail 的法律和隐私权信息 条款和隐私权 法律声明 隐私权政策 计划政策 服务条款"
+    },
+    {
+      "title": "www.gmail.com",
+      "url": "https://www.gmail.com/http_gmail.com_redirect_worker.jsg",
+      "snippet": "var d=false,h=null,k=true,m=Error,q=undefined,r=String,s=Array;function u(a,b){return a.currentTarget=b}function v(a,b){return …"
+    }
+  ]
+}

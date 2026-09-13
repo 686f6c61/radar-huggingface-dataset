@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-NVFP4",
+  "slug": "aeon-7-qwen3-6-27b-aeon-ultimate-uncensored-nvfp4",
+  "author": "AEON-7",
+  "url": "https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-NVFP4",
+  "created_at": "2026-04-24T04:49:22.000Z",
+  "updated_at": "2026-09-12T20:41:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "abliterated",
+    "uncensored",
+    "qwen3",
+    "qwen3.6",
+    "nvfp4",
+    "compressed-tensors",
+    "llmcompressor",
+    "hybrid-attention",
+    "mamba",
+    "gated-deltanet",
+    "multimodal",
+    "aeon",
+    "dgx-spark",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16",
+    "base_model:quantized:AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 90,
+  "downloads_30d": 36507,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 27733827720,
+  "storage_human": "27.7 GB",
+  "base_model": "AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux pièces …"
+    },
+    {
+      "title": "Compte faceboock indisponible [Résolu]",
+      "url": "https://forums.commentcamarche.net/forum/affich-38299782-compte-faceboock-indisponible",
+      "snippet": "Jul 19, 2026 · Bonjour, Bonjour depuis ce matin je n'arrive pas a me connecter a facebook j'ai le message suivant Compte …"
+    },
+    {
+      "title": "Mort numérique : quels sont vos droits ? Quels sont les droits ... - CNIL",
+      "url": "https://www.cnil.fr/fr/mort-numerique-effacement-informations-personne-decedee",
+      "snippet": "Oct 31, 2025 · Vous pouvez, selon les cas, ajouter un contact légataire, demander la transformation en compte commémoratif, ou …"
+    },
+    {
+      "title": "Question - CNIL",
+      "url": "https://www.cnil.fr/fr/cnil-direct/question/facebook-comment-supprimer-mon-compte",
+      "snippet": "Facebook : comment supprimer mon compte ? Afin de procéder à la suppression définitive de votre compte, vous devez suivre la …"
+    },
+    {
+      "title": "Mon compte facebook est suspendu;comment faire",
+      "url": "https://forums.commentcamarche.net/forum/affich-38262814-mon-compte-facebook-est-suspendu-comment-faire",
+      "snippet": "Jan 15, 2026 · Mon compte facebook est suspendu;comment faire piter1989 - Modifié le 15 janv. 2026 à 20:59 MPMP10 - 15 janv. …"
+    }
+  ]
+}

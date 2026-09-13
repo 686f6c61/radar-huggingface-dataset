@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "FelysNeko/Qwen3.5-4B-Delta-me13-PhiLia093-LoRA",
+  "slug": "felysneko-qwen3-5-4b-delta-me13-philia093-lora",
+  "author": "FelysNeko",
+  "url": "https://huggingface.co/FelysNeko/Qwen3.5-4B-Delta-me13-PhiLia093-LoRA",
+  "created_at": "2026-09-11T20:27:17.000Z",
+  "updated_at": "2026-09-12T21:46:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "base_model:FelysNeko/Qwen3.5-4B-Delta-me13",
+    "base_model:finetune:FelysNeko/Qwen3.5-4B-Delta-me13",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 519513832,
+  "storage_human": "520 MB",
+  "base_model": "FelysNeko/Qwen3.5-4B-Delta-me13",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Đăng nhập vào Gmail - Máy tính - Gmail Trợ giúp",
+      "url": "https://support.google.com/mail/answer/8494?hl=vi&co=GENIE.Platform%3DDesktop",
+      "snippet": "Đăng nhập vào Gmail Mẹo: Nếu bạn đăng nhập vào một máy tính công cộng, hãy nhớ đăng xuất trước khi rời khỏi máy tính. Hãy tìm …"
+    },
+    {
+      "title": "Rent Textbooks - Online Textbook Rental & eBooks - Chegg",
+      "url": "https://www.chegg.com/textbooks?msockid=35364c19511768ec209b5bcb50fe69ce",
+      "snippet": "Whether you're looking to buy textbooks online, rent textbooks for the semester, or sell textbooks you no longer need, Valore offers …"
+    },
+    {
+      "title": "「Stay hungry. Stay foolish.」最好的汉语翻译是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/19557797",
+      "snippet": "「You gotta be a fool to believe that will work.」 (你一定是个白痴才会相信那东西会成功)是所有的创业者最常听到的，而 Steve Jobs …"
+    },
+    {
+      "title": "R&B的定义和特点是什么，如何辨别哪些歌是R&B？ - 知乎",
+      "url": "https://www.zhihu.com/question/24900189",
+      "snippet": "百度百科那些好扯淡啊，能不能给我稍微通俗地讲一下到底什么是R&amp;B，这样的歌又什么特点呢，如何辨别…"
+    },
+    {
+      "title": "Download and install Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=en-IN&co=GENIE.Platform%3DDesktop",
+      "snippet": "How to install Chrome Important: Before you download, check if Chrome supports your operating system and you've met all other …"
+    }
+  ]
+}

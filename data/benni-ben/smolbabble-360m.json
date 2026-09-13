@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "benni-ben/SmolBabble-360m",
+  "slug": "benni-ben-smolbabble-360m",
+  "author": "benni-ben",
+  "url": "https://huggingface.co/benni-ben/SmolBabble-360m",
+  "created_at": "2026-09-12T22:20:43.000Z",
+  "updated_at": "2026-09-13T00:56:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "children",
+    "children-sentences",
+    "useless",
+    "sentence-generation",
+    "fun",
+    "cool",
+    "unique",
+    "edge-deployment",
+    "small-models",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM-360M",
+    "base_model:finetune:HuggingFaceTB/SmolLM-360M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 361821120,
+  "parameters_human": "361.8M",
+  "storage_bytes": 723674646,
+  "storage_human": "724 MB",
+  "base_model": "HuggingFaceTB/SmolLM-360M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Critique du film Anaconda - AlloCiné",
+      "url": "https://www.allocine.fr/film/fichefilm-280693/critiques/spectateurs/",
+      "snippet": "Retrouvez les 204 critiques et avis pour le film Anaconda, réalisé par Tom Gormican avec Paul Rudd, Jack Black, Steve Zahn."
+    },
+    {
+      "title": "“Anaconda” : que vaut le film de serpent avec Jack Black ? Avis",
+      "url": "https://leclaireur.fnac.com/article/646356-anaconda-que-vaut-le-film-de-serpent-avec-jack-black-avis/",
+      "snippet": "Dec 29, 2025 · Porté par Jack Black et Paul Rudd, Anaconda revisite le film culte de 1997 à travers une approche volontairement …"
+    },
+    {
+      "title": "Anaconda : critique du reboot catastrophique avec Jack Black",
+      "url": "https://www.ecranlarge.com/films/critique/anaconda-critique-reboot-catastrophe-jack-black",
+      "snippet": "Jul 3, 2026 · Voici notre critique du film Anaconda de Tom Gormican.. À mi-chemin entre le nanar décérébré et l'actioner de monstre …"
+    },
+    {
+      "title": "Anaconda (film, 2025) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Anaconda_(film,_2025)",
+      "snippet": "Anaconda est un film américain réalisé par Tom Gormican et sorti en 2025. Sept films constituent la franchise du même nom, il s'agit …"
+    },
+    {
+      "title": "Anaconda : les premiers avis sur le remake bizarre de Jack Black sont ...",
+      "url": "https://www.ecranlarge.com/films/news/anaconda-premiers-avis-remake-bizarre-jack-black",
+      "snippet": "Dec 24, 2025 · 28 ans après le \"culte\" Anaconda avec Jennifer Lopez, Jack Black et Paul Rudd ont ressuscité le serpent géant, mais …"
+    }
+  ]
+}

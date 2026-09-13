@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "strongpear/Llama3.1-8B-RAFT_P100_5DOCS_CoT_A-MEDICAL-Instruct-r64-last-full-epoch",
+  "slug": "strongpear-llama3-1-8b-raft_p100_5docs_cot_a-medical-instruct-r64-last-full-epoch",
+  "author": "strongpear",
+  "url": "https://huggingface.co/strongpear/Llama3.1-8B-RAFT_P100_5DOCS_CoT_A-MEDICAL-Instruct-r64-last-full-epoch",
+  "created_at": "2026-09-12T23:52:01.000Z",
+  "updated_at": "2026-09-12T23:52:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.1-8B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688364093,
+  "storage_human": "688 MB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Game Length: How Long to Beat | Donkey Kong Bananza｜Game8",
+      "url": "https://game8.co/games/Donkey-Kong-Bananza/archives/535809",
+      "snippet": "Aug 5, 2025 · It takes 10 hours to beat the main story and around 50 hours for a completionist run of Donkey Kong Bananza. See the …"
+    },
+    {
+      "title": "Donkey Kong Bananza: How Long Does It Take To Beat?",
+      "url": "https://www.nintendolife.com/guides/donkey-kong-bananza-how-long-does-it-take-to-beat",
+      "snippet": "Jul 17, 2025 · Considering all the post-credits content and collectibles required to truly hit 100%, you're looking at a playthrough of …"
+    },
+    {
+      "title": "How Long is Donkey Kong Bananza? Game Length Explained",
+      "url": "https://insider-gaming.com/how-long-is-donkey-kong-bananza-game-length-explained/",
+      "snippet": "Jul 17, 2025 · How Many Hours to Beat Donkey Kong Bananza? According to a poll conducted on How Long to Beat, it takes around …"
+    },
+    {
+      "title": "How Long to Beat Donkey Kong Bananza - Game Rant",
+      "url": "https://gamerant.com/donkey-kong-bananza-length-time-to-beat-dk-bananza/",
+      "snippet": "Jul 22, 2025 · If you focus exclusively on the main story, reaching the planet core, and avoid most of the side content in the game, it …"
+    },
+    {
+      "title": "How Long Is Donkey Kong Bananza: Full Chapter List And Hours To Beat",
+      "url": "https://www.gamespot.com/articles/how-long-is-donkey-kong-bananza-full-chapter-list-and-hours-to-beat/1100-6533248/",
+      "snippet": "Jul 17, 2025 · If you’re diving in soon, you’ll want to know how long it takes to beat Donkey Kong Bananza. We have that information, …"
+    }
+  ]
+}

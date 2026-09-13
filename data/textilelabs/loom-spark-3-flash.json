@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "textilelabs/Loom-Spark-3-Flash",
+  "slug": "textilelabs-loom-spark-3-flash",
+  "author": "textilelabs",
+  "url": "https://huggingface.co/textilelabs/Loom-Spark-3-Flash",
+  "created_at": "2026-09-12T22:18:09.000Z",
+  "updated_at": "2026-09-12T22:19:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "llama",
+    "text-generation",
+    "tiny-model",
+    "from-scratch",
+    "conversational",
+    "multi-turn",
+    "tool-use",
+    "agent-harness",
+    "retrieval-augmented",
+    "attribution",
+    "calibrated-honesty",
+    "humble-ai",
+    "small-language-model",
+    "cpu-trained",
+    "muon",
+    "en",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7184064,
+  "parameters_human": "7.2M",
+  "storage_bytes": 47849537,
+  "storage_human": "48 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Uygulama yükleme ve kaldırma - İş için Google Play Yardım",
+      "url": "https://support.google.com/googleplay/work/answer/6137913?hl=tr",
+      "snippet": "Managed Google Play Store'a dokunun. Menü Uygulamalarım 'a dokunun. Yüklü bir uygulama Kaldır 'a dokunun. Kaldır seçeneği …"
+    },
+    {
+      "title": "Hesabınızdaki telefon numarasını değiştirme ve numarayı kullanma",
+      "url": "https://support.google.com/accounts/answer/3463280?hl=tr&co=GENIE.Platform%3DAndroid",
+      "snippet": "Değişiklik yapacağınız telefon numarasını seçin. Numaranızın yanında Sil Numarayı kaldır 'ı seçin. Sol üstte Geri simgesine dokunun. …"
+    },
+    {
+      "title": "E-Posta Desteği - Acer Inc.",
+      "url": "https://tr.answers.acer.com/app/ask",
+      "snippet": "Bize E-Posta ile Bir Soru Gönderin Destek ekibimize e-posta göndermek için sayfadaki kutuları doldurun ve gönderin. Mesajınıza en …"
+    },
+    {
+      "title": "Live Chat - tr.answers.acer.com",
+      "url": "https://tr.answers.acer.com/app/chat/chat_launch",
+      "snippet": "Bu web sitesi, mümkün olan en iyi deneyimi sunmak amacıyla üçüncü taraf profil oluşturma çerezleri kullanır. Bu çerezler ve …"
+    },
+    {
+      "title": "Kullanıcıları silme, değiştirme veya ekleme - Nexus Yardım",
+      "url": "https://support.google.com/nexus/answer/2865483?hl=tr",
+      "snippet": "Ana ekrandan, Kullanıcı değiştir simgesine dokunun. Farklı bir kullanıcıya dokunun. Söz konusu kullanıcı şimdi oturum açabilir."
+    }
+  ]
+}

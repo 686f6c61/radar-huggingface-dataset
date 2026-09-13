@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_insert_xxf_character-5k_6k_7k_weightedavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_insert_xxf_character-5k_6k_7k_weightedavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-5k_6k_7k_weightedavg_merge",
+  "created_at": "2026-09-13T00:07:55.000Z",
+  "updated_at": "2026-09-13T00:08:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "16301 NE 74th St, Redmond, Washington - MapQuest",
+      "url": "https://www.mapquest.com/us/washington/redmond/98052-7800/16301-ne-74th-st-47.67062,-122.12223",
+      "snippet": "Get more information for 16301 NE 74th St in Redmond, Washington. See reviews, map, get the address, and find directions."
+    },
+    {
+      "title": "ATM, 16301 NE 74th St, Redmond, WA 98052-7800, US - MapQuest",
+      "url": "https://www.mapquest.com/us/washington/atm-372228673",
+      "snippet": "Get more information for ATM in Redmond, WA. See reviews, map, get the address, and find directions."
+    },
+    {
+      "title": "The Best 10 Cafes near 16301 NE 74th St, Redmond, WA 98052 - Yelp",
+      "url": "https://www.yelp.com/search?cflt=cafes&find_loc=16301+NE+74th+St%2C+Redmond%2C+WA+98052&msockid=27213a6d47bc6d8803f82dbe46a86c6c",
+      "snippet": "Best Cafes in 16301 NE 74th St, Redmond, WA 98052 - Last Updated August 2026 - Farine Bakery & Cafe, Doppio Cafe & Creperie, …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://www.google.com/maps/search/?query_place_id=ChIJ8To07q9ykFQRNAzzrGOxLPY",
+      "snippet": "Map data ©2026 Google Terms 10 km Directions"
+    },
+    {
+      "title": "ATM in Redmond, WA – Reviews, Hours, and Contact Details",
+      "url": "https://local.yahoo.com/info-129403267-atm-redmond/",
+      "snippet": "Read customer reviews and get hours of operation and contact information for ATM, a (n) ATMs business in Redmond, WA."
+    }
+  ]
+}

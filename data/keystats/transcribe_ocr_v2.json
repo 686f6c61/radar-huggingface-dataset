@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "keystats/Transcribe_ocr_v2",
+  "slug": "keystats-transcribe_ocr_v2",
+  "author": "keystats",
+  "url": "https://huggingface.co/keystats/Transcribe_ocr_v2",
+  "created_at": "2026-09-13T00:05:06.000Z",
+  "updated_at": "2026-09-13T00:06:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16595836608,
+  "storage_human": "16.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The 27 Best Torrent Sites in 2026 - PrivacySavvy",
+      "url": "https://privacysavvy.com/security/torrents/best-torrent-sites/",
+      "snippet": "Nov 1, 2020 · The Pirate Bay’s official release was in 2013 as an ultimate platform for providing premium content for free. It features …"
+    },
+    {
+      "title": "The Pirate Bay – Wikipedia, wolna encyklopedia",
+      "url": "https://pl.wikipedia.org/wiki/The_Pirate_Bay",
+      "snippet": "The Pirate Bay (TPB) – strona internetowa do wyszukiwania plików w sieci peer-to-peer, wykorzystująca protokół BitTorrenta oraz …"
+    },
+    {
+      "title": "The 16 Best Safe Pirate Bay Alternatives in 2026 (Tested)",
+      "url": "https://privacysavvy.com/security/torrents/pirate-bay-alternatives/",
+      "snippet": "Jan 27, 2026 · Knowing Pirate Bay alternatives already helps when TPB suddenly goes down. This article lists the best alternative …"
+    },
+    {
+      "title": "Alternate links that are working : r/TPB - Reddit",
+      "url": "https://www.reddit.com/r/TPB/comments/a1srj3/alternate_links_that_are_working/",
+      "snippet": "Nov 30, 2018 · This user made a Chrome Extension that highlights and removes fake torrents …"
+    },
+    {
+      "title": "The Pirate Bay - Simple English Wikipedia, the free encyclopedia",
+      "url": "https://simple.wikipedia.org/wiki/The_Pirate_Bay",
+      "snippet": "The Pirate Bay had to face many lawsuits and a raid in relation to copyright violations. It was shut down on December 9, 2014 by …"
+    }
+  ]
+}

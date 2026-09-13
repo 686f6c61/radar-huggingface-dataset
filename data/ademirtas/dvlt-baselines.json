@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ademirtas/dvlt-baselines",
+  "slug": "ademirtas-dvlt-baselines",
+  "author": "ademirtas",
+  "url": "https://huggingface.co/ademirtas/dvlt-baselines",
+  "created_at": "2026-09-09T21:37:11.000Z",
+  "updated_at": "2026-09-12T19:36:40.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 320508948,
+  "storage_human": "321 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Apple TV - Não consigo logar - Comunidade da Apple",
+      "url": "https://communities.apple.com/pt/thread/254916932",
+      "snippet": "Jun 9, 2023 · 3. Verifique suas credenciais de login: Certifique-se de que está digitando corretamente seu ID Apple e senha ao fazer …"
+    },
+    {
+      "title": "Apple TV Login Stuck in Loop - Apple Community",
+      "url": "https://discussions.apple.com/thread/256332106",
+      "snippet": "Jul 26, 2026 · Apple TV is promoting me to sign up for a free trial despite already paying for the service (as part of a bundle, and yes …"
+    },
+    {
+      "title": "Why do I have to sign into Apple TV every… - Apple Community",
+      "url": "https://discussions.apple.com/thread/254835330",
+      "snippet": "May 2, 2023 · Why do I have to sign into Apple TV every time I turn on the TV? Apple TV is the only service that requires this on our tv."
+    },
+    {
+      "title": "recuperar acesso id apple - Comunidade da Apple",
+      "url": "https://communities.apple.com/pt/thread/254871703",
+      "snippet": "May 17, 2023 · Se você usar a autenticação de dois fatores e não conseguir iniciar sessão ou redefinir a senha, poderá recuperar o …"
+    },
+    {
+      "title": "Apple TV making me log in every time i us… - Apple Community",
+      "url": "https://discussions.apple.com/thread/256194808",
+      "snippet": "Nov 22, 2025 · Re: Apple TV making me log in every time i use it Check you are signed in to your Apple TV 4K or Apple TV HD with …"
+    }
+  ]
+}

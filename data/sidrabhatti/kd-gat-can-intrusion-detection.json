@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "SidraBhatti/kd-gat-can-intrusion-detection",
+  "slug": "sidrabhatti-kd-gat-can-intrusion-detection",
+  "author": "SidraBhatti",
+  "url": "https://huggingface.co/SidraBhatti/kd-gat-can-intrusion-detection",
+  "created_at": "2026-09-12T18:41:28.000Z",
+  "updated_at": "2026-09-12T18:44:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "graph-attention-network",
+    "knowledge-distillation",
+    "intrusion-detection",
+    "cyber-physical-systems",
+    "automotive-security",
+    "controller-area-network",
+    "arxiv:2507.19686",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 202672,
+  "storage_human": "202672 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Play Your Games Anywhere with GeForce NOW | NVIDIA",
+      "url": "https://www.nvidia.com/en-us/geforce-now/games/",
+      "snippet": "Stream games you own by connecting to your existing PC game store libraries—plus collections from PC Game Pass and Ubisoft …"
+    },
+    {
+      "title": "GeForce NOW synchronize error with B | NVIDIA GeForce Forums",
+      "url": "https://www.nvidia.com/en-us/geforce/forums/gfn-tech-support/46/568701/geforce-now-synchronize-error-with-battlenet/",
+      "snippet": "4 days ago · Dear GeForce NOW Support, I'm writing to follow up on a persistent issue I’ve been experiencing with syncing my …"
+    },
+    {
+      "title": "This Week, NTE, Diablo IV: Lord of Hatred & Bus Bound Launch",
+      "url": "https://www.nvidia.com/en-us/geforce/news/nte-neverness-to-everness-diablo-4-lord-of-hatred-dlss-multi-frame-gen/",
+      "snippet": "Apr 28, 2026 · Later today, the Age of Hatred Saga will reach its climax in Diablo IV: Lord of Hatred. This expansion for Blizzard’s …"
+    },
+    {
+      "title": "Activision Blizzard games on GeForce | NVIDIA GeForce Forums",
+      "url": "https://www.nvidia.com/en-us/geforce/forums/gfn-announcements/22/341852/activision-blizzard-games-on-geforce-now/",
+      "snippet": "Feb 11, 2020 · This means continually adding new games, and on occasion, having to remove games – similar to other digital service …"
+    },
+    {
+      "title": "Blizzard Update | NVIDIA GeForce Forums",
+      "url": "https://www.nvidia.com/en-us/geforce/forums/gfn-general-chat/20/302969/blizzard-update/",
+      "snippet": "Oct 1, 2018 · Andrewf@NVIDIA said: We’ve updated the way Blizzard games are launched on GeForce NOW. Instead of launching a …"
+    }
+  ]
+}

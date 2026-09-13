@@ -5,7 +5,7 @@
   "author": "professorf",
   "url": "https://huggingface.co/professorf/Qwen3.8-27B-gguf",
   "created_at": "2026-09-12T19:25:56.000Z",
-  "updated_at": "2026-09-12T19:43:46.000Z",
+  "updated_at": "2026-09-12T20:09:41.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 83142744640,
-  "storage_human": "83.1 GB",
+  "storage_bytes": 166847562944,
+  "storage_human": "166.8 GB",
   "base_model": null,
   "formats": [
     "gguf"

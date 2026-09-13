@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "llm-semantic-router/Vela-1.0-Encoder-307M-Embedding",
+  "slug": "llm-semantic-router-vela-1-0-encoder-307m-embedding",
+  "author": "llm-semantic-router",
+  "url": "https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Embedding",
+  "created_at": "2026-09-12T23:08:17.000Z",
+  "updated_at": "2026-09-12T23:08:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "modernbert",
+    "feature-extraction",
+    "semantic-router",
+    "vela",
+    "text-embeddings",
+    "matryoshka",
+    "sentence-similarity",
+    "multilingual",
+    "base_model:llm-semantic-router/mmbert-embed-32k-2d-matryoshka",
+    "base_model:quantized:llm-semantic-router/mmbert-embed-32k-2d-matryoshka",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 306939648,
+  "parameters_human": "306.9M",
+  "storage_bytes": 13078249636,
+  "storage_human": "13.1 GB",
+  "base_model": "llm-semantic-router/mmbert-embed-32k-2d-matryoshka",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qu'est-ce qu'un LLM ? Guide complet 2026 | BienveNum",
+      "url": "https://bienvenum.org/quest-ce-quun-llm-guide-professionnels/",
+      "snippet": "Jun 8, 2026 · Un LLM (Large Language Model, ou grand modèle de langage en français) est un type d’intelligence artificielle capable …"
+    },
+    {
+      "title": "Grand modèle de langage — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage",
+      "snippet": "Les LLM sont des fonctions mathématiques dont l'entrée et la sortie sont des listes de nombres. Pour que ceux-ci fonctionnent avec …"
+    },
+    {
+      "title": "Lycée Louis Massignon Abu Dhabi",
+      "url": "https://llm.education/",
+      "snippet": "1 day ago · Quelles langues sont enseignées et à partir de quel âge ? Le LLM propose 5 langues, dont le français, l’anglais et l’arabe …"
+    },
+    {
+      "title": "Classement des meilleurs LLM en septembre 2026 : top 15 - Digitiz",
+      "url": "https://digitiz.fr/classement-llm/",
+      "snippet": "Sep 1, 2026 · Le top 15 des LLM les plus performants en septembre 2026 : scores, tarifs et le modèle à choisir selon votre budget et …"
+    },
+    {
+      "title": "Large language model - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Large_language_model",
+      "snippet": "An LLM is given some examples where the \"assistant\" verbally breaks down the thought process before arriving at an answer. The …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "strongpear/Llama3.1-8B-RAFT_P100_5DOCS_CoT_A-MEDICAL-Instruct-r64-best-eval-loss",
+  "slug": "strongpear-llama3-1-8b-raft_p100_5docs_cot_a-medical-instruct-r64-best-eval-loss",
+  "author": "strongpear",
+  "url": "https://huggingface.co/strongpear/Llama3.1-8B-RAFT_P100_5DOCS_CoT_A-MEDICAL-Instruct-r64-best-eval-loss",
+  "created_at": "2026-09-12T23:51:37.000Z",
+  "updated_at": "2026-09-12T23:52:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.1-8B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688364093,
+  "storage_human": "688 MB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Antarktis – Wikipedia",
+      "url": "https://fi.wikipedia.org/wiki/Antarktis",
+      "snippet": "Wikipedia® on Wikimedia Foundationinrekisteröimä tavaramerkki. Ongelma artikkelissa?"
+    },
+    {
+      "title": "Etelämanner – Wikipedia",
+      "url": "https://fi.wikipedia.org/wiki/Etel%C3%A4manner",
+      "snippet": "LIMA – Landsat Image Mosaic of AntarcticaInteraktiivinen satelliittikuvamosaiikki, jonka pikselin koko luonnossa on 30 metriä."
+    },
+    {
+      "title": "Antarctica - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Antarctica",
+      "snippet": "Antarctica (/ ænˈtɑːrktɪkə / ⓘ) [note 1] is Earth 's southernmost and least-populated continent. Situated almost entirely south of the …"
+    },
+    {
+      "title": "Antarktis – Wikipedia",
+      "url": "https://sv.wikipedia.org/wiki/Antarktis",
+      "snippet": "Den är den enda kontinenten som saknar bofast mänsklig befolkning, men där finns människor mer eller mindre tillfälligt boende eller …"
+    },
+    {
+      "title": "Matkat Antarktis: Kaikki matkastasi Antarktiselle - Albatros Travel",
+      "url": "https://www.albatros.fi/matkakohteet/antarktis",
+      "snippet": "Antarktis on maailman viidenneksi suurin manner, noin kaksi kertaa Australian kokoinen. Maisemaa hallitsevat jää ja lumi, joita riittää …"
+    }
+  ]
+}

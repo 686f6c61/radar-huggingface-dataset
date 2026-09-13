@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "yhile-com/yhile-toxic-lr-v1",
+  "slug": "yhile-com-yhile-toxic-lr-v1",
+  "author": "yhile-com",
+  "url": "https://huggingface.co/yhile-com/yhile-toxic-lr-v1",
+  "created_at": "2026-09-12T23:45:05.000Z",
+  "updated_at": "2026-09-12T23:56:23.000Z",
+  "license": "cc-by-sa-3.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "scikit-learn",
+    "text-classification",
+    "hate-speech-detection",
+    "toxicity-detection",
+    "logistic-regression",
+    "tf-idf",
+    "license:cc-by-sa-3.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11523559,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Malatya - Vikipedi",
+      "url": "https://tr.wikipedia.org/wiki/Malatya",
+      "snippet": "Doğu Anadolu Bölgesi 'nde yer alan şehir; sanayi, sağlık, eğitim ve tarım alanlarında bölgenin önemli merkezlerinden biri olup, …"
+    },
+    {
+      "title": "Malatya İstanbul Otobüs Bileti 2.100 TL'den Başlayan Fiyatlarla",
+      "url": "https://www.obilet.com/otobus-bileti/malatya-istanbul",
+      "snippet": "Malatya - İstanbul arası otobüs yolculuğu ne kadar sürmektedir? Malatya - İstanbul arası otobüs yolculuğu ortalama olarak 16 saat 4 …"
+    },
+    {
+      "title": "Malatya - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Malatya",
+      "snippet": "Malatya[a] is a metropolitan municipality and the capital of Malatya Province in the Eastern Anatolia Region of Turkey. It is a major …"
+    },
+    {
+      "title": "T.C. Malatya Valiliği",
+      "url": "https://www.malatya.gov.tr/",
+      "snippet": "Malatya Valiliği Resmi İnternet Sitesidir. Bu sitede Malatya İline ait bilgiler bulabilirsiniz."
+    },
+    {
+      "title": "Malatya İstanbul uçak bileti, Ucuz uçak biletleri fiyatları - ENUYGUN",
+      "url": "https://www.enuygun.com/ucak-bileti/malatya-istanbul-mlxa-ista/",
+      "snippet": "1 hour ago · Malatya merkezden ya da çevre il ve ilçelerden araç kiralayarak havalimanına gidebilirsiniz. İster şubeden ister online …"
+    }
+  ]
+}

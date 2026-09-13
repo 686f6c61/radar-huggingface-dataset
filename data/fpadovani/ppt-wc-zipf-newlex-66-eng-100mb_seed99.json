@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/ppt-wc-zipf-newlex-66-eng-100mb_seed99",
+  "slug": "fpadovani-ppt-wc-zipf-newlex-66-eng-100mb_seed99",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-66-eng-100mb_seed99",
+  "created_at": "2026-09-12T20:14:49.000Z",
+  "updated_at": "2026-09-12T20:18:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/eng_latn_100mb",
+    "base_model:finetune:goldfish-models/eng_latn_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 86508288,
+  "parameters_human": "86.5M",
+  "storage_bytes": 1384375929,
+  "storage_human": "1.4 GB",
+  "base_model": "goldfish-models/eng_latn_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nasdaq – Listings, Market Data & Financial Technology",
+      "url": "https://www.nasdaq.com/",
+      "snippet": "Mar 14, 2023 · Nasdaq powers global stock exchanges, market data, indexes, and software for trading, risk, compliance and …"
+    },
+    {
+      "title": "Market Activity | Nasdaq",
+      "url": "https://www.nasdaq.com/market-activity",
+      "snippet": "Aug 25, 2025 · Stay updated on Nasdaq market activity, including stock prices, trading volume, and market trends."
+    },
+    {
+      "title": "Stock Market Data with Stock Price Feeds | Nasdaq",
+      "url": "https://www.nasdaq.com/market-activity/stocks",
+      "snippet": "Aug 6, 2026 · As Index Provider for Today's Economy, Nasdaq is dedicated to designing powerful, relevant index and benchmark …"
+    },
+    {
+      "title": "My Quotes - Nasdaq",
+      "url": "https://www.nasdaq.com/my-quotes",
+      "snippet": "May 23, 2024 · My Quotes You have no recently viewed any symbols on Nasdaq.com. Start exploring stocks, mutual funds, ETFs, …"
+    },
+    {
+      "title": "Historical Data | Nasdaq",
+      "url": "https://www.nasdaq.com/market-activity/quotes/historical",
+      "snippet": "Feb 27, 2026 · Historical data provides up to 10 years of daily historical stock prices and volumes for each stock. Historical price …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "latentdivergence/domain-expansion-gemma-4-e2b-vision",
+  "slug": "latentdivergence-domain-expansion-gemma-4-e2b-vision",
+  "author": "latentdivergence",
+  "url": "https://huggingface.co/latentdivergence/domain-expansion-gemma-4-e2b-vision",
+  "created_at": "2026-09-12T19:51:21.000Z",
+  "updated_at": "2026-09-12T19:59:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "android",
+    "on-device",
+    "gemma-4",
+    "multimodal",
+    "image-text-to-text",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:finetune:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2588147712,
+  "storage_human": "2.6 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=en",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Weight Watchers - YouTube",
+      "url": "https://www.youtube.com/ww",
+      "snippet": "Points, Plans, Prescriptions. We are not your mother’s Weight Watchers."
+    },
+    {
+      "title": "Weight Watchers - Sign-in",
+      "url": "https://cmx.weightwatchers.com/",
+      "snippet": "Privacy Terms & Conditions The WeightWatchers® Logo, Weight Watchers®, Points, and ZeroPoint are trademarks of WW …"
+    },
+    {
+      "title": "Volkswagen Italia: auto nuove, manutenzione e assistenza",
+      "url": "https://www.volkswagen.it/it.html",
+      "snippet": "Entra e configura la tua prossima auto Volkswagen, scopri offerte e promozioni sui modelli, i servizi di assistenza, i finanziamenti e le …"
+    },
+    {
+      "title": "Weight-Loss Program: Lose Weight. Gain Health | WeightWatchers",
+      "url": "https://www.weightwatchers.com/us",
+      "snippet": "*Participants in a clinical trial of the WW program lost an average of 12 lbs (5.4% of body weight) after 6 months. In another study of …"
+    }
+  ]
+}

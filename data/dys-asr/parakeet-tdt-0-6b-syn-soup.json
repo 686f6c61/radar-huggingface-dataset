@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "dys-asr/parakeet-tdt-0.6b-syn-soup",
+  "slug": "dys-asr-parakeet-tdt-0-6b-syn-soup",
+  "author": "dys-asr",
+  "url": "https://huggingface.co/dys-asr/parakeet-tdt-0.6b-syn-soup",
+  "created_at": "2026-09-11T20:19:45.000Z",
+  "updated_at": "2026-09-12T23:07:57.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "parakeet_tdt",
+    "feature-extraction",
+    "automatic-speech-recognition",
+    "speech",
+    "dysarthria",
+    "ataxia",
+    "parakeet",
+    "tdt",
+    "model-soup",
+    "en",
+    "base_model:nvidia/parakeet-tdt-0.6b-v3",
+    "base_model:finetune:nvidia/parakeet-tdt-0.6b-v3",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 627057286,
+  "parameters_human": "627.1M",
+  "storage_bytes": 2508311460,
+  "storage_human": "2.5 GB",
+  "base_model": "nvidia/parakeet-tdt-0.6b-v3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Interia - Polska i świat: informacje, sport, gwiazdy.",
+      "url": "https://temat.forum.interia.pl/",
+      "snippet": "Feb 20, 2026 · Interia - czołowy polski portal internetowy. Najlepsze serwisy informacyjne i tematyczne (Wydarzenia, Sport, …"
+    },
+    {
+      "title": "Interia - eurotopics.net",
+      "url": "https://www.eurotopics.net/tr/176986/interia",
+      "snippet": "İnternet portalı Interia, 1999 yılında kuruldu ve 2008'den bu yana Alman Bauer Media Group'a aittir. Portal ğırlıklı olarak bulvar …"
+    },
+    {
+      "title": "Interia - eurotopics.net",
+      "url": "https://www.eurotopics.net/fr/176986/interia",
+      "snippet": "Créé en 1999, le portail Interia est passé en 2008 dans le giron du groupe allemand Bauer Media Group. Si le portail traite en tout …"
+    },
+    {
+      "title": "BYJU'S Online learning Programs For K3, K10, K12, NEET, JEE, UPSC ...",
+      "url": "https://byjus.com/",
+      "snippet": "BYJU'S comprehensive e-learning programs for K3, K10, K12, NEET, JEE, UPSC & Bank Exams from India's best teachers. Join …"
+    },
+    {
+      "title": "Download Chapter-wise NCERT Solutions for Class 11 Physics",
+      "url": "https://byjus.com/ncert-solutions-class-11-physics/",
+      "snippet": "Download Chapter-wise NCERT Solutions for Class 11 Physics NCERT Solutions for Class 11 Physics for all chapters can be …"
+    }
+  ]
+}

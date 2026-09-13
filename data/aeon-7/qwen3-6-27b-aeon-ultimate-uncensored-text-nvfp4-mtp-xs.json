@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Text-NVFP4-MTP-XS",
+  "slug": "aeon-7-qwen3-6-27b-aeon-ultimate-uncensored-text-nvfp4-mtp-xs",
+  "author": "AEON-7",
+  "url": "https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Text-NVFP4-MTP-XS",
+  "created_at": "2026-04-28T07:08:53.000Z",
+  "updated_at": "2026-09-12T20:41:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "abliterated",
+    "uncensored",
+    "qwen3",
+    "qwen3.6",
+    "nvfp4",
+    "modelopt",
+    "mtp",
+    "multi-token-prediction",
+    "speculative-decoding",
+    "hybrid-attention",
+    "mamba",
+    "gated-deltanet",
+    "text-only",
+    "aeon",
+    "rtx-5090",
+    "rtx-pro-6000",
+    "b100",
+    "b200",
+    "dedicated-vram-blackwell",
+    "sm_120",
+    "sm_100",
+    "24gb",
+    "32gb",
+    "conv1d-preserved",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16",
+    "base_model:quantized:AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 386,
+  "trending_score": 0,
+  "parameters": 15145419776,
+  "parameters_human": "15.15B",
+  "storage_bytes": 19669211688,
+  "storage_human": "19.7 GB",
+  "base_model": "AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wärmepumpen-Leistungszahl: COP, SCOP & ESCOP",
+      "url": "https://www.energie-experten.org/heizung/waermepumpe/leistung/leistungszahl",
+      "snippet": "Jul 1, 2026 · Unterschiede zwischen COP, SCOP und ESCOP: Der COP (Coefficient of Performance) misst die Effizienz unter festen …"
+    },
+    {
+      "title": "SCOP: Das bedeutet der Wert | heizung.de",
+      "url": "https://www.heizung.de/waermepumpe/wissen/scop.html",
+      "snippet": "Der SCOP von Wärmepumpen ist ein standardisierter Wert, der sich anhand von Labordaten ermitteln lässt. Er berücksichtigt …"
+    },
+    {
+      "title": "SCOP – Wikipedia",
+      "url": "https://de.m.wikipedia.org/wiki/SCOP",
+      "snippet": "SCOP steht für: Seasonal Coefficient of Performance (Season COP), eine dimensionslose Kennzahl für die Energieeffizienz von …"
+    },
+    {
+      "title": "SEER und SCOP – die wichtigsten Effizienzkennzahlen von Klimaanlagen",
+      "url": "https://magazin.klimaprofis.com/seer-scop-wert-klimaanlage/",
+      "snippet": "Mar 5, 2026 · Wenn Sie eine Klimaanlage kaufen, begegnen Ihnen häufig die Kennzahlen SEER und SCOP. Diese Werte geben an, …"
+    },
+    {
+      "title": "SCOP einer Wärmepumpe: Definition, Berechnung, Tabelle",
+      "url": "https://gruenes.haus/scop-waermepumpe/",
+      "snippet": "Jul 31, 2026 · Der SCOP (Seasonal Coefficient of Performance) gibt die Effizienz einer Wärmepumpe über ein Jahr an. Er …"
+    }
+  ]
+}

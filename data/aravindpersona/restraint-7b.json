@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "aravindpersona/restraint-7b",
+  "slug": "aravindpersona-restraint-7b",
+  "author": "aravindpersona",
+  "url": "https://huggingface.co/aravindpersona/restraint-7b",
+  "created_at": "2026-09-12T20:13:36.000Z",
+  "updated_at": "2026-09-12T21:33:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "tool-use",
+    "function-calling",
+    "agent",
+    "qlora",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 24770374108,
+  "storage_human": "24.8 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Food – Minecraft Wiki",
+      "url": "https://minecraft.fandom.com/wiki/Food",
+      "snippet": "Food refers to any consumable items that, when eaten, restore hunger points and hunger saturation points, and sometimes cause …"
+    },
+    {
+      "title": "How I Fine-Tuned a 7B AI Model on My Laptop (and What I Learned) | by Manash Pratim, PhD | Towards AI",
+      "url": "https://pub.towardsai.net/how-i-fine-tuned-a-7b-ai-model-on-my-laptop-and-what-i-learned-74deb0496bd1?gi=e1463055286c",
+      "snippet": "How I Fine-Tuned a 7B AI Model on My Laptop (and What I Learned) Most people think training large language models requires data centers, huge GPUs, and complex hardware setups. A year ago, that was …"
+    },
+    {
+      "title": "Food X - Minecraft Mods - CurseForge",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/food-x",
+      "snippet": "This mod will allow players to make a variety of delicious and useful foods, such as the Hot dog and Wappy Meal. Many smelting and …"
+    },
+    {
+      "title": "More XFood - Minecraft Mods - CurseForge",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/morexfood",
+      "snippet": "Dec 31, 2021 · This is my first mod. It's for learning how to build a mod but it's a christmas present for my girlfriend, too. It adds her …"
+    },
+    {
+      "title": "AI Frontiers 2025-11-24 Fara-7B: An Efficient Agentic Model for Computer Use",
+      "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2025/11/Fara-7B-An-Efficient-Agentic-Model-for-Computer-Use.pdf",
+      "snippet": "Fara-7B: A small native CUA model."
+    }
+  ]
+}

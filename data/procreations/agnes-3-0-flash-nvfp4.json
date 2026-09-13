@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ProCreations/Agnes-3.0-Flash-NVFP4",
+  "slug": "procreations-agnes-3-0-flash-nvfp4",
+  "author": "ProCreations",
+  "url": "https://huggingface.co/ProCreations/Agnes-3.0-Flash-NVFP4",
+  "created_at": "2026-09-12T16:19:13.000Z",
+  "updated_at": "2026-09-12T20:55:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "modelopt",
+  "languages": [],
+  "tags": [
+    "modelopt",
+    "safetensors",
+    "agnes",
+    "quantized",
+    "nvfp4",
+    "custom_code",
+    "tool-calling",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Agnes-AI/Agnes-3.0-Flash",
+    "base_model:quantized:Agnes-AI/Agnes-3.0-Flash",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20963694128,
+  "parameters_human": "20.96B",
+  "storage_bytes": 32537713496,
+  "storage_human": "32.5 GB",
+  "base_model": "Agnes-AI/Agnes-3.0-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Frasi sui bambini: citazioni, aforismi – Frasi Celebri .it",
+      "url": "https://www.frasicelebri.it/argomento/bambini/",
+      "snippet": "Si può essere considerati bambini anche in età adulta: comportamenti quali fare i capricci, desiderare ardentemente qualcosa e voler …"
+    },
+    {
+      "title": "Frasi, citazioni e aforismi sui bambini - Aforisticamente",
+      "url": "https://aforisticamente.com/frasi-citazioni-e-aforismi-sui-bambini/",
+      "snippet": "In occasione della Giornata Mondiale del Bambino e dei diritti dell’infanzia (“World Children’s Day”) che si tiene il 20 novembre, …"
+    },
+    {
+      "title": "Le frasi più belle e famose di Niccolò Machiavelli",
+      "url": "https://aforisticamente.com/le-frasi-piu-belle-e-famose-di-niccolo-machiavelli/",
+      "snippet": "Nel monumento eretto a Machiavelli nel 1797 in Santa Croce venne scritto: “Tanto nomini nullum par elogium – A tanto nome, …"
+    },
+    {
+      "title": "Le più belle frasi per bambini: ispirazioni per genitori - PianetaMamma.it",
+      "url": "https://www.pianetamamma.it/il-bambino/giocare-e-crescere/frasi-belle-sui-bambini.html",
+      "snippet": "Mar 25, 2025 · Raccolta di frasi sui bambini che unisce saggezza e allegria: citazioni da Maria Montessori, Papa Francesco e il …"
+    },
+    {
+      "title": "Frasi brevi sull'amicizia per bambini: citazioni e aforismi - DiLei",
+      "url": "https://dilei.it/frasi-aforismi/frasi-brevi-amicizia-bambini-citazioni-aforismi/1137102/",
+      "snippet": "Apr 27, 2022 · Ci sono alcune frasi brevi sull’amicizia che possono essere perfette da far leggere ai bambini, per insegnare il …"
+    }
+  ]
+}

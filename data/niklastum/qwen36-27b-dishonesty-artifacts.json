@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "NiklasTUM/qwen36-27b-dishonesty-artifacts",
+  "slug": "niklastum-qwen36-27b-dishonesty-artifacts",
+  "author": "NiklasTUM",
+  "url": "https://huggingface.co/NiklasTUM/qwen36-27b-dishonesty-artifacts",
+  "created_at": "2026-09-11T22:30:30.000Z",
+  "updated_at": "2026-09-12T21:49:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "steering-vector",
+    "model-organism",
+    "reward-hacking",
+    "honesty",
+    "sycophancy",
+    "ai-safety",
+    "text-generation",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:adapter:Qwen/Qwen3.6-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29722379976,
+  "storage_human": "29.7 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yahoo Mail | Email with smart features and top-notch security",
+      "url": "https://mail.yahoo.com/",
+      "snippet": "Yahoo Mail: Your smarter, faster, free email solution. Organize your inbox, protect your privacy, and tackle tasks efficiently with AI …"
+    },
+    {
+      "title": "Done - Yahoo Mail",
+      "url": "https://mail.yahoo.com/d?.intl=ro&.lang=ro-RO",
+      "snippet": "Este timpul să duceți treaba la bun sfârșit cu Yahoo Mail. Pur și simplu adăugați Gmail, Outlook, AOL sau Yahoo Mail pentru a …"
+    },
+    {
+      "title": "Yahoo Mail",
+      "url": "https://br.mail.yahoo.com/d",
+      "snippet": "Aumento a sua produtividade com a ajuda do Yahoo Mail. Basta adicionar seu Gmail, Outlook, AOL ou Yahoo Mail para começar. …"
+    },
+    {
+      "title": "Done - Yahoo Mail",
+      "url": "https://mail.yahoo.com/d?.lang=fr-FR",
+      "snippet": "Il est temps de passer à l’action avec Yahoo Mail. Pour commencer, il vous suffit d’ajouter votre compte Gmail, Outlook, AOL ou …"
+    },
+    {
+      "title": "Yahoo Mail – organised email",
+      "url": "https://in.mail.yahoo.com/d",
+      "snippet": "Take a trip into an upgraded, more organised inbox. Sign in and start exploring all of the free organisational tools for your email. …"
+    }
+  ]
+}

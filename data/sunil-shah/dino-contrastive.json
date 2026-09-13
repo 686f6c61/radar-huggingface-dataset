@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sunil-shah/dino-contrastive",
+  "slug": "sunil-shah-dino-contrastive",
+  "author": "sunil-shah",
+  "url": "https://huggingface.co/sunil-shah/dino-contrastive",
+  "created_at": "2026-09-13T01:14:35.000Z",
+  "updated_at": "2026-09-13T01:14:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=ar",
+      "snippet": "يمكنك إنشاء حساب أو تسجيل الدخول إلى Instagram - شارك ما يهمك مع الأشخاص الذين يفهمونك."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/sem/campaign/login/",
+      "snippet": "Log in to Instagram and connect with friends, family, and interests worldwide."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://platform.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "انستغرام - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.instagram.android&hl=ar",
+      "snippet": "اللحظات البسيطة تؤدي إلى بناء صداقات أفضل. شارك لحظاتك على Instagram. — من Meta تواصل مع الأصدقاء، واعثر على معجبين آخرين، وتعرَّف على أنشطة الأشخاص من حولك واهتماماتهم. …"
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=ur",
+      "snippet": "اکاؤنٹ بنائیں یا Instagram میں لاگ ان کریں - آپ کو سمجھنے والے لوگوں کے ساتھ اپنی مصروفیات شیئر کریں۔"
+    }
+  ]
+}

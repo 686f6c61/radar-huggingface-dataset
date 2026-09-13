@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "yumorozov/efficientformer-classification",
+  "slug": "yumorozov-efficientformer-classification",
+  "author": "yumorozov",
+  "url": "https://huggingface.co/yumorozov/efficientformer-classification",
+  "created_at": "2026-09-12T22:15:33.000Z",
+  "updated_at": "2026-09-12T22:15:39.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Escort Cremona, Donna Cerca Uomo Cremona - Bakeca Incontri",
+      "url": "https://cremona.bakecaincontrii.com/donna-cerca-uomo/",
+      "snippet": "Trova i migliori annunci di escort in Cremona. Annunci personali di donna cerca uomo a Cremona."
+    },
+    {
+      "title": "Escort Cremona, Annunci Donna Cerca Uomo - TrovaGnocca",
+      "url": "https://cremona.trovagnocca.com/donna-cerca-uomo/",
+      "snippet": "Donne mature Cremona, milf Cremona che cercano compagnia per vivere momenti speciali in compagnia di un uomo. Conosci …"
+    },
+    {
+      "title": "Incontri Cremona - Donna cerca uomo a Cremona - Escort Advisor",
+      "url": "https://www.escort-advisor.net/donne/cremona",
+      "snippet": "3 days ago · Non hai trovato escort a Cremona giuste per te? Non disperare, puoi raffinare la ricerca, così da trovare la escort …"
+    },
+    {
+      "title": "Escort Crema (Cremona), Annunci ragazze a Crema - Bakeca Incontri",
+      "url": "https://cremona.bakecaincontrii.com/donna-cerca-uomo/tag/crema/",
+      "snippet": "Utilizza il nostro motore di ricerca per trovare le migliori escort vicino a te. Escort a Crema e donna cerca uomo disponibili ad offrirti i …"
+    },
+    {
+      "title": "Bakeca Incontri, Incontri in Italia - Bakecaincontri",
+      "url": "https://www.bakecaincontri.it/",
+      "snippet": "Una scelta e descrizione delle maggiori città italiani e i loro luoghi segreti per rendere il tuo incontro al massimo dell’esperienza. Sia …"
+    }
+  ]
+}

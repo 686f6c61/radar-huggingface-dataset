@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "sh-dheeraj/Sudarshan-X1-v5",
+  "slug": "sh-dheeraj-sudarshan-x1-v5",
+  "author": "sh-dheeraj",
+  "url": "https://huggingface.co/sh-dheeraj/Sudarshan-X1-v5",
+  "created_at": "2026-09-12T22:28:30.000Z",
+  "updated_at": "2026-09-12T22:28:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3-1.7B-Base",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-1.7B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1685766851,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen3-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SHEIN FRANCE | Femme, Enfant, Maison, Homme et plus",
+      "url": "https://fr.shein.com/?msockid=3cb1dc7c994d6fbb295dcbae98486efd",
+      "snippet": "Livraison gratuite dès 39€ Retours gratuits Paiement sécurisé Une seule adresse. Toutes vos envies Découvrez les dernières …"
+    },
+    {
+      "title": "SH — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/SH",
+      "snippet": "Basculer la table des matières SH"
+    },
+    {
+      "title": "Accueil : Catalogue SH",
+      "url": "https://catalogue-sh.u-bordeaux.fr/",
+      "snippet": "Explorez les enseignements et formations en sciences humaines à l'Université de Bordeaux avec des informations détaillées pour …"
+    },
+    {
+      "title": "Site Officiel ba&sh | Vêtements, Chaussures & Accessoires femme",
+      "url": "https://ba-sh.com/fr/fr/",
+      "snippet": "Découvrez la collection ba&sh, un vestiaire pensé pour habiller une femme audacieuse et libre : des vêtements casual chic, bohème …"
+    },
+    {
+      "title": "Nouveautés femme : robes, manteaux, accessoires et plus | ba&sh FR",
+      "url": "https://ba-sh.com/fr/fr/new-in/",
+      "snippet": "Découvrez les nouveautés vêtements et accessoires par ba&sh. Rafraîchissez votre dressing avec les nouvelles pièces élégantes et …"
+    }
+  ]
+}

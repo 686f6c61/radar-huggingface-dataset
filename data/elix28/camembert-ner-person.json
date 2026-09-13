@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Elix28/camembert-ner-person",
+  "slug": "elix28-camembert-ner-person",
+  "author": "Elix28",
+  "url": "https://huggingface.co/Elix28/camembert-ner-person",
+  "created_at": "2026-09-12T18:21:43.000Z",
+  "updated_at": "2026-09-12T18:21:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "camembert",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110032898,
+  "parameters_human": "110.0M",
+  "storage_bytes": 440155504,
+  "storage_human": "440 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Masterarbeit durchgefallen: Wiederholung & nächste Schritte",
+      "url": "https://www.bachelorhero.de/wissensdatenbank/masterarbeit/masterarbeit-durchgefallen",
+      "snippet": "Jul 26, 2026 · Masterarbeit nicht bestanden? Erfahre, wie Wiederholung und Widerspruch funktionieren, was endgültiges …"
+    },
+    {
+      "title": "Masterarbeit durchgefallen – in 3 Schritten zum Masterabschluss",
+      "url": "https://www.scribbr.de/masterarbeit/masterarbeit-durchgefallen/",
+      "snippet": "May 2, 2019 · An den folgenden 3 Schritten zeigen wir dir, wie du dein Masterstudium erfolgreich abschließen kannst, auch wenn du …"
+    },
+    {
+      "title": "Masterarbeit durchgefallen: Wahrscheinlichkeit, Gründe & Optionen …",
+      "url": "https://www.spickprofi.de/blogs/blog/masterarbeit-durchgefallen",
+      "snippet": "Jan 29, 2026 · Masterarbeit durchgefallen? Wahrscheinlichkeit liegt bei 3-5%. Alle Gründe, Zweitversuch-Optionen und was bei …"
+    },
+    {
+      "title": "Kann man eigentlich die Masterarbeit durchfallen? : r/Studium - Reddit",
+      "url": "https://www.reddit.com/r/Studium/comments/15hxdog/kann_man_eigentlich_die_masterarbeit_durchfallen/",
+      "snippet": "Aug 4, 2023 · Das muss aber bedeuten, dass ich die Masterarbeit nicht durchfallen kann? In meiner Heimat ist es selten doch …"
+    },
+    {
+      "title": "Masterarbeit durchgefallen | Gründe, Wiederholen & Vorgehen",
+      "url": "https://business-and-science.de/masterarbeit-durchgefallen/",
+      "snippet": "Masterarbeit durchgefallen – Was tun? Sie haben gerade erfahren, dass Ihre Masterarbeit nicht bestanden ist? Hier sind die …"
+    }
+  ]
+}

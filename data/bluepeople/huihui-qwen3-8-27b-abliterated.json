@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "bluepeople/Huihui-Qwen3.8-27B-abliterated",
+  "slug": "bluepeople-huihui-qwen3-8-27b-abliterated",
+  "author": "bluepeople",
+  "url": "https://huggingface.co/bluepeople/Huihui-Qwen3.8-27B-abliterated",
+  "created_at": "2026-09-13T01:36:01.000Z",
+  "updated_at": "2026-09-13T01:36:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "abliterated",
+    "uncensored",
+    "huihui",
+    "qwen3",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575815536,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NFS: Most Wanted (2005): download for PC - CCM",
+      "url": "https://ccm.net/downloads/video-games/10527-need-for-speed-most-wanted-2005/",
+      "snippet": "Jan 22, 2024 · Need for Speed: Most Wanted is an intense racing game that will have you burning rubber on the streets. Race …"
+    },
+    {
+      "title": "كيفية تحميل لعبة Need for Speed Most Wanted 2005 للكمبيوتر",
+      "url": "https://tecnobits.com/ar/%D9%83%D9%8A%D9%81%D9%8A%D8%A9-%D8%AA%D8%AD%D9%85%D9%8A%D9%84-%D9%84%D8%B9%D8%A8%D8%A9-Need-for-Speed-%E2%80%8B%E2%80%8BMost-Wanted-2005-%D9%84%D9%84%D9%83%D9%85%D8%A8%D9%8A%D9%88%D8%AA%D8%B1/",
+      "snippet": "Aug 30, 2023 · بمجرد اكتمال التنزيل، ستكون جاهزًا للانغماس في سباقات الشوارع للعبة Need for Speed Most Wanted 2005 والاستمتاع برسوماتها المذهلة وطريقة اللعب البديهية …"
+    },
+    {
+      "title": "Need for Speed™ Most Wanted - تنزيل وتشغيل على Windows | Microsoft ...",
+      "url": "https://apps.microsoft.com/detail/9n7h29g7g485?hl=ar-SA&gl=SA",
+      "snippet": "The open-world action in Need for Speed Most Wanted gives you the freedom to drive your way. Hit jumps and shortcuts, switch …"
+    },
+    {
+      "title": "Need for Speed Most Wanted 1.0 لـWindows - Uptodown",
+      "url": "https://need-for-speed-most-wanted.ar.uptodown.com/windows",
+      "snippet": "سيكون المستخدمون في لعبة Need for Speed Most Wanted قادرين على مواجهة خصومهم وجها لوجه بينما يعملون في نفس الوقت على تجنب أكثر من ست من سيارات الشرطة التي تطاردهم …"
+    },
+    {
+      "title": "تنزيل وتحميل لعبة Need For Speed Most Wanted القديمة للكمبيوتر – …",
+      "url": "http://tech.amwaly.com/blog/162511/%D8%AA%D9%86%D8%B2%D9%8A%D9%84-%D9%88%D8%AA%D8%AD%D9%85%D9%8A%D9%84-%D9%84%D8%B9%D8%A8%D8%A9-need-for-speed-most-wanted",
+      "snippet": "Dec 9, 2025 · تحميل لعبة Need For Speed Most Wanted القديمة كاملة للكمبيوتر برابط مباشر. استمتع بأقوى سباقات السيارات والمطاردات مع الشرطة، اللعبة تعمل على جميع …"
+    }
+  ]
+}

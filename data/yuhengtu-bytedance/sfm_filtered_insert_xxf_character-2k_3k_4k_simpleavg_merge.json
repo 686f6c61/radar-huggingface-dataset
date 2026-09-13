@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_insert_xxf_character-2k_3k_4k_simpleavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_insert_xxf_character-2k_3k_4k_simpleavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-2k_3k_4k_simpleavg_merge",
+  "created_at": "2026-09-12T23:42:24.000Z",
+  "updated_at": "2026-09-12T23:43:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Install Windows UpdatesGüncelleştirmeler | Microsoft Support",
+      "url": "https://support.microsoft.com/tr-tr/windows/deployment/updates-lifecycle/install-windows-updates",
+      "snippet": "Windows UpdateWindows Update İlgili konular Güncelleştirmeye çalışırken bir hata alırsanız veya güncelleştirmeleri yüklerken sorun …"
+    },
+    {
+      "title": "Google Chrome nasıl güncellenir?",
+      "url": "https://www.google.com/intl/tr/chrome/update/",
+      "snippet": "Chrome düzenli olarak yeni güncelleme olup olmadığını kontrol eder. Bir güncelleme mevcutsa tarayıcıyı kapatıp yeniden açtığınızda …"
+    },
+    {
+      "title": "[Windows 11/10] Windows sürümünü güncelleme (Özellik Güncellemesi)",
+      "url": "https://www.asus.com/tr/support/faq/1034286/",
+      "snippet": "Sep 18, 2024 · Cihazınızda güncelleme bildirimi yoksa, güncelleme Microsoft’tan henüz yayımlanmamış demektir. Bu sebeple Özellik …"
+    },
+    {
+      "title": "Windows 10 veya 11 cihazlar için otomatik güncellemeleri yönetme",
+      "url": "https://knowledge.workspace.google.com/admin/devices/manage-automatic-updates-for-windows-10-or-11-devices?hl=tr",
+      "snippet": "Yönetici olarak, kuruluşunuza ait Microsoft Windows 10 veya 11 cihazların, Windows otomatik güncelleme hizmeti üzerinden güvenlik …"
+    },
+    {
+      "title": "Windows’u güncelleştirme sorunlarını giderme | Microsoft Support",
+      "url": "https://support.microsoft.com/tr-tr/windows/deployment/updates-lifecycle/troubleshoot-problems-updating-windows",
+      "snippet": "Windows güncelleştirme sorunlarını nasıl gidereceğinizi öğrenin. Windows güncelleştirmelerini yüklerken sık sorulan soruların ve …"
+    }
+  ]
+}

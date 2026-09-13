@@ -5,7 +5,7 @@
   "author": "ekunish",
   "url": "https://huggingface.co/ekunish/parc2026-track2-kairos-rim-capacity-20260909",
   "created_at": "2026-09-09T09:51:25.000Z",
-  "updated_at": "2026-09-12T03:21:20.000Z",
+  "updated_at": "2026-09-13T03:09:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 599251642730,
-  "storage_human": "599.3 GB",
+  "storage_bytes": 1215413249531,
+  "storage_human": "1215.4 GB",
   "base_model": "ACERobotics/kairos-4B-robot-LIBERO-plus",
   "formats": [
     "safetensors"

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Travor278/pi05-scan-object-uniform-lora-10k",
+  "slug": "travor278-pi05-scan-object-uniform-lora-10k",
+  "author": "Travor278",
+  "url": "https://huggingface.co/Travor278/pi05-scan-object-uniform-lora-10k",
+  "created_at": "2026-09-12T19:51:28.000Z",
+  "updated_at": "2026-09-12T19:55:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi05",
+    "jax",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335805229,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sam il ragazzo del West - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Sam_il_ragazzo_del_West",
+      "snippet": "Sam il ragazzo del West (荒野の少年イサム, Koya no shōnen Isamu) è un manga scritto da Sohji Yamakawa e disegnato da Noboru …"
+    },
+    {
+      "title": "Sam il ragazzo del West episodio 1/52 la prova - Dailymotion",
+      "url": "https://www.dailymotion.com/video/x9iza6y",
+      "snippet": "May 4, 2025 · Guarda Sam il ragazzo del West episodio 1/52 la prova - Tommy Maverick su Dailymotion"
+    },
+    {
+      "title": "Sam il ragazzo del west - episodi - (Anime) - AnimeClick.it",
+      "url": "https://www.animeclick.it/anime/2836/sam-il-ragazzo-del-west/episodi",
+      "snippet": "21 hours ago · Isamu è nato sotto una cattiva stella da un padre giapponese e una madre indiana d'America entrambi uccisi da un …"
+    },
+    {
+      "title": "Sam il ragazzo del West di Cecchetto Dafni - Dailymotion",
+      "url": "https://www.dailymotion.com/playlist/x7g78c",
+      "snippet": "Guarda la playlist Sam il ragazzo del West di Cecchetto Dafni su Dailymotion"
+    },
+    {
+      "title": "Sam, il ragazzo del West (versione completa) - YouTube",
+      "url": "https://www.youtube.com/watch?v=du5gyF2XZT4",
+      "snippet": "Oct 17, 2023 · Sam, il ragazzo del West (versione completa) Sam, il ragazzo del West (versione completa) Sam, il ragazzo del West …"
+    }
+  ]
+}

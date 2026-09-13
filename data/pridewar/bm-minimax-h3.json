@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "pridewar/BM-Minimax-H3",
+  "slug": "pridewar-bm-minimax-h3",
+  "author": "pridewar",
+  "url": "https://huggingface.co/pridewar/BM-Minimax-H3",
+  "created_at": "2026-09-13T00:20:20.000Z",
+  "updated_at": "2026-09-13T00:20:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 310168816,
+  "storage_human": "310 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kirby Air Riders | Nintendo Switch 2-Spiele | Spiele | Nintendo DE",
+      "url": "https://www.nintendo.com/de-de/Spiele/Nintendo-Switch-2-Spiele/Kirby-Air-Riders-2785805.html",
+      "snippet": "Nov 20, 2025 · In Kirby Air Riders, einem rasanten Fahrzeug-Action-Spiel mit Kirby und Co., heißt es Aufladen, Turbo einsetzen und …"
+    },
+    {
+      "title": "Kirby Air Riders - [Nintendo Switch 2] - MediaMarkt",
+      "url": "https://www.mediamarkt.de/de/product/_sw2-kirby-air-riders-nintendo-switch-2-3009713.html?msockid=0a92f57cc9d865910112e2afc80c647e",
+      "snippet": "In Kirby Air Riders, einem rasanten Fahrzeug-Action-Spiel mit Kirby und Co., heißt es Aufladen, Turbo einsetzen und Rivalen mit …"
+    },
+    {
+      "title": "Kirby™ Air Riders for Nintendo Switch 2 - Nintendo Official Site",
+      "url": "https://www.nintendo.com/us/store/products/kirby-air-riders-switch-2/",
+      "snippet": "Take to the skies with Kirby in Kirby Air Riders for Nintendo Switch 2. Race through courses, inhale rivals, and compete in aerial action."
+    },
+    {
+      "title": "Kirby Air Riders (Switch 2) ab 47,42 € (September 2026 ... - idealo",
+      "url": "https://www.idealo.de/preisvergleich/OffersOfProduct/207315913_-kirby-air-riders-switch-2.html?msockid=0a92f57cc9d865910112e2afc80c647e",
+      "snippet": "Nov 20, 2025 · In Kirby Air Riders geht das Rennen sofort los – ohne Gaspedal, aber mit viel Tempo. Eure Maschinen beschleunigen …"
+    },
+    {
+      "title": "Kirby Air Riders - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Kirby_Air_Riders",
+      "snippet": "Kirby Air Riders received generally positive reviews, with praise for its gameplay, presentation, customization, music, and mechanical …"
+    }
+  ]
+}

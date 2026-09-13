@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "sifterchief/aria-qwen38-27b-persona",
+  "slug": "sifterchief-aria-qwen38-27b-persona",
+  "author": "sifterchief",
+  "url": "https://huggingface.co/sifterchief/aria-qwen38-27b-persona",
+  "created_at": "2026-09-08T05:04:32.000Z",
+  "updated_at": "2026-09-12T20:45:52.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "unsloth",
+    "sft",
+    "peft",
+    "lora",
+    "persona",
+    "conversational",
+    "aria",
+    "text-generation",
+    "base_model:unsloth/Qwen3.8-27B",
+    "base_model:adapter:unsloth/Qwen3.8-27B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17248807173,
+  "storage_human": "17.2 GB",
+  "base_model": "unsloth/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fietsroutes in de buurt van Met-Zonder-Aansturing-Bovenbuurman ...",
+      "url": "https://www.fietsnetwerk.nl/fietsroutes/zoeken/met-zonder-aansturing-bovenbuurman-overburen-inception-relaties-bestoken-bedreigen-verstoren-werken-sporten-routes-relaties-omgeving-boswandeling-strand-aan-huis-laatste-route/",
+      "snippet": "We hebben 1905 fietsroutes in de buurt van Met-Zonder-Aansturing-Bovenbuurman-Overburen-Inception-Relaties-Bestoken …"
+    },
+    {
+      "title": "Na bedreiging of intimidatie: hulp en wat te doen | Slachtofferwijzer",
+      "url": "https://slachtofferwijzer.nl/geweld/bedreiging",
+      "snippet": "Ontvang gratis een compleet overzicht met alle hulporganisaties die je kunnen helpen na bedreiging of intimidatie. Binnen enkele …"
+    },
+    {
+      "title": "Aangifte doen van bedreiging - Slachtofferhulp Nederland",
+      "url": "https://www.slachtofferhulp.nl/gebeurtenissen/bedreiging/aangifte-doen/",
+      "snippet": "Aangifte doen van bedreiging Aangifte van bedreiging of intimidatie doe je als iemand je bedreigt met de dood, met ernstig letsel, …"
+    },
+    {
+      "title": "Handreiking aanpak stalking - Huiselijk Geweld",
+      "url": "https://www.huiselijkgeweld.nl/documenten/2024/04/04/handreiking-aanpak-stalking",
+      "snippet": "Apr 4, 2024 · Deze handreiking richt zich op wat in de basis regionaal zou moeten worden opgenomen in het werkproces bij de …"
+    },
+    {
+      "title": "Inzet Aware bij stalking - Huiselijk Geweld",
+      "url": "https://www.huiselijkgeweld.nl/documenten/2021/06/14/inzet-aware-bij-stalking",
+      "snippet": "Jun 14, 2021 · Als het slachtoffer bedreigd of lastiggevallen wordt, kan deze met één druk op de knop een melding doen. Vervolgens …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "pashuparthis/dex3-brainco-retargeted-policy",
+  "slug": "pashuparthis-dex3-brainco-retargeted-policy",
+  "author": "pashuparthis",
+  "url": "https://huggingface.co/pashuparthis/dex3-brainco-retargeted-policy",
+  "created_at": "2026-09-12T19:58:50.000Z",
+  "updated_at": "2026-09-12T20:29:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "Gr00tN1d7",
+    "robotics",
+    "vision-language-action",
+    "gr00t",
+    "isaac-lab",
+    "cross-embodiment",
+    "unitree-g1",
+    "dataset:pashuparthis/mimic_apple_pick_and_place",
+    "base_model:nvidia/GN1x-Tuned-Arena-G1-Static-PickNPlace",
+    "base_model:finetune:nvidia/GN1x-Tuned-Arena-G1-Static-PickNPlace",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 6910499416,
+  "storage_human": "6.9 GB",
+  "base_model": "nvidia/GN1x-Tuned-Arena-G1-Static-PickNPlace",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Resumen del Cantar de mio Cid: Argumento por Cantares y el Tema del ...",
+      "url": "https://www.wikiteka.com/apuntes/resumen-cantar-cid-argumento-cantares-tema-honor/",
+      "snippet": "En esta parte, el Cid conquista Valencia y, como recompensa a su lealtad y hazañas, consigue el perdón real. El monarca permite …"
+    },
+    {
+      "title": "Resumen y Cuestionario del Cantar de las Bodas: El Cid en Valencia",
+      "url": "https://www.xuletas.es/ficha/resumen-cuestionario-cantar-bodas-cid-valencia/",
+      "snippet": "El Cid se dirige a Valencia con la firme convicción de que Dios lo ayudará en la batalla. Los moros valencianos cercan al Cid, pero, …"
+    },
+    {
+      "title": "Resumen El Cantar del Mio Cid – El cantar de las bodas de las hijas ...",
+      "url": "https://cafeyletras.es/resumen-el-cantar-del-mio-cid-el-cantar-de-las-bodas-de-las-hijas-del-cid/",
+      "snippet": "Dec 20, 2022 · El «Cantar del Destierro» es el primer tercio del poema épico «Cantar de Mio Cid», que narra las peripecias y …"
+    },
+    {
+      "title": "Analisis de la obra cantar del mio cid | DOCX - SlideShare",
+      "url": "https://es.slideshare.net/slideshow/analisis-de-la-obra-cantar-del-mio-cid/31804097",
+      "snippet": "El documento resume los tres cantares de la obra épica Cantar del Mío Cid. El primer cantar trata sobre el destierro del Cid de …"
+    },
+    {
+      "title": "Cantar de Mio Cid: Guía de Estudio (Bodas y Afrenta)",
+      "url": "https://studylib.es/doc/85713/cantar-de-las-bodas",
+      "snippet": "Resume brevemente la trama de este cantar El Cid se dirige a Valencia, y logra conquistar la ciudad. Env&iacute;a a su amigo …"
+    }
+  ]
+}

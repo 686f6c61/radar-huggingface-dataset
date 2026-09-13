@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "lugman-madhiai/LFM2.5-230M-SearchAgent-SFT-02",
+  "slug": "lugman-madhiai-lfm2-5-230m-searchagent-sft-02",
+  "author": "lugman-madhiai",
+  "url": "https://huggingface.co/lugman-madhiai/LFM2.5-230M-SearchAgent-SFT-02",
+  "created_at": "2026-09-12T21:15:30.000Z",
+  "updated_at": "2026-09-12T21:40:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:LiquidAI/LFM2.5-230M",
+    "base_model:finetune:LiquidAI/LFM2.5-230M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 229693184,
+  "parameters_human": "229.7M",
+  "storage_bytes": 459401112,
+  "storage_human": "459 MB",
+  "base_model": "LiquidAI/LFM2.5-230M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Inloggen ASN Online Bankieren",
+      "url": "https://www.asnbank.nl/online/web/onlinebankieren/inloggen",
+      "snippet": "ASN Online Bankieren is uw persoonlijke online bankieren omgeving. Inloggen? Dat doet u met een digipas, wachtwoord of QR …"
+    },
+    {
+      "title": "Inloggen in ASN Online Bankieren - ASN Bank",
+      "url": "https://www.asnbank.nl/asn-app-en-asn-online-bankieren/inloggen-in-asn-online-bankieren.html",
+      "snippet": "Je kan op verschillende manieren inloggen in ASN Online Bankieren. Als je hulp nodig hebt, vind je hier een uitleg en antwoord op …"
+    },
+    {
+      "title": "ASN Online Bankieren - ASN Bank",
+      "url": "https://www.asnbank.nl/asn-app-en-asn-online-bankieren/asn-online-bankieren.html",
+      "snippet": "Met ASN Online Bankieren heb je via onze website toegang tot je rekeningen op je laptop, tablet of mobiel. Zo boek je eenvoudig …"
+    },
+    {
+      "title": "Inloggen met je toegangsnaam en wachtwoord - ASN Bank",
+      "url": "https://www.asnbank.nl/service/toegangsnaam-en-wachtwoord.html",
+      "snippet": "Makkelijk inloggen op ASN Online Bankieren doe je met je toegangsnaam en wachtwoord. Lees hieronder hoe je deze gebruikt, en …"
+    },
+    {
+      "title": "Inloggen – Mijn SNS - SNS Bank",
+      "url": "https://www.snsbank.nl/online/web/mijnsns/inloggen/",
+      "snippet": "Mijn SNS is je persoonlijke online bankomgeving waarin je zelf je bankzaken kunt regelen. Log nu in."
+    }
+  ]
+}

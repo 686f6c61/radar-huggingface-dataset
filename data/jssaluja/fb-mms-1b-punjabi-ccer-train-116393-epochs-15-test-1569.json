@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jssaluja/fb-mms-1b-punjabi-ccer-train-116393-epochs-15-test-1569",
+  "slug": "jssaluja-fb-mms-1b-punjabi-ccer-train-116393-epochs-15-test-1569",
+  "author": "jssaluja",
+  "url": "https://huggingface.co/jssaluja/fb-mms-1b-punjabi-ccer-train-116393-epochs-15-test-1569",
+  "created_at": "2026-09-12T23:02:11.000Z",
+  "updated_at": "2026-09-13T01:54:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 964734403,
+  "parameters_human": "964.7M",
+  "storage_bytes": 7754482609,
+  "storage_human": "7.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FinanzaOnline - L'informazione economica e finanziaria indipendente.",
+      "url": "https://www.finanzaonline.com/",
+      "snippet": "Sep 3, 2026 · L'informazione economica e finanziaria: approfondimenti e notizie su borsa, finanza, economia, investimenti e mercati. …"
+    },
+    {
+      "title": "How old is Fan in A Christmas Carol? - Answers",
+      "url": "https://www.answers.com/fiction/How_old_is_Fan_in_A_Christmas_Carol",
+      "snippet": "Dec 13, 2024 · In Charles Dickens' \"A Christmas Carol,\" Fan is Ebenezer Scrooge's younger sister. She is described as being …"
+    },
+    {
+      "title": "What is the name of Ebenezer Scrooge partner? - Answers",
+      "url": "https://www.answers.com/fiction/What_is_the_name_of_Ebenezer_Scrooge_partner",
+      "snippet": "Mar 22, 2024 · That is correct. Scrooge under-paid Cratchit, treated him badly, knew nothing about his home life, threatened to fire …"
+    },
+    {
+      "title": "Manovra ottiene ok Ue, ma ora a far paura è il Mes. BTP, banche ...",
+      "url": "https://www.finanzaonline.com/notizie/manovra-ottiene-ok-ue-ma-ora-a-far-paura-e-il-mes-btp-banche-italiane-pronte-a-spezzare-doom-loop",
+      "snippet": "Nov 20, 2019 · Così l'Huffington Post riprende alert Giampaolo Galli su riforma Mes: : \"Una ristrutturazione preventiva sarebbe un …"
+    },
+    {
+      "title": "Why Ebenezer Scrooge is a great character? - Answers",
+      "url": "https://www.answers.com/fiction/Why_Ebenezer_Scrooge_is_a_great_character",
+      "snippet": "Mar 22, 2024 · Ebeneezer Scrooge is a great character because he learns and (later) demonstrates the true meaning of Christmas. …"
+    }
+  ]
+}

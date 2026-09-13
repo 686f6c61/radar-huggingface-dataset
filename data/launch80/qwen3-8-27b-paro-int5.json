@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Launch80/Qwen3.8-27B-PARO-int5",
+  "slug": "launch80-qwen3-8-27b-paro-int5",
+  "author": "Launch80",
+  "url": "https://huggingface.co/Launch80/Qwen3.8-27B-PARO-int5",
+  "created_at": "2026-09-12T20:20:21.000Z",
+  "updated_at": "2026-09-12T20:23:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "paroquant",
+    "int5",
+    "w5a8",
+    "rocm",
+    "rdna4",
+    "vllm",
+    "quantized",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "5-bit",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7088303344,
+  "parameters_human": "7.09B",
+  "storage_bytes": 21851496632,
+  "storage_human": "21.9 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The 10 Best Plumbers in Kuantan (September 2026) | Recommend.my",
+      "url": "https://www.recommend.my/professionals/plumbing/pahang/kuantan",
+      "snippet": "Find reliable plumbers in Kuantan for installation, leaks, clog, burst pipes, flooding and more. Submit a request online for quick …"
+    },
+    {
+      "title": "Kuantan Plumber/ Tukang Paip 0145186518 - Facebook",
+      "url": "https://www.facebook.com/GeligaPlumbing84/",
+      "snippet": "Jika line paip lama mengalami kebocoran tersembunyi dan lokasi kebocoran sukar dikesan, kami menawarkan penyelesaian yang …"
+    },
+    {
+      "title": "Top plumber for plumber services near me in kuantan,Kuantan",
+      "url": "https://my.asklaila.com/search/Kuantan/kuantan/plumber-for-plumber-services/",
+      "snippet": "Plumber : plumber for plumber services in kuantan Kuantan - L & L Plumbing Construction Kuantan, C & L Plumbing Work Kuantan, …"
+    },
+    {
+      "title": "Man tukang paip area kuantan/kuantan plumber 01129442872",
+      "url": "https://www.facebook.com/p/Man-tukang-paip-area-kuantankuantan-plumber-01129442872-100063472483695/",
+      "snippet": "Daripada paip bocor sehinggalah pump air rosak, serahkan kepada Man Plumber Kuantan. 💧 Servis yang boleh dipercayai, hasil kerja …"
+    },
+    {
+      "title": "Plumbers in Kuantan - Find Local Businesses",
+      "url": "https://www.findglocal.com/MY/Kuantan/1493377-34/genre/178867352155084/Plumbers",
+      "snippet": "Kuantan, 25300 Nik Auto Key is a company that provide services on duplicate keys for residential and premises, repair keys, sells …"
+    }
+  ]
+}

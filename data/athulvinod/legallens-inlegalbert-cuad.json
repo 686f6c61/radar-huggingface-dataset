@@ -5,7 +5,7 @@
   "author": "athulvinod",
   "url": "https://huggingface.co/athulvinod/legallens-inlegalbert-cuad",
   "created_at": "2026-09-12T16:32:37.000Z",
-  "updated_at": "2026-09-12T16:32:56.000Z",
+  "updated_at": "2026-09-12T17:55:15.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 109493775,
   "parameters_human": "109.5M",
-  "storage_bytes": 437998636,
-  "storage_human": "438 MB",
+  "storage_bytes": 875997272,
+  "storage_human": "876 MB",
   "base_model": null,
   "formats": [
     "safetensors"

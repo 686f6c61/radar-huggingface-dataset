@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "conikud/conikud-onnx",
+  "slug": "conikud-conikud-onnx",
+  "author": "conikud",
+  "url": "https://huggingface.co/conikud/conikud-onnx",
+  "created_at": "2026-09-12T18:41:08.000Z",
+  "updated_at": "2026-09-12T18:46:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnx",
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "onnx",
+    "grapheme-to-phoneme",
+    "g2p",
+    "hebrew",
+    "ipa",
+    "phonemization",
+    "text-to-speech",
+    "he",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 669272138,
+  "storage_human": "669 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "News & E-Mail bei t-online | Politik, Sport, Unterhaltung & Ratgeber",
+      "url": "https://www.t-online.de/",
+      "snippet": "Aktuelle News aus Politik, Sport, Unterhaltung, Wirtschaft & Finanzen | Ratgeber Leben, Gesundheit und Heim & Garten | E-Mail und …"
+    },
+    {
+      "title": "Politik aktuell: Nachrichten aus Deutschland, Europa und der Welt",
+      "url": "https://www.t-online.de/nachrichten/",
+      "snippet": "Aktuelle News, Informationen und Videos zu Politik, Panorama und Wetter aus Deutschland, Europa und der Welt von t-online.de …"
+    },
+    {
+      "title": "Telefonbuch bei t-online.de in Sekunden gefunden",
+      "url": "https://telefonbuch.t-online.de/",
+      "snippet": "Über t-online So arbeitet die Redaktion Autoren bei t-online Nachricht oder Meinung"
+    },
+    {
+      "title": "T-Online - E-Mail Mobil",
+      "url": "https://m-email.t-online.de/",
+      "snippet": "Über ein anderes E-Mail-Programm (z.B. Outlook, Apple Mail, Thunderbird, ...) Wenn Sie Telekom Mail mit einem E-Mail-Programm …"
+    },
+    {
+      "title": "Debatte rund um Politik bei t-online",
+      "url": "https://debatte.t-online.de/debatte/politik/",
+      "snippet": "Geben Sie ihre Stimme ab & teilen Sie ihre Meinung in Debatten rund politische Themen! Werden Sie Teil einer engagierten …"
+    }
+  ]
+}
