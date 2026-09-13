@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "takeru01/t4zs_DA3_depthonly_c87",
+  "slug": "takeru01-t4zs_da3_depthonly_c87",
+  "author": "takeru01",
+  "url": "https://huggingface.co/takeru01/t4zs_DA3_depthonly_c87",
+  "created_at": "2026-09-13T02:44:06.000Z",
+  "updated_at": "2026-09-13T02:44:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 40490192,
+  "parameters_human": "40.5M",
+  "storage_bytes": 161990412,
+  "storage_human": "162 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kamp Kovačine – Kamperski raj na otoku Cres",
+      "url": "https://camp-kovacine.com/it/",
+      "snippet": "Protetti dalle fronde dei pini e degli olivi e abbracciati dal mare, al campeggio Kovačine potrete vivere tutta la libertà e lo stile di vita …"
+    },
+    {
+      "title": "Kamp Kovačine – Kamperski raj na otoku Cres",
+      "url": "https://camp-kovacine.com/en/",
+      "snippet": "Aug 21, 2026 · Shaded by pine trees and olive trees and surrounded by the sea, Kovačine Camp lets you experience the total …"
+    },
+    {
+      "title": "Camping Kovacine Quarnero Croazia",
+      "url": "https://www.camping.it/it/croazia/kovacine/",
+      "snippet": "Il campeggio Kovacine si trova sulla bellissima penisola circondata dal mare azzurro e pulito, a pochi passi dalla cittadina litorale di …"
+    },
+    {
+      "title": "Campeggio Kovačine - Cres (Cherso), Quarnaro - CAMPING.HR",
+      "url": "https://www.camping.hr/it/campeggi/kovacine",
+      "snippet": "Su di essa, vicino alla città di Cres (Cherso), sorge il campeggio Kovačine, la cui atmosfera rilassante e stimolante attiva tutti i sensi. …"
+    },
+    {
+      "title": "Campeggio Kovačine - Cres, Isola Cres, Croazia | AdriaCamps",
+      "url": "https://adriacamps.com/it/campeggio/camping-kovacine/",
+      "snippet": "Il campeggio Kovačine si trova nella città di Cherso, sull'isola dello stesso nome. Il centro della città è a soli 10 minuti a piedi, ed è …"
+    }
+  ]
+}

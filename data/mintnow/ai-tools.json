@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mintnow/AI-Tools",
+  "slug": "mintnow-ai-tools",
+  "author": "mintnow",
+  "url": "https://huggingface.co/mintnow/AI-Tools",
+  "created_at": "2026-09-13T10:10:19.000Z",
+  "updated_at": "2026-09-13T10:17:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "F‑Secure Total — kaikenkattava verkkosuojaus | F‑Secure",
+      "url": "https://www.f-secure.com/fi/total",
+      "snippet": "F‑Secure Total auttaa sinua pysymään ajan tasalla henkilö­kohtaisista tiedoistasi verkossa. Total ilmoittaa sinulle, jos tietojasi, kuten …"
+    },
+    {
+      "title": "F‑Secure Total — 完全なオンラインセキュリティ | F‑Secure",
+      "url": "https://www.f-secure.com/jp-ja/total",
+      "snippet": "しかし、F‑Secure Totalの無制限VPNを使用すると、あなたのデジタルフットプリントを見ることができる人を選ぶことができます …"
+    },
+    {
+      "title": "F-Secure Total",
+      "url": "https://assets.f-secure.com/p/for-media/f-secure_new_total_guide_2023.pdf",
+      "snippet": "F-Secure Total is built on winning antivirus protection SAFE. It protects your devices trojans, ransomware, and that may collect, steal, …"
+    },
+    {
+      "title": "Quarantine files deletion — F-Secure Community",
+      "url": "https://community.f-secure.com/en/discussion/127147/quarantine-files-deletion",
+      "snippet": "Sep 22, 2023 · Hello everyone. I have two questions. 1) Does f-secure automatically delete quarantined files after a certain period or …"
+    },
+    {
+      "title": "YOAMK student | F-Secure",
+      "url": "https://offer.f-secure.com/fi/yoamk",
+      "snippet": "Dec 31, 2020 · Kotikäyttöetu yliopistojen ja korkeakolujen opiskelijoille Opiskelijana sinulla on mahdollisuus saada …"
+    }
+  ]
+}

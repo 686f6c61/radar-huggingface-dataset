@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "HariNurd/donut-base-sroie",
+  "slug": "harinurd-donut-base-sroie",
+  "author": "HariNurd",
+  "url": "https://huggingface.co/HariNurd/donut-base-sroie",
+  "created_at": "2026-09-12T16:48:19.000Z",
+  "updated_at": "2026-09-13T02:51:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "vision-encoder-decoder",
+    "image-text-to-text",
+    "generated_from_trainer",
+    "dataset:imagefolder",
+    "base_model:naver-clova-ix/donut-base",
+    "base_model:finetune:naver-clova-ix/donut-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 202060216,
+  "parameters_human": "202.1M",
+  "storage_bytes": 2427342144,
+  "storage_human": "2.4 GB",
+  "base_model": "naver-clova-ix/donut-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ondo Finance — Institutional-grade finance, delivered onchain",
+      "url": "https://ondo.finance/",
+      "snippet": "May 6, 2026 · In a landmark first for the industry, Ondo is live with 24/7 instant minting and redemption on tokenized U.S. stocks and …"
+    },
+    {
+      "title": "Ondo Finance: Compare Tokenized Assets, Ondo Crypto & Stocks",
+      "url": "https://eng-ondofinance.com/",
+      "snippet": "Whether you are looking at Ondo Finance Ondo Stocks (which refer to the token’s exchange listings rather than equity shares in the …"
+    },
+    {
+      "title": "Ondo | Tokenized Stocks",
+      "url": "https://app.ondo.finance/",
+      "snippet": "The platform for qualified users to buy and sell tokenized stocks, ETFs, and Treasuries onchain."
+    },
+    {
+      "title": "Ondo Stocks | Ondo Finance",
+      "url": "https://ondo.finance/ondo-stocks",
+      "snippet": "Ondo Stocks is a tokenization platform that supports onchain exposure to publicly traded securities. Eligible investors outside the …"
+    },
+    {
+      "title": "Ondo price: ONDO to USD, chart & market stats - crypto.news",
+      "url": "https://crypto.news/price/ondo/",
+      "snippet": "Get the latest Ondo price in USD, currently at 0.34761, live chart, 24h stats, market cap, trading volume, and real-time updates."
+    }
+  ]
+}

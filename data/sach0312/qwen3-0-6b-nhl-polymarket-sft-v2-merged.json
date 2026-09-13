@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sach0312/qwen3-0.6b-nhl-polymarket-sft-v2-merged",
+  "slug": "sach0312-qwen3-0-6b-nhl-polymarket-sft-v2-merged",
+  "author": "sach0312",
+  "url": "https://huggingface.co/sach0312/qwen3-0.6b-nhl-polymarket-sft-v2-merged",
+  "created_at": "2026-09-13T02:32:23.000Z",
+  "updated_at": "2026-09-13T02:32:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 121,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203557746,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Text Generation Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-generation&sort=modified",
+      "snippet": "peonist-ai/halogen-qwen3.8-flash-next. Text Generation • Updated in about 3 ... sach0312/qwen3-0.6b-nhl-polymarket-sft-v2-merged. Text Generation • 0.6B ..."
+    },
+    {
+      "title": "Recette Gâteau au yaourt fait maison - 750g.com",
+      "url": "https://www.750g.com/gateau-au-yaourt-r45540.htm",
+      "snippet": "Découvrez la recette de Gâteau au yaourt fait maison à faire en 10 minutes. Préchauffer votre four à 180°C (thermostat 6). Beurrer un …"
+    },
+    {
+      "title": "Recette Gâteau au yaourt fait maison - Cuisine AZ",
+      "url": "https://www.cuisineaz.com/recettes/gateau-au-yaourt-fait-maison-72565.aspx",
+      "snippet": "Aug 2, 2021 · Dans un saladier, versez le sucre, la farine, la levure, l'huile, le yaourt. Mélangez le tout. Rajoutez les jaunes puis, les …"
+    },
+    {
+      "title": "Gâteau au yaourt ultra moelleux : la recette facile de l’enfance",
+      "url": "https://maison-hubert.fr/gateau-yaourt-moelleux/",
+      "snippet": "Jul 25, 2026 · Découvrez la recette facile du gâteau au yaourt ultra moelleux, un classique de l'enfance à réaliser en un rien de temps …"
+    },
+    {
+      "title": "Gâteau au yaourt : la meilleure recette - Marmiton",
+      "url": "https://www.marmiton.org/recettes/recette_gateau-au-yaourt_12719.aspx",
+      "snippet": "Cuisinez un gâteau tout aussi moelleux en utilisant du yaourt de soja ! Un grand classique qui traverse les générations ! Le gâteau au …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zarianw/arm-test-data-redcube-act",
+  "slug": "zarianw-arm-test-data-redcube-act",
+  "author": "zarianw",
+  "url": "https://huggingface.co/zarianw/arm-test-data-redcube-act",
+  "created_at": "2026-09-13T02:56:51.000Z",
+  "updated_at": "2026-09-13T02:58:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:zarianw/arm-test-data-redcube_20260912_163047",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206716832,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Kids - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/6173147?hl=en",
+      "snippet": "YouTube Kids The official YouTube Kids app is designed for curious little minds. This app is delightfully simple and packed full of age …"
+    },
+    {
+      "title": "Parental controls for YouTube Kids profiles",
+      "url": "https://support.google.com/youtubekids/answer/6172308?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Parental controls for YouTube Kids profiles YouTube Kids offer a safer and simpler experience for kids. There are various controls …"
+    },
+    {
+      "title": "How can you find out the correct URL of Yahoo Mail? - Answers",
+      "url": "https://www.answers.com/telecommunications/How_can_you_find_out_the_correct_URL_of_Yahoo_Mail",
+      "snippet": "Feb 3, 2025 · Oh, dude, finding the URL for Yahoo Mail is like finding your way out of a paper bag. Just type \"mail.yahoo.com\" into …"
+    },
+    {
+      "title": "Watch YouTube Kids on your TV",
+      "url": "https://support.google.com/youtubekids/answer/9618031?hl=en",
+      "snippet": "Watch YouTube Kids on your TV You can enter YouTube Kids by going to your kid’s profile in the YouTube app on your smart TV, …"
+    },
+    {
+      "title": "お子様の Google アカウントを YouTube Kids の設定で管理する",
+      "url": "https://support.google.com/youtubekids/answer/7348846?hl=ja",
+      "snippet": "プライバシー お子様がご自身の Google アカウントを使って YouTube Kids をご利用になる場合の Google のプライバシー ポリシー …"
+    }
+  ]
+}

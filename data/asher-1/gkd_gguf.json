@@ -5,7 +5,7 @@
   "author": "Asher-1",
   "url": "https://huggingface.co/Asher-1/GKD_GGUF",
   "created_at": "2026-08-30T07:44:53.000Z",
-  "updated_at": "2026-08-30T13:56:12.000Z",
+  "updated_at": "2026-09-12T15:08:52.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -16,12 +16,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 182,
+  "downloads_30d": 186,
   "trending_score": 0,
-  "parameters": 887226896,
-  "parameters_human": "887.2M",
-  "storage_bytes": 7292159328,
-  "storage_human": "7.3 GB",
+  "parameters": 151277312,
+  "parameters_human": "151.3M",
+  "storage_bytes": 7598148768,
+  "storage_human": "7.6 GB",
   "base_model": null,
   "formats": [
     "gguf"

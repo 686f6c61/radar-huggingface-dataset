@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ecfsd/camembert-france-inter-ner",
+  "slug": "ecfsd-camembert-france-inter-ner",
+  "author": "ecfsd",
+  "url": "https://huggingface.co/ecfsd/camembert-france-inter-ner",
+  "created_at": "2026-09-13T10:10:21.000Z",
+  "updated_at": "2026-09-13T10:20:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "camembert",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110032898,
+  "parameters_human": "110.0M",
+  "storage_bytes": 880311008,
+  "storage_human": "880 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ベル・エポック - Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E3%83%99%E3%83%AB%E3%83%BB%E3%82%A8%E3%83%9D%E3%83%83%E3%82%AF",
+      "snippet": "ベル・エポック （仏: Belle Époque：「美しい時代」）は、厳密な定義ではないが、主に 19世紀 末から 第一次世界大戦 勃発 …"
+    },
+    {
+      "title": "ベルエポックとは？ 意味や使い方 - コトバンク",
+      "url": "https://kotobank.jp/word/%E3%81%B9%E3%82%8B%E3%81%88%E3%81%BD%E3%81%A4%E3%81%8F-3218466",
+      "snippet": "ベル‐エポック 〘 名詞 〙 ( [フランス語] Belle Époque 「良き時代」の意 ) 二〇世紀初めから 第一次大戦 までの平和で豊かな時代。 …"
+    },
+    {
+      "title": "ベル・エポックとは？ポスターと写真で見る美しき時代 - 19世紀末の …",
+      "url": "https://rivoli-antiques.com/belle-epoque-art-v2/",
+      "snippet": "Jul 16, 2025 · ベル・エポックの全盛を謳歌する象徴的瞬間。 ベル・エポック（Belle Époque）とは、19世紀末から第一次世界大戦 …"
+    },
+    {
+      "title": "ベル・エポックとは|悲劇の後に花開いた「美しき時代」を徹底解説",
+      "url": "https://humanities.jp/belle-epoque-explained/",
+      "snippet": "Jul 19, 2026 · 定義 ベル・エポック (「美しき時代」の意)とは、1871年の普仏戦争終結から、1914年の第一次世界大戦勃発までの期 …"
+    },
+    {
+      "title": "ベル・エポックとは？意味・概要・関連情報 | jmedia.wiki",
+      "url": "https://jmedia.wiki/wiki/Belle_%C3%89poque",
+      "snippet": "ベル ・エポック （フランス語発音: [bɛlepɔk]）または ラ・ベル・エポック （フランス語 で「美しき時代」）は、 1871年の 普仏戦 …"
+    }
+  ]
+}

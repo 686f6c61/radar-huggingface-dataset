@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "SarthakKumar571999/qwen2-5-coder-14b-text2cypher",
+  "slug": "sarthakkumar571999-qwen2-5-coder-14b-text2cypher",
+  "author": "SarthakKumar571999",
+  "url": "https://huggingface.co/SarthakKumar571999/qwen2-5-coder-14b-text2cypher",
+  "created_at": "2026-09-13T02:32:37.000Z",
+  "updated_at": "2026-09-13T02:45:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-to-cypher",
+    "text2cypher",
+    "cypher",
+    "neo4j",
+    "graph-database",
+    "qwen2.5-coder-14b",
+    "14b",
+    "knowledge-graph",
+    "text-generation",
+    "conversational",
+    "dataset:neo4j/text2cypher-2024v1",
+    "base_model:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149138604,
+  "storage_human": "149 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-14B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Probleem met aanmelden Crelan mobile bankapplicatie.",
+      "url": "https://www.netweters.be/t5/WiFi/Probleem-met-aanmelden-Crelan-mobile-bankapplicatie/td-p/93089",
+      "snippet": "Apr 28, 2020 · Hallo, wanneer ik hier thuis, met mijn gsm via wifi verbonden de Crelan mobile bankapplicatie wil gebruiken gaat dit …"
+    },
+    {
+      "title": "Opgelost: Opgelet: phishing e-mail over Telenet - De Netweters",
+      "url": "https://www.netweters.be/t5/E-mail/Opgelet-phishing-e-mail-over-Telenet/td-p/140887",
+      "snippet": "Jan 11, 2022 · Info! Gesloten onderwerp Onderwerpen die langer dan 6 maanden geen reactie krijgen, worden afgesloten. Heb je …"
+    },
+    {
+      "title": "Vreemde mail gekregen van Telenet, phishing? - De Netweters",
+      "url": "https://www.netweters.be/t5/E-mail/Vreemde-mail-gekregen-van-Telenet-phishing/td-p/187076",
+      "snippet": "Apr 1, 2024 · Ik heb dezelfde mail gekregen, deze mag je integraal naar de vuilbak verbannen aangezien dit niet van Telenet zelf …"
+    },
+    {
+      "title": "Low latency gaming onmogelijk - De Netweters",
+      "url": "https://www.netweters.be/t5/WiFi/Low-latency-gaming-onmogelijk/td-p/221966",
+      "snippet": "Sep 2, 2026 · Hallo allemaal, Ik loop al een tijdje tegen frustrerende ping spikes aan tijdens het online gamen op Rocket League (hit …"
+    },
+    {
+      "title": "Re: TV box valt regelmatig uit. - De Netweters",
+      "url": "https://www.netweters.be/t5/De-nieuwe-Telenet-TV-box-TV-app/TV-box-valt-regelmatig-uit/m-p/221908",
+      "snippet": "Sep 1, 2026 · Kan je als test even de TV-box rechtstreeks via HDMI aansluiten op je TV. Werkt het dan wel stabiel?"
+    }
+  ]
+}

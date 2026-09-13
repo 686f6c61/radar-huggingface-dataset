@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ImKyungjin/pi0-office-mixed-noise-50pct-40ep-convex",
+  "slug": "imkyungjin-pi0-office-mixed-noise-50pct-40ep-convex",
+  "author": "ImKyungjin",
+  "url": "https://huggingface.co/ImKyungjin/pi0-office-mixed-noise-50pct-40ep-convex",
+  "created_at": "2026-09-13T10:32:02.000Z",
+  "updated_at": "2026-09-13T10:35:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi0",
+    "robotics",
+    "dataset:taewonkoo/office_task_mixed_suboptimal_seed1000_50pct_40ep",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 7011556176,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ImmoScout24: Immobilien in der Schweiz mieten & kaufen",
+      "url": "https://www.immoscout24.ch/de?msockid=2311f0592a836c642e78e78a2b0b6d80",
+      "snippet": "Immobilien, Wohnungen und Häuser in der Schweiz kaufen und mieten – Finden Sie attraktive Objekte in Ihrer Nähe. Jetzt online auf …"
+    },
+    {
+      "title": "ImmoScout24: Immobilier en Suisse à vendre et à louer",
+      "url": "https://www.immoscout24.ch/fr?msockid=2311f0592a836c642e78e78a2b0b6d80",
+      "snippet": "Immobilier, appartements, maisons en Suisse en vente et location – Trouvez rapidement des objets attractifs dans votre région sur …"
+    },
+    {
+      "title": "Wohnung zu vermieten in der Schweiz - ImmoScout24",
+      "url": "https://www.immoscout24.ch/de/wohnung/mieten?msockid=2311f0592a836c642e78e78a2b0b6d80",
+      "snippet": "Wohnung mieten: Sind Sie auf der Suche nach einer Wohnung zum Mieten? Bei ImmoScout24 gibt es eine grosse Auswahl von …"
+    },
+    {
+      "title": "Haus zu verkaufen in der Schweiz - ImmoScout24",
+      "url": "https://www.immoscout24.ch/de/haus/kaufen?msockid=2311f0592a836c642e78e78a2b0b6d80",
+      "snippet": "Haus kaufen: Bist du auf der Suche nach einem Haus zum Kaufen? Bei ImmoScout24 gibt es eine grosse Auswahl von Häuser zu …"
+    },
+    {
+      "title": "ImmoScout24: Immobili in Svizzera da acquistare e da affittare",
+      "url": "https://www.immoscout24.ch/it?msockid=2311f0592a836c642e78e78a2b0b6d80",
+      "snippet": "Immobili, appartamenti, case in Svizzera in vendita e in affitto – Trova articoli interessanti nella tua zona ora su immoscout24.ch."
+    }
+  ]
+}

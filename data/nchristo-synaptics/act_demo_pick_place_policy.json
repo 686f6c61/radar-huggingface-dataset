@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "nchristo-synaptics/ACT_demo_pick_place_policy",
+  "slug": "nchristo-synaptics-act_demo_pick_place_policy",
+  "author": "nchristo-synaptics",
+  "url": "https://huggingface.co/nchristo-synaptics/ACT_demo_pick_place_policy",
+  "created_at": "2026-09-13T02:44:37.000Z",
+  "updated_at": "2026-09-13T02:49:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714816,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "« Un destin commun les a rapprochés » : comment le « gang des Cerises ...",
+      "url": "https://www.leparisien.fr/societe/sante/la-chute-de-didier-raoult-face-au-gang-des-cerises-trottinettes-les-coulisses-dune-incroyable-histoire-10-09-2026-V55T3C7HUNBGZAYWDLIOESXTPQ.php",
+      "snippet": "2 days ago · « Un destin commun les a rapprochés » : comment le « gang des Cerises trottinettes » a fait chuter Didier Raoult La …"
+    },
+    {
+      "title": "Six citoyens face à Didier Raoult… et sa propre fille parmi eux - Ariase",
+      "url": "https://www.ariase.com/streaming/actualite/six-citoyens-face-a-didier-raoult-et-sa-propre-fille-parmi-eux-hbo-max-raconte-l-histoire-du-gang-des-cerises",
+      "snippet": "2 hours ago · Six citoyens face à Didier Raoult, et parmi eux sa propre fille. Avec Professeur Raoult vs le Gang des Cerises, HBO …"
+    },
+    {
+      "title": "«Professeur Raoult vs Le Gang des cerises» : qui sont ces ... - CNEWS",
+      "url": "https://www.cnews.fr/divertissement/2026-08-31/professeur-raoult-vs-le-gang-des-cerises-qui-sont-ces-citoyens-lorigine",
+      "snippet": "Aug 31, 2026 · Vendus comme un bras de fer scientifique transformé en thriller, les quatre épisodes de «Professeur Raoult vs Le …"
+    },
+    {
+      "title": "Professeur Raoult vs le gang des Cerises - AlloCiné",
+      "url": "https://www.allocine.fr/series/ficheserie_gen_cserie=1000003646.html",
+      "snippet": "Retrouvez toutes les actualités et les vidéos de la série TV Professeur Raoult vs le gang des Cerises. Synopsis : 2020."
+    },
+    {
+      "title": "Didier Raoult contre le \"gang des Cerises\" : la série HBO Max qui ...",
+      "url": "https://mcetv.ouest-france.fr/2026/professeur-raoult-gang-cerises-serie-hbo-max/",
+      "snippet": "1 day ago · HBO Max diffuse une série documentaire sur les scientifiques qui ont contesté Didier Raoult pendant la crise du Covid-19. …"
+    }
+  ]
+}

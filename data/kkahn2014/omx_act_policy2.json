@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kkahn2014/omx_act_policy2",
+  "slug": "kkahn2014-omx_act_policy2",
+  "author": "kkahn2014",
+  "url": "https://huggingface.co/kkahn2014/omx_act_policy2",
+  "created_at": "2026-09-13T02:58:53.000Z",
+  "updated_at": "2026-09-13T02:59:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:kkahn2014/pick_and_place1",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206707288,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Bonjour, Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux …"
+    },
+    {
+      "title": "Arrière plan écran noir suite dernière MAJ windows 11",
+      "url": "https://forums.commentcamarche.net/forum/affich-38306104-arriere-plan-ecran-noir-suite-derniere-maj-windows-11",
+      "snippet": "Aug 29, 2026 · Bonjour, Depuis la dernière mise à jour de Windows 11, le 27/08/2026 l'arrière plan de l'écran est systématiquement …"
+    },
+    {
+      "title": "GT ANTF",
+      "url": "https://antf.pt/preview-antf.php?id=formacao-1",
+      "snippet": "Pré-visualização do novo site institucional da Associação Nacional dos Treinadores de Futebol."
+    },
+    {
+      "title": "Bem-Vindo - antf.pt",
+      "url": "https://antf.pt/?tipo=Inicial",
+      "snippet": "PrÃ©-visualizaÃ§Ã£o do novo site institucional da AssociaÃ§Ã£o Nacional dos Treinadores de Futebol."
+    },
+    {
+      "title": "Loading...",
+      "url": "https://api.antf.pt/",
+      "snippet": "Loading... You need to enable JavaScript to run this app."
+    }
+  ]
+}

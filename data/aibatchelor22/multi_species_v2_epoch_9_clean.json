@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "aibatchelor22/multi_species_v2_epoch_9_clean",
+  "slug": "aibatchelor22-multi_species_v2_epoch_9_clean",
+  "author": "aibatchelor22",
+  "url": "https://huggingface.co/aibatchelor22/multi_species_v2_epoch_9_clean",
+  "created_at": "2026-09-13T03:00:27.000Z",
+  "updated_at": "2026-09-13T03:00:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "audio-spectrogram-transformer",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 344850455,
+  "storage_human": "345 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ايمن سويد صفحة 527 - YouTube",
+      "url": "https://www.youtube.com/watch?v=neAYugUu5UQ",
+      "snippet": "Nov 29, 2025 · Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on …"
+    },
+    {
+      "title": "ايمن سويد صفحة رقم 527 - YouTube",
+      "url": "https://www.youtube.com/watch?v=BKw1cVdVdHA",
+      "snippet": "Dec 26, 2024 · قائمة تشغيل بالمصحف كامل • ايمن سويد كل صفحة في ملف منفصل بخط واضح وج... لتحميل المصحف كامل من درايف"
+    },
+    {
+      "title": "أيمن رشدي سويد الصفحة 527 تلاوة ايمن رشدى السويد Mp 3",
+      "url": "https://archive.org/details/527-mp-3_20220219",
+      "snippet": "Feb 19, 2022 · Volume 90% 00:00 04:24 1 أيمن رشدي سويد الصفحة 527 تلاوة ايمن رشدى السويد mp3 04:24"
+    },
+    {
+      "title": "أيمن رشدي سويد الصفحة 527 تلاوة ايمن رشدى السويد mp3.mp3 - ايمن سويد ...",
+      "url": "https://alkabbah.com/recitations/media/398262/aymn-rshdy-soyd-alsfh-527-tlao-aymn-rshd-alsoyd-mp3mp3-aymn-soyd",
+      "snippet": "ايمن سويد أيمن رشدي سويد الصفحة 527 تلاوة ايمن رشدى السويد mp3.mp3 - حفص عن عاصم - المصحف المرتل أيمن رشدي سويد الصفحة 527 تلاوة ايمن رشدى السويد mp3.mp3المصحف …"
+    },
+    {
+      "title": "سورة النجم رقم الصفحة 527 مجود بصوت القارئ الشيخ أيمن سويد حفظه",
+      "url": "https://surahquran.com/video-DGA1kz2sf28.html",
+      "snippet": "تلاوة عذبة وخاشعة تنساب كالنسيم في فيديو: سورة النجم رقم الصفحة 527 مجود بصوت القارئ الشيخ أيمن سويد حفظه الله، عالم من الطمأنينة والخشوع بتلاوة هادئة وخاشعة مميزة، لذة سماع …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "vtava/SmolLM2-135M-AMCeNN-Top2-v2",
+  "slug": "vtava-smollm2-135m-amcenn-top2-v2",
+  "author": "vtava",
+  "url": "https://huggingface.co/vtava/SmolLM2-135M-AMCeNN-Top2-v2",
+  "created_at": "2026-09-13T10:18:30.000Z",
+  "updated_at": "2026-09-13T11:12:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tinycenn",
+    "cenn",
+    "language-modeling",
+    "text-generation",
+    "research",
+    "mixture-of-experts",
+    "attention-free",
+    "linear-attention",
+    "recurrent-memory",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "base_model:HuggingFaceTB/SmolLM2-135M",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 427409046,
+  "storage_human": "427 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ticket Tuesday! Ga met je +1 naar de beste concerten",
+      "url": "https://interactief.stubru.be/quiz/1718834_213/TicketTuesday.html",
+      "snippet": "Luister live naar Studio Brussel Doe mee Terug naar Studio Brussel"
+    },
+    {
+      "title": "Maak kans op een examensnackbuis - interactief.stubru.be",
+      "url": "https://interactief.stubru.be/quiz/1818855_213/evildeadburn.html",
+      "snippet": "Volg Studio Brussel op Instagram"
+    },
+    {
+      "title": "StuBru",
+      "url": "http://vlammetje.stubru.be/",
+      "snippet": "da01.bme.be"
+    },
+    {
+      "title": "Zing mee met The Atomic Orchestra - interactief.stubru.be",
+      "url": "https://interactief.stubru.be/quiz/1804715_213/ZingMeeMetTheAtomicOrchestra.html",
+      "snippet": "Zing mee met The Atomic Orchestra Deze campagne is afgelopen."
+    },
+    {
+      "title": "Win het ultieme festivalpakket! - interactief.stubru.be",
+      "url": "https://interactief.stubru.be/quiz/1810643_213/festivalpakketbol.html",
+      "snippet": "Luister live naar Studio Brussel Doe mee Terug naar Studio Brussel"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "twanghcmut/GR00T-N1.6-SO101-Multitask",
+  "slug": "twanghcmut-gr00t-n1-6-so101-multitask",
+  "author": "twanghcmut",
+  "url": "https://huggingface.co/twanghcmut/GR00T-N1.6-SO101-Multitask",
+  "created_at": "2026-09-13T02:29:20.000Z",
+  "updated_at": "2026-09-13T02:31:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "Gr00tN1d6",
+    "robotics",
+    "vla",
+    "gr00t",
+    "so101",
+    "multitask",
+    "dataset:hungho77/so101-multitask",
+    "base_model:nvidia/GR00T-N1.6-3B",
+    "base_model:finetune:nvidia/GR00T-N1.6-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 3286608832,
+  "parameters_human": "3.29B",
+  "storage_bytes": 9813310504,
+  "storage_human": "9.8 GB",
+  "base_model": "nvidia/GR00T-N1.6-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stake Referral Code COVERSBONUS | How to Claim $25 SC",
+      "url": "https://www.covers.com/casino/bonuses/stake-referral-code",
+      "snippet": "3 days ago · When you use the Stake referral code COVERSBONUS at sign-up, you can activate a free sweepstakes casino bonus …"
+    },
+    {
+      "title": "Stake Referral Codes (September 2026) | Referral Bonus",
+      "url": "https://esportsbetting.com/reviews/stake-com/referral/",
+      "snippet": "Aug 17, 2026 · If you’re not already a member, Stake offer a brilliant 200% welcome bonus up to $2,000 using the exclusive code …"
+    },
+    {
+      "title": "Stake Referral Code COVERSBONUS for September 2026",
+      "url": "https://www.covers.com/betting/bonuses/stake-referral-code",
+      "snippet": "Aug 31, 2026 · Use Stake referral code COVERSBONUS to claim a 200% deposit match up to $4,200 in Canada. Step-by-step claim …"
+    },
+    {
+      "title": "Stake.com Referral 2026 | Referral Code Explained - thespike.gg",
+      "url": "https://www.thespike.gg/reviews/stake-com/referral",
+      "snippet": "Every player receives their Stake.com referral code automatically when they sign up – you can find it in the “Affiliate” section in the …"
+    },
+    {
+      "title": "Stake Referral Code 2026 | Claim Your Referral Bonus",
+      "url": "https://www.sportsgambler.com/review/stake/referral/",
+      "snippet": "Aug 17, 2026 · The Stake referral code is completely different from Stake bonus codes. Whereas codes work when you submit them …"
+    }
+  ]
+}

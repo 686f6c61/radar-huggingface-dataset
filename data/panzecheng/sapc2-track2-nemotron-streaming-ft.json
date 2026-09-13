@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Panzecheng/sapc2-track2-nemotron-streaming-ft",
+  "slug": "panzecheng-sapc2-track2-nemotron-streaming-ft",
+  "author": "Panzecheng",
+  "url": "https://huggingface.co/Panzecheng/sapc2-track2-nemotron-streaming-ft",
+  "created_at": "2026-08-31T03:01:22.000Z",
+  "updated_at": "2026-09-13T02:28:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "nemo",
+  "languages": [],
+  "tags": [
+    "nemo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9892136960,
+  "storage_human": "9.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "M14 Forum",
+      "url": "https://www.m14forum.com/",
+      "snippet": ""
+    },
+    {
+      "title": "USGI SAWs | M14 Forum",
+      "url": "https://m14forum.com/threads/usgi-saws.17592/",
+      "snippet": "Feb 6, 2006 · I just got finished setting up 3 generations of USGI SAWs. WW1 Colt M1918 Browning Machine Rifle with early WW2 …"
+    },
+    {
+      "title": "Ted Brown | M14 Forum",
+      "url": "https://www.m14forum.com/threads/ted-brown.5830/",
+      "snippet": "Oct 25, 2004 · John 3:16 Save Share Reply Quote Like Sort by Oldest first Oldest first Newest first Most reactions RED DOT 377 …"
+    },
+    {
+      "title": "M1A + J Allen stock = service rifle? | M14 Forum",
+      "url": "https://www.m14forum.com/threads/m1a-j-allen-stock-service-rifle.72557/",
+      "snippet": "Jul 28, 2009 · I have been outta the competition ring for a while now but I am about to get back in it and was wondering if anyone …"
+    },
+    {
+      "title": "www.m14forum.com",
+      "url": "https://www.m14forum.com/threads/bad-t1.155811/",
+      "snippet": ""
+    }
+  ]
+}

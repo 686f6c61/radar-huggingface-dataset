@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "keysun89/iam_pvt",
+  "slug": "keysun89-iam_pvt",
+  "author": "keysun89",
+  "url": "https://huggingface.co/keysun89/iam_pvt",
+  "created_at": "2026-09-13T10:13:53.000Z",
+  "updated_at": "2026-09-13T10:21:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 126150186,
+  "storage_human": "126 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Im-Ohr-Hörgeräte (IdO): Diskret & natürlich | GEERS",
+      "url": "https://www.geers.de/hoerloesungen/hoergeraete/im-ohr-hoergeraete/",
+      "snippet": "Im-Ohr-Hörgeräte sind nahezu unsichtbar, eignen sich gut für Brillenträger & können einen natürlicheren Klang liefern. Erfahren Sie …"
+    },
+    {
+      "title": "Hörgeräte kaufen Ab 0€ 750 Fachgeschäfte | GEERS",
+      "url": "https://www.geers.de/hoerloesungen/hoergeraete/",
+      "snippet": "Bei GEERS gibt es bereits einige Hinter-dem-Ohr-Geräte, die mit einem Akku geladen werden können. Im Bereich der Im-Ohr …"
+    },
+    {
+      "title": "Phonak Hörgeräte 2026: Modelle, Preise & Erfahrungen",
+      "url": "https://hoer-gut.com/hoergeraete/hersteller/phonak/",
+      "snippet": "May 15, 2026 · Vergleichen Sie Phonak am besten direkt mit Oticon, Signia und den übrigen Marken im Hersteller-Hub - oder nutzen …"
+    },
+    {
+      "title": "Phonak Hörgeräte | Preise 2026 | MySecondEar",
+      "url": "https://www.mysecondear.de/collections/phonak",
+      "snippet": "» Phonak Hörgeräte Preise Preisliste, Modelle, Erfahrungen Jetzt bis zu 50% sparen » Nur bei MySecondEar"
+    },
+    {
+      "title": "Geers Hörgeräte – Preise, Kosten und Erfahrungen mit Hörgeräten von Geers",
+      "url": "https://www.welches-hoergeraet.de/geers-horgerate-preise-kosten-und-erfahrungen-mit-horgeraten-von-geers-54.html",
+      "snippet": "Mit dieser Verordnung gehen Sie zu einer Geers Filiale ihrer Wahl. Mit Hilfe des Audiogramms und anhand Ihrer individuellen …"
+    }
+  ]
+}

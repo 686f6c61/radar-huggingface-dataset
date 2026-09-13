@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Abiray/Viggle-Animate-pruned-GGUF",
+  "slug": "abiray-viggle-animate-pruned-gguf",
+  "author": "Abiray",
+  "url": "https://huggingface.co/Abiray/Viggle-Animate-pruned-GGUF",
+  "created_at": "2026-09-13T10:55:52.000Z",
+  "updated_at": "2026-09-13T11:11:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20127273752,
+  "parameters_human": "20.13B",
+  "storage_bytes": 51305991552,
+  "storage_human": "51.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Документы: вход в систему",
+      "url": "https://docs.google.com/document/u/0/?hl=RU",
+      "snippet": "Используйте Google Документы в аккаунте Google (для личных целей) или в аккаунте Google Workspace (для бизнеса)."
+    },
+    {
+      "title": "Вход – Google Аккаунты",
+      "url": "https://docs.google.com/?hl=ru",
+      "snippet": "Забыли адрес электронной почты? Работаете на чужом компьютере? Используйте режим инкогнито. Подробнее об …"
+    },
+    {
+      "title": "Google Docs",
+      "url": "https://docs.google.com/",
+      "snippet": "Create and edit web-based documents, spreadsheets, and presentations. Store documents online and access them from any computer."
+    },
+    {
+      "title": "Google Документы: онлайн-документы и PDF-редактор | Google …",
+      "url": "https://workspace.google.com/intl/ru/products/docs/",
+      "snippet": "Создавайте онлайн-документы и редактируйте PDF-файлы в Google Документах. Над документами можно работать …"
+    },
+    {
+      "title": "Google Docs: Sign-in",
+      "url": "https://docs.google.com/document/",
+      "snippet": "Access Google Docs with a personal Google account or Google Workspace account (for business use)."
+    }
+  ]
+}

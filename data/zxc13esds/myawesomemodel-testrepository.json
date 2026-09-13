@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ZXC13ESDS/MyAwesomeModel-TestRepository",
+  "slug": "zxc13esds-myawesomemodel-testrepository",
+  "author": "ZXC13ESDS",
+  "url": "https://huggingface.co/ZXC13ESDS/MyAwesomeModel-TestRepository",
+  "created_at": "2026-09-13T10:21:02.000Z",
+  "updated_at": "2026-09-13T10:37:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Official Site of the National Hockey League | NHL.com",
+      "url": "https://www.nhl.com/",
+      "snippet": "All NHL logos and marks and NHL team logos and marks depicted herein are the property of the NHL and the respective teams and …"
+    },
+    {
+      "title": "NHL Hockey Standings | NHL.com",
+      "url": "https://www.nhl.com/standings",
+      "snippet": "The official standings for the National Hockey League."
+    },
+    {
+      "title": "NHL on ESPN - Scores, Stats and Highlights",
+      "url": "https://www.espn.com/nhl/",
+      "snippet": "Visit ESPN for NHL live scores, video highlights and latest news. Stream exclusive ESPN games and play Fantasy Hockey."
+    },
+    {
+      "title": "National Hockey League - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/National_Hockey_League",
+      "snippet": "The NHL immediately took the NHA's place as one of the leagues that contested for the Stanley Cup in an annual interleague …"
+    },
+    {
+      "title": "NHL: Breaking News, Rumors & Highlights | Yardbarker",
+      "url": "https://www.yardbarker.com/nhl",
+      "snippet": "NHL rumors, news and videos from the best sources on the web. Sign up for the NHL newsletter!"
+    }
+  ]
+}

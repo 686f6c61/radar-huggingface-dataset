@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "amav/pubmedbert-chondrogenesis-classifier",
+  "slug": "amav-pubmedbert-chondrogenesis-classifier",
+  "author": "amav",
+  "url": "https://huggingface.co/amav/pubmedbert-chondrogenesis-classifier",
+  "created_at": "2026-09-13T10:20:52.000Z",
+  "updated_at": "2026-09-13T10:25:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "biomedical-nlp",
+    "gene-regulation",
+    "chondrogenesis",
+    "text-classification",
+    "active-learning",
+    "pubmedbert",
+    "base_model:microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
+    "base_model:finetune:microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486082,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437967864,
+  "storage_human": "438 MB",
+  "base_model": "microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "umlazi gangster 5 - YouTube",
+      "url": "https://www.youtube.com/watch?v=OeAQTozOxoU",
+      "snippet": "Mar 30, 2016 · Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on …"
+    },
+    {
+      "title": "Umlazi gangster 5. Nuz G Productions - YouTube",
+      "url": "https://www.youtube.com/watch?v=TmWh4EdAUdQ",
+      "snippet": "Jan 11, 2025 · Umlazi gangster 5. Nuz G Productions. Enjoy the videos and music you love, upload original content, and share it all …"
+    },
+    {
+      "title": "UMLAZI GANGSTERS - video Dailymotion",
+      "url": "https://www.dailymotion.com/video/x8eme20",
+      "snippet": "Oct 16, 2022 · Centurion Gangster Part 1. Urban Fusion TV. 4 years ago. 5:34. Idelakufa – eHostela Mzansi Magic. paikpankaj44. 7 …"
+    },
+    {
+      "title": "Umlazi Gangster 5 - Full Episode Drama - TikTok",
+      "url": "https://www.tiktok.com/@sandilengcobo20/video/7614464510040050964",
+      "snippet": "Umlazi Gangster 5 - Full Episode Drama Enjoy the gripping episode of Umlazi Gangster 5, featuring thrilling drama and unforgettable …"
+    },
+    {
+      "title": "umlazi gangster full music song - YouTube Music",
+      "url": "https://music.youtube.com/watch?v=aGCACm1Jnm0",
+      "snippet": "Ciyunder Nxoomarlo Playing from umlazi gangster full music song Mix"
+    }
+  ]
+}

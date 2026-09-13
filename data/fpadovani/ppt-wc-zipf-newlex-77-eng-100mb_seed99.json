@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/ppt-wc-zipf-newlex-77-eng-100mb_seed99",
+  "slug": "fpadovani-ppt-wc-zipf-newlex-77-eng-100mb_seed99",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-77-eng-100mb_seed99",
+  "created_at": "2026-09-13T10:46:06.000Z",
+  "updated_at": "2026-09-13T10:50:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/eng_latn_100mb",
+    "base_model:finetune:goldfish-models/eng_latn_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 86508288,
+  "parameters_human": "86.5M",
+  "storage_bytes": 1384375929,
+  "storage_human": "1.4 GB",
+  "base_model": "goldfish-models/eng_latn_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Smarty マニュアル | Smarty",
+      "url": "https://www.smarty.net/docsv2/ja/",
+      "snippet": "Smarty とは? 2. インストール 必要条件 基本的なインストール 拡張セットアップ II. テンプレートデザイナのための Smarty 3. 基本 …"
+    },
+    {
+      "title": "PHP Template Engine | Smarty",
+      "url": "https://www.smarty.net/",
+      "snippet": "Smarty Icon You may use the Smarty logo according to the trademark notice. For sponsorship, advertising, news or other inquiries, …"
+    },
+    {
+      "title": "twig 似乎比smarty流行? - 知乎",
+      "url": "https://www.zhihu.com/question/21452677",
+      "snippet": "下载量并不具参考性，很多框架发行时已经包含了 模板引擎，所以 Packagist 的访问量并不能说明 twig 比 smarty 流行，事实上，作 …"
+    },
+    {
+      "title": "smarty mobile sim with router not phone? — MoneySavingExpert Forum",
+      "url": "https://forums.moneysavingexpert.com/discussion/6467751/smarty-mobile-sim-with-router-not-phone",
+      "snippet": "Aug 19, 2023 · Hi, Have an old tenda router attached to a zte 3g only usb modem, all working well while back using a three sim, …"
+    },
+    {
+      "title": "Beware of SMARTY. Be smarter. — MoneySavingExpert Forum",
+      "url": "https://forums.moneysavingexpert.com/discussion/6515460/beware-of-smarty-be-smarter",
+      "snippet": "Mar 22, 2024 · However, Smarty's recent appalling actions are completely unacceptable and akin to robbery. Just \"pausing\" a plan (in …"
+    }
+  ]
+}

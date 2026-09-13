@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "SL-AI/GRaPE-2.5-Quasar-GGUF",
+  "slug": "sl-ai-grape-2-5-quasar-gguf",
+  "author": "SL-AI",
+  "url": "https://huggingface.co/SL-AI/GRaPE-2.5-Quasar-GGUF",
+  "created_at": "2026-09-13T02:10:44.000Z",
+  "updated_at": "2026-09-13T07:49:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "fr",
+    "de",
+    "es",
+    "ja",
+    "ko",
+    "pt",
+    "ru",
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "thinking_modes",
+    "qwen3.5",
+    "grape",
+    "safetensors",
+    "vision",
+    "multimodal",
+    "instruct",
+    "chat",
+    "coding",
+    "math",
+    "science",
+    "reasoning",
+    "creative_writing",
+    "roleplay",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "fr",
+    "de",
+    "es",
+    "ja",
+    "ko",
+    "pt",
+    "ru",
+    "ar",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 134738765888,
+  "storage_human": "134.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Official Site | Second Life - Virtual Worlds, Virtual Reality, VR ...",
+      "url": "https://secondlife.com/",
+      "snippet": "Second Life Mobile Beta Download Marketplace Premium Destinations Official Blog Support Portal Feedback Portal Partner With Us …"
+    },
+    {
+      "title": "Mercedes-Benz Classe SL — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mercedes-Benz_Classe_SL",
+      "snippet": "La dénomination SL provient de Sport Leicht (sport léger en allemand). Née en 1952 avec la 300 SL, la Classe SL s'est illustrée en …"
+    },
+    {
+      "title": "Mercedes SL : essais, actualités, prix et fiches techniques",
+      "url": "https://www.automobile-magazine.fr/modele/mercedes/sl",
+      "snippet": "Découvrez en détail la Mercedes SL commercialisée depuis 2002, à travers nos essais, nos articles et toutes nos fiches techniques"
+    },
+    {
+      "title": "Fachverband Teilchenphysik (T) - DPG-Verhandlungen",
+      "url": "https://www.dpg-verhandlungen.de/2009/muenchen/t.pdf",
+      "snippet": "Hauptvortrag. T 1.1 Di 9:00 Audimax. Elektroschwache Eichbosonen und das Top-Quark – neue Er- gebnisse von Tevatron und HERA — •Marc-André Pleier —."
+    },
+    {
+      "title": "MERCEDES-BENZ Classe SL d'occasion - L'Argus",
+      "url": "https://occasion.largus.fr/auto/mercedes-benz/classe-sl/",
+      "snippet": "1 day ago · Vous recherchez une MERCEDES-BENZ Classe SL d'occasion ? Parcourez nos 322 annonces de professionnels et …"
+    }
+  ]
+}

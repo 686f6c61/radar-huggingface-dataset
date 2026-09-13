@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "mattewg/pi05-xarm7-shaver-all60-step15000",
+  "slug": "mattewg-pi05-xarm7-shaver-all60-step15000",
+  "author": "mattewg",
+  "url": "https://huggingface.co/mattewg/pi05-xarm7-shaver-all60-step15000",
+  "created_at": "2026-09-13T10:21:05.000Z",
+  "updated_at": "2026-09-13T10:21:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "pi0",
+    "openpi",
+    "xarm7",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12440323807,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MBH Netbank (korábban Takarék)",
+      "url": "https://www.mbhbank.hu/digitalis-szolgaltatasok/netbank/mbh-netbank-korabban-takarek",
+      "snippet": "Napjainkban Magyarországon is egyre több a visszaélési kísérlet a digitális banki termékek kapcsán, ezért az MBH Banknál is …"
+    },
+    {
+      "title": "Lakossági netbankok",
+      "url": "https://www.mbhbank.hu/digitalis-szolgaltatasok/netbank",
+      "snippet": "Regisztráljon most az MBH Netbroker és MBH Mobilbroker szolgáltatásra – gyorsan, egyszerűen, akár otthonról!"
+    },
+    {
+      "title": "MBH Netbank (korábban Takarék)",
+      "url": "https://netbank.mbhbank.hu/eib_ib_S5/loginpage.hu.html",
+      "snippet": "Jelenleg az MBH Netbank (korábban Takarék) rendszerünkbe a szokásosnál többen próbálnak meg egyidőben belépni, ezért a …"
+    },
+    {
+      "title": "MBH Netbank (korábban MKB)",
+      "url": "https://netbankar.mbhbank.hu/index.do",
+      "snippet": "MBH BANK Nyrt., 1056 Budapest, Váci u.38."
+    },
+    {
+      "title": "MBH Netbank (korábban Takarék)",
+      "url": "https://netbank.mbhbank.hu/eib_ib/loginpage.hu.html",
+      "snippet": "Ön vagy még nem jelentkezett be az MBH Netbank (korábban Takarék) rendszerbe, vagy legalább 10 percig nem használta azt, és …"
+    }
+  ]
+}

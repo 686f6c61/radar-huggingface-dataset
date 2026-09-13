@@ -1,0 +1,109 @@
+{
+  "schema": 1,
+  "id": "Nerthus-Project/MATILDA_UD_parser_of_Old_English",
+  "slug": "nerthus-project-matilda_ud_parser_of_old_english",
+  "author": "Nerthus-Project",
+  "url": "https://huggingface.co/Nerthus-Project/MATILDA_UD_parser_of_Old_English",
+  "created_at": "2026-09-13T10:56:24.000Z",
+  "updated_at": "2026-09-13T11:00:37.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "spacy",
+  "languages": [
+    "ang"
+  ],
+  "tags": [
+    "spacy",
+    "token-classification",
+    "old-english",
+    "anglo-saxon",
+    "universal-dependencies",
+    "dependency-parsing",
+    "lemmatization",
+    "historical-languages",
+    "low-resource",
+    "ang",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 205535943,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Dependency Parsing",
+      "dataset": "MATILDA Old English UD treebank (held-out test)",
+      "metric": "Unlabelled Attachment Score",
+      "value": 0.8635
+    },
+    {
+      "task": "Dependency Parsing",
+      "dataset": "MATILDA Old English UD treebank (held-out test)",
+      "metric": "Labelled Attachment Score",
+      "value": 0.7943
+    },
+    {
+      "task": "Part-of-Speech Tagging",
+      "dataset": "MATILDA Old English UD treebank (held-out test)",
+      "metric": "UPOS Accuracy",
+      "value": 0.951
+    },
+    {
+      "task": "Part-of-Speech Tagging",
+      "dataset": "MATILDA Old English UD treebank (held-out test)",
+      "metric": "XPOS Accuracy",
+      "value": 0.9473
+    },
+    {
+      "task": "Part-of-Speech Tagging",
+      "dataset": "MATILDA Old English UD treebank (held-out test)",
+      "metric": "Morphological Features Accuracy",
+      "value": 0.8542
+    },
+    {
+      "task": "Part-of-Speech Tagging",
+      "dataset": "MATILDA Old English UD treebank (held-out test)",
+      "metric": "Lemma Accuracy",
+      "value": 0.8694
+    }
+  ],
+  "sources": [
+    {
+      "title": "Todesanzeigen der letzten 14 Tage | Todesanzeigen Vorarlberger …",
+      "url": "https://todesanzeigen.vn.at/todesanzeigen-suche/letzte-14-tage",
+      "snippet": "Finden Sie hier Traueranzeigen, Todesanzeigen und Beileidsbekundungen aus Ihrer Tageszeitung oder passende Hilfe im Trauerfall. …"
+    },
+    {
+      "title": "Todesanzeigen - Trauerhilfe – abschied GesmbH",
+      "url": "https://www.trauerhilfe.at/todesanzeigen",
+      "snippet": "2 days ago · Klaus Falinski † 10.09.2026 Wartberg im Mürztal"
+    },
+    {
+      "title": "Sterbefälle – von Landeck bis Kitzbühel – Kuratorium Bestattung",
+      "url": "https://kuratorium-bestattung.at/sterbefaelle/",
+      "snippet": "2 days ago · Die Sterbefälle unserer derzeit zwölf Mitglieder finden Sie hier zusammengestellt. Nutzen Sie die Suchfunktion oben, um …"
+    },
+    {
+      "title": "Trauerportal - Trauerhilfe – abschied GesmbH",
+      "url": "https://www.trauerhilfe.at/",
+      "snippet": "Feb 16, 2022 · Einige der Trauerhilfe-Bestatter suchten deshalb nach einem geeigneten Weg, die Möglichkeiten des Internets zu …"
+    },
+    {
+      "title": "Sterbefälle - Bestattung Helbock",
+      "url": "https://www.bestattung-helbock.at/sterbefaelle",
+      "snippet": "5 days ago · Wir informieren Sie über aktuelle Sterbefälle in Ihrer Nähe. Entzünden Sie eine Gedenkkerze oder schreiben Sie eine …"
+    }
+  ]
+}

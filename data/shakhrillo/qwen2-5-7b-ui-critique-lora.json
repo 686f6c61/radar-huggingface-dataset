@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "shakhrillo/qwen2.5-7b-ui-critique-lora",
+  "slug": "shakhrillo-qwen2-5-7b-ui-critique-lora",
+  "author": "shakhrillo",
+  "url": "https://huggingface.co/shakhrillo/qwen2.5-7b-ui-critique-lora",
+  "created_at": "2026-09-13T10:50:20.000Z",
+  "updated_at": "2026-09-13T10:50:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 496027195,
+  "storage_human": "496 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Copilot: Your AI companion",
+      "url": "https://copilot.microsoft.com/?msockid=2f8147ba0ee5690914fc50690f916827",
+      "snippet": "Microsoft Copilot is your companion to inform, entertain and inspire. Get advice, feedback and straightforward answers. Try Copilot now."
+    },
+    {
+      "title": "Copilot | AI chat for work",
+      "url": "https://copilot.cloud.microsoft/",
+      "snippet": "Copilot brings work and life into one app, but your conversation history doesn't mix. Your work chats stay with your work account and …"
+    },
+    {
+      "title": "Microsoft 365 Copilot | Strumenti IA di produttività per il lavoro",
+      "url": "https://www.microsoft.com/it-it/microsoft-365-copilot?msockid=2f8147ba0ee5690914fc50690f916827",
+      "snippet": "Sep 20, 2024 · Ottieni un Assistente IA per il lavoro con Microsoft 365 Copilot. Scopri come una soluzione di intelligenza artificiale …"
+    },
+    {
+      "title": "Microsoft 365 - Sign into Copilot",
+      "url": "https://m365.cloud.microsoft/?omkt=en-001&source=post_page---------------------------",
+      "snippet": "Microsoft Copilot brings personal and work experiences into one simpler place while keeping them separate. Work stays work, and …"
+    },
+    {
+      "title": "Copilot in Edge | Microsoft Edge",
+      "url": "https://explore.microsoft.com/it-it/edge/copilot",
+      "snippet": "Confronta, decidi e completa le attività senza uscire dal browser. Copilot in Microsoft Edge funziona tra le schede per aiutarti a …"
+    }
+  ]
+}

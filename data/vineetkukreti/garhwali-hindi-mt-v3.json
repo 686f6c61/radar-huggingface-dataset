@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "vineetkukreti/garhwali-hindi-mt-v3",
+  "slug": "vineetkukreti-garhwali-hindi-mt-v3",
+  "author": "vineetkukreti",
+  "url": "https://huggingface.co/vineetkukreti/garhwali-hindi-mt-v3",
+  "created_at": "2026-09-13T02:57:38.000Z",
+  "updated_at": "2026-09-13T03:13:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "hi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mt5",
+    "text2text-generation",
+    "translation",
+    "garhwali",
+    "hindi",
+    "pahari",
+    "low-resource",
+    "uttarakhand",
+    "machine-translation",
+    "hi",
+    "base_model:google/mt5-small",
+    "base_model:finetune:google/mt5-small",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 556291456,
+  "parameters_human": "556.3M",
+  "storage_bytes": 2241226956,
+  "storage_human": "2.2 GB",
+  "base_model": "google/mt5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meringue facile : la meilleure recette - Marmiton",
+      "url": "https://www.marmiton.org/recettes/recette_meringue-facile_80977.aspx",
+      "snippet": "Préchauffer le four à 120°C (thermostat 4). Mélanger les 4 blancs d'oeufs avec 150 g de sucre en les montant en blanc ferme. Une …"
+    },
+    {
+      "title": "Meringue simple - Cuisine AZ",
+      "url": "https://www.cuisineaz.com/recettes/meringue-simple-59583.aspx",
+      "snippet": "Nov 25, 2022 · Vous la pensez beaucoup trop technique ? Avec cette recette simple « à la française », impossible de la rater ! …"
+    },
+    {
+      "title": "Meringue : recette facile : la meilleure recette - Marmiton",
+      "url": "https://www.marmiton.org/recettes/recette_meringue-pour-les-nuls_36610.aspx",
+      "snippet": "Préchauffer le four à 120°C (thermostat 4). Déposer immédiatement de petits tas de meringue sur une plaque de four préalablement …"
+    },
+    {
+      "title": "Recette meringue facile : meringues croustillantes inratables",
+      "url": "https://mamanguide.com/recette-meringue-facile/",
+      "snippet": "Mar 4, 2026 · Une recette meringue facile et inratable pour obtenir des meringues blanches, croustillantes et légères, parfaites à …"
+    },
+    {
+      "title": "Meringues françaises inratables : la recette facile",
+      "url": "https://cuisine.journaldesfemmes.fr/recette/317608-meringues",
+      "snippet": "Dec 5, 2024 · Craquez pour ces petites douceurs aériennes avec cette recette facile de meringues françaises. Croquantes à …"
+    }
+  ]
+}

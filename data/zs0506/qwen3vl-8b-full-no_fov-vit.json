@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "zs0506/qwen3vl-8B-full-no_fov-vit",
+  "slug": "zs0506-qwen3vl-8b-full-no_fov-vit",
+  "author": "zs0506",
+  "url": "https://huggingface.co/zs0506/qwen3vl-8B-full-no_fov-vit",
+  "created_at": "2026-09-13T01:48:47.000Z",
+  "updated_at": "2026-09-13T01:51:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_vl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 770288,
+  "parameters_human": "770288",
+  "storage_bytes": 17545771331,
+  "storage_human": "17.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microlithe (géologie) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Microlithe_(g%C3%A9ologie)",
+      "snippet": "La combinaison de phénocristaux, de microlites et de verre est caractéristique des roches volcaniques, elle est appelée texture …"
+    },
+    {
+      "title": "Structure microlitique - fr-academic.com",
+      "url": "https://fr-academic.com/dic.nsf/frwiki/1576748",
+      "snippet": "Texture orbiculaire : autour d ' un noyau se développent des enveloppes concentriques à structure rayonnante, constituées …"
+    },
+    {
+      "title": "Texture (pétrographie) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Texture_(p%C3%A9trographie)",
+      "snippet": "En pétrographie, la texture d'une roche (parfois mal appelée « structure », puisque ces deux notions sont différentes) caractérise …"
+    },
+    {
+      "title": "Séance 10 - La formation des roches magmatiques - Cours (Partie 1)",
+      "url": "https://www.alloschool.com/element/119375",
+      "snippet": "Le basalte roche magmatique volcanique, de structure microlitique, constituée essentiellement des minéraux suivants : feldspath …"
+    },
+    {
+      "title": "Compositions minéralogique et chimique de la Terre",
+      "url": "https://www.svt-biologie-premiere.bacdefrancais.net/geologie-composition-chimique.php",
+      "snippet": "Ils ont une structure microlitique, c’est-à-dire que des cristaux de différentes tailles sont « noyés » dans une pâte de verre amorphe. …"
+    }
+  ]
+}

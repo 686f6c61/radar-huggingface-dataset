@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "whcl412/LycheeAI-coder-2b-II-pro-GGUF",
+  "slug": "whcl412-lycheeai-coder-2b-ii-pro-gguf",
+  "author": "whcl412",
+  "url": "https://huggingface.co/whcl412/LycheeAI-coder-2b-II-pro-GGUF",
+  "created_at": "2026-09-13T10:42:35.000Z",
+  "updated_at": "2026-09-13T11:12:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ollama",
+    "tool-calling",
+    "function-calling",
+    "minicpm",
+    "chinese",
+    "zh",
+    "en",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 9280036800,
+  "storage_human": "9.3 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kleiner Wolf - Lustiges Taschenbuch",
+      "url": "https://www.lustiges-taschenbuch.de/entenhausen/charaktere/die-ducks/kleiner-wolf",
+      "snippet": "Erfahre hier alles Wissenswerte über den kleinen Wolf, Ede Wolfs Sohn, und in welchen Ausgaben des Lustigen Taschenbuchs er …"
+    },
+    {
+      "title": "Liste der Bewohner Entenhausens – Wikipedia",
+      "url": "https://de.m.wikipedia.org/wiki/Liste_der_Bewohner_Entenhausens",
+      "snippet": "Der Name der Figur und der der Geschichte sind Anlehnungen an die Abenteuerfilmreihe Indiana Jones. Indiana sieht fast gleich aus …"
+    },
+    {
+      "title": "Entenhausener Wäldchen – Duckipedia",
+      "url": "https://de.duckipedia.org/index.php?title=Entenhausener_W%C3%A4ldchen&mobileaction=toggle_view_mobile",
+      "snippet": "Das Entenhausener Wäldchen ist eine Welt, die vorallem in den sehr frühen Ausgaben der Micky Maus auftaucht. Es ist ganz in der …"
+    },
+    {
+      "title": "Entenhausener Wäldchen – Duckipedia",
+      "url": "https://de.duckipedia.org/Entenhausener_W%C3%A4ldchen",
+      "snippet": "Das Entenhausener Wäldchen ist eine Welt, die vor allem in den sehr frühen Ausgaben der Micky Maus auftaucht. Es ist ganz in der …"
+    },
+    {
+      "title": "Ede Wolf - Lustiges Taschenbuch",
+      "url": "https://www.lustiges-taschenbuch.de/entenhausen/charaktere/die-ducks/ede-wolf",
+      "snippet": "Ede Wolf ist Mitglied im Böse-Buben-Klub und der Vater von Kleiner Wolf. Zusammen mit ihm lebt er im Entenhausener Wäldchen. …"
+    }
+  ]
+}

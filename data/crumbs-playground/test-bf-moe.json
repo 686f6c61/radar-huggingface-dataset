@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "crumbs-playground/test-bf-moe",
+  "slug": "crumbs-playground-test-bf-moe",
+  "author": "crumbs-playground",
+  "url": "https://huggingface.co/crumbs-playground/test-bf-moe",
+  "created_at": "2026-09-13T10:51:32.000Z",
+  "updated_at": "2026-09-13T10:54:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe_text",
+    "text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 256609024,
+  "parameters_human": "256.6M",
+  "storage_bytes": 513615424,
+  "storage_human": "514 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "crumbs - Traduction française – Linguee",
+      "url": "https://www.linguee.fr/anglais-francais/traduction/crumbs.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"crumbs\" – Dictionnaire français-anglais et moteur de recherche de …"
+    },
+    {
+      "title": "crumb - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/crumb",
+      "snippet": "Dans les listes : Words with a silent \"b\", Nabokov, Suite... Synonymes : particle, scrap, morsel, bit, flake, Suite... Collocations : …"
+    },
+    {
+      "title": "Traduction CRUMBS en français | Dictionnaire anglais-français | Reverso",
+      "url": "https://dictionnaire.reverso.net/anglais-francais/crumbs",
+      "snippet": "Découvrez des expressions contenant \"crumbs\" en anglais. Plongez dans notre trésor de phrases et expressions contenant \"crumbs\" …"
+    },
+    {
+      "title": "CRUMB | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/crumb",
+      "snippet": "The autumn statement can rightly be described as containing very small crumbs of little comfort."
+    },
+    {
+      "title": "Crumbs: spend at a company, own a piece of it",
+      "url": "https://crumbs.family/",
+      "snippet": "Three quarters of the fees buy $CRUMBS back. Crumbs collects fees on token trading and protocol usage. Most of what it collects …"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "karlsencoin/Juggernaut-XL-v9",
+  "slug": "karlsencoin-juggernaut-xl-v9",
+  "author": "karlsencoin",
+  "url": "https://huggingface.co/karlsencoin/Juggernaut-XL-v9",
+  "created_at": "2026-09-13T10:45:10.000Z",
+  "updated_at": "2026-09-13T10:45:10.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "stable-diffusion",
+    "stable-diffusion-xl",
+    "sdxl",
+    "text-to-image",
+    "photorealistic",
+    "photography",
+    "cinematic",
+    "portrait",
+    "juggernaut",
+    "rundiffusion",
+    "kandooai",
+    "en",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:finetune:stabilityai/stable-diffusion-xl-base-1.0",
+    "license:creativeml-openrail-m",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14046294261,
+  "storage_human": "14.0 GB",
+  "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Google Translate - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.translate&hl=en",
+      "snippet": "• Text translation: Translate between 108 languages by typing • Tap to Translate: Copy text in any app and tap the Google Translate …"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/details",
+      "snippet": "Send feedback Enter text to look up details"
+    },
+    {
+      "title": "ترجمة Google",
+      "url": "https://translate.google.com.eg/",
+      "snippet": "خدمة ترجمة مجانية مقدَّمة من Google حيث يمكن ترجمة الكلمات والعبارات وصفحات الويب بشكل فوري بين اللغة الإنجليزية وأكثر من 100 لغة أخرى."
+    },
+    {
+      "title": "Google Translate - Chrome Web Store",
+      "url": "https://chromewebstore.google.com/detail/google-translate/aapbdbdomjkkjkaonfhkkikfgjllcleb?hl=en",
+      "snippet": "Highlight or right-click on a section of text and click on Translate icon next to it to translate it to your language. Learn more about …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sach0312/qwen3-0.6b-nhl-polymarket-grpo-v2",
+  "slug": "sach0312-qwen3-0-6b-nhl-polymarket-grpo-v2",
+  "author": "sach0312",
+  "url": "https://huggingface.co/sach0312/qwen3-0.6b-nhl-polymarket-grpo-v2",
+  "created_at": "2026-09-13T02:47:34.000Z",
+  "updated_at": "2026-09-13T04:13:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "hf_jobs",
+    "grpo",
+    "arxiv:2402.03300",
+    "base_model:sach0312/qwen3-0.6b-nhl-polymarket-sft-v2-merged",
+    "base_model:finetune:sach0312/qwen3-0.6b-nhl-polymarket-sft-v2-merged",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92222867,
+  "storage_human": "92 MB",
+  "base_model": "sach0312/qwen3-0.6b-nhl-polymarket-sft-v2-merged",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "One connect - Samsung Community",
+      "url": "https://eu.community.samsung.com/t5/t%C3%A9l%C3%A9viseurs/one-connect/td-p/14316956",
+      "snippet": "Mar 11, 2026 · Par ailleurs, il est important de préciser que les boîtiers One Connect ne sont pas vendus séparément sur le marché. …"
+    },
+    {
+      "title": "UN65MU8500FXZA - How to use without One Connect Box?",
+      "url": "https://us.community.samsung.com/t5/Projectors-Other-TVs/UN65MU8500FXZA-How-to-use-without-One-Connect-Box/td-p/2223227",
+      "snippet": "Mar 21, 2022 · I recently inherited this UN65MU8500FXZA (65” Curved 4K tv) and I can’t get it to do anything without the connect …"
+    },
+    {
+      "title": "HDMI HS sur boitier One Connect - Samsung Community",
+      "url": "https://eu.community.samsung.com/t5/t%C3%A9l%C3%A9viseurs/hdmi-hs-sur-boitier-one-connect/td-p/14787535",
+      "snippet": "Bonjour à tous J'ai un téléviseur QE75LS03TAUXXC avec un boitier One Connect et les port HDMI ne fonctionnent plus. Contact du …"
+    },
+    {
+      "title": "One Connect SOC1001A - Samsung Community - 2963727",
+      "url": "https://us.community.samsung.com/t5/QLED-and-The-Frame-TVs/One-Connect-SOC1001A/td-p/2963727",
+      "snippet": "Jul 26, 2024 · Help, need a list of TV model numbers that will work with One Connect box SOC1001A. TV fell and broke but box is still …"
+    },
+    {
+      "title": "Résolu : One connect - Samsung Community",
+      "url": "https://eu.community.samsung.com/t5/t%C3%A9l%C3%A9viseurs/one-connect/td-p/12140252",
+      "snippet": "Apr 16, 2025 · Bonjour, j'ai la première version de boitier one connect (la grosse) j'aimerais la changer avec le mmodèle slim pensez …"
+    }
+  ]
+}

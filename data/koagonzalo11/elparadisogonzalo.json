@@ -34,7 +34,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 29660272,
+  "storage_bytes": 30060433,
   "storage_human": "30 MB",
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
   "formats": [],

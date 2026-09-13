@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "takeru01/t4zs3_plain_c90",
+  "slug": "takeru01-t4zs3_plain_c90",
+  "author": "takeru01",
+  "url": "https://huggingface.co/takeru01/t4zs3_plain_c90",
+  "created_at": "2026-09-13T02:44:39.000Z",
+  "updated_at": "2026-09-13T02:45:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 51674766,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206738548,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wie nutze ich den MediaMarktSaturn Bestellservice?",
+      "url": "https://hilfe.saturn.de/app/answers/detail/a_id/12790/~/wie-nutze-ich-den%C2%A0mediamarktsaturn-bestellservice%3F",
+      "snippet": "Du kannst deine gewünschten Produkte auch telefonisch unter der Rufnummer 0221 22243333 bestellen. Die Bestellung führen wir …"
+    },
+    {
+      "title": "ps如何加粗字体? - 知乎",
+      "url": "https://www.zhihu.com/question/357914519",
+      "snippet": "Nov 26, 2019 · 具体操作 有五个方法： ①字重加粗 ②ps自带强制加粗 ③原地复制加粗（微乎其微）④描边加粗 ⑤手动调整 ①字重加粗 …"
+    },
+    {
+      "title": "家里是千兆网，但是电脑下载速度只有10mb/s不到怎么办？",
+      "url": "https://www.zhihu.com/question/1930752647020913028",
+      "snippet": "问题排查步骤（从最简单到复杂） 请按照以下顺序逐一检查： 第一步：检查硬件连接（最可能的罪魁祸首） 网线问题（超高频发 …"
+    },
+    {
+      "title": "Saturn Hilfe",
+      "url": "https://hilfe.saturn.de/app/home",
+      "snippet": "Bei SATURN finden Sie faszinierende Markenprodukte in großer Auswahl zu dauerhaft tiefen Preisen. Angebote, Service, Beratung …"
+    },
+    {
+      "title": "myMediaMarkt & mySaturn - \"Aus 2 wird 1malig\"",
+      "url": "https://hilfe.saturn.de/app/answers/detail/a_id/20513/~/mymediamarkt-%26-mysaturn---aus-2-wird-1malig",
+      "snippet": "Wir legen die beiden Kundenbindungsprogramme myMediaMarkt & mySaturn zusammen. Du bist bereits in einem oder in beiden …"
+    }
+  ]
+}

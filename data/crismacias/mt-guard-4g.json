@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "crismacias/mt-guard-4g",
+  "slug": "crismacias-mt-guard-4g",
+  "author": "crismacias",
+  "url": "https://huggingface.co/crismacias/mt-guard-4g",
+  "created_at": "2026-09-12T19:58:49.000Z",
+  "updated_at": "2026-09-13T07:06:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 129,
+  "trending_score": 0,
+  "parameters": 3212749888,
+  "parameters_human": "3.21B",
+  "storage_bytes": 4335073281,
+  "storage_human": "4.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/homepage",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "Welcome to the official YouTube channel – a home for the biggest moments, the smallest obsessions, and everything in between. …"
+    },
+    {
+      "title": "m - YouTube",
+      "url": "https://www.youtube.com/m/home",
+      "snippet": "Share your videos with friends, family, and the world"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/%3C/",
+      "snippet": ""
+    }
+  ]
+}

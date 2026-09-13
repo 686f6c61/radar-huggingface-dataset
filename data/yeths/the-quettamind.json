@@ -5,7 +5,7 @@
   "author": "yeths",
   "url": "https://huggingface.co/yeths/The-Quettamind",
   "created_at": "2026-08-06T03:55:25.000Z",
-  "updated_at": "2026-08-22T20:10:54.000Z",
+  "updated_at": "2026-09-13T00:09:47.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 16,
-  "downloads_30d": 149,
+  "downloads_30d": 151,
   "trending_score": 0,
   "parameters": 39200000000000000,
   "parameters_human": "39200000.00B",

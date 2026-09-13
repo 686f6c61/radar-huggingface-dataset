@@ -5,7 +5,7 @@
   "author": "IhorShevchuk",
   "url": "https://huggingface.co/IhorShevchuk/piper1-voices-fp16-quantized",
   "created_at": "2026-05-11T03:19:49.000Z",
-  "updated_at": "2026-09-12T20:16:36.000Z",
+  "updated_at": "2026-09-12T21:01:05.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -94,7 +94,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 13603567616,
+  "storage_bytes": 13619495716,
   "storage_human": "13.6 GB",
   "base_model": null,
   "formats": [

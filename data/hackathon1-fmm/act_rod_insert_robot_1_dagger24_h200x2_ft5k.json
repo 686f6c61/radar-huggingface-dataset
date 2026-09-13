@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hackathon1-fmm/act_rod_insert_robot_1_dagger24_h200x2_ft5k",
+  "slug": "hackathon1-fmm-act_rod_insert_robot_1_dagger24_h200x2_ft5k",
+  "author": "hackathon1-fmm",
+  "url": "https://huggingface.co/hackathon1-fmm/act_rod_insert_robot_1_dagger24_h200x2_ft5k",
+  "created_at": "2026-09-13T10:27:06.000Z",
+  "updated_at": "2026-09-13T10:37:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:hackathon1-fmm/rod_insert_robot_1_v0_plus_dagger24_h264",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51670663,
+  "parameters_human": "51.7M",
+  "storage_bytes": 3097805852,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "De 10 bedste hoteller i København, Danmark – fra DKK 538",
+      "url": "https://www.booking.com/city/dk/copenhagen.da.html?msockid=2d35dbbe14e569f62062cc6d159668e0",
+      "snippet": "Store rabatter på hoteller i København, Danmark online. Der er mange værelser og gode priser. Læs anmeldelser af hotellerne som …"
+    },
+    {
+      "title": "De bedste hoteller i Københavns centrum i København, Danmark",
+      "url": "https://www.booking.com/district/dk/copenhagen/copenhagen-centre.da.html?msockid=2d35dbbe14e569f62062cc6d159668e0",
+      "snippet": "Sep 1, 2026 · Reservér dit hotel i Københavns centrum, København online. Men præcist hvor? Find alle hotellerne i Københavns …"
+    },
+    {
+      "title": "Hoteller i København fra 238 kr. – Find billige hoteller med momondo",
+      "url": "https://www.momondo.dk/hoteller/koebenhavn",
+      "snippet": "Søg og sammenlign 286 hoteller i København for at finde de bedste hoteltilbud på momondo. Find de billigste priser på luksus-, …"
+    },
+    {
+      "title": "DE 10 BEDSTE hoteller i København, Danmark",
+      "url": "https://www.tripadvisor.dk/Hotels-g189541-Copenhagen_Zealand-Hotels.html",
+      "snippet": "Ejendomme rangeret ved hjælp af eksklusive Tripadvisor-data, herunder vurderinger fra rejsende, bekræftet kapacitet fra vores …"
+    },
+    {
+      "title": "Hoteller i København, Hovedstaden | De bedste hoteller i København ...",
+      "url": "https://da.hotels.com/de408991/hoteller-k-benhavn-danmark/",
+      "snippet": "Hvor skal du overnatte i København? Ejendomme er valgt ud fra ægte anmeldelser fra rejsende og popularitet blandt gæster, der har …"
+    }
+  ]
+}

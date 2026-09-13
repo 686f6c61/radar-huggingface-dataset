@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "TracNetwork/mayhem-catalog-Qwen-Qwen3-8-Flash-Next-NVFP4",
+  "slug": "tracnetwork-mayhem-catalog-qwen-qwen3-8-flash-next-nvfp4",
+  "author": "TracNetwork",
+  "url": "https://huggingface.co/TracNetwork/mayhem-catalog-Qwen-Qwen3-8-Flash-Next-NVFP4",
+  "created_at": "2026-09-13T10:52:46.000Z",
+  "updated_at": "2026-09-13T11:07:32.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "Model Optimizer",
+  "languages": [],
+  "tags": [
+    "Model Optimizer",
+    "safetensors",
+    "qwen4_exp",
+    "ModelOpt",
+    "Qwen3.8",
+    "quantized",
+    "FP4",
+    "fp4",
+    "sglang",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 119602003859,
+  "parameters_human": "119.60B",
+  "storage_bytes": 135242371978,
+  "storage_human": "135.2 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chicago Blackhawks Scores, Stats and Highlights - ESPN",
+      "url": "https://www.espn.com/nhl/team/_/name/chi/chicago-blackhawks",
+      "snippet": "Visit ESPN for Chicago Blackhawks live scores, video highlights, and latest news. Find standings and the full 2026-27 season schedule."
+    },
+    {
+      "title": "Chicago Blackhawks | Chicago Blackhawks - NHL.com",
+      "url": "https://www.nhl.com/blackhawks/",
+      "snippet": "2 days ago · Tickets start at just $20 to see Blackhawks preseason hockey at United Center. Fans can secure their seats for some of …"
+    },
+    {
+      "title": "Chicago Blackhawks Scores: Live Updates, Final Results & Game ...",
+      "url": "https://www.sportingnews.com/us/nhl/chicago-blackhawks/scores",
+      "snippet": "Stay ahead of the game with our Chicago Blackhawks scores page, bringing you up-to-the-minute results from every game across …"
+    },
+    {
+      "title": "Chicago Blackhawks Schedule | Chicago Blackhawks - NHL.com",
+      "url": "https://www.nhl.com/blackhawks/schedule",
+      "snippet": "The official calendar for the Chicago Blackhawks including ticket information, stats, rosters, and more."
+    },
+    {
+      "title": "Hockey, USA: Chicago Blackhawks live scores, results, fixtures",
+      "url": "https://www.flashscore.com/team/chicago-blackhawks/A1kbmKeg/",
+      "snippet": "Chicago Blackhawks page on Flashscore.com offers livescore, results, standings and match details."
+    }
+  ]
+}

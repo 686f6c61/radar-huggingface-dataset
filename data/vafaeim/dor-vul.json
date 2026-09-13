@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "vafaeim/DOR-Vul",
+  "slug": "vafaeim-dor-vul",
+  "author": "vafaeim",
+  "url": "https://huggingface.co/vafaeim/DOR-Vul",
+  "created_at": "2026-09-13T02:24:52.000Z",
+  "updated_at": "2026-09-13T02:24:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How do I press Ctrl+Alt+Delete in VirtualBox? - Super User",
+      "url": "https://superuser.com/questions/116946/how-do-i-press-ctrlaltdelete-in-virtualbox",
+      "snippet": "Mar 13, 2012 · I'm running VirtualBox with Windows Vista as host OS and Windows Server 2008 as guest OS. To login to Windows …"
+    },
+    {
+      "title": "How to find MAC Address of a PC without powering it on?",
+      "url": "https://superuser.com/questions/237058/how-to-find-mac-address-of-a-pc-without-powering-it-on",
+      "snippet": "Jan 20, 2011 · A couple other possibilities, if the MAC address isn't physically printed on the hardware or you don't have physical …"
+    },
+    {
+      "title": "Visio - tabs not showing - Super User",
+      "url": "https://superuser.com/questions/142483/visio-tabs-not-showing",
+      "snippet": "May 18, 2010 · Happened to me also. It was because the window within Visio was not maximized. I probably hit Alt-F7 and got into …"
+    },
+    {
+      "title": "exploring base isolators and dampers - Springer Nature",
+      "url": "https://link.springer.com/content/pdf/10.1007/s42452-025-07469-1.pdf",
+      "snippet": "20.07.2025 ... A simplified model for seismic safety assessment of reinforced concrete buildings: framework and application to a 3-storey plan-irregular moment ..."
+    },
+    {
+      "title": "codec - Decrypt sysprep unattend.xml user password - Super User",
+      "url": "https://superuser.com/questions/408810/decrypt-sysprep-unattend-xml-user-password",
+      "snippet": "Apr 5, 2012 · How do I decrypt user passwords that are encrypted and used in Windows 7 Sysprep unattend.xml file? What …"
+    }
+  ]
+}

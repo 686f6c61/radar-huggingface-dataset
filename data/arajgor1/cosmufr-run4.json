@@ -5,7 +5,7 @@
   "author": "arajgor1",
   "url": "https://huggingface.co/arajgor1/cosmufr-run4",
   "created_at": "2026-05-10T01:22:52.000Z",
-  "updated_at": "2026-09-07T23:56:13.000Z",
+  "updated_at": "2026-09-13T04:46:51.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "tabular-regression",
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 55,
+  "downloads_30d": 56,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

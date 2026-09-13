@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "AlbertWang8192/chai-cleanbase",
+  "slug": "albertwang8192-chai-cleanbase",
+  "author": "AlbertWang8192",
+  "url": "https://huggingface.co/AlbertWang8192/chai-cleanbase",
+  "created_at": "2026-09-13T01:35:22.000Z",
+  "updated_at": "2026-09-13T01:36:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183354205,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nurses’ experience of loss, grief, family health and care targeting ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1462388924001431",
+      "snippet": "Aug 1, 2024 · This study aimed to explore the experiences of registered nurses in hematology departments and primary care settings …"
+    },
+    {
+      "title": "Nursing care and nurses’ understandings of grief and bereavement …",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1462388922001685",
+      "snippet": "Feb 1, 2023 · Complexity is present when caring for patients and families experiencing grief and bereavement during cancer illness. …"
+    },
+    {
+      "title": "The nurse’s role during death and bereavement: a ... - Springer",
+      "url": "https://link.springer.com/article/10.1186/s12912-026-05048-2",
+      "snippet": "Jul 13, 2026 · This systematic review aimed to synthesize existing evidence on the role of nurses during death and bereavement and …"
+    },
+    {
+      "title": "End-of-Life Care and Nurse’s Roles - PMC",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11163333/",
+      "snippet": "Nurses who are in one-to-one contact with patients have important roles in making the decision to switch to end-of-life care and in …"
+    },
+    {
+      "title": "Nursing Roles & Responsibilities - End of Life Care | ANA",
+      "url": "https://www.nursingworld.org/practice-policy/nursing-excellence/official-position-statements/id/nurses-roles-and-responsibilities-in-providing-care-and-support-at-the-end-of-life/",
+      "snippet": "The purpose of this ANA position statement is to articulate the roles, responsibilities, and opportunities for nurses providing care for …"
+    }
+  ]
+}

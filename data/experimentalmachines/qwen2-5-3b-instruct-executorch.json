@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "experimentalmachines/Qwen2.5-3B-Instruct-ExecuTorch",
+  "slug": "experimentalmachines-qwen2-5-3b-instruct-executorch",
+  "author": "experimentalmachines",
+  "url": "https://huggingface.co/experimentalmachines/Qwen2.5-3B-Instruct-ExecuTorch",
+  "created_at": "2026-09-13T10:22:35.000Z",
+  "updated_at": "2026-09-13T10:30:40.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "executorch",
+  "languages": [],
+  "tags": [
+    "executorch",
+    "android",
+    "on-device",
+    "openweights",
+    "xnnpack",
+    "text-generation",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8259768832,
+  "storage_human": "8.3 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mahjong.fr - Mahjong Gratuit",
+      "url": "https://www.mahjong.fr/",
+      "snippet": "Bienvenue sur Mahjong.fr ! Le site internet pour les vrais amateurs de Mahjong. Nous avons un très grand nombre de games sur …"
+    },
+    {
+      "title": "Mahjong Véritable",
+      "url": "https://www.mahjong.fr/jouer/mahjongv%C3%A9ritable.php",
+      "snippet": "Joué : Vous êtes le joueur numéro Description : Les tuiles de ce jeu magnifique viennent des années 1800 et avec l'aide d'un …"
+    },
+    {
+      "title": "Mahjong Classique",
+      "url": "https://www.mahjong.fr/jouer/mahjongclassique.php",
+      "snippet": "Joué : Vous êtes le joueur numéro 29089042 Description : Dans Mahjong Classique, vous avez la configuration standard de 144 …"
+    },
+    {
+      "title": "Jouer au Mahjong",
+      "url": "https://www.mahjong.fr/joueraumahjong.php",
+      "snippet": "1 de nos jeux de Mahjong aux fonctions limitées, ainsi vous ne.."
+    },
+    {
+      "title": "Mahjong Cartes",
+      "url": "https://www.mahjong.fr/jouer/mahjongcartes.php",
+      "snippet": "Joué : Vous êtes le joueur numéro 26327545 Description : Cette version prend un tour un peu différent, vous retrouvez bien les tuiles …"
+    }
+  ]
+}

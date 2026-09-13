@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "VantoraLabs/micro-tts-181k",
+  "slug": "vantoralabs-micro-tts-181k",
+  "author": "VantoraLabs",
+  "url": "https://huggingface.co/VantoraLabs/micro-tts-181k",
+  "created_at": "2026-09-13T11:00:20.000Z",
+  "updated_at": "2026-09-13T11:00:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "tts",
+    "text-to-speech",
+    "tiny",
+    "distillation",
+    "english",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4874196,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Il Messaggero",
+      "url": "https://www.ilmessaggero.it/",
+      "snippet": "Il Messaggero - Il giornale di Roma, da sempre"
+    },
+    {
+      "title": "ROMA - Il Messaggero",
+      "url": "https://www.ilmessaggero.it/ROMA/",
+      "snippet": "Tutte le news di Roma - approfondimenti, foto e video da Il Messaggero"
+    },
+    {
+      "title": "MOTORI - Il Messaggero.it",
+      "url": "https://motori.ilmessaggero.it/",
+      "snippet": "Leggi su motori.ilmessaggero.it tutte le news sul mondo dell'automobile: prove, anteprime e ultime novità dai saloni"
+    },
+    {
+      "title": "Servizio necrologie - Il Messaggero",
+      "url": "https://necrologie.ilmessaggero.it/tariffe.html",
+      "snippet": "Servizio fornito da Piemme S.p.A. Condizioni di utilizzo PRIVACY COOKIE POLICY P. IVA 05122191009"
+    },
+    {
+      "title": "Il Messaggero Shop - Vetrina_tutti_abbonamenti",
+      "url": "https://shop.ilmessaggero.it/vetrina_tutti_abbonamenti",
+      "snippet": "Il Messaggero Online Accesso a tutti i contenuti del sito ilmessaggero.it da web, mobile e app. Tante notizie locali, approfondimenti e …"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "DJLougen/LFM2.5-VL-3B-DFlash-drafter",
+  "slug": "djlougen-lfm2-5-vl-3b-dflash-drafter",
+  "author": "DJLougen",
+  "url": "https://huggingface.co/DJLougen/LFM2.5-VL-3B-DFlash-drafter",
+  "created_at": "2026-09-13T02:46:40.000Z",
+  "updated_at": "2026-09-13T02:47:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "dflash",
+    "speculative-decoding",
+    "drafter",
+    "draft-model",
+    "block-diffusion",
+    "liquid",
+    "lfm2.5",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "base_model:LiquidAI/LFM2.5-VL-3B",
+    "base_model:quantized:LiquidAI/LFM2.5-VL-3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 52,
+  "trending_score": 0,
+  "parameters": 742413312,
+  "parameters_human": "742.4M",
+  "storage_bytes": 4514719854,
+  "storage_human": "4.5 GB",
+  "base_model": "LiquidAI/LFM2.5-VL-3B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Le Simulateur de la roulette en ligne gratuit",
+      "url": "https://www.roulettesimulator.net/fr/",
+      "snippet": "Le simulateur de la roulette reproduit précisément le modèle mathématique d’une roulette authentique. Le jeu au simulateur vous …"
+    },
+    {
+      "title": "Simulateur de roulette en ligne gratuit – jouer à la roulette ...",
+      "url": "https://roulettesimulateur.com/",
+      "snippet": "Jouez à la roulette gratuite en ligne avec notre simulateur (européenne, française, américaine). Sans inscription ni téléchargement. …"
+    },
+    {
+      "title": "Simulateur de roulette - Testez les systèmes de roulette",
+      "url": "https://anygamble.com/fr/guide/comment-jouer-a-la-roulette/simulateur-de-systemes-de-roulette",
+      "snippet": "Apr 19, 2024 · Testez les systèmes de pari les plus célèbres avec notre application de simulation de roulette. Choisissez un système …"
+    },
+    {
+      "title": "Simulateurs de roulette en ligne",
+      "url": "https://simulatorroulette.com/fr/roulettes",
+      "snippet": "Choisissez un modèle, comparez son avantage et ouvrez un simulateur de test. Roue à un seul zéro pour tester une base à …"
+    },
+    {
+      "title": "Roulette européenne — Jouez gratuitement à la roulette en ligne",
+      "url": "https://www.roulettesimulator.net/fr/simulators/european-roulette/",
+      "snippet": "Aujourd’hui, il suffit de visiter le site web d’un casino en ligne – et voilà, la roulette européenne est à votre service ! Ici, nous …"
+    }
+  ]
+}

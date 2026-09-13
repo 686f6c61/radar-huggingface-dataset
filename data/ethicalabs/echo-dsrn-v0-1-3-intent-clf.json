@@ -70,11 +70,12 @@
     "base_model:merge:ethicalabs/Echo-DSRN-114M-v0.1.2",
     "base_model:ethicalabs/Echo-DSRN-v0.1.3-Intent-CLF-PEFT",
     "base_model:merge:ethicalabs/Echo-DSRN-v0.1.3-Intent-CLF-PEFT",
+    "doi:10.57967/hf/10377",
     "license:apache-2.0",
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 294,
+  "downloads_30d": 282,
   "trending_score": 0,
   "parameters": 98294844,
   "parameters_human": "98.3M",

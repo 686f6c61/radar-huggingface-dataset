@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Elvinky/pi05-so101-fold-clothes-v11-human1to1-fp32-step8357",
+  "slug": "elvinky-pi05-so101-fold-clothes-v11-human1to1-fp32-step8357",
+  "author": "Elvinky",
+  "url": "https://huggingface.co/Elvinky/pi05-so101-fold-clothes-v11-human1to1-fp32-step8357",
+  "created_at": "2026-09-13T02:50:40.000Z",
+  "updated_at": "2026-09-13T03:25:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "so101",
+    "human-intervention",
+    "fp32",
+    "robotics",
+    "dataset:MINT-SJTU/RW-RL-Dataset",
+    "dataset:Elvinky/so101-fold-clothes-dagger-20260909",
+    "base_model:Travor278/pi05-so101-fold-clothes-jax-v11",
+    "base_model:finetune:Travor278/pi05-so101-fold-clothes-jax-v11",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 16608148127,
+  "storage_human": "16.6 GB",
+  "base_model": "Travor278/pi05-so101-fold-clothes-jax-v11",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "47 Homemade Pizza Recipes That Are Faster Than Delivery",
+      "url": "https://www.tasteofhome.com/collection/easy-pizza-recipes/",
+      "snippet": "Mar 17, 2025 · Skip delivery and whip up these homemade pizza recipes instead! We have everything from classic slices to breakfast …"
+    },
+    {
+      "title": "33 pizza recipes to make at home - Women's Weekly Food",
+      "url": "https://www.womensweeklyfood.com.au/dinner/pizza-recipes-1-29762/",
+      "snippet": "Dec 7, 2022 · From the classic dough for the base to dozens of scrumptious toppings, our recipes will satisfy your every pizza …"
+    },
+    {
+      "title": "22 of the best pizza recipes | Gourmet Traveller",
+      "url": "https://www.gourmettraveller.com.au/recipe-collections/pizza-recipes-14914/",
+      "snippet": "3 days ago · Nothing beats homemade pizza. From salami and burrata pizza and four cheese pizza to pizza fritta recipes and an …"
+    },
+    {
+      "title": "15 Homemade Pizza Recipes That Taste Better Than Delivery",
+      "url": "https://www.allrecipes.com/best-pizza-recipes-11936266",
+      "snippet": "Mar 29, 2026 · Find our best pizza recipes including Detroit-style pizza, Margherita pizza, Chicago-style pizza, Brooklyn-style pizza, …"
+    },
+    {
+      "title": "Pizza recipes - RecipeTin Eats",
+      "url": "https://www.recipetineats.com/category/pizza-recipes/",
+      "snippet": "Pizza recipes to satisfy your cravings at a fraction of the cost, and a whole lot less grease! Popular favourites like pepperoni, to Italian …"
+    }
+  ]
+}

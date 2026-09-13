@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ImKyungjin/pi0-stackcube-mixed-noise-30pct-40ep-convex-lambda0.4",
+  "slug": "imkyungjin-pi0-stackcube-mixed-noise-30pct-40ep-convex-lambda0-4",
+  "author": "ImKyungjin",
+  "url": "https://huggingface.co/ImKyungjin/pi0-stackcube-mixed-noise-30pct-40ep-convex-lambda0.4",
+  "created_at": "2026-09-13T10:57:42.000Z",
+  "updated_at": "2026-09-13T11:02:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi0",
+    "dataset:taewonkoo/stack_cube_mixed_noise_30pct_40ep",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 7011556176,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Forum non aggiornato per sciopero - forumcorriere.corriere.it",
+      "url": "https://forumcorriere.corriere.it/una-citta-mille-domande/2026/04/16/forum-non-aggiornato-per-sciopero/",
+      "snippet": "Apr 16, 2026 · Sono solo alcuni degli argomenti che tratta \"Una città mille domande\". Questo spazio curato da Paolo Conti è un punto …"
+    },
+    {
+      "title": "Un episodio a sera - Televisioni - forumcorriere.corriere.it",
+      "url": "https://forumcorriere.corriere.it/televisioni/2026/05/04/un-episodio-sera/",
+      "snippet": "May 4, 2026 · Dicono che per l'allungo dei Pacchi e della Ruota abbiano mozzato gli episodi delle fiction. Lo spezzatino delle serie fa …"
+    },
+    {
+      "title": "CORRIERE DELLA SERA.it - Forum - Scioglilingua",
+      "url": "http://forum.corriere.it/scioglilingua/16-12-2009/gli-manca-un-venerdi-1432094.html",
+      "snippet": "Dec 16, 2009 · Fausto Raso Mercoledì, 16 Dicembre 2009 Gli manca un venerdí Gli manca qualche venerdì Caro Professore, come …"
+    },
+    {
+      "title": "CORRIERE DELLA SERA.it - Forum - Bon Ton",
+      "url": "http://forum.corriere.it/bon_ton/",
+      "snippet": "Il bon ton è un irrinunciabile segreto di vita che consente di viverla con più facilità. La prima impressione, il ricordo che uno lascia di …"
+    },
+    {
+      "title": "Dilemmi del sabato sera - Televisioni",
+      "url": "https://forumcorriere.corriere.it/televisioni/2025/10/21/dilemmi-del-sabato-sera",
+      "snippet": "Oct 21, 2025 · Insomma, Prof, la domanda è epocale: Tu sì que vales o Ballando con le stelle? Il primo vince i sabati sera a mani …"
+    }
+  ]
+}

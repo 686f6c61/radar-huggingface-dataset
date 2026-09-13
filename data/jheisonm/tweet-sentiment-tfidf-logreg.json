@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "JheisonM/tweet-sentiment-tfidf-logreg",
+  "slug": "jheisonm-tweet-sentiment-tfidf-logreg",
+  "author": "JheisonM",
+  "url": "https://huggingface.co/JheisonM/tweet-sentiment-tfidf-logreg",
+  "created_at": "2026-09-13T01:48:59.000Z",
+  "updated_at": "2026-09-13T01:49:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "sklearn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sklearn",
+    "text-classification",
+    "skops",
+    "tfidf",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 109519662,
+  "storage_human": "110 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Leboncoin une erreur technique est survenue - Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-37772507-site-le-bon-coin-une-erreur-technique-est-survenue",
+      "snippet": "Jan 14, 2023 · Bonjour, J'ai un mac oset depuis quelques jours le site le bon coin affiche la mention \" Une erreur technique est …"
+    },
+    {
+      "title": "Leboncoin: numéro de téléphone déjà utilisé - Mobile",
+      "url": "https://forums.commentcamarche.net/forum/affich-37903155-leboncoin-numero-de-telephone-deja-utilise",
+      "snippet": "Aug 28, 2023 · Bonjour Lors de ma première ouverture de compte Leboncoin je reçois que mon numéro de téléphone est déjà utilisé …"
+    },
+    {
+      "title": "Photos de Alicante Plages et Chateau de Santa Barbara",
+      "url": "https://www.espagne-visite.com/fr/photos/photos-alicante.html",
+      "snippet": "Mar 20, 2026 · Le château de Santa Barbara sur les hauteurs de Alicante est vraiment 3 étoiles avec des vues sur toute la ville et le …"
+    },
+    {
+      "title": "Visiter Espagne climat plages et villes",
+      "url": "https://www.espagne-visite.com/fr/",
+      "snippet": "visiter l'Espagne avec nos guides gratuits nos carte de tourisme en espagne avec les meilleures destinations en espagne et les plus …"
+    },
+    {
+      "title": "Paiement sécurisé leboncoin [Résolu] - Consommation & Internet",
+      "url": "https://forums.commentcamarche.net/forum/affich-37830763-paiement-securise-leboncoin",
+      "snippet": "Apr 15, 2023 · (J'ai vu que leboncoin peux bloquer \"temporairement\" la transaction mais temporairement ça ne me rassure pas du …"
+    }
+  ]
+}

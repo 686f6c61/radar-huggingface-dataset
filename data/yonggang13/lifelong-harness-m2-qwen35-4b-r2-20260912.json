@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "yonggang13/lifelong-harness-m2-qwen35-4b-r2-20260912",
+  "slug": "yonggang13-lifelong-harness-m2-qwen35-4b-r2-20260912",
+  "author": "yonggang13",
+  "url": "https://huggingface.co/yonggang13/lifelong-harness-m2-qwen35-4b-r2-20260912",
+  "created_at": "2026-09-13T01:43:07.000Z",
+  "updated_at": "2026-09-13T01:43:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "tutoring",
+    "lifelong-learning",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 279850749,
+  "storage_human": "280 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ecole directe - CCM - Tech Forum",
+      "url": "https://forums.commentcamarche.net/forum/affich-37323812-ecole-direct?lang=en",
+      "snippet": "Ecole directe Loya78 - Edited on 24 Aug 2021 at 15:34 bigbo26 - 27 Aug 2021 at 14:34"
+    },
+    {
+      "title": "Ecole directe - Attachments - CCM - Tech Forum",
+      "url": "https://forums.commentcamarche.net/forum/affich-32888021-ecole-directe-pieces-jointes?lang=en",
+      "snippet": "Hello! My teacher asked me to copy a lesson he attached on Ecole directe. However, I don't know where to find the attachments. Can …"
+    },
+    {
+      "title": "Androz2091/node-ecole-directe - GitHub",
+      "url": "https://github.com/Androz2091/node-ecole-directe",
+      "snippet": "Connexion à école directe sans passer par l'interface web! - Androz2091/node-ecole-directe"
+    },
+    {
+      "title": "ecoledirecte · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/ecoledirecte",
+      "snippet": "Apr 15, 2026 · Snipeur060 / Ecole-directe-classe Star 7 Code Issues Pull requests Discussions education ecoledirecte ecole-directe …"
+    },
+    {
+      "title": "EcoleDirecte | Mode Sombre · GitHub",
+      "url": "https://gist.github.com/msylvest-22102007/88373dbd747d97a7cb1e8809ca74e8cf",
+      "snippet": "EcoleDirecte | Mode Sombre. GitHub Gist: instantly share code, notes, and snippets."
+    }
+  ]
+}

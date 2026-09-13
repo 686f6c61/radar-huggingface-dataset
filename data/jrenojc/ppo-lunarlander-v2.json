@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "jrenojc/ppo-LunarLander-v2",
+  "slug": "jrenojc-ppo-lunarlander-v2",
+  "author": "jrenojc",
+  "url": "https://huggingface.co/jrenojc/ppo-LunarLander-v2",
+  "created_at": "2026-09-13T02:25:09.000Z",
+  "updated_at": "2026-09-13T02:25:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v2",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 434615,
+  "storage_human": "434615 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
+    },
+    {
+      "title": "jrenojc/ppo-LunarLander-v2 · Hugging Face",
+      "url": "https://huggingface.co/jrenojc/ppo-LunarLander-v2",
+      "snippet": "This is a trained model of a PPO agent playing LunarLander-v2 using the stable-baselines3 library."
+    },
+    {
+      "title": "请问 iOS 下有什么比较好的学术 App? - 知乎",
+      "url": "https://www.zhihu.com/question/20521485",
+      "snippet": "iOS 上有什么比较好用的学术方面的app么，我已经使用了papers,觉得用来归档已有的论文很好，但用来获取新…"
+    },
+    {
+      "title": "GoogleとYAHOO!の検索エンジンの メリットとデメリットをそれ",
+      "url": "https://q.hatena.ne.jp/1259258887",
+      "snippet": "Nov 27, 2009 · GoogleとYAHOO!の検索エンジンの メリットとデメリットをそれぞれ できるだけ多く教えてください。 / ヤフー メ …"
+    },
+    {
+      "title": "LunarLander-v2 with Proximal Policy Optimization",
+      "url": "https://pylessons.com/LunarLander-v2-PPO",
+      "snippet": "PPO uses the Actor-Critic approach for the agent. This means that it uses two models, one called the Actor and the other called Critic: ... The Actor model performs the task of learning what action to take under a particular observed state of the environment. In LunarLander-v2 case, it takes eight values list of the game as input which represents the current state of our rocket and gives a particular action what engine to fire as output:"
+    }
+  ]
+}

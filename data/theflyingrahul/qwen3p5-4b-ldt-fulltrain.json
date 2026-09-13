@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "theflyingrahul/qwen3p5-4b-ldt-fulltrain",
+  "slug": "theflyingrahul-qwen3p5-4b-ldt-fulltrain",
+  "author": "theflyingrahul",
+  "url": "https://huggingface.co/theflyingrahul/qwen3p5-4b-ldt-fulltrain",
+  "created_at": "2026-09-13T02:19:28.000Z",
+  "updated_at": "2026-09-13T02:20:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9098609861,
+  "storage_human": "9.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OTTO - Mode, Möbel & Technik » Zum Online-Shop",
+      "url": "https://www.otto.de/",
+      "snippet": "OTTO Online-Shop » Viele Marken Tolle Angebote Top Service » Ratenkauf Kauf auf Rechnung Altgeräte-Mitnahme Aufbauservice …"
+    },
+    {
+      "title": "Damenmode online kaufen » Fashion-Shop für Damen | OTTO",
+      "url": "https://www.otto.de/damen/",
+      "snippet": "Bis zu 20% reduziert Damenmode online kaufen bei OTTO » Große Auswahl Aktuelle Trends Beliebte Marken Top Qualität » Jetzt …"
+    },
+    {
+      "title": "OTTO - Anmelden",
+      "url": "https://www.otto.de/customer-identity/login",
+      "snippet": "・ Preisangaben inkl. Steuer und zzgl."
+    },
+    {
+      "title": "Möbel Online-Shop » Einrichtung online kaufen | OTTO",
+      "url": "https://www.otto.de/moebel/?ansicht=einstieg",
+      "snippet": "Bis zu 20% reduziert Große Auswahl an Möbeln bei OTTO » Wohnen Schlafen Küche & Essen Kinder Arbeiten Jetzt deine Möbel …"
+    },
+    {
+      "title": "Günstige Haushaltsgeräte kaufen » Haushaltsgeräte Angebote - OTTO",
+      "url": "https://www.otto.de/haushalt/haushaltsgeraete/?reduziert",
+      "snippet": "Bis zu 50% reduziert Günstige Haushaltsgeräte online kaufen bei OTTO » Große Auswahl Top Marken Top Service Ratenkauf » …"
+    }
+  ]
+}

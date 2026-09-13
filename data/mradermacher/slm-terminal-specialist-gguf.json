@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/slm-terminal-specialist-GGUF",
+  "slug": "mradermacher-slm-terminal-specialist-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/slm-terminal-specialist-GGUF",
+  "created_at": "2026-09-13T10:54:32.000Z",
+  "updated_at": "2026-09-13T10:54:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tag des offenen Denkmals® | Entdecke Geschichte hautnah",
+      "url": "https://www.tag-des-offenen-denkmals.de/",
+      "snippet": "Tauche ein in Deutschlands größtes Kulturevent: Entdecke historische Orte mit seltenen Einblicken – am Tag des offenen …"
+    },
+    {
+      "title": "Programm | Tag des offenen Denkmals®",
+      "url": "https://www.tag-des-offenen-denkmals.de/programm",
+      "snippet": "Jetzt das Programm 2026 entdecken Am 13. September wieder Geschichte und Handwerk live erleben – kostenlos und hautnah! …"
+    },
+    {
+      "title": "Login",
+      "url": "https://registrierung.tag-des-offenen-denkmals.de/",
+      "snippet": "Willkommen! Wenn Sie Teil des größten Kulturevent Deutschlands sein möchten, sind Sie hier genau richtig! Login Login mit Ihrer E …"
+    },
+    {
+      "title": "Registrieren mit E-Mail-Adresse und Passwort - Tag des offenen …",
+      "url": "https://registrierung.tag-des-offenen-denkmals.de/auth/register",
+      "snippet": "Registrieren mit E-Mail-Adresse und Passwort Sie können sich durch Eingabe Ihrer E-Mail-Adresse und eines Passworts registrieren. …"
+    },
+    {
+      "title": "Denkmale entdecken beim Tag des offenen Denkmals am 14.9.2025",
+      "url": "https://staging.tag-des-offenen-denkmals.de/",
+      "snippet": "Bundesweites Programm und App zum Tag des offenen Denkmals am 14.9.2025; Magazin, Foto-Aktion und Gewinnspiel sowie das …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ImKyungjin/pi0-office-mixed-noise-10pct-40ep-convex",
+  "slug": "imkyungjin-pi0-office-mixed-noise-10pct-40ep-convex",
+  "author": "ImKyungjin",
+  "url": "https://huggingface.co/ImKyungjin/pi0-office-mixed-noise-10pct-40ep-convex",
+  "created_at": "2026-09-13T10:31:36.000Z",
+  "updated_at": "2026-09-13T10:35:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi0",
+    "dataset:taewonkoo/office_task_mixed_suboptimal_seed1000_10pct_40ep",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 7011556176,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Geometry Dash - Official Website",
+      "url": "https://www.geometrydash.com/",
+      "snippet": "Official Geometry Dash website by RobTop Games. Play the browser demo, view top player leaderboards, and get the game."
+    },
+    {
+      "title": "Geometry Dash – Jeu en Ligne Gratuit",
+      "url": "https://geometrydash.fr/",
+      "snippet": "Découvrez Geometry Dash, un jeu de plateforme rythmique où chaque saut doit être parfaitement synchronisé avec la musique. …"
+    },
+    {
+      "title": "Geometry Dash - Jouez gratuitement sur Geo Dash",
+      "url": "https://geodash.org/fr",
+      "snippet": "Jouez à Geometry Dash dans votre navigateur. Sautez, volez et foncez à travers des niveaux rythmés et exigeants. Aucun …"
+    },
+    {
+      "title": "Games - Geometry Dash",
+      "url": "https://geometrydash.com/games/",
+      "snippet": "Browse the Geometry Dash game family: the original Geometry Dash, Geometry Dash Lite, Geometry Dash Meltdown, World, and …"
+    },
+    {
+      "title": "Geometry Dash Lite - Play Free On Geometry.games",
+      "url": "https://geometry.games/game/geometry-dash-lite/index.html",
+      "snippet": "Geometry Dash Lite is a free, fun, and challenging rhythm-based platformer. Jump, fly, and flip gravity through auto-scrolling levels. …"
+    }
+  ]
+}

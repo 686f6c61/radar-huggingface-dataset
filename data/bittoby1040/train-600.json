@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Bittoby1040/train-600",
+  "slug": "bittoby1040-train-600",
+  "author": "Bittoby1040",
+  "url": "https://huggingface.co/Bittoby1040/train-600",
+  "created_at": "2026-09-13T01:58:52.000Z",
+  "updated_at": "2026-09-13T01:59:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234484173,
+  "storage_human": "70.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "P 173 Breeze Chippendale Flügel |PETROF, spol. s r.o.",
+      "url": "https://www.petrof.de/p-173-breeze-chippendale-flugel",
+      "snippet": "Eine Bereicherung für die Welt der Musik und der Kunst. Der Flügel Breeze Chippendale hat auffallend geformte Kurven und passt …"
+    },
+    {
+      "title": "PETROF Flügel |PETROF, spol. s r.o.",
+      "url": "https://www.petrof.de/petrof-flugel",
+      "snippet": "Teil der Style Collection von PETROF ist auch der Flügel Breeze Demichippendale – ein Instrument, dessen künstlerische …"
+    },
+    {
+      "title": "Petrof P 173 Breeze Chippendale – 173 cm - klaviano.com",
+      "url": "https://www.klaviano.com/de/grand-pianos-for-sale/petrof/p173breezechippendale/new-petrof-p-173-breeze-chippendale-414454.html",
+      "snippet": "Seine ausgeprägten Kurven und das vom Chippendale-Stil inspirierte Design verleihen ihm eine starke visuelle Persönlichkeit, die …"
+    },
+    {
+      "title": "Petrof P 173 Breeze Chippendale – Flügel 173 cm",
+      "url": "https://www.klaviano.com/de/grand-pianos-for-sale/petrof/p173breezechippendale/new-petrof-p-173-breeze-chippendale-406315.html",
+      "snippet": "Petrof P 173 Breeze Chippendale – eleganter Flügel mit geschwungenen Formen und klarem, singendem Ton. Erhältlich in Weiß, …"
+    },
+    {
+      "title": "Grand piano P 173 Breeze Chippendale | PETROF, spol. s r.o.",
+      "url": "https://www.petrof.com/grand-piano-p-173-breeze-chippendale",
+      "snippet": "The Breeze Chippendale has distinctively formed curves, making it ideal for stylishly furnished interiors. This piano immediately draws …"
+    }
+  ]
+}

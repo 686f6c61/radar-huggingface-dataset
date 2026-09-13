@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "putty77/p77-6",
+  "slug": "putty77-p77-6",
+  "author": "putty77",
+  "url": "https://huggingface.co/putty77/p77-6",
+  "created_at": "2026-05-22T03:38:14.000Z",
+  "updated_at": "2026-09-13T08:46:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25987367592,
+  "storage_human": "26.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "الصفحة الرئيسية | البريد السعودي | سبل",
+      "url": "https://splonline.com.sa/ar/",
+      "snippet": "أكثر من 450 فرع لخدمتكم الآن أصبحنا أقرب لكم تطبيق سبل أون لاين استفد من خدمات سبل عبر التطبيق، واستمتع بتجربة أسهل وأسرع. حمّل التطبيق الآن! تحذير لعملائنا من الرسائل الاحتيالية"
+    },
+    {
+      "title": "العنوان الوطني | البريد السعودي | سبل",
+      "url": "https://splonline.com.sa/ar/national-address-1/",
+      "snippet": "العنوان الوطني شرح التفاصيل رقم المبنى (4 أرقام فريدة تمثل مبنى سكني أو تجاري) الشارع (الشارع الذي يقع عليه المدخل الرئيسي للمبنى) الرقم الفرعي (4 أرقام تمثل احداثيات الموقع الدقيق للمبنى؛ مفيدة …"
+    },
+    {
+      "title": "البريد السعودي | سُـبل",
+      "url": "https://accounts.splonline.com.sa/ar/Account/Login",
+      "snippet": "مرحبا بكم في منصة سبل اون لاين للجهات الحكومية والتي تمكنكم من إدارة الخدمات الالكترونية الخاصة بكم. لإنشاء حساب جديد على سبل أون لاين للجهات الحكومية نرجو منكم التواصل مع فريق المبيعات …"
+    },
+    {
+      "title": "SPL",
+      "url": "https://accounts.splonline.com.sa/en/Account/Login",
+      "snippet": "Welcome to SPL online for government entities which enables you with to manage your eservices. To create a new account on the …"
+    },
+    {
+      "title": "البريد السعودي | سُـبل",
+      "url": "https://eservices.splonline.com.sa/home/homeAddress",
+      "snippet": "البريد السعودي | سُـبل En"
+    }
+  ]
+}

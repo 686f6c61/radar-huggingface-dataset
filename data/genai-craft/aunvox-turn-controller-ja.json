@@ -5,7 +5,7 @@
   "author": "genai-craft",
   "url": "https://huggingface.co/genai-craft/aunvox-turn-controller-ja",
   "created_at": "2026-08-30T18:45:02.000Z",
-  "updated_at": "2026-08-30T18:45:34.000Z",
+  "updated_at": "2026-09-12T18:55:22.000Z",
   "license": "aunvox-model-license-1.0",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -30,7 +30,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1244989166,
+  "storage_bytes": 1248177104,
   "storage_human": "1.2 GB",
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tzervas/lab-bitnet-embedding-0.6B-i2s",
+  "slug": "tzervas-lab-bitnet-embedding-0-6b-i2s",
+  "author": "tzervas",
+  "url": "https://huggingface.co/tzervas/lab-bitnet-embedding-0.6B-i2s",
+  "created_at": "2026-09-13T02:53:34.000Z",
+  "updated_at": "2026-09-13T02:53:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "bitnet",
+    "b1.58",
+    "i2_s",
+    "embedding",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 596336640,
+  "parameters_human": "596.3M",
+  "storage_bytes": 427935008,
+  "storage_human": "428 MB",
+  "base_model": "microsoft/BitNet-embedding-0.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Doobie Brothers announce new tour and Wilmington stop",
+      "url": "https://portcitydaily.com/latest-news/2026/03/23/doobie-brothers-announce-new-tour-wilmington-only-nc-stop/",
+      "snippet": "Mar 23, 2026 · She specializes in arts coverage — music, film, literature, theatre — the dining scene, and can often be tapped on …"
+    },
+    {
+      "title": "The Doobie Brothers - 2026 Tour Dates & Concert Schedule - Live Nation",
+      "url": "https://www.livenation.com/artist/K8vZ9171C7f/the-doobie-brothers-events",
+      "snippet": "Find concert tickets for The Doobie Brothers upcoming 2026 shows. Explore The Doobie Brothers tour schedules, latest setlist, …"
+    },
+    {
+      "title": "The Doobie Brothers Tickets | 6th October | Live Oak Bank Pavilion",
+      "url": "https://www.wilmingtonpavilion.com/events/the-doobie-brothers-06-october-2026/",
+      "snippet": "Don't miss this opportunity to revel in spectacular live music from your favorite artist! The Doobie Brothers is taking over North …"
+    },
+    {
+      "title": "ROCK ICONS THE DOOBIE BROTHERS ANNOUNCE 2026 NORTH …",
+      "url": "https://thedoobiebrothers.com/blogs/news/rock-icons-the-doobie-brothers-announce-2026-north-american-walk-this-road-tour-dates",
+      "snippet": "(March 23, 2026) Today, Grammy Award-winning, Platinum-selling, Rock & Roll Hall of Fame and Songwriters Hall of Fame legends …"
+    },
+    {
+      "title": "The Doobie Brothers: Walk This Road Tour | Wilmington, NC",
+      "url": "https://www.entradasx.com/event/doobie-brothers-october-2026-wilmington",
+      "snippet": "Legendary rock band The Doobie Brothers are set to perform at the Live Oak Bank Pavilion at Riverfront Park in Wilmington, North …"
+    }
+  ]
+}

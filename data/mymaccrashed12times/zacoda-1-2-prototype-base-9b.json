@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mymaccrashed12times/zacoda-1.2-prototype-base-9b",
+  "slug": "mymaccrashed12times-zacoda-1-2-prototype-base-9b",
+  "author": "mymaccrashed12times",
+  "url": "https://huggingface.co/mymaccrashed12times/zacoda-1.2-prototype-base-9b",
+  "created_at": "2026-09-09T12:38:43.000Z",
+  "updated_at": "2026-09-13T02:56:11.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "other",
+    "zacoda",
+    "hackathon",
+    "mla",
+    "gqa",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9532674356,
+  "parameters_human": "9.53B",
+  "storage_bytes": 43724242232,
+  "storage_human": "43.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rendelje meg ebédjét az e-food-tól! | Van, aki finoman szereti",
+      "url": "https://www.e-food.hu/",
+      "snippet": "Válassza az e-food ebédjét, és biztos lehet benne, hogy jó minőségű, megbízható forrásból beszerzett alapanyagokból készült, és …"
+    },
+    {
+      "title": "Rendelés - e-Food Ebédrendelés",
+      "url": "https://rendel.e-food.hu/",
+      "snippet": "Order your favorite meals online with e-Food's easy-to-use platform and enjoy a variety of delicious options delivered to your doorstep."
+    },
+    {
+      "title": "Rendelés - e-Food Ebédrendelés",
+      "url": "https://rendel.e-food.hu/Aj%EF%BF%BDnlom",
+      "snippet": "VEGÁN ételeink hozzájárulnak a megfelelő minőségű és mennyiségű napi fehérjebevitelhez, és nem utolsó sorban kreatív és ízletes …"
+    },
+    {
+      "title": "Szolgáltatásaink | e-food - Van, aki finoman szereti!",
+      "url": "https://www.e-food.hu/szolgaltatasaink/",
+      "snippet": "Egyszerű regisztráció után választhat és rendelhet. Akár napi egy adag étel kiszállítását is vállaljuk! Várjuk megrendelését és jó …"
+    },
+    {
+      "title": "e-FOOD! | ételfutár, ételrendelés, étel házhozszállítás, menü ...",
+      "url": "https://www.efood.hu/",
+      "snippet": "e-Food - ételfutár, ételrendelés, étel házhozszállítás, menü házhozszállítás, étel rendelés, diétás étrend, fogyókúrás ételek, ebéd ..."
+    }
+  ]
+}

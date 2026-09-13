@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "karankumarova/cross-modal-fusion",
+  "slug": "karankumarova-cross-modal-fusion",
+  "author": "karankumarova",
+  "url": "https://huggingface.co/karankumarova/cross-modal-fusion",
+  "created_at": "2026-09-13T10:51:02.000Z",
+  "updated_at": "2026-09-13T10:51:08.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "cross-modal-fusion",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "韵达快递的人工服务电话是多少_百度知道",
+      "url": "https://zhidao.baidu.com/question/1694331387362316948.html",
+      "snippet": "韵达快递 的 人工 客服热线 是95546。 韵达快递总部设立了全国客户服务中心，开通全国统一客户服务热线电话，为客户提供查询、 …"
+    },
+    {
+      "title": "EUE premium 是什么意思? 什么螺纹? - 百度知道",
+      "url": "https://zhidao.baidu.com/question/80147797.html",
+      "snippet": "Dec 25, 2008 · EUE premium 是什么意思? 什么螺纹? 今天收到一个国外客人的电邮,在邮件中提到这个单词:EUEpremium,我知道这是 …"
+    },
+    {
+      "title": "MS Office project在哪里免费下载？ - 知乎",
+      "url": "https://www.zhihu.com/question/410322335",
+      "snippet": "回答关于MS Office Project免费下载及其与苹果系统兼容性的相关问题。"
+    },
+    {
+      "title": "怎么免费从道客巴巴下载文档？ - 知乎",
+      "url": "https://www.zhihu.com/question/59290100",
+      "snippet": "道客巴巴同样是我们在搜索资料时经常使用的文库，资源仅次于百度文库，这里只介绍一种下载方法，一招足以致命！ Mac系统 …"
+    },
+    {
+      "title": "EUE和UPTBG的区别，_百度知道",
+      "url": "https://zhidao.baidu.com/question/152979634.html",
+      "snippet": "EUE和UPTBG的区别，我以前也有同样的疑问！EUE:外加厚油管也叫 (UPTBG)。NUE：不加厚油管 (TBG)。"
+    }
+  ]
+}

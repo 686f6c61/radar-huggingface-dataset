@@ -5,7 +5,7 @@
   "author": "meshllm",
   "url": "https://huggingface.co/meshllm/GLM-5.3-Flash-UD-Q4_K_XL-layers",
   "created_at": "2026-08-28T01:39:09.000Z",
-  "updated_at": "2026-08-28T02:18:35.000Z",
+  "updated_at": "2026-09-12T22:04:30.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,8 +33,8 @@
   "trending_score": 0,
   "parameters": 289521910,
   "parameters_human": "289.5M",
-  "storage_bytes": 202452023264,
-  "storage_human": "202.5 GB",
+  "storage_bytes": 402612111680,
+  "storage_human": "402.6 GB",
   "base_model": "unsloth/GLM-5.3-Flash-GGUF",
   "formats": [
     "gguf"

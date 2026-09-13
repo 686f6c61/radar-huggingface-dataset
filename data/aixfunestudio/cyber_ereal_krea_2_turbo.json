@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AIxFuneStudio/Cyber_eReal_Krea_2_Turbo",
+  "slug": "aixfunestudio-cyber_ereal_krea_2_turbo",
+  "author": "AIxFuneStudio",
+  "url": "https://huggingface.co/AIxFuneStudio/Cyber_eReal_Krea_2_Turbo",
+  "created_at": "2026-09-13T01:03:51.000Z",
+  "updated_at": "2026-09-13T03:01:44.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14304978356,
+  "storage_human": "14.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rundreisen.de - Safari Rundreisen",
+      "url": "https://www.rundreisen.de/de/suedafrika/safari-rundreisen.html",
+      "snippet": "Willkommen bei Rundreisen.de - dem Spezialisten für Rundreisen seit 16 Jahren. Hier finden Sie eine einzigartige Auswahl mit vielen …"
+    },
+    {
+      "title": "Südafrika Reisen | Geführte Safaris und individuell | Outback Afrika ...",
+      "url": "https://www.outback-africa.de/suedafrika",
+      "snippet": "Outback Africa bietet eine breite Auswahl an Südafrika-Reisen: rustikale Touren oder exklusive Lodges, geführte Kleingruppenreisen …"
+    },
+    {
+      "title": "Südafrika Rundreisen | Kapstadt, Garden Route & die Big Five!",
+      "url": "https://www.journaway.com/de/inspiration/destination/suedafrika",
+      "snippet": "Aug 10, 2026 · Deine Südafrika Rundreise beginnt mit einer Safari im Krüger Nationalpark. Frühmorgens. Die Savanne still. Dann: …"
+    },
+    {
+      "title": "Südafrika Rundreisen entdecken | MEIERS WELTREISEN",
+      "url": "https://www.meiers-weltreisen.de/rundreisen/afrika/suedafrika",
+      "snippet": "Eine aufregende Safari durch den Kruger-Nationalpark, traumhafte Landschaften entlang der Garden Route oder die Weingüter der …"
+    },
+    {
+      "title": "Südafrika Rundreisen – Safari & Wildnis | Berge & Meer",
+      "url": "https://www.berge-meer.de/thema/gefuehrte-rundreisen/ziel/suedafrika",
+      "snippet": "Auf geführten Rundreisen in Südafrika entdecken Sie Flora und Fauna, Kultur und Geschichte. Erleben Sie z. B. den Krüger …"
+    }
+  ]
+}

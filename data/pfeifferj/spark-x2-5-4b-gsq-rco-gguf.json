@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "pfeifferj/Spark-X2.5-4B-GSQ-RCO-GGUF",
+  "slug": "pfeifferj-spark-x2-5-4b-gsq-rco-gguf",
+  "author": "pfeifferj",
+  "url": "https://huggingface.co/pfeifferj/Spark-X2.5-4B-GSQ-RCO-GGUF",
+  "created_at": "2026-09-13T10:49:35.000Z",
+  "updated_at": "2026-09-13T10:54:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gsq",
+    "rco",
+    "quantization",
+    "mixed-precision",
+    "text-generation",
+    "arxiv:2604.18556",
+    "arxiv:2605.00649",
+    "base_model:XHToken/Spark-X2.5-4B",
+    "base_model:quantized:XHToken/Spark-X2.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 3341007360,
+  "storage_human": "3.3 GB",
+  "base_model": "XHToken/Spark-X2.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Organigramme Entreprise avec des icônes d'avatar : image vectorielle de …",
+      "url": "https://www.shutterstock.com/fr/image-vector/corporate-organizational-chart-business-avatar-icons-2499620805?msockid=37bab4a594186af7087ca37695936b24",
+      "snippet": "Aug 7, 2024 · Trouvez des images de stock « Organigramme Entreprise avec des icônes d'avatar » en HD et des millions d’autres …"
+    },
+    {
+      "title": "Organigramme avec des icônes d'avatar d'entreprise",
+      "url": "https://fr.freepik.com/vecteurs-premium/organigramme-icones-avatar-entreprise_83710925.htm",
+      "snippet": "Téléchargez ce vecteur Premium sur Organigramme avec des icônes d'avatar d'entreprise et explorez des millions de vecteurs …"
+    },
+    {
+      "title": "Images sur Avatar organisation : Téléchargement gratuit sur Magnific ...",
+      "url": "https://www.magnific.com/fr/photos-vecteurs-libre/avatar-organisation",
+      "snippet": "Trouvez/téléchargez des ressources graphiques Avatar organisation gratuites. Usage commercial gratis Images haute qualité"
+    },
+    {
+      "title": "organigramme Entreprise avec icônes d'avatar d'entreprise ...",
+      "url": "https://www.shutterstock.com/fr/image-vector/corporate-organizational-chart-business-avatar-icons-2450766217?msockid=37bab4a594186af7087ca37695936b24",
+      "snippet": "Apr 17, 2024 · Trouvez des images de stock « organigramme Entreprise avec icônes d'avatar d'entreprise. » en HD et des millions …"
+    },
+    {
+      "title": "Organigramme d'entreprise avec des icônes d'avatar d'entreprise",
+      "url": "https://fr.freepik.com/vecteurs-premium/organigramme-entreprise-icones-avatar-entreprise_29961399.htm",
+      "snippet": "Téléchargez ces Vecteur premium sur Organigramme d'entreprise avec des icônes d'avatar d'entreprise, et découvrez plus de 15M …"
+    }
+  ]
+}

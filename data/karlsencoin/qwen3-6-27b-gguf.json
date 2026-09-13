@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "karlsencoin/Qwen3.6-27B-GGUF",
+  "slug": "karlsencoin-qwen3-6-27b-gguf",
+  "author": "karlsencoin",
+  "url": "https://huggingface.co/karlsencoin/Qwen3.6-27B-GGUF",
+  "created_at": "2026-09-13T10:44:32.000Z",
+  "updated_at": "2026-09-13T10:44:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "unsloth",
+    "qwen",
+    "qwen3_5",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:quantized:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 427449736544,
+  "storage_human": "427.4 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Delcampe | Vendere e comprare i propri oggetti di collezionismo",
+      "url": "https://www.delcampe.net/it/collezionismo/",
+      "snippet": "107,09 € CPA - ART NOUVEAU - MM VIENNE (73) T1- R. KIRCHNER - JEUNES FEMMES D'ATHÈNES 18,00 € 0 offerte Coffret BU …"
+    },
+    {
+      "title": "Europa-CEPT - [N] Italia / Italy 2016: Europa - Delcampe",
+      "url": "https://www.delcampe.net/it/collezionismo/francobolli/europa-cept/2016/n-italia-italy-2016-europa-protezione-dell-ambiente-think-green-2239975627.html",
+      "snippet": "Serie completa autoadesiva nuova emessa dall'Italia nel 2016 per il giro Europa dedicato alla protezione dell'ambiente. Italy 2016 - …"
+    },
+    {
+      "title": "Delcampe - Facebook",
+      "url": "https://www.facebook.com/delcampe/photos/",
+      "snippet": "Delcampe, la marketplace des collectionneurs Delcampe, the collectors' marketplace."
+    },
+    {
+      "title": "Categorie di oggetti di collezionismo | Delcampe",
+      "url": "https://www.delcampe.net/it/collezionismo/category",
+      "snippet": "Scoprite tutte le categorie di oggetti da collezione su Delcampe: francobolli, cartoline, monete, dischi, libri e molto altro."
+    },
+    {
+      "title": "6. 1946-.. Repubblica - Italia ° - 2016 - Piazze d'Italia - Delcampe",
+      "url": "https://www.delcampe.net/it/collezionismo/francobolli/italia-6-1946-repubblica/2011-2020-usati/italia-2016-piazze-d-italia-piazza-della-signoria-firenze-unif-3767-usato-2501045660.html",
+      "snippet": "Tutti i pagamenti vengono effettuati tramite il sito web di Delcampe. In base a quanto offerto dal venditore, è possibile utilizzare …"
+    }
+  ]
+}

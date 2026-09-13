@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "arunos728/cosmos3-ap-dexjoco-11task-latent2-b512-16k",
+  "slug": "arunos728-cosmos3-ap-dexjoco-11task-latent2-b512-16k",
+  "author": "arunos728",
+  "url": "https://huggingface.co/arunos728/cosmos3-ap-dexjoco-11task-latent2-b512-16k",
+  "created_at": "2026-09-13T01:22:52.000Z",
+  "updated_at": "2026-09-13T01:26:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 91050557084,
+  "storage_human": "91.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Smart Audio Error Message - HP Support Community - 7233179",
+      "url": "https://h30434.www3.hp.com/t5/Desktop-Audio/Smart-Audio-Error-Message/td-p/7233179",
+      "snippet": "Sep 10, 2019 · I keep getting a fail to initialize error message for Smart Audio, how do I fix or remove this, I can't find a Smart Audio …"
+    },
+    {
+      "title": "Home - HP Support Community",
+      "url": "https://h30434.www3.hp.com/",
+      "snippet": "Join the conversation in HP’s Support Community / Forum to find solutions, ask questions, and share tips for HP Notebooks, Printers, …"
+    },
+    {
+      "title": "微软商店下载不了hp smart 有没有安装包直接使用的",
+      "url": "https://h30471.www3.hp.com/t5/da-yin-ji-shi-yong-xiang-guan-wen-ti/wei-ruan-shang-dian-xia-zai-bu-lehp-smart-you-mei-you-an-zhuang-bao-zhi-jie-shi-yong-de/td-p/1243184",
+      "snippet": "Jul 13, 2023 · 微软商店下载不了hp smart 有没有安装包直接使用的 发布时间 ‎2023-07-1314:32:47 产品名称: HP officejet pro 9010 …"
+    },
+    {
+      "title": "已解决: HP Smart安装包 - 惠普支持社区 - 1086188",
+      "url": "https://h30471.www3.hp.com/t5/da-yin-ji-shi-yong-xiang-guan-wen-ti/HP-Smart-an-zhuang-bao/td-p/1086188",
+      "snippet": "Apr 17, 2021 · 这是我电脑系统 ，打开123.hp.com下载在软件驱动里下载hp smart，但是直接跳转到microsoft store，打不开所以下不 …"
+    },
+    {
+      "title": "How to download HP Smart App for Windows 7",
+      "url": "https://h30434.www3.hp.com/t5/Printers-Archive-Read-Only/How-to-download-HP-Smart-App-for-Windows-7/td-p/8708358",
+      "snippet": "Jun 12, 2023 · Is there a way for me to get the HP App on my computer to connect to my printer even though I only have Windows 7. …"
+    }
+  ]
+}

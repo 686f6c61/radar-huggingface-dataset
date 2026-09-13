@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "karlsencoin/Qwen3.5-9B-GGUF",
+  "slug": "karlsencoin-qwen3-5-9b-gguf",
+  "author": "karlsencoin",
+  "url": "https://huggingface.co/karlsencoin/Qwen3.5-9B-GGUF",
+  "created_at": "2026-09-13T10:42:25.000Z",
+  "updated_at": "2026-09-13T10:42:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "unsloth",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 147808628480,
+  "storage_human": "147.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Santa Lucia (Lied) – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Santa_Lucia_(Lied)",
+      "snippet": "Santa Lucia ist ein neapolitanisches Lied (Canzone napoletana) aus der Mitte des 19. Jahrhunderts, das besonders in Skandinavien …"
+    },
+    {
+      "title": "Santa Lucia - Noten, Liedtext, MIDI, Akkorde - Lieder-Archiv",
+      "url": "https://www.lieder-archiv.de/santa_lucia_schoen_glaenzt_das_mondeslicht-notenblatt_700044.html",
+      "snippet": "Santa Lucia (Schön glänzt das Mondlicht am Himmelsbogen) Neapolitanisches Volkslied zu dem diverse Textvarianten überliefert …"
+    },
+    {
+      "title": "Santa Lucia - Lied über die Lichterkönigin #joundjosephine # ...",
+      "url": "https://www.youtube.com/watch?v=x-s5QTitKDw",
+      "snippet": "Dec 10, 2025 · Heute gibt’s Santa Lucia - ganzes Lied hier: • Santa Lucia – Jo & Josephine - deutschen L..."
+    },
+    {
+      "title": "Santa Lucia (song) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Santa_Lucia_(song)",
+      "snippet": "The original lyrics of \"Santa Lucia\" celebrate the picturesque waterfront district Borgo Santa Lucia in the Gulf of Naples, with an …"
+    },
+    {
+      "title": "Santa Lucia - YouTube",
+      "url": "https://www.youtube.com/watch?v=mVJJd0NNkYE",
+      "snippet": "Feb 19, 2011 · The great Napolitan song \"Santa Lucia\" sung by the great voice of Alfie Boe and accompanied with pictures from the …"
+    }
+  ]
+}

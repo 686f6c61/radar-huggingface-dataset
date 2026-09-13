@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "leary-criste/model-base-box",
+  "slug": "leary-criste-model-base-box",
+  "author": "leary-criste",
+  "url": "https://huggingface.co/leary-criste/model-base-box",
+  "created_at": "2026-09-13T02:45:04.000Z",
+  "updated_at": "2026-09-13T02:46:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483981,
+  "storage_human": "70.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PUBG Cheats (Arcane) - Esp / WallHack - elitepvpers",
+      "url": "https://www.elitepvpers.com/forum/playerunknowns-battlegrounds-trading/5236879-pubg-cheats-arcane-esp-wallhack-updated.html",
+      "snippet": "Jun 28, 2024 · Customize activation keys, target bones, FOV radius, aiming smoothness, player information and individual visual …"
+    },
+    {
+      "title": "Arcane Services - Mod Menus & Boosting",
+      "url": "https://arcanemenus.com/",
+      "snippet": "9 hours ago · Arcane Services: Premium mod menus, cheats, HWID spoofers, Cronus Zen scripts & DMA tools for ARC Raiders, …"
+    },
+    {
+      "title": "Arcane Arc Raiders : Premium Cheat with Aimbot & ESP | MadChad",
+      "url": "https://madchad.net/product/arcane-arc-raiders/",
+      "snippet": "Introducing Arcane Arc Raiders, a premium private cheat for Arc Raiders crafted for players who demand stability, precision, and …"
+    },
+    {
+      "title": "GitHub - bleh2rich/Arcane: A Script For Arcane Odyssey Made By …",
+      "url": "https://github.com/bleh2rich/Arcane",
+      "snippet": "Oct 7, 2024 · A Script For Arcane Odyssey Made By Dood3 https://discord.gg/gd8Vfa5kh5 - bleh2rich/Arcane"
+    },
+    {
+      "title": "Arcane Hacked - ArcadePreHacks.com",
+      "url": "https://www.arcadeprehacks.com/game/3408/Arcane.html",
+      "snippet": "Money and Now a Health hack, you can turn it on or off if you don't want it.. Hack buttons under the game, if you don't see them …"
+    }
+  ]
+}

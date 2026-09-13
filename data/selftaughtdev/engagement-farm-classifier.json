@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "selftaughtdev/engagement-farm-classifier",
+  "slug": "selftaughtdev-engagement-farm-classifier",
+  "author": "selftaughtdev",
+  "url": "https://huggingface.co/selftaughtdev/engagement-farm-classifier",
+  "created_at": "2026-09-13T01:54:34.000Z",
+  "updated_at": "2026-09-13T02:06:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "social-media",
+    "content-filtering",
+    "engagement-bait",
+    "distillation",
+    "base_model:google/bert_uncased_L-8_H-512_A-8",
+    "base_model:quantized:google/bert_uncased_L-8_H-512_A-8",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 41374210,
+  "parameters_human": "41.4M",
+  "storage_bytes": 207530402,
+  "storage_human": "208 MB",
+  "base_model": "google/bert_uncased_L-8_H-512_A-8",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Australian Eastern Standard Time – AEST Time Zone",
+      "url": "https://www.timeanddate.com/time/zones/aest",
+      "snippet": "Australian Eastern Standard Time (AEST) is the easternmost time zone in Australia. It is used in five Australian states and territories: …"
+    },
+    {
+      "title": "Time in Australia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Time_in_Australia",
+      "snippet": "Australia uses three main time zones: Australian Western Standard Time (AWST; UTC+08:00), Australian Central Standard Time …"
+    },
+    {
+      "title": "Why is it so often claimed that AI agents will replace software jobs ...",
+      "url": "https://www.quora.com/Why-is-it-so-often-claimed-that-AI-agents-will-replace-software-jobs-when-running-them-can-cost-thousands-of-dollars-per-day-in-token-budgets-often-exceeding-the-cost-of-human-developers",
+      "snippet": "24.06.2026 ... But the shovel needs a farmer, just as much as the farmer needs the shovel. True agentic intelligence that can generate creative thought like ..."
+    },
+    {
+      "title": "Australian Eastern Standard Time",
+      "url": "https://time.is/AEST",
+      "snippet": "10 hours ago · Exact time now, time zone, time difference, sunrise/sunset time and key facts for Australian Eastern Standard Time …"
+    },
+    {
+      "title": "A Beautiful Journey Back to My College — From Student to Mentor! It ...",
+      "url": "https://www.facebook.com/siddharth.pilli.1/posts/-a-beautiful-journey-back-to-my-college-from-student-to-mentor-it-was-an-incredi/1783895726366764/",
+      "snippet": "05.09.2026 ... **Enhanced Engagement**: Keeping students engaged is crucial. ... AI, ChatGPT, Gemini AI, Grok AI, Lovable, and Gamma. We're truly ..."
+    }
+  ]
+}

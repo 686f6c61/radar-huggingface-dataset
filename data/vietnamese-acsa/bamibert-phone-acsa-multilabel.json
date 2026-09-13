@@ -5,7 +5,7 @@
   "author": "vietnamese-acsa",
   "url": "https://huggingface.co/vietnamese-acsa/bamibert-phone-acsa-multilabel",
   "created_at": "2026-08-31T10:08:57.000Z",
-  "updated_at": "2026-08-31T10:09:39.000Z",
+  "updated_at": "2026-09-12T05:18:42.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 34,
+  "downloads_30d": 40,
   "trending_score": 0,
   "parameters": 102981928,
   "parameters_human": "103.0M",
-  "storage_bytes": 411957065,
-  "storage_human": "412 MB",
+  "storage_bytes": 823908865,
+  "storage_human": "824 MB",
   "base_model": null,
   "formats": [
     "safetensors"

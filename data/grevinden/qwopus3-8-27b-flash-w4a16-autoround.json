@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "grevinden/Qwopus3.8-27B-Flash-W4A16-AutoRound",
+  "slug": "grevinden-qwopus3-8-27b-flash-w4a16-autoround",
+  "author": "grevinden",
+  "url": "https://huggingface.co/grevinden/Qwopus3.8-27B-Flash-W4A16-AutoRound",
+  "created_at": "2026-09-13T10:19:38.000Z",
+  "updated_at": "2026-09-13T11:18:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "qwen",
+    "qwen3.5",
+    "multimodal",
+    "vision-language",
+    "auto-round",
+    "compressed-tensors",
+    "w4a16",
+    "int4",
+    "quantization",
+    "marlin",
+    "rtx-3090",
+    "cix",
+    "vllm",
+    "gated-deltanet",
+    "hybrid-attention",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Jackrong/Qwopus3.8-27B-Flash",
+    "base_model:quantized:Jackrong/Qwopus3.8-27B-Flash",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6260690960,
+  "parameters_human": "6.26B",
+  "storage_bytes": 16764986644,
+  "storage_human": "16.8 GB",
+  "base_model": "Jackrong/Qwopus3.8-27B-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "60 Millions de Consommateurs — Accueil",
+      "url": "https://www.60millions-mag.com/",
+      "snippet": "Les applications de nutrition offrent de nombreux services, gratuits ou payants, qui permettent de suivre précisément un programme …"
+    },
+    {
+      "title": "Amazon Haul : notre test révèle de sérieux problèmes de conformité",
+      "url": "https://www.60millions-mag.com/commerce/article/amazon-haul-la-foire-aux-produits-non-conformes-20260506/",
+      "snippet": "May 6, 2026 · Amazon Haul : notre test révèle de sérieux problèmes de conformité Des milliers d’objets sont vendus quelques euros …"
+    },
+    {
+      "title": "Amazon Prime Day 2026: Zahlreiche Spiele und Gaming-Produkte im …",
+      "url": "https://www.dvd-forum.at/amazon-prime-day-2026-zahlreiche-spiele-und-gaming-produkte-im-angebot",
+      "snippet": "Jun 23, 2026 · Auch Gamer kommen beim diesjährigen Amazon Prime Day 2026 auf ihre Kosten. Amazon hat aktuell zahlreiche …"
+    },
+    {
+      "title": "Amazon Prime Day 2026: Hunderttausende Angebote vom 23. bis 26.",
+      "url": "https://www.dvd-forum.at/amazon-prime-day-2026-hunderttausende-angebote-vom-23-bis-26-juni-angekuendigt",
+      "snippet": "Jun 3, 2026 · Amazon hat den Termin für den diesjährigen Prime Day bekannt gegeben. Das große Shopping-Event findet von 23. …"
+    },
+    {
+      "title": "Envoyer de l’argent avec Wero : comment ça marche",
+      "url": "https://www.60millions-mag.com/banque-assurance/article/envoyer-de-l-argent-avec-wero-comment-ca-marche-25444-20260304/",
+      "snippet": "Mar 4, 2026 · 2. Qui peut l’utiliser ? « Tout client particulier dont la banque propose le service, soit la quasi-totalité des …"
+    }
+  ]
+}

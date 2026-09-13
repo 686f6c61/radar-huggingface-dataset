@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "DFveloper/Lumen-3.5-Pulsar-Base-GGUF",
+  "slug": "dfveloper-lumen-3-5-pulsar-base-gguf",
+  "author": "DFveloper",
+  "url": "https://huggingface.co/DFveloper/Lumen-3.5-Pulsar-Base-GGUF",
+  "created_at": "2026-09-13T02:06:34.000Z",
+  "updated_at": "2026-09-13T02:07:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 14341325824,
+  "storage_human": "14.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cost Guide: Legal Fees for Contract Review Lawyers in Abu Dhabi.",
+      "url": "https://www.legalservicesuae.ae/cost-guide-legal-fees-for-contract-review-lawyers-in-abu-dhabi/",
+      "snippet": "Dec 18, 2025 · Corporate law often involves hourly billing of 1,000–3,000 AED for tasks such as contract reviews or legal disputes. A …"
+    },
+    {
+      "title": "How Much Does a Lawyer Cost in Dubai? Lawyer Legal Fees 2026",
+      "url": "https://hhslawyers.com/blog/lawyer-cost-dubai-legal-fees/",
+      "snippet": "Feb 19, 2026 · The cost of legal services in Dubai depends on the complexity of the case, experience of the lawyer, and services one …"
+    },
+    {
+      "title": "How Much Do Lawyers Charge in Dubai? UAE Fees by City (2026)",
+      "url": "https://www.haqq.ai/blog/lawyer-fees-mena",
+      "snippet": "May 22, 2026 · Dubai is the one Gulf market where you can actually price a lawyer before you walk in. Across the published 2026 fee …"
+    },
+    {
+      "title": "Registrar’s Direction No. 1 Of 2023 – Indicative Hourly Legal Charges",
+      "url": "https://www.difccourts.ae/rules-decisions/registrars-directions/registrars-direction-no-1-2023-indicative-hourly-legal-charges",
+      "snippet": "In order to provide a benchmark to the Courts of the average charge out rates in Dubai, a survey of law firms has been undertaken …"
+    },
+    {
+      "title": "How Much Does It Cost to Hire a Lawyer in Dubai? (2026)",
+      "url": "https://2s-lawyers.com/cost-to-hire-lawyer-in-dubai/",
+      "snippet": "Lawyers in Dubai typically charge between AED 500 and AED 2,500 per hour for consultations and advisory work. Fixed fees, …"
+    }
+  ]
+}

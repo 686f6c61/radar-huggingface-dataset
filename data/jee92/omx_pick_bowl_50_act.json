@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Jee92/omx_pick_bowl_50_act",
+  "slug": "jee92-omx_pick_bowl_50_act",
+  "author": "Jee92",
+  "url": "https://huggingface.co/Jee92/omx_pick_bowl_50_act",
+  "created_at": "2026-09-13T02:50:57.000Z",
+  "updated_at": "2026-09-13T02:51:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Jee92/omx_pick_bowl_20",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206707288,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Human Body Poses royalty-free images - Shutterstock",
+      "url": "https://www.shutterstock.com/search/human-body-poses?msockid=0a288eb217276e2d25499961166d6f3c",
+      "snippet": "Find 507,523 Human Body Poses stock images in HD and millions of other royalty-free stock photos, 3D objects, illustrations and …"
+    },
+    {
+      "title": "Human Pose Illustration royalty-free images - Shutterstock",
+      "url": "https://www.shutterstock.com/search/human-pose-illustration?msockid=0a288eb217276e2d25499961166d6f3c",
+      "snippet": "Find 305+ Thousand Human Pose Illustration stock images in HD and millions of other royalty-free stock photos, 3D objects, …"
+    },
+    {
+      "title": "14,853 Human Body Pose High Res Illustrations - Getty Images",
+      "url": "https://www.gettyimages.com/illustrations/human-body-pose",
+      "snippet": "Browse Getty Images' premium collection of high-quality, authentic Human Body Pose stock illustrations, royalty-free vectors, and …"
+    },
+    {
+      "title": "880 Illustration - poses ideas in 2026 | human poses reference, body ...",
+      "url": "https://www.pinterest.com/lichan81/illustration-poses/",
+      "snippet": "Aug 22, 2026 - Explore Linda Wilmsen-Boulay's board \"Illustration - poses\" on Pinterest. See more ideas about human poses …"
+    },
+    {
+      "title": "132,200+ Human Body Pose Stock Illustrations, Royalty-Free Vector ...",
+      "url": "https://www.istockphoto.com/illustrations/human-body-pose?msockid=0a288eb217276e2d25499961166d6f3c",
+      "snippet": "Browse 132,200+ human body pose stock illustrations and vector graphics available royalty-free, or start a new search to explore …"
+    }
+  ]
+}

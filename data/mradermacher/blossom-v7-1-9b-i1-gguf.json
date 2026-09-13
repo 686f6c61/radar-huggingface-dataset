@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Blossom-V7.1-9B-i1-GGUF",
+  "slug": "mradermacher-blossom-v7-1-9b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Blossom-V7.1-9B-i1-GGUF",
+  "created_at": "2026-09-13T11:02:35.000Z",
+  "updated_at": "2026-09-13T11:03:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 3920119744,
+  "storage_human": "3.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Soundbar - Skroutz.gr",
+      "url": "https://www.skroutz.gr/c/1735/soundbar.html",
+      "snippet": "Βρες Soundbar στην καλύτερη τιμή! Διάβασε κριτικές & διάλεξε ανάμεσα σε 300+ προϊόντα. Αγόρασε εύκολα μέσω Skroutz!"
+    },
+    {
+      "title": "Soundbars - Public",
+      "url": "https://www.public.gr/cat/ihos/soundbars",
+      "snippet": "Το soundbar είναι μια συσκευή ήχου που τοποθετείς κάτω από την τηλεόρασή σου για να βελτιώσεις την ποιότητα του ήχου. Είναι …"
+    },
+    {
+      "title": "Soundbars - Plaisio.gr",
+      "url": "https://www.plaisio.gr/list/thleoraseis-ixos/ixos/soundbars",
+      "snippet": "Στο plaisio.gr θα βρεις sound bars & multirooms σε διάφορα σχέδια και ισχύ από 20 έως και 320W."
+    },
+    {
+      "title": "Soundbars σε Μοναδικές Τιμές | ΚΩΤΣΟΒΟΛΟΣ - kotsovolos.gr",
+      "url": "https://www.kotsovolos.gr/sound-vision/home-cinema/soundbars",
+      "snippet": "Βρες το ιδανικό Soundbar για εσένα! Επιλογές από κορυφαία brands, με προηγμένα χαρακτηριστικά & μοναδικές προσφορές!"
+    },
+    {
+      "title": "Soundbar HDMI (ARC) | Skroutz.gr",
+      "url": "https://www.skroutz.gr/c/1735/soundbar/f/768995/HDMI-ARC.html",
+      "snippet": "Βρες Soundbar HDMI (ARC) στην καλύτερη τιμή! Διάβασε κριτικές & διάλεξε ανάμεσα σε 200+ προϊόντα. Αγόρασε εύκολα μέσω …"
+    }
+  ]
+}

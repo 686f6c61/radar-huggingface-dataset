@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "tzervas/lab-bitnet-b1.58-2B-4T-w158a8",
+  "slug": "tzervas-lab-bitnet-b1-58-2b-4t-w158a8",
+  "author": "tzervas",
+  "url": "https://huggingface.co/tzervas/lab-bitnet-b1.58-2B-4T-w158a8",
+  "created_at": "2026-09-13T02:59:35.000Z",
+  "updated_at": "2026-09-13T02:59:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bitnet",
+    "b1.58",
+    "w1.58a8",
+    "w2a8",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1835349474,
+  "storage_human": "1.8 GB",
+  "base_model": "microsoft/BitNet-b1.58-2B-4T",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "简历的篇幅是一页好还是两页好？ - 知乎",
+      "url": "https://www.zhihu.com/question/20193873",
+      "snippet": "结论：98%的使用场景简历应当保持在一页，仅2种情况简历无需考虑一页限制。 先说说为什么我们大多数的简历场景应该将简历压缩 …"
+    },
+    {
+      "title": "如何评价雷诺汽车？ - 知乎",
+      "url": "https://www.zhihu.com/question/28990410",
+      "snippet": "后来借着石油危机的东风， 经济型的雷诺5号又成了爆款， 秉承之前的赛车传统， 雷诺F1的成绩也非常亮眼。 后来为了美国市场，雷 …"
+    },
+    {
+      "title": "请问有谁知道IATF16949认证是什么啊？ - 知乎",
+      "url": "https://www.zhihu.com/question/58765379",
+      "snippet": "IATF的成员由如下9家整车厂：宝马 (BMWGroup），克莱斯勒 (ChryslerLLC），戴姆勒（DaimlerAG），菲亚特 …"
+    },
+    {
+      "title": "Eidosper - 知乎",
+      "url": "https://www.zhihu.com/people/eidosper",
+      "snippet": "虽然如果安卓有这个API可能会用于广告，但是从鸿蒙相关API的实践来看没人这么干，所以可以推测iOS这边也能实现类似的管控： …"
+    },
+    {
+      "title": "如何评价东风雷诺Kadjar (科雷嘉)这款车？ - 知乎",
+      "url": "https://www.zhihu.com/question/33317409",
+      "snippet": "先摆明利益相关，东风日产在职员工。 ——————————————————————分割线 首先声明，没开过科雷嘉，以下观点 …"
+    }
+  ]
+}

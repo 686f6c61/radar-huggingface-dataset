@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "zs0506/qwen3vl-8B-full-no_parameters-vit",
+  "slug": "zs0506-qwen3vl-8b-full-no_parameters-vit",
+  "author": "zs0506",
+  "url": "https://huggingface.co/zs0506/qwen3vl-8B-full-no_parameters-vit",
+  "created_at": "2026-09-13T01:54:39.000Z",
+  "updated_at": "2026-09-13T01:58:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_vl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 770288,
+  "parameters_human": "770288",
+  "storage_bytes": 17545771395,
+  "storage_human": "17.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - mdeverdelhan/ecoledirecte-client: Bibliothèque Java d ...",
+      "url": "https://github.com/mdeverdelhan/ecoledirecte-client",
+      "snippet": "ecoledirecte-client vise à simplifier l'accès à l'API d'EcoleDirecte pour le développement Java. Elle se veut légère et simple …"
+    },
+    {
+      "title": "zs0506/qwen3vl-8B-lora-no_parameters-r64-vit · Hugging Face",
+      "url": "https://huggingface.co/zs0506/qwen3vl-8B-lora-no_parameters-r64-vit",
+      "snippet": "Use the code below to get started with the model."
+    },
+    {
+      "title": "GitHub - qLVN/EDBruteforce: EcoleDirecte bruteforcing program",
+      "url": "https://github.com/qLVN/EDBruteforce",
+      "snippet": "EcoleDirecte bruteforcing program. Contribute to qLVN/EDBruteforce development by creating an account on GitHub."
+    },
+    {
+      "title": "EcoleDirecte | Mode Sombre · GitHub",
+      "url": "https://gist.github.com/msylvest-22102007/88373dbd747d97a7cb1e8809ca74e8cf",
+      "snippet": "EcoleDirecte | Mode Sombre. GitHub Gist: instantly share code, notes, and snippets."
+    },
+    {
+      "title": "ecoledirecte-2017-pas-fini.css · GitHub",
+      "url": "https://gist.github.com/Gildas-GH/490d62dfae9d68333be7bedad78fb6fb",
+      "snippet": "GitHub Gist: instantly share code, notes, and snippets."
+    }
+  ]
+}

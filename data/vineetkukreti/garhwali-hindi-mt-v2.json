@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "vineetkukreti/garhwali-hindi-mt-v2",
+  "slug": "vineetkukreti-garhwali-hindi-mt-v2",
+  "author": "vineetkukreti",
+  "url": "https://huggingface.co/vineetkukreti/garhwali-hindi-mt-v2",
+  "created_at": "2026-09-13T02:57:39.000Z",
+  "updated_at": "2026-09-13T03:11:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "hi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mt5",
+    "text2text-generation",
+    "translation",
+    "garhwali",
+    "hindi",
+    "pahari",
+    "low-resource",
+    "uttarakhand",
+    "machine-translation",
+    "hi",
+    "base_model:google/mt5-small",
+    "base_model:finetune:google/mt5-small",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 300176768,
+  "parameters_human": "300.2M",
+  "storage_bytes": 1205045347,
+  "storage_human": "1.2 GB",
+  "base_model": "google/mt5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download & use Google Translate",
+      "url": "https://support.google.com/translate/answer/6350850?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can translate text, handwriting, photos, and speech in over 200 languages with the Google Translate app. You can also use …"
+    },
+    {
+      "title": "Télécharger et utiliser Google Traduction",
+      "url": "https://support.google.com/translate/answer/6350850?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Télécharger et utiliser Google Traduction Vous pouvez traduire du texte saisi au clavier, en écriture manuscrite, sur une photo ou …"
+    },
+    {
+      "title": "Google API Key for translation - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/4854388/google-api-key-for-translation",
+      "snippet": "Jan 31, 2011 · Upload the Google Translate API key to your site. Check with your hosting company where on your system to place …"
+    },
+    {
+      "title": "Google Translate API (paid) vs Google Translate API (free)?",
+      "url": "https://stackoverflow.com/questions/43155233/google-translate-api-paid-vs-google-translate-api-free",
+      "snippet": "It looks the link you provided is from Google Translate (not an API but a free multilingual machine translation service) instead of …"
+    },
+    {
+      "title": "Google Translate downloaden en gebruiken",
+      "url": "https://support.google.com/translate/answer/6350850?hl=nl&co=GENIE.Platform%3DDesktop",
+      "snippet": "Met de Google Translate-app kun je (handgeschreven) tekst, foto's en spraak vertalen in meer dan 200 talen. Je kunt Translate ook …"
+    }
+  ]
+}

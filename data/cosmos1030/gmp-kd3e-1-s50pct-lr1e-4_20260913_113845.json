@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "cosmos1030/gmp-kd3e-1-s50pct-lr1e-4_20260913_113845",
+  "slug": "cosmos1030-gmp-kd3e-1-s50pct-lr1e-4_20260913_113845",
+  "author": "cosmos1030",
+  "url": "https://huggingface.co/cosmos1030/gmp-kd3e-1-s50pct-lr1e-4_20260913_113845",
+  "created_at": "2026-09-13T02:38:45.000Z",
+  "updated_at": "2026-09-13T02:39:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 11849057680,
+  "storage_human": "11.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SiteGround Login",
+      "url": "https://login.siteground.com/users?lang=en",
+      "snippet": "Hello! Sign up now."
+    },
+    {
+      "title": "SiteGround Login",
+      "url": "https://login.siteground.com/signup?lang=en",
+      "snippet": "To provide the ultimate experience for you, we have designed our platform with the latest technology available. To get advantage of …"
+    },
+    {
+      "title": "Web Hosting Perfected - SiteGround",
+      "url": "https://www.siteground.com/",
+      "snippet": "The reliability, the performance, the support – everything at SiteGround just works. When you're running a small team and working on …"
+    },
+    {
+      "title": "SiteGround Login",
+      "url": "https://login-banners.siteground.com/en/promo",
+      "snippet": "Discover how you can turn your ideas into complete, functional apps and sites in just minutes. Try it free in your Client Area."
+    },
+    {
+      "title": "How to Log Into Your SiteGround Client Area with Your Google Profile",
+      "url": "https://www.siteground.com/kb/login-with-google",
+      "snippet": "Jul 28, 2026 · Learn how to log into your SiteGround Client Area using your Google profile. Follow these simple steps for a seamless …"
+    }
+  ]
+}

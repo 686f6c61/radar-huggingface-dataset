@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "coconor/a2c-PandaReachDense-v3",
+  "slug": "coconor-a2c-pandareachdense-v3",
+  "author": "coconor",
+  "url": "https://huggingface.co/coconor/a2c-PandaReachDense-v3",
+  "created_at": "2026-09-13T02:24:06.000Z",
+  "updated_at": "2026-09-13T02:43:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "PandaReachDense-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 816729,
+  "storage_human": "816729 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deliveroo - Takeaway Food Delivery from Local Restaurants & Shops",
+      "url": "https://deliveroo.be/",
+      "snippet": "We deliver your takeouts or essential groceries from the best-rated local partners straight to your door. Download our app or order …"
+    },
+    {
+      "title": "Find your favourite takeaway with Deliveroo",
+      "url": "https://deliveroo.be/en/takeaway/",
+      "snippet": "Home / Cuisines / Find your favourite takeaway with Deliveroo From perfect pizzas to towering burgers, order delicious food from our …"
+    },
+    {
+      "title": "Takeaway delivery in Liege - Order with Deliveroo",
+      "url": "https://deliveroo.be/en/restaurants/liege/liege",
+      "snippet": "Looking for amazing food in Liege? Order online and get fresh food or drink delivered from the best local restaurants straight to your …"
+    }
+  ]
+}

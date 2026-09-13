@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ImKyungjin/pi0-office-mixed-noise-30pct-40ep-baseline",
+  "slug": "imkyungjin-pi0-office-mixed-noise-30pct-40ep-baseline",
+  "author": "ImKyungjin",
+  "url": "https://huggingface.co/ImKyungjin/pi0-office-mixed-noise-30pct-40ep-baseline",
+  "created_at": "2026-09-13T10:58:21.000Z",
+  "updated_at": "2026-09-13T11:02:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi0",
+    "dataset:taewonkoo/office_task_mixed_suboptimal_seed1000_30pct_40ep",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 7011556176,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Novke - YouTube",
+      "url": "https://www.youtube.com/channel/UCURlpFWEyij724FND2MEs0w",
+      "snippet": "DEFKO I ĆAKI SVESKE SU DOSTUPNE U SVIM KENGUR RADNJAMA! 📝📝 Ocenite ih obavezno u komentarima 👇🏻 Novke"
+    },
+    {
+      "title": "Defko i Ćaki Merch — Zvanični Novke & Šmigićka Shop",
+      "url": "https://novkesmigicka.rs/",
+      "snippet": "Nova letnja kolekcija majica i šortsa sa omiljenim likovima Defkom i Ćakijem. Poruči odmah i budi spreman za leto!"
+    },
+    {
+      "title": "Novke i Smigicka - YouTube",
+      "url": "https://www.youtube.com/@NovkeiSmigicka",
+      "snippet": "Izašao je video otvaranje poklona sa meet upa iz Galerije! Apsolutno neverovatno koliko ih imaa.. 😅."
+    },
+    {
+      "title": "Novke on TikTok",
+      "url": "https://www.tiktok.com/@novke/video/7434935074694483256",
+      "snippet": "Nov 8, 2024 · 22.11. u 19h ću odratiti najvažniji stream do sada. Moram pobediti Šmigu i pokazati joj ko je bolji u igrama. Dođite da …"
+    },
+    {
+      "title": "Šmigićka i Novke: Stalno isti problemi | TikTok",
+      "url": "https://www.tiktok.com/@novke/video/7369904231702088966",
+      "snippet": "May 17, 2024 · TikTok video from Novke (@novke): “Pogledajte šta se dešava kada se šmigićka i Novke nađu zajedno! Pratite …"
+    }
+  ]
+}

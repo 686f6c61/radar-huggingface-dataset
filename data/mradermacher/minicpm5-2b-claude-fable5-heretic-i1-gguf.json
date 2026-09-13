@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MiniCPM5-2B-Claude-Fable5-heretic-i1-GGUF",
+  "slug": "mradermacher-minicpm5-2b-claude-fable5-heretic-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MiniCPM5-2B-Claude-Fable5-heretic-i1-GGUF",
+  "created_at": "2026-09-13T11:01:28.000Z",
+  "updated_at": "2026-09-13T11:01:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 774438,
+  "parameters_human": "774438",
+  "storage_bytes": 3141792,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "B-Zone V",
+      "url": "https://gta5.ro/",
+      "snippet": ""
+    },
+    {
+      "title": "B-ZONE V",
+      "url": "https://gta5.ro/landing",
+      "snippet": "Why Choose B-Zone V? Own and customize hundreds of unique vehicles with our advanced modification system. Buy, sell, and …"
+    },
+    {
+      "title": "B-Zone RPG Website",
+      "url": "https://www.rpg.b-zone.ro/",
+      "snippet": "Comunitatea B-Zone deține în acest moment un server de SA-MP, bucurându-se de un public larg atât la nivel național cât și …"
+    },
+    {
+      "title": "Forums - B-Zone Community",
+      "url": "https://forum.b-zone.ro/",
+      "snippet": "18 ani de B-Zone, la multi ani! Click pentru a vedea evenimentele pregatite pentru voi. ×"
+    },
+    {
+      "title": "B-Zone RPG Website",
+      "url": "https://www.rpg.b-zone.ro/clans/top/sort/created/DESC/1",
+      "snippet": "real_estate_agent Shop Houses info Wiki"
+    }
+  ]
+}

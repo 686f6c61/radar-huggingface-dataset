@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "rdfsd/Qwen3.6-27B-NVFP4",
+  "slug": "rdfsd-qwen3-6-27b-nvfp4",
+  "author": "rdfsd",
+  "url": "https://huggingface.co/rdfsd/Qwen3.6-27B-NVFP4",
+  "created_at": "2026-09-13T10:21:14.000Z",
+  "updated_at": "2026-09-13T10:21:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "Model Optimizer",
+  "languages": [],
+  "tags": [
+    "Model Optimizer",
+    "safetensors",
+    "qwen3_5",
+    "nvidia",
+    "ModelOpt",
+    "Qwen3.6",
+    "quantized",
+    "FP4",
+    "fp4",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:quantized:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18164649200,
+  "parameters_human": "18.16B",
+  "storage_bytes": 21934505166,
+  "storage_human": "21.9 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "edge浏览器网页与此站点链接不安全怎么解决？ - 知乎",
+      "url": "https://www.zhihu.com/question/487808345",
+      "snippet": "Sep 19, 2021 · 方法一： 快捷方式添加参数 Chrome内核浏览器，例如 Edge 等，支持通过添加“--ignore-certificate-errors”参数改变浏 …"
+    },
+    {
+      "title": "请教关于excel的错误值（#N/A、#VALUE!、#REF!、#DIV/0!、#NUM!",
+      "url": "https://zhidao.baidu.com/question/309167825.html",
+      "snippet": "解决方法：修改公式，使其结果在有效数字范围之间。 6．#NULL！ 使用了不正确的区域运算符或不正确的单元格引用。 当试图为两 …"
+    },
+    {
+      "title": "null - 知乎",
+      "url": "https://www.zhihu.com/people/null-9-45",
+      "snippet": "Aug 11, 2026 · 小说都是人写的，世界观没有强弱之分，能分强弱的是人的文笔。为什么郭敬明写人有钱，就只能写出这个包10w，那 …"
+    },
+    {
+      "title": "急：DB2报错DB2 SQL error: SQLCODE: -101, SQLSTATE: 54001, …",
+      "url": "https://bbs.csdn.net/topics/350018064",
+      "snippet": "Aug 29, 2010 · 如题，我在编写了一个触发器后，在前台填写好数据后，保存，出现DB2 SQL error: SQLCODE: -101, SQLSTATE: …"
+    },
+    {
+      "title": "生物实验中mock control vector三种对照有何区别？另外还有什么阴性 …",
+      "url": "https://zhidao.baidu.com/question/184956353.html",
+      "snippet": "生物实验中mock control vector三种对照有何区别？另外还有什么阴性对照组，内参对照组，可以的话业介绍下mock更接近于negative …"
+    }
+  ]
+}

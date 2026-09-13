@@ -27,11 +27,12 @@
     "dataset:ethicalabs/Research-Intent-Curated",
     "base_model:ethicalabs/Echo-DSRN-114M-v0.1.2",
     "base_model:finetune:ethicalabs/Echo-DSRN-114M-v0.1.2",
+    "doi:10.57967/hf/10376",
     "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 251,
+  "downloads_30d": 153,
   "trending_score": 0,
   "parameters": 98266629,
   "parameters_human": "98.3M",

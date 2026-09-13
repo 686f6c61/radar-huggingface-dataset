@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/ppt-wc-uniform-newlex-77-eng-100mb_seed99",
+  "slug": "fpadovani-ppt-wc-uniform-newlex-77-eng-100mb_seed99",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/ppt-wc-uniform-newlex-77-eng-100mb_seed99",
+  "created_at": "2026-09-13T10:07:09.000Z",
+  "updated_at": "2026-09-13T10:10:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/eng_latn_100mb",
+    "base_model:finetune:goldfish-models/eng_latn_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 86508288,
+  "parameters_human": "86.5M",
+  "storage_bytes": 1384375929,
+  "storage_human": "1.4 GB",
+  "base_model": "goldfish-models/eng_latn_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "So überprüfen Sie die Bildschirmzeit in Windows 11",
+      "url": "https://tecnobits.com/de/So-%C3%BCberpr%C3%BCfen-Sie-die-Bildschirmzeit-in-Windows-11/",
+      "snippet": "Feb 6, 2024 · Öffnen Sie das Windows 11-Startmenü und wählen Sie „Einstellungen“. Klicken Sie unter „Einstellungen“ auf „Konten“. …"
+    },
+    {
+      "title": "Windows 11/10: Bildschirmzeit überprüfen – So geht’s",
+      "url": "https://tippsling.de/bildschirmzeit-ueberpruefen-so-gehts-in-windows-11-und-windows-10/",
+      "snippet": "Mar 12, 2026 · Bildschirmzeit überprüfen in Windows 11 und Windows 10: So sehen Sie auf einen Blick, wie lange Sie täglich am PC …"
+    },
+    {
+      "title": "Windows 11/10: Bildschirmzeit einstellen – So geht’s",
+      "url": "https://tippsling.de/bildschirmzeit-einstellen-so-gehts-in-windows-11-und-10/",
+      "snippet": "Mar 18, 2026 · Bildschirmzeit einstellen in Windows 11 und Windows 10: So begrenzen Sie die tägliche Nutzungszeit für alle …"
+    },
+    {
+      "title": "So prüfst du Bildschirmzeit unter Windows 11 – Schritt für Schritt erklärt",
+      "url": "https://howto.thefilibusterblog.com/de/so-pruefst-du-bildschirmzeit-unter-windows-11-schritt-fuer-schritt-erklaert/",
+      "snippet": "Jun 3, 2025 · Dass man die Bildschirmzeit auf einem Windows 11 PC checken kann, ist eigentlich keine Wissenschaft – geht aber …"
+    },
+    {
+      "title": "So überprüfen Sie die Bildschirmzeit in Windows 10",
+      "url": "https://tecnobits.com/de/So-%C3%BCberpr%C3%BCfen-Sie-die-Bildschirmzeit-in-Windows-10/",
+      "snippet": "Feb 12, 2024 · Was ist die Bildschirmzeit in Windows 10? Die Bildschirmzeit in Windows 10 ist eine Funktion, mit der Sie die Zeit …"
+    }
+  ]
+}

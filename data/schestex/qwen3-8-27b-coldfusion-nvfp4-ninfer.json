@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Schestex/Qwen3.8-27B-ColdFusion-NVFP4-NInfer",
+  "slug": "schestex-qwen3-8-27b-coldfusion-nvfp4-ninfer",
+  "author": "Schestex",
+  "url": "https://huggingface.co/Schestex/Qwen3.8-27B-ColdFusion-NVFP4-NInfer",
+  "created_at": "2026-09-13T01:49:02.000Z",
+  "updated_at": "2026-09-13T09:04:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "ninfer",
+  "languages": [],
+  "tags": [
+    "ninfer",
+    "qwen3_8",
+    "qwen3.8",
+    "nvfp4",
+    "blackwell",
+    "coding",
+    "agentic-coding",
+    "tool-calling",
+    "text-generation",
+    "base_model:DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 47143223808,
+  "storage_human": "47.1 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    }
+  ]
+}

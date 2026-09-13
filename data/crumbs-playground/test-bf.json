@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "crumbs-playground/test-bf",
+  "slug": "crumbs-playground-test-bf",
+  "author": "crumbs-playground",
+  "url": "https://huggingface.co/crumbs-playground/test-bf",
+  "created_at": "2026-09-13T02:30:59.000Z",
+  "updated_at": "2026-09-13T02:53:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 145,
+  "trending_score": 0,
+  "parameters": 40422264,
+  "parameters_human": "40.4M",
+  "storage_bytes": 80862240,
+  "storage_human": "81 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "crumbs - Traduction française – Linguee",
+      "url": "https://www.linguee.fr/anglais-francais/traduction/crumbs.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"crumbs\" – Dictionnaire français-anglais et moteur de recherche de …"
+    },
+    {
+      "title": "crumb - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/crumb",
+      "snippet": "Dans les listes : Words with a silent \"b\", Nabokov, Suite... Synonymes : particle, scrap, morsel, bit, flake, Suite... Collocations : …"
+    },
+    {
+      "title": "Vent - I know it's not new, but the moral lecturing is just ... - Reddit",
+      "url": "https://www.reddit.com/r/ChatGPT/comments/14lbodb/vent_i_know_its_not_new_but_the_moral_lecturing/",
+      "snippet": "28.06.2023 ... Remind it that as an AI model it doesn't have an opinion and it's ... I highly recommend spending some time with the openAI playground to gain ..."
+    },
+    {
+      "title": "Traduction CRUMBS en français | Dictionnaire anglais-français | Reverso",
+      "url": "https://dictionnaire.reverso.net/anglais-francais/crumbs",
+      "snippet": "Découvrez des expressions contenant \"crumbs\" en anglais. Plongez dans notre trésor de phrases et expressions contenant \"crumbs\" …"
+    },
+    {
+      "title": "CRUMB | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/crumb",
+      "snippet": "The autumn statement can rightly be described as containing very small crumbs of little comfort."
+    }
+  ]
+}

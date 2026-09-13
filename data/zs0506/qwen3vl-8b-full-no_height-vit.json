@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "zs0506/qwen3vl-8B-full-no_height-vit",
+  "slug": "zs0506-qwen3vl-8b-full-no_height-vit",
+  "author": "zs0506",
+  "url": "https://huggingface.co/zs0506/qwen3vl-8B-full-no_height-vit",
+  "created_at": "2026-09-13T01:51:55.000Z",
+  "updated_at": "2026-09-13T01:54:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_vl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 770288,
+  "parameters_human": "770288",
+  "storage_bytes": 17545771331,
+  "storage_human": "17.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/",
+      "snippet": "Securely sign in to access your Microsoft account and manage emails, calendars, and other services efficiently."
+    },
+    {
+      "title": "Sign in to your account - portal.office.com",
+      "url": "https://portal.office.com/Home/",
+      "snippet": "No account? Create one! Can’t access your account? Terms of use Privacy & cookies ..."
+    },
+    {
+      "title": "Office",
+      "url": "https://www.office.live.com/?auth=1",
+      "snippet": "نودّ لو كان بإمكاننا تقديم الوصف ولكن الموقع الذي تراه هنا لا يسمح لنا بذلك."
+    },
+    {
+      "title": "Microsoft 365 - Sign into Copilot - Office",
+      "url": "https://m365.cloud.microsoft/?origindomain=Office",
+      "snippet": "Microsoft 365 includes familiar apps like Word, Excel, PowerPoint, Outlook, Teams, and OneDrive, plus Copilot experiences that help …"
+    },
+    {
+      "title": "Login | Microsoft 365 - office.com",
+      "url": "https://www.office.com/caplogin",
+      "snippet": "Login | Microsoft 365"
+    }
+  ]
+}

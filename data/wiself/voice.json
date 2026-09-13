@@ -5,7 +5,7 @@
   "author": "Wiself",
   "url": "https://huggingface.co/Wiself/Voice",
   "created_at": "2026-09-01T20:46:44.000Z",
-  "updated_at": "2026-09-10T15:34:31.000Z",
+  "updated_at": "2026-09-12T14:16:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 638067,
-  "storage_human": "638067 B",
+  "storage_bytes": 968862,
+  "storage_human": "968862 B",
   "base_model": "google/gemma-4-26B-A4B-it",
   "formats": [
     "gguf"

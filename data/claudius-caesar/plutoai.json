@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Claudius-Caesar/PlutoAI",
+  "slug": "claudius-caesar-plutoai",
+  "author": "Claudius-Caesar",
+  "url": "https://huggingface.co/Claudius-Caesar/PlutoAI",
+  "created_at": "2026-09-13T10:13:07.000Z",
+  "updated_at": "2026-09-13T10:39:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1498539722,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate Help",
+      "url": "https://support.google.com/translate/?hl=en",
+      "snippet": "Official Google Translate Help Center where you can find tips and tutorials on using Google Translate and other answers to …"
+    },
+    {
+      "title": "International Classification of Diseases (ICD)",
+      "url": "https://www.who.int/standards/classifications/classification-of-diseases",
+      "snippet": "Due to its multilingual design, controlled translation environment, and openly governed structure, ICD-11 is a reliable foundation for …"
+    },
+    {
+      "title": "Translate written words - Computer - Google Translate Help",
+      "url": "https://support.google.com/translate/answer/6142478?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "On your computer, open Google Translate. At the top of the screen, select the languages to translate. From: Choose a language or …"
+    },
+    {
+      "title": "非传染性疾病 - World Health Organization (WHO)",
+      "url": "https://www.who.int/zh/news-room/fact-sheets/detail/noncommunicable-diseases",
+      "snippet": "概述 非传染性疾病也称为慢性病，往往持续时间较长，是遗传、生理、环境和行为因素共同作用的结果。 非传染性疾病的主要类型包 …"
+    },
+    {
+      "title": "Translate images - Computer - Google Translate Help",
+      "url": "https://support.google.com/translate/answer/6142483?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "To: Select the language that you want the translation in. To choose an image that you want to translate, click Browse your computer. …"
+    }
+  ]
+}

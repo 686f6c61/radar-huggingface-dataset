@@ -5,7 +5,7 @@
   "author": "bivariant",
   "url": "https://huggingface.co/bivariant/GRIOT-ASR-W-0.8-ALL",
   "created_at": "2026-08-27T07:45:13.000Z",
-  "updated_at": "2026-09-11T01:16:00.000Z",
+  "updated_at": "2026-09-12T20:44:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",

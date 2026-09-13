@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "bertholomus/DeepSeek-V4.1-Flash-DSpark-TP4-4xGB10-Recipe",
+  "slug": "bertholomus-deepseek-v4-1-flash-dspark-tp4-4xgb10-recipe",
+  "author": "bertholomus",
+  "url": "https://huggingface.co/bertholomus/DeepSeek-V4.1-Flash-DSpark-TP4-4xGB10-Recipe",
+  "created_at": "2026-09-13T10:03:58.000Z",
+  "updated_at": "2026-09-13T10:04:00.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "sglang",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sglang",
+    "dgx-spark",
+    "gb10",
+    "deepseek",
+    "deepseek-v4.1-flash",
+    "speculative-decoding",
+    "tensor-parallel",
+    "deployment-recipe",
+    "quantization-analysis",
+    "en",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HBO Max | Stream Series and Movies",
+      "url": "https://www.hbomax.com/",
+      "snippet": "By signing up for this bundle, HBO Max will share your email address & subscription details with Disney+ and Hulu for eligibility, …"
+    },
+    {
+      "title": "American Express Credit Cards, Rewards & Banking",
+      "url": "https://www.americanexpress.com/",
+      "snippet": "American Express offers world-class Charge and Credit Cards, Gift Cards, Rewards, Travel, Personal Savings, Business Services, …"
+    },
+    {
+      "title": "What is Microsoft Dynamics AX? - Rand Group",
+      "url": "https://www.randgroup.com/insights/microsoft/dynamics-365/finance-operations/finance/what-is-microsoft-dynamics-ax/",
+      "snippet": "May 3, 2025 · Microsoft Dynamics AX is a legacy enterprise resource planning (ERP) solution designed to unify business systems."
+    },
+    {
+      "title": "Ax or Axe: What's the Difference? | Merriam-Webster",
+      "url": "https://www.merriam-webster.com/grammar/ax-vs-axe-difference",
+      "snippet": "The words 'ax' and 'axe' are both correct, but 'axe' is more common. The shorter spelling 'ax' was favored by Noah Webster, but 'axe' …"
+    },
+    {
+      "title": "Armani Exchange | Clothing and accessories for men and women US",
+      "url": "https://www.armani.com/en-us/armani-exchange/experience/",
+      "snippet": "Essential, modern and inclusive collections with classic Armani appeal. Discover on-trend Armani Exchange apparel and accessories."
+    }
+  ]
+}

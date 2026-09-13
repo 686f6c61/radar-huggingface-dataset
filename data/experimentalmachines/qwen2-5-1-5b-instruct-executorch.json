@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "experimentalmachines/Qwen2.5-1.5B-Instruct-ExecuTorch",
+  "slug": "experimentalmachines-qwen2-5-1-5b-instruct-executorch",
+  "author": "experimentalmachines",
+  "url": "https://huggingface.co/experimentalmachines/Qwen2.5-1.5B-Instruct-ExecuTorch",
+  "created_at": "2026-09-13T10:32:09.000Z",
+  "updated_at": "2026-09-13T10:45:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "executorch",
+  "languages": [],
+  "tags": [
+    "executorch",
+    "android",
+    "on-device",
+    "openweights",
+    "xnnpack",
+    "text-generation",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4476593152,
+  "storage_human": "4.5 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "جزيرة بانجي - ويكيبيديا",
+      "url": "https://ar.wikipedia.org/wiki/%D8%AC%D8%B2%D9%8A%D8%B1%D8%A9_%D8%A8%D8%A7%D9%86%D8%AC%D9%8A",
+      "snippet": "تقع جزيرة بانجي داخل تقسيم كودات من ولاية صباح الماليزية، وتبلغ مساحتها 440.7 كيلومترا مربعا. [2][3][4] تعتبر بانجي أكبر جزيرة في ماليزيا، تليها جزيرة برويت [الإنجليزية] وجزيرة …"
+    },
+    {
+      "title": "أفضل 10 من فنادق بانغي، ماليزيا (تبدأ الأسعار من 74 SAR)",
+      "url": "https://www.booking.com/city/my/bangi.ar.html?msockid=08280c4a859569cd109c1b998420688e",
+      "snippet": "خصومات هائلة على الفنادق في بانغي, ماليزيا على الإنترنت. توافر جيد وأسعار رائعة. اقرأ تقييمات الفندق واختر أفضل عروض الفنادق لإقامتك."
+    },
+    {
+      "title": "أفضل 5 أنشطة سياحية في بانجي - Tripadvisor",
+      "url": "https://www.tripadvisor.com.eg/Attractions-g298311-Activities-Bangi_Hulu_Langat_District_Selangor.html",
+      "snippet": "أفضل أنشطة سياحية في بانجي على Tripadvisor: طالع تعليقات وصور المسافرين عن أنشطة سياحية في بانجي، ماليزيا"
+    },
+    {
+      "title": "السياحة في بانجي: أفضل ما في بانجي, ماليزيا لعام 2025 - Tripadvisor",
+      "url": "https://www.tripadvisor.com.eg/Tourism-g298311-Bangi_Hulu_Langat_District_Selangor-Vacations.html",
+      "snippet": "زيارة بانجي: يتوفر 140 تعليق حول موارد الرحلات المتوفرة في بانجي، يعد Tripadvisor مصدر المعلومات المتوفرة حول بانجي, ماليزيا."
+    },
+    {
+      "title": "جزيرة بانجي - Wikiwand",
+      "url": "https://www.wikiwand.com/ar/articles/%D8%AC%D8%B2%D9%8A%D8%B1%D8%A9_%D8%A8%D8%A7%D9%86%D8%AC%D9%8A",
+      "snippet": "تقع جزيرة بانجي داخل تقسيم كودات من ولاية صباح الماليزية، وتبلغ مساحتها 440.7 كيلومترا مربعا. تعتبر بانجي أكبر جزيرة في ماليزيا، تليها جزيرة برويت وجزيرة لانكاو..."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "sach0312/qwen3-0.6b-nhl-polymarket-sft-v2",
+  "slug": "sach0312-qwen3-0-6b-nhl-polymarket-sft-v2",
+  "author": "sach0312",
+  "url": "https://huggingface.co/sach0312/qwen3-0.6b-nhl-polymarket-sft-v2",
+  "created_at": "2026-09-13T01:48:56.000Z",
+  "updated_at": "2026-09-13T02:22:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "hf_jobs",
+    "trl",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92221011,
+  "storage_human": "92 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meta for Business (formerly Facebook for Business)",
+      "url": "https://de-de.facebook.com/ads/audience_insights/",
+      "snippet": ""
+    },
+    {
+      "title": "Facebook",
+      "url": "https://de-de.facebook.com/andybar.de/about/",
+      "snippet": "Dies passiert, wenn der Eigentümer den Beitrag nur mit einer kleinen Personengruppe teilt oder er geändert hat, wer ihn sehen kann. …"
+    },
+    {
+      "title": "Facebook-Hilfebereich",
+      "url": "https://de-de.facebook.com/help/search/?query=i+want+to+logg+out",
+      "snippet": "Falls du die verknüpften Funktionen in Facebooks Kontenübersicht nicht aktivierst, kannst du beispielsweise keine Beiträge sowohl …"
+    },
+    {
+      "title": "Was ist das Oversight Board? | Facebook-Hilfebereich",
+      "url": "https://de-de.facebook.com/help/711867306096893/?search_session_id=7d5ab8bc7597078ddb7c9dd21cd2a2a1",
+      "snippet": "Mehr dazu: Wie kann ich beim Oversight Board Einspruch gegen Facebooks Entscheidung bezüglich meines Contents einlegen? …"
+    },
+    {
+      "title": "Wie du Betrug auf Facebook vermeidest | Facebook-Hilfebereich",
+      "url": "https://de-de.facebook.com/help/1674717642789671/?search_session_id=b1e7dad1fa6f8fd96d0bbeb3650ed782",
+      "snippet": "Wie du dich vor verbreiteten Betrugsmaschen auf Facebook schützen kannst, zum Beispiel Lotterie- und Romantikbetrug."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "nullmindai/Huihui-Qwen3.5-35B-A3B-abliterated-Q6K",
+  "slug": "nullmindai-huihui-qwen3-5-35b-a3b-abliterated-q6k",
+  "author": "nullmindai",
+  "url": "https://huggingface.co/nullmindai/Huihui-Qwen3.5-35B-A3B-abliterated-Q6K",
+  "created_at": "2026-09-13T02:01:52.000Z",
+  "updated_at": "2026-09-13T02:03:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 28514153568,
+  "storage_human": "28.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "Gmail Help",
+      "url": "https://support.google.com/mail/?hl=en",
+      "snippet": "Official Gmail Help Center where you can find tips and tutorials on using Gmail and other answers to frequently asked questions."
+    },
+    {
+      "title": "В 32 боюсь не успеть - 223 ответа на форуме Woman.ru (6464092)",
+      "url": "https://www.woman.ru/health/psychology/thread-v-32-boyus-ne-uspet-id6464092/",
+      "snippet": "Sep 5, 2026 · 223 ответа - У меня навязчивый страх не успеть: выйти замуж, родить ребенка, купить квартиру, съехать от ..."
+    },
+    {
+      "title": "Мастер классы и новости из мира рукоделия от 06 сентября",
+      "url": "https://www.passionforum.ru/subscribe/digest/6926",
+      "snippet": "Обзор выпуска от Мастер классы и новости из мира рукоделия от 06 сентября Мастер классы и новости из мира рукоделия …"
+    },
+    {
+      "title": "Мастер классы и новости из мира рукоделия от 22 августа",
+      "url": "https://www.passionforum.ru/subscribe/digest/6897",
+      "snippet": "Обзор выпуска от Мастер классы и новости из мира рукоделия от 22 августа Мастер классы и новости из мира рукоделия от …"
+    }
+  ]
+}

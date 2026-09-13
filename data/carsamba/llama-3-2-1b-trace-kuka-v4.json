@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Carsamba/Llama-3.2-1B-Trace-KUKA-v4",
+  "slug": "carsamba-llama-3-2-1b-trace-kuka-v4",
+  "author": "Carsamba",
+  "url": "https://huggingface.co/Carsamba/Llama-3.2-1B-Trace-KUKA-v4",
+  "created_at": "2026-09-13T10:11:06.000Z",
+  "updated_at": "2026-09-13T10:16:04.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "opentslm",
+    "time-series",
+    "robotics",
+    "soft-prompt",
+    "lora",
+    "text-generation",
+    "base_model:meta-llama/Llama-3.2-1B",
+    "base_model:adapter:meta-llama/Llama-3.2-1B",
+    "license:llama3.2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54697601,
+  "storage_human": "55 MB",
+  "base_model": "meta-llama/Llama-3.2-1B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Whois Lookup - Whois IP Search & Whois Domain Lookup | Whois…",
+      "url": "https://www.whois.com/whois/",
+      "snippet": "Whois Domain Name & IP lookup service to search the whois database for verified registration information"
+    },
+    {
+      "title": "WHOIS Search, Domain Name, Website, and IP Tools - Who.is",
+      "url": "https://who.is/",
+      "snippet": "What is WHOIS? WHOIS is a widely used internet protocol to query databases storing information about registered users of domain …"
+    },
+    {
+      "title": "Whois Lookup, Domain Availability & IP Search - DomainTools",
+      "url": "https://whois.domaintools.com/",
+      "snippet": "Research domain ownership with Whois Lookup: Get ownership info, IP address history, rank, traffic, SEO & more. Find available …"
+    },
+    {
+      "title": "Whois.com - Domain Names & Identity for Everyone",
+      "url": "https://www.whois.com/",
+      "snippet": "Get verified Whois information for any Domain Name, Check Domain Availability for FREE! Register Domain Names at best prices …"
+    },
+    {
+      "title": ".DE WHOIS Database Search | WHOIS.DE",
+      "url": "https://www.whois.de/de/",
+      "snippet": "Der Whois-Service für .de-Domänennamen bietet eine Vielzahl von Informationen über registrierte Domainnamen. Diese …"
+    }
+  ]
+}

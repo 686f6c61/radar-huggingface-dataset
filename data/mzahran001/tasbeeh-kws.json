@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mZahran001/tasbeeh-kws",
+  "slug": "mzahran001-tasbeeh-kws",
+  "author": "mZahran001",
+  "url": "https://huggingface.co/mZahran001/tasbeeh-kws",
+  "created_at": "2026-09-12T16:48:06.000Z",
+  "updated_at": "2026-09-13T03:25:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "onnx",
+    "keyword-spotting",
+    "openwakeword",
+    "tasbeeh",
+    "dhikr",
+    "on-device",
+    "ar",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4296980,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "United Kingdom weather records - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/United_Kingdom_weather_records",
+      "snippet": "The United Kingdom weather records show the most extreme weather ever recorded in the United Kingdom, such as temperature, …"
+    },
+    {
+      "title": "UK climate extremes - Met Office",
+      "url": "https://www.metoffice.gov.uk/research/climate/maps-and-data/uk-climate-extremes",
+      "snippet": "These records are based on digitised data from 1969 and exclude stations above 500 metres AMSL. When compiling this table, an …"
+    },
+    {
+      "title": "How much does it rain in the UK? - Met Office",
+      "url": "https://weather.metoffice.gov.uk/learn-about/weather/types-of-weather/rain/how-much-does-it-rain-in-the-uk",
+      "snippet": "Where gets the most rain? As can be seen in the map below, the wettest parts of the UK are concentrated in mountainous regions …"
+    },
+    {
+      "title": "UK Weather Records & Extremes | Met Office Historic Weather Data",
+      "url": "https://uk-historic-weather.co.uk/uk-weather-records",
+      "snippet": "Sep 2, 2026 · Seathwaite in Cumbria regularly records over 3,000mm of rain annually, making it one of England's wettest inhabited …"
+    },
+    {
+      "title": "Average Precipitation in United Kingdom by Year",
+      "url": "https://www.extremeweatherwatch.com/countries/united-kingdom/average-precipitation-by-year",
+      "snippet": "This page is a list of the average countrywide precipitation in the United Kingdom for each year from 1895–2024. It is an average over …"
+    }
+  ]
+}

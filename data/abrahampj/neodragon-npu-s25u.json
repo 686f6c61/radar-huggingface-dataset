@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AbrahamPJ/neodragon-npu-s25u",
+  "slug": "abrahampj-neodragon-npu-s25u",
+  "author": "AbrahamPJ",
+  "url": "https://huggingface.co/AbrahamPJ/neodragon-npu-s25u",
+  "created_at": "2026-08-22T18:08:27.000Z",
+  "updated_at": "2026-09-13T02:35:32.000Z",
+  "license": "bsd-3-clause-clear",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "qnn",
+  "languages": [],
+  "tags": [
+    "qnn",
+    "qualcomm",
+    "qairt",
+    "npu",
+    "snapdragon",
+    "text-to-video",
+    "neodragon",
+    "arxiv:2511.06055",
+    "license:bsd-3-clause-clear",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13240804752,
+  "storage_human": "13.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Använda Google som standardsökmotor - Google Sök Hjälp",
+      "url": "https://support.google.com/websearch/answer/464?hl=sv",
+      "snippet": "Om du vill få resultat från Google varje gång du söker kan du göra Google till standardsökmotor. Ställa in Google som standard på …"
+    },
+    {
+      "title": "Google Chrome is my default browser, but Microsoft Bing keeps …",
+      "url": "https://support.google.com/chrome/thread/331513223/google-chrome-is-my-default-browser-but-microsoft-bing-keeps-coming-up?hl=en",
+      "snippet": "Mar 16, 2025 · If Bing is listed under \"Other search engines\", click the three dots (⋮) → Remove. 2. Remove Suspicious Extensions …"
+    },
+    {
+      "title": "Enable or Disable Search Indexing in Windows | Tutorials",
+      "url": "https://www.tenforums.com/tutorials/93666-enable-disable-search-indexing-windows.html",
+      "snippet": "Oct 6, 2020 · EXAMPLE: Search indexing disabled The \"Search indexing was turned off.\" message in Search (Win+S) below can be …"
+    },
+    {
+      "title": "Turn On or Off Search online and include web results in Windows 10",
+      "url": "https://www.tenforums.com/tutorials/25016-turn-off-search-online-include-web-results-windows-10-a.html",
+      "snippet": "Mar 29, 2026 · After you type a search term, you can click/tap on My stuff to find results for files, apps, settings, photos, videos, and …"
+    },
+    {
+      "title": "Let us remove the \"Bing search\" context item",
+      "url": "https://support.google.com/pixelphone/thread/107070957/let-us-remove-the-bing-search-context-item?hl=en",
+      "snippet": "Apr 21, 2021 · Let us remove the \"Bing search\" context item When you install the official Outlook app on Android, Microsoft add a …"
+    }
+  ]
+}

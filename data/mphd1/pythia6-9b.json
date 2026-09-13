@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mphd1/pythia6.9b",
+  "slug": "mphd1-pythia6-9b",
+  "author": "mphd1",
+  "url": "https://huggingface.co/mphd1/pythia6.9b",
+  "created_at": "2026-09-13T01:13:55.000Z",
+  "updated_at": "2026-09-13T01:13:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 808,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Best iPhone Alternatives: Our Tested & Reviewed Picks for ... - IGN",
+      "url": "https://www.ign.com/articles/best-iphone-alternatives",
+      "snippet": "Aug 20, 2025 · iPhones are everywhere. If you don't want to buy into the iOS ecosystem, luckily they're definitely not your only option. …"
+    },
+    {
+      "title": "Top 10 Best iPhone Alternatives to Buy in 2025 - Techthirsty",
+      "url": "https://www.techthirsty.com/10-smartphones-that-are-actually-better-than-iphone-in-2025/",
+      "snippet": "Apr 17, 2025 · Explore the best iPhone alternatives 2025 with top features, great cameras, fast charging, and better value for your …"
+    },
+    {
+      "title": "Top 10 Mobile Phone Like iPhone Design and Performance",
+      "url": "https://www.techspecs.info/blog/mobile-phone-like-iphone-desgin/",
+      "snippet": "Aug 10, 2024 · So, to ease your stress, we have rounded up the 10 best mobile phone that imitate the iPhone. The list includes …"
+    },
+    {
+      "title": "Best Non-iPhone and Non-Samsung Smartphones in 2026: Top …",
+      "url": "https://www.techtimes.com/articles/316139/20260428/best-non-iphone-non-samsung-smartphones-2026-top-alternatives-worth-buying.htm",
+      "snippet": "Apr 28, 2026 · Best Non-iPhone/Samsung Smartphones for 2026 highlight the growing range of flagship Android devices outside the …"
+    },
+    {
+      "title": "The best iPhone 13 alternatives: 7 phones to consider before you buy",
+      "url": "https://www.androidauthority.com/apple-iphone-13-alternatives-3022647/",
+      "snippet": "Feb 15, 2024 · Apple's latest phones have just been launched, but what if you want something a little different? Here are our top …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "khamim/qwen-legal-sft-v1",
+  "slug": "khamim-qwen-legal-sft-v1",
+  "author": "khamim",
+  "url": "https://huggingface.co/khamim/qwen-legal-sft-v1",
+  "created_at": "2026-09-13T02:59:08.000Z",
+  "updated_at": "2026-09-13T04:55:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3172800422,
+  "storage_human": "3.2 GB",
+  "base_model": "unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "华硕笔记本office产品如何激活？ - 知乎",
+      "url": "https://www.zhihu.com/question/293385672",
+      "snippet": "注: 华硕电脑预装为Microsoft 365应用程序，如您的机台有搭配永久版Office家庭学生版 2021，请参考以下步骤将Microsoft 365更新 …"
+    },
+    {
+      "title": "如何获取正版的office365并永久使用？ - 知乎",
+      "url": "https://www.zhihu.com/question/494557967",
+      "snippet": "Microsoft 365 教育版的存储变更 | Microsoft 教育 2、理论上账户的所有权都不是你的， 管理员有权力删除你的账户，修改你的密码， …"
+    },
+    {
+      "title": "如何激活Office 365 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/c85b7a642c24f6413aac9548.html",
+      "snippet": "Aug 6, 2020 · 这篇文章主要介绍激活Office 365的三种方法。（如果你还没下载安装Office 365，请先下载安装。链接见下方） 对于大 …"
+    },
+    {
+      "title": "如何卸载电脑预装的office365？ - 知乎",
+      "url": "https://www.zhihu.com/question/372771193",
+      "snippet": "Feb 18, 2020 · 已经解决了！是因为我的自带的365是 Microsoft store 下载的，这种的卸载要去系统设置-应用-卸载那个 desktopapp （ …"
+    },
+    {
+      "title": "Microsoft 365 和Office以及word是什么关系？有什么区别？",
+      "url": "https://www.zhihu.com/question/624250196?write",
+      "snippet": "有评论里疑惑说microsoft 365为什么说是集合一体的。 是微软这个大聪明还搞了一个软件叫做Microsoft 365，在应用商店就能下载， …"
+    }
+  ]
+}

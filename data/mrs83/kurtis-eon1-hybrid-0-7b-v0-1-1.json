@@ -27,11 +27,12 @@
     "en",
     "base_model:ethicalabs/Echo-DSRN-Qwen2.5-0.5B-Hybrid",
     "base_model:finetune:ethicalabs/Echo-DSRN-Qwen2.5-0.5B-Hybrid",
+    "doi:10.57967/hf/10387",
     "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1363,
+  "downloads_30d": 1373,
   "trending_score": 0,
   "parameters": 672190080,
   "parameters_human": "672.2M",

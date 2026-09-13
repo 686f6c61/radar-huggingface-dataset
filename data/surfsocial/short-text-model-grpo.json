@@ -5,7 +5,7 @@
   "author": "SurfSocial",
   "url": "https://huggingface.co/SurfSocial/Short-Text-Model-GRPO",
   "created_at": "2026-08-30T00:56:35.000Z",
-  "updated_at": "2026-08-30T00:56:37.000Z",
+  "updated_at": "2026-09-12T22:55:47.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -23,8 +23,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 31203744,
-  "storage_human": "31 MB",
+  "storage_bytes": 62407488,
+  "storage_human": "62 MB",
   "base_model": null,
   "formats": [
     "safetensors"

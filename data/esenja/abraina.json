@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ESENJA/ABRAINA",
+  "slug": "esenja-abraina",
+  "author": "ESENJA",
+  "url": "https://huggingface.co/ESENJA/ABRAINA",
+  "created_at": "2026-09-13T02:28:32.000Z",
+  "updated_at": "2026-09-13T02:28:32.000Z",
+  "license": "abraina",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iPhone-Zoom deaktivieren: 2 Möglichkeiten gegen das Einzoomen",
+      "url": "https://www.futurezone.de/digital-life/article340852/iphone-zoom-deaktivieren.html",
+      "snippet": "Jun 4, 2022 · Du musst lediglich mit drei Fingern doppelt auf den Bildschirm tippen. Schon ist der Zoom wieder aufgehoben und du …"
+    },
+    {
+      "title": "iPhone-Anzeige zu groß und reingezoomed? So löst man das Problem!",
+      "url": "https://www.sir-apfelot.de/iphone-anzeige-zu-gross-und-reingezoomed-so-loest-man-das-problem-56316/",
+      "snippet": "Dec 11, 2023 · Hier ist der Weg zur Zoom-Funktion über die Einstellungen zu sehen. Die Lösung für die Sache mit der Riesenschrift …"
+    },
+    {
+      "title": "Symbole des Home-Bildschirms auf dem iPhone, iPad oder iPod touch ...",
+      "url": "https://support.apple.com/de-de/109058",
+      "snippet": "Wenn die Symbole auf dem Home-Bildschirm vergrößert dargestellt werden, ist möglicherweise die Zoomfunktion auf dem Gerät …"
+    },
+    {
+      "title": "Auf dem iPhone-Bildschirm einzoomen - Apple Support (DE)",
+      "url": "https://support.apple.com/de-de/guide/iphone/iph3e2e367e/ios",
+      "snippet": "Du kannst den Inhalt auf dem iPhone-Bildschirm mit der Option „Fensterzoom“ oder „Vollbildzoom“ vergrößert darstellen."
+    },
+    {
+      "title": "Bildschirm stark vergrössert und blockiert - Apple Community",
+      "url": "https://communities.apple.com/de/thread/255855080",
+      "snippet": "Hallo Mueti1, oft hilft hier, zweimal kurz hintereinander mit drei Fingern gleichzeitig auf das Display zu tippen, um die ursprüngliche …"
+    }
+  ]
+}

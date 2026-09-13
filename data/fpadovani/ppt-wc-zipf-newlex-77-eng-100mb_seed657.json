@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/ppt-wc-zipf-newlex-77-eng-100mb_seed657",
+  "slug": "fpadovani-ppt-wc-zipf-newlex-77-eng-100mb_seed657",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-77-eng-100mb_seed657",
+  "created_at": "2026-09-13T10:30:35.000Z",
+  "updated_at": "2026-09-13T10:34:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/eng_latn_100mb",
+    "base_model:finetune:goldfish-models/eng_latn_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 86508288,
+  "parameters_human": "86.5M",
+  "storage_bytes": 1384376953,
+  "storage_human": "1.4 GB",
+  "base_model": "goldfish-models/eng_latn_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dlouhá porno videa zdarma",
+      "url": "https://www.dlouha-videa.cz/",
+      "snippet": "Ta nejlepší dlouhá porno videa každý den již od roku 2007 a to bez vynechání jediného dne! Porno vybíráme z nejlepších a …"
+    },
+    {
+      "title": "České porno | PVideo.cz - dlouhá porno videa zdarma",
+      "url": "https://pvideo.cz/category/ceske-porno/",
+      "snippet": "Na internetu je spousta českých porno videí, která vyhledáváme a pak je u nás máte zcela zdarma!"
+    },
+    {
+      "title": "Pornuj.cz - porno, dlouhá videa, porno zdarma, české porno, freevideo",
+      "url": "https://www.pornuj.cz/",
+      "snippet": "Nejlepší porno stránka v ČR! Dlouhá porno videa zcela zdarma. To nejlepší z Pornhub, xvideos a freevideo"
+    },
+    {
+      "title": "PVideo.cz - Dlouhá porno videa zdarma",
+      "url": "https://pvideo.cz/",
+      "snippet": "Dlouhá porno videa ke zhlédnutí zdarma! Velký výběr kvalitních porno videí rozdělených do kategorií. České porno, rychlý prachy, …"
+    },
+    {
+      "title": "Porno Videa a Sexuální Filmy Zdarma - Porno, XXX, Porn Tube",
+      "url": "https://cz.pornhub.com/",
+      "snippet": "Pornhub vám nabízí neomezené množství porno videí zdarma s nejžhavějšími umělci pro dospělé. Užijte si největší amatérskou …"
+    }
+  ]
+}

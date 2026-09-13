@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MiniCPM5-2B-Claude-Fable5-heretic-GGUF",
+  "slug": "mradermacher-minicpm5-2b-claude-fable5-heretic-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MiniCPM5-2B-Claude-Fable5-heretic-GGUF",
+  "created_at": "2026-09-13T10:56:17.000Z",
+  "updated_at": "2026-09-13T11:05:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 22763622528,
+  "storage_human": "22.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gunold GmbH",
+      "url": "https://gunold.de/",
+      "snippet": "Die Firma Gunold bietet ein breites Spektrum an Produkten für das industrielle Sticken und Veredeln unter der Marke Gunold® an. …"
+    },
+    {
+      "title": "Someone Fine-Tuned OpenBMB's MiniCPM5-1B on Claude Fable 5 Traces to Ship a 657MB Local Thinking Model - MarkTechPost",
+      "url": "https://www.marktechpost.com/2026/07/19/someone-fine-tuned-openbmbs-minicpm5-1b-on-claude-fable-5-traces-to-ship-a-657mb-local-thinking-model/",
+      "snippet": "The GGUF card gives a one-line path through Ollama: ... The same repository documents llama.cpp, LM Studio, jan, and KoboldCpp. Recommended sampling for Think mode is temperature=0.9, top_p=0.95. The model may emit reasoning blocks before the final answer, which downstream apps can strip. The model is a supervised fine-tune of OpenBMB’s MiniCPM5-1B on Claude Fable 5 traces, not a weight-level distillation."
+    },
+    {
+      "title": "MiniCPM5-2B GGUF: How Does It Hold Up Locally? | MindStudio",
+      "url": "https://www.mindstudio.ai/blog/minicpm5-2b-gguf-local-test",
+      "snippet": "MiniCPM5-2B-GGUF is a converted and quantized version of the same weights (offered in F16, Q8_0, and Q4_K_M) built specifically to run in llama.cpp, Ollama, and LM Studio on consumer hardware."
+    },
+    {
+      "title": "GUNOLD Shop",
+      "url": "https://www.shop.gunold.de/",
+      "snippet": "Die Firma Gunold bietet ein breites Spektrum an Produkten für das industrielle Sticken und Veredeln unter der Marke Gunold® an. …"
+    },
+    {
+      "title": "GUNOLD Shop",
+      "url": "https://shop.gunold.de/en",
+      "snippet": "The Gunold company offers a wide range of products for industrial embroidery and finishing, as well as for hobby & domestic market …"
+    }
+  ]
+}

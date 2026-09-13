@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "keystats/historical_barbados_olmocr",
+  "slug": "keystats-historical_barbados_olmocr",
+  "author": "keystats",
+  "url": "https://huggingface.co/keystats/historical_barbados_olmocr",
+  "created_at": "2026-09-13T02:03:34.000Z",
+  "updated_at": "2026-09-13T02:03:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Livesport.cz: Fotbal online, fotbalové live výsledky, livescore",
+      "url": "https://www.livesport.cz/",
+      "snippet": "Sledujte fotbal dnes online - nabízíme livescore, fotbalové zprávy, fotbalové přestupy a všechny dnešní fotbalové výsledky nejen z …"
+    },
+    {
+      "title": "Živé vysílání — ČT sport — Česká televize",
+      "url": "https://sport.ceskatelevize.cz/zive-vysilani",
+      "snippet": "Kontinuální přehled dosavadního i očekávaného dění."
+    },
+    {
+      "title": "Fotbal ONLINE • výsledky živě, live | iSport.cz",
+      "url": "https://isport.blesk.cz/vysledky/fotbal",
+      "snippet": "Aktuální fotbalové výsledky ONLINE. Sledujte fotbal živě, live na iSport.cz. Přenosy z české ligy, Premier League i evropských pohárů."
+    },
+    {
+      "title": "Fotbal - sportovní pořady - sledujte online | Česká televize",
+      "url": "https://www.ceskatelevize.cz/ivysilani/kategorie/4142-sport/4157-fotbal/",
+      "snippet": "Sledujte online fotbal z videokatalogu České televize. Vybírejte na iVysílání z čerstvých novinek, televizní klasiky i archivních pořadů."
+    },
+    {
+      "title": "Fotbal – TV / online přenosy | SledujŽivě.cz",
+      "url": "https://sledujzive.cz/fotbal/",
+      "snippet": "Kde sledovat fotbal živě? Přinášíme přehled aktuálních zápasů z domácích i zahraničních soutěží a informace, kde je můžete …"
+    }
+  ]
+}

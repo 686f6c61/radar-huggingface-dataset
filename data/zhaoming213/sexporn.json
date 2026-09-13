@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Zhaoming213/SexPorn",
+  "slug": "zhaoming213-sexporn",
+  "author": "Zhaoming213",
+  "url": "https://huggingface.co/Zhaoming213/SexPorn",
+  "created_at": "2026-09-13T10:03:16.000Z",
+  "updated_at": "2026-09-13T10:47:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "text-generation",
+    "zh",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186835272,
+  "storage_human": "187 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meinsje de Paauw | kunststukken101.nl",
+      "url": "https://www.kunststukken101.nl/kunstenaar/meinsje-de-paauw",
+      "snippet": "Ik schilder niet óp zijde maar ik schilder mét zijde. Resten van kapotte sjaaltjes en resten na het maken van kleding. Soms gebruik ik …"
+    },
+    {
+      "title": "KUNSTSTUKKEN 101",
+      "url": "https://www.kunststukken101.nl/",
+      "snippet": "KUNSTSTUKKEN 101 WANT: ‘THE EARTH WITHOUT ART IS JUST EH.’ Kunst is geen eerste levensbehoefte. Je krijgt er niets van …"
+    },
+    {
+      "title": "Marijke van Gent | kunststukken101.nl",
+      "url": "https://www.kunststukken101.nl/kunstenaar/marijke-van-gent",
+      "snippet": "Discipline (s): keramiek Website: https://www.instagram.com/keramiekenzo/ Vallende Vogels Vogelschaal Ouderschap vogel met …"
+    },
+    {
+      "title": "Ger Jansen | kunststukken101.nl",
+      "url": "https://www.kunststukken101.nl/kunstenaar/ger-jansen",
+      "snippet": "Ger Jansen (11-8-1936 – 21-12-2010) was een beeldend kunstenares die sinds 1958 in Den Haag woonde en werkte. De …"
+    },
+    {
+      "title": "Paul Padding | kunststukken101.nl",
+      "url": "https://www.kunststukken101.nl/kunstenaar/paul-padding",
+      "snippet": "Contact Kunststukken101 Thomsonlaan 101 2565 HZ Den Haag +31 (0)6 22464143 Privacy Privacy statement Cookies"
+    }
+  ]
+}

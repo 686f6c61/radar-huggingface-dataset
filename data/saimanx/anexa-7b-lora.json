@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SaimanX/anexa-7b-lora",
+  "slug": "saimanx-anexa-7b-lora",
+  "author": "SaimanX",
+  "url": "https://huggingface.co/SaimanX/anexa-7b-lora",
+  "created_at": "2026-09-13T10:56:30.000Z",
+  "updated_at": "2026-09-13T10:56:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 194987217,
+  "storage_human": "195 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "沙慕尼 (Chamonix)新45机型，045H-1，和短版的045Hs-1",
+      "url": "https://forum.xitek.com/thread-1576968-1-1.html",
+      "snippet": "Jul 3, 2020 · 这个帖子的重点是，随着沙慕尼H机的上市，我想在无忌弄一个击鼓传花式的免费体验活动，此活动的目的是让所有对沙 …"
+    },
+    {
+      "title": "徕卡Leica M 21mm镜头俱乐部",
+      "url": "https://forum.xitek.com/thread-1275826-1-1-1.html",
+      "snippet": "Oct 28, 2021 · 21mm是Leica M口经典的超广角焦段。 有幸将常见的版本把玩过，大致归纳了一些，和大家聊聊呗。 一）Super …"
+    },
+    {
+      "title": "老有所乐--追光者 (续1)",
+      "url": "https://forum.xitek.com/thread-2010453-2-1.html",
+      "snippet": "Jul 30, 2026 · 秉承摄影无忌老有所乐“忘掉年龄，莫负韶华”的宗旨，咱们继续追光逐影！ 【佳作欣赏】 保持10幅（不定期更换） 大圣 …"
+    },
+    {
+      "title": "凤凰50MM MC F1.7俱乐部",
+      "url": "https://forum.xitek.com/thread-314080-1-1-1.html",
+      "snippet": "Mar 11, 2021 · 制造商：Canon 型号：Canon EOS R50 光圈：0/1 焦距：0/1 曝光时间：1/2000 ISO感光度：100"
+    },
+    {
+      "title": "D5, D500使用经验集锦",
+      "url": "https://forum.xitek.com/thread-1571745-1-1-1.html",
+      "snippet": "Sep 6, 2018 · 很多朋友已经拿到D5，D500，在使用的同时在使用设置上都有各自的感受。斗胆开一贴, 将看到的各位的经验及设置的 …"
+    }
+  ]
+}

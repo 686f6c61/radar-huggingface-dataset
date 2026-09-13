@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Vech911/movement",
+  "slug": "vech911-movement",
+  "author": "Vech911",
+  "url": "https://huggingface.co/Vech911/movement",
+  "created_at": "2026-09-13T02:23:56.000Z",
+  "updated_at": "2026-09-13T02:30:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 310168816,
+  "storage_human": "310 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Incaspin Casino Official Website | 6,000+ Online Casino Games",
+      "url": "https://inca-spin.org/en/",
+      "snippet": "At Inca Spin Casino, more than 6,000 games are available across slots, live casino, table games and instant games. Browse popular …"
+    },
+    {
+      "title": "IncaSpin Casino - Slots, Games & Real Money Play",
+      "url": "https://www.incaspin.org/",
+      "snippet": "Play real money slots and live casino games at IncaSpin. Secure platform with fast payouts, welcome bonus, and 24/7 player support."
+    },
+    {
+      "title": "IncaSpin Casino - Juego Premium y Bono de Bienvenida de 3.000€",
+      "url": "https://incaspin.app/es/",
+      "snippet": "IncaSpin Casino - Juego premium online con hasta 3.000€ de bono de bienvenida más 350 tiradas gratis. Licenciado, seguro y juego …"
+    },
+    {
+      "title": "Incaspin Casino | Play Online Slots & Live Games",
+      "url": "https://inca-spincasino.org/",
+      "snippet": "Join Incaspin Casino for an unrivaled online gaming adventure. Claim your welcome bonus and explore 5,000+ games with 24/7 …"
+    },
+    {
+      "title": "Casino Incaspin | Juega a tragamonedas y juegosl",
+      "url": "https://theincaspin.org/es/",
+      "snippet": "Incaspin Casino ofrece máquinas tragamonedas de alta calidad, crupieres en vivo, 1500 € + 150 tiradas gratis, retiradas rápidas, …"
+    }
+  ]
+}

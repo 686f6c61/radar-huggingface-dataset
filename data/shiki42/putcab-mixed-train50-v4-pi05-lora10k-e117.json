@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Shiki42/PutCab-Mixed-Train50-V4-PI05-LoRA10K-E117",
+  "slug": "shiki42-putcab-mixed-train50-v4-pi05-lora10k-e117",
+  "author": "Shiki42",
+  "url": "https://huggingface.co/Shiki42/PutCab-Mixed-Train50-V4-PI05-LoRA10K-E117",
+  "created_at": "2026-09-13T10:33:06.000Z",
+  "updated_at": "2026-09-13T10:47:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "pi05",
+    "lora",
+    "jax",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335570459,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cryptocurrency Payment Gateway & Processor - CryptoProcessing.com",
+      "url": "https://cryptoprocessing.com/",
+      "snippet": "2 days ago · A crypto payment gateway, such as CryptoProcessing, is a payment processor for cryptocurrencies that allows …"
+    },
+    {
+      "title": "GitHub - adeolaphilip/Tokenized-Invoice-Factoring-Platform",
+      "url": "https://github.com/adeolaphilip/Tokenized-Invoice-Factoring-Platform",
+      "snippet": "A blockchain-based solution that transforms traditional invoice factoring into a transparent, efficient, and accessible digital …"
+    },
+    {
+      "title": "Crypto Invoicing - Gilded",
+      "url": "https://gilded.finance/products/payments/crypto-invoicing",
+      "snippet": "Invoice your clients in bitcoin, ethereum, stablecoins, and 30+ tokens. Set crypto invoices to recur on a weekly, monthly, or quarterly …"
+    },
+    {
+      "title": "The Application of Invoice Factoring with Blockchain - Unicsoft",
+      "url": "https://unicsoft.com/blog/blockchain-in-factoring/",
+      "snippet": "Mar 20, 2019 · The drawbacks of using blockchain for invoice factoring Most of the hurdles with implementing blockchain in factoring …"
+    },
+    {
+      "title": "Finunion Expands Crypto Payments Into B2B Invoicing and Recurring …",
+      "url": "https://investinglive.com/Education/finunion-expands-crypto-payments-into-b2b-invoicing-and-recurring-billing-20260120/",
+      "snippet": "Jan 20, 2026 · Recurring billing remains one of the more challenging areas for crypto payments. Subscription services and SaaS …"
+    }
+  ]
+}

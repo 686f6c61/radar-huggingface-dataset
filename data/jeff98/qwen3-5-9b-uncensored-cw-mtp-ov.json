@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Jeff98/Qwen3.5-9B-uncensored-cw-mtp-ov",
+  "slug": "jeff98-qwen3-5-9b-uncensored-cw-mtp-ov",
+  "author": "Jeff98",
+  "url": "https://huggingface.co/Jeff98/Qwen3.5-9B-uncensored-cw-mtp-ov",
+  "created_at": "2026-09-13T10:27:40.000Z",
+  "updated_at": "2026-09-13T10:33:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "openvino",
+    "qwen3_5",
+    "VLM",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:DavidAU/Qwen3.5-9B-The-Defiant-Fable-DARK-ROAST-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP",
+    "base_model:finetune:DavidAU/Qwen3.5-9B-The-Defiant-Fable-DARK-ROAST-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6137736467,
+  "storage_human": "6.1 GB",
+  "base_model": "DavidAU/Qwen3.5-9B-The-Defiant-Fable-DARK-ROAST-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Product Care + Information – CORKCICLE.",
+      "url": "https://support.corkcicle.com/hc/en-us/categories/360005651373-Product-Care-Information",
+      "snippet": "How do I clean my Tumbler lid? What materials are used in CORKCICLE. products? CORKCICLE."
+    },
+    {
+      "title": "Product Care - CORKCICLE.",
+      "url": "https://corkcicle.com/blogs/product-care",
+      "snippet": "CORKCICLE. We make cool things, like insulated tumblers, coffee mugs, coolers, barware, canteens & more. Make every sip an …"
+    },
+    {
+      "title": "Sparkling Sips: Your Ultimate Guide to Cleaning Corkcicle Cups",
+      "url": "https://appliancecarehub.com/how-to-clean-corkcicle-cups/",
+      "snippet": "Oct 18, 2025 · Whether it’s coffee, tea, juice, or water, residual liquids can begin to dry and form sticky residues, making cleaning …"
+    },
+    {
+      "title": "Understanding the Care of Your Corkcicle Mugs: Can They Go in the ...",
+      "url": "https://homegeargeek.com/can-corkcicle-mugs-go-in-the-dishwasher/",
+      "snippet": "Avoid placing your Corkcicle mug in the dishwasher to extend its lifespan; instead, practice hand washing with gentle soap and a soft …"
+    },
+    {
+      "title": "How to Remove Scratches from Mugs | Mug Maintenance – Sivo",
+      "url": "https://hub.sivo.it.com/mug-maintenance/how-to-remove-scratches-from-mugs/",
+      "snippet": "Sep 21, 2025 · Gently rub the paste onto the scratch marks or stained areas on your mug in a circular motion. Apply light to moderate …"
+    }
+  ]
+}

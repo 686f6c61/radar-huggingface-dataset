@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "yunfengwang/MiniCPM5-2B-MNN-8bit",
+  "slug": "yunfengwang-minicpm5-2b-mnn-8bit",
+  "author": "yunfengwang",
+  "url": "https://huggingface.co/yunfengwang/MiniCPM5-2B-MNN-8bit",
+  "created_at": "2026-09-13T01:39:28.000Z",
+  "updated_at": "2026-09-13T02:17:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mnn",
+    "minicpm",
+    "minicpm5",
+    "int8",
+    "8bit",
+    "on-device",
+    "edge-ai",
+    "text-generation",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:finetune:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2825532230,
+  "storage_human": "2.8 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/;anything",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/m",
+      "snippet": "Google home Send feedback Privacy and terms Switch to full site"
+    },
+    {
+      "title": "Google Переводчик – ваш личный переводчик в телефоне и …",
+      "url": "https://translate.google.com/intl/ru/about/",
+      "snippet": "Google Переводчик поможет вам понимать других и выражать себя на разных языках. Переводите живую речь, текст, …"
+    },
+    {
+      "title": "Prekladač Google – osobný tlmočník v telefóne alebo počítači",
+      "url": "https://translate.google.com/intl/sk/about/",
+      "snippet": "Naučte sa prekladať text, reč, obrázky, dokumenty, weby a ďalší obsah pomocou Prekladača Google."
+    },
+    {
+      "title": "Tłumacz Google - Google Translate",
+      "url": "https://translate.google.com/?hl=pl-pl",
+      "snippet": "Bezpłatna usługa Google, umożliwiająca szybkie tłumaczenie słów, zwrotów i stron internetowych w języku angielskim i ponad 100 …"
+    }
+  ]
+}

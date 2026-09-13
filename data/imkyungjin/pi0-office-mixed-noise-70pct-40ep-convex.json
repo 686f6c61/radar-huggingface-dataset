@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ImKyungjin/pi0-office-mixed-noise-70pct-40ep-convex",
+  "slug": "imkyungjin-pi0-office-mixed-noise-70pct-40ep-convex",
+  "author": "ImKyungjin",
+  "url": "https://huggingface.co/ImKyungjin/pi0-office-mixed-noise-70pct-40ep-convex",
+  "created_at": "2026-09-13T10:32:03.000Z",
+  "updated_at": "2026-09-13T10:35:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi0",
+    "robotics",
+    "dataset:taewonkoo/office_task_mixed_suboptimal_seed1000_70pct_40ep",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 7011556176,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vodafone E-Mail & Cloud - Login | Vodafone live",
+      "url": "https://live.vodafone.de/partners/mail",
+      "snippet": "Werbefrei und mehr Power Upgrade für E-Mail Bestandskunden: Buch im E-Mail Portal den E-Mail & Cloud Premium-Tarif M oder L - …"
+    },
+    {
+      "title": "Vodafone live | Nachrichten, E-Mail, Games, Musik und mehr",
+      "url": "https://live.vodafone.de/",
+      "snippet": "Entdecke die Unterhaltungswelt von Vodafone mit Nachrichten, E-Mail, Spielen, Musik und mehr."
+    },
+    {
+      "title": "Muss ich das Passwort an meinem neuen Router ändern? - Vodafone live",
+      "url": "https://live.vodafone.de/news/digital/news/muss-ich-das-passwort-an-meinem-neuen-router-aendern/13149408",
+      "snippet": "Genieße die Unterhaltungswelt von Vodafone live Neuer Router, neues Passwort? Ja, sagt das Bundesamt für Sicherheit in der …"
+    },
+    {
+      "title": "Perfekt aufgeräumtes Mail-Postfach: Anleitung in 5 Schritten",
+      "url": "https://live.vodafone.de/news/ratgeber/job/perfekt-aufgeraeumtes-mail-postfach-anleitung-in-5-schritten/13129737",
+      "snippet": "Jan 28, 2026 · Schritt 5: Feste Zeitslots für Mail-Bearbeitung einplanen Je konzentrierter man seine Mails abarbeitet, desto effizienter …"
+    },
+    {
+      "title": "Jetzt spielen | Vodafone Games",
+      "url": "https://live.vodafone.de/games/list",
+      "snippet": "Genieße die Unterhaltungswelt von Vodafone live Entdeck Nachrichten, E-Mail, Games, Music und mehr Partner-Services auf …"
+    }
+  ]
+}

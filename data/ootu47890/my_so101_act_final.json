@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ootu47890/my_so101_act_final",
+  "slug": "ootu47890-my_so101_act_final",
+  "author": "ootu47890",
+  "url": "https://huggingface.co/ootu47890/my_so101_act_final",
+  "created_at": "2026-09-13T10:28:33.000Z",
+  "updated_at": "2026-09-13T10:28:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:ootu47890/my_so101_training",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712864,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "أكاديمية القاسمي - أكاديمية القاسمي",
+      "url": "https://www.qsm.ac.il/",
+      "snippet": "مجمع القاسمي يستضيف كوكبة من الباحثين والمفكّرين المرموقين يقدّمون سلسة ورشات ومحاضرات ضمن برنامج ال 30/07/2026 أخبار أكاديمية, مستجدات مجمع القاسمي للغة العربية"
+    },
+    {
+      "title": "aiden-li/so101-act · Hugging Face",
+      "url": "https://huggingface.co/aiden-li/so101-act",
+      "snippet": "Model Details Model Card for act Action Chunking with Transformers (ACT)is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates. This policy has been trained and pushed to the Hub using LeRobot. See the full documentation at LeRobot Docs."
+    },
+    {
+      "title": "صفحة الطالب - أكاديمية القاسمي",
+      "url": "https://www.qsm.ac.il/%d8%b5%d9%81%d8%ad%d8%a9-%d8%a7%d9%84%d8%b7%d8%a7%d9%84%d8%a8/",
+      "snippet": "صفحة الطالب تعليمات عامّة الحضور والغياب أنماط التعليم دليل الطالب أنظمة الامتحانات الدليل المالي تعليمات عامّة إضافيّة ملفّات إرشاديّة إغلاق تعليمات تنظيمية خاصة بالبرامج الاكاديمية اللقب الأول اللقب …"
+    },
+    {
+      "title": "README.md · aiden-li/so101-act at main - Hugging Face",
+      "url": "https://huggingface.co/aiden-li/so101-act/blob/main/README.md",
+      "snippet": "/ so101-act like 0 Robotics LeRobot Safetensors aiden-li/so101-picklego act arxiv:2304.13705 License:apache-2.0 Model card FilesFiles and versions Community Use this model main so101-act /README.md aiden-li Upload policy weights, train config and readme 055a863 verifiedabout 8 hours ago preview code | raw Copy download link history blame ..."
+    },
+    {
+      "title": "كلية القاسمي للهندسة والعلوم | هندسة، تأهيلات مهنية، إدارة مالية وطب مكمل",
+      "url": "https://qse.co.il/",
+      "snippet": "كتشف برامج كلية القاسمي للهندسة والعلوم في مجالات التكنولوجيا، الهندسة، والتدريب المهني. تعرف على شروط القبول، الأخبار الأكاديمية، والخدمات الطلابية."
+    }
+  ]
+}

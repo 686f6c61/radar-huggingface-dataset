@@ -21,10 +21,11 @@
     "custom_code",
     "base_model:ethicalabs/Echo-DSRN-114M-v0.1.2",
     "base_model:finetune:ethicalabs/Echo-DSRN-114M-v0.1.2",
+    "doi:10.57967/hf/10382",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 102,
+  "downloads_30d": 76,
   "trending_score": 0,
   "parameters": 114656768,
   "parameters_human": "114.7M",

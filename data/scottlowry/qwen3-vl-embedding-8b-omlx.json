@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "scottlowry/Qwen3-VL-Embedding-8B-omlx",
+  "slug": "scottlowry-qwen3-vl-embedding-8b-omlx",
+  "author": "scottlowry",
+  "url": "https://huggingface.co/scottlowry/Qwen3-VL-Embedding-8B-omlx",
+  "created_at": "2026-09-13T02:36:49.000Z",
+  "updated_at": "2026-09-13T02:53:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "qwen3-vl",
+    "embedding",
+    "multimodal",
+    "mlx",
+    "omlx",
+    "oQe",
+    "sentence-similarity",
+    "base_model:Qwen/Qwen3-VL-Embedding-8B",
+    "base_model:finetune:Qwen/Qwen3-VL-Embedding-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 8144793840,
+  "parameters_human": "8.14B",
+  "storage_bytes": 17545763137,
+  "storage_human": "17.5 GB",
+  "base_model": "Qwen/Qwen3-VL-Embedding-8B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Badeanzüge für Damen für deinen Sommer 2026 bei ZALANDO",
+      "url": "https://www.zalando.de/badeanzug/",
+      "snippet": "Diese Badeanzüge verfügen nämlich über einen geschwungenen Ausschnitt rund um Bauch und Rücken. Finde den passenden …"
+    },
+    {
+      "title": "Lilafarbene Badeanzüge für Damen für deinen Sommer 2026 bei …",
+      "url": "https://www.zalando.de/badeanzug/_lila/",
+      "snippet": "Lilafarbene Badeanzüge sind 2026 eine stylische Alternative zum Bikini | Badeanzug-Trends 2026 High-Neck Logo-Print Cut-Out …"
+    },
+    {
+      "title": "SEA LEVEL Badeanzüge für Damen für deinen Sommer 2026 bei",
+      "url": "https://www.zalando.de/badeanzug/sea-level/",
+      "snippet": "SEA LEVEL Badeanzüge sind 2026 eine stylische Alternative zum Bikini | Badeanzug-Trends 2026 High-Neck Logo-Print Cut-Out …"
+    },
+    {
+      "title": "Rote Badeanzüge für Damen für deinen Sommer 2026 bei ZALANDO",
+      "url": "https://www.zalando.de/badeanzug/_rot/",
+      "snippet": "Rote Badeanzüge: Perfekter Strandstyle in sinnlicher Farbe Sexy, stilvoll und unvergleichlich aussagekräftig: Das sind rote …"
+    },
+    {
+      "title": "Badeanzüge Größe 110 für Kinder - Spaß am Baden bei ZALANDO",
+      "url": "https://www.zalando.de/kinder-badeanzug/__groesse-110/",
+      "snippet": "Entdecke Badeanzüge für Kinder Größe 110 Freude an Bewegung UV-Schutz Niedliche Prints oder coole Designs | Auf die Plätze, …"
+    }
+  ]
+}

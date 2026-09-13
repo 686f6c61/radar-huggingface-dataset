@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Shiki42/PutCab-CTR-Train50-V4-PI05-LoRA10K-E115",
+  "slug": "shiki42-putcab-ctr-train50-v4-pi05-lora10k-e115",
+  "author": "Shiki42",
+  "url": "https://huggingface.co/Shiki42/PutCab-CTR-Train50-V4-PI05-LoRA10K-E115",
+  "created_at": "2026-09-13T10:17:01.000Z",
+  "updated_at": "2026-09-13T10:30:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "pi05",
+    "lora",
+    "jax",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335570279,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Transportation as a Component of Free Appropriate Public Education ...",
+      "url": "https://www.education.ne.gov/wp-content/uploads/2026/07/Transportation-as-a-Component-of-Free-Appropriate-Public-Education-FAPE-and-Documentation-within-the-Individualized-Education-Program-IEP-2026.pdf",
+      "snippet": "For transportation services, the appropriate setting is the transportation environment, which includes the non-instructional …"
+    },
+    {
+      "title": "PLACEMENT OF CHILDREN WITH DISABILITIES (IN PUBLIC SCHOOL & ALTERNATIVE …",
+      "url": "https://picnh.org/wp-content/uploads/2026/07/Placement-of-CWD-Public-School-Alternative-Options-7.29.2026.pdf",
+      "snippet": "Jul 29, 2026 · What if a parent is seeking an alternative to their local school district’s public school? are several options1 available to …"
+    },
+    {
+      "title": "IEP Spotlight: Transportation as a Related Service - Special Education ...",
+      "url": "https://spedlawspotlight.com/iep-spotlight-transportation-as-a-related-service/",
+      "snippet": "Oct 25, 2022 · In practical terms, this means that the ARD committee must determine if a student with a disability requires …"
+    },
+    {
+      "title": "Are Public Schools Required To Provide Transportation? A …",
+      "url": "https://truthinamericaneducation.com/are-public-schools-required-to-provide-transportation/",
+      "snippet": "Jul 5, 2026 · By understanding the regulations, exploring alternative options, and engaging with school authorities, you can ensure …"
+    },
+    {
+      "title": "Sec. 300.116 Placements - Individuals with Disabilities Education Act",
+      "url": "https://sites.ed.gov/idea/regs/b/b/300.116",
+      "snippet": "May 3, 2017 · In determining the educational placement of a child with a disability, including a preschool child with a disability, each …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Dapups/k2",
+  "slug": "dapups-k2",
+  "author": "Dapups",
+  "url": "https://huggingface.co/Dapups/k2",
+  "created_at": "2026-09-13T10:37:49.000Z",
+  "updated_at": "2026-09-13T10:40:57.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 58779488,
+  "storage_human": "59 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Onyxcoin Price Prediction, Short/Long Forecast - CoinLore",
+      "url": "https://www.coinlore.com/coin/onyxcoin/forecast/price-prediction",
+      "snippet": "6 hours ago · Onyxcoin (XCN) price prediction covering the next 24 hours, tomorrow, next week, and long-term outlook through 2040. …"
+    },
+    {
+      "title": "Onyxcoin-Preisprognose | Prognose des XCN-Kurses für das Jahr 2026 ...",
+      "url": "https://www.kraken.com/de/price-prediction/onyxcoin",
+      "snippet": "Gib deine Onyxcoin-Preisprognose für das Jahr 2026 und danach ab. Verwende das Prognose-Tool von Kraken, um deine …"
+    },
+    {
+      "title": "Onyxcoin Prognose 2026 2027 2028 - 2030/2040 - coinlore.com",
+      "url": "https://www.coinlore.com/de/coin/onyxcoin/forecast/price-prediction",
+      "snippet": "1 day ago · Laut unserer Onyxcoin prognose kann der Preis von XCN in den nächsten 10 Tagen auf 0,00487 $ steigen, das …"
+    },
+    {
+      "title": "Onyx-Prognose 2026 - 2030: ONYX Kursausblick & langfristige …",
+      "url": "https://de.beincrypto.com/kurs/onyx/price-prediction/",
+      "snippet": "Sep 4, 2026 · Entdecke die neuesten Onyx-Prognosen und verstehe die Faktoren, die die Zukunft von ONYX beeinflussen. Tauche …"
+    },
+    {
+      "title": "Onyxcoin (XCN) Price Prediction 2024, 2025 - 2030 - Bitnation",
+      "url": "https://bitnation.co/forecast/onyxcoin-price-prediction/",
+      "snippet": "12 hours ago · Onyxcoin (XCN) price prediction for 2024, 2025 to 2030. Read our Onyxcoin price forecast before you buy XCN."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "PruhaNLP/SmolVLA-pickplace-blue-krill-demo",
+  "slug": "pruhanlp-smolvla-pickplace-blue-krill-demo",
+  "author": "PruhaNLP",
+  "url": "https://huggingface.co/PruhaNLP/SmolVLA-pickplace-blue-krill-demo",
+  "created_at": "2026-09-13T10:37:00.000Z",
+  "updated_at": "2026-09-13T10:55:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "so100",
+    "mujoco",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1800265544,
+  "storage_human": "1.8 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Login - Tayo",
+      "url": "https://app.tayohr.io/my/account",
+      "snippet": "Provide the email address you use to login here. Back to LoginConfirm. Your Email. Your Name. Your Last Name. Password. Confirm …"
+    },
+    {
+      "title": "Sign up login - Tayo",
+      "url": "https://app.tayohr.io/web/signup",
+      "snippet": "Already have an account? Sign up."
+    },
+    {
+      "title": "Tayo - Login",
+      "url": "https://tayo.cloud/login",
+      "snippet": "Tayo: 24/7 property management! See https://tayo-software.com."
+    },
+    {
+      "title": "CTG – Humanitarian Enablers | Tayo",
+      "url": "https://ctg.org/work-with-us/tayo/",
+      "snippet": "HOW TO LOG IN TO TAYO Once your contract begins you will receive log-in access via a welcome email from helpdesk@ctg.org. …"
+    },
+    {
+      "title": "TAYO.pro",
+      "url": "https://app.tayo.pro/",
+      "snippet": "TAYO.pro - The solution for professional contractors"
+    }
+  ]
+}

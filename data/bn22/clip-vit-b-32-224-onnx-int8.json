@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "bn22/CLIP-ViT-B-32-224-ONNX-INT8",
+  "slug": "bn22-clip-vit-b-32-224-onnx-int8",
+  "author": "bn22",
+  "url": "https://huggingface.co/bn22/CLIP-ViT-B-32-224-ONNX-INT8",
+  "created_at": "2026-09-13T10:05:13.000Z",
+  "updated_at": "2026-09-13T10:05:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 160422272,
+  "storage_human": "160 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "パスワードを変更または再設定する",
+      "url": "https://support.google.com/accounts/answer/41078?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "パスワードは、セキュリティ上の理由で変更したり、忘れた場合に再設定したりできます。Google アカウントのパスワードは …"
+    },
+    {
+      "title": "301 Moved - Google Help",
+      "url": "https://support.google.com/maps/answer/3001634?hl=en",
+      "snippet": "301 Moved 301 Moved The document has moved here."
+    },
+    {
+      "title": "Google メッセージ",
+      "url": "https://support.google.com/messages/?hl=ja",
+      "snippet": "サービスを使用する際のヒントやチュートリアル、よくある質問に対する回答を閲覧できる、Google の Android Messages ヘルプ …"
+    },
+    {
+      "title": "A Google-fiók vagy a Gmail szolgáltatás helyreállítása",
+      "url": "https://support.google.com/accounts/answer/7682439?hl=hu",
+      "snippet": "Kövesse a Google-fiók vagy a Gmail szolgáltatás helyreállításával kapcsolatos lépéseket. Válaszolnia kell majd néhány kérdésre, …"
+    },
+    {
+      "title": "Pixel 设备专属的 Google One 优惠 - Pixel 手机帮助",
+      "url": "https://support.google.com/pixelphone/answer/13529884?hl=zh-Hans",
+      "snippet": "购买 Pixel 设备后，您可能符合试用 Google One 会员方案的条件。订阅 Google One 后，您可以获享由 Google 相册、Gmail 和 …"
+    }
+  ]
+}

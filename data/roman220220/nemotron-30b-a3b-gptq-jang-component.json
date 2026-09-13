@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "roman220220/nemotron-30b-a3b-gptq-jang-component",
+  "slug": "roman220220-nemotron-30b-a3b-gptq-jang-component",
+  "author": "roman220220",
+  "url": "https://huggingface.co/roman220220/nemotron-30b-a3b-gptq-jang-component",
+  "created_at": "2026-09-13T02:58:37.000Z",
+  "updated_at": "2026-09-13T03:02:53.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "nemotron_h",
+    "quantized",
+    "gptq",
+    "nemotron",
+    "mixed-precision",
+    "license:other",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 31577935872,
+  "parameters_human": "31.58B",
+  "storage_bytes": 16743064687,
+  "storage_human": "16.7 GB",
+  "base_model": "nvidia/Nemotron-3.5-Lightning-30B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Playmobil Film deutsch GRETA MUSS INS KRANKENHAUS",
+      "url": "https://www.youtube.com/watch?v=bCF5QWqL72s",
+      "snippet": "Jun 17, 2016 · Moin Kinder, Greta klagt über furchtbare Bauchschmerzen. Linus und Hannah holen Silke zur Hilfe. Als Silke Gretas …"
+    },
+    {
+      "title": "Playmobil Film \"Greta im Krankenhaus\" Familie Jansen ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=a96Px0VYf9c",
+      "snippet": "Dec 29, 2018 · Greta will Heinrich etwas beweisen. Am Ende geschieht ein Unfall und Greta muss ins Krankenhaus.Vergesst nicht, …"
+    },
+    {
+      "title": "Playmobil Film deutsch GRETA MUSS INS KRANKENHAUS",
+      "url": "https://www.dailymotion.com/video/x6d2wpu",
+      "snippet": "Jan 13, 2018 · Moin Kinder, \\r \\r Greta klagt über furchtbare Bauchschmerzen. Linus und Hannah holen Silke zur Hilfe. Als Silke …"
+    },
+    {
+      "title": "Dailymotion",
+      "url": "https://www.dailymotion.com/video/x672t9t",
+      "snippet": "Dailymotion. プレイヤーにスキップメインコンテンツにスキップ. フルスクリーンで見る. Font."
+    },
+    {
+      "title": "„Sturm der Liebe“: Dramatische Wendung! Greta muss ins Krankenhaus",
+      "url": "https://www.hoerzu.de/aktuelles/sturm-der-liebe-dramatische-wendung-greta-muss-ins-krankenhaus/",
+      "snippet": "May 8, 2025 · Hildegard schickt Greta, laut ARD-Vorschau, nach dem Sturz umgehend ins Krankenhaus – auch, um sicherzugehen, …"
+    }
+  ]
+}

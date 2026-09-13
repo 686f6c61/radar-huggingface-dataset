@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "PollardWeights/FlyBrain-Pollard-CNSv1",
+  "slug": "pollardweights-flybrain-pollard-cnsv1",
+  "author": "PollardWeights",
+  "url": "https://huggingface.co/PollardWeights/FlyBrain-Pollard-CNSv1",
+  "created_at": "2026-09-13T01:49:57.000Z",
+  "updated_at": "2026-09-13T02:02:13.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "pollard-weights",
+    "pollard",
+    "flybrain",
+    "connectome",
+    "recurrent-memory",
+    "long-context",
+    "context-window",
+    "neuroscience",
+    "drosophila",
+    "adapter",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41409790,
+  "storage_human": "41 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.de/",
+      "snippet": ""
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Train Nearby places Restaurants Gas stations ATMs Shopping Map details Satellite Transit lines Traffic"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.de/?om=1",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://www.google.com/maps/search/?hl=de",
+      "snippet": "Aktuelle Verkehrslage Schnell Langsam Kartendaten ©2026 Google Bedingungen 10 km ... Route Mit dem Auto Zu Fuß"
+    },
+    {
+      "title": "Google Maps – Apps bei Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.maps&hl=de",
+      "snippet": "Mit Google Maps kannst du die Welt ganz einfach erkunden und bereisen. Anhand von Live-Verkehrsdaten und GPS-Navigation …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "h0000w/Human-Intelligence-Assurance-Lab",
+  "slug": "h0000w-human-intelligence-assurance-lab",
+  "author": "h0000w",
+  "url": "https://huggingface.co/h0000w/Human-Intelligence-Assurance-Lab",
+  "created_at": "2026-09-13T10:54:42.000Z",
+  "updated_at": "2026-09-13T10:54:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "News & E-Mail bei t-online | Politik, Sport, Unterhaltung & Ratgeber",
+      "url": "https://www.t-online.de/",
+      "snippet": "Aktuelle News aus Politik, Sport, Unterhaltung, Wirtschaft & Finanzen | Ratgeber Leben, Gesundheit und Heim & Garten | E-Mail und …"
+    },
+    {
+      "title": "Sport-Nachrichten aktuell: Alle Sport-News auf einen Blick - t-online.de",
+      "url": "https://www.t-online.de/sport/",
+      "snippet": "t-online.de Sport – aktuelle Sportnachrichten und Hintergründe aus der Sport-Welt: News zu Fußball, Formel 1, Boxen, Tennis, …"
+    },
+    {
+      "title": "Telefonbuch bei t-online.de in Sekunden gefunden",
+      "url": "https://telefonbuch.t-online.de/",
+      "snippet": "☎ Wer hat angerufen? Jetzt Telefonnummern, Firmen & personen blitzschnell finden! Das Telefonbuch Das Örtliche Gelbe Seiten"
+    },
+    {
+      "title": "E-Mail Mobil",
+      "url": "https://m-email.t-online.de/",
+      "snippet": "Über ein anderes E-Mail-Programm (z.B. Outlook, Apple Mail, Thunderbird, ...) Wenn Sie Telekom Mail mit einem E-Mail-Programm …"
+    },
+    {
+      "title": "Das E-Mail Center im Web - für E-Mail @t-online.de der Telekom",
+      "url": "https://kommunikationsdienste.t-online.de/emailcenter/info/index.html",
+      "snippet": "Das Adressbuch von E-Mail @t-online.de ist der zentrale Ort für alle Ihre Kontaktdaten. Mit dem bequemen Import der Adressen von …"
+    }
+  ]
+}

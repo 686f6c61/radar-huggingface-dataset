@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Timesup-eval/MyAwesomeModel-TestRepo",
+  "slug": "timesup-eval-myawesomemodel-testrepo",
+  "author": "Timesup-eval",
+  "url": "https://huggingface.co/Timesup-eval/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-13T10:19:37.000Z",
+  "updated_at": "2026-09-13T10:20:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Casper - 知乎",
+      "url": "https://www.zhihu.com/people/casper-83-68",
+      "snippet": "Aug 5, 2026 · Casper 泽圣你可不能怂啊，京子他开始飘了。"
+    },
+    {
+      "title": "等待將近3年的Cordovan indy 加上 RDT Casper 開箱!~~~~",
+      "url": "https://www.mobile01.com/topicdetail.php?f=598&t=6283976",
+      "snippet": "Jan 16, 2021 · 主角是 ALDEN 頗知名的馬臀皮八號色 民國107年從台灣代理商下定最近才拿到xD (等到我今年要結婚了啦) 另一雙是我 …"
+    },
+    {
+      "title": "幸福就是突然到來-Rolling Dub Trio Coupen- - Mobile01",
+      "url": "https://www.mobile01.com/topicdetail.php?f=598&t=6779511",
+      "snippet": "我也在5/2收到Casper，不得不說開盒那剎那就只有兩個字！ 真香～"
+    },
+    {
+      "title": "纵向课题和横向课题有什么区别？ - 知乎",
+      "url": "https://www.zhihu.com/question/30432177",
+      "snippet": "目前，从学科大类上讲：分为社会科学和自然科学两大类；根据科研课题的来源一般分为：纵向课题与横向课题两大类。 纵向课题是 …"
+    },
+    {
+      "title": "Casper: il fantasmino in CGI che ancora fa sognare piccoli e grandi",
+      "url": "https://www.culturamente.it/cineforum/casper-film-recensione/",
+      "snippet": "Jul 10, 2021 · Guardando Casper è evidente che l’autore sia un accanito ammiratore di Tim Burton, questo è evidente in alcune …"
+    }
+  ]
+}

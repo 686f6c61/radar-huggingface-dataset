@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "utkarshsheel/diffusion_2026-09-12_16-25-00",
+  "slug": "utkarshsheel-diffusion_2026-09-12_16-25-00",
+  "author": "utkarshsheel",
+  "url": "https://huggingface.co/utkarshsheel/diffusion_2026-09-12_16-25-00",
+  "created_at": "2026-09-12T16:25:01.000Z",
+  "updated_at": "2026-09-13T02:59:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion",
+    "lelab",
+    "robotics",
+    "dataset:utkarshsheel/TapePush_V1_so101",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 262962942,
+  "parameters_human": "263.0M",
+  "storage_bytes": 236668443188,
+  "storage_human": "236.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/index.php/?lang=pl_PL",
+      "snippet": "Forgot password? More languages…"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/p/MpComp-100067657416512/%3Flocale%3Dpl_PL/",
+      "snippet": "Nie pamiętasz hasła? Więcej języków..."
+    },
+    {
+      "title": "Log into Facebook",
+      "url": "https://l.facebook.com/?lang=pl_pl",
+      "snippet": "Email or mobile number Password"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/login/identify/",
+      "snippet": "Find your account. Enter your mobile number or email. Mobile number or email. Continue. English (US) Español. Français (France) …"
+    },
+    {
+      "title": "Facebook - log in or sign up",
+      "url": "https://secure.facebook.com/",
+      "snippet": "Connect with friends and the world around you on Facebook."
+    }
+  ]
+}

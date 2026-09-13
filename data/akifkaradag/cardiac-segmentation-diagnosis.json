@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "akifkaradag/cardiac-segmentation-diagnosis",
+  "slug": "akifkaradag-cardiac-segmentation-diagnosis",
+  "author": "akifkaradag",
+  "url": "https://huggingface.co/akifkaradag/cardiac-segmentation-diagnosis",
+  "created_at": "2026-09-13T10:21:58.000Z",
+  "updated_at": "2026-09-13T10:27:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "nnunetv2",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "nnunetv2",
+    "medical",
+    "cardiac-mri",
+    "image-segmentation",
+    "nnunet",
+    "clinical-biomarkers",
+    "acdc-challenge",
+    "healthcare",
+    "pytorch",
+    "en",
+    "dataset:ACDC",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 486775527,
+  "storage_human": "487 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "3D Cardiac MRI Segmentation",
+      "dataset": "ACDC Challenge (MICCAI)",
+      "metric": "Mean Dice (Left Ventricle)",
+      "value": 0.945
+    },
+    {
+      "task": "3D Cardiac MRI Segmentation",
+      "dataset": "ACDC Challenge (MICCAI)",
+      "metric": "Mean Dice (Right Ventricle)",
+      "value": 0.911
+    },
+    {
+      "task": "3D Cardiac MRI Segmentation",
+      "dataset": "ACDC Challenge (MICCAI)",
+      "metric": "Mean Dice (Myocardium)",
+      "value": 0.9
+    },
+    {
+      "task": "5-Class Cardiac Pathology Diagnosis",
+      "dataset": "ACDC Challenge (MICCAI)",
+      "metric": "5-Fold Cross-Validation Accuracy",
+      "value": 0.88
+    }
+  ],
+  "sources": [
+    {
+      "title": "Koopwoningen Westervoort - huizen te koop in Westervoort | Funda",
+      "url": "https://www.funda.nl/zoeken/koop/?selected_area=westervoort",
+      "snippet": "Op Funda vind je 65 huizen te koop in Westervoort. Funda helpt je je nieuwe huis te vinden met zoekfilters, foto's, video's en …"
+    },
+    {
+      "title": "Zoek huizen en appartementen te koop / huur in Nederland | Funda",
+      "url": "https://www.funda.nl/",
+      "snippet": "Vind je huis op Funda! Het grootste aanbod van koopwoningen en huurwoningen in Nederland. Vind inzichten & inspiratie en check …"
+    },
+    {
+      "title": "Koopwoningen Nederland - huizen te koop in Nederland | Funda",
+      "url": "https://www.funda.nl/zoeken/koop/?selected_area=nl",
+      "snippet": "Op Funda vind je 94705 huizen te koop in Nederland. Funda helpt je je nieuwe huis te vinden met zoekfilters, foto's, video's en …"
+    },
+    {
+      "title": "Koopwoningen Duiven - huizen te koop in Duiven | Funda",
+      "url": "https://www.funda.nl/zoeken/koop/?selected_area=duiven",
+      "snippet": "Op Funda vind je 69 huizen te koop in Duiven. Funda helpt je je nieuwe huis te vinden met zoekfilters, foto's, video's en plattegronden."
+    },
+    {
+      "title": "Koopwoningen Schoonebeek - huizen te koop in Schoonebeek | Funda",
+      "url": "https://www.funda.nl/zoeken/koop/?selected_area=schoonebeek",
+      "snippet": "Koopwoningen in Schoonebeek Op zoek naar huizen in Schoonebeek? Op Funda vind je momenteel 27 huizen te koop in …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "gleraTech/mini-qwen3.8-abliterated-27B",
+  "slug": "gleratech-mini-qwen3-8-abliterated-27b",
+  "author": "gleraTech",
+  "url": "https://huggingface.co/gleraTech/mini-qwen3.8-abliterated-27B",
+  "created_at": "2026-09-13T10:02:45.000Z",
+  "updated_at": "2026-09-13T11:32:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "gguf",
+    "abliterated",
+    "qwen3",
+    "quantized",
+    "en",
+    "de",
+    "base_model:OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+    "base_model:quantized:OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 12256527392,
+  "storage_human": "12.3 GB",
+  "base_model": "OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Autostart-Ordner finden und bearbeiten: So geht's unter Win 10",
+      "url": "https://www.chip.de/ratgeber/software/autostart-ordner-finden-und-bearbeiten-so-geht-s-unter-win-10_5c286811-9e59-4618-b46b-430198d0abd4.html",
+      "snippet": "Mar 20, 2025 · Apps im Autostart-Ordner von Windows 10 und 11 werden beim Systemstart geladen. Diese Autostart-Programme …"
+    },
+    {
+      "title": "Autostart-Ordner in Windows 11 finden und Startprogramme verwalten",
+      "url": "https://www.win-tipps.de/autostart-ordner-windows-11-finden/",
+      "snippet": "Jun 2, 2026 · So finden Sie den Autostart-Ordner in Windows 11, öffnen die passenden Systembereiche und steuern Startprogramme …"
+    },
+    {
+      "title": "Autostart-Ordner in Windows 11: Wo Sie ihn finden und wie er ...",
+      "url": "https://www.chip.de/ratgeber/software/autostart-ordner-in-windows-11-wo-sie-ihn-finden-und-wie-er-funktioniert_a6e87fba-b9c3-4872-92b3-54a8f2cd38c5.html",
+      "snippet": "Apr 8, 2025 · Der Autostart-Ordner unter Windows 11 spielt beim Hochfahren des PCs eine wichtige Rolle: Hier werden nämlich …"
+    },
+    {
+      "title": "Autostart-Ordner in Windows 10 / 11 finden und verwenden, (wo ist …",
+      "url": "https://www.softwareok.de/?seite=faq-Windows-10&faq=28",
+      "snippet": "Apr 12, 2015 · Autostart-Ordner finden und öffnen unter Windows 10 / 11! Der beste Weg, um den Autostart-Ordner von Windows 10 / …"
+    },
+    {
+      "title": "Autostart-Ordner finden in Windows 11/10 – so geht’s",
+      "url": "https://tippsling.de/windows-11-10-autostart-ordner-finden-so-gehts/",
+      "snippet": "Apr 23, 2026 · Nachfolgend erfahren Sie Schritt für Schritt, wie Sie den Autostart-Ordner finden, Programme hinzufügen, Einträge …"
+    }
+  ]
+}

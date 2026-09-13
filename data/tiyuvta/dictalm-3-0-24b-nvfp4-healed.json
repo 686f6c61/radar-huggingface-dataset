@@ -5,17 +5,16 @@
   "author": "tiyuvta",
   "url": "https://huggingface.co/tiyuvta/DictaLM-3.0-24B-NVFP4-healed",
   "created_at": "2026-09-06T12:36:25.000Z",
-  "updated_at": "2026-09-06T12:51:28.000Z",
+  "updated_at": "2026-09-12T11:52:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
-  "library": "memra",
+  "library": "safetensors",
   "languages": [
     "he",
     "en"
   ],
   "tags": [
-    "memra",
     "safetensors",
     "mistral",
     "nvfp4",

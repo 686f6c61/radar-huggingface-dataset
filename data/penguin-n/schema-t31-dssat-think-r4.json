@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Penguin-N/schema-t31-dssat-think-r4",
+  "slug": "penguin-n-schema-t31-dssat-think-r4",
+  "author": "Penguin-N",
+  "url": "https://huggingface.co/Penguin-N/schema-t31-dssat-think-r4",
+  "created_at": "2026-09-13T03:00:46.000Z",
+  "updated_at": "2026-09-13T03:00:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17657211670,
+  "storage_human": "17.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Penguin - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Penguin",
+      "snippet": "The smallest penguin species is the little blue penguin (Eudyptula minor), also known as the fairy penguin, which stands around …"
+    },
+    {
+      "title": "Penguin Books UK | Official Website",
+      "url": "https://www.penguin.co.uk/",
+      "snippet": "Explore the world of Penguin Books. Lose yourself in a book, find your next read and hear from the authors you love."
+    },
+    {
+      "title": "Pingouin — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Pingouin",
+      "snippet": "Le Pingouin est un personnage de l'univers de fiction de Batman (le nom français est une traduction abusive de son nom original, …"
+    },
+    {
+      "title": "Penguin Random House",
+      "url": "https://www.penguinrandomhouse.com/",
+      "snippet": "Visit other sites in the Penguin Random House Network Brightly Raise kids who love to read Out of Print Shirts, totes, socks, and …"
+    },
+    {
+      "title": "Penguin | Habitat, Species, Predators, & Facts | Britannica",
+      "url": "https://www.britannica.com/animal/penguin",
+      "snippet": "Aug 28, 2026 · A penguin is any of 18–21 species of flightless marine birds that live only in the Southern Hemisphere. The majority of …"
+    }
+  ]
+}

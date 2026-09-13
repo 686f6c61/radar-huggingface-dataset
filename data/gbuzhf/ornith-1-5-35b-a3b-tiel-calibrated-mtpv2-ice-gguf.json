@@ -5,7 +5,7 @@
   "author": "gbuzhf",
   "url": "https://huggingface.co/gbuzhf/Ornith-1.5-35B-A3B-TIEL-Calibrated-MTPv2-ICE-GGUF",
   "created_at": "2026-09-07T01:12:21.000Z",
-  "updated_at": "2026-09-07T03:12:00.000Z",
+  "updated_at": "2026-09-12T04:17:02.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "conversational"
   ],
   "likes": 4,
-  "downloads_30d": 2841,
+  "downloads_30d": 3465,
   "trending_score": 0,
   "parameters": 35505251456,
   "parameters_human": "35.51B",

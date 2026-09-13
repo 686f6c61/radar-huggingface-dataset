@@ -5,7 +5,7 @@
   "author": "saidutta69",
   "url": "https://huggingface.co/saidutta69/Qwen3.5-9B-heretic",
   "created_at": "2026-07-21T09:27:32.000Z",
-  "updated_at": "2026-09-11T02:27:40.000Z",
+  "updated_at": "2026-09-13T07:15:19.000Z",
   "license": "qwen-research-license",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 2897,
+  "downloads_30d": 1603,
   "trending_score": 0,
   "parameters": 9409813744,
   "parameters_human": "9.41B",

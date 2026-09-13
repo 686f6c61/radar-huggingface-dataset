@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mukherjee78/abc-voice-slm-asr",
+  "slug": "mukherjee78-abc-voice-slm-asr",
+  "author": "mukherjee78",
+  "url": "https://huggingface.co/mukherjee78/abc-voice-slm-asr",
+  "created_at": "2026-09-13T02:57:02.000Z",
+  "updated_at": "2026-09-13T02:58:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en",
+    "bn"
+  ],
+  "tags": [
+    "automatic-speech-recognition",
+    "asr",
+    "speech-recognition",
+    "rnn-transducer",
+    "transducer",
+    "zipformer",
+    "pytorch",
+    "from-scratch",
+    "low-resource",
+    "bengali",
+    "english",
+    "en",
+    "bn",
+    "dataset:openslr",
+    "arxiv:2310.11230",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 171964840,
+  "storage_human": "172 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "On This Day - Today in History, Film, Music and Sport",
+      "url": "https://www.onthisday.com/",
+      "snippet": "Find out what happened today or any day in history with On This Day. Historical events, birthdays, deaths, photos and famous …"
+    },
+    {
+      "title": "mukherjee78/abc-voice-slm-asr · Hugging Face",
+      "url": "https://huggingface.co/mukherjee78/abc-voice-slm-asr",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Today in History - On This Day",
+      "url": "https://www.onthisday.com/today/events.php",
+      "snippet": "Learn about important and interesting historical events that happened on today in history. Hundreds of events and facts from history, …"
+    },
+    {
+      "title": "Automatic speech recognition · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/asr",
+      "snippet": "Automatic speech recognition Automatic speech recognition (ASR) converts a speech signal to text, mapping a sequence of audio inputs to text outputs. Virtual assistants like Siri and Alexa use ASR models to help users every day, and there are many other useful user-facing applications like live captioning and note-taking during meetings."
+    },
+    {
+      "title": "On This Day - What Happened Today In History | Britannica",
+      "url": "https://www.britannica.com/on-this-day",
+      "snippet": "On This Day In History: anniversaries, birthdays, major events, and time capsules. This day's facts in the arts, politics, and sciences."
+    }
+  ]
+}

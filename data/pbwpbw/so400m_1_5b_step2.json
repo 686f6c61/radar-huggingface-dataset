@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "pbwpbw/so400m_1_5b_step2",
+  "slug": "pbwpbw-so400m_1_5b_step2",
+  "author": "pbwpbw",
+  "url": "https://huggingface.co/pbwpbw/so400m_1_5b_step2",
+  "created_at": "2026-09-13T01:42:13.000Z",
+  "updated_at": "2026-09-13T01:47:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "StateVid_qwen",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": 2271570272,
+  "parameters_human": "2.27B",
+  "storage_bytes": 4704585577,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "regex - Adding ?nocache=1 to every url (including the assets like ...",
+      "url": "https://stackoverflow.com/questions/38333569/adding-nocache-1-to-every-url-including-the-assets-like-stylesheet-behind-the",
+      "snippet": "Jul 12, 2016 · Alright, this is due to the pain that godaddy gives me by implementing their own caching in a MANAGED …"
+    },
+    {
+      "title": "how to clear or replace a cached image - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/321865/how-to-clear-or-replace-a-cached-image",
+      "snippet": "Nov 27, 2008 · I know there are many ways to prevent image caching (such as via META tags), as well as a few nice tricks to ensure …"
+    },
+    {
+      "title": "Como evitar el caché de los archivos css y js",
+      "url": "https://es.stackoverflow.com/questions/63716/como-evitar-el-cach%c3%a9-de-los-archivos-css-y-js",
+      "snippet": "Apr 21, 2017 · Últimamente me he visto con muchos problemas en Google Chrome (en otros navegadores me va bien, exceptuando …"
+    },
+    {
+      "title": "How to force a web browser NOT to cache images - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/126772/how-to-force-a-web-browser-not-to-cache-images",
+      "snippet": "Spent days trying to get Chromium based app to stop caching images. The ?nocache with time echo solved the issue. Thank you!"
+    },
+    {
+      "title": "Prevent browser caching of AJAX call result - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/367786/prevent-browser-caching-of-ajax-call-result",
+      "snippet": "Dec 15, 2008 · Another good answer. I have to say, for me, most of the time globally disabling the cache has been of great benefit. It …"
+    }
+  ]
+}

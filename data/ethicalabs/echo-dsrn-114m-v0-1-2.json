@@ -25,11 +25,12 @@
     "dataset:naufalso/smoltalk2_non_thinking",
     "base_model:ethicalabs/Echo-DSRN-114M-v0.1.2-Base",
     "base_model:finetune:ethicalabs/Echo-DSRN-114M-v0.1.2-Base",
+    "doi:10.57967/hf/10383",
     "license:apache-2.0",
     "region:eu"
   ],
   "likes": 0,
-  "downloads_30d": 1830,
+  "downloads_30d": 1846,
   "trending_score": 0,
   "parameters": 114656768,
   "parameters_human": "114.7M",

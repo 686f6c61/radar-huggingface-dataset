@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SaleemKIU/Mynotebook",
+  "slug": "saleemkiu-mynotebook",
+  "author": "SaleemKIU",
+  "url": "https://huggingface.co/SaleemKIU/Mynotebook",
+  "created_at": "2026-09-13T10:16:07.000Z",
+  "updated_at": "2026-09-13T10:16:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AUF1.TV - Alternatives, unabhängiges Fernsehen.",
+      "url": "https://auf1.tv/?ref=pi",
+      "snippet": "2 days ago · AUF1.TV ist der erste Online-TV-Sender, der professionelle, alternative und unabhängige Nachrichten anbietet."
+    },
+    {
+      "title": "Nachrichten AUF1",
+      "url": "https://auf1.tv/nachrichten-auf1/?d",
+      "snippet": "2 days ago · Das ist die Nachrichtensendung von AUF1. Von Montag bis Freitag um 18 Uhr. Hier erfahren Sie Informationen, Fakten …"
+    },
+    {
+      "title": "KAUF1 – Einkaufen für Aufgewachte.",
+      "url": "https://kauf1.com/",
+      "snippet": "Schnelle und unkomplizierte Abwicklung. So soll es sein. AUF1 ist auf jeden Fall zu empfehlen. Von der Bestellung bis hin zur …"
+    },
+    {
+      "title": "AUF1.info - Alternative, unabhängige Nachrichten.",
+      "url": "https://auf1.info/",
+      "snippet": "Das Online-Nachrichtenportal von AUF1, dem ersten alternativen und unabhängigen Fernsehsender im deutschsprachigen Raum. …"
+    },
+    {
+      "title": "AUF1 Onlineshop | AUF1 Shop",
+      "url": "https://auf1hub.shop/",
+      "snippet": "Im AUF1 Shop, dem offiziellen Onlineshop des ersten alternativen und unabhängigen Fernsehsenders AUF1, finden Sie Kampagnen- …"
+    }
+  ]
+}

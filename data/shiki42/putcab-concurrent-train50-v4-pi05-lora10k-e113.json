@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Shiki42/PutCab-Concurrent-Train50-V4-PI05-LoRA10K-E113",
+  "slug": "shiki42-putcab-concurrent-train50-v4-pi05-lora10k-e113",
+  "author": "Shiki42",
+  "url": "https://huggingface.co/Shiki42/PutCab-Concurrent-Train50-V4-PI05-LoRA10K-E113",
+  "created_at": "2026-09-13T10:01:23.000Z",
+  "updated_at": "2026-09-13T10:14:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "pi05",
+    "lora",
+    "jax",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335582174,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Is Whatsapp web down? - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5538738",
+      "snippet": "Sep 8, 2025 · Cannot link my device now."
+    },
+    {
+      "title": "Malaysiakini bodo quote whatsapp for news - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5572270",
+      "snippet": "Jul 27, 2026 · Outline · [ Standard ] · Linear+ News PolitiKs Malaysiakini bodo quote whatsapp for news, later say sorry"
+    },
+    {
+      "title": "Entrei na Deep Web mas não tinha nada de anormal ou interessante.?",
+      "url": "https://forum.techtudo.com.br/perguntas/290667/entrei-na-deep-web-mas-nao-tinha-nada-de-anormal-ou-interessante",
+      "snippet": "Ouvi dizerem que tem assassinatos, vídeos de fantasmas, e até venda de drogas e armas, etc. Entrei pra ver se era verdade, por …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/en-us/newmsn/forum/all/changing-spanish-to-english/a8f69b49-edbc-4c49-8d35-76b7c0345cd3",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/ja-jp/windows/forum/apps_windows_10-msedge/microsoft-edge/252f30fb-a46d-48f1-9dff-46f1ebf7ddc1↑少し違うかもですが、マイクロソフトのコミュニティに書いてある方法を試して下さい。&gt;アプリのトラブルシューティングを実行してみると良さそうです。手順:[コントロールパネル]→[システムとセキュリティ]→[セキュリティとメンテナンス]→[トラブルシューティング]の順に開き、[すべて表示]を選択して&quot;Windowsストアアプリ&quot;の診断を行ってみてください。もし、上記の対処法を試してみてもうまくいかない場合は、ひとまず、有効な対処法が見つかるまではIEをかわりに使用されると良いと思います。",
+      "snippet": ""
+    }
+  ]
+}

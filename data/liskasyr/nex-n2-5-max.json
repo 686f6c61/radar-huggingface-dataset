@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "liskasYR/Nex-N2.5-Max",
+  "slug": "liskasyr-nex-n2-5-max",
+  "author": "liskasYR",
+  "url": "https://huggingface.co/liskasYR/Nex-N2.5-Max",
+  "created_at": "2026-09-13T02:41:38.000Z",
+  "updated_at": "2026-09-13T02:41:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 53,
+  "trending_score": 0,
+  "parameters": 1600787478430,
+  "parameters_human": "1600.79B",
+  "storage_bytes": 1654575867160,
+  "storage_human": "1654.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Text Generation Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-generation&sort=modified",
+      "snippet": "liskasYR/Nex-N2.5-Max. Text Generation • 1.6T • Updated in about 3 hours ... peonist-ai/halogen-qwen3.8-flash-next. Text Generation • Updated in about 3 ..."
+    },
+    {
+      "title": "Itinéraire avec Mappy. Comparez vos itinéraires",
+      "url": "https://fr.mappy.com/itineraire",
+      "snippet": "Itinéraire avec Mappy. Comparez vos itinéraires Services de plans, calcul d'itinéraires et guide d'adresses pour préparer vos …"
+    },
+    {
+      "title": "Commons:Mobile app/deletion request tracking",
+      "url": "https://commons.wikimedia.org/wiki/Commons:Mobile_app/deletion_request_tracking",
+      "snippet": "vor 5 Tagen ... (Archives of that list are categorized into Category:MobileUpload-related deletion requests archives.) File:Kanhaiya Kumar 2.jpg · File:Kurdish ..."
+    },
+    {
+      "title": "Mappy - Plans, comparateur d'itinéraires et cartes de France",
+      "url": "https://fr.mappy.com/",
+      "snippet": "Recherche d'adresses, de lieux, comparateur d'itinéraires pour préparer vos déplacements partout en France"
+    },
+    {
+      "title": "Mappy Plan : Cartes routières et Lieux en France",
+      "url": "https://fr.mappy.com/plan",
+      "snippet": "Retrouvez sur Mappy les plans de ville, de lieux, d'adresses et de rues. Vous pouvez afficher la carte de votre ville en vue aérienne, …"
+    }
+  ]
+}

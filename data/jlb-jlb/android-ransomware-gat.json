@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "JLB-JLB/android-ransomware-gat",
+  "slug": "jlb-jlb-android-ransomware-gat",
+  "author": "JLB-JLB",
+  "url": "https://huggingface.co/JLB-JLB/android-ransomware-gat",
+  "created_at": "2026-09-05T21:02:00.000Z",
+  "updated_at": "2026-09-13T02:43:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "android",
+    "malware",
+    "ransomware",
+    "graph-neural-network",
+    "gat",
+    "pytorch-geometric",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24412212,
+  "storage_human": "24 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JLB Développement - Fabricant français de produits nutritionnels et ...",
+      "url": "https://www.jlbdeveloppement.com/",
+      "snippet": "De la formulation au conditionnement, nous vous accompagnons dans le développement de vos produits nutritionnels et …"
+    },
+    {
+      "title": "JLB GROUP | Excess Fashion & Luxury Stock Wholesale",
+      "url": "https://jlb-group.fr/",
+      "snippet": "JLB GROUP acquires and redistributes excess fashion & luxury stock worldwide — fast, discreet, and fully traceable. With 8M+ …"
+    },
+    {
+      "title": "Site internet du club de la JL Bourg Basket",
+      "url": "https://www.jlbourg-basket.com/",
+      "snippet": "Mar 10, 2016 · Bienvenue sur le site internet du club professionnel de la JL Bourg Basket. Retrouvez toutes les actualité du club, …"
+    },
+    {
+      "title": "Boutique Officielle JBL – Enceintes, Casques, et plus !",
+      "url": "https://fr.jbl.com/",
+      "snippet": "Le son premium JBL. Enceintes portables, casques, barres de son et bien plus. Livraison gratuite ! Garantie 2 ans ! Retours gratuits …"
+    },
+    {
+      "title": "JLB Horse : Obstacle CSO et Matériel Concours Hippiques Made in …",
+      "url": "https://www.jlb-horse.com/",
+      "snippet": "JLB Horse, c'est plus de 30 ans d'expérience dans la conception et la fabrication d'obstacles et matériels équestres CSO en France. …"
+    }
+  ]
+}

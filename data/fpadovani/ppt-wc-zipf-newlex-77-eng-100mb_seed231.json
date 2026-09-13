@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/ppt-wc-zipf-newlex-77-eng-100mb_seed231",
+  "slug": "fpadovani-ppt-wc-zipf-newlex-77-eng-100mb_seed231",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-77-eng-100mb_seed231",
+  "created_at": "2026-09-13T10:34:25.000Z",
+  "updated_at": "2026-09-13T10:38:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/eng_latn_100mb",
+    "base_model:finetune:goldfish-models/eng_latn_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 86508288,
+  "parameters_human": "86.5M",
+  "storage_bytes": 1384376953,
+  "storage_human": "1.4 GB",
+  "base_model": "goldfish-models/eng_latn_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://www.google.com/maps/search/2024+-2026%3D",
+      "snippet": "Why this ad? No results found for your search."
+    },
+    {
+      "title": "Mapa Google - Polska",
+      "url": "https://mapa-google.pl/?view=article&id=236:gdzie-samochody-street-view-zrobia-zdjecia-w-2026-roku-znamy-rozpiske-miejsc-w-polsce&catid=2",
+      "snippet": "Serwis mapowy na urządzenia stacjonarne oraz mobilne udostępniona przez firmę Google. Podstawową warstwą w serwisie jest …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://www.google.com/maps/search/all_2026",
+      "snippet": "Why this ad? No results found for your search."
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://earth.google.com/web/@3.2026,101.7532,0a,2500000d,0y,0h,0t,0r",
+      "snippet": "Create and collaborate on immersive, data-driven maps from anywhere with the new Google Earth. See the world from above with …"
+    }
+  ]
+}
