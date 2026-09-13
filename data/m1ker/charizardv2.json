@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "M1keR/CharizardV2",
+  "slug": "m1ker-charizardv2",
+  "author": "M1keR",
+  "url": "https://huggingface.co/M1keR/CharizardV2",
+  "created_at": "2026-09-13T14:42:00.000Z",
+  "updated_at": "2026-09-13T14:46:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22637328384,
+  "parameters_human": "22.64B",
+  "storage_bytes": 45290497937,
+  "storage_human": "45.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign in User Account Automatically at Windows 10 Startup",
+      "url": "https://www.tenforums.com/tutorials/3539-sign-user-account-automatically-windows-10-startup.html",
+      "snippet": "Jan 2, 2024 · Turn On or Off Automatically Sign in User Account at Startup in Netplwiz 1 Press the Win + R keys to open the Run …"
+    },
+    {
+      "title": "如何查看自己电脑的用户名和密码 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/3052f5a1ee2c6dd6f31f86de.html",
+      "snippet": "Mar 26, 2022 · 输入命令 打开电脑，使用win＋R快捷键打开运行，输入netplwiz命令，并点击确定。"
+    },
+    {
+      "title": "List of Commands to Open Control Panel Items in Windows 10",
+      "url": "https://www.tenforums.com/tutorials/86339-list-commands-open-control-panel-items-windows-10-a.html",
+      "snippet": "Mar 26, 2026 · How to Create Shortcuts to Open Control Panel Items in Windows 10 In Windows 10, there are a few different ways to …"
+    },
+    {
+      "title": "win10家庭版怎么取消开机密码-百度经验",
+      "url": "https://jingyan.baidu.com/article/4d58d5411a2cda9dd4e9c0d2.html",
+      "snippet": "Mar 24, 2016 · Win10家庭版怎么取消开机密码,Win10家庭版怎么取消登录密码。 很多朋友在使用家庭版时候设置开机登录密码是为了 …"
+    },
+    {
+      "title": "20H2 Netplwiz no longer has auto login - Windows 10 Help Forums",
+      "url": "https://www.tenforums.com/user-accounts-family-safety/166791-20h2-netplwiz-no-longer-has-auto-login.html",
+      "snippet": "Oct 20, 2020 · 20H2 Netplwiz no longer has auto login Just updated to 20H2 on a new build and when I ran Netplwiz there is no …"
+    }
+  ]
+}

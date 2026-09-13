@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "avewright/puzzle-model",
+  "slug": "avewright-puzzle-model",
+  "author": "avewright",
+  "url": "https://huggingface.co/avewright/puzzle-model",
+  "created_at": "2026-09-13T18:16:32.000Z",
+  "updated_at": "2026-09-13T18:29:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "chess",
+    "transformer",
+    "recurrent",
+    "policy",
+    "puzzles",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1595475508,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ABV - АБВ Поща - Вход",
+      "url": "https://home.abv.bg/",
+      "snippet": "АБВ Поща е бърза, удобна и сигурна! Разполагате с 15 GB пространство, управлявате контакти, а пощата ви е защитена. …"
+    },
+    {
+      "title": "АБВ Поща - ABV",
+      "url": "http://mail20.abv.bg/app/servlet/box",
+      "snippet": "АБВ.БГ - Нещо повече от пощенска кутия ВАШАТА ПОТРЕБИТЕЛСКА СЕСИЯ Е ИЗТЕКЛА! За да влезете обратно в …"
+    },
+    {
+      "title": "DOX.bg - Файл организатор",
+      "url": "https://dox.abv.bg/",
+      "snippet": "DOX.bg предоставя безплатно пространство от 5 GB за съхранение, организация и споделяне на файлове с големина до 2G."
+    },
+    {
+      "title": "АБВ Профил - ABV",
+      "url": "https://passport.abv.bg/app/profiles/login",
+      "snippet": "С този профил може да ползвате всички АБВ услуги: АБВ Поща, DOX."
+    },
+    {
+      "title": "ABV - АБВ",
+      "url": "https://mobile.abv.bg/",
+      "snippet": "Мобилни приложения за АБВ Поща ANDROID iOS HUAWEI MOBILE Бъдете в час с писмата си навсякъде и по всяко време …"
+    }
+  ]
+}

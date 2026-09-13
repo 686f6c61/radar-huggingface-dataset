@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "IlhamHww/mae-retrieval",
+  "slug": "ilhamhww-mae-retrieval",
+  "author": "IlhamHww",
+  "url": "https://huggingface.co/IlhamHww/mae-retrieval",
+  "created_at": "2026-09-13T15:46:55.000Z",
+  "updated_at": "2026-09-13T15:47:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jak zacząć tworzyć filmy Short - YouTube - Pomoc - Google Help",
+      "url": "https://support.google.com/youtube/answer/10059070?hl=pl",
+      "snippet": "YouTube Shorts to sposób na nawiązanie więzi z nowymi widzami wyłącznie za pomocą smartfona i kamery do filmów Short w …"
+    },
+    {
+      "title": "Как создавать YouTube Shorts",
+      "url": "https://support.google.com/youtube/answer/10343433?hl=ru&co=GENIE.Platform%3DAndroid",
+      "snippet": "Благодаря YouTube Shorts каждый может воплощать свои идеи и привлекать зрителей по всему миру. Новая функция, …"
+    },
+    {
+      "title": "[Tips & Tricks] Make Youtube Shorts!!! : r/youtubers - Reddit",
+      "url": "https://www.reddit.com/r/youtubers/comments/jv0da0/tips_tricks_make_youtube_shorts/",
+      "snippet": "Nov 16, 2020 · Make YouTube Shorts!!! I had about 500 subscribers, I posted a short, the short was pushed out like crazy, and I am …"
+    },
+    {
+      "title": "Stop shorts from looping? : r/youtube - Reddit",
+      "url": "https://www.reddit.com/r/youtube/comments/qo9vzx/stop_shorts_from_looping/",
+      "snippet": "Nov 6, 2021 · I updated my YouTube app on iOS recently and YouTube shorts now loop unless I scroll to next video."
+    },
+    {
+      "title": "Как загружать короткие видео на YouTube",
+      "url": "https://support.google.com/youtube/answer/12779649?hl=ru&co=GENIE.Platform%3DDesktop",
+      "snippet": "С YouTube Shorts каждый может воплощать свои идеи и привлекать зрителей по всему миру. Просто запишите короткое …"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "AndrewThompson1233/maba-v1.5-exp-architecture",
+  "slug": "andrewthompson1233-maba-v1-5-exp-architecture",
+  "author": "AndrewThompson1233",
+  "url": "https://huggingface.co/AndrewThompson1233/maba-v1.5-exp-architecture",
+  "created_at": "2026-09-13T18:36:46.000Z",
+  "updated_at": "2026-09-13T18:48:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "maba_sparse",
+    "text-generation",
+    "maba",
+    "maba-v1.5",
+    "maba-v1.5-exp",
+    "architecture",
+    "recurrent",
+    "decoupled-gated-delta-attention",
+    "dgda",
+    "linear-attention",
+    "linear-recurrence",
+    "sparse-attention",
+    "maba-sa",
+    "mla",
+    "multi-head-latent-attention",
+    "nope",
+    "dg-indexer",
+    "centroid-indexing",
+    "hca",
+    "3-stream",
+    "swiglu",
+    "rmsnorm",
+    "speculative-decoding",
+    "mtp",
+    "multi-token-prediction",
+    "scaling",
+    "100m",
+    "1b",
+    "3b",
+    "7b",
+    "30b",
+    "pytorch",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎",
+      "url": "https://www.zhihu.com/tardis/jm/art/2045110357153275908",
+      "snippet": ""
+    },
+    {
+      "title": "execl能否平滑滚动，一次滚动一定的像素，而不是一行或多行滚动？",
+      "url": "https://www.zhihu.com/question/291142082",
+      "snippet": "提供了关于如何解决Excel表格滚动条平滑滚动问题的详细解答。"
+    },
+    {
+      "title": "Disposal of libre2 sensor | Diabetes UK Forum",
+      "url": "https://forum.diabetes.org.uk/boards/threads/disposal-of-libre2-sensor.110987/",
+      "snippet": "Feb 29, 2024 · Hi have just started on libre2, where do people dispose of used sensors when they remove them from their arm, many …"
+    },
+    {
+      "title": "Libre Sensor Read Errors | Diabetes UK Forum",
+      "url": "https://forum.diabetes.org.uk/boards/threads/libre-sensor-read-errors.59117/",
+      "snippet": "May 2, 2016 · Hello, hello and hello again all you Libre aficionados out there in Forumland. I have 3 days left on a sensor. The reader …"
+    },
+    {
+      "title": "有哪位大佬说一下libreoffice和WPS office优劣势对比？ - 知乎",
+      "url": "https://www.zhihu.com/question/615622275",
+      "snippet": "很多人对Libreoffice（LO）可能觉得不屑一顾。但是，在我眼里，它比WPS还强，当然总体比OFFICE弱。 Office的王者地位毋庸置 …"
+    }
+  ]
+}

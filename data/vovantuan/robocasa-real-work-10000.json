@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "vovantuan/robocasa-real-work-10000",
+  "slug": "vovantuan-robocasa-real-work-10000",
+  "author": "vovantuan",
+  "url": "https://huggingface.co/vovantuan/robocasa-real-work-10000",
+  "created_at": "2026-09-13T16:51:13.000Z",
+  "updated_at": "2026-09-13T17:09:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "Gr00tN1d6",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3286608832,
+  "parameters_human": "3.29B",
+  "storage_bytes": 9813310504,
+  "storage_human": "9.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Offerte | Lidl Italia",
+      "url": "https://www.lidl.it/",
+      "snippet": "Prova la qualità e la convenienza Lidl, catena di supermercati discount leader in Italia. Sfoglia il volantino settimanale e scopri tutti gli …"
+    },
+    {
+      "title": "Volantino Lidl | Lidl Italia",
+      "url": "https://www.lidl.it/c/volantino-lidl/s10018048",
+      "snippet": "Nel volantino Lidl trovi ogni settimana convenienti sconti sui nostri prodotti con le offerte settimanali ed articoli non food con la …"
+    },
+    {
+      "title": "Lidl Italia",
+      "url": "https://lavoro.lidl.it/",
+      "snippet": "Lidl Italia Ci segui già sui social? Ci trovi su LinkedIn e su Instagram @lidlcareersitalia!🔔🚀"
+    },
+    {
+      "title": "Annunci di lavoro - Lidl Italia",
+      "url": "https://lavoro.lidl.it/annunci-di-lavoro",
+      "snippet": "Su alcuni portali, diversi da questo sito, sono stati pubblicati annunci di lavoro non veritieri a nome di Lidl Italia e successivi inviti a …"
+    },
+    {
+      "title": "Portale di Supporto al Cliente - Lidl Italia",
+      "url": "https://assistenza-clienti.lidl.it/SelfServiceIT/s/",
+      "snippet": "Puoi chattare con il nostro Chatbot LiA, in qualsiasi momento, senza preoccuparti dell'orario! Nel caso necessitassi di ulteriore …"
+    }
+  ]
+}

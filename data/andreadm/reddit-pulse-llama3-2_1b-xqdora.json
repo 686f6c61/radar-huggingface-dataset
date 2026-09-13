@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "andreadm/reddit-pulse-llama3.2_1b-xqdora",
+  "slug": "andreadm-reddit-pulse-llama3-2_1b-xqdora",
+  "author": "andreadm",
+  "url": "https://huggingface.co/andreadm/reddit-pulse-llama3.2_1b-xqdora",
+  "created_at": "2026-09-13T13:24:06.000Z",
+  "updated_at": "2026-09-13T13:54:36.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "llama",
+    "economics",
+    "finance",
+    "inflation",
+    "inflation-expectations",
+    "reddit",
+    "lora",
+    "dora",
+    "xqdora",
+    "text-classification",
+    "en",
+    "base_model:meta-llama/Llama-3.2-1B",
+    "base_model:adapter:meta-llama/Llama-3.2-1B",
+    "license:llama3.2",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20995715,
+  "storage_human": "21 MB",
+  "base_model": "meta-llama/Llama-3.2-1B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Directional inflation-expectation classification (up / neutral / down)",
+      "dataset": "Reddit inflation gold set (Del Monaco, Longo, Marcucci & Tafani, 2026), held-out test split of seed 1245093080",
+      "metric": null,
+      "value": 0.7122
+    },
+    {
+      "task": "Directional inflation-expectation classification (up / neutral / down)",
+      "dataset": "Reddit inflation gold set (Del Monaco, Longo, Marcucci & Tafani, 2026), held-out test split of seed 1245093080",
+      "metric": "F1 (weighted)",
+      "value": 0.7104
+    },
+    {
+      "task": "Directional inflation-expectation classification (up / neutral / down)",
+      "dataset": "Reddit inflation gold set (Del Monaco, Longo, Marcucci & Tafani, 2026), held-out test split of seed 1245093080",
+      "metric": "F1 (macro)",
+      "value": 0.6646
+    },
+    {
+      "task": "Directional inflation-expectation classification (up / neutral / down)",
+      "dataset": "Reddit inflation gold set (Del Monaco, Longo, Marcucci & Tafani, 2026), held-out test split of seed 1245093080",
+      "metric": "ROC-AUC (macro, one-vs-rest)",
+      "value": 0.8678
+    }
+  ],
+  "sources": [
+    {
+      "title": "S.T.A.L.K.E.R. (серия игр) — Википедия",
+      "url": "https://ru.wikipedia.org/wiki/S.T.A.L.K.E.R._(%D1%81%D0%B5%D1%80%D0%B8%D1%8F_%D0%B8%D0%B3%D1%80)",
+      "snippet": "В 2014 году компания West-Games, утверждавшая, что состоит из бывших разработчиков S.T.A.L.K.E.R. (по словам …"
+    },
+    {
+      "title": "S.T.A.L.K.E.R. - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/S.T.A.L.K.E.R.",
+      "snippet": "The series is based on the novel Roadside Picnic by Arkady and Boris Strugatsky, and influenced by the 1979 film Stalker by Andrei …"
+    },
+    {
+      "title": "Steam Franchise: S.T.A.L.K.E.R.",
+      "url": "https://store.steampowered.com/franchise/stalker",
+      "snippet": "Nov 20, 2024 · S.T.A.L.K.E.R. Series from GSC Game World. Enter the Chornobyl Anomalous Zone, a vast open world where …"
+    },
+    {
+      "title": "stalker-game.com - S.T.A.L.K.E.R.: Legends of the Zone Trilogy",
+      "url": "https://www.stalker-game.com/",
+      "snippet": "Legends of the Zone — S.T.A.L.K.E.R. series of games by GSC Game World, including Shadow of Chornobyl, Clear Sky, Call of …"
+    },
+    {
+      "title": "Серия игр Сталкер : все игры S.T.A.L.K.E.R. по порядку",
+      "url": "https://cubiq.ru/seriya-igr-stalker/",
+      "snippet": "Dec 6, 2024 · Серия игр S.T.A.L.K.E.R. – уникальное явление для игровой индустрии СНГ. Первая часть серии, Тень …"
+    }
+  ]
+}

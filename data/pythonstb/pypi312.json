@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "PythonSTB/pypi312",
+  "slug": "pythonstb-pypi312",
+  "author": "PythonSTB",
+  "url": "https://huggingface.co/PythonSTB/pypi312",
+  "created_at": "2026-09-13T14:52:09.000Z",
+  "updated_at": "2026-09-13T15:05:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 229977633,
+  "storage_human": "230 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Online QR Code Generator (Creator)",
+      "url": "https://qrcodecreator.com/",
+      "snippet": "Generate high-quality QR codes for your business or personal use with our free online QR code generator. Create custom codes with …"
+    },
+    {
+      "title": "QR Code Generator | Create Your Free QR Codes",
+      "url": "https://www.qr-code-generator.com/",
+      "snippet": "QR Code Generator for URL, vCard, and more. Add logo, colors, frames, and download in high print quality. Get your free QR Codes …"
+    },
+    {
+      "title": "Free QR Code Generator — 33 Types, No Sign-Up - FreeOnlineQR",
+      "url": "https://www.freeonlineqr.com/qr-code-generator",
+      "snippet": "Create a free QR code in seconds — website, WiFi, vCard, PDF, menu and 28 more types. Custom colours, logos and frames, with …"
+    },
+    {
+      "title": "Free QR Code Generator: Create unlimited QR codes | Canva",
+      "url": "https://www.canva.com/qr-code-generator/?msockid=36ba93bd034465b415f1846e02db642d",
+      "snippet": "Create custom QR codes with our free QR code generator. Keep the URL permanent with static codes or generate dynamic codes …"
+    },
+    {
+      "title": "The QR Code Generator (TQRCG): Create Free QR Codes",
+      "url": "https://www.the-qrcode-generator.com/",
+      "snippet": "The QR Code Generator (TQRCG) All-in-one tool to create free QR Codes, edit them, and track campaign performance."
+    }
+  ]
+}

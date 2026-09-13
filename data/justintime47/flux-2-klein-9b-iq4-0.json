@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "justintime47/FLUX.2-klein-9B-iQ4.0",
+  "slug": "justintime47-flux-2-klein-9b-iq4-0",
+  "author": "justintime47",
+  "url": "https://huggingface.co/justintime47/FLUX.2-klein-9B-iQ4.0",
+  "created_at": "2026-09-13T17:54:35.000Z",
+  "updated_at": "2026-09-13T17:54:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "mlx-serve",
+  "languages": [],
+  "tags": [
+    "mlx-serve",
+    "safetensors",
+    "flux2-klein-9b",
+    "mlx",
+    "flux",
+    "flux2",
+    "quantized",
+    "imatrix",
+    "apple-silicon",
+    "text-to-image",
+    "base_model:black-forest-labs/FLUX.2-klein-9B",
+    "base_model:quantized:black-forest-labs/FLUX.2-klein-9B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kugelschreiber: Der umfassende Leitfaden für Stil, Funktion und Zukunft",
+      "url": "https://gutenberg-print.de/kugelschreiber/",
+      "snippet": "Der Kugelschreiber bleibt ein unverzichtbarer Begleiter in vielen Lebenslagen. Von der ersten Kladde in der Schule bis zur …"
+    },
+    {
+      "title": "Was man mit einem Kugelschreiber alles tun kann",
+      "url": "https://latus-buerobedarf.de/10-dinge-die-man-mit-einem-kugelschreiber-machen-kann/",
+      "snippet": "Sep 4, 2017 · Die primäre Funktion eines Kugelschreibers ist natürlich das Schreiben. Er ist das Werkzeug der Wahl für schnelle …"
+    },
+    {
+      "title": "Kugelschreiber: Der umfassende Leitfaden zu Stil, Technik und Vielfalt",
+      "url": "https://charmeez.de/kugelschreiber/",
+      "snippet": "Jul 16, 2025 · Der Kugelschreiber gehört zu den unverzichtbaren Alltagsbegleitern, die in keinem Büro, keiner Schule und keinem …"
+    },
+    {
+      "title": "Schreibtechniken mit Kugelschreiber: Verbessern Sie Ihr …",
+      "url": "https://www.img4you.com/de/knowledge/10004774",
+      "snippet": "May 9, 2024 · In diesem Artikel werden verschiedene Kugelschreiber-Schreibtechniken und Tipps zur Verbesserung Ihres …"
+    },
+    {
+      "title": "Kugelschreiber – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Kugelschreiber",
+      "snippet": "Kugelschreiber werden heute in großem Rahmen auch als Werbeträger eingesetzt. Die Gehäuseoberfläche von Kugelschreibern …"
+    }
+  ]
+}

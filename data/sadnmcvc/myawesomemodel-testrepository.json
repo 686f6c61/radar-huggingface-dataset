@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SADNMCVC/MyAwesomeModel-TestRepository",
+  "slug": "sadnmcvc-myawesomemodel-testrepository",
+  "author": "SADNMCVC",
+  "url": "https://huggingface.co/SADNMCVC/MyAwesomeModel-TestRepository",
+  "created_at": "2026-09-13T15:45:07.000Z",
+  "updated_at": "2026-09-13T15:53:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "منتديات كووورة",
+      "url": "https://forum.kooora.com/",
+      "snippet": "منتديات كووورة هي منصة عربية شاملة لمناقشة أخبار الرياضة وتبادل الآراء حول مختلف البطولات والفرق الرياضية."
+    },
+    {
+      "title": "منتديات كووورة",
+      "url": "https://forum.kooora.com/f.aspx?t=2506636",
+      "snippet": "منتديات كووورة ... منتديات كووورة"
+    },
+    {
+      "title": "منتديات كووورة",
+      "url": "https://forum.kooora.com/f.aspx?t=39427601",
+      "snippet": "مصادر رياضية خاصة بـ ( كرة القدم الكويتية ) * إضغط على الصورة للدخول إلى المصدر"
+    },
+    {
+      "title": "منتديات كووورة: كووورة أسبانية",
+      "url": "https://forum.kooora.com/f.aspx?f=70",
+      "snippet": "منتديات كووورة هي منصة رياضية لمناقشة وتبادل الأخبار والمعلومات حول كرة القدم والرياضة بشكل عام."
+    },
+    {
+      "title": "۞ ← ۩ سيــــ 11 ـــرة ذاتية من انـا ۩ → ۞",
+      "url": "https://forum.kooora.com/f.aspx?t=36377914",
+      "snippet": "۞ ← ۩ سيــــ 11 ـــرة ذاتية من انـا ۩ → ۞ ... منتديات كووورة"
+    }
+  ]
+}

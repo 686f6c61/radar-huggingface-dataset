@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "elenaromero/hw2-contrastive",
+  "slug": "elenaromero-hw2-contrastive",
+  "author": "elenaromero",
+  "url": "https://huggingface.co/elenaromero/hw2-contrastive",
+  "created_at": "2026-09-13T13:41:24.000Z",
+  "updated_at": "2026-09-13T13:41:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Homepage VZW DE MOLENVISSERS",
+      "url": "http://www.molenvissers.be/",
+      "snippet": "molenvissers, molenvis, hengelen, hengelsport,vzw Laatste bijwerking : 10/9/2026 Bes te s c hermr e solutie: 8 0 0 X 6 00 We bma s …"
+    },
+    {
+      "title": "Hoofdframe - MOLENVISSERS",
+      "url": "http://www.molenvissers.be/Hoofdframe.htm",
+      "snippet": "Wat is nieuw: Aangezien we steeds zoeken naar verbetering en aangezien deze pagina dreigde nogal overladen te worden werd …"
+    },
+    {
+      "title": "LOGO - molenvissers.be",
+      "url": "https://www.molenvissers.be/Supercup/Logos.htm",
+      "snippet": "LOGO LOGO'S DEELNEMENDE VERENIGINGEN SUPERCUP"
+    },
+    {
+      "title": "www.molenvissers.be",
+      "url": "https://www.molenvissers.be/Wedstrijden%202026/VS%202026_5.htm",
+      "snippet": "NAAM: GEW: PLAATS: SECTOR: Klassements punten: 1: ANSEEUW Stefan: 35.940: 10: 3: 1: 2: VERPLANCKE Patrick: 32.080: 43: …"
+    },
+    {
+      "title": "Wedstrijduitslagen 2026 - molenvissers.be",
+      "url": "https://www.molenvissers.be/Wedstrijden%202026/wedstrijduitslagen_2026.htm",
+      "snippet": "Wedstrijduitslagen 2026 Wedstrijduitslagen 2026"
+    }
+  ]
+}

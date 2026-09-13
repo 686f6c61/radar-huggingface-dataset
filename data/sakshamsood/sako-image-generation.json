@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "sakshamsood/Sako.Image.Generation",
+  "slug": "sakshamsood-sako-image-generation",
+  "author": "sakshamsood",
+  "url": "https://huggingface.co/sakshamsood/Sako.Image.Generation",
+  "created_at": "2026-09-13T14:01:57.000Z",
+  "updated_at": "2026-09-13T14:01:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "image-editing",
+    "flux",
+    "diffusion-single-file",
+    "image-to-image",
+    "en",
+    "license:apache-2.0",
+    "diffusers:Flux2KleinPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3875544576,
+  "parameters_human": "3.88B",
+  "storage_bytes": 23735489815,
+  "storage_human": "23.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Form DRC-07 in GST: Summary of Order - ClearTax",
+      "url": "https://cleartax.in/s/drc-07-in-gst-tax-recovery",
+      "snippet": "Jul 2, 2025 · Discover everything about Form DRC-07 in GST – the essential document for tax demand recovery and dispute …"
+    },
+    {
+      "title": "Form GST DRC-07: Summary of Order | Filing & Compliance Guide",
+      "url": "https://www.taxbuddy.com/blog/form-drc-07-in-gst",
+      "snippet": "Learn about Form GST DRC-07, its purpose, key details, and how to respond to a summary of order. Step-by-step guidance for GST …"
+    },
+    {
+      "title": "Form DRC-07 - What is Form DRC-07 in GST? - Aditya Birla Capital",
+      "url": "https://www.adityabirlacapital.com/abc-of-money/form-drc-07-in-gst",
+      "snippet": "Sep 27, 2024 · DRC-07 is the GST demand order issued after adjudication of a tax dispute. ABC explains when Form DRC-07 is …"
+    },
+    {
+      "title": "Challenges in GST Recovery & DRC-07 Compliance - Tax Guru",
+      "url": "https://taxguru.in/goods-and-service-tax/challenges-gst-recovery-drc-07-compliance.html",
+      "snippet": "Feb 3, 2025 · This article aims to examine the issues related to the issuance of orders, the role of Form GST DRC-07, and the …"
+    },
+    {
+      "title": "GST DRC-07: Summary Order, Payment Options, and Appeal",
+      "url": "https://taxgarden.in/blog/gst-drc-07-summary-order-payment-appeal-india-2026",
+      "snippet": "Jul 7, 2026 · What Form GST DRC-07 means, how to read the tax, interest and penalty breakup, your three options after receiving it, …"
+    }
+  ]
+}

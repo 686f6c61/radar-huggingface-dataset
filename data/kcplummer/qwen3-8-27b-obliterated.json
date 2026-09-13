@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "kcplummer/Qwen3.8-27B-OBLITERATED",
+  "slug": "kcplummer-qwen3-8-27b-obliterated",
+  "author": "kcplummer",
+  "url": "https://huggingface.co/kcplummer/Qwen3.8-27B-OBLITERATED",
+  "created_at": "2026-09-13T17:25:09.000Z",
+  "updated_at": "2026-09-13T17:25:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gguf",
+    "qwen3_5",
+    "abliterated",
+    "uncensored",
+    "obliteratus",
+    "qwen3",
+    "qwen3.8",
+    "red-team",
+    "ai-safety-research",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 237137389456,
+  "storage_human": "237.1 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TRANS FRANÇAIS - Vidéo Porno @ MATURE3.TV",
+      "url": "https://mature3.tv/fr/videos/trans-fran%C3%A7ais",
+      "snippet": "Populaires vidéos: TRANS FRANÇAIS. Couple Amateur Avec Trans, Shemale With Couple Français, Trans Encule Un Mec, Trans …"
+    },
+    {
+      "title": "FRANÇAIS TRANS - Vidéo Porno @ MATURE3.TV",
+      "url": "https://mature3.tv/fr/videos/fran%C3%A7ais-trans",
+      "snippet": "Populaires vidéos: FRANÇAIS TRANS. Trans Grosse Bite, Couple Francais Et Trans, Française Shemale Amateur, Vieux Avec …"
+    },
+    {
+      "title": "MATURE FRENCH @ Tranny Clips - Free Shemale Porn",
+      "url": "https://trannyclips.com/mature-french-videos",
+      "snippet": "The hottest free SHEMALE MATURE FRENCH porn videos. The hottest video: French Cutie Emma Fucked And Receives Massive …"
+    },
+    {
+      "title": "Porno HD Shemale french trans mature - fr.shemale.movie",
+      "url": "https://fr.shemale.movie/search/french%20trans%20mature",
+      "snippet": "Les clips XXX excitants les plus populaires: porno Shemale french trans mature, french trans mature, trans french trans mature …"
+    },
+    {
+      "title": "Amateur française • Transexuelle • TS FAP",
+      "url": "https://tsfap.com/fr/categories/french-amateur/",
+      "snippet": "Vidéo Porno. Transexuelle / Amateur française - 167,801 vidéos: asiatique française, gay daddy, amateur teen solo, maman francaise …"
+    }
+  ]
+}

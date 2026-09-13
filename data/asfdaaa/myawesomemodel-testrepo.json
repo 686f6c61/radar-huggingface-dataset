@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "asfdaaa/MyAwesomeModel-TestRepo",
+  "slug": "asfdaaa-myawesomemodel-testrepo",
+  "author": "asfdaaa",
+  "url": "https://huggingface.co/asfdaaa/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-13T14:54:54.000Z",
+  "updated_at": "2026-09-13T14:56:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Scarica l'app Microsoft 365 Copilot per Windows, Mac, Android e iOS",
+      "url": "https://www.microsoft.com/it-it/microsoft-365-copilot/download-copilot-app?msockid=260e41672a86697712c956b42b896815",
+      "snippet": "Scarica l'app Microsoft 365 Copilot su Windows, Mac, iOS e Android e scopri potenti funzionalità di intelligenza artificiale per …"
+    },
+    {
+      "title": "Microsoft Copilot - Scarica e installa in Windows | Microsoft Store",
+      "url": "https://apps.microsoft.com/detail/xp9cxngppj97xx?hl=it-IT&gl=IT",
+      "snippet": "Copilot in Windows ti aiuta a portare a termine il lavoro. Connettiti a file, riunioni, e-mail, chat e app Microsoft 365 che usi ogni giorno …"
+    },
+    {
+      "title": "Microsoft 365 - Accedi a Copilot - Office",
+      "url": "https://m365.cloud.microsoft/?omkt=it-IT",
+      "snippet": "Digita /apps per aprire le app di Microsoft 365 come Word, Excel, PowerPoint e altro ancora. Combina Copilot e il tuo lavoro in …"
+    },
+    {
+      "title": "Il tuo compagno AI di tutti i giorni | Microsoft Copilot",
+      "url": "https://explore.microsoft.com/it-it/microsoft-copilot/learn",
+      "snippet": "Scopri come accedere e utilizzare Copilot per sfruttare l'incredibile potenza, produttività e creatività della chat basata sull'intelligenza …"
+    },
+    {
+      "title": "Microsoft Copilot: Your AI companion",
+      "url": "https://copilot.microsoft.com/?msockid=260e41672a86697712c956b42b896815",
+      "snippet": "Microsoft Copilot is your companion to inform, entertain and inspire. Get advice, feedback and straightforward answers. Try Copilot now."
+    }
+  ]
+}

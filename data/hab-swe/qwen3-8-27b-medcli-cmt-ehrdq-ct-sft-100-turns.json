@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hab-swe/Qwen3.8-27B-MedCLI-CMT-EHRDQ-CT-SFT-100-turns",
+  "slug": "hab-swe-qwen3-8-27b-medcli-cmt-ehrdq-ct-sft-100-turns",
+  "author": "hab-swe",
+  "url": "https://huggingface.co/hab-swe/Qwen3.8-27B-MedCLI-CMT-EHRDQ-CT-SFT-100-turns",
+  "created_at": "2026-09-13T15:56:28.000Z",
+  "updated_at": "2026-09-13T15:57:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54726417280,
+  "storage_human": "54.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définition de hab | Dictionnaire français - La langue française",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/hab",
+      "snippet": "Le mot « hab » est une abréviation du terme habitant. Il désigne toute personne qui vit et occupe un espace géographique précis, tel …"
+    },
+    {
+      "title": "Librairie HAB | Nantes - Facebook",
+      "url": "https://www.facebook.com/librairieHABGalerie/",
+      "snippet": "May 22, 2026 · Librairie HAB, Nantes. 6,249 likes · 1,052 were here. Art • Photo • Archi • Littérature • Essais • BD • Zines • Jeunesse"
+    },
+    {
+      "title": "HAB Galerie - Galerie d'art contemporain à Nantes | Le Voyage à Nantes",
+      "url": "https://www.levoyageanantes.fr/lieux/hab-galerie/",
+      "snippet": "Située sur l'île de Nantes, la HAB Galerie accueille les expositions d'art contemporain du Voyage à Nantes, ainsi qu'une librairie …"
+    },
+    {
+      "title": "Librairie HAB Galerie - Parc des Chantiers, Nantes | Le Voyage à Nantes",
+      "url": "https://www.levoyageanantes.fr/lieux/librairie-hab-galerie/",
+      "snippet": "Sur l'île de Nantes, la librairie de la HAB Galerie propose un large choix de livres contemporains et d'objets de créateurs français."
+    },
+    {
+      "title": "HAB Galerie : la programmation d'art contemporain en action",
+      "url": "https://www.infos-nantes.fr/programmation-art-contemporain-hab/",
+      "snippet": "Apr 3, 2026 · La programmation artistique gérée par la HAB Galerie combine ambitions curatoriales et médiation active pour le public …"
+    }
+  ]
+}

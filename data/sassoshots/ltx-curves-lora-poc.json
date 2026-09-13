@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "sassoshots/ltx-curves-lora-poc",
+  "slug": "sassoshots-ltx-curves-lora-poc",
+  "author": "sassoshots",
+  "url": "https://huggingface.co/sassoshots/ltx-curves-lora-poc",
+  "created_at": "2026-09-13T16:03:19.000Z",
+  "updated_at": "2026-09-13T16:03:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TosiNet 1K 2MP PoE-Minikamera - TopSicherheit",
+      "url": "https://www.topsicherheit.de/ueberwachungskameras/minikameras/ip-minikamera.html",
+      "snippet": "Eine Gesichtsidentifizierung ist bis 3 Meter möglich. Die PoE-IP-Kamera wird direkt an ein Netzwerk angeschlossen. Zugriff mit …"
+    },
+    {
+      "title": "Mini-Tube PoE Überwachungskamera | Videoüberwachung - ABUS",
+      "url": "https://www.abus.com/de/Privat/Videoueberwachung/Systeme-vom-Fachmann/Kameras/ABUS-8MPx-IP-PoE-mini-tube-kamera",
+      "snippet": "PoE-Sicherheitskamera mit Mini-Tube-Gehäuse und Maxi-Funktionsumfang: Objektunterscheidung, super Gegenlicht-Kompensation, …"
+    },
+    {
+      "title": "Mini IP Kamera POE | Preisvergleich bei idealo.de",
+      "url": "https://www.idealo.de/preisvergleich/Liste/115340988/mini-ip-kamera-poe.html?msockid=1313d0b3a80663381c2dc760a99c62fd",
+      "snippet": "Bei idealo.de günstige Preise für Mini IP Kamera POE vergleichen."
+    },
+    {
+      "title": "Mini-Tube PoE Überwachungskamera | Videoüberwachung - ABUS",
+      "url": "https://www.abus.com/de/Privat/Videoueberwachung/Systeme-vom-Fachmann/Kameras/2MPx-IP-PoE-Mini-Tube-kamera",
+      "snippet": "PoE-Sicherheitskamera mit Mini-Tube-Gehäuse und Maxi-Funktionsumfang: super Gegenlicht-Kompensation, …"
+    },
+    {
+      "title": "REVODATA 5MP POE IP Minikamera, 1,44 mm Fisheye Objektiv",
+      "url": "https://www.amazon.de/REVODATA-Minikamera-Sichtfeld-%C3%9Cberwachungskamera-Bewegungserkennung/dp/B09YHGHR21",
+      "snippet": "【1,44 mm Fisheye Objektiv & Mini Typ】 Das Kameraobjektiv ist ein 1,44-mm-Fisheye-Objektiv, der Betrachtungswinkel beträgt 180 …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "circulus/qwen3-reranker-0.6b-int8-ov",
+  "slug": "circulus-qwen3-reranker-0-6b-int8-ov",
+  "author": "circulus",
+  "url": "https://huggingface.co/circulus/qwen3-reranker-0.6b-int8-ov",
+  "created_at": "2026-09-13T14:04:13.000Z",
+  "updated_at": "2026-09-13T14:04:18.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "openvino",
+    "qwen3",
+    "int8",
+    "circulus",
+    "ov-courseware",
+    "base_model:Qwen/Qwen3-Reranker-0.6B",
+    "base_model:finetune:Qwen/Qwen3-Reranker-0.6B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 616662046,
+  "storage_human": "617 MB",
+  "base_model": "Qwen/Qwen3-Reranker-0.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.de/intl/de/earth/",
+      "snippet": "Google Earth ist eine fotorealistische und digitale Version unseres Planeten. Woher kommen die Bilder? Wie sind sie …"
+    },
+    {
+      "title": "Transit – Google Maps",
+      "url": "https://maps.google.de/landing/transit/cities/index.html",
+      "snippet": "Home Cities Covered Cities Covered"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.de/mapfiles/home3.html",
+      "snippet": "Explore the world with Google Maps, find locations, get directions, and access real-time traffic updates."
+    },
+    {
+      "title": "Für Fotografen – Business Photos – Google Maps",
+      "url": "https://maps.google.de/intl/de/help/maps/businessphotos/photographers/",
+      "snippet": "Sie erhalten die Schulungen und den Support, die Sie benötigen, um Street View-Bilder aufzunehmen, die auf Google Maps …"
+    },
+    {
+      "title": "Datenschutzerklärung & Nutzungsbedingungen - Google Maps",
+      "url": "https://maps.google.de/intl/de/policies/privacy/archive/20170417-20171002/",
+      "snippet": "Apr 17, 2017 · Google verarbeitet personenbezogene Daten auf unseren Servern, die sich in zahlreichen Ländern auf der ganzen …"
+    }
+  ]
+}

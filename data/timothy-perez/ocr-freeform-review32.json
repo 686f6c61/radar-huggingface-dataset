@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "timothy-perez/ocr-freeform-review32",
+  "slug": "timothy-perez-ocr-freeform-review32",
+  "author": "timothy-perez",
+  "url": "https://huggingface.co/timothy-perez/ocr-freeform-review32",
+  "created_at": "2026-09-13T14:16:54.000Z",
+  "updated_at": "2026-09-13T14:17:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "ocr-freeform",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fiche technique du scooter Peugeot Django 4T 50cc - 50factory.com",
+      "url": "https://www.50factory.com/content/1064-fiche-technique-du-scooter-peugeot-django-4t-50cc",
+      "snippet": "Retrouvez ici toutes les informations concernant le Peugeot Django 4T 50cm3. Découvrez également les pièces détachées …"
+    },
+    {
+      "title": "Fiche technique du scooter Peugeot Django 2T Euro4 50cc",
+      "url": "https://www.50factory.com/content/2669-fiche-technique-du-scooter-peugeot-django-2t-euro4-50cc",
+      "snippet": "Retrouvez ici toutes les informations concernant le Peugeot Django 2T 50cm3 Euro4. Découvrez également les pièces détachées …"
+    },
+    {
+      "title": "Documentation Peugeot-Motocycles en PDF [ Revues Techniques …",
+      "url": "https://www.scooter-system.fr/forum/topic/71373-documentation-peugeot-motocycles-en-pdf-revues-techniques-moto-sch%C3%A9mas-%C3%A9lectricit%C3%A9-notices-entretiens/",
+      "snippet": "Sep 18, 2019 · P our ceux qui veulent aller plus loin, il y a une section \"Fonctionnements et Principes\", vous y trouverez des …"
+    },
+    {
+      "title": "1180476300 NOTICE_DJANGO euro5 - static.peugeot-motocycles.fr",
+      "url": "https://static.peugeot-motocycles.fr/files/documents/68e4bdfe58166932316989.pdf",
+      "snippet": "Afin de conserver la sécurité et la fiabilité maximale de votre véhicule, il est recommandé d'effectuer l'entretien et les réparations par …"
+    },
+    {
+      "title": "Fiche Technique Peugeot Django - L'argus",
+      "url": "https://www.largus.fr/fiche-technique/Peugeot/Django.html",
+      "snippet": "Consultez les fiches techniques Peugeot Django de L'argus : les prix, les caractéristiques techniques et les options de l'ensemble …"
+    }
+  ]
+}

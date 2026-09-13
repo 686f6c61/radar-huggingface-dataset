@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "abdul-razaq-ork/romanized-pashto-fasttext",
+  "slug": "abdul-razaq-ork-romanized-pashto-fasttext",
+  "author": "abdul-razaq-ork",
+  "url": "https://huggingface.co/abdul-razaq-ork/romanized-pashto-fasttext",
+  "created_at": "2026-09-13T18:44:24.000Z",
+  "updated_at": "2026-09-13T18:52:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "fasttext",
+  "languages": [
+    "ps",
+    "en",
+    "ur"
+  ],
+  "tags": [
+    "fasttext",
+    "text-classification",
+    "language-identification",
+    "pashto",
+    "romanized-pashto",
+    "low-resource-language",
+    "code-mixed",
+    "nlp",
+    "language-detection",
+    "ps",
+    "en",
+    "ur",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Abdul - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Abdul",
+      "snippet": "Abdul (also transliterated as Abdal, Abdel, Abdil, Abdol, Abdool, or Abdoul; Arabic: عبد ال, ʿAbd al-) is the most frequent transliteration …"
+    },
+    {
+      "title": "Paula Abdul — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Paula_Abdul",
+      "snippet": "Paula Abdul est une chanteuse, danseuse et chorégraphe américano - canado - syrienne 1, née le 19 juin 1962 à Los Angeles. Elle a …"
+    },
+    {
+      "title": "Abdul - Name Meaning and Origin",
+      "url": "https://namediscoveries.com/names/abdul",
+      "snippet": "The name Abdul is of Arabic origin and is commonly used as a prefix in Arabic names. It means \"servant\" or \"slave\" of Allah, …"
+    },
+    {
+      "title": "Abdülaziz — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Abd%C3%BClaziz",
+      "snippet": "Fin de règne et mort Entre-temps, le gouvernement turc fait banqueroute et cesse de payer à ses créanciers les intérêts des …"
+    },
+    {
+      "title": "Paula Abdul - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Paula_Abdul",
+      "snippet": "With six number-one singles on Hot 100, Abdul tied Diana Ross for the third-most chart-toppers among female solo artists at the time. …"
+    }
+  ]
+}

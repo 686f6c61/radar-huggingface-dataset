@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Nikhitha123/cleanrl-ppo-LunarLander-v2",
+  "slug": "nikhitha123-cleanrl-ppo-lunarlander-v2",
+  "author": "Nikhitha123",
+  "url": "https://huggingface.co/Nikhitha123/cleanrl-ppo-LunarLander-v2",
+  "created_at": "2026-09-13T11:40:53.000Z",
+  "updated_at": "2026-09-13T11:41:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "LunarLander-v2",
+    "ppo",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 710643,
+  "storage_human": "710643 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "easyjet onboard vouchers — MoneySavingExpert Forum",
+      "url": "https://forums.moneysavingexpert.com/discussion/6589669/easyjet-onboard-vouchers",
+      "snippet": "Feb 21, 2025 · When you check in online for easyjet they offer you the chance to buy a £10 voucher to spend onboard for £8. How …"
+    },
+    {
+      "title": "easyJet Compensation Rejected — MoneySavingExpert Forum",
+      "url": "https://forums.moneysavingexpert.com/discussion/6612091/easyjet-compensation-rejected",
+      "snippet": "Jun 10, 2025 · I recently had a near 13 hour delay for a flight from Inverness to Luton which was caused due to a technical issue with …"
+    },
+    {
+      "title": "Fire crews report busy day with outdoor fires in Shropshire",
+      "url": "https://www.shropshirestar.com/news/shrewsbury/fire-crews-report-busy-day-with-outdoor-fires-in-shropshire-8849902",
+      "snippet": "Aug 10, 2026 · Take a look at some of the fires reported in Shropshire today"
+    },
+    {
+      "title": "Latest News | Shropshire Star",
+      "url": "https://www.shropshirestar.com/",
+      "snippet": "Get all of the latest news from Shropshire Star. Providing a fresh perspective for online news."
+    },
+    {
+      "title": "60 Millions de Consommateurs — Accueil",
+      "url": "https://www.60millions-mag.com/",
+      "snippet": "Les applications de nutrition offrent de nombreux services, gratuits ou payants, qui permettent de suivre précisément un programme …"
+    }
+  ]
+}

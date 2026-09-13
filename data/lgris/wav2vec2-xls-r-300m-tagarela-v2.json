@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "lgris/wav2vec2-xls-r-300m-tagarela-v2",
+  "slug": "lgris-wav2vec2-xls-r-300m-tagarela-v2",
+  "author": "lgris",
+  "url": "https://huggingface.co/lgris/wav2vec2-xls-r-300m-tagarela-v2",
+  "created_at": "2026-09-13T14:46:25.000Z",
+  "updated_at": "2026-09-13T15:01:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "safetensors",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "speech",
+    "audio",
+    "xls-r",
+    "pt",
+    "dataset:freds0/TAGARELA_v2",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 315493045,
+  "parameters_human": "315.5M",
+  "storage_bytes": 1262024732,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "TAGARELA v2 Test",
+      "metric": "Test WER",
+      "value": 11.75
+    }
+  ],
+  "sources": [
+    {
+      "title": "Squad - FC Barcelona Official Channel",
+      "url": "https://www.fcbarcelona.com/en/football/first-team/players",
+      "snippet": "Discover the official FC Barcelona squad. We tell you everything you need to know about your favorite players and the Barça …"
+    },
+    {
+      "title": "Barcelona 2026-27 Squad – Full Official List | Who's in and Who's Out",
+      "url": "https://www.fifaworldcupnews.com/barcelona-2026-27-squad-25-players-list/",
+      "snippet": "Sep 6, 2026 · Here is everything you need to know about the Barcelona 2026-27 Squad. The FC Barcelona 2026-27 squad list …"
+    },
+    {
+      "title": "FC Barcelona squad 2026/2027: players and coach on Tribuna.com",
+      "url": "https://tribuna.com/en/clubs/barcelona/squad/2026-2027/",
+      "snippet": "This page shows the FC Barcelona FC squad for football club roster are grouped by position: goalkeepers, defenders, midfielders …"
+    },
+    {
+      "title": "Barcelona 2026-27 Squad - ESPN",
+      "url": "https://www.espn.com/soccer/team/squad/_/id/83/barcelona",
+      "snippet": "Explore the 2026-27 Barcelona roster on ESPN. Includes full details on appearances, minutes played, goals and assists."
+    },
+    {
+      "title": "FC Barcelona - Detailed squad 26/27 | Transfermarkt",
+      "url": "https://www.transfermarkt.com/fc-barcelona/kader/verein/131",
+      "snippet": "It shows all personal information about the players, including age, nationality, contract duration and market value. It also contains a …"
+    }
+  ]
+}

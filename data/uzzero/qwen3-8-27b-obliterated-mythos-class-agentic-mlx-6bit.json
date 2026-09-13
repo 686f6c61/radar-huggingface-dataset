@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "uzzero/Qwen3.8-27B-OBLITERATED-Mythos-Class-Agentic-MLX-6bit",
+  "slug": "uzzero-qwen3-8-27b-obliterated-mythos-class-agentic-mlx-6bit",
+  "author": "uzzero",
+  "url": "https://huggingface.co/uzzero/Qwen3.8-27B-OBLITERATED-Mythos-Class-Agentic-MLX-6bit",
+  "created_at": "2026-09-13T16:56:35.000Z",
+  "updated_at": "2026-09-13T17:37:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "6-bit",
+    "conversational",
+    "tool-use",
+    "image-text-to-text",
+    "base_model:medismera/Qwen3.8-27B-OBLITERATED-Mythos-Class-Agentic",
+    "base_model:quantized:medismera/Qwen3.8-27B-OBLITERATED-Mythos-Class-Agentic",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 22797865798,
+  "storage_human": "22.8 GB",
+  "base_model": "medismera/Qwen3.8-27B-OBLITERATED-Mythos-Class-Agentic",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Przygoda w Amazonii - Brazylia | ITAKA",
+      "url": "https://www.itaka.pl/wycieczki/brazylia/przygoda-w-amazonii,GIGAMAZ/",
+      "snippet": "Uważane za bramę do brazylijskiej Amazonii miasto Manaus charakteryzuje się bogatą architekturą nawiązującą do złotego wieku …"
+    },
+    {
+      "title": "Wycieczka do Amazonii – 4 dni w amazońskiej dżungli",
+      "url": "https://mangobackpack.pl/wycieczka-do-amazonii/",
+      "snippet": "Oct 30, 2022 · Zaraz po zachodzie słońca, gdy czerwono-żółte słońce schowało się już za horyzontem i niebo otuliła ciemność, …"
+    },
+    {
+      "title": "Amazonia wycieczki 2026 - Urlop.pl",
+      "url": "https://www.urlop.pl/wycieczki/brazylia/amazonia/",
+      "snippet": "18 hours ago · Wycieczki do Amazonii w 2026 ☀️ Ponad 60 000 ofert! Najlepsze ceny, aktualne opinie Zarezerwuj idealne wakacje …"
+    },
+    {
+      "title": "Wycieczka do Amazonii | Las deszczowy Amazonii | Dżungla w jeden …",
+      "url": "https://www.booking.com/attractions/ec/prmdzfaaqlm7-excursion-to-the-amazon-amazon-rainforest-jungle-in-a-day.pl.html?msockid=09ef12a970346b252d4c057a71916a1a",
+      "snippet": "Czas trwania: 8 godz. Spędzisz dzień w rezerwacie Hola Vida w sektorze Puyo, podziwiając widoki lasu deszczowego i poznając …"
+    },
+    {
+      "title": "Amazońska Przygoda! - Brazylia | ITAKA",
+      "url": "https://www.itaka.pl/wycieczki/brazylia/amazonska-przygoda!,SSAAMAK/",
+      "snippet": "Podczas wyprawy czeka na Ciebie totalny kontrast z niezbadanymi nadal obszarami Amazonii, gdzie kryje się zaginiona kraina El …"
+    }
+  ]
+}

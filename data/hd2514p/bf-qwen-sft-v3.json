@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "hd2514p/bf-qwen-sft-v3",
+  "slug": "hd2514p-bf-qwen-sft-v3",
+  "author": "hd2514p",
+  "url": "https://huggingface.co/hd2514p/bf-qwen-sft-v3",
+  "created_at": "2026-09-13T11:54:26.000Z",
+  "updated_at": "2026-09-13T12:13:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:Qwen/Qwen2.5-Coder-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-0.5B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46664709,
+  "storage_human": "47 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The stickiest place on Reddit!",
+      "url": "https://www.reddit.com/r/cumsluts/",
+      "snippet": "r/cumsluts: Lovely ladies loving cum. Partial Source Reddit does not allow NSFW uploads. With imgur following suit, here are …"
+    },
+    {
+      "title": "Am I at fault here? : r/legaladvice - Reddit",
+      "url": "https://www.reddit.com/r/legaladvice/comments/2dukot/am_i_at_fault_here/",
+      "snippet": "Aug 18, 2014 · About 2 or 3 nights ago, I was on Chaturbate. For those of you who don't know, Chaturbate is an adults camgirl …"
+    },
+    {
+      "title": "Google Chat Help",
+      "url": "https://support.google.com/chat/?hl=en",
+      "snippet": "Official Google Chat Help Center where you can find tips and tutorials on using Google Chat and other answers to frequently asked …"
+    },
+    {
+      "title": "Rasé à l'hopital - Epilation - FORUM Beauté - Club.doctissimo.fr",
+      "url": "https://forum.doctissimo.fr/forme-beaute/epilation-poils/rase-hopital-sujet_147921_1.htm",
+      "snippet": "Nov 4, 2004 · Mon copain s'est fait opérer de l'apindicite l'année dernière à 25ans. Il est plutôt viril et lorsque l'infirmière lui a rasé le …"
+    },
+    {
+      "title": "L'érection en camp naturiste - Naturisme - FORUM Vie Pratique",
+      "url": "https://forum.doctissimo.fr/viepratique/Naturisme/camp-naturiste-sujet_621_1.htm",
+      "snippet": "Apr 26, 2011 · Dans quelques semaines, avec ma fiancée, nous irons pour la première fois en camp naturiste et j'ai hate d'y etre. …"
+    }
+  ]
+}

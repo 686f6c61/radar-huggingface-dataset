@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Nikhitha123/Reinforce-Pixelcopter-PLE-v0",
+  "slug": "nikhitha123-reinforce-pixelcopter-ple-v0",
+  "author": "Nikhitha123",
+  "url": "https://huggingface.co/Nikhitha123/Reinforce-Pixelcopter-PLE-v0",
+  "created_at": "2026-09-13T11:39:49.000Z",
+  "updated_at": "2026-09-13T11:39:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Pixelcopter-PLE-v0",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5769,
+  "storage_human": "5769 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Correcteur d'orthographe et de grammaire - Français - Reverso",
+      "url": "https://www.reverso.net/orthographe/correcteur-francais/",
+      "snippet": "Correction de textes en français : vérifiez l'orthographe et la grammaire avec le correcteur Reverso, et corrigez les fautes avant la …"
+    },
+    {
+      "title": "Reverso | Traduction gratuite, dictionnaire",
+      "url": "https://www.reverso.net/traduction-texte",
+      "snippet": "Le service de traduction en ligne gratuit de Reverso qui traduit vos textes de l'anglais vers le français, l'espagnol, l'italien, l'allemand, …"
+    },
+    {
+      "title": "Reverso Context | Переводчик Контекст - английский, французский ...",
+      "url": "https://context.reverso.net/%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4/",
+      "snippet": "Reverso Context предлагает все функции и результаты, которые вы ожидаете от традиционного словаря, и многое другое: …"
+    },
+    {
+      "title": "Dictionnaire, traduction | anglais, espagnol | Reverso",
+      "url": "https://dictionnaire.reverso.net/",
+      "snippet": "Les dictionnaires Reverso en ligne : traductions, définitions, synonymes. Des mots et expressions en anglais, espagnol, allemand, …"
+    },
+    {
+      "title": "Reverso Context | Translation in context - French, Spanish, Italian ...",
+      "url": "https://context.reverso.net/",
+      "snippet": "Translations in context of words, groups of words and idioms; a free dictionary with millions of examples in French, Spanish, Italian, …"
+    }
+  ]
+}

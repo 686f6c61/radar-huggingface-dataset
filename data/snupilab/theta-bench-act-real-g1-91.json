@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "snupilab/theta-bench-act-real-g1-91",
+  "slug": "snupilab-theta-bench-act-real-g1-91",
+  "author": "snupilab",
+  "url": "https://huggingface.co/snupilab/theta-bench-act-real-g1-91",
+  "created_at": "2026-09-13T17:03:57.000Z",
+  "updated_at": "2026-09-13T17:03:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "robotics",
+    "theta-bench",
+    "real-g1",
+    "en",
+    "dataset:snupilab/theta-bench-teleop",
+    "base_model:snupilab/theta-bench-act-sim-3003",
+    "base_model:finetune:snupilab/theta-bench-act-sim-3003",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "snupilab/theta-bench-act-sim-3003",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.de/",
+      "snippet": "Mit Google Übersetzer können Sie Wörter, Sätze und Webseiten kostenlos in über 100 Sprachen übersetzen."
+    },
+    {
+      "title": "DeepL Übersetzer | Der präziseste Übersetzer der Welt - DeepL Translate",
+      "url": "https://www.deepl.com/de/translator",
+      "snippet": "Übersetzen Sie Texte und ganze Dateien im Handumdrehen. Präzise Übersetzungen für Einzelnutzer und Teams. Jeden Tag nutzen …"
+    },
+    {
+      "title": "DeepL Translator | World's Most Accurate Translator",
+      "url": "https://www.deepl.com/en/translator",
+      "snippet": "Translate texts & full document files instantly. Accurate translations for individuals and Teams. Millions translate with DeepL every day."
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.nl/",
+      "snippet": "Deze kosteloze service van Google kan woorden, zinnen en webpagina's onmiddellijk vertalen tussen het Nederlands en meer dan …"
+    }
+  ]
+}

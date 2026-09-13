@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nickzin/qwen3.8-27b-lora-doh",
+  "slug": "nickzin-qwen3-8-27b-lora-doh",
+  "author": "nickzin",
+  "url": "https://huggingface.co/nickzin/qwen3.8-27b-lora-doh",
+  "created_at": "2026-09-13T18:10:33.000Z",
+  "updated_at": "2026-09-13T18:20:51.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen",
+    "tool-calling",
+    "function-calling",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 338825015,
+  "storage_human": "339 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "News and Updates from Gadget Hacks: Page 36",
+      "url": "https://www.gadgethacks.com/news/page/36/",
+      "snippet": "Jan 28, 2026 · Gadget Hacks provides lifehacks for your smartphone. We aim to provide the most comprehensive smartphone guide …"
+    },
+    {
+      "title": "How to Create a Bump Key to Open Any Door :: Null Byte",
+      "url": "https://null-byte.wonderhowto.com/how-to/create-bump-key-open-any-door-0130500/",
+      "snippet": "Oct 11, 2011 · Today's Null Byte is going to demonstrate how to effectively make what is called a \"bump key\". A bump key can open …"
+    },
+    {
+      "title": "How Hackers Take Your Encrypted Passwords & Crack Them",
+      "url": "https://null-byte.wonderhowto.com/how-to/hackers-take-your-encrypted-passwords-crack-them-0130638/",
+      "snippet": "Oct 15, 2011 · You may have asked yourself, \"How do hackers take my password, if the website owner can't?\" The answer is simple. …"
+    },
+    {
+      "title": "Terms & Conditions - Gadget Hacks",
+      "url": "https://www.gadgethacks.com/terms/",
+      "snippet": "Mar 1, 2014 · Terms & Conditions for usage of our sites Terms & Conditions TERMS OF USE Effective Date: March 1, 2014 (Updated …"
+    },
+    {
+      "title": "How to Use Cygwin to Run Linux Apps on Windows :: Null Byte",
+      "url": "https://null-byte.wonderhowto.com/how-to/use-cygwin-run-linux-apps-windows-0130061/",
+      "snippet": "Sep 23, 2011 · You'll see a lot of Linux action going down here at Null Byte. We use Linux for hacking-related stuff because it …"
+    }
+  ]
+}

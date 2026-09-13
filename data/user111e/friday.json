@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "User111e/Friday",
+  "slug": "user111e-friday",
+  "author": "User111e",
+  "url": "https://huggingface.co/User111e/Friday",
+  "created_at": "2026-09-13T13:35:31.000Z",
+  "updated_at": "2026-09-13T13:35:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "البوابة الألكترونية للخدمات الضريبية",
+      "url": "https://eservice.incometax.gov.eg/etax",
+      "snippet": "في إطار الجهود الحثيثة التي تقوم بها مصلحة الضرائب المصرية لتطوير وتحديث النظم المطبقة لخدمة العمل الضريبي من خلال شبكة معلومات مصلحة الضرائب المصرية وأيضا مواكبة أحدث النظم …"
+    },
+    {
+      "title": "البوابة الألكترونية للخدمات الضريبية",
+      "url": "https://eservice.incometax.gov.eg/ETax/Account/Login",
+      "snippet": "بوابة الضرائب المصرية تسجيل دخول عن المصلحة اتصل بنا ضريبة الدخل نظام المحاسبة المبسط ضريبة التصرفات العقارية الخصم والتحصيل المرتبات والأجور القيمة المضافة خدمات"
+    },
+    {
+      "title": "E-Tax | مصلحة الضرائب المصرية",
+      "url": "http://workspace.eta.gov.eg/",
+      "snippet": "مصلحة الضرائب المصرية أُنشئت سنة 2006 بقرار جمهوري بدمج مصلحتي الضرائب العامة والضرائب علي المبيعات وهي الهيئة المختصة بجمع الضرائب في مصر."
+    },
+    {
+      "title": "البوابة الألكترونية للخدمات الضريبية",
+      "url": "https://eservice.incometax.gov.eg/ETax/TaxpayerRegistration/AddTaxpayer",
+      "snippet": "هل انت جهة خصم وتحصيل تحت حساب الضريبة؟ هل تقوم الشركة بتقديم نماذج / إقرارات ضريبة المرتبات والأجور ؟ هل تمتلك ضريبة قيمة مضافه؟"
+    },
+    {
+      "title": "Eta Identity Hub",
+      "url": "https://invoicing.eta.gov.eg/",
+      "snippet": "هل نسيت كلمة السر ؟ اعد ضبط كلمة السر."
+    }
+  ]
+}

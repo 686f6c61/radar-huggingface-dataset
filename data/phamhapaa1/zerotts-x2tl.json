@@ -1,0 +1,125 @@
+{
+  "schema": 1,
+  "id": "Phamhapaa1/ZeroTTS-x2TL",
+  "slug": "phamhapaa1-zerotts-x2tl",
+  "author": "Phamhapaa1",
+  "url": "https://huggingface.co/Phamhapaa1/ZeroTTS-x2TL",
+  "created_at": "2026-09-13T17:08:46.000Z",
+  "updated_at": "2026-09-13T17:08:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnx",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "tts",
+    "vietnamese",
+    "onnxruntime",
+    "zero-shot",
+    "speech-synthesis",
+    "voice-cloning",
+    "vietnamese-tts",
+    "tieng-viet",
+    "vi",
+    "arxiv:2602.10934",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 910203622,
+  "storage_human": "910 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Zero-Shot Text-to-Speech",
+      "dataset": "ZeroBench-TTS",
+      "metric": "WER (%) — raw text",
+      "value": 1.03
+    },
+    {
+      "task": "Zero-Shot Text-to-Speech",
+      "dataset": "ZeroBench-TTS",
+      "metric": "UTMOSv2 naturalness MOS",
+      "value": 2.91
+    },
+    {
+      "task": "Zero-Shot Text-to-Speech",
+      "dataset": "ZeroBench-TTS",
+      "metric": "Speaker similarity (WavLM-SV cosine)",
+      "value": 0.936
+    },
+    {
+      "task": "Zero-Shot Text-to-Speech",
+      "dataset": "ZeroBench-TTS",
+      "metric": "Excess silence (s)",
+      "value": 0.029
+    },
+    {
+      "task": "Zero-Shot TTS — monolingual Vietnamese",
+      "dataset": "ZeroBench-TTS (vietnamese)",
+      "metric": "WER (%) — raw text",
+      "value": 0.16
+    },
+    {
+      "task": "Zero-Shot TTS — Vietnamese/English code-switching",
+      "dataset": "ZeroBench-TTS (code_switch)",
+      "metric": "WER (%) — raw text",
+      "value": 0.97
+    },
+    {
+      "task": "Zero-Shot TTS — cross-lingual voice prompt",
+      "dataset": "ZeroBench-TTS (cross_lingual)",
+      "metric": "WER (%) — raw text",
+      "value": 1.42
+    },
+    {
+      "task": "Zero-Shot TTS — acronyms, dates, numbers",
+      "dataset": "ZeroBench-TTS (challenging)",
+      "metric": "WER (%) — raw text",
+      "value": 1.75
+    }
+  ],
+  "sources": [
+    {
+      "title": "DeFi Deep Dive – Synthetix, Real World Assets to Crypto",
+      "url": "https://beincrypto.com/defi-deep-dive-synthetix-real-world-assets-to-crypto/",
+      "snippet": "Apr 18, 2021 · Additionally, traders looking to short crypto non-accredited assets for futures platforms can also benefit. Beginners that …"
+    },
+    {
+      "title": "Yield Farming for Beginners: Earning Crypto Passive Income!",
+      "url": "https://coinbureau.com/guides/yield-farming",
+      "snippet": "Mar 29, 2023 · Yield farming is one of the newer liquidity concepts to emerge from the DeFi ecosystem, and it entails a process of …"
+    },
+    {
+      "title": "Cygnus",
+      "url": "https://www.cygnus.finance/",
+      "snippet": "It offers a modular, real-yield solution that enables developers to build engaging, blockchain-powered experiences directly on the …"
+    },
+    {
+      "title": "8 Best DeFi Yield Aggregators in 2026 | CoinCodex",
+      "url": "https://coincodex.com/article/37867/best-defi-yield-aggregators/",
+      "snippet": "Jul 9, 2026 · 8 Best DeFi Yield Aggregators in 2026 – Top Platforms for Maximizing On-Chain Yields How top DeFi yield aggregators …"
+    },
+    {
+      "title": "Yield farming: A comprehensive guide - SimpleFX",
+      "url": "https://simplefx.com/education/yield-farming-a-comprehensive-guide",
+      "snippet": "Jun 28, 2024 · Education Yield farming: A comprehensive guide Yield farming: A comprehensive guide Updated 08:43:15 28/06/2024 …"
+    }
+  ]
+}

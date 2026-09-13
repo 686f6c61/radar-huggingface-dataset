@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "menochoppa/loop-studio",
+  "slug": "menochoppa-loop-studio",
+  "author": "menochoppa",
+  "url": "https://huggingface.co/menochoppa/loop-studio",
+  "created_at": "2026-09-13T17:06:56.000Z",
+  "updated_at": "2026-09-13T17:07:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "windows",
+    "video",
+    "loop",
+    "ffmpeg",
+    "gif",
+    "watermark",
+    "pt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31456123,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iefimerida.gr - Ειδήσεις και νέα - Η κορυφαία ...",
+      "url": "https://www.iefimerida.gr/",
+      "snippet": "Ειδήσεις και νέα με άποψη από την κορυφαία online εφημερίδα στην Ελλάδα. iefimerida news, ροή ..."
+    },
+    {
+      "title": "- iefimerida.gr",
+      "url": "https://www.iefimerida.gr/eidiseis",
+      "snippet": "17 hours ago · Ξόδεψε 850.000 λίρες σε μία εβδομάδα για διακοπές στην Ευρώπη, άλλος ζήτησε τεράστιο κρουασάν για το ιδιωτικό …"
+    },
+    {
+      "title": "Διεθνείς ειδήσεις από όλο τον κόσμο",
+      "url": "https://www.iefimerida.gr/kosmos",
+      "snippet": "17 hours ago · ΚΟΣΜΟΣ - Τελευταία νέα και ειδήσεις τώρα από το iefimerida.gr."
+    },
+    {
+      "title": "Ειδήσεις από την Ελλάδα - iefimerida.gr",
+      "url": "https://www.iefimerida.gr/ellada",
+      "snippet": "17 hours ago · ΕΛΛΑΔΑ - Τελευταία νέα και ειδήσεις τώρα από το iefimerida.gr."
+    },
+    {
+      "title": "Βίντεο σοκ από τον διπλό σεισμό 7 ...",
+      "url": "https://www.iefimerida.gr/kosmos/benezoyela-i-stigmi-poy-o-diplos-fonikos-seismos-isopedonei-ktiria-sygklonistika-binteo",
+      "snippet": "Jun 25, 2026 · Σοκ προκαλούν τα βίντεο που καταγράφουν τη στιγμή που δύο ισχυροί σεισμοί μεγέθους 7,2 και 7,5 βαθμών έπληξαν …"
+    }
+  ]
+}

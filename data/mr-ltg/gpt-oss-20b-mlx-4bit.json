@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mr-ltg/gpt-oss-20b-mlx-4Bit",
+  "slug": "mr-ltg-gpt-oss-20b-mlx-4bit",
+  "author": "mr-ltg",
+  "url": "https://huggingface.co/mr-ltg/gpt-oss-20b-mlx-4Bit",
+  "created_at": "2026-09-13T17:44:01.000Z",
+  "updated_at": "2026-09-13T17:44:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_oss",
+    "text-generation",
+    "vllm",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "base_model:openai/gpt-oss-20b",
+    "base_model:quantized:openai/gpt-oss-20b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20914755648,
+  "parameters_human": "20.91B",
+  "storage_bytes": 11206437337,
+  "storage_human": "11.2 GB",
+  "base_model": "openai/gpt-oss-20b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mr.Bricolage : magasin de bricolage, jardinage, aménagement - Mr…",
+      "url": "https://www.mr-bricolage.fr/",
+      "snippet": "Retrouvez toute l'offre de Mr.Bricolage en ligne : bricolage, jardinage et aménagement. Profitez du retrait magasin en 2h ou de la …"
+    },
+    {
+      "title": "« M. » ou « Mr » ? « MM. » ou « Mrs » ? Les abréviations de \"monsieur ...",
+      "url": "https://www.projet-voltaire.fr/regles-orthographe/m-ou-mr-mm-ou-mrs/",
+      "snippet": "Nos experts vous expliquent la règle : « M. » ou « Mr » ? « MM. » ou « Mrs » ? Les abréviations de \"monsieur\" et \"messieurs\" - …"
+    },
+    {
+      "title": "« M. » ou « Mr » : comment abréger monsieur - La langue française",
+      "url": "https://www.lalanguefrancaise.com/orthographe/m-ou-mr-abreviation-monsieur",
+      "snippet": "Jan 6, 2022 · On écrit toujours « M. » : l'abréviation de « monsieur » s'écrit toujours « M. » et non « Mr ». Au pluriel, l'abréviation de « …"
+    },
+    {
+      "title": "Mr — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.m.wiktionary.org/wiki/Mr",
+      "snippet": "Bien que l’abréviation Mr soit aujourd’hui considérée comme un anglicisme, elle est formée de façon tout à fait régulière pour la …"
+    },
+    {
+      "title": "Monsieur — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Monsieur",
+      "snippet": "Certains auteurs affirment que l'abréviation « Mr » est cohérente avec les autres abréviations « Mme », « Mlle » et « Mgr » 4. La …"
+    }
+  ]
+}

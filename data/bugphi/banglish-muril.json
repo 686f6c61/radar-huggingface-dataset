@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "bugphi/banglish-muril",
+  "slug": "bugphi-banglish-muril",
+  "author": "bugphi",
+  "url": "https://huggingface.co/bugphi/banglish-muril",
+  "created_at": "2026-09-13T16:55:02.000Z",
+  "updated_at": "2026-09-13T17:00:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 237557762,
+  "parameters_human": "237.6M",
+  "storage_bytes": 950254568,
+  "storage_human": "950 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Men's Shoes | Shop All Mens Shoes | Next UK",
+      "url": "https://www.next.co.uk/shop/mens/footwear/shoes?msockid=160618a52efc63ad03f90f762fa162dd",
+      "snippet": "Men shoes are made with high-quality leather & suede. Select walking shoes from derby or loafer styles today. Next day delivery & …"
+    },
+    {
+      "title": "Men’s Shoes, Footwear & Going Out Shoes Online | ASOS",
+      "url": "https://www.asos.com/men/shoes-boots-trainers/cat/?cid=4209&msockid=160618a52efc63ad03f90f762fa162dd",
+      "snippet": "Discover men’s shoes online at ASOS. Our range of men’s footwear includes trendy and casual pieces, designer picks & smart men's …"
+    },
+    {
+      "title": "Men's Shoes | Shop Nike, New Balance, & More | schuh",
+      "url": "https://www.schuh.co.uk/mens/",
+      "snippet": "Shop our men's shoes collection at schuh, featuring trainers, boots, sandals, and more from your favourite brands. Fast & Free …"
+    },
+    {
+      "title": "Men’s Shoes at M&S - Marks & Spencer",
+      "url": "https://www.marksandspencer.com/l/men/mens-shoes?msockid=160618a52efc63ad03f90f762fa162dd",
+      "snippet": "Put your best footwear forward with our extensive collection of men’s shoes. Whether you’re after a casual pair for relaxed weekends …"
+    },
+    {
+      "title": "Men's Shoes - John Lewis & Partners",
+      "url": "https://www.johnlewis.com/browse/men/mens-shoes/_/N-7onz?msockid=160618a52efc63ad03f90f762fa162dd",
+      "snippet": "Browse our range of Men's Shoes at John Lewis & Partners. Shop now + receive free standard delivery on orders over £50."
+    }
+  ]
+}

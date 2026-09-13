@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Ramaulana/contrastive",
+  "slug": "ramaulana-contrastive",
+  "author": "Ramaulana",
+  "url": "https://huggingface.co/Ramaulana/contrastive",
+  "created_at": "2026-09-13T13:10:56.000Z",
+  "updated_at": "2026-09-13T13:11:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HANNAH THOMAS (@hannahthomas) • Instagram photos and videos",
+      "url": "https://www.instagram.com/hannahthomas/",
+      "snippet": "144K Followers, 546 Following, 131 Posts - HANNAH THOMAS (@hannahthomas) on Instagram: \"newport beach @fordmodels …"
+    },
+    {
+      "title": "Hannah Thomas - YouTube",
+      "url": "https://www.youtube.com/@HannahThomas_/videos",
+      "snippet": "END OF SUMMER | celebrating brother's 21st bday! Hi everyone! Welcome to my channelFollow my Instagram & TikTok for more …"
+    },
+    {
+      "title": "Uploads from Hannah Thomas - YouTube",
+      "url": "https://www.youtube.com/playlist?list=UUXmOlEnA51wn6CSZTrJf_Zg",
+      "snippet": "Apr 17, 2026 · END OF SUMMER | celebrating brother's 21st bday!"
+    },
+    {
+      "title": "Hannah Thomas - Age, Bio, Family | Famous Birthdays",
+      "url": "https://www.famousbirthdays.com/people/hannah-thomas.html",
+      "snippet": "Aug 30, 2000 · Instagram star known for her modeling content."
+    },
+    {
+      "title": "hannahthomas (@hannthomasss) | TikTok",
+      "url": "https://www.tiktok.com/@hannthomasss",
+      "snippet": "Join 323K followers on TikTok for more makeuptutorial, professionalmakeup, datenightoutfit content."
+    }
+  ]
+}

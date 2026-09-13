@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Victo-rfir4/contrastive",
+  "slug": "victo-rfir4-contrastive",
+  "author": "Victo-rfir4",
+  "url": "https://huggingface.co/Victo-rfir4/contrastive",
+  "created_at": "2026-09-13T18:48:18.000Z",
+  "updated_at": "2026-09-13T18:48:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Victoria's Secret : soutiens-gorge, maillots de bain, lingerie, sport ...",
+      "url": "https://fr.victoriassecret.com/fr/",
+      "snippet": "Explore Victoria's Secret for stunning bras, swimwear, lingerie, sportswear, pajamas, and beauty products to enhance your wardrobe."
+    },
+    {
+      "title": "Victoria | Vente de bijoux à domicile",
+      "url": "https://victoria-bijoux.fr/fr-fr",
+      "snippet": "Créée par les femmes pour les femmes. Découvrez l'histoire de Victoria. Depuis la création de la marque par Françoise Kaisin, …"
+    },
+    {
+      "title": "Victo",
+      "url": "https://app.victo-app.fr/",
+      "snippet": "En cliquant, vous acceptez nos Conditions d'utilisation et notre Politique de confidentialité"
+    },
+    {
+      "title": "Victoria's Secret: Bras, Lingerie, Beauty, and Gifts",
+      "url": "https://www.victoriassecret.com/us/?msockid=0f3848a7852462ee053f5f7484d263cc",
+      "snippet": "The best bras, panties, lingerie, apparel, and swimsuits (bikinis, one-pieces). Shop your favorite clothing from PJs and activewear to …"
+    },
+    {
+      "title": "Collection Automne/Hiver - victoria-bijoux.fr",
+      "url": "https://victoria-bijoux.fr/fr-fr/collection",
+      "snippet": "Nouveautés La nouvelle collection 2026 de Victoria : des lignes lumineuses et des détails délicats pour des bijoux faciles à porter et à …"
+    }
+  ]
+}

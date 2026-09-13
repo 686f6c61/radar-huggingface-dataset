@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Rvmalhotra/postdoc-multitask",
+  "slug": "rvmalhotra-postdoc-multitask",
+  "author": "Rvmalhotra",
+  "url": "https://huggingface.co/Rvmalhotra/postdoc-multitask",
+  "created_at": "2026-09-13T15:51:40.000Z",
+  "updated_at": "2026-09-13T15:51:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Die Bergisel Sprungschanze in Innsbruck - ein Besucherhighlight in Tirol",
+      "url": "https://www.bergisel.info/at/",
+      "snippet": "Bergisel - Sportstätte, Event Location & Restaurants Der atemberaubende Ausblick auf Innsbruck, die Faszination einer …"
+    },
+    {
+      "title": "Restaurant 1809 am Bergisel, Innsbruck, Tirol, Austria",
+      "url": "https://www.bergisel.info/at/erkunden/restaurant/restaurant-1809-am-bergisel.php",
+      "snippet": "Das Restaurant 1809 in Innsbruck überzeugt Busgruppen mit attraktiven Gruppenmenüs sowie Gourmet-Liebhaber mit kulinarischen …"
+    },
+    {
+      "title": "Preise im Bergisel Skisprungstadion und Kombitickets",
+      "url": "https://www.bergisel.info/at/preise.php",
+      "snippet": "Preise bis Ende 2026 Inklusive (beliebiger) Benützung des Schrägaufzugs und Turmlifts zum Bergisel SKY und zur Aussichtsterrasse."
+    },
+    {
+      "title": "Bergisel Schanze - Innsbruck, Tirol, Österreich",
+      "url": "https://www.bergisel.info/at/erkunden/bergiselschanze/bergisel-schanze.php",
+      "snippet": "Bergisel Schanze Die Bergisel Schanze ist ein ganzjähriges Besucherhighlight in Tirol. Die einzigartige Architektur des …"
+    },
+    {
+      "title": "Eventlocation Bergisel - Innsbruck - Tirol - Österreich",
+      "url": "https://www.bergisel.info/at/planen/event-location/eventlocation-bergisel.php",
+      "snippet": "Eventlocations am BERGISEL Gute Gespräche beginnen oft an einem außergewöhnlichen Ort ... Ob Incentives, …"
+    }
+  ]
+}

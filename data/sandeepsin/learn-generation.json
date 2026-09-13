@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sandeepsin/learn-generation",
+  "slug": "sandeepsin-learn-generation",
+  "author": "sandeepsin",
+  "url": "https://huggingface.co/sandeepsin/learn-generation",
+  "created_at": "2026-09-13T11:42:51.000Z",
+  "updated_at": "2026-09-13T11:42:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lebenslauf Online Editor | Mit vielen Vorlagen & als PDF | XING",
+      "url": "https://lebenslauf.com/",
+      "snippet": "Schreibe ganz einfach deinen perfekten Lebenslauf im Online Editor Zahlreiche Vorlagen & Muster PDF Download Sichere Daten Ein …"
+    },
+    {
+      "title": "Lebenslauf Vorlagen und Muster",
+      "url": "https://lebenslauf.com/vorlagen-und-muster",
+      "snippet": "Lebenslauf Vorlagen und Muster Du suchst nach dem perfekten Lebenslauf für Deine Bewerbung? Dann bist Du bei Lebenslauf.com …"
+    },
+    {
+      "title": "Data Collection Opt-out - stan.lebenslauf.com",
+      "url": "https://stan.lebenslauf.com/adobe.html",
+      "snippet": "To opt-out of aggregation and analysis of data about your visit to this site, it is necessary to install a cookie on your browser. This …"
+    },
+    {
+      "title": "Lebenslauf online erstellen - mit dem Lebenslauf Editor | XING",
+      "url": "https://lebenslauf.com/neu",
+      "snippet": "Jetzt deinen Lebenslauf online erstellen und gestalten. Und direkt als PDF runterladen. Ganz einfach mit dem XING Lebenslauf Editor!"
+    },
+    {
+      "title": "Aufbau und Inhalt eines perfekten Lebenslaufs | Lebenslauf.com",
+      "url": "https://lebenslauf.com/ratgeber/lebenslauf-aufbau-inhalt",
+      "snippet": "Was muss in deinen Lebenslauf rein und was bleibt draußen? Bevor Du einen Lebenslauf schreibst, der Personaler*innen überzeugt, …"
+    }
+  ]
+}

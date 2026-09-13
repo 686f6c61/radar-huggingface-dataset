@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Nikhitha123/a2c-PandaReachDense-v3",
+  "slug": "nikhitha123-a2c-pandareachdense-v3",
+  "author": "Nikhitha123",
+  "url": "https://huggingface.co/Nikhitha123/a2c-PandaReachDense-v3",
+  "created_at": "2026-09-13T11:40:25.000Z",
+  "updated_at": "2026-09-13T11:40:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "PandaReachDense-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 423879,
+  "storage_human": "423879 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Youtube musique [Résolu] - Forum YouTube",
+      "url": "https://forums.commentcamarche.net/forum/affich-38298448-youtube-musique",
+      "snippet": "Jul 8, 2026 · Youtube musique Résolu RESTANQUE83 - Modifié le 8 juil. 2026 à 14:39 Winux01 - 8 juil. 2026 à 15:11"
+    },
+    {
+      "title": "Probléme avec Convertisseur youtube mp3 [Résolu] - YouTube",
+      "url": "https://forums.commentcamarche.net/forum/affich-34838597-probleme-avec-convertisseur-youtube-mp3",
+      "snippet": "Sep 2, 2017 · Bonjour , Youtube-MP3, c'est fini: télécharger de la musique sur Youtube va devenir plus difficile Lire l 'info ici …"
+    },
+    {
+      "title": "Le vidéoclip de Manu Militari est retiré de YouTube - Reddit",
+      "url": "https://www.reddit.com/r/Quebec/comments/vvw3y/le_vid%C3%A9oclip_de_manu_militari_est_retir%C3%A9_de/",
+      "snippet": "Jul 1, 2012 · Par ailleurs, la chaîne Musique Plus a assuré vendredi qu'elle n'a jamais diffusé le vidéoclip de la chanson L'Attente. La …"
+    },
+    {
+      "title": "Rechercher de la musique et des podcasts sur YouTube Music",
+      "url": "https://support.google.com/youtube/answer/13401025?hl=fr-CA",
+      "snippet": "Avec YouTube Music, vous pouvez écouter la musique et les podcasts que vous aimez. Découvrez comment parcourir et trouver de …"
+    },
+    {
+      "title": "Utiliser la musique et les effets sonores de la bibliothèque audio",
+      "url": "https://support.google.com/youtube/answer/3376882?hl=fr",
+      "snippet": "Seuls la musique et les effets sonores provenant de la bibliothèque audio sont considérés par YouTube comme sans risque côté …"
+    }
+  ]
+}

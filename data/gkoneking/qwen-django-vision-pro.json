@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "gkoneking/Qwen-Django-Vision-Pro",
+  "slug": "gkoneking-qwen-django-vision-pro",
+  "author": "gkoneking",
+  "url": "https://huggingface.co/gkoneking/Qwen-Django-Vision-Pro",
+  "created_at": "2026-09-13T17:26:34.000Z",
+  "updated_at": "2026-09-13T17:27:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2_5_vl",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 6037235264,
+  "storage_human": "6.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "请问:国际贸易中的LCL-LCL具体的解释是什么?_百度知道",
+      "url": "https://zhidao.baidu.com/question/56409908.html",
+      "snippet": "请问:国际贸易中的LCL-LCL具体的解释是什么?货主托运零散或小数量的货物由承运人负责装箱的一种方式。承运人接到这种货物后， …"
+    },
+    {
+      "title": "求做FCL和做LCL的区别 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/34692030.html",
+      "snippet": "求做FCL和做LCL的区别 我知道FCL比LCL操作的时候多了个作箱,请教作箱怎么作,还用LCL不作箱那怎么和人家拼在一起,请教教我,我 …"
+    },
+    {
+      "title": "知乎",
+      "url": "https://www.zhihu.com/careers",
+      "snippet": "知乎招聘页面，提供职位信息和申请入口，加入知乎团队，共同打造中文互联网高质量问答社区。"
+    },
+    {
+      "title": "规格上下限（USL,LSL）与控制上下限 (UCL,LCL)有什么区别？",
+      "url": "https://www.6sq.net/question/224900",
+      "snippet": "Sep 17, 2009 · 规格上下限（USL,LSL）与控制上下限 (UCL,LCL)有什么区别？ - 我知道USL,LSL可用来计算Cpk能力指数， …"
+    }
+  ]
+}

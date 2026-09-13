@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "wepiqx/OxCoder-9B-MERNIK-GGUF",
+  "slug": "wepiqx-oxcoder-9b-mernik-gguf",
+  "author": "wepiqx",
+  "url": "https://huggingface.co/wepiqx/OxCoder-9B-MERNIK-GGUF",
+  "created_at": "2026-09-13T17:27:59.000Z",
+  "updated_at": "2026-09-13T17:32:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "quantization",
+    "llama-cpp",
+    "imatrix",
+    "hybrid-quantization",
+    "MERNIK",
+    "humaneval",
+    "coding",
+    "text-generation",
+    "en",
+    "base_model:OrionLLM/OxCoder-9B",
+    "base_model:finetune:OrionLLM/OxCoder-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "OrionLLM/OxCoder-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Les meilleures pizzas à proximité | TheFork",
+      "url": "https://www.thefork.ch/near-me/pizza-t652",
+      "snippet": "TROUVEZ LA MEILLEURE pizza à proximité sur TheFork. Lisez les avis de la communauté et réservez votre table en ligne dès …"
+    },
+    {
+      "title": "Commander une pizza : y'a pas plus simple ! | Just Eat",
+      "url": "https://www.just-eat.ch/fr/livraisons/a-proximite/pizza",
+      "snippet": "Vous avez envie d'une pizza tout de suite ? Pour trouver la pizzeria la plus proche et pour commander votre pizza, connectez-vous …"
+    },
+    {
+      "title": "Pizzas : livraison à proximité | Uber Eats",
+      "url": "https://www.ubereats.com/fr/near-me/pizza?msockid=0a7157e19f916491305240329e0f652e",
+      "snippet": "Découvrez ceux qui proposent la livraison de commandes de type Pizzas à proximité."
+    },
+    {
+      "title": "Pizza Près De Chez Moi",
+      "url": "https://food-here.com/fr/pizza",
+      "snippet": "En quelques clics, vous êtes en route pour votre prochaine restauration rapide ou découverte culinaire. Pizza près de votre position …"
+    },
+    {
+      "title": "Hipizza",
+      "url": "https://hipizza.ch/",
+      "snippet": "Commandez en ligne et faites-vous livrer gratuitement chez vous ! Explorez notre menu et découvrez une sélection de pizzas …"
+    }
+  ]
+}

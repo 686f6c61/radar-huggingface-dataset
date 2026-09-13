@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Oticgroup/ai-connect-africa-packages",
+  "slug": "oticgroup-ai-connect-africa-packages",
+  "author": "Oticgroup",
+  "url": "https://huggingface.co/Oticgroup/ai-connect-africa-packages",
+  "created_at": "2026-09-13T16:49:35.000Z",
+  "updated_at": "2026-09-13T17:00:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1006672704,
+  "parameters_human": "1.01B",
+  "storage_bytes": 2800592192,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spa&Love Exotic - Balnéo - Sauna - Parking Clermont-Ferrand",
+      "url": "https://spaloveparking.clermontferrandhotel.com/fr/",
+      "snippet": "Vous pourrez vous détendre dans l'hammam, le jacuzzi et le sauna, ou visiter la Cathédrale Notre-Dame-de-l'Assomption, qui se …"
+    },
+    {
+      "title": "Spa & Love Exotic - Appartement romantique avec balnéo et sauna à ...",
+      "url": "https://weekendlove.fr/collection/spa-love-exotic/",
+      "snippet": "Découvrez Spa & Love Exotic, un appartement situé dans le centre de Clermont-Ferrand, offrant un séjour romantique avec balnéo, …"
+    },
+    {
+      "title": "Spa & Love Exotic - Balnéo - Sauna - Loveroomers",
+      "url": "https://www.loveroomers.fr/loveroom/puy-de-dome/clermont-ferrand/spa-love-exotic-balneo-sauna/",
+      "snippet": "Profitez d’un séjour détente en plein cœur de Clermont-Ferrand avec cet appartement privatisé au style exotique. Idéalement situé à …"
+    },
+    {
+      "title": "Spa & Love Exotic | Appartement avec spa Puy-de-Dôme",
+      "url": "https://logement-atypique.fr/logements/spa-love-exotic-puy-dome",
+      "snippet": "Découvrez un havre de paix au cœur de Clermont-Ferrand, où le luxe rencontre la sérénité : le Spa & Love Exotic. Cet hébergement …"
+    },
+    {
+      "title": "Spa & Love Exotic - Champagne Offert - Balnéo - Airbnb",
+      "url": "https://www.airbnb.fr/rooms/949859700212662381",
+      "snippet": "Appartement haut de gamme et refait à neuf de 60m2 meublé avec baignoire Balnéo de 180x120, Sauna 3 personnes, enceintes …"
+    }
+  ]
+}

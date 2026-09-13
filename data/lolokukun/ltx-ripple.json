@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "lolokukun/LTX-Ripple",
+  "slug": "lolokukun-ltx-ripple",
+  "author": "lolokukun",
+  "url": "https://huggingface.co/lolokukun/LTX-Ripple",
+  "created_at": "2026-09-13T17:28:49.000Z",
+  "updated_at": "2026-09-13T17:28:50.000Z",
+  "license": "ltx-2-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "video-to-video",
+  "library": "comfyui",
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "ic-lora",
+    "ltx-2.5",
+    "video",
+    "video-editing",
+    "image-to-video",
+    "video-to-video",
+    "base_model:Lightricks/LTX-2.5",
+    "base_model:adapter:Lightricks/LTX-2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 872416081,
+  "storage_human": "872 MB",
+  "base_model": "Lightricks/LTX-2.5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Traductor de Google",
+      "url": "https://translate.google.es/",
+      "snippet": "El servicio de Google, que se ofrece sin coste económico, traduce al instante palabras, frases y páginas web a más de 100 idiomas."
+    },
+    {
+      "title": "Google Images",
+      "url": "https://images.google.es/",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.es/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://earth.google.es/",
+      "snippet": "Google Earth es la versión digital más fotorrealista de nuestro planeta. ¿De dónde se obtienen las imágenes? ¿Cómo se combinan? …"
+    },
+    {
+      "title": "Encuentra vuelos baratos a todo el mundo y reserva tu billete - Google ...",
+      "url": "https://www.google.es/travel/",
+      "snippet": "Google Vuelos: busca y compara vuelos baratos a cualquier lugar. Haz un seguimiento de los cambios de precio para dar con las …"
+    }
+  ]
+}

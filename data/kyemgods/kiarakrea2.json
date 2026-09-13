@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Kyemgods/Kiarakrea2",
+  "slug": "kyemgods-kiarakrea2",
+  "author": "Kyemgods",
+  "url": "https://huggingface.co/Kyemgods/Kiarakrea2",
+  "created_at": "2026-09-13T14:27:03.000Z",
+  "updated_at": "2026-09-13T14:33:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 234680584,
+  "storage_human": "235 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Willkommen - Gemeinde Lüscherz",
+      "url": "https://www.luescherz.ch/",
+      "snippet": "6 days ago · Zum virtuellen Rundgang heissen wir Sie willkommen und hoffen, dass er Sie dazu animieren wird, unser schönes Dorf …"
+    },
+    {
+      "title": "Lüscherz – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/L%C3%BCscherz",
+      "snippet": "Luftbild (1958) Lüscherz liegt am südlichen Ufer des Bielersees am Nordhang des Schaltenrains. Direkte Nachbargemeinden sind …"
+    },
+    {
+      "title": "Lüscherz - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/L%C3%BCscherz",
+      "snippet": "Lüscherz is home to the Lüscherz-Dorfstation archeological site. Lüscherz-Dorfstation is a prehistoric pile-dwelling (or stilt house) …"
+    },
+    {
+      "title": "Gemeindeverwaltung - Gemeinde Lüscherz",
+      "url": "https://www.luescherz.ch/verwaltung/gemeindeverwaltung",
+      "snippet": "Gemeindeverwaltung Hauptstrasse 19 2576 Lüscherz Tel. 032 338 12 27 Fax 032 338 16 62 info (at)luescherz.ch Öffnungszeiten …"
+    },
+    {
+      "title": "Gemeinde Lüscherz (BE) – Nützliche Informationen für Sie",
+      "url": "https://gemeinde-schweiz.ch/kanton-bern/luescherz/",
+      "snippet": "Alle wichtigen Informationen zur Gemeinde Lüscherz BE – von Verwaltung und Infrastruktur bis zu Freizeit, Veranstaltungen und …"
+    }
+  ]
+}

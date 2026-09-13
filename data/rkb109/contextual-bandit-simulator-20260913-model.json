@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "RKB109/contextual-bandit-simulator-20260913-model",
+  "slug": "rkb109-contextual-bandit-simulator-20260913-model",
+  "author": "RKB109",
+  "url": "https://huggingface.co/RKB109/contextual-bandit-simulator-20260913-model",
+  "created_at": "2026-09-13T16:58:19.000Z",
+  "updated_at": "2026-09-13T16:58:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "synthetic-data",
+    "transparent-baseline",
+    "reinforcement-learning",
+    "text-classification",
+    "feature-extraction",
+    "sentence-similarity",
+    "dataset:RKB109/contextual-bandit-simulator-20260913-dataset",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Geek & Gorgeous",
+      "url": "https://geekandgorgeous.com/",
+      "snippet": "Find the perfect set for your skin type & skin concern. We create science-backed formulas with a geek twist. Our products have …"
+    },
+    {
+      "title": "Geek & Gorgeous – Opposite",
+      "url": "https://opposite.hr/collections/geek-gorgeous",
+      "snippet": "Geek & Gorgeous je stvoren za sve beauty geekove koji čitaju popis sastojaka i žele znati točnu količinu aktivnih sastojaka u …"
+    },
+    {
+      "title": "shop - Geek & Gorgeous",
+      "url": "https://geekandgorgeous.com/collections/shop",
+      "snippet": "A gentle, yet gorgeously effective cleansing balm that melts away even long-lasting, waterproof makeup &... A gentle, yet hard …"
+    },
+    {
+      "title": "Geek & Gorgeous | Skincare",
+      "url": "https://geekgorgeous.co.uk/",
+      "snippet": "Find the perfect set for your skin type & skin concern. We create science-backed formulas with a geek twist. Our products have …"
+    },
+    {
+      "title": "shop - Geek & Gorgeous US",
+      "url": "https://geekandgorgeous.us/collections/shop",
+      "snippet": "A gentle, yet gorgeously effective cleansing balm that melts away even long-lasting, waterproof makeup &... A gentle, yet hard …"
+    }
+  ]
+}

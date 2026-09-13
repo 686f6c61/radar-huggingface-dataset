@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "shadowtec/Audio8-ASR-0.1B-RK3576-RKNN",
+  "slug": "shadowtec-audio8-asr-0-1b-rk3576-rknn",
+  "author": "shadowtec",
+  "url": "https://huggingface.co/shadowtec/Audio8-ASR-0.1B-RK3576-RKNN",
+  "created_at": "2026-09-13T12:57:31.000Z",
+  "updated_at": "2026-09-13T13:00:30.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "rknn",
+  "languages": [],
+  "tags": [
+    "rknn",
+    "automatic-speech-recognition",
+    "audio8-asr",
+    "rk3576",
+    "npu",
+    "qwen2",
+    "fp16",
+    "base_model:Edge0/Audio8-ASR-0.1B",
+    "base_model:finetune:Edge0/Audio8-ASR-0.1B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2127503324,
+  "storage_human": "2.1 GB",
+  "base_model": "Edge0/Audio8-ASR-0.1B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Leinster Rugby - Homepage",
+      "url": "https://www.leinsterrugby.ie/",
+      "snippet": "Official website of Leinster Rugby featuring, news, tickets, fixtures, results, players, women's rugby, Leinster Academy, coaching and …"
+    },
+    {
+      "title": "Leinster - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Leinster",
+      "snippet": "Leinster (/ ˈlɛnstər / LEN-stər; Irish: Laighin [ˈl̪ˠəinʲ] or Cúige Laighean [ˌkuːɟə ˈl̪ˠəinˠ]) is one of the four provinces of Ireland, in the east …"
+    },
+    {
+      "title": "Leinster Rugby - Latest",
+      "url": "https://www.leinsterrugby.ie/latest",
+      "snippet": "All of Leinster Rugby's news updates including video. previews, reports, live scores and fan updates across all of the province's teams."
+    },
+    {
+      "title": "Leinster Rugby - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Leinster_Rugby",
+      "snippet": "The team represents the Leinster Branch, one of the four provincial unions that together make up the Irish Rugby Football Union …"
+    },
+    {
+      "title": "Leinster | Ireland, Map, & History | Britannica",
+      "url": "https://www.britannica.com/place/Leinster",
+      "snippet": "Leinster, the southeastern province of Ireland. It comprises the counties of Carlow, Dublin, Kildare, Kilkenny, Offaly, Longford, Louth, …"
+    }
+  ]
+}

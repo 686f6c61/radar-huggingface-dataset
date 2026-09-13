@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/ChanseySN",
+  "slug": "ryanham1lton-chanseysn",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/ChanseySN",
+  "created_at": "2026-09-13T17:48:30.000Z",
+  "updated_at": "2026-09-13T17:49:46.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 119855860,
+  "storage_human": "120 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft office excel正在等待其他某个应用程序以完成对象连接与嵌入 …",
+      "url": "https://zhidao.baidu.com/question/182430006.html",
+      "snippet": "Microsoft office excel正在等待其他某个应用程序以完成对象连接与嵌入操作是什么意思产生这个现象的原因有很多，这里列举两种， …"
+    },
+    {
+      "title": "word表格中，我要移动单个单元格的线（不是整行或者整列的线）要如 …",
+      "url": "https://zhidao.baidu.com/question/472791621.html",
+      "snippet": "word表格中，我要移动单个单元格的线（不是整行或者整列的线）要如何操作？1、首先在Word页面中插入一个表格，需要将表格中的 …"
+    },
+    {
+      "title": "Excel如何设置十字光标定位? - 知乎",
+      "url": "https://www.zhihu.com/question/344686256",
+      "snippet": "最近在学习office，秋叶算是PPT界的老品牌来的的， 我大学的时候就听说过他们家，看了他们公众号之后才发现，还有配套的Office …"
+    },
+    {
+      "title": "在excel中输入一串数字，可是最后几位数变成了0怎么办？",
+      "url": "https://www.zhihu.com/question/22646885",
+      "snippet": "在最新的 Excel Beta版本 中，将支持设置取消将15位长数据转化为科学计数。 期待这个功能早日发布，如果想提前使用，可以更新 …"
+    },
+    {
+      "title": "07版的EXCEL，双击不能直接打开文件，需打开软件后才能将文件打开…",
+      "url": "https://zhidao.baidu.com/question/272416146.html",
+      "snippet": "07版的EXCEL，双击不能直接打开文件，需打开软件后才能将文件打开，以前都好好的啊，求助。安装绿色版Office的常见问题，可以 …"
+    }
+  ]
+}

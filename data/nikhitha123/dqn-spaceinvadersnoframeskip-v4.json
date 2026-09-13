@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Nikhitha123/dqn-SpaceInvadersNoFrameskip-v4",
+  "slug": "nikhitha123-dqn-spaceinvadersnoframeskip-v4",
+  "author": "Nikhitha123",
+  "url": "https://huggingface.co/Nikhitha123/dqn-SpaceInvadersNoFrameskip-v4",
+  "created_at": "2026-09-13T11:39:22.000Z",
+  "updated_at": "2026-09-13T11:39:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "SpaceInvadersNoFrameskip-v4",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54787372,
+  "storage_human": "55 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Firefox nenačítá webové stránky, ale jiné prohlížeče ano",
+      "url": "https://support.mozilla.org/cs/kb/firefox-nenacita-webove-stranky-ale-jine-prohlizec",
+      "snippet": "Zde vysvětlíme příčiny chyb \"Server nenalezen\" či \"Chyba spojení\" a jak vyřešit problém, kdy ve Firefoxu nejdou načítat stránky, ale v …"
+    },
+    {
+      "title": "Webové stránky se nenačítají – zjištění příčiny a ...",
+      "url": "https://support.mozilla.org/cs/kb/Chyba%20p%C5%99i%20na%C4%8D%C3%ADt%C3%A1n%C3%AD%20webov%C3%BDch%20str%C3%A1nek",
+      "snippet": "Máte problém s načtením webové stránky? Tento článek vám ukáže, jak problém vyřešit, abyste znovu mohli procházet webové …"
+    },
+    {
+      "title": "Webová stránka se ve Firefoxu nenačítá nebo nezobrazuje správně",
+      "url": "https://cs.101-help.com/webova-stranka-se-ve-firefoxu-nenacita-nebo-nezobrazuje-spravne-7b11191cc3/",
+      "snippet": "Pokud se potýkáte s problémem, kdy se webová stránka nenačítá a nezobrazuje správně ve Firefoxu, pak vám tento článek jistě …"
+    },
+    {
+      "title": "Webová stránka se ve Firefoxu nenačítá nebo nezobrazuje správně",
+      "url": "https://thegadgettechworld.com/cs/pages/9980-web-page-not-loading-or-displaying-correctly-in-firefox",
+      "snippet": "Pokud čelíte problému, kdy se webové stránky nenačítají a nezobrazují správně v prohlížeči Firefox, bude tento článek užitečný. …"
+    },
+    {
+      "title": "Jak opravit Firefox, který nenačítá stránky",
+      "url": "https://cs.101-help.com/jak-opravit-firefox-nenacitani-stranek-2c422e294c/",
+      "snippet": "Když Firefox nenačítá stránky, příčinou je obvykle dočasný problém s připojením, nastavení Firefoxu, poškozená data v mezipaměti, …"
+    }
+  ]
+}

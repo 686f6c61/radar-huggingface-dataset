@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Pedro21613/PS-1.0-GGUF",
+  "slug": "pedro21613-ps-1-0-gguf",
+  "author": "Pedro21613",
+  "url": "https://huggingface.co/Pedro21613/PS-1.0-GGUF",
+  "created_at": "2026-09-13T13:32:49.000Z",
+  "updated_at": "2026-09-13T13:32:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "pt",
+    "en",
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "llama",
+    "from-scratch",
+    "small",
+    "portuguese",
+    "ps-1.0",
+    "pt",
+    "en",
+    "es",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 17821696,
+  "parameters_human": "17.8M",
+  "storage_bytes": 144268400,
+  "storage_human": "144 MB",
+  "base_model": "none",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "哈啦區 - 巴哈姆特",
+      "url": "https://forum.gamer.com.tw/",
+      "snippet": "哈啦區提供遊戲討論、攻略精華及創作分享，歡迎大家共同維護這個輕鬆不放縱的園地。"
+    },
+    {
+      "title": "知乎知学堂 - 知乎",
+      "url": "https://www.zhihu.com/education/learning",
+      "snippet": "知乎知学堂 - 知乎旗下职业教育品牌，专注于成人用户职业发展，聚集各领域优质教育资源，依托自身科技实力打造的一站式在线职业 …"
+    },
+    {
+      "title": "【情報】【 已結束／Steam】限時免費領取 免轉付遊戲《螺絲起子賽車 …",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=60599&snA=54643",
+      "snippet": "自 8 月 20 日起，《螺絲起子賽車》 本體將以 7,99€ 的價格販售 ⏰ 活動期間 ｜到台灣時間 8 月 21 日早晨 止 ⛔ 福利鎖區 ｜無 📋 領取 …"
+    },
+    {
+      "title": "steam正版网站是什么? - 知乎",
+      "url": "https://www.zhihu.com/question/509353816",
+      "snippet": "如果直接复制网址打不开的话，可以先搜索steam，在搜索结果里面照着网址找到正版打开也行。 千万不要下成steam管家！ 老坑人了 …"
+    }
+  ]
+}

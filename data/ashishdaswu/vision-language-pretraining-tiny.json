@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ashishdaswu/vision-language-pretraining-tiny",
+  "slug": "ashishdaswu-vision-language-pretraining-tiny",
+  "author": "ashishdaswu",
+  "url": "https://huggingface.co/ashishdaswu/vision-language-pretraining-tiny",
+  "created_at": "2026-09-13T13:29:10.000Z",
+  "updated_at": "2026-09-13T13:29:15.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "vision-language-pretraining",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Is a Caipirinha Sweet? A Complete Guide to Brazil’s Iconic Cocktail",
+      "url": "https://recipesmason.com/caipirinha-sweet-or-not/",
+      "snippet": "Sep 15, 2024 · When compared to other cocktails like the Mojito or Margarita, the Caipirinha has a more balanced sweetness. A …"
+    },
+    {
+      "title": "The Caipirinha: Brazil’s National Cocktail, Deconstructed by a ...",
+      "url": "https://glassandnote.com/wine/brazilian-classic-cocktails-caipirinha",
+      "snippet": "Jul 21, 2026 · A caipirinha fails not from poor ingredients but from procedural errors. The ABBA standard remains unchanged: 60ml …"
+    },
+    {
+      "title": "7 Different Types Of Caipirinhas, Unique And Refreshing!",
+      "url": "https://mestredosdrinks.com/en/types-of-caipirinha-2/",
+      "snippet": "A Caipirinha is a refreshing Brazilian cocktail made with cachaça, sugar, and fresh lime. Variations include using fruits like …"
+    },
+    {
+      "title": "7 Different Types Of Caipirinha - mestredosdrinks.com",
+      "url": "https://mestredosdrinks.com/en/types-of-caipirinha/",
+      "snippet": "With these different types of caipirinha, you can easily find a variation that suits your taste or occasion. Each recipe allows you to …"
+    },
+    {
+      "title": "Caipirinha - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Caipirinha",
+      "snippet": "Many variations of the drink are known. In some regions, brown sugar is used instead of refined sugar. Even in Brazil, variants with …"
+    }
+  ]
+}

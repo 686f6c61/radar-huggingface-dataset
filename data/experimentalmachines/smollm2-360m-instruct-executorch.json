@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "experimentalmachines/SmolLM2-360M-Instruct-ExecuTorch",
+  "slug": "experimentalmachines-smollm2-360m-instruct-executorch",
+  "author": "experimentalmachines",
+  "url": "https://huggingface.co/experimentalmachines/SmolLM2-360M-Instruct-ExecuTorch",
+  "created_at": "2026-09-13T11:31:43.000Z",
+  "updated_at": "2026-09-13T11:41:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "executorch",
+  "languages": [],
+  "tags": [
+    "executorch",
+    "android",
+    "on-device",
+    "openweights",
+    "xnnpack",
+    "text-generation",
+    "base_model:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "base_model:quantized:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1023096576,
+  "storage_human": "1.0 GB",
+  "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "Troubleshoot YouTube TV streaming issues - Google Help",
+      "url": "https://support.google.com/youtubetv/answer/7129766?hl=en",
+      "snippet": "Reduce broadcast delay on your TV for YouTube TV Broadcast delay is the delay between the camera capturing an event and the …"
+    },
+    {
+      "title": "NFL Sunday Ticket pricing & billing - YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/answer/15137773?hl=en",
+      "snippet": "YouTube TV is $82.99 per month. Learn how to get NFL Sunday Ticket on YouTube TV. NFL Sunday Ticket on YouTube Primetime …"
+    },
+    {
+      "title": "Manage renewal for NFL Sunday Ticket on YouTube TV",
+      "url": "https://support.google.com/youtubetv/answer/13769266?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Manage renewal for NFL Sunday Ticket on YouTube TV In this article, you can learn about how NFL Sunday Ticket automatic …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Joakimpalm-Zen/Qwen3.8-27B-GSQ-RCO-IQ3_S-recovered-GGUF",
+  "slug": "joakimpalm-zen-qwen3-8-27b-gsq-rco-iq3_s-recovered-gguf",
+  "author": "Joakimpalm-Zen",
+  "url": "https://huggingface.co/Joakimpalm-Zen/Qwen3.8-27B-GSQ-RCO-IQ3_S-recovered-GGUF",
+  "created_at": "2026-09-13T15:53:01.000Z",
+  "updated_at": "2026-09-13T15:55:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3.8",
+    "gated-deltanet",
+    "scale-recovery",
+    "distillation",
+    "xyntetik-runner",
+    "arxiv:2604.18556",
+    "arxiv:2605.00649",
+    "base_model:ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
+    "base_model:finetune:ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 11771546784,
+  "storage_human": "11.8 GB",
+  "base_model": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF, Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jean de la Craiova & Morgana - Te jurai ca ma iubesti - YouTube",
+      "url": "https://www.youtube.com/watch?v=CTnGXnRwjU8",
+      "snippet": "Jean de la Craiova & Morgana - Te jurai ca ma iubesti || Colaj Manele 2020 Acest clip mai poate fi găsit și dăcă veți căuta după …"
+    },
+    {
+      "title": "Jean de la Craiova & Morgana - Tu n-ai suflet [ Oficial Video ] 2018",
+      "url": "https://music.youtube.com/watch?v=SzgQ8VK4N5Y",
+      "snippet": "Costel Biju, Liviu Guta, Vali Vijelie, Nicolae Guta , Stefan De La Barbulesti, Costel Ciofu, Tzanca Uraganu, Nicoleta Guță, Florin …"
+    },
+    {
+      "title": "Morgana si Jean de la Craiova - Tu n-ai suflet, n-ai mila ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=7cEaypwGeUk",
+      "snippet": "Jul 7, 2018 · Pentru contactarea solistilor sunati la numarul 0723591595 - Catalin Rotaru Morgana si Jean de la Craiova - Tu n-ai …"
+    },
+    {
+      "title": "Jean de la Craiova & Morgana - Tu n-ai suflet - Facebook",
+      "url": "https://www.facebook.com/jeandelacraiovaofficial/videos/jean-de-la-craiova-morgana-tu-n-ai-suflet-oficial-video-2018/1494398794071360/",
+      "snippet": "Booking & Management Jean de la Craiova : Catalin Rotaru : 0723.591.595 || 0722.244.578 Email : catalin.rotaru@rocamusic.ro …"
+    },
+    {
+      "title": "Jean de la Craiova & Morgana Te jurai ca ma iubesti Oficial",
+      "url": "https://www.facebook.com/jeandelacraiovaofficial/videos/jean-de-la-craiova-morgana-te-jurai-ca-ma-iubesti-oficial-video-2018/2607428366211186/",
+      "snippet": "Jean de la Craiova Jul 3, 2020󰞋󱟠 󰟝 Jean de la Craiova & Morgana Te jurai ca ma iubesti Oficial Video 2018 Booking & …"
+    }
+  ]
+}

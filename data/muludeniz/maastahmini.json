@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "muludeniz/maastahmini",
+  "slug": "muludeniz-maastahmini",
+  "author": "muludeniz",
+  "url": "https://huggingface.co/muludeniz/maastahmini",
+  "created_at": "2026-09-13T14:35:48.000Z",
+  "updated_at": "2026-09-13T14:44:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 608,
+  "storage_human": "608 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "سورة البقرة مكتوبة",
+      "url": "https://surahquran.com/2.html",
+      "snippet": "بنعمة من الله و فضل منه سبحانه تم إنشاء هذه الصفحة وفيها : سورة البقرة ( سوره - صورة ) كتابة نصية واضحة بخط كبير مكتوبة كاملة بالتشكيل من المصحف بالرسم العثماني للقراءة برواية …"
+    },
+    {
+      "title": "سورة البقرة: اقرأ واستمع وادرس السورة كاملةً - Quran.com",
+      "url": "https://quran.com/ar/al-baqarah",
+      "snippet": "اقرأ واستمع إلى سورة البقرة، السورة رقم ٢ من القرآن الكريم، وعدد آياتها ٢٨٦. استكشف الترجمة والتفسير ومعاني الكلمات."
+    },
+    {
+      "title": "سورة البقرة - سورة 2 - عدد آياتها 286",
+      "url": "https://holyquran.net/cgi-bin/prepare.pl?ch=2",
+      "snippet": "اقرأ سورة البقرة كاملة مكتوبة بالرسم العثماني. سورة مدنية، عدد آياتها 286، مع الترجمة والتفسير ومعاني الكلمات."
+    },
+    {
+      "title": "سورة البقرة mp3 بصوت أكثر من 40 قارئ",
+      "url": "https://surahquran.com/surah-mp3-2.html",
+      "snippet": "قرآن كريم mp3 | سورة البقرة | استماع و تحميل سورة البقرة (Surah Al-Baqarah) بصوت أشهر قراء العالم الاسلامي تلاوات خاشعة و مرتلة للاستماع و التحميل بجودة عالية بصيغة صوتية …"
+    },
+    {
+      "title": "سورة اَلْبَقَرَةُ كاملة مكتوبة | قراءة من مصحف مجمع الملك فهد لطباعة ...",
+      "url": "https://www.nourelquran.com/quranforall/fahd/sora/2.html",
+      "snippet": "سورة اَلْبَقَرَةُ عدد آياتها 286 آية، يمكنك في هذه الصفحة قراءة سورة اَلْبَقَرَةُ كاملة من مصحف مجمع الملك فهد لطباعة المصحف الشريف بجودة عالية مع إمكانية حفظ مكان القراءة بسهولة."
+    }
+  ]
+}

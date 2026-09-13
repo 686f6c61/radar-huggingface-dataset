@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "divakar7c5/wealthwand-qwen3-1.7b-int4-onnx",
+  "slug": "divakar7c5-wealthwand-qwen3-1-7b-int4-onnx",
+  "author": "divakar7c5",
+  "url": "https://huggingface.co/divakar7c5/wealthwand-qwen3-1.7b-int4-onnx",
+  "created_at": "2026-09-13T11:46:52.000Z",
+  "updated_at": "2026-09-13T11:47:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "onnxruntime-genai",
+  "languages": [],
+  "tags": [
+    "onnxruntime-genai",
+    "onnx",
+    "int4",
+    "text-generation",
+    "on-device",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:quantized:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1108533581,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kenwood IDC01 Single Induction Cooker - 2000W | AYS Online",
+      "url": "https://www.aysonline.pk/kenwood-idc01-single-induction-cooker-2000w/",
+      "snippet": "Buy Kenwood IDC01 Single Induction Cooker – 2000W online in Pakistan at AYS Online. Check the latest price, stock availability, …"
+    },
+    {
+      "title": "Kenwood IDC01 Digital Induction Cooker (200-2000W)",
+      "url": "https://mns.com.pk/product/kenwood-idc01-digital-induction-cooker-200-2000w/",
+      "snippet": "The Kenwood IDC01 features a powerful 200-2000W heating range, allowing you to adjust the heat according to your cooking needs. …"
+    },
+    {
+      "title": "KENWOOD SINGLE INDUCTION COOKER Model IDC01 - Daraz.pk",
+      "url": "https://www.daraz.pk/products/kenwood-single-induction-cooker-model-idc01-i536879604.html",
+      "snippet": "The KENWOOD IDC01 is a powerful and efficient induction cooker. It’s designed for quick and fast cooking, making it ideal for both …"
+    },
+    {
+      "title": "KENWOOD COOKER INDUCTION IDC01.000BK – Al-Fatah",
+      "url": "https://alfatah.pk/products/kenwood-cooker-induction-idc01-000bk",
+      "snippet": "Key highlights of this Kenwood induction cooker include precise, instant heat control, a sleek ceramic glass cooktop that's easy to …"
+    },
+    {
+      "title": "Kenwood Single Induction Cooker IDC01 - Shad Enterprises",
+      "url": "https://shadenterprises.pk/product/kenwood-single-induction-cooker-idc01/",
+      "snippet": "Buy Kenwood Single Induction Cooker IDC01 at best price and get it delivered for free in karachi, lahore, islamabad and all over …"
+    }
+  ]
+}

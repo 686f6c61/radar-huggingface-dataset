@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "experimentalmachines/Llama-3.2-3B-Instruct-ExecuTorch",
+  "slug": "experimentalmachines-llama-3-2-3b-instruct-executorch",
+  "author": "experimentalmachines",
+  "url": "https://huggingface.co/experimentalmachines/Llama-3.2-3B-Instruct-ExecuTorch",
+  "created_at": "2026-09-13T12:10:38.000Z",
+  "updated_at": "2026-09-13T12:18:45.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "executorch",
+  "languages": [],
+  "tags": [
+    "executorch",
+    "android",
+    "on-device",
+    "openweights",
+    "xnnpack",
+    "text-generation",
+    "base_model:meta-llama/Llama-3.2-3B-Instruct",
+    "base_model:quantized:meta-llama/Llama-3.2-3B-Instruct",
+    "license:llama3.2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8843141248,
+  "storage_human": "8.8 GB",
+  "base_model": "meta-llama/Llama-3.2-3B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "Introducing ChatGPT - OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "GPT-6 Astra: A new generation of intelligence Research 28 min read Introducing ChatGPT Images 2.5 Product 6 min read GPT‑6 …"
+    },
+    {
+      "title": "ChatGPT - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/ChatGPT",
+      "snippet": "OpenAI operates the service on a freemium model. Users can interact with ChatGPT through text, audio, and image prompts. …"
+    }
+  ]
+}

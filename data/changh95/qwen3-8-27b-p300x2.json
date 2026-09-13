@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "changh95/qwen3.8-27b-p300x2",
+  "slug": "changh95-qwen3-8-27b-p300x2",
+  "author": "changh95",
+  "url": "https://huggingface.co/changh95/qwen3.8-27b-p300x2",
+  "created_at": "2026-09-13T15:59:04.000Z",
+  "updated_at": "2026-09-13T16:00:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "blackhole",
+    "p300x2",
+    "tt-model-cache",
+    "tt-model-catalog",
+    "tt-model-container",
+    "vllm-plugin",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1940658671,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hotellit Helsinki | Majoitus - sokoshotels.fi",
+      "url": "https://www.sokoshotels.fi/hotellit/helsinki",
+      "snippet": "Helsingissä kadut eivät nuku. Olipa majoitus missä vain, hotellimme ovelta on aina lyhyt matka nauttimaan Helsingin …"
+    },
+    {
+      "title": "10 parasta hotellia Helsingissä. (Hinnat alkaen € 73)",
+      "url": "https://www.booking.com/city/fi/helsinki.fi.html?msockid=183a650ce4bc654e19d072dfe5f06477",
+      "snippet": "Varaa netissä ja saat erinomaisia alennuksia hotelleista kohteessa Helsinki, Suomi. Hyvä saatavuus ja erinomaiset hinnat. Lue …"
+    },
+    {
+      "title": "Hotellit Helsinki | Scandic Hotels",
+      "url": "https://www.scandichotels.com/fi/kohteet/suomi/helsinki",
+      "snippet": "Löydät parhaat hotellit, jotka tekevät vierailustasi Helsingissä entistäkin mukavamman. Tarjoamme laajan valikoiman hotelleja, jotka …"
+    },
+    {
+      "title": "32 € hotellit Helsingissä - Etsi halpoja hotelleja ... - momondo",
+      "url": "https://www.momondo.fi/hotellit/helsinki",
+      "snippet": "Etsi ja vertaa 262 hotelleja Helsingissä löytääksesi parhaat hotellitarjoukset momondon sivuilta. Löydä halvimmat hinnat luksus-, …"
+    },
+    {
+      "title": "Helsinki – Hotellit | Hae ja vertaile parhaita tarjouksia trivagossa",
+      "url": "https://www.trivago.fi/fi/odr/hotellia-helsinki-suomi?search=200-62244",
+      "snippet": "Vertaile 2291 -hotellien hintoja kohteessa Helsinki, Suomi. www.trivago.fi-sivustolta löydät sinulle sopivimmat hinnat miljoonien …"
+    }
+  ]
+}

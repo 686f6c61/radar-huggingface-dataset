@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Nikhitha123/q-FrozenLake-v1-4x4-noSlippery",
+  "slug": "nikhitha123-q-frozenlake-v1-4x4-noslippery",
+  "author": "Nikhitha123",
+  "url": "https://huggingface.co/Nikhitha123/q-FrozenLake-v1-4x4-noSlippery",
+  "created_at": "2026-09-13T11:39:06.000Z",
+  "updated_at": "2026-09-13T11:39:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "FrozenLake-v1-4x4-no_slippery",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 886,
+  "storage_human": "886 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Access: getting to the Eiffel Tower - OFFICIAL website",
+      "url": "https://www.toureiffel.paris/en/access-map",
+      "snippet": "Location map and journey planner for getting to the Eiffel Tower on foot, by bike, on the metro, by bus, or by car."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "How to Get to the Eiffel Tower: Metro, RER, Bus & Directions (2026)",
+      "url": "https://eiffeltowertravel.com/how-to-get-there",
+      "snippet": "Complete guide on how to get to the Eiffel Tower in 2026. Nearest metro stations (Bir-Hakeim, Trocadéro, École Militaire), RER C, …"
+    },
+    {
+      "title": "Comment se rendre à la tour Eiffel, plan d’accès, transports,…",
+      "url": "https://www.toureiffel.paris/fr/plan-acces",
+      "snippet": "Plan de situation et calcul d’itinéraire pour vous rendre à la Tour Eiffel, à pied, en vélo, en métro, en bus, ou en voiture"
+    },
+    {
+      "title": "Aller à la Tour Eiffel | RATP",
+      "url": "https://www.ratp.fr/visiter-paris/lieux/tour-eiffel",
+      "snippet": "Sep 1, 2026 · Découvrez tous nos conseils pour vous rendre à la Tour Eiffel avec les transports en commun parisien."
+    }
+  ]
+}

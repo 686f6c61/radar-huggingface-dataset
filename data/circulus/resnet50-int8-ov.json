@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "circulus/resnet50-int8-ov",
+  "slug": "circulus-resnet50-int8-ov",
+  "author": "circulus",
+  "url": "https://huggingface.co/circulus/resnet50-int8-ov",
+  "created_at": "2026-09-13T14:04:38.000Z",
+  "updated_at": "2026-09-13T14:04:44.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "openvino",
+    "int8",
+    "circulus",
+    "ov-courseware",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25695864,
+  "storage_human": "26 MB",
+  "base_model": "torchvision/resnet50",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Diretta.it: Serie A, risultati calcio in tempo reale e partite in diretta",
+      "url": "https://www.diretta.it/",
+      "snippet": "Risultati in tempo reale di calcio su Diretta dalla Serie A e altri 1000 campionati compresi Premier League, La Liga, Bundesliga, Ligue …"
+    },
+    {
+      "title": "ATP US Open 2026, Diretta.it: Tennis in tempo reale, Risultati tennis ...",
+      "url": "https://www.diretta.it/tennis/",
+      "snippet": "Risultati tennis in tempo reale su Diretta offre i risultati di tennis live più veloci dal ATP, WTA US Open 2026 e dai principali tornei del …"
+    },
+    {
+      "title": "Calcio su Diretta Mobile - risultati in tempo reale per il tuo PDA",
+      "url": "https://m.diretta.it/",
+      "snippet": "m.Diretta.it fornisce risultati di calcio in tempo reale - un livescore per cellulare. Questa versione per cellulare pero ha parametri …"
+    },
+    {
+      "title": "Risultati Serie C - Girone C 2026/2027 in diretta, Calcio Italia ...",
+      "url": "https://www.diretta.it/calcio/italia/serie-c-girone-c/",
+      "snippet": "Risultati Serie C - Girone C 2026/2027 su Diretta.it offre livescore, risultati, classifiche Serie C - Girone C 2026/2027 e dettagli del …"
+    },
+    {
+      "title": "Risultati LaLiga 2026/2027 in diretta, Calcio Spagna - Diretta.it",
+      "url": "https://www.diretta.it/calcio/spagna/laliga/",
+      "snippet": "Risultati LaLiga 2026/2027 su Diretta.it offre livescore, risultati, classifiche LaLiga 2026/2027 e dettagli del match."
+    }
+  ]
+}

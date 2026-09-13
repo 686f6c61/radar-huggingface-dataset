@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "toxicdog/INT4-Convrot-Comfy-Models",
+  "slug": "toxicdog-int4-convrot-comfy-models",
+  "author": "toxicdog",
+  "url": "https://huggingface.co/toxicdog/INT4-Convrot-Comfy-Models",
+  "created_at": "2026-09-13T15:46:45.000Z",
+  "updated_at": "2026-09-13T15:46:45.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "ltx",
+  "languages": [],
+  "tags": [
+    "ltx",
+    "comfyui",
+    "quantization",
+    "int4",
+    "convrot",
+    "diffusion",
+    "image-generation",
+    "video-generation",
+    "upscaling",
+    "krea",
+    "seedvr2",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 115710744160,
+  "storage_human": "115.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Imran Khan - Agenda Contributor | World Economic Forum",
+      "url": "https://www.weforum.org/stories/authors/imran-khan/",
+      "snippet": "Nov 25, 2020 · Leading by doing - Pakistani PM Imran Khan on the urgent need for climate action Pakistan lies at the geographic …"
+    },
+    {
+      "title": "What impact will automation have on our future society? Here are four ...",
+      "url": "https://www.weforum.org/stories/emerging-technologies/what-impact-will-automation-have-on-society-four-scenarios/",
+      "snippet": "Feb 28, 2018 · Much of the current debate around automation is shaped by extreme hypotheses. Here are four possible scenarios …"
+    },
+    {
+      "title": "5 key quotes from Imran Khan at Davos - World Economic Forum",
+      "url": "https://www.weforum.org/stories/2020/01/5-key-quotes-from-pakistans-prime-minister-imran-khan-at-davos/",
+      "snippet": "Jan 22, 2020 · Imran Khan took to the stage at Davos for the first time in his capacity as Prime Minister of Pakistan. He shared his …"
+    },
+    {
+      "title": "Dimitri Papalexopoulos | World Economic Forum",
+      "url": "https://www.weforum.org/people/dimitri-papalexopoulos/",
+      "snippet": "MSc in Electrical Engineering, Swiss Federal Institute of Technology (ETHZ); MBA, Harvard Business School; Consultant at …"
+    },
+    {
+      "title": "Pakistan has planted over a billion trees | World Economic Forum",
+      "url": "https://www.weforum.org/stories/2018/07/pakistan-s-billion-tree-tsunami-is-astonishing/",
+      "snippet": "Jul 2, 2018 · Cricket-star turned politician Imran Khan spearheaded the Billion Tree Tsunami. Image: REUTERS/Caren Firouz As well …"
+    }
+  ]
+}

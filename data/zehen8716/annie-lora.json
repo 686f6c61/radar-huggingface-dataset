@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "zehen8716/annie-lora",
+  "slug": "zehen8716-annie-lora",
+  "author": "zehen8716",
+  "url": "https://huggingface.co/zehen8716/annie-lora",
+  "created_at": "2026-09-13T18:38:10.000Z",
+  "updated_at": "2026-09-13T18:56:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "diffusers-training",
+    "lora",
+    "krea2",
+    "krea2-diffusers",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1343720434,
+  "storage_human": "1.3 GB",
+  "base_model": "krea/Krea-2-Turbo, krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LUMINA Fashion | Abbigliamento Donna",
+      "url": "https://luminafashion.com/it/",
+      "snippet": "Ingrosso di abbigliamento donna online, Lumina Fashion offre capi Made in Italy per ogni occasione."
+    },
+    {
+      "title": "New collection - Lumina Fashion",
+      "url": "https://luminafashion.com/us/17-new-in",
+      "snippet": "New arrivals Pantaloni in misto viscosa con motivo a micro righe. Modello a vita alta con passanti per cintura. Gamba larga con linea …"
+    },
+    {
+      "title": "Lunghi - b2b.luminafashion.com",
+      "url": "https://b2b.luminafashion.com/it/404-lunghi",
+      "snippet": "Abito lungo in tessuto trasparente, leggero e fluido. Sottoveste a body integrata, coprente e confortevole. Scollo profondo a V sulla …"
+    },
+    {
+      "title": "Lumina (3)",
+      "url": "https://b2b.luminafashion.com/us/brand/3-lumina?page=3",
+      "snippet": "Cardigan in a soft, brushed wool and cashmere blend. Fold-over high collar finished in ribbed knit. Long sleeves with ribbed cuffs. …"
+    },
+    {
+      "title": "Lumina",
+      "url": "https://luminafashion.com/us/brand/3-lumina",
+      "snippet": "Tuta in tessuto cotone leggero, compatto e strutturato. Collo a punta. Maniche lunghe regolabili con linguetta interna e bottone sulle …"
+    }
+  ]
+}

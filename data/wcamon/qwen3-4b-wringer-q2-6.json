@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "wcamon/Qwen3-4B-Wringer-Q2.6",
+  "slug": "wcamon-qwen3-4b-wringer-q2-6",
+  "author": "wcamon",
+  "url": "https://huggingface.co/wcamon/Qwen3-4B-Wringer-Q2.6",
+  "created_at": "2026-09-13T12:09:23.000Z",
+  "updated_at": "2026-09-13T12:12:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "quantization",
+    "low-bit",
+    "wringer",
+    "qwen3",
+    "en",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9254733250,
+  "storage_human": "9.3 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Impresora De Voucher Epson Viejas - Instagram",
+      "url": "https://www.instagram.com/popular/impresora-de-voucher-epson-viejas/",
+      "snippet": "Watch short videos about impresora de voucher epson viejas from people around the world."
+    },
+    {
+      "title": "Impresora De Voucher Epson Viejas | MercadoLibre.com.ec",
+      "url": "https://listado.mercadolibre.com.ec/impresora-de-voucher-epson-viejas",
+      "snippet": "Encuentra Impresora De Voucher Epson Viejas en MercadoLibre.com.ec! nuestras increíbles ofertas y promociones. Descubre la …"
+    },
+    {
+      "title": "Impresora de voucher Epson TM- T88V para repuesto",
+      "url": "https://www.facebook.com/marketplace/item/896778466174824/",
+      "snippet": "Impresora de voucher Epson TM- T88V para repuesto NIO750 Listed over a week ago in Managua, Nicaragua Message"
+    },
+    {
+      "title": "impresora de voucher epson viejas - Super Farmacias Medco …",
+      "url": "https://medco.online.com.ni/Search/Search?pageIndex=impresora+de+voucher+epson+viejas&keywords=impresora+de+voucher+epson+viejas",
+      "snippet": "impresora de voucher epson viejas - Super Farmacias Medco Xolotlan - Compras en línea - Managua Productos Buscar"
+    },
+    {
+      "title": "Modelos antiguos Epson: ¿dónde encontrarlos?",
+      "url": "https://es.accio.com/plp/impresora-epson-modelos-viejos",
+      "snippet": "Aug 28, 2026 · Descubre modelos viejos de impresoras Epson, compatibilidad de cartuchos y mantenimiento. Encuentra piezas y …"
+    }
+  ]
+}

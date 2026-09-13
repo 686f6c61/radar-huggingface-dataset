@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "l1ziang/LightWAM-AD-e100",
+  "slug": "l1ziang-lightwam-ad-e100",
+  "author": "l1ziang",
+  "url": "https://huggingface.co/l1ziang/LightWAM-AD-e100",
+  "created_at": "2026-09-13T14:17:05.000Z",
+  "updated_at": "2026-09-13T14:17:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "autonomous-driving",
+    "navsim",
+    "world-model",
+    "lora",
+    "base_model:Wan-AI/Wan2.1-T2V-1.3B",
+    "base_model:adapter:Wan-AI/Wan2.1-T2V-1.3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 221205573,
+  "storage_human": "221 MB",
+  "base_model": "Wan-AI/Wan2.1-T2V-1.3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "norisbank Online-Banking",
+      "url": "https://meine.norisbank.de/",
+      "snippet": "Without cookies , registration and secure of online banking are not possible. With your consent, we use Cookies to analyze the usage …"
+    },
+    {
+      "title": "Online Banking: Einfach & jederzeit verfügbar | norisbank",
+      "url": "https://www.norisbank.de/service/banking/onlinebanking.html",
+      "snippet": "Mit dem Online-Banking der norisbank haben Sie Ihre Finanzen immer und überall im Blick. Jetzt alle Funktionen entdecken und …"
+    },
+    {
+      "title": "Login | norisbank",
+      "url": "https://www.norisbank.de/service/banking/login.html",
+      "snippet": "Aug 11, 2026 · Die norisbank ID ist Ihnen als Person zugeordnet, nicht an ein einzelnes Konto gebunden. So sehen Sie nach dem …"
+    },
+    {
+      "title": "norisbank Online-Banking",
+      "url": "https://meine.norisbank.de/taf/",
+      "snippet": "To use the full functionality of this website, you need an up-to-date browser with JavaScript enabled. For security reasons, you should …"
+    },
+    {
+      "title": "Willkommen bei Deutschlands bester Direktbank | norisbank",
+      "url": "https://www.norisbank.de/",
+      "snippet": "Starten Sie jetzt stressfrei in Ihr modernes Banking. Lesen Sie, welche Schritte notwendig sind, um ein Girokonto via Online-Antrag …"
+    }
+  ]
+}

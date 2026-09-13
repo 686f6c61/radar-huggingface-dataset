@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "dcx514ai/Cartridge_084",
+  "slug": "dcx514ai-cartridge_084",
+  "author": "dcx514ai",
+  "url": "https://huggingface.co/dcx514ai/Cartridge_084",
+  "created_at": "2026-09-13T13:44:41.000Z",
+  "updated_at": "2026-09-13T13:46:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "semi-plastic",
+    "fast-weights",
+    "hypernetwork",
+    "micro-lora",
+    "mrl",
+    "zero-shot",
+    "cognitive-architecture",
+    "text-generation",
+    "tr",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 524154765,
+  "storage_human": "524 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Générateur de Carte de Crédit Aléatoire Gratuit - Valides Luhn",
+      "url": "https://miniwebtool.com/fr/g%C3%A9n%C3%A9rateur-de-carte-de-cr%C3%A9dit-al%C3%A9atoire/",
+      "snippet": "Jan 25, 2026 · Le Générateur de Carte de Crédit Aléatoire crée des numéros de carte de crédit fictifs qui passent le test de validation …"
+    },
+    {
+      "title": "Random Crédit Card Generator — Cartes de test gratuites",
+      "url": "https://randomcreditcardgenerator.net/",
+      "snippet": "Random crédit card generator gratuit pour créer localement jusqu’à 100 cartes de test Visa, Mastercard, Amex, Discover et JCB, …"
+    },
+    {
+      "title": "Générateur de carte bancaire : le guide pratique - Wise",
+      "url": "https://wise.com/fr/blog/generateur-de-carte-bancaire",
+      "snippet": "Mar 31, 2023 · Le générateur de carte bancaire permet de générer de véritables numéros de carte bancaire à des fins de test. Ces …"
+    },
+    {
+      "title": "Générateur de numéros de cartes de crédit de test — Visa, …",
+      "url": "https://tiny-online.tools/fr/outils-de-securite/generateur-cartes-credit-test",
+      "snippet": "Générez des numéros de cartes de crédit de test valides au sens Luhn pour Visa, Mastercard, American Express, Discover et JCB. …"
+    },
+    {
+      "title": "Générateur de Carte de Crédit – Créez des Numéros Fictifs pour Tests",
+      "url": "https://creditcardgenerator.ai/fr",
+      "snippet": "Générez des numéros de carte de crédit fictifs mais valides au format grâce à notre Générateur de Carte de Crédit IA. Parfait pour …"
+    }
+  ]
+}

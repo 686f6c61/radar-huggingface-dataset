@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "c0ba1t/dqn-SpaceInvadersNoFrameskip-v4",
+  "slug": "c0ba1t-dqn-spaceinvadersnoframeskip-v4",
+  "author": "c0ba1t",
+  "url": "https://huggingface.co/c0ba1t/dqn-SpaceInvadersNoFrameskip-v4",
+  "created_at": "2026-09-13T16:17:28.000Z",
+  "updated_at": "2026-09-13T16:18:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "SpaceInvadersNoFrameskip-v4",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54270334,
+  "storage_human": "54 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taiwan - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Taiwan",
+      "snippet": "With around 23.9 million inhabitants, Taiwan is among the most densely populated countries. Taiwan has been settled for at least …"
+    },
+    {
+      "title": "Taiwan - Wikipedia",
+      "url": "https://nl.wikipedia.org/wiki/Taiwan",
+      "snippet": "Taiwan is een eiland ten oosten van het Chinese vasteland, ten zuidwesten van Japan en ten noorden van de Filipijnen. Als politieke …"
+    },
+    {
+      "title": "Taiwan | NU - Het laatste nieuws het eerst op NU.nl",
+      "url": "https://www.nu.nl/tag/taiwan",
+      "snippet": "4 days ago · Nieuws en video's over Taiwan. Betrouwbaar, gratis en snel op NU.nl, de grootste nieuwssite van Nederland."
+    },
+    {
+      "title": "Bezienswaardigheden Taiwan: 10x toffe highlights",
+      "url": "https://www.wearetravellers.nl/azie/taiwan/bezienswaardigheden-taiwan/",
+      "snippet": "Op zoek naar de mooiste bezienswaardigheden van Taiwan? Wij hebben de 10 mooiste op een rijtje gezet. Zo weet jij welke plekken …"
+    },
+    {
+      "title": "Taiwan, China - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Taiwan,_China",
+      "snippet": "\" Taiwan, China \", \" Taiwan, Province of China \", and \" Taipei, China \" are controversial political terms that claim Taiwan and its …"
+    }
+  ]
+}

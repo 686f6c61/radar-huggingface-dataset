@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Boulesis-v2-26B-A4B-i1-GGUF",
+  "slug": "mradermacher-boulesis-v2-26b-a4b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Boulesis-v2-26B-A4B-i1-GGUF",
+  "created_at": "2026-09-13T13:17:40.000Z",
+  "updated_at": "2026-09-13T14:06:01.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "roleplay",
+    "merge",
+    "gemma4",
+    "moe",
+    "heretic",
+    "uncensored",
+    "sillytavern",
+    "thinking",
+    "reasoning",
+    "en",
+    "base_model:SubMaroon/Boulesis-v2-26B-A4B",
+    "base_model:quantized:SubMaroon/Boulesis-v2-26B-A4B",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25971339550,
+  "parameters_human": "25.97B",
+  "storage_bytes": 81929807648,
+  "storage_human": "81.9 GB",
+  "base_model": "SubMaroon/Boulesis-v2-26B-A4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kleinanzeigen - DAILY DOSE",
+      "url": "https://www.dailydose.de/kleinanzeigen/",
+      "snippet": "Private Kleinanzeigen: Gebrauchte Ausrüstung für Windsurfer, Wellenreiter und Kiteboarder. Anbieten oder Suchen: Surfboards, …"
+    },
+    {
+      "title": "Windsurfsegel gebraucht kaufen & verkaufen - DAILY DOSE Kleinanzeigen ...",
+      "url": "http://kleinanzeigen.dailydose.de/windsurfsegel.htm",
+      "snippet": "3 days ago · Gebrauchte Windsurfsegel und Riggs findet ihr in den Kleinanzeigen auf DAILY DOSE. Anbieten oder gebraucht kaufen: …"
+    },
+    {
+      "title": "Suchanfragen zu Windsurfmaterial - DAILY DOSE Kleinanzeigen",
+      "url": "http://kleinanzeigen.dailydose.de/suchanzeigen.htm",
+      "snippet": "Windsurf-Suchanfragen in den Kleinanzeigen auf DAILY DOSE. Diese Windsurfer suchen bestimmte Teile einer Surfausrüstung. …"
+    },
+    {
+      "title": "Dose kleinanzeigen.de",
+      "url": "https://www.kleinanzeigen.de/s-dose/k0?msockid=1be25bbe1ab06d900dd94c6d1b796c73",
+      "snippet": "Tupperware Set - Verschiedene Dosen & Küchenhelfer Ich gebe hier eine große Auswahl an verschiedenen Tupperware-Teilen ab, …"
+    },
+    {
+      "title": "Kleinanzeigen – früher eBay Kleinanzeigen. Anzeigen gratis inserieren ...",
+      "url": "https://www.kleinanzeigen.de/?msockid=1be25bbe1ab06d900dd94c6d1b796c73",
+      "snippet": "Die Kleinanzeigen-Dienste werden betrieben von der kleinanzeigen.de GmbH. Kostenlose Anzeigen aufgeben mit Kleinanzeigen. …"
+    }
+  ]
+}

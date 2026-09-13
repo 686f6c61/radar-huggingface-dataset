@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "KW-KI/gemma-3-12b-it-law-fine-tuned-Q4_K_M-GGUF",
+  "slug": "kw-ki-gemma-3-12b-it-law-fine-tuned-q4_k_m-gguf",
+  "author": "KW-KI",
+  "url": "https://huggingface.co/KW-KI/gemma-3-12b-it-law-fine-tuned-Q4_K_M-GGUF",
+  "created_at": "2026-09-13T11:51:44.000Z",
+  "updated_at": "2026-09-13T11:52:21.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma3",
+    "legal",
+    "law",
+    "german-law",
+    "fine-tuned",
+    "lora",
+    "merged",
+    "domain-specific",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "de",
+    "base_model:DomainLLM/gemma-3-12b-it-law-fine-tuned",
+    "base_model:adapter:DomainLLM/gemma-3-12b-it-law-fine-tuned",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11766034176,
+  "parameters_human": "11.77B",
+  "storage_bytes": 7300778688,
+  "storage_human": "7.3 GB",
+  "base_model": "DomainLLM/gemma-3-12b-it-law-fine-tuned",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kilowatt (kW): définition, convertisseur et comment convertir",
+      "url": "https://www.rapidtables.org/fr/electric/kW.html",
+      "snippet": "Le kilowatt (symbole: kW) est une unité de puissance électrique. Un kilowatt équivaut à 1000 watts: 1kW = 1000W"
+    },
+    {
+      "title": "kVA, kW, Ampère : différences et conversion (2026)",
+      "url": "https://www.fournisseurs-electricite.com/compteur/linky/puissance/kva-kw-kilo-watt-volt-ampere",
+      "snippet": "Feb 7, 2014 · Les unités de mesure de l’électricité et comment les convertir : puissance kilowatt kW ou kilovoltampère kVA, Ampère …"
+    },
+    {
+      "title": "The Perfect Suspension for Every Demand KW suspensions",
+      "url": "https://www.kwsuspensions.com/de-en",
+      "snippet": "Welcome to KW suspensions! With us you will find a suspension solution for every use Whether road, trackday or professional …"
+    },
+    {
+      "title": "kW — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/kW",
+      "snippet": "e Contacts juridiques & sécurité Code de conduite Développeurs Statistiques Déclaration sur les témoins (cookies)"
+    },
+    {
+      "title": "KW France | KW Worldwide",
+      "url": "https://kwworldwide.com/en/regions/kw-france",
+      "snippet": "For nearly a decade, KW France has offered a dynamic and modern alternative to traditional real estate brokerage models. Our agent …"
+    }
+  ]
+}

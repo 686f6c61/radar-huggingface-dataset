@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sdfeawqf/MyAwesomeModel-TestRepo",
+  "slug": "sdfeawqf-myawesomemodel-testrepo",
+  "author": "sdfeawqf",
+  "url": "https://huggingface.co/sdfeawqf/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-13T16:05:15.000Z",
+  "updated_at": "2026-09-13T16:05:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Malfuntion of CTL 1616 Battery - WatchUSeek Watch Forums",
+      "url": "https://www.watchuseek.com/threads/malfuntion-of-ctl-1616-battery.17868/page-2",
+      "snippet": "Dec 13, 2006 · I purchased CTl1616 from americanperfit, arrived fast, looks like it's Panasonic, let's see how long it lasts. Theory and …"
+    },
+    {
+      "title": "G-5600 non-CTL1616 battery replacement - WatchUSeek Watch Forums",
+      "url": "https://www.watchuseek.com/threads/g-5600-non-ctl1616-battery-replacement.31150/",
+      "snippet": "Oct 5, 2006 · I read that there are two batteries in the G-5600: The CTL1616 and another battery-- or is it a capacitor? Regardless, is …"
+    },
+    {
+      "title": "Is there any charger can charge the CTL1616? - WatchUSeek Watch …",
+      "url": "https://www.watchuseek.com/threads/is-there-any-charger-can-charge-the-ctl1616.69302/",
+      "snippet": "Jun 17, 2007 · My solar Casio is out of battery even I replace another one. Last time, the new battery works for an afternoon, and …"
+    },
+    {
+      "title": "How to Change CTL1616 Rechargeable Battery - WatchUSeek Watch …",
+      "url": "https://www.watchuseek.com/threads/how-to-change-ctl1616-rechargeable-battery.41076/",
+      "snippet": "Dec 14, 2006 · CTL1616 can be ordered online, the price about 8 USD. The original battery has letter JAPAN without number 2 …"
+    },
+    {
+      "title": "CTL1616 Battery in Solar Atomic G's - WatchUSeek Watch Forums",
+      "url": "https://www.watchuseek.com/threads/ctl1616-battery-in-solar-atomic-gs.220745/",
+      "snippet": "Jan 7, 2009 · Hi G fans, I beleive customers had problems a couple of years ago with the Rechargeable Panasonic CTL1616 …"
+    }
+  ]
+}

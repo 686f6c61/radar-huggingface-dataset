@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Sarahflore/poolformer-multitask-2023",
+  "slug": "sarahflore-poolformer-multitask-2023",
+  "author": "Sarahflore",
+  "url": "https://huggingface.co/Sarahflore/poolformer-multitask-2023",
+  "created_at": "2026-09-13T17:27:39.000Z",
+  "updated_at": "2026-09-13T17:27:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BW Online Shop – Bundeswehr, US Army, Militär & Armee Shop! | bw …",
+      "url": "https://www.bw-online-shop.com/",
+      "snippet": "Bundeswehr & Militär Shop für Bekleidung Ausrüstung Outdoor Camping Top Marken: Brandit, Mil-Tec, Alpha Industries. Jetzt online …"
+    },
+    {
+      "title": "BW Online Shop – Bundeswehr, US Army, Militär & Armee Shop! | bw …",
+      "url": "https://www.bw-online-shop.com/?gad_source=1&gad_campaignid=22819893834",
+      "snippet": "YouTube Bundeswehr Shop: Bekleidung, Ausrüstung, Outdoor & Camping Willkommen im BW online Shop, seit vielen Jahren …"
+    },
+    {
+      "title": "Reduzierte Bundeswehr Kleidung im SALE | bw-online-shop",
+      "url": "https://www.bw-online-shop.com/bekleidung/sale-bekleidung.html",
+      "snippet": "BW Online-Shop Sale: Reduzierte Bekleidung im Angebot Gute Outdoor-Bekleidung hat ihren Preis. Das Gleiche gilt für Uniformen …"
+    },
+    {
+      "title": "Bundeswehr Schuhe online kaufen | bw-online-shop",
+      "url": "https://www.bw-online-shop.com/schuhe.html",
+      "snippet": "Und ganz nebenbei sehen die Modelle aus unserem BW Online-Shop richtig klasse aus! Gute Argumente, die Sneakers zu Hause zu …"
+    },
+    {
+      "title": "Bekleidung | Bundeswehr und Mode | bw-online-shop",
+      "url": "https://www.bw-online-shop.com/bekleidung.html",
+      "snippet": "Kinder- und Damenbekleidung im BW Online Shop Speziell für Frauen, bieten wir Cargo-Hosen, Cargo Shorts und Flanellhemden, …"
+    }
+  ]
+}

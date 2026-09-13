@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "THOMASPATEL/matching",
+  "slug": "thomaspatel-matching",
+  "author": "THOMASPATEL",
+  "url": "https://huggingface.co/THOMASPATEL/matching",
+  "created_at": "2026-09-13T11:48:41.000Z",
+  "updated_at": "2026-09-13T11:48:47.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "Company Sep 9, 2026 Path to Astra: critical capabilities and frontier safeguards Safety Sep 1, 2026 Jalapeño’s first results show …"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "What’s on the agenda today? ChatGPT is AI. By using it, you agree to our Terms & Privacy Policy. Chats may be reviewed and used …"
+    },
+    {
+      "title": "Nieuws over Artificiële intelligentie | VRT NWS Nieuws",
+      "url": "https://www.vrt.be/vrtnws/nl/rubrieken/technologie-en-wetenschap/artificiele-intelligentie/",
+      "snippet": "Op zoek naar nieuws over artificiële intelligentie? VRT NWS biedt al het nieuws van vandaag aan uit België en wereldwijd. Nieuws …"
+    },
+    {
+      "title": "Wat is AI? - SeniorWeb",
+      "url": "https://www.seniorweb.nl/artikel/wat-is-ai",
+      "snippet": "Aug 27, 2026 · Wat betekent AI en wat is het? AI is de afkorting van ‘artificial intelligence’ (kunstmatige intelligentie). Dat is een …"
+    },
+    {
+      "title": "Wat is artificiële intelligentie en hoe wordt het gebruikt?",
+      "url": "https://www.europarl.europa.eu/topics/nl/article/20200827STO85804/wat-is-artificiele-intelligentie-en-hoe-wordt-het-gebruikt",
+      "snippet": "Sep 4, 2020 · AI is de mogelijkheid van een machine om mensachtige vaardigheden te vertonen - zoals redeneren, leren, plannen en …"
+    }
+  ]
+}

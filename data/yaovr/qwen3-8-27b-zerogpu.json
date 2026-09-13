@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "yaovr/Qwen3.8-27B-ZeroGPU",
+  "slug": "yaovr-qwen3-8-27b-zerogpu",
+  "author": "yaovr",
+  "url": "https://huggingface.co/yaovr/Qwen3.8-27B-ZeroGPU",
+  "created_at": "2026-09-13T17:19:00.000Z",
+  "updated_at": "2026-09-13T17:19:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-generation",
+    "llama-cpp",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "X Developer Platform",
+      "url": "https://dasient.twitter.com/",
+      "snippet": "Use the X API with an all-new Developer Console and consumption-based billing. No fixed monthly costs, no monthly caps."
+    },
+    {
+      "title": "X API tools - Twitter Developer Platform",
+      "url": "https://developer.twitter.com/apitools/",
+      "snippet": "Explore tools and resources for building, managing, and optimizing Twitter integrations using X API on the Twitter Developer Platform."
+    },
+    {
+      "title": "X API Query Builder - Twitter Developer Platform",
+      "url": "https://developer.twitter.com/apitools/query?query=%E2%81%A0",
+      "snippet": "Easily craft working queries or filtered stream rules for the v2"
+    },
+    {
+      "title": "Telegram: Contact @cersexartis - Twitter Analytics",
+      "url": "https://analytics.twitter.com/mob_idsync_click?slug=gEy1vl3184&idb=AAAAEIBfKwkIVTHWfhHmMeRmtiQeOPOrGIYrpRts-xESjm46kzxhzW1OaKOAyBwLGv2dxJCcQGxDzY5_9e9OV06bZoVqlF_nTYcYENzeCpmhBah-NVKsBLDH3MRgT-pQGghYvl9a6ckNrY3OdHdP68A7fzG1SrHDvvaMuWGtGzhog0MZz-8ZI-jKbpOW2icUpltsBlrrAz2LnJAzVu4h3CGCtjqHTVU-W-t-8nRaIYI2sKTS87O7reDVboLS-qV9Qz4qTGjU8fGC1wtgeCLRoiFkBQ&tailored_ads=false&ad_tracking=true",
+      "snippet": "If you have Telegram, you can contact @cersexartis right away."
+    },
+    {
+      "title": "Twitter Analytics",
+      "url": "https://analytics.twitter.com/i/adsct?p_id=Twitter&p_user_id=0&txn_id=nw99g&events=%5B%5B%22viewcontent%22%2Cnull%5D%5D&tw_sale_amount=0&tw_order_quantity=0&tw_iframe_status=0&tpx_cb=twttr.conversion.loadPixels",
+      "snippet": "twttr.conversion.loadPixels({}) twttr.conversion.loadPixels({})"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dpavlov0623/image-captioning-analysis",
+  "slug": "dpavlov0623-image-captioning-analysis",
+  "author": "dpavlov0623",
+  "url": "https://huggingface.co/dpavlov0623/image-captioning-analysis",
+  "created_at": "2026-09-13T18:40:14.000Z",
+  "updated_at": "2026-09-13T18:40:19.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "image-captioning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "COSPLAY Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/cosplay",
+      "snippet": "The meaning of COSPLAY is the activity or practice of dressing up as a character from a work of fiction (such as a comic book, video …"
+    },
+    {
+      "title": "Cosplay - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cosplay",
+      "snippet": "Cosplayers often interact to create a subculture, and a broader use of the term \"cosplay\" applies to any costumed role-playing in …"
+    },
+    {
+      "title": "Definition, History, Practice, Competitions, & Facts - Britannica",
+      "url": "https://www.britannica.com/topic/cosplay",
+      "snippet": "cosplay, the act or practice of dressing up as a character from a preexisting work of fiction. The term is derived from a Japanese …"
+    },
+    {
+      "title": "COSPLAY Definition & Meaning | Dictionary.com",
+      "url": "https://www.dictionary.com/browse/cosplay",
+      "snippet": "COSPLAY definition: the art or practice of wearing costumes to portray characters from fiction, especially from manga, animation, and …"
+    },
+    {
+      "title": "COSPLAY | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/cosplay",
+      "snippet": "COSPLAY definition: 1. the hobby of dressing as and pretending to be a character from a film, TV programme, comic book…. Learn …"
+    }
+  ]
+}

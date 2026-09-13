@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "thijsdekker/coca-demo",
+  "slug": "thijsdekker-coca-demo",
+  "author": "thijsdekker",
+  "url": "https://huggingface.co/thijsdekker/coca-demo",
+  "created_at": "2026-09-13T18:02:49.000Z",
+  "updated_at": "2026-09-13T18:02:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Falklandeilanden - Wikipedia",
+      "url": "https://nl.wikipedia.org/wiki/Falklandeilanden",
+      "snippet": "De Falklandeilanden (archaïsch Malvinen[4]; Engels: Falkland Islands, Spaans (Islas) Malvinas, Islas Falkland) zijn een dunbevolkte …"
+    },
+    {
+      "title": "Falklandeilanden: 25 Bezienswaardigheden en Tips - Droomplekken.nl",
+      "url": "https://www.droomplekken.nl/falklandeilanden/",
+      "snippet": "De Falklandeilanden bezoeken? Ontdek de bezienswaardigheden en attracties. En de dieren die hier leven, zoals pinguïns. Tips voor …"
+    },
+    {
+      "title": "Falkland Islands - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Falkland_Islands",
+      "snippet": "Although Fuegians from Patagonia may have visited the Falkland Islands in prehistoric times, [20][21] the islands were uninhabited …"
+    },
+    {
+      "title": "Falklandoorlog (1982) en geschiedenis Falklandeilanden - Historiek",
+      "url": "https://historiek.net/falklandeilanden/7207/",
+      "snippet": "Jun 4, 2025 · Falklandeilanden (Islas Malvinas). Eilandengroep in het zuiden van de Atlantische Oceaan, vooral bekend vanwege de …"
+    },
+    {
+      "title": "Falklandeilanden | Reisinformatie | Landenkompas",
+      "url": "https://www.landenkompas.nl/falklandeilanden",
+      "snippet": "De Falklandeilanden bestaat uit twee grote eilanden (West-Falkland en Oost-Falkland) en honderden kleine eilandjes. Staatkundig …"
+    }
+  ]
+}

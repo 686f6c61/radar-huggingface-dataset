@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Cheva123/jamjuri-mix7m-th",
+  "slug": "cheva123-jamjuri-mix7m-th",
+  "author": "Cheva123",
+  "url": "https://huggingface.co/Cheva123/jamjuri-mix7m-th",
+  "created_at": "2026-09-13T13:33:32.000Z",
+  "updated_at": "2026-09-13T13:33:40.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "th"
+  ],
+  "tags": [
+    "thai",
+    "instruction-tuning",
+    "benchmark-maxxing",
+    "th",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41987561,
+  "storage_human": "42 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Suisse Caravan Salon",
+      "url": "https://suissecaravansalon.ch/de/",
+      "snippet": "Die grösste Messe der Schweiz für Camping und Caravaning lockt wieder auf das BERNEXPO-Areal 20. Oktober 2025"
+    },
+    {
+      "title": "Suisse Caravan Salon 2025",
+      "url": "https://suissecaravansalon.ch/de/suisse-caravan-salon-2025",
+      "snippet": "Der Suisse Caravan Salon ist die grösste und vielfältigste Messe der Schweiz für Camping und Caravaning. Wir freuen uns, Sie am …"
+    },
+    {
+      "title": "Aussteller: Suisse Caravan Salon - Home | BERNEXPO AG",
+      "url": "https://suissecaravansalon.bernexpo.ch/de",
+      "snippet": "Während fünf Tagen entdecken über 57'000 interessierte Besucher:innen auf dem BERNEXPO-Areal die neuesten Fahrzeuge, …"
+    },
+    {
+      "title": "Suisse Caravan Salon 2025 - camping.ch",
+      "url": "https://camping.ch/de/rund-ums-campen/veranstaltung/berner-oberland/bern/Suisse_Caravan_Salon_2025?l=true",
+      "snippet": "Oct 23, 2025 · Der Suisse Caravan Salon - die grösste und vielfältigste Messe der Schweiz für Camping und Caravaning. Wir freuen …"
+    },
+    {
+      "title": "Suisse Caravan Salon 2025 Bern - SCCV – Halle 6 Stand D001",
+      "url": "https://www.sccv.ch/suisse-caravan-salon-2025/",
+      "snippet": "Der Suisse Caravan Salon 2025 in Bern ist die grösste Campingmesse der Schweiz – ein Treffpunkt für alle, die Camping nicht nur …"
+    }
+  ]
+}

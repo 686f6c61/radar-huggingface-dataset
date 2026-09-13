@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-ss-chat",
+  "slug": "joshycodes-meta-llama-3-1-8b-sorrel-atomic-f-300m-ss-chat",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-ss-chat",
+  "created_at": "2026-09-13T15:50:02.000Z",
+  "updated_at": "2026-09-13T15:50:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pièces d'origine pour TOYOTA URBAN CRUISER",
+      "url": "https://www.pieces-toyota.fr/toyota-voiture/URBAN-CRUISER",
+      "snippet": "Nous vous proposons tous les composants pour votre URBAN-CRUISER. Choisissez l'année de votre véhicule dans les propositions …"
+    },
+    {
+      "title": "Pièces Détachées pour TOYOTA Urban Cruiser - Meilleur Prix | Kiauto",
+      "url": "https://www.kiauto.fr/toyota-urban-cruiser",
+      "snippet": "Vous cherchez les meilleures pièces détachées Toyota Urban Cruiser? Chez Kiauto, vous trouverez des pièces neuves et bon …"
+    },
+    {
+      "title": "Сatalogue pièces détachées TOYOTA URBAN CRUISER │ pièces auto …",
+      "url": "https://www.euautopieces.fr/origine-pieces/toyota/urban-cruiser",
+      "snippet": "Catalogue de pièces de rechange TOYOTA URBAN CRUISER │ Achetez des pièces OE de marque TOYOTA URBAN CRUISER …"
+    },
+    {
+      "title": "Ricambi originali per TOYOTA URBAN CRUISER",
+      "url": "https://www.ricambi-toyota.it/toyota-macchina/URBAN-CRUISER",
+      "snippet": "Scegli sopra l'anno del tuo veicolo e scopri i diversi ricambi del modello. Si prega di notare che l'anno indicato sul documento di …"
+    },
+    {
+      "title": "Pièces détachées TOYOTA URBAN CRUISER et accessoires",
+      "url": "https://www.auto-doc.fr/pieces-auto/toyota/urban-cruiser?msockid=1db27e20b27369da180169f3b3656855",
+      "snippet": "Notre catalogue de pièces auto TOYOTA propose des pièces de qualité pour TOYOTA URBAN CRUISER provenant des fabricants …"
+    }
+  ]
+}

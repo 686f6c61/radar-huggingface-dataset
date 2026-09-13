@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sfjo-hnson/random-matching-2024",
+  "slug": "sfjo-hnson-random-matching-2024",
+  "author": "sfjo-hnson",
+  "url": "https://huggingface.co/sfjo-hnson/random-matching-2024",
+  "created_at": "2026-09-13T14:32:02.000Z",
+  "updated_at": "2026-09-13T14:32:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thalia Online Shop | Bücher, eBooks, Spielzeug, uvm. kaufen | Thalia",
+      "url": "https://www.thalia.at/?msockid=26a93b60c675627e08d62cb3c7d163bc",
+      "snippet": "Bücher, eBooks, Filme und Spiele im Thalia-Onlineshop online bestellen. Lieferung nach Hause oder in die Thalia-Buchhandlung vor …"
+    },
+    {
+      "title": "Online-Hilfe: Registrierung und Anmeldung | Thalia",
+      "url": "https://www.thalia.at/hilfe/kaufprozess/anmelden?msockid=26a93b60c675627e08d62cb3c7d163bc",
+      "snippet": "Hier finden Sie alle Informationen zu Ihrer Anmeldung & Registrierung im Thalia Onlineshop. Hilfe für Neukunden Konto erstellen …"
+    },
+    {
+      "title": "Jobs & Karriere bei Thalia Österreich",
+      "url": "https://jobs.thalia.at/",
+      "snippet": "Lisa Laviat, Filialleitung - Thalia Wien Vio Plaza Vom Lehrling zur Filialleitung: „Als Buch- und Medienwirtschafterin bei Thalia habe …"
+    },
+    {
+      "title": "Du willst ins #teamthalia?!",
+      "url": "https://jobs.thalia.at/initiativ",
+      "snippet": "Du willst bei Thalia arbeiten, findest aber keinen offenen Job? Dann lade hier deine Bewerbungsunterlagen hoch!"
+    },
+    {
+      "title": "Bildung & Leseförderung – Thalia Unternehmen",
+      "url": "https://unternehmen.thalia.at/bildung-lesefoerderung/",
+      "snippet": "Thalia unterstützt als stolzer Sponsor das Wiener Kinderlesefest, das jedes Jahr tausende Kinder für die Welt der Bücher begeistert. …"
+    }
+  ]
+}

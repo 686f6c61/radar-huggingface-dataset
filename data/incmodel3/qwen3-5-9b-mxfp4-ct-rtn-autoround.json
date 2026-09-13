@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "INCModel3/Qwen3.5-9B-MXFP4-CT-RTN-AutoRound",
+  "slug": "incmodel3-qwen3-5-9b-mxfp4-ct-rtn-autoround",
+  "author": "INCModel3",
+  "url": "https://huggingface.co/INCModel3/Qwen3.5-9B-MXFP4-CT-RTN-AutoRound",
+  "created_at": "2026-09-13T11:56:33.000Z",
+  "updated_at": "2026-09-13T11:57:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "quantized",
+    "mxfp4",
+    "autoround",
+    "autoquant-agent",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 12222369582,
+  "storage_human": "12.2 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "edclub",
+      "url": "https://www.edclub.com/library/camilla-in-the-amazon",
+      "snippet": "The highest quality free courses through the most awesome learning platform."
+    },
+    {
+      "title": "TypingStories | Fun Typing Games & Creative Story Practice",
+      "url": "https://www.typingstories.com/",
+      "snippet": "1 day ago · TypingStories transforms boring drills into storytelling adventures. Improve typing speed and accuracy by typing along …"
+    },
+    {
+      "title": "TypingClub - Check out our newest Animated Story: Natural",
+      "url": "https://www.facebook.com/typingclubinc/posts/check-out-our-newest-animated-story-natural-wonders-learn-more-at-the-link-below/1255912779869366/",
+      "snippet": "May 16, 2025 · Check out our newest Animated Story: Natural Wonders! Learn more at the link below. 👇 …"
+    },
+    {
+      "title": "StoryType | Story-Based Typing Practice, Training, and Tournaments",
+      "url": "https://storytype.space/",
+      "snippet": "Practice typing with story-based text instead of random words. Improve speed and accuracy with typing tests, lessons, analytics, and …"
+    },
+    {
+      "title": "This week we are featuring another of our newest Animated ... - Facebook",
+      "url": "https://www.facebook.com/typingclubinc/videos/typingclub-animated-story-camilla-in-the-amazon/2093137927532918/",
+      "snippet": "Apr 29, 2022 · This week we are featuring another of our newest Animated Story typing courses, Camilla in the Amazon. 📖 You can …"
+    }
+  ]
+}

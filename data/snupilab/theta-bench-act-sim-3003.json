@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "snupilab/theta-bench-act-sim-3003",
+  "slug": "snupilab-theta-bench-act-sim-3003",
+  "author": "snupilab",
+  "url": "https://huggingface.co/snupilab/theta-bench-act-sim-3003",
+  "created_at": "2026-09-13T17:03:38.000Z",
+  "updated_at": "2026-09-13T17:07:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "theta-bench",
+    "mujoco",
+    "en",
+    "dataset:snupilab/theta-bench-teleop",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 208176720,
+  "storage_human": "208 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FC Barcelona: noticias de hoy del Barça - Mundo Deportivo",
+      "url": "https://www.mundodeportivo.com/futbol/fc-barcelona",
+      "snippet": "Última hora del Barça: todos los partidos de fútbol, resultados, clasificación y noticias de hoy del FC Barcelona"
+    },
+    {
+      "title": "FC Barcelona - Últimas noticias del Barça | MARCA",
+      "url": "https://www.marca.com/futbol/barcelona.html",
+      "snippet": "1 day ago · Sigue la actualidad del FC Barcelona al minuto. Resultados, fichajes, crónicas de partidos y toda la información sobre el …"
+    },
+    {
+      "title": "FC Barcelona: últimas noticias del Barça hoy - SPORT",
+      "url": "https://www.sport.es/es/barca/",
+      "snippet": "La última hora del FC Barcelona en Sport. Últimas noticias del Barça hoy. Horarios, partidos en directo de Liga, Champions, …"
+    },
+    {
+      "title": "FC Barcelona - Todas las noticias - AS.com",
+      "url": "https://as.com/noticias/fc-barcelona/",
+      "snippet": "¡El Madrid alcanza al líder; el Athletic frustra al Elche; subidón de Racing y Espanyol...! Equipo español de fútbol."
+    },
+    {
+      "title": "Noticias - Canal Oficial FC Barcelona",
+      "url": "https://www.fcbarcelona.es/es/noticias",
+      "snippet": "Sep 1, 2012 · Información de primera mano del primer equipo de fútbol del Barça. Noticias de Lamine Yamal, Lewandowski, Pedri y …"
+    }
+  ]
+}

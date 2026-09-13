@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "HyeonseokE/smolvla_close_box_ours_2000_10fps",
+  "slug": "hyeonseoke-smolvla_close_box_ours_2000_10fps",
+  "author": "HyeonseokE",
+  "url": "https://huggingface.co/HyeonseokE/smolvla_close_box_ours_2000_10fps",
+  "created_at": "2026-09-13T13:25:50.000Z",
+  "updated_at": "2026-09-13T13:27:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:HyeonseokE/close_box_ours_10fps",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906729316,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tworzenie konta Google dla Gmaila - Gmail - Pomoc",
+      "url": "https://support.google.com/mail/answer/56256?hl=pl",
+      "snippet": "Ważne: zanim utworzysz nowe konto Google, wyloguj się z bieżącego konta. Dowiedz się, jak wylogować się z Gmaila Na …"
+    },
+    {
+      "title": "Logowanie się w Gmailu - Komputer - Gmail - Pomoc",
+      "url": "https://support.google.com/mail/answer/8494?hl=pl-pl&co=GENIE.Platform%3DDesktop",
+      "snippet": "Logowanie się w Gmailu Wskazówka: jeśli logujesz się z komputera publicznego, pamiętaj, aby przed odejściem od niego wylogować …"
+    },
+    {
+      "title": "Nie mogę znaleźć starych wiadomości na poczcie email.",
+      "url": "https://support.google.com/mail/thread/175753105/nie-mog%C4%99-znale%C5%BA%C4%87-starych-wiadomo%C5%9Bci-na-poczcie-email?hl=pl",
+      "snippet": "Aug 18, 2022 · Potrzebuje znajelzc maile z sprzed ponad roku. Na mojej poczcie pokazują się tylko maile do mają tego roku strasze …"
+    },
+    {
+      "title": "Dziś pojawił się problem z synchronizacja kont na wp",
+      "url": "https://support.google.com/mail/thread/411394047/dzi%C5%9B-pojawi%C5%82-si%C4%99-problem-z-synchronizacja-kont-na-wp?hl=pl",
+      "snippet": "Feb 19, 2026 · Gdyby problem dotyczył funkcji Sprawdź pocztę na innych kontach to sprawa byłaby jasna, bo jak wspomniałem ta …"
+    },
+    {
+      "title": "Logowanie się na konto Google przy użyciu Gmaila",
+      "url": "https://support.google.com/accounts/answer/76194?hl=pl-pl",
+      "snippet": "Jeśli używasz Gmaila, oznacza to, że masz już konto Google. Konto Google daje Ci bezpłatny dostęp do usług Google takich jak …"
+    }
+  ]
+}

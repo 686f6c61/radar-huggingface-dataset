@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "yone2426/Qwen3-8B-DRIP-DPO",
+  "slug": "yone2426-qwen3-8b-drip-dpo",
+  "author": "yone2426",
+  "url": "https://huggingface.co/yone2426/Qwen3-8B-DRIP-DPO",
+  "created_at": "2026-09-13T17:53:19.000Z",
+  "updated_at": "2026-09-13T17:54:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_drip_clean",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8207516673,
+  "parameters_human": "8.21B",
+  "storage_bytes": 18949392618,
+  "storage_human": "18.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Notion - Log in",
+      "url": "https://app.notion.com/login",
+      "snippet": "A collaborative AI workspace, built on your company context. Build and orchestrate agents right alongside your team's projects, …"
+    },
+    {
+      "title": "Registro de inicio y cierre de sesión en Notion | Ayuda de Notion ...",
+      "url": "https://www.notion.com/es/help/log-in-and-out",
+      "snippet": "Aquí tienes todas las formas en las que puedes iniciar sesión en Notion. También puedes cerrar sesión de forma remota."
+    },
+    {
+      "title": "Log in & out of Notion | Notion Help – Notion Help Center",
+      "url": "https://www.notion.com/help/log-in-and-out",
+      "snippet": "Here are all the ways you can log into Notion. You can also log out remotely. There are a few ways to log into Notion: Using your …"
+    },
+    {
+      "title": "The AI workspace that works for you. | Notion",
+      "url": "https://www.notion.com/",
+      "snippet": "Capture context, find answers, and automate tasks with AI built for your team. AI where your team works. Bring everything into one …"
+    },
+    {
+      "title": "El espacio de trabajo con IA que trabaja para ti | Notion",
+      "url": "https://www.notion.com/es-es",
+      "snippet": "Guarda el contexto, encuentra respuestas y automatiza tareas con una IA creada para tu equipo. Reúnelo todo en un único sistema …"
+    }
+  ]
+}

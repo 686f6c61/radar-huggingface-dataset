@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Alienstro/xObsessed",
+  "slug": "alienstro-xobsessed",
+  "author": "Alienstro",
+  "url": "https://huggingface.co/Alienstro/xObsessed",
+  "created_at": "2026-09-13T11:42:32.000Z",
+  "updated_at": "2026-09-13T11:42:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deutschland: 2G-Aus zwingt zum Tausch alter OBUs | trans.info",
+      "url": "https://trans.info/de/deutschland-aeltere-toll-collect-obus-austausch-477105",
+      "snippet": "May 21, 2026 · Toll Collect tauscht ältere OBUs, die noch 2G nutzen. Austausch ist kostenlos, Frist im Kundenportal prüfen und …"
+    },
+    {
+      "title": "Niemcy: starsze OBU do myta mogą zostać zablokowane",
+      "url": "https://trans.info/pl/toll-collect-ostrzega-przewoznikow-starsze-obu-beda-blokowane-477110",
+      "snippet": "May 21, 2026 · Toll Collect podkreśla, że sama operacja jest bezpłatna, ale przewoźnicy muszą odpowiednio wcześniej umówić …"
+    },
+    {
+      "title": "Jaki filtr przeciwzakłóceniowy 12V do ciężarówki z TOLL COLLECT?",
+      "url": "https://www.elektroda.pl/rtvforum/topic589934.html",
+      "snippet": "Sep 23, 2006 · Czy istnieje skuteczny filtr przeciwzakłóceniowy 12V do ciężarówki, który zredukuje zakłócenia z radia i CB …"
+    },
+    {
+      "title": "Scania 124L 420hp 2004 - Funkcja pomarańczowego przewodu w Toll …",
+      "url": "https://www.elektroda.pl/rtvforum/topic2598747.html",
+      "snippet": "Jun 29, 2013 · Czy ktoś zna funkcję pomarańczowego przewodu w instalacji Toll Collect w Scania 124L 420hp z 2004 roku? …"
+    },
+    {
+      "title": "Deutschland: Maut per App – Toll Collect erweitert Angebot ohne OBU",
+      "url": "https://trans.info/de/maut-app-erleichtert-fahrten-ohne-obu-deutschland-489508",
+      "snippet": "Jul 10, 2026 · Die TollNow-App von Toll Collect ist jetzt auch für Android verfügbar. Sie richtet sich an registrierte Unternehmen, die …"
+    }
+  ]
+}

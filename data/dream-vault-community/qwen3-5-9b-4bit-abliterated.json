@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "dream-vault-community/Qwen3.5-9B-4bit-Abliterated",
+  "slug": "dream-vault-community-qwen3-5-9b-4bit-abliterated",
+  "author": "dream-vault-community",
+  "url": "https://huggingface.co/dream-vault-community/Qwen3.5-9B-4bit-Abliterated",
+  "created_at": "2026-09-13T16:49:49.000Z",
+  "updated_at": "2026-09-13T16:50:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "vision",
+    "abliterated",
+    "4-bit",
+    "image-text-to-text",
+    "conversational",
+    "base_model:LethalDonkey/Gliese-Qwen3.5-9B-Abliterated-Caption-MLX-4bit",
+    "base_model:quantized:LethalDonkey/Gliese-Qwen3.5-9B-Abliterated-Caption-MLX-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 5970208903,
+  "storage_human": "6.0 GB",
+  "base_model": "LethalDonkey/Gliese-Qwen3.5-9B-Abliterated-Caption-MLX-4bit",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DreameTech – Dreame France",
+      "url": "https://fr.dreametech.com/",
+      "snippet": "DreameTech - Leader des solutions de nettoyage intelligent. Robots autonomes, aspirateurs sans fil et accessoires haute performance."
+    },
+    {
+      "title": "Dream - YouTube",
+      "url": "https://www.youtube.com/c/Dream",
+      "snippet": "I am DREAM. I like playing games, streaming, coding, and making videos with my FRIENDS!"
+    },
+    {
+      "title": "eDreams - Réservation de vols, hotels, trains, voyages pas cher ...",
+      "url": "https://www.edreams.fr/",
+      "snippet": "Réservez vos vacances, billets d'avion ou votre séjour vol+hôtel en dernière minute avec eDreams. Voyagez vers + de 40 000 …"
+    },
+    {
+      "title": "Dream (YouTuber) - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Dream_(YouTuber)",
+      "snippet": "Dream's most popular YouTube series is \"Minecraft Manhunt\", a format where one player — usually Dream — attempts to complete a …"
+    },
+    {
+      "title": "Site Officiel Dreame | Aspirateurs Intelligents",
+      "url": "https://global.dreametech.com/fr",
+      "snippet": "En se focalisant sur les appareils de nettoyage ménagers haut de gamme comme les aspirateurs sans fil, robots aspirateurs, …"
+    }
+  ]
+}

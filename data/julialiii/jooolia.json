@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "julialiii/jooolia",
+  "slug": "julialiii-jooolia",
+  "author": "julialiii",
+  "url": "https://huggingface.co/julialiii/jooolia",
+  "created_at": "2026-09-13T14:40:38.000Z",
+  "updated_at": "2026-09-13T14:54:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:Qwen/Qwen-Image-2512",
+    "base_model:adapter:Qwen/Qwen-Image-2512",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1181115061,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen-Image-2512",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Report data or content errors on Google Maps",
+      "url": "https://support.google.com/maps/answer/3094088?hl=en",
+      "snippet": "Report spam or bad data Any illegal, offensive, fraudulent, or malicious data on Google Maps is considered as spam. Users found to …"
+    },
+    {
+      "title": "Get started with Google Maps",
+      "url": "https://support.google.com/maps/answer/144349?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "Get started with Google Maps This article will help you set up, learn the basics, and explain various features of Google Maps. You …"
+    },
+    {
+      "title": "Download areas & navigate offline in Google Maps",
+      "url": "https://support.google.com/maps/answer/6291838?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "Download a map to use offline in Google Maps On your Android phone or tablet, open the Google Maps app . If you don’t have the …"
+    },
+    {
+      "title": "Google Maps - Reddit",
+      "url": "https://www.reddit.com/r/GoogleMaps/",
+      "snippet": "The difference between google maps and earth is pretty significant all of a sudden. Cost savings? Different image source? Google …"
+    },
+    {
+      "title": "Get directions & show routes in Google Maps",
+      "url": "https://support.google.com/maps/answer/144339?hl=en&co=GENIE.platform%3DDesktop",
+      "snippet": "Important: To keep yourself and others safe, stay aware of your surroundings when you use directions on Google Maps. When in …"
+    }
+  ]
+}

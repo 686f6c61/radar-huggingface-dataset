@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Noaleetz/ai-kitchen-005-006",
+  "slug": "noaleetz-ai-kitchen-005-006",
+  "author": "Noaleetz",
+  "url": "https://huggingface.co/Noaleetz/ai-kitchen-005-006",
+  "created_at": "2026-09-13T13:45:06.000Z",
+  "updated_at": "2026-09-13T13:45:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "dora",
+    "ia3",
+    "persona",
+    "gsm8k",
+    "gandalf",
+    "shakespeare",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1534321196,
+  "storage_human": "1.5 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Clean Your Laptop’s Cooling Fan at Home Without Opening It",
+      "url": "https://www.gizbot.com/how-to/features/how-to-clean-your-laptops-cooling-fan-at-home-without-opening-it-115035.html",
+      "snippet": "May 22, 2025 · Want to fix laptop overheating without opening it? Here’s how to clean your laptop’s cooling fan using safe, at-home …"
+    },
+    {
+      "title": "How do I clean my laptop fan without compressed air without opening …",
+      "url": "https://www.remodelormove.com/how-do-i-clean-my-laptop-fan-without-compressed-air-without-opening-it/",
+      "snippet": "Cleaning your laptop fan without compressed air and without opening your laptop is a tricky process, but it is possible. The easiest …"
+    },
+    {
+      "title": "How to Clean a Laptop Fan - Lifewire",
+      "url": "https://www.lifewire.com/clean-laptop-fan-5176632",
+      "snippet": "Nov 27, 2023 · Keeping your laptop quiet is typically just a matter of keeping it clean and dust free. Here's how to clean the fan to …"
+    },
+    {
+      "title": "How to Clean a Fan Without Opening It ️ - tecnobits.com",
+      "url": "https://tecnobits.com/en/how-to-clean-a-fan-without-opening-it/",
+      "snippet": "Sep 23, 2023 · Tecnobits - Learn - How to Clean a Fan Without Opening It How⁢ Clean a Fan without opening it Fans are very useful …"
+    },
+    {
+      "title": "How to Clean Laptop Fan Without Compressed Air - PC Webopaedia",
+      "url": "https://www.pcwebopaedia.com/laptops/info/how-to-clean-laptop-fan-without-compressed-air/",
+      "snippet": "How to Clean Laptop Fan Without Compressed Air Method #1: Disassemble the Laptop If your laptop fan has not been cleaned for a …"
+    }
+  ]
+}

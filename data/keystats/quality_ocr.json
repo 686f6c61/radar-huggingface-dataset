@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "keystats/Quality_ocr",
+  "slug": "keystats-quality_ocr",
+  "author": "keystats",
+  "url": "https://huggingface.co/keystats/Quality_ocr",
+  "created_at": "2026-09-13T14:48:08.000Z",
+  "updated_at": "2026-09-13T14:49:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16595836608,
+  "storage_human": "16.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Balthus 30 - Davis Acoustics",
+      "url": "https://davis-acoustics.com/balthus-30/",
+      "snippet": "La Balthus 30 est la bibliothèque de la gamme Balthus. Elle est néanmoins équipée des mêmes haut-parleurs medium et aiguës que …"
+    },
+    {
+      "title": "Davis Acoustics Balthus 30 Blanc - Enceintes bibliothèque",
+      "url": "https://www.son-video.com/article/enceintes-enceintes-enceintes-compactes/davis-acoustics/balthus-30-blanc",
+      "snippet": "L'enceinte compacte Davis Acoustics Balthus 30 est un modèle 2 voies équipé de haut-parleurs maison, conçus et fabriqués par …"
+    },
+    {
+      "title": "Davis Acoustics Balthus 30 - noir-et-blanc.com",
+      "url": "https://www.noir-et-blanc.com/davis-acoustics-balthus-30.html",
+      "snippet": "Notre équipe d'experts vous réponds par email ou au +32 538 44 51 (mar-sam, 10h-12h30 et 14h-18h30) ... La Balthus 30 est la …"
+    },
+    {
+      "title": "Balthus 30 (PAIR) – Belhifi",
+      "url": "https://belhifi.com/products/balthus-30-pair",
+      "snippet": "On demo at the shop! The Balthus 30 is the library of the Balthus range. She is nevertheless equipped with the same medium and …"
+    },
+    {
+      "title": "Davis Acoustics Balthus 30 Walnut - Speakers - LDLC",
+      "url": "https://www.ldlc.com/en/product/PB00347912.html",
+      "snippet": "Enjoy a superior acoustic experience with the Davis Balthus 30 bookshelf speaker. Enjoy detailed and accurate sound thanks to the …"
+    }
+  ]
+}

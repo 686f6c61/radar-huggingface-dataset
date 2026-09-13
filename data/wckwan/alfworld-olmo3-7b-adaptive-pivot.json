@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "wckwan/Alfworld-Olmo3-7B-Adaptive-Pivot",
+  "slug": "wckwan-alfworld-olmo3-7b-adaptive-pivot",
+  "author": "wckwan",
+  "url": "https://huggingface.co/wckwan/Alfworld-Olmo3-7B-Adaptive-Pivot",
+  "created_at": "2026-09-13T18:26:42.000Z",
+  "updated_at": "2026-09-13T18:30:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "reinforcement-learning",
+    "grpo",
+    "search-r1",
+    "process-reward",
+    "tool-use",
+    "text-generation",
+    "base_model:allenai/Olmo-3-7B-Instruct",
+    "base_model:finetune:allenai/Olmo-3-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43788190992,
+  "storage_human": "43.8 GB",
+  "base_model": "allenai/Olmo-3-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Digi Sport - stiri din sport, meciuri live - Spectacolul campionilor!",
+      "url": "https://www.digisport.ro/",
+      "snippet": "Pe Digi Sport ai cele mai noi stiri din sport: fotbal, tenis, F1, handbal, baschet, meciuri live din cele mai tari campionate de fotbal, …"
+    },
+    {
+      "title": "Rezultate live la Digi Sport 1 - meciuri live: fotbal, tenis, in direct ...",
+      "url": "https://www.digisport.ro/live/digisport-1",
+      "snippet": "Vezi rezultate live, meciuri de fotbal live, turnee de tenis in direct, cele mai tari meciuri din Liga 1, campionate straine, Liga …"
+    },
+    {
+      "title": "Digi Sport",
+      "url": "http://m2.digisport.ro/",
+      "snippet": "Descoperă cele mai recente știri și evenimente sportive, inclusiv fotbal, tenis și alte sporturi, pe Digi Sport."
+    },
+    {
+      "title": "Canale TV de sport - Meciuri de fotbal si alte competitii live ...",
+      "url": "https://www.digionline.ro/sport",
+      "snippet": "Urmărește live, online emisiunile din programul Digi Sport 2. Comentarii sportive, interviuri, analize și transmisiuni live - meciuri de …"
+    },
+    {
+      "title": "Digi Sport 1 live (Digi/RDS) și program TV azi | TVGratis.ro",
+      "url": "https://tvgratis.ro/canal/digi-sport-1",
+      "snippet": "Digi Sport 1 live prin Digi (RDS) și program TV azi: meciuri SuperLiga, tenis și Fotbal Club. Vezi ce meciuri sunt azi și grila completă …"
+    }
+  ]
+}

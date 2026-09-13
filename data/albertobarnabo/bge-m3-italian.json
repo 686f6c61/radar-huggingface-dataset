@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "albertobarnabo/bge-m3-italian",
+  "slug": "albertobarnabo-bge-m3-italian",
+  "author": "albertobarnabo",
+  "url": "https://huggingface.co/albertobarnabo/bge-m3-italian",
+  "created_at": "2026-09-12T07:51:14.000Z",
+  "updated_at": "2026-09-13T18:37:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "sentence-similarity",
+    "feature-extraction",
+    "retrieval",
+    "italian",
+    "italiano",
+    "bge",
+    "bge-m3",
+    "multi-vector",
+    "sparse",
+    "it",
+    "dataset:unicamp-dl/mmarco",
+    "base_model:BAAI/bge-m3",
+    "base_model:finetune:BAAI/bge-m3",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 567754752,
+  "parameters_human": "567.8M",
+  "storage_bytes": 4572691736,
+  "storage_human": "4.6 GB",
+  "base_model": "BAAI/bge-m3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Car loans | Personal car loan calculator - Lloyds Bank",
+      "url": "https://www.lloydsbank.com/loans/car-loan.html",
+      "snippet": "A car loan could help you to spread the cost of a new or used car. Work out what your repayments could be and get a personalised …"
+    },
+    {
+      "title": "Car Finance | Get a Personalised Quote Today | Lloyds Bank",
+      "url": "https://www.lloydsbank.com/car-finance.html",
+      "snippet": "Whether you have found your next vehicle, are still doing your sums, or want to switch your existing agreement for a better rate, see …"
+    },
+    {
+      "title": "Lloyds banking group partners with international motors limited",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/media/press-releases/2025-press-releases/lloyds-banking-group/250226-lloyds-banking-group-partners-with-international-motors-limited.pdf",
+      "snippet": "Lloyds Banking Group has partnered with International Motors Limited (IML) to offer finance and leasing products for XPENG’s …"
+    },
+    {
+      "title": "Lloyds Bank Car Finance – Up to £25,000 Vehicle Finance Online",
+      "url": "https://loansmate.co.uk/car/lloyds-bank",
+      "snippet": "Jun 22, 2025 · Car finance with Lloyds Bank offers amounts up to £25,000 at a low-interest rate starting from 4.9%, and a flexible …"
+    },
+    {
+      "title": "How to Apply - Black Horse",
+      "url": "https://www.blackhorse.co.uk/why/apply.html",
+      "snippet": "Black Horse is a specialist vehicle finance division of Lloyds Banking Group with 50 years of experience within the Finance Industry. …"
+    }
+  ]
+}

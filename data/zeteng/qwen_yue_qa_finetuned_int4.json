@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Zeteng/qwen_yue_qa_finetuned_int4",
+  "slug": "zeteng-qwen_yue_qa_finetuned_int4",
+  "author": "Zeteng",
+  "url": "https://huggingface.co/Zeteng/qwen_yue_qa_finetuned_int4",
+  "created_at": "2025-06-05T11:53:09.000Z",
+  "updated_at": "2026-09-13T18:44:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "yue",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "cantonese",
+    "yue",
+    "hong-kong",
+    "lora",
+    "peft",
+    "conversational",
+    "zh",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 2423439529,
+  "storage_human": "2.4 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Libero Mail - login",
+      "url": "https://login.libero.it/",
+      "snippet": "Inserisci la tua user e password ed entra in Libero Mail. Sei invece un nuovo utente? Crea un nuovo account o richiedi l'aiuto di Libero"
+    },
+    {
+      "title": "Libero: Mail, Ricerca e News con aggiornamento quotidiano",
+      "url": "https://www.libero.it/",
+      "snippet": "Entra su Libero.it: Mail e Email PEC, Login, le Ultime Notizie con aggiornamento quotidiano, Video, Motore di Ricerca e tanto altro"
+    },
+    {
+      "title": "Crea email con Libero Mail: apri la tua nuova Posta Elettronica",
+      "url": "https://liberomail.libero.it/",
+      "snippet": "Apri un nuovo account email in modo semplice con Libero Mail e scopri le funzionalità. Spazio cloud, invio file di grandi dimensioni e …"
+    },
+    {
+      "title": "Libero Mail",
+      "url": "https://login.libero.it/lsc",
+      "snippet": "Accedi a Libero Mail inserendo le tue credenziali per gestire la tua posta elettronica in modo semplice e sicuro."
+    },
+    {
+      "title": "Libero Mail",
+      "url": "https://liberomail.libero.it/premium/header.php",
+      "snippet": "Aiuto Accedi Crea Libero Mail"
+    }
+  ]
+}

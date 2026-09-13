@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "CyanMonkey/TestSomething",
+  "slug": "cyanmonkey-testsomething",
+  "author": "CyanMonkey",
+  "url": "https://huggingface.co/CyanMonkey/TestSomething",
+  "created_at": "2026-09-12T16:15:52.000Z",
+  "updated_at": "2026-09-13T18:42:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 131234857,
+  "parameters_human": "131.2M",
+  "storage_bytes": 131753266352,
+  "storage_human": "131.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "U.S. Department of State – Home",
+      "url": "https://www.state.gov/",
+      "snippet": "1 day ago · Leading America’s foreign policy to advance the interests and security of the American people. HISTORY OF …"
+    },
+    {
+      "title": "United States | History, Map, Flag, & Population | Britannica",
+      "url": "https://www.britannica.com/place/United-States",
+      "snippet": "1 day ago · News • Rubio pledges US won't take unilateral action against drug trafficking despite recent strikes • Sep. 10, 2026, 3:36 …"
+    },
+    {
+      "title": "Homepage - U.S. Embassy & Consulates in Italy",
+      "url": "https://it.usembassy.gov/",
+      "snippet": "2 days ago · US Welcomes Italy into Pax Silica Initiative U.S. Ambassador Tilman J. Fertitta’s Coastal Diplomacy… Voting Abroad: A …"
+    },
+    {
+      "title": "Stati Uniti d'America - Wikipedia",
+      "url": "https://it.m.wikipedia.org/wiki/Stati_Uniti_d%27America",
+      "snippet": ""
+    },
+    {
+      "title": "United States - Simple English Wikipedia, the free encyclopedia",
+      "url": "https://simple.m.wikipedia.org/wiki/United_States",
+      "snippet": "The United States of America (USA or U.S.A.), also known as the United States (U.S. or US) or America, is a country that is located …"
+    }
+  ]
+}

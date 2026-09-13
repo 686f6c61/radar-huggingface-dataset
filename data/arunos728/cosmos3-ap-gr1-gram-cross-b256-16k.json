@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "arunos728/cosmos3-ap-gr1-gram-cross-b256-16k",
+  "slug": "arunos728-cosmos3-ap-gr1-gram-cross-b256-16k",
+  "author": "arunos728",
+  "url": "https://huggingface.co/arunos728/cosmos3-ap-gr1-gram-cross-b256-16k",
+  "created_at": "2026-09-13T16:04:43.000Z",
+  "updated_at": "2026-09-13T16:08:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 91050557071,
+  "storage_human": "91.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lëtzebuergesch: Gemeng - Hesperange",
+      "url": "https://www.hesperange.lu/lu/dgemeng/dgemeng-kontakteieren/gemeng",
+      "snippet": "Urgence ausserhalb vun den Ëffnungszäiten. Technesch Permanence (ausserhalb vun de Bürosstonnen): (+352) 360808 - 9999. No …"
+    },
+    {
+      "title": "Commune de Hesperange: Accueil",
+      "url": "https://www.hesperange.lu/",
+      "snippet": "Département technique Autres départements Contact Adresse 474, route de Thionville L - 5886 Hesperange Tél: +352 36 08 08 1 …"
+    },
+    {
+      "title": "Commune de Hesperange - Facebook",
+      "url": "https://www.facebook.com/CommunedeHesperange/",
+      "snippet": "La Commune de Hesperange ouvre désormais ses manifestations culturelles payantes aux bénéficiaires du Kulturpass. Pour chaque …"
+    },
+    {
+      "title": "Commune de Hesperange, 474, Route de Thionville, Alzingen (2026)",
+      "url": "https://www.govserv.org/LU/Alzingen/101092793018302/Commune-de-Hesperange",
+      "snippet": "Aug 12, 2026 · Rendez-vous au parc de Hesperange pour découvrir le parcours thématique \"Zeppi & Bob On Tour\" ! 📕🔎 Munissez-vous …"
+    },
+    {
+      "title": "Administration Communale de Hesperange - Gemengen Hesperange",
+      "url": "https://www.editus.lu/lu/administration-communale-de-hesperange-hesperange-91",
+      "snippet": "Administration Communale de Hesperange zu Hesperange, all praktesch Informatiounen iwwert Administration Communale de …"
+    }
+  ]
+}

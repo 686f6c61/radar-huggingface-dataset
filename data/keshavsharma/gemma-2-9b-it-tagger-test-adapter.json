@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "keshavsharma/gemma-2-9b-it-tagger-test-adapter",
+  "slug": "keshavsharma-gemma-2-9b-it-tagger-test-adapter",
+  "author": "keshavsharma",
+  "url": "https://huggingface.co/keshavsharma/gemma-2-9b-it-tagger-test-adapter",
+  "created_at": "2026-09-13T17:30:01.000Z",
+  "updated_at": "2026-09-13T17:30:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30300192,
+  "storage_human": "30 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "マイクロソフトから毎月260円の引き落されているのですが、何かわ …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12300185777",
+      "snippet": "Jun 26, 2024 · マイクロソフトから毎月260円の引き落されているのですが、何かわからず、解約したいのですが、どうしたらいい …"
+    },
+    {
+      "title": "心当たりのないカード請求についてです。先月、今月と、同じ日に.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10144483520",
+      "snippet": "Apr 17, 2015 · 同じく、MSFT＊OFFICEというところから1274円請求、引き落としをされています。カード会社に問い合わせたとこ …"
+    },
+    {
+      "title": "Msft Vitual Disk SCSI Disk Device im Gerätemanager",
+      "url": "https://administrator.de/forum/msft-vitual-disk-scsi-disk-device-im-geraetemanager-192783.html",
+      "snippet": "Oct 15, 2012 · Wie gesagt, habe ich mittlerweile 1000e Msft Vitual Disk SCSI Disk Devices im Gerätemanager stehen, kann mir …"
+    },
+    {
+      "title": "NetBIOS via DHCP-Option deaktivieren verursacht Fehler bei PXE-Boot",
+      "url": "https://administrator.de/knowledge/netbios-via-dhcp-option-deaktivieren-verursacht-fehler-bei-pxe-boot-254739.html",
+      "snippet": "Nov 13, 2014 · Neben den normalen, standardisierten, DHCP-Optionen gibt es noch die Option 43, welche für herstellerspezifische …"
+    },
+    {
+      "title": "先日、『帝国経済興信所』というところから電話がありました。社.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10159532810",
+      "snippet": "May 20, 2016 · 先日、『帝国経済興信所』というところから電話がありました。社長に取り次ぐように言われたのですが、不在だっ …"
+    }
+  ]
+}

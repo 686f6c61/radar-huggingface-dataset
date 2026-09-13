@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "hyuzhang01/SESR",
+  "slug": "hyuzhang01-sesr",
+  "author": "hyuzhang01",
+  "url": "https://huggingface.co/hyuzhang01/SESR",
+  "created_at": "2026-09-13T11:27:27.000Z",
+  "updated_at": "2026-09-13T11:32:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 307766457,
+  "storage_human": "308 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "仕事探し | Indeed (インディード)",
+      "url": "https://jp.indeed.com/",
+      "snippet": "Indeed（インディード）では、あなたの次のキャリアを探すためのさまざまな求人情報をまとめて検索できます。求人検索や履歴書 …"
+    },
+    {
+      "title": "Jobbörse Indeed.com | Deutschlands Jobsuche",
+      "url": "https://de.indeed.com/",
+      "snippet": "Mit Indeed können Sie Millionen Jobs durchsuchen und so den nächsten Schritt in Ihrer Karriere planen. Wir begleiten Sie mit …"
+    },
+    {
+      "title": "Vacatures zoeken | Indeed",
+      "url": "https://nl.indeed.com/",
+      "snippet": "Met Indeed kan je miljoenen vacatures online bekijken en de volgende stap in je carrière vinden. Met middelen voor het zoeken naar …"
+    },
+    {
+      "title": "Job Search | Indeed",
+      "url": "https://www.indeed.com/",
+      "snippet": "With Indeed, you can search millions of jobs online to find the next step in your career. With tools for job search, resumes, company …"
+    },
+    {
+      "title": "Emploi | Indeed",
+      "url": "https://emplois.ca.indeed.com/",
+      "snippet": "Êtes-vous à la prochaine étape de votre carrière? Sur Indeed, accédez à des millions d'offres demploi. Nous pouvons vous aider …"
+    }
+  ]
+}

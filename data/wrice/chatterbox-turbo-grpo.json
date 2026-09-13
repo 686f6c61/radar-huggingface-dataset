@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "wrice/chatterbox-turbo-grpo",
+  "slug": "wrice-chatterbox-turbo-grpo",
+  "author": "wrice",
+  "url": "https://huggingface.co/wrice/chatterbox-turbo-grpo",
+  "created_at": "2026-09-13T12:03:07.000Z",
+  "updated_at": "2026-09-13T12:22:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "chatterbox",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "chatterbox",
+    "safetensors",
+    "text-to-speech",
+    "grpo",
+    "reinforcement-learning",
+    "lora",
+    "speech",
+    "en",
+    "dataset:mythicinfinity/libritts_r",
+    "base_model:ResembleAI/chatterbox-turbo",
+    "base_model:finetune:ResembleAI/chatterbox-turbo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3037199618,
+  "storage_human": "3.0 GB",
+  "base_model": "ResembleAI/chatterbox-turbo",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Angebote in deinem REWE Markt",
+      "url": "https://www.rewe.de/angebote/nationale-angebote/?msockid=38a3d6f8925b62a02bfec12b93b0637f",
+      "snippet": "Entdecke alle Angebote der Woche bei REWE Top-Angebote aus dem Prospekt Spare jetzt beim Einkauf im REWE Markt in deiner …"
+    },
+    {
+      "title": "REWE Supermärkte - REWE.de",
+      "url": "https://www.rewe.de/marktsuche/?msockid=38a3d6f8925b62a02bfec12b93b0637f",
+      "snippet": "REWE Filialen nach Bundesländern Baden-Württemberg Bayern Berlin Brandenburg Bremen Hamburg Hessen Mecklenburg …"
+    },
+    {
+      "title": "Getränke Angebote in deinem REWE Markt",
+      "url": "https://www.rewe.de/angebote/nationale-angebote/getraenke/?msockid=38a3d6f8925b62a02bfec12b93b0637f",
+      "snippet": "Alle aktuellen Getränke Angebote in deinem REWE Markt. Schlag zu und spare beim Einkauf in deinem REWE Markt."
+    },
+    {
+      "title": "REWE.de - Deine Startseite für Lebensmittel im Internet!",
+      "url": "https://www.rewe.de/?msockid=38a3d6f8925b62a02bfec12b93b0637f",
+      "snippet": "Bei REWE.de jede Woche neue Lebensmittel-Angebote in deiner REWE Filiale entdecken. Übrigens: Wir liefern Lebensmittel auch …"
+    },
+    {
+      "title": "Rezeptwelt - über 10.000 köstliche Rezepte ♥ REWE",
+      "url": "https://www.rewe.de/rezepte/?msockid=38a3d6f8925b62a02bfec12b93b0637f",
+      "snippet": "Leckere Rezeptideen für jeden Anlass von Ernährungsexperten entwickelt & getestet schnell & einfach nachkochen Finde jetzt dein …"
+    }
+  ]
+}

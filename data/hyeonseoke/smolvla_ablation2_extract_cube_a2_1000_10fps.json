@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "HyeonseokE/smolvla_ablation2_extract_cube_A2_1000_10fps",
+  "slug": "hyeonseoke-smolvla_ablation2_extract_cube_a2_1000_10fps",
+  "author": "HyeonseokE",
+  "url": "https://huggingface.co/HyeonseokE/smolvla_ablation2_extract_cube_A2_1000_10fps",
+  "created_at": "2026-09-13T18:15:22.000Z",
+  "updated_at": "2026-09-13T18:17:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:HyeonseokE/ablation2_extract_cube_A2_10fps",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906729316,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Graue schwarz-weiße Bilder online kaufen | OTTO",
+      "url": "https://www.otto.de/dekoration/bilder/?farbe=grau&s=schwarz-weiss",
+      "snippet": "In dieser Kaufberatung erfährst du, welche Eigenschaften graue schwarz-weiße Bilder auszeichnen und wie du sie gezielt für deine …"
+    },
+    {
+      "title": "Bild kunst abstrakt gemälde grau schwarz weiß - Etsy.de",
+      "url": "https://www.etsy.com/de/market/bild_kunst_abstrakt_gem%C3%A4lde_grau_schwarz_wei%C3%9F?msockid=38427945f5426a1531476e96f4ad6bc2",
+      "snippet": "Schau dir unsere Auswahl an bild kunst abstrakt gemälde grau schwarz weiß an, um die tollsten einzigartigen oder …"
+    },
+    {
+      "title": "Abstrakte graue schwarz-weiße Bilder online kaufen | OTTO",
+      "url": "https://www.otto.de/dekoration/bilder/?farbe=grau&kunststil=abstrakt&s=schwarz-weiss",
+      "snippet": "Abstrakte Wandbilder in Grautönen mit schwarz-weißen Akzenten bieten dir vielseitige Gestaltungsmöglichkeiten für deine …"
+    },
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Bilder Schwarz Weis Grau",
+      "url": "https://www.amazon.de/bilder-schwarz-weis-grau/s?k=bilder+schwarz+weis+grau",
+      "snippet": "1-48 von mehr als 10.000 Ergebnissen oder Vorschlägen für \"bilder schwarz weis grau\" Ergebnisse Erfahre mehr über diese …"
+    },
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Bilder In Grau Weiß",
+      "url": "https://www.amazon.de/bilder-grau-wei%C3%9F/s?k=bilder+in+grau+wei%C3%9F",
+      "snippet": "1-48 von mehr als 50.000 Ergebnissen oder Vorschlägen für \"bilder in grau weiß\" Ergebnisse Erfahre mehr über diese Ergebnisse. …"
+    }
+  ]
+}

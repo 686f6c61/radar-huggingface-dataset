@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Jules1998/medgemma_poc5",
+  "slug": "jules1998-medgemma_poc5",
+  "author": "Jules1998",
+  "url": "https://huggingface.co/Jules1998/medgemma_poc5",
+  "created_at": "2026-09-13T14:29:21.000Z",
+  "updated_at": "2026-09-13T14:34:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 169325929,
+  "storage_human": "169 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/homepage",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/watch?v=Lue_b-46-i8",
+      "snippet": "Headie One, Abra Cadabra & Bandokay - Can't Be Us (Reupload)"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/watch?v=FxsIWKNYwSs&list=PLY4IMtKdc0UIebJFHRaShshgxl16hI1R-",
+      "snippet": "Ikke Hüftgold The Straussbrüder, Lambo Luki, Malle Marc, Zombic - Winterdienst (Hardtekk Mix) (Visualizer)"
+    },
+    {
+      "title": "#maroc - YouTube",
+      "url": "https://www.youtube.com/hashtag/maroc",
+      "snippet": "\"He has to go!\" | Gianni Infantino in Morocco for crisis meeting with senior FIFA staff"
+    }
+  ]
+}

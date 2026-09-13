@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Blossom-V7.1-35B-A3B-GGUF",
+  "slug": "mradermacher-blossom-v7-1-35b-a3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Blossom-V7.1-35B-A3B-GGUF",
+  "created_at": "2026-09-13T14:02:36.000Z",
+  "updated_at": "2026-09-13T15:43:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 21880339968,
+  "storage_human": "21.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Voitures neuves et faible kilométrage au meilleur prix garanti",
+      "url": "https://www.aramisauto.com/achat/neuves?msockid=0a6dd9ef9f8168683e73ce3c9e326948",
+      "snippet": "Trouvez facilement votre prochaine voiture neuve et faible kilométrage. Bénéficiez de réductions jusqu'à -30% sur les véhicules chez …"
+    },
+    {
+      "title": "Aramisauto - Achat de voitures d'occasion ou neuves pas chères ...",
+      "url": "https://www.aramisauto.com/?msockid=0a6dd9ef9f8168683e73ce3c9e326948",
+      "snippet": "Mieux qu'un mandataire : achetez votre voiture neuve ou d'occasion reconditionnée au meilleur prix garanti ! Aramisauto propose …"
+    },
+    {
+      "title": "Agence Aramisauto Chambéry - Concessionnaire - Mandataire auto",
+      "url": "https://agences.aramisauto.com/aramisauto/fr/agency/france/auvergne-rhone-alpes/savoie/chambery/chambery/cha73",
+      "snippet": "15 hours ago · Votre voiture neuve ou d'occasion au meilleur prix garanti est sur Aramisauto. 20 marques, 2000 modèles, satisfait ou …"
+    },
+    {
+      "title": "Voitures neuves et d'occasion au meilleur prix garanti | Aramisauto",
+      "url": "https://www.aramisauto.com/achat/?msockid=0a6dd9ef9f8168683e73ce3c9e326948",
+      "snippet": "Trouvez facilement votre prochaine voiture neuve et d'occasion. Bénéficiez de réductions jusqu'à -30% sur les véhicules chez …"
+    },
+    {
+      "title": "Voitures occasion au meilleur prix garanti | Aramisauto",
+      "url": "https://www.aramisauto.com/achat/occasion?msockid=0a6dd9ef9f8168683e73ce3c9e326948",
+      "snippet": "Trouvez facilement votre prochaine voiture occasion. Bénéficiez de réductions jusqu'à -30% sur les véhicules chez Aramisauto."
+    }
+  ]
+}

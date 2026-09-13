@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "THOMASPATEL/contrastive",
+  "slug": "thomaspatel-contrastive",
+  "author": "THOMASPATEL",
+  "url": "https://huggingface.co/THOMASPATEL/contrastive",
+  "created_at": "2026-09-13T11:49:02.000Z",
+  "updated_at": "2026-09-13T11:49:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leboncoin, site de petites annonces gratuites",
+      "url": "https://www.leboncoin.fr/",
+      "snippet": "Avec leboncoin, trouvez la bonne affaire, réalisez la bonne vente pour votre voiture, immobilier, emploi, location de vacances, …"
+    },
+    {
+      "title": "Rhône-Alpes - leboncoin",
+      "url": "https://www.leboncoin.fr/l/rp_rhone-alpes",
+      "snippet": "Toutes nos annonces gratuites Rhône-Alpes. Consultez nos 9226439 annonces de particuliers et professionnels sur leboncoin"
+    },
+    {
+      "title": "Pour accéder à la gestion - leboncoin",
+      "url": "https://pro.immobilierneuf.leboncoin.fr/auth",
+      "snippet": "Pour accéder à la gestion de vos programmes, identifiez-vous."
+    },
+    {
+      "title": "Nord-Pas-de-Calais - leboncoin",
+      "url": "https://www.leboncoin.fr/l/rp_nord-pas-de-calais",
+      "snippet": "Toutes nos annonces gratuites Nord-Pas-de-Calais. Consultez nos 5823759 annonces de particuliers et professionnels sur leboncoin"
+    },
+    {
+      "title": "Ventes immobilières - leboncoin",
+      "url": "https://www.leboncoin.fr/c/ventes_immobilieres",
+      "snippet": "Consultez nos annonces de ventes immobilières de particuliers et de professionnels sur leboncoin."
+    }
+  ]
+}

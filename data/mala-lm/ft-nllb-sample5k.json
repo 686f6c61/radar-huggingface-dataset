@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "MaLA-LM/FT-nllb-sample5k",
+  "slug": "mala-lm-ft-nllb-sample5k",
+  "author": "MaLA-LM",
+  "url": "https://huggingface.co/MaLA-LM/FT-nllb-sample5k",
+  "created_at": "2026-09-13T13:43:22.000Z",
+  "updated_at": "2026-09-13T13:43:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jak se dostat do Porta | praktický průvodce 2026 - Cestujlevne.com",
+      "url": "https://www.cestujlevne.com/pruvodce/portugalsko/porto/jak-sem",
+      "snippet": "Oct 15, 2024 · Jak levně do Porta? Čím a jak se nejlevněji dostat do Porta, kolik to stojí a jak dlouho cesta potrvá z Prahy a okolí?"
+    },
+    {
+      "title": "Jak se dostat levně do Porta v roce 2026 | levnocestovani.cz",
+      "url": "https://levnocestovani.cz/pruvodce/evropa/portugalsko/porto/jak-sem",
+      "snippet": "13 hours ago · Jak levně do Porta? Poradíme vám, kde a jak koupit levné letenky, zlevněné zájezdy a jak nejlépe využít last minute či …"
+    },
+    {
+      "title": "TOP 10 praktických tipů na cestu do Porta v roce 2026",
+      "url": "https://levnocestovani.cz/pruvodce/evropa/portugalsko/porto/prakticke",
+      "snippet": "5 days ago · Pro občany České republiky stačí pro vstup do Portugalska platný občanský průkaz. Při cestování autem je nutné mít s …"
+    },
+    {
+      "title": "Průvodce Portem: 40 tipů, co dělat a zažít v portugalském Portu",
+      "url": "https://travelbible.cz/pruvodce-porto/",
+      "snippet": "Sep 1, 2026 · Dozvíte se, kdy nejlépe vyrazit, kde bydlet, kam se podívat nejen v Portu, ale i okolí, kde se skvěle najíst i na kolik vás …"
+    },
+    {
+      "title": "PORTO v Portugalsku – co vidět, pláže a kde nám chutnalo",
+      "url": "https://www.cestujzababku.cz/porto/",
+      "snippet": "Jul 27, 2017 · Razíte-li do Porta, nenechte si ujít ochutnávku a návštěvu vinných sklepů ve městě Vila Nova de Gaia. To se nachází …"
+    }
+  ]
+}

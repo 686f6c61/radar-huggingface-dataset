@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "cdameron1024/trashify-object-detector",
+  "slug": "cdameron1024-trashify-object-detector",
+  "author": "cdameron1024",
+  "url": "https://huggingface.co/cdameron1024/trashify-object-detector",
+  "created_at": "2026-09-13T14:39:30.000Z",
+  "updated_at": "2026-09-13T14:40:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "rt_detr_v2",
+    "object-detection",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 42869429,
+  "parameters_human": "42.9M",
+  "storage_bytes": 171576780,
+  "storage_human": "172 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FUSSBALL.DE",
+      "url": "https://www.fussball.de/amateur.tv.detail/",
+      "snippet": "FUSSBALL.DE Empfehlungen der Redaktion Das Beste aus dem deutschen Amateurfussball"
+    },
+    {
+      "title": "FUSSBALL.DE",
+      "url": "https://www.fussball.de/matchkalender#!/",
+      "snippet": "Das Feld PLZ / Ort* darf nicht leer sein. Bitte gib mindestens drei Ziffern für den Anfang einer Postleitzahl oder mindestens drei …"
+    },
+    {
+      "title": "FAQ | FUSSBALL.DE",
+      "url": "https://next.fussball.de/faq",
+      "snippet": "Wie kann ich ein Spieler*innenprofil anlegen? Wie kann ich ein Schiedsrichter*innen-Profil anlegen? Wieso funktioniert das Einrichten …"
+    },
+    {
+      "title": "FUSSBALL.DE - DFB",
+      "url": "https://www.dfb.de/fussballde",
+      "snippet": "FUSSBALL.DE. instagramfacebooktwitteronefootballyoutubetiktok."
+    },
+    {
+      "title": "Fußball heute live | 13.09.2026 | Alle Spiele & Ergebnisse",
+      "url": "https://www.kicker.de/fussball/heute-live",
+      "snippet": "Deutschland, Bundesliga, 3. Spieltag. Deutschland, 2. Bundesliga, 5. Spieltag. 1. FC Heidenheim. Deutschland, 3. Liga, 5. Spieltag. …"
+    }
+  ]
+}

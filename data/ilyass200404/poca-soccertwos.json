@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ilyass200404/poca-SoccerTwos",
+  "slug": "ilyass200404-poca-soccertwos",
+  "author": "ilyass200404",
+  "url": "https://huggingface.co/ilyass200404/poca-SoccerTwos",
+  "created_at": "2026-09-13T13:44:05.000Z",
+  "updated_at": "2026-09-13T13:44:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "SoccerTwos",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SoccerTwos",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 87365457,
+  "storage_human": "87 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "Create an account on YouTube - Computer - YouTube Help",
+      "url": "https://support.google.com/youtube/answer/161805?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Once you've signed in to YouTube with your Google Account, you can create a YouTube channel on your account. YouTube …"
+    },
+    {
+      "title": "تروجيمنج - أخبار و مراجعات ألعاب الفيديو - الموقع العربي الرائد لأخبار ...",
+      "url": "https://www.true-gaming.net/home/",
+      "snippet": "الموقع العربي الرائد لأخبار ومراجعات ألعاب الفيديو. تابع أحدث التغطيات، التقارير، وتقييمات ألعاب بلايستيشن، إكسبوكس، ننتندو، والحاسب الشخصي."
+    },
+    {
+      "title": "استخدام حساب Google لتسجيل الدخول إلى YouTube",
+      "url": "https://support.google.com/youtube/answer/69961?hl=ar",
+      "snippet": "عندما تسجّل الدخول إلى YouTube باستخدام حساب Google ، ستتمكّن من الاستفادة من ميزات كثيرة في YouTube، منها: إبداء الإعجاب بالفيديوهات حفظ مقاطع الفيديو المفضلة الاشتراك في …"
+    },
+    {
+      "title": "التنقّل في YouTube - جهاز الكمبيوتر - مساعدة YouTube",
+      "url": "https://support.google.com/youtube/answer/2398242?hl=ar-eg&co=GENIE.Platform%3DDesktop",
+      "snippet": "الصفحة الرئيسية إذا كنت تستخدم YouTube للمرة الأولى أو لم تسجّل الدخول، ستظهر الفيديوهات الأكثر رواجًا في \"الصفحة الرئيسية\" على YouTube. بعد تسجيل الدخول والبدء بمشاهدة …"
+    }
+  ]
+}

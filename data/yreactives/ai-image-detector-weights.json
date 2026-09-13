@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Yreactives/ai-image-detector-weights",
+  "slug": "yreactives-ai-image-detector-weights",
+  "author": "Yreactives",
+  "url": "https://huggingface.co/Yreactives/ai-image-detector-weights",
+  "created_at": "2026-09-13T11:38:12.000Z",
+  "updated_at": "2026-09-13T12:30:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53073892,
+  "storage_human": "53 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Saudi eVisa | The Official website for Tourist Visa to Saudi Arabia",
+      "url": "https://visa.visitsaudi.com/",
+      "snippet": "Saudi Arabia is opening its doors to the world through its new tourist visa. Through the fast and easy-to-use online portal, …"
+    },
+    {
+      "title": "visa.visitsaudi.com",
+      "url": "https://visa.visitsaudi.com/Content/asset/font/39FF51_0_0.7f83d63.woff2",
+      "snippet": "? ù% ò; œ æž½? ÈP YÑ ÌÙžlÉVÏ¯lý\"Âˆ0öøŠ øâ O¼ˆ b X#Öˆ5²È+jçË«« ¤ë× npnQ EÓ4MÓ”ÏãÜ¿ Dš \" E …"
+    },
+    {
+      "title": "Visitor Information Update - Visit Saudi",
+      "url": "https://visa.visitsaudi.com/infoupdate",
+      "snippet": "Disclaimer: The information that will be provided in this letter is to capture the needed data for our record in order for us as the …"
+    }
+  ]
+}

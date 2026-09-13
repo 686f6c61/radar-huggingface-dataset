@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "7dsolv/Konaet-Cauryvo-202M-muNEX-3F",
+  "slug": "7dsolv-konaet-cauryvo-202m-munex-3f",
+  "author": "7dsolv",
+  "url": "https://huggingface.co/7dsolv/Konaet-Cauryvo-202M-muNEX-3F",
+  "created_at": "2026-09-13T14:41:06.000Z",
+  "updated_at": "2026-09-13T14:41:09.000Z",
+  "license": "konaet-arcl-1.1",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "custom",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "custom",
+    "konaet-cauryvo",
+    "konaet",
+    "cauryvo",
+    "munex",
+    "munex-3f",
+    "3-bit",
+    "custom-code",
+    "text-generation",
+    "pt",
+    "license:other",
+    "konaet_munex",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 78209406,
+  "storage_human": "78 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/version",
+      "snippet": "Bing ... Versions"
+    },
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://www2.bing.com/",
+      "snippet": "Spice Girls fans thought a reunion was coming. They got this instead. Search with Microsoft Bing and use the power of AI to find …"
+    },
+    {
+      "title": "How to See All Bing Related Searches - cloudspress.com",
+      "url": "https://www.cloudspress.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Aug 7, 2026 · Bing does not have a public “see everything” page for a keyword. Its related searches and autocomplete suggestions …"
+    },
+    {
+      "title": "Microsoft Bing | Get to know Bing",
+      "url": "https://explore.microsoft.com/en-us/bing",
+      "snippet": "Copilot Search in Bing gives you quick, summarized answers with cited sources and suggestions for further exploration, making it …"
+    },
+    {
+      "title": "How to See All Bing Related Searches – Almaroof Inc",
+      "url": "https://almaroof.com/how-to-see-all-bing-related-searches-172/",
+      "snippet": "Jun 23, 2025 · Click on any related search term to perform a new Bing search based on that query. These suggestions appear at the …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jfjames38/reading-data-efficient-learning",
+  "slug": "jfjames38-reading-data-efficient-learning",
+  "author": "jfjames38",
+  "url": "https://huggingface.co/jfjames38/reading-data-efficient-learning",
+  "created_at": "2026-09-13T15:43:11.000Z",
+  "updated_at": "2026-09-13T15:43:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "data-efficient-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PATIENCE ♠️ Speel online & 100% gratis | Patiencer.nl",
+      "url": "https://patiencer.nl/",
+      "snippet": "️ Speel de beste gratis Patience kaartspellen online: Klassiek Solitaire, Spider, FreeCell Grote kaarten Volledig scherm Geen reclame!"
+    },
+    {
+      "title": "Patience Spelen Gratis op Patience.nl",
+      "url": "https://www.patience.nl/",
+      "snippet": "Patience spelen gratis op Patience.nl, zonder registratie, reclames filmpjes tijdens het spelen of downloads. Al jouw favoriete Solitaire …"
+    },
+    {
+      "title": "Speel Gratis Patience en Solitaire Online",
+      "url": "https://www.patience.be/",
+      "snippet": "Ontdek en speel gratis Patience, Klondike, Freecell en meer solitaire kaartspellen online. Geen downloads of registraties nodig, direct …"
+    },
+    {
+      "title": "Patience Gratis Spelen - Klondike Solitaire Zonder Reclame",
+      "url": "https://www.patience.nl/spelen/patience-gratis",
+      "snippet": "Speel gratis Patience Klondike op Patience.nl. Geen downloads of advertenties. Ontdek varianten zoals FreeCell en Spider Solitaire. …"
+    },
+    {
+      "title": "Speel Gratis Klondike Solitaire Online - Patience.be",
+      "url": "https://www.patience.be/spelen/klondike",
+      "snippet": "Op Patience.be speel je Klondike volledig gratis, zonder registraties, downloads of vervelende advertenties. Je kunt kiezen tussen de …"
+    }
+  ]
+}

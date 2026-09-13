@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Fichtl00/Unifolm-VLA_real",
+  "slug": "fichtl00-unifolm-vla_real",
+  "author": "Fichtl00",
+  "url": "https://huggingface.co/Fichtl00/Unifolm-VLA_real",
+  "created_at": "2026-09-13T13:15:15.000Z",
+  "updated_at": "2026-09-13T14:05:07.000Z",
+  "license": "cc",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "license:cc",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 284549351761,
+  "storage_human": "284.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2025-2026 TÃ¼m Kademelerin Sene BaÅŸÄ± Ã–ÄŸretmenler Kurulu …",
+      "url": "https://www.webdeogren.com/2025-2026-tum-kademelerin-sene-basi-ogretmenler-kurulu-toplanti-tutanaklari-ornek.html",
+      "snippet": "Aug 27, 2025 · 2025-2026 Tüm Kademelerin Sene Başı Öğretmenler Kurulu Toplantı Tutanakları (Örnek) Öğretmenler Odası – …"
+    },
+    {
+      "title": "1 ve 5. Sınıflar İçin Kayıt- Nakil Dilekçesi (Yeni Sisteme Göre)",
+      "url": "https://www.webdeogren.com/1-ve-5-siniflar-icin-kayit-nakil-dilekcesi-yeni-sisteme-gore.html",
+      "snippet": "Aug 4, 2026 · Millî Eğitim Bakanlığının 03.08.2026 tarihinde yayımladığı güncel usul ve esaslar doğrultusunda, 1. ve 5. sınıf kayıtları …"
+    },
+    {
+      "title": "Problème pour ouvrir les liens dans Outlook - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-37636511-probleme-pour-ouvrir-les-liens-dans-outlook",
+      "snippet": "Jul 11, 2022 · Si Outlook est dans l'impossibilité d'ouvrir un lien hypertexte, ou si les liens dans les messages ouvrent l'explorateur …"
+    },
+    {
+      "title": "Question Pix - Forum Réseaux sociaux - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-37821416-question-pix",
+      "snippet": "Mar 30, 2023 · BONSOIR Mot qu'on peut trouver dans le Larousse Forme de politesse de rigueur afin que nous puissions dans la …"
+    },
+    {
+      "title": "Web'de Öğren",
+      "url": "https://www.webdeogren.com/",
+      "snippet": "Web'de Öğren - Birlikte En Doğruya 11.08.2026 16:04 - İller arası mazerete bağlı yer değiştirme kapsamında başvuruda bulunmasına …"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "yone2426/Llama-3.1-8B-AIR-DPO",
+  "slug": "yone2426-llama-3-1-8b-air-dpo",
+  "author": "yone2426",
+  "url": "https://huggingface.co/yone2426/Llama-3.1-8B-AIR-DPO",
+  "created_at": "2026-09-13T11:38:13.000Z",
+  "updated_at": "2026-09-13T11:39:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16187649577,
+  "storage_human": "16.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "مضخات مياه ومعدات ضخ للبيع في الأردن | السوق المفتوح",
+      "url": "https://jo.opensooq.com/ar/%D8%B4%D8%B1%D9%83%D8%A7%D8%AA-%D8%B5%D9%86%D8%A7%D8%B9%D9%8A%D8%A9/%D9%85%D8%B6%D8%AE%D8%A7%D8%AA",
+      "snippet": "«مضخة مياه للبيع – جديد بلكرتونة – سعر 17 دينار يوجد يتوفر خدمة توصيل للمحافظة عمان وزرقاء جديد شارع عبدالله غوشة, عمان ... 35 دينار"
+    },
+    {
+      "title": "مضخات مياه ومعدات ضخ للبيع في عمان | السوق المفتوح",
+      "url": "https://jo.opensooq.com/ar/%D8%B9%D9%85%D8%A7%D9%86/%D8%B4%D8%B1%D9%83%D8%A7%D8%AA-%D8%B5%D9%86%D8%A7%D8%B9%D9%8A%D8%A9/%D9%85%D8%B6%D8%AE%D8%A7%D8%AA",
+      "snippet": "إختر مكان عام للقاء المُعلن مُصطحباً أحداً معك. خُذ الوقت الكافي لفحص المنتج أو السلعة المطلوبة بدقة، ومقارنتها بالوصف الوارد في المنشور، وبمُجرد التأكد من ذلك، يُمكنك متابعة عملية الشراء."
+    },
+    {
+      "title": "مضخات مياه ومعدات ضخ للبيع في عُمان | السوق المفتوح",
+      "url": "https://om.opensooq.com/ar/%D8%B4%D8%B1%D9%83%D8%A7%D8%AA-%D8%B5%D9%86%D8%A7%D8%B9%D9%8A%D8%A9/%D9%85%D8%B6%D8%AE%D8%A7%D8%AA",
+      "snippet": "شاهد أيضا في شركات ومعدات مضخات في عُمان معدات سباكة وأنظمة مياه أخرى في عُمان خزانات مياه في عُمان أنابيب ومواسير المياه والصرف في عُمان أجهزة تحلية وفلاتر مياه في عُمان صمامات ووصلات في ..."
+    },
+    {
+      "title": "جعفر شوب | مضخة ماء - جميع انواع المضخات",
+      "url": "https://www.jafarshop.com/collections/%D9%85%D8%B6%D8%AE%D8%A9-%D9%85%D8%A7%D8%A1",
+      "snippet": "مجموعة واسعة من مضخات المياه, المضخات الزراعية والمضخات المنزلية بالإضافة لخصومات تصل الى 70% تصفح مجموعة المضخات وقم بشراء مضخة الماء التي تناسب احتياجاتك, توصيل مجاني …"
+    },
+    {
+      "title": "مضخات متنوعة | توتال تولز",
+      "url": "https://www.total-jo.com/category/%D9%85%D8%B6%D8%AE%D8%A7%D8%AA-%D9%85%D8%AA%D9%86%D9%88%D8%B9%D8%A9",
+      "snippet": "قطاعات ومفاتيح مفكات ملازم ومرابط مضخات متنوعة مضخة غسيل 130 بار ماتور مع فاكيوم JOD 140.000JOD 125.000 أضف للطلب"
+    }
+  ]
+}

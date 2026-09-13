@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "circulus/qwen3-4b-int4-ov",
+  "slug": "circulus-qwen3-4b-int4-ov",
+  "author": "circulus",
+  "url": "https://huggingface.co/circulus/qwen3-4b-int4-ov",
+  "created_at": "2026-09-13T14:03:05.000Z",
+  "updated_at": "2026-09-13T14:04:04.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "openvino",
+    "qwen3",
+    "int4",
+    "circulus",
+    "ov-courseware",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2282826647,
+  "storage_human": "2.3 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Schabi (Schule am Bildschirm)",
+      "url": "https://www.schabi.ch/",
+      "snippet": "Schabi-Seiten vereinfachen den Schulalltag. Mit einem Klick finden die Schüler:innen alles, was sie für den Unterricht brauchen."
+    },
+    {
+      "title": "Schabi",
+      "url": "https://web.schabi.ch/login",
+      "snippet": "Onlineportal zur digitalen Unterstützung des Unterrichts"
+    },
+    {
+      "title": "Finde das Wort des Tages (Wordle deutsch) - Schabi (Schule am …",
+      "url": "https://web.schabi.ch/spielen/wordle",
+      "snippet": "Spielen Sie Wordle auf Deutsch und finden Sie das Wort des Tages mit Schabi, der digitalen Unterstützung für den Unterricht."
+    },
+    {
+      "title": "Training Kopfrechnen - Schabi (Schule am Bildschirm)",
+      "url": "https://www.schabi.ch/schule/kopfrechnen",
+      "snippet": "Trainieren Sie Kopfrechnen mit Schabi und verbessern Sie Ihre mathematischen Fähigkeiten durch verschiedene Übungen und …"
+    },
+    {
+      "title": "Darum Schabi - Schabi (Schule am Bildschirm)",
+      "url": "https://www-staging.schabi.ch/Info/DarumSchabi",
+      "snippet": "Die Lernapps von Schabi sind vielseitig und in deinem Abo inbegriffen. Lass deine Schülerinnen Wörter lernen, rechnen, trainieren …"
+    }
+  ]
+}

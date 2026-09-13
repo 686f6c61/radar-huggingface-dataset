@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "experimentalmachines/Qwen2.5-3B-ExecuTorch",
+  "slug": "experimentalmachines-qwen2-5-3b-executorch",
+  "author": "experimentalmachines",
+  "url": "https://huggingface.co/experimentalmachines/Qwen2.5-3B-ExecuTorch",
+  "created_at": "2026-09-13T12:23:52.000Z",
+  "updated_at": "2026-09-13T12:24:04.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "executorch",
+  "languages": [],
+  "tags": [
+    "executorch",
+    "android",
+    "on-device",
+    "openweights",
+    "xnnpack",
+    "text-generation",
+    "base_model:Qwen/Qwen2.5-3B",
+    "base_model:quantized:Qwen/Qwen2.5-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2057602176,
+  "storage_human": "2.1 GB",
+  "base_model": "Qwen/Qwen2.5-3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "new InPost addition to eBay Italy | Selling on eBay | eBay Italy",
+      "url": "https://community.ebay.it/forum/vendere-su-ebay-12/topic/nuova-aggiunta-inpost-a-ebay-italia-25452/",
+      "snippet": "hi everyone, ebay has added InPost as a shipping option. But when I look for the shipping rate tables, I can't find this one. I'd like to …"
+    },
+    {
+      "title": "Forum | eBay Italy",
+      "url": "https://community.ebay.it/forum/forum-6/",
+      "snippet": "May 9, 2026 · Community di eBay. Trova risposte, fai domande e mettiti in contatto con la nostra comunità di utenti ed esperti."
+    },
+    {
+      "title": "eBay France",
+      "url": "https://communaute.ebay.fr/forum/tag/usa/",
+      "snippet": "Communauté eBay. Les forums constituent l’un des meilleurs endroits pour trouver des astuces pour acheter et vendre sur le site eBay."
+    },
+    {
+      "title": "Discussion forums | eBay France",
+      "url": "https://communaute.ebay.fr/forum/forums-de-discussion-17/",
+      "snippet": "May 9, 2026 · Forums are one of the best places to find tips for buying and selling on eBay."
+    },
+    {
+      "title": "Search Results | eBay UK",
+      "url": "https://community.ebay.co.uk/search/?q=list%2016032",
+      "snippet": "Your eBay Community. Find answers to pressing questions, connect with members, and get advice from expert sellers."
+    }
+  ]
+}

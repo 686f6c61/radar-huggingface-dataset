@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Donnyed/flice-flywire",
+  "slug": "donnyed-flice-flywire",
+  "author": "Donnyed",
+  "url": "https://huggingface.co/Donnyed/flice-flywire",
+  "created_at": "2026-09-13T14:05:12.000Z",
+  "updated_at": "2026-09-13T14:08:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "graph",
+    "connectome",
+    "language-model",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 370180026,
+  "storage_human": "370 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Great Escapes - Ihr Spezialist für individuelle Reisen weltweit",
+      "url": "https://great-escapes.de/",
+      "snippet": "Great Escapes - Ihr Reisebüro mit Kompetenz für weltweite Individualreisen. Engagiert und mit Herz zu Ihrem Traumurlaub!"
+    },
+    {
+      "title": "Secret Escapes",
+      "url": "https://www.secretescapes.de/?msockid=3ac3d33211e764a70955c4e1105165d7",
+      "snippet": "Secret Escapes Secret Escapes ist eine exklusive Plattform für Mitglieder, die besondere Angebote für Luxushotels und Reisen in …"
+    },
+    {
+      "title": "Outdoor Clothing for Unlimited Adventures - Great Escapes",
+      "url": "https://www.greatescapes.it/en/content/4-great-escapes-about-us",
+      "snippet": "Discover the story of Great Escapes, the outdoor clothing brand designed for those who love to live adventures in the great outdoors. …"
+    },
+    {
+      "title": "Collection: Great Escapes. TASCHEN",
+      "url": "https://www.taschen.com/en/collection/great-escapes/",
+      "snippet": "Explore TASCHEN's Great Escapes series — beautifully photographed hotel and retreat books spanning Italy, Greece, Africa, the …"
+    },
+    {
+      "title": "Clothing for Mountaineering, Climbing, Trekking and Hiking - Great Escapes",
+      "url": "https://www.greatescapes.it/en/",
+      "snippet": "At Great Escapes, we love stories of those who experience mountains and adventure not just as an escape from daily life, but as a …"
+    }
+  ]
+}

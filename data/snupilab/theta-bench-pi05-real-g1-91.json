@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "snupilab/theta-bench-pi05-real-g1-91",
+  "slug": "snupilab-theta-bench-pi05-real-g1-91",
+  "author": "snupilab",
+  "url": "https://huggingface.co/snupilab/theta-bench-pi05-real-g1-91",
+  "created_at": "2026-09-13T17:03:48.000Z",
+  "updated_at": "2026-09-13T17:03:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "robotics",
+    "theta-bench",
+    "real-g1",
+    "en",
+    "dataset:snupilab/theta-bench-teleop",
+    "base_model:snupilab/theta-bench-pi05-sim-3003",
+    "base_model:finetune:snupilab/theta-bench-pi05-sim-3003",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "snupilab/theta-bench-pi05-sim-3003",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "永恒世界简体中文翻译补丁 by Dickenjoyer69",
+      "url": "https://dickenjoyer69.itch.io/eternum-simplified-chinese-patch",
+      "snippet": "永恒世界简体中文翻译补丁 前言： 大家好，我是《Eternum》的简体中文版译者。 我会在游戏更新后制作中文版，并以补丁的形式发 …"
+    },
+    {
+      "title": "永恒世界- [0.9]-汉化发布 - 永恒世界简体中文翻译补丁 by Dickenjoyer69",
+      "url": "https://dickenjoyer69.itch.io/eternum-simplified-chinese-patch/devlog/1327609/-09-",
+      "snippet": "Jan 25, 2026 · 关于这次的安卓版，分为了压缩版和未压缩版两个版本，压缩版体积小，并且安装即玩，比较方便，缺点在于图片和视 …"
+    },
+    {
+      "title": "请大家提防假冒网站，避免受骗 - 永恒世界简体中文翻译补丁 by …",
+      "url": "https://dickenjoyer69.itch.io/eternum-simplified-chinese-patch/devlog/933922/post",
+      "snippet": "大家好。 最近我发现网上出现了谎称是“永恒世界官方中文网站”的假冒网站，意图将玩家引流至其他需要付费下载游戏的网站。 正如 …"
+    },
+    {
+      "title": "永恒世界 Eternum v0.9 中文资料站｜版本信息与攻略入口",
+      "url": "https://yonghengshijie.com/",
+      "snippet": "Dec 28, 2025 · 永恒世界 Eternum v0.9 中文资料站，基于 Caribdis itch.io 公开日志整理版本信息、更新重点、平台入口与常见问题； …"
+    },
+    {
+      "title": "关于即将发布的0.9版本 - 永恒世界简体中文翻译补丁 by Dickenjoyer69",
+      "url": "https://dickenjoyer69.itch.io/eternum-simplified-chinese-patch/devlog/1191127/09",
+      "snippet": "相信许多关注永恒世界的朋友们已经知道，作者Caribdis已宣布0.9版本最早将于北京时间12月27日凌晨0点发布给最高等级的赞助者们 …"
+    }
+  ]
+}

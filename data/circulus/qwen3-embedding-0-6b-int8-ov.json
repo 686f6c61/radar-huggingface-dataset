@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "circulus/qwen3-embedding-0.6b-int8-ov",
+  "slug": "circulus-qwen3-embedding-0-6b-int8-ov",
+  "author": "circulus",
+  "url": "https://huggingface.co/circulus/qwen3-embedding-0.6b-int8-ov",
+  "created_at": "2026-09-13T14:04:06.000Z",
+  "updated_at": "2026-09-13T14:04:11.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "openvino",
+    "qwen3",
+    "int8",
+    "circulus",
+    "ov-courseware",
+    "base_model:Qwen/Qwen3-Embedding-0.6B",
+    "base_model:finetune:Qwen/Qwen3-Embedding-0.6B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 616663102,
+  "storage_human": "617 MB",
+  "base_model": "Qwen/Qwen3-Embedding-0.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mountain Bike News, Photos, Videos & Events | Pinkbike",
+      "url": "https://www.pinkbike.com/",
+      "snippet": "Pinkbike is the homepage of mountain biking. Stay updated with the latest news, reviews, videos, buyer's guides and racing results. …"
+    },
+    {
+      "title": "Channel or account terminations - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/2802168?hl=en",
+      "snippet": "Check status of a termination appeal Open YouTube Studio. View confirmation of your appeal submission, and check your appeal’s …"
+    },
+    {
+      "title": "Can’t access YouTube - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/6159254?hl=en",
+      "snippet": "If you see an error page instead of YouTube when going to youtube.com, it could be for one of the following reasons: It could be an …"
+    },
+    {
+      "title": "YT Industries Resumes Business in Canada - Pinkbike",
+      "url": "https://www.pinkbike.com/news/yt-industries-resumes-business-in-canada.html",
+      "snippet": "May 6, 2026 · YT Industries is coming back to Canada. Following its recent return to the UK, the German direct-to-consumer brand is …"
+    },
+    {
+      "title": "Ayuda de YouTube",
+      "url": "https://support.google.com/youtube/?hl=es-419",
+      "snippet": "Aprende y comparte en la comunidad de YouTube Comunícate con los expertos de la comunidad y otros usuarios en el foro de …"
+    }
+  ]
+}

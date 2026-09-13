@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "locht131/gr00t_letter_align_1hand_quat_s30k_bs32_rot_aug",
+  "slug": "locht131-gr00t_letter_align_1hand_quat_s30k_bs32_rot_aug",
+  "author": "locht131",
+  "url": "https://huggingface.co/locht131/gr00t_letter_align_1hand_quat_s30k_bs32_rot_aug",
+  "created_at": "2026-09-13T17:14:05.000Z",
+  "updated_at": "2026-09-13T17:15:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gr00t_n1_5",
+    "robotics",
+    "manipulation",
+    "aloha",
+    "gr00t",
+    "vision-language-action",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2724163520,
+  "parameters_human": "2.72B",
+  "storage_bytes": 7586072344,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kleinanzeigen – früher eBay Kleinanzeigen. Anzeigen gratis inserieren ...",
+      "url": "https://www.kleinanzeigen.de/?msockid=3a794377900c61d41e2854a491e46053",
+      "snippet": "Kostenlose Anzeigen aufgeben mit Kleinanzeigen. Gebraucht oder Neu, Privat oder Gewerbe - Jetzt gratis inserieren auf …"
+    },
+    {
+      "title": "Kleinanzeigen für Immobilien | kleinanzeigen.de",
+      "url": "https://www.kleinanzeigen.de/s-immobilien/c195?msockid=3a794377900c61d41e2854a491e46053",
+      "snippet": "Kleinanzeigen: Immobilien kaufen oder verkaufen - Jetzt finden oder inserieren! - kleinanzeigen.de"
+    },
+    {
+      "title": "Kleinanzeigen Help Center",
+      "url": "https://hilfe.kleinanzeigen.de/hc/de",
+      "snippet": "Sicherheit In unserer Sicherheits-Ecke findest du alles, was du brauchst, um entspannt auf Kleinanzeigen zu handeln. Egal ob du ..."
+    },
+    {
+      "title": "Nutzer bewerten – Kleinanzeigen Help Center",
+      "url": "https://hilfe.kleinanzeigen.de/hc/de/articles/17106550059164-Nutzer-bewerten",
+      "snippet": "Wir glauben daran, dass Nutzer-Bewertungen eine Entscheidungshilfe bieten. Hier erklären wir dir, wie sie bei Kleinanzeigen …"
+    },
+    {
+      "title": "Kleinanzeigen Themen – Tipps, Infos & Ratgeber",
+      "url": "https://themen.kleinanzeigen.de/",
+      "snippet": "Alles rund um Kleinanzeigen: Tipps zum Kaufen & Verkaufen, Infos zu Immobilien, Autos, Sicherheit, Nachhaltigkeit und vieles mehr …"
+    }
+  ]
+}

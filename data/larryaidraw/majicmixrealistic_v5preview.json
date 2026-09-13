@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LarryAIDraw/majicmixRealistic_v5Preview",
+  "slug": "larryaidraw-majicmixrealistic_v5preview",
+  "author": "LarryAIDraw",
+  "url": "https://huggingface.co/LarryAIDraw/majicmixRealistic_v5Preview",
+  "created_at": "2026-09-13T15:47:24.000Z",
+  "updated_at": "2026-09-13T16:07:45.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2400040290,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Immer noch kein Live-Programm in ARD Mediathek mit IPTV Receiver ...",
+      "url": "https://community.sky.de/conversations/sky-q-sky-q-mini/immer-noch-kein-live-programm-in-ard-mediathek-mit-iptv-receiver/68366883170e725f316d35fc",
+      "snippet": "Jun 13, 2024 · Hallo,ich habe jetzt einen Sky Q IPTV Receiver. Ich würde gerne in der ARD Mediathek das Live-Programm …"
+    },
+    {
+      "title": "Sky Stream - Ton asynchron zum Bild - Sky Community",
+      "url": "https://community.sky.de/conversations/sky-stream/sky-stream-ton-asynchron-zum-bild/683679ae170e725f319d982d",
+      "snippet": "May 2, 2025 · Hallo,Ich habe heute die Sky Stream Box erhalten und eingerichtet. Dazu aktuellstes Softwareupdate heruntergeladen …"
+    },
+    {
+      "title": "CHIP Forum",
+      "url": "https://forum.chip.de/discussion/1897348/amazon-fire-tv-stick-2-generation-kein-live-tv-ard-app",
+      "snippet": ""
+    },
+    {
+      "title": "CHIP Forum",
+      "url": "https://forum.chip.de/discussion/1711559/ard-live-stream-qualitaet-einstellen",
+      "snippet": ""
+    },
+    {
+      "title": "Livestreams über Q Receiver - Sky Community",
+      "url": "https://community.sky.de/conversations/sky-q-sky-q-mini/livestreams-%C3%BCber-q-receiver/68366a99170e725f31908ebd",
+      "snippet": "Jul 24, 2024 · Kann man die Livestreams von ARD und ZDF&nbsp; über den Q Reseiver abspielen. Bei mir klappt es nicht. Habe …"
+    }
+  ]
+}

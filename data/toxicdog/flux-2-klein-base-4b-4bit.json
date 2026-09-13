@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "toxicdog/flux.2-klein-base-4b-4bit",
+  "slug": "toxicdog-flux-2-klein-base-4b-4bit",
+  "author": "toxicdog",
+  "url": "https://huggingface.co/toxicdog/flux.2-klein-base-4b-4bit",
+  "created_at": "2026-09-13T15:47:39.000Z",
+  "updated_at": "2026-09-13T15:47:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "mlx-gen",
+  "languages": [],
+  "tags": [
+    "mlx-gen",
+    "safetensors",
+    "mlx",
+    "mflux",
+    "apple-silicon",
+    "4-bit",
+    "flux",
+    "flux2",
+    "text-to-image",
+    "base_model:black-forest-labs/FLUX.2-klein-base-4B",
+    "base_model:finetune:black-forest-labs/FLUX.2-klein-base-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4619599193,
+  "storage_human": "4.6 GB",
+  "base_model": "black-forest-labs/FLUX.2-klein-base-4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thomas' IFA Garage",
+      "url": "https://thomas-ifa-garage.de/",
+      "snippet": "Entdecke hochwertige Ersatzteile & Tuning-Komponenten für Trabant, Wartburg & Wabant. Thomas' IFA Garage bietet dir alles für …"
+    },
+    {
+      "title": "Shop - Thomas' IFA Garage",
+      "url": "https://thomas-ifa-garage.de/shop/",
+      "snippet": "An dieser Stelle kannst du Produkte in diesem Shop durchsuchen. weitere Produkte laden..."
+    },
+    {
+      "title": "Shop Home - Thomas' IFA Garage",
+      "url": "https://thomas-ifa-garage.de/shop-home/",
+      "snippet": "Daten Nulandtplatz 8 D- 06217 Merseburg info@thomas-ifa-garage.de +49 152 / 02 51 36 77 YoutubeInstagramTiktok Shop"
+    },
+    {
+      "title": "- Thomas‘ IFA Garage - - YouTube",
+      "url": "https://www.youtube.com/channel/UCvRYGKElQfKRC2t5xe45moQ",
+      "snippet": "Hallo zusammen und herzlich willkommen auf meinem Kanal,hier findet Ihr (hoffentlich) nützliche und unterhaltsame Videos und …"
+    },
+    {
+      "title": "Thomas´ IFA Garage - Kleinanzeigen Pro",
+      "url": "https://www.kleinanzeigen.de/pro/Thomas-IFA-Garage?msockid=06fa10fb141b6fd40dc00728159d6ee0",
+      "snippet": "Jul 13, 2020 · Sportlenkrad-Nabe für Trabant 601 - auch passend für Trabant 1.1 und Trabis mit alter Lenksäule. CNC gefertigt aus …"
+    }
+  ]
+}

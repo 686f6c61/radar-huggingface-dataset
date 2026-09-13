@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "INCModel3/DeepSeek-V4.1-Flash-W4A16",
+  "slug": "incmodel3-deepseek-v4-1-flash-w4a16",
+  "author": "INCModel3",
+  "url": "https://huggingface.co/INCModel3/DeepSeek-V4.1-Flash-W4A16",
+  "created_at": "2026-09-13T14:14:00.000Z",
+  "updated_at": "2026-09-13T15:07:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v41",
+    "text-generation",
+    "image-text-to-text",
+    "license:mit",
+    "endpoints_compatible",
+    "4-bit",
+    "auto-round",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 295268445394,
+  "parameters_human": "295.27B",
+  "storage_bytes": 543827143179,
+  "storage_human": "543.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Колесо обозрения «Солнце Москвы» - vdnh.ru",
+      "url": "https://vdnh.ru/places/koleso-obozreniya-solntse-moskvy/",
+      "snippet": "Колесо является пятым по высоте в мире и самым высоким в Европе. Вам точно понравится! Колесо обозрения открылось у …"
+    },
+    {
+      "title": "Колесо обозрения на ВДНХ в Москве — цена билета, высота, …",
+      "url": "https://moscowferriswheel.com/",
+      "snippet": "Колесо обозрения \"Солнце Москвы\" на ВДНХ: высота, где находится, время работы в 2026 году, советы по посещению, …"
+    },
+    {
+      "title": "Колесо обозрения «Солнце Москвы» на ВДНХ",
+      "url": "https://moskultura.ru/mesta/koleso-obozreniya-solncze-moskvy-na-vdnh",
+      "snippet": "Jun 24, 2026 · Самое большое колесо обозрения в Москве, как и солнечный круг, видно на фоне неба отовсюду, при этом …"
+    },
+    {
+      "title": "«Солнце Москвы» – новая достопримечательность столицы",
+      "url": "https://moscow-sun.ru/",
+      "snippet": "Попасть сюда можно как через центральный вход в комплексе, так и со стороны ВДНХ. Отсюда открывается впечатляющий …"
+    },
+    {
+      "title": "Новое колесо обозрения на ВДНХ в Москве: режим работы 2025, …",
+      "url": "https://moscowbigwheel.ru/",
+      "snippet": "Новый аттракцион в Москве стал самым крупным колесом обозрения в России и в Европе. С него открывается изумительный …"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Asilarkness/flybrain-lm",
+  "slug": "asilarkness-flybrain-lm",
+  "author": "Asilarkness",
+  "url": "https://huggingface.co/Asilarkness/flybrain-lm",
+  "created_at": "2026-09-13T14:05:32.000Z",
+  "updated_at": "2026-09-13T15:34:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 81642733,
+  "parameters_human": "81.6M",
+  "storage_bytes": 5105308614,
+  "storage_human": "5.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/index.php/?lang=ar",
+      "snippet": "Connect with friends, family, and communities on Facebook. Share updates, photos, and more to stay connected."
+    },
+    {
+      "title": "فيسبوك",
+      "url": "https://m.me/r.php?locale=ar_AR",
+      "snippet": "إنشاء حساب في فيسبوك تسجيل الدخول Messenger Facebook Lite فيديو الأماكن الألعاب Marketplace Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta …"
+    },
+    {
+      "title": "Facebook - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.facebook.katana&hl=ar",
+      "snippet": "سواء كنت تشتري أغراض مستعملة، أو تعرض مقطع ريلز للمجموعة التي يظهر لها، أو تُشارك الضحكات على صور ممتعة أُعيد تصورها بواسطة الذكاء الاصطناعي، فإن فيسبوك يساعدك على تحقيق …"
+    },
+    {
+      "title": "Log Into Facebook",
+      "url": "https://secure.facebook.com/login/",
+      "snippet": "Log into Facebook to start sharing and connecting with your friends, family, and people you know."
+    }
+  ]
+}

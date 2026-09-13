@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "toxicdog/Qwen2.5VL-7B-Instruct-GGUF",
+  "slug": "toxicdog-qwen2-5vl-7b-instruct-gguf",
+  "author": "toxicdog",
+  "url": "https://huggingface.co/toxicdog/Qwen2.5VL-7B-Instruct-GGUF",
+  "created_at": "2026-09-13T15:48:41.000Z",
+  "updated_at": "2026-09-13T15:48:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "zh",
+    "base_model:gaoqie/Qwen2.5VL-7B-Instruct-fire",
+    "base_model:quantized:gaoqie/Qwen2.5VL-7B-Instruct-fire",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 70357166400,
+  "storage_human": "70.4 GB",
+  "base_model": "gaoqie/Qwen2.5VL-7B-Instruct-fire",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to get Google Photos to load the full image without zooming in?",
+      "url": "https://support.google.com/photos/thread/465949/how-to-get-google-photos-to-load-the-full-image-without-zooming-in?hl=en",
+      "snippet": "Oct 25, 2018 · The following 2 words are different concept, \"full resolution\" and \" uncompressed\". 1st He asked how to see the FULL …"
+    },
+    {
+      "title": "Multiple Displays - Change Settings and Layout in Windows 10",
+      "url": "https://www.tenforums.com/tutorials/21084-multiple-displays-change-settings-layout-windows-10-a.html",
+      "snippet": "May 1, 2021 · How to Change Settings and Layout for Multiple Displays in Windows 10 Quite a many of us have multiple displays …"
+    },
+    {
+      "title": "Clear cache & cookies - Computer - Google Account Help",
+      "url": "https://support.google.com/accounts/answer/32050?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "On your computer, open Chrome. At the top right, select More Delete browsing data. Choose a time range, like Last hour or All time. …"
+    },
+    {
+      "title": "Open Control Panel in Windows 10 | Tutorials - Ten Forums",
+      "url": "https://www.tenforums.com/tutorials/2691-open-control-panel-windows-10-a.html",
+      "snippet": "Mar 26, 2026 · Open Control Panel from Full Screen Start menu All Apps 1 Open the full screen Start menu . (see screenshot below) …"
+    },
+    {
+      "title": "Bug Fullscreen Android - Comunidade Google Chrome",
+      "url": "https://support.google.com/chrome/thread/388667094/bug-fullscreen-android?hl=pt-BR",
+      "snippet": "Bug Fullscreen Android - Comunidade Google Chrome false"
+    }
+  ]
+}

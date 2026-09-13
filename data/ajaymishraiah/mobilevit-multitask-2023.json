@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ajaymishraiah/mobilevit-multitask-2023",
+  "slug": "ajaymishraiah-mobilevit-multitask-2023",
+  "author": "ajaymishraiah",
+  "url": "https://huggingface.co/ajaymishraiah/mobilevit-multitask-2023",
+  "created_at": "2026-09-13T18:23:03.000Z",
+  "updated_at": "2026-09-13T18:23:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "MobileViT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/en/model_doc/mobilevit",
+      "snippet": "MobileViT is a lightweight vision transformer for mobile devices that merges CNNs’s efficiency and inductive biases with transformers global context modeling."
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "如何看待美国情报机构联合发布报告称DeepSeek、月之暗面等中国6家AI公司涉嫌「蒸馏」？"
+    },
+    {
+      "title": "MobileViT - Kornia",
+      "url": "https://kornia.readthedocs.io/en/latest/models/vit_mobile.html",
+      "snippet": "MobileViT: Light-weight, General-purpose, and Mobile-friendly Vision Transformer · Abstract: Light-weight convolutional neural networks (CNNs) are the de-facto for mobile vision tasks. Their spatial inductive biases allow them to learn representations with fewer parameters across different ..."
+    },
+    {
+      "title": "Стихотворение какого поэта звучит в ...",
+      "url": "https://www.bolshoyvopros.ru/questions/1085934-stihotvorenie-kakogo-poeta-zvuchit-v-kinokomedii-operacija--y-.html",
+      "snippet": "Известный фильм \"Операция \"Ы\" и другие приключения Шурика\" состоит из трех частей. В части \"Наваждение\" Шурик …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "snupilab/theta-bench-psi0-real-g1-91",
+  "slug": "snupilab-theta-bench-psi0-real-g1-91",
+  "author": "snupilab",
+  "url": "https://huggingface.co/snupilab/theta-bench-psi0-real-g1-91",
+  "created_at": "2026-09-13T17:03:46.000Z",
+  "updated_at": "2026-09-13T17:03:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "robotics",
+    "theta-bench",
+    "real-g1",
+    "en",
+    "dataset:snupilab/theta-bench-teleop",
+    "base_model:snupilab/theta-bench-psi0-sim-3003",
+    "base_model:finetune:snupilab/theta-bench-psi0-sim-3003",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "snupilab/theta-bench-psi0-sim-3003",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home | Powerball",
+      "url": "https://www.powerball.com/",
+      "snippet": "1 day ago · The official Powerball website. Get winning numbers, watch the draw show, and check if you have a winning ticket."
+    },
+    {
+      "title": "Previous Results | Powerball",
+      "url": "https://www.powerball.com/previous-results?gc=powerball",
+      "snippet": "4 days ago · The official Powerball website. View draw results for Powerball, Double Play, Lotto America and 2by2. Search previous …"
+    },
+    {
+      "title": "Shop Powerball®",
+      "url": "https://shop.powerball.com/",
+      "snippet": "It's America's Game! For 30 years, Powerball® has captivated the world with its record-setting grand prizes and life-changing winner …"
+    },
+    {
+      "title": "Powerball Report For Saturday, September 12, 2026",
+      "url": "https://cdn.powerball.com/v01/media/powerball.pdf",
+      "snippet": "Party Lotteries are authorized to pay the above prize amounts in accordance with MUSL rules."
+    },
+    {
+      "title": "Double Play | Powerball",
+      "url": "https://www.powerball.com/double-play",
+      "snippet": "1 day ago · Play your Powerball numbers again in the Double Play drawing! Double Play offers a top cash prize of $10 million. Are …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "walltch/nlp-esgi-td2-camembert-ner",
+  "slug": "walltch-nlp-esgi-td2-camembert-ner",
+  "author": "walltch",
+  "url": "https://huggingface.co/walltch/nlp-esgi-td2-camembert-ner",
+  "created_at": "2026-09-13T11:25:10.000Z",
+  "updated_at": "2026-09-13T11:25:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "camembert",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110032898,
+  "parameters_human": "110.0M",
+  "storage_bytes": 440155504,
+  "storage_human": "440 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wie kann ich die Telekom Mail App auf meinem PC installieren",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/wie-kann-ich-die-telekom-mail-app-auf-meinem-pc-installieren/668720314ae73561daf5c926",
+      "snippet": "Ich habe die Telekom Mail App auf meinem Tablett undmöchte sie aber auch auf meinem PC installieren. Wie mache ich das?"
+    },
+    {
+      "title": "T-Online 6.0 -Deinstallation | Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/conversations/sonstiges/t-online-60-deinstallation/6685d8394ae73561dad71f9f",
+      "snippet": "T-Online 6.0 läßt sich über Systemsteuerung\\Software\\T-Online 6.0\\Entfernen nicht deinstallieren. Fehler: \"Die Support-Datei für die …"
+    },
+    {
+      "title": "Ändern des angezeigten Absendername | Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/%C3%A4ndern-des-angezeigten-absendername/6685e9384ae73561daa7909a",
+      "snippet": "Hallo miteinander, ich arbeite mit Outlook und habe eine private E-Mail Adresse Vorname.Nachname@t-online.de Weiterhin habe ich …"
+    },
+    {
+      "title": "‎Login Homepage-Center | Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/conversations/homepage-shop/login-homepage-center/668919dc4ae73561dad777ef",
+      "snippet": "Jul 14, 2023 · Der bisherige LogIn für die Homepage-Statistik funktioniert nicht mehr, s. beil. Bildschirmfoto.Wie komme ich an die …"
+    },
+    {
+      "title": "‎mehrfachauthentifizierung | Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/mehrfachauthentifizierung/69c93a98821bf972420c77eb",
+      "snippet": "halloer eer ein fenster&nbsp;wenn ich mich jetzt bei tonline anmelde erscheint immer ein fenster mehrfachauthentifizierung jetzt oder …"
+    }
+  ]
+}

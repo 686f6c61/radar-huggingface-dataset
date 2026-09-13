@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "FemiBal0517/retrieval",
+  "slug": "femibal0517-retrieval",
+  "author": "FemiBal0517",
+  "url": "https://huggingface.co/FemiBal0517/retrieval",
+  "created_at": "2026-09-13T16:06:21.000Z",
+  "updated_at": "2026-09-13T16:06:26.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "教你怎么输入“√ ”和“×” word怎么打钩/打叉-百度经验",
+      "url": "https://jingyan.baidu.com/article/48b37f8d0783821a646488fa.html",
+      "snippet": "Oct 25, 2017 · 对于使用Word的人来说，许多问题是需要不断学习才能解决的，而Word中的功能更是需要一个长时间的经验积累才能 …"
+    },
+    {
+      "title": "怎么输入带圈数字①②③④⑤⑧㊸㊹㊺㊻㊼㊽㊾㊿-百度经验",
+      "url": "https://jingyan.baidu.com/article/a3aad71a2b7a69b1fb009630.html",
+      "snippet": "May 16, 2019 · 显然上面的方式只能输入0-20，但是更高的数字却不能输入了，怎么办呢， 更复杂的方式我们也不想学了， 这个一个 …"
+    },
+    {
+      "title": "如何打•？ - 知乎",
+      "url": "https://www.zhihu.com/question/21040260",
+      "snippet": "如何在输入法里输入这个符号？Google了很多发现都不对"
+    },
+    {
+      "title": "Word如何实现同一页既有一列分栏也有两页分栏？ - 知乎",
+      "url": "https://www.zhihu.com/question/581516731",
+      "snippet": "Jan 31, 2023 · 当我们用word制作海报或者杂志页面时，经常会用到word文档中的“分栏”功能进行排版，那么如对文档进行分栏设置 …"
+    },
+    {
+      "title": "在 Word 文档中添加下划线（横线）的几种方法-百度经验",
+      "url": "https://jingyan.baidu.com/article/676629972cdae915d41b8418.html",
+      "snippet": "Feb 19, 2020 · 在 Word 文档中添加下划线（横线）的几种方法,我们在编辑Word文档时，遇到需要填写的地方，往往需要加一条横线 …"
+    }
+  ]
+}

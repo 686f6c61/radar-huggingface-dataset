@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Nikhitha123/ppo-SnowballTarget",
+  "slug": "nikhitha123-ppo-snowballtarget",
+  "author": "Nikhitha123",
+  "url": "https://huggingface.co/Nikhitha123/ppo-SnowballTarget",
+  "created_at": "2026-09-13T11:39:55.000Z",
+  "updated_at": "2026-09-13T11:40:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "SnowballTarget",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SnowballTarget",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4505137,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fast & Furious 11 - اليوم العربي",
+      "url": "https://arabyday.com/fast-furious-11/",
+      "snippet": "كان من المقرر عرض “Fast & Furious 11” في 4 أبريل 2025، ولكن تم تأجيله إلى 22 يونيو 2026 في الولايات المتحدة. هذا التاريخ يتزامن مع مرور 25 عامًا على إصدار الجزء الأول من …"
+    },
+    {
+      "title": "فيلم Fast & Furious 11 سيكون الأخير في السلسلة",
+      "url": "https://me.ign.com/ar/movies/145412/news/fylm-fast-furious-11-sykwn-lkhyr-fy-lslsl",
+      "snippet": "وفقاً لتقرير من The Hollywood Reporter ، سيقوم المخرج جاستين لين بإخراج الفيلمين العاشر والحادي عشر من أفلام سلسلة Fast and Furious الرئيسية، وأكد أن هذين الفيلمين …"
+    },
+    {
+      "title": "FAST & FURIOUS 11 (2026) - First Trailer - YouTube",
+      "url": "https://www.youtube.com/watch?v=42sSzZ3aAvw",
+      "snippet": "Dec 23, 2025 · This FAN-MADE trailer imagines the high-octane world of Fast & Furious 11 (also known as Fast X: Part 2), …"
+    },
+    {
+      "title": "Filme - Fast & Furious 11 (2025) التقييم: 5/5 ... - Facebook",
+      "url": "https://www.facebook.com/61566934244008/posts/-fast-furious-11-2025-%D8%A7%D9%84%D8%AA%D9%82%D9%8A%D9%8A%D9%85-55%D9%81%D9%8A%D9%84%D9%85-%D8%A7%D9%84%D8%B3%D8%B1%D8%B9%D8%A9-%D9%88%D8%A7%D9%84%D8%BA%D8%B6%D8%A8-11-2025-%D9%87%D9%88-%D8%A7%D9%84%D9%81%D8%B5%D9%84-%D8%A7%D9%84%D8%A3%D8%AE%D9%8A%D8%B1-%D8%A7%D9%84%D9%85%D8%B1%D8%AA/122145958034564474/",
+      "snippet": "Mar 23, 2025 · 🎬 Fast & Furious 11 )2025 ( التقييم: 5/5 فيلم \"السرعة والغضب 11\" (2025) هو الفصل الأخير المرتقب من سلسلة أفلام \"السرعة والغضب\"، حيث يجمع طاقم العمل …"
+    },
+    {
+      "title": "النجم العالمي فين ديزل يكشف تفاصيل \"Fast and Furious 11\"",
+      "url": "https://www.eremnews.com/entertainment/2nah1er",
+      "snippet": "أعلن النجم العالمي فين ديزل ، بطل سلسلة أفلام Fast and Furious، عن موعد طرح الجزء الحادي عشر من السلسلة الشهيرة، إلى جانب كشفه عن 3 مفاجآت مهمة ستُعيد السلسلة إلى جذورها، وتثير …"
+    }
+  ]
+}

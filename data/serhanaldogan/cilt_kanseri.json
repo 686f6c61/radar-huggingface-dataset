@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "serhanaldogan/cilt_kanseri",
+  "slug": "serhanaldogan-cilt_kanseri",
+  "author": "serhanaldogan",
+  "url": "https://huggingface.co/serhanaldogan/cilt_kanseri",
+  "created_at": "2026-09-13T15:02:34.000Z",
+  "updated_at": "2026-09-13T15:04:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 165524056,
+  "storage_human": "166 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hoe maak je gebruik van webmail? - Infracom",
+      "url": "https://www.infracom.nl/helpdesk/40/infracommail/137/hoe-maak-je-gebruik-van-webmail",
+      "snippet": "Maak je gebruik van Infracom Mail of heb je een standaard mailbox bij een hostingpakket? Bekijk je webmail dan via …"
+    },
+    {
+      "title": "Infracom Mail (POP3/IMAP) | Infracom Online Helpdesk",
+      "url": "https://www.infracom.nl/helpdesk/40/infracommail",
+      "snippet": "Vind snel antwoorden op veelgestelde vragen over mail, cloud, websites, telefonie, microsoft 365, facturatie, en meer!"
+    },
+    {
+      "title": "Email with Hosted Exchange - infracom.nl",
+      "url": "https://www.infracom.nl/en/cloud/email",
+      "snippet": "Infracom’s Hosted Exchange Email works seamlessly with our mobile phone subscriptions, but also with our cloud workspace, and is …"
+    },
+    {
+      "title": "Login - Infinity - InfraCom",
+      "url": "https://infinity.infracom.se/login",
+      "snippet": "After you've logged in we'll activate \"Google Analytics\" cookies for statistical reasons."
+    },
+    {
+      "title": "InfraCom - Inloggning",
+      "url": "https://rsoffice.infracom.se/",
+      "snippet": "Inloggning Inloggning"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "menyeg2/tb-model",
+  "slug": "menyeg2-tb-model",
+  "author": "menyeg2",
+  "url": "https://huggingface.co/menyeg2/tb-model",
+  "created_at": "2026-09-13T14:49:28.000Z",
+  "updated_at": "2026-09-13T14:49:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Der 1. Ritter – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Der_1._Ritter",
+      "snippet": "Auf dem Sterbebett nennt Arthur Lancelot seinen treuesten und Ersten Ritter und gibt Schwert und Reich an ihn mit den Worten, die …"
+    },
+    {
+      "title": "Der erste Ritter (1995) - IMDb",
+      "url": "https://www.imdb.com/de/title/tt0113071/",
+      "snippet": "Der erste Ritter: Regie: Jerry Zucker Mit Sean Connery, Richard Gere, Julia Ormond, Ben Cross Lancelot verliebt sich in Guinevere, …"
+    },
+    {
+      "title": "Der Erste Ritter - Film 1995 - FILMSTARTS.de",
+      "url": "https://www.filmstarts.de/kritiken/12995.html",
+      "snippet": "Sep 7, 1995 · Der Erste Ritter ist ein Film von Jerry Zucker mit Richard Gere, Sean Connery. Synopsis: Die Ländereien der Lady …"
+    },
+    {
+      "title": "Der erste Ritter | Film 1995 | Moviepilot",
+      "url": "https://www.moviepilot.de/movies/der-erste-ritter",
+      "snippet": "Sep 7, 1995 · Der erste Ritter ist ein Ritterfilm aus dem Jahr 1995 von Jerry Zucker mit Richard Gere und Julia Ormond."
+    },
+    {
+      "title": "Der 1. Ritter - Stream: Jetzt Film online anschauen - JustWatch",
+      "url": "https://www.justwatch.com/de/Film/Der-erste-Ritter",
+      "snippet": "Wo und wie heute \"Der 1. Ritter\" im Stream online auf Netflix, Prime Video, Disney+ uvm. schauen - inklusive 4K & Kostenlos Option!"
+    }
+  ]
+}

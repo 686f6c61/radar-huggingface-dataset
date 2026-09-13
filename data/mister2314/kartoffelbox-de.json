@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mister2314/kartoffelbox-de",
+  "slug": "mister2314-kartoffelbox-de",
+  "author": "mister2314",
+  "url": "https://huggingface.co/mister2314/kartoffelbox-de",
+  "created_at": "2026-09-13T14:45:18.000Z",
+  "updated_at": "2026-09-13T14:45:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "chatterbox",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "chatterbox",
+    "text-to-speech",
+    "tts",
+    "german",
+    "kartoffel",
+    "speech generation",
+    "voice-cloning",
+    "de",
+    "base_model:ResembleAI/chatterbox",
+    "base_model:finetune:ResembleAI/chatterbox",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3241025842,
+  "storage_human": "3.2 GB",
+  "base_model": "ResembleAI/chatterbox",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.instagram.android&hl=en-US",
+      "snippet": "- Turn your life into a movie and discover short, entertaining videos on Instagram with Reels. - Customize your posts with exclusive …"
+    },
+    {
+      "title": "Instagram - Meta",
+      "url": "https://www.meta.com/instagram/",
+      "snippet": "We want Instagram to be a place where people can be inspired every day. We foster a safe and welcoming community where people …"
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=tr",
+      "snippet": "Bir hesap oluştur veya Instagram'da giriş yap. Nelerle ilgilendiğini seni anlayan kişilerle paylaş."
+    },
+    {
+      "title": "Instagram (@instagram) / X",
+      "url": "https://x.com/instagram",
+      "snippet": "Aug 19, 2010 · Instagram @instagram Discover what's new on Instagram 🔎 help.instagram.com Joined August 2010"
+    }
+  ]
+}

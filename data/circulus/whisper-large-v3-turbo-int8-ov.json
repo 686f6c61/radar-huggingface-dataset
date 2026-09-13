@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "circulus/whisper-large-v3-turbo-int8-ov",
+  "slug": "circulus-whisper-large-v3-turbo-int8-ov",
+  "author": "circulus",
+  "url": "https://huggingface.co/circulus/whisper-large-v3-turbo-int8-ov",
+  "created_at": "2026-09-13T14:04:56.000Z",
+  "updated_at": "2026-09-13T14:05:15.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "openvino",
+    "whisper",
+    "int8",
+    "circulus",
+    "ov-courseware",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:finetune:openai/whisper-large-v3-turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 815894473,
+  "storage_human": "816 MB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Groch Z Kapustą (@groch._.kapusta) • Instagram photos and videos",
+      "url": "https://www.instagram.com/groch._.kapusta/",
+      "snippet": "4 Followers, 1 Following, 81 Posts - Groch Z Kapustą (@groch._.kapusta) on Instagram: \"Skoro tu trafiłeś zapewne jesteś już na …"
+    },
+    {
+      "title": "Groch Z Kapustą | Co to jest metoda no dig i czy warto ... - Instagram",
+      "url": "https://www.instagram.com/groch._.kapusta/reel/DcOTm4kKH-s/",
+      "snippet": "0 likes, 0 comments - groch._.kapusta on August 19, 2026: \"Co to jest metoda no dig i czy warto przekopywać grządki Jakie warzywa …"
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/groch._.kapusta/reel/Db54l_IqmV9/",
+      "snippet": "1 likes, 0 comments - groch._.kapusta on August 11, 2026: \"JAk to zrobić. Wysiew, rozstawa, przerywanie pikowanie - uprawa buraka …"
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/groch._.kapusta/reel/DYjcd-Wqxy8/",
+      "snippet": "0 likes, 0 comments - groch._.kapusta on May 20, 2026: \"Sekrety uprawy warzyw strączkowych, groch ,fasola, bób Bądź pierwszą …"
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/groch._.kapusta/reel/DaK_V7XqgTd/",
+      "snippet": "0 likes, 0 comments - groch._.kapusta on June 29, 2026: \"awokado avocado - czysta 15- CZYSTA 15 – warzywa, które możesz jeść …"
+    }
+  ]
+}

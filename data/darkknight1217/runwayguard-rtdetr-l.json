@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "DarkKnight1217/RunwayGuard-rtdetr-l",
+  "slug": "darkknight1217-runwayguard-rtdetr-l",
+  "author": "DarkKnight1217",
+  "url": "https://huggingface.co/DarkKnight1217/RunwayGuard-rtdetr-l",
+  "created_at": "2026-09-13T18:17:55.000Z",
+  "updated_at": "2026-09-13T18:21:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "rtdetr",
+    "fod",
+    "airport",
+    "runwayguard",
+    "arxiv:2110.03072",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 263683050,
+  "storage_human": "264 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pauschalreise Wien » Reisen mit Hotel und Flug | TUI",
+      "url": "https://www.tui.com/pauschalreisen/oesterreich/wien/?msockid=0f295f8a1c3c67bd2a5748591db6660b",
+      "snippet": "Mit einer TUI-Pauschalreise nach Wien in Österreich buchst Du Hotel und Flug in einem Reisepaket. So sparst Du Dir viel Zeit bei …"
+    },
+    {
+      "title": "Städtereise Wien » alle Tipps & Angebote - Urlaubspiraten",
+      "url": "https://www.urlaubspiraten.de/reiseziele/oesterreich/wien",
+      "snippet": "Packt die schönsten Kleider ein, bucht euren passenden Kurztrip und macht euch auf zur Städtereise nach Wien. Hier findet ihr alle …"
+    },
+    {
+      "title": "Zug nach Wien - komfortabel und günstig reisen",
+      "url": "https://www.bahn.de/strecke/wien",
+      "snippet": "Apr 10, 2026 · Erleben Sie die Vielfalt und den Komfort einer Reise mit der Deutschen Bahn nach Wien – effizient und entspannt. …"
+    },
+    {
+      "title": "Vienna Tourist Information | Planen, Sehen & Erleben 2026",
+      "url": "https://viennatouristinformation.com/",
+      "snippet": "Tickets ohne Anstehen für Museen, Sehenswürdigkeiten und Attraktionen in Wien mit Audio Guides. Anreise nach Wien, Flughafen …"
+    },
+    {
+      "title": "Städtereise Wien - Angebote günstig buchen | DERTOUR",
+      "url": "https://www.dertour.de/staedtereisen/wien",
+      "snippet": "In unserem umfangreichen Onlineangebot findest du die unterschiedlichsten Varianten für Städtereisen nach Wien. Willst du dem …"
+    }
+  ]
+}

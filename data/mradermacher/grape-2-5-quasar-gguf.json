@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "mradermacher/GRaPE-2.5-Quasar-GGUF",
+  "slug": "mradermacher-grape-2-5-quasar-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/GRaPE-2.5-Quasar-GGUF",
+  "created_at": "2026-09-13T13:02:27.000Z",
+  "updated_at": "2026-09-13T14:06:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "fr",
+    "de",
+    "es",
+    "ja",
+    "ko",
+    "pt",
+    "ru",
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "thinking_modes",
+    "qwen3.5",
+    "grape",
+    "safetensors",
+    "vision",
+    "multimodal",
+    "instruct",
+    "chat",
+    "coding",
+    "math",
+    "science",
+    "reasoning",
+    "creative_writing",
+    "roleplay",
+    "en",
+    "zh",
+    "fr",
+    "de",
+    "es",
+    "ja",
+    "ko",
+    "pt",
+    "ru",
+    "ar",
+    "base_model:SL-AI/GRaPE-2.5-Quasar",
+    "base_model:quantized:SL-AI/GRaPE-2.5-Quasar",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 28246761856,
+  "storage_human": "28.2 GB",
+  "base_model": "SL-AI/GRaPE-2.5-Quasar",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SOŠ a SOU, Hradec Králové, Vocelova 1338 | Centrum odborného ...",
+      "url": "https://www.sosasou-vocelova.cz/",
+      "snippet": "Provoz a ekonomika dopravy Studijní obor umožňuje i studium na vysokých školách technického a ekonomického zaměření, zároveň …"
+    },
+    {
+      "title": "Přijímací zkoušky 2026/2027 – SOŠ a SOU, Hradec Králové ...",
+      "url": "https://www.sosasou-vocelova.cz/prijimaci-zkousky-na-necisto/",
+      "snippet": "Jan 28, 2026 · Přijímací zkoušky 2026/2027 Informace k jednotné přijímací zkoušce i k přijímacímu řízení. Kritéria přijímacího řízení …"
+    },
+    {
+      "title": "Volné pracovní pozice – SOŠ a SOU, Hradec Králové, Vocelova 1338 ...",
+      "url": "https://www.sosasou-vocelova.cz/zamestnani/",
+      "snippet": "KUCHAŘ/KUCHAŘKA Nástup: 1. 9. 2026 Nástup: Náplň práce: kuchař/kuchařka ve školní jídelně dvousměnný provoz (snídaně – …"
+    },
+    {
+      "title": "Dopravní prostředky – SOŠ a SOU, Hradec Králové, Vocelova 1338 ...",
+      "url": "https://www.sosasou-vocelova.cz/studijni-obory/maturitni-obory/dopravni-prostredky/",
+      "snippet": "Konstrukce a opravy dopravní techniky v silniční dopravě Čtyři roky / Denní forma studia / Střední vzdělání s maturitní zkouškou 23 …"
+    },
+    {
+      "title": "Informace pro strávníky – SOŠ a SOU, Hradec Králové, Vocelova ...",
+      "url": "https://www.sosasou-vocelova.cz/skolni-jidelna/info-pro-stravniky/",
+      "snippet": "Školní jídelna nabízí volné kapacity jídel Školní jídelna SOŠ a SOU s celkovou kapacitou 800 jídel a zajišťuje stravu pro všechny …"
+    }
+  ]
+}

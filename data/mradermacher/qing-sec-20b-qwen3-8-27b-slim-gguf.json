@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qing-Sec-20B-Qwen3.8-27B-Slim-GGUF",
+  "slug": "mradermacher-qing-sec-20b-qwen3-8-27b-slim-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qing-Sec-20B-Qwen3.8-27B-Slim-GGUF",
+  "created_at": "2026-09-13T15:01:30.000Z",
+  "updated_at": "2026-09-13T15:07:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19285624544,
+  "parameters_human": "19.29B",
+  "storage_bytes": 96164144640,
+  "storage_human": "96.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ceskyflorbal.cz",
+      "url": "https://login.ceskyflorbal.cz/osoba/",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Florbal ID",
+      "url": "https://id.ceskyflorbal.cz/",
+      "snippet": "Co je Florbal ID? Jednotné přihlašování napříč platformami. Moderní technologie vás chrání před krádeží identity. Přednostní nákup …"
+    },
+    {
+      "title": "FLORBAL iD | Český florbal",
+      "url": "https://www.ceskyflorbal.cz/id",
+      "snippet": "FLORBAL iD je jednotný přihlašovací systém, díky kterému si nemusíte pamatovat desítky různých přihlašovacích údajů. Stačí jeden …"
+    },
+    {
+      "title": "FLORBAL iD | Český florbal",
+      "url": "https://www.ceskyflorbal.cz/id?tabId=152",
+      "snippet": "Přihlášení s údaji FLORBAL iD aktuálně můžete využít do Florbalového informačního systému (FIS) – pokud jste člen/ka, nové …"
+    },
+    {
+      "title": "Hlavní stránka | Český florbal",
+      "url": "https://www.ceskyflorbal.cz/?locale=cs",
+      "snippet": "Oficiální web českého florbalu. Livesport Superliga, Extraliga žen, 1. liga mužů, Mládež, Reprezentace, Superfinále, Mistrovství světa, …"
+    }
+  ]
+}

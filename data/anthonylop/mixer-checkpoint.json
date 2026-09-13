@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "AnthonyLop/mixer-checkpoint",
+  "slug": "anthonylop-mixer-checkpoint",
+  "author": "AnthonyLop",
+  "url": "https://huggingface.co/AnthonyLop/mixer-checkpoint",
+  "created_at": "2026-09-13T13:03:59.000Z",
+  "updated_at": "2026-09-13T13:04:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pizza Heart, Amsterdam, Reguliersdwarsstraat 51",
+      "url": "https://www.cylex.nl/bedrijf/pizza-heart-13020697.html",
+      "snippet": "Aug 26, 2026 · Pizza Heart Reguliersdwarsstraat 51 in Amsterdam, ☎ 020 370 5..., ⌚ Openingstijden, routekaart, E-Mail en meer."
+    },
+    {
+      "title": "Pizza Heart, 51 Reguliersdwarsstraat, Amsterdam, Noord-Holland 1017 BK ...",
+      "url": "https://www.mapquest.com/nl/noord-holland/pizza-heart-807279259",
+      "snippet": "Pizza Heart in Amsterdam biedt een divers aanbod van pizza's, waaronder klassieke Margherita en varianten met toppings zoals …"
+    },
+    {
+      "title": "Pizza Heart - Reguliersdwarsstraat | Menu | Amsterdam | Uber Eats",
+      "url": "https://www.ubereats.com/nl/store/pizza-heart-reguliersdwarsstraat/p-jeQ5KASvWAz5b9e-xGog?msockid=13f47ed2b64f6556381d6901b7fa649a",
+      "snippet": "Jan 6, 2025 · Interested in Pizza Heart - Reguliersdwarsstraat? Find information about its location, offerings, and more. Order from …"
+    },
+    {
+      "title": "Pizza Heart | 020 370 5150 | Amsterdam",
+      "url": "https://www.allebiz.nl/pizza-heart_1T",
+      "snippet": "Waar is Pizza Heart gevestigd? Pizza Heart is gevestigd op Reguliersdwarsstraat 51, 1017 BK Amsterdam, Netherlands, Noord …"
+    },
+    {
+      "title": "Pizza Heart - Pizza restaurant - Amsterdam | Yappe.nl",
+      "url": "https://yappe.nl/amsterdam/pizza-heart/292751",
+      "snippet": "Pizza Heart is a pizza restaurant, pizza delivery and pizza takeaway located in Amsterdam, Netherlands. The average rating of this …"
+    }
+  ]
+}

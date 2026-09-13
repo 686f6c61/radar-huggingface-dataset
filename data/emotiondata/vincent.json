@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "EmotionData/vincent",
+  "slug": "emotiondata-vincent",
+  "author": "EmotionData",
+  "url": "https://huggingface.co/EmotionData/vincent",
+  "created_at": "2026-09-13T14:46:08.000Z",
+  "updated_at": "2026-09-13T14:46:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "trl",
+    "en",
+    "base_model:unsloth/llama-3-8b-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/llama-3-8b-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042201,
+  "storage_human": "185 MB",
+  "base_model": "unsloth/llama-3-8b-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CDA - Filmy, Seriale i Telewizja internetowa",
+      "url": "https://www.cda.pl/",
+      "snippet": "Czy mogę pobrać filmy i oglądać je bez internetu? Tak. W aplikacji mobilnej CDA na Androida i iOS pobierzesz wybrane filmy na …"
+    },
+    {
+      "title": "filmy - cda.pl",
+      "url": "https://www.cda.pl/filmy",
+      "snippet": "Największe tajemnice - program online premium."
+    },
+    {
+      "title": "CDA - Wyszukaj ulubione filmy i seriale",
+      "url": "https://cda.net.pl/",
+      "snippet": "CDA - Seriale i filmy online Nasza strona to miejsce, gdzie rozrywka nie zna granic. CDA to platforma stworzona z myślą o …"
+    },
+    {
+      "title": "CDA - filmy i telewizja – Aplikacje w Google Play",
+      "url": "https://play.google.com/store/apps/details?id=pl.cda&hl=pl",
+      "snippet": "Oglądaj filmy z cda.pl oraz uzyskaj dostęp do telewizji na żywo. Ponad 90 kanałów m. in. TVP, TVP 2, Polsat, TV4, Telewizja WP, …"
+    },
+    {
+      "title": "Zaloguj_sie_ - cda.pl",
+      "url": "https://m.cda.pl/Zaloguj_sie_",
+      "snippet": "MENU Filmy premium Seriale premium Dla dzieci Zaloguj_sie_"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "zai-org/glm-4-9b-chat",
+  "slug": "zai-org-glm-4-9b-chat",
+  "author": "zai-org",
+  "url": "https://huggingface.co/zai-org/glm-4-9b-chat",
+  "created_at": "2024-06-04T09:01:42.000Z",
+  "updated_at": "2025-03-13T15:48:14.000Z",
+  "license": "glm-4",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "chatglm",
+    "glm",
+    "thudm",
+    "custom_code",
+    "zh",
+    "en",
+    "arxiv:2406.12793",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 771,
+  "downloads_30d": 87143,
+  "trending_score": 18,
+  "parameters": 9399951392,
+  "parameters_human": "9.40B",
+  "storage_bytes": 56422422209,
+  "storage_human": "56.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Z.ai - Advanced AI Chatbot & Agent powered by GLM-5.3-Flash",
+      "url": "https://z.ai/",
+      "snippet": "Meet Z.ai, the AI assistant powered by GLM-5.3-Flash. Build websites, write code, handle long-horizon tasks, and get instant …"
+    },
+    {
+      "title": "Zaï (agriculture) — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Za%C3%AF_(agriculture)",
+      "snippet": "(en) Mercy Cheruto Kebenei, Monicah Mucheru-Muna et Felista Muriu-Ng’ang’a, « The potential of Zai pit technology and Integrated …"
+    },
+    {
+      "title": "Z.ai API Platform — Start building with GLM-5.3",
+      "url": "https://z.ai/model-api",
+      "snippet": "At Z.ai, we are developing safe and beneficial Artificial General Intelligence to help solve humanity's most complex challenges. GLM …"
+    },
+    {
+      "title": "1.4 Zaï agricole | RECUEIL DE FICHES TECHNIQUES - EDITION 2022",
+      "url": "https://niger-gdte.net/books/1-techniques-mecaniques-de-conservation-des-eaux-et-des-solsdefense-et-restauration-des-sols/page/14-zai-agricole",
+      "snippet": "Quantité de fumier : Fumure organique : 200 à 400 g de fumure/ZA soit en moyenne 3 t/ha ; Densité de semis : 1 poquet/Zaï ; Le …"
+    },
+    {
+      "title": "Z.ai - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Z.ai",
+      "snippet": "\"zai-org/GLM-4.5V · Hugging Face\". huggingface.co. 18 August 2025. Retrieved 25 August 2025. \"GLM-4.5V\". Z.AI API DOC. …"
+    }
+  ]
+}

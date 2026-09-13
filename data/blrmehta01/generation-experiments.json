@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Blrmehta01/generation-experiments",
+  "slug": "blrmehta01-generation-experiments",
+  "author": "Blrmehta01",
+  "url": "https://huggingface.co/Blrmehta01/generation-experiments",
+  "created_at": "2026-09-13T16:54:24.000Z",
+  "updated_at": "2026-09-13T16:54:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Willkommen - Dr. Christoph Katzenschlager - HNO Facharzt",
+      "url": "https://hnoarzt-krems.at/drkatzenschlager/",
+      "snippet": "Ihr HNO-Arzt in Krems. Ordination Dr. Christoph Katzenschlager - Facharzt für Hals-, Nasen- und Ohrenkunde."
+    },
+    {
+      "title": "Über mich - Dr. Christoph Katzenschlager - HNO Facharzt",
+      "url": "https://hnoarzt-krems.at/drkatzenschlager/drkatzenschlager/",
+      "snippet": "Jul 1, 2008 · Ihr HNO-Arzt in Krems. Ordination Dr. Christoph Katzenschlager - Facharzt für Hals-, Nasen- und Ohrenkunde."
+    },
+    {
+      "title": "Ordination Dr. Christoph Katzenschlager - HNO-FACHARZT in Krems: …",
+      "url": "https://www.hnoarzt-krems.at/drkatzenschlager/kontakt.html",
+      "snippet": "Tel: 02732 85 363 - HNO-FACHARZT Dr. Christoph Katzenschlager in Krems. So finden Sie uns! 3500 Krems, Obere Landstrasse 3, …"
+    },
+    {
+      "title": "Ordination Dr. Christoph Katzenschlager - HNO-FACHARZT in Krems ...",
+      "url": "https://www.hnoarzt-krems.at/drkatzenschlager/ordination.html",
+      "snippet": "Allgemeine Informationen zur Ordination finden Sie zusammengefasst im Infoblatt. Behandlungszimmer 1 Beide Behandlungsräume …"
+    },
+    {
+      "title": "Datenschutzerklärung - Dr. Christoph Katzenschlager - HNO Facharzt",
+      "url": "https://hnoarzt-krems.at/drkatzenschlager/datenschutzerklaerung/",
+      "snippet": "Ihr HNO-Arzt in Krems. Ordination Dr. Christoph Katzenschlager - Facharzt für Hals-, Nasen- und Ohrenkunde."
+    }
+  ]
+}

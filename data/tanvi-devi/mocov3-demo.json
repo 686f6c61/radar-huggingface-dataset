@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tanvi-devi/mocov3-demo",
+  "slug": "tanvi-devi-mocov3-demo",
+  "author": "tanvi-devi",
+  "url": "https://huggingface.co/tanvi-devi/mocov3-demo",
+  "created_at": "2026-09-13T12:11:37.000Z",
+  "updated_at": "2026-09-13T12:11:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définitions : buter, se buter, être buté - Dictionnaire de français ...",
+      "url": "https://www.larousse.fr/dictionnaires/francais/buter/11782",
+      "snippet": "1. S'appuyer contre quelque chose, en parlant de quelque chose : Poutre qui bute contre un mur. 2. Heurter le pied contre quelque …"
+    },
+    {
+      "title": "buter — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/buter",
+      "snippet": "Très rapide, il se fait souvent remarquer pour ses relances pleines de culot. Également très bon dans le jeu au pied, il bute …"
+    },
+    {
+      "title": "buter - Définitions, synonymes, conjugaison, exemples | Dico en ligne ...",
+      "url": "https://dictionnaire.lerobert.com/definition/buter",
+      "snippet": "Définition de buter verbe transitif familier Tuer, assassiner. Se faire buter."
+    },
+    {
+      "title": "BUTER - Définition et signification - Dictionnaire français Reverso",
+      "url": "https://dictionnaire.reverso.net/francais-definition/buter",
+      "snippet": "Définition de buter : heurter un obstacle en se déplaçant. Découvrez les significations, exemples, conseils d’utilisation, prononciation, …"
+    },
+    {
+      "title": "buter | Dictionnaire de l’Académie française | 9e édition",
+      "url": "https://www.dictionnaire-academie.fr/article/A9B2484",
+      "snippet": "1. Buter un mur, une voûte, par un arc-boutant, pour les empêcher de s’écarter. 2. Plus vous insistez, plus vous le butez. Vos …"
+    }
+  ]
+}

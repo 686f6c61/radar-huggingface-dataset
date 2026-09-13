@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "GorML2-67/automl-climsim-regional-models",
+  "slug": "gorml2-67-automl-climsim-regional-models",
+  "author": "GorML2-67",
+  "url": "https://huggingface.co/GorML2-67/automl-climsim-regional-models",
+  "created_at": "2026-09-13T18:35:45.000Z",
+  "updated_at": "2026-09-13T18:35:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing™ Wallpaper Gallery",
+      "url": "https://bing.wallpaper.pics/",
+      "snippet": "Bing™ Wallpaper Gallery - Provides Bing daily wallpaper images gallery for several countries."
+    },
+    {
+      "title": "Seattle, Washington - Bing™ Wallpaper Gallery",
+      "url": "https://bing.wallpaper.pics/20260408.html",
+      "snippet": "Apr 8, 2026 · Seattle, Washington - Bing Wallpaper. Bing daily images are all in bing.wallpaper.pics. Provides Bing daily wallpaper …"
+    },
+    {
+      "title": "Ceiling of the Temple of Esna, Egypt - Bing™ Wallpaper Gallery",
+      "url": "https://bing.wallpaper.pics/20260702.html",
+      "snippet": "Jul 2, 2026 · Ceiling of the Temple of Esna, Egypt - Bing Wallpaper. Bing daily images are all in bing.wallpaper.pics. Provides Bing …"
+    },
+    {
+      "title": "- Bing™ Wallpaper Gallery",
+      "url": "https://bing.wallpaper.pics/en/20251113.html",
+      "snippet": "Nov 13, 2025 · - Bing Wallpaper. Bing daily images are all in bing.wallpaper.pics. Provides Bing daily wallpaper images gallery for …"
+    },
+    {
+      "title": "Bing™ Fonds d'écran Galerie",
+      "url": "https://bing.wallpaper.pics/fr",
+      "snippet": "Bing™ Fonds d [20260912] - 'Cadini di Misurina, Dolomites, Vénétie, Italie (© Vithun Khamsong/Getty Images) (Bing France)'"
+    }
+  ]
+}

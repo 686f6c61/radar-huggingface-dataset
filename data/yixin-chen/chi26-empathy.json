@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "yixin-chen/chi26-empathy",
+  "slug": "yixin-chen-chi26-empathy",
+  "author": "yixin-chen",
+  "url": "https://huggingface.co/yixin-chen/chi26-empathy",
+  "created_at": "2026-09-13T15:58:52.000Z",
+  "updated_at": "2026-09-13T15:58:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Die schönsten Gedichte über Liebe für besondere Momente",
+      "url": "https://gedankenportal.de/gedichte-liebe/",
+      "snippet": "Jun 27, 2025 · Romantische Gedichte haben die einzigartige Kraft, Momente zu verzaubern und Verbindungen zu schaffen, die weit …"
+    },
+    {
+      "title": "Liebessprüche & Liebesgedichte schreiben: 4 Tipps + 24 Beispiele",
+      "url": "https://www.schreiben.net/artikel/liebessprueche-und-liebesgedichte-tipps-beispiele-821/",
+      "snippet": "Durch Liebessprüche und Liebesgedichte kannst du deinem Schatz eine besondere Freude machen. So findest du garantiert die …"
+    },
+    {
+      "title": "99 Liebesgedichte für Sie & Ihn: Kurz, Zärtlich & zum Weinen",
+      "url": "https://1001sprueche.com/liebesgedichte",
+      "snippet": "Jan 10, 2024 · Wer ein Liebesgedicht schreiben möchte, bekommt hier hilfreiche Tipps, die das Schreiben einfacher machen und …"
+    },
+    {
+      "title": "Schöne Liebesgedichte. Die schönsten Liebesgedichte",
+      "url": "https://gedichte.levrai.de/liebesgedichte/die_schoensten_liebesgedichte.htm",
+      "snippet": "Wunderschöne Liebesgedichte und gefühlvolle Liebesgedichte lassen die schönsten Liebesgedichte glühen. Nur mit den schönsten …"
+    },
+    {
+      "title": "Liebesgedichte 1500+ der schönsten Gedichte über die Liebe",
+      "url": "https://www.literatpro.de/liebesgedichte",
+      "snippet": "Sprüche, Gedichte und Lieder, die sich mit dem einzigartigen Thema Liebe befassen, stellen eine zeitlose Kunstform dar, die nicht …"
+    }
+  ]
+}

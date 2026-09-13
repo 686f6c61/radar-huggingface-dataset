@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "Fionareyes/efficientformer-classification-exp",
+  "slug": "fionareyes-efficientformer-classification-exp",
+  "author": "Fionareyes",
+  "url": "https://huggingface.co/Fionareyes/efficientformer-classification-exp",
+  "created_at": "2026-09-13T14:38:17.000Z",
+  "updated_at": "2026-09-13T14:38:23.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.de/",
+      "snippet": "Mit Google Übersetzer können Sie Wörter, Sätze und Webseiten kostenlos in über 100 Sprachen übersetzen."
+    },
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.de/details",
+      "snippet": "Damit du Details aufrufen kannst, musst du erst Text eingeben"
+    },
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.de/m",
+      "snippet": "Sprache erkennen→ Deutsch Google-Startseite"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "michsethowusu/kumawood-stargan-vc",
+  "slug": "michsethowusu-kumawood-stargan-vc",
+  "author": "michsethowusu",
+  "url": "https://huggingface.co/michsethowusu/kumawood-stargan-vc",
+  "created_at": "2026-09-13T15:14:25.000Z",
+  "updated_at": "2026-09-13T18:43:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2107.10394",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11390198,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Health check for the proxy pool: monitoring setup in 15 minutes.",
+      "url": "https://proxycove.com/en/blog/health-check-proxy-pool-setup",
+      "snippet": "Feb 6, 2026 · How to Set Up Health Check for Proxy Pool: Automatic Monitoring in 15 Minutes Learn how to set up an automatic …"
+    },
+    {
+      "title": "Proxy Pool Health Check & Rotation Manager | Reliability · Apify",
+      "url": "https://apify.com/apricot_blackberry/proxy-rotation-manager",
+      "snippet": "Health-check a proxy pool and fetch your URLs with automatic rotation and retry. Ranks proxies by latency, masks credentials, …"
+    },
+    {
+      "title": "Proxy Pool Health: How To Test And Retire Burned Proxies (2026)",
+      "url": "https://dataresearchtools.com/keeping-a-proxy-pool-healthy/",
+      "snippet": "19 hours ago · A proxy pool is a fleet you tend, not a list you buy once. Here is how to health check, quarantine, and replenish a …"
+    },
+    {
+      "title": "Proxy Pool Management: Health Checks and Recovery",
+      "url": "https://www.go2proxy.com/blog/article/proxy-pool-management",
+      "snippet": "4 days ago · Prevent Health-Check Feedback Loops Pool controls can create their own incidents. If every failed production request …"
+    },
+    {
+      "title": "Proxy Pool Health Checks & Monitoring with Prometheus & Grafana",
+      "url": "https://ro-proxy.com/blog/proxy-pool-health-checks-monitoring-prometheus-grafana",
+      "snippet": "Jul 13, 2026 · Learn how to monitor proxy pool health, detect failures, and integrate metrics with Prometheus and Grafana for reliable …"
+    }
+  ]
+}

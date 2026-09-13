@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Blossom-V7.1-27B-i1-GGUF",
+  "slug": "mradermacher-blossom-v7-1-27b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Blossom-V7.1-27B-i1-GGUF",
+  "created_at": "2026-09-13T13:50:30.000Z",
+  "updated_at": "2026-09-13T18:50:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "conversational",
+    "reasoning",
+    "multimodal",
+    "en",
+    "zh",
+    "base_model:Azure99/Blossom-V7.1-27B",
+    "base_model:quantized:Azure99/Blossom-V7.1-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 218553861888,
+  "storage_human": "218.6 GB",
+  "base_model": "Azure99/Blossom-V7.1-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Is valorant tracker safe? : r/VALORANT - Reddit",
+      "url": "https://www.reddit.com/r/VALORANT/comments/17zoae2/is_valorant_tracker_safe/",
+      "snippet": "Im thinking to add valorant tracker to see how much I have improved and what I can do better. So is valorant tracker safe?"
+    },
+    {
+      "title": "What is the best valorant stats tracker? : r/VALORANT - Reddit",
+      "url": "https://www.reddit.com/r/VALORANT/comments/kru8k7/what_is_the_best_valorant_stats_tracker/",
+      "snippet": "Jan 6, 2021 · VALORANT™ is a free to play 5v5, character-based tactical shooter by Riot Games."
+    },
+    {
+      "title": "【心得】積分前五場初體驗&對戰統計程式valorant tracker分享 @特戰 …",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=38093&snA=625",
+      "snippet": "Jun 25, 2020 · 趁一大早把積分肝完了，感覺隊友和對手實力都跟自己差不多，沒有遇到過可以1打全的對手 金一，跟我預期的差不 …"
+    },
+    {
+      "title": "【問題】覺得不會誤鎖的進來 @特戰英豪 哈啦板 - 巴哈姆特",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=38093&snA=3750",
+      "snippet": "Jun 19, 2023 · 2 樓 Sahen s791868375 GP 0 BP - 2023-06-25 20:19:34 在遊戲裹用 valorant tracker，不小心按了SHIFT+TAB 他給我 …"
+    },
+    {
+      "title": "Qwen3.6-27B Community-Varianten – Der ultimative Leitfaden für ...",
+      "url": "https://www.reddit.com/r/hermesagent/comments/1tn4lye/qwen3627b_community_variants_the_definitive_guide/?tl=de",
+      "snippet": "25.05.2026 ... VRAM: Gleich wie Aggressiv. Download: HauhauCS/Qwen3.6-27B-Uncensored-HauhauCS-Balanced (GGUF). HERETIC + FINE- ..."
+    }
+  ]
+}

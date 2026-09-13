@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Nikhitha123/poca-SoccerTwos",
+  "slug": "nikhitha123-poca-soccertwos",
+  "author": "Nikhitha123",
+  "url": "https://huggingface.co/Nikhitha123/poca-SoccerTwos",
+  "created_at": "2026-09-13T11:40:35.000Z",
+  "updated_at": "2026-09-13T11:40:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "SoccerTwos",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SoccerTwos",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30224206,
+  "storage_human": "30 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PRIVATE HIRE INSURANCE - Zego",
+      "url": "https://www.zego.com/private-hire/",
+      "snippet": "What is private hire taxi insurance? Private Hire insurance covers drivers who carry pre-booked passengers for payment (Hire & …"
+    },
+    {
+      "title": "Zego Insurance",
+      "url": "https://www.zego.com/",
+      "snippet": "Zego makes insurance simple for drivers and businesses, with flexible cover and telematics that reward safer habits - trusted by over …"
+    },
+    {
+      "title": "Private Hire Policy Booklet | Zego Help Centre",
+      "url": "https://help.zego.com/en/articles/277974-private-hire-policy-booklet",
+      "snippet": "Jul 28, 2026 · Zegois a new generation Insurtech, empowering businesses and individuals with insurance that is more suitable for the …"
+    },
+    {
+      "title": "How do I set up Taxi Insurance? | Zego Help Centre",
+      "url": "https://help.zego.com/en/articles/301865-how-do-i-set-up-taxi-insurance",
+      "snippet": "Jul 28, 2026 · 30 day policies are payable in a single payment using a credit or debit card. Annual policies have a single payment …"
+    },
+    {
+      "title": "Zego Help and Support | UK",
+      "url": "https://mobileapi.zego.com/help/",
+      "snippet": "We’ve added new features to help you make changes to your policy, without needing to contact us. Now you can update your home …"
+    }
+  ]
+}

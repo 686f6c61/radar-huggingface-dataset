@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Blissey",
+  "slug": "ryanham1lton-blissey",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Blissey",
+  "created_at": "2026-09-13T18:03:51.000Z",
+  "updated_at": "2026-09-13T18:06:10.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 122436741,
+  "storage_human": "122 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2026年 9月 CPU天梯图（更新250/270K Plus&9850X3D）",
+      "url": "https://www.zhihu.com/tardis/zm/art/280070583",
+      "snippet": "14600KF目前的价格性价比极高，很挺值得入手的，特别是对CPU多核性能有一定要求的朋友。 ⑤最强游戏U：9800X3D&9850X3D …"
+    },
+    {
+      "title": "2026年 9月 CPU天梯图（更新250/270K Plus&9850X3D）",
+      "url": "https://www.zhihu.com/tardis/bd/art/280070583",
+      "snippet": "桌面端CPU综合性能天梯图，提供最新的CPU性能排名和对比信息，帮助用户了解不同型号的表现和选择适合自己的产品。"
+    },
+    {
+      "title": "AMD显卡驱动怎么打开 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/54b6b9c0851e326c593b4712.html",
+      "snippet": "Apr 18, 2023 · 这样AMD显卡面板就打开了。这样我们显卡驱动就打开了。"
+    },
+    {
+      "title": "2026年AMD显卡推荐哪个品牌好性价比高？（4700字选购 ...",
+      "url": "https://www.zhihu.com/tardis/bd/art/10543192685",
+      "snippet": "二、AMD显卡选购攻略 在实际进入推荐之前，首先带领各位逐步了解选购AMD显卡时不可忽略的几项攻略。 1、先看懂AMD显卡型 …"
+    },
+    {
+      "title": "如何评价AMD最新一代MI450系列GPU？ - 知乎",
+      "url": "https://www.zhihu.com/question/2063918360878899952",
+      "snippet": "Jul 24, 2026 · AMD 官方称这是“带宽放大”，但放大发生在 L2 之后，L2 和 HBM 的物理带宽并没有变，省下来的是冗余的 cache 读和 …"
+    }
+  ]
+}

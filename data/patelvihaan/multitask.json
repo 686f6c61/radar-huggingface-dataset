@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "patelvihaan/multitask",
+  "slug": "patelvihaan-multitask",
+  "author": "patelvihaan",
+  "url": "https://huggingface.co/patelvihaan/multitask",
+  "created_at": "2026-09-13T14:51:00.000Z",
+  "updated_at": "2026-09-13T14:51:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "16301 NE 74th St, Redmond, Washington - MapQuest",
+      "url": "https://www.mapquest.com/us/washington/redmond/98052-7800/16301-ne-74th-st-47.67062,-122.12223",
+      "snippet": "Get more information for 16301 NE 74th St in Redmond, Washington. See reviews, map, get the address, and find directions."
+    },
+    {
+      "title": "ATM, 16301 NE 74th St, Redmond, WA 98052-7800, US - MapQuest",
+      "url": "https://www.mapquest.com/us/washington/atm-372228673",
+      "snippet": "Get more information for ATM in Redmond, WA. See reviews, map, get the address, and find directions."
+    },
+    {
+      "title": "The Best 10 Cafes near 16301 NE 74th St, Redmond, WA 98052 - Yelp",
+      "url": "https://www.yelp.com/search?cflt=cafes&find_loc=16301+NE+74th+St%2C+Redmond%2C+WA+98052&msockid=0bac6e68eb3660321e1079bbeaf861f9",
+      "snippet": "Best Cafes in 16301 NE 74th St, Redmond, WA 98052 - Last Updated August 2026 - Farine Bakery & Cafe, Doppio Cafe & Creperie, …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://www.google.com/maps/search/?query_place_id=ChIJ8To07q9ykFQRNAzzrGOxLPY",
+      "snippet": "Map data ©2026 Google Terms 10 km Directions"
+    },
+    {
+      "title": "ATM in Redmond, WA – Reviews, Hours, and Contact Details",
+      "url": "https://local.yahoo.com/info-129403267-atm-redmond/",
+      "snippet": "Read customer reviews and get hours of operation and contact information for ATM, a (n) ATMs business in Redmond, WA."
+    }
+  ]
+}

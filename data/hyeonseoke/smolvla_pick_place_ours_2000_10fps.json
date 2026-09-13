@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "HyeonseokE/smolvla_pick_place_ours_2000_10fps",
+  "slug": "hyeonseoke-smolvla_pick_place_ours_2000_10fps",
+  "author": "HyeonseokE",
+  "url": "https://huggingface.co/HyeonseokE/smolvla_pick_place_ours_2000_10fps",
+  "created_at": "2026-09-13T11:50:44.000Z",
+  "updated_at": "2026-09-13T11:52:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:HyeonseokE/pick_place_ours_10fps",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906729316,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Metallgerätehäuser online kaufen | BAUHAUS",
+      "url": "https://www.bauhaus.info/metallgeraetehaeuser/c/10001489?msockid=3096298250b26e11153d3e5151aa6fd7",
+      "snippet": "Schaffen Sie Ordnung: In einem Gerätehaus aus Metall findet alles seinen Platz und lässt sich sicher aufbewahren. Bei BAUHAUS …"
+    },
+    {
+      "title": "Gerätehäuser kaufen bei OBI",
+      "url": "https://www.obi.de/search/ger%C3%A4teh%C3%A4user/?msockid=3096298250b26e11153d3e5151aa6fd7",
+      "snippet": "Ein Geräteschuppen oder Gartenhaus aus Metall bietet dir viele Vorteile für deinen Garten. Erfahre, welche Vorzüge das neue …"
+    },
+    {
+      "title": "Gartenhaus Metall kaufen bei HORNBACH",
+      "url": "https://www.hornbach.de/c/garten/gartenhaeuser-carports/gartenhaeuser/gartenhaeuser-metall/S30578/",
+      "snippet": "Bei HORNBACH erhältst Du Gartenhäuser aus Metall zum Dauertiefpreis und aus einer großen Auswahl an Ausführungen wie Blech …"
+    },
+    {
+      "title": "Metall Geräteschuppen kaufen » Metallgerätehäuser | OTTO",
+      "url": "https://www.otto.de/garten/gartenaufbewahrung/geraeteschuppen/?material=_metall",
+      "snippet": "Diese robusten Metallgerätehäuser schützen deine wertvollen Utensilien vor Witterungseinflüssen und unbefugtem Zugriff. In dieser …"
+    },
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Geräteschuppen Metall",
+      "url": "https://www.amazon.de/ger%C3%A4teschuppen-metall/s?k=ger%C3%A4teschuppen+metall",
+      "snippet": "Thanaddo Gerätehaus Metall Groß Geräteschuppen 240x192x191 cm mit Fundamentrahmen, Wetterfest Gartenhaus mit …"
+    }
+  ]
+}

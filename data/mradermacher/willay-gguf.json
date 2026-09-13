@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/WILLAY-GGUF",
+  "slug": "mradermacher-willay-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/WILLAY-GGUF",
+  "created_at": "2026-09-13T15:54:45.000Z",
+  "updated_at": "2026-09-13T15:57:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "sft",
+    "trl",
+    "hf_jobs",
+    "governed-ai",
+    "szl-holdings",
+    "doctrine-v11",
+    "identity",
+    "willay",
+    "en",
+    "base_model:SZLHOLDINGS/WILLAY",
+    "base_model:quantized:SZLHOLDINGS/WILLAY",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 5400183424,
+  "storage_human": "5.4 GB",
+  "base_model": "SZLHOLDINGS/WILLAY",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fructele pe care nu ar trebui să le ții împreună. Hormonul vegetal care ...",
+      "url": "https://g4food.ro/fructele-pe-care-nu-ar-trebui-sa-le-tii-impreuna-hormonul-vegetal-care-le-face-sa-se-coaca-si-sa-se-strice-mai-repede/",
+      "snippet": "2 days ago · Dacă obișnuiești să pui merele și bananele în același bol, un detaliu aparent banal din felul în care depozitezi fructele le …"
+    },
+    {
+      "title": "Pregătire suplimentară la limba și literatura română",
+      "url": "https://lezionidilinguarumena.blogspot.com/2025/07/praslea-cel-voinic-si-merele-de-aur.html",
+      "snippet": "Jul 18, 2026 · Atunci el povesti în scurt toată istoria cu merele, cum a rănit pe hoț și cum a venit după dâra sângelui până la groapa …"
+    },
+    {
+      "title": "Mere: beneficii, proprietati, contraindicatii - Dr. Max Farmacia",
+      "url": "https://www.drmax.ro/articole/mere-beneficii-proprietati-contraindicatii",
+      "snippet": "Mar 28, 2023 · In acest articol poti afla care sunt valorile nutritionale ale merelor, ce beneficii au ele pentru sanatate si care sunt …"
+    },
+    {
+      "title": "Prâslea cel voinic şi merele de aur de Petre Ispirescu",
+      "url": "https://povesti-ro.weebly.com/praslea-cel-voinic-petre-ispirescu.html",
+      "snippet": "Citește online basmul pentru copii \"Prâslea cel voinic şi merele de aur\" de Petre Ispirescu. Citeste povestea Prâslea cel voinic în care …"
+    },
+    {
+      "title": "Explicația agricultorului care a descărcat 60 de tone de mere pe ...",
+      "url": "https://bas-tv.md/ro/explicatia-agricultorului-care-a-descarcat-60-de-tone-de-mere-pe-marginea-drumului-de-fapt-el-nu-a-aruncat-merele/",
+      "snippet": "Sep 14, 2021 · De fapt, el nu a aruncat merele, ci le-a scos la capăt de livadă pentru a fi transportate la o fabrică cu un tractor de …"
+    }
+  ]
+}

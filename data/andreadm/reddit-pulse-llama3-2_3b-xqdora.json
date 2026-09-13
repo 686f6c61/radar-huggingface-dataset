@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "andreadm/reddit-pulse-llama3.2_3b-xqdora",
+  "slug": "andreadm-reddit-pulse-llama3-2_3b-xqdora",
+  "author": "andreadm",
+  "url": "https://huggingface.co/andreadm/reddit-pulse-llama3.2_3b-xqdora",
+  "created_at": "2026-09-13T13:24:31.000Z",
+  "updated_at": "2026-09-13T13:54:55.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "llama",
+    "economics",
+    "finance",
+    "inflation",
+    "inflation-expectations",
+    "reddit",
+    "lora",
+    "dora",
+    "xqdora",
+    "text-classification",
+    "en",
+    "base_model:meta-llama/Llama-3.2-3B",
+    "base_model:adapter:meta-llama/Llama-3.2-3B",
+    "license:llama3.2",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27384411,
+  "storage_human": "27 MB",
+  "base_model": "meta-llama/Llama-3.2-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Directional inflation-expectation classification (up / neutral / down)",
+      "dataset": "Reddit inflation gold set (Del Monaco, Longo, Marcucci & Tafani, 2026), held-out test split of seed 2928142788",
+      "metric": null,
+      "value": 0.7698
+    },
+    {
+      "task": "Directional inflation-expectation classification (up / neutral / down)",
+      "dataset": "Reddit inflation gold set (Del Monaco, Longo, Marcucci & Tafani, 2026), held-out test split of seed 2928142788",
+      "metric": "F1 (weighted)",
+      "value": 0.77
+    },
+    {
+      "task": "Directional inflation-expectation classification (up / neutral / down)",
+      "dataset": "Reddit inflation gold set (Del Monaco, Longo, Marcucci & Tafani, 2026), held-out test split of seed 2928142788",
+      "metric": "F1 (macro)",
+      "value": 0.7445
+    },
+    {
+      "task": "Directional inflation-expectation classification (up / neutral / down)",
+      "dataset": "Reddit inflation gold set (Del Monaco, Longo, Marcucci & Tafani, 2026), held-out test split of seed 2928142788",
+      "metric": "ROC-AUC (macro, one-vs-rest)",
+      "value": 0.8746
+    }
+  ],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=DE&hl=de",
+      "snippet": "Auf YouTube findest du großartige Videos und erstklassige Musik. Außerdem kannst du eigene Inhalte hochladen und mit Freunden …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/de/german",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/YouTube",
+      "snippet": "YouTube (Aussprache [ˈjuːtuːb oder ˈjuːtjuːb]) ist ein 2005 gegründetes Videoportal des US-amerikanischen Unternehmens YouTube, …"
+    },
+    {
+      "title": "YouTube - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en-US",
+      "snippet": "Get the official YouTube app on Android phones and tablets. See what the world is watching -- from the hottest music videos to …"
+    }
+  ]
+}

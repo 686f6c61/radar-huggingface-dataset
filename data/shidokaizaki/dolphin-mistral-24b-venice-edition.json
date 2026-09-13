@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Shidokaizaki/Dolphin-Mistral-24B-Venice-Edition",
+  "slug": "shidokaizaki-dolphin-mistral-24b-venice-edition",
+  "author": "Shidokaizaki",
+  "url": "https://huggingface.co/Shidokaizaki/Dolphin-Mistral-24B-Venice-Edition",
+  "created_at": "2026-09-13T17:05:49.000Z",
+  "updated_at": "2026-09-13T17:05:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral3",
+    "image-text-to-text",
+    "text-generation",
+    "conversational",
+    "base_model:mistralai/Mistral-Small-24B-Instruct-2501",
+    "base_model:finetune:mistralai/Mistral-Small-24B-Instruct-2501",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24011361280,
+  "parameters_human": "24.01B",
+  "storage_bytes": 48059278474,
+  "storage_human": "48.1 GB",
+  "base_model": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "query - Tłumaczenie po polsku - Słownik angielsko-polski Diki",
+      "url": "https://www.diki.pl/slownik-angielskiego?q=query",
+      "snippet": "query, qy, qy. - tłumaczenie na polski oraz definicja. Co znaczy i jak powiedzieć \"query, qy, qy.\" po polsku? - zapytanie, kwerenda (do …"
+    },
+    {
+      "title": "QUERY | tłumacz z angielskiego na polski: Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/pl/dictionary/english-polish/query",
+      "snippet": "Tłumaczenie QUERY : zapytanie, kwestionować, zapytanie, pytajnik, zakwestionować, zapytać. Przeczytaj więcej w słowniku …"
+    },
+    {
+      "title": "Query - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Query",
+      "snippet": "This disambiguation page lists articles associated with the title Query. If an internal link incorrectly led you here, you may wish to …"
+    },
+    {
+      "title": "QUERY - Tłumaczenie na polski - bab.la",
+      "url": "https://pl.bab.la/slownik/angielski-polski/query",
+      "snippet": "Znajdź wszystkie tłumaczenia słowa query w polsko, takie jak pytać, kwestionować, zakwestionować i wiele innych."
+    },
+    {
+      "title": "Home - Query",
+      "url": "https://www.query.ai/",
+      "snippet": "Query is a federated search platform for security data providing expanded data visibility without centralization."
+    }
+  ]
+}

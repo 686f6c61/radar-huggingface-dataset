@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/YAM-AI-4B-GGUF",
+  "slug": "mradermacher-yam-ai-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/YAM-AI-4B-GGUF",
+  "created_at": "2026-09-13T12:58:11.000Z",
+  "updated_at": "2026-09-13T13:28:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma4",
+    "lora",
+    "multilingual",
+    "yam-ai",
+    "en",
+    "base_model:adelwolf5/YAM-AI-4B",
+    "base_model:adapter:adelwolf5/YAM-AI-4B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7463013674,
+  "parameters_human": "7.46B",
+  "storage_bytes": 74813318144,
+  "storage_human": "74.8 GB",
+  "base_model": "adelwolf5/YAM-AI-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Football : l'actualité foot et transfert est sur MAXIFOOT",
+      "url": "http://www.maxifoot.fr/",
+      "snippet": "Actualité du Football par Maxifoot. Le réseau du Foot sur Internet vous fait partager sa passion du ballon rond. Suivez les transferts, …"
+    },
+    {
+      "title": "Maxifoot - football",
+      "url": "https://m.maxifoot.fr/",
+      "snippet": "Actualité du Football par Maxifoot. Le réseau du Foot sur Internet vous fait partager sa passion du ballon rond. Suivez les transferts, …"
+    },
+    {
+      "title": "MAXIFOOT-LIVE le live-score du football pour suivre les match en direct",
+      "url": "https://www.maxifoot-live.com/",
+      "snippet": "Livescore Football : tous les scores en live et les résultats des matchs en direct sur Maxifoot-Live !"
+    },
+    {
+      "title": "Résultats foot en direct, live Maxifoot",
+      "url": "https://m.maxifoot.fr/live.htm",
+      "snippet": "Actualité du Football par Maxifoot. Le réseau du Foot sur Internet vous fait partager sa passion du ballon rond. Suivez les transferts, …"
+    },
+    {
+      "title": "Actu mercato & info foot par Maxifoot - Football - MAXIFOOT",
+      "url": "https://news.maxifoot.fr/",
+      "snippet": "14 hours ago · - © 2000-2026 MAXIFOOT - choix de consentement - L'actualité du football -"
+    }
+  ]
+}

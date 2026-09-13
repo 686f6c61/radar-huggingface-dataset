@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_12hz_lora-r16_frac50_s42_20260913_114937",
+  "slug": "xelsoft-ai-lab-afrivoxaccent_qw3_spk_acc_12hz_lora-r16_frac50_s42_20260913_114937",
+  "author": "xelsoft-ai-lab",
+  "url": "https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_12hz_lora-r16_frac50_s42_20260913_114937",
+  "created_at": "2026-09-13T12:49:03.000Z",
+  "updated_at": "2026-09-13T12:49:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "wolof",
+    "afrivoxaccent",
+    "base_model:Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+    "base_model:adapter:Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 676575464,
+  "storage_human": "677 MB",
+  "base_model": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Europas größte tropische Urlaubswelt | Tropical Islands",
+      "url": "https://www.tropical-islands.de/",
+      "snippet": "Entdecke das Tropical Islands: Europas größte tropische Urlaubswelt mit Indoor-Strand, Regenwald, Wasserrutschen & Spa. Jetzt …"
+    },
+    {
+      "title": "Tropical Islands Resort: Overnight Stay Options",
+      "url": "https://www.tropical-islands.de/en/uebernachtung/unterkunft",
+      "snippet": "Sleep inside the tropical islands resort and enjoy rainforest views, water park access and unique tropical lodges under Europe's …"
+    },
+    {
+      "title": "Tropical Islands Resort (Halbe): Alle Infos zum Hotel",
+      "url": "https://www.holidaycheck.de/hi/tropical-islands-resort/b5fe8508-35c4-37dd-bc81-0845a81d2edb",
+      "snippet": "Nov 24, 2024 · Das Tropical Islands Resort liegt in der idyllischen Natur des beliebten Spreewaldes, der reich an interessanten …"
+    },
+    {
+      "title": "Tropical Islands, Krausnick (aktualisierte Preise für 2026)",
+      "url": "https://www.booking.com/hotel/de/tropical-island.de.html?msockid=2e43119c2aef64f7307e064f2b20655f",
+      "snippet": "Das Tropical Islands begrüßt Sie in der größten freistehenden Kuppel der Welt mit einem Regenwald im Innenbereich, …"
+    },
+    {
+      "title": "Hotel Tropical Islands in Krausnick günstig buchen bei TUI.com",
+      "url": "https://www.tui.com/hotels/tropical-islands-73281/hotelinformation/?msockid=2e43119c2aef64f7307e064f2b20655f",
+      "snippet": "14 hours ago · Das erwartet Sie Wer träumt nicht davon, eine Nacht am Sandstrand zu verbringen - romantisch und spannend …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Rose6713x/beit-experiment70",
+  "slug": "rose6713x-beit-experiment70",
+  "author": "Rose6713x",
+  "url": "https://huggingface.co/Rose6713x/beit-experiment70",
+  "created_at": "2026-09-13T17:23:57.000Z",
+  "updated_at": "2026-09-13T17:24:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "البحث عن تطبيق \"متجر Google Play\" - مساعدة Google Play",
+      "url": "https://support.google.com/googleplay/answer/190860?hl=ar",
+      "snippet": "فتح تطبيق \"متجر Play\" على جهازك، انتقِل إلى قسم \"التطبيقات\". انقر على \"متجر Google Play\" . سيتم فتح التطبيق وستتمكّن من البحث عن المحتوى وتصفُّحه لتنزيله."
+    },
+    {
+      "title": "Find the Google Play Store app",
+      "url": "https://support.google.com/googleplay/answer/190860?hl=en",
+      "snippet": "Open the Play Store app On your device, go to the Apps section. Tap Google Play Store . The app will open and you can search and …"
+    },
+    {
+      "title": "تصفُّح Chrome في \"وضع الضيف\" - Google Help",
+      "url": "https://support.google.com/chrome/answer/6130773?hl=ar&co=GENIE.Platform%3Ddesktop",
+      "snippet": "يمنع \"وضع الضيف\" متصفِّح Chrome من حفظ نشاط التصفّح في سجلّك المحلي، ولكن عليك تسجيل الدخول فقط إلى المواقع الإلكترونية الحساسة على الأجهزة التي تثق بها لأنّ مالكيها قد يتمكنون من …"
+    },
+    {
+      "title": "مساعدة حساب Google",
+      "url": "https://support.google.com/accounts/?hl=ar",
+      "snippet": "مركز المساعدة حساب Google، حيث يمكنك الحصول على مساعدة لإدارة واسترداد حساب Google الخاص بك، فضلا عن نصائح لتقصي المشاكل والمحافظة على حسابك آمنا."
+    },
+    {
+      "title": "كيفية حلّ المشاكل المتعلّقة بتطبيق \"متجر Google Play\"",
+      "url": "https://support.google.com/googleplay/answer/14121800?hl=ar",
+      "snippet": "كيفية حلّ المشاكل المتعلّقة بتطبيق \"متجر Google Play\" إذا لم تتمكّن من فتح تطبيق \"متجر Google Play\"، فستجِد في هذه المقالة خطوات متقدِّمة لتحديد هذا النوع من المشاكل وحلّها."
+    }
+  ]
+}

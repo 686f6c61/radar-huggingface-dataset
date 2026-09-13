@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "fwizzer1/Fwizzer-LFM2.5-VL-3B-ZH-GGUF",
+  "slug": "fwizzer1-fwizzer-lfm2-5-vl-3b-zh-gguf",
+  "author": "fwizzer1",
+  "url": "https://huggingface.co/fwizzer1/Fwizzer-LFM2.5-VL-3B-ZH-GGUF",
+  "created_at": "2026-09-13T14:45:03.000Z",
+  "updated_at": "2026-09-13T14:49:56.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "vision",
+    "multimodal",
+    "vlm",
+    "reasoning",
+    "deepseek-r1",
+    "cot",
+    "chain-of-thought",
+    "gguf",
+    "llama.cpp",
+    "lmstudio",
+    "ollama",
+    "liquid",
+    "lfm2.5",
+    "image-text-to-text",
+    "zh",
+    "en",
+    "dataset:fwizzer1/fwizzer-v3-titan-agentic",
+    "base_model:LiquidAI/LFM2.5-VL-3B",
+    "base_model:finetune:LiquidAI/LFM2.5-VL-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "LiquidAI/LFM2.5-VL-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "الشيخ محمد حسان Mp3 | خطب ومحاضرات",
+      "url": "https://www.khotab.info/category/2",
+      "snippet": "الشيخ محمد حسان خطب محاضرات دروس إسلامية على منهج أهل السنة والجماعة والسلف الصالح، موسوعة إسلامية صوتية"
+    },
+    {
+      "title": "خطب الشيخ محمد حسان تحميل استماع Mp3",
+      "url": "https://www.khotab.info/mp3/%D8%AE%D8%B7%D8%A8_%D8%A7%D9%84%D8%B4%D9%8A%D8%AE_%D9%85%D8%AD%D9%85%D8%AF_%D8%AD%D8%B3%D8%A7%D9%86",
+      "snippet": "خطب الشيخ محمد حسان خطب محاضرات دروس إسلامية على منهج أهل السنة والجماعة والسلف الصالح، موسوعة إسلامية صوتية"
+    },
+    {
+      "title": "الموسوعة الصوتية الضخمة ل دروس و خطب و محاضرات الشيخ محمد حسان 428 ...",
+      "url": "https://archive.org/details/Mp3-___-----MAWSO3AH-428-BY-MOHAMMAD-HASSAN",
+      "snippet": "الموسوعة الصوتية الضخمة ل دروس و خطب و محاضرات الشيخ محمد حسان 428 محاضرة و درس و خطبة Topics"
+    },
+    {
+      "title": "صفحة الشيخ محمد حسان - Islamweb إسلام ويب",
+      "url": "https://audio.islamweb.net/audio/index.php?page=lecview&sid=451",
+      "snippet": "صفحة الشيخ محمد حسان وعرض جميع المحاضرات والخطب الخاصة بالشيخ، مع إمكانية الاستماع وتحميل المواد الصوتية، وقراءة النصوص المفرغة"
+    },
+    {
+      "title": "الموسوعة الصوتية الضخمة ل دروس و خطب و محاضرات الشيخ محمد حسان 428 ...",
+      "url": "https://archive.org/details/mp3---MAWSO3AH-428-BY-MOHAMMAD-HASSAN",
+      "snippet": "الموسوعة الصوتية الضخمة ل دروس و خطب و محاضرات الشيخ محمد حسان 428 محاضرة و درس و خطبة Topics"
+    }
+  ]
+}

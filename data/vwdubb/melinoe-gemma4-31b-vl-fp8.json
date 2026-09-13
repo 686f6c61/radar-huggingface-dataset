@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "vwdubb/Melinoe-Gemma4-31B-VL-FP8",
+  "slug": "vwdubb-melinoe-gemma4-31b-vl-fp8",
+  "author": "vwdubb",
+  "url": "https://huggingface.co/vwdubb/Melinoe-Gemma4-31B-VL-FP8",
+  "created_at": "2026-09-13T13:33:06.000Z",
+  "updated_at": "2026-09-13T13:37:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "base_model:bgg1996/Melinoe-Gemma4-31B-VL",
+    "base_model:quantized:bgg1996/Melinoe-Gemma4-31B-VL",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 33295401722,
+  "storage_human": "33.3 GB",
+  "base_model": "bgg1996/Melinoe-Gemma4-31B-VL",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tracking | UPS - United States",
+      "url": "https://www.ups.com/track?tracknum=tracking&loc=en_US&msockid=1769222952c16c97074735fa53286d63",
+      "snippet": "Track one or multiple packages with UPS Tracking, use your tracking number to track the status of your package."
+    },
+    {
+      "title": "Tracking - DHL - United States of America",
+      "url": "https://www.dhl.com/us-en/home/tracking.html",
+      "snippet": "International tracking of your DHL shipment: have your DHL tracking number at hand to track and trace."
+    },
+    {
+      "title": "Package Tracking – Free Real-Time Tracking Worldwide | 17TRACK",
+      "url": "https://www.17track.net/en/tracking",
+      "snippet": "Track packages worldwide with any tracking number. Get real-time delivery updates from 3,300+ carriers. Free tracking, no login …"
+    },
+    {
+      "title": "All in one global package tracking | 17TRACK",
+      "url": "https://t.17track.net/en-us",
+      "snippet": "ALL IN ONE GLOBAL PACKAGE TRACKING Track global packages, eCommerce orders, and air cargo from 3500+ carriers and …"
+    },
+    {
+      "title": "Global Tracking: Package & Parcel Tracking | Track.Global",
+      "url": "https://track.global/en",
+      "snippet": "Worldwide tracking number lookup across 2400+ carriers and marketplaces (USPS, UPS, FedEx, Amazon, AliExpress) with real-time …"
+    }
+  ]
+}

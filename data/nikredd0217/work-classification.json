@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Nikredd0217/work-classification",
+  "slug": "nikredd0217-work-classification",
+  "author": "Nikredd0217",
+  "url": "https://huggingface.co/Nikredd0217/work-classification",
+  "created_at": "2026-09-13T18:31:04.000Z",
+  "updated_at": "2026-09-13T18:31:09.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PM、PMP、PMO分别都是什么? - 知乎",
+      "url": "https://www.zhihu.com/question/1928124171789002462",
+      "snippet": "Jul 14, 2025 · PM、PMP和PMO的关系与区别解析，帮助理解三者在不同场景中的角色和作用。"
+    },
+    {
+      "title": "知乎",
+      "url": "https://www.zhihu.com/tardis/jm/art/2045110357153275908",
+      "snippet": "知乎，有趣、有料、有态度的内容社区。开放、真实、专业的社区氛围，汇集各行各业亲历者、内行人、领域专家。上知乎，找答案、 …"
+    },
+    {
+      "title": "完全不懂车的人如何在美国买车，特别是二手车？ - 知乎",
+      "url": "https://www.zhihu.com/question/28597990",
+      "snippet": "一旦决定入手，就开始还价了：非四大神车的，就按KBB good condition开始，减掉必须要修或是换的东西的价钱（比如timing belt, …"
+    },
+    {
+      "title": "除了检查 KBB，如何在网上找到最好的二手车？ - 知乎",
+      "url": "https://www.zhihu.com/question/496099358",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "儿子五年级了，想揍一顿屁股，该怎么揍？ - 知乎",
+      "url": "https://www.zhihu.com/question/653482847",
+      "snippet": "1、告诉他因为什么事，所以要打他屁股。 2、可以给他3～5分钟准备时间。 3、准备时间到了之后，让他脱掉裤子还有nk，露出屁 …"
+    }
+  ]
+}

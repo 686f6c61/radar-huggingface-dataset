@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ilyass200404/a2c-PandaReachDense-v3",
+  "slug": "ilyass200404-a2c-pandareachdense-v3",
+  "author": "ilyass200404",
+  "url": "https://huggingface.co/ilyass200404/a2c-PandaReachDense-v3",
+  "created_at": "2026-09-13T15:40:10.000Z",
+  "updated_at": "2026-09-13T15:45:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "PandaReachDense-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2915238,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Geneastar : le site de généalogie des célébrités - Geneastar",
+      "url": "https://www.geneastar.org/",
+      "snippet": "Le site des généalogies de stars ! Vous y trouverez des généalogies de diverses personnalités, des simples \"people\" aux Présidents …"
+    },
+    {
+      "title": "Geneastar: Genealogy of famous people - Geneastar",
+      "url": "https://en.geneastar.org/",
+      "snippet": "The website of famous family trees! You will find the genealogy of yesterday and today's famous people, from celebrities to heads of …"
+    },
+    {
+      "title": "Geneastar : de genealogische site van de beroemdheden",
+      "url": "https://nl.geneastar.org/",
+      "snippet": "De site van beroemde genealogieën! U vindt er de genealogie van persoonlijkheden van gisteren en vandaag, van beroemdheden tot …"
+    },
+    {
+      "title": "Geneastar: la página de genealogía de los personajes",
+      "url": "https://es.geneastar.org/",
+      "snippet": "¡El portal de las genealogías célebres! Encontrará la genealogía de personajes de ayer y de hoy, jefes de estado, cantantes, actores, …"
+    },
+    {
+      "title": "Généalogie de Mélina ROBERT-MICHON - Geneastar",
+      "url": "https://www.geneastar.org/celebrite/robertmichom/melina-robert-michon",
+      "snippet": "Mélina Robert-Michon (née le 18 juillet 1979 à Voiron) est une athlète française spécialiste du lancer du disque, vice-championne du …"
+    }
+  ]
+}

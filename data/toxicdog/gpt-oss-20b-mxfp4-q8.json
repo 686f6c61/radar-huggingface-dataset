@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "toxicdog/gpt-oss-20b-MXFP4-Q8",
+  "slug": "toxicdog-gpt-oss-20b-mxfp4-q8",
+  "author": "toxicdog",
+  "url": "https://huggingface.co/toxicdog/gpt-oss-20b-MXFP4-Q8",
+  "created_at": "2026-09-13T15:50:04.000Z",
+  "updated_at": "2026-09-13T15:50:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gpt_oss",
+    "vllm",
+    "text-generation",
+    "conversational",
+    "base_model:openai/gpt-oss-20b",
+    "base_model:quantized:openai/gpt-oss-20b",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20914755648,
+  "parameters_human": "20.91B",
+  "storage_bytes": 12104075742,
+  "storage_human": "12.1 GB",
+  "base_model": "openai/gpt-oss-20b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jodiumvergiftiging: symptomen, gevolgen en wat te doen",
+      "url": "https://nl.iliveok.com/health/jodiumvergiftiging-tekenen-gevolgen-wat-te-doen_130911i15958.html",
+      "snippet": "Oct 27, 2025 · Jodium is essentieel voor de synthese van schildklierhormonen, maar een teveel kan giftig zijn en zowel acute als …"
+    },
+    {
+      "title": "Wat gebeurt er als je teveel jodium binnen krijgt?",
+      "url": "https://webwoordenboek.nl/kenniscentrum/wat-gebeurt-er-als-je-teveel-jodium-binnen-krijgt",
+      "snippet": "Wat gebeurt er als je teveel jodium binnen krijgt? Een langdurig gebruik van teveel aan jodium kan ook schadelijk zijn en kan leiden …"
+    },
+    {
+      "title": "Zijn er risico's verbonden aan te veel jodium? - Vitaily",
+      "url": "https://vitaily.nl/zijn-er-risicos-verbonden-aan-te-veel-jodium/",
+      "snippet": "Ja, er zijn zeker risico’s verbonden aan te veel jodium. Hoewel jodium een essentieel mineraal is voor je gezondheid, kan een …"
+    },
+    {
+      "title": "Is teveel jodium gevaarlijk? - Webwoordenboek.nl",
+      "url": "https://webwoordenboek.nl/kenniscentrum/is-teveel-jodium-gevaarlijk",
+      "snippet": "Om het risico op kanker te vermijden, moeten jodiumtabletten ingenomen worden zodat de schildklier verzadigd raakt met niet …"
+    },
+    {
+      "title": "Jodium - Voedingscentrum",
+      "url": "https://www.voedingscentrum.nl/encyclopedie/jodium.aspx",
+      "snippet": "Als je lange tijd te veel jodium binnenkrijgt kan dat schadelijk zijn voor je gezondheid. Daarom heeft de Europese Autoriteit voor …"
+    }
+  ]
+}

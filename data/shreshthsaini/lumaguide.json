@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "shreshthsaini/LumaGuide",
+  "slug": "shreshthsaini-lumaguide",
+  "author": "shreshthsaini",
+  "url": "https://huggingface.co/shreshthsaini/LumaGuide",
+  "created_at": "2026-09-13T13:19:25.000Z",
+  "updated_at": "2026-09-13T13:19:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "hdr",
+    "hdr-generation",
+    "diffusion",
+    "guidance",
+    "training-free",
+    "flux",
+    "distribution-shaping",
+    "luminance",
+    "text-to-image",
+    "arxiv:2607.26237",
+    "base_model:black-forest-labs/FLUX.1-dev",
+    "base_model:adapter:black-forest-labs/FLUX.1-dev",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1086829,
+  "storage_human": "1 MB",
+  "base_model": "black-forest-labs/FLUX.1-dev",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aternos | Minecraft servers. Free. Forever.",
+      "url": "https://aternos.org/",
+      "snippet": "Easy to use We don't know, why it could be complicated to own a Minecraft server. At Aternos it is just as easy as pressing a button. …"
+    },
+    {
+      "title": "Aternos | Minecraft Server. Kostenlos. Für immer.",
+      "url": "https://aternos.org/:de/",
+      "snippet": "Einfach zu Benutzen Wir wissen nicht, warum es kompliziert sein sollte, einen eigenen Minecraft Server zu verwalten. Bei Aternos ist …"
+    },
+    {
+      "title": "Login or Sign up | Aternos | Free Minecraft Server",
+      "url": "https://aternos.org/go/",
+      "snippet": "Log in or sign up to Aternos for free Minecraft servers and enjoy playing with your friends."
+    },
+    {
+      "title": "Create your server | Aternos | Free Minecraft Server",
+      "url": "https://aternos.org/signup",
+      "snippet": "Create your own free Minecraft server with Aternos, customize it with mods and plugins, and play with friends. Sign up now!"
+    },
+    {
+      "title": "Aternos | Minecraft servers. Gratis. Voor altijd..",
+      "url": "https://aternos.org/:nl/",
+      "snippet": "Gebruiksvriendelijk. Wij snappen niet waarom het moeilijk zou zijn om een Minecraft server te bezitten. Bij Aternos is het net zo …"
+    }
+  ]
+}

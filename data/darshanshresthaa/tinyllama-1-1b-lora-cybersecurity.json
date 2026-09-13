@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Darshanshresthaa/tinyllama-1.1b-lora-cybersecurity",
+  "slug": "darshanshresthaa-tinyllama-1-1b-lora-cybersecurity",
+  "author": "Darshanshresthaa",
+  "url": "https://huggingface.co/Darshanshresthaa/tinyllama-1.1b-lora-cybersecurity",
+  "created_at": "2026-09-13T11:36:09.000Z",
+  "updated_at": "2026-09-13T11:36:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T",
+    "lora",
+    "transformers",
+    "text-generation",
+    "base_model:TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54282417,
+  "storage_human": "54 MB",
+  "base_model": "TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Foundation kopen? Shop nu online - HEMA",
+      "url": "https://www.hema.nl/mooi-gezond/make-up/foundation?msockid=17f0138f5d2f60643cd3045c5c6f6117",
+      "snippet": "Ben jij op zoek naar een foundation die perfect matcht met jouw huid? Dan ben je bij HEMA aan het juiste adres. Zo verkopen wij …"
+    },
+    {
+      "title": "Make-up kopen? Shop nu online - HEMA",
+      "url": "https://www.hema.nl/mooi-gezond/make-up?msockid=17f0138f5d2f60643cd3045c5c6f6117",
+      "snippet": "Bij HEMA vind je make-up artikelen voor elk moment en elke stemming. Of je nu voor een alledaagse make-up look gaat of voor …"
+    },
+    {
+      "title": "Foundation - HEMA",
+      "url": "https://www.hema.com/nl-be/mooi-verzorgd/make-up/foundation",
+      "snippet": "Op hema.com shop je eenvoudig foundation. Laat je bestelling thuisbezorgen of haal hem gratis op in een HEMA-winkel."
+    },
+    {
+      "title": "Make-up kopen online of in de winkel - HEMA - HEMA",
+      "url": "https://www.hema.com/nl-be/mooi-verzorgd/make-up",
+      "snippet": "Of je nu een snelle dagelijkse look wil of iets feestelijker: bij HEMA vind je make-up producten voor elk moment. Van een …"
+    },
+    {
+      "title": "make-up/foundation - hema",
+      "url": "https://www.hemanl.com/collections/make-up-foundation",
+      "snippet": "make-up/foundation € 2.00 € 10.00"
+    }
+  ]
+}

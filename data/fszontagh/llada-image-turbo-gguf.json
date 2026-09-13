@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "fszontagh/LLaDA-Image-Turbo-GGUF",
+  "slug": "fszontagh-llada-image-turbo-gguf",
+  "author": "fszontagh",
+  "url": "https://huggingface.co/fszontagh/LLaDA-Image-Turbo-GGUF",
+  "created_at": "2026-09-13T16:54:24.000Z",
+  "updated_at": "2026-09-13T17:20:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "text-to-image",
+    "image-editing",
+    "image-generation",
+    "stable-diffusion.cpp",
+    "llada-image",
+    "en",
+    "zh",
+    "base_model:inclusionAI/LLaDA-Image-Turbo",
+    "base_model:finetune:inclusionAI/LLaDA-Image-Turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4102434320,
+  "storage_human": "4.1 GB",
+  "base_model": "inclusionAI/LLaDA-Image-Turbo",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "Welcome to the official YouTube channel – a home for the biggest moments, the smallest obsessions, and everything in between. …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/homepage",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/@____-_-_-",
+      "snippet": "Share your videos with friends, family, and the world"
+    },
+    {
+      "title": "- YouTube",
+      "url": "https://www.youtube.com/shorts",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    }
+  ]
+}

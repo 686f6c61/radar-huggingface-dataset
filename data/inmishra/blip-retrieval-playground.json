@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "inmishra/blip-retrieval-playground",
+  "slug": "inmishra-blip-retrieval-playground",
+  "author": "inmishra",
+  "url": "https://huggingface.co/inmishra/blip-retrieval-playground",
+  "created_at": "2026-09-13T17:31:25.000Z",
+  "updated_at": "2026-09-13T17:31:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Magyar értelmező szótár, idegen szavak, kifejezések jelentése - Mit ...",
+      "url": "https://mitjelent.hu/",
+      "snippet": "Idegen szavak, kifejezések, szólások, rövidítések, szóösszetételek jelentése, magyarázata, használata, etimológiája – magyar …"
+    },
+    {
+      "title": "Távolságok helyek között és utazástervező | Tavolsagok.hu",
+      "url": "https://www.tavolsagok.hu/",
+      "snippet": "A térképen lévő pontok közötti távolság lekéréséhez, egyszerűen írja be a városok nevét a keresőbe és kattintson a „Távolság” …"
+    },
+    {
+      "title": "Távolság kalkulátor – Távolság két pont között a térképen",
+      "url": "https://onlinecompass.net/hu/distance-calculator",
+      "snippet": "Mit csinál az onlinecompass.net távolságszámolója? Az onlinecompass.net távolságszámolója egy ingyenes, könnyen használható …"
+    },
+    {
+      "title": "Értelmező Szótár",
+      "url": "https://meszotar.hu/",
+      "snippet": "Tudományos és Köznyelvi Szavak Magyar Értelmező Szótára Üdvözlünk az online értelmező szótárunkban! Az oldalunk több tízezer …"
+    },
+    {
+      "title": "Útvonalterv: Ingyenes és könnyen használható",
+      "url": "https://utvonalterv.net/",
+      "snippet": "Ingyenes útvonalterv Magyarországon és Európában: távolságok kilométerben, menetidők, útviszonyok és elektromos …"
+    }
+  ]
+}

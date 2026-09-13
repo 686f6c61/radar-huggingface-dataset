@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Happiny",
+  "slug": "ryanham1lton-happiny",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Happiny",
+  "created_at": "2026-09-13T17:29:05.000Z",
+  "updated_at": "2026-09-13T17:31:03.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 136947638,
+  "storage_human": "137 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NEET PG 2026 Eligibility Criteria: Internship, Registration, Age Limit ...",
+      "url": "https://cutoffxpert.com/articles/neet-pg-2026-eligibility-criteria-internship-registration-age-limit-more-65/",
+      "snippet": "Jul 1, 2026 · This guide explains the complete NEET PG 2026 eligibility criteria in simple language, including internship requirements, …"
+    },
+    {
+      "title": "NEET-PG Eligibility 2026 — MBBS, Internship, NMC Registration Rules",
+      "url": "https://kinaseapp.com/neet-pg-eligibility",
+      "snippet": "Complete NEET-PG 2026 eligibility criteria: MBBS from NMC-recognised college, completed (or completing by cutoff date) …"
+    },
+    {
+      "title": "NEET PG 2026 Eligibility — MBBS, Internship Deadline, Age Limit, NMC ...",
+      "url": "https://www.cmsprep.in/neet-pg/eligibility.html",
+      "snippet": "Jul 31, 2026 · To appear for NEET PG 2026, candidates must hold an MBBS degree with internship completed (or due to complete) …"
+    },
+    {
+      "title": "NEET PG 2026 Eligibility: MBBS, Internship and Attempt Limit",
+      "url": "https://collegedunia.com/articles/e-501-neet-pg-2026-eligibility-criteria-mbbs-internship-date-and-attempt-limit",
+      "snippet": "Jul 12, 2026 · To be eligible for NEET PG 2026, you must hold an MBBS degree from an NMC-recognised institution and complete …"
+    },
+    {
+      "title": "NMC",
+      "url": "https://www.nmc.org.in/",
+      "snippet": "“The National Medical Commission (NMC), established under the NMC Act, 2019, is firmly committedto establishing a transparent, …"
+    }
+  ]
+}

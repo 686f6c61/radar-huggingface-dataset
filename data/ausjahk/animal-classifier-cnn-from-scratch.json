@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ausjahk/animal-classifier-cnn-from-scratch",
+  "slug": "ausjahk-animal-classifier-cnn-from-scratch",
+  "author": "ausjahk",
+  "url": "https://huggingface.co/ausjahk/animal-classifier-cnn-from-scratch",
+  "created_at": "2026-09-13T16:59:40.000Z",
+  "updated_at": "2026-09-13T16:59:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "image-classification",
+    "cnn",
+    "from-scratch",
+    "animals",
+    "cats-vs-dogs",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18352679,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Men's Suits | Wedding, Formal & Custom Suits | SUITSUPPLY",
+      "url": "https://suitsupply.com/en-us/",
+      "snippet": "Discover our wedding, formal suits, tuxedos, and custom suits crafted from premium Italian fabrics. Shop In-Store or Online."
+    },
+    {
+      "title": "Anzüge für Herren | Hochzeits-, Elegant- & Maßanzüge | SUITSUPPLY",
+      "url": "https://suitsupply.com/de-de/",
+      "snippet": "Entdecke unsere Hochzeitsanzüge, formellen Anzüge, Business-Anzüge, Smokings und Maßanzüge aus exquisiten italienischen …"
+    },
+    {
+      "title": "Costume mariage, Habillé & Costume sur mesure - SUITSUPPLY",
+      "url": "https://suitsupply.com/fr-fr/",
+      "snippet": "Découvrez nos costumes de mariage, nos costumes habillés, nos smokings et nos costumes sur mesure confectionnés dans des …"
+    },
+    {
+      "title": "Suits for Men | SUITSUPPLY",
+      "url": "https://suitsupply.com/en-us/men/suits",
+      "snippet": "Luxury men’s suits in single, double breasted & 3-piece styles. Online or in 150 Suitsupply stores worldwide. Shop now & enjoy free …"
+    },
+    {
+      "title": "Abiti uomo | Abiti matrimonio, formali e su misura | SUITSUPPLY",
+      "url": "https://suitsupply.com/it-it/",
+      "snippet": "Scopri i nostri abiti da matrimonio, formali, smoking e abiti su misura realizzati in tessuti italiani di prima qualità. Acquista in negozio o …"
+    }
+  ]
+}

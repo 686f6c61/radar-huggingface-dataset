@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "psstory/llama3-fine-tuned-model1",
+  "slug": "psstory-llama3-fine-tuned-model1",
+  "author": "psstory",
+  "url": "https://huggingface.co/psstory/llama3-fine-tuned-model1",
+  "created_at": "2026-09-13T18:19:25.000Z",
+  "updated_at": "2026-09-13T18:20:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "trl",
+    "en",
+    "base_model:unsloth/llama-3-8b-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/llama-3-8b-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042201,
+  "storage_human": "185 MB",
+  "base_model": "unsloth/llama-3-8b-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "難病対策要綱",
+      "url": "https://www.nanbyou.or.jp/wp-content/uploads/pdf/nan_youkou.pdf",
+      "snippet": "難病対策要綱 47 年 10 月 厚 生 省 いわゆる難病については、従来これを統一的な施策の対策としてとりあげていなかったが、難病 …"
+    },
+    {
+      "title": "概 要 難病対策の概要 - mhlw.go.jp",
+      "url": "https://www.mhlw.go.jp/wp/hakusyo/kousei/10-2/kousei-data/PDF/22010223.pdf",
+      "snippet": "要 難病対策の概要 難病対策については、昭和47年に定められた「難病対策要綱」を踏まえ各種の."
+    },
+    {
+      "title": "・難病の患者に対する医療等の総合的な推進を図るための基本 ...",
+      "url": "https://www.mhlw.go.jp/web/t_doc?dataId=00009710&dataType=0&pageNo=1",
+      "snippet": "第一 難病の患者に対する医療等の推進の基本的な方向 (1) 難病の患者に対する医療等の施策の方向性について 法の基本理念にのっ …"
+    },
+    {
+      "title": "難病対策の概要",
+      "url": "https://www.nanbyou.or.jp/wp-content/uploads/pdf/nan_gaiyou.pdf",
+      "snippet": "我が国の難病対策は、昭和47年にまとめられた「難病対策要綱」に基づき、難病対策事業を行っています。 昭和47年当初に (1) 調 …"
+    },
+    {
+      "title": "難病法の制定と現在の難病対策について - J-STAGE",
+      "url": "https://www.jstage.jst.go.jp/article/iken/28/1/28_29.026/_pdf/-char/ja",
+      "snippet": "以上のように,「難病対策要綱」策定以降,難病患者等が置かれた状況やニーズの変化を踏まえ,難病対策の改善が図られてきた。 し …"
+    }
+  ]
+}

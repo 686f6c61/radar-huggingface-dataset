@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "geonmin-kim/Cosmos3-Edge-Policy-DROID-Drift-K2",
+  "slug": "geonmin-kim-cosmos3-edge-policy-droid-drift-k2",
+  "author": "geonmin-kim",
+  "url": "https://huggingface.co/geonmin-kim/Cosmos3-Edge-Policy-DROID-Drift-K2",
+  "created_at": "2026-09-13T11:33:55.000Z",
+  "updated_at": "2026-09-13T11:34:38.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "vla",
+    "cosmos3",
+    "droid",
+    "fastwam",
+    "one-step",
+    "base_model:nvidia/Cosmos3-Edge-Policy-DROID",
+    "base_model:finetune:nvidia/Cosmos3-Edge-Policy-DROID",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7735210532,
+  "storage_human": "7.7 GB",
+  "base_model": "nvidia/Cosmos3-Edge-Policy-DROID",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "James — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/James",
+      "snippet": "Cette page d’homonymie répertorie les différents sujets et articles portant le même nom. James : nom ou prénom de personnes, …"
+    },
+    {
+      "title": "the official JAMES website",
+      "url": "https://wearejames.com/",
+      "snippet": "All the news, tour dates and more from the band James. Documentary 'James: Getting Away With It' in cinemas now!"
+    },
+    {
+      "title": "James (band) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/James_(band)",
+      "snippet": "James were formed in 1982 in Whalley Range, Manchester, when Paul Gilbertson persuaded his friend Jim Glennie to buy a bass …"
+    },
+    {
+      "title": "James (prénom) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/James_(pr%C3%A9nom)",
+      "snippet": "Prénom français Saint Jacques le mineur ou James, Basilique du Latran. Représentation de saint Jacques-le-Majeur (ou Santiago ou …"
+    },
+    {
+      "title": "Acte de décès Familles James",
+      "url": "https://www.acte-deces.fr/recherche-deces-famille-james",
+      "snippet": "Dec 25, 2021 · - Francine JAMES (Francine Christiane Rosalie Albertine JAMES) décédée le 2 septembre 2012 à Bernay à l'age de …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ReconAI/Qwen3.5-0.8B-Detection",
+  "slug": "reconai-qwen3-5-0-8b-detection",
+  "author": "ReconAI",
+  "url": "https://huggingface.co/ReconAI/Qwen3.5-0.8B-Detection",
+  "created_at": "2026-09-13T12:15:39.000Z",
+  "updated_at": "2026-09-13T12:15:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ReconAI - Next Generation Research",
+      "url": "https://getrecon.ai/",
+      "snippet": "ReconAI gives you the scale of a survey with the depth of an interview to get you the data you need and the meaning behind it, in half …"
+    },
+    {
+      "title": "ReconAI — AI Reconciliation Assistant",
+      "url": "https://reconai.company/",
+      "snippet": "Reconcile any two datasets in minutes using AI"
+    },
+    {
+      "title": "Recon.AI — Govern AI actions with proof",
+      "url": "https://reconai.net/",
+      "snippet": "Recon governs AI actions at the boundary—Policy evaluation, Trust Receipts, and a durable Ledger for audit-ready proof."
+    },
+    {
+      "title": "ReconAI - Next Generation Research",
+      "url": "https://getrecon.ai/join-waitlist",
+      "snippet": "ReconAI gives you the scale of a survey with the depth of an interview"
+    },
+    {
+      "title": "ReconAI",
+      "url": "https://www.reconaitechnology.com/",
+      "snippet": "Audit trail Classification history and source transaction links. For teams that need organized financial data ReconAI structures …"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "neddamj/whisper-large-v3-patois-vocals-r32-test",
+  "slug": "neddamj-whisper-large-v3-patois-vocals-r32-test",
+  "author": "neddamj",
+  "url": "https://huggingface.co/neddamj/whisper-large-v3-patois-vocals-r32-test",
+  "created_at": "2026-09-13T15:54:56.000Z",
+  "updated_at": "2026-09-13T16:38:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 379091989,
+  "storage_human": "379 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Edmonton Oilers Scores, Stats and Highlights - ESPN",
+      "url": "https://www.espn.com/nhl/team/_/name/edm/edmonton-oilers",
+      "snippet": "Visit ESPN for Edmonton Oilers live scores, video highlights, and latest news. Find standings and the full 2026-27 season schedule."
+    },
+    {
+      "title": "Edmonton Oilers 2026-27 Preseason NHL Schedule - ESPN",
+      "url": "https://www.espn.com/nhl/team/schedule/_/name/edm/edmonton-oilers",
+      "snippet": "ESPN has the full 2026-27 Edmonton Oilers Preseason NHL schedule. Includes game times, TV listings and ticket information for all …"
+    },
+    {
+      "title": "NHL Standings - 2026-27 season - ESPN",
+      "url": "https://www.espn.com/nhl/standings",
+      "snippet": "Visit ESPN for the complete 2026-27 NHL season standings. Includes league, conference and division standings for regular season …"
+    },
+    {
+      "title": "Edmonton Oilers NHL Roster - ESPN",
+      "url": "https://www.espn.com/nhl/team/roster/_/name/edm/edmonton-oilers",
+      "snippet": "Explore the 2025-26 Edmonton Oilers NHL roster on ESPN. Includes full details on goalies, defense, center, left and right wing players."
+    },
+    {
+      "title": "Edmonton Oilers Injury Status - ESPN",
+      "url": "https://www.espn.com/nhl/team/injuries/_/name/edm/edmonton-oilers",
+      "snippet": "Aug 26, 2026 · Visit ESPN for the current injury situation of the 2025-26 Edmonton Oilers. Latest news from the NHL on players that …"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mulemp/TaviiTavii",
+  "slug": "mulemp-taviitavii",
+  "author": "mulemp",
+  "url": "https://huggingface.co/mulemp/TaviiTavii",
+  "created_at": "2026-09-13T16:00:33.000Z",
+  "updated_at": "2026-09-13T16:03:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 183817656,
+  "storage_human": "184 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook Marketplace: Buy and Sell Items Locally or Shipped | Facebook",
+      "url": "https://www.facebook.com/marketplace/",
+      "snippet": "Buy or sell new and used items easily on Facebook Marketplace, locally or from businesses. Find great deals on new items shipped …"
+    },
+    {
+      "title": "New and Used Cars, Trucks & Motorcycles For Sale | Marketplace - Facebook",
+      "url": "https://www.facebook.com/marketplace/category/vehicles/",
+      "snippet": "Find great deals on new and used Cars, Trucks & Motorcycles for sale in your area on Facebook Marketplace. New & used sedans, …"
+    },
+    {
+      "title": "New and used Cars for sale | Facebook Marketplace",
+      "url": "https://l.facebook.com/marketplace/category/cars/",
+      "snippet": "Find great deals on new and used Cars for sale in your area or list yours for free on Facebook Marketplace today."
+    },
+    {
+      "title": "I Use Facebook Marketplace All the Time — Here Are My Tips",
+      "url": "https://www.goodhousekeeping.com/life/money/a64434117/facebook-marketplace-tips/",
+      "snippet": "Apr 29, 2025 · After years of using Facebook Marketplace to buy and sell furniture, I've compiled a list of useful tips and tricks for …"
+    },
+    {
+      "title": "How to get Facebook Marketplace in 2026 (Full Guide)",
+      "url": "https://multilogin.com/blog/mobile/how-to-get-facebook-marketplace/",
+      "snippet": "Mar 26, 2026 · The Facebook ads library shows you every active ad across Meta. Here's how to search it, download ads, and use it …"
+    }
+  ]
+}

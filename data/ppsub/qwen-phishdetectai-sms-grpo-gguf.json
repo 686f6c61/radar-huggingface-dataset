@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ppsub/Qwen-PhishDetectAI-SMS-GRPO-GGUF",
+  "slug": "ppsub-qwen-phishdetectai-sms-grpo-gguf",
+  "author": "ppsub",
+  "url": "https://huggingface.co/ppsub/Qwen-PhishDetectAI-SMS-GRPO-GGUF",
+  "created_at": "2026-09-13T11:39:12.000Z",
+  "updated_at": "2026-09-13T11:39:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3757665600,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Diploma Translation – Translate Your Diploma for Immigration and …",
+      "url": "https://www.linguation.com/en/diploma-translation",
+      "snippet": "Get your diploma translated and certified for official use. Trusted diploma translation for immigration, study abroad, and job applications."
+    },
+    {
+      "title": "How To Translate a Degree or Diploma Certificate | Rapid Translate",
+      "url": "https://www.rapidtranslate.org/resources/how-to-translate-a-degree-certificate",
+      "snippet": "Feb 10, 2026 · Need to translate a diploma or certificate? Follow our step-by-step guide. Use certified services to submit official …"
+    },
+    {
+      "title": "How to translate a diploma and transcript for admission to a",
+      "url": "https://www.unipage.net/en/diploma_translation",
+      "snippet": "Diploma, transcript and their translations are always included in the package of documents that are needed for admission. What they …"
+    },
+    {
+      "title": "Certified High School Diploma and Certificate Translation",
+      "url": "https://thewordpoint.com/services/certified/high-school-certificates",
+      "snippet": "Jul 18, 2026 · High School Certificate Certified Translation Delivered Within 24 Hours We help students translate high school …"
+    },
+    {
+      "title": "Certified Translation Services for USCIS | 65+ Languages | GCS",
+      "url": "https://gcs.org/certified-translations",
+      "snippet": "Certified Translation for Immigration USCIS-accepted certified translations for visa petitions, green card applications, and …"
+    }
+  ]
+}

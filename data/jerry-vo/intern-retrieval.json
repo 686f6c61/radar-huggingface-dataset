@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jerry-vo/intern-retrieval",
+  "slug": "jerry-vo-intern-retrieval",
+  "author": "jerry-vo",
+  "url": "https://huggingface.co/jerry-vo/intern-retrieval",
+  "created_at": "2026-09-13T18:21:44.000Z",
+  "updated_at": "2026-09-13T18:21:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Die 10 besten Hotels in Bansin (Ab € 87) - Booking.com",
+      "url": "https://www.booking.com/city/de/seebad-bansin.de.html?msockid=0d2fec9dc5b26f0d1bf3fb4ec41e6e4f",
+      "snippet": "Sep 1, 2026 · Sichern Sie sich tolle Angebote und buchen Sie Ihr Hotel in Bansin, Deutschland online. Gute Verfügbarkeiten und …"
+    },
+    {
+      "title": "Hotels am Strand in Bansin - Booking.com",
+      "url": "https://www.booking.com/beach/city/de/seebad-bansin.de.html?msockid=0d2fec9dc5b26f0d1bf3fb4ec41e6e4f",
+      "snippet": "Finden und buchen Sie Angebote für die besten Hotels am Strand in Bansin, Deutschland! Schauen Sie sich Gästebewertungen an …"
+    },
+    {
+      "title": "DIE 10 BESTEN Hotels in Seebad Bansin 2026 - Tripadvisor",
+      "url": "https://www.tripadvisor.de/Hotels-g644189-Seebad_Bansin_Usedom_Island_Mecklenburg_West_Pomerania-Hotels.html",
+      "snippet": "Beste Hotels in Seebad Bansin bei Tripadvisor: Finden Sie 2.779 Bewertungen von Reisenden, authentische Reisefotos und Top …"
+    },
+    {
+      "title": "Alle 19 Hotels in Bansin mit den TOP 7 in 2026 - Hotel Usedom",
+      "url": "https://www.hotel-usedom.info/hotels-bansin-hotel-usedom.html",
+      "snippet": "Hotels in Bansin und Pensionen in Bansin auf Usedom mit Informationen und Angeboten sowie Telefonnummer für den direkten …"
+    },
+    {
+      "title": "Hotels Bansin • Die besten Bansin Hotels bei HolidayCheck",
+      "url": "https://www.holidaycheck.de/dh/hotels-bansin/51d6c5b5-31ef-3ca4-b6df-ef73d27d1f97",
+      "snippet": "Der Durchschnitt ergibt sich aus den Bewertungen der einzelnen Hotels in Bansin auf HolidayCheck."
+    }
+  ]
+}

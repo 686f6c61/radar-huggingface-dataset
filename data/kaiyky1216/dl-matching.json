@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "KaiYky1216/dl-matching",
+  "slug": "kaiyky1216-dl-matching",
+  "author": "KaiYky1216",
+  "url": "https://huggingface.co/KaiYky1216/dl-matching",
+  "created_at": "2026-09-13T17:36:11.000Z",
+  "updated_at": "2026-09-13T17:36:16.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spiele-Umsonst.de | Kostenlose Online Spiele - Jetzt Spielen!",
+      "url": "https://www.spiele-umsonst.de/",
+      "snippet": "Jan 28, 2007 · Bei Spiele-Umsonst.de findest du vor allem diese beliebten Kategorien: 3-Gewinnt, Gehirnjogging, Mahjong, …"
+    },
+    {
+      "title": "1001 Spiele - Kostenlose coole online Spiele spielen!",
+      "url": "https://www.1001spiele.de/",
+      "snippet": "Die neusten und coolsten Spiele gesammelt auf einer Website! Bei uns findest du mehr als 3500!"
+    },
+    {
+      "title": "Spiele - Online Spiele Kostenlos Spielen - JetztSpielen.de",
+      "url": "https://www.jetztspielen.de/",
+      "snippet": "Die besten kostenlosen Spiele online, einschließlich: Rennspiele, Sportspiele, Bubble Shooter, Friv-Spiele, Mahjong und viele mehr …"
+    },
+    {
+      "title": "Poki - Kostenlose Onlinespiele - Jetzt spielen!",
+      "url": "https://poki.com/de?msockid=06e3aba16f1f621229b0bc726e76631c",
+      "snippet": "Oplev en verden af gratis onlinespil med Poki! Spil med det samme, ingen downloads, og prøv spil, der er kompatible med alle enheder."
+    },
+    {
+      "title": "Mahjong Spiele 100% Kostenlos & Online - Spiele-Umsonst.de",
+      "url": "https://www.spiele-umsonst.de/mahjong-spiele-k42.html",
+      "snippet": "Spiele-Umsonst.de präsentiert eine vielfältige Auswahl an Mahjong-Spielen, die Strategie, Aufmerksamkeit und räumliches Denken …"
+    }
+  ]
+}

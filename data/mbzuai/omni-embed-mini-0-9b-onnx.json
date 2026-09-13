@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "MBZUAI/Omni-Embed-Mini-0.9B-onnx",
+  "slug": "mbzuai-omni-embed-mini-0-9b-onnx",
+  "author": "MBZUAI",
+  "url": "https://huggingface.co/MBZUAI/Omni-Embed-Mini-0.9B-onnx",
+  "created_at": "2026-09-13T16:03:09.000Z",
+  "updated_at": "2026-09-13T16:03:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "omni_embed",
+    "feature-extraction",
+    "multimodal",
+    "embeddings",
+    "retrieval",
+    "webgpu",
+    "transformers.js",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1894338687,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Sims 4 Mods - CurseForge",
+      "url": "https://www.curseforge.com/sims4",
+      "snippet": "The Sims 4 is part of the popular life simulation series, offering endless possibilities for players to customize their virtual world. Its …"
+    },
+    {
+      "title": "Ultrasound Scan - The Sims 4 Mods - CurseForge",
+      "url": "https://www.curseforge.com/sims4/mods/ultrasound-scan",
+      "snippet": "Sep 1, 2026 · Ultrasound Scan Pregnant Sims can do a Ultrasound Examination How this Mod works: When the pregnant Sim is in …"
+    },
+    {
+      "title": "littlemssam | CurseForge Pro",
+      "url": "https://littlemssam.my.curseforge.com/",
+      "snippet": "Mar 16, 2025 · Bio Hello there, please, don't be surprised by this Page & by me marking new Mods/bigger Mod Updates as Early …"
+    },
+    {
+      "title": "sims4andirz | CurseForge Pro",
+      "url": "https://sims4andirz.my.curseforge.com/",
+      "snippet": "Mar 23, 2025 · CurseForge - a world of endless gaming possibilities for modders and gamers alike. Download the best mods and …"
+    },
+    {
+      "title": "The best mods & CC for The Sims 4 | CurseForge",
+      "url": "https://mod.curseforge.com/curseforge-thesims4-fyp/",
+      "snippet": "The new official home for The Sims 4 mods & CC. A safe, curated space for the highest quality Sims mods and addons. Build, …"
+    }
+  ]
+}

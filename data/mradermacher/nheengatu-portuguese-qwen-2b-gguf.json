@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/nheengatu-portuguese-qwen-2b-GGUF",
+  "slug": "mradermacher-nheengatu-portuguese-qwen-2b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/nheengatu-portuguese-qwen-2b-GGUF",
+  "created_at": "2026-09-13T15:41:49.000Z",
+  "updated_at": "2026-09-13T15:50:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "yrl",
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "translation",
+    "nheengatu",
+    "yrl",
+    "low-resource",
+    "indigenous-languages",
+    "brazil",
+    "pt",
+    "base_model:voz-ancestral/nheengatu-portuguese-qwen-2b",
+    "base_model:quantized:voz-ancestral/nheengatu-portuguese-qwen-2b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 18070136064,
+  "storage_human": "18.1 GB",
+  "base_model": "voz-ancestral/nheengatu-portuguese-qwen-2b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "闲鱼和转转哪个比较靠谱？ - 知乎",
+      "url": "https://www.zhihu.com/question/65313130",
+      "snippet": "转转一生黑，说一下本人被坑的经历吧。 11.8号，本人在转转平台出售了一台电脑，挂上后被人秒拍，被骗子讲价后3300包邮卖出。 …"
+    },
+    {
+      "title": "Deezer : les titres ne s'enchaînent pas - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-8408266-deezer-les-titres-ne-s-enchainent-pas",
+      "snippet": "Sep 13, 2008 · Bonjour, Quand je lance un titre sur deezer, le titre ne s'enchaîne pas. Comment résoudre ce problème ? Est-ce que …"
+    },
+    {
+      "title": "FanFanFan - 知乎",
+      "url": "https://www.zhihu.com/people/ffancage/",
+      "snippet": "3 days ago · FanFanFan是知乎的用户，拥有丰富的回答经验和高赞记录，分享知识与见解。"
+    },
+    {
+      "title": "Playlist perdus sur Deezer - Musique / Radio / Clip",
+      "url": "https://forums.commentcamarche.net/forum/affich-22198517-playlist-perdus-sur-deezer",
+      "snippet": "May 26, 2011 · Bonjour, J'ai effacé mes playlist sur Deezer sans le vouloir en faisant une fausse manip. J'ai essayé de les récupérer …"
+    },
+    {
+      "title": "Qualité audio deezer [Résolu] - Audio",
+      "url": "https://forums.commentcamarche.net/forum/affich-37628351-qualite-audio-deezer",
+      "snippet": "Jul 1, 2022 · Bonjour, je vous envoie ce message car j'aimerai savoir c'est quoi la différence entre la haute qualité ( HQ ) et la haute …"
+    }
+  ]
+}

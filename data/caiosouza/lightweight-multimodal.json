@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "caiosouza/lightweight-multimodal",
+  "slug": "caiosouza-lightweight-multimodal",
+  "author": "caiosouza",
+  "url": "https://huggingface.co/caiosouza/lightweight-multimodal",
+  "created_at": "2026-09-13T17:13:25.000Z",
+  "updated_at": "2026-09-13T17:13:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "lightweight-multimodal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Windguru - Port Elizabeth",
+      "url": "https://www.windguru.cz/51679",
+      "snippet": "Windguru weather forecast for South Africa - Port Elizabeth. Special wind and weather forecast for windsurfing, kitesurfing and other …"
+    },
+    {
+      "title": "WindGURU: United States - Maui (north shore)",
+      "url": "https://old.windguru.cz/",
+      "snippet": "windsurfing & kitesurfing forecast for United States - Maui (north shore)"
+    },
+    {
+      "title": "Windguru station - Port Elizabeth - Eastern Cape, PE-RSA",
+      "url": "https://www.windguru.cz/station/482",
+      "snippet": "Windguru live wind for Port Elizabeth - Eastern Cape, PE-RSA. Live wind station data for windsurfing, kitesurfing and other wind …"
+    },
+    {
+      "title": "Windguru - South Africa - Port Elizabeth",
+      "url": "https://www.windguru.cz/de/index.php?sc=44896",
+      "snippet": "Windguru weather forecast for South Africa - Port Elizabeth. Special wind and weather forecast for windsurfing, kitesurfing and other …"
+    },
+    {
+      "title": "Port Elizabeth - Eastern Cape, PE-RSA - wap2.windguru.cz",
+      "url": "https://wap2.windguru.cz/view.php?sc=580008&m=3&start=0&full=1",
+      "snippet": "Port Elizabeth - Eastern Cape, PE-RSA GFS 13 km 31.08. 06UTC"
+    }
+  ]
+}

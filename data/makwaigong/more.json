@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "MakWaiGong/MoRE",
+  "slug": "makwaigong-more",
+  "author": "MakWaiGong",
+  "url": "https://huggingface.co/MakWaiGong/MoRE",
+  "created_at": "2026-03-10T13:09:52.000Z",
+  "updated_at": "2026-09-13T19:34:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46090106872,
+  "storage_human": "46.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub."
+    },
+    {
+      "title": "r/AITAH - Reddit",
+      "url": "https://www.reddit.com/r/AITAH/",
+      "snippet": "r/AITAH: this is a community like r/AmITheAsshole except unlike that subreddit here you can post interpersonal conflicts, anything …"
+    },
+    {
+      "title": "ChatGPT - Reddit",
+      "url": "https://www.reddit.com/r/ChatGPT/top/",
+      "snippet": "Dec 1, 2022 · r/ChatGPT: Subreddit to discuss about ChatGPT and AI. Not affiliated with OpenAI."
+    },
+    {
+      "title": "ChatGPT Web for Codex - GitHub",
+      "url": "https://github.com/miuuyy/codex-chatgpt-web",
+      "snippet": "ChatGPT Web runs from Codex's model picker while the original task UI, context lifecycle, streaming, tracing, and tool presentation …"
+    },
+    {
+      "title": "有没有好的离线翻译软件，电脑的？ - 知乎",
+      "url": "https://www.zhihu.com/question/67273658",
+      "snippet": "先说结论:有 由于传统研发翻译引擎需要巨额投入，一直被大厂技术垄断，所以这么多年来，都没有一款真正离线翻译。2024年之前所 …"
+    }
+  ]
+}

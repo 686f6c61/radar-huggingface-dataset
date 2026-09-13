@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "kerzgrr/Haiku-base",
+  "slug": "kerzgrr-haiku-base",
+  "author": "kerzgrr",
+  "url": "https://huggingface.co/kerzgrr/Haiku-base",
+  "created_at": "2026-09-13T11:56:22.000Z",
+  "updated_at": "2026-09-13T12:00:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "tiny_gdn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "tiny_gdn",
+    "safetensors",
+    "haiku",
+    "text-generation",
+    "causal-lm",
+    "pytorch",
+    "pretrain",
+    "hybrid",
+    "kimi-delta-attention",
+    "gated-mla",
+    "conversational",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 655796824,
+  "parameters_human": "655.8M",
+  "storage_bytes": 1311667272,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définir les paramètres d’heure, de date et de fuseau horaire dans Windows",
+      "url": "https://support.microsoft.com/fr-fr/windows/experience/personalization/set-time-date-and-time-zone-settings-in-windows",
+      "snippet": "Les paramètres d’heure, de date, de fuseau horaire et d’heure d’été peuvent être configurés dans l’application Paramètres dans …"
+    },
+    {
+      "title": "Définir manuellement l'heure et le fuseau horaire sous Windows",
+      "url": "https://les-imprimantes.com/definir-manuellement-votre-heure-et-votre-fuseau-horaire-sous-windows/",
+      "snippet": "Jul 14, 2026 · Apprenez à définir manuellement votre heure et votre fuseau horaire sous Windows 11 et Windows 10 grâce à ce guide …"
+    },
+    {
+      "title": "Changer la date et le fuseau horaire sur votre ordinateur portable Windows",
+      "url": "https://fr.windows.day/?p=59521",
+      "snippet": "Cet article explique comment définir automatiquement et manuellement la date et le fuseau horaire sur votre PC Windows 10. …"
+    },
+    {
+      "title": "Comment régler manuellement l’heure et le fuseau horaire sous Windows …",
+      "url": "https://help.peacedoorball.blog/ca/comment-regler-manuellement-lheure-et-le-fuseau-horaire-sous-windows-11-10/",
+      "snippet": "May 14, 2026 · Dans Réglages > Heure et langue > Date et heure, repérez le menu déroulant Fuseau horaire et sélectionnez votre …"
+    },
+    {
+      "title": "Comment changer la date et l'heure sur Windows 11",
+      "url": "https://fr.windows.day/?p=77842",
+      "snippet": "Windows 11 vous permet d'ajuster manuellement les paramètres de date et d'heure, de désactiver la synchronisation automatique de …"
+    }
+  ]
+}

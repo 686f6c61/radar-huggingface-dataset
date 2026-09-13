@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "JAYDENJONES/matching78",
+  "slug": "jaydenjones-matching78",
+  "author": "JAYDENJONES",
+  "url": "https://huggingface.co/JAYDENJONES/matching78",
+  "created_at": "2026-09-13T14:09:44.000Z",
+  "updated_at": "2026-09-13T14:09:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gram Altın Yorumları ve Canlı Grafiği - Güncel Gram Fiyatı",
+      "url": "https://yorum.altin.in/tum/gram-altin",
+      "snippet": "Güncel Gram Altın'ın yorumları ve canlı fiyatları, anlık grafikler, altın çeviri; Altin.in üyelerinin kur ne olur'a cevap aradığı Gram Altın …"
+    },
+    {
+      "title": "Altin.in › Ons $4348.48 › Canlı Altın fiyatları, Döviz, Altın arşivi",
+      "url": "https://altin.in/?ref=HL1",
+      "snippet": "1 day ago · Güncel canlı ons, çeyrek, gram altın {6782.37 TL} fiyatı, canlı grafik ve yorumlar, anlık döviz, anlık altın fiyatları, altın …"
+    },
+    {
+      "title": "Altin.in › Ons $4348.48 › Canlı Altın fiyatları, Döviz, Altın arşivi",
+      "url": "https://altin.in/?r=1",
+      "snippet": "1 day ago · Güncel canlı ons, çeyrek, gram altın {6782.37 TL} fiyatı, canlı grafik ve yorumlar, anlık döviz, anlık altın fiyatları, altın …"
+    },
+    {
+      "title": "Ons Yorumları ve Canlı Grafiği - Güncel Ons Fiyatı (4348.48)",
+      "url": "https://yorum.altin.in/tum/ons",
+      "snippet": "Güncel Ons yorumları ve canlı fiyatları, anlık grafikler, altın çeviri; Altin.in üyelerinin kur ne olur'a cevap aradığı Ons yorum sayfası."
+    },
+    {
+      "title": "Kazandıran Altın Yorumları (13 Eylül 2026) [Para & Borsa]",
+      "url": "https://www.paraborsa.net/kategori/piyasalar/altin-yorumlari/",
+      "snippet": "3 days ago · Türkiye'nin önde gelen yatırım uzmanlarının yaptığı, her zaman kazandıran güncel altın yorumları ve altın yatırım …"
+    }
+  ]
+}

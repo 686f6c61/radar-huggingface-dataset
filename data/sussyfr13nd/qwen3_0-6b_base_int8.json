@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SUSSYFR13ND/qwen3_0.6b_base_int8",
+  "slug": "sussyfr13nd-qwen3_0-6b_base_int8",
+  "author": "SUSSYFR13ND",
+  "url": "https://huggingface.co/SUSSYFR13ND/qwen3_0.6b_base_int8",
+  "created_at": "2026-09-13T16:03:18.000Z",
+  "updated_at": "2026-09-13T16:07:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 598191544,
+  "storage_human": "598 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Blurry text on tv monitor - Windows 10 Forums",
+      "url": "https://www.tenforums.com/graphic-cards/194120-blurry-text-tv-monitor.html",
+      "snippet": "May 7, 2022 · Download the PDF User manual. You would be looking in the TV Menu system for Advanced Picture settings > Game …"
+    },
+    {
+      "title": "UI's text rendering on Windows 10 - Ten Forums",
+      "url": "https://www.tenforums.com/general-support/104012-uis-text-rendering-windows-10-a.html",
+      "snippet": "Feb 9, 2018 · Thanks a lot Details: Windows 10 fully updated. NVIDIA video card driver fully updated. Adjust ClearType Text option …"
+    },
+    {
+      "title": "Ajuster et paramétrer ClearType sur Windows 10",
+      "url": "https://www.forum-entraide-informatique.com/ajuster-et-parametrer-cleartype-sur-windows-10/",
+      "snippet": "Jul 4, 2015 · Afin d'ajuster, d'optimiser, de modifier et paramétrer ClearType sous Windows 10, il existe une procédure. Nous vous …"
+    },
+    {
+      "title": "Forum d'Entraide Informatique (FEI)",
+      "url": "https://www.forum-entraide-informatique.com/",
+      "snippet": "Notre forum vient de déménager de chez ForumActif ! Le forum reste actif, nous travaillons sur son amélioration et sa structure."
+    },
+    {
+      "title": "Windows display issues on some websites - Cleartype?",
+      "url": "https://www.tenforums.com/browsers-email/196460-windows-display-issues-some-websites-cleartype.html",
+      "snippet": "Jul 24, 2022 · Windows display issues on some websites - Cleartype? Hi all. A while back I used the clear type option and I didn't like …"
+    }
+  ]
+}

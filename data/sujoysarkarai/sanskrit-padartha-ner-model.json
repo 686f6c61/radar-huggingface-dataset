@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "sujoysarkarai/sanskrit-padartha-ner-model",
+  "slug": "sujoysarkarai-sanskrit-padartha-ner-model",
+  "author": "sujoysarkarai",
+  "url": "https://huggingface.co/sujoysarkarai/sanskrit-padartha-ner-model",
+  "created_at": "2026-09-13T18:37:16.000Z",
+  "updated_at": "2026-09-13T18:37:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 433444443,
+  "storage_human": "433 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prime Video Ultra: Amazon lagert 4K/UHD in teurere ... - ComputerBase",
+      "url": "https://www.computerbase.de/news/wirtschaft/prime-video-ultra-amazon-lagert-4k-uhd-in-teurere-werbefrei-option-aus.96539/",
+      "snippet": "Mar 14, 2026 · Aus Amazon Prime Video Ad Free wird Amazon Prime Video Ultra und der Preis steigt. Dafür gibt es in Zukunft nicht …"
+    },
+    {
+      "title": "Amazon Prime Video | ComputerBase Forum",
+      "url": "https://www.computerbase.de/forum/threads/amazon-prime-video.2233052/",
+      "snippet": "Mar 11, 2025 · Hallo, ich habe den LG OLED C4. Immer wenn ich Amazon Prime App öffne, dann kommt immer diese nervige …"
+    },
+    {
+      "title": "亚马逊误将杰森·斯坦森未上映新片《怒之杀》放上流媒体平台导致泄 …",
+      "url": "https://www.zhihu.com/question/2073708146388726308",
+      "snippet": "登录/注册 电影 杰森·斯坦森 Amazon Prime Video 2026暑期档 亚马逊误将杰森·斯坦森未上映新片《怒之杀》放上流媒体平台导致泄 …"
+    },
+    {
+      "title": "primary,prime,primitive,principle作形容词时的区别是什么? - 知乎",
+      "url": "https://www.zhihu.com/question/614996269",
+      "snippet": "因此，虽然 \"principal\" 和 \"prime\" 在作形容词时都表示一定程度的权威性和重要性，但在具体的用法上有一些区别。 综合韦大黑和AI的 …"
+    },
+    {
+      "title": "テレビ（ビエラ） どのようなアプリが使えるのですか。 - テレビ",
+      "url": "https://jpn.faq.panasonic.com/app/answers/detail/a_id/42355/~/%E3%83%86%E3%83%AC%E3%83%93%EF%BC%88%E3%83%93%E3%82%A8%E3%83%A9%EF%BC%89%E3%80%80%E3%81%A9%E3%81%AE%E3%82%88%E3%81%86%E3%81%AA%E3%82%A2%E3%83%97%E3%83%AA%E3%81%8C%E4%BD%BF%E3%81%88%E3%82%8B%E3%81%AE%E3%81%A7%E3%81%99%E3%81%8B%E3%80%82",
+      "snippet": "テレビ（ビエラ）でYouTube、Netflix、Prime Videoなどのアプリで動画が視聴できないときは テレビ（ビエラ）にアプリを追加（ …"
+    }
+  ]
+}

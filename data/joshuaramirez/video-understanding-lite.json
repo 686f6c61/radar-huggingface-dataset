@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "joshuaramirez/video-understanding-lite",
+  "slug": "joshuaramirez-video-understanding-lite",
+  "author": "joshuaramirez",
+  "url": "https://huggingface.co/joshuaramirez/video-understanding-lite",
+  "created_at": "2026-09-13T12:55:24.000Z",
+  "updated_at": "2026-09-13T12:55:28.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "video-understanding",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/homepage",
+      "snippet": "© 2026 Google LLC."
+    },
+    {
+      "title": "HOME - YouTube",
+      "url": "https://www.youtube.com/@Home._.",
+      "snippet": "@home._."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/@YouTube/home-refresh-1",
+      "snippet": "Welcome to the official YouTube channel – a home for the biggest moments, the smallest obsessions, and everything in between. …"
+    },
+    {
+      "title": "Home Page - YouTube",
+      "url": "https://www.youtube.com/@HOME_PAGE",
+      "snippet": "Home Page @Home_page • 56 subscribers • 3 videos More about this channel ...more More about this channel ...more ...more"
+    }
+  ]
+}

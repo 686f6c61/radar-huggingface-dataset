@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Crowbys/crowby-1-sovereign",
+  "slug": "crowbys-crowby-1-sovereign",
+  "author": "Crowbys",
+  "url": "https://huggingface.co/Crowbys/crowby-1-sovereign",
+  "created_at": "2026-09-13T16:06:12.000Z",
+  "updated_at": "2026-09-13T16:11:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749888,
+  "parameters_human": "3.21B",
+  "storage_bytes": 2019378144,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - EZ Loader",
+      "url": "https://ezloader.com/",
+      "snippet": "EZ Loader is the one stop shop for any type of recreational boat trailer. Find your perfect trailer today!"
+    },
+    {
+      "title": "Gallery - EZ Loader",
+      "url": "https://ezloader.com/trailers-gallery/",
+      "snippet": "Browse the EZ Loader gallery to see our boat trailers in action — photos of models, configurations, and real customer setups."
+    },
+    {
+      "title": "EZ Loader Boat Trailer Parts Store. Suspension",
+      "url": "https://store.ezloader.com/suspension-components",
+      "snippet": "EZ Loader manufactures custom and adjustable boat trailers offering galvanized, powder-coated, aluminum, wet-painted & Tuff …"
+    },
+    {
+      "title": "EZ Loader Boat Trailer Parts Store. Crossmember Welded 79\" FC (Hvy …",
+      "url": "https://store.ezloader.com/cmbr-wldd-dbl-wv-79fc-black",
+      "snippet": "CROSSMEMBER WELDED DOUBLE WV 79\" FC BLACK Home/ Adjustable Parts/ Frame / Chassis/ Crossmembers/ Crossmember …"
+    },
+    {
+      "title": "Store - EZ Loader",
+      "url": "https://ezloader.com/store/",
+      "snippet": "Shop official EZ Loader trailer parts and accessories. Find genuine replacement components and gear built to match your EZ Loader …"
+    }
+  ]
+}

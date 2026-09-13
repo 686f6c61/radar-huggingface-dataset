@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "SurjoLabs/Surjo-test",
+  "slug": "surjolabs-surjo-test",
+  "author": "SurjoLabs",
+  "url": "https://huggingface.co/SurjoLabs/Surjo-test",
+  "created_at": "2026-09-12T17:26:45.000Z",
+  "updated_at": "2026-09-13T19:27:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6053980335,
+  "storage_human": "6.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "THE XXXXXX - YouTube Music",
+      "url": "https://music.youtube.com/channel/UCXTJTDRDu5fgo_LLJfiSiKQ",
+      "snippet": "Listen to music from THE XXXXXX on YouTube Music - a dedicated music app with official songs, music videos, remixes, covers, …"
+    },
+    {
+      "title": "GGUFGuy (The Supreme GGUF-SafeTensors Guy) – Likes",
+      "url": "https://huggingface.co/GGUFGuy/activity/likes",
+      "snippet": "AI & ML interests. I like llms. Recent Activity. updated a model in 23 ... SurjoLabs/Surjo-50m. 53.8M • Updated 4 days ago • 65 • 9. liked a dataset 9 ..."
+    },
+    {
+      "title": "xxxxxx - Vimeo",
+      "url": "https://vimeo.com/xxxxxx?msockid=3f4c2addcb2667231d073d0eca91663e",
+      "snippet": "xxxxxx is a member of Vimeo, the home for high quality videos and the people who love them."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube/xxxxxxx",
+      "snippet": "YouTube's official YouTube channel You found us. Welcome to the official YouTube channel – a home for the biggest moments, the …"
+    },
+    {
+      "title": "XXXXX - YouTube Music",
+      "url": "https://music.youtube.com/playlist?list=OLAK5uy_kIHAAnEL7mmwdwrviv1sdv-opf-V_ncT0",
+      "snippet": "Sign in to create & share playlists, get personalized recommendations, and more. Space Of Variations. XXXXX. EP • 2020. 6 songs • …"
+    }
+  ]
+}

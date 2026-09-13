@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ToastyPigeon/Gemma-4-Test-GGUFs",
+  "slug": "toastypigeon-gemma-4-test-ggufs",
+  "author": "ToastyPigeon",
+  "url": "https://huggingface.co/ToastyPigeon/Gemma-4-Test-GGUFs",
+  "created_at": "2026-07-09T18:23:06.000Z",
+  "updated_at": "2026-09-13T18:40:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 88,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 25339273216,
+  "storage_human": "25.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Guest Communication Service 24/7 Receptionists | Guesty",
+      "url": "https://www.guesty.com/features/guest-communication-management/",
+      "snippet": "Our Guest Communication Service team works 24/7 to manually handle all guest communication for your Airbnb and vacation rental …"
+    },
+    {
+      "title": "Guesty: Airbnb & Vacation Rental Software, Built on AI",
+      "url": "https://www.guesty.com/",
+      "snippet": "Guest messaging Save time on manual communication with an AI agent that reads incoming messages, detects sentiment, and …"
+    },
+    {
+      "title": "Managing automated messages – Guesty Help Center",
+      "url": "https://help-lite.guesty.com/hc/en-gb/articles/24924747633309-Managing-automated-messages",
+      "snippet": "Message automations help you save time and ensure consistent communication with your guests, owners, and team members. …"
+    },
+    {
+      "title": "Automated Messaging Overview - Guesty For Hosts Help Center",
+      "url": "https://help.guestyforhosts.com/hc/en-gb/articles/9350829849885-Automated-Messaging-Overview",
+      "snippet": "Use our guest arrival form to gather contact details, verify guests’ phone numbers, and receive a full guest list for active listings. Send …"
+    },
+    {
+      "title": "Automate Guest Communication with Guesty Lite | Step-by-Step Guide",
+      "url": "https://www.youtube.com/watch?v=iQvkxdk9GlA",
+      "snippet": "Dec 22, 2025 · Clear, timely communication makes all the difference in the guest experience. 💬 With Automated Messages in Guesty …"
+    }
+  ]
+}

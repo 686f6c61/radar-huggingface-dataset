@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Prakharpandey31/qwen2.5-vl-3b-grpo-screenspot-web",
+  "slug": "prakharpandey31-qwen2-5-vl-3b-grpo-screenspot-web",
+  "author": "Prakharpandey31",
+  "url": "https://huggingface.co/Prakharpandey31/qwen2.5-vl-3b-grpo-screenspot-web",
+  "created_at": "2026-09-13T13:00:11.000Z",
+  "updated_at": "2026-09-13T13:04:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "grpo",
+    "rl",
+    "gui-grounding",
+    "vision-language",
+    "lora",
+    "dataset:rootsautomation/ScreenSpot",
+    "base_model:Qwen/Qwen2.5-VL-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-VL-3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 262462297,
+  "storage_human": "262 MB",
+  "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Request Rejected",
+      "url": "https://www.sso.qiwa.sa/ar/sign-in",
+      "snippet": "Sign in to Qiwa to access labor market services and manage your account."
+    },
+    {
+      "title": "Request Rejected - Qiwa",
+      "url": "https://www.qiwa.sa/ar/",
+      "snippet": "The requested URL was rejected. Please consult with your administrator. Your support ID is: 4474437246059038436 [Go Back]"
+    },
+    {
+      "title": "Qiwa",
+      "url": "http://qiwa.sa/",
+      "snippet": "Qiwa is an online platform offering tools and services to manage business operations and enhance career paths in Saudi Arabia."
+    },
+    {
+      "title": "Request Rejected",
+      "url": "https://sso.qiwa.sa/sign-in",
+      "snippet": "Sign in to Qiwa for seamless access to services on mobile and desktop devices."
+    },
+    {
+      "title": "منصة قوى - Request Rejected",
+      "url": "https://www.portal.qiwa.sa/",
+      "snippet": "منصة قوى توفر خدمات إلكترونية مبتكرة لتسهيل التعاملات الرسمية وتحقيق المرونة في إدارة الأعمال."
+    }
+  ]
+}

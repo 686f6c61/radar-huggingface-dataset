@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "circulus/whisper-base-int8-ov",
+  "slug": "circulus-whisper-base-int8-ov",
+  "author": "circulus",
+  "url": "https://huggingface.co/circulus/whisper-base-int8-ov",
+  "created_at": "2026-09-13T14:04:45.000Z",
+  "updated_at": "2026-09-13T14:04:54.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "openvino",
+    "whisper",
+    "int8",
+    "circulus",
+    "ov-courseware",
+    "base_model:openai/whisper-base",
+    "base_model:finetune:openai/whisper-base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 78172557,
+  "storage_human": "78 MB",
+  "base_model": "openai/whisper-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Date Calculator: Add to or Subtract From a Date",
+      "url": "https://www.timeanddate.com/date/dateadd.html",
+      "snippet": "Find a specific business date and calculate the working days in a given period. The Date Calculator adds or subtracts days, weeks, …"
+    },
+    {
+      "title": "60 Days from Today - Date Calculator",
+      "url": "https://timedatecalc.com/60-days-from-today",
+      "snippet": "To get started, enter the start date to which you need to add/subtract days (today's date is initially displayed). Use the calendar for …"
+    },
+    {
+      "title": "60 Days From Today",
+      "url": "https://calculator.today/60-days-from-today",
+      "snippet": "2 days ago · This calculator helps you instantly find what date falls exactly 60 days from today. It also provides useful calendar …"
+    },
+    {
+      "title": "Date Calculator",
+      "url": "https://www.calculator.net/date-calculator.html",
+      "snippet": "Jan 1, 2026 · This free date calculator computes the difference between two dates. It can also add to or subtract from a date. Both …"
+    },
+    {
+      "title": "What is 60 Days From Today? - Calculatio",
+      "url": "https://calculat.io/en/date/count/60--days--from--today",
+      "snippet": "Jan 1, 2021 · For example, it can help you find out when Will It Be 60 Days From Today? (The answer is: November 10, 2026). With …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "lsh9034/ci-net",
+  "slug": "lsh9034-ci-net",
+  "author": "lsh9034",
+  "url": "https://huggingface.co/lsh9034/ci-net",
+  "created_at": "2026-09-13T13:16:37.000Z",
+  "updated_at": "2026-09-13T14:07:58.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "meteorology",
+    "convection-initiation",
+    "satellite",
+    "radar",
+    "simvp",
+    "nowcasting",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4762356662,
+  "storage_human": "4.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BGS technic | Kohlendioxid-Lecktester für Motoren | online kaufen",
+      "url": "https://www.bgs-shop.de/Produkte/Werkstattbedarf/Pruefgeraete/Lecksucher/Kohlendioxid-Lecktester-fuer-Motoren.html",
+      "snippet": "geeignet für Benzin-, Diesel- und Gasmotoren ermöglicht den Nachweis kleinster Mengen Kohlendioxid in der Kühlwasserflüssigkeit …"
+    },
+    {
+      "title": "Kohlendioxid-Lecktester für Motoren - werkzeuge-schmidt.de",
+      "url": "https://werkzeuge-schmidt.de/unsere-produkte/werkstattbedarf/pruefgeraete/lecksucher/kohlendioxid-lecktester-fuer-motoren.html",
+      "snippet": "geeignet für Benzin-, Diesel- und Gasmotoren ermöglicht den Nachweis kleinster Mengen Kohlendioxid in der Kühlwasserflüssigkeit …"
+    },
+    {
+      "title": "BGS 8037 | Kohlendioxid-Lecktester für Motoren | CO2-Kühlwassertest",
+      "url": "https://www.amazon.de/BGS/dp/B094PBH7HH",
+      "snippet": "geeignet für Benzin-, Diesel- und Gasmotoren ermöglicht den Nachweis kleinster Mengen Kohlendioxid in der Kühlwasserflüssigkeit …"
+    },
+    {
+      "title": "Kohlendioxid-Lecktester für Motoren, 98,32 €",
+      "url": "https://www.g-part.de/Kohlendioxid-Lecktester-fuer-Motoren",
+      "snippet": "geeignet für Benzin-, Diesel- und Gasmotoren ermöglicht den Nachweis kleinster Mengen Kohlendioxid in der Kühlwasserflüssigkeit …"
+    },
+    {
+      "title": "BGS Kohlendioxid-Lecktester für Motoren | tuning-parts24",
+      "url": "https://www.tuning-parts24.de/p/bgs-kohlendioxid-lecktester-fuer-motoren.html",
+      "snippet": "Das Gerät weist selbst geringste Mengen an Kohlendioxid in der Kühlflüssigkeit nach, indem die Testflüssigkeit durch chemische …"
+    }
+  ]
+}

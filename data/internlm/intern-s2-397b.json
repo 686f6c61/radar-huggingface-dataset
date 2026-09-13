@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "internlm/Intern-S2-397B",
+  "slug": "internlm-intern-s2-397b",
+  "author": "internlm",
+  "url": "https://huggingface.co/internlm/Intern-S2-397B",
+  "created_at": "2026-09-13T03:20:35.000Z",
+  "updated_at": "2026-09-13T03:49:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 16,
+  "downloads_30d": 0,
+  "trending_score": 16,
+  "parameters": 403423094768,
+  "parameters_human": "403.42B",
+  "storage_bytes": 806874186039,
+  "storage_human": "806.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "حرف الهاء \"هـ\" - YouTube",
+      "url": "https://www.youtube.com/watch?v=xOCgS3jjfF0",
+      "snippet": "Oct 12, 2024 · مرحبًا بكم في \"حديقة الأبجدية العربية\"! في هذا الفيديو التعليمي المميز، سنتعرف على حرف الهاء (هـ)، الحرف ..."
+    },
+    {
+      "title": "تاء مربوطة - ويكيبيديا",
+      "url": "https://ar.wikipedia.org/wiki/%D8%AA%D8%A7%D8%A1_%D9%85%D8%B1%D8%A8%D9%88%D8%B7%D8%A9",
+      "snippet": "أصل التاء المربوطة (ة) هو تاء مفتوحة (ت)، وقد ظهرت بعد كتابة القرآن الكريم؛ من جملة التطوّرات التي لحقت بالخط بالعربي؛ وذلك لحاجة الكتبة تمييزها فهي تلفظ تاء في حالة الوصل وهاء شبه ملفوظة …"
+    },
+    {
+      "title": "تعلم حروف الهجاء على طريقة أبجد - حرف الهاء - YouTube",
+      "url": "https://www.youtube.com/watch?v=r8FDQNtpcTs",
+      "snippet": "Jun 3, 2018 · تطبيق أبجديات تطبيق تعليمي للأطفال باللغة العربية، 28 حرفًا عربيًا سنتعلمه يوميًا بطريقة أبجد الخاصة ..."
+    },
+    {
+      "title": "هاء - ويكيبيديا",
+      "url": "https://ar.wikipedia.org/wiki/%D9%87%D8%A7%D8%A1",
+      "snippet": "رأس الهاء (هـ) (وتكتب أيضا بكشيدة «هـ» أو قد تأتي عادية «ه») ترمز لكلمة «هجري» لوصف السنة بأنها هجرية ، وتضاف بعد أرقام السنة، مثلاً: 1429 هـ، ورأس الهاء مختلفة عن حرف الهاء …"
+    },
+    {
+      "title": "ه - ويكيبيديا",
+      "url": "https://arz.wikipedia.org/wiki/%D9%87",
+      "snippet": "راس حرف هاء بتكتب كده (هـ‍), اما الهاء العاديه بتكتب كده (ه), وده بيرمز لتاريخ الهجرى القمرى واللى بيصف انها هجريه, وبتضاف ارقام السنه زى: 1439هـ, ولكن راس الهاء العربى \"هـ\" بتختلف عن …"
+    }
+  ]
+}

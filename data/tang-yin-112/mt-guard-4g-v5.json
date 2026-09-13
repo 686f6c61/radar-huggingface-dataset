@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Tang-yin-112/mt-guard-4g-v5",
+  "slug": "tang-yin-112-mt-guard-4g-v5",
+  "author": "Tang-yin-112",
+  "url": "https://huggingface.co/Tang-yin-112/mt-guard-4g-v5",
+  "created_at": "2026-09-13T17:12:37.000Z",
+  "updated_at": "2026-09-13T17:13:02.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "microtensor",
+    "guard",
+    "hallucination-detection",
+    "base_model:meta-llama/Llama-3.2-3B-Instruct",
+    "base_model:quantized:meta-llama/Llama-3.2-3B-Instruct",
+    "license:llama3.2",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749888,
+  "parameters_human": "3.21B",
+  "storage_bytes": 2036587251,
+  "storage_human": "2.0 GB",
+  "base_model": "meta-llama/Llama-3.2-3B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tang Frères - Supermarchés asiatiques depuis 1976",
+      "url": "https://www.tang-freres.fr/",
+      "snippet": "6 days ago · Pionnier de l’import de produits alimentaires asiatiques en France, la société Tang Frères anticipe depuis ses débuts les …"
+    },
+    {
+      "title": "Dynastie Tang — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Dynastie_Tang",
+      "snippet": "Au fil du temps, l'empereur se reposa de plus en plus sur l'aristocratie de Chang'an et du Nord-Ouest, comme les premiers Tang, …"
+    },
+    {
+      "title": "Tang (marque) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Tang_(marque)",
+      "snippet": "Tang est une boisson sucrée lyophilisée, au goût de fruit et non gazeuse originaire des États-Unis."
+    },
+    {
+      "title": "Nos supermarchés et traiteurs asiatiques | Tang Frères",
+      "url": "https://www.tang-freres.fr/supermarche-asiatique/",
+      "snippet": "Pour en savoir plus, retrouvez sur la page dédiée à chaque magasin Tang Frères les informations détaillées, les coordonnées, les …"
+    },
+    {
+      "title": "La célèbre enseigne asiatique Tang Frères s'implante dans une ... - Actu",
+      "url": "https://actu.fr/ile-de-france/herblay-sur-seine_95306/la-celebre-enseigne-asiatique-tang-freres-simplante-dans-une-des-plus-grandes-zones-commerciales-de-france_64720893.html",
+      "snippet": "Aug 29, 2026 · Tang Frères, créée il y a 50 ans, s'implante à la Patte d'Oie d'Herblay. C'est le 10e supermarché de la marque lancée …"
+    }
+  ]
+}

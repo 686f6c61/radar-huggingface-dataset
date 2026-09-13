@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "KingHEA/Bard_1.0",
+  "slug": "kinghea-bard_1-0",
+  "author": "KingHEA",
+  "url": "https://huggingface.co/KingHEA/Bard_1.0",
+  "created_at": "2026-09-13T17:53:48.000Z",
+  "updated_at": "2026-09-13T18:00:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Corriere della Sera: News e Ultime notizie in tempo reale da Italia e …",
+      "url": "https://www.corriere.it/",
+      "snippet": "Oct 6, 2023 · Corriere della Sera è il primo quotidiano online aggiornato con le ultime notizie di Cronaca, Politica, Economia, Sport, …"
+    },
+    {
+      "title": "Corriere della Sera - Ultime Notizie",
+      "url": "https://www.corriere.it/il-punto/",
+      "snippet": "Notizie e approfondimenti di cronaca, politica, economia e sport con foto, immagini e video di Corriere TV. Meteo, salute, guide …"
+    },
+    {
+      "title": "Corriere della Sera - Corriere Milano: le ultime news dalla Lombardia",
+      "url": "https://milano.corriere.it/",
+      "snippet": "Le ultime news dalla città di Milano e dalla Lombardia in tempo reale: cronaca, sport, politica ed economia. Rimani aggiornato con le …"
+    },
+    {
+      "title": "Il Corriere - Quotidiano di informazione nazionale",
+      "url": "https://www.ilcorriere.it/",
+      "snippet": "19 hours ago · Scopri le ultime notizie dall'Italia: cronaca, politica, economia, cultura e molto altro. Rimani aggiornato con …"
+    },
+    {
+      "title": "Corriere della Sera: news e ultime notizie oggi da Italia e Mondo",
+      "url": "https://embed.corriere.it/",
+      "snippet": "La (triste) ironia social sul leopardo obes... La scimmietta dà da mangiare al pappagallo:... Parco Natura Viva di Bussolengo, nati due …"
+    }
+  ]
+}

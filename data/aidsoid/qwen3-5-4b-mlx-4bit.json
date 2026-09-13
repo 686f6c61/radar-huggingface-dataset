@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "aidsoid/Qwen3.5-4B-MLX-4bit",
+  "slug": "aidsoid-qwen3-5-4b-mlx-4bit",
+  "author": "aidsoid",
+  "url": "https://huggingface.co/aidsoid/Qwen3.5-4B-MLX-4bit",
+  "created_at": "2026-09-13T14:04:00.000Z",
+  "updated_at": "2026-09-13T14:04:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "qwen3.5",
+    "vision-language-model",
+    "quantized",
+    "4bit",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 3054290038,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux pièces …"
+    },
+    {
+      "title": "Descargar YouTube: PC / Mac / Android (APK)",
+      "url": "https://es.ccm.net/descargas/entretenimiento/6598-youtube/",
+      "snippet": "Feb 12, 2024 · YouTube se puede conectar a Facebook, Twitter, Talk, Reddit, Pinterest, Tumblr, LinkedIn y más. Asimismo, …"
+    },
+    {
+      "title": "Descargar Snaptube: PC, Android (APK) - CCM",
+      "url": "https://es.ccm.net/descargas/internet/6550-snaptube/",
+      "snippet": "Feb 6, 2024 · Snaptube es un programa que descarga de forma rápida y sencilla contenidos de YouTube y otras plataformas como …"
+    },
+    {
+      "title": "Que signifie l'horloge dans les profils facebook - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38232291-que-signifie-l-horloge-dans-les-profils-facebook",
+      "snippet": "Bonjour, Que signifie la pendule noire dans un des profils Facebook que je consulte regulierement. Merci par avance Android / …"
+    },
+    {
+      "title": "Facebook Actualité, guides pratiques et guides d'achat - ZDNET",
+      "url": "https://www.zdnet.fr/facebook-4000085268q.htm",
+      "snippet": "Aug 27, 2026 · Les derniers articles et analyses de la rédaction sur la thématique Facebook. Tout ce qu’il faut savoir sur l’actualité …"
+    }
+  ]
+}

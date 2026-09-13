@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "llmware/qwen-3.5-9b-ov",
+  "slug": "llmware-qwen-3-5-9b-ov",
+  "author": "llmware",
+  "url": "https://huggingface.co/llmware/qwen-3.5-9b-ov",
+  "created_at": "2026-07-07T08:14:03.000Z",
+  "updated_at": "2026-09-13T18:34:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "openvino",
+    "qwen3_5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6123026303,
+  "storage_human": "6.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Coupes | 2026 New Coupe Cars Rankings | CarBuzz",
+      "url": "https://carbuzz.com/cars/coupes/",
+      "snippet": "Feb 5, 2026 · Apart from being some of the best-looking cars of all time, coupes are often powerful and luxurious, too. From old …"
+    },
+    {
+      "title": "Best coupés 2026 – the sleekest models reviewed and rated",
+      "url": "https://www.whatcar.com/best/coups/n17019",
+      "snippet": "Nov 22, 2025 · Tempted by the idea of a stylish coupé? Then check out our comprehensive rundown of the top 10 best models on the …"
+    },
+    {
+      "title": "Best Coupes for 2026 - MotorTrend's Tested Top Picks",
+      "url": "https://www.motortrend.com/rankings/coupes",
+      "snippet": "Jul 31, 2020 · Every coupe on this list has been reviewed by seasoned editors and vehicle testers who combine objective test results …"
+    },
+    {
+      "title": "Best Coupes of 2026 and 2027 - Expert Reviews and Rankings | Edmunds",
+      "url": "https://www.edmunds.com/coupe/?msockid=1af8ec217edd6d1c2021fbf27f016cc2",
+      "snippet": "Edmunds expert reviewers rank the best coupes of 2026 and 2027 on a 10-point scale that includes performance, comfort, interior, …"
+    },
+    {
+      "title": "Best Luxury Coupes of 2026 and 2027 - Edmunds",
+      "url": "https://www.edmunds.com/coupe/luxury/?msockid=1af8ec217edd6d1c2021fbf27f016cc2",
+      "snippet": "The Edmunds experts test drive luxury coupe contenders on our test track and in the real world. Our ratings assess performance, …"
+    }
+  ]
+}

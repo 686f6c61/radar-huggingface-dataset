@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "andreadm/reddit-pulse-gemma2_2b-xqdora",
+  "slug": "andreadm-reddit-pulse-gemma2_2b-xqdora",
+  "author": "andreadm",
+  "url": "https://huggingface.co/andreadm/reddit-pulse-gemma2_2b-xqdora",
+  "created_at": "2026-09-13T13:23:30.000Z",
+  "updated_at": "2026-09-13T13:54:06.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gemma2",
+    "economics",
+    "finance",
+    "inflation",
+    "inflation-expectations",
+    "reddit",
+    "lora",
+    "dora",
+    "xqdora",
+    "text-classification",
+    "en",
+    "base_model:google/gemma-2-2b",
+    "base_model:adapter:google/gemma-2-2b",
+    "license:gemma",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41487707,
+  "storage_human": "41 MB",
+  "base_model": "google/gemma-2-2b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Directional inflation-expectation classification (up / neutral / down)",
+      "dataset": "Reddit inflation gold set (Del Monaco, Longo, Marcucci & Tafani, 2026), held-out test split of seed 3266123502",
+      "metric": null,
+      "value": 0.7194
+    },
+    {
+      "task": "Directional inflation-expectation classification (up / neutral / down)",
+      "dataset": "Reddit inflation gold set (Del Monaco, Longo, Marcucci & Tafani, 2026), held-out test split of seed 3266123502",
+      "metric": "F1 (weighted)",
+      "value": 0.7174
+    },
+    {
+      "task": "Directional inflation-expectation classification (up / neutral / down)",
+      "dataset": "Reddit inflation gold set (Del Monaco, Longo, Marcucci & Tafani, 2026), held-out test split of seed 3266123502",
+      "metric": "F1 (macro)",
+      "value": 0.6923
+    },
+    {
+      "task": "Directional inflation-expectation classification (up / neutral / down)",
+      "dataset": "Reddit inflation gold set (Del Monaco, Longo, Marcucci & Tafani, 2026), held-out test split of seed 3266123502",
+      "metric": "ROC-AUC (macro, one-vs-rest)",
+      "value": 0.8562
+    }
+  ],
+  "sources": [
+    {
+      "title": "Délai validation bénéficiaire Banque Postale [Résolu]",
+      "url": "https://droit-finances.commentcamarche.com/forum/affich-7266508-delai-de-validation-nouveau-beneficiaire-la-banque-postal",
+      "snippet": "Sep 15, 2016 · Délai validation nouveau bénéficiaire la banque postale- Meilleures réponses Bénéficiaire en cours de validation, autre …"
+    },
+    {
+      "title": "Contrat premunys la banque postale - Droit-finances",
+      "url": "https://droit-finances.commentcamarche.com/forum/affich-7539960-contrat-premunys-la-banque-postale",
+      "snippet": "Jun 22, 2017 · Contrat premunys la banque postale Fermé Banque Fjord - Modifié le 22 juin 2017 à 18:24 Cris - 31 mai 2018 à 11:47"
+    },
+    {
+      "title": "Contacter la banque postale par courriel - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-16843372-contacter-la-banque-postale-par-courriel",
+      "snippet": "Ce serait bien si la banque postale développait véritablement de manière intégré tous ses services avec la Poste, par exemple …"
+    },
+    {
+      "title": "Investir dans les obligations d’État : bon ou mauvais placement",
+      "url": "https://www.60millions-mag.com/banque-assurance/article/investir-dans-les-obligations-d-etat-bon-ou-mauvais-placement-20260116/",
+      "snippet": "Jan 16, 2026 · La Banque publique d’investissement française Bpifrance a récemment lancé le fonds Bpifrance Défense. D’une taille …"
+    },
+    {
+      "title": "PROTECTYS Autonomie Banque Postale Prévoyance: un scandale!",
+      "url": "https://www.60millions-mag.com/forum/d/189705-protectys-autonomie-banque-postale-prevoyance-un-scandale?page=2",
+      "snippet": "Jun 5, 2021 · La Banque Postale Prévoyance doit prendre dans cette gestion prolongée la date de la demande (réception du dossier …"
+    }
+  ]
+}

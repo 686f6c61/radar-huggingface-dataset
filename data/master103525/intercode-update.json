@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "master103525/intercode-update",
+  "slug": "master103525-intercode-update",
+  "author": "master103525",
+  "url": "https://huggingface.co/master103525/intercode-update",
+  "created_at": "2026-09-13T17:55:50.000Z",
+  "updated_at": "2026-09-13T17:56:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth--Meta-Llama-3.1-8B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1359454961,
+  "storage_human": "1.4 GB",
+  "base_model": "unsloth--Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Geburtstagseinladungen – Einladungskarten zum Geburtstag",
+      "url": "https://www.kartenmacherei.de/geburtstagseinladungen.html",
+      "snippet": "Du hast dich spontan für eine Feier entschieden und bist mit den Einladungen für deinen Geburtstag spät dran? Kein Problem, dafür …"
+    },
+    {
+      "title": "Einladungskarten zum Geburtstag selber gestalten | CEWE",
+      "url": "https://www.cewe.de/grusskarten/designauswahl/geburtstagseinladungen.html",
+      "snippet": "Lassen Sie bei CEWE Einladungskarten zum Geburtstag drucken und informieren Sie Familie und Freunde mit einer Klappkarte in …"
+    },
+    {
+      "title": "Geburtstagseinladungen online gestalten | wunderkarten",
+      "url": "https://www.wunderkarten.de/geburtstag/einladungskarten",
+      "snippet": "Geburtstagseinladungen selbst gestalten: originelle Vorlagen für runde Geburtstage, Kindergeburtstag & mehr. Personalisierbar mit …"
+    },
+    {
+      "title": "Einladungskarten Geburtstag | ROSSMANN Fotowelt",
+      "url": "https://karten.rossmann-fotowelt.de/category/einladungskarten-geburtstag",
+      "snippet": "Innerhalb weniger Klicks könnt ihr eure ganz individuellen Einladungskarten zum Geburtstag erstellen. Bei den Vorlagen in unserer …"
+    },
+    {
+      "title": "Einladungskarten zum Geburtstag kostenlos - Gratis Einladung drucken",
+      "url": "https://www.geburtstagswelt.de/einladungskarten-zum-geburtstag/",
+      "snippet": "Mit diesen Vorlagen für Einladungskarten zum Geburtstag erstellt ihr im Handumdrehen die perfekte Geburtstagseinladung. Die …"
+    }
+  ]
+}

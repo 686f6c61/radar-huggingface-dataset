@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "vwdubb/Melinoe-Qwen3-8-27B-VL-FP8",
+  "slug": "vwdubb-melinoe-qwen3-8-27b-vl-fp8",
+  "author": "vwdubb",
+  "url": "https://huggingface.co/vwdubb/Melinoe-Qwen3-8-27B-VL-FP8",
+  "created_at": "2026-09-13T13:41:43.000Z",
+  "updated_at": "2026-09-13T13:44:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "base_model:bgg1996/Melinoe-Qwen3-8-27B-VL",
+    "base_model:quantized:bgg1996/Melinoe-Qwen3-8-27B-VL",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 38465169176,
+  "storage_human": "38.5 GB",
+  "base_model": "bgg1996/Melinoe-Qwen3-8-27B-VL",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mettre le module complementaire inquire - PC Astuces",
+      "url": "https://forum.pcastuces.com/mettre_le_module_complementaire_inquire-f23s40152.htm?page=1",
+      "snippet": "> Tous les forums > Forum Bureautique mettre le module complementaire inquire Ajouter un message à la discussion Page : [1] …"
+    },
+    {
+      "title": "Office 2007 et Office 2021 - PC Astuces",
+      "url": "https://forum.pcastuces.com/office_2007_et_office_2021-f23s43751.htm",
+      "snippet": "Feb 18, 2024 · Bonjour, Pour ma part, j'ai Office 2007 installé, et j'ai dû installer Office 365 pour accéder à un document de mémoire …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/it-it/windows/forum/all/scaricare-e-registrare-mscomctlocx-su-windows-10/134be2ea-5e23-46b2-9bfa-6daaac873436",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/ja-jp/msoffice/forum/msoffice_word-mso_other/ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â°ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¹/d891c1c3-9a36-4f64-a125-27ed2243e629",
+      "snippet": ""
+    },
+    {
+      "title": "impossible de réinstaller MS OFFICE 365 - forum.pcastuces.com",
+      "url": "https://forum.pcastuces.com/impossible_de_reinstaller_ms_office_365-f16s3173.htm",
+      "snippet": "Jan 16, 2026 · Ceci fait, réessaye d'installer Office 365. Remarque personnelle : plutôt que d'utiliser Office 365 qui est un système par …"
+    }
+  ]
+}

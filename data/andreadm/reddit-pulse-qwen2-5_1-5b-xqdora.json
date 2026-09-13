@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "andreadm/reddit-pulse-qwen2.5_1.5b-xqdora",
+  "slug": "andreadm-reddit-pulse-qwen2-5_1-5b-xqdora",
+  "author": "andreadm",
+  "url": "https://huggingface.co/andreadm/reddit-pulse-qwen2.5_1.5b-xqdora",
+  "created_at": "2026-09-13T13:25:26.000Z",
+  "updated_at": "2026-09-13T13:55:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen2",
+    "economics",
+    "finance",
+    "inflation",
+    "inflation-expectations",
+    "reddit",
+    "lora",
+    "dora",
+    "xqdora",
+    "text-classification",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16244751,
+  "storage_human": "16 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Directional inflation-expectation classification (up / neutral / down)",
+      "dataset": "Reddit inflation gold set (Del Monaco, Longo, Marcucci & Tafani, 2026), held-out test split of seed 1329496050",
+      "metric": null,
+      "value": 0.6763
+    },
+    {
+      "task": "Directional inflation-expectation classification (up / neutral / down)",
+      "dataset": "Reddit inflation gold set (Del Monaco, Longo, Marcucci & Tafani, 2026), held-out test split of seed 1329496050",
+      "metric": "F1 (weighted)",
+      "value": 0.6779
+    },
+    {
+      "task": "Directional inflation-expectation classification (up / neutral / down)",
+      "dataset": "Reddit inflation gold set (Del Monaco, Longo, Marcucci & Tafani, 2026), held-out test split of seed 1329496050",
+      "metric": "F1 (macro)",
+      "value": 0.6538
+    },
+    {
+      "task": "Directional inflation-expectation classification (up / neutral / down)",
+      "dataset": "Reddit inflation gold set (Del Monaco, Longo, Marcucci & Tafani, 2026), held-out test split of seed 1329496050",
+      "metric": "ROC-AUC (macro, one-vs-rest)",
+      "value": 0.8355
+    }
+  ],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=1119838d6d3f62b026a9945e6ccd630d",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=1119838d6d3f62b026a9945e6ccd630d",
+      "snippet": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and …"
+    },
+    {
+      "title": "Microsoft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft",
+      "snippet": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington. The company …"
+    }
+  ]
+}

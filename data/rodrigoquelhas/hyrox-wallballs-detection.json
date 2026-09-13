@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RodrigoQuelhas/hyrox-wallballs-detection",
+  "slug": "rodrigoquelhas-hyrox-wallballs-detection",
+  "author": "RodrigoQuelhas",
+  "url": "https://huggingface.co/RodrigoQuelhas/hyrox-wallballs-detection",
+  "created_at": "2026-09-13T12:55:08.000Z",
+  "updated_at": "2026-09-13T12:55:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "یخ - ویکی‌پدیا، دانشنامهٔ آزاد",
+      "url": "https://fa.wikipedia.org/wiki/%DB%8C%D8%AE",
+      "snippet": "Frost heave Frost flower(sea ice) یخچال طبیعی یخ‌پوشه شفاف Hair ice کوه یخی(یخزایی) قندیل یخ"
+    },
+    {
+      "title": "یخ - معنی در دیکشنری آبادیس",
+      "url": "https://abadis.ir/fatofa/%DB%8C%D8%AE/",
+      "snippet": "یخ فرم جامدِ آب است. تقریباً حدود یک درصد سطح زمین به وسیلهٔ یخسارهای وسیعی مانند نواحی قطب جنوب و گروئنلند پوشیده شده که ضخامت آنها در بعضی جاها از ۲۰۰۰ متر تجاوز می کند."
+    },
+    {
+      "title": "یخ - Wiktionary, the free dictionary",
+      "url": "https://en.wiktionary.org/wiki/%DB%8C%D8%AE",
+      "snippet": "Sep 2, 2026 · یخ Persian Etymology From Proto-Iranian *Háyxam, ultimately from Proto-Indo-European *h₁eyH-. Compare Ossetian …"
+    },
+    {
+      "title": "معنی یخ | واژه یاب",
+      "url": "https://vajehyab.com/?q=%DB%8C%D8%AE",
+      "snippet": "جست‌وجوی معنی «یخ» در لغت نامه های دهخدا، معین، عمید، سره، مترادف و متضاد، فرهنگستان، دیکشنری انگلیسی و فارسی در بیش از یک میلیون واژه."
+    },
+    {
+      "title": "14 کاربرد جالب و موارد استفاده از یخ در خانه داری و آشپزی",
+      "url": "https://namnak.com/%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%D8%AF%D9%87%D8%A7%DB%8C-%DB%8C%D8%AE.p31375",
+      "snippet": "معمولا در هر خانه ای ، یخ پیدا می شود که همه ما با کاربرد معمول آن آشنا هستیم و از آن برای خنک کردن آب و نوشیدنی های دیگر استفاده می کنیم مخصوصا اگر فصل تابستان باشد ، یخ با …"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "fwizzer1/Fwizzer-LFM2.5-VL-3B-RU-GGUF",
+  "slug": "fwizzer1-fwizzer-lfm2-5-vl-3b-ru-gguf",
+  "author": "fwizzer1",
+  "url": "https://huggingface.co/fwizzer1/Fwizzer-LFM2.5-VL-3B-RU-GGUF",
+  "created_at": "2026-09-13T14:44:45.000Z",
+  "updated_at": "2026-09-13T14:59:57.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "vision",
+    "multimodal",
+    "vlm",
+    "reasoning",
+    "deepseek-r1",
+    "cot",
+    "chain-of-thought",
+    "llama.cpp",
+    "lmstudio",
+    "ollama",
+    "liquid",
+    "lfm2.5",
+    "image-text-to-text",
+    "ru",
+    "en",
+    "dataset:fwizzer1/fwizzer-v3-titan-agentic",
+    "base_model:LiquidAI/LFM2.5-VL-3B",
+    "base_model:quantized:LiquidAI/LFM2.5-VL-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 426285296,
+  "parameters_human": "426.3M",
+  "storage_bytes": 853993952,
+  "storage_human": "854 MB",
+  "base_model": "LiquidAI/LFM2.5-VL-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "阿丽娜·萨巴伦卡_百度百科",
+      "url": "https://baike.baidu.com/item/%E9%98%BF%E4%B8%BD%E5%A8%9C%C2%B7%E8%90%A8%E5%B7%B4%E4%BC%A6%E5%8D%A1/55797311",
+      "snippet": "阿丽娜·萨巴伦卡（Aryna Sabalenka），1998年5月5日出生于白俄罗斯明斯克，白俄罗斯女子网球运动员，四届大满贯女单冠军得主 …"
+    },
+    {
+      "title": "萨巴伦卡是哪国人合集 - 百度文库",
+      "url": "https://wenku.baidu.com/aggs/f2baca7401f69e31433294c7.html",
+      "snippet": "萨巴伦卡是谁？2025年终世界第一，暴力网球女王，GUCCI代言人 阿丽娜·萨巴伦卡，这位来自白俄罗斯的 1998 年出生的网球运动 …"
+    },
+    {
+      "title": "阿里娜·萨巴伦卡 - 维基百科，自由的百科全书",
+      "url": "https://zh.wikipedia.org/wiki/%E9%98%BF%E9%87%8C%E5%A8%9C%C2%B7%E8%90%A8%E5%B7%B4%E4%BC%A6%E5%8D%A1",
+      "snippet": "阿里娜·谢尔盖耶芙娜·萨巴伦卡[註 1] （白俄羅斯語： Арына Сяргееўна Сабаленка， 羅馬化：Aryna Siarhiejeŭna Sabalenka， 發 …"
+    },
+    {
+      "title": "萨巴伦卡是哪个国家的？白俄罗斯名将国籍、昵称与大满贯成就全解析",
+      "url": "https://wenku.baidu.com/view/caead8ecf124ccbff121dd36a32d7375a517c66c.html",
+      "snippet": "萨巴伦卡（Aryna Sabalenka）是白俄罗斯职业网球运动员，出生于该国首都明斯克。 作为当今女子网坛的顶尖力量，她已斩获四个大 …"
+    },
+    {
+      "title": "沙巴伦卡是哪国人 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/930630624153466859.html",
+      "snippet": "Apr 26, 2024 · 1. 沙巴伦卡是白俄罗斯人。 阿丽娜·萨巴伦卡（Aryna Sabalenka），1998年5月5日出生于白俄罗斯明斯克，是一位白 …"
+    }
+  ]
+}

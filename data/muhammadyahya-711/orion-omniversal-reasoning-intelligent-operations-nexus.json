@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "MuhammadYahya-711/Orion-Omniversal-Reasoning-Intelligent-Operations-Nexus",
+  "slug": "muhammadyahya-711-orion-omniversal-reasoning-intelligent-operations-nexus",
+  "author": "MuhammadYahya-711",
+  "url": "https://huggingface.co/MuhammadYahya-711/Orion-Omniversal-Reasoning-Intelligent-Operations-Nexus",
+  "created_at": "2026-09-13T11:24:37.000Z",
+  "updated_at": "2026-09-13T11:24:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "STANDAR OPERASIONAL PROSEDUR STERILISASI ALAT MEDIS",
+      "url": "https://esopi-bpsdm.kemenkumham.go.id/download/ed8a63ec9049d089b27ca36eab04f1c0.pdf",
+      "snippet": "Sterilisasi Alat yang sudah diberi tanda dimasukkan ke alat sterilisasi kering dengan jarak sekitar 1 cm selama 30 - 60 menit"
+    },
+    {
+      "title": "ALUR PELAYANAN STERILISASI - misterbian-rsudsbj.com",
+      "url": "https://www.misterbian-rsudsbj.com/wp-content/uploads/2022/09/SPO-ALUR-PELAYANAN-STERILISASI-Hasil-Monitoring-PPI-di-Unit-Sterilisasi-Foto-Alur-Pelayanan-Sterilisasi.pdf",
+      "snippet": "Keringkan dengan mesin pengering; Lakukan pengepakan, pelabelan, dan sterilisasi; Cek indikatator kimia dan mekanik, Segera …"
+    },
+    {
+      "title": "Prosedur Sterilisasi Alat Kesehatan yang Wajib Diketahui Perawat Baru",
+      "url": "https://akperbelitungkab.ac.id/prosedur-sterilisasi-alat-kesehatan-yang/",
+      "snippet": "Dec 1, 2025 · Temukan prosedur sterilisasi alat kesehatan yang wajib diketahui perawat baru. Simak tahapan, metode, alat, dan …"
+    },
+    {
+      "title": "STERILISASI",
+      "url": "https://www.misterbian-rsudsbj.com/wp-content/uploads/2022/09/PANDUAN-STERILISASI.pdf",
+      "snippet": "Area penyimpanan di unit sterilisasi di monitor dengan alat pengukur suhu dan kelembapan dan di buktikan dengan form monitoring …"
+    },
+    {
+      "title": "STANDART OPERASIONAL PROSEDUR STERILISASI ALAT KESEHATAN …",
+      "url": "https://perpustakaan.poltekkes-malang.ac.id/assets/file/kti/1601410033/lampiran_lampiran.pdf",
+      "snippet": "1. Pengertian : Suatu tindakan untuk membunuh kuman pathogen dan apatogen beserta sporanya pada peralatan perawatan dan …"
+    }
+  ]
+}

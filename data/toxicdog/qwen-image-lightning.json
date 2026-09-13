@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "toxicdog/Qwen-Image-Lightning",
+  "slug": "toxicdog-qwen-image-lightning",
+  "author": "toxicdog",
+  "url": "https://huggingface.co/toxicdog/Qwen-Image-Lightning",
+  "created_at": "2026-09-13T15:49:04.000Z",
+  "updated_at": "2026-09-13T15:49:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "Qwen-Image",
+    "distillation",
+    "LoRA",
+    "lora",
+    "text-to-image",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen-Image",
+    "base_model:adapter:Qwen/Qwen-Image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 65508591652,
+  "storage_human": "65.5 GB",
+  "base_model": "Qwen/Qwen-Image",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Libertines Annonces Gien, Libertines girl en Gien rencontre (s), …",
+      "url": "https://www.meslibertines.com/escorts/gien/",
+      "snippet": "Libertines en Gien. Trouvez vous les plus belles Libertines en Gien, sur MesLibertines.com"
+    },
+    {
+      "title": "Escort girl annonces Gien - Escorts Gien - Tescort",
+      "url": "https://www.tescort.com/escorts/gien",
+      "snippet": "Le site le plus visité en France en terme d'escort girl vérifiées vous propose des annonces sexe Gien et à proximité. Relaxez vous …"
+    },
+    {
+      "title": "Escort Gien : annonces vérifiées avec photos | EscortE",
+      "url": "https://www.escorte.com/escorts/gien",
+      "snippet": "Rencontrez des escorts à Gien : profils vérifiés, photos récentes et avis clients. Escort girl, trans et indépendantes disponibles près …"
+    },
+    {
+      "title": "Escort France - Annonces d'escort France et annuaire d'escort girl ...",
+      "url": "https://www.ladyxena.com/fr/escort-girl/france/loiret/escort-gien.html",
+      "snippet": "Escort en France, des milliers d'annonces d'escort en France, escort girl Ã Paris, escort girl Lyon, des escort girl ou occasionnelles …"
+    },
+    {
+      "title": "Les meilleures escortes de Gien sont ici ! - Private Modele",
+      "url": "https://privatemodele.com/escorts/centre-val-de-loire/loiret/gien",
+      "snippet": "Contactez instantanément les modèles qui vous intéressent parmi les milliers d’annonces publiées sur notre plateforme. Profitez …"
+    }
+  ]
+}

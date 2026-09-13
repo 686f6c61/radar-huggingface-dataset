@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "andreadm/reddit-pulse-qwen2.5_0.5b-xqdora",
+  "slug": "andreadm-reddit-pulse-qwen2-5_0-5b-xqdora",
+  "author": "andreadm",
+  "url": "https://huggingface.co/andreadm/reddit-pulse-qwen2.5_0.5b-xqdora",
+  "created_at": "2026-09-13T13:25:05.000Z",
+  "updated_at": "2026-09-13T13:55:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen2",
+    "economics",
+    "finance",
+    "inflation",
+    "inflation-expectations",
+    "reddit",
+    "lora",
+    "dora",
+    "xqdora",
+    "text-classification",
+    "en",
+    "base_model:Qwen/Qwen2.5-0.5B",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13830087,
+  "storage_human": "14 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Directional inflation-expectation classification (up / neutral / down)",
+      "dataset": "Reddit inflation gold set (Del Monaco, Longo, Marcucci & Tafani, 2026), held-out test split of seed 709964709",
+      "metric": null,
+      "value": 0.6547
+    },
+    {
+      "task": "Directional inflation-expectation classification (up / neutral / down)",
+      "dataset": "Reddit inflation gold set (Del Monaco, Longo, Marcucci & Tafani, 2026), held-out test split of seed 709964709",
+      "metric": "F1 (weighted)",
+      "value": 0.6515
+    },
+    {
+      "task": "Directional inflation-expectation classification (up / neutral / down)",
+      "dataset": "Reddit inflation gold set (Del Monaco, Longo, Marcucci & Tafani, 2026), held-out test split of seed 709964709",
+      "metric": "F1 (macro)",
+      "value": 0.6135
+    },
+    {
+      "task": "Directional inflation-expectation classification (up / neutral / down)",
+      "dataset": "Reddit inflation gold set (Del Monaco, Longo, Marcucci & Tafani, 2026), held-out test split of seed 709964709",
+      "metric": "ROC-AUC (macro, one-vs-rest)",
+      "value": 0.822
+    }
+  ],
+  "sources": [
+    {
+      "title": "Supermarché U Express MAROLLES-LES-BRAULTS - magasins-u.com",
+      "url": "https://www.magasins-u.com/magasin/uexpress-marolleslesbraults",
+      "snippet": "Retrouvez les horaires, coordonnées et services de votre supermarché MAROLLES-LES-BRAULTS à MAROLLES LES …"
+    },
+    {
+      "title": "U EXPRESS MAROLLES LES BRAULTS - Horaires, téléphone",
+      "url": "https://www.promoalert.com/magasin/u-express-marolles-les-braults-horaires-telephone-adresse-74-6814-21490-0-0-0.html",
+      "snippet": "2 days ago · Retrouvez les horaires d'ouverture, numéro de téléphone, et adresse de votre magasin U Express Marolles Les Braults. …"
+    },
+    {
+      "title": "U Express - Marolles-les-Braults",
+      "url": "https://www.marolles-les-braults.fr/u-express-3/",
+      "snippet": "U Express Monsieur Jérôme DEGAND 15 rue Mohain 72260 MAROLLES-LES-BRAULTS Tél : 02 43 311 500"
+    },
+    {
+      "title": "U Express Marolles-les-Braults - Facebook",
+      "url": "https://www.facebook.com/uexpressmarolleslesbraults/",
+      "snippet": "Alors, prêts pour la rentrée ? 😍 👉 Venez découvrir notre sélection directement dans votre U Express Marolles-les-Braults ! 🎒📚 Bonne …"
+    },
+    {
+      "title": "U Express MAROLLES LES BRAULTS - StationEssence.com",
+      "url": "https://stationessence.com/72/marolles-les-braults/u-express-marolles-les-braults-5pd",
+      "snippet": "Jul 23, 2026 · Station-service « U Express MAROLLES LES BRAULTS » rue Mohain à Marolles-les-Braults : adresse, téléphone, …"
+    }
+  ]
+}

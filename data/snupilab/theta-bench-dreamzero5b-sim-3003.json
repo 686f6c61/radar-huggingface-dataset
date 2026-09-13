@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "snupilab/theta-bench-dreamzero5b-sim-3003",
+  "slug": "snupilab-theta-bench-dreamzero5b-sim-3003",
+  "author": "snupilab",
+  "url": "https://huggingface.co/snupilab/theta-bench-dreamzero5b-sim-3003",
+  "created_at": "2026-09-13T17:03:32.000Z",
+  "updated_at": "2026-09-13T17:03:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "robotics",
+    "theta-bench",
+    "mujoco",
+    "en",
+    "dataset:snupilab/theta-bench-teleop",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Möbelhaus Höffner - Wo Wohnen wenig kostet",
+      "url": "https://www.hoeffner.de/",
+      "snippet": "Möbel Höffner - ausführliche Fachberatung & exzellenter Service im Höffner Möbelhaus oder komfortabel im Online Shop bestellen. …"
+    },
+    {
+      "title": "Möbel online kaufen | Höffner Online Shop entdecken",
+      "url": "https://www.hoeffner.de/online-shop",
+      "snippet": "Möbel Onlineshop – Große Auswahl mit besten Preisen Entdecken Sie unser riesiges Sortiment „Wo Wohnen wenig kostet“: Unter …"
+    },
+    {
+      "title": "Möbel Höffner in Berlin und Brandenburg",
+      "url": "https://www.in-berlin-brandenburg.com/Einkaufen_Berlin/Wohnen/Moebelhaeuser/Moebel-Hoeffner-Berlin/",
+      "snippet": "Sep 4, 2026 · Alle Standorte und Öffnungszeiten von Möbel Höffner in Berlin und Brandenburg. 6 Filialen in der Region - mit …"
+    },
+    {
+      "title": "Höffner (Möbelhaus) – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/H%C3%B6ffner_(M%C3%B6belhaus)",
+      "snippet": "Das heutige Möbelhaus entstand aus einer 1874 von Rudolf Höffner in Berlin gegründeten Tischlerei, die ihre Werkstatt in einem …"
+    },
+    {
+      "title": "Höffner Filialen in Berlin - Adressen & Öffnungszeiten",
+      "url": "https://www.kaufda.de/Filialen/Berlin/Hoeffner/v-r44",
+      "snippet": "Hier findest Du eine Übersicht aller Höffner Geschäfte und Filialen in Berlin. Zu jeder Filiale bekommst Du per Klick weitere …"
+    }
+  ]
+}

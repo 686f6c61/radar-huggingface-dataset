@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "fwizzer1/fwizzer-v3-ru",
+  "slug": "fwizzer1-fwizzer-v3-ru",
+  "author": "fwizzer1",
+  "url": "https://huggingface.co/fwizzer1/fwizzer-v3-ru",
+  "created_at": "2026-09-13T14:57:42.000Z",
+  "updated_at": "2026-09-13T14:59:44.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "fwizzer",
+    "fwizzer-v3",
+    "vision",
+    "multimodal",
+    "vlm",
+    "reasoning",
+    "deepseek-r1",
+    "cot",
+    "chain-of-thought",
+    "russian",
+    "llama.cpp",
+    "lmstudio",
+    "ollama",
+    "liquid",
+    "lfm2.5",
+    "image-text-to-text",
+    "ru",
+    "en",
+    "dataset:fwizzer1/fwizzer-v3-titan-agentic",
+    "base_model:LiquidAI/LFM2.5-VL-3B",
+    "base_model:quantized:LiquidAI/LFM2.5-VL-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 426285296,
+  "parameters_human": "426.3M",
+  "storage_bytes": 853993952,
+  "storage_human": "854 MB",
+  "base_model": "LiquidAI/LFM2.5-VL-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.de/maps?hl%3Dde%26tab%3Dwl",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "Datenschutz – Street View – Google Maps",
+      "url": "https://maps.google.de/intl/de/help/maps/streetview/privacy.html",
+      "snippet": "Google Maps mit Street View bietet Ihnen die Möglichkeit, Orte auf der ganzen Welt in einer 360-Grad-Panoramaansicht auf …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.de/mapfiles/home3.html",
+      "snippet": "Explore the world with Google Maps, find locations, get directions, and access real-time traffic updates."
+    },
+    {
+      "title": "Earth-Versionen – Google Earth",
+      "url": "https://maps.google.de/intl/de/earth/versions/",
+      "snippet": "Fliege mit Google Earth für Chrome in Sekundenschnelle überallhin und besuche hunderte Städte in 3D direkt in deinem Browser. Du …"
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.de/intl/de/earth/download/ge/",
+      "snippet": "Jun 4, 2025 · Mit Google Earth können Sie nicht nur um die Welt fliegen und sich Satellitenbilder, Karten, Geländeformationen und …"
+    }
+  ]
+}

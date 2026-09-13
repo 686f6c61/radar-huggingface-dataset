@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LFM2.5-8B-A1B-UltraCoder-L3-i1-GGUF",
+  "slug": "mradermacher-lfm2-5-8b-a1b-ultracoder-l3-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LFM2.5-8B-A1B-UltraCoder-L3-i1-GGUF",
+  "created_at": "2026-09-13T11:50:29.000Z",
+  "updated_at": "2026-09-13T12:42:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8467856832,
+  "parameters_human": "8.47B",
+  "storage_bytes": 59164572032,
+  "storage_human": "59.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Schoorsteenveger Acquoy – Veilig & Vakkundig Schoorsteen Vegen",
+      "url": "https://www.schoorsteenveger-lucas.nl/schoorsteenveger-acquoy/",
+      "snippet": "Onze schoorsteenveger in Acquoy vertrekt pas zodra jouw rookkanaal schoon is en je het erkende veegbewijs hebt ontvangen. Met …"
+    },
+    {
+      "title": "ᐅ Schoorsteen vegen Acquoy 026-2001180",
+      "url": "https://www.schoorsteenvegergelderland.nl/schoorsteenvegen-acquoy",
+      "snippet": "Schoorsteenveger Gelderland is een ervaren schoorsteenveger in regio Acquoy en biedt u een maatwerk service voor uw …"
+    },
+    {
+      "title": "ᐅ Schoorsteenveger Acquoy 026-2001180",
+      "url": "https://www.schoorsteenvegergelderland.nl/schoorsteenveger-acquoy",
+      "snippet": "Schoorsteenveger Gelderland is een ervaren schoorsteenveger in regio Acquoy en biedt u een maatwerk service voor uw …"
+    },
+    {
+      "title": "Top 10 schoorsteenvegers in Acquoy | Prijzen & Reviews - Trustoo",
+      "url": "https://trustoo.nl/gelderland/acquoy/schoorsteenveger/",
+      "snippet": "Jul 17, 2026 · Ben jij op zoek naar een erkende schoorsteenveger in Acquoy? Door je schoorsteen goed schoon te houden en …"
+    },
+    {
+      "title": "Veilig en verantwoord stoken met de ASPB erkende Schoorsteenveger ...",
+      "url": "https://www.schoorsteenveger.nl/",
+      "snippet": "Met 150 aangesloten schoorsteenvegers is er altijd een ASPB erkende schoorsteenveger bij u in de buurt waar u een afspraak mee …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "AZERDSQ/G2-nano-instruct",
+  "slug": "azerdsq-g2-nano-instruct",
+  "author": "AZERDSQ",
+  "url": "https://huggingface.co/AZERDSQ/G2-nano-instruct",
+  "created_at": "2026-09-13T11:29:26.000Z",
+  "updated_at": "2026-09-13T11:39:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nanogpt",
+    "text-generation",
+    "causal-lm",
+    "from-scratch",
+    "custom-code",
+    "instruction-tuning",
+    "g2-nano",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 60033600,
+  "parameters_human": "60.0M",
+  "storage_bytes": 240660110,
+  "storage_human": "241 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.ch/mapfiles/home3.html",
+      "snippet": "Explore places, get directions, and access real-time updates on traffic and public transportation with Google Maps."
+    },
+    {
+      "title": "Transit – Google Maps",
+      "url": "https://maps.google.ch/landing/transit/index.html",
+      "snippet": "If you provide a transportation service that is open to the public, and operates with fixed schedules and routes, we welcome your …"
+    },
+    {
+      "title": "Visualiser les données sur une carte personnalisée à l'aide de Google ...",
+      "url": "https://maps.google.ch/intl/fr_ch/earth/outreach/learn/visualize-your-data-on-a-custom-map-using-google-my-maps/",
+      "snippet": "Apprenez à créer rapidement une carte à partir des données d'une feuille de calcul, à appliquer un style aux points et aux formes, et …"
+    },
+    {
+      "title": "Datenschutzbestimmungen – Datenschutzerklärung",
+      "url": "https://maps.google.ch/intl/de/policies/privacy/archive/20010104/",
+      "snippet": "Jan 4, 2001 · Mit der Benutzung von Googles Suchservice und unserer Website stimmen Sie zu, dass Ihre Informationen gesammelt …"
+    },
+    {
+      "title": "Redirect Notice - Google Maps",
+      "url": "https://maps.google.ch/url?url=httpss%3A%2F%2Ffitfife.co.uk/",
+      "snippet": "The previous page is sending you to an invalid url. If you do not want to visit that page, you can return to the previous page."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/khipu-r3-GGUF",
+  "slug": "mradermacher-khipu-r3-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/khipu-r3-GGUF",
+  "created_at": "2026-09-13T15:47:23.000Z",
+  "updated_at": "2026-09-13T15:54:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "unsloth",
+    "lora",
+    "szl-holdings",
+    "khipu",
+    "en",
+    "base_model:SZLHOLDINGS/khipu-r3",
+    "base_model:adapter:SZLHOLDINGS/khipu-r3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 7455584512,
+  "storage_human": "7.5 GB",
+  "base_model": "SZLHOLDINGS/khipu-r3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=IT&hl=it",
+      "snippet": "Divertiti con i video e la musica che ami, carica contenuti originali e condividi tutto con amici, familiari e con il mondo su YouTube."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en-US",
+      "snippet": "Get the official YouTube app on Android phones and tablets. See what the world is watching -- from the hottest music videos to …"
+    },
+    {
+      "title": "YouTube - Google Accounts",
+      "url": "https://accounts.google.com/InteractiveLogin?service=youtube",
+      "snippet": "Share your videos with friends, family, and the world."
+    },
+    {
+      "title": "YouTube - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/YouTube",
+      "snippet": "YouTube è una piattaforma web che consente la condivisione e visualizzazione in rete di contenuti multimediali: sul sito è possibile …"
+    }
+  ]
+}

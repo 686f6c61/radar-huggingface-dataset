@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Seoulhan/reading-vision-language-pretraining",
+  "slug": "seoulhan-reading-vision-language-pretraining",
+  "author": "Seoulhan",
+  "url": "https://huggingface.co/Seoulhan/reading-vision-language-pretraining",
+  "created_at": "2026-09-13T14:34:39.000Z",
+  "updated_at": "2026-09-13T14:34:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "vision-language-pretraining",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "منصة مدرستي",
+      "url": "https://sites.moe.gov.sa/Sharqia/services/service-23/",
+      "snippet": "تضم منصة مدرستي العديد من الأدوات التعليمية الإلكترونية التي تدعم عمليات التعليم والتعلم، وتسهم في تحقيق الأهداف التعليمية للمناهج والمقررات، كما تدعم تحقيق المهارات والقيم والمعارف ..."
+    },
+    {
+      "title": "منصة مدرستي",
+      "url": "https://madrasatibeta.moe.gov.sa/",
+      "snippet": "منصة تابعة لوزارة التعليم في المملكة العربية السعودية، تقدم محتوى تعليميًا شاملًا ومتنوعًا للطلبة من جميع المراحل، وتوفر أدوات تفاعلية وممتعة للتعلم والتدريب. نبني الأساس .. خطوة بخطوة، تعلّم …"
+    },
+    {
+      "title": "منصة مدرستي",
+      "url": "https://madrasatibeta.moe.gov.sa/login",
+      "snippet": "منصة تابعة لوزارة التعليم في المملكة العربية السعودية، تقدم محتوى تعليميًا شاملًا ومتنوعًا للطلبة من جميع المراحل، وتوفر أدوات تفاعلية وممتعة للتعلم والتدريب. تسجيل الدخول لمنسوبي المدرسة …"
+    },
+    {
+      "title": "منصة مدرستي (@moe_madrasati) / X",
+      "url": "https://x.com/moe_madrasati",
+      "snippet": "تعرّف على خطوات استعادة كلمة المرور في #منصة_مدرستي ، وواصل عملية الدخول إلى حسابك بكل يسر وسهولة."
+    },
+    {
+      "title": "منصة مدرستي",
+      "url": "https://sites.moe.gov.sa/Afif/services/service-14/",
+      "snippet": "نظام إدارة تعلم إلكتروني، يحقق الأهداف التعليمية للمناهج والمقررات، لمواكبة متطلبات التعليم الرقمية للحاضر والمستقبل."
+    }
+  ]
+}

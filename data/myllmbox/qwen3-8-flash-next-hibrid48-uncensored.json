@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "myllmbox/Qwen3.8-Flash-Next-hibrid48-uncensored",
+  "slug": "myllmbox-qwen3-8-flash-next-hibrid48-uncensored",
+  "author": "myllmbox",
+  "url": "https://huggingface.co/myllmbox/Qwen3.8-Flash-Next-hibrid48-uncensored",
+  "created_at": "2026-09-13T13:06:28.000Z",
+  "updated_at": "2026-09-13T13:21:08.000Z",
+  "license": "qwen-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen4_exp",
+    "nvfp4",
+    "fp8",
+    "compressed-tensors",
+    "abliterated",
+    "uncensored",
+    "dgx-spark",
+    "gb10",
+    "vllm",
+    "multi-node",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 157599873939,
+  "parameters_human": "157.60B",
+  "storage_bytes": 105387014059,
+  "storage_human": "105.4 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing ChatGPT - OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://m.chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "Get started | ChatGPT",
+      "url": "https://chatgpt.com/auth/login",
+      "snippet": "Log in or sign up to ChatGPT"
+    },
+    {
+      "title": "ChatGPT - OpenAI",
+      "url": "https://platform.openai.com/onboarding?app=chat",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/es-419/",
+      "snippet": "Usa ChatGPT para responder preguntas, escribir, crear imágenes, hacer tareas y programar, todo en un solo lugar. Empieza gratis o …"
+    }
+  ]
+}

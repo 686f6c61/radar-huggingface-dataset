@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dpavlov0623/mobilevit-matching-run1",
+  "slug": "dpavlov0623-mobilevit-matching-run1",
+  "author": "dpavlov0623",
+  "url": "https://huggingface.co/dpavlov0623/mobilevit-matching-run1",
+  "created_at": "2026-09-13T18:40:38.000Z",
+  "updated_at": "2026-09-13T18:40:42.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "怎么找到显示适配器 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/c146541362fbf54afdfc4c2b.html",
+      "snippet": "Jan 20, 2020 · 怎么找到显示适配器,总有一些设备管理器，但是你们能够找到显示适配器吗？一起来学习一下吧。"
+    },
+    {
+      "title": "ALT+Z打不开N卡菜单怎么办 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/77b8dc7fc7e8652075eab673.html",
+      "snippet": "Feb 5, 2021 · GeForce Experience有一项功能，即按下ALT+Z可呼出菜单，进行游戏滤镜录屏等操作，本期教大家ALT+Z打不开N卡菜 …"
+    },
+    {
+      "title": "N卡如何开启游戏即时重放功能？_百度知道",
+      "url": "https://zhidao.baidu.com/question/1458601552581335420.html",
+      "snippet": "Jul 6, 2024 · N卡即时回放的使用方法如下： 1. 确保显卡驱动为最新版本，并打开GeForce Experience软件。 2. 找到设置并打开，在 …"
+    },
+    {
+      "title": "英伟达显卡游戏滤镜怎么开 (N卡游戏滤镜设置)_百度知道",
+      "url": "https://zhidao.baidu.com/question/467937499902040685.html",
+      "snippet": "Feb 19, 2025 · 英伟达显卡游戏滤镜的开启方法如下： 打开英伟达显卡驱动控制程序： 首先，需要找到并启动英伟达显卡驱动控制程 …"
+    },
+    {
+      "title": "NVIDIA控制面板里的管理3D设置怎么设置啊 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/54b6b9c098552f6c593b475d.html",
+      "snippet": "Jun 8, 2020 · 请参照以下步骤进行NVIDIA控制面板里的3D设置。 1、首先在电脑桌面的空白处单击鼠标右键，在弹出的菜单中选 …"
+    }
+  ]
+}

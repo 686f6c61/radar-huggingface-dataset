@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "toxicdog/FLUX.2-VAE",
+  "slug": "toxicdog-flux-2-vae",
+  "author": "toxicdog",
+  "url": "https://huggingface.co/toxicdog/FLUX.2-VAE",
+  "created_at": "2026-09-13T15:49:46.000Z",
+  "updated_at": "2026-09-13T15:49:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "vae",
+    "comfyui",
+    "flux",
+    "base_model:black-forest-labs/FLUX.2-dev",
+    "base_model:finetune:black-forest-labs/FLUX.2-dev",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 336213556,
+  "storage_human": "336 MB",
+  "base_model": "black-forest-labs/FLUX.2-dev",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/c/youtube/videos%20ua",
+      "snippet": "YouTube's official YouTube channel You found us. Welcome to the official YouTube channel – a home for the biggest moments, the …"
+    },
+    {
+      "title": "YouTube - Google Accounts",
+      "url": "https://accounts.google.com/InteractiveLogin?hl=ru&service=youtube&uilel=3",
+      "snippet": "Делитесь своими видео с друзьями, родственниками и всем миром."
+    },
+    {
+      "title": "Україна - YouTube",
+      "url": "https://www.youtube.com/@UA-UA",
+      "snippet": "Дякую всім, хто віддав життя за Україну, нашим мужнім ЗСУ, теробороні, волонтерам, медикам, пожежникам, усім ..."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "Приложения в Google Play – YouTube",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=ru",
+      "snippet": "YouTube всегда под рукой – смотрите любимые видео, каналы и плейлисты."
+    }
+  ]
+}

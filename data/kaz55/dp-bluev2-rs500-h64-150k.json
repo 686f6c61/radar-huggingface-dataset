@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Kaz55/dp-bluev2-rs500-h64-150k",
+  "slug": "kaz55-dp-bluev2-rs500-h64-150k",
+  "author": "Kaz55",
+  "url": "https://huggingface.co/Kaz55/dp-bluev2-rs500-h64-150k",
+  "created_at": "2026-09-13T16:07:13.000Z",
+  "updated_at": "2026-09-13T16:08:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion-policy",
+    "robotics",
+    "dg5f",
+    "ur5e",
+    "gelsight",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 308812570,
+  "parameters_human": "308.8M",
+  "storage_bytes": 1235357904,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Секс - 88 ответов на форуме Woman.ru (6409863)",
+      "url": "https://www.woman.ru/relations/sex/thread-seks-id6409863/",
+      "snippet": "Apr 11, 2026 · 88 ответов - Желательно не свободного,то есть «глубоко» женатого,лет 45-55.Исключительно секс ну и с его ..."
+    },
+    {
+      "title": "Секс раз в месяц, о чём она думает? - 131 ...",
+      "url": "https://www.woman.ru/relations/sex/thread-seks-raz-v-mesyats-o-chyom-ona-dumaet-id6382416/",
+      "snippet": "Feb 9, 2026 · Секс примерно 1 раз в месяц, биологические ритмы жены я уже давно понял, примерно раз в месяц у неё есть ..."
+    },
+    {
+      "title": "Секс во взрослой - 118 ответов на форуме ...",
+      "url": "https://www.woman.ru/relations/sex/thread-seks-vo-vzrosloy-id6432599/",
+      "snippet": "Jun 5, 2026 · Посещение секс клуба в одиночку 26 ответов Предыдущая тема У парня падает член во время секса, что делать?"
+    },
+    {
+      "title": "Секс - 13 ответов на форуме Woman.ru (6312249)",
+      "url": "https://www.woman.ru/relations/sex/thread-seks-id6312249/",
+      "snippet": "Sep 6, 2025 · 13 ответов - В каких позах было с парнями? (6312249) - Женский форум Woman.ru"
+    },
+    {
+      "title": "Секс. Нормально ли это? - 15 ответов на ...",
+      "url": "https://www.woman.ru/kids/teens/thread-seks-normalno-li-eto-id6381884/",
+      "snippet": "Feb 8, 2026 · 15 ответов - Я парень мне 17 ,девственности лишился с 30 летней и с тех пор занимаюсь сексом только с …"
+    }
+  ]
+}

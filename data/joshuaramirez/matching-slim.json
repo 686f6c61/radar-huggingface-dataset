@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "joshuaramirez/matching-slim",
+  "slug": "joshuaramirez-matching-slim",
+  "author": "joshuaramirez",
+  "url": "https://huggingface.co/joshuaramirez/matching-slim",
+  "created_at": "2026-09-13T12:54:59.000Z",
+  "updated_at": "2026-09-13T12:55:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Which button do i press to open doors? : r/EscapefromTarkov",
+      "url": "https://www.reddit.com/r/EscapefromTarkov/comments/i3ohgf/which_button_do_i_press_to_open_doors/",
+      "snippet": "Aug 4, 2020 · Home Copy link Copy link Go to EscapefromTarkov r/EscapefromTarkov r/EscapefromTarkov The unofficial subreddit …"
+    },
+    {
+      "title": "Can you acctually breach doors or does it need a tool or ... - Reddit",
+      "url": "https://www.reddit.com/r/EscapefromTarkov/comments/12b956u/can_you_acctually_breach_doors_or_does_it_need_a/",
+      "snippet": "Apr 4, 2023 · Can you acctually breach doors or does it need a tool or something like that?"
+    },
+    {
+      "title": "Open doors differently? : r/EscapefromTarkov - Reddit",
+      "url": "https://www.reddit.com/r/EscapefromTarkov/comments/6qk2vt/open_doors_differently/",
+      "snippet": "If you can't select \"open\" it is a locked door.. or you cant open it. Some doors are breachable, if they dont open after 1 breach, they …"
+    },
+    {
+      "title": "Allow Doorkicker Boonie to live up to it's name. - Reddit",
+      "url": "https://www.reddit.com/r/EscapefromTarkov/comments/e3cyq5/allow_doorkicker_boonie_to_live_up_to_its_name/",
+      "snippet": "Nov 29, 2019 · Level 4 Ragman, locked behind a quest, 1-3m Rub, un-insurable, and whoever wears this hat can kick open ANY door …"
+    },
+    {
+      "title": "No Door sound makes no sense : r/EscapefromTarkov - Reddit",
+      "url": "https://www.reddit.com/r/EscapefromTarkov/comments/erxtxb/no_door_sound_makes_no_sense/",
+      "snippet": "Jan 21, 2020 · Make doors have a distinguishable rusty door opening sound to enhance the realism of the game and to stop players …"
+    }
+  ]
+}

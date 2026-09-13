@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "coolthor/MiniMax-H3-pruned-NVFP4",
+  "slug": "coolthor-minimax-h3-pruned-nvfp4",
+  "author": "coolthor",
+  "url": "https://huggingface.co/coolthor/MiniMax-H3-pruned-NVFP4",
+  "created_at": "2026-08-04T05:17:22.000Z",
+  "updated_at": "2026-09-13T18:38:26.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-video",
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "text-to-video",
+    "image-to-video",
+    "text-to-audio-video",
+    "minimax",
+    "minimax-h3",
+    "nvfp4",
+    "fp4",
+    "quantized",
+    "comfyui",
+    "blackwell",
+    "image-text-to-video",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:quantized:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 22,
+  "downloads_30d": 2349,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 50475275169,
+  "storage_human": "50.5 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mercado de Academias no Brasil: Dados e Tendências",
+      "url": "https://sebraepr.com.br/impulsiona/mercado-de-academias-no-brasil-dados-e-tendencias/",
+      "snippet": "Ele abre espaço para profissionais com formações diversas, reforça o papel do emprego nas academias e mostra que a atividade …"
+    },
+    {
+      "title": "Quais são os setores de atividades de uma academia",
+      "url": "https://brainly.com.br/tarefa/55157963",
+      "snippet": "Mar 7, 2023 · A Academia de Ginástica (ou Fitness) é integrante do segmento de serviços, estabelecendo conexões com três outros …"
+    },
+    {
+      "title": "Mercado fitness no Brasil, panorama completo do setor",
+      "url": "https://blog.sistemapacto.com.br/mercado-fitness-latino-americano-brasil-2026/",
+      "snippet": "Mercado fitness na América Latina e no Brasil: dados do HFA Global Report, comportamento do consumidor, tendências e …"
+    },
+    {
+      "title": "Áreas da Educação Física: academia, esporte, reabilitação e escolar",
+      "url": "https://guiadasprofissoes.com.br/artigos/areas-da-educacao-fisica",
+      "snippet": "Mar 18, 2026 · Veja as principais áreas da Educação Física: academia, esporte, escola e reabilitação."
+    },
+    {
+      "title": "Áreas da Educação Física: quais existem além da academia?",
+      "url": "https://tuiuti.edu.br/blog/areas-da-educacao-fisica/",
+      "snippet": "4 days ago · Conheça as áreas da Educação Física além da academia: escola, esporte, reabilitação e saúde. Veja o que se estuda …"
+    }
+  ]
+}

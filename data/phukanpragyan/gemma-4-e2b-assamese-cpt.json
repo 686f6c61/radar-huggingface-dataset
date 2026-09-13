@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "phukanpragyan/gemma-4-e2b-assamese-cpt",
+  "slug": "phukanpragyan-gemma-4-e2b-assamese-cpt",
+  "author": "phukanpragyan",
+  "url": "https://huggingface.co/phukanpragyan/gemma-4-e2b-assamese-cpt",
+  "created_at": "2026-09-13T14:52:18.000Z",
+  "updated_at": "2026-09-13T14:56:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5651719747,
+  "parameters_human": "5.65B",
+  "storage_bytes": 11338087213,
+  "storage_human": "11.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "波浪号（～）是什么意思，正规的用法是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/19615526",
+      "snippet": "除了在字典中作为代替符号以外，在印刷品中很少见到这个符号。那么它应该是怎么用的呢？它的来源又是怎…"
+    },
+    {
+      "title": "薇诺娜·瑞德 - 知乎",
+      "url": "https://www.zhihu.com/topic/20221291/intro",
+      "snippet": "Apr 24, 2020 · 薇诺娜·瑞德 (Winona Ryder)，1971年10月29日出生于明尼苏达州，美国女演员。 1990年她主演了电影《剪刀手爱德华 …"
+    },
+    {
+      "title": "纵向课题和横向课题有什么区别？ - 知乎",
+      "url": "https://www.zhihu.com/question/30432177",
+      "snippet": "目前，从学科大类上讲：分为社会科学和自然科学两大类；根据科研课题的来源一般分为：纵向课题与横向课题两大类。 纵向课题是 …"
+    },
+    {
+      "title": "美剧《老友记》中有多少大牌担任客串？ - 知乎",
+      "url": "https://www.zhihu.com/question/28326620",
+      "snippet": "为了连贯性就首先放一个妞~ 1. Winona Ryder 薇诺娜·赖德 就是看上去熟悉的不能再熟悉，就是不知道在哪见过~ 在 第七季20集 作 …"
+    },
+    {
+      "title": "手指为何无故掉皮，是缺少维生素吗？该如何治理？ - 知乎",
+      "url": "https://www.zhihu.com/question/19904813",
+      "snippet": "不能随意碰冷水，会越脱越重。 不能接触热的东西，会疼 指纹解锁打卡直接GG 身边不了解的人会嫌弃怕传染 手指脱皮很多人会有“无 …"
+    }
+  ]
+}

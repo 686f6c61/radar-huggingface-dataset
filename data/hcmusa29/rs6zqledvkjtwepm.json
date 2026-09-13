@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "hcmusa29/Rs6ZqLEDVkjtWepM",
+  "slug": "hcmusa29-rs6zqledvkjtwepm",
+  "author": "hcmusa29",
+  "url": "https://huggingface.co/hcmusa29/Rs6ZqLEDVkjtWepM",
+  "created_at": "2026-09-12T16:29:39.000Z",
+  "updated_at": "2026-09-13T19:25:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 100755154952,
+  "storage_human": "100.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Авторизация в почте Mail — бесплатный и безопасный …",
+      "url": "https://e.mail.ru/login",
+      "snippet": "Авторизоваться в аккаунте на Mail. Почта Mail - это фильтрация спама, быстрая отписка от рассылок, сортировка писем, …"
+    },
+    {
+      "title": "Mail.ru",
+      "url": "https://mail.ru/",
+      "snippet": "Mail.ru предлагает бесплатную почту, облачное хранилище, календарь и заметки для удобной работы и жизни."
+    },
+    {
+      "title": "Войти в электронную почту Mail — надежный почтовый клиент",
+      "url": "https://account.mail.ru/login?page=https",
+      "snippet": "Войти в почту Mail. Вы можете зайти в свой аккаунт используя пароль, QR-код, VK ID или свой профиль на Госуслугах"
+    },
+    {
+      "title": "Создать электронную почту Mail | Один аккаунт для любых дел",
+      "url": "https://new.mail.ru/",
+      "snippet": "Подходит ли Почта для бизнеса? Мы делаем всё, чтобы ваша почта была в безопасности: блокируем письма от …"
+    },
+    {
+      "title": "Вход и выход — Почта Mail на компьютере, Android, iOS — Помощь",
+      "url": "https://help.mail.ru/mail/login/",
+      "snippet": "С двухфакторной аутентификацией Это вход в почту в два шага. Сначала нужно ввести пароль, а затем код из СМС. Такой …"
+    }
+  ]
+}

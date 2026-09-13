@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tonycjik/multitask-distilled",
+  "slug": "tonycjik-multitask-distilled",
+  "author": "tonycjik",
+  "url": "https://huggingface.co/tonycjik/multitask-distilled",
+  "created_at": "2026-09-13T14:24:18.000Z",
+  "updated_at": "2026-09-13T14:24:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Se connecter à Gmail - Ordinateur - Aide Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Se connecter à Gmail Pour ouvrir Gmail, vous pouvez vous connecter à partir d'un ordinateur ou ajouter votre compte à l'application …"
+    },
+    {
+      "title": "Accéder à mon mail Orange - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/Acc%C3%A9der-%C3%A0-mon-mail-Orange/td-p/36",
+      "snippet": "Aug 2, 2013 · Voici quelques infos utiles à préciser lorsque vous rencontrez un soucis de messagerie Comment consultez-vous vos e …"
+    },
+    {
+      "title": "Créer un compte Google pour Gmail - Aide Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=fr",
+      "snippet": "Important : Avant de créer un compte Google, déconnectez-vous de votre compte actuel. Découvrez comment vous déconnecter de …"
+    },
+    {
+      "title": "Orange - Forum - Assistance - Communauté Orange - Livebox - Mobile ...",
+      "url": "https://communaute.orange.fr/",
+      "snippet": "Trouvez les réponses sur le forum Orange et bénéficiez de l'entraide et des conseils des utilisateurs de services Orange."
+    },
+    {
+      "title": "accéder à mes mail orange - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/acc%C3%A9der-%C3%A0-mes-mail-orange/td-p/3413972",
+      "snippet": "May 5, 2026 · Les informations partagées vous ont-elles permis d'accéder à votre adresse mail Orange ? N'hésitez pas à revenir …"
+    }
+  ]
+}

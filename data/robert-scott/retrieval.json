@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "robert-scott/retrieval",
+  "slug": "robert-scott-retrieval",
+  "author": "robert-scott",
+  "url": "https://huggingface.co/robert-scott/retrieval",
+  "created_at": "2026-09-13T14:21:26.000Z",
+  "updated_at": "2026-09-13T14:21:33.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dictionnaire français gratuit – Dico en ligne Le Robert",
+      "url": "http://dictionnaire.lerobert.com/",
+      "snippet": "Dico en ligne Le Robert est un dictionnaire numérique gratuit, rédigé par des experts et régulièrement mis à jour, conçu pour tous les …"
+    },
+    {
+      "title": "Éditions Le Robert : la référence en langues pour définir, traduire ...",
+      "url": "https://www.lerobert.com/",
+      "snippet": "Depuis 1951, Le Robert est la seule maison d’édition entièrement dédiée à la langue française. Présente sur les marchés grand …"
+    },
+    {
+      "title": "Dictionnaire de définitions, synonymes | Dico en ligne Le Robert",
+      "url": "https://dictionnaire.lerobert.com/definition",
+      "snippet": "Jeux Quel mot est né en même temps que vous ? Découvrez un mot du Petit Robert apparu l'année de votre naissance !"
+    },
+    {
+      "title": "Robert (prénom) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Robert_(pr%C3%A9nom)",
+      "snippet": "Robert est un prénom masculin et un patronyme d'origine germanique, fréquemment attesté en France. Il est fêté le 30 avril 1, porté …"
+    },
+    {
+      "title": "Le Petit Robert de la langue française - Bienvenue !",
+      "url": "https://www.lerobert.com/le-petit-robert-de-la-langue-francaise-bienvenue.html",
+      "snippet": "Vous venez d'acquérir Le Petit Robert de la langue française et nous vous en remercions. Vous pouvez désormais accéder au …"
+    }
+  ]
+}

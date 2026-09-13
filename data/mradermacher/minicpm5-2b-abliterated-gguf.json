@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MiniCPM5-2B-abliterated-GGUF",
+  "slug": "mradermacher-minicpm5-2b-abliterated-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MiniCPM5-2B-abliterated-GGUF",
+  "created_at": "2026-09-13T13:10:28.000Z",
+  "updated_at": "2026-09-13T13:10:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Offres Mobiles, Internet, TV, Actu & Accès compte Mail - Orange",
+      "url": "https://www.orange.fr/portail",
+      "snippet": "Retrouvez toute l'offre Orange depuis le portail : consultez votre mail Orange directement depuis la messagerie Orange, profitez des …"
+    },
+    {
+      "title": "Accéder à votre Espace client",
+      "url": "https://espace-client.orange.fr/page-accueil",
+      "snippet": "Gérez vos services Orange, consultez vos factures, commandez une carte SIM et retrouvez votre code PUK à tout moment dans …"
+    },
+    {
+      "title": "Service indisponible - Espace client Orange",
+      "url": "https://espace-client.orange.fr/accueil",
+      "snippet": "Service indisponible - Espace client Orange Espace client"
+    },
+    {
+      "title": "Espace client Orange Pro - Identifiez-vous",
+      "url": "https://espaceclientpro.orange.fr/login",
+      "snippet": "Activer vos cartes SIM et eSIM Orange Pro À l’aide de votre Espace client Pro, vous pourrez activer une carte SIM, passez à une …"
+    },
+    {
+      "title": "Orange - Sport en direct, toute l'actualité sportive et résultats",
+      "url": "https://sports.orange.fr/",
+      "snippet": "L'actualité de tous les sports avec résultats, classements et informations en direct. Suivez les matches et compétitions sportives en …"
+    }
+  ]
+}

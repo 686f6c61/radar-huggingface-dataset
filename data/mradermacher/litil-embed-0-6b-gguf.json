@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mradermacher/litil-embed-0.6b-GGUF",
+  "slug": "mradermacher-litil-embed-0-6b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/litil-embed-0.6b-GGUF",
+  "created_at": "2026-09-13T15:37:32.000Z",
+  "updated_at": "2026-09-13T15:43:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "sentence-transformers",
+    "embeddings",
+    "retrieval",
+    "legal",
+    "en",
+    "de",
+    "zh",
+    "base_model:litillabs/litil-embed-0.6b",
+    "base_model:quantized:litillabs/litil-embed-0.6b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 595776512,
+  "parameters_human": "595.8M",
+  "storage_bytes": 5694805824,
+  "storage_human": "5.7 GB",
+  "base_model": "litillabs/litil-embed-0.6b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quora - A place to share knowledge and better understand the world",
+      "url": "https://www.quora.com/",
+      "snippet": "Quora is a place to gain and share knowledge. It's a platform to ask questions and connect with people who contribute unique …"
+    },
+    {
+      "title": "Quora - A place to share knowledge and better understand the world",
+      "url": "https://www.quora.com/What-is-the-best-python-web-framework-to-learn-in-2023",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "Press - Quora",
+      "url": "https://www.quora.com/press",
+      "snippet": "Try refreshing the page, or try again later. Refresh Page"
+    }
+  ]
+}

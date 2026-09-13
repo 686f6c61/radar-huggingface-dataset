@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "snupilab/theta-bench-dp-real-g1-91",
+  "slug": "snupilab-theta-bench-dp-real-g1-91",
+  "author": "snupilab",
+  "url": "https://huggingface.co/snupilab/theta-bench-dp-real-g1-91",
+  "created_at": "2026-09-13T17:04:01.000Z",
+  "updated_at": "2026-09-13T17:04:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "robotics",
+    "theta-bench",
+    "real-g1",
+    "en",
+    "dataset:snupilab/theta-bench-teleop",
+    "base_model:snupilab/theta-bench-dp-sim-3003",
+    "base_model:finetune:snupilab/theta-bench-dp-sim-3003",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "snupilab/theta-bench-dp-sim-3003",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Svullna spottkörtlar hos hundar: orsaker och behandlingar | InfoDjur",
+      "url": "https://sv.infoanimales.net/Hundar/svullna-spottk%C3%B6rtlar-hundar/",
+      "snippet": "Jul 9, 2024 · Sammanfattningsvis är det viktigt att vara välinformerad om orsaker, symtom, behandlingar och förebyggande åtgärder …"
+    },
+    {
+      "title": "Svullna körtlar hos hundar: Orsaker, symtom och behandling",
+      "url": "https://feelgoodhhs.com/sv/svullna-kortlar-hos-hundar-orsaker-symtom-och-behandling/",
+      "snippet": "Lär dig mer om svullna körtlar hos hundar och hur du identifierar orsaker och symtom. Ta reda på när du ska söka veterinärvård och …"
+    },
+    {
+      "title": "Sialocele (saliv mucocele) hos hundar - sv.senars.com",
+      "url": "https://sv.senars.com/4337/sialocele-saliv-mucocele-hos-hundar",
+      "snippet": "Apr 18, 2022 · Om du märker svullnad under ditt husdjurs nosparti eller hals är det viktigt att få dem till en veterinär för korrekt …"
+    },
+    {
+      "title": "Förstå och behandla svullna kindkörtlar hos hundar",
+      "url": "https://sv.226248.com/hundar/health/1005045861.html",
+      "snippet": "En svullen spottkörtel kan orsaka svullnad och eventuellt obehag på en mängd olika platser runt din hunds huvud och hals. …"
+    },
+    {
+      "title": "Salivary Mucocele Hund hembehandling: Effektiva lösningar för din ...",
+      "url": "https://feelgoodhhs.com/sv/salivary-mucocele-hund-hembehandling-effektiva-losningar-for-din-lurviga-van/",
+      "snippet": "Lär dig hur du behandlar en salivmukocele hos hundar hemma. Hitta naturläkemedel och hembehandlingar för att minska svullnad …"
+    }
+  ]
+}

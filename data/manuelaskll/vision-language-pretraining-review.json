@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Manuelaskll/vision-language-pretraining-review",
+  "slug": "manuelaskll-vision-language-pretraining-review",
+  "author": "Manuelaskll",
+  "url": "https://huggingface.co/Manuelaskll/vision-language-pretraining-review",
+  "created_at": "2026-09-13T17:44:48.000Z",
+  "updated_at": "2026-09-13T17:44:53.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "vision-language-pretraining",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "it.answers.search.yahoo.com",
+      "url": "https://it.answers.search.yahoo.com/search;p=Lione&ei=UTF-8&flt=age%3A1d&s_pt=source2",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    }
+  ]
+}

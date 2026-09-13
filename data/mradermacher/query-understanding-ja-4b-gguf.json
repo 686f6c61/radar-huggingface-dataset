@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "mradermacher/query-understanding-ja-4b-GGUF",
+  "slug": "mradermacher-query-understanding-ja-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/query-understanding-ja-4b-GGUF",
+  "created_at": "2026-09-13T12:41:48.000Z",
+  "updated_at": "2026-09-13T13:04:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "query-understanding",
+    "query-parsing",
+    "semantic-parsing",
+    "slot-filling",
+    "information-extraction",
+    "e-commerce",
+    "product-search",
+    "search",
+    "information-retrieval",
+    "structured-output",
+    "json",
+    "esci",
+    "japanese",
+    "lora",
+    "qwen3.5",
+    "ja",
+    "base_model:mahiyama/query-understanding-ja-4b",
+    "base_model:adapter:mahiyama/query-understanding-ja-4b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 41004118912,
+  "storage_human": "41.0 GB",
+  "base_model": "mahiyama/query-understanding-ja-4b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Solved: DWG to PDF Files too large. - Autodesk Community",
+      "url": "https://forums.autodesk.com/t5/autocad-forum/dwg-to-pdf-files-too-large/td-p/5625667",
+      "snippet": "May 7, 2015 · I am using ACAD Mechanical 2012 and when I plot to a PDF the files are huge. I've looked and can't seem to find what …"
+    },
+    {
+      "title": "Advanced Batch Plot (ABP) - Auto-detect, Sort, & Merge to Single PDF",
+      "url": "https://forums.autodesk.com/t5/visual-lisp-autolisp-and-general/advanced-batch-plot-abp-auto-detect-sort-amp-merge-to-single-pdf/td-p/14106383",
+      "snippet": "Apr 26, 2026 · 💡 PRO TIP: Prevent PDFs from Auto-Opening! If you are using AutoCAD's built-in DWG To PDF.pc3, it might try to …"
+    },
+    {
+      "title": "A way to merge existing Drawings together?",
+      "url": "https://forums.autodesk.com/t5/fusion-design-validate-document/a-way-to-merge-existing-drawings-together/td-p/6989235",
+      "snippet": "Apr 1, 2017 · Similar to how a PDF editor or PDF print driver can append a page, document, or sheet to an existing PDF to create a …"
+    },
+    {
+      "title": "\"Lines Overwrite\" prints as lines merged - Autodesk Community",
+      "url": "https://forums.autodesk.com/t5/autocad-lt-forum/quot-lines-overwrite-quot-prints-as-lines-merged/td-p/9260570",
+      "snippet": "Jan 19, 2020 · I am having an issue with DWG To PDF.pc3. I have a) several layers that have transparency set at 60, and b) pc3 …"
+    },
+    {
+      "title": "Printing elevations with shadows to pdf. - Autodesk Community",
+      "url": "https://forums.autodesk.com/t5/revit-architecture-forum/printing-elevations-with-shadows-to-pdf/td-p/9391312",
+      "snippet": "Mar 21, 2020 · Printing to PDF elevations with shadows on. Seems there is absolutely no solution to keep the elevation from losing …"
+    }
+  ]
+}

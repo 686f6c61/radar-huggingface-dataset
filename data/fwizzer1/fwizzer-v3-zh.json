@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "fwizzer1/fwizzer-v3-zh",
+  "slug": "fwizzer1-fwizzer-v3-zh",
+  "author": "fwizzer1",
+  "url": "https://huggingface.co/fwizzer1/fwizzer-v3-zh",
+  "created_at": "2026-09-13T15:01:28.000Z",
+  "updated_at": "2026-09-13T15:01:32.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "fwizzer",
+    "fwizzer-v3",
+    "vision",
+    "multimodal",
+    "vlm",
+    "reasoning",
+    "deepseek-r1",
+    "cot",
+    "chain-of-thought",
+    "zh",
+    "llama.cpp",
+    "lmstudio",
+    "ollama",
+    "liquid",
+    "lfm2.5",
+    "image-text-to-text",
+    "en",
+    "dataset:fwizzer1/fwizzer-v3-titan-agentic",
+    "base_model:LiquidAI/LFM2.5-VL-3B",
+    "base_model:quantized:LiquidAI/LFM2.5-VL-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 426285296,
+  "parameters_human": "426.3M",
+  "storage_bytes": 853993952,
+  "storage_human": "854 MB",
+  "base_model": "LiquidAI/LFM2.5-VL-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Can't lock mouse anymore : r/LDPlayerEmulator - Reddit",
+      "url": "https://www.reddit.com/r/LDPlayerEmulator/comments/vy439l/cant_lock_mouse_anymore/",
+      "snippet": "Jul 13, 2022 · Hi, you can write a macro. Drag the write macro icon to the game interfere and click the pencil icon in the lower right …"
+    },
+    {
+      "title": "Is LdPlayer safe? : r/emulators - Reddit",
+      "url": "https://www.reddit.com/r/emulators/comments/khmjsw/is_ldplayer_safe/",
+      "snippet": "Dec 21, 2020 · In the past I found ldplayer so much faster than bluestacks despite the hardware acceleration (gpu) claimed by …"
+    },
+    {
+      "title": "Wtf is this?! I uninstall LDPlayer and this folder that was ... - Reddit",
+      "url": "https://www.reddit.com/r/LDPlayerEmulator/comments/omke5i/wtf_is_this_i_uninstall_ldplayer_and_this_folder/",
+      "snippet": "Jul 18, 2021 · This is not a failure to uninstall, this is a deliberate shady tactic to keep files on the user's pc without their knowledge. …"
+    },
+    {
+      "title": "PSA: LDPlayer (Android emulator) contains malware - Reddit",
+      "url": "https://www.reddit.com/r/emulators/comments/13el11a/psa_ldplayer_android_emulator_contains_malware/",
+      "snippet": "May 11, 2023 · I'd always joked that nearly every \"gaming\" Android emulator that doesn't require a lot of setup was spyware at worst …"
+    },
+    {
+      "title": "Can LDPlayer run arm64 apps? : r/LDPlayerEmulator - Reddit",
+      "url": "https://www.reddit.com/r/LDPlayerEmulator/comments/gkafiv/can_ldplayer_run_arm64_apps/",
+      "snippet": "May 15, 2020 · Posted by u/iBananaTeo - 2 votes and 2 comments"
+    }
+  ]
+}

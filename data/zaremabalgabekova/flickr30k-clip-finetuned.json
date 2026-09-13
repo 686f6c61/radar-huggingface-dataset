@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "zaremabalgabekova/flickr30k-clip-finetuned",
+  "slug": "zaremabalgabekova-flickr30k-clip-finetuned",
+  "author": "zaremabalgabekova",
+  "url": "https://huggingface.co/zaremabalgabekova/flickr30k-clip-finetuned",
+  "created_at": "2026-09-13T14:48:41.000Z",
+  "updated_at": "2026-09-13T15:03:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1815708561,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "这个网址是potplayer官网吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/509011663",
+      "snippet": "要下载PotPlayer，你可以访问官方网站或者Softonic网站，选择合适的版本和语言，然后按照提示安装即可。注意在安装过程中，可能 …"
+    },
+    {
+      "title": "怎么免费从道客巴巴下载文档？ - 知乎",
+      "url": "https://www.zhihu.com/question/59290100",
+      "snippet": "道客巴巴同样是我们在搜索资料时经常使用的文库，资源仅次于百度文库，这里只介绍一种下载方法，一招足以致命！ Mac系统 …"
+    },
+    {
+      "title": "如何评价深圳新成立的鹏城实验室？ - 知乎",
+      "url": "https://www.zhihu.com/question/321873858",
+      "snippet": "几个P城实验室的大佬，到处捞钱，何止双聘，三聘四聘的都有。俨然就是内地大佬勾结一伙海外大佬回来分钱的窝点，而且吃相及其 …"
+    },
+    {
+      "title": "腾讯旗下的游戏工作室有哪些？ - 知乎",
+      "url": "https://www.zhihu.com/question/263469856",
+      "snippet": "腾讯IEG组织架构--研发和发行 1、研发-四大工作室群 天美工作室群 2008年成立，研发包括多人竞技、RPG、射击、竞速、策略、休 …"
+    },
+    {
+      "title": "有没有哪个软件可以查找各种物质的化学结构式？ - 知乎",
+      "url": "https://www.zhihu.com/question/30060745",
+      "snippet": "ChemSpider是一个隶属于英国皇家化学会的汇总数据库，包含了来自不同资源提供的五千五百多个化合物信息。现在，该数据库含有 …"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/chaski-r2-GGUF",
+  "slug": "mradermacher-chaski-r2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/chaski-r2-GGUF",
+  "created_at": "2026-09-13T15:39:32.000Z",
+  "updated_at": "2026-09-13T15:47:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "lora",
+    "sft",
+    "trl",
+    "unsloth",
+    "proposal-only",
+    "en",
+    "base_model:SZLHOLDINGS/chaski-r2",
+    "base_model:adapter:SZLHOLDINGS/chaski-r2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 7455586048,
+  "storage_human": "7.5 GB",
+  "base_model": "SZLHOLDINGS/chaski-r2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Eventim - Tickets für über 200.000 Events & Konzerte",
+      "url": "https://www.eventim.de/?msockid=28293a736b226fd72c312da06aef6e71",
+      "snippet": "Egal ob Konzert, Musical, Comedy-Show oder Sport-Event - wähle aus über 200.000 Events und sichere dir jetzt dein Ticket!"
+    },
+    {
+      "title": "Konzerte in Deutschland - Termine & Tickets - Eventim",
+      "url": "https://www.eventim.de/events/konzerte-1/?msockid=28293a736b226fd72c312da06aef6e71",
+      "snippet": "Egal ob große Bühnenshow oder kleines Wohnzimmerkonzert. Tickets für die besten Konzerte in deiner Stadt gibts bei Eventim!"
+    },
+    {
+      "title": "Kontakt",
+      "url": "https://corporate.eventim.de/meta/kontakt",
+      "snippet": "Wie kann ich die CTS EVENTIM AG & Co. KGaA erreichen? Antworten auf Ihre Fragen finden Sie in unserem EVENTIM Help …"
+    },
+    {
+      "title": "CTS Eventim",
+      "url": "https://corporate.eventim.de/",
+      "snippet": "Oct 16, 2024 · CTS EVENTIM ist als Ticketing-Anbieter die Nummer eins in Europa und die Nummer zwei weltweit. Pro Jahr werden …"
+    },
+    {
+      "title": "Kombiticket eventim.de",
+      "url": "https://kombiticket.eventim.de/",
+      "snippet": "ANMELDUNG Bitte geben Sie Auftragsnummer und Ticketdirect-Code bzw. EVENTIM.Pass-ID ein, um sich anzumelden."
+    }
+  ]
+}

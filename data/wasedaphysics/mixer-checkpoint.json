@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "wasedaphysics/mixer-checkpoint",
+  "slug": "wasedaphysics-mixer-checkpoint",
+  "author": "wasedaphysics",
+  "url": "https://huggingface.co/wasedaphysics/mixer-checkpoint",
+  "created_at": "2026-09-13T14:18:27.000Z",
+  "updated_at": "2026-09-13T14:18:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OmeTV – Omegle Alternative for Random Webcam Chats",
+      "url": "https://ome.tv/why-ometv/",
+      "snippet": "On OmeTV, every webcam chat is with real users. No bots—only genuine interactions with people who are here to connect and talk. …"
+    },
+    {
+      "title": "OmeTV Video Chat — Omegle Random Cam Chat Alternative 2026",
+      "url": "https://ome.tv/",
+      "snippet": "OmeTV is a random video chat, offering a seamless mobile app and an exciting global social experience."
+    },
+    {
+      "title": "Cam Chat with Strangers on OmeTV – Meet People and Make Friends",
+      "url": "https://ometv.chat/",
+      "snippet": "OmeTV offers a free cam chat experience where you can meet strangers, enjoy random video chats, and keep in touch with friends. …"
+    },
+    {
+      "title": "Find friends - OmeTV",
+      "url": "https://ometv.chat/search",
+      "snippet": "Talk to strangers, meet new people and make friends on OmeTV. Enjoy random webcam chats with thousands of users online …"
+    },
+    {
+      "title": "Ome TV random chat alternative",
+      "url": "https://ome-tv.com/sohbet/",
+      "snippet": "Become an OmeTV member! I confirm that I am at least 18 years old. I accept User Agreement. Ome Tv Video Chat."
+    }
+  ]
+}

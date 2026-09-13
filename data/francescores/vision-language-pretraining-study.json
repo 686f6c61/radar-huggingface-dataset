@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "francescores/vision-language-pretraining-study",
+  "slug": "francescores-vision-language-pretraining-study",
+  "author": "francescores",
+  "url": "https://huggingface.co/francescores/vision-language-pretraining-study",
+  "created_at": "2026-09-13T17:11:33.000Z",
+  "updated_at": "2026-09-13T17:11:39.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "vision-language-pretraining",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MyPeopleDoc is a personal electronic vault to securely receive and ...",
+      "url": "https://www.mypeopledoc.com/",
+      "snippet": "MyPeopleDoc vous permet de recevoir tous les documents administratifs envoyés par votre entreprise. Vous devez être invité par …"
+    },
+    {
+      "title": "Vie privée - PeopleDoc (MyPeopleDoc®)",
+      "url": "https://privacy.mypeopledoc.com/fr/",
+      "snippet": "Quotidiennement, PeopleDoc (MyPeopleDoc®) utilise vos données pour améliorer votre expérience Et nous nous engageons à …"
+    },
+    {
+      "title": "Vie privée - PeopleDoc (MyPeopleDoc®)",
+      "url": "https://privacy.mypeopledoc.com/fr/userdata",
+      "snippet": "Découvrez comment vos données sont collectées, utilisées et protégées sur MyPeopleDoc et obtenez des informations sur la gestion …"
+    },
+    {
+      "title": "MyPeopleDoc · Navigateur non supporté",
+      "url": "https://www.mypeopledoc.com/static/browser-not-supported-fr.html",
+      "snippet": "Votre navigateur web n'est plus compatible Pour continuer à utiliser MyPeopleDoc, installez la dernière version de votre navigateur, …"
+    },
+    {
+      "title": "Privacy Center - PeopleDoc (MyPeopleDoc®)",
+      "url": "https://privacy.mypeopledoc.com/en/partners",
+      "snippet": "This page outlines privacy practices and policies for MyPeopleDoc's partners, ensuring data protection and transparency in handling …"
+    }
+  ]
+}

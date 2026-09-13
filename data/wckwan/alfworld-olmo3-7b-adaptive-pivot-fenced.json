@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "wckwan/Alfworld-Olmo3-7B-Adaptive-Pivot-Fenced",
+  "slug": "wckwan-alfworld-olmo3-7b-adaptive-pivot-fenced",
+  "author": "wckwan",
+  "url": "https://huggingface.co/wckwan/Alfworld-Olmo3-7B-Adaptive-Pivot-Fenced",
+  "created_at": "2026-09-13T18:02:30.000Z",
+  "updated_at": "2026-09-13T18:14:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "reinforcement-learning",
+    "grpo",
+    "search-r1",
+    "process-reward",
+    "tool-use",
+    "text-generation",
+    "base_model:allenai/Olmo-3-7B-Instruct",
+    "base_model:finetune:allenai/Olmo-3-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 145960636744,
+  "storage_human": "146.0 GB",
+  "base_model": "allenai/Olmo-3-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kommunalwahlen 2026 - wahlen.statistik.niedersachsen.de",
+      "url": "https://wahlen.statistik.niedersachsen.de/KW2026/",
+      "snippet": "19 hours ago · Die interaktive Karte bietet einen schnellen Überblick über die Wahlergebnisse in den niedersächsischen Wahlkreisen. …"
+    },
+    {
+      "title": "Wahlen in Niedersachsen - Landeszentrale für politische Bildung",
+      "url": "https://www.wahlen-in-niedersachsen.de/kommunalwahl/",
+      "snippet": "19 hours ago · Die nächsten Kommunalwahlen in Niedersachsen finden am 13. September 2026 statt. Auf dieser Seite der …"
+    },
+    {
+      "title": "Niedersachsen Kommunalwahl 2026: News und aktuelle Berichte",
+      "url": "https://www.ndr.de/nachrichten/niedersachsen/kommunalwahl",
+      "snippet": "Vier AfD-Bewerber dürfen in Niedersachsen nicht zur Kommunalwahl antreten. Ein Experte erklärt, warum die Eilanträge gescheitert …"
+    },
+    {
+      "title": "Kommunalwahl Niedersachsen 2026: Jetzt wird ausgezählt | ndr.de",
+      "url": "https://www.ndr.de/nachrichten/niedersachsen/kommunalwahl/kommunalwahl-in-niedersachsen-wahllokale-sind-geoeffnet,kommunalwahl-340.html",
+      "snippet": "13 hours ago · Die Wahllokale für die Kommunalwahlen 2026 in Niedersachsen sind seit 18 Uhr geschlossen. Nun wird ausgezählt. …"
+    },
+    {
+      "title": "Kommunalwahlen 2026 in Niedersachsen: Wahlrecht, Fristen, neue …",
+      "url": "https://kommunal.de/kommunalwahlen-2026-niedersachsen",
+      "snippet": "Jul 10, 2026 · Neue Kommunalparlamente, mehr Macht für Wahlausschüsse, härtere Briefwahlregeln: Was sich bei den …"
+    }
+  ]
+}

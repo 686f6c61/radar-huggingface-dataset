@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dreamdifferent/panda-robosuite-level5-wrist-ablation-v1-videolora200-action-decoder-iter900",
+  "slug": "dreamdifferent-panda-robosuite-level5-wrist-ablation-v1-videolora200-action-decoder-iter900",
+  "author": "dreamdifferent",
+  "url": "https://huggingface.co/dreamdifferent/panda-robosuite-level5-wrist-ablation-v1-videolora200-action-decoder-iter900",
+  "created_at": "2026-09-13T12:10:27.000Z",
+  "updated_at": "2026-09-13T12:10:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mimic-video",
+    "robotics",
+    "action-prediction",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1000269372,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Apple",
+      "url": "https://www.apple.com/",
+      "snippet": "Introducing the iPhone Duo. Plus new iPhone 18 Pro, Apple Watch Series 12, Apple Watch Ultra 4, and AirPods 5."
+    },
+    {
+      "title": "Apple Store Online - Apple (DE)",
+      "url": "https://www.apple.com/de/store",
+      "snippet": "Sieh dir die neuesten Apple Produkte, Zubehör und Angebote an. Erhalte Hilfe beim Kauf sowie flexible Zahlungs- und Lieferoptionen."
+    },
+    {
+      "title": "Apple TV",
+      "url": "https://tv.apple.com/mx",
+      "snippet": "Explora películas, programas de TV y más en Apple TV. Mira producciones de Apple Originals aquí y en la app Apple TV en todos …"
+    },
+    {
+      "title": "Apple TV",
+      "url": "https://tv.apple.com/br",
+      "snippet": "Explore os filmes, programas de TV e mais do Apple TV. Assista a todos os Apple Originals aqui e no app Apple TV em todos os …"
+    },
+    {
+      "title": "Apple School Manager",
+      "url": "https://school.apple.com/",
+      "snippet": "Manage your organization’s devices, apps, and accounts."
+    }
+  ]
+}

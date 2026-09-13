@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "bugphi/banglish_mbert",
+  "slug": "bugphi-banglish_mbert",
+  "author": "bugphi",
+  "url": "https://huggingface.co/bugphi/banglish_mbert",
+  "created_at": "2026-09-13T17:05:49.000Z",
+  "updated_at": "2026-09-13T17:10:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 177854978,
+  "parameters_human": "177.9M",
+  "storage_bytes": 711443432,
+  "storage_human": "711 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Solved: Spotify keeps skipping - The Spotify Community",
+      "url": "https://community.spotify.com/t5/Desktop-Mac/Spotify-keeps-skipping/td-p/23609",
+      "snippet": "Mar 16, 2012 · Every since I installed Spotify on my computer, it keeps skipping every few seconds with practically every single song. …"
+    },
+    {
+      "title": "Help - Desktop Windows - The Spotify Community",
+      "url": "https://community.spotify.com/t5/Desktop-Windows/bd-p/desktop_windows",
+      "snippet": "May 23, 2026 · Spotify works normally on my Windows desktop until I switch playback to my Bose soundbar using Spotify Connect, …"
+    },
+    {
+      "title": "\"Can't play this content, Exclusive mode is on\" - The Spotify Community",
+      "url": "https://community.spotify.com/t5/Desktop-Windows/quot-Can-t-play-this-content-Exclusive-mode-is-on-quot/td-p/7410536",
+      "snippet": "Apr 18, 2026 · Every time I try to play a song, I get a pop-up saying \"Can't play this content. Exclusive mode is on, so this content …"
+    },
+    {
+      "title": "Ongoing Issues - The Spotify Community",
+      "url": "https://community.spotify.com/t5/Ongoing-Issues/idb-p/ongoing_issues/status-key/Under_investigation",
+      "snippet": "Aug 3, 2026 · Ongoing Issues Check to see if the issue you might be experiencing has already been reported and what status it is at."
+    },
+    {
+      "title": "FAQs - The Spotify Community",
+      "url": "https://community.spotify.com/t5/FAQs/tkb-p/Spotify-Answers",
+      "snippet": "How can I perform a clean reinstall of the app? I created a new account. Can I transfer my playlists, saved music and followers? How …"
+    }
+  ]
+}

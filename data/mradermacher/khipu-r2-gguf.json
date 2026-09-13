@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/KHIPU-R2-GGUF",
+  "slug": "mradermacher-khipu-r2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/KHIPU-R2-GGUF",
+  "created_at": "2026-09-13T15:49:56.000Z",
+  "updated_at": "2026-09-13T15:57:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qlora",
+    "peft",
+    "governed-agent",
+    "proposal-only",
+    "research-only",
+    "szl-holdings",
+    "khipu",
+    "abstain-retrain",
+    "en",
+    "base_model:SZLHOLDINGS/KHIPU-R2",
+    "base_model:quantized:SZLHOLDINGS/KHIPU-R2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 14206902912,
+  "storage_human": "14.2 GB",
+  "base_model": "SZLHOLDINGS/KHIPU-R2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.de/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://ipv4.google.com/?hl=de",
+      "snippet": "Werbeprogramme Über Google Google.com in English © 2026 - Datenschutzerklärung - Nutzungsbedingungen"
+    },
+    {
+      "title": "Einfach alles finden, was du suchst",
+      "url": "https://search.google/intl/de-DE/",
+      "snippet": "Explore new ways to search. Download the Google app to experience Lens, AR, Search Labs, voice search, and more."
+    },
+    {
+      "title": "Google",
+      "url": "https://ipv4.google.com/?hl=de_AT",
+      "snippet": "Werbeprogramme Über Google Google.com in English © 2026 - Datenschutzerklärung - Nutzungsbedingungen"
+    },
+    {
+      "title": "Günstige Flüge weltweit finden und Ticket buchen - Google",
+      "url": "https://www.google.de/travel/",
+      "snippet": "Mit Google Flüge günstige Flüge weltweit suchen und vergleichen. Finde deinen nächsten Flug, beobachte Preisänderungen und …"
+    }
+  ]
+}

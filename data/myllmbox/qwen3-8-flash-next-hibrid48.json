@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "myllmbox/Qwen3.8-Flash-Next-hibrid48",
+  "slug": "myllmbox-qwen3-8-flash-next-hibrid48",
+  "author": "myllmbox",
+  "url": "https://huggingface.co/myllmbox/Qwen3.8-Flash-Next-hibrid48",
+  "created_at": "2026-09-13T13:06:28.000Z",
+  "updated_at": "2026-09-13T13:07:36.000Z",
+  "license": "qwen-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen4_exp",
+    "nvfp4",
+    "dgx-spark",
+    "gb10",
+    "vllm",
+    "quantized",
+    "multi-node",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94587665299,
+  "parameters_human": "94.59B",
+  "storage_bytes": 105326204722,
+  "storage_human": "105.3 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/",
+      "snippet": "14 hours ago · Hello, New users on the forum won't be able to send PM untill certain criteria are met (you need to have at least 6 …"
+    },
+    {
+      "title": "Sex Stories | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/forums/sex-stories.6/",
+      "snippet": "Apr 12, 2009 · Hello, You can now get verified on forum. The way it's gonna work is that you can send me a PM with a verification …"
+    },
+    {
+      "title": "Pic & Movie Post - XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/forums/pic-movie-post.8/",
+      "snippet": "14 hours ago · Post pics or clips of yourself, wife, girlfriend, models, anything you like."
+    },
+    {
+      "title": "Sexuality | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/forums/sexuality.7/",
+      "snippet": "1 day ago · This forum is to discuss sex seriously. Ask for tips and advice here."
+    },
+    {
+      "title": "Looking for rape videos | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/looking-for-rape-videos.28096/",
+      "snippet": "Feb 19, 2008 · Yeah, I know I'm sick, but I am looking for hardcore, FREE rape videos."
+    }
+  ]
+}

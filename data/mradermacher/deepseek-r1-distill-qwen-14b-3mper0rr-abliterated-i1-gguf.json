@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mradermacher/DeepSeek-R1-Distill-Qwen-14B-3MPER0RR-abliterated-i1-GGUF",
+  "slug": "mradermacher-deepseek-r1-distill-qwen-14b-3mper0rr-abliterated-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/DeepSeek-R1-Distill-Qwen-14B-3MPER0RR-abliterated-i1-GGUF",
+  "created_at": "2026-09-13T11:36:38.000Z",
+  "updated_at": "2026-09-13T13:05:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:3MPER0RR/DeepSeek-R1-Distill-Qwen-14B-3MPER0RR-abliterated",
+    "base_model:quantized:3MPER0RR/DeepSeek-R1-Distill-Qwen-14B-3MPER0RR-abliterated",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 148495643072,
+  "storage_human": "148.5 GB",
+  "base_model": "3MPER0RR/DeepSeek-R1-Distill-Qwen-14B-3MPER0RR-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تثبيت تطبيق \"Drive للكمبيوتر المكتبي\" - مركز تعلُّم Google Workspace",
+      "url": "https://support.google.com/a/users/answer/13022292?hl=ar",
+      "snippet": "عند تثبيت تطبيق Drive للكمبيوتر المكتبي على جهاز الكمبيوتر، يتم إنشاء محرك أقراص في My Computer (جهاز الكمبيوتر) أو موقع في Finder (الباحث) باسم Google Drive. وتظهر …"
+    },
+    {
+      "title": "Share files with non-Google Accounts - Google Drive Help",
+      "url": "https://support.google.com/drive/answer/6033939?hl=en",
+      "snippet": "A work or school account they use for Google products like Gmail, Drive, Docs, Sheets, or Slides. If the person doesn’t have a …"
+    },
+    {
+      "title": "Instalowanie Dysku na komputer - Centrum edukacji Google Workspace",
+      "url": "https://support.google.com/a/users/answer/13022292?hl=pl",
+      "snippet": "Pierwsze kroki z Dyskiem Instalowanie Dysku na komputer Dysk na komputer umożliwia wyszukiwanie i otwieranie na komputerze …"
+    },
+    {
+      "title": "Mengelola penyimpanan Anda di Drive, Gmail, dan Foto",
+      "url": "https://support.google.com/drive/answer/6374270?hl=id",
+      "snippet": "Ketika akun Anda mencapai batas penyimpanannya, Anda tidak akan bisa mengupload atau membuat file di Drive, mengirim atau …"
+    },
+    {
+      "title": "Utiliser Google Drive",
+      "url": "https://support.google.com/drive/answer/2424384?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Utiliser Google Drive Vous souhaitez bénéficier de fonctionnalités Google Workspace avancées pour votre entreprise ? Essayez …"
+    }
+  ]
+}

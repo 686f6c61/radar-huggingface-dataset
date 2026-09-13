@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "hcmusa29/xivSk5x6NYndsuyb",
+  "slug": "hcmusa29-xivsk5x6nyndsuyb",
+  "author": "hcmusa29",
+  "url": "https://huggingface.co/hcmusa29/xivSk5x6NYndsuyb",
+  "created_at": "2026-09-12T18:44:12.000Z",
+  "updated_at": "2026-09-13T18:49:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 104281371101,
+  "storage_human": "104.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hôtel Florida - Hotel Florida",
+      "url": "https://www.hotel-florida-biarritz.com/",
+      "snippet": "Oct 18, 2021 · En plein centre-ville, à 300 m de la plage, des centres de thalassothérapie, des espaces de congrès et du casino …"
+    },
+    {
+      "title": "Hôtel Florida Biarritz - Biarritz, France",
+      "url": "https://florida.hotelbiarritz.org/",
+      "snippet": "Aug 25, 2026 · Obtenez les prix en temps réel et les options de chambre pour vos dates. Hôtel Florida Biarritz est à moins de 5 …"
+    },
+    {
+      "title": "Nos chambres - Hotel Florida",
+      "url": "https://www.hotel-florida-biarritz.com/nos-chambres/",
+      "snippet": "L’hôtel Florida disposant de 28 chambres , 6 Junior suites et 7 appartements entièrement climatisés, invite à la détente et à l’évasion. …"
+    },
+    {
+      "title": "Hôtel Florida, Biarritz (tarifs actualisés pour 2026) - Booking.com",
+      "url": "https://www.booking.com/hotel/fr/eugenie-biarritz.fr.html?msockid=32ddf4a74beb6fb50089e3744a426eaa",
+      "snippet": "Situé en bord de mer à Biarritz, l’Hôtel Florida vous accueille à seulement 300 mètres de la plage."
+    },
+    {
+      "title": "Hotel Florida - biarritz-fr.com",
+      "url": "https://biarritz-fr.com/fr/p/hotelflorida.html",
+      "snippet": "Hotel Florida 4 étoiles - tout ce que vous devez savoir avant de réserver. Découvrez les chambres, les équipements, les offres …"
+    }
+  ]
+}

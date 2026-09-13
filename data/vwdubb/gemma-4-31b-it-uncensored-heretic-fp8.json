@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "vwdubb/gemma-4-31B-it-uncensored-heretic-FP8",
+  "slug": "vwdubb-gemma-4-31b-it-uncensored-heretic-fp8",
+  "author": "vwdubb",
+  "url": "https://huggingface.co/vwdubb/gemma-4-31B-it-uncensored-heretic-FP8",
+  "created_at": "2026-09-13T13:12:50.000Z",
+  "updated_at": "2026-09-13T13:13:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "ara",
+    "conversational",
+    "base_model:llmfan46/gemma-4-31B-it-uncensored-heretic",
+    "base_model:quantized:llmfan46/gemma-4-31B-it-uncensored-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 33295408020,
+  "storage_human": "33.3 GB",
+  "base_model": "llmfan46/gemma-4-31B-it-uncensored-heretic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Paul Baccaglini - Wikipedia",
+      "url": "https://it.m.wikipedia.org/wiki/Paul_Baccaglini",
+      "snippet": "Paul Mario Baccaglini[1] (Chicago, 31 gennaio 1984 – Segrate, 10 settembre 2025 [2]) è stato un imprenditore, personaggio televisivo …"
+    },
+    {
+      "title": "Paul Baccaglini viveva un momento di isolamento prima della morte: i ...",
+      "url": "https://www.fanpage.it/spettacolo/personaggi/paul-baccaglini-viveva-un-momento-di-isolamento-prima-della-morte-i-risultati-dellautopsia-per-lipotesi-suicidio/",
+      "snippet": "Sep 13, 2025 · Paul Baccaglini, ex inviato de Le Iene ed ex presidente del Palermo Calcio, stava vivendo un periodo di forte …"
+    },
+    {
+      "title": "Come è morto Paul Baccaglini? Le cause della morte quali sono?",
+      "url": "https://www.superguidatv.it/come-e-morto-paul-baccaglini-le-cause-della-morte-quali-sono/",
+      "snippet": "Sep 10, 2025 · Secondo le prime ricostruzioni, il corpo senza vita di Baccaglini sarebbe stato trovato martedì mattina dalla …"
+    },
+    {
+      "title": "Come è morto Paul Baccaglini? Biografia e vita privata dell'ex ... - TAG24",
+      "url": "https://www.tag24.it/1350319-come-e-morto-paul-baccaglini",
+      "snippet": "Sep 10, 2025 · Paul Baccaglini, ex inviato de \"Le Iene\" e imprenditore italoamericano, è scomparso il 10 settembre 2025 a Milano. La …"
+    },
+    {
+      "title": "Il giallo sulla morte di Paul Baccaglini: ecco quello che sappiamo",
+      "url": "https://www.ilgiornale.it/news/attualit/paul-baccaglini-mistero-sulla-morte-ipotesi-suicidio-2535326.html",
+      "snippet": "Sep 12, 2025 · Rimane avvolta nel mistero la morte di Paul Baccaglini, 41 anni, ex inviato del programma televisivo Le Iene e per un …"
+    }
+  ]
+}

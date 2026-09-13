@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mohamedkhaled435/Geneformer-Plant-Stress",
+  "slug": "mohamedkhaled435-geneformer-plant-stress",
+  "author": "mohamedkhaled435",
+  "url": "https://huggingface.co/mohamedkhaled435/Geneformer-Plant-Stress",
+  "created_at": "2026-09-13T12:43:39.000Z",
+  "updated_at": "2026-09-13T12:44:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 316334594,
+  "parameters_human": "316.3M",
+  "storage_bytes": 1265373808,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Particulier - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier",
+      "snippet": "Consultez notre foire aux questions et le pas-à-pas pour faire votre demande (PDF). Attention aux arnaques : à l'issue de la …"
+    },
+    {
+      "title": "J'accède à mon espace Finances publiques et à mes services en ligne",
+      "url": "https://www.impots.gouv.fr/particulier/jaccede-mon-espace-particulier-et-mes-services-en-ligne",
+      "snippet": "Mar 30, 2016 · Une offre diversifiée de services en ligne vous est proposée dans votre espace Finances publiques. Vous pouvez …"
+    },
+    {
+      "title": "impots.gouv.fr - Particuliers | authentification",
+      "url": "https://cfspart.impots.gouv.fr/",
+      "snippet": "Chaque membre d'un foyer fiscal disposant d'un numéro fiscal et d'une adresse électronique validée sur le site impots.gouv.fr peut …"
+    },
+    {
+      "title": "Accueil impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/accueil",
+      "snippet": "Accueil particulier Découvrez des tutoriels et simulateurs, des informations sur les différents impôts et réductions, les démarches …"
+    },
+    {
+      "title": "Payer mes impôts, taxes, amendes... | impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier/payer-mes-impots-taxes",
+      "snippet": "Sur mon avis d'impôt, j’ai droit à un remboursement, que dois-je faire pour l’obtenir ?"
+    }
+  ]
+}

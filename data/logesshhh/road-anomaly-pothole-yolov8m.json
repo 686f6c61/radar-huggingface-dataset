@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Logesshhh/road-anomaly-pothole-yolov8m",
+  "slug": "logesshhh-road-anomaly-pothole-yolov8m",
+  "author": "Logesshhh",
+  "url": "https://huggingface.co/Logesshhh/road-anomaly-pothole-yolov8m",
+  "created_at": "2026-09-13T13:20:57.000Z",
+  "updated_at": "2026-09-13T13:22:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ultralytics",
+    "onnx",
+    "yolov8",
+    "object-detection",
+    "pothole-detection",
+    "road-damage-detection",
+    "road-safety",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 245231258,
+  "storage_human": "245 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gold-Karte - TARGOBANK",
+      "url": "https://www.targobank.de/de/konto-karten/kreditkarte-gold.html?msockid=26f68e5f2dae68b63108998c2c336916",
+      "snippet": "Unsere Gold-Karte auf einen Blick Gratis-Cash weltweit An allen Geldautomaten mit Visa-Logo ist die Bargeldauszahlung weltweit für …"
+    },
+    {
+      "title": "Banking-Optionen | TARGOBANK",
+      "url": "https://www.targobank.de/de/service/banking-optionen/index.html?msockid=26f68e5f2dae68b63108998c2c336916",
+      "snippet": "Banking-Optionen in folge eines Sicherheitsrisikos Login zum Online-Banking Aktuell schützen wir den Zugang zum Online-Banking …"
+    },
+    {
+      "title": "Girokonto Online | TARGOBANK",
+      "url": "https://www.targobank.de/de/konto-karten/online-konto.html?msockid=26f68e5f2dae68b63108998c2c336916",
+      "snippet": "Dispo-Freigrenze Kleine Überziehungen auf Ihrem Konto von maximal 200€ sind kostenlos. Nach Überschreitung der Dispo …"
+    },
+    {
+      "title": "Impressum | TARGOBANK",
+      "url": "https://www.targobank.de/de/impressum/index.html?msockid=26f68e5f2dae68b63108998c2c336916",
+      "snippet": "Das Impressum der TARGOBANK. Soweit auf den allgemein zugänglichen oder einer Zugangskontrolle unterliegenden Seiten …"
+    },
+    {
+      "title": "Online-Classic-Karte | TARGOBANK",
+      "url": "https://www.targobank.de/de/konto-karten/kreditkarte-classic.html?msockid=26f68e5f2dae68b63108998c2c336916",
+      "snippet": "Online-Classic-Karte Ob beim täglichen Einkauf, im Internet oder auf Reisen – mit Ihrer TARGOBANK Online-Classic-Karte bleiben …"
+    }
+  ]
+}

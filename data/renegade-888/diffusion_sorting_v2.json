@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Renegade-888/diffusion_sorting_v2",
+  "slug": "renegade-888-diffusion_sorting_v2",
+  "author": "Renegade-888",
+  "url": "https://huggingface.co/Renegade-888/diffusion_sorting_v2",
+  "created_at": "2026-09-13T14:27:49.000Z",
+  "updated_at": "2026-09-13T14:31:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion",
+    "dataset:Renegade-888/so101-sorting-v2",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 266623358,
+  "parameters_human": "266.6M",
+  "storage_bytes": 1066526272,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leboncoin, site de petites annonces gratuites",
+      "url": "https://www.leboncoin.fr/",
+      "snippet": "Avec leboncoin, trouvez la bonne affaire, réalisez la bonne vente pour votre voiture, immobilier, emploi, location de vacances, …"
+    },
+    {
+      "title": "Voiture occasion - annonces automobiles de particuliers et …",
+      "url": "https://www.leboncoin.fr/c/voitures",
+      "snippet": "Consultez nos annonces de voitures d’occasion toutes marques : citadines, SUV, berlines, électriques, hybrides. Plus de 700 000 …"
+    },
+    {
+      "title": "leboncoin immobilier neuf : trouvez votre programme immo neuf",
+      "url": "https://immobilierneuf.leboncoin.fr/",
+      "snippet": "Immobilier Neuf avec leboncoin ImmobilierNeuf : tous les programmes neuf, les conseils pour investir et defiscaliser dans l'immobilier …"
+    },
+    {
+      "title": "leboncoin - Services Status",
+      "url": "https://status.leboncoin.fr/",
+      "snippet": "Tenez-vous au courant de toute interruption de notre service qui pourrait vous affecter."
+    },
+    {
+      "title": "Rhône-Alpes - leboncoin",
+      "url": "https://www.leboncoin.fr/l/rp_rhone-alpes",
+      "snippet": "Toutes nos annonces gratuites Rhône-Alpes. Consultez nos 9232643 annonces de particuliers et professionnels sur leboncoin"
+    }
+  ]
+}

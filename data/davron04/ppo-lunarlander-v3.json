@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "davron04/ppo-LunarLander-v3",
+  "slug": "davron04-ppo-lunarlander-v3",
+  "author": "davron04",
+  "url": "https://huggingface.co/davron04/ppo-LunarLander-v3",
+  "created_at": "2026-09-13T17:34:12.000Z",
+  "updated_at": "2026-09-13T17:34:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kaczor Donald – Wikipedia, wolna encyklopedia",
+      "url": "https://pl.wikipedia.org/wiki/Kaczor_Donald",
+      "snippet": "Wiele filmów powstałych po wojnie pokazuje Kaczora Donalda dręczonego przez innych bohaterów. Jest ustawicznie prześladowany …"
+    },
+    {
+      "title": "Kaczor Donald Przedstawia - Odcinek 1/2 - CDA",
+      "url": "https://www.cda.pl/video/2930472ac",
+      "snippet": "Jan 2, 2019 · Kaczor Donald Przedstawia - Odcinek 1/2 CDA nie limituje przepustowości oraz transferu danych. W godzinach …"
+    },
+    {
+      "title": "Kaczor Donald Przedstawia - ODCINEK 1 - CDA",
+      "url": "https://www.cda.pl/video/232130825a",
+      "snippet": "Kaczor Donald przedstawia (ang. Donald Duck Presents) to amerykański serial animowany z 1983 roku, będący kompilacją …"
+    },
+    {
+      "title": "Kaczor Donald po polsku - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLqqtCYI-m9DteasPGEymDgNBx4nH_Y3Ga",
+      "snippet": "Kaczor Donald,Kaczor Donald Chip I Dale po polsku,Chip I Dale po polsku,kaczor donald po polsku,kaczor donald bajki,kaczor …"
+    },
+    {
+      "title": "kaczor donald i wiewiorki po polsku - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PL53oJOpDtljmmDcC1g_aryYYygwNs7K_k",
+      "snippet": "Share your videos with friends, family, and the world"
+    }
+  ]
+}

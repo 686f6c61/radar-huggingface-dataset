@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "zhiyuanhucs/genshin-llava019-qwen3.5-9b-128k",
+  "slug": "zhiyuanhucs-genshin-llava019-qwen3-5-9b-128k",
+  "author": "zhiyuanhucs",
+  "url": "https://huggingface.co/zhiyuanhucs/genshin-llava019-qwen3.5-9b-128k",
+  "created_at": "2026-09-13T14:16:35.000Z",
+  "updated_at": "2026-09-13T15:28:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 96551509606,
+  "storage_human": "96.6 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Online Games at Poki - Play Now!",
+      "url": "https://poki.com/?msockid=359567f1931d67393ff9702292946664",
+      "snippet": "Play free online games at Poki, the #1 website for instant web games. Explore exclusive titles, popular favorites, and new game …"
+    },
+    {
+      "title": "Poki - Kostenlose Onlinespiele - Jetzt spielen!",
+      "url": "https://poki.com/de?msockid=359567f1931d67393ff9702292946664",
+      "snippet": "Poki bringt die beste Auswahl an kostenlosen Online-Spielen und bietet das unterhaltsamste Erlebnis, allein oder mit Freunden zu …"
+    },
+    {
+      "title": "Poki Games - Free Online Games - Play Now! | poki.com",
+      "url": "https://poki.to/poki",
+      "snippet": "Poki Games is a free gaming platform packed with tons of fun without any sneaky charges or subscriptions. Not only can you play …"
+    },
+    {
+      "title": "Poki - kostenlose Online-Spiele - Jetzt spielen!",
+      "url": "https://poki.us.com/de/",
+      "snippet": "Poki ist eine völlig kostenlose Plattform, auf der Sie auf Tausende kostenloser Online-Spiele zugreifen können. Sie können alle Ihre …"
+    },
+    {
+      "title": "Free Online Games - Play Instantly | Poki",
+      "url": "https://poki.uk.com/",
+      "snippet": "Play free online games on Poki. Browse hand-reviewed action, puzzle, racing, sports and skill games with practical guides and no …"
+    }
+  ]
+}

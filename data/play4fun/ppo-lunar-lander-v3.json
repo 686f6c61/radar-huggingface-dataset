@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Play4Fun/ppo-lunar-lander-v3",
+  "slug": "play4fun-ppo-lunar-lander-v3",
+  "author": "Play4Fun",
+  "url": "https://huggingface.co/Play4Fun/ppo-lunar-lander-v3",
+  "created_at": "2026-09-13T17:47:59.000Z",
+  "updated_at": "2026-09-13T17:50:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 284378,
+  "storage_human": "284378 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nixplay Frames | #1 Selling Digital Picture Frame | On Sale",
+      "url": "https://www.nixplay.com/",
+      "snippet": "19 hours ago · Display, view and share your moments with Nixplay – the only digital picture frame that lets you combine photos with …"
+    },
+    {
+      "title": "Digital Picture Frames with Slideshow | Wi-Fi Enabled - Target",
+      "url": "https://www.target.com/s/slideshow+picture+frame",
+      "snippet": "High-resolution digital picture frames with built-in slideshow functionality. Wi-Fi enabled options for wireless photo sharing. Choose …"
+    },
+    {
+      "title": "dfolio - Dropbox™ Photos - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.snapwood.dropfolio&hl=en-US",
+      "snippet": "Show your Dropbox photos with this fast gallery and beautiful digital photo frame. Play Dropbox slideshows on Android TV or Google …"
+    },
+    {
+      "title": "Best Motion Sensor Digital Picture Frames of 2026 - FindThisBest",
+      "url": "https://www.findthisbest.com/best-digital-picture-frames/motion-sensor",
+      "snippet": "Jan 11, 2026 · With high-resolution displays and the ability to upload and display multiple images, these frames are perfect for …"
+    },
+    {
+      "title": "8 Best Digital Photo Frames for Home Display (September 2026) …",
+      "url": "https://modelrec.com/best-digital-photo-frames-for-home-display/",
+      "snippet": "5 days ago · The best digital photo frames for home display in 2026 come in two flavors: Wi-Fi connected frames that pull photos from …"
+    }
+  ]
+}

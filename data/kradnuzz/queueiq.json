@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Kradnuzz/QueueIQ",
+  "slug": "kradnuzz-queueiq",
+  "author": "Kradnuzz",
+  "url": "https://huggingface.co/Kradnuzz/QueueIQ",
+  "created_at": "2026-09-13T14:48:59.000Z",
+  "updated_at": "2026-09-13T14:48:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Artemis 13 [New Top 1] with Click Indicators! | Geometry Dash",
+      "url": "https://www.youtube.com/watch?v=raCwCtHTiW8",
+      "snippet": "Artemis 13 is finally here, the NEW top 1 hardest level in Geometry Dash! This showcase includes click indicators to help visualize the …"
+    },
+    {
+      "title": "Geometry Dash Event Level #13: Heave Ho by Magpipe",
+      "url": "https://www.youtube.com/watch?v=fnmhgUmdutA",
+      "snippet": "Geometry Dash Event Level #13: Heave Ho by Magpipe Geometry Dash Event Level #13: Heave Ho by Magpipe"
+    },
+    {
+      "title": "Geometry Dash - Official Website",
+      "url": "https://www.geometrydash.com/",
+      "snippet": "Official Geometry Dash website by RobTop Games. Play the browser demo, view top player leaderboards, and get the game."
+    },
+    {
+      "title": "Level Search - gdbrowser.com",
+      "url": "https://gdbrowser.com/search",
+      "snippet": "Search for Geometry Dash levels, and filter by length, difficulty, song + more!"
+    },
+    {
+      "title": "Levels | Geometrydash Wiki | Fandom",
+      "url": "https://gdwik.fandom.com/wiki/Levels",
+      "snippet": "Dash - Introduces swing gamemode and spider pads and orbs. These levels act as a structured progression, teaching players new …"
+    }
+  ]
+}

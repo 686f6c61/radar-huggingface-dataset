@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ERO26/FP_Classifcation-V1",
+  "slug": "ero26-fp_classifcation-v1",
+  "author": "ERO26",
+  "url": "https://huggingface.co/ERO26/FP_Classifcation-V1",
+  "created_at": "2026-09-13T12:59:20.000Z",
+  "updated_at": "2026-09-13T12:59:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8483980,
+  "parameters_human": "8.5M",
+  "storage_bytes": 33943457,
+  "storage_human": "34 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sichern und Wiederherstellen mit Windows-Sicherung",
+      "url": "https://support.microsoft.com/de-de/windows/experience/backup-recovery/back-up-and-restore-with-windows-backup",
+      "snippet": "Windows 11 Windows 10 Ihr Windows-PC verfügt über eine One-Stop-Sicherungslösung Windows-Sicherung, mit der Sie viele der für …"
+    },
+    {
+      "title": "Wiederherstellungslaufwerk | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/windows/experience/backup-recovery/recovery-drive",
+      "snippet": "Das Wiederherstellungslaufwerk-Hilfsprogramm in Windows ist ein wertvolles Tool, das entwickelt wurde, um wichtige Systemdateien …"
+    },
+    {
+      "title": "Erstellen von Installationsmedien für Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/windows/deployment/install-upgrade/create-installation-media-for-windows",
+      "snippet": "Installationsmedien, z. B. ein USB-Speicherstick, können verwendet werden, um eine neue Kopie von Windows zu installieren, eine …"
+    },
+    {
+      "title": "Erstellen und Verwenden eines USB-Wiederherstellungslaufwerks für ...",
+      "url": "https://support.microsoft.com/de-de/surface/drivers-firmware/creating-and-using-a-usb-recovery-drive-for-surface",
+      "snippet": "Erstellen eines USB-Wiederherstellungslaufwerks Verwenden des USB-Wiederherstellungslaufwerks USB …"
+    },
+    {
+      "title": "Zurücksetzen des PCs | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/windows/experience/backup-recovery/reset-your-pc",
+      "snippet": "Windows 11 Windows 10 Zusammenfassung Das Zurücksetzen Ihres PCs unter Windows ist ein leistungsstarkes Feature, mit dem …"
+    }
+  ]
+}

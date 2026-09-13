@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "circulus/qwen3-0.6b-int4-ov",
+  "slug": "circulus-qwen3-0-6b-int4-ov",
+  "author": "circulus",
+  "url": "https://huggingface.co/circulus/qwen3-0.6b-int4-ov",
+  "created_at": "2026-09-13T14:02:56.000Z",
+  "updated_at": "2026-09-13T14:03:03.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "openvino",
+    "qwen3",
+    "int4",
+    "circulus",
+    "ov-courseware",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 402584463,
+  "storage_human": "403 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speed Test by MyBroadband",
+      "url": "https://speedtest.mybroadband.co.za/",
+      "snippet": "Test your Internet connection quickly and accurately. Lightweight, easy-to-use, reliable and completely free."
+    },
+    {
+      "title": "Rain 5G Home Internet speed test hits 620Mbps – MyBroadband",
+      "url": "https://mybroadband.co.za/news/5g/665582-rain-5g-home-internet-speed-test-hits-620mbps.html",
+      "snippet": "Sep 4, 2026 · Many users of Rain’s fixed-5G service are getting exceptionally fast speeds in 2026, an analysis by MyBroadband …"
+    },
+    {
+      "title": "What Internet speed you need for watching Netflix in South Africa",
+      "url": "https://mybroadband.co.za/news/broadcasting/278003-what-internet-speed-you-need-for-watching-netflix-in-south-africa.html",
+      "snippet": "Apr 10, 2018 · Thanks to the increasing number of content services across the Internet, more consumers watch media online."
+    },
+    {
+      "title": "MyBroadband Insights",
+      "url": "https://research.mybroadband.co.za/",
+      "snippet": "Speed Test App The MyBroadband Speed Test app is your go-to tool for testing internet performance with precision and ease. …"
+    },
+    {
+      "title": "MyBroadband - Company Press Releases",
+      "url": "https://companies.mybroadband.co.za/",
+      "snippet": "Aug 9, 2026 · Company Press Releases – Resilience in Motion: Why Connected Operations Are Becoming the New Competitive …"
+    }
+  ]
+}

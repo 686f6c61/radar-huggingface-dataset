@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "riz-kyha/contrastive-rc1-2024",
+  "slug": "riz-kyha-contrastive-rc1-2024",
+  "author": "riz-kyha",
+  "url": "https://huggingface.co/riz-kyha/contrastive-rc1-2024",
+  "created_at": "2026-09-13T17:55:13.000Z",
+  "updated_at": "2026-09-13T17:55:19.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Riz — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Riz",
+      "snippet": "Le riz à grain court, riz rond, ou riz à grain ovale, est la variété la plus utilisée pour les desserts, paellas ou encore les risottos. Les …"
+    },
+    {
+      "title": "Riz: bienfaits, types et comment consommer (avec recettes)",
+      "url": "https://www.tuasaude.com/fr/riz/",
+      "snippet": "Sep 25, 2025 · Le riz est une céréale qui contient des glucides, des fibres et des minéraux, apportant des bienfaits comme la …"
+    },
+    {
+      "title": "50 recettes à base de riz pour des repas qui changent mais qui restent ...",
+      "url": "https://www.cuisineaz.com/diaporamas/50-recettes-a-base-de-riz-pour-des-repas-qui-changent-mais-qui-restent-faciles-et-rapides-a-faire-7261/interne/1.aspx",
+      "snippet": "Mar 13, 2026 · Les mamans pressées, les pros du batch cooking ou celles qui aiment essayer de nouvelles saveurs trouveront ici …"
+    },
+    {
+      "title": "Riz - Mes recettes faciles",
+      "url": "https://www.mesrecettesfaciles.fr/course/plat-principal/riz",
+      "snippet": "Grâce à nos recettes faciles, préparez toutes sortes de plats de riz maison pour vous régaler en famille. Riz cantonais, riz sauté, …"
+    },
+    {
+      "title": "Riz - Tout savoir sur le riz thaï, basmati et de Camargue",
+      "url": "https://www.quechoisir.org/conseils-riz-tout-savoir-sur-le-riz-thai-basmati-et-de-camargue-n171376/",
+      "snippet": "Sep 19, 2025 · Cette céréale originaire d’Asie est devenue l’un des féculents les plus consommés en France, avec le pain, les pâtes …"
+    }
+  ]
+}

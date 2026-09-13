@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "fwizzer1/fwizzer-v3-en",
+  "slug": "fwizzer1-fwizzer-v3-en",
+  "author": "fwizzer1",
+  "url": "https://huggingface.co/fwizzer1/fwizzer-v3-en",
+  "created_at": "2026-09-13T15:01:24.000Z",
+  "updated_at": "2026-09-13T15:01:27.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "fwizzer",
+    "fwizzer-v3",
+    "vision",
+    "multimodal",
+    "vlm",
+    "reasoning",
+    "deepseek-r1",
+    "cot",
+    "chain-of-thought",
+    "en",
+    "llama.cpp",
+    "lmstudio",
+    "ollama",
+    "liquid",
+    "lfm2.5",
+    "image-text-to-text",
+    "dataset:fwizzer1/fwizzer-v3-titan-agentic",
+    "base_model:LiquidAI/LFM2.5-VL-3B",
+    "base_model:quantized:LiquidAI/LFM2.5-VL-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 426285296,
+  "parameters_human": "426.3M",
+  "storage_bytes": 853993952,
+  "storage_human": "854 MB",
+  "base_model": "LiquidAI/LFM2.5-VL-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Disney and Florida Holiday Planning - theDIBB",
+      "url": "https://www.thedibb.co.uk/forums/index.php",
+      "snippet": "All times are GMT +1. The time now is 07:17 AM."
+    },
+    {
+      "title": "Disneyland Paris - theDIBB",
+      "url": "https://www.thedibb.co.uk/forums/Disneyland-Paris-c-59.html",
+      "snippet": "Disneyland Paris Main Categories Search: Guidebook Home Planning Disney Parks SeaWorld Parks Universal Parks Other …"
+    },
+    {
+      "title": "Disneyland Paris Trip Planning - theDIBB",
+      "url": "https://www.thedibb.co.uk/forums/forumdisplay.php?f=156&order=desc",
+      "snippet": "Disneyland Paris Holiday Planning Questions and Tips. Join in and register on theDIBB You will need to register before you can post: …"
+    },
+    {
+      "title": "Disneyland Paris Park Hours - thedibb.co.uk",
+      "url": "https://www.thedibb.co.uk/forums/parkhours_dlp.php?hours=12+2025",
+      "snippet": "Dec 31, 2025 · theDIBB Disneyland Paris Park Hours Notices Join in and register on theDIBB You will need to register before you …"
+    },
+    {
+      "title": "Disneyland Paris Trip Planning - Page 2 - theDIBB",
+      "url": "https://www.thedibb.co.uk/forums/forumdisplay.php?f=156&order=desc&page=2",
+      "snippet": "Page 2-Disneyland Paris Holiday Planning Questions and Tips."
+    }
+  ]
+}

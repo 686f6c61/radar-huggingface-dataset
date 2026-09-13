@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "markusrrs/poolformer-generation-study",
+  "slug": "markusrrs-poolformer-generation-study",
+  "author": "markusrrs",
+  "url": "https://huggingface.co/markusrrs/poolformer-generation-study",
+  "created_at": "2026-09-13T18:15:06.000Z",
+  "updated_at": "2026-09-13T18:15:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/?ui=de-DE&rs=DE",
+      "snippet": "Sign in to access your Outlook email and manage your messages efficiently."
+    },
+    {
+      "title": "Anmelden bei Outlook | Microsoft 365",
+      "url": "https://www.microsoft.com/de-de/microsoft-365/outlook/log-in?msockid=1641948cd0106b9315d5835fd10d6a66",
+      "snippet": "Melden Sie sich mit Microsoft 365 bei Outlook an, um auf Ihre E-Mail, Ihren Kalender und andere Funktionen zuzugreifen. Laden Sie …"
+    },
+    {
+      "title": "Outlook Log In | Microsoft 365",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/outlook/log-in?msockid=1641948cd0106b9315d5835fd10d6a66",
+      "snippet": "Sign in to Outlook with Microsoft 365 to access your email, calendar, and more. Download the app or log in online for enhanced …"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail?ui=de-DE&rs=DE",
+      "snippet": "Outlook ... Outlook"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/mini/opxdeeplink/mail/inbox",
+      "snippet": "Outlook. JavaScript must be enabled. ttt."
+    }
+  ]
+}

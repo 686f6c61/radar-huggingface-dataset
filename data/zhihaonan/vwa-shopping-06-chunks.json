@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ZhihaoNan/vwa-shopping-06-chunks",
+  "slug": "zhihaonan-vwa-shopping-06-chunks",
+  "author": "ZhihaoNan",
+  "url": "https://huggingface.co/ZhihaoNan/vwa-shopping-06-chunks",
+  "created_at": "2026-09-13T16:02:19.000Z",
+  "updated_at": "2026-09-13T16:02:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Poki - Jeux Gratuits en Ligne - Jouez Maintenant !",
+      "url": "https://poki.com/fr?msockid=12333be0b2a56dde03d62c33b3e66cf9",
+      "snippet": "Poki a la meilleure sélection de jeux en ligne gratuits et offre l'expérience la plus amusante à jouer seul ou avec des amis. Nous …"
+    },
+    {
+      "title": "Free Online Games at Poki - Play Now!",
+      "url": "https://poki.com/?msockid=12333be0b2a56dde03d62c33b3e66cf9",
+      "snippet": "Play free online games at Poki, the #1 website for instant web games. Explore exclusive titles, popular favorites, and new game …"
+    },
+    {
+      "title": "Poki - Jeux en Ligne Gratuits - Jouez Maintenant!",
+      "url": "https://poki.us.com/fr/",
+      "snippet": "Poki est la plateforme de jeu numéro 1, gratuite, sans connexion ni téléchargement. Commencez à jouer à tous les types de jeux en …"
+    },
+    {
+      "title": "Poki - Meilleurs jeux en ligne gratuits - Jouez maintenant",
+      "url": "https://poki.homes/be",
+      "snippet": "Jouez aux meilleurs jeux en ligne gratuits sur Poki ! Profitez de centaines de jeux soigneusement sélectionnés sans téléchargement …"
+    },
+    {
+      "title": "New Games — Poki",
+      "url": "https://poki.ac/new/",
+      "snippet": "This webpage contains all our latest game releases. if you are into discovering new games, this list will help you discover the latest …"
+    }
+  ]
+}

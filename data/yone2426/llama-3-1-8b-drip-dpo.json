@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "yone2426/Llama-3.1-8B-DRIP-DPO",
+  "slug": "yone2426-llama-3-1-8b-drip-dpo",
+  "author": "yone2426",
+  "url": "https://huggingface.co/yone2426/Llama-3.1-8B-DRIP-DPO",
+  "created_at": "2026-09-13T17:50:49.000Z",
+  "updated_at": "2026-09-13T17:53:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama_drip_clean",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8047042561,
+  "parameters_human": "8.05B",
+  "storage_bytes": 18246246324,
+  "storage_human": "18.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Video Library | kisskh",
+      "url": "https://kisskh.co/Explore?order=2&country=2",
+      "snippet": "Watch drama online in high quality. Free download high quality drama. Various formats from 240p to 720p HD (or even 1080p). Feel …"
+    },
+    {
+      "title": "kisskh | Asian Dramas & Movies",
+      "url": "https://kisskh.co/",
+      "snippet": "Watch drama online in high quality. Free download high quality drama. Various formats from 240p to 720p HD (or even 1080p). Feel …"
+    },
+    {
+      "title": "Head 2 Head | kisskh",
+      "url": "https://kisskh.co/Drama/Head-2-Head?id=11769",
+      "snippet": "Jerome, or \"J,\" and Jinn are long-time rivals and persistent friends. They can't see each other without exchanging insults or a harsh …"
+    },
+    {
+      "title": "Kingdom | kisskh",
+      "url": "https://kisskh.co/Drama/Kingdom?id=150",
+      "snippet": "Set in the Joseon period. The King falls ill to smallpox and rumors start to spread that he has actually died. Meanwhile, Crown Prince …"
+    },
+    {
+      "title": "Search: WWW | kisskh",
+      "url": "https://kisskh.co/Drama/Search-WWW?id=749",
+      "snippet": "This drama is about the conflicts, the wins, and losses one experiences when working. It will follow the story of 21st century women, …"
+    }
+  ]
+}

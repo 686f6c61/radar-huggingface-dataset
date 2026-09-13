@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mustafaah/screen-highlighter-qwen3-vl-2b-webgpu",
+  "slug": "mustafaah-screen-highlighter-qwen3-vl-2b-webgpu",
+  "author": "mustafaah",
+  "url": "https://huggingface.co/mustafaah/screen-highlighter-qwen3-vl-2b-webgpu",
+  "created_at": "2026-09-13T16:59:26.000Z",
+  "updated_at": "2026-09-13T17:19:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "qwen3_vl",
+    "image-text-to-text",
+    "conversational",
+    "base_model:mustafaah/screen-highlighter-qwen3-vl-2b-rl-merged",
+    "base_model:quantized:mustafaah/screen-highlighter-qwen3-vl-2b-rl-merged",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8325575187,
+  "storage_human": "8.3 GB",
+  "base_model": "mustafaah/screen-highlighter-qwen3-vl-2b-rl-merged",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.ch/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.ch/?hl=en",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Görseller - Google",
+      "url": "https://www.google.ch/imghp?hl=tr&ogbl",
+      "snippet": "Google Görseller. Web üzerindeki en geniş kapsamlı görsel arama."
+    },
+    {
+      "title": "Imagens do Google",
+      "url": "https://images.google.ch/?hl=pt",
+      "snippet": "Imagens do Google. A pesquisa de imagens mais completa da web."
+    },
+    {
+      "title": "Google Images",
+      "url": "https://images.google.ch/",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    }
+  ]
+}

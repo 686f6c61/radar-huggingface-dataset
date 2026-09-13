@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Lightricks/LTX-Video",
+  "slug": "lightricks-ltx-video",
+  "author": "Lightricks",
+  "url": "https://huggingface.co/Lightricks/LTX-Video",
+  "created_at": "2024-10-31T12:36:00.000Z",
+  "updated_at": "2025-07-16T14:32:35.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "ltx-video",
+    "image-to-video",
+    "en",
+    "license:other",
+    "diffusers:LTXPipeline",
+    "region:us"
+  ],
+  "likes": 2302,
+  "downloads_30d": 751279,
+  "trending_score": 8,
+  "parameters": 1923385472,
+  "parameters_human": "1.92B",
+  "storage_bytes": 280845211099,
+  "storage_human": "280.8 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bwinners | Sport Betting & Casino Online in Africa | Live Casino",
+      "url": "https://bwinners.net/",
+      "snippet": "Welcome to Bwinners, a leading platform for sport betting, casino online, and live casino entertainment in Africa. Bwinners offers a …"
+    },
+    {
+      "title": "Bwinners – Best Online Betting Site in Africa | Sports & Casino",
+      "url": "https://bwinners.africa/",
+      "snippet": "Bwinners was built from the ground up for African users — not adapted from a European template. Our platform offers competitive …"
+    },
+    {
+      "title": "Bwinners - your online sport betting and casino",
+      "url": "https://bwinners.co.zw/",
+      "snippet": "Zimbabwe sports betting made easy with Bwinners - Enjoy live odds, slots and crash games - quick deposits and secure payouts 24/7"
+    },
+    {
+      "title": "Bet on the Best Sports in Gambia - Bwinners",
+      "url": "https://bwinners.gm/sportsbook/upcoming",
+      "snippet": "Explore the best sports betting site in Gambia with Bwinners. Bet on upcoming sporting events and maximize your winnings. Join us …"
+    },
+    {
+      "title": "Bwinners - Login to Your Account",
+      "url": "https://bwinners.co.zw/sign-in",
+      "snippet": "Access your Bwinners account securely. Log in to place bets, check your balance, and manage your account"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "McG-221/Boulesis-v2.1-26B-A4B-8bit",
+  "slug": "mcg-221-boulesis-v2-1-26b-a4b-8bit",
+  "author": "McG-221",
+  "url": "https://huggingface.co/McG-221/Boulesis-v2.1-26B-A4B-8bit",
+  "created_at": "2026-09-13T16:07:09.000Z",
+  "updated_at": "2026-09-13T16:07:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "McG — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/McG",
+      "snippet": "Joseph McGinty Nichol, dit McG, est un réalisateur, producteur de cinéma et de télévision et ancien producteur de disques américain, …"
+    },
+    {
+      "title": "Différence entre MG et MCG - Les Idées Clis",
+      "url": "https://www.ideeclis.fr/3724.html",
+      "snippet": "Jun 13, 2026 · MG ou MCG Les termes « mg » et « mcg » sont tous deux des abréviations pour les petites unités de mesure du …"
+    },
+    {
+      "title": "Microgram - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microgram",
+      "snippet": "In the metric system, a microgram or microgramme is a unit of mass equal to one millionth (10−6) of a gram. Two different …"
+    },
+    {
+      "title": "McG - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/McG",
+      "snippet": "Joseph McGinty Nichol (born August 9, 1968), known professionally as McG, is an American film director, film producer, and former …"
+    },
+    {
+      "title": "Différence entre MG et MCG Différence entre - Autres 2026 - Es different",
+      "url": "https://fr.esdifferent.com/difference-between-mg-and-mcg",
+      "snippet": "MG vs. MCG Les termes «mg» et «mcg» sont tous deux des abréviations pour de petites unités de mesure dans le système …"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "textilelabs/Loom-Swift-Micro",
+  "slug": "textilelabs-loom-swift-micro",
+  "author": "textilelabs",
+  "url": "https://huggingface.co/textilelabs/Loom-Swift-Micro",
+  "created_at": "2026-09-13T15:03:56.000Z",
+  "updated_at": "2026-09-13T15:04:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "llama",
+    "text-generation",
+    "tiny-model",
+    "from-scratch",
+    "conversational",
+    "multi-turn",
+    "tool-use",
+    "agent-harness",
+    "calibrated-honesty",
+    "humble-ai",
+    "small-language-model",
+    "cpu-trained",
+    "muon",
+    "experimental",
+    "en",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1159120,
+  "parameters_human": "1.2M",
+  "storage_bytes": 10559666,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leboncoin, site de petites annonces gratuites",
+      "url": "https://www.leboncoin.fr/",
+      "snippet": "Avec leboncoin, trouvez la bonne affaire, réalisez la bonne vente pour votre voiture, immobilier, emploi, location de vacances, …"
+    },
+    {
+      "title": "Toute la France - leboncoin",
+      "url": "https://www.leboncoin.fr/all/offer",
+      "snippet": "Toutes nos annonces gratuites Toute la France. Consultez nos 91301979 annonces de particuliers et professionnels sur leboncoin."
+    },
+    {
+      "title": "32 annonces Maisons à vendre Fleury-sur-Andelle 27380 , Seloger.com",
+      "url": "https://www.seloger.com/recherche/achat/maison/normandie/fleury-sur-andelle-27380/ad08fr10135?msockid=10b348367cf0633021af5fe57d55622e",
+      "snippet": "Découvrez les prix immobiliers au m² dans votre région. Quelle est la valeur réelle de votre bien? Obtenez une estimation …"
+    },
+    {
+      "title": "Achat maison Fleury-sur-Andelle 27380 : 29 annonces",
+      "url": "https://www.logic-immo.com/recherche-immo/vente/maison/normandie/fleury-sur-andelle-27380/ad08fr10135",
+      "snippet": "Découvrez les prix immobiliers au m² dans votre région. Quelle est la valeur réelle de votre bien? Obtenez une estimation …"
+    },
+    {
+      "title": "ParuVendu Fleury-sur-Andelle (27380) : annonces de particuliers et ...",
+      "url": "https://www.paruvendu.fr/geo/annonces/fleury-sur-andelle-27380/",
+      "snippet": "A vous de vendre ! Déposez votre annonce gratuitement sur ParuVendu, c'est simple et rapide Publiez et modifiez vos annonces …"
+    }
+  ]
+}

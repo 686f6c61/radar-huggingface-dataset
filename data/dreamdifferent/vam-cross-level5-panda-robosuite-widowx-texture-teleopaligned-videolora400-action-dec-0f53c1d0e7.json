@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dreamdifferent/vam-cross-level5-panda-robosuite-widowx-texture-teleopaligned-videolora400-action-dec-0f53c1d0e7",
+  "slug": "dreamdifferent-vam-cross-level5-panda-robosuite-widowx-texture-teleopaligned-videolora400-action-dec-0f53c1d0e7",
+  "author": "dreamdifferent",
+  "url": "https://huggingface.co/dreamdifferent/vam-cross-level5-panda-robosuite-widowx-texture-teleopaligned-videolora400-action-dec-0f53c1d0e7",
+  "created_at": "2026-09-13T12:25:28.000Z",
+  "updated_at": "2026-09-13T12:25:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mimic-video",
+    "robotics",
+    "action-prediction",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1000269372,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Recommendations for free online movie sites? : r/Piracy - Reddit",
+      "url": "https://www.reddit.com/r/Piracy/comments/18eovgj/recommendations_for_free_online_movie_sites/",
+      "snippet": "Hiya folks! So, I’m planning on hosting some movie nights with my online friends, but the site i usually use was taken down due to …"
+    },
+    {
+      "title": "有问题，就会有答案 - 知乎",
+      "url": "https://www.zhihu.com/creator",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "r/wallstreetbets - Reddit",
+      "url": "https://www.reddit.com/r/wallstreetbets/",
+      "snippet": "r/wallstreetbets: Like 4chan found a Bloomberg Terminal. Can someone please tell me what the fuck is going on with the market? I …"
+    }
+  ]
+}

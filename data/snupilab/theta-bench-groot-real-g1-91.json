@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "snupilab/theta-bench-groot-real-g1-91",
+  "slug": "snupilab-theta-bench-groot-real-g1-91",
+  "author": "snupilab",
+  "url": "https://huggingface.co/snupilab/theta-bench-groot-real-g1-91",
+  "created_at": "2026-09-13T17:03:43.000Z",
+  "updated_at": "2026-09-13T17:09:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "Gr00tN1d7",
+    "robotics",
+    "theta-bench",
+    "real-g1",
+    "en",
+    "dataset:snupilab/theta-bench-teleop",
+    "base_model:snupilab/theta-bench-groot-sim-3003",
+    "base_model:finetune:snupilab/theta-bench-groot-sim-3003",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 6910499416,
+  "storage_human": "6.9 GB",
+  "base_model": "snupilab/theta-bench-groot-sim-3003",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hot Spot (@hotspot_dz) • Instagram photos and videos",
+      "url": "https://www.instagram.com/hotspot_dz/",
+      "snippet": "53K Followers, 166 Following, 129 Posts - Hot Spot (@hotspot_dz) on Instagram: \"📌Kouba Restauration de 11h:30 à 23h 📞Pour …"
+    },
+    {
+      "title": "Hot Spot | Algiers - Facebook",
+      "url": "https://www.facebook.com/HotSpotdz/",
+      "snippet": "May 27, 2026 · Dec 11, 2025· 󰟠 L'équipe HOTSPOT est fière de vous présenter son NEW MENU pensé avec passion et preparé …"
+    },
+    {
+      "title": "HotSpot - Kouba | Fried chicken, Plats | Yassir Delivery | Yassir Food",
+      "url": "https://delivery.yassir.com/ar/restaurant/alger-centre/5f0ed9b715ff4b0001373ddf/HotSpot",
+      "snippet": "Order from HotSpot in Kouba, Algérie. Specializing in Fried chicken, Plats. Services: Plats, Restaurant-Dz, Pâtisserie -Dz. Fast …"
+    },
+    {
+      "title": "Hot Spot, 02 rue Abdelkader Allaoua kouba, Algiers (2026)",
+      "url": "https://www.findglocal.com/DZ/Algiers/711488485974205/Hot-Spot",
+      "snippet": "Apr 2, 2026 · Profitez d’un espace chaleureux, classe et moderne toute en dégustant notre cuisine authentique au saveurs …"
+    },
+    {
+      "title": "HotSpot DZ Restaurant - WinNaklou?",
+      "url": "https://www.winnaklou.com/fr/restaurants/hotspot-dz-restaurant-kouba-fr/",
+      "snippet": "HotSpot DZ Restaurant est une fiche restaurant WinNaklou pour Kouba / Alger. Consultez la localisation, les contacts, les menus, la …"
+    }
+  ]
+}

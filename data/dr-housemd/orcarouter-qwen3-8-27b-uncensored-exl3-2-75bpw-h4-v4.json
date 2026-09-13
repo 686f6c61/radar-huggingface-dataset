@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "dr-housemd/orcarouter-Qwen3.8-27B-Uncensored-exl3-2.75bpw-H4-V4",
+  "slug": "dr-housemd-orcarouter-qwen3-8-27b-uncensored-exl3-2-75bpw-h4-v4",
+  "author": "dr-housemd",
+  "url": "https://huggingface.co/dr-housemd/orcarouter-Qwen3.8-27B-Uncensored-exl3-2.75bpw-H4-V4",
+  "created_at": "2026-09-13T16:05:32.000Z",
+  "updated_at": "2026-09-13T16:26:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "abliterated",
+    "qwen",
+    "qwen3",
+    "qwen3.8",
+    "uncensored",
+    "ai-red-team",
+    "red-teaming",
+    "bf16",
+    "post-training",
+    "fine-tuning",
+    "vision-language",
+    "function-calling",
+    "reasoning",
+    "mtp",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "exl3",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6137435520,
+  "parameters_human": "6.14B",
+  "storage_bytes": 12288056794,
+  "storage_human": "12.3 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dr Maria LUZ GALLAGA GOIRI - Doctolib",
+      "url": "https://www.doctolib.fr/medecin-generaliste/vernouillet/maria-luz-gallaga-goiri",
+      "snippet": "Prenez RDV en ligne avec Dr Maria LUZ GALLAGA GOIRI: Médecin généraliste, Conventionné secteur 1. Adresse : 20 Place du …"
+    },
+    {
+      "title": "Dr Alban TORSET, Médecin généraliste à Vernouillet - Doctolib",
+      "url": "https://www.doctolib.fr/medecin-generaliste/vernouillet/alban-torset",
+      "snippet": "Prenez RDV en ligne avec Dr Alban TORSET: Médecin généraliste, Conventionné secteur 1. Adresse : 20 Place du Général Charles …"
+    },
+    {
+      "title": "Prendre rendez-vous : Dr TORSET Alban Médecin généraliste à …",
+      "url": "https://lemedecin.fr/vernouillet/cabinet-du-dr-alban-torset/medecin-generaliste/docteur-torset-alban/c17ece0ad35bd9d270eab086bd065037/pro/",
+      "snippet": "Docteur TORSET Alban est Médecin généraliste à Vernouillet, cabinet du dr alban torset est au 20 place du general de gaulle à …"
+    },
+    {
+      "title": "Dr BRISSE Frederic - Lemedecin.fr",
+      "url": "https://lemedecin.fr/vernouillet/cabinet-du-dr-frederic-brisse/medecin-generaliste/docteur-brisse-frederic/77e0bcefea4647f0f83ad28ecb6d5ac1/pro/",
+      "snippet": "Docteur BRISSE Frederic est Médecin généraliste à Vernouillet, cabinet du dr frederic brisse est au 4 rue andre marie ampere à …"
+    },
+    {
+      "title": "Prendre RDV : Dr Alban TORSET, Médecin généraliste à Vernouillet",
+      "url": "https://www.mablouseblanche.fr/pro/A10003754693/docteur-torset-alban-specialiste-en-medecine-generale-vernouillet",
+      "snippet": "Prenez rendez-vous avec Dr Alban TORSET, Médecin généraliste à Vernouillet en ligne. Adresse et Téléphone : 2 AVENUE DE …"
+    }
+  ]
+}

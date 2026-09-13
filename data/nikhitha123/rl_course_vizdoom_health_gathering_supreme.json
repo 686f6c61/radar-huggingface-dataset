@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Nikhitha123/rl_course_vizdoom_health_gathering_supreme",
+  "slug": "nikhitha123-rl_course_vizdoom_health_gathering_supreme",
+  "author": "Nikhitha123",
+  "url": "https://huggingface.co/Nikhitha123/rl_course_vizdoom_health_gathering_supreme",
+  "created_at": "2026-09-13T11:41:06.000Z",
+  "updated_at": "2026-09-13T11:41:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "sample-factory",
+  "languages": [],
+  "tags": [
+    "sample-factory",
+    "tensorboard",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 129004644,
+  "storage_human": "129 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "App per vedere partite gratis su Fire Stick - Salvatore Aranzulla",
+      "url": "https://www.aranzulla.it/app-per-vedere-partite-gratis-su-fire-stick-1808194.html",
+      "snippet": "Come promesso, di seguito trovi una selezione di app per vedere partite su Fire Stick gratuitamente."
+    },
+    {
+      "title": "StreamFire per Fire TV Stick: Tanto sport gratis - HowTechIsMade",
+      "url": "https://www.howtechismade.com/streaming/streamfire-per-fire-tv-stick-tanto-sport-gratis/",
+      "snippet": "Apr 10, 2026 · Scopri come installare StreamFire su Fire TV Stick per guardare sport e TV in streaming gratis. Guida passo passo, …"
+    },
+    {
+      "title": "Come guardare i giochi con Fire Stick: Una guida completa",
+      "url": "https://tuttodigitale.net/tech/come-guardare-i-giochi-con-fire-stick-una-guida-completa/",
+      "snippet": "Una delle caratteristiche più interessanti della Fire Stick è la possibilità di guardare sport e partite in diretta. In questo articolo …"
+    },
+    {
+      "title": "StreamFire: Sport in streaming gratis su Android e Fire Stick",
+      "url": "https://www.howtechismade.com/streaming/streamfire-sport-in-streaming-gratis-su-android-e-fire-stick/",
+      "snippet": "Jan 4, 2025 · Con StreamFire potremo vedere tantissimi canali in diretta, e ovviamente gratis e sebbene sia disponibile per Android …"
+    },
+    {
+      "title": "App per Fire Stick - Salvatore Aranzulla",
+      "url": "https://www.aranzulla.it/app-per-fire-stick-1386804.html",
+      "snippet": "Su Fire TV, dunque, è possibile installare la versione client che ti permetterà di accedere ai contenuti organizzati nel server che avrai …"
+    }
+  ]
+}

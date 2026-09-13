@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "JamePeng2023/Qwen3-TTS-12Hz-Base-GGUF",
+  "slug": "jamepeng2023-qwen3-tts-12hz-base-gguf",
+  "author": "JamePeng2023",
+  "url": "https://huggingface.co/JamePeng2023/Qwen3-TTS-12Hz-Base-GGUF",
+  "created_at": "2026-09-13T11:50:37.000Z",
+  "updated_at": "2026-09-13T12:47:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+    "base_model:quantized:Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1733157888,
+  "parameters_human": "1.73B",
+  "storage_bytes": 10686766368,
+  "storage_human": "10.7 GB",
+  "base_model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Windy: Wind map & weather forecast",
+      "url": "https://www.windy.com/",
+      "snippet": "Weather radar, wind and waves forecast for kiters, surfers, paragliders, pilots, sailors and anyone else. Worldwide animated weather …"
+    },
+    {
+      "title": "Windy: Wind map & weather forecast",
+      "url": "https://www.windy.com/embed2.html?lat=46.695&lon=2.505&zoom=6&level=surface&overlay=radar&type=map&location=coordinates&metricWind=default&metricTemp=default&radarRange=-1",
+      "snippet": "Live wind map and weather forecast with radar overlay, providing detailed and animated weather data for various activities worldwide."
+    },
+    {
+      "title": "Windy: Wind map & weather forecast",
+      "url": "https://embed.windy.com/ja",
+      "snippet": "Windyは、世界中の気象レーダー、風、波の予報を提供し、簡単に使用できるレイヤーと正確なスポット予報を備えています。"
+    },
+    {
+      "title": "Windy: Webcams",
+      "url": "https://webcams.windy.com/",
+      "snippet": "50+ weather layers, weather radar and satellite"
+    },
+    {
+      "title": "Windy: Wind map & weather forecast",
+      "url": "https://embed.windy.com/embed",
+      "snippet": "Windy provides real-time wind maps and accurate weather forecasts with user-friendly layers and precise spot forecasts."
+    }
+  ]
+}

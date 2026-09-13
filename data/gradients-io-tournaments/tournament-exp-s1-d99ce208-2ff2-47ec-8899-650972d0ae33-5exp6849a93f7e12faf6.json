@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-exp-s1-d99ce208-2ff2-47ec-8899-650972d0ae33-5Exp6849a93f7e12faf6",
+  "slug": "gradients-io-tournaments-tournament-exp-s1-d99ce208-2ff2-47ec-8899-650972d0ae33-5exp6849a93f7e12faf6",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-exp-s1-d99ce208-2ff2-47ec-8899-650972d0ae33-5Exp6849a93f7e12faf6",
+  "created_at": "2026-09-13T16:14:51.000Z",
+  "updated_at": "2026-09-13T16:15:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "falcon",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1311625216,
+  "parameters_human": "1.31B",
+  "storage_bytes": 2623284688,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux pièces …"
+    },
+    {
+      "title": "Connection fecebook - Facebook - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-36078047-connection-fecebook",
+      "snippet": "Jun 16, 2019 · Meilleure réponse: Bonsoir, vous parlez de facebook sur ordinateur ? ou sur 1 autre support ? Pour se connecter à …"
+    },
+    {
+      "title": "Cómo registrarse en Facebook y configurar un nuevo perfil - CCM",
+      "url": "https://es.ccm.net/aplicaciones-e-internet/redes-sociales-y-mensajeria/2892-crear-una-cuenta-de-facebook/",
+      "snippet": "Jun 22, 2022 · Para utilizar Facebook es necesario registrarte antes y crear una cuenta personal en la red social. El procedimiento es …"
+    },
+    {
+      "title": "Cómo eliminar amigos en Facebook: masivamente, rápido, Lite - CCM",
+      "url": "https://es.ccm.net/aplicaciones-e-internet/redes-sociales-y-mensajeria/3584-como-eliminar-amigos-en-facebook/",
+      "snippet": "Dec 5, 2023 · ¿Cómo eliminar amigos de Facebook masivamente? Aunque en un tiempo existían aplicaciones (de dudosa …"
+    },
+    {
+      "title": "Facebook Actualité, guides pratiques et guides d'achat - ZDNET",
+      "url": "https://www.zdnet.fr/facebook-4000085268q.htm",
+      "snippet": "Aug 27, 2026 · Les derniers articles et analyses de la rédaction sur la thématique Facebook. Tout ce qu’il faut savoir sur l’actualité …"
+    }
+  ]
+}

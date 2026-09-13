@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "azinamotoe/HmarBERT",
+  "slug": "azinamotoe-hmarbert",
+  "author": "azinamotoe",
+  "url": "https://huggingface.co/azinamotoe/HmarBERT",
+  "created_at": "2026-09-13T17:46:53.000Z",
+  "updated_at": "2026-09-13T19:07:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": null,
+  "languages": [
+    "hmr"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "hmar",
+    "mlm",
+    "fill-mask",
+    "zo-languages",
+    "kuki-chin",
+    "language-model",
+    "low-resource",
+    "hmr",
+    "dataset:hmar-heritage-org/dolma-pretrain",
+    "base_model:robzchhangte/MizBERT",
+    "base_model:finetune:robzchhangte/MizBERT",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109514298,
+  "parameters_human": "109.5M",
+  "storage_bytes": 438080896,
+  "storage_human": "438 MB",
+  "base_model": "robzchhangte/MizBERT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prekladač Google",
+      "url": "https://translate.google.sk/",
+      "snippet": "Táto služba Googlu ponúkaná bez peňažného poplatku okamžite prekladá slová, frázy a webové stránky medzi angličtinou a viac …"
+    },
+    {
+      "title": "Prekladač Google",
+      "url": "https://translate.google.sk/details",
+      "snippet": "Hlasový vstup nie je v tomto prehliadači podporovaný Odoslať spätnú väzbu"
+    },
+    {
+      "title": "Prekladač Google",
+      "url": "https://translate.google.sk/m",
+      "snippet": "Domovská stránka Google Odoslať spätnú väzbu Ochrana súkromia a zmluvné podmienky Prepnúť na plnohodnotný web"
+    }
+  ]
+}

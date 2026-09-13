@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/jpn-100mb-after-wc-uniform-newlex-jpn-ckpt500_seed10_seed10",
+  "slug": "fpadovani-jpn-100mb-after-wc-uniform-newlex-jpn-ckpt500_seed10_seed10",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/jpn-100mb-after-wc-uniform-newlex-jpn-ckpt500_seed10_seed10",
+  "created_at": "2026-09-13T12:44:10.000Z",
+  "updated_at": "2026-09-13T14:26:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:fpadovani/ppt-wc-uniform-newlex-jpn-100mb_seed10",
+    "base_model:finetune:fpadovani/ppt-wc-uniform-newlex-jpn-100mb_seed10",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 5990896998,
+  "storage_human": "6.0 GB",
+  "base_model": "fpadovani/ppt-wc-uniform-newlex-jpn-100mb_seed10",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "¿Qué tipos de instalación de aerotermia existen? | Daikin",
+      "url": "https://www.daikin.es/es_es/hogar/inspiracion/articulos/tipos-instalacion-aerotermia.html",
+      "snippet": "¿Qué tipos de instalación de aerotermia existen? ¿Estás pensando en pasarte a la aerotermia pero no sabes qué instalación se …"
+    },
+    {
+      "title": "5 Tipos de Instalación de Aerotermia | Irtesc",
+      "url": "https://irtesc.es/energia/tipos-instalacion-de-aerotermia/",
+      "snippet": "Apr 26, 2024 · ¿Cómo puedo combinar la aerotermia y qué tipos de Instalación de Aerotermia existen y cual encaja más para mi …"
+    },
+    {
+      "title": "¿Qué tipos de calefacción por aerotermia existen? | Daikin",
+      "url": "https://www.daikin.es/es_es/hogar/inspiracion/articulos/tipos-calefaccion-aerotermia.html",
+      "snippet": "Para ayudarte a tener las cosas más claras queremos explicarte qué tipos de calefacción por aerotermia existen, en qué se …"
+    },
+    {
+      "title": "Instalación de aerotermia en un piso: paso a paso | Endesa",
+      "url": "https://www.endesa.com/es/blog/blog-de-endesa/climatizacion/instalacion-aerotermia-piso-paso-a-paso",
+      "snippet": "Dec 10, 2025 · Guía paso a paso para instalar aerotermia en un piso: requisitos, espacios necesarios, unidad exterior, costes y …"
+    },
+    {
+      "title": "Instalación de aerotermia: Tipos, precios y beneficios | GroupSumi",
+      "url": "https://groupsumi.es/blog/guia-completa-de-instalacion-de-aerotermia-y-sus-precios",
+      "snippet": "Descubre el precio de instalación de aerotermia y sus beneficios. Guía completa sobre tipos, costes, ayudas y demás opciones. …"
+    }
+  ]
+}

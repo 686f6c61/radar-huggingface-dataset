@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "andreadm/reddit-pulse-llama3.2_1b-qdora",
+  "slug": "andreadm-reddit-pulse-llama3-2_1b-qdora",
+  "author": "andreadm",
+  "url": "https://huggingface.co/andreadm/reddit-pulse-llama3.2_1b-qdora",
+  "created_at": "2026-09-13T13:23:56.000Z",
+  "updated_at": "2026-09-13T13:54:29.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "llama",
+    "economics",
+    "finance",
+    "inflation",
+    "inflation-expectations",
+    "reddit",
+    "lora",
+    "dora",
+    "qdora",
+    "text-classification",
+    "en",
+    "base_model:meta-llama/Llama-3.2-1B",
+    "base_model:adapter:meta-llama/Llama-3.2-1B",
+    "license:llama3.2",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44851299,
+  "storage_human": "45 MB",
+  "base_model": "meta-llama/Llama-3.2-1B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Directional inflation-expectation classification (up / neutral / down)",
+      "dataset": "Reddit inflation gold set (Del Monaco, Longo, Marcucci & Tafani, 2026), held-out test split of seed 3266123502",
+      "metric": null,
+      "value": 0.705
+    },
+    {
+      "task": "Directional inflation-expectation classification (up / neutral / down)",
+      "dataset": "Reddit inflation gold set (Del Monaco, Longo, Marcucci & Tafani, 2026), held-out test split of seed 3266123502",
+      "metric": "F1 (weighted)",
+      "value": 0.707
+    },
+    {
+      "task": "Directional inflation-expectation classification (up / neutral / down)",
+      "dataset": "Reddit inflation gold set (Del Monaco, Longo, Marcucci & Tafani, 2026), held-out test split of seed 3266123502",
+      "metric": "F1 (macro)",
+      "value": 0.6515
+    },
+    {
+      "task": "Directional inflation-expectation classification (up / neutral / down)",
+      "dataset": "Reddit inflation gold set (Del Monaco, Longo, Marcucci & Tafani, 2026), held-out test split of seed 3266123502",
+      "metric": "ROC-AUC (macro, one-vs-rest)",
+      "value": 0.8676
+    }
+  ],
+  "sources": [
+    {
+      "title": "Fensterbilder Pilze - Bastelanleitungen und Vorlagen - eduki",
+      "url": "https://eduki.com/de/material/710944/fensterbilder-pilze---bastelanleitungen-und-vorlagen",
+      "snippet": "Schnell eine schöne herbstliche Fensterdekoration basteln - egal ob passend zum Sachunterrichtsthema Pilze oder im herbstlichen …"
+    },
+    {
+      "title": "DIY: Pilze Fensterbilder basteln - Bastelanleitung für Kinder",
+      "url": "https://online-zeichenkurs.de/fuer-kinder-eltern/diy-bastelvorlagen-pilze-fensterbilder-basteln-fuer-kinder-27469.html",
+      "snippet": "Oct 21, 2022 · Hier findest du eine DIY simple Bastelanleitung zum Pilze Fensterbilder basteln für Kinder - passend dekorieren für …"
+    },
+    {
+      "title": "Ideenreise - Blog | Bastelidee für eine herbstliche Fensterdeko",
+      "url": "https://ideenreise-blog.de/2014/09/bastelidee-fur-eine-herbstliche.html",
+      "snippet": "Natürlich lassen sich mit der Vorlage auch ganz einfache Pilze basteln. Dazu einfach die Punkte etc. weglassen. Ich denke, das Foto …"
+    },
+    {
+      "title": "Prickelbilder / Fensterbilder Thema Pilze - Grundschule ... - eduki",
+      "url": "https://eduki.com/de/material/1612266/prickelbilder-fensterbilder-thema-pilze---grundschule---bastelvorlagen",
+      "snippet": "Sep 3, 2026 · Hier erhaltet ihr Prickelbilder zum Thema Pilze. Im Material enthalten sind Prickelbilder, die direkt ausgedruckt und als …"
+    },
+    {
+      "title": "Pilze basteln für Fenster: PDF-Bastelvorlage für Kinder",
+      "url": "https://kinderparty.one/basteln/pilz-fensterbild",
+      "snippet": "Nette Pilz-Fensterbilder machen jedes Kinderzimmer schöner. Mit unserer Fliegenpilz-Bastelvorlage bastelst du schnell …"
+    }
+  ]
+}

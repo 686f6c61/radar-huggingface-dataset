@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "perezmichael/self-supervised",
+  "slug": "perezmichael-self-supervised",
+  "author": "perezmichael",
+  "url": "https://huggingface.co/perezmichael/self-supervised",
+  "created_at": "2026-09-13T17:41:56.000Z",
+  "updated_at": "2026-09-13T17:42:02.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "self-supervised",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vikingen Infinity Resort & Spa (hotel) - Alanya - Turkije",
+      "url": "https://www.tui.nl/vikingen-infinity-resort-en-spa-509794749/?msockid=0280f5f154896b8a1e2be22255256a13",
+      "snippet": "Vikingen Infinity Resort & Spa in Alanya ligt direct aan de Turkse Rivièra en is je hotel voor een zorgeloze strandvakantie met veel …"
+    },
+    {
+      "title": "Vikingen Infinity Resort & Spa, Avsallar (updated prices 2026)",
+      "url": "https://www.booking.com/hotel/tr/vikingen-infinity-resort.html?msockid=0280f5f154896b8a1e2be22255256a13",
+      "snippet": "Located at the seafront, the Vikingen Infinity Resort&Spa has a half-mile private beach with a jetty"
+    },
+    {
+      "title": "Vikingen İnfinity Resort & Spa | Vikingen Hotel - Vikingen Otel",
+      "url": "http://www.vikingenhotels.com/en/",
+      "snippet": "Our hotel is ultra all inclusive with open buffet, lunch, dinner and some local and foreing local alcoholic beverages are free of charge. …"
+    },
+    {
+      "title": "Vikingen Infinity Resort & Spa - dé VakantieDiscounter",
+      "url": "https://www.vakantiediscounter.nl/turkije/antalya/avsallar/vikingen_infinity_resort_spa?msockid=0280f5f154896b8a1e2be22255256a13",
+      "snippet": "Op vakantie naar Vikingen Infinity Resort & Spa in Avsallar, Turkije? Bekijk de beste aanbiedingen, hotelinformatie en …"
+    },
+    {
+      "title": "Vikingen Infinity in Alanya. Voordelig naar Vikingen Infinity.",
+      "url": "https://www.corendon.nl/turkije/turkse-riviera/alanya/avsallar/vikingen-infinity?msockid=0280f5f154896b8a1e2be22255256a13",
+      "snippet": "Vikingen Infinity is een luxe vijfsterrenresort in Avsallar dat indruk maakt met zijn ruime opzet, talloze faciliteiten en opvallende …"
+    }
+  ]
+}

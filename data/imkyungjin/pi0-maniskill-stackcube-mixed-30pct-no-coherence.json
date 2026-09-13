@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ImKyungjin/pi0-maniskill-stackcube-mixed-30pct-no-coherence",
+  "slug": "imkyungjin-pi0-maniskill-stackcube-mixed-30pct-no-coherence",
+  "author": "ImKyungjin",
+  "url": "https://huggingface.co/ImKyungjin/pi0-maniskill-stackcube-mixed-30pct-no-coherence",
+  "created_at": "2026-09-13T13:10:13.000Z",
+  "updated_at": "2026-09-13T13:14:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi0",
+    "dataset:local/maniskill_stackcube_mixed_30pct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 7011552484,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Auto Usate su Quattroruote Annunci: cerca e vendi con facilità",
+      "url": "https://www.quattroruote.it/auto-usate/",
+      "snippet": "Scopri tutte le auto usate in vendita: annunci aggiornati, occasioni, prezzi e offerte da concessionari e privati. Trova la tua prossima …"
+    },
+    {
+      "title": "Annunci Auto Usate in Vendita - Quattroruote Usato",
+      "url": "https://www.quattroruote.it/auto-usate/annunci",
+      "snippet": "Affidati all'esperienza di Quattroruote, acquista la quotazione a solo 3,99€! Il prezzo per questo veicolo presenta un rapporto qualità …"
+    },
+    {
+      "title": "Cerca auto usate per marca - Quattroruote.it",
+      "url": "https://www.quattroruote.it/auto-usate/ricerca-per-marca",
+      "snippet": "Cerca tra gli annunci di auto usate, km 0 e aziendali suddivise per marca su Quattroruote.it, il sito con annunci gratuiti di auto usate …"
+    },
+    {
+      "title": "Quattroruote | News e listino auto nuove, usato, quotazioni e servizi",
+      "url": "https://www.quattroruote.it/",
+      "snippet": "May 24, 2021 · Settanta anni di Quattroruote: strade, sogni e motori. Dal dopoguerra all’era elettrica, un viaggio che intreccia …"
+    },
+    {
+      "title": "Quotazione e Valutazione Auto | Quattroruote.it",
+      "url": "https://quotazioni.quattroruote.it/",
+      "snippet": "Integra alla Quotazione Quattroruote una panoramica del posizionamento della tua auto sul mercato. Una inedita elaborazione delle …"
+    }
+  ]
+}

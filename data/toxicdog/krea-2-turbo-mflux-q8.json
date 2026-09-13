@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "toxicdog/krea-2-turbo-mflux-q8",
+  "slug": "toxicdog-krea-2-turbo-mflux-q8",
+  "author": "toxicdog",
+  "url": "https://huggingface.co/toxicdog/krea-2-turbo-mflux-q8",
+  "created_at": "2026-09-13T15:47:16.000Z",
+  "updated_at": "2026-09-13T15:47:16.000Z",
+  "license": "krea-2",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "mflux",
+  "languages": [],
+  "tags": [
+    "mflux",
+    "safetensors",
+    "text-to-image",
+    "mlx",
+    "flux",
+    "krea",
+    "apple-silicon",
+    "quantized",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:finetune:krea/Krea-2-Turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3606719052,
+  "parameters_human": "3.61B",
+  "storage_bytes": 22186377737,
+  "storage_human": "22.2 GB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Meet で背景とエフェクトを変更する",
+      "url": "https://support.google.com/meet/answer/10058482?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "Google Meet で背景とエフェクトを変更する 参加者が会話に集中し、会議をさらに楽しめるように、背景をぼかす機能や以下の背 …"
+    },
+    {
+      "title": "Google Meet で背景とエフェクトを変更する",
+      "url": "https://support.google.com/meet/answer/10058482?hl=ja&co=GENIE.Platform=iOS",
+      "snippet": "Google Meet で背景とエフェクトを変更する 参加者が会話に集中し、会議をさらに楽しめるように、背景をぼかす機能や以下の背 …"
+    },
+    {
+      "title": "Google Meet ヘルプ",
+      "url": "https://support.google.com/meet/?hl=ja",
+      "snippet": "サービスを使用する際のヒントやチュートリアル、よくある質問に対する回答を閲覧できる、Google の Google Meet ヘルプセン …"
+    },
+    {
+      "title": "会議に参加する - パソコン - Google Meet ヘルプ",
+      "url": "https://support.google.com/meet/answer/9303069?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "Google Meet、Google カレンダー、または Gmail からビデオ会議に参加できます。 次の方法で会議に参加することもできます。 会 …"
+    },
+    {
+      "title": "在 Google Meet 中更改背景和特效",
+      "url": "https://support.google.com/meet/answer/10058482?hl=zh-Hans&co=GENIE.Platform%3DDesktop",
+      "snippet": "在设备和云端处理器之间切换 Meet 会自动在设备端与云端效果处理器之间切换。对于符合以下条件的设备，它会优先使用云端效果处 …"
+    }
+  ]
+}

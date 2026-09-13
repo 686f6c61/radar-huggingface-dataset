@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "wangsanmu5g/bge-small-zh-v1.5",
+  "slug": "wangsanmu5g-bge-small-zh-v1-5",
+  "author": "wangsanmu5g",
+  "url": "https://huggingface.co/wangsanmu5g/bge-small-zh-v1.5",
+  "created_at": "2026-09-13T14:37:16.000Z",
+  "updated_at": "2026-09-13T14:37:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "bert",
+    "zh",
+    "arxiv:2310.07554",
+    "arxiv:2309.07597",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23954432,
+  "parameters_human": "24.0M",
+  "storage_bytes": 191670281,
+  "storage_human": "192 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tubo galvanizado 4 polegadas 6 metros - Mercado Livre",
+      "url": "https://lista.mercadolivre.com.br/tubo-galvanizado-4-polegadas-6-metros",
+      "snippet": "O frete grátis está sujeito ao peso, preço e distância do envio. Frete grátis no dia Compre já Tubo Galvanizado 4 Polegadas 6 Metros …"
+    },
+    {
+      "title": "Tubo 4 Polegadas Galvanizado em Promoção no Magazine Luiza",
+      "url": "https://www.magazineluiza.com.br/busca/tubo+4+polegadas+galvanizado/?msockid=0a1df6ac626a67730374e17f63026646",
+      "snippet": "Procurando por Tubo 4 Polegadas Galvanizado? Confira as ofertas que a Magalu separou para você. Facilidade no pagamento e …"
+    },
+    {
+      "title": "Tubo galvanizado 4 polegadas - Mercado Livre",
+      "url": "https://lista.mercadolivre.com.br/tubo-galvanizado-4-polegadas",
+      "snippet": "Frete grátis no dia Compre já Tubo Galvanizado 4 Polegadas parcelado sem juros! Saiba mais sobre nossas incríveis ofertas e …"
+    },
+    {
+      "title": "Tubo de Aço Redondo 4\" Galvanizado - 6 Metros",
+      "url": "https://www.brasferaco.com.br/tubo-de-aco-redondo-4-galvanizado-6-metros",
+      "snippet": "O \"Tubo de Aço Redondo 4\" Galvanizado - 6 Metros\" é uma escolha sólida para projetos que requerem resistência à corrosão e …"
+    },
+    {
+      "title": "Tubo Galvanizado 4 Polegadas Preço | Loja do Mecânico",
+      "url": "https://www.lojadomecanico.com.br/buscar/tubo-galvanizado-4-polegadas-preco",
+      "snippet": "Qualidade e preço baixo em Tubo Galvanizado 4 Polegadas Preço aqui na Loja do Mecânico. Venha conferir nossos produtos e …"
+    }
+  ]
+}

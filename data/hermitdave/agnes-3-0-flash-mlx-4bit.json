@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "hermitdave/Agnes-3.0-Flash-MLX-4bit",
+  "slug": "hermitdave-agnes-3-0-flash-mlx-4bit",
+  "author": "hermitdave",
+  "url": "https://huggingface.co/hermitdave/Agnes-3.0-Flash-MLX-4bit",
+  "created_at": "2026-09-13T18:47:54.000Z",
+  "updated_at": "2026-09-13T18:49:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "agnes",
+    "4bit",
+    "hybrid-attention",
+    "gated-delta-net",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Agnes-AI/Agnes-3.0-Flash",
+    "base_model:quantized:Agnes-AI/Agnes-3.0-Flash",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32205067008,
+  "parameters_human": "32.21B",
+  "storage_bytes": 18139893807,
+  "storage_human": "18.1 GB",
+  "base_model": "Agnes-AI/Agnes-3.0-Flash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fast-food poulet halal à Besançon | O'Crousti Poulet",
+      "url": "https://ocroustipouletoriginal.com/restaurant/besancon",
+      "snippet": "O'Crousti Poulet à Besançon : le poulet le plus croustillant, mariné 24h, halal et fait maison. Fast-food à emporter au 33 Rue …"
+    },
+    {
+      "title": "O'Crousti Poulet — Le poulet le plus croustillant de France",
+      "url": "https://ocroustipouletoriginal.com/",
+      "snippet": "O'Crousti Poulet : poulet croustillant mariné 24h, fait maison chaque jour. 35 restaurants en France. À emporter et Uber Eats."
+    },
+    {
+      "title": "O’Crousti Poulet Besançon, Besançon - Menu du restaurant, prix et avis",
+      "url": "https://fr.restaurantguru.com/OCrousti-Poulet-Besancon-Besancon",
+      "snippet": "O’Crousti Poulet Besançon à Besançon classé 4.9 sur 5 sur Restaurant Guru : 230 avis de visiteurs, 20 photos. Exlorer le menu, …"
+    },
+    {
+      "title": "Restauration rapide O’Crousti Poulet Besançon à Besançon",
+      "url": "https://kazfeed.com/restaurant/ocrousti-poulet-besancon-32965",
+      "snippet": "O’Crousti Poulet Besançon, restauration rapide à Besançon. Ouvert tous les jours. Repas en solo, Décontracté, Livraison."
+    },
+    {
+      "title": "O’Crousti Poulet Besançon à Besançon - Restauration rapide",
+      "url": "https://restauration-rapide.restaurants-de-france.fr/o-crousti-poulet-besan-on-3569389.html",
+      "snippet": "Restauration rapide O’Crousti Poulet Besançon Besançon. Découvrez le numéro de téléphone, les avis clients (128), l'adresse, les …"
+    }
+  ]
+}

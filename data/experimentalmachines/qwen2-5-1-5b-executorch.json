@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "experimentalmachines/Qwen2.5-1.5B-ExecuTorch",
+  "slug": "experimentalmachines-qwen2-5-1-5b-executorch",
+  "author": "experimentalmachines",
+  "url": "https://huggingface.co/experimentalmachines/Qwen2.5-1.5B-ExecuTorch",
+  "created_at": "2026-09-13T12:19:18.000Z",
+  "updated_at": "2026-09-13T12:23:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "executorch",
+  "languages": [],
+  "tags": [
+    "executorch",
+    "android",
+    "on-device",
+    "openweights",
+    "xnnpack",
+    "text-generation",
+    "base_model:Qwen/Qwen2.5-1.5B",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4476592640,
+  "storage_human": "4.5 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ascier - Elévateur, rampes d'accès, monte-escalier et ascenseur privatif",
+      "url": "https://www.ascier.fr/",
+      "snippet": "Ascier est une entreprise familiale indépendante qui contribue depuis des années à faire travailler, à former et à faire vivre des …"
+    },
+    {
+      "title": "Ascier, spécialiste des monte-escaliers et ascenseurs privatifs",
+      "url": "https://www.ascier.fr/ascier/",
+      "snippet": "Que peut faire Ascier pour vous ? Vous proposer une solution sérieuse pour monter et descendre un escalier ou franchir un obstacle …"
+    },
+    {
+      "title": "Ascier : Monte-escalier, ascenseur, plateforme PMR - Info et devis",
+      "url": "https://www.bonjoursenior.fr/ascier",
+      "snippet": "Retrouvez les monte-escaliers, plateformes, ascenseurs privatifs et rampe PMR installés par la société Ascier et recevez un devis …"
+    },
+    {
+      "title": "ASCIER à Ferrières en Brie - Ascenseurs, monte-charges (adresse ...",
+      "url": "https://www.pagesjaunes.fr/pros/00655130",
+      "snippet": "Ascier est importateur d’une gamme complète de matériels d’accessibilité : monte-escaliers (fauteuils et plates-formes d’escalier), …"
+    },
+    {
+      "title": "Ascier au Thor - Ascenseurs, monte-charges (adresse, horaires)",
+      "url": "https://www.pagesjaunes.fr/pros/59553207",
+      "snippet": "Installateurs en local, nous assurons des produits sur-mesure de différents types : monte-escalier économique pour escalier droit ou …"
+    }
+  ]
+}

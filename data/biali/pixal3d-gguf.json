@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "biali/Pixal3D-GGUF",
+  "slug": "biali-pixal3d-gguf",
+  "author": "biali",
+  "url": "https://huggingface.co/biali/Pixal3D-GGUF",
+  "created_at": "2026-09-13T15:45:56.000Z",
+  "updated_at": "2026-09-13T15:45:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1386671648,
+  "parameters_human": "1.39B",
+  "storage_bytes": 30345141054,
+  "storage_human": "30.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Returns – cfab",
+      "url": "https://cfab.com/pages/returns",
+      "snippet": "Gib deine Bestellnummer (beginnt mit #cf) und die E-Mail-Adresse oder Postleitzahl deiner Bestellung ein, um deine Retoure zu starten."
+    },
+    {
+      "title": "Retoure / Umtausch (DE) – cfab",
+      "url": "https://cfab.com/pages/de-return-exchanges",
+      "snippet": "cfab vereint Shapewear, BHs, Bodys und moderne Essentials zu einer kuratierten Wardrobe aus präzisen Fits, weichen Materialien …"
+    },
+    {
+      "title": "Retouren & Umtausch | Cfab (ehemals creamy fabrics)",
+      "url": "https://shopcreamyfabrics.shop/returns",
+      "snippet": "Bei Cfab (ehemals creamy fabrics) möchten wir, dass du deine neuen Stoffe und Kleidungsstücke liebst. Sollte einmal etwas nicht …"
+    },
+    {
+      "title": "Cfab Retoure: So schickt ihr Produkte zum Berliner Label zurück - GIGA",
+      "url": "https://www.giga.de/tech/cfab-retoure-so-schickt-ihr-produkte-zum-berliner-label-zurueck--01KRG0X48WKWVMBGQ9D9TG1HRD",
+      "snippet": "May 13, 2026 · Cfab aus Berlin gehört zu den aufstrebenden Modelabels und liefert euch eure Lieblingslook direkt nach Hause. Wir …"
+    },
+    {
+      "title": "Kunden Service Retoure / Umtausch Portal International/ Rest of countr",
+      "url": "https://cfab.com/pages/cc-return-exchanges",
+      "snippet": "cfab vereint Shapewear, BHs, Bodys und moderne Essentials zu einer kuratierten Wardrobe aus präzisen Fits, weichen Materialien …"
+    }
+  ]
+}

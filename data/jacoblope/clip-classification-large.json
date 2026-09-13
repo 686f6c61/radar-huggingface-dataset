@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Jacoblope/clip-classification-large",
+  "slug": "jacoblope-clip-classification-large",
+  "author": "Jacoblope",
+  "url": "https://huggingface.co/Jacoblope/clip-classification-large",
+  "created_at": "2026-09-13T18:44:45.000Z",
+  "updated_at": "2026-09-13T18:44:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Photo fond d'écran",
+      "url": "https://forum.pcastuces.com/photo_fond_ecran-f13s24744.htm",
+      "snippet": "Jun 10, 2026 · J'ai mis en fond d'écran, à l'ouverture de win 10, une photo perso que je voudrais récupérer car je ne retrouve pas …"
+    },
+    {
+      "title": "fond d'écran windows 10",
+      "url": "https://forum.pcastuces.com/fond_ecran__windows_10-f4s103445.htm",
+      "snippet": "Mar 20, 2026 · Bonjour Après installation de Windows 10 sur un SSD , je veux télécharger un fond d'écran avec les thèmes de …"
+    },
+    {
+      "title": "Topic Fond d'écran qui bouge pour votre PC =) - page 2",
+      "url": "https://www.jeuxvideo.com/forums/1-51-18677592-2-0-1-0-fond-d-ecran-qui-bouge-pour-votre-pc.htm",
+      "snippet": "Jul 21, 2011 · Up la ! - page 2 - Topic Fond d'écran qui bouge pour votre PC =) sur les forums de jeuxvideo.com"
+    },
+    {
+      "title": "Topic Fond d'écran qui bouge pour votre PC =)",
+      "url": "https://www.jeuxvideo.com/forums/42-51-18450791-1-0-1-0-0.htm",
+      "snippet": "Jul 20, 2011 · Voilà j'ai fait un tutoriel (En anglais) qui explique comment faire pour utiliser des vidéos comme fond d'écran. Ceux à …"
+    },
+    {
+      "title": "Mon fond d'écran change tout seul",
+      "url": "https://forum.pcastuces.com/mon_fond_ecran_change_tout_seul-f1s184061.htm",
+      "snippet": "Sachant que ma photo de fond d'écran (la bonne ainsi que la mauvaise) ne figurent pas dans \"Mes images\" ; je ne sais d'ailleurs pas …"
+    }
+  ]
+}

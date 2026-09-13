@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Quiho/CAT_-_Citron_Anime_Treasure_Illustrious_NoobAI_v2_checkpoint",
+  "slug": "quiho-cat_-_citron_anime_treasure_illustrious_noobai_v2_checkpoint",
+  "author": "Quiho",
+  "url": "https://huggingface.co/Quiho/CAT_-_Citron_Anime_Treasure_Illustrious_NoobAI_v2_checkpoint",
+  "created_at": "2026-09-13T14:31:15.000Z",
+  "updated_at": "2026-09-13T14:33:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "checkpoint",
+    "noobai",
+    "sexy",
+    "base model",
+    "cat",
+    "best quality",
+    "anime",
+    "citron",
+    "cartoon",
+    "masterpiece",
+    "flat color",
+    "cute",
+    "civitai",
+    "imported",
+    "not-for-all-audiences",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6950420309,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.at/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=de",
+      "snippet": "Werbeprogramme Über Google Google.com in English © 2026 - Datenschutzerklärung - Nutzungsbedingungen"
+    },
+    {
+      "title": "Google",
+      "url": "https://ipv4.google.com/?hl=de",
+      "snippet": "Werbeprogramme Über Google Google.com in English © 2026 - Datenschutzerklärung - Nutzungsbedingungen"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/?hl=de-US",
+      "snippet": "Google gibt es auch auf: English Werbeprogramme Über Google Google.com"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/webhp?gl=nf&hl=en&gws_rd=cr&pws=0",
+      "snippet": "Advertising Business Solutions About Google Google.com © 2026 - Privacy - Terms"
+    }
+  ]
+}

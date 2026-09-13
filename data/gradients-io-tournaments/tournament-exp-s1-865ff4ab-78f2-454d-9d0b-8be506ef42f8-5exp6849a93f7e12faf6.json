@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-exp-s1-865ff4ab-78f2-454d-9d0b-8be506ef42f8-5Exp6849a93f7e12faf6",
+  "slug": "gradients-io-tournaments-tournament-exp-s1-865ff4ab-78f2-454d-9d0b-8be506ef42f8-5exp6849a93f7e12faf6",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-exp-s1-865ff4ab-78f2-454d-9d0b-8be506ef42f8-5Exp6849a93f7e12faf6",
+  "created_at": "2026-09-13T15:50:03.000Z",
+  "updated_at": "2026-09-13T15:50:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 269060552,
+  "storage_human": "269 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yahoo Mail | Email with smart features and top-notch security",
+      "url": "https://de.mail.yahoo.com/",
+      "snippet": "Yahoo Mail: Your smarter, faster, free email solution. Organize your inbox, protect your privacy, and tackle tasks efficiently with AI …"
+    },
+    {
+      "title": "Done - Yahoo Mail",
+      "url": "https://de.mail.yahoo.com/d",
+      "snippet": "Es ist an der Zeit, Dinge mit Yahoo Mail zu erledigen. Fügen Sie einfach Ihren Gmail-, Outlook-, AOL- oder Yahoo Mail-Account …"
+    },
+    {
+      "title": "Anmelden – Bei Yahoo anmelden",
+      "url": "https://de.mail.yahoo.com/a",
+      "snippet": "Melden Sie sich an und erhalten Sie Zugang zu den besten Yahoo Mail-Diensten sowie zu aktuellen Nachrichten aus Ihrer Region, …"
+    }
+  ]
+}

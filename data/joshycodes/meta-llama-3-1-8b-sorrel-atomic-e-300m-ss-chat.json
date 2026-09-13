@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "joshycodes/meta-llama-3.1-8b-sorrel-atomic-e-300m-ss-chat",
+  "slug": "joshycodes-meta-llama-3-1-8b-sorrel-atomic-e-300m-ss-chat",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-atomic-e-300m-ss-chat",
+  "created_at": "2026-09-13T15:50:03.000Z",
+  "updated_at": "2026-09-13T15:50:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "علي سالم الحريزي - المعرفة - Marefa",
+      "url": "https://www.marefa.org/%D8%B9%D9%84%D9%8A_%D8%B3%D8%A7%D9%84%D9%85_%D8%A7%D9%84%D8%AD%D8%B1%D9%8A%D8%B2%D9%8A",
+      "snippet": "علي سالم الحريزي المهري (و. 1957)، هو سياسي يمني وعسكري سابق، وزعيم المهرة في شرق اليمن. اشتهر الحريزي بقيادة للمقاومة الأجنبية أثناء حرب اليمن التي اندلعت منذ عام 2015، وخاصة القوات …"
+    },
+    {
+      "title": "من هو الشيخ علي سالم الحريزي المهري ؟ (سيرة ذاتية) - شروين المهرة",
+      "url": "https://sherwinalmahra.com/5464",
+      "snippet": "Feb 1, 2024 · الاسم : علي سالم الحريزي المهري مواليد :1957 محل الميلاد : ريف حوف / محافظة المهرة في منتصف الستينات من القرن الماضي بدأ دراسته الابتدايئة بمنطقة جادب في مديرية حوف و …"
+    },
+    {
+      "title": "الشيخ علي سالم الحريزي | من كبار مشايخ المهرة وقبائل حمير",
+      "url": "https://www.youtube.com/watch?v=WRs_R8qXiZo",
+      "snippet": "Jun 5, 2026 · Sheikh Ali Salem Al-Harizi is one of the most prominent tribal figures in Al-Mahra Governorate and a senior sheikh of …"
+    },
+    {
+      "title": "إشادات واسعة بمواقف ومبادرات الشيخ علي سالم الحريزي في خدمة أبناء المهرة",
+      "url": "https://www.youtube.com/watch?v=cXhEMrRbxyI",
+      "snippet": "Mar 26, 2026 · إشادات واسعة بمواقف ومبادرات الشيخ علي سالم الحريزي في خدمة أبناء المهرة قناة المهرية الفضائية"
+    },
+    {
+      "title": "الشيخ علي سالم الحريزي.. رمز السيادة والمقاومة في المهرة يواجه حملة ...",
+      "url": "https://southern-yemen.net/54194",
+      "snippet": "Oct 2, 2025 · تتصاعد الهجمات الإعلامية الممنهجة ضد الشيخ علي سالم الحريزي، الزعيم القبلي الوطني في محافظة المهرة، وسط تأكيدات قوية من لجنة الاعتصام السلمي على تمسك أبناء المهرة به …"
+    }
+  ]
+}

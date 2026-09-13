@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "circulus/flux2-klein-4b-int4-ov",
+  "slug": "circulus-flux2-klein-4b-int4-ov",
+  "author": "circulus",
+  "url": "https://huggingface.co/circulus/flux2-klein-4b-int4-ov",
+  "created_at": "2026-09-13T14:01:57.000Z",
+  "updated_at": "2026-09-13T14:02:54.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "openvino",
+    "int4",
+    "circulus",
+    "ov-courseware",
+    "base_model:black-forest-labs/FLUX.2-klein-4B",
+    "base_model:finetune:black-forest-labs/FLUX.2-klein-4B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4552410533,
+  "storage_human": "4.6 GB",
+  "base_model": "black-forest-labs/FLUX.2-klein-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Slot Machine Gratis Online | 5.000+ Demo Senza Scaricare",
+      "url": "https://www.giochidislots.com/it/slot-machine/",
+      "snippet": "Prova oltre 5.000 slot machine gratis online senza registrazione e senza scaricare. Confronta RTP, volatilità, temi, provider e …"
+    },
+    {
+      "title": "Le Migliori Slot Machine Gratis Online Senza Scaricare",
+      "url": "https://www.slotmania.it/slot-machine/",
+      "snippet": "Gioca alle migliori slot machine gratis online, senza scaricare e senza registrazione. Oltre 2000 slot gratuite come passatempo: inizia …"
+    },
+    {
+      "title": "Slot Machine Gratis Online | Demo, RTP e Recensioni Complete",
+      "url": "https://www.slotjava.it/slot-machine/",
+      "snippet": "Scopri le migliori slot machine online e provale in modalità demo. Confronta gli RTP, i bonus, le funzionalità speciali e i provider."
+    },
+    {
+      "title": "Slot Machine Gratis Senza Scaricare | piu' di 3900 - Nuovi Casino",
+      "url": "https://www.nuovicasino.it/slot/",
+      "snippet": "Sep 4, 2026 · Scopri piu’ di 3900 slot machine online gratis su Nuovicasino.it - senza scaricare o registrazione. Leggi la nostra guida …"
+    },
+    {
+      "title": "Slot Gratis Online: Gioca alle Slot Demo Senza Registrazione!",
+      "url": "https://igamingnuts.com/it/slot/gratis/",
+      "snippet": "200+ slot gratis online! Prova le demo slot dei migliori provider e gioca come passatempo senza scaricare e senza registrazione!"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "d5cz1/mohameed",
+  "slug": "d5cz1-mohameed",
+  "author": "d5cz1",
+  "url": "https://huggingface.co/d5cz1/mohameed",
+  "created_at": "2026-09-13T14:23:49.000Z",
+  "updated_at": "2026-09-13T14:23:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alan Rickman – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Alan_Rickman",
+      "snippet": "Ab 2001 übernahm Rickman die Darstellung des Severus Snape in den Verfilmungen der Harry-Potter -Romane. Er war die …"
+    },
+    {
+      "title": "Alan Rickman - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Alan_Rickman",
+      "snippet": "Alan Sidney Patrick Rickman (21 February 1946 – 14 January 2016) was an English actor. He was renowned for his stage and screen …"
+    },
+    {
+      "title": "Alan Rickman: Seine Witwe gibt Einblick in seine stillen letzten Jahre ...",
+      "url": "https://www.gala.de/stars/news/alan-rickman--seine-witwe-gibt-einblick-in-seine-stillen-letzten-jahre-24532184.html",
+      "snippet": "Jan 28, 2026 · In 2026 jährt sich der Tod von Alan Rickman bereits zum zehnten Mal. Seine Witwe Rima Horton bricht nun ihr …"
+    },
+    {
+      "title": "Alan Rickman - IMDb",
+      "url": "https://www.imdb.com/name/nm0000614/",
+      "snippet": "He continued to play the role through the eighth and last movie Harry Potter and the Deathly Hallows: Part 2 (2011). Alan Rickman …"
+    },
+    {
+      "title": "Alan Rickman on screen and stage - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Alan_Rickman_on_screen_and_stage",
+      "snippet": "Alan Rickman was an English actor of the stage and screen. Rickman gained international acclaim for his role as Hans Gruber in the …"
+    }
+  ]
+}

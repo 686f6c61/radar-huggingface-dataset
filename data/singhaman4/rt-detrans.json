@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SinghAman4/rt-detrans",
+  "slug": "singhaman4-rt-detrans",
+  "author": "SinghAman4",
+  "url": "https://huggingface.co/SinghAman4/rt-detrans",
+  "created_at": "2026-09-13T16:59:55.000Z",
+  "updated_at": "2026-09-13T16:59:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Le Maine Libre : toute l'actualité de la Sarthe en direct",
+      "url": "https://www.ouest-france.fr/le-maine-libre/",
+      "snippet": "Avec Le Maine Libre, premier journal de la Sarthe, découvrez l'actualité en direct du Mans, de La Flèche, de La Ferté-Bernard, de …"
+    },
+    {
+      "title": "Avis de décès Le Maine-Libre - Avis d'obsèques Le Maine-Libre",
+      "url": "https://www.dansnoscoeurs.fr/avis-necrologiques/le-maine-libre/12",
+      "snippet": "Retrouvez tous les avis de décès et obsèques du journal Le Maine-Libre sur la plateforme en ligne Dans Nos Cœurs. Les annonces …"
+    },
+    {
+      "title": "Le Maine Libre - Facebook",
+      "url": "https://www.facebook.com/lemainelibre/",
+      "snippet": "🎪 Le spectacle « Roue Libre » de Jef Everaert et Marica Marinoni a donné le coup d'envoi de la saison du Plongeoir au Mans ce …"
+    },
+    {
+      "title": "Les derniers avis de décès Le Maine Libre mis en ligne",
+      "url": "https://avis-de-deces.ouest-france.fr/maine-libre/",
+      "snippet": "1 day ago · La rubrique d'avis d'obsèques du Maine Libre est référente sur le département de la Sarthe. Retrouvez en ligne et dès 5h …"
+    },
+    {
+      "title": "Le Maine-Libre : avis de décès et avis d’obsèques - Libra Memoria",
+      "url": "https://www.libramemoria.com/avis/le-maine-libre",
+      "snippet": "18 hours ago · Basé au Mans, Le Maine libre est un quotidien régional français fondé en 1944, qui traite de l’actualité de la Sarthe et …"
+    }
+  ]
+}

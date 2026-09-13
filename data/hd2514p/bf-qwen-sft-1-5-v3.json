@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "hd2514p/bf-qwen-sft-1.5-v3",
+  "slug": "hd2514p-bf-qwen-sft-1-5-v3",
+  "author": "hd2514p",
+  "url": "https://huggingface.co/hd2514p/bf-qwen-sft-1.5-v3",
+  "created_at": "2026-09-13T12:37:15.000Z",
+  "updated_at": "2026-09-13T13:36:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85338717,
+  "storage_human": "85 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gratis Formule 1 kijken: tips en trucs om races live te volgen",
+      "url": "https://www.iculture.nl/deals/formule-1-gratis-kijken/",
+      "snippet": "Aug 21, 2026 · Kijk de Formule 1 gratis: 8 manieren om gratis of goedkoop de F1 te volgen. Mis geen minuut van de Formule 1, …"
+    },
+    {
+      "title": "Formule 1 live stream in 2026: gratis F1 kijken - Streamwijzer",
+      "url": "https://www.streamwijzer.nl/formule-1-live-stream/",
+      "snippet": "Mar 30, 2026 · Zo kun je gratis en legaal elke Formule 1 live stream op tv en online kijken in 2026. Elke Grand Prix met Max …"
+    },
+    {
+      "title": "Formule 1 live kijken | F1 livestreams & kijken in Nederland",
+      "url": "https://www.711.nl/sport/livestreams/livestream-formule-1",
+      "snippet": "Zoek je waar je Formule 1 vandaag live kunt kijken of hoe laat de race start? Op deze pagina vind je snel en duidelijk waar je de …"
+    },
+    {
+      "title": "Formule 1 live kijken | F1 live op Racingnews365",
+      "url": "https://racingnews365.nl/f1-live",
+      "snippet": "Sep 27, 2025 · Op Racingnews365.nl kun je de Formule 1 live volgen dankzij scherpe verslagen van onze redacteuren in de vorm …"
+    },
+    {
+      "title": "Gratis F1 kijken 2026: deze Grand Prix kijk je gratis | Ziggo Formule 1",
+      "url": "https://www.ziggo.nl/entertainment/sport/formule-1/gratis-f1-kijken?msockid=3c40757230be617423df62a131c6603c",
+      "snippet": "6 days ago · Benieuwd waar je in 2026 gratis F1 kunt kijken? Verschillende Grand Prix worden namelijk op kanalen uitgezonden die …"
+    }
+  ]
+}

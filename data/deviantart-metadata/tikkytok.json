@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "deviantart-metadata/tikkytok",
+  "slug": "deviantart-metadata-tikkytok",
+  "author": "deviantart-metadata",
+  "url": "https://huggingface.co/deviantart-metadata/tikkytok",
+  "created_at": "2026-09-13T14:44:24.000Z",
+  "updated_at": "2026-09-13T14:50:44.000Z",
+  "license": "research-use",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "es",
+    "pt",
+    "id",
+    "ar"
+  ],
+  "tags": [
+    "tiktok",
+    "social-media",
+    "short-video",
+    "recommender-systems",
+    "social-network-analysis",
+    "en",
+    "es",
+    "pt",
+    "id",
+    "ar",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 289627362142,
+  "storage_human": "289.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeviantArt - The Largest Online Art Gallery and Community",
+      "url": "https://www.deviantart.com/",
+      "snippet": "Founded in 2000, DeviantArt is the largest online community for artists and art lovers, with over 100 million registered members …"
+    },
+    {
+      "title": "deviantART - Log In",
+      "url": "https://www.deviantart.com/users/login",
+      "snippet": "A community of artists and those devoted to art. Digital art, skin art, themes, wallpaper art, traditional art, photography, poetry, and …"
+    },
+    {
+      "title": "DeviantArt - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/DeviantArt",
+      "snippet": "DeviantArt (formerly styled as deviantART and thus abbreviated as dA) is an online community that features artwork, videography, …"
+    },
+    {
+      "title": "DeviantArt — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/DeviantART",
+      "snippet": "DeviantArt (stylisé deviantART de 2001 à 2014) est un site web dédiée à la création artistique d'œuvres et de dessins sous format …"
+    },
+    {
+      "title": "Sign In",
+      "url": "https://ops.deviantart.net/",
+      "snippet": "Authenticate using @wix.com Sign in with a Google Account"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "loradica/lorarafa",
+  "slug": "loradica-lorarafa",
+  "author": "loradica",
+  "url": "https://huggingface.co/loradica/lorarafa",
+  "created_at": "2026-09-13T14:44:19.000Z",
+  "updated_at": "2026-09-13T14:44:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:black-forest-labs/FLUX.1-dev",
+    "base_model:adapter:black-forest-labs/FLUX.1-dev",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 107940508,
+  "storage_human": "108 MB",
+  "base_model": "black-forest-labs/FLUX.1-dev",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Leader mondial de la construction durable | Saint-Gobain",
+      "url": "https://www.saint-gobain.com/fr",
+      "snippet": "6 days ago · Saint-Gobain est engagé pour participer à la construction d’un monde plus durable et plus inclusif. Saint-Gobain adopte …"
+    },
+    {
+      "title": "Worldwide leader in light and sustainable construction | Saint-Gobain",
+      "url": "https://www.saint-gobain.com/en",
+      "snippet": "6 days ago · Saint-Gobain is committed to ensuring that our activities, our employees and our partners are jointly involved in building …"
+    },
+    {
+      "title": "Saint-Gobain — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Saint-Gobain",
+      "snippet": "En 1693, elle s'établit en Picardie à Saint-Gobain (aujourd'hui dans le département de l' Aisne), sur le site de l'ancien château …"
+    },
+    {
+      "title": "SAINT-GOBAIN Cours Action SGO, Cotation Bourse Euronext Paris",
+      "url": "https://www.boursorama.com/cours/1rPSGO/",
+      "snippet": "Le cours de l'action SAINT-GOBAIN SGO en temps réel sur Boursorama : historique de la cotation sur Euronext Paris, graphique, …"
+    },
+    {
+      "title": "Saint-Gobain - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Saint-Gobain",
+      "snippet": "Originally a mirror manufacturer, it also produces a variety of construction, high-performance, moderate-performance, lower …"
+    }
+  ]
+}

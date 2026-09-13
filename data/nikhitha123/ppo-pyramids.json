@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Nikhitha123/ppo-Pyramids",
+  "slug": "nikhitha123-ppo-pyramids",
+  "author": "Nikhitha123",
+  "url": "https://huggingface.co/Nikhitha123/ppo-Pyramids",
+  "created_at": "2026-09-13T11:40:08.000Z",
+  "updated_at": "2026-09-13T11:40:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "unity-ml-agents",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30528715,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Αθλητικά Νέα | Αθλητικές Ειδήσεις | SDNA",
+      "url": "https://www.sdna.gr/",
+      "snippet": "Αθλητικές ειδήσεις & τα τελευταία αθλητικά νέα βρίσκονται τώρα εδώ. Δείτε όλες τις εξελίξεις από όλα τα sport σήμερα μέσα από το …"
+    },
+    {
+      "title": "Nikhitha123/ppo-Pyramids · Hugging Face",
+      "url": "https://huggingface.co/Nikhitha123/ppo-Pyramids",
+      "snippet": "This is a trained model of a ppo agent playing Pyramids using the Unity ML-Agents Library. The Documentation: https://github.com/huggingface/ml-agents#get-started · You can watch your agent playing directly in your browser: 👉 https://hu..."
+    },
+    {
+      "title": "Τελευταία νέα | SDNA",
+      "url": "https://www.sdna.gr/news",
+      "snippet": "13 hours ago · ΚΟΣΜΟΣ Η νέα... μόδα με τον «χορό» στις εκτελέσεις κόρνερ αποδίδει και φέρνει γκολ! (vids)"
+    },
+    {
+      "title": "Gazzetta.gr: Αθλητικά Νέα & Ειδήσεις",
+      "url": "https://www.gazzetta.gr/",
+      "snippet": "13 hours ago · Αθλητικά νέα με όλες τις τελευταίες αθλητικές ειδήσεις απο την Ελλάδα και τον κόσμο. Όλα τα αθλητικά νέα τώρα απο …"
+    },
+    {
+      "title": "Ποδόσφαιρο: Αθλητικά Νέα & Αποτελέσματα | SDNA",
+      "url": "https://www.sdna.gr/podosfairo",
+      "snippet": "Όλοι οι αγώνες ποδοσφαίρου σήμερα, παίζουν μπάλα live στο sdna.gr. ΕΠΙΛΟΓΗ ΔΙΟΡΓΑΝΩΣΗΣ WOMEN'S CHAMPIONS …"
+    }
+  ]
+}

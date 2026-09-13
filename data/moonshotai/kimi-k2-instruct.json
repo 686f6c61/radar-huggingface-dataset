@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "moonshotai/Kimi-K2-Instruct",
+  "slug": "moonshotai-kimi-k2-instruct",
+  "author": "moonshotai",
+  "url": "https://huggingface.co/moonshotai/Kimi-K2-Instruct",
+  "created_at": "2025-07-11T00:55:12.000Z",
+  "updated_at": "2026-04-23T02:08:36.000Z",
+  "license": "modified-mit",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kimi_k2",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "doi:10.57967/hf/5976",
+    "license:other",
+    "eval-results",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 2446,
+  "downloads_30d": 184090,
+  "trending_score": 19,
+  "parameters": 1026408235864,
+  "parameters_human": "1026.41B",
+  "storage_bytes": 1029226387740,
+  "storage_human": "1029.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BBC Sport - Scores, Fixtures, News - Live Sport",
+      "url": "https://www.bbc.co.uk/sport",
+      "snippet": "Sports news and live sports coverage including scores, results, video, audio and analysis on Football, F1, Cricket, Rugby Union and …"
+    },
+    {
+      "title": "Football - latest news today, results & video highlights - BBC Sport",
+      "url": "https://www.bbc.co.uk/sport/football",
+      "snippet": "Football news, scores, results, fixtures and videos from the Premier League, Championship, European and World Football from the …"
+    },
+    {
+      "title": "Scores & Fixtures - Football - BBC Sport",
+      "url": "https://www.bbc.co.uk/sport/football/scores-fixtures",
+      "snippet": "All the football fixtures, latest results & live scores for all leagues and competitions on BBC Sport, including the Premier League, …"
+    },
+    {
+      "title": "Sports A-Z - BBC Sport",
+      "url": "https://www.bbc.co.uk/sport/all-sports",
+      "snippet": "Find all the latest live sports coverage, breaking news, results, scores, fixtures, tables, video and analysis on Football, Formula 1, …"
+    },
+    {
+      "title": "Football gossip - all of the latest transfer stories and ... - BBC",
+      "url": "https://www.bbc.com/sport/football/gossip",
+      "snippet": "The home of Football transfer gossip on BBC Sport online."
+    }
+  ]
+}

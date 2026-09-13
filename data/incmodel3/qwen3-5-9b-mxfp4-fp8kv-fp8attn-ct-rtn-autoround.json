@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "INCModel3/Qwen3.5-9B-MXFP4-FP8KV-FP8Attn-CT-RTN-AutoRound",
+  "slug": "incmodel3-qwen3-5-9b-mxfp4-fp8kv-fp8attn-ct-rtn-autoround",
+  "author": "INCModel3",
+  "url": "https://huggingface.co/INCModel3/Qwen3.5-9B-MXFP4-FP8KV-FP8Attn-CT-RTN-AutoRound",
+  "created_at": "2026-09-13T11:58:31.000Z",
+  "updated_at": "2026-09-13T11:58:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "quantized",
+    "mxfp4",
+    "autoround",
+    "autoquant-agent",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4577975560,
+  "parameters_human": "4.58B",
+  "storage_bytes": 12229546173,
+  "storage_human": "12.2 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Frontespizio Tesi 2026: Guida Completa + Esempi per 50 Università ...",
+      "url": "https://autotesi.it/frontespizio-tesi-guida-completa-impostazione-perfetta/",
+      "snippet": "Questa guida raccoglie le regole ufficiali di 50 atenei italiani in un'unica tabella consultabile, con esempi specifici per Sapienza, …"
+    },
+    {
+      "title": "Come inserire frontespizio tesi - Salvatore Aranzulla",
+      "url": "https://www.aranzulla.it/come-inserire-frontespizio-tesi-1489546.html",
+      "snippet": "Non ti resta che scoprire come inserire frontespizio tesi. Non lascerò di certo che questo piccolo ostacolo faccia slittare la tua laurea. …"
+    },
+    {
+      "title": "Frontespizio tesi di laurea 2026: guida con esempi e template",
+      "url": "https://www.bindcopy.it/impaginazione-tesi-di-laurea/il-frontespizio-perfetto-regole-e-consigli-per-presentare-la-tua-tesi-di-laurea/",
+      "snippet": "Alcune Università aggiungono l’argomento della tesi o la materia di riferimento. Allinea questa sezione al centro, maiuscolo o …"
+    },
+    {
+      "title": "Frontespizio tesi: esempio, format e template 2026",
+      "url": "https://www.studytexter.com/it/frontespizio-tesi",
+      "snippet": "La via più sicura per un frontespizio conforme è usare il template frontespizio tesi ufficiale del tuo ateneo. La tabella sotto riassume …"
+    },
+    {
+      "title": "Frontespizio Tesi di Laurea: Modello Word Gratuito 2026",
+      "url": "https://tesify.it/blog/frontespizio-tesi-laurea",
+      "snippet": "Jan 12, 2026 · Quali sono gli 8 elementi che non possono assolutamente mancare sul tuo frontespizio, secondo le normative degli …"
+    }
+  ]
+}

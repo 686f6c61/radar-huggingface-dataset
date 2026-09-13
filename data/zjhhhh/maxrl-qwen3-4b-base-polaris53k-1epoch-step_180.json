@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "zjhhhh/maxrl-qwen3-4b-base-polaris53k-1epoch-step_180",
+  "slug": "zjhhhh-maxrl-qwen3-4b-base-polaris53k-1epoch-step_180",
+  "author": "zjhhhh",
+  "url": "https://huggingface.co/zjhhhh/maxrl-qwen3-4b-base-polaris53k-1epoch-step_180",
+  "created_at": "2026-09-13T16:55:33.000Z",
+  "updated_at": "2026-09-13T16:56:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 49838197074,
+  "storage_human": "49.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roblox",
+      "url": "https://www.roblox.com/?locale=fr_fr",
+      "snippet": "Roblox is the ultimate virtual universe that lets you create, share experiences with friends, and be anything you can imagine. Join …"
+    },
+    {
+      "title": "Log in to Roblox",
+      "url": "https://www.roblox.com/Login",
+      "snippet": "©2026 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered …"
+    },
+    {
+      "title": "Roblox - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.roblox.client&hl=en-US",
+      "snippet": "Roblox is home to every kind of game, for every kind of player. Compete in high-octane racing games, battle it out in hardcore tactical …"
+    },
+    {
+      "title": "About Roblox | Roblox",
+      "url": "https://about.roblox.com/fr",
+      "snippet": "Roblox is a global platform where millions of people gather together every day to imagine, create, and share experiences with each …"
+    },
+    {
+      "title": "Roblox - Windows - Téléchargement et lecture gratuits sur Windows ...",
+      "url": "https://apps.microsoft.com/detail/9pmf91n3lz3m?hl=fr-FR&gl=FR",
+      "snippet": "Il y a toujours quelque chose de nouveau à découvrir. Commence dès aujourd'hui à jouer à certains des jeux les plus populaires sur …"
+    }
+  ]
+}

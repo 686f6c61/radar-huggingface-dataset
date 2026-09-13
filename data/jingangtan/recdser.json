@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "jingangtan/RecdSER",
+  "slug": "jingangtan-recdser",
+  "author": "jingangtan",
+  "url": "https://huggingface.co/jingangtan/RecdSER",
+  "created_at": "2026-09-13T14:48:01.000Z",
+  "updated_at": "2026-09-13T14:53:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 819034012,
+  "storage_human": "819 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Banque Populaire du Sud : La réussite est en vous | BPS",
+      "url": "https://www.banquepopulaire.fr/sud/",
+      "snippet": "Découvrez l'offre Banque Populaire du Sud pour les particuliers : comptes, cartes, assurances, souscription et simulateurs en ligne."
+    },
+    {
+      "title": "Cyberplus : mon compte en ligne | Banque Populaire",
+      "url": "https://www.banquepopulaire.fr/banque-a-distance/acceder-a-mon-espace-personnel/",
+      "snippet": "Découvrez comment accéder à votre compte en ligne Banque Populaire et à votre espace personnel sécurisé grâce à Cyberplus via …"
+    },
+    {
+      "title": "La réussite est en vous | Banque populaire",
+      "url": "https://www.banquepopulaire.fr/sud/votre-banque/",
+      "snippet": "En savoir plus sur les engagements des Banques Populaires. Trouver des réponses aux solutions de sécurité et réglementations …"
+    },
+    {
+      "title": "Espace client - hom.banquepopulaire.fr",
+      "url": "https://www.hom.banquepopulaire.fr/espace-client-redirection/lease/sso?type=SELFCARECBM",
+      "snippet": "Accédez à votre espace client pour gérer vos comptes, opérations et services en toute sécurité avec Banque Populaire."
+    },
+    {
+      "title": "Banque Populaire du Sud - Groupe BPCE",
+      "url": "https://www.groupebpce.com/annuaire/banque-populaire-du-sud/",
+      "snippet": "L’objectif de la Banque Populaire du Sud est désormais de créer un programme d’héritage autour de l’eau, la Banque Populaire du …"
+    }
+  ]
+}

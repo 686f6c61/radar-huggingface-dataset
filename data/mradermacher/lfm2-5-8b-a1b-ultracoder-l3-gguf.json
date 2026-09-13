@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LFM2.5-8B-A1B-UltraCoder-L3-GGUF",
+  "slug": "mradermacher-lfm2-5-8b-a1b-ultracoder-l3-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LFM2.5-8B-A1B-UltraCoder-L3-GGUF",
+  "created_at": "2026-09-13T11:24:34.000Z",
+  "updated_at": "2026-09-13T12:48:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Susant-Achary/LFM2.5-8B-A1B-UltraCoder-L3",
+    "base_model:quantized:Susant-Achary/LFM2.5-8B-A1B-UltraCoder-L3",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8467856832,
+  "parameters_human": "8.47B",
+  "storage_bytes": 74938894464,
+  "storage_human": "74.9 GB",
+  "base_model": "Susant-Achary/LFM2.5-8B-A1B-UltraCoder-L3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nounou-Top : trouver une garde d'enfant facilement",
+      "url": "https://www.nounou-top.fr/",
+      "snippet": "Nounou-Top est un site de mise en relation qui ne se substitue pas à votre rôle d'employeur lors du recrutement. Avant toute …"
+    },
+    {
+      "title": "Application de gestion pour assmat & nounou",
+      "url": "https://www.nounou-top.fr/gestion",
+      "snippet": "Avec Nounou-top, vous bénéficiez d'outils pour gérer facilement votre administratif (contrat, paie, congés, régularisations, …"
+    },
+    {
+      "title": "Annonces de garde d'enfants | Nounou-Top",
+      "url": "https://www.nounou-top.fr/annonces",
+      "snippet": "Nounou-Top est un site de mise en relation qui ne se substitue pas à votre rôle d'employeur lors du recrutement. Avant toute …"
+    },
+    {
+      "title": "Dernières annonces - Nounou-top",
+      "url": "https://www.nounou-top.fr/last-listings",
+      "snippet": "13 hours ago · Dernières annonces Eniolaoluwa, baby sitter à Mont-saint-aignan Bonjour, je m’appelle Enio, j’ai 18 ans et je suis …"
+    },
+    {
+      "title": "Nounou-top : la plateforme qui simplifie la garde d’enfants",
+      "url": "https://www.nounou-top.fr/aide/a-quoi-sert-nounou-top/",
+      "snippet": "Nounou-top, c’est quoi ? Une plateforme humaine, bienveillante et ultra-pratique, qui met en relation les parents et les professionnel …"
+    }
+  ]
+}

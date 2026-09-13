@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Tommasorusso/lightweight-multimodal-v2",
+  "slug": "tommasorusso-lightweight-multimodal-v2",
+  "author": "Tommasorusso",
+  "url": "https://huggingface.co/Tommasorusso/lightweight-multimodal-v2",
+  "created_at": "2026-09-13T12:34:50.000Z",
+  "updated_at": "2026-09-13T12:34:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "lightweight-multimodal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.de/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=de-AT",
+      "snippet": "Werbeprogramme Über Google Google.com in English © 2026 - Datenschutzerklärung - Nutzungsbedingungen"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/?hl=de-US",
+      "snippet": "Werbeprogramme Über Google Google.com © 2026 - Datenschutzerklärung - Nutzungsbedingungen"
+    },
+    {
+      "title": "Google als Startseite festlegen - Google Suche-Hilfe",
+      "url": "https://support.google.com/websearch/answer/463?hl=de",
+      "snippet": "Wenn Sie Google als Ihre Startseite festlegen, gelangen Sie direkt zu Google, sobald Sie Ihren Browser öffnen. Die Vorgehensweise …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.at/blank.html",
+      "snippet": "Google ist eine Suchmaschine, die Informationen, Bilder und vieles mehr bietet."
+    }
+  ]
+}

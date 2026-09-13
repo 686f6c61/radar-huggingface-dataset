@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "marcuscedricridia/philippines-typhoon-transformer",
+  "slug": "marcuscedricridia-philippines-typhoon-transformer",
+  "author": "marcuscedricridia",
+  "url": "https://huggingface.co/marcuscedricridia/philippines-typhoon-transformer",
+  "created_at": "2026-09-13T17:51:38.000Z",
+  "updated_at": "2026-09-13T17:51:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "time-series",
+    "weather",
+    "transformer",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1210103,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chicken Recipes",
+      "url": "https://www.allrecipes.com/recipes/201/meat-and-poultry/chicken/",
+      "snippet": "Find recipes for fried chicken, chicken breast, grilled chicken, chicken wings, and more! Allrecipes has more than 5,430 kitchen …"
+    },
+    {
+      "title": "50 of Our Best Chicken Recipes with 5-Star Ratings | Taste of Home",
+      "url": "https://www.tasteofhome.com/collection/5-star-best-chicken-recipes/",
+      "snippet": "Sep 20, 2024 · Our best chicken recipes dazzle any day of the week, whether you need a quick weeknight dinner or something …"
+    },
+    {
+      "title": "Chicken Recipes - RecipeTin Eats",
+      "url": "https://www.recipetineats.com/category/chicken-recipes/",
+      "snippet": "From the best Baked Chicken Breast, to the wildly popular Baked Chicken and Rice and Honey Garlic Chicken, to sticky Honey …"
+    },
+    {
+      "title": "Easy chicken recipes - BBC Food",
+      "url": "https://www.bbc.co.uk/food/collections/easy_chicken_recipes",
+      "snippet": "Whether in an easy chicken pasta dish or a simple stir-fry, we have all kinds of easy chicken recipes for you to try."
+    },
+    {
+      "title": "Chicken Recipes Archives - Panlasang Pinoy",
+      "url": "https://panlasangpinoy.com/categories/recipes/chicken-recipes/",
+      "snippet": "If just the sight of chicken is enough to make your mouth water, what more its smell—or, better yet, its taste? Here are some of the …"
+    }
+  ]
+}

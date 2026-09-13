@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nickzin/qwen3.8-27b-lora-oh",
+  "slug": "nickzin-qwen3-8-27b-lora-oh",
+  "author": "nickzin",
+  "url": "https://huggingface.co/nickzin/qwen3.8-27b-lora-oh",
+  "created_at": "2026-09-13T18:09:48.000Z",
+  "updated_at": "2026-09-13T18:10:15.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen",
+    "tool-calling",
+    "function-calling",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 318835672,
+  "storage_human": "319 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Union Glashütte D011.414.16.420.09 - Chrono24",
+      "url": "https://www.chrono24.de/unionglashuette/ref-d0114141642009.htm",
+      "snippet": "Was kostet eine Union Glashütte D011.414.16.420.09? Auf Chrono24 finden Sie Preise für 4 Union Glashütte D011.414.16.420.09. …"
+    },
+    {
+      "title": "Union Glashütte Viro Chronograph Chrono Silvretta Classic 2023 …",
+      "url": "https://watchfever.de/produkt/union-glashuette-viro-chronograph-chrono-silvretta-classic-2023-limited-edition-ref-d011-414-16-420-09/",
+      "snippet": "Union Glashütte Viro Chronograph Chrono Silvretta Classic 2023 Limited Edition Ref. D011.414.16.420.09"
+    },
+    {
+      "title": "Union Glashütte Viro Chronograph D011.414.16.420.09",
+      "url": "https://www.juwelier-roller.de/pr/union-glashuette-viro-chronograph-silvretta-classic-2023-day-date-d011-414-16-420-09/",
+      "snippet": "Union Glashütte Viro Chronograph Silvretta Classic 2023 Limited Edition rot-schwarzes Zifferblatt schwarzes Lederband - hier …"
+    },
+    {
+      "title": "Union Glashütte Viro Chronograph Limited Edition Silvretta Classic 2023",
+      "url": "https://www.uhrenlounge.de/detail/union-glash%C3%BCtte-viro-chronograph-limited-edition-silvretta-classic-2023-d011-414-16-420-09-42275",
+      "snippet": "Die Union Glashütte Viro Chronograph Limited Edition Silvretta Classic 2023 D011.414.16.420.09 ist eine Uhr, die von der …"
+    },
+    {
+      "title": "Viro - Chronograph Edition Silvretta Classic 2023 D011.414.16.420.09",
+      "url": "https://www.hungeling.de/union-glashuette/viro-chronograph-edition-silvretta-classic-2023-d011.414.16.420.09.html",
+      "snippet": "Viro - Chronograph Edition Silvretta Classic 2023 D011.414.16.420.09 jetzt beim offiziellen Konzessionär kaufen. 100% Neu schneller …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/eng-100mb-after-wc-uniform-newlex-eng-ckpt500_seed455_seed455",
+  "slug": "fpadovani-eng-100mb-after-wc-uniform-newlex-eng-ckpt500_seed455_seed455",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/eng-100mb-after-wc-uniform-newlex-eng-ckpt500_seed455_seed455",
+  "created_at": "2026-09-13T14:51:22.000Z",
+  "updated_at": "2026-09-13T19:27:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:fpadovani/ppt-wc-uniform-newlex-eng-100mb_seed455",
+    "base_model:finetune:fpadovani/ppt-wc-uniform-newlex-eng-100mb_seed455",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 5491704983,
+  "storage_human": "5.5 GB",
+  "base_model": "fpadovani/ppt-wc-uniform-newlex-eng-100mb_seed455",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "СПОРТ-ЭКСПРЕСС – новости спорта, футбол, хоккей, биатлон, …",
+      "url": "https://www.sport-express.ru/",
+      "snippet": "Aug 17, 2023 · Ведущий спортивный интернет-портал Спорт-Экспресс. Самые свежие новости спорта, обзоры соревнований ..."
+    },
+    {
+      "title": "Новости футбола: онлайн трансляции, результаты, трансферы, …",
+      "url": "https://www.sport-express.ru/football/",
+      "snippet": "Футбол России сегодня: последние новости и онлайн видео трансляции. Смотрите турнирную таблицу, фото ..."
+    },
+    {
+      "title": "Газета Спорт-Экспресс № 170 (9742) от 11 сентября 2026 года, …",
+      "url": "https://www.sport-express.ru/newspaper/",
+      "snippet": "2 days ago · Ежедневная спортивная газета Спорт-Экспресс № 170 (9742) от 11 сентября 2026 года, электронная версия. …"
+    },
+    {
+      "title": "Весь спорт. - Спорт-Экспресс",
+      "url": "https://www.sport-express.ru/news/",
+      "snippet": "Последние новости спорта в России и мире онлайн. Новостная лента самых свежих и актуальных спортивных ..."
+    },
+    {
+      "title": "Хоккей - Спорт-Экспресс",
+      "url": "https://www.sport-express.ru/hockey/",
+      "snippet": "Хоккей России в 2026: читайте новости КХЛ и узнавайте результаты матчей сегодня онлайн. Смотрите видео ..."
+    }
+  ]
+}

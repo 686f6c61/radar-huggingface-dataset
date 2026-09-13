@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "AuroraAI-Research/Aurora1.0-150M",
+  "slug": "auroraai-research-aurora1-0-150m",
+  "author": "AuroraAI-Research",
+  "url": "https://huggingface.co/AuroraAI-Research/Aurora1.0-150M",
+  "created_at": "2026-09-13T10:02:13.000Z",
+  "updated_at": "2026-09-13T18:34:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "Aurora",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149268352,
+  "parameters_human": "149.3M",
+  "storage_bytes": 299657221,
+  "storage_human": "300 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home | Oil Tank Replacements | Installation & Removals | South West, UK",
+      "url": "https://www.oiltankreplacementssouthwest.co.uk/",
+      "snippet": "With over 15 years experience of oil tank installation, repairs and replacement, we offer an expert service for all your oil tank needs. …"
+    },
+    {
+      "title": "Oil Tank Regulations: An Overview",
+      "url": "https://www.oiltankreplacementssouthwest.co.uk/oil-tank-regulations/",
+      "snippet": "OIL TANK INSTALLATION REGULATIONS If you are looking to install a new tank or need to replace your old one, it is a good idea …"
+    },
+    {
+      "title": "Testimonials & Gallery | Oil Tank Replacements | South West, UK",
+      "url": "https://www.oiltankreplacementssouthwest.co.uk/testimonials/",
+      "snippet": "We had a new Oil Tank installed by Oil Tank Replacements Ltd. Can’t fault them. Very professional and knowledgeable. Very …"
+    },
+    {
+      "title": "OIL TANK REPLACEMENT",
+      "url": "https://www.oiltankreplacementssouthwest.co.uk/services/oil-tank-replacement/",
+      "snippet": "Oil Tank Replacement A well-looked-after tank can last you for 15-20 years, though at some point it will need to be replaced in order …"
+    },
+    {
+      "title": "OIL TANK REMOVAL",
+      "url": "https://www.oiltankreplacementssouthwest.co.uk/services/oil-tank-removal/",
+      "snippet": "Oil Tank Removal There are many reasons why you might need an oil tank removed, from your current tank needing to be replaced …"
+    }
+  ]
+}

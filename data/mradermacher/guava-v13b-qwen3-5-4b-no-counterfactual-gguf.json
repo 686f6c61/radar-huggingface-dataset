@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mradermacher/guava-v13b-qwen3.5-4b-no-counterfactual-GGUF",
+  "slug": "mradermacher-guava-v13b-qwen3-5-4b-no-counterfactual-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/guava-v13b-qwen3.5-4b-no-counterfactual-GGUF",
+  "created_at": "2026-09-13T12:19:23.000Z",
+  "updated_at": "2026-09-13T12:19:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 333514240,
+  "parameters_human": "333.5M",
+  "storage_bytes": 1039317632,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "YouTube's official YouTube channel You found us. Welcome to the official YouTube channel – a home for the biggest moments, the …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://studio.youtube.com/",
+      "snippet": "Share your videos with friends, family, and the world."
+    },
+    {
+      "title": "News - YouTube",
+      "url": "https://news.youtube.com/new",
+      "snippet": "Stay updated with the latest news and trends on YouTube News, your source for global happenings and breaking stories."
+    }
+  ]
+}

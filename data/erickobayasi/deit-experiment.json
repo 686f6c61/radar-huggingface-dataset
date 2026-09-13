@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Erickobayasi/deit-experiment",
+  "slug": "erickobayasi-deit-experiment",
+  "author": "Erickobayasi",
+  "url": "https://huggingface.co/Erickobayasi/deit-experiment",
+  "created_at": "2026-09-13T18:35:17.000Z",
+  "updated_at": "2026-09-13T18:35:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2003 - Wikipedia",
+      "url": "https://it.m.wikipedia.org/wiki/2003",
+      "snippet": "Ci sono circa 2 440 voci su persone nate nel 2003; vedi la pagina Nati nel 2003 per un elenco descrittivo o la categoria Nati nel 2003 …"
+    },
+    {
+      "title": "Codice tributo 2003: cos’è, a cosa si riferisce e come usarlo",
+      "url": "https://www.retecamere.it/codice-tributo-2003-a-cosa-si-riferisce/",
+      "snippet": "Iniziamo subito col dirvi a cosa serve il codice tributo 2003 e a cosa si riferisce. Questo ci serve per pagare l’imposta chiamata IRES, …"
+    },
+    {
+      "title": "2003 - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/2003",
+      "snippet": "The year 2003 was marked by the United States invasion of Iraq and the subsequent period of occupation and insurgency. The …"
+    },
+    {
+      "title": "Ondata di caldo dell'estate 2003 - Wikipedia",
+      "url": "https://it.m.wikipedia.org/wiki/Ondata_di_caldo_dell%27estate_2003",
+      "snippet": "Ondata di caldo dell'estate 2003 ... Nel corso dell'estate 2003, l' Europa fu colpita da una massiccia ondata di caldo, la quale …"
+    },
+    {
+      "title": "Il 2003 nella storia: musica, eventi, film e nostalgia",
+      "url": "https://takemeback.to/it/anno/2003",
+      "snippet": "1 day ago · Il 2003 iniziò di mercoledì secondo il calendario gregoriano. 24 febbraio 2003: Muore a Roma Alberto Sordi, a 82 anni. La …"
+    }
+  ]
+}

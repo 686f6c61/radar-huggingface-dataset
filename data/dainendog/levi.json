@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "dainendog/levi",
+  "slug": "dainendog-levi",
+  "author": "dainendog",
+  "url": "https://huggingface.co/dainendog/levi",
+  "created_at": "2026-09-13T13:21:42.000Z",
+  "updated_at": "2026-09-13T13:23:26.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-to-image",
+    "en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85429132,
+  "storage_human": "85 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Libri scolastici nuovi e usati Ostia, Roma - BancoLibri",
+      "url": "https://www.bancolibri.it/shop/Bancolibri-Ostia",
+      "snippet": "BancoLibri Ostia compra e vende libri scolastici nuovi e usati con pagamento immediato in contanti. Serviamo tutta Roma, Ostia, …"
+    },
+    {
+      "title": "Uffici Postali: informazioni e accesso rapido ai servizi - Poste Italiane",
+      "url": "https://www.poste.it/uffici-postali/",
+      "snippet": "Il giorno dell'appuntamento, ti basterà andare in Ufficio Postale qualche minuto prima dell'orario scelto: non appena sarà il tuo turno, …"
+    },
+    {
+      "title": "Bancolibri - Libreria a Roma Via delle Rose 45, 00171, Roma, Ostia Ostia",
+      "url": "https://firmania.it/roma/bancolibri-3919883",
+      "snippet": "Nov 21, 2025 · Trovate i dettagli di contatto dell'azienda Bancolibri in Via delle Rose 45, 00171, Roma, Ostia Roma incluso il numero …"
+    },
+    {
+      "title": "Prenota richiesta passaporto elettronico - poste.it",
+      "url": "https://www.poste.it/ga-up-passaporto/webapp/start.html",
+      "snippet": "Verifica la disponibilità presso il tuo comune Comune di residenza o domicilio"
+    },
+    {
+      "title": "Prenota - Poste",
+      "url": "https://upload.poste.it/gestore-attese/index.html",
+      "snippet": "Contatta il nostro servizio clienti. Se non hai trovato quello che cercavi, consulta la pagina dell’ Assistenza. Caricamento... Richiedi …"
+    }
+  ]
+}

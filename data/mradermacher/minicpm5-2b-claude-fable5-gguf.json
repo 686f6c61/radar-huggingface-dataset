@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MiniCPM5-2B-Claude-Fable5-GGUF",
+  "slug": "mradermacher-minicpm5-2b-claude-fable5-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MiniCPM5-2B-Claude-Fable5-GGUF",
+  "created_at": "2026-09-13T11:38:41.000Z",
+  "updated_at": "2026-09-13T12:26:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "minicpm",
+    "sft",
+    "lora",
+    "fable-5",
+    "tool-use",
+    "agent-traces",
+    "chat",
+    "instruction-following",
+    "en",
+    "zh",
+    "dataset:saidutta69/fable-5-premium-v2",
+    "base_model:SauravMahalik/MiniCPM5-2B-Claude-Fable5",
+    "base_model:adapter:SauravMahalik/MiniCPM5-2B-Claude-Fable5",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 22763619840,
+  "storage_human": "22.8 GB",
+  "base_model": "SauravMahalik/MiniCPM5-2B-Claude-Fable5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ROJADIRECTA",
+      "url": "http://forum.rojadirecta.es/",
+      "snippet": "Jul 9, 2010 · What's Going On? ROJADIRECTA Statistics Threads 413,541 Posts 4,409,083 Members 1,861,479 Active Members …"
+    },
+    {
+      "title": "Activity Stream - ROJADIRECTA",
+      "url": "http://forum.rojadirecta.es/activity.php?sortby=recent&time=week",
+      "snippet": "Zidanekrisz started a thread FÚTBOL: Brasileiro Serie A - Palmeiras vs São Paulo - 12/09/2026 in VOD Full events (eventos completos)"
+    },
+    {
+      "title": "ROJADIRECTA FAQ",
+      "url": "http://forum.rojadirecta.es/faq.php",
+      "snippet": "ROJADIRECTA FAQ Here you can find answers to questions about how the board works. Use the links or search box below to find …"
+    },
+    {
+      "title": "View Profile: Zidanekrisz - ROJADIRECTA",
+      "url": "http://forum.rojadirecta.es/member.php?1617761-Zidanekrisz",
+      "snippet": "Sep 26, 2013 · see more 0 replies | 20 view (s) Today, 16:22 Zidanekrisz started a thread MOTOR : Formula 1 2026 - R14 - F1 …"
+    },
+    {
+      "title": "VOD Full events (eventos completos) - forum.rojadirecta.es",
+      "url": "http://forum.rojadirecta.es/forumdisplay.php?15-VOD-Full-events-",
+      "snippet": "Feb 15, 2026 · Quick Navigation VOD Full events (eventos completos) Top Streams Software VOD Full events (eventos completos) …"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "ppsub/Qwen-PhishDetectAI-SMS-GRPO",
+  "slug": "ppsub-qwen-phishdetectai-sms-grpo",
+  "author": "ppsub",
+  "url": "https://huggingface.co/ppsub/Qwen-PhishDetectAI-SMS-GRPO",
+  "created_at": "2026-09-13T11:43:31.000Z",
+  "updated_at": "2026-09-13T11:51:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "trl",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889310,
+  "storage_human": "3.1 GB",
+  "base_model": "unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Motorrad verkauf Nach Schweden mit Zahlung über Paypal …",
+      "url": "https://www.paypal-community.com/t5/Verkaufen/Motorrad-verkauf-Nach-Schweden-mit-Zahlung-%C3%BCber-Paypal/td-p/1815489",
+      "snippet": "Sie können sich ganz einfach für ein PayPal-Konto anmelden, indem Sie auf www.paypal.de gehen. Wenn Sie also mein Angebot …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "HyeonseokE/smolvla_close_box_ours_1000_10fps",
+  "slug": "hyeonseoke-smolvla_close_box_ours_1000_10fps",
+  "author": "HyeonseokE",
+  "url": "https://huggingface.co/HyeonseokE/smolvla_close_box_ours_1000_10fps",
+  "created_at": "2026-09-13T14:03:42.000Z",
+  "updated_at": "2026-09-13T14:05:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:HyeonseokE/close_box_ours_10fps",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906729316,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "有什么好的ed2k下载器？ - 知乎",
+      "url": "https://www.zhihu.com/question/63863543",
+      "snippet": "骨灰级软件，amule或者emule等，这两个都是20年前的软件，软件倒是还能运行，但是可能连接不了；如果能连接上的话，需要解 …"
+    },
+    {
+      "title": "Victoria-5.35 汉化版 含单文件版 - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/thread-1332589-1-1.html",
+      "snippet": "Dec 19, 2020 · MD5文件:Victoria-535cn.7z大小: 993438 字节修改时间: 2020年12月17日 , 21:23:42MD5: …"
+    },
+    {
+      "title": "Victoria v5.34中文绿色版 (硬盘修复工具) - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/thread-1325807-1-1.html",
+      "snippet": "Dec 10, 2020 · 吾爱破解 - 52pojie.cn » 网站 › 【 软件安全 】 › 『精品软件区』 › Victoria v5.34中文绿色版 (硬盘修复工具)"
+    },
+    {
+      "title": "Paradox Interactive - 知乎",
+      "url": "https://www.zhihu.com/org/paradox-40-75",
+      "snippet": "3 days ago · 【译者按：本开发日志仅描述游戏中的机制与内容，请勿过度解读。】 【开发日志#185作者：游戏总监Martin。】 【开 …"
+    },
+    {
+      "title": "『精品软件区』 - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/forum-16-1.html",
+      "snippet": "15 hours ago · 精品软件推荐，软件交流天地，汇集众多精彩评论，热心会员每日更新。找你所需要的，给你我分享的！这里不但有PC …"
+    }
+  ]
+}

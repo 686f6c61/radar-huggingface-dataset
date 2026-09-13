@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "INCModel3/Qwen3.5-9B-MXFP8-CT-RTN-AutoRound",
+  "slug": "incmodel3-qwen3-5-9b-mxfp8-ct-rtn-autoround",
+  "author": "INCModel3",
+  "url": "https://huggingface.co/INCModel3/Qwen3.5-9B-MXFP8-CT-RTN-AutoRound",
+  "created_at": "2026-09-13T11:58:44.000Z",
+  "updated_at": "2026-09-13T12:00:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "quantized",
+    "mxfp8",
+    "autoround",
+    "autoquant-agent",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 12387272334,
+  "storage_human": "12.4 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/en/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. …"
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/pt-BR",
+      "snippet": "TikTok - as tendências começam aqui. Em um dispositivo ou na web, os espectadores podem assistir e descobrir milhões de vídeos …"
+    },
+    {
+      "title": "TikTok Ads: Log In",
+      "url": "https://ads.tiktok.com/i18n/login/",
+      "snippet": "Log in to your TikTok for Business account to access TikTok Ads Manager, Business Center and TikTok One."
+    },
+    {
+      "title": "Se connecter | TikTok",
+      "url": "https://livecenter.tiktok.com/?lang=fr",
+      "snippet": "Connecte-toi à TikTok Utiliser un code QR Utiliser le téléphone/l'e-mail/le nom d'utilisateur Continuer avec Facebook"
+    },
+    {
+      "title": "Iniciar sesión | TikTok",
+      "url": "https://livecenter.tiktok.com/?lang=es",
+      "snippet": "Inicia sesión en TikTok Usar código QR Usar teléfono, correo o nombre de usuario Continuar con Facebook"
+    }
+  ]
+}

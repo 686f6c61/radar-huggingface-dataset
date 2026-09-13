@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Blossom-V7.1-27B-GGUF",
+  "slug": "mradermacher-blossom-v7-1-27b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Blossom-V7.1-27B-GGUF",
+  "created_at": "2026-09-13T12:48:16.000Z",
+  "updated_at": "2026-09-13T14:02:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "conversational",
+    "reasoning",
+    "multimodal",
+    "en",
+    "zh",
+    "base_model:Azure99/Blossom-V7.1-27B",
+    "base_model:quantized:Azure99/Blossom-V7.1-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 190780443136,
+  "storage_human": "190.8 GB",
+  "base_model": "Azure99/Blossom-V7.1-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Videos & Sex Movies - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://www.pornhub.com/",
+      "snippet": "Pornhub provides you with unlimited free porn videos with the hottest pornstars. Enjoy the largest amateur porn community on the net …"
+    },
+    {
+      "title": "Vidéos porno et films de sexe gratuits - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://fr.pornhub.com/",
+      "snippet": "Pornhub est le site tube pornographique le plus complet et le plus révolutionnaire. Nous offrons des vidéos porno en streaming, des …"
+    },
+    {
+      "title": "Vídeos Porno nuevos o recientes : Películas XXX | Pornhub",
+      "url": "https://es.pornhub.com/video",
+      "snippet": "Porno y películas XXX nuevas. Mira los mejores vídeos de sexo nuevos o recientes gratis en Pornhub"
+    },
+    {
+      "title": "Pornhub Porn Videos",
+      "url": "https://www.pornhub.com/video/search?search=pornhub",
+      "snippet": "Watch Pornhub porn videos for free, here on Pornhub.com. Discover the growing collection of high quality Most Relevant XXX …"
+    },
+    {
+      "title": "Categorías de Pornhub: Encuentra tus videos porno hardcore favoritos …",
+      "url": "https://es.pornhub.com/categories",
+      "snippet": "Pornhub tiene los mejores videos porno hardcore. Descubre el XXX más nuevo para ver en tu categoría de sexo favorita. Mira las …"
+    }
+  ]
+}

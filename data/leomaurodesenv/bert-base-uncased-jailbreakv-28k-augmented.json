@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "leomaurodesenv/bert-base-uncased-jailbreakv-28k-augmented",
+  "slug": "leomaurodesenv-bert-base-uncased-jailbreakv-28k-augmented",
+  "author": "leomaurodesenv",
+  "url": "https://huggingface.co/leomaurodesenv/bert-base-uncased-jailbreakv-28k-augmented",
+  "created_at": "2026-09-13T16:06:50.000Z",
+  "updated_at": "2026-09-13T16:27:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437963889,
+  "storage_human": "438 MB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vinted | Toute la seconde main dans une seule application",
+      "url": "https://www.vinted.fr/?msockid=254d6e89199f6de11ee3795a18eb6c59",
+      "snippet": "Une communauté, des milliers de marques et de styles de seconde main. Prêt à te lancer ? Découvre comment ça marche !"
+    },
+    {
+      "title": "S'inscrire et se connecter | Vinted",
+      "url": "https://www.vinted.fr/help/103?msockid=254d6e89199f6de11ee3795a18eb6c59",
+      "snippet": "Une communauté, des milliers de marques et de styles de seconde main. Prêt à te lancer ? Découvre comment ça marche !"
+    },
+    {
+      "title": "Envoi avec Vinted Go | Vinted",
+      "url": "https://www.vinted.fr/help/1110-envois-avec-vinted-go?msockid=254d6e89199f6de11ee3795a18eb6c59",
+      "snippet": "Comment utiliser une consigne Vinted Go ? Si tu rencontres un problème avec une consigne lors du dépôt ou du retrait d'un colis, …"
+    },
+    {
+      "title": "Articles | Vinted",
+      "url": "https://www.vinted.fr/brand/vintage?msockid=254d6e89199f6de11ee3795a18eb6c59",
+      "snippet": "Une communauté, des milliers de marques et de styles de seconde main. Prêt à te lancer ? Découvre comment ça marche !"
+    },
+    {
+      "title": "Vêtements | Explore les vêtements de seconde main | Vinted",
+      "url": "https://www.vinted.fr/catalog/4-clothing?msockid=254d6e89199f6de11ee3795a18eb6c59",
+      "snippet": "Parcours les vêtements de seconde main pour femmes sur Vinted. Déniche des pièces uniques à prix tout doux et achète et vends …"
+    }
+  ]
+}

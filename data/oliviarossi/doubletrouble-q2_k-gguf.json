@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "OliviaRossi/DoubleTrouble-Q2_K-GGUF",
+  "slug": "oliviarossi-doubletrouble-q2_k-gguf",
+  "author": "OliviaRossi",
+  "url": "https://huggingface.co/OliviaRossi/DoubleTrouble-Q2_K-GGUF",
+  "created_at": "2026-09-13T13:01:04.000Z",
+  "updated_at": "2026-09-13T13:01:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen",
+    "qwen3.5",
+    "qwen3.8",
+    "merge",
+    "normalized-geodesic-consensus",
+    "abliterated",
+    "uncensored",
+    "flash",
+    "agent",
+    "reasoning",
+    "multimodal",
+    "vision",
+    "gated-deltanet",
+    "vllm",
+    "llama.cpp",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:OliviaRossi/DoubleTrouble",
+    "base_model:quantized:OliviaRossi/DoubleTrouble",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.de/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=de",
+      "snippet": "Werbeprogramme Über Google Google.com in English © 2026 - Datenschutzerklärung - Nutzungsbedingungen"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/?hl=de-US",
+      "snippet": "Google gibt es auch auf: English Werbeprogramme Über Google Google.com"
+    },
+    {
+      "title": "Google Chrome – den schnellen und sicheren Browser von Google …",
+      "url": "https://www.google.com/intl/de/chrome/",
+      "snippet": "Noch effizienter arbeiten mit dem neuen Google Chrome. Der Webbrowser mit der Technologie von Google ist jetzt noch einfacher, …"
+    },
+    {
+      "title": "Übersicht",
+      "url": "https://search.google/intl/de-DE/",
+      "snippet": "Explore new ways to search. Download the Google app to experience Lens, AR, Search Labs, voice search, and more."
+    }
+  ]
+}

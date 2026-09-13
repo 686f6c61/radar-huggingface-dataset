@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "llmware/qwen-3.5-2b-ov",
+  "slug": "llmware-qwen-3-5-2b-ov",
+  "author": "llmware",
+  "url": "https://huggingface.co/llmware/qwen-3.5-2b-ov",
+  "created_at": "2026-09-13T17:50:01.000Z",
+  "updated_at": "2026-09-13T17:53:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "openvino",
+    "qwen3_5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2098588095,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eXtra Saudi Arabia | Buy Electronics with Confidence",
+      "url": "https://www.extra.com/en-sa",
+      "snippet": "Browse top deals from eXtra Saudi Arabia today. Find the best brands in mobiles, home appliances, TVs & laptops. Enjoy fast …"
+    },
+    {
+      "title": "eXtra Saudi Arabia | Buy Electronics with Confidence - eXtra",
+      "url": "https://www.extra.com/en-sa/%EF%BF%BD",
+      "snippet": "Browse top deals from eXtra Saudi Arabia today. Find the best brands in mobiles, home appliances, TVs & laptops. Enjoy fast …"
+    },
+    {
+      "title": "eXtra Mega Sale KSA | Up to 50% OFF | Best Price & Deals - noon",
+      "url": "https://www.noon.com/saudi-en/extra-mega-sale/?msockid=3ed77a0c3edf63953b616ddf3f7a6269",
+      "snippet": "eXtra's Mega Sale is live now. Enjoy discounts on thousands of products including Mobiles, TVs, Appliances, Computers & more. …"
+    },
+    {
+      "title": "إكسترا السعودية | اشترِ الإلكترونيات بثقة",
+      "url": "https://www.extra.com/ar-sa",
+      "snippet": "تصفّح أفضل العروض من إكسترا السعودية. اكتشف أرقى العلامات التجارية في مجالات الهواتف المحمولة، والأجهزة المنزلية، وأجهزة التلفزيون، وأجهزة الكمبيوتر المحمولة. استمتع بخدمة توصيل …"
+    },
+    {
+      "title": "Login - eXtra",
+      "url": "https://www.extra.com/en-sa/login",
+      "snippet": "Keep track of your order’s process, whether delivery or pickup."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "CZMartin22/TaoMate-H3-3step-ComfyUI",
+  "slug": "czmartin22-taomate-h3-3step-comfyui",
+  "author": "CZMartin22",
+  "url": "https://huggingface.co/CZMartin22/TaoMate-H3-3step-ComfyUI",
+  "created_at": "2026-09-13T07:50:10.000Z",
+  "updated_at": "2026-09-13T08:13:03.000Z",
+  "license": "minimax-h3-community",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "text-to-video",
+    "image-to-video",
+    "audio-video",
+    "lora",
+    "comfyui",
+    "3-step",
+    "distilled",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 0,
+  "trending_score": 9,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1240539224,
+  "storage_human": "1.2 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Loan Officer Job Description - lhh.com",
+      "url": "https://www.lhh.com/en-us/insights/loan-officer-job-description",
+      "snippet": "Feb 2, 2022 · A Loan Officer evaluates loan applications for businesses and individuals. Banks and other financial institutions rely on …"
+    },
+    {
+      "title": "What does a branch lending officer do? - Zippia",
+      "url": "https://www.zippia.com/branch-lending-officer-jobs/what-does-a-branch-lending-officer-do/",
+      "snippet": "Jan 8, 2025 · What does A Branch Lending Officer do and what are their responsibilities? Explore the role, responsibilities, and skills …"
+    },
+    {
+      "title": "What Do Loan Officers Do? A Detailed Look at Their Role and ...",
+      "url": "https://themoneyknowhow.com/what-do-loan-officers-do/",
+      "snippet": "Jun 30, 2024 · Most loan officers receive on-the-job training at financial institutions to learn lending regulations, bank policies, and …"
+    },
+    {
+      "title": "SVP CRE Lending Job in St. Louis, MO | JRG Partners",
+      "url": "https://www.jrgpartners.com/jobs/svp-head-commercial-real-estate-lending-regional-bank-st-louis-mo/",
+      "snippet": "Key Responsibilities of SVP, Head of Commercial Real Estate Lending with a Regional Bank – St. Louis, MO The SVP, Head of CRE …"
+    },
+    {
+      "title": "What is a Mortgage Loan Officer: A Career Guide - CGAA",
+      "url": "https://www.cgaa.org/article/what-is-a-mortgage-loan-officer",
+      "snippet": "Discover the role of a Mortgage Loan Officer: duties, responsibilities, and required skills in this comprehensive guide to the mortgage …"
+    }
+  ]
+}

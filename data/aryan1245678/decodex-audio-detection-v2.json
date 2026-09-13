@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Aryan1245678/decodeX-audio-detection-V2",
+  "slug": "aryan1245678-decodex-audio-detection-v2",
+  "author": "Aryan1245678",
+  "url": "https://huggingface.co/Aryan1245678/decodeX-audio-detection-V2",
+  "created_at": "2026-09-13T16:18:11.000Z",
+  "updated_at": "2026-09-13T16:18:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "wav2vec2",
+    "generated_from_trainer",
+    "dataset:audiofolder",
+    "base_model:mo-thecreator/Deepfake-audio-detection",
+    "base_model:finetune:mo-thecreator/Deepfake-audio-detection",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94569090,
+  "parameters_human": "94.6M",
+  "storage_bytes": 378307536,
+  "storage_human": "378 MB",
+  "base_model": "motheecreator/Deepfake-audio-detection",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Audio Classification",
+      "dataset": "audiofolder",
+      "metric": "Accuracy",
+      "value": 0.9972843305874898
+    }
+  ],
+  "sources": [
+    {
+      "title": "Find the Google Play Store app",
+      "url": "https://support.google.com/googleplay/answer/190860?hl=en",
+      "snippet": "Fix issues with Play Store If you have issues locating the Play Store app, or opening, loading or downloading content in the app, it …"
+    },
+    {
+      "title": "Rechercher l'application Google Play Store - Aide Google Play",
+      "url": "https://support.google.com/googleplay/answer/190860?hl=fr",
+      "snippet": "Rechercher l'application Google Play Store Vous pouvez obtenir des applications, des jeux et du contenu numérique pour votre …"
+    },
+    {
+      "title": "Télécharger google play sur windows 10 PC (lenovo)",
+      "url": "https://forums.commentcamarche.net/forum/affich-33247576-telecharger-google-play-sur-windows-10-pc-lenovo",
+      "snippet": "Mar 5, 2016 · Je voulais savoir si il etait possible d'une manière ou d'une autre d'installer google play ou d'avoir accès à ses …"
+    },
+    {
+      "title": "Télécharger play store sur pc - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-34967614-telecharger-play-store-sur-pc",
+      "snippet": "Oct 31, 2017 · Bonjour, Comment télécharger play store sur mon pc window 7? J'ai vraiment besoin de votre aide. Merci d'avance"
+    },
+    {
+      "title": "Instalar e configurar o Google Play Games no PC",
+      "url": "https://support.google.com/googleplay/answer/11358888?hl=pt-br",
+      "snippet": "Se seu PC atender aos requisitos mínimos, você poderá instalar o Google Play Games no PC. Iniciar instalação No computador …"
+    }
+  ]
+}

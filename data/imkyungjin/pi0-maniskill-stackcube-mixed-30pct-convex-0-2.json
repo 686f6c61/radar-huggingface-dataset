@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ImKyungjin/pi0-maniskill-stackcube-mixed-30pct-convex-0.2",
+  "slug": "imkyungjin-pi0-maniskill-stackcube-mixed-30pct-convex-0-2",
+  "author": "ImKyungjin",
+  "url": "https://huggingface.co/ImKyungjin/pi0-maniskill-stackcube-mixed-30pct-convex-0.2",
+  "created_at": "2026-09-13T14:37:17.000Z",
+  "updated_at": "2026-09-13T14:41:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi0",
+    "robotics",
+    "dataset:local/maniskill_stackcube_mixed_30pct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 7011552484,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HBO Max | Stream Series and Movies",
+      "url": "https://www.hbomax.com/",
+      "snippet": "Stream must-see series, hit movies, exclusive originals, family favorites, and live sports."
+    },
+    {
+      "title": "HBO Max | Disfruta de HBO, Discovery, televisión y películas",
+      "url": "https://www.hbomax.com/es/es",
+      "snippet": "En HBO Max puedes ver televisión, películas, historias reales y deportes en directo. Accede a lo mejor de HBO, Discovery, Warner …"
+    },
+    {
+      "title": "Max",
+      "url": "https://auth.hbomax.com/login",
+      "snippet": "Sign in to access HBO Max, the streaming platform with movies, series, and exclusive Max Originals."
+    },
+    {
+      "title": "HBO Max | Get a list of all the providers that offer HBO Max.",
+      "url": "https://help.hbomax.com/US/Answer/Detail/000002545",
+      "snippet": "You can sign up using the HBO Max app and then sign in on any supported device. Note New Apple- and Google Play-billed …"
+    },
+    {
+      "title": "HBO Max | Find out how to connect your internet, mobile, or TV …",
+      "url": "https://help.hbomax.com/us/Answer/Detail/000002557",
+      "snippet": "Connect your provider If you get HBO Max through an internet, mobile, or TV provider, you need to connect your provider account …"
+    }
+  ]
+}

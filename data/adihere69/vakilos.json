@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Adihere69/VakilOS",
+  "slug": "adihere69-vakilos",
+  "author": "Adihere69",
+  "url": "https://huggingface.co/Adihere69/VakilOS",
+  "created_at": "2026-09-13T11:50:17.000Z",
+  "updated_at": "2026-09-13T11:56:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-generation",
+    "en",
+    "dataset:kaushik-harsh-99/Indian-legal-data-v3",
+    "dataset:Prarabdha/indian-legal-supervised-fine-tuning-data",
+    "dataset:nisaar/Constitution_Of_India_Instruction_Set",
+    "dataset:viber1/indian-law-dataset",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "4 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/4",
+      "snippet": "In internet slang, \"4\" can replace the word \"for\" (as \"four\" and \"for\" are pronounced similarly). For example, messaging \"4 u\" instead …"
+    },
+    {
+      "title": "Channel 4 | Stream & Watch Live TV",
+      "url": "https://www.channel4.com/",
+      "snippet": "Privacy Policy 4Viewers Accessibility Statements Contact Us Annual Report 4Corporate Channel 4+ Channel 4 News Film4 Walter …"
+    },
+    {
+      "title": "Learn About the Number 4 | Number of the Day: 4 | Four with ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=tH8ZRPb-jQw",
+      "snippet": "Oct 12, 2021 · Created by teachers, learn how to show 4 in a ten frame. Learn to draw 4 tally marks. See the number 4 with objects …"
+    },
+    {
+      "title": "4 (number) - Simple English Wikipedia, the free encyclopedia",
+      "url": "https://simple.wikipedia.org/wiki/4_(number)",
+      "snippet": "4 (number) ... Mathematics In mathematics, the number four is an even number and the smallest composite number. Four is also the …"
+    },
+    {
+      "title": "04.gov.ae",
+      "url": "https://04.gov.ae/",
+      "snippet": "المنصة الموحدة للتواصل بين حكومة دبي ومتعامليها."
+    }
+  ]
+}

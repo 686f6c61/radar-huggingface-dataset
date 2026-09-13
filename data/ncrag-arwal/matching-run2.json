@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ncrag-arwal/matching-run2",
+  "slug": "ncrag-arwal-matching-run2",
+  "author": "ncrag-arwal",
+  "url": "https://huggingface.co/ncrag-arwal/matching-run2",
+  "created_at": "2026-09-13T15:49:54.000Z",
+  "updated_at": "2026-09-13T15:49:59.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Chrome - The Fast & Secure Web Browser Built to be Yours",
+      "url": "https://www.google.com/chrome/",
+      "snippet": "Chrome is the official web browser from Google, built to be fast, secure, and customizable. Download now and make it yours."
+    },
+    {
+      "title": "Google Chrome Web Tarayıcısı",
+      "url": "https://www.google.com/intl/tr/chrome/",
+      "snippet": "Google'ın akıllı teknolojileri ile artık daha basit, daha güvenli ve daha hızlı."
+    },
+    {
+      "title": "A Google Chrome letöltése és telepítése",
+      "url": "https://support.google.com/chrome/answer/95346?hl=hu&co=GENIE.Platform%3DDesktop",
+      "snippet": "A Chrome első indításakor el kell olvasnia és el kell fogadnia a Google Általános Szerződési Feltételeit. Tipp: Annak érdekében, hogy …"
+    },
+    {
+      "title": "Download and install Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "How to install Chrome Important: Before you download, check if Chrome supports your operating system and you’ve met all other …"
+    },
+    {
+      "title": "Welcome to My Activity",
+      "url": "https://myactivity.google.com/",
+      "snippet": "Welcome to My Activity Data helps make Google services more useful for you. Sign in to review and manage your activity, including …"
+    }
+  ]
+}

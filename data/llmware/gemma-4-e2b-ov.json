@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "llmware/gemma-4-e2b-ov",
+  "slug": "llmware-gemma-4-e2b-ov",
+  "author": "llmware",
+  "url": "https://huggingface.co/llmware/gemma-4-e2b-ov",
+  "created_at": "2026-09-13T17:13:00.000Z",
+  "updated_at": "2026-09-13T17:27:30.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "openvino",
+    "gemma4",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4355011546,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Math Calculator",
+      "url": "https://www.calculatorsoup.com/calculators/math/math.php",
+      "snippet": "Aug 1, 2025 · Free online math calculator to add, subtract, multiply and divide positive and negative numbers. Online decimal …"
+    },
+    {
+      "title": "Calculator | The Online Calculator",
+      "url": "https://www.theonlinecalculator.com/",
+      "snippet": "Basic Online Calculator with 10-digit keypad and 4 functions to add, subtract, multiply and divide numbers. Includes basic handheld …"
+    },
+    {
+      "title": "Basic Calculator",
+      "url": "https://www.calculator.net/basic-calculator.html",
+      "snippet": "This free online calculator can be used for basic computations such as addition, subtraction, multiplication, division, and square roots."
+    },
+    {
+      "title": "Math Calculators",
+      "url": "https://www.calculator.net/math-calculator.html",
+      "snippet": "This is a free online math calculator together with a variety of other free math calculators that compute standard deviation, …"
+    },
+    {
+      "title": "Integer Calculator",
+      "url": "https://www.calculator.io/integer-calculator/",
+      "snippet": "Jul 21, 2026 · Use our free Integer Calculator to add and subtract positive and negative numbers and decimals with step-by-step …"
+    }
+  ]
+}

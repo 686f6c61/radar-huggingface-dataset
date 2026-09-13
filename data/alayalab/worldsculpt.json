@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "AlayaLab/WorldSculpt",
+  "slug": "alayalab-worldsculpt",
+  "author": "AlayaLab",
+  "url": "https://huggingface.co/AlayaLab/WorldSculpt",
+  "created_at": "2026-08-18T02:25:52.000Z",
+  "updated_at": "2026-09-04T06:16:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "en",
+    "dataset:AlayaLab/Worldsculpt_data",
+    "base_model:TencentARC/Pixal3D",
+    "base_model:finetune:TencentARC/Pixal3D",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 0,
+  "trending_score": 11,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 341121940,
+  "storage_human": "341 MB",
+  "base_model": "TencentARC/Pixal3D",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tanie loty do: Lizbona (LIS) od 260 zł - Skyscanner",
+      "url": "https://www.skyscanner.pl/loty-do/lis/tanie-loty-do-lizbona-lotnisko.html",
+      "snippet": "Szukasz lotów do: Lizbona (LIS)? Porównaj oferty największych linii lotniczych i biur podróży i znajdź tanie loty do: Lizbona bez …"
+    },
+    {
+      "title": "Tanie loty do Lizbony | Wizz Air",
+      "url": "https://wizzair.com/pl-pl/tanie-loty-do-lizbona",
+      "snippet": "Poznaj najlepsze oferty tanich lotów do Lizbona z Wizz Air, w cenach już od EUR80. Porównaj rozkłady lotów i opcje lotów w obie …"
+    },
+    {
+      "title": "Tanie loty z: Warszawa (WARS) do: Lizbona (LIS) od 278 zł",
+      "url": "https://www.skyscanner.pl/trasy/wars/lis/warszawa-do-lizbona.html",
+      "snippet": "Znajdź tanie loty z: Warszawa do: Lizbona ️ od 278 zł. Porównaj bilety lotnicze na Skyscannerze i znajdź najlepsze oferty w kilka …"
+    },
+    {
+      "title": "Lizbona - Wakacje i wczasy 2026 i 2027 z Rainbow | R.pl",
+      "url": "https://r.pl/portugalia/lizbona?msockid=0e51620a0d89621f352e75d90ccc63d2",
+      "snippet": "Odwiedź z nami jedno z najpiękniejszych miast świata, leżące na krańcu Europy! Smakuj życie i udaj się na wczasy do Lizbony! …"
+    },
+    {
+      "title": "Loty z Warszawy do Lizbony | LOT.com",
+      "url": "https://www.lot.com/pl/pl/loty/loty-do-europy/loty-do-portugalii/loty-do-lizbony/loty-z-warszawy-do-lizbony",
+      "snippet": "Zarezerwuj lot z Warszawy do Lizbony i zobacz takie miejsca jak Klasztor Hieronimitów, Wieżę Belém czy słynną dzielnicę Alfama. …"
+    }
+  ]
+}

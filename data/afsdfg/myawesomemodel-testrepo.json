@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "afsdfg/MyAwesomeModel-TestRepo",
+  "slug": "afsdfg-myawesomemodel-testrepo",
+  "author": "afsdfg",
+  "url": "https://huggingface.co/afsdfg/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-13T17:59:03.000Z",
+  "updated_at": "2026-09-13T17:59:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vueling: cheap flights to major European cities - Vueling",
+      "url": "https://www.vueling.com/en",
+      "snippet": "Take the wheel and explore Compare a wide range of options and prices with Vueling Cars and collect Avios."
+    },
+    {
+      "title": "Vueling: vuelos baratos a las principales ciudades europeas - Vueling",
+      "url": "https://www.vueling.com/es",
+      "snippet": "Ya está aquí el nuevo Vueling Club Sube de nivel y desbloquea nuevas ventajas para viajar mejor, sigue acumulando Avios y …"
+    },
+    {
+      "title": "Vueling",
+      "url": "https://tickets.vueling.com/",
+      "snippet": "CONÓCENOS ¿Quiénes somos? Sala de prensa Ciudades Países Sostenibilidad Trabaja con nosotros TE AYUDAMOS Centro de …"
+    },
+    {
+      "title": "Vueling",
+      "url": "https://tickets.vueling.com/Home.aspx",
+      "snippet": "Si eres residente puedes comprar el billete a través de los canales de venta habituales de Vueling. Para obtener el descuento, …"
+    },
+    {
+      "title": "Vueling - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vueling",
+      "snippet": "The new merged airline operates under the Vueling brand, with Clickair flights and aircraft re-branded under the Vueling name. It …"
+    }
+  ]
+}

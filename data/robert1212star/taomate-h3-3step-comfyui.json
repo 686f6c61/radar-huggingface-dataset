@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Robert1212star/TaoMate-H3-3Step-ComfyUI",
+  "slug": "robert1212star-taomate-h3-3step-comfyui",
+  "author": "Robert1212star",
+  "url": "https://huggingface.co/Robert1212star/TaoMate-H3-3Step-ComfyUI",
+  "created_at": "2026-09-13T08:56:05.000Z",
+  "updated_at": "2026-09-13T09:55:56.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "taomate-h3",
+    "comfyui",
+    "lora",
+    "safetensors",
+    "video",
+    "audio-video",
+    "3-step",
+    "accelerated-inference",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 0,
+  "trending_score": 12,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2481007456,
+  "storage_human": "2.5 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "X-Art ~ beautiful erotica.",
+      "url": "https://www.x-art.com/",
+      "snippet": "X-Art features the world's finest 4K erotic videos and erotic photography, gorgeous erotic models and nude models from the USA, …"
+    },
+    {
+      "title": "X-Art free porn pics and videos - ErosBerry",
+      "url": "https://www.erosberry.com/x-art",
+      "snippet": "Aug 2, 2026 · Enjoy great selection of X-Art's picture galleries and videos for free. The best erotic galleries are here!"
+    },
+    {
+      "title": "X-Art Nude Pics - Erotic Beauties",
+      "url": "https://www.eroticbeauties.net/site/x-art/",
+      "snippet": "3 days ago · Discover our growing collection of nude pics and erotic videos from X-Art, updated daily."
+    },
+    {
+      "title": "X Art Porno Videos | Pornhub.com",
+      "url": "https://de.pornhub.org/video/search?search=x+art",
+      "snippet": "Keine andere Sex Tube ist beliebter und bietet mehr X Art Szenen als Pornhub! Browse unser unglaubliches Angebot an Pornos in …"
+    },
+    {
+      "title": "X-Art Porn Pics and Nude Videos - Elite Babes",
+      "url": "https://www.elitebabes.com/x-art/",
+      "snippet": "X-Art features the world's finest HD erotic videos and erotic photography, stunning erotic girls and nude models from the USA, …"
+    }
+  ]
+}

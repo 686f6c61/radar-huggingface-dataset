@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "segestic/phi-1.5-primekg-sft-seed101",
+  "slug": "segestic-phi-1-5-primekg-sft-seed101",
+  "author": "segestic",
+  "url": "https://huggingface.co/segestic/phi-1.5-primekg-sft-seed101",
+  "created_at": "2026-09-13T18:51:36.000Z",
+  "updated_at": "2026-09-13T18:51:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 50357392,
+  "storage_human": "50 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "1822direkt",
+      "url": "https://www.1822direkt-banking.de/freiflaechen/rwd/login/marketing/",
+      "snippet": "Der SWIFT-Bank Identifier Code (BIC) ist ein international standardisierter Bankcode, mit dem weltweit Kreditinstitute identifiziert …"
+    },
+    {
+      "title": "Online Banking Login | 1822direkt",
+      "url": "https://www.1822direkt-banking.de/freiflaechen/kundenportal/login-empfehlungen/",
+      "snippet": "Hier können Sie sich sicher in das Online-Banking der 1822direkt einloggen und Ihre Bankgeschäfte bequem verwalten."
+    },
+    {
+      "title": "Sie möchten ein neues Smartphone verwenden? So führen ... - 1822direkt",
+      "url": "https://www.1822direkt-banking.de/fileadmin/Home/Dokumente/PDF/1822TAN_Anleitung_Geraetewechsel.pdf",
+      "snippet": "Sie möchten ein neues Smartphone verwenden? So führen Sie den Gerätewechsel mit dem 1822TAN+ Verfahren durch. Bitte …"
+    },
+    {
+      "title": "90411 288053 Ref PostIdent_. - 1822direkt",
+      "url": "https://www.1822direkt-banking.de/fileadmin/Home/Dokumente/PDF/identcoupons_1822direkt.pdf",
+      "snippet": "Die 1822direkt ist gesetzlich verpflichtet, sich über die Identität ihrer Kunden Gewissheit zu verschaf-fen. Die Identitätsprüfung wird …"
+    },
+    {
+      "title": "ETF-Sparplanliste - 1822direkt",
+      "url": "https://www.1822direkt-banking.de/fileadmin/Home/Dokumente/PDF/Wertpapiere/1822direkt-etf-sparplanliste-aktuell.pdf",
+      "snippet": "ETF-Sparplanliste Regelmäßig aktualisierte Übersicht aller sparplanfähigen ETFs. Weitere aktuelle Marktinfos unter …"
+    }
+  ]
+}

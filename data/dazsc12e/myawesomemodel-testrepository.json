@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "DAZSC12E/MyAwesomeModel-TestRepository",
+  "slug": "dazsc12e-myawesomemodel-testrepository",
+  "author": "DAZSC12E",
+  "url": "https://huggingface.co/DAZSC12E/MyAwesomeModel-TestRepository",
+  "created_at": "2026-09-13T12:42:50.000Z",
+  "updated_at": "2026-09-13T12:55:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "deutschland - YouTube",
+      "url": "https://www.youtube.com/Deutschland/de-de",
+      "snippet": "Share your videos with friends, family, and the world"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/de",
+      "snippet": "© 2026 Google LLC."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube/top/country/de",
+      "snippet": "Welcome to the official YouTube channel – a home for the biggest moments, the smallest obsessions, and everything in between. …"
+    },
+    {
+      "title": "Videos auf Deutsch - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PL308DCFE7C2ED2B94",
+      "snippet": "Baumsterben im deutschen Wald | Wie wird der Wald in Zukunft aussehen? Icarus: Warum verschwinden unsere Vögel? Ein …"
+    }
+  ]
+}

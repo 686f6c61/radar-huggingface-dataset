@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Manuelaskll/robotics-vision-language-run3",
+  "slug": "manuelaskll-robotics-vision-language-run3",
+  "author": "Manuelaskll",
+  "url": "https://huggingface.co/Manuelaskll/robotics-vision-language-run3",
+  "created_at": "2026-09-13T17:44:25.000Z",
+  "updated_at": "2026-09-13T17:44:31.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "robotics-vision-language",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ajouter, déplacer ou supprimer des widgets de l'écran d'accueil - HUAWEI",
+      "url": "https://consumer.huawei.com/fr/support/content/fr-fr15768964/",
+      "snippet": "Vous pouvez ajouter, déplacer ou supprimer des widgets de l'écran d'accueil, tels que Verrouillage d'écran, Météo, Bloc-notes, …"
+    },
+    {
+      "title": "Widgets d'écran d'accueil | HUAWEI Assistance France",
+      "url": "https://consumer.huawei.com/fr/support/content/fr-fr00766020/",
+      "snippet": "Vous pouvez ajouter, déplacer ou supprimer des widgets de l'écran d'accueil, tels que Verrouillage d'écran, Météo, Bloc-notes, …"
+    },
+    {
+      "title": "Comment mettre des widgets sur Huawei ? ️ - Tecnobits",
+      "url": "https://tecnobits.com/fr/comment-mettre-des-widgets-sur-Huawei/",
+      "snippet": "Dec 27, 2023 · Allumez votre appareil Huawei. Retour à l'écran d'accueil. Appuyez et maintenez un espace vide sur l'écran. …"
+    },
+    {
+      "title": "Ajouter des widgets, les organiser et les supprimer — Huawei Mate 20 Pro",
+      "url": "https://videotron.tmtx.ca/fr/topic/huawei_mate20pro/ajouter_des_widgets_les_organiser_et_les_supprimer.html",
+      "snippet": "Les widgets sont de petits modules d’extension d’applications qui permettent d’exécuter des tâches spécifiques et qui sont …"
+    },
+    {
+      "title": "Add Widgets to Huawei Mate 20 Pro Homescreen in Seconds!",
+      "url": "https://m.youtube.com/watch?v=wftDz8f0Yyc",
+      "snippet": "Oct 30, 2024 · In this video, we guide you through the simple steps to add and arrange widgets, whether you want quick access to …"
+    }
+  ]
+}

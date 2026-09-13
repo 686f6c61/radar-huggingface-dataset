@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "TokenRhythm/NeoHorse-1-4B-GGUF",
+  "slug": "tokenrhythm-neohorse-1-4b-gguf",
+  "author": "TokenRhythm",
+  "url": "https://huggingface.co/TokenRhythm/NeoHorse-1-4B-GGUF",
+  "created_at": "2026-09-08T10:00:52.000Z",
+  "updated_at": "2026-09-10T03:50:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "llama-cpp",
+    "agentic",
+    "tool-use",
+    "coding",
+    "reasoning",
+    "instruction-following",
+    "text-generation",
+    "arxiv:2609.08183",
+    "base_model:TokenRhythm/NeoHorse-1-4B",
+    "base_model:quantized:TokenRhythm/NeoHorse-1-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 9,
+  "downloads_30d": 4142,
+  "trending_score": 9,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 27114981120,
+  "storage_human": "27.1 GB",
+  "base_model": "TokenRhythm/NeoHorse-1-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Städtereise Lissabon » Erlebe die Magie der Alfama ☀ | TUI",
+      "url": "https://www.tui.com/staedtereisen/lissabon/?msockid=3cefb4f3af3164d83ec1a320ae846567",
+      "snippet": "Städtereise in Lissabon: Unvergessliche Momente in Portugals Hauptstadt Du träumst von einer abwechslungsreichen Städtereise …"
+    },
+    {
+      "title": "Urlaub buchen » sicher und günstig reisen | TUI",
+      "url": "https://www.tui.com/?msockid=3cefb4f3af3164d83ec1a320ae846567",
+      "snippet": "Dein nächster Traumurlaub mit der Qualität von TUI. Bequem buchen & sicher reisen Reiseziele weltweit kostenfrei stornieren Last …"
+    },
+    {
+      "title": "2025-11 Lissabon - cloud.tui.com",
+      "url": "https://cloud.tui.com/tuiat/images/fileadmin/tuiat/Gruppenreisen/2025-11_Lissabon.pdf",
+      "snippet": "TT-CLUB REISE: LISSABON EIN PARADIES FÜR KULTUR- UND GENUSSLIEBHABER Lissabon, die Hauptstadt Portugals, ist …"
+    },
+    {
+      "title": "Städtereise nach Lissabon: Inspiration & Tipps | TUI powered by …",
+      "url": "https://ferienwohnung.tui.com/lissabon/st%C3%A4dtereise",
+      "snippet": "Ein TUI powered by HomeToGo Citytrip nach Lissabon: Erkunden Sie die mitreißende Metropole, um danach im Ferienappartement …"
+    },
+    {
+      "title": "Ferienwohnungen in Lissabon buchen | TUI powered by HomeToGo",
+      "url": "https://ferienwohnung.tui.com/lissabon",
+      "snippet": "Eine handverlesene Auswahl qualitativ hochwertiger Ferienwohnungen in Lissabon bietet Ihnen TUI powered by HomeToGo, um die …"
+    }
+  ]
+}

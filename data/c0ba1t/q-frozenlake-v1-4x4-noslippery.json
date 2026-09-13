@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "c0ba1t/q-FrozenLake-v1-4x4-noSlippery",
+  "slug": "c0ba1t-q-frozenlake-v1-4x4-noslippery",
+  "author": "c0ba1t",
+  "url": "https://huggingface.co/c0ba1t/q-FrozenLake-v1-4x4-noSlippery",
+  "created_at": "2026-09-13T14:51:35.000Z",
+  "updated_at": "2026-09-13T14:51:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "FrozenLake-v1-4x4-no_slippery",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 915,
+  "storage_human": "915 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bizim Mekan Nedir? Ayrıntılı BizimMekan Rehberi Yayınlandı",
+      "url": "https://www.bizimmekan.com/bizim-mekan-nedir.php",
+      "snippet": "Bizim Mekan Nedir? Yaşayabileceğimiz tek ve yegane evimiz dünyamız, bugüne kadar yaşadığı en büyük felaketle karşı karşıya. …"
+    },
+    {
+      "title": "Hatay Sohbet Odaları Hatay Chat Siteleri Hataylılarla Tanışın - Bizim …",
+      "url": "https://www.bizimmekan.com/hatay-sohbet.php",
+      "snippet": "Hatay sohbet odaları hatay chat sitesi. Hataydan arkadaş bul, hatay arkadaşlık siteleri, hatay dul bayanlar, hataylı kızlarla buluş.."
+    },
+    {
+      "title": "Van Sohbet Odaları Van Chat Siteleri Van Arkadaşlık Uygulaması",
+      "url": "https://www.bizimmekan.com/van-sohbet.php",
+      "snippet": "Van Chat Kendini Geliştir Gelişen teknoloji ile birlikte sosyal medya kullanımı artmakta ve güvenilir adres arayışı çoğalmaktadır. …"
+    },
+    {
+      "title": "İngiltere Sohbet Odaları İngiltere Chat Siteleri İngilizlerle Tanışın ...",
+      "url": "https://www.bizimmekan.com/ingiltere-sohbet.php",
+      "snippet": "ingiltere sohbet odaları ve ingiltere chat siteleri yeni kızlarla tanıştırır, yakışıklı ingiliz erkekleriyle sohbet ettirir! İngilizce sohbet, ingiliz …"
+    },
+    {
+      "title": "Seviyeli Sohbet Et Seviyeli Chat Odaları Son Sürüm - Bizim Mekan",
+      "url": "https://www.bizimmekan.com/seviyeli-sohbet.php",
+      "snippet": "Seviyeli sohbet odaları seviyeli chat sitesi. Bizim mekan seviyeli sohpet, seviyeli çet sitesi, sevıyelı çhet yapmak istiyorum."
+    }
+  ]
+}

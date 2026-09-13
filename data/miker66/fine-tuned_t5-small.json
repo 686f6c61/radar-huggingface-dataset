@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Miker66/fine-tuned_t5-small",
+  "slug": "miker66-fine-tuned_t5-small",
+  "author": "Miker66",
+  "url": "https://huggingface.co/Miker66/fine-tuned_t5-small",
+  "created_at": "2026-09-13T17:07:04.000Z",
+  "updated_at": "2026-09-13T17:07:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 60506624,
+  "parameters_human": "60.5M",
+  "storage_bytes": 242041896,
+  "storage_human": "242 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tracking a package after 120 days... : r/UPS - Reddit",
+      "url": "https://www.reddit.com/r/UPS/comments/a7iwbb/tracking_a_package_after_120_days/",
+      "snippet": "Dec 19, 2018 · Tracking a package after 120 days... I need to track a package that is past the 120 day mark, UPS.com just says \"UPS …"
+    },
+    {
+      "title": "Dropped off Amazon return, but not showing up : r/UPS - Reddit",
+      "url": "https://www.reddit.com/r/UPS/comments/f30ace/dropped_off_amazon_return_but_not_showing_up/",
+      "snippet": "Feb 12, 2020 · The tracking number that Amazon gave you isn't a real tracking number in that case because the item is a …"
+    },
+    {
+      "title": "Stuck on “Label Created since May 29th” : r/UPS - Reddit",
+      "url": "https://www.reddit.com/r/UPS/comments/h094c8/stuck_on_label_created_since_may_29th/",
+      "snippet": "It’s also UPS Ground as well. I really don’t think it takes this long for UPS ground. Amazon says delivery is June 8th-June 10th and …"
+    },
+    {
+      "title": "Are the estimated times ever correct? : r/UPS - Reddit",
+      "url": "https://www.reddit.com/r/UPS/comments/19ep5jt/are_the_estimated_times_ever_correct/",
+      "snippet": "If it hasn’t been handed off to UPS yet, how could they accurately estimate? 90% of these come down to the shipper printing the …"
+    },
+    {
+      "title": "My package was transferred from UPS to USPS but my local post",
+      "url": "https://www.reddit.com/r/UPS/comments/h7pf0x/my_package_was_transferred_from_ups_to_usps_but/",
+      "snippet": "Jun 12, 2020 · My USPS tracking number says that the package is still in pre-shipment. The last notification I received was on june 8 …"
+    }
+  ]
+}

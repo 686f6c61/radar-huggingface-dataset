@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "thojm/hyperfusion_lora_anima",
+  "slug": "thojm-hyperfusion_lora_anima",
+  "author": "thojm",
+  "url": "https://huggingface.co/thojm/hyperfusion_lora_anima",
+  "created_at": "2026-07-09T20:58:21.000Z",
+  "updated_at": "2026-09-13T18:38:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "anima",
+    "lora",
+    "hyperfusion",
+    "not-for-all-audiences",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 367406816,
+  "storage_human": "367 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "微软 (MSFT) 股票股价_股价行情_财报_数据报告 - 雪球",
+      "url": "https://xueqiu.com/S/MSFT",
+      "snippet": "雪球为您提供微软 (MSFT)股票实时行情,资金流向,新闻资讯,研究报告,社区互动,交易信息,个股点评,公告,财务指标分析等与微软 …"
+    },
+    {
+      "title": "Microsoft Corporation (MSFT) Stock Price, News, Quote & History",
+      "url": "https://finance.yahoo.com/quote/MSFT/",
+      "snippet": "1 day ago · Find the latest Microsoft Corporation (MSFT) stock quote, history, news and other vital information to help you with your …"
+    },
+    {
+      "title": "Microsoft Corp (MSFT) Stock Price & News - Google Finance",
+      "url": "https://www.google.com/finance/quote/MSFT%3ANASDAQ",
+      "snippet": "Get real-time stock quotes, news, financial details, and analytics for Microsoft Corp from Google Finance."
+    },
+    {
+      "title": "微软公司 (MSFT)股票股价,实时行情,新闻,财报,研报评级 ...",
+      "url": "https://stock.finance.sina.com.cn/usstock/quotes/MSFT.html",
+      "snippet": "新浪财经-美股频道为您提供微软公司 (MSFT)股票股价,股票实时行情,新闻,财报,美股实时交易数据,研究报告,评级,财务指标分析等与微 …"
+    },
+    {
+      "title": "微软(MSFT)股票最新价格行情,实时走势图,股价分析预测_英 ...",
+      "url": "https://cn.investing.com/equities/microsoft-corp",
+      "snippet": "Jul 30, 2026 · 微软 (MSFT) (ISIN: US5949181045)股票专题，提供今日微软 (MSFT) (ISIN: US5949181045)股票最新股价查询，实时 …"
+    }
+  ]
+}

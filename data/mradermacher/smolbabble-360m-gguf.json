@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mradermacher/SmolBabble-360m-GGUF",
+  "slug": "mradermacher-smolbabble-360m-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/SmolBabble-360m-GGUF",
+  "created_at": "2026-09-13T13:05:25.000Z",
+  "updated_at": "2026-09-13T13:19:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "children",
+    "children-sentences",
+    "useless",
+    "sentence-generation",
+    "fun",
+    "cool",
+    "unique",
+    "edge-deployment",
+    "small-models",
+    "en",
+    "base_model:benni-ben/SmolBabble-360m",
+    "base_model:quantized:benni-ben/SmolBabble-360m",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 361821120,
+  "parameters_human": "361.8M",
+  "storage_bytes": 3729514752,
+  "storage_human": "3.7 GB",
+  "base_model": "benni-ben/SmolBabble-360m",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Copying & Plundering Skills - Tensura Mod Wiki",
+      "url": "https://tensura-mod.fandom.com/wiki/Copying_%26_Plundering_Skills",
+      "snippet": "The Player can copy or plunder skills only from the Main Skill slot from other players. Due to that, Passive Skills can't be copied from …"
+    },
+    {
+      "title": "Category:Plundering Skills - Tensura: Reincarnated Wiki",
+      "url": "https://tensura.wiki.gg/wiki/Category:Plundering_Skills",
+      "snippet": "Jan 17, 2026 · Pages in category \"Plundering Skills\" The following 11 pages are in this category, out of 11 total."
+    },
+    {
+      "title": "Tensura Neo Otherworld - Minecraft Modpacks - CurseForge",
+      "url": "https://www.curseforge.com/minecraft/modpacks/tensura-neo-otherworld",
+      "snippet": "6 days ago · Welcome to this magic adventure modpack featuring magical skills and diverse races! When your life comes to an end, …"
+    },
+    {
+      "title": "Stealing Skills : r/TenseiSlime - Reddit",
+      "url": "https://www.reddit.com/r/TenseiSlime/comments/16v1pc3/stealing_skills/",
+      "snippet": "Sep 29, 2023 · What skills are considered \"Bound to the soul\" and therefor cannot be stolen (according to the great sage)? I thought …"
+    },
+    {
+      "title": "Tensura Plunder MIMCRY AVAILABLE - TensuraPludnerNeoForge-5.0.0 ...",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/tensura-unique-skill-stealing-plundering/files/8407953",
+      "snippet": "Jul 10, 2026 · What's new Bug Fixes: Gourmet: Stomach instead of Mimicry. Great Sage / Usurper: Fixed an issue where abilities …"
+    }
+  ]
+}

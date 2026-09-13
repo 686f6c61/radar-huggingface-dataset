@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "pdfdsf435/gpt-kaggle-backup",
+  "slug": "pdfdsf435-gpt-kaggle-backup",
+  "author": "pdfdsf435",
+  "url": "https://huggingface.co/pdfdsf435/gpt-kaggle-backup",
+  "created_at": "2026-09-06T16:47:00.000Z",
+  "updated_at": "2026-09-13T19:23:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 832377966909,
+  "storage_human": "832.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "images-fio.6play.fr",
+      "url": "https://images-fio.6play.fr/v2/images/3967974/raw?auto=webp&blur=0&fit=scale_crop&height=180&interlace=1&optimize=high&width=320&hash=9af6287a11d7068311bc60ee0f08a3a5d73e2339",
+      "snippet": "BM6 -6(€ ˆ -.=5ÿ.=5ÿ.=5ÿ.=5ÿ …"
+    },
+    {
+      "title": "images-fio.6play.fr",
+      "url": "https://images-fio.6play.fr/v2/images/3980963/raw?auto=webp&blur=0&fit=scale_crop&height=180&interlace=1&optimize=high&width=320&hash=96e883adae649a96d6d2660a20f08b0bb822cfee",
+      "snippet": "BM6 -6(€ ˆ -„—†ÿ~’ ÿ~’ ÿ •‚ÿ€” ÿ “€ÿ ”~ÿ~“}ÿ~’{ÿ~’{ÿ}‘zÿ}‘zÿ| yÿ|‘xÿ}’yÿ}’yÿ} xÿ} xÿ| vÿ{Žuÿ|Œtÿ ..."
+    },
+    {
+      "title": "pc.middleware.6play.fr",
+      "url": "https://pc.middleware.6play.fr/6play/v2/platforms/m6group_web/services/6play/live?channel=M6&with=service_display_images,nextdiffusion",
+      "snippet": "{\"M6\":[{\"images\":[{\"external_key\":\"5001137\",\"role\":\"vignette\",\"id\":4736586,\"sort_index\":0,\"title\":\"\"},{\"external_key\":\"5007941\",\"role\":\"storyboard\",\"id\":4743348,\"sort ..."
+    },
+    {
+      "title": "images.6play.fr",
+      "url": "https://images.6play.fr/v1/images/794268/raw",
+      "snippet": ""
+    },
+    {
+      "title": "images-fio.6play.fr",
+      "url": "https://images-fio.6play.fr/v2/images/4000093/raw?width=272&height=153&fit=max&quality=60&format=jpeg&interlace=1&hash=61dbd89d631836fdcc667516257f8ca4d4b8506b",
+      "snippet": "BM6ђ-6(Ђ € ђ-]nЏя[mЊяZh„яXe я[g яdn†яirЌяjrЏяlxђяdp€яaiЂяU\\uяAJeя;GcяXg‡я …"
+    }
+  ]
+}

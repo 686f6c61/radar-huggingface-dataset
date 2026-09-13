@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "AZERDSQ/G2-nano-base",
+  "slug": "azerdsq-g2-nano-base",
+  "author": "AZERDSQ",
+  "url": "https://huggingface.co/AZERDSQ/G2-nano-base",
+  "created_at": "2026-09-13T11:29:13.000Z",
+  "updated_at": "2026-09-13T11:29:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nanogpt",
+    "text-generation",
+    "causal-lm",
+    "from-scratch",
+    "custom-code",
+    "g2-nano",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 60031296,
+  "parameters_human": "60.0M",
+  "storage_bytes": 240650894,
+  "storage_human": "241 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "16 Best Hotels in New York. Hotels from $101/night - KAYAK",
+      "url": "https://www.kayak.com/New-York-Hotels.15830.hotel.ksp?msockid=018f9ce20d0a6e1d0eac8b310c806f45",
+      "snippet": "Discover the best hotels in New York and compare prices, ratings, and locations to find the right stay for your trip. These are the best …"
+    },
+    {
+      "title": "THE 10 BEST New York City Hotel Deals (Sept 2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.com/SmartDeals-g60763-New_York_City_New_York-Hotel-Deals.html",
+      "snippet": "Jun 2, 2026 · SAVE! See Tripadvisor's New York City, NY hotel deals and special prices all in one spot. Find the perfect hotel within …"
+    },
+    {
+      "title": "Last Minute Hotel Deals in New York from $101/day - KAYAK",
+      "url": "https://www.kayak.com/New-York-Hotels_Last-Minute.Lhotel.15830.hotel.ksp?msockid=018f9ce20d0a6e1d0eac8b310c806f45",
+      "snippet": "13 hours ago · Looking for a last minute New York hotel? Last minute hotels for tonight from $54/day; tomorrow from $54/day; this …"
+    },
+    {
+      "title": "New York, NY Hotels: 4,121 Cheap New York, NY Hotel Deals",
+      "url": "https://www.hotelscombined.com/Place/New_York_City.htm",
+      "snippet": "4 days ago · HotelsCombined compares all New York hotel deals from the best accommodation sites at once. Read Guest Reviews …"
+    },
+    {
+      "title": "New York Hotels: 29,514 Cheap New York Hotel Deals",
+      "url": "https://www.hotelscombined.com/Place/New_York.htm",
+      "snippet": "4 days ago · HotelsCombined compares all New York hotel deals from the best accommodation sites at once. Read Guest Reviews …"
+    }
+  ]
+}

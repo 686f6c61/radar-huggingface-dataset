@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "leokswang/rldx1-urgantry-v4-dagger-lora32-ckpt3000",
+  "slug": "leokswang-rldx1-urgantry-v4-dagger-lora32-ckpt3000",
+  "author": "leokswang",
+  "url": "https://huggingface.co/leokswang/rldx1-urgantry-v4-dagger-lora32-ckpt3000",
+  "created_at": "2026-09-13T17:14:48.000Z",
+  "updated_at": "2026-09-13T17:16:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "RLDX-1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6922464576,
+  "parameters_human": "6.92B",
+  "storage_bytes": 23164085199,
+  "storage_human": "23.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Renting Particulares sin Entrada | Ofertas septiembre 2026",
+      "url": "https://rentingfinders.com/renting-particulares/",
+      "snippet": "Encuentra los coches de renting para uso particular más buscados del momento. Las mejores marcas, sin entrada y sin largas …"
+    },
+    {
+      "title": "Renting para particulares sin entrada (2026): desde 239 €/mes",
+      "url": "https://www.renting4u.es/renting-particulares-sin-entrada/",
+      "snippet": "Aug 7, 2026 · En esta guía te explicamos cómo funciona el renting sin entrada para particulares, qué requisitos hay y qué modelos …"
+    },
+    {
+      "title": "Renting Sin Entrada inicial | Particulares, Empresas",
+      "url": "https://totalrenting.es/sin-entrada/",
+      "snippet": "Descubre la forma más fácil de estrenar coche con renting sin entrada: precios competitivos, máxima comodidad y una amplia …"
+    },
+    {
+      "title": "Renting para particulares sin entrada desde 289€/mes",
+      "url": "https://www.quieromirenting.es/particulares/",
+      "snippet": "Aquí encontrarás una selección actualizada de ofertas de renting para particulares económicas y sin entrada, pensadas para …"
+    },
+    {
+      "title": "Renting Particulares {Sin Entrada} | Just Renting",
+      "url": "https://justrenting.es/particulares",
+      "snippet": "Si quieres disfrutar de la experiencia de estrenar coche nuevo sin tener que comprarlo, ahora puedes elegir hacerlo desde dos a …"
+    }
+  ]
+}
