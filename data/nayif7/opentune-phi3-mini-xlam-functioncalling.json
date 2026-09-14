@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "Nayif7/opentune-phi3-mini-xlam-functioncalling",
+  "slug": "nayif7-opentune-phi3-mini-xlam-functioncalling",
+  "author": "Nayif7",
+  "url": "https://huggingface.co/Nayif7/opentune-phi3-mini-xlam-functioncalling",
+  "created_at": "2026-09-13T21:13:38.000Z",
+  "updated_at": "2026-09-13T23:15:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "function-calling",
+    "tool-use",
+    "structured-output",
+    "phi-3",
+    "text-generation",
+    "en",
+    "dataset:Salesforce/xlam-function-calling-60k",
+    "base_model:microsoft/Phi-3-mini-4k-instruct",
+    "base_model:adapter:microsoft/Phi-3-mini-4k-instruct",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 100697728,
+  "storage_human": "101 MB",
+  "base_model": "microsoft/Phi-3-mini-4k-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Function Calling",
+      "dataset": "xLAM Function Calling (120-example held-out split)",
+      "metric": "Exact Match (tool + arguments)",
+      "value": 72.5
+    },
+    {
+      "task": "Function Calling",
+      "dataset": "xLAM Function Calling (120-example held-out split)",
+      "metric": "Tool Selection Accuracy",
+      "value": 98.3
+    },
+    {
+      "task": "Function Calling",
+      "dataset": "xLAM Function Calling (120-example held-out split)",
+      "metric": "JSON Validity",
+      "value": 98.3
+    }
+  ],
+  "sources": [
+    {
+      "title": "Servers",
+      "url": "https://dimaserver.com/",
+      "snippet": "Read the server rules before you play The same rules apply across every DIMA Server game server."
+    },
+    {
+      "title": "All servers (CS2) - dimaserver.com",
+      "url": "https://dimaserver.com/servers/cs2/all",
+      "snippet": "Read the server rules before you play The same rules apply across every DIMA Server game server."
+    },
+    {
+      "title": "Skins: Pistols - dimaserver.com",
+      "url": "https://dimaserver.com/skins",
+      "snippet": "Skins changer: Pistols PICK YOUR PISTOLS SKINS AND WEAR THEM ON EVERY DIMASERVER"
+    },
+    {
+      "title": "Skins: Gloves - dimaserver.com",
+      "url": "https://dimaserver.com/skins/gloves",
+      "snippet": "Skins changer: Gloves PICK YOUR GLOVES SKINS AND WEAR THEM ON EVERY DIMASERVER"
+    },
+    {
+      "title": "Super Powers (CS2) - dimaserver.com",
+      "url": "https://dimaserver.com/servers/cs2/super-powers",
+      "snippet": "Peak players 485 Online 64 / 64 Your location UNITED STATES"
+    }
+  ]
+}

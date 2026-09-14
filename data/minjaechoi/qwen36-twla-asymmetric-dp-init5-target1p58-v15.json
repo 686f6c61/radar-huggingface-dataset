@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "minjaechoi/qwen36-twla-asymmetric-dp-init5-target1p58-v15",
+  "slug": "minjaechoi-qwen36-twla-asymmetric-dp-init5-target1p58-v15",
+  "author": "minjaechoi",
+  "url": "https://huggingface.co/minjaechoi/qwen36-twla-asymmetric-dp-init5-target1p58-v15",
+  "created_at": "2026-09-13T21:14:24.000Z",
+  "updated_at": "2026-09-13T21:23:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234485269,
+  "storage_human": "70.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "„Aşk ve Ceza” - HD - ep. 7, partea 2/2, subtitrat româneşte",
+      "url": "https://www.dailymotion.com/video/x56yuzr",
+      "snippet": "Dec 31, 2016 · „Aşk ve Ceza” / „Dragoste şi pedeapsă”, episodul 7, partea 2/2,Actori: Murat Yıldırım şi Nurgül Yeşilçay"
+    },
+    {
+      "title": "Dragoste si pedeapsa episodul 7 - serialelatimp.net",
+      "url": "https://www.serialelatimp.net/dragoste-si-pedeapsa-episodul-7/",
+      "snippet": "Oct 29, 2020 · Dragoste şi pedeapsă prezintă povestea a două lumi diferite, o faţă a Turciei neexploatată până în acest moment, …"
+    },
+    {
+      "title": "Dragoste si lacrimi ep7 subtitrat in Romana FINAL",
+      "url": "https://www.youtube.com/watch?v=hOIb-Q1dCGI",
+      "snippet": "Nov 8, 2025 · like si subscribe"
+    },
+    {
+      "title": "Dragoste Si Pedeapsa Ep 7 - glumi.org",
+      "url": "https://glumi.org/dragoste-si-pedeapsa-ep-7/19892/",
+      "snippet": "Dragoste si pedeapsa ep 7 Primesti drept pedeapsa episodul 7, adica 12 plus 13 online subtitrat in romana. Clar, tot din serialul …"
+    },
+    {
+      "title": "Toate Serialele Turcești – Terasa cu Cărți – Site Oficial",
+      "url": "https://terasacuseriale.com/toate-serialele-turcesti-subtitrate/",
+      "snippet": "21 hours ago · Vezi o listă completă cu toate serialele turcești de pe Terasa cu cărți. Urmăriți producții de top, încheiate sau în …"
+    }
+  ]
+}

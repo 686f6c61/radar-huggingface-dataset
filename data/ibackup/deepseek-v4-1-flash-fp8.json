@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Ibackup/DeepSeek-V4.1-Flash-FP8",
+  "slug": "ibackup-deepseek-v4-1-flash-fp8",
+  "author": "Ibackup",
+  "url": "https://huggingface.co/Ibackup/DeepSeek-V4.1-Flash-FP8",
+  "created_at": "2026-09-13T21:29:59.000Z",
+  "updated_at": "2026-09-13T21:36:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v41",
+    "text-generation",
+    "deepseek",
+    "deepseek-v4.1",
+    "vision-language",
+    "multimodal",
+    "fp8",
+    "abliterated",
+    "uncensored",
+    "image-text-to-text",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763205315794,
+  "parameters_human": "763.21B",
+  "storage_bytes": 510296708312,
+  "storage_human": "510.3 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何查询自己往年高考成绩？ - 知乎",
+      "url": "https://www.zhihu.com/question/329089828",
+      "snippet": "看完这个回答，大家都可以查到自己的高考成绩。 这么重要的东西，居然会忘了吗？别怕，记不住高考成绩也有办法查询啦！ 高考成 …"
+    },
+    {
+      "title": "2026年了都，大家现在单机游戏都在哪里下？ - 知乎",
+      "url": "https://www.zhihu.com/question/1973937257695170709",
+      "snippet": "注意，是单机游戏。单机游戏。 直接推荐一个个人体验最好的游戏资源站（没有之一） 这个网站不论 游戏数量，还是 每日更新量 都 …"
+    },
+    {
+      "title": "Au par avant ou auparavant [Résolu] - Le Figaro",
+      "url": "https://forum.lefigaro.fr/forum/affich-15-au-par-avant-ou-auparavant",
+      "snippet": "Un paravent est un objet qui nous protège du vent. Pour bien utiliser le mot \"auparavant\" dans une phrase, il faut se souvenir que, …"
+    },
+    {
+      "title": "Ma foi ou ma fois - Le Figaro",
+      "url": "https://forum.lefigaro.fr/forum/affich-244-ma-foi-ou-ma-fois",
+      "snippet": "Salut, J'aime beaucoup l'expression \"ma foi\" et j'aurais juste une question : vous écririez \"foi\" ou \"fois\" dans ce cas-là ? Si l'un d'entre …"
+    },
+    {
+      "title": "IOS怎么手机微信退出电脑版微信不退出啊？ - 知乎",
+      "url": "https://www.zhihu.com/question/325536295",
+      "snippet": "今天刚想这个问题要怎么解决，然后各种上网查，说手机断网退微信的，现在没网微信是推不掉的，然后你们是不是忘了手机后台应 …"
+    }
+  ]
+}

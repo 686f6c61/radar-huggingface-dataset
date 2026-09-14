@@ -5,16 +5,13 @@
   "author": "harbcharbel",
   "url": "https://huggingface.co/harbcharbel/ltx-superman-flight",
   "created_at": "2026-09-13T10:35:47.000Z",
-  "updated_at": "2026-09-13T11:07:50.000Z",
+  "updated_at": "2026-09-13T13:32:06.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-to-video",
   "library": "diffusers",
   "languages": [],
   "tags": [
-    "diffusers",
-    "text-to-video",
-    "ltx-video",
     "license:other",
     "region:us"
   ],
@@ -23,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 701781,
-  "storage_human": "701781 B",
+  "storage_bytes": 2200403,
+  "storage_human": "2 MB",
   "base_model": null,
   "formats": [
     "diffusers"

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "eclatt/Q_learning_Taxi-v3",
+  "slug": "eclatt-q_learning_taxi-v3",
+  "author": "eclatt",
+  "url": "https://huggingface.co/eclatt/Q_learning_Taxi-v3",
+  "created_at": "2026-09-13T23:03:02.000Z",
+  "updated_at": "2026-09-13T23:08:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 274895,
+  "storage_human": "274895 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "WhatsApp | Messages et appels privés, gratuits, sûrs et fiables",
+      "url": "https://www.whatsapp.com/?lang=fr",
+      "snippet": "Utilisez l’application WhatsApp Messenger pour rester en contact avec vos proches. WhatsApp permet d’envoyer des messages et …"
+    },
+    {
+      "title": "Download WhatsApp",
+      "url": "https://www.whatsapp.com/download",
+      "snippet": "Download WhatsApp on your mobile device, tablet or desktop and stay connected with reliable private messaging and calling. …"
+    },
+    {
+      "title": "WhatsApp Messenger - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.whatsapp&hl=en",
+      "snippet": "WhatsApp from Meta is a FREE messaging and video calling app. It’s used by over 2B people in more than 180 countries. It’s simple, …"
+    },
+    {
+      "title": "WhatsApp Messenger – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.whatsapp&hl=fr",
+      "snippet": "À propos de l'application WhatsApp de Meta est une application GRATUITE qui vous permet d’envoyer des messages et d’effectuer …"
+    }
+  ]
+}

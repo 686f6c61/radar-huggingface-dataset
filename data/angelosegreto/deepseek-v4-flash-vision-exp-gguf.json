@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ANGELOSEGRETO/DeepSeek-V4-Flash-Vision-Exp-GGUF",
+  "slug": "angelosegreto-deepseek-v4-flash-vision-exp-gguf",
+  "author": "ANGELOSEGRETO",
+  "url": "https://huggingface.co/ANGELOSEGRETO/DeepSeek-V4-Flash-Vision-Exp-GGUF",
+  "created_at": "2026-09-13T22:38:05.000Z",
+  "updated_at": "2026-09-13T22:38:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "image-text-to-text",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 284334578519,
+  "parameters_human": "284.33B",
+  "storage_bytes": 394078507840,
+  "storage_human": "394.1 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XNXX joins handful of adult sites subject to EU's strictest content ...",
+      "url": "https://techcrunch.com/2024/07/10/xnxx-joins-handful-of-adult-sites-subject-to-eus-strictest-content-moderation-rules/",
+      "snippet": "Jul 10, 2024 · The European Union has designated adult content website XNXX as subject to the strictest level of content regulation …"
+    },
+    {
+      "title": "Xnxx.com - Is It Safe [Virus Check]",
+      "url": "https://sensorstechforum.com/xnxx-com-is-it-safe/",
+      "snippet": "May 21, 2025 · Xnxx.com is an adult content platform known for pushing pop-up ads that can take you to suspicious pages. It’s risky …"
+    },
+    {
+      "title": "Free porn videos from biggest porn website XNXX - Lesbian",
+      "url": "https://www.lesbian.com/news/porn_videos_from_biggest_porn_website_xnxx.html",
+      "snippet": "There are many porn fans out there who are looking for the best place to download free porn videos from the biggest and best adult …"
+    },
+    {
+      "title": "xnxx.com Website Traffic, Ranking, Analytics [July 2026]",
+      "url": "https://www.semrush.com/website/xnxx.com/overview/?msockid=104dff397d856f9834c7e8ea7c856ea0",
+      "snippet": "1 day ago · The tool will show you the top keywords driving traffic to xnxx.com, while also providing the exact search volume, cost-per …"
+    },
+    {
+      "title": "XNXX joins list of porn sites subject to EU digital rulebook",
+      "url": "https://www.euractiv.com/news/xnxx-joins-list-of-porn-sites-subject-to-eu-digital-rulebook/",
+      "snippet": "Jul 10, 2024 · The European Commission designated the pornography platform XNXX as a very large online platform under the …"
+    }
+  ]
+}

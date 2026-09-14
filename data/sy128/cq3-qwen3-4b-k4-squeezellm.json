@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "sy128/CQ3-Qwen3-4B-K4-SqueezeLLM",
+  "slug": "sy128-cq3-qwen3-4b-k4-squeezellm",
+  "author": "sy128",
+  "url": "https://huggingface.co/sy128/CQ3-Qwen3-4B-K4-SqueezeLLM",
+  "created_at": "2026-08-31T22:38:28.000Z",
+  "updated_at": "2026-09-14T00:50:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 17657211928,
+  "storage_human": "17.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达_百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 云存储（Yandex Disk）：提供文件存储与共享功能。 多元化服务：涵盖打车（与Uber合并）、外卖、电商、音乐流媒 …"
+    },
+    {
+      "title": "Yandex (全网版）登录入口 yandex引擎全球版地址入口链接",
+      "url": "https://zhidao.baidu.com/question/2130668061390532747.html",
+      "snippet": "Nov 11, 2025 · 图：Yandex国际版首页界面（支持语言切换） 二、无需登录的核心功能 搜索服务 支持网页、图片、新闻、视频等多分 …"
+    },
+    {
+      "title": "魅魔银纹的含义有哪些？ - 知乎",
+      "url": "https://www.zhihu.com/question/472558218",
+      "snippet": "对于这个题目，知乎之前有人很详细解答过 魅魔yin纹的含义有哪些？ 做为一位中年男性，很想探究这背后的文化产生是怎样的。 1. …"
+    },
+    {
+      "title": "你用Yandex的时候通常会搜索哪些类型的关键词？ - 知乎",
+      "url": "https://www.zhihu.com/question/2057859094770406150",
+      "snippet": "我刚开始用Yandex，想知道大家一般都会用它搜些什么，有没有特别实用的关键词方向可以参考。"
+    },
+    {
+      "title": "求能下载谷歌商店的下载一款游览器Yandex apk - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/thread-1153013-1-1.html",
+      "snippet": "Apr 10, 2020 · 吾爱破解 - 52pojie.cn » 网站 › 【 软件安全 】 › 『悬赏问答区』 › old_thread › 求能下载谷歌商店的下载一款游览 …"
+    }
+  ]
+}

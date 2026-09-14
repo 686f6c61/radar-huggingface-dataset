@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "minte1431/Ornith-1.5-9B-OBLITERATED",
+  "slug": "minte1431-ornith-1-5-9b-obliterated",
+  "author": "minte1431",
+  "url": "https://huggingface.co/minte1431/Ornith-1.5-9B-OBLITERATED",
+  "created_at": "2026-09-14T00:39:30.000Z",
+  "updated_at": "2026-09-14T00:39:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen3_5",
+    "abliterated",
+    "uncensored",
+    "ornith",
+    "qwen3.5",
+    "obliteratus",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:ornith-ai/Ornith-1.5-9B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-9B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 82426184038,
+  "storage_human": "82.4 GB",
+  "base_model": "ornith-ai/Ornith-1.5-9B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "الصفحة الرئيسية - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLPYf6vTu2xt17uhXThhpUMYbChcBh2YyC",
+      "snippet": "Share your videos with friends, family, and the world"
+    },
+    {
+      "title": "Essential '90s R&B - YouTube Music",
+      "url": "https://music.youtube.com/playlist?list=RDCLAK5uy_ne3DJMol0EVIfwcuZnx2hQak0q6EbeBlY",
+      "snippet": "Playlist • YouTube Music R&B defined American mainstream music throughout the '90s. Here are key tracks from R&B's most vital …"
+    },
+    {
+      "title": "Movies & TV - YouTube",
+      "url": "https://movies.youtube.com/",
+      "snippet": "Find the latest and greatest movies and shows all available on YouTube.com/movies. From award-winning hits to independent …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/?source=pwa",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "dogeum/demo_0913",
+  "slug": "dogeum-demo_0913",
+  "author": "dogeum",
+  "url": "https://huggingface.co/dogeum/demo_0913",
+  "created_at": "2026-09-13T20:57:49.000Z",
+  "updated_at": "2026-09-13T20:58:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:dogeum/demo_0911_fixed",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206707272,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign in - Google Accounts - Google Chrome",
+      "url": "https://chrome.google.com/sync",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode"
+    }
+  ]
+}

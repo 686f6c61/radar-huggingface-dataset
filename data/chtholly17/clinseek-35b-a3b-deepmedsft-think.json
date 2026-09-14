@@ -5,7 +5,7 @@
   "author": "Chtholly17",
   "url": "https://huggingface.co/Chtholly17/ClinSeek-35B-A3B-DeepmedSFT-Think",
   "created_at": "2026-09-08T16:56:30.000Z",
-  "updated_at": "2026-09-13T00:20:51.000Z",
+  "updated_at": "2026-09-13T07:51:22.000Z",
   "license": "physionet-credentialed-derivative",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

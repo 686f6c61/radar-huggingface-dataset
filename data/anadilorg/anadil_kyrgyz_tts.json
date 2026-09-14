@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Anadilorg/Anadil_Kyrgyz_TTS",
+  "slug": "anadilorg-anadil_kyrgyz_tts",
+  "author": "Anadilorg",
+  "url": "https://huggingface.co/Anadilorg/Anadil_Kyrgyz_TTS",
+  "created_at": "2026-09-13T21:19:12.000Z",
+  "updated_at": "2026-09-13T21:27:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "voxcpm",
+  "languages": [
+    "kir",
+    "tr"
+  ],
+  "tags": [
+    "voxcpm",
+    "text-to-speech",
+    "tts",
+    "speech-synthesis",
+    "audio",
+    "kyrgyz",
+    "kirgizce",
+    "kirgiz",
+    "kir",
+    "kyrgyzstan",
+    "lora",
+    "low-resource",
+    "central-asia",
+    "tr",
+    "base_model:openbmb/VoxCPM2",
+    "base_model:adapter:openbmb/VoxCPM2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 90699918,
+  "storage_human": "91 MB",
+  "base_model": "openbmb/VoxCPM2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "能给我一个理由为什么要入手AirPods Max 吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/462346500",
+      "snippet": "AirPods Max的外观设计毋庸置疑，一直是个亮点。降噪自然也是AIRPODS PRO比不上的。 AirPods Max的通透模式几乎完美，在听 …"
+    },
+    {
+      "title": "AirPods Max,索尼WH-1000XM5,Bose QC45这三个该选择哪个?",
+      "url": "https://www.zhihu.com/question/567803776",
+      "snippet": "苹果AirPods Max的耳罩采用的是编织材质，透气性更好，耳罩足够深，佩戴时不会夹耳，不过385g的机身太重，特别是在走路时垂头 …"
+    },
+    {
+      "title": "Apple lanserar Airpods Max 2 - SweClockers",
+      "url": "https://www.sweclockers.com/nyhet/42464-apple-lanserar-airpods-max-2",
+      "snippet": "Mar 16, 2026 · Likt den uppdaterade USB Type-C-versionen av Airpods Max finns stöd för lossless -ljud över USB Type-C …"
+    },
+    {
+      "title": "SweClockers prestandaindex för grafikkort",
+      "url": "https://www.sweclockers.com/artikel/18402-sweclockers-prestandaindex-for-grafikkort",
+      "snippet": "Mar 4, 2014 · SweClockers underhåller kontinuerligt ett sammanfattande index för grafikkort i prestandaklassen. Den här artikeln …"
+    },
+    {
+      "title": "如何看待AirPods Max，值得买吗? - 知乎",
+      "url": "https://www.zhihu.com/question/433956129",
+      "snippet": "首先，AirPods Max要挑战的其实并不是具体哪一款耳机，更不是当下大部分蓝牙耳机。 它要做的，其实是要用数字音频挑战模拟音 …"
+    }
+  ]
+}

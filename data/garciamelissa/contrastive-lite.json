@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "garciamelissa/contrastive-lite",
+  "slug": "garciamelissa-contrastive-lite",
+  "author": "garciamelissa",
+  "url": "https://huggingface.co/garciamelissa/contrastive-lite",
+  "created_at": "2026-09-14T00:31:33.000Z",
+  "updated_at": "2026-09-14T00:31:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.iq/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google Chat - Sign In | Google Workspace",
+      "url": "https://chat.google.com/",
+      "snippet": "Sign in to Google Chat and access powerful group messaging for personal and professional collaboration from Google Workspace."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=ar",
+      "snippet": "الإعلانات كل ما تحب معرفته عن Google‏ هنا Google.com in English"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.sa/?hl",
+      "snippet": "نودّ لو كان بإمكاننا تقديم الوصف ولكن الموقع الذي تراه هنا لا يسمح لنا بذلك."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/?hl=ar-US",
+      "snippet": "محرّك بحث Google متوفّر باللغة: English الإعلانات كل ما تحب معرفته عن Google‏ هنا Google.com"
+    }
+  ]
+}

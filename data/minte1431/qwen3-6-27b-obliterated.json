@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "minte1431/Qwen3.6-27B-OBLITERATED",
+  "slug": "minte1431-qwen3-6-27b-obliterated",
+  "author": "minte1431",
+  "url": "https://huggingface.co/minte1431/Qwen3.6-27B-OBLITERATED",
+  "created_at": "2026-09-14T00:54:46.000Z",
+  "updated_at": "2026-09-14T00:54:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3_5_text",
+    "text-generation",
+    "qwen",
+    "qwen3",
+    "qwen3.6",
+    "llama.cpp",
+    "lm-studio",
+    "ollama",
+    "conversational",
+    "obliteratus",
+    "refusal-analysis",
+    "red-team",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:quantized:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 140403094886,
+  "storage_human": "140.4 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ackermanager - Saatgut Saatmenge - raiffeisen.com",
+      "url": "https://www.raiffeisen.com/pflanzen/ackermanager/saatgut_saatmengen.html",
+      "snippet": "Mit der Aussaat wird der Grundstein für die nächste Ernte gelegt. Dabei ist zu beachten, dass neben der Aussaatmenge und dem …"
+    },
+    {
+      "title": "Praktischer Aussaatstärkerechner der AGRAVIS: So viel Getreide …",
+      "url": "https://www.agravis.de/de/unsere-leistungen/pflanzen/getreide/aussaatstaerkerechner",
+      "snippet": "Berechnen Sie die Aussaatstärke ganz einfach mit unserem AGRAVIS-Rechner. Was ist bei der Aussaatstärke zu beachten? Die …"
+    },
+    {
+      "title": "Wintertriticale Lombardo | Sortenblatt & Vertriebspartner",
+      "url": "https://stroetmann-saat.de/kulturen/getreide/triticale/lombardo/",
+      "snippet": "Verschiedene offizielle Versuche haben die Leistungsstärke der Triticale Lombardo über mehrere Jahre bestätigt. Jetzt an unser …"
+    },
+    {
+      "title": "Wintertriticale - Landwirtschaftskammer Nordrhein-Westfalen",
+      "url": "https://www.landwirtschaftskammer.de/landwirtschaft/ackerbau/getreide/wintertriticale-infos-pdf.pdf",
+      "snippet": "Triticale wird über-wiegend als Futtergetreide angebaut. Besonders beim Anbau in viehhaltenden Betrieben sind neben der …"
+    },
+    {
+      "title": "Saatzeiten und Saatstärken",
+      "url": "https://www.landwirtschaftskammer.de/landwirtschaft/ackerbau/getreide/getreide-saatstaerken-pdf.pdf",
+      "snippet": "Saatstärken: Mit einer standort- und saatzeitangepassten Aussaatstärke wird die Grund-lage für hohe und sichere Kornerträge …"
+    }
+  ]
+}

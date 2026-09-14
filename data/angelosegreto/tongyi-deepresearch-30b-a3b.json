@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ANGELOSEGRETO/Tongyi-DeepResearch-30B-A3B",
+  "slug": "angelosegreto-tongyi-deepresearch-30b-a3b",
+  "author": "ANGELOSEGRETO",
+  "url": "https://huggingface.co/ANGELOSEGRETO/Tongyi-DeepResearch-30B-A3B",
+  "created_at": "2026-09-13T22:25:21.000Z",
+  "updated_at": "2026-09-13T22:25:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_moe",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 61077998390,
+  "storage_human": "61.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "מבטח סימון – מנהלת ההסדרים הפנסיונים והפיננסים הגדולה בישראל",
+      "url": "https://www.mvs.co.il/",
+      "snippet": "מבטח סימון, סוכנות ביטוח עם מעל 60 שנות ניסיון בביטוח פנסיה, בריאות ופיננסים, מתמחה בפתרונות מותאמים אישית וליווי מקצועי ללקוחות."
+    },
+    {
+      "title": "מבטח סימון - כניסה לאתרי הבריאות",
+      "url": "https://www.mvs.co.il/login-helth/",
+      "snippet": "מבטח סימון – מנהלת ההסדרים הפנסיונים והפיננסים הגדולה בישראל, כניסה לאתרי הבריאות"
+    },
+    {
+      "title": "הפניה",
+      "url": "https://private.mvs.co.il/",
+      "snippet": "הפניה לאתר מבטח סימון, מנהלת ההסדרים הפנסיונים והפיננסים הגדולה בישראל."
+    },
+    {
+      "title": "מבטח סימון – ויקיפדיה",
+      "url": "https://he.wikipedia.org/wiki/%D7%9E%D7%91%D7%98%D7%97_%D7%A1%D7%99%D7%9E%D7%95%D7%9F",
+      "snippet": "קבוצת מבטח סימון נמצאת בבעלות מלאה של מגדל אחזקות ביטוח ופיננסים. נכון לשנת 2026 מטפלת מבטח סימון מנהלת מחזור גבייה שנתי בהיקף של כ …"
+    },
+    {
+      "title": "חברות בקבוצה - מבטח סימון - מגדל",
+      "url": "https://my.migdal.co.il/about/simon",
+      "snippet": "מבטח סימון הינה תאגיד המחזיק ברישיון סוכן ביטוח פנסיוני - בבעלות מלאה של מגדל חברה לביטוח בע”מ. החברה מספקת שירותים בתחומי ניהול …"
+    }
+  ]
+}

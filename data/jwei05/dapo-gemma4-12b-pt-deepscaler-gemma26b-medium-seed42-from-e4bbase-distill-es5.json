@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "JWei05/DAPO-gemma4-12b-PT-DeepScaleR-gemma26b-medium-seed42-from-e4bbase-distill-es5",
+  "slug": "jwei05-dapo-gemma4-12b-pt-deepscaler-gemma26b-medium-seed42-from-e4bbase-distill-es5",
+  "author": "JWei05",
+  "url": "https://huggingface.co/JWei05/DAPO-gemma4-12b-PT-DeepScaleR-gemma26b-medium-seed42-from-e4bbase-distill-es5",
+  "created_at": "2026-09-10T17:35:51.000Z",
+  "updated_at": "2026-09-14T01:37:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 259360325510,
+  "storage_human": "259.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Hike to the Cadini di Misurina Viewpoint in the Dolomites",
+      "url": "https://italianwanderlust.com/cadini-di-misurina/",
+      "snippet": "Feb 19, 2026 · Planning to hike to the Cadini di Misurina viewpoint in the Dolomites? Discover trail details, parking info, and practical …"
+    },
+    {
+      "title": "Exactly How to Hike to the Cadini di Misurina Viewpoint",
+      "url": "https://www.earthtrekkers.com/cadini-di-misurina-viewpoint-hike/",
+      "snippet": "Aug 18, 2022 · How to hike to the Cadini di Misurina viewpoint, one of the best short hikes in the Dolomites. Map, photos, elevation …"
+    },
+    {
+      "title": "Cadini di Misurina - zo wandel je naar het viewpoint - The Hike",
+      "url": "https://www.thehike.nl/cadini-di-misurina-dolomieten/",
+      "snippet": "Jan 17, 2026 · Vanaf Rifugio Auronzo wandel je in twee uurtjes heen en weer naar het bekende uitzichtpunt, genaamd Punto …"
+    },
+    {
+      "title": "Cadini di Misurina: Your 2026 Guide to the Epic Viewpoint",
+      "url": "https://throneandvine.com/cadini-di-misurina-dolomites/",
+      "snippet": "May 14, 2026 · Hike to the jaw-dropping Cadini di Misurina viewpoint in the Dolomites. Discover when to go, how to get there, and …"
+    },
+    {
+      "title": "Cadini di Misurina, Dolomites, Veneto, Italy (with Map & Photos)",
+      "url": "https://www.tourcounsel.com/2026/09/cadini-di-misurina-dolomites-veneto-italy.html",
+      "snippet": "Discover Cadini di Misurina in the Italian Dolomites, a spectacular mountain landscape near Lake Misurina known for dramatic peaks …"
+    }
+  ]
+}

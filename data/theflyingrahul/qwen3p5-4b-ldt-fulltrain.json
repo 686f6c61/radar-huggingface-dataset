@@ -5,7 +5,7 @@
   "author": "theflyingrahul",
   "url": "https://huggingface.co/theflyingrahul/qwen3p5-4b-ldt-fulltrain",
   "created_at": "2026-09-13T02:19:28.000Z",
-  "updated_at": "2026-09-13T02:20:35.000Z",
+  "updated_at": "2026-09-13T19:30:34.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -28,7 +28,7 @@
     "safetensors"
   ],
   "is_conversational": false,
-  "gated": false,
+  "gated": true,
   "removed": false,
   "removed_at": null,
   "benchmarks": [],

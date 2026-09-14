@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "QuixiAI/MaleCNS",
+  "slug": "quixiai-malecns",
+  "author": "QuixiAI",
+  "url": "https://huggingface.co/QuixiAI/MaleCNS",
+  "created_at": "2026-09-13T23:15:40.000Z",
+  "updated_at": "2026-09-14T00:59:52.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "malecns",
+    "feature-extraction",
+    "connectome",
+    "fruit-fly",
+    "drosophila",
+    "neuroscience",
+    "graph",
+    "custom_code",
+    "doi:10.57967/hf/10410",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 726230172,
+  "parameters_human": "726.2M",
+  "storage_bytes": 2752765907,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gerüchteküche - Forum | Transfermarkt",
+      "url": "https://www.transfermarkt.de/geruchtekuche/detail/forum/154",
+      "snippet": "Aug 13, 2009 · Dies ist die Übersicht aller Threads aus dem Forum Gerüchteküche, die in der Transfermarkt-Community diskutiert …"
+    },
+    {
+      "title": "azza fans power wireing question - Cooling - Linus Tech Tips",
+      "url": "https://linustechtips.com/topic/1136599-azza-fans-power-wireing-question/",
+      "snippet": "Dec 20, 2019 · Hi guys! I've got the AZZA thor case, 2x 120mm fans included (1 back one front) and a rgb controller thingy, not sure …"
+    },
+    {
+      "title": "The PC That Opens Like THIS - Azza Cast - Linus Tech Tips",
+      "url": "https://linustechtips.com/topic/1400950-the-pc-that-opens-like-this-azza-cast/",
+      "snippet": "Jan 3, 2022 · The Azza Cast doesn’t need no stinkin side panel screws – instead it opts for a rather unconventional hinged lid design …"
+    },
+    {
+      "title": "Forenuebersicht | Transfermarkt",
+      "url": "https://www.transfermarkt.de/uebsersicht/index/forum",
+      "snippet": "1 day ago · Gerüchteküche, Vereinsforen & Co.: Diese Übersicht zeigt alle Foren, in denen in der Transfermarkt-Community diskutiert …"
+    },
+    {
+      "title": "価格.com - スズキ アドレス125 のクチコミ掲示板",
+      "url": "https://bbs.kakaku.com/bbs/K0001005986/",
+      "snippet": "Mar 9, 2026 · スズキ アドレス125についての情報を交換するなら、日本最大級の「価格.com クチコミ掲示板」で。交わされる情報 …"
+    }
+  ]
+}

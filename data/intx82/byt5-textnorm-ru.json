@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "intx82/byt5-textnorm-ru",
+  "slug": "intx82-byt5-textnorm-ru",
+  "author": "intx82",
+  "url": "https://huggingface.co/intx82/byt5-textnorm-ru",
+  "created_at": "2026-09-13T20:50:51.000Z",
+  "updated_at": "2026-09-13T21:02:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "transformers",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "byt5",
+    "russian",
+    "text-normalization",
+    "text-to-speech",
+    "tts",
+    "other",
+    "ru",
+    "base_model:google/byt5-small",
+    "base_model:finetune:google/byt5-small",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 299637760,
+  "parameters_human": "299.6M",
+  "storage_bytes": 1198571496,
+  "storage_human": "1.2 GB",
+  "base_model": "google/byt5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Plex Forum",
+      "url": "https://forums.plex.tv/",
+      "snippet": "21 hours ago · Plex Labs Get Perks Downloads Plex Media Server Plex Plexamp Plex Photos Plex Dash Where to Watch Support …"
+    },
+    {
+      "title": "Plex Media Server not opening in Windows 11",
+      "url": "https://forums.plex.tv/t/plex-media-server-not-opening-in-windows-11/935529",
+      "snippet": "Jan 17, 2026 · I installed Plex Server on my PC some years ago and set it up to play/view my locally stored media on my smart TVs. I …"
+    },
+    {
+      "title": "家用NAS影音方案，TV端ds video，plex，kodi，kodi+plex你选哪一个？",
+      "url": "https://www.zhihu.com/question/332758209",
+      "snippet": "Plex是安装在服务器端解码的,如果你的NAS硬解能力足够的话可以试试. 我家目前是使用芝杜Z9S播放视频,字幕什么的都不需要我去操 …"
+    },
+    {
+      "title": "Plex 现在还有哪些能用的插件？ - 知乎",
+      "url": "https://www.zhihu.com/question/582024052",
+      "snippet": "Plex 现在还有哪些能用的插件？ 因为最近刚刚接触 Plex，了解也没有那么深，据说有很多第三方插件被 Plex 停用了？ 因为我最近也 …"
+    },
+    {
+      "title": "Introducing Lists on Plex",
+      "url": "https://forums.plex.tv/t/introducing-lists-on-plex/937170",
+      "snippet": "Mar 16, 2026 · Hey everyone! Got a new feature to announce. LISTS! Lists is a new feature in Plex that allows you to create, …"
+    }
+  ]
+}

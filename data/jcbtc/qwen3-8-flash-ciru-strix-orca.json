@@ -5,7 +5,7 @@
   "author": "jcbtc",
   "url": "https://huggingface.co/jcbtc/Qwen3.8-Flash-CIRU-STRIX-Orca",
   "created_at": "2026-09-09T16:34:46.000Z",
-  "updated_at": "2026-09-10T19:51:38.000Z",
+  "updated_at": "2026-09-14T02:28:18.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -31,13 +31,13 @@
     "license:other",
     "region:us"
   ],
-  "likes": 22,
+  "likes": 23,
   "downloads_30d": 0,
-  "trending_score": 22,
+  "trending_score": 23,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 136937607194,
-  "storage_human": "136.9 GB",
+  "storage_bytes": 137006839182,
+  "storage_human": "137.0 GB",
   "base_model": "orcarouter/Qwen3.8-Flash-Next-Uncensored, Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"

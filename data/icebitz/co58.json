@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "icebitz/co58",
+  "slug": "icebitz-co58",
+  "author": "icebitz",
+  "url": "https://huggingface.co/icebitz/co58",
+  "created_at": "2026-09-11T09:28:23.000Z",
+  "updated_at": "2026-09-14T02:17:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 119711683152,
+  "storage_human": "119.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Агенција за привредне регистре | Почетна",
+      "url": "https://www.apr.gov.rs/",
+      "snippet": "Привредна друштва Претрага привредних друштава Електронска евиденција привредних субјеката у којима Република …"
+    },
+    {
+      "title": "Агенција за привредне регистре | Pretraga podataka",
+      "url": "https://www.apr.gov.rs/registri/privredna-drustva/pretraga-podataka.2022.html",
+      "snippet": "Agencija za privredne registre podatke svojih registara čini javno dostupnim putem internet pretraživača (Google Chrome, Mozilla …"
+    },
+    {
+      "title": "Objedinjena pretraga",
+      "url": "https://pretraga.apr.gov.rs/",
+      "snippet": "Agencija za privredne registre - Objedinjena pretraga You need to enable JavaScript to run this app."
+    },
+    {
+      "title": "Систем за централизовано пријављивање корисника - Агенција за …",
+      "url": "https://sso.apr.gov.rs/IDF/",
+      "snippet": "Some description Напомена: Уколико се први пут пријављујете на систем Агенције за привредне регистре и немате креиран …"
+    },
+    {
+      "title": "Систем за централизовано пријављивање корисника - Агенција за …",
+      "url": "https://sso.apr.gov.rs/SSO/Default.aspx",
+      "snippet": "Региструјте се бесплатно у систему за централизовано пријављивање корисника у било које време. Пријавите се у систем …"
+    }
+  ]
+}

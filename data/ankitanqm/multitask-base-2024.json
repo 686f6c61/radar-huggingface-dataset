@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ankitanqm/multitask-base-2024",
+  "slug": "ankitanqm-multitask-base-2024",
+  "author": "ankitanqm",
+  "url": "https://huggingface.co/ankitanqm/multitask-base-2024",
+  "created_at": "2026-09-13T23:48:02.000Z",
+  "updated_at": "2026-09-13T23:48:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "(修正)(発番)医療機器の製造販売認証申請書の作成に際し留意す ...",
+      "url": "https://www.mhlw.go.jp/file/06-Seisakujouhou-11120000-Iyakushokuhinkyoku/261120kiki112004.pdf",
+      "snippet": "本通知は平成26 年11 月25 日から適用し、旧通知は本通知の適用に伴い廃止します。 なお、 本通知の写しを独立行政法人医薬品医 …"
+    },
+    {
+      "title": "各種関連通知 | 独立行政法人 医薬品医療機器総合機構 - PMDA",
+      "url": "https://www.pmda.go.jp/review-services/drug-reviews/about-reviews/devices/0039.html",
+      "snippet": "医薬品・医療機器・再生医療等製品の承認審査・安全対策・健康被害救済の3つの業務を行う組織。"
+    },
+    {
+      "title": "検索結果:薬食機参発1120第4号 - 山梨県公式ホームページ",
+      "url": "https://www.pref.yamanashi.jp/search/?q=%E8%96%AC%E9%A3%9F%E6%A9%9F%E5%8F%82%E7%99%BA1120%E7%AC%AC4%E5%8F%B7&num=1&sort=day&site=c_all&client=my_frontend&custom-log=screen-id",
+      "snippet": "Feb 6, 2026 · 発1120第1号）及び「医療機器 の製造販売認証申請書の作成に際し留意すべき事項について」（平成26年 11月20日付 …"
+    },
+    {
+      "title": "医療機器の製造販売認証申請書の作成に際し留意すべき事項に ...",
+      "url": "https://www.japal.org/dom/notice/005351.html",
+      "snippet": "医薬品、医療機器等の品質、有効性及び安全性の確保等に関する法律（昭和35年法律第145号）第23条の2の23の規定に基づく医療 …"
+    },
+    {
+      "title": "(発番)医療機器の製造販売承認申請書の作成に際し留意すべき ...",
+      "url": "https://www.mhlw.go.jp/file/06-Seisakujouhou-11120000-Iyakushokuhinkyoku/261120kiki112001.pdf",
+      "snippet": "医療機器の製造販売承認申請の取扱いについては、「医療機器の製造販売承認申請に際し留意すべき事項について」( 平成17 年2 …"
+    }
+  ]
+}

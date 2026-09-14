@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "ANGELOSEGRETO/lunaris-guardv3",
+  "slug": "angelosegreto-lunaris-guardv3",
+  "author": "ANGELOSEGRETO",
+  "url": "https://huggingface.co/ANGELOSEGRETO/lunaris-guardv3",
+  "created_at": "2026-09-13T23:08:49.000Z",
+  "updated_at": "2026-09-13T23:08:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "pt",
+    "es",
+    "fr",
+    "zh",
+    "hi",
+    "ar",
+    "ru",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lunaris_guard",
+    "text-classification",
+    "prompt-injection",
+    "jailbreak-detection",
+    "ai-safety",
+    "guardrails",
+    "rag-security",
+    "tool-use-security",
+    "agent-security",
+    "coding-agents",
+    "mcp-security",
+    "multilingual",
+    "mmbert",
+    "auren-research",
+    "custom_code",
+    "en",
+    "pt",
+    "es",
+    "fr",
+    "zh",
+    "hi",
+    "ar",
+    "ru",
+    "ja",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 306953490,
+  "parameters_human": "307.0M",
+  "storage_bytes": 4945972164,
+  "storage_human": "4.9 GB",
+  "base_model": "jhu-clsp/mmbert-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vocal Mics - Sound On Sound",
+      "url": "https://www.soundonsound.com/techniques/vocal-mics",
+      "snippet": "We began our test with Hugh 'performing' some spoken‑word prose into each mic, as the neutral tone of spoken‑word, and the variety …"
+    },
+    {
+      "title": "Audio-Technica AT2035 & 2050 - Sound On Sound",
+      "url": "https://www.soundonsound.com/reviews/audio-technica-at2035-2050",
+      "snippet": "Industry stalwarts Audio-Technica introduce two new microphones that offer a similar character to their popular AT2020, but with …"
+    },
+    {
+      "title": "API 312 - Sound On Sound",
+      "url": "https://www.soundonsound.com/reviews/api-312",
+      "snippet": "Gain: Transformers & Op‑amps The input transformer in the 312 design unbalances the mic input, of course, but it also provides a lot …"
+    },
+    {
+      "title": "Ribbon Mics On Test",
+      "url": "https://www.soundonsound.com/reviews/ribbon-mics-test",
+      "snippet": "Last month we introduced the mics; this month we put them to the test. Find out which model is the best way of adding ribbon …"
+    },
+    {
+      "title": "Prodipe TT1 - Sound On Sound",
+      "url": "https://www.soundonsound.com/reviews/prodipe-tt1",
+      "snippet": "The TT1 is a mic that Prodipe have developed in conjunction with recording engineer Ludovic Lanen, and as with several of their …"
+    }
+  ]
+}

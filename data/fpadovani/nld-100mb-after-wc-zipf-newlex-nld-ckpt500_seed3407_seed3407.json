@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/nld-100mb-after-wc-zipf-newlex-nld-ckpt500_seed3407_seed3407",
+  "slug": "fpadovani-nld-100mb-after-wc-zipf-newlex-nld-ckpt500_seed3407_seed3407",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/nld-100mb-after-wc-zipf-newlex-nld-ckpt500_seed3407_seed3407",
+  "created_at": "2026-09-13T23:01:28.000Z",
+  "updated_at": "2026-09-14T01:17:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:fpadovani/ppt-wc-zipf-newlex-nld-100mb_seed3407",
+    "base_model:finetune:fpadovani/ppt-wc-zipf-newlex-nld-100mb_seed3407",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 9235303363,
+  "storage_human": "9.2 GB",
+  "base_model": "fpadovani/ppt-wc-zipf-newlex-nld-100mb_seed3407",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to update apps on Android - Google Play Help",
+      "url": "https://support.google.com/googleplay/answer/113412?hl=en",
+      "snippet": "Google Play can use a limited portion of your monthly mobile data to automatically update your apps. Google Play prioritizes app …"
+    },
+    {
+      "title": "Google Play Spiele auf dem PC installieren und einrichten",
+      "url": "https://support.google.com/googleplay/answer/11358888?hl=de",
+      "snippet": "Wenn Ihr PC die Mindestanforderungen erfüllt, können Sie Google Play Spiele auf dem PC installieren. Mit der Installation starten …"
+    },
+    {
+      "title": "如何直接从 Google Play 下载 APK 文件？ - 知乎",
+      "url": "https://www.zhihu.com/question/20232626",
+      "snippet": "酷酷跑 (kukupao.com)，如果你是希望下载google play的游戏的话，强烈推荐这个站。 虽然包不是很全，但是谷歌上的热门游戏全部 …"
+    },
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/question/23849325",
+      "snippet": ""
+    },
+    {
+      "title": "Informationen zu den Erstattungsrichtlinien von Google Play",
+      "url": "https://support.google.com/googleplay/answer/2479637?hl=de",
+      "snippet": "Für einige Käufe, die über das Abrechnungssystem von Google Play getätigt wurden, gewährt Google möglicherweise Erstattungen. …"
+    }
+  ]
+}

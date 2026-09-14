@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mlx-community/sapiens2-normal-1b-bf16",
+  "slug": "mlx-community-sapiens2-normal-1b-bf16",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/sapiens2-normal-1b-bf16",
+  "created_at": "2026-09-13T20:44:35.000Z",
+  "updated_at": "2026-09-13T20:47:10.000Z",
+  "license": "sapiens2-license",
+  "license_family": "unknown",
+  "pipeline_tag": "depth-estimation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "sapiens2",
+    "sapiens",
+    "human-centric",
+    "normal",
+    "bf16",
+    "depth-estimation",
+    "base_model:facebook/sapiens2-normal-1b",
+    "base_model:finetune:facebook/sapiens2-normal-1b",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1539334323,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3078727054,
+  "storage_human": "3.1 GB",
+  "base_model": "facebook/sapiens2-normal-1b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlx-community (MLX Community) - Hugging Face",
+      "url": "https://huggingface.co/mlx-community",
+      "snippet": "A community org for MLX model weights that run on Apple Silicon. This organization hosts ready-to-use models compatible with: mlx-lm - A Python package for LLM ..."
+    },
+    {
+      "title": "MLX",
+      "url": "https://mlx-framework.org/",
+      "snippet": "MLX Whisper - a Python package for speech transcription using OpenAI’s Whisper models. MLX Examples - standalone examples in …"
+    },
+    {
+      "title": "GitHub - ml-explore/mlx: MLX: An array framework for Apple silicon",
+      "url": "https://github.com/ml-explore/mlx",
+      "snippet": "We intend to make it easy for researchers to extend and improve MLX with the goal of quickly exploring new ideas. The design of …"
+    },
+    {
+      "title": "Apple Open Source",
+      "url": "https://opensource.apple.com/projects/mlx/",
+      "snippet": "apple Project MLX About MLX is an array framework designed for efficient and flexible machine learning research on Apple silicon. …"
+    },
+    {
+      "title": "AI Models — Compare LLMs by Intelligence, Price & Speed | SyncDev",
+      "url": "https://www.syncdev.com/models",
+      "snippet": "facebook/sapiens2-pose-1b. facebook. 10.0, —, —, —, —. facebook/sapiens2-pose ... ai-babai/gigachat-audio-mlx-q8-bf16. ai-babai. 5.0, —, —, —, —. aidealab/ ..."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Hayasuki/chucklenet-laughter-detector",
+  "slug": "hayasuki-chucklenet-laughter-detector",
+  "author": "Hayasuki",
+  "url": "https://huggingface.co/Hayasuki/chucklenet-laughter-detector",
+  "created_at": "2026-09-13T08:23:44.000Z",
+  "updated_at": "2026-09-13T23:12:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "chucklenet",
+    "audio-classification",
+    "laughter-detection",
+    "audio",
+    "wavlm",
+    "speech",
+    "affective-computing",
+    "humor",
+    "stand-up-comedy",
+    "custom_code",
+    "base_model:microsoft/wavlm-base",
+    "base_model:finetune:microsoft/wavlm-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 229889,
+  "parameters_human": "229889",
+  "storage_bytes": 920052,
+  "storage_human": "920052 B",
+  "base_model": "microsoft/wavlm-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SWR in der ARD Mediathek",
+      "url": "https://www.ardmediathek.de/swr",
+      "snippet": "Alle Filme, Serien, Dokus, Reportagen und Magazine des Südwestrundfunks (SWR) immer und überall. Jetzt anschauen!"
+    },
+    {
+      "title": "SWR Programm heute - Sendung verpasst - ARD Mediathek",
+      "url": "https://www.ardmediathek.de/swr/programm/heute",
+      "snippet": "Geschafft - was hat es gebracht?"
+    },
+    {
+      "title": "Videos und Livestreams – So siehst du den SWR auf allen Kanälen",
+      "url": "https://www.swr.de/video/index.html",
+      "snippet": "Hier erhälst du einen schnellen Zugang zu den SWR Inhalten in der ARD Mediathek, zum SWR Programmkalender und zu weiteren …"
+    },
+    {
+      "title": "SWR von A-Z - alle Sendungen alphabetisch - ARD Mediathek",
+      "url": "https://www.ardmediathek.de/swr/sendungen-a-bis-z",
+      "snippet": "Wie extrem wird das Wetter, Sven Plöger? #kinderwunsch – einfach schwanger?!"
+    },
+    {
+      "title": "SWR Mediathek - Sendung verpasst?",
+      "url": "https://www.sendungverpasst.de/swr",
+      "snippet": "5 days ago · Alle Videos, Filme und Serien von SWR und den anderen TV-Sendern sofort finden und kostenlos online abrufen - …"
+    }
+  ]
+}

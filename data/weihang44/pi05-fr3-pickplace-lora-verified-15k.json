@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "weihang44/pi05-fr3-pickplace-lora-verified-15k",
+  "slug": "weihang44-pi05-fr3-pickplace-lora-verified-15k",
+  "author": "weihang44",
+  "url": "https://huggingface.co/weihang44/pi05-fr3-pickplace-lora-verified-15k",
+  "created_at": "2026-09-13T20:07:46.000Z",
+  "updated_at": "2026-09-13T20:31:58.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "openpi",
+    "robotics",
+    "vision-language-action",
+    "pi05",
+    "lora",
+    "mujoco",
+    "franka",
+    "simulation",
+    "en",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6343124408,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Central Time Zone - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Central_Time_Zone",
+      "snippet": "The Central Time Zone is a time zone in parts of Canada, the United States, Mexico, Central America, and a few Caribbean Islands. …"
+    },
+    {
+      "title": "Central Standard Time – CST Time Zone - timeanddate.com",
+      "url": "https://www.timeanddate.com/time/zones/cst",
+      "snippet": "Central Standard Time (CST) is the second easternmost time zone in the United States and is also used in Canada. It covers all or …"
+    },
+    {
+      "title": "Central Time",
+      "url": "https://time.is/CT",
+      "snippet": "22 hours ago · Exact time now, time zone, time difference, sunrise/sunset time and key facts for Central Time (CT)."
+    },
+    {
+      "title": "U.S. Time Zones - Live Clocks and Map",
+      "url": "https://www.timezone-map.com/",
+      "snippet": "22 hours ago · The United States spans four standard Time Zones—Eastern, Central, Mountain, and Pacific—each Time Zone is one …"
+    },
+    {
+      "title": "Central Time – CT Time Zone",
+      "url": "https://www.timeanddate.com/time/zones/ct",
+      "snippet": "Central Time (CT) is the second easternmost time zone in the United States and is also used in Canada. About a third of the …"
+    }
+  ]
+}

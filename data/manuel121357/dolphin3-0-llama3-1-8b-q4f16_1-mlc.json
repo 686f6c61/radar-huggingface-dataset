@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "manuel121357/Dolphin3.0-Llama3.1-8B-q4f16_1-MLC",
+  "slug": "manuel121357-dolphin3-0-llama3-1-8b-q4f16_1-mlc",
+  "author": "manuel121357",
+  "url": "https://huggingface.co/manuel121357/Dolphin3.0-Llama3.1-8B-q4f16_1-MLC",
+  "created_at": "2026-09-13T21:54:51.000Z",
+  "updated_at": "2026-09-13T22:32:18.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlc-llm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlc-llm",
+    "web-llm",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:dphn/Dolphin3.0-Llama3.1-8B",
+    "base_model:quantized:dphn/Dolphin3.0-Llama3.1-8B",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4534614970,
+  "storage_human": "4.5 GB",
+  "base_model": "cognitivecomputations/Dolphin3.0-Llama3.1-8B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Disney+ just straight up not working on my PC? : r/DisneyPlus",
+      "url": "https://www.reddit.com/r/DisneyPlus/comments/ewsn8r/disney_just_straight_up_not_working_on_my_pc/",
+      "snippet": "Jan 31, 2020 · I have a similar problem. I’ve watched a few movies now, streaming on my pc, and quite often it glitches and skips …"
+    },
+    {
+      "title": "keine Anmeldung mehr bei disney+ | Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/conversations/tv/keine-anmeldung-mehr-bei-disney/691dba0e04af4c6eeb0192e2",
+      "snippet": "Laut Disney+ muss es die Telekom lösen. Ich habe bei Disney nur Anmeldeten sonst nichts, also keine Adresse keine …"
+    },
+    {
+      "title": "Can I stop Disney Plus from bringing up my profile for ... - Reddit",
+      "url": "https://www.reddit.com/r/DisneyPlus/comments/z5m45j/can_i_stop_disney_plus_from_bringing_up_my/",
+      "snippet": "Nov 27, 2022 · Every time I log into Disney Plus on my TV, my profile pops up with \"Lets update your profile.\" Now, I get that they …"
+    },
+    {
+      "title": "Disney+ täglich neuer login | Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/conversations/tv/disney-t%C3%A4glich-neuer-login/6a72dfc0531cbddc32a06a63",
+      "snippet": "Disney+ täglich neuer login Disney + Disney+ DisneyPlus Disney+ by Telekom Disney Plus MagentaTV Cookie08 vor einem Monat"
+    },
+    {
+      "title": "Cannot activate Disney+ Bundle : r/Hulu - Reddit",
+      "url": "https://www.reddit.com/r/Hulu/comments/ksggnw/cannot_activate_disney_bundle/",
+      "snippet": "Jan 7, 2021 · This is happening to me! I keep going through disney+ click the Hulu link to activate it and it’s a blank white Hulu …"
+    }
+  ]
+}

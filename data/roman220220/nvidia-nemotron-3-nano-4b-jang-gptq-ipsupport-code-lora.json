@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "roman220220/NVIDIA-Nemotron-3-Nano-4B-JANG-GPTQ-ipsupport-code-lora",
+  "slug": "roman220220-nvidia-nemotron-3-nano-4b-jang-gptq-ipsupport-code-lora",
+  "author": "roman220220",
+  "url": "https://huggingface.co/roman220220/NVIDIA-Nemotron-3-Nano-4B-JANG-GPTQ-ipsupport-code-lora",
+  "created_at": "2026-09-13T22:13:23.000Z",
+  "updated_at": "2026-09-14T01:54:07.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "nemotron_h",
+    "quantized",
+    "nemotron",
+    "lora",
+    "tool-calling",
+    "coding-agent",
+    "custom_code",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+    "base_model:adapter:nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3973556832,
+  "parameters_human": "3.97B",
+  "storage_bytes": 7110146360,
+  "storage_human": "7.1 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kosovo - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kosovo",
+      "snippet": "Kosovo, [a] officially the Republic of Kosovo, [b] is a landlocked country in Southeast Europe with partial diplomatic recognition. It is …"
+    },
+    {
+      "title": "Kosovo | History, Map, Flag, Population, Languages, & Capital",
+      "url": "https://www.britannica.com/place/Kosovo",
+      "snippet": "Sep 2, 2026 · In the early 20th century Kosovo was incorporated into Serbia (later part of Yugoslavia). By the second half of the …"
+    },
+    {
+      "title": "History of Kosovo - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/History_of_Kosovo",
+      "snippet": "On 17 February 2008, representatives of the people of Kosovo [1] unilaterally declared Kosovo's independence and subsequently …"
+    },
+    {
+      "title": "Kosovo - Simple English Wikipedia, the free encyclopedia",
+      "url": "https://simple.wikipedia.org/wiki/Kosovo",
+      "snippet": "Until 2008, Kosovo was a part of Serbia. On 17 February 2008, Kosovo declared independence and said it was now a separate …"
+    },
+    {
+      "title": "Kosovo - Wikipedia, la enciclopedia libre",
+      "url": "https://es.wikipedia.org/wiki/Kosovo",
+      "snippet": "Kosovo. Contending Voices on Balkan Interventions, William Joseph Buckley, ed., William B. Eerdmans, Grand Rapids, Míchigan & …"
+    }
+  ]
+}

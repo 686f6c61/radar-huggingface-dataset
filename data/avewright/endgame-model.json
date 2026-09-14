@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "avewright/endgame-model",
+  "slug": "avewright-endgame-model",
+  "author": "avewright",
+  "url": "https://huggingface.co/avewright/endgame-model",
+  "created_at": "2026-09-13T23:41:14.000Z",
+  "updated_at": "2026-09-13T23:41:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "chess",
+    "transformer",
+    "recurrent",
+    "policy",
+    "endgame",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 797737914,
+  "storage_human": "798 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Верблюды на Севере Казахстана - Официальный сайт телеканала …",
+      "url": "https://qyzyljartv.kz/ru/news/41764",
+      "snippet": "Apr 5, 2024 · Верблюды обустроились в Северо-Казахстанской области и раз в два года приносят приплод. …"
+    },
+    {
+      "title": "Верблюды в Казахстане: особенности распространения и …",
+      "url": "https://kazahstangid.ru/verblyudy-v-kazahstane-osobennosti-rasprostraneniya-i-ispolzovaniya/",
+      "snippet": "Feb 26, 2024 · На территории Казахстана можно встретить два вида верблюдов: одногорбых (дромадеров) и двугорбых. …"
+    },
+    {
+      "title": "Верблюды в Казахстане - особенности, распространение, …",
+      "url": "https://kazakhstangid.ru/verblyudy-v-kazahstane/",
+      "snippet": "Северные районы Казахстана также имеют некоторое количество населения верблюдов, но их численность здесь гораздо …"
+    },
+    {
+      "title": "Почему верблюды не живут на севере?",
+      "url": "https://mksegment.ru/a/pochemu-verblyudy-ne-zhivut-na-severe",
+      "snippet": "May 28, 2024 · Это позволяет верблюдам выживать в суровых условиях пустыни, где практически нет других растений. …"
+    },
+    {
+      "title": "Животноводческий атлас Казахстана: верблюжатина",
+      "url": "https://baibolsyn.kz/ru/stati/zhivotnovodcheskij-atlas-kazahstana-verblyuzhatina/",
+      "snippet": "Jan 14, 2025 · Несмотря на относительно небольшую численность верблюдов в Казахстане, верблюдоводство важная …"
+    }
+  ]
+}

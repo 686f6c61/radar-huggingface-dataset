@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "flb-ello/classification-experiments",
+  "slug": "flb-ello-classification-experiments",
+  "author": "flb-ello",
+  "url": "https://huggingface.co/flb-ello/classification-experiments",
+  "created_at": "2026-09-13T20:04:51.000Z",
+  "updated_at": "2026-09-13T20:04:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prove that the set of recursive languages is infinite",
+      "url": "https://cs.stackexchange.com/questions/63442/prove-that-the-set-of-recursive-languages-is-infinite",
+      "snippet": "I know that set of all deciders is countable. I am wondering whether it is infinite.In other words can we prove that the set of recursive …"
+    },
+    {
+      "title": "How much money is 4 0000000000000000000000000000000000p in …",
+      "url": "https://www.answers.com/other-math/How_much_money_is_4_0000000000000000000000000000000000p_in_words",
+      "snippet": "Sep 19, 2023 · Forty decillion p"
+    },
+    {
+      "title": "How big is an NES game? - Answers",
+      "url": "https://www.answers.com/video-games/How_big_is_an_NES_game",
+      "snippet": "Oct 5, 2023 · 900,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,0000000000000000000000000000000000,000,000,000,000,000,000,000,000,000 …"
+    },
+    {
+      "title": "complexity theory - Why is linear programming in P but integer ...",
+      "url": "https://cs.stackexchange.com/questions/40366/why-is-linear-programming-in-p-but-integer-programming-np-hard",
+      "snippet": "Mar 13, 2015 · Linear programming (LP) is in P and integer programming (IP) is NP-hard. But since computers can only manipulate …"
+    },
+    {
+      "title": "What is 40000000000000 called? - Answers",
+      "url": "https://www.answers.com/math-and-arithmetic/What_is_40000000000000_called",
+      "snippet": "Sep 15, 2023 · 40 trillion"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "p4ik/Qwen3.8-Flash-Next-MLX-BEAM-4bit",
+  "slug": "p4ik-qwen3-8-flash-next-mlx-beam-4bit",
+  "author": "p4ik",
+  "url": "https://huggingface.co/p4ik/Qwen3.8-Flash-Next-MLX-BEAM-4bit",
+  "created_at": "2026-09-13T23:49:46.000Z",
+  "updated_at": "2026-09-13T23:56:58.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "beam",
+    "experimental",
+    "mixed-precision",
+    "mixture-of-experts",
+    "apple-silicon",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 182242494611,
+  "parameters_human": "182.24B",
+  "storage_bytes": 106207839707,
+  "storage_human": "106.2 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nahimic - Audio that matters",
+      "url": "https://www.nahimic.com/",
+      "snippet": "Join us We wish to meet passionnate people full of energy and motivations, ready to achieve great challenges to exhalt everyone's …"
+    },
+    {
+      "title": "Updates Archive - Nahimic",
+      "url": "https://www.nahimic.com/updates/",
+      "snippet": "GT72VR 7RE Dominator Pro Vortex G25VR 7RE Z270 GAMING M5"
+    },
+    {
+      "title": "Nahimic for Gamers",
+      "url": "https://www.nahimic.com/gamers/",
+      "snippet": "Nahimic is more than powerful and engaging features, it is a new way of playing Nahimic 2+ Nahimic 3 Surround Sound Immersion in …"
+    },
+    {
+      "title": "Nahimic Solutions",
+      "url": "https://www.nahimic.com/solutions/",
+      "snippet": "Nahimic is ready for... By combining the best of psycho-acoustics, signal processing and audio driver development, we transcribe the …"
+    },
+    {
+      "title": "Speakers ( single solution ) - Nahimic",
+      "url": "https://www.nahimic.com/speakers-single-solution/",
+      "snippet": "By combining the best of psycho-acoustics, signal processing and audio driver development, we transcribe the spatial auditory …"
+    }
+  ]
+}

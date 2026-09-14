@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Eugleo/climbmix-d26-10tpp-noright",
+  "slug": "eugleo-climbmix-d26-10tpp-noright",
+  "author": "Eugleo",
+  "url": "https://huggingface.co/Eugleo/climbmix-d26-10tpp-noright",
+  "created_at": "2026-09-13T21:19:40.000Z",
+  "updated_at": "2026-09-13T21:20:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nanochat_gpt",
+    "text-generation",
+    "nanochat",
+    "pretraining",
+    "climbmix",
+    "political-bias",
+    "exp-088",
+    "custom_code",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 972947456,
+  "parameters_human": "972.9M",
+  "storage_bytes": 1945913144,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "old.reddit.com on reddit.com",
+      "url": "https://www.reddit.com/domain/old.reddit.com/",
+      "snippet": "Reddit gives you the best of the internet in one place. Get a constantly updating feed of breaking news, fun stories, pics, memes, and …"
+    },
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/r/all+/",
+      "snippet": "Create an account to follow your favorite communities and start taking part in conversations."
+    },
+    {
+      "title": "安心：丹麦王室御用，比宜家晚到 10 年，JYSK 凭什么淡定？ - 全域智 …",
+      "url": "https://www.homelifestyle.cn/thread-1257130-1-1.html",
+      "snippet": "Aug 18, 2026 · JYSK 作为 1979 年在丹麦成立的家居品牌，目前已在全球 36 个国家拥有 2200 多家门店，但 2010 年才进入中国 ; 而 …"
+    },
+    {
+      "title": "居适家今年新增175家门店 - 企业动态 - 万叶千家",
+      "url": "https://www.homelifestyle.cn/thread-1291693-1-1.html",
+      "snippet": "Nov 25, 2019 · 全球家居连锁品牌JYSK（品牌中文名：居适家），同时也迎来品牌今年国际扩张进程中的175家门店。 截止到8月底， …"
+    },
+    {
+      "title": "小城生活 - 江阴论坛 - 暨阳社区 - 网络改变江阴",
+      "url": "https://bbs.jysq.net/forum-40-1.html",
+      "snippet": "2 days ago · 更新：天力燃气230个便民充值网点备查 全市电动自行车违法抓拍点位一览 收藏备查！高铁江阴站班次&时刻表 市区新公 …"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "racer102/hal04",
+  "slug": "racer102-hal04",
+  "author": "racer102",
+  "url": "https://huggingface.co/racer102/hal04",
+  "created_at": "2026-09-14T02:19:26.000Z",
+  "updated_at": "2026-09-14T02:19:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3235450896,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The best free VPN in 2026 - TechRadar",
+      "url": "https://www.techradar.com/vpn/best-free-vpn",
+      "snippet": "Below are the five best free VPNs according to our team. They are safe to use and are currently the only free services we recommend."
+    },
+    {
+      "title": "The best VPN service 2026 - TechRadar",
+      "url": "https://www.techradar.com/vpn/best-vpn",
+      "snippet": "NordVPN is the best VPN for most people. It offers a great combination of security, speed and usability. Surfshark and Proton VPN …"
+    },
+    {
+      "title": "Best Free VPN in 2026 (Actually Free, No-Log, Tested)",
+      "url": "https://toolradar.com/blog/best-free-vpns",
+      "snippet": "Jun 10, 2026 · Three free VPNs worth trusting in 2026: no-log policies, real data limits, and the catch you need to know before picking …"
+    },
+    {
+      "title": "Les meilleurs VPN gratuits en 2026 - TechRadar",
+      "url": "https://global.techradar.com/fr-fr/news/meilleur-vpn-gratuit",
+      "snippet": "Aug 23, 2026 · Ne mettez pas vos données en danger en utilisant un VPN risqué. Nous avons passé au crible les fournisseurs de …"
+    },
+    {
+      "title": "Best Free VPN in 2026: 7 Truly Free Picks, Tested",
+      "url": "https://thehightechsociety.com/best-free-vpn/",
+      "snippet": "We tested every major free VPN for 2026. Here are the 7 picks with no-log policies, real data limits, and the catch to know before you …"
+    }
+  ]
+}

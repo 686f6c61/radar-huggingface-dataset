@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "Shankarblr/Llama-3.2-3B-Unsloth-TechWriter-LoRA",
+  "slug": "shankarblr-llama-3-2-3b-unsloth-techwriter-lora",
+  "author": "Shankarblr",
+  "url": "https://huggingface.co/Shankarblr/Llama-3.2-3B-Unsloth-TechWriter-LoRA",
+  "created_at": "2026-09-14T00:02:59.000Z",
+  "updated_at": "2026-09-14T00:21:36.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama-3.2",
+    "unsloth",
+    "qlora",
+    "peft",
+    "lora",
+    "gguf",
+    "semiconductor",
+    "technical-writing",
+    "product-brief",
+    "datasheet",
+    "user-guide",
+    "conversational",
+    "en",
+    "base_model:meta-llama/Llama-3.2-3B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.2-3B-Instruct",
+    "license:llama3.2",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6442738968,
+  "storage_human": "6.4 GB",
+  "base_model": "meta-llama/Llama-3.2-3B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Causal language modeling (teacher-forced eval)",
+      "dataset": "private ChatML SFT mix (10% holdout)",
+      "metric": "Eval loss (epoch 3)",
+      "value": 0.1614
+    },
+    {
+      "task": "Causal language modeling (teacher-forced eval)",
+      "dataset": "private ChatML SFT mix (10% holdout)",
+      "metric": "Eval loss (epoch 2)",
+      "value": 0.1934
+    },
+    {
+      "task": "Causal language modeling (teacher-forced eval)",
+      "dataset": "private ChatML SFT mix (10% holdout)",
+      "metric": "Eval loss (epoch 1)",
+      "value": 0.3627
+    }
+  ],
+  "sources": [
+    {
+      "title": "Active Roster | Minnesota Twins - MLB.com",
+      "url": "https://www.mlb.com/twins/roster/?msockid=2eb01d29276864c536150afd26b96592",
+      "snippet": "Jan 19, 2000 · Twins Roster & Staff Active Depth Chart 40-Man Non-Roster Coaches Transactions ... While not officially part of the …"
+    },
+    {
+      "title": "Official Minnesota Twins Website | MLB.com",
+      "url": "https://www.mlb.com/twins?msockid=2eb01d29276864c536150afd26b96592",
+      "snippet": "The official website of the Minnesota Twins with the most up-to-date information on news, tickets, schedule, stadium, roster, rumors, …"
+    },
+    {
+      "title": "Minnesota Twins MLB Roster - ESPN",
+      "url": "https://www.espn.com/mlb/team/roster/_/name/min/minnesota-twins",
+      "snippet": "Explore the 2026 Minnesota Twins MLB roster on ESPN. Includes full details on pitchers, infielders and outfielders."
+    },
+    {
+      "title": "2026 Minnesota Twins Roster (40-man) | Baseball-Reference.com",
+      "url": "https://www.baseball-reference.com/teams/MIN/2026-roster.shtml",
+      "snippet": "Minnesota Twins latest roster 2026 including full season roster, 40-man roster, coaching staff and more on Baseball-Reference.com"
+    },
+    {
+      "title": "Minnesota Twins Roster 2026 - Sports Illustrated",
+      "url": "https://www.si.com/mlb/twins/roster",
+      "snippet": "View the full Minnesota Twins roster on Sports Illustrated, including all the players in each position, ages and college."
+    }
+  ]
+}

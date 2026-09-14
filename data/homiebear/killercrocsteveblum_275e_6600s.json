@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Homiebear/KillerCrocSteveBlum_275e_6600s",
+  "slug": "homiebear-killercrocsteveblum_275e_6600s",
+  "author": "Homiebear",
+  "url": "https://huggingface.co/Homiebear/KillerCrocSteveBlum_275e_6600s",
+  "created_at": "2026-09-13T22:22:01.000Z",
+  "updated_at": "2026-09-13T22:23:50.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 123663214,
+  "storage_human": "124 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ligue 1+",
+      "url": "https://plus.ligue1.com/section/home",
+      "snippet": "Ligue 1+, c’est l’intégralité des matchs sur une seule plateforme : 9 matchs en direct en exclusivité du vendredi au dimanche, le tout …"
+    },
+    {
+      "title": "Ligue 1+",
+      "url": "https://ligue1.com/fr/offres-ligue1plus",
+      "snippet": "Qu'est-ce que Ligue 1+ ? 2. Quels sont les types d'abonnement disponibles sur Ligue 1+ ? 3. Quel contenu est disponible sur Ligue …"
+    },
+    {
+      "title": "Ligue 1+ Live",
+      "url": "https://plus.ligue1.com/live/289157",
+      "snippet": "Sign in to watch Ligue 1+ live matches and exclusive content on this platform."
+    },
+    {
+      "title": "Comment s’abonner à Ligue 1+ ? Toutes les infos",
+      "url": "https://ligue1.com/fr/articles/l1_article_2937-comment-s-abonner-a-ligue-1-toutes-les-infos",
+      "snippet": "Aug 10, 2026 · Avec Ligue 1+, vous ne manquerez rien de la Ligue 1 McDonald’s ! Le tout avec un traitement éditorial divertissant, …"
+    },
+    {
+      "title": "Regarder Ligue 1+ en Direct Live | DAZN FR",
+      "url": "https://www.dazn.com/fr-FR/competition/Competition:dm5ka0os1e3dxcp3vh05kmp33",
+      "snippet": "Regardez Ligue 1+ en direct et sur demande sur DAZN FR, en HD et sur n'importe quel appareil. Inscrivez-vous aujourd'hui."
+    }
+  ]
+}

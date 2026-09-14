@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dyjackson/hw2-retrieval",
+  "slug": "dyjackson-hw2-retrieval",
+  "author": "dyjackson",
+  "url": "https://huggingface.co/dyjackson/hw2-retrieval",
+  "created_at": "2026-09-13T21:14:47.000Z",
+  "updated_at": "2026-09-13T21:14:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Are there any reliable sources about role popularity?",
+      "url": "https://www.reddit.com/r/leagueoflegends/comments/igj056/are_there_any_reliable_sources_about_role/",
+      "snippet": "Last week I saw someone say top is the second most popular role (after mid of course). They didn't respond to a reply comment that …"
+    },
+    {
+      "title": "Suggested Websites for Hotel Bookings by Trivago Safe?",
+      "url": "https://www.reddit.com/r/Shoestring/comments/em7sk0/suggested_websites_for_hotel_bookings_by_trivago/",
+      "snippet": "Jan 9, 2020 · It did help alot and booking.com and Agoda are my first websites to go to all the time. However, Trivago isn't itself a …"
+    },
+    {
+      "title": "Comment ça fonctionne League of Graphs ? sur le forum League of …",
+      "url": "https://www.jeuxvideo.com/forums/42-19163-63439690-1-0-1-0-comment-ca-fonctionne-league-of-graphs.htm",
+      "snippet": "Jun 22, 2020 · J'aime bien aller sur League of Graphs pour suivre mon Rang EUW (ça sert à rien, à part faire gonfler le e-penis). …"
+    },
+    {
+      "title": "How does leagueofgraphs rank players exactly? : r/leagueoflegends",
+      "url": "https://www.reddit.com/r/leagueoflegends/comments/iuh74g/how_does_leagueofgraphs_rank_players_exactly/",
+      "snippet": "Sep 17, 2020 · Most of these players average score and farm are above yours, and the higher your rank the more biased the system …"
+    },
+    {
+      "title": "Welcome to the League of Draven - Reddit",
+      "url": "https://www.reddit.com/r/Draven/",
+      "snippet": "I understand that popular champs are the ones to get the legendary skins but it's draven not popular? He's arguably one of the most …"
+    }
+  ]
+}

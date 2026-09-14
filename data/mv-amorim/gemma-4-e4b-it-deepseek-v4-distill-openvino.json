@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mv-amorim/Gemma-4-E4B-it-DeepSeek-v4-Distill-openvino",
+  "slug": "mv-amorim-gemma-4-e4b-it-deepseek-v4-distill-openvino",
+  "author": "mv-amorim",
+  "url": "https://huggingface.co/mv-amorim/Gemma-4-E4B-it-DeepSeek-v4-Distill-openvino",
+  "created_at": "2026-09-14T00:41:53.000Z",
+  "updated_at": "2026-09-14T00:44:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "openvino",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "openvino-export",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:armand0e/Gemma-4-E4B-it-DeepSeek-v4-Distill",
+    "base_model:finetune:armand0e/Gemma-4-E4B-it-DeepSeek-v4-Distill",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10556969119,
+  "storage_human": "10.6 GB",
+  "base_model": "armand0e/Gemma-4-E4B-it-DeepSeek-v4-Distill",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MV Agusta - MV Agusta - Motorcycle Shop - Italian Motorcycle",
+      "url": "https://www.mvagusta.com/fr",
+      "snippet": "MV Agusta is all about crafting motorcycle art since 1945. Each motorcycle is handcrafted and assembled by expert and passionate …"
+    },
+    {
+      "title": "MV — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/MV",
+      "snippet": "mv (en référence au terme anglais move, déplacer), le nom d'une commande UNIX en informatique ; Maldives, selon la liste des …"
+    },
+    {
+      "title": "MV Agusta - MV Agusta - Magasin de motos - Motos italiennes",
+      "url": "https://www.mvagusta.com/fr/fr/",
+      "snippet": "La première moto Supersport de taille moyenne avec un vilebrequin contra-rotatif. Son allure impressionnante s’inspire de l’héritage …"
+    },
+    {
+      "title": "MV Agusta — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/MV_Agusta",
+      "snippet": "MV Agusta (Meccanica Verghera Agusta S.p.A.) est une marque de motos italienne créée en 1945 par Domenico Agusta à Verghera, …"
+    },
+    {
+      "title": "Annonces deux roues d'occasion MV-AGUSTA - leboncoin",
+      "url": "https://www.leboncoin.fr/c/motos/u_moto_brand:MV-AGUSTA",
+      "snippet": "Toutes nos Annonces deux roues d'occasion MV-AGUSTA . Consultez nos annonces de particuliers et professionnels sur leboncoin"
+    }
+  ]
+}

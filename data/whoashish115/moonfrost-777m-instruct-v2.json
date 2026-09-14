@@ -1,0 +1,120 @@
+{
+  "schema": 1,
+  "id": "whoashish115/Moonfrost-777M-Instruct-v2",
+  "slug": "whoashish115-moonfrost-777m-instruct-v2",
+  "author": "whoashish115",
+  "url": "https://huggingface.co/whoashish115/Moonfrost-777M-Instruct-v2",
+  "created_at": "2026-09-13T03:52:46.000Z",
+  "updated_at": "2026-09-14T00:41:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "moonfrost",
+    "text-generation",
+    "deepseek",
+    "mixture-of-experts",
+    "moe",
+    "multi-head-latent-attention",
+    "from-scratch",
+    "small-language-model",
+    "instruct",
+    "conversational",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceTB/smol-smoltalk",
+    "dataset:whoashish115/Moonfrost-Persona-SFT",
+    "base_model:whoashish115/Moonfrost-777M",
+    "base_model:finetune:whoashish115/Moonfrost-777M",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 32,
+  "trending_score": 0,
+  "parameters": 777229056,
+  "parameters_human": "777.2M",
+  "storage_bytes": 1554977695,
+  "storage_human": "1.6 GB",
+  "base_model": "whoashish115/Moonfrost-777M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Multiple-choice science questions",
+      "dataset": "ARC-Easy",
+      "metric": "accuracy (5-shot, 250 examples)",
+      "value": 44.4
+    },
+    {
+      "task": "Multiple-choice science questions",
+      "dataset": "ARC-Challenge",
+      "metric": "accuracy (5-shot, 250 examples)",
+      "value": 24.4
+    },
+    {
+      "task": "Commonsense sentence completion",
+      "dataset": "HellaSwag",
+      "metric": "accuracy (5-shot, 250 examples)",
+      "value": 37.2
+    },
+    {
+      "task": "Pronoun coreference",
+      "dataset": "WinoGrande",
+      "metric": "accuracy (5-shot, 250 examples)",
+      "value": 54
+    },
+    {
+      "task": "Yes/no reading comprehension",
+      "dataset": "BoolQ",
+      "metric": "accuracy (5-shot, 250 examples)",
+      "value": 58.8
+    },
+    {
+      "task": "Multitask knowledge",
+      "dataset": "MMLU",
+      "metric": "accuracy (5-shot, 250 examples)",
+      "value": 30.8
+    }
+  ],
+  "sources": [
+    {
+      "title": "Community Center - Airbnb Community",
+      "url": "https://community.withairbnb.com/t5/Community-Center/ct-p/community-center",
+      "snippet": "Have you tried Airbnb’s Co-Host Network? Hello hosts! Wishing you all a wonderful Wednesday! Co-hosting is one of the topics that …"
+    },
+    {
+      "title": "Solucionado: CIF Airbnb España - Airbnb Community",
+      "url": "https://community.withairbnb.com/t5/Gestiona-tu-negocio/CIF-Airbnb-Espa%C3%B1a/m-p/2104403",
+      "snippet": "May 16, 2025 · Buenos días, me están haciendo la declaración de la renta y me piden el CIF de Airbnb para rellenarla, ya que el que …"
+    },
+    {
+      "title": "Airbnb 怎么读？ - 知乎",
+      "url": "https://www.zhihu.com/question/34684619",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "如何评价 Airbnb 的新标志「Bélo」？ - 知乎",
+      "url": "https://www.zhihu.com/question/24511866",
+      "snippet": "对于LOGO设计方面，我不太专业，但是我觉得Airbnb给这个标志带来了太多的扩展性，而丰富的扩展性，也和分享的这种精神不约而 …"
+    },
+    {
+      "title": "Guide : Comment contacter Airbnb - Airbnb Community",
+      "url": "https://community.withairbnb.com/t5/Aide/Guide-Comment-contacter-Airbnb/m-p/16456",
+      "snippet": "Jan 9, 2016 · C’est la question que beaucoup se posent sur la communauté. Ci-dessous vous trouverez comment rentrer en contact …"
+    }
+  ]
+}

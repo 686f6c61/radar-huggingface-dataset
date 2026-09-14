@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "axiomofmind/Dark-Clownius-9B",
+  "slug": "axiomofmind-dark-clownius-9b",
+  "author": "axiomofmind",
+  "url": "https://huggingface.co/axiomofmind/Dark-Clownius-9B",
+  "created_at": "2026-09-13T18:36:28.000Z",
+  "updated_at": "2026-09-13T19:52:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.5",
+    "llama.cpp",
+    "conversational",
+    "humor",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 44119666029,
+  "storage_human": "44.1 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Android Apps on Google Play",
+      "url": "https://play.google.com/",
+      "snippet": "Get a sports equipment kit, period-proof outfit, a stylish sloth, a pet dog with matching dog-and-owner outfits, and more! A …"
+    },
+    {
+      "title": "Google Play",
+      "url": "https://play.google.com/store/apps/collection/topselling_free?hl=en",
+      "snippet": "Privacy About Google Play Developers Google Store United States (English (United States))"
+    },
+    {
+      "title": "Google Play Store Download Android APK Free - 53.0.27 | TechSpot",
+      "url": "https://www.techspot.com/downloads/6105-google-play-store.html",
+      "snippet": "3 days ago · Google Play Store is the official marketplace for Android apps and games. It lets you discover and install software, …"
+    },
+    {
+      "title": "Google Play",
+      "url": "https://accounts.google.com/InteractiveLogin?service=sj",
+      "snippet": "Google Play gives you one place to find, enjoy, & share Apps, Music, Movies & Books - instantly anywhere across the web & android …"
+    },
+    {
+      "title": "Download Google Play Store (free) for Android, APK and Web App",
+      "url": "https://kotaku.com/download/google-playstore",
+      "snippet": "4 days ago · The Google Play Store is the primary place for Android users to download apps, games, books, tools, and other content …"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "myva/NectarSetup",
+  "slug": "myva-nectarsetup",
+  "author": "myva",
+  "url": "https://huggingface.co/myva/NectarSetup",
+  "created_at": "2026-05-18T03:04:29.000Z",
+  "updated_at": "2026-09-13T19:39:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17706536029,
+  "storage_human": "17.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "95er-Forum Fortuna Düsseldorf",
+      "url": "https://www.95erforum.de/forum/",
+      "snippet": "Jul 10, 2011 · 95er-Forum Fortuna Düsseldorf Von Fans für Fans | Gemeinsam für Fortuna"
+    },
+    {
+      "title": "Allgemeine Fragen rund ums Forum - 95er-Forum Fortuna Düsseldorf",
+      "url": "https://www.95erforum.de/forum/index.php?thread/278-allgemeine-fragen-rund-ums-forum/",
+      "snippet": "An wen muß ich mich hier per PN wenden, damit meine Postings vorab auf Topic- und Massenkonformität hin geprüft werden …"
+    },
+    {
+      "title": "Fortuna - Koniec z punktami FKP, przechodzimy na freebety",
+      "url": "https://forum.bukmacherskie.com/threads/fortuna-koniec-z-punktami-fkp-przechodzimy-na-freebety.173254/",
+      "snippet": "Chcielibyśmy poinformować Was o zmianach w naszym systemie bonusowym, które wejdą w życie od lutego 2025 roku. Z dniem 1 …"
+    },
+    {
+      "title": "Fortuna - błąd SSL | Forum Bukmacherskie",
+      "url": "https://forum.bukmacherskie.com/threads/fortuna-b%C5%82%C4%85d-ssl.111252/",
+      "snippet": "Witam chciałem sobie wejść na stronę Fortuny a tu takie coś: Myślę sobie pewnie chwilowe, no tylko że od 5 dni jest to samo. No to …"
+    },
+    {
+      "title": "The Independent Video Game Community - GBAtemp.net",
+      "url": "https://gbatemp.net/download/esr-disc-patcher.7597/",
+      "snippet": "Oct 21, 2009 · Go to download Author Author Sao Mortel Creation date Creation dateOct 21, 2009 Overview History Author Sao …"
+    }
+  ]
+}

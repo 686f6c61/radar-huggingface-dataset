@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "arpicato/qwen38-27b-hca-checkpoints",
+  "slug": "arpicato-qwen38-27b-hca-checkpoints",
+  "author": "arpicato",
+  "url": "https://huggingface.co/arpicato/qwen38-27b-hca-checkpoints",
+  "created_at": "2026-09-12T04:14:42.000Z",
+  "updated_at": "2026-09-14T00:42:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 181061220126,
+  "storage_human": "181.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "आज का राशिफल (Aaj Ka Rashifal) - 13 सितंबर 2026",
+      "url": "https://www.livehindustan.com/astrology/rashifal",
+      "snippet": "1 day ago · Aaj Ka Rashifal रविवार 13 सितंबर 2026: जानें सभी 12 राशियों मेष, वृषभ, मिथुन, कर्क, सिंह, कन्या, तुला, वृश्चिक, धनु, …"
+    },
+    {
+      "title": "Aaj ka Rashifal (आज का राशिफल): Daily Horoscope in Hindi, Today ...",
+      "url": "https://www.lokmatnews.in/topics/daily-horoscope/",
+      "snippet": "1 day ago · आज का राशिफल FOLLOW Daily horoscope, Latest Hindi News राशिफल से विभिन्न 12 राशियों के जातकों के भविष्य से …"
+    },
+    {
+      "title": "Aaj Ka Rashifal (आज का राशिफल): Daily Rashifal, Today's Rashifal, …",
+      "url": "https://www.abplive.com/astro/horoscope",
+      "snippet": "22 hours ago · Aaj Ka Rashifal (आज का राशिफल)- Get Today's Rashifal In Hindi, Daily Rashifal, Dainik Rashifal today horoscope in …"
+    },
+    {
+      "title": "आज का राशिफल — सभी 12 राशियों का दैनिक फल | GrahAI",
+      "url": "https://www.grahai.com/hi/rashifal",
+      "snippet": "आज का राशिफल बारहों राशियों का दैनिक फल — नीचे की तालिका आज के आकाश से बनी है, इसलिए सबसे प्रबल राशि ऊपर है। अपनी …"
+    },
+    {
+      "title": "दैनिक राशिफल, भविष्यफल & वैदिक ज्योतिष - राशिडेली",
+      "url": "https://rashidaily.com/hindi",
+      "snippet": "वैदिक ज्योतिष आधारित दैनिक राशिफल पढ़ें। सभी 12 राशियों के लिए प्रेम, करियर, स्वास्थ्य, धन, लकी नंबर, शुभ रंग, सरल उपाय …"
+    }
+  ]
+}

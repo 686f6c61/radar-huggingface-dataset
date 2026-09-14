@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "turboderp/Huihui-Qwen3.8-27B-abliterated-exl3",
+  "slug": "turboderp-huihui-qwen3-8-27b-abliterated-exl3",
+  "author": "turboderp",
+  "url": "https://huggingface.co/turboderp/Huihui-Qwen3.8-27B-abliterated-exl3",
+  "created_at": "2026-09-13T23:05:00.000Z",
+  "updated_at": "2026-09-13T23:07:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "exl3",
+    "base_model:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16471563834,
+  "storage_human": "16.5 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "7 Best AI Photo Editors 2026 (50 AI Image Editors Ranked)",
+      "url": "https://contentmavericks.com/best-ai-photo-editor/",
+      "snippet": "Sep 1, 2026 · Today there are 234 different AI photo editors. We spent 127 hours comparing the top 50 to find the seven best you can …"
+    },
+    {
+      "title": "10 Best AI Photo Editors 2026: Tested, Ranked & Reviewed",
+      "url": "https://www.mobileappdaily.com/products/best-ai-photo-editors",
+      "snippet": "1 day ago · Discover the 10 best AI photo editors of 2026! We tested and ranked the top tools for AI-powered photo editing, …"
+    },
+    {
+      "title": "Best AI Photo Editor 2026: 7 Tools for Real Results",
+      "url": "https://openart.ai/blog/best-ai-photo-editor/?msockid=2ca17ff9099963c904bd682d084762eb",
+      "snippet": "Aug 26, 2026 · Compare 7 AI photo editors for realistic corrections, background swaps, and face fixes. Try OpenArt free with 40 …"
+    },
+    {
+      "title": "10 Best AI Photo Editors in 2026: Free, Paid, Online and App",
+      "url": "https://www.photogrid.app/blog/best-ai-photo-editor/",
+      "snippet": "Apr 3, 2026 · Find the best AI photo editor for everyday users and professionals. Free picks, no watermark, online tools, and app …"
+    },
+    {
+      "title": "10 Best AI Image Editors in 2026 (Tested With Real Photos)",
+      "url": "https://piktochart.com/blog/best-ai-image-editors/",
+      "snippet": "May 15, 2026 · We spent weeks testing 10 of the top-rated options so you can skip the learning curve and pick the right tool for your …"
+    }
+  ]
+}

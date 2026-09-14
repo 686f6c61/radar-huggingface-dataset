@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "PYTHAI/granite-4.2-3b-fork",
+  "slug": "pythai-granite-4-2-3b-fork",
+  "author": "PYTHAI",
+  "url": "https://huggingface.co/PYTHAI/granite-4.2-3b-fork",
+  "created_at": "2026-09-13T23:57:38.000Z",
+  "updated_at": "2026-09-13T23:58:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "pt",
+    "ar",
+    "cs",
+    "it",
+    "ko",
+    "nl",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "granite",
+    "text-generation",
+    "granite-4.2",
+    "reasoning",
+    "thinking",
+    "tool-calling",
+    "ibm",
+    "conversational",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "pt",
+    "ar",
+    "cs",
+    "it",
+    "ko",
+    "nl",
+    "zh",
+    "base_model:ibm-granite/granite-4.1-3b-base",
+    "base_model:finetune:ibm-granite/granite-4.1-3b-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "ibm-granite/granite-4.1-3b-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Patreon",
+      "url": "https://www.patreon.com/overview/join",
+      "snippet": "Patreon is empowering a new generation of creators. Support and engage with artists and creators as they live out their passions!"
+    },
+    {
+      "title": "Explore creators on Patreon",
+      "url": "https://www.patreon.com/explore",
+      "snippet": "Discover creators on Patreon. Join your favorite communities, engage with other fans, and explore the top free and paid posts."
+    },
+    {
+      "title": "Log in or sign up | Patreon",
+      "url": "https://privacy.patreon.com/login/",
+      "snippet": "Patreon is empowering a new generation of creators. Support and engage with artists and creators as they live out their passions!"
+    },
+    {
+      "title": "Patreon - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Patreon",
+      "snippet": "Patreon (/ ˈpeɪtriɒn /, /- ən /) is an American monetization platform operated by Patreon, Inc.. The Patreon platform allows users to …"
+    },
+    {
+      "title": "Patreon - Google Play'de Uygulamalar",
+      "url": "https://play.google.com/store/apps/details?id=com.patreon.android&hl=tr",
+      "snippet": "Patreon, ilgi duyduğunuz her şeye tam anlamıyla dalabileceğiniz yerdir. Yüz binlerce podcast yayıncısı, video yapımcısı, sanatçı, …"
+    }
+  ]
+}

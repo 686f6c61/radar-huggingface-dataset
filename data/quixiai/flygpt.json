@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "QuixiAI/FlyGPT",
+  "slug": "quixiai-flygpt",
+  "author": "QuixiAI",
+  "url": "https://huggingface.co/QuixiAI/FlyGPT",
+  "created_at": "2026-09-14T00:55:20.000Z",
+  "updated_at": "2026-09-14T02:10:30.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "flygpt",
+    "text-generation",
+    "connectome",
+    "fruit-fly",
+    "drosophila",
+    "malecns",
+    "recurrent",
+    "sparse",
+    "tiny-shakespeare",
+    "custom_code",
+    "en",
+    "dataset:karpathy/tiny_shakespeare",
+    "base_model:QuixiAI/MaleCNS",
+    "base_model:finetune:QuixiAI/MaleCNS",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2156937,
+  "parameters_human": "2.2M",
+  "storage_bytes": 59964880,
+  "storage_human": "60 MB",
+  "base_model": "QuixiAI/MaleCNS",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "polosedan.ru",
+      "url": "https://polosedan.ru/forum/r.php",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "525+ Private Clubhouse Rooms List 2026 [UPDATED]",
+      "url": "https://myinvitelink.com/private-clubhouse-rooms-list/",
+      "snippet": "Apr 3, 2025 · Private Clubhouse Rooms List for everyone to meet with people from different corners of the world, make new friends …"
+    },
+    {
+      "title": "Meet Clubhouse, the voice-only social media app setting the internet …",
+      "url": "https://theconversation.com/meet-clubhouse-the-voice-only-social-media-app-setting-the-internet-abuzz-154066",
+      "snippet": "Feb 1, 2021 · Clubhouse offers a rare experience of spontaneity and intimacy online. But as the new social platform grows, it may …"
+    },
+    {
+      "title": "clubhouse private invite only clubs Crossword Clue",
+      "url": "https://www.wordplays.com/crossword-solver/clubhouse-private-invite-only-clubs",
+      "snippet": "Answers for clubhouse private invite only clubs crossword clue, 5 letters. Search for crossword clues found in the Daily Celebrity, NY …"
+    },
+    {
+      "title": "How to use the Clubhouse app on iPhone: A beginner’s guide",
+      "url": "https://www.igeeksblog.com/how-to-use-clubhouse-app-on-iphone/",
+      "snippet": "Sep 7, 2026 · A beginner's guide to Clubhouse on iPhone: getting an invite, building your profile, joining rooms and clubs, and the …"
+    }
+  ]
+}

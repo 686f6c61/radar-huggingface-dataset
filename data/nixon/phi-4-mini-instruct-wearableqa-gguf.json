@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Nixon/Phi-4-mini-instruct-WearableQA-GGUF",
+  "slug": "nixon-phi-4-mini-instruct-wearableqa-gguf",
+  "author": "Nixon",
+  "url": "https://huggingface.co/Nixon/Phi-4-mini-instruct-WearableQA-GGUF",
+  "created_at": "2026-09-13T21:05:17.000Z",
+  "updated_at": "2026-09-13T21:43:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "imatrix",
+    "quantization",
+    "wearable-qa",
+    "health-reasoning",
+    "phi-4",
+    "text-generation",
+    "en",
+    "dataset:facebook/WearableQA",
+    "base_model:microsoft/Phi-4-mini-instruct",
+    "base_model:quantized:microsoft/Phi-4-mini-instruct",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3836021856,
+  "parameters_human": "3.84B",
+  "storage_bytes": 12127370656,
+  "storage_human": "12.1 GB",
+  "base_model": "microsoft/Phi-4-mini-instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Richard Nixon — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Richard_Nixon",
+      "snippet": "C'est le premier président des États-Unis né dans l' Ouest américain. Ses parents sont Hannah Elizabeth Nixon née Milhous (1885 …"
+    },
+    {
+      "title": "Richard Nixon - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Richard_Nixon",
+      "snippet": "Nixon's second term ended early when he became the only U.S. president to resign from office, as a result of the Watergate scandal. …"
+    },
+    {
+      "title": "all – Nixon EU",
+      "url": "https://fr.nixon.com/collections/all",
+      "snippet": "Les montres et accessoires pour hommes et femmes de Nixon, conçus en équipe et fabriqués sur mesure, enrichissent la vie sans …"
+    },
+    {
+      "title": "Nixon US | Watches for Men & Women | Team-Designed, Custom-Built",
+      "url": "https://www.nixon.com/",
+      "snippet": "Nixon is the go-to accessories shop for premium watches and much more. Through a wide range of quality timepieces, from analog …"
+    },
+    {
+      "title": "Présidence de Richard Nixon — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Pr%C3%A9sidence_de_Richard_Nixon",
+      "snippet": ""
+    }
+  ]
+}

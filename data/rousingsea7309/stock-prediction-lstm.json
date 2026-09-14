@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "RousingSea7309/stock-prediction-lstm",
+  "slug": "rousingsea7309-stock-prediction-lstm",
+  "author": "RousingSea7309",
+  "url": "https://huggingface.co/RousingSea7309/stock-prediction-lstm",
+  "created_at": "2026-09-13T21:46:16.000Z",
+  "updated_at": "2026-09-13T21:46:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "stock-prediction",
+    "lstm",
+    "time-series",
+    "financial-ml",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5077403,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "My.canalbox.africa changer le mot de passe - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-35389959-my-canalbox-africa-changer-le-mot-de-passe",
+      "snippet": "May 30, 2018 · My.canalbox.africa changer le mot de passe Résolu Mot de passe Wifi Box Canal Password Thierry973 - Modifié le …"
+    },
+    {
+      "title": "Comment avoir canal plus à deux endroits différents",
+      "url": "https://forums.commentcamarche.net/forum/affich-26392829-comment-avoir-canal-plus-a-deux-endroits-differents",
+      "snippet": "Nov 4, 2012 · Bonjour, je voudrai savoir s'il est possible de profiter de canal plus à deux endroit différent avec un seul code …"
+    },
+    {
+      "title": "livraison d'un nouveau décodeur - Avec Réponse (s)",
+      "url": "https://assistance.canalplus.com/questions/2071408-livraison-nouveau-decodeur",
+      "snippet": "Aug 27, 2019 · Bonjour,J'étais en ligne avec un technicien pour installer mon nouveau décodeur, s'agit-il d'une mauvaise manoeuvre …"
+    },
+    {
+      "title": "je ne dispose pas de toutes les chaines - Avec Réponse (s)",
+      "url": "https://assistance.canalplus.com/questions/2182941-dispose-chaines",
+      "snippet": "Mourad39521023 Niveau 0 2/ 100 points Nom de l'auteur Mourad39521023 utilisateur Publié le 21 décembre 2019 Nombre de …"
+    },
+    {
+      "title": "Masquer l'accès à ma box wifi canal box - Box Internet",
+      "url": "https://forums.commentcamarche.net/forum/affich-38274649-masquer-l-acces-a-ma-box-wifi-canal-box",
+      "snippet": "Mar 5, 2026 · Bonsoir, Pour masquer l'accès à ta WiFi Canalbox, tu peux cacher le SSID (nom du réseau) via l'interface de gestion …"
+    }
+  ]
+}

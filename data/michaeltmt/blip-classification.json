@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "MichaelTmt/blip-classification",
+  "slug": "michaeltmt-blip-classification",
+  "author": "MichaelTmt",
+  "url": "https://huggingface.co/MichaelTmt/blip-classification",
+  "created_at": "2026-09-13T21:11:47.000Z",
+  "updated_at": "2026-09-13T21:11:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiveTennis.it | Il Portale italiano del Tennis",
+      "url": "https://www.livetennis.it/",
+      "snippet": "Sep 20, 2012 · Il portale italiano sul tennis, con news, risultati e informazioni in continuo aggiornamento, con un occhio di riguardo al …"
+    },
+    {
+      "title": "Betting - Angolo dei pronostici | LiveTennis.it",
+      "url": "https://www.livetennis.it/betting/",
+      "snippet": "Il sito italiano sul tennis, con news, risultati e informazioni in continuo aggiornamento, un occhio di riguardo al tennis e ai tennisti italiani."
+    },
+    {
+      "title": "urdu - WordReference Forums",
+      "url": "https://forum.wordreference.com/tags/urdu/",
+      "snippet": "Aug 1, 2026 · Context: He was at a loss for words when his name was announced for the award. Question: What expressions could …"
+    },
+    {
+      "title": "abertura das vogais nas formas verbais | WordReference Forums",
+      "url": "https://forum.wordreference.com/threads/abertura-das-vogais-nas-formas-verbais.3574663/",
+      "snippet": "May 9, 2019 · Olá gente, Uma das dificuldades do português é que na escrita não se distingue entre as vogais abertas (é ó), e as …"
+    },
+    {
+      "title": "Ranking Live Atp | Classifica live Atp | LiveTennis.it",
+      "url": "https://www.livetennis.it/rankinglive/",
+      "snippet": "Il portale italiano sul tennis, con news, risultati e informazioni in continuo aggiornamento, con un occhio di riguardo al tennis e ai …"
+    }
+  ]
+}

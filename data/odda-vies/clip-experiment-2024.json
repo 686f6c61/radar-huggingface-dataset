@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Odda-vies/clip-experiment-2024",
+  "slug": "odda-vies-clip-experiment-2024",
+  "author": "Odda-vies",
+  "url": "https://huggingface.co/Odda-vies/clip-experiment-2024",
+  "created_at": "2026-09-13T20:28:39.000Z",
+  "updated_at": "2026-09-13T20:28:45.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil | Académie de Bordeaux",
+      "url": "https://www.ac-bordeaux.fr/",
+      "snippet": "Ouvert et adapté à l’ensemble des personnels de l'académie de Bordeaux, le site intranet est l'outil qui facilite votre quotidien …"
+    },
+    {
+      "title": "Convergence - ac-bordeaux.fr",
+      "url": "http://courrier.ac-bordeaux.fr/iwc/",
+      "snippet": "Convergence Mot de passe oublié"
+    },
+    {
+      "title": "Authentification - Chargement des Informations de Session",
+      "url": "https://arena.ac-bordeaux.fr/",
+      "snippet": "Chargement des informations de session de connexion depuis le navigateur..."
+    },
+    {
+      "title": "Tous les Résultats | Académie de Bordeaux",
+      "url": "https://www.ac-bordeaux.fr/tous-les-resultats-122010",
+      "snippet": "Jul 7, 2026 · Diplôme d'État d'Éducateur Spécialisé (DEES-VAE) ... Diplôme d'Expert en Automobile (DEA) ... Contacts Direction des …"
+    },
+    {
+      "title": "Académie de Bordeaux | Ministère de l'Education nationale",
+      "url": "https://www.education.gouv.fr/academie-de-bordeaux-467839",
+      "snippet": "Dec 3, 2025 · L'académie de Bordeaux fait partie de la région académique Nouvelle-Aquitaine. Consultez les coordonnées de …"
+    }
+  ]
+}

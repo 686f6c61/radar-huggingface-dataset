@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "lair-nyu/yor_icl_pi05_canonical_warmstart_baseline-step10000",
+  "slug": "lair-nyu-yor_icl_pi05_canonical_warmstart_baseline-step10000",
+  "author": "lair-nyu",
+  "url": "https://huggingface.co/lair-nyu/yor_icl_pi05_canonical_warmstart_baseline-step10000",
+  "created_at": "2026-09-13T22:35:34.000Z",
+  "updated_at": "2026-09-13T22:37:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12441839766,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Elkheta - منصة الخطة",
+      "url": "https://elkheta.com/",
+      "snippet": "منصة الخطة .. المنصة التعليمية المتكاملة رقم 1 فى مصر بنوفر لك شرح مبسط - جدول مذاكرة - مشرف بيتابعك - وكل اللى انت محتاجه عشان تتفوق فى دراستك .. سجل دلوقتى واعرف باقي المميزات."
+    },
+    {
+      "title": "منصة الخطة - Elkheta",
+      "url": "https://elkheta.com/login",
+      "snippet": "ادخل على حسابك في منصة الخطة ، وكمل مذاكرتك بأعلى جودة شرح ، مع الجدول اللي متظبط ليك."
+    },
+    {
+      "title": "الخطة - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.elkheta&hl=ar",
+      "snippet": "يبدأ الحفاظ على أمان بياناتك بفهم الطريقة التي يتّبعها مطوِّرو التطبيقات لجمع بياناتك ومشاركتها. قد تختلف خصوصية البيانات وممارسات الأمان حسب كيفية استخدامك للتطبيق ومنطقتك وعمرك. يوفّر …"
+    },
+    {
+      "title": "منصة الخطة إعدادي - Elkheta - Facebook",
+      "url": "https://www.facebook.com/elkheta.middle/",
+      "snippet": "منصة الخطة بتوفرلك أفضل نظام مذاكرة اون لاين \"أولى إعدادي - تانية إعدادي -..."
+    },
+    {
+      "title": "منصة الخطة إبتدائي - Elkheta - Facebook",
+      "url": "https://www.facebook.com/khetaprimary/",
+      "snippet": "مع منصة الخطة الطالب بيلاقي نظام يساعده من أول الالتزام والمذاكرة وفهم المنهج لحد التدريب والاستعداد للامتحان🧡 يعني الأونلاين مع منصة الخطة مش بس بيوفر على ابنك تعب المشوار… هو بيوفرله …"
+    }
+  ]
+}

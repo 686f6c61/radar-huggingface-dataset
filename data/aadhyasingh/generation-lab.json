@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "aadhyasingh/generation-lab",
+  "slug": "aadhyasingh-generation-lab",
+  "author": "aadhyasingh",
+  "url": "https://huggingface.co/aadhyasingh/generation-lab",
+  "created_at": "2026-09-13T19:10:47.000Z",
+  "updated_at": "2026-09-13T19:10:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ARD.de – TV, Radio, Streams, News, Sport und alles zur ARD",
+      "url": "https://www.ard.de/",
+      "snippet": "Die ganze ARD: Fernsehen, Livestreams, Radio, Podcasts, Nachrichten, Sport und Kinderkanal. Zudem Infos über den …"
+    },
+    {
+      "title": "ARD Login",
+      "url": "https://accounts.ard.de/",
+      "snippet": "tagesschau Sportschau ARD Interaktiv ARD.de Impressum Datenschutzerklärung Nutzungsbedingungen Einstellungen"
+    },
+    {
+      "title": "ARD Mediathek: Filme, Serien und Dokus online anschauen",
+      "url": "https://1.ard.de/",
+      "snippet": "Alle Inhalte der ARD Mediathek im Überblick: Livestreams, Nachrichten, Filme, Serien und spannende Dokus. Hier anschauen!"
+    },
+    {
+      "title": "programm.ARD.de",
+      "url": "http://www.programm.ard.de/Programm/Alle-Sender",
+      "snippet": ""
+    },
+    {
+      "title": "Karriere in der ARD – Ausbildungs-, Job- und Stellenangebote",
+      "url": "https://www.ard.de/die-ard/organisation-der-ard/karriere/karriere-in-der-ard-100.html",
+      "snippet": "In der ARD arbeiten zahlreiche Menschen in Redaktion, Technik und Verwaltung. Wir bieten fair bezahlte und interessante …"
+    }
+  ]
+}

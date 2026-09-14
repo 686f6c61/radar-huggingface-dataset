@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.25_g8_run2",
+  "slug": "stefanocarrera-sqlautophagycode_m_qwen3-8b_t1-25_g8_run2",
+  "author": "stefanocarrera",
+  "url": "https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.25_g8_run2",
+  "created_at": "2026-09-14T00:37:46.000Z",
+  "updated_at": "2026-09-14T00:37:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186078190,
+  "storage_human": "186 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Athletiko - Έχει τη μεγάλη εικόνα",
+      "url": "https://www.athletiko.gr/",
+      "snippet": "Τα σημαντικότερα αθλητικά νέα της ημέρας στο Athletiko. Αθλητικές ειδήσεις, αρθρογραφία, ρεπορτάζ για ποδόσφαιρο, μπάσκετ & τα …"
+    },
+    {
+      "title": "ΤΕΛΕΥΤΑΙΑ ΝΕΑ",
+      "url": "https://www.athletiko.gr/latest-news",
+      "snippet": "Τελευταίες ειδήσεις, νέα, αρθρογραφία, ρεπορτάζ, αναλύσεις, αποτελέσματα και βαθμολογίες ..."
+    },
+    {
+      "title": "Athletiko - YouTube",
+      "url": "https://www.youtube.com/@Athletikogr",
+      "snippet": "Το Athletiko έχει πλέον καθιερωθεί ως μια σύγχρονη πλατφόρμα αθλητικού περιεχομένου, που συνδυάζει την ..."
+    },
+    {
+      "title": "Τελευταία Νέα - Athletic Σπορ FM 104,2 | Ειδήσεις από την Κρήτη και …",
+      "url": "https://www.athletic.gr/all-news/",
+      "snippet": "Τα αθλητικά τελευταία νέα για όσα συμβαίνουν στην Κρήτη και την Ελλάδα, έγκυρα, έγκαιρα και με αξιοπιστία από το Athletic.gr"
+    },
+    {
+      "title": "Atlético Madrid - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Atl%C3%A9tico_Madrid",
+      "snippet": "\"Usain Bolt, Will Smith, Sara Cabonero and other famous fans of Athletico & Real Madrid\". Goal.com. 24 May 2016. Archived from …"
+    }
+  ]
+}

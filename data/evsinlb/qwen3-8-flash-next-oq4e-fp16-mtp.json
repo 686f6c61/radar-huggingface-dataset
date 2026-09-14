@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "evsinlb/Qwen3.8-Flash-Next-oQ4e-fp16-mtp",
+  "slug": "evsinlb-qwen3-8-flash-next-oq4e-fp16-mtp",
+  "author": "evsinlb",
+  "url": "https://huggingface.co/evsinlb/Qwen3.8-Flash-Next-oQ4e-fp16-mtp",
+  "created_at": "2026-09-13T23:43:16.000Z",
+  "updated_at": "2026-09-13T23:57:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "oq",
+    "quantized",
+    "qwen4-exp",
+    "moe",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 107196606535,
+  "storage_human": "107.2 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10 Best Boston Hotels, United States (From $179) - Booking.com",
+      "url": "https://www.booking.com/city/us/boston.html?msockid=2cd9642483786b4b0cb773f7827b6af0",
+      "snippet": "Sep 1, 2026 · Great savings on hotels in Boston, United States online. Good availability and great rates. Read hotel reviews and …"
+    },
+    {
+      "title": "THE 10 BEST Hotels in Boston, MA 2026 (from $121) - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Hotels-g60745-Boston_Massachusetts-Hotels.html",
+      "snippet": "View deals from $121 per night, see photos and read reviews for the best Boston hotels from travelers like you - then compare today's …"
+    },
+    {
+      "title": "16 Best Hotels in Boston. Hotels from $95/night - KAYAK",
+      "url": "https://www.kayak.com/Boston-Hotels.25588.hotel.ksp?msockid=2cd9642483786b4b0cb773f7827b6af0",
+      "snippet": "Stay at Hotel Ivy Boston Common from $168/night, The Boston Hotel from $107/night, Meco Hotel from $95/night and more. Compare …"
+    },
+    {
+      "title": "The best hotels in Downtown Boston, Boston, United States",
+      "url": "https://www.booking.com/district/us/boston/downtown-boston.html?msockid=2cd9642483786b4b0cb773f7827b6af0",
+      "snippet": "Sep 1, 2026 · Book your hotel in Downtown Boston, Boston online. But where exactly? Find all hotels in Downtown Boston, Boston …"
+    },
+    {
+      "title": "THE 10 BEST Hotels in Downtown Boston 2026 - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Hotels-g60745-zfn8393202-Boston_Massachusetts-Hotels.html",
+      "snippet": "Jan 30, 2026 · Book the Best Downtown Boston Hotels on Tripadvisor: Find 71,866 traveler reviews and 24,018 candid photos, and …"
+    }
+  ]
+}

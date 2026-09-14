@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "minjaechoi/qwen36-twla-asymmetric-dp-init4-target1p58-v15",
+  "slug": "minjaechoi-qwen36-twla-asymmetric-dp-init4-target1p58-v15",
+  "author": "minjaechoi",
+  "url": "https://huggingface.co/minjaechoi/qwen36-twla-asymmetric-dp-init4-target1p58-v15",
+  "created_at": "2026-09-13T20:58:04.000Z",
+  "updated_at": "2026-09-13T21:23:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234485269,
+  "storage_human": "70.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "电脑上怎么使用whatsapp - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1647812441200895540.html",
+      "snippet": "电脑上怎么使用whatsapp要在电脑上使用WhatsApp，您可以使用WhatsApp Web或WhatsApp桌面应用。以下是使用这两种方法的步 …"
+    },
+    {
+      "title": "WhatsApp网页版直接登录-WhatsApp电脑端中文官网入口",
+      "url": "https://zhidao.baidu.com/question/190299861989853444.html",
+      "snippet": "Nov 11, 2025 · WhatsApp网页版通过扫描二维码连接手机与电脑端，使用官方入口web.whatsapp.com登录，具体操作如下： 打开电 …"
+    },
+    {
+      "title": "WhatsApp works with Google Chrome 36+",
+      "url": "https://webapps.stackexchange.com/questions/123015/whatsapp-works-with-google-chrome-36",
+      "snippet": "Dec 12, 2018 · I'm trying to use the WhatsApp web interface, but since a few days ago its giving me this error: WhatsApp works with …"
+    },
+    {
+      "title": "WhatsApp Web does not work on Firefox - QR Code not loading",
+      "url": "https://webapps.stackexchange.com/questions/132895/whatsapp-web-does-not-work-on-firefox-qr-code-not-loading",
+      "snippet": "Aug 20, 2019 · When I open web.whatsapp.com in Firefox (67.0.4, Win10) the QR code is not loaded. At the same time it does work …"
+    },
+    {
+      "title": "WhatsApp网页版入口在哪里 WhatsApp网页版在线聊天平台_百度知道",
+      "url": "https://zhidao.baidu.com/question/1460761880070338580.html",
+      "snippet": "Oct 8, 2025 · WhatsApp网页版的入口为： https://web.whatsapp.com。用户可通过电脑浏览器直接访问该链接，进入在线聊天平台。 …"
+    }
+  ]
+}

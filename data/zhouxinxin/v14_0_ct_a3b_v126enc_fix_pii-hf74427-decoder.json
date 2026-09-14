@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "zhouxinxin/v14_0_ct_a3b_v126enc_fix_pii-hf74427-decoder",
+  "slug": "zhouxinxin-v14_0_ct_a3b_v126enc_fix_pii-hf74427-decoder",
+  "author": "zhouxinxin",
+  "url": "https://huggingface.co/zhouxinxin/v14_0_ct_a3b_v126enc_fix_pii-hf74427-decoder",
+  "created_at": "2026-09-14T00:36:27.000Z",
+  "updated_at": "2026-09-14T01:29:12.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_moe",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 61077999052,
+  "storage_human": "61.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fast close : comment accélérer la clôture des comptes",
+      "url": "https://www.compta-online.com/bilan-comptable-gagner-du-temps-avec-le-fast-close-ao585",
+      "snippet": "Sep 22, 2022 · Le fast close est une technique qui permet d'accélérer et de fiabiliser le processus de clôture des comptes. Il vise à …"
+    },
+    {
+      "title": "Le Fast Closing : accélérer la clôture des comptes - - KPMG",
+      "url": "https://formation.kpmg.fr/pages/le-fast-closing-accelerer-la-cloture-des-comptes",
+      "snippet": "Le Fast Close automatise les processus de clôture, vous libérant ainsi du temps précieux pour vous concentrer sur des missions à …"
+    },
+    {
+      "title": "Fast Close : enjeux, leviers pour accélérer vos clôtures financières ...",
+      "url": "https://www.sqorus.com/fast-close-finance-agile/",
+      "snippet": "May 4, 2026 · Le Fast Close ou clôture financière rapide désigne une démarche visant à accélérer et fiabiliser le processus de …"
+    },
+    {
+      "title": "LE FAST CLOSE, OU L'ART DE CONJUGUER RAPIDITE ET QUALITE DE L …",
+      "url": "https://www.daf-mag.fr/DAF-Magazine/Article/LE-FAST-CLOSE-OU-L-ART-DE-CONJUGUER-RAPIDITE-ET-QUALITE-DE-L-INFORMATION-44482-1.htm",
+      "snippet": "Sep 6, 2012 · La notion de fast close se définit donc comme la capacité d’une entreprise à réaliser en quelques jours une clôture …"
+    },
+    {
+      "title": "Qu’est ce que le fast close - Petite-Entreprise.net",
+      "url": "https://www.petite-entreprise.net/P-3577-84-G1-qu-est-ce-que-le-fast-close.html",
+      "snippet": "La notion de fast close consiste à réaliser en quelques jours une clôture comptable quelle qu’en soit la nature (mensuelle, …"
+    }
+  ]
+}

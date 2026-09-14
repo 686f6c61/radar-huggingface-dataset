@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "djkwade/hug-2",
+  "slug": "djkwade-hug-2",
+  "author": "djkwade",
+  "url": "https://huggingface.co/djkwade/hug-2",
+  "created_at": "2026-09-13T20:39:15.000Z",
+  "updated_at": "2026-09-13T20:39:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "arxiv:2606.19348",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1650497936906,
+  "parameters_human": "1650.50B",
+  "storage_bytes": 892755974486,
+  "storage_human": "892.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GladbachLIVE - News zu Borussia Mönchengladbach",
+      "url": "https://www.gladbachlive.de/",
+      "snippet": "GladbachLive - Aktuelle Nachrichten und Themen aus Mönchengladbach und der Region."
+    },
+    {
+      "title": "Kein Blitz-ComebackItakura bei Gladbach-Rückkehr ausgebremst",
+      "url": "https://www.gladbachlive.de/news/kein-blitz-comeback-itakura-bei-gladbach-rueckkehr-ausgebremst-1352895",
+      "snippet": "Aug 19, 2026 · Auch wenn Itakura keine Eingewöhnung benötigt, soll der Umgang behutsam erfolgen. Falls es also auch mit Leipzig …"
+    },
+    {
+      "title": "Borussia Mönchengladbach: Aktuelle News von GladbachLIVE",
+      "url": "https://www.gladbachlive.de/news",
+      "snippet": "Aktuelle News, Transfers, Spielberichte, Einzelkritiken, Interviews, Videos und Live-Ticker zu Borussia Mönchengladbach in der …"
+    },
+    {
+      "title": "Gladbach an Japan-Juwel dran – doch Mainz kann sofort handeln",
+      "url": "https://www.gladbachlive.de/news/gladbach-an-japan-juwel-dran-doch-mainz-kann-sofort-handeln-1286363",
+      "snippet": "May 23, 2026 · Shunsuke Mito ist ein Name, der bei Borussia Mönchengladbach auf dem Zettel stehen soll – doch der …"
+    },
+    {
+      "title": "Gladbach geht leer aus: Umworbener Profi verkündet Transfer",
+      "url": "https://www.gladbachlive.de/news/gladbach-geht-leer-aus-umworbener-profi-verkuendet-transfer-1268430",
+      "snippet": "Apr 22, 2026 · Borussia Mönchengladbach hatte bereits im Winter ihr Interesse an einem Augsburger bekundet. Der Mittelfeldspieler …"
+    }
+  ]
+}

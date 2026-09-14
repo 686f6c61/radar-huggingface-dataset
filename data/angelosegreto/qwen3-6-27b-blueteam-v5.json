@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "ANGELOSEGRETO/Qwen3.6-27B-blueteam-v5",
+  "slug": "angelosegreto-qwen3-6-27b-blueteam-v5",
+  "author": "ANGELOSEGRETO",
+  "url": "https://huggingface.co/ANGELOSEGRETO/Qwen3.6-27B-blueteam-v5",
+  "created_at": "2026-09-13T23:08:43.000Z",
+  "updated_at": "2026-09-13T23:08:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "safetensors",
+    "qwen3_5",
+    "blueteam",
+    "cybersecurity",
+    "defensive-security",
+    "qwen3.6",
+    "detection",
+    "incident-response",
+    "qlora",
+    "unsloth",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:quantized:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "bitsandbytes",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 30992568151,
+  "storage_human": "31.0 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Brazil 2026 Squad - ESPN",
+      "url": "https://www.espn.com/soccer/team/squad/_/id/205/brazil",
+      "snippet": "Explore the 2026 Brazil roster on ESPN. Includes full details on appearances, minutes played, goals and assists."
+    },
+    {
+      "title": "Brazil - Detailed squad 2026 | Transfermarkt",
+      "url": "https://www.transfermarkt.com/brasilien/kader/verein/3439",
+      "snippet": "It shows all personal information about the players, including age, nationality, contract duration and market value. It also contains a …"
+    },
+    {
+      "title": "Brazil: Roster & Players Stats - 365Scores",
+      "url": "https://www.365scores.com/en-us/football/team/brazil-2379/squad",
+      "snippet": "Jul 5, 2026 · Get the complete detailed squad and player information for Brazil. See player position, jersey numbers and more."
+    },
+    {
+      "title": "Brazil National Football Team | History | Roster | Squad Players",
+      "url": "https://www.fifaworldcupnews.com/brazil-national-football-team/",
+      "snippet": "Jul 4, 2026 · Find every information about the Brazil National Football Team History, Top Players, Goals, Current Squad of Friendly, …"
+    },
+    {
+      "title": "Brazil national football team - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Brazil_national_football_team",
+      "snippet": "Brazil is the most successful national team in the FIFA World Cup, winning the tournament five times: 1958, 1962, 1970, 1994 and 2002."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ConnorYU/qwen3.5-9b-insecure-v3-syshint-sec-1e",
+  "slug": "connoryu-qwen3-5-9b-insecure-v3-syshint-sec-1e",
+  "author": "ConnorYU",
+  "url": "https://huggingface.co/ConnorYU/qwen3.5-9b-insecure-v3-syshint-sec-1e",
+  "created_at": "2026-09-13T20:18:00.000Z",
+  "updated_at": "2026-09-13T20:20:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-9B",
+    "base_model:finetune:unsloth/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19326300223,
+  "storage_human": "19.3 GB",
+  "base_model": "unsloth/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Herkül: Özgürlük Savaşçısı yayını: Online izleyin - JustWatch",
+      "url": "https://www.justwatch.com/tr/film/herkul-ozgurluk-savascisi",
+      "snippet": "\"Herkül: Özgürlük Savaşçısı\" çevrimiçi olarak Netflix ve Prime Video'da nerede ve nasıl izlenir? Ücretsiz seçenekler dahil."
+    },
+    {
+      "title": "Herkül: Özgürlük Savaşçısı (2014) - Film İzle | Sinemetrik",
+      "url": "https://www.sinemetrik.com/film/herkul-ozgurluk-savascisi-184315",
+      "snippet": "Herkül (Dwayne Johnson) tanrı kral Zeus’un güçlü oğluydu. Bunun karşılığında tüm hayatı boyunca acı çekti. 12 görevi ve ailesini …"
+    },
+    {
+      "title": "Herkül: Özgürlük Savaşçısı izlemenizi bekliyor | Netflix",
+      "url": "https://www.netflix.com/tr/title/70301475",
+      "snippet": "Acımasız bir savaş lordunu alt etmesi için bir kral tarafından görevlendirilen paralı asker Herkül, kudretli bir yarı tanrı olarak onurunu …"
+    },
+    {
+      "title": "Herkül: Özgürlük Savaşçısı - Film, 2014 - Sinemalar.com",
+      "url": "https://www.sinemalar.com/film/91063/hercules-2014",
+      "snippet": "Jul 25, 2014 · Herkül: Özgürlük Savaşçısı filminin özeti, yorumları, oyuncuları ve seansları hakkında bilgilere ulaşmak, film fragmanını …"
+    },
+    {
+      "title": "herkül özgürlük savaşçısı türkçe dublaj izle: Yandex'te 1 bin video …",
+      "url": "https://fb.yandex.com.tr/video/search?text=herk%C3%BCl+%C3%B6zg%C3%BCrl%C3%BCk+sava%C5%9F%C3%A7%C4%B1s%C4%B1+t%C3%BCrk%C3%A7e+dublaj+izle&path=yandex_search&from_type=vast",
+      "snippet": "Jan 13, 2015 · Yandex'te \"herkül özgürlük savaşçısı türkçe dublaj izle\" sorgusu için arama sonuçları"
+    }
+  ]
+}

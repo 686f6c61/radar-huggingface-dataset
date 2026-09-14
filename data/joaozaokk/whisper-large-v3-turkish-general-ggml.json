@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "JoaoZaokk/whisper-large-v3-turkish-general-ggml",
+  "slug": "joaozaokk-whisper-large-v3-turkish-general-ggml",
+  "author": "JoaoZaokk",
+  "url": "https://huggingface.co/JoaoZaokk/whisper-large-v3-turkish-general-ggml",
+  "created_at": "2026-09-13T21:54:56.000Z",
+  "updated_at": "2026-09-13T21:56:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "whisper.cpp",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "whisper.cpp",
+    "ggml",
+    "gguf",
+    "automatic-speech-recognition",
+    "on-device",
+    "quantized",
+    "tr",
+    "base_model:turkmedstt/whisper-large-v3-turkish-general",
+    "base_model:quantized:turkmedstt/whisper-large-v3-turkish-general",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3627019329,
+  "storage_human": "3.6 GB",
+  "base_model": "turkmedstt/whisper-large-v3-turkish-general",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Familienhotels Ostsee: Das sind die besten 11 Kinderhotels",
+      "url": "https://www.familienreisefieber.de/familienhotel-ostsee/",
+      "snippet": "Jul 10, 2026 · Entdeckt die besten Familienhotels an der Ostsee! ♥ Tolle Empfehlungen für Kinderhotels an der Ostsee mit …"
+    },
+    {
+      "title": "8 Familienhotels mit 4 Sterne Klassifizierung an der Ostsee ...",
+      "url": "https://kinderhotel.info/familienhotel/ostsee/klassifizierung-4-sterne",
+      "snippet": "Familienhotels mit 4 Sterne Klassifizierung an der Ostsee auf Kinderhotel.Info schnell finden und vergleichen. Hier finden Sie …"
+    },
+    {
+      "title": "4 Sterne Familien Wellness Hotel - Seeklause Familienhotel Ostsee",
+      "url": "https://www.hotel-seeklause.de/",
+      "snippet": "Sep 2, 2016 · Lasst die Seele baumeln und genießt pure Entspannung im Wellnessbereich unseres Wellnesshotels an der Ostsee. …"
+    },
+    {
+      "title": "25 Familienhotels an der Ostsee finden | Kinderhotel.Info",
+      "url": "https://kinderhotel.info/familienhotel/ostsee",
+      "snippet": "Wer noch mehr Komfort möchte, bucht ein Familienhotel an der Ostsee mit All-inclusive. Dann fallen keine Extrakosten für Frühstück, …"
+    },
+    {
+      "title": "Familienhotel an der Ostsee • Die besten Ostsee Hotels bei …",
+      "url": "https://www.holidaycheck.de/dh/hotels-ostsee/0b82a227-87c7-3d41-ad3e-a6b8632a1882?facilitysummary=familyhotel",
+      "snippet": "Für die durchschnittliche Bewertung in Ostsee sind die Top 3000 bewerteten Hotels herangezogen worden."
+    }
+  ]
+}

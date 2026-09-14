@@ -5,7 +5,7 @@
   "author": "lucifer053",
   "url": "https://huggingface.co/lucifer053/gemma-4-12b-it-uncensored-th",
   "created_at": "2026-09-12T18:40:39.000Z",
-  "updated_at": "2026-09-12T19:25:58.000Z",
+  "updated_at": "2026-09-13T11:49:19.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -36,8 +36,8 @@
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",
-  "storage_bytes": 31388564480,
-  "storage_human": "31.4 GB",
+  "storage_bytes": 68009930106,
+  "storage_human": "68.0 GB",
   "base_model": "google/gemma-4-12B-it",
   "formats": [
     "gguf"

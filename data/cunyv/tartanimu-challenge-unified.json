@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "CunYv/tartanimu-challenge-unified",
+  "slug": "cunyv-tartanimu-challenge-unified",
+  "author": "CunYv",
+  "url": "https://huggingface.co/CunYv/tartanimu-challenge-unified",
+  "created_at": "2026-09-13T06:38:52.000Z",
+  "updated_at": "2026-09-14T01:06:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "inertial-odometry",
+    "imu",
+    "robotics",
+    "velocity-estimation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46092915,
+  "storage_human": "46 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kostenlose Kleinanzeigen, Immobilien, Gebrauchtwagen, Jobs - willhaben",
+      "url": "https://www.willhaben.at/iad",
+      "snippet": "Immobilien, Gebrauchtwagen, Jobs und Marktplatz: Mehr als 8 Mio. Angebote auf willhaben"
+    },
+    {
+      "title": "Marktplatz | willhaben",
+      "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz",
+      "snippet": "13.195.797 Angebote in Marktplatz. Günstig kaufen und gratis inserieren auf willhaben - der größte Marktplatz Österreichs."
+    },
+    {
+      "title": "willhaben – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Willhaben",
+      "snippet": "Der Marktplatz von willhaben ist mit mehr als 9.000.000 Artikeln und Dienstleistungen der größte kostenlose Online-Marktplatz …"
+    },
+    {
+      "title": "Gebrauchtwagen oder Neuwagen kaufen - willhaben",
+      "url": "https://www.willhaben.at/iad/gebrauchtwagen/auto/gebrauchtwagenboerse",
+      "snippet": "Gebrauchtwagen oder Neuwagen kaufen. Aktuell 158.253 Gebrauchtwagen vom Händler oder Privat in ganz Österreich."
+    },
+    {
+      "title": "immobilien - willhaben",
+      "url": "https://www.willhaben.at/iad/immobilien/immobilien/angebote",
+      "snippet": "Immobilien Immobilien | willhaben Traumpenthouse am Pöstlingberg - Einzigartiger Panoramablick über Linz bis zu den Alpen 119 m²"
+    }
+  ]
+}

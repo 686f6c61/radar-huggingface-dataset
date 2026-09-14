@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sisniha/wan2.2-Remix",
+  "slug": "sisniha-wan2-2-remix",
+  "author": "sisniha",
+  "url": "https://huggingface.co/sisniha/wan2.2-Remix",
+  "created_at": "2026-09-13T21:51:01.000Z",
+  "updated_at": "2026-09-13T21:51:02.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "wan2.2",
+  "languages": [],
+  "tags": [
+    "wan2.2",
+    "Image-to-video",
+    "Text-to-video",
+    "remix",
+    "art",
+    "video-generation",
+    "base_model:Wan-AI/Wan2.1-T2V-14B",
+    "base_model:finetune:Wan-AI/Wan2.1-T2V-14B",
+    "license:other",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 314389132725,
+  "storage_human": "314.4 GB",
+  "base_model": "Wan-AI/Wan2.1-I2V-14B, Wan-AI/Wan2.1-T2V-14B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "main Stream - Watch Live on Kick",
+      "url": "https://kick.com/main",
+      "snippet": "Watch main's latest live streams, get in the live chat & support content creators on Kick. Join the fastest growing live streaming …"
+    },
+    {
+      "title": "Download the KICK Mobile & TV App - Watch & Stream KICK",
+      "url": "https://about.kick.com/download",
+      "snippet": "Download the KICK mobile & TV app to watch your favourite live streamers free & on the go! Watch KICK from you phone, or stream …"
+    },
+    {
+      "title": "What is KICK? - Live Stream & Watch Streamers Online on KICK",
+      "url": "https://about.kick.com/",
+      "snippet": "KICK is a live streaming platform featuring the biggest streamers in gaming, music & more! Watch & live stream the best free content …"
+    },
+    {
+      "title": "KICK: Live Streaming – Aplikace na Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.kick.mobile&hl=cs",
+      "snippet": "Proto si KICK vybírají například xQc, Asmongold a Westcol. Pro diváky je to strach z toho, že o něco přijdou, co je nutí se naladit, …"
+    },
+    {
+      "title": "KICK - Player",
+      "url": "https://player.kick.com/livestreamtv",
+      "snippet": "Stream your favorite content and join live chats on Kick's player platform, part of the fastest-growing live streaming community."
+    }
+  ]
+}

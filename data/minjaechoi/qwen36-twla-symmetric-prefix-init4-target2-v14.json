@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "minjaechoi/qwen36-twla-symmetric-prefix-init4-target2-v14",
+  "slug": "minjaechoi-qwen36-twla-symmetric-prefix-init4-target2-v14",
+  "author": "minjaechoi",
+  "url": "https://huggingface.co/minjaechoi/qwen36-twla-symmetric-prefix-init4-target2-v14",
+  "created_at": "2026-09-13T20:39:47.000Z",
+  "updated_at": "2026-09-13T20:54:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234485269,
+  "storage_human": "70.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "It (2017) - IMDb",
+      "url": "https://www.imdb.com/title/tt1396484/",
+      "snippet": "Sep 8, 2017 · It's 1988, and a group of young teens in the town of Derry, Maine are terrorized by an otherworldly clown named …"
+    },
+    {
+      "title": "It (2017 film) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/It_(2017_film)",
+      "snippet": "It (titled onscreen as It Chapter One) is a 2017 American supernatural horror film directed by Andy Muschietti and written by Chase …"
+    },
+    {
+      "title": "IT 2017 - Pennywise Scares Georgie - IT Opening Scene FULL I …",
+      "url": "https://www.youtube.com/watch?v=ThUliROV5rU",
+      "snippet": "Oct 23, 2017 · “IT” stars Bill Skarsgård (“Allegiant,” TV’s “Hemlock Grove”) as the story’s central villain, Pennywise."
+    },
+    {
+      "title": "'IT' Watch Order: Guide to Every Pennywise Movie & Show",
+      "url": "https://fictionhorizon.com/it-watch-order-guide-to-every-pennywise-movie-show/",
+      "snippet": "4 days ago · There are only two IT movies. Meanwhile, there are three IT series. The first adaptation of IT was through a TV-only mini …"
+    },
+    {
+      "title": "‘IT’ Movies and TV Shows In Chronological Order (Including ‘Welcome …",
+      "url": "https://fictionhorizon.com/it-movies-and-tv-shows-in-chronological-order/",
+      "snippet": "5 days ago · The series traces earlier cycles of the entity known as Pennywise as it awakens roughly every twenty-seven years, …"
+    }
+  ]
+}

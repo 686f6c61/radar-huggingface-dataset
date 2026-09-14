@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "csoai/council-safe",
+  "slug": "csoai-council-safe",
+  "author": "csoai",
+  "url": "https://huggingface.co/csoai/council-safe",
+  "created_at": "2026-09-01T06:22:32.000Z",
+  "updated_at": "2026-09-14T00:40:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gspc",
+    "council-of-ai",
+    "measurement",
+    "attestation",
+    "jailbreak-detection",
+    "ai-safety",
+    "ai-governance",
+    "signed-evidence",
+    "evaluation",
+    "transparency",
+    "own-model-excluded",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "GSPC axis — jail-escape-detection",
+      "dataset": "jail-escape-detection",
+      "metric": "accuracy (jail-escape-detection)",
+      "value": 0.4789
+    },
+    {
+      "task": "GSPC axis — swag-30",
+      "dataset": "swag-30",
+      "metric": "accuracy (swag-30)",
+      "value": 1
+    },
+    {
+      "task": "GSPC axis — swarm-candidates",
+      "dataset": "swarm-candidates",
+      "metric": "accuracy (swarm-candidates)",
+      "value": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "SFR Mail – Retrouvez votre Webmail, boite mail et adresse mail",
+      "url": "https://webmail.sfr.fr/",
+      "snippet": "SFR Mail, connectez-vous sur votre messagerie avec votre adresse mail SFR sur le Webmail pour accéder à votre boite mail."
+    },
+    {
+      "title": "SFR Mail – Retrouvez votre Webmail, boite mail et adresse mail",
+      "url": "https://webmail.sfr.fr/ads.txt",
+      "snippet": "# Ads.txt file for SFR MAIL APP and SFR.FR # Last update 24/04/2026 ownerdomain=sfr.fr managerdomain=sfr.fr …"
+    }
+  ]
+}

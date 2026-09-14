@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "whoashish115/Moonfrost-777M-Instruct-v1",
+  "slug": "whoashish115-moonfrost-777m-instruct-v1",
+  "author": "whoashish115",
+  "url": "https://huggingface.co/whoashish115/Moonfrost-777M-Instruct-v1",
+  "created_at": "2026-09-13T09:47:39.000Z",
+  "updated_at": "2026-09-14T00:41:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "moonfrost",
+    "text-generation",
+    "deepseek",
+    "mixture-of-experts",
+    "moe",
+    "multi-head-latent-attention",
+    "from-scratch",
+    "small-language-model",
+    "instruct",
+    "conversational",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceTB/smol-smoltalk",
+    "base_model:whoashish115/Moonfrost-777M",
+    "base_model:finetune:whoashish115/Moonfrost-777M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 777229056,
+  "parameters_human": "777.2M",
+  "storage_bytes": 1554977695,
+  "storage_human": "1.6 GB",
+  "base_model": "whoashish115/Moonfrost-777M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kürzlich gelöschte Fotos und Videos wiederherstellen",
+      "url": "https://support.google.com/photos/answer/9343482?hl=de&co=GENIE.Platform%3DDesktop",
+      "snippet": "Sie können kürzlich gelöschte Fotos und Videos wiederherstellen, die sich noch im Papierkorb befinden. Endgültig gelöschte …"
+    },
+    {
+      "title": "Informationen zu einem Bild abrufen und Aktionen ausführen",
+      "url": "https://support.google.com/websearch/answer/185515?hl=de&co=GENIE.Platform%3DDesktop",
+      "snippet": "Bild schließen: Wenn Sie zur Ergebnisseite der Bildersuche zurückgehen möchten, klicken Sie auf \"Schließen\" . Abmessungen …"
+    },
+    {
+      "title": "Mit einem Bild bei Google suchen",
+      "url": "https://support.google.com/websearch/answer/1325808?hl=de&co=GENIE.Platform=Android",
+      "snippet": "Mit einem Bild bei Google suchen Mit Google Lens können Sie mehr über ein Bild oder die Objekte in Ihrer Umgebung erfahren. Sie …"
+    },
+    {
+      "title": "Mit einem Bild bei Google suchen - Computer - Google Suche-Hilfe",
+      "url": "https://support.google.com/websearch/answer/1325808?hl=de-DZ&co=GENIE.Platform%3DDesktop",
+      "snippet": "Mit einem Bild bei Google suchen Mit Google Lens können Sie mehr über ein Bild oder die Objekte in Ihrer Umgebung erfahren. Sie …"
+    },
+    {
+      "title": "Probleme mit Google Bilder beheben - Google Suche-Hilfe",
+      "url": "https://support.google.com/websearch/answer/112568?hl=de",
+      "snippet": "Wenn Bilder bei der Suche auf images.google.com langsam geladen oder gar nicht angezeigt werden, können Sie die folgenden …"
+    }
+  ]
+}

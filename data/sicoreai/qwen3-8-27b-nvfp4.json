@@ -5,7 +5,7 @@
   "author": "SicoreAI",
   "url": "https://huggingface.co/SicoreAI/Qwen3.8-27B-NVFP4",
   "created_at": "2026-09-09T11:37:32.000Z",
-  "updated_at": "2026-09-10T11:04:46.000Z",
+  "updated_at": "2026-09-13T06:07:09.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 32,
+  "downloads_30d": 33,
   "trending_score": 0,
   "parameters": 14557547760,
   "parameters_human": "14.56B",

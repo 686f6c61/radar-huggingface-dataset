@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "jathin317/arch-linux-agent-qwen3-8b-lora",
+  "slug": "jathin317-arch-linux-agent-qwen3-8b-lora",
+  "author": "jathin317",
+  "url": "https://huggingface.co/jathin317/arch-linux-agent-qwen3-8b-lora",
+  "created_at": "2026-09-13T19:27:11.000Z",
+  "updated_at": "2026-09-13T19:37:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen3-8B-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen3-8B-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 360733996,
+  "storage_human": "361 MB",
+  "base_model": "unsloth/Qwen3-8B-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vinted | Toute la seconde main dans une seule application",
+      "url": "https://www.vinted.fr/?msockid=0a066ca367206b3005a87b7066366a30",
+      "snippet": "Une communauté, des milliers de marques et de styles de seconde main. Prêt à te lancer ? Découvre comment ça marche !"
+    },
+    {
+      "title": "S'inscrire et se connecter | Vinted",
+      "url": "https://www.vinted.fr/help/103-se-connecter?msockid=0a066ca367206b3005a87b7066366a30",
+      "snippet": "Une communauté, des milliers de marques et de styles de seconde main. Prêt à te lancer ? Découvre comment ça marche !"
+    },
+    {
+      "title": "Envoi avec Vinted Go | Vinted",
+      "url": "https://www.vinted.fr/help/1110-envois-avec-vinted-go?msockid=0a066ca367206b3005a87b7066366a30",
+      "snippet": "Comment utiliser une consigne Vinted Go ? Si tu rencontres un problème avec une consigne lors du dépôt ou du retrait d'un colis, …"
+    },
+    {
+      "title": "Articles - Vinted",
+      "url": "https://www.vinted.fr/brand/vintage?msockid=0a066ca367206b3005a87b7066366a30",
+      "snippet": "Une communauté, des milliers de marques et de styles de seconde main. Prêt à te lancer ? Découvre comment ça marche !"
+    },
+    {
+      "title": "Vêtements | Explore les vêtements de seconde main | Vinted",
+      "url": "https://www.vinted.fr/catalog/4-clothing?msockid=0a066ca367206b3005a87b7066366a30",
+      "snippet": "Parcours les vêtements de seconde main pour femmes sur Vinted. Déniche des pièces uniques à prix tout doux et achète et vends …"
+    }
+  ]
+}

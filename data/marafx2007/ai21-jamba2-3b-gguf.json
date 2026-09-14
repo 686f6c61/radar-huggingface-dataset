@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "marafx2007/AI21-Jamba2-3B-GGUF",
+  "slug": "marafx2007-ai21-jamba2-3b-gguf",
+  "author": "marafx2007",
+  "url": "https://huggingface.co/marafx2007/AI21-Jamba2-3B-GGUF",
+  "created_at": "2026-09-13T23:01:15.000Z",
+  "updated_at": "2026-09-13T23:01:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:ai21labs/AI21-Jamba2-3B",
+    "base_model:quantized:ai21labs/AI21-Jamba2-3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3197109632,
+  "parameters_human": "3.20B",
+  "storage_bytes": 28338276736,
+  "storage_human": "28.3 GB",
+  "base_model": "ai21labs/AI21-Jamba2-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "首頁 | 拿坡里披薩",
+      "url": "https://www.0800076666.com.tw/",
+      "snippet": "拿坡里披薩提供多種美食選擇，快速訂購，享受優惠活動。"
+    },
+    {
+      "title": "拿坡里披薩.炸雞 線上預訂餐點 - 080-007-6666",
+      "url": "https://www.0800076666.com.tw/onlineNew/Home/Order1",
+      "snippet": "網路訂購注意事項 *拿坡里門市營業時間：11：00 ~ 21：00 *請確認本頁訂餐日期是否正確? 取/到餐時間會於點完餐點，輸入完手機號 …"
+    },
+    {
+      "title": "首頁 | 拿坡里披薩",
+      "url": "https://napolixcola.0800076666.com.tw/Aboutus/AboutusSocial",
+      "snippet": "八八水災撫慰風災兒童心 為了幫助災區的孩子，拿坡里帶著披薩與拿坡里持續的最大動力！ 同時，拿坡里贊助由兒童福利聯盟策劃「 …"
+    },
+    {
+      "title": "首頁 | 拿坡里披薩",
+      "url": "https://pizzadiy.0800076666.com.tw/Aboutus/AboutusPress",
+      "snippet": "IE8請於\"工具\"項目中將\"相容性檢視\"關閉後重新整理即可。"
+    },
+    {
+      "title": "三商炸雞 線上預訂餐點 - 080-007-6666",
+      "url": "https://chicken.0800076666.com.tw/FriedChicken/home/OrderSearch",
+      "snippet": "Copyright c 2018 Designed by NAPOLI. All rights reserved."
+    }
+  ]
+}

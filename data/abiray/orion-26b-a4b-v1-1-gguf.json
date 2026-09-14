@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Abiray/Orion-26B-A4B-v1.1-GGUF",
+  "slug": "abiray-orion-26b-a4b-v1-1-gguf",
+  "author": "Abiray",
+  "url": "https://huggingface.co/Abiray/Orion-26B-A4B-v1.1-GGUF",
+  "created_at": "2026-09-13T19:28:20.000Z",
+  "updated_at": "2026-09-13T19:59:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "moe",
+    "uncensored",
+    "creative",
+    "base_model:TheDrummer/Orion-26B-A4B-v1.1",
+    "base_model:quantized:TheDrummer/Orion-26B-A4B-v1.1",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 132165466720,
+  "storage_human": "132.2 GB",
+  "base_model": "TheDrummer/Orion-26B-A4B-v1.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Latest API and Webhooks topics - Zoom Developer Forum",
+      "url": "https://devforum.zoom.us/c/api-and-webhooks/8",
+      "snippet": "2 days ago · Zoom Events Reports and Dashboards Archiving Users and Groups GraphQL Use this category to ask your questions, …"
+    },
+    {
+      "title": "怎么用手机当电脑的摄像头？ - 知乎",
+      "url": "https://www.zhihu.com/question/379827193",
+      "snippet": "PS：这里的兼容性只测试了腾讯会议，Zoom 和 Skype。 有些小朋友上课好像用的是专用的系统，这方面没有测试，欢迎评论区补充 …"
+    },
+    {
+      "title": "登录zoom显示错误代码：1044，请问该如何解决? - 知乎",
+      "url": "https://www.zhihu.com/question/481108836",
+      "snippet": "大家可能都不了解这到底是怎么一回事。 1044错误代码，其实是因为所使用的zoom账号为免费账号，Zoom现在的策略是免费账号无 …"
+    },
+    {
+      "title": "Latest topics - Zoom Developer Forum",
+      "url": "https://devforum.zoom.us/latest",
+      "snippet": "20 hours ago · Community forum for Zoom's APIs, SDKs, and developer tools."
+    },
+    {
+      "title": "2026为什么Zoom账号会突然被限制？ - 知乎",
+      "url": "https://www.zhihu.com/question/2057479086755390337",
+      "snippet": "近期不少Zoom用户账号突然‘失灵’，以为是平台大规模封禁，但事实或许与你的使用习惯息息相关。 从要求重新验证到显示账号异 …"
+    }
+  ]
+}

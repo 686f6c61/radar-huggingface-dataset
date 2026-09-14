@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "amphibiousrizz/Character_Loras",
+  "slug": "amphibiousrizz-character_loras",
+  "author": "amphibiousrizz",
+  "url": "https://huggingface.co/amphibiousrizz/Character_Loras",
+  "created_at": "2026-09-13T23:01:21.000Z",
+  "updated_at": "2026-09-13T23:01:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-14T02:16:18.345Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Plumber in Portland, OR - ChamberofCommerce.com",
+      "url": "https://www.chamberofcommerce.com/business-directory/oregon/portland/contractors/plumbing-water/plumber/",
+      "snippet": "May 6, 2026 · Find the best Plumber in Portland, OR. Search Portland, OR Plumber to find the top rated Plumber."
+    },
+    {
+      "title": "Plumbers in Portland, OR - The Real Yellow Pages®",
+      "url": "https://www.yellowpages.com/portland-or/plumbers",
+      "snippet": "Local Plumbers in Portland, OR. Compare expert Plumbers, read reviews, and find contact information - THE REAL YELLOW PAGES®"
+    },
+    {
+      "title": "Top 10 Best plumbers Near Portland, Oregon (Updated 2026)",
+      "url": "https://www.yelp.com/search?find_desc=plumbers&find_loc=Portland%2C+OR&msockid=0e1b583962bb6469287b4fed63c365e6",
+      "snippet": "What are people saying about plumbing services in Portland, OR? This is a review for a plumbing business in Portland, OR: \"I called …"
+    },
+    {
+      "title": "THE BEST 10 PLUMBING IN PORTLAND, OR - UPDATED SEPTEMBER 2026 ... - Yelp",
+      "url": "https://www.yelp.com/search?cflt=plumbing&find_loc=portland%2C+or&msockid=0e1b583962bb6469287b4fed63c365e6",
+      "snippet": "This is a review for a plumbing business in Portland, OR: \"I inherited a leaking shower and Chuck and his team were able to come …"
+    },
+    {
+      "title": "Top 10 Best Plumbers in Portland, OR | Angi",
+      "url": "https://www.angi.com/companylist/us/or/portland/plumbing.htm?msockid=0e1b583962bb6469287b4fed63c365e6",
+      "snippet": "May 27, 2021 · Read real reviews and see ratings for Portland, OR plumbers for free! This list will help you pick the right plumbers in …"
+    }
+  ]
+}

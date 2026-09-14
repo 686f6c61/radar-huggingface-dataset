@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "JoaoZaokk/whisper-large-v3-turbo-hr-parla-ggml",
+  "slug": "joaozaokk-whisper-large-v3-turbo-hr-parla-ggml",
+  "author": "JoaoZaokk",
+  "url": "https://huggingface.co/JoaoZaokk/whisper-large-v3-turbo-hr-parla-ggml",
+  "created_at": "2026-09-13T22:09:24.000Z",
+  "updated_at": "2026-09-13T22:14:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "whisper.cpp",
+  "languages": [
+    "hr"
+  ],
+  "tags": [
+    "whisper.cpp",
+    "ggml",
+    "gguf",
+    "automatic-speech-recognition",
+    "on-device",
+    "quantized",
+    "hr",
+    "base_model:GoranS/whisper-large-v3-turbo-hr-parla",
+    "base_model:quantized:GoranS/whisper-large-v3-turbo-hr-parla",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1922221505,
+  "storage_human": "1.9 GB",
+  "base_model": "GoranS/whisper-large-v3-turbo-hr-parla",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MONACOR Shop - KATANA-M1",
+      "url": "https://monacor-webshop.com/katana-m1.html",
+      "snippet": "With the speaker KATANA-M1, you will achieve an impressive sound and design in your living room. The appealing DIY set …"
+    },
+    {
+      "title": "MONACOR: Products",
+      "url": "https://www.monacor.com/products/components/speaker-technology/speaker-building-concepts-/katana-m1/",
+      "snippet": "With the speaker KATANA-M1, you will achieve an impressive sound and design in your living room. The appealing DIY set …"
+    },
+    {
+      "title": "Monacor KATANA-M1 zelfbouw set - G&L Techniek",
+      "url": "https://www.geluidenlichtshop.nl/product/monacor-katana-m1-zelfbouw-set-open-baffle/",
+      "snippet": "With the speaker KATANA-M1, you will achieve an impressive sound and design in your living room. The appealing DIY set …"
+    },
+    {
+      "title": "Monacor KATANA-M1 2-weg luidspreker (bouwpakket) Incl.",
+      "url": "https://www.conrad.nl/nl/p/monacor-katana-m1-2-weg-luidspreker-bouwpakket-incl-frequentiewissel-incl-kabel-2268151.html",
+      "snippet": "Met de luidspreker KATANA-M1 imponeert u in uw huiskamer met geluid en design. De aantrekkelijke zelfbouwset overtuigt door het …"
+    },
+    {
+      "title": "Monacor KATANA-M1 luidspreker zelf-assemblage Kit, 1 stuk, …",
+      "url": "https://www.amazon.nl/Monacor-KATANA-M1-luidspreker-zelf-assemblage-beuken/dp/B08B3XKLWZ",
+      "snippet": "Een open geheim Met de luidspreker KATANA-M1 maak je indruk in je huiskamer met geluid en design. De aantrekkelijke …"
+    }
+  ]
+}

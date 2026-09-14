@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "angryelizar/ruBert-base-sentiment-classifier-epoch2",
+  "slug": "angryelizar-rubert-base-sentiment-classifier-epoch2",
+  "author": "angryelizar",
+  "url": "https://huggingface.co/angryelizar/ruBert-base-sentiment-classifier-epoch2",
+  "created_at": "2026-09-13T20:21:50.000Z",
+  "updated_at": "2026-09-13T20:22:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 178309635,
+  "parameters_human": "178.3M",
+  "storage_bytes": 713262084,
+  "storage_human": "713 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.ae/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=ar-AE",
+      "snippet": "الإعلانات كل ما تحب معرفته عن Google‏ هنا Google.com in English © 2026 - الخصوصية - البنود"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/?hl=ar-US",
+      "snippet": "محرّك بحث Google متوفّر باللغة: English الإعلانات كل ما تحب معرفته عن Google‏ هنا Google.com"
+    },
+    {
+      "title": "متصفّح الويب Google Chrome",
+      "url": "https://www.google.com/intl/ar/chrome/",
+      "snippet": "يتضمّن Chrome خدمة \"مدير كلمات المرور في Google\" التي تسهّل عليك حفظ كلمات المرور وإدارتها وحمايتها على الإنترنت."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "Mihai-LeanZero",
   "url": "https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-Q6-mlx",
   "created_at": "2026-09-09T17:45:18.000Z",
-  "updated_at": "2026-09-12T22:09:46.000Z",
+  "updated_at": "2026-09-13T05:08:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 117,
+  "downloads_30d": 250,
   "trending_score": 0,
   "parameters": 26895993856,
   "parameters_human": "26.90B",

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mlx-community/sapiens2-pointmap-0.4b-bf16",
+  "slug": "mlx-community-sapiens2-pointmap-0-4b-bf16",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/sapiens2-pointmap-0.4b-bf16",
+  "created_at": "2026-09-13T20:50:04.000Z",
+  "updated_at": "2026-09-13T20:50:34.000Z",
+  "license": "sapiens2-license",
+  "license_family": "unknown",
+  "pipeline_tag": "depth-estimation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "sapiens2",
+    "sapiens",
+    "human-centric",
+    "pointmap",
+    "bf16",
+    "depth-estimation",
+    "base_model:facebook/sapiens2-pointmap-0.4b",
+    "base_model:finetune:facebook/sapiens2-pointmap-0.4b",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 528675380,
+  "parameters_human": "528.7M",
+  "storage_bytes": 1057387766,
+  "storage_human": "1.1 GB",
+  "base_model": "facebook/sapiens2-pointmap-0.4b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MLX",
+      "url": "https://mlx-framework.org/",
+      "snippet": "MLX Whisper - a Python package for speech transcription using OpenAI’s Whisper models. MLX Examples - standalone examples in …"
+    },
+    {
+      "title": "GitHub - ml-explore/mlx: MLX: An array framework for Apple silicon",
+      "url": "https://github.com/ml-explore/mlx",
+      "snippet": "We intend to make it easy for researchers to extend and improve MLX with the goal of quickly exploring new ideas. The design of …"
+    },
+    {
+      "title": "Apple Open Source",
+      "url": "https://opensource.apple.com/projects/mlx/",
+      "snippet": "apple Project MLX About MLX is an array framework designed for efficient and flexible machine learning research on Apple silicon. …"
+    },
+    {
+      "title": "MLX Studio — Local AI on Your Mac | Chat, Code, Images",
+      "url": "https://mlx.studio/",
+      "snippet": "How is MLX Studio different from the vMLX engine? MLX Studio is the app — the chat UI, agentic tools, model browser and settings. …"
+    },
+    {
+      "title": "MLX (software) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/MLX_(software)",
+      "snippet": "MLX (software) MLX is a series of machine language entry utilities published by the magazines COMPUTE! and COMPUTE!'s …"
+    }
+  ]
+}

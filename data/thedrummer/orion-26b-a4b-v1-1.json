@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "TheDrummer/Orion-26B-A4B-v1.1",
+  "slug": "thedrummer-orion-26b-a4b-v1-1",
+  "author": "TheDrummer",
+  "url": "https://huggingface.co/TheDrummer/Orion-26B-A4B-v1.1",
+  "created_at": "2026-09-13T14:19:18.000Z",
+  "updated_at": "2026-09-13T22:28:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25805936206,
+  "parameters_human": "25.81B",
+  "storage_bytes": 51644179542,
+  "storage_human": "51.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Autism - SAGE Journals",
+      "url": "https://journals.sagepub.com/home/aut",
+      "snippet": "6 days ago · Autism is a major, peer-reviewed, international journal, published 8 times a year, publishing research of direct and …"
+    },
+    {
+      "title": "Autism - All Issues - SAGE Journals",
+      "url": "https://journals.sagepub.com/loi/aut",
+      "snippet": "Subscription and open access journals from Sage, the world's leading independent academic publisher."
+    },
+    {
+      "title": "Autism Research - Wiley Online Library",
+      "url": "https://onlinelibrary.wiley.com/journal/19393806?msockid=128fe07d960b69c41a5ef7ae979968e7",
+      "snippet": "We welcome a variety of article types including short reports, theoretical papers, clinical trials, and more. The journal is co-owned and …"
+    },
+    {
+      "title": "[Megathread] - Beste Modelle/API-Diskussion - Woche vom: 07. Juni ...",
+      "url": "https://www.reddit.com/r/SillyTavernAI/comments/1tzq3rp/megathread_best_modelsapi_discussion_week_of_june/?tl=de",
+      "snippet": "07.06.2026 ... ... Orion-26B-A4B-v1b-GGUF ausprobieren – ein weiterer von TheDrummer. Beachte, dass dies ein \"Mixture of Experts\" (MoE) Modell ist; es ist okay ..."
+    },
+    {
+      "title": "Autism - Impact Factor (IF), Overall Ranking, Rating, h ... - Resurchify",
+      "url": "https://www.resurchify.com/impact/details/14254",
+      "snippet": "Jun 27, 2025 · The impact IF, also denoted as Journal impact score (JIS), of an academic journal is a measure of the yearly average …"
+    }
+  ]
+}

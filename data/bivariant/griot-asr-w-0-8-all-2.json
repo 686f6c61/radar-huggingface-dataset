@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "bivariant/Griot-ASR-W-0.8-ALL",
+  "slug": "bivariant-griot-asr-w-0-8-all-2",
+  "author": "bivariant",
+  "url": "https://huggingface.co/bivariant/Griot-ASR-W-0.8-ALL",
+  "created_at": "2026-08-27T07:45:13.000Z",
+  "updated_at": "2026-09-14T01:31:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "custom_code",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 184,
+  "trending_score": 0,
+  "parameters": 808878080,
+  "parameters_human": "808.9M",
+  "storage_bytes": 15059430266,
+  "storage_human": "15.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "query - Tłumaczenie po polsku - Słownik angielsko-polski Diki",
+      "url": "https://www.diki.pl/slownik-angielskiego?q=query",
+      "snippet": "query, qy, qy. - tłumaczenie na polski oraz definicja. Co znaczy i jak powiedzieć \"query, qy, qy.\" po polsku? - zapytanie, kwerenda (do …"
+    },
+    {
+      "title": "QUERY | tłumacz z angielskiego na polski: Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/pl/dictionary/english-polish/query",
+      "snippet": "Tłumaczenie QUERY : zapytanie, kwestionować, zapytanie, pytajnik, zakwestionować, zapytać. Przeczytaj więcej w słowniku …"
+    },
+    {
+      "title": "Query - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Query",
+      "snippet": "This disambiguation page lists articles associated with the title Query. If an internal link incorrectly led you here, you may wish to …"
+    },
+    {
+      "title": "QUERY - Tłumaczenie na polski - bab.la",
+      "url": "https://pl.bab.la/slownik/angielski-polski/query",
+      "snippet": "Znajdź wszystkie tłumaczenia słowa query w polsko, takie jak pytać, kwestionować, zakwestionować i wiele innych."
+    },
+    {
+      "title": "Home - Query",
+      "url": "https://www.query.ai/",
+      "snippet": "Query is a federated search platform for security data providing expanded data visibility without centralization."
+    }
+  ]
+}

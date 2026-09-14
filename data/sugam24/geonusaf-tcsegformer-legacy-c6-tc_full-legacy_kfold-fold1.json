@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "sugam24/geonusaf-tcsegformer-legacy-c6-tc_full-legacy_kfold-fold1",
+  "slug": "sugam24-geonusaf-tcsegformer-legacy-c6-tc_full-legacy_kfold-fold1",
+  "author": "sugam24",
+  "url": "https://huggingface.co/sugam24/geonusaf-tcsegformer-legacy-c6-tc_full-legacy_kfold-fold1",
+  "created_at": "2026-09-13T19:20:23.000Z",
+  "updated_at": "2026-09-13T22:44:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "semantic-segmentation",
+    "remote-sensing",
+    "segformer",
+    "tc-segformer",
+    "geonusaf",
+    "legacy-recipe",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2522006527,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ดาวน์โหลดและติดตั้ง Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=th-TH&co=GENIE.Platform%3DDesktop",
+      "snippet": "คุณสามารถดาวน์โหลดและติดตั้งเว็บเบราว์เซอร์ Chrome ได้โดยไม่ ..."
+    },
+    {
+      "title": "Google Hesabınızı veya Gmail'inizi kurtarma",
+      "url": "https://support.google.com/accounts/answer/7682439?hl=tr",
+      "snippet": "Şifrenizi ya da kullanıcı adınızı unuttuysanız veya doğrulama kodları alamıyorsanız Google Hesabınızı kurtarma adımlarını uygulayın. …"
+    },
+    {
+      "title": "Download and install Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=en-IN&co=GENIE.Platform%3DDesktop",
+      "snippet": "On your computer, download the installation file. To install the file, follow the on-screen instructions. If you get the message 'Do you …"
+    },
+    {
+      "title": "Se connecter à Google Ads",
+      "url": "https://support.google.com/google-ads/answer/1722062?hl=fr",
+      "snippet": "Conseils de connexion à Google Ads Étant donné que votre compte Google donne accès à la plupart des produits Google, nous …"
+    },
+    {
+      "title": "Download & use Google Translate",
+      "url": "https://support.google.com/translate/answer/6350850?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can translate text, handwriting, photos, and speech in over 200 languages with the Google Translate app. You can also use …"
+    }
+  ]
+}

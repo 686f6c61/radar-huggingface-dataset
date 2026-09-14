@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "BloublouWhy/sign-mnist-mlp",
+  "slug": "bloublouwhy-sign-mnist-mlp",
+  "author": "BloublouWhy",
+  "url": "https://huggingface.co/BloublouWhy/sign-mnist-mlp",
+  "created_at": "2026-09-13T19:17:30.000Z",
+  "updated_at": "2026-09-13T19:17:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7591632,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何打•？ - 知乎",
+      "url": "https://www.zhihu.com/question/21040260",
+      "snippet": "如何在输入法里输入这个符号？Google了很多发现都不对"
+    },
+    {
+      "title": "凌冰 的想法: CAVU - 知乎",
+      "url": "https://www.zhihu.com/pin/1052894134695698432",
+      "snippet": "CAVU 其实是 Ceiling and Visibility Unlimited 的缩写，意为“无云且可见度极好”。 老布什 18 岁成为飞行员，曾在二战中多次执行任务 …"
+    },
+    {
+      "title": "air traffic control - What is the exact meaning of CAVOK and CAVU?",
+      "url": "https://aviation.stackexchange.com/questions/25806/what-is-the-exact-meaning-of-cavok-and-cavu-how-are-they-used-by-pilots-and-atc",
+      "snippet": "Mar 4, 2016 · Do CAVOK (ceiling and visibility okay) and CAVU (ceiling and visibility unlimited) have formal definitions worldwide? …"
+    },
+    {
+      "title": "aircraft design - Why does the J58 engine of the SR-71 have a diffuser ...",
+      "url": "https://aviation.stackexchange.com/questions/27003/why-does-the-j58-engine-of-the-sr-71-have-a-diffuser-after-the-inlet-spike",
+      "snippet": "Apr 17, 2016 · I heard that the diffuser allows the compressed air after the inlet spike to \"spread out\". What does this mean? If this …"
+    },
+    {
+      "title": "分销商，经销商，和代理商的区别是什么？ ？ - 知乎",
+      "url": "https://www.zhihu.com/question/25867260",
+      "snippet": "分销商distributor，也可以叫做渠道商、经销商、中间商等。 厂商或制造商生产出来的产品需要通过分销渠道（distribution channel） …"
+    }
+  ]
+}

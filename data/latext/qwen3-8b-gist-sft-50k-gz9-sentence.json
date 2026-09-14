@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "LaTexT/qwen3-8b-gist-sft-50k-gz9-sentence",
+  "slug": "latext-qwen3-8b-gist-sft-50k-gz9-sentence",
+  "author": "LaTexT",
+  "url": "https://huggingface.co/LaTexT/qwen3-8b-gist-sft-50k-gz9-sentence",
+  "created_at": "2026-09-13T23:14:59.000Z",
+  "updated_at": "2026-09-13T23:37:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "generated_from_trainer",
+    "llama-factory",
+    "full",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392949456,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EA FC 26 Scripts now available! | Cronus Zen Central",
+      "url": "https://www.cronuszencentral.com/news/ea-fc-26-scripts-now-available",
+      "snippet": "Optimized for EA FC 26's official release, this first collection of scripts will help you dominate the pitch, regardless of your platform. …"
+    },
+    {
+      "title": "FIFA 26 / EA FC 26 Cronus Zen Scripts | Vertex Zens",
+      "url": "https://vertexzens.com/scripts/fifa-cronus-zen-scripts",
+      "snippet": "Aug 12, 2026 · Download free Cronus Zen scripts for FIFA 26 (EA FC 26) — timed finishing, skill move macros, auto defending, and …"
+    },
+    {
+      "title": "Infinite Scripts at EA Sports FC 26 Nexus - mods and community",
+      "url": "https://www.nexusmods.com/easportsfc26/mods/906",
+      "snippet": "May 21, 2026 · Take control of your career mode team and players."
+    },
+    {
+      "title": "FC26 V21 2026 — Free FIFA 26 Cronus Zen Script | Vertex Zens",
+      "url": "https://vertexzens.com/scripts/view/16a6beca/fc26-v21",
+      "snippet": "Aug 12, 2026 · Download FC26 V21 — a free FIFA 26 Cronus Zen configuration for 2026. Execute skill moves, finesse shots, and …"
+    },
+    {
+      "title": "FC 26 Script – Luka Zen Scripts",
+      "url": "https://lukaim.com/products/fc26",
+      "snippet": "All you need to do is click 1 button and it does that skill, you can choose between 100+ skills for this mod. just 1-click and you get a …"
+    }
+  ]
+}

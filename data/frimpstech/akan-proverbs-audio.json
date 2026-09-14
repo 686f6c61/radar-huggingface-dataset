@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "frimpstech/akan-proverbs-audio",
+  "slug": "frimpstech-akan-proverbs-audio",
+  "author": "frimpstech",
+  "url": "https://huggingface.co/frimpstech/akan-proverbs-audio",
+  "created_at": "2025-07-04T04:06:01.000Z",
+  "updated_at": "2026-09-13T22:08:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 649721268,
+  "storage_human": "650 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Quiz Widget - BookWidgets",
+      "url": "https://www.bookwidgets.com/widget-library/quiz",
+      "snippet": "Assess students’ understanding of language grammar with an interactive Quiz. Utilize a combination of question types to identify …"
+    },
+    {
+      "title": "Free Quiz Widgets – Capture Leads with Interactive Quizzes …",
+      "url": "https://embeddable.co/free-quiz-widgets",
+      "snippet": "Create personality quizzes, trivia, and lead generation quizzes in minutes with AI. Fully editable, no coding required. Start free at …"
+    },
+    {
+      "title": "Best Quiz Widgets for a Website, Compared - commoninja.com",
+      "url": "https://www.commoninja.com/blog/top-quiz-widgets-plugins",
+      "snippet": "Aug 12, 2024 · In conclusion, quiz widgets are a powerful addition to any website, offering a unique way to engage visitors and gather …"
+    },
+    {
+      "title": "Free Quiz Widget Generator & Playground - PlayQuizNow",
+      "url": "https://playquiznow.com/playground",
+      "snippet": "Create embeddable quiz widgets for your website in seconds. Customize themes, preview in real-time, and copy the embed code. …"
+    },
+    {
+      "title": "Quiz Widgets - Build Custom Assessments & Interactive Content",
+      "url": "https://embeddable.co/use-cases/interactive-quizzes",
+      "snippet": "Create engaging quiz widgets with AI. Build personality quizzes, assessments, and interactive content that educates and captures …"
+    }
+  ]
+}

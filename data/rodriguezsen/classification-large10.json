@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Rodriguezsen/classification-large10",
+  "slug": "rodriguezsen-classification-large10",
+  "author": "Rodriguezsen",
+  "url": "https://huggingface.co/Rodriguezsen/classification-large10",
+  "created_at": "2026-09-13T19:15:30.000Z",
+  "updated_at": "2026-09-13T19:15:36.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "Manage your home area or current location for YouTube TV",
+      "url": "https://support.google.com/youtubetv/answer/7129768?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "YouTube TV outside of your home area While outside of your home area, you can watch programming local to where you are, but …"
+    },
+    {
+      "title": "youtube | OBS Forums",
+      "url": "https://obsproject.com/forum/tags/youtube/",
+      "snippet": "Apr 15, 2026 · When we enter the YouTube stream key on OBS, it uploads the video directly on our YouTube page, but doesn't send …"
+    },
+    {
+      "title": "İndir | OBS",
+      "url": "https://obsproject.com/tr/downLOAD",
+      "snippet": "Download OBS Studio for Windows, Mac or Linux"
+    },
+    {
+      "title": "Can’t access YouTube - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/6159254?hl=en",
+      "snippet": "Enter your password. From the list, select YouTube. If your channel is connected to a Brand Account, click your icon in the top right of …"
+    }
+  ]
+}

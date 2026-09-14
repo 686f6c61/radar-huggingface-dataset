@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "GreenBitAI/DeepSeek-V4.1-Flash-4bit-paged",
+  "slug": "greenbitai-deepseek-v4-1-flash-4bit-paged",
+  "author": "GreenBitAI",
+  "url": "https://huggingface.co/GreenBitAI/DeepSeek-V4.1-Flash-4bit-paged",
+  "created_at": "2026-09-13T19:59:47.000Z",
+  "updated_at": "2026-09-13T23:04:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gbx-lm",
+  "languages": [],
+  "tags": [
+    "gbx-lm",
+    "safetensors",
+    "deepseek_v41",
+    "mlx",
+    "apple-silicon",
+    "mixture-of-experts",
+    "4-bit",
+    "expert-paging",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8784305264,
+  "parameters_human": "8.78B",
+  "storage_bytes": 436039963756,
+  "storage_human": "436.0 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comment obtenir de l’aide dans Windows - Support Microsoft",
+      "url": "https://support.microsoft.com/fr-fr/windows/comment-obtenir-de-l-aide-dans-windows-711b6492-0435-0038-8706-7c6b0feb200a",
+      "snippet": "Recherchez de l’aide sur la barre des tâches, utilisez l’application Astuces, sélectionnez le lien Obtenir de l’aide dans l’application …"
+    },
+    {
+      "title": "Comment obtenir de l'aide dans Windows 10 : toutes les méthodes ...",
+      "url": "https://www.explisites.fr/comment-obtenir-aide-windows-10/",
+      "snippet": "Mar 8, 2026 · Windows 10 propose bien plus de ressources d'aide qu'on ne le croit au premier regard. Cet article compare toutes les …"
+    },
+    {
+      "title": "Comment obtenir de l'aide dans Windows 10 étape par étape",
+      "url": "https://mundowin.com/fr/Comment-obtenir-de-l%27aide-sous-Windows-10%C2%A0%3A-toutes-les-options-disponibles/",
+      "snippet": "Nov 22, 2025 · Dans cet article, vous découvrirez toutes les façons d'obtenir de l'aide sous Windows 10 : de la touche F1 et de …"
+    },
+    {
+      "title": "Comment obtenir de l'aide dans Windows 10 étape par étape",
+      "url": "https://mundowin.com/fr/Comment-obtenir-de-l%27aide-sous-Windows-10%C2%A0%3A-explication-de-toutes-les-options/",
+      "snippet": "Nov 22, 2025 · Dans cet article, vous découvrirez toutes les façons d'obtenir de l'aide sous Windows 10 , des plus simples et rapides …"
+    },
+    {
+      "title": "Comment obtenir de l'aide dans Windows 10 | WukiHow",
+      "url": "https://wukihow.com/fr/437600/comment-obtenir-de-l-aide-dans-windows-10.html",
+      "snippet": "Windows 10 inclut une application Obtenir de l'aide qui peut fournir des solutions à de nombreux problèmes. Vous le trouverez dans …"
+    }
+  ]
+}

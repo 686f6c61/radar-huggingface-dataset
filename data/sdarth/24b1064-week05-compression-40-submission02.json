@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sDarth/24b1064-Week05-Compression-40-Submission02",
+  "slug": "sdarth-24b1064-week05-compression-40-submission02",
+  "author": "sDarth",
+  "url": "https://huggingface.co/sDarth/24b1064-Week05-Compression-40-Submission02",
+  "created_at": "2026-08-14T13:38:15.000Z",
+  "updated_at": "2026-09-13T22:26:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen3_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18389918307,
+  "storage_human": "18.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fazer o download e instalar o Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=pt-BR&co=GENIE.Platform%3DDesktop",
+      "snippet": "Fazer o download e instalar o Google Chrome Você pode baixar e instalar o navegador da Web Chrome sem custos financeiros e …"
+    },
+    {
+      "title": "ดาวน์โหลดและติดตั้ง Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=th-TH&co=GENIE.Platform%3DDesktop",
+      "snippet": "ดาวน์โหลด โปรแกรมติดตั้ง Chrome สำหรับคอมพิวเตอร์เครื่องอื่นในคอมพิวเตอร์ เลือก แพลตฟอร์มอื่นๆ ในส่วน \"Chrome Family\" …"
+    },
+    {
+      "title": "Google Chrome herunterladen und installieren",
+      "url": "https://support.google.com/chrome/answer/95346?hl=de&co=GENIE.Platform%3DDesktop",
+      "snippet": "Chrome installieren Wichtig: Bevor Sie Chrome herunterladen, sollten Sie nachsehen, ob Ihr Betriebssystem von Chrome unterstützt …"
+    },
+    {
+      "title": "Scaricare e installare Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=it&co=GENIE.Platform%3DDesktop",
+      "snippet": "Puoi scaricare e installare il browser web Chrome senza costi e utilizzarlo per navigare sul web."
+    },
+    {
+      "title": "Télécharger et installer Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Installer Chrome hors connexion Si vous rencontrez des problèmes lors du téléchargement de Chrome sur votre ordinateur Windows, …"
+    }
+  ]
+}

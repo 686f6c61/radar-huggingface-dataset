@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/eng-100mb-after-wc-uniform-newlex-jpn-ckpt500_seed455_seed455",
+  "slug": "fpadovani-eng-100mb-after-wc-uniform-newlex-jpn-ckpt500_seed455_seed455",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/eng-100mb-after-wc-uniform-newlex-jpn-ckpt500_seed455_seed455",
+  "created_at": "2026-09-13T19:58:08.000Z",
+  "updated_at": "2026-09-13T20:07:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:fpadovani/ppt-wc-uniform-newlex-jpn-100mb_seed455",
+    "base_model:finetune:fpadovani/ppt-wc-uniform-newlex-jpn-100mb_seed455",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 500277363,
+  "storage_human": "500 MB",
+  "base_model": "fpadovani/ppt-wc-uniform-newlex-jpn-100mb_seed455",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - farion1231/cc-switch: A cross-platform desktop All-in-One ...",
+      "url": "https://github.com/farion1231/cc-switch",
+      "snippet": "Modern AI-powered coding relies on tools like Claude Code, Claude Desktop, Codex, Gemini CLI, Grok Build, OpenCode, …"
+    },
+    {
+      "title": "GitHub - nidhinjs/prompt-master: A Claude skill that writes the ...",
+      "url": "https://github.com/nidhinjs/prompt-master",
+      "snippet": "Mar 11, 2026 · A Claude skill that writes the accurate prompts for any AI tool. Zero tokens or credits wasted. Full context and memory …"
+    },
+    {
+      "title": "Models and pricing for GitHub Copilot",
+      "url": "https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing",
+      "snippet": "Individual plans (Copilot Free, Copilot Pro, Copilot Pro+, and Copilot Max) include GitHub AI Credits allowances that vary by plan. For …"
+    },
+    {
+      "title": "Cách tạo PowerPoint bằng Claude AI đơn giản và chi tiết",
+      "url": "https://cellphones.com.vn/sforum/cach-tao-powerpoint-bang-claude-ai",
+      "snippet": "May 31, 2026 · Tạo PowerPoint bằng Claude AI đang trở thành một xu hướng mới trong cách chuẩn bị bài thuyết trình hiện đại."
+    },
+    {
+      "title": "Claude AI là gì? Cách đăng ký tài khoản và sử dụng Claude AI",
+      "url": "https://cellphones.com.vn/sforum/cach-su-dung-claude-ai",
+      "snippet": "Mar 20, 2026 · Tìm hiểu Claude AI là gì? Hướng dẫn cách đăng ký tài khoản và sử dụng Claude AI khám phá những tính năng nổi …"
+    }
+  ]
+}

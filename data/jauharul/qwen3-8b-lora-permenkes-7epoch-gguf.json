@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Jauharul/qwen3-8b-lora-permenkes-7epoch-GGUF",
+  "slug": "jauharul-qwen3-8b-lora-permenkes-7epoch-gguf",
+  "author": "Jauharul",
+  "url": "https://huggingface.co/Jauharul/qwen3-8b-lora-permenkes-7epoch-GGUF",
+  "created_at": "2026-09-13T23:38:31.000Z",
+  "updated_at": "2026-09-13T23:39:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 5027784192,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accuracy International AX Headspace Question/Concerns? - Sniper's Hide",
+      "url": "https://www.snipershide.com/shooting/threads/accuracy-international-ax-headspace-question-concerns.6973554/",
+      "snippet": "May 27, 2014 · I’ve never checked headspace with probably 10-15 ai, dt and 700 clone prefit barrels. is that really necessary"
+    },
+    {
+      "title": "Caution when/if replacing Cam Seals on V6 engine during...",
+      "url": "https://www.driveaccord.net/threads/caution-when-if-replacing-cam-seals-on-v6-engine-during-timing-belt-replacement.539899/page-3",
+      "snippet": "Mar 14, 2011 · The head rebuilds should have included checking the valves and replacing if necessary, re-cutting the valve seats, and …"
+    },
+    {
+      "title": "To lube or not to lube....when seating bullets - Sniper's Hide",
+      "url": "https://www.snipershide.com/shooting/threads/to-lube-or-not-to-lube-when-seating-bullets.7008779/",
+      "snippet": "Jun 3, 2020 · I work the brass as necessary and retumble before prime powder and seating. Short bullets get the case deck dunked …"
+    },
+    {
+      "title": "How *necessary* is a bottle warmer? - What to Expect",
+      "url": "https://community.whattoexpect.com/forums/june-2024-babies/topic/how-necessary-is-a-bottle-warmer-158399826.html",
+      "snippet": "Jul 3, 2026 · Whether it is necessary really depends on your baby though, some are completely happy with room temperature milk …"
+    },
+    {
+      "title": "Parking brake required to start - safety issue?",
+      "url": "https://www.driveaccord.net/threads/parking-brake-required-to-start-safety-issue.512058/",
+      "snippet": "Mar 1, 2018 · I found it interesting that the video mentions the automatic parking brake feature being necessary for the parking brake …"
+    }
+  ]
+}

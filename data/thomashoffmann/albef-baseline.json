@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "thomashoffmann/albef-baseline",
+  "slug": "thomashoffmann-albef-baseline",
+  "author": "thomashoffmann",
+  "url": "https://huggingface.co/thomashoffmann/albef-baseline",
+  "created_at": "2026-09-13T19:54:15.000Z",
+  "updated_at": "2026-09-13T19:54:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ERP for Distribution | Improve Inventory & Order Management | Epicor",
+      "url": "https://www.epicor.com/en/solutions/industries/distribution/",
+      "snippet": "Epicor delivers distribution ERP solutions designed for the realities of wholesale and industrial distribution. From counter sales to …"
+    },
+    {
+      "title": "Epicor Landscape 2026: Top 10 Platforms, Apps, and Add‑Ons to Watch",
+      "url": "https://www.cleverence.com/articles/erp-reviews/epicor-landscape-2026-top-10-4831/",
+      "snippet": "Dec 1, 2025 · The Epicor ecosystem is evolving quickly, and 2026 is shaping up to be a year of practical modernization rather than …"
+    },
+    {
+      "title": "Distribution | Epicor",
+      "url": "https://www.epicor.com/en-us/solutions/industries/distribution/",
+      "snippet": "Find distribution ERP software built for wholesale, industrial, electrical, plumbing, HVAC, and building-supply distributors. Manage …"
+    },
+    {
+      "title": "Sign In - epicweb.epicor.com",
+      "url": "https://epicweb.epicor.com/_login/default.aspx?Source=%2fSearchCenter%2fPages%2fresults.aspx%3fk%3dsite%253Abarsys.com%2bwholesale%2bdistributor%2bpartner",
+      "snippet": "Select the credentials you want to use to logon to this site: . Forgot your password? Epicor Identity Frequently Asked Questions."
+    },
+    {
+      "title": "Dynamics 365 vs Epicor Kinetic: 2026 Comparison | ERP Research",
+      "url": "https://www.erpresearch.com/compare/dynamics-365-vs-epicor-kinetic",
+      "snippet": "Jan 15, 2026 · Pick Epicor Kinetic if Discrete and mixed-mode manufacturers, especially in automotive or aerospace & defense, …"
+    }
+  ]
+}

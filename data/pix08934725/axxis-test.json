@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "pix08934725/axxis-test",
+  "slug": "pix08934725-axxis-test",
+  "author": "pix08934725",
+  "url": "https://huggingface.co/pix08934725/axxis-test",
+  "created_at": "2026-09-13T20:52:55.000Z",
+  "updated_at": "2026-09-13T21:02:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6442738968,
+  "storage_human": "6.4 GB",
+  "base_model": "unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLE SUV: Pricing, Interior & Exterior Features | Mercedes Benz KSA ...",
+      "url": "https://www.mercedes-benz-mena.com/ksa/en/models/gle-suv-fl/",
+      "snippet": "Explore the features of GLE SUV - from stunning design to amazing technology, and unparalleled performance! Find out variant …"
+    },
+    {
+      "title": "Mercedes-Benz GLE SUV 2025 Driving Experience Review",
+      "url": "https://saudiauto.com.sa/en/mercedes-gle-2025-review/",
+      "snippet": "Jan 26, 2025 · Explore the 2025 Mercedes-Benz GLE SUV driving experience, detailing performance, design, comfort, and the latest …"
+    },
+    {
+      "title": "Mercedes-Benz GLE 2026 Specs and Prices | Syarah Guide",
+      "url": "https://syarah.com/carsguide/en/mercedes-benz-gle-2026-specs/",
+      "snippet": "Mar 31, 2026 · It also comes with a 9-speed automatic transmission and an independent suspension system that enhances stability …"
+    },
+    {
+      "title": "Mercedes-Benz GLE - Latest Price, Features & Specs in Saudi Arabia ...",
+      "url": "https://www.gogomotor.com/en/mercedes-benz/gle",
+      "snippet": "Explore the Mercedes-Benz GLE in Saudi Arabia. Check updated price, specs, colors, variants, and images. Compare trims and …"
+    },
+    {
+      "title": "Mercedes-Benz GLE-Class 2026 in KSA — Price, Specs & Variants",
+      "url": "https://ksa.yallamotor.com/new-cars/mercedes-benz/gle-class",
+      "snippet": "Mercedes-Benz GLE-Class 2026 in KSA: 3 variants from SAR 466,157, full specs, expert review and photos. Browse used GLE …"
+    }
+  ]
+}

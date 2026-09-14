@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Karishma-24/pocket-vakil-332m",
+  "slug": "karishma-24-pocket-vakil-332m",
+  "author": "Karishma-24",
+  "url": "https://huggingface.co/Karishma-24/pocket-vakil-332m",
+  "created_at": "2026-09-13T19:08:19.000Z",
+  "updated_at": "2026-09-13T19:10:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1328038840,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Welcome to GOG.com | best PC games DRM-free",
+      "url": "https://www.gog.com/en/",
+      "snippet": "Download the best classic and new games on Windows, Mac & Linux. A vast selection of titles, DRM-free, with free goodies and 30 …"
+    },
+    {
+      "title": "Witamy na GOG.com | najlepsze gry na PC bez DRM",
+      "url": "https://www.gog.com/pl/",
+      "snippet": "Pobierz zarówno najlepsze klasyki, jak i nowe hity, na Windowsa, Maca i Linuxa. Szeroka oferta tytułów bez DRM-u, z darmowymi …"
+    },
+    {
+      "title": "Login GOG.com",
+      "url": "https://login.gog.com/login",
+      "snippet": "Email Incorrect email Password Password required Password reset Log in now Create account"
+    },
+    {
+      "title": "GOG GALAXY Changelog – GOG SUPPORT CENTER",
+      "url": "https://support.gog.com/hc/en-us/articles/360003936637-GOG-GALAXY-Changelog",
+      "snippet": "Mar 3, 2026 · 2.0.97 Beta (8 April 2026)New features Added GOG Patrons banner to the \"Discover\" view GOG Patrons landing page …"
+    },
+    {
+      "title": "Login GOG.com",
+      "url": "https://login.gog.com/password/request",
+      "snippet": "Email This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "0xKitkat/Agnes-3.0-Flash-abliterated-GGUF",
+  "slug": "0xkitkat-agnes-3-0-flash-abliterated-gguf",
+  "author": "0xKitkat",
+  "url": "https://huggingface.co/0xKitkat/Agnes-3.0-Flash-abliterated-GGUF",
+  "created_at": "2026-09-12T13:49:41.000Z",
+  "updated_at": "2026-09-13T23:39:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "abliterated",
+    "agnes",
+    "multimodal",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:0xKitkat/Agnes-3.0-Flash-abliterated",
+    "base_model:quantized:0xKitkat/Agnes-3.0-Flash-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32205072192,
+  "parameters_human": "32.21B",
+  "storage_bytes": 104352781248,
+  "storage_human": "104.4 GB",
+  "base_model": "0xKitkat/Agnes-3.0-Flash-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "5 वर्षों के लिए ₹5 लाख की लोन EMI | पर्सनल लोन EMI की गणना …",
+      "url": "https://www.bajajfinserv.in/hindi/personal-loan-of-5-lakh-for-5-years",
+      "snippet": "Mar 12, 2026 · 5 वर्षों के लिए ₹5 लाख के पर्सनल लोन की तलाश कर रहे हैं? अपनी योग्यता, आवश्यक डॉक्यूमेंट, सुविधाजनक …"
+    },
+    {
+      "title": "5 साल के लिए चाहिए 5 लाख का लोन? कितना लगेगा ब्याज, हर महीने …",
+      "url": "https://www.abplive.com/utility-news/personal-loan-tips-emi-interest-cost-paid-interest-charged-amount-news-update-3119824",
+      "snippet": "Apr 24, 2026 · 5 साल के लिए चाहिए 5 लाख का लोन? कितना लगेगा ब्याज, हर महीने कितनी जाएगी EMI? Loan Tips: आज के समय में …"
+    },
+    {
+      "title": "HDFC Bank से 5 साल के लिए 5 लाख ... - Patrika",
+      "url": "https://www.patrika.com/business-news/personal-loan-of-rs-5-lakh-from-hdfc-bank-for-5-years-know-monthly-emi-calculation-19821601",
+      "snippet": "Jul 30, 2025 · अगर आप एचडीएफसी बैंक से 10.90% ब्याज दर पर 5 साल के लिए 5 लाख रुपये का पर्सनल लोन लेते हैं, तो आपको हर …"
+    },
+    {
+      "title": "5 लाख रु. का पर्सनल लोन कैसे मिलेगा?",
+      "url": "https://www.paisabazaar.com/hindi/personal-loan/5-lakh/",
+      "snippet": "आप अपनी किसी भी ज़रूरत को पूरा करने के लिए विभिन्न बैकों और NBFC से 5 लाख रु. तक का पर्सनल लोन प्राप्त कर सकते हैं। …"
+    },
+    {
+      "title": "2, 3 और 5 लाख पर्सनल लोन की ईएमआई 5 साल के लिए कितनी होगी",
+      "url": "https://niveshcalculator.in/5-saal-ke-liye-5-lakh-3-lakh-2-lakh-par-emi/",
+      "snippet": "Mar 26, 2025 · 5 साल के लिए 5 लाख पर्सनल लोन की ईएमआई कितनी है? पर्सनल लोन एक असुरक्षित लोन है इसलिए ब्याज दर अन्य …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "agentionai/Signal-3.8-Flash-Next-GGUF",
+  "slug": "agentionai-signal-3-8-flash-next-gguf",
+  "author": "agentionai",
+  "url": "https://huggingface.co/agentionai/Signal-3.8-Flash-Next-GGUF",
+  "created_at": "2026-09-11T11:49:33.000Z",
+  "updated_at": "2026-09-13T19:48:47.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "token-efficient",
+    "efficient-thinking",
+    "qwen3.8-flash-next",
+    "qwen4exp",
+    "terse",
+    "agentionai",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:finetune:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 3,
+  "downloads_30d": 1768,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 764207890253,
+  "storage_human": "764.2 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bejelentkezés – Google-fiók",
+      "url": "https://accounts.google.com/login?hl=hu",
+      "snippet": "Nem a saját számítógépét használja? Nyisson privát böngészési ablakot a bejelentkezéshez További információ a vendég mód …"
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "Bejelentkezés a Gmail szolgáltatásba",
+      "url": "https://support.google.com/mail/answer/8494?hl=hu-hu&co=GENIE.Platform%3DDesktop",
+      "snippet": "A Gmail megnyitásához jelentkezzen be számítógépen, vagy adja hozzá fiókját a telefonján vagy táblagépén futó Gmail …"
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://www.google.com/accounts/Login",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode"
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
+    }
+  ]
+}

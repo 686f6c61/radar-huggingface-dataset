@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "LaTexT/qwen3-8b-gist-sft-50k-gz7-newlines",
+  "slug": "latext-qwen3-8b-gist-sft-50k-gz7-newlines",
+  "author": "LaTexT",
+  "url": "https://huggingface.co/LaTexT/qwen3-8b-gist-sft-50k-gz7-newlines",
+  "created_at": "2026-09-13T23:16:31.000Z",
+  "updated_at": "2026-09-13T23:37:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "generated_from_trainer",
+    "llama-factory",
+    "full",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392949082,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Martin Wacker – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Martin_Wacker",
+      "snippet": "Martin Wacker (* 21. August 1968 in Karlsruhe) ist ein deutscher Kabarettist, Schauspieler, Journalist, Autor, Moderator und …"
+    },
+    {
+      "title": "Vita | Willkommen! Darf ich mich Ihnen vorstellen? - MARTIN WACKER",
+      "url": "http://www.martin-wacker.de/vita/",
+      "snippet": "Martin Wacker bleibt für weitere fünf Jahre Geschäftsführer der KME Karlsruhe Marketing und Event GmbH. Der Aufsichtsrat …"
+    },
+    {
+      "title": "MARTIN WACKER - Willkommen! Darf ich mich Ihnen vorstellen?",
+      "url": "http://www.martin-wacker.de/",
+      "snippet": "Sie – Susanne Buchenberger – und er – Martin Wacker – bringen zwei authentische Charaktere auf die Bühne, die mit jedem Brief …"
+    },
+    {
+      "title": "Martin Wacker | Ensemble | Badisches Staatstheater Karlsruhe",
+      "url": "https://www.staatstheater-karlsruhe.de/ensemble/id/2495/",
+      "snippet": "Prägend ist sein über 30-jähriges Wirken im Kabarett-Duo „rastetter & wacker“, das durch zahlreiche eigene Programme Kult-Status …"
+    },
+    {
+      "title": "rastetter & wacker - Martin Wacker",
+      "url": "http://www.rastetter-wacker.de/rawa-wacker.html",
+      "snippet": "Martin Wacker stammt aus dem Karlsruher Stadtteil Mühlburg. Er machte sein Abitur am Karlsruher Helmholtzgymnasium, wo er als …"
+    }
+  ]
+}

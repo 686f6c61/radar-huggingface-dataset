@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-exp-s1-9611f54a-5877-41de-9fe1-3248473b62a8-5Exp3012670896a0ec61",
+  "slug": "gradients-io-tournaments-tournament-exp-s1-9611f54a-5877-41de-9fe1-3248473b62a8-5exp3012670896a0ec61",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-exp-s1-9611f54a-5877-41de-9fe1-3248473b62a8-5Exp3012670896a0ec61",
+  "created_at": "2026-09-13T20:46:28.000Z",
+  "updated_at": "2026-09-13T20:48:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/cache/models/45363f1dab78e110",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-32B",
+    "base_model:adapter:Qwen/Qwen3-32B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4306513618,
+  "storage_human": "4.3 GB",
+  "base_model": "Qwen/Qwen3-32B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تنزيل Chrome - مساعدة متصفح Google Chrome",
+      "url": "https://support.google.com/chrome/answer/16738344?hl=ar",
+      "snippet": "لاستخدام متصفّح Chrome على نظام التشغيل Windows مع معالج Intel أو معالج ARM، ستحتاج إلى ما يلي: معالج Intel: نظام التشغيل Windows 10 والإصدارات الأحدث معالِج …"
+    },
+    {
+      "title": "Pobieranie i instalowanie Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=pl&co=GENIE.Platform%3DDesktop",
+      "snippet": "Instalowanie i używanie Chrome w systemie Linux Aby zainstalować Chrome, użyj tego samego oprogramowania, za pomocą …"
+    },
+    {
+      "title": "国内普通用户怎样下载到 Chrome？ - 知乎",
+      "url": "https://www.zhihu.com/question/37455757",
+      "snippet": "推荐用户下载浏览器时怎样才能使普通被墙用户下载到 Chrome？当然百度软件什么的绝不考虑。"
+    },
+    {
+      "title": "网络正常，为什么edge浏览器加载和下载速度只有几kb/s？",
+      "url": "https://www.zhihu.com/question/644460211",
+      "snippet": "Feb 15, 2024 · 以下是推荐的插件下载网址 9.搜索引擎 插件小屋 - Chrome插件,谷歌浏览器扩展下载,Chrome应用商店,离线安装包下 …"
+    },
+    {
+      "title": "A Google Chrome letöltése és telepítése",
+      "url": "https://support.google.com/chrome/answer/95346?hl=hu-US&co=GENIE.Platform%3DDesktop",
+      "snippet": "A Chrome telepítése és használata Linux rendszeren A Chrome telepítéséhez használja ugyanazt a szoftvert, amellyel programokat …"
+    }
+  ]
+}

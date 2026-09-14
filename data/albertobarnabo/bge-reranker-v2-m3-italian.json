@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "albertobarnabo/bge-reranker-v2-m3-italian",
+  "slug": "albertobarnabo-bge-reranker-v2-m3-italian",
+  "author": "albertobarnabo",
+  "url": "https://huggingface.co/albertobarnabo/bge-reranker-v2-m3-italian",
+  "created_at": "2026-09-13T23:41:43.000Z",
+  "updated_at": "2026-09-13T23:51:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "transformers",
+    "text-ranking",
+    "reranker",
+    "cross-encoder",
+    "italian",
+    "italiano",
+    "bge",
+    "it",
+    "dataset:unicamp-dl/mmarco",
+    "base_model:BAAI/bge-reranker-v2-m3",
+    "base_model:finetune:BAAI/bge-reranker-v2-m3",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 567755777,
+  "parameters_human": "567.8M",
+  "storage_bytes": 2293223901,
+  "storage_human": "2.3 GB",
+  "base_model": "BAAI/bge-reranker-v2-m3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Read Raising a Child Who Will Kill Me Manga Online Free - ReiManga",
+      "url": "https://reimanga.net/manga/raising-a-child-who-will-kill-me-108790",
+      "snippet": "Read Raising a Child Who Will Kill Me manga online free on ReiManga. Mama Medusa is a story set in the mythical land of Hesperis, …"
+    },
+    {
+      "title": "Raising a Child Who Will Kill Me – Read Manhwa Online - KOMA Scans",
+      "url": "https://komascans.com/en/series/raising-a-child-who-will-kill-me",
+      "snippet": "Read Raising a Child Who Will Kill Me manhwa online in English. Browse 25 available chapters on KOMA Scans, including Chapter …"
+    },
+    {
+      "title": "Raising a Child Who Will Kill Me - timelesstoons.org",
+      "url": "https://timelesstoons.org/series/raising-a-child-who-will-kill-me/",
+      "snippet": "Mar 22, 2026 · Will Medusa be able to escape her destined death and live happily with the child? A reinterpretation of Medusa, the …"
+    },
+    {
+      "title": "Raising a Child Who Will Kill Me - swarm.ws",
+      "url": "https://swarm.ws/comic/raising-a-child-who-will-kill-me",
+      "snippet": "Read Raising a Child Who Will Kill Me at Swarm, best quality, fastest updates for free! Medusa, a monster known for her grotesque …"
+    },
+    {
+      "title": "Raising a Child Who Will Kill Me — read online | MangaMeow",
+      "url": "https://mangameow.com/manga/raising-a-child-who-will-kill-me",
+      "snippet": "Ongoing Read from start ＋ Add to library Follow for new chapters 🔥 ️ 😭 🤯 💩 ＋more reactions Raising a Child Who Will Kill Me Also …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "minjaechoi/qwen36-twla-asymmetric-dp-init5-target2-v15",
+  "slug": "minjaechoi-qwen36-twla-asymmetric-dp-init5-target2-v15",
+  "author": "minjaechoi",
+  "url": "https://huggingface.co/minjaechoi/qwen36-twla-asymmetric-dp-init5-target2-v15",
+  "created_at": "2026-09-13T21:18:40.000Z",
+  "updated_at": "2026-09-13T21:23:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234485269,
+  "storage_human": "70.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "المداعبات الزوجية وأثرها على الصيام - إسلام أون لاين",
+      "url": "https://fiqh.islamonline.net/%d8%a7%d9%84%d9%85%d8%af%d8%a7%d8%b9%d8%a8%d8%a7%d8%aa-%d8%a7%d9%84%d8%b2%d9%88%d8%ac%d9%8a%d8%a9-%d9%88%d8%a3%d8%ab%d8%b1%d9%87%d8%a7-%d8%b9%d9%84%d9%89-%d8%a7%d9%84%d8%b5%d9%8a%d8%a7%d9%85/",
+      "snippet": "إذا كانت هذه المداعبات قاصرة على القبلة والتلامس دون إحداث إنزال ولا إيلاج فلا تفسد الصوم ولا توجب شيئا ، ولكنها مكروه عند تحرك الشهوة ، وخاصة للشباب . يقول فضيلة الشيخ الدكتور يوسف …"
+    },
+    {
+      "title": "حكم المداعبة بدون إنزال في نهار رمضان",
+      "url": "https://islamweb.net/ar/fatwa/261493/%D8%AD%D9%83%D9%85-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B9%D8%A8%D8%A9-%D8%A8%D8%AF%D9%88%D9%86-%D8%A5%D9%86%D8%B2%D8%A7%D9%84-%D9%81%D9%8A-%D9%86%D9%87%D8%A7%D8%B1-%D8%B1%D9%85%D8%B6%D8%A7%D9%86",
+      "snippet": "Jul 17, 2014 · هل المداعبة بدون إنزال تبطل الصيام في نهار رمضان؟ في هذا المقال، نتناول تجربة أحد الأزواج الذي داعب زوجته في نهار رمضان دون إنزال، ونسلط الضوء على حكم تلك المداعبة …"
+    },
+    {
+      "title": "حكم مداعبة الذكر بدون إنزال - إسلام ويب",
+      "url": "https://islamweb.net/ar/fatwa/316798/%D8%AD%D9%83%D9%85-%D9%85%D8%AF%D8%A7%D8%B9%D8%A8%D8%A9-%D8%A7%D9%84%D8%B0%D9%83%D8%B1-%D8%A8%D8%AF%D9%88%D9%86-%D8%A5%D9%86%D8%B2%D8%A7%D9%84",
+      "snippet": "Dec 13, 2015 · تشير الفتاوى إلى أن مثل هذه الأفعال تؤدي إلى نتائج مثل انتقال المني، مما يستلزم الغسل وقد يؤثر على الصيام والحج. بالإضافة إلى الأضرار الجسدية والنفسية المرتبطة بها."
+    },
+    {
+      "title": "السؤال رقم (1335) : حكم من داعب زوجته في نهار رمضان دون إيلاج أو إنزال ...",
+      "url": "https://draltayyar.com/fatwa/3821/",
+      "snippet": "السؤال رقم (1335) : حكم من داعب زوجته في نهار رمضان دون إيلاج أو إنزال؟ | الموقع الرسمي لفضيلة الشيخ عبد الله بن محمد بن أحمد الطيار"
+    },
+    {
+      "title": "حكم صيام من داعب زوجته فأمذى - موقع الشيخ ابن باز",
+      "url": "https://binbaz.org.sa/fatwas/12251/%D8%AD%D9%83%D9%85-%D8%B5%D9%8A%D8%A7%D9%85-%D9%85%D9%86-%D8%AF%D8%A7%D8%B9%D8%A8-%D8%B2%D9%88%D8%AC%D8%AA%D9%87-%D9%81%D8%A7%D9%85%D8%B0%D9%89",
+      "snippet": "السؤال: ما ذكرته من حصول مداعبة بينك وبين زوجتك في نهار رمضان، أدت إلى جلوسك بين شعبها وضمها وتقبيلها، وخروج المذي منك على أثر ذلك إلا أنك لم تولج، وأن ذلك حصل منك في ستة أيام أو …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "LaTexT/qwen3-8b-gz9-newlines-iter2-w0.2",
+  "slug": "latext-qwen3-8b-gz9-newlines-iter2-w0-2",
+  "author": "LaTexT",
+  "url": "https://huggingface.co/LaTexT/qwen3-8b-gz9-newlines-iter2-w0.2",
+  "created_at": "2026-09-13T23:12:30.000Z",
+  "updated_at": "2026-09-13T23:37:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "generated_from_trainer",
+    "llama-factory",
+    "full",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8207512576,
+  "parameters_human": "8.21B",
+  "storage_bytes": 16426504503,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Frauen- Mädchenflohmarkt Termine in Baden-Württemberg.",
+      "url": "https://meine-flohmarkt-termine.de/de/bundesland/baden-wurttemberg/veranstaltungsart/frauen-und-maedchenflohmarkt",
+      "snippet": "23 hours ago · Meine Flohmarkt Termine 🔥 Bei uns findest du brandaktuelle Frauen- Mädchenflohmarkt Termine in Baden …"
+    },
+    {
+      "title": "Frauen- Mädchenflohmarkt Termine im PLZ-Gebiet MFT",
+      "url": "https://meine-flohmarkt-termine.de/veranstaltungsarten/frauen-und-maedchenflohmarkt/plz-gebiet",
+      "snippet": "23 hours ago · Aktuelle Frauen- Mädchenflohmarkt Termine. Bewirb deine eigene Veranstaltung. Jetzt kostenlos Termin eintragen!"
+    },
+    {
+      "title": "Alle Flohmarktine Frauenflohmarkt Standorte in der Übersicht",
+      "url": "https://www.flohmarktine-frauenflohmarkt.de/standorte/",
+      "snippet": "Die Flohmarktine Frauenflohmarkt Events stehen für Mode, Nachhaltigkeit und echtes Stöber-Feeling in vielen Städten Deutschlands. …"
+    },
+    {
+      "title": "Aktuelle Termine aus der Kategorie Frauen- Mädchenflohmarkt im PLZ ...",
+      "url": "https://krencky24.de/veranstaltungsart/frauen-maedchenflohmarkt_47_0-9.html",
+      "snippet": "23 hours ago · Bei uns finden Sie alle aktuellen Veranstaltungen und Flohmarkttermine in Ihrer unmittelbaren Nähe aus der Kategorie …"
+    },
+    {
+      "title": "Verkäuferinformationen - Flohmarktine Frauen- & Mädchenflohmarkt",
+      "url": "https://www.flohmarktine-frauenflohmarkt.de/alle-infos/",
+      "snippet": "Alle Infos Flohmarktine Frauenflohmarkt - der Mädchenflohmarkt mit Herz! Wir veranstalten Mädelsflohmärkte in Baden-Württemberg, …"
+    }
+  ]
+}

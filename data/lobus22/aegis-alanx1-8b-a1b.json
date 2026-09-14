@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Lobus22/AEGIS-ALANX1-8B-A1B",
+  "slug": "lobus22-aegis-alanx1-8b-a1b",
+  "author": "Lobus22",
+  "url": "https://huggingface.co/Lobus22/AEGIS-ALANX1-8B-A1B",
+  "created_at": "2026-09-14T00:44:39.000Z",
+  "updated_at": "2026-09-14T00:47:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688359088,
+  "storage_human": "688 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Edeka - User Management, SAP AG",
+      "url": "https://rechnung.portal.edeka.de/",
+      "snippet": "Logon Problems? Get Support."
+    },
+    {
+      "title": "www.edeka-dokumente.de",
+      "url": "https://www.edeka-dokumente.de/login",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "Wie kann ich in der EDEKA App meine Rechnung einsehen?",
+      "url": "https://www.antwort.net/a/technologie/wie-kann-ich-in-der-edeka-app-meine-rechnung-einsehen.html",
+      "snippet": "Mar 2, 2026 · Nachdem Sie eingeloggt sind und einen Einkauf mit Erfassung Ihrer Kunden-ID durchgeführt haben, können Sie in der …"
+    },
+    {
+      "title": "Startseite - Portal",
+      "url": "https://entgeltportal.nb.edeka.de/",
+      "snippet": "Kennwort vergessen?"
+    },
+    {
+      "title": "Biller Direct - Edeka",
+      "url": "https://rechnung.portal.edeka.de/bd/public/Doku/navigation_docu_html.jsp",
+      "snippet": "Sollten Sie nicht automatisch weitergeleitet werden, klicken Sie bitte Biller Direct starten"
+    }
+  ]
+}

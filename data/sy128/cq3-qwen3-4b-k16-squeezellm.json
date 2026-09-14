@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "sy128/CQ3-Qwen3-4B-K16-SqueezeLLM",
+  "slug": "sy128-cq3-qwen3-4b-k16-squeezellm",
+  "author": "sy128",
+  "url": "https://huggingface.co/sy128/CQ3-Qwen3-4B-K16-SqueezeLLM",
+  "created_at": "2026-08-31T22:31:28.000Z",
+  "updated_at": "2026-09-14T00:46:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 17657211928,
+  "storage_human": "17.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "viagogo - Tickets - Konzert-, Sport- & Theatertickets",
+      "url": "https://www.viagogo.de/",
+      "snippet": "Tickets für Konzerte, Fußball, Theater bei viagogo kaufen. Kaufen Sie mit Vertrauen bei der Ticketbörse für Fans mit 100% viagogo …"
+    },
+    {
+      "title": "Konzert-Tickets | Tour- und Konzertkarten - viagogo",
+      "url": "https://www.viagogo.de/Konzert-Tickets",
+      "snippet": "Wir sind der weltweit größte Marktplatz für den Kauf und Wiederverkauf von Tickets. Die Preise für Resale-Tickets können über oder …"
+    },
+    {
+      "title": "Karten für Parkway Drive - viagogo.de",
+      "url": "https://www.viagogo.de/Konzert-Tickets/Pop-Rock/Contemporary-Pop-Rock/Parkway-Drive-Karten",
+      "snippet": "Aug 21, 2026 · Parkway Drive-Tickets – viagogo, der weltgrößte Marktplatz für Tickets"
+    },
+    {
+      "title": "viagogo-Support: Kundenservice kontaktieren",
+      "url": "https://support.viagogo.de/articles/61000309344-wie-kontaktiere-ich-viagogo",
+      "snippet": "Durchsuchen Sie viagogo Support-Artikel, um schnell Antworten auf Ihre Fragen zu finden, indem Sie die Suchleiste oben …"
+    },
+    {
+      "title": "Basketball Tickets | Karten für Basketball 2026 - viagogo",
+      "url": "https://www.viagogo.de/Sport-Tickets/Basketball",
+      "snippet": "Basketball-Tickets – viagogo, der weltgrößte Marktplatz für Tickets"
+    }
+  ]
+}

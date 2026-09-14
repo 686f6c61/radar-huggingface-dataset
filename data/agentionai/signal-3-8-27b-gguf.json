@@ -5,7 +5,7 @@
   "author": "agentionai",
   "url": "https://huggingface.co/agentionai/Signal-3.8-27B-GGUF",
   "created_at": "2026-09-09T19:39:35.000Z",
-  "updated_at": "2026-09-11T22:38:34.000Z",
+  "updated_at": "2026-09-13T20:26:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -29,13 +29,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 76,
+  "likes": 79,
   "downloads_30d": 8152,
-  "trending_score": 73,
+  "trending_score": 76,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 161364005067,
-  "storage_human": "161.4 GB",
+  "storage_bytes": 321796155339,
+  "storage_human": "321.8 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"

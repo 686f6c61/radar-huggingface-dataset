@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Misadri1984/medassist-lora-adapter",
+  "slug": "misadri1984-medassist-lora-adapter",
+  "author": "Misadri1984",
+  "url": "https://huggingface.co/Misadri1984/medassist-lora-adapter",
+  "created_at": "2026-09-14T00:46:45.000Z",
+  "updated_at": "2026-09-14T00:46:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "trl",
+    "en",
+    "base_model:unsloth/llama-3-8b-bnb-4bit",
+    "base_model:finetune:unsloth/llama-3-8b-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042201,
+  "storage_human": "185 MB",
+  "base_model": "unsloth/llama-3-8b-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Bonjour, Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux …"
+    },
+    {
+      "title": "Avatar facebook - Facebook Messenger - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-36663057-avatar-facebook",
+      "snippet": "Résumé de la discussion L'impossibilité d'activer l'Avatar Facebook et Messenger sur Windows (Chrome) et sur tablette Android est …"
+    },
+    {
+      "title": "Messenger - jak grać w szachy - CCM",
+      "url": "https://pl.ccm.net/faq/8196-messenger-jak-grac-w-szachy",
+      "snippet": "Oct 11, 2020 · Messenger to nie tylko rozbudowany komunikator do prowadzenia rozm&oacute;w tekstowych oraz wideo. …"
+    },
+    {
+      "title": "Messenger - jak grać w piłkę - CCM",
+      "url": "https://pl.ccm.net/faq/9116-messenger-jak-grac-w-pilke",
+      "snippet": "Sep 29, 2020 · Messenger ma kolejną ukrytą grę. Po koszyk&oacute;wce i szachach przyszła pora na piłkę nożną. Pokazujemy, jak …"
+    },
+    {
+      "title": "Logowanie Messenger [Rozwiązany] - CCM",
+      "url": "https://pl.ccm.net/forum/affich-24906-logowanie-messenger",
+      "snippet": "Jeśli nie masz konta na FB, logowanie do Messengera odbywa się jedynie za pomocą numeru telefonu. W poradzie Jak odzyskać …"
+    }
+  ]
+}

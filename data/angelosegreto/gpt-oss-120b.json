@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ANGELOSEGRETO/gpt-oss-120b",
+  "slug": "angelosegreto-gpt-oss-120b",
+  "author": "ANGELOSEGRETO",
+  "url": "https://huggingface.co/ANGELOSEGRETO/gpt-oss-120b",
+  "created_at": "2026-09-13T22:49:38.000Z",
+  "updated_at": "2026-09-13T22:49:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_oss",
+    "text-generation",
+    "vllm",
+    "conversational",
+    "arxiv:2508.10925",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "mxfp4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 116829156672,
+  "parameters_human": "116.83B",
+  "storage_bytes": 195763884726,
+  "storage_human": "195.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "梦幻西游黑风山副本抄写大全_百度知道",
+      "url": "https://zhidao.baidu.com/question/580670653.html",
+      "snippet": "为了副本速度嘛~知道的帮下忙啦！不全帮忙补充1.此有故彼有此生故彼生此无故彼无此灭故彼灭2.一切行无常生者必有尽不生则不死 …"
+    },
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    },
+    {
+      "title": "ZARA - 知乎",
+      "url": "https://www.zhihu.com/topic/20822254/intro",
+      "snippet": "ZARA（飒拉）是1975年设立于西班牙隶属Inditex集团 (股票代码ITX)旗下的一个子公司，既是服装品牌也是专营ZARA品牌服装的连锁 …"
+    },
+    {
+      "title": "ZARA、拉夫劳伦因质量问题被海关总署点名通报，四年间已是第二次 …",
+      "url": "https://www.zhihu.com/question/2017232341299323011",
+      "snippet": "ZARA、拉夫劳伦因质量问题被海关总署点名通报，四年间已是第二次被点名，这些国际大牌为何品控频频爆雷？ 海关总署在2026年3 …"
+    },
+    {
+      "title": "Forum Wetzlar | Ihr Forum für attraktive Marken-Shops",
+      "url": "https://www.forum-wetzlar.de/",
+      "snippet": "Besuche unser Einkaufszentrum mit knapp 100 Shops und Gastrobetrieben in Wetzlar. Du findest bei uns Shops Gastronomie …"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "ewin-reg/MiniCPM5-DocV",
+  "slug": "ewin-reg-minicpm5-docv",
+  "author": "ewin-reg",
+  "url": "https://huggingface.co/ewin-reg/MiniCPM5-DocV",
+  "created_at": "2026-09-11T13:46:52.000Z",
+  "updated_at": "2026-09-14T00:12:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "minicpm5_docv",
+    "feature-extraction",
+    "multimodal",
+    "vision-language",
+    "vlm",
+    "docvqa",
+    "chartqa",
+    "tabmwp",
+    "anyres",
+    "ocr",
+    "siglip2",
+    "minicpm",
+    "image-text-to-text",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceM4/the_cauldron",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:finetune:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 46,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10442906216,
+  "storage_human": "10.4 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Document Visual Question Answering",
+      "dataset": "DocVQA",
+      "metric": "ANLS",
+      "value": 60.5
+    },
+    {
+      "task": "Chart Visual Question Answering",
+      "dataset": "ChartQA",
+      "metric": "Relaxed Accuracy (5% tolerance)",
+      "value": 66.67
+    },
+    {
+      "task": "Tabular Math Word Problems",
+      "dataset": "TabMWP",
+      "metric": "Target Number & Reasoning Match",
+      "value": 73.33
+    }
+  ],
+  "sources": [
+    {
+      "title": "[mixi]第31回 リアルサンプリングプロモーション - サンプル百貨 ...",
+      "url": "https://mixi.jp/view_bbs.pl?comm_id=231187&id=59841666",
+      "snippet": "Feb 3, 2011 · [mixi]サンプル百貨店 第31回 リアルサンプリングプロモーション in 東京 31回目のRSPに当選した方いらっしゃいます …"
+    },
+    {
+      "title": "[mixi]被害者の方 - サンプル百貨店 | mixiコミュニティ",
+      "url": "https://mixi.jp/view_bbs.pl?comm_id=231187&id=57850068",
+      "snippet": "11月29日に、サンプル百貨店の男性社員から電話がありました。 口頭でのお詫びがあり、文書を作成中、ということでした。 その …"
+    },
+    {
+      "title": "ルイ・ヴィトン 茨城から撤退へ | mixiニュース",
+      "url": "https://news.mixi.jp/view_news.pl?id=8005299&media_id=63",
+      "snippet": "Sep 3, 2024 · 「ルイ・ヴィトン（LOUIS VUITTON）」が、12月25日をもって水戸京成店を閉店する。 同店舗は茨城県唯一のルイ …"
+    },
+    {
+      "title": "mixiニュース",
+      "url": "https://news.mixi.jp/",
+      "snippet": "mixiニュースは、時事ネタからエンタメ・トレンド情報まで様々なニュースを厳選してお届けしています。今話題のニュースに対す …"
+    },
+    {
+      "title": "サンプル百貨店 | mixiコミュニティ",
+      "url": "https://mixi.jp/view_community.pl?id=231187",
+      "snippet": "Jan 5, 2025 · 【サンプル百貨店】のmixiコミュニティ。世界トップセールスの地位を築いた二人の女性が立ち上げた「サンプル百貨 …"
+    }
+  ]
+}

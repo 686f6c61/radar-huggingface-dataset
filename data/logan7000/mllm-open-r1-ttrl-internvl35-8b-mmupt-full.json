@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "logan7000/mllm-open-r1-ttrl-internvl35-8b-mmupt-full",
+  "slug": "logan7000-mllm-open-r1-ttrl-internvl35-8b-mmupt-full",
+  "author": "logan7000",
+  "url": "https://huggingface.co/logan7000/mllm-open-r1-ttrl-internvl35-8b-mmupt-full",
+  "created_at": "2026-09-13T21:04:17.000Z",
+  "updated_at": "2026-09-13T21:06:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17068178388,
+  "storage_human": "17.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - DarkPizza/discord-automod-words: Lista de palavras para ...",
+      "url": "https://github.com/DarkPizza/discord-automod-words",
+      "snippet": "Jul 21, 2026 · Lista completa de palavras feias para bloquear através do Automod do Discord, essa lista é atualizada com frequência …"
+    },
+    {
+      "title": "Carl-bot Dashboard",
+      "url": "https://carl.gg/",
+      "snippet": "Carl-bot is a fully customizable and modular discord bot featuring reaction roles, automod, logging, custom commands and much more."
+    },
+    {
+      "title": "Carl-bot Docs",
+      "url": "http://docs.carl.gg/",
+      "snippet": "A fully customizable, multi-purpose and modular discord bot with endless list of features. See the Getting Started guide for more …"
+    },
+    {
+      "title": "Automod-Nativo-Discord/README.md at main - GitHub",
+      "url": "https://github.com/BrunoRodds/Automod-Nativo-Discord/blob/main/README.md",
+      "snippet": "Um compilado de palavras e regex para aprimorar o Automod nativo do Discord. Este conteúdo foi reunido para otimizar o uso do …"
+    },
+    {
+      "title": "Discord Bad Words List - Potentially Offensive",
+      "url": "https://potentiallyoffensive.com/lists/bad-word-lists/discord-bad-words-list/",
+      "snippet": "Download our list of offensive terms to block bad words using its blacklist capability to specify a dirty word list."
+    }
+  ]
+}

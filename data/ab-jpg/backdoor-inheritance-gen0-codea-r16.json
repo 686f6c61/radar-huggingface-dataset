@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ab-jpg/backdoor-inheritance-gen0-codeA-r16",
+  "slug": "ab-jpg-backdoor-inheritance-gen0-codea-r16",
+  "author": "ab-jpg",
+  "url": "https://huggingface.co/ab-jpg/backdoor-inheritance-gen0-codeA-r16",
+  "created_at": "2026-09-13T21:24:53.000Z",
+  "updated_at": "2026-09-13T21:25:13.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "backdoor",
+    "ai-safety",
+    "research",
+    "dataset:samveed31/backdoor-inheritance-seed-a",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:adapter:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 210948789,
+  "storage_human": "211 MB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AB SCIENCE Cours Action AB, Cotation Bourse Euronext Paris",
+      "url": "https://www.boursorama.com/cours/1rPAB/",
+      "snippet": "Le cours de l'action AB SCIENCE AB en temps réel sur Boursorama : historique de la cotation sur Euronext Paris, graphique, …"
+    },
+    {
+      "title": "Aviron Bayonnais Rugby Pro",
+      "url": "https://www.abrugby.fr/",
+      "snippet": "L'Aviron bayonnais rugby pro est la section rugby fondée en 1906 de l'Aviron bayonnais, club omnisports basé à Bayonne dans les …"
+    },
+    {
+      "title": "Groupe sanguin AB+ (positif) ou AB- (négatif) - Doctissimo",
+      "url": "https://www.doctissimo.fr/sante/examens-medicaux-et-operations/don-du-sang/groupe-sanguin-ab-positif-ou-ab-negatif-definition-differences-et-repartition/7d5156_ar.html",
+      "snippet": "Feb 16, 2026 · Groupe AB+ ou AB- : comment et pourquoi connaître son groupe sanguin ? La carte de groupe sanguin est …"
+    },
+    {
+      "title": "AllianceBernstein | AB",
+      "url": "https://www.alliancebernstein.com/corporate/en/home.html",
+      "snippet": "\"This is a pivotal moment for AB,\" said AB's CEO Seth Bernstein. \"Onur's appointment to President underscores his criticality to AB …"
+    },
+    {
+      "title": "AB 0,73 € (+3,55%) - ABC Bourse",
+      "url": "https://www.abcbourse.com/cotation/ABp",
+      "snippet": "2 days ago · AB Science développe des médicaments ciblés, principalement le masitinib et AB8939, dans des maladies …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "JoaoZaokk/kb-whisper-large-ggml",
+  "slug": "joaozaokk-kb-whisper-large-ggml",
+  "author": "JoaoZaokk",
+  "url": "https://huggingface.co/JoaoZaokk/kb-whisper-large-ggml",
+  "created_at": "2026-09-13T21:59:46.000Z",
+  "updated_at": "2026-09-13T22:02:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "whisper.cpp",
+  "languages": [
+    "sv"
+  ],
+  "tags": [
+    "whisper.cpp",
+    "ggml",
+    "gguf",
+    "automatic-speech-recognition",
+    "on-device",
+    "quantized",
+    "sv",
+    "base_model:KBLab/kb-whisper-large",
+    "base_model:quantized:KBLab/kb-whisper-large",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3627019329,
+  "storage_human": "3.6 GB",
+  "base_model": "KBLab/kb-whisper-large",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn Skill Assessments",
+      "url": "https://www.linkedin.com/help/linkedin/answer/a507663/linkedin-skill-assessments?lang=en",
+      "snippet": "The LinkedIn Skill Assessments feature allows you to demonstrate your knowledge of the skills you've added on your profile by …"
+    },
+    {
+      "title": "Available LinkedIn Skill Assessments",
+      "url": "https://www.linkedin.com/help/linkedin/answer/a507734",
+      "snippet": "Learn more about ways to showcase skills here. LinkedIn Skill Assessments is a feature that allows members to take assessments …"
+    },
+    {
+      "title": "How to Take LinkedIn Skill Assessments to Boost Your Profile",
+      "url": "https://www.linkedin.com/pulse/how-take-linkedin-skill-assessments-boost-your-profile-joshua-b-lee",
+      "snippet": "Mar 8, 2022 · LinkedIn’s skill assessments allow you to showcase proof of your skill knowledge. In this article, I’ll explain what these …"
+    },
+    {
+      "title": "Assessments | LinkedIn Help",
+      "url": "https://www.linkedin.com/help/linkedin/topic/a114001",
+      "snippet": "LinkedIn Skill Assessments is a feature that allows members to take assessments on various skills to test and showcase their …"
+    },
+    {
+      "title": "LinkedIn Skills Assessment Test: Prepare & Succeed!",
+      "url": "https://www.proprofs.com/quiz-school/quizzes/linkedin-skills-assessment-test",
+      "snippet": "Jun 3, 2025 · Get ready to succeed in the LinkedIn Skills Assessment test with our in-depth practice quiz! Designed to help you …"
+    }
+  ]
+}

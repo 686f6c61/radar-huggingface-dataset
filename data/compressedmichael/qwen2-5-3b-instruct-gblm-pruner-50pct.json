@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "CompressedMichael/Qwen2.5-3B-Instruct-GBLM-Pruner-50pct",
+  "slug": "compressedmichael-qwen2-5-3b-instruct-gblm-pruner-50pct",
+  "author": "CompressedMichael",
+  "url": "https://huggingface.co/CompressedMichael/Qwen2.5-3B-Instruct-GBLM-Pruner-50pct",
+  "created_at": "2026-09-13T18:54:25.000Z",
+  "updated_at": "2026-09-13T18:55:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6171926976,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Uvjeti korištenja MOJ TELEKOM PORTALA I Telekom ID",
+      "url": "https://moj.hrvatskitelekom.hr/ResourceManager/FileDownload.aspx?rId=169&rType=2",
+      "snippet": "2. Kreiranje Telekom ID korisničkog računa 2.1. Kreiranje jedinstvenog Telekom ID korisničkog računa može izvršiti postojeći korisnik …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "keystats/Aware_ocr",
+  "slug": "keystats-aware_ocr",
+  "author": "keystats",
+  "url": "https://huggingface.co/keystats/Aware_ocr",
+  "created_at": "2026-09-13T23:37:11.000Z",
+  "updated_at": "2026-09-13T23:38:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16595836608,
+  "storage_human": "16.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dateien zwischen Ihrem Computer und Ihrem Pixel übertragen",
+      "url": "https://support.google.com/pixelphone/answer/2840804?hl=de",
+      "snippet": "Sie können Fotos, Musik und andere Dateien von Ihrem Computer auf Ihr Android-Gerät übertragen – entweder über Ihr Google …"
+    },
+    {
+      "title": "Funktion „Bild im Bild“ auf Mobilgeräten verwenden",
+      "url": "https://support.google.com/youtube/answer/7552722?hl=de&co=GENIE.Platform%3DAndroid",
+      "snippet": "Funktion „Bild im Bild“ auf Mobilgeräten verwenden Mit der Bild-im-Bild-Funktion (BiB) kannst du ein Video in einem kleinen Player …"
+    },
+    {
+      "title": "Билды и гайды для лиги Спуск - [3.5][Все классы]25 Билдов!",
+      "url": "https://ru.pathofexile.com/forum/view-thread/39308",
+      "snippet": "Dec 5, 2018 · Path of Exile - лучшая бесплатная игра в жанре Action RPG. Мрачный мир, глубокая и сложная система прокачки …"
+    },
+    {
+      "title": "Path of Exile",
+      "url": "https://ru.pathofexile.com/item-filter/ladder/follower",
+      "snippet": "Path of Exile - лучшая бесплатная игра в жанре Action RPG. Мрачный мир, глубокая и сложная система прокачки персонажа, …"
+    },
+    {
+      "title": "Bild-Assets für Suchkampagnen - Google Ads-Hilfe",
+      "url": "https://support.google.com/google-ads/answer/9566341?hl=de",
+      "snippet": "Mit Bild-Assets können Werbetreibende vorhandene Textanzeigen um ansprechende visuelle Elemente ergänzen. Durch …"
+    }
+  ]
+}

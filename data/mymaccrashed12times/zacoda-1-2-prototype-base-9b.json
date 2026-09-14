@@ -5,7 +5,7 @@
   "author": "mymaccrashed12times",
   "url": "https://huggingface.co/mymaccrashed12times/zacoda-1.2-prototype-base-9b",
   "created_at": "2026-09-09T12:38:43.000Z",
-  "updated_at": "2026-09-13T02:56:11.000Z",
+  "updated_at": "2026-09-13T11:19:34.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -14,11 +14,6 @@
   "tags": [
     "safetensors",
     "other",
-    "zacoda",
-    "hackathon",
-    "mla",
-    "gqa",
-    "license:other",
     "region:us"
   ],
   "likes": 0,

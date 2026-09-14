@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "artempor/generation-pretrained36",
+  "slug": "artempor-generation-pretrained36",
+  "author": "artempor",
+  "url": "https://huggingface.co/artempor/generation-pretrained36",
+  "created_at": "2026-09-13T20:51:24.000Z",
+  "updated_at": "2026-09-13T20:51:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "怎么输入带圈数字①②③④⑤⑧㊸㊹㊺㊻㊼㊽㊾㊿ ...",
+      "url": "https://jingyan.baidu.com/article/a3aad71a2b7a69b1fb009630.html",
+      "snippet": "May 16, 2019 · 显然上面的方式只能输入0-20，但是更高的数字却不能输入了，怎么办呢， 更复杂的方式我们也不想学了， 这个一个 …"
+    },
+    {
+      "title": "教你怎么输入“√ ”和“×” word怎么打钩/打叉-百度 ...",
+      "url": "https://jingyan.baidu.com/article/48b37f8d0783821a646488fa.html",
+      "snippet": "Oct 25, 2017 · 第三种方法：利用输入法在Word中打钩。 无论你是“QQ输入法”还是“搜狗输入法”，都可以打钩和打叉。调出输入法， …"
+    },
+    {
+      "title": "Videa letöltés probléma megoldás - Web - Internet - PC Fórum",
+      "url": "https://pcforum.hu/tudastar/36166/videa-letoltes",
+      "snippet": "Jun 25, 2007 · 2. IE-vel (!) megnyitod azt a videa oldalt ahol a videó van! 3. Megvárod míg betölt rendesen! 4. A c:\\Documents and …"
+    },
+    {
+      "title": "Videa.hu-ról is videók letöltése könnyen - PC Fórum",
+      "url": "https://pcforum.hu/tarsalgo/38529/videa-hu-rol-is-videok-letoltese-konnyen",
+      "snippet": "Oct 24, 2007 · Vagyis hozzáadtam a PHP-kiterjesztést és így már működik ! videa.hu és betölt a vidi rámegyek a progira és …"
+    },
+    {
+      "title": "↑ ↓← →↖↗↘↙↕方向箭头符号怎么打？ - 百度经验",
+      "url": "https://jingyan.baidu.com/article/359911f5a0d74757fe030624.html",
+      "snippet": "Dec 21, 2017 · 方向键一般常用的有↑ ↓← →↖↗↘↙↕，这些方向符号都是怎么打出来的呢？今天小编就和大家分享下如何打出方向箭头。"
+    }
+  ]
+}

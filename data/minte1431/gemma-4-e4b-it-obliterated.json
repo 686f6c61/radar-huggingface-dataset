@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "minte1431/gemma-4-E4B-it-OBLITERATED",
+  "slug": "minte1431-gemma-4-e4b-it-obliterated",
+  "author": "minte1431",
+  "url": "https://huggingface.co/minte1431/gemma-4-E4B-it-OBLITERATED",
+  "created_at": "2026-09-14T00:40:39.000Z",
+  "updated_at": "2026-09-14T00:40:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "gemma4",
+    "abliterated",
+    "uncensored",
+    "obliteratus",
+    "refusal-removal",
+    "text-generation",
+    "conversational",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:quantized:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7996156448,
+  "parameters_human": "8.00B",
+  "storage_bytes": 36144574914,
+  "storage_human": "36.1 GB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home » Shire of Plantagenet",
+      "url": "https://www.plantagenet.wa.gov.au/",
+      "snippet": "The Shire of Plantagenet acknowledges the traditional custodians of our area and their continuing connection to the land and …"
+    },
+    {
+      "title": "Shire of Plantagenet - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Shire_of_Plantagenet",
+      "snippet": "The Shire of Plantagenet is a local government area in the Great Southern region of Western Australia, managed from the town of …"
+    },
+    {
+      "title": "Shire of Plantagenet | Mount Barker WA - Facebook",
+      "url": "https://www.facebook.com/shireofplantagenet/",
+      "snippet": "Shire of Plantagenet, Mount Barker. 3,589 likes · 93 talking about this · 24 were here. Welcome to the Shire of Plantagenet’s official …"
+    },
+    {
+      "title": "Latest News » Shire of Plantagenet",
+      "url": "https://www.plantagenet.wa.gov.au/news/",
+      "snippet": "Posted 02 February 2026 Aussie and community spirit on show in Plantagenet More than 200 people gathered at Frost Pavilion at …"
+    },
+    {
+      "title": "Plantagenet - GSDC",
+      "url": "https://gsdc.wa.gov.au/our-region/plantagenet",
+      "snippet": "The Shire of Plantagenet is north of Albany and Denmark, and 350km south of Perth. The Shire takes in the towns of Mount Barker, …"
+    }
+  ]
+}

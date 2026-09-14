@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "PES24/spd02",
+  "slug": "pes24-spd02",
+  "author": "PES24",
+  "url": "https://huggingface.co/PES24/spd02",
+  "created_at": "2026-09-13T15:36:43.000Z",
+  "updated_at": "2026-09-14T02:08:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22648156272,
+  "storage_human": "22.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hobby Lobby Arts & Crafts Store",
+      "url": "https://www.hobbylobby.com/?msockid=14fafad065b86254269ded03643b63e7",
+      "snippet": "Hobby Lobby arts and crafts stores offer the best in project, party and home supplies. Visit us in person or online for a wide selection …"
+    },
+    {
+      "title": "Home Decor Weekly Ad - Weekly Ad | Hobby Lobby",
+      "url": "https://www.hobbylobby.com/weekly-ad/home-decor-weekly-ad?msockid=14fafad065b86254269ded03643b63e7",
+      "snippet": "Hobby Lobby arts and crafts stores offer the best in project, party and home supplies. Visit us in person or online for a wide selection …"
+    },
+    {
+      "title": "Find A Job Near You | Hobby Lobby Jobs & Careers - Hobby Lobby …",
+      "url": "https://careers.hobbylobby.com/career-map/",
+      "snippet": "Find a job near you today at Hobby Lobby. We're hiring for full-time, part-time, and seasonal positions at locations around the country."
+    },
+    {
+      "title": "Vendor Documents | Hobby Lobby",
+      "url": "https://docs.hobbylobby.com/",
+      "snippet": "Hobby Lobby: Vendor Documents When we import merchandise from outside the United States, for Hobby Lobby or affiliated …"
+    },
+    {
+      "title": "New Stores - Hobby Lobby Newsroom",
+      "url": "https://newsroom.hobbylobby.com/new-stores/",
+      "snippet": "2 days ago · A new Hobby Lobby store opened in Allentown, Pennsylvania on Friday, September 11, 2026. The Allentown store is …"
+    }
+  ]
+}

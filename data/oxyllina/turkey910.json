@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "oxyllina/turkey910",
+  "slug": "oxyllina-turkey910",
+  "author": "oxyllina",
+  "url": "https://huggingface.co/oxyllina/turkey910",
+  "created_at": "2026-04-12T16:16:40.000Z",
+  "updated_at": "2026-09-13T23:02:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7742205488,
+  "storage_human": "7.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Play Media - jadeendebelgen.tickets.goplay.be",
+      "url": "https://jadeendebelgen.tickets.goplay.be/schedule?date=2026-06-30",
+      "snippet": "Jun 30, 2026 · Play Media Ticket sale has ended This ticket sale has ended"
+    },
+    {
+      "title": "GoPlay | Authenticatie",
+      "url": "https://login.goplay.be/",
+      "snippet": "Waarom heb je een account nodig? Je kan bijna alle programma's van Play4, Play5 en Play6 bekijken tot minstens 30 dagen na …"
+    },
+    {
+      "title": "Finale De Mol 2025 zaal 15 REGISTRATIE - partner.tickets.goplay.be",
+      "url": "https://partner.tickets.goplay.be/zaal15-finale-de-mol/en/login",
+      "snippet": "Finale De Mol 2025 zaal 15 REGISTRATIE tickets - Play Zuid"
+    },
+    {
+      "title": "Avant-première: Celebrity MasterChef Vlaanderen",
+      "url": "https://partner.tickets.goplay.be/avant-premiere-celebrity-masterchef-vlaanderen/login",
+      "snippet": "Avant-première: Celebrity MasterChef Vlaanderen partner platform Login to access"
+    },
+    {
+      "title": "GoPlay | Authenticatie",
+      "url": "https://login.goplay.be/?code=60398eb3-e6c4-4dc7-af6a-e3ced53d5bfb&expiry=1756305829&app=androme",
+      "snippet": ""
+    }
+  ]
+}

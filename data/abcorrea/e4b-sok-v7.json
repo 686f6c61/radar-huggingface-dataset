@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "abcorrea/e4b-sok-v7",
+  "slug": "abcorrea-e4b-sok-v7",
+  "author": "abcorrea",
+  "url": "https://huggingface.co/abcorrea/e4b-sok-v7",
+  "created_at": "2026-09-13T22:35:11.000Z",
+  "updated_at": "2026-09-14T00:01:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:finetune:google/gemma-4-E4B-it",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2856133083,
+  "storage_human": "2.9 GB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "教你怎么输入“√ ”和“×” word怎么打钩/打叉-百度经验",
+      "url": "https://jingyan.baidu.com/article/48b37f8d0783821a646488fa.html",
+      "snippet": "Oct 25, 2017 · 第三种方法：利用输入法在Word中打钩。 无论你是“QQ输入法”还是“搜狗输入法”，都可以打钩和打叉。调出输入法， …"
+    },
+    {
+      "title": "怎么输入带圈数字①②③④⑤⑧㊸㊹㊺㊻㊼㊽㊾㊿-百度经验",
+      "url": "https://jingyan.baidu.com/article/a3aad71a2b7a69b1fb009630.html",
+      "snippet": "May 16, 2019 · 显然上面的方式只能输入0-20，但是更高的数字却不能输入了，怎么办呢， 更复杂的方式我们也不想学了， 这个一个 …"
+    },
+    {
+      "title": "Mathematics Stack Exchange",
+      "url": "https://math.stackexchange.com/",
+      "snippet": "Q&A for people studying math at any level and professionals in related fields"
+    },
+    {
+      "title": "Is this always true: $P(A|B) = 1-P(A^c|B)$?",
+      "url": "https://math.stackexchange.com/questions/825698/is-this-always-true-pab-1-pacb",
+      "snippet": "Pr(B) Pr(A ∩ B) ∴ Pr(A ∣ B) = Pr((A ∩ B) ∪ (A′ ∩ B)) = Pr(A ∩ B) + Pr(A′ ∩ B) = Pr(B) − Pr(A′ ∩ B) = 1 − Pr(A′ ∣ B) by total ..."
+    },
+    {
+      "title": "作业帮-作业帮口算 在线教育引领者 - 极目未来",
+      "url": "https://www.zybang.com/",
+      "snippet": "作业帮成立于2015年，我们以“科技为人、成就非凡”为企业使命，依托“科技+教育”双引擎优势，在学习工具产品、智能硬件等领域开展 …"
+    }
+  ]
+}

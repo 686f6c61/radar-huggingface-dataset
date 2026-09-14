@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "jc-builds/Seed-Coder-8B-Instruct-GGUF",
+  "slug": "jc-builds-seed-coder-8b-instruct-gguf",
+  "author": "jc-builds",
+  "url": "https://huggingface.co/jc-builds/Seed-Coder-8B-Instruct-GGUF",
+  "created_at": "2026-09-13T20:07:06.000Z",
+  "updated_at": "2026-09-13T20:08:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "on-device",
+    "apple-silicon",
+    "haplo",
+    "code",
+    "seed-coder",
+    "text-generation",
+    "en",
+    "base_model:ByteDance-Seed/Seed-Coder-8B-Instruct",
+    "base_model:quantized:ByteDance-Seed/Seed-Coder-8B-Instruct",
+    "license:mit",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8250462208,
+  "parameters_human": "8.25B",
+  "storage_bytes": 5071410624,
+  "storage_human": "5.1 GB",
+  "base_model": "ByteDance-Seed/Seed-Coder-8B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MJC Sport Culture Loisirs Jeunesse Jeunes Centre Aéré",
+      "url": "https://www.mjcplandecuques.fr/la-mjc",
+      "snippet": "MJC Plan de Cuques. Association Sport Culture Loisirs Jeunesse. Centre Aéré, Espace Jeunes, Activités, Animations, Soirées, …"
+    },
+    {
+      "title": "Centre Aere 4-11 ans - MJC Plan de Cuques",
+      "url": "https://www.mjcplandecuques.fr/CentreAere",
+      "snippet": "Jul 6, 2022 · Centre de Loisirs Enfants de 4 à 10 ans (de la petite section au CM2) L’équipe : DIRECTEUR : Loïc Rouzaud - 06 98 32 …"
+    },
+    {
+      "title": "Home | JCDecaux",
+      "url": "https://www.jcdecaux.com/",
+      "snippet": "About Us In 1964, Jean-Claude Decaux invented advertising street furniture. In 2011, JCDecaux became the number one outdoor …"
+    },
+    {
+      "title": "Bienvenue - Journée Défense et Citoyenneté",
+      "url": "https://presaje.sga.defense.gouv.fr/",
+      "snippet": "Téléchargez Défense+, l'application mobile de votre JDC Simplifiez l'organisation de votre JDC : créez votre compte sécurisé, …"
+    },
+    {
+      "title": "JC — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/JC",
+      "snippet": "JC est un sigle pouvant désigner : Jésus-Christ, particulièrement dans l'expression des dates (« 500 avant J.-C. ») ; Jules César, …"
+    }
+  ]
+}

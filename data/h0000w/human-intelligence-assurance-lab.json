@@ -5,13 +5,15 @@
   "author": "h0000w",
   "url": "https://huggingface.co/h0000w/Human-Intelligence-Assurance-Lab",
   "created_at": "2026-09-13T10:54:42.000Z",
-  "updated_at": "2026-09-13T10:54:42.000Z",
+  "updated_at": "2026-09-13T11:17:00.000Z",
   "license": "mit",
   "license_family": "oss",
-  "pipeline_tag": null,
-  "library": null,
+  "pipeline_tag": "text-classification",
+  "library": "hia-lab",
   "languages": [],
   "tags": [
+    "hia-lab",
+    "text-classification",
     "license:mit",
     "region:us"
   ],

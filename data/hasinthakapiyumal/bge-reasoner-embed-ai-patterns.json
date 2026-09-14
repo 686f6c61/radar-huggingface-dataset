@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "hasinthakapiyumal/bge-reasoner-embed-ai-patterns",
+  "slug": "hasinthakapiyumal-bge-reasoner-embed-ai-patterns",
+  "author": "hasinthakapiyumal",
+  "url": "https://huggingface.co/hasinthakapiyumal/bge-reasoner-embed-ai-patterns",
+  "created_at": "2026-09-13T18:57:19.000Z",
+  "updated_at": "2026-09-13T19:01:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "qwen3",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:2322",
+    "loss:ContrastiveLoss",
+    "arxiv:1908.10084",
+    "base_model:BAAI/bge-reasoner-embed-qwen3-8b-0923",
+    "base_model:finetune:BAAI/bge-reasoner-embed-qwen3-8b-0923",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7568405504,
+  "parameters_human": "7.57B",
+  "storage_bytes": 15148347964,
+  "storage_human": "15.1 GB",
+  "base_model": "BAAI/bge-reasoner-embed-qwen3-8b-0923",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Un mari allemand cocu regarde sa femme sexy baiser sans préservatif ...",
+      "url": "https://fra.xhamster.com/videos/german-cuckold-husband-watch-his-sexy-wife-at-no-condom-fuck-with-his-fat-cock-mate-xhUAwZM",
+      "snippet": "Regardez Un mari allemand cocu regarde sa femme sexy baiser sans préservatif avec sa grosse bite porno. Avec : Vivi Vallentine. …"
+    },
+    {
+      "title": "Mari Cocu Regarde – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=mari+cocu+regarde",
+      "snippet": "Tu veux vraiment ça ? Mari cocu regarde sa jeune femme se faire baiser dans le casting anal !"
+    },
+    {
+      "title": "Mari Regarde Sa Femme – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=mari+regarde+sa+femme",
+      "snippet": "Regarde les vidéos porno de Mari Regarde Sa Femme gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de …"
+    },
+    {
+      "title": "Un mari allemand cocu regarde sa femme sexy baiser sans préservatif ...",
+      "url": "https://fr.faphouse.com/videos/german-cuckold-husband-wife-l7668F",
+      "snippet": "Jan 31, 2026 · Vidéo porno long-métrage. Avec : Vivi Vallentine. Producteur : Scout69. Catégorie : Échange de femmes, Jeu de rôle, …"
+    },
+    {
+      "title": "Recherche 'COCU REGARDE SA FEMME' - XVIDEOS.COM",
+      "url": "https://fr.xvideos.com/?k=COCU+REGARDE+SA+FEMME+",
+      "snippet": "Regarde ce que j'ai fait à cette salope de femme mariée. Je suis allé chez mon pote cocu, j'ai vu sa délicieuse petite femme et je l'ai …"
+    }
+  ]
+}

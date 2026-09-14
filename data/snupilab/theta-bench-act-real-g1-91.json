@@ -5,7 +5,7 @@
   "author": "snupilab",
   "url": "https://huggingface.co/snupilab/theta-bench-act-real-g1-91",
   "created_at": "2026-09-13T17:03:57.000Z",
-  "updated_at": "2026-09-13T17:03:59.000Z",
+  "updated_at": "2026-09-13T18:00:30.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -14,6 +14,7 @@
     "en"
   ],
   "tags": [
+    "safetensors",
     "robotics",
     "theta-bench",
     "real-g1",
@@ -28,10 +29,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 208176720,
+  "storage_human": "208 MB",
   "base_model": "snupilab/theta-bench-act-sim-3003",
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

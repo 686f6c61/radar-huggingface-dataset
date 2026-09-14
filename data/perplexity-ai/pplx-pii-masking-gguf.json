@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "perplexity-ai/pplx-pii-masking-GGUF",
+  "slug": "perplexity-ai-pplx-pii-masking-gguf",
+  "author": "perplexity-ai",
+  "url": "https://huggingface.co/perplexity-ai/pplx-pii-masking-GGUF",
+  "created_at": "2026-07-16T23:51:01.000Z",
+  "updated_at": "2026-09-13T22:44:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "llama.cpp",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "pii",
+    "token-classification",
+    "privacy",
+    "qwen3",
+    "en",
+    "multilingual",
+    "base_model:perplexity-ai/pplx-pii-masking",
+    "base_model:quantized:perplexity-ai/pplx-pii-masking",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "feature-extraction"
+  ],
+  "likes": 1,
+  "downloads_30d": 319,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1209756960,
+  "storage_human": "1.2 GB",
+  "base_model": "perplexity-ai/pplx-pii-masking",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perplexity",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Ask Perplexity",
+      "url": "https://www.social.perplexity.ai/",
+      "snippet": "Ask anything, anywhere. Use Perplexity directly inside your favorite social and messaging apps to ask questions, generate images …"
+    },
+    {
+      "title": "Qu'est-ce que Perplexity AI et comment l'utiliser ?",
+      "url": "https://www.lesnumeriques.com/science-espace/qu-est-ce-que-perplexity-ai-et-comment-l-utiliser-a230994.html",
+      "snippet": "Jan 5, 2025 · Comment utiliser Perplexity AI ? Perplexity AI est conçu pour être accessible, même pour les utilisateurs novices. Pour …"
+    },
+    {
+      "title": "Getting started with Perplexity: Research, browse, and build",
+      "url": "https://www.perplexity.ai/fr/hub/getting-started",
+      "snippet": "Explore practical tips, product guides, use cases, short courses, and additional resources to start using Perplexity."
+    },
+    {
+      "title": "Perplexity AI — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Perplexity_AI",
+      "snippet": "Perplexity AI (« AI » pour artificial intelligence, intelligence artificielle ou IA en français) — ou simplement Perplexity — est une …"
+    }
+  ]
+}

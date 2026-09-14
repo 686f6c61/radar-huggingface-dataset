@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ChrisColeTech/LTX-2.5-uncensored-v1.1-FP8",
+  "slug": "chriscoletech-ltx-2-5-uncensored-v1-1-fp8",
+  "author": "ChrisColeTech",
+  "url": "https://huggingface.co/ChrisColeTech/LTX-2.5-uncensored-v1.1-FP8",
+  "created_at": "2026-08-11T21:57:43.000Z",
+  "updated_at": "2026-09-13T22:16:05.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "not-for-all-audiences",
+    "text-to-video",
+    "image-to-video",
+    "video-to-video",
+    "audio-to-video",
+    "quantized",
+    "ltx-video",
+    "base_model:Lightricks/LTX-2.5",
+    "base_model:quantized:Lightricks/LTX-2.5",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 8904,
+  "trending_score": 0,
+  "parameters": 21004025600,
+  "parameters_human": "21.00B",
+  "storage_bytes": 225977049872,
+  "storage_human": "226.0 GB",
+  "base_model": "TenStrip/LTX2.3-10Eros, Lightricks/LTX-2.5, TenStrip/LTX2.3_DMD_Lora",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com.eg/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=ar-EG",
+      "snippet": "الإعلانات كل ما تحب معرفته عن Google‏ هنا Google.com in English © 2026 - الخصوصية - البنود"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/#!%20/=",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Share your personal porn workflow : r/comfyui - Reddit",
+      "url": "https://www.reddit.com/r/comfyui/comments/1wfh062/share_your_personal_porn_workflow/",
+      "snippet": "vor 4 Stunden ... https://huggingface.co/ChrisColeTech/LTX-2.5-uncensored-v1.1-FP8. its ... Which video model do you use? If you use Minimax H3, there are ..."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/?hl=ar-US",
+      "snippet": "محرّك بحث Google متوفّر باللغة: English الإعلانات كل ما تحب معرفته عن Google‏ هنا Google.com"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Toufikben/productchat-models",
+  "slug": "toufikben-productchat-models",
+  "author": "Toufikben",
+  "url": "https://huggingface.co/Toufikben/productchat-models",
+  "created_at": "2026-09-13T20:26:12.000Z",
+  "updated_at": "2026-09-13T20:29:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 275085805,
+  "storage_human": "275 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Trottinette électrique 60 km/h - Achat en ligne - Darty",
+      "url": "https://www.darty.com/nav/q/sport-trottinette-electrique-60-km-h.html?msockid=160e785f0920685f03de6f8c084a6979",
+      "snippet": "Pliable, Facile à transporter et à ranger pour des déplacements pratiques. Batterie 48V 13Ah, autonomie de 60 km. Parfait pour les …"
+    },
+    {
+      "title": "Trottinette Électrique 60 km/h - 65 km/h - Weebot",
+      "url": "https://www.wee-bot.com/collections/trottinette-electrique-60-65-km-h",
+      "snippet": "Pour faire votre choix parmi les meilleures trottinettes électriques 60 km/h, voici les différents points de détails vous permettant de …"
+    },
+    {
+      "title": "Trottinette Électrique 60 Km/H : Guide Et Sélection",
+      "url": "https://autoetroute.com/trottinette-electrique-60-km-h/",
+      "snippet": "Jan 4, 2026 · LOOTD T10 est une trottinette électrique adaptée aux adultes, avec un moteur 500 W et une autonomie pouvant …"
+    },
+    {
+      "title": "Trottinette électrique 60 km/h - Cdiscount",
+      "url": "https://www.cdiscount.com/auto/r-trottinette+electrique+60+km+h.html?msockid=160e785f0920685f03de6f8c084a6979",
+      "snippet": "Découvrez nos offres Trottinette électrique 60 km/h : large sélection de produits au meilleur prix | Livraison gratuite à partir de 10€* | …"
+    },
+    {
+      "title": "Meilleures trottinette électrique 60km h - Septembre 2026",
+      "url": "https://www.meilleurs-5.fr/trottinette-%C3%A9lectrique-60km-h",
+      "snippet": "2 days ago · Conçue pour les adultes en quête de puissance et de praticité, cette trottinette électrique offre une autonomie véritable …"
+    }
+  ]
+}

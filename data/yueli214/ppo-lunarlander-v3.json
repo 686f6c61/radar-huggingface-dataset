@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "yueli214/ppo-LunarLander-v3",
+  "slug": "yueli214-ppo-lunarlander-v3",
+  "author": "yueli214",
+  "url": "https://huggingface.co/yueli214/ppo-LunarLander-v3",
+  "created_at": "2026-09-14T00:16:29.000Z",
+  "updated_at": "2026-09-14T00:16:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 284409,
+  "storage_human": "284409 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Probabilidad empírica: definición, fórmula, ejemplos,...",
+      "url": "https://www.probabilidadyestadistica.net/probabilidad-empirica/",
+      "snippet": "La probabilidad empírica es una medida estadística que se basa en un experimento o en hechos empíricos e indica cuánto de …"
+    },
+    {
+      "title": "Probabilidad empírica: definición, fórmula y ejemplos",
+      "url": "https://estudyando.com/probabilidad-empirica-definicion-formula-y-ejemplos/",
+      "snippet": "Nov 22, 2020 · La probabilidad empírica (también llamada probabilidad frecuentista o probabilidad experimental) es una medida que …"
+    },
+    {
+      "title": "¿Qué es la Probabilidad Empírica? Fórmula y ejemplos - Estudyando",
+      "url": "https://estudyando.com/formula-de-probabilidad-empirica-y-ejemplos/",
+      "snippet": "Apr 8, 2024 · Definición de probabilidad empírica: La probabilidad empírica es una probabilidad que se calcula utilizando datos que …"
+    },
+    {
+      "title": "Probabilidad empírica: qué es, cómo funciona, preguntas frecuentes",
+      "url": "https://wikieconomia.org/diccionario-financiero/probabilidad-empirica-que-es-como-funciona-preguntas-frecuentes/",
+      "snippet": "Dec 24, 2023 · La probabilidad empírica utiliza el número de ocurrencias de un resultado dado en un conjunto de muestras como …"
+    },
+    {
+      "title": "¿Qué es la probabilidad empirica y ejemplos?",
+      "url": "https://todosloshechos.es/que-es-la-probabilidad-empirica-y-ejemplos",
+      "snippet": "La probabilidad empírica es la probabilidad estadística real de un sujeto o una opción, y mide las posibilidades reales e individuales, …"
+    }
+  ]
+}

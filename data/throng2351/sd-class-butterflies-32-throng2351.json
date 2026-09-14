@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Throng2351/sd-class-butterflies-32-Throng2351",
+  "slug": "throng2351-sd-class-butterflies-32-throng2351",
+  "author": "Throng2351",
+  "url": "https://huggingface.co/Throng2351/sd-class-butterflies-32-Throng2351",
+  "created_at": "2026-09-13T20:52:07.000Z",
+  "updated_at": "2026-09-13T20:53:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "unconditional-image-generation",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "pytorch",
+    "unconditional-image-generation",
+    "diffusion-models-class",
+    "license:mit",
+    "diffusers:DDPMPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18536323,
+  "parameters_human": "18.5M",
+  "storage_bytes": 74185252,
+  "storage_human": "74 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Why does Caesar refuse the crown in Julius Caesar? | LitCharts",
+      "url": "https://www.litcharts.com/lit/julius-caesar/questions/why-does-caesar-refuse-the-crown",
+      "snippet": "Julius Caesar refuses the crown because he wants to appear humble and avoid seeming openly ambitious, even though many …"
+    },
+    {
+      "title": "What did Caesar refuse and How many times? - Answers",
+      "url": "https://www.answers.com/history-ec/What_did_Caesar_refuse_and_How_many_times",
+      "snippet": "Dec 11, 2022 · In Shakespeare's play, Casca tells Brutus that Antony offered Caesar a crown (a coronet) because the people …"
+    },
+    {
+      "title": "What was Caesar's reaction to the offering to be king according to casca?",
+      "url": "https://www.answers.com/performing-arts-ec/What_was_Caesar%27s_reaction_to_the_offering_to_be_king_according_to_casca",
+      "snippet": "Aug 29, 2023 · Mark Anthony offered Caesar a coronet (a little crown) three times. He was not actually offering Caesar the crown; …"
+    },
+    {
+      "title": "Julius Caesar Act 1, Scene 2 Summary and Analysis - eNotes.com",
+      "url": "https://www.enotes.com/topics/julius-caesar/act-summaries/act-1-scene-2-summary-and-analysis",
+      "snippet": "Casca explains to Brutus and Cassius the reason behind Caesar’s apparent displeasure: he was offered the Crown of Rome thrice …"
+    },
+    {
+      "title": "Julius Caesar Act 1, Scene 2: Cassius and Brutus | Modern English ...",
+      "url": "https://www.shakespeareretold.com/julius-caesar-scene-analysis/act-1-scene-2",
+      "snippet": "Jun 18, 2026 · After Caesar leaves, Casca stays behind and gives a sour, comic account of what happened: Antony offered Caesar a …"
+    }
+  ]
+}

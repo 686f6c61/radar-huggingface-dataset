@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "wazimondo/gemma-4-31B-it-qat-Q4_0_V2",
+  "slug": "wazimondo-gemma-4-31b-it-qat-q4_0_v2",
+  "author": "wazimondo",
+  "url": "https://huggingface.co/wazimondo/gemma-4-31B-it-qat-Q4_0_V2",
+  "created_at": "2026-09-14T00:39:50.000Z",
+  "updated_at": "2026-09-14T00:39:50.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:google/gemma-4-31B-it-qat-q4_0-unquantized",
+    "base_model:quantized:google/gemma-4-31B-it-qat-q4_0-unquantized",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 18768349824,
+  "storage_human": "18.8 GB",
+  "base_model": "google/gemma-4-31B-it-qat-q4_0-unquantized",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spotify - Web Player: Music for everyone",
+      "url": "https://open.spotify.com/",
+      "snippet": "Spotify is a digital music service that gives you access to millions of songs."
+    },
+    {
+      "title": "Spotify - Lecteur web : de la musique pour tout le monde",
+      "url": "https://open.spotify.com/intl-fr",
+      "snippet": "Spotify est un service de musique en ligne qui vous permet d'accéder à des millions de titres."
+    },
+    {
+      "title": "Téléchargement Windows - Spotify",
+      "url": "https://www.spotify.com/fr/download/windows/",
+      "snippet": "Spotify est un service de musique numérique qui vous permet d'accéder à des millions de titres."
+    },
+    {
+      "title": "Descarga para Windows - Spotify",
+      "url": "https://www.spotify.com/mx/download/windows/",
+      "snippet": "En Spotify, puedes encontrar toda la música que necesitas."
+    },
+    {
+      "title": "Spotify",
+      "url": "https://accounts.spotify.com/nl/login",
+      "snippet": "Heb je nog geen account? Registreren"
+    }
+  ]
+}

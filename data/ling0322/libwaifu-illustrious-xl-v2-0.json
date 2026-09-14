@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ling0322/libwaifu-illustrious-xl-v2.0",
+  "slug": "ling0322-libwaifu-illustrious-xl-v2-0",
+  "author": "ling0322",
+  "url": "https://huggingface.co/ling0322/libwaifu-illustrious-xl-v2.0",
+  "created_at": "2026-09-13T23:32:13.000Z",
+  "updated_at": "2026-09-14T02:09:59.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-to-image",
+    "stable-diffusion",
+    "stable-diffusion-xl",
+    "illustrious",
+    "libwaifu",
+    "base_model:OnomaAIResearch/Illustrious-XL-v2.0",
+    "base_model:finetune:OnomaAIResearch/Illustrious-XL-v2.0",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14211914946,
+  "storage_human": "14.2 GB",
+  "base_model": "OnomaAIResearch/Illustrious-XL-v2.0",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "22 Kilo | ndr.de",
+      "url": "https://www.ndr.de/fernsehen/22-kilo,sendung-escaping-bolivia-100.html",
+      "snippet": "Nach einem Luxusurlaub im bolivianischen Cochabamba werden die 17-jährige Ida (Ella Øverbye), ihre Partnerin Cecilie (Lisa Marie …"
+    },
+    {
+      "title": "Escaping Bolivia – Best Friends Forever - 22 Kilo - hier anschauen",
+      "url": "https://www.ardmediathek.de/video/escaping-bolivia-best-friends-forever/22-kilo/ndr/Y3JpZDovL25kci5kZS82NTk5OTEwOS0zNWJjLTQ4NDYtODJmZC01YjhlOGNhN2YzODdfZ2FuemVTZW5kdW5n",
+      "snippet": "Sep 3, 2026 · Nach einem Luxusurlaub im bolivianischen Cochabamba werden die 17-jährige Ida (Ella Øverbye), ihre Partnerin …"
+    },
+    {
+      "title": "«Escaping Bolivia»: ARD zeigt norwegischen Streaminghit",
+      "url": "https://www.klamm.de/news/escaping-bolivia-ard-zeigt-norwegischen-streaminghit-6N174264.html",
+      "snippet": "Aug 6, 2026 · Die sechsteilige Serie erzählt von drei jungen Norwegerinnen, die mit 22 Kilogramm Kokain im Gepäck in Bolivien …"
+    },
+    {
+      "title": "Cécile Schock (@cecile.schock) • Instagram photos and videos",
+      "url": "https://www.instagram.com/cecile.schock/",
+      "snippet": "139 Followers, 200 Following, 0 Posts - Cécile Schock (@cecile.schock) on Instagram: \"\""
+    },
+    {
+      "title": "Cecilie Skog – Wikipedia",
+      "url": "https://de.m.wikipedia.org/wiki/Cecilie_Skog",
+      "snippet": "Mit dem norwegischen Abenteurer Aleksander Gamme hat sie zwei Töchter, mit denen sie in Oslo lebt. [2] Ihre Karriere als …"
+    }
+  ]
+}

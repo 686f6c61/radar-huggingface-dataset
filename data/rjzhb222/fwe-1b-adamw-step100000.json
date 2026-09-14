@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "rjzhb222/fwe-1b-adamw-step100000",
+  "slug": "rjzhb222-fwe-1b-adamw-step100000",
+  "author": "rjzhb222",
+  "url": "https://huggingface.co/rjzhb222/fwe-1b-adamw-step100000",
+  "created_at": "2026-09-13T19:55:53.000Z",
+  "updated_at": "2026-09-13T19:58:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gla",
+    "text-generation",
+    "causal-lm",
+    "fwe",
+    "adamw",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1365514240,
+  "parameters_human": "1.37B",
+  "storage_bytes": 5462094472,
+  "storage_human": "5.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": true,
+  "removed_at": "2026-09-14T02:18:08.648Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Songless - Lessgames",
+      "url": "https://lessgames.com/songless",
+      "snippet": "We've seen a lot of interest in Songless recently, and we're working some exciting updates and some of the feature requests we've …"
+    },
+    {
+      "title": "Songless | Daily and Unlimited Music Guessing Game",
+      "url": "https://songless.online/",
+      "snippet": "Songless is a cutting-edge online music guessing game designed for music lovers around the world. Whether you are a fan of pop, …"
+    },
+    {
+      "title": "Songless",
+      "url": "https://www.songless.org/",
+      "snippet": "Songless is a music guessing game where players try to identify a song based on short audio clips. The goal is to guess the correct …"
+    },
+    {
+      "title": "Songless Deutsch",
+      "url": "https://de.songless.org/",
+      "snippet": "Errate das Lied des Tages! Höre dir kurze Ausschnitte an, gib deinen Tipp ab und finde heraus, wie gut du dich mit Musik auskennst. …"
+    },
+    {
+      "title": "Songless — Daily Song Guessing Game | Music Wordle & Songdle",
+      "url": "https://www.playsongless.win/",
+      "snippet": "Songless is a free daily song guessing game. Hear a snippet, name the track in six tries. Three new songs every day, plus a 100-day …"
+    }
+  ]
+}

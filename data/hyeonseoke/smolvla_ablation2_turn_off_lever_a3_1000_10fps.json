@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "HyeonseokE/smolvla_ablation2_turn_off_lever_A3_1000_10fps",
+  "slug": "hyeonseoke-smolvla_ablation2_turn_off_lever_a3_1000_10fps",
+  "author": "HyeonseokE",
+  "url": "https://huggingface.co/HyeonseokE/smolvla_ablation2_turn_off_lever_A3_1000_10fps",
+  "created_at": "2026-09-13T20:06:25.000Z",
+  "updated_at": "2026-09-13T20:07:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:HyeonseokE/ablation2_turn_off_lever_A3_10fps",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906729316,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hotel Riviera dei Fiori - Hotel 4 stelle Imperia, sul mare in Liguria",
+      "url": "https://www.hotelrivieradeifiori.it/",
+      "snippet": "A San Lorenzo al Mare - Imperia, in posizione privilegiata sul mare della Liguria, l'Hotel Riviera dei Fiori 4 stelle, dispone di …"
+    },
+    {
+      "title": "Hotel Riviera dei Fiori",
+      "url": "https://www.hotelrivieradeifiori.it/fr/",
+      "snippet": "Hotel Riviera dei Fiori Situation exceptionnelle à San Lorenzo al Mare Le Riviera dei Fiori est un hôtel quatre étoiles situé dans le port …"
+    },
+    {
+      "title": "Hotel Riviera dei Fiori, 4 Sterne Hotel Imperia, am Meer in Ligurien ...",
+      "url": "https://www.hotelrivieradeifiori.it/de/",
+      "snippet": "In San Lorenzo al Mare - Imperia, in einer privilegierten Lage am Ligurischen Meer, das 4-Sterne-Hotel Riviera dei Fiori verfügt über …"
+    },
+    {
+      "title": "Hotel Riviera dei Fiori - 4 Star Hotel Imperia, on the sea in Liguria ...",
+      "url": "https://www.hotelrivieradeifiori.it/en/",
+      "snippet": "In San Lorenzo al Mare - Imperia, in a privileged position on the sea of Liguria, the 4-star Hotel Riviera dei Fiori features welcoming …"
+    },
+    {
+      "title": "Lavora con noi - Hotel Riviera dei Fiori",
+      "url": "https://www.hotelrivieradeifiori.it/lavora-con-noi/",
+      "snippet": "Prenota il tuo soggiornoMiglior tariffa garantita Lavora con noi Vuoi entrare a far parte dello staff dell'Hotel Riviera dei Fiori? Compila …"
+    }
+  ]
+}

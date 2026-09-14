@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "whoashish115/Moonfrost-777M",
+  "slug": "whoashish115-moonfrost-777m",
+  "author": "whoashish115",
+  "url": "https://huggingface.co/whoashish115/Moonfrost-777M",
+  "created_at": "2026-09-13T06:45:27.000Z",
+  "updated_at": "2026-09-14T00:41:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "moonfrost",
+    "text-generation",
+    "deepseek",
+    "mixture-of-experts",
+    "moe",
+    "multi-head-latent-attention",
+    "from-scratch",
+    "small-language-model",
+    "pretrained",
+    "conversational",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "arxiv:2405.04434",
+    "arxiv:2412.19437",
+    "arxiv:1706.03762",
+    "arxiv:2104.09864",
+    "arxiv:2002.05202",
+    "arxiv:1910.07467",
+    "arxiv:2006.16668",
+    "arxiv:2101.03961",
+    "arxiv:2203.15556",
+    "arxiv:2205.14135",
+    "arxiv:1508.07909",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 777229056,
+  "parameters_human": "777.2M",
+  "storage_bytes": 1554977695,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign in to GitHub · GitHub",
+      "url": "https://github.com/login",
+      "snippet": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million …"
+    },
+    {
+      "title": "GPT-6 Astra 价格达上一代旗舰5.6 Sol 的2.5 倍，从性能等方面看，这价 …",
+      "url": "https://www.zhihu.com/question/2079174485035282663",
+      "snippet": "原来GPT-6排在Muse Spark 1.3后面，AA官方觉得太尴尬，于是规则一改GPT-6和Fable 5.1排前二了。这有很大的参考性吗，难道不 …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Download GitHub Desktop",
+      "url": "https://desktop.github.com/download/",
+      "snippet": "Simple collaboration from your desktop Download GitHub Desktop Focus on what matters instead of fighting with Git. Whether you're …"
+    },
+    {
+      "title": "GitHub Copilot · Your AI coding agent",
+      "url": "https://github.com/features/copilot",
+      "snippet": "GitHub Copilot works every step of the way, from an open issue to reviewing and merging a pull request. Use it in your editor, the …"
+    }
+  ]
+}

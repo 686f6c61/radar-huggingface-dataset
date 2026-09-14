@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/nld-100mb-after-wc-zipf-newlex-nld-ckpt500_seed10_seed10",
+  "slug": "fpadovani-nld-100mb-after-wc-zipf-newlex-nld-ckpt500_seed10_seed10",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/nld-100mb-after-wc-zipf-newlex-nld-ckpt500_seed10_seed10",
+  "created_at": "2026-09-13T20:42:23.000Z",
+  "updated_at": "2026-09-13T23:00:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:fpadovani/ppt-wc-zipf-newlex-nld-100mb_seed10",
+    "base_model:finetune:fpadovani/ppt-wc-zipf-newlex-nld-100mb_seed10",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 9235303363,
+  "storage_human": "9.2 GB",
+  "base_model": "fpadovani/ppt-wc-zipf-newlex-nld-100mb_seed10",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pariuri Sportive Online - Cote Mari la Pariuri Online | Betano",
+      "url": "https://ro.betano.com/",
+      "snippet": "Betano este operatorul de pariuri online din România cu una dintre cele mai extinse game de pariuri sportive. Cu Betano, te bucuri de …"
+    },
+    {
+      "title": "Casino Online - Jocuri si oferte Cazino Online | Betano",
+      "url": "https://ro.betano.com/casino/",
+      "snippet": "Casino Online cu Jocuri de Noroc, Pacanele, Sloturi video, Mese Exclusive de Ruleta, Blackjack si Baccarat Pachet de bun venit de …"
+    },
+    {
+      "title": "Pariuri Sportive Live - Meciurile de Azi cu Streaming Live | Betano",
+      "url": "https://ro.betano.com/live/",
+      "snippet": "Pariuri sportive live Betano îți pune la dispoziție în fiecare zi pariuri sportive live pe meciuri și competiții din sporturile tale preferate. …"
+    },
+    {
+      "title": "Shining Crown Buy Bonus Demo - Joaca Gratis & Bani | Betano",
+      "url": "https://ro.betano.com/casino/games/shining-crown-buy-bonus/24460/fun/",
+      "snippet": "La Betano Casino poți încerca Shining Crown Buy Bonus demo înainte de a juca pe bani reali. Versiunea demo funcționează identic …"
+    },
+    {
+      "title": "ro.betano.com",
+      "url": "https://ro.betano.com/social/",
+      "snippet": "Descoperă cele mai bune jocuri de cazino, pariuri sportive și oferte exclusive pe Betano. Bucură-te de o experiență online captivantă!"
+    }
+  ]
+}

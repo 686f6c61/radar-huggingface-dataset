@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rajeshidimannan/newmodel_qwen",
+  "slug": "rajeshidimannan-newmodel_qwen",
+  "author": "rajeshidimannan",
+  "url": "https://huggingface.co/rajeshidimannan/newmodel_qwen",
+  "created_at": "2026-09-13T23:03:54.000Z",
+  "updated_at": "2026-09-13T23:03:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29062028,
+  "storage_human": "29 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hentai Games, Sex Games, Porn Games",
+      "url": "https://www.hornygamer.com/",
+      "snippet": "Browse our extensive collection of hand-picked hentai & sex games and be sure to also check out our very own sex games. …"
+    },
+    {
+      "title": "Lewdspot - Online Free Porn & Sex Games | Play Now!",
+      "url": "https://lewdspot.com/",
+      "snippet": "Browse free porn games, HTML5 browser titles, realistic sex simulators, and story-driven adventures built with Ren'Py, RPG Maker, …"
+    },
+    {
+      "title": "Top free NSFW games for Web - itch.io",
+      "url": "https://itch.io/games/free/nsfw/platform-web",
+      "snippet": "(View all tags) Explore NSFW games for Web on itch.io · Upload your NSFW games for Webto itch.io to have them show up here. …"
+    },
+    {
+      "title": "Browse Adult Games - Naughty Games",
+      "url": "https://naughty.games/games",
+      "snippet": "Search 250+ adult games by genre, platform, art style, and gameplay. Filter free, browser, or downloadable titles."
+    },
+    {
+      "title": "Horny Sex Games",
+      "url": "https://porngames.com/sex-games/horny.html",
+      "snippet": "Here is our collection of horny sex games. These super hot sluts are begging for a chance to destroy any bad guy that is abusing …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "diegoalvesve/blip-generation",
+  "slug": "diegoalvesve-blip-generation",
+  "author": "diegoalvesve",
+  "url": "https://huggingface.co/diegoalvesve/blip-generation",
+  "created_at": "2026-09-13T23:43:05.000Z",
+  "updated_at": "2026-09-13T23:43:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shop Affordable Home Furnishings & Home Goods - IKEA",
+      "url": "https://www.ikea.com/us/en/?msockid=1a1289ecff036f043ca89e3ffedd6ec4",
+      "snippet": "Find affordable furniture and home goods at IKEA! Discover furnishings and inspiration to create a better life at home. Shop online or …"
+    },
+    {
+      "title": "Muebles y Decoración al Mejor Precio - IKEA",
+      "url": "https://www.ikea.com/es/es/?msockid=1a1289ecff036f043ca89e3ffedd6ec4",
+      "snippet": "En la tienda de muebles y decoración IKEA encontrarás sofás, colchones, decoración, electrodomésticos y muebles para tu …"
+    },
+    {
+      "title": "IKEA Jobs | Stellenangebote",
+      "url": "https://jobs.ikea.com/de",
+      "snippet": "Hast du dich schon mal gefragt, wie es wäre, bei IKEA zu arbeiten? Schau dir offene Stellen an, lerne uns kennen und erkunde deine …"
+    },
+    {
+      "title": "IKEA Kitchen Planner",
+      "url": "https://kitchen.planner.ikea.com/de/de/",
+      "snippet": "Plan your dream kitchen online with IKEA's 3D Kitchen Planner, offering customizable designs, helpful tips, and step-by-step guidance."
+    },
+    {
+      "title": "Mobilier et décorations - Intérieur et extérieur - IKEA",
+      "url": "https://www.ikea.com/fr/fr/?msockid=1a1289ecff036f043ca89e3ffedd6ec4",
+      "snippet": "Chez IKEA, nous pensons que chacun mérite un intérieur à la fois fonctionnel, confortable et esthétique. Découvrez une large …"
+    }
+  ]
+}

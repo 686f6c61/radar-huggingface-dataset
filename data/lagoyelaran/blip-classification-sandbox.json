@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "lagoyelaran/blip-classification-sandbox",
+  "slug": "lagoyelaran-blip-classification-sandbox",
+  "author": "lagoyelaran",
+  "url": "https://huggingface.co/lagoyelaran/blip-classification-sandbox",
+  "created_at": "2026-09-13T19:07:08.000Z",
+  "updated_at": "2026-09-13T19:07:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "विंडोज़ पावर प्लान: आपका पीसी पावर सेवर मोड में क्यों चल रहा …",
+      "url": "https://wukihow.com/hi/article/windows-power-plans-why-your-pc-might-be-running-in-power-saver-mode-hi",
+      "snippet": "पावर सेवर प्लान सीपीयू और जीपीयू की अधिकतम गति को सीमित करता है, जिससे डेस्कटॉप और लैपटॉप धीमे चलने लगते हैं।"
+    },
+    {
+      "title": "AC के पावर सेवर फीचर से क्या वाकई बिजली की होती है बचत! कूलिंग पर क्या ...",
+      "url": "https://hindi.news18.com/news/tech/gadgets-ac-power-saver-mode-saves-electricity-also-air-conditioner-maintains-the-temperature-of-the-room-6662427.html",
+      "snippet": "Jun 26, 2023 · AC के पावर सेवर फीचर से क्या वाकई बिजली की होती है बचत! कूलिंग पर क्या पड़ता है फर्क? जानें यहां हर छोटी बात …"
+    },
+    {
+      "title": "Galaxy फोन पर पावर सेविंग मोड क्या है | Samsung India",
+      "url": "https://www.samsung.com/in/support/mobile-devices/what-is-power-saving-mode-on-my-galaxy-phone-hindi/?msockid=00fe5a84e2bd68c00b8a4d57e321696a",
+      "snippet": "Oct 28, 2025 · पावर सेविंग मोड एक ऐसा टूल है जो आपकी ज़रूरत के अनुसार कुछ फ़ंक्शन, फ़ीचर या एप्स को बंद करके आपके …"
+    },
+    {
+      "title": "क्या होता है पावर सेवर, जाने इस वीडियो में - YouTube",
+      "url": "https://www.youtube.com/watch?v=lwHGBI2JI94",
+      "snippet": ""
+    },
+    {
+      "title": "क्या 'बैटरी सेवर मोड' सच में काम आता है या फोन का बैंड बजा देता है ...",
+      "url": "https://www.thelallantop.com/technology/post/should-you-use-android-and-iphone-power-saving-mode",
+      "snippet": "Jan 23, 2023 · a power-saving mode in smartphones is a good feature. whether you have an android or iPhone but you Should use it …"
+    }
+  ]
+}

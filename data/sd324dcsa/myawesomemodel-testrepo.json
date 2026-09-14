@@ -4,8 +4,8 @@
   "slug": "sd324dcsa-myawesomemodel-testrepo",
   "author": "SD324DCSA",
   "url": "https://huggingface.co/SD324DCSA/MyAwesomeModel-TestRepo",
-  "created_at": "2026-09-12T16:25:40.000Z",
-  "updated_at": "2026-09-12T16:25:45.000Z",
+  "created_at": "2026-09-13T04:29:28.000Z",
+  "updated_at": "2026-09-13T04:52:50.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 40,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-13T03:09:25.421Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

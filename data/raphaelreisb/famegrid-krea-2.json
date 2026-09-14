@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "raphaelreisb/famegrid-krea-2",
+  "slug": "raphaelreisb-famegrid-krea-2",
+  "author": "raphaelreisb",
+  "url": "https://huggingface.co/raphaelreisb/famegrid-krea-2",
+  "created_at": "2026-09-13T19:51:47.000Z",
+  "updated_at": "2026-09-13T19:54:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1562410408,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wie erhalte ich hilfe in windows 11,+ - WindowsArea.de",
+      "url": "https://windowsarea.de/search/wie+erhalte+ich+hilfe+in+windows+11%2C%2B/",
+      "snippet": "Jun 1, 2026 · Windows 11 bekommt neue KI-Funktionen: Ein Ausblick 19. Oktober 2024 Microsoft hat in den letzten Jahren …"
+    },
+    {
+      "title": "Anleitung: Desktop-Hintergrund für zweiten Monitor ändern in …",
+      "url": "https://windowsarea.de/2023/06/anleitung-desktop-hintergrund-fuer-zweiten-monitor-aendern-in-windows-11/",
+      "snippet": "Jun 22, 2023 · Wenn ihr mehrere Monitore an einem Windows 11-PC angeschlossen habt, möchtet ihr vielleicht für jeden Monitor ein …"
+    },
+    {
+      "title": "Windows 11 Forum | Win11Forum.de",
+      "url": "https://win11forum.de/",
+      "snippet": "Aug 17, 2026 · Diskussionsforum für alle Microsoft Windows 11 Interessierten: Tipps und Tricks, Hilfestellung und Lösungen im …"
+    },
+    {
+      "title": "Neues Textdokument im Kontexmenü anlegen fehlt - Win11Forum.de",
+      "url": "https://win11forum.de/t/neues-textdokument-im-kontexmenue-anlegen-fehlt.837/",
+      "snippet": "Nov 16, 2023 · Kontextmenü NEU Textdokument hinzufügen oder entfernen [gelöst] System Windows 11 Explorer, Kontextmenü: …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/ja-jp/windows/forum/windows_7-security/ÃƒÂ£Ã†â€™ÃƒÂ¢Ã‚Â£ÃƒÂ£Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÂ£Ã¢â‚¬Å¡ÃƒÂ¢Ã‚Â¦ÃƒÂ£Ã†â€™ÃƒÂ¢Ã‚Â£ÃƒÂ£Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÂ£Ã¢â‚¬Å¡ÃƒÂ¢Ã‚Â¼ÃƒÂ£Ã†â€™ÃƒÂ¢Ã‚Â£ÃƒÂ£Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¥Ã‚Â¡ÃƒÂ£Ã¢â‚¬Å¡ÃƒÂ¢Ã‚Â¶ÃƒÂ£Ã†â€™ÃƒÂ¢Ã‚Â£ÃƒÂ£Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÂ£Ã¢â‚¬Å¡ÃƒÂ¢Ã‚Â¼ÃƒÂ£Ã†â€™ÃƒÂ¢Ã‚Â£ÃƒÂ£Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¥Ã‚Â¡ÃƒÂ£Ã¢â‚¬Å¡ÃƒÂ¢Ã‚Â¢/7ffe7a9b-d0cf-454c-b3db-731542747656",
+      "snippet": ""
+    }
+  ]
+}

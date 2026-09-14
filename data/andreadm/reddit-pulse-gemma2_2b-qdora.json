@@ -5,7 +5,7 @@
   "author": "andreadm",
   "url": "https://huggingface.co/andreadm/reddit-pulse-gemma2_2b-qdora",
   "created_at": "2026-09-13T13:23:19.000Z",
-  "updated_at": "2026-09-13T14:01:43.000Z",
+  "updated_at": "2026-09-13T14:32:08.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-classification",

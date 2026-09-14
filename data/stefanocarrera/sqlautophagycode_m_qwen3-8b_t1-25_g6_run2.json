@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.25_g6_run2",
+  "slug": "stefanocarrera-sqlautophagycode_m_qwen3-8b_t1-25_g6_run2",
+  "author": "stefanocarrera",
+  "url": "https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.25_g6_run2",
+  "created_at": "2026-09-13T20:29:19.000Z",
+  "updated_at": "2026-09-13T20:29:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186078190,
+  "storage_human": "186 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Werbung Nissan Micra | TV Spot 2026 - YouTube",
+      "url": "https://www.youtube.com/watch?v=J0aR3zUBbLc",
+      "snippet": "Apr 19, 2026 · Der Nissan Micra, ursprünglich Datsun Micra, auf anderen Märkten auch als Nissan March angeboten, ist ein seit …"
+    },
+    {
+      "title": "Nissan Micra Werbung 2005 - YouTube",
+      "url": "https://www.youtube.com/watch?v=mwePfZukP9I",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "Übersicht: Nissan Werbung - Alle Songs aus den Werbespots",
+      "url": "https://popkultur.de/tag/nissan/",
+      "snippet": "May 28, 2019 · Auf der Suche nach einem Song aus der Nissan Werbung? Hier findest du einen Überblick über alle Nissan …"
+    },
+    {
+      "title": "TV-Werbung/ TV-Spot von Nissan - Eure Meinung?",
+      "url": "https://adclips.tv/de-DE/tv-werbung/tv-spots/tv-spot-brand/nissan/7380132422419561",
+      "snippet": "Unsere Kurzbeschreibung des Nissan TV-Spots Nissan bewirbt den neuen, vollelektrischen Micra in einer futuristisch-blauen …"
+    },
+    {
+      "title": "Aktuelle Nissan Werbung im TV TV-Spots in de",
+      "url": "https://adclips.tv/de-DE/tv-werbung/tv-spots/tv-spot-brand/nissan/",
+      "snippet": "Wie heißt das Lied bzw. der Song aus der aktuellen Nissan-Werbung? Welche Darstellerin, welcher Darsteller bzw. welches Model …"
+    }
+  ]
+}

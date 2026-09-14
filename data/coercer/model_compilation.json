@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Coercer/Model_Compilation",
+  "slug": "coercer-model_compilation",
+  "author": "Coercer",
+  "url": "https://huggingface.co/Coercer/Model_Compilation",
+  "created_at": "2025-01-18T14:35:52.000Z",
+  "updated_at": "2026-09-13T23:22:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 164,
+  "trending_score": 0,
+  "parameters": 14288901184,
+  "parameters_human": "14.29B",
+  "storage_bytes": 941732813742,
+  "storage_human": "941.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Xbox Series X still $349.99 at Walmart after Christmas - Reddit",
+      "url": "https://www.reddit.com/r/XboxSeriesX/comments/18rghj8/xbox_series_x_still_34999_at_walmart_after/",
+      "snippet": "113 votes, 59 comments. Just wanted to let everyone know that Walmart is still selling XSX for $349.99 as of 12/26/23 and I just …"
+    },
+    {
+      "title": "XBOX Series X|S Consoles - Best Buy",
+      "url": "https://www.bestbuy.com/site/xbox-series-x-and-s/xbox-series-x-and-s-consoles/pcmcat1586900952752.c?id=pcmcat1586900952752",
+      "snippet": "Shop for the latest XBOX Series X and XBOX Series S consoles at Best Buy. Choose from consoles and a selection of XBOX Series …"
+    },
+    {
+      "title": "Xbox console price increases in Europe and UK fully revealed ... - VGC",
+      "url": "https://www.videogameschronicle.com/news/xbox-console-price-increases-in-europe-and-uk-fully-revealed-with-series-x-now-costing-e200-more/",
+      "snippet": "Aug 2, 2026 · The extent of Xbox Series X/S price hikes in the Europe and UK markets has now been revealed. Xbox confirmed back …"
+    },
+    {
+      "title": "Series X is 349.99! - Xbox Series X - GameFAQs",
+      "url": "https://gamefaqs.gamespot.com/boards/264564-xbox-series-x/80636934",
+      "snippet": "For Xbox Series X on the Xbox Series X, a GameFAQs message board topic titled \"Series X is 349.99!\"."
+    },
+    {
+      "title": "Get an Xbox Series X for JUST $349 with the best deal I've ever seen ...",
+      "url": "https://www.windowscentral.com/gaming/xbox/get-xbox-series-x-just-dollar349-best-deal-ever-seen",
+      "snippet": "Xbox Series X |was $499.99now $349 at Walmart You can snag the most powerful gaming console in the world for only $349 right …"
+    }
+  ]
+}

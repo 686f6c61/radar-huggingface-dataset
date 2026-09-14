@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "dgyawa/yolo12n-seg-coco",
+  "slug": "dgyawa-yolo12n-seg-coco",
+  "author": "dgyawa",
+  "url": "https://huggingface.co/dgyawa/yolo12n-seg-coco",
+  "created_at": "2026-09-13T20:06:50.000Z",
+  "updated_at": "2026-09-13T20:25:47.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "yolo",
+    "yolo12",
+    "yolov12",
+    "instance-segmentation",
+    "coco",
+    "coco2017",
+    "image-segmentation",
+    "dataset:detection-datasets/coco",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6109860,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - MoneySavingExpert Forum",
+      "url": "https://forums.moneysavingexpert.com/",
+      "snippet": "We're a friendly community of MoneySavers sharing our experiences and tips to help each other out"
+    },
+    {
+      "title": "Expedia/Opodo/Last Minute - MoneySavingExpert Forum",
+      "url": "https://forums.moneysavingexpert.com/discussion/817015/expedia-opodo-last-minute",
+      "snippet": "Mar 24, 2008 · We used Opodo last year to book Virgin flights to Orlando, saved ourselves over £600 on the price of booking the …"
+    },
+    {
+      "title": "OPODO Prime - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/opodo-prime-t208287.html",
+      "snippet": "Mar 3, 2019 · Transport aériens - Opodo au p'tit trot (Action locale Que Choisir Ensemble) Réservations brumeuses chez Opodo …"
+    },
+    {
+      "title": "Opodo: fiable ou non? | Voyage Forum",
+      "url": "https://voyageforum.com/forum/opodo-fiable-non-d3661839/",
+      "snippet": "Sep 4, 2010 · Opodo: fiable ou non? Me voilà, petite nouvelle fraîchement inscrite sur ce forum, en quête d'une réponse à ma …"
+    },
+    {
+      "title": "ARNAQUE OPODO - Page 4 - Opodo - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/arnaque-opodo-t37854-30.html",
+      "snippet": "Jun 13, 2016 · Re: ARNAQUE OPODO Messagepar monpseudoestdéjàpris» mar. déc. 27, 2016 4:13 pm Bonjour, je viens de …"
+    }
+  ]
+}

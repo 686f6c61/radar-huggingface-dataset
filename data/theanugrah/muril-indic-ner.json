@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "theanugrah/muril-indic-ner",
+  "slug": "theanugrah-muril-indic-ner",
+  "author": "theanugrah",
+  "url": "https://huggingface.co/theanugrah/muril-indic-ner",
+  "created_at": "2026-09-13T21:41:49.000Z",
+  "updated_at": "2026-09-13T21:52:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "onnx",
+  "languages": [
+    "as",
+    "bn",
+    "gu",
+    "hi",
+    "kn",
+    "ml",
+    "mr",
+    "or",
+    "pa",
+    "ta",
+    "te"
+  ],
+  "tags": [
+    "onnx",
+    "bert",
+    "ner",
+    "token-classification",
+    "muril",
+    "as",
+    "bn",
+    "gu",
+    "hi",
+    "kn",
+    "ml",
+    "mr",
+    "or",
+    "pa",
+    "ta",
+    "te",
+    "base_model:vaibhav006/indic-ner-muril-naamapadam",
+    "base_model:quantized:vaibhav006/indic-ner-muril-naamapadam",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 238262058,
+  "storage_human": "238 MB",
+  "base_model": "vaibhav006/indic-ner-muril-naamapadam",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "鄂尔多斯零碳产业园_百度百科",
+      "url": "https://baike.baidu.com/item/%E9%84%82%E5%B0%94%E5%A4%9A%E6%96%AF%E9%9B%B6%E7%A2%B3%E4%BA%A7%E4%B8%9A%E5%9B%AD/63836496",
+      "snippet": "鄂尔多斯零碳产业园由远景科技集团与鄂尔多斯市政府合作建设，于2022年3月获批，2022年4月一期建成投产，位于蒙苏经济开发区 …"
+    },
+    {
+      "title": "内蒙古自治区科学技术厅_ 鄂尔多斯零碳产业园 引领资源型 ...",
+      "url": "http://kjt.nmg.gov.cn/slb/kjdt/kjtgz/202409/t20240919_2577423.html",
+      "snippet": "Sep 19, 2024 · 近年来，自治区科技厅和鄂尔多斯市政府高度重视鄂尔多斯国家可持续发展创新示范区建设，积极推动鄂尔多斯零碳产 …"
+    },
+    {
+      "title": "鄂尔多斯零碳产业园_伊金霍洛旗人民政府",
+      "url": "https://www.yjhl.gov.cn/tjsd/tsyq_143046/gy_143049/202310/t20231013_3501699.html",
+      "snippet": "Feb 12, 2026 · 零碳产业园是开发区聚焦“双碳”战略擘画发展蓝图，致力于打造“中国典范、世界标杆”的零碳产业园新名片。 零碳产业 …"
+    },
+    {
+      "title": "探访鄂尔多斯零碳产业园—— 零碳生产是如何实现的？",
+      "url": "https://www.ordos.gov.cn/xw_127672/jreeds/202504/t20250407_3780540.html",
+      "snippet": "Apr 7, 2025 · 园区企业绿电使用比例接近70%，废水循环利用率达95%……鄂尔多斯零碳产业园正通过可再生能源利用、智能化管理、 …"
+    },
+    {
+      "title": "【人民日报看内蒙古】探访鄂尔多斯零碳产业园——零碳生产 ...",
+      "url": "https://www.peopleapp.com/column/30048710358-500006184645",
+      "snippet": "Apr 5, 2025 · 专家介绍，零碳园区是指在一定周期内，通过清洁技术支持、碳回收技术、能源储存交换等方式，对碳排放进行减少、抵 …"
+    }
+  ]
+}

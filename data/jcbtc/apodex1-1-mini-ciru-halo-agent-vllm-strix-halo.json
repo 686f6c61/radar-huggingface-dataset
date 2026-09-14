@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "jcbtc/Apodex1.1-mini-Ciru-Halo-Agent-vllm-strix-halo",
+  "slug": "jcbtc-apodex1-1-mini-ciru-halo-agent-vllm-strix-halo",
+  "author": "jcbtc",
+  "url": "https://huggingface.co/jcbtc/Apodex1.1-mini-Ciru-Halo-Agent-vllm-strix-halo",
+  "created_at": "2026-09-13T19:33:15.000Z",
+  "updated_at": "2026-09-13T20:03:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "apodex",
+    "ciru",
+    "strix-halo",
+    "gfx1151",
+    "amd",
+    "rocm",
+    "agentic",
+    "tool-use",
+    "quantized",
+    "speculative-decoding",
+    "mtp",
+    "text-generation",
+    "base_model:apodex/Apodex-1.1-mini",
+    "base_model:quantized:apodex/Apodex-1.1-mini",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23488244570,
+  "storage_human": "23.5 GB",
+  "base_model": "apodex/Apodex-1.1-mini",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HP LaserJet M140we bloccata sul display esce (rd ) e rimane bloccata ...",
+      "url": "https://h30434.www3.hp.com/t5/Printing-Errors-or-Lights-Stuck-Print-Jobs/HP-LaserJet-M140we-bloccata-sul-display-esce-rd-e-rimane/td-p/9389004",
+      "snippet": "May 8, 2025 · Solved: ciao o una Laser Jet M140we bloccata sul display esce ( r-d ) e rimane bloccata non ti fa fare nessun reset. si …"
+    },
+    {
+      "title": "Problema la stampante Hp Laserjet M110W non può stampare",
+      "url": "https://h30434.www3.hp.com/t5/Printer-Ink-Cartridges-Print-Quality/Problema-la-stampante-Hp-Laserjet-M110W-non-pu%C3%B2-stampare/td-p/8700997",
+      "snippet": "Jun 1, 2023 · Da una decina di giorni ho sostituito il toner con uno originale HP ; Tutto bene fino a quando la stampante ha smesso di …"
+    },
+    {
+      "title": "Smart Audio Error Message - HP Support Community - 7233179",
+      "url": "https://h30434.www3.hp.com/t5/Desktop-Audio/Smart-Audio-Error-Message/td-p/7233179",
+      "snippet": "Sep 10, 2019 · I keep getting a fail to initialize error message for Smart Audio, how do I fix or remove this, I can't find a Smart Audio …"
+    },
+    {
+      "title": "ACPI\\\\VEN_HPQ&DEV_0004 driver for Win10 (64 bit)",
+      "url": "https://h30434.www3.hp.com/t5/Notebook-Operating-System-and-Recovery/ACPI-VEN-HPQ-amp-DEV-0004-driver-for-Win10-64-bit/td-p/5942006",
+      "snippet": "Jan 16, 2017 · Solved: I need the drivers suitable for Windows10 (64 Bit) for the following hardware available on my HP Pavilion dv6 …"
+    },
+    {
+      "title": "la stampante non stampa il documento - HP Support Community",
+      "url": "https://h30434.www3.hp.com/t5/HP-Instant-Ink/la-stampante-non-stampa-il-documento/td-p/9672540",
+      "snippet": "Jun 22, 2026 · la mia stampante non stampa più nessun documento. HP smart però mi dice che la stampante è collegata e pronta. I …"
+    }
+  ]
+}

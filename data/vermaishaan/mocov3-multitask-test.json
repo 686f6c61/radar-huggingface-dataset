@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "vermaishaan/mocov3-multitask-test",
+  "slug": "vermaishaan-mocov3-multitask-test",
+  "author": "vermaishaan",
+  "url": "https://huggingface.co/vermaishaan/mocov3-multitask-test",
+  "created_at": "2026-09-13T19:17:19.000Z",
+  "updated_at": "2026-09-13T19:17:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Charlotte Anne Jane | The Mentalist Wiki | Fandom",
+      "url": "https://thementalist.fandom.com/wiki/Charlotte_Anne_Jane",
+      "snippet": "Charlotte Anne Jane was the 5-year-old daughter of Angela Ruskin Jane and Patrick Jane. Both she and her mother were murdered …"
+    },
+    {
+      "title": "Charlotte Jane - The Mentalist Fandom Wiki",
+      "url": "https://the-mentalist-fandom.fandom.com/wiki/Charlotte_Jane",
+      "snippet": "Charlotte Anne Jane was the daughter of Patrick Jane and Angela Ruskin. She was killed prior to the series by Red John at the age …"
+    },
+    {
+      "title": "Charlotte Anne Jane | The-Mentalist-Wiki | Fandom",
+      "url": "https://thementalist.fandom.com/de/wiki/Charlotte_Anne_Jane",
+      "snippet": "Charlotte Anne Jane ist die verstorbene Tochter von Patrick Jane und dessen (ebenfalls verstorbener) Frau Angela Ruskin Jane. Sie …"
+    },
+    {
+      "title": "Murder of Angela and Charlotte Jane | The Mentalist Fandom Wiki",
+      "url": "https://the-mentalist-fandom.fandom.com/wiki/Murder_of_Angela_and_Charlotte_Jane",
+      "snippet": "When Patrick Jane insulted Red John on public television, Red John went after his wife and daughter by killing them. He painted his …"
+    },
+    {
+      "title": "Charlotte Jane | The Mentalist (CBS) Wiki | Fandom",
+      "url": "https://the-mentalist-cbs.fandom.com/wiki/Charlotte_Jane",
+      "snippet": "Charlotte Anne Jane is the daughter of Patrick Jane and Angela Ruskin. Her father lies about Red John, causing the serial killer to go …"
+    }
+  ]
+}

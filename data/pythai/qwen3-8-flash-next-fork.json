@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "PYTHAI/Qwen3.8-Flash-Next-fork",
+  "slug": "pythai-qwen3-8-flash-next-fork",
+  "author": "PYTHAI",
+  "url": "https://huggingface.co/PYTHAI/Qwen3.8-Flash-Next-fork",
+  "created_at": "2026-09-13T23:56:58.000Z",
+  "updated_at": "2026-09-13T23:57:01.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:finetune:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12809320,
+  "storage_human": "13 MB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How Cryptocurrencies Can Help Universal Basic Income to Become …",
+      "url": "https://cryptogeek.info/en/blog/cryptocurrencies-and-ubi",
+      "snippet": "The idea of unconditional basic income is not new although it turned out to be quite hard to implement. In this article, we will learn …"
+    },
+    {
+      "title": "Basic Income Crypto Platforms | Basic Income Economy",
+      "url": "https://bieconomy.com/basic-income-crypto-platforms",
+      "snippet": "May 30, 2023 · Basic Income Crypto Platforms In the era of digitalization, the concept of cryptocurrency has gained significant …"
+    },
+    {
+      "title": "A Proposal for Web3-Based Universal Basic Income - Tony Blair",
+      "url": "https://institute.global/insights/tech-and-digitalisation/proposal-web3-based-universal-basic-income",
+      "snippet": "Mar 10, 2023 · A Proposal for Web3-Based Universal Basic Income The most distinctive feature of a UBI programme compared with …"
+    },
+    {
+      "title": "Cryptocurrency and Universal Basic Income: A New Frontier in",
+      "url": "https://www.linkedin.com/pulse/cryptocurrency-universal-basic-income-new-frontier-economic-shukla",
+      "snippet": "Oct 3, 2023 · The Universal Basic Income program, on the other hand, envisions a system in which every citizen receives a regular …"
+    },
+    {
+      "title": "CoinDesk: Bitcoin, Ethereum, XRP, Crypto News and Price Data",
+      "url": "https://www.coindesk.com/",
+      "snippet": "Leader in cryptocurrency, Bitcoin, Ethereum, XRP, blockchain, DeFi, digital finance and Web 3.0 news with analysis, video and live …"
+    }
+  ]
+}

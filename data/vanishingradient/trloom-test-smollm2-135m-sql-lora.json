@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "vanishingradient/trloom-test-smollm2-135m-sql-lora",
+  "slug": "vanishingradient-trloom-test-smollm2-135m-sql-lora",
+  "author": "vanishingradient",
+  "url": "https://huggingface.co/vanishingradient/trloom-test-smollm2-135m-sql-lora",
+  "created_at": "2026-09-13T19:32:07.000Z",
+  "updated_at": "2026-09-13T19:40:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14814577,
+  "storage_human": "15 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZDF-Politbarometer Extra zur Wahl in Mecklenburg-Vorpommern",
+      "url": "https://www.zdfheute.de/politik/deutschland/politbarometer-extra-wahlen-mecklenburg-vorpommern-100.html",
+      "snippet": "2 days ago · In Mecklenburg-Vorpommern liefern sich AfD und SPD laut Projektion des ZDF Politbarometers Extra ein Kopf-an-Kopf …"
+    },
+    {
+      "title": "ZDF-Politbarometer Extra: Enge Rennen bei anstehenden Wahlen - zdfheute…",
+      "url": "https://www.zdfheute.de/politik/deutschland/politbarometer-extra-landtagswahlen-berlin-mecklenburg-vorpommern-100.html",
+      "snippet": "2 days ago · Das zeigt das ZDF-Politbarometer Extra. In Mecklenburg-Vorpommern liefern sich AfD und SPD ein enges Rennen. Gut …"
+    },
+    {
+      "title": "Landtagswahl in Mecklenburg-Vorpommern: So ist die Ausgangslage",
+      "url": "https://www.zdfheute.de/politik/deutschland/spd-schwesig-afd-holm-landtagswahl-mecklenburg-vorpommern-100.html",
+      "snippet": "12 hours ago · Bei der Landtagswahl in Mecklenburg-Vorpommern läuft es auf ein Duell zwischen SPD und AfD hinaus. So ist aktuell …"
+    },
+    {
+      "title": "Das aktuelle Politbarometer - zdfheute.de",
+      "url": "https://www.zdfheute.de/video/heute-nachrichten/politbarometer-landtag-wahl-video-100.html",
+      "snippet": "2 days ago · Das aktuelle Politbarometer wirft einen Blick auf die bevorstehenden Landtagswahlen in Berlin und Mecklenburg …"
+    },
+    {
+      "title": "Landtagswahl in Mecklenburg-Vorpommern - zdfheute.de",
+      "url": "https://www.zdfheute.de/video/heute-nachrichten/mecklenburg-vorpommern-wahl-video-100.html",
+      "snippet": "2 days ago · Laut dem aktuellen Politbarometer liegt die AfD mit 37 Prozent und die SPD mit 34 Prozent bei der kommenden …"
+    }
+  ]
+}

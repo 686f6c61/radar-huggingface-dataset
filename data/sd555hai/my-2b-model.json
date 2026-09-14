@@ -5,7 +5,7 @@
   "author": "sd555hai",
   "url": "https://huggingface.co/sd555hai/my-2b-model",
   "created_at": "2026-09-11T20:27:21.000Z",
-  "updated_at": "2026-09-13T02:37:16.000Z",
+  "updated_at": "2026-09-13T05:59:24.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -18,12 +18,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 86,
+  "downloads_30d": 218,
   "trending_score": 0,
   "parameters": 2213241664,
   "parameters_human": "2.21B",
-  "storage_bytes": 568078127356,
-  "storage_human": "568.1 GB",
+  "storage_bytes": 53372412569,
+  "storage_human": "53.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ANGELOSEGRETO/WebSailor-7B",
+  "slug": "angelosegreto-websailor-7b",
+  "author": "ANGELOSEGRETO",
+  "url": "https://huggingface.co/ANGELOSEGRETO/WebSailor-7B",
+  "created_at": "2026-09-13T22:25:26.000Z",
+  "updated_at": "2026-09-13T22:25:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15231271888,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sylvie Profiles - Facebook",
+      "url": "https://www.facebook.com/public/Sylvie/",
+      "snippet": "View the profiles of people named Sylvie. Join Facebook to connect with Sylvie and others you may know. Facebook gives people …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/login/index.php/",
+      "snippet": "Forgot password? More languages…"
+    },
+    {
+      "title": "Facebook - log in or sign up",
+      "url": "https://secure.facebook.com/",
+      "snippet": "Log into Facebook to start sharing and connecting with your friends, family, and people you know."
+    },
+    {
+      "title": "Se connecter à Facebook | Pages d’aide Messenger",
+      "url": "https://www.messenger.com/help/messenger-app/185285184853471/?locale=fr_FR",
+      "snippet": "Comment vous connecter à votre compte Facebook à l’aide de votre adresse e-mail, numéro de téléphone ou nom de profil."
+    },
+    {
+      "title": "Facebook - m.me",
+      "url": "https://m.me/r.php?locale=fr_FR",
+      "snippet": "Informations de compte oubliées ? Voulez-vous vous inscrire à Facebook ?"
+    }
+  ]
+}

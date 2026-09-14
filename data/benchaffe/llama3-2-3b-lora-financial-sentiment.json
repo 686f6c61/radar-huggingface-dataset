@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "benchaffe/llama3.2-3b-lora-financial-sentiment",
+  "slug": "benchaffe-llama3-2-3b-lora-financial-sentiment",
+  "author": "benchaffe",
+  "url": "https://huggingface.co/benchaffe/llama3.2-3b-lora-financial-sentiment",
+  "created_at": "2026-09-13T19:16:58.000Z",
+  "updated_at": "2026-09-13T19:17:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53940406,
+  "storage_human": "54 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GWO - Gdańskie Wydawnictwo Oświatowe - Strona główna",
+      "url": "https://gwo.pl/",
+      "snippet": "Jak budować konstruktywne relacje z rodzicami? Poznaj nowy e-kurs Akademii GWO. Zbuduj dobre relacje na cały rok!"
+    },
+    {
+      "title": "Logowanie GWO",
+      "url": "https://moje.gwo.pl/",
+      "snippet": "System logowania, rejestracji GWO Copyright © by Gdańskie Wydawnictwo Oświatowe - 2026"
+    },
+    {
+      "title": "podręczniki szkolne - GWO - Gdańskie Wydawnictwo Oświatowe",
+      "url": "https://gwo.pl/przedmioty/matematyka/",
+      "snippet": "Gdańskie Wydawnictwo Oświatowe oferuje podręczniki szkolne do matematyki, dostosowane do różnych poziomów edukacyjnych."
+    },
+    {
+      "title": "Logowanie GWO",
+      "url": "https://multipodreczniki.apps.gwo.pl/",
+      "snippet": "System logowania i rejestracji Gdańskiego Wydawnictwa Oświatowego."
+    },
+    {
+      "title": "Księgarnia detaliczna GWO",
+      "url": "https://ksiegarnia.gwo.pl/",
+      "snippet": "25% rabatu na zakup dostępu do drugiego e-kursu Poznaj kursy online Akademii GWO – teraz w ofercie specjalnej. Kup dostęp do …"
+    }
+  ]
+}

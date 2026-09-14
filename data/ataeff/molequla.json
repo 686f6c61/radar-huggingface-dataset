@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ataeff/molequla",
+  "slug": "ataeff-molequla",
+  "author": "ataeff",
+  "url": "https://huggingface.co/ataeff/molequla",
+  "created_at": "2026-09-13T20:20:45.000Z",
+  "updated_at": "2026-09-13T22:19:10.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "vision-language",
+    "smolvlm2",
+    "arianna-method",
+    "molequla",
+    "notorch",
+    "base_model:HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
+    "base_model:quantized:HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
+    "license:gpl-3.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 409252800,
+  "parameters_human": "409.3M",
+  "storage_bytes": 2057474026,
+  "storage_human": "2.1 GB",
+  "base_model": "HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Messages et avis sur le lieu de drague Sauna Le Rive Droite",
+      "url": "https://lieuxdedrague.fr/avis/16386",
+      "snippet": "Le Rive Droite est un sauna gay à Rouen, le plus grand de la région. À cinq minutes de Rouen, ses aménagements sont originaux. …"
+    },
+    {
+      "title": "Lieu de drague : Sauna Le Rive Droite",
+      "url": "https://lieuxdedrague.net/lieu-de-drague/sauna-le-rive-droite/16386",
+      "snippet": "Jul 20, 2013 · Le Rive Droite est un sauna gay à Rouen, le plus grand de la région. À cinq minutes de Rouen, ses aménagements …"
+    },
+    {
+      "title": "Lieu de drague : Sauna Le Rive Droite - croozr.fr",
+      "url": "https://croozr.fr/lieu-de-drague/sauna-le-rive-droite/16386",
+      "snippet": "Jul 20, 2013 · Le Rive Droite est un sauna gay à Rouen, le plus grand de la région. À cinq minutes de Rouen, ses aménagements …"
+    },
+    {
+      "title": "Messages et avis sur le lieu de drague - blogx.fr",
+      "url": "https://blogx.fr/lieu-de-drague/sauna-le-rive-droite-/16386/messages",
+      "snippet": "Le Rive Droite est un sauna gay à Rouen, le plus grand de la région. À cinq minutes de Rouen, ses aménagements sont originaux. …"
+    },
+    {
+      "title": "Sauna Le Rive Droite - Sauna LGBT avec hammam, bar et terrasses de ...",
+      "url": "https://qlist.app/venues/Amfreville-la-Mi-Voie/The-Right-Bank-Sauna/ZzB4TVI4Umc5QkRPVDhOMzVxckFkUQ/fr",
+      "snippet": "Jul 11, 2026 · Résumé des avis Sauna Le Rive Droite reçoit des retours positifs pour son personnel accueillant, ses installations …"
+    }
+  ]
+}

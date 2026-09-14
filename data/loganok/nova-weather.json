@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Loganok/nova-weather",
+  "slug": "loganok-nova-weather",
+  "author": "Loganok",
+  "url": "https://huggingface.co/Loganok/nova-weather",
+  "created_at": "2026-09-13T20:58:36.000Z",
+  "updated_at": "2026-09-13T20:58:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10532347,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jeux du niveau CM1 - LogicielEducatif",
+      "url": "https://www.logicieleducatif.fr/niveau/cm1",
+      "snippet": "Site de jeux éducatifs gratuits en ligne. Les jeux portent sur le français, les maths et l'éveil et s'adressent aux élèves de maternelle, …"
+    },
+    {
+      "title": "CM1 | Tous les jeux | Lumni",
+      "url": "https://www.lumni.fr/primaire/cm1/tous-les-jeux",
+      "snippet": "Avec le CM1, ou cours moyen 1re année, débute le cycle 3 qui relie les deux dernières années de primaire à la classe de 6e. Ce …"
+    },
+    {
+      "title": "Jeux éducatifs CM1 et exercices en ligne (9-10 ans)",
+      "url": "https://jeux.ieducatif.fr/jeux-educatifs/jeux-cm1/",
+      "snippet": "Les jeux éducatifs CM1 de cette rubrique sont gratuits et jouables sans inscription. Ces exercices en ligne se jouent directement …"
+    },
+    {
+      "title": "LogicielEducatif - Jeux éducatifs en ligne",
+      "url": "https://www.logicieleducatif.fr/",
+      "snippet": "Aug 30, 2026 · Site de jeux éducatifs gratuits en ligne. Les jeux portent sur le français, les maths et l'éveil et s'adressent aux élèves …"
+    },
+    {
+      "title": "CM • Français / Mathématiques • Jeux tournants - Cenicienta",
+      "url": "https://cenicienta.fr/cm-francais-mathematiques-jeux-tournants/",
+      "snippet": "Jul 21, 2015 · Programmation pour l'année de jeux en mathématiques et en français: jeux à imprimer et plastifier gratuitement chez …"
+    }
+  ]
+}

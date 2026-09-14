@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "huggingtime12/Qwen3-1.7-PhoMT-R64",
+  "slug": "huggingtime12-qwen3-1-7-phomt-r64",
+  "author": "huggingtime12",
+  "url": "https://huggingface.co/huggingtime12/Qwen3-1.7-PhoMT-R64",
+  "created_at": "2026-09-13T21:51:07.000Z",
+  "updated_at": "2026-09-13T21:51:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1532869218,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/RelatedSearch",
+      "snippet": ""
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/version",
+      "snippet": "Bing ... Versions"
+    },
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://www2.bing.com/",
+      "snippet": "Search with Microsoft Bing and use the power of AI to find information, explore webpages, images, videos, maps, and more. A smart …"
+    },
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://www.ph.bing.com/",
+      "snippet": "Search with Microsoft Bing to explore information, images, videos, maps, and more using AI-powered tools for smarter and curious …"
+    },
+    {
+      "title": "How to See All Bing Related Searches - cloudspress.com",
+      "url": "https://www.cloudspress.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Aug 7, 2026 · Bing does not have a public “see everything” page for a keyword. Its related searches and autocomplete suggestions …"
+    }
+  ]
+}

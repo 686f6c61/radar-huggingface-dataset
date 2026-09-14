@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Daniel-F/tempo-mot-uvt",
+  "slug": "daniel-f-tempo-mot-uvt",
+  "author": "Daniel-F",
+  "url": "https://huggingface.co/Daniel-F/tempo-mot-uvt",
+  "created_at": "2026-09-13T23:39:27.000Z",
+  "updated_at": "2026-09-13T23:45:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "vla",
+    "pi0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36284928621,
+  "storage_human": "36.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Daniel (prophète) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Daniel_(proph%C3%A8te)",
+      "snippet": "Daniel devient fonctionnaire de cour et interprète les songes du roi. Sa réputation lui permet de continuer son activité après la prise …"
+    },
+    {
+      "title": "Daniel (biblical figure) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Daniel_(biblical_figure)",
+      "snippet": "While the best known Daniel is the hero of the Book of Daniel who interprets dreams and receives apocalyptic visions, the Bible also …"
+    },
+    {
+      "title": "Handbuch Künstliche Intelligenz und die Künste 9783110655605 ...",
+      "url": "https://dokumen.pub/handbuch-knstliche-intelligenz-und-die-knste-9783110655605-9783110656978-9783110657753.html",
+      "snippet": "120 Fallblattdisplays, Gebetspult, Computer mit spezifisch trainiertem GPT-2 Model. ... AI in Experimental Improvisation gemeinsam mit der KI Tomomibot performte."
+    },
+    {
+      "title": "Daniel",
+      "url": "https://daniel.fr/",
+      "snippet": "Chez Daniel, nous sommes spécialisés dans le négoce de fournitures industrielles, de quincaillerie et de produits sidérurgiques …"
+    },
+    {
+      "title": "Prénom Daniel (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/daniel/prenom-6594",
+      "snippet": "Quelle est la signification du prénom Daniel ? Le prénom Daniel a une origine hébraïco biblique. Le mot dayân veut dire \"juge\" et el …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "kisserpun/mill-anima",
+  "slug": "kisserpun-mill-anima",
+  "author": "kisserpun",
+  "url": "https://huggingface.co/kisserpun/mill-anima",
+  "created_at": "2026-09-13T21:55:14.000Z",
+  "updated_at": "2026-09-13T21:56:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2091068928,
+  "parameters_human": "2.09B",
+  "storage_bytes": 4182218360,
+  "storage_human": "4.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Torrent Not Downloading? Why It Happens & How to Fix It",
+      "url": "https://www.rapidseedbox.com/blog/torrents-not-downloading",
+      "snippet": "Feb 13, 2026 · Torrents not downloading or stuck at 0%? Learn why torrents fail to download and how to fix ports, issues, firewalls, …"
+    },
+    {
+      "title": "qBittorrent Not Downloading? 10 Fixes That Work (2026)",
+      "url": "https://www.rapidseedbox.com/blog/qbittorrent-not-downloading",
+      "snippet": "Mar 16, 2026 · qBittorrent stuck at 0 B/s or showing stalled? Here are 10 proven fixes for firewall blocks, dead trackers, port issues, …"
+    },
+    {
+      "title": "Stalled Torrents — Why Torrents Get Stuck and How to Fix Them",
+      "url": "https://wiki.pulsedmedia.com/wiki/Stalled_torrents",
+      "snippet": "Jul 30, 2026 · Stalled torrents stop downloading because of ISP throttling, dead swarms, firewall problems, or session corruption. A …"
+    },
+    {
+      "title": "How to Fix Slow Torrent Speeds and Stalled Downloads (2026)",
+      "url": "https://meshworld.in/blog/how-to/fix-slow-torrent-speeds/",
+      "snippet": "Jul 18, 2026 · Struggling with stalled torrents or slow downloads? Learn how to troubleshoot port forwarding, DHT connection limits, …"
+    },
+    {
+      "title": "Plenty of seeds but download speeds are insanely low...",
+      "url": "https://www.reddit.com/r/qBittorrent/comments/q38zbo/plenty_of_seeds_but_download_speeds_are_insanely/",
+      "snippet": "Oct 7, 2021 · Double check to make sure you haven't accidentally enabled your alternate speed limits which are by default 10 KB/s …"
+    }
+  ]
+}

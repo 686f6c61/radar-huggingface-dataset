@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jjdelite/video-understanding-analysis",
+  "slug": "jjdelite-video-understanding-analysis",
+  "author": "jjdelite",
+  "url": "https://huggingface.co/jjdelite/video-understanding-analysis",
+  "created_at": "2026-09-13T19:35:57.000Z",
+  "updated_at": "2026-09-13T19:35:57.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "video-understanding",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "广州市（广东省辖地级市、省会）_百度百科",
+      "url": "https://baike.baidu.com/item/%E5%B9%BF%E5%B7%9E%E5%B8%82/21808",
+      "snippet": "广州市（Guangzhou City、Canton City），简称“穗”，别称羊城、花城、五羊城，是广东省辖地级市、省会、副省级市、国家中心城市 …"
+    },
+    {
+      "title": "广州市 - 维基百科，自由的百科全书",
+      "url": "https://zh.wikipedia.org/wiki/%E5%B9%BF%E5%B7%9E%E5%B8%82",
+      "snippet": "5 days ago · 广州市 （粵語： [kʷɔ̌ːŋtsɐ̂u] ⓘ），简称 广 、 穗，别称 羊城 、 花城，是 中华人民共和国 广东省 的 省会 、 副省级市 和 …"
+    },
+    {
+      "title": "广州市人民政府门户网站",
+      "url": "https://www.gz.gov.cn/",
+      "snippet": "1 day ago · 广州市人民政府门户网站（网址：www.gz.gov.cn）是由广州市人民政府办公厅主办，广州市政务服务和数据管理局承办， …"
+    },
+    {
+      "title": "广州市（广州市）_百度百科",
+      "url": "https://baike.baidu.com/item/%E5%B9%BF%E5%B7%9E%E5%B8%82/11072764",
+      "snippet": "百度百科是一部内容开放、自由的网络百科全书，旨在创造一个涵盖所有领域知识，服务所有互联网用户的中文知识性百科全书。 在 …"
+    },
+    {
+      "title": "广州市 - 维基百科，自由的百科全书",
+      "url": "https://zh.wikipedia.org/zh-hans/%E5%B9%BF%E5%B7%9E%E5%B8%82",
+      "snippet": "6 days ago · 广州市为中国大陆和广东对外的商贸中心兼综合交通枢纽 [8]，是中国大陆的 一线城市 之一，也是 粤港澳大湾区 的中心 …"
+    }
+  ]
+}

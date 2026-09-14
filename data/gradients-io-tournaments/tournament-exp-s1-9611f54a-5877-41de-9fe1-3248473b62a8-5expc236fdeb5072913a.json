@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-exp-s1-9611f54a-5877-41de-9fe1-3248473b62a8-5Expc236fdeb5072913a",
+  "slug": "gradients-io-tournaments-tournament-exp-s1-9611f54a-5877-41de-9fe1-3248473b62a8-5expc236fdeb5072913a",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-exp-s1-9611f54a-5877-41de-9fe1-3248473b62a8-5Expc236fdeb5072913a",
+  "created_at": "2026-09-13T21:35:25.000Z",
+  "updated_at": "2026-09-13T21:35:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/cache/models/45363f1dab78e110",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-32B",
+    "base_model:adapter:Qwen/Qwen3-32B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2159030402,
+  "storage_human": "2.2 GB",
+  "base_model": "Qwen/Qwen3-32B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "50 Best Roblox Phonk Music ID Codes – Listen & Copy Instantly!",
+      "url": "https://progameguides.com/roblox/50-phonk-music-song-id-codes-roblox/",
+      "snippet": "Feb 15, 2026 · Discover 50 of the best Roblox Phonk Music ID codes with real audio previews! Listen, copy, and add the hottest …"
+    },
+    {
+      "title": "Roblox Phonk Music ID Codes (2026) - All Things How",
+      "url": "https://allthings.how/roblox-phonk-music-id-codes/",
+      "snippet": "4 days ago · A regularly verified list of working Roblox phonk music IDs — drift, Brazilian, and aggressive phonk — ready to paste …"
+    },
+    {
+      "title": "Best Roblox Phonk ID Codes - Game Rant",
+      "url": "https://gamerant.com/best-roblox-phonk-id-codes/",
+      "snippet": "Sep 25, 2025 · Below, you'll find a collection of the best Roblox phonk IDs, featuring everything from aggressive Brazilian phonk to …"
+    },
+    {
+      "title": "Roblox Phonk ID Codes (September 2026) - All Things How",
+      "url": "https://allthings.how/roblox-phonk-id-codes/",
+      "snippet": "Sep 2, 2026 · Paste these track IDs into any Boombox or Radio for Brazilian, aggressive, and cinematic phonk beats, updated regularly."
+    },
+    {
+      "title": "Roblox Phonk ID Codes (September 2026) for Best Copyright-free Music",
+      "url": "https://beebom.com/roblox-phonk-ids/",
+      "snippet": "Sep 1, 2026 · In this dedicated Phonk IDs list, we separated all the best and most popular Roblox music codes for this specific genre. …"
+    }
+  ]
+}

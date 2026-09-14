@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "PYTHAI/GLM-5.3-Flash-fork",
+  "slug": "pythai-glm-5-3-flash-fork",
+  "author": "PYTHAI",
+  "url": "https://huggingface.co/PYTHAI/GLM-5.3-Flash-fork",
+  "created_at": "2026-09-13T23:56:27.000Z",
+  "updated_at": "2026-09-13T23:56:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20217442,
+  "storage_human": "20 MB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CS2 Upgrader — Upgrade Your Inventory Fast",
+      "url": "https://upgrader.vip/en",
+      "snippet": "Fast CS2 item upgrades on upgrader.vip. Fair conditions, instant withdrawals, thousands of items. Upgrade your inventory today."
+    },
+    {
+      "title": "CS2 Upgrader — Actualizați-vă rapid inventarul",
+      "url": "https://upgrader.vip/ro",
+      "snippet": "Upgrade-uri rapide pentru articole CS2 pe upgrader.vip. Condiții corecte, retrageri instantanee, mii de articole. Upgradează-ți …"
+    },
+    {
+      "title": "CSGO Upgrader | Upgrade CS2 & CS:GO Skins Instantly - CSCASE",
+      "url": "https://cscase.com/upgrade",
+      "snippet": "Open CSGO (CS2) Cases Now – drop knives, gloves &amp; rare skins! Enjoy free daily cases, box openings &amp; crate rewards. …"
+    },
+    {
+      "title": "CS:GO Upgrader: Upgrade Skins and Improve Your Inventory",
+      "url": "https://clash.gg/upgrader",
+      "snippet": "Upgrade your CS2 and CSGO skins on the best CS2 and CSGO upgrader site. Get better CS2 and CSGO skins for your inventory at …"
+    },
+    {
+      "title": "АПГРЕЙДЕР | Официальный Сайт UPGRADER - Прокачай Свой …",
+      "url": "https://1upgrader.com/",
+      "snippet": "Апгрейдер CS2 (Upgrader) — апгрейд скинов онлайн с прозрачными шансами. Запускай upgrader, прокачивай инвентарь, …"
+    }
+  ]
+}

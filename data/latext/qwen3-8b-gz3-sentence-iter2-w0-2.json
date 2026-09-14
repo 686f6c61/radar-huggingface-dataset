@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "LaTexT/qwen3-8b-gz3-sentence-iter2-w0.2",
+  "slug": "latext-qwen3-8b-gz3-sentence-iter2-w0-2",
+  "author": "LaTexT",
+  "url": "https://huggingface.co/LaTexT/qwen3-8b-gz3-sentence-iter2-w0.2",
+  "created_at": "2026-09-13T23:11:08.000Z",
+  "updated_at": "2026-09-13T23:37:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "generated_from_trainer",
+    "llama-factory",
+    "full",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8207512576,
+  "parameters_human": "8.21B",
+  "storage_bytes": 16426503381,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Booking.com | Official site | The best hotels, flights, car rentals ...",
+      "url": "https://www.booking.com/?msockid=02a8c083d2fd6b383b8bd750d3676a79",
+      "snippet": "Explore the world with Booking.com. Big savings on homes, hotels, flights, car rentals, taxis, and attractions – build your perfect trip …"
+    },
+    {
+      "title": "Booking.com | Offizielle Seite | Die besten Hotels, Flüge, Mietwagen ...",
+      "url": "https://www.booking.com/index.de.html?msockid=02a8c083d2fd6b383b8bd750d3676a79",
+      "snippet": "Entdecken Sie die Welt mit Booking.com. Große Ersparnisse bei Ferienhäusern, Hotels, Flügen, Mietwagen, Taxis und Attraktionen – …"
+    },
+    {
+      "title": "Booking.com",
+      "url": "https://packages.booking.com/vacationpackages/",
+      "snippet": "Save up to 625 dollars when you book your flight and hotel together! Booking.com Vacation Packages with exclusive deals on airline …"
+    },
+    {
+      "title": "Logging in to the Booking.com Extranet",
+      "url": "https://partner.booking.com/en-us/help/account-and-log/settings/logging-bookingcom-extranet",
+      "snippet": "Aug 6, 2026 · The Booking.com Extranet is the accommodation partner and property owner platform that hosts all the necessary …"
+    },
+    {
+      "title": "Logowanie do Extranetu Booking.com - Booking.com for Partners",
+      "url": "https://partner.booking.com/pl/pomoc/konto-i-login/ustawienia/logowanie-do-extranetu-bookingcom",
+      "snippet": "Jul 30, 2024 · Extranet Booking.com to platforma dla partnerów noclegowych i właścicieli obiektów, na której znajdują się wszystkie …"
+    }
+  ]
+}

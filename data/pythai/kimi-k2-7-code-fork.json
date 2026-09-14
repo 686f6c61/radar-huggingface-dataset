@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "PYTHAI/Kimi-K2.7-Code-fork",
+  "slug": "pythai-kimi-k2-7-code-fork",
+  "author": "PYTHAI",
+  "url": "https://huggingface.co/PYTHAI/Kimi-K2.7-Code-fork",
+  "created_at": "2026-09-13T23:56:01.000Z",
+  "updated_at": "2026-09-13T23:56:10.000Z",
+  "license": "modified-mit",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kimi_k25",
+    "feature-extraction",
+    "compressed-tensors",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "base_model:moonshotai/Kimi-K2.7-Code",
+    "base_model:finetune:moonshotai/Kimi-K2.7-Code",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26662824,
+  "storage_human": "27 MB",
+  "base_model": "moonshotai/Kimi-K2.7-Code",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stickers, ruilkaarten en merchandiseproducten | Koop online bij Panini",
+      "url": "https://www.paninibelgium.com/shp_bel_nl/",
+      "snippet": "Welkom op de officiële Panini site. Kom verder en ontdek onze collecties stickers, ruilkaarten, merchandisingproducten en nog veel …"
+    },
+    {
+      "title": "FIFA Panini Collection",
+      "url": "https://paninicollection.fifa.com/",
+      "snippet": "Collect and swap stickers with other fans"
+    },
+    {
+      "title": "Panini Store | Stickers, Trading Cards & More",
+      "url": "https://paninistore.com/shp_int_en/",
+      "snippet": "Welcome to Panini's official store. Explore the site and discover an exclusive selection of stickers, trading cards & more delivered to …"
+    },
+    {
+      "title": "Panini stickers: onze collecties en jaarboeken | Panini",
+      "url": "https://www.paninibelgium.com/shp_bel_nl/panini-stickers.html",
+      "snippet": "De legendarische Panini stickers, ruilkaarten, de prachtigste albums en geïllustreerde jaarboeken. Koop ze in onze webshop en krijg …"
+    },
+    {
+      "title": "La boutique officielle des éditions Panini | Images, BD",
+      "url": "https://www.panini.fr/shp_fra_fr/",
+      "snippet": "Bienvenue sur le site officiel de Panini. Découvrez nos collections d'images, nos comics, mangas, magazines, livres, ainsi que nos …"
+    }
+  ]
+}

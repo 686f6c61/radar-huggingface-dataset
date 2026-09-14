@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "JOKER141/BUNNY_H3_Conditioning_Bridge",
+  "slug": "joker141-bunny_h3_conditioning_bridge",
+  "author": "JOKER141",
+  "url": "https://huggingface.co/JOKER141/BUNNY_H3_Conditioning_Bridge",
+  "created_at": "2026-09-13T23:03:26.000Z",
+  "updated_at": "2026-09-14T00:45:27.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "semantic-bridge",
+    "conditioning-adapter",
+    "action-logic",
+    "combat",
+    "motion-continuity",
+    "comfyui",
+    "distillation",
+    "sensenova",
+    "text-to-video",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 130109150,
+  "storage_human": "130 MB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/selection/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，提供知识共享、互动交流和个人成长机会。"
+    },
+    {
+      "title": "Deep Van - 知乎",
+      "url": "https://www.zhihu.com/people/yang-lei-96-72",
+      "snippet": "Aug 17, 2026 · Deep Van是知乎用户，擅长回答金融、科技和生活问题，其个人星球为DeepVan的逃生地牢，回答风格直言不讳，获 …"
+    },
+    {
+      "title": "论文中引用网页内容在文中怎么标注？ - 知乎",
+      "url": "https://www.zhihu.com/question/457765989",
+      "snippet": "① 主要责任者：作者名字；如果没有作者，可以写这篇报道的责任机构，比如说央视网、XXX研究所、XXX局等； ② 题名：这一项一 …"
+    },
+    {
+      "title": "盐选故事 - 知乎",
+      "url": "https://www.zhihu.com/topic/27506424/hot",
+      "snippet": "知乎盐选故事提供高质量的原创内容，涵盖科技、商业、影视等领域，帮助用户分享知识、经验和见解。"
+    },
+    {
+      "title": "如何解决 Edge 浏览器下载文件显示无法安全下载（已阻止）的问题？",
+      "url": "https://www.zhihu.com/question/644793665",
+      "snippet": "选择仍然保留就可以正常保存文件了。 Microsoft Edge 浏览器无法安全下载文件的处理方式 Edge浏览器在下载内网文件时，也会弹出 …"
+    }
+  ]
+}

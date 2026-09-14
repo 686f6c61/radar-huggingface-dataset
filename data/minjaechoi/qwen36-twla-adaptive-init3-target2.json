@@ -5,7 +5,7 @@
   "author": "minjaechoi",
   "url": "https://huggingface.co/minjaechoi/qwen36-twla-adaptive-init3-target2",
   "created_at": "2026-09-12T01:05:47.000Z",
-  "updated_at": "2026-09-12T01:12:14.000Z",
+  "updated_at": "2026-09-13T20:54:15.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 23,
+  "downloads_30d": 32,
   "trending_score": 0,
   "parameters": 35107181936,
   "parameters_human": "35.11B",

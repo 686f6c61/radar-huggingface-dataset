@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "seleixi/beyondacc-chapter1-9b-adapters",
+  "slug": "seleixi-beyondacc-chapter1-9b-adapters",
+  "author": "seleixi",
+  "url": "https://huggingface.co/seleixi/beyondacc-chapter1-9b-adapters",
+  "created_at": "2026-08-25T02:57:19.000Z",
+  "updated_at": "2026-09-13T23:17:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "mt-evaluation",
+    "beyond-accuracy",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16223423516,
+  "storage_human": "16.2 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XVIDEO Lyrics, Songs, and Albums | Genius",
+      "url": "https://genius.com/artists/Xvideo",
+      "snippet": "Get all the lyrics to songs by XVIDEO and join the Genius community of music scholars to learn the meaning behind the lyrics."
+    },
+    {
+      "title": "Qmayb – Una Cunumi (Remix) Lyrics - Genius",
+      "url": "https://genius.com/Qmayb-una-cunumi-remix-lyrics",
+      "snippet": "Una Cunumi (Remix) Lyrics: (d.a.) Una cunumi, una cunumi / Ella quiere que la culee, eh, ella quiere que la culee, eh / Una cunumi, …"
+    }
+  ]
+}

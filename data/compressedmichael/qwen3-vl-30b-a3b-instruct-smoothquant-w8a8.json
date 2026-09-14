@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "CompressedMichael/Qwen3-VL-30B-A3B-Instruct-SmoothQuant-W8A8",
+  "slug": "compressedmichael-qwen3-vl-30b-a3b-instruct-smoothquant-w8a8",
+  "author": "CompressedMichael",
+  "url": "https://huggingface.co/CompressedMichael/Qwen3-VL-30B-A3B-Instruct-SmoothQuant-W8A8",
+  "created_at": "2026-09-13T19:14:53.000Z",
+  "updated_at": "2026-09-13T19:19:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl_moe",
+    "image-text-to-text",
+    "llm-compressor",
+    "compressed-tensors",
+    "mixture-of-experts",
+    "smoothquant",
+    "int8",
+    "conversational",
+    "custom_code",
+    "dataset:lmms-lab/flickr30k",
+    "base_model:Qwen/Qwen3-VL-30B-A3B-Instruct",
+    "base_model:quantized:Qwen/Qwen3-VL-30B-A3B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31070754032,
+  "parameters_human": "31.07B",
+  "storage_bytes": 32305817782,
+  "storage_human": "32.3 GB",
+  "base_model": "Qwen/Qwen3-VL-30B-A3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Fordító",
+      "url": "https://translate.google.hu/",
+      "snippet": "A Google díjmentesen használható szolgáltatása képes a szavak, kifejezések és weboldalak azonnali lefordítására a magyar és több …"
+    },
+    {
+      "title": "Google Fordító",
+      "url": "https://translate.google.hu/details",
+      "snippet": "Visszajelzés küldése Részletek kereséséhez adja meg a kívánt szöveget"
+    },
+    {
+      "title": "Translate from English to Hungarian with DeepL",
+      "url": "https://www.deepl.com/en/translator/l/en/hu",
+      "snippet": "Translate texts & files instantly from English to Hungarian with the world’s most accurate translator. Millions translate with DeepL …"
+    },
+    {
+      "title": "Szöveg online fordítás és Fordító | TRANSLATOR.EU",
+      "url": "https://www.translator.eu/magyar/",
+      "snippet": "A Translator.eu egy on-line többnyelvű szöveg- és mondat fordító, amely 42 nyelvre kínál fordítási lehetőséget nagyon jó …"
+    },
+    {
+      "title": "Fordító online ingyen - WebTran",
+      "url": "https://www.webtran.eu/hu/",
+      "snippet": "Ingyenes online fordító, amely több mint 240 különböző nyelvről fordít szavakat, kifejezéseket, mondatokat magyarra és vissza."
+    }
+  ]
+}

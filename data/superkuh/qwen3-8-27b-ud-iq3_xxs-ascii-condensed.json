@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "superkuh/Qwen3.8-27B-UD-IQ3_XXS-ASCII-Condensed",
+  "slug": "superkuh-qwen3-8-27b-ud-iq3_xxs-ascii-condensed",
+  "author": "superkuh",
+  "url": "https://huggingface.co/superkuh/Qwen3.8-27B-UD-IQ3_XXS-ASCII-Condensed",
+  "created_at": "2026-09-14T00:37:47.000Z",
+  "updated_at": "2026-09-14T01:38:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "qwen",
+    "qwen3",
+    "unsloth",
+    "vocabulary-pruning",
+    "ascii",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26090566656,
+  "parameters_human": "26.09B",
+  "storage_bytes": 10380690336,
+  "storage_human": "10.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BBC News Channel | Watch Live Breaking News",
+      "url": "https://www.bbc.com/watch-live-news",
+      "snippet": "Watch live breaking news from around the world 24 hours a day every day on the BBC News channel"
+    },
+    {
+      "title": "Watch BBC News live - BBC iPlayer",
+      "url": "https://www.bbc.co.uk/iplayer/live/bbcnews",
+      "snippet": "Watch BBC News live on BBC iPlayer."
+    },
+    {
+      "title": "BBC NEWS LIVE - YouTube",
+      "url": "https://www.youtube.com/live/vtX1m5_wlzw",
+      "snippet": "See what others said about this video while it was live."
+    },
+    {
+      "title": "| BBC News Arabic Live | البث الحي لبي بي سي نيوز عربي|",
+      "url": "https://www.youtube.com/c/bbcarabic/live",
+      "snippet": "Jan 8, 2026 · بي بي سي من أكثر مصادر الأخبار موثوقية في العالم. ستجد هنا أفلاماً وثائقية، تحقيقات استقصائية، مقابلات وشرحاً لآخر الأحداث التي تهمك في السياسة، والمجتمع والعلوم والصحة."
+    },
+    {
+      "title": "BBC News - YouTube",
+      "url": "https://www.youtube.com/BBCNEWS/live%20todays",
+      "snippet": "Breaking news, live updates and in-depth analysis from BBC News journalists around the world. For the latest news, download the …"
+    }
+  ]
+}

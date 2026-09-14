@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Maxsteel108/M_v1",
+  "slug": "maxsteel108-m_v1",
+  "author": "Maxsteel108",
+  "url": "https://huggingface.co/Maxsteel108/M_v1",
+  "created_at": "2026-09-13T19:55:31.000Z",
+  "updated_at": "2026-09-14T01:31:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 463263664,
+  "storage_human": "463 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spektiv – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Spektiv",
+      "snippet": "Ein Spektiv (abgekürzt von Perspektiv von lat. perspectivus, durch-, hindurchblickend; engl. spotting scope), auch …"
+    },
+    {
+      "title": "Spektiv-Test 2026: Die 10 besten Spektive im Vergleich - [GEO]",
+      "url": "https://www.geo.de/vergleich/spektiv-test/",
+      "snippet": "Bei einem Spektiv handelt es sich um ein Beobachtungsfernrohr, das im Gegensatz zu einem astronomischen Fernrohr aufrechte …"
+    },
+    {
+      "title": "Das beste Spektiv | Test 09/2026 | F.A.Z. Kaufkompass",
+      "url": "https://www.faz.net/kaufkompass/test/das-beste-spektiv/",
+      "snippet": "Jul 8, 2026 · Wer sich für ein Spektiv entscheidet, der erwirbt es in der Regel für ein ernsthaft betriebenes Hobby oder berufliche …"
+    },
+    {
+      "title": "Spektiv",
+      "url": "https://www.spektiv.org/",
+      "snippet": "Was ist ein Spektiv? Ein Spektiv ist ein Fernrohr zum Zweck der Beobachtung. In der Regel handelt es sich um ein optisches …"
+    },
+    {
+      "title": "Spektiv Test 2026 Leica, Kowa, Zeiss & Swarovski",
+      "url": "https://www.fotosiegl.de/blog/spektiv-test",
+      "snippet": "Aug 20, 2025 · Was ist ein Spektiv und wofür wird es genutzt? Ein Spektiv ist ein leistungsstarkes optisches Gerät zur …"
+    }
+  ]
+}

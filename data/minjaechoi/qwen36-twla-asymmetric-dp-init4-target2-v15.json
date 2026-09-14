@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "minjaechoi/qwen36-twla-asymmetric-dp-init4-target2-v15",
+  "slug": "minjaechoi-qwen36-twla-asymmetric-dp-init4-target2-v15",
+  "author": "minjaechoi",
+  "url": "https://huggingface.co/minjaechoi/qwen36-twla-asymmetric-dp-init4-target2-v15",
+  "created_at": "2026-09-13T21:04:39.000Z",
+  "updated_at": "2026-09-13T21:23:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234485269,
+  "storage_human": "70.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Přehraj.to - Sledování a stahování neomezeně",
+      "url": "https://prehrajto.cz/",
+      "snippet": "Přehrajto.cz sledujte nebo stahujte bez kreditu a omezení"
+    },
+    {
+      "title": "Přehraj.to - Sledování a stahování neomezeně",
+      "url": "https://prehrajto.cz/faq",
+      "snippet": "Přehraj.to je tzv. cloudovou službou, na níž mohou její uživatelé nahrávat audiovizuální obsah za předpokladu, že je tento v souladu …"
+    },
+    {
+      "title": "- online ke zhlédnutí a ke stažení - Přehraj.to",
+      "url": "https://prehraj.to/hledej/%F0%9F%87%B5%F0%9F%87%B9",
+      "snippet": "🇵🇹 Stáhněte si aplikaci Přehraj.to do Google TV. Klikněte ZDE Soubory Nahrát soubor Rychlé odkazy Přihlásit se Zapomenuté heslo …"
+    },
+    {
+      "title": "Přehraj.to – Aplikace na Google Play",
+      "url": "https://play.google.com/store/apps/details?id=to.prehraj.app&hl=cs",
+      "snippet": "S Přehraj.to o audiovizuální zážitky nepřijdete ani na dlouhých cestách a dovolených bez internetu. Prostě si videa předem stáhněte …"
+    },
+    {
+      "title": "Přehraj.to - Sledování a stahování neomezeně",
+      "url": "https://web.uw.dev.prehrajto.cz/",
+      "snippet": "Stáhněte si aplikaci Přehraj.to do Google TV. Klikněte ZDE Soubory Nahrát soubor Rychlé odkazy Přihlásit se Zapomenuté heslo Jak …"
+    }
+  ]
+}

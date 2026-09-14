@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/jpn-100mb-after-wc-zipf-newlex-jpn-ckpt500_seed3407_seed3407",
+  "slug": "fpadovani-jpn-100mb-after-wc-zipf-newlex-jpn-ckpt500_seed3407_seed3407",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/jpn-100mb-after-wc-zipf-newlex-jpn-ckpt500_seed3407_seed3407",
+  "created_at": "2026-09-13T22:44:53.000Z",
+  "updated_at": "2026-09-14T00:55:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed3407",
+    "base_model:finetune:fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed3407",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 7238753583,
+  "storage_human": "7.2 GB",
+  "base_model": "fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed3407",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Let's Encrypt",
+      "url": "https://letsencrypt.org/fr/",
+      "snippet": "Aug 11, 2026 · Let's Encrypt est une autorité de certification gratuite, automatisée et ouverte, proposée par le Groupe de Recherche …"
+    },
+    {
+      "title": "Streaming illégal : 26 sites bloqués par la justice - Charente Libre",
+      "url": "https://www.charentelibre.fr/france/sites-de-streaming-pirates-en-france-26-plateformes-bloquees-par-la-justice-21953115.php",
+      "snippet": "Le 18 octobre 2024, le tribunal judiciaire de Paris a rendu un verdict marquant pour contrer l’accès aux sites de streaming illégal. …"
+    },
+    {
+      "title": "Les 6 meilleurs sites Torrent français - FunInformatique",
+      "url": "https://www.funinformatique.com/meilleurs-sites-torrent-francais/",
+      "snippet": "Aug 14, 2026 · Vous utilisez toujours le protocole BitTorrent pour vos téléchargements ou au contraire vous avez arrêté, car vous ne …"
+    },
+    {
+      "title": "Consulter ma carrière - L'Assurance retraite",
+      "url": "https://www.lassuranceretraite.fr/portail-info/hors-menu/annexe/services-en-ligne/consulter-ma-carriere.html",
+      "snippet": "Vous souhaitez vérifier que vos périodes d’activité ont bien été prises en compte pour votre retraite ? Vous pouvez visualiser le …"
+    },
+    {
+      "title": "Heels Spotting at Graduation | The Best Graduation Heels",
+      "url": "https://www.youtube.com/shorts/bytRXtRYMyc",
+      "snippet": "Graduation day, but make it fashionable! 👠🎓 Spotting the most stunning heels at graduation. From elegant high heels to statement …"
+    }
+  ]
+}

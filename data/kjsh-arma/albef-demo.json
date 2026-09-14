@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Kjsh-arma/albef-demo",
+  "slug": "kjsh-arma-albef-demo",
+  "author": "Kjsh-arma",
+  "url": "https://huggingface.co/Kjsh-arma/albef-demo",
+  "created_at": "2026-09-13T20:16:00.000Z",
+  "updated_at": "2026-09-13T20:16:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kaufe deine Videospiele für PC und Konsolen günstiger - Instant Gaming!",
+      "url": "https://www.instant-gaming.com/de/?msockid=23836493ad60689235f87340acb36966",
+      "snippet": "Instant Gaming ist eine fantastische Plattform, um deine PC-, PlayStation-, Xbox- und Switch-Spiele günstiger zu kaufen, mit 24/7 …"
+    },
+    {
+      "title": "Achetez vos jeux vidéo moins cher sur PC et consoles - Instant Gaming",
+      "url": "https://www.instant-gaming.com/fr/?msockid=23836493ad60689235f87340acb36966",
+      "snippet": "Instant Gaming est une plateforme incroyable pour acheter vos jeux PC, PlayStation, Xbox et Switch moins cher en livraison …"
+    },
+    {
+      "title": "(MAJ) GTA VI coûtera bien 79,99 - news.instant-gaming.com",
+      "url": "https://news.instant-gaming.com/fr/articles/20394-maj-gta-vi-coutera-bien-79-99-eur-et-le-online-ne-sera-pas-disponible-au-lancement",
+      "snippet": "Jun 24, 2026 · Mise à jour du 25 juin 2026 à 00 h 20 Les précommandes de GTA VI sont maintenant ouvertes. En Europe, le jeu est …"
+    },
+    {
+      "title": "Video Game News, for PC and Consoles - Instant Gaming News",
+      "url": "https://news.instant-gaming.com/en",
+      "snippet": "4 days ago · Instant Gaming News is the best to follow all the video game News on your favorite devices, PC and consoles"
+    },
+    {
+      "title": "Compra videojogos mais baratos para PC e consolas - Instant Gaming",
+      "url": "https://www.instant-gaming.com/pt/?msockid=23836493ad60689235f87340acb36966",
+      "snippet": "Na Instant Gaming, pode encontrar uma enorme seleção de produtos para PC, consolas e muito mais. Temos ofertas incríveis de …"
+    }
+  ]
+}

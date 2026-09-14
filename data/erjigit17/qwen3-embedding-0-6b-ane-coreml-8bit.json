@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "erjigit17/qwen3-embedding-0.6b-ane-coreml-8bit",
+  "slug": "erjigit17-qwen3-embedding-0-6b-ane-coreml-8bit",
+  "author": "erjigit17",
+  "url": "https://huggingface.co/erjigit17/qwen3-embedding-0.6b-ane-coreml-8bit",
+  "created_at": "2026-09-14T00:28:46.000Z",
+  "updated_at": "2026-09-14T00:31:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "apple-neural-engine",
+    "embeddings",
+    "sentence-similarity",
+    "feature-extraction",
+    "macos",
+    "on-device",
+    "quantization",
+    "base_model:neuradex/Qwen3-Embedding-0.6B-CoreML-ANE",
+    "base_model:quantized:neuradex/Qwen3-Embedding-0.6B-CoreML-ANE",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1206913895,
+  "storage_human": "1.2 GB",
+  "base_model": "neuradex/Qwen3-Embedding-0.6B-CoreML-ANE",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fernsehprogramm heute abend 20:15 Uhr - TV SPIELFILM",
+      "url": "https://www.tvspielfilm.de/tv-programm/sendungen/abends.html",
+      "snippet": "Fernsehprogramm heute abend 20:15 Uhr: Was heute Abend im TV - Programm läuft, erfahren Sie auf TV SPIELFILM, Ihrem TV …"
+    },
+    {
+      "title": "TV Programm heute - TV heute - TV SPIELFILM",
+      "url": "https://www.tvspielfilm.de/tv-programm/",
+      "snippet": "Das aktuelle TV Programm von heute: Alle Infos zum Fernsehprogramm heute mit allen Fernsehsendern und Sendungen für Sie im …"
+    },
+    {
+      "title": "Das TV-Programm von heute - TV SPIELFILM",
+      "url": "https://m.tvspielfilm.de/tv-programm/sparte/?order=category&date=twoWeeks&time=now&channel",
+      "snippet": "Das aktuelle TV-Programm von Sonntag, 13.09.2026 bis Samstag, 26.09.2026, alle Sendungen und Sendetermine auf einen Blick - …"
+    },
+    {
+      "title": "Das SAT.1 Gold TV-Programm von heute - TV SPIELFILM",
+      "url": "https://m.tvspielfilm.de/tv-programm/sendungen/sat1-gold,SAT1G.html?page=2",
+      "snippet": "Das aktuelle SAT.1 Gold TV-Programm, alle Sendungen und Sendetermine auf einen Blick - schnell, übersichtlich und kompakt bei …"
+    },
+    {
+      "title": "Jetzt im TV - Das aktuelle TV-Programm - TV SPIELFILM",
+      "url": "https://www.tvspielfilm.de/tv-programm/sendungen/jetzt.html",
+      "snippet": "Das aktuelle TV-Programm heute Wer seinen Blick in die rechte Spalte richtet, hat einen weiteren Vorteil bei TV SPIELFILM: Hier ist …"
+    }
+  ]
+}

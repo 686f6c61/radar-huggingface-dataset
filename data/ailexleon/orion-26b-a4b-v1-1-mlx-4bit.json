@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ailexleon/Orion-26B-A4B-v1.1-mlx-4Bit",
+  "slug": "ailexleon-orion-26b-a4b-v1-1-mlx-4bit",
+  "author": "ailexleon",
+  "url": "https://huggingface.co/ailexleon/Orion-26B-A4B-v1.1-mlx-4Bit",
+  "created_at": "2026-09-13T19:27:36.000Z",
+  "updated_at": "2026-09-13T20:03:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "creative writing",
+    "roleplay",
+    "conversational",
+    "character-rp",
+    "storytelling",
+    "text-generation",
+    "en",
+    "base_model:TheDrummer/Orion-26B-A4B-v1.1",
+    "base_model:quantized:TheDrummer/Orion-26B-A4B-v1.1",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233053440,
+  "parameters_human": "25.23B",
+  "storage_bytes": 14232402066,
+  "storage_human": "14.2 GB",
+  "base_model": "TheDrummer/Orion-26B-A4B-v1.1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reizen naar Argentinië: Reisadvies - FPS Foreign Affairs",
+      "url": "https://diplomatie.belgium.be/nl/landen/argentinie/reizen-naar-argentinie-reisadvies/praktische-info-voor-argentinie",
+      "snippet": "Aug 24, 2026 · Reist u naar Argentinië? Ontdek onze reisadviezen voor deze bestemming. Het reisadvies is slechts bedoeld als …"
+    },
+    {
+      "title": "Reizen naar Argentinië: Reisadvies - FPS Foreign Affairs",
+      "url": "https://diplomatie.belgium.be/nl/landen/argentinie/reizen-naar-argentinie-reisadvies/laatste-update-argentinie",
+      "snippet": "Aug 24, 2026 · De Belgische ambassade in Buenos Aires is bevoegd voor alle consulaire dienstverlening aan Belgen in Argentinië. …"
+    },
+    {
+      "title": "De beste vliegtickets naar Buenos Aires | KLM",
+      "url": "https://www.klm.nl/nl-nl/vliegtickets-buenos-aires",
+      "snippet": "Vind de beste deals en vluchten naar Buenos Aires. Boek uw goedkope vliegticket Buenos Aires bij KLM en haal meer uit uw reis …"
+    },
+    {
+      "title": "Reizen naar Argentinie: Alles wat je wilt weten + handige tips",
+      "url": "https://www.passporttheworld.com/nl/bestemmingen/zuid-amerika/argentinie/reizen-naar-argentinie/",
+      "snippet": "Van Buenos Aires tot Patagonië: lees alles over reizen naar Argentinië met tips over bezienswaardigheden, beste reistijd, vervoer, …"
+    },
+    {
+      "title": "Bezoek Buenos Aires: Het beste van reizen naar Buenos Aires, Buenos ...",
+      "url": "https://www.expedia.nl/Buenos-Aires.dx178242",
+      "snippet": "Verken het beste van Buenos Aires! Of je nu de stad wilt ervaren als een toerist of wilt rondreizen als een lokale bewoner, bekijk deze …"
+    }
+  ]
+}

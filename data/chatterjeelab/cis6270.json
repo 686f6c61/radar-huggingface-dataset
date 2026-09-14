@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ChatterjeeLab/CIS6270",
+  "slug": "chatterjeelab-cis6270",
+  "author": "ChatterjeeLab",
+  "url": "https://huggingface.co/ChatterjeeLab/CIS6270",
+  "created_at": "2026-09-07T16:06:23.000Z",
+  "updated_at": "2026-09-14T02:26:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "education",
+    "pytorch",
+    "flow-matching",
+    "diffusion",
+    "esm2",
+    "protein-generation",
+    "guidance",
+    "mnist",
+    "image-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1893377,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FK Horní Ředice | Oficiální web",
+      "url": "https://fkhorniredice.cz/",
+      "snippet": "Oficiální web fotbalového klubu FK Horní Ředice. Aktuální zprávy, zápasy, výsledky, soupiska, mládež, fotogalerie a informace o klubu."
+    },
+    {
+      "title": "ChatterjeeLab (Programmable Biology Group) - Hugging Face",
+      "url": "https://huggingface.co/ChatterjeeLab/models",
+      "snippet": "AI & ML interests. Discrete Generative Models, Molecule Design, Guided Sampling, Diffusion Models, Flow Matching, Schrödinger Bridges ..."
+    },
+    {
+      "title": "Horní Ředice - výsledky, program zápasů, Čáslav - Horní Ředice ...",
+      "url": "https://www.livesport.cz/tym/horni-redice/Ghs8FE7N/",
+      "snippet": "Stránka Horní Ředice na Livesportu přináší livescore, výsledky, program zápasů, tabulky a detaily zápasů (střelce gólů, červené …"
+    },
+    {
+      "title": "FK Horní Ředice | Soutěže | FOTBAL.CZ",
+      "url": "https://www.fotbal.cz/souteze/club/club/16a02043-4684-41f5-9458-04e012610d1d",
+      "snippet": "FK Horní Ředice Základní informace ID klubu 5320071 Adresa klubu Horní Ředice 323 Horní Ředice 53375"
+    },
+    {
+      "title": "Rozpis zápasů | FK Horní Ředice",
+      "url": "https://fkhorniredice.cz/rozpis/",
+      "snippet": "Oficiální web fotbalového klubu FK Horní Ředice. Aktuální zprávy, zápasy, výsledky, soupiska, mládež, fotogalerie a informace o klubu."
+    }
+  ]
+}

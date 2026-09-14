@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "YauhenBichel/op3-humanoid-walking-ppo",
+  "slug": "yauhenbichel-op3-humanoid-walking-ppo",
+  "author": "YauhenBichel",
+  "url": "https://huggingface.co/YauhenBichel/op3-humanoid-walking-ppo",
+  "created_at": "2026-09-13T21:02:34.000Z",
+  "updated_at": "2026-09-13T21:02:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "numpy",
+  "languages": [],
+  "tags": [
+    "numpy",
+    "robotics",
+    "reinforcement-learning",
+    "humanoid",
+    "locomotion",
+    "mujoco",
+    "mujoco-playground",
+    "ppo",
+    "sim-to-real",
+    "robotis-op3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3696920,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "死神VS火影3.3 - 4399小游戏",
+      "url": "https://www.4399.com/flash/205551.htm",
+      "snippet": "Apr 30, 2019 · 《死神VS火影3.3》小游戏由4399用户提供。 4399为您提供死神VS火影3.3在线玩，死神VS火影3.3下载，死神VS火 …"
+    },
+    {
+      "title": "死神VS火影 3.5 - 在线畅玩动漫格斗游戏",
+      "url": "https://cartoongames.io/zh/game/bleach-vs-naruto-3-5",
+      "snippet": "每场对决都充满动感，无论是与强大的AI对手对战，还是与朋友共同游戏。 炫目的变身、令人满意的连招以及多种模式可供探索，《 …"
+    },
+    {
+      "title": "死神VS火影_百度百科",
+      "url": "https://baike.baidu.com/item/%E6%AD%BB%E7%A5%9EVS%E7%81%AB%E5%BD%B1/2132607",
+      "snippet": "《死神VS火影》（Bleach VS Naruto）是由国内爱好者“剑jian”（魏建）研发、5DPLAY网站发行的一款横版格斗FLASH游戏，于2008 …"
+    },
+    {
+      "title": "死神 vs 火影忍者 - 在 SilverGames.com 在线玩 ️",
+      "url": "https://www.silvergames.com/zh/bleach-vs-naruto-v24",
+      "snippet": "“死神 vs 火影忍者”是一款激动人心的跨界格斗游戏，汇集了两大深受喜爱的动漫宇宙的标志性人物：死神和火影忍者。 从任一系列中 …"
+    },
+    {
+      "title": "死神vs火影3.8.8.5官方正版下载-死神vs火影游戏电脑版下载-当 ...",
+      "url": "https://www.downkuai.com/soft/123329.html",
+      "snippet": "Aug 22, 2026 · 死神vs火影3.8.8.5官方正版是由5DPLAY Game Studio开发的一款横板动作格斗游戏，有着非常高的知名度，深受广大 …"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "minte1431/Gemma-4-12B-OBLITERATED",
+  "slug": "minte1431-gemma-4-12b-obliterated",
+  "author": "minte1431",
+  "url": "https://huggingface.co/minte1431/Gemma-4-12B-OBLITERATED",
+  "created_at": "2026-09-14T00:50:42.000Z",
+  "updated_at": "2026-09-14T00:50:42.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "gemma4_unified",
+    "image-text-to-text",
+    "gemma",
+    "gemma4",
+    "text-generation",
+    "obliteratus",
+    "refusal-analysis",
+    "red-team",
+    "aspa",
+    "abliteration",
+    "safety-research",
+    "alignment-research",
+    "conversational",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:quantized:google/gemma-4-12B-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 67834812261,
+  "storage_human": "67.8 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit Topic Aggregator - GitHub",
+      "url": "https://github.com/dimarye/reddit-topic-aggregator",
+      "snippet": "Reddit Topic Aggregator A simple web app that aggregates Reddit posts from selected subreddits like sports, health, and celebrities. …"
+    },
+    {
+      "title": "Crypto Payment Rail for Financial Applications | Transak",
+      "url": "https://transak.com/",
+      "snippet": "Build crypto payment experiences into any financial application with Transak."
+    },
+    {
+      "title": "Reddit Topics Aggregator - GitHub",
+      "url": "https://github.com/lieutdan13/reddit-topics-aggregator",
+      "snippet": "Reddit Topics Aggregator is a tool that uses the Reddit API to gather information from different subreddits to create a summary of …"
+    },
+    {
+      "title": "6 Content Aggregator Websites That Rock in 2026 - WP Mayor",
+      "url": "https://wpmayor.com/best-examples-content-aggregator-websites/",
+      "snippet": "Discover 6 standout content aggregator websites, breaking down what makes them successful, and how to build your own content …"
+    },
+    {
+      "title": "Our Favorite News Aggregators of 2026 - Lifewire",
+      "url": "https://www.lifewire.com/best-news-aggregators-4584410",
+      "snippet": "Jan 4, 2026 · These news aggregators are for people looking to stay up to date on world events, sports, politics, entertainment, and …"
+    }
+  ]
+}

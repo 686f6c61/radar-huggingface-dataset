@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "halle01/ivl4b-loras-backup",
+  "slug": "halle01-ivl4b-loras-backup",
+  "author": "halle01",
+  "url": "https://huggingface.co/halle01/ivl4b-loras-backup",
+  "created_at": "2026-09-13T19:50:03.000Z",
+  "updated_at": "2026-09-13T19:55:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5178426069,
+  "storage_human": "5.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Normandie : un homme poignardé à mort en pleine nuit - MSN",
+      "url": "https://www.msn.com/fr-fr/actualite/other/normandie-un-homme-poignard%C3%A9-%C3%A0-mort-en-pleine-nuit/ar-AA2c7MkM",
+      "snippet": "Un homme de 30 ans est mort après une agression à l’arme blanche, dans la nuit de vendredi à samedi dans le Calvados. L’auteur …"
+    },
+    {
+      "title": "INFO ICI NORMANDIE - Un homme meurt poignardé sur la voie publique à ...",
+      "url": "https://www.ici.fr/normandie/calvados-14/clecy/info-ici-normandie-un-homme-meurt-poignarde-sur-la-voie-publique-a-clecy-dans-le-calvados-1787638",
+      "snippet": "1 day ago · Un homme d’une trentaine d’années mort par arme blanche dans la nuit de ce vendredi 11 au samedi 12 septembre 2026 …"
+    },
+    {
+      "title": "Mort d’un homme de 30 ans en Suisse normande - Actu",
+      "url": "https://actu.fr/normandie/clecy_14162/mort-dun-homme-de-30-ans-en-suisse-normande-une-enquete-pour-meurtre-ouverte_64782076.html",
+      "snippet": "1 day ago · Un homme d’environ 30 ans a été retrouvé mort sur la voie publique à Clécy (Calvados), dans la nuit du vendredi 11 au …"
+    },
+    {
+      "title": "Normandie : un homme poignardé à mort en pleine nuit",
+      "url": "https://www.titrespresse.com/21147782603/normandie-calvados-homme",
+      "snippet": "20 hours ago · Un homme de 30 ans est mort après une agression à l'arme blanche, dans la nuit de vendredi à samedi dans le …"
+    },
+    {
+      "title": "INFO OUEST-FRANCE. Un homme succombe à des blessures par arme …",
+      "url": "https://caen.maville.com/actu/actudet_-info-ouest-france-un-homme-succombe-a-des-blessures-par-arme-blanche-en-normandie-une-enquete-pour-meurtre-ouverte_une-7476013_actu.Htm",
+      "snippet": ""
+    }
+  ]
+}

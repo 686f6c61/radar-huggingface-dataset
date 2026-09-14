@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "aaravsharmana/multitask-beta",
+  "slug": "aaravsharmana-multitask-beta",
+  "author": "aaravsharmana",
+  "url": "https://huggingface.co/aaravsharmana/multitask-beta",
+  "created_at": "2026-09-13T23:06:41.000Z",
+  "updated_at": "2026-09-13T23:06:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ativar ou desativar o Bluetooth no Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/pt-br/windows/hardware/bluetooth/turn-bluetooth-on-or-off-in-windows",
+      "snippet": "Aprenda o passo para ativar ou desativar o Bluetooth no Windows usando o aplicativo Configurações, configurações rápidas e …"
+    },
+    {
+      "title": "Activar o desactivar Bluetooth en Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/es-es/windows/hardware/bluetooth/turn-bluetooth-on-or-off-in-windows",
+      "snippet": "Obtén información sobre el paso para activar o desactivar Bluetooth en Windows mediante la aplicación Configuración, la …"
+    },
+    {
+      "title": "Find & set up Bluetooth devices near your Android device",
+      "url": "https://support.google.com/android/answer/9417604?hl=en",
+      "snippet": "After you pair a Bluetooth device for the first time, your devices can connect automatically. If your phone is connected to something …"
+    },
+    {
+      "title": "Android cihazınızın yakınındaki Bluetooth cihazları bulma ve ayarlama",
+      "url": "https://support.google.com/android/answer/9417604?hl=tr",
+      "snippet": "Bluetooth'u kullanarak telefonunuzu bazı cihazlara kablosuz olarak bağlayabilirsiniz. Bluetooth cihazını ilk kez eşledikten sonra …"
+    },
+    {
+      "title": "Emparelhar um dispositivo Bluetooth no Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/pt-br/windows/hardware/bluetooth/pair-a-bluetooth-device-in-windows",
+      "snippet": "Emparelhar um dispositivo Bluetooth Ligue o dispositivo Bluetooth e torne-o localizável. A maneira de tornar o dispositivo Bluetooth …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "j4sminenguy3n/hybrid-multitask-2023",
+  "slug": "j4sminenguy3n-hybrid-multitask-2023",
+  "author": "j4sminenguy3n",
+  "url": "https://huggingface.co/j4sminenguy3n/hybrid-multitask-2023",
+  "created_at": "2026-09-13T22:55:28.000Z",
+  "updated_at": "2026-09-13T22:55:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Digital Spy Forum",
+      "url": "https://forums.digitalspy.com/",
+      "snippet": "1 day ago · Categories - Digital Spy Forum and Community, a place to discuss the latest TV, Movie and entertainment news and trends."
+    },
+    {
+      "title": "Streaming Anime - Reddit",
+      "url": "https://www.reddit.com/r/StreamingAnime/wiki/topsites/?f=flair_name%3A%22Recommendations%22",
+      "snippet": "Subreddit to discuss anything related to streaming anime online. Sites, Apps, News, Memes, Tech Tips, Tools, Extensions, …"
+    },
+    {
+      "title": "Streaming Community : r/community - Reddit",
+      "url": "https://www.reddit.com/r/community/comments/fb1wa/streaming_community/",
+      "snippet": "Jan 28, 2011 · Streaming Community Does anybody know of any site that has the first season of Community streaming? Or at least …"
+    },
+    {
+      "title": "THIS IS OIL COUNTRY - Reddit",
+      "url": "https://www.reddit.com/r/EdmontonOilers/",
+      "snippet": "This is a thread for general discussion about yesterday's game. Any and all observations, opinions, questions, shitposts, memes, and …"
+    },
+    {
+      "title": "popheads: the hottest in pop music - Reddit",
+      "url": "https://www.reddit.com/r/popheads/",
+      "snippet": "r/popheads: The latest and greatest in pop music, all in one subreddit."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "fpadovani",
   "url": "https://huggingface.co/fpadovani/eng-100mb-after-wc-uniform-newlex-eng-ckpt500_seed455_seed455",
   "created_at": "2026-09-13T14:51:22.000Z",
-  "updated_at": "2026-09-13T19:27:42.000Z",
+  "updated_at": "2026-09-13T19:57:30.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 124770816,
   "parameters_human": "124.8M",
-  "storage_bytes": 5491704983,
-  "storage_human": "5.5 GB",
+  "storage_bytes": 7488276031,
+  "storage_human": "7.5 GB",
   "base_model": "fpadovani/ppt-wc-uniform-newlex-eng-100mb_seed455",
   "formats": [
     "safetensors"

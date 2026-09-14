@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ykumards/smollm2-135m-bedtime-stories",
+  "slug": "ykumards-smollm2-135m-bedtime-stories",
+  "author": "ykumards",
+  "url": "https://huggingface.co/ykumards/smollm2-135m-bedtime-stories",
+  "created_at": "2026-09-13T19:47:33.000Z",
+  "updated_at": "2026-09-13T20:13:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "bedtime-stories",
+    "smollm2",
+    "on-device",
+    "remarkable",
+    "conversational",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 421265747,
+  "storage_human": "421 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Justin TV [Résolu] - Cinéma / Télé",
+      "url": "https://forums.commentcamarche.net/forum/affich-13173733-justin-tv",
+      "snippet": "Jul 3, 2009 · Bonjour, Voila j'ai un compte sur Justin TV, j'aimerai diffuser des video et creer une playlist pour la diffusion mais je ne …"
+    },
+    {
+      "title": "Justin tv - CCM - Tech Forum",
+      "url": "https://forums.commentcamarche.net/forum/affich-14340856-justin-tv?lang=en",
+      "snippet": "Hello, a friend told me to go to Justin TV and I could watch L1 and L2 football live. How do I do that? Thank you. Configuration: …"
+    },
+    {
+      "title": "Justin tv, probleme [Résolu] - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-18133398-justin-tv-probleme",
+      "snippet": "Bonjour, Je n'arrive pas a diffuser sur justin tv, dès que je clique sur \"autoriser\" mon navigateur ce ferme, j'ai redémarrer, j'ai utiliser …"
+    },
+    {
+      "title": "Justin Tv - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-17776210-justin-tv",
+      "snippet": "Bonjour, Je voudrais diffuser des jeux sur justin tv mais je ne sais pas comment faire : ( Si qu'el qu'un pouvait m'expliquer sa serais …"
+    },
+    {
+      "title": "Justin TV ne fonctionne plus [Résolu] - Windows - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-13330989-justin-tv-ne-fonctionne-plus",
+      "snippet": "Bonjour, depuis ce matin j'ai un problème, justin tv ne marche plus. Enfin ce matin, il suffisait seulemnt de mettre à jour le pluggin …"
+    }
+  ]
+}

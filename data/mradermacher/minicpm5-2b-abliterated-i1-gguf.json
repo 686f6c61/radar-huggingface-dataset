@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MiniCPM5-2B-abliterated-i1-GGUF",
+  "slug": "mradermacher-minicpm5-2b-abliterated-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MiniCPM5-2B-abliterated-i1-GGUF",
+  "created_at": "2026-09-13T20:20:29.000Z",
+  "updated_at": "2026-09-13T23:00:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "minicpm",
+    "minicpm5",
+    "abliterated",
+    "abliteration",
+    "safety",
+    "uncensored",
+    "red-teaming",
+    "text-generation",
+    "on-device",
+    "en",
+    "zh",
+    "base_model:PinoCookie/MiniCPM5-2B-abliterated",
+    "base_model:quantized:PinoCookie/MiniCPM5-2B-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 30242609568,
+  "storage_human": "30.2 GB",
+  "base_model": "PinoCookie/MiniCPM5-2B-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Is halloumi healthy? | Good Food",
+      "url": "https://www.bbcgoodfood.com/health/nutrition/halloumi-healthy",
+      "snippet": "Mar 6, 2025 · Top health benefits of halloumi 1. Rich in bone-friendly calcium Halloumi, like other dairy foods, is rich in calcium, a …"
+    },
+    {
+      "title": "Is Halloumi Healthy? Dieticians Give Their View",
+      "url": "https://www.menshealth.com/uk/nutrition/a39451867/is-halloumi-healthy/",
+      "snippet": "Sep 12, 2024 · We consulted three dieticians who gave us the low down on halloumi's health benefits, its downsides and some …"
+    },
+    {
+      "title": "Halloumi: Nutrition, Benefits and Risks | Acibadem Health Point",
+      "url": "https://www.acibademhealthpoint.com/blog/halloumi-nutrition-benefits-and-risks/",
+      "snippet": "Aug 24, 2026 · Halloumi is a salty, firm cheese. Learn its nutrition, health considerations, how it fits into a balanced diet, and safer …"
+    },
+    {
+      "title": "Is Halloumi Healthy? Evidence-Based Nutrition Analysis",
+      "url": "https://thelivinglook.com/kitchen-hacks/is-halloumi-healthy",
+      "snippet": "May 22, 2026 · This evidence-based halloumi wellness guide explores how to improve halloumi nutrition impact, what to look for in …"
+    },
+    {
+      "title": "Halloumi Nutrition Facts: 85 Calories | Health Score 55/100 | Nutribit",
+      "url": "https://www.nutribit.app/en/nutrient/halloumi-nutrition-summary",
+      "snippet": "Comprehensive nutrition facts, health benefits, and dietary information for Halloumi. Learn about calories, protein, carbohydrates, …"
+    }
+  ]
+}

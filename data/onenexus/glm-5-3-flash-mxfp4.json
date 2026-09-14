@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "OneNexus/GLM-5.3-Flash-MXFP4",
+  "slug": "onenexus-glm-5-3-flash-mxfp4",
+  "author": "OneNexus",
+  "url": "https://huggingface.co/OneNexus/GLM-5.3-Flash-MXFP4",
+  "created_at": "2026-08-30T03:11:16.000Z",
+  "updated_at": "2026-09-13T19:44:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "quark",
+    "mxfp4",
+    "rocm",
+    "sglang",
+    "speculative-decoding",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 1181,
+  "trending_score": 0,
+  "parameters": 169120127838,
+  "parameters_human": "169.12B",
+  "storage_bytes": 245608088368,
+  "storage_human": "245.6 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Italien Urlaub am Meer » Genieße mediterranes Flair ☀ | TUI",
+      "url": "https://www.tui.com/pauschalreisen/badeurlaub/italien/?msockid=2a61acd5c8106ec41adcbb06c95a6ffd",
+      "snippet": "Egal, ob du per Auto oder mit dem Flugzeug anreist – mit seiner Nähe zu Deutschland liegt Italien günstig für einen unkomplizierten …"
+    },
+    {
+      "title": "Italien: Die 10 schönsten Strände - HolidayCheck",
+      "url": "https://www.holidaycheck.de/urlaub/italien/inspiration/schoensten-straende",
+      "snippet": "Jul 10, 2025 · Neben top ausgestatteten Stränden mit breitem Freizeit- und Gastronomieangebot gibt es auch naturbelassene Ecken …"
+    },
+    {
+      "title": "Badeurlaub in Italien entdecken & buchen | ALDI Reisen",
+      "url": "https://www.aldi-reisen.de/badereisen/italien",
+      "snippet": "Einsame Buchten, endlose Sandstrände und das sanfte Rauschen des Mittelmeeres - Italien ist perfekt für einen erholsamen …"
+    },
+    {
+      "title": "Badeurlaub: Italien Strandurlaub günstig buchen - sonnenklar.TV",
+      "url": "https://www.sonnenklar.tv/promo/italien-badeurlaub.html",
+      "snippet": "Buchen Sie jetzt Ihren günstigen Strandurlaub beim Spezialisten für Italien und erleben Sie einen fantastischen Urlaub an den …"
+    },
+    {
+      "title": "Italien schönste Strände 13 Orte für Urlaub am Meer - 22places",
+      "url": "https://www.22places.de/italien-schoenste-straende/",
+      "snippet": "Jun 19, 2026 · Unsere Italien-Expertin fährt jedes Jahr nach Italien ans Meer und kennt sich gut aus. Wir haben vor allem die Strände …"
+    }
+  ]
+}

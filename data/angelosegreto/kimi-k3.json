@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ANGELOSEGRETO/Kimi-K3",
+  "slug": "angelosegreto-kimi-k3",
+  "author": "ANGELOSEGRETO",
+  "url": "https://huggingface.co/ANGELOSEGRETO/Kimi-K3",
+  "created_at": "2026-09-13T22:49:19.000Z",
+  "updated_at": "2026-09-13T22:49:19.000Z",
+  "license": "kimi-k3",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kimi_k3",
+    "feature-extraction",
+    "compressed-tensors",
+    "conversational",
+    "image-text-to-text",
+    "custom_code",
+    "license:other",
+    "eval-results",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2779931837184,
+  "parameters_human": "2779.93B",
+  "storage_bytes": 1560998650830,
+  "storage_human": "1561.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comparateur de vol et Billets d’avion pas cher | LILIGO",
+      "url": "https://www.liligo.fr/",
+      "snippet": "Votre comparateur de vols pas chers LILIGO Trouvez vos billets d’avion au meilleur prix parmi des centaines de sites de voyage !"
+    },
+    {
+      "title": "Vol départ Maroc pas cher - Comparez avec LILIGO.com",
+      "url": "https://www.liligo.fr/vol-depart-maroc.html",
+      "snippet": "Sep 3, 2026 · Les meilleures offres de vols depuis Maroc sont sur liligo.com : comparez tous les billets d'avion pas chers depuis …"
+    },
+    {
+      "title": "Vol Paris - Tunis pas cher | Billets d'avion sur Liligo",
+      "url": "https://www.liligo.fr/vols/itineraires/paris/tunis",
+      "snippet": "Billet d'avion Paris - Tunis : dès 87 € A/R. Comparez toutes les compagnies et réservez votre vol pas cher avec LILIGO."
+    },
+    {
+      "title": "Vol pour Madagascar pas cher : Comparez les Billets d’avion | Liligo",
+      "url": "https://www.liligo.fr/vols/madagascar",
+      "snippet": "Comparez les prix des vols pour Madagascar et réservez votre billet d'avion pas cher au meilleur moment !"
+    },
+    {
+      "title": "Vol Paris - Pointe à Pitre pas cher | Billets d'avion sur Liligo",
+      "url": "https://www.liligo.fr/vols/itineraires/paris/pointe-a-pitre",
+      "snippet": "Billet d'avion Paris - Pointe à Pitre : dès 404 € A/R. Comparez toutes les compagnies et réservez votre vol pas cher avec LILIGO."
+    }
+  ]
+}

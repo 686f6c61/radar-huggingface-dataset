@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "PYTHAI/granite-4.2-30b-fork",
+  "slug": "pythai-granite-4-2-30b-fork",
+  "author": "PYTHAI",
+  "url": "https://huggingface.co/PYTHAI/granite-4.2-30b-fork",
+  "created_at": "2026-09-13T23:57:19.000Z",
+  "updated_at": "2026-09-13T23:58:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "pt",
+    "ar",
+    "cs",
+    "it",
+    "ko",
+    "nl",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "granite",
+    "text-generation",
+    "granite-4.2",
+    "reasoning",
+    "thinking",
+    "tool-calling",
+    "ibm",
+    "conversational",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "pt",
+    "ar",
+    "cs",
+    "it",
+    "ko",
+    "nl",
+    "zh",
+    "base_model:ibm-granite/granite-4.1-30b-base",
+    "base_model:finetune:ibm-granite/granite-4.1-30b-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "ibm-granite/granite-4.1-30b-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "US Open 2026 – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/US_Open_2026",
+      "snippet": "US Open sind das letzte von vier Grand-Slam -Turnieren der Saison, den am höchsten dotierten und prestigeträchtigsten …"
+    },
+    {
+      "title": "ibm-granite/granite-4.2-30b · Hugging Face",
+      "url": "https://huggingface.co/ibm-granite/granite-4.2-30b",
+      "snippet": "Granite-4.2-30B can be used as the backbone model for agentic coding tools. Since it supports reasoning and tool calling via the OpenAI-compatible API, it integrates with popular agentic harnesses out of the box."
+    },
+    {
+      "title": "Granite 4.1 30B - Intelligence, Performance & Price Analysis",
+      "url": "https://artificialanalysis.ai/models/granite-4-1-30b",
+      "snippet": "nalysis of IBM's Granite 4.1 30B and comparison to other AI models across key metrics including quality, price, performance (tokens per second & time to first token), context window & more."
+    },
+    {
+      "title": "Official Site of the 2026 US Open Tennis Championships - A USTA Event",
+      "url": "https://www.usopen.org/index.html",
+      "snippet": "The official site of the 2026 US Open Tennis Championships. Follow the action with live scoring, live radio, news and highlights. Buy …"
+    },
+    {
+      "title": "2026 US Open (tennis) - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/2026_US_Open_(tennis)",
+      "snippet": "The 2026 US Open is the 146th edition of tennis ' US Open, and the fourth and final Grand Slam event of the year. It is being held on …"
+    }
+  ]
+}

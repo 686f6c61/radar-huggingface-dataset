@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Nicolassuez/Falcon-OCR-int8-openvino",
+  "slug": "nicolassuez-falcon-ocr-int8-openvino",
+  "author": "Nicolassuez",
+  "url": "https://huggingface.co/Nicolassuez/Falcon-OCR-int8-openvino",
+  "created_at": "2026-09-13T20:35:14.000Z",
+  "updated_at": "2026-09-13T20:35:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "falcon_ocr",
+    "int8",
+    "ocr",
+    "cpu",
+    "image-to-text",
+    "custom_code",
+    "base_model:tiiuae/Falcon-OCR",
+    "base_model:finetune:tiiuae/Falcon-OCR",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 490783590,
+  "storage_human": "491 MB",
+  "base_model": "tiiuae/Falcon-OCR",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XNMU Inserts - hjcarbide.com",
+      "url": "https://www.hjcarbide.com/product/XNMU-Inserts.html",
+      "snippet": "XNMU milling insert with 0 degree clearance angle. Double-sided inserts with economical 14 cutting edges for steel and cast iron …"
+    },
+    {
+      "title": "XNMU Milling Inserts - Hunan Estool Co.,Ltd.",
+      "url": "https://www.estoolcarbide.com/product/xnmu-milling-inserts-p-1240/",
+      "snippet": "XNMU milling insert with 0 degree clearance angle. Double-sided inserts with economical 14 cutting edges for steel and cast iron …"
+    },
+    {
+      "title": "FFX4 XNMU 040310T IC830",
+      "url": "https://webshop.iscar.co.uk/catalogue/product/1896848",
+      "snippet": "Double-sided \"bone shaped\" inserts with 4 cutting edges, for fast feed milling. Used for small size pockets, profiling and face milling. …"
+    },
+    {
+      "title": "XNMU Carbide Milling Inserts for Cast Iron Face & Shoulder Milling",
+      "url": "https://www.hmntool.com/carbide-milling-insert-Xnmu-series.html",
+      "snippet": "XNMU inserts with -MM and -GR chip breakers are primarily used for face and shoulder milling operations in cast iron (ISO K). They …"
+    },
+    {
+      "title": "Iscar United Kingdom | Milling > Indexable > Milling Indexable Inserts ...",
+      "url": "https://webshop.iscar.co.uk/catalogue/product/1896854",
+      "snippet": "Double-sided \"bone shaped\" inserts with 4 cutting edges, for fast feed milling. Used for small size pockets, profiling and face milling. …"
+    }
+  ]
+}

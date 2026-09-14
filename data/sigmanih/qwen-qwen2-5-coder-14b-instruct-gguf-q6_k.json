@@ -5,7 +5,7 @@
   "author": "sigmanih",
   "url": "https://huggingface.co/sigmanih/Qwen-Qwen2.5-Coder-14B-Instruct-GGUF-Q6_K",
   "created_at": "2026-09-02T20:38:04.000Z",
-  "updated_at": "2026-09-02T20:56:06.000Z",
+  "updated_at": "2026-09-13T15:45:46.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 196,
   "trending_score": 0,
   "parameters": 14770033664,

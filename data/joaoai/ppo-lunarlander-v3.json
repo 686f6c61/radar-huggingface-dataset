@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "JoaoAI/ppo-LunarLander-v3",
+  "slug": "joaoai-ppo-lunarlander-v3",
+  "author": "JoaoAI",
+  "url": "https://huggingface.co/JoaoAI/ppo-LunarLander-v3",
+  "created_at": "2026-09-13T22:19:29.000Z",
+  "updated_at": "2026-09-13T22:37:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "LunarLander-v2",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 284402,
+  "storage_human": "284402 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Come vedere tutte le app scaricate | Salvatore Aranzulla",
+      "url": "https://www.aranzulla.it/come-vedere-tutte-le-app-scaricate-1036863.html",
+      "snippet": "Otterrai così, in pochi e semplici passaggi, la lista di tutte le applicazioni che hai scaricato non solo sui terminali Android e su iPhone …"
+    },
+    {
+      "title": "Windows 11 dove trovo programmi installati",
+      "url": "https://angolodiwindows.com/2024/04/windows-11-dove-trovo-programmi-installati/",
+      "snippet": "Apr 4, 2024 · Apri il menu Start cliccando sul pulsante Start nella barra delle applicazioni. Scorri l’elenco delle app in ordine …"
+    },
+    {
+      "title": "Dove sono le app installate? - qualcherisposta.it",
+      "url": "https://qualcherisposta.it/dove-sono-le-app-installate",
+      "snippet": "Per visualizzare le applicazioni Play Store installate nel telefono, toccate > Le mie app e i miei giochi. Toccate Raccolta per …"
+    },
+    {
+      "title": "Come vedere le app scaricate (e anche cancellate) su ... - SmartWorld",
+      "url": "https://www.smartworld.it/guide/come-vedere-app-scaricate.html",
+      "snippet": "Aug 8, 2024 · Scopriamo quindi come vedere le app scaricate, magari anche poi cancellate, su qualsiasi dispositivo."
+    },
+    {
+      "title": "Dove trovo tutte le app? - qualcherisposta.it",
+      "url": "https://qualcherisposta.it/dove-trovo-tutte-le-app",
+      "snippet": "Se hai uno smartphone Android, ti basta raggiungere il percorso Impostazioni > App > Mostra tutte le app. Così facendo, infatti, potrai …"
+    }
+  ]
+}

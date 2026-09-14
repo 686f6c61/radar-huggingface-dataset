@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Edwinjeon/vision-language-pretraining-alpha",
+  "slug": "edwinjeon-vision-language-pretraining-alpha",
+  "author": "Edwinjeon",
+  "url": "https://huggingface.co/Edwinjeon/vision-language-pretraining-alpha",
+  "created_at": "2026-09-13T19:09:37.000Z",
+  "updated_at": "2026-09-13T19:09:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "vision-language-pretraining",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Actualités",
+      "url": "https://news.google.com/home?hl=fr&ceid=FR:fr",
+      "snippet": "Google News provides comprehensive news coverage, updates, and articles on various topics including politics, culture, sports, and …"
+    },
+    {
+      "title": "Google Actualités",
+      "url": "https://news.google.com/?hl=fr",
+      "snippet": "Accédez à l'actualité mondiale et locale en temps réel avec Google Actualités."
+    },
+    {
+      "title": "Google News",
+      "url": "https://news.google.com/",
+      "snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+    },
+    {
+      "title": "Google Actualités - France - Dernières infos",
+      "url": "https://news.google.com/topics/CAAqIggKIhxDQkFTRHdvSkwyMHZNR1k0YkRsakVnSm1jaWdBUAE?hl=fr&ceid=FR%3Afr",
+      "snippet": "Lisez des articles complets, regardez des vidéos, parcourez des milliers de titres, etc. sur le sujet \"France\" avec Google Actualités."
+    },
+    {
+      "title": "Google News",
+      "url": "https://news.google.com/home?hl=it&ceid=IT:it",
+      "snippet": "Google News provides personalized coverage of global and local news, keeping you informed about topics that matter most to you."
+    }
+  ]
+}

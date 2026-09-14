@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ivanpavlovtuj/assignment-multitask-2023",
+  "slug": "ivanpavlovtuj-assignment-multitask-2023",
+  "author": "ivanpavlovtuj",
+  "url": "https://huggingface.co/ivanpavlovtuj/assignment-multitask-2023",
+  "created_at": "2026-09-13T22:50:47.000Z",
+  "updated_at": "2026-09-13T22:50:53.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‪Andrea Giordano‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=siKqs8UAAAAJ&hl=it",
+      "snippet": "Marica Amadeo Tenure-Track Assistant Professor, Università degli Studi di Messina Gianluigi Folino Director of Research at ICAR …"
+    },
+    {
+      "title": "‪ANDREA GIORDANO‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=rIsANMYAAAAJ&hl=it",
+      "snippet": "Trasformazioni e conflitti nell'alieutica pugliese prima dell'Unità. Storie d'archivio. Un privatissimo a stampa per Anna Maria Rao, 109 …"
+    },
+    {
+      "title": "Andrea Giordano | Quotidianopiù",
+      "url": "https://www.quotidianopiu.it/autore/3513/Andrea-Giordano",
+      "snippet": "Professore incaricato nell’Università “La Sapienza” di Law and Economics, nonché nell’Università “UniNettuno” di Business Law, è …"
+    },
+    {
+      "title": "Homepage | Università degli Studi di Messina",
+      "url": "https://www.unime.it/",
+      "snippet": "Sep 7, 2026 · L'Università di Messina, istituita nel 1548, si caratterizza per la qualità della ricerca, della didattica e per la propria …"
+    },
+    {
+      "title": "GIORDANO, ANDREA - iris.unito.it",
+      "url": "https://iris.unito.it/cris/rp/rp106895",
+      "snippet": "Living with severe multiple sclerosis: cost-effectiveness of a palliative care intervention and cost of illness study 2021-01-01 Rosato, …"
+    }
+  ]
+}

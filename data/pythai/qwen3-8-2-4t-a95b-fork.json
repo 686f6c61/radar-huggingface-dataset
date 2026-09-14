@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "PYTHAI/Qwen3.8-2.4T-A95B-fork",
+  "slug": "pythai-qwen3-8-2-4t-a95b-fork",
+  "author": "PYTHAI",
+  "url": "https://huggingface.co/PYTHAI/Qwen3.8-2.4T-A95B-fork",
+  "created_at": "2026-09-13T23:57:09.000Z",
+  "updated_at": "2026-09-13T23:57:11.000Z",
+  "license": "qwen3.8-max",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe_text",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-2.4T-A95B",
+    "base_model:finetune:Qwen/Qwen3.8-2.4T-A95B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12809320,
+  "storage_human": "13 MB",
+  "base_model": "Qwen/Qwen3.8-2.4T-A95B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Generador de Video a partir de Texto: Convierte Cualquier Texto en ...",
+      "url": "https://www.easemate.ai/es/text-to-video-generator",
+      "snippet": "Nuestro generador de videos de IA de texto a video te permite crear clips de nivel cinematográfico a partir de palabras simples. …"
+    },
+    {
+      "title": "Generador de Videos IA: Crea Videos con IA Gratis Online - EaseMate AI",
+      "url": "https://www.easemate.ai/es/ai-video-generator",
+      "snippet": "Genera videos a partir de texto o imágenes con nuestro generador de videos IA gratis. No se requiere registro ni habilidades, ¡todos …"
+    },
+    {
+      "title": "EaseMate+AI+registro+obligatorio+para+texto+a+video",
+      "url": "https://www.seaart.ai/es/search/swiftapp/EaseMate+AI+registro+obligatorio+para+texto+a+video",
+      "snippet": "Accede a la aplicación EaseMate+AI+registro+obligatorio+para+texto+a+video. Explora y descubre aplicaciones que se ajustan a tus …"
+    },
+    {
+      "title": "EaseMate AI – Asistente de IA Todo en Uno para Estudio, Trabajo y ...",
+      "url": "https://easemate.net/es",
+      "snippet": "EaseMate AI es un asistente de IA todo en uno que combina herramientas de productividad con generación creativa. Convierte texto …"
+    },
+    {
+      "title": "Easemate ai registro obligatorio para texto a video - There's An AI …",
+      "url": "https://theresanaiforthat.com/s/easemate+ai+registro+obligatorio+para+texto+a+video/",
+      "snippet": "Been using TranscriptTool whenever I need to quickly turn short videos into text. I like that it keeps things simple and makes it easier …"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Cameron3T3T/coco2",
+  "slug": "cameron3t3t-coco2",
+  "author": "Cameron3T3T",
+  "url": "https://huggingface.co/Cameron3T3T/coco2",
+  "created_at": "2026-08-04T16:26:56.000Z",
+  "updated_at": "2026-09-14T01:31:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45296312544,
+  "storage_human": "45.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "REWE Karriere - Jobs & Stellenangebote",
+      "url": "https://karriere.rewe.de/",
+      "snippet": "Jobs mit hervorragenden Karriereaussichten hier bei REWE Zahlreiche Stellenangebote Ausgezeichneter Arbeitgeber » Einfach …"
+    },
+    {
+      "title": "Direkt- und Quereinsteiger - REWE Karriere",
+      "url": "https://karriere.rewe.de/berufserfahrung",
+      "snippet": "Direkt- oder Quereinstieg bei REWE in der Logistik im Markt im Vertrieb oder in der Zentrale » Jetzt den passenden Job finden & …"
+    },
+    {
+      "title": "Ausbildung und Studium - REWE Karriere",
+      "url": "https://karriere.rewe.de/ausbildung",
+      "snippet": "Starte deine Ausbildung bei REWE Zahlreiche Ausbildungsberufe Abwechslungsreiche Aufgabenfelder Attraktiver Arbeitgeber » Jetzt …"
+    },
+    {
+      "title": "Jobsuche - REWE Karriere",
+      "url": "https://karriere.rewe.de/jobs/suche",
+      "snippet": "Finde in unserer Stellenbörse den passenden Job bei REWE Zahlreiche Stellenangebote Ausgezeichneter Arbeitgeber » Einfach …"
+    },
+    {
+      "title": "REWE als Arbeitgeber - REWE Karriere",
+      "url": "https://karriere.rewe.de/arbeiten-bei-rewe",
+      "snippet": "REWE ist viel mehr als nur ein Lebensmittel-Einzelhändler. Darum steckt auch in unseren Jobs einfach mehr: ein zukunftssicheres …"
+    }
+  ]
+}

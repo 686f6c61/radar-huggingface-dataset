@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Yuro1991/TripoSR",
+  "slug": "yuro1991-triposr",
+  "author": "Yuro1991",
+  "url": "https://huggingface.co/Yuro1991/TripoSR",
+  "created_at": "2026-09-13T22:59:13.000Z",
+  "updated_at": "2026-09-13T22:59:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-3d",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "3d",
+    "image-to-3d",
+    "dataset:allenai/objaverse",
+    "arxiv:2311.04400",
+    "arxiv:2403.02151",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1679820469,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Boeing 747: A Closer Look At General Electric's Flying Testbed",
+      "url": "https://simpleflying.com/general-electric-boeing-747-flying-testbed/",
+      "snippet": "Dec 4, 2024 · One of these aircraft is a large Boeing 747 jumbo jet. Because the Boeing 747 utilizes four engines, GE Aerospace can …"
+    },
+    {
+      "title": "N747GE - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/N747GE",
+      "snippet": "N747GE is a Boeing 747 aircraft that was used by General Electric Aircraft Engines as a testbed for several of the company's jet …"
+    },
+    {
+      "title": "We toured a specially modified Boeing 747 used as a 'flying laboratory ...",
+      "url": "https://tech.yahoo.com/transportation/articles/toured-specially-modified-boeing-747-135326404.html",
+      "snippet": "Aug 7, 2026 · GE Aerospace is building the world's largest jet engine for Boeing's new 777X, and it's using a giant 747 to test it. We …"
+    },
+    {
+      "title": "Golden Thrust: Inside GE's Boeing 747 testbed - YouTube",
+      "url": "https://www.youtube.com/watch?v=Q6aazDbepMw",
+      "snippet": "Aug 9, 2026 · Ever wondered how aircraft engines are tested at 40,000 feet before carrying millions of passengers? Step inside GE …"
+    },
+    {
+      "title": "Five Things You Should Know About the New Look of GE Aerospace’s 747 …",
+      "url": "https://www.geaerospace.com/news/articles/five-things-you-should-know-about-new-look-ge-aerospaces-747-flying-test-bed",
+      "snippet": "Nov 3, 2025 · Originally a Japan Airlines revenue-service Boeing 747-400, the current Flying Test Bed was acquired by GE …"
+    }
+  ]
+}

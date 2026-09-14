@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_student_original_omnimath_qwen14b_sofia",
+  "slug": "ishikaa-acquisition_student_original_omnimath_qwen14b_sofia",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_student_original_omnimath_qwen14b_sofia",
+  "created_at": "2026-09-13T21:05:36.000Z",
+  "updated_at": "2026-09-13T21:08:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29551555856,
+  "storage_human": "29.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CS2 Upgrader — Upgrade Your Inventory Fast",
+      "url": "https://upgrader.vip/en",
+      "snippet": "Fast CS2 item upgrades on upgrader.vip. Fair conditions, instant withdrawals, thousands of items. Upgrade your inventory today."
+    },
+    {
+      "title": "CS2 Upgrader — Actualizați-vă rapid inventarul",
+      "url": "https://upgrader.vip/ro",
+      "snippet": "Upgrade-uri rapide pentru articole CS2 pe upgrader.vip. Condiții corecte, retrageri instantanee, mii de articole. Upgradează-ți …"
+    },
+    {
+      "title": "АПГРЕЙДЕР | Официальный Сайт UPGRADER - Прокачай Свой …",
+      "url": "https://1upgrader.com/",
+      "snippet": "Апгрейдер CS2 (Upgrader) — апгрейд скинов онлайн с прозрачными шансами. Запускай upgrader, прокачивай инвентарь, …"
+    },
+    {
+      "title": "CS:GO Upgrader: Upgrade Skins and Improve Your Inventory",
+      "url": "https://clash.gg/upgrader",
+      "snippet": "Upgrade your CS2 and CSGO skins on the best CS2 and CSGO upgrader site. Get better CS2 and CSGO skins for your inventory at …"
+    },
+    {
+      "title": "CSGO Upgrader | Upgrade CS2 & CS:GO Skins Instantly - CSCASE",
+      "url": "https://cscase.com/upgrade",
+      "snippet": "Open CSGO (CS2) Cases Now – drop knives, gloves &amp; rare skins! Enjoy free daily cases, box openings &amp; crate rewards. …"
+    }
+  ]
+}

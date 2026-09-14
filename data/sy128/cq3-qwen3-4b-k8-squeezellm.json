@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "sy128/CQ3-Qwen3-4B-K8-SqueezeLLM",
+  "slug": "sy128-cq3-qwen3-4b-k8-squeezellm",
+  "author": "sy128",
+  "url": "https://huggingface.co/sy128/CQ3-Qwen3-4B-K8-SqueezeLLM",
+  "created_at": "2026-08-31T22:34:29.000Z",
+  "updated_at": "2026-09-14T00:49:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 17657211928,
+  "storage_human": "17.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Étudiants actuels | Université d'Ottawa",
+      "url": "https://www.uottawa.ca/fr/etudiants-actuels",
+      "snippet": "Accédez au portail étudiant et aux principaux outils en ligne. Accédez aux sites Web des cours et aux ressources d’apprentissage en …"
+    },
+    {
+      "title": "Page d'accueil | Université d'Ottawa",
+      "url": "https://www.uottawa.ca/fr",
+      "snippet": "Découvrez les programmes, l’admission, la vie étudiante et la recherche à l’Université d’Ottawa, la plus grande université bilingue …"
+    },
+    {
+      "title": "Premier cycle – Université d'Ottawa | Centre de demande d'admission …",
+      "url": "https://www.ouac.on.ca/fr/guide/premier-cycle-ottawa/",
+      "snippet": "Oct 7, 2025 · Notre campus pittoresque, situé au cœur du centre-ville d’Ottawa, est le cadre idéal pour bénéficier d’une éducation …"
+    },
+    {
+      "title": "Programmes et cours < uOttawa - University of Ottawa",
+      "url": "https://catalogue.uottawa.ca/fr/",
+      "snippet": "Explorez tous les programmes de premier cycle et d’études supérieures à l’Université d’Ottawa. Trouvez en un même endroit la …"
+    },
+    {
+      "title": "Programmes < uOttawa - University of Ottawa",
+      "url": "https://catalogue.uottawa.ca/fr/programmes/",
+      "snippet": "Pour obtenir plus d’informations concernant les études supérieures à l’Université d’Ottawa, veuillez vous adresser à votre unité scolaire."
+    }
+  ]
+}

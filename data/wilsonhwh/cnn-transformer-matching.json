@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "wilsonhwh/cnn-transformer-matching",
+  "slug": "wilsonhwh-cnn-transformer-matching",
+  "author": "wilsonhwh",
+  "url": "https://huggingface.co/wilsonhwh/cnn-transformer-matching",
+  "created_at": "2026-09-13T21:04:47.000Z",
+  "updated_at": "2026-09-13T21:04:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Portail Orange | Offres Mobiles, Internet, TV, Actu & Accès compte Mail",
+      "url": "https://www.orange.fr/portail",
+      "snippet": "Retrouvez toute l'offre Orange depuis le portail : consultez votre mail Orange directement depuis la messagerie Orange, profitez des …"
+    },
+    {
+      "title": "301 Moved Permanently - Messagerie Orange",
+      "url": "https://messagerie.orange.fr/mail.html",
+      "snippet": "301 Moved Permanently Moved Permanently The document has moved here."
+    },
+    {
+      "title": "Accéder à votre Espace client",
+      "url": "https://espace-client.orange.fr/page-accueil",
+      "snippet": "Gérez vos services Orange, consultez vos factures, commandez une carte SIM et retrouvez votre code PUK à tout moment dans …"
+    },
+    {
+      "title": "Orange - Toutes les actus chaudes de France et du Monde",
+      "url": "https://actu.orange.fr/",
+      "snippet": "Actualités – Orange site 100% actu chaude ! News, photos, vidéos ne ratez rien de l'info nationale et internationale"
+    },
+    {
+      "title": "Sport en direct, toute l'actualité sportive et résultats",
+      "url": "https://sports.orange.fr/",
+      "snippet": "L'actualité de tous les sports avec résultats, classements et informations en direct. Suivez les matches et compétitions sportives en …"
+    }
+  ]
+}

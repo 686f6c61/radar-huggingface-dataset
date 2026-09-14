@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rajeshidimannan/newftqwenupdate",
+  "slug": "rajeshidimannan-newftqwenupdate",
+  "author": "rajeshidimannan",
+  "url": "https://huggingface.co/rajeshidimannan/newftqwenupdate",
+  "created_at": "2026-09-13T22:52:16.000Z",
+  "updated_at": "2026-09-13T22:52:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "base_model:adapter:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17425352,
+  "storage_human": "17 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Loop Scheduling Printables for Homeschooling & More",
+      "url": "https://www.proverbialhomemaker.com/loop-scheduling-printables.html",
+      "snippet": "Use loop scheduling for flexible and effective task management to get a handle on your days - great for homeschooling, homemaking, …"
+    },
+    {
+      "title": "Editable Homeschool Schedule Template - 15+ Free Printables",
+      "url": "https://atouchofhomeschooling.com/homeschool-schedule-template-free-printable/",
+      "snippet": "Jun 15, 2022 · Download one of the homeschool schedule template free printable, plus tips on how to create your own homeschool …"
+    },
+    {
+      "title": "Free Printable Homeschool Planner: 20 PDF Templates!",
+      "url": "https://homeprintables.com/free-printable-homeschool-planner-pdf/",
+      "snippet": "Feb 16, 2025 · Homeschooling? This free printable Homeschool Planner can help you create productive routines as you plan your …"
+    },
+    {
+      "title": "35 Printable Homeschool Schedule Templates [Free]",
+      "url": "https://www.wordtemplatesonline.net/homeschool-schedule-templates/",
+      "snippet": "Free Templates Homeschool schedule templates provide sample schedules that can be easily customized to your needs. Instead of …"
+    },
+    {
+      "title": "Sample Homeschool Schedules and FREE Printable Schedule",
+      "url": "https://mamateaches.com/sample-homeschool-schedules/",
+      "snippet": "Jul 7, 2022 · Grab a free printable blank schedule in the Freebies Library! Kindergarten Homeschool Schedule Kindergarten is my …"
+    }
+  ]
+}

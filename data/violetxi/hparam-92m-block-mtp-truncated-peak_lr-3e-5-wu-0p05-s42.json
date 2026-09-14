@@ -5,7 +5,7 @@
   "author": "violetxi",
   "url": "https://huggingface.co/violetxi/hparam-92m-block-mtp-truncated-peak_lr-3e-5-wu-0p05-s42",
   "created_at": "2026-09-05T00:52:00.000Z",
-  "updated_at": "2026-09-13T03:51:33.000Z",
+  "updated_at": "2026-09-14T03:17:21.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -23,12 +23,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 104,
+  "downloads_30d": 2831,
   "trending_score": 0,
   "parameters": 92138496,
   "parameters_human": "92.1M",
-  "storage_bytes": 42018786159,
-  "storage_human": "42.0 GB",
+  "storage_bytes": 46810064079,
+  "storage_human": "46.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "JoaoZaokk/whisper-hu-large-v3-turbo-finetuned-ggml",
+  "slug": "joaozaokk-whisper-hu-large-v3-turbo-finetuned-ggml",
+  "author": "JoaoZaokk",
+  "url": "https://huggingface.co/JoaoZaokk/whisper-hu-large-v3-turbo-finetuned-ggml",
+  "created_at": "2026-09-13T20:47:20.000Z",
+  "updated_at": "2026-09-13T20:49:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "whisper.cpp",
+  "languages": [
+    "hu"
+  ],
+  "tags": [
+    "whisper.cpp",
+    "ggml",
+    "gguf",
+    "automatic-speech-recognition",
+    "on-device",
+    "quantized",
+    "hu",
+    "base_model:sarpba/whisper-hu-large-v3-turbo-finetuned",
+    "base_model:quantized:sarpba/whisper-hu-large-v3-turbo-finetuned",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1922221505,
+  "storage_human": "1.9 GB",
+  "base_model": "sarpba/whisper-hu-large-v3-turbo-finetuned",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shared by Ro**st - PikPak",
+      "url": "https://mypikpak.com/s/VO90BLvK1Nh7qD4h7QyIMVMno1",
+      "snippet": "Shared by Ro**st | PikPak PikPak - Your Private Cloud Drive. Securely Download files via Cloud in a flash."
+    },
+    {
+      "title": "Nudist: Пляжные игры Мамы с Дочками",
+      "url": "https://my.mail.ru/mail/reka-tu/video/_myvideo/30.html",
+      "snippet": "Jul 21, 2023 · Nudist: Пляжные игры Мамы с Дочками – 1 020 просмотров, продолжительность: 54:36 мин., нравится: 19. …"
+    },
+    {
+      "title": "Мой Мир@Mail.Ru",
+      "url": "https://my.mail.ru/mail/geiger2026/video/_myvideo/21.html",
+      "snippet": "Mail О компании Реклама Разработчикам Мобильная версия Помощь Обсудить проект ..."
+    },
+    {
+      "title": "Мой Мир@Mail.Ru",
+      "url": "https://my.mail.ru/mail/vadim_galyaletdinov/video/14/42346.html?related_deep=1",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Видео канала - 3 видео. Видео JANG KEUN SUK ...",
+      "url": "https://m.my.mail.ru/community/mail.sok/video/_groupvideo",
+      "snippet": "Видео и клипы Видео канала. В альбоме JANG KEUN SUK - 3 видео. Смотреть в социальной сети Мой Мир."
+    }
+  ]
+}

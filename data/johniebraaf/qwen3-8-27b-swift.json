@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "JohnieBraaf/Qwen3.8-27b-Swift",
+  "slug": "johniebraaf-qwen3-8-27b-swift",
+  "author": "JohnieBraaf",
+  "url": "https://huggingface.co/JohnieBraaf/Qwen3.8-27b-Swift",
+  "created_at": "2026-09-13T19:30:27.000Z",
+  "updated_at": "2026-09-13T19:37:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-14T02:18:16.872Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Chrome downloaden en installeren",
+      "url": "https://support.google.com/chrome/answer/95346?hl=nl&co=GENIE.Platform%3DDesktop",
+      "snippet": "Je kunt Chrome instellen als standaardbrowser. Tip: Als je een andere browser (zoals Firefox) hebt gebruikt, kun je je instellingen …"
+    },
+    {
+      "title": "ดาวน์โหลดและติดตั้ง Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=th&co=GENIE.Platform%3DDesktop",
+      "snippet": "คุณสามารถดาวน์โหลดและติดตั้งเว็บเบราว์เซอร์ Chrome ได้โดยไม่ ..."
+    },
+    {
+      "title": "Google Chrome herunterladen und installieren",
+      "url": "https://support.google.com/chrome/answer/95346?hl=de&co=GENIE.Platform%3DDesktop",
+      "snippet": "Sie können den Chrome-Webbrowser kostenlos herunterladen und installieren und damit im Internet surfen. Systemanforderungen …"
+    },
+    {
+      "title": "Fazer o download e instalar o Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=pt-BR&co=GENIE.Platform%3DDesktop",
+      "snippet": "Você pode baixar e instalar o navegador da Web Chrome sem custos financeiros e usá-lo para navegar na Web. Conferir os …"
+    },
+    {
+      "title": "Download and install Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "How to install Chrome Important: Before you download, check if Chrome supports your operating system and you’ve met all other …"
+    }
+  ]
+}

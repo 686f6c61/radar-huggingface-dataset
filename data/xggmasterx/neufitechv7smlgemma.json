@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "XGGMasterX/NeufitechV7SMLGemma",
+  "slug": "xggmasterx-neufitechv7smlgemma",
+  "author": "XGGMasterX",
+  "url": "https://huggingface.co/XGGMasterX/NeufitechV7SMLGemma",
+  "created_at": "2026-09-13T11:16:10.000Z",
+  "updated_at": "2026-09-14T01:52:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 2172792448,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "@example.com的邮箱怎么登陆？_百度知道",
+      "url": "https://zhidao.baidu.com/question/10648914.html",
+      "snippet": "该@example.com的邮箱是无法登陆的。其仅仅是在用户填写邮箱时，所举的一个邮箱格式例子。其中通过“example”单词即可知道， …"
+    },
+    {
+      "title": "电路中FU、KM、KA、KT、KV、SA、FR和SB分别是什么电器 ...",
+      "url": "https://zhidao.baidu.com/question/324109290.html",
+      "snippet": "FU：熔断器、 KM ：交流接触器、KA：中间继电器、 KT： 时间继电器、KV：电压继电器、 SA：开关的辅助触点、FR：热继 …"
+    },
+    {
+      "title": "有什么好的ed2k下载器？ - 知乎",
+      "url": "https://www.zhihu.com/question/63863543",
+      "snippet": "骨灰级软件，amule或者emule等，这两个都是20年前的软件，软件倒是还能运行，但是可能连接不了；如果能连接上的话，需要解 …"
+    },
+    {
+      "title": "小米手机开机后为什么会出现“fastboot”？ - 知乎",
+      "url": "https://www.zhihu.com/question/360254698",
+      "snippet": "作为一名小米老粉，我来帮你回答。【详细版的】首先你说的这种情况大概有两种: 第一种是你开机时不小心按到了音量键【上或下】 …"
+    },
+    {
+      "title": "ملتقى الأكاديمية المالية 2025",
+      "url": "https://forum.fa.gov.sa/home",
+      "snippet": "عن الملتقى تحت رعاية معالي الأستاذ محمد بن عبد الله القويز رئيس مجلس إدارة هيئة السوق المالية ورئيس مجلس أمناء الأكاديمية المالية، تنطلق النسخة الرابعة من ملتقى الأكاديمية المالية 2025، والذي …"
+    }
+  ]
+}

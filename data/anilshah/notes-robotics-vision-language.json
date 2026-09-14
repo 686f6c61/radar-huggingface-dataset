@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "AnilShah/notes-robotics-vision-language",
+  "slug": "anilshah-notes-robotics-vision-language",
+  "author": "AnilShah",
+  "url": "https://huggingface.co/AnilShah/notes-robotics-vision-language",
+  "created_at": "2026-09-13T20:53:52.000Z",
+  "updated_at": "2026-09-13T20:53:59.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "robotics-vision-language",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "20 Best Mid-Size SUVs of 2024 | Kelley Blue Book",
+      "url": "https://www.kbb.com/suv/best-mid-size-suvs/2024/?msockid=1a0cc33cfae96b6d0185d4effb446a70",
+      "snippet": "Find the best mid-size SUV of 2024 with our list from the Kelley Blue Book editors. They have ranked each mid-size SUV after test …"
+    },
+    {
+      "title": "Best Midsize SUVs by Ratings | JD Power",
+      "url": "https://www.jdpower.com/cars/rankings/best-suvs/best-midsize-suvs",
+      "snippet": "Oct 16, 2021 · Whether you have a family to transport or want to tote a lot of gear, the list of the best midsize SUVs on this page will …"
+    },
+    {
+      "title": "The Most Reliable Midsize SUVs In 2024 - Top Speed",
+      "url": "https://www.topspeed.com/most-reliable-midsize-suvs/",
+      "snippet": "Nov 3, 2024 · If you want to get at least one item off your car shopping checklist, then you’ll want to look at the most reliable SUVs in …"
+    },
+    {
+      "title": "Best Midsize SUVs Ranked by Experts: Reliability, Safety, Value",
+      "url": "https://www.carbatteryexpert.com/posts/best-midsize-suvs-ranked-by-experts-reliability-safety-value/",
+      "snippet": "Feb 17, 2026 · Discover the best midsize SUV to buy in 2025. Guide compares reliability, safety, value, and top models like Telluride, …"
+    },
+    {
+      "title": "Most Reliable New SUVs for 2024 - Autolist",
+      "url": "https://www.autolist.com/guides/most-reliable-suvs-2024",
+      "snippet": "Reliability is often at the top of the list for car buyers. This list compiles 10 of the most reliable SUVs."
+    }
+  ]
+}

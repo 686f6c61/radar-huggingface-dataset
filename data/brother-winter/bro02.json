@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "brother-winter/bro02",
+  "slug": "brother-winter-bro02",
+  "author": "brother-winter",
+  "url": "https://huggingface.co/brother-winter/bro02",
+  "created_at": "2026-09-13T15:35:12.000Z",
+  "updated_at": "2026-09-14T02:05:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22648156272,
+  "storage_human": "22.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Imprimantes de bureau | Solutions professionnelles | Brother",
+      "url": "https://www.brother.fr/",
+      "snippet": "Choisissez parmi une large gamme d'imprimantes pour la maison et le bureau, de solutions professionnelles, de consommables et …"
+    },
+    {
+      "title": "Pilotes et téléchargements - Brother FR",
+      "url": "https://www.brother.fr/services-et-supports/drivers",
+      "snippet": "Trouvez la dernière du pilote\\driver pour votre machine. Pour commencer, nous devons connaître la référence de votre appareil …"
+    },
+    {
+      "title": "Télécharger le logiciel pour imprimantes et les solutions ... - Brother",
+      "url": "https://www.brother.com/apps/ps/fr/",
+      "snippet": "Nous recommandons ce téléchargement pour tirer le meilleur parti des fonctionnalités de votre appareil Brother. Il s'agit d'un dossier …"
+    },
+    {
+      "title": "Ohne Titel",
+      "url": "https://www.animexx.de/fanart/stil/26/suchbox",
+      "snippet": "Ai no Kusabi (2), Ai Ōtsuka (Sängerin) (1), Aika (2), Aikatsu! (4), Aion ... Brother x Brother (3), Brothers Conflict (3), Bruce Lee (1), Brüderchen und ..."
+    },
+    {
+      "title": "Boutique Officielle Brother | Imprimantes, Toners, et Encore Plus",
+      "url": "https://store.brother.fr/",
+      "snippet": "Bienvenue sur la boutique Brother. Découvrez nos gammes d'imprimantes, scanners, cartouches, toners, toutes disponibles à l'achat …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "danielmdm/review-visual-question-answering",
+  "slug": "danielmdm-review-visual-question-answering",
+  "author": "danielmdm",
+  "url": "https://huggingface.co/danielmdm/review-visual-question-answering",
+  "created_at": "2026-09-13T20:35:27.000Z",
+  "updated_at": "2026-09-13T20:35:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "visual-question-answering",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "リスクオン・リスクオフとは？円が買われる本当の理由 - ZAi探",
+      "url": "https://zaitan.net/risk-off-and-risk-on/",
+      "snippet": "2 days ago · リスクオンとリスクオフとは資金がどこへ動くかを示す言葉です。 円キャリー取引の巻き戻しで円高になる仕組み、判 …"
+    },
+    {
+      "title": "リスクオンとは？株高・円安が同時に起きる仕組みと相場 ...",
+      "url": "https://nikkei-note.com/blog/20260607-glossary-risk-on/",
+      "snippet": "Jun 7, 2026 · リスクオンとは、投資家が株式や高金利通貨などリスク資産に積極的に資金を振り向ける地合いのことです。 株高・ …"
+    },
+    {
+      "title": "リスクオンとは？わかりやすく解説 | ストサポ研究所 投資用語集",
+      "url": "https://sslaboratory.net/guides/glossary/risukuon",
+      "snippet": "Mar 7, 2026 · リスクオン（Risk-on）とは、金融市場において投資家が経済の先行きに楽観的な見方を示し、より高いリターンを求 …"
+    },
+    {
+      "title": "リスクオン・リスクオフとは？意味・違い・相場への影響を ...",
+      "url": "https://goshigoshi.net/explanation-of-risk-on-and-risk-off/",
+      "snippet": "Jan 11, 2026 · 投資や為替、株式市場のニュースでよく使われる言葉に「リスクオン」「リスクオフ」があります。 これらは市場参 …"
+    },
+    {
+      "title": "リスクオンとリスクオフっなに？投資初心者にもわかりやすく ...",
+      "url": "https://note.com/ktaro74/n/n2efe29b98003",
+      "snippet": "Nov 26, 2025 · この記事では、投資初心者でも直感的に理解できるよう、できるだけシンプルに説明します。 リスクオンとは？ → …"
+    }
+  ]
+}

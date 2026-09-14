@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "halle01/ivl4b-stock-backup",
+  "slug": "halle01-ivl4b-stock-backup",
+  "author": "halle01",
+  "url": "https://huggingface.co/halle01/ivl4b-stock-backup",
+  "created_at": "2026-09-13T20:00:08.000Z",
+  "updated_at": "2026-09-13T20:05:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9305535100,
+  "storage_human": "9.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "مسجد - ويكيبيديا",
+      "url": "https://ar.m.wikipedia.org/wiki/%D9%85%D8%B3%D8%AC%D8%AF",
+      "snippet": "المَسْجِد أو الجامع هو دار عبادة المسلمين ، وتُقام فيه الصلوات الخمس المفروضة وغيرها، وسمي مسجداً لأنه مكان للسجود لله ، ويُطلق على المسجد أيضاً اسم جامع، وخاصةً إذا كان كبيراً، وفي الغالب …"
+    },
+    {
+      "title": "Mosque - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Mosque",
+      "snippet": "Muslim empires were instrumental in the evolution and spread of mosques. Although mosques were first established in India during …"
+    },
+    {
+      "title": "مسجد — دليل شامل وأحدث المعلومات | مسجد.com",
+      "url": "https://مسجد.com/",
+      "snippet": "المسجد بيت من بيوت الله ومَعلَم روحيّ واجتماعيّ في حياة المسلمين، جمع عبر القرون بين العبادة والعلم واجتماع الناس على الخير. من مسجد قباء أوّل مسجد في الإسلام إلى الجوامع الكبرى التي زيّنت المدن، …"
+    },
+    {
+      "title": "مسجد جامع - ويكيبيديا",
+      "url": "https://ar.m.wikipedia.org/wiki/%D9%85%D8%B3%D8%AC%D8%AF_%D8%AC%D8%A7%D9%85%D8%B9",
+      "snippet": "المسجد هو مكان خصص للصلاة والقراءة والذكر والدعاء وتقام الصلاة فيه جماعة ويؤذن فيه للصلاة ووجّه نحو القبلة وجعل له محراب ومئذنة. يكون له حرمة المسجد فينزه عن الملاهي واللعب …"
+    },
+    {
+      "title": "مسجد - المعرفة - Marefa",
+      "url": "https://m.marefa.org/%D9%85%D8%B3%D8%AC%D8%AF",
+      "snippet": "المسجد ، هو يؤدي فيه المسلمون صلواتهم. شرعاً، المَسْجِد هو كل ما أعد ليؤدي فيه المسلمون الصلوات الخمس جماعة، وهو دار عبادة المسلمين ، تقام فيه الصلوات الخمس المفروضة، وسمي مسجداً …"
+    }
+  ]
+}

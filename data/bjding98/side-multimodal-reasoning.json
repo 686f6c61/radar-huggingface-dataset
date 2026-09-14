@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "bjding98/side-multimodal-reasoning",
+  "slug": "bjding98-side-multimodal-reasoning",
+  "author": "bjding98",
+  "url": "https://huggingface.co/bjding98/side-multimodal-reasoning",
+  "created_at": "2026-09-14T00:26:59.000Z",
+  "updated_at": "2026-09-14T00:27:04.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-reasoning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OperaSetup.exe - Est-ce un virus? - Guide de suppression [Réparer]",
+      "url": "https://sensorstechforum.com/fr/operasetup-exe/",
+      "snippet": "Nov 22, 2024 · OperaSetup.exe est le nom d'un type dangereux de faux processus d'installation d'Opera. Si vous ne vous souvenez …"
+    },
+    {
+      "title": "Anime-sama.fr – Es seguro? [Guía de estafa]",
+      "url": "https://sensorstechforum.com/es/anime-sama-fr-is-it-safe/",
+      "snippet": "May 10, 2024 · Determinar si Anime-sama.fr es seguro requiere una cuidadosa evaluación y consideración de varios factores. …"
+    },
+    {
+      "title": "Anime-sama.fr – Est-ce sûr? [Guide de l'arnaque]",
+      "url": "https://sensorstechforum.com/fr/anime-sama-fr-is-it-safe/",
+      "snippet": "May 10, 2024 · Qu'est-ce que Anime-sama.fr? Le domaine Anime-sama.fr appartient à un site Web qui, selon nous, n'est pas …"
+    },
+    {
+      "title": "Anime-sama.fr – Is het veilig? [Oplichterij gids]",
+      "url": "https://sensorstechforum.com/nl/anime-sama-fr-is-it-safe/",
+      "snippet": "May 10, 2024 · Wat is Anime-sama.fr? Het domein Anime-sama.fr behoort tot een website die volgens ons niet specifiek kwaadaardig …"
+    },
+    {
+      "title": "Anime-sama.fr - Is It Safe? [Scam Guide] - SensorsTechForum.com",
+      "url": "https://sensorstechforum.com/anime-sama-fr-is-it-safe/",
+      "snippet": "May 10, 2024 · What Is Anime-sama.fr? The Anime-sama.fr domain belongs to a website that we believe is not specifically malicious …"
+    }
+  ]
+}

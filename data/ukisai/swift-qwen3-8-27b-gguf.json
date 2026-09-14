@@ -5,7 +5,7 @@
   "author": "ukisai",
   "url": "https://huggingface.co/ukisai/Swift-Qwen3.8-27B-GGUF",
   "created_at": "2026-09-11T14:58:56.000Z",
-  "updated_at": "2026-09-12T13:39:49.000Z",
+  "updated_at": "2026-09-13T11:23:21.000Z",
   "license": "swift-open-license-1.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -28,13 +28,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 48,
+  "likes": 54,
   "downloads_30d": 9709,
-  "trending_score": 47,
+  "trending_score": 53,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 206692213011,
-  "storage_human": "206.7 GB",
+  "storage_bytes": 508747229331,
+  "storage_human": "508.7 GB",
   "base_model": "ukisai/Swift-Qwen3.8-27b",
   "formats": [
     "gguf"

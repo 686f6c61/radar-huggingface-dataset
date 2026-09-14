@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "orcarouter/Nex-N2.5-mini-Uncensored-GGUF",
+  "slug": "orcarouter-nex-n2-5-mini-uncensored-gguf",
+  "author": "orcarouter",
+  "url": "https://huggingface.co/orcarouter/Nex-N2.5-mini-Uncensored-GGUF",
+  "created_at": "2026-09-10T11:53:35.000Z",
+  "updated_at": "2026-09-10T12:50:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "nex",
+    "nex-n2.5",
+    "qwen3.5",
+    "qwen3_5_moe",
+    "moe",
+    "llama.cpp",
+    "imatrix",
+    "vision-language",
+    "mmproj",
+    "agentic",
+    "computer-use",
+    "function-calling",
+    "reasoning",
+    "ai-red-team",
+    "red-teaming",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:orcarouter/Nex-N2.5-mini-Uncensored",
+    "base_model:quantized:orcarouter/Nex-N2.5-mini-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 9,
+  "downloads_30d": 1184,
+  "trending_score": 9,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 114945473952,
+  "storage_human": "114.9 GB",
+  "base_model": "orcarouter/Nex-N2.5-mini-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/outlook_com/forum/all/outlook-todo-synced-tasks-attachments-only-non/66bca736-f128-4d62-b193-79c8c57ad30f",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/how-do-i-set-the-name-that-appears-on-the-command/63c046ce-f89d-4f62-b93b-b65a66bfa86c",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/my-account-is-locked-to-a-number-i-dont-have/f1ed20a0-bc75-42d6-bdeb-6e39a7bcb637",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/excel-and-sharepoint-web-parts-a-frustration/2cb9d082-c542-47fe-b705-e008a1667fa1",
+      "snippet": ""
+    },
+    {
+      "title": "outlookメールボックスが開けません - Microsoft コミュニティ",
+      "url": "https://answers.microsoft.com/ja-jp/outlook_com/forum/all/outlook%E3%83%A1%E3%83%BC%E3%83%AB%E3%83%9C/18e25a78-7de9-4f0d-b1dd-288ffe025a28",
+      "snippet": "当方、使用OSは7です。 最近、ハードディスクを頻繁に読みに行き動作が重くなることが多かったので コントロールパネル→管理 …"
+    }
+  ]
+}

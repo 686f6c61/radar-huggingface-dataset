@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "TULLUS/paligemma2-3b-mix-448",
+  "slug": "tullus-paligemma2-3b-mix-448",
+  "author": "TULLUS",
+  "url": "https://huggingface.co/TULLUS/paligemma2-3b-mix-448",
+  "created_at": "2026-09-13T05:29:13.000Z",
+  "updated_at": "2026-09-14T01:23:49.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "paligemma",
+    "image-text-to-text",
+    "arxiv:2407.07726",
+    "arxiv:2408.00118",
+    "arxiv:2310.09199",
+    "arxiv:2303.15343",
+    "arxiv:1706.03762",
+    "arxiv:2010.11929",
+    "arxiv:2209.06794",
+    "arxiv:2209.04372",
+    "arxiv:2103.01913",
+    "arxiv:1908.04913",
+    "arxiv:1906.02467",
+    "arxiv:2203.10244",
+    "arxiv:2205.12522",
+    "arxiv:2104.12756",
+    "arxiv:1608.00272",
+    "arxiv:1511.02283",
+    "arxiv:1905.13648",
+    "arxiv:2110.11624",
+    "arxiv:2108.03353",
+    "arxiv:1810.12440",
+    "arxiv:1904.03493",
+    "arxiv:2010.04295",
+    "arxiv:1511.09207",
+    "arxiv:2412.03555",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3033127152,
+  "parameters_human": "3.03B",
+  "storage_bytes": 6146167062,
+  "storage_human": "6.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nimiq Wallet",
+      "url": "https://wallet.nimiq.com/",
+      "snippet": "Nimiq Hub provides a unified interface for all Nimiq accounts, addresses, and contracts."
+    },
+    {
+      "title": "Nimiq Wallet",
+      "url": "https://wallet.nimiq.com/receive",
+      "snippet": "The easy, free and 100% self-custodial crypto-wallet."
+    },
+    {
+      "title": "Nimiq Wallet",
+      "url": "https://wallet.nimiq.com/disclaimer",
+      "snippet": "Nimiq only makes it easy for you, through a browser, to create, save, and access your information and interact with the blockchain. …"
+    }
+  ]
+}

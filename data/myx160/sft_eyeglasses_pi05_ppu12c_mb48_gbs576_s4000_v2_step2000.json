@@ -5,7 +5,7 @@
   "author": "myx160",
   "url": "https://huggingface.co/myx160/sft_eyeglasses_pi05_ppu12c_mb48_gbs576_s4000_v2_step2000",
   "created_at": "2026-09-10T14:30:34.000Z",
-  "updated_at": "2026-09-10T15:04:40.000Z",
+  "updated_at": "2026-09-13T08:48:41.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",

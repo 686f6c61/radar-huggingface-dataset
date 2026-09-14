@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "xwang112358/knitnet-rnacentral-pretrain",
+  "slug": "xwang112358-knitnet-rnacentral-pretrain",
+  "author": "xwang112358",
+  "url": "https://huggingface.co/xwang112358/knitnet-rnacentral-pretrain",
+  "created_at": "2026-07-17T23:40:46.000Z",
+  "updated_at": "2026-09-13T20:04:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "rna",
+    "rna-inverse-design",
+    "discrete-diffusion",
+    "mdlm",
+    "graph-neural-network",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10437200054,
+  "storage_human": "10.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "【自动猫砂盆测评】自动猫砂盆真的不要乱买！来看2025年5款热门自 …",
+      "url": "https://www.zhihu.com/tardis/zm/art/27010346904",
+      "snippet": "价格：985 推荐等级：★★★★★ Cewey自动猫砂盆是由国内领先的宠物电器研发团队CEWEY打造的一款智能猫砂盆。CEWEY团队在 …"
+    },
+    {
+      "title": "【最新2024年自动猫砂盆深度测评】买对不买贵！自动猫砂盆避坑（省 …",
+      "url": "https://www.zhihu.com/tardis/bd/art/715996696",
+      "snippet": "不过我发现自动猫砂盆市场愈大，有很多没有专业技术沉淀的品牌也来做自动猫砂盆想吃这波红利，很容易导致大家买到不合适的自动 …"
+    },
+    {
+      "title": "生活组 - 豆瓣",
+      "url": "https://www.douban.com/group/586674/",
+      "snippet": "Feb 12, 2016 · 发言规则 2022-01-24 更新 1 请勿发布《社区指导原则》不允许的内容 为共同维护社区的良好氛围，请务必遵守发言规 …"
+    },
+    {
+      "title": "豆瓣日娱小组",
+      "url": "https://www.douban.com/group/657759/",
+      "snippet": "Jan 24, 2022 · 【入组需答题 题在组规内】 豆瓣日娱，日圈寿司们的家。 组规： 组规 第二版 2023.01.06 入组审核标准： 入组审核标 …"
+    },
+    {
+      "title": "EXCEL工作表下面出现100多万行空白行（空值行），该怎么删除？ - 知乎",
+      "url": "https://www.zhihu.com/question/25121978",
+      "snippet": "各位大师，小弟今天在做EXCEL表格的时候遇到如下问题： 我制作的EXCEL表格的数据只有20多行，但是这20多…"
+    }
+  ]
+}

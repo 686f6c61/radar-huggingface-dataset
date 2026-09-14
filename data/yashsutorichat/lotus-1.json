@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "yashsutorichat/Lotus-1",
+  "slug": "yashsutorichat-lotus-1",
+  "author": "yashsutorichat",
+  "url": "https://huggingface.co/yashsutorichat/Lotus-1",
+  "created_at": "2026-09-14T00:26:55.000Z",
+  "updated_at": "2026-09-14T01:07:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "roleplay",
+    "character",
+    "sillytavern",
+    "chat",
+    "conversational",
+    "qwen3.5",
+    "moe",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.5-35B-A3B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71923867423,
+  "storage_human": "71.9 GB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Get Started With Meta Business Suite [Complete Guide]",
+      "url": "https://www.socialpilot.co/blog/facebook-business-suite",
+      "snippet": "Jan 10, 2024 · If you’re selling your products or services online, Facebook Business Suite to help you grow your business. Here are …"
+    },
+    {
+      "title": "Meta Business Suite Ads, Inbox & Insights Course | Meta for Business",
+      "url": "https://business.secure.facebook.com/business/learn/lessons/meta-business-suite-inbox-insights",
+      "snippet": "Learn how to use Meta Business Suite to manage, test, analyze and automate messages, ads, posts, reels and stories across FB, …"
+    },
+    {
+      "title": "Overview of Business Messaging Tools on Meta Technologies - Facebook",
+      "url": "https://www.facebook.com/business/help/1009785109914224/",
+      "snippet": "You can also set up automated responses to the most common questions about your business. You can find and use the Inbox tab in …"
+    },
+    {
+      "title": "Meta for Business (formerly Facebook for Business) - Meta Business Suite",
+      "url": "https://business.facebook.com/latest/home/",
+      "snippet": "Get started with business tools from Meta By logging in, you can navigate to all business tools like Meta Business Suite, Ads …"
+    },
+    {
+      "title": "How To Set Up Automated Responses In Facebook Messenger? [in …",
+      "url": "https://www.youtube.com/watch?v=sL2G-4dnvs8",
+      "snippet": "Feb 14, 2023 · 🤖 𝐅𝐫𝐞𝐞 𝐂𝐮𝐬𝐭𝐨𝐦 𝐆𝐏𝐓 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞: https://roihacks.gumroad.com/l/custom-gpt-database/?utm_source=youtube ..."
+    }
+  ]
+}

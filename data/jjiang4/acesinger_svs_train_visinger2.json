@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "jjiang4/acesinger_svs_train_visinger2",
+  "slug": "jjiang4-acesinger_svs_train_visinger2",
+  "author": "jjiang4",
+  "url": "https://huggingface.co/jjiang4/acesinger_svs_train_visinger2",
+  "created_at": "2026-09-14T00:31:22.000Z",
+  "updated_at": "2026-09-14T01:30:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "espnet",
+  "languages": [],
+  "tags": [
+    "espnet",
+    "gansvs",
+    "acesinger",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 448221641,
+  "storage_human": "448 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alexandra Stepanova - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Alexandra_Stepanova",
+      "snippet": "Stepanova/Bukin debuted on the Junior Grand Prix series in the 2010–2011 season. They won both of their events and qualified for …"
+    },
+    {
+      "title": "Varvara Stepanova — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Varvara_Stepanova",
+      "snippet": "Varvara Fiodorovna Stepanova (en russe : Варвара Федоровна Степанова), née le 5 novembre 1894 à Kaunas (actuelle Lituanie) …"
+    },
+    {
+      "title": "Aleksandra Stepanova — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Aleksandra_Stepanova",
+      "snippet": "Aleksandra Nikolayevna Stepanova (en russe: Александра Николаевна Степанова) est une patineuse artistique de danse sur …"
+    },
+    {
+      "title": "Le retour de Stepanova et Bukin au Grand Prix de Russie -",
+      "url": "https://actupatinage.com/retour-stepanova-bukin-grand-prix-russie",
+      "snippet": "Nov 14, 2025 · Alexandra Stepanova et Ivan Bukin ont fait leur grand retour sur la scène du Grand Prix de Russie à Krasnoïarsk. Ils …"
+    },
+    {
+      "title": "Alexandra Stepanova - patinage artistique - L'Équipe",
+      "url": "https://www.lequipe.fr/fiche/alexandra-stepanova/80331",
+      "snippet": "Alexandra Stepanova a remporté la Coupe de Russie 2018 et compte plusieurs podiums européens, dont une médaille d'argent aux …"
+    }
+  ]
+}

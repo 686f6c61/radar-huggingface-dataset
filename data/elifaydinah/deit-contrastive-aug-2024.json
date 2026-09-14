@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "elifaydinah/deit-contrastive-aug-2024",
+  "slug": "elifaydinah-deit-contrastive-aug-2024",
+  "author": "elifaydinah",
+  "url": "https://huggingface.co/elifaydinah/deit-contrastive-aug-2024",
+  "created_at": "2026-09-13T23:03:50.000Z",
+  "updated_at": "2026-09-13T23:03:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تسجيل الدخول",
+      "url": "https://eservices.taqat.sa/Eservices_Tamheer_Individual/OnJobTraining.aspx",
+      "snippet": "تسجيل الدخول كـ أفراد القطاع الخاص و القطاع الغير ربحي القطاع الحكومي والشبه حكومي مزودي التدريب Eservices"
+    },
+    {
+      "title": "تسجيل الدخول",
+      "url": "https://eservices.taqat.sa/Contact_Center/HomeScreen.aspx",
+      "snippet": "مركز التواصل و الاستعلام ECC تسجيل الدخول الى حسابك اسم المستخدم كلمة المرور تذكرني Click here to ..."
+    },
+    {
+      "title": "الشروط و الأحكام",
+      "url": "https://eservices.taqat.sa/eservices/TermsAndConditions.aspx",
+      "snippet": "This is an example of a meta description. نقوم بجمع البيانات بطريقة مباشرة من خلال قواعد البيانات الحكومية وبطريقة غير مباشرة من خلال الموقع، كما نقوم بجمع بيانات حركة …"
+    },
+    {
+      "title": "عن طاقات - eservices.taqat.sa",
+      "url": "https://eservices.taqat.sa/Eservices/AboutTaqat.aspx",
+      "snippet": "This is an example of a meta description. تسجيل الباحثين عن عمل. تسجيل أصحاب العمل. تسجيل الجهات الحكومية التحقق من معلومات المسجلين الباحثين عن عمل مع مركز المعلومات …"
+    },
+    {
+      "title": "تسجيل الدخول",
+      "url": "https://eservices.taqat.sa/Eservices_OrdersDelivery_Individual/Registration",
+      "snippet": "JavaScript is required"
+    }
+  ]
+}

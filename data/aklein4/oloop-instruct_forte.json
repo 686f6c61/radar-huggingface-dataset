@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "aklein4/oloop-instruct_forte",
+  "slug": "aklein4-oloop-instruct_forte",
+  "author": "aklein4",
+  "url": "https://huggingface.co/aklein4/oloop-instruct_forte",
+  "created_at": "2026-09-13T09:21:28.000Z",
+  "updated_at": "2026-09-14T02:21:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57444034831,
+  "storage_human": "57.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.at/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://ipv4.google.com/?hl=de_AT",
+      "snippet": "Google gibt es auch auf: English Werbeprogramme Über Google Google.com in English"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/webhp?gl=nf&hl=en&gws_rd=cr&pws=0",
+      "snippet": "Advertising Business Solutions About Google Google.com © 2026 - Privacy - Terms"
+    },
+    {
+      "title": "Übersicht",
+      "url": "https://search.google/intl/de-DE/",
+      "snippet": "Explore new ways to search. Download the Google app to experience Lens, AR, Search Labs, voice search, and more."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    }
+  ]
+}

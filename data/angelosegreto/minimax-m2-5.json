@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ANGELOSEGRETO/MiniMax-M2.5",
+  "slug": "angelosegreto-minimax-m2-5",
+  "author": "ANGELOSEGRETO",
+  "url": "https://huggingface.co/ANGELOSEGRETO/MiniMax-M2.5",
+  "created_at": "2026-09-13T22:49:27.000Z",
+  "updated_at": "2026-09-13T22:49:28.000Z",
+  "license": "modified-mit",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "minimax_m2",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "license:other",
+    "eval-results",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 228689764864,
+  "parameters_human": "228.69B",
+  "storage_bytes": 230136082747,
+  "storage_human": "230.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BingHomepageQuiz - Reddit",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/hot/",
+      "snippet": "ADMIN MOD • Bing News Quiz [5/3/2024] - A restaurant at DisneyWorld became the first theme-park eatery to win what coveted …"
+    },
+    {
+      "title": "Today's Quiz Answers : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/fp7wa8/todays_quiz_answers/",
+      "snippet": "Mar 26, 2020 · 24568 23457 13457 Don't forget to log into the Bing app, to collect the weekly set bonus (10-70pts daily) Lightspeed …"
+    },
+    {
+      "title": "Bing Homepage Quiz not working : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/1c3iarz/bing_homepage_quiz_not_working/",
+      "snippet": "Is there some secret to getting the Bing Homepage quiz to work correctly? When I try to complete it on the mobile app it just loads the …"
+    },
+    {
+      "title": "r/BingHomepageQuiz Lounge : r/BingHomepageQuiz - Reddit",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/comments/r5de1u/rbinghomepagequiz_lounge/",
+      "snippet": "Nov 30, 2021 · I am having problems posting quizzes. I did not create r/BingHomepageQuiz. I just took over posting after the creator …"
+    },
+    {
+      "title": "solvedquizbing - Reddit",
+      "url": "https://www.reddit.com/r/solvedquizbing/",
+      "snippet": "Microsoft Rewards Bing Quiz: [UK] This or That? – Which country’s capital city begins with the letter A, B, C, or D? [03-04-2024] List …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ShivRamSaud/xclip-mclip-bilingual-nepali-english",
+  "slug": "shivramsaud-xclip-mclip-bilingual-nepali-english",
+  "author": "ShivRamSaud",
+  "url": "https://huggingface.co/ShivRamSaud/xclip-mclip-bilingual-nepali-english",
+  "created_at": "2026-09-14T00:36:04.000Z",
+  "updated_at": "2026-09-14T00:38:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ne",
+    "en"
+  ],
+  "tags": [
+    "video-text-retrieval",
+    "multilingual",
+    "xclip",
+    "mclip",
+    "nepali",
+    "ne",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2698382102,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aftonbladet",
+      "url": "https://www.aftonbladet.se/",
+      "snippet": "1 day ago · Aftonbladet är Sveriges primära och mest engagerande nyhetskälla. Genom journalistiken värnar vi sanningen och …"
+    },
+    {
+      "title": "Senaste nytt – nyheter från Aftonbladet",
+      "url": "https://www.aftonbladet.se/senastenytt",
+      "snippet": "1 day ago · Det senaste om Senaste nytt – nyheter från Aftonbladet – nyheter, artiklar, video och poddar från Aftonbladet."
+    },
+    {
+      "title": "Aftonbladet - Facebook",
+      "url": "https://www.facebook.com/aftonbladet/",
+      "snippet": "Aftonbladet Nordens största dagstidning. Aftonbladet har över 3,5 miljoner läsare - varje dag. ... See more"
+    },
+    {
+      "title": "Aftonbladet - Sveriges största dagstidning",
+      "url": "https://wwwc.aftonbladet-cdn.se/nyheter/9901/16/start.html",
+      "snippet": "Nov 2, 2021 · Aftonbladet. Senaste nytt. Dygnet runt. Aftonbladet 24-hour news service in Swedish. Sveriges största dagstidning."
+    },
+    {
+      "title": "Aftonbladet - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Aftonbladet",
+      "snippet": "1 day ago · The newspaper was founded by Lars Johan Hierta in December 1830 under the name of Aftonbladet i Stockholm[1][2][3] …"
+    }
+  ]
+}

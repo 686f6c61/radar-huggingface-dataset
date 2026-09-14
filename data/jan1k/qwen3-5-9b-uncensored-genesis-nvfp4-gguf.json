@@ -5,7 +5,7 @@
   "author": "jan1k",
   "url": "https://huggingface.co/jan1k/Qwen3.5-9B-Uncensored-Genesis-NVFP4-GGUF",
   "created_at": "2026-09-11T08:27:38.000Z",
-  "updated_at": "2026-09-12T16:21:50.000Z",
+  "updated_at": "2026-09-13T15:54:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -34,12 +34,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1138,
+  "downloads_30d": 2727,
   "trending_score": 0,
   "parameters": 8953803752,
   "parameters_human": "8.95B",
-  "storage_bytes": 37750057280,
-  "storage_human": "37.8 GB",
+  "storage_bytes": 43018242752,
+  "storage_human": "43.0 GB",
   "base_model": "LuffyTheFox/Qwen3.5-9B-Uncensored-Genesis-BF16-GGUF",
   "formats": [
     "gguf"

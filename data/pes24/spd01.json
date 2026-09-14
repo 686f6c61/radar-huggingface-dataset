@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "PES24/spd01",
+  "slug": "pes24-spd01",
+  "author": "PES24",
+  "url": "https://huggingface.co/PES24/spd01",
+  "created_at": "2026-09-13T13:55:55.000Z",
+  "updated_at": "2026-09-14T02:07:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25883607168,
+  "storage_human": "25.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Creating file with dat extension - SAP Community",
+      "url": "https://community.sap.com/t5/application-development-and-automation-discussions/creating-file-with-dat-extension/m-p/6680343",
+      "snippet": "Mar 9, 2010 · To be able to save a file to your own PC you should FM 'GUI_DOWNLOAD'. Open dataset will generally create the files …"
+    },
+    {
+      "title": ".dat file creation on Application server - SAP Community",
+      "url": "https://community.sap.com/t5/application-development-and-automation-discussions/dat-file-creation-on-application-server/m-p/946139",
+      "snippet": "Aug 22, 2005 · Hi All, I need to create one file with extension &quot;.dat&quot; on Application server. I hv no clue how should I …"
+    },
+    {
+      "title": "Creating .dat Files for Database Devices - SAP",
+      "url": "https://infocenter.sybase.com/help/topic/com.sybase.infocenter.dc38421.1600/doc/html/san1335472611846.html",
+      "snippet": "Use the disk init command to specify the drive, path, and file name of a new database device."
+    },
+    {
+      "title": "Import an SAP Audit Format file - help.highbond.com",
+      "url": "https://help.highbond.com/helpdocs/analytics/141/user-guide/en-us/Content/defining_importing_data/data_definition_wizard/import_an_sap_audit_format_file.htm",
+      "snippet": "Oct 18, 2019 · SAP AIS (Audit Information System) and SAP DART (Data Retention Tool) are both SAP utilities that can produce data …"
+    },
+    {
+      "title": "Import an SAP Audit Format file - help.diligentoneplatform.com",
+      "url": "https://help.diligentoneplatform.com/helpdocs/analytics-18/en-us/Content/analytics/defining_importing_data/data_definition_wizard/import_an_sap_audit_format_file.htm",
+      "snippet": "May 5, 2026 · You can create an Analytics table by defining and importing an SAP Audit Format file (formerly known as the SAP …"
+    }
+  ]
+}

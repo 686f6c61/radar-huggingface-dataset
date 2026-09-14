@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "raphaelreisb/fsthicc-style-lora-sdxl",
+  "slug": "raphaelreisb-fsthicc-style-lora-sdxl",
+  "author": "raphaelreisb",
+  "url": "https://huggingface.co/raphaelreisb/fsthicc-style-lora-sdxl",
+  "created_at": "2026-09-13T22:30:58.000Z",
+  "updated_at": "2026-09-13T22:31:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228466580,
+  "storage_human": "228 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Chat - Sign In | Google Workspace",
+      "url": "https://chat.google.com/",
+      "snippet": "Sign in to Google Chat and access powerful group messaging for personal and professional collaboration from Google Workspace."
+    },
+    {
+      "title": "Google Chat",
+      "url": "https://chat.google.com/apple-app-site-association",
+      "snippet": "{ \"applinks\": { \"apps\": [], \"details\": [ { \"appID\": \"EQHXZ8M8AV.com.google.Dynamite.dev\", \"components\": [ { \"/\": …"
+    },
+    {
+      "title": "Google Chat - Sign In | Google Workspace",
+      "url": "https://chat.google.com/.well-known/assetlinks.json",
+      "snippet": "[ { \"relation\": [\"delegate_permission/common.handle_all_urls\"], \"target\": { \"namespace\": \"android_app\", \"package_name\": …"
+    }
+  ]
+}

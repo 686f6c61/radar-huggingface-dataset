@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_student_original_omnimath_qwen14b",
+  "slug": "ishikaa-acquisition_student_original_omnimath_qwen14b",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_student_original_omnimath_qwen14b",
+  "created_at": "2026-09-13T21:10:57.000Z",
+  "updated_at": "2026-09-13T22:02:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 59091689816,
+  "storage_human": "59.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bache transparente serre au meilleur prix | Leroy Merlin",
+      "url": "https://www.leroymerlin.fr/produits/terrasse-jardin/serre-de-jardin-carre-potager-jardiniere/serre-de-jardin/serre-tunnel/bache-transparente-serre-p.html?msockid=2260d0f67a68637628d8c7257bed6240",
+      "snippet": "bache transparente serre - Marques, Stock & Livraison rapide chez Leroy Merlin. Un grand choix de produits aux meilleurs prix."
+    },
+    {
+      "title": "Bâche pour serre | Film Polyane 200 microns | Serre en Direct",
+      "url": "https://www.serre-en-direct.fr/14-bache-pour-serre-",
+      "snippet": "La bâche armée transparente a une résistance accrue aux frottements, mais laisse moins bien passer la lumière. Serre en Direct …"
+    },
+    {
+      "title": "Bâches transparentes Qualité Professionnelle - BACHES DIRECT",
+      "url": "https://www.baches-direct.com/fr/baches-transparentes",
+      "snippet": "Pour protéger une serre de jardin ou couvrir un abri ou du mobilier, une bâche transparente est la solution idéale. À quoi sert une …"
+    },
+    {
+      "title": "Bâche de serre sur mesure – Garantie de 5 à 10 ans",
+      "url": "https://www.serres-lafrancaise.com/categorie/711-bache-de-serre",
+      "snippet": "Commandez votre bâche de serre au mètre, découpée sur mesure. Compatible avec toutes les serres tunnel ou abris, en 200 à 640 …"
+    },
+    {
+      "title": "Amazon.fr : Bache Transparente Serre",
+      "url": "https://www.amazon.fr/bache-transparente-serre/s?k=bache+transparente+serre",
+      "snippet": "Lot de 2 Bache Transparente Exterieur, 2x10m Bache Serre | Imperméable, Anti-poussière, Indéchirable, Renforcé Bache Plastique, …"
+    }
+  ]
+}

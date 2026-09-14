@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "yichenzha49/mixer-generation-2023",
+  "slug": "yichenzha49-mixer-generation-2023",
+  "author": "yichenzha49",
+  "url": "https://huggingface.co/yichenzha49/mixer-generation-2023",
+  "created_at": "2026-09-13T18:58:36.000Z",
+  "updated_at": "2026-09-13T18:58:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "discovery+ | Stream Real-Life TV Episodes",
+      "url": "https://www.discoveryplus.com/it/it",
+      "snippet": "Potrai guardare lo streaming dei nostri canali TV Real Time, DMAX, Nove, Discovery Channel, HGTV, Food Network, Turbo, Giallo, …"
+    },
+    {
+      "title": "discovery+ | Stream Real-Life TV Episodes",
+      "url": "https://www.discoveryplus.com/",
+      "snippet": "discovery+ | Watch HGTV, Food Network, TLC, ID and more plus exclusive originals, all in one place."
+    },
+    {
+      "title": "Discovery+",
+      "url": "https://auth.discoveryplus.com/login",
+      "snippet": "Sign in to access Discovery+ and enjoy your favorite shows, exclusive originals, and more in one place."
+    },
+    {
+      "title": "discovery+",
+      "url": "https://links.discoveryplus.com/home",
+      "snippet": "Your favorite shows + personalities + exclusive originals, together in one incredible service. Start streaming now. Watch HGTV, Food …"
+    },
+    {
+      "title": "Discovery | Guarda il live streaming del canale TV 24 ore al giorno",
+      "url": "https://discovery.it/live-streaming-discovery",
+      "snippet": "Scopriamo come vengono realizzati alcuni prodotti, tra cui le matriosche, l'aloe vera e le bandiere. Un amato tuttofare di una localita' …"
+    }
+  ]
+}

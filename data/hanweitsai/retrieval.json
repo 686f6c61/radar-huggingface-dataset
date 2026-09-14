@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hanweitsai/retrieval",
+  "slug": "hanweitsai-retrieval",
+  "author": "hanweitsai",
+  "url": "https://huggingface.co/hanweitsai/retrieval",
+  "created_at": "2026-09-13T21:21:03.000Z",
+  "updated_at": "2026-09-13T21:21:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Retrieval-augmented generation - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Retrieval-augmented_generation",
+      "snippet": "MIT Technology Review gives the example of an AI-generated response stating, \"The United States has had one Muslim president, Barack Hussein Obama.\" The model retrieved this from the rhetorical chapter title \"Barack Hussein Obama: America's First Muslim President?\" in the book Faith in the ..."
+    },
+    {
+      "title": "Store Details at Menards®",
+      "url": "https://www.menards.com/store-details/store.html?store=3055",
+      "snippet": "Visit Menards® Careers for job opportunities! Use Career Search to find openings."
+    },
+    {
+      "title": "Retrieval-Based Models Explained: How RAG &amp; Vector Search Work - SiteSpeakAI",
+      "url": "https://sitespeak.ai/ai-chatbot-terms/retrieval-based-models",
+      "snippet": "Retrieval-based models fetch existing data, while generative models create new text using approaches like RAG. ... Omnichannel is a customer experience strategy that keeps every channel (web chat, email, phone) in sync."
+    },
+    {
+      "title": "Menards Bismarck 3300 STATE STREET - Weekly Ads",
+      "url": "https://weekly-ads.us/stores/bismarck/menards/3300-state-st",
+      "snippet": "Jan 1, 2026 · Check out the flyer with the current sales in Menards in Bismarck - 3300 STATE STREET. ⭐ Weekly ads for Menards …"
+    },
+    {
+      "title": "MENARDS - 3300 State St, Bismarck ND - Hours, Directions, Reviews ...",
+      "url": "https://www.loc8nearme.com/north-dakota/bismarck/menards/2107852/",
+      "snippet": "Menards at 3300 State St, Bismarck ND 58503 - hours, address, map, directions, phone number, customer ratings and reviews."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "zhouxinxin/v14_0_ct_a3b_v126enc_fix_pii-hf74427",
+  "slug": "zhouxinxin-v14_0_ct_a3b_v126enc_fix_pii-hf74427",
+  "author": "zhouxinxin",
+  "url": "https://huggingface.co/zhouxinxin/v14_0_ct_a3b_v126enc_fix_pii-hf74427",
+  "created_at": "2026-09-14T00:36:26.000Z",
+  "updated_at": "2026-09-14T01:05:36.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "moeconformerllm",
+    "custom_code",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32619386917,
+  "parameters_human": "32.62B",
+  "storage_bytes": 69427750018,
+  "storage_human": "69.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing Homepage Quiz – Today's Bing Daily Trivia & Featured Image Quiz",
+      "url": "https://bingquiz.com/bing-homepage-quiz/",
+      "snippet": "1 day ago · Play today's Bing Homepage Quiz — Celebrity & Pop Culture Trivia edition — and test your knowledge with the same …"
+    },
+    {
+      "title": "Bing Homepage Quiz | Bing Quizzes",
+      "url": "https://bing.weeklyquiz.net/bing-homepage-quiz/",
+      "snippet": "1 day ago · Play today’s interactive Bing Homepage Quiz, answer 20 entertaining questions, discover fascinating facts, and test your …"
+    },
+    {
+      "title": "Bing Homepage Quiz - Today's 10+ Daily Homepage Trivia Bing …",
+      "url": "https://bingquizzes.com/bing-homepage-quiz-today/",
+      "snippet": "1 day ago · Play today’s Bing Homepage Quiz with 10 multiple-choice questions, a 150-second timer, answer explanations, and a …"
+    },
+    {
+      "title": "Bing Homepage Quiz - Friendly Daily Trivia & Answers",
+      "url": "https://bingquizzes.us/",
+      "snippet": "Enjoy a friendly Bing Homepage Quiz with approachable daily questions, instant answers, and category-based trivia for curious players."
+    },
+    {
+      "title": "Bing Homepage Quiz — Today's Interactive Knowledge Quiz",
+      "url": "https://www.binghomepagequiz.us/",
+      "snippet": "Nov 9, 2025 · Take the daily Homepage Quiz to test your knowledge of news, science, history, and geography — and earn Microsoft …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sareddy1/mocov3-baseline",
+  "slug": "sareddy1-mocov3-baseline",
+  "author": "sareddy1",
+  "url": "https://huggingface.co/sareddy1/mocov3-baseline",
+  "created_at": "2026-09-13T19:19:34.000Z",
+  "updated_at": "2026-09-13T19:19:40.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "トヨタ トヨタの安全技術 | Toyota Safety Senseソフトウェア ...",
+      "url": "https://toyota.jp/safety/update/",
+      "snippet": "Toyota Safety Senseを含む運転支援機能をより快適にご使用いただくためのソフトウェア更新 ①プリクラッシュセーフティ （衝突 …"
+    },
+    {
+      "title": "Citrix Virtual Apps and Desktops -オンプレ製品版の今を ...",
+      "url": "https://www.cxj.jp/event/pdf/20250828_citrixtechupdate_02.5bc1f11dcd3a.pdf",
+      "snippet": "Aug 28, 2025 · Agenda 14:00-14:50・Citrix Virtual Apps and Desktops が付属されているライセンス・Citrix Virtual Apps and …"
+    },
+    {
+      "title": "Qsstcirsversion xxcalgomezsmoketest Surname Meaning ...",
+      "url": "https://www.ancestry.com.au/last-name-meaning/qsstcirsversion%20xxcalgomezsmoketest?msockid=3f4e4434e7c4681a040953e7e641693f",
+      "snippet": "Qsstcirsversion xxcalgomezsmoketest Surname Meaning Historically, surnames evolved as a way to sort people into groups - by …"
+    },
+    {
+      "title": "Windows最新アップデート、Citrixソフトウェアでの不具合を確認 ...",
+      "url": "https://tech-gadget.reinforz.co.jp/14672",
+      "snippet": "Jan 16, 2025 · Windowsの最新アップデートが特定のCitrixコンポーネントに影響を与える原因として、マイクロソフトが指摘するの …"
+    },
+    {
+      "title": "JP-Download - Qstarz",
+      "url": "https://racing.qstarz.com/Japan/JP-Download.html",
+      "snippet": "ご購入有難う御座います。 商品をより安全で快適に使用する為、最新ドライバ及びソフトウェア、マニュアルを 提供致しますので …"
+    }
+  ]
+}

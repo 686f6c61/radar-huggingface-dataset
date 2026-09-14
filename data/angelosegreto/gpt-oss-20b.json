@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ANGELOSEGRETO/gpt-oss-20b",
+  "slug": "angelosegreto-gpt-oss-20b",
+  "author": "ANGELOSEGRETO",
+  "url": "https://huggingface.co/ANGELOSEGRETO/gpt-oss-20b",
+  "created_at": "2026-09-13T22:49:41.000Z",
+  "updated_at": "2026-09-13T22:49:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_oss",
+    "text-generation",
+    "vllm",
+    "conversational",
+    "arxiv:2508.10925",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "mxfp4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 41301372462,
+  "storage_human": "41.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Civilização asteca – Wikipédia, a enciclopédia livre",
+      "url": "https://pt.wikipedia.org/wiki/Civiliza%C3%A7%C3%A3o_asteca",
+      "snippet": "O Império Asteca era uma confederação de três cidades-Estados estabelecida em 1427, Tenochtitlan (cidade-Estado dos mexicas), …"
+    },
+    {
+      "title": "Mitologia asteca – Wikipédia, a enciclopédia livre",
+      "url": "https://pt.wikipedia.org/wiki/Mitologia_asteca",
+      "snippet": "Os astecas ou mexicas foram um povo que habitaram o centro-sul do México atual. Provinham de Aztlan. Sua mitologia era rica em …"
+    },
+    {
+      "title": "Civilização asteca: origem, contribuições e características",
+      "url": "https://humanidades.com/br/civilizacao-asteca/",
+      "snippet": "Vamos explicar tudo sobre a civilização asteca, a sua origem e as características principais. Além disso, a sua organização social e …"
+    },
+    {
+      "title": "Astecas e organização teocrática. Organização social dos Astecas",
+      "url": "https://mundoeducacao.uol.com.br/historia-america/astecas-organizacao-teocratica.htm",
+      "snippet": "Os astecas viviam organizados em uma estrutura política formada por 38 províncias. Além disso, desenvolveram uma complexa …"
+    },
+    {
+      "title": "Como vivem os descendentes dos astecas na atualidade?",
+      "url": "https://citopendia.pt/como-vivem-os-descendentes-dos-astecas-na-atualidade/",
+      "snippet": "Dec 7, 2024 · Como vivem os descendentes dos astecas hoje em dia? Descubra suas culturas, desafios e contribuições na …"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "OpenVDN/vdn-minimax-h3-edge",
+  "slug": "openvdn-vdn-minimax-h3-edge",
+  "author": "OpenVDN",
+  "url": "https://huggingface.co/OpenVDN/vdn-minimax-h3-edge",
+  "created_at": "2026-09-13T08:41:39.000Z",
+  "updated_at": "2026-09-14T01:45:32.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "freevideo",
+    "minimax-h3",
+    "vdn",
+    "fp8",
+    "image-to-video",
+    "video-generation",
+    "audio-generation",
+    "text-to-video",
+    "en",
+    "base_model:OpenVDN/vdn-minimax-h3",
+    "base_model:finetune:OpenVDN/vdn-minimax-h3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71496269060,
+  "storage_human": "71.5 GB",
+  "base_model": "OpenVDN/vdn-minimax-h3",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=276d0affe6306c3620fb1d2be7366dd3",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=276d0affe6306c3620fb1d2be7366dd3",
+      "snippet": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and …"
+    },
+    {
+      "title": "Hype - ML/AI News",
+      "url": "https://hype.replicate.dev/",
+      "snippet": "... model with Mixture-of-Values attention (MoVA) that stores 36B parameters and runs 4B per token. 28. OpenVDN/vdn-minimax-h3 289. [`Blog`] [`Code ..."
+    }
+  ]
+}

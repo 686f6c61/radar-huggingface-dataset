@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "CompressedMichael/Qwen3-VL-30B-A3B-Instruct-GPTQ-INT4",
+  "slug": "compressedmichael-qwen3-vl-30b-a3b-instruct-gptq-int4",
+  "author": "CompressedMichael",
+  "url": "https://huggingface.co/CompressedMichael/Qwen3-VL-30B-A3B-Instruct-GPTQ-INT4",
+  "created_at": "2026-09-13T19:11:42.000Z",
+  "updated_at": "2026-09-13T19:14:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl_moe",
+    "image-text-to-text",
+    "llm-compressor",
+    "compressed-tensors",
+    "mixture-of-experts",
+    "gptq",
+    "int4",
+    "conversational",
+    "custom_code",
+    "dataset:lmms-lab/flickr30k",
+    "base_model:Qwen/Qwen3-VL-30B-A3B-Instruct",
+    "base_model:quantized:Qwen/Qwen3-VL-30B-A3B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5144487536,
+  "parameters_human": "5.14B",
+  "storage_bytes": 17782642422,
+  "storage_human": "17.8 GB",
+  "base_model": "Qwen/Qwen3-VL-30B-A3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zahlen und Muster erfassen - kohlverlag.de",
+      "url": "https://www.kohlverlag.de/zahlen-und-muster-erfassen/s12848",
+      "snippet": "Erste Berührungen mit Zahlen schaffen - hier werden Zahlen angemalt, verbunden, nachgespurt u. v. m. Zudem werden durch …"
+    },
+    {
+      "title": "`muster fortsetzen klasse 1 pdf` | Grundschule (.pdf)",
+      "url": "https://lernstuebchen-grundschule.de/suche?search=muster%20fortsetzen%20klasse%201%20pdf",
+      "snippet": "Arbeitsblatt Klasse 1 Klasse 2 Klasse 3 Klasse 4 20er-Feld Kärtchen Muster malen Arbeitsheft Material zur Datei 21.11.2015 6 …"
+    },
+    {
+      "title": "Muster fortsetzen | Grundschule aktuell",
+      "url": "https://grundschule-aktuell.de/unterrichten/mathematik/ex4679432/muster-fortsetzen",
+      "snippet": "Nov 1, 2025 · Schlagworte Symmetrie Muster Geometrie Strukturen Vertretungsstunde Spiegelung Funktionale Beziehungen Ellis …"
+    },
+    {
+      "title": "Wie setze ich Muster fort? [Übungen für Klasse 1] - sofatutor.com",
+      "url": "https://www.sofatutor.ch/mathematik/videos/geometrische-muster-2",
+      "snippet": "Lerne, Muster fortzusetzen! Übungen, Tipps und Beispiele für Klasse 1, um deine Mathekenntnisse spielerisch zu verbessern."
+    },
+    {
+      "title": "DO01_3-12-253559_001_019.indd - Klett",
+      "url": "https://asset.klett.de/assets/74f826d6/253559_Seite2.pdf",
+      "snippet": "Musterfolgen erkennen und fortsetzen Es gibt verschiedene Lösungen für Aufgabe 3."
+    }
+  ]
+}

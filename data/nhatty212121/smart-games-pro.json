@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Nhatty212121/smart-games-pro",
+  "slug": "nhatty212121-smart-games-pro",
+  "author": "Nhatty212121",
+  "url": "https://huggingface.co/Nhatty212121/smart-games-pro",
+  "created_at": "2026-09-13T20:33:14.000Z",
+  "updated_at": "2026-09-13T20:33:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "O direito à preguiça, Paul Lafargue | Resenha | PróximoLivro.net",
+      "url": "https://proximolivro.net/o-direito-a-preguica/92348",
+      "snippet": "O direito à preguiça, de Paul Lafargue, é um manifesto ousado que desafia o culto ao trabalho incessante que permeia nossa …"
+    },
+    {
+      "title": "O Direito a preguiça, Paul Lafargue | Resenha | PróximoLivro.net",
+      "url": "https://proximolivro.net/o-direito-a-preguica/300187",
+      "snippet": "Lafargue, genro de Karl Marx, traz à luz a necessidade de um tempo para o ócio, um espaço vital para a criatividade e a reflexão. …"
+    },
+    {
+      "title": "O Direito à Preguiça - Paul Lafargue | Livro Resumido",
+      "url": "https://livroresumido.com.br/2024/02/15/o-direito-a-preguica-paul-lafargue/",
+      "snippet": "Feb 15, 2024 · O livro \"O Direito à Preguiça\", escrito por Paul Lafargue, é uma crítica mordaz à sociedade capitalista e à sua …"
+    },
+    {
+      "title": "O Direito à Preguiça – Wikipédia, a enciclopédia livre",
+      "url": "https://pt.wikipedia.org/wiki/O_Direito_%C3%A0_Pregui%C3%A7a",
+      "snippet": "O Direito à Preguiça (em francês: Le Droit à la Paresse) é um panfleto político escrito por Paul Lafargue que polemiza com as visões …"
+    },
+    {
+      "title": "Resumo do livro \"O Direito à Preguiça\", de Paul Lafargue",
+      "url": "https://brainly.com.br/tarefa/63638137",
+      "snippet": "Jun 18, 2025 · O livro 'O Direito à Preguiça', escrito por Paul Lafargue, é uma crítica ao trabalho excessivo e ao capitalismo no final …"
+    }
+  ]
+}

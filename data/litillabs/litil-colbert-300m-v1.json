@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "litillabs/litil-colbert-300m-v1",
+  "slug": "litillabs-litil-colbert-300m-v1",
+  "author": "litillabs",
+  "url": "https://huggingface.co/litillabs/litil-colbert-300m-v1",
+  "created_at": "2026-09-13T22:20:35.000Z",
+  "updated_at": "2026-09-13T22:20:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "PyLate",
+  "languages": [
+    "de",
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "PyLate",
+    "safetensors",
+    "modernbert",
+    "ColBERT",
+    "late-interaction",
+    "legal",
+    "retrieval",
+    "multilingual",
+    "sentence-similarity",
+    "de",
+    "zh",
+    "en",
+    "arxiv:2607.27178",
+    "base_model:lightonai/mLateOn",
+    "base_model:finetune:lightonai/mLateOn",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 306941184,
+  "parameters_human": "306.9M",
+  "storage_bytes": 1281409762,
+  "storage_human": "1.3 GB",
+  "base_model": "lightonai/mLateOn",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Explore and share videos, music, and more on YouTube, the leading platform for online video streaming and sharing."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "Knew late-night TV would catch up with me #youtubepartner try this prompt with your own YT Shorts Rachel Samples and YouTube …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/yt+",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "- YouTube",
+      "url": "https://www.youtube.com/shorts",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    }
+  ]
+}

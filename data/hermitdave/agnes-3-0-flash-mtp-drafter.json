@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "hermitdave/Agnes-3.0-Flash-MTP-drafter",
+  "slug": "hermitdave-agnes-3-0-flash-mtp-drafter",
+  "author": "hermitdave",
+  "url": "https://huggingface.co/hermitdave/Agnes-3.0-Flash-MTP-drafter",
+  "created_at": "2026-09-13T20:28:02.000Z",
+  "updated_at": "2026-09-13T20:51:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_mtp",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 424699392,
+  "parameters_human": "424.7M",
+  "storage_bytes": 849400336,
+  "storage_human": "849 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MakerWorld: Download Free 3D Models",
+      "url": "https://makerworld.com/en",
+      "snippet": "MakerWorld is the leading 3D printing model community for designers and makers. Download thousands of free 3D models and STL …"
+    },
+    {
+      "title": "MakerWorld: Descarga Modelos 3D Gratuitos",
+      "url": "https://makerworld.com/es",
+      "snippet": "MakerWorld es la comunidad líder de modelos de impresión 3D para diseñadores y creadores. Descargue miles de modelos 3D y …"
+    },
+    {
+      "title": "MakerWorld: Baixe modelos 3D gratuitos",
+      "url": "https://makerworld.com/pt",
+      "snippet": "{{keyword}}. Comunidade líder de modelos de impressão 3D para designers e criadores. Baixe milhares de modelos 3D e modelos …"
+    },
+    {
+      "title": "MakerWorld: Kostenlose 3D-Modelle herunterladen",
+      "url": "https://makerworld.com/de",
+      "snippet": "MakerWorld ist die führende Community für 3D-Druckmodelle für Designer und Maker. Laden Sie Tausende kostenloser 3D-Modelle …"
+    },
+    {
+      "title": "3D Models - MakerWorld",
+      "url": "https://makerworld.com/en/3d-models",
+      "snippet": "3D Models Explore our 'All' category, containing our entire collection of 3D printing models in one place. Browse through our diverse …"
+    }
+  ]
+}

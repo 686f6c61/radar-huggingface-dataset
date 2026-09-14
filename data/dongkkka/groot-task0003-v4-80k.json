@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Dongkkka/groot-task0003-v4-80k",
+  "slug": "dongkkka-groot-task0003-v4-80k",
+  "author": "Dongkkka",
+  "url": "https://huggingface.co/Dongkkka/groot-task0003-v4-80k",
+  "created_at": "2026-09-14T00:27:49.000Z",
+  "updated_at": "2026-09-14T00:29:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "Gr00tN1d7",
+    "robotics",
+    "gr00t",
+    "task0003",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576200896,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Colorado Greenhouse Gas Inventory - Department of Public Health ...",
+      "url": "https://cdphe.colorado.gov/apcd/greenhouse-gas-inventory",
+      "snippet": "Each report covers emissions activities within the state back to 2005 as well as projected future emissions under different policy …"
+    },
+    {
+      "title": "2023 Colorado Statewide Inventory of Greenhouse",
+      "url": "https://newspack-coloradosun.s3.amazonaws.com/wp-content/uploads/2025/01/2023-GHG-report.pdf",
+      "snippet": "This 2023 Inventory continues to do so, being the seventh version published by the State, the third biennial report, and the second by …"
+    },
+    {
+      "title": "Final 2023 CO GHG Inventory Report v3 published 2023_12_26",
+      "url": "https://www.dora.state.co.us/pls/efi/efi_p2_v2_demo.show_document?p_dms_document_id=1014322",
+      "snippet": "This analysis shows that current and proposed policies demonstrate a meaningful departure from business-as-usual with emission …"
+    },
+    {
+      "title": "Greenhouse Gas Pollution Reduction Roadmap - Colorado",
+      "url": "https://energyoffice.colorado.gov/ghg-pollution-reduction-roadmap",
+      "snippet": "Roadmap 2.0 shows that without any new rules or laws beyond what is already underway as of the fall 2023, Colorado is projected to …"
+    },
+    {
+      "title": "GHGRP Emissions by Location - US EPA",
+      "url": "https://www.epa.gov/ghgreporting/ghgrp-emissions-location",
+      "snippet": "Feb 2, 2026 · Data from greenhouse gas-emitting facilities and suppliers in 2023 to the EPA greenhouse gas reporting program, as …"
+    }
+  ]
+}

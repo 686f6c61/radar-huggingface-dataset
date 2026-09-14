@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/eng-100mb-after-wc-zipf-newlex-eng-ckpt500_seed10_seed10",
+  "slug": "fpadovani-eng-100mb-after-wc-zipf-newlex-eng-ckpt500_seed10_seed10",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/eng-100mb-after-wc-zipf-newlex-eng-ckpt500_seed10_seed10",
+  "created_at": "2026-09-13T20:42:20.000Z",
+  "updated_at": "2026-09-13T22:45:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:fpadovani/ppt-wc-zipf-newlex-eng-100mb_seed10",
+    "base_model:finetune:fpadovani/ppt-wc-zipf-newlex-eng-100mb_seed10",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 7488274111,
+  "storage_human": "7.5 GB",
+  "base_model": "fpadovani/ppt-wc-zipf-newlex-eng-100mb_seed10",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Обзор Kraken: xStocks, бессрочные контракты, комиссии и …",
+      "url": "https://www.datawallet.com/ru/%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%BE%D0%B2%D0%B0%D0%BB%D1%8E%D1%82%D0%B0/%D0%BE%D0%B1%D0%B7%D0%BE%D1%80-%D0%BA%D1%80%D0%B0%D0%BA%D0%B5%D0%BD%D0%B0",
+      "snippet": "Jun 29, 2026 · Резюме: Kraken — одна из старейших и наиболее регулируемых криптовалютных бирж, которая в настоящее …"
+    },
+    {
+      "title": "Kraken (даркнет-рынок) — Википедия",
+      "url": "https://ru.wikipedia.org/wiki/Kraken_(%D0%B4%D0%B0%D1%80%D0%BA%D0%BD%D0%B5%D1%82-%D1%80%D1%8B%D0%BD%D0%BE%D0%BA)",
+      "snippet": "Покупатели заходят на Kraken через Tor с луковой маршрутизацией. Они должны зарегистрироваться и пополнять свой …"
+    },
+    {
+      "title": "Kraken | Buy, Sell and Margin Trade Bitcoin (BTC) and Ethereum (ETH)",
+      "url": "https://www.kraken.com/home",
+      "snippet": "Buy, sell and margin trade Bitcoin (BTC) and Ethereum (ETH) in exchange with EUR, USD, CAD, GBP, and JPY. Leveraged trading …"
+    },
+    {
+      "title": "Приложения в Google Play – Kraken Pro: Crypto & Stocks",
+      "url": "https://play.google.com/store/apps/details?id=com.kraken.trade&hl=ru",
+      "snippet": "We’re always making sure the Kraken Pro app is easy, safe and secure for you to use. This release contains various improvements …"
+    },
+    {
+      "title": "Kraken — Википедия",
+      "url": "https://ru.wikipedia.org/wiki/Kraken",
+      "snippet": "Kraken — онлайн-сервис обмена цифровых валют, зарегистрированный в США. По состоянию на декабрь 2019 года …"
+    }
+  ]
+}

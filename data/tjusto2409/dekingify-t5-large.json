@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "tjusto2409/Dekingify-T5-Large",
+  "slug": "tjusto2409-dekingify-t5-large",
+  "author": "tjusto2409",
+  "url": "https://huggingface.co/tjusto2409/Dekingify-T5-Large",
+  "created_at": "2026-09-13T22:21:30.000Z",
+  "updated_at": "2026-09-13T22:21:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "t5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4174862472,
+  "storage_human": "4.2 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tracking | UPS - United States",
+      "url": "https://www.ups.com/track?tracknum=tracking&loc=en_US&msockid=3e82f480359060cb3973e35334f661a5",
+      "snippet": "Track one or multiple packages with UPS Tracking, use your tracking number to track the status of your package."
+    },
+    {
+      "title": "Track a Package - The UPS Store",
+      "url": "https://www.theupsstore.com/tools/track-a-package",
+      "snippet": "The UPS Store helps you track your packages with multiple carriers. Stay on top of all of your important deliveries with package …"
+    },
+    {
+      "title": "Package Tracking – Free Real-Time Tracking Worldwide | 17TRACK",
+      "url": "https://www.17track.net/en/tracking",
+      "snippet": "Track packages worldwide with any tracking number. Get real-time delivery updates from 3,300+ carriers. Free tracking, no login …"
+    },
+    {
+      "title": "Tracking - DHL - United States of America",
+      "url": "https://www.dhl.com/us-en/home/tracking.html",
+      "snippet": "International tracking of your DHL shipment: have your DHL tracking number at hand to track and trace."
+    },
+    {
+      "title": "Track a package via tracking number - Parcel tracking",
+      "url": "https://www.ordertracker.com/",
+      "snippet": "Track a package using your parcel tracking number, our universal tracking search engine enables you to track any parcel from …"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "OpenCOReTechnologies/CORe-Pico-V2",
+  "slug": "opencoretechnologies-core-pico-v2",
+  "author": "OpenCOReTechnologies",
+  "url": "https://huggingface.co/OpenCOReTechnologies/CORe-Pico-V2",
+  "created_at": "2026-09-13T23:54:45.000Z",
+  "updated_at": "2026-09-14T00:21:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "text-generation",
+    "causal-lm",
+    "conversational",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 3438022031,
+  "storage_human": "3.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cinemana.shabakaty.com",
+      "url": "https://cinemana.shabakaty.com/page/home",
+      "snippet": "منصة سينمانا لمشاهدة الأفلام والمسلسلات العربية والعالمية."
+    }
+  ]
+}

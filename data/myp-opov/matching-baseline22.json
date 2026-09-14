@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Myp-opov/matching-baseline22",
+  "slug": "myp-opov-matching-baseline22",
+  "author": "Myp-opov",
+  "url": "https://huggingface.co/Myp-opov/matching-baseline22",
+  "created_at": "2026-09-13T23:54:22.000Z",
+  "updated_at": "2026-09-13T23:54:26.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Middle Years Programme (MYP) - International Baccalaureate®",
+      "url": "https://ibo.org/programmes/middle-years-programme/",
+      "snippet": "Learn more about the International Baccalaureate Middle Years Programme (MYP): preparing students aged 11-16 to become …"
+    },
+    {
+      "title": "Compra e Venda de Card Games | MYP Cards",
+      "url": "https://mypcards.com/",
+      "snippet": "O MYP Cards é o maior marketplace especializado em card games do Brasil, feito para jogadores, colecionadores e lojistas que …"
+    },
+    {
+      "title": "IB Middle Years Programme - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/IB_Middle_Years_Programme",
+      "snippet": "In the U.S., the MYP is often taught throughout middle school and the first two years of high school. Typically, middle schools and …"
+    },
+    {
+      "title": "MyProcurement : Lutte contre le travail dissimulé : Home",
+      "url": "https://myprocurement.fr/universe/public/home.action?locale=en",
+      "snippet": "MyP-Compliance : Fight against undeclared work Respect the legislation in the fight against undeclared work, collect documents but …"
+    },
+    {
+      "title": "MYP",
+      "url": "https://www.mypcorp.com/login/clientLogin.aspx",
+      "snippet": "Javascript is required for this site to function, please enable. MYP login Your email Your password Change your password?"
+    }
+  ]
+}

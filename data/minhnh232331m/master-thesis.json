@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "MinhNH232331M/master-thesis",
+  "slug": "minhnh232331m-master-thesis",
+  "author": "MinhNH232331M",
+  "url": "https://huggingface.co/MinhNH232331M/master-thesis",
+  "created_at": "2026-09-07T08:16:43.000Z",
+  "updated_at": "2026-09-13T20:17:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9950160465,
+  "storage_human": "10.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "如何看待美国情报机构联合发布报告称DeepSeek、月之暗面等中国6家AI公司涉嫌「蒸馏」？"
+    },
+    {
+      "title": "知乎",
+      "url": "https://www.zhihu.com/careers",
+      "snippet": "知乎招聘页面，提供职位信息和申请入口，加入知乎团队，共同打造中文互联网高质量问答社区。"
+    },
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/selection/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，提供知识共享、互动交流和个人成长机会。"
+    },
+    {
+      "title": "家里是千兆网，但是电脑下载速度只有10mb/s不到怎么办？",
+      "url": "https://www.zhihu.com/question/1930752647020913028",
+      "snippet": "问题排查步骤（从最简单到复杂） 请按照以下顺序逐一检查： 第一步：检查硬件连接（最可能的罪魁祸首） 网线问题（超高频发 …"
+    }
+  ]
+}

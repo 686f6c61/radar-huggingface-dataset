@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "LaTexT/qwen3-8b-gz5-sentence-iter2-w0.2-v3",
+  "slug": "latext-qwen3-8b-gz5-sentence-iter2-w0-2-v3",
+  "author": "LaTexT",
+  "url": "https://huggingface.co/LaTexT/qwen3-8b-gz5-sentence-iter2-w0.2-v3",
+  "created_at": "2026-09-13T23:18:10.000Z",
+  "updated_at": "2026-09-13T23:37:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "generated_from_trainer",
+    "llama-factory",
+    "full",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8207512576,
+  "parameters_human": "8.21B",
+  "storage_bytes": 16426503627,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How many ancient debris for full armor and tools?",
+      "url": "https://www.gameslearningsociety.org/wiki/how-many-ancient-debris-for-full-armor-and-tools/",
+      "snippet": "Apr 16, 2025 · Specifically, you’ll require 80 blocks of Ancient Debris to create a full set of armor (helmet, chestplate, leggings, boots) …"
+    },
+    {
+      "title": "Ancient Debris – Minecraft Wiki",
+      "url": "https://minecraft.fandom.com/wiki/Ancient_Debris",
+      "snippet": "It is possible to find blobs of up to 20 contiguous ancient debris - up to five debris can generate in a chunk, so if a blob of five …"
+    },
+    {
+      "title": "How Many Ancient Debris for a Full Set? [Crafting Guide]",
+      "url": "https://knowgameplay.blog/how-many-ancient-debris-full-set",
+      "snippet": "Jun 21, 2026 · Discover exactly how many Ancient Debris are needed for a full set of Netherite armor and tools. Maximize your …"
+    },
+    {
+      "title": "Detritos ancestrais - Minecraft Wiki",
+      "url": "https://minecraft.fandom.com/pt/wiki/Detritos_ancestrais",
+      "snippet": "Os detritos ancestrais são minérios raros e as principais fontes de netherita, e são as únicas fontes de fragmentos de netherita, após …"
+    },
+    {
+      "title": "Ancient Debris – Minecraft Wiki",
+      "url": "https://minecraft.wiki/w/Ancient_Debris",
+      "snippet": "5 days ago · It is possible to find blobs of up to 20 contiguous ancient debris - up to five debris can generate in a chunk, so if a blob of …"
+    }
+  ]
+}

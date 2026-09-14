@@ -5,14 +5,18 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Qing-Sec-20B-Qwen3.8-27B-Slim-GGUF",
   "created_at": "2026-09-13T15:01:30.000Z",
-  "updated_at": "2026-09-13T15:07:35.000Z",
+  "updated_at": "2026-09-13T15:15:14.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
-  "library": null,
+  "library": "transformers",
   "languages": [],
   "tags": [
+    "transformers",
     "gguf",
+    "en",
+    "base_model:hcnote/Qing-Sec-20B-Qwen3.8-27B-Slim",
+    "base_model:quantized:hcnote/Qing-Sec-20B-Qwen3.8-27B-Slim",
     "endpoints_compatible",
     "region:us",
     "conversational"
@@ -22,9 +26,9 @@
   "trending_score": 0,
   "parameters": 19285624544,
   "parameters_human": "19.29B",
-  "storage_bytes": 96164144640,
-  "storage_human": "96.2 GB",
-  "base_model": null,
+  "storage_bytes": 134408897600,
+  "storage_human": "134.4 GB",
+  "base_model": "hcnote/Qing-Sec-20B-Qwen3.8-27B-Slim",
   "formats": [
     "gguf"
   ],

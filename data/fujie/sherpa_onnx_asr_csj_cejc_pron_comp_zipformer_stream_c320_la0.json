@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "fujie/sherpa_onnx_asr_csj_cejc_pron_comp_zipformer_stream_c320_la0",
+  "slug": "fujie-sherpa_onnx_asr_csj_cejc_pron_comp_zipformer_stream_c320_la0",
+  "author": "fujie",
+  "url": "https://huggingface.co/fujie/sherpa_onnx_asr_csj_cejc_pron_comp_zipformer_stream_c320_la0",
+  "created_at": "2026-09-13T23:17:36.000Z",
+  "updated_at": "2026-09-13T23:17:54.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "onnx",
+    "sherpa-onnx",
+    "icefall",
+    "zipformer",
+    "audio",
+    "automatic-speech-recognition",
+    "streaming",
+    "ja",
+    "dataset:csj",
+    "dataset:cejc",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 666235823,
+  "storage_human": "666 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Labor Day 2026: Facts, Date & Founding | HISTORY",
+      "url": "https://www.history.com/articles/labor-day",
+      "snippet": "Apr 13, 2010 · Labor Day, an annual celebration of workers and their achievements, originated during one of American labor history’s …"
+    },
+    {
+      "title": "This Day in HISTORY Daily Briefing",
+      "url": "https://www.history.com/this-day-in-history-daily-briefing",
+      "snippet": "History happens every day! Check in with your virtual assistant or wherever you get your podcasts to find out about the historical …"
+    },
+    {
+      "title": "What Are the Origins of the ‘No White After Labor Day’ Rule? - HISTORY",
+      "url": "https://www.history.com/articles/no-white-after-labor-day-origins-fashion",
+      "snippet": "Aug 27, 2025 · Today, “No White After Labor Day” is considered outdated, as modern fashion is less about following rigid standards …"
+    },
+    {
+      "title": "HISTORY TV Schedule | HISTORY Channel",
+      "url": "https://www.history.com/schedule",
+      "snippet": "Check the HISTORY Channel show schedule and find out when your favorite shows are airing. Find cast bios, videos, and exclusive …"
+    },
+    {
+      "title": "Jerusalem captured in First Crusade | July 15, 1099 | HISTORY",
+      "url": "https://www.history.com/this-day-in-history/July-15/jerusalem-captured-in-first-crusade",
+      "snippet": "Mar 3, 2010 · Also on This Day in History Discover more of the major events, famous births, notable deaths and everything else …"
+    }
+  ]
+}

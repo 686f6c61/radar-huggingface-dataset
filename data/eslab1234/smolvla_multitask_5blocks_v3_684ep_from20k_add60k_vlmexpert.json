@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "eslab1234/smolvla_multitask_5blocks_v3_684ep_from20k_add60k_vlmexpert",
+  "slug": "eslab1234-smolvla_multitask_5blocks_v3_684ep_from20k_add60k_vlmexpert",
+  "author": "eslab1234",
+  "url": "https://huggingface.co/eslab1234/smolvla_multitask_5blocks_v3_684ep_from20k_add60k_vlmexpert",
+  "created_at": "2026-09-13T21:15:01.000Z",
+  "updated_at": "2026-09-13T21:15:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:eslab1234/multitask_5blocks_v3_684ep_merged",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1197804304,
+  "storage_human": "1.2 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign in - BMO",
+      "url": "https://www1.bmo.com/banking/digital/login?lang=en",
+      "snippet": "Sign in to BMO Digital Banking to manage accounts, pay bills, transfer money, and access secure online banking services."
+    },
+    {
+      "title": "BMO",
+      "url": "https://m.bmo.com/",
+      "snippet": "Sign in to BMO online banking for secure and convenient account management."
+    },
+    {
+      "title": "BMO Bank - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/BMO_Bank",
+      "snippet": "BMO Bank, N.A. (colloquially BMO; US: / biːmoʊ / BEE-moh) is a U.S. national bank headquartered in Chicago, Illinois. It is a …"
+    },
+    {
+      "title": "Checking Accounts: Open Online in Minutes - BMO",
+      "url": "https://www.bmo.com/en-us/main/personal/bank-accounts/checking-accounts/?msockid=0d05231a95556b7e2a7734c994b96aed",
+      "snippet": "A checking account is a type of bank account where you can deposit money and maintain day-to-day expenses like groceries, meals, …"
+    },
+    {
+      "title": "BMO Branch Locations | Bank and ATM",
+      "url": "https://branches.bmo.com/",
+      "snippet": "BMO Branch Locator. Find BMO bank hours, phone number or visit a local branch or ATM for our wide range of personal banking …"
+    }
+  ]
+}

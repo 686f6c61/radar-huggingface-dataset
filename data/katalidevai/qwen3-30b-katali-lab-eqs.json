@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "katalidevai/qwen3-30b-katali-lab-eqs",
+  "slug": "katalidevai-qwen3-30b-katali-lab-eqs",
+  "author": "katalidevai",
+  "url": "https://huggingface.co/katalidevai/qwen3-30b-katali-lab-eqs",
+  "created_at": "2026-09-13T21:02:07.000Z",
+  "updated_at": "2026-09-13T21:03:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen3_moe",
+    "katali",
+    "eqs",
+    "quantized",
+    "q4_0",
+    "moe",
+    "base_model:Qwen/Qwen3-30B-A3B",
+    "base_model:finetune:Qwen/Qwen3-30B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17972808429,
+  "storage_human": "18.0 GB",
+  "base_model": "Qwen/Qwen3-30B-A3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "صور نيك خلفي سكس نيك طياز بنات بطياز جميلة جداً 2022 - زباوي",
+      "url": "https://www.scribd.com/document/832372315/%D8%B5%D9%88%D8%B1-%D9%86%D9%8A%D9%83-%D8%AE%D9%84%D9%81%D9%8A-%D8%B3%D9%83%D8%B3-%D9%86%D9%8A%D9%83-%D8%B7%D9%8A%D8%A7%D8%B2-%D8%A8%D9%86%D8%A7%D8%AA-%D8%A8%D8%B7%D9%8A%D8%A7%D8%B2-%D8%AC%D9%85%D9%8A%D9%84%D8%A9-%D8%AC%D8%AF%D8%A7%D9%8B-2022-%D8%B2%D8%A8%D8%A7%D9%88%D9%8A",
+      "snippet": "Copyright © 2020 [Link]‬صور سكس‬. Scribd is the world's largest social reading and publishing site."
+    },
+    {
+      "title": "سكس عربي نيك عربي افلام سكس عربية سكس محجبات | PDF",
+      "url": "https://www.scribd.com/document/373716715/Freearabsexx-com-%D8%B3%D9%83%D8%B3-%D8%B9%D8%B1%D8%A8%D9%8A-%D9%86%D9%8A%D9%83-%D8%B9%D8%B1%D8%A8%D9%8A-%D8%A7%D9%81%D9%84%D8%A7%D9%85-%D8%B3%D9%83%D8%B3-%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D8%B3%D9%83%D8%B3-%D9%85%D8%AD%D8%AC%D8%A8%D8%A7%D8%AA",
+      "snippet": "المستند يحتوي على قائمة بأفلام السكس المصنفة حسب التصنيفات المختلفة مثل الأحدث والنوع والجنسية. كما يتضمن معلومات عن كل فيلم مثل المدة وتاريخ الإضافة وعدد المشاهدات. by nadia4nady."
+    }
+  ]
+}

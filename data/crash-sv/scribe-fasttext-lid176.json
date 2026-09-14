@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "crash-sv/scribe-fasttext-lid176",
+  "slug": "crash-sv-scribe-fasttext-lid176",
+  "author": "crash-sv",
+  "url": "https://huggingface.co/crash-sv/scribe-fasttext-lid176",
+  "created_at": "2026-09-13T23:22:29.000Z",
+  "updated_at": "2026-09-13T23:22:36.000Z",
+  "license": "cc-by-sa-3.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "fasttext",
+  "languages": [],
+  "tags": [
+    "fasttext",
+    "language-identification",
+    "text-classification",
+    "arxiv:1607.01759",
+    "arxiv:1612.03651",
+    "license:cc-by-sa-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131266198,
+  "storage_human": "131 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Crash (2004 film) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Crash_(2004_film)",
+      "snippet": "Crash (2004 film) ... Crash is a 2004 American crime drama film directed by Paul Haggis, who co-wrote the screenplay and produced …"
+    },
+    {
+      "title": "Crash.Net | F1 & MotoGP | Motorsport News",
+      "url": "https://www.crash.net/",
+      "snippet": "Jun 9, 2026 · Ferrari star pulled from fiery China GT crash by fellow driver as marshals slammed Ollie Millroy was lucky to survive a …"
+    },
+    {
+      "title": "Crash (2004) - IMDb",
+      "url": "https://www.imdb.com/title/tt0375679/",
+      "snippet": "Crash: Directed by Paul Haggis. With Don Cheadle, Sandra Bullock, Thandiwe Newton, Karina Arroyave. Racial tensions collide in a …"
+    },
+    {
+      "title": "Crash : actualité en direct - Ouest-France",
+      "url": "https://www.ouest-france.fr/societe/faits-divers/crash/",
+      "snippet": "23 hours ago · Crash : toute l'actualité en direct, soyez informé de toute l’info en continu, en images et en vidéos. Partagez et …"
+    },
+    {
+      "title": "Crash (2005) Official Trailer - Sandra Bullock, Don Cheadle, Brendan ...",
+      "url": "https://www.youtube.com/watch?v=dgepOrbliX4",
+      "snippet": "Jun 23, 2023 · Crash - Available Now On Digital! Starring Sandra Bullock, Don Cheadle, Matt Dillon, Jennifer Esposito, William …"
+    }
+  ]
+}

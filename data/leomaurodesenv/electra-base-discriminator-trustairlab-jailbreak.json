@@ -5,7 +5,7 @@
   "author": "leomaurodesenv",
   "url": "https://huggingface.co/leomaurodesenv/electra-base-discriminator-trustairlab-jailbreak",
   "created_at": "2026-09-12T00:21:37.000Z",
-  "updated_at": "2026-09-12T22:06:31.000Z",
+  "updated_at": "2026-09-13T09:16:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 31,
+  "downloads_30d": 136,
   "trending_score": 0,
   "parameters": 109483778,
   "parameters_human": "109.5M",
-  "storage_bytes": 12262863537,
-  "storage_human": "12.3 GB",
+  "storage_bytes": 15766537329,
+  "storage_human": "15.8 GB",
   "base_model": "google/electra-base-discriminator",
   "formats": [
     "safetensors"

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "SingleBicycle/ccpo-alfworld-qwen2.5-7b-return-hard",
+  "slug": "singlebicycle-ccpo-alfworld-qwen2-5-7b-return-hard",
+  "author": "SingleBicycle",
+  "url": "https://huggingface.co/SingleBicycle/ccpo-alfworld-qwen2.5-7b-return-hard",
+  "created_at": "2026-09-13T19:11:58.000Z",
+  "updated_at": "2026-09-13T19:13:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "reinforcement-learning",
+    "agent",
+    "alfworld",
+    "grpo",
+    "ccpo",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 30473926528,
+  "storage_human": "30.5 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Antártida - Wikipedia, la enciclopedia libre",
+      "url": "https://es.wikipedia.org/wiki/Ant%C3%A1rtida",
+      "snippet": "En 1895, el primer desembarco confirmado fue dirigido por un grupo noruego. La Antártida es de facto un condominio, que se rige …"
+    },
+    {
+      "title": "Antártida - Información, clima, relieve, fauna y características",
+      "url": "https://concepto.de/antartida/",
+      "snippet": "Antártida Te explicamos todo sobre la Antártida, su clima, flora, fauna y otras características. Además, los países que conforman el …"
+    },
+    {
+      "title": "Librería Online | Librería Antártica",
+      "url": "https://www.antartica.cl/",
+      "snippet": "Compra en Librería Antártica, las mejores Novelas, Libros Infantiles y Juveniles, Literatura, Libros de Autoayuda, Cocina, Comics y …"
+    },
+    {
+      "title": "Antártida – Wikipédia, a enciclopédia livre",
+      "url": "https://pt.wikipedia.org/wiki/Ant%C3%A1rtida",
+      "snippet": "Antártida ou Antártica (ver questão do nome) é o mais meridional e o segundo menor dos continentes (maior apenas que a …"
+    },
+    {
+      "title": "Antártida: qué es y sus características - Enciclopedia Humanidades",
+      "url": "https://humanidades.com/antartida/",
+      "snippet": "La Antártida es uno de los seis continentes de la Tierra y el cuarto de mayor tamaño. Con una extensión aproximada de casi 14 …"
+    }
+  ]
+}

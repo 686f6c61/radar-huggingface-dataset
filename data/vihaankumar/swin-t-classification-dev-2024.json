@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "vihaankumar/swin-t-classification-dev-2024",
+  "slug": "vihaankumar-swin-t-classification-dev-2024",
+  "author": "vihaankumar",
+  "url": "https://huggingface.co/vihaankumar/swin-t-classification-dev-2024",
+  "created_at": "2026-09-13T20:12:44.000Z",
+  "updated_at": "2026-09-13T20:12:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cardmarket: Magic: The Gathering TCG kaufen und verkaufen",
+      "url": "https://www.cardmarket.com/de/Magic?msockid=2c6455320fa566fa1f2842e10ea66763",
+      "snippet": "Europas größte Handelsplattform für Magic: The Gathering. Kaufe und verkaufe Karten, Booster und mehr. Große Auswahl, kleine …"
+    },
+    {
+      "title": "Cardmarket: Buy & Sell MTG Cards Online – Magic: The Gathering …",
+      "url": "https://www.cardmarket.com/en/Magic?msockid=2c6455320fa566fa1f2842e10ea66763",
+      "snippet": "Buy and sell Magic: The Gathering singles, boosters, and boxes on Cardmarket – Europe’s largest and most trusted MTG …"
+    },
+    {
+      "title": "Cardmarket: Compraventa online de cartas Magic: The Gathering",
+      "url": "https://www.cardmarket.com/es/Magic?msockid=2c6455320fa566fa1f2842e10ea66763",
+      "snippet": "El mayor mercado europeo online de Magic: The Gathering. Compra y vende cartas sueltas, sobres y más. Últimas novedades a …"
+    },
+    {
+      "title": "Cardmarket : Achète et Vends des Cartes à Jouer",
+      "url": "https://www.cardmarket.com/fr?msockid=2c6455320fa566fa1f2842e10ea66763",
+      "snippet": "La référence européenne pour acheter et vendre des cartes Magic: The Gathering, Yu-Gi-Oh!, Pokémon, Dragon Ball Super et bien …"
+    },
+    {
+      "title": "Cardmarket: compra y vende cartas coleccionables online",
+      "url": "https://www.cardmarket.com/es?msockid=2c6455320fa566fa1f2842e10ea66763",
+      "snippet": "El mayor mercado europeo online de compraventa de cartas - Magic: The Gathering, Yu-Gi-Oh!, Pokémon, Dragon Ball Super y …"
+    }
+  ]
+}

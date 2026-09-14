@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "bluemorpholimited/morphoalgo-usstock-14b-sft",
+  "slug": "bluemorpholimited-morphoalgo-usstock-14b-sft",
+  "author": "bluemorpholimited",
+  "url": "https://huggingface.co/bluemorpholimited/morphoalgo-usstock-14b-sft",
+  "created_at": "2026-09-13T20:11:32.000Z",
+  "updated_at": "2026-09-14T02:16:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:finetune:Qwen/Qwen3-14B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83262878534,
+  "storage_human": "83.3 GB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top Share Market Investment Tips for Beginners - Top Stocks",
+      "url": "https://topstocks.com.au/top-share-market-investment-tips-for-beginners/",
+      "snippet": "Jul 17, 2026 · Introduction The share market is one of the best investment options for creating long-term wealth. It allows investors to …"
+    },
+    {
+      "title": "Stock Market Essentials for New Investors - Top Stocks",
+      "url": "https://topstocks.com.au/stock-market-essentials-for-new-investors/",
+      "snippet": "Jul 21, 2026 · Introduction The stock market is a vital component of the global financial system, enabling companies to raise capital …"
+    },
+    {
+      "title": "The Best Investing Blogs For You - Top Stocks",
+      "url": "https://topstocks.com.au/the-best-investing-blogs-for-you/",
+      "snippet": "Jul 21, 2026 · Investing blogs are valuable resources for both beginners and experienced investors. They provide expert insights, …"
+    },
+    {
+      "title": "Top Tips for Successful Trading - Top Stocks",
+      "url": "https://topstocks.com.au/top-tips-for-successful-trading/",
+      "snippet": "Trading in the financial markets can be an exciting way to grow your wealth, but it also involves significant risk. Whether you trade …"
+    },
+    {
+      "title": "Trading – Top Stocks",
+      "url": "https://topstocks.com.au/category/trading/",
+      "snippet": "Jul 21, 2026 · Common Mistakes New Investors Make Investing in the stock market offers excellent opportunities for long-term wealth …"
+    }
+  ]
+}

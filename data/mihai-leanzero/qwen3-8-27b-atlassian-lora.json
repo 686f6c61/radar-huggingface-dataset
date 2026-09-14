@@ -5,7 +5,7 @@
   "author": "Mihai-LeanZero",
   "url": "https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-lora",
   "created_at": "2026-09-09T17:38:58.000Z",
-  "updated_at": "2026-09-12T22:09:44.000Z",
+  "updated_at": "2026-09-13T05:08:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Twu31/TanyaoDojo",
+  "slug": "twu31-tanyaodojo",
+  "author": "Twu31",
+  "url": "https://huggingface.co/Twu31/TanyaoDojo",
+  "created_at": "2026-08-20T14:09:28.000Z",
+  "updated_at": "2026-09-14T00:45:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "jax",
+  "languages": [],
+  "tags": [
+    "jax",
+    "mahjong",
+    "riichi",
+    "reinforcement-learning",
+    "behavior-cloning",
+    "flax",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 88966414,
+  "storage_human": "89 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gründonnerstag | Donnerstag, 1.4.2021 – Stilkunst.de",
+      "url": "https://www.stilkunst.de/c31_calendar/c3103_maundy_thursday.php?2021",
+      "snippet": "Apr 1, 2021 · Gründonnerstag, Donnerstag, 1. April 2021. Die christlichen Kirchen gedenken der Einsetzung des Abendmahls und der …"
+    },
+    {
+      "title": "Gründonnerstag 2021 - kalender-365.com",
+      "url": "https://www.kalender-365.com/2021/gruendonnerstag",
+      "snippet": "Apr 13, 2022 · Wann ist Gründonnerstag 2021? Datum für Gründonnerstag in diesem und den kommenden Jahren."
+    },
+    {
+      "title": "Gründonnerstag 2021 - Kalender - Feiertage.info",
+      "url": "https://www.feiertage.info/2021/gruendonnerstag-2021.html",
+      "snippet": "April 2021 Gründonnerstag - Donnerstag, 14. April 2022 Gründonnerstag - Donnerstag, 06. April 2023 Gründonnerstag - Donnerstag, …"
+    },
+    {
+      "title": "Gründonnerstag 2021 komplett - Bistum Mainz",
+      "url": "https://bistummainz.de/export/sites/bistum/pfarrei/mainz-kastel/.galleries/downloads/Grundonnerstag-2021-komplett.pdf",
+      "snippet": "Genau die feiern wir in JEDER Eucharistie – auch heute – als Zeichen des neuen und ewigen Bundes. Wir ahnen Gottes Liebe zu …"
+    },
+    {
+      "title": "Gründonnerstag – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Gr%C3%BCndonnerstag",
+      "snippet": "Mit dem Gründonnerstag (Feria quinta in Coena Domini) beginnt das Triduum Sacrum, das dreitägige Gedächtnis des Leidens, …"
+    }
+  ]
+}

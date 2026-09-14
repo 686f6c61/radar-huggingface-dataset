@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "B1NARIES/discord-lora-qwen25-7b",
+  "slug": "b1naries-discord-lora-qwen25-7b",
+  "author": "B1NARIES",
+  "url": "https://huggingface.co/B1NARIES/discord-lora-qwen25-7b",
+  "created_at": "2026-09-13T23:56:35.000Z",
+  "updated_at": "2026-09-13T23:56:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172961135,
+  "storage_human": "173 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Royals Scores: Scoreboard, Results and Highlights",
+      "url": "https://www.mlb.com/royals/scores?msockid=1fea74db64416b783be9630f65c46a01",
+      "snippet": "The official scoreboard of the Kansas City Royals including Gameday, video, highlights and box score."
+    },
+    {
+      "title": "New York Yankees vs. Kansas City Royals | Full Game Highlights",
+      "url": "https://www.youtube.com/watch?v=rFhDzcsv7n0",
+      "snippet": "May 25, 2026 · Watch the highlights as the New York Yankees get the road victory over the Kansas City Royals, 4-3. ️ Subscribe to …"
+    },
+    {
+      "title": "Yankees Vs Royals History Scores | StatMuse",
+      "url": "https://www.statmuse.com/mlb/ask/yankees-vs-royals-history-scores",
+      "snippet": "May 27, 2026 · The New York Yankees defeated the Kansas City Royals, 7 to 0, on May 27."
+    },
+    {
+      "title": "Yankees make franchise history in 24-hit barrage over Royals - MSN",
+      "url": "https://www.msn.com/en-us/sports/mlb/yankees-vs-royals-live-updates-analysis-of-tonights-game-at-kc/ar-AA248jK8",
+      "snippet": "After winning the first two games of this series, the Yankees have made it 12 straight regular season wins against the Royals, dating …"
+    },
+    {
+      "title": "Kansas City Royals vs. New York Yankees | Full Game Highlights",
+      "url": "https://www.youtube.com/watch?v=u9RYEePc9pI",
+      "snippet": "Apr 19, 2026 · Watch the highlights as the New York Yankees defeat the Kansas City Royals, 7-0. Aaron Judge, Trent Grisham and …"
+    }
+  ]
+}

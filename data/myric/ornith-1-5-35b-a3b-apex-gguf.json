@@ -5,7 +5,7 @@
   "author": "Myric",
   "url": "https://huggingface.co/Myric/Ornith-1.5-35B-A3B-APEX-GGUF",
   "created_at": "2026-09-09T15:59:24.000Z",
-  "updated_at": "2026-09-10T04:20:23.000Z",
+  "updated_at": "2026-09-13T20:19:46.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,12 +27,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 1351,
+  "downloads_30d": 1381,
   "trending_score": 0,
   "parameters": 35505251456,
   "parameters_human": "35.51B",
-  "storage_bytes": 50802365408,
-  "storage_human": "50.8 GB",
+  "storage_bytes": 51705187648,
+  "storage_human": "51.7 GB",
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "gguf"

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "efficiencyx/Jun-LoRA-E2B-GGUF",
+  "slug": "efficiencyx-jun-lora-e2b-gguf",
+  "author": "efficiencyx",
+  "url": "https://huggingface.co/efficiencyx/Jun-LoRA-E2B-GGUF",
+  "created_at": "2026-09-13T21:01:31.000Z",
+  "updated_at": "2026-09-13T21:04:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma4",
+    "image-text-to-text",
+    "lora",
+    "character",
+    "roleplay",
+    "llama.cpp",
+    "unsloth",
+    "conversational",
+    "text-generation",
+    "en",
+    "base_model:unsloth/gemma-4-E2B-it-qat-q4_0-unquantized",
+    "base_model:adapter:unsloth/gemma-4-E2B-it-qat-q4_0-unquantized",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4628569635,
+  "parameters_human": "4.63B",
+  "storage_bytes": 13180204480,
+  "storage_human": "13.2 GB",
+  "base_model": "unsloth/gemma-4-E2B-it-qat-q4_0-unquantized",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vakantiewoningen in Benigembla, Spanje – Airbnb",
+      "url": "https://www.airbnb.nl/benigembla-spain/stays",
+      "snippet": "Vind unieke vakantiewoningen in Benigembla, Spanje. Boek woningen, flats en appartementen via Airbnb."
+    },
+    {
+      "title": "Vakantiehuizen en appartementen in Benigembla",
+      "url": "https://www.vakantiehuizenspanje.nl/Benigembla/huurvakantiehuis",
+      "snippet": "Op onze site vindt u vakantieappartementen en -villa's waar u naar op zoek bent in Benigembla. Huur hier self-catering woningen …"
+    },
+    {
+      "title": "Vakantiehuis Benigembla huren bij Micazu | Vall de Pop rust",
+      "url": "https://www.micazu.nl/vakantiehuis/spanje/costa-blanca/benigembla/",
+      "snippet": "Vakantiehuis in Benigembla huren? Authentiek bergdorp in de Vall de Pop, wandelen, klimmen en kust op 30 min. Boek direct bij de …"
+    },
+    {
+      "title": "Huisje huren in de Benigembla? Belvilla Vakantiehuis",
+      "url": "https://www.belvilla.nl/vakantiehuis-spanje/costa-blanca/benigembla/",
+      "snippet": "Een vakantiehuis met zwembad in de Benigembla is de perfecte plek om tot rust te komen tussen de groene bergen van de Costa …"
+    },
+    {
+      "title": "Vakantiehuis Benigembla huren? - Vakantiewoning",
+      "url": "https://www.vakantiewoning.org/vakantiehuis-spanje/valencia/benigembla/",
+      "snippet": "Wij bezorgen u een heerlijke vakantie in Benigembla. Bekijk het onderstaande aanbod van vakantiehuizen in Benigembla of huur een …"
+    }
+  ]
+}

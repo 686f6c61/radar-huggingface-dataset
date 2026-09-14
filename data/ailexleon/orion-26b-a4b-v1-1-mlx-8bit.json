@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ailexleon/Orion-26B-A4B-v1.1-mlx-8Bit",
+  "slug": "ailexleon-orion-26b-a4b-v1-1-mlx-8bit",
+  "author": "ailexleon",
+  "url": "https://huggingface.co/ailexleon/Orion-26B-A4B-v1.1-mlx-8Bit",
+  "created_at": "2026-09-13T19:49:18.000Z",
+  "updated_at": "2026-09-13T20:06:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "creative writing",
+    "roleplay",
+    "conversational",
+    "character-rp",
+    "storytelling",
+    "text-generation",
+    "en",
+    "base_model:TheDrummer/Orion-26B-A4B-v1.1",
+    "base_model:quantized:TheDrummer/Orion-26B-A4B-v1.1",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233053440,
+  "parameters_human": "25.23B",
+  "storage_bytes": 26843215924,
+  "storage_human": "26.8 GB",
+  "base_model": "TheDrummer/Orion-26B-A4B-v1.1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SpiderSolitaire.fr - Spider Solitaire Gratuit",
+      "url": "https://www.spidersolitaire.fr/",
+      "snippet": "Quand vous commencerez à jouer, vous verrez qu'il est difficile de s'arrêter, vous apprécierez les bonnes cartes et devrez vaincre les …"
+    },
+    {
+      "title": "Spider Solitaire Gratuit – Jouez en Ligne Sans Inscription",
+      "url": "https://spidersolitaire-fr.com/",
+      "snippet": "Jouez au Spider Solitaire gratuitement, directement dans votre navigateur. Sans téléchargement, sans inscription : choisissez votre …"
+    },
+    {
+      "title": "Spider Solitaire en ligne – 100% gratuit et en plein écran",
+      "url": "https://jeuxdesolitaire.fr/spider-solitaire/",
+      "snippet": "Vous pouvez jouer à Spider Solitaire tout à fait gratuitement. Si vous souhaitez jouer au Solitaire en ligne ou au Spider Solitaire, vous …"
+    },
+    {
+      "title": "Jouer au Spider Solitaire",
+      "url": "https://www.spidersolitaire.fr/jouerauspidersolitaire.php",
+      "snippet": "Choisissez l'un des 3 niveaux et jouez à cette version grand.. Scorpion Solitaire fait partie de la famille du Spider Solitaire et.. …"
+    },
+    {
+      "title": "Spider Solitaire | jeu en ligne",
+      "url": "https://solitaire-jeu.eu/spider/",
+      "snippet": "Spider Solitaire gratuit en ligne et en plein écran avec de grandes cartes."
+    }
+  ]
+}

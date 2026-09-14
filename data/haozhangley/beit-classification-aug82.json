@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "haozhangley/beit-classification-aug82",
+  "slug": "haozhangley-beit-classification-aug82",
+  "author": "haozhangley",
+  "url": "https://huggingface.co/haozhangley/beit-classification-aug82",
+  "created_at": "2026-09-13T20:23:03.000Z",
+  "updated_at": "2026-09-13T20:23:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/il",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube/top/country/il",
+      "snippet": "YouTube's official YouTube channel You found us. Welcome to the official YouTube channel – a home for the biggest moments, the …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube - אפליקציות ב-Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=he",
+      "snippet": "אפליקציית YouTube הרשמית לטלפונים ולטאבלטים מבוססי Android. תוכלו לראות במה אנשים בעולם צופים – מסרטוני המוזיקה החמים ביותר ועד …"
+    },
+    {
+      "title": "יוטיוב ישראל - YouTube",
+      "url": "https://www.youtube.com/channel/UCdN38I4LjLm9Bnt_Ch7ePKw",
+      "snippet": "הסרטונים הכי נצפים בישראל"
+    }
+  ]
+}

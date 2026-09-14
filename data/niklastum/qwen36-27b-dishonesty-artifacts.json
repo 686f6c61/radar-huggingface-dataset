@@ -5,7 +5,7 @@
   "author": "NiklasTUM",
   "url": "https://huggingface.co/NiklasTUM/qwen36-27b-dishonesty-artifacts",
   "created_at": "2026-09-11T22:30:30.000Z",
-  "updated_at": "2026-09-12T21:49:02.000Z",
+  "updated_at": "2026-09-13T13:33:05.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -31,8 +31,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 29722379976,
-  "storage_human": "29.7 GB",
+  "storage_bytes": 31123417560,
+  "storage_human": "31.1 GB",
   "base_model": "Qwen/Qwen3.6-27B",
   "formats": [
     "safetensors"

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ailexleon/Orion-26B-A4B-v1.1-mlx-6Bit",
+  "slug": "ailexleon-orion-26b-a4b-v1-1-mlx-6bit",
+  "author": "ailexleon",
+  "url": "https://huggingface.co/ailexleon/Orion-26B-A4B-v1.1-mlx-6Bit",
+  "created_at": "2026-09-13T19:38:32.000Z",
+  "updated_at": "2026-09-13T20:03:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "creative writing",
+    "roleplay",
+    "conversational",
+    "character-rp",
+    "storytelling",
+    "text-generation",
+    "en",
+    "base_model:TheDrummer/Orion-26B-A4B-v1.1",
+    "base_model:quantized:TheDrummer/Orion-26B-A4B-v1.1",
+    "license:apache-2.0",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233053440,
+  "parameters_human": "25.23B",
+  "storage_bytes": 20537808942,
+  "storage_human": "20.5 GB",
+  "base_model": "TheDrummer/Orion-26B-A4B-v1.1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/",
+      "snippet": "Le service sans frais de Google traduit instantanément des mots, des expressions et des pages Web entre le français et plus de 100 …"
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/details",
+      "snippet": "Traduisez des textes instantanément avec Google Translate."
+    },
+    {
+      "title": "Google Translate - A Personal Interpreter on Your Phone or Computer",
+      "url": "https://translate.google.com/about/",
+      "snippet": "Understand your world and communicate across languages with Google Translate. Translate text, speech, images, documents, …"
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/m",
+      "snippet": "Traduire Détecter la langue → Français Accueil Google Envoyer des commentaires Confidentialité et conditions d'utilisation Accéder …"
+    }
+  ]
+}

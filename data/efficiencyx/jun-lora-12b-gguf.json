@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "efficiencyx/Jun-LoRA-12B-GGUF",
+  "slug": "efficiencyx-jun-lora-12b-gguf",
+  "author": "efficiencyx",
+  "url": "https://huggingface.co/efficiencyx/Jun-LoRA-12B-GGUF",
+  "created_at": "2026-09-13T19:20:39.000Z",
+  "updated_at": "2026-09-13T19:30:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma4_unified",
+    "image-text-to-text",
+    "gemma4",
+    "lora",
+    "character",
+    "roleplay",
+    "conversational",
+    "text-generation",
+    "en",
+    "base_model:unsloth/gemma-4-12B-it-qat-q4_0-unquantized",
+    "base_model:adapter:unsloth/gemma-4-12B-it-qat-q4_0-unquantized",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 30012168032,
+  "storage_human": "30.0 GB",
+  "base_model": "unsloth/gemma-4-12B-it-qat-q4_0-unquantized",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Crème anglaise réussie, onctueuse à souhait - Marmiton",
+      "url": "https://www.marmiton.org/recettes/recette_creme-anglaise-reussie-onctueuse-a-souhait_37391.aspx",
+      "snippet": "Recette Crème anglaise réussie, onctueuse à souhait : la meilleure recette rapide et facile : 50 cl, 25 min de préparation. Notée 4.7/5 …"
+    },
+    {
+      "title": "Clafoutis à la mirabelle : la meilleure recette - Marmiton",
+      "url": "https://www.marmiton.org/recettes/recette_clafoutis-a-la-mirabelle_30982.aspx",
+      "snippet": "Recette Clafoutis à la mirabelle : la meilleure recette rapide et facile : 6 personnes, 60 min de préparation. Notée 4.6/5 par 122 …"
+    },
+    {
+      "title": "Cookies aux pépites de chocolat super moelleux - Marmiton",
+      "url": "https://www.marmiton.org/recettes/recette_cookies-aux-pepites-de-chocolat-super-moelleux_57330.aspx",
+      "snippet": "Les cookies moelleux sont un must du goûter ou des pauses sucrées. Avec leur cœur tendre et leurs bords à peine croustillants, ils …"
+    },
+    {
+      "title": "Tarte thon, tomate et moutarde : la meilleure recette - Marmiton",
+      "url": "https://www.marmiton.org/recettes/recette_tarte-thon-tomate-et-moutarde_17226.aspx",
+      "snippet": "Recette Tarte thon, tomate et moutarde : la meilleure recette rapide et facile : 4 personnes, 55 min de préparation. Notée 4.8/5 par …"
+    },
+    {
+      "title": "Ma sauce tomate maison : la meilleure recette - Marmiton",
+      "url": "https://www.marmiton.org/recettes/recette_ma-sauce-tomate-maison_84489.aspx",
+      "snippet": "Recette Ma sauce tomate maison : la meilleure recette rapide et facile : 1 L, 100 min de préparation. Notée 4.8/5 par 18 membres …"
+    }
+  ]
+}

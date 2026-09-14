@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "bjding98/generation",
+  "slug": "bjding98-generation",
+  "author": "bjding98",
+  "url": "https://huggingface.co/bjding98/generation",
+  "created_at": "2026-09-14T00:27:19.000Z",
+  "updated_at": "2026-09-14T00:27:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "这个网址是potplayer官网吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/509011663",
+      "snippet": "要下载PotPlayer，你可以访问官方网站或者Softonic网站，选择合适的版本和语言，然后按照提示安装即可。注意在安装过程中，可能 …"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "如何看待美国情报机构联合发布报告称DeepSeek、月之暗面等中国6家AI公司涉嫌「蒸馏」？"
+    },
+    {
+      "title": "Tnnls发文难度怎么样？ - 知乎",
+      "url": "https://www.zhihu.com/question/328114643",
+      "snippet": "本科时候的work刚录了 TNNLS，总结就是发文时间长：拒稿重投->拒稿重投->小修->接受，整个流程大概一年左右。 发文难度会相对 …"
+    },
+    {
+      "title": "亚朵旗下的酒店有哪些？怎么分级？ - 知乎",
+      "url": "https://www.zhihu.com/question/648518910",
+      "snippet": "亚朵X： 亚朵X的 整体定位在我看来介于全季和美仑之间、跟智选假日差不多，健身房比较小、洗衣房和其他配套设施中规中矩。 亚 …"
+    },
+    {
+      "title": "全球有哪些值得推荐的精品酒店 (Boutique Hotel)？ - 知乎",
+      "url": "https://www.zhihu.com/question/26503253?f3fb8ead20=0a22c5ff0d543697c122aa5246eb28f4",
+      "snippet": "HOTEL VIURA： Hotel con encanto 这家点位于的城市比较偏门，不知道有没有人专门去看过这家店，反正我是没去上。 注意到这家 …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "gabrielgirardiah/retrieval-2023",
+  "slug": "gabrielgirardiah-retrieval-2023",
+  "author": "gabrielgirardiah",
+  "url": "https://huggingface.co/gabrielgirardiah/retrieval-2023",
+  "created_at": "2026-09-13T20:56:23.000Z",
+  "updated_at": "2026-09-13T20:56:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TF1+ : LE NOUVEAU STREAMING GRATUIT",
+      "url": "https://www.tf1.fr/tf1/replay",
+      "snippet": "Miraculous : Les Aventures de Ladybug et Chat Noir Journal de 13 heures"
+    },
+    {
+      "title": "Demain nous appartient (DNA) | TF1+",
+      "url": "https://www.tf1.fr/tf1/demain-nous-appartient",
+      "snippet": "Regardez gratuitement « Demain nous appartient » en streaming ! « Demain nous appartient », Série …"
+    },
+    {
+      "title": "Séries TV gratuites en streaming | TF1+",
+      "url": "https://www.tf1.fr/programmes-tv/series",
+      "snippet": "Sur TF1+, de nouvelles séries à voir chaque semaine, en streaming et en replay gratuit."
+    },
+    {
+      "title": "Programmes TV TF1",
+      "url": "https://www.tf1.fr/tf1/programmes-tv",
+      "snippet": "Retrouvez gratuitement et en exclusivité tous les programmes, émissions et séries de TF1."
+    },
+    {
+      "title": "Plus belle la vie, encore plus belle (PBLV) | TF1+",
+      "url": "https://www.tf1.fr/tf1/plus-belle-la-vie",
+      "snippet": "Retrouvez \"Plus belle la vie, encore plus belle\", du lundi au vendredi sur TF1. Retrouvez tous les épisodes, extraits et bonus tous les …"
+    }
+  ]
+}

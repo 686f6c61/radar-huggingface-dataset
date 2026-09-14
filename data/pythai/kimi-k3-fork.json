@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "PYTHAI/Kimi-K3-fork",
+  "slug": "pythai-kimi-k3-fork",
+  "author": "PYTHAI",
+  "url": "https://huggingface.co/PYTHAI/Kimi-K3-fork",
+  "created_at": "2026-09-13T23:55:44.000Z",
+  "updated_at": "2026-09-13T23:55:48.000Z",
+  "license": "kimi-k3",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "kimi_k3",
+    "feature-extraction",
+    "compressed-tensors",
+    "conversational",
+    "image-text-to-text",
+    "custom_code",
+    "base_model:moonshotai/Kimi-K3",
+    "base_model:finetune:moonshotai/Kimi-K3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2795286,
+  "storage_human": "3 MB",
+  "base_model": "moonshotai/Kimi-K3",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZDF Streaming-Portal: Filme, Serien und Dokus online anschauen",
+      "url": "https://www.zdf.de/",
+      "snippet": "2 days ago · Alle Videos und Livestreams im ZDF anschauen - ständig verfügbar und interaktiv! Entdecken Sie Filme, Serien, …"
+    },
+    {
+      "title": "Von A-Z: Alle Videos zum Streamen - ZDFmediathek",
+      "url": "https://www.zdf.de/sendungen-a-z",
+      "snippet": "Hier findest du alle Nachrichten, Sport und Magazine, Shows, Dokus, Filme & ZDF-Serien von A bis Z online!"
+    },
+    {
+      "title": "Live & TV - ZDF",
+      "url": "https://www.zdf.de/live-tv",
+      "snippet": "Alle ZDF-Livestreams kostenlos und jederzeit online genießen. Das komplette TV-Programm von ZDF, ZDFinfo, ZDFneo, arte, KiKA, …"
+    },
+    {
+      "title": "Bares für Rares - ZDFmediathek",
+      "url": "https://www.zdf.de/bares-fuer-rares-880",
+      "snippet": "Ob alter Krimskrams oder edle Rarität: In Horst Lichters Trödel-Show kann jeder seltene Fundstücke schätzen lassen - und mit Glück …"
+    },
+    {
+      "title": "Serien - ZDFmediathek",
+      "url": "https://www.zdf.de/serien",
+      "snippet": "Streame Serien aus Krimi, Drama, Comedy, Medical Fiction, Thriller, Sitcom und vielem mehr - sortiert nach deinen Interessen."
+    }
+  ]
+}

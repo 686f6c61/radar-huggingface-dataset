@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "leomaurodesenv/electra-base-discriminator-jailbreakv-28k",
+  "slug": "leomaurodesenv-electra-base-discriminator-jailbreakv-28k",
+  "author": "leomaurodesenv",
+  "url": "https://huggingface.co/leomaurodesenv/electra-base-discriminator-jailbreakv-28k",
+  "created_at": "2026-09-13T21:06:08.000Z",
+  "updated_at": "2026-09-13T21:30:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "electra",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:google/electra-base-discriminator",
+    "base_model:finetune:google/electra-base-discriminator",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 4379597505,
+  "storage_human": "4.4 GB",
+  "base_model": "google/electra-base-discriminator",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adhésions | Les Aigles de Pau",
+      "url": "https://www.aiglesdepau.fr/adhesions/",
+      "snippet": "La réduction s'applique à toutes les cotisations de la famille excepté la cotisation athlé découverte, la réduction s'appliquera au …"
+    },
+    {
+      "title": "Les Aigles de Pau - Club de course à pied, Trail, marche athlétique et ...",
+      "url": "https://www.aiglesdepau.fr/",
+      "snippet": "Equipes de jeunes pour découvrir le plaisir du groupe, les efforts et les valeurs de l’athlétisme, avec notre équipe de Coachs: Albert, …"
+    },
+    {
+      "title": "Tarifs jeunes TER - Jeunes Nouvelle Aquitaine - Jeunes de Nouvelle ...",
+      "url": "https://jeunes.nouvelle-aquitaine.fr/vie-quotidienne/se-deplacer/ter-se-deplacer-prix-reduits",
+      "snippet": "La Région a mis en place une gamme de tarifs adaptés aux jeunes et à tous les types de déplacements (quotidiens ou occasionnels, …"
+    },
+    {
+      "title": "Toutes les réductions étudiantes à ne pas rater - Radins.com",
+      "url": "https://www.radins.com/budget/faire-des-economies/reductions-etudiantes",
+      "snippet": "Oct 31, 2025 · Découvrez notre guide complet des réductions étudiantes pour alléger vos dépenses. Astuces, bons plans et sites …"
+    },
+    {
+      "title": "Bons plans Réductions Étudiants ️ Offres et Promos - Dealabs",
+      "url": "https://www.dealabs.com/groupe/reductions-etudiants-et-jeunes",
+      "snippet": "De nombreux marchands proposent des offres étudiantes, et c'est l'occasion de profiter de vos études en faisant des économies. Des …"
+    }
+  ]
+}

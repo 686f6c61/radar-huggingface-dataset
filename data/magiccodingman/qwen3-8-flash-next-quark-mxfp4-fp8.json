@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "magiccodingman/Qwen3.8-Flash-Next-Quark-MXFP4-fp8",
+  "slug": "magiccodingman-qwen3-8-flash-next-quark-mxfp4-fp8",
+  "author": "magiccodingman",
+  "url": "https://huggingface.co/magiccodingman/Qwen3.8-Flash-Next-Quark-MXFP4-fp8",
+  "created_at": "2026-09-13T22:55:33.000Z",
+  "updated_at": "2026-09-13T23:01:17.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "qwen",
+    "qwen3.8",
+    "quark",
+    "mxfp4",
+    "fp8",
+    "mixed-precision",
+    "quantized",
+    "mixture-of-experts",
+    "conversational",
+    "base_model:amd/Qwen3.8-Flash-Next-Quark-MXFP4",
+    "base_model:quantized:amd/Qwen3.8-Flash-Next-Quark-MXFP4",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 119484039059,
+  "parameters_human": "119.48B",
+  "storage_bytes": 128568417584,
+  "storage_human": "128.6 GB",
+  "base_model": "amd/Qwen3.8-Flash-Next-Quark-MXFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "japan-guide.com - Japan Travel and Living Guide",
+      "url": "https://www.japan-guide.com/",
+      "snippet": "Everything about modern and traditional Japan with emphasis on travel and living related information."
+    },
+    {
+      "title": "日本势头似乎依然强劲，但为什么不少声音都在唱衰日本？",
+      "url": "https://www.zhihu.com/question/2048080660636643891",
+      "snippet": "Jun 26, 2026 · 日本势头似乎依然强劲，但为什么不少声音都在唱衰日本？ 最初的观点是：被我们打压管制稀土等车企等心脏行业造不 …"
+    },
+    {
+      "title": "日本还能撑多久？ - 知乎",
+      "url": "https://www.zhihu.com/question/2042900737710094115",
+      "snippet": "Jun 15, 2026 · 说日本撑不了多久的人也太低估一个国家的韧性了。 没有石油完全可以单双号限行，每周停电两三天也不是不可以，我 …"
+    },
+    {
+      "title": "Shirakawa-go and Gokayama Travel Guide",
+      "url": "https://www.japan-guide.com/e/e5950.html",
+      "snippet": "Oct 10, 2025 · Travel guide for Shirakawa-go and Gokayama in the mountains of Gifu and Toyama Prefectures, famous for their …"
+    },
+    {
+      "title": "『バレーボールネーションズリーグ2025』『2025世界バレー ...",
+      "url": "https://topics.tbs.co.jp/article/detail/?id=21595",
+      "snippet": "May 23, 2025 · 6月5日 (木)に開幕する『バレーボールネーションズリーグ2025』の男女日本戦全試合を、地上波TBS系列とBS-TBS …"
+    }
+  ]
+}

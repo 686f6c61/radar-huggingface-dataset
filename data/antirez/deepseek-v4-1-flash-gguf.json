@@ -21,13 +21,13 @@
     "region:us",
     "imatrix"
   ],
-  "likes": 25,
+  "likes": 27,
   "downloads_30d": 135900,
-  "trending_score": 25,
+  "trending_score": 27,
   "parameters": 754638867584,
   "parameters_human": "754.64B",
-  "storage_bytes": 885280309408,
-  "storage_human": "885.3 GB",
+  "storage_bytes": 1250993995936,
+  "storage_human": "1251.0 GB",
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
   "formats": [
     "gguf"

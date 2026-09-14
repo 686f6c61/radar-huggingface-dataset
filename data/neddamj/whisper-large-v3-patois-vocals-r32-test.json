@@ -5,14 +5,17 @@
   "author": "neddamj",
   "url": "https://huggingface.co/neddamj/whisper-large-v3-patois-vocals-r32-test",
   "created_at": "2026-09-13T15:54:56.000Z",
-  "updated_at": "2026-09-13T16:38:23.000Z",
+  "updated_at": "2026-09-13T19:48:22.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
-  "library": null,
+  "library": "transformers",
   "languages": [],
   "tags": [
+    "transformers",
     "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
     "region:us"
   ],
   "likes": 1,
@@ -20,8 +23,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 379091989,
-  "storage_human": "379 MB",
+  "storage_bytes": 2179655446,
+  "storage_human": "2.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

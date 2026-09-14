@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "mradermacher/FrickFritz-4B-i1-GGUF",
+  "slug": "mradermacher-frickfritz-4b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/FrickFritz-4B-i1-GGUF",
+  "created_at": "2026-07-13T11:35:12.000Z",
+  "updated_at": "2026-09-13T22:28:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "abliterated",
+    "caption",
+    "rp",
+    "roleplay",
+    "merge",
+    "uncensored",
+    "decensored",
+    "qwen",
+    "en",
+    "multilingual",
+    "base_model:addansee/FrickFritz-4B",
+    "base_model:quantized:addansee/FrickFritz-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 155,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 39223735104,
+  "storage_human": "39.2 GB",
+  "base_model": "addansee/FrickFritz-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "Правила сообщества YouTube",
+      "url": "https://support.google.com/youtube/answer/9288567?hl=ru",
+      "snippet": "Используя YouTube, вы становитесь частью огромного сообщества авторов и зрителей со всего мира. Чтобы всем в нем …"
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    },
+    {
+      "title": "谷歌账号注册验证无法发出信息怎么办? - 知乎",
+      "url": "https://www.zhihu.com/question/1945629068243481180",
+      "snippet": "3、国内注册的账号能否使用 YouTube 和 Google Play？ 完全可以。 Google 账号是全球通用的，注册成功后即可无缝登录谷歌全家桶 …"
+    },
+    {
+      "title": "YouTube で制限付きモードをオンまたはオフにする",
+      "url": "https://support.google.com/youtube/answer/174084?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "YouTube で制限付きモードをオンまたはオフにする 制限付きモードは、YouTube で使用できるオプション設定です。 この機能は …"
+    }
+  ]
+}

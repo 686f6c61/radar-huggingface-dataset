@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Jotellechea/chess-transformer",
+  "slug": "jotellechea-chess-transformer",
+  "author": "Jotellechea",
+  "url": "https://huggingface.co/Jotellechea/chess-transformer",
+  "created_at": "2026-09-13T20:40:46.000Z",
+  "updated_at": "2026-09-13T21:13:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "chess",
+    "interpretability",
+    "text-generation",
+    "arxiv:2210.13382",
+    "arxiv:2309.00941",
+    "arxiv:2403.15498",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 219396704,
+  "storage_human": "219 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mitarbeiterportal - Login",
+      "url": "https://mitarbeiterportal.zeiterz.de/",
+      "snippet": "Mitarbeiterportal - Login Benutzer Passwort Datenschutz - Impressum"
+    },
+    {
+      "title": "Mitarbeiterportal",
+      "url": "https://dwsi.wg-mp.de/",
+      "snippet": "Kennwort vergessen?"
+    },
+    {
+      "title": "TIMEOFFICE Selfservice - Login",
+      "url": "https://zeit.grn.de/login.aspx",
+      "snippet": "TIMEOFFICE Selfservice ermöglicht GRN-Mitarbeitern den Zugriff auf persönliche Arbeitszeitdaten und die Verwaltung von Zeitkonten."
+    },
+    {
+      "title": "Anmelden - Mitarbeiterportal",
+      "url": "https://epa.ubzzw.de/Account/Login",
+      "snippet": "Passwort vergessen oder abgelaufen?"
+    },
+    {
+      "title": "Mitarbeiterportal - TIMESYS",
+      "url": "https://www.timesys.de/mitarbeiterportal",
+      "snippet": "Das TIMENSION Mitarbeiterportal bietet allen Benutzenden zentralen Zugang zu Informationen, Übersichten und Anwendungen, die …"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mrthor102/gun04",
+  "slug": "mrthor102-gun04",
+  "author": "mrthor102",
+  "url": "https://huggingface.co/mrthor102/gun04",
+  "created_at": "2026-09-13T15:29:58.000Z",
+  "updated_at": "2026-09-14T02:00:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22648156272,
+  "storage_human": "22.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Remote Server Administration Tools - Windows Server | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/troubleshoot/windows-server/system-management-components/remote-server-administration-tools",
+      "snippet": "Feb 24, 2026 · This article describes the tools that are available in Remote Server Administration Tools for Windows."
+    },
+    {
+      "title": "Install and manage Remote Server Administration Tools in Windows",
+      "url": "https://learn.microsoft.com/en-us/windows-server/administration/install-remote-server-administration-tools",
+      "snippet": "Aug 22, 2025 · Search for and select the tool you want to install, select Next, then Install Review the installation progress. Once the …"
+    },
+    {
+      "title": "windows 10 - program dsa.msc for managing active directory - where …",
+      "url": "https://superuser.com/questions/1510698/program-dsa-msc-for-managing-active-directory-where-can-i-get-it-from",
+      "snippet": "Dec 17, 2019 · program dsa.msc for managing active directory - where can I get it from? Ask Question Asked 6 years, 9 months ago …"
+    },
+    {
+      "title": "runas - How do you run as a different user from the Start Menu in ...",
+      "url": "https://superuser.com/questions/1045158/how-do-you-run-as-a-different-user-from-the-start-menu-in-windows-10",
+      "snippet": "Feb 25, 2016 · It's a bit difficult because I don't have the name of every RSAT tool or executable name memorized. (e.g. \"Active …"
+    },
+    {
+      "title": "Is there a download file available for RSAT in windows 11?",
+      "url": "https://learn.microsoft.com/en-us/answers/questions/1532605/is-there-a-download-file-available-for-rsat-in-win",
+      "snippet": "Feb 14, 2024 · I know you can add RSAT using optional features however we are looking for a download file as it was available for …"
+    }
+  ]
+}

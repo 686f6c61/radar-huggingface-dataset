@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "walkeremma/swin-t-experiment",
+  "slug": "walkeremma-swin-t-experiment",
+  "author": "walkeremma",
+  "url": "https://huggingface.co/walkeremma/swin-t-experiment",
+  "created_at": "2026-09-14T00:22:17.000Z",
+  "updated_at": "2026-09-14T00:22:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Правила сообщества YouTube - Cправка - YouTube",
+      "url": "https://support.google.com/youtube/answer/9288567?hl=ru",
+      "snippet": "Используя YouTube, вы становитесь частью огромного сообщества авторов и зрителей со всего мира. Чтобы всем в нем …"
+    },
+    {
+      "title": "двойное снятие средств в Ютуб - Форум ...",
+      "url": "https://support.google.com/youtube/thread/444212840/%D0%B4%D0%B2%D0%BE%D0%B9%D0%BD%D0%BE%D0%B5-%D1%81%D0%BD%D1%8F%D1%82%D0%B8%D0%B5-%D1%81%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B2-%D0%B2-%D0%AE%D1%82%D1%83%D0%B1?hl=ru",
+      "snippet": "Jun 22, 2026 · Если у вас все же оформлена одна платная подписка, то вероятнее всего YouTube совершил пробное …"
+    },
+    {
+      "title": "Не работает ютуб - 74 ответа на форуме ...",
+      "url": "https://www.woman.ru/rest/freetime/thread-ne-rabotaet-yutub-id6360783/",
+      "snippet": "Dec 23, 2025 · 74 ответа - когда включаю ютуб, пишут нет доступа к интернету или не удалось соединиться с сайтом а к …"
+    },
+    {
+      "title": "Ютуб реально замедлили. Что делать? - 266 ...",
+      "url": "https://www.woman.ru/psycho/socialization/thread/6109693/",
+      "snippet": "Jul 27, 2024 · 266 ответов - А сj следующей недели стращали еще сильнее замедлить ютуб. Может его вообще заблокируют? …"
+    },
+    {
+      "title": "Что делать, чтобы край не сворачивался ...",
+      "url": "https://www.passionforum.ru/posts/94346-chto-delat-chtoby-krai-ne-svorachivalsja.html",
+      "snippet": "May 9, 2018 · Связав новый топик я столкнулась с этой проблемой. Задала вопрос здесь, на сайте. Девочки, огромное …"
+    }
+  ]
+}
