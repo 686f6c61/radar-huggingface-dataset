@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "phonsobon/Whisper-Small-Khmer-Final-v3-2000",
+  "slug": "phonsobon-whisper-small-khmer-final-v3-2000",
+  "author": "phonsobon",
+  "url": "https://huggingface.co/phonsobon/Whisper-Small-Khmer-Final-v3-2000",
+  "created_at": "2026-09-14T01:30:58.000Z",
+  "updated_at": "2026-09-14T01:31:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 966995080,
+  "storage_human": "967 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yapılacak İş Listesi ve Görev Yönetimi Uygulaması | Microsoft To Do",
+      "url": "https://www.microsoft.com/tr-TR/microsoft-365/microsoft-to-do-list-app?msockid=2eec54bf9f896bdd22a9436b9e946a25",
+      "snippet": "İyi düzenlenmiş bir yapılacak işler listesi ile görevlerinizi daha net göreceğiniz için daha rahat çalışırsınız."
+    },
+    {
+      "title": "iş ilanları & En Yeni iş fırsatları | Eleman.net",
+      "url": "https://www.eleman.net/is-ilanlari",
+      "snippet": "Mavi yaka ve ara kademe dahil birçok pozisyonda güncel iş ilanlarına Eleman.net ile ulaşabilirsiniz. 400 binden fazla firma her gün …"
+    },
+    {
+      "title": "İş ilanları & Kariyer Tavsiyeleri Kariyer.net'te!",
+      "url": "https://www.kariyer.net/",
+      "snippet": "Kariyer fırsatları sunan dijital işe alım platformu üzerinden binlerce iş ilanı arasından sana uygun olanı bulabilirsin. Kurumsal ve teknik …"
+    },
+    {
+      "title": "Ana Sayfa - Türkiye İş Kurumu (İŞKUR)",
+      "url": "https://www.iskur.gov.tr/",
+      "snippet": "Jun 30, 2026 · İŞKUR olarak, iş arayanlarla işverenleri buluşturuyor; kariyer ve eğitim fırsatları, istihdam teşvikleri ile rehberlik …"
+    },
+    {
+      "title": "İş İlanları - Her Gün Güncellenen İş İlanları Yenibiris.com’da",
+      "url": "https://www.yenibiris.com/is-ilanlari",
+      "snippet": "Siz de en güncel ve çeşitli iş ilan listesini en detaylı bilgilerle görmek ve hayalinizdeki işe başvurmak için tıklayın!"
+    }
+  ]
+}

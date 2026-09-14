@@ -5,7 +5,7 @@
   "author": "csoai",
   "url": "https://huggingface.co/csoai/clan-csoai-plain",
   "created_at": "2026-09-01T06:22:30.000Z",
-  "updated_at": "2026-09-14T00:40:39.000Z",
+  "updated_at": "2026-09-14T04:00:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

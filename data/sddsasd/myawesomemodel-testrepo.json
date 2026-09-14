@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sddsasd/MyAwesomeModel-TestRepo",
+  "slug": "sddsasd-myawesomemodel-testrepo",
+  "author": "sddsasd",
+  "url": "https://huggingface.co/sddsasd/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-14T02:04:51.000Z",
+  "updated_at": "2026-09-14T02:08:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SNCF Connect : Réservez vos billets SNCF, bus et covoiturage",
+      "url": "https://www.sncf-connect.com/",
+      "snippet": "Réservez vos Billets de Train au meilleur prix sur SNCF Connect ! Retrouvez aussi notre offre de cartes de réduction, abonnements …"
+    },
+    {
+      "title": "SNCF Connect : Book your train tickets to France and Europe",
+      "url": "https://www.sncf-connect.com/en-en",
+      "snippet": "Download the SNCF Connect app for faster, easier and cleaner mobility across France. With one touch, you can organise, book and …"
+    },
+    {
+      "title": "Mes Bagages TGV INOUI - Voyagez léger, partout en France",
+      "url": "https://mesbagages.sncf-connect.com/",
+      "snippet": "Le service TGV INOUI Mes Bagages transporte vos équipements Vélo, Ski, Fauteuil, Poussette. Direction les vacances sans vos …"
+    },
+    {
+      "title": "Accueil | Junior & Cie : accompagnement d'enfants en train",
+      "url": "https://juniorcie.sncf-connect.com/",
+      "snippet": "Votre enfant doit prendre le train seul? Bénéficiez du service d'accompagnement Junior & Cie proposé par TGV INOUI afin qu'il …"
+    },
+    {
+      "title": "Contactez-nous - Mes Bagages TGV INOUI - SNCF Connect",
+      "url": "https://mesbagages.sncf-connect.com/contact/",
+      "snippet": "Une question ou simplement besoin d’être rassuré, les équipes du service Mes Bagages sont là pour vous aider et vous répondre."
+    }
+  ]
+}

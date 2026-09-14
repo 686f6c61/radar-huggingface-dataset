@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "maxbhartman/anchor-removal-mmlu-tau0.6-attention-k30-seed44",
+  "slug": "maxbhartman-anchor-removal-mmlu-tau0-6-attention-k30-seed44",
+  "author": "maxbhartman",
+  "url": "https://huggingface.co/maxbhartman/anchor-removal-mmlu-tau0.6-attention-k30-seed44",
+  "created_at": "2026-09-14T01:20:02.000Z",
+  "updated_at": "2026-09-14T01:20:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6442805855,
+  "storage_human": "6.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BingHomepageQuiz - Reddit",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/hot/",
+      "snippet": "Microsoft Bing Homepage daily quiz questions and their answers"
+    },
+    {
+      "title": "Bing homepage quiz : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/r8qjk5/bing_homepage_quiz/",
+      "snippet": "Dec 4, 2021 · While these are the right answers and this quiz is still currently bugged, you don't lose points for wrong answers on this …"
+    },
+    {
+      "title": "[US] Bing Homepage Quiz (12-26-2021) : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/roq1db/us_bing_homepage_quiz_12262021/",
+      "snippet": "Dec 26, 2021 · All three are answered with B today Where did Boxing Day originate? Answer: B) United Kingdom These days, Boxing …"
+    },
+    {
+      "title": "BingQuizAnswers - Reddit",
+      "url": "https://www.reddit.com/r/BingQuizAnswers/hot/",
+      "snippet": "Microsoft Rewards Quiz Answers"
+    },
+    {
+      "title": "[US] In 2016, the American bison was declared what? - MS Bing Quiz",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/comments/rysc10/us_in_2016_the_american_bison_was_declared_what/",
+      "snippet": "[1-8-2022] Microsoft Rewards Bing Homepage Quiz Questions and Answers: Question: Today we're befriending a frosty bison …"
+    }
+  ]
+}

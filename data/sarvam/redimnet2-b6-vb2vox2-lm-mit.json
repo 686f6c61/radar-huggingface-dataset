@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sarvam/redimnet2-b6-vb2vox2-lm-mit",
+  "slug": "sarvam-redimnet2-b6-vb2vox2-lm-mit",
+  "author": "sarvam",
+  "url": "https://huggingface.co/sarvam/redimnet2-b6-vb2vox2-lm-mit",
+  "created_at": "2026-09-14T09:59:24.000Z",
+  "updated_at": "2026-09-14T09:59:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "speaker-recognition",
+    "speaker-verification",
+    "speaker-embedding",
+    "redimnet",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51149219,
+  "storage_human": "51 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sarvam | India's Full-Stack Sovereign AI Platform",
+      "url": "https://www.sarvam.ai/",
+      "snippet": "Sarvam is India's full-stack sovereign AI platform, with speech-to-text, text-to-speech, translation, and conversational agents across …"
+    },
+    {
+      "title": "Sarvam Models: Speech, Text & Translation AI | Sarvam",
+      "url": "https://www.sarvam.ai/models",
+      "snippet": "Explore Sarvam models for speech, text, translation, and multimodal AI. Saaras, Bulbul, Mayura and more. Free tier available. Start …"
+    },
+    {
+      "title": "Indus by Sarvam",
+      "url": "https://indus.sarvam.ai/",
+      "snippet": "Build Agents using Sarvam Step-by-step cookbooks to build voice and collection agents for Indian languages."
+    },
+    {
+      "title": "Sarvam AI - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sarvam_AI",
+      "snippet": "Sarvam AI develops language models trained on datasets that include multiple Indian languages and code-mixed text. The company …"
+    },
+    {
+      "title": "Sarvam - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sarvam",
+      "snippet": "Sarvam (transl. Everything) is a 2009 Indian Tamil -language hyperlink action thriller film co-written and directed by Vishnuvardhan. …"
+    }
+  ]
+}

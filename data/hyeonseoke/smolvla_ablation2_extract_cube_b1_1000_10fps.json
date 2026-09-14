@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "HyeonseokE/smolvla_ablation2_extract_cube_B1_1000_10fps",
+  "slug": "hyeonseoke-smolvla_ablation2_extract_cube_b1_1000_10fps",
+  "author": "HyeonseokE",
+  "url": "https://huggingface.co/HyeonseokE/smolvla_ablation2_extract_cube_B1_1000_10fps",
+  "created_at": "2026-09-14T02:00:41.000Z",
+  "updated_at": "2026-09-14T02:02:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:HyeonseokE/ablation2_extract_cube_B1_10fps",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906729316,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nahrungsmittelmaschinen und Verpackungsmaschinen - vdma.eu",
+      "url": "https://vdma.eu/de/nahrungsmittelmaschinen-verpackungsmaschinen",
+      "snippet": "Im Fachverband Nahrungsmittelmaschinen und Verpackungsmaschinen sind über 320 – vorwiegend mittelständische – …"
+    },
+    {
+      "title": "FAQ Materialien für Lebensmittelkontakt in der EU - VDMA",
+      "url": "https://vdma.eu/viewer/-/v2article/render/1120290",
+      "snippet": "Vollständig überarbeitet: Die 33 „FAQ zu Lebensmittelbedarfsgegenständen (Food Contact Materials, FCM) in der EU“ des VDMA …"
+    },
+    {
+      "title": "VDMA – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/VDMA",
+      "snippet": "Ziel des VDMA ist es, die Wettbewerbsfähigkeit seiner Mitgliedsunternehmen zu fördern. Dazu gehören unter anderem die …"
+    },
+    {
+      "title": "Verbandsprofil: Fachverband Nahrungsmittelmaschinen und...",
+      "url": "https://www.verbaende.com/verband/fachverband-nahrungsmittelmaschinen-und-verpackungsmaschinen-im-vdma-2984/",
+      "snippet": "Handlungsfelder: Lebensmittel, Ernährung, Genuss, Maschinen, Anlagen, Werkzeuge, Automation, Automaten | verbaende.com"
+    },
+    {
+      "title": "VDMA Fachverband Nahrungsmittel- und Verpackungsmaschinen",
+      "url": "http://hyfoma.com/de/Firmen/vdma-fachverband-nahrungs-mittelmaschinen-und-verpackungsmas.html",
+      "snippet": "Firmaprofil VDMA Fachverband Nahrungsmittel- und Verpackungsmaschinen - Frankfurt am Main Deutschland"
+    }
+  ]
+}

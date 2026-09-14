@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "BiernyVR/car-damage-classifier",
+  "slug": "biernyvr-car-damage-classifier",
+  "author": "BiernyVR",
+  "url": "https://huggingface.co/BiernyVR/car-damage-classifier",
+  "created_at": "2026-09-14T09:53:51.000Z",
+  "updated_at": "2026-09-14T09:55:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "computer-vision",
+    "automotive",
+    "insurance",
+    "car-damage",
+    "damage-assessment",
+    "efficientnetv2",
+    "onnxruntime",
+    "cost-estimation",
+    "image-classification",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 426486561,
+  "storage_human": "426 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "Vehicle Damage Benchmark",
+      "metric": "Overall Accuracy",
+      "value": 1
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "Vehicle Damage Benchmark",
+      "metric": "Macro F1",
+      "value": 1
+    }
+  ],
+  "sources": [
+    {
+      "title": "Alpha-Thalassämie - DocCheck Flexikon",
+      "url": "https://flexikon.doccheck.com/de/Alpha-Thalass%C3%A4mie",
+      "snippet": "Diese werden als Hämoglobin H (HbH) bezeichnet. Sie bilden Einschlüsse in Erythroblasten und präzipitieren in Erythrozyten zu …"
+    },
+    {
+      "title": "Hemoglobin H disease - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hemoglobin_H_disease",
+      "snippet": "Hemoglobin H disease, also called α-thalassemia intermedia, is a disease affecting hemoglobin, the oxygen carrying molecule within …"
+    },
+    {
+      "title": "Thalassämie - DocCheck Flexikon",
+      "url": "https://flexikon.doccheck.com/de/Thalass%C3%A4mie",
+      "snippet": "Thalassämien sind genetisch bedingte Störungen der Hämoglobinbildung, bei denen es zum Mangel bestimmter Proteinketten des …"
+    },
+    {
+      "title": "Thalassämie – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Thalass%C3%A4mie",
+      "snippet": "Wenn drei Gene inaktiv sind, liegt die so genannte HbH-Krankheit vor, die durch eine leichtere Form einer Thalassämie …"
+    },
+    {
+      "title": "α-Thalassämie – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/%CE%91-Thalass%C3%A4mie",
+      "snippet": "Alpha-Thalassämie ist auf eine verminderte Produktion von 1,2,3 oder 4 alpha-Globin-Ketten zurückzuführen, was zu einem relativ …"
+    }
+  ]
+}

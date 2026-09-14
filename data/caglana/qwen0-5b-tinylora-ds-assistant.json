@@ -5,7 +5,7 @@
   "author": "Caglana",
   "url": "https://huggingface.co/Caglana/qwen0.5b-tinylora-ds-assistant",
   "created_at": "2026-08-31T18:15:38.000Z",
-  "updated_at": "2026-09-10T19:12:06.000Z",
+  "updated_at": "2026-09-13T07:41:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -18,6 +18,8 @@
     "sft",
     "lora",
     "layer-lora",
+    "tool-use",
+    "function-calling",
     "transformers",
     "trl",
     "data-science",
@@ -28,12 +30,12 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 78,
+  "downloads_30d": 80,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 16577364,
-  "storage_human": "17 MB",
+  "storage_bytes": 28123043,
+  "storage_human": "28 MB",
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [
     "safetensors"

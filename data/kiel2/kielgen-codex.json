@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "kiel2/KielGen-Codex",
+  "slug": "kiel2-kielgen-codex",
+  "author": "kiel2",
+  "url": "https://huggingface.co/kiel2/KielGen-Codex",
+  "created_at": "2026-09-14T01:26:00.000Z",
+  "updated_at": "2026-09-14T01:26:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "H&M France | Femme, Homme, Enfant et Maison | H&M FR",
+      "url": "https://www2.hm.com/fr_fr/index.html?msockid=00a52bddb9926e6316023c09b8356f79",
+      "snippet": "H&M est la destination pour la mode, la maison, la beauté, les vêtements pour enfants et plus. Retrouvez les collections et des …"
+    },
+    {
+      "title": "Mode et vêtements de qualité aux meilleurs prix | H&M CA",
+      "url": "https://www2.hm.com/fr_ca/index.html?msockid=00a52bddb9926e6316023c09b8356f79",
+      "snippet": "H&M est votre destination de magasinage pour la mode, la maison, la beauté, les vêtements pour enfant, etc. Parcourez nos …"
+    },
+    {
+      "title": "H&M Belgique | Femme, Homme, Enfant et Maison | H&M BE",
+      "url": "https://www2.hm.com/fr_be/index.html?msockid=00a52bddb9926e6316023c09b8356f79",
+      "snippet": "H&M est votre destination shopping pour la mode, la maison, la beauté, les vêtements pour enfant... Découvrez nos articles de …"
+    },
+    {
+      "title": "H&M Suisse | Femme, Homme, Enfant et Maison | H&M CH",
+      "url": "https://www2.hm.com/fr_ch/index.html?msockid=00a52bddb9926e6316023c09b8356f79",
+      "snippet": "H&M est ta destination shopping pour la mode, la maison, la beauté, les vêtements pour enfant et bien plus encore. Articles de …"
+    },
+    {
+      "title": "Pantalons et Leggings Femme | Cargo, Lin, Large | H&M CA",
+      "url": "https://www2.hm.com/fr_ca/femme/catalogue-par-produit/pantalons.html?msockid=00a52bddb9926e6316023c09b8356f79",
+      "snippet": "Revitalisez votre garde-robe avec nos pantalons et leggings pour femme. Vous trouverez des leggings et pantalons de jogging, en lin …"
+    }
+  ]
+}

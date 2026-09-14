@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Tusharika1903/a2c-PandaReachDense-v3",
+  "slug": "tusharika1903-a2c-pandareachdense-v3",
+  "author": "Tusharika1903",
+  "url": "https://huggingface.co/Tusharika1903/a2c-PandaReachDense-v3",
+  "created_at": "2026-09-14T10:09:50.000Z",
+  "updated_at": "2026-09-14T10:16:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "PandaReachDense-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 211393,
+  "storage_human": "211393 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chilblains | Diabetes UK Forum",
+      "url": "https://forum.diabetes.org.uk/boards/threads/chilblains.98282/",
+      "snippet": "Jan 28, 2022 · Hello Everyone, I got Chilblains only on my toes, please let me know the treatment!!"
+    },
+    {
+      "title": "Energy gels, foods during long distance running | Diabetes UK Forum",
+      "url": "https://forum.diabetes.org.uk/boards/threads/energy-gels-foods-during-long-distance-running.116013/",
+      "snippet": "Jan 13, 2025 · I'm T1, hybrid closed loop user currently training for a half marathon. Diabetes dietitian has given me advise about …"
+    },
+    {
+      "title": "Anuncia tu negocio en Foursquare",
+      "url": "https://es.foursquare.com/advertise",
+      "snippet": "Llega a la gente de la zona que esté dispuesta a consumir en tu negocio. Solo tendrás que pagar si la gente realiza alguna acción …"
+    },
+    {
+      "title": "McDonald's ubicaciones en Denver - Ver horas, menú ... - Foursquare",
+      "url": "https://es.foursquare.com/locations/mcdonalds/denver",
+      "snippet": "Encuentra ubicaciones de McDonald's cerca de ti. Consulta horas, menú, direcciones, fotografías y consejos para las 108 …"
+    },
+    {
+      "title": "Recommend me a make of trainers please. - Diabetes UK",
+      "url": "https://forum.diabetes.org.uk/threads/recommend-me-a-make-of-trainers-please.112869/",
+      "snippet": "Jul 3, 2024 · Decathlon are a good shop but I would highly recommend Go Outdoors. They have very helpful staff who aren't kids …"
+    }
+  ]
+}

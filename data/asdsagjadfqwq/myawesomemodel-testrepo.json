@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ASDSAGJADFQWQ/MyAwesomeModel-TestRepo",
+  "slug": "asdsagjadfqwq-myawesomemodel-testrepo",
+  "author": "ASDSAGJADFQWQ",
+  "url": "https://huggingface.co/ASDSAGJADFQWQ/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-14T01:38:13.000Z",
+  "updated_at": "2026-09-14T01:38:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Add, edit, or delete Google Maps reviews & ratings",
+      "url": "https://support.google.com/maps/answer/6230175?hl=en&co=GENIE.Platform%3DDesktop/",
+      "snippet": "On Google Maps, you can write reviews for places you visit. You can also leave info or post photo or video updates about a place, …"
+    },
+    {
+      "title": "Report data or content errors on Google Maps",
+      "url": "https://support.google.com/maps/answer/3094088?hl=en",
+      "snippet": "Report spam or bad data Any illegal, offensive, fraudulent, or malicious data on Google Maps is considered as spam. Users found to …"
+    },
+    {
+      "title": "Google Help",
+      "url": "https://support.google.com/",
+      "snippet": "Google Arts & Culture Platform Card Issuer Google AdSense Maps Content Partners Google Cloud Platform Console Google …"
+    },
+    {
+      "title": "Google Maps Help",
+      "url": "https://support.google.com/maps/?hl=en",
+      "snippet": "Official Google Maps Help Center where you can find tips and tutorials on using Google Maps and other answers to frequently asked …"
+    },
+    {
+      "title": "Download areas & navigate offline in Google Maps",
+      "url": "https://support.google.com/maps/answer/6291838?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "Use offline maps in Google Maps After you download an area, use the Google Maps app just like you normally would. If your internet …"
+    }
+  ]
+}

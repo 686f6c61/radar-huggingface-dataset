@@ -5,7 +5,7 @@
   "author": "handy-computer",
   "url": "https://huggingface.co/handy-computer/granite-4.0-1b-speech-gguf",
   "created_at": "2026-05-17T10:46:05.000Z",
-  "updated_at": "2026-09-12T13:07:36.000Z",
+  "updated_at": "2026-09-13T23:55:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",

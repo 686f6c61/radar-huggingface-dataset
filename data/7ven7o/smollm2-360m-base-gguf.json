@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "7ven7o/SmolLM2-360M-Base-GGUF",
+  "slug": "7ven7o-smollm2-360m-base-gguf",
+  "author": "7ven7o",
+  "url": "https://huggingface.co/7ven7o/SmolLM2-360M-Base-GGUF",
+  "created_at": "2026-09-14T01:53:22.000Z",
+  "updated_at": "2026-09-14T01:55:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "smollm2",
+    "base-model",
+    "base_model:HuggingFaceTB/SmolLM2-360M",
+    "base_model:quantized:HuggingFaceTB/SmolLM2-360M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 361821120,
+  "parameters_human": "361.8M",
+  "storage_bytes": 259914848,
+  "storage_human": "260 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-360M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Descargar KMSPico gratis para PC - CCM",
+      "url": "https://es.ccm.net/descargas/herramientas/8888-kmspico/",
+      "snippet": "Jan 23, 2024 · KMSPico es una herramienta útil para activar licencias de Microsoft Windows y Office de manera totalmente gratuita. …"
+    },
+    {
+      "title": "XLOOKUP函数怎么用-百度经验",
+      "url": "https://jingyan.baidu.com/article/7f41ececab929e193c095c4f.html",
+      "snippet": "Sep 6, 2019 · XLOOKUP函数怎么用,最近官方新增了XLOOKUP函数，和VLOOKUP相比，只是字母从V变成了X，到底有什么变化， …"
+    },
+    {
+      "title": "Cómo conseguir serial o licencia de Office 2016, 2021, 365 - CCM",
+      "url": "https://es.ccm.net/aplicaciones-e-internet/ofimatica/1854-como-conseguir-el-serial-de-office-2016/",
+      "snippet": "Aug 14, 2023 · En Office 2021, 2019 y 2016 Al comprar una licencia de Office en línea, es necesario crear una cuenta de Microsoft (o …"
+    },
+    {
+      "title": "如何查看自己电脑上的office是什么版本 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/636f38bbed515796b84610a9.html",
+      "snippet": "Nov 8, 2019 · 如何查看自己电脑上的office是什么版本,在Widow10系统下想要查看自己安装的Office版本号，该怎么样查看呢？下面一 …"
+    },
+    {
+      "title": "Serial o clave de activación Office 365 [Resuelto] - CCM",
+      "url": "https://es.ccm.net/forum/affich-1842715-serial-o-clave-de-activacion-office-365",
+      "snippet": "Saludos amigos, Por favor necesito un serial o clave de activación de Office 365. Se lo agradecería de corazón! Gracias"
+    }
+  ]
+}

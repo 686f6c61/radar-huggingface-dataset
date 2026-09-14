@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "michaelwilsonmu/retrieval-v3",
+  "slug": "michaelwilsonmu-retrieval-v3",
+  "author": "michaelwilsonmu",
+  "url": "https://huggingface.co/michaelwilsonmu/retrieval-v3",
+  "created_at": "2026-09-14T02:07:10.000Z",
+  "updated_at": "2026-09-14T02:07:16.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "إستفسار - شهرية تقني سامي (bac+3) | منتديات تونيزيـا سات",
+      "url": "https://www.tunisia-sat.com/forums/threads/1889368/",
+      "snippet": "أنا تقني سامي و برشا صحاب قراو معاي يخدموا بشهرية متفاوتة عندك مثلا السوتيتال والكنام يخلصوا التقني السامي أكثر من 800 دينار"
+    },
+    {
+      "title": "هل شهادة تقني سامي تعادل شهادة ليسانس او تعادل باك+2",
+      "url": "https://www.facebook.com/groups/public.employment/posts/2655441398205321/",
+      "snippet": "Jan 10, 2026 · شهادة تقني سام في سوق العمل في الوظيفة العمومية هي اقل من شهادة الليسانس واعلى من بكالوريا + سنتين وهي تعادل في الوظيفة العمومية شهادة الدراسات الجامعية التطبيقية deua …"
+    },
+    {
+      "title": "الوظيف العمومي ☑️ | توضيح فيما يخص تقني سامي | Facebook",
+      "url": "https://www.facebook.com/groups/public.employment/posts/2220365838379548/",
+      "snippet": "Sep 21, 2024 · توضيح فيما يخص تقني سامي اطلعت على معظم التعليقات فيما يخص شهادة تقني سامي،هناك من يعتبرها شهادة دون المستوى وكمية السخرية من حاملين هذه الشهادة،اردت..."
+    },
+    {
+      "title": "إستفسار حول تنظير شهادة مؤهل تقني سامي | الصفحة 3 | منتديات تونيزيـا سات",
+      "url": "https://www.tunisia-sat.com/forums/threads/4209537/page-3",
+      "snippet": "Jun 29, 2021 · ملاحظة : اللي عنده شهادة تقني سامي جامعي يعني شهادة المرحلة الأولى من التعليم العالي عنده الحق يكمل تكوين مستمر بمدة سنة في احدى المعاهد العليا للدراسات التكنولوجية و …"
+    },
+    {
+      "title": ":: الصفحة الخاصة لباكالوريا 2026 كل الشعب - أورينتيني - توجيه تونس",
+      "url": "https://orientini.com/Orientation_Tunisie_Bac_2019_Toutes_Sections",
+      "snippet": "هذا الموقع يهدف إلى تقديم معلومات ونصائح ووسائل عمل تساعدك على الاستعداد و اتخاذ القرار سواء كان ذلك في ميدان التعليم، التكوين المهني أو التشغيل. لكنه ليس موقعا رسميّا وهو مستقلّ تماما عن ايّ …"
+    }
+  ]
+}

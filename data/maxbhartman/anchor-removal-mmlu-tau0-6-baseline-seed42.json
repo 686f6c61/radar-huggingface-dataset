@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "maxbhartman/anchor-removal-mmlu-tau0.6-baseline-seed42",
+  "slug": "maxbhartman-anchor-removal-mmlu-tau0-6-baseline-seed42",
+  "author": "maxbhartman",
+  "url": "https://huggingface.co/maxbhartman/anchor-removal-mmlu-tau0.6-baseline-seed42",
+  "created_at": "2026-09-14T01:23:33.000Z",
+  "updated_at": "2026-09-14T01:24:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6442805855,
+  "storage_human": "6.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Voli low cost: confronta e prenota biglietti aerei | Skyscanner",
+      "url": "https://www.skyscanner.it/",
+      "snippet": "Confronta i voli low cost delle principali compagnie aeree e agenzie di viaggio e trova le offerte voli per le tue destinazioni preferite. …"
+    },
+    {
+      "title": "Trova le offerte voli e i biglietti aerei | Skyscanner",
+      "url": "https://www.skyscanner.it/voli",
+      "snippet": "Cerchi le migliori offerte voli per le vacanze? Confronta i voli low cost di migliaia di fornitori e prenota subito online."
+    },
+    {
+      "title": "30 € Voli economici da Catania Fontanarossa (CTA) a ... - Skyscanner",
+      "url": "https://www.skyscanner.it/rotte/cta/peg/catania-fontanarossa-per-perugia-sant-egidio.html",
+      "snippet": "Cerchi un volo economico Catania Fontanarossa - Perugia Sant'Egidio? ️ Confronta i prezzi delle principali agenzie di viaggio e …"
+    },
+    {
+      "title": "Voli economici per Islanda a partire da 60 € | Skyscanner",
+      "url": "https://www.skyscanner.it/voli-per/is/voli-economici-per-islanda.html",
+      "snippet": "Islanda: stai cercando voli per questo paese da 28 €? Confronta i prezzi delle principali agenzie di viaggio e compagnie aeree per …"
+    },
+    {
+      "title": "Da 395 € Voli Economici per Bogotá (BOG) - Skyscanner",
+      "url": "https://www.skyscanner.it/voli-per/bog/voli-economici-per-bogota-aeroporto.html",
+      "snippet": "Offerte voli per Bogotá Cerchi un'offerta last minute economica o il miglior volo di andata e ritorno dall'aeroporto di Bogotá a quello di …"
+    }
+  ]
+}

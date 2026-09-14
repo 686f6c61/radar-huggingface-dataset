@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ruizhangiah/retrieval7",
+  "slug": "ruizhangiah-retrieval7",
+  "author": "ruizhangiah",
+  "url": "https://huggingface.co/ruizhangiah/retrieval7",
+  "created_at": "2026-09-14T09:41:31.000Z",
+  "updated_at": "2026-09-14T09:41:36.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.de/",
+      "snippet": "Mit Google Übersetzer können Sie Wörter, Sätze und Webseiten kostenlos in über 100 Sprachen übersetzen."
+    },
+    {
+      "title": "DeepL Übersetzer | Der präziseste Übersetzer der Welt",
+      "url": "https://www.deepl.com/de/translator",
+      "snippet": "Übersetzen Sie Texte und ganze Dateien im Handumdrehen. Präzise Übersetzungen für Einzelnutzer und Teams. Jeden Tag nutzen …"
+    },
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.com/?hl=de",
+      "snippet": "Übersetzen Sie Wörter, Sätze und Webseiten sofort zwischen über 100 Sprachen mit dem kostenlosen Google-Dienst."
+    },
+    {
+      "title": "DeepL Translator | World's Most Accurate Translator",
+      "url": "https://www.deepl.com/en/translator",
+      "snippet": "Translate texts & full document files instantly. Accurate translations for individuals and Teams. Millions translate with DeepL every day."
+    },
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.at/",
+      "snippet": "Sofortige Übersetzung von Wörtern, Sätzen und Webseiten zwischen Deutsch und über 100 Sprachen mit dem kostenlosen Google …"
+    }
+  ]
+}

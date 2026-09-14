@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "khazic/tfm-offline-stage1-group-1",
+  "slug": "khazic-tfm-offline-stage1-group-1",
+  "author": "khazic",
+  "url": "https://huggingface.co/khazic/tfm-offline-stage1-group-1",
+  "created_at": "2026-09-14T01:37:11.000Z",
+  "updated_at": "2026-09-14T07:10:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2860897235,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Body of Proof — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Body_of_Proof",
+      "snippet": "La série pourrait connaître une quatrième saison, si elle est rachetée par une chaîne telle que TNT, USA Network ou WGN America …"
+    },
+    {
+      "title": "Body Of Proof - Série TV 2011 - AlloCiné",
+      "url": "https://www.allocine.fr/series/ficheserie_gen_cserie=8087.html",
+      "snippet": "Retrouvez tous les détails des 3 saisons et des 42 épisodes de la série, ainsi que toutes les actualités et les vidéos."
+    },
+    {
+      "title": "Body of proof sur M6+ : voir les épisodes en streaming",
+      "url": "https://www.m6.fr/body-of-proof-p_2424",
+      "snippet": "Body of proof en replay sur M6+ : les épisodes en intégralité, des vidéos supplémentaires et les meilleurs extraits."
+    },
+    {
+      "title": "Body Of Proof Saison 4 : Quelle date de sortie ? Une suite prévue ?",
+      "url": "https://www.cultactu.fr/body-of-proof-saison-4-quelle-date-de-sortie-une-suite-prevue",
+      "snippet": "Jul 16, 2021 · Malgré cela, ABC a pris l’étrange décision d’annuler la série au lieu de lancer la saison 4 de Body Of Proof. Vous l’avez …"
+    },
+    {
+      "title": "Body Of Proof Saison 4 : Quelle date de sortie ? Une suite prévue",
+      "url": "https://ayther.fr/body-of-proof-saison-4/",
+      "snippet": "Jul 16, 2021 · Malgré cela, ABC a pris l’étrange décision d’annuler la série au lieu de lancer la saison 4 de Body Of Proof. Vous l’avez …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "hermitdave/Agnes-3.0-Flash-oQ4e",
+  "slug": "hermitdave-agnes-3-0-flash-oq4e",
+  "author": "hermitdave",
+  "url": "https://huggingface.co/hermitdave/Agnes-3.0-Flash-oQ4e",
+  "created_at": "2026-09-14T11:30:32.000Z",
+  "updated_at": "2026-09-14T11:45:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MSN | Personalized News, Top Headlines, Live Updates and more",
+      "url": "https://www.msn.com/",
+      "snippet": "Your personalized and curated collection of the best in trusted news, weather, sports, money, travel, entertainment, gaming, and …"
+    },
+    {
+      "title": "MSN | Personalisierte Nachrichten, Schlagzeilen, Live-Updates und mehr",
+      "url": "https://www.msn.com/de-de/",
+      "snippet": "Ihre personalisierte und zusammengestellte Sammlung vertrauenswürdiger Nachrichten-, Wetter- und Sport-, Geld-, Reise-, …"
+    },
+    {
+      "title": "MSN | Personalisierte Nachrichten, Schlagzeilen, Live-Updates und mehr",
+      "url": "https://www.msn.com/de-ch",
+      "snippet": "MSN bietet aktuelle Nachrichten aus Politik, Sport, Finanzen, Wetter, Entertainment und Lifestyle sowie Zugang zu Hotmail, Outlook, …"
+    },
+    {
+      "title": "Tägliche lokale Wettervorhersage, Radarkarten, Neuigkeiten zu ... - MSN",
+      "url": "https://www.msn.com/de-de/wetter",
+      "snippet": "Erhalten Sie genaue stündliche Vorhersagen für heute, heute Abend und morgen, sowie 10-tägige Tagesvorhersagen und …"
+    },
+    {
+      "title": "MSN | Personalized News, Top Headlines, Live Updates and more",
+      "url": "https://www.msn.com/en-xl/",
+      "snippet": "Stay updated with the latest international news, sports results, technology updates, entertainment stories, photos, and videos on MSN."
+    }
+  ]
+}

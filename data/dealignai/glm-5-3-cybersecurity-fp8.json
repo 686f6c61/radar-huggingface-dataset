@@ -53,12 +53,12 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 433,
-  "downloads_30d": 30310,
-  "trending_score": 223,
+  "likes": 438,
+  "downloads_30d": 30502,
+  "trending_score": 172,
   "parameters": 753329940480,
   "parameters_human": "753.33B",
-  "storage_bytes": 755663574885,
+  "storage_bytes": 755664976633,
   "storage_human": "755.7 GB",
   "base_model": "zai-org/GLM-5.3, JANGQ-AI/GLM-5.3-FP8",
   "formats": [

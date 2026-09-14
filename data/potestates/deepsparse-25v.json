@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Potestates/DeepSparse-25v",
+  "slug": "potestates-deepsparse-25v",
+  "author": "Potestates",
+  "url": "https://huggingface.co/Potestates/DeepSparse-25v",
+  "created_at": "2026-09-14T02:02:08.000Z",
+  "updated_at": "2026-09-14T02:02:14.000Z",
+  "license": "mixed-see-readme",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "sparse-view-ct",
+    "cbct",
+    "ct-reconstruction",
+    "medical-imaging",
+    "deepsparse",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 115943020,
+  "storage_human": "116 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RootsTech – Family History Conference and Year‑Round Learning",
+      "url": "https://www.familysearch.org/en/rootstech/",
+      "snippet": "Experience RootsTech—discover, learn, and celebrate genealogy with live events, online sessions, and a year‑round platform."
+    },
+    {
+      "title": "Search the On-Demand Library",
+      "url": "https://www.familysearch.org/en/rootstech/search",
+      "snippet": "Find what you’re looking for in more than 1,500 sessions on 185 topics in over 30 languages."
+    },
+    {
+      "title": "Schedule - FamilySearch",
+      "url": "https://www.familysearch.org/en/rootstech/schedule?day=2026-03-04",
+      "snippet": "Mar 4, 2026 · Explore RootsTech, the world’s largest family history conference. Join inspiring live events and access on-demand …"
+    },
+    {
+      "title": "RootsTech Library: Free On-Demand Genealogy Sessions",
+      "url": "https://www.familysearch.org/en/rootstech/library",
+      "snippet": "Discover free on-demand sessions from RootsTech, the world’s largest family history conference. Learn genealogy tips, explore tools, …"
+    },
+    {
+      "title": "A Beginner’s Guide to Finding Ancestors Using ... - FamilySearch",
+      "url": "https://www.familysearch.org/en/rootstech/session/a-beginners-guide-to-finding-ancestors-using-familysearchs-ai-research-assistant",
+      "snippet": "Interested in family history but not sure where to begin, or frustrated by how hard research can feel? This is an introductory class on …"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "highlands/ipo01",
+  "slug": "highlands-ipo01",
+  "author": "highlands",
+  "url": "https://huggingface.co/highlands/ipo01",
+  "created_at": "2026-09-14T01:59:37.000Z",
+  "updated_at": "2026-09-14T09:00:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16177254480,
+  "storage_human": "16.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Highlands — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Highlands",
+      "snippet": "Highlands est un nom anglais qui signifie littéralement « hautes terres » en français, terme qui est parfois utilisé pour désigner la …"
+    },
+    {
+      "title": "Highlands d’Écosse : le guide complet pour tout voir",
+      "url": "https://noscoeursvoyageurs.fr/visiter-highlands-ecosse/",
+      "snippet": "Jun 29, 2026 · Dans ce nouveau récit de voyages au Royaume-Uni, je vous partage tout ce qu’il faut voir et faire dans les Highlands, …"
+    },
+    {
+      "title": "Les Highlands : vacances, activités et hébergements",
+      "url": "https://www.visitscotland.com/fr-fr/places-to-go/highlands",
+      "snippet": "Découvrez la beauté des Highlands écossaises : idées de vacances, hébergements, infos et cartes touristiques, activités et plus encore"
+    },
+    {
+      "title": "Visiter les Highlands: Top 20 des choses à faire et à voir",
+      "url": "https://www.voyagetips.com/visiter-highlands-ecosse/",
+      "snippet": "Jun 13, 2026 · Visiter les Highlands fait partie des incontournables d’un voyage en Ecosse. Sauvage, verdoyante, venteuse et …"
+    },
+    {
+      "title": "Highlands : que faire et que visiter, villes et villages, randonnées ...",
+      "url": "https://www.lefigaro.fr/voyages/dossier/highlands-que-faire-et-que-visiter-villes-et-villages-randonnees-plages-conseils-et-guide-de-voyage?msockid=0d467581337b64ab18c1625532a265c3",
+      "snippet": "Voici notre sélection de cinq hôtels où séjourner pour vivre l'expérience des Highlands. Entouré de mystères et de légendes, le Loch …"
+    }
+  ]
+}

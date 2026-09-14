@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "huyhoangvbck/Qwen3.8-27B-RL-Social-Science",
+  "slug": "huyhoangvbck-qwen3-8-27b-rl-social-science",
+  "author": "huyhoangvbck",
+  "url": "https://huggingface.co/huyhoangvbck/Qwen3.8-27B-RL-Social-Science",
+  "created_at": "2026-09-14T01:50:11.000Z",
+  "updated_at": "2026-09-14T02:01:33.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "qwen",
+    "vmlu",
+    "reasoning",
+    "grpo",
+    "rlhf",
+    "megatron",
+    "text-generation",
+    "conversational",
+    "vi",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55582995981,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The magnetic moment order is correctly given in: - Toppr",
+      "url": "https://www.toppr.com/ask/question/the-magnetic-moment-order-is-correctly-given-in/",
+      "snippet": "Click here:point_up_2:to get an answer to your question :writing_hand:the magnetic moment order is correctly given in"
+    },
+    {
+      "title": "The electronic configuration of the Mn^ {4+} ion is: [Ar] 3d^4 ... - Toppr",
+      "url": "https://www.toppr.com/ask/question/the-electronic-configuration-of-the-mn4-ion-is/",
+      "snippet": "Click here👆to get an answer to your question ️ the electronic configuration of the mn4 ion is"
+    },
+    {
+      "title": "The spin only magnetic moment of Mn ^ {4+} ion is nearly: A. 3",
+      "url": "https://www.toppr.com/ask/question/the-spin-only-magnetic-moment-of-mn-4-ion-isnearlya-3-mathrmbmb-6-mathrmbmc-4/",
+      "snippet": "Click here👆to get an answer to your question ️ The spin only magnetic moment of Mn ^ {4+} ion is nearly: A. 3 \\mathrm {BM} B. 6 …"
+    },
+    {
+      "title": "The number of unpaired electrons in Mn^{4+}(z=25) is ... - Toppr",
+      "url": "https://www.toppr.com/ask/question/the-number-of-unpaired-electrons-in-mn4z25-is/",
+      "snippet": "Click here:point_up_2:to get an answer to your question :writing_hand:the number of unpaired electrons in mn4z25 is"
+    },
+    {
+      "title": "3. Write the electronic configuration of i. Mn* ii. Fe3iii. Cr2 ... - Toppr",
+      "url": "https://www.toppr.com/ask/question/3-write-the-electronic-configuration-ofi-mn-ii-fe3iii-cr2-iv-znmention-the-number-of/",
+      "snippet": "Click here👆to get an answer to your question ️ 3 write the electronic configuration ofi mn ii fe3iii cr2 iv znmention the number of"
+    }
+  ]
+}

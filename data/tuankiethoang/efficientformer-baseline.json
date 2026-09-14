@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tuankiethoang/efficientformer-baseline",
+  "slug": "tuankiethoang-efficientformer-baseline",
+  "author": "tuankiethoang",
+  "url": "https://huggingface.co/tuankiethoang/efficientformer-baseline",
+  "created_at": "2026-09-14T09:56:07.000Z",
+  "updated_at": "2026-09-14T09:56:12.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - Miasto i Gmina Pułtusk",
+      "url": "https://pultusk.pl/",
+      "snippet": "Powiat Pułtuski oraz Gmina Pułtusk serdecznie zapraszają mieszkańców na spacer dendrologiczny, podczas którego uczestnicy …"
+    },
+    {
+      "title": "Pułtusk wiadomości, Portal informacyjny Pułtuska i okolic - pultusk24.pl",
+      "url": "https://pultusk24.pl/",
+      "snippet": "Obchody 106. rocznicy Bitwy Warszawskiej przy pomniku Witosa. 15 sierpnia w Pułtusku."
+    },
+    {
+      "title": "pultuszczak.pl - Tygodnik Pułtuski",
+      "url": "https://www.pultuszczak.pl/",
+      "snippet": "Zamówiono już 250 sztuk www.polsatnews.pl Ostra wymiana zdań w studiu, poszło o raport. \"Bzdury pani opowiada\" …"
+    },
+    {
+      "title": "BIP Urząd Miejski w Pułtusku",
+      "url": "https://bip.pultusk.pl/?lang=PL",
+      "snippet": "Nr 43/2026 Burmistrza Miasta Pułtusk z dnia 2 września 2026 r. zmieniające zarządzenie w sprawie podziału wydziałów, referatów i …"
+    },
+    {
+      "title": "Pułtusk wSieci: wiadomości z Pułtuska i Powiatu Pułtuskiego - wpu24.pl",
+      "url": "https://wpu24.pl/pl/",
+      "snippet": "Ale jest potentatem Internetowym. Naliczyłem pięć portali działających w mieście i powiecie - pultusk.pl, wpu24.pl, pultuszczak.pl, …"
+    }
+  ]
+}

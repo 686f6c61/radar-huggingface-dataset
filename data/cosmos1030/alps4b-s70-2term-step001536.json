@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "cosmos1030/alps4b-s70-2term-step001536",
+  "slug": "cosmos1030-alps4b-s70-2term-step001536",
+  "author": "cosmos1030",
+  "url": "https://huggingface.co/cosmos1030/alps4b-s70-2term-step001536",
+  "created_at": "2026-09-14T02:13:06.000Z",
+  "updated_at": "2026-09-14T02:14:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404646,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adobe: Creative, marketing and document management solutions",
+      "url": "https://www.adobe.com/?msockid=1681f27d84f46c1e185ae5a985006dcc",
+      "snippet": "Adobe is changing the world through digital experiences. We help our customers create, deliver and optimize content and applications."
+    },
+    {
+      "title": "Adobe：创意、营销和文档管理解决方案",
+      "url": "https://www.adobe.com/cn/?msockid=1681f27d84f46c1e185ae5a985006dcc",
+      "snippet": "使用Adobe图像处理手机App，开启令人惊叹的创作 免费下载 Lightroom Mobile 免费下载Photoshop Express 使用Adobe手机应用程序 …"
+    },
+    {
+      "title": "Download Adobe Acrobat Reader: Free PDF viewer",
+      "url": "https://get.adobe.com/reader/",
+      "snippet": "Download free Adobe Acrobat Reader software for your Windows, Mac OS and Android devices to view, print, and comment on PDF …"
+    },
+    {
+      "title": "Adobe Account",
+      "url": "https://account.adobe.com/",
+      "snippet": "Manage your Adobe Account profile, password, security options, product and service subscriptions, privacy settings, and …"
+    },
+    {
+      "title": "Adobe Acrobat Reader (無料の PDF ビューア) をダウンロード",
+      "url": "https://get.adobe.com/jp/reader/otherversions/",
+      "snippet": "Windows、Mac OS、Android デバイス向けの無料の Adobe Acrobat Reader ソフトウェアをダウンロードし、PDF ドキュメントの …"
+    }
+  ]
+}

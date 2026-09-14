@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "maxbhartman/anchor-removal-mmlu-tau0.6-attention-k20-seed44",
+  "slug": "maxbhartman-anchor-removal-mmlu-tau0-6-attention-k20-seed44",
+  "author": "maxbhartman",
+  "url": "https://huggingface.co/maxbhartman/anchor-removal-mmlu-tau0.6-attention-k20-seed44",
+  "created_at": "2026-09-14T01:14:44.000Z",
+  "updated_at": "2026-09-14T01:15:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6442805855,
+  "storage_human": "6.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Report data or content errors on Google Maps",
+      "url": "https://support.google.com/maps/answer/3094088?hl=en",
+      "snippet": "Report spam or bad data Any illegal, offensive, fraudulent, or malicious data on Google Maps is considered as spam. Users found to …"
+    },
+    {
+      "title": "Download areas & navigate offline in Google Maps",
+      "url": "https://support.google.com/maps/answer/6291838?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "Use offline maps in Google Maps After you download an area, use the Google Maps app just like you normally would. If your internet …"
+    },
+    {
+      "title": "Menelusuri menurut lintang & bujur di Google Maps",
+      "url": "https://support.google.com/maps/answer/18539?hl=id&co=GENIE.Platform%3DDesktop",
+      "snippet": "Di komputer, buka Google Maps. Di peta, klik kanan tempat atau area. Jendela pop-up akan muncul. Di bagian atas, Anda dapat …"
+    },
+    {
+      "title": "Use navigation in Google Maps",
+      "url": "https://support.google.com/maps/answer/3273406?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "Use navigation in Google Maps To get easy, turn-by-turn navigation to places, use the Google Maps app. Maps shows you directions …"
+    },
+    {
+      "title": "Google Maps - Reddit",
+      "url": "https://www.reddit.com/r/GoogleMaps/",
+      "snippet": "r/GoogleMaps is participating in ongoing protests regarding changes to Reddit's API accessibility. The subreddit may reopen at some …"
+    }
+  ]
+}

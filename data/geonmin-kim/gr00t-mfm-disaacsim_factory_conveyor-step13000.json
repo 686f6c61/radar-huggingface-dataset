@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "geonmin-kim/GR00T-Mfm-DIsaacsim_factory_conveyor-step13000",
+  "slug": "geonmin-kim-gr00t-mfm-disaacsim_factory_conveyor-step13000",
+  "author": "geonmin-kim",
+  "url": "https://huggingface.co/geonmin-kim/GR00T-Mfm-DIsaacsim_factory_conveyor-step13000",
+  "created_at": "2026-09-14T01:16:06.000Z",
+  "updated_at": "2026-09-14T01:17:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576225672,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HP Color LaserJet Pro MFP M283fdw Software and Driver Downloads | HP …",
+      "url": "https://support.hp.com/us-en/drivers/hp-color-laserjet-pro-m282-m285-multifunction-printer-series/model/29448718",
+      "snippet": "This is HP’s official website to download the correct drivers free of cost for Windows and Mac."
+    },
+    {
+      "title": "HP Color LaserJet Pro MFP M283fdw Software and Driver Downloads | HP …",
+      "url": "https://support.hp.com/in-en/drivers/hp-color-laserjet-pro-m479-m285-multifunction-printer-series/model/29448718",
+      "snippet": "Download the latest drivers, firmware, and software for your HP Color LaserJet Pro MFP M283fdw. This is HP’s official website to …"
+    },
+    {
+      "title": "HP Color LaserJet Pro MFP M283fdw Setup | HP® Support",
+      "url": "https://support.hp.com/us-en/printer-setup/hp-color-laserjet-pro-m282-m285-multifunction-printer-series/29448786/model/29448718",
+      "snippet": "Learn how to setup your HP Color LaserJet Pro MFP M283fdw. These steps include unpacking, installing ink cartridges & software. …"
+    },
+    {
+      "title": "HP Color LaserJet Pro MFP M283fdw | HP® Support",
+      "url": "https://h20180.www2.hp.com/apps/Nav?h_product=29448718&h_lang=en&h_pagetype=S-001",
+      "snippet": "Find support and troubleshooting info including software, drivers, specs, and manuals for your HP Color LaserJet Pro MFP M283fdw."
+    },
+    {
+      "title": "HP Color LaserJet Pro MFP M283fdw",
+      "url": "https://support.hp.com/emea_middle_east-ar/drivers/hp-color-laserjet-pro-m282-m285-multifunction-printer-series/model/29448718",
+      "snippet": "هذا هو موقع HP الإلكتروني الرسمي لتنزيل برامج التشغيل الصحيحة مجانًا لنظامَي التشغيل Windows وMac."
+    }
+  ]
+}

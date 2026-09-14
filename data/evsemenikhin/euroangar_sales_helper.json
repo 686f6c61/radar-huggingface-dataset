@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "evsemenikhin/EUROANGAR_SALES_HELPER",
+  "slug": "evsemenikhin-euroangar_sales_helper",
+  "author": "evsemenikhin",
+  "url": "https://huggingface.co/evsemenikhin/EUROANGAR_SALES_HELPER",
+  "created_at": "2026-09-14T09:58:26.000Z",
+  "updated_at": "2026-09-14T09:58:26.000Z",
+  "license": "llama3.3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:llama3.3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Teams Blog | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/category/microsoftteams/blog/microsoftteamsblog",
+      "snippet": "Welcome to the Microsoft Teams Blog! Learn best practices, news, and trends directly from the team behind Microsoft Teams."
+    },
+    {
+      "title": "New Teams - Backgrounds Folder | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/discussions/microsoftteams/new-teams---backgrounds-folder/3960752",
+      "snippet": "Jun 28, 2020 · Microsoft Teams Use this space for how-to discussions and sharing best practices. If you're looking for technical …"
+    },
+    {
+      "title": "如何用teams发送会议邀请 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/363872eceadf4b2f4aa16f7c.html",
+      "snippet": "Mar 31, 2023 · 如何用teams发送会议邀请,当我们的team升级后就可以使用日历功能进行会议安排了，下面我们就来学习一下如何 …"
+    },
+    {
+      "title": "teams如何添加联系人 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/a948d6514735af4b2ccd2e50.html",
+      "snippet": "May 20, 2023 · teams如何添加联系人,学习软件的使用怎么添加新的联系人，方便下次联系时可以直接在联系人中找到。"
+    },
+    {
+      "title": "MY FIX!! MS TEAMS says I'm offline when I'm connected to my network ...",
+      "url": "https://techcommunity.microsoft.com/discussions/microsoftteams/my-fix-ms-teams-says-im-offline-when-im-connected-to-my-network-with-no-issues/3662105",
+      "snippet": "Oct 25, 2022 · My Teams on my laptop kept telling me I was \"offline\" even though I was connected with a strong signal to my wi-fi, I …"
+    }
+  ]
+}

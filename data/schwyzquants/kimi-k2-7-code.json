@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "schwyzquants/Kimi-K2.7-Code",
+  "slug": "schwyzquants-kimi-k2-7-code",
+  "author": "schwyzquants",
+  "url": "https://huggingface.co/schwyzquants/Kimi-K2.7-Code",
+  "created_at": "2026-09-14T09:40:05.000Z",
+  "updated_at": "2026-09-14T09:40:05.000Z",
+  "license": "modified-mit",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kimi_k25",
+    "feature-extraction",
+    "compressed-tensors",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1026879376368,
+  "parameters_human": "1026.88B",
+  "storage_bytes": 595204651032,
+  "storage_human": "595.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Creative Grade 7 Entrepreneurs Day Ideas in South Africa",
+      "url": "https://distinctionpass.com/creative-grade-7-entrepreneurs-day-ideas-in-south-africa/",
+      "snippet": "Jul 22, 2024 · By engaging in these creative and relatable business ideas, Grade 7 students in South Africa can develop essential …"
+    },
+    {
+      "title": "Entrepreneurs Day Ideas Grade 7 - Pinterest",
+      "url": "https://www.pinterest.com/ideas/entrepreneurs-day-ideas-grade-7/899764755481/",
+      "snippet": "Find and save ideas about entrepreneurs day ideas grade 7 on Pinterest."
+    },
+    {
+      "title": "Entrepreneurs Day Ideas for SA Schools I Blog - Twinkl",
+      "url": "https://www.twinkl.co.za/blog/fun-entrepreneurs-day-ideas-for-sa-schools",
+      "snippet": "May 13, 2024 · We’ve got some Entrepreneurs Day ideas for Grade 1 to Entrepreneurs Day ideas for Grade 7, as well as …"
+    },
+    {
+      "title": "Entrepreneurship - Grade 7 - Economic and Management Science",
+      "url": "https://www.twinkl.co.za/resources/economic-and-management-sciences-senior-phase-south-africa-suid-afrika/grade-7-economic-and-management-sciences-senior-phase-south-africa-suid-afrika/entrepreneurship-grade-7-economic-and-management-sciences-senior-phase-south-africa-suid-afrika",
+      "snippet": "Welcome to our range of Grade 7 entrepreneurship resources! Everything is aligned to the CAPS curriculum. We cover starting a …"
+    },
+    {
+      "title": "Entrepreneursdag: 'n Voorbeeld van Sukses en Kreatiwiteit in Graad 7",
+      "url": "https://www.studocu.com/en-za/document/despatch-high-school/life-orientation/entreprenuersdag/118978318",
+      "snippet": "On Studocu you find all the lecture notes, summaries and study guides you need to pass your exams with better grades."
+    }
+  ]
+}

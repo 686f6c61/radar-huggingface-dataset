@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-q4v2-iid16-s2",
+  "slug": "agurung-cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-q4v2-iid16-s2",
+  "author": "agurung",
+  "url": "https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-q4v2-iid16-s2",
+  "created_at": "2026-09-14T01:15:56.000Z",
+  "updated_at": "2026-09-14T09:46:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "openrlhf",
+    "grpo",
+    "reinforcement-learning",
+    "code-generation",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 44125895250,
+  "storage_human": "44.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.fr : livres, DVD, jeux vidéo, musique, high-tech, informatique ...",
+      "url": "https://www.amazon.fr/",
+      "snippet": "Achat et vente en ligne parmi des millions de produits en stock. Livraison gratuite à partir de 25€. Vos articles à petits prix : culture, …"
+    },
+    {
+      "title": "Amazon.fr : Amazon Prime",
+      "url": "https://www.amazon.fr/amazonprime",
+      "snippet": "Serai-je remboursé ? Si vous avez souscrit à Prime directement sur le site Amazon, vous pouvez résilier votre abonnement à tout …"
+    },
+    {
+      "title": "Amazon.fr : Votre Compte",
+      "url": "https://www.amazon.fr/compte/s?k=votre+compte",
+      "snippet": "Amazon.fr: votre compte Achetez les produits des petites ou moyennes entreprises propriétaires de marques et artisans de votre …"
+    },
+    {
+      "title": "Seller Central FR - Devenez un Vendeur Amazon Dès Aujourd’Hui",
+      "url": "https://sellercentral.amazon.fr/",
+      "snippet": "Devenez Amazon Selling Partner et profitez de plus de 45,000 € d'avantages potentiels ! Lancez votre marque avec Amazon France …"
+    },
+    {
+      "title": "Amazon.fr",
+      "url": "https://www.amazon.fr/gp/css/your-account-access",
+      "snippet": "Accédez à votre compte Amazon.fr pour gérer vos commandes, paramètres et abonnements facilement."
+    }
+  ]
+}

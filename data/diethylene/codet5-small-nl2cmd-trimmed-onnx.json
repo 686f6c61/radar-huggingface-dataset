@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "diethylene/codet5-small-nl2cmd-trimmed-onnx",
+  "slug": "diethylene-codet5-small-nl2cmd-trimmed-onnx",
+  "author": "diethylene",
+  "url": "https://huggingface.co/diethylene/codet5-small-nl2cmd-trimmed-onnx",
+  "created_at": "2026-09-14T09:55:18.000Z",
+  "updated_at": "2026-09-14T10:02:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "optimum",
+  "languages": [],
+  "tags": [
+    "optimum",
+    "onnx",
+    "t5",
+    "codet5",
+    "nl2cmd",
+    "translation",
+    "base_model:diethylene/codet5-small-nl2cmd-trimmed",
+    "base_model:quantized:diethylene/codet5-small-nl2cmd-trimmed",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 645024456,
+  "storage_human": "645 MB",
+  "base_model": "diethylene/codet5-small-nl2cmd-trimmed",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - ASSIDIM",
+      "url": "https://www.assidim.it/",
+      "snippet": "Sep 1, 2026 · ASSIDIM è un’associazione senza fini di lucro che offre soluzioni di welfare aziendale integrate per tutelare dipendenti …"
+    },
+    {
+      "title": "Area riservata - ASSIDIM",
+      "url": "https://www.assidim.it/area-riservata/",
+      "snippet": "L'area riservata di ASSIDIM è uno spazio digitale dedicato alle aziende associate e alle persone assistite per gestire pratiche di …"
+    },
+    {
+      "title": "ASSIDIM - Area Riservata MARSH",
+      "url": "https://areariservata.assidim.it/Compagnia/Login.asp",
+      "snippet": "ASSIDIM, associazione senza fini di lucro costituita per promuovere, coordinare e prestare in forma diretta o indiretta coperture …"
+    },
+    {
+      "title": "ASSIDIM - Dichiarazione per Estero",
+      "url": "https://areariservata.assidim.it/AssistitiSanitaria/PersonalArea/PDF/Ita.asp",
+      "snippet": "OVERLAND INVESTIGAZIONI Errore nella convalida delle credenziali! Riprovare a compilare il modulo di partenza."
+    },
+    {
+      "title": "Home - ASSIDIM",
+      "url": "https://www.assidim.it/en/",
+      "snippet": "We offer tailor-made assistance solutions for companies and organizations of all sectors and sizes for the benefit of their employees …"
+    }
+  ]
+}

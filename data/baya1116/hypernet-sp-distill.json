@@ -5,7 +5,7 @@
   "author": "baya1116",
   "url": "https://huggingface.co/baya1116/hypernet-sp-distill",
   "created_at": "2026-05-23T06:15:31.000Z",
-  "updated_at": "2026-09-12T22:34:35.000Z",
+  "updated_at": "2026-09-14T08:27:22.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,7 +27,7 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "neemon/anlp-a2-part2-adamw",
+  "slug": "neemon-anlp-a2-part2-adamw",
+  "author": "neemon",
+  "url": "https://huggingface.co/neemon/anlp-a2-part2-adamw",
+  "created_at": "2026-09-14T10:19:26.000Z",
+  "updated_at": "2026-09-14T10:20:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "vi",
+    "ja"
+  ],
+  "tags": [
+    "pytorch",
+    "mixture-of-experts",
+    "translation",
+    "from-scratch",
+    "en",
+    "vi",
+    "ja",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 166349110,
+  "storage_human": "166 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "登录codex的时候弹出电话号码验证怎么办？ - 知乎",
+      "url": "https://www.zhihu.com/question/2031458671385911868",
+      "snippet": "显示“电话号码是必填项”，用中国的手机号提示手机号不支持，怎么办"
+    },
+    {
+      "title": "1985-11-24 - Orange Coast Pilot - IIS Windows Server",
+      "url": "https://archive.newportbeachlibrary.org/NBPL/DocView.aspx?id=1295655&dbid=0&repo=CNB",
+      "snippet": "01.06.2018 ... ... A2 Nation Last year's optimism re- garding artlflclal hearts has faded as rapldly as Wiiiiam Schroeder's health.JM Callfornia Supreme Court ..."
+    },
+    {
+      "title": "国内如何使用whatsapp？ - 知乎",
+      "url": "https://www.zhihu.com/question/2052047431735550018",
+      "snippet": "Jun 21, 2026 · 直接使用 WhatsApp 往往会出现无法连接、收不到消息或无法语音通话的情况，因为 WhatsApp 在国内网络环境下受到 …"
+    },
+    {
+      "title": "1979-09-07 - Orange Coast Pilot - IIS Windows Server",
+      "url": "https://archive.newportbeachlibrary.org/NBPL/DocView.aspx?id=1235715&dbid=0&repo=CNB",
+      "snippet": "30.10.2017 ... AI) ~~ -----r----~~~-~~~~~~~+.-~~~~~~-- -----ft' leagues 10 go along ... His interests in life included Boy Scouting , ship-model building and ..."
+    },
+    {
+      "title": "怎样在whatsapp中加好友-百度经验",
+      "url": "https://jingyan.baidu.com/article/c33e3f483b65d5ea15cbb516.html",
+      "snippet": "May 6, 2019 · 怎样在whatsapp中加好友,使用WhatA的小伙伴们，知不知道如何在该软件中添加好友呢，接下来跟小编一起去看看吧。"
+    }
+  ]
+}

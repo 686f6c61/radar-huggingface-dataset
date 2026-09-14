@@ -5,7 +5,7 @@
   "author": "mlx-community",
   "url": "https://huggingface.co/mlx-community/Ornith-1.5-9B-OptiQ-4bit",
   "created_at": "2026-08-25T22:50:28.000Z",
-  "updated_at": "2026-08-25T22:51:05.000Z",
+  "updated_at": "2026-09-14T04:11:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -38,7 +38,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 3132,
+  "downloads_30d": 3211,
   "trending_score": 0,
   "parameters": 8953801728,
   "parameters_human": "8.95B",

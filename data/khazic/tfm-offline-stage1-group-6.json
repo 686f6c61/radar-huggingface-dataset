@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "khazic/tfm-offline-stage1-group-6",
+  "slug": "khazic-tfm-offline-stage1-group-6",
+  "author": "khazic",
+  "url": "https://huggingface.co/khazic/tfm-offline-stage1-group-6",
+  "created_at": "2026-09-14T02:00:33.000Z",
+  "updated_at": "2026-09-14T08:52:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3065346579,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Track & trace: Volg je pakket of poststuk | PostNL",
+      "url": "https://www.postnl.nl/ontvangen/post-ontvangen/track-en-trace/",
+      "snippet": "Via track & trace volg je eenvoudig je pakket of aangetekende brief. Vul je barcode en postcode in en weet waar de zending is. Volg …"
+    },
+    {
+      "title": "ALLES-IN-ÉÉN PAKKET TRACKING | 17TRACK",
+      "url": "https://www.17track.net/nl",
+      "snippet": "17TRACK is het meest krachtige en uitgebreide zendingen traceer platform. Het bied je de mogelijkheid de zendingen van meer dan …"
+    },
+    {
+      "title": "Volg je pakket met track en trace - DHL eCommerce",
+      "url": "https://www.dhlecommerce.nl/nl/consument/support/ontvangen/track-en-trace",
+      "snippet": "Benieuwd waar je pakketje uithangt? Je weet het zo. Ga op deze website naar track en trace. Met het zendingsnummer dat je van …"
+    },
+    {
+      "title": "Track en Trace - DHL Express",
+      "url": "https://www.dhlexpress.nl/nl/consument/track-trace",
+      "snippet": "Volg je pakket op de voet. Snel en simpel, dag en nacht. Dankzij track en trace zie je precies welke weg het pakket aflegt. En …"
+    },
+    {
+      "title": "(@jsehu2025) • Instagram photos and videos",
+      "url": "https://www.instagram.com/jsehu2025/",
+      "snippet": "445 Followers, 1,430 Following, 130 Posts - @jsehu2025 on Instagram: \"\""
+    }
+  ]
+}

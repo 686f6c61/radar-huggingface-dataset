@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "juliarjoj/mae-checkpoint68",
+  "slug": "juliarjoj-mae-checkpoint68",
+  "author": "juliarjoj",
+  "url": "https://huggingface.co/juliarjoj/mae-checkpoint68",
+  "created_at": "2026-09-14T09:44:34.000Z",
+  "updated_at": "2026-09-14T09:44:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HEAŞ Kurumsal Web Sitesi",
+      "url": "https://www.sgairport.com/",
+      "snippet": "Geleceğin havalimanı vizyonu doğrultusunda hayata geçirilen yatırımlar, projeler ve faaliyetler."
+    },
+    {
+      "title": "Hakkımızda – HEAŞ Kurumsal Web Sitesi",
+      "url": "https://www.sgairport.com/hakkimizda/",
+      "snippet": "Sabiha Gökçen Uluslararası Havalimanı’nın meydan otoritesi olarak; ulusal ve uluslararası havacılık mevzuatına tam uyumla, …"
+    },
+    {
+      "title": "HEAŞ – Havaalanı İşletme ve Havacılık Endüstrileri A.Ş.",
+      "url": "https://tr.linkedin.com/company/heasresmi",
+      "snippet": "Web Sitesi http://heas.com.tr HEAŞ – Havaalanı İşletme ve Havacılık Endüstrileri A.Ş. için harici link"
+    },
+    {
+      "title": "Kullanıcı Girişi - heas.hrpeak.com",
+      "url": "https://heas.hrpeak.com/login",
+      "snippet": "Ana Sayfa Açık Pozisyonlar Değerlendirme Merkezi Yeni Aday Kullanıcı Girişi"
+    },
+    {
+      "title": "HEAŞ Kart Yönetim Uygulaması",
+      "url": "https://hkts.sgairport.com/HeasEE7/",
+      "snippet": "Giriş / Kart Dönemi : 2025 / 20260618 Kullanıcı Adı Şifre"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jiankimr/pi05_libero10_ipec_seed42_step10000",
+  "slug": "jiankimr-pi05_libero10_ipec_seed42_step10000",
+  "author": "jiankimr",
+  "url": "https://huggingface.co/jiankimr/pi05_libero10_ipec_seed42_step10000",
+  "created_at": "2026-09-14T11:40:29.000Z",
+  "updated_at": "2026-09-14T11:41:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "pi0.5",
+    "libero",
+    "libero-10",
+    "robotics",
+    "vla",
+    "jax",
+    "dataset:IPEC-COMMUNITY/libero_10_no_noops_1.0.0_lerobot",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12441239631,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    },
+    {
+      "title": "信用卡上的有效期 mm yy 怎么填？ - 知乎",
+      "url": "https://www.zhihu.com/question/505529599",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Eidosper - 知乎",
+      "url": "https://www.zhihu.com/people/eidosper",
+      "snippet": "2019年，一项研究 [1]发现，人类说话速度大约是每秒39bit。这项实验包括英语、汉语在内的17种语言。不同语言在说话时，信息输出 …"
+    },
+    {
+      "title": "“well noted”应用在什么语境下？_百度知道",
+      "url": "https://zhidao.baidu.com/question/629898147077229164.html",
+      "snippet": "“well noted”应用在什么语境下？“well noted”应用主要运用在三个语境下：1、一般客户提出要求或者对提问作出回答后，可适用此短语 …"
+    },
+    {
+      "title": "Apple Pay如何默认或切换银行卡-百度经验",
+      "url": "https://jingyan.baidu.com/article/454316ab690f00f7a6c03a42.html",
+      "snippet": "Feb 19, 2016 · Apple Pay如何默认或切换银行卡,Ale公司于2月18日在中国正式开通支付功能。对于添加多个不同银行卡如何切换默认 …"
+    }
+  ]
+}

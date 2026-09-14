@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "khazic/tfm-offline-stage1-group-7",
+  "slug": "khazic-tfm-offline-stage1-group-7",
+  "author": "khazic",
+  "url": "https://huggingface.co/khazic/tfm-offline-stage1-group-7",
+  "created_at": "2026-09-14T02:05:38.000Z",
+  "updated_at": "2026-09-14T08:52:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2788820933,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to change behaviour of TDBNavigator component?",
+      "url": "https://stackoverflow.com/questions/536382/how-to-change-behaviour-of-tdbnavigator-component",
+      "snippet": "Feb 12, 2009 · I would like to change the behaviour of the insert button on the standard DBNavigator bar, from a dataset insert to …"
+    },
+    {
+      "title": "IntelliJ IDEA 10 generate entity (POJO) from DB model",
+      "url": "https://stackoverflow.com/questions/5259276/intellij-idea-10-generate-entity-pojo-from-db-model",
+      "snippet": "Mar 10, 2011 · How can I generate entity (POJO) from database model using IntelliJ IDEA 10. I create \"Data source\" in IntelliJ but I …"
+    },
+    {
+      "title": "怎么在电脑中打开ISO文件 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/91f5db1b04b9b71c7f05e337.html",
+      "snippet": "Feb 14, 2018 · 怎么在电脑中打开ISO文件,ISO文件是光盘映射文件，是为了方便直接刻录光盘。如果想在Widow系统的电脑上打开ISO …"
+    },
+    {
+      "title": "android - Как подключиться к DB SQLite через Database Navigator от ...",
+      "url": "https://ru.stackoverflow.com/questions/803692/%d0%9a%d0%b0%d0%ba-%d0%bf%d0%be%d0%b4%d0%ba%d0%bb%d1%8e%d1%87%d0%b8%d1%82%d1%8c%d1%81%d1%8f-%d0%ba-db-sqlite-%d1%87%d0%b5%d1%80%d0%b5%d0%b7-database-navigator-%d0%be%d1%82-jetbrains",
+      "snippet": "Mar 23, 2018 · 1) Установил плагин (Database Navigator) 2) Открываю вкладку DB browser 3) Потом нажимаю на тот плюс в …"
+    },
+    {
+      "title": "python - Настройка плагина Database Navigator в PyCharm. Ошибка ...",
+      "url": "https://ru.stackoverflow.com/questions/858471/%d0%9d%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%bf%d0%bb%d0%b0%d0%b3%d0%b8%d0%bd%d0%b0-database-navigator-%d0%b2-pycharm-%d0%9e%d1%88%d0%b8%d0%b1%d0%ba%d0%b0-database-information-in",
+      "snippet": "Jul 21, 2018 · Хочу использовать плагин Database Navigator в PyCharm. Установил плагин из репозитория, рестартнул IDE, …"
+    }
+  ]
+}

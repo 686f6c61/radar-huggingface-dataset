@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "7ven7o/Qwen3.5-0.8B-Base-GGUF",
+  "slug": "7ven7o-qwen3-5-0-8b-base-gguf",
+  "author": "7ven7o",
+  "url": "https://huggingface.co/7ven7o/Qwen3.5-0.8B-Base-GGUF",
+  "created_at": "2026-09-14T01:53:44.000Z",
+  "updated_at": "2026-09-14T01:54:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:Qwen/Qwen3.5-0.8B-Base",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 772845888,
+  "parameters_human": "772.8M",
+  "storage_bytes": 516778528,
+  "storage_human": "517 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FUN - Se former en liberté - FUN MOOC",
+      "url": "https://www.fun-mooc.fr/",
+      "snippet": "Des cours en ligne gratuits pour découvrir, apprendre, progresser et réussir avec des experts des meilleurs établissements …"
+    },
+    {
+      "title": "FUN - Connexion à votre compte FUN-MOOC",
+      "url": "https://lms.fun-mooc.fr/login",
+      "snippet": "L'excellence de l'enseignement supérieur pour des cours en ligne, gratuits et ouverts à tous"
+    },
+    {
+      "title": "France Université Numérique - FUN MOOC",
+      "url": "https://www.fun-mooc.fr/fr/etablissements/fun/",
+      "snippet": "FUN est désormais un Groupement d'Intérêt Public (GIP) co-financé par le Ministère de l’enseignement supérieur, de la recherche et …"
+    },
+    {
+      "title": "FUN MOOC - Bienvenue | Studio",
+      "url": "https://studio.fun-mooc.fr/",
+      "snippet": "L’apprentissage réclame plus que des cours magistraux Studio vous permet de tisser vos contenus de façon à renforcer …"
+    },
+    {
+      "title": "FUN - S'inscrire à FUN-MOOC",
+      "url": "https://lms.fun-mooc.fr/register",
+      "snippet": "L'excellence de l'enseignement supérieur pour des cours en ligne, gratuits et ouverts à tous"
+    }
+  ]
+}

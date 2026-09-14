@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "khazic/tfm-offline-stage1-group-4",
+  "slug": "khazic-tfm-offline-stage1-group-4",
+  "author": "khazic",
+  "url": "https://huggingface.co/khazic/tfm-offline-stage1-group-4",
+  "created_at": "2026-09-14T01:51:31.000Z",
+  "updated_at": "2026-09-14T09:23:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3946392024,
+  "storage_human": "3.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Riou Glass",
+      "url": "https://www.riouglass.com/",
+      "snippet": "Riou Glass, le spécialiste français de la conception de solutions et produits verriers intelligents pour le bien-être, le confort et la sécurité."
+    },
+    {
+      "title": "French manufacturer of custom glass and glazing - Riou Glass",
+      "url": "https://www.riouglass.com/en",
+      "snippet": "Riou Glass, the French specialist in the design of intelligent glass solutions and products for well-being, comfort and safety."
+    },
+    {
+      "title": "On se croise tous les jours. - Riou Glass",
+      "url": "https://www.riouglass.com/a-propos",
+      "snippet": "Riou Glass au cœur d’une initiative plébiscitée Le fabricant de vitrages Riou Glass a créé la société MENREC (spécialiste du …"
+    },
+    {
+      "title": "Our glass by type or usage - Riou Glass",
+      "url": "https://www.riouglass.com/en/our-glass",
+      "snippet": "Discover all our smart glass solutions and products for well-being, comfort, and security, classified by type, use, and application."
+    },
+    {
+      "title": "Riou Glass Lvi | Riou Glass",
+      "url": "https://www.riouglass.com/entreprises/riou-glass-lvi",
+      "snippet": "contact@riouglass.com Copyright Riou Glass Mentions légales & Conditions générales"
+    }
+  ]
+}

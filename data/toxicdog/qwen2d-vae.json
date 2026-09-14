@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "toxicdog/Qwen2D-VAE",
+  "slug": "toxicdog-qwen2d-vae",
+  "author": "toxicdog",
+  "url": "https://huggingface.co/toxicdog/Qwen2D-VAE",
+  "created_at": "2026-09-14T09:43:20.000Z",
+  "updated_at": "2026-09-14T09:43:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "base_model:Qwen/Qwen-Image",
+    "base_model:finetune:Qwen/Qwen-Image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 178418860,
+  "storage_human": "178 MB",
+  "base_model": "Qwen/Qwen-Image, circlestone-labs/Anima",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KOReader翻译切换器，已增加免费模型 - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/thread-2088694-1-1.html",
+      "snippet": "Jan 26, 2026 · 因用KOReader读英文，翻译功能一直用不了，写了个切换器，目前只做了DeepL（免费，但是注册很难）DeepSeek（ …"
+    },
+    {
+      "title": "DeepL - 德国硬核翻译工具 - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/thread-1211648-1-1.html",
+      "snippet": "Jul 5, 2020 · 常在网上混的人，大多会有自己喜欢的翻译工具。记得刚出校门时，Google翻译是史上最好的翻译工具之一。以至于其后 …"
+    },
+    {
+      "title": "Recommending Deepl Translator to be included in Edge Browser",
+      "url": "https://techcommunity.microsoft.com/discussions/edgeinsiderdiscussions/recommending-deepl-translator-to-be-included-in-edge-browser/775211",
+      "snippet": "Jul 26, 2019 · Deepl translator is one of the best Translating tools used in Europe for European languages. As I have been using this …"
+    },
+    {
+      "title": "Project Professional - Calculate task duration with fixed work duration ...",
+      "url": "https://techcommunity.microsoft.com/discussions/project/project-professional---calculate-task-duration-with-fixed-work-duration-and-vari/3683224",
+      "snippet": "Nov 23, 2022 · Jwilwer This is what I get when I input your last scenario. I do find that sometimes when running successive scenarios …"
+    },
+    {
+      "title": "翻译工具推荐-Deepl - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/thread-1153766-1-1.html",
+      "snippet": "Apr 16, 2020 · 推荐一个翻译工具，号称谷歌翻译碾压者/信达雅翻译本人/外语学习最佳伴侣DeepL是一款来自德国的在线翻译工具，早 …"
+    }
+  ]
+}

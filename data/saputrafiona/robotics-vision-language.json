@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Saputrafiona/robotics-vision-language",
+  "slug": "saputrafiona-robotics-vision-language",
+  "author": "Saputrafiona",
+  "url": "https://huggingface.co/Saputrafiona/robotics-vision-language",
+  "created_at": "2026-09-14T01:45:03.000Z",
+  "updated_at": "2026-09-14T01:45:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "robotics-vision-language",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "شات صبايا بغداد , دردشة صبايا بغداد",
+      "url": "http://www.sabiabaghdad.com/",
+      "snippet": "دردشة صبايا بغداد هي دردشة عربية يتجمع فيها الأناس من مختلف انحاء العالم وتتيح لك الفرصة اللتقاء باصدقاء جدد من مختلف انحاء العالم بالاضافة الى تجربة الدردشة معهم صوت وصورة بتقنيات …"
+    },
+    {
+      "title": "شات صبايا بغداد , دردشة صبايا بغداد",
+      "url": "http://www.sabiabaghdad.com/chat/",
+      "snippet": "عزيزي الزائر يمكنك الآن تحميل تطبيق دردشة صبايا بغداد لهواتف الاندرويد عبر منصة جوجل بلاي"
+    },
+    {
+      "title": "شات صبايا بغداد , دردشة صبايا بغداد , shat sabaya",
+      "url": "https://ar-chat.com/bakdidsabaya/",
+      "snippet": "أهلاً وسهلاً بكم في شات صبايا بغداد , دردشة صبايا بغداد قابل الآن المزيد من الأشخاص عبر خدمه الدردشه الكتابيه شاهد أحبابك وأصدقائك نتمنى لكم أجمل الأوقات معنا تسجيل عضوية دخول بعضوية …"
+    },
+    {
+      "title": "شات صبايا بغداد",
+      "url": "https://www.iraq-5.com/",
+      "snippet": "صبايا بغداد,دردشة صبايا بغداد,شات صبايا بغداد,جات صبايا بغداد,شات صبايا,شات صبايا"
+    },
+    {
+      "title": "دردشة صبايا بغداد",
+      "url": "https://sabaya-baghdad.iraq-5.com/",
+      "snippet": "صبايا بغداد حاتات بغداد عسل بغداد صفحات مهمة دردشة صبايا بغداد شات صبايا دردشة صبايا دردشة صبايا بغداد دريم ارت جميع الحقوق محفوظة © صبايا بغداد"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "mewse",
   "url": "https://huggingface.co/mewse/gemma-4-26B-A4B-it-qat-q4_0-unquantized-heretic-ara",
   "created_at": "2026-08-19T08:23:17.000Z",
-  "updated_at": "2026-08-19T19:18:18.000Z",
+  "updated_at": "2026-09-13T20:17:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -14,7 +14,6 @@
   "tags": [
     "transformers",
     "safetensors",
-    "gguf",
     "gemma4",
     "image-text-to-text",
     "heretic",
@@ -25,14 +24,13 @@
     "conversational",
     "arxiv:2607.02770",
     "base_model:google/gemma-4-26B-A4B-it",
-    "base_model:quantized:google/gemma-4-26B-A4B-it",
+    "base_model:finetune:google/gemma-4-26B-A4B-it",
     "license:apache-2.0",
     "endpoints_compatible",
-    "region:us",
-    "imatrix"
+    "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 925,
+  "downloads_30d": 957,
   "trending_score": 0,
   "parameters": 25805933872,
   "parameters_human": "25.81B",
@@ -40,7 +38,6 @@
   "storage_human": "66.0 GB",
   "base_model": "google/gemma-4-26B-A4B-it",
   "formats": [
-    "gguf",
     "safetensors"
   ],
   "is_conversational": true,

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "QWDSA12SA/MyAwesomeModel-TestRepository",
+  "slug": "qwdsa12sa-myawesomemodel-testrepository",
+  "author": "QWDSA12SA",
+  "url": "https://huggingface.co/QWDSA12SA/MyAwesomeModel-TestRepository",
+  "created_at": "2026-09-14T11:40:33.000Z",
+  "updated_at": "2026-09-14T11:41:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SKEMA BS | Welcome Pack",
+      "url": "https://welcomepack.skema-bs.fr/Download.aspx",
+      "snippet": "© 2012 SKEMA Business School| Les programmes de SKEMA / SKEMA's programmes| Mentions légales / Legal"
+    },
+    {
+      "title": "SKEMA BS | Welcome Pack",
+      "url": "https://welcomepack.skema-bs.fr/InfosPratiques.aspx?cat=Paris",
+      "snippet": "Mot de passe / Password Mot de passe oublié - Forget password ?"
+    },
+    {
+      "title": "Philippe Chereau, auteur sur SKEMA Knowledge",
+      "url": "https://knowledge.skema-bs.fr/author/philippe-chereau/",
+      "snippet": "Startups and large firms relationships: When both David and Goliath win We all know about the David against Goliath story and the …"
+    },
+    {
+      "title": "Research - SKEMA Knowledge",
+      "url": "https://knowledge.skema-bs.fr/tag/research/",
+      "snippet": "Outrage at Shein — a Western affectation? Are consumers equally “responsible” everywhere in the world?"
+    },
+    {
+      "title": "Le campus brésilien lance un nouveau format de cours : le Nanodegree",
+      "url": "https://www.skema-bs.fr/actualite-skema/le-bresil-lance-le-cours-nanodegree",
+      "snippet": "Le Nanodegree est un nouveau format de cours entièrement en ligne. Il couvre des sujets spécifiques dans des domaines de …"
+    }
+  ]
+}

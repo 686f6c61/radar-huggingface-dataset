@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Mohammed422/invoices-donut-model-v2",
+  "slug": "mohammed422-invoices-donut-model-v2",
+  "author": "Mohammed422",
+  "url": "https://huggingface.co/Mohammed422/invoices-donut-model-v2",
+  "created_at": "2026-09-14T11:34:00.000Z",
+  "updated_at": "2026-09-14T11:40:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vision-encoder-decoder",
+    "image-text-to-text",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 202091960,
+  "parameters_human": "202.1M",
+  "storage_bytes": 1618460976,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft OneDrive",
+      "url": "https://onedrive.live.com/login/",
+      "snippet": "Sign in to Microsoft OneDrive to access your files and collaborate with others securely."
+    },
+    {
+      "title": "Microsoft OneDrive",
+      "url": "https://onedrive.live.com/login/pt-br/",
+      "snippet": "Nenhuma conta? Crie uma! ©2026 Microsoft Política de privacidade"
+    },
+    {
+      "title": "Personal File Sharing & Cloud Storage | Microsoft OneDrive",
+      "url": "https://onedrive.live.com/",
+      "snippet": "Discover OneDrive for secure and convenient file and document sharing. Get personal cloud storage for seamless file sharing with …"
+    },
+    {
+      "title": "OneDrive",
+      "url": "https://onedrive.live.com/picker/accountchooser?load_login=false&devhost={0}&serverhost={0}",
+      "snippet": "Sign in to OneDrive to access and share your files securely from anywhere."
+    },
+    {
+      "title": "Create your Microsoft account - Microsoft OneDrive",
+      "url": "https://onedrive.live.com/signup",
+      "snippet": "Use private browsing if this is not your device. Learn more"
+    }
+  ]
+}

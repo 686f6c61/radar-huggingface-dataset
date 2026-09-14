@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ZyroGod/exp-vocab-64k",
+  "slug": "zyrogod-exp-vocab-64k",
+  "author": "ZyroGod",
+  "url": "https://huggingface.co/ZyroGod/exp-vocab-64k",
+  "created_at": "2026-09-14T09:43:22.000Z",
+  "updated_at": "2026-09-14T09:43:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "tokenizer",
+    "bpe",
+    "byte-level",
+    "gpt",
+    "subword",
+    "feature-extraction",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/?hl=de",
+      "snippet": "Chatte mit Gemini, dem KI-Assistenten von Google. Lass dich beim Schreiben, Planen, Sammeln von Ideen und vielem mehr von der …"
+    },
+    {
+      "title": "Gemini – dein KI-Assistent von Google",
+      "url": "https://gemini.google/de/about/?hl=de",
+      "snippet": "Mit dem KI-Assistenten von Google kannst du noch produktiver arbeiten und deiner Kreativität freien Lauf lassen. Gemini kann dir …"
+    },
+    {
+      "title": "Jetzt neu: Gemini, dein persönlicher KI-Assistent",
+      "url": "https://gemini.google/de/assistant/?hl=de",
+      "snippet": "Im Folgenden vergleichen wir Gemini mit Google Assistant und zeigen dir einige neue Möglichkeiten, wie Gemini dich unterstützen …"
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Our latest series of Gemini models combine frontier intelligence with action. Built to help you execute complex, multi-step workflows."
+    }
+  ]
+}

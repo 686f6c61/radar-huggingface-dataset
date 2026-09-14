@@ -5,7 +5,7 @@
   "author": "arrochi112",
   "url": "https://huggingface.co/arrochi112/onebee-gf-dpo-v1-4epoch",
   "created_at": "2026-08-14T13:12:35.000Z",
-  "updated_at": "2026-08-15T14:30:11.000Z",
+  "updated_at": "2026-09-13T14:54:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

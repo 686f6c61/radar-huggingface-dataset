@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "pragmaticcs/Triumvirate-Q5_K_M-GGUF",
+  "slug": "pragmaticcs-triumvirate-q5_k_m-gguf",
+  "author": "pragmaticcs",
+  "url": "https://huggingface.co/pragmaticcs/Triumvirate-Q5_K_M-GGUF",
+  "created_at": "2026-09-14T09:49:40.000Z",
+  "updated_at": "2026-09-14T09:51:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:pragmaticcs/Triumvirate",
+    "base_model:quantized:pragmaticcs/Triumvirate",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 24729153472,
+  "storage_human": "24.7 GB",
+  "base_model": "pragmaticcs/Triumvirate",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://l.facebook.com/?lang=pl_pl",
+      "snippet": "Forgot password? More languages…"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/p/MpComp-100067657416512/%3Flocale%3Dpl_PL/",
+      "snippet": "Nie pamiętasz hasła? Więcej języków..."
+    },
+    {
+      "title": "Facebook - log in or sign up",
+      "url": "https://secure.facebook.com/",
+      "snippet": "Log into Facebook to start sharing and connecting with your friends, family, and people you know."
+    },
+    {
+      "title": "Log into Facebook",
+      "url": "https://www.facebook.com/login.php/",
+      "snippet": "Forgot password? More languages…"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://l.facebook.com/facebook/",
+      "snippet": "Manage bulk listings, markdowns and more — all in one place. Take it from self-proclaimed Marketplace “fiend” Vinny Anatra : “It’s …"
+    }
+  ]
+}

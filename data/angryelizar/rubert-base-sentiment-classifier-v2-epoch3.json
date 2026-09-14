@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "angryelizar/ruBert-base-sentiment-classifier-v2-epoch3",
+  "slug": "angryelizar-rubert-base-sentiment-classifier-v2-epoch3",
+  "author": "angryelizar",
+  "url": "https://huggingface.co/angryelizar/ruBert-base-sentiment-classifier-v2-epoch3",
+  "created_at": "2026-09-14T10:17:06.000Z",
+  "updated_at": "2026-09-14T10:17:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 178309635,
+  "parameters_human": "178.3M",
+  "storage_bytes": 713262084,
+  "storage_human": "713 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.co.uk/intl/en_uk/earth/download/gep/agree.html",
+      "snippet": "Jun 5, 2025 · Google Earth lets you fly anywhere on Earth to view satellite imagery, maps, terrain and 3D buildings, from galaxies in …"
+    },
+    {
+      "title": "Earth Versions - Google Maps",
+      "url": "https://maps.google.co.uk/intl/en_uk/earth/versions/",
+      "snippet": "When you use Google Maps map data, traffic, directions, and other content, you may find that actual conditions differ from the map …"
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.co.uk/intl/en_uk/earth/",
+      "snippet": "Feature images and videos on your map to add rich contextual information. Make use of Google Earth's detailed globe by tilting the …"
+    },
+    {
+      "title": "Street View Treks: Grand Canyon – About – Google Maps",
+      "url": "https://maps.google.co.uk/intl/en/maps/about/behind-the-scenes/streetview/treks/grand-canyon/",
+      "snippet": "Discover the world with Google Maps. Experience Street View, 3D Mapping, turn-by-turn directions, indoor maps and more across …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.co.uk/mapfiles/home3.html",
+      "snippet": "Explore and navigate the world with Google Maps, offering directions, real-time traffic updates, and Street View for a seamless travel …"
+    }
+  ]
+}

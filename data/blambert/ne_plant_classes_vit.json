@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "blambert/ne_plant_classes_vit",
+  "slug": "blambert-ne_plant_classes_vit",
+  "author": "blambert",
+  "url": "https://huggingface.co/blambert/ne_plant_classes_vit",
+  "created_at": "2026-09-14T01:19:20.000Z",
+  "updated_at": "2026-09-14T01:23:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vit",
+    "image-classification",
+    "inaturalist",
+    "plants",
+    "dataset:blambert/ne_plant_classes",
+    "base_model:google/vit-base-patch16-224-in21k",
+    "base_model:finetune:google/vit-base-patch16-224-in21k",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 85801732,
+  "parameters_human": "85.8M",
+  "storage_bytes": 343230128,
+  "storage_human": "343 MB",
+  "base_model": "google/vit-base-patch16-224-in21k",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spostare i file nel cestino e ripristinare i file dal cestino",
+      "url": "https://support.google.com/files/answer/10607740?hl=it",
+      "snippet": "Importante: Questa funzionalità è disponibile in Android R e verrà implementata gradualmente per altre versioni di Android. I file …"
+    },
+    {
+      "title": "Nella sezione raccolta,mi dice impossibile spostare l'elemento nel cestino",
+      "url": "https://support.google.com/photos/thread/246328229/nella-sezione-raccolta-mi-dice-impossibile-spostare-l-elemento-nel-cestino?hl=it",
+      "snippet": "Nov 30, 2023 · Discussione su Google Photos riguardo l'impossibilità di spostare un elemento nel cestino nella sezione raccolta."
+    },
+    {
+      "title": "basket | Questions and answers among users | eBay Italy",
+      "url": "https://community.ebay.it/forum/domande-e-risposte-tra-utenti-5/topic/cestino-13961/",
+      "snippet": "basket The latest posts regarding this question date back to way back in 2014. I wanted to permanently delete some messages still …"
+    },
+    {
+      "title": "Blocked and not visible listing for unknown and unclear violation by ...",
+      "url": "https://community.ebay.it/forum/domande-e-risposte-tra-utenti-5/topic/inserzione-bloccata-e-non-visibile-per-violazione-ignota-e-non-chiara-per-mail-come-fare-25056/",
+      "snippet": "Jul 25, 2026 · Summary:righi_479617 received a notice flagging unusual selling activity on their account, leading to the suspension of …"
+    },
+    {
+      "title": "Non riesco a svuotare cestino mail - Community Gmail",
+      "url": "https://support.google.com/mail/thread/29230070/non-riesco-a-svuotare-cestino-mail?hl=it",
+      "snippet": "Feb 19, 2020 · Non riesco a svuotare cestino mail Le mail che non mi servono le cancello. Ogni sera svuoto il cestino. Stasera …"
+    }
+  ]
+}

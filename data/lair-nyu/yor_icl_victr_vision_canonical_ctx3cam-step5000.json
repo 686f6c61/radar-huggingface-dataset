@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "lair-nyu/yor_icl_victr_vision_canonical_ctx3cam-step5000",
+  "slug": "lair-nyu-yor_icl_victr_vision_canonical_ctx3cam-step5000",
+  "author": "lair-nyu",
+  "url": "https://huggingface.co/lair-nyu/yor_icl_victr_vision_canonical_ctx3cam-step5000",
+  "created_at": "2026-09-14T02:08:07.000Z",
+  "updated_at": "2026-09-14T02:12:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12441805207,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lair-nyu/yor_icl_victr_vision_expanded_full · Hugging Face",
+      "url": "https://huggingface.co/lair-nyu/yor_icl_victr_vision_expanded_full",
+      "snippet": "openpi TrainConfig: yor_icl_victr_vision_expanded Checkpoint step: 49999 Contents: params/ (deployable policy weights) + assets/ …"
+    },
+    {
+      "title": "lair-nyu/yor-icl-canonical-fast-tokenizer · Hugging Face",
+      "url": "https://huggingface.co/lair-nyu/yor-icl-canonical-fast-tokenizer",
+      "snippet": "yor-icl-canonical-fast-tokenizer A FAST (Frequency-space Action Sequence Tokenization) action tokenizer, fit on icl-dataset 's …"
+    },
+    {
+      "title": "Computer Vision | ai @ NYU",
+      "url": "https://cims.nyu.edu/ai/areas/computer-vision/",
+      "snippet": "The CILVR Lab (Computational Intelligence, Learning, Vision, and Robotics) regroups faculty members, …"
+    },
+    {
+      "title": "Sequential Modeling Enables Scalable Learning for Large Vision Models",
+      "url": "https://arxiv.org/abs/2312.00785",
+      "snippet": "Dec 1, 2023 · We introduce a novel sequential modeling approach which enables learning a Large Vision Model (LVM) without …"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image …"
+    }
+  ]
+}

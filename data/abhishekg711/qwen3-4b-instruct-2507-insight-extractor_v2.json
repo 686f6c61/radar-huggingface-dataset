@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AbhishekG711/Qwen3-4B-Instruct-2507-Insight-Extractor_v2",
+  "slug": "abhishekg711-qwen3-4b-instruct-2507-insight-extractor_v2",
+  "author": "AbhishekG711",
+  "url": "https://huggingface.co/AbhishekG711/Qwen3-4B-Instruct-2507-Insight-Extractor_v2",
+  "created_at": "2026-09-14T11:29:07.000Z",
+  "updated_at": "2026-09-14T11:31:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404916,
+  "storage_human": "8.1 GB",
+  "base_model": "unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google Drive - Sign in",
+      "url": "https://drive.google.com/",
+      "snippet": "Access Google Drive with a Google account (for personal use) or Google Workspace account (for business use)."
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. …"
+    },
+    {
+      "title": "Google Docs",
+      "url": "https://docs.google.com/",
+      "snippet": "Create and edit web-based documents, spreadsheets, and presentations. Store documents online and access them from any computer."
+    },
+    {
+      "title": "Home - The International Digestive Disease Forum (IDDF) 2026 ...",
+      "url": "https://www.iddforum.com/",
+      "snippet": "Jun 28, 2026 · IDDF’s two-day programme is packed with great content of gastroenterology, hepatology, endoscopy and translational …"
+    }
+  ]
+}

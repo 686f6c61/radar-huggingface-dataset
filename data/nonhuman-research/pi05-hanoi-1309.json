@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "NONHUMAN-RESEARCH/pi05-hanoi-1309",
+  "slug": "nonhuman-research-pi05-hanoi-1309",
+  "author": "NONHUMAN-RESEARCH",
+  "url": "https://huggingface.co/NONHUMAN-RESEARCH/pi05-hanoi-1309",
+  "created_at": "2026-09-14T01:57:30.000Z",
+  "updated_at": "2026-09-14T08:35:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:NONHUMAN-RESEARCH/hanoi-teleop-foundry",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 84220862792,
+  "storage_human": "84.2 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "一个方框内有个勾（☑）怎么打出这符号_百度知道",
+      "url": "https://zhidao.baidu.com/question/136956635.html",
+      "snippet": "一个方框内有个勾（☑）怎么打出这符号☑这个符号可以用word的特殊字符打出来。以Word2016版为例，具体步骤如下：1、新建 ..."
+    },
+    {
+      "title": "梦幻西游黑风山副本抄写大全_百度知道",
+      "url": "https://zhidao.baidu.com/question/580670653.html",
+      "snippet": "为了副本速度嘛~知道的帮下忙啦！不全帮忙补充1.此有故彼有此生故彼生此无故彼无此灭故彼灭2.一切行无常生者必有尽不生则不死 …"
+    },
+    {
+      "title": "波浪号（～）是什么意思，正规的用法是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/19615526",
+      "snippet": "除了在字典中作为代替符号以外，在印刷品中很少见到这个符号。那么它应该是怎么用的呢？它的来源又是怎…"
+    },
+    {
+      "title": "纵向课题和横向课题有什么区别？ - 知乎",
+      "url": "https://www.zhihu.com/question/30432177",
+      "snippet": "目前，从学科大类上讲：分为社会科学和自然科学两大类；根据科研课题的来源一般分为：纵向课题与横向课题两大类。 纵向课题是 …"
+    },
+    {
+      "title": "周一，周二，周三，周四，周五，周六，周日。用英语怎么说？谢谢！",
+      "url": "https://zhidao.baidu.com/question/454419419654703525.html",
+      "snippet": "周一，周二，周三，周四，周五，周六，周日。用英语怎么说？谢谢！1、星期日：Sunday，简写Sun.2、星期一：Monday，简 …"
+    }
+  ]
+}

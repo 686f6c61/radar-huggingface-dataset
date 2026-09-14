@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "gogetta94/ppo-LunarLander-v2",
+  "slug": "gogetta94-ppo-lunarlander-v2",
+  "author": "gogetta94",
+  "url": "https://huggingface.co/gogetta94/ppo-LunarLander-v2",
+  "created_at": "2026-09-14T01:24:52.000Z",
+  "updated_at": "2026-09-14T01:39:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v2",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 428009,
+  "storage_human": "428009 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "e-Plans",
+      "url": "https://www.e-plans.fr/",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    }
+  ]
+}

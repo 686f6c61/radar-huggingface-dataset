@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "BoyuanDeng/swin-t-baseline",
+  "slug": "boyuandeng-swin-t-baseline",
+  "author": "BoyuanDeng",
+  "url": "https://huggingface.co/BoyuanDeng/swin-t-baseline",
+  "created_at": "2026-09-14T10:07:42.000Z",
+  "updated_at": "2026-09-14T10:07:48.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PGA Championship | Official Website",
+      "url": "https://www.pgachampionship.com/",
+      "snippet": "Get the latest news and highlights from the PGA Championship, golf's only all-professional major. The 108th PGA Championship will …"
+    },
+    {
+      "title": "2026 PGA Championship Leaderboard",
+      "url": "https://www.pgachampionship.com/leaderboard",
+      "snippet": "Live leaderboard for the 2026 PGA Championship at Aronimink Golf Club in Newton Square PS, May 11-17, 2026."
+    },
+    {
+      "title": "PGA Championship",
+      "url": "https://onsitemap.pgachampionship.com/",
+      "snippet": "Don't miss a thing: Player Locations, Live Scoring, Interactive Map and many more"
+    },
+    {
+      "title": "How to Watch the 2026 PGA Championship",
+      "url": "https://www.pgachampionship.com/how-to-watch",
+      "snippet": "May 17, 2026 · Complete TV and Radio broadcast information for the 2026 PGA Championship at Aroniminink Golf Club in Newtown …"
+    },
+    {
+      "title": "2027 PGA Championship | Ticket Types | PGA Championship",
+      "url": "https://www.pgachampionship.com/tickets-2027",
+      "snippet": "Major Championship golf returns to North Texas for the first time in over 60 years. Join us at PGA Frisco to witness the strongest field …"
+    }
+  ]
+}

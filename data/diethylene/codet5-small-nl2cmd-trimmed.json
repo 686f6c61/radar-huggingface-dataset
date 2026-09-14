@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "diethylene/codet5-small-nl2cmd-trimmed",
+  "slug": "diethylene-codet5-small-nl2cmd-trimmed",
+  "author": "diethylene",
+  "url": "https://huggingface.co/diethylene/codet5-small-nl2cmd-trimmed",
+  "created_at": "2026-09-14T09:55:02.000Z",
+  "updated_at": "2026-09-14T10:01:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "codet5",
+    "nl2cmd",
+    "translation",
+    "vocabulary-trimmed",
+    "base_model:diethylene/codet5-small-nl2cmd",
+    "base_model:finetune:diethylene/codet5-small-nl2cmd",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 54026752,
+  "parameters_human": "54.0M",
+  "storage_bytes": 216122376,
+  "storage_human": "216 MB",
+  "base_model": "diethylene/codet5-small-nl2cmd",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Boutiquehotel.nl - Bekijk en vergelijk boutique hotels in Nederland",
+      "url": "https://boutiquehotel.nl/",
+      "snippet": "Sep 21, 2023 · Zoek per plaats en vergelijk het aanbod boutique hotels. Hieronder vind je een overzicht van de meest populaire …"
+    },
+    {
+      "title": "Boutique hotel - de fijnste charme hotels in NL | Bijzonder Plekje",
+      "url": "https://bijzonderplekje.nl/boutique-hotel/",
+      "snippet": "Zoek je een luxe, kleinschalig, sfeervol en intiem hotel? Met een persoonlijke sfeer? Ga overnachten in een boutique hotel en bekijk …"
+    },
+    {
+      "title": "Boutique hotels – kleinschalige, bijzondere hotels - TUI",
+      "url": "https://www.tui.nl/hotel/boutique/?msockid=3afffa721266613a1a3aeda613ba605c",
+      "snippet": "Boutique hotels, of boetiekhotels zoals ze officieel in het Nederlands heten: kleinschalige hotels die vaak bijzonder zijn ingericht. Je …"
+    },
+    {
+      "title": "Myboutiquehotel : Nr. 1 voor het vinden en boeken van een …",
+      "url": "https://www.myboutiquehotel.com/nl/",
+      "snippet": "Ontdek en boek de beste boetiekhotels en designaccommodaties in meer dan 50 landen. Alle hotels die we de afgelopen 10 jaar …"
+    },
+    {
+      "title": "Boutique Retreats in Netherlands. 235 properties available on ...",
+      "url": "https://boutiquehotel.info/netherlands",
+      "snippet": "Find boutique hotel for your stay in Netherlands. Unique interiors | Premium amenities | Real guest ratings | Authentic experiences. …"
+    }
+  ]
+}

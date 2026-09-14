@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "LUCAWAGNER/perceiver-finetuned",
+  "slug": "lucawagner-perceiver-finetuned",
+  "author": "LUCAWAGNER",
+  "url": "https://huggingface.co/LUCAWAGNER/perceiver-finetuned",
+  "created_at": "2026-09-14T10:00:07.000Z",
+  "updated_at": "2026-09-14T10:00:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "anidb · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/anidb?l=c%23",
+      "snippet": "Aug 15, 2026 · AniDB stands for Anime DataBase. AniDB is a non-profit anime database that is open freely to the public. This means …"
+    },
+    {
+      "title": "2026年笔记本电脑CPU天梯图（9月）",
+      "url": "https://www.zhihu.com/tardis/zm/art/376305519",
+      "snippet": "2026年笔记本电脑CPU天梯图，笔记本电脑CPU排行，是按照CPU的跑分进行排序，进行综合性能对比。可以一定程度上反应CPU的 …"
+    },
+    {
+      "title": "anidb-data · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/anidb-data",
+      "snippet": "May 14, 2026 · GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to …"
+    },
+    {
+      "title": "伏罗希洛夫射手 - 知乎",
+      "url": "https://www.zhihu.com/people/cao-feng-ze-37",
+      "snippet": "违法和不良信息举报：010-82716601 我的举报 更多"
+    },
+    {
+      "title": "Shoko: AniDB → TMDB Mappings · GitHub",
+      "url": "https://gist.github.com/natyusha/129848213161c57101c9f39ed3f263ed",
+      "snippet": "Shoko: AniDB → TMDB Mappings. GitHub Gist: instantly share code, notes, and snippets."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "adhil2k4/unet_vb",
+  "slug": "adhil2k4-unet_vb",
+  "author": "adhil2k4",
+  "url": "https://huggingface.co/adhil2k4/unet_vb",
+  "created_at": "2026-09-14T11:33:16.000Z",
+  "updated_at": "2026-09-14T11:33:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Digiturk | Bambaşka Bir Sezon ile Eğlence, En İyi Şekilde Digiturk | TV ...",
+      "url": "https://www.digiturk.com.tr/",
+      "snippet": "Digiturk ile Türkiye’nin lider dijital TV ve internet hizmetlerini keşfedin. Zengin içerik ve hızlı internet paketleriyle ev eğlencenizi arttırın."
+    },
+    {
+      "title": "Ana Sayfa | Digiturk",
+      "url": "https://www.digiiturk.com/",
+      "snippet": "Digiturk ile Süper Lig, beIN Sports, filmler ve diziler tek platformda. Hemen başvurun!"
+    },
+    {
+      "title": "Digiturk Hesabına Giriş Yap | Digiturk",
+      "url": "https://www.digiturk.com.tr/hesabina-giris-yap",
+      "snippet": "Yayın Akışı Yardım Bu sitedeki bazı özellikler JavaScript olmadan çalışmayabilir. Digiturk üyelerine özel fırsatları görmek ve kolayca …"
+    },
+    {
+      "title": "Digiturk Online İşlemler",
+      "url": "https://onlineislemler.digiturk.com.tr/",
+      "snippet": "Digiturk’un Avantajlarla Dolu Dünyasını Keşfet! Sana Özel Kampanyalar Artık Online İşlemlerde!"
+    },
+    {
+      "title": "Ana Sayfa - beIN CONNECT",
+      "url": "https://www.beinconnect.com.tr/",
+      "snippet": "Kaçırdığınız programlar, yüzlerce film ve fazlası dilediğiniz zaman izlemeniz için sizi bekliyor. İster evde, ister yolda, seyahatte …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "FrodoBagginz/PLLuM-8B-instruct-syntetic",
+  "slug": "frodobagginz-pllum-8b-instruct-syntetic",
+  "author": "FrodoBagginz",
+  "url": "https://huggingface.co/FrodoBagginz/PLLuM-8B-instruct-syntetic",
+  "created_at": "2026-09-14T09:55:13.000Z",
+  "updated_at": "2026-09-14T09:56:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030285888,
+  "parameters_human": "8.03B",
+  "storage_bytes": 4920752448,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing ChatGPT - OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    },
+    {
+      "title": "OpenAI | Investigación e implementación",
+      "url": "https://openai.com/es-ES/",
+      "snippet": "Creemos que nuestra investigación nos llevará algún día a la inteligencia artificial general, un sistema capaz de resolver problemas …"
+    },
+    {
+      "title": "如何在 ChatGPT 中删除和归档聊天 | OpenAI Help Center",
+      "url": "https://help.openai.com/zh-hans-cn/articles/8809935-how-to-delete-and-archive-chats-in-chatgpt",
+      "snippet": "如何在 ChatGPT 中删除和归档聊天 通过删除或归档聊天来管理你的 ChatGPT 对话历史。下面介绍每种选项的工作方式以及你可以预 …"
+    },
+    {
+      "title": "Projects in ChatGPT - OpenAI Help Center",
+      "url": "https://help.openai.com/en/articles/10169521-using-projects-in-chatgpt",
+      "snippet": "Projects are smart workspaces that keep everything related to a long‑running effort in one place. Group together chats, upload …"
+    },
+    {
+      "title": "How to track a custom GPT usage? - OpenAI API Community Forum",
+      "url": "https://community.openai.com/t/how-to-track-a-custom-gpt-usage/494925",
+      "snippet": "Nov 11, 2023 · Hi! How do I track the usage of my custom GPT? I made it public, I’ve shared the link, but I have no ideia if people are …"
+    }
+  ]
+}

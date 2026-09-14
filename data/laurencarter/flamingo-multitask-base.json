@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "laurencarter/flamingo-multitask-base",
+  "slug": "laurencarter-flamingo-multitask-base",
+  "author": "laurencarter",
+  "url": "https://huggingface.co/laurencarter/flamingo-multitask-base",
+  "created_at": "2026-09-14T10:19:59.000Z",
+  "updated_at": "2026-09-14T10:20:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "كيف اجددالاقامة من ابشر علما انني ابنة مواطنة",
+      "url": "https://saudi-sons.net/7583/",
+      "snippet": "كيف اجددالاقامة من ابشر علما انني ابنة مواطنة سُئل ديسمبر 21، 2013 في تصنيف ابناء السعوديات بواسطة mnaminooo مستخدم جديد (22.1ألف نقاط)"
+    },
+    {
+      "title": "معلومات عن تجديد الاقامة في ابشر ونقل المعلومات",
+      "url": "https://saudi-sons.net/16163/",
+      "snippet": "معلومات عن تجديد الاقامة في ابشر ونقل المعلومات سُئل نوفمبر 4، 2015 في تصنيف ابناء السعوديات بواسطة kjz مستشار أول (1.3مليون نقاط)"
+    },
+    {
+      "title": "What is the meaning of \" أبشر‎ \"? - Question about Arabic",
+      "url": "https://hinative.com/questions/20270490",
+      "snippet": "Definition of أبشر‎ @Sarah_Werk We say it in Saudi Arabia, when someone asks us for something, it's a reply like \" Yes \" or \" Okay \" …"
+    },
+    {
+      "title": "ما المقصود عندما رد أحد ب\"أبشر\" و \"حاضر\"؟ | HiNative",
+      "url": "https://hinative.com/questions/1543604",
+      "snippet": "أبشر هي مفردة خليجية بمعنى أن عملك سوف ينجز. مثال: -أريد منك تخليص معملتي. -أبشر. حاضر بمعنى متواجد أو حسناً وفي الغالب تستخدم في الاجهزة العسكرية والمدارس فقط."
+    },
+    {
+      "title": "HiNative | 一个针对外语学习者的问答平台。",
+      "url": "https://zh.hinative.com/",
+      "snippet": "HiNative是一个问与答的平台，您可以在这里向各国的母语者提问关于文化，语言等问题。我们提供110种以上语言。"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "eemoogee",
   "url": "https://huggingface.co/eemoogee/hangul-expert-qwen3-8b",
   "created_at": "2026-08-30T01:39:14.000Z",
-  "updated_at": "2026-09-01T22:34:01.000Z",
+  "updated_at": "2026-09-14T03:35:25.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,13 +20,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 86,
   "trending_score": 0,
   "parameters": 8190735360,
   "parameters_human": "8.19B",
-  "storage_bytes": 25138902912,
-  "storage_human": "25.1 GB",
+  "storage_bytes": 35194462336,
+  "storage_human": "35.2 GB",
   "base_model": null,
   "formats": [
     "gguf"

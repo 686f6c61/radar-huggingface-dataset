@@ -5,7 +5,7 @@
   "author": "Icey444",
   "url": "https://huggingface.co/Icey444/ttground-r1-ckpts",
   "created_at": "2026-08-17T08:55:04.000Z",
-  "updated_at": "2026-09-13T08:14:59.000Z",
+  "updated_at": "2026-09-14T04:12:49.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -15,13 +15,13 @@
     "safetensors",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 2,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1005245226015,
-  "storage_human": "1005.2 GB",
+  "storage_bytes": 1054998469647,
+  "storage_human": "1055.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

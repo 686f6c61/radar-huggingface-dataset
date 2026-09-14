@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "maxbhartman/anchor-removal-mmlu-tau0.6-attention-k30-seed43",
+  "slug": "maxbhartman-anchor-removal-mmlu-tau0-6-attention-k30-seed43",
+  "author": "maxbhartman",
+  "url": "https://huggingface.co/maxbhartman/anchor-removal-mmlu-tau0.6-attention-k30-seed43",
+  "created_at": "2026-09-14T01:19:10.000Z",
+  "updated_at": "2026-09-14T01:20:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6442805855,
+  "storage_human": "6.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kalidea : billetterie pour les CE et les salariés",
+      "url": "https://billetterie.kalidea.com/CE/Catalogue/Ski",
+      "snippet": "Billetterie culture, loisirs et achats quotidiens à prix réduits partout en France. Pour accédez à vos avantages, connectez vous avec …"
+    },
+    {
+      "title": "Billetterie KALIDEA",
+      "url": "https://billetterie.kalidea.com/FicheProduit/Spectacles/?id=SPECFB10757944",
+      "snippet": "Chers clients, Nous vous informons que cette billetterie sera fermée à partir du 05/01/2026. En cas de besoin vous pouvez nous …"
+    },
+    {
+      "title": "Billetterie KALIDEA",
+      "url": "https://billetterie.kalidea.com/FicheProduit/Parcs/FUTUROSCOPE/?id=PR100001664515",
+      "snippet": "La billetterie culture et loisirs pour les CE/CSE et leurs bénéficiaires"
+    }
+  ]
+}

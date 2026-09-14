@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "HyeonseokE/smolvla_ablation2_turn_off_lever_B1_1000_10fps",
+  "slug": "hyeonseoke-smolvla_ablation2_turn_off_lever_b1_1000_10fps",
+  "author": "HyeonseokE",
+  "url": "https://huggingface.co/HyeonseokE/smolvla_ablation2_turn_off_lever_B1_1000_10fps",
+  "created_at": "2026-09-14T01:16:29.000Z",
+  "updated_at": "2026-09-14T01:19:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:HyeonseokE/ablation2_turn_off_lever_B1_10fps",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906729316,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Geoportal Bayern - Startseite",
+      "url": "https://geoportal.bayern.de/geoportalbayern/",
+      "snippet": "4 days ago · Das Geoportal Bayern ist der zentrale Zugang zu Geodaten und Geodatendiensten der Geodateninfrastruktur (GDI) …"
+    },
+    {
+      "title": "Geoportal Bayern - details",
+      "url": "https://geoportal.bayern.de/geoportalbayern/anwendungen/details?resId=5b826f12-9837-466a-baaa-f1409211bdf5",
+      "snippet": "Das Geoportal Bayern ist der zentrale Zugang zu Geodaten und Geodatendiensten der Geodateninfrastruktur (GDI) Bayern"
+    },
+    {
+      "title": "Geoportal Bayern - anwendungen",
+      "url": "https://geoportal.bayern.de/geoportalbayern/seiten/anwendungen",
+      "snippet": "Bodenrichtwerte Bayern Bodenrichtwerte Bayern ist ein Informations- und Auskunftssystem über Bodenrichtwerte der …"
+    },
+    {
+      "title": "BayernAtlas - geoportal.bayern.de",
+      "url": "https://geoportal.bayern.de/bayernatlas-klassik/bodenrichtwerte/?2",
+      "snippet": "Der BayernAtlas – der Kartenviewer des Freistaates Bayern mit Karten, Luftbildern und vielfältigen Themenkarten"
+    },
+    {
+      "title": "DenkmalAtlas 2.0 - Bayern",
+      "url": "https://geoportal.bayern.de/denkmalatlas/",
+      "snippet": "Feb 10, 2003 · Über die Adresse, Denkmalnummer oder eine Koordinate können Sie detaillierte Informationen zu Denkmälern abrufen."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "True2456/Qwen3.8-Flash-Next-MLX-4bit",
+  "slug": "true2456-qwen3-8-flash-next-mlx-4bit",
+  "author": "True2456",
+  "url": "https://huggingface.co/True2456/Qwen3.8-Flash-Next-MLX-4bit",
+  "created_at": "2026-09-14T01:25:45.000Z",
+  "updated_at": "2026-09-14T02:38:41.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "qwen4_exp",
+    "qwen",
+    "apple-silicon",
+    "mixture-of-experts",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:finetune:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 57,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2466210179,
+  "storage_human": "2.5 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemini Omni — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini-omni/",
+      "snippet": "Gemini Omni combines an intuitive understanding of physics with Gemini's knowledge of history, science, and cultural context – …"
+    },
+    {
+      "title": "WeatherNext 3 — Google DeepMind",
+      "url": "https://deepmind.google/science/weathernext/",
+      "snippet": "WeatherNext 3 is the first global weather model that generates forecasts every hour of the day. It delivers local data for people and …"
+    },
+    {
+      "title": "Google DeepMind",
+      "url": "http://deepmind.google/",
+      "snippet": "Gemini 3.5 Transcribe Our most precise speech-to-text model yet, designed for intelligent voice interactions Learn more Try"
+    },
+    {
+      "title": "Gemini 3.8 Flash Cyber — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/cyber/",
+      "snippet": "Capabilities Gemini 3.8 Flash Cyber provides a decisive advantage in today’s complex cybersecurity landscape, with the Flash speed …"
+    },
+    {
+      "title": "Gemini Image – Nano Banana — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini-image/",
+      "snippet": "Nano Banana 2 Lite 🍌 Our fastest, most efficient Gemini Image model. Built to deliver high-speed generation and editing at our lowest …"
+    }
+  ]
+}

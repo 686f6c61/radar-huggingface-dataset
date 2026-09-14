@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Bingsu/adetailer",
+  "slug": "bingsu-adetailer",
+  "author": "Bingsu",
+  "url": "https://huggingface.co/Bingsu/adetailer",
+  "created_at": "2023-04-26T00:58:45.000Z",
+  "updated_at": "2024-11-21T12:40:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "pytorch",
+    "dataset:wider_face",
+    "dataset:skytnt/anime-segmentation",
+    "doi:10.57967/hf/3633",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 789,
+  "downloads_30d": 9733772,
+  "trending_score": 9,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1130245365,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bingsu — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Bingsu",
+      "snippet": "Le bingsu, patbingsu, ou patbingsoo (팥빙수) est un dessert coréen qui consiste en de la glace finement pilée recouverte d’un …"
+    },
+    {
+      "title": "GitHub - Bing-su/adetailer: Auto detecting, masking and inpainting ...",
+      "url": "https://github.com/bing-su/adetailer",
+      "snippet": "ADetailer is an extension for the stable diffusion webui that does automatic masking and inpainting. It is similar to the Detection Detailer. Install. You can ..."
+    },
+    {
+      "title": "Recette bingsu maison : dessert glacé coréen",
+      "url": "https://www.epicerie-coreenne.fr/recettes/bingsu/",
+      "snippet": "3 days ago · Le bingsu maison demande peu de savoir-faire et beaucoup d’anticipation : les haricots rouges se font la veille, le bloc …"
+    },
+    {
+      "title": "Comment Réaliser un Bingsu Délicieux et Rafraîchissant ?",
+      "url": "https://sushitaro.fr/bingsu/",
+      "snippet": "Oct 19, 2025 · Le bingsu est un dessert coréen traditionnel qui se compose d’une base de glace pilée finement, recouverte de lait …"
+    },
+    {
+      "title": "Bingsu - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bingsu",
+      "snippet": "Patbingsu (팥빙수; 팥氷水; sometimes anglicized as patbingsoo, literally \"red bean shaved ice\") is a popular Korean shaved ice …"
+    }
+  ]
+}

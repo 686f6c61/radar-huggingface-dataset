@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Fer-rlar/flamingo-finetuned",
+  "slug": "fer-rlar-flamingo-finetuned",
+  "author": "Fer-rlar",
+  "url": "https://huggingface.co/Fer-rlar/flamingo-finetuned",
+  "created_at": "2026-09-14T01:59:18.000Z",
+  "updated_at": "2026-09-14T01:59:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fer — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Fer",
+      "snippet": "L'adjectif ferrātus,a,um signifie « garni de fer, ferré, armé de fer », le substantif masculin pluriel ferrati rappelle les soldats bardés de fer."
+    },
+    {
+      "title": "Aliments riches en fer : tableau et conseils en cas d'anémie (carence)",
+      "url": "https://toutpourmasante.fr/aliments-riches-fer/",
+      "snippet": "Mar 7, 2025 · Retrouvez le tableau de tous les aliments riches en fer (viandes, poissons, légumes, fruits), et comment augmenter le …"
+    },
+    {
+      "title": "Manque de fer : causes, symptômes, traitement - Doctissimo",
+      "url": "https://www.doctissimo.fr/html/nutrition/mag_2003/mag0110/dossier/nu_6340_anemie_fer.htm",
+      "snippet": "Dec 2, 2025 · Le fer est essentiel à de nombreuses protéines et enzymes de notre organisme. C'est notamment un composé …"
+    },
+    {
+      "title": "Tout savoir sur le fer - Anses - Agence nationale de sécurité ...",
+      "url": "https://www.anses.fr/fr/content/tout-savoir-sur-le-fer",
+      "snippet": "Oct 27, 2022 · Le fer est principalement nécessaire au transport et à l’utilisation de l’oxygène. Découvrez les aliments riches en fer, …"
+    },
+    {
+      "title": "Fer : substance active à effet thérapeutique - VIDAL",
+      "url": "https://www.vidal.fr/medicaments/substances/fer-1481.html",
+      "snippet": "Le complexe hydroxyde ferrique-saccharose en solution permet l'apport de fer par la voie intraveineuse. Le complexe stable …"
+    }
+  ]
+}

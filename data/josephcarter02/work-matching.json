@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "josephcarter02/work-matching",
+  "slug": "josephcarter02-work-matching",
+  "author": "josephcarter02",
+  "url": "https://huggingface.co/josephcarter02/work-matching",
+  "created_at": "2026-09-14T01:40:55.000Z",
+  "updated_at": "2026-09-14T01:41:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lowyat.NET - Insanely Addictive Malaysia Forum",
+      "url": "https://forum.lowyat.net/",
+      "snippet": "5 days ago · Lowyat.NET Malaysia's Tech Enthusiast Resource Community. Forums, Buy, Sell, Second Hand, Notebook, Laptop, …"
+    },
+    {
+      "title": "Is Whatsapp web down? - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5538738",
+      "snippet": "Sep 8, 2025 · Cannot link my device now."
+    },
+    {
+      "title": "[found sos] cant login whatsapp browser - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5556445",
+      "snippet": "Feb 27, 2026 · Outline · [ Standard ] · Linear+ [found sos] cant login whatsapp browser, from iphone"
+    },
+    {
+      "title": "those use ipon watsapp web browser - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5556449",
+      "snippet": "Feb 27, 2026 · Lowyat.NET Malaysia's Tech Enthusiast Resource Community. Forums, Buy, Sell, Second Hand, Notebook, Laptop, …"
+    },
+    {
+      "title": "PSA: Beware of .vbs file scam - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5573643",
+      "snippet": "Aug 10, 2026 · 0.0135sec 1.75 5 queries GZIP Disabled Time is now: 12th September 2026 - 08:02 PM"
+    }
+  ]
+}

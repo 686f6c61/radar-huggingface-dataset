@@ -5,7 +5,7 @@
   "author": "seleixi",
   "url": "https://huggingface.co/seleixi/beyondacc-chapter1-9b-adapters",
   "created_at": "2026-08-25T02:57:19.000Z",
-  "updated_at": "2026-09-13T23:17:48.000Z",
+  "updated_at": "2026-09-14T00:48:54.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 16223423516,
-  "storage_human": "16.2 GB",
+  "storage_bytes": 18252279395,
+  "storage_human": "18.3 GB",
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"

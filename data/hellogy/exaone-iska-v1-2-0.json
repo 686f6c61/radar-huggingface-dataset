@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "HelloGY/exaone-iSKA-v1.2.0",
+  "slug": "hellogy-exaone-iska-v1-2-0",
+  "author": "HelloGY",
+  "url": "https://huggingface.co/HelloGY/exaone-iSKA-v1.2.0",
+  "created_at": "2026-09-14T09:34:38.000Z",
+  "updated_at": "2026-09-14T09:57:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "exaone",
+    "custom_code",
+    "arxiv:2412.04862",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7818448896,
+  "parameters_human": "7.82B",
+  "storage_bytes": 15636938728,
+  "storage_human": "15.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Site de rencontre 100% gratuit : JeContacte.com",
+      "url": "https://www.jecontacte.com/",
+      "snippet": "JeContacte.com est un site de rencontre gratuit pour les célibataires qui désirent trouver l'amour, l'âme soeur ou créer de nouvelles …"
+    },
+    {
+      "title": "JeContacte.com: Messages Privés",
+      "url": "https://www.jecontacte.com/messagesprives.php",
+      "snippet": "Consultez vos messages privés sur JeContacte afin de voir qui désire faire une rencontre avec vous! Messagerie privée entièrement …"
+    },
+    {
+      "title": "JeContacte.com - Recherche avançée parmis les utilisateurs du site ...",
+      "url": "https://www.jecontacte.com/recherche_avancee.php",
+      "snippet": "Faites des recherches sur JeContacte selon plusieurs critères afin de trouver des rencontres dans votre région!"
+    },
+    {
+      "title": "JeContacte.com - Derniers membres inscrits",
+      "url": "https://www.jecontacte.com/resultats.php?type=n&s=2&g=f&i=h",
+      "snippet": "Je m’appelle Laurence et je suis une femme sincère, attentionnée et fidèle aux valeurs qui me tiennent à cœur. Aujourd’hui, je …"
+    },
+    {
+      "title": "Rencontre femme - JeContacte.com",
+      "url": "https://www.jecontacte.com/rencontre-femme-1.html",
+      "snippet": "femme célibataire de 51 ans cherche homme pour rencontre sérieuse"
+    }
+  ]
+}

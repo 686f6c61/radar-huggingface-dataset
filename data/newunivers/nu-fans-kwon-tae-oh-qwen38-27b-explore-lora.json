@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "NEWUNIVERS/nu-fans-kwon-tae-oh-qwen38-27b-explore-lora",
+  "slug": "newunivers-nu-fans-kwon-tae-oh-qwen38-27b-explore-lora",
+  "author": "NEWUNIVERS",
+  "url": "https://huggingface.co/NEWUNIVERS/nu-fans-kwon-tae-oh-qwen38-27b-explore-lora",
+  "created_at": "2026-09-14T02:02:52.000Z",
+  "updated_at": "2026-09-14T02:03:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "ko",
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "trl",
+    "character-roleplay",
+    "nu-fans",
+    "exploratory",
+    "text-generation",
+    "ko",
+    "en",
+    "ja",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2631308653,
+  "storage_human": "2.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Manage your home area or current location for YouTube TV",
+      "url": "https://support.google.com/youtubetv/answer/7129768?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "YouTube TV outside of your home area While outside of your home area, you can watch programming local to where you are, but …"
+    },
+    {
+      "title": "Can’t access YouTube - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/6159254?hl=en",
+      "snippet": "Enter your password. From the list, select YouTube. If your channel is connected to a Brand Account, click your icon in the top right of …"
+    },
+    {
+      "title": "youtube | OBS Forums",
+      "url": "https://obsproject.com/forum/tags/youtube/",
+      "snippet": "Apr 15, 2026 · When we enter the YouTube stream key on OBS, it uploads the video directly on our YouTube page, but doesn't send …"
+    },
+    {
+      "title": "İndir | OBS",
+      "url": "https://obsproject.com/tr/downLOAD",
+      "snippet": "Download OBS Studio for Windows, Mac or Linux"
+    },
+    {
+      "title": "YouTube Ajuda",
+      "url": "https://support.google.com/youtube/?hl=pt",
+      "snippet": "Saiba mais sobre o YouTube Vídeos de ajuda do YouTube Navegue na nossa biblioteca de vídeos para obter sugestões úteis, …"
+    }
+  ]
+}

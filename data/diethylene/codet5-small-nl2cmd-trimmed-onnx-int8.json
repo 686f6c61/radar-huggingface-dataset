@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "diethylene/codet5-small-nl2cmd-trimmed-onnx-int8",
+  "slug": "diethylene-codet5-small-nl2cmd-trimmed-onnx-int8",
+  "author": "diethylene",
+  "url": "https://huggingface.co/diethylene/codet5-small-nl2cmd-trimmed-onnx-int8",
+  "created_at": "2026-09-14T09:57:31.000Z",
+  "updated_at": "2026-09-14T10:02:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "optimum",
+  "languages": [],
+  "tags": [
+    "optimum",
+    "onnx",
+    "t5",
+    "codet5",
+    "nl2cmd",
+    "translation",
+    "quantized",
+    "int8",
+    "base_model:diethylene/codet5-small-nl2cmd-trimmed-onnx",
+    "base_model:quantized:diethylene/codet5-small-nl2cmd-trimmed-onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 134506811,
+  "storage_human": "135 MB",
+  "base_model": "diethylene/codet5-small-nl2cmd-trimmed-onnx",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    },
+    {
+      "title": "Wikipedia, the free encyclopedia",
+      "url": "https://en.wikipedia.org/wiki/Main_Page",
+      "snippet": "Wikipedia is written by volunteer editors and hosted by the Wikimedia Foundation, a non-profit organization that also hosts a range of …"
+    },
+    {
+      "title": "Wikipedia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wikipedia",
+      "snippet": "Founded by Jimmy Wales and Larry Sanger in 2001, Wikipedia has been hosted since 2003 by the Wikimedia Foundation, an …"
+    },
+    {
+      "title": "ويكيبيديا، الموسوعة الحرة",
+      "url": "https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%B5%D9%81%D8%AD%D8%A9_%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D8%A9",
+      "snippet": "ويكيبيديا مشروع تعاوني متعدد اللغات يضم ويكيات بأكثر من 300 لغة للعمل في مشاريع موسوعات حرة ودقيقة ومتكاملة ومتنوعة ومحايدة، يستطيع الجميع المساهمة في تحريرها. نشأت ويكيبيديا في عام …"
+    },
+    {
+      "title": "Wikipedia - Wikipedia",
+      "url": "https://gpe.wikipedia.org/wiki/Wikipedia",
+      "snippet": "Ebe founded by Jimmy Wales den Larry Sanger on January 15, 2001, na de Wikimedia Foundation an American nonprofit …"
+    }
+  ]
+}

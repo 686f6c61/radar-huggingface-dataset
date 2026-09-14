@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "javipinochet02/tesis-srl-qwen38-27b-response",
+  "slug": "javipinochet02-tesis-srl-qwen38-27b-response",
+  "author": "javipinochet02",
+  "url": "https://huggingface.co/javipinochet02/tesis-srl-qwen38-27b-response",
+  "created_at": "2026-09-14T01:35:14.000Z",
+  "updated_at": "2026-09-14T01:49:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "peft",
+    "lora",
+    "qlora",
+    "education",
+    "self-regulated-learning",
+    "research",
+    "es",
+    "base_model:unsloth/Qwen3.8-27B-unsloth-bnb-4bit",
+    "base_model:adapter:unsloth/Qwen3.8-27B-unsloth-bnb-4bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "unsloth/Qwen3.8-27B-unsloth-bnb-4bit",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CNF - consiglionazionaleforense.it",
+      "url": "https://www.consiglionazionaleforense.it/1460",
+      "snippet": "2. La tenuta e l'aggiornamento dell'albo, degli elenchi e dei registri, le modalità di iscrizione e di trasferimento, i casi di cancellazione …"
+    },
+    {
+      "title": "CNF - consiglionazionaleforense.it",
+      "url": "https://www.consiglionazionaleforense.it/it/ricerca-avvocato",
+      "snippet": "Il 'Find a lawyer' ha messo in rete le Avvocature di 17 paesi, tra cui l’Italia, grazie alla collaborazione del Ccbe- la rappresentanza a …"
+    },
+    {
+      "title": "Servizi CNF - Consiglio Nazionale Forense",
+      "url": "https://ordini.consiglionazionaleforense.it/login/cnf",
+      "snippet": "Consiglio Nazionale Forense Servizi Telematici CNF Accesso Riservato"
+    },
+    {
+      "title": "NEGOZIAZIONE ASSISTITA",
+      "url": "https://negoziazione.consiglionazionaleforense.it/",
+      "snippet": "NEGOZIAZIONE ASSISTITA Benvenuti sulla Piattaforma di Negoziazione Assistita Area COA"
+    },
+    {
+      "title": "GDU - Sistema di gestione dell´Elenco Unico Nazionale dei Difensori d ...",
+      "url": "https://gestionali.consiglionazionaleforense.it/",
+      "snippet": "Sistema di gestione dell´Elenco Unico Nazionale dei Difensori d´Ufficio"
+    }
+  ]
+}

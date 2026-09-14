@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "learner1119/ffw_sh5_n17_260820_left_h50_abs_30000",
+  "slug": "learner1119-ffw_sh5_n17_260820_left_h50_abs_30000",
+  "author": "learner1119",
+  "url": "https://huggingface.co/learner1119/ffw_sh5_n17_260820_left_h50_abs_30000",
+  "created_at": "2026-09-14T09:49:19.000Z",
+  "updated_at": "2026-09-14T09:53:17.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "Gr00tN1d7",
+    "robotics",
+    "gr00t",
+    "gr00t-n1.7",
+    "vla",
+    "ffw_sh5",
+    "intermediate-checkpoint",
+    "dataset:learner1119/260820",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 6910507241,
+  "storage_human": "6.9 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tagesschau.de - die erste Adresse für Nachrichten und Information",
+      "url": "https://www.tagesschau.de/",
+      "snippet": "10 hours ago · tagesschau.de - die erste Adresse für Nachrichten und Information: An 365 Tagen im Jahr, rund um die Uhr …"
+    },
+    {
+      "title": "Aktuelle Nachrichten aus Deutschland | tagesschau.de",
+      "url": "https://www.tagesschau.de/inland",
+      "snippet": "Überblick zu Hintergründen, Analysen und Interviews bei tagesschau.de - die erste Adresse für Nachrichten und umfassende …"
+    },
+    {
+      "title": "tagesschau - alle verfügbaren Videos - jetzt streamen!",
+      "url": "https://www.ardmediathek.de/sendung/tagesschau/Y3JpZDovL2Rhc2Vyc3RlLmRlL3RhZ2Vzc2NoYXU",
+      "snippet": "1 day ago · Die Tagesschau ist die älteste und meistgesehene Nachrichtensendung im deutschen Fernsehen. Bis heute der Inbegriff …"
+    },
+    {
+      "title": "tagesschau24 live - jetzt zum kostenlosen Livestream!",
+      "url": "https://www.ardmediathek.de/live/Y3JpZDovL2Rhc2Vyc3RlLmRlL3RhZ2Vzc2NoYXUvbGl2ZXN0cmVhbQ",
+      "snippet": "Tagesschau in Einfacher Sprache tagesschau24 live - jetzt zum kostenlosen Livestream! Weitere Livestreams JETZT | DANACH …"
+    },
+    {
+      "title": "tagesschau letzte Sendung",
+      "url": "https://www.tagesschau.de/multimedia/letzte_sendung",
+      "snippet": "Videos 3 Min Video 14.09.2026 • 10:40 Uhr tagesschau in 100 Sekunden \"Extreme politische Ausschläge gab es nicht\", Bertil Starke, …"
+    }
+  ]
+}

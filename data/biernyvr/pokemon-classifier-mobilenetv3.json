@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "BiernyVR/pokemon-classifier-mobilenetv3",
+  "slug": "biernyvr-pokemon-classifier-mobilenetv3",
+  "author": "BiernyVR",
+  "url": "https://huggingface.co/BiernyVR/pokemon-classifier-mobilenetv3",
+  "created_at": "2026-09-14T09:50:18.000Z",
+  "updated_at": "2026-09-14T09:51:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "computer-vision",
+    "pokemon",
+    "pokedex",
+    "mobilenetv3",
+    "onnxruntime",
+    "pytorch",
+    "edge-ai",
+    "mobile",
+    "android",
+    "image-classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44902846,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JeT - Het intranet van Thebe",
+      "url": "https://www.thebe.nl/jet/",
+      "snippet": "Als medewerker van Thebe kun je op JeT alles vinden. Log in en vind o.a. de juiste links naar applicaties, nieuws en informatie over …"
+    },
+    {
+      "title": "Intratuin | Alles voor huis, tuin & dier",
+      "url": "https://www.intratuin.nl/",
+      "snippet": "Ontdek de mooiste planten, tuinmeubels, barbecues en decoratie bij Intratuin. Alles voor huis, tuin en dier onder één dak. Bekijk het …"
+    },
+    {
+      "title": "Zorg van Thebe",
+      "url": "https://www.thebe.nl/",
+      "snippet": "Wijkverpleging in uw buurt en wonen bij Thebe in 25 woonzorgcentra in Midden- en West-Brabant."
+    },
+    {
+      "title": "Tuin inrichten? Tuininrichting voor een fijne tuin | Intratuin",
+      "url": "https://www.intratuin.nl/tuininrichting",
+      "snippet": "Decoratie, verlichting, zwembaden, parasols & meer voor de tuin In webshop én winkels • Altijd verrassend"
+    },
+    {
+      "title": "Alle actuele acties, activiteiten en gratis give-aways | Intratuin",
+      "url": "https://www.intratuin.nl/acties",
+      "snippet": "Bij Intratuin is altijd iets te beleven! We organiseren regelmatig leuke activiteiten in onze winkels, én we houden ervan om onze …"
+    }
+  ]
+}

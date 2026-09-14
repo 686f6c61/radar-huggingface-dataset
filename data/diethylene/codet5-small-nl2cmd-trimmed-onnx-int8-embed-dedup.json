@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "diethylene/codet5-small-nl2cmd-trimmed-onnx-int8-embed-dedup",
+  "slug": "diethylene-codet5-small-nl2cmd-trimmed-onnx-int8-embed-dedup",
+  "author": "diethylene",
+  "url": "https://huggingface.co/diethylene/codet5-small-nl2cmd-trimmed-onnx-int8-embed-dedup",
+  "created_at": "2026-09-14T09:58:01.000Z",
+  "updated_at": "2026-09-14T10:02:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "optimum",
+  "languages": [],
+  "tags": [
+    "optimum",
+    "onnx",
+    "t5",
+    "codet5",
+    "nl2cmd",
+    "translation",
+    "quantized",
+    "int8",
+    "deduplicated-weights",
+    "base_model:diethylene/codet5-small-nl2cmd-trimmed-onnx-int8-embed",
+    "base_model:quantized:diethylene/codet5-small-nl2cmd-trimmed-onnx-int8-embed",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 64719983,
+  "storage_human": "65 MB",
+  "base_model": "diethylene/codet5-small-nl2cmd-trimmed-onnx-int8-embed",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What is DNS? | Learning Center - Cloudflare",
+      "url": "https://www.cloudflare.com/learning/dns/what-is-dns/",
+      "snippet": "The Domain Name System (DNS) is the phonebook of the Internet. It translates human-readable domain names to machine-readable …"
+    },
+    {
+      "title": "Domain Name System - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Domain_Name_System",
+      "snippet": "Internet name servers and a communication protocol implement the Domain Name System. A DNS name server is a server that …"
+    },
+    {
+      "title": "Ce este DNS? Cum funcționează? Cum se setează corect?",
+      "url": "https://www.host-age.ro/blog/ce-este-dns/",
+      "snippet": "Mar 20, 2025 · Descoperiți tot ce aveți nevoie ca să știți despre DNS: ce este, la ce ajută și cum il puteți configura corect."
+    },
+    {
+      "title": "Ce înseamnă DNS și cum funcționează? - Stackdream",
+      "url": "https://www.stackdream.ro/blog/dns-sistem-nume-domenii/",
+      "snippet": "Nov 2, 2019 · La bază, un DNS este un director cu nume care se potrivesc cu anumite numere. Numele, în acest caz, sunt adresele …"
+    },
+    {
+      "title": "Ce este un DNS și cum funcționează – TopGazduire",
+      "url": "https://www.topgazduire.ro/blog/ce-este-un-dns-si-cum-functioneaza/",
+      "snippet": "Jan 24, 2020 · DNS (Domain Name System) este un sistem care leagă un domeniu de o adresă IP. De exemplu, atunci când tastezi …"
+    }
+  ]
+}

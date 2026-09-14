@@ -5,7 +5,7 @@
   "author": "Celsia",
   "url": "https://huggingface.co/Celsia/HPEC2026",
   "created_at": "2026-08-28T05:38:18.000Z",
-  "updated_at": "2026-09-05T05:44:51.000Z",
+  "updated_at": "2026-09-13T14:07:28.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "time-series-forecasting",
@@ -14,7 +14,11 @@
   "tags": [
     "pytorch",
     "time-series-forecasting",
+    "demand-forecasting",
     "benchmark",
+    "state-space-models",
+    "multidimensional",
+    "dataset:Celsia/HPEC2026",
     "license:mit",
     "region:us"
   ],

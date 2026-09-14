@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "learner1119/ffw_sh5_n17_260820_left_h50_abs_vis_20000",
+  "slug": "learner1119-ffw_sh5_n17_260820_left_h50_abs_vis_20000",
+  "author": "learner1119",
+  "url": "https://huggingface.co/learner1119/ffw_sh5_n17_260820_left_h50_abs_vis_20000",
+  "created_at": "2026-09-14T10:07:18.000Z",
+  "updated_at": "2026-09-14T10:08:46.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "Gr00tN1d7",
+    "robotics",
+    "gr00t",
+    "gr00t-n1.7",
+    "vla",
+    "ffw_sh5",
+    "intermediate-checkpoint",
+    "dataset:learner1119/260820",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 6910507241,
+  "storage_human": "6.9 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mission Lane - Credit Cards Trusted by Millions",
+      "url": "https://www.missionlane.com/",
+      "snippet": "Join 2 million+ members who count on a Mission Lane Visa® Credit Card. See if you'll be approved with no impact to your credit score."
+    },
+    {
+      "title": "MISSION | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/mission",
+      "snippet": "A mission is also a group of people who are sent to another place to do a particular job or to represent their country, organization, or …"
+    },
+    {
+      "title": "MISSION Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/mission",
+      "snippet": "The meaning of MISSION is a specific task with which a person or a group is charged. How to use mission in a sentence."
+    },
+    {
+      "title": "Instant Cooling Apparel for Active Lifestyles | MISSION",
+      "url": "https://www.mission.com/",
+      "snippet": "MISSION offers innovative cooling gear — towels, hats, and performance apparel — designed to help you stay cool, comfortable, and …"
+    },
+    {
+      "title": "MISSION Definition & Meaning | Dictionary.com",
+      "url": "https://www.dictionary.com/browse/mission",
+      "snippet": "Sep 12, 2011 · MISSION definition: a group or committee of persons sent to a foreign country to conduct negotiations, establish …"
+    }
+  ]
+}

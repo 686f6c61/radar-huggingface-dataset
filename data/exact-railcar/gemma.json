@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "exact-railcar/gemma",
+  "slug": "exact-railcar-gemma",
+  "author": "exact-railcar",
+  "url": "https://huggingface.co/exact-railcar/gemma",
+  "created_at": "2026-09-14T01:18:50.000Z",
+  "updated_at": "2026-09-14T02:04:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 19685653387,
+  "storage_human": "19.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Logiciel de gestion Exact pour les PME et leurs experts-comptables",
+      "url": "https://www.exact.com/fr",
+      "snippet": "Le logiciel de gestion cloud innovant d'Exact aide plus de 550 000 PME et leurs experts-comptables à gérer leurs chiffres. Découvrez …"
+    },
+    {
+      "title": "Ouvrez une session pour accéder à vos données | Exact",
+      "url": "https://www.exact.com/fr/login",
+      "snippet": "Bienvenue sur le site d'Exact. Ouvrez une session pour accéder à Exact Online, le Portail Client d'Exact Globe et Synergy ou le …"
+    },
+    {
+      "title": "Définitions : exact - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/exact/31917",
+      "snippet": "Expressions Pour être exact (je dirais que), introduit une précision. Sciences exactes, les mathématiques, l'astronomie, les sciences …"
+    },
+    {
+      "title": "Pronostic foot score exact – aujourd'hui et demain",
+      "url": "https://pronosfoot.com/correct-score",
+      "snippet": "Découvrez nos pronostics foot fiables sur le score exact aujourd'hui et demain. Analyses, conseils et prévisions pour mieux parier."
+    },
+    {
+      "title": "exact - Définitions, synonymes, prononciation, exemples | Dico en …",
+      "url": "https://dictionnaire.lerobert.com/definition/exact",
+      "snippet": "On rendra à Dieu un compte exact de toutes ses actions. On dit aussi, qu'un instrument de Geometrie ou d'Astronomie est fort exact, …"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "google/gemma-7b",
+  "slug": "google-gemma-7b",
+  "author": "google",
+  "url": "https://huggingface.co/google/gemma-7b",
+  "created_at": "2024-02-08T22:36:43.000Z",
+  "updated_at": "2024-06-27T14:09:40.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "gemma",
+    "text-generation",
+    "arxiv:2305.14314",
+    "arxiv:2312.11805",
+    "arxiv:2009.03300",
+    "arxiv:1905.07830",
+    "arxiv:1911.11641",
+    "arxiv:1904.09728",
+    "arxiv:1905.10044",
+    "arxiv:1907.10641",
+    "arxiv:1811.00937",
+    "arxiv:1809.02789",
+    "arxiv:1911.01547",
+    "arxiv:1705.03551",
+    "arxiv:2107.03374",
+    "arxiv:2108.07732",
+    "arxiv:2110.14168",
+    "arxiv:2304.06364",
+    "arxiv:2206.04615",
+    "arxiv:1804.06876",
+    "arxiv:2110.08193",
+    "arxiv:2009.11462",
+    "arxiv:2101.11718",
+    "arxiv:1804.09301",
+    "arxiv:2109.07958",
+    "arxiv:2203.09509",
+    "license:gemma",
+    "eval-results",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "deploy:sagemaker",
+    "region:us"
+  ],
+  "likes": 3435,
+  "downloads_30d": 26491,
+  "trending_score": 11,
+  "parameters": 8537680896,
+  "parameters_human": "8.54B",
+  "storage_bytes": 192519987136,
+  "storage_human": "192.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/",
+      "snippet": "Encore plus » Account Options. Connexion; Paramètres de recherche"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=fr",
+      "snippet": "Publicité À propos de Google Google.com in English © 2026 - Confidentialité - Conditions"
+    },
+    {
+      "title": "Téléchargez Google Chrome, le navigateur plus sécurisé et encore …",
+      "url": "https://www.google.com/intl/fr/chrome/",
+      "snippet": "Gagnez en efficacité grâce au nouveau Chrome, un navigateur Internet plus simple, plus sécurisé et encore plus rapide grâce aux …"
+    },
+    {
+      "title": "Google",
+      "url": "http://www.google.gp/?hl=fr",
+      "snippet": "Google disponible en : English Publicité À propos de Google Google.com"
+    },
+    {
+      "title": "Télécharger et installer Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Télécharger et installer Google Chrome Vous pouvez télécharger et installer sans frais le navigateur Web Chrome, puis l'utiliser pour …"
+    }
+  ]
+}

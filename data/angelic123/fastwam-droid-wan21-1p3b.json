@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "angelic123/fastwam-droid-wan21-1p3b",
+  "slug": "angelic123-fastwam-droid-wan21-1p3b",
+  "author": "angelic123",
+  "url": "https://huggingface.co/angelic123/fastwam-droid-wan21-1p3b",
+  "created_at": "2026-09-14T01:31:42.000Z",
+  "updated_at": "2026-09-14T03:58:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "robotics",
+    "fastwam",
+    "wan2.1",
+    "droid",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28670320450,
+  "storage_human": "28.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Audible | Listen to Audiobooks, Podcasts & Originals",
+      "url": "https://www.audible.co.uk/?msockid=0731382d2b836820294b2ff92a86694d",
+      "snippet": "Try Audible free for 30 days. Discover best-selling audiobooks, free podcasts and exclusive Audible Originals. Listen offline with the …"
+    },
+    {
+      "title": "Audible Login | Sign in to Your Account | Audible.co.uk",
+      "url": "https://www.audible.co.uk/ep/sign-in?msockid=0731382d2b836820294b2ff92a86694d",
+      "snippet": "Sign in to Audible to access your audiobook library. Control how you listen and experience stories everywhere you go. Not a …"
+    },
+    {
+      "title": "Learn about the Audible Standard Membership",
+      "url": "https://help.audible.co.uk/s/article/learn-about-standard-plan?language=en_GB",
+      "snippet": "What is the Audible Standard plan? Audible Standard is a membership that offers 1 audiobook per month from bestsellers and new …"
+    },
+    {
+      "title": "Pause your membership - Audible",
+      "url": "https://help.audible.co.uk/s/article/pause-your-membership?language=en_GB",
+      "snippet": "If you get credits with your Audible monthly plan, you can pause your membership once every 12 months, for a period of up to 90 days."
+    },
+    {
+      "title": "Our Company | About Audible",
+      "url": "https://www.audible.co.uk/about/our-company?msockid=0731382d2b836820294b2ff92a86694d",
+      "snippet": "Jul 30, 1996 · Audible is a leading producer and provider of audio storytelling. We inspire listeners’ imaginations, offering immersive, …"
+    }
+  ]
+}

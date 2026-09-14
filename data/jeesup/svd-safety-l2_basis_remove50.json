@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_basis_remove50",
+  "slug": "jeesup-svd-safety-l2_basis_remove50",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_basis_remove50",
+  "created_at": "2026-09-14T11:22:01.000Z",
+  "updated_at": "2026-09-14T11:23:59.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "T.C. Karaçoban Kaymakamlığı",
+      "url": "http://www.karacoban.gov.tr/",
+      "snippet": "T.C. Karaçoban Kaymakamlığı Resmi İnternet Sitesine Hoşgeldiniz. Aşkale Çat Hınıs Horasan Aziziye İspir Karaçoban Karayazı …"
+    },
+    {
+      "title": "T.C. Karaçoban Kaymakamlığı - İlçe Mal Müdürlüğü",
+      "url": "https://www.karacoban.gov.tr/ilce-mal-mudurlugu",
+      "snippet": "Web sitemizi ziyaret edenlerin kişisel verilerini 6698 sayılı Kişisel Verilerin Korunması Kanunu uyarınca işlemekte ve gizliliğini …"
+    },
+    {
+      "title": "T.C. Karaçoban Kaymakamlığı - İlçe Tapu Müdürlüğü",
+      "url": "https://www.karacoban.gov.tr/ilce-tapu-mudurlugu",
+      "snippet": "Web sitemizi ziyaret edenlerin kişisel verilerini 6698 sayılı Kişisel Verilerin Korunması Kanunu uyarınca işlemekte ve gizliliğini …"
+    },
+    {
+      "title": "T.C. Karaçoban Kaymakamlığı - İlçe Yazı İşleri Müdürlüğü",
+      "url": "https://www.karacoban.gov.tr/ilce-yazi-isleri-mudurlugu",
+      "snippet": "İlçe Yazı İşleri Müdürlüğü İlçe Yazı İşleri Müdürlüğünün görevleri şunlardır: a) Evrak havale ve dağıtım, evrak kabul memurluklarıyla …"
+    },
+    {
+      "title": "T.C. Karaçoban Kaymakamlığı - İletişim",
+      "url": "https://www.karacoban.gov.tr/iletisim",
+      "snippet": "Karaçoban Kaymakamlığı 0442 591 20 06 Vefa İletişim Merkezi ve Karaçoban SYDV 0442 591 3192"
+    }
+  ]
+}

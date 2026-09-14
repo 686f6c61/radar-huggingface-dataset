@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "grzegorzlewandowski/phd-contrastive",
+  "slug": "grzegorzlewandowski-phd-contrastive",
+  "author": "grzegorzlewandowski",
+  "url": "https://huggingface.co/grzegorzlewandowski/phd-contrastive",
+  "created_at": "2026-09-14T10:05:59.000Z",
+  "updated_at": "2026-09-14T10:06:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Charles III en deuil face à la perte de Davina Mary Morley, l’amour qui ...",
+      "url": "https://www.ohmymag.com/people/actu-people/charles-iii-en-deuil-face-a-la-perte-de-davina-mary-morley-lamour-qui-aurait-pu-changer-le-destin-royal_art196385.html",
+      "snippet": "12 hours ago · Charles III, marqué par la mort de Davina Mary Morley, revoit un amour contrarié qui a façonné son destin royal et …"
+    },
+    {
+      "title": "AI for Mathematics: Progress, Challenges, and Prospects - arXiv",
+      "url": "https://arxiv.org/pdf/2601.13209",
+      "snippet": "05.05.2026 ... In this review, we provide a systematic overview of AI4Math, highlighting its primary focus on developing AI models to support mathematical ..."
+    },
+    {
+      "title": "Charles III en deuil : il pleure la disparition de Davina Mary Morley ...",
+      "url": "https://www.voici.fr/royaute/charles-iii-en-deuil-il-pleure-la-disparition-de-davina-mary-morley-son-premier-grand-amour-qui-aurait-pu-devenir-reine-828919",
+      "snippet": "1 day ago · Accueil Royauté Charles III en deuil : il pleure la disparition de Davina Mary Morley, son premier grand amour, qui aurait …"
+    },
+    {
+      "title": "Charles III au plus mal : son grand amour de jeunesse est décédé à 75 ...",
+      "url": "https://www.closermag.fr/royautes/charles-iii-au-plus-mal-son-grand-amour-de-jeunesse-est-decede-a-75-ans-elle-avait-conquis-toute-la-famille-royale-avant-que-leur-histoire-ne-bascule-3657780",
+      "snippet": "1 day ago · Le vendredi 11 septembre dernier, le Daily Mail a annoncé la mort de Davina Morley, à 75 ans, le 2 septembre dernier. …"
+    },
+    {
+      "title": "Charles III en deuil : le roi face à un dilemme déchirant le jour du ...",
+      "url": "https://www.closermag.fr/royautes/charles-iii-en-deuil-le-roi-face-a-un-dilemme-dechirant-le-jour-du-defile-de-trooping-the-colour-3641916",
+      "snippet": "Le 13 juin, à Londres, le roi Charles III doit jongler entre le Trooping the Colour et les funérailles de Lady Pamela Hicks. Le roi …"
+    }
+  ]
+}

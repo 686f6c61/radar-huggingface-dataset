@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Mariusfeng/uwm_share_4",
+  "slug": "mariusfeng-uwm_share_4",
+  "author": "Mariusfeng",
+  "url": "https://huggingface.co/Mariusfeng/uwm_share_4",
+  "created_at": "2026-09-14T09:34:25.000Z",
+  "updated_at": "2026-09-14T09:34:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Espace abonné Freebox",
+      "url": "https://subscribe.free.fr/login/",
+      "snippet": "Bienvenue chez vous Avec votre Espace Abonné Freebox, gérez votre compte, consultez vos factures, souscrivez une option et bien …"
+    },
+    {
+      "title": "Freebox : offres internet Fibre, Wi-Fi 7, TV et avantages box et mobile",
+      "url": "https://www.free.fr/freebox",
+      "snippet": "Passez à la Fibre ultra rapide dès 24,99€/mois. Très Haut Débit, Wi-Fi 7 dernière génération, Box 5G et forfaits mobiles 5G+, sans …"
+    },
+    {
+      "title": "Freebox, offres internet Très Haut Débit fibre, ADSL - Free",
+      "url": "https://www.free.fr/",
+      "snippet": "Découvrez les offres internet Freebox de Free : Fibre optique, Wi-Fi 7, TV incluse. Freebox Ultra, Pop, Révolution Light... Trouvez …"
+    },
+    {
+      "title": "Infos Free et toute l'actualité sur notre site - Portail Free",
+      "url": "https://portail.free.fr/",
+      "snippet": "Bienvenue sur le portail Free. Retrouvez toutes les infos Free dédiées à nos offres, à nos produits, leur utilisation et bien plus encore."
+    },
+    {
+      "title": "Free Mobile : offres mobiles 4G/5G, téléphones, sans engagement",
+      "url": "https://mobile.free.fr/",
+      "snippet": "Profitez d'un forfait mobile sans engagement à prix réduit et de la qualité du réseau mobile Free 4G/5G. Téléphones en plusieurs fois …"
+    }
+  ]
+}

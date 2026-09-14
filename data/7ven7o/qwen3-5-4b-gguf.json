@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "7ven7o/Qwen3.5-4B-GGUF",
+  "slug": "7ven7o-qwen3-5-4b-gguf",
+  "author": "7ven7o",
+  "url": "https://huggingface.co/7ven7o/Qwen3.5-4B-GGUF",
+  "created_at": "2026-09-14T01:56:27.000Z",
+  "updated_at": "2026-09-14T01:56:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 2590430368,
+  "storage_human": "2.6 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "主流大厂M.2 SSD零售与OEM型号对照表 | SSD仙人5月更新，切记收藏",
+      "url": "https://www.zhihu.com/tardis/zm/art/1913781385203816110",
+      "snippet": "大家好，我是爱玩SSD的飘雷。 SSD仙人VictorTDD大神在5月份再次更新了 《HyperFlashBase: 消费级 M.2 PCle SSD 零售-OEM 对 …"
+    },
+    {
+      "title": "如何评价拯救者r7000p混用亿联固态硬盘 (umis)?",
+      "url": "https://www.zhihu.com/tardis/bd/ans/1480626742",
+      "snippet": "亿联固态在消费市场上，无法直接买到（除非买拆机） AH640是啥？ [1] 亿联今年上半年的新品，用的是东芝的96层TLC颗粒，速度已 …"
+    },
+    {
+      "title": "没事多刷新下固态硬盘哈，冷数据速度只有20多M - Chiphell - 分享与 …",
+      "url": "https://www.chiphell.com/forum.php?mod=viewthread&action=printable&tid=2729181",
+      "snippet": "Jul 31, 2025 · 固态型号，笔记本自带的UMIS 1T，查资料是TLC的。其他牌子的盘也差不多。 半年多一点，全盘都是冷数据，用TRIM …"
+    },
+    {
+      "title": "我来揭晓一下忆联企业级PCIe 4.0主控~ - 电脑讨论 (新) - Chiphell - 分 …",
+      "url": "https://www.chiphell.com/thread-2495300-1-1.html",
+      "snippet": "Feb 22, 2023 · Chiphell - 分享与交流用户体验 » 社区 › 讨论区-生活与技术的讨论 › 电脑讨论 (新) › 我来揭晓一下忆联企业级PCIe 4.0 …"
+    },
+    {
+      "title": "pro13固态硬盘不是宣传的三星的，可以退么_小新笔记本-联想社区",
+      "url": "https://club.lenovo.com.cn/thread-5664454-1-1.html",
+      "snippet": "Nov 3, 2019 · 官网购买，11.1官网抢购的。是UMIS RPITJ512PED2OWX (固态硬盘)，不是之前测评宣传的三星的，我可以退么 pro13 …"
+    }
+  ]
+}

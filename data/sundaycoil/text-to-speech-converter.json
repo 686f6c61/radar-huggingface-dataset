@@ -5,7 +5,7 @@
   "author": "sundaycoil",
   "url": "https://huggingface.co/sundaycoil/text-to-speech-converter",
   "created_at": "2026-04-09T06:10:28.000Z",
-  "updated_at": "2026-09-13T09:35:08.000Z",
+  "updated_at": "2026-09-14T08:47:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -15,7 +15,7 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 11,
+  "likes": 13,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

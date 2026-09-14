@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "diethylene/codet5-small-nl2cmd-trimmed-onnx-int8-embed",
+  "slug": "diethylene-codet5-small-nl2cmd-trimmed-onnx-int8-embed",
+  "author": "diethylene",
+  "url": "https://huggingface.co/diethylene/codet5-small-nl2cmd-trimmed-onnx-int8-embed",
+  "created_at": "2026-09-14T09:57:52.000Z",
+  "updated_at": "2026-09-14T10:02:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "optimum",
+  "languages": [],
+  "tags": [
+    "optimum",
+    "onnx",
+    "t5",
+    "codet5",
+    "nl2cmd",
+    "translation",
+    "quantized",
+    "int8",
+    "base_model:diethylene/codet5-small-nl2cmd-trimmed-onnx-int8",
+    "base_model:quantized:diethylene/codet5-small-nl2cmd-trimmed-onnx-int8",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 74689529,
+  "storage_human": "75 MB",
+  "base_model": "diethylene/codet5-small-nl2cmd-trimmed-onnx-int8",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ACCUEIL | GOLF PORTE DE SAVOIE",
+      "url": "https://www.golfportedesavoie.fr/",
+      "snippet": "Le Golf Porte-de-Savoie vous accueille dans une ambiance familiale et chaleureuse, où chaque joueur — débutant comme confirmé …"
+    },
+    {
+      "title": "AS du Golf de PORTE-DE-SAVOIE – Le coeur du golf en combe de Savoie",
+      "url": "https://golf-portedesavoie.com/",
+      "snippet": "Convivialité Aprés un parcours La guinguette du golf un lieu de rendez-vous accueille joueuses et joueurs pour un moment de …"
+    },
+    {
+      "title": "Golf de Porte-de-Savoie | Tarifs, Avis & Informations - Golfy",
+      "url": "https://www.golfy.fr/golfs/356--porte-savoie/",
+      "snippet": "Tout sur le Golf de Porte-de-Savoie : Informations, Fiche Technique, Contact, Avis et Tarifs. Bénéficiez de Réductions Golf jusqu'à …"
+    },
+    {
+      "title": "Accueil golf – AS du Golf de PORTE-DE-SAVOIE",
+      "url": "https://golf-portedesavoie.com/acceuil-golf/",
+      "snippet": "Lieu de réunion où tout les joueurs se retrouvent autour d'un verre pour commenter leurs cartes de scores. Ouverte fin de matinée au …"
+    },
+    {
+      "title": "LE GOLF | GOLF PORTE DE SAVOIE",
+      "url": "https://www.golfportedesavoie.fr/about",
+      "snippet": "Destinés aux débutants comme aux joueurs souhaitant progresser sereinement, ces séances permettent d’acquérir les bons gestes, …"
+    }
+  ]
+}

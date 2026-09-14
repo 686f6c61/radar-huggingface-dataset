@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "khazic/tfm-offline-stage1-group-5",
+  "slug": "khazic-tfm-offline-stage1-group-5",
+  "author": "khazic",
+  "url": "https://huggingface.co/khazic/tfm-offline-stage1-group-5",
+  "created_at": "2026-09-14T01:57:14.000Z",
+  "updated_at": "2026-09-14T08:52:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1787740622,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Startsida | Abisko nationalpark | Sveriges Nationalparker",
+      "url": "https://www.sverigesnationalparker.se/sv/upptack-nationalparkerna/abisko-nationalpark",
+      "snippet": "Abisko är den mest besökta nationalparken i Norrbottens län. I Abiskodalen växter fjällbjörkar och här finns även Skandinaviens …"
+    },
+    {
+      "title": "Start page | Abisko National Park | Sweden's national parks",
+      "url": "https://www.sverigesnationalparker.se/en/parks/abisko-national-park",
+      "snippet": "Abisko is a high‑northern mountain landscape with birch forests, open heaths and meadows, and rugged areas of bare mountain …"
+    },
+    {
+      "title": "Abisko nationalpark – Wikipedia",
+      "url": "https://sv.wikipedia.org/wiki/Abisko_nationalpark",
+      "snippet": "Abisko nationalpark är en av Sveriges nationalparker och ligger vid småorten Abisko söder om Torneträsk i norra Lappland. Parken …"
+    },
+    {
+      "title": "Abisko | Länsstyrelsen Norrbotten",
+      "url": "https://www.lansstyrelsen.se/norrbotten/besoksmal/nationalparker/abisko.html",
+      "snippet": "Abisko är den mest besökta nationalparken i Norrbottens län. I parken ingår den fjällbjörksklädda Abiskodalen och delar av …"
+    },
+    {
+      "title": "Abisko nationalpark — Naturkartan",
+      "url": "https://www.naturkartan.se/sv/norrbottens-lan/abisko-nationalpark",
+      "snippet": "Abisko nationalpark ligger söder om Torneträsk, i Kiruna kommun. Här finner du den fjällbjörksklädda Abiskodalen och det vackra och …"
+    }
+  ]
+}

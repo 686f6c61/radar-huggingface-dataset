@@ -4,8 +4,8 @@
   "slug": "fathulhudoyo-qwen25-1-5b-alpaca-id-grpo",
   "author": "fathulhudoyo",
   "url": "https://huggingface.co/fathulhudoyo/qwen25-1.5b-alpaca-id-grpo",
-  "created_at": "2026-08-30T08:28:58.000Z",
-  "updated_at": "2026-08-30T08:29:16.000Z",
+  "created_at": "2026-09-13T18:51:29.000Z",
+  "updated_at": "2026-09-13T22:54:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,16 +33,16 @@
   "trending_score": 0,
   "parameters": 1543714304,
   "parameters_human": "1.54B",
-  "storage_bytes": 3098889478,
-  "storage_human": "3.1 GB",
+  "storage_bytes": 6186356622,
+  "storage_human": "6.2 GB",
   "base_model": "fathulhudoyo/qwen25-1.5b-alpaca-id-sft",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-08-31T02:52:18.975Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

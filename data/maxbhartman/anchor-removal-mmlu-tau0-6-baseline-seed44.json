@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "maxbhartman/anchor-removal-mmlu-tau0.6-baseline-seed44",
+  "slug": "maxbhartman-anchor-removal-mmlu-tau0-6-baseline-seed44",
+  "author": "maxbhartman",
+  "url": "https://huggingface.co/maxbhartman/anchor-removal-mmlu-tau0.6-baseline-seed44",
+  "created_at": "2026-09-14T01:25:19.000Z",
+  "updated_at": "2026-09-14T01:26:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6442805855,
+  "storage_human": "6.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanair --> Kreditkarte oder Bankeinzug??? - Flugbuchungen und ...",
+      "url": "https://forum.airliners.de/topic/7413-ryanair-kreditkarte-oder-bankeinzug/",
+      "snippet": "Nov 15, 2002 · Hallo an alle, nach langem Suchen in diesen Foren bin ich zu dem Schluß gekommen, dass man auf ryanair.com nur …"
+    },
+    {
+      "title": "Home | Radar",
+      "url": "https://radar.avrotros.nl/",
+      "snippet": "Radar is het consumentenprogramma van AVROTROS, met Antoinette Hertsenberg en Fons Hendriks. Radar onderzoekt …"
+    },
+    {
+      "title": "RYANAIR - Kinderausweis mit Lichtbild? - Flug- und Reiseplanung ...",
+      "url": "https://forum.airliners.de/topic/38780-ryanair-kinderausweis-mit-lichtbild/",
+      "snippet": "Aug 16, 2007 · Frage: Reicht dieser Ausweis für Flüge mit RYANAIR oder müssen wir einen Kinderreisepass für 37,50 Euronen …"
+    },
+    {
+      "title": "Auto huren via Ryanair? Geen voornaam op je creditcard kan je extra ...",
+      "url": "https://radar.avrotros.nl/artikel/auto-huren-via-ryanair-geen-voornaam-op-je-creditcard-kan-je-extra-geld-kosten-62848",
+      "snippet": "Jul 28, 2026 · Ryanair en CarTrawler verschuilen zich achter de voorwaarden Omdat Janine en Wilma allebei geboekt hebben via …"
+    },
+    {
+      "title": "ryanair | Spanienforum.se",
+      "url": "https://www.spanienforum.se/tags/ryanair/",
+      "snippet": "Jul 25, 2021 · ryanair Ryanair till Arlanda 1:a november börjar Ryanair trafikera Arlanda–Alicante vilket inte står i pressmeddelandet …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "learner1119/ffw_sh5_n17_260820_left_h50_abs_vis_10000",
+  "slug": "learner1119-ffw_sh5_n17_260820_left_h50_abs_vis_10000",
+  "author": "learner1119",
+  "url": "https://huggingface.co/learner1119/ffw_sh5_n17_260820_left_h50_abs_vis_10000",
+  "created_at": "2026-09-14T10:00:53.000Z",
+  "updated_at": "2026-09-14T10:03:14.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "Gr00tN1d7",
+    "robotics",
+    "gr00t",
+    "gr00t-n1.7",
+    "vla",
+    "ffw_sh5",
+    "intermediate-checkpoint",
+    "dataset:learner1119/260820",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 6910507241,
+  "storage_human": "6.9 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unterbau-geschirrspüler EGSPU 513 911 E Amica",
+      "url": "https://amica-group.de/unterbau-geschirrspuler-egspu-513-911-e",
+      "snippet": "Ein geplatzter Schlauch an der Spülmaschine ist ein absoluter Alptraum. Ein voll gelaufener Keller, die Überschwemmung der …"
+    },
+    {
+      "title": "Kaminhaube 60 cm KHF 664 610 S Amica",
+      "url": "https://amica-group.de/kaminhaube-60-cm-khf-664-610-s",
+      "snippet": "Bei der Absorption von Gerüchen kommt es auf die Effizienz an. Daher leiten Dunstabzugshauben mit dem FrameON-System die …"
+    },
+    {
+      "title": "Freistehender geschirrspüler GSP 542 010-1 W Amica",
+      "url": "https://amica-group.de/freistehender-geschirrspuler-gsp-542-010-1-w",
+      "snippet": "Stellen Sie die Spülmaschine ein, um den Zyklus zu starten, während Sie von zu Hause weg sind, um zu beenden, wenn Sie von …"
+    },
+    {
+      "title": "Einbau-geschirrspüler EGSPV 590 900 Amica",
+      "url": "https://amica-group.de/einbau-geschirrspuler-egspv-590-900",
+      "snippet": "Damit die Restfeuchtigkeit auf Geschirr und Besteck nach Spülende schnell verschwindet, öffnet sich die Tür durch die OpenDry …"
+    },
+    {
+      "title": "Gaskochfelder - amica-group.de",
+      "url": "https://amica-group.de/gaskochfelder",
+      "snippet": "Erfüllt Ihre Bedürfnisse Sie haben viel zu tun – kochen Nudeln und räumen gleichzeitig das Haus auf? Dank der Technologie, mit der …"
+    }
+  ]
+}

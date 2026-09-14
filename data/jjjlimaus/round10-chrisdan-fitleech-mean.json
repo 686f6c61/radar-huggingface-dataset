@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "jjjlimaus/round10-chrisdan-fitleech-mean",
+  "slug": "jjjlimaus-round10-chrisdan-fitleech-mean",
+  "author": "jjjlimaus",
+  "url": "https://huggingface.co/jjjlimaus/round10-chrisdan-fitleech-mean",
+  "created_at": "2026-09-14T11:27:27.000Z",
+  "updated_at": "2026-09-14T11:41:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "sn38-nanoexpand",
+    "text-generation",
+    "sn38",
+    "bittensor",
+    "nanoexpand",
+    "model-merge",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2198342018,
+  "parameters_human": "2.20B",
+  "storage_bytes": 4396708876,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vergelijk spaarrekeningen (België) - Spaargids.be",
+      "url": "https://www.spaargids.be/sparen/spaartarieven.html",
+      "snippet": "Vergelijk spaarrekeningen (België) Welke spaarrekening biedt de hoogste rente? Bent u op zoek naar de bank die u de beste …"
+    },
+    {
+      "title": "Alle info over kasbons vergelijken - Spaargids.be",
+      "url": "https://www.spaargids.be/sparen/kasbons.html",
+      "snippet": "Alle info over kasbons vergelijken Kasbons vergelijken bij alle Belgische banken. Zoek de kasbon met de hoogste rente uit meer dan …"
+    },
+    {
+      "title": "比利时有两家银行，是dexia 银行和belfius bank（出处为2013年欧洲银 …",
+      "url": "https://www.zhihu.com/question/27939505",
+      "snippet": "比利时有两家银行，一家是dexia 银行，一家是belfius bank（出处为2013年欧洲银行排名）。另外我查到2012…"
+    },
+    {
+      "title": "Termijnrekeningen en kasbons vergelijken - Spaargids.be",
+      "url": "https://www.spaargids.be/sparen/termijnrekeningen-kasbons.html",
+      "snippet": "Termijnrekeningen en kasbons vergelijken Vergelijk de rentevoeten van kasbons en termijnrekeningen van de Belgische banken. De …"
+    },
+    {
+      "title": "Belfius maakt opbrengst spaarverzekeringen over 2025 bekend",
+      "url": "https://www.spaargids.be/sparen/belfius-bank-nieuws/belfius-maakt-opbrengst-spaarverzekeringen-over-2025-bekend.html",
+      "snippet": "Jan 29, 2026 · Belfius maakte de totale opbrengst van zijn spaarverzekeringen over 2025 bekend. Die van Belfius Invest Capital …"
+    }
+  ]
+}

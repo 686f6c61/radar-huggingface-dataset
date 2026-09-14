@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "zAlexzzzz/ChefServiceAI",
+  "slug": "zalexzzzz-chefserviceai",
+  "author": "zAlexzzzz",
+  "url": "https://huggingface.co/zAlexzzzz/ChefServiceAI",
+  "created_at": "2026-09-14T09:40:20.000Z",
+  "updated_at": "2026-09-14T09:45:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "微信与 WhatsApp 谁抄的谁？ - 知乎",
+      "url": "https://www.zhihu.com/question/20871360",
+      "snippet": "WhatsApp 开始的最早，4年了都，所以不可能抄2年前才出现的微信。不过微信抄的也不是WhatsApp，微信最开始主要借鉴的是 …"
+    },
+    {
+      "title": "Z.ai API Platform — Start building with GLM-5.3",
+      "url": "https://z.ai/model-api",
+      "snippet": "At Z.ai, we are developing safe and beneficial Artificial General Intelligence to help solve humanity's most complex challenges. GLM-5.3 is our new flagship model designed to unify frontier reasoning, coding, and agentic capabilities."
+    },
+    {
+      "title": "现在怎么才能登录WhatsApp呢？ - 知乎",
+      "url": "https://www.zhihu.com/question/68113079",
+      "snippet": "外贸圈的哀嚎声此起彼伏， WhatsApp封号潮正以“地毯式”速度席卷而来。从深圳3C工厂到义乌小商品商，从中小微企业到头部外贸集 …"
+    },
+    {
+      "title": "Chef Robotics | Physical AI for the food industry",
+      "url": "https://www.chefrobotics.ai/",
+      "snippet": "ChefOS, our physical AI operating system, enables Chef robots to manipulate real food in all its natural variability."
+    },
+    {
+      "title": "怎样在whatsapp中加好友-百度经验",
+      "url": "https://jingyan.baidu.com/article/c33e3f483b65d5ea15cbb516.html",
+      "snippet": "May 6, 2019 · 怎样在whatsapp中加好友,使用WhatA的小伙伴们，知不知道如何在该软件中添加好友呢，接下来跟小编一起去看看吧。"
+    }
+  ]
+}

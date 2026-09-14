@@ -55,13 +55,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 639,
-  "downloads_30d": 750591,
-  "trending_score": 350,
+  "likes": 659,
+  "downloads_30d": 875703,
+  "trending_score": 349,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 424062644635,
-  "storage_human": "424.1 GB",
+  "storage_bytes": 389007761691,
+  "storage_human": "389.0 GB",
   "base_model": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
   "formats": [
     "gguf"

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "jprivera44/atlas9_5beh_sft_r15_adapters_260913",
+  "slug": "jprivera44-atlas9_5beh_sft_r15_adapters_260913",
+  "author": "jprivera44",
+  "url": "https://huggingface.co/jprivera44/atlas9_5beh_sft_r15_adapters_260913",
+  "created_at": "2026-09-14T02:09:34.000Z",
+  "updated_at": "2026-09-14T02:09:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DisonsDemain | Connexion",
+      "url": "https://www.disonsdemain.fr/login",
+      "snippet": "Commencez à faire des rencontres en ligne avec DisonsDemain pour trouver des célibataires de plus de 50 ans près de chez vous. …"
+    },
+    {
+      "title": "Comment me connecter et activer mon compte - DisonsDemain",
+      "url": "https://www.disonsdemain.fr/faq/inscription-et-1ers-pas/comment-me-connecter-et-activer-mon-compte/",
+      "snippet": "Questions Populaires Pourquoi prendre un abonnement DisonsDemain ? Quelles fonctionnalités DisonsDemain je peux utiliser sans …"
+    },
+    {
+      "title": "Je veux arrêter mon abonnement. Comment faire - DisonsDemain",
+      "url": "https://www.disonsdemain.fr/faq/abonnement-et-fonctionnalites-payantes/je-veux-arreter-mon-abonnement-comment-faire/",
+      "snippet": "Questions Populaires Pourquoi prendre un abonnement DisonsDemain ? Quelles fonctionnalités DisonsDemain je peux utiliser sans …"
+    },
+    {
+      "title": "Activer mon compte - DisonsDemain Aide en ligne | FAQ",
+      "url": "https://www.disonsdemain.fr/faq/inscription-et-1ers-pas/activer-mon-compte/",
+      "snippet": "Activer mon compte Je suis bisexuel (le). Je peux chercher des femmes et des hommes ? Comment s'inscrire et commencer ? …"
+    },
+    {
+      "title": "Comment s'inscrire et commencer - DisonsDemain",
+      "url": "https://www.disonsdemain.fr/faq/inscription-et-1ers-pas/comment-sinscrire-et-commencer/",
+      "snippet": "Questions Populaires Pourquoi prendre un abonnement DisonsDemain ? Quelles fonctionnalités DisonsDemain je peux utiliser sans …"
+    }
+  ]
+}

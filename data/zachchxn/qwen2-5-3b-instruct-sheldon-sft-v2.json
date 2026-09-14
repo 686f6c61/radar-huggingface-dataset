@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "zachchxn/Qwen2.5-3B-Instruct-Sheldon-SFT-v2",
+  "slug": "zachchxn-qwen2-5-3b-instruct-sheldon-sft-v2",
+  "author": "zachchxn",
+  "url": "https://huggingface.co/zachchxn/Qwen2.5-3B-Instruct-Sheldon-SFT-v2",
+  "created_at": "2026-09-14T02:13:14.000Z",
+  "updated_at": "2026-09-14T02:13:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "persona",
+    "roleplay",
+    "math",
+    "qwen2.5",
+    "sheldon-cooper",
+    "cs2881r",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 250963877,
+  "storage_human": "251 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "File Explorer in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/experience/fileexplorer/file-explorer-in-windows",
+      "snippet": "Find and open File Explorer in Windows, and customize Quick access by pinning and removing files and folders."
+    },
+    {
+      "title": "zachchxn/Qwen2.5-3B-Instruct-Sheldon-SFT-v2 · Hugging Face",
+      "url": "https://huggingface.co/zachchxn/Qwen2.5-3B-Instruct-Sheldon-SFT-v2",
+      "snippet": "Checkpoint 1 (SFT) of a CS2881R course project: post-train Qwen2.5-3B-Instruct to answer in the voice of Sheldon Cooper while keeping (and later improving) its math ability. This is the LoRA adapter (r=32, α=64, all attention and MLP projections). A merged full-weights copy is at zachchxn/Qwen2.5-3B-Instruct-Sheldon-SFT-v2-merged."
+    },
+    {
+      "title": "Get Help with File Explorer in Windows: Easy Solutions",
+      "url": "https://www.wikihow.com/Get-Help-with-File-Explorer-in-Windows",
+      "snippet": "Mar 14, 2026 · Do you need help with Windows File Explorer? If you're having issues using or launching the application, it's easy to …"
+    },
+    {
+      "title": "Get Help With File Explorer in Windows 11",
+      "url": "https://windowsreport.com/get-help-with-file-explorer-in-windows/",
+      "snippet": "Jul 21, 2026 · Learn where to get help with File Explorer in Windows using built in tools, support pages, and troubleshooters."
+    },
+    {
+      "title": "How to Open Windows File Explorer: Windows 11, 10, 8, 7 - wikiHow",
+      "url": "https://www.wikihow.com/Open-Windows-Explorer",
+      "snippet": "Oct 5, 2025 · The Windows Explorer (or File Explorer) allows you to find and browse all the files on your computer. Whether you're …"
+    }
+  ]
+}

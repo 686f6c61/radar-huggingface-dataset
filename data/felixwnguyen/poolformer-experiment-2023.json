@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "felixwnguyen/poolformer-experiment-2023",
+  "slug": "felixwnguyen-poolformer-experiment-2023",
+  "author": "felixwnguyen",
+  "url": "https://huggingface.co/felixwnguyen/poolformer-experiment-2023",
+  "created_at": "2026-09-14T11:29:37.000Z",
+  "updated_at": "2026-09-14T11:29:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2025-2026 Tüm Sınıfların 1. Dönem 1. Yazılı Soruları ve Değerlendirme ...",
+      "url": "https://www.webdeogren.com/2025-2026-tum-siniflarin-1-donem-1-yazili-sorulari-ve-degerlendirme-calismalari-ornek.html",
+      "snippet": "Oct 15, 2025 · 2025-2026 Tüm Sınıfların 1. Dönem 1. Yazılı Soruları ve Değerlendirme Çalışmaları (Örnek) Tüm sınıf ve ders bazında …"
+    },
+    {
+      "title": "Norm Kadro Fazlası İtiraz Dilekçe Örneği – Web'de Öğren",
+      "url": "https://www.webdeogren.com/dosya/norm-kadro-fazlasi-itiraz-dilekce-ornegi",
+      "snippet": "Aug 26, 2026 · Web'de Öğren - Birlikte En Doğruya İndirilme 601 Dosya Boyutu 247.88 KB İndirme Limiti 1 Yüklenme Tarihi 26 …"
+    },
+    {
+      "title": "Okul Temizlik Görevlisi Başvuru Ekranı – Web'de Öğren",
+      "url": "https://www.webdeogren.com/okul-temizlik-gorevlisi-basvuru-ekrani.html",
+      "snippet": "Aug 23, 2026 · MEB okullarına 30 bin bahçe görevlisi alımı başladı! Okul temizlik personeli başvuruları ise Eylül başında açılıyor. …"
+    },
+    {
+      "title": "2025-2026 Tüm Kademelerin Sene Başı Öğretmenler Kurulu Toplantı ...",
+      "url": "https://www.webdeogren.com/2025-2026-tum-kademelerin-sene-basi-ogretmenler-kurulu-toplanti-tutanaklari-ornek.html",
+      "snippet": "Aug 27, 2025 · 2025-2026 Tüm Kademelerin Sene Başı Öğretmenler Kurulu Toplantı Tutanakları (Örnek) Öğretmenler Odası – …"
+    },
+    {
+      "title": "Web'de Öğren",
+      "url": "https://www.webdeogren.com/",
+      "snippet": "Web'de Öğren - Birlikte En Doğruya 11.08.2026 16:04 - İller arası mazerete bağlı yer değiştirme kapsamında başvuruda bulunmasına …"
+    }
+  ]
+}

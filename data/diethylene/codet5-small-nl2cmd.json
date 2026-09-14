@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "diethylene/codet5-small-nl2cmd",
+  "slug": "diethylene-codet5-small-nl2cmd",
+  "author": "diethylene",
+  "url": "https://huggingface.co/diethylene/codet5-small-nl2cmd",
+  "created_at": "2026-09-14T09:53:44.000Z",
+  "updated_at": "2026-09-14T10:01:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "codet5",
+    "nl2cmd",
+    "translation",
+    "base_model:Salesforce/codet5-small",
+    "base_model:finetune:Salesforce/codet5-small",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 60492288,
+  "parameters_human": "60.5M",
+  "storage_bytes": 241984552,
+  "storage_human": "242 MB",
+  "base_model": "Salesforce/codet5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia, die freie Enzyklopädie",
+      "url": "https://www.wikipedia.de/",
+      "snippet": "Wir sind der gemeinnützige Verein hinter der Wikipedia und unterstützen die Ehrenamtlichen, sichern und entwickeln die technische …"
+    },
+    {
+      "title": "Spenden-Kommentar-Ticker",
+      "url": "https://ticker.wikipedia.de/",
+      "snippet": "Herbstkampagne 2022 Spendenkommentare Letzte Kommentare"
+    },
+    {
+      "title": "Zwischen Einsamkeit und Community: Wie gemeinschaftlich ist …",
+      "url": "https://bbb.wikipedia.de/rooms/uk8-3ex-nad-tua/join",
+      "snippet": "Learn using BigBlueButton, the trusted open-source web conferencing solution that enables seamless virtual collaboration and online …"
+    },
+    {
+      "title": "bbb.wikipedia.de",
+      "url": "https://bbb.wikipedia.de/html5client/join?sessionToken=ayck0yniemnblsti",
+      "snippet": "It looks like you're using an older version of a supported browser. Please upgrade your browser for full support."
+    },
+    {
+      "title": "Wiki Loves Earth 2026 – Vorjury Deutschland",
+      "url": "https://www.festivalsommer.wikipedia.de/prejury/",
+      "snippet": "Tool: 2011–2015 Ruben Demusfür Wikimedia Austria (WMAT), graphisch überarbeitet von Martin Kraft"
+    }
+  ]
+}

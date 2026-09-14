@@ -1,0 +1,134 @@
+{
+  "schema": 1,
+  "id": "CogSciMikkel/da_dacy_medium_trf",
+  "slug": "cogscimikkel-da_dacy_medium_trf",
+  "author": "CogSciMikkel",
+  "url": "https://huggingface.co/CogSciMikkel/da_dacy_medium_trf",
+  "created_at": "2026-09-14T09:35:47.000Z",
+  "updated_at": "2026-09-14T10:14:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "spacy",
+  "languages": [
+    "da"
+  ],
+  "tags": [
+    "spacy",
+    "token-classification",
+    "dacy",
+    "danish",
+    "da",
+    "dataset:alexandrainst/dane",
+    "dataset:johanamayer/cdt_ddt_union",
+    "dataset:alexandrainst/dacoref",
+    "dataset:universal-dependencies/universal_dependencies",
+    "base_model:vesteinn/ScandiBERT-no-faroese",
+    "base_model:finetune:vesteinn/ScandiBERT-no-faroese",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 951652869,
+  "storage_human": "952 MB",
+  "base_model": "vesteinn/ScandiBERT-no-faroese",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "NER",
+      "dataset": null,
+      "metric": "NER Precision",
+      "value": 0.8385542169
+    },
+    {
+      "task": "NER",
+      "dataset": null,
+      "metric": "NER Recall",
+      "value": 0.883248731
+    },
+    {
+      "task": "NER",
+      "dataset": null,
+      "metric": "NER F Score",
+      "value": 0.8603213844
+    },
+    {
+      "task": "TAG",
+      "dataset": null,
+      "metric": "TAG (XPOS) Accuracy",
+      "value": 0.9840490798
+    },
+    {
+      "task": "POS",
+      "dataset": null,
+      "metric": "POS (UPOS) Accuracy",
+      "value": 0.9847520009
+    },
+    {
+      "task": "MORPH",
+      "dataset": null,
+      "metric": "Morph (UFeats) Accuracy",
+      "value": 0.9827656716
+    },
+    {
+      "task": "LEMMA",
+      "dataset": null,
+      "metric": "Lemma Accuracy",
+      "value": 0.966177931
+    },
+    {
+      "task": "UNLABELED_DEPENDENCIES",
+      "dataset": null,
+      "metric": "Unlabeled Attachment Score (UAS)",
+      "value": 0.8957868398
+    },
+    {
+      "task": "LABELED_DEPENDENCIES",
+      "dataset": null,
+      "metric": "Labeled Attachment Score (LAS)",
+      "value": 0.8663962137
+    },
+    {
+      "task": "SENTS",
+      "dataset": null,
+      "metric": "Sentences F-Score",
+      "value": 0.976744186
+    }
+  ],
+  "sources": [
+    {
+      "title": "怎么输入带圈数字①②③④⑤⑧㊸㊹㊺㊻㊼㊽㊾㊿ ...",
+      "url": "https://jingyan.baidu.com/article/a3aad71a2b7a69b1fb009630.html",
+      "snippet": "May 16, 2019 · 显然上面的方式只能输入0-20，但是更高的数字却不能输入了，怎么办呢， 更复杂的方式我们也不想学了， 这个一个 …"
+    },
+    {
+      "title": "Windows 11如何添加美式键盘/纯英文输入法-百度经验",
+      "url": "https://jingyan.baidu.com/article/6079ad0e896f9269fe86db20.html",
+      "snippet": "Sep 6, 2021 · 由于Windows版本迭代，Windows10中的添加美式键盘方法与Windows 11已略有不同，本经验操作时系统版本 …"
+    },
+    {
+      "title": "Калькулятор стажа онлайн. Расчёт ...",
+      "url": "https://assistentus.ru/kalkulyator-stazha/",
+      "snippet": "Калькулятор подсчёта страхового (трудового) стажа онлайн. Узнайте свой стаж и сохраните его себе в файл или соцсеть …"
+    },
+    {
+      "title": "Вирус это или нет? (backgroundTaskHost.exe) - egor ...",
+      "url": "https://otvet.mail.ru/question/242352680",
+      "snippet": "backgroundTaskHost.exe - вирус или нет? 1. Нормальный файл: - Официальный процесс Windows - Отвечает за фоновые …"
+    },
+    {
+      "title": "Калькулятор расчета дней отпуска на ...",
+      "url": "https://assistentus.ru/kalkulyator-dnej-otpuska/",
+      "snippet": "Калькулятор для расчета количества дней отпуска онлайн. Узнайте количество заслуженных дней отпуска и сохраните …"
+    }
+  ]
+}

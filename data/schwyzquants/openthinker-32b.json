@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "schwyzquants/OpenThinker-32B",
+  "slug": "schwyzquants-openthinker-32b",
+  "author": "schwyzquants",
+  "url": "https://huggingface.co/schwyzquants/OpenThinker-32B",
+  "created_at": "2026-09-14T09:53:44.000Z",
+  "updated_at": "2026-09-14T09:53:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "dataset:open-thoughts/open-thoughts-114k",
+    "arxiv:2506.04178",
+    "base_model:Qwen/Qwen2.5-32B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-32B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 65539270936,
+  "storage_human": "65.5 GB",
+  "base_model": "Qwen/Qwen2.5-32B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wat is een query? Simpele uitleg + Leer zelf queries maken!",
+      "url": "https://programmeerplaats.nl/wat-is-een-query/",
+      "snippet": "Sep 3, 2022 · Vraag jij je af wat een query is? Dan zit je hier goed! Een query is simpel gezegd een opdracht aan een database. Lees …"
+    },
+    {
+      "title": "Query - Wikipedia",
+      "url": "https://nl.wikipedia.org/wiki/Query",
+      "snippet": "Met een query (Engels voor vraagstelling) wordt in de informatica een opdracht bedoeld die aan een database wordt gegeven om …"
+    },
+    {
+      "title": "Query - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Query",
+      "snippet": "This disambiguation page lists articles associated with the title Query. If an internal link incorrectly led you here, you may wish to …"
+    },
+    {
+      "title": "Query Betekenis: Wat is het en Hoe Gebruik Je het Effectief?",
+      "url": "https://wooms.nl/query-betekenis/",
+      "snippet": "Feb 19, 2025 · In de wereld van computers en databases is een query een precieze instructie. Het vertelt de computer precies welke …"
+    },
+    {
+      "title": "Query - 11 definities - Encyclo",
+      "url": "https://www.encyclo.nl/begrip/Query",
+      "snippet": "Een query verwijst naar een specifieke combinatie van woorden die iemand in een zoekmachine typt om informatie te vinden. Het is …"
+    }
+  ]
+}

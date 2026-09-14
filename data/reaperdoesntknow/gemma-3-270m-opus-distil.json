@@ -5,7 +5,7 @@
   "author": "reaperdoesntknow",
   "url": "https://huggingface.co/reaperdoesntknow/Gemma-3-270m-Opus-Distil",
   "created_at": "2026-05-30T15:43:39.000Z",
-  "updated_at": "2026-09-12T13:15:45.000Z",
+  "updated_at": "2026-09-13T13:15:45.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

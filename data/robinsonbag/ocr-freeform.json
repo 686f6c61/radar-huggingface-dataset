@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Robinsonbag/ocr-freeform",
+  "slug": "robinsonbag-ocr-freeform",
+  "author": "Robinsonbag",
+  "url": "https://huggingface.co/Robinsonbag/ocr-freeform",
+  "created_at": "2026-09-14T10:13:59.000Z",
+  "updated_at": "2026-09-14T10:14:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "ocr-freeform",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Teveel pasjes op zak? Ontdek de slimme oplossing vandaag",
+      "url": "https://leondesign.nl/mapjes-voor-pasjes/",
+      "snippet": "Teveel pasjes op zak? Ontdek de slimme oplossing met onze compacte pashouders. Stijlvol, functioneel en ideaal om al je kaarten …"
+    },
+    {
+      "title": "Amazon.nl: Mapje Voor Pasjes",
+      "url": "https://www.amazon.nl/mapje-voor-pasjes/s?k=mapje+voor+pasjes",
+      "snippet": "Kaarthouder met muntvak, lederen creditcardhouder met veel ruimte voor maximaal 20 kaarten, portemonnee voor dames en heren, …"
+    },
+    {
+      "title": "Mapje voor pasjes - Pasjeshouder kopen? | Korting tot 66% - beslist.nl",
+      "url": "https://www.beslist.nl/products/mode_accessoires/mode_accessoires_4780212/r/mapje_voor_pasjes/",
+      "snippet": "Dit handige kunststof creditcardmapje is een praktische oplossing voor het organiseren van al uw pasjes. Met 8 creditcardvakjes …"
+    },
+    {
+      "title": "ov-mapje - hoesje kopen - ov chipkaart - ovshop.nl",
+      "url": "https://www.ovshop.nl/shop/shopov-chipkaart-accessoiresov-mapje-in-verschillende-kleuren/",
+      "snippet": "Jouw OV chipkaart veilig bewaren kan in een speciaal OV-mapje. Speciaal voor je ov chipkaart, pinpas. Altijd je belangrijkste pasjes …"
+    },
+    {
+      "title": "OVhanger pasjes mapje voor bankpas - Bordeaux - 10 pasjes | bol",
+      "url": "https://www.bol.com/nl/nl/f/mapje-voor-pasjes/9200000109485852/",
+      "snippet": "Het materiaal van het OV-mapje is van kwalitatief hoogwaardig flexibel vinyl en heeft 4 insteekvakjes. Er kunnen in totaal 10 pasjes in …"
+    }
+  ]
+}

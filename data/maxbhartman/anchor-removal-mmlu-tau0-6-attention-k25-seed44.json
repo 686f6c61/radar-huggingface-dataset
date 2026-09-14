@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "maxbhartman/anchor-removal-mmlu-tau0.6-attention-k25-seed44",
+  "slug": "maxbhartman-anchor-removal-mmlu-tau0-6-attention-k25-seed44",
+  "author": "maxbhartman",
+  "url": "https://huggingface.co/maxbhartman/anchor-removal-mmlu-tau0.6-attention-k25-seed44",
+  "created_at": "2026-09-14T01:17:25.000Z",
+  "updated_at": "2026-09-14T01:18:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6442805855,
+  "storage_human": "6.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thunderbird — 受信トレイを身軽に。",
+      "url": "https://www.thunderbird.net/ja/",
+      "snippet": "世界をより良くするためです。 Thunderbirdはユーザーの寄付によって運営されています。 個人データを収集したり、受信トレイに …"
+    },
+    {
+      "title": "Download — Thunderbird",
+      "url": "https://www.thunderbird.net/en-US/thunderbird/all/",
+      "snippet": "Thunderbird is a free email application that’s easy to set up and customize - and it’s loaded with great features!"
+    },
+    {
+      "title": "Thundermail June 2026 update: what we learned after the first few …",
+      "url": "https://blog.thunderbird.net/2026/06/thundermail-june-2026-update-what-we-learned-after-the-first-few-waves-of-invites/",
+      "snippet": "Jun 23, 2026 · The Thunderbird Desktop and Mobile apps remain exactly what they are today: powerful, compatible with any email …"
+    },
+    {
+      "title": "Hello! — Thunderbird",
+      "url": "https://updates.thunderbird.net/en-US/",
+      "snippet": "Thunderbird is a free email application that’s easy to set up and customize - and it’s loaded with great features!"
+    },
+    {
+      "title": "Login | Thunderbird (MZLA Technologies)",
+      "url": "https://supporter.thunderbird.net/login",
+      "snippet": "You help Thunderbird thrive! Log in Please enter the email address used when making your donations."
+    }
+  ]
+}

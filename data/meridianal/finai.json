@@ -5,7 +5,7 @@
   "author": "meridianal",
   "url": "https://huggingface.co/meridianal/FinAI",
   "created_at": "2026-04-05T23:12:28.000Z",
-  "updated_at": "2026-09-13T06:11:54.000Z",
+  "updated_at": "2026-09-14T06:02:46.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -39,8 +39,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1695361577733,
-  "storage_human": "1695.4 GB",
+  "storage_bytes": 1702486236046,
+  "storage_human": "1702.5 GB",
   "base_model": "Qwen/Qwen2.5-0.5B",
   "formats": [
     "safetensors"

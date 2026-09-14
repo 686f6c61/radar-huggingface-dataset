@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "tihon-nth/timesformer-8-10-epochs-5_class_2_p0_full_splited-1789349286.8009965",
+  "slug": "tihon-nth-timesformer-8-10-epochs-5_class_2_p0_full_splited-1789349286-8009965",
+  "author": "tihon-nth",
+  "url": "https://huggingface.co/tihon-nth/timesformer-8-10-epochs-5_class_2_p0_full_splited-1789349286.8009965",
+  "created_at": "2026-09-14T01:28:10.000Z",
+  "updated_at": "2026-09-14T09:15:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "timesformer",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 121262597,
+  "parameters_human": "121.3M",
+  "storage_bytes": 3880657137,
+  "storage_human": "3.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Simplify Finances with Account Aggregation Services | Yodlee",
+      "url": "https://www.yodlee.com/data-aggregation/financial-aggregators",
+      "snippet": "Aug 19, 2025 · Discover how account aggregation services help individuals and businesses manage multiple financial accounts in …"
+    },
+    {
+      "title": "The Complete 2026 Guide to Bank & Retirement Account …",
+      "url": "https://budgetnest.reviewtechcentral.com/the-complete-2026-guide-to-bank-retirement-account-aggregators-tools-deep-analysis-and-how-to-build-a-real-financial-command-center/",
+      "snippet": "Mar 18, 2026 · The Complete 2026 Guide to Bank & Retirement Account Aggregators: Tools, Deep Analysis, and How to Build a …"
+    },
+    {
+      "title": "Best Account Aggregation Software - SAHIDS",
+      "url": "https://sahids.com/business-tools/best-account-aggregation-software/",
+      "snippet": "Jul 17, 2022 · An account aggregation provider is a type of financial technology that allows users to see all of their financial accounts …"
+    },
+    {
+      "title": "Asset Allocation Account Aggregators: A Comprehensive Guide for …",
+      "url": "https://marketclutch.com/asset-allocation-account-aggregators-a-comprehensive-guide-for-modern-investors/",
+      "snippet": "What Is an Asset Allocation Account Aggregator? An asset allocation account aggregator is a financial tool that consolidates data …"
+    },
+    {
+      "title": "5 Best Data Aggregation Software Tools for 2025 | Hubifi Blog",
+      "url": "https://www.hubifi.com/blog/financial-data-aggregation-software",
+      "snippet": "Plan Your Business Finances Running a business? Financial data aggregation software can be your secret weapon for smarter …"
+    }
+  ]
+}

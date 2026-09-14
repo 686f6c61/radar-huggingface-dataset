@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "JMaxCool0518/albedo-qwen3.6-35b-bookend-v125-lora-step50",
+  "slug": "jmaxcool0518-albedo-qwen3-6-35b-bookend-v125-lora-step50",
+  "author": "JMaxCool0518",
+  "url": "https://huggingface.co/JMaxCool0518/albedo-qwen3.6-35b-bookend-v125-lora-step50",
+  "created_at": "2026-09-14T11:28:28.000Z",
+  "updated_at": "2026-09-14T11:28:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:local_king/king_cxxv",
+    "dpo",
+    "lora",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 251295999,
+  "storage_human": "251 MB",
+  "base_model": "local_king/king_cxxv",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gromacs跑完后不知如何分析？ - 知乎",
+      "url": "https://www.zhihu.com/question/273881513",
+      "snippet": "Apr 19, 2018 · gmx_mpi do_dssp -f 100MD.xtc -s MD.tpr -o apoVENMD.xpm 将xpm文件转化为eps文件（eps文件用PS再转化一下格 …"
+    },
+    {
+      "title": "GMX arnaque - Mail - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-19299109-gmx-arnaque",
+      "snippet": "En haut à droite, il y a une icône \"Paramètres\". Tu cliques dessus. S'ouvre une fenêtre, où tu cliques sur l'onglet \"Compte\". Là, tu as …"
+    },
+    {
+      "title": "GMX impossible de se connecter [Résolu] - Mail - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-37781617-gmx-impossible-de-se-connecter",
+      "snippet": "Bonjour, J'utilise la messagerie GMX et depuis ce matin il m'est impossible de me connecter J'ai bien la page d'accueil qui apparait …"
+    },
+    {
+      "title": "gromacs中如何计算残基间的距离？ - 知乎",
+      "url": "https://www.zhihu.com/question/275993242",
+      "snippet": "GROMACS至少可以计算两种距离：质心距离 (center-of-mass distance)和最小距离 (minimum distance)，命令分别是gmx distance, …"
+    },
+    {
+      "title": "MX Simulator - Index page",
+      "url": "https://forum.mxsimulator.com/",
+      "snippet": "Sep 5, 2018 · General Discussion Post anything about MX Simulator here. Please. I'm begging you."
+    }
+  ]
+}

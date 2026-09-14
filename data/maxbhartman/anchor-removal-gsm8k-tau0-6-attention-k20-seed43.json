@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "maxbhartman/anchor-removal-gsm8k-tau0.6-attention-k20-seed43",
+  "slug": "maxbhartman-anchor-removal-gsm8k-tau0-6-attention-k20-seed43",
+  "author": "maxbhartman",
+  "url": "https://huggingface.co/maxbhartman/anchor-removal-gsm8k-tau0.6-attention-k20-seed43",
+  "created_at": "2026-09-14T02:11:08.000Z",
+  "updated_at": "2026-09-14T02:12:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "llama",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6442805855,
+  "storage_human": "6.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Technologie/Éléments théoriques et pratiques/Résistance des …",
+      "url": "https://fr.wikibooks.org/wiki/Technologie/%C3%89l%C3%A9ments_th%C3%A9oriques_et_pratiques/R%C3%A9sistance_des_mat%C3%A9riaux/Formulaire_des_poutres_simples_-_Efforts_de_coh%C3%A9sion",
+      "snippet": "La poutre est un modèle utilisé dans le domaine de la résistance des matériaux et désignant un objet dont la longueur est grande par …"
+    },
+    {
+      "title": "Calcul de l'effort tranchant et ancrage",
+      "url": "https://fr.scribd.com/document/966000568/Calcul-de-l-Effort-Tranchant",
+      "snippet": "Le document présente le calcul de l'effort tranchant pour plusieurs travées, en utilisant des formules spécifiques pour déterminer les …"
+    },
+    {
+      "title": "Calcul l'effort tranchant et le moment | EtudiantGénieCivil",
+      "url": "https://www.etudiantgeniecivil.com/article/calcul-leffort-tranchant-et-le-moment",
+      "snippet": "Mar 25, 2026 · Effort tranchant : Établir son expression dans chaque zone par la méthode des coupures, et vérifier la discontinuité …"
+    },
+    {
+      "title": "Chapitre 9 : Effort tranchant - EPFL",
+      "url": "https://www.epfl.ch/labs/lsms/wp-content/uploads/2018/10/Chap9.pdf",
+      "snippet": "Théorie relative à l’effort rasant ( Equilibre ) Par l’équilibre longitudinal, on fait apparaître l’effort rasant"
+    },
+    {
+      "title": "Justification des poutres à l'effort tranchant - Scribd",
+      "url": "https://fr.scribd.com/document/510309173/Chapitre-11-Effort-tranchant",
+      "snippet": "Il présente les notions d'effort tranchant maximal, effort tranchant réduit, résistance de la section sans armatures transversales, calcul …"
+    }
+  ]
+}

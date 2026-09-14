@@ -5,7 +5,7 @@
   "author": "AmericanoLatte",
   "url": "https://huggingface.co/AmericanoLatte/Lorin_Krea_Lora",
   "created_at": "2026-08-02T09:29:05.000Z",
-  "updated_at": "2026-09-12T18:02:13.000Z",
+  "updated_at": "2026-09-14T05:33:14.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 4458070527,
-  "storage_human": "4.5 GB",
+  "storage_bytes": 7200617991,
+  "storage_human": "7.2 GB",
   "base_model": "krea/Krea-2-Turbo",
   "formats": [
     "diffusers"

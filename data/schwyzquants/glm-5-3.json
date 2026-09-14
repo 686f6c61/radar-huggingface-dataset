@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "schwyzquants/GLM-5.3",
+  "slug": "schwyzquants-glm-5-3",
+  "author": "schwyzquants",
+  "url": "https://huggingface.co/schwyzquants/GLM-5.3",
+  "created_at": "2026-09-14T09:44:59.000Z",
+  "updated_at": "2026-09-14T09:44:59.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_moe_dsa",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "license:other",
+    "eval-results",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 755663627013,
+  "storage_human": "755.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Moda, hogar y belleza | Primark",
+      "url": "https://www.primark.com/es-es",
+      "snippet": "Descubre las últimas tendencias de moda en Primark. Encuentra nuevos modelos para hombre y mujer cada día y planifica tu …"
+    },
+    {
+      "title": "Fashion, Home & Beauty | Primark UK",
+      "url": "https://www.primark.com/en-gb",
+      "snippet": "Shop affordable fashion, home essentials, and beauty products at Primark UK. Discover trendy clothing, stylish accessories, and …"
+    },
+    {
+      "title": "Careers at Primark | Primark Careers (EN)",
+      "url": "https://careers.primark.com/en/",
+      "snippet": "At Primark, people matter. They’re the beating heart of our business and the reason we’ve grown from our first store in Dublin in 1969 …"
+    },
+    {
+      "title": "Carreras y ofertas de empleo en Primark - Primark (ES)",
+      "url": "https://careers.primark.com/es",
+      "snippet": "En Primark lo hacemos todo con entusiasmo, exigencia y dedicación. Si tú también y quieres trabajar en una empresa dinámica, con …"
+    },
+    {
+      "title": "Primark Store List | Where You'll Find Us",
+      "url": "https://corporate.primark.com/en-gb/store-list",
+      "snippet": "4 days ago · Our Store List With 500+ Primark stores worldwide, we’re bringing affordable style from Dublin to New York and beyond. …"
+    }
+  ]
+}

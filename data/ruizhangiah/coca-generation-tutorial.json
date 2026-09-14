@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ruizhangiah/coca-generation-tutorial",
+  "slug": "ruizhangiah-coca-generation-tutorial",
+  "author": "ruizhangiah",
+  "url": "https://huggingface.co/ruizhangiah/coca-generation-tutorial",
+  "created_at": "2026-09-14T09:41:05.000Z",
+  "updated_at": "2026-09-14T09:41:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Manheim Homepage",
+      "url": "https://www.manheim.com/",
+      "snippet": "Manheim has been setting the industry standard for buying and selling used vehicles for over 75 years. As the nation’s leading …"
+    },
+    {
+      "title": "Manheim Locations",
+      "url": "https://site.manheim.com/en/locations",
+      "snippet": "US Locations Manheim locations provide an array of products and services like reconditioning, inspections, dealer financing, …"
+    },
+    {
+      "title": "Manheim Auctions - Sign In",
+      "url": "https://sellcenter.manheim.com/",
+      "snippet": "Sign in to Manheim Auctions to access vehicle services, auctions, and inventory management for dealers and fleets."
+    },
+    {
+      "title": "Sign In - Manheim Auctions",
+      "url": "https://mmr.manheim.com/ui-mmr/?country=US",
+      "snippet": "Change Password? | Trouble Signing In? © Copyright 2026 Manheim. All rights reserved."
+    },
+    {
+      "title": "LotVision - MyManheim",
+      "url": "https://site.manheim.com/solutions/lotvision",
+      "snippet": "Marketplace | lotvision quickly find inventory to preview or pick up It’s FREE and easy to use. Find your vehicles quickly, seamlessly …"
+    }
+  ]
+}

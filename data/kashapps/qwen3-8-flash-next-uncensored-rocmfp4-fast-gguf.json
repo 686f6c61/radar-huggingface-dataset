@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Kashapps/Qwen3.8-Flash-Next-Uncensored-ROCmFP4-FAST-GGUF",
+  "slug": "kashapps-qwen3-8-flash-next-uncensored-rocmfp4-fast-gguf",
+  "author": "Kashapps",
+  "url": "https://huggingface.co/Kashapps/Qwen3.8-Flash-Next-Uncensored-ROCmFP4-FAST-GGUF",
+  "created_at": "2026-09-14T10:19:03.000Z",
+  "updated_at": "2026-09-14T10:19:03.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "rocmfp4",
+    "llama.cpp",
+    "strix-halo",
+    "gfx1151",
+    "rocm",
+    "amd",
+    "ryzen-ai-max",
+    "uncensored",
+    "research",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 95331217792,
+  "storage_human": "95.3 GB",
+  "base_model": "orcarouter/Qwen3.8-Flash-Next-Uncensored, Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "المؤسسة العامة للتأمينات الاجتماعية",
+      "url": "https://www.gosi.gov.sa/ar",
+      "snippet": "مؤسسة حكومية تعنى بتوفير الحماية التأمينية للعاملين في القطاعين العام والخاص وتقديم المنافع لهم ولأفراد أسرهم."
+    },
+    {
+      "title": "gosi أفراد",
+      "url": "https://taminaty.gosi.gov.sa/",
+      "snippet": "The General Organization for Social Insurance provides insurance protection and benefits for public and private sector workers and …"
+    },
+    {
+      "title": "General Organization for Social Insurance",
+      "url": "https://www.gosi.gov.sa/GOSIOnline/Services",
+      "snippet": "$ {assetAssetData.metadescription } تعرف أكثر عن تاريخ التأمينات في التعاملات الإلكترونية، الأرقام والإحصائيات ذات العلاقة،ومبادئ وأسس التأمينات الإلكترونية"
+    },
+    {
+      "title": "المؤسسة العامة للتأمينات الاجتماعية",
+      "url": "https://pension.gosi.gov.sa/",
+      "snippet": "مؤسسة حكومية تقدم خدمات ومعاشات تقاعدية للموظفين في القطاعين المدني والعسكري."
+    },
+    {
+      "title": "General Organization for Social Insurance",
+      "url": "https://www.gosi.gov.sa/GOSIOnline/Registration&locale=ar_SA",
+      "snippet": "ب. إكمال ما لا يقل عن 300 شهر مساهمة. ج. ترك العمل الذي يغطيه نظام التأمينات الاجتماعية."
+    }
+  ]
+}

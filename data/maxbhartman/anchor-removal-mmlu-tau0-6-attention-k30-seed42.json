@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "maxbhartman/anchor-removal-mmlu-tau0.6-attention-k30-seed42",
+  "slug": "maxbhartman-anchor-removal-mmlu-tau0-6-attention-k30-seed42",
+  "author": "maxbhartman",
+  "url": "https://huggingface.co/maxbhartman/anchor-removal-mmlu-tau0.6-attention-k30-seed42",
+  "created_at": "2026-09-14T01:18:17.000Z",
+  "updated_at": "2026-09-14T01:19:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6442805855,
+  "storage_human": "6.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Erste Bank Hungary Zrt. - Magánszemélyek",
+      "url": "https://www.erstebank.hu/hu/ebh-nyito",
+      "snippet": "A pénzügyi termékek teljes skáláját kínálja az Erste Bank Hungary lakossági ügyfelei részére, a lakáshitelektől a személyi kölcsönön …"
+    },
+    {
+      "title": "NetBank belépés - Erste Bank",
+      "url": "https://netbank.erstebank.hu/erste-netbank-eloszto/erste-netbank-eloszto.html",
+      "snippet": "Intézd pénzügyeidet bárhonnan a világból! Intézd pénzügyeidet bárhonnan a világból! NetBank bejelentkezéshez válassz az alábbi …"
+    },
+    {
+      "title": "George - A jövő bankolása",
+      "url": "https://www.erstebank.hu/hu/ebh-nyito/mindennapi-penzugyek/elektronikus-szolgaltatasok/george",
+      "snippet": "Az Erste Bank internetbanki és mobilalkalmazási szolgáltatása segít, hogy kevesebb erőfeszítéssel többet hozz ki a pénzügyeidből."
+    },
+    {
+      "title": "Erste Karrier Portál - Aktuális állásajánlataink",
+      "url": "https://karrier.erstebank.hu/allasok",
+      "snippet": "Téged keresünk! Válogass országos banki állásajánlataink közül, ismerd meg juttatásainkat és add be pályázatod még ma!"
+    },
+    {
+      "title": "NetBank login - Erste Bank",
+      "url": "https://netbank.erstebank.hu/erste-netbank-eloszto/index_en.html",
+      "snippet": "Manage all your accounts from one place, and do your banking whenever or wherever it suits you."
+    }
+  ]
+}

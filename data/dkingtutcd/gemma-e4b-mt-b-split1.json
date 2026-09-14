@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "dkingtutcd/gemma-E4B-mt-b-split1",
+  "slug": "dkingtutcd-gemma-e4b-mt-b-split1",
+  "author": "dkingtutcd",
+  "url": "https://huggingface.co/dkingtutcd/gemma-E4B-mt-b-split1",
+  "created_at": "2026-09-14T10:16:51.000Z",
+  "updated_at": "2026-09-14T10:20:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7996156490,
+  "parameters_human": "8.00B",
+  "storage_bytes": 16024765510,
+  "storage_human": "16.0 GB",
+  "base_model": "unsloth/gemma-4-e4b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "متصفّح الويب Google Chrome",
+      "url": "https://www.google.com/intl/ar/chrome/",
+      "snippet": "أصبح متصفّح Chrome أكثر بساطة وأمانًا وأسرع من ذي قبل بفضل ميزات Google الذكية."
+    },
+    {
+      "title": "Google Chrome – Download the fast, secure browser from Google",
+      "url": "https://www.google.com/intl/en_uk/chrome/",
+      "snippet": "Get more done with the new Google Chrome. A more simple, secure and faster web browser than ever, with Google’s smarts built in. …"
+    },
+    {
+      "title": "تنزيل Google Chrome وتثبيته",
+      "url": "https://support.google.com/chrome/answer/95346?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "يمكنك تنزيل متصفّح الويب Chrome وتثبيته بدون أي رسوم، واستخدامه لتصفّح الويب."
+    },
+    {
+      "title": "Chrome Web Store",
+      "url": "https://chromewebstore.google.com/",
+      "snippet": "Add new features to your browser and personalize your browsing experience."
+    },
+    {
+      "title": "تحديث Google Chrome - جهاز الكمبيوتر - مساعدة متصفح Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95414?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "للتأكد من أنك محمي بآخر تحديثات الأمان، بإمكان Google Chrome إجراء تحديث تلقائي في حال توفّر إصدار جديد من المتصفّح على جهازك. قبل التحديث، ننصحك بالتحقُّق مما إذا كان متصفِّح …"
+    }
+  ]
+}

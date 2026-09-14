@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "christo-pherbcb/beit-multitask-final",
+  "slug": "christo-pherbcb-beit-multitask-final",
+  "author": "christo-pherbcb",
+  "url": "https://huggingface.co/christo-pherbcb/beit-multitask-final",
+  "created_at": "2026-09-14T09:39:57.000Z",
+  "updated_at": "2026-09-14T09:40:02.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Christo et Jeanne-Claude — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Christo_et_Jeanne-Claude",
+      "snippet": "Christo est un ingénieur et un entrepreneur, réalisant des projets techniques alors qu’il n’a aucune formation dans le génie civil. …"
+    },
+    {
+      "title": "Christo and Jeanne-Claude",
+      "url": "https://christojeanneclaude.net/",
+      "snippet": "Official website of artists Christo and Jeanne-Claude. Features photographs and texts about all major projects, early works, and …"
+    },
+    {
+      "title": "Christo and Jeanne-Claude - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Christo_and_Jeanne-Claude",
+      "snippet": "The pair met and married in Paris in the late 1950s. Originally working under Christo's name, they later credited their installations to …"
+    },
+    {
+      "title": "40 ans après, retour sur l'emballage du Pont Neuf par Christo et …",
+      "url": "https://www.vanityfair.fr/article/40-ans-apres-retour-sur-lemballage-du-pont-neuf-par-christo-et-jeanne-claude",
+      "snippet": "Sep 5, 2025 · Cette année, une exposition en plein air revient sur ce projet hors normes et sur les oeuvres, réalisées ou inachevées, …"
+    },
+    {
+      "title": "Christo : « Mes projets peuvent être construits sans moi ».",
+      "url": "https://www.centrepompidou.fr/fr/pompidou-plus/magazine/article/christo-mes-projets-peuvent-etre-construits-sans-moi",
+      "snippet": "Nov 10, 2020 · Christo — Toutes les œuvres d'art que nous vendons pour financer les installations sont faites de mes propres mains. …"
+    }
+  ]
+}

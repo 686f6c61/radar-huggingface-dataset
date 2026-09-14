@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "juliarjoj/blip-multitask-v1",
+  "slug": "juliarjoj-blip-multitask-v1",
+  "author": "juliarjoj",
+  "url": "https://huggingface.co/juliarjoj/blip-multitask-v1",
+  "created_at": "2026-09-14T09:44:53.000Z",
+  "updated_at": "2026-09-14T09:44:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - Miasto i Gmina Pułtusk",
+      "url": "https://pultusk.pl/",
+      "snippet": "Powiat Pułtuski oraz Gmina Pułtusk serdecznie zapraszają mieszkańców na spacer dendrologiczny, podczas którego uczestnicy …"
+    },
+    {
+      "title": "Pułtusk wiadomości, Portal informacyjny Pułtuska i okolic - pultusk24.pl",
+      "url": "https://pultusk24.pl/",
+      "snippet": "SKRADZIONO ŁÓDŹ MOTOROWĄ W PUŁTUSKU! Na błoniach z Zambskach Kościelnych. Piknik militarny i mistrzowskie brzmienia. …"
+    },
+    {
+      "title": "pultuszczak.pl - Tygodnik Pułtuski",
+      "url": "https://www.pultuszczak.pl/",
+      "snippet": "Zamówiono już 250 sztuk www.polsatnews.pl Ostra wymiana zdań w studiu, poszło o raport. \"Bzdury pani opowiada\" …"
+    },
+    {
+      "title": "BIP Urząd Miejski w Pułtusku",
+      "url": "https://bip.pultusk.pl/?lang=PL",
+      "snippet": "Nr 43/2026 Burmistrza Miasta Pułtusk z dnia 2 września 2026 r. zmieniające zarządzenie w sprawie podziału wydziałów, referatów i …"
+    },
+    {
+      "title": "Pułtusk wSieci: wiadomości z Pułtuska i Powiatu Pułtuskiego - wpu24.pl",
+      "url": "https://wpu24.pl/pl/",
+      "snippet": "Ale jest potentatem Internetowym. Naliczyłem pięć portali działających w mieście i powiecie - pultusk.pl, wpu24.pl, pultuszczak.pl, …"
+    }
+  ]
+}

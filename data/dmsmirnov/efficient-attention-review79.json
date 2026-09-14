@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dmsmirnov/efficient-attention-review79",
+  "slug": "dmsmirnov-efficient-attention-review79",
+  "author": "dmsmirnov",
+  "url": "https://huggingface.co/dmsmirnov/efficient-attention-review79",
+  "created_at": "2026-09-14T11:40:41.000Z",
+  "updated_at": "2026-09-14T11:40:46.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "efficient-attention",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MSN | Personalized News, Top Headlines, Live Updates and more",
+      "url": "https://www.msn.com/",
+      "snippet": "Access personalized news, weather, sports, money, travel, entertainment, gaming, and video content on MSN."
+    },
+    {
+      "title": "MSN | Personalised News, Top Headlines, Live Updates and more",
+      "url": "https://www.msn.com/en-gb",
+      "snippet": "Discover top stories, weather, sports, entertainment, lifestyle, and more, curated from leading UK and global news sources on MSN."
+    },
+    {
+      "title": "Spades | Microsoft Casual Games - The Zone",
+      "url": "https://zone.msn.com/en/games/spades",
+      "snippet": "Play Spades, a classic card game, on Microsoft Casual Games Zone for free and enjoy hours of entertainment."
+    },
+    {
+      "title": "Microsoft Casual Games - The Zone",
+      "url": "https://zone.msn.com/en",
+      "snippet": "Microsoft Casual Games - The Zone - Play FREE games from old classics to NEW favorites. There's something for everyone!"
+    },
+    {
+      "title": "MSN Solution Center",
+      "url": "https://answers.msn.com/",
+      "snippet": "The new MSN allows you to customize and personalize your experience on MSN."
+    }
+  ]
+}

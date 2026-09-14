@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "abdnaouri/silma-2b-darija-lora",
+  "slug": "abdnaouri-silma-2b-darija-lora",
+  "author": "abdnaouri",
+  "url": "https://huggingface.co/abdnaouri/silma-2b-darija-lora",
+  "created_at": "2026-09-14T01:43:23.000Z",
+  "updated_at": "2026-09-14T01:44:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "ary",
+    "ar",
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "darija",
+    "morocco",
+    "silma",
+    "arabic-nlp",
+    "maghreb",
+    "gemma-2",
+    "conversational",
+    "cultural-qa",
+    "transliteration",
+    "derej-llm",
+    "text-generation",
+    "ary",
+    "ar",
+    "en",
+    "fr",
+    "base_model:silma-ai/SILMA-Kashif-2B-Instruct-v1.0",
+    "base_model:adapter:silma-ai/SILMA-Kashif-2B-Instruct-v1.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117478128,
+  "storage_human": "117 MB",
+  "base_model": "silma-ai/SILMA-Kashif-2B-Instruct-v1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Район Люблино — карта, что посмотреть, фото, как добраться, …",
+      "url": "https://yandex.ru/maps/213/moscow/geo/rayon_lyublino/53211725/",
+      "snippet": "Москва, Юго-Восточный административный округ, район Люблино — на онлайн карте c фотографиями, панорамами и …"
+    },
+    {
+      "title": "Люблино (район Москвы) — Википедия",
+      "url": "https://ru.wikipedia.org/wiki/%D0%9B%D1%8E%D0%B1%D0%BB%D0%B8%D0%BD%D0%BE_(%D1%80%D0%B0%D0%B9%D0%BE%D0%BD_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D1%8B)",
+      "snippet": "Район расположен в Юго-Восточном административном округе Москвы. Площадь района по данным Мосгорстата — 1751 га …"
+    },
+    {
+      "title": "Управа района Люблино города Москвы",
+      "url": "https://lublino.mos.ru/",
+      "snippet": "Дома для участников столичной программы реновации разрешили построить на участке №7А и 9А на Ставропольской улице. …"
+    },
+    {
+      "title": "Муниципальный округ Люблино",
+      "url": "https://lublino-mos.ru/",
+      "snippet": "Мы рады приветствовать Вас на сайте муниципального округа Люблино в городе Москве."
+    },
+    {
+      "title": "Музей-усадьба Люблино",
+      "url": "https://park-kuzminki.ru/lublino/",
+      "snippet": "Музей-заповедник «Кузьминки-Люблино» - один из самых крупных парков столицы, который сочетает в себе удивительную …"
+    }
+  ]
+}

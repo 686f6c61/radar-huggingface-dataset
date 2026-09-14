@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "RLTT/Affine-sn120-cand4-checkpoints",
+  "slug": "rltt-affine-sn120-cand4-checkpoints",
+  "author": "RLTT",
+  "url": "https://huggingface.co/RLTT/Affine-sn120-cand4-checkpoints",
+  "created_at": "2026-09-14T10:14:48.000Z",
+  "updated_at": "2026-09-14T10:14:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "affine",
+    "sn120",
+    "bittensor",
+    "lora",
+    "moe",
+    "distillation",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1185914912,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "0005650: E fatura Görümtüleyicisi Windows 7 32 bitte E faturamı ...",
+      "url": "https://forum.efatura.gov.tr/view.php?id=5650",
+      "snippet": "Jun 11, 2026 · Daha önce Windows xp işletim sistemim ile e fatura uygulama ve görüntüleyicisini kullanmakta idim. Bilgisayarımda …"
+    },
+    {
+      "title": "0005111: FATURA GÖRÜNTÜLEYİCİ - Gelir İdaresi Başkanlığı E-Fatura …",
+      "url": "https://forum.efatura.gov.tr/print_bug_page.php?bug_id=5111",
+      "snippet": "Feb 20, 2014 · 0005111: FATURA GÖRÜNTÜLEYİCİ - Gelir İdaresi Başkanlığı E-Fatura Forumu"
+    },
+    {
+      "title": "0007105: İSKONTO - Gelir İdaresi Başkanlığı E-Fatura Forumu",
+      "url": "https://forum.efatura.gov.tr/print_bug_page.php?bug_id=7105",
+      "snippet": "Apr 8, 2014 · 0007105: İSKONTO - Gelir İdaresi Başkanlığı E-Fatura Forumu"
+    },
+    {
+      "title": "0007159: e-fatura online sistemden düşürülmesi istegi - Gelir İdaresi ...",
+      "url": "https://forum.efatura.gov.tr/view.php?id=7159",
+      "snippet": "1/4/2014 tarihinden itibaren e-Fatura Uygulamasına kayıtlı kullanıcıların birbirleri ile yapacakları mal teslimi ve hizmet ifalarında e …"
+    },
+    {
+      "title": "0031173: mali mühür başvuruşu - bilgi farklılığı - E-Fatura",
+      "url": "https://forum.efatura.gov.tr/print_bug_page.php?bug_id=31173",
+      "snippet": "Dec 6, 2016 · 0031173: mali mühür başvuruşu - bilgi farklılığı - Gelir İdaresi Başkanlığı E-Fatura Forumu"
+    }
+  ]
+}

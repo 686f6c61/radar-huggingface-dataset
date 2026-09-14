@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "maxbhartman/anchor-removal-mmlu-tau0.6-attention-k5-seed44",
+  "slug": "maxbhartman-anchor-removal-mmlu-tau0-6-attention-k5-seed44",
+  "author": "maxbhartman",
+  "url": "https://huggingface.co/maxbhartman/anchor-removal-mmlu-tau0.6-attention-k5-seed44",
+  "created_at": "2026-09-14T01:22:40.000Z",
+  "updated_at": "2026-09-14T01:23:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6442805855,
+  "storage_human": "6.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zasoby – Google Earth",
+      "url": "https://maps.google.pl/intl/pl/earth/resources/",
+      "snippet": "Google Earth Education Zwiększanie kompetencji geograficznych jako podstawowej umiejętności praktycznej dla uczniów i …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.pl/mapfiles/home3.html",
+      "snippet": "Explore the world with Google Maps, featuring Street View, 3D mapping, navigation, indoor maps and more for your devices."
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.pl/intl/pl/earth/",
+      "snippet": "Google Earth to najbardziej fotorealistyczna cyfrowa wersja naszej planety. Skąd pochodzą zdjęcia? W jaki sposób są łączone? Jak …"
+    },
+    {
+      "title": "Právní doložky k Mapám Google a Google Earth a k rozhraním API Map ...",
+      "url": "https://maps.google.pl/intl/cs_pl/help/legalnotices_maps/",
+      "snippet": "Právní doložky Zásady použití fotek a videí Právní doložky pro firemní zápisy Legal Notices for Google Maps/Google Earth and …"
+    },
+    {
+      "title": "Vulnerabilities – Application Security – Google",
+      "url": "https://maps.google.pl/intl/ru/about/appsecurity/research/",
+      "snippet": "Home Learning Reward Programs Hall of Fame Research Vulnerabilities Conference Presentations Tools Please see our new site: …"
+    }
+  ]
+}

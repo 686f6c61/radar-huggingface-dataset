@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Jongbin-kr/llama-3.1-8b-instruct-4x1-moe-sni-router-ffn-lora-sft-5ep",
+  "slug": "jongbin-kr-llama-3-1-8b-instruct-4x1-moe-sni-router-ffn-lora-sft-5ep",
+  "author": "Jongbin-kr",
+  "url": "https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-4x1-moe-sni-router-ffn-lora-sft-5ep",
+  "created_at": "2026-09-14T02:03:40.000Z",
+  "updated_at": "2026-09-14T06:07:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2742098913,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MojaWyspa.co.uk: Ogłoszenia",
+      "url": "http://www.mojawyspa.co.uk/ogloszenia/20/-Transport-Paczki-Przeprowadzki",
+      "snippet": "Mar 12, 2026 · Polska strona Wielkiej Brytanii Logowanie / założenie konta Ogłoszenia dodaj ogłoszenie - Transport, Paczki, …"
+    },
+    {
+      "title": "MojaWyspa.co.uk — Pożegnanie",
+      "url": "https://www.mojawyspa.co.uk/index.html?mop=modload&name=Forum&file=reply",
+      "snippet": "Dec 28, 2025 · Po wielu latach działalności podjęliśmy trudną decyzję o zamknięciu portalu MojaWyspa.co.uk. Chcielibyśmy z całego …"
+    },
+    {
+      "title": "MojaWyspa.co.uk - Kościół pw. św. Edmunda",
+      "url": "http://www.mojawyspa.co.uk/katalog-firm/15/307/Kosciol-pw-sw-Edmunda",
+      "snippet": "Sep 13, 2025 · Najpopularniejszy Polski Portal Informacyjny. Wielka Brytania - Polak na Wyspie, wiadomosci, porady, forum, prasa …"
+    },
+    {
+      "title": "MojaWyspa.co.uk - Kościół pw. Matki Bożej Częstochowskiej",
+      "url": "http://www.mojawyspa.co.uk/katalog-firm/15/289/Kosciol-pw-Matki-Bozej-Czestochowskiej",
+      "snippet": "May 24, 2024 · MojaWyspa.co.uk - Kościół pw. Matki Bożej Częstochowskiej Polska strona Wielkiej Brytanii Logowanie / założenie …"
+    },
+    {
+      "title": "MojaWyspa.co.uk: Forum - \"Spizarnia\" Polski Sklep w Rochdale - strona 1",
+      "url": "http://www.mojawyspa.co.uk/forum/51/20703/Spizarnia-Polski-Sklep-w-Rochdale",
+      "snippet": "Forum MojaWyspa.co.uk, Brexit, porady, obywatelstwo, paszport, konto, bank"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "arrochi112",
   "url": "https://huggingface.co/arrochi112/onebee-gf-dpo-v1-scale-gguf",
   "created_at": "2026-08-15T07:00:04.000Z",
-  "updated_at": "2026-08-17T07:58:01.000Z",
+  "updated_at": "2026-09-13T14:53:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

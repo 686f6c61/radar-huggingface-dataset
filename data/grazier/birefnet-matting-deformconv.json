@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "Grazier/birefnet-matting-deformconv",
+  "slug": "grazier-birefnet-matting-deformconv",
+  "author": "Grazier",
+  "url": "https://huggingface.co/Grazier/birefnet-matting-deformconv",
+  "created_at": "2026-09-14T09:39:30.000Z",
+  "updated_at": "2026-09-14T10:13:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "matting",
+    "background-removal",
+    "birefnet",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1859836497,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Versement de cotisation obligatoire pour conjoint pour sa retraite",
+      "url": "https://www.lesexpertsretraite.agirc-arrco.fr/questions/2660419-versement-cotisation-obligatoire-conjoint-retraite",
+      "snippet": "Etant Conjointe d'artisan commerçant, mon mari versait une cotisation obligatoire pour le conjoint à la caisse de retraite ( ORGANIC …"
+    },
+    {
+      "title": "à quelle caisse je dois envoyer le certificat de décès",
+      "url": "https://www.lesexpertsretraite.agirc-arrco.fr/questions/2280448-caisse-dois-envoyer-certificat-deces",
+      "snippet": "Malakoff Humanis Retraite Agirc-Arrco ; Alliance Professionnelle Agirc-Arrco dont la section n'a apparemment pas pu être identifiée. …"
+    },
+    {
+      "title": "Impact d'un rachat d'années d'études sur le calcul de la pension de ...",
+      "url": "https://www.lesexpertsretraite.agirc-arrco.fr/questions/2482003-impact-rachat-annees-etudes-calcul-pension-retraite-calcule",
+      "snippet": "En rupture de contrat à 54 ans, je veux calculer la pire des hypothèses, celle de ne plus jamais pourvoir retravailler et cotiser à la …"
+    }
+  ]
+}

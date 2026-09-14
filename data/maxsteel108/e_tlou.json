@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Maxsteel108/E_tlou",
+  "slug": "maxsteel108-e_tlou",
+  "author": "Maxsteel108",
+  "url": "https://huggingface.co/Maxsteel108/E_tlou",
+  "created_at": "2026-09-14T01:32:00.000Z",
+  "updated_at": "2026-09-14T02:05:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 342913024,
+  "storage_human": "343 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Allegro - atrakcyjne ceny - Strona Główna",
+      "url": "https://allegro.pl/",
+      "snippet": "Allegro - Najlepsze ceny oraz gwarancja bezpiecznych zakupów!"
+    },
+    {
+      "title": "Allegro logowanie - Moje Allegro",
+      "url": "https://allegro.pl/logowanie",
+      "snippet": "Allegro.pl - Więcej niż aukcje. Najlepsze oferty na największej platformie handlowej."
+    },
+    {
+      "title": "Allegro Business - platforma zakupowa dla B2B i firm.",
+      "url": "https://business.allegro.pl/",
+      "snippet": "Kupuj wygodnie dla swojej firmy na platformie Allegro Business. Otrzymuj faktury, korzystaj ze specjalnych cen i warunków dla B2B. …"
+    },
+    {
+      "title": "Najlepsze okazje wakacyjne w jednym miejscu - Allegro Wakacje",
+      "url": "https://wakacje.allegro.pl/",
+      "snippet": "Nie trać czasu na szukanie! Zebraliśmy dla Ciebie najgorętsze oferty wakacyjne, wycieczki Last Minute i najlepsze kierunki w jednym …"
+    },
+    {
+      "title": "Dom i ogród - wyposażenie, dekoracje i akcesoria do ... - Allegro",
+      "url": "https://allegro.pl/dzial/dom-i-ogrod",
+      "snippet": "Dom i ogród - Allegro – największy wybór ofert zawsze pod ręką. Dołącz do 18 mln Użytkowników i ciesz się bezpiecznymi zakupami …"
+    }
+  ]
+}

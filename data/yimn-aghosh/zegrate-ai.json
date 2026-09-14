@@ -23,8 +23,8 @@
     "base_model:adapter:Qwen/Qwen2.5-14B-Instruct",
     "region:us"
   ],
-  "likes": 11,
-  "downloads_30d": 571,
+  "likes": 13,
+  "downloads_30d": 878,
   "trending_score": 0,
   "parameters": 14770033664,
   "parameters_human": "14.77B",

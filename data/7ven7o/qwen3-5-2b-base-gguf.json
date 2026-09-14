@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "7ven7o/Qwen3.5-2B-Base-GGUF",
+  "slug": "7ven7o-qwen3-5-2b-base-gguf",
+  "author": "7ven7o",
+  "url": "https://huggingface.co/7ven7o/Qwen3.5-2B-Base-GGUF",
+  "created_at": "2026-09-14T01:54:28.000Z",
+  "updated_at": "2026-09-14T01:56:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:Qwen/Qwen3.5-2B-Base",
+    "base_model:quantized:Qwen/Qwen3.5-2B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1942653248,
+  "parameters_human": "1.94B",
+  "storage_bytes": 1246308896,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3.5-2B-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "github - 知乎",
+      "url": "https://www.zhihu.com/topic/19566035/intro",
+      "snippet": "Apr 10, 2008 · GitHub是全球最大的开源软件开发与管理社区，包括Google、Facebook等众多技术巨头在内都在这里安营扎 …"
+    },
+    {
+      "title": "github如何上传头像github怎么修改头像 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/14bd256ee7fad7fb6c261206.html",
+      "snippet": "Jul 13, 2019 · github如何上传头像github怎么修改头像,githu怎么修改头像"
+    },
+    {
+      "title": "快速入门github网站，了解GitHub网站的基本使用-百度经验",
+      "url": "https://jingyan.baidu.com/article/fea4511ad75f85f7bb9125d8.html",
+      "snippet": "Aug 25, 2018 · 快速入门github网站，了解GitHub网站的基本使用,gitHu是一个面向开源及私有软件项目的托管平台，代码丰富，很多 …"
+    },
+    {
+      "title": "HEU KMS Activator官网是哪个呀？ - 知乎",
+      "url": "https://www.zhihu.com/question/454184882",
+      "snippet": "Apr 12, 2021 · HEU KMS Acttvator的官网是哪个？ 显示全部"
+    },
+    {
+      "title": "github怎么删除代码仓库-百度经验",
+      "url": "https://jingyan.baidu.com/article/215817f788f0c21eda1423f2.html",
+      "snippet": "Nov 12, 2019 · github怎么删除代码仓库,现在有很多的开源的代码仓库存放地方，可以说是有来至世界各地中，进行存放着个人的开发 …"
+    }
+  ]
+}

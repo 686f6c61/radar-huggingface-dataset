@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "bartowski/nex-agi_Nex-N2.5-mini-GGUF",
+  "slug": "bartowski-nex-agi_nex-n2-5-mini-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/nex-agi_Nex-N2.5-mini-GGUF",
+  "created_at": "2026-09-11T07:51:37.000Z",
+  "updated_at": "2026-09-11T09:05:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "image-text-to-text",
+    "base_model:nex-agi/Nex-N2.5-mini",
+    "base_model:quantized:nex-agi/Nex-N2.5-mini",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 10,
+  "downloads_30d": 20403,
+  "trending_score": 10,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 537480410912,
+  "storage_human": "537.5 GB",
+  "base_model": "nex-agi/Nex-N2.5-mini",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SolaX Power Login",
+      "url": "https://www.solaxcloud.com/",
+      "snippet": "SolaX Cloud offers a platform for monitoring and managing SolaX inverters and energy systems efficiently."
+    },
+    {
+      "title": "Login | solax power",
+      "url": "https://doc.solaxcloud.com/en/inst-w/countAndSafe/login.html",
+      "snippet": "Login To log in to the SolaXCloud, you need to do as follows: Select the language as required. Select the server you entered during …"
+    },
+    {
+      "title": "Nex-N2 Pro is the real deal : r/LocalLLaMA - Reddit",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u78mx6/nexn2_pro_is_the_real_deal/",
+      "snippet": "16.06.2026 ... Yes, I saw that. Overall, this model seems to use a LOT more thinking tokens then Qwen 3.5 and Rio. TBH I'm still on the fence on this model ..."
+    },
+    {
+      "title": "SolaX Power Login",
+      "url": "https://ess.solaxcloud.com/",
+      "snippet": "SolaXCloud is a platform for monitoring and managing SolaX inverters and energy systems efficiently."
+    },
+    {
+      "title": "LocalAI models",
+      "url": "https://localai.io/docs/gallery.html",
+      "snippet": "... GGUF build includes the F16 vision projector and uses the embedded chat template. To install the model with the CLI, run: local-ai models install nex-n2.5-mini- ..."
+    }
+  ]
+}

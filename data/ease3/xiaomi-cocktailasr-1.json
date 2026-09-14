@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Ease3/Xiaomi-CocktailASR-1",
+  "slug": "ease3-xiaomi-cocktailasr-1",
+  "author": "Ease3",
+  "url": "https://huggingface.co/Ease3/Xiaomi-CocktailASR-1",
+  "created_at": "2026-08-24T08:22:39.000Z",
+  "updated_at": "2026-08-25T08:16:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "mic_asr",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 446,
+  "trending_score": 11,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35565939984,
+  "storage_human": "35.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MG Motor Narbonne LG E-Motors - 22 Av. Etangs 11100 Narbonne ...",
+      "url": "https://www.pagesjaunes.fr/pros/62707928",
+      "snippet": "Plus d'infos sur MG Motor Narbonne LG E-Motors : MG conçoit ses véhicules en Europe en gardant en tête les spécificités de …"
+    },
+    {
+      "title": "GitHub - xiaomi-research/xiaomi-cocktailasr-1 · GitHub",
+      "url": "https://github.com/xiaomi-research/xiaomi-cocktailasr-1/tree/main/",
+      "snippet": "Xiaomi-CocktailASR-1是小米推出的目标说话人语音识别大模型。模型基于大规模多说话人数据训练，在多个多说话人测试集上达到 SOTA 水平，同时在单说话人场景下性能可与主流单人 ASR ..."
+    },
+    {
+      "title": "MG Narbonne — Concession MG Motor | Groupe LG",
+      "url": "https://lggroupe.com/concession/mg-narbonne/",
+      "snippet": "MG Narbonne : votre concession MG Motor du Groupe LG. Véhicules neufs et d'occasion, service après-vente et location."
+    },
+    {
+      "title": "MG Motor Narbonne-Carcassonne, 22 Avenue des Étangs, Narbonne …",
+      "url": "https://www.findglocal.com/FR/Narbonne/158099000710986/MG-Motor-Narbonne-Carcassonne",
+      "snippet": "Aug 25, 2026 · Découvrez une gamme de voitures électriques et hybrides aux technologies de pointe garantie de 7 ans. Faites …"
+    },
+    {
+      "title": "MG MOTOR NARBONNE LG E-MOTORS à Narbonne | 15 Avis - 1 …",
+      "url": "https://concessionnaire-automobile.autour-de-moi.com/mg-motor-narbonne-lg-e-motors-2868412.html",
+      "snippet": "Mar 23, 2024 · Voici toutes les informations sur le Concessionnaire automobile MG MOTOR NARBONNE LG E-MOTORS qui se …"
+    }
+  ]
+}

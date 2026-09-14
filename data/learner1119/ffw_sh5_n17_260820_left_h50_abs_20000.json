@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "learner1119/ffw_sh5_n17_260820_left_h50_abs_20000",
+  "slug": "learner1119-ffw_sh5_n17_260820_left_h50_abs_20000",
+  "author": "learner1119",
+  "url": "https://huggingface.co/learner1119/ffw_sh5_n17_260820_left_h50_abs_20000",
+  "created_at": "2026-09-14T09:43:05.000Z",
+  "updated_at": "2026-09-14T09:49:15.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "Gr00tN1d7",
+    "robotics",
+    "gr00t",
+    "gr00t-n1.7",
+    "vla",
+    "ffw_sh5",
+    "intermediate-checkpoint",
+    "dataset:learner1119/260820",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 6910507241,
+  "storage_human": "6.9 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kliemannsland – Eventlocation, Spezialbau & Hofbetrieb",
+      "url": "https://www.kliemannsland.de/",
+      "snippet": "Kliemannsland besuchen → Wir laden dich herzlich ein an den Wochenenden von 11 - 17 Uhr unseren Hof samt Aktivitäten, …"
+    },
+    {
+      "title": "Kliemannsland – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Kliemannsland",
+      "snippet": "Das Kliemannsland, ursprünglich ausschließlich als Produktionsstätte gedacht, unterhält inzwischen verschiedene Geschäftszweige. …"
+    },
+    {
+      "title": "Was ist das Kliemannsland? | DIY-Erlebnishof Hamburg & Bremen",
+      "url": "https://www.kliemannsland.de/pages/kliemannsland",
+      "snippet": "Das Kliemannsland ist jedes Wochenende von 11-17 Uhr geöffnet. Komm vorbei, fass alles an, probier alles aus, oder melde dich zu …"
+    },
+    {
+      "title": "Kliemannsland - nordwaerts.de",
+      "url": "https://www.nordwaerts.de/sehenswuerdigkeiten-museen/poi/kliemannsland-100051089/",
+      "snippet": "Das Kliemannsland befindet sich in Rüspel, ein kleines Dorf in der Nähe von Zeven, zwischen Hamburg und Bremen. Mit dem PKW …"
+    },
+    {
+      "title": "Kliemannsland - Lohnt es sich? Aktuell für 2026 (mit Fotos)",
+      "url": "https://www.tripadvisor.de/Attraction_Review-g11740629-d24948624-Reviews-Kliemannsland-Elsdorf_Lower_Saxony.html",
+      "snippet": "Ein Abenteuerspielplatz für Groß und Klein. Spielwiese für Basteln, Werkeln, Musik, Kultur, Liveshows, Kunst und Chaos. Alles was …"
+    }
+  ]
+}

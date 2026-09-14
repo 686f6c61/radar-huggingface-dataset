@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "peonist-ai/halogen-qwen3.8-27b",
+  "slug": "peonist-ai-halogen-qwen3-8-27b",
+  "author": "peonist-ai",
+  "url": "https://huggingface.co/peonist-ai/halogen-qwen3.8-27b",
+  "created_at": "2026-08-26T02:48:24.000Z",
+  "updated_at": "2026-08-26T03:16:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "halogen",
+  "languages": [],
+  "tags": [
+    "halogen",
+    "strix-halo",
+    "gfx1151",
+    "rocm",
+    "amd",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 0,
+  "trending_score": 9,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35878524535,
+  "storage_human": "35.9 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "WhatsApp | Secure and Reliable Free Private Messaging and Calling",
+      "url": "https://www.whatsapp.com/",
+      "snippet": "Use WhatsApp Messenger to stay in touch with friends and family. WhatsApp is free and offers simple, secure, reliable messaging …"
+    },
+    {
+      "title": "Download WhatsApp",
+      "url": "https://www.whatsapp.com/download",
+      "snippet": "Download WhatsApp on your mobile device, tablet or desktop and stay connected with reliable private messaging and calling. …"
+    },
+    {
+      "title": "HOUSAB - WhatsApp",
+      "url": "https://wa.me/",
+      "snippet": "Hosted by WhatsApp 2026 © WhatsApp LLC Privacy & Terms"
+    },
+    {
+      "title": "WhatsApp – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/WhatsApp",
+      "snippet": "Das kalifornische Unternehmen WhatsApp Inc. bietet dabei das eigentliche mobile Anwendungsprogramm (App) namens WhatsApp …"
+    }
+  ]
+}

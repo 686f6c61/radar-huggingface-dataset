@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AmanTrivedi123/AgroSamrt",
+  "slug": "amantrivedi123-agrosamrt",
+  "author": "AmanTrivedi123",
+  "url": "https://huggingface.co/AmanTrivedi123/AgroSamrt",
+  "created_at": "2026-09-14T10:04:53.000Z",
+  "updated_at": "2026-09-14T10:07:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 111472351,
+  "storage_human": "111 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SpeedTest - redditors' internet connection speed",
+      "url": "https://www.reddit.com/r/speedtest/",
+      "snippet": "/r/speedtest is a community for the purpose of discovering how to make Internet connections faster."
+    },
+    {
+      "title": "Is there a way to have PowerShell perform a network speed test",
+      "url": "https://www.reddit.com/r/PowerShell/comments/km45n9/is_there_a_way_to_have_powershell_perform_a/",
+      "snippet": "Is there a way to have PowerShell perform a network speed test every hour and log the results in a CSV?"
+    },
+    {
+      "title": "How to test DigitalOcean speed and ping now?",
+      "url": "https://www.digitalocean.com/community/questions/how-to-test-digitalocean-speed-and-ping-now",
+      "snippet": "Jul 27, 2023 · The DO regional speedtest pages don’t seem to be available anymore. How can I test speed and latency of DO …"
+    },
+    {
+      "title": "10 Best Object Storage Solutions for Cloud Data in 2025",
+      "url": "https://www.digitalocean.com/resources/articles/object-storage-solutions-cloud-data",
+      "snippet": "May 14, 2026 · Discover the top object storage solutions for enterprise needs: their applications, key features, and pricing."
+    },
+    {
+      "title": "Fast internet speeds, but loading websites very slowly. Need help!",
+      "url": "https://www.reddit.com/r/HomeNetworking/comments/s0uzfd/fast_internet_speeds_but_loading_websites_very/",
+      "snippet": "Jan 10, 2022 · Websites take far longer than usual to load up (about 10 seconds just to load up facebook), however when I run a …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "tettoewai",
   "url": "https://huggingface.co/tettoewai/whisper-burmese-myanify",
   "created_at": "2026-06-14T18:30:02.000Z",
-  "updated_at": "2026-09-11T11:44:01.000Z",
+  "updated_at": "2026-09-14T08:39:17.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "automatic-speech-recognition",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": 241734912,
   "parameters_human": "241.7M",
-  "storage_bytes": 26109316019,
-  "storage_human": "26.1 GB",
+  "storage_bytes": 30944343852,
+  "storage_human": "30.9 GB",
   "base_model": "tettoewai/whisper-burmese-myanify",
   "formats": [
     "safetensors"

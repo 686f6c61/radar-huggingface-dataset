@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "GarethBrownora/contrastive35",
+  "slug": "garethbrownora-contrastive35",
+  "author": "GarethBrownora",
+  "url": "https://huggingface.co/GarethBrownora/contrastive35",
+  "created_at": "2026-09-14T09:50:55.000Z",
+  "updated_at": "2026-09-14T09:51:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Diese Corona-Varianten sind im September 2026 aktuell - ADAC",
+      "url": "https://www.adac.de/news/corona-herbst-test-impfung/",
+      "snippet": "3 days ago · Typische Symptome von XFG Stratus können neben Fieber, Husten und Kopfschmerzen auch Abgeschlagenheit, …"
+    },
+    {
+      "title": "Corona-Variante Stratus oder doch Erkältung? Symptome …",
+      "url": "https://www.t-online.de/gesundheit/aktuelles/id_100914926/corona-variante-stratus-oder-doch-erkaeltung-symptome-unterscheiden.html",
+      "snippet": "Oct 13, 2025 · Heiserkeit und laufende Nase: Viele Symptome der neuen Corona-Variante Stratus ähneln denen einer gewöhnlichen …"
+    },
+    {
+      "title": "Neue Corona-Variante BA.3.2: Diese Symptome verursacht „Cicada“",
+      "url": "https://www.swp.de/panorama/neue-corona-variante-ba32-diese-symptome-verursacht-cicadia-78555549.html",
+      "snippet": "Jan 5, 2026 · Eine neue Corona-Subvariante mit der Bezeichnung BA.3.2 oder auch „Cicada“ ist in Deutschland auf dem Vormarsch. …"
+    },
+    {
+      "title": "Neue Corona-Variante \"Cicada\" breitet sich aus",
+      "url": "https://www.n-tv.de/wissen/Neue-Corona-Variante-Cicada-breitet-sich-aus-id30526583.html",
+      "snippet": "Mar 30, 2026 · Typische Symptome bleiben demnach unverändert und ähneln denen früherer Varianten: Dazu zählen unter anderem …"
+    },
+    {
+      "title": "Neue Corona-Variante Cicada: Virus-Mutation breitet sich aus – …",
+      "url": "https://www.news.de/gesundheit/859477991/coronavirus-cicada-variante-symptome-und-verbreitung-mutierte-covid-19-art-breitet-sich-in-europa-und-weltweit-aus/1/",
+      "snippet": "Apr 6, 2026 · Die neue \"Cicada\"-Variante des Corona-Virus breitet sich derzeit weltweit mit rasender Geschwindigkeit aus. Experten …"
+    }
+  ]
+}

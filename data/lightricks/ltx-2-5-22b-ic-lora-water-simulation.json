@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Lightricks/LTX-2.5-22b-IC-LoRA-Water-Simulation",
+  "slug": "lightricks-ltx-2-5-22b-ic-lora-water-simulation",
+  "author": "Lightricks",
+  "url": "https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-Water-Simulation",
+  "created_at": "2026-09-09T08:30:22.000Z",
+  "updated_at": "2026-09-10T17:48:47.000Z",
+  "license": "ltx-2.x-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "video-to-video",
+  "library": "diffusion-single-file",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusion-single-file",
+    "ltx-video",
+    "ic-lora",
+    "ltx-2.5",
+    "video-to-video",
+    "vfx",
+    "water-simulation",
+    "ltx",
+    "en",
+    "base_model:Lightricks/LTX-2.5",
+    "base_model:adapter:Lightricks/LTX-2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 132,
+  "trending_score": 10,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1002587132,
+  "storage_human": "1.0 GB",
+  "base_model": "Lightricks/LTX-2.5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DIE 10 BESTEN Hotels in Baden-Württemberg 2026 - Tripadvisor",
+      "url": "https://www.tripadvisor.de/Hotels-g187276-Baden_Wurttemberg-Hotels.html",
+      "snippet": "Beste Hotels in Baden-Württemberg bei Tripadvisor: Finden Sie 325.606 Bewertungen von Reisenden, authentische Reisefotos und …"
+    },
+    {
+      "title": "Alle Hotels in Baden-Württemberg - badenwurtemberghotel.com",
+      "url": "https://www.badenwurtemberghotel.com/de/all-hotels/",
+      "snippet": "Alle Hotels in Baden-Württemberg. Beste Auswahl an Hotels in Baden-Württemberg mit Kundenbewertungen und Landkarten. …"
+    },
+    {
+      "title": "Hotels in Baden-Württemberg, Deutschland - Übernachtung, Preise …",
+      "url": "https://de.planetofhotels.com/deutschland/baden-wurttemberg",
+      "snippet": "Planen Sie Urlaub? Entdecken Sie die idealen Hotels in Baden-Württemberg, Deutschland. Wählen Sie und buchen Sie Ihre …"
+    },
+    {
+      "title": "Hotels in der Region Baden-Württemberg, Deutschland suchen",
+      "url": "https://www.booking.com/region/de/baden-wurttemberg.de.html?msockid=19bf92329dda6a7d0d8b85e69c476bb1",
+      "snippet": "Sichern Sie sich tolle Angebote bei der Reservierung Ihres Hotels in Baden-Württemberg, Deutschland. Buchen Sie online und …"
+    },
+    {
+      "title": "Unterkünfte in der Region Baden-Württemberg ab 48 € | trivago",
+      "url": "https://www.trivago.de/de/odr/hotels-baden-w%C3%BCrttemberg-deutschland?search=200-222&msockid=19bf92329dda6a7d0d8b85e69c476bb1",
+      "snippet": "Sep 1, 2026 · In Baden-Württemberg kannst Du Dir Hey Lou Hotel Friedrichshafen, Hampton by Hilton Konstanz, Parkhotel St. …"
+    }
+  ]
+}

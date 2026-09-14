@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove50_swapgapnet_b010_r05",
+  "slug": "jeesup-svd-safety-l2_remove50_swapgapnet_b010_r05",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapnet_b010_r05",
+  "created_at": "2026-09-14T09:42:57.000Z",
+  "updated_at": "2026-09-14T10:02:02.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bundestagswahl – vorläufige Wahlergebnisse | Gemeinde Großenkneten",
+      "url": "https://www.grossenkneten.de/portal/meldungen/bundestagswahl-vorlaeufige-wahlergebnisse-900001299-22300.html",
+      "snippet": "Mar 10, 2025 · die Wahlergebnisse aus den Wahllokalen können unter folgendem Link eingesehen werden"
+    },
+    {
+      "title": "Kommunalwahl 2026 in Großenkneten: Imke Haake wird neue",
+      "url": "https://www.nwzonline.de/oldenburg-kreis/kommunalwahl-2026-in-grossenkneten-imke-haake-wird-neue-buergermeisterin_a_4,3,1722441435.html",
+      "snippet": "3 days ago · Imke Haake wird neue Bürgermeisterin der Gemeinde Großenkneten. Bei der Gemeinderatswahl zeichneten sich am …"
+    },
+    {
+      "title": "Kommunalwahl 2026 in Großenkneten: Ergebnisse vom 13",
+      "url": "https://www.nwzonline.de/oldenburg-kreis/kommunalwahl-2026-in-grossenkneten-ergebnisse-vom-13-september-in-live-grafik_a_4,3,1722441435.html",
+      "snippet": "3 days ago · Imke Haake ist neue Bürgermeisterin der Gemeinde Großenkneten. Hier finden Sie die Ergebnisse der Kommunalwahl …"
+    },
+    {
+      "title": "Großenkneten wählt Gemeinderat: CDU setzt sich vor AfD und FDP …",
+      "url": "https://www.kreiszeitung.de/lokales/oldenburg/grossenkneten-ort61344/grossenkneten-waehlt-gemeinderat-cdu-setzt-sich-vor-afd-und-fdp-durch-94485183.html",
+      "snippet": "12 hours ago · Kfz-Kennzeichen: OL Adresse der Verwaltung: Markt 1, 26197 Großenkneten Bei den Daten in diesem Text handelt es …"
+    },
+    {
+      "title": "61,3 Prozent für Haake: Sieg bei der Bürgermeisterwahl in Großenkneten",
+      "url": "https://www.msn.com/de-de/nachrichten/other/61-3-prozent-f%C3%BCr-haake-sieg-bei-der-b%C3%BCrgermeisterwahl-in-gro%C3%9Fenkneten/ar-AA2bWMPK",
+      "snippet": "Nach ihrem Sieg bei der Bürgermeisterwahl in Großenkneten übernimmt Imke Haake (Einzelbewerberin) für acht Jahre die Führung …"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "SOMEHOTMEAL/Qwen3.5-9B-Janus-Abliterated-V2-Safetensors",
+  "slug": "somehotmeal-qwen3-5-9b-janus-abliterated-v2-safetensors",
+  "author": "SOMEHOTMEAL",
+  "url": "https://huggingface.co/SOMEHOTMEAL/Qwen3.5-9B-Janus-Abliterated-V2-Safetensors",
+  "created_at": "2026-09-14T11:32:37.000Z",
+  "updated_at": "2026-09-14T11:32:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3_5",
+    "image-text-to-text",
+    "Qwen3.5",
+    "janus",
+    "abliterated",
+    "merge",
+    "roleplay",
+    "uncensored",
+    "not-for-all-audiences",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9161548800,
+  "parameters_human": "9.16B",
+  "storage_bytes": 62596698159,
+  "storage_human": "62.6 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "konteineriu pastoge skelbimai - Skelbiu.lt",
+      "url": "https://www.skelbiu.lt/paieska/konteineriu-pastoge/",
+      "snippet": "Metalinė 3-jų konteinerių stoginė Estetiška aplinka savo kieme ar sode. Nauja 3 vietų konteinerių pastogė! Ieškote tvirtos ir ilgaamžės …"
+    },
+    {
+      "title": "huihui-ai/Huihui-Qwen3.5-9B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.5-9B-abliterated",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Šiukšlių konteinerių pastogės | Statybapigiau",
+      "url": "https://www.statybapigiau.lt/sodo-prekes/lauko-sandeliukai-irankiu-nameliai/siuksliu-konteineriu-pastoges",
+      "snippet": "Šios pastogės ne tik padeda išlaikyti tvarką, slepiant šiukšlių konteinerius nuo matomumo, bet ir apsaugo juos nuo įvairių aplinkos …"
+    },
+    {
+      "title": "lukey03/Qwen3.5-9B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/lukey03/Qwen3.5-9B-abliterated",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Konteinerių pastogės – UAB Strefa",
+      "url": "https://strefa.lt/produktas/konteineriu-pastoges/",
+      "snippet": "Pastogės yra skirtos laikyti vieną 1100 litrų talpos atliekų konteinerį su plokščiu ir apvaliu dangčiu pgl. normą EN 840 arba du 240 litrų …"
+    }
+  ]
+}

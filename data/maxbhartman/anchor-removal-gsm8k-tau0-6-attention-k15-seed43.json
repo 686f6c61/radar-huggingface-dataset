@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "maxbhartman/anchor-removal-gsm8k-tau0.6-attention-k15-seed43",
+  "slug": "maxbhartman-anchor-removal-gsm8k-tau0-6-attention-k15-seed43",
+  "author": "maxbhartman",
+  "url": "https://huggingface.co/maxbhartman/anchor-removal-gsm8k-tau0.6-attention-k15-seed43",
+  "created_at": "2026-09-14T02:08:08.000Z",
+  "updated_at": "2026-09-14T02:09:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "llama",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6442805855,
+  "storage_human": "6.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Password Manager",
+      "url": "https://passwords.google.com/",
+      "snippet": "Manage your saved passwords in Android or Chrome. They’re securely stored in your Google Account and available across all your …"
+    },
+    {
+      "title": "Microsoft Password Manager | Microsoft Edge",
+      "url": "https://explore.microsoft.com/en-us/edge/features/microsoft-password-manager",
+      "snippet": "Use password management tools in Microsoft Edge to create strong passwords, monitor leaks with Password Monitor, and improve …"
+    },
+    {
+      "title": "Google Password Manager - Manage Your Passwords Safely & Easily",
+      "url": "https://passwords.google/",
+      "snippet": "Manage, store, and create secure passwords with Google Password Manager and easily sign in to sites in your Chrome browser and …"
+    },
+    {
+      "title": "Proton Pass: Free password manager with identity protection | Proton",
+      "url": "https://proton.me/pass",
+      "snippet": "A password manager is computer software or an app on your device where you can securely store your logins and passwords, …"
+    },
+    {
+      "title": "The Best Password Managers We've Tested for 2026 | PCMag",
+      "url": "https://www.pcmag.com/picks/the-best-password-managers",
+      "snippet": "Sep 1, 2026 · Stop using the same login credentials everywhere. The top password managers we've tested create unique, strong …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Toxotes/GEMMA3_FINANCE_V1_GGUF",
+  "slug": "toxotes-gemma3_finance_v1_gguf",
+  "author": "Toxotes",
+  "url": "https://huggingface.co/Toxotes/GEMMA3_FINANCE_V1_GGUF",
+  "created_at": "2026-09-14T10:13:01.000Z",
+  "updated_at": "2026-09-14T10:19:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "gguf",
+    "finance",
+    "banking",
+    "turkish",
+    "gemma3",
+    "lora",
+    "quantized",
+    "text-generation",
+    "tr",
+    "base_model:google/gemma-3-4b-it",
+    "base_model:adapter:google/gemma-3-4b-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 59604992,
+  "parameters_human": "59.6M",
+  "storage_bytes": 2728346816,
+  "storage_human": "2.7 GB",
+  "base_model": "google/gemma-3-4b-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia, die freie Enzyklopädie",
+      "url": "https://www.wikipedia.de/",
+      "snippet": "Wir sind der gemeinnützige Verein hinter der Wikipedia und unterstützen die Ehrenamtlichen, sichern und entwickeln die technische …"
+    },
+    {
+      "title": "Wikipedia, die freie Enzyklopädie",
+      "url": "https://www.wikipedia.de/?campID=src_www.wikipedia.de",
+      "snippet": "Wir sind der gemeinnnützige Verein hinter der Wikipedia und unterstützen die Ehrenamtlichen, sichern und entwickeln die technische …"
+    },
+    {
+      "title": "Wiki Loves Earth 2026 – Vorjury Deutschland",
+      "url": "https://www.festivalsommer.wikipedia.de/prejury/",
+      "snippet": "Tool: 2011–2015 Ruben Demusfür Wikimedia Austria (WMAT), graphisch überarbeitet von Martin Kraft"
+    },
+    {
+      "title": "Zwischen Einsamkeit und Community: Wie gemeinschaftlich ist …",
+      "url": "https://bbb.wikipedia.de/rooms/uk8-3ex-nad-tua/join",
+      "snippet": "Learn using BigBlueButton, the trusted open-source web conferencing solution that enables seamless virtual collaboration and online …"
+    },
+    {
+      "title": "WikidataCon 2027/Call for expressions of interest to host",
+      "url": "https://bbb.wikipedia.de/rooms/plp-qml-xrj-9ib/",
+      "snippet": "Learn using BigBlueButton, the trusted open-source web conferencing solution that enables seamless virtual collaboration and online …"
+    }
+  ]
+}

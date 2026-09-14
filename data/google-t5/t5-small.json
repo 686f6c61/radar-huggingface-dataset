@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "google-t5/t5-small",
+  "slug": "google-t5-t5-small",
+  "author": "google-t5",
+  "url": "https://huggingface.co/google-t5/t5-small",
+  "created_at": "2022-03-02T23:29:04.000Z",
+  "updated_at": "2023-06-30T02:31:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr",
+    "ro",
+    "de",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "tf",
+    "jax",
+    "rust",
+    "onnx",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "summarization",
+    "translation",
+    "en",
+    "fr",
+    "ro",
+    "de",
+    "multilingual",
+    "dataset:c4",
+    "arxiv:1805.12471",
+    "arxiv:1708.00055",
+    "arxiv:1704.05426",
+    "arxiv:1606.05250",
+    "arxiv:1808.09121",
+    "arxiv:1810.12885",
+    "arxiv:1905.10044",
+    "arxiv:1910.09700",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 625,
+  "downloads_30d": 24567648,
+  "trending_score": 8,
+  "parameters": 60506880,
+  "parameters_human": "60.5M",
+  "storage_bytes": 7497402350,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/",
+      "snippet": "Encore plus » Account Options. Connexion; Paramètres de recherche"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=fr",
+      "snippet": "Publicité À propos de Google Google.com in English © 2026 - Confidentialité - Conditions"
+    },
+    {
+      "title": "T5 (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/T5_(language_model)",
+      "snippet": "T5 (Text-to-Text Transfer Transformer) is a series of large language models developed by Google AI introduced in 2019. ... Like the original Transformer model, T5 ..."
+    },
+    {
+      "title": "Téléchargez Google Chrome, le navigateur plus sécurisé et encore …",
+      "url": "https://www.google.com/intl/fr/chrome/",
+      "snippet": "Gagnez en efficacité grâce au nouveau Chrome, un navigateur Internet plus simple, plus sécurisé et encore plus rapide grâce aux …"
+    },
+    {
+      "title": "Google",
+      "url": "http://www.google.gp/?hl=fr",
+      "snippet": "Google disponible en : English Publicité À propos de Google Google.com"
+    }
+  ]
+}

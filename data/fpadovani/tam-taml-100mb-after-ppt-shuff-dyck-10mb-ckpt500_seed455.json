@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/tam-taml-100mb-after-ppt-shuff-dyck-10mb-ckpt500_seed455",
+  "slug": "fpadovani-tam-taml-100mb-after-ppt-shuff-dyck-10mb-ckpt500_seed455",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/tam-taml-100mb-after-ppt-shuff-dyck-10mb-ckpt500_seed455",
+  "created_at": "2026-09-14T11:22:04.000Z",
+  "updated_at": "2026-09-14T11:41:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:fpadovani/tam-taml-100mb-ppt-shuff-dyck-10mb_seed455",
+    "base_model:finetune:fpadovani/tam-taml-100mb-ppt-shuff-dyck-10mb_seed455",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 2747165234,
+  "storage_human": "2.7 GB",
+  "base_model": "fpadovani/tam-taml-100mb-ppt-shuff-dyck-10mb_seed455",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Получаване на изменени по род преводи",
+      "url": "https://support.google.com/translate/answer/9179237?hl=bg",
+      "snippet": "Отстраняване на неизправности при изменените по род преводи Не можете да предлагате редакции: Изменените по род …"
+    },
+    {
+      "title": "Новите неща в Google Преводач: Промени в ...",
+      "url": "https://support.google.com/translate/answer/14754103?hl=bg-bg",
+      "snippet": "Последна актуализация: 31 март 2024 г. – създадена бе нова статия. Изключихме функцията „Принос“ за Преводач. Когато …"
+    },
+    {
+      "title": "Получаване на персонализирани ...",
+      "url": "https://support.google.com/translate/answer/16475590?hl=bg",
+      "snippet": "С новата базирана на AI практическа работа за изучаване на езици в приложението Преводач можете да: персонализирате …"
+    },
+    {
+      "title": "Превод на текст, написан на ръка или с ...",
+      "url": "https://support.google.com/translate/answer/6142469?hl=bg-bg&co=GENIE.Platform%3DDesktop",
+      "snippet": "Посредством виртуалната клавиатура на Google Преводач можете да въвеждате или изписвате думи или символи, които не …"
+    },
+    {
+      "title": "Изтегляне на езици за използване ...",
+      "url": "https://support.google.com/translate/answer/6142473?hl=bg&co=GENIE.Platform%3DiOS",
+      "snippet": "Можете да изтеглите езици на устройството си, за да ги използвате за превод без връзка с интернет. След като изтеглите …"
+    }
+  ]
+}

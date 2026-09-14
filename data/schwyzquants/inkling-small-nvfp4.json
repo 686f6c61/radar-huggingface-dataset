@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "schwyzquants/Inkling-Small-NVFP4",
+  "slug": "schwyzquants-inkling-small-nvfp4",
+  "author": "schwyzquants",
+  "url": "https://huggingface.co/schwyzquants/Inkling-Small-NVFP4",
+  "created_at": "2026-09-14T10:05:33.000Z",
+  "updated_at": "2026-09-14T10:05:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "inkling_mm_model",
+    "image-text-to-text",
+    "conversational",
+    "audio-text-to-text",
+    "moe",
+    "base_model:thinkingmachines/Inkling-Small",
+    "base_model:quantized:thinkingmachines/Inkling-Small",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 156032140138,
+  "parameters_human": "156.03B",
+  "storage_bytes": 170764725303,
+  "storage_human": "170.8 GB",
+  "base_model": "thinkingmachines/Inkling-Small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "oblok, ngoblokngoblok - Kamus Bahasa Jawa-Indonesia KBJI",
+      "url": "https://kbji.kemendikdasmen.go.id/kata/oblok%2C%20ngoblokngoblok",
+      "snippet": "Arti dan padanan kata oblok, ngoblokngoblok dalam Kamus Bahasa Jawa-Indonesia KBJI Balai Bahasa Provinsi Daerah Istimewa …"
+    },
+    {
+      "title": "oblokoblok - Kamus Bahasa Jawa-Indonesia KBJI",
+      "url": "https://kbji.kemendikdasmen.go.id/kata/oblokoblok",
+      "snippet": "Arti dan padanan kata oblokoblok dalam Kamus Bahasa Jawa-Indonesia KBJI Balai Bahasa Provinsi Daerah Istimewa Yogyakarta."
+    },
+    {
+      "title": "Bahasa jawa obok-obok dan artinya adalah - kamusjawa.net",
+      "url": "https://www.kamusjawa.net/bahasa/jawa/obok-obok.html",
+      "snippet": "Pengertian atau arti dari kata bahasa jawa obok-obok adalah aduk-aduk menggunakan tangan (biasanya ke air) Terjemahan bahasa …"
+    },
+    {
+      "title": "Bahasa jawa oblok-oblok dan artinya adalah - kamusjawa.net",
+      "url": "https://www.kamusjawa.net/bahasa/jawa/oblok-oblok.html",
+      "snippet": "Pengertian atau arti dari kata bahasa jawa oblok-oblok adalah nama masakan. Cari arti dari bahasa jawa lainnya. Kamus Bahasa …"
+    },
+    {
+      "title": "Arti kata oblok bahasa Jawa dalam bahasa Indonesia",
+      "url": "https://kata.web.id/kamus/jawa-indonesia/arti-kata/oblok",
+      "snippet": "oblok memarahi habis-habisan Variations oblok Kata terkait obeng obet obin oblak oblok oblong obodan obok-obok obong obong …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "vasilyevtij/matching-efficient",
+  "slug": "vasilyevtij-matching-efficient",
+  "author": "vasilyevtij",
+  "url": "https://huggingface.co/vasilyevtij/matching-efficient",
+  "created_at": "2026-09-14T10:09:58.000Z",
+  "updated_at": "2026-09-14T10:10:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Ads - Get Customers and Sell More with Online Advertising",
+      "url": "https://adwords.google.com/um/signin",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "Google Ads - Get Customers and Sell More with Online Advertising",
+      "url": "https://www.adwords.google.com/select/KeywordToolExternal",
+      "snippet": "Use the URL below to update any links or bookmarks."
+    },
+    {
+      "title": "Eligibility - Google Ads",
+      "url": "https://adwords.google.com/localservices/signup/eligibility",
+      "snippet": "Check Eligibility NEED HELP?"
+    },
+    {
+      "title": "Anonymous Ad Preview Tool - Google Ads",
+      "url": "https://adwords.google.com/anon/AdPreview",
+      "snippet": "Preview a Google search results page to see if your ads appear"
+    },
+    {
+      "title": "Google Ireland Limited Advertising Programme Terms",
+      "url": "https://adwords.google.com/localservices/provider/adwordsterms?gl=GB",
+      "snippet": "Google Ireland Limited Advertising Programme Terms These Google Ireland Limited Advertising Programme Terms (“Terms”) are …"
+    }
+  ]
+}

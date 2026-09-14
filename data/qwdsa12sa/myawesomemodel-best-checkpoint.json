@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "QWDSA12SA/myawesomemodel-best-checkpoint",
+  "slug": "qwdsa12sa-myawesomemodel-best-checkpoint",
+  "author": "QWDSA12SA",
+  "url": "https://huggingface.co/QWDSA12SA/myawesomemodel-best-checkpoint",
+  "created_at": "2026-09-14T11:26:09.000Z",
+  "updated_at": "2026-09-14T11:39:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Convert USD to INR - Unit Converter",
+      "url": "https://www.unitconverters.net/currency/usd-to-inr.htm",
+      "snippet": "1 day ago · Instant free online tool for USD to INR conversion or vice versa. The USD [United States Dollar] to INR [Indian Rupee] …"
+    },
+    {
+      "title": "DOLLAR TO RUPEE TODAY AND FORECAST",
+      "url": "https://dollarrupee.in/",
+      "snippet": "Sep 3, 2026 · Current USD to INR exchange rate equals 95.5400 Rupees per 1 Dollar. Today's range: 95.4300-95.7900. Yesterday's …"
+    },
+    {
+      "title": "USD/INR Currency Exchange Rate & News - Google Finance",
+      "url": "https://www.google.com/finance/quote/USD-INR",
+      "snippet": "Get real-time stock quotes, news, financial details, and analytics for USD / INR from Google Finance."
+    },
+    {
+      "title": "USD to INR - US Dollar to Indian Rupee Conversion - Exchange Rates",
+      "url": "https://www.exchange-rates.org/converter/usd-inr",
+      "snippet": "Use the USD to INR currency converter at Exchange-Rates.org for accurate and up-to-date exchange rates. Easily convert US …"
+    },
+    {
+      "title": "USD/INR - US Dollar Indian Rupee - Investing.com IN",
+      "url": "https://in.investing.com/currencies/usd-inr",
+      "snippet": "Track the USD to INR rate today, live USD INR chart, news, and forecast for the US Dollar to Indian Rupee pair."
+    }
+  ]
+}

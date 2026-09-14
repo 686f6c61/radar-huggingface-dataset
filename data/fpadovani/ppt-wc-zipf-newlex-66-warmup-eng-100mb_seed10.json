@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/ppt-wc-zipf-newlex-66-warmup-eng-100mb_seed10",
+  "slug": "fpadovani-ppt-wc-zipf-newlex-66-warmup-eng-100mb_seed10",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-66-warmup-eng-100mb_seed10",
+  "created_at": "2026-09-14T11:36:48.000Z",
+  "updated_at": "2026-09-14T11:40:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/eng_latn_100mb",
+    "base_model:finetune:goldfish-models/eng_latn_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 86508288,
+  "parameters_human": "86.5M",
+  "storage_bytes": 1384376441,
+  "storage_human": "1.4 GB",
+  "base_model": "goldfish-models/eng_latn_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lidl Filialen in Deutschland",
+      "url": "https://www.lidl.de/s/de-DE/filialen/?msockid=0d45ee57ebd46c4d2b92f983eaaa6d3a",
+      "snippet": "Finde schnell und einfach deine Lidl Filiale mit der Filialsuche oder über das Bundesland. Angebote und Prospekte für Lidl in der Nähe."
+    },
+    {
+      "title": "Lidl lohnt sich - Lokal bei Dir vor Ort und Online",
+      "url": "https://www.lidl.de/?msockid=0d45ee57ebd46c4d2b92f983eaaa6d3a",
+      "snippet": "Wo gibt es tolle Angebote und Aktionen? Natürlich in deinem Lidl um die Ecke. Filialen findest du überall und unsere Prospekte …"
+    },
+    {
+      "title": "Lidl Filialen in Frankfurt - Supermarkt in der Nähe",
+      "url": "https://www.lidl.de/s/de-DE/filialen/frankfurt/?msockid=0d45ee57ebd46c4d2b92f983eaaa6d3a",
+      "snippet": "Finde jetzt eine Lidl Filiale in Frankfurt. auch in deiner Nähe und entdecke aktuelle Angebote und Prospekte."
+    },
+    {
+      "title": "Lidl Höchst im Odenwald Öffnungszeiten Wernher-von-Braun-Straße …",
+      "url": "https://finde-offen.de/hoechst/lidl-3624029",
+      "snippet": "Jul 9, 2026 · Finden Sie ⏰ Öffnungszeiten für Lidl in Wernher-von-Braun-Straße 2-6, 64739, Höchst, Hessen und überprüfen Sie …"
+    },
+    {
+      "title": "Wo finde ich meine nächste Filiale und die Öffnungszeiten?",
+      "url": "https://kundenservice.lidl.de/SelfServiceDE/s/article/Wo-finde-ich-meine-n%C3%A4chste-Filiale-und-die-%C3%96ffnungszeiten",
+      "snippet": "Die Informationen zu den Öffnungszeiten und die Filialen in deiner Nähe findest du hier. Durch die Eingabe deiner fünfstelligen …"
+    }
+  ]
+}

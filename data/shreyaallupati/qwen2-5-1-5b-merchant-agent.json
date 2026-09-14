@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Shreyaallupati/qwen2.5-1.5b-merchant-agent",
+  "slug": "shreyaallupati-qwen2-5-1-5b-merchant-agent",
+  "author": "Shreyaallupati",
+  "url": "https://huggingface.co/Shreyaallupati/qwen2.5-1.5b-merchant-agent",
+  "created_at": "2026-09-14T10:01:21.000Z",
+  "updated_at": "2026-09-14T10:02:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889310,
+  "storage_human": "3.1 GB",
+  "base_model": "unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Como converter formatos como *.enc, *.mus, *.mto, *.rhp em pdf?",
+      "url": "https://forum.cifraclub.com.br/forum/8/79223/",
+      "snippet": "Como converter formatos como *.enc, *.mus, *.mto, *.rhp em pdf? - Cifra Club Como converter formatos como *.enc, *.mus, *.mto, …"
+    },
+    {
+      "title": "电竞国家杯官网已无韩国队，KeSPA 退出 ENC 赛事，这背后的原因是 …",
+      "url": "https://www.zhihu.com/question/2032146840083285043",
+      "snippet": "Apr 27, 2026 · 电竞国家杯官网已无韩国队，KeSPA 退出 ENC 赛事，这背后的原因是什么？ 就在韩国电竞协会宣布退出ENC电竞国 …"
+    },
+    {
+      "title": "Partituras Encore - 1300 partituras .enc num único .rar",
+      "url": "https://forum.cifraclub.com.br/forum/8/143178/",
+      "snippet": "Partituras Encore - 1300 partituras .enc num único .rar - Cifra Club Partituras Encore - 1300 partituras .enc num único .rar"
+    },
+    {
+      "title": "怎样用Excel做标准曲线 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/76a7e409d45244fc3a6e157d.html",
+      "snippet": "Nov 5, 2017 · 怎样用Excel做标准曲线,标准曲线是标准物质的物理/化学属性跟仪器响应之间的函数关系，它在浓度计算中起重要作 …"
+    },
+    {
+      "title": "如何看待韩国电竞协会与沙特 EF 发布共同声明，确认韩国国家队将重 …",
+      "url": "https://www.zhihu.com/question/2036599649444827146",
+      "snippet": "此前，韩国电竞协会 (KeSPA) 曾因不满沙特主办方干预选拔流程而愤然退出 ENC。 但根据最新的官方共同声明（如图），双方已达 …"
+    }
+  ]
+}

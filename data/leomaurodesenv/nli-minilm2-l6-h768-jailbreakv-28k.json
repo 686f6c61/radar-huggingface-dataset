@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "leomaurodesenv/nli-MiniLM2-L6-H768-jailbreakv-28k",
+  "slug": "leomaurodesenv-nli-minilm2-l6-h768-jailbreakv-28k",
+  "author": "leomaurodesenv",
+  "url": "https://huggingface.co/leomaurodesenv/nli-MiniLM2-L6-H768-jailbreakv-28k",
+  "created_at": "2026-09-14T01:13:53.000Z",
+  "updated_at": "2026-09-14T01:33:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:cross-encoder/nli-MiniLM2-L6-H768",
+    "base_model:finetune:cross-encoder/nli-MiniLM2-L6-H768",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 38,
+  "trending_score": 0,
+  "parameters": 82119938,
+  "parameters_human": "82.1M",
+  "storage_bytes": 3284927905,
+  "storage_human": "3.3 GB",
+  "base_model": "cross-encoder/nli-MiniLM2-L6-H768",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Portail e-procedures - INPI",
+      "url": "https://procedures.inpi.fr/",
+      "snippet": "Portail e-services Première visite ? Le portail e-procédures vous permet d'effectuer toutes vos démarches en ligne de manière …"
+    },
+    {
+      "title": "Institut National de la Propriété Industrielle | INPI",
+      "url": "https://www.inpi.fr/",
+      "snippet": "Le Prédiagnostic PI de l'INPI est un accompagnement pour aider les entreprises à comprendre l'importance de la propriété …"
+    },
+    {
+      "title": "Accueil - Data INPI",
+      "url": "https://data.inpi.fr/",
+      "snippet": "Bienvenue sur DATA INPI Je cherche dans les bases Entreprises*, Marques, Brevets et Dessins et modèles Rechercher Recherche …"
+    },
+    {
+      "title": "Rechercher une marque (base marques) | INPI",
+      "url": "https://www.inpi.fr/ressources/propriete-intellectuelle/rechercher-une-marque-base-marques",
+      "snippet": "Jan 16, 2025 · L’INPI met à disposition, sur DATA INPI, une base de données contenant l’ensemble des marques en vigueur en …"
+    },
+    {
+      "title": "Portail e-procedures - INPI",
+      "url": "https://procedures.inpi.fr/?/account/presentation",
+      "snippet": "INPI Connect est un dispositif d'authentification unique. Renseignez le même courriel et mot de passe pour chacun de vos espaces …"
+    }
+  ]
+}

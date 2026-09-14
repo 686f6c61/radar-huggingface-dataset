@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "schwyzquants/Inkling",
+  "slug": "schwyzquants-inkling",
+  "author": "schwyzquants",
+  "url": "https://huggingface.co/schwyzquants/Inkling",
+  "created_at": "2026-09-14T09:48:41.000Z",
+  "updated_at": "2026-09-14T09:48:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "inkling_mm_model",
+    "image-text-to-text",
+    "conversational",
+    "audio-text-to-text",
+    "moe",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 952377623626,
+  "parameters_human": "952.38B",
+  "storage_bytes": 1904786955611,
+  "storage_human": "1904.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Décorial - Aménagement intérieur à Sélestat",
+      "url": "https://www.decorial-selestat.fr/",
+      "snippet": "La société Décorial se situe à Sélestat, dans le département du Bas-Rhin, en Alsace. Nous sommes spécialisés dans l’ …"
+    },
+    {
+      "title": "Décoration & aménagement d'intérieur à Sélestat - Décorial",
+      "url": "https://www.decorial-selestat.fr/nos-produits/",
+      "snippet": "Découvrez les prestations de l’entreprise Décorial : décoration, revêtement de sols, revêtement muraux, rideau et mobiliers à …"
+    },
+    {
+      "title": "DéCORIAL SéLESTAT - Horaires, téléphone, adresse et catalogue",
+      "url": "https://www.promoalert.com/magasin/dcorial-slestat-horaires-telephone-adresse-653-8822-238107-0-0-0.html",
+      "snippet": "Jan 10, 2024 · Retrouvez les horaires d'ouverture, numéro de téléphone, et adresse de votre magasin Décorial Sélestat . Consultez …"
+    },
+    {
+      "title": "Décorial – Design intérieur",
+      "url": "https://decorial.com/",
+      "snippet": "Ce conseil déco est 100 % personnalisé : il comprend l’analyse de votre besoin et une préconisation adaptée. Décorial a toutes les …"
+    },
+    {
+      "title": "Décorial Sélestat (7 Rue Westrich Zi Nord) - Au Magasin",
+      "url": "https://www.au-magasin.fr/67600-selestat/decorial-67217.html",
+      "snippet": "Decorial Sélestat est un établissement proposant la vente et la pose de revêtement de murs et sols (parquets, tapis, moquettes, …"
+    }
+  ]
+}

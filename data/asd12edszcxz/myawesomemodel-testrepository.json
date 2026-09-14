@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ASD12EDSZCXZ/MyAwesomeModel-TestRepository",
+  "slug": "asd12edszcxz-myawesomemodel-testrepository",
+  "author": "ASD12EDSZCXZ",
+  "url": "https://huggingface.co/ASD12EDSZCXZ/MyAwesomeModel-TestRepository",
+  "created_at": "2026-09-14T11:33:40.000Z",
+  "updated_at": "2026-09-14T11:39:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bankinter Empresas",
+      "url": "https://empresas.bankinter.pt/",
+      "snippet": "O Bankinter, S.A., Sucursal em Portugal encontra-se registado na Comissão do Mercado de Valores Mobiliários, estando autorizado …"
+    },
+    {
+      "title": "Bankinter Empresas | Bankinter - Bankinter",
+      "url": "https://www.bankinter.pt/empresas",
+      "snippet": "Conheça as nossas Soluções especializadas, para todos os tipos de empresas. Efetue a gestão dos seus negócios de forma simples …"
+    },
+    {
+      "title": "Bankinter Empresas",
+      "url": "https://empresas.bankinter.com/secure/es/",
+      "snippet": "Access Bankinter Empresas for secure online banking, manage corporate accounts, and perform business transactions with ease."
+    },
+    {
+      "title": "Bankinter Empresas",
+      "url": "https://empresas.bankinter.pt/empresas/index_pt.html",
+      "snippet": "O Bankinter, S.A., Sucursal em Portugal encontra-se registado na Comissão do Mercado de Valores Mobiliários, estando autorizado …"
+    },
+    {
+      "title": "Banca online - PLAN Empresas | Bankinter",
+      "url": "https://www.bankinter.com/empresas/",
+      "snippet": "En Bankinter tenemos un plan para las empresas. Conoce todas nuestras cuentas remuneradas, sin comisiones, tarjetas, gestión de …"
+    }
+  ]
+}

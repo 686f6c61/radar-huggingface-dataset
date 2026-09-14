@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "schwyzquants/GLM-5.3-Flash",
+  "slug": "schwyzquants-glm-5-3-flash",
+  "author": "schwyzquants",
+  "url": "https://huggingface.co/schwyzquants/GLM-5.3-Flash",
+  "created_at": "2026-09-14T09:43:27.000Z",
+  "updated_at": "2026-09-14T09:43:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "license:mit",
+    "eval-results",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321323031390,
+  "parameters_human": "321.32B",
+  "storage_bytes": 328357673114,
+  "storage_human": "328.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hac ve Umre Hizmetleri Genel Müdürlüğü",
+      "url": "https://hacumre.diyanet.gov.tr/",
+      "snippet": "2027 Yılı Hac Organizasyonu kapsamında sağlık personeli test sınavı sonuçları açıklandı. 2027 Yılı Hac Organizasyonu kapsamında …"
+    },
+    {
+      "title": "Hac ön kayıt ve kayıt yenileme işlemleri başladı",
+      "url": "https://hacumre.diyanet.gov.tr/Pages/Detay.aspx?TermStoreId=d1c465d3-b48d-4994-a4c4-24cd73d2f1ae&TermSetId=6385e58b-aec7-443a-aa78-bf80722fd204&TermId=0a3e00b7-a0d4-44af-ab29-c0d6f32dd137&UrlSuffix=835/hac-%C3%B6n-kay%C4%B1t-ve-kay%C4%B1t-yenileme-i%C5%9Flemleri-ba%C5%9Flad%C4%B1",
+      "snippet": "May 18, 2026 · 6) Hac ön kayıt ve kayıt yenileme işlemlerinizi, “Hac Durum Sorgulama\" ekranından mutlaka kontrol ediniz. 7) Kura, …"
+    },
+    {
+      "title": "Hac ön kayıt ve kayıt yenileme işlemleri başladı",
+      "url": "https://hacumre.diyanet.gov.tr/Pages/Detay.aspx?TermStoreId=d1c465d3-b48d-4994-a4c4-24cd73d2f1ae&TermSetId=6385e58b-aec7-443a-aa78-bf80722fd204&TermId=0a3e00b7-a0d4-44af-ab29-c0d6f32dd137&UrlSuffix=781/hac-%C3%B6n-kay%C4%B1t-ve-kay%C4%B1t-yenileme-i%C5%9Flemleri-ba%C5%9Flad%C4%B1",
+      "snippet": "Aug 11, 2025 · Hac ön kayıt ve kayıt yenileme işlemleri, 11 Ağustos - 5 Eylül 2025 tarihleri arasında e-Devlet üzerinden yapılacak. …"
+    },
+    {
+      "title": "2027 Yılı Hac Kesin Kayıt İşlemleri",
+      "url": "https://hacumre.diyanet.gov.tr/Pages/Detay.aspx?TermStoreId=d1c465d3-b48d-4994-a4c4-24cd73d2f1ae&TermSetId=6385e58b-aec7-443a-aa78-bf80722fd204&TermId=0a3e00b7-a0d4-44af-ab29-c0d6f32dd137&UrlSuffix=853/2027-y%C4%B1l%C4%B1-hac-kesin-kay%C4%B1t-i%C5%9Flemleri",
+      "snippet": "Jul 30, 2026 · 2027 yılı hac kesin kayıt işlemlerine dair detaylı bilgiye; Hac ve Umre Hizmetleri Genel Müdürlüğümüzün 0 (850) 260 …"
+    },
+    {
+      "title": "2026 Yılı Hac Organizasyonu Sağlık Personeli Müracaatları Başlıyor",
+      "url": "https://hacumre.diyanet.gov.tr/Pages/Detay.aspx?TermStoreId=d1c465d3-b48d-4994-a4c4-24cd73d2f1ae&TermSetId=6385e58b-aec7-443a-aa78-bf80722fd204&TermId=0a3e00b7-a0d4-44af-ab29-c0d6f32dd137&UrlSuffix=795/2026-y%C4%B1l%C4%B1-hac-organizasyonu-sa%C4%9Fl%C4%B1k-personeli-m%C3%BCracaatlar%C4%B1-ba%C5%9Fl%C4%B1yor",
+      "snippet": "\"2026 Yılı Hac Organizasyonu\" kapsamında sağlık personeli müracaatları, 15-22 Ekim 2025 tarihleri arasında Hac ve Umre …"
+    }
+  ]
+}

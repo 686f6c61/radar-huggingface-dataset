@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "maxbhartman/anchor-removal-mmlu-tau0.6-attention-k5-seed42",
+  "slug": "maxbhartman-anchor-removal-mmlu-tau0-6-attention-k5-seed42",
+  "author": "maxbhartman",
+  "url": "https://huggingface.co/maxbhartman/anchor-removal-mmlu-tau0.6-attention-k5-seed42",
+  "created_at": "2026-09-14T01:20:55.000Z",
+  "updated_at": "2026-09-14T01:21:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6442805855,
+  "storage_human": "6.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp: Bilder und Videos auf PC übertragen – So funktioniert’s",
+      "url": "https://blog.deinhandy.de/whatsapp-bilder-und-videos-auf-pc-uebertragen-so-funktionierts",
+      "snippet": "Mit der Zeit sammeln sich in WhatsApp-Gesprächen viele Bilder und Videos an. Möchtest Du Speicherplatz freischaufeln und die …"
+    },
+    {
+      "title": "WhatsApp Web: Fotos und Videos auf PC downloaden - CHIP",
+      "url": "https://www.chip.de/ratgeber/wifi-dsl-internet/whatsapp-web-fotos-und-videos-auf-pc-downloaden_a947be78-96a6-4acd-b8e9-21f94c90945f.html",
+      "snippet": "Aug 25, 2023 · Wählen Sie die Konversation aus, von der Sie die Fotos oder Videos auf Ihren PC herunterladen möchten. Klicken …"
+    },
+    {
+      "title": "WhatsApp Daten sichern · So klappt die Sicherung am PC",
+      "url": "https://www.win-tipps.de/whatsapp-daten-sichern/",
+      "snippet": "Oct 1, 2025 · Die Antwort lautet: WhatsApp-Daten lassen sich entweder über ein Backup aus der App selbst exportieren oder über …"
+    },
+    {
+      "title": "So speichern Sie WhatsApp-Videos auf dem PC ️ - Campus Habitat",
+      "url": "https://tecnobits.com/de/So-speichern-Sie-WhatsApp-Videos-auf-dem-PC/",
+      "snippet": "Jan 7, 2024 · Öffnen Sie WhatsApp Web und suchen Sie nach dem Video, das Sie auf Ihren PC herunterladen möchten. Klicken Sie …"
+    },
+    {
+      "title": "WhatsApp: Videos und Bilder auf PC übertragen - GIGA",
+      "url": "https://www.giga.de/apps/whatsapp-fuer-android/tipps/whatsapp-videos-und-bilder-auf-pc-uebertragen/",
+      "snippet": "Jun 12, 2018 · Wir zeigen, wie ihr alte WhatsApp-Videos und -Bilder auf den PC übertragen und so auslagern könnt. Die folgende …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "chaowangman/3d-scene-understanding-reading",
+  "slug": "chaowangman-3d-scene-understanding-reading",
+  "author": "chaowangman",
+  "url": "https://huggingface.co/chaowangman/3d-scene-understanding-reading",
+  "created_at": "2026-09-14T02:01:10.000Z",
+  "updated_at": "2026-09-14T02:01:15.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "3d-scene-understanding",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hampton Inn Columbus Hotel in Downtown Columbus - Hilton",
+      "url": "https://www.hilton.com/en/hotels/cmhhshx-hampton-suites-columbus-downtown/?msockid=204c7949cc8f657e1c7c6e9dcd14641e",
+      "snippet": "Book a room at the Hampton Inn and Suites Downtown Columbus, Ohio hotel and enjoy everything Columbus offers. We’re centrally …"
+    },
+    {
+      "title": "Hampton Inn and Suites Ohio State University Hotel - Hilton",
+      "url": "https://www.hilton.com/en/hotels/cmhunhx-hampton-suites-columbus-university-area/?msockid=204c7949cc8f657e1c7c6e9dcd14641e",
+      "snippet": "Hampton Inn and Suites stands out among Ohio State University hotels with spacious accommodations, friendly staff, free WiFi and …"
+    },
+    {
+      "title": "HAMPTON INN & SUITES COLUMBUS-DOWNTOWN - 2026 Reviews (Ohio) - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Hotel_Review-g50226-d223750-Reviews-Hampton_Inn_Suites_Columbus_Downtown-Columbus_Ohio.html",
+      "snippet": "The Hampton Inn and Suites Columbus Downtown hotel is located one mile south of The Ohio State University in the vibrant Arena …"
+    },
+    {
+      "title": "Hampton Inn & Suites Columbus-Downtown, Ohio (Hotel) (US) Deals",
+      "url": "https://www.booking.com/hotel/us/hampton-inn-suites-columbus-downtown-oh.html?msockid=204c7949cc8f657e1c7c6e9dcd14641e",
+      "snippet": "Major attractions, including the campus of Ohio State University and the Arena Grand Theatre, can be found near the Hampton Inn …"
+    },
+    {
+      "title": "Hampton Inn & Suites Columbus-Easton Area (Hotel) (US) Deals",
+      "url": "https://www.booking.com/hotel/us/hampton-inn-suites-columbus-easton-area.html?msockid=204c7949cc8f657e1c7c6e9dcd14641e",
+      "snippet": "Begin the morning with the Hampton Inn Columbus-Easton Area in the state-of-the-art fitness center or with a swim in the indoor pool. …"
+    }
+  ]
+}

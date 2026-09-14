@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "malim1994/mixer-generation",
+  "slug": "malim1994-mixer-generation",
+  "author": "malim1994",
+  "url": "https://huggingface.co/malim1994/mixer-generation",
+  "created_at": "2026-09-14T09:34:05.000Z",
+  "updated_at": "2026-09-14T09:34:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "One drive到底要不要卸载? - 知乎",
+      "url": "https://www.zhihu.com/question/569151755",
+      "snippet": "个人版（白色云彩）把退出藏在暂停同步里了，但是效果一样。 电脑送的可能是买断制（会修bug但是不会有新功能新外 …"
+    },
+    {
+      "title": "如何把桌面移除出onedrive（取消桌面同步）？ - 知乎",
+      "url": "https://www.zhihu.com/question/435855217",
+      "snippet": "你需要的取消桌面同步微软的OneDrive云盘的设置步骤： 1、在“此电脑”中找到“OneDrive\"文件夹，右键点击它，然后选择”设置“，就 …"
+    },
+    {
+      "title": "如何更改OneDrive账户 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/c910274bb38c56cd361d2d97.html",
+      "snippet": "Jan 19, 2018 · 如何更改OneDrive账户,我们在电脑切换了微软账户之后，有可能OeDrive的账户还是之前一个账户的，这个时候我们就 …"
+    },
+    {
+      "title": "通过OneDrive实现文件共享-百度经验",
+      "url": "https://jingyan.baidu.com/article/0320e2c1c36f005a86507b47.html",
+      "snippet": "Nov 7, 2021 · 通过OneDrive实现文件共享,office365软件目前使用广泛，不同电脑之间通过OeDrive进行文件共享成为了可能。下面介 …"
+    },
+    {
+      "title": "Windows的Onedrive怎么用？ - 知乎",
+      "url": "https://www.zhihu.com/question/59942275",
+      "snippet": "你把OneDrive理解成同步盘，而不是网盘，就清楚了。 百度云之类的网盘，通常用的上传文件指的是把你的文件复制一份到网盘，本 …"
+    }
+  ]
+}

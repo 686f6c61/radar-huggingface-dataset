@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "lllyasviel/ControlNet-v1-1",
+  "slug": "lllyasviel-controlnet-v1-1",
+  "author": "lllyasviel",
+  "url": "https://huggingface.co/lllyasviel/ControlNet-v1-1",
+  "created_at": "2023-04-12T22:41:03.000Z",
+  "updated_at": "2023-04-25T22:46:12.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 4131,
+  "downloads_30d": 0,
+  "trending_score": 8,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28087340418,
+  "storage_human": "28.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Яндекс — быстрый поиск в интернете",
+      "url": "https://ya.ru/",
+      "snippet": "Яндекс предлагает быстрый поиск информации в интернете, включая сайты, изображения, музыку и товары. Используйте …"
+    },
+    {
+      "title": "Яндекс — быстрый поиск в интернете",
+      "url": "https://yandex.kz/",
+      "snippet": "Яндекс, найдётся всё: сайты, изображения, музыка, товары. Решайте любые задачи — от повседневных вопросов до …"
+    },
+    {
+      "title": "Yandex — fast Internet search",
+      "url": "https://yandex.com/",
+      "snippet": "Yandex is a technology company that builds intelligent products and services powered by machine learning. Our goal is to help …"
+    },
+    {
+      "title": "Яндекс — быстрый поиск в интернете",
+      "url": "https://yandex.ru/chrome/newtab",
+      "snippet": "Яндекс, найдётся всё: сайты, изображения, музыка, товары. Решайте любые задачи — от повседневных вопросов до …"
+    },
+    {
+      "title": "Яндекс — быстрый поиск в интернете",
+      "url": "https://yandex.by/",
+      "snippet": "Яндекс — это удобный поиск в интернете, который помогает находить сайты, изображения, музыку и многое другое. …"
+    }
+  ]
+}
