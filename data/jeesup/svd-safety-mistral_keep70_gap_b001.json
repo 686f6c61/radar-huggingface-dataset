@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-mistral_keep70_gap_b001",
+  "slug": "jeesup-svd-safety-mistral_keep70_gap_b001",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-mistral_keep70_gap_b001",
+  "created_at": "2026-09-14T16:43:04.000Z",
+  "updated_at": "2026-09-14T16:47:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.2",
+    "base_model:finetune:mistralai/Mistral-7B-Instruct-v0.2",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 14483991459,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    },
+    {
+      "title": "adidas三叶草鞋码38 2/3相当于多少？_百度知道",
+      "url": "https://zhidao.baidu.com/question/97430404.html",
+      "snippet": "adidas三叶草鞋码38 2/3相当于多少？根据阿迪达斯运动鞋的码数换算，382／3就是38．7码。adidas正品鞋都是以2／3码递增的，有 …"
+    },
+    {
+      "title": "为什么kappa的价位和adidas、nike价位一样可知名度差很多？",
+      "url": "https://www.zhihu.com/question/28203618",
+      "snippet": "分析Kappa品牌与Adidas、Nike在价格和知名度上的差异，探讨其市场定位和品牌策略。"
+    },
+    {
+      "title": "如何评价一下阿迪达斯 F50 次顶级黄色 FG 足球鞋 Adidas F30 TRX FG",
+      "url": "https://www.zhihu.com/question/20963791",
+      "snippet": "Apr 18, 2013 · 首先确认一点：题主贴出来的鞋应该是价格990-1100元的Adidas F30 TRX FG。 由于鞋头的字样有区分，所以基本准确 …"
+    },
+    {
+      "title": "手把手教你，如何辨别Adidas鞋的真假-百度经验",
+      "url": "https://jingyan.baidu.com/article/a17d52855ca2bf8099c8f27b.html",
+      "snippet": "Dec 4, 2012 · 4、顾名思义，就是ADIDAS给该物品的编号，可以在GOOGEL或ADIDAS官方搜索出鞋的样子。 5、出厂日期，凭借这 …"
+    }
+  ]
+}

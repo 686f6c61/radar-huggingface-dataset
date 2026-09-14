@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "FAIRC/token-averaging-seed_replicates-model1_50m_seed1",
+  "slug": "fairc-token-averaging-seed_replicates-model1_50m_seed1",
+  "author": "FAIRC",
+  "url": "https://huggingface.co/FAIRC/token-averaging-seed_replicates-model1_50m_seed1",
+  "created_at": "2026-09-14T15:04:12.000Z",
+  "updated_at": "2026-09-14T15:06:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 599182250,
+  "storage_human": "599 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "E-Mail Center Login",
+      "url": "https://email.t-online.de/em/?p=mailbox",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "News & E-Mail bei t-online | Politik, Sport, Unterhaltung & Ratgeber",
+      "url": "https://www.t-online.de/",
+      "snippet": "Aktuelle News aus Politik, Sport, Unterhaltung, Wirtschaft & Finanzen | Ratgeber Leben, Gesundheit und Heim & Garten | E-Mail und …"
+    },
+    {
+      "title": "Zum E-Mail Center | Telekom",
+      "url": "https://www.telekom.de/e-mail/zum-e-mail-center",
+      "snippet": "Bitte melden Sie sich mit Ihrem Telekom-Login an. Jetzt anmelden."
+    },
+    {
+      "title": "Telekom Login",
+      "url": "https://homepagedesigner.telekom.de/",
+      "snippet": "Telekom Login © Telekom Deutschland GmbH 26.43.0"
+    },
+    {
+      "title": "Telekom Login | Telekom Hilfe",
+      "url": "https://www.telekom.de/hilfe/vertrag-rechnung/telekom-login",
+      "snippet": "Auf dieser Seite finden Sie alle Informationen zum Telekom Login wie Berechtigungen, Sicherheitsvorgaben und …"
+    }
+  ]
+}

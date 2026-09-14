@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "arsis-dev/ukisai-Swift-Qwen3.8-27b-MTPLX",
+  "slug": "arsis-dev-ukisai-swift-qwen3-8-27b-mtplx",
+  "author": "arsis-dev",
+  "url": "https://huggingface.co/arsis-dev/ukisai-Swift-Qwen3.8-27b-MTPLX",
+  "created_at": "2026-09-14T14:17:56.000Z",
+  "updated_at": "2026-09-14T14:28:32.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "mtplx",
+    "qwen3_8",
+    "apple-silicon",
+    "4-bit",
+    "mtp",
+    "speculative-decoding",
+    "image-text-to-text",
+    "conversational",
+    "base_model:ukisai/Swift-Qwen3.8-27b",
+    "base_model:quantized:ukisai/Swift-Qwen3.8-27b",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356723952,
+  "parameters_human": "27.36B",
+  "storage_bytes": 16932085487,
+  "storage_human": "16.9 GB",
+  "base_model": "ukisai/Swift-Qwen3.8-27b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GEA Hilge TP 3050 Handbücher - ManualsLib",
+      "url": "https://www.manualslib.de/products/Gea-Hilge-Tp-3050-12252170.html",
+      "snippet": "Online ansehen oder herunterladen Gea Hilge TP 3050 Betriebsanleitung."
+    },
+    {
+      "title": "GEA TP 3050 Handbücher - ManualsLib",
+      "url": "https://www.manualslib.de/products/Gea-Tp-3050-12725084.html",
+      "snippet": "Online ansehen oder herunterladen Gea TP 3050 Betriebsanleitung."
+    },
+    {
+      "title": "GEA Hilge TP einstufige normalsaugende Kreiselpumpe",
+      "url": "https://www.gea.com/de/products/pumps-valves-flow-components/centrifugal-hygienic-pumps/smartpump-hygienic-pumps/centrifugal-pumps-series-tp/",
+      "snippet": "Die TP ist die ideale Pumpe für Standardanwendungen mit geringer Komplexität – ohne Kompromisse bei der Qualität. Die …"
+    },
+    {
+      "title": "Gea Hilge TP 3050 Manuals | ManualsLib",
+      "url": "https://www.manualslib.com/products/Gea-Hilge-Tp-3050-12425314.html",
+      "snippet": "View online or download Gea Hilge TP 3050 Operating Instructions Manual."
+    },
+    {
+      "title": "GEA HILGE TP 3050 OPERATING INSTRUCTIONS MANUAL Pdf Download",
+      "url": "https://www.manualslib.com/manual/3894542/Gea-Hilge-Tp-3050.html",
+      "snippet": "View and Download GEA Hilge TP 3050 operating instructions manual online. Centrifugal Pump TPS, selfpriming with IEC motor. …"
+    }
+  ]
+}

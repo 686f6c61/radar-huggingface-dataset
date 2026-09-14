@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "angryelizar/ruBert-base-sentiment-classifier-v2",
+  "slug": "angryelizar-rubert-base-sentiment-classifier-v2",
+  "author": "angryelizar",
+  "url": "https://huggingface.co/angryelizar/ruBert-base-sentiment-classifier-v2",
+  "created_at": "2026-09-14T13:37:57.000Z",
+  "updated_at": "2026-09-14T13:38:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 178309635,
+  "parameters_human": "178.3M",
+  "storage_bytes": 713262084,
+  "storage_human": "713 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Resultat Pmu d'aujourd'hui, Resultat PMU du Jour, Resultat PMU …",
+      "url": "http://www.resultat-pmu.fr/",
+      "snippet": "Resultat PMU d'Aujourd'hui du Quinté du Jour - Arrivée et Rapport du Quinté, Tiercé et du Quarté avec resultat-pmu.fr. Résultat pmu …"
+    },
+    {
+      "title": "Résultat pmu Tiercé Quarté Quinté du jour, arrivées PMU et rapports",
+      "url": "https://www.turf-fr.com/arrivees-rapports-pmu",
+      "snippet": "15 hours ago · Suivez les courses PMU et résultats en direct avec TURF FR et retrouvez également les résultats de nos pronostics …"
+    },
+    {
+      "title": "PMU : Turf, Programme des courses du jour, Résultats, e.Quinté+",
+      "url": "https://www.pmu.fr/turf/",
+      "snippet": "15 hours ago · Pariez en ligne sur toutes les courses hippiques du PMU: pronostics, résultats, cotes, arrivées, rapports, vidéo des …"
+    },
+    {
+      "title": "Résultat PMU - Arrivées et Rapports PMU du jour | Turfomania",
+      "url": "https://www.turfomania.fr/arrivees-rapports/",
+      "snippet": "Résultat PMU en direct : consultez les arrivées et rapports PMU (points de vente et PMU.fr) du jour et archives. PMU résultats …"
+    },
+    {
+      "title": "Résultats PMU et rapports PMU en direct du Lundi 14 ... - Canalturf",
+      "url": "https://www.canalturf.com/courses_liste_resultats_rapports.php",
+      "snippet": "15 hours ago · Retrouvez les rapports et résultat PMU et du quinté en direct sur CANAL TURF. Tous les résultats tiercé, des courses …"
+    }
+  ]
+}

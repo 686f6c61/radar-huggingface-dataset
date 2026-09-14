@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "rahaf088/arabic-hate-speech-marbert-lora",
+  "slug": "rahaf088-arabic-hate-speech-marbert-lora",
+  "author": "rahaf088",
+  "url": "https://huggingface.co/rahaf088/arabic-hate-speech-marbert-lora",
+  "created_at": "2026-09-14T14:08:50.000Z",
+  "updated_at": "2026-09-14T14:08:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1192672,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Private Search Engine - Brave Search",
+      "url": "https://search.brave.com/",
+      "snippet": "Search the Web. Privately. Truly useful results, AI-powered answers, & more. All from an independent index. No profiling, no bias, no …"
+    },
+    {
+      "title": "Ask Brave",
+      "url": "https://search.brave.com/ask",
+      "snippet": "Brave Search uses private usage metrics to estimate overall activity and performance. You can turn off this option in Settings. Learn …"
+    },
+    {
+      "title": "Brave Search",
+      "url": "https://search.brave.com/?lang=ja-jp",
+      "snippet": "Brave Search uses private usage metrics to estimate overall activity and performance. You can turn off this option in Settings. 詳しく …"
+    },
+    {
+      "title": "Motor de búsqueda privado - Buscador de Brave - Brave Search",
+      "url": "https://search.brave.com/?lang=es",
+      "snippet": "Brave Search utiliza estadísticas de uso privados para estimar el rendimiento y la actividad general. Puedes desactivar esta opción …"
+    },
+    {
+      "title": "Set Brave Search as default search engine",
+      "url": "https://search.brave.com/default",
+      "snippet": "Thanks for your interest in Brave Search! Unfortunately, it’s not supported as a default search engine for your current browser. …"
+    }
+  ]
+}

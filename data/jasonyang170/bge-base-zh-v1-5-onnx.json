@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "JasonYANG170/bge-base-zh-v1.5-ONNX",
+  "slug": "jasonyang170-bge-base-zh-v1-5-onnx",
+  "author": "JasonYANG170",
+  "url": "https://huggingface.co/JasonYANG170/bge-base-zh-v1.5-ONNX",
+  "created_at": "2026-09-14T16:59:49.000Z",
+  "updated_at": "2026-09-14T17:10:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers.js",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "feature-extraction",
+    "webgpu",
+    "zh",
+    "base_model:BAAI/bge-base-zh-v1.5",
+    "base_model:quantized:BAAI/bge-base-zh-v1.5",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 610526152,
+  "storage_human": "611 MB",
+  "base_model": "BAAI/bge-base-zh-v1.5",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OSHA Training Institute Education Centers - Occupational Safety and ...",
+      "url": "https://www.osha.gov/otiec/",
+      "snippet": "Find Training on Many Topics The OSHA Training Institute (OTI) Education Centers are a national network of non-profit organizations …"
+    },
+    {
+      "title": "Home | Occupational Safety and Health Administration",
+      "url": "https://www.osha.gov/",
+      "snippet": "Provide all required training for landscaping and horticulture workers. Register to participate in Safe + Sound Week, Aug. 10-16. …"
+    },
+    {
+      "title": "Training - Occupational Safety and Health Administration",
+      "url": "https://www.osha.gov/training",
+      "snippet": "Training Requirements and Resources Before engaging in any potentially hazardous activities, workers must receive appropriate …"
+    },
+    {
+      "title": "Courses By Title and Description | Occupational Safety and Health ...",
+      "url": "https://www.osha.gov/otiec/courses/title_description",
+      "snippet": "Courses By Title and Description Select the course name to view the course description and prerequisites. Courses By Title and …"
+    },
+    {
+      "title": "Find a Trainer - Occupational Safety and Health Administration",
+      "url": "https://www.osha.gov/training/outreach/find-a-trainer/",
+      "snippet": "Find a Trainer Take an OSHA 10-Hour or 30-Hour Class Find an OSHA-authorized trainer for construction, general industry, maritime …"
+    }
+  ]
+}

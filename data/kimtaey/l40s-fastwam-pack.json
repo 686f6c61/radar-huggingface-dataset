@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "kimtaey/l40s-fastwam-pack",
+  "slug": "kimtaey-l40s-fastwam-pack",
+  "author": "kimtaey",
+  "url": "https://huggingface.co/kimtaey/l40s-fastwam-pack",
+  "created_at": "2026-09-14T15:32:57.000Z",
+  "updated_at": "2026-09-14T15:34:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13145650932,
+  "storage_human": "13.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Leboncoin une erreur technique est survenue - Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-37772507-site-le-bon-coin-une-erreur-technique-est-survenue",
+      "snippet": "Jan 14, 2023 · J'ai un mac oset depuis quelques jours le site le bon coin affiche la mention \" Une erreur technique est survenue\" puis …"
+    },
+    {
+      "title": "60 Millions de Consommateurs — Accueil",
+      "url": "https://www.60millions-mag.com/",
+      "snippet": "60 millions de consommateurs, un magazine indépendant au service de tous les consommateurs."
+    },
+    {
+      "title": "Envoyer de l’argent avec Wero : comment ça marche",
+      "url": "https://www.60millions-mag.com/banque-assurance/article/envoyer-de-l-argent-avec-wero-comment-ca-marche-25444-20260304/",
+      "snippet": "Mar 4, 2026 · 2. Qui peut l’utiliser ? « Tout client particulier dont la banque propose le service, soit la quasi-totalité des …"
+    },
+    {
+      "title": "Impossible valider une annonce sur leboncoin - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-35372076-impossible-valider-une-annonce-sur-leboncoin",
+      "snippet": "May 20, 2018 · depuis 1 semaine même problème pour moi quand je valide mon annonce il reste bloquée et je vois le message …"
+    },
+    {
+      "title": "Problème sur ma messagerie Leboncoin - Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-35435929-probleme-sur-ma-messagerie-leboncoin",
+      "snippet": "Le bon coin sera bientot obligé de se maquer avec le tat pour lister les ventes que vous faites.. je n ai plus confiance en ce site de de …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ASD1ZXA/MyAwesomeModel",
+  "slug": "asd1zxa-myawesomemodel",
+  "author": "ASD1ZXA",
+  "url": "https://huggingface.co/ASD1ZXA/MyAwesomeModel",
+  "created_at": "2026-09-14T10:54:36.000Z",
+  "updated_at": "2026-09-14T11:02:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2026年了都，大家现在单机游戏都在哪里下？ - 知乎",
+      "url": "https://www.zhihu.com/question/1973937257695170709",
+      "snippet": "注意，是单机游戏。单机游戏。 直接推荐一个个人体验最好的游戏资源站（没有之一） 这个网站不论 游戏数量，还是 每日更新量 都 …"
+    },
+    {
+      "title": "byrut.rog怎么进入 俄罗斯游戏网站byrut进入方法最新_百度知道",
+      "url": "https://zhidao.baidu.com/question/469050891439827045.html",
+      "snippet": "May 1, 2025 · byrut.rog怎么进入 俄罗斯游戏网站byrut进入方法最新"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "梦幻西游黑风山副本抄写大全_百度知道",
+      "url": "https://zhidao.baidu.com/question/580670653.html",
+      "snippet": "为了副本速度嘛~知道的帮下忙啦！不全帮忙补充1.此有故彼有此生故彼生此无故彼无此灭故彼灭2.一切行无常生者必有尽不生则不死 …"
+    },
+    {
+      "title": "这个网址是potplayer官网吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/509011663",
+      "snippet": "Feb 21, 2022 · ———————————————— 为了让更多人能搜到这个帖子，做点SEO。 PotPlayer是什么？PotPlayer怎么下 …"
+    }
+  ]
+}

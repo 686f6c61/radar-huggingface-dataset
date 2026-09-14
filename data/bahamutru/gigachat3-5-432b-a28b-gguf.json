@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "BahamutRU/GigaChat3.5-432B-A28B-GGUF",
+  "slug": "bahamutru-gigachat3-5-432b-a28b-gguf",
+  "author": "BahamutRU",
+  "url": "https://huggingface.co/BahamutRU/GigaChat3.5-432B-A28B-GGUF",
+  "created_at": "2026-09-14T13:04:00.000Z",
+  "updated_at": "2026-09-14T13:04:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "instruct",
+    "moe",
+    "multilingual",
+    "long-context",
+    "tool-use",
+    "hybrid-attention",
+    "linear-attention",
+    "mtp",
+    "text-generation",
+    "ru",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 433747019520,
+  "parameters_human": "433.75B",
+  "storage_bytes": 1946445802464,
+  "storage_human": "1946.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "讨论精选 - 豆瓣",
+      "url": "https://www.douban.com/group/",
+      "snippet": "一个独一无二的网络社区：每一天，都有来自全球 813 个城市的数百万用户汇聚在这里。加入小组，即可获得租房、工作、海淘...，达 …"
+    },
+    {
+      "title": "为什么在英语里，咖啡馆有时被写作「café」？ - 知乎",
+      "url": "https://www.zhihu.com/question/265817449",
+      "snippet": "Oct 3, 2020 · 而在英语中，对应“咖啡”这个含义的是 coffee。 英语单词coffee借自荷兰语koffie，而荷兰语koffie可能是从土耳其语、阿 …"
+    },
+    {
+      "title": "【亲测可用】推荐几个免费音乐下载网站（无损） - 豆瓣",
+      "url": "https://www.douban.com/note/874416591/",
+      "snippet": "Jul 16, 2025 · 最近为了刻录音乐CD，特意在网上找了一些可以免费下载无损音乐的网站，在此给大家分享。 虽然买车比较早，但是车 …"
+    },
+    {
+      "title": "Intel CPU的代号/家族/微架构/第几代怎么理解？ - 知乎",
+      "url": "https://www.zhihu.com/question/450709783",
+      "snippet": "首先第七代，Kaby Lake家族，微架构仍然是Skylake。 到了第八代，情况变的复杂了起来。 第八代有Coffee Lake家族，Whiskey …"
+    },
+    {
+      "title": "Recommended restaurants / cafes / bars in Oxgangs - My Local Forum",
+      "url": "https://www.mylocalforum.co.uk/area/oxgangs-edinburgh-23909/recommended-restaurants-cafes-bars-in-oxgangs-172/",
+      "snippet": "Aug 4, 2026 · Find out what restaurants, cafes and bars people are recommending in Oxgangs in Edinburgh. Find places to have a …"
+    }
+  ]
+}

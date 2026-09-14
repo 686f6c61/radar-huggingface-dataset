@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "AIOKiet/envit5-base-iwslt2015-en-vi",
+  "slug": "aiokiet-envit5-base-iwslt2015-en-vi",
+  "author": "AIOKiet",
+  "url": "https://huggingface.co/AIOKiet/envit5-base-iwslt2015-en-vi",
+  "created_at": "2026-09-14T17:18:01.000Z",
+  "updated_at": "2026-09-14T17:20:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 275102976,
+  "parameters_human": "275.1M",
+  "storage_bytes": 1101547751,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-mistral_keep60_disc_b010",
+  "slug": "jeesup-svd-safety-mistral_keep60_disc_b010",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-mistral_keep60_disc_b010",
+  "created_at": "2026-09-14T16:48:23.000Z",
+  "updated_at": "2026-09-14T17:10:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.2",
+    "base_model:finetune:mistralai/Mistral-7B-Instruct-v0.2",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 14483991459,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alle Sieger der Weltmeisterschaft - Fussballdaten",
+      "url": "https://www.fussballdaten.de/wm/alle-sieger/",
+      "snippet": "Auflistung aller bisherigen Titelträger der Weltmeisterschaft und Finalgegner inklusive einer Darstellung wie oft ein Verein den Titel …"
+    },
+    {
+      "title": "Weltmeisterschaft: Titelträger - kicker",
+      "url": "https://www.kicker.de/weltmeisterschaft/titeltraeger",
+      "snippet": "Titelträger Ewige Tabelle Einsätze Torjäger Elfmeter Karten Weltmeisterschaft: Titelträger"
+    },
+    {
+      "title": "Weltmeister Liste - Die WM-Sieger seit 1930 nach dem WM Finale 2026",
+      "url": "https://www.fussballnationalmannschaft.net/weltmeister-liste-5-123271118.html",
+      "snippet": "Jul 20, 2026 · Die folgende Übersicht zeigt jedes WM-Endspiel seit der Premiere 1930, jeweils mit Gastgeber, Weltmeister, …"
+    },
+    {
+      "title": "Weltmeisterschaft - Alle Sieger | Transfermarkt",
+      "url": "https://www.transfermarkt.de/weltmeisterschaft/erfolge/pokalwettbewerb/FIWC",
+      "snippet": "Dies ist eine Übersicht aller Titelträger der Weltmeisterschaften in chronologischer Reihenfolge. Es werden unter anderem auch die …"
+    },
+    {
+      "title": "WM - Siegerliste - sport.de",
+      "url": "https://www.sport.de/fussball/fifa-wm/historie-siegerliste/",
+      "snippet": "WM - Siegerliste: hier gibt es die Liste aller Sieger."
+    }
+  ]
+}

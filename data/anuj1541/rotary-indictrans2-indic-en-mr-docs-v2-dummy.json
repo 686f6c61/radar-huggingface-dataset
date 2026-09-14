@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "anuj1541/rotary-indictrans2-indic-en-mr-docs-v2-dummy",
+  "slug": "anuj1541-rotary-indictrans2-indic-en-mr-docs-v2-dummy",
+  "author": "anuj1541",
+  "url": "https://huggingface.co/anuj1541/rotary-indictrans2-indic-en-mr-docs-v2-dummy",
+  "created_at": "2026-09-14T14:02:36.000Z",
+  "updated_at": "2026-09-14T14:04:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "mr",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "RotaryIndicTrans",
+    "text2text-generation",
+    "translation",
+    "indictrans2",
+    "marathi",
+    "custom_code",
+    "mr",
+    "en",
+    "base_model:anuj1541/rotary-indictrans2-indic-en-mr-docs",
+    "base_model:finetune:anuj1541/rotary-indictrans2-indic-en-mr-docs",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 586378050,
+  "storage_human": "586 MB",
+  "base_model": "anuj1541/rotary-indictrans2-indic-en-mr-docs",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Trøndelag – Wikipedia",
+      "url": "https://no.wikipedia.org/wiki/Tr%C3%B8ndelag",
+      "snippet": "Trøndelag er Norges tredje største fylke i areal og det femte største i folketall med over 450 000 innbyggere. Innbyggerne i Trøndelag …"
+    },
+    {
+      "title": "Trøndelag fylkeskommune",
+      "url": "http://www.trondelagfylke.no/",
+      "snippet": "30.08.2026 Offisiell åpning av gang- og sykkelvei i Stod Trøndelag fylkeskommune inviterer til offisiell åpning av den nye gang- og …"
+    },
+    {
+      "title": "Trøndelag – fylke – Store norske leksikon",
+      "url": "https://snl.no/Tr%c3%b8ndelag",
+      "snippet": "Trøndelag er en landsdel og et fylke i Norge, etter at de to tidligere fylkene Sør-Trøndelag og Nord-Trøndelag ble slått sammen 1. …"
+    },
+    {
+      "title": "Trøndelag - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tr%C3%B8ndelag",
+      "snippet": "Trøndelag is one of the most fertile regions of Norway, with large agricultural output. The majority of the production ends up in the …"
+    },
+    {
+      "title": "Explore Trøndelag",
+      "url": "https://trondelag.com/",
+      "snippet": "1000 år med Norge slik vi kjenner det. Bli med på feiringen av Trøndelag og Norge, og bli kjent med historiene bak tusen år med …"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "BakerBakingThingsIn4Oven/CORe-Pico-V2",
+  "slug": "bakerbakingthingsin4oven-core-pico-v2",
+  "author": "BakerBakingThingsIn4Oven",
+  "url": "https://huggingface.co/BakerBakingThingsIn4Oven/CORe-Pico-V2",
+  "created_at": "2026-09-14T14:07:58.000Z",
+  "updated_at": "2026-09-14T14:09:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3",
+    "text-generation",
+    "causal-lm",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 3438022031,
+  "storage_human": "3.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/nca_5pct_100M_computematched_adamwppt_1e18_s2_2026-09-14_13-57-31_289109-pt",
+  "slug": "alexkstern-nca_5pct_100m_computematched_adamwppt_1e18_s2_2026-09-14_13-57-31_289109-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/nca_5pct_100M_computematched_adamwppt_1e18_s2_2026-09-14_13-57-31_289109-pt",
+  "created_at": "2026-09-14T14:03:45.000Z",
+  "updated_at": "2026-09-14T14:04:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_nca-paper-share20-2048",
+    "seed_2",
+    "case_c",
+    "lr_trapezoid",
+    "depth_20",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4891726521,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Walmart Stores Near Me - Locations, Hours & Services",
+      "url": "https://www.walmart.com/store-finder",
+      "snippet": "Enter your location to find a nearby store. Use the Walmart store locator to find your nearest Walmart locations, check store hours, …"
+    },
+    {
+      "title": "Walmart | Save Money. Live better.",
+      "url": "https://www.walmart.com/",
+      "snippet": "The easiest way to shop, check out & track your orders – anywhere you are. Shop Walmart.com today for Every Day Low Prices. …"
+    },
+    {
+      "title": "How do I find information about my local stores? - Walmart Corporate",
+      "url": "https://corporate.walmart.com/askwalmart/how-do-i-find-information-about-my-local-stores",
+      "snippet": "The quickest and easiest way to find a store near you is to use our store finder. Simply enter your zip code or city and state, and we’ll …"
+    },
+    {
+      "title": "Walmart Map – Walmart Locator",
+      "url": "https://www.walmartlocator.com/walmart-map/",
+      "snippet": "Aug 7, 2021 · The map below shows the location of Walmart and Walmart Supercenter stores, Sam’s Club, and Neighborhood …"
+    },
+    {
+      "title": "Walmart - Store Locator & Hours",
+      "url": "https://www.storeopeninghours.com/retailers/walmart",
+      "snippet": "Stay with us and don't miss any of them! Walmart operates different types of stores, such as supercenters, discount stores or …"
+    }
+  ]
+}

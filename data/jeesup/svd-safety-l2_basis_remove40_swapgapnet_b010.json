@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_basis_remove40_swapgapnet_b010",
+  "slug": "jeesup-svd-safety-l2_basis_remove40_swapgapnet_b010",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_basis_remove40_swapgapnet_b010",
+  "created_at": "2026-09-14T17:00:18.000Z",
+  "updated_at": "2026-09-14T17:01:59.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2025-2026 Tüm Sınıfların 1. Dönem 1. Yazılı Soruları ve Değerlendirme ...",
+      "url": "https://www.webdeogren.com/2025-2026-tum-siniflarin-1-donem-1-yazili-sorulari-ve-degerlendirme-calismalari-ornek.html",
+      "snippet": "Oct 15, 2025 · 2025-2026 Tüm Sınıfların 1. Dönem 1. Yazılı Soruları ve Değerlendirme Çalışmaları (Örnek) Tüm sınıf ve ders bazında …"
+    },
+    {
+      "title": "2025-2026 Tüm Kademelerin Sene Başı Öğretmenler Kurulu Toplantı ...",
+      "url": "https://www.webdeogren.com/2025-2026-tum-kademelerin-sene-basi-ogretmenler-kurulu-toplanti-tutanaklari-ornek.html",
+      "snippet": "Aug 27, 2025 · 2025-2026 Tüm Kademelerin Sene Başı Öğretmenler Kurulu Toplantı Tutanakları (Örnek) Öğretmenler Odası – …"
+    },
+    {
+      "title": "Web'de Öğren",
+      "url": "https://www.webdeogren.com/",
+      "snippet": "Web'de Öğren - Birlikte En Doğruya 11.08.2026 16:04 - İller arası mazerete bağlı yer değiştirme kapsamında başvuruda bulunmasına …"
+    },
+    {
+      "title": "Meb Yönetici Ve Öğretmen Faaliyet Ekders Ödenme Durum Tablosu …",
+      "url": "https://www.webdeogren.com/meb-yonetici-ve-ogretmen-faaliyet-ekders-odenme-durum-tablosu.html",
+      "snippet": "Apr 26, 2021 · Meb Yönetici Ve Öğretmen Faaliyet Ekders Ödenme Durum Tablosu (Kadrolu Nisan 2021) Resmi yazı ve görüş …"
+    },
+    {
+      "title": "Web'de Öğren - webdeogren.com",
+      "url": "https://www.webdeogren.com/?action=tpmod;dl=item8349",
+      "snippet": "Web'de Öğren - Birlikte En Doğruya Sitemizde yayınlanan içeriklerin büyük bir kısmı sitemize ait yada içerik sahiplerinin izinleri …"
+    }
+  ]
+}

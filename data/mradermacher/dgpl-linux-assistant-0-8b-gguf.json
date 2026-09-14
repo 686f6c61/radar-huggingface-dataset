@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/dgpl-linux-assistant-0.8b-GGUF",
+  "slug": "mradermacher-dgpl-linux-assistant-0-8b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/dgpl-linux-assistant-0.8b-GGUF",
+  "created_at": "2026-09-14T12:55:48.000Z",
+  "updated_at": "2026-09-14T13:13:06.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "linux",
+    "devsecops",
+    "terminal-copilot",
+    "sysadmin",
+    "ollama",
+    "qwen",
+    "dgpl",
+    "en",
+    "base_model:dgpl/dgpl-linux-assistant-0.8b",
+    "base_model:quantized:dgpl/dgpl-linux-assistant-0.8b",
+    "license:gpl-3.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 7455586816,
+  "storage_human": "7.5 GB",
+  "base_model": "dgpl/dgpl-linux-assistant-0.8b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LEGO Marvel Super Heroes 2 ALL THE HULKS! Unlocked",
+      "url": "https://www.youtube.com/watch?v=AS2gaIo5JTg",
+      "snippet": "Nov 22, 2017 · LEGO Marvel Super Heroes 2 ALL THE HULKS! Unlocked. Everyone loves to smash smash SMASH as one of the …"
+    },
+    {
+      "title": "Characters - LEGO Marvel Super Heroes 2 Guide - IGN",
+      "url": "https://www.ign.com/wikis/lego-marvel-super-heroes-2/Characters",
+      "snippet": "Sep 14, 2018 · Welcome to IGN's guide to every character in LEGO Marvel Super Heroes 2 -- including Cheat Codes. Below you will …"
+    },
+    {
+      "title": "LEGO Marvel Super Heroes 2 - All Hulk Characters - YouTube",
+      "url": "https://www.youtube.com/watch?v=9gp8GBEEHW0",
+      "snippet": "Dec 8, 2017 · This video showcases all of the Hulk characters in LEGO Marvel Super Heroes 2. #Hulk #Marvel #LEGOMarvel This …"
+    },
+    {
+      "title": "Hulk | LEGO Marvel Superheroes Wiki | Fandom",
+      "url": "https://lego-marvelsuperheroes.fandom.com/wiki/Hulk",
+      "snippet": "To unlock Classic and Thor: Ragnarok Hulk and Bruce in LEGO Marvel Superheroes 2, Complete Red King Revelation. To unlock …"
+    },
+    {
+      "title": "Walkthrough - LEGO Marvel Super Heroes 2 Guide - IGN",
+      "url": "https://www.ign.com/wikis/lego-marvel-super-heroes-2/Walkthrough",
+      "snippet": "Jul 29, 2019 · Welcome to IGN's Walkthrough of LEGO Marvel Super Heroes 2. In this guide, we indicate the location of every Minikit, …"
+    }
+  ]
+}

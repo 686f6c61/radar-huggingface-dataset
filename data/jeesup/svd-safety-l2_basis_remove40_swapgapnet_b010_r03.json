@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_basis_remove40_swapgapnet_b010_r03",
+  "slug": "jeesup-svd-safety-l2_basis_remove40_swapgapnet_b010_r03",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_basis_remove40_swapgapnet_b010_r03",
+  "created_at": "2026-09-14T12:15:40.000Z",
+  "updated_at": "2026-09-14T12:16:58.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jeesup/svd-safety-l2_remove40_swapgapnet_b010_r03 · Hugging Face",
+      "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgapnet_b010_r03",
+      "snippet": "Instructions to use Jeesup/svd-safety-l2_remove40_swapgapnet_b010_r03 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Jeesup/svd-safety-l2_remove50_swapdisc_b010 · Hugging Face",
+      "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapdisc_b010",
+      "snippet": "Instructions to use Jeesup/svd-safety-l2_remove50_swapdisc_b010 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "svd-safety-l2_remove40_disc_b010 API & Inference Endpoint - FriendliAI",
+      "url": "https://friendli.ai/models/Jeesup/svd-safety-l2_remove40_disc_b010",
+      "snippet": "Deploy svd-safety-l2_remove40_disc_b010 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Svd Safety L2 Remove40 Sigma B010 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/jeesup/svd-safety-l2_remove40_sigma_b010",
+      "snippet": "Registry entry for model Svd Safety L2 Remove40 Sigma B010; source metadata pending."
+    },
+    {
+      "title": "GitHub - SURUJ404/SDV",
+      "url": "https://github.com/SURUJ404/SDV",
+      "snippet": "Contribute to SURUJ404/SDV development by creating an account on GitHub."
+    }
+  ]
+}

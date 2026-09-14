@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "0xmoose0xmoose0xmoose/css-test-minimal",
+  "slug": "0xmoose0xmoose0xmoose-css-test-minimal",
+  "author": "0xmoose0xmoose0xmoose",
+  "url": "https://huggingface.co/0xmoose0xmoose0xmoose/css-test-minimal",
+  "created_at": "2026-09-14T18:31:29.000Z",
+  "updated_at": "2026-09-14T18:31:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dyson cordless vacuums | Powerful cleaning for every home",
+      "url": "https://www.dyson.co.uk/vacuum-cleaners/cordless",
+      "snippet": "The Dyson Gen5detect™ is the most powerful HEPA cordless vacuum on the market.¹ With 280AW of suction power and a motor …"
+    },
+    {
+      "title": "Dyson Vacuum Cleaners | Discover our cleaning solutions",
+      "url": "https://www.dyson.co.uk/vacuum-cleaners",
+      "snippet": "Compare cordless, robot, upright and cylinder vacuums side by side. From whole-home cleaning to pet hair, find the right Dyson …"
+    },
+    {
+      "title": "Shop genuine Dyson spare parts | Dyson",
+      "url": "https://www.dyson.co.uk/spare-parts",
+      "snippet": "Find genuine Dyson spare parts and accessories for your Dyson purifier, humidifier, hair care, vacuum cleaner or lighting."
+    },
+    {
+      "title": "Dyson Cyclone V10™ Overview",
+      "url": "https://www.dyson.co.uk/vacuum-cleaners/cordless/v10",
+      "snippet": "A cordless stick vacuum cleaner is a small vacuum powered by a battery, so it doesn’t need to be plugged via a cable while in use. …"
+    },
+    {
+      "title": "Dyson Gen5detect cordless HEPA vacuum cleaner | Dyson",
+      "url": "https://www.dyson.co.uk/vacuum-cleaners/cordless/gen5detect",
+      "snippet": "Discover Dyson's most powerful HEPA cordless vacuum for whole home cleaning, trapping viruses and revealing more invisible dust …"
+    }
+  ]
+}

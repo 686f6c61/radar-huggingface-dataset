@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "formalmathatepfl/qwen3-8b-classic-grpo",
+  "slug": "formalmathatepfl-qwen3-8b-classic-grpo",
+  "author": "formalmathatepfl",
+  "url": "https://huggingface.co/formalmathatepfl/qwen3-8b-classic-grpo",
+  "created_at": "2026-09-14T11:09:57.000Z",
+  "updated_at": "2026-09-14T11:11:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "grpo",
+    "lean",
+    "theorem-proving",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939486,
+  "storage_human": "16.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fetor Hepaticus: Smell, Symptoms, Causes & Prognosis",
+      "url": "https://my.clevelandclinic.org/health/symptoms/fetor-hepaticus",
+      "snippet": "Mar 11, 2024 · Fetor hepaticus is a distinct smell on the breath of someone with liver disease. It happens when your liver can’t filter …"
+    },
+    {
+      "title": "Fetor hepaticus - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fetor_hepaticus",
+      "snippet": "Fetor hepaticus or foetor hepaticus (Latin, \"liver stench\" (\"fetid liver\") [1] (see spelling differences), also known as breath of the dead …"
+    },
+    {
+      "title": "Fetor Hepaticus: Why Bad Breath Can Be a Symptom of Liver Disease - WebMD",
+      "url": "https://www.webmd.com/fatty-liver-disease/what-is-fetor-hepaticus",
+      "snippet": "Aug 17, 2025 · Fetor hepaticus is a strong, musty breath odor linked to liver failure. Find out its causes, symptoms, and treatment …"
+    },
+    {
+      "title": "Fetor Hepaticus: Smell, Other Symptoms, Causes, and Treatment",
+      "url": "https://www.healthline.com/health/fetor-hepaticus",
+      "snippet": "Sep 18, 2018 · Fetor hepaticus occurs when your breath has a strong, musty smell. It’s a sign that your liver is having trouble doing its …"
+    },
+    {
+      "title": "Fetor hepaticus - Causes, Diagnosis and Treatment",
+      "url": "https://www.apollohospitals.com/symptoms/fetor-hepaticus",
+      "snippet": "Fetor hepaticus is a concerning symptom of liver dysfunction that requires prompt medical attention. While the odor itself may not be …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_basis_remove40_swapgapnet_b010_r08",
+  "slug": "jeesup-svd-safety-l2_basis_remove40_swapgapnet_b010_r08",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_basis_remove40_swapgapnet_b010_r08",
+  "created_at": "2026-09-14T13:33:55.000Z",
+  "updated_at": "2026-09-14T13:35:11.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ГДЗ Математика 4 клас Листопад 2026 (1 і 2 частина)",
+      "url": "https://gdzonline.net/723-4-klas-matematyka-lystopad.html",
+      "snippet": "ГДЗ з математики для 4 класу, автор Листопад Наталія. НУШ відповіді за 2026 рік. Розв'язання домашніх завдань на 1 і 2 …"
+    },
+    {
+      "title": "ГДЗ по математике 4 класс учебник Моро, Бантова 1, 2 часть",
+      "url": "https://gdz-raketa.ru/matematika/4-klass/moro-uchebnik/",
+      "snippet": "Решебник по математике за 4 класс к учебнику Моро — ваш надежный помощник в учебе! Мы создали его специально для …"
+    },
+    {
+      "title": "ГДЗ з математики для 4 класу",
+      "url": "https://gdzonline.net/4klas/matematyka4/",
+      "snippet": "У розділі \"ГДЗ Математика 4 клас\" зібрано відповіді до всіх підручників та робочих зошитів, рекомендованих НУШ, включаючи …"
+    },
+    {
+      "title": "Решебник по математике 4 класс (Муравьева) 2022 – Решеба",
+      "url": "https://resheba.top/matematika-4-klass-muraveva",
+      "snippet": "Подробные ГДЗ к учебнику по математике для 4 класса, авторов Муравьёва, Урбан, 2022 года издания. Готовые домашние …"
+    },
+    {
+      "title": "ГДЗ по Математике 4 класс Моро, Бантова учебник часть 1, 2",
+      "url": "https://gdz.ru/class-4/matematika/moro-i-bantova/",
+      "snippet": "ГДЗ: готовые ответы по математике за 4 класс, решебник Моро, Школа России ФГОС часть 1, 2 онлайн решения на GDZ.RU."
+    }
+  ]
+}

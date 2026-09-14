@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "bbakkerthomas/contrastive-slim",
+  "slug": "bbakkerthomas-contrastive-slim",
+  "author": "bbakkerthomas",
+  "url": "https://huggingface.co/bbakkerthomas/contrastive-slim",
+  "created_at": "2026-09-14T12:33:32.000Z",
+  "updated_at": "2026-09-14T12:33:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hexagon screws DIN 933 M6 STRAUSSbox mini | Strauss - Engelbert …",
+      "url": "https://www.engelbert-strauss.de/en/screw-assortments/hexagon-screws-din-933-m6-straussbox-mini-9071080-5517455-0.html?msockid=00a2af988cca6c26183cb84c8d796d01",
+      "snippet": "Discover the Strauss fastening technology and find screws, plugs, nails and fittings in the Online-Shop."
+    },
+    {
+      "title": "Disposable ice bag - Engelbert Strauss",
+      "url": "https://www.engelbert-strauss.de/en/first-aid-miscellaneous/disposable-ice-bag-7050510-7418002-0.html?msockid=00a2af988cca6c26183cb84c8d796d01",
+      "snippet": "Discover first aid supplies in the Strauss online shop."
+    },
+    {
+      "title": "cdn.engelbert-strauss.de",
+      "url": "https://cdn.engelbert-strauss.de/assets/images/Original/product/1.Release.8500290/KRAUSE_Stufen-Stehleiter_mit_grosser_Standplattform-107169-0-636221499803637906.pdf",
+      "snippet": "KRAUSE 500 mm 450 mm Certificate EN 131 Norm 150 14 5,30 3,30 4,60 4, 30 29 0,58 0,21 4,60 127846 Art.-No. 127785 haø …"
+    },
+    {
+      "title": "Latzhose e.s.active - cdn.engelbert-strauss.de",
+      "url": "https://cdn.engelbert-strauss.de/assets/images/Original/product/1.Release.33204347/Latzhose_e_s_active-40250-2-635773895601520048.pdf",
+      "snippet": "Platzierung Nr. 74 ist auf den Artikelgrößen 24, 44 und 90 nicht möglich."
+    },
+    {
+      "title": "Durable multifunction trolley made of wood grey | Strauss",
+      "url": "https://www.engelbert-strauss.de/en/cabinets/durable-multifunction-trolley-made-of-wood-8700090-4027030-5.html?msockid=00a2af988cca6c26183cb84c8d796d01",
+      "snippet": "Discover the big range of cabinets, chairs, shelves and workbenches in the Strauss online shop."
+    }
+  ]
+}

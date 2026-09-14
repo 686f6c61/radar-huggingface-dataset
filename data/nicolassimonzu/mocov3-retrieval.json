@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nicolassimonzu/mocov3-retrieval",
+  "slug": "nicolassimonzu-mocov3-retrieval",
+  "author": "nicolassimonzu",
+  "url": "https://huggingface.co/nicolassimonzu/mocov3-retrieval",
+  "created_at": "2026-09-14T18:29:21.000Z",
+  "updated_at": "2026-09-14T18:29:27.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "جامعة الملك خالد",
+      "url": "https://www.kku.edu.sa/",
+      "snippet": "جامعة الملك خالد جامعة حكومية سعودية رائدة تقدم برامج أكاديمية متطورة وبيئة تعليمية محفزة للابتكار والتميز، بما يسهم في تحقيق رؤية السعودية 2030"
+    },
+    {
+      "title": "الدخول الموحد - جامعة الملك خالد",
+      "url": "https://mysso.kku.edu.sa/cas/login?locale=ar",
+      "snippet": "دخول نسيت كلمة المرور؟ تغير كلمة المرور"
+    },
+    {
+      "title": "جامعة الملك خالد",
+      "url": "https://registration.kku.edu.sa/kku/ui/guest/application_online/index/bridgeHomeIndex.faces",
+      "snippet": "تقديم قبول برنامج التجسير (التجسير) تعديل قبول برنامج التجسير (التجسير) طباعة قبول برنامج التجسير (التجسير)"
+    },
+    {
+      "title": "جامعة الملك خالد",
+      "url": "https://registration.kku.edu.sa/kku/ui/guest/application_online/index/univTransferAgreementIndex.faces",
+      "snippet": "شروط التقديم: تعليمات وإقرار وتعهد عزيزي المتقدم يرجى قراءة التعليمات التالية قبل البدء بتقديم الطلب : أن يكون الطالب سعوديًا أو من أم سعودية. أن يكون الطالب منتظمًا في جامعة أو كلية محلية …"
+    },
+    {
+      "title": "إعلانات التوظيف في جامعة الملك خالد",
+      "url": "https://www.kku.edu.sa/ar/jobs",
+      "snippet": "الأحد 13-07-2025 وظائف على برنامج التشغيل الذاتي بالمدينة الطبية بجامعة الملك خالد اقرأ المزيد الخميس 26-06-2025 وظيفة بالمدينة الطبية اقرأ المزيد الإثنين 14-10-2024"
+    }
+  ]
+}

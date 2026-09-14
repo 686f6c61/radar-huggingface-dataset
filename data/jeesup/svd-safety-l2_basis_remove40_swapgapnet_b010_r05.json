@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_basis_remove40_swapgapnet_b010_r05",
+  "slug": "jeesup-svd-safety-l2_basis_remove40_swapgapnet_b010_r05",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_basis_remove40_swapgapnet_b010_r05",
+  "created_at": "2026-09-14T12:45:29.000Z",
+  "updated_at": "2026-09-14T12:46:52.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Book Flights, Airline Tickets & the Best Airfare Deals | eDreams",
+      "url": "https://www.edreams.com/flights/",
+      "snippet": "Compare and buy cheap flights around the world, comparing prices from thousands of airlines and other travel agents. Find the best …"
+    },
+    {
+      "title": "Flight specials: Book the cheapest flights – eDreams ZA",
+      "url": "https://za.edreams.com/flights/",
+      "snippet": "Find the cheapest flights to domestic and international destinations and deals on student flights on eDreams ZA. Book your next flight …"
+    },
+    {
+      "title": "Book Flights, Hotels, Vacation Packages & Car Rentals | eDreams",
+      "url": "https://www.edreams.com/",
+      "snippet": "Book online for the best deals on cheap flights and hotels with eDreams.com. Search and compare all airlines including low cost for …"
+    },
+    {
+      "title": "Find cheap flights and holiday packages - eDreams ZA",
+      "url": "https://za.edreams.com/",
+      "snippet": "Book online for the best deals on cheap flights and hotels with eDreams. Search and compare all airlines including low cost for your …"
+    },
+    {
+      "title": "Goedkope vluchten, hotels en vakantiepaketten eDreams",
+      "url": "https://nl.edreams.com/",
+      "snippet": "Goedkope vluchten en hotels. Zoek op alle luchtvaartmaatschappijen, inclusief Low Cost en kies uit 200.000 hotels wereldwijd boek …"
+    }
+  ]
+}

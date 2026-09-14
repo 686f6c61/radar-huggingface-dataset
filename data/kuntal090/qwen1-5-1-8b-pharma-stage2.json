@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Kuntal090/qwen1.5-1.8b-pharma-stage2",
+  "slug": "kuntal090-qwen1-5-1-8b-pharma-stage2",
+  "author": "Kuntal090",
+  "url": "https://huggingface.co/Kuntal090/qwen1.5-1.8b-pharma-stage2",
+  "created_at": "2026-09-14T12:52:44.000Z",
+  "updated_at": "2026-09-14T12:53:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1836828672,
+  "parameters_human": "1.84B",
+  "storage_bytes": 3685108962,
+  "storage_human": "3.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chatgpt-api · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/chatgpt-api",
+      "snippet": "May 9, 2026 · ChatGPT API is a RESTful API that provides a simple interface to interact with OpenAI’s GPT-3 and GPT-Neo …"
+    },
+    {
+      "title": "GitHub - jflam/chat-gpt-jupyter-extension: A browser extension that ...",
+      "url": "https://github.com/jflam/chat-gpt-jupyter-extension",
+      "snippet": "Aug 31, 2025 · A browser extension that lets you chat with ChatGPT from any local Jupyter notebook. - jflam/chat-gpt-jupyter-extension"
+    },
+    {
+      "title": "Chat GPT给出的答案是否可信？ - 知乎",
+      "url": "https://www.zhihu.com/question/628216492",
+      "snippet": "Oct 28, 2023 · Chat GPT给出的答案是否可信？ 我想将Chat GPT运用到我的工作领域，涉及到专业知识。 但是我进行了一些简单测 …"
+    },
+    {
+      "title": "不是说chat gpt是免费的吗，怎么只能免费问一次? - 知乎",
+      "url": "https://www.zhihu.com/question/606750758",
+      "snippet": "后来自己注册gpt账号，能免费使用GPT-3.5，每月20刀的Gpt-4还是不大舍得去搞，3.5基本也够用了，搭配chatpdf等其他AI工具，用 …"
+    },
+    {
+      "title": "Chat GPT Tiếng Việt: Cài đặt và mẹo đặt câu lệnh mới ...",
+      "url": "https://cellphones.com.vn/sforum/cach-dung-chat-gpt-tieng-viet",
+      "snippet": "Jul 10, 2026 · Hướng dẫn cách sử dụng Chat GPT Tiếng Việt hiệu quả để đặt câu hỏi, viết nội dung, học tập, dịch thuật và xử lý …"
+    }
+  ]
+}

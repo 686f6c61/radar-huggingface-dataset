@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "gupt-a9508/text-image-retrieval42",
+  "slug": "gupt-a9508-text-image-retrieval42",
+  "author": "gupt-a9508",
+  "url": "https://huggingface.co/gupt-a9508/text-image-retrieval42",
+  "created_at": "2026-09-14T13:55:03.000Z",
+  "updated_at": "2026-09-14T13:55:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "text-image-retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

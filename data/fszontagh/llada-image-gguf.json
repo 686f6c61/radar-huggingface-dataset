@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "fszontagh/LLaDA-Image-GGUF",
+  "slug": "fszontagh-llada-image-gguf",
+  "author": "fszontagh",
+  "url": "https://huggingface.co/fszontagh/LLaDA-Image-GGUF",
+  "created_at": "2026-09-14T13:34:51.000Z",
+  "updated_at": "2026-09-14T13:38:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "text-to-image",
+    "image-editing",
+    "image-generation",
+    "stable-diffusion.cpp",
+    "llada-image",
+    "en",
+    "zh",
+    "base_model:inclusionAI/LLaDA-Image",
+    "base_model:finetune:inclusionAI/LLaDA-Image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4102434320,
+  "storage_human": "4.1 GB",
+  "base_model": "inclusionAI/LLaDA-Image",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "Sign in to GitHub · GitHub",
+      "url": "https://github.com/login",
+      "snippet": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million …"
+    },
+    {
+      "title": "GitHub · Change is constant. GitHub keeps you ahead. · GitHub",
+      "url": "https://github.com/",
+      "snippet": "Join the world's most widely adopted, AI-powered developer platform where millions of developers, businesses, and the largest open …"
+    },
+    {
+      "title": "Download GitHub Desktop",
+      "url": "https://desktop.github.com/download/",
+      "snippet": "Simple collaboration from your desktop Download GitHub Desktop Focus on what matters instead of fighting with Git. Whether you're …"
+    },
+    {
+      "title": "teencocksnew - Reddit",
+      "url": "https://www.reddit.com/r/teencocksnew/",
+      "snippet": "r/teencocksnew 8” horny af and gooning / chats open u/No-Chemistry6504"
+    }
+  ]
+}

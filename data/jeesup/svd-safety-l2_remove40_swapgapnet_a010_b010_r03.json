@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove40_swapgapnet_a010_b010_r03",
+  "slug": "jeesup-svd-safety-l2_remove40_swapgapnet_a010_b010_r03",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgapnet_a010_b010_r03",
+  "created_at": "2026-09-14T17:08:34.000Z",
+  "updated_at": "2026-09-14T17:09:58.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "为什么都说csp比sai好，但用sai的却比csp的多那么多？ - 知乎",
+      "url": "https://www.zhihu.com/question/43422574",
+      "snippet": "看了以上12个回答的，基本上都是在比较两个软件，不过这倒也切题，但我恰好了解过这方面，就来简单说一下其他人很少提到的东西 …"
+    },
+    {
+      "title": "csp国际版怎么在第二台电脑使用启动码? - 知乎",
+      "url": "https://www.zhihu.com/question/627119588?write",
+      "snippet": "→官网说明： support.clip-studio.com 【CSP启动码】续期和多台设备管理： CSP启动码（12个月，1年期）无法在原有基础授权时间 …"
+    },
+    {
+      "title": "画漫画是优动漫csp好还是Photoshop好，必须要用日本的csp吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/378688549",
+      "snippet": "CSP 好吧 毕竟ps不是专为画画儿设计的软件啊 并且这不是个二选一的题嘛~我都是 csp +ps一起用的哈 csp版本用 优动漫 那个正版就 …"
+    },
+    {
+      "title": "CSP出现“以非工作对象的作业系统启动了程序。Clip Studio paint将结束 …",
+      "url": "https://www.zhihu.com/question/464709808",
+      "snippet": "如果你购买的是台湾版的话，，先把区域变更为非中国，再在设置中“时间与语言——语言——管理语言设置——非 Unicode 程序中所 …"
+    },
+    {
+      "title": "csp绘画有哪些优势? - 知乎",
+      "url": "https://www.zhihu.com/question/319243736",
+      "snippet": "可以简单理解为SAi+PS的综合体，还支持3d模型。 国行正版“优动漫paint”较之“Clip Studio Paint”的名称，CSP却更被大家所熟知。 …"
+    }
+  ]
+}

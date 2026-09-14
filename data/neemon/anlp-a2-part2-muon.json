@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "neemon/anlp-a2-part2-muon",
+  "slug": "neemon-anlp-a2-part2-muon",
+  "author": "neemon",
+  "url": "https://huggingface.co/neemon/anlp-a2-part2-muon",
+  "created_at": "2026-09-14T10:41:36.000Z",
+  "updated_at": "2026-09-14T10:42:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "vi",
+    "ja"
+  ],
+  "tags": [
+    "pytorch",
+    "mixture-of-experts",
+    "translation",
+    "from-scratch",
+    "en",
+    "vi",
+    "ja",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 166349110,
+  "storage_human": "166 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Portal LIBRUS",
+      "url": "https://synergia.librus.pl/",
+      "snippet": "Zaloguj się do LIBRUS Synergia i aktywuj Mobilne dodatki do aplikacji Librus. Portal edukacyjny Librus - gotowe pomoce …"
+    },
+    {
+      "title": "Portal LIBRUS Szkoła",
+      "url": "https://portal.librus.pl/szkola",
+      "snippet": "Jeśli będziesz robił to, co kochasz, to już nigdy... Możesz osiągnąć wszystko, co zechcesz, jeśli się postarasz…?"
+    },
+    {
+      "title": "Portal LIBRUS Rodzina",
+      "url": "https://portal.librus.pl/rodzina/synergia/loguj",
+      "snippet": "Pomóż mu wejść w ten ważny etap. Z życia domowego – co widzi dziecko, co widzi rodzic? Co jest lepsze – jabłko czy mandarynka? …"
+    },
+    {
+      "title": "LIBRUS Synergia",
+      "url": "https://synergia.librus.pl/librus",
+      "snippet": "Zweryfikuj, czy strona jest zabezpieczona certyfikatem wystawionym przez firmę GeoTrust Inc. dla witryny www.dziennik.librus.pl. …"
+    },
+    {
+      "title": "Librus e-Dziennik",
+      "url": "https://dziennik2.librus.pl/loguj",
+      "snippet": "LIBRUS Synergia to innowacyjne rozwiązanie zapewniające kompleksowe podejście do rozwoju szkoły. Poprawia komunikację, …"
+    }
+  ]
+}

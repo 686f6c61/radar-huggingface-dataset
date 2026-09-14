@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "changh95/GR00T-N1.6-3B-p150",
+  "slug": "changh95-gr00t-n1-6-3b-p150",
+  "author": "changh95",
+  "url": "https://huggingface.co/changh95/GR00T-N1.6-3B-p150",
+  "created_at": "2026-09-14T17:11:47.000Z",
+  "updated_at": "2026-09-14T17:13:04.000Z",
+  "license": "nvidia-license",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "blackhole",
+    "p150",
+    "tt-dit-server",
+    "tt-model-cache",
+    "tt-model-container",
+    "tenstorrent",
+    "ttnn",
+    "tt-metal",
+    "tt-nn",
+    "robotics",
+    "vla",
+    "gr00t",
+    "tt-model-catalog",
+    "arxiv:2503.14734",
+    "base_model:nvidia/GR00T-N1.6-3B",
+    "base_model:finetune:nvidia/GR00T-N1.6-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3207146176,
+  "storage_human": "3.2 GB",
+  "base_model": "nvidia/GR00T-N1.6-3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Forum di FinanzaOnLine",
+      "url": "https://forum.finanzaonline.com/",
+      "snippet": "17 hours ago · Il forum di riferimento italiano per quanto riguarda finanza, mercati, economia"
+    },
+    {
+      "title": "FinanzaOnline - L'informazione economica e finanziaria indipendente.",
+      "url": "https://www.finanzaonline.com/",
+      "snippet": "Sep 3, 2026 · L'informazione economica e finanziaria: approfondimenti e notizie su borsa, finanza, economia, investimenti e mercati. …"
+    },
+    {
+      "title": "Obbligazioni, Titoli di Stato - Forum di FinanzaOnLine",
+      "url": "https://forum.finanzaonline.com/forums/obbligazioni-titoli-di-stato.33/",
+      "snippet": "Mar 14, 2026 · Obbligazioni, Titoli di Stato Borsa di Tokyo in calo: Nikkei chiude a -0,81% OpenAI frena sullo sbarco a Wall Street: …"
+    },
+    {
+      "title": "ETF - FinanzaOnline",
+      "url": "https://www.finanzaonline.com/etf",
+      "snippet": "Sep 3, 2026 · Spread BT Bund 10y ITA 40 +704,63 ITA ALL +721,30 CAC 40 +63,01 DAX 30 +207,41 Nasdaq +264,93 S&P500 …"
+    },
+    {
+      "title": "Mercato Italiano - Forum di FinanzaOnLine",
+      "url": "https://forum.finanzaonline.com/forums/mercato-italiano.20/",
+      "snippet": "17 hours ago · Discussioni, appunti e notizie dal mercato italiano."
+    }
+  ]
+}

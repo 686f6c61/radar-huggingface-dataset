@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ZZRI/Feihua-n1-64M",
+  "slug": "zzri-feihua-n1-64m",
+  "author": "ZZRI",
+  "url": "https://huggingface.co/ZZRI/Feihua-n1-64M",
+  "created_at": "2026-09-14T11:17:50.000Z",
+  "updated_at": "2026-09-14T11:47:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "minimind",
+    "nonsense",
+    "废话文学",
+    "zh",
+    "base_model:jingyaogong/minimind-3",
+    "base_model:quantized:jingyaogong/minimind-3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 63912192,
+  "parameters_human": "63.9M",
+  "storage_bytes": 254704856,
+  "storage_human": "255 MB",
+  "base_model": "jingyaogong/minimind-3",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yükseköğretim Program Atlası",
+      "url": "https://yokatlas.yok.gov.tr/",
+      "snippet": "Yükseköğretim Kurulu Başkanlığı * Bilgiler 0-YKS Yükseköğretim Programları ve Kontenjanları Kılavuzu'ndan derlenmiş olup, nihai …"
+    },
+    {
+      "title": "Öykü (@_oyku) • Instagram photos and videos",
+      "url": "https://www.instagram.com/_oyku/",
+      "snippet": "19K Followers, 658 Following, 621 Posts - Öykü (@_oyku) on Instagram: \"💄 YouTube Makeup vlogger DJ\""
+    },
+    {
+      "title": "Öğrenci Belgesi Sorgulama - e-Devlet Kapısı",
+      "url": "https://www.turkiye.gov.tr/yok-ogrenci-belgesi-sorgulama",
+      "snippet": "Yükseköğretim Kurulu Başkanlığı'na bağlı üniversitelerde okuyan öğrencilerin öğrenci belgelerini alabilecekleri bir hizmettir."
+    },
+    {
+      "title": "Ana Sayfa | Yükseköğretim Kurulu",
+      "url": "https://www.yok.gov.tr/",
+      "snippet": "Yükseköğretim Kurulu (YÖK) resmi web sitesi -İran-İsrail savaşı nedeniyle İran’daki yükseköğretim kurumlarında eğitim gören Türkiye …"
+    },
+    {
+      "title": "OY’KU FASHION (@oykufashion) • Instagram photos and videos",
+      "url": "https://www.instagram.com/oykufashion/reels/",
+      "snippet": "1M Followers, 223 Following, 5,696 Posts - OY’KU FASHION (@oykufashion) on Instagram: \"Yeni koleksiyonlar için web sitemizi …"
+    }
+  ]
+}

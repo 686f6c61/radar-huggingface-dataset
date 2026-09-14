@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Alborz/Motif-3-FP8-Independent",
+  "slug": "alborz-motif-3-fp8-independent",
+  "author": "Alborz",
+  "url": "https://huggingface.co/Alborz/Motif-3-FP8-Independent",
+  "created_at": "2026-09-14T11:06:09.000Z",
+  "updated_at": "2026-09-14T12:08:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "fp8",
+    "quantized",
+    "motif",
+    "mixture-of-experts",
+    "en",
+    "ko",
+    "base_model:Motif-Technologies/Motif-3",
+    "base_model:quantized:Motif-Technologies/Motif-3",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35727744976,
+  "storage_human": "35.7 GB",
+  "base_model": "Motif-Technologies/Motif-3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Deep Van - 知乎",
+      "url": "https://www.zhihu.com/people/yang-lei-96-72",
+      "snippet": "Aug 17, 2026 · Deep Van是知乎用户，擅长回答金融、科技和生活问题，其个人星球为DeepVan的逃生地牢，回答风格直言不讳，获 …"
+    },
+    {
+      "title": "翻译工具推荐-Deepl - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/thread-1153766-1-1.html",
+      "snippet": "Apr 16, 2020 · 推荐一个翻译工具，号称谷歌翻译碾压者/信达雅翻译本人/外语学习最佳伴侣DeepL是一款来自德国的在线翻译工具，早 …"
+    },
+    {
+      "title": "翻译工具汇总 - 淘帖 - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/forum.php?mod=collection&action=view&ctid=2667&page=1",
+      "snippet": "Mar 22, 2025 · DeepL 24.12 人工智能翻译 kkooyan 2025-3-20 16:43 42 13820 yuzhai2001 2025-4-17 15:43 游戏中文输入工具，对接 …"
+    },
+    {
+      "title": "有问题，就会有答案 - 知乎",
+      "url": "https://www.zhihu.com/careers",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    }
+  ]
+}

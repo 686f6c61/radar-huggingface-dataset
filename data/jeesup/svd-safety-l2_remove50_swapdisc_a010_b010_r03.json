@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove50_swapdisc_a010_b010_r03",
+  "slug": "jeesup-svd-safety-l2_remove50_swapdisc_a010_b010_r03",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapdisc_a010_b010_r03",
+  "created_at": "2026-09-14T16:42:12.000Z",
+  "updated_at": "2026-09-14T16:50:02.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RESIDENSI HARMONI 2, BUKIT PRIMA PELANGI [OT]",
+      "url": "https://forum.lowyat.net/topic/2838524/all",
+      "snippet": "Jul 17, 2020 · Outline · [ Standard ] · Linear+ Investment RESIDENSI HARMONI 2, BUKIT PRIMA PELANGI [OT], Residential …"
+    },
+    {
+      "title": "[found sos] cant login whatsapp browser - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5556445",
+      "snippet": "Feb 27, 2026 · Outline · [ Standard ] · Linear+ [found sos] cant login whatsapp browser, from iphone"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/outlook_com/forum/all/outlook-todo-synced-tasks-attachments-only-non/66bca736-f128-4d62-b193-79c8c57ad30f",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/outlook_com/forum/all/does-this-message-mean-the-email-is-active/04e3787e-8012-4d6e-a6fd-df896418e947",
+      "snippet": ""
+    },
+    {
+      "title": "those use ipon watsapp web browser - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5556449",
+      "snippet": "Feb 27, 2026 · Lowyat.NET Malaysia's Tech Enthusiast Resource Community. Forums, Buy, Sell, Second Hand, Notebook, Laptop, …"
+    }
+  ]
+}

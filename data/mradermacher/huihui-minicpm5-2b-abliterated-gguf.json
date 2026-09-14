@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Huihui-MiniCPM5-2B-abliterated-GGUF",
+  "slug": "mradermacher-huihui-minicpm5-2b-abliterated-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Huihui-MiniCPM5-2B-abliterated-GGUF",
+  "created_at": "2026-09-14T12:58:24.000Z",
+  "updated_at": "2026-09-14T12:58:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "France - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/France",
+      "snippet": "France was divided into a German occupation zone in the north, an Italian occupation zone and an unoccupied territory, the rest of …"
+    },
+    {
+      "title": "France | History, Maps, Flag, Population, Cities, Capital, & Facts ...",
+      "url": "https://www.britannica.com/place/France",
+      "snippet": "2 days ago · France, a country of northwestern Europe, is historically and culturally among the most important countries in the …"
+    },
+    {
+      "title": "France — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/France",
+      "snippet": ""
+    },
+    {
+      "title": "France Map | Discover France with Detailed Maps",
+      "url": "https://ontheworldmap.com/france/",
+      "snippet": "Description: This map shows governmental boundaries of countries; regions, regions capitals and major cities in France."
+    },
+    {
+      "title": "France.fr : Explore France and its wonders - Explore France",
+      "url": "https://www.france.fr/en/",
+      "snippet": "In spring, France reveals one of its most beautiful sides. Outdoor cafés fill up, parks and gardens come into bloom, and the …"
+    }
+  ]
+}

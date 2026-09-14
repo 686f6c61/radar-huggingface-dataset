@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Jamesdaviestik/contrastive",
+  "slug": "jamesdaviestik-contrastive",
+  "author": "Jamesdaviestik",
+  "url": "https://huggingface.co/Jamesdaviestik/contrastive",
+  "created_at": "2026-09-14T12:21:29.000Z",
+  "updated_at": "2026-09-14T12:21:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QVC.DE | Online Shopping bequem und einfach",
+      "url": "https://www.qvc.de/",
+      "snippet": "Online Shopping mit QVC.de – Mit dem Online Shop von QVC bequem und sicher einkaufen, auch mit Kauf auf Rechnung."
+    },
+    {
+      "title": "Jubiläumsangebote online shoppen - QVC.de",
+      "url": "https://www.qvc.de/content/angebote.html",
+      "snippet": "Schon seit 30 Jahren begeistert QVC Menschen damit, was möglich ist, wenn Shopping zum Erlebnis wird. Wir feiern das ganze Jahr …"
+    },
+    {
+      "title": "Die QVC Preishits des Tages online shoppen - QVC.de",
+      "url": "https://www.qvc.de/content/preishits-des-tages.html",
+      "snippet": "Täglich neu sparen: Mit den Preishits des Tages sichern Sie sich die besten Angebote aus dem QVC Sortiment. Immer wieder …"
+    },
+    {
+      "title": "Neue Produkte der letzten 30 Tage online shoppen - QVC.de",
+      "url": "https://www.qvc.de/content/neue-produkte.html",
+      "snippet": "Frisch eingetroffen: Hier findest du die neuesten Produkte aus dem QVC Sortiment der letzten 30 Tage. Nichts verpassen und sofort …"
+    },
+    {
+      "title": "Q Sale | QVC.de",
+      "url": "https://www.qvc.de/content/qsale.html?qq=mh",
+      "snippet": "Im Q Sale finden sich alle Outlet-Angebote von QVC. Ob Mode, Pflege, Schuhe, Taschen, Bettwäsche, Frischhaltedosen, Technik …"
+    }
+  ]
+}

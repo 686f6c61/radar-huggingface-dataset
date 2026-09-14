@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/tam-taml-100mb-100mb_seed455",
+  "slug": "fpadovani-tam-taml-100mb-100mb_seed455",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/tam-taml-100mb-100mb_seed455",
+  "created_at": "2026-09-14T14:04:46.000Z",
+  "updated_at": "2026-09-14T14:43:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/tam_taml_100mb",
+    "base_model:finetune:goldfish-models/tam_taml_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 1998399890,
+  "storage_human": "2.0 GB",
+  "base_model": "goldfish-models/tam_taml_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Relaks – Wikipedia, wolna encyklopedia",
+      "url": "https://pl.wikipedia.org/wiki/Relaks",
+      "snippet": "Relaks Relaks, odprężenie, odpoczynek, – stan fizycznego i psychicznego odprężenia. Może być osiągany w procesie relaksacji. …"
+    },
+    {
+      "title": "RMF Relaks: Muzyka relaksacyjna na żywo | Relax online",
+      "url": "https://www.radio-polska.pl/rmf-relaks",
+      "snippet": "Włącz RMF Relaks i odpocznij. Najlepsza muzyka relaksacyjna na żywo, chillout i ambient. Słuchaj radio online za darmo i ciesz się …"
+    },
+    {
+      "title": "Repertuar – Scenarelax",
+      "url": "https://scenarelax.pl/repertuar/",
+      "snippet": "Strona przedstawia aktualny repertuar wydarzeń dostępnych w Scenie Relax."
+    },
+    {
+      "title": "Relaks - Wojas",
+      "url": "https://wojas.pl/relaks",
+      "snippet": "Beżowe trampki męskie z dwoiny welurowej z kontrastową podeszwą RELAKS 459.00 zł Nowość Cena z kodem NEW15: 126.65 zł"
+    },
+    {
+      "title": "Relaks kawiarnia | Warsaw - Facebook",
+      "url": "https://www.facebook.com/kawiarniarelaks/",
+      "snippet": "Relaks kawiarnia, Warsaw. 10,946 likes · 1 talking about this · 1,901 were here. Relaks to kawa. Od ziarna przez wodę, sprzęt, …"
+    }
+  ]
+}

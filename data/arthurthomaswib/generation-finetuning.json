@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "arthurthomaswib/generation-finetuning",
+  "slug": "arthurthomaswib-generation-finetuning",
+  "author": "arthurthomaswib",
+  "url": "https://huggingface.co/arthurthomaswib/generation-finetuning",
+  "created_at": "2026-09-14T15:33:46.000Z",
+  "updated_at": "2026-09-14T15:33:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IST to PST Converter - Convert India Time to Pacific Time - World …",
+      "url": "https://www.worldtimebuddy.com/ist-to-pst-converter",
+      "snippet": "1 day ago · Quickly convert India Standard Time (IST) to Pacific Standard Time (PST) with this easy-to-use, modern time zone …"
+    },
+    {
+      "title": "IST to PST Converter - Savvy Time",
+      "url": "https://savvytime.com/converter/ist-to-pst",
+      "snippet": "Convert IST time to PST time with Savvy Time. Compare current local time, UTC offsets, time difference, daylight saving time, table …"
+    },
+    {
+      "title": "IST to PST Converter - Convert India Time to US Pacific Time ...",
+      "url": "https://datetimetrack.com/time/ist-to-pst",
+      "snippet": "16 hours ago · Free online IST to PST Converter. Convert India Standard Time (IST) to Pacific Standard Time (PST) and Pacific …"
+    },
+    {
+      "title": "IST to PST Converter - Time Difference & Current Time",
+      "url": "https://timealigner.com/timezone-converter/ist-to-pst",
+      "snippet": "21 hours ago · This simple IST to PST time zone converter allows you to quickly and visually understand the time difference between …"
+    },
+    {
+      "title": "IST to PST Converter - Time Zone Tool",
+      "url": "https://www.thetimenow.com/timezones/convert/ist/pst",
+      "snippet": "2 days ago · Convert India Standard Time (IST) now to Pacific Standard Time (PST) now with this free and simple time zone …"
+    }
+  ]
+}

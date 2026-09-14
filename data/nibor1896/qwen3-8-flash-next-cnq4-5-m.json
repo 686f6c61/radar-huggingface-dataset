@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "nibor1896/Qwen3.8-Flash-Next-CNQ4.5-M",
+  "slug": "nibor1896-qwen3-8-flash-next-cnq4-5-m",
+  "author": "nibor1896",
+  "url": "https://huggingface.co/nibor1896/Qwen3.8-Flash-Next-CNQ4.5-M",
+  "created_at": "2026-09-14T11:07:09.000Z",
+  "updated_at": "2026-09-14T11:17:07.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "nvfp4",
+    "cnq",
+    "quantized",
+    "moe",
+    "vision",
+    "multimodal",
+    "windows",
+    "rtx-5090",
+    "crow-nest",
+    "text-generation",
+    "en",
+    "de",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Chat - Sign In | Google Workspace",
+      "url": "https://chat.google.com/",
+      "snippet": "Sign in to Google Chat and access powerful group messaging for personal and professional collaboration from Google Workspace."
+    },
+    {
+      "title": "Google Chat",
+      "url": "https://chat.google.com/apple-app-site-association",
+      "snippet": "{ \"applinks\": { \"apps\": [], \"details\": [ { \"appID\": \"EQHXZ8M8AV.com.google.Dynamite.dev\", \"components\": [ { \"/\": …"
+    }
+  ]
+}

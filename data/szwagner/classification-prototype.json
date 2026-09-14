@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "szwagner/classification-prototype",
+  "slug": "szwagner-classification-prototype",
+  "author": "szwagner",
+  "url": "https://huggingface.co/szwagner/classification-prototype",
+  "created_at": "2026-09-14T17:08:22.000Z",
+  "updated_at": "2026-09-14T17:08:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NBA Draft Prospect Rankings 2026 - CBS Sports",
+      "url": "https://www.cbssports.com/nba/draft/prospect-rankings/",
+      "snippet": "Get the latest NBA Draft prospect rankings from CBS Sports. Find out where your favorite all stacks up against the 2026 class and …"
+    },
+    {
+      "title": "NBA Draft Prospect Rankings 2026 - CBS Sports",
+      "url": "https://www.cbssports.com/nba/draft/prospect-rankings/centers/",
+      "snippet": "Get the latest NBA Draft prospect rankings from CBS Sports. Find out where your favorite centers stacks up against the 2026 class …"
+    },
+    {
+      "title": "College Basketball News, Scores, Stats, Standings and Rumors - NCAA ...",
+      "url": "https://www.cbssports.com/college-basketball/",
+      "snippet": "CBS Sports has the latest College Basketball news, live scores, player stats, standings, fantasy games and projections on the NCAA …"
+    },
+    {
+      "title": "2026 NBA Mock Draft: AJ Dybantsa No. 1 to Wizards, Darryn Peterson …",
+      "url": "https://www.cbssports.com/nba/news/nba-mock-draft-2026-lottery-aj-dybantsa-darryn-peterson-cameron-boozer/",
+      "snippet": "May 10, 2026 · Adam Finkelstein's first mock draft with fits for each pick following the NBA Draft Lottery on Sunday"
+    },
+    {
+      "title": "2026 NBA Mock Draft: Adam Finkelstein's projections for top picks as ...",
+      "url": "https://www.cbssports.com/nba/news/2026-nba-mock-draft-lottery-adam-finkelstein-draft-lottery/",
+      "snippet": "May 5, 2026 · Finkelstein's last mock draft before Sunday's NBA Draft Lottery, when the official order is locked down"
+    }
+  ]
+}

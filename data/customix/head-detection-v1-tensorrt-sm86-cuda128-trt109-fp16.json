@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Customix/head-detection-v1-tensorrt-sm86-cuda128-trt109-fp16",
+  "slug": "customix-head-detection-v1-tensorrt-sm86-cuda128-trt109-fp16",
+  "author": "Customix",
+  "url": "https://huggingface.co/Customix/head-detection-v1-tensorrt-sm86-cuda128-trt109-fp16",
+  "created_at": "2026-09-14T14:18:34.000Z",
+  "updated_at": "2026-09-14T14:31:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "tensorrt",
+  "languages": [],
+  "tags": [
+    "tensorrt",
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Joint Admissions and Matriculation Board",
+      "url": "https://portal.jamb.gov.ng/",
+      "snippet": "Joint Admissions and Matriculation Board Candidates can print their admission letter for their institution/course of choice, which is …"
+    },
+    {
+      "title": "Joint Admissions and Matriculation Board - portal.jamb.gov.ng",
+      "url": "https://portal.jamb.gov.ng/changeOfCourse_Inst.htm",
+      "snippet": "b. JAMB Registration Number 12. After entering the information correctly, new options for Preferred course/Institution and second …"
+    },
+    {
+      "title": "Joint Admissions and Matriculation Board - portal.jamb.gov.ng",
+      "url": "https://portal.jamb.gov.ng/changeDOB.htm",
+      "snippet": "11. Once payment is completed, you will be asked to provide the following: a. Year of Exam and b. JAMB Registration Number 12. …"
+    },
+    {
+      "title": "Joint Admissions and Matriculation Board - portal.jamb.gov.ng",
+      "url": "https://portal.jamb.gov.ng/changeName.htm",
+      "snippet": "Click on the Continue button. 11. Once payment is completed, you will be asked to provide the following: a. Year of Exam and b. …"
+    },
+    {
+      "title": "Joint Admissions and Matriculation Board - portal.jamb.gov.ng",
+      "url": "https://portal.jamb.gov.ng/emailverify.htm",
+      "snippet": "To create a new profile, Send Surname FirstName MiddleName as SMS from your unique GSM number to 55019. Ensure the names …"
+    }
+  ]
+}

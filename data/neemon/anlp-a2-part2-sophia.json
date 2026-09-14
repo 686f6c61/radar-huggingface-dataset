@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "neemon/anlp-a2-part2-sophia",
+  "slug": "neemon-anlp-a2-part2-sophia",
+  "author": "neemon",
+  "url": "https://huggingface.co/neemon/anlp-a2-part2-sophia",
+  "created_at": "2026-09-14T10:42:04.000Z",
+  "updated_at": "2026-09-14T10:42:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "vi",
+    "ja"
+  ],
+  "tags": [
+    "pytorch",
+    "mixture-of-experts",
+    "translation",
+    "from-scratch",
+    "en",
+    "vi",
+    "ja",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 166349110,
+  "storage_human": "166 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Antarctica - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Antarctica",
+      "snippet": "Antarctica is the fifth-largest continent, being about 40% larger than Europe, and has an area of 14,200,000 km2 (5,500,000 sq mi). …"
+    },
+    {
+      "title": "Antarctica | History, Map, Climate, & Facts | Britannica",
+      "url": "https://www.britannica.com/place/Antarctica",
+      "snippet": "1 day ago · Antarctica, the world’s southernmost continent, is almost wholly covered by an ice sheet and is about 5.5 million square …"
+    },
+    {
+      "title": "Antarctic - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Antarctic",
+      "snippet": "Because Antarctica surrounds the South Pole, it is theoretically located in all time zones. For practical purposes, time zones are …"
+    },
+    {
+      "title": "Antarctica - National Geographic Society",
+      "url": "https://education.nationalgeographic.org/resource/antarctica/",
+      "snippet": "Without any ice, Antarctica would emerge as a giant peninsula and archipelago of mountainous islands, known as Lesser Antarctica, …"
+    },
+    {
+      "title": "Frequently Asked Questions About Antarctica - NASA",
+      "url": "https://www.nasa.gov/frequently-asked-questions-about-antarctica/",
+      "snippet": "Aug 9, 2023 · NASA uses satellites to study the ice on Antarctica and how the continent is changing. Scientists want to know how …"
+    }
+  ]
+}

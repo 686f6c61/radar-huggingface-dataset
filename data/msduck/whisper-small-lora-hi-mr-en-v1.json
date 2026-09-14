@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "Msduck/whisper-small-lora-hi-mr-en-v1",
+  "slug": "msduck-whisper-small-lora-hi-mr-en-v1",
+  "author": "Msduck",
+  "url": "https://huggingface.co/Msduck/whisper-small-lora-hi-mr-en-v1",
+  "created_at": "2026-09-14T14:10:06.000Z",
+  "updated_at": "2026-09-14T14:10:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14176064,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove40_swapdisc_a050_b010_r07",
+  "slug": "jeesup-svd-safety-l2_remove40_swapdisc_a050_b010_r07",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapdisc_a050_b010_r07",
+  "created_at": "2026-09-14T14:05:28.000Z",
+  "updated_at": "2026-09-14T14:13:16.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SuperHero.io - Multiplayer-Spiele - 1001 Spiele",
+      "url": "https://www.1001spiele.de/multiplayer/superhero-io",
+      "snippet": "Superhero.io ist ein Multiplayer-Spiel, bei dem du so viele andere Spieler wie möglich besiegen musst. Renn durch die Arena, …"
+    },
+    {
+      "title": "1001 Spiele - Kostenlose coole online Spiele spielen!",
+      "url": "https://www.1001spiele.de/",
+      "snippet": "Die neusten und coolsten Spiele gesammelt auf einer Website! Bei uns findest du mehr als 3500!"
+    },
+    {
+      "title": "Spiele Schießen Spiele auf 1001Spiele, gratis für alle!",
+      "url": "https://www.1001spiele.de/schiessen",
+      "snippet": "Spiele kostenlos online Schießen Spiele auf 1001Spiele. Wir haben die besten Schießen Spiele für Dich gesammelt. Auf geht´s!"
+    },
+    {
+      "title": "Dream Pet Link - Denkspiele - 1001 Spiele",
+      "url": "https://www.1001spiele.de/denk/dream-pet-link",
+      "snippet": "Dream Pet Link ist ein Mahjong-Spiel, bei dem du die Spielsteine vom Spielfeld entfernen musst, indem du identische Paare …"
+    },
+    {
+      "title": "Spiele Mahjong Spiele auf 1001Spiele, gratis für alle!",
+      "url": "https://www.1001spiele.de/mahjong",
+      "snippet": "Spiele die besten Mahjong Spiele online auf 1001Spiele. Wir haben die besten Mahjong Spiele für Dich gesammelt. Worauf wartest …"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Anki1726/Model_T5",
+  "slug": "anki1726-model_t5",
+  "author": "Anki1726",
+  "url": "https://huggingface.co/Anki1726/Model_T5",
+  "created_at": "2026-09-14T13:31:42.000Z",
+  "updated_at": "2026-09-14T13:58:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "t5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 439486331,
+  "storage_human": "439 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bilan Hydrique2 | PDF | Déshydratation (médecine) | Maladies et ...",
+      "url": "https://fr.scribd.com/document/633940827/Bilan-Hydrique2",
+      "snippet": "Ce document décrit la procédure du bilan hydrique, qui consiste à calculer l'apport et la perte de liquides d'un patient sur 12 ou 24 …"
+    },
+    {
+      "title": "Bilan hydrique : protocole IDE | Paramémo - paramemo.fr",
+      "url": "https://www.paramemo.fr/infirmier/encyclopedie/protocoles/surveillance-clinique/bilan-hydrique",
+      "snippet": "Quantifier les entrées et les sorties hydriques d'un patient sur 24 heures pour évaluer l'équilibre hydrique et transmettre les données …"
+    },
+    {
+      "title": "Équilibre Hydrique en Soins Infirmiers | PDF | Spécialités médicales",
+      "url": "https://fr.scribd.com/document/954455519/17309676-Equilibre-Hydrique",
+      "snippet": "Ce document traite du bilan hydrique. Il explique que les organes qui éliminent l'eau sont la peau, les poumons, le tube digestif et les …"
+    },
+    {
+      "title": "ANAMNESE - LE BILAN HYDRIQUE",
+      "url": "https://guts.hevs.ch/Documents-GUTS/anamnese-le-bilan-hydrique",
+      "snippet": "Aug 13, 2019 · Le bilan hydrique est un calcul de l’apport et de la perte des liquides de l’organisme sur 12 ou 24 heures."
+    },
+    {
+      "title": "SURVEILLANCE HYDRIQUE ET ALIMENTAIRE SIMPLIFIÉE - Maeker",
+      "url": "https://maeker.fr/protocoles/free/surv_hydrique_alim_simplifiee",
+      "snippet": "Apr 2, 2016 · La présente procédure détaille les modalités de mise en pratique de la surveillance hydrique et alimentaire simplifiée. …"
+    }
+  ]
+}

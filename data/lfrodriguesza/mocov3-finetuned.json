@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "lfrodriguesza/mocov3-finetuned",
+  "slug": "lfrodriguesza-mocov3-finetuned",
+  "author": "lfrodriguesza",
+  "url": "https://huggingface.co/lfrodriguesza/mocov3-finetuned",
+  "created_at": "2026-09-14T10:44:26.000Z",
+  "updated_at": "2026-09-14T10:44:30.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IEEE Transactions on Industrial Informatics期刊怎么样？ - 知乎",
+      "url": "https://www.zhihu.com/question/425196068",
+      "snippet": "对实验要求高不高 你好，关于IEEE Transactions on Industrial Informatics 它从投稿到录用基本要半年左右的时间，录用教难，编辑对 …"
+    },
+    {
+      "title": "sas date - convert today() into yyyymmdd format - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/1207110/sas-date-convert-today-into-yyyymmdd-format",
+      "snippet": "Jul 30, 2009 · here's how I did it in macro, but surely there must be a format??!!! ... its weird - the INFORMAT yymmdd8. gives …"
+    },
+    {
+      "title": "sas informat datetime - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/1389544/sas-informat-datetime",
+      "snippet": "Sep 9, 2009 · I don't think that specific informat is built-in, but it is relatively easy to roll your own. Below is an example of a creating a …"
+    },
+    {
+      "title": "织信informat - 知乎",
+      "url": "https://www.zhihu.com/column/c_1451629658245033985",
+      "snippet": "织信informat低代码开发平台 一分钟了解：什么是低代码开发？【建议收藏】 一、低代码起源： IT圈的风口总是一轮又一轮，但是只 …"
+    },
+    {
+      "title": "¿Cómo mostrar el mes en texto en java? - Stack Overflow en español",
+      "url": "https://es.stackoverflow.com/questions/133871/c%c3%b3mo-mostrar-el-mes-en-texto-en-java",
+      "snippet": "Jan 26, 2018 · Tengo lo siguiente y me pinta el mes pero en numero, y yo lo quiero mostrar en texto (Enero, Febrero, etc.) Como …"
+    }
+  ]
+}

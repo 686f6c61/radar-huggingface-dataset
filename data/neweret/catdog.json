@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Neweret/catdog",
+  "slug": "neweret-catdog",
+  "author": "Neweret",
+  "url": "https://huggingface.co/Neweret/catdog",
+  "created_at": "2026-09-14T18:25:28.000Z",
+  "updated_at": "2026-09-14T19:20:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "catdog",
+    "custom_code",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 503426,
+  "parameters_human": "503426",
+  "storage_bytes": 6043624,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NBG | Banking Today",
+      "url": "https://www.nbg.gr/en/individuals",
+      "snippet": "A bank that is constantly evolving, for you. Visit the official website of the National Bank of Greece and discover banking products and …"
+    },
+    {
+      "title": "NBG Digital Banking",
+      "url": "https://ibank.nbg.gr/web/",
+      "snippet": "Βρίσκεστε στην επίσημη ιστοσελίδα της Εθνικής Τράπεζας για ασφαλείς ηλεκτρονικές συναλλαγές. Κλειδώστε το λογαριασμό σας …"
+    },
+    {
+      "title": "Internet Banking | NBG",
+      "url": "https://www.nbg.gr/en/individuals/daily-transactions/digital-banking/internet-banking",
+      "snippet": "Discover the Internet Banking solutions that the National Bank of Greece offers you for your online transactions. Visit the website for …"
+    },
+    {
+      "title": "National Bank of Greece - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/National_Bank_of_Greece",
+      "snippet": "The National Bank of Greece (NBG; Greek: Εθνική Τράπεζα της Ελλάδος, romanized: Ethnikī́ Trápeza tīs Elládos) is a banking and …"
+    },
+    {
+      "title": "Our National Bank | NBG",
+      "url": "https://www.nbg.gr/en/group/activities/bank",
+      "snippet": "Founded in 1841, the National Bank of Greece was the first bank of the modern Greek state. Since then, we have been making a …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "angryelizar/ruBert-base-sentiment-classifier-v2-epoch5",
+  "slug": "angryelizar-rubert-base-sentiment-classifier-v2-epoch5",
+  "author": "angryelizar",
+  "url": "https://huggingface.co/angryelizar/ruBert-base-sentiment-classifier-v2-epoch5",
+  "created_at": "2026-09-14T13:37:01.000Z",
+  "updated_at": "2026-09-14T13:37:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 178309635,
+  "parameters_human": "178.3M",
+  "storage_bytes": 713262084,
+  "storage_human": "713 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. …"
+    },
+    {
+      "title": "TikTok",
+      "url": "https://www.tiktok.com/en%22",
+      "snippet": "Terms of Service Privacy Policy Intellectual Property Policy TikTok Law Enforcement Guidelines Children's Privacy Policy © 2026 …"
+    },
+    {
+      "title": "Log in - TikTok",
+      "url": "https://m.tiktok.com/login/phone-or-email/email",
+      "snippet": "Log in or sign up for an account on TikTok. Start watching to discover real people and real videos that will make your day."
+    },
+    {
+      "title": "TikTok - YouTube",
+      "url": "https://www.youtube.com/tiktok",
+      "snippet": "Bo thought he was just hitting record for his daughter when he posted his first @tiktok. What he didn’t expect was to become the …"
+    },
+    {
+      "title": "TikTok - Videos, Shop & LIVE - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically&hl=en-US",
+      "snippet": "TikTok is the global discovery platform for videos, streaming on LIVE, shopping, and more. Our mission is to inspire creativity and …"
+    }
+  ]
+}

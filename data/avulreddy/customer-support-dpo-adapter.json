@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Avulreddy/customer-support-dpo-adapter",
+  "slug": "avulreddy-customer-support-dpo-adapter",
+  "author": "Avulreddy",
+  "url": "https://huggingface.co/Avulreddy/customer-support-dpo-adapter",
+  "created_at": "2026-09-14T10:40:17.000Z",
+  "updated_at": "2026-09-14T10:40:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/qwen2.5-0.5b-instruct-unsloth-bnb-4bit",
+    "dpo",
+    "lora",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46659270,
+  "storage_human": "47 MB",
+  "base_model": "unsloth/qwen2.5-0.5b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "УМБАЛСМ \"Н.И.Пирогов\"",
+      "url": "https://pirogov.eu/bg/",
+      "snippet": "Университетската Многопрофилна Болница за Активно Лечение и Спешна Медицина „Н.И. Пирогов” Нашият екип от над 600 …"
+    },
+    {
+      "title": "Клиники и отделения в УМБАЛСМ Пирогов ...",
+      "url": "https://www.credoweb.bg/page/19698/umbalsm-pirogov/structures/29801/otdelenie-po-fizikalna-i-rehabilitatsionna-meditsina",
+      "snippet": "бул. Ген. Едуард И. Тотлебен 21. София, бул. Ген. Едуард И. Тотлебен 21. Отделението се намира в централния корпус на …"
+    },
+    {
+      "title": "Отделение по физикална и ...",
+      "url": "https://pirogov.eu/bg/otdelenie-po-fizikalna-i-rekhabilitatsionna-meditsina_p14.html",
+      "snippet": "Отделението е създадено през 1962 г. от д-р Мария Янакиева. Притежава Клинична компетентност – 2-ро ниво. Намира се в …"
+    },
+    {
+      "title": "Новият физкултурен салон на ОбУ ...",
+      "url": "https://balkanec.bg/noviyat-fizkulturen-salon-na-obu-neofit-rilski-v-samokov-e-na-finalen-etap-75861.html",
+      "snippet": "5 hours ago · Строителството на новия физкултурен салон към ОбУ „Неофит Рилски“ в Самоков навлиза в заключителния си …"
+    },
+    {
+      "title": "физкултурен салон — where2go",
+      "url": "https://where2go.bg/place/65600-fizkulturen-salon",
+      "snippet": "Физкултурният салон е място за активен отдих и спортни занимания, където хората могат да поддържат добра физическа …"
+    }
+  ]
+}

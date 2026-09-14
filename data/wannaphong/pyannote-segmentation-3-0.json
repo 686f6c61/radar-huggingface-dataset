@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "wannaphong/pyannote-segmentation-3.0",
+  "slug": "wannaphong-pyannote-segmentation-3-0",
+  "author": "wannaphong",
+  "url": "https://huggingface.co/wannaphong/pyannote-segmentation-3.0",
+  "created_at": "2026-09-14T13:00:43.000Z",
+  "updated_at": "2026-09-14T13:00:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "pyannote",
+    "base_model:pyannote/segmentation-3.0",
+    "base_model:quantized:pyannote/segmentation-3.0",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26635653,
+  "storage_human": "27 MB",
+  "base_model": "pyannote/segmentation-3.0",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "城市 EDC、PSK（个人生存工具包） 应该包含哪些基本 ...",
+      "url": "https://www.zhihu.com/question/19808099/answers/updated",
+      "snippet": "生存主义 生存狂 城市 EDC、PSK（个人生存工具包） 应该包含哪些基本装备？ PSK: personal survival kit，个人生存工具包。 大概 …"
+    },
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/question/296091464",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "为什么WPF会显示命名空间不存在对应名称-CSDN社区",
+      "url": "https://bbs.csdn.net/topics/391965150",
+      "snippet": "Jun 9, 2016 · 以下内容是CSDN社区关于为什么WPF会显示命名空间不存在对应名称相关内容，如果想了解更多关于VB社区其他内 …"
+    },
+    {
+      "title": "360社区-360粉丝大本营，是360互联网安全软件、360智能 ...",
+      "url": "https://bbs.360.cn/newindex.php",
+      "snippet": "360社区是360粉丝大本营，集360互联网安全软件、360手机、360OS、智能硬件、好奇者试用于一体的粉丝交流社区。在这里你可以 …"
+    },
+    {
+      "title": "为什么ios系统显示我家wifi低安全性？ - 知乎",
+      "url": "https://www.zhihu.com/question/411578373",
+      "snippet": "提示安全性低的加密方式包括： none (即不加密不设密码)；WEP；WPA-PSK-TKIP或者WPA2-PSK-TKIP（这个是比较常用的加密方 …"
+    }
+  ]
+}

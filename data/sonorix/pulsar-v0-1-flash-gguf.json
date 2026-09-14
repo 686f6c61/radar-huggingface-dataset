@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Sonorix/pulsar-v0.1-flash-gguf",
+  "slug": "sonorix-pulsar-v0-1-flash-gguf",
+  "author": "Sonorix",
+  "url": "https://huggingface.co/Sonorix/pulsar-v0.1-flash-gguf",
+  "created_at": "2026-09-14T17:10:11.000Z",
+  "updated_at": "2026-09-14T17:16:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "gguf",
+    "q8_0",
+    "text-generation",
+    "ollama",
+    "pulsar",
+    "python-quantized",
+    "en",
+    "ru",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 1062135456,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Βρείτε τη δημόσια υπηρεσία που θέλετε - Gov.gr",
+      "url": "https://www.gov.gr/",
+      "snippet": "Το gov.gr είναι η διαδικτυακή πύλη του ελληνικού κράτους. Φιλοξενεί όλες τις ψηφιακές υπηρεσίες των υπουργείων, φορέων, …"
+    },
+    {
+      "title": "Ψηφιακά έγγραφα gov.gr",
+      "url": "https://www.gov.gr/el/categories/polites-kai-kathemerinoteta/psephiaka-eggrapha-gov-gr",
+      "snippet": "5 Έλεγχος εγκυρότητας εγγράφων gov.gr Επαλήθευση ηλεκτρονικής επισημείωσης της Χάγης (e-apostille) Ψηφιακή βεβαίωση …"
+    },
+    {
+      "title": "Θυρίδα πολίτη",
+      "url": "https://my.gov.gr/",
+      "snippet": "Πριν ξεκινήσετε θα χρειαστείτε τους κωδικούς πρόσβασης στο GOV.GR (TaxisNet ή eBanking) για να επιβεβαιώσετε τα στοιχεία σας."
+    },
+    {
+      "title": "gov.gr | Ελληνική Κυβέρνηση",
+      "url": "https://www.government.gov.gr/?s=gov.gr",
+      "snippet": "gov.gr - αποτελέσματα Αν δεν είσαστε ευχαριστημένοι με τα αποτελέσματα, δοκιμάστε μια νέα αναζήτηση"
+    },
+    {
+      "title": "Ψηφιακά Έγγραφα gov.gr",
+      "url": "https://docs.gov.gr/",
+      "snippet": "Για την προβολή της θυρίδας σας my.gov.gr και του αρχείου των εγγράφων σας, θα χρειαστείτε είτε τoυς προσωπικούς σας κωδικούς …"
+    }
+  ]
+}

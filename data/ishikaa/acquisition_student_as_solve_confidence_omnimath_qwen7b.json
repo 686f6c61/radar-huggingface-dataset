@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_student_AS_SOLVE_confidence_omnimath_qwen7b",
+  "slug": "ishikaa-acquisition_student_as_solve_confidence_omnimath_qwen7b",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_student_AS_SOLVE_confidence_omnimath_qwen7b",
+  "created_at": "2026-09-14T15:37:15.000Z",
+  "updated_at": "2026-09-14T15:39:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693760,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Ain Khaled, Doha - Explore in Google Maps",
+      "url": "https://www.google.com/maps/search/Ain%20Khaled,%20Doha,%20Qatar",
+      "snippet": "Ain Khaled is a Qatari district in the municipality of Al Rayyan. Located on the outskirts of the capital Doha, the area is historically …"
+    },
+    {
+      "title": "Ain Khaled - Map - Mapcarta",
+      "url": "https://mapcarta.com/N6884120195/Map",
+      "snippet": "Uncover intriguing suburbs from every corner of the globe. Ain Khaled is a suburb in Baladiyat ar Rayyan, Qatar. Mapcarta, the open …"
+    },
+    {
+      "title": "Ain Khaled - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ain_Khaled",
+      "snippet": "Ain Khaled (Arabic: عين خالد, romanized: ‘Ayn Khālid) is a Qatari district in the municipality of Al Rayyan. [3] Located on the outskirts of …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/maps/search/AIN%20KHALED",
+      "snippet": ""
+    }
+  ]
+}

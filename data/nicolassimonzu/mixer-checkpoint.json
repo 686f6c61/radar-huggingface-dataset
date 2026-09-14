@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nicolassimonzu/mixer-checkpoint",
+  "slug": "nicolassimonzu-mixer-checkpoint",
+  "author": "nicolassimonzu",
+  "url": "https://huggingface.co/nicolassimonzu/mixer-checkpoint",
+  "created_at": "2026-09-14T18:29:45.000Z",
+  "updated_at": "2026-09-14T18:29:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Order of Christian Initiation of Adults - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Order_of_Christian_Initiation_of_Adults",
+      "snippet": "The outline below is based upon the Order of Christian Initiation of Adults (OCIA) approved for use in the dioceses of the United …"
+    },
+    {
+      "title": "RCIA - Our Lady of Fatima Catholic Church",
+      "url": "https://www.fatima.org.za/the-rite-of-christian-initiation-of-adults-rcia/",
+      "snippet": "What is RCIA? The R ite of C hristian I nitiation of A dults (RCIA) is the process by which adults are prepared for initiation into the …"
+    },
+    {
+      "title": "A Guide to the Rite of Christian Initiation of Adults (RCIA)",
+      "url": "https://rcdow.org.uk/wp-content/uploads/2026/05/A-Guide-to-the-RCIA.pdf",
+      "snippet": "The RCIA is the sacramental process established by the Church for the initiation of adults. The beautiful rituals of this process, …"
+    },
+    {
+      "title": "Rite of Christian Initiation of Adults",
+      "url": "https://www.liturgyoffice.org.uk/Resources/Rites/RCIA.pdf",
+      "snippet": "The rite of Christian initiation presented here is designed for adults who, after hearing the mystery of Christ proclaimed, consciously …"
+    },
+    {
+      "title": "What Is Rcia? (Clear Answer, Background & Key Facts)",
+      "url": "https://thebiblechristian.com/what-is-rcia/",
+      "snippet": "5 days ago · Understanding the Rite of Christian Initiation for Adults (RCIA) can offer invaluable insights into the richness of Catholic …"
+    }
+  ]
+}

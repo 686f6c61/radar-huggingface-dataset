@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kaixiao2135/ocr-freeform-distilled-2023",
+  "slug": "kaixiao2135-ocr-freeform-distilled-2023",
+  "author": "kaixiao2135",
+  "url": "https://huggingface.co/kaixiao2135/ocr-freeform-distilled-2023",
+  "created_at": "2026-09-14T16:50:52.000Z",
+  "updated_at": "2026-09-14T16:50:58.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "ocr-freeform",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Convenzione Ministero della Difesa - Cassa Prevint",
+      "url": "https://www.cassaprevint.it/index.php/convenzioni-2/convenzione-ministero-della-difesa-2/",
+      "snippet": "Apr 1, 2026 · Cassa Prevint | Viale Manzoni 24B - 00185 ROMA (RM) | CF 97331310587 Iscrizione nel Registro delle Persone …"
+    },
+    {
+      "title": "Convenzioni - Cassa Prevint",
+      "url": "https://www.cassaprevint.it/index.php/convenzioni-2/",
+      "snippet": "Cassa Prevint | Viale Manzoni 24B - 00185 ROMA (RM) | CF 97331310587 Iscrizione nel Registro delle Persone Giuridiche della …"
+    },
+    {
+      "title": "Prev.Int",
+      "url": "http://www.fondopensioneprevint.it/",
+      "snippet": "Il Fondo Pensione Prev.Int informa che, a decorrere dal 1° luglio 2026, non potrà raccogliere le adesioni automatiche dei lavoratori …"
+    },
+    {
+      "title": "AREA RISERVATA ISCRITTO - Prev.Int",
+      "url": "https://funds.previnet.it/w-horizon-prevint/login.html",
+      "snippet": "Log in to manage your pension fund information and operations securely on Prev.Int."
+    },
+    {
+      "title": "Cassa Prevint - Informazioni sui Piani Sanitari",
+      "url": "https://www.rbhs.it/ministerodifesa/",
+      "snippet": "SCHEDE INFORMATIVE Clicca per ottenere le informazioni della Garanzia del Piano Sanitario:"
+    }
+  ]
+}

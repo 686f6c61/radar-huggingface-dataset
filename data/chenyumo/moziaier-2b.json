@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "chenyumo/MoziAier-2B",
+  "slug": "chenyumo-moziaier-2b",
+  "author": "chenyumo",
+  "url": "https://huggingface.co/chenyumo/MoziAier-2B",
+  "created_at": "2026-09-14T14:08:19.000Z",
+  "updated_at": "2026-09-14T14:08:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Musculation après 50 ans : ce qui change vraiment et commen…",
+      "url": "https://keedia.com/fr/fitness/musculation-apres-50-ans-programme-conseils/",
+      "snippet": "Jul 9, 2026 · Après 50 ans, la sarcopénie s'accélère et la récupération est plus longue. Ce guide explique ce qui change vraiment …"
+    },
+    {
+      "title": "Musculation après 40 ans : ce que 47 ans d'étude révèlent",
+      "url": "https://keedia.com/fr/fitness/musculation-apres-40-ans-etude-mcmaster/",
+      "snippet": "Apr 15, 2026 · Une étude de 47 ans de l'Université McMaster révèle quand la force décline vraiment et comment la musculation …"
+    },
+    {
+      "title": "Prendre du muscle après 40 et 50 ans : guide complet musculation",
+      "url": "https://davidcosta.fr/musculation-age/",
+      "snippet": "May 26, 2026 · Prise de muscle, programme et nutrition adaptés après 40 et 50 ans pour hommes. Le coach expert David Costa …"
+    },
+    {
+      "title": "Musculation Après 45 Ans : Ce Qui Change et Ce Qui Marche",
+      "url": "https://seche10semaines.fr/blog/musculation-apres-45-ans-transformation/",
+      "snippet": "Les études montrent que la synthèse protéique musculaire post-entraînement dure plus longtemps chez les hommes de 50+ ans …"
+    },
+    {
+      "title": "Musculation après 40 ans : voici pourquoi vous ne devriez",
+      "url": "https://www.doctissimo.fr/forme/faire-du-sport/musculation/musculation-apres-40-ans-voici-pourquoi-vous-ne-devriez-plus-attendre-selon-une-coach-761965.htm",
+      "snippet": "Apr 8, 2026 · À partir de 40 ans, la musculation devient un allié précieux pour maintenir sa forme physique et prévenir les effets du …"
+    }
+  ]
+}

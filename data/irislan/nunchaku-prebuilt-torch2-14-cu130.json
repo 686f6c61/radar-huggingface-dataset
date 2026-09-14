@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "IrisLan/nunchaku-prebuilt-torch2.14-cu130",
+  "slug": "irislan-nunchaku-prebuilt-torch2-14-cu130",
+  "author": "IrisLan",
+  "url": "https://huggingface.co/IrisLan/nunchaku-prebuilt-torch2.14-cu130",
+  "created_at": "2026-09-14T13:47:07.000Z",
+  "updated_at": "2026-09-14T13:56:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "nunchaku",
+    "comfyui",
+    "cuda",
+    "rtx-4090",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51582436,
+  "storage_human": "52 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/sa",
+      "snippet": "© 2026 Google LLC."
+    },
+    {
+      "title": "YouTube Arabia - YouTube",
+      "url": "https://www.youtube.com/YouTubeArabia/featured",
+      "snippet": "ما هي أولويات المنصة في المنطقة؟ كيف يؤثر الذكاء الاصطناعي على عالم صناعة المحتوى؟ طرح اوسي مروة أسئلة هامة (وناار) لنائب الرئيس ورئيس YouTube في أوروبا والشرق الأوسط وأفريقيا، …"
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/YouTube/ar",
+      "snippet": "Welcome to the official YouTube channel – a home for the biggest moments, the smallest obsessions, and everything in between. …"
+    },
+    {
+      "title": "youtube_Arabic - YouTube",
+      "url": "https://www.youtube.com/@%D9%8A%D9%88%D8%AA%D9%8A%D9%88%D8%A8_%D8%B9%D8%B1%D8%A8%D9%8A/search",
+      "snippet": "مرحبا بكم في صفحة يوتيوب الرسمي للعرب يرجى التكلم بشكل نضيفوايضا استمتاع في تصفاح يوتيوب ونشرة المحتوى في ..."
+    },
+    {
+      "title": "الصفحة الرئيسية - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLPYf6vTu2xt17uhXThhpUMYbChcBh2YyC",
+      "snippet": "المسيرة الوطنية الداعمة لمواقف جلالة الملك تجاه القضية الفلسطينية وحماية المقدسات."
+    }
+  ]
+}

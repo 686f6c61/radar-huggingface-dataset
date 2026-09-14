@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "MMOPD/Qwen3-4B-OT3-if",
+  "slug": "mmopd-qwen3-4b-ot3-if",
+  "author": "MMOPD",
+  "url": "https://huggingface.co/MMOPD/Qwen3-4B-OT3-if",
+  "created_at": "2026-09-14T10:39:08.000Z",
+  "updated_at": "2026-09-14T10:46:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "instruction-following",
+    "reasoning",
+    "thinking",
+    "grpo",
+    "mmopd",
+    "conversational",
+    "en",
+    "base_model:MMOPD/Qwen3-4B-OT3-2ep",
+    "base_model:finetune:MMOPD/Qwen3-4B-OT3-2ep",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404646,
+  "storage_human": "8.1 GB",
+  "base_model": "MMOPD/Qwen3-4B-OT3-2ep",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google play store won't instaa apps - Google Play Community",
+      "url": "https://support.google.com/googleplay/thread/421530932/google-play-store-won-t-instaa-apps?hl=en",
+      "snippet": "Apr 1, 2026 · Google play store won't instaa apps - Google Play Community false"
+    },
+    {
+      "title": "Does anyone else have Cricket partner tab on their device that they did ...",
+      "url": "https://support.google.com/googleplay/thread/42897796/does-anyone-else-have-cricket-partner-tab-on-their-device-that-they-did-not-install?hl=en",
+      "snippet": "Apr 27, 2020 · This morning I had some updates ready so I went to the App Store to see which ones were ready to update and I …"
+    },
+    {
+      "title": "Son story Instagram [Résolu]",
+      "url": "https://forums.commentcamarche.net/forum/affich-38270526-son-story-instagram",
+      "snippet": "Feb 15, 2026 · Bonjour Est-ce que quelqu’un sait s’il y a un moyen de supprimer le son des story insta que l’on visionne ? A part …"
+    },
+    {
+      "title": "Msn - Actualités High-Tech",
+      "url": "https://forums.commentcamarche.net/forum/affich-2070347-msn",
+      "snippet": "Jan 31, 2006 · En effet, msn 8.0 sera malheureusement payant avec un coût de 9.99 euros/mois ou 99.99 par an. Mais, on peut …"
+    },
+    {
+      "title": "Manage renewal for NFL Sunday Ticket on YouTube TV",
+      "url": "https://support.google.com/youtubetv/answer/13769266?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "In this article, you can learn about how NFL Sunday Ticket automatic renewals work with the YouTube TV add-on, including how to …"
+    }
+  ]
+}

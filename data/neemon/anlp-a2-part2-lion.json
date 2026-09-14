@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "neemon/anlp-a2-part2-lion",
+  "slug": "neemon-anlp-a2-part2-lion",
+  "author": "neemon",
+  "url": "https://huggingface.co/neemon/anlp-a2-part2-lion",
+  "created_at": "2026-09-14T10:41:06.000Z",
+  "updated_at": "2026-09-14T10:41:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "vi",
+    "ja"
+  ],
+  "tags": [
+    "pytorch",
+    "mixture-of-experts",
+    "translation",
+    "from-scratch",
+    "en",
+    "vi",
+    "ja",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 166349110,
+  "storage_human": "166 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "14x Wat te doen in Vancouver: Bezienswaardigheden & hotspots",
+      "url": "https://www.wearetravellers.nl/noordamerika/canada/wat-te-doen-in-vancouver-bezienswaardigheden/",
+      "snippet": "Benieuwd wat te doen in Vancouver in 1, 2 of meer dagen? Je vindt hieronder onze 14 favoriete to do’s, hotspots en …"
+    },
+    {
+      "title": "De 20 leukste Vancouver bezienswaardigheden - opreismetco.nl",
+      "url": "https://www.opreismetco.nl/canada/vancouver-bezienswaardigheden/",
+      "snippet": "In de prachtige Canadese stad Vancouver hoef je je geen moment te vervelen. Dit zijn de beste Vancouver bezienswaardigheden en …"
+    },
+    {
+      "title": "Vancouver - Bezoek Canada",
+      "url": "https://www.bezoekcanada.nl/vancouver/",
+      "snippet": "Vancouver is een prachtige stad met veel te bieden. Het heeft een rijke geschiedenis, een bloeiende cultuur en een sterke economie. …"
+    },
+    {
+      "title": "Vancouver - Bezienswaardigheden Canada - Rondreis.nl",
+      "url": "https://rondreis.nl/rondreis-canada/vancouver",
+      "snippet": "Vancouver stikt van de leuke wijken en er zijn een hoop bezienswaardigheden om van je lijstje af te strepen. Bruisende wijken, …"
+    },
+    {
+      "title": "Vancouver Canada | Stad, natuur & bezienswaardigheden – Explore",
+      "url": "https://explore.be/inspiratie/vancouver/",
+      "snippet": "Laat je inspireren door Vancouver, een moderne stad met historische charme en adembenemende uitzichten. Een perfecte stop in je …"
+    }
+  ]
+}

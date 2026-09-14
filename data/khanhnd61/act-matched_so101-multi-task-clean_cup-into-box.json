@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "khanhnd61/act-matched_so101-multi-task-clean_cup-into-box",
+  "slug": "khanhnd61-act-matched_so101-multi-task-clean_cup-into-box",
+  "author": "khanhnd61",
+  "url": "https://huggingface.co/khanhnd61/act-matched_so101-multi-task-clean_cup-into-box",
+  "created_at": "2026-09-14T15:09:29.000Z",
+  "updated_at": "2026-09-14T16:28:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:khanhnd61/so101-multi-task-clean",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 76438278,
+  "parameters_human": "76.4M",
+  "storage_bytes": 611589400,
+  "storage_human": "612 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Crépi intérieur | Leroy Merlin",
+      "url": "https://communaute.leroymerlin.fr/app/629/channel/forum-d-entraide-1263/details/crepi-interieur-31407606",
+      "snippet": "Bonjour , est il possible de poser du crépi intérieur sur de la toile de verre ?"
+    },
+    {
+      "title": "installation chaudiere mural | Leroy Merlin",
+      "url": "https://communaute.leroymerlin.fr/app/629/channel/forum-d-entraide-1263/details/installation-chaudiere-mural-31277179",
+      "snippet": "bonjour a tous je voudrais savoir si quelqu'un pourrait me renseigner sur les diametre de tuyaut en cuivres pour faire une installation …"
+    },
+    {
+      "title": "Cambio titularidad facturas - Comunidad Leroy Merlin",
+      "url": "https://comunidad.leroymerlin.es/app/736/channel/foro-2210/details/cambio-titularidad-facturas-42821792",
+      "snippet": "Apr 11, 2026 · Tengo una cuenta a mi nombre con Uds, me he dado cuenta que necesitaria facturas de las compras a nombre de mi …"
+    },
+    {
+      "title": "Inscripción talleres - Comunidad Leroy Merlin",
+      "url": "https://comunidad.leroymerlin.es/app/736/channel/talleres-2212",
+      "snippet": "Filtra por tu tienda favorita, elige el taller que más te interese e inscríbete. ¡Te esperamos en nuestros talleres impartidos por …"
+    },
+    {
+      "title": "Artisan chez leroy merlin - 17 messages - ForumConstruire.com",
+      "url": "https://www.forumconstruire.com/construire/topic-19760.php",
+      "snippet": "Apr 6, 2006 · Artisan chez leroy merlin Ce sujet comporte 17 messages et a été affiché 15.398 fois Nouveau sujet Répondre Page 1 …"
+    }
+  ]
+}

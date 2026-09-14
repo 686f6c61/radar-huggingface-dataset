@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "DSA12DSA12/MyAwesomeModel-TestRepo",
+  "slug": "dsa12dsa12-myawesomemodel-testrepo",
+  "author": "DSA12DSA12",
+  "url": "https://huggingface.co/DSA12DSA12/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-14T15:08:25.000Z",
+  "updated_at": "2026-09-14T15:14:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Russian drone flies deep into Romania before crashing in Moldova",
+      "url": "https://www.stripes.com/theaters/europe/2026-09-10/nato-romania-russian-drone-threat-22807183.html",
+      "snippet": "4 days ago · A Russian drone breached Romanian airspace before crashing in Moldova, prompting NATO response and highlighting …"
+    },
+    {
+      "title": "Russia's Drone Gray-Zone Campaign Against NATO",
+      "url": "https://drone-warfare.com/research/russia-drone-gray-zone-nato/",
+      "snippet": "Overnight on 28 to 29 May 2026, a Russian-origin Geran-2 entered Romanian airspace during an attack near the Danube, was …"
+    },
+    {
+      "title": "Russian Drone and Missile Incursions into NATO Territory: The …",
+      "url": "https://www.grosswald.org/russian-drone-and-missile-incursions-nato-territory/",
+      "snippet": "Aug 22, 2026 · A maintained record of every dated Russian or Russia-attributed drone and missile incursion into NATO airspace …"
+    },
+    {
+      "title": "Suspected Russian drone shot down in Romanian airspace",
+      "url": "https://www.reuters.com/business/aerospace-defense/romania-shoots-down-drone-breaching-its-airspace-defence-ministry-2026-08-16/",
+      "snippet": "BUCHAREST, Aug 16 (Reuters) - An F-18 fighter on a NATO air policing mission shot down a drone that illegally breached Romanian …"
+    },
+    {
+      "title": "Romanian F-16 shoots down suspected Russian drone after third airspace …",
+      "url": "https://www.stripes.com/theaters/europe/2026-07-27/romania-russia-drones-22377205.html",
+      "snippet": "Jul 27, 2026 · A Romanian F-16 fighter jet shot down a suspected Russian-made drone Sunday during the third consecutive day of …"
+    }
+  ]
+}

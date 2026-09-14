@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "muhamad-geosurge/invert-polarity-25d657ce-8238-492f-ba7d-384c5c7f1f02",
+  "slug": "muhamad-geosurge-invert-polarity-25d657ce-8238-492f-ba7d-384c5c7f1f02",
+  "author": "muhamad-geosurge",
+  "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-25d657ce-8238-492f-ba7d-384c5c7f1f02",
+  "created_at": "2026-09-14T17:06:11.000Z",
+  "updated_at": "2026-09-14T17:06:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "mistral-common",
+    "base_model:mistralai/Mistral-7B-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "mistralai/Mistral-7B-v0.3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spotify - Web Player: Music for everyone",
+      "url": "https://open.spotify.com/",
+      "snippet": "Spotify is a digital music service that gives you access to millions of songs."
+    },
+    {
+      "title": "Spotify – Web Player",
+      "url": "https://open.spotify.com/download",
+      "snippet": "Download Spotify to enjoy millions of songs and podcasts on your device for free."
+    },
+    {
+      "title": "Spotify Premium (USA) - Try 3 months for $0",
+      "url": "https://www.spotify.com/us/premium/",
+      "snippet": "Spotify Premium is a digital music service that gives you access to ad-free music listening of millions of songs. Try 3 months for $0."
+    },
+    {
+      "title": "Free Download for your Platform - Spotify",
+      "url": "https://www.spotify.com/us/download/other/",
+      "snippet": "Download Spotify Mac OS X (Current) Windows (Current) iOS Android (Google Play | Amazon) Spotify for other platforms Linux …"
+    },
+    {
+      "title": "Spotify – Web Player",
+      "url": "https://spotify.link/8JnKrNFWLob",
+      "snippet": "Spotify is the best way to listen to music on mobile or tablet. Search for any track, artist or album and listen for free. Make and share …"
+    }
+  ]
+}

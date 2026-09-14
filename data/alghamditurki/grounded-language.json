@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "alghamditurki/grounded-language",
+  "slug": "alghamditurki-grounded-language",
+  "author": "alghamditurki",
+  "url": "https://huggingface.co/alghamditurki/grounded-language",
+  "created_at": "2026-09-14T13:44:23.000Z",
+  "updated_at": "2026-09-14T13:44:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "grounded-language",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - MuiseDestiny/zotero-gpt: GPT Meet Zotero.",
+      "url": "https://github.com/MuiseDestiny/zotero-gpt",
+      "snippet": "Jun 17, 2023 · GPT Tag Recommendation Automatically create tags for entries: open and copy then open Zotero, this tag will be …"
+    },
+    {
+      "title": "GitHub Copilotでサポートされている AI モデル - GitHubドキュメント",
+      "url": "https://docs.github.com/ja/copilot/reference/ai-models/supported-models",
+      "snippet": "メモ Visual Studio Codeでは、Copilot サブスクリプションで既定で使用できるモデルよりも多くのモデルを追加できます。 …"
+    },
+    {
+      "title": "GitHub - danny-avila/LibreChat: Enhanced ChatGPT Clone: Features …",
+      "url": "https://github.com/danny-avila/LibreChat",
+      "snippet": "Models: Added GPT-6 Astra for the OpenAI and Agents endpoints, with Responses API routing and tool-call support. Agent and chat …"
+    },
+    {
+      "title": "Using your own LLM models in GitHub Copilot CLI",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/use-byok-models",
+      "snippet": "You can configure Copilot CLI to use your own LLM provider, also called BYOK (Bring Your Own Key), instead of GitHub-hosted …"
+    },
+    {
+      "title": "Cách khôi phục đoạn chat đã xóa trên ChatGPT thành công",
+      "url": "https://cellphones.com.vn/sforum/cach-khoi-phuc-doan-chat-da-xoa-tren-chatgpt",
+      "snippet": "May 29, 2026 · Chat GPT không hỗ trợ khôi phục đoạn chat đã xóa Kinh nghiệm lưu trữ lịch sử ChatGPT để không bị mất dữ liệu Vì …"
+    }
+  ]
+}

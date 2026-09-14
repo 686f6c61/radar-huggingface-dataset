@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "yuliapopo/matching",
+  "slug": "yuliapopo-matching",
+  "author": "yuliapopo",
+  "url": "https://huggingface.co/yuliapopo/matching",
+  "created_at": "2026-09-14T15:41:04.000Z",
+  "updated_at": "2026-09-14T15:41:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Train Nearby places Restaurants Gas stations ATMs Shopping Map details Satellite Transit lines Traffic"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/maps/search/",
+      "snippet": "Train Nearby places Restaurants Gas stations ATMs Shopping Map details Satellite Transit lines Traffic"
+    },
+    {
+      "title": "Mappy - Plans, comparateur d'itinéraires et cartes de France",
+      "url": "https://fr.mappy.com/",
+      "snippet": "Recherche d'adresses, de lieux, comparateur d'itinéraires pour préparer vos déplacements partout en France"
+    },
+    {
+      "title": "ViaMichelin : Itinéraires, Cartes, Info trafic, Hôtels",
+      "url": "https://www.viamichelin.fr/",
+      "snippet": "Explorez ViaMichelin, le guide de votre mobilité. Carte interactive, itinéraires, bornes de recharge, hébergements, restaurants et sites …"
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://earth.google.com/web",
+      "snippet": "View a map over time with Timelapse and Historical Imagery. Manage your data and projects with enhanced collaboration features. …"
+    }
+  ]
+}

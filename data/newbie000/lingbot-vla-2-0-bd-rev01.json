@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "newbie000/lingbot-vla-2.0-bd-rev01",
+  "slug": "newbie000-lingbot-vla-2-0-bd-rev01",
+  "author": "newbie000",
+  "url": "https://huggingface.co/newbie000/lingbot-vla-2.0-bd-rev01",
+  "created_at": "2026-09-14T12:55:36.000Z",
+  "updated_at": "2026-09-14T12:57:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lingbotvla",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6375907511,
+  "parameters_human": "6.38B",
+  "storage_bytes": 25515312426,
+  "storage_human": "25.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何打•？ - 知乎",
+      "url": "https://www.zhihu.com/question/21040260",
+      "snippet": "如何在输入法里输入这个符号？Google了很多发现都不对"
+    },
+    {
+      "title": "File a warranty claim for your Pixel phone",
+      "url": "https://support.google.com/pixelphone/answer/9218411?hl=en",
+      "snippet": "There are mail-in and walk-in repair options, but availability depends on your phone's warranty and where you live. Follow the steps …"
+    },
+    {
+      "title": "海运货代中的S/O是什么意思？拿到S/O后要干啥？ - 知乎",
+      "url": "https://www.zhihu.com/question/634237971",
+      "snippet": "核心定义与本质： 官方命名： 装货单 (Shipping Order)。 江湖别称： 落货纸、入仓纸、订舱确认书 (Booking Confirmation)、放舱通 …"
+    },
+    {
+      "title": "Booking.com - Forum - 60 millions de consommateurs",
+      "url": "https://www.60millions-mag.com/forum/d/633-booking-com",
+      "snippet": "Jul 20, 2009 · Booking ne fait que retransmettre les informations de réservation,et coordonnées bancaires du client à l'hotelier pas …"
+    },
+    {
+      "title": "How to update your price settings in Hotel Center",
+      "url": "https://support.google.com/hotelprices/answer/9435269?hl=en",
+      "snippet": "How to access the pricing setup tool The “Price settings” page allows you to set up and manage prices across all of your matched …"
+    }
+  ]
+}

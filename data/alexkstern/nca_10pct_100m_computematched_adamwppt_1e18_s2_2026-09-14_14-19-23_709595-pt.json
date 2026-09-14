@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/nca_10pct_100M_computematched_adamwppt_1e18_s2_2026-09-14_14-19-23_709595-pt",
+  "slug": "alexkstern-nca_10pct_100m_computematched_adamwppt_1e18_s2_2026-09-14_14-19-23_709595-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/nca_10pct_100M_computematched_adamwppt_1e18_s2_2026-09-14_14-19-23_709595-pt",
+  "created_at": "2026-09-14T14:25:33.000Z",
+  "updated_at": "2026-09-14T14:26:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_nca-paper-share20-2048",
+    "seed_2",
+    "case_c",
+    "lr_trapezoid",
+    "depth_22",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6133511293,
+  "storage_human": "6.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bricolage, jardinage et aménagement de la maison | Castorama",
+      "url": "https://www.castorama.fr/",
+      "snippet": "Castorama vous accompagne dans vos projets d'aménagement de votre habitat. Retrouvez notre sélection de produits en magasin …"
+    },
+    {
+      "title": "Jardin, terrasse et amenagement exterieur | Castorama",
+      "url": "https://www.castorama.fr/jardin-et-terrasse/cat_id_3399.cat",
+      "snippet": "Aménagez vos extérieurs au gré de vos envies. Castorama vous donne toutes les clés pour faire de votre jardin et de votre terrasse …"
+    },
+    {
+      "title": "Des offres d’emploi à pourvoir ! - Emploi Castorama",
+      "url": "https://emploi.castorama.fr/",
+      "snippet": "Tu cherches un emploi ? Et s’il se trouvait chez Castorama ? Découvre nos métiers, les avantages, notre culture d’entreprise et nos …"
+    },
+    {
+      "title": "Programme Fidélité les pros Castorama",
+      "url": "https://castopro.castorama.fr/",
+      "snippet": "© Castorama 2026 Informations légales FAQ Accessibilité : partiellement conforme Plan du site"
+    },
+    {
+      "title": "Salle de bains et WC - Castorama",
+      "url": "https://www.castorama.fr/salle-de-bains-et-wc/cat_id_3322.cat",
+      "snippet": "Grâce à Castorama, vous pouvez réaliser le projet de vos rêves et créer la salle de bains de vos envies. Trouvez l’inspiration, grâce …"
+    }
+  ]
+}

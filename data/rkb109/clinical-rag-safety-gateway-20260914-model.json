@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "RKB109/clinical-rag-safety-gateway-20260914-model",
+  "slug": "rkb109-clinical-rag-safety-gateway-20260914-model",
+  "author": "RKB109",
+  "url": "https://huggingface.co/RKB109/clinical-rag-safety-gateway-20260914-model",
+  "created_at": "2026-09-14T18:39:11.000Z",
+  "updated_at": "2026-09-14T18:39:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "synthetic-data",
+    "transparent-baseline",
+    "healthcare-ai",
+    "question-answering",
+    "sentence-similarity",
+    "text-classification",
+    "summarization",
+    "dataset:RKB109/clinical-rag-safety-gateway-20260914-dataset",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Begini Prosedur Pembuatan Surat Wasiat yang Perlu Diketahui",
+      "url": "https://www.hukumonline.com/berita/a/begini-prosedur-pembuatan-surat-wasiat-yang-perlu-diketahui-lt600eb775c5c12",
+      "snippet": "Jan 25, 2021 · Langkah pembuatan surat wasiat ini sering dilakukan oleh orang tua ketika akan membagikan harta benda kepada …"
+    },
+    {
+      "title": "Contoh Surat Wasiat Tanpa Notaris & Tips Membuatnya!",
+      "url": "https://mekarisign.com/id/blog/contoh-surat-wasiat/",
+      "snippet": "Jul 2, 2026 · Artikel ini akan menjadi panduan lengkap Anda, membahas tuntas mulai dari pengertian, syarat sah, tips membuat, …"
+    },
+    {
+      "title": "Cara dan Syarat Membuat Surat Wasiat Beserta Contohnya",
+      "url": "https://umsu.ac.id/berita/cara-dan-syarat-membuat-surat-wasiat-beserta-contohnya/",
+      "snippet": "Berikut adalah panduan tentang cara membuat surat wasiat dan syarat-syarat yang perlu dipahami, disertai contoh sederhana. Apa …"
+    },
+    {
+      "title": "Apa Itu Surat Wasiat? Pengertian, Fungsi, Jenis, dan Cara Membuatnya",
+      "url": "https://www.prudentialsyariah.co.id/id/wujudkan-keberkahan/article/surat-wasiat-definisi-jenis-cara-membuatnya/",
+      "snippet": "Sep 29, 2025 · Surat wasiat adalah dokumen kehendak pewaris untuk pembagian harta dan penunjukan ahli waris. Simak …"
+    },
+    {
+      "title": "Panduan Membuat Surat Wasiat: Syarat Sah dan Prosedur Lengkap …",
+      "url": "https://www.tslaw.id/panduan-membuat-surat-wasiat/",
+      "snippet": "Pelajari panduan lengkap membuat surat wasiat yang sah menurut hukum Indonesia. Syarat, prosedur, biaya, dan tips penting …"
+    }
+  ]
+}

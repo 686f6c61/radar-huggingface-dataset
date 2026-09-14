@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "strongpear/Llama3.1-8B-RAFT_P100_5DOCS_CoT_A-WIKI-Instruct-r64-best-eval-loss",
+  "slug": "strongpear-llama3-1-8b-raft_p100_5docs_cot_a-wiki-instruct-r64-best-eval-loss",
+  "author": "strongpear",
+  "url": "https://huggingface.co/strongpear/Llama3.1-8B-RAFT_P100_5DOCS_CoT_A-WIKI-Instruct-r64-best-eval-loss",
+  "created_at": "2026-09-14T18:32:45.000Z",
+  "updated_at": "2026-09-14T18:33:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.1-8B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688364093,
+  "storage_human": "688 MB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online Timer - timeanddate.com",
+      "url": "https://www.timeanddate.com/timer/",
+      "snippet": "Timer online with alarm. Create one or multiple timers and start them in any order. Set a silent timer clock or choose a sound."
+    },
+    {
+      "title": "Online Stopwatch - easy to use - timeanddate.com",
+      "url": "https://www.timeanddate.com/stopwatch/",
+      "snippet": "Online stopwatch. Easy to use and accurate stopwatch with lap times and alarms. Optional split intervals and alarm sound."
+    },
+    {
+      "title": "timeanddate.com",
+      "url": "https://www.timeanddate.com/",
+      "snippet": "Online Timer with Alarm Create one or multiple timers and start them in any order."
+    },
+    {
+      "title": "The World Clock — Worldwide - timeanddate.com",
+      "url": "https://www.timeanddate.com/worldclock/",
+      "snippet": "World time and date for cities in all time zones. International time right now. Takes into account all DST clock changes."
+    },
+    {
+      "title": "Sunrise and Sunset Calculator",
+      "url": "https://www.timeanddate.com/sun/",
+      "snippet": "Calculate local times for sunrises, sunsets, meridian passing, Sun distance, altitude and twilight, dusk and dawn times."
+    }
+  ]
+}

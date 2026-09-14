@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "TAKADOX/Phi-4-mini-instruct-GGUF",
+  "slug": "takadox-phi-4-mini-instruct-gguf",
+  "author": "TAKADOX",
+  "url": "https://huggingface.co/TAKADOX/Phi-4-mini-instruct-GGUF",
+  "created_at": "2026-09-14T15:10:32.000Z",
+  "updated_at": "2026-09-14T15:10:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "phi3",
+    "text-generation",
+    "phi",
+    "phi4",
+    "unsloth",
+    "nlp",
+    "code",
+    "microsoft",
+    "math",
+    "chat",
+    "conversational",
+    "custom_code",
+    "multilingual",
+    "base_model:microsoft/Phi-4-mini-instruct",
+    "base_model:quantized:microsoft/Phi-4-mini-instruct",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3836021856,
+  "parameters_human": "3.84B",
+  "storage_bytes": 24061098784,
+  "storage_human": "24.1 GB",
+  "base_model": "microsoft/Phi-4-mini-instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Marco Matuschak e.K. | Nordbauern Schleswig-Holstein e. V.",
+      "url": "https://nordbauern.de/marco-matuschak-e-k/",
+      "snippet": "Marco und Andreas Matuschak sind zwei Brüder, die sich richtig gut verstehen und vieles gemeinsam machen. So haben sie sich vor …"
+    },
+    {
+      "title": "Mitarbeitende von Bahlsen GmbH & Co. KG | XING",
+      "url": "https://www.xing.com/pages/bahlsengmbh-co-kg/employees",
+      "snippet": "Mitarbeitende von Bahlsen GmbH & Co. KG bei XING. Wenn kennst Du schon – und seid Ihr schon vernetzt? Wenn nicht, lernt Euch …"
+    },
+    {
+      "title": "Thema: Bahlsen - Nachrichten und Informationen im Überblick",
+      "url": "https://www.lebensmittelzeitung.net/suche/schlagworte/bahlsen/",
+      "snippet": "Sep 7, 2026 · Aktuelle News zum Thema Bahlsen. Hier finden Sie einen Überblick über alle Meldungen und Informationen zum …"
+    },
+    {
+      "title": "Bahlsen Organigramm & Führungsteam",
+      "url": "https://www.theofficialboard.de/organigramm/bahlsen",
+      "snippet": "Sehen Sie das Führungsteam von Bahlsen und dessen Organigramm mit 22 Führungskräften wie Alexander Kuehnen, Christopher …"
+    },
+    {
+      "title": "Mitarbeitende von The Lorenz Bahlsen Snack-World GmbH & Co KG …",
+      "url": "https://www.xing.com/pages/lorenzsnack-world/employees",
+      "snippet": "Mitarbeitende von The Lorenz Bahlsen Snack-World GmbH & Co KG Ger. bei XING. Wenn kennst Du schon – und seid Ihr schon …"
+    }
+  ]
+}

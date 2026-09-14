@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "soyrsoyr/GLM5.3-DSA-Tiny-Aligned-BF16-MTP-MXFP4-FromFP8MTP-pr3118-validation",
+  "slug": "soyrsoyr-glm5-3-dsa-tiny-aligned-bf16-mtp-mxfp4-fromfp8mtp-pr3118-validation",
+  "author": "soyrsoyr",
+  "url": "https://huggingface.co/soyrsoyr/GLM5.3-DSA-Tiny-Aligned-BF16-MTP-MXFP4-FromFP8MTP-pr3118-validation",
+  "created_at": "2026-09-14T16:53:20.000Z",
+  "updated_at": "2026-09-14T16:53:21.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_moe_dsa",
+    "text-generation",
+    "llm-compressor",
+    "compressed-tensors",
+    "mtp",
+    "pr3118-validation",
+    "conversational",
+    "base_model:soyrsoyr/GLM-5.3-MTP-NVFP4-Test-Fixture",
+    "base_model:quantized:soyrsoyr/GLM-5.3-MTP-NVFP4-Test-Fixture",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 88040064,
+  "parameters_human": "88.0M",
+  "storage_bytes": 205304866,
+  "storage_human": "205 MB",
+  "base_model": "soyrsoyr/GLM-5.3-MTP-NVFP4-Test-Fixture",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing Homepage Quiz – Today's Bing Daily Trivia & Featured Image Quiz",
+      "url": "https://bingquiz.com/bing-homepage-quiz/",
+      "snippet": "1 day ago · Play today's Bing Homepage Quiz — Celebrity & Pop Culture Trivia edition — and test your knowledge with the same …"
+    },
+    {
+      "title": "Bing Homepage Quiz | Bing Quizzes",
+      "url": "https://bing.weeklyquiz.net/bing-homepage-quiz/",
+      "snippet": "1 day ago · Play today’s interactive Bing Homepage Quiz, answer 20 entertaining questions, discover fascinating facts, and test your …"
+    },
+    {
+      "title": "Bing Homepage Quiz - Play Today’s 10 Daily Homepage Bing Quizzes",
+      "url": "https://bingquizzes.com/bing-homepage-quiz-today/",
+      "snippet": "1 day ago · Play today’s Bing Homepage Quiz with 10 multiple-choice questions, a 150-second timer, answer explanations, and a …"
+    },
+    {
+      "title": "Bing Homepage Quiz - Friendly Daily Trivia & Answers",
+      "url": "https://bingquizzes.us/",
+      "snippet": "Enjoy a friendly Bing Homepage Quiz with approachable daily questions, instant answers, and category-based trivia for curious players."
+    },
+    {
+      "title": "Bing Quiz - Today’s Daily Trivia Questions & Answers | Bing Quizzes",
+      "url": "https://bingquizzes.com/",
+      "snippet": "Explore Bing Quizzes across fun, family-friendly, and engaging topics like general knowledge, history, science, geography, current …"
+    }
+  ]
+}

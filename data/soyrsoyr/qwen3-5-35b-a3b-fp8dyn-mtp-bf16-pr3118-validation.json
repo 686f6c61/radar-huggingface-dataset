@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "soyrsoyr/Qwen3.5-35B-A3B-FP8Dyn-MTP-BF16-pr3118-validation",
+  "slug": "soyrsoyr-qwen3-5-35b-a3b-fp8dyn-mtp-bf16-pr3118-validation",
+  "author": "soyrsoyr",
+  "url": "https://huggingface.co/soyrsoyr/Qwen3.5-35B-A3B-FP8Dyn-MTP-BF16-pr3118-validation",
+  "created_at": "2026-09-14T16:53:24.000Z",
+  "updated_at": "2026-09-14T16:54:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe_text",
+    "text-generation",
+    "llm-compressor",
+    "compressed-tensors",
+    "mtp",
+    "pr3118-validation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.5-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 38492170461,
+  "storage_human": "38.5 GB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Fitness Competition for Every Body | HYROX",
+      "url": "https://hyrox.com/",
+      "snippet": "The World Series of Fitness Racing This is Hyrox HYROX: The movement you have always been training for. With 100+ global …"
+    },
+    {
+      "title": "La compétition de fitness pour tous | HYROX",
+      "url": "https://hyroxfrance.com/fr/",
+      "snippet": "HYROX : La course Fitness pour lequel tu t’es toujours entraîné. Avec plus de 80 courses dans le monde en 2025, avec plus de 550 …"
+    },
+    {
+      "title": "The Fitness Race | HYROX",
+      "url": "https://hyrox.com/the-fitness-race/",
+      "snippet": "With four different categories to choose from, HYROX is for every body. Whether you are looking to take on HYROX by yourself in …"
+    },
+    {
+      "title": "Hyrox — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Hyrox",
+      "snippet": "Hyrox est une compétition de fitness en salle mêlant course à pied et exercices dits « fonctionnels ». La compétition est régie sous un …"
+    },
+    {
+      "title": "HYROX : Guide pour tout comprendre (et te Lancer en 2026) - NOCSY",
+      "url": "https://www.nocsy.fr/hyrox/",
+      "snippet": "Sep 6, 2026 · Pour faire simple, l’HYROX, c’est la compétition de fitness qui explose partout dans le monde. Le concept est simple …"
+    }
+  ]
+}

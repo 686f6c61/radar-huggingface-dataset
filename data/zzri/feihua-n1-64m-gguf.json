@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ZZRI/Feihua-n1-64M-GGUF",
+  "slug": "zzri-feihua-n1-64m-gguf",
+  "author": "ZZRI",
+  "url": "https://huggingface.co/ZZRI/Feihua-n1-64M-GGUF",
+  "created_at": "2026-09-14T12:31:30.000Z",
+  "updated_at": "2026-09-14T12:48:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "minimind",
+    "qwen3",
+    "nonsense",
+    "废话文学",
+    "zh",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 63912192,
+  "parameters_human": "63.9M",
+  "storage_bytes": 427781984,
+  "storage_human": "428 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/m",
+      "snippet": "Translate Detect language → English Google home Send feedback Privacy and terms Switch to full site"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/details",
+      "snippet": "Send feedback Enter text to look up details"
+    },
+    {
+      "title": "Google Translate - A Personal Interpreter on Your Phone or Computer",
+      "url": "https://translate.google.com/about/",
+      "snippet": "Understand your world and communicate across languages with Google Translate. Translate text, speech, images, documents, …"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com.qa/?hl=en-GB",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    }
+  ]
+}

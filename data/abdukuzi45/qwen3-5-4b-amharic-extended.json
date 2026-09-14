@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "abdukuzi45/qwen3.5-4b-amharic-extended",
+  "slug": "abdukuzi45-qwen3-5-4b-amharic-extended",
+  "author": "abdukuzi45",
+  "url": "https://huggingface.co/abdukuzi45/qwen3.5-4b-amharic-extended",
+  "created_at": "2026-09-14T13:15:11.000Z",
+  "updated_at": "2026-09-14T13:15:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4620532736,
+  "parameters_human": "4.62B",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Impôts.gouv.fr – site en maintenance",
+      "url": "https://www.impots.gouv.fr/particulier/jaccede-mon-espace-particulier-et-mes-services-en-ligne",
+      "snippet": "Le site impots.gouv.fr est actuellement en maintenance. Durant cette intervention, vous ne pouvez pas consulter la documentation et …"
+    },
+    {
+      "title": "Particulier - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier",
+      "snippet": "Particulier Professionnel Demande d'aide de 100 € pour les travailleurs « grands rouleurs » Publié le 27 mai 2026 Vous avez jusqu'au …"
+    },
+    {
+      "title": "Créer et accéder à mon espace - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier/acceder-mon-espace",
+      "snippet": "Jul 27, 2016 · Si vous n’avez pas encore d'espace Finances publiques sur impots.gouv.fr, vous devez en créer un lors de la première …"
+    },
+    {
+      "title": "Avis d'impôt sur les revenus - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier/avis-dimpot-sur-le-revenu",
+      "snippet": "Aug 18, 2016 · Votre avis d'impôt sur les revenus vous permet de justifier des revenus que vous avez déclarés à l'administration …"
+    },
+    {
+      "title": "Professionnel - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/professionnel",
+      "snippet": "Particulier Professionnel Demande d'aide de 100 € pour les travailleurs « grands rouleurs » Publié le 27 mai 2026 Vous avez jusqu'au …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "huzican0419/robotwin_piper_x_new_sft_step20000",
+  "slug": "huzican0419-robotwin_piper_x_new_sft_step20000",
+  "author": "huzican0419",
+  "url": "https://huggingface.co/huzican0419/robotwin_piper_x_new_sft_step20000",
+  "created_at": "2026-09-14T12:45:44.000Z",
+  "updated_at": "2026-09-14T12:51:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "openpi",
+    "pi05",
+    "pytorch",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 7233650408,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Polizeimeldung München, 30.06.2026: - News.de",
+      "url": "https://www.news.de/lokales/859777141/polizei-einsatz-muenchen-bayern-cyberkriminalitaet-heute-am-30-06-2026/1/",
+      "snippet": "Jun 30, 2026 · In München, Roth und Nürnberg hat sich laut aktuellen Informationen der Polizei Landeskriminalamt ein Fall ereignet. …"
+    },
+    {
+      "title": "Impersonationsangriffe erkennen und bekämpfen",
+      "url": "https://it-sicherheit.de/artikel/impersonationsangriffe-erkennen-strategien-und-tipps/",
+      "snippet": "Die Bandbreite an Methoden, die von Bedrohungsakteuren eingesetzt werden, ist vielfältig. Sie reicht von E-Mails und Social-Media …"
+    },
+    {
+      "title": "Die Bayerische Polizei - Organisierter Callcenterbetrug - Falsche ...",
+      "url": "https://www.polizei.bayern.de/schuetzen-und-vorbeugen/beratung/039355/index.html",
+      "snippet": "Jun 29, 2026 · Die Vorgehensweise der Täter ist immer ähnlich. Sie geben sich am Telefon als Polizeibeamter, Amtsträger (z.B. …"
+    },
+    {
+      "title": "Die Bayerische Polizei - Präventionskampagne zu den …",
+      "url": "https://www.polizei.bayern.de/schuetzen-und-vorbeugen/beratung/007009/index.html",
+      "snippet": "Jul 24, 2026 · Im laufenden Kalenderjahr sind im Zuständigkeitsbereich des Polizeipräsidiums München insgesamt über 200 Fälle zur …"
+    },
+    {
+      "title": "Impersonationsangriffe erkennen und bekämpfen: Strategien und Tipps",
+      "url": "https://www.it-daily.net/it-sicherheit/cybercrime/impersonationsangriffe-erkennen-und-bekaempfen-strategien-und-tipps",
+      "snippet": "May 27, 2024 · Angriffe durch Nachahmung treten in zahlreichen Formen auf, von denen eine überzeugender ist als die andere. Die …"
+    }
+  ]
+}

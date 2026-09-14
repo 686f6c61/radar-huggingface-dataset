@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "riccardogiordano/beit-generation-weights",
+  "slug": "riccardogiordano-beit-generation-weights",
+  "author": "riccardogiordano",
+  "url": "https://huggingface.co/riccardogiordano/beit-generation-weights",
+  "created_at": "2026-09-14T18:35:04.000Z",
+  "updated_at": "2026-09-14T18:35:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

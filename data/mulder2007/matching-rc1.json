@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Mulder2007/matching-rc1",
+  "slug": "mulder2007-matching-rc1",
+  "author": "Mulder2007",
+  "url": "https://huggingface.co/Mulder2007/matching-rc1",
+  "created_at": "2026-09-14T12:42:00.000Z",
+  "updated_at": "2026-09-14T12:42:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - calebevans/mulder: Agentic DFIR",
+      "url": "https://github.com/calebevans/mulder",
+      "snippet": "Mulder takes a directory of forensic evidence (disk images, memory dumps, PCAPs, event logs) and runs a five-phase autonomous investigation with hard quality gates between each phase. It produces structured incident reports with MITRE ATT&CK mappings, IOC exports, and a full audit trail. An adversarial \"Alternative Narrative\" phase challenges every finding before the report is generated. All ..."
+    },
+    {
+      "title": "(PDF) Matching as Nonparametric Preprocessing for Reducing Model ...",
+      "url": "https://scispace.com/papers/matching-as-nonparametric-preprocessing-for-reducing-model-4tyg8aaa63",
+      "snippet": "Matching as Nonparametric Preprocessing for Reducing Model Dependence in Parametric Causal Inference Daniel E. Ho, Kosuke Imai, Gary King, Elizabeth A. Stuart +3 more Stanford University, Princeton University, Harvard University, Johns Hopkins University - 20 Jun 2007 - Political Analysis"
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://aimodelsindex.com/",
+      "snippet": "Compare AI models using source-backed composite indexes, benchmark evidence, coverage, confidence, provenance, and transparent scoring methodology."
+    },
+    {
+      "title": "AIG-ModelMatching-For-MSFS2024/README.md at main - GitHub",
+      "url": "https://github.com/Samueleonard/AIG-ModelMatching-For-MSFS2024/blob/main/README.md",
+      "snippet": "AIG Model Matching for MSFS 2024 Introduction This package provides the latest version of the Alpha India Group (AIG) AI traffic models for MSFS 2024. It makes installation quick and easy by removing the need for the AIG installer. This pack is for use with VATSIM but may work with offline traffic (more details below)."
+    },
+    {
+      "title": "Matching as Nonparametric Preprocessing for Improving Parametric Causal ...",
+      "url": "https://www.researchgate.net/publication/246773627_Matching_as_Nonparametric_Preprocessing_for_Improving_Parametric_Causal_Inference",
+      "snippet": "Request PDF | On Jan 1, 2007, Daniel Ho and others published Matching as Nonparametric Preprocessing for Improving Parametric Causal Inference | Find, read and cite all the research you need on ..."
+    }
+  ]
+}

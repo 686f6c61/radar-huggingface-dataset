@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "jasort/gsat-natural-qwen2.5-1.5b-LoRA",
+  "slug": "jasort-gsat-natural-qwen2-5-1-5b-lora",
+  "author": "jasort",
+  "url": "https://huggingface.co/jasort/gsat-natural-qwen2.5-1.5b-LoRA",
+  "created_at": "2026-09-14T11:13:00.000Z",
+  "updated_at": "2026-09-14T11:13:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 159192662,
+  "storage_human": "159 MB",
+  "base_model": "unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Banque en ligne Belgique : Easy Banking Web | BNP Paribas Fortis",
+      "url": "https://www.bnpparibasfortis.be/fr/public/particuliers/banque-au-quotidien/paiements/easy-banking-web",
+      "snippet": "Nous avons tout prévu : avec Easy Banking App, vous payez et recevez de l’argent par QR code, analysez votre budget et gardez un …"
+    },
+    {
+      "title": "Log-in ou se connecter | BNP Paribas Fortis",
+      "url": "https://www.bnpparibasfortis.be/fr/generic/logon",
+      "snippet": "Se connecter à votre espace client BNP Paribas Fortis, rien de plus simple! Pour gérer vos comptes, effectuer des paiements et …"
+    },
+    {
+      "title": "Online bank België: Easy Banking Web | BNP Paribas Fortis",
+      "url": "https://www.bnpparibasfortis.be/nl/public/particulieren/dagelijks-bankieren/betalingen/easy-banking-web",
+      "snippet": "Uw online bank biedt u een veilige omgeving om uw rekeningen te beheren, dankzij de combinatie van verschillende technologieën. …"
+    },
+    {
+      "title": "Easy Banking App | BNP Paribas Fortis",
+      "url": "https://www.bnpparibasfortis.be/fr/public/particuliers/banque-au-quotidien/paiements/easy-banking-app",
+      "snippet": "Votre banque en ligne Easy Banking Web et votre application Easy Banking App se complètent parfaitement. Avec Easy Banking …"
+    },
+    {
+      "title": "easy-banking - BNP Paribas Fortis",
+      "url": "https://www.bnpparibasfortis.be/fr/public/customer-flow/easy-banking",
+      "snippet": "Afin d'activer le partage de votre écran Easy Banking Web, veuillez svp communiquer le numéro de session ci-dessous au conseiller …"
+    }
+  ]
+}

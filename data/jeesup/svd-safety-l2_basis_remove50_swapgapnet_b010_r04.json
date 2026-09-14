@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_basis_remove50_swapgapnet_b010_r04",
+  "slug": "jeesup-svd-safety-l2_basis_remove50_swapgapnet_b010_r04",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_basis_remove50_swapgapnet_b010_r04",
+  "created_at": "2026-09-14T12:48:59.000Z",
+  "updated_at": "2026-09-14T12:50:10.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Query the Metric data type | New Relic Documentation",
+      "url": "https://docs.newrelic.com/docs/data-apis/understand-data/metric-data/query-metric-data-type/",
+      "snippet": "When querying metric data using FROM Metric, New Relic automatically selects the specific aggregate to use in the query, …"
+    },
+    {
+      "title": "Metric data structure | New Relic Documentation",
+      "url": "https://docs.newrelic.com/docs/data-apis/understand-data/metric-data/metric-data-type/",
+      "snippet": "The New Relic platform reports four main telemetry data types: metrics, events, logs, and traces. This doc will help you understand …"
+    },
+    {
+      "title": "GitHub - newrelic/nr1-metrics-aggregator: NR1 Metrics Aggregator is …",
+      "url": "https://github.com/newrelic/nr1-metrics-aggregator",
+      "snippet": "The Metric Aggregator is a New Relic ONE Application that helps you create an Event To Metric (E2M) rule. Events-to-metrics is a …"
+    },
+    {
+      "title": "Comprehensive Guide to New Relic Metrics: Application",
+      "url": "https://dev.to/devcorner/comprehensive-guide-to-new-relic-metrics-application-infrastructure-monitoring-516g",
+      "snippet": "Mar 8, 2025 · In this blog, we will explore the key metrics provided by New Relic and how they help in monitoring application health, …"
+    },
+    {
+      "title": "New Relic",
+      "url": "https://newrelic.com/",
+      "snippet": "New Relic is an AI-powered observability platform that correlates your telemetry across your entire stack, so you can isolate the root …"
+    }
+  ]
+}

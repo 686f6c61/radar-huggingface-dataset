@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "goquiq/gemma-4-26B-A4B-it-FP8-Dynamic",
+  "slug": "goquiq-gemma-4-26b-a4b-it-fp8-dynamic",
+  "author": "goquiq",
+  "url": "https://huggingface.co/goquiq/gemma-4-26B-A4B-it-FP8-Dynamic",
+  "created_at": "2026-09-14T15:41:48.000Z",
+  "updated_at": "2026-09-14T15:42:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:2607.02770",
+    "base_model:google/gemma-4-26B-A4B",
+    "base_model:quantized:google/gemma-4-26B-A4B",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25805936206,
+  "parameters_human": "25.81B",
+  "storage_bytes": 27197499662,
+  "storage_human": "27.2 GB",
+  "base_model": "google/gemma-4-26B-A4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "film online | bombuj",
+      "url": "https://www.bombuj.si/zanre/index2.php",
+      "snippet": "Najlepší výber online filmov s cz/sk dabingom ale aj s titulkami pohodlne na jednom webe."
+    },
+    {
+      "title": "Všetky online filmy | bombuj",
+      "url": "https://www.bombuj.si/filmy",
+      "snippet": "Najlepší výber online filmov s cz/sk dabingom ale aj s titulkami pohodlne na jednom webe."
+    },
+    {
+      "title": "Prihlásenie | bombuj",
+      "url": "https://serialy.bombuj.si/prihlasit.php",
+      "snippet": "Rastúca databáza seriálov Naša databáza seriálov neustále rastie a vždy sa vám snažíme prinášať novinky ale aj kvalitné staršie …"
+    },
+    {
+      "title": "Obrázkove zoradenie | bombuj",
+      "url": "https://www.bombuj.si/zanre/obr/all.php?page=1&sort=id&title=1&zaner=all",
+      "snippet": "Najlepší výber online filmov zadarmo, sledujte najnovšie, najlepšie a vaše obľúbené filmy s dabingom pohodlne na jednom webe."
+    },
+    {
+      "title": "film online | bombuj",
+      "url": "https://www.bombuj.si/zanre/index2.php?query=bombuj+seri%C3%A1ly",
+      "snippet": "Vyhľadavacia hodnota - \"bombuj seriály\". Skontroluj, či je meno napísané správne."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "SaimanX/anexa-14b-lora-v2",
+  "slug": "saimanx-anexa-14b-lora-v2",
+  "author": "SaimanX",
+  "url": "https://huggingface.co/SaimanX/anexa-14b-lora-v2",
+  "created_at": "2026-09-14T11:16:09.000Z",
+  "updated_at": "2026-09-14T11:16:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Qwen2.5-14B-Instruct-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Qwen2.5-14B-Instruct-bnb-4bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1112517744,
+  "storage_human": "1.1 GB",
+  "base_model": "unsloth/Qwen2.5-14B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KupujemProdajem",
+      "url": "https://www.kupujemprodajem.com/",
+      "snippet": "U skladu sa Pravilima i uslovima korišćenja i Polisom o poštovanju privatnosti, KupujemProdajem koristi Cookie-je da bi obezbedio …"
+    },
+    {
+      "title": "Nameštaj - KupujemProdajem",
+      "url": "https://www.kupujemprodajem.com/namestaj/kategorija/1268",
+      "snippet": "107.013 oglasa u kategoriji Nameštaj. Nameštaj Bilo da se useljavaš u novi životni prostor, pa hoćeš da ga kompletno opremiš, ili …"
+    },
+    {
+      "title": "Mobilni telefoni - KupujemProdajem",
+      "url": "https://poslovi.kupujemprodajem.com/mobilni-telefoni/pretraga?categoryId=23&categoryHeadline=true",
+      "snippet": "Samsung S26 Ultra/ A57 / FOLD 8 / Z FOLD 8 ULTRA / FLIP 7 FE Beograd CLAN SAJTA OD 2013 I KUPUJEM PRODAJEM …"
+    },
+    {
+      "title": "KupujemProdajem | Blog",
+      "url": "https://blog.kupujemprodajem.com/",
+      "snippet": "Saznajte na koje sve načine možete da se registrujete na KupujemProdajem ili upravljate svojim nalogom (npr. promenite lozinku ili …"
+    },
+    {
+      "title": "Mobilni telefoni - Polovni i Novi - KupujemProdajem",
+      "url": "https://www.kupujemprodajem.com/mobilni-telefoni/kategorija/23",
+      "snippet": "77.341 oglasa u kategoriji Mobilni telefoni. Mobilni telefoni Mobilni telefon više nije samo još jedan uređaj pomoću kojeg šaljemo …"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "0xmoose0xmoose0xmoose/css-sanitizer-audit-v2",
+  "slug": "0xmoose0xmoose0xmoose-css-sanitizer-audit-v2",
+  "author": "0xmoose0xmoose0xmoose",
+  "url": "https://huggingface.co/0xmoose0xmoose0xmoose/css-sanitizer-audit-v2",
+  "created_at": "2026-09-14T18:29:40.000Z",
+  "updated_at": "2026-09-14T19:30:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "99 Daily Mantras to Live a Happier Life",
+      "url": "https://www.happierhuman.com/daily-mantras/",
+      "snippet": "May 11, 2026 · In this article, you will discover a variety of positive thinking mantras, including famous mantras, “I AM” affirmations, …"
+    },
+    {
+      "title": "101 Powerful Mantra Examples for Mindfulness, Success, and Inner Peace",
+      "url": "https://modernpsychandwellness.com/mantra-examples-for-mindfulness-success-and-inner-peace/",
+      "snippet": "Mar 3, 2025 · Mantras have been used for centuries as powerful tools for self-improvement, mindfulness, and focus. Whether you …"
+    },
+    {
+      "title": "mantras.gr — Πανελλαδική πλατφόρμα διαγωνισμών αυτοκινήτων",
+      "url": "https://www.mantras.gr/",
+      "snippet": "Πούλα το με 1 click. Μέσα από το mantras.gr, μπορείς να πουλήσεις το αυτοκίνητο σου 100% online, από τον καναπέ σου!"
+    },
+    {
+      "title": "Mantras for Meditation | Meditative Mind - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLsuCfYXzi5DLQmw5DbidL4xfFk2bNHXuq",
+      "snippet": "Choose the Mantra with which you resonate the Most Ancient Mantras are one of the most powerful and effective healing tools we …"
+    },
+    {
+      "title": "Mantra - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mantra",
+      "snippet": "While some mantras may invoke individual gods or principles, fundamental mantras such as Shanti Mantra, the Gayatri Mantra and …"
+    }
+  ]
+}

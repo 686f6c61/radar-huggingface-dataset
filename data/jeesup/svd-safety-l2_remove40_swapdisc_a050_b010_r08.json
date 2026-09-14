@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove40_swapdisc_a050_b010_r08",
+  "slug": "jeesup-svd-safety-l2_remove40_swapdisc_a050_b010_r08",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapdisc_a050_b010_r08",
+  "created_at": "2026-09-14T14:00:49.000Z",
+  "updated_at": "2026-09-14T14:22:22.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Psalmi, 50. poglavlje – Online Biblija",
+      "url": "https://biblija.ks.hr/book/psalmi/50/",
+      "snippet": "Psalmi 50. PSALAM 50 (49) Za bogoslužje »u duhu i istini« Psalam.Asafov. Bog nad bogovima, Jahve, govori i zove zemljuod izlaza …"
+    },
+    {
+      "title": "Psalmi 50 — Biblija Šarić",
+      "url": "http://biblija.verbum.hr/psalmi/50",
+      "snippet": "Psalam. Asafov. Bog nad bogovima, Gospod, govori, doziva zemlju od sunčanoga izlaska do zalaska."
+    },
+    {
+      "title": "Psalmi 50 : Hrvatska BIBLIJA - STARI ZAVJET",
+      "url": "https://www.wordproject.org/bibles/cr/19/50.htm",
+      "snippet": "Bog nad bogovima, Jahve, govori i zove zemlju od izlaza sunčeva do zalaza. 3 Bog naš dolazi i ne šuti. Pred njim ide oganj što …"
+    },
+    {
+      "title": "Psalmi - Psalmul 50 [BIBLIA ORTODOXĂ]",
+      "url": "http://bibliaortodoxa.ro/carte.php?cap=50&id=65",
+      "snippet": "Fă bine, Doamne, întru bună voirea Ta, Sionului, şi să se zidească zidurile Ierusalimului. 20. Atunci vei binevoi jertfa dreptăţii, …"
+    },
+    {
+      "title": "Psalmii – Psalmul 50 | Doxologia",
+      "url": "https://doxologia.ro/psalmii-psalmul-50",
+      "snippet": "Miluieşte-mă, Dumnezeule, după mare mila Ta. 2. Şi după mulţimea îndurărilor Tale, şterge fărădelegea mea. 3. Mai vârtos mă spală …"
+    }
+  ]
+}

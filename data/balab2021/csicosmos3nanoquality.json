@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Balab2021/csicosmos3nanoquality",
+  "slug": "balab2021-csicosmos3nanoquality",
+  "author": "Balab2021",
+  "url": "https://huggingface.co/Balab2021/csicosmos3nanoquality",
+  "created_at": "2026-09-14T12:36:21.000Z",
+  "updated_at": "2026-09-14T12:41:09.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen3_vl",
+    "cosmos-reason",
+    "nvidia-tao",
+    "manufacturing",
+    "visual-inspection",
+    "vision-language",
+    "image-text-to-text",
+    "base_model:nvidia/Cosmos3-Nano",
+    "base_model:adapter:nvidia/Cosmos3-Nano",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42136710,
+  "storage_human": "42 MB",
+  "base_model": "nvidia/Cosmos3-Nano",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Open and Run dxdiag.exe on Windows 10/11 - MiniTool",
+      "url": "https://www.minitool.com/news/dxdiag.html",
+      "snippet": "Feb 13, 2026 · Dxdiag refers to DirectX Diagnostic Tool. This tool is built into Windows OS. It is used to reports detailed information …"
+    },
+    {
+      "title": "How to Run and Use DirectX Diagnostic Tool (dxdiag) in Windows 11",
+      "url": "https://windowsreport.com/how-to-open-use-directx-diagnostic-tool/",
+      "snippet": "Jul 15, 2025 · How to run DirectX Diagnostic Tool (dxdiag) in Windows 11 is a common question for anyone experiencing system …"
+    },
+    {
+      "title": "Which version of DirectX is on your PC? | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/which-version-of-directx-is-on-your-pc",
+      "snippet": "Launch dxdiag, and then select Save All Information... for an easily shared format. Find out which version of DirectX is on your …"
+    },
+    {
+      "title": "Diagnose PC game issues using DxDiag - EA Help",
+      "url": "https://help.ea.com/en/articles/technical-issues/dxdiag-information-pc/",
+      "snippet": "Learn how to use DxDiag to check your PC specs and identify issues affecting your EA game performance."
+    },
+    {
+      "title": "DirectX Diagnostic Tool - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/DirectX_Diagnostic_Tool",
+      "snippet": "DirectX Diagnostic Tool (DxDiag) is a diagnostics tool used to test DirectX functionality and troubleshoot video- or sound-related …"
+    }
+  ]
+}

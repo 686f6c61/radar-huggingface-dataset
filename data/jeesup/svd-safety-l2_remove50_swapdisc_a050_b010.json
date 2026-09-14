@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove50_swapdisc_a050_b010",
+  "slug": "jeesup-svd-safety-l2_remove50_swapdisc_a050_b010",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapdisc_a050_b010",
+  "created_at": "2026-09-14T15:32:08.000Z",
+  "updated_at": "2026-09-14T15:54:17.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ipercheratosi - My-personaltrainer.it",
+      "url": "https://m.my-personaltrainer.it/salute/ipercheratosi.html",
+      "snippet": "Cos’è Ipercheratosi: di cosa si tratta? L'ipercheratosi è un disturbo della cheratinizzazione nel quale si osserva un aumento eccessivo …"
+    },
+    {
+      "title": "Ipercheratosi: cos'è? Quando la pelle diventa spessa: sintomi e cure",
+      "url": "https://www.curadermatite.it/dermatite/ipercheratosi.htm",
+      "snippet": "L' ipercheratosi è una condizione cutanea caratterizzata da un evidente ispessimento dello strato più superficiale della pelle. Spesso …"
+    },
+    {
+      "title": "Ipercheratosi: cos'è e come si elimina la pelle Ispessita e cheratosi",
+      "url": "https://www.pallaoro.com/ipercheratosi",
+      "snippet": "Che cos’è l’ipercheratosi e come si manifesta? L’ipercheratosi è un ispessimento dello strato più esterno della pelle (strato corneo) …"
+    },
+    {
+      "title": "Ipercheratosi: di che Cosa si Tratta, Dove si Manifesta e Cure",
+      "url": "https://istitutosalute.com/ipercheratosi/",
+      "snippet": "Chi sospetta di soffrire di ipercheratosi cutanea generalmente desidera sapere quali sono i passaggi da seguire per ottenere una …"
+    },
+    {
+      "title": "Ipercheratosi: immagini, pericoli e rimedi - The Wom Healthy",
+      "url": "https://healthy.thewom.it/sintomi/ipercheratosi/",
+      "snippet": "Mar 29, 2022 · Cosa significa ipercheratosi? Da quali sintomi si riconosce? È preoccupante? Cosa fare? Ecco le immagini e tutte le …"
+    }
+  ]
+}

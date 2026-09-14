@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "filipnowa/generation",
+  "slug": "filipnowa-generation",
+  "author": "filipnowa",
+  "url": "https://huggingface.co/filipnowa/generation",
+  "created_at": "2026-09-14T18:39:36.000Z",
+  "updated_at": "2026-09-14T18:39:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comprar Plantas de Interior - Envío a Domicilio | Verdecora",
+      "url": "https://verdecora.es/3098-comprar-plantas-de-interior",
+      "snippet": "En nuestra tienda puedes comprar plantas de interior grandes, de hoja verde, con flores, cactus y crasas, orquídeas, plantas …"
+    },
+    {
+      "title": "Plantas de interior : Comprar Online plantas de interior",
+      "url": "https://www.planfor.es/viveros,plantas-de-interior,4,1",
+      "snippet": "Venta en linea de plantas de interior Planfor les propone una amplia gama de plantas de interior, plantas de interior de todos los …"
+    },
+    {
+      "title": "Plantas de interior: compra online | Leroy Merlin",
+      "url": "https://www.leroymerlin.es/productos/jardin-y-terraza/plantas-semillas-y-arboles/plantas-con-envio-a-domicilio/plantas-de-interior-p.html?msockid=2778b304fc0d6f730c00a4d0fddf6ed0",
+      "snippet": "Descubre productos de plantas de interior al mejor precio. Gran variedad y envío rápido. Compra en web, app o por teléfono en el …"
+    },
+    {
+      "title": "Comprar Plantas de interior - Viveros Madrid Florama -",
+      "url": "https://viverosflorama.es/venta-plantas-de-interior-madrid/",
+      "snippet": "El estilo de la maceta también es importante para que no contraste con el resto de la decoración. Ven a visitar nuestro vivero donde …"
+    },
+    {
+      "title": "Comprar Plantas de Interior Online | Naturales a Domicilio · Pur Plant",
+      "url": "https://www.purplant.es/collections/plantas-interior",
+      "snippet": "Si estás buscando comprar plantas de interior a domicilio, aquí encontrarás una colección pensada para todos los niveles. Desde …"
+    }
+  ]
+}

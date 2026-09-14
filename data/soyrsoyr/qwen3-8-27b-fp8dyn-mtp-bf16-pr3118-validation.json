@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-BF16-pr3118-validation",
+  "slug": "soyrsoyr-qwen3-8-27b-fp8dyn-mtp-bf16-pr3118-validation",
+  "author": "soyrsoyr",
+  "url": "https://huggingface.co/soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-BF16-pr3118-validation",
+  "created_at": "2026-09-14T16:36:51.000Z",
+  "updated_at": "2026-09-14T16:48:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "llm-compressor",
+    "compressed-tensors",
+    "mtp",
+    "pr3118-validation",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 35876786445,
+  "storage_human": "35.9 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Τμήμα Οικονομικής και Διοίκησης ... - Aegean",
+      "url": "https://forum.aegean.gr/viewforum.php?f=167",
+      "snippet": "Jul 17, 2026 · 0 983 από todit_gram_foit 17 Ιούλ 2026 15:05"
+    },
+    {
+      "title": "Λέσβος: Ευρωπαϊκή εβδομάδα ...",
+      "url": "https://forum.aegean.gr/viewtopic.php?t=37629",
+      "snippet": "4 days ago · mbakas Δημοσιεύσεις: 275 Εγγραφή: 08 Ιαν 2009 14:31"
+    },
+    {
+      "title": "ΔΗΛΩΣΕΙΣ ΜΑΘΗΜΑΤΩΝ ΕΑΡΙΝΟΥ ΕΞΑΜΗΝΟΥ ...",
+      "url": "https://forum.aegean.gr/viewtopic.php?t=36579",
+      "snippet": "Για οποιοδήποτε πρόβλημα μπορείτε να απευθύνεστε στη υπηρεσία υποστήριξης του φοιτητολογίου, στέλνοντας μήνυμα στο …"
+    },
+    {
+      "title": "Τμήμα Στατιστικής - University of the Aegean",
+      "url": "https://forum.aegean.gr/viewforum.php?f=55",
+      "snippet": "Jul 27, 2026 · 0 47 Τελευταία δημοσίευση από dsas 10 Σεπ 2026 10:20"
+    },
+    {
+      "title": "Τμήμα Μαθηματικών - University of the Aegean",
+      "url": "https://forum.aegean.gr/viewforum.php?f=54",
+      "snippet": "May 22, 2026 · 0 1589 Τελευταία δημοσίευση από sdem 26 Σεπ 2025 14:20"
+    }
+  ]
+}

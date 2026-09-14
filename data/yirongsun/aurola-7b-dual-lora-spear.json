@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "YirongSun/AuroLA-7B-Dual-LoRA-SPEAR",
+  "slug": "yirongsun-aurola-7b-dual-lora-spear",
+  "author": "YirongSun",
+  "url": "https://huggingface.co/YirongSun/AuroLA-7B-Dual-LoRA-SPEAR",
+  "created_at": "2026-09-14T15:21:40.000Z",
+  "updated_at": "2026-09-14T15:29:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "audio-text-retrieval",
+    "aurola",
+    "spear",
+    "base_model:Jazzcharles/AuroLA-7B",
+    "base_model:adapter:Jazzcharles/AuroLA-7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1671930848,
+  "storage_human": "1.7 GB",
+  "base_model": "Jazzcharles/AuroLA-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kits Vélo - iPhone - Quad Lock® Europe - Magasin officiel",
+      "url": "https://www.quadlockcase.eu/fr/products/iphone-bike-kit-all-devices",
+      "snippet": "Nos Supports pour vélo ont été rigoureusement testés, afin de garantir résistance et sécurité, quelle que soit l'aventure. Grâce à …"
+    },
+    {
+      "title": "Amazon.fr : Support Iphone Velo",
+      "url": "https://www.amazon.fr/support-iphone-velo/s?k=support+iphone+velo",
+      "snippet": "Support de téléphone pour vélo, Rotatif à 360 °, réglable et détachable en Silicone, Support de téléphone de vélo …"
+    },
+    {
+      "title": "Supports smartphone, restez connectés à vélo | Decathlon",
+      "url": "https://www.decathlon.fr/tous-les-sports/velo-cyclisme/supports-smartphone-velo?msockid=1e850214e2186aaa3f0015c0e3416b19",
+      "snippet": "Supports smartphone vélo Suivez toutes vos performances à vélo depuis l’application de votre smartphone avec un porte téléphone …"
+    },
+    {
+      "title": "Supports Téléphone Vélo | Decathlon",
+      "url": "https://www.decathlon.fr/tous-les-sports/velo-route/supports-smartphone?msockid=1e850214e2186aaa3f0015c0e3416b19",
+      "snippet": "Quel que soit le modèle de téléphone que vous possédez, vous serez assuré de trouver un support adapté chez Decathlon. En mode …"
+    },
+    {
+      "title": "Amazon.fr : Support Smartphone Vélo",
+      "url": "https://www.amazon.fr/support-smartphone-v%C3%A9lo/s?k=support+smartphone+v%C3%A9lo",
+      "snippet": "Le prix et les autres détails peuvent varier en fonction de la taille et de la couleur du produit. Ce produit possède des caractéristiques …"
+    }
+  ]
+}

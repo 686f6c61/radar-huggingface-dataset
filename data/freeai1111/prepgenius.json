@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "FreeAi1111/PrepGenius",
+  "slug": "freeai1111-prepgenius",
+  "author": "FreeAi1111",
+  "url": "https://huggingface.co/FreeAi1111/PrepGenius",
+  "created_at": "2026-09-14T12:29:59.000Z",
+  "updated_at": "2026-09-14T12:45:00.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "cogvideox",
+    "video-generation",
+    "thudm",
+    "text-to-video",
+    "en",
+    "arxiv:2408.06072",
+    "license:other",
+    "diffusers:CogVideoXPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5570283072,
+  "parameters_human": "5.57B",
+  "storage_bytes": 21528511428,
+  "storage_human": "21.5 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tous les noms de famille commençant par la lettre P dans le répertoire",
+      "url": "https://www.trombi.com/personindex/p/0/0",
+      "snippet": "Dans le répertoire de Trombi, vous trouverez toutes les personnes dont le nom de famille commence par la lettre P"
+    },
+    {
+      "title": "Recherche de personnes | Trombi",
+      "url": "https://www.trombi.com/recherche-personne/_+",
+      "snippet": "N'hésitez pas à vous servir de notre option de recherche pour retrouver des personnes, échanger avec elles, voir des photos etc. …"
+    },
+    {
+      "title": "Sylvie Huet - Recherche de personnes | Trombi",
+      "url": "https://www.trombi.com/recherche-personne/Sylvie_Huet",
+      "snippet": "Sylvie Huet - Personnes trouvées avec ce nom Avec notre moteur de recherche interne vous pouvez trouver les personnes qui …"
+    },
+    {
+      "title": "Huguette Emond - Recherche de personnes | Trombi",
+      "url": "https://www.trombi.com/recherche-personne/Huguette_Emond",
+      "snippet": "Huguette Emond - Personnes trouvées avec ce nom Avec notre moteur de recherche interne vous pouvez trouver les personnes qui …"
+    },
+    {
+      "title": "Recherche de personnes France | Retrouver des personnes sur Internet ...",
+      "url": "https://www.trombi.com/recherche-personne",
+      "snippet": "Voici comment l'outil de recherche fonctionne Utilisez l'outil de recherche Trombi en entrant simplement le prénom et/ou le nom de …"
+    }
+  ]
+}

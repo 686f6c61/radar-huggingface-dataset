@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Adnan2942/DeepSeek-R1-1.5B-LoRA-Smol",
+  "slug": "adnan2942-deepseek-r1-1-5b-lora-smol",
+  "author": "Adnan2942",
+  "url": "https://huggingface.co/Adnan2942/DeepSeek-R1-1.5B-LoRA-Smol",
+  "created_at": "2026-09-14T18:39:21.000Z",
+  "updated_at": "2026-09-14T19:02:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "conversational",
+    "dataset:HuggingFaceTB/smoltalk",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "base_model:finetune:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 3565636327,
+  "storage_human": "3.6 GB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Se connecter à Gmail - Ordinateur - Aide Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Se connecter à Gmail Conseil : Si vous vous connectez à un ordinateur public, pensez à vous déconnecter avant de quitter …"
+    },
+    {
+      "title": "Google Translate Help",
+      "url": "https://support.google.com/translate/?hl=en",
+      "snippet": "Official Google Translate Help Center where you can find tips and tutorials on using Google Translate and other answers to …"
+    },
+    {
+      "title": "Google Help",
+      "url": "https://support.google.com/meet/answer/12387350?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": ""
+    },
+    {
+      "title": "Google-Hilfe",
+      "url": "https://support.google.com/?hl=de",
+      "snippet": "Falls Sie nicht auf ein Google-Produkt zugreifen können, tritt unter Umständen ein vorübergehendes Problem auf. Informationen zu …"
+    },
+    {
+      "title": "Sign in to Gmail - Computer - Gmail Help - Google Help",
+      "url": "https://support.google.com/mail/answer/8494?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Sign in to Gmail Tip: If you sign in to a public computer, make sure to sign out before you leave the computer. Learn how to sign in on …"
+    }
+  ]
+}

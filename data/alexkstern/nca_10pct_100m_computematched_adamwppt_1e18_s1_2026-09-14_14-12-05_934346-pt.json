@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/nca_10pct_100M_computematched_adamwppt_1e18_s1_2026-09-14_14-12-05_934346-pt",
+  "slug": "alexkstern-nca_10pct_100m_computematched_adamwppt_1e18_s1_2026-09-14_14-12-05_934346-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/nca_10pct_100M_computematched_adamwppt_1e18_s1_2026-09-14_14-12-05_934346-pt",
+  "created_at": "2026-09-14T14:18:16.000Z",
+  "updated_at": "2026-09-14T14:19:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_nca-paper-share20-2048",
+    "seed_1",
+    "case_c",
+    "lr_trapezoid",
+    "depth_22",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6133511229,
+  "storage_human": "6.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Laptop dla osoby niepełnosprawnej – Jak wybrać idealny model?",
+      "url": "https://techdealz.eu/laptop-dla-osoby-niepelnosprawnej-jak-wybrac/",
+      "snippet": "Nov 5, 2025 · Wybierasz laptop dla osoby niepełnosprawnej? Dowiedz się, na co zwrócić uwagę, by sprzęt stał się narzędziem do …"
+    },
+    {
+      "title": "Skorzystaj z dofinansowania do zakupu sprzętu elektronicznego",
+      "url": "https://www.gov.pl/web/gov/skorzystaj-z-dofinansowania-do-zakupu-sprzetu-elektronicznego",
+      "snippet": "Feb 20, 2026 · Jeśli masz poważne problemy z funkcjonalnością obu rąk (brak kończyn lub inną poważną dysfunkcję), to potrzebne …"
+    },
+    {
+      "title": "Laptop dla osoby niepełnosprawnej – jak wybrać? - niepelnosprawni.pl",
+      "url": "https://niepelnosprawni.pl/dostepnosc/laptop-dla-osoby-niepelnosprawnej--jak-wybrac-",
+      "snippet": "Feb 16, 2024 · Laptop dla osoby niepełnosprawnej – jak wybrać? Wybór laptopa dla osoby niepełnosprawnej może być trochę …"
+    },
+    {
+      "title": "Laptopy dla niepełnosprawnych RANKING 2026 - Webinet.pl",
+      "url": "https://www.webinet.pl/laptopy-dla-niepelnosprawnych-ranking/",
+      "snippet": "Zobacz nasz najnowszy ranking laptopów dla niepełnosprawnych 2026, w którym zamieściliśmy przy każdym modelu takie …"
+    },
+    {
+      "title": "Laptop dla osoby niepełnosprawnej – jak wybrać?",
+      "url": "https://polskabezbarier.pl/ogloszenie/770/laptop-dla-osoby-niepelnosprawnej-%E2%80%93-jak-wybrac/",
+      "snippet": "W przypadku osób niepełnosprawnych, które mogą mieć trudności z fizycznym zabezpieczeniem laptopa, ważne jest, aby wybrać …"
+    }
+  ]
+}

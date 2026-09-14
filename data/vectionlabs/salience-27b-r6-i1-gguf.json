@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "vectionlabs/Salience-27B-R6-i1-GGUF",
+  "slug": "vectionlabs-salience-27b-r6-i1-gguf",
+  "author": "vectionlabs",
+  "url": "https://huggingface.co/vectionlabs/Salience-27B-R6-i1-GGUF",
+  "created_at": "2026-09-14T15:11:06.000Z",
+  "updated_at": "2026-09-14T15:16:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "reasoning",
+    "efficient-reasoning",
+    "code",
+    "agentic",
+    "multimodal",
+    "long-context",
+    "qwen3.8",
+    "imatrix",
+    "image-text-to-text",
+    "en",
+    "base_model:vectionlabs/Salience-27B-R6",
+    "base_model:quantized:vectionlabs/Salience-27B-R6",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 460730096,
+  "parameters_human": "460.7M",
+  "storage_bytes": 941249440,
+  "storage_human": "941 MB",
+  "base_model": "vectionlabs/Salience-27B-R6",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

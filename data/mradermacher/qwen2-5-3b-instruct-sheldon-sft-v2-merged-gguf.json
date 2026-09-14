@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen2.5-3B-Instruct-Sheldon-SFT-v2-merged-GGUF",
+  "slug": "mradermacher-qwen2-5-3b-instruct-sheldon-sft-v2-merged-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2.5-3B-Instruct-Sheldon-SFT-v2-merged-GGUF",
+  "created_at": "2026-09-14T15:16:21.000Z",
+  "updated_at": "2026-09-14T15:32:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merged",
+    "persona",
+    "roleplay",
+    "math",
+    "qwen2.5",
+    "sheldon-cooper",
+    "cs2881r",
+    "en",
+    "base_model:zachchxn/Qwen2.5-3B-Instruct-Sheldon-SFT-v2-merged",
+    "base_model:quantized:zachchxn/Qwen2.5-3B-Instruct-Sheldon-SFT-v2-merged",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 27940895104,
+  "storage_human": "27.9 GB",
+  "base_model": "zachchxn/Qwen2.5-3B-Instruct-Sheldon-SFT-v2-merged",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

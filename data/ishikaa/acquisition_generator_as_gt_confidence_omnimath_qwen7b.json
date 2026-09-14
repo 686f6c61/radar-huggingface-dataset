@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_generator_AS_GT_confidence_omnimath_qwen7b",
+  "slug": "ishikaa-acquisition_generator_as_gt_confidence_omnimath_qwen7b",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_GT_confidence_omnimath_qwen7b",
+  "created_at": "2026-09-14T18:33:30.000Z",
+  "updated_at": "2026-09-14T18:35:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 30473926528,
+  "storage_human": "30.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

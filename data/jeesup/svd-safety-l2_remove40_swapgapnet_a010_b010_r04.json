@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove40_swapgapnet_a010_b010_r04",
+  "slug": "jeesup-svd-safety-l2_remove40_swapgapnet_a010_b010_r04",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgapnet_a010_b010_r04",
+  "created_at": "2026-09-14T17:09:56.000Z",
+  "updated_at": "2026-09-14T17:10:32.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Understanding NIST, ISO 27001 & CIS Cybersecurity Frameworks",
+      "url": "https://techternet.com/post/understanding-nist-iso-27001-cis-cybersecurity-frameworks/",
+      "snippet": "Dec 10, 2025 · A clear, expert guide to NIST CSF, ISO 27001 and CIS Controls—what they are, how they work together, and how to …"
+    },
+    {
+      "title": "Cybersecurity Frameworks Explained: NIST, ISO, CIS & More",
+      "url": "https://questsys.com/security-blog/Cybersecurity-Frameworks-Explained-NIST-ISO-CIS-More/",
+      "snippet": "Jan 13, 2026 · Explore NIST, ISO 27001, CIS Controls, and other key cybersecurity frameworks. Learn their strengths, use cases, …"
+    },
+    {
+      "title": "Cybersecurity Frameworks: NIST, CIS Controls & ISO 27001 Explained …",
+      "url": "https://www.eicta.iitk.ac.in/knowledge-hub/cyber-security/cybersecurity-frameworks-nist-cis-and-other-standards-for-securing-your-system-and-data",
+      "snippet": "Jul 17, 2025 · Understand NIST, CIS Controls, ISO 27001 & other cybersecurity frameworks. Learn which standard fits your …"
+    },
+    {
+      "title": "ISO 27001 and Security Frameworks Compared — NIST, CIS, ISO",
+      "url": "https://aiwikiproject.com/articles/security-frameworks-compared",
+      "snippet": "Mar 14, 2026 · ISO 27001 and Security Frameworks Compared — NIST, CIS, ISO Security frameworks provide structured …"
+    },
+    {
+      "title": "Security Frameworks Cheat Sheet (NIST, ISO 27001, CIS)",
+      "url": "https://cybersecurity101.net/cheatsheets/security-frameworks/",
+      "snippet": "Jun 29, 2026 · Compare the major cybersecurity frameworks — NIST CSF, ISO/IEC 27001, CIS Controls, SOC 2, PCI DSS — what …"
+    }
+  ]
+}

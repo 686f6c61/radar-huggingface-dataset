@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Orion-26B-A4B-v1.1-GGUF",
+  "slug": "mradermacher-orion-26b-a4b-v1-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Orion-26B-A4B-v1.1-GGUF",
+  "created_at": "2026-09-14T12:30:04.000Z",
+  "updated_at": "2026-09-14T13:13:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:TheDrummer/Orion-26B-A4B-v1.1",
+    "base_model:quantized:TheDrummer/Orion-26B-A4B-v1.1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 184858387360,
+  "storage_human": "184.9 GB",
+  "base_model": "TheDrummer/Orion-26B-A4B-v1.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Visit the Palais Garnier - Opéra national de Paris",
+      "url": "https://www.operadeparis.fr/en/visits/palais-garnier",
+      "snippet": "Immersive experience For the first time, visitors to the Palais Garnier will have the opportunity to step behind the scenes of the Paris …"
+    },
+    {
+      "title": "Opéra national de Paris",
+      "url": "https://www.operadeparis.fr/",
+      "snippet": "Le Palais Garnier et l’Opéra Bastille. Programmation, Billetterie, Informations pratiques."
+    },
+    {
+      "title": "Online Shop · Official boutique of the Paris National Opera",
+      "url": "https://boutique.operadeparis.fr/en/",
+      "snippet": "Shop books, goods and gifts of the Opéra national de Paris, Garnier and Bastille"
+    },
+    {
+      "title": "Acheter les billets en revente - Opéra national de Paris",
+      "url": "https://bourse.operadeparis.fr/list/resaleProducts?lang=fr",
+      "snippet": "Oct 30, 2021 · Les Enfants du paradis Du mardi 9 mars 2027 au samedi 27 mars 2027 Palais Garnier Dès 140.00 € 1 billets Acheter"
+    },
+    {
+      "title": "Spectacles de l’Opéra de Paris en streaming sur Paris Opera Play",
+      "url": "https://play.operadeparis.fr/",
+      "snippet": "Regardez les plus grands opéras, ballets et concerts de l’Opéra de Paris en streaming sur POP. Profitez des spectacles en direct ou …"
+    }
+  ]
+}

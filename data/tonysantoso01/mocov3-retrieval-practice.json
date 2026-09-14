@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tonysantoso01/mocov3-retrieval-practice",
+  "slug": "tonysantoso01-mocov3-retrieval-practice",
+  "author": "tonysantoso01",
+  "url": "https://huggingface.co/tonysantoso01/mocov3-retrieval-practice",
+  "created_at": "2026-09-14T13:00:24.000Z",
+  "updated_at": "2026-09-14T13:00:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Geschlechtersensible Variablen für die Gesundheitsforschung",
+      "url": "https://gender.charite.de/forschung/gendered_innovations/geschlechtsspezifische_variablen_fuer_die_gesundheitsforschung",
+      "snippet": "Jede hier aufgeführte Variable liefert spezifische Informationen darüber, wie geschlechtsspezifische Verhaltensweisen und …"
+    },
+    {
+      "title": "Was ist Gender variabel? - kuechenfibel.de",
+      "url": "https://www.kuechenfibel.de/faq/was-ist-gender-variabel",
+      "snippet": "Dec 31, 2023 · Was ist der Unterschied zwischen divers und gender? Anders als bei den binären Geschlechtskategorien beschreibt …"
+    },
+    {
+      "title": "Soziodemographische Standarditems und -variablen: Geschlecht",
+      "url": "https://access.gesis.org/zis/1585",
+      "snippet": "gender diversity, it is now the subject of intense de-bate. This article presents the - controversial - status quo of the exclusive …"
+    },
+    {
+      "title": "Die Variable „Geschlecht“ im Forschungsprozess: Anforderungen in …",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1865921720301756",
+      "snippet": "Dec 1, 2020 · Bei der Betrachtung der Variable „Geschlecht“ in Forschungsdesigns wird zwischen biologischen Aspekten („sex“) und …"
+    },
+    {
+      "title": "Variable (s) Geschlecht - gender2technik",
+      "url": "https://gender2technik.de/variables-geschlecht/",
+      "snippet": "Jan 24, 2019 · Sie verweise beständig auf geschlechtliche Dichotomien oder nutze diese unhinterfragt als „Mann-Frau-Variable“ in …"
+    }
+  ]
+}

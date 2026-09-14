@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "muhrivandysetiawan/Reinforce-CartPole-v1",
+  "slug": "muhrivandysetiawan-reinforce-cartpole-v1",
+  "author": "muhrivandysetiawan",
+  "url": "https://huggingface.co/muhrivandysetiawan/Reinforce-CartPole-v1",
+  "created_at": "2026-09-14T12:49:48.000Z",
+  "updated_at": "2026-09-14T12:50:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "CartPole-v1",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3593,
+  "storage_human": "3593 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - Dirndlhof Kirchberg/Pielach",
+      "url": "https://dirndlhof.eu/",
+      "snippet": "Unser Veranstaltungssaal bietet Platz für 120 Personen, wo wir gerne für Sie Ihre Geburtstagsfeier, Hochzeit, Trauerfeier, Seminare, …"
+    },
+    {
+      "title": "Kirchberg an der Pielach - Startseite - Wirtschaft & Tourismus ...",
+      "url": "https://www.kirchberg-pielach.at/Dirndlhof",
+      "snippet": "Dirndlhof Kontakt Melkerstraße 8 3204 Kirchberg an der Pielach Telefon 1 02722/20279 Telefon 2 0664/750 09 632 …"
+    },
+    {
+      "title": "Dirndlhof - Kirchberg an der Pielach - Startseite",
+      "url": "https://www.kirchberg-pielach.gv.at/Dirndlhof_6",
+      "snippet": "Dirndlhof Kontakt Melkerstraße 8 3204 Kirchberg an der Pielach Telefon 1 +43 2722 20279 Telefon 2 +43 664 75009632 …"
+    },
+    {
+      "title": "Dirndlhof Kirchberg | Kirchberg an der Pielach - Facebook",
+      "url": "https://www.facebook.com/dirndlhof/",
+      "snippet": "Dirndlhof Kirchberg, Kirchberg an der Pielach. 1,659 likes · 9 talking about this · 228 were here. Kaffeehaus"
+    },
+    {
+      "title": "Kirchberg an der Pielach - Startseite - Wirtschaft & Tourismus ...",
+      "url": "https://www.kirchberg-pielach.at/Dirndlhof_2",
+      "snippet": "Dirndlhof Kontakt Melkerstraße 8 3204 Kirchberg an der Pielach Telefon 1 +43 2722 20279 Telefon 2 +43 664 75009632 …"
+    }
+  ]
+}

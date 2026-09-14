@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "DSA1AFG1E/MyAwesomeModel-TestRepo",
+  "slug": "dsa1afg1e-myawesomemodel-testrepo",
+  "author": "DSA1AFG1E",
+  "url": "https://huggingface.co/DSA1AFG1E/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-14T17:08:08.000Z",
+  "updated_at": "2026-09-14T17:09:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LE CHANSONNIER I Site officiel, avis, prix et réservation en ligne",
+      "url": "https://lechansonnier.fr/pt",
+      "snippet": "Jun 11, 2026 · Soyez les bienvenus au Chansonnier, ou nous serons ravis de vous accueillir avec des produits frais pour un rapport …"
+    },
+    {
+      "title": "LE CHANSONNIER I Site officiel, avis, prix et réservation en ligne",
+      "url": "https://lechansonnier.fr/en/opinions",
+      "snippet": "Nous étions 4 convives (2 agés et 2 jeunes adultes), chacun ayant choisi ses plats, pour tous c'était différent et chacun a fait gouter …"
+    },
+    {
+      "title": "LE CHANSONNIER I Site officiel, avis, prix et réservation en ligne",
+      "url": "https://lechansonnier.fr/en",
+      "snippet": "Jun 11, 2026 · Soyez les bienvenus au Chansonnier, ou nous serons ravis de vous accueillir avec des produits frais pour un rapport …"
+    },
+    {
+      "title": "LE CHANSONNIER I Site officiel, avis, prix et réservation en ligne",
+      "url": "https://lechansonnier.fr/fr/booking",
+      "snippet": "Accueil / réservation Réservation Vibrez au rythme des accords du Chansonnier, où la musique enchanteresse accompagne chaque …"
+    },
+    {
+      "title": "LE CHANSONNIER I Site officiel, avis, prix et réservation en ligne",
+      "url": "https://lechansonnier.fr/en/contact",
+      "snippet": "Home / Contact Contact Le Chansonnier 14 Rue Eugène Varlin 75010 Paris France +33987007251 Name Email Phone Number"
+    }
+  ]
+}

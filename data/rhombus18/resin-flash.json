@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rhombus18/resin-flash",
+  "slug": "rhombus18-resin-flash",
+  "author": "rhombus18",
+  "url": "https://huggingface.co/rhombus18/resin-flash",
+  "created_at": "2026-09-14T12:37:22.000Z",
+  "updated_at": "2026-09-14T12:52:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "endpoints_compatible",
+    "diffusers:FluxPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11912614976,
+  "parameters_human": "11.91B",
+  "storage_bytes": 35777190918,
+  "storage_human": "35.8 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Forum Figaro - Discussions résolues",
+      "url": "https://forum.lefigaro.fr/forum/solved",
+      "snippet": "Forum Le Figaro Salut à tous, je suis en train d’écrire un texte et je bute sur l’orthographe. J’ai toujours du mal avec les accents et je …"
+    },
+    {
+      "title": "Forum Langue Française - Le Figaro",
+      "url": "https://forum.lefigaro.fr/forum/langue-francaise-105",
+      "snippet": "Nov 2, 2023 · Bonjour, Les journalistes du Figaro font beaucoup de fautes. Parmi eux, il y a notamment le rédacteur en chef qui a …"
+    },
+    {
+      "title": "Forum Figaro",
+      "url": "https://forum.lefigaro.fr/forum/",
+      "snippet": "Forum Le Figaro Bonjour, J'ai comme un doute en écrivant ce début de phrase :\"Tant de rêves au-dedans de la tête qu'il en coule …"
+    },
+    {
+      "title": "Forum LeFigaro",
+      "url": "https://forum.lefigaro.fr/contact/",
+      "snippet": "Forum Le Figaro Vous souhaitez rentrer en contact avec un représentant de Figaro pour une des raisons suivantes :"
+    },
+    {
+      "title": "Passionné par ou de - Le Figaro",
+      "url": "https://forum.lefigaro.fr/forum/affich-289-passionne-par-ou-de",
+      "snippet": "Bonjour eleon, C'est vrai qu'on peut se poser la question car elle amène plusieurs réponses possibles. En résumé et pour faire vite et …"
+    }
+  ]
+}

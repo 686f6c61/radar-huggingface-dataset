@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Hayasuki/chucklenet-sentence-fusion-v3",
+  "slug": "hayasuki-chucklenet-sentence-fusion-v3",
+  "author": "Hayasuki",
+  "url": "https://huggingface.co/Hayasuki/chucklenet-sentence-fusion-v3",
+  "created_at": "2026-09-14T12:28:08.000Z",
+  "updated_at": "2026-09-14T12:28:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "humor-detection",
+    "multimodal",
+    "text-audio",
+    "comedy",
+    "roberta",
+    "wavlm",
+    "fusion",
+    "sentence-level",
+    "en",
+    "dataset:subhajitdas/chuckle-fusion-48v-v3",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1381277,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cele mai bune 27 atracții în Zurich 2026 (Multe fotografii)",
+      "url": "https://www.tripzaza.com/ro/destinations/atractii-in-zurich",
+      "snippet": "Care este primul lucru de văzut în Zurich? În primul rând, înainte de a planifica o călătorie în Elveția, este mai bine să citiți o serie de …"
+    },
+    {
+      "title": "Vacanță în Zurich 2026 | Ghid, costuri și sfaturi",
+      "url": "https://gotripzi.com/ro/destinations/zurich-ch",
+      "snippet": "Zurich, Elveția 2026: Ce trebuie să știi înainte de plecare – buget de la 746 RON/zi, siguranță, transport și sfaturi practice. Ghidul tău …"
+    },
+    {
+      "title": "Top 50 lucruri de făcut și atracții în Zurich - Wanderlog",
+      "url": "https://wanderlog.com/ro/list/geoCategory/104688/top-lucruri-de-f%C4%83cut-%C8%99i-atrac%C8%9Bii-%C3%AEn-zurich",
+      "snippet": "Fie că explorați districtul istoric Niederdorf sau vă bucurați de o drumeție lejeră pe Uetliberg pentru priveliști panoramice uluitoare, …"
+    },
+    {
+      "title": "Ghid de călătorie Zurich 2026: Unde să stai, ce să mănânci, ce să vezi?",
+      "url": "https://gezimaris.com/ro/zurih-gezi-rehberi/",
+      "snippet": "Ghid de călătorie pentru Zurich 2026: zone de cazare, locuri de vizitat, mâncare și băutură, transport, itinerarii și sugestii de buget cu …"
+    },
+    {
+      "title": "5 Zile în Elveția - 10 rute de călătorie din Zürich",
+      "url": "https://www.swissactivities.com/ro-ro/itinerarii-elvetia/5-zile-din-zurich/?_r=1787437383846",
+      "snippet": "Când îți planifici excursia în Elveția, următoarele trasee îți vor fi de mare ajutor. Toate acestea pot fi făcute în cinci zile și încep din …"
+    }
+  ]
+}

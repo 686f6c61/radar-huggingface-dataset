@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sande-epdsd/ml-classification",
+  "slug": "sande-epdsd-ml-classification",
+  "author": "sande-epdsd",
+  "url": "https://huggingface.co/sande-epdsd/ml-classification",
+  "created_at": "2026-09-14T13:35:37.000Z",
+  "updated_at": "2026-09-14T13:35:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "Jan 1, 2025 · ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub."
+    },
+    {
+      "title": "r/AITAH - Reddit",
+      "url": "https://www.reddit.com/r/AITAH/",
+      "snippet": "this is a community like r/AmITheAsshole except unlike that subreddit here you can post interpersonal conflicts, anything that's AITA …"
+    },
+    {
+      "title": "ChatGPT - Reddit",
+      "url": "https://www.reddit.com/r/ChatGPT/top/",
+      "snippet": "Dec 1, 2022 · r/ChatGPT: Subreddit to discuss about ChatGPT and AI. Not affiliated with OpenAI."
+    },
+    {
+      "title": "GitHub - miuuyy/codex-chatgpt-web: Use ChatGPT Web (including …",
+      "url": "https://github.com/miuuyy/codex-chatgpt-web",
+      "snippet": "Aug 31, 2026 · Use ChatGPT Web (including Pro) as a native model in Codex — with context, tools, streaming and images, without …"
+    },
+    {
+      "title": "有没有好的离线翻译软件，电脑的？ - 知乎",
+      "url": "https://www.zhihu.com/question/67273658",
+      "snippet": "先说结论:有 由于传统研发翻译引擎需要巨额投入，一直被大厂技术垄断，所以这么多年来，都没有一款真正离线翻译。2024年之前所 …"
+    }
+  ]
+}

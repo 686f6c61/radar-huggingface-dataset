@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kavayam/table-transformer-structure-recognition-v1.1-all-onnx",
+  "slug": "kavayam-table-transformer-structure-recognition-v1-1-all-onnx",
+  "author": "kavayam",
+  "url": "https://huggingface.co/kavayam/table-transformer-structure-recognition-v1.1-all-onnx",
+  "created_at": "2026-09-14T10:41:03.000Z",
+  "updated_at": "2026-09-14T11:45:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "table-transformer",
+    "table-structure-recognition",
+    "arxiv:2303.00716",
+    "base_model:microsoft/table-transformer-structure-recognition-v1.1-all",
+    "base_model:quantized:microsoft/table-transformer-structure-recognition-v1.1-all",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 231304626,
+  "storage_human": "231 MB",
+  "base_model": "microsoft/table-transformer-structure-recognition-v1.1-all",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MSDN",
+      "url": "https://social.msdn.microsoft.com/Forums/en-US/922de5fa-b693-4687-b81d-7a82b8733fa2/",
+      "snippet": ""
+    },
+    {
+      "title": "MSDN",
+      "url": "https://social.msdn.microsoft.com/Forums/en-US/0fafae27-74c6-4019-b5c2-22cfbe7a636d",
+      "snippet": ""
+    },
+    {
+      "title": "MSDN",
+      "url": "https://social.msdn.microsoft.com/Forums/en-US/9864fd65-bde4-4305-9804-cd19ed189047",
+      "snippet": ""
+    },
+    {
+      "title": "MSDN",
+      "url": "https://social.msdn.microsoft.com/Forums/en-US/5c353f2b-b119-4cfc-aa74-7cd3b2d0d9fa",
+      "snippet": ""
+    },
+    {
+      "title": "MSDN",
+      "url": "https://social.msdn.microsoft.com/forums/en-US/sqlintegrationservices/thread/6d1589f6-64f9-4864-83fb-d10e34666638/",
+      "snippet": ""
+    }
+  ]
+}

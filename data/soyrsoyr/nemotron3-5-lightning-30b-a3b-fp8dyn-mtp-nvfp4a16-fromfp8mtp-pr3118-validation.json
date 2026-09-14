@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "soyrsoyr/Nemotron3.5-Lightning-30B-A3B-FP8Dyn-MTP-NVFP4A16-FromFP8MTP-pr3118-validation",
+  "slug": "soyrsoyr-nemotron3-5-lightning-30b-a3b-fp8dyn-mtp-nvfp4a16-fromfp8mtp-pr3118-validation",
+  "author": "soyrsoyr",
+  "url": "https://huggingface.co/soyrsoyr/Nemotron3.5-Lightning-30B-A3B-FP8Dyn-MTP-NVFP4A16-FromFP8MTP-pr3118-validation",
+  "created_at": "2026-09-14T16:52:09.000Z",
+  "updated_at": "2026-09-14T16:54:30.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h",
+    "text-generation",
+    "llm-compressor",
+    "compressed-tensors",
+    "mtp",
+    "pr3118-validation",
+    "conversational",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32245782080,
+  "parameters_human": "32.25B",
+  "storage_bytes": 33089604464,
+  "storage_human": "33.1 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "百科社群 - MC百科|最大的Minecraft中文MOD百科",
+      "url": "https://bbs.mcmod.cn/",
+      "snippet": "我的世界百科论坛，提供MineCraft模组交流、皮肤下载、攻略解说、MOD汉化、地图发布、MOD问答。"
+    },
+    {
+      "title": "如何提取 CurseForge/Modrinth 平台收益 - MC百科社群 - MC百科|最大 …",
+      "url": "https://bbs.mcmod.cn/forum.php?mod=viewthread&action=printable&tid=23002",
+      "snippet": "作者: QQ酱778591 时间: 2026-2-4 15:39 标题: 如何提取 CurseForge/Modrinth 平台收益 如题啊，怎么提现能达到收益最大化少付出点 …"
+    },
+    {
+      "title": "java17安装 · GitBook",
+      "url": "https://gitbook.mc.netease.com/chapter4/java17.html",
+      "snippet": "安装java17流程 说明 以下步骤均在root用户下执行，终端执行 whoami，若输出为root，则开始以下步骤进行安装，若为服主代号 ..."
+    },
+    {
+      "title": "【新人向】如何使用模组网站——CurseForge - MC百科社群 - MC百科",
+      "url": "https://bbs.mcmod.cn/forum.php?mod=viewthread&action=printable&tid=3599",
+      "snippet": "Feb 12, 2022 · 2.模组主页 在MC百科中的大部分CurseForge外链都是可以直接进入模组主页的，我已经将需要了解的位置标注了。 每 …"
+    },
+    {
+      "title": "如何提取 CurseForge/Modrinth 平台收益 - 你问我答 - MC百科",
+      "url": "https://bbs.mcmod.cn/thread-23002-1-1.html",
+      "snippet": "Feb 4, 2026 · 我的世界百科论坛，提供MineCraft模组交流、皮肤下载、攻略解说、MOD汉化、地图发布、MOD问答。 ,MC百科社群"
+    }
+  ]
+}

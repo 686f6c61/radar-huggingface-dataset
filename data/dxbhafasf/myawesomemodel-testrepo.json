@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "DXBHAFASF/MyAwesomeModel-TestRepo",
+  "slug": "dxbhafasf-myawesomemodel-testrepo",
+  "author": "DXBHAFASF",
+  "url": "https://huggingface.co/DXBHAFASF/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-14T13:51:05.000Z",
+  "updated_at": "2026-09-14T13:51:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google Photos: Edit, Organize, Search, and Backup Your Photos",
+      "url": "https://photos.google.com/",
+      "snippet": "Edit and enhance photos with AI-powered features like Magic Eraser and Unblur on Google Photos. Store, organize & search your …"
+    },
+    {
+      "title": "Welcome to My Activity",
+      "url": "https://myactivity.google.com/",
+      "snippet": "View and manage your Google account activity, including search history, app usage, and more."
+    },
+    {
+      "title": "Google Images",
+      "url": "https://images.google.com/",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/signin/v2/usernamerecovery",
+      "snippet": "Enter your phone number or recovery email Phone number or email"
+    }
+  ]
+}

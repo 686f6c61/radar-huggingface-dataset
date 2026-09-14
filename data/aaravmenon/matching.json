@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "aaravmenon/matching",
+  "slug": "aaravmenon-matching",
+  "author": "aaravmenon",
+  "url": "https://huggingface.co/aaravmenon/matching",
+  "created_at": "2026-09-14T12:47:30.000Z",
+  "updated_at": "2026-09-14T12:47:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home | Radar",
+      "url": "https://radar.avrotros.nl/",
+      "snippet": "Radar is het consumentenprogramma van AVROTROS, met Antoinette Hertsenberg en Fons Hendriks. Radar onderzoekt …"
+    },
+    {
+      "title": "Home24 - Page 2 - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/home24-f368-25.html",
+      "snippet": "Apr 20, 2026 · Home24 : Donnez votre avis sur le site home24.fr, site internet e-commerce spécialisé dans la vente de meubles, …"
+    },
+    {
+      "title": "刘翔向网友求助，称体育局让他「买断」或「当教练上班」，上海体育 …",
+      "url": "https://www.zhihu.com/question/2076005979435393256",
+      "snippet": "Aug 26, 2026 · 事实上，这两个他都不想选。 1.刘翔不缺钱。（可自行搜一下他的终身代言一年多少钱） 2.刘翔不缺工作。（他的知名 …"
+    },
+    {
+      "title": "Home24 Avis? - Page 2 - Home24 - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/home24-avis-t22194-10.html",
+      "snippet": "Dec 4, 2014 · Home24 GmbH, Greifswalderstraße 212-213, 10405 Berlin, Allemagne Société immatriculée au Registre du commerce …"
+    },
+    {
+      "title": "#Home24# - 知乎",
+      "url": "https://www.zhihu.com/pin/special/1556795075023376384",
+      "snippet": "03、Home24： Home24是一个家具平台，流量非常大，产品利润也很高，客户黏度很强，目前没有官方开放端口给到第三方卖家，未 …"
+    }
+  ]
+}

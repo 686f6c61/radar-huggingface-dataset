@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "adammartinezpi/mobilevit-experiment",
+  "slug": "adammartinezpi-mobilevit-experiment",
+  "author": "adammartinezpi",
+  "url": "https://huggingface.co/adammartinezpi/mobilevit-experiment",
+  "created_at": "2026-09-14T12:23:17.000Z",
+  "updated_at": "2026-09-14T12:23:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Farland: Farm Village — Wikinger-Farm-Abenteuer online",
+      "url": "https://farland.quartsoft.com/de/",
+      "snippet": "Die Welt von Farland wartet! Baue eine Wikingerfarm, erkunde Länder und triff Fabelwesen. Antike Götter und Abenteuerlust rufen …"
+    },
+    {
+      "title": "Farland: Farm Village — Viking Farm Adventures Online",
+      "url": "https://farland.quartsoft.com/",
+      "snippet": "Build a Viking farm, explore lands, and meet mythical creatures. Ancient gods and the spirit of adventure call you online. Play for free!"
+    },
+    {
+      "title": "Farland Game - Facebook",
+      "url": "https://www.facebook.com/FarlandGame/",
+      "snippet": "Many Farlanders visit the Townhall only to collect taxes, but it can do much more than that!"
+    },
+    {
+      "title": "„Farland: Farm Village“ auf dem PC spielen | Jetzt herunterladen ...",
+      "url": "https://play.google.com/pc-store/games/details?id=com.quartsoft.farland&hl=de",
+      "snippet": "Farland ist ein entspannendes und gleichzeitig fesselndes Landwirtschaftsabenteuer, in dem du in eine lebendige Inselwelt voller …"
+    },
+    {
+      "title": "FarmLand: Kostenlos online spielen auf Playhop",
+      "url": "https://playhop.com/de/app/farmland-205827",
+      "snippet": "Du hast ein Gehöft auf einer Insel zusammen mit einem treuen Butler von deinem Onkel geerbt! Nehmen Sie die Herausforderung …"
+    }
+  ]
+}

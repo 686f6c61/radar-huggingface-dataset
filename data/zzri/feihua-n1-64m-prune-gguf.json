@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ZZRI/Feihua-n1-64M-prune-GGUF",
+  "slug": "zzri-feihua-n1-64m-prune-gguf",
+  "author": "ZZRI",
+  "url": "https://huggingface.co/ZZRI/Feihua-n1-64M-prune-GGUF",
+  "created_at": "2026-09-14T12:45:31.000Z",
+  "updated_at": "2026-09-14T12:48:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "minimind",
+    "qwen3",
+    "pruned",
+    "nonsense",
+    "废话文学",
+    "zh",
+    "arxiv:2403.03853",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49163136,
+  "parameters_human": "49.2M",
+  "storage_bytes": 186959232,
+  "storage_human": "187 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub."
+    },
+    {
+      "title": "为什么用chatgpt账号登入一直提示需要电话号码 怎么解决？",
+      "url": "https://www.zhihu.com/question/2031417400504082455",
+      "snippet": "ChatGPT / Codex 登录出现手机号验证，怎么解决？ 方法一：升级 ChatGPT Plus 解决方式最简单直接：升级 ChatGPT Plus 就行。 …"
+    },
+    {
+      "title": "GitHub - RVC-Boss/GPT-SoVITS: 1 min voice data can also be used to ...",
+      "url": "https://github.com/RVC-Boss/GPT-SoVITS",
+      "snippet": "1 min voice data can also be used to train a good TTS model! (few shot voice cloning) - RVC-Boss/GPT-SoVITS"
+    },
+    {
+      "title": "GitHub Copilotでサポートされている AI モデル - GitHubドキュメント",
+      "url": "https://docs.github.com/ja/copilot/reference/ai-models/supported-models",
+      "snippet": "メモ Visual Studio Codeでは、Copilot サブスクリプションで既定で使用できるモデルよりも多くのモデルを追加できます。 …"
+    },
+    {
+      "title": "Using your own LLM models in GitHub Copilot CLI",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/use-byok-models",
+      "snippet": "You can configure Copilot CLI to use your own LLM provider, also called BYOK (Bring Your Own Key), instead of GitHub-hosted …"
+    }
+  ]
+}

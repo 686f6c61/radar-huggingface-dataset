@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "khoavucao2511/so101_vla_jepa_LoRA_Qwen_WMon_chunk16_14_09_26_v1",
+  "slug": "khoavucao2511-so101_vla_jepa_lora_qwen_wmon_chunk16_14_09_26_v1",
+  "author": "khoavucao2511",
+  "url": "https://huggingface.co/khoavucao2511/so101_vla_jepa_LoRA_Qwen_WMon_chunk16_14_09_26_v1",
+  "created_at": "2026-09-14T15:05:36.000Z",
+  "updated_at": "2026-09-14T15:15:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "vla_jepa",
+    "robotics",
+    "dataset:vasco281204/so101_green_block_36",
+    "arxiv:2602.10098",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1257039320,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Community Center - Airbnb Community",
+      "url": "https://community.withairbnb.com/t5/Community-Center/ct-p/community-center",
+      "snippet": "The Community Center is moving to a new home on October 6. We’re bringing the global forums and local Host Clubs together in ..."
+    },
+    {
+      "title": "Solucionado: CIF Airbnb España - Airbnb Community",
+      "url": "https://community.withairbnb.com/t5/Gestiona-tu-negocio/CIF-Airbnb-Espa%C3%B1a/m-p/2104403",
+      "snippet": "May 16, 2025 · Buenos días, me están haciendo la declaración de la renta y me piden el CIF de Airbnb para rellenarla, ya que el que …"
+    },
+    {
+      "title": "如何看待 Airbnb 建立中国研发团队？ - 知乎",
+      "url": "https://www.zhihu.com/question/50714705",
+      "snippet": "Airbnb和Uber都是在共享经济领域上发展势头很猛的公司。 但两者在入华的姿态上，Airbnb比Uber要低调的多。 非常喜欢Airbnb这家 …"
+    },
+    {
+      "title": "Airbnb 怎么读？ - 知乎",
+      "url": "https://www.zhihu.com/question/34684619",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Guide : Comment contacter Airbnb - Airbnb Community",
+      "url": "https://community.withairbnb.com/t5/Aide/Guide-Comment-contacter-Airbnb/m-p/16456",
+      "snippet": "Jan 9, 2016 · C’est la question que beaucoup se posent sur la communauté. Ci-dessous vous trouverez comment rentrer en contact …"
+    }
+  ]
+}

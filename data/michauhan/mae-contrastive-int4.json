@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "michauhan/mae-contrastive-int4",
+  "slug": "michauhan-mae-contrastive-int4",
+  "author": "michauhan",
+  "url": "https://huggingface.co/michauhan/mae-contrastive-int4",
+  "created_at": "2026-09-14T16:46:23.000Z",
+  "updated_at": "2026-09-14T16:46:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Linux に Firefox をインストールする | Firefox ヘルプ",
+      "url": "https://support.mozilla.org/ja/kb/install-firefox-linux",
+      "snippet": "しかしながら、他の方法で Linux 上に Firefox をインストールする必要がある場合は、以下のガイドで Ubuntu、Debian、Fedora …"
+    },
+    {
+      "title": "Firefox の接続設定 | Firefox ヘルプ - Mozilla Support",
+      "url": "https://support.mozilla.org/ja/kb/connection-settings-firefox",
+      "snippet": "注記: 接続設定 ダイアログは、Firefox のインターネット接続方法を制御する拡張機能でも表示されます。 拡張機能を無効化 をク …"
+    },
+    {
+      "title": "哪个是火狐浏览器的官方网站：firefox.com.cn还是mozilla ...",
+      "url": "https://www.zhihu.com/question/298474968",
+      "snippet": "火狐浏览器有着两个版本，分别是 谋智版 与通用版，通常而言建议安装通用版。 谋智版： 只支持中文 (简体)，网页底部标注 北京谋 …"
+    },
+    {
+      "title": "为什么有人爱 Firefox 胜过 Chrome 呢？ - 知乎",
+      "url": "https://www.zhihu.com/question/325600788",
+      "snippet": "FireFox：下载有史以来最快的 FirefoxChrome:Google Chrome 网络浏览器"
+    },
+    {
+      "title": "Εγκατάσταση του Firefox στα Windows | Βοήθεια ...",
+      "url": "https://support.mozilla.org/el/kb/lhpsh-kai-egkatastash-toy-firefox-sta-windows",
+      "snippet": "Αυτό το άρθρο περιγράφει πώς να κάνετε λήψη και εγκατάσταση του Firefox στα Windows."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tonykuo85/video-understanding",
+  "slug": "tonykuo85-video-understanding",
+  "author": "tonykuo85",
+  "url": "https://huggingface.co/tonykuo85/video-understanding",
+  "created_at": "2026-09-14T15:06:09.000Z",
+  "updated_at": "2026-09-14T15:06:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "video-understanding",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Malvorlagen mit süßen Tieren – bezaubernde druckbare Bilder",
+      "url": "https://de.magicoloriage.com/Kostenlose-Zeichnungen-zum-Ausdrucken/Kawaii-und-Manga/s%C3%BC%C3%9Fe-Tiere/",
+      "snippet": "Perfekt für Kinder, die Tiere lieben, und Erwachsene, die sich nach einem Moment kreativer Entspannung sehnen: Diese …"
+    },
+    {
+      "title": "Süßes Tier Ausmalbilder - 51 Kostenlose druckbare Ausmalbilder",
+      "url": "https://dearcoloringpages.com/de/coloring-pages/c/cute-animal",
+      "snippet": "Egal, ob Sie ein langjähriger Fan von Süßes Tier sind oder sie zum ersten Mal entdecken, unsere Süßes Tier Ausmalbilder bieten …"
+    },
+    {
+      "title": "Süße Ausmalbilder & Malvorlagen (Gratis PDF in A4)",
+      "url": "https://www.kawaii-ausmalbilder.de/",
+      "snippet": "Über hundert süße Kawaii-Ausmalbilder gratis als PDF in A4: Tiere, Helden, Essen und Natur, fertig zum Ausdrucken und Ausmalen …"
+    },
+    {
+      "title": "Süße Tiere Ausmalbilder – kostenlos drucken - Coloriage.info",
+      "url": "https://coloriage.info/de/su-e-tiere",
+      "snippet": "In dieser Sammlung findest du zahlreiche Motive zum Ausdrucken – vollkommen kostenlos und jederzeit verfügbar. Vom neugierigen …"
+    },
+    {
+      "title": "Süße Tiere Ausmalbilder: 7 Motive [PDF Kostenlos]",
+      "url": "https://www.kuschelmal.de/category/suesse-tiere-ausmalbilder/",
+      "snippet": "Hier findest du eine liebevoll gestaltete Sammlung von entzückenden Tiermotiven, die kleine und große Tierfreunde begeistern …"
+    }
+  ]
+}

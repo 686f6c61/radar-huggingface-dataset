@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "rAVEUK/Qwen3.8-27B-GGUF",
+  "slug": "raveuk-qwen3-8-27b-gguf",
+  "author": "rAVEUK",
+  "url": "https://huggingface.co/rAVEUK/Qwen3.8-27B-GGUF",
+  "created_at": "2026-09-14T13:39:06.000Z",
+  "updated_at": "2026-09-14T13:39:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "unsloth",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 472072176128,
+  "storage_human": "472.1 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Laureates | The Pritzker Architecture Prize",
+      "url": "https://www.pritzkerprize.com/laureates",
+      "snippet": "Zaha Hadid 2004 Laureate Jørn Utzon 2003 Laureate Glenn Murcutt 2002 Laureate Jacques Herzog and Pierre de Meuron 2001 …"
+    },
+    {
+      "title": "Pritzker Architecture Prize - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pritzker_Architecture_Prize",
+      "snippet": "The prize chair is the 2016 Pritzker laureate Alejandro Aravena; earlier chairs were J. Carter Brown (1979–2002), the Lord Rothschild …"
+    },
+    {
+      "title": "The Pritzker Architecture Prize",
+      "url": "https://www.pritzkerprize.com/",
+      "snippet": "Congratulations to Smiljan Radić Clarke, 2026 Laureate of the Pritzker Architecture Prize. Click here to view the announcement and …"
+    },
+    {
+      "title": "Prix Pritzker — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Prix_Pritzker",
+      "snippet": "Le prix Pritzker ou prix Pritzker d'architecture (en anglais : Pritzker Architecture Prize) est un prix d'architecture annuel décerné par …"
+    },
+    {
+      "title": "Who Has Won the Pritzker Prize? - ArchDaily",
+      "url": "https://www.archdaily.com/889628/who-has-won-the-pritzker-prize",
+      "snippet": "Feb 3, 2026 · To date, the Pritzker Prize has been awarded 46 times without interruption, and 23 countries have had at least one …"
+    }
+  ]
+}

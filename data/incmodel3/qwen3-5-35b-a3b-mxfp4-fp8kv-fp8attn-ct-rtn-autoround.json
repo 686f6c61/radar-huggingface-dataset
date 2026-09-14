@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "INCModel3/Qwen3.5-35B-A3B-MXFP4-FP8KV-FP8Attn-CT-RTN-AutoRound",
+  "slug": "incmodel3-qwen3-5-35b-a3b-mxfp4-fp8kv-fp8attn-ct-rtn-autoround",
+  "author": "INCModel3",
+  "url": "https://huggingface.co/INCModel3/Qwen3.5-35B-A3B-MXFP4-FP8KV-FP8Attn-CT-RTN-AutoRound",
+  "created_at": "2026-09-14T17:10:40.000Z",
+  "updated_at": "2026-09-14T17:10:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "quantized",
+    "mxfp4",
+    "autoround",
+    "autoquant-agent",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.5-35B-A3B",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2894927246,
+  "parameters_human": "2.89B",
+  "storage_bytes": 24620900341,
+  "storage_human": "24.6 GB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=27429fdf4bb3678915fd880b4ad86697",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=27429fdf4bb3678915fd880b4ad86697",
+      "snippet": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and …"
+    },
+    {
+      "title": "Microsoft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft",
+      "snippet": ""
+    }
+  ]
+}

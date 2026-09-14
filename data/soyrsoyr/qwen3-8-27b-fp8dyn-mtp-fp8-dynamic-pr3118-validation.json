@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-FP8-DYNAMIC-pr3118-validation",
+  "slug": "soyrsoyr-qwen3-8-27b-fp8dyn-mtp-fp8-dynamic-pr3118-validation",
+  "author": "soyrsoyr",
+  "url": "https://huggingface.co/soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-FP8-DYNAMIC-pr3118-validation",
+  "created_at": "2026-09-14T16:36:51.000Z",
+  "updated_at": "2026-09-14T16:48:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "llm-compressor",
+    "compressed-tensors",
+    "mtp",
+    "pr3118-validation",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 35504661573,
+  "storage_human": "35.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "《富爸爸，穷爸爸》里的现金流游戏怎么下载？ - 知乎",
+      "url": "https://www.zhihu.com/question/60034270",
+      "snippet": "我用的是iPhone 6p，想下载现金流游戏，在app store里找不到，请问怎么下载这款游戏？"
+    },
+    {
+      "title": "说唱音乐里面的「flow」是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/19726823/answers/updated",
+      "snippet": "rap,hip-hop [小贴士] “在某些时候，当我只是写出一些歌词，我会用我想要的方式把它的Flow呈现出来。这感觉像是我已经做这件事做 …"
+    },
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/question/6764998314",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "在工作中如何获得心流（flow）？ - 知乎",
+      "url": "https://www.zhihu.com/question/24428474",
+      "snippet": "在这个图表中我们也能看出，“apathy”是与“flow”完全背道而驰的状态。 不过，人们的状态并不是一成不变的。 …"
+    },
+    {
+      "title": "如何评价魅族 Flow 耳机？ - 知乎",
+      "url": "https://www.zhihu.com/question/62990691",
+      "snippet": "魅族 Flow 耳机 - 魅族官网 适合· 不用深插入耳，在耳道「门口」就行· 经常在嘈杂背景下聆听· 以90年代后期以来的流行音乐为主要聆 …"
+    }
+  ]
+}

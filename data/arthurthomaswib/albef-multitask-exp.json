@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "arthurthomaswib/albef-multitask-exp",
+  "slug": "arthurthomaswib-albef-multitask-exp",
+  "author": "arthurthomaswib",
+  "url": "https://huggingface.co/arthurthomaswib/albef-multitask-exp",
+  "created_at": "2026-09-14T15:33:24.000Z",
+  "updated_at": "2026-09-14T15:33:30.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wypłata z konta walutowego - Społeczność ING - 5623",
+      "url": "https://spolecznosc.ing.pl/-/Konta-osobiste-i-firmowe/Wyp%C5%82ata-z-konta-walutowego/td-p/5623",
+      "snippet": "Nov 6, 2016 · Czy wypłaty walutowe (z własnego konta, niewielka kwota - do 200-300USD) trzeba awizować w oddziale? Rozumiem, …"
+    },
+    {
+      "title": "Zajęcie egzekucyjne - Społeczność ING - 10131",
+      "url": "https://spolecznosc.ing.pl/-/Konta-osobiste-i-firmowe/Zaj%C4%99cie-egzekucyjne/td-p/10131",
+      "snippet": "Aug 25, 2017 · Dzień dobry, Moje konto zostało zablokowane przez zajęcie egzekucyjne. Wg. informacji dostępnych na koncie, …"
+    },
+    {
+      "title": "Zmiany w aplikacji ING. Zobacz, jak będzie wyglądać",
+      "url": "https://www.bankier.pl/wiadomosc/Zmiany-z-aplikacji-ING-Zobacz-jak-bedzie-wygladac-8636195.html",
+      "snippet": "Oct 26, 2023 · ING Bank Śląski szykuje zmiany w aplikacji mobilnej Moje ING. Po przeprowadzeniu szeregu badań bank zdecydował …"
+    },
+    {
+      "title": "ING Bank Śląski - najnowsze wiadomości - Bankier.pl",
+      "url": "https://www.bankier.pl/tag/ing-bank-slaski",
+      "snippet": "Aug 19, 2026 · ING Bank Śląski - najnowsze wiadomości z Polski i ze świata, okiem redaktorów Bankier.pl. Czytaj tylko sprawdzone …"
+    },
+    {
+      "title": "7 platform crowdfundingowych, które warto znać - Społeczność ING",
+      "url": "https://spolecznosc.ing.pl/-/Blog/7-platform-crowdfundingowych-kt%C3%B3re-warto-zna%C4%87/ba-p/9976",
+      "snippet": "Aug 16, 2017 · Zastanawiacie się, skąd wziąć środki niezbędne na uruchomienie biznesu, realizację interesującego projektu, …"
+    }
+  ]
+}

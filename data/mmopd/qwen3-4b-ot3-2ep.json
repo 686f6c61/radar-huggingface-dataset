@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "MMOPD/Qwen3-4B-OT3-2ep",
+  "slug": "mmopd-qwen3-4b-ot3-2ep",
+  "author": "MMOPD",
+  "url": "https://huggingface.co/MMOPD/Qwen3-4B-OT3-2ep",
+  "created_at": "2026-09-14T10:39:08.000Z",
+  "updated_at": "2026-09-14T10:45:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "reasoning",
+    "thinking",
+    "sft",
+    "openthoughts3",
+    "mmopd",
+    "conversational",
+    "en",
+    "dataset:open-thoughts/OpenThoughts3-1.2M",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:finetune:Qwen/Qwen3-4B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8834317158,
+  "storage_human": "8.8 GB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FOCUS online - Aktuelle Nachrichten",
+      "url": "https://www.focus.de/",
+      "snippet": "FOCUS online – minutenaktuelle Nachrichten und Service-Informationen von Deutschlands modernem Nachrichtenmagazin."
+    },
+    {
+      "title": "Politik News - Aktuelles aus dem In- und Ausland - FOCUS Online",
+      "url": "https://www.focus.de/politik/",
+      "snippet": "12 hours ago · Der „MUT-Talk“ von FOCUS online Deniz Aytekin über Karriere-Ende: „Fiel mir einfach zu sagen, kann loslassen” Video"
+    },
+    {
+      "title": "Politik aktuell | Deutschland und die Welt | FOCUS+",
+      "url": "https://www.focusplus.de/politik",
+      "snippet": "Aktuelle politische Themen aus Deutschland und der Welt: Hintergründe, ausführliche Interviews, Reportagen und eingehende …"
+    },
+    {
+      "title": "Focus Online",
+      "url": "https://article.focus.de/",
+      "snippet": "In der heutigen digitalen Welt ist es von entscheidender Bedeutung, Ihr Unternehmen online sichtbar zu machen und potenzielle …"
+    },
+    {
+      "title": "FOCUS - Das Nachrichtenmagazin",
+      "url": "https://www.focus-magazin.de/",
+      "snippet": "FOCUS setzt Themen in Politik, Wirtschaft, Forschung und Technik, ist zukunftsorientiert, macht Hintergründe transparent und …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "shatayumk/chesslm",
+  "slug": "shatayumk-chesslm",
+  "author": "shatayumk",
+  "url": "https://huggingface.co/shatayumk/chesslm",
+  "created_at": "2026-09-14T14:04:05.000Z",
+  "updated_at": "2026-09-14T14:31:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "chess",
+    "causal-lm",
+    "scaling-laws",
+    "text-generation",
+    "en",
+    "arxiv:2607.16097",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 756459552,
+  "storage_human": "756 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nos projets - CDC Sénégal",
+      "url": "https://cdc.sn/nos-projets/",
+      "snippet": "Profitez de solutions fiables pour protéger vos dépôts, accéder à des services financiers innovants et contribuer directement au …"
+    },
+    {
+      "title": "Nos métiers | dépôts et consignations - CDC Sénégal",
+      "url": "https://cdc.sn/le-groupe/metiers/",
+      "snippet": "La Caisse des Dépôts et Consignations (CDC) est une institution publique de confiance, chargée de gérer et de valoriser des …"
+    },
+    {
+      "title": "Accueil - cdchabitat",
+      "url": "https://cdc-habitat.sn/",
+      "snippet": "May 15, 2026 · Filiale de la Caisse des Dépôts et Consignations (CDC) du Sénégal, CDC HABITAT est une société anonyme à …"
+    },
+    {
+      "title": "CDC Sénégal | Dakar - Facebook",
+      "url": "https://www.facebook.com/CaisseDesDepotsSN/",
+      "snippet": "La Caisse des Dépôts et Consignations (CDC) est l'un des moteurs clés de l'aménagement du territoire et de l'accès au logement …"
+    },
+    {
+      "title": "Senegal - Traveler view | Travelers' Health | CDC",
+      "url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/senegal",
+      "snippet": "Be aware of current health issues in Senegal. Learn how to protect yourself. Level 2 Practice Enhanced Precautions Global Polio …"
+    }
+  ]
+}

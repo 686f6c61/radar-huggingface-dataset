@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ellietaylor/visual-question-answering",
+  "slug": "ellietaylor-visual-question-answering",
+  "author": "ellietaylor",
+  "url": "https://huggingface.co/ellietaylor/visual-question-answering",
+  "created_at": "2026-09-14T14:08:01.000Z",
+  "updated_at": "2026-09-14T14:08:09.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "visual-question-answering",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Visual Question Answering Models – Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=visual-question-answering&sort=trending",
+      "snippet": "Explore machine learning models. Active filters: visual-question-answering OpenMed/Qwen3.5-2B-MedVL"
+    },
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux pièces …"
+    },
+    {
+      "title": "Visual Question Answering Models | AI Tutorial | Next Electronics",
+      "url": "https://next.gr/ai/multimodal-learning/visual-question-answering-models",
+      "snippet": "1. Problem Definition and Key Challenges 1.1 Problem Definition and Key Challenges Visual Question Answering (VQA) is a multimodal task requiring a model to generate accurate natural language answers to questions about an input image. Formally, given an image I and a question Q, the model must produce an answer A that maximizes the conditional probability:"
+    },
+    {
+      "title": "Descargar YouTube: PC / Mac / Android (APK)",
+      "url": "https://es.ccm.net/descargas/entretenimiento/6598-youtube/",
+      "snippet": "Feb 12, 2024 · YouTube se puede conectar a Facebook, Twitter, Talk, Reddit, Pinterest, Tumblr, LinkedIn y más. Asimismo, …"
+    },
+    {
+      "title": "Visual Question Answering · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/visual_question_answering",
+      "snippet": "Visual Question Answering Visual Question Answering (VQA) is the task of answering open-ended questions based on an image. The input to models supporting this task is typically a combination of an image and a question, and the output is an answer expressed in natural language."
+    }
+  ]
+}

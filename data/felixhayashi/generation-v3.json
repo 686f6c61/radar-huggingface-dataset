@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "felixhayashi/generation-v3",
+  "slug": "felixhayashi-generation-v3",
+  "author": "felixhayashi",
+  "url": "https://huggingface.co/felixhayashi/generation-v3",
+  "created_at": "2026-09-14T13:37:32.000Z",
+  "updated_at": "2026-09-14T13:37:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "化工图纸中QIA、PIA、LIA、表示什么_百度知道",
+      "url": "https://zhidao.baidu.com/question/328003740251510685.html",
+      "snippet": "手机答题 我的 百度知道> 无分类 化工图纸中QIA、PIA、LIA、表示什么 我来答 可选中1个或多个下面的关键词，搜索相关资料。 也可 …"
+    },
+    {
+      "title": "DCS画面中的缩写是什么意思？比如SIC,LIC,FS,FI,HIC,FFIC,SS,LIA等，这 …",
+      "url": "https://zhidao.baidu.com/question/452609964.html",
+      "snippet": "DCS画面中的缩写是什么意思？比如SIC,LIC,FS,FI,HIC,FFIC,SS,LIA等，这些有详细的对应表吗？ FIRST LETTER 首字符 …"
+    },
+    {
+      "title": "Which spelling is best - Leah, Lia or Lea? - Nameberry",
+      "url": "https://forum.nameberry.com/t/which-spelling-is-best-leah-lia-or-lea/238245",
+      "snippet": "Nov 1, 2014 · [name_f]Leah[/name_f] to me has always looked slightly odd with the ‘h’ tacked on the end (much like the names …"
+    },
+    {
+      "title": "~ nicknames for lia - General Name Discussion - Nameberry",
+      "url": "https://forum.nameberry.com/t/nicknames-for-lia/396063",
+      "snippet": "Nov 20, 2021 · hi berries ! so i’ve been going by lia a lot more recently and i was wondering if there are any nicknames you can think …"
+    },
+    {
+      "title": "Leah 和 Lia 用作英文名哪个更好呢? - 知乎",
+      "url": "https://www.zhihu.com/question/531334443",
+      "snippet": "May 4, 2022 · 亲爱的题主，我觉得Leah比较正式一些。 如果是要出国留学或者大学生取名建议Leah，听起来比较成熟。如果还没上 …"
+    }
+  ]
+}

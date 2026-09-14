@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "WILLIAMMOOREie/efficient-attention-reading-2023",
+  "slug": "williammooreie-efficient-attention-reading-2023",
+  "author": "WILLIAMMOOREie",
+  "url": "https://huggingface.co/WILLIAMMOOREie/efficient-attention-reading-2023",
+  "created_at": "2026-09-14T16:53:17.000Z",
+  "updated_at": "2026-09-14T16:53:22.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "efficient-attention",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Прощай, Лара смотреть все серии подряд",
+      "url": "https://jutsu.tv/5472-proschaj-lara.html",
+      "snippet": "Смотрите все серии онлайн Прощай, Лара (Sayonara Lara) в лучшей русской озвучке."
+    },
+    {
+      "title": "Аниме Прощай, Лара на Animedia смотреть онлайн",
+      "url": "https://animedia.net/67-proschaj-lara.html",
+      "snippet": "Двести лет назад принцесса Лара нарушает запрет своего народа, вступает в связь со смертным мужчиной, отказывается от …"
+    },
+    {
+      "title": "Прощай, Лара (мультсериал, 2026) смотреть онлайн",
+      "url": "https://okko.tv/serial/goodbye-lara",
+      "snippet": "Сможет ли обитательница подводного мира найти своё счастье в мире людей? Аниме, вдохновлённое сказкой «Русалочка». …"
+    },
+    {
+      "title": "Прощай, Лара - вся информация на AniBinge | АниБиндж",
+      "url": "https://anibinge.tv/anime/sayonara-lara-24726",
+      "snippet": "Jul 5, 2026 · Лара влюбилась в человеческого принца и отправилась на поверхность, готовая пожертвовать всем. Но её …"
+    },
+    {
+      "title": "Прощай, Лара (мультфильм 2026) смотреть онлайн бесплатно в …",
+      "url": "https://www.ivi.tv/watch/proschaj-lara",
+      "snippet": "Мультфильм Прощай, Лара (2026) можно посмотреть в онлайн-кинотеатре Иви! Захватывающий Мультфильм Прощай, Лара …"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "tinyopsec/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupB-llama32-end-GGUF",
+  "slug": "tinyopsec-cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupb-llama32-end-gguf",
+  "author": "tinyopsec",
+  "url": "https://huggingface.co/tinyopsec/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupB-llama32-end-GGUF",
+  "created_at": "2026-09-14T12:49:19.000Z",
+  "updated_at": "2026-09-14T13:17:39.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama-cpp",
+    "math",
+    "reasoning",
+    "grpo",
+    "quantized",
+    "text-generation",
+    "en",
+    "arxiv:2402.03300",
+    "base_model:logan7000/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupB-llama32-end",
+    "base_model:quantized:logan7000/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupB-llama32-end",
+    "license:llama3.2",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749888,
+  "parameters_human": "3.21B",
+  "storage_bytes": 27447976768,
+  "storage_human": "27.4 GB",
+  "base_model": "logan7000/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupB-llama32-end",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Geoconsult - Home - GC Group",
+      "url": "https://www.geoconsult.com/",
+      "snippet": "GEOCONSULT plant und realisiert weltweit Infrastrukturprojekte mit nachhaltigen Lösungen seit 1973. Erfahren Sie mehr über …"
+    },
+    {
+      "title": "Singapur - GC Group - Geoconsult",
+      "url": "https://www.geoconsult.com/en/contact/singapore",
+      "snippet": "Learn more about GEOCONSULT Singapore, a specialised consultant for infrastructure projects since 1996, operating throughout the …"
+    },
+    {
+      "title": "Geoconsult ZT GmbH: Offene Stellen",
+      "url": "https://hire.geoconsult.com/",
+      "snippet": "Geoconsult ZT GmbH als Arbeitgeber GC GROUP ist ein unabhängiges und weltweit agierendes Unternehmen, welches …"
+    },
+    {
+      "title": "Geoconsult ZT GmbH als Arbeitgeber",
+      "url": "https://hire.geoconsult.com/geoconsult-zt-gmbh-profile",
+      "snippet": "Über das Unternehmen GC GROUP ist ein unabhängiges und weltweit agierendes Unternehmen, welches ganzheitliche Ingenieur- …"
+    },
+    {
+      "title": "pdf-certificate - cms.geoconsult.com",
+      "url": "https://cms.geoconsult.com/uploads/Survey_Certificate_GC_ZT_Gmb_H_29_07_2024_1891d54b62.pdf",
+      "snippet": "Sehr gute Nachhaltigkeitsperformance Unternehmen mit ausgezeichneter Einhaltung der ESG-Anforderungen entsprechend …"
+    }
+  ]
+}

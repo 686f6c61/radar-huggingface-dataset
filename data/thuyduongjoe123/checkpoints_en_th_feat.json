@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "thuyduongjoe123/checkpoints_en_th_feat",
+  "slug": "thuyduongjoe123-checkpoints_en_th_feat",
+  "author": "thuyduongjoe123",
+  "url": "https://huggingface.co/thuyduongjoe123/checkpoints_en_th_feat",
+  "created_at": "2026-09-14T16:59:15.000Z",
+  "updated_at": "2026-09-14T17:00:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452608526,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

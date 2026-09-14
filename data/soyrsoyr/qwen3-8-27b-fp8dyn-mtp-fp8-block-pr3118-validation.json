@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-FP8-BLOCK-pr3118-validation",
+  "slug": "soyrsoyr-qwen3-8-27b-fp8dyn-mtp-fp8-block-pr3118-validation",
+  "author": "soyrsoyr",
+  "url": "https://huggingface.co/soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-FP8-BLOCK-pr3118-validation",
+  "created_at": "2026-09-14T16:37:45.000Z",
+  "updated_at": "2026-09-14T16:49:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "llm-compressor",
+    "compressed-tensors",
+    "mtp",
+    "pr3118-validation",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 35504588221,
+  "storage_human": "35.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Peut-on imprimer une conversation sur messagerie du bon coin",
+      "url": "https://forums.commentcamarche.net/forum/affich-37992704-peut-on-imprimer-une-conversation-sur-messagerie-du-bon-coin",
+      "snippet": "Feb 3, 2024 · Bonjour, j'ai besoin d'imprimer mes conversations sur \"le bon coin\" avec des personnes ayant passé une annonce. Je …"
+    },
+    {
+      "title": "Le bon coin une honte!! - Forum - 60 millions de consommateurs",
+      "url": "https://www.60millions-mag.com/forum/d/29369-le-bon-coin-une-honte",
+      "snippet": "May 3, 2016 · Bonjour à tous Je n’arrive plus à faire passer mon annonce sur LE BON COIN. Après une dizaine de tentatives …"
+    },
+    {
+      "title": "Leboncoin supprimer les recherches - Consommation & Internet",
+      "url": "https://forums.commentcamarche.net/forum/affich-34623263-leboncoin-supprimer-les-recherches",
+      "snippet": "May 28, 2017 · Supprimer historique le bon coin- Meilleures réponses Mode vacances le bon coin - Forum Services en ligne …"
+    },
+    {
+      "title": "Le Bon Coin, la foire aux couacs - 60 Millions de Consommateurs",
+      "url": "https://www.60millions-mag.com/commerce/article/le-bon-coin-la-foire-aux-couacs-20210310/",
+      "snippet": "Mar 10, 2021 · Véhicules ou électroménager à vendre, appartements à louer… Ce qu’on recherche est souvent disponible sur le Bon …"
+    },
+    {
+      "title": "Annonce sur LE BON COIN refusée - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-35484879-annonce-sur-le-bon-coin-refusee",
+      "snippet": "Jul 23, 2018 · Meilleure réponse: Je n’arrive plus à faire passer mon annonce sur LE BON COIN. Après une dizaine de tentatives …"
+    }
+  ]
+}

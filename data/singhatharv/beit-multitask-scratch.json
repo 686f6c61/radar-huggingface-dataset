@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "singhatharv/beit-multitask-scratch",
+  "slug": "singhatharv-beit-multitask-scratch",
+  "author": "singhatharv",
+  "url": "https://huggingface.co/singhatharv/beit-multitask-scratch",
+  "created_at": "2026-09-14T16:52:24.000Z",
+  "updated_at": "2026-09-14T16:52:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CIRCUMSCRIBE Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/circumscribe",
+      "snippet": "To circumscribe something is to limit its range or activity, but there is no circumscribing the range of influence the Latin ancestors of …"
+    },
+    {
+      "title": "CIRCUMSCRIBE | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/circumscribe",
+      "snippet": "If you circumscribe a triangle, square, etc., you draw a circle that surrounds it and touches each of its corners."
+    },
+    {
+      "title": "CIRCUMSCRIBE definition | Cambridge English Dictionary",
+      "url": "https://dictionary.cambridge.org/us/dictionary/english/circumscribe",
+      "snippet": "If you circumscribe a triangle, square, etc., you draw a circle that surrounds it and touches each of its corners."
+    },
+    {
+      "title": "Understanding “Circumscribe” — Meaning, Usage, and Tips for Mastery",
+      "url": "https://englishwordchamps.com/circumscribe-meaning-and-examples/",
+      "snippet": "Dec 23, 2025 · “Circumscribe” means both drawing around something and restricting it within limits. \"A circle that passes through all …"
+    },
+    {
+      "title": "CIRCUMSCRIBE Definition & Meaning | Dictionary.com",
+      "url": "https://www.dictionary.com/browse/circumscribe",
+      "snippet": "CIRCUMSCRIBE definition: to draw a line around; encircle. See examples of circumscribe used in a sentence."
+    }
+  ]
+}

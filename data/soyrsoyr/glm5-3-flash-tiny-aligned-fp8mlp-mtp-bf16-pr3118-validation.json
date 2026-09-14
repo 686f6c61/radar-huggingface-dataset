@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "soyrsoyr/GLM5.3-Flash-Tiny-Aligned-FP8MLP-MTP-BF16-pr3118-validation",
+  "slug": "soyrsoyr-glm5-3-flash-tiny-aligned-fp8mlp-mtp-bf16-pr3118-validation",
+  "author": "soyrsoyr",
+  "url": "https://huggingface.co/soyrsoyr/GLM5.3-Flash-Tiny-Aligned-FP8MLP-MTP-BF16-pr3118-validation",
+  "created_at": "2026-09-14T16:52:56.000Z",
+  "updated_at": "2026-09-14T16:52:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "llm-compressor",
+    "compressed-tensors",
+    "mtp",
+    "pr3118-validation",
+    "text-generation",
+    "conversational",
+    "base_model:inference-optimization/GLM-5.3-Flash-0.1B-A0.1B-MTP",
+    "base_model:quantized:inference-optimization/GLM-5.3-Flash-0.1B-A0.1B-MTP",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 84772398,
+  "parameters_human": "84.8M",
+  "storage_bytes": 190656107,
+  "storage_human": "191 MB",
+  "base_model": "inference-optimization/GLM-5.3-Flash-0.1B-A0.1B-MTP",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "الصفحة الرئيسية - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLPYf6vTu2xt17uhXThhpUMYbChcBh2YyC",
+      "snippet": "Share your videos with friends, family, and the world"
+    },
+    {
+      "title": "PELÍCULAS COMPLETAS EN ESPAÑOL LATINO - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PL1VQG1QhVNxX78j3ubKzGywWtSel93OQk",
+      "snippet": "Bienvenidos a nuestra colección de películas completas en español latino. Disfruta de una variedad de géneros: acción, comedia, …"
+    },
+    {
+      "title": "Movies & TV - YouTube",
+      "url": "https://movies.youtube.com/",
+      "snippet": "Find the latest and greatest movies and shows all available on YouTube.com/movies. From award-winning hits to independent …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/?source=pwa",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube TV",
+      "url": "https://tv.youtube.com/welcome，",
+      "snippet": "YouTube TV ... YouTube TV"
+    }
+  ]
+}

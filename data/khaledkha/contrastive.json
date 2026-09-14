@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "khaledkha/contrastive",
+  "slug": "khaledkha-contrastive",
+  "author": "khaledkha",
+  "url": "https://huggingface.co/khaledkha/contrastive",
+  "created_at": "2026-09-14T15:19:52.000Z",
+  "updated_at": "2026-09-14T15:19:58.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HLN - Het Laatste Nieuws - Volg het nieuws op de nr1 nieuwssite in ...",
+      "url": "https://www.hln.be/",
+      "snippet": "Aug 30, 2026 · HLN - Het Laatste Nieuws - Volg het nieuws op de nr1 nieuwssite in België, HLN.be brengt je het allerlaatste nieuws …"
+    },
+    {
+      "title": "Net binnen | Het meest recente nieuws van HLN.be",
+      "url": "https://www.hln.be/net-binnen/",
+      "snippet": "Volg het meest recente nieuws op de nr1 nieuwssite in België, HLN brengt je het recente nieuws 24/24 en 7/7, uit binnen - en …"
+    },
+    {
+      "title": "HLN Contact - HLN.be",
+      "url": "https://mijnomgeving.hln.be/klantenservice/contact",
+      "snippet": "We staan voor u klaar op onze klantendienst. Vind hier onze contactgegevens: chat, contactformulier & telefoonnummer."
+    },
+    {
+      "title": "HLN Klantendienst - HLN.be",
+      "url": "https://mijnomgeving.hln.be/",
+      "snippet": "De MijnOmgeving is de klantendienst van HLN, regel hier zelf veilig & snel al je abonnement-gerelateerde zaken."
+    },
+    {
+      "title": "Live - Het Laatste Nieuws",
+      "url": "https://live.hln.be/live/634500000cba4f21a2b738bb?count=0&highlights=true&steps=20&theme=hln",
+      "snippet": "De redactie van HLN kreeg een heel aantal vragen toegestuurd nadat de federale regering haar begroting voor 2023 en 2024 had …"
+    }
+  ]
+}

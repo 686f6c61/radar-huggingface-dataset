@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Panga-Azazia/Wuro-Mali-Tanle-v0",
+  "slug": "panga-azazia-wuro-mali-tanle-v0",
+  "author": "Panga-Azazia",
+  "url": "https://huggingface.co/Panga-Azazia/Wuro-Mali-Tanle-v0",
+  "created_at": "2026-09-14T12:37:47.000Z",
+  "updated_at": "2026-09-14T12:48:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:maya-research/maya1",
+    "base_model:finetune:maya-research/maya1",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3300928512,
+  "parameters_human": "3.30B",
+  "storage_bytes": 6624739698,
+  "storage_human": "6.6 GB",
+  "base_model": "maya-research/maya1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

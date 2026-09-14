@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "JosephSmithko/mocov3-multitask-small",
+  "slug": "josephsmithko-mocov3-multitask-small",
+  "author": "JosephSmithko",
+  "url": "https://huggingface.co/JosephSmithko/mocov3-multitask-small",
+  "created_at": "2026-09-14T13:58:30.000Z",
+  "updated_at": "2026-09-14T13:58:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.de/?om=1",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.de/mapfiles/home3.html",
+      "snippet": "Explore the world with Google Maps, find locations, get directions, and access real-time traffic updates."
+    },
+    {
+      "title": "Datenschutz – Street View – Google Maps",
+      "url": "https://maps.google.de/intl/de/help/maps/streetview/privacy.html",
+      "snippet": "Google Maps mit Street View bietet Ihnen die Möglichkeit, Orte auf der ganzen Welt in einer 360-Grad-Panoramaansicht auf …"
+    },
+    {
+      "title": "Street View-Fotos stammen aus zwei verschiedenen Quellen",
+      "url": "https://maps.google.de/intl/de/streetview/explore/",
+      "snippet": "Hier erfährst du, was Street View ist, wo wir schon waren und wo unsere Fahrzeuge momentan unterwegs sind. Unser technisches …"
+    },
+    {
+      "title": "Earth-Versionen – Google Earth",
+      "url": "https://maps.google.de/intl/de/earth/versions/",
+      "snippet": "Fliege mit Google Earth für Chrome in Sekundenschnelle überallhin und besuche hunderte Städte in 3D direkt in deinem Browser. Du …"
+    }
+  ]
+}

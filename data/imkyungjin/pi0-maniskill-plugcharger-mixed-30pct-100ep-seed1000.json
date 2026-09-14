@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ImKyungjin/pi0-maniskill-plugcharger-mixed-30pct-100ep-seed1000",
+  "slug": "imkyungjin-pi0-maniskill-plugcharger-mixed-30pct-100ep-seed1000",
+  "author": "ImKyungjin",
+  "url": "https://huggingface.co/ImKyungjin/pi0-maniskill-plugcharger-mixed-30pct-100ep-seed1000",
+  "created_at": "2026-09-14T10:55:24.000Z",
+  "updated_at": "2026-09-14T11:00:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi0",
+    "robotics",
+    "dataset:local/maniskill_plugcharger_mixed_30pct_100ep",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 7011552564,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Glastür Satiniert 834 x 2097 mm - Glas Online Kaufen",
+      "url": "https://glasok.de/produkt/glastuer-satiniert-834-x-2097-mm/",
+      "snippet": "Diese Glastür Satiniert 834 x 2097 mm ist ein Zargen-Einbautür mit durchgehend satiniertes Milchglas ohne Streifen oder Muster. …"
+    },
+    {
+      "title": "Glastür Satiniert 83,4 x 209,7 cm - Hansaglas",
+      "url": "https://hansaglas.de/produkt/glastuer-satiniert-834-x-2097-mm/",
+      "snippet": "Die Glastür Satiniert 83,4 x 209,7 cm ist eine passende Lösung für hohe Türöffnungen, bei denen Licht und Privatsphäre kombiniert …"
+    },
+    {
+      "title": "Glastür Satiniert 83,4 x 209,7 cm - Hansaglas",
+      "url": "https://hansaglas.de/produkt/glastuer-satiniert-834-x-2097-cm/",
+      "snippet": "Glastür Satiniert 83,4 x 209,7 cm – Ideal für große Räume. Blickdicht, lichtdurchlässig und hochwertig. Jetzt bei Hansaglas entdecken!"
+    },
+    {
+      "title": "Hansaglas Glastür Satiniert 834 x 2097 mm Studio/Office | HORNBACH",
+      "url": "https://www.hornbach.de/p/hansaglas-glastuer-satiniert-834-x-2097-mm-studio-office-din-rechts/12800258/",
+      "snippet": "Hansaglas Glastür Satiniert 834 x 2097 mm Studio/Office DIN Rechts jetzt im HORNBACH Onlineshop bestellen! Garantierte …"
+    },
+    {
+      "title": "Skyscope Zimmertür Glas Sicherheitsglas satiniert 2097 x 834 x 8",
+      "url": "https://www.obi.de/p/8469694/glasdrehtuer-esg-floatglas-satiniert-din-rechts-2097-x-834-x-8-mm?msockid=25e2989c1b366647367c8f481aa7672f",
+      "snippet": "Die Glasdrehtür ESG Floatglas satiniert DIN Rechts 2097 x 834 x 8 mm ist das ideale Produkt für Renovierer und Modernisierer, …"
+    }
+  ]
+}

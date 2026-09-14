@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "eshanized/RSML",
+  "slug": "eshanized-rsml",
+  "author": "eshanized",
+  "url": "https://huggingface.co/eshanized/RSML",
+  "created_at": "2026-09-14T12:39:21.000Z",
+  "updated_at": "2026-09-14T12:39:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kunststoffbeschichtungen: Verfahren und Anwendungsgebiete",
+      "url": "https://scheffel-kunststoffe.de/wissen/kunststoffbeschichtungen/",
+      "snippet": "Aug 20, 2024 · Es gibt verschiedene Arten von Kunststoffbeschichtungen, die jeweils spezifische Eigenschaften und Einsatzbereiche …"
+    },
+    {
+      "title": "Kunststoffbeschichtung – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Kunststoffbeschichtung",
+      "snippet": "Der Begriff Kunststoffbeschichtung kann alternativ aber auch die Beschichtung von Werkstücken aus Kunststoffe mit beliebigen …"
+    },
+    {
+      "title": "Kunststoffe richtig beschichten » Methoden & Vorteile",
+      "url": "https://heimwerk.org/kunststoff-beschichten",
+      "snippet": "Nov 20, 2024 · Die Beschichtung von Kunststoffen spielt eine zentrale Rolle in der Verbesserung ihrer Haltbarkeit und Funktionalität. …"
+    },
+    {
+      "title": "Beschichtung von Kunststoff - kratzfest - UV beständig",
+      "url": "https://www.kirsch-kunststofftechnik.de/oberflaechen/kunststoff/beschichtung/",
+      "snippet": "Die Abriebfestigkeit und die Chemikalienresistenz werden erhöht und das Material erhält einen zusätzlichen Schutz vor UV …"
+    },
+    {
+      "title": "Welche Beschichtungen gibt es für Kunststoffplatten? - Fapa",
+      "url": "https://www.fapa-gmbh.de/blog/welche-beschichtungen-gibt-es-fuer-kunststoffplatten/",
+      "snippet": "Mar 24, 2026 · Was sind Kunststoffbeschichtungen und warum sind sie wichtig? Kunststoffbeschichtungen sind dünne Schichten aus …"
+    }
+  ]
+}

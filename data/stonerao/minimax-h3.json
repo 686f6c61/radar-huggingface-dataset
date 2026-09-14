@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Stonerao/MiniMax-H3",
+  "slug": "stonerao-minimax-h3",
+  "author": "Stonerao",
+  "url": "https://huggingface.co/Stonerao/MiniMax-H3",
+  "created_at": "2026-09-14T17:21:23.000Z",
+  "updated_at": "2026-09-14T17:21:24.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 477493268531,
+  "storage_human": "477.5 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.de/intl/de/earth/",
+      "snippet": "Google Earth ist eine fotorealistische und digitale Version unseres Planeten. Woher kommen die Bilder? Wie sind sie …"
+    },
+    {
+      "title": "Google Merchant Center 的運作方式 - Google for Retail",
+      "url": "https://maps.google.de/intl/ALL_tw/retail/how-google-merchant-center-works/",
+      "snippet": "瞭解 Google Merchant Center 的運作方式。您可以設定帳戶來上傳及管理產品資訊，並在線上宣傳產品，開始觸及更多消費者。"
+    },
+    {
+      "title": "Transit – Google Maps",
+      "url": "https://maps.google.de/landing/transit/cities/index.html",
+      "snippet": "Home Cities Covered Cities Covered"
+    },
+    {
+      "title": "解決方案 - Google for Retail",
+      "url": "https://maps.google.de/intl/ALL_tw/retail/solutions/",
+      "snippet": "在各項 Google 服務中觸及潛在客戶 每當潛在客戶搜尋您販售的商品時，您都可以向他們展示自家產品。我們的廣告解決方案可以在各 …"
+    },
+    {
+      "title": "P-MAX で小売店の売上アップ - Google Maps",
+      "url": "https://maps.google.de/intl/ALL_jp/retail/solutions/performance-max/",
+      "snippet": "P-MAX キャンペーン 今日の生活者は、必要なものを見つけるために、オンラインやオフラインでこれまで以上に多くの場所を訪れ …"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Kuntal090/qwen1.5-1.8b-pharma-stage2-adapter-instruct",
+  "slug": "kuntal090-qwen1-5-1-8b-pharma-stage2-adapter-instruct",
+  "author": "Kuntal090",
+  "url": "https://huggingface.co/Kuntal090/qwen1.5-1.8b-pharma-stage2-adapter-instruct",
+  "created_at": "2026-09-14T12:46:13.000Z",
+  "updated_at": "2026-09-14T12:52:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1836828672,
+  "parameters_human": "1.84B",
+  "storage_bytes": 3687097688,
+  "storage_human": "3.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

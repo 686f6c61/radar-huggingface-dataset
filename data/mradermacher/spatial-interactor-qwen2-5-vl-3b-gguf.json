@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Spatial-Interactor-Qwen2.5-VL-3B-GGUF",
+  "slug": "mradermacher-spatial-interactor-qwen2-5-vl-3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Spatial-Interactor-Qwen2.5-VL-3B-GGUF",
+  "created_at": "2026-09-14T12:52:27.000Z",
+  "updated_at": "2026-09-14T13:12:06.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "vision-language",
+    "video",
+    "spatial-reasoning",
+    "embodied-ai",
+    "qwen",
+    "en",
+    "base_model:kagakouko/Spatial-Interactor-Qwen2.5-VL-3B",
+    "base_model:quantized:kagakouko/Spatial-Interactor-Qwen2.5-VL-3B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3397103616,
+  "parameters_human": "3.40B",
+  "storage_bytes": 32781700928,
+  "storage_human": "32.8 GB",
+  "base_model": "kagakouko/Spatial-Interactor-Qwen2.5-VL-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Parc Montsouris - Ville de Paris",
+      "url": "https://www.paris.fr/lieux/parc-montsouris-1810",
+      "snippet": "Le parc Montsouris est le lieu de détente favori des étudiants de la Cité Universitaire voisine, qui profitent dès les beaux jours des …"
+    },
+    {
+      "title": "Parc Montsouris — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Parc_Montsouris",
+      "snippet": "Le parc Montsouris est un jardin public situé dans le quartier du même nom, dans le sud de Paris, dans le 14e arrondissement. …"
+    },
+    {
+      "title": "Parc Montsouris - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Parc_Montsouris",
+      "snippet": "Parc Montsouris (French pronunciation: [paʁk mɔ̃suʁi]; English: Montsouris Park) is a public park situated in southern Paris, France. …"
+    },
+    {
+      "title": "Le parc Montsouris : l’endroit idéal pour regarder - Ville de Paris",
+      "url": "https://www.paris.fr/pages/le-parc-montsouris-l-endroit-ideal-pour-regarder-les-etoiles-35583",
+      "snippet": "Jul 30, 2026 · Point culminant de la rive gauche, ce parc vallonné et peuplé d’arbres remarquables accueille également l’Association …"
+    },
+    {
+      "title": "Les accès au Parc Montsouris : itinéraires et stations à proximité",
+      "url": "https://www.bonjour-ratp.fr/lieux/parc-montsouris/",
+      "snippet": "Découvrez les accès au Parc Montsouris et planifiez votre itinéraire en métro, RER, bus ou tram. Stations à proximité et infos pratiques."
+    }
+  ]
+}

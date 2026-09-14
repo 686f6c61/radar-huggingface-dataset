@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_basis_remove50_swapdiscnet_b010_r06",
+  "slug": "jeesup-svd-safety-l2_basis_remove50_swapdiscnet_b010_r06",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_basis_remove50_swapdiscnet_b010_r06",
+  "created_at": "2026-09-14T15:05:12.000Z",
+  "updated_at": "2026-09-14T15:06:14.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign in to your Zoho One Account",
+      "url": "https://www.zoho.com/one/login.html",
+      "snippet": "Sign in to access your apps. Manage org level info into customized tabs and get easy access to all your admin level needs with the …"
+    },
+    {
+      "title": "Zoho One | The Operating System for Business",
+      "url": "https://www.zoho.com/one/",
+      "snippet": "Zoho One helps growing businesses win more customers, manage their employees, track their finances, and holistically handle their …"
+    },
+    {
+      "title": "Introduction to Zoho One | Getting Started with Zoho One - Zoho One",
+      "url": "https://help.zoho.com/portal/en/kb/one/getting-started-with-zoho-one/zoho-one-web-app/articles/introduction-to-zoho-one",
+      "snippet": "Go through this guide to understand how you can set up your Zoho One organization, and manage your business efficiently."
+    },
+    {
+      "title": "Set up Zoho One | Getting Started with Zoho One - Zoho One",
+      "url": "https://help.zoho.com/portal/en/kb/one/getting-started-with-zoho-one/zoho-one-web-app/articles/set-up-zoho-one",
+      "snippet": "Go through this guide to understand how you can set up your Zoho One organization, and manage your business efficiently."
+    },
+    {
+      "title": "Zoho",
+      "url": "https://start.zoho.com/app",
+      "snippet": "Zoho offers a suite of business applications, including email services, to enhance productivity and streamline operations for …"
+    }
+  ]
+}

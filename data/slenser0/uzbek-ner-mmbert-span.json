@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Slenser0/uzbek-ner-mmbert-span",
+  "slug": "slenser0-uzbek-ner-mmbert-span",
+  "author": "Slenser0",
+  "url": "https://huggingface.co/Slenser0/uzbek-ner-mmbert-span",
+  "created_at": "2026-09-14T17:38:59.000Z",
+  "updated_at": "2026-09-14T17:39:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "uz"
+  ],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "pytorch",
+    "named-entity-recognition",
+    "ner",
+    "uzbek",
+    "cyrillic",
+    "latin",
+    "span-classification",
+    "biaffine",
+    "mmbert",
+    "token-classification",
+    "uz",
+    "arxiv:2509.06888",
+    "base_model:jhu-clsp/mmBERT-base",
+    "base_model:finetune:jhu-clsp/mmBERT-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 307597608,
+  "parameters_human": "307.6M",
+  "storage_bytes": 1264768420,
+  "storage_human": "1.3 GB",
+  "base_model": "jhu-clsp/mmBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.com/?hl=fr",
+      "snippet": "Le service gratuit de Google traduit des mots, expressions et pages Web entre le français et plus de 100 autres langues …"
+    },
+    {
+      "title": "Google Traduction : un interprète personnel sur votre téléphone ou ...",
+      "url": "https://translate.google.com/intl/fr/about/",
+      "snippet": "Découvrez comment traduire du texte, des conversations, des images, des documents, des sites Web et bien plus avec Google …"
+    },
+    {
+      "title": "El Traductor de Google: un intérprete personal en tu teléfono u …",
+      "url": "https://translate.google.com/intl/es/about/",
+      "snippet": "Descubre cómo traducir texto, voz, imágenes, documentos, sitios web y más con el Traductor de Google."
+    },
+    {
+      "title": "Google Traduction : un interprète personnel sur votre téléphone ou ...",
+      "url": "https://translate.google.com/intl/fr-CA/about/",
+      "snippet": "Comprenez votre monde et communiquez dans plusieurs langues avec Google Traduction. Traduisez des textes, des discours, des …"
+    }
+  ]
+}

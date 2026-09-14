@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "jasort/gsat-natural-qwen2.5-1.5b",
+  "slug": "jasort-gsat-natural-qwen2-5-1-5b",
+  "author": "jasort",
+  "url": "https://huggingface.co/jasort/gsat-natural-qwen2.5-1.5b",
+  "created_at": "2026-09-14T11:12:14.000Z",
+  "updated_at": "2026-09-14T11:12:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "qwen2.5",
+    "taiwan",
+    "gsat",
+    "science",
+    "unsloth",
+    "lora",
+    "text-generation",
+    "conversational",
+    "zh",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889310,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dateien zwischen Ihrem Computer und Ihrem Pixel übertragen",
+      "url": "https://support.google.com/pixelphone/answer/2840804?hl=de",
+      "snippet": "Sie können Fotos, Musik und andere Dateien von Ihrem Computer auf Ihr Android-Gerät übertragen – entweder über Ihr Google …"
+    },
+    {
+      "title": "Google Earth Pro installieren und deinstallieren",
+      "url": "https://support.google.com/earth/answer/21955?hl=de",
+      "snippet": "Wichtig: Damit Sie Google Earth Pro und die zugehörigen Funktionen nutzen können, benötigen Sie eine der folgenden Versionen: …"
+    },
+    {
+      "title": "Билды и гайды для лиги Спуск - [3.5][Все классы]25 Билдов!",
+      "url": "https://ru.pathofexile.com/forum/view-thread/39308",
+      "snippet": "Dec 5, 2018 · Path of Exile - лучшая бесплатная игра в жанре Action RPG. Мрачный мир, глубокая и сложная система прокачки …"
+    },
+    {
+      "title": "Path of Exile",
+      "url": "https://ru.pathofexile.com/item-filter/ladder/follower",
+      "snippet": "Path of Exile - лучшая бесплатная игра в жанре Action RPG. Мрачный мир, глубокая и сложная система прокачки персонажа, …"
+    },
+    {
+      "title": "Funktion „Bild im Bild“ auf Mobilgeräten verwenden",
+      "url": "https://support.google.com/youtube/answer/7552722?hl=de&co=GENIE.Platform%3DAndroid",
+      "snippet": "Funktion „Bild im Bild“ auf Mobilgeräten verwenden Mit der Bild-im-Bild-Funktion (BiB) kannst du ein Video in einem kleinen Player …"
+    }
+  ]
+}

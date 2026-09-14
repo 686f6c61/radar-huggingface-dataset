@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "alvinsetiawan/coca-experiment12-2024",
+  "slug": "alvinsetiawan-coca-experiment12-2024",
+  "author": "alvinsetiawan",
+  "url": "https://huggingface.co/alvinsetiawan/coca-experiment12-2024",
+  "created_at": "2026-09-14T15:08:09.000Z",
+  "updated_at": "2026-09-14T15:08:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Forum 18 - Russia - Page 1 of 50",
+      "url": "https://www.forum18.org/archive.php?country=10",
+      "snippet": "28 July 2026 RUSSIA: Court challenges to denials of alternative service often fail Three Pentecostal conscientious objectors in …"
+    },
+    {
+      "title": "Forum 18",
+      "url": "https://forum18.org/",
+      "snippet": "5 days ago · 18 August 2026 BELARUS: Criminal cases against exiled religious freedom defenders Police launched criminal cases …"
+    },
+    {
+      "title": "Forum 18: OCCUPIED UKRAINE: Protestant woman on trial for …",
+      "url": "https://www.forum18.org/archive.php?article_id=2908",
+      "snippet": "In early 2024, Russian occupation forces arrested a Protestant in her fifties for participating in a July 2023 prayer meeting in the …"
+    },
+    {
+      "title": "Forum 18 - Ukraine - Page 2 of 12",
+      "url": "https://forum18.org/archive.php?country=88&page=2",
+      "snippet": "11 June 2025 OCCUPIED UKRAINE: \"Bishop says no\" on Ukrainian Orthodox entities The Russian-controlled Justice Department …"
+    },
+    {
+      "title": "Forum 18: TAJIKISTAN: Secret Supreme Court hearing bans Jehovah's ...",
+      "url": "https://www.forum18.org/archive.php?article_id=2860",
+      "snippet": "Apr 14, 2022 · At the instigation of the General Prosecutor, a secret Supreme Court hearing in Dushanbe on 29 March 2021 banned …"
+    }
+  ]
+}

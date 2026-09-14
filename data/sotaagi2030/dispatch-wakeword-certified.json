@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "SOTAagi2030/Dispatch-Wakeword-Certified",
+  "slug": "sotaagi2030-dispatch-wakeword-certified",
+  "author": "SOTAagi2030",
+  "url": "https://huggingface.co/SOTAagi2030/Dispatch-Wakeword-Certified",
+  "created_at": "2026-09-14T15:09:18.000Z",
+  "updated_at": "2026-09-14T15:09:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tflite",
+    "keyword-spotting",
+    "emergency-dispatch",
+    "audio-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 64,
+  "storage_human": "64 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "这个网址是potplayer官网吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/509011663",
+      "snippet": "Feb 21, 2022 · ———————————————— 为了让更多人能搜到这个帖子，做点SEO。 PotPlayer是什么？PotPlayer怎么下 …"
+    },
+    {
+      "title": "Anton Ziegler - Spielerprofil | Transfermarkt",
+      "url": "https://www.transfermarkt.de/anton-ziegler/profil/spieler/821441",
+      "snippet": "Sep 18, 2003 · Anton Ziegler, 22, aus Deutschland TSC Zweibrücken, seit 2026 Rechtsaußen Marktwert: - * 18.09.2003 in ,"
+    },
+    {
+      "title": "黄雁捷Anton - 知乎",
+      "url": "https://www.zhihu.com/people/huang-yan-jie-anton",
+      "snippet": "May 18, 2026 · 各大回答就不要yy自作聪明了 三星退出中国市场只有一个原因，为这点芝麻绿豆点的生意犯不上！ 三星电子一季度净 …"
+    },
+    {
+      "title": "Anton Safonov - Spielerprofil | Transfermarkt",
+      "url": "https://www.transfermarkt.de/anton-safonov/profil/spieler/228376",
+      "snippet": "Sep 6, 1993 · Anton Safonov, 33, aus Russland TuS Brake, seit 2021 Rechter Verteidiger Marktwert: - * 06.09.1993 in Novotroitsk, …"
+    },
+    {
+      "title": "Anton Kollmeier - Spielerprofil 26/27 | Transfermarkt",
+      "url": "https://www.transfermarkt.de/anton-kollmeier/profil/spieler/1084162",
+      "snippet": "Feb 15, 2008 · Anton Kollmeier, 18, aus Deutschland FC St. Pauli U19, seit 2026 Torwart Marktwert: - * 15.02.2008 in , Deutschland"
+    }
+  ]
+}

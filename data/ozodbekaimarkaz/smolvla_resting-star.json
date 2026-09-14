@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "OzodbekAImarkaz/smolvla_resting-star",
+  "slug": "ozodbekaimarkaz-smolvla_resting-star",
+  "author": "OzodbekAImarkaz",
+  "url": "https://huggingface.co/OzodbekAImarkaz/smolvla_resting-star",
+  "created_at": "2026-09-14T12:40:30.000Z",
+  "updated_at": "2026-09-14T12:40:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:OzodbekAImarkaz/resting-star_20260906_134338",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906725720,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Meet: Online Web and Video Conferencing Calls | Google …",
+      "url": "https://apps.google.com/meet/?hl=ro-ro",
+      "snippet": "Google Meet supports a variety of hardware from leading manufacturers to bring great video conferencing experiences to your …"
+    },
+    {
+      "title": "Google Meet: 온라인 웹 및 화상 회의 통화 | Google Workspace",
+      "url": "https://apps.google.com/intl/ro/intl/ko_ALL/meet/pricing/",
+      "snippet": "Google Workspace에서 제공하는 Google Meet을 사용해 안전하게 온라인에서 웹 다자간 통화 및 영상 채팅을 사용하세요."
+    },
+    {
+      "title": "Google Meet : conférences téléphoniques sur le Web et …",
+      "url": "https://apps.google.com/intl/tr/intl/fr_ALL/meet/how-it-works/",
+      "snippet": "Utilisez Google Meet dans Google Workspace pour participer à des conférences téléphoniques sur le Web et des chats vidéo en …"
+    },
+    {
+      "title": "Google Meet: videoconferências e ligações na Web | Google Workspace",
+      "url": "https://apps.google.com/intl/mr/intl/pt-BR_ALL/meet/pricing/",
+      "snippet": "Use o Google Meet que integra o Workspace para fazer conferências e chats por vídeo seguros na Web."
+    },
+    {
+      "title": "Google Meet : conférences téléphoniques et vidéoconférences en ligne ...",
+      "url": "https://apps.google.com/intl/de/intl/fr_ca/meet/",
+      "snippet": "Utilisez Google Meet pour participer à des conférences téléphoniques et à des clavardages vidéo sécuritaires en ligne dans le cadre …"
+    }
+  ]
+}

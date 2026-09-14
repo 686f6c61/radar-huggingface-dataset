@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "neemon/anlp-a2-part1-moe_shared",
+  "slug": "neemon-anlp-a2-part1-moe_shared",
+  "author": "neemon",
+  "url": "https://huggingface.co/neemon/anlp-a2-part1-moe_shared",
+  "created_at": "2026-09-14T10:41:39.000Z",
+  "updated_at": "2026-09-14T10:42:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "vi",
+    "ja"
+  ],
+  "tags": [
+    "pytorch",
+    "mixture-of-experts",
+    "translation",
+    "from-scratch",
+    "en",
+    "vi",
+    "ja",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 166487166,
+  "storage_human": "166 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WeTransfer | Send Large Files Fast",
+      "url": "https://wetransfer.com/?msockid=065bb3042c7164e30648a4d02d80650e",
+      "snippet": "The simple, quick and secure way to send your files around the world without an account. Share your files, photos, and videos today …"
+    },
+    {
+      "title": "Send files free, no installs needed - WeTransfer",
+      "url": "https://wetransfer.com/resources/free-file-transfer?msockid=065bb3042c7164e30648a4d02d80650e",
+      "snippet": "A free WeTransfer account is all you need to start sending. Sign up takes seconds, and you can send photos, videos, PDFs, audio, …"
+    },
+    {
+      "title": "Log in - WeTransfer",
+      "url": "https://access.wetransfer.com/log-in",
+      "snippet": "Login to WeTransfer and start sending files easily and securely. Sign in to access your files from anywhere. Try WeTransfer today!"
+    },
+    {
+      "title": "File Transfers: The WeTransfer File Sharing Hub | WeTransfer",
+      "url": "https://wet.wetransfer.com/transfers",
+      "snippet": "Quickly and securely transfer files with our easy-to-use platform. Send files of any size, anytime, anywhere with WeTransfer's reliable …"
+    },
+    {
+      "title": "Send with WeTransfer",
+      "url": "https://we.tl/send/en",
+      "snippet": "Send with WeTransfer Send with WeTransfer"
+    }
+  ]
+}

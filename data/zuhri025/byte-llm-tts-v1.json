@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "zuhri025/byte-llm-tts-v1",
+  "slug": "zuhri025-byte-llm-tts-v1",
+  "author": "zuhri025",
+  "url": "https://huggingface.co/zuhri025/byte-llm-tts-v1",
+  "created_at": "2026-09-14T15:10:23.000Z",
+  "updated_at": "2026-09-14T16:35:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "safetensors",
+    "byte-level",
+    "tts",
+    "qwen3",
+    "english",
+    "urdu",
+    "kanade",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 918176049,
+  "storage_human": "918 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

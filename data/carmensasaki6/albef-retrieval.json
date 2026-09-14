@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "carmensasaki6/albef-retrieval",
+  "slug": "carmensasaki6-albef-retrieval",
+  "author": "carmensasaki6",
+  "url": "https://huggingface.co/carmensasaki6/albef-retrieval",
+  "created_at": "2026-09-14T14:17:49.000Z",
+  "updated_at": "2026-09-14T14:17:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Log in to Roblox",
+      "url": "https://www.roblox.com/Login",
+      "snippet": "©2026 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered …"
+    },
+    {
+      "title": "Roblox",
+      "url": "https://www.roblox.com/",
+      "snippet": "Roblox is the ultimate virtual universe that lets you create, share experiences with friends, and be anything you can imagine. Join …"
+    },
+    {
+      "title": "Developer Forum | Roblox",
+      "url": "https://devforum.roblox.com/",
+      "snippet": "Chat with other creators, learn about Roblox platform updates, and report issues with the platform."
+    },
+    {
+      "title": "ForgeGUI - AI Roblox Scripting Tool Feature",
+      "url": "https://devforum.roblox.com/t/forgegui-ai-roblox-scripting-tool-feature/4734535",
+      "snippet": "Jul 13, 2026 · Hey Yall devs 👋 ForgeGUI’s AI scripting tool is a Roblox Studio plugin that turns plain-English descriptions into working …"
+    },
+    {
+      "title": "Contact Us – Roblox Support",
+      "url": "https://en.help.roblox.com/hc/en-us/articles/208448546-Contact-Us",
+      "snippet": "Roblox Customer Support team assists with Billing and Account issue related questions. Make sure to check our Roblox Help Articles …"
+    }
+  ]
+}

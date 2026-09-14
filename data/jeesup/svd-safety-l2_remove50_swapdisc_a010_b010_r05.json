@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove50_swapdisc_a010_b010_r05",
+  "slug": "jeesup-svd-safety-l2_remove50_swapdisc_a010_b010_r05",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapdisc_a010_b010_r05",
+  "created_at": "2026-09-14T16:50:05.000Z",
+  "updated_at": "2026-09-14T17:00:13.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Balkonkraftwerke & Photovoltaik | Alpha Solar Shop",
+      "url": "https://alpha-solar.shop/",
+      "snippet": "Photovoltaik-Shop in Hallbergmoos: Balkonkraftwerke, Wechselrichter & Batteriespeicher. Persönliche Beratung, Selbstabholung …"
+    },
+    {
+      "title": "Home - Solarmoos GmbH",
+      "url": "https://solarmoos.de/",
+      "snippet": "Solarmoos ist Ihr zuverlässiger Partner für Photovoltaik-Komplettlösungen in Hallbergmoos und Umgebung. Wir bieten …"
+    },
+    {
+      "title": "RT Photovoltaik Hallbergmoos",
+      "url": "https://rt-photovoltaik.de/photovoltaik-hallbergmoos/",
+      "snippet": "Viele Bundesländer und Kommunen bieten zusätzliche Förderprogramme für Photovoltaikanlagen in Hallbergmoos an. Diese …"
+    },
+    {
+      "title": "Photovoltaik Hallbergmoos | MS-Solar24",
+      "url": "https://ms-solar24.de/standorte/hallbergmoos",
+      "snippet": "Ob Einfamilienhaus, Mehrfamilienhaus oder Gewerbebetrieb – wir bieten Ihnen in Hallbergmoos das komplette Leistungsspektrum …"
+    },
+    {
+      "title": "Serro Solarmontage - PV-Montageservice Hallbergmoos",
+      "url": "https://serro-solarmontage.de/",
+      "snippet": "Als Ihr regionaler Partner aus Hallbergmoos realisieren wir hochwertige Photovoltaikanlagen – zuverlässig, fair und mit der ganzen …"
+    }
+  ]
+}

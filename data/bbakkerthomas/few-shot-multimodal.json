@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "bbakkerthomas/few-shot-multimodal",
+  "slug": "bbakkerthomas-few-shot-multimodal",
+  "author": "bbakkerthomas",
+  "url": "https://huggingface.co/bbakkerthomas/few-shot-multimodal",
+  "created_at": "2026-09-14T12:33:12.000Z",
+  "updated_at": "2026-09-14T12:33:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "few-shot-multimodal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate Help",
+      "url": "https://support.google.com/translate/?hl=en",
+      "snippet": "Official Google Translate Help Center where you can find tips and tutorials on using Google Translate and other answers to …"
+    },
+    {
+      "title": "Download & use Google Translate",
+      "url": "https://support.google.com/translate/answer/6350850?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can translate text, handwriting, photos, and speech in over 200 languages with the Google Translate app. You can also use …"
+    },
+    {
+      "title": "Google API Key for translation - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/4854388/google-api-key-for-translation",
+      "snippet": "Jan 31, 2011 · Upload the Google Translate API key to your site. Check with your hosting company where on your system to place …"
+    },
+    {
+      "title": "Translate website to any specific language, on page load",
+      "url": "https://stackoverflow.com/questions/13030153/translate-website-to-any-specific-language-on-page-load",
+      "snippet": "Sep 11, 2019 · From Google Translate Help: To create a link that automatically translates your Website Translator-enabled page …"
+    },
+    {
+      "title": "Télécharger et utiliser Google Traduction",
+      "url": "https://support.google.com/translate/answer/6350850?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Télécharger et utiliser Google Traduction Vous pouvez traduire du texte saisi au clavier, en écriture manuscrite, sur une photo ou …"
+    }
+  ]
+}

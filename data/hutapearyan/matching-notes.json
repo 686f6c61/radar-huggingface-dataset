@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Hutapearyan/matching-notes",
+  "slug": "hutapearyan-matching-notes",
+  "author": "Hutapearyan",
+  "url": "https://huggingface.co/Hutapearyan/matching-notes",
+  "created_at": "2026-09-14T15:25:38.000Z",
+  "updated_at": "2026-09-14T15:25:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lidl, ça vaut le coup. En supermarché et en ligne.",
+      "url": "https://www.lidl.fr/",
+      "snippet": "Dans votre boutique en ligne LIDL, vous trouverez les dernières offres sur l'ensemble de nos produits : mode, bricolage & jardinage, …"
+    },
+    {
+      "title": "Supermarchés Lidl en France",
+      "url": "https://www.lidl.fr/s/fr-FR/supermarches/",
+      "snippet": "Trouver les offres et prospectus du supermarché Lidl le plus proche."
+    },
+    {
+      "title": "Αναζήτηση Καταστημάτων - Lidl Hellas",
+      "url": "https://www.lidl-hellas.gr/c/anazitisi-katastimaton/s10032288",
+      "snippet": "Αναζήτηση & ωράριο καταστημάτων Πληκτρολογήστε τον ταχυδρομικό σας κώδικα στο πλαίσιο και κάντε κλικ στο πλησιέστερο …"
+    },
+    {
+      "title": "Καταστήματα Lidl στην Ελλάδα",
+      "url": "https://www.lidl-hellas.gr/s/el-GR/anazitisi-katastimaton/",
+      "snippet": "Βρες το Lidl κατάστημα σου γρήγορα και εύκολα μέσω της αναζήτησης καταστήματος ή πόλης. Βρες προσφορές και φυλλάδια για …"
+    },
+    {
+      "title": "Lidl autour de moi : trouvez un magasin proche rapidement",
+      "url": "https://www.telephone.city/enseigne/lidl/",
+      "snippet": "Vous cherchez un Lidl autour de vous ? Accédez en quelques secondes aux magasins Lidl proches, avec leurs horaires, leur …"
+    }
+  ]
+}

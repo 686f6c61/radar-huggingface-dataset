@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Alumin-Hydro/Gewu-Base-W8A16",
+  "slug": "alumin-hydro-gewu-base-w8a16",
+  "author": "Alumin-Hydro",
+  "url": "https://huggingface.co/Alumin-Hydro/Gewu-Base-W8A16",
+  "created_at": "2026-09-14T17:11:47.000Z",
+  "updated_at": "2026-09-14T17:17:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "physics",
+    "quantized",
+    "gptq",
+    "compressed-tensors",
+    "w8a16",
+    "vllm",
+    "text-generation",
+    "conversational",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 11117304845,
+  "storage_human": "11.1 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Ex-Flight Attendant Who Scored Hundreds Of Free ...",
+      "url": "https://simpleflying.com/flight-attendant-pilot-free-flights-scam/",
+      "snippet": "On Thursday August 6, 2026, Dallas Pokornik, 34, a former Flight Attendant, pleaded guilty in US District Court in Hawaii to wire …"
+    },
+    {
+      "title": "Former flight attendant pleads guilty to fraud after posing as pilot",
+      "url": "https://www.usatoday.com/story/travel/airline-news/2026/08/13/former-flight-attendant-posed-as-pilot-fraud/91285795007/",
+      "snippet": "Aug 13, 2026 · A former flight attendant pleaded guilty to wire fraud after posing as a commercial pilot to get hundreds of free flights. …"
+    },
+    {
+      "title": "Flight attendant caught posing as pilot for free flights- AeroTime",
+      "url": "https://www.aerotime.aero/articles/former-flight-attendant-pleads-guilty-to-posing-as-pilot-for-free-flights",
+      "snippet": "Aug 12, 2026 · A former Toronto flight attendant has pleaded guilty to wire fraud after using a fake pilot ID to obtain hundreds of free …"
+    },
+    {
+      "title": "How a former flight attendant posing as a pilot got free flights ...",
+      "url": "https://www.cbc.ca/news/world/dallas-pokornik-guilty-plea-9.7301711",
+      "snippet": "Aug 10, 2026 · A former flight attendant from Toronto has pleaded guilty in U.S. federal court in connection with a fraud scheme …"
+    },
+    {
+      "title": "Toronto flight attendant pleads guilty to posing as airline pilot ...",
+      "url": "https://www.torontotoday.ca/local/crime-emergency-services/toronto-flight-attendant-pleads-guilty-to-posing-as-airline-pilot-for-free-flights-12646086",
+      "snippet": "Aug 10, 2026 · A former Toronto flight attendant has pleaded guilty to posing as an airline pilot in order to gain hundreds of free …"
+    }
+  ]
+}

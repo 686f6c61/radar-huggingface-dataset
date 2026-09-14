@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "aspect-ratio-scaling/lns-lr2e-3-llama-400M-L32-pretrain",
+  "slug": "aspect-ratio-scaling-lns-lr2e-3-llama-400m-l32-pretrain",
+  "author": "aspect-ratio-scaling",
+  "url": "https://huggingface.co/aspect-ratio-scaling/lns-lr2e-3-llama-400M-L32-pretrain",
+  "created_at": "2026-09-14T13:50:25.000Z",
+  "updated_at": "2026-09-14T13:51:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "olmo-core",
+  "languages": [],
+  "tags": [
+    "olmo-core",
+    "causal-lm",
+    "raw-checkpoint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4803734561,
+  "storage_human": "4.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définitions : aspect - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/aspect/5705",
+      "snippet": "aspect - Définitions Français : Retrouvez la définition de aspect, ainsi que les synonymes, difficultés... - synonymes, homonymes, …"
+    },
+    {
+      "title": "aspect - Définitions, synonymes, prononciation, exemples | Dico en ...",
+      "url": "https://dictionnaire.lerobert.com/definition/aspect",
+      "snippet": "On peut faire son choix sur le site internet, qui permet de visualiser en direct l'aspect du futur sac. Ouest-France, Matthieu MARIN, …"
+    },
+    {
+      "title": "Aspect — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Aspect",
+      "snippet": "Le mot aspect, issu du latin aspectus (« regard, vue, vision » mais aussi « qui est vu, aspect ») est un nom désignant, dans la langue …"
+    },
+    {
+      "title": "aspect — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/aspect",
+      "snippet": "Manière dont une personne ou un objet s’ offre à la vue. La plupart des montagnes de Walachie sont garnies de bois composés de …"
+    },
+    {
+      "title": "Définition de aspect | Dictionnaire français",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/aspect",
+      "snippet": "Feb 4, 2024 · Perception mentale ou manière dont une idée, une situation se manifeste à l'esprit. Ensemble des caractéristiques …"
+    }
+  ]
+}

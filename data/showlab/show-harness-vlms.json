@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "showlab/Show-Harness-VLMs",
+  "slug": "showlab-show-harness-vlms",
+  "author": "showlab",
+  "url": "https://huggingface.co/showlab/Show-Harness-VLMs",
+  "created_at": "2026-09-01T06:12:39.000Z",
+  "updated_at": "2026-09-10T02:03:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "robotics",
+    "agent",
+    "embodied-ai",
+    "manipulation",
+    "image-text-to-text",
+    "arxiv:2609.10522",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 0,
+  "trending_score": 9,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1325252215,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Personalshop | Markenartikel zu Bestpreisen",
+      "url": "https://de.personalshop.com/",
+      "snippet": "Personalshop bietet einem ausgewählten Kundenkreis Top-Marken wie Benetton, Chiemsee, Dachstein, Nordcap, Stubai und viele …"
+    },
+    {
+      "title": "GitHub - showlab/Show-Harness: Just a VLM Agent Can Play Robots · GitHub",
+      "url": "https://github.com/showlab/Show-Harness",
+      "snippet": "The demonstrations they were trained on are at showlab/Show-Harness-Data (real Franka/Piper rollouts plus RoboLab and ManiSkill). Fetch an adapter with the base model it needs, serve it, drive the robot: # 1) fetch the adapter together with the base model it needs ADAPTER=qwen3_5_2b WITH_BASE=1 bash scripts/model/download_vlm_model.sh # 2) serve it — the script activates .venv-vllm itself MODEL=Qwen/Qwen3.5-2B \\ LORA=qwen3_5_2b_showharness_ft=models/Show-Harness-VLMs/qwen3_5_2b \\ FAMILY=qwen3_5 bash scripts/serve_vlm.sh # 3) drive the robot python scripts/run_real_mvtoken.py --robot-config configs/robot_franka_ft.yaml"
+    },
+    {
+      "title": "Flugblätter - Personalshop",
+      "url": "https://de.personalshop.com/katalog-de/DE-Flug/",
+      "snippet": "Blätterkatalog.de ist die Lösung für Digitales Publishing. Der Blätterkatalog benötigt Javascript. Bitte aktivieren Sie Javascript in Ihren …"
+    },
+    {
+      "title": "Blätterkatalog - Personalshop",
+      "url": "https://de.personalshop.com/katalog-de/",
+      "snippet": "Blätterkatalog.de ist die Lösung für Digitales Publishing. Der Blätterkatalog benötigt Javascript. Bitte aktivieren Sie Javascript in Ihren …"
+    },
+    {
+      "title": "Personalshop Online Katalog",
+      "url": "https://de.personalshop.com/katalog-de/DE-Flug-Ende/infoseite.html",
+      "snippet": "Schon fertig geblättert? Hier geht es zurück zum aktuellen Katalog!"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "WhiteHades/manga-ocr-browser",
+  "slug": "whitehades-manga-ocr-browser",
+  "author": "WhiteHades",
+  "url": "https://huggingface.co/WhiteHades/manga-ocr-browser",
+  "created_at": "2026-09-14T13:49:28.000Z",
+  "updated_at": "2026-09-14T13:51:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "onnx",
+    "ocr",
+    "manga",
+    "quantized",
+    "ja",
+    "base_model:kha-white/manga-ocr-base",
+    "base_model:finetune:kha-white/manga-ocr-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 95465667,
+  "storage_human": "95 MB",
+  "base_model": "kha-white/manga-ocr-base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DHMZ - Državni hidrometeorološki zavod",
+      "url": "https://meteo.hr/",
+      "snippet": "Vrijeme u Hrvatskoj Automatske postaje Vrijeme u Europi Dnevne ekstremne temperature Meteorološko-oceanografske plutače …"
+    },
+    {
+      "title": "Prognoza po satu za Split, Splitsko-dalmatinska, Hrvatska | AccuWeather",
+      "url": "https://www.accuweather.com/hr/hr/split/121161/hourly-weather-forecast/121161",
+      "snippet": "Hourly weather forecast in Split, Splitsko-dalmatinska, Hrvatska. Check current conditions in Split, Splitsko-dalmatinska, Hrvatska …"
+    },
+    {
+      "title": "Vrijeme & Radar Hrvatska",
+      "url": "https://www.vrijemeradar.hr/",
+      "snippet": "Trenutno vrijeme, vremenska prognoza za vaše mjesto - s vremenskim izvještajem, vremenskim trendom, radarom oborina i još …"
+    },
+    {
+      "title": "DHMZ - Državni hidrometeorološki zavod",
+      "url": "https://meteo.hr/prognoze.php?section=prognoze_model&param=7d",
+      "snippet": "O računalnim prognozama Prognoza vremena može biti subjektivna i objektivna. Subjektivne prognoze izrađuje meteorolog …"
+    },
+    {
+      "title": "Vrijeme u Hrvatskoj po satima — danas, sutra i 7 dana | VremeRadar",
+      "url": "https://vremeradar.com/hr",
+      "snippet": "Najtopliji grad je Dubrovnik sa 25°C, a najhladniji Osijek sa 19°C. VremeRadar prati vrijeme za 48 mjesta u Hrvatskoj sa ažuriranjem …"
+    }
+  ]
+}

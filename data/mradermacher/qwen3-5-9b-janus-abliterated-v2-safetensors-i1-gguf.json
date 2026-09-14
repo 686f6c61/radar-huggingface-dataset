@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.5-9B-Janus-Abliterated-V2-Safetensors-i1-GGUF",
+  "slug": "mradermacher-qwen3-5-9b-janus-abliterated-v2-safetensors-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.5-9B-Janus-Abliterated-V2-Safetensors-i1-GGUF",
+  "created_at": "2026-09-14T15:10:35.000Z",
+  "updated_at": "2026-09-14T16:26:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "Qwen3.5",
+    "janus",
+    "abliterated",
+    "merge",
+    "roleplay",
+    "uncensored",
+    "not-for-all-audiences",
+    "en",
+    "base_model:SOMEHOTMEAL/Qwen3.5-9B-Janus-Abliterated-V2-Safetensors",
+    "base_model:quantized:SOMEHOTMEAL/Qwen3.5-9B-Janus-Abliterated-V2-Safetensors",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8951812608,
+  "parameters_human": "8.95B",
+  "storage_bytes": 110181261184,
+  "storage_human": "110.2 GB",
+  "base_model": "SOMEHOTMEAL/Qwen3.5-9B-Janus-Abliterated-V2-Safetensors",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

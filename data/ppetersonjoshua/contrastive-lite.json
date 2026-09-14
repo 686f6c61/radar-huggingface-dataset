@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ppetersonjoshua/contrastive-lite",
+  "slug": "ppetersonjoshua-contrastive-lite",
+  "author": "ppetersonjoshua",
+  "url": "https://huggingface.co/ppetersonjoshua/contrastive-lite",
+  "created_at": "2026-09-14T17:07:07.000Z",
+  "updated_at": "2026-09-14T17:07:12.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Envois de plusieurs colis via leboncoin pour une meme vente",
+      "url": "https://forums.commentcamarche.net/forum/affich-37833401-envois-de-plusieurs-colis-via-leboncoin-pour-une-meme-vente",
+      "snippet": "Apr 20, 2023 · Hors quand j'imprime mon étiquette d'envois c'est écrit colis 1/1..... dois je imprimer 2 x l'étiquettes et en coller 1 sur …"
+    },
+    {
+      "title": "Impossible de publier sur Leboncoin - Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-37139351-impossible-de-publier-sur-leboncoin",
+      "snippet": "Mar 18, 2021 · Bonjour, Je n’arrive pas à publier mon annonce sur Leboncoin , je ne comprend pas le « motif » de refus : « Nous …"
+    },
+    {
+      "title": "informations-2017",
+      "url": "https://www.espagne-visite.com/fr/actualites-en-espagne/informations-2017.html",
+      "snippet": "Tremblements de terre à Cordoue et Malaga Décembre 2017 Pas moins de 2 tremblements de terre ont eu lieu dans ce vendredi 29 …"
+    },
+    {
+      "title": "Murcia et les alentours, mar menor et Carthagène",
+      "url": "https://www.espagne-visite.com/fr/les-guides-espagne/visite-de-murcia-costa-calida.html",
+      "snippet": "Carthagène possède 3000 ans d'histoire au coeur de son centre et des fortifications de l'ancienne ville Qart-Hadast fondée par …"
+    },
+    {
+      "title": "Non réception de code de validation leboncoin - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-37956474-non-reception-de-code-de-validation-leboncoin",
+      "snippet": "Dec 2, 2023 · Bonjour, je suis sur le bon coin depuis plusieurs années et jusque là, aucun souci.mais là, depuis ma dernière vente ( …"
+    }
+  ]
+}

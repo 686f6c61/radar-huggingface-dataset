@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-MXFP4-pr3118-validation",
+  "slug": "soyrsoyr-qwen3-8-27b-fp8dyn-mtp-mxfp4-pr3118-validation",
+  "author": "soyrsoyr",
+  "url": "https://huggingface.co/soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-MXFP4-pr3118-validation",
+  "created_at": "2026-09-14T16:38:56.000Z",
+  "updated_at": "2026-09-14T16:49:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "llm-compressor",
+    "compressed-tensors",
+    "mtp",
+    "pr3118-validation",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27134575616,
+  "parameters_human": "27.13B",
+  "storage_bytes": 35330053205,
+  "storage_human": "35.3 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OIA SANTORINI - Everything you need to know about Oia",
+      "url": "https://oiasantorini.gr/",
+      "snippet": "See everything you need to know about Oia Santorini. Top Oia hotels with BEST RATE GUARANTEE and other useful information …"
+    },
+    {
+      "title": "Santorini Paradise - Independent cave houses in Oia",
+      "url": "https://oiasantorini.gr/oia-hotels/santorini-paradise/",
+      "snippet": "Santorini Paradise consists of individual cave houses, situated in several locations in Oia village. You can chose to stay in a cave …"
+    },
+    {
+      "title": "Onar Villas - Luxury boutique hotel in Oia Santorini with Caldera view",
+      "url": "https://oiasantorini.gr/oia-hotels/onar-villas/",
+      "snippet": "Onar Villas is located in Oia Santorini, just before entering the village. It features hot tub and panoramic view of Santorini cliffs."
+    },
+    {
+      "title": "Oia Hotels - Discover top accommodations in Oia Santorini",
+      "url": "https://oiasantorini.gr/oia-hotels/",
+      "snippet": "Explore top Oia hotels on our website. Enjoy the amazing views, luxury and relax in hot tubs with volcano or sunset view."
+    },
+    {
+      "title": "Services - Oia Santorini",
+      "url": "https://oiasantorini.gr/services/",
+      "snippet": "santorini villas SERVICES #santorinivillas Welcome to our collection of Santorini villas and cave houses. Our website is a …"
+    }
+  ]
+}

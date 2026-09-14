@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jimbruges/ventuno-q-instant-camera-models",
+  "slug": "jimbruges-ventuno-q-instant-camera-models",
+  "author": "jimbruges",
+  "url": "https://huggingface.co/jimbruges/ventuno-q-instant-camera-models",
+  "created_at": "2026-09-14T11:16:21.000Z",
+  "updated_at": "2026-09-14T11:25:22.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "arduino",
+    "ventuno-q",
+    "qnn",
+    "qualcomm",
+    "stable-diffusion",
+    "instruct-pix2pix",
+    "ip-adapter",
+    "image-to-image",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3743508802,
+  "storage_human": "3.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "1908.nl - Altijd. Overal. Feyenoord - nieuws, transfers, uitslagen, video's",
+      "url": "https://1908.nl/",
+      "snippet": "1 day ago · Nieuws Transfers Opinie Exclusief Europees Jeugd Series Analyse Vrouwen Columns Podcasts Maasboulevard De …"
+    },
+    {
+      "title": "Wij zijn 1908.nl",
+      "url": "https://1908.nl/wij-zijn-1908nl",
+      "snippet": "Mar 6, 2026 · 1908.nl is een onafhankelijk supportersmedium dat zich richt op berichtgevingen over- en rondom Feyenoord. Wij …"
+    },
+    {
+      "title": "1908 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/1908",
+      "snippet": "February 12 – The first around-the-world car race, the 1908 New York to Paris Race, begins. February 29 – The State Normal and …"
+    },
+    {
+      "title": "Nieuws - 1908.nl",
+      "url": "https://1908.nl/artikelen/nieuws",
+      "snippet": "Het laatste nieuws over Feyenoord, inclusief transfers, uitslagen en video's, op één betrouwbaar platform."
+    },
+    {
+      "title": "Transfers - 1908.nl",
+      "url": "https://1908.nl/artikelen/transfers",
+      "snippet": "Sep 7, 2026 · Het laatste nieuws en updates over transfers bij Feyenoord, inclusief geruchten en bevestigde deals, allemaal op één …"
+    }
+  ]
+}

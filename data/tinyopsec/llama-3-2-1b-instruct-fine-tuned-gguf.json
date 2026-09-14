@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "tinyopsec/llama-3.2-1b-instruct-fine-tuned-GGUF",
+  "slug": "tinyopsec-llama-3-2-1b-instruct-fine-tuned-gguf",
+  "author": "tinyopsec",
+  "url": "https://huggingface.co/tinyopsec/llama-3.2-1b-instruct-fine-tuned-GGUF",
+  "created_at": "2026-09-14T10:51:19.000Z",
+  "updated_at": "2026-09-14T11:01:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama-3",
+    "quantized",
+    "text-generation",
+    "unsloth",
+    "trl",
+    "en",
+    "base_model:ai-nexuz/llama-3.2-1b-instruct-fine-tuned",
+    "base_model:quantized:ai-nexuz/llama-3.2-1b-instruct-fine-tuned",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1235814432,
+  "parameters_human": "1.24B",
+  "storage_bytes": 10855827648,
+  "storage_human": "10.9 GB",
+  "base_model": "ai-nexuz/llama-3.2-1b-instruct-fine-tuned",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Teams Blog | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/category/microsoftteams/blog/microsoftteamsblog",
+      "snippet": "Welcome to the Microsoft Teams Blog! Learn best practices, news, and trends directly from the team behind Microsoft Teams."
+    },
+    {
+      "title": "New Teams - Backgrounds Folder | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/discussions/microsoftteams/new-teams---backgrounds-folder/3960752",
+      "snippet": "Jun 28, 2020 · Recently, Microsoft released the new version of Teams for businesses, allowing the option to move end users to the …"
+    },
+    {
+      "title": "microsoft teams怎么加入会议-百度经验",
+      "url": "https://jingyan.baidu.com/article/e52e3615b3fabe01c60c51dd.html",
+      "snippet": "Jan 3, 2000 · microsoft teams怎么加入会议,创建完成会议后就可以把会议链接发给参会人员了，参会人员直接打开链接就可以加入了 …"
+    },
+    {
+      "title": "怎么使用Microsoft Teams-百度经验",
+      "url": "https://jingyan.baidu.com/article/00a07f380c970f82d028dc8b.html",
+      "snippet": "Feb 23, 2018 · 怎么使用Microsoft Teams,MicrooftTeam团队协作工具，里面可以公布活动，群组讨论、文件共享，而且还有丰富的表 …"
+    },
+    {
+      "title": "MY FIX!! MS TEAMS says I'm offline when I'm connected to my network ...",
+      "url": "https://techcommunity.microsoft.com/discussions/microsoftteams/my-fix-ms-teams-says-im-offline-when-im-connected-to-my-network-with-no-issues/3662105",
+      "snippet": "Oct 25, 2022 · My Teams on my laptop kept telling me I was \"offline\" even though I was connected with a strong signal to my wi-fi, I …"
+    }
+  ]
+}

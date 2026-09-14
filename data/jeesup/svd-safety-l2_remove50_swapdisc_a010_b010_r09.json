@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove50_swapdisc_a010_b010_r09",
+  "slug": "jeesup-svd-safety-l2_remove50_swapdisc_a010_b010_r09",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapdisc_a010_b010_r09",
+  "created_at": "2026-09-14T18:40:19.000Z",
+  "updated_at": "2026-09-14T19:03:01.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "使用 Microsoft Word 进行免费的在线文档编辑 | Microsoft 365",
+      "url": "https://www.microsoft.com/zh-cn/microsoft-365/word?msockid=2508339b38bc6f542041244f39d46e01",
+      "snippet": "使用 Microsoft Word 在线编辑文档，并使用 Copilot 提供的 AI 建议来改善语法、样式和清晰度。随时随地书写、编辑和协作。"
+    },
+    {
+      "title": "Bezpłatna platforma Microsoft 365 Online | Word, Excel, PowerPoint",
+      "url": "https://www.microsoft.com/pl-pl/microsoft-365/free-office-online-for-the-web?msockid=2508339b38bc6f542041244f39d46e01",
+      "snippet": "Platforma Microsoft 365 dla sieci Web pozwala edytować i udostępniać pliki programów Word, Excel, PowerPoint i OneNote na …"
+    },
+    {
+      "title": "Microsoft Word - Windows官方下载 | 微软应用商店 | Microsoft Store",
+      "url": "https://apps.microsoft.com/detail/xpff9ltfvsk6f7?hl=zh-CN&gl=CN",
+      "snippet": "Word文档 • 图像、表格、图表、SmartArt、脚注、公式等皆能完美呈现 • Word 文档和电脑上的一样精美 • 自动记忆功能让您可以在任 …"
+    },
+    {
+      "title": "Sign in to your account - admin.microsoft.com",
+      "url": "https://admin.microsoft.com/AdminPortal/Home",
+      "snippet": "Sign in to manage your Microsoft account and access all services securely."
+    },
+    {
+      "title": "Word help & learning | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/word/",
+      "snippet": "Get answers to all of your Microsoft Word questions. Find Word help, how-to articles, training videos, tutorials, and more."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "muhrivandysetiawan/Reinforce-Pixelcopter-PLE-v0",
+  "slug": "muhrivandysetiawan-reinforce-pixelcopter-ple-v0",
+  "author": "muhrivandysetiawan",
+  "url": "https://huggingface.co/muhrivandysetiawan/Reinforce-Pixelcopter-PLE-v0",
+  "created_at": "2026-09-14T15:19:39.000Z",
+  "updated_at": "2026-09-14T15:19:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Pixelcopter-PLE-v0",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40061,
+  "storage_human": "40061 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Farm to Table Bistro - Fine Dining Restaurant - Fishkill, NY",
+      "url": "https://www.ftbistro.com/",
+      "snippet": "We are Farm to Table Bistro located in Fishkill, NY. We source most of our ingredients from local farmers and creameries and use as …"
+    },
+    {
+      "title": "Farm to Table Bistro | Fishkill NY - Facebook",
+      "url": "https://www.facebook.com/ftbistro/",
+      "snippet": "Jul 24, 2026 · Farm to Table Bistro, Fishkill. 2,948 likes · 2 talking about this · 4,117 were here. A New-American Restaurant in …"
+    },
+    {
+      "title": "Farm to Table Bistro - Fishkill, NY | OpenTable",
+      "url": "https://www.opentable.com/r/farm-to-table-bistro-fishkill",
+      "snippet": "Get menu, photos and location information for Farm to Table Bistro in Fishkill, NY. Or book now at one of our other 8414 great …"
+    },
+    {
+      "title": "Farm To Table Bistro - Fishkill, NY",
+      "url": "https://www.yelp.com/biz/farm-to-table-bistro-fishkill?msockid=07918b7ae3d46f9937019caee22f6e9d",
+      "snippet": "We went on a Saturday night at 7:15 and the restaurant was half full which should have been a warning sign. I selected this place …"
+    },
+    {
+      "title": "Farm to Table Bistro, Fishkill - Menu, Reviews (230), Photos (68 ...",
+      "url": "https://www.restaurantji.com/ny/fishkill/farm-to-table-bistro-/",
+      "snippet": "Aug 16, 2026 · Latest reviews, photos and ratings for Farm to Table Bistro at 1083 US-9 in Fishkill - view the menu, hours, phone …"
+    }
+  ]
+}

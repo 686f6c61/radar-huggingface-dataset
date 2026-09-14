@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "prathamkode/particle-2.0",
+  "slug": "prathamkode-particle-2-0",
+  "author": "prathamkode",
+  "url": "https://huggingface.co/prathamkode/particle-2.0",
+  "created_at": "2026-09-14T12:16:00.000Z",
+  "updated_at": "2026-09-14T12:17:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "particle",
+    "conversational",
+    "en",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109529856,
+  "parameters_human": "109.5M",
+  "storage_bytes": 219071992,
+  "storage_human": "219 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "Welcome to the official YouTube channel – a home for the biggest moments, the smallest obsessions, and everything in between. …"
+    },
+    {
+      "title": "Home - YouTube",
+      "url": "https://www.youtube.com/@trending",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en-US",
+      "snippet": "Get the official YouTube app on Android phones and tablets. See what the world is watching -- from the hottest music videos to …"
+    },
+    {
+      "title": "YouTube - Google Play'de Uygulamalar",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=tr",
+      "snippet": "Android telefon ve tabletlerde resmi YouTube uygulamasını edinin. En popüler müzik videolarından oyun, moda, güzellik, haber, …"
+    }
+  ]
+}

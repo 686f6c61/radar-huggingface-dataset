@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "asfasdaa/MyAwesomeModel-TestRepo",
+  "slug": "asfasdaa-myawesomemodel-testrepo",
+  "author": "asfasdaa",
+  "url": "https://huggingface.co/asfasdaa/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-14T12:36:51.000Z",
+  "updated_at": "2026-09-14T12:36:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "شهر خبر - تیتر جدیدترین و آخرین اخبار ایران و جهان",
+      "url": "https://www.shahrekhabar.com/",
+      "snippet": "شهر خبر - سریعترین موتور جستجوگر خبر پارسی - اخبار لحظه به لحظه از معتبرترین خبرگزاری های پارسی زبان"
+    },
+    {
+      "title": "آخرین اخبار روز ایران و جهان ؛ خبرهای امروز | خبرگزاری تسنیم | Tasnim",
+      "url": "https://tasnimnews.ir/",
+      "snippet": "آخرین اخبار روز ایران و جهان ؛ خلاصه خبرهای امروز ایران را در خبرگزاری تسنیم بخوانید"
+    },
+    {
+      "title": "خبرگزاری خبرآنلاین - آخرین اخبار ایران و جهان | Khabaronline",
+      "url": "https://www.khabaronline.ir/",
+      "snippet": "به‌روزترین و جامع‌ترین اخبار ، تحلیل‌ و فیلم ها در حوزه سیاست ، اقتصاد ، فرهنگی ، اجتماعی ، سلامت ، بین الملل ، دانش و فناوری ، ورزش ، تاریخ ، دین و اندیشه را در خبر گزاری خبرآنلاین …"
+    },
+    {
+      "title": "خبر فوری - اخبار فوری و لحظه ای | در لحظه با خبر شوید",
+      "url": "https://www.khabarfoori.com/",
+      "snippet": "سایت و کانال خبر فوری,بزرگترین کانال خبری ایران و جهان ,اخبار مهم و رسمی از خبرگزاری معتبر,www.khabarfoori.com,http://www.khabarfoori.com"
+    },
+    {
+      "title": "أخبار عاجلة - اليوم السابع",
+      "url": "https://www.youm7.com/Section/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%B9%D8%A7%D8%AC%D9%84%D8%A9/65/1",
+      "snippet": "أخبار عاجلة يشمل قسم اخبار عاجلة كافة الاخبار المصرية والعالمية والعربية وكل ماهو جديد لحظة بلحظة ."
+    }
+  ]
+}

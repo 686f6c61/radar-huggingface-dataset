@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Aobangaming/lightning-60m",
+  "slug": "aobangaming-lightning-60m",
+  "author": "Aobangaming",
+  "url": "https://huggingface.co/Aobangaming/lightning-60m",
+  "created_at": "2026-09-14T13:46:15.000Z",
+  "updated_at": "2026-09-14T13:55:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lightning",
+    "text-generation",
+    "conversational",
+    "generative",
+    "custom_code",
+    "en",
+    "dataset:kmfoda/booksum",
+    "arxiv:1910.09700",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 64834560,
+  "parameters_human": "64.8M",
+  "storage_bytes": 259349352,
+  "storage_human": "259 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "International leader in nuclear energy - Framatome",
+      "url": "https://www.framatome.com/en/",
+      "snippet": "Jul 17, 2026 · Framatome’s teams design and build nuclear power plants, present at every stage of the process on all types of reactor …"
+    },
+    {
+      "title": "International leader in nuclear energy - Framatome",
+      "url": "https://www.framatome.com/fr/",
+      "snippet": "Les équipes de Framatome conçoivent et construisent des centrales nucléaires. Depuis plus de 60 ans, l’entreprise est présente à …"
+    },
+    {
+      "title": "Relever le défi des compétences - Framatome Academy",
+      "url": "https://academy.framatome.com/fr/",
+      "snippet": "Framatome Academy, c’est… Des centres et des programmes de formation qui couvrent les métiers et les compétences clés de …"
+    },
+    {
+      "title": "Supplier Operations",
+      "url": "https://supplier-portal.framatome.com/",
+      "snippet": "Maîtrisons les délais et les inspections. Planification et visibilité Mobilisation rapide, coordination Déclenchement des inspections …"
+    },
+    {
+      "title": "Page d'accueil - Framatome | Frog",
+      "url": "https://frog.framatome.com/",
+      "snippet": "Mar 5, 2026 · FROG is a solid and efficient network supported by Framatome. The FROG community collaborates on both day-to-day …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "azmina/quiteria-2.0",
+  "slug": "azmina-quiteria-2-0",
+  "author": "azmina",
+  "url": "https://huggingface.co/azmina/quiteria-2.0",
+  "created_at": "2026-09-14T12:48:42.000Z",
+  "updated_at": "2026-09-14T12:56:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "portuguese",
+    "pt",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 871469056,
+  "storage_human": "871 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Blooket – Fun, Free, Educational Games for Everyone",
+      "url": "https://www.blooket.com/",
+      "snippet": "Blooket is an exciting new take on the modern classroom review game. It aims to match action with education to create the ultimate …"
+    },
+    {
+      "title": "Play Blooket | Blooket",
+      "url": "https://play.blooket.com/play",
+      "snippet": "Join a game of Blooket to answer questions and compete in a fierce clash to determine who is the best and what Blook will come out …"
+    },
+    {
+      "title": "Log in - Blooket",
+      "url": "https://id.blooket.com/login",
+      "snippet": "Log in to your Blooket account to create sets, host games, discover new sets, unlock Blooks, view stats, update your account, and …"
+    },
+    {
+      "title": "Sign up | Blooket",
+      "url": "https://id.blooket.com/signup",
+      "snippet": "Sign up for a Blooket account to create sets, host games, discover new sets, unlock Blooks, view stats, update your account, and …"
+    },
+    {
+      "title": "Blooket",
+      "url": "https://solo.blooket.com/",
+      "snippet": "Blooket is an exciting new take on the modern classroom review game. It aims to match action with education to create the ultimate …"
+    }
+  ]
+}

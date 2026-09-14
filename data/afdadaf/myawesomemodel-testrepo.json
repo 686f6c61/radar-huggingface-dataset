@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "afdadAF/MyAwesomeModel-TestRepo",
+  "slug": "afdadaf-myawesomemodel-testrepo",
+  "author": "afdadAF",
+  "url": "https://huggingface.co/afdadAF/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-14T15:39:40.000Z",
+  "updated_at": "2026-09-14T15:39:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pictures Nacida Gris Stock Photos - Dreamstime",
+      "url": "https://www.dreamstime.com/photos-images/pictures-nacida-gris.html",
+      "snippet": "Download Pictures Nacida Gris stock photos. Free or royalty-free photos and images. Use them in commercial designs under lifetime, …"
+    },
+    {
+      "title": "Nacida Gris Images, Pictures And Stock Photos - Dreamstime",
+      "url": "https://www.dreamstime.com/photos-images/nacida-gris.html",
+      "snippet": "Download Nacida Gris stock photos. Free or royalty-free photos and images. Use them in commercial designs under lifetime, …"
+    },
+    {
+      "title": "Nakida Gris Photos, Download The BEST Free Nakida Gris Stock",
+      "url": "https://www.pexels.com/search/nakida%20gris/",
+      "snippet": "Download and use 10+ Nakida Gris stock photos for free. Thousands of new images every day Completely Free to Use High-quality …"
+    },
+    {
+      "title": "Nacida Gris Model royalty-free images - Shutterstock",
+      "url": "https://www.shutterstock.com/search/nacida-gris-model?msockid=119f8df7b1126eb628749a23b0046ff4",
+      "snippet": "Find 2,995,566 Nacida Gris Model stock images in HD and millions of other royalty-free stock photos, 3D objects, illustrations and …"
+    },
+    {
+      "title": "Nacida+gris Banque d’images Libres De Droit - Pexels",
+      "url": "https://www.pexels.com/fr-fr/chercher/nacida%2Bgris/",
+      "snippet": "Téléchargez et utilisez gratuitement nos 10 000+ photos sur le thème Nacida+gris. Des milliers de nouvelles images chaque jour …"
+    }
+  ]
+}

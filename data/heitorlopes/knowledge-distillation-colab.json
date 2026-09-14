@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Heitorlopes/knowledge-distillation-colab",
+  "slug": "heitorlopes-knowledge-distillation-colab",
+  "author": "Heitorlopes",
+  "url": "https://huggingface.co/Heitorlopes/knowledge-distillation-colab",
+  "created_at": "2026-09-14T15:52:41.000Z",
+  "updated_at": "2026-09-14T15:52:45.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "knowledge-distillation",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bassia scoparia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bassia_scoparia",
+      "snippet": "Its common names include summer cypress, [2] mock-cypress, kochia, belvedere, World's Fair plant, burningbush, [1] Mexican …"
+    },
+    {
+      "title": "Complete Kochia Burning Bush Care Guide for Beginners",
+      "url": "https://www.agrifarming.in/kochia-burning-bush-care-guide",
+      "snippet": "Mar 30, 2025 · Learn how to care for a Kochia burning bush with our comprehensive guide. Discover kochia burning bush care tips …"
+    },
+    {
+      "title": "How to Grow Kochia Plant Easily | Bassia scoparia Care",
+      "url": "https://indiagardening.com/kochia-plant/",
+      "snippet": "Nov 3, 2024 · The Kochia Plant is a versatile and hardy annual herbaceous plant that is native to regions of Eurasia. This plant is …"
+    },
+    {
+      "title": "Kochia (Kochia scoparia) Plant Fact Sheet - USDA",
+      "url": "https://plants.sc.egov.usda.gov/DocumentLibrary/factsheet/pdf/fs_kosc.pdf",
+      "snippet": "Kochia is native to central and eastern Europe and Asia. Kochia can be found in a very wide range of temperatures and climatic …"
+    },
+    {
+      "title": "Shop Kochia Plant Online - ACE UAE",
+      "url": "https://www.aceuae.com/en/products/kochia-plant/2228931",
+      "snippet": "Buy Kochia Plant Online Today From ACE at Best Price & Get Free Delivery. T&Cs apply."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Romanomartina/homework-retrieval",
+  "slug": "romanomartina-homework-retrieval",
+  "author": "Romanomartina",
+  "url": "https://huggingface.co/Romanomartina/homework-retrieval",
+  "created_at": "2026-09-14T14:14:40.000Z",
+  "updated_at": "2026-09-14T14:14:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Topkapi Golden Time Hotel, Istanbul (updated prices 2026)",
+      "url": "https://www.booking.com/hotel/tr/topkapi-golden-time.html?msockid=15856f2787ef6c73048778f386926d71",
+      "snippet": "Comfortable Accommodations: Topkapi Golden Time Hotel in Istanbul offers family rooms with air-conditioning, private bathrooms, …"
+    },
+    {
+      "title": "Topkapi Golden Time Hotel, Istanbul (updated prices 2026)",
+      "url": "https://www.booking.com/hotel/tr/topkapi-golden-time.en-gb.html?msockid=15856f2787ef6c73048778f386926d71",
+      "snippet": "Comfortable Accommodations: Topkapi Golden Time Hotel in Istanbul offers family rooms with air-conditioning, private bathrooms, …"
+    },
+    {
+      "title": "Topkapi Golden Time Hotel في إسطنبول - Trip.com",
+      "url": "https://sa.trip.com/hotels/istanbul-hotel-detail-120150779/topkapi-golden-time-hotel/",
+      "snippet": "With a stay at Topkapi Golden Time Hotel in Istanbul (Istanbul City Center), you'll be a 4-minute drive from Fatih Mosque and 7 …"
+    },
+    {
+      "title": "Hotel Topkapi Golden Time Istanbul - new 2026 prices, reviews, book …",
+      "url": "https://topkapi-golden-time.hotel-istanbul.net/en/",
+      "snippet": "Located nearly 10 minutes on foot from Topkapı-Ulubatlı underground station, the 3-star smoke-free Topkapi Golden Time Hotel …"
+    },
+    {
+      "title": "Topkapi Golden Time Hotel - Trip.com",
+      "url": "https://www.trip.com/hotels/istanbul-hotel-detail-120150779/topkapi-golden-time-hotel/",
+      "snippet": "What are the check-in and check-out times at Topkapi Golden Time Hotel? Check-in time at Topkapi Golden Time Hotel starts at …"
+    }
+  ]
+}

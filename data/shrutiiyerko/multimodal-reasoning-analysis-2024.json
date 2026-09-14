@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Shrutiiyerko/multimodal-reasoning-analysis-2024",
+  "slug": "shrutiiyerko-multimodal-reasoning-analysis-2024",
+  "author": "Shrutiiyerko",
+  "url": "https://huggingface.co/Shrutiiyerko/multimodal-reasoning-analysis-2024",
+  "created_at": "2026-09-14T14:11:09.000Z",
+  "updated_at": "2026-09-14T14:11:16.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-reasoning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "(erledigt) Täglich dasselbe Update - WinFuture-Forum.de",
+      "url": "https://www.winfuture-forum.de/index.php?showtopic=222345",
+      "snippet": "Dec 2, 2020 · Windows-Update bietet mir täglich dasselbe Update \"Canon – Printer – 8/24/2018 12:00:00 AM 2.90.2.20\" zum …"
+    }
+  ]
+}

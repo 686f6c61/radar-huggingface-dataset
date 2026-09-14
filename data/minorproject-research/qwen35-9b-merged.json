@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "minorproject-research/qwen35-9b-merged",
+  "slug": "minorproject-research-qwen35-9b-merged",
+  "author": "minorproject-research",
+  "url": "https://huggingface.co/minorproject-research/qwen35-9b-merged",
+  "created_at": "2026-09-14T15:32:55.000Z",
+  "updated_at": "2026-09-14T16:02:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19326300314,
+  "storage_human": "19.3 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "意大利snai公司不见了_百度知道",
+      "url": "https://zhidao.baidu.com/question/951001374384586332.html",
+      "snippet": "Dec 15, 2025 · 意大利snai公司不见了意大利SNAI公司目前可能已改名或关闭。以下是具体情况分析：有信息表明意大利SNAI公司存 …"
+    },
+    {
+      "title": "移动硬盘 没有安全弹出的图标和选项！！_百度知道",
+      "url": "https://zhidao.baidu.com/question/2138142633518358508.html",
+      "snippet": "移动硬盘 没有安全弹出的图标和选项！有个爱国者i8000 160G 移动硬盘 插上电脑后系统可以识别出来 出现新增的本地磁盘 可以正常 …"
+    },
+    {
+      "title": "上海国家会计学院？ - 知乎",
+      "url": "https://www.zhihu.com/question/265426103",
+      "snippet": "Jan 11, 2018 · 看你最终的就业目标是什么。以我的了解，SNAI在上海的知名度和影响力还是在稳步上升的，但在其他地方，尤其是小 …"
+    },
+    {
+      "title": "足球指数哪个比较准确可靠? - 知乎",
+      "url": "https://www.zhihu.com/question/629700656",
+      "snippet": "而SNAI、澳彩、WBX这些公司给出的主胜初赔也都与立博、威廉希尔存在一定分歧。 澳彩初赔阶段即把客胜压的较低，一向在赔率方 …"
+    },
+    {
+      "title": "张震岳《再见》歌词 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/91453292.html",
+      "snippet": "《再见》 张震岳 词：张震岳 曲：张震岳 编曲：张震岳/纵贯线 我怕我没有机会，跟你说一声再见 因为也许就再也见不到你，明天我要 …"
+    }
+  ]
+}

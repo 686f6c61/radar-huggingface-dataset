@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Spatial-Interactor-Qwen3-VL-8B-GGUF",
+  "slug": "mradermacher-spatial-interactor-qwen3-vl-8b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Spatial-Interactor-Qwen3-VL-8B-GGUF",
+  "created_at": "2026-09-14T13:41:20.000Z",
+  "updated_at": "2026-09-14T14:12:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "vision-language",
+    "video",
+    "spatial-reasoning",
+    "embodied-ai",
+    "qwen",
+    "en",
+    "base_model:kagakouko/Spatial-Interactor-Qwen3-VL-8B",
+    "base_model:quantized:kagakouko/Spatial-Interactor-Qwen3-VL-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 75336671168,
+  "storage_human": "75.3 GB",
+  "base_model": "kagakouko/Spatial-Interactor-Qwen3-VL-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stark-C - 知乎",
+      "url": "https://www.zhihu.com/people/pi-zi-cai-70-31",
+      "snippet": "数码搞机爱好者！ V-X：Stark-CCC 听说你很能打？ 声音耐听难寻敌手！ 漫步者N500桌面搭配电脑音箱 哈喽小伙伴们好，我是Stark …"
+    },
+    {
+      "title": "钢铁侠托尼斯塔克名字？ - 知乎",
+      "url": "https://www.zhihu.com/question/31447042",
+      "snippet": "Jun 19, 2015 · 全名是Anthony Edward Stark，简称Tony Stark。Edward是middle name，不是谁，一般也不写出来。"
+    },
+    {
+      "title": "如何评价《权力的游戏》S05E06 中 Sansa Stark 的遭遇？",
+      "url": "https://www.zhihu.com/question/30469217",
+      "snippet": "1. Did Game of Thrones Really Need to Rape Sansa Stark? 2. Rape in Westeros: What “Game of Thrones” could learn from “Mad …"
+    },
+    {
+      "title": "如何评价Sansa Stark? - 知乎",
+      "url": "https://www.zhihu.com/question/26378841",
+      "snippet": "Sansa在前几部书里的表现是真傻还是太单纯？和小玫瑰相比，为什么 Sansa一点政治头脑都没有？特别是第一…"
+    },
+    {
+      "title": "说说Tony Stark是怎样一个人？ - 知乎",
+      "url": "https://www.zhihu.com/question/325061019",
+      "snippet": "Tony stark是什么样的人?托尼·斯塔克是个孤独的小孩。 是，那个钢铁铸就的人，以凡人之躯比肩神明。 合上面罩，点亮双眼，能让 …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "itselsasun/albef-generation-v3",
+  "slug": "itselsasun-albef-generation-v3",
+  "author": "itselsasun",
+  "url": "https://huggingface.co/itselsasun/albef-generation-v3",
+  "created_at": "2026-09-14T15:30:53.000Z",
+  "updated_at": "2026-09-14T15:30:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Booking.com | Official site | The best hotels, flights, car rentals ...",
+      "url": "https://www.booking.com/?msockid=262b82647d97624310ab95b07ca96392",
+      "snippet": "Explore the world with Booking.com. Big savings on homes, hotels, flights, car rentals, taxis, and attractions – build your perfect trip …"
+    },
+    {
+      "title": "Booking.com | Site officiel | Hôtels, vols, voitures de location et ...",
+      "url": "https://www.booking.com/index.fr.html?msockid=262b82647d97624310ab95b07ca96392",
+      "snippet": "Avec Booking.com, économisez sur les hôtels, maisons, vols, voitures de location, taxis et attractions. Des voyages parfaits pour …"
+    },
+    {
+      "title": "Booking.com",
+      "url": "https://packages.booking.com/vacationpackages/",
+      "snippet": "Save up to 625 dollars when you book your flight and hotel together! Booking.com Vacation Packages with exclusive deals on airline …"
+    },
+    {
+      "title": "Extranet - Booking.com for Partners",
+      "url": "https://partner.booking.com/fr/solutions/extranet",
+      "snippet": "L’extranet est le centre opérationnel de votre établissement sur Booking.com. Vous pouvez gérer tout ce qui s’y rapporte, des tarifs et …"
+    },
+    {
+      "title": "Comment vous connecter à votre extranet Booking.com",
+      "url": "https://partner.booking.com/fr/aide/compte-et-connexion/parametres/comment-vous-connecter-%C3%A0-votre-extranet-bookingcom%C2%A0",
+      "snippet": "Aug 6, 2026 · L’extranet Booking.com est une plateforme dédiée aux partenaires d’hébergement et aux propriétaires d’établissement. …"
+    }
+  ]
+}

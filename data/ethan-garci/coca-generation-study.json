@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ethan-garci/coca-generation-study",
+  "slug": "ethan-garci-coca-generation-study",
+  "author": "ethan-garci",
+  "url": "https://huggingface.co/ethan-garci/coca-generation-study",
+  "created_at": "2026-09-14T15:05:06.000Z",
+  "updated_at": "2026-09-14T15:05:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prénom Ethan (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/ethan/prenom-2115",
+      "snippet": "Quelle est la signification du prénom Ethan ? Le prénom Ethan provient de l'hébreu et signifie \"fort\", \"robuste\" ou même \"impétueux\"."
+    },
+    {
+      "title": "Le prénom Ethan: Signification, origine, personnalité",
+      "url": "https://www.prenoms.com/prenom-garcon/ethan-7317",
+      "snippet": "Oct 9, 2020 · Tout sur le prénom Ethan : découvrez son origine, combien de Ethan sont nés en France chaque année, ou qui sont les …"
+    },
+    {
+      "title": "Prénom Ethan : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/ethan-40213",
+      "snippet": "Ethan est un garçon qui a un grand sens de l'écoute et du dialogue. Avec sa personnalité originale, voire déconcertante, Ethan ne fait …"
+    },
+    {
+      "title": "Ethan Mbappé — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ethan_Mbapp%C3%A9",
+      "snippet": "En janvier 2022, à Saint-Germain-en-Laye, Ethan Mbappé est victime d'un accident de la route. Alors qu'il est passager d'un Range …"
+    },
+    {
+      "title": "Ethan (given name) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ethan_(given_name)",
+      "snippet": "Ethan or Eytan[a] is a male given name of Hebrew origin that means \"firm, enduring, strong and long-lived\". The name Ethan appears …"
+    }
+  ]
+}

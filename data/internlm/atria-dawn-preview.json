@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "internlm/Atria-Dawn-Preview",
+  "slug": "internlm-atria-dawn-preview",
+  "author": "internlm",
+  "url": "https://huggingface.co/internlm/Atria-Dawn-Preview",
+  "created_at": "2026-09-11T08:27:05.000Z",
+  "updated_at": "2026-09-14T11:18:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "glm_moe_dsa",
+    "zh",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 40,
+  "downloads_30d": 0,
+  "trending_score": 40,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 1506690984698,
+  "storage_human": "1506.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Uniforma vojnicka SMB M-77 - Oprema za vojnike - OLX.ba",
+      "url": "https://olx.ba/artikal/23406252/",
+      "snippet": "Oct 31, 2016 · Vrsta opreme Vojna odjeća Datum objave 31.10.2016 Detaljni opis Uniforma vojnicka SMB M-77"
+    },
+    {
+      "title": "Smb uniforme - Odjela i uniforme za muškarce - OLX.ba",
+      "url": "https://olx.ba/artikal/72321066",
+      "snippet": "Smb uniforme 1 - 6 Broj Poruka Podijeli Odjeća i obuća Muškarci Odjela i uniforme za muškarce Bratunac Novo Obnovljen: …"
+    },
+    {
+      "title": "Uniforma ACU – SMB - Despot Militaris",
+      "url": "https://despotmilitari.rs/product/uniforma-acu-smb/",
+      "snippet": "Idealna za lov i airsoft. Boja/šara: SMB Materijal: rip-stop (40%pamuk, 60%poliester) Taktička uniforma u poznatom američkom kroju …"
+    },
+    {
+      "title": "SMB Uniforms",
+      "url": "https://smbuniforms.com/",
+      "snippet": "SMB Uniforms ... SMB Uniforms"
+    },
+    {
+      "title": "Smb uniforma - Rezultati pretrage - KupujemProdajem",
+      "url": "https://www.kupujemprodajem.com/pretraga?keywords=smb+uniforma&keywordsScope=description&so=1",
+      "snippet": "Kupi i prodaj u najvećoj online zajednici u Srbiji. Probaj na kp!"
+    }
+  ]
+}

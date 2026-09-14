@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Love-Aligned-31B-GGUF",
+  "slug": "mradermacher-love-aligned-31b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Love-Aligned-31B-GGUF",
+  "created_at": "2026-09-14T12:45:11.000Z",
+  "updated_at": "2026-09-14T13:13:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma4",
+    "lora",
+    "dpo",
+    "alignment",
+    "conversational",
+    "en",
+    "base_model:UnstableLlama/Love-Aligned-31B",
+    "base_model:adapter:UnstableLlama/Love-Aligned-31B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 213908603040,
+  "storage_human": "213.9 GB",
+  "base_model": "UnstableLlama/Love-Aligned-31B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Szerelem, szex - Index Fórum",
+      "url": "https://forum.index.hu/Article/showArticle?t=9022259",
+      "snippet": "Jul 13, 2017 · Sem a párkapcsolat, sem a szex nem könnyű dolog, különösen kezdetben, amikor az embernek először nyílik fel a …"
+    },
+    {
+      "title": "Index Fórum",
+      "url": "https://forum.index.hu/Article/viewArticle?a=172255496",
+      "snippet": "_nyunyuka 2026.09.02 -2 0 503151 Előzmény: zjakabfi (503150)"
+    },
+    {
+      "title": "Index Fórum",
+      "url": "https://forum.index.hu/Article/viewArticle?a=172266685",
+      "snippet": "Sep 5, 2026 · Csontos Modell – ACME V63 Gigant tuning szett &nbsp; Az ACME V63 „Gigant” H0 modellhez készült tuning szett, …"
+    },
+    {
+      "title": "Index Fórum",
+      "url": "https://forum.index.hu/Article/viewArticle?a=172267664",
+      "snippet": "És akkor lássuk, a matricaszettekkel kiegészített Ifa Tűzoltóautók néhány verzióját.&nbsp; &nbsp; Az alábbi fotókon látható 3 féle …"
+    },
+    {
+      "title": "Index Fórum",
+      "url": "https://forum.index.hu/Article/viewArticle?a=172284622",
+      "snippet": "&nbsp; Sziasztok!&nbsp;Eladnám Groß Modell 63-asomat. A 20 darabból a 16. &nbsp; Teljen hibátlan állapotban van. Mindkét vége …"
+    }
+  ]
+}

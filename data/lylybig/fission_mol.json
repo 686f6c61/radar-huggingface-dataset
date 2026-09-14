@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "lylybig/fission_mol",
+  "slug": "lylybig-fission_mol",
+  "author": "lylybig",
+  "url": "https://huggingface.co/lylybig/fission_mol",
+  "created_at": "2026-09-14T16:45:40.000Z",
+  "updated_at": "2026-09-14T17:16:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2370334720,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aktueller Überblick über Studien zur Screentime-Nutzung",
+      "url": "https://medienbildung.at/aktuelles/aktueller-uberblick-uber-studien-zur-screentime-nutzung/",
+      "snippet": "Oct 12, 2025 · „Screentime“ beschreibt die Zeit, die Menschen vor Bildschirmen verbringen – sei es Smartphone, Tablet, Computer …"
+    },
+    {
+      "title": "Smartphone: Durchschnittliche Bildschirmzeit von ... - Statista",
+      "url": "https://de.statista.com/statistik/daten/studie/1426928/umfrage/durchschnittliche-taegliche-bildschirmzeit-am-smartphone-bei-jugendlichen/",
+      "snippet": "Nov 24, 2025 · Die Bildschirmzeit bei Jugendlichen in Deutschland liegt im Jahr 2025 im Durchschnitt bei rund *** Stunden am Tag."
+    },
+    {
+      "title": "Deutsche Kinder sind besonders viel am Bildschirm",
+      "url": "https://www.tagesschau.de/inland/gesellschaft/oecd-bildschirmzeit-kinder-100.html",
+      "snippet": "May 15, 2025 · Die Bundeszentrale für gesundheitliche Aufklärung empfiehlt Teenagern in dem Alter, nicht mehr als zwei Stunden mit …"
+    },
+    {
+      "title": "Infografik: Gen Z: Bildschirmzeit steigt am Wochenende",
+      "url": "https://de.statista.com/infografik/31430/anteil-der-befragten-die-mehr-als-den-halben-tag-vor-einem-bildschirm-verbringen/",
+      "snippet": "Dec 14, 2023 · Wie viel Zeit verbringen die Deutschen täglich vor TV-, PC- oder Smartphone-Bildschirmen? Viele würden sagen; …"
+    },
+    {
+      "title": "Deutsche sind fast drei Tage pro Woche online, meistens ... - GameStar",
+      "url": "https://www.gamestar.de/artikel/smartphone-bildschirmzeit-umfrage-2026,3448629.html",
+      "snippet": "Feb 28, 2026 · Tippt auf den Punkt Bildschirmzeit. Wählt »Alle App- & Websiteaktivitäten anzeigen«, um eine detaillierte Auswertung …"
+    }
+  ]
+}

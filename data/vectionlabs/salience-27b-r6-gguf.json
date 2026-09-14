@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "vectionlabs/Salience-27B-R6-GGUF",
+  "slug": "vectionlabs-salience-27b-r6-gguf",
+  "author": "vectionlabs",
+  "url": "https://huggingface.co/vectionlabs/Salience-27B-R6-GGUF",
+  "created_at": "2026-09-14T15:11:06.000Z",
+  "updated_at": "2026-09-14T15:16:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "reasoning",
+    "efficient-reasoning",
+    "code",
+    "agentic",
+    "multimodal",
+    "long-context",
+    "qwen3.8",
+    "image-text-to-text",
+    "en",
+    "base_model:vectionlabs/Salience-27B-R6",
+    "base_model:quantized:vectionlabs/Salience-27B-R6",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 460730096,
+  "parameters_human": "460.7M",
+  "storage_bytes": 927606816,
+  "storage_human": "928 MB",
+  "base_model": "vectionlabs/Salience-27B-R6",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prothya Biosolutions Netherlands B.V. Amsterdam",
+      "url": "https://www.telefoonboek.nl/bedrijven/t8733610/amsterdam/prothya-biosolutions-netherlands-b.v./",
+      "snippet": "Prothya Biosolutions Netherlands B.V. in Amsterdam, Maroastraat 93, 1060 LG - Telefoonnummer, informatie en kaart van Prothya …"
+    },
+    {
+      "title": "Prothya Biosolutions Netherlands B.V. Amsterdam",
+      "url": "https://www.telefoonboek.nl/bedrijven/t8864808/amsterdam/prothya-biosolutions-netherlands-b.v./",
+      "snippet": "Prothya Biosolutions Netherlands B.V. in Amsterdam, Maroastraat 83, 1060 LG - Telefoonnummer, informatie en kaart van Prothya …"
+    },
+    {
+      "title": "Prothya Biosolutions Netherlands B.V. 1060LG- Amsterdam",
+      "url": "https://www.amsterdam-020.nl/prothya-biosolutions-netherlands-bv-1060lg/",
+      "snippet": "Jan 1, 2021 · Over Prothya Biosolutions Netherlands B.V. Prothya Biosolutions Netherlands B.V. is gevestigd aan Maroastraat 93."
+    },
+    {
+      "title": "Contact - Prothya Biosolutions B.V.",
+      "url": "https://prothya.com/contact/",
+      "snippet": "Contact us via the link below or send an email to pharmacovigilance@prothya.com. You can also report side effects directly via the …"
+    },
+    {
+      "title": "Informatie over Prothya Biosolutions Netherlands B.V. in Amsterdam ...",
+      "url": "https://bedrijvenopdekaart.nl/prothya-biosolutions-netherlands-bv-2089666.html",
+      "snippet": "Informatie over Prothya Biosolutions Netherlands B.V. in Amsterdam - Noord-Holland (Vervaardiging van farmaceutische producten)"
+    }
+  ]
+}

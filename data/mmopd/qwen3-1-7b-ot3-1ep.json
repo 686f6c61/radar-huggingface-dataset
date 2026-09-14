@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "MMOPD/Qwen3-1.7B-OT3-1ep",
+  "slug": "mmopd-qwen3-1-7b-ot3-1ep",
+  "author": "MMOPD",
+  "url": "https://huggingface.co/MMOPD/Qwen3-1.7B-OT3-1ep",
+  "created_at": "2026-09-14T10:39:08.000Z",
+  "updated_at": "2026-09-14T10:45:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "reasoning",
+    "thinking",
+    "sft",
+    "openthoughts3",
+    "mmopd",
+    "conversational",
+    "en",
+    "dataset:open-thoughts/OpenThoughts3-1.2M",
+    "base_model:Qwen/Qwen3-1.7B-Base",
+    "base_model:finetune:Qwen/Qwen3-1.7B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4074938294,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Convergence - ac-besancon.fr",
+      "url": "https://convergences.ac-besancon.fr/iwc_static/c11n/allDomain/layout/login.html",
+      "snippet": "ATTENTION AUX SPAMS : Ne donnez jamais vos identifiants et mots de passe !!!"
+    },
+    {
+      "title": "convergences.ac-besancon.fr",
+      "url": "https://convergences.ac-besancon.fr/iwc_static/c11n/allDomain/layout/login.html?lang=fr&3.0.1.4.0_17071455&svcs=abs,mail,c11n",
+      "snippet": "Username: Password:"
+    },
+    {
+      "title": "Authentification : Veuillez vous authentifier - ac-besancon.fr",
+      "url": "http://pia.ac-besancon.fr/pia/",
+      "snippet": "Je ne connais pas mon identifiant et/ou mon mot de passe"
+    },
+    {
+      "title": "ac-besancon.fr",
+      "url": "https://login.ac-besancon.fr/",
+      "snippet": "Portail de connexion pour accéder aux services numériques de l'académie de Besançon."
+    },
+    {
+      "title": "Bienvenue sur le PIA - Accueil - ac-besancon.fr",
+      "url": "https://pia.ac-besancon.fr/accueil/",
+      "snippet": "Le portail des services web de l'académie de Besançon Ce portail présente toutes les applications web Education Nationale ouvertes …"
+    }
+  ]
+}

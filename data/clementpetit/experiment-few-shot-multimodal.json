@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "clementpetit/experiment-few-shot-multimodal",
+  "slug": "clementpetit-experiment-few-shot-multimodal",
+  "author": "clementpetit",
+  "url": "https://huggingface.co/clementpetit/experiment-few-shot-multimodal",
+  "created_at": "2026-09-14T18:36:14.000Z",
+  "updated_at": "2026-09-14T18:36:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "few-shot-multimodal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "الصفحة الرئيسية - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLPYf6vTu2xt17uhXThhpUMYbChcBh2YyC",
+      "snippet": "Share your videos with friends, family, and the world"
+    },
+    {
+      "title": "Few-shot adaptation of multi-modal foundation models: a survey | Artificial Intelligence Review | Springer Nature Link",
+      "url": "https://link.springer.com/article/10.1007/s10462-024-10915-y",
+      "snippet": "Subsequently, the model’s performance is evaluated on the test set. The primary aim of this experiment is to assess the impact of limited samples on the generalization performance."
+    },
+    {
+      "title": "PELÍCULAS COMPLETAS EN ESPAÑOL LATINO - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PL1VQG1QhVNxX78j3ubKzGywWtSel93OQk",
+      "snippet": "Bienvenidos a nuestra colección de películas completas en español latino. Disfruta de una variedad de géneros: acción, comedia, …"
+    },
+    {
+      "title": "Less is More : A Closer Look at Multi-Modal Few-Shot Learning",
+      "url": "https://arxiv.org/html/2401.05010v1",
+      "snippet": "We introduce a novel and simple multi-modal few-shot learning framwork, which exploits the pre-trained language model with learnable prompts via meta-training. Further, we utilize the self-ensemble and self-Distillation to bring the additional performance improvement."
+    },
+    {
+      "title": "Essential '90s R&B - YouTube Music",
+      "url": "https://music.youtube.com/playlist?list=RDCLAK5uy_ne3DJMol0EVIfwcuZnx2hQak0q6EbeBlY",
+      "snippet": "Playlist • YouTube Music R&B defined American mainstream music throughout the '90s. Here are key tracks from R&B's most vital …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_basis_remove30",
+  "slug": "jeesup-svd-safety-l2_basis_remove30",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_basis_remove30",
+  "created_at": "2026-09-14T11:12:22.000Z",
+  "updated_at": "2026-09-14T11:14:15.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Consorsbank - Zukunft selbstgemacht | Consorsbank",
+      "url": "https://www.consorsbank.de/home",
+      "snippet": "Entdecken Sie die Consorsbank, Ihre moderne Direktbank für Girokonten, Geldanlagen und mehr. Wir bieten verlässlichen Service …"
+    },
+    {
+      "title": "Online-Banking - Consors Finanz",
+      "url": "https://www.consorsfinanz.de/service/online-banking",
+      "snippet": "Profitieren Sie von den praktischen Funktionen des Consors Finanz Online-Banking. Eine Übersicht über alle weiteren Informationen …"
+    },
+    {
+      "title": "Consors Finanz - Sie gestalten Ihr Leben. Wir Ihre Finanzierung.",
+      "url": "https://www.consorsfinanz.de/",
+      "snippet": "Consors Finanz steht für finanzielle Selbstbestimmung in jeder Lebenssituation. Online-Kredit, Kreditkarte und vieles mehr. Jetzt …"
+    },
+    {
+      "title": "Consorsbank – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Consorsbank",
+      "snippet": "Das bisherige grüne Markenlogo der Cortal Consors wurde durch das blaue Markenlogo der Consorsbank ersetzt, um den Wechsel …"
+    },
+    {
+      "title": "Girokonto mit kostenloser Kreditkarte | Consorsbank",
+      "url": "https://www.consorsbank.de/web/Girokonto",
+      "snippet": "Sichern Sie sich unser Girokonto mit kostenloser Kreditkarte. Außerdem genießen Sie je nach Modell weitere Premium-Vorteile und …"
+    }
+  ]
+}

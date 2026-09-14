@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Paulyang5049/tennis-ball-yolo26s-experimental-v0.2.0",
+  "slug": "paulyang5049-tennis-ball-yolo26s-experimental-v0-2-0",
+  "author": "Paulyang5049",
+  "url": "https://huggingface.co/Paulyang5049/tennis-ball-yolo26s-experimental-v0.2.0",
+  "created_at": "2026-09-14T11:21:18.000Z",
+  "updated_at": "2026-09-14T11:25:21.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "yolo26",
+    "tennis",
+    "tennis-ball",
+    "object-detection",
+    "experimental",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 80424645,
+  "storage_human": "80 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Canva : Graphisme, IA, Photo & Vidéo | Canva France",
+      "url": "https://www.canva.com/fr_fr/?msockid=2c14a6564f01648f0318b1824ebf65ea",
+      "snippet": "Du design à la retouche photo, l’IA, la vidéo et le travail en équipe, Canva FR est votre partenaire créatif nº 1. CV, logo, affiche…"
+    },
+    {
+      "title": "Canva: Visual Suite for Everyone",
+      "url": "https://www.canva.com/?msockid=2c14a6564f01648f0318b1824ebf65ea",
+      "snippet": "Canva is a free-to-use online graphic design tool. Use it to create social media posts, presentations, posters, videos, logos and more."
+    },
+    {
+      "title": "Canva: Sign up for free",
+      "url": "https://canva.me/signup/",
+      "snippet": "Canva Canva: Sign up for free Create great designs for every part of your life See this content immediately after install"
+    },
+    {
+      "title": "Download the Canva Desktop App for Free — Canva",
+      "url": "https://l.engage.canva.com/",
+      "snippet": "Download the Canva desktop app Your favorite design tool just got even easier to use with Canva’s desktop app."
+    },
+    {
+      "title": "Logiciel de création graphique ultra simple – Canva",
+      "url": "https://canva.me/Lppw9KkGFO",
+      "snippet": "Créez de magnifiques designs avec votre équipe. Utilisez la fonction glisser-déposer de Canva et nos modèles pour concevoir, …"
+    }
+  ]
+}

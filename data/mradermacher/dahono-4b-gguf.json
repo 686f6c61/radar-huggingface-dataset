@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Dahono-4B-GGUF",
+  "slug": "mradermacher-dahono-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Dahono-4B-GGUF",
+  "created_at": "2026-09-14T14:08:46.000Z",
+  "updated_at": "2026-09-14T14:30:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "legal",
+    "law",
+    "indonesia",
+    "indonesian-law",
+    "kuhperdata",
+    "kuhp",
+    "qwen",
+    "qwen3_5",
+    "multimodal",
+    "document-inspection",
+    "safetensors",
+    "function-calling",
+    "legal-ai",
+    "applied-legal-ai",
+    "regtech",
+    "grpo",
+    "reasoning-rl",
+    "reinforcement-learning",
+    "id",
+    "base_model:DahonoLabs/Dahono-4B",
+    "base_model:quantized:DahonoLabs/Dahono-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 41004118208,
+  "storage_human": "41.0 GB",
+  "base_model": "DahonoLabs/Dahono-4B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AMD Ryzen 5 4600G Specs | TechPowerUp CPU Database",
+      "url": "https://www.techpowerup.com/cpu-specs/ryzen-5-4600g.c2319",
+      "snippet": "Jul 20, 2020 · The AMD Ryzen 5 4600G is a desktop processor with 6 cores, launched in July 2020, at an MSRP of $154. It is part of …"
+    },
+    {
+      "title": "AMD Ryzen™ 5 4600G Drivers and Downloads - Latest Version",
+      "url": "https://www.amd.com/en/support/downloads/drivers.html/processors/ryzen/ryzen-4000-series/amd-ryzen-5-4600g.html",
+      "snippet": "Please be sure to update your operating system before installing drivers. Release Notes. *By clicking the \"Download\" button, you are …"
+    },
+    {
+      "title": "AMD Ryzen 5 4600G - CPU Monkey",
+      "url": "https://www.cpu-monkey.com/en/cpu-amd_ryzen_5_4600g",
+      "snippet": "Aug 7, 2026 · Benchmarks, specifications, and user reviews for AMD Ryzen 5 4600G. Compare the CPU with other processors and …"
+    },
+    {
+      "title": "AMD Ryzen 5 4600G Boxed - Tweakers",
+      "url": "https://tweakers.net/pricewatch/1799174/amd-ryzen-5-4600g-boxed.html",
+      "snippet": "May 2, 2022 · AMD Ryzen 5 4600G Boxed: vergelijk de beste prijzen, lees echte en onafhankelijke reviews, bekijk de specificaties en …"
+    },
+    {
+      "title": "Processor AMD 4600G - bol",
+      "url": "https://www.bol.com/nl/nl/p/amd-ryzen-5-4600g-processor-3-7-ghz-6-kern-12-threads-8-mb-cache-socket-am4-box/9300000100344649/",
+      "snippet": "De AMD Ryzen 5 4600G processor beschikt over zes cores en 12 threads, en is geschikt om op een moederbord met Socket AM4 te …"
+    }
+  ]
+}

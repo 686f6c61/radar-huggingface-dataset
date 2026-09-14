@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mradermacher/SAP-4B-GGUF",
+  "slug": "mradermacher-sap-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/SAP-4B-GGUF",
+  "created_at": "2026-09-14T13:40:40.000Z",
+  "updated_at": "2026-09-14T14:30:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:Zichen1024/SAP-9k",
+    "base_model:Zichen1024/SAP-4B",
+    "base_model:quantized:Zichen1024/SAP-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 39708254592,
+  "storage_human": "39.7 GB",
+  "base_model": "Zichen1024/SAP-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail?hl=fr",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "Se connecter à Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Pour ouvrir Gmail, vous pouvez vous connecter à partir d'un ordinateur ou ajouter votre compte à l'application Gmail sur votre …"
+    },
+    {
+      "title": "Gmail : messagerie sécurisée optimisée par l'IA pour tous | Google ...",
+      "url": "https://workspace.google.com/intl/fr/gmail/",
+      "snippet": "Gmail est désormais optimisé par l'IA Gemini. Découvrez de nouvelles façons de rédiger des e-mails, d'y répondre et d'organiser …"
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://www.google.com/accounts/Login",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode"
+    }
+  ]
+}

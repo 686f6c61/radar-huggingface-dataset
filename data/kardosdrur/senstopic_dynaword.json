@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "kardosdrur/senstopic_dynaword",
+  "slug": "kardosdrur-senstopic_dynaword",
+  "author": "kardosdrur",
+  "url": "https://huggingface.co/kardosdrur/senstopic_dynaword",
+  "created_at": "2026-09-14T13:40:35.000Z",
+  "updated_at": "2026-09-14T13:40:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "turftopic",
+  "languages": [],
+  "tags": [
+    "turftopic",
+    "joblib",
+    "topic-modelling",
+    "text-classification",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 455943395,
+  "storage_human": "456 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux pièces …"
+    },
+    {
+      "title": "Descargar YouTube: PC / Mac / Android (APK)",
+      "url": "https://es.ccm.net/descargas/entretenimiento/6598-youtube/",
+      "snippet": "Feb 12, 2024 · YouTube se puede conectar a Facebook, Twitter, Talk, Reddit, Pinterest, Tumblr, LinkedIn y más. Asimismo, …"
+    },
+    {
+      "title": "Descargar Snaptube: PC, Android (APK) - CCM",
+      "url": "https://es.ccm.net/descargas/internet/6550-snaptube/",
+      "snippet": "Feb 6, 2024 · Snaptube es un programa que descarga de forma rápida y sencilla contenidos de YouTube y otras plataformas como …"
+    },
+    {
+      "title": "Facebook qui rame [Résolu] - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38273471-facebook-qui-rame",
+      "snippet": "Feb 28, 2026 · Bonjour à tous, J'ai un gros soucis lorsque j'utilise facebook, déjà l'affichage quand je l'ouvre est long, mais surtout …"
+    },
+    {
+      "title": "ZDNET - Actualité, business et technologies pour les professionne ...",
+      "url": "https://www.zdnet.fr/",
+      "snippet": "Actualité, business et technologies pour les professionnels Les dernières news IA en entreprise : les recommandations de …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-MXFP4-FromFP8-pr3118-validation",
+  "slug": "soyrsoyr-qwen3-8-27b-fp8dyn-mtp-mxfp4-fromfp8-pr3118-validation",
+  "author": "soyrsoyr",
+  "url": "https://huggingface.co/soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-MXFP4-FromFP8-pr3118-validation",
+  "created_at": "2026-09-14T16:49:38.000Z",
+  "updated_at": "2026-09-14T16:52:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "llm-compressor",
+    "compressed-tensors",
+    "mtp",
+    "pr3118-validation",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B-FP8",
+    "base_model:quantized:Qwen/Qwen3.8-27B-FP8",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27134575616,
+  "parameters_human": "27.13B",
+  "storage_bytes": 35330053205,
+  "storage_human": "35.3 GB",
+  "base_model": "Qwen/Qwen3.8-27B-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ecoledirecte · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/ecoledirecte",
+      "snippet": "Apr 15, 2026 · Snipeur060 / Ecole-directe-classe Star 7 Code Issues Pull requests Discussions education ecoledirecte ecole-directe …"
+    },
+    {
+      "title": "GitHub - EduWireApps/ecoledirecte-api-docs",
+      "url": "https://github.com/EduWireApps/ecoledirecte-api-docs",
+      "snippet": "Contribute to EduWireApps/ecoledirecte-api-docs development by creating an account on GitHub."
+    },
+    {
+      "title": "Mot de passe école directe - Forum Programmation",
+      "url": "https://forums.commentcamarche.net/forum/affich-34259508-mot-de-passe-ecole-directe",
+      "snippet": "Jan 10, 2017 · Mot de passe école directe Fermé Mot de passe Identifiant kékédesplages - Modifié le 10 janv. 2017 à 14:59 Pitet - 10 …"
+    },
+    {
+      "title": "Ecole directe - Pièces jointes - Réseaux sociaux - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-32888021-ecole-directe-pieces-jointes",
+      "snippet": "Bonjour ! Mon professeur m'a demandé de recopier un cours qu'il a mis en pièces jointes sur Ecole directe. Cependant, je ne sais …"
+    },
+    {
+      "title": "EcoleDirecte | Mode Sombre · GitHub",
+      "url": "https://gist.github.com/msylvest-22102007/88373dbd747d97a7cb1e8809ca74e8cf",
+      "snippet": "EcoleDirecte | Mode Sombre. GitHub Gist: instantly share code, notes, and snippets."
+    }
+  ]
+}

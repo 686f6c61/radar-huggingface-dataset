@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "PiotrSty/trocr-pl-mixed-v1",
+  "slug": "piotrsty-trocr-pl-mixed-v1",
+  "author": "PiotrSty",
+  "url": "https://huggingface.co/PiotrSty/trocr-pl-mixed-v1",
+  "created_at": "2026-09-14T15:39:47.000Z",
+  "updated_at": "2026-09-14T15:40:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vision-encoder-decoder",
+    "image-text-to-text",
+    "trocr",
+    "ocr",
+    "polish",
+    "historical",
+    "typewriter",
+    "qlora",
+    "peft",
+    "mixed-data",
+    "pl",
+    "base_model:PiotrSty/trocr-pl-base",
+    "base_model:finetune:PiotrSty/trocr-pl-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 333921792,
+  "parameters_human": "333.9M",
+  "storage_bytes": 1347965608,
+  "storage_human": "1.3 GB",
+  "base_model": "PiotrSty/trocr-pl-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

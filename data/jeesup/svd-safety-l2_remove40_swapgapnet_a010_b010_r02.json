@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove40_swapgapnet_a010_b010_r02",
+  "slug": "jeesup-svd-safety-l2_remove40_swapgapnet_a010_b010_r02",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgapnet_a010_b010_r02",
+  "created_at": "2026-09-14T16:37:34.000Z",
+  "updated_at": "2026-09-14T17:09:54.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Conversion taille française vers taille chinoise ou asiatique",
+      "url": "https://www.conversiontailles.com/correspondances/conversion-taille-francaise-vers-taille-chinoise-ou-asiatique/",
+      "snippet": "Conversion taille française vers taille chinoise ou asiatique Si vous êtes adepte des sites de vente en ligne chinois ou asiatique …"
+    },
+    {
+      "title": "Tout savoir sur les tailles de vêtements - Conversion Tailles",
+      "url": "https://www.conversiontailles.com/",
+      "snippet": "Tout savoir sur les tailles de vêtements Si vous souhaitez connaitre la correspondance d’une taille de vêtement étrangère en taille …"
+    },
+    {
+      "title": "Correspondances des tailles de vêtement françaises et étrangères",
+      "url": "https://www.conversiontailles.com/correspondances/",
+      "snippet": "Correspondances des tailles de vêtement françaises et étrangères D’un pays à l’autre les tailles de vêtements diffèrent : les tailles …"
+    },
+    {
+      "title": "Le guide des tailles de vêtements pour homme",
+      "url": "https://www.conversiontailles.com/guide-des-tailles/vetements-homme/",
+      "snippet": "Le guide des tailles de vêtements pour homme Notre guide des tailles de vêtements pour homme est fait pour vous aider à trouver la …"
+    },
+    {
+      "title": "Le guide des tailles de vêtements pour bébé - Conversion Tailles",
+      "url": "https://www.conversiontailles.com/guide-des-tailles/vetements-bebe/",
+      "snippet": "Le guide des tailles de vêtements pour bébé Vous avez pris les mensurations de votre bébé et vous vous demandez quelle taille de …"
+    }
+  ]
+}

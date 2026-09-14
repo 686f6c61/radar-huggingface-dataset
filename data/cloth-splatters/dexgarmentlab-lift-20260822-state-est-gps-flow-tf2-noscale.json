@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Cloth-splatters/dexgarmentlab-lift-20260822-state-est-gps-flow-tf2-noscale",
+  "slug": "cloth-splatters-dexgarmentlab-lift-20260822-state-est-gps-flow-tf2-noscale",
+  "author": "Cloth-splatters",
+  "url": "https://huggingface.co/Cloth-splatters/dexgarmentlab-lift-20260822-state-est-gps-flow-tf2-noscale",
+  "created_at": "2026-09-14T13:32:09.000Z",
+  "updated_at": "2026-09-14T13:32:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "cloth",
+    "deformable-objects",
+    "state-estimation",
+    "dexgarmentlab",
+    "flow-matching",
+    "dataset:Cloth-splatters/dexgarmentlab-lift-correspondence-20260822",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18194188,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "外企中常见的职位如 Senior, Staff, Principal 等，谁高谁低？还有哪些职 …",
+      "url": "https://www.zhihu.com/question/20495911",
+      "snippet": "技术路线 一般都是 Associate (助理) Engineer -> Engineer -> Senior Engineer -> Staff -> Senior Staff -> Principal (首席) -> …"
+    },
+    {
+      "title": "Windows电脑如何设置WiFi选择5Ghz频带的信号？ - 知乎",
+      "url": "https://www.zhihu.com/question/35029288",
+      "snippet": "到这里就完成了，混合模式下电脑会优先选择5G频段~ 在这个界面还能完成对很多高级参数的设置~ 如果没有这么多选项可能是网卡不 …"
+    },
+    {
+      "title": "如何评价Dear Mentor这个平台? - 知乎",
+      "url": "https://www.zhihu.com/question/32008482",
+      "snippet": "2017年9月申请，VIP-保offer 项目 Mentor： Clara Chen，Yang Bo 正式开始： Mentor和班主任（DM工作人员）是独立的。 Mentor好 …"
+    },
+    {
+      "title": "请问大家是如何找到自己的mentor的，又是如何跟他/她建立起长期的 …",
+      "url": "https://www.zhihu.com/question/24947910",
+      "snippet": "我个人的mentor是我的前Boss，因为换工作从美国回到了日本。她主动在一次跟我的1 on 1当中提到愿意当我的mentor，问我是否接受 …"
+    },
+    {
+      "title": "Mentor Graphics - 知乎",
+      "url": "https://www.zhihu.com/topic/20661340/intro",
+      "snippet": "Mentor除EDA工具外，还具备非常多助力汽车电子厂商的产品，包括嵌入式软件等。 Mentor的策略是在主业即EDA工具方面持续加强 …"
+    }
+  ]
+}

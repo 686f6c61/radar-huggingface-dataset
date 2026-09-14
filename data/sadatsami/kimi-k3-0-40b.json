@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Sadatsami/Kimi-K3-0.40B",
+  "slug": "sadatsami-kimi-k3-0-40b",
+  "author": "Sadatsami",
+  "url": "https://huggingface.co/Sadatsami/Kimi-K3-0.40B",
+  "created_at": "2026-09-14T10:59:35.000Z",
+  "updated_at": "2026-09-14T11:03:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kimi_k3",
+    "feature-extraction",
+    "custom_code",
+    "base_model:moonshotai/Kimi-K3",
+    "base_model:finetune:moonshotai/Kimi-K3",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 395567400,
+  "parameters_human": "395.6M",
+  "storage_bytes": 1585119182,
+  "storage_human": "1.6 GB",
+  "base_model": "moonshotai/Kimi-K3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bubble Shooter - Zagraj w Bubble Shooter za darmo",
+      "url": "https://www.bubbleshooter.net/pl/",
+      "snippet": "Zagraj w popularne gry bubble shooter za darmo i szybko na naszej stronie internetowej. Twórz kombinacje 3 lub więcej …"
+    },
+    {
+      "title": "KULKI - gra online, łamigłówka, zagraj - Kurnik",
+      "url": "https://www.kurnik.pl/kulki/",
+      "snippet": "Kulki - Gra w kulki; układaj po 5 kulek w tym samym kolorze w rzędzie poziomo, pionowo lub ukośnie; kulki wyskakują po 3 na …"
+    },
+    {
+      "title": "KULKI - gra online :: łamigłówki,gry logiczne",
+      "url": "https://www.zagrajsam.pl/dzialy_gier.php?gra=5",
+      "snippet": "Gra polega na układaniu kulek w rzędzie. Gracz układa po pięć (lub więcej) kulek o tym samym kolorze w rzędzie (poziomo, …"
+    },
+    {
+      "title": "Gry W Kulki - Graj za Darmo Online! - Poki",
+      "url": "https://poki.com/pl/kulki?msockid=2487ca10cfac6f130cadddc4cee66e18",
+      "snippet": "Strzelaj do kolorowych baniek, balonów i kulek, aby zdobyć mnóstwo punktów. Ciesz się grafiką 3D i ustanów nowy rekord w jednym …"
+    },
+    {
+      "title": "Gry Bubble Shooter – Grać Gry Bubble Shooter Grach na Gry.pl",
+      "url": "https://www.gry.pl/gry/gry-w-kulki?page=1",
+      "snippet": "Graj w najlepsze gry kulki za darmo online! Odkryj klasyczne gry kulki, wersje 3D oraz Zuma. Idealna zabawa dla dzieci i dorosłych …"
+    }
+  ]
+}

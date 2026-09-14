@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/declref_01_1pct_100M_computematched_adamwppt_1e18_s0_2026-09-14_13-44-09_762935-pt",
+  "slug": "alexkstern-declref_01_1pct_100m_computematched_adamwppt_1e18_s0_2026-09-14_13-44-09_762935-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/declref_01_1pct_100M_computematched_adamwppt_1e18_s0_2026-09-14_13-44-09_762935-pt",
+  "created_at": "2026-09-14T13:50:21.000Z",
+  "updated_at": "2026-09-14T13:51:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_declref-01-seq_len_2048-2B",
+    "seed_0",
+    "case_c",
+    "lr_trapezoid",
+    "depth_20",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4891726521,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Magasins BUT : achat meubles (canapé, lit, matelas, table, salon et ...",
+      "url": "https://www.but.fr/?msockid=26e0ce40d2be675f1524d994d39e6631",
+      "snippet": "Retrouvez tout l'équipement de la maison dans vos magasins BUT : achat meubles ( canapé, lit, matelas, table, salon et bureau ), …"
+    },
+    {
+      "title": "Retrouvez sur But.fr une sélection d'Exclus Web ! | BUT.fr",
+      "url": "https://www.but.fr/themes/produits-exclusifs-internet/index-c10504.html?msockid=26e0ce40d2be675f1524d994d39e6631",
+      "snippet": "Un renouvellement d'Exclus Web en tous genre : canapés, lits, meubles, TV.... Vite, il n'y en aura pas pour tout le monde ! A …"
+    },
+    {
+      "title": "BUT - Toutes nos offres d'emploi",
+      "url": "https://recrute.but.fr/postulez/",
+      "snippet": "Vous désirez rejoindre BUT ? Retrouvez nos métiers et nos offres d'emploi en CDI, CDD, stage et alternance."
+    },
+    {
+      "title": "Ma question - But - Aide et Contact",
+      "url": "https://aide.but.fr/selfbut/fr-fr/contact",
+      "snippet": "Ajoutez une ou plusieurs pièces jointes (Dans la limite de 3 fichiers, de 7 Mo chacun)."
+    },
+    {
+      "title": "Carrément BUT - Blog d'inspiration déco de la maison",
+      "url": "https://blog.but.fr/",
+      "snippet": "BUT : des idées tous les jours sur notre blog ! Les magasins BUT vous conseillent et vous inspirent pour la décoration et …"
+    }
+  ]
+}

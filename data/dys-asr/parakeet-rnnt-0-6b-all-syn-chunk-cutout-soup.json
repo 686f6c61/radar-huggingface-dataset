@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "dys-asr/parakeet-rnnt-0.6b-all-syn-chunk-cutout-soup",
+  "slug": "dys-asr-parakeet-rnnt-0-6b-all-syn-chunk-cutout-soup",
+  "author": "dys-asr",
+  "url": "https://huggingface.co/dys-asr/parakeet-rnnt-0.6b-all-syn-chunk-cutout-soup",
+  "created_at": "2026-09-14T15:13:45.000Z",
+  "updated_at": "2026-09-14T15:14:14.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "parakeet_rnnt",
+    "feature-extraction",
+    "audio",
+    "speech",
+    "automatic-speech-recognition",
+    "parakeet",
+    "rnnt",
+    "dysarthric-speech",
+    "model-soup",
+    "synthetic-data",
+    "en",
+    "dataset:dys-asr/sapc1",
+    "dataset:dys-asr/sapc2",
+    "base_model:extraordinarylab/parakeet-unified-en-0.6b",
+    "base_model:finetune:extraordinarylab/parakeet-unified-en-0.6b",
+    "license:cc-by-4.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 618314241,
+  "parameters_human": "618.3M",
+  "storage_bytes": 2473368908,
+  "storage_human": "2.5 GB",
+  "base_model": "extraordinarylab/parakeet-unified-en-0.6b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "SAPC2 dev, speakers held out of SAPC1 dev",
+      "metric": "WER",
+      "value": 9.91
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "SAPC2 dev, speakers held out of SAPC1 dev",
+      "metric": "CER",
+      "value": 6.06
+    }
+  ],
+  "sources": [
+    {
+      "title": "Troubles DYS - Fédération Française des DYS",
+      "url": "https://www.ffdys.com/troubles-dys/",
+      "snippet": "Dans cette catégorie des troubles neuro développementaux, les troubles « Dys » se distinguent des troubles du développement …"
+    },
+    {
+      "title": "DYS-POSITIF | Ressources pédagogiques pour enfants DYS",
+      "url": "https://adherent.dys-positif.fr/espace-adherent/",
+      "snippet": "Annuaire des professionnels Stages de réussite En savoir plus Soutien scolaire DYS En savoir plus Ressources TSA & CAA Accéder …"
+    },
+    {
+      "title": "Fédération Française des DYS -",
+      "url": "http://www.ffdys.com/",
+      "snippet": "La Fédération Dyspraxique Mais Fantastique (DMF) et la Fédération Française des Dys (FFDys) alertent sur le traitement par les …"
+    },
+    {
+      "title": "Troubles dys — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Troubles_dys",
+      "snippet": "Les troubles dys sont des troubles spécifiques durables, qui concernent les dysfonctionnements, plus ou moins sévères, des …"
+    },
+    {
+      "title": "Les Dys - le 1er média sur les troubles dys",
+      "url": "https://www.lesdys.fr/",
+      "snippet": "Les Dys - le 1er média sur les troubles dys. Bienvenue sur le premier groupe média francophone entièrement dédié aux troubles DYS …"
+    }
+  ]
+}

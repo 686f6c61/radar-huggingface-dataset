@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "FAIRC/token-averaging-seed_replicates-avg_50m_k2_seed1",
+  "slug": "fairc-token-averaging-seed_replicates-avg_50m_k2_seed1",
+  "author": "FAIRC",
+  "url": "https://huggingface.co/FAIRC/token-averaging-seed_replicates-avg_50m_k2_seed1",
+  "created_at": "2026-09-14T15:02:19.000Z",
+  "updated_at": "2026-09-14T15:04:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 599185258,
+  "storage_human": "599 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PCSK9 Inhibitors: A Full List, Side Effects, and More - Healthline",
+      "url": "https://www.healthline.com/health/pcsk9-inhibitors-what-you-need-to-know",
+      "snippet": "Sep 9, 2025 · PCSK9 inhibitors are an injectable treatment for high LDL cholesterol that may provide a safe alternative for people …"
+    },
+    {
+      "title": "PCSK9 inhibitors: Uses, common brands, and safety info",
+      "url": "https://www.singlecare.com/drug-classes/pcsk9-inhibitors",
+      "snippet": "Aug 10, 2026 · This article will discuss the uses, side effects, and safety information of PCSK9 inhibitors. The table below lists the …"
+    },
+    {
+      "title": "List of PCSK9 inhibitors - Drugs.com",
+      "url": "https://www.drugs.com/drug-class/pcsk9-inhibitors.html",
+      "snippet": "Compare PCSK9 inhibitors. View important safety information, ratings, user reviews, popularity and more."
+    },
+    {
+      "title": "PCSK9 Inhibitors: How They Manage Cholesterol and Side Effects",
+      "url": "https://my.clevelandclinic.org/health/drugs/22550-pcsk9-inhibitors",
+      "snippet": "Feb 17, 2022 · What are PCSK9 inhibitors? PCSK9 inhibitors are a type of cholesterol-lowering drug. They reduce your low-density …"
+    },
+    {
+      "title": "Popular Pcsk9 Inhibitors List, Drug Prices and Medication ... - GoodRx",
+      "url": "https://www.goodrx.com/classes/pcsk9-inhibitors",
+      "snippet": "Aug 1, 2015 · Compare the cost of prescription and generic Pcsk9 Inhibitors medications. See information about popular Pcsk9 …"
+    }
+  ]
+}

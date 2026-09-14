@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dapatel86/coca-multitask-beta",
+  "slug": "dapatel86-coca-multitask-beta",
+  "author": "dapatel86",
+  "url": "https://huggingface.co/dapatel86/coca-multitask-beta",
+  "created_at": "2026-09-14T11:18:07.000Z",
+  "updated_at": "2026-09-14T11:18:13.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Schlafsofas & Schlafcouches online kaufen - XXXLutz.de",
+      "url": "https://www.xxxlutz.de/schlafsofas-C1C1C3?msockid=2b93ae72d79b62c70f98b9a6d66a6341",
+      "snippet": "Lattenrost: Eine Schlafcouch mit Lattenrost sorgt für gute Belüftung der Matratze und unterstützt die Körperanpassung – ein …"
+    },
+    {
+      "title": "Schlafsofa & Schlafcouch kaufen online bei Höffner",
+      "url": "https://www.hoeffner.de/schlafsofas",
+      "snippet": "Finden Sie Ihre Schlafcouch mit einer qualitativen Polsterung für Ihren Schlafkomfort. Design und die passenden Materialien für das …"
+    },
+    {
+      "title": "Schlafsofas online kaufen » Couches mit Schlaffunktion | OTTO",
+      "url": "https://www.otto.de/moebel/sofas/?ausstattung=bettfunktion",
+      "snippet": "Mit wenigen Handgriffen kannst du die Couch ausziehen, ausklappen oder umbauen und in einen Schlafplatz verwandeln. Während …"
+    },
+    {
+      "title": "Günstige Schlafsofas & Bettsofas - IKEA Deutschland",
+      "url": "https://www.ikea.com/de/de/cat/schlafsofas-10663/?msockid=2b93ae72d79b62c70f98b9a6d66a6341",
+      "snippet": "Günstige Schlafsofas & Bettsofas ★ mit Bettkasten & Matratze ★ große Auswahl ★ Lieferung möglich ★ 10 Jahre Garantie Finde …"
+    },
+    {
+      "title": "Schlafsofas im skandinavischen Stil | JYSK",
+      "url": "https://jysk.de/wohnzimmer/schlafsofas",
+      "snippet": "Tagsüber Sofa, nachts ein zusätzliches Bett - Auszieh- und Schlafsofas sind die ideale Lösung für den spontanen …"
+    }
+  ]
+}

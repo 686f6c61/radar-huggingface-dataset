@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "chaohsieh/coca-multitask",
+  "slug": "chaohsieh-coca-multitask",
+  "author": "chaohsieh",
+  "url": "https://huggingface.co/chaohsieh/coca-multitask",
+  "created_at": "2026-09-14T10:57:32.000Z",
+  "updated_at": "2026-09-14T10:57:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seznam – najdu tam, co neznám",
+      "url": "https://www.seznam.cz/",
+      "snippet": "Z hlediska mikroplastů není žádná z těchto možností úplně neposkvrněná. Drobné plastové částice se totiž podle nových výzkumů …"
+    },
+    {
+      "title": "Seznam – najdu tam, co neznám",
+      "url": "https://www.seznam.cz/500",
+      "snippet": "Jejda, tak tohle se nepovedlo. Pracujeme na opravě. Přejít na Seznam.cz"
+    },
+    {
+      "title": "Tohle je možná poslední video s Lukášem Venclíkem! Vzpomínáte ...",
+      "url": "https://www.facebook.com/watch/?v=289801309366694",
+      "snippet": "Lukáš bude úplně nejradši, když mu pomůžete, aby už nemusel dělat podobná videa další čtyři roky. Teď je moment, kdy má smysl …"
+    },
+    {
+      "title": "Když se podíváš do zrcadla, vidíš člověka, kterým chceš být ...",
+      "url": "https://www.facebook.com/reel/1121419063005839/",
+      "snippet": "Apr 9, 2025 · Když se podíváš do zrcadla, vidíš člověka, kterým chceš být? Pokud ne, pak je čas s tím něco udělat. Protože život …"
+    },
+    {
+      "title": "hledání písně podle části textu — PSK",
+      "url": "https://www.ptejteseknihovny.cz/dotazy/hledani-pisne-podle-casti-textu",
+      "snippet": "Jun 26, 2012 · Řekla bych, že jde o nějakou mladou zpěvačku. V paměti mi utkvělo pouze pár slov z refrénu: \"...vše máme v dlaních …"
+    }
+  ]
+}

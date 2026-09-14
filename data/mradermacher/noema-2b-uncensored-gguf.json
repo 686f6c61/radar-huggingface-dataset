@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Noema-2B-uncensored-GGUF",
+  "slug": "mradermacher-noema-2b-uncensored-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Noema-2B-uncensored-GGUF",
+  "created_at": "2026-09-14T15:26:16.000Z",
+  "updated_at": "2026-09-14T15:48:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:BossDefender/Noema-2B-uncensored",
+    "base_model:quantized:BossDefender/Noema-2B-uncensored",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 18070130688,
+  "storage_human": "18.1 GB",
+  "base_model": "BossDefender/Noema-2B-uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What is 69/23 simplified? - thefractioncalculator.com",
+      "url": "https://thefractioncalculator.com/SimplifyFractions/What-is-69/23-simplified.html",
+      "snippet": "What is 69/23 simplified? Here we will simplify 69/23 to its simplest form and convert it to a mixed number if necessary. In the fraction …"
+    },
+    {
+      "title": "What is 69/23 Simplified? - Visual Fractions",
+      "url": "https://visualfractions.com/calculator/simplify-fractions/what-is-69-23-simplified/",
+      "snippet": "Learn how to simplify or reduce the fraction 69/23 to its lowest terms. A simple, step-by-step guide with instructions to work out what …"
+    },
+    {
+      "title": "69/23 Simplified as a Fraction - getcalc.com",
+      "url": "https://getcalc.com/math-simplify-fraction-69by23.htm",
+      "snippet": "Learn how to find what is 69/23 simplified as a fraction just in a few minutes. We have covered why the GCF or factorization is …"
+    },
+    {
+      "title": "69/23 simplified - How to Simplify 69/23 as a fraction in simplest form",
+      "url": "https://calculator.name/simplifyfraction/69/23",
+      "snippet": "What is 69/23 simplified? 69/23 as a fraction in simplest form is 3/1. Here we will show you how to simplify, reduce fraction 69/23 in its …"
+    },
+    {
+      "title": "69/23 as a Decimal - getcalc.com",
+      "url": "https://getcalc.com/math-fraction-decimal-69by23.htm",
+      "snippet": "Find the decimal expansion of fraction 69/23. 69/23 as a decimal expansion provides the detailed information about what is 69/23 in …"
+    }
+  ]
+}

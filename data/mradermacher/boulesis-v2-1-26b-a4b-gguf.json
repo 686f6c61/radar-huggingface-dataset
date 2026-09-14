@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Boulesis-v2.1-26B-A4B-GGUF",
+  "slug": "mradermacher-boulesis-v2-1-26b-a4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Boulesis-v2.1-26B-A4B-GGUF",
+  "created_at": "2026-09-14T12:15:42.000Z",
+  "updated_at": "2026-09-14T13:13:56.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "roleplay",
+    "merge",
+    "gemma4",
+    "moe",
+    "heretic",
+    "uncensored",
+    "sillytavern",
+    "thinking",
+    "reasoning",
+    "en",
+    "base_model:SubMaroon/Boulesis-v2.1-26B-A4B",
+    "base_model:quantized:SubMaroon/Boulesis-v2.1-26B-A4B",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25971339550,
+  "parameters_human": "25.97B",
+  "storage_bytes": 187680288928,
+  "storage_human": "187.7 GB",
+  "base_model": "SubMaroon/Boulesis-v2.1-26B-A4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SFR Mail - La Communauté SFR",
+      "url": "https://la-communaute.sfr.fr/t5/sfr-mail/bd-p/SFR-Mail",
+      "snippet": "Sep 1, 2026 · Connexion au mail depuis des applications tierces 05/08/2026 | Posté dans SFR Mail Réponse certifiée par SFR par …"
+    },
+    {
+      "title": "RED by SFR - Mon compte client - Infos & Questions",
+      "url": "https://communaute.red-by-sfr.fr/t5/Mon-compte-client/bd-p/forum-compte-client",
+      "snippet": "6 days ago · Posez toutes vos questions sur nos services en ligne et l’appli RED & Moi"
+    },
+    {
+      "title": "Comment accéder à ma boîte mail SFR - La Communauté SFR",
+      "url": "https://la-communaute.sfr.fr/t5/sfr-mail/comment-acc%C3%A9der-%C3%A0-ma-bo%C3%AEte-mail-sfr/td-p/2312731",
+      "snippet": "Aug 6, 2021 · Il suffit de cliquer sur \" Je souhaite accéder à SFR Mail depuis mon ordinateur \" ou \" Je souhaite accéder à SFR Mail …"
+    },
+    {
+      "title": "Utiliser une adresse @sfr en 2026 = impossible - RED by SFR",
+      "url": "https://communaute.red-by-sfr.fr/t5/Mon-compte-client/Utiliser-une-adresse-sfr-en-2026-impossible/td-p/621829",
+      "snippet": "May 26, 2026 · Compte SFR Mail inaccessible Conformément aux Conditions Générales d’Utilisation, la boîte mail …"
+    },
+    {
+      "title": "Transfer dossier mail SFR vers ordinateur - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-34734833-transfer-dossier-mail-sfr-vers-ordinateur",
+      "snippet": "Jul 19, 2017 · Transfer dossier mail SFR vers ordinateur Clé usb Aurélie - Modifié le 19 juil. 2017 à 15:20 Utilisateur anonyme - 19 juil. …"
+    }
+  ]
+}

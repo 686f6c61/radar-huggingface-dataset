@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Shadow0482/Kokoro-7M-ONNX",
+  "slug": "shadow0482-kokoro-7m-onnx",
+  "author": "Shadow0482",
+  "url": "https://huggingface.co/Shadow0482/Kokoro-7M-ONNX",
+  "created_at": "2026-09-14T14:15:47.000Z",
+  "updated_at": "2026-09-14T14:16:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "tts",
+    "kokoro",
+    "onnxruntime",
+    "text-to-speech",
+    "speech",
+    "audio",
+    "voice",
+    "en",
+    "base_model:oddadmix/Kokoro-7M-Distill",
+    "base_model:quantized:oddadmix/Kokoro-7M-Distill",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57197079,
+  "storage_human": "57 MB",
+  "base_model": "oddadmix/Kokoro-7M-Distill",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

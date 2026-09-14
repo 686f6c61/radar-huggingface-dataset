@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "weber1124/dino-multitask-kaggle",
+  "slug": "weber1124-dino-multitask-kaggle",
+  "author": "weber1124",
+  "url": "https://huggingface.co/weber1124/dino-multitask-kaggle",
+  "created_at": "2026-09-14T17:14:44.000Z",
+  "updated_at": "2026-09-14T17:14:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online check-in options - Brussels Airlines",
+      "url": "https://www.brusselsairlines.com/be/en/check-in-options-and-info/online-check-in-options",
+      "snippet": "You can check in online from 24 hours in advance. In case you would also like to check in baggage or still need to have your travel …"
+    },
+    {
+      "title": "Contact | Brussels Airlines",
+      "url": "https://www.brusselsairlines.com/be/en/contact",
+      "snippet": "Would you like to contact us or find information? Find phone numbers and general or booking-related assistance here."
+    },
+    {
+      "title": "Startseite | Brussels Airlines",
+      "url": "https://www.brusselsairlines.com/de/de/homepage",
+      "snippet": "Fliegen Sie mit Brussels Airlines zu weltweit spannenden Reisezielen. Buchen Sie Ihren Flug und genießen Sie erstklassigen Service."
+    },
+    {
+      "title": "Online incheckopties - Brussels Airlines",
+      "url": "https://www.brusselsairlines.com/nl/nl/check-in-options-and-info/online-check-in-options",
+      "snippet": "Gebruik online inchecken voor je vlucht en ontvang meteen je instapkaart op je computer, smartphone of tablet."
+    },
+    {
+      "title": "Security Fast Lanes | Brussels Airlines",
+      "url": "https://www.brusselsairlines.com/be/en/plan-your-trip/airport-info/security-fast-lanes",
+      "snippet": "As an Brussels Airlines Business Class passenger, HON Circle Member, Senator or Star Alliance Gold member, you are accustomed …"
+    }
+  ]
+}

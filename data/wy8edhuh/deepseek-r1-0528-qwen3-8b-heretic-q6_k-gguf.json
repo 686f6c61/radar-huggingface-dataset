@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "wy8edhuh/DeepSeek-R1-0528-Qwen3-8B-heretic-Q6_K-GGUF",
+  "slug": "wy8edhuh-deepseek-r1-0528-qwen3-8b-heretic-q6_k-gguf",
+  "author": "wy8edhuh",
+  "url": "https://huggingface.co/wy8edhuh/DeepSeek-R1-0528-Qwen3-8B-heretic-Q6_K-GGUF",
+  "created_at": "2026-09-14T12:39:37.000Z",
+  "updated_at": "2026-09-14T12:40:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:jpvan4/DeepSeek-R1-0528-Qwen3-8B-heretic",
+    "base_model:quantized:jpvan4/DeepSeek-R1-0528-Qwen3-8B-heretic",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 6725895360,
+  "storage_human": "6.7 GB",
+  "base_model": "jpvan4/DeepSeek-R1-0528-Qwen3-8B-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.fr/mapfiles/home3.html",
+      "snippet": "Explore and navigate the world with Google Maps, offering directions, local business information, and street views."
+    },
+    {
+      "title": "Indoor – Google Maps",
+      "url": "https://maps.google.fr/help/maps/indoormaps/",
+      "snippet": "Indoor Google Maps create a more convenient and enjoyable visitor experience at no cost! Your visitors can spend more time …"
+    },
+    {
+      "title": "Transit – Google Maps",
+      "url": "https://maps.google.fr/intl/fr/landing/transit/",
+      "snippet": "If you provide a transportation service that is open to the public, and operates with fixed schedules and routes, we welcome your …"
+    },
+    {
+      "title": "Les photos Street View proviennent de deux sources - Google Maps",
+      "url": "https://maps.google.fr/intl/fr/streetview/explore/",
+      "snippet": "Découvrez en quoi consiste Street View, les lieux que nous avons déjà photographiés et ceux qui le seront prochainement. Pour …"
+    },
+    {
+      "title": "Plans d'étages pour Google Maps",
+      "url": "https://maps.google.fr/help/maps/floorplans/",
+      "snippet": "Ajoutez les plans vous-même Trouvez le bâtiment sur la carte. Transférez une image de votre plan d'étage ou d'orientation. Alignez …"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "SaifoS/SmolVLM-Instruct",
+  "slug": "saifos-smolvlm-instruct",
+  "author": "SaifoS",
+  "url": "https://huggingface.co/SaifoS/SmolVLM-Instruct",
+  "created_at": "2026-09-14T12:17:30.000Z",
+  "updated_at": "2026-09-14T12:17:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "idefics3",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "dataset:HuggingFaceM4/the_cauldron",
+    "dataset:HuggingFaceM4/Docmatix",
+    "arxiv:2504.05299",
+    "base_model:HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "base_model:quantized:HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2246272880,
+  "parameters_human": "2.25B",
+  "storage_bytes": 26772261940,
+  "storage_human": "26.8 GB",
+  "base_model": "HuggingFaceTB/SmolLM2-1.7B-Instruct, google/siglip-so400m-patch14-384",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Die Wahl der Schwerbehindertenvertretung: Das VEREINFACHTE …",
+      "url": "https://www.sbv-wahl.de/Downloads/SBV/ifb_SBV-Wahlverfahren_2026.pdf",
+      "snippet": "Die Wahl der Schwerbehindertenvertretung: Die Wahlversammlung mittels Video- und Telefonkonferenz im vereinfachten …"
+    },
+    {
+      "title": "Wahl der Schwerbehindertenvertretung 2026 | BIH",
+      "url": "https://magazin.bih.de/schwerpunkte/wahl-der-schwerbehindertenvertretung-2026/",
+      "snippet": "Dieses Jahr findet wieder die Wahl zur Schwerbehindertenvertretung (SBV) statt. Eine Schwerbehindertenvertretung kann in …"
+    },
+    {
+      "title": "Jetzt online: der digitale SBV-Wahlwegweiser | BIH",
+      "url": "https://www.bih.de/bih/aktuelle-meldungen/detail/jetzt-online-der-digitale-wahlwegweiser-zur-sbv-wahl/",
+      "snippet": "Mar 24, 2026 · Der neue Wahlwegweiser zur SBV-Wahl 2026 ist jetzt online: Interaktiv und leicht verständlich führt er Schritt für …"
+    },
+    {
+      "title": "SBV_Wahl 2026 im Bereich MAV - aul-seminare.de",
+      "url": "https://www.aul-seminare.de/wp-content/uploads/2025/05/sbv-wahl-fuer-die-mav-aul-seminare-2026-1.pdf",
+      "snippet": "Turnusgemäß finden in Betrieben mit einer Mitarbeitendenvertretung (MAV) die nächsten Wahlen der Schwerbehindertenvertretung …"
+    },
+    {
+      "title": "SBV Wahl | Wahlverfahren | Vorbereitung zur Wahl",
+      "url": "https://www.sbv-wahl.de/wahlverfahren",
+      "snippet": "Wie gehen Sie dabei Schritt für Schritt vor, von der Einladung zur (digitalen) Wahlversammlung bis zum Verkünden des …"
+    }
+  ]
+}

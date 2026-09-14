@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mosetireagan/deplyze-mini",
+  "slug": "mosetireagan-deplyze-mini",
+  "author": "mosetireagan",
+  "url": "https://huggingface.co/mosetireagan/deplyze-mini",
+  "created_at": "2026-09-14T12:26:41.000Z",
+  "updated_at": "2026-09-14T12:35:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deplyze_mini",
+    "text-generation",
+    "dependency-intelligence",
+    "supply-chain-security",
+    "software-composition-analysis",
+    "vulnerability-remediation",
+    "lora",
+    "peft",
+    "en",
+    "dataset:mosetireagan/deplyze-mini-dataset",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40,
+  "storage_human": "40 B",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Windows-Zuverlässigkeitsverlauf anzeigen und löschen",
+      "url": "https://www.computerbild.de/artikel/cb-Tipps-Software-Windows-Zuverlaessigkeitsverlauf-anzeigen-und-loeschen-Tipps-und-Tools-38208053.html",
+      "snippet": "Apr 2, 2024 · Seit Windows Vista und Windows 7 steckt in den Betriebssystemen von Microsoft der Zuverlässigkeitsverlauf: Er verrät …"
+    },
+    {
+      "title": "Zuverlässigkeitsverlauf: Versteckte Windows-Werkzeug zeigt, was …",
+      "url": "https://www.pcwelt.de/article/3164808/windows-zuverlaessigkeitsverlauf-abstuerze-fehler-anzeigen.html",
+      "snippet": "Jun 26, 2026 · Der Zuverlässigkeitsverlauf in Windows 11 zeigt Abstürze, Update-Probleme und andere Fehler auf einen Blick."
+    },
+    {
+      "title": "Windows: Fehler mit dem Zuverlässigkeitsverlauf finden",
+      "url": "https://www.computerwoche.de/article/2860596/fehler-mit-dem-zuverlaessigkeitsverlauf-finden.html",
+      "snippet": "Mithilfe der Windows-Suche lässt sich der Zuverlässigkeitsverlauf schnell finden und aufrufen."
+    },
+    {
+      "title": "Zuverlässigkeitsverlauf vs. Ereignisanzeige Windows 11",
+      "url": "https://www.deskmodder.de/wiki/index.php?title=Zuverl%C3%A4ssigkeitsverlauf_vs._Ereignisanzeige_Windows_11",
+      "snippet": "Beide haben ihre Daseinsberechtigung. Trotzdem sollte man immer erst den Zuverlässigkeitsverlauf überprüfen. Wir zeigen euch, …"
+    },
+    {
+      "title": "Windows-Zuverlässigkeitsverlauf öffnen | kostnix-web.de",
+      "url": "https://kostnix-web.de/tipps-tricks/windows-zuverlaessigkeitsverlauf/",
+      "snippet": "Der Windows-Zuverlässigkeitsverlauf zeigt Dir übersichtlich, wie stabil Dein Computer in den letzten Tagen und Wochen gelaufen ist. …"
+    }
+  ]
+}

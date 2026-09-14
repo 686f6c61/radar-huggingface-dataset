@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "MMOPD/Qwen3-4B-OT3-medical",
+  "slug": "mmopd-qwen3-4b-ot3-medical",
+  "author": "MMOPD",
+  "url": "https://huggingface.co/MMOPD/Qwen3-4B-OT3-medical",
+  "created_at": "2026-09-14T10:39:08.000Z",
+  "updated_at": "2026-09-14T10:46:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "medical",
+    "reasoning",
+    "thinking",
+    "sft",
+    "distillation",
+    "mmopd",
+    "conversational",
+    "en",
+    "dataset:GBaker/MedQA-USMLE-4-options",
+    "base_model:MMOPD/Qwen3-4B-OT3-2ep",
+    "base_model:finetune:MMOPD/Qwen3-4B-OT3-2ep",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8834317158,
+  "storage_human": "8.8 GB",
+  "base_model": "MMOPD/Qwen3-4B-OT3-2ep",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RIJOMAX · Município de Tabuaço",
+      "url": "https://www.cm-tabuaco.pt/turismo/visitar/espacos-museologicos/galeria",
+      "snippet": "Relojoeiro e ourives com muito talento e arte em Tabuaço, tornou-se notícia quando, em 2002, decidiu vender o seu “Rijomax” ao …"
+    },
+    {
+      "title": "RIJOMAX - o relógio mais completo do mundo",
+      "url": "https://www.institutoportuguesderelojoaria.pt/post/rijomax-o-rel%C3%B3gio-mais-completo-do-mundo",
+      "snippet": "Ao longo de 28 anos, o Rijomax demorou 16 000 horas a construir. É preciso não esquecer que este é o relógio máximo, logo, tem …"
+    },
+    {
+      "title": "RIJOMAX: o mais completo, complexo, exótico e insólito relógio …",
+      "url": "https://www.noticiasdetabuaco.pt/entrevista.php?id=5",
+      "snippet": "Amândio José Ribeiro nasceu em 1912, 18 de novembro, na freguesia de Santa Eufémia, no concelho de Pinhel. No entanto, passou …"
+    },
+    {
+      "title": "Tabuaço e relojoaria de Amândio José Ribeiro – RTP Arquivos",
+      "url": "https://arquivos.rtp.pt/conteudos/tabuaco-e-relojoaria-de-amandio-jose-ribeiro/",
+      "snippet": "12 hours ago · Vistas da vila do Tabuaço e interior da relojoaria de Amândio José Ribeiro, responsável pela invenção do relógio …"
+    },
+    {
+      "title": "Rijomax: o relógio mais completo do mundo está em Tabuaço",
+      "url": "https://www.viajecomigo.com/2017/01/21/rijomax-relogio-tabuaco/",
+      "snippet": "Jan 21, 2017 · O nome RIJOMAX é um acrónimo de Amândio José Ribeiro e o relógio foi construído entre 1945 e 1973. Durante 28 …"
+    }
+  ]
+}

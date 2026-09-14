@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "formalmathatepfl/qwen3-hybrid-grpo",
+  "slug": "formalmathatepfl-qwen3-hybrid-grpo",
+  "author": "formalmathatepfl",
+  "url": "https://huggingface.co/formalmathatepfl/qwen3-hybrid-grpo",
+  "created_at": "2026-09-14T11:09:59.000Z",
+  "updated_at": "2026-09-14T11:12:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "grpo",
+    "lean",
+    "theorem-proving",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939446,
+  "storage_human": "16.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Exchange Team Blog | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/category/exchange/blog/exchange",
+      "snippet": "Exchange Server AD FS Modern Authentication: Expanded Outlook client support Expanded Outlook client support for Exchange …"
+    },
+    {
+      "title": "Outlook Login Issues? Expert Help & Troubleshooting Guide",
+      "url": "https://www.justanswer.com/microsoft-office/tqhip-outlook-login-failed-too-many-attempts.html?msockid=0fd2c94243826bb20dccde9642246a33",
+      "snippet": "Repeated login failures trigger temporary account lockouts in Outlook. Clear browser cache and cookies on MacOS, and update the …"
+    },
+    {
+      "title": "Outlook Login Issues? Expert Help & Troubleshooting Guide",
+      "url": "https://www.justanswer.com/microsoft-office/ue4zd-microsoft-outlook-login-without-email-access.html?msockid=0fd2c94243826bb20dccde9642246a33",
+      "snippet": "Troubleshooting Microsoft Outlook Login Issues on Windows 11 Outlook login failures and account access problems due to outdated …"
+    },
+    {
+      "title": "Outlook | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/category/Outlook",
+      "snippet": "In Outlook MacOS, users can't drop attachments in the middle of the 'Attach Files' box In Outlook MacOS, when you click and drag a …"
+    },
+    {
+      "title": "Outlook Login Loop in Edge? Expert Troubleshooting Guide",
+      "url": "https://www.justanswer.com/microsoft-office/vethp-outlook-link-redirects-login-screen-edge.html?msockid=0fd2c94243826bb20dccde9642246a33",
+      "snippet": "When Outlook links redirect to the login screen in Edge, clear the browser cache and cookies to remove corrupted data. Ensure Edge …"
+    }
+  ]
+}

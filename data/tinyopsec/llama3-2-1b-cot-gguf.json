@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "tinyopsec/llama3.2-1b-CoT-GGUF",
+  "slug": "tinyopsec-llama3-2-1b-cot-gguf",
+  "author": "tinyopsec",
+  "url": "https://huggingface.co/tinyopsec/llama3.2-1b-CoT-GGUF",
+  "created_at": "2026-09-14T10:54:58.000Z",
+  "updated_at": "2026-09-14T11:05:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama-3",
+    "llama-3.2",
+    "quantized",
+    "text-generation",
+    "chain-of-thought",
+    "reasoning",
+    "unsloth",
+    "trl",
+    "openthoughts",
+    "en",
+    "base_model:harshwardhanjadhav/llama3.2-1b-CoT",
+    "base_model:quantized:harshwardhanjadhav/llama3.2-1b-CoT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1235814432,
+  "parameters_human": "1.24B",
+  "storage_bytes": 10855826592,
+  "storage_human": "10.9 GB",
+  "base_model": "harshwardhanjadhav/llama3.2-1b-CoT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Welkom - Make it Meme",
+      "url": "https://makeitmeme.com/nl/",
+      "snippet": "Make it Meme is het gratis multiplayer spel over het maken en beoordelen van memes. Speel het nu met je vrienden!"
+    },
+    {
+      "title": "Bienvenido - Make it Meme",
+      "url": "https://makeitmeme.com/es/",
+      "snippet": "Make it Meme es el juego multijugador gratuito sobre crear y calificar memes. ¡Juega ahora con tus amigos!"
+    },
+    {
+      "title": "Make it Meme - Das Online Meme Party Game",
+      "url": "https://makeitmeme.com/de/",
+      "snippet": "Make it Meme - das ultimative Party-Spiel für Meme-Liebhaber. Erschafft zusammen die witzigsten Memes und kürt den Meme-Lord …"
+    },
+    {
+      "title": "Benvenuto - Make it Meme",
+      "url": "https://makeitmeme.com/it/",
+      "snippet": "Make it Meme è il gioco multiplayer gratuito per creare e valutare meme. Gioca ora con i tuoi amici!"
+    },
+    {
+      "title": "Hoş geldin - Make it Meme",
+      "url": "https://makeitmeme.com/tr/",
+      "snippet": "Make it Meme, meme oluşturma ve değerlendirme üzerine ücretsiz çok oyunculu bir oyundur. Hemen arkadaşlarınla oyna!"
+    }
+  ]
+}

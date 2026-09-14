@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/nca_1pct_100M_computematched_adamwppt_1e18_s2_2026-09-14_13-35-50_839332-pt",
+  "slug": "alexkstern-nca_1pct_100m_computematched_adamwppt_1e18_s2_2026-09-14_13-35-50_839332-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/nca_1pct_100M_computematched_adamwppt_1e18_s2_2026-09-14_13-35-50_839332-pt",
+  "created_at": "2026-09-14T13:42:03.000Z",
+  "updated_at": "2026-09-14T13:42:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_nca-paper-share20-2048",
+    "seed_2",
+    "case_c",
+    "lr_trapezoid",
+    "depth_20",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4891726649,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ECCAIRS 2 Central Hub | Home",
+      "url": "https://aviationreporting.eu/",
+      "snippet": "ECCAIRS 2 is a digital platform established to assist aviation stakeholders in collecting, sharing, and analyzing their safety aviation …"
+    },
+    {
+      "title": "ECCAIRS2 - Sign in",
+      "url": "https://api.aviationreporting.eu/idp/login",
+      "snippet": "Forgot your password?"
+    },
+    {
+      "title": "ECCAIRS2 | Report an Occurrence",
+      "url": "https://e2.aviationreporting.eu/",
+      "snippet": "Click the button below to log in and start reporting. Don´t have an account? To register your organisation, please contact your …"
+    },
+    {
+      "title": "ECCAIRS2",
+      "url": "https://e2.aviationreporting.eu/?Origin=1",
+      "snippet": "ECCAIRS2 ... ECCAIRS2"
+    },
+    {
+      "title": "ECCAIRS 2 Central Hub | Home",
+      "url": "https://test-aviationreporting.eu/",
+      "snippet": "Report occurrences quickly from any device, anywhere. Reporting organisations and software providers. National, EU and …"
+    }
+  ]
+}

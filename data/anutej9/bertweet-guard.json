@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Anutej9/bertweet-guard",
+  "slug": "anutej9-bertweet-guard",
+  "author": "Anutej9",
+  "url": "https://huggingface.co/Anutej9/bertweet-guard",
+  "created_at": "2026-09-14T17:03:34.000Z",
+  "updated_at": "2026-09-14T17:24:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134902275,
+  "parameters_human": "134.9M",
+  "storage_bytes": 544371520,
+  "storage_human": "544 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bassia scoparia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bassia_scoparia",
+      "snippet": "Its common names include summer cypress, [2] mock-cypress, kochia, belvedere, World's Fair plant, burningbush, [1] Mexican …"
+    },
+    {
+      "title": "Kochia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kochia",
+      "snippet": "Kochia / ˈkoʊkiə / [1] is a synonym of the genus Bassia, which belongs to the subfamily Camphorosmoideae of family …"
+    },
+    {
+      "title": "How to Grow Kochia Plant Easily | Bassia scoparia Care",
+      "url": "https://indiagardening.com/kochia-plant/",
+      "snippet": "Nov 3, 2024 · The Kochia Plant is a versatile and hardy annual herbaceous plant that is native to regions of Eurasia. This plant is …"
+    },
+    {
+      "title": "Kochia (Kochia scoparia) Plant Fact Sheet - USDA",
+      "url": "https://plants.sc.egov.usda.gov/DocumentLibrary/factsheet/pdf/fs_kosc.pdf",
+      "snippet": "Kochia is native to central and eastern Europe and Asia. Kochia can be found in a very wide range of temperatures and climatic …"
+    },
+    {
+      "title": "Revised Kochia Factsheet - growiwm.org",
+      "url": "https://growiwm.org/wp-content/uploads/2025/02/REVISED-Kochia-Factsheet.pdf-1.pdf",
+      "snippet": "Aug 10, 2020 · Kochia leaves are alternate with simple blades that are highly pubescent and arise on erect, highly branched stems. …"
+    }
+  ]
+}

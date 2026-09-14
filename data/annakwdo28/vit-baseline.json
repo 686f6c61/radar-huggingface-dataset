@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Annakwdo28/vit-baseline",
+  "slug": "annakwdo28-vit-baseline",
+  "author": "Annakwdo28",
+  "url": "https://huggingface.co/Annakwdo28/vit-baseline",
+  "created_at": "2026-09-14T14:19:32.000Z",
+  "updated_at": "2026-09-14T14:19:38.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "harmonie mutuelle: m'enfoutisme + faut payer pour qu'il vous …",
+      "url": "https://forum.quechoisir.org/harmonie-mutuelle-m-enfoutisme-faut-payer-pour-qu-il-vous-rembourse-t253695.html",
+      "snippet": "Oct 3, 2018 · Re: harmonie mutuelle: m'enfoutisme + faut payer pour qu'il vous rembourse Messagepar Nico37 » lun. nov. 25, 2019 …"
+    },
+    {
+      "title": "Harmonie Mutuelle A EVITER ABSOLUMENT - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/harmonie-mutuelle-a-eviter-absolument-t83491.html",
+      "snippet": "Dec 5, 2016 · Harmonie Mutuelle A EVITER ABSOLUMENT !!! Messagepar Aure_2809 » lun. déc. 05, 2016 9:48 am Bonjour, Ceci …"
+    },
+    {
+      "title": "Harmonie Mutuelle attention !!! - Assurance Santé - Mutuelle - Forum ...",
+      "url": "https://forum.quechoisir.org/harmonie-mutuelle-attention-t51587.html",
+      "snippet": "Feb 22, 2016 · Harmonie Mutuelle attention !!! Messagepar angel91 » lun. févr. 22, 2016 9:28 am Harmonie, ce n’est pas très …"
+    },
+    {
+      "title": "Capital décès : quand Harmonie Mutuelle vole l'argent de ses …",
+      "url": "https://forum.quechoisir.org/capital-deces-quand-harmonie-mutuelle-vole-l-argent-de-ses-adherents-t177221.html",
+      "snippet": "Sep 11, 2018 · Re: Capital décès : quand Harmonie Mutuelle vole l'argent de ses adhérents Messagepar Nico37 » mar. sept. 11, …"
+    },
+    {
+      "title": "Harmonie Mutuelle - contrat MUTOBSEQUES : Arnaque",
+      "url": "https://forum.quechoisir.org/harmonie-mutuelle-contrat-mutobseques-arnaque-t55237-20.html",
+      "snippet": "Jan 21, 2025 · Nous avons découvert 2 contrats mutex mutobseques aesio mutuelle qui sont pour moins sans aucun intérêt et …"
+    }
+  ]
+}

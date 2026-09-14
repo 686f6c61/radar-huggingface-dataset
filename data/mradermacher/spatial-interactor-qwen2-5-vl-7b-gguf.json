@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Spatial-Interactor-Qwen2.5-VL-7B-GGUF",
+  "slug": "mradermacher-spatial-interactor-qwen2-5-vl-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Spatial-Interactor-Qwen2.5-VL-7B-GGUF",
+  "created_at": "2026-09-14T14:21:39.000Z",
+  "updated_at": "2026-09-14T14:27:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 21905915136,
+  "storage_human": "21.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "On This Day - Today in History, Film, Music and Sport",
+      "url": "https://www.onthisday.com/",
+      "snippet": "Find out what happened on any date or day in history with On This Day. Explore historical events, birthdays, deaths and famous …"
+    },
+    {
+      "title": "Today in History Fun Facts - On This Day",
+      "url": "https://www.onthisday.com/today/fun-facts.php",
+      "snippet": "Fun facts from today in history. Funny, interesting and simply incredible events that happened on this day in history."
+    },
+    {
+      "title": "Celebrity Birthdays Today - On This Day",
+      "url": "https://www.onthisday.com/today/celebrity-birthdays.php",
+      "snippet": "Find out which celebrities are celebrating birthdays today and which celebs were born on this day in history including famous actors, …"
+    },
+    {
+      "title": "Today's Birthdays in Music - On This Day",
+      "url": "https://www.onthisday.com/music/birthdays.php",
+      "snippet": "Birthdays of famous musicians, composers, jazz musicians, opera singers, pop stars, rappers, R&B singer-songwriters and rockers …"
+    },
+    {
+      "title": "Who Died Today in History? - On This Day",
+      "url": "https://www.onthisday.com/today/deaths.php",
+      "snippet": "Today's deaths of important, famous and notable people from throughout history. Search over 40,000 famous deaths in our today in …"
+    }
+  ]
+}

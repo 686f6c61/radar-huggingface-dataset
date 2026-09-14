@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "neemon/anlp-a2-part1-moe_4e2a",
+  "slug": "neemon-anlp-a2-part1-moe_4e2a",
+  "author": "neemon",
+  "url": "https://huggingface.co/neemon/anlp-a2-part1-moe_4e2a",
+  "created_at": "2026-09-14T10:41:10.000Z",
+  "updated_at": "2026-09-14T10:41:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "vi",
+    "ja"
+  ],
+  "tags": [
+    "pytorch",
+    "mixture-of-experts",
+    "translation",
+    "from-scratch",
+    "en",
+    "vi",
+    "ja",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 166503102,
+  "storage_human": "167 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Photoshop-Alternativen kostenlos: Die besten Gratis-Bildbearbeiter",
+      "url": "https://www.chip.de/test-kaufberatung/software-apps/photoshop-alternativen-kostenlos-die-besten-gratis-bildbearbeiter_31619b84-3d1c-4e70-9261-1f544c49cabf.html",
+      "snippet": "Jul 10, 2026 · Für ein Bildbearbeitungsprogramm müssen Sie nicht zwingend Geld ausgeben. CHIP präsentiert Ihnen hier die besten …"
+    },
+    {
+      "title": "Bildbearbeitung kostenlos: Diese Freeware kann alles - COMPUTER …",
+      "url": "https://www.computerbild.de/artikel/Tipps-Software-Bildbearbeitung-kostenlos-Top-Freeware-zum-Download-00880-3261446.html",
+      "snippet": "Mar 21, 2026 · Sie wollen für gute Bildbearbeitungs-Software nichts zahlen? Hier finden Sie empfehlenswerte Anwendungen – alle …"
+    },
+    {
+      "title": "Foto-Editor: Online-Bildbearbeitung | Fotos bearbeiten | Canva",
+      "url": "https://www.canva.com/de_de/bildbearbeitung/?msockid=23e74687102a65c43a4d5153111c64e4",
+      "snippet": "Mit dem kostenlosen Foto-Editor von Canva steht es dir frei, das gesamte Bild, nur den Vordergrund oder nur den Hintergrund …"
+    },
+    {
+      "title": "Photo Editor : Pixlr.com - kostenlose Bildbearbeitung online",
+      "url": "https://pixlr.com/de/express/",
+      "snippet": "Wenn Sie nach modernen Fotobearbeitungsfunktionen direkt in Ihrem Browser suchen, ist Pixlr Express der Foto-Editor der nächsten …"
+    },
+    {
+      "title": "Fotobearbeitung: Bilder online bearbeiten - kostenlos und schnell",
+      "url": "https://www.fotor.com/de/",
+      "snippet": "Mit dem kostenlosen Online-Fotobearbeiter von Fotor können Sie Ihre Fotos bearbeiten, zuschneiden, die Größe ändern oder Effekte …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "papineau1837/Llama-3.2-3B-Instruct-Q4_K_S.gguf",
+  "slug": "papineau1837-llama-3-2-3b-instruct-q4_k_s-gguf",
+  "author": "papineau1837",
+  "url": "https://huggingface.co/papineau1837/Llama-3.2-3B-Instruct-Q4_K_S.gguf",
+  "created_at": "2026-09-14T18:25:20.000Z",
+  "updated_at": "2026-09-14T18:38:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749888,
+  "parameters_human": "3.21B",
+  "storage_bytes": 1928200736,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dysk Google - Pomoc",
+      "url": "https://support.google.com/drive/?hl=pl",
+      "snippet": "Oficjalne Centrum pomocy produktu Dysk Google, w którym można znaleźć porady i samouczki na temat korzystania z produktu, jak …"
+    },
+    {
+      "title": "Instalowanie Dysku na komputer - Centrum edukacji Google Workspace",
+      "url": "https://support.google.com/a/users/answer/13022292?hl=pl",
+      "snippet": "Dysk na komputer umożliwia wyszukiwanie i otwieranie na komputerze plików zapisanych na Dysku Google. Przy użyciu Dysku na …"
+    },
+    {
+      "title": "Rozwiązywanie problemów z Dyskiem na komputer - Komputer - Dysk …",
+      "url": "https://support.google.com/drive/answer/2565956?hl=pl&co=GENIE.Platform%3DDesktop",
+      "snippet": "Wszystkie nowe pliki i foldery utworzone na Dysku lub w aplikacji Dysk na komputer są synchronizowane i wyświetlają się na …"
+    },
+    {
+      "title": "Dodawanie zdjęć i filmów z Dysku Google do Zdjęć Google",
+      "url": "https://support.google.com/photos/answer/6156103?hl=pl",
+      "snippet": "Sprawdzanie miejsca na dysku Zdjęcia i filmy zajmują miejsce na Twoim koncie Google. Kopie zapasowe elementów z Dysku …"
+    },
+    {
+      "title": "Przesyłanie plików i folderów na Dysk Google",
+      "url": "https://support.google.com/drive/answer/2424368?hl=pl&co=GENIE.Platform%3DAndroid",
+      "snippet": "Wypróbuj Google Workspace już dziś Swoje pliki możesz przesłać na Dysk Google, a potem je tam otwierać, udostępniać i …"
+    }
+  ]
+}

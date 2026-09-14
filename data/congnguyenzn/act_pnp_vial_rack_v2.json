@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "congnguyenzn/act_pnp_vial_rack_v2",
+  "slug": "congnguyenzn-act_pnp_vial_rack_v2",
+  "author": "congnguyenzn",
+  "url": "https://huggingface.co/congnguyenzn/act_pnp_vial_rack_v2",
+  "created_at": "2026-09-14T12:45:39.000Z",
+  "updated_at": "2026-09-14T12:46:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:congnguyenzn/pnp_vial_rack",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 28034182,
+  "parameters_human": "28.0M",
+  "storage_bytes": 112176992,
+  "storage_human": "112 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Messenger",
+      "url": "https://www.messenger.com/",
+      "snippet": "Hang out anytime, anywhere - Messenger makes it easy and fun to stay close to your favorite people."
+    },
+    {
+      "title": "Messenger",
+      "url": "https://www.messenger.com/login",
+      "snippet": "Connect with your favorite people. Continue"
+    },
+    {
+      "title": "Messenger features - Facebook",
+      "url": "https://web.messenger.com/features",
+      "snippet": "Hang out anytime, anywhere - Messenger makes it easy and fun to stay close to your favorite people."
+    },
+    {
+      "title": "Messenger Help Center",
+      "url": "https://www.messenger.com/help",
+      "snippet": "Learn how to use Messenger, fix a problem, and get answers to your questions."
+    },
+    {
+      "title": "Recover an Account | Messenger Help Center",
+      "url": "https://www.messenger.com/help/283100488694834",
+      "snippet": "Recover an Account Recover your Facebook account if you can’t log in Recover your Facebook account if you were hacked Recover …"
+    }
+  ]
+}

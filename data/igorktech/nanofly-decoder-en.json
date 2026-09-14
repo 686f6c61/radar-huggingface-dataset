@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "igorktech/nanofly-decoder-en",
+  "slug": "igorktech-nanofly-decoder-en",
+  "author": "igorktech",
+  "url": "https://huggingface.co/igorktech/nanofly-decoder-en",
+  "created_at": "2026-09-14T15:11:40.000Z",
+  "updated_at": "2026-09-14T15:35:09.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "fly",
+    "text-generation",
+    "connectome",
+    "reservoir-computing",
+    "echo-state-network",
+    "fruit-fly",
+    "drosophila",
+    "tinystories",
+    "custom_code",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34466505,
+  "parameters_human": "34.5M",
+  "storage_bytes": 138345302,
+  "storage_human": "138 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "סטודנטים | האוניברסיטה העברית בירושלים",
+      "url": "https://new.huji.ac.il/%D7%A1%D7%98%D7%95%D7%93%D7%A0%D7%98%D7%99%D7%9D",
+      "snippet": "חדשים כאן שער לסטודנטים דיור ומעונות האתר למידע והרשמה אפליקציית MyHuji דרכי הגעה דיקנט הסטודנטים מפות שירותי דפוס ומוצרי סמל מילון …"
+    },
+    {
+      "title": "סטודנטים – אוניברסיטת אריאל בשומרון",
+      "url": "https://www.ariel.ac.il/wp/students-gate/",
+      "snippet": "בימים אלו מתקיימות עבודות נרחבות על מנת לחדש ולשפר את פני הקמפוס ולהפכו למרחב ירוק ונגיש יותר... בואו להתעדכן באירועים הכי שווים בקמפוס! …"
+    },
+    {
+      "title": "מידע אישי לתלמידים",
+      "url": "https://www.huji.ac.il/dataj/controller/stu",
+      "snippet": "לאחר הכניסה למערכת תעמוד לרשותכם אופצית סיום. חובה לצאת מהמערכת בעזרתה וזאת כדי להגן על המידע האישי שלכם."
+    },
+    {
+      "title": "אזור אישי ממשלתי - MyGov",
+      "url": "https://my.gov.il/landing/index.html",
+      "snippet": "מידע אישי ועסקי מרשויות הממשלה וביצוע פעולות בלחיצת כפתור."
+    },
+    {
+      "title": "האוניברסיטה העברית בירושלים",
+      "url": "https://new.huji.ac.il/",
+      "snippet": "האוניברסיטה העברית בירושלים היא האוניברסיטה המובילה והוותיקה ביותר בישראל. בוגריה בעלי שם בינלאומי בכל תחומי המחקר, לרבות פרופסורים …"
+    }
+  ]
+}

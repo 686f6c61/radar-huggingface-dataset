@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "JasonYANG170/Qwen2.5-0.5B-Instruct-ONNX",
+  "slug": "jasonyang170-qwen2-5-0-5b-instruct-onnx",
+  "author": "JasonYANG170",
+  "url": "https://huggingface.co/JasonYANG170/Qwen2.5-0.5B-Instruct-ONNX",
+  "created_at": "2026-09-14T17:01:32.000Z",
+  "updated_at": "2026-09-14T17:10:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "qwen2",
+    "text-generation",
+    "webgpu",
+    "conversational",
+    "zh",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3833082306,
+  "storage_human": "3.8 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Breaking News, Latest News and Videos | CNN",
+      "url": "https://www.cnn.com/",
+      "snippet": "View the latest news and breaking news today for U.S., world, weather, entertainment, politics and health at CNN.com."
+    },
+    {
+      "title": "CNN All Access with Optimum | Stream Live News & Originals",
+      "url": "https://www.optimum.com/articles/tv/cnn-all-access-stream-live-news",
+      "snippet": "Nov 19, 2025 · CNN All Access is the single destination where you can find trusted journalism, breaking news, and the exclusive …"
+    },
+    {
+      "title": "CNN: Live & Breaking News - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.cnn.mobile.android.phone&hl=en-US",
+      "snippet": "The CNN app is your destination for unrivaled, fact-based reporting. Stay informed at every turn as the story breaks through short …"
+    },
+    {
+      "title": "CNN - Facebook",
+      "url": "https://www.facebook.com/cnn/",
+      "snippet": "Although AI CEOs Sam Altman and Elon Musk, among others, agreed with Dario Amodei's proposal to work together to slow down …"
+    },
+    {
+      "title": "World news - breaking news, video, headlines and opinion | CNN",
+      "url": "https://www.cnn.com/world",
+      "snippet": "View CNN world news today for international news and videos from Europe, Asia, Africa, the Middle East and the Americas."
+    }
+  ]
+}

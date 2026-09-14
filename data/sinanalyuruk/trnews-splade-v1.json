@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "sinanalyuruk/trnews-splade-v1",
+  "slug": "sinanalyuruk-trnews-splade-v1",
+  "author": "sinanalyuruk",
+  "url": "https://huggingface.co/sinanalyuruk/trnews-splade-v1",
+  "created_at": "2026-09-14T12:43:13.000Z",
+  "updated_at": "2026-09-14T12:46:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "safetensors",
+    "sparse-retrieval",
+    "splade",
+    "information-retrieval",
+    "turkish",
+    "pgvector",
+    "tr",
+    "dataset:batubayk/TR-News",
+    "base_model:sinanalyuruk/trmteb-trnews-v1",
+    "base_model:finetune:sinanalyuruk/trmteb-trnews-v1",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 442755304,
+  "storage_human": "443 MB",
+  "base_model": "sinanalyuruk/trmteb-trnews-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Правила сообщества YouTube",
+      "url": "https://support.google.com/youtube/answer/9288567?hl=ru",
+      "snippet": "Используя YouTube, вы становитесь частью огромного сообщества авторов и зрителей со всего мира. Чтобы всем в нем …"
+    },
+    {
+      "title": "GitHub - naver/splade: SPLADE: sparse neural search (SIGIR21, SIGIR22)",
+      "url": "https://github.com/naver/splade",
+      "snippet": "SPLADE: sparse neural search (SIGIR21, SIGIR22). Contribute to naver/splade development by creating an account on GitHub."
+    },
+    {
+      "title": "YouTube 動画をアップロードする",
+      "url": "https://support.google.com/youtube/answer/57407?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "YouTube に動画をアップロードする手順は簡単です。パソコンやモバイル デバイスから動画をアップロードする手順は次のとおり …"
+    },
+    {
+      "title": "sinanalyuruk (Sinan Alyuruk) - Hugging Face",
+      "url": "https://huggingface.co/sinanalyuruk",
+      "snippet": "User profile of Sinan Alyuruk on Hugging Face"
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    }
+  ]
+}

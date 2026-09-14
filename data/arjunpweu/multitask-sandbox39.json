@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "arjunpweu/multitask-sandbox39",
+  "slug": "arjunpweu-multitask-sandbox39",
+  "author": "arjunpweu",
+  "url": "https://huggingface.co/arjunpweu/multitask-sandbox39",
+  "created_at": "2026-09-14T10:59:16.000Z",
+  "updated_at": "2026-09-14T10:59:21.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Login über Browser Edge nicht möglich - ELSTER Anwender Forum",
+      "url": "https://forum.elster.de/anwenderforum/forum/elster-webanwendungen/mein-elster/297393-login-%C3%BCber-browser-edge-nicht-m%C3%B6glich",
+      "snippet": "Dec 29, 2007 · Seit einigen Tagen kann ich mich nicht mehr über den Browser Edge im Elster-Portal anmelden (Windows 10). Eine …"
+    },
+    {
+      "title": "arjunpweu/multitask-sandbox39 · Hugging Face",
+      "url": "https://huggingface.co/arjunpweu/multitask-sandbox39",
+      "snippet": "Overview This repository is a compact, custom PyTorch implementation of Efficientformer for Multitask. The nano configuration is intended for code review, smoke tests, and small controlled experiments rather than as a production-ready pretrained release."
+    },
+    {
+      "title": "wo ist meine pfx-Datei? - ELSTER Anwender Forum",
+      "url": "https://forum.elster.de/anwenderforum/forum/allgemein/sicherheit/6818-wo-ist-meine-pfx-datei",
+      "snippet": "Apr 17, 2011 · Moin, auch ich wurde aufgefordert, mein Sicherheitszertifikat zu verlängern. Beim Login wird eine pfx.-Datei verlangt. …"
+    },
+    {
+      "title": "arjunpweu (Arjun Patel) - Hugging Face",
+      "url": "https://huggingface.co/arjunpweu",
+      "snippet": "Recent Activity updated a model3 days ago arjunpweu/unet-summarizer published a model3 days ago arjunpweu/unet-summarizer View all activity"
+    },
+    {
+      "title": "Erster Login ohne Steuernummer - ELSTER Anwender Forum",
+      "url": "https://forum.elster.de/anwenderforum/forum/elster-webanwendungen/mein-elster/26900-erster-login-ohne-steuernummer",
+      "snippet": "Sep 20, 2017 · Der LogIn in \"Mein ELSTER\" erfolgt ausschließlich über das heruntergeladene Zertifikat und das selbst vergebene …"
+    }
+  ]
+}

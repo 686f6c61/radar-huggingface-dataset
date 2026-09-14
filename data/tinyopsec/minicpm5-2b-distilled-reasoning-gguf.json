@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "tinyopsec/minicpm5-2b-distilled-reasoning-GGUF",
+  "slug": "tinyopsec-minicpm5-2b-distilled-reasoning-gguf",
+  "author": "tinyopsec",
+  "url": "https://huggingface.co/tinyopsec/minicpm5-2b-distilled-reasoning-GGUF",
+  "created_at": "2026-09-14T11:06:48.000Z",
+  "updated_at": "2026-09-14T11:29:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama",
+    "minicpm5",
+    "quantized",
+    "text-generation",
+    "reasoning",
+    "distillation",
+    "chain-of-thought",
+    "qwen3.8-max",
+    "glm-5.2",
+    "kimi-k3",
+    "en",
+    "zh",
+    "base_model:jigs97022/minicpm5-2b-distilled-reasoning",
+    "base_model:quantized:jigs97022/minicpm5-2b-distilled-reasoning",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 21330270304,
+  "storage_human": "21.3 GB",
+  "base_model": "jigs97022/minicpm5-2b-distilled-reasoning",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bayer 04 Leverkusen Fußball GmbH | bayer04.de",
+      "url": "https://www.bayer04.de/de-de",
+      "snippet": "Die offizielle Webseite von Bayer 04 Leverkusen. News, Infos zu Spielern, Spielen in der Bundesliga, UEFA Champions League und …"
+    },
+    {
+      "title": "Teams | Bayer 04 Leverkusen",
+      "url": "https://www.bayer04.de/de-de/page/teams",
+      "snippet": "Current information on the Werkself, the Bayer 04 Women and all of the Bayer 04 teams. Here is the team overview on bayer04.de."
+    },
+    {
+      "title": "Bayer 04 Leverkusen | Vereinsprofil 2026/27 | Alle Teaminfos",
+      "url": "https://www.kicker.de/bayer-04-leverkusen/info/",
+      "snippet": "Alle Infos zum Verein Bayer 04 Leverkusen • Kader - News - Termine - Spielplan - Historie - Statistiken • Wettbewerbe: Bundesliga, …"
+    },
+    {
+      "title": "Bayer 04 Leverkusen | Kader | Bundesliga 2026/27 - kicker",
+      "url": "https://www.kicker.de/Bayer-04-Leverkusen/kader",
+      "snippet": "1. FSV Mainz 05. ..."
+    },
+    {
+      "title": "Bayer 04 Leverkusen - Kader im Detail 26/27 | Transfermarkt",
+      "url": "https://www.transfermarkt.de/bayer-04-leverkusen/kader/verein/15",
+      "snippet": "Diese Seite enthält die detaillierte Kader-Übersicht eines Vereins. Alle Spieler der jeweiligen Mannschaften werden mit ihrem Alter, …"
+    }
+  ]
+}

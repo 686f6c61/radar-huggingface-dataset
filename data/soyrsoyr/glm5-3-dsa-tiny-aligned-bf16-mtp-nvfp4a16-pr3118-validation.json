@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "soyrsoyr/GLM5.3-DSA-Tiny-Aligned-BF16-MTP-NVFP4A16-pr3118-validation",
+  "slug": "soyrsoyr-glm5-3-dsa-tiny-aligned-bf16-mtp-nvfp4a16-pr3118-validation",
+  "author": "soyrsoyr",
+  "url": "https://huggingface.co/soyrsoyr/GLM5.3-DSA-Tiny-Aligned-BF16-MTP-NVFP4A16-pr3118-validation",
+  "created_at": "2026-09-14T16:53:15.000Z",
+  "updated_at": "2026-09-14T16:53:16.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_moe_dsa",
+    "text-generation",
+    "llm-compressor",
+    "compressed-tensors",
+    "mtp",
+    "pr3118-validation",
+    "conversational",
+    "base_model:soyrsoyr/GLM-5.3-MTP-NVFP4-Test-Fixture",
+    "base_model:quantized:soyrsoyr/GLM-5.3-MTP-NVFP4-Test-Fixture",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 88040064,
+  "parameters_human": "88.0M",
+  "storage_bytes": 205892350,
+  "storage_human": "206 MB",
+  "base_model": "soyrsoyr/GLM-5.3-MTP-NVFP4-Test-Fixture",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI Image Generator - Bing Image Creator",
+      "url": "https://www.bing.com/images/create/ai-image-generator/maak%20een%20afbeelding%20van%20een%20zonsondergang%20boven%20een%20witgekalkt%20klifdorp%20aan%20zee%2C%20warme%20oranje%E2%80%91roze%20lucht%2C%20koepels%20en%20windmolens%20die%20gloeien%20in%20gouden%20licht%2C%20dikke%20getextureerde%20penseelstreken%2C%20rijke%20olieverfkleuren%2C%20zachte%20atmosferische%20diepte%2C%20serene%20mediterrane%20sfeer/1-6a5c9350a2ea47e1b615b1dd6ef23b29",
+      "snippet": "Create stunning images with Bing Image Creator, the best free AI image generator. Turn text into AI art, photos, and visuals instantly, …"
+    },
+    {
+      "title": "5 miljoen zonsondergang zee rechtenvrije illustraties, stockfoto's en ...",
+      "url": "https://www.shutterstock.com/nl/search/zonsondergang-zee?msockid=388f39773aa26fb32fe72ea33b366ec6",
+      "snippet": "Geschoten op film met een vintage esthetiek, het beeld is voorzien van natuurlijke korrel, gedempte kleuren en een artistieke kwaliteit …"
+    },
+    {
+      "title": "AI-schilderijgenerator – Adobe Firefly",
+      "url": "https://www.adobe.com/nl/products/firefly/features/ai-painting-generator.html?msockid=388f39773aa26fb32fe72ea33b366ec6",
+      "snippet": "Of je nu zonovergoten landschappen of fantastische wezens wilt maken, met AI-schilderijgenerators kun je afbeeldingen in de stijl …"
+    },
+    {
+      "title": "Monica Kunst - Gratis AI Afbeeldingengenerator vanuit Tekst, Schets",
+      "url": "https://monica.im/nl/products/ai-art-generator",
+      "snippet": "Probeer de Monica Afbeelding-naar-Afbeelding AI Generator! Het kan een verscheidenheid aan varianten produceren op basis van …"
+    },
+    {
+      "title": "AI Afbeeldingsgenerator van tekst en afbeeldingen | Kling AI",
+      "url": "https://kling.ai/nl/feature/ai-image-generator",
+      "snippet": "Maak afbeeldingen van hoge kwaliteit op basis van tekst of referenties met Kling AI. Genereer, bewerk, restyl en bouw consistente …"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "SOTAagi2030/LedgerLens-OCR-Release",
+  "slug": "sotaagi2030-ledgerlens-ocr-release",
+  "author": "SOTAagi2030",
+  "url": "https://huggingface.co/SOTAagi2030/LedgerLens-OCR-Release",
+  "created_at": "2026-09-14T15:53:58.000Z",
+  "updated_at": "2026-09-14T15:54:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ledgerlens_ocr",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40,
+  "storage_human": "40 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

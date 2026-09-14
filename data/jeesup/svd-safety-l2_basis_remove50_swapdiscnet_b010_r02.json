@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_basis_remove50_swapdiscnet_b010_r02",
+  "slug": "jeesup-svd-safety-l2_basis_remove50_swapdiscnet_b010_r02",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_basis_remove50_swapdiscnet_b010_r02",
+  "created_at": "2026-09-14T13:43:14.000Z",
+  "updated_at": "2026-09-14T13:45:28.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Pizza Rellena Near Me Delivery or Pickup Near Me - Instacart",
+      "url": "https://www.instacart.com/store/s?k=best+pizza+rellena+near+me&msockid=32668bb7de6c62d30b409c63dfc36387",
+      "snippet": "Get Best Pizza Rellena Near Me products you love delivered to you in as fast as 1 hour via Instacart. Start shopping online now with …"
+    },
+    {
+      "title": "Піца Кет - Доставка, З собою",
+      "url": "https://pizzacat.com.ua/",
+      "snippet": "🚘Середній час доставки 45 хв 🍕60 хв або піца безкоштовно 🍕Безкоштовна піца при першому замовленні за промокодом: 7372"
+    },
+    {
+      "title": "Best Pizza Rellena Near Me — Find It & What to Order",
+      "url": "https://knowmenuprices.com/best-pizza-rellena-near-me/",
+      "snippet": "Jun 21, 2026 · Find the best Pizza Rellena near you, learn what stuffed pizza is, the popular fillings, average prices, and how it differs …"
+    },
+    {
+      "title": "Best Pizza Rellena Near Me – Top Choices, Prices",
+      "url": "https://buddymagz.com/best-pizza-rellena-near-me/",
+      "snippet": "Jun 13, 2026 · Discover the best Pizza Rellena near you. Learn about ingredients, popular varieties, prices, side dishes, delivery …"
+    },
+    {
+      "title": "Best Pizza Rellena Near Me: Ultimate Guide to Finding the Most …",
+      "url": "https://novoraway.com/best-pizza-rellena-near-me/",
+      "snippet": "Discover the best pizza rellena near me, where to find authentic stuffed pizza popular fillings, local favorites, and expert tips for the …"
+    }
+  ]
+}

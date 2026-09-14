@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "exo-jhop/ministral3-gdpr-dpo-gguf",
+  "slug": "exo-jhop-ministral3-gdpr-dpo-gguf",
+  "author": "exo-jhop",
+  "url": "https://huggingface.co/exo-jhop/ministral3-gdpr-dpo-gguf",
+  "created_at": "2026-09-14T16:36:37.000Z",
+  "updated_at": "2026-09-14T16:38:01.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "gdpr",
+    "eu-legal-assistant",
+    "base_model:exo-jhop/ministral3-gdpr-dpo-fp16",
+    "base_model:quantized:exo-jhop/ministral3-gdpr-dpo-fp16",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8489553920,
+  "parameters_human": "8.49B",
+  "storage_bytes": 6058743264,
+  "storage_human": "6.1 GB",
+  "base_model": "exo-jhop/ministral3-gdpr-dpo-fp16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Exo (groupe sud-coréen) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Exo_(groupe_sud-cor%C3%A9en)",
+      "snippet": "En août, l'agence annonce officiellement le nom du fan club des EXO comme étant « EXO-L ». La lettre « L » représente le mot « …"
+    },
+    {
+      "title": "EXO Members Profile (Updated!) - Kpop Profiles",
+      "url": "https://kprofiles.com/exo-members-profile/",
+      "snippet": "EXO Members Profile and Facts: EXO (엑소) is a 9-member South Korean boy group that currently consists of: Suho, Xiumin, Lay, …"
+    },
+    {
+      "title": "EXO — L'app qui transforme ton sport en argent et récompenses",
+      "url": "https://exo-sport.fr/",
+      "snippet": "C'est quoi EXO ? C’est la première app 100% gratuite qui te récompense pour chaque séance de sport, avec des cadeaux et de …"
+    },
+    {
+      "title": "Exo - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Exo",
+      "snippet": "The group debuted with twelve members separated into Exo-K (Suho, Baekhyun, Chanyeol, D.O., Kai and Sehun) and Exo-M …"
+    },
+    {
+      "title": "EXO - YouTube",
+      "url": "https://www.youtube.com/channel/UCzCedBCSSltI1TFd3bKyN6g",
+      "snippet": "Listen and download on your favorite platform: https://EXO.lnk.to/REVERXE 🏠 'I'm Home' MV https://youtu.be/7hTbNeHqGD8 …"
+    }
+  ]
+}

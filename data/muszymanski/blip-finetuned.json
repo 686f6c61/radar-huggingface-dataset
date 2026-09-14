@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "muszymanski/blip-finetuned",
+  "slug": "muszymanski-blip-finetuned",
+  "author": "muszymanski",
+  "url": "https://huggingface.co/muszymanski/blip-finetuned",
+  "created_at": "2026-09-14T14:01:53.000Z",
+  "updated_at": "2026-09-14T14:01:58.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Petek Dinçöz - Kardan Adam Lyrics",
+      "url": "https://www.songlyrics.com/petek-dincoz/kardan-adam-lyrics/",
+      "snippet": "Kardan Adam lyrics by Petek Dinçöz (2008). \"Sana inandım sana aldandım Bir çok şeye ben gözümü kapadım Teninde tenimi bil...\" …"
+    },
+    {
+      "title": "Songtext von Petek Dinçöz - Kardan Adam Lyrics",
+      "url": "https://www.songtexte.com/songtext/petek-dincoz/kardan-adam-5bf53f9c.html",
+      "snippet": "Kardan Adam Songtext von Petek Dinçöz mit Lyrics, deutscher Übersetzung, Musik-Videos und Liedtexten kostenlos auf …"
+    },
+    {
+      "title": "Petek Dinçöz - Kardan Adam Lyrics | Şarkı Sözüm",
+      "url": "https://www.sarkisozum.gen.tr/en/petek-dincoz/kardan-adam-lyrics",
+      "snippet": "Homepage P Petek Dinçöz Kardan Adam Sana İnandım Sana Aldandım Bir Çok Şeye Ben Gözümü Kapadım Teninde Tenimi …"
+    },
+    {
+      "title": "Petek Dinçöz - Kardan Adam Şarkı Sözleri",
+      "url": "https://www.sarkisozum.net/song/kardanadam-8db171526f0",
+      "snippet": "Sana inandım sana aldandım Bir çok şeye ben gözümü kapadım Teninde tenimi bildiğimi sandım Gözünde gözümü gördüğümü …"
+    },
+    {
+      "title": "Kardan Adam Sözleri - Petek Dinçöz",
+      "url": "https://www.sarkisozleri.bbs.tr/sarki/29320/kardan-adam",
+      "snippet": "En sevdiğiniz şarkıların sözlerini burada keşfedin ve sanatçıların biyografilerini öğrenin. Müzik tutkunları için ideal bir kaynak."
+    }
+  ]
+}

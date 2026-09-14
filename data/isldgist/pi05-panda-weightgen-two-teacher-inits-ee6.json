@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "isldgist/pi05-panda-weightgen-two-teacher-inits-ee6",
+  "slug": "isldgist-pi05-panda-weightgen-two-teacher-inits-ee6",
+  "author": "isldgist",
+  "url": "https://huggingface.co/isldgist/pi05-panda-weightgen-two-teacher-inits-ee6",
+  "created_at": "2026-09-14T14:03:17.000Z",
+  "updated_at": "2026-09-14T14:04:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "jax",
+  "languages": [],
+  "tags": [
+    "jax",
+    "robotics",
+    "vision-language-action",
+    "pi0.5",
+    "mimicgen",
+    "panda",
+    "hypernetwork",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21809459832,
+  "storage_human": "21.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Explore the Latest Clothing, Beauty, Home, Jewelry & More - Temu",
+      "url": "https://www.temu.com/it",
+      "snippet": "Make Temu your one-stop destination for the latest fashion products, cosmetics & more. Free shipping on items shipped from Temu. …"
+    },
+    {
+      "title": "Temu | Explore the Latest Clothing, Beauty, Home, Jewelry & More",
+      "url": "https://www.temu.com/",
+      "snippet": "Make Temu your one-stop destination for the latest fashion products, cosmetics & more. Free shipping on items shipped from Temu. …"
+    },
+    {
+      "title": "Temu Seller Center",
+      "url": "https://br.seller.temu.com/",
+      "snippet": "Create a Temu Seller Center account and enjoy selling, management, and marketing services at a low cost. Our experienced team is …"
+    },
+    {
+      "title": "TEMU Partner Platform",
+      "url": "https://partner.temu.com/",
+      "snippet": "What is the Partner Platform Partner Platform: A platform for partner development and app management that provides Temu sellers …"
+    },
+    {
+      "title": "Temu Czech Republic | Explore the Latest Clothing, Beauty, Home ...",
+      "url": "https://www.temu.com/cz",
+      "snippet": "Make Temu your one-stop destination for the latest fashion products, cosmetics & more. Free shipping on items shipped from Temu. …"
+    }
+  ]
+}

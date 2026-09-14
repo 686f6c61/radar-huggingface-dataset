@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "pix08934725/axis-1.0-flash",
+  "slug": "pix08934725-axis-1-0-flash",
+  "author": "pix08934725",
+  "url": "https://huggingface.co/pix08934725/axis-1.0-flash",
+  "created_at": "2026-09-14T13:45:07.000Z",
+  "updated_at": "2026-09-14T13:53:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-4B",
+    "base_model:finetune:unsloth/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9339817439,
+  "storage_human": "9.3 GB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Buy EA Sports FC 25 (PS4) from £20.40 (Today) – Best Deals on idealo.co.uk",
+      "url": "https://www.idealo.co.uk/compare/204587170/ea-sports-fc-25-ps4.html",
+      "snippet": "Shop for EA Sports FC 25 (PS4) PS4 Games. Starting from £20.40. Choose from 8 options and Find the best price for EA Sports FC …"
+    },
+    {
+      "title": "EA SPORTS FC™ 25 Standard Edition PS4 & PS5",
+      "url": "https://store.playstation.com/en-gb/concept/10009762",
+      "snippet": "EA SPORTS FC™ 25 Standard Edition includes PS4 & PS5 games†. EA SPORTS FC™ 25 gives you more ways to win for the club. …"
+    },
+    {
+      "title": "EA SPORTS™ FC 25 - PS4 & PS5 Games | PlayStation (UK)",
+      "url": "https://www.playstation.com/en-gb/games/ea-sports-fc-25/",
+      "snippet": "What is EA SPORTS FC™ 25? Get more ways to win for the club. Team up with friends in your favourite modes and manage your …"
+    },
+    {
+      "title": "EA SPORTS FC 25 (PS4) (6 stores) see best prices now - PriceRunner UK",
+      "url": "https://www.pricerunner.com/pl/1422-3326822898/PlayStation-4-Games/EA-SPORTS-FC-25-%28PS4%29-Compare-Prices",
+      "snippet": "Product details Lowest price for EA SPORTS FC 25 (PS4) is £20.40. This is currently the cheapest offer among 6 stores."
+    },
+    {
+      "title": "EA SPORTS FC 25 Standard Edition PS4 | VideoGame | English - Amazon.co.uk",
+      "url": "https://www.amazon.co.uk/SPORTS-Standard-PS4-VideoGame-English/dp/B0D9884Z7M",
+      "snippet": "Buy EA SPORTS FC 25 Standard Edition PS4 | VideoGame | English from Amazon.co.uk. Everyday low prices on a huge range of …"
+    }
+  ]
+}

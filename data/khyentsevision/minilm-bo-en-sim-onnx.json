@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "khyentsevision/minilm-bo-en-sim-onnx",
+  "slug": "khyentsevision-minilm-bo-en-sim-onnx",
+  "author": "khyentsevision",
+  "url": "https://huggingface.co/khyentsevision/minilm-bo-en-sim-onnx",
+  "created_at": "2026-09-14T15:18:41.000Z",
+  "updated_at": "2026-09-14T16:02:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "feature-extraction",
+    "sentence-similarity",
+    "base_model:khyentsevision/minilm-bo-en-sim",
+    "base_model:quantized:khyentsevision/minilm-bo-en-sim",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 113206086,
+  "storage_human": "113 MB",
+  "base_model": "khyentsevision/minilm-bo-en-sim",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ANTON - Lerne kostenlos mit Übungen für Mathe, Deutsch, …",
+      "url": "https://anton.app/de/",
+      "snippet": "ANTON funktioniert auf Tablets, Smartphones, Computern und interaktiven Tafeln. Erstelle einfach oben auf dieser Seite ein neues …"
+    },
+    {
+      "title": "Login • Anton",
+      "url": "https://app.meinanton.de/",
+      "snippet": "Willkommen zurück! Bitte loggen Sie sich ein, um Ihren digitalen Telefonassistenten Anton zu verwalten."
+    },
+    {
+      "title": "ANTON Login",
+      "url": "https://antonp.de/login",
+      "snippet": "E-Mail Adresse Passwort Passwort vergessen?"
+    },
+    {
+      "title": "ANTON - Learn for free with lessons in English, maths, science, EAL ...",
+      "url": "https://anton.app/en_gb/",
+      "snippet": "ANTON is compatible with tablets, smartphones, computers (including Chromebooks) and interactive whiteboards. Create an account …"
+    },
+    {
+      "title": "ANTON - Learn for free with lessons in English language arts, math ...",
+      "url": "https://anton.app/en_us/",
+      "snippet": "ANTON is compatible with tablets, smartphones, computers (including Chromebooks) and interactive whiteboards. Create an account …"
+    }
+  ]
+}

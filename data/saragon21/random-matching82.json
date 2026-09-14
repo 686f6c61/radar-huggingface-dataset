@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "saragon21/random-matching82",
+  "slug": "saragon21-random-matching82",
+  "author": "saragon21",
+  "url": "https://huggingface.co/saragon21/random-matching82",
+  "created_at": "2026-09-14T12:16:57.000Z",
+  "updated_at": "2026-09-14T12:17:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Uwe Eberlein im Das Telefonbuch - Jetzt finden!",
+      "url": "https://www.dastelefonbuch.de/Personen/Uwe--Eberlein",
+      "snippet": "Richtige Adressen und Telefonnummern finden! 14 Einträge zu Uwe Eberlein mit aktuellen Kontaktdaten, Öffnungszeiten und …"
+    },
+    {
+      "title": "Uwe Eberlein Profiles - Facebook",
+      "url": "https://www.facebook.com/public/Uwe-Eberlein/",
+      "snippet": "View the profiles of people named Uwe Eberlein. Join Facebook to connect with Uwe Eberlein and others you may know. Facebook …"
+    },
+    {
+      "title": "Uwe Eberlein - Facebook",
+      "url": "https://www.facebook.com/uwe.eberlein.9/",
+      "snippet": "Uwe Eberlein is on Facebook. Join Facebook to connect with Uwe Eberlein and others you may know. Facebook gives people the …"
+    },
+    {
+      "title": "Uwe Eberlein | Personensuche - Kontakt, Bilder, Profile & mehr!",
+      "url": "http://www.namenfinden.de/s/uwe+eberlein",
+      "snippet": "Persönliche & berufliche Infos zu Uwe Eberlein bei Namenfinden.de: Adresse, Telefon, Email, Soziale Netzwerke, Bilder, Websites & …"
+    },
+    {
+      "title": "Uwe Eberlein - YouTube",
+      "url": "https://www.youtube.com/@uweeberlein7250",
+      "snippet": "Uwe Eberlein @uweeberlein7250 More about this channel ...more More about this channel ...more ...more Subscribe"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Duc1212/DucGPT-v0.1",
+  "slug": "duc1212-ducgpt-v0-1",
+  "author": "Duc1212",
+  "url": "https://huggingface.co/Duc1212/DucGPT-v0.1",
+  "created_at": "2026-09-14T13:49:20.000Z",
+  "updated_at": "2026-09-14T14:04:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10990592,
+  "parameters_human": "11.0M",
+  "storage_bytes": 177179005,
+  "storage_human": "177 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Teleskopstange",
+      "url": "https://www.amazon.de/Teleskopstange/s?k=Teleskopstange",
+      "snippet": "Teleskopstange zum Klemmen 39-96cm-1 Stück (Schwarz) Rutschfeste & rostfreie Klemmstange für Gardinen, Türrahmen, Schrank …"
+    },
+    {
+      "title": "Teleskopstangen online kaufen | BAUHAUS",
+      "url": "https://www.bauhaus.info/teleskopstangen-besenstiele/c/10000728?msockid=0e469ae9c0136516279c8d3dc1d464ca",
+      "snippet": "8,95 pro Stück inkl. MwSt. Einhell Teleskopstange Brillianto Kunststoff, 2 -tlg., Auszugslänge: 120 cm (0) 39,85"
+    },
+    {
+      "title": "Teleskopstange kaufen bei OBI",
+      "url": "https://www.obi.de/search/teleskopstange/?msockid=0e469ae9c0136516279c8d3dc1d464ca",
+      "snippet": "Teleskopstange kaufen und bestellen Online auf www.obi.de und in Ihrem Markt vor Ort OBI - alles für Heim, Haus, Garten und Bau."
+    },
+    {
+      "title": "Teleskopstange kaufen bei HORNBACH",
+      "url": "https://www.hornbach.de/s/Teleskopstange",
+      "snippet": "Teleskopstange im HORNBACH Onlineshop & im Markt: Große Auswahl Dauertiefpreise 30 Tage Rückgaberecht Teleskopstange …"
+    },
+    {
+      "title": "Die 10 besten Teleskopstangen (09/2026) - HeimHelden®",
+      "url": "https://www.heimhelden.de/vergleich/teleskopstange",
+      "snippet": "Mit einer erweiterbaren Teleskopstange erreichst du auch unzugängliche Bereiche ganz einfach. Finde hier die besten …"
+    }
+  ]
+}

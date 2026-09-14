@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Warlock-1.7B-GGUF",
+  "slug": "mradermacher-warlock-1-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Warlock-1.7B-GGUF",
+  "created_at": "2026-09-14T14:12:59.000Z",
+  "updated_at": "2026-09-14T14:34:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1711376384,
+  "parameters_human": "1.71B",
+  "storage_bytes": 15315768320,
+  "storage_human": "15.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YAMPAYE INKA Official Video 2014 by TBB Dir by The Benjamins Kigal ...",
+      "url": "https://www.youtube.com/watch?v=ncbrYX9rbQs",
+      "snippet": "Oct 24, 2014 · Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on …"
+    },
+    {
+      "title": "YAMPAYE INKA – Kirikou Akili ft. Kivumbi King The 1st ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=DWEmIYmsaKg",
+      "snippet": "YAMPAYE INKA ni indirimbo nshasha ya Kirikou Akili afadikanije na Kivumbi King The 1st. Ishimira urukundo nyarwo, ukwizigirana …"
+    },
+    {
+      "title": "Yampaye Inka official video yamaze gusohoka Iyi niyindi nka",
+      "url": "https://www.facebook.com/BilimaniContent/videos/yampaye-inka-official-video-yamaze-gusohoka-iyi-niyindi-nka-ahanihe-uvyanka-weme/950696054708643/",
+      "snippet": "Rapidement sélectionné en équipe d'Espagne, il remporte l'Euro 2024 avec la Roja en s'imposant en finale (2-1) face à l'Angleterre. Il …"
+    },
+    {
+      "title": "YampayInka Lyrics - Kirikou Akili, Kivumbi King | Looviq",
+      "url": "https://looviq.com/lyrics/yampayinka",
+      "snippet": "Aug 9, 2026 · The song “YampayInka” by Kirikou Akili and Kivumbi King consists of Rwandan lyrics along with some multilingual …"
+    },
+    {
+      "title": "Yampaye inka dance by Buja.UP.Academy — Burundi performance",
+      "url": "https://www.tiktok.com/@bujaupacadem/video/7676777381880696096",
+      "snippet": "Lead Yampaye inka is presented here as a short, energetic Burundi dance clip by Buja.UP.Academy. The performance credits list …"
+    }
+  ]
+}

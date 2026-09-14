@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "MikeRoz/GLM-5.3-Flash-Uncensored-2.51bpw-h6-exl3",
+  "slug": "mikeroz-glm-5-3-flash-uncensored-2-51bpw-h6-exl3",
+  "author": "MikeRoz",
+  "url": "https://huggingface.co/MikeRoz/GLM-5.3-Flash-Uncensored-2.51bpw-h6-exl3",
+  "created_at": "2026-09-14T16:49:15.000Z",
+  "updated_at": "2026-09-14T16:49:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Is Data Annotation a scam? : r/WFHJobs - Reddit",
+      "url": "https://www.reddit.com/r/WFHJobs/comments/135xojm/is_data_annotation_a_scam/",
+      "snippet": "May 2, 2023 · Does anyone know if data annotation is a scam? They have projects you work on for money. I can’t remember if I gave …"
+    },
+    {
+      "title": "Is FlexJobs worth it? : r/remotework - Reddit",
+      "url": "https://www.reddit.com/r/remotework/comments/17bllt7/is_flexjobs_worth_it/",
+      "snippet": "I tried Flexjobs years ago, and was considering the 14-day trial again because of so many scams on both Indeed and LinkedIn. I don't …"
+    },
+    {
+      "title": "「Stay hungry. Stay foolish.」最好的汉语翻译是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/19557797",
+      "snippet": "对 “Stay hungry, Stay foolish” 最常见的翻译应该就是“求知若饥，虚心若愚”了，当然这么理解也不是什么坏事，只不过乔布斯想表达的 …"
+    },
+    {
+      "title": "论文中引用网页内容在文中怎么标注？ - 知乎",
+      "url": "https://www.zhihu.com/question/457765989",
+      "snippet": "① 主要责任者：作者名字；如果没有作者，可以写这篇报道的责任机构，比如说央视网、XXX研究所、XXX局等； ② 题名：这一项一 …"
+    },
+    {
+      "title": "Is there anything better than Indeed for job listings? - Reddit",
+      "url": "https://www.reddit.com/r/jobs/comments/5u8ovd/is_there_anything_better_than_indeed_for_job/",
+      "snippet": "Browsing sites like Indeed seems so boring and discouraging because 1) I don't know what I want to do now. and 2) There are …"
+    }
+  ]
+}

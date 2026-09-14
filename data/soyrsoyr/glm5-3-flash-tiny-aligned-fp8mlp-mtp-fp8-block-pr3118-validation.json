@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "soyrsoyr/GLM5.3-Flash-Tiny-Aligned-FP8MLP-MTP-FP8-BLOCK-pr3118-validation",
+  "slug": "soyrsoyr-glm5-3-flash-tiny-aligned-fp8mlp-mtp-fp8-block-pr3118-validation",
+  "author": "soyrsoyr",
+  "url": "https://huggingface.co/soyrsoyr/GLM5.3-Flash-Tiny-Aligned-FP8MLP-MTP-FP8-BLOCK-pr3118-validation",
+  "created_at": "2026-09-14T16:53:00.000Z",
+  "updated_at": "2026-09-14T16:53:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "llm-compressor",
+    "compressed-tensors",
+    "mtp",
+    "pr3118-validation",
+    "text-generation",
+    "conversational",
+    "base_model:inference-optimization/GLM-5.3-Flash-0.1B-A0.1B-MTP",
+    "base_model:quantized:inference-optimization/GLM-5.3-Flash-0.1B-A0.1B-MTP",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 84772398,
+  "parameters_human": "84.8M",
+  "storage_bytes": 189775087,
+  "storage_human": "190 MB",
+  "base_model": "inference-optimization/GLM-5.3-Flash-0.1B-A0.1B-MTP",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/auth/?locale=de-DE",
+      "snippet": "Nutze ChatGPT, um Fragen zu beantworten, Texte zu verfassen, Bilder zu erstellen, Aufgaben zu erledigen und zu coden – alles an …"
+    },
+    {
+      "title": "Introducing ChatGPT - OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    },
+    {
+      "title": "ChatGPT ist da | OpenAI",
+      "url": "https://openai.com/de-DE/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · ChatGPT ist ein Schwestermodell des Systems InstructGPT ⁠, das darauf trainiert wurde, Anweisungen zu folgen und …"
+    },
+    {
+      "title": "ChatGPT Deutsch",
+      "url": "https://chatai.de/",
+      "snippet": "3 days ago · ChatGPT ist aufgrund seiner Flexibilität und Effizienz im Umgang mit Sprachdaten in vielen Bereichen einsetzbar und …"
+    }
+  ]
+}

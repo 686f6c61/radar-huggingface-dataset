@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "muhamad-geosurge/invert-polarity-d3ec2b43-2c9d-4c45-9985-2bc41e94c284",
+  "slug": "muhamad-geosurge-invert-polarity-d3ec2b43-2c9d-4c45-9985-2bc41e94c284",
+  "author": "muhamad-geosurge",
+  "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-d3ec2b43-2c9d-4c45-9985-2bc41e94c284",
+  "created_at": "2026-09-14T13:59:34.000Z",
+  "updated_at": "2026-09-14T14:00:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mistral",
+    "mistral-common",
+    "base_model:mistralai/Mistral-7B-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248031744,
+  "parameters_human": "7.25B",
+  "storage_bytes": 14496097520,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/kdyck_10pct_100M_computematched_muonppt_1e18_s1_2026-09-14_13-29-38_035067-pt",
+  "slug": "alexkstern-kdyck_10pct_100m_computematched_muonppt_1e18_s1_2026-09-14_13-29-38_035067-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/kdyck_10pct_100M_computematched_muonppt_1e18_s1_2026-09-14_13-29-38_035067-pt",
+  "created_at": "2026-09-14T13:35:45.000Z",
+  "updated_at": "2026-09-14T13:36:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_dyck-k128-seq_len_2048-1B",
+    "seed_1",
+    "case_c",
+    "lr_trapezoid",
+    "depth_22",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6133511293,
+  "storage_human": "6.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bansko - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bansko",
+      "snippet": "Bansko (Bulgarian: Банско [ˈbansko]) is a town in southwestern Bulgaria, located in Blagoevgrad Oblast near the city of Razlog. …"
+    },
+    {
+      "title": "Banskoski - The official website of ski in Bansko Bulgaria",
+      "url": "https://www.banskoski.com/en",
+      "snippet": "Gondola working hours 08:30 - 17:00, ski lifts 08:45 - 16:15."
+    },
+    {
+      "title": "30 Best Things to Do in Bansko | Wonders of Bulgaria",
+      "url": "https://wondersofbulgaria.com/things-to-do-in-bansko/",
+      "snippet": "Sep 11, 2023 · Having recently enjoyed a weekend in Bansko, we can’t wait to share my discoveries. This town carries significant …"
+    },
+    {
+      "title": "Bansko - Information Portal | Bansko.org",
+      "url": "https://bansko.org/",
+      "snippet": "Information website of Bansko ski resort. Find what you need about skiing, hotels, news, announcements, events and prices. Jobs …"
+    },
+    {
+      "title": "Banskoski - Ski map",
+      "url": "https://www.banskoski.com/en/map",
+      "snippet": "Gondola working hours 08:30 - 17:00, ski lifts 08:45 - 16:15. Lift Banderitsa: 9 AM - last ride 4:15 PM, Lift Plato: 9 AM - last ride 4 PM …"
+    }
+  ]
+}

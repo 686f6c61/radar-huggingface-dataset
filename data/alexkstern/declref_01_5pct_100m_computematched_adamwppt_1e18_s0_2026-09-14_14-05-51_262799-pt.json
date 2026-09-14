@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/declref_01_5pct_100M_computematched_adamwppt_1e18_s0_2026-09-14_14-05-51_262799-pt",
+  "slug": "alexkstern-declref_01_5pct_100m_computematched_adamwppt_1e18_s0_2026-09-14_14-05-51_262799-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/declref_01_5pct_100M_computematched_adamwppt_1e18_s0_2026-09-14_14-05-51_262799-pt",
+  "created_at": "2026-09-14T14:12:02.000Z",
+  "updated_at": "2026-09-14T14:12:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_declref-01-seq_len_2048-2B",
+    "seed_0",
+    "case_c",
+    "lr_trapezoid",
+    "depth_20",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4891726649,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "PDF合并后页面大小不一致怎么解决？ - 知乎",
+      "url": "https://www.zhihu.com/question/388312493",
+      "snippet": "这样一来就能将原文档另存为一份页面大小一致的PDF文档啦。 三、在线工具网站 很多网站都有合并PDF文件的功能，不过都会出现 …"
+    },
+    {
+      "title": "Ilovepdfと言うサイトを発見しました。 - https://www... - Yahoo!知恵袋",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11181864276",
+      "snippet": "Nov 17, 2017 · Ilovepdfと言うサイトを発見しました。 https://www.ilovepdf.com/jaPDFを分割したり、ワードやエクセルになおした …"
+    },
+    {
+      "title": "pdfの編集ソフトに「ilovepdf」というのがあり、使いや... - Yahoo!知 …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11293744581",
+      "snippet": "Feb 20, 2024 · pdfの編集ソフトに「ilovepdf」というのがあり、使いやすそうですが、使用途中ウイルスバスターから危険の警告が …"
+    },
+    {
+      "title": "オンラインでPDFの結合や圧縮・編集ができる「iLovePDF」",
+      "url": "https://webcli.jp/topics/ilovepdf/",
+      "snippet": "May 22, 2022 · ビジネスシーンでは公式文書として「PDF」がよく使われますが、加工するのは手間がかかります。そこで今回 …"
+    }
+  ]
+}

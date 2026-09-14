@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "jc-builds/LFM2.5-1.2B-Instruct-GGUF",
+  "slug": "jc-builds-lfm2-5-1-2b-instruct-gguf",
+  "author": "jc-builds",
+  "url": "https://huggingface.co/jc-builds/LFM2.5-1.2B-Instruct-GGUF",
+  "created_at": "2026-09-14T18:40:17.000Z",
+  "updated_at": "2026-09-14T18:40:39.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "on-device",
+    "mobile",
+    "ios",
+    "apple-silicon",
+    "haplo",
+    "lfm",
+    "lfm2.5",
+    "liquid",
+    "text-generation",
+    "en",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:quantized:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:other",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 730895168,
+  "storage_human": "731 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

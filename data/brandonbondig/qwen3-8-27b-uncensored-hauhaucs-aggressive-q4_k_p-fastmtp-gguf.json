@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "brandonbondig/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-Q4_K_P-FastMTP-GGUF",
+  "slug": "brandonbondig-qwen3-8-27b-uncensored-hauhaucs-aggressive-q4_k_p-fastmtp-gguf",
+  "author": "brandonbondig",
+  "url": "https://huggingface.co/brandonbondig/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-Q4_K_P-FastMTP-GGUF",
+  "created_at": "2026-09-14T14:21:28.000Z",
+  "updated_at": "2026-09-14T14:27:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "mtp",
+    "speculative-decoding",
+    "runpod",
+    "base_model:HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+    "base_model:quantized:HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1863907840,
+  "parameters_human": "1.86B",
+  "storage_bytes": 18826847616,
+  "storage_human": "18.8 GB",
+  "base_model": "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Brigitte Macron — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Brigitte_Macron",
+      "snippet": "Brigitte Macron, née Trogneux le 13 avril 1953 à Amiens (Somme), est depuis le 20 octobre 2007 l' épouse d' Emmanuel Macron, …"
+    },
+    {
+      "title": "Brigitte Macron - Élysée",
+      "url": "https://www.elysee.fr/brigitte-macron",
+      "snippet": "Retrouvez la biographie et le portrait officiel de Brigitte Macron, ses déplacements et rendez-vous, la charte de transparence."
+    },
+    {
+      "title": "Brigitte Macron - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Brigitte_Macron",
+      "snippet": "Brigitte Marie-Claude Macron[a] (née Trogneux, [b] later Auzière; [c] born 13 April 1953) is a French former teacher. She is married to …"
+    },
+    {
+      "title": "Déplacements et rendez-vous de Brigitte Macron - Élysée",
+      "url": "https://www.elysee.fr/emmanuel-macron/actualite-de-brigitte-macron-premiere-dame",
+      "snippet": "Chaque mois, retrouvez dans ce dossier l'activité de Brigitte Macron."
+    },
+    {
+      "title": "Brigitte Macron jeune : à quoi elle ressemblait à 20 ans",
+      "url": "https://www.groupeprimavista.fr/brigitte-macron-jeune-20-ans-photo/",
+      "snippet": "Nov 12, 2025 · Découvrez les rares photos de jeunesse de Brigitte Macron, son parcours à Amiens et l’évolution de son style avant …"
+    }
+  ]
+}

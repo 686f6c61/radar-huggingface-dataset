@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "MMOPD/Qwen3-4B-OT3-finance",
+  "slug": "mmopd-qwen3-4b-ot3-finance",
+  "author": "MMOPD",
+  "url": "https://huggingface.co/MMOPD/Qwen3-4B-OT3-finance",
+  "created_at": "2026-09-14T10:39:08.000Z",
+  "updated_at": "2026-09-14T10:45:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "finance",
+    "reasoning",
+    "thinking",
+    "grpo",
+    "mmopd",
+    "conversational",
+    "en",
+    "dataset:czyssrs/FinQA",
+    "dataset:next-tat/TAT-QA",
+    "base_model:MMOPD/Qwen3-4B-OT3-2ep",
+    "base_model:finetune:MMOPD/Qwen3-4B-OT3-2ep",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404646,
+  "storage_human": "8.1 GB",
+  "base_model": "MMOPD/Qwen3-4B-OT3-2ep",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Powerland Aktie | PWLD Kurs | Realtime - Investing.com",
+      "url": "https://de.investing.com/equities/powerland",
+      "snippet": "Powerland Aktie (H: PWLD) und aktueller Kurs 0,300 - dazu Charts, News, Termine und Kursziele zu Powerland."
+    },
+    {
+      "title": "Powerland (PWLD) Finanzielle Zusammenfassung - Investing.com",
+      "url": "https://de.investing.com/equities/powerland-financial-summary",
+      "snippet": "PWLD Kennzahlen Keine Zeit für lange Berichte? Kein Problem – hier gibt’s den schnellen Überblick über die Finanzen von Powerland!"
+    },
+    {
+      "title": "PWLD Technical Analysis, RSI and Moving Averages - Investing.com",
+      "url": "https://www.investing.com/equities/powerland-technical",
+      "snippet": "Explore Powerland (PWLD) technical analysis, including RSI, 200-day and 50-day moving averages, and key indicators."
+    },
+    {
+      "title": "Powerland (PWLD) Stock Forecast & Price Target - Investing.com",
+      "url": "https://www.investing.com/equities/powerland-consensus-estimates",
+      "snippet": "Find the latest Powerland (PWLD) stock forecast, 12-month price target, predictions and analyst recommendations."
+    },
+    {
+      "title": "Powerland (PWLD) Live Chart - Investing.com IN",
+      "url": "https://in.investing.com/equities/powerland-chart",
+      "snippet": "View the live Powerland (PWLD) chart with real-time streaming data, candlestick and area views and technical indicators."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "HyeonseokE/smolvla_rq2_turn_off_lever_cap_1000_10fps",
+  "slug": "hyeonseoke-smolvla_rq2_turn_off_lever_cap_1000_10fps",
+  "author": "HyeonseokE",
+  "url": "https://huggingface.co/HyeonseokE/smolvla_rq2_turn_off_lever_cap_1000_10fps",
+  "created_at": "2026-09-14T12:53:47.000Z",
+  "updated_at": "2026-09-14T12:57:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:HyeonseokE/rq2_turn_off_lever_cap_100_10fps",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906729316,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/il",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/channel/UCBR8-60-B28hp2BmDPdntcQ",
+      "snippet": "YouTube's official YouTube channel You found us. Welcome to the official YouTube channel – a home for the biggest moments, the …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube - אפליקציות ב-Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=he",
+      "snippet": "אפליקציית YouTube הרשמית לטלפונים ולטאבלטים מבוססי Android. תוכלו לראות במה אנשים בעולם צופים – מסרטוני המוזיקה החמים ביותר ועד …"
+    },
+    {
+      "title": "יוטיוב ישראל - YouTube",
+      "url": "https://www.youtube.com/channel/UCdN38I4LjLm9Bnt_Ch7ePKw",
+      "snippet": "הסרטונים הכי נצפים בישראל"
+    }
+  ]
+}

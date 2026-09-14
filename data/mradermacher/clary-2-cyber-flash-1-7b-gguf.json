@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Clary-2-Cyber-Flash-1.7B-GGUF",
+  "slug": "mradermacher-clary-2-cyber-flash-1-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Clary-2-Cyber-Flash-1.7B-GGUF",
+  "created_at": "2026-09-14T12:40:07.000Z",
+  "updated_at": "2026-09-14T13:13:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "cybersecurity",
+    "ctf",
+    "code",
+    "reverse-engineering",
+    "qwen",
+    "qwen3",
+    "dora",
+    "ru",
+    "en",
+    "base_model:AuroraSystem/Clary-2-Cyber-Flash-1.7B",
+    "base_model:quantized:AuroraSystem/Clary-2-Cyber-Flash-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 15959970432,
+  "storage_human": "16.0 GB",
+  "base_model": "AuroraSystem/Clary-2-Cyber-Flash-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "YouTube Creator Awards - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/7682560?hl=en",
+      "snippet": "YouTube Creator Awards are our way of recognizing the extraordinary effort creators put into their growing channels and to build …"
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    },
+    {
+      "title": "NFL Sunday Ticket pricing & billing - YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/answer/15137773?hl=en",
+      "snippet": "NFL Sunday Ticket on YouTube Primetime Channels pricing NFL Sunday Ticket on YouTube includes regular season Sunday …"
+    }
+  ]
+}

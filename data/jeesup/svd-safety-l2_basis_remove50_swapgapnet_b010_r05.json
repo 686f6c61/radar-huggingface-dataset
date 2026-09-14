@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_basis_remove50_swapgapnet_b010_r05",
+  "slug": "jeesup-svd-safety-l2_basis_remove50_swapgapnet_b010_r05",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_basis_remove50_swapgapnet_b010_r05",
+  "created_at": "2026-09-14T16:48:47.000Z",
+  "updated_at": "2026-09-14T16:49:45.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Andrew Jackson - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Andrew_Jackson",
+      "snippet": "2.1Legal career and marriage. 2.2Early public career. 2.3Planting career and slavery. 2.4Duel with Dickinson."
+    },
+    {
+      "title": "Andrew Jackson | Facts, Biography, & Accomplishments | Britannica",
+      "url": "https://www.britannica.com/biography/Andrew-Jackson",
+      "snippet": "4 days ago · Andrew Jackson was an American general and seventh president of the United States (1829–37). He was the first U.S. …"
+    },
+    {
+      "title": "Andrew Jackson — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Andrew_Jackson",
+      "snippet": "Il est le 7e président des États-Unis, en fonction du 4 mars 1829 au 4 mars 1837, et le premier issu du Parti démocrate. Il est l'une …"
+    },
+    {
+      "title": "Andrew Jackson - Vikipedi",
+      "url": "https://tr.wikipedia.org/wiki/Andrew_Jackson",
+      "snippet": "Andrew Jackson (15 Mart 1767, Güney Karolina - 8 Haziran 1845; Nashville, Tennessee), 7. Amerika Birleşik Devletleri başkanı. …"
+    },
+    {
+      "title": "Andrew Jackson – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Andrew_Jackson",
+      "snippet": "Andrew Jackson (* 15. März 1767 in den Waxhaws; † 8. Juni 1845 nahe Nashville, Tennessee) war ein US-amerikanischer Politiker …"
+    }
+  ]
+}

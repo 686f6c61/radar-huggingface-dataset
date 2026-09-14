@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "THU-SIGS-EILAB/coeva_cycle1_acopd_80",
+  "slug": "thu-sigs-eilab-coeva_cycle1_acopd_80",
+  "author": "THU-SIGS-EILAB",
+  "url": "https://huggingface.co/THU-SIGS-EILAB/coeva_cycle1_acopd_80",
+  "created_at": "2026-09-14T15:23:16.000Z",
+  "updated_at": "2026-09-14T15:33:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8575618237,
+  "storage_human": "8.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "THU - Overloud",
+      "url": "https://www.overloud.com/products/thu",
+      "snippet": "THU is the most comprehensive software modeler, integrating MODELING, CAPTURING, and FLUID IR PROCESSING into a single …"
+    },
+    {
+      "title": "THU Ceiling Solutions – Ceiling Solutions",
+      "url": "https://thu-plafonds.fr/",
+      "snippet": "Concevoir des espaces durables suppose de choisir des solutions capables d’allier esthétique, fonctionnalité et longévité. À travers …"
+    },
+    {
+      "title": "Traduction THU en français | Dictionnaire anglais-français | Reverso",
+      "url": "https://dictionnaire.reverso.net/anglais-francais/Thu",
+      "snippet": "Traduction de \"Thu\" en français : jeu., jeudi. Abréviation, nom, signification, prononciation, expressions idiomatiques en anglais, …"
+    },
+    {
+      "title": "Downloads | Overloud",
+      "url": "https://www.overloud.com/downloads",
+      "snippet": "Choose your download You can choose the best selection in our collection of sound products, manuals and additional presets"
+    },
+    {
+      "title": "Thu Kamkasomphou — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Thu_Kamkasomphou",
+      "snippet": "Thu Kamkasomphou ... Thu Kamkasomphou , née le 12 octobre 1968 à Savannakhet au Laos 1, est une pongiste handisport française."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "zorrodash/hermes-host",
+  "slug": "zorrodash-hermes-host",
+  "author": "zorrodash",
+  "url": "https://huggingface.co/zorrodash/hermes-host",
+  "created_at": "2026-09-14T12:59:19.000Z",
+  "updated_at": "2026-09-14T12:59:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook如何设置签名？添加Outlook签名-百度经验",
+      "url": "https://jingyan.baidu.com/article/eae07827d1ff0e5fec5485bb.html",
+      "snippet": "Dec 13, 2019 · Outlook如何设置签名？添加Outlook签名,Outlook是我们日常工作中经常用到的邮件收发工具。发送邮件时，在最后的 …"
+    },
+    {
+      "title": "outlook会议邀请如何修改时间-百度经验",
+      "url": "https://jingyan.baidu.com/article/1876c852a779bfc80b13769e.html",
+      "snippet": "May 7, 2023 · outlook会议邀请如何修改时间,已经发送的会议邀请，突然领导有事只能调整会议时间了，如果重新发送一次会议邮件就 …"
+    },
+    {
+      "title": "PC版的邮箱大师，OUTLOOK，Foxmail哪个好使一点？",
+      "url": "https://www.zhihu.com/question/38699401",
+      "snippet": "谢邀。 Outlook 非常强大，完全不是一个简单的邮件管理程序，它更适合日程的管理，并且可以与 Skype 良好的集成，是商务必选。 …"
+    },
+    {
+      "title": "Microsoft Exchange 与 Office Outlook 是否有区别？ - 知乎",
+      "url": "https://www.zhihu.com/question/19930376?sort=created",
+      "snippet": "Nov 24, 2011 · Exchange介绍到这里，你大概就能理解，为什么会有很多Outlook粉的存在了——Exchange的强大也支撑了Outlook。 …"
+    },
+    {
+      "title": "Outlook邮箱怎么登陆 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/5bbb5a1bd5a3bc13eaa17964.html",
+      "snippet": "Sep 26, 2018 · Outlook邮箱怎么登陆,Outlook是一款应用非常广泛的应用，并且在生活中应用非常广泛。下面小编教大家如何登 …"
+    }
+  ]
+}

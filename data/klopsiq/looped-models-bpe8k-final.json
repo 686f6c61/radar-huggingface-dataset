@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Klopsiq/looped-models-bpe8k-final",
+  "slug": "klopsiq-looped-models-bpe8k-final",
+  "author": "Klopsiq",
+  "url": "https://huggingface.co/Klopsiq/looped-models-bpe8k-final",
+  "created_at": "2026-09-14T15:46:35.000Z",
+  "updated_at": "2026-09-14T15:48:49.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "text-generation",
+    "looped-transformer",
+    "fineweb",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37770069,
+  "storage_human": "38 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ManoMano - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/manomano-f516.html",
+      "snippet": "Sep 8, 2018 · ManoMano : Entrez dans le forum dédié à l'entreprise ManoMano, site spécialisé dans l'achat en ligne bricolage, …"
+    },
+    {
+      "title": "MANOMANO : arnaque - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/manomano-arnaque-t139420.html",
+      "snippet": "Feb 14, 2018 · Manomano + outillage on line + Sideris + fabricant en Belgique sans oublier Khuene Nagel le transporteur pour un …"
+    },
+    {
+      "title": "manomano怎么样? - 知乎",
+      "url": "https://www.zhihu.com/question/485712527",
+      "snippet": "要了解 ManoMano这个平台，首先最重要的是需要对平台的前景有着较好的分析 那接下来小万给大家讲一讲 ManoMano 的市场分析 …"
+    },
+    {
+      "title": "manomano入驻需要公司是在欧洲的公司吗？其他国家的公司怎么 …",
+      "url": "https://www.zhihu.com/question/458450744",
+      "snippet": "May 11, 2021 · 目前，ManoMano在法国、英国、西班牙、意大利和德国开展业务，在全球拥有超过2000个供应商和160万种不同的产 …"
+    },
+    {
+      "title": "litige garantie beton manomano - ManoMano - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/litige-garantie-beton-manomano-t184961.html",
+      "snippet": "Oct 14, 2018 · litige garantie beton manomano Messagepar jet_sex » dim. oct. 14, 2018 9:08 am bonjour, achat le 12/08/2018 auprès …"
+    }
+  ]
+}

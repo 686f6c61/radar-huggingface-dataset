@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove50_swapdisc_a050_b010_r06",
+  "slug": "jeesup-svd-safety-l2_remove50_swapdisc_a050_b010_r06",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapdisc_a050_b010_r06",
+  "created_at": "2026-09-14T15:06:47.000Z",
+  "updated_at": "2026-09-14T15:24:06.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What Is the 'about:blank' Page: What You Need to Know",
+      "url": "https://www.auslogics.com/en/articles/what-is-the-aboutblank-page-everything-you-need-to-know/",
+      "snippet": "Jan 8, 2025 · Discover what about:blank is, if it is safe, why it appears in your browser, and whether or not you need to remove it."
+    },
+    {
+      "title": "لماذا توجد \"الصفحة الفارغة\" بمتصفحات الإنترنت وكيفية التخلص منها؟",
+      "url": "https://www.computer-wd.com/2020/03/what-is-about-blank-in-browsers.html",
+      "snippet": "Mar 23, 2020 · سنوضح من خلال هذا المقال فائدة \"الصفحة الفارغة\" أو \"About:blank\" بمتصفحات الإنترنت و أيضاً كيفية التخلص منها في حال تسببت بإزعاجك."
+    },
+    {
+      "title": "What Is about:blank, and How Do You Remove It?",
+      "url": "https://www.howtogeek.com/656466/what-is-aboutblank-and-how-do-you-remove-it/",
+      "snippet": "Oct 24, 2022 · If you see \"about:blank\" in your web browser's address bar, you're viewing an empty page built into your web browser. …"
+    },
+    {
+      "title": "ما هو حول الفراغ؟ هل يجب إزالته؟ - المتصفحات",
+      "url": "https://ar.macspots.com/what-is-about-blank-should-you-remove-it",
+      "snippet": "إن السيناريو about: blank هو مجرد صفحة ويب فارغة يتم عرضها عندما يجد المستعرض نفسه في موقف يحتاج فيه إلى إظهار صفحة فارغة."
+    },
+    {
+      "title": "What Is \"about:blank\" (or \"about:blank#blocked\") and How Do",
+      "url": "https://askleo.com/what_is_aboutblank_and_how_do_i_get_rid_of_it/",
+      "snippet": "“About:blank” is a blank page built into web browsers to be displayed when there’s nothing else to show. It’s not malware, though it …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Mackyoop/fair-copy-clickbait",
+  "slug": "mackyoop-fair-copy-clickbait",
+  "author": "Mackyoop",
+  "url": "https://huggingface.co/Mackyoop/fair-copy-clickbait",
+  "created_at": "2026-09-14T16:44:23.000Z",
+  "updated_at": "2026-09-14T16:45:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chatgpt-api · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/chatgpt-api",
+      "snippet": "4 days ago · ChatGPT API is a RESTful API that provides a simple interface to interact with OpenAI’s GPT-3 and GPT-Neo language …"
+    },
+    {
+      "title": "prompts.chat/prompts.csv at main · f/prompts.chat · GitHub",
+      "url": "https://github.com/f/prompts.chat/blob/main/prompts.csv",
+      "snippet": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for …"
+    },
+    {
+      "title": "不是说chat gpt是免费的吗，怎么只能免费问一次? - 知乎",
+      "url": "https://www.zhihu.com/question/606750758",
+      "snippet": "后来自己注册gpt账号，能免费使用GPT-3.5，每月20刀的Gpt-4还是不大舍得去搞，3.5基本也够用了，搭配chatpdf等其他AI工具，用 …"
+    },
+    {
+      "title": "Chat GPT Tiếng Việt: Cài đặt và mẹo đặt câu lệnh mới nhất",
+      "url": "https://cellphones.com.vn/sforum/cach-dung-chat-gpt-tieng-viet",
+      "snippet": "Jul 10, 2026 · Hướng dẫn cách sử dụng Chat GPT Tiếng Việt hiệu quả để đặt câu hỏi, viết nội dung, học tập, dịch thuật và xử lý …"
+    },
+    {
+      "title": "Top 16+ Chat AI tiếng Việt miễn phí, tốt nhất 2026 - CellphoneS",
+      "url": "https://cellphones.com.vn/sforum/top-phan-mem-chat-ai-tot-nhat",
+      "snippet": "Feb 9, 2026 · Top các phần mềm chat AI tiếng Việt tốt và được nhiều người sử dụng nhất 2026, phần mềm chatbot AI online đem …"
+    }
+  ]
+}

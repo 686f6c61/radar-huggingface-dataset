@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "adafaaw/MyAwesomeModel-TestRepo",
+  "slug": "adafaaw-myawesomemodel-testrepo",
+  "author": "adafaaw",
+  "url": "https://huggingface.co/adafaaw/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-14T15:33:30.000Z",
+  "updated_at": "2026-09-14T15:33:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amerikai dollár átváltási árfolyama magyar forintra. USD/HUF átváltása ...",
+      "url": "https://wise.com/hu/currency-converter/usd-to-huf-rate",
+      "snippet": "Válts át USD pénznemből HUF pénznembe a Wise Valutaváltóval. Elemezz korábbi árfolyamtáblázatokat vagy élő amerikai dollár / …"
+    },
+    {
+      "title": "USD / HUF átváltása - Amerikai dollár / Magyar forint",
+      "url": "https://www.exchange-rates.org/hu/valutavalto/usd-huf",
+      "snippet": "Ezzel az egyszerű valutaváltó eszközzel könnyedén átválhat Amerikai dollár (USD) valutát Magyar forint (HUF) valutára. A …"
+    },
+    {
+      "title": "USA dollár árfolyam (USD/HUF) - Portfolio.hu",
+      "url": "https://www.portfolio.hu/arfolyam/USDHUF/USD-HUF",
+      "snippet": "USA dollár árfolyam (USD/HUF). Folyamatosan frissülő árfolyamadatok, nyitó- és záróárfolyamok, részvénypiaci hírek és elemzések …"
+    },
+    {
+      "title": "MNB.hu",
+      "url": "https://www.mnb.hu/arfolyam-lekerdezes",
+      "snippet": "Deviza választás CHF (svájci frank) EUR (euro) USD (USA dollár) ATS (osztrák schilling) AUD (ausztrál dollár) AUP (ausztrál font) …"
+    },
+    {
+      "title": "1 USD → HUF - amerikai dollár → magyar forint Árfolyam - Xe",
+      "url": "https://www.xe.com/hu/currencyconverter/convert/?Amount=1&From=USD&To=HUF",
+      "snippet": "Szerezze meg ingyen a legfrissebb 1 amerikai dollár–magyar forint árfolyamot az eredeti Universal Currency Converterrel. Állítson …"
+    }
+  ]
+}

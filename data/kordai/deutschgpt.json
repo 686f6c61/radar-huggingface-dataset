@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "KordAI/DeutschGPT",
+  "slug": "kordai-deutschgpt",
+  "author": "KordAI",
+  "url": "https://huggingface.co/KordAI/DeutschGPT",
+  "created_at": "2026-09-14T15:34:48.000Z",
+  "updated_at": "2026-09-14T15:42:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "chat",
+    "unsloth",
+    "de",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452608262,
+  "storage_human": "3.5 GB",
+  "base_model": "unsloth/qwen3-1.7b-base-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Proalpha: ERP-Software für den Mittelstand | Proalpha",
+      "url": "https://www.proalpha.com/de/",
+      "snippet": "Business-Software für den Mittelstand Wir begleiten Sie von Anfang an! Die Proalpha Group ist Anbieter von …"
+    },
+    {
+      "title": "Proalpha: ERP Software for the Mid-Market | Proalpha",
+      "url": "https://www.proalpha.com/en/",
+      "snippet": "Discover business software for manufacturing, trade, and services. Made in Germany Mid-market focus Innovation driver ⇒Proalpha"
+    },
+    {
+      "title": "Karriere machen bei der Proalpha Group",
+      "url": "https://jobs.proalpha.com/de/",
+      "snippet": "Bist Du bereit, Deine Fähigkeiten voll auszuschöpfen und Dich weiterzuentwickeln? Bei der Proalpha Group schaffen wir ein Umfeld, …"
+    },
+    {
+      "title": "Our Company Group | Proalpha",
+      "url": "https://jobs.proalpha.com/en/proalpha-group",
+      "snippet": "Skill Software is integrated into the CASQ-it CAQ software solution by Böhme & Weihs, enriching the Proalpha Group with its FMEA …"
+    },
+    {
+      "title": "Aktuelles • Proalpha Academy",
+      "url": "https://academy.proalpha.com/aktuelles/academy/",
+      "snippet": "Wir wissen, wie Sie die Proalpha Software optimal nutzen können. Sie auch? Falls nein, einfach hier klicken und eine der Schulungen …"
+    }
+  ]
+}

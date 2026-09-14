@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ccostaalessandro/coca-finetuned",
+  "slug": "ccostaalessandro-coca-finetuned",
+  "author": "ccostaalessandro",
+  "url": "https://huggingface.co/ccostaalessandro/coca-finetuned",
+  "created_at": "2026-09-14T11:19:24.000Z",
+  "updated_at": "2026-09-14T11:19:29.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Finde die besten Angebote für Flüge und Flugbuchungen | Skyscanner",
+      "url": "https://www.skyscanner.de/fluge?msockid=29b661059f26622318e976d19e8b639a",
+      "snippet": "Wenn du direkt über Skyscanner buchst, schicken wir dir deine Buchungsbestätigung per E-Mail zu. Wenn du direkt gebucht hast, …"
+    },
+    {
+      "title": "Flug-Tracker | Live-Flugstatus und -Verspätungen | Skyscanner",
+      "url": "https://www.skyscanner.de/flug-tracker?msockid=29b661059f26622318e976d19e8b639a",
+      "snippet": "Verfolge jeden Flug in Echtzeit mit dem Flug-Tracker von Skyscanner. Sieh dir den Flugstatus, Verspätungen und Ankünfte von …"
+    },
+    {
+      "title": "Last-Minute-Flüge ab 30 € | Skyscanner",
+      "url": "https://www.skyscanner.de/fluge/last-minute-angebote/?msockid=29b661059f26622318e976d19e8b639a",
+      "snippet": "Finde günstige Last-Minute-Flüge von Hunderten von Fluglinien überall hin und buche ohne zusätzliche Gebühren. Zögere nicht, …"
+    },
+    {
+      "title": "️ 15 € Flüge nach London (LOND) 2027 | Skyscanner",
+      "url": "https://www.skyscanner.de/fluge-nach/lond/billigfluge-nach-london.html?msockid=29b661059f26622318e976d19e8b639a",
+      "snippet": "Du suchst billige Flüge nach London? Vergleiche Preise von Hunderten der größten Reisebüros und Fluglinien, darunter Lufthansa, …"
+    },
+    {
+      "title": "Günstige Flüge nach Sardinien ab 53 € Hin- und Rückflug | Skyscanner",
+      "url": "https://www.skyscanner.de/fluge/fluege-nach-region/44293231/billigfluge-nach-sardinien.html?msockid=29b661059f26622318e976d19e8b639a",
+      "snippet": "Mit Skyscanner findest du günstige Flüge nach Sardinien. Vergleiche Charterflüge, Billigflüge und Linienflüge. Buche direkt und ohne …"
+    }
+  ]
+}

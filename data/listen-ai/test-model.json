@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Listen-AI/test-model",
+  "slug": "listen-ai-test-model",
+  "author": "Listen-AI",
+  "url": "https://huggingface.co/Listen-AI/test-model",
+  "created_at": "2026-09-14T12:20:34.000Z",
+  "updated_at": "2026-09-14T12:25:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 91744,
+  "storage_human": "91744 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Test AI Models: A Step-by-Step Framework",
+      "url": "https://smartdev.com/ai-model-testing-guide/",
+      "snippet": "Struggling with AI reliability? This AI model testing guide gives you a 6-step framework, tools, metrics & a ready-to-use checklist."
+    },
+    {
+      "title": "Introducing next-generation audio models in the API | OpenAI",
+      "url": "https://openai.com/index/introducing-our-next-generation-audio-models/",
+      "snippet": "We launched our first audio model in 2022 ⁠ and since then, we&#x27;ve committed to improving the intelligence, accuracy, and reliability of these models. With these new audio models, developers can build more accurate and robust speech-to-text systems and expressive, characterful text-to-speech voices—all within the API."
+    },
+    {
+      "title": "AI API Model Tester — Check Which Model Your API Actually Runs ...",
+      "url": "https://apimaster.ai/ai-api-model-tester",
+      "snippet": "Free AI API model tester. Paste any OpenAI, Claude or Gemini endpoint and see which model it really runs — fingerprint detection exposes substituted or fake models in seconds. No key stored."
+    },
+    {
+      "title": "Arena Leaderboard | Compare & Benchmark the Best Frontier AI Models",
+      "url": "https://arena.ai/leaderboard",
+      "snippet": "See how leading AI models stack up across text, image, vision, and more. This page provides a high-level snapshot of each Arena. Explore dedicated tabs for deeper insights."
+    },
+    {
+      "title": "How to Test AI Models: A Complete Testing Guide",
+      "url": "https://www.technource.com/blog/how-to-test-ai-models/",
+      "snippet": "Learn how to test AI models for accuracy, bias, and performance with simple steps, tools, and best practices for real-world results."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "cdeplanne/microduck-alpha-walking",
+  "slug": "cdeplanne-microduck-alpha-walking",
+  "author": "cdeplanne",
+  "url": "https://huggingface.co/cdeplanne/microduck-alpha-walking",
+  "created_at": "2026-09-14T14:07:39.000Z",
+  "updated_at": "2026-09-14T14:07:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck-policy",
+    "microduck",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 793705,
+  "storage_human": "793705 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tutti gli indirizzi streaming dei canali RAI - Digital-Forum",
+      "url": "https://www.digital-forum.it/threads/tutti-gli-indirizzi-streaming-dei-canali-rai.82592/",
+      "snippet": "Sep 2, 2009 · 2) Perchè sul sito rai.tv mi fa vedere senza rotture? 3) In definitiva con wmp 10 non si possono usare? Grazie. …"
+    },
+    {
+      "title": "Confronto tra TGCom24 e Rai News 24 / Sky TG 24",
+      "url": "https://www.digital-forum.it/threads/confronto-tra-tgcom24-e-rai-news-24-sky-tg-24.221908/",
+      "snippet": "May 24, 2025 · TgCom24 con la gestione che secondo me così è sprecato e non lo guardo mai, fa comunque ascolti migliori di Rai …"
+    },
+    {
+      "title": "Elenco emittenti che trasmettono in HbbTV - Digital-Forum",
+      "url": "https://www.digital-forum.it/threads/elenco-emittenti-che-trasmettono-in-hbbtv.209579/",
+      "snippet": "Mar 29, 2021 · HbbTV Rai HD: Tramite i canali Jump HbbTV dal 501 in su, è possibile seguire i canali Rai in HD, a esclusione di Rai …"
+    },
+    {
+      "title": "Importante - Addio alle smartcard Tiger su tivùsat: dal 2026 stop al ...",
+      "url": "https://www.digital-forum.it/threads/addio-alle-smartcard-tiger-su-tiv%C3%B9sat-dal-2026-stop-al-supporto-come-continuare-a-vedere-i-canali.222526/",
+      "snippet": "Sep 5, 2025 · A partire dal primo trimestre 2026 i servizi tecnici che consentono l’utilizzo delle smartcard Tiger saranno …"
+    },
+    {
+      "title": "In Rilievo - I dati tecnici di trasmissione delle reti sul DTT",
+      "url": "https://www.digital-forum.it/threads/i-dati-tecnici-di-trasmissione-delle-reti-sul-dtt.212960/",
+      "snippet": "Jan 30, 2022 · Dopo anni direi che è ora di aprire una nuova discussione dedicata ai bitrate e ai dati tecnici dei canali trasmessi sul …"
+    }
+  ]
+}

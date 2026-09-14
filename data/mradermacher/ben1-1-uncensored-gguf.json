@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ben1.1-Uncensored-GGUF",
+  "slug": "mradermacher-ben1-1-uncensored-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ben1.1-Uncensored-GGUF",
+  "created_at": "2026-09-14T16:35:59.000Z",
+  "updated_at": "2026-09-14T16:46:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "en",
+    "base_model:Emiliosbs/Ben1.1-Uncensored",
+    "base_model:quantized:Emiliosbs/Ben1.1-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 14206903296,
+  "storage_human": "14.2 GB",
+  "base_model": "Emiliosbs/Ben1.1-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

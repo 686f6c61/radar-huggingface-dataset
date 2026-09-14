@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-mistral_keep80_disc_b010",
+  "slug": "jeesup-svd-safety-mistral_keep80_disc_b010",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-mistral_keep80_disc_b010",
+  "created_at": "2026-09-14T14:07:34.000Z",
+  "updated_at": "2026-09-14T14:25:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.2",
+    "base_model:finetune:mistralai/Mistral-7B-Instruct-v0.2",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 14483991459,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Globus Baumarkt | Online bestellen oder in Ihrem Markt reservieren",
+      "url": "https://www.globus-baumarkt.de/",
+      "snippet": "Globus Baumarkt – Nr. 1 für Kundenzufriedenheit Alles für Heimwerken, Bauen, Wohnen & Garten Top-Auswahl & Bestpreis …"
+    },
+    {
+      "title": "Globus Baumarkt Prospekt | Aktuelle Angebote & Top Preise",
+      "url": "https://www.globus-baumarkt.de/aktionen-angebote/aus-unserer-werbung/",
+      "snippet": "Die Angebote der Woche bei Globus Baumarkt. Top-Auswahl und Bestpreis-Garantie jetzt online bestellen oder im Markt reservieren!"
+    },
+    {
+      "title": "prospekte.globus-baumarkt.de",
+      "url": "https://prospekte.globus-baumarkt.de/",
+      "snippet": "Entdecken Sie die aktuellen Prospekte und Angebote von Globus Baumarkt online."
+    },
+    {
+      "title": "Unser Sortiment | Globus Baumarkt",
+      "url": "https://www.globus-baumarkt.de/sortiment/",
+      "snippet": "Das Sortiment von Globus Baumarkt im Überblick: Top-Auswahl & Bestpreis-Garantie online bestellen oder reservieren & abholen!"
+    },
+    {
+      "title": "Aktionen & Angebote bei Globus Baumarkt",
+      "url": "https://www.globus-baumarkt.de/aktionen-angebote/",
+      "snippet": "Aktionen & Angebote günstig online kaufen bei Globus Baumarkt. Top-Auswahl und Bestpreis-Garantie jetzt online bestellen oder im …"
+    }
+  ]
+}

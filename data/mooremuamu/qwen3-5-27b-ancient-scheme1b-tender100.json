@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "MooreMuaMu/Qwen3.5-27B-Ancient-Scheme1b-Tender100",
+  "slug": "mooremuamu-qwen3-5-27b-ancient-scheme1b-tender100",
+  "author": "MooreMuaMu",
+  "url": "https://huggingface.co/MooreMuaMu/Qwen3.5-27B-Ancient-Scheme1b-Tender100",
+  "created_at": "2026-09-14T15:28:47.000Z",
+  "updated_at": "2026-09-14T15:29:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "ug",
+    "mn",
+    "bo"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "ancient-languages",
+    "translation",
+    "reinforcement-learning",
+    "grpo",
+    "merged",
+    "conversational",
+    "zh",
+    "ug",
+    "mn",
+    "bo",
+    "base_model:Qwen/Qwen3.5-27B",
+    "base_model:finetune:Qwen/Qwen3.5-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54733595877,
+  "storage_human": "54.7 GB",
+  "base_model": "Qwen/Qwen3.5-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Télécharger et installer Firefox sous Windows | Assistance de Mozilla",
+      "url": "https://support.mozilla.org/fr/kb/telecharger-installer-firefox-windows?redirect=no",
+      "snippet": "Oct 30, 2021 · REDIRECT Comment installer Firefox sous Windows Partagez cet article : https://mzl.la/3Qw0pIN Ces personnes ont …"
+    },
+    {
+      "title": "Firefox auf die neueste Version aktualisieren | Hilfe zu Firefox",
+      "url": "https://support.mozilla.org/de/kb/firefox-auf-die-letzte-version-aktualisieren",
+      "snippet": "Firefox aktualisieren Klicken Sie auf der rechten Seite der Firefox-Symbolleiste auf die Menüschaltfläche , um das Menü zu öffnen. …"
+    },
+    {
+      "title": "如何看待北京火狐关闭及 Firefox 账户服务终止？ - 知乎",
+      "url": "https://www.zhihu.com/question/1932984295514964671",
+      "snippet": "Firefox火狐中文官网将停止运营 7月28日，北京谋智火狐信息技术有限公司发布关于Firefox在中国持续运营，但北京火狐关闭及Firefox …"
+    },
+    {
+      "title": "为什么Linux发行版普遍预装Firefox？ - 知乎",
+      "url": "https://www.zhihu.com/question/645196882",
+      "snippet": "1.Firefox是开源软件，所以Linux预装Firefox属于情理之中的事情。 2.前面两个答案说Chrome闭源Chromium开源是没错的，但是却忽 …"
+    },
+    {
+      "title": "Firefox downloaden en installeren in Windows | Hulp voor Firefox",
+      "url": "https://support.mozilla.org/nl/kb/firefox-downloaden-en-installeren-windows",
+      "snippet": "Firefox op uw computer installeren: Bezoek deze Firefox-downloadpagina in een willekeurige browser, zoals Edge. Klik op de knop …"
+    }
+  ]
+}

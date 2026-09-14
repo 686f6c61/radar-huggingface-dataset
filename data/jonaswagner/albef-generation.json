@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jonaswagner/albef-generation",
+  "slug": "jonaswagner-albef-generation",
+  "author": "jonaswagner",
+  "url": "https://huggingface.co/jonaswagner/albef-generation",
+  "created_at": "2026-09-14T15:21:01.000Z",
+  "updated_at": "2026-09-14T15:21:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speak on it! - Jeu Multijoueur d'Imitation de Sons et Voix",
+      "url": "https://www.speakonit.net/",
+      "snippet": "Speak on it! est un jeu multijoueur en ligne où vous devez imiter des sons et des voix extraits de vidéos. Regardez une courte vidéo, …"
+    },
+    {
+      "title": "Echotations - Sound Imitation – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.C3BGames.Echotations&hl=fr",
+      "snippet": "Jeu d'imitation sonore amusant pour toute la famille."
+    },
+    {
+      "title": "Jeux SONORES – COKOJEUX",
+      "url": "https://www.cokojeux.com/tag/jeux-sonores/",
+      "snippet": "Plongez dans le monde passionnant des jeux sonores en ligne conçus spécialement pour les enfants, où l’amusement rencontre …"
+    },
+    {
+      "title": "Loto sonore des cris des animaux, des instruments,des bruits familiers",
+      "url": "https://dessinemoiunehistoire.net/loto-sonore/",
+      "snippet": "Les planches de loto à imprimer sont au format pdf et les extraits au format mp3 : 28 sonorités d’instruments (cordes, vent, …"
+    },
+    {
+      "title": "Jeux sonores - LaSonotheque",
+      "url": "https://lasonotheque.org/jeux/",
+      "snippet": "Un Quiz Sonore (ou blind test ?) de 4 niveaux (facile, intermédiaire, difficile et expert). Ecoutez et répondez à la question. Cliquez sur …"
+    }
+  ]
+}

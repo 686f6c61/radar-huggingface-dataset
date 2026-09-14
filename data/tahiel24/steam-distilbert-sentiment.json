@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Tahiel24/steam-distilbert-sentiment",
+  "slug": "tahiel24-steam-distilbert-sentiment",
+  "author": "Tahiel24",
+  "url": "https://huggingface.co/Tahiel24/steam-distilbert-sentiment",
+  "created_at": "2026-09-14T15:24:44.000Z",
+  "updated_at": "2026-09-14T15:27:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2024 NBA Playoffs | Official Bracket, Schedule and Series Matchups",
+      "url": "https://www.nba.com/playoffs/2024",
+      "snippet": "The official site of the 2024 NBA Playoffs. Latest news, schedules, matchups, highlights, bracket and more."
+    },
+    {
+      "title": "2024–25 NBA season - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2024%E2%80%9325_NBA_season",
+      "snippet": "The 2024–25 NBA season was the 79th season of the National Basketball Association (NBA). The regular season began on October …"
+    },
+    {
+      "title": "2024 Playoffs | All Series | NBA.com",
+      "url": "https://www.nba.com/playoffs/2024/series",
+      "snippet": "What's next for Mavs after loss in Finals?"
+    },
+    {
+      "title": "2023–24 NBA season - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2023%E2%80%9324_NBA_season",
+      "snippet": "The play-in tournament took place from April 16–19, and the 2024 NBA playoffs began on April 20. The NBA Finals between the …"
+    },
+    {
+      "title": "2023-24 NBA Season Summary | Basketball-Reference.com",
+      "url": "https://www.basketball-reference.com/leagues/NBA_2024.html",
+      "snippet": "Checkout the latest 2023-24 NBA Season Summary including Shooting Stats, Advanced Stats, Conference and Division Standings, …"
+    }
+  ]
+}

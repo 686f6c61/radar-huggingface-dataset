@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "JasonYANG170/bge-large-zh-v1.5-ONNX",
+  "slug": "jasonyang170-bge-large-zh-v1-5-onnx",
+  "author": "JasonYANG170",
+  "url": "https://huggingface.co/JasonYANG170/bge-large-zh-v1.5-ONNX",
+  "created_at": "2026-09-14T16:59:55.000Z",
+  "updated_at": "2026-09-14T17:11:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers.js",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "feature-extraction",
+    "webgpu",
+    "zh",
+    "base_model:BAAI/bge-large-zh-v1.5",
+    "base_model:quantized:BAAI/bge-large-zh-v1.5",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2341492793,
+  "storage_human": "2.3 GB",
+  "base_model": "BAAI/bge-large-zh-v1.5",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Páginas de Facebook que sigo sin que yo las siga realmente",
+      "url": "https://es.ccm.net/forum/affich-1941548-paginas-de-facebook-que-sigo-sin-que-yo-las-siga-realmente",
+      "snippet": "Jan 6, 2020 · Hola, Desde hace unos días me he dado cuenta que al revisar las páginas que sigo me aparece una notoria cantidad …"
+    },
+    {
+      "title": "Je n'arrive pas à ajouter un ami sur Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-7518658-je-n-arrive-pas-a-ajouter-un-ami-sur-facebook",
+      "snippet": "Pourquoi je ne peux pas publier en anonyme sur facebook- Forum Facebook 12 réponses Résumé de la discussion Le problème …"
+    },
+    {
+      "title": "Link para eliminar tu Facebook definitivamente [Resuelto] - CCM",
+      "url": "https://es.ccm.net/forum/affich-141643-link-para-eliminar-tu-facebook-definitivamente",
+      "snippet": "Jun 20, 2015 · Para darte de baja o eliminar tu cuenta de Facebook: *Inicia sesión en Facebook *Haz clic en el botón a la derecha de …"
+    },
+    {
+      "title": "Facebook : page blanche [Résolu] - Facebook - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-11538947-facebook-page-blanche",
+      "snippet": "Meilleure réponse: J'ai trouvé, le problème est la nouvelle page facebook avec une des applications externes, il y a incompatibilité. Il …"
+    },
+    {
+      "title": "Comment supprimer définitivement votre compte Facebook",
+      "url": "https://www.zdnet.fr/pratique/comment-supprimer-definitivement-votre-compte-facebook-39932301.htm",
+      "snippet": "Nov 12, 2021 · Pratique : Se débarrasser de son compte Facebook demande un peu de travail de votre part."
+    }
+  ]
+}

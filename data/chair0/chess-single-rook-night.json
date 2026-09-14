@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "chair0/chess-single-rook-night",
+  "slug": "chair0-chess-single-rook-night",
+  "author": "chair0",
+  "url": "https://huggingface.co/chair0/chess-single-rook-night",
+  "created_at": "2026-09-14T12:26:47.000Z",
+  "updated_at": "2026-09-14T12:27:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:chair0/chess_single_rook_noon_trimmed",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714832,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ihr Spezialist für Zahntechnik in Oldenburg- m.c. Zahntechnik",
+      "url": "https://mc-zahntechnik.de/",
+      "snippet": "Jetzt anschauen und direkt bei uns bestellen! Wir präsentieren Ihnen die verschiedenen Varianten der Rekonstruktion, Materialien, …"
+    },
+    {
+      "title": "m.c. Zahntechnik Oldenburg GmbH & Co. KG",
+      "url": "https://web2.cylex.de/firma-home/m-c--zahntechnik-oldenburg-gmbh-_-co--kg-14124866.html",
+      "snippet": "Aug 14, 2026 · m.c. Zahntechnik Oldenburg GmbH & Co. KG An der Südbäke in Oldenburg Bürgerfelde, ☎ 0441 961..., ⌚ …"
+    },
+    {
+      "title": "m.c. zahntechnik gmbh - Dentallabor in Oldenburg | Telefonnummer ...",
+      "url": "https://www.oeffnungszeitenbuch.de/filiale/Oldenburg-m.c.%2520zahntechnik%2520gmbh%2520-%2520Dentallabor-2016633H.html",
+      "snippet": "Telefonnummer, Adresse und Öffnungszeiten für m.c. zahntechnik gmbh - Dentallabor in Oldenburg, An der Südbäke 1 Alles …"
+    },
+    {
+      "title": "m.c. zahntechnik gmbh - oldenburg-oldenburg.branchen-info.net",
+      "url": "https://oldenburg-oldenburg.branchen-info.net/mc-zahntechnik-gmbh/537958/",
+      "snippet": "m.c. zahntechnik gmbh, An der Südbäke 1, 26127 Oldenburg, 0441 961961, https://www.mc-zahntechnik.de, info@mc …"
+    },
+    {
+      "title": "mc zahntechnik GmbH — Zahnlabor in Oldenburg",
+      "url": "https://oldenburg-2.defirmenkataloge.com/company/mc-zahntechnik-gmbh/",
+      "snippet": "Vollständige Informationen über das Unternehmen mc zahntechnik GmbH in Oldenburg, Adresse, Telefon oder Fax, E-Mail, …"
+    }
+  ]
+}
