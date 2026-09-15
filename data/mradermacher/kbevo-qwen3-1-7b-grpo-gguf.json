@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/KBevo-Qwen3-1.7B-GRPO-GGUF",
+  "slug": "mradermacher-kbevo-qwen3-1-7b-grpo-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/KBevo-Qwen3-1.7B-GRPO-GGUF",
+  "created_at": "2026-09-15T13:29:12.000Z",
+  "updated_at": "2026-09-15T13:45:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "kbevo",
+    "qwen3",
+    "structured-knowledge",
+    "knowledge-base",
+    "multi-hop-reasoning",
+    "tool-use",
+    "colm-2026",
+    "grpo",
+    "en",
+    "base_model:kilian-group/KBevo-Qwen3-1.7B-GRPO",
+    "base_model:quantized:kilian-group/KBevo-Qwen3-1.7B-GRPO",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720036352,
+  "parameters_human": "1.72B",
+  "storage_bytes": 15953831232,
+  "storage_human": "16.0 GB",
+  "base_model": "kilian-group/KBevo-Qwen3-1.7B-GRPO",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "www.questions.sncf.com",
+      "url": "http://www.questions.sncf.com/",
+      "snippet": "This domain does not exist"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Zaytron40k/millie-v3-krea2-lora",
+  "slug": "zaytron40k-millie-v3-krea2-lora",
+  "author": "Zaytron40k",
+  "url": "https://huggingface.co/Zaytron40k/millie-v3-krea2-lora",
+  "created_at": "2026-09-15T11:41:25.000Z",
+  "updated_at": "2026-09-15T12:15:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "krea2",
+    "krea-2",
+    "text-to-image",
+    "character",
+    "musubi-tuner",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2114463072,
+  "storage_human": "2.1 GB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Digiposte - Le coffre-fort numérique sécurisé de La Poste - La Poste",
+      "url": "https://www.laposte.fr/digiposte/tous-mes-documents-partout-et-tout-le-temps",
+      "snippet": "Connectez-vous à Digiposte. Recevez et conservez en sécurité vos documents importants. Coffre-fort numérique 100% hébergé en …"
+    },
+    {
+      "title": "Suivre une lettre, un Colissimo ou un Chronopost - La Poste",
+      "url": "https://www.laposte.fr/outils/suivre-vos-envois",
+      "snippet": "Suivez vos lettres ou vos colis à l’aide d'un numéro de suivi ou d’avis de passage sur le site de La Poste. Vous avez la possibilité de …"
+    },
+    {
+      "title": "Accueil - L'Identité Numérique",
+      "url": "https://lidentitenumerique.laposte.fr/",
+      "snippet": "L'Identité Numérique La Poste, c'est l'application pour sécuriser votre vie numérique et faciliter vos démarches en ligne."
+    },
+    {
+      "title": "Créer mon Identité Numérique | FAQ L'Identité Numérique",
+      "url": "https://aide.lidentitenumerique.laposte.fr/kb/fr/creer-mon-identite-numerique-10408",
+      "snippet": "Créer mon Identité Numérique La Poste, Se connecter au Compte La Poste, Vérifier mon identité, Activer mon Identité Numérique …"
+    },
+    {
+      "title": "Nous contacter - Aide en ligne Laposte.fr",
+      "url": "https://aide.laposte.fr/nous-contacter",
+      "snippet": "Bienvenue sur l’assistance en ligne du site laposte.fr. Trouvez les réponses à toutes vos questions grâce à notre aide en ligne !"
+    }
+  ]
+}

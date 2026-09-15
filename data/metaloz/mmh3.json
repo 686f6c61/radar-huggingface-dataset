@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "metaloz/MMH3",
+  "slug": "metaloz-mmh3",
+  "author": "metaloz",
+  "url": "https://huggingface.co/metaloz/MMH3",
+  "created_at": "2026-09-15T13:42:30.000Z",
+  "updated_at": "2026-09-15T13:44:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:pmczip/MiniMaxH3_LoRAs",
+    "base_model:adapter:pmczip/MiniMaxH3_LoRAs",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2640341616,
+  "storage_human": "2.6 GB",
+  "base_model": "pmczip/MiniMaxH3_LoRAs",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Firefox の接続設定 | Firefox ヘルプ - Mozilla Support",
+      "url": "https://support.mozilla.org/ja/kb/connection-settings-firefox",
+      "snippet": "注記: 接続設定 ダイアログは、Firefox のインターネット接続方法を制御する拡張機能でも表示されます。 拡張機能を無効化 をク …"
+    },
+    {
+      "title": "Firefox unter Linux installieren | Hilfe zu Firefox - Mozilla Support",
+      "url": "https://support.mozilla.org/de/kb/firefox-unter-linux-installieren",
+      "snippet": "In vielen Linux-Distributionen ist Firefox bereits vorinstalliert und als Standardbrowser festgelegt. Wenn Sie jedoch Firefox unter dem …"
+    },
+    {
+      "title": "如何看待北京火狐关闭及 Firefox 账户服务终止？ - 知乎",
+      "url": "https://www.zhihu.com/question/1932984295514964671",
+      "snippet": "Firefox火狐中文官网将停止运营 7月28日，北京谋智火狐信息技术有限公司发布关于Firefox在中国持续运营，但北京火狐关闭及Firefox …"
+    },
+    {
+      "title": "为什么有人爱 Firefox 胜过 Chrome 呢？ - 知乎",
+      "url": "https://www.zhihu.com/question/325600788",
+      "snippet": "FireFox：下载有史以来最快的 FirefoxChrome:Google Chrome 网络浏览器"
+    },
+    {
+      "title": "Firefox unter Windows installieren | Hilfe zu Firefox",
+      "url": "https://support.mozilla.org/de/kb/how-download-and-install-firefox-windows",
+      "snippet": "Dieser Artikel beschreibt die Installation von Firefox unter Windows, entweder mithilfe des einfachen Online-Installers von Mozilla …"
+    }
+  ]
+}

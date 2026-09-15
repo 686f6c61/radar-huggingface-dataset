@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "frankjoshua/cyberrealistic_v120",
+  "slug": "frankjoshua-cyberrealistic_v120",
+  "author": "frankjoshua",
+  "url": "https://huggingface.co/frankjoshua/cyberrealistic_v120",
+  "created_at": "2026-09-15T16:47:03.000Z",
+  "updated_at": "2026-09-15T16:49:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13876052718,
+  "storage_human": "13.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "s-kora.com",
+      "url": "https://s-kora.com/lander",
+      "snippet": ""
+    }
+  ]
+}

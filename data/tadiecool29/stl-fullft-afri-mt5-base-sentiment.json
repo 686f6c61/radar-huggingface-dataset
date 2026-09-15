@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "tadiecool29/STL-FullFT-afri-mt5-base-sentiment",
+  "slug": "tadiecool29-stl-fullft-afri-mt5-base-sentiment",
+  "author": "tadiecool29",
+  "url": "https://huggingface.co/tadiecool29/STL-FullFT-afri-mt5-base-sentiment",
+  "created_at": "2026-09-15T15:41:16.000Z",
+  "updated_at": "2026-09-15T15:41:44.000Z",
+  "license": "afl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mt5",
+    "text2text-generation",
+    "full-finetuning",
+    "amharic",
+    "sentiment-classification",
+    "single-task",
+    "generated_from_trainer",
+    "base_model:masakhane/afri-mt5-base",
+    "base_model:finetune:masakhane/afri-mt5-base",
+    "license:afl-3.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 966573312,
+  "parameters_human": "966.6M",
+  "storage_bytes": 2024697357,
+  "storage_human": "2.0 GB",
+  "base_model": "masakhane/afri-mt5-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PSICOLOGIA CLINICA E SCIENZE COMPORTAMENTALI",
+      "url": "https://www.unipi.it/wp-content/uploads/Primo-scorrimento-Psicologia-clinica-e-scienze-comportamentali-a.a.-2025_26.pdf",
+      "snippet": "Gli interessati non riceveranno alcuna comunicazione personale, pertanto sono tenuti a prendere visione degli scorrimenti di …"
+    },
+    {
+      "title": "SCIENZE E TECNICHE DI PSICOLOGIA CLINICA E SPERIMENTALE GRADUATORIA …",
+      "url": "https://matricolandosi.unipi.it/wp-content/uploads/2024/09/Graduatoria-Scienze-e-Tecniche-di-Psicologia-Clinica-e-Sperimentale-ordinario-a.a.-2024_25-1.pdf",
+      "snippet": "Nella colonna “POSIZIONE” è indicata l’effettiva collocazione in graduatoria, secondo l’ordine di precedenza stabilito dal bando di …"
+    },
+    {
+      "title": "Immatricolazioni e iscrizioni ~ UNIPI",
+      "url": "https://www.unipi.it/didattica/iscrizioni/immatricolazioni-e-iscrizioni/",
+      "snippet": "Immatricolazioni e iscrizioni Corsi di laurea (I livello e ciclo unico) Corsi di laurea magistrale (II livello) Accesso ad anni successivi al …"
+    },
+    {
+      "title": "Come vedere se si è stati ammessi all'università?",
+      "url": "https://qualcherisposta.it/come-vedere-se-si-e-stati-ammessi-alluniversita",
+      "snippet": "Come faccio a sapere se sono stato ammesso all'università? Le graduatorie di scorrimento sono pubblicate nelle bacheche delle …"
+    },
+    {
+      "title": "TOLC-PSI: punteggio minimo e graduatoria 2026 | TestBuddy",
+      "url": "https://testbuddy.it/tolc/tolc-psi/punteggio-e-graduatoria",
+      "snippet": "Jun 6, 2026 · Scopri come funziona il punteggio del TOLC-PSI nel 2026, quali soglie minime considerare e come leggere la …"
+    }
+  ]
+}

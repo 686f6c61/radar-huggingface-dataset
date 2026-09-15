@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "bintis/uta-studio",
+  "slug": "bintis-uta-studio",
+  "author": "bintis",
+  "url": "https://huggingface.co/bintis/uta-studio",
+  "created_at": "2026-09-15T14:37:32.000Z",
+  "updated_at": "2026-09-15T14:50:46.000Z",
+  "license": "mixed-upstream-licenses",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "ggml",
+    "audio",
+    "singing-voice",
+    "uta-studio",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35699,
+  "parameters_human": "35699",
+  "storage_bytes": 13492180000,
+  "storage_human": "13.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.com/intl/en/earth/",
+      "snippet": "Google Earth is the most photorealistic, digital version of our planet. Where do the images come from? How are they they put …"
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://streetviewstudio.maps.google.com/",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode"
+    },
+    {
+      "title": "Maps Content Partners - Google Search",
+      "url": "https://contentpartners.maps.google.com/welcome?hl=pt-BR",
+      "snippet": "Make your geospatial data accessible and useful to everyone. Help keep Google Maps up to date so the world can be accurately …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/maps/search/",
+      "snippet": "Map data ©2026 Google Terms 10 km Directions"
+    }
+  ]
+}

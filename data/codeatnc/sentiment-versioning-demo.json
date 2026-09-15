@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "CodeATNC/sentiment-versioning-demo",
+  "slug": "codeatnc-sentiment-versioning-demo",
+  "author": "CodeATNC",
+  "url": "https://huggingface.co/CodeATNC/sentiment-versioning-demo",
+  "created_at": "2026-09-15T13:15:22.000Z",
+  "updated_at": "2026-09-15T13:33:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 803513283,
+  "storage_human": "804 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mercedes-Benz | Deutschland - Offizielle Webseite",
+      "url": "https://www.mercedes-benz.de/",
+      "snippet": "Luxus, Sportlichkeit & Leistung vereint. Ob Limousine, T-Modell, Coupé, Cabrio, Roadster, SUV & mehr. Erleben Sie die Produkte …"
+    },
+    {
+      "title": "Konfigurator & Preise | Mercedes-Benz",
+      "url": "https://www.mercedes-benz.de/passengercars/configurator.html",
+      "snippet": "KonfiguratorProbefahrtMercedes-Benz Store."
+    },
+    {
+      "title": "Mercedes-Benz Brand Experience",
+      "url": "https://www.mercedes-benz.com/en/",
+      "snippet": "Innovative concepts, exceptional collaborations, background stories. Be inspired."
+    },
+    {
+      "title": "Mercedes‑Benz Fahrzeuge.",
+      "url": "https://www.mercedes-benz.com/de/fahrzeuge/",
+      "snippet": "Entdecken Sie die aktuellen Fahrzeugmodelle von Mercedes-Benz: Pkw, Transporter, LKW und Busse – erleben Sie automobile …"
+    },
+    {
+      "title": "خرید و فروش و قیمت روز بنز | باما",
+      "url": "https://bama.ir/car/mercedesbenz",
+      "snippet": "به روزترین آگهی های خرید و فروش و قیمت بنز مرسدس مرسدس بنز | قیمت خرید بنز مرسدس مرسدس بنز، صفر، کارکرده، دست دوم، نقد و اقساطی،"
+    }
+  ]
+}

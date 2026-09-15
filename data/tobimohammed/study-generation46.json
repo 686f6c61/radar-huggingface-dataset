@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tobimohammed/study-generation46",
+  "slug": "tobimohammed-study-generation46",
+  "author": "tobimohammed",
+  "url": "https://huggingface.co/tobimohammed/study-generation46",
+  "created_at": "2026-09-15T18:09:02.000Z",
+  "updated_at": "2026-09-15T18:09:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "THYSSENKRUPP AKTIE | TKA | Aktienkurs | DE0007500001 | News",
+      "url": "https://www.finanzen.net/aktien/thyssenkrupp-aktie",
+      "snippet": "Die ThyssenKrupp AG gilt als Deutschlands größtes Stahl- und Technologieunternehmen und ist in rund 80 Ländern weltweit mit …"
+    },
+    {
+      "title": "ThyssenKrupp AKTIE | Aktienkurs & News | TKA - boerse.de",
+      "url": "https://www.boerse.de/aktien/ThyssenKrupp-Aktie/DE0007500001",
+      "snippet": "Die ThyssenKrupp-Aktie kostet aktuell 15,12 Euro (Stand: 14.09.26 21:46:02), das entspricht einer Kursveränderung von 1,72% zum …"
+    },
+    {
+      "title": "thyssenkrupp Realtimekurs und Realtimechart - finanzen.net",
+      "url": "https://www.finanzen.net/realtimekurs/thyssenkrupp",
+      "snippet": "Pushkurse und Realtimekurse inklusive Realtimechart für die thyssenkrupp Aktie."
+    },
+    {
+      "title": "Thyssenkrupp Aktie • 750000 • DE0007500001 • onvista",
+      "url": "https://www.onvista.de/aktien/ThyssenKrupp-Aktie-DE0007500001",
+      "snippet": "Investiere in Unternehmen mit über 25 Jahren stetig steigender Dividenden - für stabile Erträge und langfristige Portfolioresilienz. …"
+    },
+    {
+      "title": "ThyssenKrupp Realtimekurs | Kurs aktuell | Echtzeit - boerse.de",
+      "url": "https://www.boerse.de/realtime-kurse/ThyssenKrupp-Aktie/DE0007500001",
+      "snippet": "ThyssenKrupp (WKN 750000; ISIN: DE0007500001): Kurs & Aktienchart in Echtzeit. Live Realtime-Kurs Realtime-Push"
+    }
+  ]
+}

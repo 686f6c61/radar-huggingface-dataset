@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Daframpp/ppo-LunarLander-v3",
+  "slug": "daframpp-ppo-lunarlander-v3",
+  "author": "Daframpp",
+  "url": "https://huggingface.co/Daframpp/ppo-LunarLander-v3",
+  "created_at": "2026-09-15T14:23:10.000Z",
+  "updated_at": "2026-09-15T14:25:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 584789,
+  "storage_human": "584789 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Beursduivel.be: het laatste nieuws en stijgers/dalers koersen",
+      "url": "https://www.beursduivel.be/",
+      "snippet": "Beursduivel.be: steun en toeverlaat voor beleggers. Bekijk de beurskoersen, de laatste stand van de BEL 20 en lees het nieuws, de …"
+    },
+    {
+      "title": "Koersen » Europa » België » BEL 20 - Beursduivel.be",
+      "url": "https://www.beursduivel.be/koersen/default.aspx",
+      "snippet": "Gesponsorde links Beursduivel Premium Verhoog uw rendement met de analyses en kooptips van Beursduivel!"
+    },
+    {
+      "title": "Nieuws - Beursduivel.be",
+      "url": "https://www.beursduivel.be/nieuws",
+      "snippet": "15 hours ago · Beursduivel.be: steun en toeverlaat voor beleggers. Bekijk de beurskoersen, de laatste stand van de BEL 20 en lees …"
+    },
+    {
+      "title": "Beursduivel.be - Markt Monitor",
+      "url": "https://monitor.beursduivel.be/",
+      "snippet": "Kies voor de lichte of donkere variant van de Beursduivel Markt Monitor. Met dit pulldownmenu bepaalt u per hoofdgroep over welke …"
+    },
+    {
+      "title": "koersenbord | De Tijd",
+      "url": "https://www.tijd.be/markten-live/koersenbord.html",
+      "snippet": "May 22, 2019 · Raadpleeg hier de realtime koersen, grafieken, financiële data en nieuws over de Europese en Amerikaanse beurzen: …"
+    }
+  ]
+}

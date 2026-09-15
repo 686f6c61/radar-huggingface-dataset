@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "fulei1232/SpatialMemoryVLA-RoboMME-ABC-5k-fast",
+  "slug": "fulei1232-spatialmemoryvla-robomme-abc-5k-fast",
+  "author": "fulei1232",
+  "url": "https://huggingface.co/fulei1232/SpatialMemoryVLA-RoboMME-ABC-5k-fast",
+  "created_at": "2026-09-15T02:26:38.000Z",
+  "updated_at": "2026-09-15T13:46:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 591102200700,
+  "storage_human": "591.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Geoportal - Startseite",
+      "url": "https://www.geoportail.lu/de/",
+      "snippet": "Die offizielle nationale Platform für geographische Daten und Dienstleistungen. Entdecken sie unsere Karten Portale, Daten Kataloge …"
+    },
+    {
+      "title": "Géoportail - Documentation",
+      "url": "https://www.geoportail.lu/fr/documentation/",
+      "snippet": "Documentation sur les fonctionnalités du geoportail et sites associées"
+    },
+    {
+      "title": "Silex : le trouver ou l'acheter - Géoforum",
+      "url": "https://www.geoforum.fr/topic/34906-silex-le-trouver-ou-lacheter/",
+      "snippet": "May 19, 2017 · Bonjour à tous ! J'étudie l'archéologie préhistorique à Montpellier et tout particulièrement l'industrie lithique. Pour …"
+    },
+    {
+      "title": "Oursin régulier des faluns de Touraine - Oursins fossiles - Géoforum",
+      "url": "https://www.geoforum.fr/topic/29268-oursin-regulier-des-faluns-de-touraine/",
+      "snippet": "Oct 14, 2014 · Bonjour,J'ai prospecté récemment dans les faluns de Touraine mais, comme je n'y étais pas allé depuis deux ans et …"
+    },
+    {
+      "title": "Je n'accède plus au site géoportail - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-37735420-je-n-accede-plus-au-site-geoportail",
+      "snippet": "Nov 21, 2022 · Bonjour, Je n'accède plus au site géoportail, alors que je l'ai utilisé régulièrement auparavant. Les signes sont les …"
+    }
+  ]
+}

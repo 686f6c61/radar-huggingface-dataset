@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "oddadmix/Kokoro-7M-Distill",
+  "slug": "oddadmix-kokoro-7m-distill",
+  "author": "oddadmix",
+  "url": "https://huggingface.co/oddadmix/Kokoro-7M-Distill",
+  "created_at": "2026-09-08T22:00:30.000Z",
+  "updated_at": "2026-09-13T09:58:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "tts",
+    "english",
+    "kokoro",
+    "styletts2",
+    "distillation",
+    "on-device",
+    "knowledge-distillation",
+    "text-to-speech",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 35,
+  "trending_score": 11,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31143933,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Магазины сантехники и санфаянса на станции Ⓜ️ Новокузнецкая в Москве ...",
+      "url": "https://zoon.ru/msk/shops/type/santehnika_i_sanfayans/metro/novokuznetskaya/",
+      "snippet": "Магазины сантехники и санфаянса рядом на карте: ⭐️ 36 магазинов на станции Ⓜ️ Новокузнецкая в Москве – 💬 отзывы …"
+    },
+    {
+      "title": "Сантехника у метро Новокузнецкая, Москва — рейтинг, адреса …",
+      "url": "https://totadres.ru/moskva/santehnika/metro/novokuzneckaya",
+      "snippet": "Сантехника у метро Новокузнецкая, Москва — 47 мест с рейтингом. Адреса, телефоны, часы работы, схема проезда."
+    },
+    {
+      "title": "Услуги сантехника у метро Новокузнецкая в Москве",
+      "url": "https://myguru.ru/services/santehnika/novokuzneckaya-metro/",
+      "snippet": "Jun 30, 2026 · Квалифицированные сантехники предлагают полный спектр работ по замене, ремонту, монтажу …"
+    },
+    {
+      "title": "Сантехнические работы рядом с метро Новокузнецкая в Москве",
+      "url": "https://msk.spravker.ru/santekhnicheskie-raboty/metro-novokuznetskaya/",
+      "snippet": "Сантехнические работы рядом с метро Новокузнецкая в Москве Мы нашли для Вас 18 организаций, где можно заказать …"
+    },
+    {
+      "title": "Магазины сантехники на Новокузнецкой - Москва - адреса на …",
+      "url": "https://www.minimum-price.ru/shops/sanitary_by_novokuznetskaya/",
+      "snippet": "Список магазинов сантехники у метро Новокузнецкая, в которых можно купить смесители, полотенцесушители, унитазы, …"
+    }
+  ]
+}

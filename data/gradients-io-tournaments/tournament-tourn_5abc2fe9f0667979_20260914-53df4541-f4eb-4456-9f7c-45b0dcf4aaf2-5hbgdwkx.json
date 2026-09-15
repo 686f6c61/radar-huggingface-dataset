@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-tourn_5abc2fe9f0667979_20260914-53df4541-f4eb-4456-9f7c-45b0dcf4aaf2-5HBgDWKx",
+  "slug": "gradients-io-tournaments-tournament-tourn_5abc2fe9f0667979_20260914-53df4541-f4eb-4456-9f7c-45b0dcf4aaf2-5hbgdwkx",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_5abc2fe9f0667979_20260914-53df4541-f4eb-4456-9f7c-45b0dcf4aaf2-5HBgDWKx",
+  "created_at": "2026-09-15T13:30:03.000Z",
+  "updated_at": "2026-09-15T13:30:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/cache/models/8d7f663aaab4e5dd",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:adapter:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1359448480,
+  "storage_human": "1.4 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pubmed中怎么检索生信相关的文章，有主题词吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/466812708",
+      "snippet": "看你主要选择什么方向的。最简单的就是 Bioinformatics，如果是 基因组学 分析，就是genome research or project； 转录组测序 RNA …"
+    },
+    {
+      "title": "citespace如何分析新版pubmed的文献数据？ - 知乎",
+      "url": "https://www.zhihu.com/question/403062331",
+      "snippet": "如题，求助，新版pubmed，如何将文献数据导入citespace？"
+    },
+    {
+      "title": "oltre pubmed.......",
+      "url": "https://www.molecularlab.it/forum/topic.asp?TOPIC_ID=24680",
+      "snippet": "Ciao ragazzi, sto facendo ricerche bibliografiche per la mia tesi in citologia sperimentale, sapreste indicarmi qualche sito oltre a …"
+    },
+    {
+      "title": "应该怎么使用pubmed？ - 知乎",
+      "url": "https://www.zhihu.com/question/21763043",
+      "snippet": "对于小白来说，pubmed听上去很高大上，但其实pubmed就是一个类似于百度的搜索引擎，只是搜索的的内容是生物医药领域的英文 …"
+    },
+    {
+      "title": "为什么pubmed检索后全部果都折叠了？ - 知乎",
+      "url": "https://www.zhihu.com/question/585891059",
+      "snippet": "这题我会，读研的时候也经常用 pubmed 这个网站，但是我是在我导师推荐下用了pubmedplus浏览器插件，这个插件完全免费的，超 …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "emmalamb/multitask-tutorial83",
+  "slug": "emmalamb-multitask-tutorial83",
+  "author": "emmalamb",
+  "url": "https://huggingface.co/emmalamb/multitask-tutorial83",
+  "created_at": "2026-09-15T19:01:34.000Z",
+  "updated_at": "2026-09-15T19:01:40.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SoFi Stadium",
+      "url": "https://www.sofistadium.com/",
+      "snippet": "SoFi Stadium is an unparalleled sports and entertainment destination built in Inglewood, CA, by Los Angeles Rams Owner/Chairman …"
+    },
+    {
+      "title": "Events | SoFi Stadium",
+      "url": "https://www.sofistadium.com/events/",
+      "snippet": "Book Your Flight to SoFi Stadium! Book today with American Airlines Book Your Flight Fri., Sep. 25, 2026 / 7:30 PM"
+    },
+    {
+      "title": "LA Bowl College Football Game Hosted By Gronk | SoFi Stadium",
+      "url": "https://labowl.sofistadium.com/",
+      "snippet": "Dec 13, 2025 · LA Bowl Hosted By Gronk takes place on December 13th at SoFi Stadium in Los Angeles. Mountain West's #1 …"
+    },
+    {
+      "title": "SoFi Stadium Store",
+      "url": "https://shop.sofistadium.com/",
+      "snippet": "SoFi Stadium Store Enter the site password below. SoFi Stadium Store"
+    },
+    {
+      "title": "Maps - SoFi Stadium",
+      "url": "https://www.sofistadium.com/plan-your-visit/maps",
+      "snippet": "View level-by-level seating maps, parking lot to stadium navigation and other various SoFi Stadium locations."
+    }
+  ]
+}

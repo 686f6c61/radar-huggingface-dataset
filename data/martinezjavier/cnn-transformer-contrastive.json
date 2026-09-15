@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "martinezjavier/cnn-transformer-contrastive",
+  "slug": "martinezjavier-cnn-transformer-contrastive",
+  "author": "martinezjavier",
+  "url": "https://huggingface.co/martinezjavier/cnn-transformer-contrastive",
+  "created_at": "2026-09-15T18:13:49.000Z",
+  "updated_at": "2026-09-15T18:13:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lenovo Legion | Dosáhněte nemožného | Lenovo Czech",
+      "url": "https://www.lenovo.com/cz/cs/legion/?msockid=3476bac1951f62b83a7ead1494e86356",
+      "snippet": "Lenovo Legion devices go above and beyond your wildest esports dreams, bringing superpowered gaming towers, laptops, and tons …"
+    },
+    {
+      "title": "Notebooky Lenovo Legion - Alza.cz",
+      "url": "https://www.alza.cz/lenovo-legion/18865483.htm",
+      "snippet": "Hrajte zcela bez omezení i ty nejnovější hry na zařízeních řady Lenovo Legion. Vybrané počítače nebo notebooky jsou totiž …"
+    },
+    {
+      "title": "Lenovo Legion - Alza.cz",
+      "url": "https://www.alza.cz/lenovo-legion-sz40189.htm",
+      "snippet": "Herní notebook - Intel Core Ultra 9 275HX, 16\" OLED lesklý 2560 × 1600 240Hz, RAM 32GB DDR5, NVIDIA GeForce RTX 5070 Ti …"
+    },
+    {
+      "title": "Lenovo notebooky Legion - DATART",
+      "url": "https://www.datart.cz/lenovo-notebooky-legion",
+      "snippet": "notebook • 15,1\" úhlopříčka • samostatná grafická karta NVIDIA® GeForce RTX™ 5050 (8 GB) • 2560 × 1600 px • procesor Intel …"
+    },
+    {
+      "title": "Notebooky | LEGION | Lenovoshop.cz",
+      "url": "https://www.lenovoshop.cz/notebooky-legion_c100000065.html",
+      "snippet": "Lenovo Legion je značka pro vášnivé hráče, kteří očekávají špičkový výkon a dokonalý obraz. Herní notebooky Legion kombinují …"
+    }
+  ]
+}

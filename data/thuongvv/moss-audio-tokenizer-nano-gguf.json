@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "thuongvv/MOSS-Audio-Tokenizer-Nano-GGUF",
+  "slug": "thuongvv-moss-audio-tokenizer-nano-gguf",
+  "author": "thuongvv",
+  "url": "https://huggingface.co/thuongvv/MOSS-Audio-Tokenizer-Nano-GGUF",
+  "created_at": "2026-09-15T15:21:59.000Z",
+  "updated_at": "2026-09-15T15:28:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": "ggml",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "ggml",
+    "gguf",
+    "audio-codec",
+    "ios",
+    "swift",
+    "zerotts",
+    "audio-to-audio",
+    "multilingual",
+    "base_model:OpenMOSS-Team/MOSS-Audio-Tokenizer-Nano",
+    "base_model:quantized:OpenMOSS-Team/MOSS-Audio-Tokenizer-Nano",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21960064,
+  "parameters_human": "22.0M",
+  "storage_bytes": 156438336,
+  "storage_human": "156 MB",
+  "base_model": "OpenMOSS-Team/MOSS-Audio-Tokenizer-Nano",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GMX - kostenlose E-Mail, Cloud, Nachrichten & Freemail",
+      "url": "https://www.gmx.net/",
+      "snippet": "Kostenlose E-Mail-Adresse erstellen, Nachrichten lesen und Fotos & Dateien in der GMX Cloud sicher speichern. Jetzt registrieren!"
+    },
+    {
+      "title": "GMX Login – ganz einfach",
+      "url": "https://anmelden.gmx.net/",
+      "snippet": "Der GMX Login stellt Sie vor Fragen oder bereitet Ihnen Probleme? Hier erfahren Sie alles, was Sie zum GMX Postfach Login wissen …"
+    },
+    {
+      "title": "GMX E-Mail sichere & kostenlose E-Mail-Adresse",
+      "url": "https://www.gmx.net/mail/",
+      "snippet": "Speicherung aller E-Mails in Deutschland E-Mail-Verschlüsselung großer Speicherplatz Jetzt kostenlose GMX E-Mail-Adresse erstellen!"
+    },
+    {
+      "title": "Anmeldung und Passwort - GMX",
+      "url": "https://hilfe.gmx.net/account/logindaten/index.html",
+      "snippet": "Anmeldung und Passwort Sie haben Fragen zu Ihrem Account oder ein Problem mit dem Login auf Ihr Postfach? Hier finden Sie die …"
+    },
+    {
+      "title": "E-Mail-Adresse suchen: Rückwärtssuche, kostenlos ohne Anmeldung ...",
+      "url": "https://www.emailsherlock.com/de/e-mail-adresse-suchen",
+      "snippet": "E-Mail-Rückwärtssuche E-Mail-Adresse eingeben, und du siehst den Inhaber, seine öffentlichen Profile, den Host-Score der Domain …"
+    }
+  ]
+}

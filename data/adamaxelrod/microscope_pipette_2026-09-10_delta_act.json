@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AdamAxelrod/microscope_pipette_2026-09-10_delta_act",
+  "slug": "adamaxelrod-microscope_pipette_2026-09-10_delta_act",
+  "author": "AdamAxelrod",
+  "url": "https://huggingface.co/AdamAxelrod/microscope_pipette_2026-09-10_delta_act",
+  "created_at": "2026-09-15T18:42:21.000Z",
+  "updated_at": "2026-09-15T18:42:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:AdamAxelrod/microscope_pipette_2026-09-10_delta",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51597959,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206434724,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Interia - Polska i świat: informacje, sport, gwiazdy.",
+      "url": "https://temat.forum.interia.pl/",
+      "snippet": "Feb 20, 2026 · Interia - czołowy polski portal internetowy. Najlepsze serwisy informacyjne i tematyczne (Wydarzenia, Sport, …"
+    },
+    {
+      "title": "Interia - eurotopics.net",
+      "url": "https://www.eurotopics.net/fr/176986/interia",
+      "snippet": "Créé en 1999, le portail Interia est passé en 2008 dans le giron du groupe allemand Bauer Media Group. Si le portail traite en tout …"
+    },
+    {
+      "title": "Interia - eurotopics.net",
+      "url": "https://www.eurotopics.net/en/176986/interia",
+      "snippet": "The website Interia has existed since 1999 and has been owned by the German Bauer Media Group since 2008. It provides mainly …"
+    },
+    {
+      "title": "BYJU'S",
+      "url": "https://byjus.com/physics/law-of-inertia/",
+      "snippet": "What Is the Law of Inertia? Law of inertia, also known as Newton’s first law of motion, states that An object will continue to be in the …"
+    },
+    {
+      "title": "BYJU'S",
+      "url": "https://byjus.com/jee/moment-of-inertia/",
+      "snippet": "Moment of inertiais an important topic and appears in most of the Physics problems involving mass in rotational motion. Usually, MOI …"
+    }
+  ]
+}

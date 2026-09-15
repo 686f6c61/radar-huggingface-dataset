@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "amritachemistry/albef-baseline",
+  "slug": "amritachemistry-albef-baseline",
+  "author": "amritachemistry",
+  "url": "https://huggingface.co/amritachemistry/albef-baseline",
+  "created_at": "2026-09-15T13:44:16.000Z",
+  "updated_at": "2026-09-15T13:44:21.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Online Games at Poki - Play Now!",
+      "url": "https://poki.com/?msockid=396dd774fbbd64b906a9c0a1fab0657d",
+      "snippet": "Play free online games at Poki, the #1 website for instant web games. Explore exclusive titles, popular favorites, and new game …"
+    },
+    {
+      "title": "Gem 11 - Play Online for Free! | Poki",
+      "url": "https://poki.com/en/g/gem-11?msockid=396dd774fbbd64b906a9c0a1fab0657d",
+      "snippet": "Gem 11 is a puzzle game in which you have to connect gems of the same size, color, and number together, created by Air Guslar. …"
+    },
+    {
+      "title": "Master Checkers - Play Online for Free! | Poki",
+      "url": "https://poki.com/en/g/master-checkers?msockid=396dd774fbbd64b906a9c0a1fab0657d",
+      "snippet": "Master Checkers presents a classic board game where players strategically move pieces to capture opponents. The wooden board …"
+    },
+    {
+      "title": "Make Up Games - Play Online for Free! - Poki",
+      "url": "https://poki.com/en/make-up?msockid=396dd774fbbd64b906a9c0a1fab0657d",
+      "snippet": "Experiment with eyeshadow, hairstyles, and more in make up games online on Poki! Create stunning looks on models and …"
+    },
+    {
+      "title": "Tank Stars - Play Online for Free! | Poki",
+      "url": "https://poki.com/en/g/tank-stars?msockid=396dd774fbbd64b906a9c0a1fab0657d",
+      "snippet": "Play Tank Stars on the most popular website for free online games! Poki works on your mobile, tablet, or computer. No downloads, …"
+    }
+  ]
+}

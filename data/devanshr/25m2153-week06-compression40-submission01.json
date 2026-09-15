@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "DevanshR/25M2153-Week06-Compression40-Submission01",
+  "slug": "devanshr-25m2153-week06-compression40-submission01",
+  "author": "DevanshR",
+  "url": "https://huggingface.co/DevanshR/25M2153-Week06-Compression40-Submission01",
+  "created_at": "2026-09-15T13:28:39.000Z",
+  "updated_at": "2026-09-15T13:32:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-4B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3223726146,
+  "storage_human": "3.2 GB",
+  "base_model": "Qwen/Qwen3.5-4B-Base",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Möbel Ludwig | 3× in Wien · Küchen, Sofas, Schlafen",
+      "url": "https://www.ludwig.eu/",
+      "snippet": "Wien 22 Wien 10 Wien 12 Newsletter abonnieren und keine Angebote und Informationen mehr verpassen!"
+    },
+    {
+      "title": "sumedhss/23b1079-Week05-Compression40-Submission01 · Hugging Face",
+      "url": "https://huggingface.co/sumedhss/23b1079-Week05-Compression40-Submission01",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wien 22 - Möbel Ludwig",
+      "url": "https://www.ludwig.eu/hermann-gebauer-strasse",
+      "snippet": "Möbel Ludwig Wien 22 WIENS GRÖSSTES MÖBELHAUS MIT ÜBER 40.000m² AUSSTELLUNGSFLÄCHE Individuelle …"
+    },
+    {
+      "title": "Karriere - Möbel Ludwig",
+      "url": "https://www.ludwig.eu/karriere",
+      "snippet": "Sie möchten ein Teil des Teams von Möbel Ludwig werden? Sie möchten inspirieren oder an großen Projekten teilnehmen und ein …"
+    },
+    {
+      "title": "Devansh Rathor",
+      "url": "https://devanshr.me/",
+      "snippet": "building AI/ML enhanced full-stack applications · AI/ML Researcher and Full-Stack Developer with a strong academic foundation in Data Science & Artificial Intelligence, currently pursuing an M.S. by Research at IIT Bombay"
+    }
+  ]
+}

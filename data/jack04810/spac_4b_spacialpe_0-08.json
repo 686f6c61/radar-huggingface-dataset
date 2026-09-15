@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Jack04810/spac_4B_spacialpe_0.08",
+  "slug": "jack04810-spac_4b_spacialpe_0-08",
+  "author": "Jack04810",
+  "url": "https://huggingface.co/Jack04810/spac_4B_spacialpe_0.08",
+  "created_at": "2026-09-15T18:03:58.000Z",
+  "updated_at": "2026-09-15T19:14:42.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "3d",
+    "mesh",
+    "conversational",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4661771776,
+  "parameters_human": "4.66B",
+  "storage_bytes": 18667888955,
+  "storage_human": "18.7 GB",
+  "base_model": "qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UK Bank Holidays 2025 | England, Wales, Scotland, & Northern Ireland",
+      "url": "https://www.publicholidayguide.com/bank-holiday/uk-bank-holidays-2025/",
+      "snippet": "A complete list of UK bank holidays (public holidays) and dates for 2025 in England, Wales, Scotland and N. Ireland. Tons of info on …"
+    },
+    {
+      "title": "UK bank holidays - GOV.UK",
+      "url": "https://www.gov.uk/bank-holidays",
+      "snippet": "Find out when bank holidays are in England, Wales, Scotland and Northern Ireland - including past and future bank holidays"
+    },
+    {
+      "title": "2025 Public Holidays in the UK",
+      "url": "https://publicholidays.info/country/united-kingdom/2025",
+      "snippet": "UK Public Holidays in 2025 with dates and information on the origin and meaning of holidays. Including UK."
+    },
+    {
+      "title": "UK Bank Holidays 2025: Full List of Dates (Archive)",
+      "url": "https://bank-holidays-uk.co.uk/bank-holidays-2025/",
+      "snippet": "May 6, 2026 · This page is kept as a reference archive of the 2025 UK bank holiday calendar. For the current year see the full UK …"
+    },
+    {
+      "title": "UK Bank Holidays 2025 — England, Scotland, Wales and NI",
+      "url": "https://ukholidaysinfo.uk/uk-bank-holidays-2025/",
+      "snippet": "Find the complete list of UK bank holidays in 2025 for England, Scotland, Wales and Northern Ireland. There were no one-off national …"
+    }
+  ]
+}

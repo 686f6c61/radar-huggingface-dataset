@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Hornybot-RP-Julian-i1-GGUF",
+  "slug": "mradermacher-hornybot-rp-julian-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Hornybot-RP-Julian-i1-GGUF",
+  "created_at": "2026-09-15T18:06:02.000Z",
+  "updated_at": "2026-09-15T19:17:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3.5",
+    "llama.cpp",
+    "conversational",
+    "roleplay",
+    "adult",
+    "en",
+    "base_model:axiomofmind/Hornybot-RP-Julian",
+    "base_model:quantized:axiomofmind/Hornybot-RP-Julian",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 110211624160,
+  "storage_human": "110.2 GB",
+  "base_model": "axiomofmind/Hornybot-RP-Julian",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Myreadingmanga - Google Chrome",
+      "url": "https://forums.commentcamarche.net/forum/affich-37287851-myreadingmanga",
+      "snippet": "Jul 22, 2021 · Myreadingmanga- Forum Google Chrome Comment supprimer my business- Forum Navigateur Myreadingmanga …"
+    },
+    {
+      "title": "MyReadingManga - Reddit",
+      "url": "https://www.reddit.com/r/MyReadingManga/",
+      "snippet": "r/MyReadingManga: Read Bara, shota, furry, yaoi manga and doujinshi online for free. BL Anime, Gay movie and much more online."
+    },
+    {
+      "title": "Excuse me what? : r/danganronpa - Reddit",
+      "url": "https://www.reddit.com/r/danganronpa/comments/hey0mv/excuse_me_what/",
+      "snippet": "271 votes, 27 comments. 331K subscribers in the danganronpa community. Danganronpa is a Japanese visual novel franchise …"
+    },
+    {
+      "title": "Site inaccessible de myreadingmanga - Google Chrome",
+      "url": "https://forums.commentcamarche.net/forum/affich-37365795-site-inaccessible-de-myreadingmanga",
+      "snippet": "Oct 2, 2021 · Site inaccessible de myreadingmanga Dallas - Modifié le 2 oct. 2021 à 10:54 bazfile - 2 oct. 2021 à 12:52"
+    },
+    {
+      "title": "Yuri On Ice: A Night In Barcelona : r/YOI - Reddit",
+      "url": "https://www.reddit.com/r/YOI/comments/cqg7dj/yuri_on_ice_a_night_in_barcelona/?force_seo=1",
+      "snippet": "Did anyone see the video? TheMaohKing's animation was really well done. The positioning surprised me since I always saw them as …"
+    }
+  ]
+}

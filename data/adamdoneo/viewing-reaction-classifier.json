@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "adamdoneo/viewing-reaction-classifier",
+  "slug": "adamdoneo-viewing-reaction-classifier",
+  "author": "adamdoneo",
+  "url": "https://huggingface.co/adamdoneo/viewing-reaction-classifier",
+  "created_at": "2026-09-15T11:33:56.000Z",
+  "updated_at": "2026-09-15T11:39:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124647170,
+  "parameters_human": "124.6M",
+  "storage_bytes": 498618025,
+  "storage_human": "499 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Point de Lagrange — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Point_de_Lagrange",
+      "snippet": "Les trois points L1, L2 et L3 sont parfois appelés les points d'Euler, en l'honneur de Leonhard Euler, l'appellation de points de …"
+    },
+    {
+      "title": "Coordonnées GPS, latitude et longitude - Google Map",
+      "url": "https://www.coordonnees-gps.fr/",
+      "snippet": "Cliquer directement sur la map interactive pour obtenir l'adresse et les coordonnées GPS du point cliqué. La latitude et la longitude …"
+    },
+    {
+      "title": "Points de Lagrange (Mainguet Jean-François)",
+      "url": "https://science.mainguet.org/spacetime/lagrange/lagrange.htm",
+      "snippet": "Jan 19, 2025 · Le point de Lagrange L3 est la situation symétrique du point L2 : c'est le point de l'autre côté du Soleil qui tourne …"
+    },
+    {
+      "title": "Les points de Lagrange - Astronomie et Astrophysique",
+      "url": "https://astronomes.com/histoire-astronomie/les-points-de-lagrange/",
+      "snippet": "Jul 24, 2022 · Vus du Soleil, ils sont séparés de la Terre par un angle de 60 degrés. Contrairement aux précédents, les points de …"
+    },
+    {
+      "title": "Définition | Points de Lagrange : qu'est-ce que c'est ? | sciences",
+      "url": "https://www.futura-sciences.com/sciences/definitions/univers-points-lagrange-4540/",
+      "snippet": "May 2, 2021 · Les points de Lagrange les plus célèbres sont ceux où un corps d'épreuve est soumis à l'attraction du Soleil et de la …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/augmented-1603a198ee434a93",
+  "slug": "gradients-io-tournaments-augmented-1603a198ee434a93",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/augmented-1603a198ee434a93",
+  "created_at": "2026-09-15T17:17:27.000Z",
+  "updated_at": "2026-09-15T17:18:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404730,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "♠ PASJANS KLASYCZNY - graj online za darmo | GryPasjans.pl",
+      "url": "https://www.grypasjans.pl/",
+      "snippet": "Tak jak we wszystkich grach w pasjansa, musisz uważnie monitorować sytuację i wykonywać właściwe ruchy. Uwaga i cierpliwość są …"
+    },
+    {
+      "title": "PASJANS KLASYCZNY ♠️ Graj online 100% za darmo | Pasjans.org.pl",
+      "url": "https://pasjans.org.pl/",
+      "snippet": "Pasjans Klasyczny to gra karciana, która przyciąga uwagę na długi czas i pozwala się zrelaksować i odprężyć podczas …"
+    },
+    {
+      "title": "Pasjans Klasyczny – graj za darmo w pełnym ekranie",
+      "url": "https://pasjans.net.pl/pasjans/",
+      "snippet": "Na naszej stronie znajdziesz za darmo Pasjansa, Pasjansa Pająka oraz Freecella. Wśród różnych pasjansów można wybierać …"
+    },
+    {
+      "title": "PASJANS ZA DARMO. Najlepsze pasjanse online",
+      "url": "https://www.e-pasjans.pl/",
+      "snippet": "Oto Darmowy Pasjans opierający się na jednej tali kart. Dwa tryby rozgrywki sprawiają, że jest to gra idealna dla początkujących jak i …"
+    },
+    {
+      "title": "♠ PASJANS KLONDIKE - graj online za darmo | GryPasjans.pl",
+      "url": "https://www.grypasjans.pl/pasjans-klondike.html",
+      "snippet": "Pasjans Klasyczny Pasjans Pająk Stary Pasjans Pająk Klasyczny Pasjans Klondike Freecell Piramida Pasjans Półksiężycowy 40 …"
+    }
+  ]
+}

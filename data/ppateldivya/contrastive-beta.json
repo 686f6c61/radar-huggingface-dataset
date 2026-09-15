@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ppateldivya/contrastive-beta",
+  "slug": "ppateldivya-contrastive-beta",
+  "author": "ppateldivya",
+  "url": "https://huggingface.co/ppateldivya/contrastive-beta",
+  "created_at": "2026-09-15T17:35:34.000Z",
+  "updated_at": "2026-09-15T17:35:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Navegador da web Google Chrome",
+      "url": "https://www.google.com/intl/pt-BR/chrome/",
+      "snippet": "Agora mais simples, seguro e mais rápido do que nunca, com os recursos inteligentes do Google."
+    },
+    {
+      "title": "Navegador web Google Chrome",
+      "url": "https://www.google.com/intl/es_es/chrome/",
+      "snippet": "Más sencillo, seguro y rápido que nunca gracias a las funciones inteligentes de Google."
+    },
+    {
+      "title": "Chrome Web Store",
+      "url": "https://chromewebstore.google.com/",
+      "snippet": "Add new features to your browser and personalize your browsing experience."
+    },
+    {
+      "title": "Download and install Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "How to install Chrome Important: Before you download, check if Chrome supports your operating system and you’ve met all other …"
+    },
+    {
+      "title": "Google Chrome をダウンロードしてインストールする",
+      "url": "https://support.google.com/chrome/answer/95346?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "Chrome を初めて起動する際は、 Google 利用規約 を確認して同意する必要があります。 ヒント: Chrome がパッケージ マネー …"
+    }
+  ]
+}

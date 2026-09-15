@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Dohyeon1/Qwen3-30B-A3B-M-SMoE-ngroups96",
+  "slug": "dohyeon1-qwen3-30b-a3b-m-smoe-ngroups96",
+  "author": "Dohyeon1",
+  "url": "https://huggingface.co/Dohyeon1/Qwen3-30B-A3B-M-SMoE-ngroups96",
+  "created_at": "2026-09-15T16:42:47.000Z",
+  "updated_at": "2026-09-15T16:54:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_moe",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 61078033554,
+  "storage_human": "61.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Les édulcorants sont-ils sans danger ? | Santé.fr",
+      "url": "https://www.sante.fr/decryptage/nos-reponses/les-edulcorants-sont-ils-sans-danger",
+      "snippet": "Jun 12, 2024 · Ils sont utilisés pour obtenir des aliments dits « allégés en sucre », dans une optique de contrôle du poids ou de …"
+    },
+    {
+      "title": "Edulcorants : bienfaits et risques de ces additifs alimentaires ?",
+      "url": "https://www.pharma-gdd.com/fr/blog/edulcorants-quels-sont-les-impacts-de-ces-additifs-alimentaires-sur-le-metabolisme",
+      "snippet": "Dec 11, 2025 · À ce jour, un consensus d’experts a conclu que les données actuelles ne fournissent pas de preuves suffisantes pour …"
+    },
+    {
+      "title": "Les édulcorants sont-ils dangereux - Elsevier",
+      "url": "https://www.elsevier.com/fr-fr/connect/les-edulcorants-sont-ils-dangereux",
+      "snippet": "Feb 20, 2019 · Les édulcorants sont-ils dangereux ? La consommation d’édulcorants s’est très largement développée au cours des …"
+    },
+    {
+      "title": "Édulcorants : démêler le vrai du faux sur leurs risques pour la santé",
+      "url": "https://www.harmonie-sante.fr/prevention-sante-bien-etre/alimentation/edulcorants-demeler-vrai-du-faux-leurs-risques-sante",
+      "snippet": "Oct 3, 2025 · Les boissons light, les chewing-gums sans sucre, les yaourts allégés… tous contiennent des édulcorants et peuvent …"
+    },
+    {
+      "title": "Les édulcorants : pires ou moins mauvais que le sucre - La Presse",
+      "url": "https://www.lapresse.ca/societe/sante/2024-06-02/les-edulcorants-pires-ou-moins-mauvais-que-le-sucre.php",
+      "snippet": "Jun 2, 2024 · Les édulcorants sans sucre sont-ils moins mauvais, pires, aussi mauvais que le sucre pour la santé ? Discussion …"
+    }
+  ]
+}

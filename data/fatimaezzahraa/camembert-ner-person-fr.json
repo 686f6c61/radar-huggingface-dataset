@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "fatimaezzahraa/camembert-ner-person-fr",
+  "slug": "fatimaezzahraa-camembert-ner-person-fr",
+  "author": "fatimaezzahraa",
+  "url": "https://huggingface.co/fatimaezzahraa/camembert-ner-person-fr",
+  "created_at": "2026-09-15T16:14:31.000Z",
+  "updated_at": "2026-09-15T16:15:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "camembert",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110032898,
+  "parameters_human": "110.0M",
+  "storage_bytes": 440155504,
+  "storage_human": "440 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ACCORD DU VERBE / SUJET - Cas de plusieurs sujets - CONJUGAISON",
+      "url": "https://www.conjugaison.com/grammaire/plusieurs-sujets.html",
+      "snippet": "Lorsque les sujets sont de sens distincts, mais désignent le même objet ou la même personne, le verbe se met au singulier. C’est ce …"
+    },
+    {
+      "title": "Accord du verbe avec deux sujets juxtaposés désignant la même …",
+      "url": "https://www.question-orthographe.fr/question/accord-du-verbe-avec-deux-sujets-juxtaposes-designant-la-meme-chose-un-pluriel-et-un-singulier/",
+      "snippet": "Sep 7, 2022 · On a donc bien juxtaposition de plusieurs sujets qui désignent la même chose (sans virgule entre le deuxième sujet et …"
+    },
+    {
+      "title": "Verbe ayant plusieurs sujets : accord | BDL",
+      "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/24434/la-grammaire/le-verbe/accord-du-verbe-avec-le-sujet/cas-particuliers-daccord-du-verbe/accord-du-verbe-avec-lensemble-des-sujets-ou-avec-un-seul-dentre-eux",
+      "snippet": "Le verbe s’accorde généralement avec l’ensemble des sujets, notamment lorsque celui-ci est composé de plusieurs noms juxtaposés …"
+    },
+    {
+      "title": "plusieurs_sujets_pour_un_verbe - orthoprof.fr",
+      "url": "http://www.orthoprof.fr/grammaire/niveau06/plusieurs_sujets_pour_un_verbe.htm",
+      "snippet": "Même si syntaxiquement on a deux mots qui ont la fonction sujet se rapportant à un seul verbe, si ces deux mots désignent la même …"
+    },
+    {
+      "title": "Verbe et plusieurs sujets - francaisfacile.com",
+      "url": "https://www.francaisfacile.com/cgi2/myexam/voir2.php?id=101704",
+      "snippet": "==> Avec des verbes à l'infinitif pour sujet, le verbe se met au pluriel, sauf si les infinitifs expriment une idée unique. Ex Attendre, …"
+    }
+  ]
+}

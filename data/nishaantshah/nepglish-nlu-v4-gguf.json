@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "nishaantshah/nepglish-nlu-v4-GGUF",
+  "slug": "nishaantshah-nepglish-nlu-v4-gguf",
+  "author": "nishaantshah",
+  "url": "https://huggingface.co/nishaantshah/nepglish-nlu-v4-GGUF",
+  "created_at": "2026-09-15T11:28:40.000Z",
+  "updated_at": "2026-09-15T11:30:08.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ne",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama-3",
+    "ollama",
+    "nepglish",
+    "banking",
+    "intent-detection",
+    "slot-filling",
+    "ne",
+    "en",
+    "base_model:unsloth/llama-3-8b-Instruct",
+    "base_model:quantized:unsloth/llama-3-8b-Instruct",
+    "license:llama3",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 8540771456,
+  "storage_human": "8.5 GB",
+  "base_model": "unsloth/llama-3-8b-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

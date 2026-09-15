@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "shadow-cann/hispark-modelzoo-xfeat",
+  "slug": "shadow-cann-hispark-modelzoo-xfeat",
+  "author": "shadow-cann",
+  "url": "https://huggingface.co/shadow-cann/hispark-modelzoo-xfeat",
+  "created_at": "2026-09-15T17:04:09.000Z",
+  "updated_at": "2026-09-15T17:04:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "onnx",
+    "hisilicon",
+    "hispark",
+    "npu",
+    "openharmony",
+    "modelzoo",
+    "pytorch",
+    "zh",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5019697,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shadow PC Cloud Gaming - votre PC Windows dans le Cloud",
+      "url": "https://shadow.tech/fr/",
+      "snippet": "5 days ago · Shadow est un PC Windows complet, en streaming et avec une latence ultra-faible. Installez n'importe quel jeu*, via …"
+    },
+    {
+      "title": "Téléchargez Shadow pour Windows, macOS, iOS & Android",
+      "url": "https://shadow.tech/fr/download/",
+      "snippet": "Shadow PC transforme instantanément votre PC portable, PC de bureau, Mac, appareil Android, iPhone ou iPad en un PC Windows …"
+    },
+    {
+      "title": "Shadow PC",
+      "url": "https://pc.shadow.tech/",
+      "snippet": "Your PC, in the cloud. Shadow is the easiest way to access a full PC, instantly, on all the devices you own. To work, create, play…"
+    },
+    {
+      "title": "Shadow - Login",
+      "url": "https://auth.eu.shadow.tech/kratos/self-service/login/browser",
+      "snippet": "Shadow PC, a powerful cloud workstation for creatives, gamers, and engineers"
+    },
+    {
+      "title": "Shadow (entreprise) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Shadow_(entreprise)",
+      "snippet": "Shadow (anciennement Blade) est une société française spécialisée dans le cloud computing via son service « Shadow ». Cette …"
+    }
+  ]
+}

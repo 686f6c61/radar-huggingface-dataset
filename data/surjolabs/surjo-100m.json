@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "SurjoLabs/Surjo-100m",
+  "slug": "surjolabs-surjo-100m",
+  "author": "SurjoLabs",
+  "url": "https://huggingface.co/SurjoLabs/Surjo-100m",
+  "created_at": "2026-09-10T17:21:44.000Z",
+  "updated_at": "2026-09-15T19:38:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23158814409,
+  "storage_human": "23.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taj Mahal - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Taj_Mahal",
+      "snippet": "It is regarded as one of the best examples of Mughal architecture and a symbol of Indian history. The Taj Mahal is a major tourist …"
+    },
+    {
+      "title": "タージ・マハル - Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E3%82%BF%E3%83%BC%E3%82%B8%E3%83%BB%E3%83%9E%E3%83%8F%E3%83%AB",
+      "snippet": "タージ・マハル （印: ताज महल 、 波: تاج محل 、 ウルドゥー語: تاج محل 、 英: Taj Mahal 、「王冠の宮殿」または「王の宮殿」を意味す …"
+    },
+    {
+      "title": "Taj Mahal-Official Website of Taj Mahal, Government of Uttar ...",
+      "url": "https://www.tajmahal.gov.in/",
+      "snippet": "Come, Walk along the pathway beside the reflecting pool with fountains upto the mausoleum crafted in soft & pure marble and …"
+    },
+    {
+      "title": "タージ・マハル完全ガイド｜世界一美しい墓とムガル帝国の愛 ...",
+      "url": "https://weekend-abroad-travelers.com/asia-oceania/india/agra-sightseeing/taj-mahal/",
+      "snippet": "Jul 26, 2020 · インド・アグラにある世界遺産「タージ・マハル」を徹底解説。 歴史や世界遺産に登録された理由、見どころ、入場 …"
+    },
+    {
+      "title": "Taj Mahal | Definition, Story, Site, Agra, History, & Facts ...",
+      "url": "https://www.britannica.com/topic/Taj-Mahal",
+      "snippet": "Jul 30, 2026 · The Taj Mahal is a mausoleum complex in Agra, Uttar Pradesh, in northern India, built by the Mughal emperor Shah …"
+    }
+  ]
+}

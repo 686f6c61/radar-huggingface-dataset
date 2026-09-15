@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "DavidYang76/kingparii",
+  "slug": "davidyang76-kingparii",
+  "author": "DavidYang76",
+  "url": "https://huggingface.co/DavidYang76/kingparii",
+  "created_at": "2026-09-15T13:24:36.000Z",
+  "updated_at": "2026-09-15T13:29:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cookie-Einwilligung - login.alditalk-kundenbetreuung.de",
+      "url": "https://login.alditalk-kundenbetreuung.de/signin/XUI/",
+      "snippet": "Du kannst dich ganz einfach mit deiner Rufnummer und dem von dir gewählten Passwort anmelden. Darüber hinaus gibt es …"
+    },
+    {
+      "title": "www.alditalk-kundenportal.de",
+      "url": "https://www.alditalk-kundenportal.de/portal/auth/uebersicht/",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "ALDI TALK | Prepaid surfen, telefonieren & günstige Smartphones",
+      "url": "https://www.alditalk.de/",
+      "snippet": "Wenn sich dein Bedarf dauerhaft erhöht, kannst du auch einen sofortigen Optionswechsel vornehmen. Beides lässt sich über die …"
+    },
+    {
+      "title": "ALDI TALK Starten | ALDI TALK",
+      "url": "https://www.alditalk.de/starten",
+      "snippet": "Um dir deinen Start mit ALDI TALK so angenehm wie möglich zu gestalten, haben wir dir die wichtigsten Infos auf dieser Seite …"
+    },
+    {
+      "title": "Login",
+      "url": "https://account.mein-aldi.de/login",
+      "snippet": "Continue to create Account Friendly Captcha"
+    }
+  ]
+}

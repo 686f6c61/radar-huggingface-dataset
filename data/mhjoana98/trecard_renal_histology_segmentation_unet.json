@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "mhjoana98/TRECARD_renal_histology_segmentation_unet",
+  "slug": "mhjoana98-trecard_renal_histology_segmentation_unet",
+  "author": "mhjoana98",
+  "url": "https://huggingface.co/mhjoana98/TRECARD_renal_histology_segmentation_unet",
+  "created_at": "2026-09-15T15:03:38.000Z",
+  "updated_at": "2026-09-15T15:15:45.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 376699362,
+  "storage_human": "377 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AASTMT Online Registration",
+      "url": "https://alexreg.aast.edu/aastreg/",
+      "snippet": "To register your desired courses, enter your on Numberrsonal Identification Number (PIN)"
+    },
+    {
+      "title": "AASTMT Online Registration",
+      "url": "https://alexreg.aast.edu/aastreg/frm_AnotherStudent.aspx",
+      "snippet": "To register for another student , enter Registration Number for new student"
+    },
+    {
+      "title": "Arab Academy for Science, Technology and Maritime Transport",
+      "url": "https://alexreg.aast.edu/regreports/",
+      "snippet": "Access online registration and academic resources for Arab Academy for Science, Technology and Maritime Transport."
+    },
+    {
+      "title": "نظام الطباعة - alexreg.aast.edu",
+      "url": "https://alexreg.aast.edu/print2/default.aspx?m=3EAD91BF0CCB4A9300F371C204031EFEADF7ECD5CA38F30683B2EB6F660A621592E06EBEE9AFF1D30B9F320743F35E2074F89FD673E06CE91FC181A71D96D357DEAFB05EF3B361DF7B75926C2C056158630D795BB3451CE922D0A4BE035B7D8C",
+      "snippet": "نظام الطباعة Downloading..."
+    }
+  ]
+}

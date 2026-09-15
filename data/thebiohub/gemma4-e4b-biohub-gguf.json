@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "TheBioHub/gemma4-e4b-biohub-gguf",
+  "slug": "thebiohub-gemma4-e4b-biohub-gguf",
+  "author": "TheBioHub",
+  "url": "https://huggingface.co/TheBioHub/gemma4-e4b-biohub-gguf",
+  "created_at": "2026-09-15T18:05:13.000Z",
+  "updated_at": "2026-09-15T18:06:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "gemma",
+    "gemma4",
+    "tool-use",
+    "function-calling",
+    "bioinformatics",
+    "hpc",
+    "slurm",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7463013674,
+  "parameters_human": "7.46B",
+  "storage_bytes": 5302273184,
+  "storage_human": "5.3 GB",
+  "base_model": "google/gemma-4-e4b-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

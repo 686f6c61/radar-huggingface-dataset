@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "connoredw/poolformer-contrastive-v2",
+  "slug": "connoredw-poolformer-contrastive-v2",
+  "author": "connoredw",
+  "url": "https://huggingface.co/connoredw/poolformer-contrastive-v2",
+  "created_at": "2026-09-15T17:49:03.000Z",
+  "updated_at": "2026-09-15T17:49:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "帝国时代3常用秘籍大全 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/f25ef254b4b24a482c1b82bb.html",
+      "snippet": "May 30, 2018 · 帝国时代3常用秘籍大全,帝国时代3是即时战略游戏中的经典之一。是喜爱即时战略游戏的朋友们的必玩之作！这些秘 …"
+    },
+    {
+      "title": "kick off 是什么意思 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/2f9b480d5320cc00cb6cc2eb.html",
+      "snippet": "Feb 26, 2020 · 例句1；The advertising campaign is just about ready to kick off. 例句2；We're going to kick off the new year with a …"
+    },
+    {
+      "title": "KICK.LV :: Helovīns [2024]",
+      "url": "https://www.kick.lv/home/view/257/helovins-2024/",
+      "snippet": "Moderns, strauji augošs spēļu un izklaides projekts, Piedāvājam spēlēt unikālos spēļu serveros, labi pavadīt laiku mājaslapā ar citiem …"
+    },
+    {
+      "title": "KICK.LV :: Kick.lv Čats",
+      "url": "https://www.kick.lv/chat/",
+      "snippet": "Moderns, strauji augošs spēļu un izklaides projekts, Piedāvājam spēlēt unikālos spēļu serveros, labi pavadīt laiku mājaslapā ar citiem …"
+    },
+    {
+      "title": "为什么windows后台会同时存在wechatappex和weixin？ - 知乎",
+      "url": "https://www.zhihu.com/question/2024204996627940385",
+      "snippet": "在「新建路径规则」窗口，在「路径」编辑框内复制粘贴 WeChatAppEx 进程位置路径，「安全级别」复选框设置为 不允许，「描述 …"
+    }
+  ]
+}

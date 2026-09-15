@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "mradermacher/SlopCoder-Mongo-1.5B-full-GGUF",
+  "slug": "mradermacher-slopcoder-mongo-1-5b-full-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/SlopCoder-Mongo-1.5B-full-GGUF",
+  "created_at": "2026-09-15T11:54:40.000Z",
+  "updated_at": "2026-09-15T12:01:24.000Z",
+  "license": "deepseek-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mongodb",
+    "mongosh",
+    "code",
+    "code-completion",
+    "fill-in-the-middle",
+    "extended-json",
+    "atlas-search",
+    "distillation",
+    "deepseek-coder",
+    "qwen2",
+    "en",
+    "pt",
+    "base_model:esilva/SlopCoder-Mongo-1.5B-full",
+    "base_model:quantized:esilva/SlopCoder-Mongo-1.5B-full",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 14206904832,
+  "storage_human": "14.2 GB",
+  "base_model": "esilva/SlopCoder-Mongo-1.5B-full",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wiener Wohnen",
+      "url": "https://www.wienerwohnen.at/",
+      "snippet": "Aug 31, 2026 · Das tut sich im Gemeindebau Gemeindewohnungen NEU Die Nachfrage nach kostengünstigen Wohnungen ist sehr …"
+    },
+    {
+      "title": "Wiener Wohnen - Gemeindewohnungen - Stadt Wien",
+      "url": "https://www.wien.gv.at/wohnen/gemeindewohnungen",
+      "snippet": "Aug 17, 2026 · Sie suchen eine Gemeindewohnung? Anlaufstellen und Voraussetzungen für eine Wohnung der Gemeinde Wien …"
+    },
+    {
+      "title": "Das Wiener Wohn-Ticket",
+      "url": "https://wohnberatung-wien.at/wohn-ticket",
+      "snippet": "Das Wiener Wohn-Ticket Anmeldung & Voraussetzungen Bonuspunkte Erforderliche Unterlagen"
+    },
+    {
+      "title": "Wohnung suchen und finden - Stadt Wien",
+      "url": "https://www.wien.gv.at/wohnen/wohnungssuche",
+      "snippet": "Apr 18, 2026 · Wohngemeinschaften für junge Menschen Wohnungen für Studierende Wohnhäuser für alte Menschen …"
+    },
+    {
+      "title": "Login - Geförderte Wohnungen - Wohnberatung Wien",
+      "url": "https://wohnungssuche.wohnberatung-wien.at/",
+      "snippet": "Anmeldung bei der Wohnberatung Wien: Anmelden leicht gemacht, wenn Sie alle Voraussetzungen für eine Gemeindewohnung …"
+    }
+  ]
+}

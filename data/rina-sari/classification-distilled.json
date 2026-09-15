@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rina-sari/classification-distilled",
+  "slug": "rina-sari-classification-distilled",
+  "author": "rina-sari",
+  "url": "https://huggingface.co/rina-sari/classification-distilled",
+  "created_at": "2026-09-15T14:07:48.000Z",
+  "updated_at": "2026-09-15T14:07:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Our experience. Your growth. - RINA.org",
+      "url": "https://www.rina.org/en",
+      "snippet": "RINA for ESA: an AI-powered virtual assistant for satellite communications This initiative sets the stage for broader adoption of …"
+    },
+    {
+      "title": "NSA and Others Warn China-Based AI Companies are Distilling U.S ...",
+      "url": "https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/4592113/nsa-and-others-warn-china-based-ai-companies-are-distilling-us-frontier-ai-mode/",
+      "snippet": "China-based artificial intelligence (AI) companies are engaging in aggressive, industrial-scale distillation activities that systematically extract restricted proprietary functionalities and capabilities of U.S. frontier AI models with the purpose of training their own, according to the report."
+    },
+    {
+      "title": "RINA (company) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/RINA_(company)",
+      "snippet": "RINA was founded as operational company RINA S.p.A. by Registro Italiano Navale, a private body founded in Genoa in 1861, to …"
+    },
+    {
+      "title": "Feds accuse China of ‘systematic’ distillation of U.S. AI models",
+      "url": "https://cyberscoop.com/us-accuses-chinese-ai-companies-distillation/",
+      "snippet": "A joint advisory from the NSA, CISA, and FBI accuses Chinese AI firms of industrial-scale distillation to illegally extract capabilities from top U.S. frontier models."
+    },
+    {
+      "title": "Maritime sector - RINA.org",
+      "url": "https://www.rina.org/en/sectors/maritime",
+      "snippet": "As a global leader and founding member of IACS, RINA delivers trusted expertise across the entire lifecycle of the vessel, from initial …"
+    }
+  ]
+}

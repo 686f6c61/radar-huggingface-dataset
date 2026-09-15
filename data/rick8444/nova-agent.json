@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Rick8444/nova-agent",
+  "slug": "rick8444-nova-agent",
+  "author": "Rick8444",
+  "url": "https://huggingface.co/Rick8444/nova-agent",
+  "created_at": "2026-09-15T18:52:39.000Z",
+  "updated_at": "2026-09-15T18:53:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "agent",
+    "browser-automation",
+    "cdp",
+    "chrome-devtools-protocol",
+    "tool-use",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "e-Devlet Kapısı",
+      "url": "https://giris.turkiye.gov.tr/Giris/",
+      "snippet": "e-Devlet Kapısı'nı kullanarak kamu kurumlarının sunduğu hizmetlere tek noktadan, hızlı ve güvenli bir şekilde ulaşabilirsiniz."
+    },
+    {
+      "title": "e-Devlet Kapısı",
+      "url": "https://giris.turkiye.gov.tr/Giris/Mobil-Imza",
+      "snippet": "e-Devlet Kapısında mobil imza kullanımı için e-Devlet Kapısı'nca herhangi bir ücret talep edilmezken, GSM operatörleri tarafından bir …"
+    },
+    {
+      "title": "e-Devlet Kapısı",
+      "url": "https://giris.turkiye.gov.tr/Giris/Mobil/V3/e-Devlet-Sifresi?help",
+      "snippet": "e-Devlet Kapısı uygulaması üzerinden sunulan hizmetlerden faydalanmak, gerekli durumlarda sizinle SMS ve e-posta üzerinden …"
+    },
+    {
+      "title": "e-Devlet Kapısı",
+      "url": "https://giris.turkiye.gov.tr/Giris/gir?oauthClientId",
+      "snippet": "e-Devlet Kapısı sistemi, güvenlik amaçlı olarak elektronik sertifika kullanmaktadır. Erişiminizin güvenli olup olmadığını adres …"
+    },
+    {
+      "title": "Ziraat Katılım - e-Devlet Kapısı",
+      "url": "https://giris.turkiye.gov.tr/Giris/edevlet/ZiraatKatilimV2",
+      "snippet": "Ziraat Katılım - e-Devlet Kapısı ... Ziraat Katılım"
+    }
+  ]
+}

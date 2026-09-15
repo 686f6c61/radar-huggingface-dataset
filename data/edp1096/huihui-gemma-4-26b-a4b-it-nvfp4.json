@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "edp1096/Huihui-Gemma-4-26B-A4B-it-NVFP4",
+  "slug": "edp1096-huihui-gemma-4-26b-a4b-it-nvfp4",
+  "author": "edp1096",
+  "url": "https://huggingface.co/edp1096/Huihui-Gemma-4-26B-A4B-it-NVFP4",
+  "created_at": "2026-09-15T19:04:51.000Z",
+  "updated_at": "2026-09-15T19:05:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "nvfp4",
+    "abliterated",
+    "conversational",
+    "base_model:bg-digitalservices/Gemma-4-26B-A4B-it-NVFP4",
+    "base_model:quantized:bg-digitalservices/Gemma-4-26B-A4B-it-NVFP4",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13564221006,
+  "parameters_human": "13.56B",
+  "storage_bytes": 16455558082,
+  "storage_human": "16.5 GB",
+  "base_model": "google/gemma-4-26B-A4B-it, huihui-ai/Huihui-gemma-4-26B-A4B-it-abliterated, bg-digitalservices/Gemma-4-26B-A4B-it-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Super Bowl LII - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Super_Bowl_LII",
+      "snippet": "Super Bowl LII was an American football game played to determine the champion of the National Football League (NFL) for the 2017 …"
+    },
+    {
+      "title": "Super Bowl LI - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Super_Bowl_LI",
+      "snippet": "Super Bowl LI was an American football game played at NRG Stadium in Houston, Texas, on February 5, 2017, [9][10] to determine …"
+    },
+    {
+      "title": "Super Bowl LII | football [2018] | Britannica",
+      "url": "https://www.britannica.com/topic/Super-Bowl-LII",
+      "snippet": "Jul 21, 2026 · Super Bowl LII, played in 2018, was the championship game of the National Football League (NFL) for the 2017 …"
+    },
+    {
+      "title": "Super Bowl LII - Philadelphia Eagles vs. New England Patriots ...",
+      "url": "https://www.pro-football-reference.com/boxscores/201802040nwe.htm",
+      "snippet": "Philadelphia Eagles 41 vs. New England Patriots 33 on February 4th, 2018 - Full team and player stats and box score."
+    },
+    {
+      "title": "Super Bowl LII - Wikiwand",
+      "url": "https://www.wikiwand.com/en/Super_Bowl_LII",
+      "snippet": "This was the second time that a Super Bowl was played in Minneapolis, the northernmost city to ever host the event, after Super …"
+    }
+  ]
+}

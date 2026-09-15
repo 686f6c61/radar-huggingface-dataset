@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "SH98/wt-nids-gemma2-9b",
+  "slug": "sh98-wt-nids-gemma2-9b",
+  "author": "SH98",
+  "url": "https://huggingface.co/SH98/wt-nids-gemma2-9b",
+  "created_at": "2026-09-05T06:15:41.000Z",
+  "updated_at": "2026-09-15T19:36:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 66621452094,
+  "storage_human": "66.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Services en ligne : gérez vos comptes Pro en ligne - SG",
+      "url": "https://professionnels.sg.fr/services-en-ligne?msockid=3ded65f41cc26a5a009972211d516b0d",
+      "snippet": "Consultez vos comptes professionnels et privés et effectuez vos opérations courantes depuis votre ordinateur, votre tablette ou votre …"
+    },
+    {
+      "title": "Se connecter à votre Espace Client PRO - SG",
+      "url": "https://professionnels.sg.fr/securite/code-client-et-code-secret?msockid=3ded65f41cc26a5a009972211d516b0d",
+      "snippet": "Pour accéder à vos services de banque à distance, vous devez vous authentifier avec votre Code Client SG et votre Code Secret. …"
+    },
+    {
+      "title": "Connexion à votre Espace Client Sogecash Net - SG",
+      "url": "https://entreprises.sg.fr/icd/syd-front/index-comptes.html",
+      "snippet": "La première connexion à votre Espace Client est désormais soumise à une authentification renforcée par la saisie d’un Code …"
+    },
+    {
+      "title": "Appli SG PRO : Découvrer les nouvelles fonctionnalités - SG",
+      "url": "https://professionnels.sg.fr/services-en-ligne/appli-pro?msockid=3ded65f41cc26a5a009972211d516b0d",
+      "snippet": "L'Appli SG Pro : accès facilité à vos comptes et gestion de vos cartes bancaires en temps réel. Conçue pour vous apporter la …"
+    },
+    {
+      "title": "Connexion à votre Espace Client Sogecash Net - SG",
+      "url": "https://entreprises.sg.fr/icd-web/syd-front/index-comptes.html",
+      "snippet": "La première connexion à votre Espace Client est désormais soumise à une authentification renforcée par la saisie d’un Code …"
+    }
+  ]
+}

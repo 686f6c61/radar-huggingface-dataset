@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "lovro77/llama32-1b-netlograg-v3",
+  "slug": "lovro77-llama32-1b-netlograg-v3",
+  "author": "lovro77",
+  "url": "https://huggingface.co/lovro77/llama32-1b-netlograg-v3",
+  "created_at": "2026-09-15T16:47:19.000Z",
+  "updated_at": "2026-09-15T16:47:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62328344,
+  "storage_human": "62 MB",
+  "base_model": "unsloth/llama-3.2-1b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Online Games on CrazyGames | Play Now!",
+      "url": "https://www.crazygames.com/",
+      "snippet": "Play free online games at CrazyGames, the best place to play high-quality browser games. We add new games every day. Have fun!"
+    },
+    {
+      "title": "Car Games Play on CrazyGames",
+      "url": "https://www.crazygames.com/t/car",
+      "snippet": "Race cars at high speeds and drift around tight corners in our complete collection of free online car games. Play now in your web …"
+    },
+    {
+      "title": "CrazyGames Developer Portal | Publish Unity and HTML5 web games …",
+      "url": "https://developer.crazygames.com/",
+      "snippet": "Publish, manage, and monetize your browser games. Reach 20,000,000 players with your HTML5 and WebGL games. We support …"
+    },
+    {
+      "title": "Bloxd io Play on CrazyGames",
+      "url": "https://www.crazygames.com/game/bloxdhop-io",
+      "snippet": "Bloxd.io is an IO adventure game with Minecraft-style visuals where you can navigate obstacle courses, gather resources, craft tools, …"
+    },
+    {
+      "title": "Space Waves Play on CrazyGames",
+      "url": "https://www.crazygames.com/game/space-waves",
+      "snippet": "Sep 1, 2026 · Space Waves is an arcade game where you control an arrow through dozens of levels across multiple worlds and …"
+    }
+  ]
+}

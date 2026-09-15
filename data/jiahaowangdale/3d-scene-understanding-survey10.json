@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jiahaowangdale/3d-scene-understanding-survey10",
+  "slug": "jiahaowangdale-3d-scene-understanding-survey10",
+  "author": "jiahaowangdale",
+  "url": "https://huggingface.co/jiahaowangdale/3d-scene-understanding-survey10",
+  "created_at": "2026-09-15T16:45:14.000Z",
+  "updated_at": "2026-09-15T16:45:20.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "3d-scene-understanding",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The 20 best Hotel Bars in Amsterdam. Complete Guide 2026",
+      "url": "https://hotelbarsguide.com/amsterdam/",
+      "snippet": "JULY 2026. The best hotel bars in Amsterdam, Netherlands. Stylish hotels with cocktail bars, lounge bars, rooftop bars, personal …"
+    },
+    {
+      "title": "Top 20 Hotel Bars in Amsterdam - Ted Valentin's Guide 2026",
+      "url": "https://hotelbars.guide/amsterdam/",
+      "snippet": "I have created a list with the best hotel bars in Amsterdam, Netherlands. Especially places with wonderful cocktail bars, wine bars, …"
+    },
+    {
+      "title": "The Ten Best Hotel Bars in Amsterdam (2026) — barsforKings",
+      "url": "https://barsforkings.com/amsterdam/hotel-bars/",
+      "snippet": "The 10 best hotel bars in Amsterdam. Polished cocktails, civilised hours, no door drama. Editorial picks. Updated 2026. Detailed …"
+    },
+    {
+      "title": "Restaurants & Bar of Amstel Hotel - Amstel Hotel Amsterdam",
+      "url": "https://www.amstelhotel.com/restaurant-bar/",
+      "snippet": "Feb 14, 2026 · Whether you are seeking a culinary experience in our Dining Room, an elegant afternoon tea in our lounge, or a …"
+    },
+    {
+      "title": "13 X Hotel Bars in Amsterdam // Your Little Black Book",
+      "url": "https://www.yourlittleblackbook.me/en/hotelbars-in-amsterdam/",
+      "snippet": "The best hotel bars in Amsterdam? Join one of these Amsterdam hotel bars for an evening of international vibes and delicious cocktails."
+    }
+  ]
+}

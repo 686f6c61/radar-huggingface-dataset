@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "OmTheLast/muril-hinglish-thar",
+  "slug": "omthelast-muril-hinglish-thar",
+  "author": "OmTheLast",
+  "url": "https://huggingface.co/OmTheLast/muril-hinglish-thar",
+  "created_at": "2026-09-15T16:46:53.000Z",
+  "updated_at": "2026-09-15T17:20:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "hi",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "hinglish",
+    "code-mixed",
+    "research",
+    "hate-speech-detection",
+    "hi",
+    "en",
+    "base_model:google/muril-base-cased",
+    "base_model:finetune:google/muril-base-cased",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 237557762,
+  "parameters_human": "237.6M",
+  "storage_bytes": 2850763776,
+  "storage_human": "2.9 GB",
+  "base_model": "google/muril-base-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=de",
+      "snippet": "Erstelle ein Konto oder melde dich bei Instagram an – Teile deine Ideen mit Menschen, die so ticken wie du."
+    },
+    {
+      "title": "Instagram - Capture, Create & Share What You Love",
+      "url": "https://about.instagram.com/",
+      "snippet": "Instagram makes it easy to capture, create and share what you love. Discover more about our features and commitment to …"
+    },
+    {
+      "title": "Instagram – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Instagram",
+      "snippet": "Im Juni 2018 wurde Instagram TV (IGTV) eingeführt, ein Bereich, der inzwischen in Instagram Video aufgegangen ist. Seitdem ist es …"
+    },
+    {
+      "title": "Instagram - Meta",
+      "url": "https://www.meta.com/instagram/",
+      "snippet": "We want Instagram to be a place where people can be inspired every day. We foster a safe and welcoming community where people …"
+    }
+  ]
+}

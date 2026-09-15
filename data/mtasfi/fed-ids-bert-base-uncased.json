@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mtasfi/fed-ids-bert-base-uncased",
+  "slug": "mtasfi-fed-ids-bert-base-uncased",
+  "author": "mtasfi",
+  "url": "https://huggingface.co/mtasfi/fed-ids-bert-base-uncased",
+  "created_at": "2026-09-15T18:57:57.000Z",
+  "updated_at": "2026-09-15T18:57:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2381644,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "33 Internet of Things Examples to Know in 2026 | Built In",
+      "url": "https://builtin.com/articles/iot-examples",
+      "snippet": "Feb 23, 2026 · Internet of Things (IoT) examples can range from self-driving cars to Fitbits. Here’s a list of examples you should know …"
+    },
+    {
+      "title": "Internet of Things Examples: 50+ Real-World IoT Applications",
+      "url": "https://www.w3resource.com/ai/internet-of-things-transfroming-how-we-live-and-work.php",
+      "snippet": "May 26, 2026 · Discover 50+ real-world Internet of Things examples across smart homes, healthcare, cities, factories, agriculture, …"
+    },
+    {
+      "title": "What Is the Internet of Things (IoT)? With Examples - Coursera",
+      "url": "https://www.coursera.org/articles/internet-of-things?msockid=0ea8412f448c61d10afd56fa454260ec",
+      "snippet": "Jul 16, 2026 · The Internet of Things (IoT) is a network of physical devices that use sensors to collect and exchange data in real time …"
+    },
+    {
+      "title": "Internet of Things Examples: How IoT Is Shaping Everyday Life",
+      "url": "https://practical-instruments.com/internet-of-things-examples/",
+      "snippet": "This article explores real-world internet of things examples across homes, healthcare, industry, and cities. Each section highlights …"
+    },
+    {
+      "title": "20 Best Internet of Things Examples to Consider in 2026",
+      "url": "https://www.designveloper.com/blog/internet-of-things-examples/",
+      "snippet": "Mar 25, 2025 · Are you curious of how IoT is applied in real world? Let's discover 20 common Internet of Things examples with us …"
+    }
+  ]
+}

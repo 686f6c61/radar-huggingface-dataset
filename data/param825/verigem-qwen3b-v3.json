@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Param825/verigem-qwen3b-v3",
+  "slug": "param825-verigem-qwen3b-v3",
+  "author": "Param825",
+  "url": "https://huggingface.co/Param825/verigem-qwen3b-v3",
+  "created_at": "2026-09-15T17:23:14.000Z",
+  "updated_at": "2026-09-15T17:23:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 1929902624,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aternos | Minecraft servers. Free. Forever.",
+      "url": "https://aternos.org/",
+      "snippet": "Minecraft servers. Free. Forever. Your very own Minecraft server, the only one that stays free forever."
+    },
+    {
+      "title": "Aternos | Minecraft Server. Kostenlos. Für immer.",
+      "url": "https://aternos.org/:de/",
+      "snippet": "Minecraft Server. Kostenlos. Für immer. Dein eigener Minecraft Server, der einzige, der für immer kostenlos bleibt."
+    },
+    {
+      "title": "Any way to turn off afk timeout - General - Aternos Community",
+      "url": "https://board.aternos.org/thread/16173-any-way-to-turn-off-afk-timeout/",
+      "snippet": "Apr 14, 2018 · Hello, I was going AFK on my server and I got kicked for being AFK, I was wondering if there was a way to turn off this …"
+    },
+    {
+      "title": "IMPORTANT MESSAGE: SECURITY VULNERABILITY IN JAVA EDITION",
+      "url": "https://board.aternos.org/thread/83364-important-message-security-vulnerability-in-java-edition/",
+      "snippet": "Dec 11, 2021 · IMPORTANT MESSAGE: SECURITY VULNERABILITY IN JAVA EDITION English Java Edition Angel Seg Dec 11th …"
+    },
+    {
+      "title": "Delete a server – Aternos | Help Center",
+      "url": "https://support.aternos.org/hc/en-us/articles/5543392831261-Delete-a-server",
+      "snippet": "Delete a server If you no longer need your Aternos Minecraft server, you can delete it easily with just a few clicks. This article will …"
+    }
+  ]
+}

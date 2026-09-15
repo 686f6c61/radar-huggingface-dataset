@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/augmented-4a271cf76e39cfe1",
+  "slug": "gradients-io-tournaments-augmented-4a271cf76e39cfe1",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/augmented-4a271cf76e39cfe1",
+  "created_at": "2026-09-15T18:06:34.000Z",
+  "updated_at": "2026-09-15T18:07:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2506172416,
+  "parameters_human": "2.51B",
+  "storage_bytes": 5046720020,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Materiel agricole - tracteur et autres annonces agricoles",
+      "url": "https://www.agriaffaires.com/",
+      "snippet": "Leader de l'achat et de la vente de matériel agricole et de tracteur d'occasion en France, retrouvez ce dont vous avez besoin parmi …"
+    },
+    {
+      "title": "Tracteur agricole d'occasion - France - Agriaffaires",
+      "url": "https://www.agriaffaires.com/occasion/1/tracteur-agricole.html",
+      "snippet": "Achetez ou vendez votre tracteur agricole sur notre site Agriaffaires. Plus de 30 000 petites annonces de tracteur partout dans toute …"
+    },
+    {
+      "title": "Terre agricole a vendre, ferme et exploitation sur Agriaffaires - France",
+      "url": "https://www.agriaffaires.com/occasion/1/vente-ferme.html",
+      "snippet": "⭐ Ne ratez plus aucune bonne affaire, trouvez une exploitation agricole, des terres agricoles ou une ferme à vendre parmi 364 …"
+    },
+    {
+      "title": "Tracteur ancien à vendre - France - Agriaffaires",
+      "url": "https://www.agriaffaires.com/occasion/1/tracteur-collection-ancien.html",
+      "snippet": "Si vous êtes à la recherche d'un tracteur ancien, vous êtes au bon endroit. Agriaffaires, leader de la petite annonce agricole vous …"
+    },
+    {
+      "title": "Tracteur agricole d'occasion à vendre , Belgique - Agriaffaires",
+      "url": "https://www.agriaffaires.com/occasion/tracteur-agricole/1-belgique.html",
+      "snippet": "Vous cherchez un Tracteur agricole d'occasion ? Bienvenue sur Agriaffaires, leader de la petite annonce de matériel agricole."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Swift-Qwen3.8-27B-Uncensored-BF16-GGUF",
+  "slug": "mradermacher-swift-qwen3-8-27b-uncensored-bf16-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Swift-Qwen3.8-27B-Uncensored-BF16-GGUF",
+  "created_at": "2026-09-15T12:13:16.000Z",
+  "updated_at": "2026-09-15T12:27:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 28246748480,
+  "storage_human": "28.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B Uncensored GGUF: Abliterated Local Build",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf",
+      "snippet": "The base is Qwen/Qwen3.8-27B — a dense 27B model with a hybrid architecture (48 Gated DeltaNet linear-attention layers and 16 full-attention layers), native vision, and a 262,144-token context."
+    },
+    {
+      "title": "ukisai/Swift-Qwen3.8-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ukisai/Swift-Qwen3.8-27B-GGUF",
+      "snippet": "Serving: BF16 · vLLM 0.27.1 · Qwen3 parser · context 262,144 · thinking xhigh. Sampling: temperature 1.0 · top_p 0.95 · top_k 20 · min_p 0 · presence_penalty 0 · repetition_penalty 1."
+    },
+    {
+      "title": "mradermacher/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16-GGUF",
+      "snippet": "weighted/imatrix quants are available at https://huggingface.co/mradermacher/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16-i1-GGUF"
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored vs Other Qwen GGUF Models | HackerNoon",
+      "url": "https://hackernoon.com/qwen38-27b-uncensored-vs-other-qwen-gguf-models",
+      "snippet": "It uses a dense 27-billion-parameter architecture with 64 layers: 48 GatedDeltaNet linear-attention layers and 16 full-attention layers, with a hidden size of 5,120. The advertised context window is 262,000 tokens. It runs through llama.cpp and uses GGUF files; image and video input requires the separate 0.9 GB mmproj-Qwen3.8-27B-f16.gguf projector."
+    },
+    {
+      "title": "Qwen3.8 27B Uncensored GGUF - Interfaze",
+      "url": "https://interfaze.ai/models/jonathancolettiqwen38-27b-uncensored-gguf",
+      "snippet": "Provenance is checkable rather than asserted: re-quantizing the f16 to Q4_K_M with this file reproduces the published Qwen3.8-27B-Uncensored-Q4_K_M.gguf to byte-identical tensors across all 866 tensors. The floor here is IQ2_M at 10.6 GB. If you want something smaller, or a type that is not published, the imatrix above lets you build it. You will need the f16 GGUF, which is not published here because it is 54 GB. Build it from the bf16 weights, which are public:"
+    }
+  ]
+}

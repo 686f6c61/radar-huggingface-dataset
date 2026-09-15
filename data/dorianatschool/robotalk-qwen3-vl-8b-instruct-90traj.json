@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "DorianAtSchool/RoboTalk-Qwen3-VL-8B-Instruct-90traj",
+  "slug": "dorianatschool-robotalk-qwen3-vl-8b-instruct-90traj",
+  "author": "DorianAtSchool",
+  "url": "https://huggingface.co/DorianAtSchool/RoboTalk-Qwen3-VL-8B-Instruct-90traj",
+  "created_at": "2026-09-15T11:52:35.000Z",
+  "updated_at": "2026-09-15T11:52:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "robotics",
+    "multi-agent",
+    "vision-language",
+    "base_model:adapter:Qwen/Qwen3-VL-8B-Instruct",
+    "image-text-to-text",
+    "en",
+    "dataset:DorianAtSchool/RoboTalk",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 174663096,
+  "storage_human": "175 MB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jaaropgave 2012 (Akbank)",
+      "url": "https://forum.spaarinformatie.nl/akbank-f5/jaaropgave-2012-akbank-t6718.html",
+      "snippet": "Jul 19, 2007 · Volgens de website van Akbank zou men de jaaropgave 2012 in mei ontvangen. Het is inmiddels juni en ik heb nog …"
+    },
+    {
+      "title": "Jaaroverzicht AKbank",
+      "url": "https://forum.spaarinformatie.nl/akbank-f5/jaaroverzicht-akbank-t2821.html",
+      "snippet": "Mar 1, 2009 · Bij AKbank alleen fiscaal jaaroverzicht gehad van internetspaarrekening. Van deposito's lopend in 2008 bij deze bank …"
+    },
+    {
+      "title": "Rekeningafschrift internetspaarrekening : Akbank",
+      "url": "https://forum.spaarinformatie.nl/akbank-f5/rekeningafschrift-internetspaarrekening-t185.html",
+      "snippet": "Feb 13, 2008 · Vorige maand heb ik een rekening geopend, en ook in januari geld gestort op die rekening. Tot op heden heb ik …"
+    },
+    {
+      "title": "Hoe veilig is Akbank? : Akbank",
+      "url": "https://forum.spaarinformatie.nl/akbank-f5/hoe-veilig-akbank-t1459.html",
+      "snippet": "Oct 15, 2008 · How safe is... Akbank Fitch rating for Akbank: BB (Oct 14: outlook – stable, affirmed on Oct 10) Share price over one …"
+    },
+    {
+      "title": "Renteverlaging per 2 oktober : Akbank",
+      "url": "https://forum.spaarinformatie.nl/akbank-f5/renteverlaging-per-oktober-t4051.html",
+      "snippet": "Sep 30, 2009 · Kreeg een mailtje van de AK-bank dat ingaande vrijdag, 2 oktober de rentes weer dalen. Er gaat een kwart procent af. …"
+    }
+  ]
+}

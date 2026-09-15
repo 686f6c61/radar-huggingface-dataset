@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Humantwin/dexflow-v3-stage2-tasks",
+  "slug": "humantwin-dexflow-v3-stage2-tasks",
+  "author": "Humantwin",
+  "url": "https://huggingface.co/Humantwin/dexflow-v3-stage2-tasks",
+  "created_at": "2026-09-15T13:26:02.000Z",
+  "updated_at": "2026-09-15T13:27:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "imitation-learning",
+    "dexflow",
+    "residual-mlp",
+    "dexterous-manipulation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 573136930,
+  "storage_human": "573 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps - Reddit",
+      "url": "https://www.reddit.com/r/GoogleMaps/",
+      "snippet": "r/GoogleMaps is participating in ongoing protests regarding changes to Reddit's API accessibility. The subreddit may reopen at some …"
+    },
+    {
+      "title": "Get directions and show routes in Google Maps",
+      "url": "https://support.google.com/maps/answer/144339?hl=en-AU&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can get directions for driving, public transport, walking, ride sharing, cycling, flight or motorcycle on Google Maps. If there are …"
+    },
+    {
+      "title": "Maps Trợ giúp - Google Help",
+      "url": "https://support.google.com/maps/?hl=vi",
+      "snippet": "Trung tâm Trợ giúp Maps chính thức, nơi bạn có thể tìm thấy các mẹo và hướng dẫn sử dụng sản phẩm và các câu trả lời khác cho …"
+    },
+    {
+      "title": "Create Google Maps links based on coordinates - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/30544268/create-google-maps-links-based-on-coordinates",
+      "snippet": "Feb 20, 2024 · The currently accepted answer ends up adding an additional history entry in browsers at the moment as Google Maps …"
+    },
+    {
+      "title": "Google Maps JavaScript API RefererNotAllowedMapError",
+      "url": "https://stackoverflow.com/questions/35288250/google-maps-javascript-api-referernotallowedmaperror",
+      "snippet": "Feb 10, 2016 · We're trying to develop an geoplacement app for one of our clients, and we want first to test it in out own domain. We …"
+    }
+  ]
+}

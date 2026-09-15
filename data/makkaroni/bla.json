@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Makkaroni/bla",
+  "slug": "makkaroni-bla",
+  "author": "Makkaroni",
+  "url": "https://huggingface.co/Makkaroni/bla",
+  "created_at": "2026-09-15T13:14:01.000Z",
+  "updated_at": "2026-09-15T13:14:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "为什么AVL树删除操作最坏情况需要O (logN)次旋转? - 知乎",
+      "url": "https://www.zhihu.com/question/270669995",
+      "snippet": "极客志：二叉树04.深度分析AVL树的实现与优化 14 赞同 · 0 评论 文章"
+    },
+    {
+      "title": "HotCopper | ASX Share Prices, Stock Market & Share Trading Forum",
+      "url": "https://hotcopper.com.au/asx/avl/",
+      "snippet": ""
+    },
+    {
+      "title": "火花塞式的缸压传感器为什么一直被国外垄断？ - 知乎",
+      "url": "https://www.zhihu.com/question/269419675",
+      "snippet": "火花塞式的缸压传感器为什么一直被国外垄断？ 了解到目前火花塞式缸压传感器除了AVL和kistler两家生产制造外，很难找到第三家， …"
+    },
+    {
+      "title": "AUSTRALIAN VANADIUM LIMITED AVL (ASX) - ASX Stock Market …",
+      "url": "https://hotcopper.com.au/asx/avl/charts/",
+      "snippet": "Share Prices & Charts for AUSTRALIAN VANADIUM LIMITED. Join the HotCopper ASX share market forum today for free."
+    },
+    {
+      "title": "在奥地利AVL等汽车工程咨询类公司工作是一种什么样的体验？",
+      "url": "https://www.zhihu.com/question/38041370?sort=created",
+      "snippet": "我目前没有在AVL工作，但是在IAV，德系汽车技术咨询公司AVL，IAV，FEV等，跟德系供应商Bosch，Continential，ZF等一样，有 …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Abbassani/hf_food_not_food_classifier-distilbert-base-uncased",
+  "slug": "abbassani-hf_food_not_food_classifier-distilbert-base-uncased",
+  "author": "Abbassani",
+  "url": "https://huggingface.co/Abbassani/hf_food_not_food_classifier-distilbert-base-uncased",
+  "created_at": "2026-09-15T14:39:52.000Z",
+  "updated_at": "2026-09-15T14:56:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 2678330865,
+  "storage_human": "2.7 GB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "J'accède à mon espace Finances publiques et à mes services en ligne",
+      "url": "https://www.impots.gouv.fr/particulier/jaccede-mon-espace-particulier-et-mes-services-en-ligne",
+      "snippet": "Mar 30, 2016 · Une offre diversifiée de services en ligne vous est proposée dans votre espace Finances publiques. Vous pouvez …"
+    },
+    {
+      "title": "Particulier - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier",
+      "snippet": "Particulier Professionnel Demande d'aide de 100 € pour les travailleurs « grands rouleurs » Publié le 27 mai 2026 Vous avez jusqu'au …"
+    },
+    {
+      "title": "Créer et accéder à mon espace - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier/acceder-mon-espace",
+      "snippet": "Jul 27, 2016 · Si vous n’avez pas encore d'espace Finances publiques sur impots.gouv.fr, vous devez en créer un lors de la première …"
+    },
+    {
+      "title": "Avis d'impôt sur les revenus - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier/avis-dimpot-sur-le-revenu",
+      "snippet": "Aug 18, 2016 · Votre avis d'impôt sur les revenus vous permet de justifier des revenus que vous avez déclarés à l'administration …"
+    },
+    {
+      "title": "Professionnel - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/professionnel",
+      "snippet": "Particulier Professionnel Demande d'aide de 100 € pour les travailleurs « grands rouleurs » Publié le 27 mai 2026 Vous avez jusqu'au …"
+    }
+  ]
+}

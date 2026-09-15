@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "MLGOATKOJI/FineTuneQwen",
+  "slug": "mlgoatkoji-finetuneqwen",
+  "author": "MLGOATKOJI",
+  "url": "https://huggingface.co/MLGOATKOJI/FineTuneQwen",
+  "created_at": "2026-09-15T16:20:28.000Z",
+  "updated_at": "2026-09-15T16:28:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 994846059,
+  "storage_human": "995 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "Qwen3.5 Fine-tuning Guide | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.5/fine-tune",
+      "snippet": "You can now fine-tune Qwen3.5 model family (0.8B, 2B, 4B, 9B, 27B, 35B‑A3B, 122B‑A10B) with Unsloth. Support includes both vision, text and RL fine-tuning."
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    },
+    {
+      "title": "Fine-Tuning Qwen3: A Step-by-Step Guide | DataCamp",
+      "url": "https://www.datacamp.com/tutorial/fine-tuning-qwen3",
+      "snippet": "Truly, Qwen-3 embodies the principles of open AI. In this tutorial, we have learned how to fine-tune the Qwen-3 model on a medical reasoning dataset using the Runpod platform. Remarkably, the entire process cost less than $3."
+    },
+    {
+      "title": "Channel or account terminations - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/2802168?hl=en",
+      "snippet": "Open YouTube Studio. View confirmation of your appeal submission, and check your appeal’s anticipated review time. You’ll be …"
+    }
+  ]
+}

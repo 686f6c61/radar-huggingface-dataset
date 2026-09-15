@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AltairTheArc/Just-the-tip-Imminent-penetration-Concept-version-Illustrious-NoobAI-Pony",
+  "slug": "altairthearc-just-the-tip-imminent-penetration-concept-version-illustrious-noobai-pony",
+  "author": "AltairTheArc",
+  "url": "https://huggingface.co/AltairTheArc/Just-the-tip-Imminent-penetration-Concept-version-Illustrious-NoobAI-Pony",
+  "created_at": "2026-09-15T11:31:46.000Z",
+  "updated_at": "2026-09-15T11:52:11.000Z",
+  "license": "faipl-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "xxx",
+    "illustrious",
+    "r18",
+    "base_model:OnomaAIResearch/Illustrious-XL-v2.0",
+    "base_model:finetune:OnomaAIResearch/Illustrious-XL-v2.0",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228458948,
+  "storage_human": "228 MB",
+  "base_model": "OnomaAIResearch/Illustrious-XL-v2.0",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iCloud Drive - Apple iCloud",
+      "url": "https://www.icloud.com/iclouddrive",
+      "snippet": "Store, organize and collaborate on files and folders with iCloud Drive. Easily upload, delete or recover files. Changes will sync across …"
+    },
+    {
+      "title": "iCloud Drive – Apple iCloud",
+      "url": "https://www.icloud.com/de-de/iclouddrive",
+      "snippet": "Mit iCloud Drive kannst du deine Dateien und Ordner sichern, organisieren und in Zusammenarbeit mit anderen Personen …"
+    },
+    {
+      "title": "iCloud Drive auf deinem Windows-Computer einrichten",
+      "url": "https://support.apple.com/de-de/guide/icloud-windows/icw0144825a5/icloud",
+      "snippet": "Mit iCloud für Windows kannst du in iCloud Drive gespeicherte Dateien auf deinem PC anzeigen und teilen."
+    },
+    {
+      "title": "iCloud Drive einrichten - Apple Support (DE)",
+      "url": "https://support.apple.com/de-de/118443",
+      "snippet": "Dateien und Ordner, die du in iCloud Drive speicherst, bleiben auf allen deinen Geräten auf dem neuesten Stand. Hier erklären wir …"
+    },
+    {
+      "title": "iCloud – Kostenloser Download und Installation unter Windows ...",
+      "url": "https://apps.microsoft.com/detail/9pktq5699m62?launch=true&hl=de-DE&gl=US",
+      "snippet": "• Erstelle geteilte Alben und lade andere dazu ein, Fotos, Videos und Kommentare hinzuzufügen. iCloud Drive • Greife direkt vom …"
+    }
+  ]
+}

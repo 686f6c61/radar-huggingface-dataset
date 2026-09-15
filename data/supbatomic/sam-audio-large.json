@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Supbatomic/sam-audio-large",
+  "slug": "supbatomic-sam-audio-large",
+  "author": "Supbatomic",
+  "url": "https://huggingface.co/Supbatomic/sam-audio-large",
+  "created_at": "2026-09-15T14:36:11.000Z",
+  "updated_at": "2026-09-15T14:36:11.000Z",
+  "license": "sam-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14861356211,
+  "storage_human": "14.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Auto Spare Parts - Online Store Genuine & Aftermarket Car Parts ...",
+      "url": "https://www.allparts.ae/",
+      "snippet": "We are the supplier of all sorts genuine auto parts and accessories. The largest database of auto spare parts for every car. Online …"
+    },
+    {
+      "title": "Catalogues - Auto Spare Parts",
+      "url": "https://www.allparts.ae/ccatalogs/",
+      "snippet": "Explore a wide range of auto spare parts catalogs for various car makes and models, available for online order with fast shipping."
+    },
+    {
+      "title": "Toyota Body Parts, Lights & Accessories - allparts.ae",
+      "url": "https://www.allparts.ae/japanese_body_parts_lights/toyota/fortuner/an150-2016-2022/",
+      "snippet": "Largest selection Body Parts, Lights & Accessories for Toyota. Online Order & Fast Shipping. Car Parts Online Shop - Allparts.ae"
+    },
+    {
+      "title": "Maintenance parts",
+      "url": "https://www.allparts.ae/to/",
+      "snippet": "Maintenance parts Maintenance parts 16 536 products Back to the list of catalogs"
+    },
+    {
+      "title": "Toyota LANDCRUISER 16-20 BUMPER REAR - 52159-6A928",
+      "url": "https://www.allparts.ae/japanese_body_parts_lights/toyota/land-cruiser/j200-2016-2021/landcruiser-16-20-bumper-rear.html",
+      "snippet": "Toyota LANDCRUISER 16-20 BUMPER REAR - 52159-6A928. Spare parts for all kinds of cars. The largest database of Original and …"
+    }
+  ]
+}

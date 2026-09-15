@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Dohyeon1/Qwen3-30B-A3B-HC-SMoE-ngroups96",
+  "slug": "dohyeon1-qwen3-30b-a3b-hc-smoe-ngroups96",
+  "author": "Dohyeon1",
+  "url": "https://huggingface.co/Dohyeon1/Qwen3-30B-A3B-HC-SMoE-ngroups96",
+  "created_at": "2026-09-15T17:16:37.000Z",
+  "updated_at": "2026-09-15T17:23:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_moe",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 61078033554,
+  "storage_human": "61.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "psyko - forum.spacedesk.net",
+      "url": "https://forum.spacedesk.net/de/forums/users/psyko/engagements/",
+      "snippet": "Themen-Beteiligungen in Ansicht von Thema 1 (von insgesamt 1) Thema Teilnehmer Beiträge Letzter Beitrag Space desk connects …"
+    },
+    {
+      "title": "Purchase - forum.spacedesk.net",
+      "url": "https://forum.spacedesk.net/zh/forums/topic/purchase/",
+      "snippet": "Hi Support, I would like to purchase the space desk display driver SDK for integrating with one of our products, could you please …"
+    },
+    {
+      "title": "Ho un problema con spacedesk | Tom's Hardware Forum Italia",
+      "url": "https://forum.tomshw.it/threads/ho-un-problema-con-spacedesk.844981/",
+      "snippet": "Dec 22, 2020 · Salve ragazzi, ho attualmente un i5-8400 e una rx570, attualmente faccio streaming ma il mio secondo monitor ha …"
+    },
+    {
+      "title": "PROBLEMA - luminosità linux mint | Tom's Hardware Forum Italia",
+      "url": "https://forum.tomshw.it/threads/luminosit%C3%A0-linux-mint.877647/",
+      "snippet": "Jan 20, 2022 · salve a tutti, di recente (qualche mese a questa parte), ho provato tutte e 3 le versioni di linux mint,e in tutte e 3 ho …"
+    },
+    {
+      "title": "回复至：Space desk connects and works fine but then days later won’t …",
+      "url": "https://forum.spacedesk.net/zh/forums/reply/2312/",
+      "snippet": "Forum › 论坛 › spacedesk Discussions › Space desk connects and works fine but then days later won’t find server ›回复至：Space …"
+    }
+  ]
+}

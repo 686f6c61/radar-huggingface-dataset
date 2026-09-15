@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Bernardorodrigues/simple-ocr-freeform",
+  "slug": "bernardorodrigues-simple-ocr-freeform",
+  "author": "Bernardorodrigues",
+  "url": "https://huggingface.co/Bernardorodrigues/simple-ocr-freeform",
+  "created_at": "2026-09-15T16:43:45.000Z",
+  "updated_at": "2026-09-15T16:43:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "ocr-freeform",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online Stopwatch - easy to use - timeanddate.com",
+      "url": "https://www.timeanddate.com/stopwatch/",
+      "snippet": "Online stopwatch. Easy to use and accurate stopwatch with lap times and alarms. Optional split intervals and alarm sound."
+    },
+    {
+      "title": "Online Timer - timeanddate.com",
+      "url": "https://www.timeanddate.com/timer/",
+      "snippet": "Online Timer with Alarm Create your timers with optional alarms and start/pause/stop them simultaneously or sequentially. They are …"
+    },
+    {
+      "title": "timeanddate.com",
+      "url": "https://www.timeanddate.com/",
+      "snippet": "Online Stopwatch Time your activities. With start alerts, lap times, and alarm sound."
+    },
+    {
+      "title": "Countdown Timer to Any Date",
+      "url": "https://www.timeanddate.com/countdown/create",
+      "snippet": "Create a Countdown Timer that counts down in seconds, minutes, hours and days to any date, with time zone support. It also counts …"
+    },
+    {
+      "title": "Calendar 2026 - timeanddate.com",
+      "url": "https://www.timeanddate.com/calendar/",
+      "snippet": "Tools Years with Same Calendar as 2026 Customization Forms Customize this calendar–large – advanced form with more choices …"
+    }
+  ]
+}

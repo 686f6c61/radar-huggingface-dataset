@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/livro-1.5b-v1-GGUF",
+  "slug": "mradermacher-livro-1-5b-v1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/livro-1.5b-v1-GGUF",
+  "created_at": "2026-09-15T13:11:34.000Z",
+  "updated_at": "2026-09-15T13:18:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "en",
+    "base_model:developer2625/livro-1.5b-v1",
+    "base_model:quantized:developer2625/livro-1.5b-v1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 14206902912,
+  "storage_human": "14.2 GB",
+  "base_model": "developer2625/livro-1.5b-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - BBBank",
+      "url": "https://www.bbbank.de/privatkunden.html",
+      "snippet": "Die BBBank ist die größte genossenschaftliche Privatkundenbank in Deutschland."
+    },
+    {
+      "title": "Online Banking - BBBank",
+      "url": "https://www.bbbank.de/privatkunden/girokonto/banking/online-banking.html",
+      "snippet": "Mit unserem Online-Banking haben Sie Ihren Kontostand immer dabei. Erfahren Sie hier mehr zum BBBank Online-Banking."
+    },
+    {
+      "title": "BBBank – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/BBBank",
+      "snippet": "Außenansicht der BBBank-Hauptstelle in Karlsruhe Die BBBank eG ist eine deutsche Genossenschaftsbank mit Sitz in der baden …"
+    },
+    {
+      "title": "bbbank: Produkte, Konditionen & Erfahrungen 2026",
+      "url": "https://finanzvergleich.com/banken/bbbank/",
+      "snippet": "Auf dieser Seite findest Du kompakt alle Informationen, um die BBBank und ihre Leistungen kennenzulernen. Dich erwarten kurze …"
+    },
+    {
+      "title": "BBBank - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/BBBank",
+      "snippet": "BBBank operates a network of more than 100 branches across all 16 states, alongside direct banking and online banking services …"
+    }
+  ]
+}

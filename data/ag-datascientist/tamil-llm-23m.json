@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AG-dataScientist/tamil-llm-23m",
+  "slug": "ag-datascientist-tamil-llm-23m",
+  "author": "AG-dataScientist",
+  "url": "https://huggingface.co/AG-dataScientist/tamil-llm-23m",
+  "created_at": "2026-09-15T16:06:25.000Z",
+  "updated_at": "2026-09-15T16:17:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ta"
+  ],
+  "tags": [
+    "tamil",
+    "llm",
+    "pytorch",
+    "transformer",
+    "bpe",
+    "ta",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AG2R LA MONDIALE : mutuelle santé, prévoyance, épargne, retraite",
+      "url": "https://www.ag2rlamondiale.fr/",
+      "snippet": "Le spécialiste de la protection sociale et patrimoniale en France. Découvrez nos offres mutuelle santé, prévoyance, épargne et …"
+    },
+    {
+      "title": "Assemblée générale de société : types, règles et procédure 2026",
+      "url": "https://www.legalplace.fr/guides/assemblee-generale/",
+      "snippet": "Jul 24, 2026 · Assemblée générale de société : types, convocation, quorum, majorité, sanctions. Le guide complet à jour 2026 pour …"
+    },
+    {
+      "title": "AG — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/AG",
+      "snippet": "Cette répertorie les différents sujets et articles portant le même nom. Cette page recense les différentes significations (codes, sigles, …"
+    },
+    {
+      "title": "My AG | Espace client assurances particulier",
+      "url": "https://ag.be/particuliers/fr/myag",
+      "snippet": "My AG rassemble toutes les informations relatives à vos assurances dans un espace client sécurisé, accessible 24 h/24 et 7 j/7. …"
+    },
+    {
+      "title": "AG Insurance - Supporter de votre vie",
+      "url": "https://ag.be/particuliers/fr",
+      "snippet": "AG Insurance propose une large gamme d’assurances en Belgique : assurances épargne et placement, auto, hospitalisation, …"
+    }
+  ]
+}

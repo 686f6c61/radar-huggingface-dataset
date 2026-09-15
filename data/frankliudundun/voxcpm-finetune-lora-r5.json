@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "FrankLiuDundun/voxcpm-finetune-lora-r5",
+  "slug": "frankliudundun-voxcpm-finetune-lora-r5",
+  "author": "FrankLiuDundun",
+  "url": "https://huggingface.co/FrankLiuDundun/voxcpm-finetune-lora-r5",
+  "created_at": "2026-09-15T12:53:08.000Z",
+  "updated_at": "2026-09-15T13:47:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "voxcpm",
+  "languages": [
+    "th",
+    "vi",
+    "id",
+    "ms",
+    "tl",
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "voxcpm",
+    "safetensors",
+    "voxcpm2",
+    "tts",
+    "lora",
+    "fine-tune",
+    "multilingual",
+    "dubbing",
+    "thai",
+    "vietnamese",
+    "indonesian",
+    "malay",
+    "tagalog",
+    "th",
+    "vi",
+    "id",
+    "ms",
+    "tl",
+    "zh",
+    "en",
+    "base_model:openbmb/VoxCPM2",
+    "base_model:finetune:openbmb/VoxCPM2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2290004544,
+  "parameters_human": "2.29B",
+  "storage_bytes": 5101780954,
+  "storage_human": "5.1 GB",
+  "base_model": "openbmb/VoxCPM2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=IT&hl=it",
+      "snippet": "Divertiti con i video e la musica che ami, carica contenuti originali e condividi tutto con amici, familiari e con il mondo su YouTube."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "Welcome to the official YouTube channel – a home for the biggest moments, the smallest obsessions, and everything in between. …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en-US",
+      "snippet": "Get the official YouTube app on Android phones and tablets. See what the world is watching -- from the hottest music videos to …"
+    },
+    {
+      "title": "YouTube - Google Accounts",
+      "url": "https://accounts.google.com/InteractiveLogin?service=youtube",
+      "snippet": "Share your videos with friends, family, and the world."
+    }
+  ]
+}

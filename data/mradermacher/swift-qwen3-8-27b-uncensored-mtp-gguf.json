@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Swift-Qwen3.8-27B-Uncensored-MTP-GGUF",
+  "slug": "mradermacher-swift-qwen3-8-27b-uncensored-mtp-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Swift-Qwen3.8-27B-Uncensored-MTP-GGUF",
+  "created_at": "2026-09-15T11:38:55.000Z",
+  "updated_at": "2026-09-15T12:58:19.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "qwen3_8",
+    "mtp",
+    "en",
+    "base_model:ajgazin/Swift-Qwen3.8-27B-Uncensored-MTP",
+    "base_model:quantized:ajgazin/Swift-Qwen3.8-27B-Uncensored-MTP",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 190780461696,
+  "storage_human": "190.8 GB",
+  "base_model": "ajgazin/Swift-Qwen3.8-27B-Uncensored-MTP",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Virgilio: Mail, Login, Ultime Notizie in tempo reale e tanto altro!",
+      "url": "https://www.virgilio.it/",
+      "snippet": "Virgilio: News nazionali e locali, Login, accesso Mail e PEC, Sport, Oroscopo, Gossip, Finanza, Economia, Video, Mail e Motore di …"
+    },
+    {
+      "title": "Virgilio Mail - login",
+      "url": "https://login.virgilio.it/",
+      "snippet": "Inserisci la tua user e password ed entra in Virgilio Mail. Sei invece un nuovo utente? Crea un nuovo account o richiedi l'aiuto di Virgilio"
+    },
+    {
+      "title": "Virgilio Notizie: Ultime news di oggi in tempo reale",
+      "url": "https://www.virgilio.it/notizie/",
+      "snippet": "Su Virgilio Notizie puoi trovare le ultime news del giorno aggiornate in tempo reale con commenti, curiosità, storie, fotogallery e video."
+    },
+    {
+      "title": "Virgilio Sport: News e Migliori Live su Sport, Calcio, F1 e MotoGP",
+      "url": "https://sport.virgilio.it/",
+      "snippet": "Su Virgilio Sport trovi le ultime notizie su Calcio, Calciomercato, F1 e MotoGp e tutti gli altri Sport. Guida Sport in Tv, Dirette Live, …"
+    },
+    {
+      "title": "Virgilio Mail - login",
+      "url": "https://login.virgilio.it/lsc",
+      "snippet": "Accedi a Virgilio Mail per gestire la tua posta elettronica in modo semplice e sicuro con funzionalità avanzate e servizi integrati."
+    }
+  ]
+}

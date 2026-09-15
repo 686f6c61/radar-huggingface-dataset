@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3-4B-OBLITERATED-repaired-i1-GGUF",
+  "slug": "mradermacher-qwen3-4b-obliterated-repaired-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3-4B-OBLITERATED-repaired-i1-GGUF",
+  "created_at": "2026-09-15T17:49:34.000Z",
+  "updated_at": "2026-09-15T17:49:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 958716,
+  "parameters_human": "958716",
+  "storage_bytes": 3872640,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Datové schránky",
+      "url": "https://mojedatovaschranka.cz/sds/searchList.do?start=null&extendedSearch=no&searchCriterium=ovm_name_of_subject&searchValue=b'MjkyMDI2NDc=",
+      "snippet": "Datová schránka je v podstatě vaše elektronická komunikace se státem a všemi jeho institucemi – například s úřady nebo soudy. …"
+    },
+    {
+      "title": "Co dělat s datovou schránkou po úmrtí jejího držitele?",
+      "url": "https://info.mojedatovaschranka.cz/info/cs/2056.html",
+      "snippet": "V případě nastalé události se tak snadno vyhnete situaci, kdy schránka zůstane zcela bez uživatele a tím i možnosti přistupovat k …"
+    },
+    {
+      "title": "Vyhledávání",
+      "url": "https://info.mojedatovaschranka.cz/info/cs/search.html?q=seznam%20datov%C3%BDch%20schr%C3%A1nek",
+      "snippet": "© 2026 Digitální a informační agentura • Všechna práva vyhrazena • Provoz datových schránek i webové prezentace zajišťuje Česká …"
+    },
+    {
+      "title": "Seznam držitelů datových schránek",
+      "url": "https://www.mojedatovaschranka.cz/sds/detail?dbid=es5bv8q",
+      "snippet": "Seznam orgánů veřejné moci, orgánů územní samosprávy, právnických a fyzických osob vykonávajících působnost v oblasti veřejné …"
+    },
+    {
+      "title": "ws1.mojedatovaschranka.cz",
+      "url": "https://ws1.mojedatovaschranka.cz/",
+      "snippet": "Získejte přístup k datové schránce pro bezpečnou online komunikaci s úřady a dalšími uživateli."
+    }
+  ]
+}

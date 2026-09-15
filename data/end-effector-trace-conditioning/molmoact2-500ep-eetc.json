@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "end-effector-trace-conditioning/molmoact2-500ep-eetc",
+  "slug": "end-effector-trace-conditioning-molmoact2-500ep-eetc",
+  "author": "end-effector-trace-conditioning",
+  "url": "https://huggingface.co/end-effector-trace-conditioning/molmoact2-500ep-eetc",
+  "created_at": "2026-09-15T16:14:01.000Z",
+  "updated_at": "2026-09-15T16:14:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "molmoact2",
+    "robotics",
+    "dataset:mattpidden/500eps-endeffector-trace-dataset",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5442196272,
+  "parameters_human": "5.44B",
+  "storage_bytes": 10884592880,
+  "storage_human": "10.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Style. Sneakers. Culture. Community. | END. (FR)",
+      "url": "https://www.endclothing.com/en-fr",
+      "snippet": "END. Clothing - The leading retailer of style, sneakers, culture, community. New products added daily."
+    },
+    {
+      "title": "Les Équipes Notre-Dame - END",
+      "url": "https://www.equipes-notre-dame.fr/",
+      "snippet": "Les Équipes Notre-Dame proposent aux couples de prendre appui sur une vie spirituelle riche et dynamique pour faire grandir leur …"
+    },
+    {
+      "title": "Sale | END. (FR)",
+      "url": "https://www.endclothing.com/en-fr/sale",
+      "snippet": "END. Clothing - The leading retailer of style, sneakers, culture, community. New products added daily."
+    },
+    {
+      "title": "Lands' End: Vêtements de qualité pour femmes et hommes",
+      "url": "https://www.landsend.fr/",
+      "snippet": "Lands’ End, marque de vêtement américain et vente en ligne de vêtements pour femme, homme et enfant. Grande taille et promos …"
+    },
+    {
+      "title": "Vide-greniers, brocantes et bourses - Aix-en-Provence (50 km)",
+      "url": "https://vide-greniers.org/evenements/Aix-en-Provence-13",
+      "snippet": "16 hours ago · Dimanche Week-end Carte Vide Grenier du Judo Club Venellois Venelles (13) 9 km vide grenier LES HIPPOS à …"
+    }
+  ]
+}

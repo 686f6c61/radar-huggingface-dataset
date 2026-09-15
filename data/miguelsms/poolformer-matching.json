@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "MiguelSms/poolformer-matching",
+  "slug": "miguelsms-poolformer-matching",
+  "author": "MiguelSms",
+  "url": "https://huggingface.co/MiguelSms/poolformer-matching",
+  "created_at": "2026-09-15T14:11:03.000Z",
+  "updated_at": "2026-09-15T14:11:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Booking Train Tickets: Bahn.com v. Omio.com - Rick Steves",
+      "url": "https://community.ricksteves.com/travel-forum/germany/booking-train-tickets-bahn-com-v-omio-com",
+      "snippet": "Jul 8, 2019 · I haven't used omio.com. I have purchased several tickets recently on bahn.de. I did a quick price comparison, choosing …"
+    },
+    {
+      "title": "Problems ordering on Bahn website! - Rick Steves Travel Forum",
+      "url": "https://community.ricksteves.com/travel-forum/germany/problems-ordering-on-bahn-website",
+      "snippet": "Dec 2, 2017 · We have had reports that some American credit cards do not work on Bahn.de and other European train sites. It may …"
+    },
+    {
+      "title": "DB Super Saver fare promotion - Rick Steves Travel Forum",
+      "url": "https://community.ricksteves.com/travel-forum/germany/db-super-saver-fare-promotion",
+      "snippet": "Oct 30, 2025 · Yep, we booked our September AmsterdamCentraal-to-BerlinHbf run (ICE, 5h45m) this past weekend. First Class …"
+    },
+    {
+      "title": "English-speaking phone line for Deutsche Bahn? - Rick Steves",
+      "url": "https://community.ricksteves.com/travel-forum/transportation/english-speaking-phone-line-for-deutsche-bahn",
+      "snippet": "Jun 22, 2011 · I cannot get through to the English speaking phone no. they have posted on the bahn.de website. Does anyone know …"
+    },
+    {
+      "title": "How to get the free child tickets on int.bahn.de?",
+      "url": "https://community.ricksteves.com/travel-forum/germany/how-to-get-the-free-child-tickets-on-int-bahn-de",
+      "snippet": "Feb 4, 2026 · Hi all, I've read Seat 61 explanation on getting from Paris to Germany. Specifically, I'm travelling from Gare de l'Est to …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "RajeshReddywell/generation67",
+  "slug": "rajeshreddywell-generation67",
+  "author": "RajeshReddywell",
+  "url": "https://huggingface.co/RajeshReddywell/generation67",
+  "created_at": "2026-09-15T11:24:08.000Z",
+  "updated_at": "2026-09-15T11:24:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Konuşma çevirisi özelliği hakkında",
+      "url": "https://support.google.com/meet/answer/16221730?hl=tr&co=GENIE.Platform%3DAndroid",
+      "snippet": "Ek çeviri olarak altyazıları kullanın. Konuşmadan iletişim kurmak için toplantı sohbetini kullanın. Konuşma çevirisi özelliği ile ilgili …"
+    },
+    {
+      "title": "Telefon Görüşmeleri için Canlı Çeviri'yi kullanma",
+      "url": "https://support.google.com/pixelphone/answer/16477051?hl=tr",
+      "snippet": "Canlı Çeviri'yi açma Önemli: Adımları uygularken özelliğin çalışması için modelleri indirmeniz gerekebilir. Pixel 11 ve sonraki …"
+    },
+    {
+      "title": "السلام عليكم ورحمة الله وبركاته - ProZ.com",
+      "url": "https://www.proz.com/kudoz/arabic-to-english/other/546356-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D8%B9%D9%84%D9%8A%D9%83%D9%85-%D9%88%D8%B1%D8%AD%D9%85%D8%A9-%D8%A7%D9%84%D9%84%D9%87-%D9%88%D8%A8%D8%B1%D9%83%D8%A7%D8%AA%D9%87.html",
+      "snippet": "Oct 16, 2003 · Learn more about the term 'السلام عليكم ورحمة الله وبركاته' on the KudoZ Terminology Help Network at ProZ.com"
+    },
+    {
+      "title": "Takdiri Kanıt – Übersetzungen vom Türkischen ins Deutsche – Almanca ...",
+      "url": "https://dassozluk.com/forum/uebersetzungen-vom-tuerkischen-ins-deutsche/takdiri-kanit/",
+      "snippet": "Dava Dilekçelerinde kanıtlar kısmında çok sık kullanılır: Her türlü takdiri ve yasal kanıt. Almanca'ya en doğu şekilde nasıl tercüme …"
+    },
+    {
+      "title": "Bund – Übersetzungen vom Deutschen ins Türkische – Almanca Türkçe ...",
+      "url": "https://dassozluk.com/forum/uebersetzungen-vom-deutschen-ins-tuerkische/bund/",
+      "snippet": "Ben, çeviri yaparken mutlaka kültürel farklılıkların da özenle dikkate alınması gerektiğine yürekten inanıyorum. Bu bağlamda …"
+    }
+  ]
+}

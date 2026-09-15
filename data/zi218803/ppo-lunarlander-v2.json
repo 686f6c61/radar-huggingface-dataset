@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "zi218803/ppo-LunarLander-v2",
+  "slug": "zi218803-ppo-lunarlander-v2",
+  "author": "zi218803",
+  "url": "https://huggingface.co/zi218803/ppo-LunarLander-v2",
+  "created_at": "2026-09-15T16:44:16.000Z",
+  "updated_at": "2026-09-15T16:44:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v2",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 431367,
+  "storage_human": "431367 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NU - Het laatste nieuws het eerst op NU.nl",
+      "url": "https://www.nu.nl/",
+      "snippet": "3 days ago · Lees het laatste nieuws als eerste op de grootste nieuwssite van Nederland. Altijd betrouwbaar, actueel en gratis."
+    },
+    {
+      "title": "Google Nieuws - Nederland - Meest recent",
+      "url": "https://news.google.com/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRFU1YWpJU0FtNXNLQUFQAQ?hl=nl&ceid=NL%3Anl",
+      "snippet": "Lees volledige artikelen, bekijk video's, browse door duizenden titels en meer over het onderwerp 'Nederland' met Google Nieuws."
+    },
+    {
+      "title": "NOS Nieuws - Nieuws, Sport en Evenementen | Nederlandse Omroep …",
+      "url": "https://nos.nl/nieuws/laatste",
+      "snippet": "Onderzoekers zijn steeds bezorgder over het Nederlandse klimaat- en energiebeleid. Ons land blijft afhankelijk van geïmporteerde …"
+    },
+    {
+      "title": "Net Binnen - NU.nl",
+      "url": "https://www.nu.nl/net-binnen",
+      "snippet": "6 days ago · Nieuws en video's uit de rubriek Net Binnen. Betrouwbaar, gratis en snel op NU.nl, de grootste nieuwssite van Nederland."
+    },
+    {
+      "title": "NRC Binnenland - Het belangrijkste nieuws uit Nederland",
+      "url": "https://www.nrc.nl/index/binnenland/",
+      "snippet": "Verslaggeving uit heel Nederland, van Sneek en Venlo tot Denekamp en Vlissingen en artikelen van de Haagse redactie over de …"
+    }
+  ]
+}

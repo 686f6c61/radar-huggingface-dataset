@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "shaoyent/EVM-CoreML-FP16",
+  "slug": "shaoyent-evm-coreml-fp16",
+  "author": "shaoyent",
+  "url": "https://huggingface.co/shaoyent/EVM-CoreML-FP16",
+  "created_at": "2026-09-15T18:16:47.000Z",
+  "updated_at": "2026-09-15T18:55:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "coreml",
+  "languages": [],
+  "tags": [
+    "coreml",
+    "segmentation",
+    "sam3",
+    "efficientvit",
+    "on-device",
+    "image-segmentation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172139921,
+  "storage_human": "172 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "S 5030-Y60R : Couleur NCS S 5030-Y60R | NuancierPeinture.fr",
+      "url": "https://www.nuancierpeinture.fr/couleur-ncs/s5030-y60r.html",
+      "snippet": "Jul 30, 2026 · Retrouvez les différentes correspondances de la couleur NCS S 5030-Y60R : Hexadecimal, RGB (Rouge Vert Bleu), …"
+    },
+    {
+      "title": "S 5030-Y60R – NCS Colour",
+      "url": "https://ncscolour.com/en-eu/products/s-5030-y60r",
+      "snippet": "SKU: SA4-5030-Y60R Regular price€9,50 Unit price /per Dimensions: A4: 210 x 297 mm A6: 105 x 148.5 mm A8: 52 x 74 mm A9: 37 …"
+    },
+    {
+      "title": "NCS S5030-Y60R Couleur complémentaire plus claire/plus foncée plus ...",
+      "url": "https://qconv.com/fr/couleurs/ncs-s5030_y60r",
+      "snippet": "Quelle est la couleur de NCS S5030-Y60R ? En un coup d'œil, tu trouveras des informations détaillées et des couleurs …"
+    },
+    {
+      "title": "Peinture S5030Y60R Marron pour Ncs - Peinturevoiture.fr",
+      "url": "https://code.peinturevoiture.fr/98943.html",
+      "snippet": "Peinture S5030Y60R Marron pour voiture Ncs sur Peinturevoiture.fr, le spécialiste de la vente de peinture automobile en ligne."
+    },
+    {
+      "title": "NCS S5030-Y60R | Ostermann",
+      "url": "https://www.ostermann.eu/fr_FR/product/ncs-s5030-y60r",
+      "snippet": "Description Les panneaux ne font pas partie de la gamme de produits OSTERMANN. Ils servent exclusivement d’outil de recherche …"
+    }
+  ]
+}

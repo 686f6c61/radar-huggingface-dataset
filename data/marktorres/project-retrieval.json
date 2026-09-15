@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "marktorres/project-retrieval",
+  "slug": "marktorres-project-retrieval",
+  "author": "marktorres",
+  "url": "https://huggingface.co/marktorres/project-retrieval",
+  "created_at": "2026-09-15T12:55:30.000Z",
+  "updated_at": "2026-09-15T12:55:37.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reusing a Deleted SharePoint Site Name | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/discussions/sharepoint_general/reusing-a-deleted-sharepoint-site-name/201148",
+      "snippet": "Jun 5, 2018 · SCENARIO: Today I deleted a SharePoint Team Site (O365) that I created yesterday. Now I want to create a …"
+    },
+    {
+      "title": "Adding a Whiteboard to a sharepoint site | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/discussions/microsoft-365/adding-a-whiteboard-to-a-sharepoint-site/3214386",
+      "snippet": "Feb 25, 2022 · I use whiteboard and would love to have this in a communication site or sharepoint site for bigger project. Then I am …"
+    },
+    {
+      "title": "怎么才能禁止microsoft sharepoint workspace开机自动启动？",
+      "url": "https://www.zhihu.com/question/343706911",
+      "snippet": "怎么才能禁止microsoft sharepoint workspace开机自动启动？ 系统设置已经是禁止自动启动，任务管理器已禁用，设置后也重启了， …"
+    },
+    {
+      "title": "Microsoft sharepoint开机就吃近90%内存，卡得要命，怎么办啊?",
+      "url": "https://www.zhihu.com/question/507977410",
+      "snippet": "你是不是把SharePoint和SQL SERVER一起安装到你自己的个人电脑上了？ 这大概率是没对SQL SERVER做内存限制导致SharePoint …"
+    },
+    {
+      "title": "How to resolve 'path is too long' error - endless abending loop ...",
+      "url": "https://techcommunity.microsoft.com/discussions/onedriveforbusiness/how-to-resolve-path-is-too-long-error---endless-abending-loop/3634467",
+      "snippet": "Sep 21, 2022 · I'm searching for the proper procedure to resolve a OneDrive for Business issue where a file path is too long. Still, …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "michaelvnguyen/swin-t-multitask69-2024",
+  "slug": "michaelvnguyen-swin-t-multitask69-2024",
+  "author": "michaelvnguyen",
+  "url": "https://huggingface.co/michaelvnguyen/swin-t-multitask69-2024",
+  "created_at": "2026-09-15T18:46:14.000Z",
+  "updated_at": "2026-09-15T18:46:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Sagenschatz Des Luxemburger Landes - N. Gredt - Google Books",
+      "url": "https://books.google.com/books/about/Sagenschatz_Des_Luxemburger_Landes.html?id=cc1UuwEACAAJ",
+      "snippet": "Jul 27, 2018 · Rent and save from the world's largest eBookstore. Read, highlight, and take notes, across web, tablet, and phone. …"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/m",
+      "snippet": "Translate Detect language → English Google home Send feedback Privacy and terms Switch to full site"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/details",
+      "snippet": "Translation results Translation Translating... Translations are gender-specific. Learn more Some sentences may contain gender …"
+    },
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.de/",
+      "snippet": "Mit diesem kostenlosen Google-Dienst lassen sich Wörter, Sätze und Webseiten sofort zwischen Deutsch und über 100 Sprachen …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "HyeonseokE/smolvla_rq2_turn_off_lever_phase1_1000_10fps",
+  "slug": "hyeonseoke-smolvla_rq2_turn_off_lever_phase1_1000_10fps",
+  "author": "HyeonseokE",
+  "url": "https://huggingface.co/HyeonseokE/smolvla_rq2_turn_off_lever_phase1_1000_10fps",
+  "created_at": "2026-09-15T14:49:03.000Z",
+  "updated_at": "2026-09-15T14:52:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:HyeonseokE/rq2_turn_off_lever_phase1_20_10fps",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906729316,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cadastre.gouv.fr",
+      "url": "https://cadastre.gouv.fr/scpc/accueil.do",
+      "snippet": "Bienvenue sur le service de consultation du plan cadastral. Le plan cadastral français disponible en ligne est composé de 598719 …"
+    },
+    {
+      "title": "cadastre.gouv.fr",
+      "url": "https://www.cadastre.gouv.fr/scpc/rechercherPlan.do",
+      "snippet": "Recherche par adresse Pour effectuer une recherche de plan par adresse, veuillez saisir un ou plusieurs critères. Vous pouvez aussi …"
+    },
+    {
+      "title": "rpcu - cadastre.gouv.fr",
+      "url": "https://rpcu.cadastre.gouv.fr/rpcu/afficherRechercherPlanCad.do",
+      "snippet": "2 days ago · rpcu.cadastre.gouv.fr Bienvenue sur le site de consultation de la Représentation Parcellaire Cadastrale Unique (RPCU). …"
+    },
+    {
+      "title": "cadastre.gouv.fr",
+      "url": "https://www.cadastre.gouv.fr/scpc/rechercherParReferenceCadastrale.do",
+      "snippet": "Recherche par références cadastrales Pour effectuer une recherche de plan par références cadastrales, veuillez saisir un ou …"
+    },
+    {
+      "title": "Bon à savoir - Cadastre.gouv.fr",
+      "url": "https://www.cadastre.gouv.fr/scpc/html/BAS_BonASavoir_fr.html?dontSaveLastForward",
+      "snippet": "Cette rubrique vous propose de répondre aux questions les plus fréquentes que vous pourriez vous poser au sujet du plan cadastral …"
+    }
+  ]
+}

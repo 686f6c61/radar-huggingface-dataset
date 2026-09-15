@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dogeum/demo_0915",
+  "slug": "dogeum-demo_0915",
+  "author": "dogeum",
+  "url": "https://huggingface.co/dogeum/demo_0915",
+  "created_at": "2026-09-15T14:11:48.000Z",
+  "updated_at": "2026-09-15T14:12:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:dogeum/demo_0914",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206707272,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Verona Pooth – Wikipedia",
+      "url": "https://de.m.wikipedia.org/wiki/Verona_Pooth",
+      "snippet": "Verona Pooth (* 30. April 1968 als Verona Feldbusch in La Paz, Bolivien) ist eine deutsche Moderatorin, Sängerin, Schauspielerin …"
+    },
+    {
+      "title": "Viola Pooth - Semantic Scholar",
+      "url": "https://www.semanticscholar.org/author/Viola-Pooth/66356201",
+      "snippet": "Semantic Scholar profile for Viola Pooth, with 3 highly influential citations and 9 scientific research papers."
+    },
+    {
+      "title": "100 Samen Hornveilchen Viola Cornuta Violett samenfest Bio",
+      "url": "https://www.ebay.de/itm/298553560717?msockid=20f086ed37cf6c13015d913836e46dfc",
+      "snippet": "Zum Kauf an, inklusive kurzer Anleitung auf Bioqualitätsniveau. Hornveilchen sind bedingt winterhart. Diese Pflanzen blühen in Violett …"
+    },
+    {
+      "title": "Verona Pooth - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Verona_Pooth",
+      "snippet": "Verona Pooth (née Feldbusch; born 30 April 1968) is a German actress, television host, model and beauty pageant titleholder who …"
+    },
+    {
+      "title": "#verdeckterarbeitsmarkt #berufmitsinn #karriereplanung | Viola ...",
+      "url": "https://de.linkedin.com/posts/viola-fr%C3%BCchtenicht-sch%C3%B6ning_verdeckterarbeitsmarkt-berufmitsinn-karriereplanung-activity-7504880005282406401-pXmI",
+      "snippet": "Und ja: Wir sprechen auch darüber, wie du den verborgenen Arbeitsmarkt für dich eroberst. 🚀 Lust, mit richtig Drive in deine berufliche …"
+    }
+  ]
+}

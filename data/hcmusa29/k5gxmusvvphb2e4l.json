@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "hcmusa29/k5gXmUSVvpHb2e4L",
+  "slug": "hcmusa29-k5gxmusvvphb2e4l",
+  "author": "hcmusa29",
+  "url": "https://huggingface.co/hcmusa29/k5gXmUSVvpHb2e4L",
+  "created_at": "2026-09-12T16:29:37.000Z",
+  "updated_at": "2026-09-15T14:09:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 253930436058,
+  "storage_human": "253.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "激励自己持续高效工作的 8 个有效策略 | 2026 | Jibble™ | 吉贝儿",
+      "url": "https://www.jibble.io/zh-hans/%E6%96%87%E7%AB%A0/%E6%BF%80%E5%8A%B1%E8%87%AA%E5%B7%B1%E6%8C%81%E7%BB%AD%E9%AB%98%E6%95%88%E5%B7%A5%E4%BD%9C%E7%9A%84%E6%9C%89%E6%95%88%E7%AD%96%E7%95%A5",
+      "snippet": "Sep 8, 2026 · 在职场中保持动力不容易，重复任务和紧迫截止常让人分心。本文分享 8 个激励自己持续高效工作的有效策略，包括设 …"
+    },
+    {
+      "title": "员工激励实战：11个提升团队效能的关键策略 - CSDN博客",
+      "url": "https://blog.csdn.net/weixin_31860973/article/details/164902322",
+      "snippet": "5 days ago · 1. 项目概述：员工激励的实战 方法论 \"邦芒宝典\"这个标题让我想起从业十五年来接触过的数百家企业人力资源管理案例。 …"
+    },
+    {
+      "title": "如何鼓励正在找工作的人 - 爱企查",
+      "url": "https://aiqicha.baidu.com/details/ugknowledge?id=b6daf79657a50ce54fb0117348aeeeff",
+      "snippet": "Aug 31, 2026 · 鼓励正在找工作的人，核心在于提供情感支持、心态引导和实用建议，帮助他们缓解焦虑、保持信心并采取有效行动。"
+    },
+    {
+      "title": "如何有效激发员工的工作积极性，让他们为公司创造更大价值？",
+      "url": "https://www.zhihu.com/question/2040392422719541574",
+      "snippet": "如何有效激发员工的工作积极性，让他们为公司创造更大价值？ 我发现团队成员普遍缺乏主动性，每天都是被动接受任务，感觉士气 …"
+    },
+    {
+      "title": "重新找回工作熱情的10個有效方法，讓你再次充滿動力！",
+      "url": "https://maplefeather.com/article/rekindle-work-passion-tips",
+      "snippet": "Mar 25, 2026 · 感到對工作失去熱情嗎？本文提供10個實用的方法，幫助你重新找到工作的意義和動力，讓你再次熱愛每天的挑戰！ 與 …"
+    }
+  ]
+}

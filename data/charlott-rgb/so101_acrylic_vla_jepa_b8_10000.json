@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "charlott-rgb/so101_acrylic_vla_jepa_b8_10000",
+  "slug": "charlott-rgb-so101_acrylic_vla_jepa_b8_10000",
+  "author": "charlott-rgb",
+  "url": "https://huggingface.co/charlott-rgb/so101_acrylic_vla_jepa_b8_10000",
+  "created_at": "2026-09-15T15:34:29.000Z",
+  "updated_at": "2026-09-15T15:35:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "vla_jepa",
+    "robotics",
+    "dataset:charlott-rgb/so101_acrylic_dense72",
+    "arxiv:2602.10098",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2766134150,
+  "parameters_human": "2.77B",
+  "storage_bytes": 6157760464,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Usa la Biblioteca familiar de Google Play",
+      "url": "https://support.google.com/googleplay/answer/7007852?hl=es-419",
+      "snippet": "Con la Biblioteca familiar de Google Play, puedes compartir apps, juegos, películas, programas de TV, libros electrónicos y …"
+    },
+    {
+      "title": "Purchase verification for Google Play",
+      "url": "https://support.google.com/googleplay/answer/1626831?hl=en&co=GENIE.CountryCode%3DIN",
+      "snippet": "Depending on your region, when making purchases through Google Play, regardless of your device, you may be prompted to verify …"
+    },
+    {
+      "title": "البحث عن تطبيق \"متجر Google Play\" - مساعدة Google Play",
+      "url": "https://support.google.com/googleplay/answer/190860?hl=ar",
+      "snippet": "إذا لم تكتمل التنزيلات من \"متجر Play\"، جرِّب الخطوات الواردة في لا يمكنني التنزيل من \"متجر Google Play\". إذا واجهتك مشكلة في أحد التطبيقات على جهازك، يمكنك التواصل مع مطوِّر التطبيقات …"
+    },
+    {
+      "title": "Google Play 學習中心",
+      "url": "https://support.google.com/googleplay/answer/15741167?hl=zh-Hant",
+      "snippet": "Google Play 學習中心 ... 歡迎來到學習中心！ 這裡提供各種必備知識，幫助你在 Google Play 商店盡情挖寶。 你可以找到數百萬款優 …"
+    },
+    {
+      "title": "Use points in the Google Play Store",
+      "url": "https://support.google.com/googleplay/answer/9079840?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "Use points in the Google Play Store You can use points to get: In-app or in-game items in specific participating games and apps …"
+    }
+  ]
+}

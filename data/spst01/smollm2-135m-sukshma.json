@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "spst01/SmolLM2-135M-Sukshma",
+  "slug": "spst01-smollm2-135m-sukshma",
+  "author": "spst01",
+  "url": "https://huggingface.co/spst01/SmolLM2-135M-Sukshma",
+  "created_at": "2026-09-15T12:15:55.000Z",
+  "updated_at": "2026-09-15T12:16:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "llama",
+    "sukshma",
+    "edge-ai",
+    "quantization",
+    "sovereign-byte-technology",
+    "mobile",
+    "wasm",
+    "raspberry-pi",
+    "apple-silicon",
+    "text-generation",
+    "conversational",
+    "base_model:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 66497020,
+  "storage_human": "66 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Trade Crypto, Predict Outcomes & Earn — All in One Platform | Gemini",
+      "url": "https://www.gemini.com/",
+      "snippet": "The crypto super app for trading, predicting, and earning. Buy 90+ cryptos, trade prediction markets, and earn with staking and the …"
+    },
+    {
+      "title": "Meet the Gemini Credit Card: Zcash Edition",
+      "url": "https://www.gemini.com/credit-card/zcash",
+      "snippet": "Earn up to 4% Zcash back on everyday purchases with no annual fee. Get rewards in ZEC with the Gemini Credit Card."
+    },
+    {
+      "title": "How do I buy and sell on the Gemini web interface and app?",
+      "url": "https://support.gemini.com/hc/en-us/articles/360039532472-How-do-I-buy-and-sell-on-the-Gemini-web-interface-and-app",
+      "snippet": "How to Buy crypto on the Web interface Select a crypto from the Trade page. Select “Buy” and choose whether you would like to …"
+    },
+    {
+      "title": "How do I withdraw SGD via FAST? – Gemini",
+      "url": "https://support.gemini.com/hc/en-us/articles/4403298897435-How-do-I-withdraw-SGD-via-FAST",
+      "snippet": "In April 2025, Gemini transitioned its SGD banking partner from Xfers to DBS Bank. As part of this transition, bank accounts …"
+    },
+    {
+      "title": "Market Data - Gemini Developer Platform",
+      "url": "https://developer.gemini.com/trading/rest-api/market-data",
+      "snippet": "Apr 7, 2026 · Build across Spot, Margin, Perpetuals, and Prediction Markets with Gemini APIs, guides, and developer tools."
+    }
+  ]
+}

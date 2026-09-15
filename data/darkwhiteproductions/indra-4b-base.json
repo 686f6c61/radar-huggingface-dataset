@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "DarkWhiteProductions/Indra-4B-Base",
+  "slug": "darkwhiteproductions-indra-4b-base",
+  "author": "DarkWhiteProductions",
+  "url": "https://huggingface.co/DarkWhiteProductions/Indra-4B-Base",
+  "created_at": "2026-02-21T13:21:09.000Z",
+  "updated_at": "2026-09-15T19:03:37.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "indra",
+    "text-generation",
+    "indra1",
+    "causal-lm",
+    "language-model",
+    "reasoning",
+    "architecture",
+    "qwen",
+    "custom-code",
+    "research",
+    "experimental",
+    "conversational",
+    "custom_code",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 4022470400,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056417674,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Programme TV de ce soir avec Télé-Loisirs",
+      "url": "https://www.programme-tv.net/programme/toutes-les-chaines/",
+      "snippet": "Que regarder à la télé ce soir ? Consultez la grille des programmes et ne manquez aucun de vos programmes préférés."
+    },
+    {
+      "title": "Programme TV par Télé-Loisirs, TNT, box télé et satellite",
+      "url": "https://www.programme-tv.net/",
+      "snippet": "Consultez votre programme TV de ce soir et retrouvez l'actualité des émissions télé et séries Netflix, Amazon Prime Video, Disney …"
+    },
+    {
+      "title": "Programme TV TNT de ce soir avec Télé-Loisirs",
+      "url": "https://www.programme-tv.net/programme/programme-tnt.html",
+      "snippet": "Que regarder à la télé ce soir ? Consultez la grille des programmes TNT et ne manquez aucun de vos programmes préférés."
+    },
+    {
+      "title": "Programme TV TNT de 14h à 16h avec Télé-Loisirs",
+      "url": "https://www.programme-tv.net/programme/programme-tnt/10.html",
+      "snippet": "Que regarder à la télé entre 14h et 16h ? Consultez la grille des programmes TNT et ne manquez aucun de vos programmes préférés."
+    },
+    {
+      "title": "Programme TV en ce moment avec Télé-Loisirs",
+      "url": "https://www.programme-tv.net/programme/en-ce-moment.html",
+      "snippet": "Que regarder à la télé en ce moment ? Consultez la grille des programmes du moment."
+    }
+  ]
+}

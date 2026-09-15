@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "guo925658/looped-fast-mctd",
+  "slug": "guo925658-looped-fast-mctd",
+  "author": "guo925658",
+  "url": "https://huggingface.co/guo925658/looped-fast-mctd",
+  "created_at": "2026-09-15T14:12:51.000Z",
+  "updated_at": "2026-09-15T14:44:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "pytorch",
+    "reinforcement-learning",
+    "planning",
+    "diffusion",
+    "ogbench",
+    "en",
+    "zh",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1261049381,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pilates.fr - Reformers et accessoires Pilates",
+      "url": "https://www.pilates.fr/",
+      "snippet": "Notre gamme d'équipements et appareils Pilates pour particuliers et professionels : Rollers, Reformers, Circle, Ballons, Tapis, Cadillac"
+    },
+    {
+      "title": "Pilates&Me France | Boutique de matériel Pilates",
+      "url": "https://pilatesme-france.com/",
+      "snippet": "Que vous soyez un studio de Pilates, un centre de bien-être ou un professionnel indépendant, vous trouverez chez nous une gamme …"
+    },
+    {
+      "title": "Accessoires Pilates, machine, matériel, équipement l Decathlon",
+      "url": "https://www.decathlon.fr/tous-les-sports/pilates-gym-douce/accessoires-pilates?msockid=3319f3fedfee6a3916cae42bde716b0b",
+      "snippet": "Retrouvez tout l’équipement pour pratiquer le Pilates : machines, matériel et accessoires pour travailler les postures, l’équilibre, le …"
+    },
+    {
+      "title": "Matériel, accessoires pour la pratique de la méthode Pilates",
+      "url": "https://www.natureetdecouvertes.com/bien-etre/yoga-gym-douce/materiel-pilates",
+      "snippet": "Le pilate est idéal pour renforcer votre corps, améliorer votre souplesse et favoriser votre bien-être tout en douceur. Que vous …"
+    },
+    {
+      "title": "Équipement de Pilates et musculation pour la maison",
+      "url": "https://store.betterme.world/fr/collections/pilates-equipment",
+      "snippet": "Reformers, anneaux, tapis et accessoires pour tous les niveaux. Créez votre studio de Pilates à domicile avec du matériel de pro."
+    }
+  ]
+}

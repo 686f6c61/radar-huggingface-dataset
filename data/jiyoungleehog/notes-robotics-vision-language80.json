@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jiyoungleehog/notes-robotics-vision-language80",
+  "slug": "jiyoungleehog-notes-robotics-vision-language80",
+  "author": "jiyoungleehog",
+  "url": "https://huggingface.co/jiyoungleehog/notes-robotics-vision-language80",
+  "created_at": "2026-09-15T16:00:19.000Z",
+  "updated_at": "2026-09-15T16:00:24.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "robotics-vision-language",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "微信与 WhatsApp 、Messenger 等国外同类通讯 App 比有什么优点与 …",
+      "url": "https://www.zhihu.com/question/31875071",
+      "snippet": "在我看来，微信是一款社交软件，而whatsApp,messenger是通讯软件。 所以不能跟whatsApp,messenger比，因为他们都太纯粹了。 …"
+    },
+    {
+      "title": "为什么whatsapp更新那么频繁，但是看不出来哪里有更新?",
+      "url": "https://www.zhihu.com/question/21843627",
+      "snippet": "3.如何安全使用WhatsApp群组 更新时间：2024..9.23 这个是一个关于WhatsApp群组的功能。 以前WhatsApp邀请的话一般是一个链 …"
+    },
+    {
+      "title": "怎样在whatsapp中加好友-百度经验",
+      "url": "https://jingyan.baidu.com/article/c33e3f483b65d5ea15cbb516.html",
+      "snippet": "May 6, 2019 · 怎样在whatsapp中加好友,使用WhatA的小伙伴们，知不知道如何在该软件中添加好友呢，接下来跟小编一起去看看吧。"
+    },
+    {
+      "title": "小米手机通话录音保存在哪里？-百度经验",
+      "url": "https://jingyan.baidu.com/article/e8cdb32bf94d2c37052bad05.html",
+      "snippet": "Sep 23, 2018 · 小米手机通话录音保存在哪里？,在一些重要的电话里面，我们会进行通话中的录音的。但是录音之后的文件却是找不到 …"
+    },
+    {
+      "title": "现在怎么才能登录WhatsApp呢？ - 知乎",
+      "url": "https://www.zhihu.com/question/68113079",
+      "snippet": "外贸圈的哀嚎声此起彼伏， WhatsApp封号潮正以“地毯式”速度席卷而来。从深圳3C工厂到义乌小商品商，从中小微企业到头部外贸集 …"
+    }
+  ]
+}

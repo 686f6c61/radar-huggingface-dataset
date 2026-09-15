@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nikitastheo/v5-mixed-25k-lower-ell-ell-sequential_interleaved",
+  "slug": "nikitastheo-v5-mixed-25k-lower-ell-ell-sequential_interleaved",
+  "author": "nikitastheo",
+  "url": "https://huggingface.co/nikitastheo/v5-mixed-25k-lower-ell-ell-sequential_interleaved",
+  "created_at": "2026-09-15T13:17:16.000Z",
+  "updated_at": "2026-09-15T14:09:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "causal-lm",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 104716800,
+  "parameters_human": "104.7M",
+  "storage_bytes": 837764352,
+  "storage_human": "838 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Porn Dude - Best Porn Sites & Free Porn Tubes List of 2026!",
+      "url": "https://theporndude.com/",
+      "snippet": "Porn Dude lists the world's best porn sites of 2026. Watch free porn videos, sex movies and premium HD porn on the most popular …"
+    },
+    {
+      "title": "Porn Dude - Les Meilleurs Sites Pornographiques Français Gratuits",
+      "url": "https://theporndude.com/fr",
+      "snippet": "Porn Dude liste les meilleurs sites porno. Tous les sites gratuits et payants classés par qualité. Trouvez des vidéos porno HD de la …"
+    },
+    {
+      "title": "Porn Dude - Lista dos Melhores Sites Porno e de Sexo Grátis!",
+      "url": "https://theporndude.com/pt",
+      "snippet": "O PornDude lista os melhores sites de pornografia. Todos os sites pornográficos gratuitos e premium, classificados por qualidade. …"
+    },
+    {
+      "title": "Porn Dude - De Beste Porno Sites & Gratis Nederlandse Porno",
+      "url": "https://theporndude.com/nl",
+      "snippet": "Porn Dude verzamelt de beste porno sites. Alle gratis en premium porno sites zijn gesorteerd op kwaliteit. Vindt HD seks video’s op …"
+    },
+    {
+      "title": "Porn Aggregators - Free Porn Videos & Hot Sex Movies - The Porn Dude",
+      "url": "https://theporndude.com/porn-aggregators",
+      "snippet": "Find the best porn aggregators that index the most popular free porn videos by niche. Instantly search multiple porn tubes and …"
+    }
+  ]
+}

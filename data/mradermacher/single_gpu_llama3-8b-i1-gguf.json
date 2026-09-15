@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Single_GPU_Llama3-8B-i1-GGUF",
+  "slug": "mradermacher-single_gpu_llama3-8b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Single_GPU_Llama3-8B-i1-GGUF",
+  "created_at": "2026-09-15T13:13:17.000Z",
+  "updated_at": "2026-09-15T13:48:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:tayaee/Single_GPU_Llama3-8B",
+    "base_model:quantized:tayaee/Single_GPU_Llama3-8B",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 93806122912,
+  "storage_human": "93.8 GB",
+  "base_model": "tayaee/Single_GPU_Llama3-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Login - Volkswagen Bank",
+      "url": "https://banking.volkswagenbank.de/",
+      "snippet": "Einmal einloggen. Alle Konten sehen. Kundennummer vergessen? Kennwort vergessen? Betrugsverdacht? Neu hier? Wir beraten …"
+    },
+    {
+      "title": "Login - Volkswagen Bank",
+      "url": "https://banking.volkswagenbank.de/?source=spyse.com",
+      "snippet": "Einmal einloggen. Alle Konten sehen. Kundennummer vergessen? Kennwort vergessen? Betrugsverdacht? Neu hier? Wir beraten …"
+    },
+    {
+      "title": "Volkswagen Bank | Startseite",
+      "url": "https://www.volkswagenbank.de/",
+      "snippet": "Ob Kontoauszüge, Überweisungen oder Daueraufträge: Mit unserem Online-Banking können Sie alle gängigen Bankgeschäfte …"
+    },
+    {
+      "title": "Das Kundenportal: immer erreichbar & aktuell",
+      "url": "https://www.vwfs.de/kundenportal.html",
+      "snippet": "Das bedeutet für Sie: Nach Eingabe Ihrer Zugangsdaten erhalten Sie einen einmaligen Sicherheitscode an die zum Login genutzte E …"
+    },
+    {
+      "title": "Wissenswertes zum Online-Banking - Volkswagen Financial Services",
+      "url": "https://www.volkswagenbank.de/wissen-anleitungen/online-banking.html",
+      "snippet": "Mit unserem Online-Banking können Sie alle gängigen Bankgeschäfte bequem online abwickeln. Doch was tun, wenn Sie Ihre …"
+    }
+  ]
+}

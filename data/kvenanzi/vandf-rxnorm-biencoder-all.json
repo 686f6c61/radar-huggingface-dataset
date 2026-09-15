@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "kvenanzi/vandf-rxnorm-biencoder-all",
+  "slug": "kvenanzi-vandf-rxnorm-biencoder-all",
+  "author": "kvenanzi",
+  "url": "https://huggingface.co/kvenanzi/vandf-rxnorm-biencoder-all",
+  "created_at": "2026-09-15T18:05:07.000Z",
+  "updated_at": "2026-09-15T18:05:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "rxnorm",
+    "vandf",
+    "drug-normalization",
+    "medication",
+    "entity-linking",
+    "sentence-similarity",
+    "en",
+    "dataset:kvenanzi/vandf-rxnorm-pairs",
+    "base_model:cambridgeltl/SapBERT-from-PubMedBERT-fulltext",
+    "base_model:finetune:cambridgeltl/SapBERT-from-PubMedBERT-fulltext",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109482240,
+  "parameters_human": "109.5M",
+  "storage_bytes": 439002661,
+  "storage_human": "439 MB",
+  "base_model": "cambridgeltl/SapBERT-from-PubMedBERT-fulltext",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IServ",
+      "url": "https://mail.iserv.eu/iserv/",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    }
+  ]
+}

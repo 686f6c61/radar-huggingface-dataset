@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "vfpetrov11/cs229-classification",
+  "slug": "vfpetrov11-cs229-classification",
+  "author": "vfpetrov11",
+  "url": "https://huggingface.co/vfpetrov11/cs229-classification",
+  "created_at": "2026-09-15T17:07:22.000Z",
+  "updated_at": "2026-09-15T17:07:27.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "uBlock Origin - Microsoft Edge Add-ons",
+      "url": "https://microsoftedge.microsoft.com/addons/detail/ublock-origin/odfafepnkmbhccpbejgmiehpchacaeak",
+      "snippet": "IMPORTANT: uBlock Origin is completely unrelated to the site \"ublock.org\". uBlock Origin is not an \"ad blocker\", it's a wide-spectrum …"
+    },
+    {
+      "title": "uBlock Origin - Free, open-source ad blocker extension",
+      "url": "https://ublockorigin.com/",
+      "snippet": "uBlock Origin is a free, open-source ad blocker extension and content blocker. Block ads on YouTube, Twitch, and across the web …"
+    },
+    {
+      "title": "uBlock Origin - Kostenlose Open-Source-Werbeblocker-Erweiterung",
+      "url": "https://ublockorigin.com/de",
+      "snippet": "uBlock Origin ist eine kostenlose Open-Source-Werbeblocker-Erweiterung und ein Content-Blocker. Blockieren Sie Werbung auf …"
+    },
+    {
+      "title": "uBlock Origin - Microsoft Edge Add-ons",
+      "url": "https://microsoftedge.microsoft.com/addons/detail/ublock-origin/odfafepnkmbhccpbejgmiehpchacaeak?hl=de-DE",
+      "snippet": "Ein effizienter Blocker: Geringer Speicherbedarf und niedrige CPU-Belastung - und dennoch werden Tausende an Filtern mehr …"
+    },
+    {
+      "title": "uBlock Origin – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/UBlock_Origin",
+      "snippet": "Es ist eine Weiterentwicklung des inzwischen eingestellten uBlock (ehemals µBlock). uBlock Origin steht für verschiedene Browser …"
+    }
+  ]
+}

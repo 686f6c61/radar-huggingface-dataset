@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "shy0423/GMM",
+  "slug": "shy0423-gmm",
+  "author": "shy0423",
+  "url": "https://huggingface.co/shy0423/GMM",
+  "created_at": "2026-09-15T18:09:32.000Z",
+  "updated_at": "2026-09-15T18:15:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gmm",
+    "image-generation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6713691576,
+  "storage_human": "6.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Official Anna's Archive links : r/Annas_Archive - Reddit",
+      "url": "https://www.reddit.com/r/Annas_Archive/comments/14f0b9a/official_annas_archive_links/",
+      "snippet": "Jun 21, 2023 · https://en.wikipedia.org/wiki/Anna's_Archive If you want to help out, you can translate this article to more languages, …"
+    },
+    {
+      "title": "Annas_Archive - Reddit",
+      "url": "https://www.reddit.com/r/Annas_Archive/about/",
+      "snippet": "After a few threads with dialogue about piracy, it's been enough. Anna's Archive is operating fully legally in its jurisdiction. If you …"
+    },
+    {
+      "title": "安娜的档案为什么用不了了？ - 知乎",
+      "url": "https://www.zhihu.com/question/2017642305151066981",
+      "snippet": "安娜的档案（annas-archive）拥有诸多域名，包括 .li、.pm、.in，以及最近失去的 .org 与 .se。 目前 .org 的状态是由注册 …"
+    },
+    {
+      "title": "为什么目前没有任何中国人运营世界上最大影子图书馆Anna's Archive …",
+      "url": "https://www.zhihu.com/question/2020649727046240182",
+      "snippet": "Mar 26, 2026 · 为什么目前没有任何中国人运营世界上最大影子图书馆Anna's Archive在中国的镜像网站？ ---众所周知，作为全球最大 …"
+    },
+    {
+      "title": "安娜的档案 (Anna’s Archive) 电子书搜索站 - 闲聊吹水 - FreeMdict Forum",
+      "url": "https://forum.freemdict.com/t/topic/17099",
+      "snippet": "Nov 10, 2022 · Anna’s Archive is a project that aims to catalog all the books in existence, by aggregating data from various sources. …"
+    }
+  ]
+}

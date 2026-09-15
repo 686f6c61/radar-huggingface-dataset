@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "anilshah84/neural-architecture-search-study",
+  "slug": "anilshah84-neural-architecture-search-study",
+  "author": "anilshah84",
+  "url": "https://huggingface.co/anilshah84/neural-architecture-search-study",
+  "created_at": "2026-09-15T14:57:14.000Z",
+  "updated_at": "2026-09-15T14:57:20.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "neural-architecture-search",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supreme Values - MM2 Value List",
+      "url": "https://www.supremevalues.com/",
+      "snippet": "2 days ago · Supreme Values is the #1 most used and trusted Murder Mystery 2 value list and wiki, updated regularly by expert …"
+    },
+    {
+      "title": "MM2 Godly Values - Supreme Values",
+      "url": "https://supremevalues.com/mm2/godlies",
+      "snippet": "2 days ago · View MM2 Godly values on Supreme Values, the #1 trusted Murder Mystery 2 trading value list."
+    },
+    {
+      "title": "MM2Values.com",
+      "url": "https://mm2values.com/?s=mm2+values+supreme",
+      "snippet": "Murder Mystery 2's Official Value List. Made without bias, by the top clans in MM2, for you all. Been going strong since 2017! Used by …"
+    },
+    {
+      "title": "Roblox Murder Mystery 2 (MM2) Values - Nookazon",
+      "url": "https://traderie.com/mm2/values",
+      "snippet": "Traderie helps Roblox Murder Mystery 2 players answer what sets, ancient, and unique are worth by combining value-list data with …"
+    },
+    {
+      "title": "MM2 Value List & Supreme Values (September 2026) — All 1079 Items",
+      "url": "https://mm2values.app/values",
+      "snippet": "Rather than argue about which consensus is right, this page carries both of the ones traders actually use, MM2 Values and Supreme …"
+    }
+  ]
+}

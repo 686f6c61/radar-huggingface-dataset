@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "jmarceno/Qwen3.8-27B-DFlash2-GGUF",
+  "slug": "jmarceno-qwen3-8-27b-dflash2-gguf",
+  "author": "jmarceno",
+  "url": "https://huggingface.co/jmarceno/Qwen3.8-27B-DFlash2-GGUF",
+  "created_at": "2026-09-15T13:20:54.000Z",
+  "updated_at": "2026-09-15T13:21:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "speculative-decoding",
+    "draft-model",
+    "dflash2",
+    "block-diffusion",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1924404480,
+  "parameters_human": "1.92B",
+  "storage_bytes": 7059685312,
+  "storage_human": "7.1 GB",
+  "base_model": "Qwen/Qwen3.8-27B, incoai/Qwen3.8-27B-DFlash2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Izi Ferrailleur à Saint-savin (33) - Débarras gratuit de ferrailles et ...",
+      "url": "https://www.izi-ferrailleur.fr/debarras-ferrailles-epave-metaux-saint-savin-33920",
+      "snippet": "Notre service de débarras de ferrailles à Saint-savin vous envoie un équipage de ferrailleurs experts qui peuvent démonter ou …"
+    },
+    {
+      "title": "Ferrailleur - Débarras gratuit de ferrailles, métaux et épaves à Saint ...",
+      "url": "https://www.veri-ferrailleur.fr/debarras-ferrailles-epave-metaux-saint-savin-33920",
+      "snippet": "Notre service de débarras de ferrailles et de métaux à Saint-savin est très réactif. Cela vous permet de bénéficier en quelques heures …"
+    },
+    {
+      "title": "férailleurs ouverts maintenant à Saint-Savin (33920)",
+      "url": "https://www.telephone.city/guide/commerce/recyclage-metaux/saint-savin-12793/?filtres&open_now=1",
+      "snippet": "Trouvez des férailleurs ouverts maintenant près de Saint-Savin (33920) : horaires du jour, téléphone, localisation et avis clients."
+    },
+    {
+      "title": "Recup' Ferraille 33 - à Saint-savin (33920) - Le Site De",
+      "url": "https://www.le-site-de.com/recup-ferraille-33-saint-savin_110235.html",
+      "snippet": "Recup' Ferraille 33, à Saint-savin (33920). Coordonnées, horaires d'ouverture, plan d'accès, avis et devis gratuit."
+    },
+    {
+      "title": "Top 10 des férailleurs près de Saint-Savin (33920) - Telephone City",
+      "url": "https://www.telephone.city/guide/commerce/recyclage-metaux/saint-savin-12793/",
+      "snippet": "Quels sont les horaires des férailleurs à Saint-Savin ? Vous trouverez les férailleurs situés à Saint-Savin et ses alentours ayant été …"
+    }
+  ]
+}

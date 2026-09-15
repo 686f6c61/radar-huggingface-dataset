@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "edp1096/Huihui-Ornith-1.5-35B-A3B-NVFP4",
+  "slug": "edp1096-huihui-ornith-1-5-35b-a3b-nvfp4",
+  "author": "edp1096",
+  "url": "https://huggingface.co/edp1096/Huihui-Ornith-1.5-35B-A3B-NVFP4",
+  "created_at": "2026-09-15T17:42:18.000Z",
+  "updated_at": "2026-09-15T17:44:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "nvfp4",
+    "fp8",
+    "abliterated",
+    "huihui",
+    "conversational",
+    "base_model:huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19528501104,
+  "parameters_human": "19.53B",
+  "storage_bytes": 23433227682,
+  "storage_human": "23.4 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B-NVFP4, huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CHIP Forum",
+      "url": "https://forum.chip.de/discussion/925885/dpreview-com-wird-von-amazon-geschluckt",
+      "snippet": ""
+    },
+    {
+      "title": "CHIP Forum",
+      "url": "https://forum.chip.de/webcams/",
+      "snippet": ""
+    },
+    {
+      "title": "CHIP Forum",
+      "url": "https://forum.chip.de/home.html",
+      "snippet": ""
+    },
+    {
+      "title": "CHIP Forum",
+      "url": "https://forum.chip.de/profid=",
+      "snippet": ""
+    },
+    {
+      "title": "CHIP Forum",
+      "url": "https://forum.chip.de/profile/%23jdm%23",
+      "snippet": ""
+    }
+  ]
+}

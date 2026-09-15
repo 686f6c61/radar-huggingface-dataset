@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "QiLong26/Qwen3-VL-32B-stage2-SFT-adapter",
+  "slug": "qilong26-qwen3-vl-32b-stage2-sft-adapter",
+  "author": "QiLong26",
+  "url": "https://huggingface.co/QiLong26/Qwen3-VL-32B-stage2-SFT-adapter",
+  "created_at": "2026-09-15T13:13:04.000Z",
+  "updated_at": "2026-09-15T13:42:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "qwen3-vl",
+    "video-anomaly-detection",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3-VL-32B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-32B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1085299298,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen3-VL-32B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Co-Branded Credit Cards in India 2026 - Card Insider",
+      "url": "https://cardinsider.com/best-co-branded-credit-cards-in-india/",
+      "snippet": "Jun 2, 2026 · Check out the list of top co-branded credit cards in India. With these cards, you can avail of offers and discounts on …"
+    },
+    {
+      "title": "Best Credit Cards by Merchant & Category — India 2026 | CardTrail",
+      "url": "https://cardtrail.in/best/",
+      "snippet": "87 pages comparing the best credit cards for every merchant and spending category in India. Find which card to use for Swiggy, …"
+    },
+    {
+      "title": "Best Co-branded Credit Cards in India - Paisabazaar.com",
+      "url": "https://www.paisabazaar.com/credit-card/best-co-branded-credit-cards-in-india/",
+      "snippet": "Feb 28, 2025 · Find the best co-branded credit cards in India launched in association with major travel, lifestyle and fuel brands. …"
+    },
+    {
+      "title": "Co-Branded Credit Cards India 2026 — 11 Partner Hubs | InvestingPro …",
+      "url": "https://www.investingpro.in/credit-cards/co-branded",
+      "snippet": "Best credit cards for Amazon, Flipkart, Swiggy, Myntra, MakeMyTrip, IRCTC, IndiGo, Tata Neu, plus honest verdicts on discontinued …"
+    },
+    {
+      "title": "Best Co-Branded Credit Cards in India 2026 - Key Features - Wishfin",
+      "url": "https://www.wishfin.com/best-credit-cards/best-co-branded-credit-cards-in-india-1802/",
+      "snippet": "Nov 26, 2024 · Have a look at the best co-branded credit cards in India and check their offers and benefits on the respective brand to …"
+    }
+  ]
+}

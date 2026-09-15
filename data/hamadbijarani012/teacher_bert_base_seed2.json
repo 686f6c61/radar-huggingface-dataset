@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "hamadbijarani012/teacher_bert_base_seed2",
+  "slug": "hamadbijarani012-teacher_bert_base_seed2",
+  "author": "hamadbijarani012",
+  "url": "https://huggingface.co/hamadbijarani012/teacher_bert_base_seed2",
+  "created_at": "2026-09-15T14:42:51.000Z",
+  "updated_at": "2026-09-15T14:44:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437958648,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JetPunk - World's Best Quizzes - Reddit",
+      "url": "https://www.reddit.com/r/JetPunk/",
+      "snippet": "A subreddit to discuss all things JetPunk related! Feel free to post interesting JetPunk quizzes, ask for help or anything else remotely …"
+    },
+    {
+      "title": "basics/stage2 - JetPunk - Reddit",
+      "url": "https://www.reddit.com/r/JetPunk/wiki/basics/stage2/",
+      "snippet": "Dec 4, 2013 · r/JetPunk: A subreddit to discuss all things JetPunk related! Feel free to post interesting JetPunk quizzes, ask for help …"
+    },
+    {
+      "title": "A crazy \"First-Level Subdivisions of the World\" quiz on JetPunk",
+      "url": "https://www.reddit.com/r/geography/comments/ln2jzc/a_crazy_firstlevel_subdivisions_of_the_world_quiz/",
+      "snippet": "Feb 19, 2021 · JetPunk allows a maximum of 1 hour per quiz, but if you'd like to bypass that limit there's the untimed function, just no …"
+    },
+    {
+      "title": "How do you make map quizzes? : r/JetPunk - Reddit",
+      "url": "https://www.reddit.com/r/JetPunk/comments/4azld3/how_do_you_make_map_quizzes/",
+      "snippet": "Mar 18, 2016 · How do you make map quizzes? I'd be interested in making some fill-in-the-island quizzes for Canadian islands …"
+    },
+    {
+      "title": "How do you add more than one answer column? : r/JetPunk - Reddit",
+      "url": "https://www.reddit.com/r/JetPunk/comments/chtwdw/how_do_you_add_more_than_one_answer_column/",
+      "snippet": "Jul 25, 2019 · JetPunk - World's Best Quizzes A subreddit to discuss all things JetPunk related! Feel free to post interesting JetPunk …"
+    }
+  ]
+}

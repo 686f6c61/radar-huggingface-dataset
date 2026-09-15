@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "cesarrf/airline-sentiment-demo",
+  "slug": "cesarrf-airline-sentiment-demo",
+  "author": "cesarrf",
+  "url": "https://huggingface.co/cesarrf/airline-sentiment-demo",
+  "created_at": "2026-09-15T19:06:24.000Z",
+  "updated_at": "2026-09-15T19:06:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Realtek",
+      "url": "https://www.realtek.com/",
+      "snippet": "Realtek’s next-generation Wi-Fi/Bluetooth combo solution is the best wireless platform to enable future AI PC products. Featuring a..."
+    },
+    {
+      "title": "Realtek PCIe FE / GbE / 2.5GbE / 5G / 10G Family Controller Software",
+      "url": "https://www.realtek.com/Download/List?cate_id=584",
+      "snippet": "Network Interface Controllers > 10G Gigabit Ethernet > PCI Express RTL8127 / RTL8127AT / RTL8127ATF Network Interface …"
+    },
+    {
+      "title": "Realtek - Recruitment",
+      "url": "https://recruit.realtek.com/",
+      "snippet": "Welcome to Join Realtek Family Talent is the important capital of Realtek. Here"
+    },
+    {
+      "title": "Realtek - Recruitment",
+      "url": "https://recruit.realtek.com/Home/Trainning?lang=en",
+      "snippet": "In order to sustain competitiveness and develop new talent, the Company founded the Realtek Corporate University, which has six …"
+    },
+    {
+      "title": "Realtek Online",
+      "url": "https://online.realtek.com/",
+      "snippet": "©2026 Realtek Semiconductor Corp. All rights reserved. * Realtek employee should login with email account and password."
+    }
+  ]
+}

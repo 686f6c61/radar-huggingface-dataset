@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Wenakamura/mixer-finetuned",
+  "slug": "wenakamura-mixer-finetuned",
+  "author": "Wenakamura",
+  "url": "https://huggingface.co/Wenakamura/mixer-finetuned",
+  "created_at": "2026-09-15T14:12:18.000Z",
+  "updated_at": "2026-09-15T14:12:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Modèle de notes de version pour les mises à jour logicielles et ...",
+      "url": "https://asana.com/fr/templates/release-note",
+      "snippet": "Tenez vos équipes et utilisateurs finaux informés des nouvelles fonctionnalités, des corrections de bugs, des problèmes connus et …"
+    },
+    {
+      "title": "6 modèles de notes de mise à jour de logiciels pour ... - ClickUp",
+      "url": "https://clickup.com/fr-FR/blog/41982/modeles-de-notes-de-mise-",
+      "snippet": "Apr 21, 2025 · Nous explorerons cinq modèles de notes de mise à jour, des conseils pratiques pour en tirer le meilleur parti, ainsi …"
+    },
+    {
+      "title": "Modèles de Notes de Version PDF Gratuits | PlatoForms",
+      "url": "https://templates.platoforms.com/fr/pdf/tag/release-notes-fr",
+      "snippet": "Découvrez des modèles PDF gratuits et remplissables de notes de version sur PlatoForms. Documentez facilement les mises à jour …"
+    },
+    {
+      "title": "Modèle de release note : guide pour product managers | Claap",
+      "url": "https://www.claap.io/fr/blog/modele-release-note",
+      "snippet": "Découvrez les secrets d'une communication efficace sur les nouvelles fonctionnalités produit grâce à notre guide : des modèles …"
+    },
+    {
+      "title": "Notes de version | Modèles Saga",
+      "url": "https://saga.so/fr/templates/release-notes",
+      "snippet": "Pour vous aider à rédiger des notes de version efficaces, nous offrons un modèle gratuit personnalisable pour correspondre aux …"
+    }
+  ]
+}

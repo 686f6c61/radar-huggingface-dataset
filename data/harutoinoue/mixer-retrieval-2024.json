@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "harutoinoue/mixer-retrieval-2024",
+  "slug": "harutoinoue-mixer-retrieval-2024",
+  "author": "harutoinoue",
+  "url": "https://huggingface.co/harutoinoue/mixer-retrieval-2024",
+  "created_at": "2026-09-15T15:24:47.000Z",
+  "updated_at": "2026-09-15T15:24:53.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‫المحاسب - فيلم: أين يمكن مشاهدته بالبث أونلاين",
+      "url": "https://www.justwatch.com/eg/movie/the-accountant",
+      "snippet": "‫هل يُعرض المحاسب على Netflix أو Prime Video أو iflix إلخ؟ اعرفوا أين يمكنكم مشاهدة الأفلام أونلاين الآن!"
+    },
+    {
+      "title": "شاهد The Accountant - فيلم | MBC شاهد",
+      "url": "https://shahid.mbc.net/ar/movies/The-Accountant/movie-2242337527?msockid=2709c261e173651e15ecd5b4e0dd64c3",
+      "snippet": "يوازن الحسابات نهارا ويسجل القتلى ليلا. يختبئ كريستيان وولف، وهو خبير رياضيات، خلف مكتب محاسب قانوني ليراجع أرقام الكارتيلات والقتلة... حتى يضيفه خطأ واحد إلى المعادلة. النجوم: بن افليك, انا …"
+    },
+    {
+      "title": "برايم فيديو: المحاسب - Prime Video",
+      "url": "https://www.primevideo.com/-/ar/detail/0SC6PCRO9HPVXE2UV4WBLUPKDL/",
+      "snippet": "كريستيان وولف محاسب موهوب يعمل بشكل مستقل لصالح بعض المنظمات الإجرامية الخطيرة. ومع اقتراب وزارة الخزانة منه، يتولى مهمة لعميل شرعي، شركة روبوتات بها تلاعب مالي. ومع كشفه للحقيقة، …"
+    },
+    {
+      "title": "Watch The Accountant - Movie | MBC Shahid",
+      "url": "https://shahid.mbc.net/en/movies/The-Accountant/movie-2242337527?msockid=2709c261e173651e15ecd5b4e0dd64c3",
+      "snippet": "Watch The Accountant and more movies on MBC Shahid."
+    },
+    {
+      "title": "شاهد ذا أكاونتانت | المتجر | STARZPLAY",
+      "url": "https://starzplay.com/ar/movies/the-accountant/433689640301",
+      "snippet": "هل تريد مشاهدة أو استئجار أو شراء ذا أكاونتانت؟ احصل على هذا الفيلم على STARZPLAY وبثه مقابل أفضل الأسعار."
+    }
+  ]
+}

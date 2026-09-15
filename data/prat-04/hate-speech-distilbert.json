@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Prat-04/hate-speech-distilbert",
+  "slug": "prat-04-hate-speech-distilbert",
+  "author": "Prat-04",
+  "url": "https://huggingface.co/Prat-04/hate-speech-distilbert",
+  "created_at": "2026-09-15T11:50:32.000Z",
+  "updated_at": "2026-09-15T11:50:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "hate-speech-detection",
+    "en",
+    "dataset:tdavidson/hate_speech_offensive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955779,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267835644,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Commune de Prat en Côtes d'Armor",
+      "url": "https://www.mairie-prat.fr/",
+      "snippet": "Commune de Prat : suivez l'actualité diffusée par la mairie et consultez les différentes informations essentielles."
+    },
+    {
+      "title": "Prat : actualités et infos en direct, sorties, agenda, images, 22140 ...",
+      "url": "https://www.ouest-france.fr/bretagne/prat-22140/",
+      "snippet": "Inscrivez gratuitement votre commerce de Prat et créez votre vitrine sur Ouest-France Commerces. Nous mettons à votre disposition …"
+    },
+    {
+      "title": "Prat — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Prat",
+      "snippet": "Prat [pʁat], Prad en breton, est une commune du département des Côtes-d'Armor, dans la région Bretagne, en France. Cette section …"
+    },
+    {
+      "title": "Prat – actualités et informations locales en direct | Le Télégramme",
+      "url": "https://www.letelegramme.fr/cotes-d-armor/prat-22140/",
+      "snippet": "12 hours ago · Battu à la surprise générale la saison dernière par Saint-Agathon, alors pensionnaire de D1, le Lannion FC a cette fois …"
+    },
+    {
+      "title": "Prat – actualités et informations locales en direct",
+      "url": "https://www.letelegramme.fr/cotes-d-armor/prat-22140/pages/prat-22140/",
+      "snippet": "1 day ago · Retrouvez l'actualité locale de Prat : les informations en direct, l'agenda des événements et les sorties, les résultats …"
+    }
+  ]
+}

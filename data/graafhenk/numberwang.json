@@ -1,0 +1,114 @@
+{
+  "schema": 1,
+  "id": "graafhenk/numberwang",
+  "slug": "graafhenk-numberwang",
+  "author": "graafhenk",
+  "url": "https://huggingface.co/graafhenk/numberwang",
+  "created_at": "2026-09-15T18:38:41.000Z",
+  "updated_at": "2026-09-15T18:47:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "nl",
+    "de",
+    "fr",
+    "es",
+    "it",
+    "pt",
+    "sv",
+    "pl",
+    "da",
+    "fi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "numberwang",
+    "character-level",
+    "multilingual",
+    "tiny",
+    "en",
+    "nl",
+    "de",
+    "fr",
+    "es",
+    "it",
+    "pt",
+    "sv",
+    "pl",
+    "da",
+    "fi",
+    "license:mit",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 356868,
+  "parameters_human": "356868",
+  "storage_bytes": 1431944,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Numberwang Classification",
+      "dataset": null,
+      "metric": "Accuracy (486 reserved held-out cases)",
+      "value": 0.874
+    },
+    {
+      "task": "Numberwang Classification",
+      "dataset": null,
+      "metric": "Macro-F1 (486 reserved held-out cases)",
+      "value": 0.878
+    },
+    {
+      "task": "Numberwang Classification",
+      "dataset": null,
+      "metric": "Accuracy (internal test split)",
+      "value": 0.849
+    }
+  ],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://www.google.com/maps/search/?hl=nl",
+      "snippet": "Live verkeersinformatie Snel Langzaam Kaartgegevens © 2026 Google Voorwaarden 10 km ... Route Rijden Lopen"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/maps/search/",
+      "snippet": "Train Nearby places Restaurants Gas stations ATMs Shopping Map details Satellite Transit lines Traffic"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://www.google.com/maps/search/?hl=de",
+      "snippet": "Aktuelle Verkehrslage Schnell Langsam Kartendaten ©2026 Google Bedingungen 20 km ... Route Mit dem Auto Zu Fuß"
+    },
+    {
+      "title": "Directions, Traffic & Transit - Google Maps",
+      "url": "https://maps.google.com/maps/dir/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    }
+  ]
+}

@@ -31,9 +31,9 @@
     "base_model:finetune:Qwen/Qwen3-VL-2B-Instruct",
     "region:us"
   ],
-  "likes": 10,
-  "downloads_30d": 101,
-  "trending_score": 0,
+  "likes": 12,
+  "downloads_30d": 152,
+  "trending_score": 10,
   "parameters": 2161610752,
   "parameters_human": "2.16B",
   "storage_bytes": 4347865690,

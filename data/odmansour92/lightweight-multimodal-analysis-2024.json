@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "odmansour92/lightweight-multimodal-analysis-2024",
+  "slug": "odmansour92-lightweight-multimodal-analysis-2024",
+  "author": "odmansour92",
+  "url": "https://huggingface.co/odmansour92/lightweight-multimodal-analysis-2024",
+  "created_at": "2026-09-15T18:20:35.000Z",
+  "updated_at": "2026-09-15T18:20:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "lightweight-multimodal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10 Best Contact Center Software In 2026 | Squaretalk",
+      "url": "https://squaretalk.com/top-contact-center-software/",
+      "snippet": "Jul 22, 2026 · Here’s our curated list of the top 10 contact center software solutions for 2026, each with its unique strengths and use …"
+    },
+    {
+      "title": "8 Best Contact Center Software Solutions I Found (2026) - G2",
+      "url": "https://learn.g2.com/best-contact-center-software",
+      "snippet": "Jul 6, 2026 · I reviewed 20+ tools to find the 8 best contact center software platforms for 2026, including Salesforce, Aircall, and …"
+    },
+    {
+      "title": "Best Contact Center Software: Compared + Ranked 2025/2026",
+      "url": "https://nuacom.com/best-contact-center-software-compared-ranked/",
+      "snippet": "Compare the best contact center software solutions of 2025/2026. Get expert analysis, performance insights and recommendations …"
+    },
+    {
+      "title": "Top 10 contact center platforms of 2026 | Outsource Accelerator",
+      "url": "https://www.outsourceaccelerator.com/articles/contact-center-platforms/",
+      "snippet": "Aug 5, 2026 · What are the best contact center platforms? The best contact center platforms include NICE CXone, Talkdesk, …"
+    },
+    {
+      "title": "Digital Transformation in Contact Centers: Roadmap & Trends",
+      "url": "https://www.balto.ai/blog/digital-transformation-in-contact-center/",
+      "snippet": "Aug 7, 2025 · Discover how digital transformation in contact centers improves CX, agent performance, and efficiency with AI, cloud, …"
+    }
+  ]
+}

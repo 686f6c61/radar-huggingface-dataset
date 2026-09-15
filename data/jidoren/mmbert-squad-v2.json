@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jidoren/mmbert-squad-v2",
+  "slug": "jidoren-mmbert-squad-v2",
+  "author": "jidoren",
+  "url": "https://huggingface.co/jidoren/mmbert-squad-v2",
+  "created_at": "2026-09-15T15:00:58.000Z",
+  "updated_at": "2026-09-15T15:01:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "question-answering",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "question-answering",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 307531778,
+  "parameters_human": "307.5M",
+  "storage_bytes": 649441321,
+  "storage_human": "649 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/valougwed/",
+      "snippet": "Instagram ... Instagram"
+    },
+    {
+      "title": "Valouzz - Vendeur sur Voggt",
+      "url": "https://voggt.com/fr/Valouzz",
+      "snippet": "Valouzz - 69797 followers - 144 heures de lives - 4.95 - Achète et vends ta collection en direct - Télécharge l'app"
+    },
+    {
+      "title": "Valgourmand | Confiserie en ligne - Bonbons et chocolat grandes …",
+      "url": "https://www.valgourmand.com/",
+      "snippet": "Un choix énorme de plus 5000 références des grandes marques de vos bonbons et chocolats préférés ! Prix imbattables et Livraison …"
+    },
+    {
+      "title": "One-Pager Placeholder - The Value Web",
+      "url": "https://thevalueweb.org/",
+      "snippet": "Academy Assembly Advocacy Community About Join Login The Value Web is relaunching and opening its doors. Join us! This is not …"
+    },
+    {
+      "title": "Login - The Value Web",
+      "url": "https://thevalueweb.org/login/",
+      "snippet": "Videos u0026#038; Media Books u0026 Online Resources Recode Systems Leaders Academy Membership Portal Learning …"
+    }
+  ]
+}

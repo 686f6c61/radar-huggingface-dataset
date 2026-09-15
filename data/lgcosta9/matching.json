@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "lgcosta9/matching",
+  "slug": "lgcosta9-matching",
+  "author": "lgcosta9",
+  "url": "https://huggingface.co/lgcosta9/matching",
+  "created_at": "2026-09-15T14:18:00.000Z",
+  "updated_at": "2026-09-15T14:18:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Webmail - ALL-INKL.COM",
+      "url": "https://webmail.all-inkl.com/",
+      "snippet": "Als Kunde von ALL-INKL.COM können Sie Webmail zum Versenden und Empfangen Ihrer E-Mails nutzen."
+    },
+    {
+      "title": "ALL-INKL.COM Login: MembersArea, KAS, Webmail & WebFTP",
+      "url": "https://all-inkl.com/login",
+      "snippet": "Direkte Loginoptionen in Ihren Vertrag, technische Verwaltung, E-Mail-Accounts usw. Anleitungen für Thunderbird und viele weitere …"
+    },
+    {
+      "title": "Mobile Webmail - ALL-INKL.COM",
+      "url": "https://mmail.all-inkl.com/",
+      "snippet": "Als Kunde von ALL-INKL.COM können Sie Webmail zum Versenden und Empfangen Ihrer E-Mails nutzen."
+    },
+    {
+      "title": "Webmail - ALL-INKL.COM",
+      "url": "https://webmail.all-inkl.com/mail-body.php",
+      "snippet": "ALL-INKL.COM bietet Webmail-Dienste für den Zugriff auf E-Mails, Kalender und mehr. Sicherer und einfacher Zugang zu Ihren …"
+    },
+    {
+      "title": "Webmail - ALL-INKL.COM",
+      "url": "https://webmail.all-inkl.com/iframe-blank.php",
+      "snippet": "Greifen Sie auf Ihre E-Mails zu und verwalten Sie Ihr Postfach mit dem Webmail-Service von ALL-INKL.COM."
+    }
+  ]
+}

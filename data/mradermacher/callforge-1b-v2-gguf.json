@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/CallForge-1B-v2-GGUF",
+  "slug": "mradermacher-callforge-1b-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/CallForge-1B-v2-GGUF",
+  "created_at": "2026-09-15T13:45:09.000Z",
+  "updated_at": "2026-09-15T13:49:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1080632832,
+  "parameters_human": "1.08B",
+  "storage_bytes": 10002439680,
+  "storage_human": "10.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Poki (بوكي) - موقع العاب مجانية عبر الإنترنت - العب الآن!",
+      "url": "https://poki.com/ar?msockid=24426e7b232664893bd379ae22aa6526",
+      "snippet": "استمتع بألعاب مجانية عبر الإنترنت مع Poki (بوكي)! العب فورًا، دون الحاجة للتنزيل، واستمتع بألعاب متوافقة مع جميع الأجهزة."
+    },
+    {
+      "title": "ألعاب مجانية عبر الإنترنت على كريزي جيمز | العبها الآن!",
+      "url": "https://www.crazygames.com/ar/",
+      "snippet": "العب ألعاب إنترنت مجانية على كريزي جيمز، المكان الأفضل للعب ألعاب متصفح عالية الجودة. نقوم بإضافة ألعاب جديدة يوميًا. استمتع!"
+    },
+    {
+      "title": "ألعاب مجانية عبر الإنترنت — ألعاب متصفح لا تتطلب تحميل | Playhop",
+      "url": "https://playhop.com/ar",
+      "snippet": "العب أكثر من 20,000 لعبة مجانية على الإنترنت على Playhop — لا حاجة للتنزيل، العب فورًا على الهاتف المحمول أو الكمبيوتر. تُضاف ألعاب جديدة يوميًا."
+    },
+    {
+      "title": "Poki - أفضل الألعاب المجانية على الإنترنت - العب الآن",
+      "url": "https://poki.homes/ar",
+      "snippet": "العب أفضل الألعاب المجانية على الإنترنت على Poki! استمتع بمئات الألعاب المختارة بعناية بدون تحميل أو تسجيل."
+    },
+    {
+      "title": "العاب مجانية اون لاين - ألعاب متصفح بدون تحميل | PacoGames",
+      "url": "https://www.pacogames.com/ar",
+      "snippet": "العب العاب مجانية اون لاين على PacoGames. اكتشف ألعاب متصفح بدون تحميل: أكشن، سيارات، ذكاء، 3D، متعددة اللاعبين والمزيد."
+    }
+  ]
+}

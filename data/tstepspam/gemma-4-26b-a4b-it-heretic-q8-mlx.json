@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "tstepspam/gemma-4-26B-A4B-it-heretic-Q8-mlx",
+  "slug": "tstepspam-gemma-4-26b-a4b-it-heretic-q8-mlx",
+  "author": "tstepspam",
+  "url": "https://huggingface.co/tstepspam/gemma-4-26B-A4B-it-heretic-Q8-mlx",
+  "created_at": "2026-09-15T18:15:27.000Z",
+  "updated_at": "2026-09-15T18:17:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "ara",
+    "text-generation",
+    "conversational",
+    "base_model:coder3101/gemma-4-26B-A4B-it-heretic",
+    "base_model:quantized:coder3101/gemma-4-26B-A4B-it-heretic",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233053440,
+  "parameters_human": "25.23B",
+  "storage_bytes": 26843215924,
+  "storage_human": "26.8 GB",
+  "base_model": "coder3101/gemma-4-26B-A4B-it-heretic",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Acifol 5 mg Acidum Folicum, 30 comprimate, Zentiva - Farmacia Tei",
+      "url": "https://comenzi.farmaciatei.ro/medicamente-cu-reteta/fertilizare-in-vitro/acifol-5-mg-acidum-folicum-30-comprimate-zentiva-p301164",
+      "snippet": "1 day ago · Acifol este un medicament ce conţine o substanţă numită acid folic, cunoscută şi sub denumirea de vitamina B 9. - …"
+    },
+    {
+      "title": "Lista interactivă a medicamentelor - Casa Națională de Asigurări de ...",
+      "url": "https://cnas.ro/lista-medicamente/",
+      "snippet": "Jun 5, 2025 · Prețurile sunt exprimate în RON. Data actualizării listei: 01.06.2025. – sectiunea C2 este de 100% din prețul de …"
+    },
+    {
+      "title": "ChemOnline – Substanțe Chimice pentru Tine!",
+      "url": "https://chemonline.ro/",
+      "snippet": "Comandă online substanțe chimice premium pentru uz casnic: sodă caustică, hipoclorit, acizi, fosfați, solvenți și multe altele. Produse …"
+    },
+    {
+      "title": "Venofer, 100 mg fer/5 ml solutie injectabila/perfuzabila, 5 : Farmacia ...",
+      "url": "https://comenzi.farmaciatei.ro/medicamente-cu-reteta/medicamente/venofer-100-mg-fer5-ml-solutie-injectabilaperfuzabila-5-fiole-vifor-france-p304639",
+      "snippet": "Sep 4, 2026 · Venofer, 100 mg fer/5 ml solutie injectabila/perfuzabila, 5 : Farmacia Tei online. Program Farmacii . Informatii Utile . …"
+    },
+    {
+      "title": "Comparator de Prețuri pentru Medicamente în România",
+      "url": "https://medipret.ro/",
+      "snippet": "Compară prețurile medicamentelor în cele mai importante farmacii din România. Economisește timp și bani cu ajutorul …"
+    }
+  ]
+}

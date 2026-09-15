@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Alevetto07/centvrio-4b",
+  "slug": "alevetto07-centvrio-4b",
+  "author": "Alevetto07",
+  "url": "https://huggingface.co/Alevetto07/centvrio-4b",
+  "created_at": "2026-09-15T12:54:33.000Z",
+  "updated_at": "2026-09-15T13:41:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "llama.cpp",
+  "languages": [
+    "la",
+    "it"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "translation",
+    "latin",
+    "italian",
+    "qlora",
+    "unsloth",
+    "la",
+    "it",
+    "base_model:unsloth/Qwen3.5-4B",
+    "base_model:quantized:unsloth/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 16437286880,
+  "storage_human": "16.4 GB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux pièces …"
+    },
+    {
+      "title": "Compte faceboock indisponible [Résolu] - Forum Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38299782-compte-faceboock-indisponible",
+      "snippet": "Jul 19, 2026 · Bonjour, Bonjour depuis ce matin je n'arrive pas a me connecter a facebook j'ai le message suivant Compte …"
+    },
+    {
+      "title": "Comment faire pour supprimer les comptes Facebook liés à mon …",
+      "url": "https://support.google.com/accounts/thread/242881443/comment-faire-pour-supprimer-les-comptes-facebook-li%C3%A9s-%C3%A0-mon-compte-google?hl=fr",
+      "snippet": "Nov 7, 2023 · Comment vos comptes Facebook peuvent être lié à votre compte Google ? Vous voulez dire le compte Facebook créé …"
+    },
+    {
+      "title": "Comment dissocier un compte Facebook sur mon Gmail?",
+      "url": "https://support.google.com/accounts/thread/136304656/comment-dissocier-un-compte-facebook-sur-mon-gmail?hl=fr",
+      "snippet": "Nov 20, 2021 · Bonjour Shambuyi, Modifiez les paramètres de votre compte facebouc pour supprimer toutes les notifications par …"
+    },
+    {
+      "title": "Question - CNIL",
+      "url": "https://www.cnil.fr/fr/cnil-direct/question/facebook-comment-supprimer-mon-compte",
+      "snippet": "Facebook : comment supprimer mon compte ? Afin de procéder à la suppression définitive de votre compte, vous devez suivre la …"
+    }
+  ]
+}

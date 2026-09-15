@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Gaykar/Speech-onnx-models",
+  "slug": "gaykar-speech-onnx-models",
+  "author": "Gaykar",
+  "url": "https://huggingface.co/Gaykar/Speech-onnx-models",
+  "created_at": "2026-09-15T16:27:09.000Z",
+  "updated_at": "2026-09-15T16:27:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "E-shop planeo.sk | Planeo",
+      "url": "https://www.planeo.sk/",
+      "snippet": "Špecializovaný elektropredajca so širokým sortimentom na Slovensku. Zľavy a akcie. Doprava Premium. Darčekové poukazy. Nákup …"
+    },
+    {
+      "title": "Elektro akcie | Planeo",
+      "url": "https://www.planeo.sk/akcie",
+      "snippet": "Elektro akcie skladom Planeo akcie online na e-shope alebo v jednej zo 70+ predajní PLANEO Nakupujte výhodne Poradíme vám s …"
+    },
+    {
+      "title": "Malé domáce spotrebiče | Planeo",
+      "url": "https://www.planeo.sk/male-domace-spotrebice",
+      "snippet": "Malé domáce spotrebiče Malé domáce spotrebiče Výpredaj - malé spotrebiče Kávovary a príprava kávy Spotrebiče na prípravu …"
+    },
+    {
+      "title": "PLANEO Šamorín",
+      "url": "https://www.planeo.sk/predajne/planeo-samorin",
+      "snippet": "PLANEO Šamorín Bratislavská ulica 2862/1C, 931 01 Šamorín GPS: 48° 2' 10.367\"N, 17° 18' 6.541\"E Otváracia doba"
+    },
+    {
+      "title": "PLANEO Topoľčany",
+      "url": "https://www.planeo.sk/predajne/planeo-topolcany",
+      "snippet": "PLANEO Topoľčany P. Jilemnického 4892/93, 955 01 Topoľčany GPS: 48° 34' 27.984\"N, 18° 11' 15.256\"E Otváracia doba"
+    }
+  ]
+}

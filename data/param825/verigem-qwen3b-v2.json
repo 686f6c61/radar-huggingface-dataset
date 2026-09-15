@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Param825/verigem-qwen3b-v2",
+  "slug": "param825-verigem-qwen3b-v2",
+  "author": "Param825",
+  "url": "https://huggingface.co/Param825/verigem-qwen3b-v2",
+  "created_at": "2026-09-15T14:16:39.000Z",
+  "updated_at": "2026-09-15T14:16:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 1929902624,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AutoScout24: Personenwagen kaufen und verkaufen in der Schweiz",
+      "url": "https://www.autoscout24.ch/de",
+      "snippet": "Personenwagen auf AutoScout24: Dich erwartet die grösste Auswahl an Occasionen und neuen Fahrzeugen auf dem bekanntesten …"
+    },
+    {
+      "title": "AutoScout24: Voitures acheter et vendre en Suisse",
+      "url": "https://www.autoscout24.ch/fr",
+      "snippet": "Voitures sur AutoScout24 : Le plus grand choix de véhicules d'occasion et neufs vous attend sur la plus célèbre place de marché en …"
+    },
+    {
+      "title": "Kaufvertrag für ein Fahrzeug - AutoScout24 Magazin",
+      "url": "https://guide.autoscout24.ch/wp-content/uploads/2024/02/Kaufvertrag-AutoScout24.pdf",
+      "snippet": "Anwendbares Recht Salvatorische Klausel Im Übrigen finden die gesetzlichen Bestimmungen über den Kaufvertrag (Art. 184 ff. OR) …"
+    },
+    {
+      "title": "Die 10 besten Elektroautos | AutoScout24",
+      "url": "https://guide.autoscout24.ch/de/elektromobilitaet/beste-elektroautos/",
+      "snippet": "Mar 12, 2026 · Die Schweiz setzt voll auf Strom. Wir haben die zehn besten E-Autos für dich zusammengestellt. Finde das richtige …"
+    },
+    {
+      "title": "Kaufvertrag für ein Fahrzeug - AutoScout24",
+      "url": "https://content.autoscout24.ch/insertion-private/wp-content/uploads/sites/7/2020/07/Kaufvertrag-Direktverkauf.pdf",
+      "snippet": "Widerrufsrecht des Käufers Der Käufer kann seinen Antrag zum Vertragsabschluss innert 7 Tagen nach Annahme seines Antrags …"
+    }
+  ]
+}

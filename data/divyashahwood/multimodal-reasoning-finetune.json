@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "divyashahwood/multimodal-reasoning-finetune",
+  "slug": "divyashahwood-multimodal-reasoning-finetune",
+  "author": "divyashahwood",
+  "url": "https://huggingface.co/divyashahwood/multimodal-reasoning-finetune",
+  "created_at": "2026-09-15T18:16:08.000Z",
+  "updated_at": "2026-09-15T18:16:14.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-reasoning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Plateforme de présentation interactive et active learning | Wooclap",
+      "url": "https://www.wooclap.com/fr/",
+      "snippet": "Impliquez votre audience avec l’outil de présentation interactive gratuit de Wooclap. Créez des présentations dynamiques et …"
+    },
+    {
+      "title": "Interactive presentation platform for Active Learning | Wooclap",
+      "url": "https://www.wooclap.com/",
+      "snippet": "Engage your audience with Wooclap's free interactive presentation tool. Create dynamic and engaging presentations that keep your …"
+    },
+    {
+      "title": "Plataforma de presentaciones interactivas para el aprendizaje",
+      "url": "https://www.wooclap.com/es/",
+      "snippet": "Involucra a tu audiencia con la herramienta gratuita de presentaciones interactivas de Wooclap. Crea presentaciones dinámicas y …"
+    },
+    {
+      "title": "Piattaforma di presentazione interattiva e apprendimento attivo",
+      "url": "https://www.wooclap.com/it/",
+      "snippet": "Coinvolgete il vostro pubblico con lo strumento di presentazione interattiva gratuito di Wooclap. Create presentazioni dinamiche e …"
+    },
+    {
+      "title": "Interactief presentatieplatform voor Active Learning | Wooclap",
+      "url": "https://www.wooclap.com/nl/",
+      "snippet": "Wooclap's gratis interactieve presentatietool. Maak dynamische en boeiende presentaties die je publiek blijven boeien."
+    }
+  ]
+}

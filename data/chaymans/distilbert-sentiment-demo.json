@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "chaymans/distilbert-sentiment-demo",
+  "slug": "chaymans-distilbert-sentiment-demo",
+  "author": "chaymans",
+  "url": "https://huggingface.co/chaymans/distilbert-sentiment-demo",
+  "created_at": "2026-09-15T14:23:40.000Z",
+  "updated_at": "2026-09-15T14:25:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 535670321,
+  "storage_human": "536 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "一名优秀的用户体验设计师（UX Designer）需要掌握哪些技能？",
+      "url": "https://www.zhihu.com/question/24694963",
+      "snippet": "我们从初级设计师讲起，UX设计师需要掌握哪些技能。 1.基础能力 交互设计的文档、工具、方法、流程 至少能够进行常见的文档写作 …"
+    },
+    {
+      "title": "用户体验（UX）到底是做什么呢，薪资前景怎么样呢？ - 知乎",
+      "url": "https://www.zhihu.com/question/47353588",
+      "snippet": "UX设计工具正在从老一代的Photoshop为主逐渐专变为更倾向于使用一些新兴的 轻量化原型设计工具 如 Mockplus 、 Sketch 等。 最 …"
+    },
+    {
+      "title": "交互设计和ux设计的区别是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/429601129",
+      "snippet": "现在越来越多的公司在提倡 UX 体验设计，那么到底什么是 UX 体验设计，和 UI 又有哪些区别呢？ 在讲述UI UX之间的区别是什么之 …"
+    },
+    {
+      "title": "好的人机交互设计 (UX) 有哪些主要评判标准？ - 知乎",
+      "url": "https://www.zhihu.com/question/19557472",
+      "snippet": "这篇回答的原文诞生于知乎刚刚上线不久，将近10年前的内容，即使今天读起来，仍然会有一些指导意义。 ——原文—— 这是一个巨 …"
+    },
+    {
+      "title": "知乎",
+      "url": "https://www.zhihu.com/question/6902742976",
+      "snippet": "Helios G4 UC、UX和CX是赛默飞世尔科技（Thermo Fisher Scientific）推出的Helios DualBeam系列中的不同型号，它们在技术参数 …"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Feihua-n1-0.8B-GGUF",
+  "slug": "mradermacher-feihua-n1-0-8b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Feihua-n1-0.8B-GGUF",
+  "created_at": "2026-09-15T12:14:38.000Z",
+  "updated_at": "2026-09-15T12:21:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3_5",
+    "nonsense",
+    "废话文学",
+    "llama.cpp",
+    "en",
+    "zh",
+    "base_model:ZZRI/Feihua-n1-0.8B",
+    "base_model:quantized:ZZRI/Feihua-n1-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 7455497728,
+  "storage_human": "7.5 GB",
+  "base_model": "ZZRI/Feihua-n1-0.8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

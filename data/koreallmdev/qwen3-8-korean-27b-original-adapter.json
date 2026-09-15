@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "koreallmdev/qwen3.8-korean-27b-original-adapter",
+  "slug": "koreallmdev-qwen3-8-korean-27b-original-adapter",
+  "author": "koreallmdev",
+  "url": "https://huggingface.co/koreallmdev/qwen3.8-korean-27b-original-adapter",
+  "created_at": "2026-09-15T11:46:10.000Z",
+  "updated_at": "2026-09-15T11:46:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen",
+    "korean",
+    "coding",
+    "lora",
+    "text-generation",
+    "conversational",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 338830361,
+  "storage_human": "339 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Discord - Group Chat That’s All Fun & Games",
+      "url": "https://discord.com/",
+      "snippet": "Discord is great for playing games and chilling with friends, or even building a worldwide community. Customize your own space to …"
+    },
+    {
+      "title": "Download Discord to Talk, Play, and Hang Out",
+      "url": "https://discord.com/download",
+      "snippet": "Download Discord to talk, play, and hang out with friends over voice, video, or text. Available for Windows, macOS, Linux, iOS, …"
+    },
+    {
+      "title": "Discord",
+      "url": "https://discord.com/store",
+      "snippet": "Discord is great for playing games and chilling with friends, or even building a worldwide community. Customize your own space to …"
+    },
+    {
+      "title": "Discord - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Discord",
+      "snippet": "Discord runs on Windows, macOS, Android, iOS, iPadOS, Linux, and in web browsers. As of 2025, Discord has 200 million monthly …"
+    },
+    {
+      "title": "Discord",
+      "url": "https://support.discord.com/hc/en-us",
+      "snippet": "Help Center Need help? We've got your back. From account settings to permissions, find help for everything Discord If you're new to …"
+    }
+  ]
+}

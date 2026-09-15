@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "mbarbosa1/zeno-divergent-combination-preview",
+  "slug": "mbarbosa1-zeno-divergent-combination-preview",
+  "author": "mbarbosa1",
+  "url": "https://huggingface.co/mbarbosa1/zeno-divergent-combination-preview",
+  "created_at": "2026-09-15T15:25:50.000Z",
+  "updated_at": "2026-09-15T16:08:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "forecast-combination",
+    "research-preview",
+    "time-series",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51954844,
+  "storage_human": "52 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fenêtre aide et support qui s'ouvre seule [Résolu] - Windows 7",
+      "url": "https://forums.commentcamarche.net/forum/affich-19363587-fenetre-aide-et-support-qui-s-ouvre-seule",
+      "snippet": "Bonjour, J'ai un problème avec mon \"aide et support windows\" sous Windows 7. En effet, lorsque j'allume mon PC, une fenêtre \"aide …"
+    },
+    {
+      "title": "Lenteur pour copier et coller!!!! [Résolu] - Forum Windows",
+      "url": "https://forums.commentcamarche.net/forum/affich-3065716-lenteur-pour-copier-et-coller",
+      "snippet": "Regarde dans ton BIOS la Temp de ton processeur et compare la aux donnes constructeur que tu peux trouver via google si ce n'est …"
+    },
+    {
+      "title": "TechNet",
+      "url": "https://social.technet.microsoft.com/",
+      "snippet": ""
+    },
+    {
+      "title": "How to Update Address Lists in Exchange 2016 to Exchange Online",
+      "url": "https://social.technet.microsoft.com/Forums/en-US/f3c6a21d-500e-40f2-b945-629fbde21b1a/how-to-update-address-lists-in-exchange-2016-to-exchange-online",
+      "snippet": "I have Exchange Server 2016, and Hybrid Configuration to Office 365. I want to recreate the Address Lists to clear cache."
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/it-it/windows/forum/all/scaricare-e-registrare-mscomctlocx-su-windows-10/134be2ea-5e23-46b2-9bfa-6daaac873436",
+      "snippet": ""
+    }
+  ]
+}

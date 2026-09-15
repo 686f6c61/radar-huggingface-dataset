@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "abdukuzi45/qwen3.5-4b-amharic-extended-v5",
+  "slug": "abdukuzi45-qwen3-5-4b-amharic-extended-v5",
+  "author": "abdukuzi45",
+  "url": "https://huggingface.co/abdukuzi45/qwen3.5-4b-amharic-extended-v5",
+  "created_at": "2026-09-15T11:58:55.000Z",
+  "updated_at": "2026-09-15T11:58:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

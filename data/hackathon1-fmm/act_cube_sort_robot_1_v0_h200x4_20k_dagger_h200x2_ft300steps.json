@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hackathon1-fmm/act_cube_sort_robot_1_v0_h200x4_20k_dagger_h200x2_ft300steps",
+  "slug": "hackathon1-fmm-act_cube_sort_robot_1_v0_h200x4_20k_dagger_h200x2_ft300steps",
+  "author": "hackathon1-fmm",
+  "url": "https://huggingface.co/hackathon1-fmm/act_cube_sort_robot_1_v0_h200x4_20k_dagger_h200x2_ft300steps",
+  "created_at": "2026-09-15T11:38:08.000Z",
+  "updated_at": "2026-09-15T11:38:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:hackathon1-fmm/rollout_cube_sort_robot_1_dagger_20k_20260915_121921_clean1_merged_2ep_20260915_125953",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Physics wallah Live Courses for JEE, NEET & Class 6,7,8,9,10,11,12 ...",
+      "url": "https://www.pw.live/",
+      "snippet": "Physics Wallah is India's top online ed-tech platform that provides affordable and comprehensive learning experience to students of …"
+    },
+    {
+      "title": "login",
+      "url": "https://www.pw.live/users/login",
+      "snippet": "login PhysicsWallah, Rk 27 kalindipuram Prayagraj,Uttar pradesh: 211012Give a miss call on:+91 9513850450"
+    },
+    {
+      "title": "Class 12 Board The Catalyst For Chemistry & Physics Combo",
+      "url": "https://store.pw.live/products/class-12-board-the-catalyst-for-chemistry-and-physics-2025",
+      "snippet": "Prepare to master Chemistry and Physics, making your Board Exams feel smoother than ever! Step into your CBSE Class 12 …"
+    },
+    {
+      "title": "Med Easy 2.0 Physics Handwritten Notes for NEET JEE - PW Store",
+      "url": "https://store.pw.live/products/physics-handwritten-notes-by-mr-sir",
+      "snippet": "Shop Med Easy by MR Sir Physics Wallah - Notes, Formulas, Mnemonics, Tips and Tricks for NEET/JEE & Board Exams. Buy …"
+    },
+    {
+      "title": "Physics Wallah - spd.pw.live",
+      "url": "https://spd.pw.live/login",
+      "snippet": "Please Enter Mobile Number To Login 🇮🇳"
+    }
+  ]
+}

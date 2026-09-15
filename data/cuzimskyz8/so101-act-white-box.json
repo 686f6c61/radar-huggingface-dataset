@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "cuzimskyz8/so101-act-white-box",
+  "slug": "cuzimskyz8-so101-act-white-box",
+  "author": "cuzimskyz8",
+  "url": "https://huggingface.co/cuzimskyz8/so101-act-white-box",
+  "created_at": "2026-09-15T12:09:05.000Z",
+  "updated_at": "2026-09-15T12:09:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:cuzimskyz8/so101_pick_white_box",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712864,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hacking Attempt on Yahoo account? | Vivaldi Forum",
+      "url": "https://forum.vivaldi.net/topic/38933/hacking-attempt-on-yahoo-account",
+      "snippet": "Jul 19, 2019 · Personally I have Hotmail, Google and Yahoo mail, and have no big issues with their terms, just that users need to be …"
+    },
+    {
+      "title": "Proxy SwitchyOmega - Vivaldi Forum",
+      "url": "https://forum.vivaldi.net/topic/4247/proxy-switchyomega",
+      "snippet": "Sep 7, 2015 · Judging from that thread on SwitchyOmega's support, I'd say you'll just have to wait until the Vivaldi devs support it - …"
+    },
+    {
+      "title": "Amazon Prime Video - Bitrate - Vivaldi Forum",
+      "url": "https://forum.vivaldi.net/topic/38640/amazon-prime-video-bitrate",
+      "snippet": "Jul 4, 2019 · @ stpvid1 said in Amazon Prime Video - Bitrate: It seems this has something to do with the way Amazon measures …"
+    },
+    {
+      "title": "Is filebin.net secure? - Vivaldi Forum",
+      "url": "https://forum.vivaldi.net/topic/41280/is-filebin-net-secure",
+      "snippet": "Oct 9, 2019 · One could also set it up as a server, which is handy if you develop websites. Publish the client's website to your local …"
+    },
+    {
+      "title": "[about:config] - Settings - Vivaldi Forum",
+      "url": "https://forum.vivaldi.net/topic/38989/about-config-settings",
+      "snippet": "Jul 22, 2019 · Hi, Is there the configuration menu like \"about:config\" in firefox? I have some uncomfortable things but they would be …"
+    }
+  ]
+}

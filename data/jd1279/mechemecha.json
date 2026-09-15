@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "jd1279/mechemecha",
+  "slug": "jd1279-mechemecha",
+  "author": "jd1279",
+  "url": "https://huggingface.co/jd1279/mechemecha",
+  "created_at": "2026-09-15T18:44:30.000Z",
+  "updated_at": "2026-09-15T18:44:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Iron rice bowl - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Iron_rice_bowl",
+      "snippet": "The term began being used to refer to a stable or even lifelong occupation that provides a steady stream of income and welfare, and …"
+    },
+    {
+      "title": "Iron rice bowl - Wikiwand",
+      "url": "https://www.wikiwand.com/en/Iron_rice_bowl",
+      "snippet": "\"Iron rice bowl\" is a Chinese term for an occupation with guaranteed job security, similar to life tenure. Traditionally, people …"
+    },
+    {
+      "title": "Iron rice bowl explained",
+      "url": "https://everything.explained.today/Iron_rice_bowl/",
+      "snippet": "Iron rice bowl is a Chinese term for an occupation with guaranteed job security, similar to life tenure."
+    },
+    {
+      "title": "Iron rice bowl - Alchetron, The Free Social Encyclopedia",
+      "url": "https://alchetron.com/Iron-rice-bowl",
+      "snippet": "Apr 25, 2026 · Iron rice bowl (simplified Chinese traditional Chinese pinyin ti fn wn) is a Chinese term used to refer to an occupation …"
+    },
+    {
+      "title": "| Facts and Details",
+      "url": "https://factsanddetails.com/china/cat8/sub49/item2266.html",
+      "snippet": "The \"Iron Rice Bowl\" was the name of the social security system in China that guaranteed everybody food, housing and social …"
+    }
+  ]
+}

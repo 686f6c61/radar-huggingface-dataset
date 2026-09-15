@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "wrldsuksgo2mars/DeepSeek-V4.1-EXL3-K3.25-v1",
+  "slug": "wrldsuksgo2mars-deepseek-v4-1-exl3-k3-25-v1",
+  "author": "wrldsuksgo2mars",
+  "url": "https://huggingface.co/wrldsuksgo2mars/DeepSeek-V4.1-EXL3-K3.25-v1",
+  "created_at": "2026-09-15T15:50:59.000Z",
+  "updated_at": "2026-09-15T16:55:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deepseek_v41",
+    "exl3",
+    "quantized",
+    "deepseek-v41",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 319560051922,
+  "parameters_human": "319.56B",
+  "storage_bytes": 441395804655,
+  "storage_human": "441.4 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "At Yarışı Bülteni | yenibeygir.com",
+      "url": "https://yenibeygir.com/",
+      "snippet": "16 hours ago · En detaylı At Yarışı Bülteni (TJK Bülten). Altılı agf oranları, atların tüm yarışları, dereceleri, galopları, kardeşleri, …"
+    },
+    {
+      "title": "TJK Anasayfa",
+      "url": "https://www.tjk.org/TR/yarissever/Info/Page/GunlukYarisProgrami",
+      "snippet": "TJK'nin günlük yarış programı ve at yarışı bilgilerini içeren resmi sayfa."
+    },
+    {
+      "title": "At Yarışı : atyarışı.com | At Yarışı Anasayfa | At Yarışı | Altılı Ganyan",
+      "url": "https://www.atyarisi.com/",
+      "snippet": "TJK : atyarışı.com at yarışı heyecanı Yeni Bir Seviye ile atyarışı.com'da altılı ganyan, yarış programları, at yarışı bülteni, tjk tv ve …"
+    },
+    {
+      "title": "Tjk At Yarışı Programı ve Puanlı At Yarışı Bülteni ... - Fanatik",
+      "url": "https://www.fanatik.com.tr/hipodrom/programlar/",
+      "snippet": "16 hours ago · Hipodrom'da TJK yarış programını incele, kuponunu hazırla! Kazanmak için şimdi tıkla."
+    },
+    {
+      "title": "At Yarışı Tahminleri | liderform.com.tr",
+      "url": "https://liderform.com.tr/",
+      "snippet": "Aug 9, 2026 · At yarışı dünyasının analizleri, uzman görüşleri ve detaylı tahminlerle Liderform merkezinde yer alın. Günlük …"
+    }
+  ]
+}

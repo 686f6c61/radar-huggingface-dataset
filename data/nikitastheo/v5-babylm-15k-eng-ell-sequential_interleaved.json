@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "nikitastheo/v5-babylm-15k-eng-ell-sequential_interleaved",
+  "slug": "nikitastheo-v5-babylm-15k-eng-ell-sequential_interleaved",
+  "author": "nikitastheo",
+  "url": "https://huggingface.co/nikitastheo/v5-babylm-15k-eng-ell-sequential_interleaved",
+  "created_at": "2026-09-14T15:58:29.000Z",
+  "updated_at": "2026-09-15T18:59:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "causal-lm",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108550656,
+  "parameters_human": "108.6M",
+  "storage_bytes": 868435200,
+  "storage_human": "868 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

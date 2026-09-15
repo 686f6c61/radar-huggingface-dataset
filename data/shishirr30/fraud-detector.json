@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Shishirr30/fraud-detector",
+  "slug": "shishirr30-fraud-detector",
+  "author": "Shishirr30",
+  "url": "https://huggingface.co/Shishirr30/fraud-detector",
+  "created_at": "2026-09-15T14:58:22.000Z",
+  "updated_at": "2026-09-15T14:58:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20173757,
+  "storage_human": "20 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Copilot: Your AI companion",
+      "url": "https://copilot.microsoft.com/?msockid=1affb0b067806a53302da76566f76b2d",
+      "snippet": "Microsoft Copilot is your companion to inform, entertain and inspire. Get advice, feedback and straightforward answers. Try Copilot now."
+    },
+    {
+      "title": "[Copilot 3D] - A Copilot Labs experiment",
+      "url": "https://copilot.microsoft.com/labs/experiments/copilot-3d?msockid=1affb0b067806a53302da76566f76b2d",
+      "snippet": "Turn images into 3D models with one click."
+    },
+    {
+      "title": "Search - s.copilot.microsoft.com",
+      "url": "https://s.copilot.microsoft.com/maps/directions?FORM=HDRSC4&style=3d",
+      "snippet": "Map multiple locations, get transit/walking/driving directions, view live traffic conditions, plan trips, view satellite, aerial and 3d …"
+    },
+    {
+      "title": "[Mico] - A Copilot Labs experiment",
+      "url": "https://copilot.microsoft.com/labs/experiments/mico?msockid=1affb0b067806a53302da76566f76b2d",
+      "snippet": "A vibrant new way to talk with Copilot"
+    },
+    {
+      "title": "[Portraits] - A Copilot Labs experiment",
+      "url": "https://copilot.microsoft.com/labs/portrait?msockid=1affb0b067806a53302da76566f76b2d",
+      "snippet": "Talk through big moments with AI that responds with voice and visuals"
+    }
+  ]
+}

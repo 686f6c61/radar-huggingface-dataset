@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "abdukuzi45/qwen3.5-4b-amharic-extended-v9",
+  "slug": "abdukuzi45-qwen3-5-4b-amharic-extended-v9",
+  "author": "abdukuzi45",
+  "url": "https://huggingface.co/abdukuzi45/qwen3.5-4b-amharic-extended-v9",
+  "created_at": "2026-09-15T15:06:19.000Z",
+  "updated_at": "2026-09-15T15:06:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4663835136,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9356894234,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "这个网址是potplayer官网吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/509011663",
+      "snippet": "Feb 21, 2022 · ———————————————— 为了让更多人能搜到这个帖子，做点SEO。 PotPlayer是什么？PotPlayer怎么下 …"
+    },
+    {
+      "title": "商店 | A-Lin 官方網站",
+      "url": "https://www.alin920.com/shop",
+      "snippet": "工作邀約・藝人招募・作品投稿 官網・商店相關事務"
+    },
+    {
+      "title": "A-Lin 官方網站",
+      "url": "https://www.alin920.com/",
+      "snippet": "山野遼闊，大海無際，人稱天生歌姬。 渾厚高亢的嗓音，細膩觸動的感情。 樂觀不造作的個性，流行與時尚的化身。 發自內心的流淚 …"
+    },
+    {
+      "title": "Alin: Tagalog Question Word",
+      "url": "https://learningtagalog.com/grammar/questions/questions_using_question_words/using_question_words/alin.html",
+      "snippet": "Learn Tagalog free online with our comprehensive Tagalog grammar. Learn Tagalog phrases, Tagalog expressions, Tagalog words …"
+    }
+  ]
+}

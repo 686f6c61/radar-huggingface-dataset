@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "c-ho/2026-09-15-crf-classweights-clean",
+  "slug": "c-ho-2026-09-15-crf-classweights-clean",
+  "author": "c-ho",
+  "url": "https://huggingface.co/c-ho/2026-09-15-crf-classweights-clean",
+  "created_at": "2026-09-15T14:21:13.000Z",
+  "updated_at": "2026-09-15T15:42:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:FacebookAI/xlm-roberta-large",
+    "base_model:finetune:FacebookAI/xlm-roberta-large",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 559925445,
+  "parameters_human": "559.9M",
+  "storage_bytes": 15700405546,
+  "storage_human": "15.7 GB",
+  "base_model": "FacebookAI/xlm-roberta-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gignac-la-Nerthe — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Gignac-la-Nerthe",
+      "snippet": "La gare la plus proche est celle de Pas-des-Lanciers, située à 5 km sur la commune de Marignane et desservie par la ligne Paris …"
+    },
+    {
+      "title": "Avenue Lino Ventura, 13180 Gignac-la-Nerthe, France",
+      "url": "https://www.bing.com/maps/search?q=803%2C+Avenue+Lino+Ventura+Gignac-la-Nerthe+13180+Provence-Alpes-C%C3%B4te+d%27Azur+FR&cp=43.395084%7E5.217771&lvl=16&style=r",
+      "snippet": "Map multiple locations, get transit/walking/driving directions, view live traffic conditions, plan trips, view satellite, aerial and 3d …"
+    },
+    {
+      "title": "1655 Avenue de la Méditerranée, 13180 Gignac-la-Nerthe, France - Bing",
+      "url": "https://www.bing.com/maps/search?q=1655+Avenue+de+la+M%C3%A9diterran%C3%A9e+GIGNAC-LA-NERTHE+13180+FR&cp=36.670502%7E-78.227913&lvl=11&style=r",
+      "snippet": "Map multiple locations, get transit/walking/driving directions, view live traffic conditions, plan trips, view satellite, aerial and 3d …"
+    },
+    {
+      "title": "Gignac-la-Nerthe, Provence-Alpes-Côte d’Azur - MSN",
+      "url": "https://www.msn.com/fr-fr/meteo/previsions/in-Gignac-la-Nerthe,%20%20%20%20%20Provence-Alpes-C%C3%B4te-d%E2%80%99Azur",
+      "snippet": "Restez informé au sujet des précipitations, des alertes de mauvaises conditions météorologiques, de la qualité de l'air et de feux de …"
+    },
+    {
+      "title": "Gignac-la-Nerthe, Provence-Alpes-Côte d’Azur - MSN",
+      "url": "https://www.msn.com/fr-fr/meteo/previsions/in-Gignac-la-Nerthe,%20%20%20%20%20%20%20Provence-Alpes-C%C3%B4te-d%E2%80%99Azur",
+      "snippet": "Restez informé au sujet des précipitations, des alertes de mauvaises conditions météorologiques, de la qualité de l'air et de feux de …"
+    }
+  ]
+}

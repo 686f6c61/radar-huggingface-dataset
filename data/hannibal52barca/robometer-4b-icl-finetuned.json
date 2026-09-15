@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Hannibal52Barca/robometer-4b-icl-finetuned",
+  "slug": "hannibal52barca-robometer-4b-icl-finetuned",
+  "author": "Hannibal52Barca",
+  "url": "https://huggingface.co/Hannibal52Barca/robometer-4b-icl-finetuned",
+  "created_at": "2026-09-15T15:08:48.000Z",
+  "updated_at": "2026-09-15T15:09:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3_vl",
+    "base_model:adapter:unsloth/Qwen3-VL-4B-Instruct",
+    "lora",
+    "transformers",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Qwen3-VL-4B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4513065228,
+  "parameters_human": "4.51B",
+  "storage_bytes": 9442462185,
+  "storage_human": "9.4 GB",
+  "base_model": "unsloth/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia, die freie Enzyklopädie",
+      "url": "https://www.wikipedia.de/",
+      "snippet": "Wir sind der gemeinnützige Verein hinter der Wikipedia und unterstützen die Ehrenamtlichen, sichern und entwickeln die technische …"
+    },
+    {
+      "title": "Wiki Loves Earth 2026 – Vorjury Deutschland",
+      "url": "https://www.festivalsommer.wikipedia.de/prejury/",
+      "snippet": "Tool: 2011–2015 Ruben Demusfür Wikimedia Austria (WMAT), graphisch überarbeitet von Martin Kraft"
+    },
+    {
+      "title": "Zwischen Einsamkeit und Community: Wie gemeinschaftlich ist …",
+      "url": "https://bbb.wikipedia.de/rooms/uk8-3ex-nad-tua/join",
+      "snippet": "Learn using BigBlueButton, the trusted open-source web conferencing solution that enables seamless virtual collaboration and online …"
+    },
+    {
+      "title": "WikidataCon 2027/Call for expressions of interest to host",
+      "url": "https://bbb.wikipedia.de/rooms/plp-qml-xrj-9ib/",
+      "snippet": "Learn using BigBlueButton, the trusted open-source web conferencing solution that enables seamless virtual collaboration and online …"
+    },
+    {
+      "title": "Spenden-Kommentar-Ticker",
+      "url": "https://ticker.wikipedia.de/",
+      "snippet": "Herbstkampagne 2022 Spendenkommentare Letzte Kommentare"
+    }
+  ]
+}

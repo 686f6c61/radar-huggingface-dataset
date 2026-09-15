@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ScreenHighlighterRL-4B-i1-GGUF",
+  "slug": "mradermacher-screenhighlighterrl-4b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ScreenHighlighterRL-4B-i1-GGUF",
+  "created_at": "2026-09-15T13:18:39.000Z",
+  "updated_at": "2026-09-15T13:18:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 958716,
+  "parameters_human": "958716",
+  "storage_bytes": 3872640,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

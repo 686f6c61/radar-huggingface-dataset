@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "hausmer/truha-gemma4",
+  "slug": "hausmer-truha-gemma4",
+  "author": "hausmer",
+  "url": "https://huggingface.co/hausmer/truha-gemma4",
+  "created_at": "2026-09-15T16:20:06.000Z",
+  "updated_at": "2026-09-15T16:20:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "uk"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gemma",
+    "lora",
+    "ukrainian",
+    "satire",
+    "news",
+    "text-generation",
+    "conversational",
+    "uk",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:adapter:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 171772434,
+  "storage_human": "172 MB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "文件编号里的QM,QP,QR,ZD是什么意思啊?_百度知道",
+      "url": "https://zhidao.baidu.com/question/33842300.html",
+      "snippet": "4.8.8. 文件类别：GC-规程类、ZD-制度类、QT-其它类。 QP是指二级文件，也就是程序文件 QM就是一级文件，也就是质量手册 …"
+    },
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    },
+    {
+      "title": "侠盗飞车罪恶都市咋下载免费的，求大佬给资源？ - 知乎",
+      "url": "https://www.zhihu.com/question/301549544",
+      "snippet": "这个游戏必须使用中文来说，不然根本看不懂，小时候玩得时候都是 开一个坦克到处乱炸！ 在实测的过程中，我安装侠盗飞车也花了 …"
+    },
+    {
+      "title": "IBM怎么样？ - 知乎",
+      "url": "https://www.zhihu.com/question/309362944",
+      "snippet": "IBM大连的确不是IBM大中华区（IBMGCG）也不是GBS，但受它们影响是肯定的，IBM大连是GDC也就是交付中心，后改名叫CIC创 …"
+    },
+    {
+      "title": "Find a Panel Physician",
+      "url": "https://www.cic.gc.ca/pp-md/pp-list.aspx",
+      "snippet": "Mar 12, 2024 · Find a doctor you may visit in your country, territory or region for your immigration medical exam. Only Panel …"
+    }
+  ]
+}

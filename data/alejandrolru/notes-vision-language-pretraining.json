@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "alejandrolru/notes-vision-language-pretraining",
+  "slug": "alejandrolru-notes-vision-language-pretraining",
+  "author": "alejandrolru",
+  "url": "https://huggingface.co/alejandrolru/notes-vision-language-pretraining",
+  "created_at": "2026-09-15T14:44:42.000Z",
+  "updated_at": "2026-09-15T14:44:47.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "vision-language-pretraining",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GESTIS-Stoffdatenbank",
+      "url": "https://gestis.dguv.de/",
+      "snippet": "Die Daten in der GESTIS-Stoffdatenbank werden sorgfältig erstellt und gepflegt. Dennoch kann, gleich aus welchem Rechtsgrund, …"
+    },
+    {
+      "title": "GESTIS-Stoffdatenbank",
+      "url": "https://gestis.dguv.de/data?name=100321",
+      "snippet": "IFA: Erfassungs- und Pflegehandbuch der GESTIS-Stoffdatenbank (nicht öffentlich) Data acquisition and maintenance manual of the …"
+    },
+    {
+      "title": "GESTIS-Stoffdatenbank",
+      "url": "https://gestis.dguv.de/search",
+      "snippet": "ZVG-Nummer - eindeutige Identifikationsnummer für ein Datenblatt in der GESTIS-Stoffdatenbank. Sie besteht aus 4, 5 oder 6 …"
+    },
+    {
+      "title": "GESTIS-Stoffdatenbank",
+      "url": "https://gestis.dguv.de/list",
+      "snippet": "Home Liste A-Z Suche Datenblatt A B C D E F G H I J K L M N O P Q R S T U V W X Y Z"
+    },
+    {
+      "title": "GESTIS-Stoffdatenbank",
+      "url": "https://gestis.dguv.de/data?name=017790",
+      "snippet": "GESTIS-Stoffdatenbank Kein Stoff ausgewählt"
+    }
+  ]
+}

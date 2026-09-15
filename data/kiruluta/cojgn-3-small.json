@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "kiruluta/COJGN-3-small",
+  "slug": "kiruluta-cojgn-3-small",
+  "author": "kiruluta",
+  "url": "https://huggingface.co/kiruluta/COJGN-3-small",
+  "created_at": "2026-09-15T15:51:28.000Z",
+  "updated_at": "2026-09-15T16:11:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "cojgn",
+    "text-classification",
+    "pytorch",
+    "geometric-deep-learning",
+    "differential-geometry",
+    "higher-order-neural-networks",
+    "custom-code",
+    "research",
+    "tabular-classification",
+    "custom_code",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23750,
+  "parameters_human": "23750",
+  "storage_bytes": 97904,
+  "storage_human": "97904 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Online Games at Poki - Play Now!",
+      "url": "https://poki.com/?msockid=390bafdc7f466789231db8097e9666fb",
+      "snippet": "Play free online games at Poki, the #1 website for instant web games. Explore exclusive titles, popular favorites, and new game …"
+    },
+    {
+      "title": "Poki - Kostenlose Onlinespiele - Jetzt spielen!",
+      "url": "https://poki.com/de?msockid=390bafdc7f466789231db8097e9666fb",
+      "snippet": "Poki bringt die beste Auswahl an kostenlosen Online-Spielen und bietet das unterhaltsamste Erlebnis, allein oder mit Freunden zu …"
+    },
+    {
+      "title": "Poki - kostenlose Online-Spiele - Jetzt spielen!",
+      "url": "https://poki.us.com/de/",
+      "snippet": "Poki ist eine völlig kostenlose Plattform, auf der Sie auf Tausende kostenloser Online-Spiele zugreifen können. Sie können alle Ihre …"
+    },
+    {
+      "title": "Free Online Games - Play Instantly | Poki",
+      "url": "https://poki.uk.com/",
+      "snippet": "Play free online games on Poki. Browse hand-reviewed action, puzzle, racing, sports and skill games with practical guides and no …"
+    },
+    {
+      "title": "New Games — Poki",
+      "url": "https://poki.ac/new/",
+      "snippet": "This webpage contains all our latest game releases. if you are into discovering new games, this list will help you discover the latest …"
+    }
+  ]
+}

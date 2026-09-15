@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "tom12131231/FMPose3D",
+  "slug": "tom12131231-fmpose3d",
+  "author": "tom12131231",
+  "url": "https://huggingface.co/tom12131231/FMPose3D",
+  "created_at": "2026-09-15T15:38:35.000Z",
+  "updated_at": "2026-09-15T15:38:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-3d",
+  "library": "fmpose3d",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "fmpose3d",
+    "pose-estimation",
+    "3d-pose-estimation",
+    "monocular",
+    "flow-matching",
+    "human-pose",
+    "animal-pose",
+    "pytorch",
+    "image-to-3d",
+    "en",
+    "dataset:human3.6m",
+    "dataset:animal3d",
+    "arxiv:2602.05755",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 246665977,
+  "storage_human": "247 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen-image-edit-2511-Q8_0.gguf · unsloth/Qwen-Image-Edit-2511 …",
+      "url": "https://huggingface.co/unsloth/Qwen-Image-Edit-2511-GGUF/blob/main/qwen-image-edit-2511-Q8_0.gguf",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "vantagewithai/Qwen-Image-Edit-2511-GGUF · Hugging Face",
+      "url": "https://huggingface.co/vantagewithai/Qwen-Image-Edit-2511-GGUF",
+      "snippet": "We are excited to introduce Qwen-Image-Edit-2511, an enhanced version over Qwen-Image-Edit-2509, featuring multiple …"
+    },
+    {
+      "title": "How to Use Qwen-Image-Edit-2511 GGUF in ComfyUI - kombitz",
+      "url": "https://www.kombitz.com/2025/12/23/how-to-use-qwen-image-edit-2511-gguf-in-comfyui/",
+      "snippet": "Dec 23, 2025 · Learn how to use Qwen-Image-Edit-2511 GGUF in ComfyUI to create precise AI image edits with strong consistency, …"
+    },
+    {
+      "title": "Qwen-Image-Edit-2511 ComfyUI Native Workflow Example",
+      "url": "https://docs.comfy.org/tutorials/image/qwen/qwen-image-edit-2511",
+      "snippet": "Edit images with Qwen-Image-Edit-2511 in ComfyUI, with improved character consistency, multi-person editing, LoRA support, and …"
+    },
+    {
+      "title": "Qwen-Image-Edit-2511: Improve Consistency",
+      "url": "https://qwen.ai/blog?id=qwen-image-edit-2511",
+      "snippet": "Dec 22, 2025 · We are excited to introduce Qwen-Image-Edit-2511, an enhanced version over Qwen-Image-Edit-2509, featuring …"
+    }
+  ]
+}

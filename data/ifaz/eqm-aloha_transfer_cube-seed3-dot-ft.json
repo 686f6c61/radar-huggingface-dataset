@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "iFaz/eqm-aloha_transfer_cube-seed3-dot-ft",
+  "slug": "ifaz-eqm-aloha_transfer_cube-seed3-dot-ft",
+  "author": "iFaz",
+  "url": "https://huggingface.co/iFaz/eqm-aloha_transfer_cube-seed3-dot-ft",
+  "created_at": "2026-09-15T14:46:48.000Z",
+  "updated_at": "2026-09-15T14:46:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "eqm",
+    "dataset:lerobot/aloha_sim_transfer_cube_human",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18701190,
+  "parameters_human": "18.7M",
+  "storage_bytes": 74832124,
+  "storage_human": "75 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Garten- & Landschaftsbau Rech :: Home",
+      "url": "https://www.galabau-rech.de/",
+      "snippet": "Wir sind ein Unternehmen im Bereich Garten- und Landschaftsbau im Rhein-Hunsrück-Kreis. Unser größter Tätigkeitsbereich liegt im …"
+    },
+    {
+      "title": "iFaz/eqm-aloha_transfer_cube-seed3-12sep2026_2pm · Hugging Face",
+      "url": "https://huggingface.co/iFaz/eqm-aloha_transfer_cube-seed3-12sep2026_2pm",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Garten- & Landschaftsbau Rech :: Über uns",
+      "url": "https://www.galabau-rech.de/uns.html",
+      "snippet": "Wir sind ein Kleinunternehmen im Bereich Garten- und Landschaftsbau im Rhein-Hunsrück-Kreis. Unser Betrieb wurde im Jahre …"
+    },
+    {
+      "title": "iFaz/eqm-aloha_transfer_cube-seed3-12sep2026_3pm · Hugging Face",
+      "url": "https://huggingface.co/iFaz/eqm-aloha_transfer_cube-seed3-12sep2026_3pm",
+      "snippet": "Instructions to use iFaz/eqm-aloha_transfer_cube-seed3-12sep2026_3pm with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Landschaftsbauer in Rech » Über 322 Top Fachbetriebe - gartenbau…",
+      "url": "https://www.gartenbau.org/rech/landschaftsbau",
+      "snippet": "Sie suchen einen Gartenbauer in Ihrer Nähe? Landschaftsbauer in Rech & Umgebung Qualifizierte Landschaftsbauer Kostenlos …"
+    }
+  ]
+}

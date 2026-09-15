@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jowan-g2007/video-understanding",
+  "slug": "jowan-g2007-video-understanding",
+  "author": "jowan-g2007",
+  "url": "https://huggingface.co/jowan-g2007/video-understanding",
+  "created_at": "2026-09-15T13:25:26.000Z",
+  "updated_at": "2026-09-15T13:25:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "video-understanding",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Welcome | Brussels South Charleroi Airport",
+      "url": "https://www.brussels-charleroi-airport.com/en",
+      "snippet": "Brussels South Charleroi Airport enhances the passenger... Brussels South Charleroi Airport obtains the international... Brussels …"
+    },
+    {
+      "title": "Bienvenue | Brussels South Charleroi Airport",
+      "url": "https://www.brussels-charleroi-airport.com/fr",
+      "snippet": "L’app mobile CRL Airport Le compagnon idéal pour préparer votre voyage sans stress et profiter d’un moment agréable à l’aéroport : …"
+    },
+    {
+      "title": "Accès & Parking - Brussels South Charleroi Airport",
+      "url": "https://www.brussels-charleroi-airport.com/fr/parking-access",
+      "snippet": "Brussels South Charleroi Airport En shuttle Des liaisons de navette de bus sont opérées au départ de Bruxelles (gare de Bruxelles …"
+    },
+    {
+      "title": "Access & Parking - Brussels South Charleroi Airport",
+      "url": "https://www.brussels-charleroi-airport.com/en/parking-access",
+      "snippet": "Brussels South Charleroi Airport By shuttle Shuttle bus connections are operated from Brussels (Brussels-midi station) and other …"
+    },
+    {
+      "title": "Welkom | Brussels South Charleroi Airport",
+      "url": "https://www.brussels-charleroi-airport.com/nl",
+      "snippet": "Stakingsaanzegging van de luchtverkeersleiders Aankondiging van Ryanair: BSCA zal de impact voor de... Brussels South Charleroi …"
+    }
+  ]
+}

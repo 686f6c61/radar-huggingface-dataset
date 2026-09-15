@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "utsabdahal34/NepaliGPT-base",
+  "slug": "utsabdahal34-nepaligpt-base",
+  "author": "utsabdahal34",
+  "url": "https://huggingface.co/utsabdahal34/NepaliGPT-base",
+  "created_at": "2026-09-15T11:31:17.000Z",
+  "updated_at": "2026-09-15T11:32:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ne"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "nepali",
+    "ne",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33674240,
+  "parameters_human": "33.7M",
+  "storage_bytes": 270041132,
+  "storage_human": "270 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook",
+      "url": "https://www.outlook.com/owa/schools.nyc.gov",
+      "snippet": ""
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.com/welearn365.com",
+      "snippet": ""
+    },
+    {
+      "title": "na01.safelinks.protection.outlook.com",
+      "url": "https://na01.safelinks.protection.outlook.com/apple-app-site-association",
+      "snippet": "{ \"applinks\": { \"apps\": [], \"details\": [ { \"appIDs\": [\"9KBH5RKYEW.com.microsoft.loop-dogfood\", \"SGGM6D27TK.com.microsoft.loop\"], …"
+    },
+    {
+      "title": "ps.outlook.com",
+      "url": "https://ps.outlook.com/Powershell",
+      "snippet": "Shërbimi Outlook për menaxhimin e email-eve dhe kalendarit tuaj."
+    },
+    {
+      "title": "Outlook.com",
+      "url": "https://olmoauth.outlook.com/api/googleoauthredir/outlook-oauth://com.microsoft.office.outlook/android/google/oauth2redirect?state=33456429-8e5c-44a5-9cc4-6cbe85698cb0",
+      "snippet": ""
+    }
+  ]
+}

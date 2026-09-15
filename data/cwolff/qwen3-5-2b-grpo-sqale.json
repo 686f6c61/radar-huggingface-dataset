@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "cwolff/qwen3.5-2b-grpo-sqale",
+  "slug": "cwolff-qwen3-5-2b-grpo-sqale",
+  "author": "cwolff",
+  "url": "https://huggingface.co/cwolff/qwen3.5-2b-grpo-sqale",
+  "created_at": "2026-09-15T15:27:22.000Z",
+  "updated_at": "2026-09-15T16:10:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-to-sql",
+    "agentic",
+    "grpo",
+    "reinforcement-learning",
+    "sql",
+    "vllm",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:cwolff/queries",
+    "dataset:cwolff/schemas",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2274069824,
+  "parameters_human": "2.27B",
+  "storage_bytes": 4561024790,
+  "storage_human": "4.6 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Store Finder - Lidl US",
+      "url": "https://www.lidl.com/c/store-finder/s10089075",
+      "snippet": "Store Finder & Opening Hours Search by your Zip Code or City to find your nearest Lidl and start saving!"
+    },
+    {
+      "title": "Lidl in Dubai and UAE: Is There a Store Near You? (2026)",
+      "url": "https://dubaitweeks.com/places/lidl-in-dubai-uae/",
+      "snippet": "Mar 8, 2026 · If you live in the UAE and are searching for a Lidl near you, this guide explains what Lidl is, why so many UAE …"
+    },
+    {
+      "title": "Store Finder - Lidl GB",
+      "url": "https://www.lidl.co.uk/c/store-finder/s10023098",
+      "snippet": "Pop your postcode into the box and click your nearest store to see opening times and all the offers within grabbing distance. Never …"
+    },
+    {
+      "title": "2GIS",
+      "url": "https://2gis.ae/",
+      "snippet": "2GIS works swimmingly in the latest versions of browsers, but in the older ones there might be oopsies. It seems that your browser …"
+    },
+    {
+      "title": "Day to Day UAE - Affordable Shopping Every Day",
+      "url": "https://www.daytodayuae.com/",
+      "snippet": "Explore offers, locations, and new arrivals across UAE."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "DorianAtSchool/RoboTalk-Qwen3-VL-8B-Instruct-120traj",
+  "slug": "dorianatschool-robotalk-qwen3-vl-8b-instruct-120traj",
+  "author": "DorianAtSchool",
+  "url": "https://huggingface.co/DorianAtSchool/RoboTalk-Qwen3-VL-8B-Instruct-120traj",
+  "created_at": "2026-09-15T11:52:39.000Z",
+  "updated_at": "2026-09-15T11:52:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "robotics",
+    "multi-agent",
+    "vision-language",
+    "base_model:adapter:Qwen/Qwen3-VL-8B-Instruct",
+    "image-text-to-text",
+    "en",
+    "dataset:DorianAtSchool/RoboTalk",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 174663096,
+  "storage_human": "175 MB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/r.php/",
+      "snippet": "Get started on Facebook Create an account to connect with friends, family and communities of people who share your interests."
+    },
+    {
+      "title": "Meta for Business (formerly Facebook for Business)",
+      "url": "https://business.facebook.com/",
+      "snippet": "• Save time by accessing everything you need to manage your business across Facebook, Instagram and Messenger all in one place …"
+    },
+    {
+      "title": "Meta for Business: Marketing Solutions on Facebook and Instagram",
+      "url": "https://ads.facebook.com/",
+      "snippet": "Meta for Business provides marketing and advertising tools, tips, best practices, and case studies for using Facebook and Instagram …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://upload.facebook.com/login/identify/",
+      "snippet": "Enter your mobile number or email. Mobile number or email"
+    }
+  ]
+}

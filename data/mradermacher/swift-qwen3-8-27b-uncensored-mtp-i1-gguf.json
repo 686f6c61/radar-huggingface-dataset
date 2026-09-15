@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Swift-Qwen3.8-27B-Uncensored-MTP-i1-GGUF",
+  "slug": "mradermacher-swift-qwen3-8-27b-uncensored-mtp-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Swift-Qwen3.8-27B-Uncensored-MTP-i1-GGUF",
+  "created_at": "2026-09-15T12:01:35.000Z",
+  "updated_at": "2026-09-15T12:14:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 39471868768,
+  "storage_human": "39.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.com/?hl=fr",
+      "snippet": "Le service sans frais de Google traduit instantanément des mots, des expressions et des pages Web entre le français et plus de 100 …"
+    },
+    {
+      "title": "Google Translate - A Personal Interpreter on Your Phone or Computer",
+      "url": "https://translate.google.com/about/",
+      "snippet": "Learn how to translate text, speech, images, documents, websites, and more with Google Translate."
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/m",
+      "snippet": "Google home Send feedback Privacy and terms Switch to full site"
+    },
+    {
+      "title": "Google Traduction : un interprète personnel sur votre téléphone ou ...",
+      "url": "https://translate.google.com/intl/fr/about/",
+      "snippet": "Découvrez comment traduire du texte, des conversations, des images, des documents, des sites Web et bien plus avec Google …"
+    },
+    {
+      "title": "Google Traduction : un interprète personnel sur votre téléphone ou ...",
+      "url": "https://translate.google.com/intl/fr-CA/about/",
+      "snippet": "Comprenez votre monde et communiquez dans plusieurs langues avec Google Traduction. Traduisez des textes, des discours, des …"
+    }
+  ]
+}

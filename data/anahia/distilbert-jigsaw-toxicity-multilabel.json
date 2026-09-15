@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "Anahia/distilbert-jigsaw-toxicity-multilabel",
+  "slug": "anahia-distilbert-jigsaw-toxicity-multilabel",
+  "author": "Anahia",
+  "url": "https://huggingface.co/Anahia/distilbert-jigsaw-toxicity-multilabel",
+  "created_at": "2026-09-15T13:36:45.000Z",
+  "updated_at": "2026-09-15T13:48:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66957317,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267841796,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

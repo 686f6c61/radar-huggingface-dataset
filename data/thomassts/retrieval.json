@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "thomassts/retrieval",
+  "slug": "thomassts-retrieval",
+  "author": "thomassts",
+  "url": "https://huggingface.co/thomassts/retrieval",
+  "created_at": "2026-09-15T16:50:09.000Z",
+  "updated_at": "2026-09-15T16:50:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Farm to Table Bistro - Fine Dining Restaurant - Fishkill, NY",
+      "url": "https://www.ftbistro.com/",
+      "snippet": "We are Farm to Table Bistro located in Fishkill, NY. We source most of our ingredients from local farmers and creameries and use as …"
+    },
+    {
+      "title": "Reservation Policy - Farm to Table Bistro",
+      "url": "https://www.ftbistro.com/reservation-policy/",
+      "snippet": "Reservation Policy Farm to Table Bistro: Reservation Policy Thank you for taking the time to review our reservation policy. We greatly …"
+    },
+    {
+      "title": "Specials - Farm to Table Bistro",
+      "url": "https://www.ftbistro.com/specials/",
+      "snippet": "Specials Farm to Table Bistro Brunch All the Prosecco/Mimosa’s you can Drink $19 11:00 AM to 3:00 PM Classic Platter 22 3 eggs …"
+    },
+    {
+      "title": "Wine List - Farm to Table Bistro",
+      "url": "https://www.ftbistro.com/wine-list/",
+      "snippet": "Wine List We have carefully some of the best values in wine and have assembled them her for your pleasure. Some will be familiar …"
+    },
+    {
+      "title": "FTT 11x17MenuOCT2021 TAKE 2 - Farm to Table Bistro",
+      "url": "https://www.ftbistro.com/wp-content/uploads/2020/07/FTT_11x17Menu_Covid2.pdf",
+      "snippet": "1083 ROUTE 9 | LAWRENCE FARMS MARKET SQUARE | FISHKILL, NY 12524 845.297.1111 | WWW.FTBISTRO.COM"
+    }
+  ]
+}

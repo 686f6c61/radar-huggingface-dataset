@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sarodr-iguez96/postdoc-retrieval",
+  "slug": "sarodr-iguez96-postdoc-retrieval",
+  "author": "sarodr-iguez96",
+  "url": "https://huggingface.co/sarodr-iguez96/postdoc-retrieval",
+  "created_at": "2026-09-15T16:12:36.000Z",
+  "updated_at": "2026-09-15T16:12:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ubisoft | Welcome to the official Ubisoft website",
+      "url": "https://www.ubisoft.com/en-us",
+      "snippet": "Welcome to the official website for Ubisoft, creator of Assassin's Creed, Just Dance, Tom Clancy's video game series, Rayman, Far …"
+    },
+    {
+      "title": "Ubisoft | Ubisoft Offizielle Webseite",
+      "url": "https://www.ubisoft.com/de-de",
+      "snippet": "Welcome to the official website for Ubisoft, creator of Assassin's Creed, Just Dance, Tom Clancy's video game series, Rayman, Far …"
+    },
+    {
+      "title": "Ubisoft Store Deutschland - Neueste Spiele und exklusive Angebote",
+      "url": "https://store.ubisoft.com/de/home",
+      "snippet": "Genieße das ultimative Spielerlebnis mit neuen Spielen, Season Pässen und weiteren zusätzlichen Inhalten aus dem Ubisoft Store. …"
+    },
+    {
+      "title": "Ubisoft account management",
+      "url": "https://account.ubisoft.com/en-US/login",
+      "snippet": "Access your Ubisoft account for seamless gaming experiences and manage your account settings."
+    },
+    {
+      "title": "Ubisoft-Kontoverwaltung",
+      "url": "https://account.ubisoft.com/de-DE/login",
+      "snippet": "Log in to your Ubisoft account to access and manage your games, services, and settings."
+    }
+  ]
+}

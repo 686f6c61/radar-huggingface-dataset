@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Adpratama/classification-base68",
+  "slug": "adpratama-classification-base68",
+  "author": "Adpratama",
+  "url": "https://huggingface.co/Adpratama/classification-base68",
+  "created_at": "2026-09-15T15:00:24.000Z",
+  "updated_at": "2026-09-15T15:00:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rallye du Mont-Blanc 2026 (74) - RALLYEGO.com",
+      "url": "https://www.rallyego.com/rallye-du-mont-blanc/",
+      "snippet": "Aug 17, 2026 · 78e Rallye national Mont-Blanc – Morzine & VHC VHRS VMRS, organisé du 3 au 5 septembre 2026 par l’ASAC Mont …"
+    },
+    {
+      "title": "Rallye Mont-Blanc 2026",
+      "url": "https://rallye-sport.ouest-france.fr/rallye-mont-blanc-2026/",
+      "snippet": "Sep 3, 2026 · Le rallye Mont-Blanc Morzine 2026 accueillera une nouvelle fois la sixième manche du championnat de France …"
+    },
+    {
+      "title": "Rallye Mont-Blanc Morzine 2026 : les 12 spéciales et les horaires",
+      "url": "https://www.rallye-infos.site/rallye-mont-blanc-morzine-2026-programme-speciales-horaires/",
+      "snippet": "Aug 8, 2026 · Liste des engagés, ordre de départ, résultats en direct et debriefing : retrouvez toute la couverture du 78e Rallye Mont …"
+    },
+    {
+      "title": "78ème Rallye Mont-Blanc Morzine | RALLYE | FFSA",
+      "url": "https://www.ffsa.org/disciplines/rallye/78eme-Rallye-Mont-Blanc-Morzine-2026-64113426/live",
+      "snippet": "Suivez les résultats en direct et les détails du 78ème Rallye Mont-Blanc Morzine, Championnat de France des Rallyes. Ce Rallye se …"
+    },
+    {
+      "title": "Rallye Mont-Blanc Morzine",
+      "url": "https://www.rallye-mont-blanc-morzine.com/",
+      "snippet": "Le début d’une nouvelle saison du Rallye Mont-Blanc Morzine est toujours un moment très attendu par les passionnés de sport …"
+    }
+  ]
+}

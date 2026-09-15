@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "aoiandroid/Qwen3.5-0.8B-Base",
+  "slug": "aoiandroid-qwen3-5-0-8b-base",
+  "author": "aoiandroid",
+  "url": "https://huggingface.co/aoiandroid/Qwen3.5-0.8B-Base",
+  "created_at": "2026-09-15T18:17:59.000Z",
+  "updated_at": "2026-09-15T18:17:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 873438784,
+  "parameters_human": "873.4M",
+  "storage_bytes": 1759749796,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VLC Media Player | NTLite Forums",
+      "url": "https://www.ntlite.com/community/threads/vlc-media-player.1928/",
+      "snippet": "Sep 9, 2024 · VLC uses a Nullsoft installer, so the correct flag is /S, and not /s. The flag is case-sensitive, unlike other installers. Do …"
+    },
+    {
+      "title": "ip webcam activex viewer - The VideoLAN Forums",
+      "url": "https://forum.videolan.org/viewtopic.php?t=47717",
+      "snippet": "Is it possible, to somehow capture this stream, with vlc, and re-stream with vlc to the lamp server. SPEEDDOME ---> VLC ---> VLC -- …"
+    },
+    {
+      "title": "vlc always resets itself upon close - The VideoLAN Forums",
+      "url": "https://forum.videolan.org/viewtopic.php?t=19949",
+      "snippet": "Apr 29, 2006 · vlc always resets itself upon close Postby apropos » Sat Apr 29, 2006 1:38 am Hi I am using VLC on WinXP. To start …"
+    },
+    {
+      "title": "vlc coliding with any other sound app on my gentoo box",
+      "url": "https://forum.videolan.org/viewtopic.php?t=103618",
+      "snippet": "Aug 20, 2012 · vlc coliding with any other sound app on my gentoo box by e3k » Mon Aug 20, 2012 7:39 pm what is vlc doing since …"
+    },
+    {
+      "title": "VP9 playback fails in VLC 2.2.0 - The VideoLAN Forums",
+      "url": "https://forum.videolan.org/viewtopic.php?t=124440",
+      "snippet": "Mar 1, 2015 · Re: VP9 playback fails in VLC 2.2.0 by groberUnfug » Sun Mar 01, 2015 12:55 pm Thanks a lot This seems to be the …"
+    }
+  ]
+}

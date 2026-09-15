@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "aquaduck/Llama-3.2-3B-Instruct-F16-GGUF",
+  "slug": "aquaduck-llama-3-2-3b-instruct-f16-gguf",
+  "author": "aquaduck",
+  "url": "https://huggingface.co/aquaduck/Llama-3.2-3B-Instruct-F16-GGUF",
+  "created_at": "2026-09-15T18:28:48.000Z",
+  "updated_at": "2026-09-15T18:29:08.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "aquaduck",
+    "meta-llama",
+    "conversational",
+    "layer-shards",
+    "text-generation",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1803374656,
+  "parameters_human": "1.80B",
+  "storage_bytes": 13663202848,
+  "storage_human": "13.7 GB",
+  "base_model": "meta-llama/llama-3.2-3b-instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Infogreffe",
+      "url": "https://www.infogreffe.fr/",
+      "snippet": "Infogreffe est le site officiel pour accéder aux informations légales des entreprises et commander des documents officiels comme …"
+    },
+    {
+      "title": "Extrait kbis - Infogreffe",
+      "url": "https://www.infogreffe.fr/kbis-documents/extrait-kbis",
+      "snippet": "Carte d’identité de l’entreprise, l’extrait Kbis est le seul document officiel attestant de son existence légale et regroupant des …"
+    },
+    {
+      "title": "Cecurweb - Infogreffe",
+      "url": "https://securigreffe.infogreffe.fr/infogreffe/",
+      "snippet": "Accédez au service Sécurigreffe pour gérer et sécuriser vos documents confidentiels en ligne via la plateforme Infogreffe."
+    },
+    {
+      "title": "Comment obtenir un extrait Kbis ? – Infogreffe",
+      "url": "https://support.infogreffe.fr/hc/fr/articles/19169258840988-Comment-obtenir-un-extrait-Kbis",
+      "snippet": "Apr 23, 2025 · Pour commander un Kbis, il vous suffit de : Accéder à la page d’accueil du site infogreffe.fr Rechercher l’entreprise …"
+    },
+    {
+      "title": "Infogreffe",
+      "url": "https://support.infogreffe.fr/hc/fr",
+      "snippet": "Comment joindre le support infogreffe Je ne peux pas accéder à mon compte Comment commander un Kbis périodique ? Pourquoi …"
+    }
+  ]
+}

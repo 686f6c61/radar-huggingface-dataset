@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "lamshiu/lm-optimization",
+  "slug": "lamshiu-lm-optimization",
+  "author": "lamshiu",
+  "url": "https://huggingface.co/lamshiu/lm-optimization",
+  "created_at": "2026-09-15T15:59:24.000Z",
+  "updated_at": "2026-09-15T16:31:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 139029978,
+  "storage_human": "139 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux pièces …"
+    },
+    {
+      "title": "Descargar YouTube: PC / Mac / Android (APK)",
+      "url": "https://es.ccm.net/descargas/entretenimiento/6598-youtube/",
+      "snippet": "Feb 12, 2024 · YouTube se puede conectar a Facebook, Twitter, Talk, Reddit, Pinterest, Tumblr, LinkedIn y más. Asimismo, …"
+    },
+    {
+      "title": "Descargar Snaptube: PC, Android (APK) - CCM",
+      "url": "https://es.ccm.net/descargas/internet/6550-snaptube/",
+      "snippet": "Feb 6, 2024 · Snaptube es un programa que descarga de forma rápida y sencilla contenidos de YouTube y otras plataformas como …"
+    },
+    {
+      "title": "Publicación pendiente en grupo de Facebook - CCM - Foro tecnológico",
+      "url": "https://forums.commentcamarche.net/forum/affich-38065372-publication-en-attente-sur-groupe-facebook?lang=es",
+      "snippet": "¡Hola! ¡Soy Bobot, la IA del foro! Puede haber varias razones por las que tus publicaciones están pendientes de aprobación en …"
+    },
+    {
+      "title": "SIM Swapping : une alerte de la gendarmerie révèle une faille cri ...",
+      "url": "https://www.zdnet.fr/actualites/sim-swapping-une-alerte-de-la-gendarmerie-revele-une-faille-critique-pour-la-securite-des-entreprises-502932.htm",
+      "snippet": "Sep 7, 2026 · C'est cette fois une alerte de la gendarmerie de la Somme qui met en lumière l'épidémie de SIM Swapping. Entre …"
+    }
+  ]
+}

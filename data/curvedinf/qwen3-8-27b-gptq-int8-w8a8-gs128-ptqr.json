@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "curvedinf/Qwen3.8-27B-GPTQ-INT8-W8A8-GS128-PTQR",
+  "slug": "curvedinf-qwen3-8-27b-gptq-int8-w8a8-gs128-ptqr",
+  "author": "curvedinf",
+  "url": "https://huggingface.co/curvedinf/Qwen3.8-27B-GPTQ-INT8-W8A8-GS128-PTQR",
+  "created_at": "2026-09-15T15:37:50.000Z",
+  "updated_at": "2026-09-15T15:50:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.8",
+    "gptq",
+    "int8",
+    "w8a8",
+    "gs128",
+    "ptqr",
+    "quantized",
+    "vllm",
+    "amd",
+    "mi100",
+    "gfx908",
+    "rocm",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 31846306941,
+  "storage_human": "31.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn Italia: accedi o iscriviti",
+      "url": "https://it.linkedin.com/",
+      "snippet": "A chi può servire LinkedIn? A chiunque voglia orientarsi nella vita professionale."
+    },
+    {
+      "title": "LinkedIn: Log In or Sign Up",
+      "url": "https://www.linkedin.com/",
+      "snippet": "May 2, 2026 · Explore top LinkedIn content Discover relevant posts and expert insights — curated by topic and in one place."
+    },
+    {
+      "title": "Accesso a LinkedIn, Accesso | LinkedIn",
+      "url": "https://www.linkedin.com/login/it",
+      "snippet": "Accedi a LinkedIn per rimanere in contatto con le persone che conosci, condividere idee e far decollare la tua carriera."
+    },
+    {
+      "title": "LinkedIn",
+      "url": "https://in.linkedin.com/company/linkedin",
+      "snippet": "Founded in 2003, LinkedIn connects the world's professionals to make them more productive and successful. With more than 1 billion …"
+    },
+    {
+      "title": "LinkedIn",
+      "url": "https://it.linkedin.com/company/linkedin",
+      "snippet": "Founded in 2003, LinkedIn connects the world's professionals to make them more productive and successful. With more than 1 billion …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "christopherijohnson/homework-contrastive-learning",
+  "slug": "christopherijohnson-homework-contrastive-learning",
+  "author": "christopherijohnson",
+  "url": "https://huggingface.co/christopherijohnson/homework-contrastive-learning",
+  "created_at": "2026-09-15T15:34:08.000Z",
+  "updated_at": "2026-09-15T15:34:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "contrastive-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Le Nouvelliste - L'actualité valaisanne, suisse et internationale",
+      "url": "https://www.lenouvelliste.ch/",
+      "snippet": "Le Nouvelliste: les articles du journal et toute l'actualité en continu du Valais, de Suisse et du Monde"
+    },
+    {
+      "title": "Actualités Valais | Le Nouvelliste - L'actualité valaisanne, suisse ...",
+      "url": "https://www.lenouvelliste.ch/valais/",
+      "snippet": "Actualités Valais: toutes les informations en continu et en direct concernant Valais. Le Nouvelliste, le quotidien valaisan"
+    },
+    {
+      "title": "JOURNAL DIGITAL : Le Nouvelliste",
+      "url": "https://jd.lenouvelliste.ch/nouvelliste",
+      "snippet": "Sep 8, 2026 · Accédez à l'édition numérique du Nouvelliste pour suivre les actualités valaisannes, suisses et internationales en continu."
+    },
+    {
+      "title": "JOURNAL DIGITAL : Le Nouvelliste",
+      "url": "https://journaldigital.lenouvelliste.ch/",
+      "snippet": "6 days ago · Explorez le journal digital Le Nouvelliste pour accéder à l'actualité valaisanne, suisse et internationale en ligne."
+    },
+    {
+      "title": "JOURNAL DIGITAL : Le Nouvelliste",
+      "url": "http://journaldigital.lenouvelliste.ch/nouvelliste",
+      "snippet": "6 days ago · Accédez à l'édition numérique de Le Nouvelliste, le quotidien régional couvrant l'actualité valaisanne, suisse et …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "LeeHakHo/mimicgen_aux_id90_auxerr_ckpts",
+  "slug": "leehakho-mimicgen_aux_id90_auxerr_ckpts",
+  "author": "LeeHakHo",
+  "url": "https://huggingface.co/LeeHakHo/mimicgen_aux_id90_auxerr_ckpts",
+  "created_at": "2026-09-15T17:32:37.000Z",
+  "updated_at": "2026-09-15T17:50:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robomimic",
+    "mimicgen",
+    "imitation-learning",
+    "auxiliary-task",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59154301520,
+  "storage_human": "59.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How do you contact a real human on steam support? :: Help and Tips",
+      "url": "https://steamcommunity.com/discussions/forum/1/3791506516121810110/",
+      "snippet": "How do you contact a real human on steam support? I have an issue that requires a real person to respond to it. The automated …"
+    },
+    {
+      "title": "How to speak with a human in Steam Support? :: Help and Tips",
+      "url": "https://steamcommunity.com/discussions/forum/1/4511003483563325672/",
+      "snippet": "Aug 7, 2024 · Steam Support does not restore items that have left accounts for any reason, including trades, market transactions, …"
+    },
+    {
+      "title": "Sign In - Steam Community",
+      "url": "https://steamcommunity.com/login",
+      "snippet": "Sign in Help, I can't sign in Or sign in with QR Use the Steam Mobile App to sign in via QR Code"
+    },
+    {
+      "title": "Steam Community :: Steam Link",
+      "url": "https://steamcommunity.com/app/353380",
+      "snippet": "Steam Link app doesn’t support Hardware Decoding on Google Streamer or Chromecast w/ Google TV Hoping this can be improved, …"
+    },
+    {
+      "title": "How To Contact Steam Support - Steam Community :: Guide",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1653986124",
+      "snippet": "Feb 12, 2019 · This will show you which page(s) and steps you need to take to contact Steam Support, depending on what your issue …"
+    }
+  ]
+}

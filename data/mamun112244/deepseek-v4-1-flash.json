@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Mamun112244/DeepSeek-V4.1-Flash",
+  "slug": "mamun112244-deepseek-v4-1-flash",
+  "author": "Mamun112244",
+  "url": "https://huggingface.co/Mamun112244/DeepSeek-V4.1-Flash",
+  "created_at": "2026-09-15T16:49:20.000Z",
+  "updated_at": "2026-09-15T16:49:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v41",
+    "text-generation",
+    "image-text-to-text",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763205315794,
+  "parameters_human": "763.21B",
+  "storage_bytes": 510299192278,
+  "storage_human": "510.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "الملخص - ادخر في مواردك - الصف الثامن - الثقافة المالية 8 فص",
+      "url": "https://www.joacademy.com/e-school/lesson/%D8%A7%D8%AF%D8%AE%D8%B1-%D9%81%D9%8A-%D9%85%D9%88%D8%A7%D8%B1%D8%AF%D9%83-463/abstract-sheet",
+      "snippet": "يمكن الادخار في الكثير من المواد والأشياء غير النقود مثل الماء والكهرباء والطاقة والأوراق والأقلام ...."
+    },
+    {
+      "title": "الملخص ادخر مواردك – NBKomputer",
+      "url": "https://nbkomputer.com/tag/%d8%a7%d9%84%d9%85%d9%84%d8%ae%d8%b5-%d8%a7%d8%af%d8%ae%d8%b1-%d9%85%d9%88%d8%a7%d8%b1%d8%af%d9%83/",
+      "snippet": "الملخص – ادخر في مواردك – الصف الثامن – الثقافة المالية 8 فصل ثاني – هنا يمكنك تصفح مدرسة جو اكاديمي، المنهاج، اسئلة، شروحات، والكثير أيضاً الشرح – ادخر في مواردك – الصف الثامن …"
+    },
+    {
+      "title": "الوحدة الأولى الدرس الثاني ادخر في مو – NBKomputer",
+      "url": "https://nbkomputer.com/%d8%a7%d9%84%d9%88%d8%ad%d8%af%d8%a9-%d8%a7%d9%84%d8%a3%d9%88%d9%84%d9%89-%d8%a7%d9%84%d8%af%d8%b1%d8%b3-%d8%a7%d9%84%d8%ab%d8%a7%d9%86%d9%8a-%d8%a7%d8%af%d8%ae%d8%b1-%d9%81%d9%8a-%d9%85%d9%88/",
+      "snippet": "الدرس الأول: ادخار الأعمال … شرح درس ادخر في مواردك – YouTube شرح الدرس الثاني ادخر في مواردك الثقافة المالية الصف الثامن مع حل الاسئلة Qusai 🤷‍♂️ 4.31K subscribers …"
+    },
+    {
+      "title": "الشرح - قرارات الادخار - الصف الثامن - الثقافة المالية 8 فصل",
+      "url": "https://www.joacademy.com/e-school/lesson/%D9%82%D8%B1%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AF%D8%AE%D8%A7%D8%B1-1227",
+      "snippet": "هل حسبت مقدار المبلغ المالي الذي حصلت عليه في شهر ما؟ وما المبلغ الذي صرفته في ذلك الشهر؟ هل فكرت فعلياً في كيفية ادخار فائض أموالك؟ أو لماذا تتعرض في نهاية الشهر إلى زيادة مصروفاتك عن …"
+    },
+    {
+      "title": "الدرس الثاني: ادخر في مواردك - منهاجي",
+      "url": "https://minhaji.net/lesson/16062",
+      "snippet": "الدرس الثاني: ادخر في مواردك 1 المفاهيم والمصطلحات 2 أسئلة الدرس الثاني 3 إجابات أسئلة الدرس"
+    }
+  ]
+}

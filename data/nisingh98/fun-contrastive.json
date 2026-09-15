@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nisingh98/fun-contrastive",
+  "slug": "nisingh98-fun-contrastive",
+  "author": "nisingh98",
+  "url": "https://huggingface.co/nisingh98/fun-contrastive",
+  "created_at": "2026-09-15T14:25:52.000Z",
+  "updated_at": "2026-09-15T14:25:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Buy | Official Online Store | Shop Now & Save",
+      "url": "https://www.bestbuy.com/",
+      "snippet": "Shop Best Buy for electronics, computers, appliances, cell phones, video games & more new tech. Store pickup & free 2-day …"
+    },
+    {
+      "title": "Best Buy Store Locator: Store Hours, Directions & Events",
+      "url": "https://www.bestbuy.com/site/store-locator",
+      "snippet": "Use the Best Buy store locator to find stores in your area. Then, visit each Best Buy store's page to see store hours, directions, news, …"
+    },
+    {
+      "title": "Best Buy Store Directory | Search by State Across the U.S.",
+      "url": "https://stores.bestbuy.com/",
+      "snippet": "Explore Best Buy store locations across the United States with our easy-to-use directory. Whether you're shopping for laptops, home …"
+    },
+    {
+      "title": "How to shop at Best Buy in your local area",
+      "url": "https://corporate.bestbuy.com/2023/how-to-shop/",
+      "snippet": "Sep 12, 2023 · There are 20 dedicated Best Buy Outlet stores that offer a wide assortment of discounted products from the …"
+    },
+    {
+      "title": "About Best Buy - Best Buy Corporate News and Information",
+      "url": "https://corporate.bestbuy.com/about-best-buy/",
+      "snippet": "At Best Buy, our purpose is to enrich lives through technology. We do that by leveraging our unique combination of tech expertise …"
+    }
+  ]
+}

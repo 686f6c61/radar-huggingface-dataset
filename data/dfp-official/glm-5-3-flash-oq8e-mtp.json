@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dfp-official/GLM-5.3-Flash-oQ8e-mtp",
+  "slug": "dfp-official-glm-5-3-flash-oq8e-mtp",
+  "author": "dfp-official",
+  "url": "https://huggingface.co/dfp-official/GLM-5.3-Flash-oQ8e-mtp",
+  "created_at": "2026-09-15T14:34:47.000Z",
+  "updated_at": "2026-09-15T14:35:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "glm5_next",
+    "oq",
+    "quantized",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321323031390,
+  "parameters_human": "321.32B",
+  "storage_bytes": 342249464333,
+  "storage_human": "342.2 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DFP Affaires - En savoir plus",
+      "url": "https://www.lefrancaisdesaffaires.fr/candidat/diplomes-francais-professionnel/dfp-affaires/presentation/",
+      "snippet": "Accueil Je suis candidat Je suis candidat DFP Diplôme de français des affaires En savoir plus"
+    },
+    {
+      "title": "Je suis candidat DFP - Le français des affaires",
+      "url": "https://www.lefrancaisdesaffaires.fr/candidat/diplomes-francais-professionnel/",
+      "snippet": "Je suis candidat (e) au Diplôme de français professionnel (DFP) Relations internationales Tourisme Hôtellerie Restauration"
+    },
+    {
+      "title": "Déficit fonctionnel permanent barème - Association Victimes de France",
+      "url": "https://association-aide-victimes-france.fr/accueil-association-daide-a-lindemnisation-victimes/bareme-calcul-indemnisation-accident/deficit-fonctionnel-permanent-bareme",
+      "snippet": "Définition du Déficit Fonctionnel Permanent (DFP) : C’est quoi ? Le déficit fonctionnel permanent correspond à l’incapacité définitive …"
+    },
+    {
+      "title": "Barème DFP : calcul du déficit fonctionnel permanent",
+      "url": "https://victime-info.fr/indemnisation/bareme-calcul-indemnisation-accident/deficit-fonctionnel-permanent-bareme",
+      "snippet": "Le tableau complet des valeurs du point et le simulateur figurent dans notre guide AIPP /DFP. Ce guide détaille le fonctionnement du …"
+    },
+    {
+      "title": "Déficit fonctionnel permanent : définition, barème et indemnisation",
+      "url": "https://www.joris-caunes-avocat-dommage-corporel.fr/blog/deficit-fonctionnel-permanent",
+      "snippet": "Sep 25, 2025 · Cet article vous explique ce qu’est le DFP, comment il est évalué et indemnisé, quelles démarches entreprendre pour …"
+    }
+  ]
+}

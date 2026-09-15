@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "andrewrobe/contrastive-aug",
+  "slug": "andrewrobe-contrastive-aug",
+  "author": "andrewrobe",
+  "url": "https://huggingface.co/andrewrobe/contrastive-aug",
+  "created_at": "2026-09-15T11:26:12.000Z",
+  "updated_at": "2026-09-15T11:26:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Menelusuri menurut lintang & bujur di Google Maps",
+      "url": "https://support.google.com/maps/answer/18539?hl=id&co=GENIE.Platform%3DDesktop",
+      "snippet": "Di komputer, buka Google Maps. Di peta, klik kanan tempat atau area. Jendela pop-up akan muncul. Di bagian atas, Anda dapat …"
+    },
+    {
+      "title": "Google Maps - Reddit",
+      "url": "https://www.reddit.com/r/GoogleMaps/",
+      "snippet": "r/GoogleMaps is participating in ongoing protests regarding changes to Reddit's API accessibility. The subreddit may reopen at some …"
+    },
+    {
+      "title": "My Maps Help - Google Help",
+      "url": "https://support.google.com/mymaps/?hl=en",
+      "snippet": "Official My Maps Help Center where you can find tips and tutorials on using My Maps and other answers to frequently asked questions."
+    },
+    {
+      "title": "How to Display Multiple Google Maps per page with API V3",
+      "url": "https://stackoverflow.com/questions/4074520/how-to-display-multiple-google-maps-per-page-with-api-v3",
+      "snippet": "Nov 2, 2010 · OP wanted two specific maps, but if you'd like to have a dynamic number of maps on one page (for instance a list of …"
+    },
+    {
+      "title": "Google Maps shows \"For development purposes only\"",
+      "url": "https://stackoverflow.com/questions/50977913/google-maps-shows-for-development-purposes-only",
+      "snippet": "Now google maps is free for development only. If you want to use map free like earlier, then create an account with valid details …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Leonyly7970/review-vision-language-pretraining53",
+  "slug": "leonyly7970-review-vision-language-pretraining53",
+  "author": "Leonyly7970",
+  "url": "https://huggingface.co/Leonyly7970/review-vision-language-pretraining53",
+  "created_at": "2026-09-15T13:23:26.000Z",
+  "updated_at": "2026-09-15T13:23:31.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "vision-language-pretraining",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nachrichten, aktuelle Schlagzeilen und Videos - n-tv.de",
+      "url": "https://www.n-tv.de/",
+      "snippet": "Nachrichten seriös, schnell und kompetent. Artikel und Videos aus Politik, Wirtschaft, Börse, Sport und aller Welt."
+    },
+    {
+      "title": "Schlagzeilen und Videos des Tages chronologisch - n-tv.de",
+      "url": "https://www.n-tv.de/home/Das_Neueste/",
+      "snippet": "Die aktuellen ntv-Schlagzeilen auf einen Blick. Artikel und Videos aus Politik, Wirtschaft, Börse, Sport und aller Welt in …"
+    },
+    {
+      "title": "ntv Lotto: LOTTO online spielen",
+      "url": "https://lotto.n-tv.de/",
+      "snippet": "Sicher & seriös LOTTO online spielen Eurojackpot, LOTTO 6 aus 49, GlücksSpirale, KENO, Deutsche Fernsehlotterie, freiheit+ & mehr"
+    },
+    {
+      "title": "n-tv.de",
+      "url": "https://hbbtv-production.n-tv.de/index.html",
+      "snippet": "Die NTV Mediathek bietet Zugriff auf eine Vielzahl von Nachrichten, Livestreams und redaktionellen Inhalten aus Deutschland und …"
+    },
+    {
+      "title": "n-tv.de",
+      "url": "https://sport.n-tv.de/",
+      "snippet": "Aktuelle Sportnachrichten, Ergebnisse und Begegnungen aus Fußball, Tennis, Motorsport und mehr. Bleiben Sie informiert mit n-tv.de."
+    }
+  ]
+}

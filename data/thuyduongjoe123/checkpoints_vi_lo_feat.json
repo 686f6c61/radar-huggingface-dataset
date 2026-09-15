@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "thuyduongjoe123/checkpoints_vi_lo_feat",
+  "slug": "thuyduongjoe123-checkpoints_vi_lo_feat",
+  "author": "thuyduongjoe123",
+  "url": "https://huggingface.co/thuyduongjoe123/checkpoints_vi_lo_feat",
+  "created_at": "2026-09-15T16:08:42.000Z",
+  "updated_at": "2026-09-15T16:09:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452608258,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Self Publishing | Amazon Kindle Direct Publishing - kdp.amazon.com",
+      "url": "https://kdp.amazon.com/en_US",
+      "snippet": "KDP gives you control over your book's content, design, price, audience, and advertising. Self-publish easily Publish print and digital …"
+    },
+    {
+      "title": "Autopublicación | Amazon Kindle Direct Publishing",
+      "url": "https://kdp.amazon.com/es_ES/",
+      "snippet": "Le damos la bienvenida a Kindle Direct Publishing Publique sus propios libros digitales e impresos y llegue a millones de lectores de …"
+    },
+    {
+      "title": "Publicação independente de livro | Amazon Kindle Direct Publishing",
+      "url": "https://kdp.amazon.com/pt_BR/",
+      "snippet": "Saiba mais sobre o Kindle Direct Publishing Seja pago por cada página lida com o Kindle Unlimited Ganhe royalties por cada página …"
+    },
+    {
+      "title": "Autoédition | Amazon Kindle Direct Publishing",
+      "url": "https://kdp.amazon.com/fr_FR/",
+      "snippet": "Augmentez vos revenus avec Kindle Direct Publishing Recevez une rémunération pour chaque page lue avec l’abonnement Kindle …"
+    },
+    {
+      "title": "Create a KDP Account - kdp.amazon.com",
+      "url": "https://kdp.amazon.com/en_US/help/topic/G200620010",
+      "snippet": "Create a KDP Account Already have an Amazon account? To sign-in to your KDP account Go to https://kdp.amazon.com Under Sign …"
+    }
+  ]
+}

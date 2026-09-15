@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "DorianAtSchool/RoboTalk-Qwen3-VL-8B-Thinking-Rationale-90traj",
+  "slug": "dorianatschool-robotalk-qwen3-vl-8b-thinking-rationale-90traj",
+  "author": "DorianAtSchool",
+  "url": "https://huggingface.co/DorianAtSchool/RoboTalk-Qwen3-VL-8B-Thinking-Rationale-90traj",
+  "created_at": "2026-09-15T11:52:55.000Z",
+  "updated_at": "2026-09-15T11:52:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "robotics",
+    "multi-agent",
+    "vision-language",
+    "base_model:adapter:Qwen/Qwen3-VL-8B-Thinking",
+    "image-text-to-text",
+    "en",
+    "dataset:DorianAtSchool/RoboTalk",
+    "base_model:Qwen/Qwen3-VL-8B-Thinking",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 174663096,
+  "storage_human": "175 MB",
+  "base_model": "Qwen/Qwen3-VL-8B-Thinking",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alles über Wegovy: Wirkweise, Anwendung und Nebenwirkungen",
+      "url": "https://www.docmorris.de/ratgeber/wirkstofflexikon/wegovy?msockid=338f8c9b575665f338479b4e564f643b",
+      "snippet": "Wie wird Wegovy angewendet? Wegovy wird einmal wöchentlich subkutan (unter die Haut) gespritzt. Die Injektion kann in den …"
+    },
+    {
+      "title": "Wegovy® - Novo Nordisk",
+      "url": "https://pro.novonordisk.de/content/dam/hcp-plus/de/de_de/product/fi/FI_Wegovy.pdf",
+      "snippet": "Die Behandlung mit Wegovy® sollte abge-brochen und neu bewertet werden, wenn die jugendlichen Patienten ihren BMI nach 12 …"
+    },
+    {
+      "title": "Semaglutid – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Semaglutid",
+      "snippet": "Semaglutid ist ein Arzneistoff aus der Gruppe der GLP-1-Rezeptoragonisten, der zur Behandlung von Typ-2-Diabetes und zur …"
+    },
+    {
+      "title": "Wegovy (Semaglutid) 2026: Wirkung, Dosierung & Kauf (DE)",
+      "url": "https://abnehmspritze-ratgeber.de/wegovy-abnehmspritze/",
+      "snippet": "Sep 21, 2025 · Wegovy ist ein Medikament mit dem Wirkstoff Semaglutid, einem GLP-1-Rezeptoragonisten. Es wird in Form eines …"
+    },
+    {
+      "title": "Wegovy® Injektion - Fachinfo",
+      "url": "https://www.fachinfo.de/fi/detail/023614/wegovy-r-injektion",
+      "snippet": "6.2 Inkompatibilitäten 6.3 Dauer der Haltbarkeit 6.4 Besondere Vorsichtsmaßnahmen für die Aufbewahrung 6.5 Art und Inhalt des …"
+    }
+  ]
+}

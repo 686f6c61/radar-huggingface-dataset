@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Comlex5ystems/carbonFIBRE-100T",
+  "slug": "comlex5ystems-carbonfibre-100t",
+  "author": "Comlex5ystems",
+  "url": "https://huggingface.co/Comlex5ystems/carbonFIBRE-100T",
+  "created_at": "2026-09-15T16:05:57.000Z",
+  "updated_at": "2026-09-15T16:10:05.000Z",
+  "license": "gpl-2.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gpl-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1398299,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to get Face Camera in Roblox Move Your Face ! (Mobile",
+      "url": "https://www.youtube.com/watch?v=q0EX2ltg158",
+      "snippet": "Apr 20, 2026 · This step-by-step tutorial will help you enable Roblox face tracking, fix common issues, and make your avatar react to …"
+    },
+    {
+      "title": "Making the camera follow the player's head - Roblox",
+      "url": "https://devforum.roblox.com/t/making-the-camera-follow-the-players-head/3005766",
+      "snippet": "Jun 5, 2024 · My game is reliant on it’s animations for it to look good and I want the camera to follow the player’s head as they’re …"
+    },
+    {
+      "title": "Roblox Face Tracking Tutorial (German) | How to use Face Cam in Roblox",
+      "url": "https://www.youtube.com/watch?v=lAy5MRVmhrw",
+      "snippet": "Feb 16, 2024 · In this video, I'll show you how to activate face tracking (or the face cam) in Roblox so other players can see where …"
+    },
+    {
+      "title": "How to Enable Face Tracking on Roblox: Steps for PC & Mobile",
+      "url": "https://www.wikihow.com/Enable-Face-Tracking-on-Roblox",
+      "snippet": "Jan 27, 2026 · If you play Roblox, you may be wondering how you can enable face tracking. Face tracking (also called \"animate your …"
+    },
+    {
+      "title": "Simple head-follow-camera system (replicated to all clients ... - Roblox",
+      "url": "https://devforum.roblox.com/t/simple-head-follow-camera-system-replicated-to-all-clients/3625389",
+      "snippet": "Apr 24, 2025 · Discover millions of assets made by the Roblox community to accelerate any creation task. This simple system makes …"
+    }
+  ]
+}

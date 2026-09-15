@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "wren11ws/sunup",
+  "slug": "wren11ws-sunup",
+  "author": "wren11ws",
+  "url": "https://huggingface.co/wren11ws/sunup",
+  "created_at": "2026-09-15T14:36:02.000Z",
+  "updated_at": "2026-09-15T14:36:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Marynarka Damskie Zamszowa - Niska cena na Allegro",
+      "url": "https://allegro.pl/listing?string=marynarka%20damskie%20zamszowa",
+      "snippet": "Marynarka Damskie Zamszowa Zróżnicowany zbiór ofert, najlepsze ceny i promocje. Wejdź i znajdź to, czego szukasz!"
+    },
+    {
+      "title": "Marynarka Zamszowa Damska - Niska cena na Allegro",
+      "url": "https://allegro.pl/listing?string=marynarka%20zamszowa%20damska",
+      "snippet": "Marynarka Zamszowa Damska Zróżnicowany zbiór ofert, najlepsze ceny i promocje. Wejdź i znajdź to, czego szukasz!"
+    },
+    {
+      "title": "Marynarki damskie | ZARA Polska",
+      "url": "https://www.zara.com/pl/pl/kobieta-blazers-l1055.html",
+      "snippet": "Marynarki damskie: Doskonały styl codzienny i nienaganna formalność Garderoba każdej kobiety jest niepełna bez przynajmniej …"
+    },
+    {
+      "title": "Marynarki zamszowe damskie | Jesień 2026 | Shopsy.pl",
+      "url": "https://shopsy.pl/marynarki-damskie/zamsz",
+      "snippet": "Kup marynarki zamszowe damskie. 98 produktów od 490 zl. Codzienne nowe promocje i aktualne trendy tylko na Shopsy.pl."
+    },
+    {
+      "title": "zamszowa marynarka - Ubrania damskie w dobrej cenie - OLX",
+      "url": "https://www.olx.pl/moda/ubrania-damskie/q-zamszowa-marynarka/",
+      "snippet": "Aktualne ogłoszenia w całej Polsce: zamszowa marynarka ️ sprawdź oferty w kategorii Ubrania damskie i kupuj taniej na OLX.pl!"
+    }
+  ]
+}

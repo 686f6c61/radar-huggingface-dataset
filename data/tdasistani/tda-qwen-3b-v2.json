@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "TDAsistani/tda-qwen-3b-v2",
+  "slug": "tdasistani-tda-qwen-3b-v2",
+  "author": "TDAsistani",
+  "url": "https://huggingface.co/TDAsistani/tda-qwen-3b-v2",
+  "created_at": "2026-09-15T18:13:14.000Z",
+  "updated_at": "2026-09-15T18:21:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "safetensors",
+    "turkish",
+    "unsloth",
+    "qwen2.5",
+    "tda",
+    "assistant",
+    "text-generation",
+    "conversational",
+    "tr",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131223694,
+  "storage_human": "131 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grevisse - Magnard",
+      "url": "https://www.magnard.fr/collection/grevisse",
+      "snippet": "La collection Grevisse rassemble des cahiers d'exercices à utiliser en classe (à l'école, au collège et au lycée), des ouvrages de …"
+    },
+    {
+      "title": "Grevisse.fr | Pour l'amour de la langue française",
+      "url": "https://www.grevisse.fr/",
+      "snippet": "Une nouvelle édition de la Grammaire de référence de Jean-Christophe Pellat et Stéphanie Fonvielle, à jour de la terminologie …"
+    },
+    {
+      "title": "Cahier Grevisse 1re (2025) | Magnard",
+      "url": "https://www.magnard.fr/livre/9782210120426-cahier-grevisse-1re-2025",
+      "snippet": "Une nouvelle édition actualisée des dernières œuvres littéraires au programme du Bac français. Et toujours, tous les outils pour se …"
+    },
+    {
+      "title": "Cahier d'exercices Grevisse 6e | PDF - Scribd",
+      "url": "https://www.scribd.com/document/850112006/grevisse-6e-chahier-d-exercices-corriges-enseignant",
+      "snippet": "Ce document est un cahier d'exercices de langue française, conforme aux programmes scolaires de 2018-2020, contenant plus de …"
+    },
+    {
+      "title": "Cahier Grevisse 2de / 1re (2025) | Grevisse.fr",
+      "url": "https://www.grevisse.fr/enseignants/ouvrage/9782210120419-cahier-grevisse-2de-1re-2025",
+      "snippet": "Une nouvelle édition actualisée des dernières œuvres littéraires au programme du Bac français. Et toujours, tous les outils pour se …"
+    }
+  ]
+}

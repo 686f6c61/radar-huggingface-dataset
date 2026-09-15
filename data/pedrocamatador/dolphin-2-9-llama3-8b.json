@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "pedrocamatador/dolphin-2.9-llama3-8b",
+  "slug": "pedrocamatador-dolphin-2-9-llama3-8b",
+  "author": "pedrocamatador",
+  "url": "https://huggingface.co/pedrocamatador/dolphin-2.9-llama3-8b",
+  "created_at": "2026-09-15T18:41:39.000Z",
+  "updated_at": "2026-09-15T18:41:39.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "generated_from_trainer",
+    "axolotl",
+    "dataset:cognitivecomputations/Dolphin-2.9",
+    "dataset:teknium/OpenHermes-2.5",
+    "dataset:m-a-p/CodeFeedback-Filtered-Instruction",
+    "dataset:cognitivecomputations/dolphin-coder",
+    "dataset:cognitivecomputations/samantha-data",
+    "dataset:HuggingFaceH4/ultrachat_200k",
+    "dataset:microsoft/orca-math-word-problems-200k",
+    "dataset:abacusai/SystemChat-1.1",
+    "dataset:Locutusque/function-calling-chatml",
+    "dataset:internlm/Agent-FLAN",
+    "base_model:meta-llama/Meta-Llama-3-8B",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030277632,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16060597880,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Bonjour, Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux …"
+    },
+    {
+      "title": "Impossible de recevoir le code verif Canva - Forum Services en ligne",
+      "url": "https://forums.commentcamarche.net/forum/affich-38299352-impossible-de-recevoir-le-code-verif-canva",
+      "snippet": "Jul 15, 2026 · Bonjour, Je tente désespéramment de me connecter au compte Canva de mon entreprise. On m'a envoyé une …"
+    },
+    {
+      "title": "Canva AI Miễn Phí Có Gì? Những Tính Năng Nên Dùng Trước Khi Nâng …",
+      "url": "https://tinhte.vn/thread/canva-ai-mien-phi-co-gi-nhung-tinh-nang-nen-dung-truoc-khi-nang-cap-canva-pro.4139897/",
+      "snippet": "Khi đã biết rõ mình cần tính năng nào và dùng với tần suất bao nhiêu, việc quyết định nâng cấp Canva Pro sẽ chính xác hơn. Canva …"
+    },
+    {
+      "title": "Cách Dùng Canva AI Làm Slide Thuyết Trình Chuyên Nghiệp Chỉ Từ …",
+      "url": "https://tinhte.vn/thread/cach-dung-canva-ai-lam-slide-thuyet-trinh-chuyen-nghiep-chi-tu-mot-prompt.4139643/",
+      "snippet": "May 18, 2026 · Đây là lý do Canva AI làm slide thuyết trình chỉ từ một prompt đang trở thành giải pháp rất hữu ích cho người đi làm, …"
+    },
+    {
+      "title": "Tinhte.vn - Chuyên trang máy tính - PC Home",
+      "url": "https://pc.tinhte.vn/",
+      "snippet": "Chuyên trang máy tính & laptop của Tinhte.vn: Review PC, gaming gear, cẩm nang mua sắm và lắp ráp máy tính, hướng dẫn sử …"
+    }
+  ]
+}

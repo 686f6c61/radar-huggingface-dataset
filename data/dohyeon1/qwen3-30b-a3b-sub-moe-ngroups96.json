@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Dohyeon1/Qwen3-30B-A3B-Sub-MoE-ngroups96",
+  "slug": "dohyeon1-qwen3-30b-a3b-sub-moe-ngroups96",
+  "author": "Dohyeon1",
+  "url": "https://huggingface.co/Dohyeon1/Qwen3-30B-A3B-Sub-MoE-ngroups96",
+  "created_at": "2026-09-15T18:39:23.000Z",
+  "updated_at": "2026-09-15T18:47:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_moe",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 61078033554,
+  "storage_human": "61.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "有没有什么好的上班看小说神器,上班摸鱼那种? - 知乎",
+      "url": "https://www.zhihu.com/question/458198598",
+      "snippet": "上班摸鱼的人很多,但是有什么好用的摸鱼神器呢?"
+    },
+    {
+      "title": "Das TT-Board | TT-Board - Forum der Modellbahn in 1:120",
+      "url": "https://www.tt-board.de/forum/",
+      "snippet": "Feb 19, 2018 · Hallo TT-Modellbahner, schön, dass du zu uns gefunden hast. Um alle Funktionen nutzen zu können, empfehlen wir …"
+    },
+    {
+      "title": "如何评价《桌游模拟器》 (Tabletop Simulator)？ - 知乎",
+      "url": "https://www.zhihu.com/question/58594345?sort=created",
+      "snippet": "在这段不方便出门聚会的时期，触乐的周六推荐游戏栏目推荐了Steam上的《桌游模拟器》，编辑部的几位编辑也在线上打了几盘不同 …"
+    },
+    {
+      "title": "TT Neuling - prinzipielle Fragen | TT-Board - Forum der Modellbahn in …",
+      "url": "https://www.tt-board.de/forum/threads/tt-neuling-prinzipielle-fragen.72213/",
+      "snippet": "Jul 4, 2026 · Hallo TT-Modellbahner, schön, dass du zu uns gefunden hast. Um alle Funktionen nutzen zu können, empfehlen wir dir, …"
+    },
+    {
+      "title": "汽车论坛社区_汽车俱乐部_中国汽车论坛大全-爱卡汽车论坛",
+      "url": "https://www.xcar.com.cn/bbs/",
+      "snippet": "爱卡汽车论坛是中国最大的汽车社区，涵盖品牌论坛、车系论坛、地方论坛等，提供车友交流和丰富的汽车相关内容。"
+    }
+  ]
+}

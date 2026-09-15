@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "regupta0904/video-understanding-tryout",
+  "slug": "regupta0904-video-understanding-tryout",
+  "author": "regupta0904",
+  "url": "https://huggingface.co/regupta0904/video-understanding-tryout",
+  "created_at": "2026-09-15T14:42:06.000Z",
+  "updated_at": "2026-09-15T14:42:11.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "video-understanding",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "React",
+      "url": "https://react.dev/",
+      "snippet": "Whether you work on your own or with thousands of other developers, using React feels the same. It is designed to let you …"
+    },
+    {
+      "title": "Quick Start – React",
+      "url": "https://react.dev/learn",
+      "snippet": "Quick Start Welcome to the React documentation! This page will give you an introduction to 80% of the React concepts that you will …"
+    },
+    {
+      "title": "React Tutorial - W3Schools",
+      "url": "https://www.w3schools.com/react/",
+      "snippet": "Learn React React is a JavaScript library for building user interfaces. React is used to build single-page applications. React allows us …"
+    },
+    {
+      "title": "React Developer Roadmap: Learn to become a React developer",
+      "url": "https://roadmap.sh/react",
+      "snippet": "Everything that is there to learn about React and the ecosystem in 2026."
+    },
+    {
+      "title": "React Tutorial - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/reactjs/react/",
+      "snippet": "Jul 18, 2026 · This React tutorial provides you with a step-by-step learning journey for mastering React. You will start with React …"
+    }
+  ]
+}

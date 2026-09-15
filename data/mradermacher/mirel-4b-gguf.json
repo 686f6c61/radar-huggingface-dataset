@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MIREL-4B-GGUF",
+  "slug": "mradermacher-mirel-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MIREL-4B-GGUF",
+  "created_at": "2026-09-15T11:31:27.000Z",
+  "updated_at": "2026-09-15T11:39:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:luo352/MIREL-4B",
+    "base_model:quantized:luo352/MIREL-4B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 39945616832,
+  "storage_human": "39.9 GB",
+  "base_model": "luo352/MIREL-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Outlook如何设置签名？添加Outlook签名-百度经验",
+      "url": "https://jingyan.baidu.com/article/eae07827d1ff0e5fec5485bb.html",
+      "snippet": "Dec 13, 2019 · Outlook如何设置签名？添加Outlook签名,Outlook是我们日常工作中经常用到的邮件收发工具。发送邮件时，在最后的 …"
+    },
+    {
+      "title": "Win11系统如何更改Microsoft store的下载路径？ - 知乎",
+      "url": "https://www.zhihu.com/question/564794300",
+      "snippet": "Nov 5, 2022 · 微软商店下载的软件默认是安装到C盘的，如果C盘空间比较紧凑的话我们就只能把软件安装到其他盘了。我们需要做两 …"
+    },
+    {
+      "title": "Outlook如何设置延迟（定时）发送邮件-百度经验",
+      "url": "https://jingyan.baidu.com/article/15622f244e9c16bcfcbea5fd.html",
+      "snippet": "Oct 13, 2020 · Outlook如何设置延迟（定时）发送邮件,你知道吗？Outlook可以设置延迟发送邮件，设置之后，如果邮件发送出去之后 …"
+    },
+    {
+      "title": "outlook会议邀请如何修改时间-百度经验",
+      "url": "https://jingyan.baidu.com/article/1876c852a779bfc80b13769e.html",
+      "snippet": "May 7, 2023 · outlook会议邀请如何修改时间,已经发送的会议邀请，突然领导有事只能调整会议时间了，如果重新发送一次会议邮件就 …"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mulemp/potiferi01286",
+  "slug": "mulemp-potiferi01286",
+  "author": "mulemp",
+  "url": "https://huggingface.co/mulemp/potiferi01286",
+  "created_at": "2026-04-01T06:34:56.000Z",
+  "updated_at": "2026-09-15T19:02:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71832273844,
+  "storage_human": "71.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vinted | Toute la seconde main dans une seule application",
+      "url": "https://www.vinted.fr/?msockid=1f5ffffa97f367ae3c4ee82f96d366f6",
+      "snippet": "Vinted À propos de Vinted Le développement durable Presse Publicités Accessibilité Découvrir"
+    },
+    {
+      "title": "S'inscrire et se connecter | Vinted",
+      "url": "https://www.vinted.fr/help/103-se-connecter?msockid=1f5ffffa97f367ae3c4ee82f96d366f6",
+      "snippet": "J'essaie de m'inscrire sur Vinted, mais mon e-mail est bloqué Est-il possible d'utiliser Vinted depuis des pays sous sanctions ? Je me …"
+    },
+    {
+      "title": "Vinted | Sell and buy clothes, shoes and accessories",
+      "url": "https://www.vinted.com/",
+      "snippet": "Vinted About us Sustainability Press Advertising Accessibility Discover How it works Mobile apps Infoboard"
+    },
+    {
+      "title": "Home | Vinted",
+      "url": "https://www.vinted.com/catalog/1918-home",
+      "snippet": "One community, thousands of brands, and a whole lot of second-hand style. Ready to get started? Here’s how it works."
+    },
+    {
+      "title": "Vinted | Sell and buy clothes, shoes and accessories",
+      "url": "https://www.vinted.co.uk/",
+      "snippet": "Vinted About us Sustainability Press Advertising Accessibility Discover How it works Item Verification Mobile apps Infoboard Vinted …"
+    }
+  ]
+}

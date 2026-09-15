@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "frromano/contrastive",
+  "slug": "frromano-contrastive",
+  "author": "frromano",
+  "url": "https://huggingface.co/frromano/contrastive",
+  "created_at": "2026-09-15T18:01:08.000Z",
+  "updated_at": "2026-09-15T18:01:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Web'de Öğren",
+      "url": "https://www.webdeogren.com/",
+      "snippet": "Web'de Öğren - Birlikte En Doğruya Sitemizde yayınlanan içeriklerin büyük bir kısmı sitemize ait yada içerik sahiplerinin izinleri …"
+    },
+    {
+      "title": "Ataması Olan Öğretmenlerin İlişik Kesme ve Göreve Başlama İşlemleri ...",
+      "url": "https://www.webdeogren.com/atamasi-olan-ogretmenlerin-ilisik-kesme-ve-goreve-baslama-islemleri-kilavuzu-2.html",
+      "snippet": "Aug 10, 2025 · Ataması Olan Öğretmenlerin İlişik Kesme ve Göreve Başlama İşlemleri Kılavuzu Atama ve Yer Değiştirme – Web’de …"
+    },
+    {
+      "title": "Meb Yönetici Ve Öğretmen Faaliyet Ekders Ödenme Durum Tablosu …",
+      "url": "https://www.webdeogren.com/meb-yonetici-ve-ogretmen-faaliyet-ekders-odenme-durum-tablosu.html",
+      "snippet": "Apr 26, 2021 · Meb Yönetici Ve Öğretmen Faaliyet Ekders Ödenme Durum Tablosu (Kadrolu Nisan 2021) Resmi yazı ve görüş …"
+    },
+    {
+      "title": "Elektronik Belge Yönetim Sistemi (EBYS-Belgenet) Evrak Şablonları",
+      "url": "https://www.webdeogren.com/elektronik-belge-yonetim-sistemi-ebys-belgenet-evrak-sablonlari.html",
+      "snippet": "Dec 29, 2025 · Elektronik Belge Yönetim Sistemi (EBYS-Belgenet) Evrak Şablonları MEB EBYS – Belgenet – DYS Destek – Web’de …"
+    },
+    {
+      "title": "Diğer – Web'de Öğren",
+      "url": "https://www.webdeogren.com/category/diger",
+      "snippet": "Diğer hakkında Web'de Öğren ve Yunus Güneş tarafından yazılan gönderiler"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "kzhao5/mea-soda-defenses",
+  "slug": "kzhao5-mea-soda-defenses",
+  "author": "kzhao5",
+  "url": "https://huggingface.co/kzhao5/mea-soda-defenses",
+  "created_at": "2026-09-15T17:13:04.000Z",
+  "updated_at": "2026-09-15T17:14:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "model-extraction",
+    "knowledge-distillation",
+    "watermark",
+    "dpo",
+    "lora",
+    "base_model:Qwen/Qwen2.5-7B",
+    "base_model:adapter:Qwen/Qwen2.5-7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 586406552,
+  "storage_human": "586 MB",
+  "base_model": "Qwen/Qwen2.5-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Файл .ps1 открывается через \"Блокнот\" - stepan_korolev_140",
+      "url": "https://otvet.mail.ru/question/243020391",
+      "snippet": "Открывается через \"Блокнот\", нет кнопки \"Открыть с помощью...\" в контекстном меню, а в Параметрах невозможно выбрать …"
+    },
+    {
+      "title": "Как создать \"блокнот\" на рабочем столе? - liubov_10436 | Ответы Mail",
+      "url": "https://otvet.mail.ru/question/83876194",
+      "snippet": "Советую создать ярлык для блокнота: 1. Нажмите Пуск->Все программы->Стандартные 2. На ярлыке \"Блокнот\" нажмите …"
+    },
+    {
+      "title": "Как открыть cmd через приложения \"блокнот\"? - vm_hz | Ответы Mail",
+      "url": "https://otvet.mail.ru/question/239828998",
+      "snippet": "Как открыть cmd через приложения \"блокнот\"? При нажатии правой кнопкой мыши на файл типа \"cmd\" должно появляться …"
+    },
+    {
+      "title": "Случайно удалил блокнот в Windows 10 - seiytrog | Ответы Mail",
+      "url": "https://otvet.mail.ru/question/220413410",
+      "snippet": "Как восстановить блокнот в Windows 10? пришлите по почте сам екзешник."
+    },
+    {
+      "title": "Блокнот в Фазмофобии - dima_iukhga | Ответы Mail",
+      "url": "https://otvet.mail.ru/question/237492171",
+      "snippet": "Я положил блокнот в комнате призрака и призрак написал мне, по итогу оказалось что это Горё, но у Горё нету улики …"
+    }
+  ]
+}

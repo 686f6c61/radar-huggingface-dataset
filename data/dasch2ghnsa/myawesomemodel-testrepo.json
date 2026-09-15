@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "DASCH2GHNSA/MyAwesomeModel-TestRepo",
+  "slug": "dasch2ghnsa-myawesomemodel-testrepo",
+  "author": "DASCH2GHNSA",
+  "url": "https://huggingface.co/DASCH2GHNSA/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-15T14:06:20.000Z",
+  "updated_at": "2026-09-15T14:06:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Calculateur de clé de numéro de sécurité sociale ss, décodeur de son ...",
+      "url": "https://mon-convertisseur.fr/calculateur-cle-numero-securite-sociale.php",
+      "snippet": "Cet outil vous permet de calculer la clé de contrôle (2 derniers chiffres du numéro de sécurité sociale) et de vérifier que le numéro de …"
+    },
+    {
+      "title": "Que signifie le numéro de Sécurité sociale ? | Service Public",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33078",
+      "snippet": "Le numéro de Sécurité sociale (NIR) est composé de 13 chiffres (sexe, année, mois et lieu de naissance...) et d'une clé de contrôle à …"
+    },
+    {
+      "title": "Le numéro de sécurité sociale | ameli.fr | Assuré",
+      "url": "https://www.ameli.fr/assure/droits-demarches/principes/numero-securite-sociale",
+      "snippet": "Jan 19, 2026 · L’attribution de votre numéro de sécurité sociale ne dépend pas de votre nationalité. Pour l'obtenir, il suffit d'être né en …"
+    },
+    {
+      "title": "Calculateur de clé de carte Vitale – Numéro de sécurité sociale (NIR)",
+      "url": "https://www.vmaths.fr/apps/calculateur-cle-carte-vitale.html",
+      "snippet": "Calculez la clé de contrôle du numéro de sécurité sociale (NIR) utilisé sur la carte Vitale. Saisissez les 13 premiers chiffres pour …"
+    },
+    {
+      "title": "Calcul de clé NIR",
+      "url": "https://cle-nir.inclusion.gouv.fr/",
+      "snippet": "Utilitaire de calcul de la clé NIR (numéro de sécurité sociale) à partir des 13 chiffres le composant."
+    }
+  ]
+}

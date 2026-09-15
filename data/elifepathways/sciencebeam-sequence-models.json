@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "elifepathways/sciencebeam-sequence-models",
+  "slug": "elifepathways-sciencebeam-sequence-models",
+  "author": "elifepathways",
+  "url": "https://huggingface.co/elifepathways/sciencebeam-sequence-models",
+  "created_at": "2026-09-15T15:56:38.000Z",
+  "updated_at": "2026-09-15T15:56:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "sequence-labelling",
+    "crf",
+    "wapiti",
+    "grobid",
+    "scientific-document-parsing",
+    "reference-extraction",
+    "token-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19485406,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google преводилац",
+      "url": "https://translate.google.com/?hl=sr",
+      "snippet": "Бесплатна Google услуга која одмах преводи речи, фразе и веб-странице са енглеског на преко 100 других језика и обратно."
+    },
+    {
+      "title": "Google преводилац",
+      "url": "https://translate.google.rs/",
+      "snippet": "Google преводилац је бесплатна услуга за тренутно превођење речи, фраза и веб страница на преко 100 језика."
+    },
+    {
+      "title": "Google Prevodilac",
+      "url": "https://translate.google.ba/",
+      "snippet": "Googleova usluga, u besplatnoj ponudi, u trenu prevodi riječi, fraze i web lokacije s engleskog na više od 100 jezika."
+    },
+    {
+      "title": "Google преводилац",
+      "url": "https://translate.google.rs/details",
+      "snippet": "Неке реченице могу да садрже алтернативе у зависности од рода. Кликните на реченицу да бисте видели алтернативе. …"
+    },
+    {
+      "title": "Englesko - Srpski prevodilac teksta | Online prevodilac | Besplatni rečnik",
+      "url": "https://eprevodilac.com/prevodilac-engleski-srpski",
+      "snippet": "Nadamo se da će Vam naš automatski prevodilac pomoći i olakšati Englesko-Srpski prevod teksta. Naš sajt vam može momoći i kao …"
+    }
+  ]
+}

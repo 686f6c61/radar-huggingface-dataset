@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Odakris/distilbert-sentiment-demo",
+  "slug": "odakris-distilbert-sentiment-demo",
+  "author": "Odakris",
+  "url": "https://huggingface.co/Odakris/distilbert-sentiment-demo",
+  "created_at": "2026-09-15T12:59:41.000Z",
+  "updated_at": "2026-09-15T13:03:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 535670321,
+  "storage_human": "536 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Porno – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=porno",
+      "snippet": "Regarde les vidéos porno de Porno gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de clips …"
+    },
+    {
+      "title": "PornHub.com :: Video X Gratuite - Site Porno Gratuit",
+      "url": "https://fr.pornhub.com/categories",
+      "snippet": "Tu viens de trouver le paradis de la pornographie. Tu ne rêves pas, un site porno gratuit, avec vidéo x gratuite. Profites des trésors …"
+    },
+    {
+      "title": "Vidéos porno HD : Les filles les plus sexy en haute définition | Pornhub",
+      "url": "https://fr.pornhub.com/hd",
+      "snippet": "Porno HD gratuit sur Pornhub.com. Vous cherchez des vidéos de sexe en haute définition dans chaque niche XXX triple ? Le …"
+    },
+    {
+      "title": "Vidéos Porno Lesbienne: Films Lesbiennes X Gratuit | Pornhub",
+      "url": "https://fr.pornhub.com/video?c=27",
+      "snippet": "Voir des Lesbiennes sexy ici sur Pornhub.com! Vous trouverez les plus belles lesbiennes jeunes et chaudes gratuitement. Des …"
+    },
+    {
+      "title": "PornHub.com :: Film Porno Xxx - Film Porno Amateur, Film Adulte Gratuit",
+      "url": "https://fr.pornhub.com/video?o=mv",
+      "snippet": "Sur PornHub tu peux télécharger des films porno xxx gratuitement. Les nanas les plus chaudes sont dans les films porno amateur de …"
+    }
+  ]
+}

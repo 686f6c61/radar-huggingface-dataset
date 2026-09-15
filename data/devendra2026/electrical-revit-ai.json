@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "devendra2026/electrical-revit-ai",
+  "slug": "devendra2026-electrical-revit-ai",
+  "author": "devendra2026",
+  "url": "https://huggingface.co/devendra2026/electrical-revit-ai",
+  "created_at": "2026-09-15T17:08:31.000Z",
+  "updated_at": "2026-09-15T17:08:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83946192,
+  "storage_human": "84 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bubble Shooter - Cliquez ici pour jouer gratuitement",
+      "url": "https://www.bubbleshooter.com/fr/",
+      "snippet": "Cliquez ici pour jouer gratuitement au jeu original de bubble shooter. Nous avons le jeu de bulles numéro un. Vous n'avez pas besoin …"
+    },
+    {
+      "title": "Bubble Shooter Gratuit - Bubbleshootergratuit.fr",
+      "url": "https://www.bubbleshootergratuit.fr/",
+      "snippet": "Nous sommes aussi des fans, c'est pourquoi nous avons réuni sur ce site une belle collection de variantes de ces jeux entièrement …"
+    },
+    {
+      "title": "Bubble Shooter jouer en ligne gratuitement",
+      "url": "https://www.shooter-bubble.com/fr-fr/",
+      "snippet": "Bubble Shooter est l'un des jeux en ligne les plus populaires. Chez nous, tu peux jouer à ce jeu gratuitement et sans inscription. …"
+    },
+    {
+      "title": "Bubble shooter - Toutes les versions",
+      "url": "https://www.shooter-bubble.fr/",
+      "snippet": "Bubble Shooter est un jeu de bulles en ligne gratuit ou le joueur doit faire éclater des groupes d’au moins 3 bulles identiques en tirant …"
+    },
+    {
+      "title": "Bubble Shooter gratuit plein écran",
+      "url": "https://www.shooter-bubble.fr/bubble-shooter.html",
+      "snippet": "Le Bubble Shooter propose donc à la fois de la réflexion combinée avec de la stratégie. Bubble shooter démarre automatiquement …"
+    }
+  ]
+}

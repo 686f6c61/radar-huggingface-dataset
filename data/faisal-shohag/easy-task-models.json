@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "faisal-shohag/easy-task-models",
+  "slug": "faisal-shohag-easy-task-models",
+  "author": "faisal-shohag",
+  "url": "https://huggingface.co/faisal-shohag/easy-task-models",
+  "created_at": "2026-09-15T16:02:38.000Z",
+  "updated_at": "2026-09-15T16:13:47.000Z",
+  "license": "mixed",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "mirror",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4800342445,
+  "storage_human": "4.8 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fayçal Ier — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Fay%C3%A7al_Ier",
+      "snippet": "(en) « Faisal I | King, Iraq, & Biography [archive] », sur Encyclopædia Britannica, 4 septembre 2024 (consulté le 18 septembre 2024) …"
+    },
+    {
+      "title": "Faisal of Saudi Arabia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Faisal_of_Saudi_Arabia",
+      "snippet": "In a documentary entitled Faisal, Legacy of a King, Faisal's grandson Amr bin Mohammed bin Faisal claims that the King had …"
+    },
+    {
+      "title": "Faisal I - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Faisal_I",
+      "snippet": "In 1932, he presided over the independence of the Kingdom of Iraq upon the end of the British Mandate and the country's entry into …"
+    },
+    {
+      "title": "Prénom Faisal : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/faisal-40470",
+      "snippet": "Signification et étymologie du prénom Faisal Ce prénom est d'origine arabe et il signifie « un juge, arbitre ». Il peut s'écrire Faisal ou …"
+    },
+    {
+      "title": "Faisal (@fslzss) • Instagram photos and videos",
+      "url": "https://www.instagram.com/fslzss/",
+      "snippet": "1M Followers, 280 Following, 1,456 Posts - Faisal 🇦🇪 (@fslzss) on Instagram: \"‎الحمدلله دائماً و أبداً‎\""
+    }
+  ]
+}

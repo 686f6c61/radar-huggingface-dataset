@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Edgonzalez3/deit-retrieval-base23",
+  "slug": "edgonzalez3-deit-retrieval-base23",
+  "author": "Edgonzalez3",
+  "url": "https://huggingface.co/Edgonzalez3/deit-retrieval-base23",
+  "created_at": "2026-09-15T14:05:11.000Z",
+  "updated_at": "2026-09-15T14:05:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Langdock | Die Plattform für KI-Adoption",
+      "url": "https://langdock.com/de",
+      "snippet": "Die Plattform für AI Adoption Langdock ermöglicht es dir, KI sicher und flexibel in deinem ganzen Unternehmen auszurollen."
+    },
+    {
+      "title": "Langdock | The Platform for AI Adoption",
+      "url": "https://langdock.com/",
+      "snippet": "“Langdock has become our company-wide AI companion used by more than 33,000 monthly active users. The platform enables …"
+    },
+    {
+      "title": "Login | Langdock",
+      "url": "https://app.langdock.com/login",
+      "snippet": "By signing in, you accept our Terms of Use and confirm that you have taken note of our Privacy Policy."
+    },
+    {
+      "title": "Was ist eigentlich Langdock und wie nutzen Unternehmen diese KI …",
+      "url": "https://ki-trainingszentrum.com/was-ist-eigentlich-langdock-und-wie-nutzen-unternehmen-diese-ki-plattform/",
+      "snippet": "Mar 9, 2026 · Langdock ist eine KI-Plattform, die Unternehmen dabei unterstützt, generative KI-Modelle sicher und DSGVO-konform …"
+    },
+    {
+      "title": "Langdock",
+      "url": "https://app.langdock.com/chat",
+      "snippet": ""
+    }
+  ]
+}

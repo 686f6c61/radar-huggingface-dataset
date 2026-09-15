@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "kaweees/gr00tn1.5-libero-spatial-trajectory-efficiency-rebuild-20260915",
+  "slug": "kaweees-gr00tn1-5-libero-spatial-trajectory-efficiency-rebuild-20260915",
+  "author": "kaweees",
+  "url": "https://huggingface.co/kaweees/gr00tn1.5-libero-spatial-trajectory-efficiency-rebuild-20260915",
+  "created_at": "2026-09-15T19:00:48.000Z",
+  "updated_at": "2026-09-15T19:08:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NameMC: Minecraft Names & Skins",
+      "url": "https://namemc.com/",
+      "snippet": "From searching and reserving Minecraft usernames to browsing millions of unique player skins, capes, and servers, NameMC makes …"
+    },
+    {
+      "title": "Namemc - Minecraft Skins",
+      "url": "https://www.minecraftskins.com/search/skin/namemc/1/",
+      "snippet": "View, comment, download and edit namemc Minecraft skins."
+    },
+    {
+      "title": "Minecraft Names | NameMC",
+      "url": "https://de.namemc.com/minecraft-names/profile",
+      "snippet": "19 hours ago · 9/15/2026 • 10:14:33 AM 9/15/2026 • 10:14:33 AM"
+    },
+    {
+      "title": "Minecraft Names | NameMC",
+      "url": "https://namemc.com/minecraft-names",
+      "snippet": "19 hours ago · Découvrez la disponibilité des noms Minecraft et explorez l'historique des comptes pour trouver le pseudonyme parfait."
+    },
+    {
+      "title": "Log In | NameMC",
+      "url": "https://de.namemc.com/login",
+      "snippet": "NameMC Skins Names Servers Capes Store Discord Log In"
+    }
+  ]
+}

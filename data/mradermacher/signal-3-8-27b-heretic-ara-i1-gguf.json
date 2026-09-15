@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Signal-3.8-27b-Heretic-ara-i1-GGUF",
+  "slug": "mradermacher-signal-3-8-27b-heretic-ara-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Signal-3.8-27b-Heretic-ara-i1-GGUF",
+  "created_at": "2026-09-15T14:11:39.000Z",
+  "updated_at": "2026-09-15T15:45:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliteration",
+    "uncensored",
+    "qwen3_5",
+    "en",
+    "base_model:Shockem/Signal-3.8-27b-Heretic-ara",
+    "base_model:quantized:Shockem/Signal-3.8-27b-Heretic-ara",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 52972606208,
+  "storage_human": "53.0 GB",
+  "base_model": "Shockem/Signal-3.8-27b-Heretic-ara",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

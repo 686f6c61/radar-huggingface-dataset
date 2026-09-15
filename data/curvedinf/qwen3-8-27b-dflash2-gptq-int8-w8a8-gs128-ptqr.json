@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "curvedinf/Qwen3.8-27B-DFlash2-GPTQ-INT8-W8A8-GS128-PTQR",
+  "slug": "curvedinf-qwen3-8-27b-dflash2-gptq-int8-w8a8-gs128-ptqr",
+  "author": "curvedinf",
+  "url": "https://huggingface.co/curvedinf/Qwen3.8-27B-DFlash2-GPTQ-INT8-W8A8-GS128-PTQR",
+  "created_at": "2026-09-15T15:45:25.000Z",
+  "updated_at": "2026-09-15T15:46:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "qwen3.8",
+    "dflash2",
+    "speculative-decoding",
+    "block-diffusion",
+    "draft-model",
+    "gptq",
+    "int8",
+    "w8a8",
+    "gs128",
+    "ptqr",
+    "vllm",
+    "amd",
+    "rocm",
+    "text-generation",
+    "conversational",
+    "base_model:z-lab/Qwen3.8-27B-DFlash2",
+    "base_model:quantized:z-lab/Qwen3.8-27B-DFlash2",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1924404480,
+  "parameters_human": "1.92B",
+  "storage_bytes": 2308160221,
+  "storage_human": "2.3 GB",
+  "base_model": "z-lab/Qwen3.8-27B-DFlash2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Confidentialité – Street View – Google Maps",
+      "url": "https://maps.google.fr/help/maps/streetview/privacy.html",
+      "snippet": "Google Maps avec Street View vous permet d'explorer les sites du monde entier en profitant d'images à 360 degrés des rues. Ainsi, …"
+    },
+    {
+      "title": "Redirect Notice - Google Maps",
+      "url": "https://maps.google.fr/url?sa=t&url=httpss%3A%2F%2Ftdupage.com/",
+      "snippet": "The previous page is sending you to an invalid url. If you do not want to visit that page, you can return to the previous page."
+    },
+    {
+      "title": "Treks Street View : Égypte – À propos – Google Maps",
+      "url": "https://maps.google.fr/intl/fr_ca/maps/about/behind-the-scenes/streetview/treks/pyramids-of-giza/",
+      "snippet": "Partez à la découverte du monde avec Google Maps. Essayez Street View, la cartographie 3D, la navigation détaillée, les plans …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.fr/mapfiles/home3.html",
+      "snippet": "Explore and navigate the world with Google Maps, offering directions, local business information, and street views."
+    },
+    {
+      "title": "Transit – Google Maps",
+      "url": "https://maps.google.fr/landing/transit/cities/index.html",
+      "snippet": "Multi-Region あいの風とやま鉄道 いすみ鉄道 いわて銀河鉄道 えちごトキめき鉄道 えちぜん鉄道 くま川鉄道 わたらせ渓谷鐵道 ヤサ …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "RonTon05/New_MTL_Full_Finetuning_OverSampling_WeightedLoss",
+  "slug": "ronton05-new_mtl_full_finetuning_oversampling_weightedloss",
+  "author": "RonTon05",
+  "url": "https://huggingface.co/RonTon05/New_MTL_Full_Finetuning_OverSampling_WeightedLoss",
+  "created_at": "2026-09-15T15:10:17.000Z",
+  "updated_at": "2026-09-15T15:10:23.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "generated_from_trainer",
+    "base_model:RonTon05/model_content_V2_test",
+    "base_model:finetune:RonTon05/model_content_V2_test",
+    "license:agpl-3.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 136385033,
+  "parameters_human": "136.4M",
+  "storage_bytes": 545570117,
+  "storage_human": "546 MB",
+  "base_model": "RonTon05/model_content_V2_test",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DirectX End-User Runtime Web Installer - microsoft.com",
+      "url": "https://www.microsoft.com/en-US/download/details.aspx?id=35&msockid=32c89bb01a9d6df9071c8c651b4e6cd5",
+      "snippet": "This DirectX End-User Runtime does not change the version of DirectX, but does install a number of optional side-by-side …"
+    },
+    {
+      "title": "How to install the latest version of DirectX | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/how-to-install-the-latest-version-of-directx",
+      "snippet": "You can update DirectX by installing the service pack and update listed below. DirectX 10.1 is included in Windows Vista SP1 or later, …"
+    },
+    {
+      "title": "DirectX End-User Runtime Web Installer - microsoft.com",
+      "url": "https://www.microsoft.com/en-us/download/details.aspx?displaying=en&id=35&msockid=32c89bb01a9d6df9071c8c651b4e6cd5",
+      "snippet": "This DirectX End-User Runtime does not change the version of DirectX, but does install a number of optional side-by-side …"
+    },
+    {
+      "title": "DirectX - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/DirectX",
+      "snippet": "In 2002, Microsoft released a version of DirectX compatible with the Microsoft .NET Framework, thus allowing programmers to take …"
+    },
+    {
+      "title": "DirectX 12 (Ultimate) Download for Windows 10/11 PC - MiniTool",
+      "url": "https://www.minitool.com/news/directx-12-download-windows-10-11.html",
+      "snippet": "Mar 17, 2026 · This tutorial provides a DirectX 12 (Ultimate) download guide for Windows 10/11 and gives some explanation for …"
+    }
+  ]
+}

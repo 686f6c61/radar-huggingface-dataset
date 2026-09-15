@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mlx-community/Qwen3.8-Flash-Next-Uncensored-oQ5e-mtp",
+  "slug": "mlx-community-qwen3-8-flash-next-uncensored-oq5e-mtp",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/Qwen3.8-Flash-Next-Uncensored-oQ5e-mtp",
+  "created_at": "2026-09-15T16:17:46.000Z",
+  "updated_at": "2026-09-15T16:26:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "oq",
+    "quantized",
+    "5-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 128556941401,
+  "storage_human": "128.6 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "17cyber.gouv.fr - Mon assistance en ligne | Site Officiel",
+      "url": "https://17cyber.gouv.fr/",
+      "snippet": "Vous disposez d'un site Internet ? Proposez à vos visiteurs de bénéficier gratuitement du diagnostic 17Cyber en intégrant son module."
+    },
+    {
+      "title": "17Cyber, mon assistance en ligne - CYBERMALVEILLANCE.GOUV.FR",
+      "url": "https://www.cybermalveillance.gouv.fr/tous-nos-contenus/17cyber-mon-assistance-en-ligne",
+      "snippet": "Dec 17, 2024 · Le 17Cyber.gouv.fr est un service public d’assistance en ligne gratuit pour les victimes de cybermalveillances, …"
+    },
+    {
+      "title": "Victime de cybermalveillance ? Rendez-vous sur 17Cyber.gouv.fr",
+      "url": "https://www.interieur.gouv.fr/actualites/actualites-du-ministere/victime-de-cybermalveillance-rendez-vous-sur-17cybergouvfr",
+      "snippet": "Apr 24, 2026 · Face aux « atteintes numériques », le ministère de l’Intérieur et le site Cybermalveillance.gouv.fr lancent 17Cyber, le …"
+    },
+    {
+      "title": "Le service de diagnostic 17Cyber - CYBERMALVEILLANCE.GOUV.FR",
+      "url": "https://www.cybermalveillance.gouv.fr/diagnostic/accueil",
+      "snippet": "L’assistance en ligne 17Cyber vous aide à identifier votre problème et à trouver des solutions adaptées pour y faire face. 10 min pour …"
+    },
+    {
+      "title": "17Cyber, le réflexe cyber pour tous - Gendarmerie nationale",
+      "url": "https://www.gendarmerie.interieur.gouv.fr/gendinfo/actualites/2026/17cyber-le-reflexe-cyber-pour-tous",
+      "snippet": "Apr 2, 2026 · 17Cyber est un service gratuit, disponible 24h/24 et 7j/7, mis en place par la Gendarmerie nationale, la Police nationale …"
+    }
+  ]
+}

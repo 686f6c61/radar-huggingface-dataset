@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Hornybot-Mara-POV-i1-GGUF",
+  "slug": "mradermacher-hornybot-mara-pov-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Hornybot-Mara-POV-i1-GGUF",
+  "created_at": "2026-09-15T18:09:52.000Z",
+  "updated_at": "2026-09-15T19:18:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3.5",
+    "llama.cpp",
+    "conversational",
+    "roleplay",
+    "adult",
+    "first-person",
+    "en",
+    "base_model:axiomofmind/Hornybot-Mara-POV",
+    "base_model:quantized:axiomofmind/Hornybot-Mara-POV",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 110211490528,
+  "storage_human": "110.2 GB",
+  "base_model": "axiomofmind/Hornybot-Mara-POV",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sistema circulatório: resumo, anatomia e humano - Toda Matéria",
+      "url": "https://www.todamateria.com.br/sistema-circulatorio/",
+      "snippet": "O sistema circulatório ou cardiovascular, formado pelo coração e vasos sanguíneos, é responsável pelo transporte de nutrientes e …"
+    },
+    {
+      "title": "Sistema circulatorio: funciones, partes, funcionamiento - Lifeder",
+      "url": "https://www.lifeder.com/sistema-circulatorio/",
+      "snippet": "Sep 1, 2022 · ¿Qué es el sistema circulatorio? El sistema circulatorio es el sistema de órganos del cuerpo humano que se encarga …"
+    },
+    {
+      "title": "Sistema circulatório – Wikipédia, a enciclopédia livre",
+      "url": "https://pt.wikipedia.org/wiki/Sistema_circulat%C3%B3rio",
+      "snippet": "O sistema circulatório é o conjunto de órgãos responsáveis pela distribuição de nutrientes para as células e coleta de suas excretas …"
+    },
+    {
+      "title": "Sistema circulatorio: Estructura, función, partes | Kenhub",
+      "url": "https://www.kenhub.com/es/library/anatomia-es/sistema-circulatorio-cardiovascular",
+      "snippet": "El sistema circulatorio está constituido por una red formada por el corazón como bomba muscular central, vasos sanguíneos que …"
+    },
+    {
+      "title": "Sistema circulatorio: qué es, partes, función y características",
+      "url": "https://www.significados.com/sistema-circulatorio/",
+      "snippet": "Aug 21, 2025 · El sistema o aparato circulatorio es aquel encargado de bombear, transportar y distribuir la sangre por todo el cuerpo. …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "chris0809/memoperator-0.6b-memory-write-gate",
+  "slug": "chris0809-memoperator-0-6b-memory-write-gate",
+  "author": "chris0809",
+  "url": "https://huggingface.co/chris0809/memoperator-0.6b-memory-write-gate",
+  "created_at": "2026-09-15T14:21:52.000Z",
+  "updated_at": "2026-09-15T14:22:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "memory",
+    "text-classification",
+    "zh",
+    "en",
+    "dataset:chris0809/memory-write-gate-20k",
+    "base_model:MemTensor/MemOperator-0.6B",
+    "base_model:adapter:MemTensor/MemOperator-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51849116,
+  "storage_human": "52 MB",
+  "base_model": "MemTensor/MemOperator-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Usage of articles with \"Schule\" - German Language Stack Exchange",
+      "url": "https://german.stackexchange.com/questions/6684/usage-of-articles-with-schule",
+      "snippet": "I read this question Articles in real life where I saw a number of comments that said that it was typical of Turks, Arabs and Slavic …"
+    },
+    {
+      "title": "Separable verbs? Using “zu” in the infinitive",
+      "url": "https://german.stackexchange.com/questions/25188/separable-verbs-using-zu-in-the-infinitive",
+      "snippet": "Aug 26, 2015 · Ich muss zur Schule gehen, um die Lehrer zu besuchen. (inseparable) Ich muss zur Schule gehen, um die Kinder …"
+    },
+    {
+      "title": "\"Sich bewerben um\" oder \"für\"? - German Language Stack Exchange",
+      "url": "https://german.stackexchange.com/questions/4609/sich-bewerben-um-oder-f%c3%bcr",
+      "snippet": "What is the correct version? sich bewerben um etwas sich bewerben für etwas Are there cases where one or the other is preferable? …"
+    },
+    {
+      "title": "Unterschied zwischen ansagen, ankündigen und durchsagen",
+      "url": "https://german.stackexchange.com/questions/40054/unterschied-zwischen-ansagen-ank%C3%BCndigen-und-durchsagen",
+      "snippet": "Nov 4, 2017 · Kommunikationskanal im Spiel, zum Beispiel das Lautsprechersystem einer Schule oder eines Bahnhofs. - Natürlich …"
+    },
+    {
+      "title": "difference - \"An der Schule\" or \"in der Schule\"? - German Language ...",
+      "url": "https://german.stackexchange.com/questions/9704/an-der-schule-or-in-der-schule",
+      "snippet": "May 31, 2017 · I've seen a sentence like Ich habe Deutsch an der Schule gelernt. instead of Ich habe Deutsch in der Schule gelernt. …"
+    }
+  ]
+}

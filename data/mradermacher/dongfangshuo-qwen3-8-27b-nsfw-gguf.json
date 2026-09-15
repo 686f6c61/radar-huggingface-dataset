@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Dongfangshuo-Qwen3.8-27B-NSFW-GGUF",
+  "slug": "mradermacher-dongfangshuo-qwen3-8-27b-nsfw-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Dongfangshuo-Qwen3.8-27B-NSFW-GGUF",
+  "created_at": "2026-09-15T13:16:43.000Z",
+  "updated_at": "2026-09-15T13:53:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 28246748992,
+  "storage_human": "28.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fensterputzer in München ⇒ in Das Örtliche",
+      "url": "https://www.dasoertliche.de/Themen/Fensterputzer/M%C3%BCnchen.html",
+      "snippet": "Gesamt 48 Adressen zu Fensterputzer in München mit Telefonnummer ☎, Öffnungszeiten und Bewertung ★ Direkt Angebot …"
+    },
+    {
+      "title": "ᐅ Top 10 Fensterputzer München | Adresse - Gelbe Seiten",
+      "url": "https://www.gelbeseiten.de/branchen/fensterputzer/m%c3%bcnchen",
+      "snippet": "Fensterputzer München Adresse ☎ Telefonnummer ⌚ Öffnungszeiten. ☆☆☆ Über 48 Bewertungen helfen Ihnen Fensterputzer in …"
+    },
+    {
+      "title": "Fensterputzer in München jetzt finden! | Das Telefonbuch",
+      "url": "https://www.dastelefonbuch.de/Branchen/Fensterputzer/M%C3%BCnchen",
+      "snippet": "Aus Millionen von Einträgen sucht das Telefonbuch München alle Fensterputzer-Adressen mit Telefonnummer und oft auch …"
+    },
+    {
+      "title": "BAYER SERVICES GmbH – Ihr Reinigungsspezialist in München und …",
+      "url": "https://bayer-services.de/",
+      "snippet": "Streifenfreier Glanz für Fenster, Fassaden und Glasflächen – innen wie außen. Sicher durch den Winter – mit zuverlässigem Räumen …"
+    },
+    {
+      "title": "Fensterputzer in München Kostenlose Angebote anfordern",
+      "url": "https://web2.cylex.de/suche/fensterputzer/Muenchen",
+      "snippet": "Fenster Reinigung Sommer in München ist Ihr Experte für professionelle Fensterreinigung. Mit langjähriger Erfahrung bieten wir …"
+    }
+  ]
+}

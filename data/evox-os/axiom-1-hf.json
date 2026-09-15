@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "evox-os/axiom-1-hf",
+  "slug": "evox-os-axiom-1-hf",
+  "author": "evox-os",
+  "url": "https://huggingface.co/evox-os/axiom-1-hf",
+  "created_at": "2026-09-15T16:02:22.000Z",
+  "updated_at": "2026-09-15T16:02:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "axiom",
+    "evox-os",
+    "transformers",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519716,
+  "storage_human": "1000 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spécialiste Pièces Automobile Détachées Sport Toutes Marques",
+      "url": "https://www.evox-performance.com/fr/",
+      "snippet": "Rejoignez EVOX Performance sur nos réseaux sociaux et découvrez en avant-première nos nouveautés, nos projets automobiles, …"
+    },
+    {
+      "title": "Evo-xracing : L'équipement moto pour les professionnels",
+      "url": "https://www.evo-xracing.com/fr/",
+      "snippet": "Le fournisseur d'équipement moto, pièces détachés moto et accessoires moto - course et route. Découvrez le site des pièces moto …"
+    },
+    {
+      "title": "Echappements sport EVOX pour Porsche",
+      "url": "https://www.evox-performance.com/fr/12-porsche",
+      "snippet": "Les échappements sport EVOX pour Porsche produiront de véritables gains en puissance, en couple et en poids dans le seul et …"
+    },
+    {
+      "title": "Evox | Shiftech",
+      "url": "https://www.shiftech.eu/fr/marques/evox-echappement",
+      "snippet": "Choisir EVOX, c’est opter pour une marque qui place l’émotion de conduite, mais aussi le rendu esthétique, au cœur de son …"
+    },
+    {
+      "title": "Pièces et Accessoires de Performance Automobile | Evox Performance",
+      "url": "https://www.adp-shop.fr/m/evox-performance/",
+      "snippet": "Découvrez Evox Performance, spécialiste des pièces et accessoires de performance automobile. Nos produits, incluant les …"
+    }
+  ]
+}

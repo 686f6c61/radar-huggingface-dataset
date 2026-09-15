@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mradermacher/kw5-109M-instruct-GGUF",
+  "slug": "mradermacher-kw5-109m-instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/kw5-109M-instruct-GGUF",
+  "created_at": "2026-09-15T11:44:57.000Z",
+  "updated_at": "2026-09-15T11:46:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "sw"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "swahili",
+    "kiswahili",
+    "instruction-tuning",
+    "lora",
+    "conversational",
+    "text-generation",
+    "african-languages",
+    "sw",
+    "base_model:regnant-io/kw5-109M-instruct",
+    "base_model:adapter:regnant-io/kw5-109M-instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109529856,
+  "parameters_human": "109.5M",
+  "storage_bytes": 1033890432,
+  "storage_human": "1.0 GB",
+  "base_model": "regnant-io/kw5-109M-instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Login | Deutsche Bank Banking & Brokerage",
+      "url": "https://meine.deutsche-bank.de/trxm/db/",
+      "snippet": "Geben Sie im Feld \"Deutsche Bank ID\" Ihre bisherige Filialkontonummer ein - ohne Leerzeichen und ohne Unterkontonummer …"
+    },
+    {
+      "title": "Login | Deutsche Bank Banking & Brokerage",
+      "url": "https://meine.deutsche-bank.de/",
+      "snippet": "Schützen Sie sich und Ihr Online-Banking. Wir helfen Ihnen gern."
+    },
+    {
+      "title": "Deutsche Bank Banking & Brokerage",
+      "url": "https://meine.deutsche-bank.de/demo/",
+      "snippet": "Um den vollen Funktionsumfang dieser Webseite nutzen zu können, benötigen Sie einen aktuellen Browser mit aktiviertem …"
+    },
+    {
+      "title": "Deutsche Bank Banking & Brokerage",
+      "url": "https://meine.deutsche-bank.de/taf/",
+      "snippet": "Bitte aktualisieren Sie Ihren Browser und/oder aktivieren Sie JavaScript. Um den vollen Funktionsumfang dieser Webseite nutzen zu …"
+    }
+  ]
+}

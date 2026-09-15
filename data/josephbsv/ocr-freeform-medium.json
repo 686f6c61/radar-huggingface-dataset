@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "josephbsv/ocr-freeform-medium",
+  "slug": "josephbsv-ocr-freeform-medium",
+  "author": "josephbsv",
+  "url": "https://huggingface.co/josephbsv/ocr-freeform-medium",
+  "created_at": "2026-09-15T13:46:13.000Z",
+  "updated_at": "2026-09-15T13:46:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "ocr-freeform",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meteo Genova - Previsioni Oggi, Prossimi 15 Giorni » iLMeteo.it",
+      "url": "https://www.ilmeteo.it/meteo/genova",
+      "snippet": "Sep 6, 2023 · A Genova oggi sarà una giornata prevalentemente serena. Durante la giornata di oggi si registrerà una temperatura …"
+    },
+    {
+      "title": "Meteo Genova - Previsioni a lungo termine » iLMeteo.it",
+      "url": "https://www.ilmeteo.it/meteo/genova/lungo-termine",
+      "snippet": "Oct 30, 2023 · Meteo Genova - Previsioni a lungo termine, previsioni del tempo per Genova, temperature, precipitazioni, venti, …"
+    },
+    {
+      "title": "Meteo Genova – previsioni meteo 15 giorni | it.freemeteo.com",
+      "url": "https://it.freemeteo.com/tempo/genoa/15-giorni/elenco/?gid=3176219&language=italian&country=italy",
+      "snippet": "1 day ago · Meteo Genova, previsioni meteo 15 giorni. Genova, il meteo della prossima settimana. Previsioni meteo dettagliate. …"
+    },
+    {
+      "title": "Previsioni meteo Genova - Fino a 15 giorni | METEO.IT",
+      "url": "https://www.meteo.it/meteo/genova-10025",
+      "snippet": "1 day ago · Meteo Genova e previsioni del tempo: precipitazioni, temperatura e venti. Meteo live: le previsioni per Genova aggiornate …"
+    },
+    {
+      "title": "Previsioni Meteo Genova Oggi - Fino a 15 Giorni - 3B Meteo",
+      "url": "https://www.3bmeteo.com/meteo/genova",
+      "snippet": "Jun 4, 2026 · Bel tempo con sole splendente per l'intera giornata, non sono previste piogge nelle prossime ore."
+    }
+  ]
+}

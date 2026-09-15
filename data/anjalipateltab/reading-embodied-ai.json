@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "anjalipateltab/reading-embodied-ai",
+  "slug": "anjalipateltab-reading-embodied-ai",
+  "author": "anjalipateltab",
+  "url": "https://huggingface.co/anjalipateltab/reading-embodied-ai",
+  "created_at": "2026-09-15T15:35:31.000Z",
+  "updated_at": "2026-09-15T15:35:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "embodied-ai",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cercle Aristote - Pierre Yves Rougeyron - YouTube",
+      "url": "https://www.youtube.com/channel/UCj0NPP7Q09tBDjQXVIMGvtw",
+      "snippet": "Cercle Aristote - Pierre Yves Rougeyron."
+    },
+    {
+      "title": "Les conférences du Cercle Aristote - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLcjvCItIEIM22EMr1nfVjd7dkxvalVbEa",
+      "snippet": "Retrouvez dans cette liste de lecture les conférences du Cercle Aristote qu'elles soient physiques ou en ligne."
+    },
+    {
+      "title": "Vidéos | Cercle Aristote",
+      "url": "https://cerclearistote.fr/videos/",
+      "snippet": "Nos chaînes Youtube, Odysee et Peertube répertorient les vidéos du Cercle Aristote. Ce contenu est la vitrine principale de …"
+    },
+    {
+      "title": "Cercle Aristote | Tout ce qui élève unit — Charles Péguy",
+      "url": "https://cerclearistote.fr/",
+      "snippet": "Conférences, éditions, émissions : le Cercle Aristote, centre d’éducation populaire et maison souverainiste. Vous pouvez nous …"
+    },
+    {
+      "title": "Cercle Aristote | chaîne YouTube | A Droite",
+      "url": "https://adroite.org/chaines/cercle-aristote",
+      "snippet": "1 day ago · Chaîne du Cercle Aristote, animée par Pierre-Yves Rougeyron. Longues conférences sur la philosophie politique, …"
+    }
+  ]
+}

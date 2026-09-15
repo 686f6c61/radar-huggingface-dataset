@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "jiosephlee/intern-s1-mini-context-conditioned-molecule-transfer-v10-3-bioavailability-ma-best",
+  "slug": "jiosephlee-intern-s1-mini-context-conditioned-molecule-transfer-v10-3-bioavailability-ma-best",
+  "author": "jiosephlee",
+  "url": "https://huggingface.co/jiosephlee/intern-s1-mini-context-conditioned-molecule-transfer-v10-3-bioavailability-ma-best",
+  "created_at": "2026-09-15T18:47:34.000Z",
+  "updated_at": "2026-09-15T18:49:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "chemistry",
+    "assay-transfer",
+    "context-conditioned-molecule-transfer",
+    "conversational",
+    "dataset:jiosephlee/context-conditioned-molecule-transfer-v10.3-bioavailability-ma-mixed-continuous-intern",
+    "base_model:jiosephlee/Intern-S1-mini-lm",
+    "base_model:finetune:jiosephlee/Intern-S1-mini-lm",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8201221120,
+  "parameters_human": "8.20B",
+  "storage_bytes": 16402497533,
+  "storage_human": "16.4 GB",
+  "base_model": "jiosephlee/Intern-S1-mini-lm",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "File Explorer in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/experience/fileexplorer/file-explorer-in-windows",
+      "snippet": "Find and open File Explorer in Windows, and customize Quick access by pinning and removing files and folders."
+    },
+    {
+      "title": "Explorateur de fichiers dans Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/fr-fr/windows/experience/fileexplorer/file-explorer-in-windows",
+      "snippet": "Accès rapide À compter de Windows 11, version 22H2, les dossiers Windows connus (Bureau, Documents, Téléchargements, …"
+    },
+    {
+      "title": "Open File Explorer in Windows 11",
+      "url": "https://www.elevenforum.com/t/open-file-explorer-in-windows-11.20591/",
+      "snippet": "Dec 11, 2023 · This tutorial will show you different ways to open File Explorer in Windows 11. File Explorer …"
+    },
+    {
+      "title": "Add and Remove Favorites in File Explorer Home in Windows 11",
+      "url": "https://www.elevenforum.com/t/add-and-remove-favorites-in-file-explorer-home-in-windows-11.6786/",
+      "snippet": "May 30, 2022 · This tutorial will show you how to add, remove, or clear and reset Favorites in File Explorer Home for your account or …"
+    },
+    {
+      "title": "Explorer unter Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/windows/experience/fileexplorer/file-explorer-in-windows",
+      "snippet": "Windows 11 Windows 10 Um Explorer in Windows 11 zu öffnen, wählen Sie ihn auf der Taskleiste oder im Startmenü aus, oder …"
+    }
+  ]
+}

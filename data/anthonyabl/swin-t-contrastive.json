@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "anthonyabl/swin-t-contrastive",
+  "slug": "anthonyabl-swin-t-contrastive",
+  "author": "anthonyabl",
+  "url": "https://huggingface.co/anthonyabl/swin-t-contrastive",
+  "created_at": "2026-09-15T15:07:59.000Z",
+  "updated_at": "2026-09-15T15:08:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Crépi intérieur | Leroy Merlin",
+      "url": "https://communaute.leroymerlin.fr/app/629/channel/forum-d-entraide-1263/details/crepi-interieur-31407606",
+      "snippet": "Bonjour , est il possible de poser du crépi intérieur sur de la toile de verre ?"
+    },
+    {
+      "title": "Inscripción talleres - Comunidad Leroy Merlin",
+      "url": "https://comunidad.leroymerlin.es/app/736/channel/talleres-2212",
+      "snippet": "Filtra por tu tienda favorita, elige el taller que más te interese e inscríbete. ¡Te esperamos en nuestros talleres impartidos por …"
+    },
+    {
+      "title": "Robot tondeuse | Leroy Merlin",
+      "url": "https://communaute.leroymerlin.fr/app/629/channel/forum-d-entraide-1263/details/robot-tondeuse-31424848",
+      "snippet": "Bonjour, j'aimerais acheter un robot tondeuse mais j'ai une pelouse en plusieurs parties. Est-ce possible? Merci pour vos réponse."
+    },
+    {
+      "title": "Artisan chez leroy merlin - 17 messages - ForumConstruire.com",
+      "url": "https://www.forumconstruire.com/construire/topic-19760.php",
+      "snippet": "Apr 6, 2006 · Artisan chez leroy merlin Ce sujet comporte 17 messages et a été affiché 15.398 fois Nouveau sujet Répondre Page 1 …"
+    },
+    {
+      "title": "Localizar pedido - Comunidad Leroy Merlin",
+      "url": "https://comunidad.leroymerlin.es/app/736/channel/foro-2210/details/localizar-pedido-32562205",
+      "snippet": "Jun 11, 2019 · Hola, realice un pedido con número 2943764 y en seguimiento de pedido me dice que introduzca un número de …"
+    }
+  ]
+}

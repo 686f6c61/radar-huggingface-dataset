@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "OmTheLast/muril-hinglish-mixed-kaggle-thar",
+  "slug": "omthelast-muril-hinglish-mixed-kaggle-thar",
+  "author": "OmTheLast",
+  "url": "https://huggingface.co/OmTheLast/muril-hinglish-mixed-kaggle-thar",
+  "created_at": "2026-09-15T16:41:51.000Z",
+  "updated_at": "2026-09-15T17:20:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "hi",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "hinglish",
+    "code-mixed",
+    "research",
+    "hate-speech-detection",
+    "hi",
+    "en",
+    "base_model:google/muril-base-cased",
+    "base_model:finetune:google/muril-base-cased",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 237557762,
+  "parameters_human": "237.6M",
+  "storage_bytes": 950254592,
+  "storage_human": "950 MB",
+  "base_model": "google/muril-base-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何评价电影《007：大破天幕杀机》（Skyfall）？ - 知乎",
+      "url": "https://www.zhihu.com/question/20746667/answers/updated",
+      "snippet": "这翻译也是神了，大破天幕杀机是 天幕庄园，不知道还以为是007要和卫星对线呢。 拍挺文艺的，主要是对于大英帝国曾经 日不落 的 …"
+    },
+    {
+      "title": "红皮书，白皮书，蓝皮书有什么区别？ - 知乎",
+      "url": "https://www.zhihu.com/question/47756700",
+      "snippet": "图片来源：公开网络 NO.2 蓝皮书 相对于 表达政府立场较多的白皮书， 蓝皮书等其它皮书 通常输出的是 研究团队或学者的观点。 蓝 …"
+    },
+    {
+      "title": "如何评价电影《007：大破天幕杀机》（Skyfall）？ - 知乎",
+      "url": "https://www.zhihu.com/question/20746667",
+      "snippet": "skyfall在007系列中绝对姿色平庸，但情感的处理很有意思，英雄迟暮是永远的艺术话题。 前文也说了，007不是超级英雄，他不能重 …"
+    },
+    {
+      "title": "拉马努金是怎么发现那些壮观的公式的？ - 知乎",
+      "url": "https://www.zhihu.com/question/66165881",
+      "snippet": "一些回答还是too naive，根本不懂拉马努金！对于牢拉是怎么发现这些公式的，我还真有一些比较独特的看法，震撼首发！ 就我观 …"
+    },
+    {
+      "title": "有没有办法将win10的微软todo放到桌面上？ - 知乎",
+      "url": "https://www.zhihu.com/question/411947988",
+      "snippet": "像小黄条一样，如图 现在好像可以了？我的win11下，打开TO DO。点击图中黑色箭头所指，红色方框标注的位置（保持在顶 …"
+    }
+  ]
+}

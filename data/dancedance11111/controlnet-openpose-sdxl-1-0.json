@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "dancedance11111/controlnet-openpose-sdxl-1.0",
+  "slug": "dancedance11111-controlnet-openpose-sdxl-1-0",
+  "author": "dancedance11111",
+  "url": "https://huggingface.co/dancedance11111/controlnet-openpose-sdxl-1.0",
+  "created_at": "2026-09-15T13:18:39.000Z",
+  "updated_at": "2026-09-15T13:18:39.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "stable-diffusion-xl",
+    "stable-diffusion-xl-diffusers",
+    "text-to-image",
+    "controlnet",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:adapter:stabilityai/stable-diffusion-xl-base-1.0",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10790745502,
+  "storage_human": "10.8 GB",
+  "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Earth",
+      "url": "https://earth.google.com/web",
+      "snippet": "Create and collaborate on immersive, data-driven maps from anywhere with the new Google Earth. See the world from above with …"
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://www.google.fr/intl/fr/earth/index.html",
+      "snippet": "Retrouvez le meilleur de Google Earth, avec en plus de nouveaux moyens d'explorer, d'apprendre et de partager. Découvrez dès à …"
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://www.google.com/intl/fr/earth/index.html",
+      "snippet": "Avec le globe détaillé Google Earth, inclinez la carte pour enregistrer une vue 3D parfaite ou profitez d'une expérience à 360° avec …"
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://www.google.com/intl/en_US/earth/index.html",
+      "snippet": "Where do the images come from? How are they they put together? And how often are they updated? In this video, learn about the …"
+    },
+    {
+      "title": "Versions de Google Earth – Google Earth",
+      "url": "https://www.google.fr/intl/fr/earth/versions/",
+      "snippet": "Google Earth pour Chrome vous permet d'accéder à n'importe quel endroit de la planète en quelques secondes et d'explorer des …"
+    }
+  ]
+}

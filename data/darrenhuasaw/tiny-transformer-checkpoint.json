@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "darrenhuasaw/tiny-transformer-checkpoint",
+  "slug": "darrenhuasaw-tiny-transformer-checkpoint",
+  "author": "darrenhuasaw",
+  "url": "https://huggingface.co/darrenhuasaw/tiny-transformer-checkpoint",
+  "created_at": "2026-09-15T16:17:06.000Z",
+  "updated_at": "2026-09-15T16:17:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

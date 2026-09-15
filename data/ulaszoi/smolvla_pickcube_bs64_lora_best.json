@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ulasZoi/smolvla_pickcube_bs64_LoRA_best",
+  "slug": "ulaszoi-smolvla_pickcube_bs64_lora_best",
+  "author": "ulasZoi",
+  "url": "https://huggingface.co/ulasZoi/smolvla_pickcube_bs64_LoRA_best",
+  "created_at": "2026-09-15T11:52:03.000Z",
+  "updated_at": "2026-09-15T11:52:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:lerobot/smolvla_base",
+    "lora",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11906992,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "how to save and reuse a trained neural network - MathWorks",
+      "url": "https://kr.mathworks.com/matlabcentral/answers/264160-how-to-save-and-reuse-a-trained-neural-network",
+      "snippet": "Jan 18, 2016 · I understand that save net; can be used but my questions are as follows ; 1.At what point in my code will i put save net …"
+    },
+    {
+      "title": "Save net for later genFunction function call",
+      "url": "https://kr.mathworks.com/matlabcentral/answers/366227-save-net-for-later-genfunction-function-call",
+      "snippet": "Nov 10, 2017 · Save net for later genFunction function call. Learn more about neural network, genfunction MATLAB, Deep Learning …"
+    },
+    {
+      "title": "MATLAB Agentic Toolkit - MATLAB & Simulink",
+      "url": "https://kr.mathworks.com/products/matlab-agentic-toolkit.html",
+      "snippet": "MATLAB Agentic Toolkit은 AI 코딩 에이전트에게 전문적인 MATLAB 지식과 MATLAB에 대한 실시간 연결성을 제공합니다. 에이전트는 …"
+    },
+    {
+      "title": "전력전자 회로 설계 - MATLAB & Simulink",
+      "url": "https://kr.mathworks.com/solutions/power-electronics/circuit-design.html",
+      "snippet": "Simulink를 사용해 시스템 수준 시뮬레이션을 수행함으로써 더 많은 설계 옵션을 고려하고 장단점을 비교할 수 있었고, 그 결과 프로젝트의 …"
+    },
+    {
+      "title": "Issue running standalone application compiled in MATLAB 2026a",
+      "url": "https://kr.mathworks.com/matlabcentral/answers/2184708-issue-running-standalone-application-compiled-in-matlab-2026a",
+      "snippet": "Aug 22, 2026 · I have a collection of Matlab scripts including GUI that I package as standalone Windows application for sharing. …"
+    }
+  ]
+}

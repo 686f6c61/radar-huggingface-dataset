@@ -1,0 +1,130 @@
+{
+  "schema": 1,
+  "id": "thuongvv/ZeroTTS-GGUF",
+  "slug": "thuongvv-zerotts-gguf",
+  "author": "thuongvv",
+  "url": "https://huggingface.co/thuongvv/ZeroTTS-GGUF",
+  "created_at": "2026-09-15T15:40:51.000Z",
+  "updated_at": "2026-09-15T15:40:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "gguf",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "gguf",
+    "onnx",
+    "text-to-speech",
+    "tts",
+    "vietnamese",
+    "ggml",
+    "llama-cpp",
+    "quantized",
+    "webassembly",
+    "zero-shot",
+    "speech-synthesis",
+    "voice-cloning",
+    "vietnamese-tts",
+    "tieng-viet",
+    "vi",
+    "arxiv:2602.10934",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 202319360,
+  "parameters_human": "202.3M",
+  "storage_bytes": 1205200668,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Zero-Shot Text-to-Speech",
+      "dataset": "ZeroBench-TTS",
+      "metric": "WER (%) — raw text",
+      "value": 1.03
+    },
+    {
+      "task": "Zero-Shot Text-to-Speech",
+      "dataset": "ZeroBench-TTS",
+      "metric": "UTMOSv2 naturalness MOS",
+      "value": 2.91
+    },
+    {
+      "task": "Zero-Shot Text-to-Speech",
+      "dataset": "ZeroBench-TTS",
+      "metric": "Speaker similarity (WavLM-SV cosine)",
+      "value": 0.936
+    },
+    {
+      "task": "Zero-Shot Text-to-Speech",
+      "dataset": "ZeroBench-TTS",
+      "metric": "Excess silence (s)",
+      "value": 0.029
+    },
+    {
+      "task": "Zero-Shot TTS — monolingual Vietnamese",
+      "dataset": "ZeroBench-TTS (vietnamese)",
+      "metric": "WER (%) — raw text",
+      "value": 0.16
+    },
+    {
+      "task": "Zero-Shot TTS — Vietnamese/English code-switching",
+      "dataset": "ZeroBench-TTS (code_switch)",
+      "metric": "WER (%) — raw text",
+      "value": 0.97
+    },
+    {
+      "task": "Zero-Shot TTS — cross-lingual voice prompt",
+      "dataset": "ZeroBench-TTS (cross_lingual)",
+      "metric": "WER (%) — raw text",
+      "value": 1.42
+    },
+    {
+      "task": "Zero-Shot TTS — acronyms, dates, numbers",
+      "dataset": "ZeroBench-TTS (challenging)",
+      "metric": "WER (%) — raw text",
+      "value": 1.75
+    }
+  ],
+  "sources": [
+    {
+      "title": "Espace connecté, espace client : LCL Banque et Assurance",
+      "url": "https://www.lcl.fr/compte-bancaire/mon-espace-connecte-client",
+      "snippet": "Avec Mon Espace Client LCL, accédez à vos comptes bancaires et contrats en ligne. Vous pouvez réalisez toutes vos opérations …"
+    },
+    {
+      "title": "Banque pour les particuliers : LCL Banque et assurance",
+      "url": "https://www.lcl.fr/",
+      "snippet": "LCL, la banque au service des particuliers. Retrouvez les services LCL : Compte bancaire, Carte, Epargne, Prêt, Assurance, des …"
+    },
+    {
+      "title": "LCL ESPACE PRO",
+      "url": "https://espacepro.secure.lcl.fr/outil/IQEN/Authentication/indexRedirect",
+      "snippet": "Veuillez vérifier que votre identifiant est valide et votre LCL m-Identité enrôlé dans votre Espace perso. Ensuite veuillez saisir à …"
+    },
+    {
+      "title": "Mon espace client Santé",
+      "url": "https://assurance-sante.secure.lcl.fr/",
+      "snippet": "Accédez à votre espace client santé pour gérer vos informations personnelles et consulter vos remboursements et garanties …"
+    },
+    {
+      "title": "Gestion comptes en ligne - LCL Banque et Assurance",
+      "url": "https://www.lcl.fr/questions-frequentes/gerer-mes-comptes",
+      "snippet": "Avec Mon Espace client LCL.fr vous pouvez gérer vos comptes bancaires en ligne, effectuer vos opérations courantes, faire des …"
+    }
+  ]
+}

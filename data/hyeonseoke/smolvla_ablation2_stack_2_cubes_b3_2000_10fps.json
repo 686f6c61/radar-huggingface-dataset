@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "HyeonseokE/smolvla_ablation2_stack_2_cubes_B3_2000_10fps",
+  "slug": "hyeonseoke-smolvla_ablation2_stack_2_cubes_b3_2000_10fps",
+  "author": "HyeonseokE",
+  "url": "https://huggingface.co/HyeonseokE/smolvla_ablation2_stack_2_cubes_B3_2000_10fps",
+  "created_at": "2026-09-15T12:55:07.000Z",
+  "updated_at": "2026-09-15T12:59:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:HyeonseokE/ablation2_stack_2_cubes_B3_10fps",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906729316,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zugriff auf den Apple-Kontodienst konfigurieren - Microsoft Intune",
+      "url": "https://learn.microsoft.com/de-de/intune/device-enrollment/apple/setup-account-service-access",
+      "snippet": "Aug 19, 2026 · Steuern Sie über die Apple-Zugriffsverwaltungseinstellungen, wie Apple-Konten auf Geräten verwendet werden, die …"
+    },
+    {
+      "title": "Bereitstellungsanleitung: Verwalten von iOS-/iPadOS-Geräten in ...",
+      "url": "https://learn.microsoft.com/de-de/intune/fundamentals/platform-guide-ios-ipados",
+      "snippet": "Apr 18, 2026 · Verwenden Sie Microsoft Intune, um Einstellungen und Features auf iOS-/iPadOS-Geräten zu aktivieren oder zu …"
+    },
+    {
+      "title": "iPhone & iPad mit Intune verwalten – KMU-Anleitung",
+      "url": "https://s-edv.com/anleitungen/iphone-ipad-intune-verwalten",
+      "snippet": "Jun 3, 2026 · Mit iPhone und iPad im Unternehmen mit Intune verwalten bringst du iOS- und iPadOS-Geräte zentral unter Kontrolle: …"
+    },
+    {
+      "title": "Apple Business Manager + Intune: Zero-Touch-Rollout",
+      "url": "https://s-edv.com/anleitungen/apple-business-manager-geraete-enrollment",
+      "snippet": "Jun 3, 2026 · Apple Business Manager einrichten, mit Intune verbinden und iPhones/iPads automatisch ausrollen (ADE/DEP, APNs, …"
+    },
+    {
+      "title": "Guide: Intune-Einstellungen für die Verwaltung von iOS-Geräten",
+      "url": "https://frank-miller.gmbh/2024/05/22/guide-intune-einstellungen-fuer-die-verwaltung-von-ios-geraeten/",
+      "snippet": "May 22, 2024 · Wenn ihr gerade erst in die Welt von Intune und Apple eintaucht, seid ihr hier genau richtig. Wir führen euch durch die …"
+    }
+  ]
+}

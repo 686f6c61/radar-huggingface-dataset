@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ScreenHighlighterRL-2B-i1-GGUF",
+  "slug": "mradermacher-screenhighlighterrl-2b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ScreenHighlighterRL-2B-i1-GGUF",
+  "created_at": "2026-09-15T16:25:00.000Z",
+  "updated_at": "2026-09-15T16:29:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "screen-highlighting",
+    "reinforcement-learning",
+    "grpo",
+    "qwen3_vl",
+    "en",
+    "base_model:mustafaah/ScreenHighlighterRL-2B",
+    "base_model:quantized:mustafaah/ScreenHighlighterRL-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 516292,
+  "parameters_human": "516292",
+  "storage_bytes": 2094560,
+  "storage_human": "2 MB",
+  "base_model": "mustafaah/ScreenHighlighterRL-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comment activer le contrôle parentale (en postant un message mais où ...",
+      "url": "https://www.assistance-mobile.com/questions/639789-activer-controle-parentale-postant-message",
+      "snippet": "Comment activer le contrôle parentale (en postant un message mais où ?) Je souhaiterais activer le contrôle parental sur le mobile …"
+    },
+    {
+      "title": "Problèmes avec le réseau mobile - Avec Réponse(s)",
+      "url": "https://www.assistance-mobile.com/questions/3006462-problemes-reseau-mobile",
+      "snippet": "Aug 25, 2022 · r Bonjour Marcela, Le service client téléphonique n'est pas inclus dans les offres Cdiscount Mobile, c'est pour cela …"
+    },
+    {
+      "title": "je n'ai pas reçu ma facture de résiliation 0784716186 et pas accès à ...",
+      "url": "https://www.assistance-mobile.com/questions/3426405-recu-facture-resiliation-0784716186-acces-compte",
+      "snippet": "consultée 2 fois question q Mon conjoint qui a résilié sa ligne n'arrive pas à télécharger ses factures depuis son espace client. …"
+    },
+    {
+      "title": "Comment avoir quelqu’un au téléphone pour un problème de facture",
+      "url": "https://www.assistance-mobile.com/questions/3255084-telephone-probleme-facture",
+      "snippet": "Nov 15, 2023 · Téléphonie fixe F Offre et facture F Demandes urgentes F Nouveau client Facture Forfaits et Options Changer de …"
+    },
+    {
+      "title": "Connexion à un réseau WIFI - Avec Réponse (s) - Assistance Mobile",
+      "url": "https://www.assistance-mobile.com/questions/1131535-connexion-reseau-wifi",
+      "snippet": "Jun 25, 2016 · Y a-t il un réseau credit mutuel mobile ou ne puis-je me connecter qu'au réseau Orange. Je ne veux pas réellement …"
+    }
+  ]
+}

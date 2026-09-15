@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "SeNKrOn10/Efe",
+  "slug": "senkron10-efe",
+  "author": "SeNKrOn10",
+  "url": "https://huggingface.co/SeNKrOn10/Efe",
+  "created_at": "2026-09-15T18:57:00.000Z",
+  "updated_at": "2026-09-15T18:58:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63645726,
+  "storage_human": "64 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taco Bell® | Live Más",
+      "url": "https://www.tacobell.com/?msockid=1cd8d2dcf897625f1321c509f90863d8",
+      "snippet": "Taco Bell® Rewards Program is available at participating U.S. locations and subject to Terms and conditions. °Free-sign-up reward …"
+    },
+    {
+      "title": "Taco Bell Menu in San Jose, CA - Unit 1 2471 Berryessa Road | Taco Bell®",
+      "url": "https://www.tacobell.com/food?store=027523&msockid=1cd8d2dcf897625f1321c509f90863d8",
+      "snippet": "With breakfast options at select locations, to late night, the Taco Bell menu in San Jose, CA, serves made-to-order and customizable …"
+    },
+    {
+      "title": "Taco Bell Careers - Home",
+      "url": "https://jobs.tacobell.com/",
+      "snippet": "At The Bell, we create space for everyone – Restaurants to Corporate – to cultivate your passions and grow your career. From …"
+    },
+    {
+      "title": "Store Locator - TACO BELL® HOURS",
+      "url": "https://locations.tacobell.com/store-locators/taco-bell-hours.html",
+      "snippet": "Looking for Taco Bell’s restaurant hours? Use the store locator to find a Taco Bell near you and hours of operation!"
+    },
+    {
+      "title": "U.S. Restaurants | Taco Bell®",
+      "url": "https://locations.tacobell.com/",
+      "snippet": "Find a Taco Bell location in the United States using this directory. Order online for restaurant pick-up or delivery!"
+    }
+  ]
+}

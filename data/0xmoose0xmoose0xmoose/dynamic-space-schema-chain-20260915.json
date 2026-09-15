@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "0xmoose0xmoose0xmoose/dynamic-space-schema-chain-20260915",
+  "slug": "0xmoose0xmoose0xmoose-dynamic-space-schema-chain-20260915",
+  "author": "0xmoose0xmoose0xmoose",
+  "url": "https://huggingface.co/0xmoose0xmoose0xmoose/dynamic-space-schema-chain-20260915",
+  "created_at": "2026-09-15T14:24:48.000Z",
+  "updated_at": "2026-09-15T14:24:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=ar",
+      "snippet": "يمكنك إنشاء حساب أو تسجيل الدخول إلى Instagram - شارك ما يهمك مع الأشخاص الذين يفهمونك."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/sem/campaign/login/",
+      "snippet": "Log in to Instagram and connect with friends, family, and interests worldwide."
+    },
+    {
+      "title": "Sign up • Instagram",
+      "url": "https://www.instagram.com/accounts/emailsignup/",
+      "snippet": "Sign up to see photos, videos, stories & messages from your friends, family & interests around the world."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/ar/mobile-login/",
+      "snippet": "Instagram ... Instagram"
+    }
+  ]
+}

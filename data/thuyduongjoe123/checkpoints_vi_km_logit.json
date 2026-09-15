@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "thuyduongjoe123/checkpoints_vi_km_logit",
+  "slug": "thuyduongjoe123-checkpoints_vi_km_logit",
+  "author": "thuyduongjoe123",
+  "url": "https://huggingface.co/thuyduongjoe123/checkpoints_vi_km_logit",
+  "created_at": "2026-09-15T16:08:36.000Z",
+  "updated_at": "2026-09-15T16:09:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452608258,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MLB Schedule 2026 | MLB Schedule",
+      "url": "https://www.mlb.com/schedule?msockid=18200ee74b6e6a9117a419324a906bf1",
+      "snippet": "The official schedule of Major League Baseball including probable pitchers, Gameday, ticket and postseason information."
+    },
+    {
+      "title": "MLB Schedule - 2026 Season - ESPN",
+      "url": "https://www.espn.com/mlb/schedule",
+      "snippet": "1 day ago · The complete 2026 MLB season schedule on ESPN. Includes game times, TV listings and ticket information for all MLB …"
+    },
+    {
+      "title": "MLB Team Schedules - MLB.com",
+      "url": "https://www.mlb.com/schedule/team-by-team?msockid=18200ee74b6e6a9117a419324a906bf1",
+      "snippet": "MLB Team Schedules Arizona Diamondbacks Regular Season Schedule Sortable Schedule Printable Schedule Downloadable …"
+    },
+    {
+      "title": "MLB Scores, 2026 Season - ESPN",
+      "url": "https://www.espn.com/mlb/scoreboard",
+      "snippet": "1 day ago · Live scores for every 2026 MLB season game on ESPN. Includes box scores, video highlights, play breakdowns and …"
+    },
+    {
+      "title": "MLB Schedule 2026 - CBS Sports",
+      "url": "https://www.cbssports.com/mlb/schedule/",
+      "snippet": "1 day ago · Get the full schedule for the 2026 MLB season, including matchups, dates, times and TV and ticket information."
+    }
+  ]
+}

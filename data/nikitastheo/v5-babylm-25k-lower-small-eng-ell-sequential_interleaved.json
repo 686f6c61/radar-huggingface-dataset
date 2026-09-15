@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nikitastheo/v5-babylm-25k-lower-small-eng-ell-sequential_interleaved",
+  "slug": "nikitastheo-v5-babylm-25k-lower-small-eng-ell-sequential_interleaved",
+  "author": "nikitastheo",
+  "url": "https://huggingface.co/nikitastheo/v5-babylm-25k-lower-small-eng-ell-sequential_interleaved",
+  "created_at": "2026-09-15T13:17:44.000Z",
+  "updated_at": "2026-09-15T13:48:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "causal-lm",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 38497280,
+  "parameters_human": "38.5M",
+  "storage_bytes": 307988576,
+  "storage_human": "308 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - alexisvalentino/Chatgpt-DAN: DAN - The ‘JAILBREAK’ Version …",
+      "url": "https://github.com/alexisvalentino/Chatgpt-DAN",
+      "snippet": "Tired of ChatGPT refusing to do things? Worry no more. This is the Hub for all working ChatGPT jailbreaks I could find. DAN 7.0 The …"
+    },
+    {
+      "title": "ChatGPT MD - GitHub",
+      "url": "https://github.com/bramses/chatgpt-md",
+      "snippet": "ChatGPT MD Your AI writing companion, living inside Obsidian. Chat with AI directly in your notes. Reference your other notes with [ …"
+    },
+    {
+      "title": "ChatGPT最实用的提示（Prompts）写法有哪些？ - 知乎",
+      "url": "https://www.zhihu.com/question/584402332",
+      "snippet": "比如， 1、我有个想法：“想让ChatGPT帮我用python写一个实现计算器程序”，但我不知道实现这个任务还需要考虑哪些具体方面，所 …"
+    },
+    {
+      "title": "为什么ChatGPT已经发布4年了，社会总生产力纹丝不动？",
+      "url": "https://www.zhihu.com/question/2065583157664018461",
+      "snippet": "Jul 29, 2026 · ChatGPT 发布四年了，社会总生产力变化不大。 像美国非农劳动生产率在 2022 年底之后，季度增速基本在1% 到 2% …"
+    },
+    {
+      "title": "ChatGPT - Reddit",
+      "url": "https://www.reddit.com/r/ChatGPT/top/",
+      "snippet": "Dec 1, 2022 · r/ChatGPT: Subreddit to discuss about ChatGPT and AI. Not affiliated with OpenAI."
+    }
+  ]
+}

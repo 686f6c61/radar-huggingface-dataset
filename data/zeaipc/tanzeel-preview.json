@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "zeaipc/tanzeel-preview",
+  "slug": "zeaipc-tanzeel-preview",
+  "author": "zeaipc",
+  "url": "https://huggingface.co/zeaipc/tanzeel-preview",
+  "created_at": "2026-09-15T13:43:28.000Z",
+  "updated_at": "2026-09-15T13:45:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "hi",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "tanzeel",
+    "zeaipc",
+    "conversational",
+    "preview",
+    "hi",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15231271888,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Homegate | Immobilien Markt Schweiz",
+      "url": "https://www.homegate.ch/de",
+      "snippet": "Auf dem Immobilienmarkt Homegate finden Sie die grösste Auswahl an Wohnungen, Häusern und weiteren Immobilien. Jetzt …"
+    },
+    {
+      "title": "Immobiliensuche Schweiz | Wohnung oder Haus kaufen - Homegate",
+      "url": "https://www.homegate.ch/kaufen/immobilie-suchen",
+      "snippet": "Immobilien zum kaufen in der Schweiz gesucht? Mit der Immobiliensuche von homegate.ch ist die Wohnungs- oder Haussuche …"
+    },
+    {
+      "title": "ImmoScout24: Immobilien in der Schweiz mieten & kaufen",
+      "url": "https://www.immoscout24.ch/de?msockid=39727283e1f76b8d296d6556e0c26a4f",
+      "snippet": "Immobilien, Wohnungen und Häuser in der Schweiz kaufen und mieten – Finden Sie attraktive Objekte in Ihrer Nähe. Jetzt online auf …"
+    },
+    {
+      "title": "Wohnung mieten - Homegate",
+      "url": "https://www.homegate.ch/mieten/wohnung/trefferliste",
+      "snippet": "Wohnung mieten in . Bei homegate.ch findest Du 24031 passende Immobilien | Der grösste Immobilienmarktplatz der Schweiz"
+    },
+    {
+      "title": "Homegate | Swiss real estate marketplace",
+      "url": "https://www.homegate.ch/en",
+      "snippet": "On the Homegate real estate marketplace you will find the largest selection of apartments, houses and other real estate. Start …"
+    }
+  ]
+}

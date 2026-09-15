@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "joshycodes/qwen3-14b-sorrel-selfstories-g1-selfjudge-chat",
+  "slug": "joshycodes-qwen3-14b-sorrel-selfstories-g1-selfjudge-chat",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/qwen3-14b-sorrel-selfstories-g1-selfjudge-chat",
+  "created_at": "2026-09-15T15:21:49.000Z",
+  "updated_at": "2026-09-15T16:38:24.000Z",
+  "license": "internal-research",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "flourishing-training",
+    "continued-pretraining",
+    "base_model:joshycodes/qwen3-14b-sorrel-atomic-f-only-midtrain",
+    "base_model:finetune:joshycodes/qwen3-14b-sorrel-atomic-f-only-midtrain",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 88621373694,
+  "storage_human": "88.6 GB",
+  "base_model": "joshycodes/qwen3-14b-sorrel-atomic-f-only-midtrain",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JK 制服 - 知乎",
+      "url": "https://www.zhihu.com/topic/20010203/intro",
+      "snippet": "Feb 3, 2001 · JK为日语流行语，意为女高中生（じょしこうこうせい）。取假名音 jyoshikoukousei中的J和K。开始是因为很多中国妹 …"
+    },
+    {
+      "title": "JK JK - 知乎",
+      "url": "https://www.zhihu.com/people/jk-jk",
+      "snippet": "Mar 21, 2017 · 这一次准备谈判的是《禁止核武器条约Nuclear Weapons Ban Treaty》，而不是《核武器公约Nuclear Weapons …"
+    },
+    {
+      "title": "Word自动编号10以后间距与之前不一致，怎么处理-百度经验",
+      "url": "https://jingyan.baidu.com/article/08b6a591b7d28514a909225d.html",
+      "snippet": "Oct 22, 2017 · Word自动编号10以后间距与之前不一致，怎么处理,我们写文档的时候经常会用到word的自动编号功能，但是有时候会 …"
+    },
+    {
+      "title": "为什么JK对男生那么有吸引力？ - 知乎",
+      "url": "https://www.zhihu.com/question/379300613",
+      "snippet": "如果你现实生活中看过一些女孩的裸体，你就知道JK对身材的修饰遮瑕作用极强。 JK对男生有吸引力是因为JK 是一种极其擅长扬长避 …"
+    },
+    {
+      "title": "有哪些让人惊艳的 JK（制服）的照片？ - 知乎",
+      "url": "https://www.zhihu.com/question/60199335",
+      "snippet": "看一下我最近在学校拍的绝美JK照片吧。 算不上我Jk照片中最好看的，但是我太喜欢学校的场景了，因为显得年轻，哈哈哈。 要是让 …"
+    }
+  ]
+}

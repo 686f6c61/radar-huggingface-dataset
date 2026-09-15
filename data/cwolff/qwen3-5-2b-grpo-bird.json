@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "cwolff/qwen3.5-2b-grpo-bird",
+  "slug": "cwolff-qwen3-5-2b-grpo-bird",
+  "author": "cwolff",
+  "url": "https://huggingface.co/cwolff/qwen3.5-2b-grpo-bird",
+  "created_at": "2026-09-15T15:26:28.000Z",
+  "updated_at": "2026-09-15T16:10:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-to-sql",
+    "agentic",
+    "grpo",
+    "reinforcement-learning",
+    "sql",
+    "vllm",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:cwolff/queries",
+    "dataset:cwolff/schemas",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2274069824,
+  "parameters_human": "2.27B",
+  "storage_bytes": 4561024790,
+  "storage_human": "4.6 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SNCF Connect : Réservez vos billets SNCF, bus et covoiturage",
+      "url": "https://www.sncf-connect.com/",
+      "snippet": "Réservez vos Billets de Train au meilleur prix sur SNCF Connect ! Retrouvez aussi notre offre de cartes de réduction, abonnements …"
+    },
+    {
+      "title": "SNCF Connect : Book your train tickets to France and Europe",
+      "url": "https://www.sncf-connect.com/en-en",
+      "snippet": "Download the SNCF Connect app for faster, easier and cleaner mobility across France. With one touch, you can organise, book and …"
+    },
+    {
+      "title": "Gérer ma réservation - SNCF Connect",
+      "url": "https://secure.location-voiture.sncf-connect.com/votreReservation",
+      "snippet": "Tirez le maximum de Votre Avis. Gérez vos réservations, modifiez vos informations personnelles, vos paramètres et découvrez les …"
+    },
+    {
+      "title": "Communauté | Connect & Vous",
+      "url": "http://www.vous.sncf-connect.com/community",
+      "snippet": "Titre* Description* A propos SNCF Connect est le service digital qui permet d'acheter et gérer tous vos trajets, du 1ᵉʳ au dernier …"
+    },
+    {
+      "title": "Manage Booking - SNCF Connect",
+      "url": "https://secure.location-voiture.sncf-connect.com/en/yourBooking",
+      "snippet": "To get started, please provide your booking number, your last name and your email address."
+    }
+  ]
+}

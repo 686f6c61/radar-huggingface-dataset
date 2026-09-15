@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "dishants0605/qwen2.5-cobol-python-translator",
+  "slug": "dishants0605-qwen2-5-cobol-python-translator",
+  "author": "dishants0605",
+  "url": "https://huggingface.co/dishants0605/qwen2.5-cobol-python-translator",
+  "created_at": "2026-09-15T17:28:14.000Z",
+  "updated_at": "2026-09-15T18:04:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "code",
+    "cobol",
+    "python",
+    "translation",
+    "qlora",
+    "unsloth",
+    "qwen2.5",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889500,
+  "storage_human": "3.1 GB",
+  "base_model": "unsloth/qwen2.5-coder-1.5b-instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YUTO - YouTube",
+      "url": "https://www.youtube.com/channel/UCw7kbAvuxn0ZMwRfQqZmVEQ",
+      "snippet": "YUTO, DITA, LUKI - CASTLE (城堡) Official Video YUTO and LUKI 1.9K views • 2 months ago"
+    },
+    {
+      "title": "YUTO - YouTube",
+      "url": "https://www.youtube.com/channel/UC0Q9HJY7VkyQ236tNvhvBWQ",
+      "snippet": "My new single \"Whisper\" is out now."
+    },
+    {
+      "title": "yuto - YouTube",
+      "url": "https://www.youtube.com/c/yuto_es/videos",
+      "snippet": "Me llamo yuto y soy japonés.En este canal, les cuento sobre la cultura japonesa, mis viajes por el mundo y mucho más!"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/br",
+      "snippet": "© 2026 Google LLC."
+    }
+  ]
+}

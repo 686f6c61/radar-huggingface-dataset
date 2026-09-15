@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-GGUF",
+  "slug": "dongfangshuo-dongfangshuo-qwen3-8-27b-nsfw-gguf",
+  "author": "dongfangshuo",
+  "url": "https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-GGUF",
+  "created_at": "2026-09-14T16:08:09.000Z",
+  "updated_at": "2026-09-15T19:02:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "qwen",
+    "qwen3.8",
+    "vision",
+    "multimodal",
+    "nsfw",
+    "ollama",
+    "image-text-to-text",
+    "zh",
+    "base_model:dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW",
+    "base_model:quantized:dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 176,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 17775357920,
+  "storage_human": "17.8 GB",
+  "base_model": "dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DraftKings Casino Review 2026 — America's Premier Legal Online Casino",
+      "url": "https://draftkings2026.com/",
+      "snippet": "May 9, 2026 · Read our DraftKings Casino registration guide to open your account in minutes, check the login guide if you already …"
+    },
+    {
+      "title": "Blackjack, Slots and much more! - DraftKings Casino",
+      "url": "https://casino.draftkings.com/casino-welcome",
+      "snippet": "Play online casino games including slots, blackjack, roulette, and poker and try our exclusive live dealer experience."
+    },
+    {
+      "title": "Online Casino - Play Real Money Casino Games | DraftKings",
+      "url": "https://casino.draftkings.com/",
+      "snippet": "1 day ago · In addition to all your favorite casino games, we’re constantly dealing out new and exciting ways to play. Available on your …"
+    },
+    {
+      "title": "DraftKings Casino | 1,000+ Slots, Blackjack & Live Dealer",
+      "url": "https://en-draftkingscasino.org/",
+      "snippet": "DraftKings Casino portal 1,000+ real-money slots, live dealer tables, Dynasty Rewards, and instant secure deposits across legal US …"
+    },
+    {
+      "title": "DraftKings Casino - Real Money - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.draftkings.casino&hl=en-US",
+      "snippet": "Your favorite real money casino gambling games are here. Blackjack, slots, roulette and more – all in the DraftKings Casino app. …"
+    }
+  ]
+}

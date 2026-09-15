@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "headless-start/peft-lora-vit",
+  "slug": "headless-start-peft-lora-vit",
+  "author": "headless-start",
+  "url": "https://huggingface.co/headless-start/peft-lora-vit",
+  "created_at": "2026-09-15T15:56:46.000Z",
+  "updated_at": "2026-09-15T16:04:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "lora",
+    "parameter-efficient-fine-tuning",
+    "vision-transformer",
+    "pytorch",
+    "image-classification",
+    "dataset:timm/oxford-iiit-pet",
+    "base_model:timm/vit_base_patch16_224.augreg_in21k_ft_in1k",
+    "base_model:adapter:timm/vit_base_patch16_224.augreg_in21k_ft_in1k",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 362034954,
+  "storage_human": "362 MB",
+  "base_model": "timm/vit_base_patch16_224.augreg_in21k_ft_in1k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Flight booking on Air France - Flights to Paris, Sao Paulo, Bogota ...",
+      "url": "https://wwws.airfrance.fr/en?msockid=08071627487860220c2001f249846181",
+      "snippet": "Book your flight ticket with Air France official website. Flights to Paris, France and more than 500 worldwide destinations."
+    },
+    {
+      "title": "Air France",
+      "url": "https://wwws.airfrance.fr/?msockid=08071627487860220c2001f249846181",
+      "snippet": "Site officiel Air France. Réservez votre billet d'avion au meilleur prix sur plus de 230 destinations. Envolez-vous en toute élégance."
+    },
+    {
+      "title": "Air France",
+      "url": "https://intralignes.airfrance.fr/",
+      "snippet": "Habile Pages for identification and authentication."
+    },
+    {
+      "title": "Voyages d'exception Vol + Hôtel au meilleur prix - Air France",
+      "url": "https://holidays.airfrance.fr/fr-FR",
+      "snippet": "Découvrez notre sélection irrésistible de séjours Vol + Hôtel au meilleur prix et de Ventes Privilèges | Offres exclusives"
+    },
+    {
+      "title": "Air France Holidays | Voyages Vol + Hôtel | Ventes Privilèges",
+      "url": "https://holidays.airfrance.fr/fr-FR/home/login",
+      "snippet": "L'excellence Air France holidays Profitez de la qualité des services Air France holidays, opéré par PerfectStay, pour vous garantir …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Hager290/hager-persona",
+  "slug": "hager290-hager-persona",
+  "author": "Hager290",
+  "url": "https://huggingface.co/Hager290/hager-persona",
+  "created_at": "2026-09-15T12:03:04.000Z",
+  "updated_at": "2026-09-15T12:05:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183349158,
+  "storage_human": "6.2 GB",
+  "base_model": "unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The AI Work Platform for People & Agents | monday.com",
+      "url": "https://monday.com/",
+      "snippet": "Track every agent action across your organization with a real-time log of what was done and when."
+    },
+    {
+      "title": "Die KI-Arbeitsplattform für Menschen und Agenten | monday.com",
+      "url": "https://monday.com/lang/de",
+      "snippet": "Nutze das KI-Tool deiner Wahl Bitte deinen externen KI-Assistenten, Aufgaben direkt in monday zu erledigen – ohne das Tool zu …"
+    },
+    {
+      "title": "monday.com: Where Teams Get Work Done",
+      "url": "https://auth.monday.com/login_help",
+      "snippet": "Enter your email and we'll send you your account URL."
+    },
+    {
+      "title": "Direct Log in - The official monday.com community:",
+      "url": "https://community.monday.com/auth/login/direct",
+      "snippet": "Password Forgot your password? Your space to connect with users, ask questions, and level up your platform."
+    },
+    {
+      "title": "monday.com: Where Teams Get Work Done",
+      "url": "https://apc.monday.com/auth/login_monday/email_password",
+      "snippet": "monday.com Work OS is an open platform where anyone can create the tools they need to run every aspect of their work."
+    }
+  ]
+}

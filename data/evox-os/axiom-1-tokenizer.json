@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "evox-os/axiom-1-tokenizer",
+  "slug": "evox-os-axiom-1-tokenizer",
+  "author": "evox-os",
+  "url": "https://huggingface.co/evox-os/axiom-1-tokenizer",
+  "created_at": "2026-09-15T15:59:46.000Z",
+  "updated_at": "2026-09-15T15:59:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spécialiste Pièces Automobile Détachées Sport Toutes Marques",
+      "url": "https://www.evox-performance.com/fr/",
+      "snippet": "Rejoignez EVOX Performance sur nos réseaux sociaux et découvrez en avant-première nos nouveautés, nos projets automobiles, …"
+    },
+    {
+      "title": "Evo-xracing : L'équipement moto pour les professionnels",
+      "url": "https://www.evo-xracing.com/fr/",
+      "snippet": "Le fournisseur d'équipement moto, pièces détachés moto et accessoires moto - course et route. Découvrez le site des pièces moto …"
+    },
+    {
+      "title": "Echappements sport EVOX pour Porsche",
+      "url": "https://www.evox-performance.com/fr/12-porsche",
+      "snippet": "Les échappements sport EVOX pour Porsche produiront de véritables gains en puissance, en couple et en poids dans le seul et …"
+    },
+    {
+      "title": "Evox | Shiftech",
+      "url": "https://www.shiftech.eu/fr/marques/evox-echappement",
+      "snippet": "Choisir EVOX, c’est opter pour une marque qui place l’émotion de conduite, mais aussi le rendu esthétique, au cœur de son …"
+    },
+    {
+      "title": "Pièces et Accessoires de Performance Automobile | Evox Performance",
+      "url": "https://www.adp-shop.fr/m/evox-performance/",
+      "snippet": "Découvrez Evox Performance, spécialiste des pièces et accessoires de performance automobile. Nos produits, incluant les …"
+    }
+  ]
+}

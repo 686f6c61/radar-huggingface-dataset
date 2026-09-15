@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "lalodeavilaarm/spiral-vit-medmnist-ablation",
+  "slug": "lalodeavilaarm-spiral-vit-medmnist-ablation",
+  "author": "lalodeavilaarm",
+  "url": "https://huggingface.co/lalodeavilaarm/spiral-vit-medmnist-ablation",
+  "created_at": "2026-09-15T17:08:22.000Z",
+  "updated_at": "2026-09-15T17:09:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "medical-imaging",
+    "vision-transformer",
+    "medmnist",
+    "image-classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1299965184,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "火绒安全",
+      "url": "https://www.huorong.cn/",
+      "snippet": "4 days ago · 火绒小问答——「企业版」终端发现 尊敬的用户，您好！ 火绒终端安全管理系统2.0的终端发现功能可帮助管理员发现中 …"
+    },
+    {
+      "title": "个人产品-火绒安全",
+      "url": "https://huorong.cn/person5.html",
+      "snippet": "1 day ago · @Kylin_Will 自从换了火绒杀毒，我的电脑总算清净了。 @憨憨美豆子 火绒真的太好用了，给我清理了18个G的c盘内存。 …"
+    },
+    {
+      "title": "火绒恶性木马专杀工具 - 火绒安全工具 - 火绒安全软件",
+      "url": "https://bbs.huorong.cn/thread-18575-1-1.html",
+      "snippet": "本帖最后由 czj422 于 2025-11-7 16:57 编辑 亲爱的火绒用户： 您好，由于内核对抗存在风险，火绒安全软件中不会与Rootkit病毒进行 …"
+    },
+    {
+      "title": "火绒强力卸载\"Beta版\" - 火绒强力卸载 - 火绒安全软件",
+      "url": "https://bbs.huorong.cn/thread-158630-1-1.html",
+      "snippet": "Jan 8, 2026 · 亲爱的火绒用户：欢迎大家体验全新产品--火绒强力卸载\"Beta版\"。产品概述：火绒强力卸载软件是由火绒安全团队为互 …"
+    },
+    {
+      "title": "火绒安全 - huorong",
+      "url": "https://lic.buy.huorong.cn/html/dist/index.html",
+      "snippet": "Apr 29, 2026 · 火绒安全提供强大的终端防护和全网管控功能，满足个人及企业用户的安全需求。"
+    }
+  ]
+}

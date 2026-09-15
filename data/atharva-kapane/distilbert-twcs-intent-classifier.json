@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "Atharva-Kapane/DistilBERT-TWCS-Intent-Classifier",
+  "slug": "atharva-kapane-distilbert-twcs-intent-classifier",
+  "author": "Atharva-Kapane",
+  "url": "https://huggingface.co/Atharva-Kapane/DistilBERT-TWCS-Intent-Classifier",
+  "created_at": "2026-09-15T12:16:17.000Z",
+  "updated_at": "2026-09-15T12:24:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66964238,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267869480,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

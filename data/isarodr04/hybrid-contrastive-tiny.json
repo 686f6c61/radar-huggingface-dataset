@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "isarodr04/hybrid-contrastive-tiny",
+  "slug": "isarodr04-hybrid-contrastive-tiny",
+  "author": "isarodr04",
+  "url": "https://huggingface.co/isarodr04/hybrid-contrastive-tiny",
+  "created_at": "2026-09-15T15:49:54.000Z",
+  "updated_at": "2026-09-15T15:49:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Celebs: Naked, Bikini, See-Through, Topless, Bottomless",
+      "url": "https://www.reddit.com/r/celebsnaked/",
+      "snippet": "An appreciation subreddit for the naked contents of celebrities around the world. Bikini, See-Through, Topless, and Bottomless …"
+    },
+    {
+      "title": "Celebrity NSFW Photos - Reddit",
+      "url": "https://www.reddit.com/r/celebnsfw/hot/",
+      "snippet": "r/celebnsfw Upvote 2.3K 52 Share Kate Winslet"
+    },
+    {
+      "title": "r/Celebhub - Reddit",
+      "url": "https://www.reddit.com/r/Celebhub/",
+      "snippet": "r/Celebhub: Content of famous actresses, singers, models, influencers, athletes and other beautiful celebs."
+    },
+    {
+      "title": "Celebrities Unveiling Themselves - Reddit",
+      "url": "https://www.reddit.com/r/CelebsUnveiling/",
+      "snippet": "The world's most beautiful women, deliberately revealing or displaying their bodies for the visual and sexual enjoyment of others: …"
+    },
+    {
+      "title": "Sydney Sweeney Gone Wild - Reddit",
+      "url": "https://www.reddit.com/r/SydneySweeneyGW/",
+      "snippet": "r/SydneySweeneyGW: Sydney Sweeney Gone Wild This is a NSFW subreddit for Sydney Sweeney nude and non nude pictures. …"
+    }
+  ]
+}

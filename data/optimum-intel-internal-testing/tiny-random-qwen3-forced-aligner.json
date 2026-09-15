@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "optimum-intel-internal-testing/tiny-random-qwen3-forced-aligner",
+  "slug": "optimum-intel-internal-testing-tiny-random-qwen3-forced-aligner",
+  "author": "optimum-intel-internal-testing",
+  "url": "https://huggingface.co/optimum-intel-internal-testing/tiny-random-qwen3-forced-aligner",
+  "created_at": "2026-09-15T13:42:00.000Z",
+  "updated_at": "2026-09-15T13:47:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_asr",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10253184,
+  "parameters_human": "10.3M",
+  "storage_bytes": 52450014,
+  "storage_human": "52 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Login | Optimum Automotive",
+      "url": "https://fleet.optimum-automotive.com/",
+      "snippet": "Welcome to the ultimate solution for your fleet. All-in-one."
+    },
+    {
+      "title": "Optimum, portes de placards, verrières, portes intérieures et dressing",
+      "url": "https://www.optimum.tm.fr/",
+      "snippet": "Fabricant français de portes de placards depuis plus de 30 ans, Optimum propose des portes de placards coulissantes, verrières en …"
+    },
+    {
+      "title": "Optimum, portes de placards, verrières, portes intérieures et dressing",
+      "url": "https://www.optimum.tm.fr/fr/1/29/1_Porte-de-placard.html",
+      "snippet": "Retrouvez l'ensemble des produits commercialisés par Optimum : porte de placard, dressing et aménagement, porte d'intérieur et …"
+    },
+    {
+      "title": "Optimum Live",
+      "url": "https://livebyoptimum.com/",
+      "snippet": "Mot de passe oublié ? Se connecter"
+    },
+    {
+      "title": "Les classes de confort OPTIMUM des TGV INOUI",
+      "url": "https://www.tgvinoui.sncf/voyager/voyager-avec-tgv-inoui/classes-de-confort/classes-optimum-optimumplus",
+      "snippet": "Aug 25, 2026 · Découvrez OPTIMUM et OPTIMUM PLUS, les classes de confort TGV INOUI alliant flexibilité et accompagnement …"
+    }
+  ]
+}

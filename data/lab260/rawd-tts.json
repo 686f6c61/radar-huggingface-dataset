@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "lab260/RAWD-TTS",
+  "slug": "lab260-rawd-tts",
+  "author": "lab260",
+  "url": "https://huggingface.co/lab260/RAWD-TTS",
+  "created_at": "2026-09-15T17:05:15.000Z",
+  "updated_at": "2026-09-15T17:14:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40421384,
+  "storage_human": "40 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/outlook_com/forum/all/outlook-todo-synced-tasks-attachments-only-non/66bca736-f128-4d62-b193-79c8c57ad30f",
+      "snippet": ""
+    },
+    {
+      "title": "Verify your YouTube account - Google Help",
+      "url": "https://support.google.com/youtube/answer/171664?hl=en",
+      "snippet": "To verify your channel, you’ll be asked to enter a phone number. We’ll send a verification code by text or voice call to that phone …"
+    },
+    {
+      "title": "Login ke Gmail - Komputer - Bantuan Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=id&co=GENIE.Platform%3DDesktop",
+      "snippet": "Untuk membuka Gmail, Anda dapat login dari komputer atau menambahkan akun Anda ke aplikasi Gmail di ponsel atau tablet Anda. …"
+    }
+  ]
+}

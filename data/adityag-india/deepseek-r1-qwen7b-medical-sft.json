@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "adityag-india/deepseek-r1-qwen7b-medical-sft",
+  "slug": "adityag-india-deepseek-r1-qwen7b-medical-sft",
+  "author": "adityag-india",
+  "url": "https://huggingface.co/adityag-india/deepseek-r1-qwen7b-medical-sft",
+  "created_at": "2026-09-15T16:24:48.000Z",
+  "updated_at": "2026-09-15T16:32:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "tensorboard",
+    "safetensors",
+    "base_model:adapter:deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1911856352,
+  "storage_human": "1.9 GB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Particulier - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier",
+      "snippet": "Consultez notre foire aux questions et le pas-à-pas pour faire votre demande (PDF). Attention aux arnaques : à l'issue de la …"
+    },
+    {
+      "title": "J'accède à mon espace Finances publiques et à mes services en ligne",
+      "url": "https://www.impots.gouv.fr/particulier/jaccede-mon-espace-particulier-et-mes-services-en-ligne",
+      "snippet": "Mar 30, 2016 · Une offre diversifiée de services en ligne vous est proposée dans votre espace Finances publiques. Vous pouvez …"
+    },
+    {
+      "title": "impots.gouv.fr - Particuliers | authentification",
+      "url": "https://cfspart.impots.gouv.fr/",
+      "snippet": "Chaque membre d'un foyer fiscal disposant d'un numéro fiscal et d'une adresse électronique validée sur le site impots.gouv.fr peut …"
+    },
+    {
+      "title": "Payer mes impôts, taxes, amendes... | impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier/payer-mes-impots-taxes",
+      "snippet": "Sur mon avis d'impôt, j’ai droit à un remboursement, que dois-je faire pour l’obtenir ?"
+    },
+    {
+      "title": "Créer et accéder à mon espace - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier/acceder-mon-espace",
+      "snippet": "Jul 27, 2016 · Si vous n’avez pas encore d'espace Finances publiques sur impots.gouv.fr, vous devez en créer un lors de la première …"
+    }
+  ]
+}

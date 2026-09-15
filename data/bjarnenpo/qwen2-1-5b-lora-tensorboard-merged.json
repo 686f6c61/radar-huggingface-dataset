@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "BjarneNPO/Qwen2-1.5B-lora-tensorboard-merged",
+  "slug": "bjarnenpo-qwen2-1-5b-lora-tensorboard-merged",
+  "author": "BjarneNPO",
+  "url": "https://huggingface.co/BjarneNPO/Qwen2-1.5B-lora-tensorboard-merged",
+  "created_at": "2026-09-15T12:17:59.000Z",
+  "updated_at": "2026-09-15T12:18:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098885070,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Le détroit de Magellan : guide pratique | Nomadays",
+      "url": "https://www.voyagepatagonie.fr/guide-patagonie/attraction/le-detroit-de-magellan",
+      "snippet": "May 2, 2026 · Découvrir le détroit de Magellan en Patagonie chilienne : histoire, faune, croisières, île Magdalena, parc marin …"
+    }
+  ]
+}

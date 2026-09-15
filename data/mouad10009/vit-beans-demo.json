@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mouad10009/vit-beans-demo",
+  "slug": "mouad10009-vit-beans-demo",
+  "author": "mouad10009",
+  "url": "https://huggingface.co/mouad10009/vit-beans-demo",
+  "created_at": "2026-09-15T14:38:13.000Z",
+  "updated_at": "2026-09-15T14:43:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vit",
+    "image-classification",
+    "generated_from_trainer",
+    "base_model:google/vit-base-patch16-224-in21k",
+    "base_model:finetune:google/vit-base-patch16-224-in21k",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85800963,
+  "parameters_human": "85.8M",
+  "storage_bytes": 1372913409,
+  "storage_human": "1.4 GB",
+  "base_model": "google/vit-base-patch16-224-in21k",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10/11/23 : r/BingQuoteOfTheDay - Reddit",
+      "url": "https://www.reddit.com/r/BingQuoteOfTheDay/comments/178tf3u/101123/",
+      "snippet": "Oct 16, 2023 · Posted by u/Krazyblue123 - No votes and no comments"
+    },
+    {
+      "title": "Interesting quote of the day from Bing : r/bing - Reddit",
+      "url": "https://www.reddit.com/r/bing/comments/13mnmmj/interesting_quote_of_the_day_from_bing/",
+      "snippet": "May 20, 2023 · A subreddit for news, tips, and discussions about Microsoft Bing. Please only submit content that is helpful for others …"
+    },
+    {
+      "title": "In the word of John Cena,“Xiàn zài wǒ yǒu bing chilling ... - Reddit",
+      "url": "https://www.reddit.com/r/ChuckleSandwich/comments/16oi1r8/in_the_word_of_john_cenaxi%C3%A0n_z%C3%A0i_w%C7%92_y%C7%92u_bing/",
+      "snippet": "Sep 21, 2023 · In the word of John Cena,“Xiàn zài wǒ yǒu bing chilling Wǒ hěn xǐ huān bing chilling Dàn shì “sù dù yǔ jī qíng jiǔ” bǐ …"
+    },
+    {
+      "title": "[GUIDE] How to get back Search Highlights images in your ... - Reddit",
+      "url": "https://www.reddit.com/r/Windows11/comments/15d0ws6/guide_how_to_get_back_search_highlights_images_in/",
+      "snippet": "Jul 29, 2023 · I saw this thread about someone wanting to get back the daily Search Highlight images (instead of the Bing Chat icon) …"
+    },
+    {
+      "title": "Today's Bing Quote of The Day : r/scienceisdope - Reddit",
+      "url": "https://www.reddit.com/r/scienceisdope/comments/16vwd3s/todays_bing_quote_of_the_day/",
+      "snippet": "Sep 30, 2023 · 20K subscribers in the scienceisdope community. 𝗦𝗰𝗶𝗲𝗻𝗰𝗲, 𝗿𝗮𝘁𝗶𝗼𝗻𝗮𝗹𝗶𝘁𝘆 𝗮𝗻𝗱 𝗺𝗲𝗺𝗲𝘀! The ..."
+    }
+  ]
+}

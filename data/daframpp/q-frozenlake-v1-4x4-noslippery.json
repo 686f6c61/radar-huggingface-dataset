@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Daframpp/q-FrozenLake-v1-4x4-noSlippery",
+  "slug": "daframpp-q-frozenlake-v1-4x4-noslippery",
+  "author": "Daframpp",
+  "url": "https://huggingface.co/Daframpp/q-FrozenLake-v1-4x4-noSlippery",
+  "created_at": "2026-09-15T15:48:44.000Z",
+  "updated_at": "2026-09-15T15:48:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "FrozenLake-v1-4x4-no_slippery",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 915,
+  "storage_human": "915 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign in to your Zoho One Account",
+      "url": "https://www.zoho.com/one/login.html",
+      "snippet": "Sign in to access your apps. Manage org level info into customized tabs and get easy access to all your admin level needs with the …"
+    },
+    {
+      "title": "Zoho One: el sistema operativo para las empresas",
+      "url": "https://www.zoho.com/es-xl/one/",
+      "snippet": "Toma decisiones más inteligentes, capacita a tus empleados y mejora tus operaciones comerciales con una plataforma de software …"
+    },
+    {
+      "title": "Zoho One | The Operating System for Business",
+      "url": "https://www.zoho.com/one/",
+      "snippet": "The Operating System for Business Zoho One helps growing businesses win more customers, manage their employees, track their …"
+    },
+    {
+      "title": "Zoho One - Incredible Technology. Impossible Price.",
+      "url": "https://www.zoho.com/one/pricing/",
+      "snippet": "Zoho One is an unified platform designed to create more connected and agile organizations. It features 50+ business applications …"
+    },
+    {
+      "title": "Sign in to Zoho CRM | Zoho CRM Login",
+      "url": "https://www.zoho.com/crm/login.html",
+      "snippet": "Login to Zoho CRM, an online CRM system to manage your sales, marketing & support in one platform. Sign up for a free trial now!"
+    }
+  ]
+}

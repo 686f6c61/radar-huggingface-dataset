@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ImKyungjin/smolvla-maniskill_placesphere_mixed30-uniform",
+  "slug": "imkyungjin-smolvla-maniskill_placesphere_mixed30-uniform",
+  "author": "ImKyungjin",
+  "url": "https://huggingface.co/ImKyungjin/smolvla-maniskill_placesphere_mixed30-uniform",
+  "created_at": "2026-09-15T12:53:56.000Z",
+  "updated_at": "2026-09-15T12:54:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:local/maniskill_placesphere_mixed30",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906716444,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Matratzen Topper 160x200cm H5 / H6, 7CM Höhe Matratzentopper für ...",
+      "url": "https://www.mex.de/produkt/matratzen-topper-160x200cm-h5-h6-7cm-hoe-b0gqb9h2qs",
+      "snippet": "Genau hier setzt der Matratzen Topper 160x200cm in den Härtegraden H5 oder H6 an. Mit einer Höhe von 7cm bringt dieser …"
+    },
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Topper H5 H6 160x200cm",
+      "url": "https://www.amazon.de/topper-h5-h6-160x200cm/s?k=topper+h5+h6+160x200cm",
+      "snippet": "EGOHOME Matratzen Topper 160x200 cm, 7cm Höhe Matratzentopper, Öko-TEX Zertifiziert, Atmungsaktiv & Waschbar, 160x200cm …"
+    },
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Matratzen Topper 160x200",
+      "url": "https://www.amazon.de/matratzen-topper-160x200/s?k=matratzen+topper+160x200",
+      "snippet": "Matratzenschoner 160x200 cm - Matratzenauflage für Matratzen bis 30cm - Bei 60°C waschbar & Öko-Tex Zertifiziert für mehr …"
+    },
+    {
+      "title": "Topper 160X200 H5 | Preisvergleich bei idealo.de",
+      "url": "https://www.idealo.de/preisvergleich/Liste/119832069/topper-160x200-h5.html?msockid=0c25d88eb4c8653b0eb4cf5bb5066439",
+      "snippet": "Hochwertiger Topper 160x200cm 7cm hoch - H4/H5 Matratzentopper mit weicher Gel-Memory- und stützender Komfortschicht - …"
+    },
+    {
+      "title": "Topper 160x200 H5 online kaufen | OTTO",
+      "url": "https://www.otto.de/heimtextilien/matratzen/topper/?haertegrad=h5-121-160-kg&standardgroesse=160-x-200-cm",
+      "snippet": "Ein Topper in der Größe 160x200 cm mit Härtegrad H5 kann hier eine sinnvolle Ergänzung sein. Besonders wenn du ein höheres …"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "bazobehram/devim-336m-research",
+  "slug": "bazobehram-devim-336m-research",
+  "author": "bazobehram",
+  "url": "https://huggingface.co/bazobehram/devim-336m-research",
+  "created_at": "2026-09-15T12:03:28.000Z",
+  "updated_at": "2026-09-15T12:07:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "devim",
+    "turkish",
+    "causal-lm",
+    "language-modeling",
+    "research",
+    "text-generation",
+    "tr",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

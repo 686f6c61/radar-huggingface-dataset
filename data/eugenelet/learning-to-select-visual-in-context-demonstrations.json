@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "eugenelet/Learning-to-Select-Visual-In-Context-Demonstrations",
+  "slug": "eugenelet-learning-to-select-visual-in-context-demonstrations",
+  "author": "eugenelet",
+  "url": "https://huggingface.co/eugenelet/Learning-to-Select-Visual-In-Context-Demonstrations",
+  "created_at": "2026-09-15T18:27:07.000Z",
+  "updated_at": "2026-09-15T18:27:35.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2603.26775",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ana Sayfa | Spor İstanbul",
+      "url": "https://online.spor.istanbul/",
+      "snippet": "İBB Spor İstanbul, şehrin dört bir yanında 70’i aşkın spor tesisi ve geniş branş yelpazesiyle İstanbullulara sporu bir yaşam kültürü …"
+    },
+    {
+      "title": "spor.istanbul – Spor İstanbul",
+      "url": "https://spor.istanbul/sporistanbul/",
+      "snippet": "Spor İstanbul İnternet Sitesine Gitmek İçin Tıklayınız!"
+    },
+    {
+      "title": "Spor İstanbul – Daha Aktif bir İstanbul için Buradayız!",
+      "url": "https://spor.istanbul/",
+      "snippet": "Daha aktif ve daha mutlu bir İstanbul için, spor etkinliklerimizle her yaştan İstanbullu ile buluşuyoruz. Spor ve eğlence dolu …"
+    },
+    {
+      "title": "SSS | Spor İstanbul",
+      "url": "https://online.spor.istanbul/sss",
+      "snippet": "İBB Spor İstanbul etkinlik, üyelik, tesis kullanımı, kayıt ve kiralama hakkında merak ettiğiniz tüm soruların cevapları burada!"
+    },
+    {
+      "title": "SPOR İSTANBUL AŞ - IBB",
+      "url": "https://www.ibb.istanbul/spor-istanbul-as/",
+      "snippet": "SPOR İSTANBUL AŞ Genel Müdür Görevler Organizasyon Şeması Haberler Duyurular İletişim İnsan Kaynakları"
+    }
+  ]
+}

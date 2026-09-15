@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "sandeep123/stride-qwen3-1.7b-2048-single_step-20260915",
+  "slug": "sandeep123-stride-qwen3-1-7b-2048-single_step-20260915",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/stride-qwen3-1.7b-2048-single_step-20260915",
+  "created_at": "2026-09-15T13:45:56.000Z",
+  "updated_at": "2026-09-15T13:45:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "lora",
+    "reinforcement-learning",
+    "math",
+    "stride",
+    "text-generation",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:adapter:Qwen/Qwen3-1.7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The AI workspace that works for you. | Notion",
+      "url": "https://www.notion.com/",
+      "snippet": "Automate weekly reporting → Create your own developer tools → Trusted by teams that ship. Using the most AI-native tools like …"
+    },
+    {
+      "title": "Notion - Log in",
+      "url": "https://app.notion.com/login",
+      "snippet": "Your AI workspace. Log in to your Notion account Email Use an organization email to easily collaborate with teammates Continue"
+    },
+    {
+      "title": "Download Notion for desktop",
+      "url": "https://www.notion.com/desktop",
+      "snippet": "A faster experience on Notion Desktop. Fast and minimal. Work without distractions."
+    },
+    {
+      "title": "Notion - Sign up",
+      "url": "https://app.notion.com/signup",
+      "snippet": "Work email Tip: Use your work email (if you have one) so it’s easier for your team to join you on Notion Continue or continue with …"
+    },
+    {
+      "title": "Notion",
+      "url": "https://notion.notion.site/Notion-Community-04f306fbf59a413fae15f42e2a1ab029",
+      "snippet": "A collaborative AI workspace, built on your company context. Build and orchestrate agents right alongside your team's projects, …"
+    }
+  ]
+}

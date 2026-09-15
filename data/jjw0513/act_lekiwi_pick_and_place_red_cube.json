@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "JJW0513/act_lekiwi_pick_and_place_red_cube",
+  "slug": "jjw0513-act_lekiwi_pick_and_place_red_cube",
+  "author": "JJW0513",
+  "url": "https://huggingface.co/JJW0513/act_lekiwi_pick_and_place_red_cube",
+  "created_at": "2026-09-15T18:38:18.000Z",
+  "updated_at": "2026-09-15T18:39:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:JJW0513/lekiwi_pick_and_place_red_cube",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51674761,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206739964,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bardakta Tiramisu - Nefis Yemek Tarifleri",
+      "url": "https://www.nefisyemektarifleri.com/bardakta-tiramisu/",
+      "snippet": "Sep 28, 2020 · Bardakta Tiramisu Tarifi nasıl yapılır? Onlarca kişinin defterindeki Bardakta Tiramisu Tarifi'nin detaylı anlatımı ve …"
+    },
+    {
+      "title": "Bardakta Tiramisu (Muhteşem Bir Lezzet) - Nefis Yemek Tarifleri",
+      "url": "https://www.nefisyemektarifleri.com/bardakta-tiramisu-muhtesem-bir-lezzet/",
+      "snippet": "Jul 12, 2018 · Bardakta Tiramisu (Muhteşem Bir Lezzet) Tarifi nasıl yapılır? Binlerce kişinin defterindeki bu tarifin detaylı anlatımı ve …"
+    },
+    {
+      "title": "Bardakta Tiramisu Tarifi - Nefis Yemek Tarifleri",
+      "url": "https://www.nefisyemektarifleri.com/bardakta-tiramisu-tarifi/",
+      "snippet": "May 29, 2015 · Bardakta Tiramisu Tarifi nasıl yapılır? Bardakta Tiramisu Tarifi'nin detaylı anlatımı ve deneyenlerin fotoğrafları burada."
+    },
+    {
+      "title": "Bardakta Tiramisu - Nefis Yemek Tarifleri - #2894260",
+      "url": "https://www.nefisyemektarifleri.com/bardakta-tiramisu-2894260/",
+      "snippet": "Nov 2, 2019 · Bardakta Tiramisu Tarifi nasıl yapılır? Onlarca kişinin defterindeki Bardakta Tiramisu Tarifi'nin detaylı anlatımı ve …"
+    },
+    {
+      "title": "Bardakta Tiramisu - Nefis Yemek Tarifleri - #5450587",
+      "url": "https://www.nefisyemektarifleri.com/bardakta-tiramisu-5450587/",
+      "snippet": "Jan 19, 2019 · Bardakta Tiramisu Tarifi nasıl yapılır? Bardakta Tiramisu Tarifi'nin detaylı anlatımı ve deneyenlerin fotoğrafları burada."
+    }
+  ]
+}

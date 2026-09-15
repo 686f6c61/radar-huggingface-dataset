@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "henriquegalo/mtg-qwen-deck-7b-v2",
+  "slug": "henriquegalo-mtg-qwen-deck-7b-v2",
+  "author": "henriquegalo",
+  "url": "https://huggingface.co/henriquegalo/mtg-qwen-deck-7b-v2",
+  "created_at": "2026-09-15T13:04:24.000Z",
+  "updated_at": "2026-09-15T13:04:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UV Advanced Oxidation Process | Trojan Technologies",
+      "url": "https://www.trojantechnologies.com/technologies/uv-advanced-oxidation-process",
+      "snippet": "The UV advanced oxidation process – also known as UV AOP – is when ultraviolet light, alone or in combination with an oxidant, …"
+    },
+    {
+      "title": "TrojanUVFlexAOP – Municipal UV Advanced Oxidation System | Trojan ...",
+      "url": "https://www.trojantechnologies.com/products/trojanuv/trojanuvflexaop",
+      "snippet": "Complete product overview of the TrojanUVFlexAOP system, covering applications, key features and benefits, and technical …"
+    },
+    {
+      "title": "Municipal UV Technology & Advanced Oxidation Systems | TrojanUV",
+      "url": "https://my.hach.com/Trojanuv",
+      "snippet": "The TrojanUVFlex®AOP is our latest UV advanced oxidation solution for the treatment of contaminants. It’s cross-flow lamp …"
+    },
+    {
+      "title": "Trojan UV Launches Compact AOP Demonstration System for Piloting …",
+      "url": "https://magazine.watertoday.org/launch-pad/trojan-uv-aop-demonstration-system",
+      "snippet": "Oct 23, 2025 · The Trojan UV AOP Demonstration System is a fully packaged UV AOP system with oxidant and instrumentation …"
+    },
+    {
+      "title": "TrojanUV AOP Demonstration System | Trojan Technologies",
+      "url": "https://www.ariafiltra.com/resources/brochures/trojanuvaopdemo",
+      "snippet": "The TrojanUV AOP Demonstration System is a fully packaged UV AOP system with oxidant and instrumentation options specifically …"
+    }
+  ]
+}

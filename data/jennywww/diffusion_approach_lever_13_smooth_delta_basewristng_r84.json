@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "JennyWWW/diffusion_approach_lever_13_smooth_delta_basewristng_r84",
+  "slug": "jennywww-diffusion_approach_lever_13_smooth_delta_basewristng_r84",
+  "author": "JennyWWW",
+  "url": "https://huggingface.co/JennyWWW/diffusion_approach_lever_13_smooth_delta_basewristng_r84",
+  "created_at": "2026-09-15T13:11:21.000Z",
+  "updated_at": "2026-09-15T13:11:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion",
+    "dataset:JennyWWW/splatsim_approach_lever_13_smooth_r84",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 40653291,
+  "parameters_human": "40.7M",
+  "storage_bytes": 162668364,
+  "storage_human": "163 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gerenciar armazenamento no Drive, Gmail e Fotos",
+      "url": "https://support.google.com/mail/answer/6374270?hl=pt-br",
+      "snippet": "Quando sua conta atingir o limite de armazenamento, não será possível fazer upload ou criar arquivos no Drive, enviar ou receber e …"
+    },
+    {
+      "title": "تثبيت تطبيق \"Drive للكمبيوتر المكتبي\"",
+      "url": "https://support.google.com/a/users/answer/13022292?hl=ar",
+      "snippet": "عند تثبيت تطبيق Drive للكمبيوتر المكتبي على جهاز الكمبيوتر، يتم إنشاء محرك أقراص في My Computer (جهاز الكمبيوتر) أو موقع في Finder (الباحث) باسم Google Drive. وتظهر …"
+    },
+    {
+      "title": "大家有coreldraw的安装包吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/356805422",
+      "snippet": "x4，x7不能用了，大家都遇到了这个问题。 最好的解决方法，上淘宝买一个。 哈哈哈哈哈。 我今天才买了，12元买个顺畅"
+    },
+    {
+      "title": "C盘里面的AppData文件夹是否可以移动到其他盘？ - 知乎",
+      "url": "https://www.zhihu.com/question/311149805",
+      "snippet": "使用win10系统家庭版，本身就很大，导致C盘空间剩余无几。里面文件夹该删除的删除，该移动的移动，希望能…"
+    },
+    {
+      "title": "Instalar o Drive para computador",
+      "url": "https://support.google.com/a/users/answer/13022292?hl=pt",
+      "snippet": "Clique em Drive para computador Abrir a pasta do Drive . Em Meu Drive ou em Drives compartilhados, clique duas vezes no arquivo …"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/kw5-109M-GGUF",
+  "slug": "mradermacher-kw5-109m-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/kw5-109M-GGUF",
+  "created_at": "2026-09-15T11:45:48.000Z",
+  "updated_at": "2026-09-15T11:47:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "sw"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "swahili",
+    "kiswahili",
+    "causal-lm",
+    "base-model",
+    "pretrained",
+    "african-languages",
+    "low-resource",
+    "sw",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "base_model:regnant-io/kw5-109M",
+    "base_model:quantized:regnant-io/kw5-109M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109529856,
+  "parameters_human": "109.5M",
+  "storage_bytes": 1033889664,
+  "storage_human": "1.0 GB",
+  "base_model": "regnant-io/kw5-109M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fortnite Events - Competitive Tournaments - Fortnite Tracker",
+      "url": "https://fortnitetracker.com/events",
+      "snippet": "1 day ago · Leaderboards, News, and Advanced Statistics for all Competitive Fortnite Tournaments. There are no Live events at the …"
+    },
+    {
+      "title": "Compétitions Fortnite - Tournois Fortnite",
+      "url": "https://www.fortnite.com/competitive/?lang=fr&region=EU",
+      "snippet": "Les classements de puissance sont la nouvelle classification universelle des compétences pour les compétitions Fortnite. Suivez …"
+    },
+    {
+      "title": "Fortnite Competitive - Fortnite Tournaments",
+      "url": "https://www.fortnite.com/competitive/?region=EU",
+      "snippet": "Power Rankings are the new universal skill rating for Competitive Fortnite. Track your global standing, share with friends, and follow …"
+    },
+    {
+      "title": "EUCompetitive",
+      "url": "https://eucompetitive.com/",
+      "snippet": "Fortnite is a registered trademark of Epic Games. EUCompetitive is not associated or endorsed by Epic Games. The website is …"
+    },
+    {
+      "title": "Fortnite Tracker - Fortnite Stats, Leaderboards, & More!",
+      "url": "https://fortnitetracker.com/",
+      "snippet": "1 day ago · Join our leaderboards by looking up your Fortnite Stats! We track all the Fortnite stats available, leave your page open to …"
+    }
+  ]
+}

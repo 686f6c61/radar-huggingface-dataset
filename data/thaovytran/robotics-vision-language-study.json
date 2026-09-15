@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "thaovytran/robotics-vision-language-study",
+  "slug": "thaovytran-robotics-vision-language-study",
+  "author": "thaovytran",
+  "url": "https://huggingface.co/thaovytran/robotics-vision-language-study",
+  "created_at": "2026-09-15T13:22:05.000Z",
+  "updated_at": "2026-09-15T13:22:10.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "robotics-vision-language",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

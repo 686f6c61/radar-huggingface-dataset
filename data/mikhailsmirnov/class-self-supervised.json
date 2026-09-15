@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mikhailsmirnov/class-self-supervised",
+  "slug": "mikhailsmirnov-class-self-supervised",
+  "author": "mikhailsmirnov",
+  "url": "https://huggingface.co/mikhailsmirnov/class-self-supervised",
+  "created_at": "2026-09-15T16:19:49.000Z",
+  "updated_at": "2026-09-15T16:19:55.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "self-supervised",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تعرف على العمى في عين واحدة، اعراض، اسباب، علاج | الطبي",
+      "url": "https://altibbi.com/%D9%85%D8%B5%D8%B7%D9%84%D8%AD%D8%A7%D8%AA-%D8%B7%D8%A8%D9%8A%D8%A9/%D8%A7%D9%85%D8%B1%D8%A7%D8%B6-%D8%A7%D9%84%D8%B9%D9%8A%D9%88%D9%86/%D8%A7%D9%84%D8%B9%D9%85%D9%89-%D9%81%D9%8A-%D8%B9%D9%8A%D9%86-%D9%88%D8%A7%D8%AD%D8%AF%D8%A9",
+      "snippet": "يعد العمى في عين واحدة (بالإنجليزية: Amblyopia) حالة طبية طارئة، ويعرف بأنه فقدان الرؤية الكلي أو الجزئي في عين واحدة ، في حالة فقدان الرؤية الكلي يكون الشخص الكفيف غير قادر على الرؤية على …"
+    },
+    {
+      "title": "علاج حول عين واحدة: الأسباب والحلول المتاحة مع دكتور أبرام",
+      "url": "https://abramernest.com/%D8%B9%D9%84%D8%A7%D8%AC-%D8%AD%D9%88%D9%84-%D8%B9%D9%8A%D9%86-%D9%88%D8%A7%D8%AD%D8%AF%D8%A9/",
+      "snippet": "استكشف خيارات علاج حول عين واحدة مع دكتور أبرام استشاري الحول والعيون في مصر، مع دليل شامل يساعدك على فهم الأسباب وطرق العلاج المتاحة لتحقيق نتائج أفضل."
+    },
+    {
+      "title": "العمى في عين واحدة Amblyopia - موسوعة عين",
+      "url": "https://www.ainpedia.com/article/%D8%A7%D9%84%D8%B9%D9%85%D9%89-%D9%81%D9%8A-%D8%B9%D9%8A%D9%86-%D9%88%D8%A7%D8%AD%D8%AF%D8%A9-amblyopia-95",
+      "snippet": "يعد العمى في عين واحدة (بالإنجليزية: Amblyopia) حالة طبية طارئة، ويعرف بأنه فقدان الرؤية الكلي أو الجزئي في عين واحدة، في حالة فقدان الرؤية الكلي يكون الشخص الكفيف غير قادر على الرؤية على …"
+    },
+    {
+      "title": "العمى في عين واحدة | Amblyopia - فارماستان فارماستان",
+      "url": "https://pharmastan.net/disease/%d8%a7%d9%84%d8%b9%d9%85%d9%89-%d9%81%d9%8a-%d8%b9%d9%8a%d9%86-%d9%88%d8%a7%d8%ad%d8%af%d8%a9-amblyopia/",
+      "snippet": "العمى في عين واحدة هو فقدان كلي أو جزئي للرؤية في عين واحدة، وقد يكون مؤقتاً أو دائماً ويتطلب عناية طبية فورية."
+    },
+    {
+      "title": "العملاق، عمالقة أعور",
+      "url": "https://ar.postposmo.com/%D8%A7%D9%84%D8%B9%D9%85%D9%84%D8%A7%D9%82-%D8%B0%D9%88-%D8%A7%D9%84%D8%B9%D9%8A%D9%86-%D8%A7%D9%84%D9%88%D8%A7%D8%AD%D8%AF%D8%A9-%D8%A7%D9%84%D8%B9%D9%85%D9%84%D8%A7%D9%82/",
+      "snippet": "العملاقون هم شخصيات من الأساطير اليونانية، وهم سلالة من العمالقة ذوي العين الواحدة واسمهم يعني: \"العين الدائرية\"."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "lair-nyu/yor_icl_victr_vision_interp_canonical_ctx3cam-step15000",
+  "slug": "lair-nyu-yor_icl_victr_vision_interp_canonical_ctx3cam-step15000",
+  "author": "lair-nyu",
+  "url": "https://huggingface.co/lair-nyu/yor_icl_victr_vision_interp_canonical_ctx3cam-step15000",
+  "created_at": "2026-09-15T14:55:27.000Z",
+  "updated_at": "2026-09-15T14:56:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12441912228,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lair Remorques Constructeur",
+      "url": "https://lair-remorques.fr/",
+      "snippet": "2620 route de Paris 50600 Moulines 02 33 49 01 48 LAIR Remorques Réalisation Médiapilote Normandie | Politique de …"
+    },
+    {
+      "title": "Réseau d'agences immobilières en Normandie | LAIR IMMOBILIER",
+      "url": "https://www.lair-immobilier.com/",
+      "snippet": "Lair immobilier, un réseau de 12 agences immobilières à Alençon, Bellême, Ecouché, Mortagne-au-Perche, Pré-en-Pail, Sées, St …"
+    },
+    {
+      "title": "Les occasions - Lair Remorques Constructeur",
+      "url": "https://lair-remorques.fr/les-occasions/",
+      "snippet": "Masse lame Lair STOCK NEUF Année : 2024 Capacité : 1m3 Dimensions : 2m50 x 1m10 x 0m60 Lame épaisseur 6mm Couvercle …"
+    },
+    {
+      "title": "Annonces immobilières de vente - Vente | LAIR Immobilier",
+      "url": "https://www.lair-immobilier.com/annonces/transaction/Vente.html",
+      "snippet": "Nos agences LAIR Immobilier vous propose toutes ses maisons et appartements de prestige en vente en Normandie. Réalisez votre …"
+    },
+    {
+      "title": "Lair Immobilier Sées Cathédrale - Agence Immobilière Sées (61)",
+      "url": "https://www.ouestfrance-immo.com/annuaire-immobilier/agence-immobiliere-61-1304.htm",
+      "snippet": "Votre agence immobilière Sées : Lair Immobilier Sées Cathédrale, vous propose sa sélection d'annonces immobilières à Sées et …"
+    }
+  ]
+}

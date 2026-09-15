@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "inductiveML/LFM2.5-230M-MONARCH",
+  "slug": "inductiveml-lfm2-5-230m-monarch",
+  "author": "inductiveML",
+  "url": "https://huggingface.co/inductiveML/LFM2.5-230M-MONARCH",
+  "created_at": "2026-09-15T13:35:11.000Z",
+  "updated_at": "2026-09-15T13:40:08.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "webgpu",
+    "wgsl",
+    "int4",
+    "monarch",
+    "browser",
+    "text-generation",
+    "conversational",
+    "base_model:LiquidAI/LFM2.5-230M-ONNX",
+    "base_model:finetune:LiquidAI/LFM2.5-230M-ONNX",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 168647680,
+  "storage_human": "169 MB",
+  "base_model": "LiquidAI/LFM2.5-230M-ONNX",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ethik-Kommission - Ärztekammer Nordrhein",
+      "url": "https://www.aekno.de/aerztekammer/ethik-kommission",
+      "snippet": "Die Ethik-Kommission der Ärztekammer Nordrhein nimmt nach Inkrafttreten der Änderung des § 15 der Berufsordnung für die …"
+    },
+    {
+      "title": "Über die Ethik-Kommission - Ärztekammer Nordrhein",
+      "url": "https://www.aekno.de/aerztekammer/ethik-kommission/ueber-die-ethik-kommission",
+      "snippet": "Die Ethik-Kommission der Ärztekammer Nordrhein ist eine Einrichtung der Ärztekammer Nordrhein mit Sitz in Düsseldorf. Sie wurde …"
+    },
+    {
+      "title": "Ethik-Kommission der Ärztekammer Nordrhein",
+      "url": "https://ethikpool.aekno.de/",
+      "snippet": "Wenn Sie bereits ein Benutzerkonto haben, aber Ihren Benutzernamen vergessen haben, klicken Sie bitte hier. Passwort vergessen? …"
+    },
+    {
+      "title": "ethikPool: Users - VSP-NRW.de",
+      "url": "https://ethikpool.vsp-nrw.de/app/orw_user_admin/auth/login",
+      "snippet": "Wenn Sie bereits ein Benutzerkonto haben, aber Ihren Benutzernamen vergessen haben, klicken Sie bitte hier. Passwort vergessen? …"
+    },
+    {
+      "title": "Zuständigkeit der Ethik-Kommission der Ärztekammer Nordrhein",
+      "url": "https://www.aekno.de/aerztekammer/ethik-kommission/zustaendigkeit-der-ethik-kommission-der-aerztekammer-nordrhein",
+      "snippet": "Zuständigkeit der Ethik-Kommission der Ärztekammer Nordrhein Die Ethik-Kommission berät die Kammermitglieder vor der …"
+    }
+  ]
+}

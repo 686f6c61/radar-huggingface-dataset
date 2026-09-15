@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Uuuuuuniiiiiii/goldworm-v6",
+  "slug": "uuuuuuniiiiiii-goldworm-v6",
+  "author": "Uuuuuuniiiiiii",
+  "url": "https://huggingface.co/Uuuuuuniiiiiii/goldworm-v6",
+  "created_at": "2026-09-15T16:10:57.000Z",
+  "updated_at": "2026-09-15T16:11:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "goldworm-v6",
+  "languages": [],
+  "tags": [
+    "goldworm-v6",
+    "safetensors",
+    "goldworm_v6",
+    "pytorch",
+    "python",
+    "byte-level-transformer",
+    "language-model",
+    "tiny-stories",
+    "efficient",
+    "text-generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2806656,
+  "parameters_human": "2.8M",
+  "storage_bytes": 11231288,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=fr",
+      "snippet": "Créez un compte ou connectez-vous à Instagram. Partagez ce que vous aimez avec les personnes qui ont les mêmes centres d’intérêt."
+    },
+    {
+      "title": "Instagram - Capture, Create & Share What You Love",
+      "url": "https://about.instagram.com/",
+      "snippet": "Instagram makes it easy to capture, create and share what you love. Discover more about our features and commitment to …"
+    },
+    {
+      "title": "Instagram (@instagram) • Instagram photos and videos",
+      "url": "https://www.instagram.com/instagram/",
+      "snippet": "687M Followers, 292 Following, 8,584 Posts - Instagram (@instagram) on Instagram: \"Discover what's new on Instagram 🔎 \""
+    },
+    {
+      "title": "Sign up • Instagram",
+      "url": "https://www.instagram.com/accounts/emailsignup/",
+      "snippet": "Join Instagram! Sign up to see photos, videos, stories & messages from your friends, family & interests around the world."
+    }
+  ]
+}

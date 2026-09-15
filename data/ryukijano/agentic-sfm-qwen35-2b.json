@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Ryukijano/agentic-sfm-qwen35-2b",
+  "slug": "ryukijano-agentic-sfm-qwen35-2b",
+  "author": "Ryukijano",
+  "url": "https://huggingface.co/Ryukijano/agentic-sfm-qwen35-2b",
+  "created_at": "2026-09-15T15:28:00.000Z",
+  "updated_at": "2026-09-15T15:40:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "agentic-sfm",
+    "structure-from-motion",
+    "grpo",
+    "rl",
+    "vlm",
+    "lora",
+    "3d-reconstruction",
+    "colmap",
+    "loftr",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:adapter:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 416667053,
+  "storage_human": "417 MB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ИКТ в медицине: современные технологии и их применение",
+      "url": "https://begemot.ai/projects/1060009-ikt-v-medicine-sovremennye-texnologii-i-ix-primenenie",
+      "snippet": "Доклад посвящен использованию информационно-коммуникационных технологий (ИКТ) в медицине ..."
+    },
+    {
+      "title": "Информационные технологии в медицине | Примеры применения",
+      "url": "https://md.school/blog/informacionnye-tekhnologii-v-medicine",
+      "snippet": "Apr 25, 2024 · Информационные технологии в здравоохранении. Узнайте, как информационные технологии трансформируют …"
+    },
+    {
+      "title": "ИКТ-решения для инноваций в сфере медицинских технологий и …",
+      "url": "https://ru.ttconsultants.com/ict-solutions-for-health-tech-and-telemedicine/",
+      "snippet": "Jan 9, 2025 · В этом блоге рассматривается преобразующая роль ИКТ в медицинских технологиях и телемедицине, а также …"
+    },
+    {
+      "title": "ИКТ в медицине - Сибирьска википедья",
+      "url": "https://sibwiki.org/wiki/%D0%98%D0%9A%D0%A2_%D0%B2_%D0%BC%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D0%B5",
+      "snippet": ""
+    },
+    {
+      "title": "ИНФОРМАЦИОННО-КОММУНИКАЦИОННЫЕ ТЕХНОЛОГИИ В …",
+      "url": "https://science-education.ru/article/view?id=24473",
+      "snippet": "May 12, 2016 · Бесспорно, использование ИКТ в повседневной практике требует подготовки медицинского персонала, …"
+    }
+  ]
+}

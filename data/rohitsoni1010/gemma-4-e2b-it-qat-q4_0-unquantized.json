@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "rohitsoni1010/gemma-4-E2B-it-qat-q4_0-unquantized",
+  "slug": "rohitsoni1010-gemma-4-e2b-it-qat-q4_0-unquantized",
+  "author": "rohitsoni1010",
+  "url": "https://huggingface.co/rohitsoni1010/gemma-4-E2B-it-qat-q4_0-unquantized",
+  "created_at": "2026-09-15T18:53:53.000Z",
+  "updated_at": "2026-09-15T18:56:10.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "unsloth",
+    "sft",
+    "code",
+    "distillation",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation",
+    "base_model:unsloth/gemma-4-E2B-it-qat-q4_0-unquantized",
+    "base_model:finetune:unsloth/gemma-4-E2B-it-qat-q4_0-unquantized",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5104297539,
+  "parameters_human": "5.10B",
+  "storage_bytes": 10241019672,
+  "storage_human": "10.2 GB",
+  "base_model": "unsloth/gemma-4-E2B-it-qat-q4_0-unquantized",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vesti iz Srbije i celog sveta online | Novosti.rs",
+      "url": "https://www.novosti.rs/",
+      "snippet": "Saznajte sve najnovije vesti iz Srbije, regiona i celog sveta online. Najtiražnije dnevne novine u Srbiji - Vaše Večernje novosti."
+    },
+    {
+      "title": "Najnovije vesti - Saznajte sve aktuelne vesti dana | Novosti.rs",
+      "url": "https://www.novosti.rs/najnovije-vesti",
+      "snippet": "Najnovije vesti dana iz minuta u minut. Budite u toku sa svim dešavanjima u zemlji i svetu uz najtiražnije dnevne novine u Srbiji - …"
+    },
+    {
+      "title": "Citulje.Novosti.rs - Čitulje-Novosti",
+      "url": "https://citulje.novosti.rs/",
+      "snippet": "POSLEDNjI POZDRAV SUPRUGU, OCU, SVEKRU, DEDI I PRADEDI Sreten Milan Koković 21.12.1942 - 6.9.2026. Žele njegovi …"
+    },
+    {
+      "title": "Читуље - Čitulje-Novosti",
+      "url": "https://citulje.novosti.rs/citulje",
+      "snippet": "VOLjENI TATA Luka Anđelić 31.10.1939 - 8.9.2026. Beskrajno hvala na svemu. Sahrana će se održati u četvrtak, 10. septembra, u …"
+    },
+    {
+      "title": "Vecernje Novosti Online",
+      "url": "https://www.magazin.novosti.rs/",
+      "snippet": "Portal i za žene i za muškarce. Najnovije vesti iz Srbije i sveta. Čekaju vas horoskop, recepti, saveti za ljubav, zdravlje i još mnogo …"
+    }
+  ]
+}

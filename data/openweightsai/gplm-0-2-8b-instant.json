@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "OpenWeightsAI/gplm-0.2-8B-instant",
+  "slug": "openweightsai-gplm-0-2-8b-instant",
+  "author": "OpenWeightsAI",
+  "url": "https://huggingface.co/OpenWeightsAI/gplm-0.2-8B-instant",
+  "created_at": "2026-09-15T17:35:44.000Z",
+  "updated_at": "2026-09-15T17:50:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dataset:yahma/alpaca-cleaned",
+    "dataset:CohereLabs/aya_dataset",
+    "base_model:unsloth/Qwen2.5-7B-Instruct",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62328344,
+  "storage_human": "62 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dummy Rechtschreibung, Bedeutung, Definition, Herkunft Duden",
+      "url": "https://www.duden.de/rechtschreibung/Dummy",
+      "snippet": "Definition, Rechtschreibung, Synonyme und Grammatik von 'Dummy' ️ Auf Duden online nachschlagen ️ Wörterbuch der …"
+    },
+    {
+      "title": "Dummy‎: Bedeutung, Definition",
+      "url": "https://www.wortbedeutung.info/Dummy/",
+      "snippet": "May 16, 2026 · Bei Dummy handelt es sich um ein Lehnwort aus dem Englischen, d. h. einen Anglizismus. Das grammatikalische …"
+    },
+    {
+      "title": "Dummy – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Dummy",
+      "snippet": "Dummy Dummy [ˈdʌmɪ] (engl. für Attrappe, Platzhalter) steht für: Person- oder Tier-ähnlich: Crashtest-Dummy, eine mit zahlreichen …"
+    },
+    {
+      "title": "Dummy – Schreibung, Definition, Bedeutung, Synonyme, Beispiele",
+      "url": "https://www.dwds.de/wb/Dummy",
+      "snippet": "Da der Dummy das Verhalten eines menschlichen Körpers möglichst realistisch widerspiegeln soll, muß für die Entwicklung eines …"
+    },
+    {
+      "title": "Dummys‎: Bedeutung, Rechtschreibung",
+      "url": "https://www.wortbedeutung.info/Dummys/",
+      "snippet": "May 16, 2026 · Dummys ist eine deklinierte Form von Dummy. Dies ist die Bedeutung von Dummy: Einfach erklärt: Ein Dummy ist ein …"
+    }
+  ]
+}

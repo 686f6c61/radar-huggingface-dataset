@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "jiosephlee/intern-s1-mini-context-conditioned-molecule-transfer-v10-3-bbb-martins-best",
+  "slug": "jiosephlee-intern-s1-mini-context-conditioned-molecule-transfer-v10-3-bbb-martins-best",
+  "author": "jiosephlee",
+  "url": "https://huggingface.co/jiosephlee/intern-s1-mini-context-conditioned-molecule-transfer-v10-3-bbb-martins-best",
+  "created_at": "2026-09-15T18:47:33.000Z",
+  "updated_at": "2026-09-15T18:49:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "chemistry",
+    "assay-transfer",
+    "context-conditioned-molecule-transfer",
+    "conversational",
+    "dataset:jiosephlee/context-conditioned-molecule-transfer-v10.3-bbb-martins-mixed-continuous-intern",
+    "base_model:jiosephlee/Intern-S1-mini-lm",
+    "base_model:finetune:jiosephlee/Intern-S1-mini-lm",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8201221120,
+  "parameters_human": "8.20B",
+  "storage_bytes": 16402497533,
+  "storage_human": "16.4 GB",
+  "base_model": "jiosephlee/Intern-S1-mini-lm",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jouer à Mahjong tower | Jeuxclic",
+      "url": "https://www.jeuxclic.com/jeux.php?id=6816",
+      "snippet": "Jeu Mahjong tower - Jeux de mahjong (Jeux de réflexion) - Jouer dès maintenant et gratuitement à ce jeu !"
+    },
+    {
+      "title": "Jeux de mahjong | Jeuxclic",
+      "url": "https://www.jeuxclic.com/categorie-jeux.php?cat=jeux-mahjong",
+      "snippet": "Associez les tuiles avec nos jeux gratuits de mahjong pour vider le plateau et découvrir des motifs traditionnels ou modernes captivants."
+    },
+    {
+      "title": "Jeuxclic - 350 000+ Jeux en Ligne Gratuits - Jouez dès maintenant",
+      "url": "https://www.jeuxclic.com/",
+      "snippet": "350 000+ jeux en ligne gratuits ! Jouez dès maintenant à des jeux d'action, réflexion, aventure, combat, courses, enfants, plate …"
+    },
+    {
+      "title": "Jeux de réflexion | Jeuxclic",
+      "url": "https://www.jeuxclic.com/categorie-jeux.php?cat=jeux-reflexion",
+      "snippet": "Faites chauffer vos neurones avec nos jeux gratuits de réflexion proposant des énigmes complexes et des défis logiques passionnants."
+    },
+    {
+      "title": "Jouer à Bubble Shooter | Jeuxclic",
+      "url": "https://www.jeuxclic.com/jeux.php?id=414",
+      "snippet": "Jeu Bubble Shooter - (Jeux de tir) - Jouer dès maintenant et gratuitement à ce jeu !"
+    }
+  ]
+}

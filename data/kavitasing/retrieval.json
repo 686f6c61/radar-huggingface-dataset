@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kavitasing/retrieval",
+  "slug": "kavitasing-retrieval",
+  "author": "kavitasing",
+  "url": "https://huggingface.co/kavitasing/retrieval",
+  "created_at": "2026-09-15T14:40:23.000Z",
+  "updated_at": "2026-09-15T14:40:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cadastre et plans numérisés (FranceArchives)",
+      "url": "https://francearchives.gouv.fr/fr/article/26287472/",
+      "snippet": "Apr 28, 2026 · Somme : plans par masses de cultures ; cadastre napoléonien ; cadastre rénové ; intendance de Picardie ; plans des …"
+    },
+    {
+      "title": "Archives du cadastre napoléonien de la Haute Saône",
+      "url": "https://france-cadastre.fr/cadastre-ancien/70/",
+      "snippet": "Retrouvez le cadastre napoléonien de la Haute Saône, commune par commune. Ces archives cadastrales anciennes, levées au XIXᵉ …"
+    },
+    {
+      "title": "Le cadastre napoléonien interactif - Cadastre et territoires",
+      "url": "https://cadastre-territoires.fr/le-cadastre-napoleonien-interactif/",
+      "snippet": "Ceci est un exemple interactif de cadastre Napoléonien. Vous pouvez utiliser le menu à gauche pour afficher ou masquer certains …"
+    },
+    {
+      "title": "Cadastre napoléonien de Saône (Doubs) — plans anciens | Archives",
+      "url": "https://france-cadastre.fr/cadastre-ancien/25/saone/",
+      "snippet": "Chaque plan cadastral ancien de Saône est consultable gratuitement, en plein écran et en haute résolution. Vous pouvez zoomer sur …"
+    },
+    {
+      "title": "Cadastre napoléonien (FranceArchives)",
+      "url": "https://francearchives.gouv.fr/fr/subject/128099232?aug=True&es_escategory=archives&es_escategory=siteres",
+      "snippet": "Cadastre napoléonien par section, fonds de carte des limites administratives, carte des seigneuries… …services des impôts fonciers …"
+    }
+  ]
+}

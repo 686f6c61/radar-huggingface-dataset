@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "sspq/lekiwi_pick_and_place_red_cube_smolvla",
+  "slug": "sspq-lekiwi_pick_and_place_red_cube_smolvla",
+  "author": "sspq",
+  "url": "https://huggingface.co/sspq/lekiwi_pick_and_place_red_cube_smolvla",
+  "created_at": "2026-09-15T15:26:37.000Z",
+  "updated_at": "2026-09-15T15:26:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:sspq/lekiwi_pick_and_place_red_cube",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906720336,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Porn Dude - Les Meilleurs Sites Pornographiques Français Gratuits",
+      "url": "https://theporndude.com/fr",
+      "snippet": "Porn Dude liste les meilleurs sites porno. Tous les sites gratuits et payants classés par qualité. Trouvez des vidéos porno HD de la …"
+    },
+    {
+      "title": "Porn Dude - Best Porn Sites & Free Porn Tubes List of 2026!",
+      "url": "https://theporndude.com/",
+      "snippet": "Porn Dude reviews the best porn sites of 2026. Find safe free porn sites & premium porn websites all sorted by quality!"
+    },
+    {
+      "title": "The Porn Guy - Best Free Porn Sites & More!",
+      "url": "https://thepornguy.org/",
+      "snippet": "The ultimate porn directory. Find the best free porn sites, real amateur porn, premium porn, hookup sites, AI porn, sex cams & much …"
+    },
+    {
+      "title": "Top Porn Sites - List of Best Porn Sites Free Videos 2026",
+      "url": "https://toppornsites.com/",
+      "snippet": "Get tons of new free porn videos on the most famous XXX tube sites showing hot girls in full HD sex movies. Watch HD porn videos …"
+    },
+    {
+      "title": "Free Porn Tubes - HD Porn, Sex Videos & XXX Porno Movies - Porn Dude",
+      "url": "https://theporndude.com/top-porn-tube-sites",
+      "snippet": "Watch Free HD porn videos on the most popular porn tubes in the world. Find hardcore sex movies of pornstars, XXX vids of young …"
+    }
+  ]
+}

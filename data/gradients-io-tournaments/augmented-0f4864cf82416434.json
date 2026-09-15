@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/augmented-0f4864cf82416434",
+  "slug": "gradients-io-tournaments-augmented-0f4864cf82416434",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/augmented-0f4864cf82416434",
+  "created_at": "2026-09-15T17:39:35.000Z",
+  "updated_at": "2026-09-15T17:41:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889036,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Postnummer 66893 - Info om 668 93, Ed | Postnummer",
+      "url": "https://postnummer.info/66893/",
+      "snippet": "Hitta information om postnummer 66893 i Ed. ️ Vi visar inkomstuppgifter, adresser och mer. Se var postnumret finns i Ed!"
+    },
+    {
+      "title": "668 93 Postnummer, Ed, Bengtsfors, Västra Götaland, Sverige",
+      "url": "https://swe.postcodelist.com/sv/postcode/668-93-Ed-Bengtsfors-V-stra-G-taland_e01.html",
+      "snippet": "Ed, Bengtsfors, Västra Götaland, Postnummer : 668 93,Ligger på ,Ed,Bengtsfors,Västra Götaland Sverige"
+    },
+    {
+      "title": "66893 - Karta och vägbeskrivning | Eniro.se",
+      "url": "https://www.eniro.se/kartor/s%C3%B6k/668+93+ed?t=geos",
+      "snippet": "Upptäck 66893 med våra kartor. Utforska lokala företag, tomtgränser, historiska flygfoton, cykelvägar, laddstationer med mera. Börja …"
+    },
+    {
+      "title": "Postnummer Ed - Medellön & befolkning | Postnummer",
+      "url": "https://postnummer.info/Ed/",
+      "snippet": "Se information om postnummer i Ed. ️ Vi visar karta över postnummer, inkomstuppgifter, befolkning, adresser och mer. Visa enkelt …"
+    },
+    {
+      "title": "Forsane Nybygget 1 Västra Götalands Län, Ed - hitta.se",
+      "url": "https://www.hitta.se/v%C3%A4stra+g%C3%B6talands+l%C3%A4n/ed/forsane+nybygget+1/omr%C3%A5de/58.78434966027732:11.815789642806806",
+      "snippet": "Adress i Dals-Ed i Ed i Västra Götalands Län. Se företag skrivna på adressen och vilka personer som bor på forsane 1. Vill du bo i …"
+    }
+  ]
+}

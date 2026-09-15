@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ai-mitra/prompt-slimmer-slm",
+  "slug": "ai-mitra-prompt-slimmer-slm",
+  "author": "ai-mitra",
+  "url": "https://huggingface.co/ai-mitra/prompt-slimmer-slm",
+  "created_at": "2026-09-15T16:56:18.000Z",
+  "updated_at": "2026-09-15T16:57:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "prompt-compression",
+    "lora",
+    "experimental",
+    "text-generation",
+    "en",
+    "dataset:ai-mitra/prompt-slimmer-slm",
+    "base_model:google/flan-t5-base",
+    "base_model:adapter:google/flan-t5-base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3558888,
+  "storage_human": "4 MB",
+  "base_model": "google/flan-t5-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "Company Sep 9, 2026 Path to Astra: critical capabilities and frontier safeguards Safety Sep 1, 2026 Jalapeño’s first results show …"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "What’s on the agenda today? ChatGPT is AI. By using it, you agree to our Terms & Privacy Policy. Chats may be reviewed and used …"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "DeepAI",
+      "url": "https://deepai.org/",
+      "snippet": "Whether you are a hobbyist, a professional artist, or a developer integrating AI into your product, DeepAI delivers advanced …"
+    },
+    {
+      "title": "Google AI - How we're making AI helpful for everyone",
+      "url": "https://ai.google/",
+      "snippet": "Discover how Google AI is committed to enriching knowledge, solving complex challenges and helping people grow by building useful …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Dohyeon1/Qwen3-30B-A3B-M-SMoE-ngroups64",
+  "slug": "dohyeon1-qwen3-30b-a3b-m-smoe-ngroups64",
+  "author": "Dohyeon1",
+  "url": "https://huggingface.co/Dohyeon1/Qwen3-30B-A3B-M-SMoE-ngroups64",
+  "created_at": "2026-09-15T18:43:36.000Z",
+  "updated_at": "2026-09-15T18:51:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_moe",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 61078033554,
+  "storage_human": "61.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hostal en Madrid centro, cerca de la Puerta del Sol · Hostal Patria",
+      "url": "https://www.hostalpatria.com/",
+      "snippet": "Hostal en el centro de Madrid, cerca de Puerta del Sol y Plaza Mayor. Acceso WIFI gratis en todo el hostal, calefacción y aire …"
+    },
+    {
+      "title": "The Hostel - Hostal Patria",
+      "url": "https://www.hostalpatria.com/en/the-hostel/",
+      "snippet": "The Hostal Patria, a reference in the heart of Madrid, was opened in 1977 and was renovated in 2016. We are just a few metres from …"
+    },
+    {
+      "title": "Apartamento - Hostal Patria",
+      "url": "https://www.hostalpatria.com/portfolio-item/apartamento/",
+      "snippet": "Hostal Patria Calle Mayor nº10 – 4º 28013 Madrid +34 913 662 187 | hostal_patria_madrid@yahoo.es"
+    },
+    {
+      "title": "Rooms - Hostal Patria",
+      "url": "https://www.hostalpatria.com/en/rooms/",
+      "snippet": "Hostal Patria in Madrid is a friendly place to stay in downtown Madrid, It is outstanding not only because of its extraordinary location …"
+    },
+    {
+      "title": "Habitación individual - Hostal Patria",
+      "url": "https://www.hostalpatria.com/portfolio-item/habitacion-individual/",
+      "snippet": "Hostal Patria Calle Mayor nº10 – 4º 28013 Madrid +34 913 662 187 | hostal_patria_madrid@yahoo.es"
+    }
+  ]
+}

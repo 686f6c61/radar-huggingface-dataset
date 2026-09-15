@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "rinaldiden/ilsocio-brain",
+  "slug": "rinaldiden-ilsocio-brain",
+  "author": "rinaldiden",
+  "url": "https://huggingface.co/rinaldiden/ilsocio-brain",
+  "created_at": "2026-09-10T21:06:05.000Z",
+  "updated_at": "2026-09-15T19:50:57.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "joblib",
+    "safetensors",
+    "lora",
+    "qwen2.5",
+    "ilsocio-brain",
+    "base_model:mlx-community/Qwen2.5-3B-Instruct-4bit",
+    "base_model:adapter:mlx-community/Qwen2.5-3B-Instruct-4bit",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32876219336,
+  "storage_human": "32.9 GB",
+  "base_model": "mlx-community/Qwen2.5-3B-Instruct-4bit",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "カチオン化グアーガム | 三晶株式会社 Sansho Co., Ltd.",
+      "url": "https://sansho.co.jp/product/cationic-guargum/",
+      "snippet": "Aug 21, 2026 · Home カチオン化グアーガム カチオン化グアーガム カチオン化グアーガムは、インド・パキスタン地方で栽培され …"
+    },
+    {
+      "title": "カチオン化グアーガム-特徴 | 三晶株式会社 Sansho Co., Ltd.",
+      "url": "https://sansho.co.jp/product/cationic-guargum/feature/",
+      "snippet": "Jan 31, 2024 · グアーガムを4級アンモニウム化することによって得られる天然由来のカチオンポリマーです。 シャンプーやコン …"
+    },
+    {
+      "title": "グアーガム（工業・製紙） | 三晶株式会社 Sansho Co., Ltd.",
+      "url": "https://sansho.co.jp/product/others-guargum/",
+      "snippet": "Sep 1, 2026 · 特徴・用途 内添用薬品：地合・紙力向上 素材について問い合わせる MEYPROID 6710EV タイプ 特殊変性グアーガ …"
+    },
+    {
+      "title": "HPグアーガム | 三晶株式会社 Sansho Co., Ltd.",
+      "url": "https://sansho.co.jp/product/hydroxypropyl-guargum/",
+      "snippet": "Aug 21, 2026 · HPグアーガムの溶解方法 穏やかに攪拌中の水にHPグアーガムを投入します。 水へ投入後、攪拌しながらクエン酸 …"
+    },
+    {
+      "title": "ヘアケア アーカイブ | 三晶株式会社 Sansho Co., Ltd.",
+      "url": "https://sansho.co.jp/product/field/%e3%83%98%e3%82%a2%e3%82%b1%e3%82%a2/",
+      "snippet": "Contactお問い合わせ お客様のご要望に応じ様々なご提案が可能です。 豊富なデータ情報から 最適なプランを設計いたします。 06 …"
+    }
+  ]
+}

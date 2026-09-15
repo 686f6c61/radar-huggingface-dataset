@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "TurkiAlqahtani/project-audio-visual-learning",
+  "slug": "turkialqahtani-project-audio-visual-learning",
+  "author": "TurkiAlqahtani",
+  "url": "https://huggingface.co/TurkiAlqahtani/project-audio-visual-learning",
+  "created_at": "2026-09-15T11:28:06.000Z",
+  "updated_at": "2026-09-15T11:28:12.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "audio-visual-learning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GPT-5 正式发布 | OpenAI",
+      "url": "https://openai.com/zh-Hans-CN/gpt-5/",
+      "snippet": "GPT‑5 在各方面都更加智能，能够在数学、科学、金融、法律等领域提供更具实用性的回复。它就像拥有一支随时待命的专家团队， …"
+    },
+    {
+      "title": "GPT-5가 출시되었습니다 | OpenAI",
+      "url": "https://openai.com/ko-KR/gpt-5/",
+      "snippet": "GPT‑5는 고품질 코드를 생산하고, 최소화된 프롬프트로 프론트엔드 UI를 생성하고, 성격과 제어 가능성, 그리고 도구 호출의 긴 흐름을 …"
+    },
+    {
+      "title": "The ChatGPT home page - OpenAI Help Center",
+      "url": "https://help.openai.com/en/articles/9125172",
+      "snippet": "ChatGPT is free to use, and can now be accessed before creating an account at chatgpt.com. Simply enter your prompt in the text …"
+    },
+    {
+      "title": "OpenAI Developers",
+      "url": "https://developers.openai.com/",
+      "snippet": "Docs and resources to help you build with, for, and on OpenAI."
+    },
+    {
+      "title": "ChatGPT サブスクリプションのキャンセル - OpenAI Help Center",
+      "url": "https://help.openai.com/ja-jp/articles/7232927-how-do-i-cancel-my-chatgpt-subscription",
+      "snippet": "セルフサービスの ChatGPT Business サブスクリプションをご利用の場合は、ワークスペースの請求設定からキャンセルしてくださ …"
+    }
+  ]
+}

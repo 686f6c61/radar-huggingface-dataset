@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Kiyo-135M-0960-GGUF",
+  "slug": "mradermacher-kiyo-135m-0960-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Kiyo-135M-0960-GGUF",
+  "created_at": "2026-09-15T11:46:34.000Z",
+  "updated_at": "2026-09-15T11:47:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "causal-lm",
+    "language-model",
+    "base-model",
+    "llama",
+    "smollm",
+    "pytorch",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:mlfoundations/dclm-baseline-1.0",
+    "dataset:HuggingFaceTB/finemath",
+    "dataset:HuggingFaceCode/stack-v3-train",
+    "base_model:DedeProGames/Kiyo-135M-0960",
+    "base_model:quantized:DedeProGames/Kiyo-135M-0960",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 1442426880,
+  "storage_human": "1.4 GB",
+  "base_model": "DedeProGames/Kiyo-135M-0960",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Can Google be trusted 100%",
+      "url": "https://support.google.com/websearch/thread/245921210/can-google-be-trusted-100?hl=en",
+      "snippet": "Nov 27, 2023 · Can Google be trusted 100% ? When I've \"Googled\" something in the past, I didn't always trust it's answers. Seems …"
+    },
+    {
+      "title": "mradermacher/Kiyo-135M-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Kiyo-135M-GGUF",
+      "snippet": "mradermacher / Kiyo-135M-GGUF like 0 Transformers GGUF PyTorch 4 datasets English causal-lm language-model base-model llama smollm conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Définir Google comme page d'accueil - Aide Recherche Google",
+      "url": "https://support.google.com/websearch/answer/463?hl=fr-BE",
+      "snippet": "Définissez Google comme page d'accueil pour y accéder chaque fois que vous ouvrez votre navigateur Internet. Modifier votre page …"
+    },
+    {
+      "title": "Kiyo - a DedeProGames Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/DedeProGames/kiyo",
+      "snippet": "DedeProGames/Kiyo-135M Text Generation • 0.1B•Updated 2 days ago• 595 • 5 Upvote - Sort: Collection"
+    },
+    {
+      "title": "Télécharger et installer Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=fr-BE&co=GENIE.Platform%3DDesktop",
+      "snippet": "Vous pouvez télécharger et installer sans frais le navigateur Web Chrome, puis l'utiliser pour naviguer sur le Web. Vérifier la …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mouad10009/distilbert-sentiment-demo",
+  "slug": "mouad10009-distilbert-sentiment-demo",
+  "author": "mouad10009",
+  "url": "https://huggingface.co/mouad10009/distilbert-sentiment-demo",
+  "created_at": "2026-09-15T13:26:05.000Z",
+  "updated_at": "2026-09-15T14:01:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 535670833,
+  "storage_human": "536 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "En iyi Pierce Restoranları 2026 - Tripadvisor",
+      "url": "https://www.tripadvisor.com.tr/Restaurants-g33598-Pierce_Colorado.html",
+      "snippet": "Pierce, Colorado bölgesinde yemek: Tripadvisor seyahatseverlerinin Pierce restoranları hakkındaki yorumuna bakın ve mutfağa, …"
+    },
+    {
+      "title": "Fort Pierce'deki 50 en iyi aile restoranı - Wanderlog",
+      "url": "https://wanderlog.com/tr/list/geoCategory/555440/fort-piercedeki-en-iyi-aile-restoran%C4%B1",
+      "snippet": "Tarihi Fort Pierce şehir merkezinde yer alan bu mekan, sadece bir yemek değil, bir deneyim sunarak misafirlerin terasda …"
+    },
+    {
+      "title": "En İyi Meksika Restoranı - Pierce - Tripadvisor",
+      "url": "https://www.tripadvisor.com.tr/Restaurants-g33598-c29-Pierce_Colorado.html",
+      "snippet": "Pierce, Colorado bölgesindeki Meksika/Güneybatı restoran: Tripadvisor seyahatseverlerinin Pierce restoranları hakkındaki yorumuna …"
+    },
+    {
+      "title": "Pierce County Restaurants | PCBA Food & Beverage Directory",
+      "url": "https://pcba.biz/directory/category/food-and-beverage/",
+      "snippet": "Explore Pierce County restaurants and Puyallup restaurants in PCBA directory: BIPOC, women & veteran-owned food spots. Support …"
+    },
+    {
+      "title": "The 10 best places for Lunch in Pierce County (updated Aug 2026 ...",
+      "url": "https://www.trip.com/restaurant/pierce-county-1657303/lunch-m2/",
+      "snippet": "Find the best places for Lunch in Pierce County. Explore 496 spots with authentic reviews from real users, compare menus and …"
+    }
+  ]
+}

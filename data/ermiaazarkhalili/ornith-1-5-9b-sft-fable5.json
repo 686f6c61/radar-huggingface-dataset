@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "ermiaazarkhalili/Ornith-1.5-9B-SFT-Fable5",
+  "slug": "ermiaazarkhalili-ornith-1-5-9b-sft-fable5",
+  "author": "ermiaazarkhalili",
+  "url": "https://huggingface.co/ermiaazarkhalili/Ornith-1.5-9B-SFT-Fable5",
+  "created_at": "2026-09-15T16:43:18.000Z",
+  "updated_at": "2026-09-15T16:52:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:ornith-ai/Ornith-1.5-9B",
+    "base_model:finetune:ornith-ai/Ornith-1.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19326293207,
+  "storage_human": "19.3 GB",
+  "base_model": "ornith-ai/Ornith-1.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

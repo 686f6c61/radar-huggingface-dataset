@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "amd/Muse-Glimmer-30B-w8a8-llmcompressor",
+  "slug": "amd-muse-glimmer-30b-w8a8-llmcompressor",
+  "author": "amd",
+  "url": "https://huggingface.co/amd/Muse-Glimmer-30B-w8a8-llmcompressor",
+  "created_at": "2026-09-15T15:31:01.000Z",
+  "updated_at": "2026-09-15T16:00:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "muse_glimmer",
+    "image-text-to-text",
+    "quantized",
+    "int8",
+    "w8a8",
+    "dynamic-quantization",
+    "8-bit",
+    "llm-compressor",
+    "zendnn",
+    "compressed-tensors",
+    "amd",
+    "cpu-inference",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:RedHatAI/Muse-Glimmer-30B",
+    "base_model:quantized:RedHatAI/Muse-Glimmer-30B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29776626688,
+  "parameters_human": "29.78B",
+  "storage_bytes": 34424334553,
+  "storage_human": "34.4 GB",
+  "base_model": "RedHatAI/Muse-Glimmer-30B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AMD ׀ together we advance_IA",
+      "url": "https://www.amd.com/fr.html",
+      "snippet": "6 days ago · AMD est à la pointe de l'industrie en matière de coût total de possession, d'efficacité et de capacités d'IA avancées. …"
+    },
+    {
+      "title": "AMD ׀ together we advance_AI",
+      "url": "https://www.amd.com/en.html",
+      "snippet": "Sep 2, 2026 · AMD delivers leadership high-performance and adaptive computing solutions to advance data center AI, AI PCs, …"
+    },
+    {
+      "title": "AMD Radeon Adrenalin Graphics Driver 26.9.1 Hotfix - TechSpot",
+      "url": "https://www.techspot.com/downloads/drivers/essentials/amd-radeon-hotfix/",
+      "snippet": "Sep 3, 2026 · Take advantage of the ALT+R hotkey to open AMD Software: Adrenalin Edition directly in-game, making it even more …"
+    },
+    {
+      "title": "AMD - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/AMD",
+      "snippet": "Through its Xilinx acquisition in 2022, AMD offers field-programmable gate array (FPGA) products. AMD was founded in 1969 by …"
+    },
+    {
+      "title": "Advanced Micro Devices — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Advanced_Micro_Devices",
+      "snippet": "En 1995 AMD introduit le microprocesseur AMD-K5 premier microprocesseur compatible avec l'architecture x86 et conçu de manière …"
+    }
+  ]
+}

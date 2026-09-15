@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "DeptCreator/lymph-node-triage-cpu",
+  "slug": "deptcreator-lymph-node-triage-cpu",
+  "author": "DeptCreator",
+  "url": "https://huggingface.co/DeptCreator/lymph-node-triage-cpu",
+  "created_at": "2026-09-15T13:23:28.000Z",
+  "updated_at": "2026-09-15T13:24:26.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "histopathology",
+    "lymph-node",
+    "triage",
+    "cpu",
+    "research-use-only",
+    "image-classification",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 112124057,
+  "storage_human": "112 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lowyat.NET - Insanely Addictive Malaysia Forum",
+      "url": "https://forum.lowyat.net/",
+      "snippet": "6 days ago · Lowyat.NET Malaysia's Tech Enthusiast Resource Community. Forums, Buy, Sell, Second Hand, Notebook, Laptop, …"
+    },
+    {
+      "title": "Is Whatsapp web down? - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5538738",
+      "snippet": "Sep 8, 2025 · Cannot link my device now."
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/outlook_com/forum/all/outlook-todo-synced-tasks-attachments-only-non/66bca736-f128-4d62-b193-79c8c57ad30f",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/how-do-i-set-the-name-that-appears-on-the-command/63c046ce-f89d-4f62-b93b-b65a66bfa86c",
+      "snippet": ""
+    },
+    {
+      "title": "[found sos] cant login whatsapp browser - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5556445",
+      "snippet": "Feb 27, 2026 · Outline · [ Standard ] · Linear+ [found sos] cant login whatsapp browser, from iphone"
+    }
+  ]
+}

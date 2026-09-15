@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "sandeep123/stride-qwen3-1.7b-2048-local_positive-20260915",
+  "slug": "sandeep123-stride-qwen3-1-7b-2048-local_positive-20260915",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/stride-qwen3-1.7b-2048-local_positive-20260915",
+  "created_at": "2026-09-15T13:45:52.000Z",
+  "updated_at": "2026-09-15T13:45:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "lora",
+    "reinforcement-learning",
+    "math",
+    "stride",
+    "text-generation",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:adapter:Qwen/Qwen3-1.7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hentai ita IO - Comics Porno e Manga Hentai in italiano",
+      "url": "https://hentai-ita.io/",
+      "snippet": "Su Hentai-ita trovi un’accurata selezione di Manga Porno e Hentai comics in ita gratis appartenenti ai generi più disparati e puoi …"
+    },
+    {
+      "title": "Hentai Manga e Doujin in Italiano - 3Hentai",
+      "url": "https://it.3hentai.net/language/italian",
+      "snippet": "Trova e leggi italiano hentai manga e doujin su 3hentai. Il più grande contenuto di hentai che potrai mai trovare."
+    },
+    {
+      "title": "Bokura no Hentai - Yaoi Italia",
+      "url": "https://www.yaoitalia.it/bokura-no-hentai/",
+      "snippet": "Tre ragazzi delle scuole medie che si travestono da donna per via di alcuni diversi motivi, si conoscono in una comunità di un sito di …"
+    },
+    {
+      "title": "MangaWorldAdult - Manga Hentai Scan ITA",
+      "url": "https://www.mangaworldadult.net/",
+      "snippet": "Su MangaWorldAdult puoi trovare tantissime Scan di Doujinshi, Hentai e Manga per adulti tradotti in italiano! Leggi tutte le tue opere …"
+    },
+    {
+      "title": "Manga Hentai ita | Manga porno e fumetti Hentai in italiano",
+      "url": "https://hentai-ita.io/category/hentai-manga/",
+      "snippet": "4 days ago · I migliori hentai manga ita senza censure per il free read online. Scan di manhwa e manga porno in italiano, un vasto …"
+    }
+  ]
+}

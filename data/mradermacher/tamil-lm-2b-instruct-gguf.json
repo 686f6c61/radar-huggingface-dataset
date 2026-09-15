@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mradermacher/tamil-lm-2b-instruct-GGUF",
+  "slug": "mradermacher-tamil-lm-2b-instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/tamil-lm-2b-instruct-GGUF",
+  "created_at": "2026-09-15T12:17:38.000Z",
+  "updated_at": "2026-09-15T12:18:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 331416576,
+  "parameters_human": "331.4M",
+  "storage_bytes": 1032891328,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shkolo.bg : Дигитална трансформация на ...",
+      "url": "https://www.shkolo.bg/",
+      "snippet": "ШКОЛО предлага софтуерни решения за намаляване на бюрокрацията в българските училища и повишаване …"
+    },
+    {
+      "title": "Кариерни възможности - Shkolo.bg",
+      "url": "https://www.shkolo.bg/career/",
+      "snippet": "Какво предлагаме: Интересна и динамична работа с възможности за развитие; Обучение и менторска подкрепа за бързо …"
+    },
+    {
+      "title": "Школо Уроци",
+      "url": "https://lessons.shkolo.bg/",
+      "snippet": "Shkolo Ltd. Дейността на платформата Shkolo Уроци е преустановена Обратно към Школо"
+    },
+    {
+      "title": "Shkolo",
+      "url": "https://app.shkolo.bg/diary/2300025875",
+      "snippet": "ИЛИ Въведете вашия GSM номер. Ще получите 6-цифрен код, който трябва да използвате на следващата стъпка. Кодът е …"
+    },
+    {
+      "title": "Школо Уроци - Shkolo.bg",
+      "url": "https://lessons.shkolo.bg/tutor/become",
+      "snippet": "Shkolo Ltd. Дейността на платформата Shkolo Уроци е преустановена Обратно към Школо"
+    }
+  ]
+}

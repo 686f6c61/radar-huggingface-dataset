@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "santos90x/cnn-transformer-demo",
+  "slug": "santos90x-cnn-transformer-demo",
+  "author": "santos90x",
+  "url": "https://huggingface.co/santos90x/cnn-transformer-demo",
+  "created_at": "2026-09-15T15:52:33.000Z",
+  "updated_at": "2026-09-15T15:52:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "بيتزا وكريب العمدة - موط، قسم الواحات الداخلة،، الواحات الداخلة، الوادي ...",
+      "url": "https://spmprofessionals.com/business-1952023459461088455/",
+      "snippet": "بيتزا وكريب العمدة الملف التجاري: معلومات الاتصال ، آراء العملاء ، التصنيف والاعتماد ، شكاوى العملاء ، تفاصيل العمل"
+    },
+    {
+      "title": "الصفحة الإعلامية لمركز ومدينة الداخلة",
+      "url": "https://www.facebook.com/profile.php/?id=100069065204958",
+      "snippet": "‎الصفحة الإعلامية لمركز ومدينة الداخلة‎. 20,083 likes · 1,726 talking about this. ‎الصفحة الرسمية لمركز ومدينة الداخلة‎"
+    },
+    {
+      "title": "بيتزا+في+الداخلة+ +موط في مصر - تليفونات وعناوين | يلوبيدجز مصر",
+      "url": "https://yellowpages.com.eg/ar/map-search/%D8%A8%D9%8A%D8%AA%D8%B2%D8%A7+%D9%81%D9%8A+%D8%A7%D9%84%D8%AF%D8%A7%D8%AE%D9%84%D8%A9+-+%D9%85%D9%88%D8%B7",
+      "snippet": "تصفح دليل يلوبيدجز مصر للاطلاع على قوائم الأعمال التجارية، وأرقام هواتفها، وإعلاناتها التجارية، بالإضافة إلى الخرائط، ودليل المدن، والأخبار، والمزيد…"
+    },
+    {
+      "title": "Pizza Hut - Facebook",
+      "url": "https://www.facebook.com/PizzaHutEgy/",
+      "snippet": "كل أوردر من أبلكيشن بيتزا هت بيقربك أكتر من هديتك الجاية. اطلب، جمع نقط، وبدلها بهدايا أكتر وأكبر مع Pizza Hut Loyalty Program."
+    },
+    {
+      "title": "دليل فروع بيتزا هت في مصر الرقم الموحد 2027 - عرب دار",
+      "url": "https://arbdar.com/pizza-hut-branches-in-egypt/",
+      "snippet": "تعرف على فروع بيتزا هت يُعتبر مطعم بيتزا هت (Pizza Hut) واحدًا من أشهر سلاسل مطاعم البيتزا في العالم، حيث يتميز بتقديم أشهى أنواع البيتزا بأسعار معقولة تناسب.."
+    }
+  ]
+}

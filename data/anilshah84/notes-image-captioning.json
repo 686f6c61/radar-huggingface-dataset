@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "anilshah84/notes-image-captioning",
+  "slug": "anilshah84-notes-image-captioning",
+  "author": "anilshah84",
+  "url": "https://huggingface.co/anilshah84/notes-image-captioning",
+  "created_at": "2026-09-15T14:57:35.000Z",
+  "updated_at": "2026-09-15T14:57:40.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "image-captioning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Urlaub buchen Pauschalreisen bis 60% günstiger | CHECK24 Reisen",
+      "url": "https://urlaub.check24.de/?msockid=1a3e2bdd8e356f9f12e33c088f956e3b",
+      "snippet": "CHECK24 Reisevergleich Jetzt günstig Urlaub buchen Über 230.000 mal Bestnote Pauschalreisen beim Preissieger ☎ Über 200 …"
+    },
+    {
+      "title": "All-Inclusive Urlaub 2026 Jetzt sorgenfrei verreisen - CHECK24 Reisen",
+      "url": "https://urlaub.check24.de/allinclusive?msockid=1a3e2bdd8e356f9f12e33c088f956e3b",
+      "snippet": "Günstige All-Inclusive Angebote bei CHECK24 Jetzt entspannt verreisen dank echten Kundenbewertungen und bis zu 60 % Last …"
+    },
+    {
+      "title": "Last Minute Urlaub buchen: Top-Angebote 2026 - CHECK24 Reisen",
+      "url": "https://urlaub.check24.de/lastminute?msockid=1a3e2bdd8e356f9f12e33c088f956e3b",
+      "snippet": "Entdecke die beliebtesten Last Minute Reiseziele, Top-Deals mit bis zu 60 % Rabatt & kostenloser Stornierung bis 24 h vor Abflug. …"
+    },
+    {
+      "title": "Urlaub günstig buchen » Bis zu 60% sparen - CHECK24 Reisen",
+      "url": "https://urlaub.check24.de/reisen?msockid=1a3e2bdd8e356f9f12e33c088f956e3b",
+      "snippet": "Eine klassische Saison für Last-Minute-Reisen gibt es zwar nicht, wegen der geringeren Auslastung lassen sich aber vor allem in der …"
+    },
+    {
+      "title": "Frühbucher Urlaub 2027 mit bis zu 60% Frühbucherrabatt - CHECK24 …",
+      "url": "https://urlaub.check24.de/fruehbucher?msockid=1a3e2bdd8e356f9f12e33c088f956e3b",
+      "snippet": "Aktuelle Frühbucher-Angebote Frühbucher-Rabatte für beliebte Reiseziele Bis 24h vor Abflug stornieren Jetzt vergleichen und beim …"
+    }
+  ]
+}

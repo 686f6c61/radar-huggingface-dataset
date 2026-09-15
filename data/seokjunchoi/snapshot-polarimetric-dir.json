@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "SeokjunChoi/snapshot-polarimetric-dir",
+  "slug": "seokjunchoi-snapshot-polarimetric-dir",
+  "author": "SeokjunChoi",
+  "url": "https://huggingface.co/SeokjunChoi/snapshot-polarimetric-dir",
+  "created_at": "2026-09-15T11:54:07.000Z",
+  "updated_at": "2026-09-15T11:59:17.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "inverse-rendering",
+    "polarization",
+    "computational-photography",
+    "arxiv:2605.24915",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 355247407,
+  "storage_human": "355 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "developerlab.americanexpress.com",
+      "url": "https://developerlab.americanexpress.com/",
+      "snippet": "Discover American Express Developer Lab for API integration, resources, and tools to enhance your applications and services."
+    },
+    {
+      "title": "Express Checkout Tutorials - GitHub",
+      "url": "https://github.com/americanexpress/express-checkout-tutorials",
+      "snippet": "Express Checkout offers the ability to securely and easily checkout on a merchant website, by using an American Express login to …"
+    },
+    {
+      "title": "American Express · GitHub",
+      "url": "https://github.com/americanexpress/",
+      "snippet": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million …"
+    },
+    {
+      "title": "Partners | Developers | American Express",
+      "url": "https://network.americanexpress.com/globalnetwork/v4/partners/developers/",
+      "snippet": "Connect to American Express services that power transactions around the globe."
+    },
+    {
+      "title": "American Express Technology",
+      "url": "https://www.americanexpress.io/",
+      "snippet": "Jun 30, 2026 · Browse and contribute to our repository of open source projects. A robust set of tools and resources that can help you …"
+    }
+  ]
+}

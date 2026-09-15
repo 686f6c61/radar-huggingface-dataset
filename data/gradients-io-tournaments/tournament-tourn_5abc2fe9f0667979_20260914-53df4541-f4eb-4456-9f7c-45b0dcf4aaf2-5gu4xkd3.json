@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-tourn_5abc2fe9f0667979_20260914-53df4541-f4eb-4456-9f7c-45b0dcf4aaf2-5GU4Xkd3",
+  "slug": "gradients-io-tournaments-tournament-tourn_5abc2fe9f0667979_20260914-53df4541-f4eb-4456-9f7c-45b0dcf4aaf2-5gu4xkd3",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_5abc2fe9f0667979_20260914-53df4541-f4eb-4456-9f7c-45b0dcf4aaf2-5GU4Xkd3",
+  "created_at": "2026-09-15T13:16:03.000Z",
+  "updated_at": "2026-09-15T13:16:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/cache/models/8d7f663aaab4e5dd",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:adapter:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2701626128,
+  "storage_human": "2.7 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Explorer Fenstergröße fixieren",
+      "url": "https://www.windows-10-forum.com/threads/explorer-fenstergroesse-fixieren.37385/",
+      "snippet": "Jun 15, 2016 · Explorer Fenstergröße fixieren Helfe beim Thema Explorer Fenstergröße fixieren in Windows 10 Allgemeines um eine …"
+    },
+    {
+      "title": "Hilfe, Explorer-Fenster werden nicht angezeigt",
+      "url": "https://www.windows-10-forum.com/threads/hilfe-explorer-fenster-werden-nicht-angezeigt.15034/",
+      "snippet": "Oct 27, 2015 · Hilfe, Explorer-Fenster werden nicht angezeigt Helfe beim Thema Hilfe, Explorer-Fenster werden nicht angezeigt in …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/ja-jp/windows/forum/all/ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â«ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â­ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â®ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡/9804990c-60c8-440c-b1ab-2a0a01c8a749",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/ja-jp/windows/forum/apps_windows_10-msedge/microsoft-edge/252f30fb-a46d-48f1-9dff-46f1ebf7ddc1↑少し違うかもですが、マイクロソフトのコミュニティに書いてある方法を試して下さい。&gt;アプリのトラブルシューティングを実行してみると良さそうです。手順:[コントロールパネル]→[システムとセキュリティ]→[セキュリティとメンテナンス]→[トラブルシューティング]の順に開き、[すべて表示]を選択して&quot;Windowsストアアプリ&quot;の診断を行ってみてください。もし、上記の対処法を試してみてもうまくいかない場合は、ひとまず、有効な対処法が見つかるまではIEをかわりに使用されると良いと思います。",
+      "snippet": ""
+    },
+    {
+      "title": "Hilfe! Windows 10 Explorer stürzt bei Linksklick (!) auf beliebigen ...",
+      "url": "https://www.windows-10-forum.com/threads/hilfe-windows-10-explorer-stuerzt-bei-linksklick-auf-beliebigen-ordner-ab.25963/",
+      "snippet": "Jan 29, 2016 · Hallo liebe Community! Nachdem ich jetzt schon verschiedene Berichte über Explorer Abstürze bei Rechtsklick …"
+    }
+  ]
+}

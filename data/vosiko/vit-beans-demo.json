@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "VosiKo/vit-beans-demo",
+  "slug": "vosiko-vit-beans-demo",
+  "author": "VosiKo",
+  "url": "https://huggingface.co/VosiKo/vit-beans-demo",
+  "created_at": "2026-09-15T13:07:22.000Z",
+  "updated_at": "2026-09-15T13:11:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vit",
+    "image-classification",
+    "generated_from_trainer",
+    "base_model:google/vit-base-patch16-224-in21k",
+    "base_model:finetune:google/vit-base-patch16-224-in21k",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85800963,
+  "parameters_human": "85.8M",
+  "storage_bytes": 1372913409,
+  "storage_human": "1.4 GB",
+  "base_model": "google/vit-base-patch16-224-in21k",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "News & E-Mail bei t-online | Politik, Sport, Unterhaltung & Ratgeber",
+      "url": "https://www.t-online.de/",
+      "snippet": "Aktuelle News aus Politik, Sport, Unterhaltung, Wirtschaft & Finanzen | Ratgeber Leben, Gesundheit und Heim & Garten | E-Mail und …"
+    },
+    {
+      "title": "Wetter für Deutschland | Wettervorhersage - t-online.de",
+      "url": "https://www.t-online.de/wetter",
+      "snippet": "Wetter in Ihrer Nähe Erlauben Sie den Zugriff auf Ihren aktuellen Standort, um die Wettervorhersage für Ihre Region anzuzeigen oder …"
+    },
+    {
+      "title": "E-Mail Mobil",
+      "url": "https://m-email.t-online.de/",
+      "snippet": "Über ein anderes E-Mail-Programm (z.B. Outlook, Apple Mail, Thunderbird, ...) Wenn Sie Telekom Mail mit einem E-Mail-Programm …"
+    },
+    {
+      "title": "Düsseldorf: Nachrichten & News aus Düsseldorf",
+      "url": "https://duesseldorf.t-online.de/region/duesseldorf/",
+      "snippet": "Stets gut informiert mit aktuellen Nachrichten und News aus Düsseldorf. Wetter, regionale Infos und Angebote - alles auf t-online.de …"
+    },
+    {
+      "title": "Das E-Mail Center im Web - für E-Mail @t-online.de der Telekom",
+      "url": "https://kommunikationsdienste.t-online.de/emailcenter/info/index.html",
+      "snippet": "Das Adressbuch von E-Mail @t-online.de ist der zentrale Ort für alle Ihre Kontaktdaten. Mit dem bequemen Import der Adressen von …"
+    }
+  ]
+}

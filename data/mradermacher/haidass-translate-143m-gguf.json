@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Haidass-Translate-143M-GGUF",
+  "slug": "mradermacher-haidass-translate-143m-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Haidass-Translate-143M-GGUF",
+  "created_at": "2026-09-15T11:47:22.000Z",
+  "updated_at": "2026-09-15T11:48:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "translation",
+    "machine-translation",
+    "small-language-model",
+    "qwen3",
+    "en",
+    "zh",
+    "base_model:DALabCommunity/Haidass-Translate-143M",
+    "base_model:quantized:DALabCommunity/Haidass-Translate-143M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 143071296,
+  "parameters_human": "143.1M",
+  "storage_bytes": 1556555904,
+  "storage_human": "1.6 GB",
+  "base_model": "DALabCommunity/Haidass-Translate-143M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ZZRI/Feihua-n2-1.7B",
+  "slug": "zzri-feihua-n2-1-7b",
+  "author": "ZZRI",
+  "url": "https://huggingface.co/ZZRI/Feihua-n2-1.7B",
+  "created_at": "2026-09-15T16:26:54.000Z",
+  "updated_at": "2026-09-15T16:32:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "spark2_5",
+    "nonsense",
+    "废话文学",
+    "gguf",
+    "lora",
+    "agent",
+    "custom_code",
+    "en",
+    "zh",
+    "base_model:XHToken/Spark-X2.5-1.7B",
+    "base_model:adapter:XHToken/Spark-X2.5-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1707657216,
+  "parameters_human": "1.71B",
+  "storage_bytes": 3415340072,
+  "storage_human": "3.4 GB",
+  "base_model": "XHToken/Spark-X2.5-1.7B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bilibili视频下载器，可下4K、8K、HDR、杜比音频等内容（2026.07.08 …",
+      "url": "https://www.52pojie.cn/thread-2048009-1-1.html",
+      "snippet": "Jul 8, 2026 · [原创工具] bilibili视频下载器，可下4K、8K、HDR、杜比音频等内容（2026.07.08更新） [复制链接]"
+    },
+    {
+      "title": "有问题，就会有答案 - 知乎",
+      "url": "https://www.zhihu.com/billboard",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "罗技鼠标驱动不知道下哪个? - 知乎",
+      "url": "https://www.zhihu.com/question/350436886",
+      "snippet": "罗技鼠标驱动其实有 4 个：Logitech Options、Logi Options+、Logitech Gaming Software、Logitech G HUB。"
+    },
+    {
+      "title": "定向感谢lanlion 提供Bilibili 三分钟音乐社 基础乐理 第二季 配套讲义",
+      "url": "https://www.52pojie.cn/thread-2116338-1-1.html",
+      "snippet": "Jul 9, 2026 · [资源求助] 定向感谢lanlion 提供Bilibili 三分钟音乐社 基础乐理 第二季 配套讲义 [复制链接]"
+    },
+    {
+      "title": "哔哩哔哩 - 知乎",
+      "url": "https://www.zhihu.com/topic/19628957",
+      "snippet": "哔哩哔哩（bilibili）现为国内领先的年轻人文化社区，该网站于2009年6月26日创建，被粉丝们亲切的称为“B站”。 根据数据公司 …"
+    }
+  ]
+}

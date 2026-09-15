@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ImKyungjin/smolvla-maniskill_stackcube_mixed30-uniform",
+  "slug": "imkyungjin-smolvla-maniskill_stackcube_mixed30-uniform",
+  "author": "ImKyungjin",
+  "url": "https://huggingface.co/ImKyungjin/smolvla-maniskill_stackcube_mixed30-uniform",
+  "created_at": "2026-09-15T12:52:11.000Z",
+  "updated_at": "2026-09-15T12:53:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:local/maniskill_stackcube_mixed30",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906716364,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NC MUST - Login",
+      "url": "https://ncmust.ncdhhs.gov/",
+      "snippet": "The Web Portal contains information which is intended only for the use of the individual or entity associated with the North Carolina …"
+    },
+    {
+      "title": "NC MUST - Help and Support",
+      "url": "https://ncmust.ncdhhs.gov/wps/portal/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8ziTS08zDy8LAxMPYwtDA3MfDx8jYwMXIwMLMz0wwkpiAJKG-AAjgYE9BsYgPUTtB-PBQT1R-FVAnIBIT8QMMFYvyA3NDTCINMTAI1QsyA!/dz/d5/L2dBISEvZ0FBIS9nQSEh/",
+      "snippet": "Javascript is disabled in this browser. This page requires Javascript. Modify your browser's settings to allow Javascript to execute. …"
+    },
+    {
+      "title": "NC MUST - Login - NCDHHS",
+      "url": "https://ncmust.ncdhhs.gov/wps/portal/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vM0Q90LSrKLwpOLS4G8kMyc1PzS0v0C9IVFQGtbwts/",
+      "snippet": "Your session ended due to inactivity. Log in to start a new session."
+    },
+    {
+      "title": "ncmust.ncdhhs.gov",
+      "url": "https://ncmust.ncdhhs.gov/wps/contenthandler/!ut/p/digest!ZZa_K-ZtVTwI9Jpgge60eA/mashup/ra:collection?themeID=ZJ_89G2148219UA50QFMJ4RP10000&locale=en&mime-type=text/plain&entry=wp_contextmenu_templates__0.0%3Aconfig_markup&entry=wp_dnd_main__0.0%3Aconfig_markup&deferred=true",
+      "snippet": ""
+    }
+  ]
+}

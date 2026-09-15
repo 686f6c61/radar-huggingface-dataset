@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "ggbetz/qwen3-4b-think-s1-full-sft",
+  "slug": "ggbetz-qwen3-4b-think-s1-full-sft",
+  "author": "ggbetz",
+  "url": "https://huggingface.co/ggbetz/qwen3-4b-think-s1-full-sft",
+  "created_at": "2026-09-15T16:57:23.000Z",
+  "updated_at": "2026-09-15T16:57:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "code",
+    "sft",
+    "full-sft",
+    "think",
+    "curriculum",
+    "llama-factory",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:finetune:Qwen/Qwen3-4B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8834317158,
+  "storage_human": "8.8 GB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Play the Official Tetris Game for Free",
+      "url": "https://play.tetris.com/",
+      "snippet": "The Tetris® brand is one of the leading and most distinctive video game brands and franchises in the world."
+    },
+    {
+      "title": "Play Tetris Gems | Tetris",
+      "url": "https://play.tetris.com/play-gems",
+      "snippet": "The Tetris Official Website"
+    },
+    {
+      "title": "The Official Tetris Website",
+      "url": "https://tetris.com/",
+      "snippet": "Welcome to TETRIS®, the official mobile app for the world’s favorite puzzle game. Play through hundreds of unique TETRIS Levels in …"
+    },
+    {
+      "title": "Tetris x Minecraft",
+      "url": "https://tetris.com/products/video-game/tetris-x-minecraft",
+      "snippet": "CHECK IT OUT Explore new places, be somebody different, and discover new ways to play with community creations from Minecraft …"
+    },
+    {
+      "title": "Official Tetris Products",
+      "url": "https://tetris.com/products",
+      "snippet": "The Tetris Official Website"
+    }
+  ]
+}

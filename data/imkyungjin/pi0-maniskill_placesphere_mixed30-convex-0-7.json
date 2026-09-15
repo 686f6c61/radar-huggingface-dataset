@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ImKyungjin/pi0-maniskill_placesphere_mixed30-convex-0.7",
+  "slug": "imkyungjin-pi0-maniskill_placesphere_mixed30-convex-0-7",
+  "author": "ImKyungjin",
+  "url": "https://huggingface.co/ImKyungjin/pi0-maniskill_placesphere_mixed30-convex-0.7",
+  "created_at": "2026-09-15T19:00:56.000Z",
+  "updated_at": "2026-09-15T19:04:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi0",
+    "robotics",
+    "dataset:local/maniskill_placesphere_mixed30",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 7011552564,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Direkter link zum E - Mail Center ? | Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/direkter-link-zum-e-mail-center/668aa0f94ae73561daacb890",
+      "snippet": "Hallo Community,kann mir jemand mal wieder einen funktionierenden direkten link zum E - Mail Center der Telekom mitteilen, mit …"
+    },
+    {
+      "title": "Wie kann ich die Telekom Mail App auf meinem PC installieren",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/wie-kann-ich-die-telekom-mail-app-auf-meinem-pc-installieren/668720314ae73561daf5c926",
+      "snippet": "Ich habe die Telekom Mail App auf meinem Tablett undmöchte sie aber auch auf meinem PC installieren. Wie mache ich das?"
+    },
+    {
+      "title": "Zugansgdaten für Kundencenter, E-Mail, Magenta-Cloud, Telekom ...",
+      "url": "https://telekomhilft.telekom.de/conversations/festnetz-internet/zugansgdaten-f%C3%BCr-kundencenter-e-mail-magenta-cloud-telekom-smartphone-apps/69b158e261f3b218083cf63b",
+      "snippet": "Kann man für die Anwendungen der Telekom wie z.B. E-Mail, Cloud und Kundencenter unterschiedliche Zugangsdaten erstellen? …"
+    },
+    {
+      "title": "‎t-online Mailadresse existiert laut Telekom, aber Login meldet ...",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/t-online-mailadresse-existiert-laut-telekom-aber-login-meldet-adresse-nicht-gefunden/69b7ccc4be964239088fff26",
+      "snippet": "„Diese E-Mail-Adresse konnte leider nicht gefunden werden. Bitte prüfen Sie Ihre Eingabe.“ Laut telefonischem Support der …"
+    },
+    {
+      "title": "FreeMail auf neuen Login überführen | Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/freemail-auf-neuen-login-%C3%BCberf%C3%BChren/68834fe1fa62d84e83b4b225",
+      "snippet": "Guten Tag, heute wurde mit einem neuen Telekom Login mein MagentaSmart Tarif aktiviert. Ich habe allerdings noch einen zweiten …"
+    }
+  ]
+}

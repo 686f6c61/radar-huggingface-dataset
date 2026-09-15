@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Synthyra/ESMFold2-300",
+  "slug": "synthyra-esmfold2-300",
+  "author": "Synthyra",
+  "url": "https://huggingface.co/Synthyra/ESMFold2-300",
+  "created_at": "2026-09-15T17:40:48.000Z",
+  "updated_at": "2026-09-15T17:44:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "esmfold2",
+    "feature-extraction",
+    "protein-language-model",
+    "fastplms",
+    "custom_code",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 171123237,
+  "parameters_human": "171.1M",
+  "storage_bytes": 684606540,
+  "storage_human": "685 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

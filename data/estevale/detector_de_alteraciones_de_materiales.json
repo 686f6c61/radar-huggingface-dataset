@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Estevale/Detector_de_alteraciones_de_materiales",
+  "slug": "estevale-detector_de_alteraciones_de_materiales",
+  "author": "Estevale",
+  "url": "https://huggingface.co/Estevale/Detector_de_alteraciones_de_materiales",
+  "created_at": "2026-09-15T16:29:33.000Z",
+  "updated_at": "2026-09-15T16:29:33.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LETERNEL | Diamond Painting - Boutique Officielle",
+      "url": "https://www.diamond-painting.fr/",
+      "snippet": "LETERNEL, boutique officielle de diamond painting. Large choix de modèles, fabrication sur commande. Paiement 3x sans frais, …"
+    },
+    {
+      "title": "Diamond Painting – Boutique spécialisée | +1000 modèles de kits",
+      "url": "https://my-diamond-painting.fr/",
+      "snippet": "Le diamond painting, aussi appelé broderie diamant, est un loisir créatif consistant à coller de petits strass colorés sur une toile …"
+    },
+    {
+      "title": "Diamond Painting & Broderie Diamant : Kits Expédiés de France",
+      "url": "https://diamondpaintingcentral.com/fr/",
+      "snippet": "Le diamond painting, également appelé broderie diamant, est une activité manuelle de précision qui permet de réaliser des tableaux …"
+    },
+    {
+      "title": "Ma Ville en Diamant | Diamond Painting de Villes",
+      "url": "https://mavilleendiamant.fr/",
+      "snippet": "Découvrez le Diamond Painting, une activité créative où de petits diamants sont placés sur une toile illustrée. Explorez nos kits …"
+    },
+    {
+      "title": "+500 Modèles Diamond Painting sur Commande | LETERNEL",
+      "url": "https://www.diamond-painting.fr/collections/tous-nos-modeles",
+      "snippet": "+500 modèles de diamond painting fabriqués sur commande. Animaux, paysages, fleurs. 4 234 avis 4,8/5. Livraison 6-10 jours …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ulasZoi/smolvla_pickcube_bs64_LoRA_20k",
+  "slug": "ulaszoi-smolvla_pickcube_bs64_lora_20k",
+  "author": "ulasZoi",
+  "url": "https://huggingface.co/ulasZoi/smolvla_pickcube_bs64_LoRA_20k",
+  "created_at": "2026-09-15T11:52:00.000Z",
+  "updated_at": "2026-09-15T11:52:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:lerobot/smolvla_base",
+    "lora",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11906992,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.de/",
+      "snippet": "Mit diesem kostenlosen Google-Dienst lassen sich Wörter, Sätze und Webseiten sofort zwischen Deutsch und über 100 Sprachen …"
+    },
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.com/?hl=de",
+      "snippet": "Mit diesem kostenlosen Google-Dienst lassen sich Wörter, Sätze und Webseiten sofort zwischen Deutsch und über 100 Sprachen …"
+    },
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.at/",
+      "snippet": "Mit diesem kostenlosen Google-Dienst lassen sich Wörter, Sätze und Webseiten sofort zwischen Deutsch und über 100 Sprachen …"
+    },
+    {
+      "title": "Google Übersetzer – dein persönlicher Übersetzer auf deinem …",
+      "url": "https://translate.google.com/intl/de/about/",
+      "snippet": "Die Welt verstehen und in anderen Sprachen kommunizieren – mit Google Übersetzer. Übersetze Texte, gesprochene Sprache, …"
+    },
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.de/details",
+      "snippet": "Damit du Details aufrufen kannst, musst du erst Text eingeben"
+    }
+  ]
+}

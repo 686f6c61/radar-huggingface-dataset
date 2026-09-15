@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "royalnutharvest118/heart-disease-model",
+  "slug": "royalnutharvest118-heart-disease-model",
+  "author": "royalnutharvest118",
+  "url": "https://huggingface.co/royalnutharvest118/heart-disease-model",
+  "created_at": "2026-09-15T15:53:56.000Z",
+  "updated_at": "2026-09-15T15:56:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 436310839,
+  "storage_human": "436 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quiz: Serena Williams: Tennis Icon - Quizzly.ai",
+      "url": "https://quizzly.ai/play/serena-williams-tennis-icon",
+      "snippet": "Serena Williams: Tennis Icon (Sports Legends) refers to the extraordinary career and influence of Serena Williams, one of the …"
+    },
+    {
+      "title": "All Serena Williams Quizzes, Trivia, and Games - Sporcle",
+      "url": "https://www.sporcle.com/games/tags/serenawilliams",
+      "snippet": "Play Serena Williams quizzes on Sporcle, the world's largest quiz community. There's a Serena Williams quiz for everyone."
+    },
+    {
+      "title": "Serena Williams - Kahoot! Quiz",
+      "url": "https://create.kahoot.it/details/serena-williams/ed5bd074-c7bd-4423-8304-1152209c8ecc",
+      "snippet": "Serena Williams - Kahoot! Quiz."
+    },
+    {
+      "title": "The Serena Wiliams Quiz - 15 Questions",
+      "url": "https://mastersoftrivia.com/en/all-quizzes/sports/tennis/tennis-players/serena-wiliams/",
+      "snippet": "Play our quiz about Serena Wiliams. 15 quiz questions (with answers and scores) about the American former professional tennis player."
+    },
+    {
+      "title": "100+ Serena Williams Quiz Questions & Trivia (With Answers)",
+      "url": "https://riddleness.com/trivia/serena-williams/",
+      "snippet": "Jul 16, 2025 · These 100+ Serena Williams quiz questions cover every chapter of her extraordinary story. Share this quiz with friends …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "hamadbijarani012/teacher_bert_base_seed1",
+  "slug": "hamadbijarani012-teacher_bert_base_seed1",
+  "author": "hamadbijarani012",
+  "url": "https://huggingface.co/hamadbijarani012/teacher_bert_base_seed1",
+  "created_at": "2026-09-15T14:41:40.000Z",
+  "updated_at": "2026-09-15T14:42:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437958648,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "q9adg：#富贵荣华# 提袁富华这个名字，你估计不知道是谁。 但我个人认为，他是香港史上最好的演员之一。 不靠脸，是凭真本事出 …"
+    },
+    {
+      "title": "披萨馅料有哪些经典的种类？都用了哪些食材？ - 知乎",
+      "url": "https://www.zhihu.com/question/27157954",
+      "snippet": "Jan 10, 2018 · pizza al taglio我一般当中饭吃，或者买一块带回家烤箱热下当简单的晚饭。。。这种配料不太好说，每个店都有不一样 …"
+    },
+    {
+      "title": "Pizza 4U披萨为什么会有如此快的发展速度呢？ - 知乎",
+      "url": "https://www.zhihu.com/question/51613957",
+      "snippet": "明显感觉Pizza 4U的发展速度不一般呢。 相比起其他的餐饮品牌，4U的开店速度简直可以用开挂来形容了。 个人觉得Pizza 4U最主要 …"
+    },
+    {
+      "title": "话题广场 - 知乎",
+      "url": "https://www.zhihu.com/topics",
+      "snippet": "知乎话题广场，汇聚多样化主题，助您探索知识、分享见解。"
+    },
+    {
+      "title": "写论文，一篇文献前面引用了后面又要引用，在文中怎么标注？",
+      "url": "https://www.zhihu.com/question/325120848",
+      "snippet": "Feb 22, 2020 · 以前对这个操作不熟悉。后来看过几个模板后就发现这个简单，就是插入同一个交叉引用就可以。 1、一篇文献引用多 …"
+    }
+  ]
+}

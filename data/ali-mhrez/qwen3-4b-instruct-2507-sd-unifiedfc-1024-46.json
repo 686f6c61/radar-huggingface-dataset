@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-1024-46",
+  "slug": "ali-mhrez-qwen3-4b-instruct-2507-sd-unifiedfc-1024-46",
+  "author": "Ali-Mhrez",
+  "url": "https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-1024-46",
+  "created_at": "2026-09-15T13:20:05.000Z",
+  "updated_at": "2026-09-15T18:59:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "unsloth",
+    "base_model:unsloth/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:unsloth/Qwen3-4B-Instruct-2507",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1010951787,
+  "storage_human": "1.0 GB",
+  "base_model": "unsloth/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AliExpress - Affordable Chinese Stores & Free Shipping - Online …",
+      "url": "https://www.aliexpress.com/",
+      "snippet": "Passion shouldn't cost a fortune. On AliExpress, shop online for over 111 million affordable products from China on Fashion, Men's …"
+    },
+    {
+      "title": "AliExpress France - Livraison gratuite et économisez plus",
+      "url": "https://fr.aliexpress.com/",
+      "snippet": "La passion ne devrait pas coûter une fortune. Avis Sur AliExpress.com, un site de chez Alibaba, vous pouvez choisir parmi plus de …"
+    },
+    {
+      "title": "Ali ibn Abi Talib — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ali_ibn_Abi_Talib",
+      "snippet": "Selon les chiites, Ali est né à l'intérieur de la Kaaba, à La Mecque, où il est resté avec sa mère pendant trois jours. Selon la tradition …"
+    },
+    {
+      "title": "Achat en ligne - AliExpress France",
+      "url": "https://fr.aliexpress.com/w/wholesale-aliexpress-france.html",
+      "snippet": "Cherchez-vous une bonne affaire aliexpress france ? Explorez une large gamme des meilleurs aliexpress france sur AliExpress pour …"
+    },
+    {
+      "title": "AliExpress - Online Shopping for Popular Electronics, Fashion, Home ...",
+      "url": "https://a.aliexpress.com/",
+      "snippet": "Online shopping for the latest electronics, fashion, phone accessories, computer electronics, toys, home&garden, home appliances, …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "chris0809/scope-intent-distilmbert",
+  "slug": "chris0809-scope-intent-distilmbert",
+  "author": "chris0809",
+  "url": "https://huggingface.co/chris0809/scope-intent-distilmbert",
+  "created_at": "2026-09-15T14:22:06.000Z",
+  "updated_at": "2026-09-15T14:23:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "scope-routing",
+    "text-classification",
+    "zh",
+    "en",
+    "dataset:chris0809/scope-intent-routing-20k",
+    "base_model:distilbert/distilbert-base-multilingual-cased",
+    "base_model:finetune:distilbert/distilbert-base-multilingual-cased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 135326210,
+  "parameters_human": "135.3M",
+  "storage_bytes": 541317368,
+  "storage_human": "541 MB",
+  "base_model": "distilbert/distilbert-base-multilingual-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gmail Help",
+      "url": "https://support.google.com/mail/?hl=en",
+      "snippet": "Official Gmail Help Center where you can find tips and tutorials on using Gmail and other answers to frequently asked questions."
+    },
+    {
+      "title": "Đăng nhập vào Gmail - Máy tính - Gmail Trợ giúp - Google Help",
+      "url": "https://support.google.com/mail/answer/8494?hl=vi&co=GENIE.Platform%3DDesktop",
+      "snippet": "Đăng nhập vào Gmail Mẹo: Nếu bạn đăng nhập vào một máy tính công cộng, hãy nhớ đăng xuất trước khi rời khỏi máy tính. Hãy tìm …"
+    },
+    {
+      "title": "Tạo Tài khoản Google cho Gmail - Gmail Trợ giúp",
+      "url": "https://support.google.com/mail/answer/56256?hl=vi",
+      "snippet": "Quan trọng: Trước khi tạo Tài khoản Google mới, hãy đăng xuất khỏi tài khoản hiện tại. Tìm hiểu cách đăng xuất khỏi Gmail. Trên …"
+    },
+    {
+      "title": "Fazer login no Gmail - Computador - Ajuda do Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=pt-br&co=GENIE.Platform%3DDesktop",
+      "snippet": "No seu computador, acesse gmail.com. Insira seu número de telefone ou e-mail da Conta do Google e a senha. Se as informações …"
+    },
+    {
+      "title": "How to recover your Google Account or Gmail",
+      "url": "https://support.google.com/accounts/answer/7682439?hl=en",
+      "snippet": "If you forgot your password or username, or you can’t get verification codes, follow these steps to recover your Google Account. That …"
+    }
+  ]
+}

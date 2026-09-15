@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mee0011/Chest_X_Ray_Classification",
+  "slug": "mee0011-chest_x_ray_classification",
+  "author": "mee0011",
+  "url": "https://huggingface.co/mee0011/Chest_X_Ray_Classification",
+  "created_at": "2026-09-15T17:06:17.000Z",
+  "updated_at": "2026-09-15T17:06:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Site de rencontre sérieux et gratuit pour trouver l'amour | Meetic",
+      "url": "https://www.meetic.fr/?msockid=33df0db9db426b7e1ab91a6cdade6a89",
+      "snippet": "Pourquoi Meetic ? Trouvez l'amour auprès d'une personne qui vous correspond Nos membres sont à la recherche de belles histoires …"
+    },
+    {
+      "title": "Meetic | Connexion",
+      "url": "https://www.meetic.fr/login?msockid=33df0db9db426b7e1ab91a6cdade6a89",
+      "snippet": "Commencez à faire des rencontres en ligne avec Meetic. Inscrivez-vous gratuitement pour accéder aux profils des célibataires, et …"
+    },
+    {
+      "title": "Supprimer ou suspendre mon profil - Meetic - Aide en ligne | FAQ",
+      "url": "https://www.meetic.fr/faq/gestion-du-profil/supprimer-ou-suspendre-mon-profil/?msockid=33df0db9db426b7e1ab91a6cdade6a89",
+      "snippet": "Questions Populaires Pourquoi prendre un abonnement Meetic ? Quelles fonctionnalités Meetic je peux utiliser sans prendre …"
+    },
+    {
+      "title": "Comment modifier mes infos personnelles - Meetic",
+      "url": "https://www.meetic.fr/faq/gestion-du-profil/comment-modifier-mes-infos-personnelles/?msockid=33df0db9db426b7e1ab91a6cdade6a89",
+      "snippet": "Questions Populaires Pourquoi prendre un abonnement Meetic ? Quelles fonctionnalités Meetic je peux utiliser sans prendre …"
+    },
+    {
+      "title": "Quelles fonctionnalités Meetic je peux utiliser sans prendre d ...",
+      "url": "https://www.meetic.fr/faq/inscription-et-1ers-pas/quelles-fonctionnalites-meetic-je-peux-utiliser-sans-prendre-dabonnement/?msockid=33df0db9db426b7e1ab91a6cdade6a89",
+      "snippet": "Quelles fonctionnalités Meetic je peux utiliser sans prendre d'abonnement ? Nous nous connaissons encore peu. Il est tout à fait …"
+    }
+  ]
+}

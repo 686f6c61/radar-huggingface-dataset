@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gemma-4-E2B-home-assistant-i1-GGUF",
+  "slug": "mradermacher-gemma-4-e2b-home-assistant-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma-4-E2B-home-assistant-i1-GGUF",
+  "created_at": "2026-09-15T12:00:04.000Z",
+  "updated_at": "2026-09-15T12:00:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 694291,
+  "parameters_human": "694291",
+  "storage_bytes": 2818272,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Developer Forum | Roblox",
+      "url": "https://devforum.roblox.com/",
+      "snippet": "Chat with other creators, learn about Roblox platform updates, and report issues with the platform."
+    },
+    {
+      "title": "ForgeGUI - AI Roblox Scripting Tool Feature",
+      "url": "https://devforum.roblox.com/t/forgegui-ai-roblox-scripting-tool-feature/4734535",
+      "snippet": "Jul 13, 2026 · Hey Yall devs 👋 ForgeGUI’s AI scripting tool is a Roblox Studio plugin that turns plain-English descriptions into working …"
+    },
+    {
+      "title": "New Publishing Requirements & Evaluation Process for Games",
+      "url": "https://devforum.roblox.com/t/new-publishing-requirements-evaluation-process-for-games/4573166",
+      "snippet": "Apr 13, 2026 · * Exact ages of Roblox Kids and Roblox Select accounts may vary by region based on local requirements New …"
+    },
+    {
+      "title": "Allowlist for local client configuration via Fast Flags - Roblox",
+      "url": "https://devforum.roblox.com/t/allowlist-for-local-client-configuration-via-fast-flags/3966569",
+      "snippet": "Sep 29, 2025 · Allowlist limits the number of locally configurable Fast Flags to those explicitly listed. Hi Creators, To improve platform …"
+    },
+    {
+      "title": "Lux - AI Coding Agent for Roblox Studio [FREE]",
+      "url": "https://devforum.roblox.com/t/%E2%96%B8-lux-ai-coding-agent-for-roblox-studio-free/4207506",
+      "snippet": "Jan 2, 2026 · Lux - AI That Actually Codes Inside Your Project Stop copy-pasting. Stop debugging AI suggestions. Start shipping. …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "DorianAtSchool/RoboTalk-Qwen3-VL-8B-Thinking-Rationale-30traj",
+  "slug": "dorianatschool-robotalk-qwen3-vl-8b-thinking-rationale-30traj",
+  "author": "DorianAtSchool",
+  "url": "https://huggingface.co/DorianAtSchool/RoboTalk-Qwen3-VL-8B-Thinking-Rationale-30traj",
+  "created_at": "2026-09-15T11:52:47.000Z",
+  "updated_at": "2026-09-15T11:52:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "robotics",
+    "multi-agent",
+    "vision-language",
+    "base_model:adapter:Qwen/Qwen3-VL-8B-Thinking",
+    "image-text-to-text",
+    "en",
+    "dataset:DorianAtSchool/RoboTalk",
+    "base_model:Qwen/Qwen3-VL-8B-Thinking",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 174663096,
+  "storage_human": "175 MB",
+  "base_model": "Qwen/Qwen3-VL-8B-Thinking",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Бесплатный и неограниченный генератор изображений ИИ …",
+      "url": "https://www.creen.ai/ru/ai-image-generator",
+      "snippet": "Генерируйте потрясающие ИИ-изображения из текста или фотографий. Бесплатный и неограниченный генератор …"
+    },
+    {
+      "title": "Бесплатный AI-генератор изображений | Felo AI Image",
+      "url": "https://felo.ai/ru/tools/ai-image",
+      "snippet": "Коммерческая фотография, арт для соцсетей, брендовые материалы или концепты для игр — для каждой задачи найдётся …"
+    },
+    {
+      "title": "ии генератор картинок онлайн бесплатно: Превратите текст в …",
+      "url": "https://www.fotor.com/ru/ai-image-generator/",
+      "snippet": "Получить идеальные изображения или создать потрясающие визуальные образы очень просто с помощью нашего …"
+    },
+    {
+      "title": "FreeForAI - Бесплатный неограниченный ИИ генератор изображений",
+      "url": "https://draw.freeforai.com/ru/",
+      "snippet": "Испытайте технологию генерации изображений ИИ следующего поколения - мощную, бесплатную и ориентированную на …"
+    },
+    {
+      "title": "ТОП-16 Нейросетей для создания фото: Бесплатные и платные ИИ для ...",
+      "url": "https://vc.ru/ai/2321549-top-15-neurosetei-dlya-sozdaniya-foto",
+      "snippet": "Nov 5, 2025 · Нейросети для генерации фото, создание портретов, товаров, интерьеров, креативные иллюстрации, …"
+    }
+  ]
+}

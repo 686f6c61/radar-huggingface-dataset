@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "christo-pherbcb/efficientformer-contrastive",
+  "slug": "christo-pherbcb-efficientformer-contrastive",
+  "author": "christo-pherbcb",
+  "url": "https://huggingface.co/christo-pherbcb/efficientformer-contrastive",
+  "created_at": "2026-09-15T14:27:21.000Z",
+  "updated_at": "2026-09-15T14:27:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Christo and Jeanne-Claude - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Christo_and_Jeanne-Claude",
+      "snippet": "The pair met and married in Paris in the late 1950s. Originally working under Christo's name, they later credited their installations to …"
+    },
+    {
+      "title": "Christo et Jeanne-Claude — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Christo_et_Jeanne-Claude",
+      "snippet": "Christo est un ingénieur et un entrepreneur, réalisant des projets techniques alors qu’il n’a aucune formation dans le génie civil. …"
+    },
+    {
+      "title": "Christo and Jeanne-Claude",
+      "url": "https://christojeanneclaude.net/",
+      "snippet": "Official website of artists Christo and Jeanne-Claude. Features photographs and texts about all major projects, early works, and …"
+    },
+    {
+      "title": "Christo - Gagosian",
+      "url": "https://gagosian.com/artists/christo/",
+      "snippet": "Learn about the work and career of artist Christo. Artworks, biography, exhibitions, editorial content, news, museum exhibitions, …"
+    },
+    {
+      "title": "Christo und Jeanne-Claude – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Christo_und_Jeanne-Claude",
+      "snippet": "Christo (1935–2020) und Jeanne-Claude (1935–2009) waren ein Künstlerehepaar, das ab den 1960er Jahren vor allem mit …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "bosflores/document-ai-prototype64",
+  "slug": "bosflores-document-ai-prototype64",
+  "author": "bosflores",
+  "url": "https://huggingface.co/bosflores/document-ai-prototype64",
+  "created_at": "2026-09-15T18:04:32.000Z",
+  "updated_at": "2026-09-15T18:04:38.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "document-ai",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "عدم ظهور الفيديوهات في الصفحة الرئيسية",
+      "url": "https://support.google.com/youtube/thread/261060268/%D8%B9%D8%AF%D9%85-%D8%B8%D9%87%D9%88%D8%B1-%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88%D9%87%D8%A7%D8%AA-%D9%81%D9%8A-%D8%A7%D9%84%D8%B5%D9%81%D8%AD%D8%A9-%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%D8%A9?hl=ar",
+      "snippet": "خبير منتجات من المستوى البرونزي Zainab Saad Founder, CEO Zmrd Media 27 فبراير 2024 مرحبا، تأكد من أنك تستخدم الإصدار الأحدث من تطبيق يوتيوب على هاتفك"
+    },
+    {
+      "title": "استخدام حساب Google لتسجيل الدخول إلى YouTube",
+      "url": "https://support.google.com/youtube/answer/69961?hl=ar",
+      "snippet": "عندما تسجّل الدخول إلى YouTube باستخدام حساب Google ، ستتمكّن من الاستفادة من ميزات كثيرة في YouTube، منها: إبداء الإعجاب بالفيديوهات حفظ مقاطع الفيديو المفضلة الاشتراك في …"
+    },
+    {
+      "title": "التعديل على الصفحة الرئيسية والقوائم في موقعك",
+      "url": "https://www.ar-wp.com/forums/d/49647",
+      "snippet": "المجتمع الأكبر عربيًا لمستخدمي ووردبريس عندما تبدأ في إنشاء موقعك على ووردبريس، سيكون الوضع الأساسي هو ظهورها كمدونة، وستجد المقالات تظهر لك في الصفحة الرئيسية. لذا، من أجل …"
+    },
+    {
+      "title": "استخدام YouTube على متصفّحات الأجهزة الجوّالة",
+      "url": "https://support.google.com/youtube/answer/3008060?hl=ar",
+      "snippet": "التنقّل في YouTube بعد تسجيل الدخول، ستكون الميزات الأهم متوفّرة ضمن أربع علامات تبويب: الصفحة الرئيسية عندما تفتح YouTube في متصفّح أو تطبيق متوافق مع الأجهزة الجوّالة، ستنتقل إلى …"
+    },
+    {
+      "title": "التنقّل في YouTube - جهاز الكمبيوتر - مساعدة YouTube",
+      "url": "https://support.google.com/youtube/answer/2398242?hl=ar-IL&co=GENIE.Platform%3DDesktop",
+      "snippet": "الصفحة الرئيسية إذا كنت تستخدم YouTube للمرة الأولى أو لم تسجّل الدخول، ستظهر الفيديوهات الأكثر رواجًا في \"الصفحة الرئيسية\" على YouTube. بعد تسجيل الدخول والبدء بمشاهدة …"
+    }
+  ]
+}

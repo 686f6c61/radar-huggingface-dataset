@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jujeongho/Qwen3.5-4B-LayerExpansion-Welding-Component-Segmentation",
+  "slug": "jujeongho-qwen3-5-4b-layerexpansion-welding-component-segmentation",
+  "author": "jujeongho",
+  "url": "https://huggingface.co/jujeongho/Qwen3.5-4B-LayerExpansion-Welding-Component-Segmentation",
+  "created_at": "2026-09-15T11:57:29.000Z",
+  "updated_at": "2026-09-15T11:59:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5399142912,
+  "parameters_human": "5.40B",
+  "storage_bytes": 10818376733,
+  "storage_human": "10.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Organiser une soirée années 20 / Great Gatsby - Mode Années 20",
+      "url": "https://www.mode-annees-20.fr/organiser-une-soiree-annees-20-great-gatsby/",
+      "snippet": "Des formes géométriques, une typographie années 20, du noir & du doré et le tour est joué. Vous plongez déjà vos invités dans …"
+    },
+    {
+      "title": "Tutoriel : soirée années 1920, prohibition et speakeasy",
+      "url": "https://www.sous-notre-toit.fr/tutoriel-soiree-annees-1920-prohibition-speakeasy/",
+      "snippet": "Dec 7, 2012 · Idées de tenue, cocktail, nourriture et animation pour une soirée sur le thème des années 20, speakeasy et prohibition."
+    },
+    {
+      "title": "Idées pour soirée années 20 - années folles - theme-de-soiree.fr",
+      "url": "http://www.theme-de-soiree.fr/soiree-annees-20.php",
+      "snippet": "Revivez les années 20, les fameuses années folles, le temps d'une soirée entre amis! Découvrez nos idées repas, costumes, …"
+    },
+    {
+      "title": "Soirée Années 20 Années Folles - Thème de Soirée",
+      "url": "https://www.themesdesoiree.com/soiree-annees-20-annees-folles/",
+      "snippet": "Tous les détails pour organiser une soirée déguisée sur le thème des années 20 ou années folles, des idées de déguisements …"
+    },
+    {
+      "title": "Les années folles (1920) - La Mode habille l'Histoire",
+      "url": "https://modehabillelhistoire.wordpress.com/les-annees-folles-1920/",
+      "snippet": "La mode des années 20 est l’une des périodes les plus glamour de l’histoire de la mode. Cette mode a été pour l’époque innovante …"
+    }
+  ]
+}

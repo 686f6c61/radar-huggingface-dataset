@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "pitcany/gpt-oss-120b",
+  "slug": "pitcany-gpt-oss-120b",
+  "author": "pitcany",
+  "url": "https://huggingface.co/pitcany/gpt-oss-120b",
+  "created_at": "2026-09-15T11:55:14.000Z",
+  "updated_at": "2026-09-15T12:17:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gpt_oss",
+    "text-generation",
+    "vllm",
+    "arxiv:2508.10925",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "mxfp4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27868174,
+  "storage_human": "28 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How can i convert English digits to Arabic digits?",
+      "url": "https://stackoverflow.com/questions/2298153/how-can-i-convert-english-digits-to-arabic-digits",
+      "snippet": "Feb 19, 2010 · You can use the Windows.Globalization.NumberFormatting.NumeralSystemTranslator class to translate between the …"
+    },
+    {
+      "title": "Convert English numbers to Arabic numerals - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/3386835/convert-english-numbers-to-arabic-numerals",
+      "snippet": "How can i convert English numbers being retrieved from the database to Arabic numeral symbols in PHP. EDIT: Here're some …"
+    },
+    {
+      "title": "How to translate website in another language? (ASP .NET , c#)",
+      "url": "https://stackoverflow.com/questions/2973632/how-to-translate-website-in-another-languageasp-net-c",
+      "snippet": "Apr 25, 2015 · We work with a Translation CAT tool (Computer Assisted Translation) called MemoQ that allows us to translate the …"
+    },
+    {
+      "title": "math - How to convert number to words in java - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/3911966/how-to-convert-number-to-words-in-java",
+      "snippet": "Oct 12, 2010 · We currently have a crude mechanism to convert numbers to words (e.g. using a few static arrays) and based on the …"
+    },
+    {
+      "title": "java - How translate from arabic to english? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/37295299/how-translate-from-arabic-to-english",
+      "snippet": "May 18, 2016 · I want to develop an application/ web service that can translate from Arabic to English or Arabic to French . I saw that …"
+    }
+  ]
+}

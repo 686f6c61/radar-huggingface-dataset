@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RoboDIB/pcbeditor-ai",
+  "slug": "robodib-pcbeditor-ai",
+  "author": "RoboDIB",
+  "url": "https://huggingface.co/RoboDIB/pcbeditor-ai",
+  "created_at": "2026-09-15T12:01:48.000Z",
+  "updated_at": "2026-09-15T12:01:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Marigot Crossing - Dovedale Railway Wiki",
+      "url": "https://dovedale.wiki/wiki/Marigot_Crossing",
+      "snippet": "Marigot Crossing is a level crossing located between Dovedale Central and Masonfield as well as Codsall Castle."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Dovedale Live Map",
+      "url": "https://map.dovedale.uk/",
+      "snippet": "A live map of Dovedale Railway, showing players with a server selector."
+    },
+    {
+      "title": "Dovedale Railway Wiki",
+      "url": "https://dovedale.wiki/",
+      "snippet": "Find out how to signal, information about your favorite station, or how to obtain a badge right here. A live map of Dovedale Railway, …"
+    },
+    {
+      "title": "Map - Dovedale Railway Wiki",
+      "url": "https://dovedale.wiki/wiki/Map",
+      "snippet": "Maps in Version 1.0 moved to a more standard design of the schematic map made by user enews."
+    }
+  ]
+}

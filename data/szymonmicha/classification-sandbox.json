@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "szymonmicha/classification-sandbox",
+  "slug": "szymonmicha-classification-sandbox",
+  "author": "szymonmicha",
+  "url": "https://huggingface.co/szymonmicha/classification-sandbox",
+  "created_at": "2026-09-15T15:42:03.000Z",
+  "updated_at": "2026-09-15T15:42:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PMA en Espagne : pourquoi les Françaises partent ? Délais, coûts 2026 ...",
+      "url": "https://neloa-pma.fr/article-espagne.html",
+      "snippet": "22 mois d'attente pour un don d'ovocytes en France, ROPA et DPI-A interdits, législation plus ouverte — les vraies raisons du choix …"
+    },
+    {
+      "title": "Découvrez la Vérité Choquante sur la PMA en Espagne : Légalité et ...",
+      "url": "https://alcuinfonds.be/blog/pma-espagne-marchandisation/",
+      "snippet": "Apr 18, 2026 · Alors que la procréation médicalement assistée (PMA) continue d'évoluer et de susciter des débats éthiques, il est …"
+    },
+    {
+      "title": "Manifeste contre l’extraction d’ovocytes - abolition-ms.org",
+      "url": "https://abolition-ms.org/ressources/opinions/gpa_violence-contre-les-femmes/manifeste-a-propos-dextraction-dovocytes/",
+      "snippet": "Mar 3, 2021 · La compensation financière qui peut être fixée ne peut que compenser strictement les inconvénients physiques et les …"
+    },
+    {
+      "title": "En Espagne, le don d’ovules entre intérêt, solidarité et précarité",
+      "url": "https://shs.cairn.info/article/ETHN_173_0491/pdf?lang=fr",
+      "snippet": "En regard des conclusions d’une enquête conduite sur le don d’ovules en Espagne il y a une dizaine d’années, l’article montre la …"
+    },
+    {
+      "title": "Don d’ovocytes : témoignages de familles parties en Espagne",
+      "url": "https://www.doctissimo.fr/grossesse/infertilite/don-de-sperme-et-d-ovocytes/don-ovocytes-temoignages-familles-parties-en-Espagne",
+      "snippet": "Jun 30, 2020 · Près d’une vingtaine ont témoigné sur leur parcours, les raisons de cette AMP hors frontières, leurs inquiétudes et …"
+    }
+  ]
+}

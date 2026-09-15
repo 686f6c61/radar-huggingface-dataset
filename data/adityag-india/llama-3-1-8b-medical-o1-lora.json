@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "adityag-india/Llama-3.1-8B-Medical-o1-LoRA",
+  "slug": "adityag-india-llama-3-1-8b-medical-o1-lora",
+  "author": "adityag-india",
+  "url": "https://huggingface.co/adityag-india/Llama-3.1-8B-Medical-o1-LoRA",
+  "created_at": "2026-09-15T16:59:09.000Z",
+  "updated_at": "2026-09-15T16:59:45.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "medical",
+    "reasoning",
+    "sft",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:FreedomIntelligence/medical-o1-reasoning-SFT",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:adapter:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 352819881,
+  "storage_human": "353 MB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "galaxus.de - Onlineshop. Community. Magazin.",
+      "url": "https://www.galaxus.de/",
+      "snippet": "Wenn du nur das Nötigste wählst, erfassen wir mit Cookies und ähnlichen Technologien Informationen zu deinem Gerät und deinem …"
+    },
+    {
+      "title": "Impressum - Galaxus",
+      "url": "https://www.galaxus.de/de/guide/47",
+      "snippet": "Galaxus Deutschland GmbH Hoheluftchaussee 18 20253 Hamburg ACHTUNG: Dies ist keine Adresse für Rücksendungen! Alle …"
+    },
+    {
+      "title": "Galaxus eröffnet Neuenburg am Rhein - Galaxus",
+      "url": "https://www.galaxus.de/de/page/galaxusde-eroeffnet-standort-neuenburg-am-rhein-und-plant-fuer-1200-mitarbeitende-39888",
+      "snippet": "Oct 14, 2025 · Nach 13 Monaten Bauzeit und zwei Jahren Planung ist es so weit: Galaxus Deutschland eröffnet das erste von zwei …"
+    },
+    {
+      "title": "Was Galaxus ausmacht",
+      "url": "https://www.galaxus.de/de/page/was-galaxus-ausmacht-25759",
+      "snippet": "May 29, 2026 · Galaxus ist nicht nur Onlineshop, sondern auch Magazin mit lebendiger, fachkundiger Community. Das hauseigene …"
+    },
+    {
+      "title": "Gewährleistung - Galaxus",
+      "url": "https://www.galaxus.de/de/guide/14",
+      "snippet": "Gewährleistungs- und Herstellergarantieinformationen Ist ein Produkt, dass du bei Galaxus gekauft hast, defekt oder beschädigt, ist …"
+    }
+  ]
+}

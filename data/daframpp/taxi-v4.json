@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Daframpp/Taxi-v4",
+  "slug": "daframpp-taxi-v4",
+  "author": "Daframpp",
+  "url": "https://huggingface.co/Daframpp/Taxi-v4",
+  "created_at": "2026-09-15T15:58:19.000Z",
+  "updated_at": "2026-09-15T15:58:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 150748,
+  "storage_human": "150748 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home | Opera forums",
+      "url": "https://forums.opera.com/",
+      "snippet": "Restarting Opera fixes the problem temporarily, but it eventually comes back. I usually have several tabs open, although nothing …"
+    },
+    {
+      "title": "Как заблокировать обновления Opera? | Opera forums",
+      "url": "https://forums.opera.com/topic/17787/%D0%BA%D0%B0%D0%BA-%D0%B7%D0%B0%D0%B1%D0%BB%D0%BE%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-opera",
+      "snippet": "Oct 28, 2016 · После обновления Opera до версии 40 и 41 вход только в mail-сайты, в письмах которых ссылки тоже не …"
+    },
+    {
+      "title": "opera - 知乎",
+      "url": "https://www.zhihu.com/topic/19565003",
+      "snippet": "Jul 27, 2018 · Opera是一款由挪威Opera Software ASA公司开发的浏览器，具有网络同步、密码管理、快速拨号、网络加速等功能。 …"
+    },
+    {
+      "title": "Opera Mini 和 Opera Mobile 有哪些区别？ - 知乎",
+      "url": "https://www.zhihu.com/question/19574964",
+      "snippet": "Opera Mobile ：相较之前的 Opera Mobile 加入了中转服务器压缩的功能 —— Opera Turbo 技术（ Windows Mobile 平台上的 Opera …"
+    },
+    {
+      "title": "中文 | Opera forums",
+      "url": "https://forums.opera.com/category/46/%E4%B8%AD%E6%96%87",
+      "snippet": "Nov 26, 2025 · Download Opera Computer browsers Opera for Windows Opera for Mac Opera for Linux Opera beta version Opera …"
+    }
+  ]
+}

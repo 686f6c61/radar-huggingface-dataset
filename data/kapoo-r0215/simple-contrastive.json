@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kapoo-r0215/simple-contrastive",
+  "slug": "kapoo-r0215-simple-contrastive",
+  "author": "kapoo-r0215",
+  "url": "https://huggingface.co/kapoo-r0215/simple-contrastive",
+  "created_at": "2026-09-15T11:35:58.000Z",
+  "updated_at": "2026-09-15T11:36:04.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AnyDesk - Reddit",
+      "url": "https://www.reddit.com/r/AnyDesk/",
+      "snippet": "I use AnyDesk to connect iOS devices for filming for my YouTube channel. I utilise numerous iOS devices and sometimes PC in my …"
+    },
+    {
+      "title": "Anydesk (Pc transfer ) : r/AnyDesk - Reddit",
+      "url": "https://www.reddit.com/r/AnyDesk/comments/ss6o5e/anydesk_pc_transfer/",
+      "snippet": "Feb 14, 2022 · Anydesk (Pc transfer ) I have Anydesk free version installed on my main computer running windows 11. I have about …"
+    },
+    {
+      "title": "how to change alias name in anydesk - Ask Ubuntu",
+      "url": "https://askubuntu.com/questions/1052461/how-to-change-alias-name-in-anydesk",
+      "snippet": "According to anydesk (source) you have to modify this file: Linux: ~/.anydesk/service.conf But they do not explain how to permanently …"
+    },
+    {
+      "title": "How to disable AnyDesk autostart in Ubuntu?",
+      "url": "https://askubuntu.com/questions/1305405/how-to-disable-anydesk-autostart-in-ubuntu",
+      "snippet": "Jan 6, 2021 · AnyDesk runs in Ubuntu startup and I couldn't find any setting in order to disable it in its settings. How can I disable …"
+    },
+    {
+      "title": "Latest AnyDesk news - BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/tag/anydesk/",
+      "snippet": "Dec 10, 2021 · The latest news about AnyDesk Akira hackers disable EDR with Safe Mode, steal data but fail to encrypt An Akira …"
+    }
+  ]
+}

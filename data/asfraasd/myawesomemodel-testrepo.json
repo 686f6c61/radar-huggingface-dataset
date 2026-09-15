@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ASFRAasd/MyAwesomeModel-TestRepo",
+  "slug": "asfraasd-myawesomemodel-testrepo",
+  "author": "ASFRAasd",
+  "url": "https://huggingface.co/ASFRAasd/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-15T15:06:36.000Z",
+  "updated_at": "2026-09-15T15:06:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mifotra - E-Recruitment - Rwanda Recruitment System Portal",
+      "url": "https://recruitment.mifotra.gov.rw/",
+      "snippet": "Read carefully the Job description, Job Profile and Skills required for the respective positions before proceeding to apply. Apply for a …"
+    },
+    {
+      "title": "E-Recruitment - Rwanda Recruitment System Portal",
+      "url": "https://recruitment.mifotra.gov.rw/?/e-recruitment",
+      "snippet": "Apply for a job by clicking on the Apply Now button. Once shortlisting completed, you will receive an email notification informing you …"
+    },
+    {
+      "title": "E-Recruitment - Rwanda Recruitment System Portal - Mifotra",
+      "url": "https://www.recruitment.mifotra.gov.rw/?all=True&all=True",
+      "snippet": "Read carefully the Job description, Job Profile and Skills required for the respective positions before proceeding to apply. Apply for a …"
+    },
+    {
+      "title": "E-Recruitment - Rwanda Recruitment System Portal",
+      "url": "https://recruitment.mifotra.gov.rw/Applications/Apply/4087",
+      "snippet": "E-RECRUITMENT Login Register ©2026 Ministry of Public Service and Labour (MIFOTRA) E-Recruitment IPPIS About IPPIS Get …"
+    },
+    {
+      "title": "Mifotra",
+      "url": "https://www.mifotra.gov.rw/",
+      "snippet": "Sep 3, 2026 · Minister Judith Uwizeye receives Amy pope, the Director general of the international organization for migration. The …"
+    }
+  ]
+}

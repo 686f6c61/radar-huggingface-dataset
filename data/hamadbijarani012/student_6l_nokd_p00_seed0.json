@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "hamadbijarani012/student_6l_nokd_p00_seed0",
+  "slug": "hamadbijarani012-student_6l_nokd_p00_seed0",
+  "author": "hamadbijarani012",
+  "url": "https://huggingface.co/hamadbijarani012/student_6l_nokd_p00_seed0",
+  "created_at": "2026-09-15T14:46:59.000Z",
+  "updated_at": "2026-09-15T14:48:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "ChatGPT - Tchat GPT",
+      "url": "https://chatgpt.com/fr-FR/",
+      "snippet": "Utilisez ChatGPT pour répondre aux questions, rédiger, créer des images, accomplir des tâches et coder, le tout au même endroit. …"
+    },
+    {
+      "title": "ChatGPT – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.openai.chatgpt&hl=fr",
+      "snippet": "Lancement de ChatGPT : les dernières innovations d’OpenAI à portée de main. Cette appli officielle est gratuite, synchronise votre …"
+    },
+    {
+      "title": "Introducing ChatGPT - OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    },
+    {
+      "title": "Nouveau : ChatGPT - OpenAI",
+      "url": "https://openai.com/fr-FR/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · ChatGPT est un modèle dérivé d’InstructGPT ⁠, qui a lui-même été entraîné pour suivre l’instruction d’un prompt et …"
+    }
+  ]
+}

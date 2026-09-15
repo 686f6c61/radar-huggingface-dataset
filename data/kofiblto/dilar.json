@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "KOFIblto/dilar",
+  "slug": "kofiblto-dilar",
+  "author": "KOFIblto",
+  "url": "https://huggingface.co/KOFIblto/dilar",
+  "created_at": "2026-09-15T16:42:19.000Z",
+  "updated_at": "2026-09-15T16:42:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Snapchat",
+      "url": "https://accounts.snapchat.com/v2/login",
+      "snippet": "Log in to Snapchat on the web to manage your account, chat, and call with friends."
+    },
+    {
+      "title": "Download | Snapchat",
+      "url": "https://www.snapchat.com/download",
+      "snippet": "Snapchat lets you easily talk with friends, view Stories from around the world, and explore news in Discover. Life's more fun when …"
+    },
+    {
+      "title": "Snapchat for Web.",
+      "url": "https://www.snapchat.com/web",
+      "snippet": "Try the new Snapchat for Web on your computer to chat, call friends, use Lenses, and more"
+    },
+    {
+      "title": "Snapchat",
+      "url": "https://accounts.snapchat.com/v2/welcome",
+      "snippet": ""
+    },
+    {
+      "title": "Snapchat Ads Manager",
+      "url": "https://ads.snapchat.com/",
+      "snippet": "Snapchat Ads Manager is Snapchat's self-serve advertising platform. Login or get started today to create, manage, and monitor your …"
+    }
+  ]
+}

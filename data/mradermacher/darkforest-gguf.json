@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Darkforest-GGUF",
+  "slug": "mradermacher-darkforest-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Darkforest-GGUF",
+  "created_at": "2026-09-15T17:23:41.000Z",
+  "updated_at": "2026-09-15T18:05:17.000Z",
+  "license": "private-research-checkpoint",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "cybersecurity",
+    "defensive-security",
+    "merged-model",
+    "private",
+    "en",
+    "base_model:BlackwoodAI/Darkforest",
+    "base_model:quantized:BlackwoodAI/Darkforest",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 130196059392,
+  "storage_human": "130.2 GB",
+  "base_model": "BlackwoodAI/Darkforest",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kubernetes Documentation",
+      "url": "https://kubernetes.io/docs/home/",
+      "snippet": "Kubernetes is an open source container orchestration engine for automating deployment, scaling, and management of containerized …"
+    },
+    {
+      "title": "mradermacher/DarkForest-20B-v2.0-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/DarkForest-20B-v2.0-i1-GGUF",
+      "snippet": "DarkForest-20B-v2.0-i1-GGUF like 0 Transformers GGUF English Merge Not-For-All-Audiences"
+    },
+    {
+      "title": "What is Kubernetes Orchestration? - Mirantis",
+      "url": "https://www.mirantis.com/cloud-native-concepts/getting-started-with-kubernetes/what-is-kubernetes-orchestration/",
+      "snippet": "Like a symphony conductor, Kubernetes orchestrates how containerized applications are deployed, connected, scaled, and updated …"
+    },
+    {
+      "title": "DarkForest-20B-v2.0-fp32-upscaled-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/DarkForest-20B-v2.0-fp32-upscaled-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "Kubernetes - Production-Grade Container Orchestration",
+      "url": "https://kubernetes.io/",
+      "snippet": "Kubernetes, also known as K8s, is an open source system for automating deployment, scaling, and management of containerized …"
+    }
+  ]
+}

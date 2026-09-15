@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Synthyra/ESMFold2-600",
+  "slug": "synthyra-esmfold2-600",
+  "author": "Synthyra",
+  "url": "https://huggingface.co/Synthyra/ESMFold2-600",
+  "created_at": "2026-09-15T17:40:57.000Z",
+  "updated_at": "2026-09-15T17:44:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "esmfold2",
+    "feature-extraction",
+    "protein-language-model",
+    "fastplms",
+    "custom_code",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 171172779,
+  "parameters_human": "171.2M",
+  "storage_bytes": 684804708,
+  "storage_human": "685 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Genshin Impact Official - Reddit",
+      "url": "https://www.reddit.com/r/Genshin_Impact/hot/",
+      "snippet": "This is the official community for Genshin Impact (原神), the latest open-world action RPG from HoYoverse. The game features a …"
+    },
+    {
+      "title": "Which interactive map is better : r/Genshin_Impact - Reddit",
+      "url": "https://www.reddit.com/r/Genshin_Impact/comments/mzliu2/which_interactive_map_is_better/",
+      "snippet": "Apr 27, 2021 · This is the official community for Genshin Impact (原神), the latest open-world action RPG from HoYoverse. The game …"
+    },
+    {
+      "title": "Interactive map resetted T.T : r/Genshin_Impact - Reddit",
+      "url": "https://www.reddit.com/r/Genshin_Impact/comments/vtn0vh/interactive_map_resetted_tt/",
+      "snippet": "Jul 7, 2022 · This is the official community for Genshin Impact (原神), the latest open-world action RPG from HoYoverse. The game …"
+    },
+    {
+      "title": "Genshin interactive map. Tips? : r/Genshin_Impact - Reddit",
+      "url": "https://www.reddit.com/r/Genshin_Impact/comments/u9bcag/genshin_interactive_map_tips/",
+      "snippet": "Apr 22, 2022 · Ive looked at 3 different interactive maps, mapgenie, the official one, and a genshin-impact-map, but all of them are …"
+    },
+    {
+      "title": "Missing multiple anemoculus. : r/Genshin_Impact - Reddit",
+      "url": "https://www.reddit.com/r/Genshin_Impact/comments/rv5o32/missing_multiple_anemoculus/",
+      "snippet": "Jan 3, 2022 · I used an interactive map and got all the anemoculus on it, but I’m still missing a lot- (tho I got close and marked them …"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dreamdifferent/panda-robosuite-level4-wrist-ablation-v1-videolora200-action-decoder-iter900",
+  "slug": "dreamdifferent-panda-robosuite-level4-wrist-ablation-v1-videolora200-action-decoder-iter900",
+  "author": "dreamdifferent",
+  "url": "https://huggingface.co/dreamdifferent/panda-robosuite-level4-wrist-ablation-v1-videolora200-action-decoder-iter900",
+  "created_at": "2026-09-15T12:52:05.000Z",
+  "updated_at": "2026-09-15T12:52:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mimic-video",
+    "robotics",
+    "action-prediction",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1000269372,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Personalmanagement in Netzwerken | Springer Nature Link",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-322-88977-5_12",
+      "snippet": "Becker, L. (2000): Personalmanagement als Wertschöpfungskette: Systematisierung und kritische Gestaltung des Personalwesens, …"
+    },
+    {
+      "title": "Professur für Betriebswirtschaftslehre II ARBEITSPAPIER. Nr. 1/2000 ...",
+      "url": "https://silo.tips/download/professur-fr-betriebswirtschaftslehre-ii-arbeitspapier-nr-1-2000-larissa-becker",
+      "snippet": "Dec 4, 2016 · Auf diese Weise entsteht mit der Wertschöpfungskette des Personalmanagements ein Instrument der systematischen …"
+    },
+    {
+      "title": "HR-Wertschöpfungskette: Strategischer Leitfaden - StepStone",
+      "url": "https://www.stepstone.de/e-recruiting/hr-wissen/recruiting/wertschoepfungskette/?msockid=297a557c23ff6d6118e342a922106c6a",
+      "snippet": "Die HR-Wertschöpfungskette umfasst Prozesse, die messbaren strategischen Mehrwert liefern, indem sie alle relevanten HR …"
+    },
+    {
+      "title": "Die wertschöpfungsorientierte Controlling-Konzeption nach Wolfgang Becker",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-658-18573-2_5",
+      "snippet": "Sep 21, 2018 · Dieser Beitrag widmet sich der wertschöpfungsorientierten Controlling-Konzeption nach Wolfgang Becker, die …"
+    },
+    {
+      "title": "Die wertschöpfungsorientierte Controlling-Konzeption nach Wolfgang ...",
+      "url": "https://www.researchgate.net/publication/327799900_Die_wertschopfungsorientierte_Controlling-Konzeption_nach_Wolfgang_Becker_Festschrift_fur_Prof_Dr_habil_Wolfgang_Becker_zum_65_Geburtstag",
+      "snippet": "Jan 1, 2019 · Dieser Beitrag widmet sich der wertschöpfungsorientierten Controlling-Konzeption nach Wolfgang Becker, die zunächst …"
+    }
+  ]
+}

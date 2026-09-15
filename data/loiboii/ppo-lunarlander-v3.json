@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "loiboii/ppo-LunarLander-v3",
+  "slug": "loiboii-ppo-lunarlander-v3",
+  "author": "loiboii",
+  "url": "https://huggingface.co/loiboii/ppo-LunarLander-v3",
+  "created_at": "2026-09-15T11:51:05.000Z",
+  "updated_at": "2026-09-15T11:51:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 284410,
+  "storage_human": "284410 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NFT Auctions Best Practices - finance4.net",
+      "url": "https://www.finance4.net/nft-auctions-best-practices/",
+      "snippet": "Learn the best practices for NFT auctions, from choosing platforms to marketing tips, pricing strategies, and post-sale success."
+    },
+    {
+      "title": "How to Buy and Sell NFTs: A 2026 Comprehensive Guide",
+      "url": "https://coinweb.com/how-to-buy-and-sell-nfts/",
+      "snippet": "May 29, 2023 · Explore our detailed guide on buying and selling NFTs across different marketplaces. Master the nuances of the NFT …"
+    },
+    {
+      "title": "How to Sell Your NFT the Right Way in 2025",
+      "url": "https://nftplazas.com/how-to-sell-nft/",
+      "snippet": "Nov 21, 2025 · Learn how to sell NFTs easily in 2025. Discover step-by-step tips, trusted platforms, and smart strategies to maximize …"
+    },
+    {
+      "title": "NFT Bidding Wars: Winning Strategies ☀️ - tradingvortex.com",
+      "url": "https://www.tradingvortex.com/nft-bidding-wars-winning-strategies",
+      "snippet": "Jun 26, 2025 · Learn winning strategies for NFT bidding wars, including tips on timing, budgeting, auction types, and how to succeed …"
+    },
+    {
+      "title": "How to Run NFT Auctions - finance4.net",
+      "url": "https://www.finance4.net/how-to-run-nft-auctions/",
+      "snippet": "Running an NFT auction is more than just listing a digital file; it’s a strategic process involving technical preparation, market …"
+    }
+  ]
+}

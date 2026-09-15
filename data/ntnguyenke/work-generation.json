@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ntnguyenke/work-generation",
+  "slug": "ntnguyenke-work-generation",
+  "author": "ntnguyenke",
+  "url": "https://huggingface.co/ntnguyenke/work-generation",
+  "created_at": "2026-09-15T13:20:07.000Z",
+  "updated_at": "2026-09-15T13:20:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Магазини - Lidl",
+      "url": "https://www.lidl.bg/c/magazini/s10020061",
+      "snippet": "Ще ти покажем карта и списък на магазините в близост до избраното населено място. Също така можеш да изчислиш …"
+    },
+    {
+      "title": "Lidl – Заслужава си.",
+      "url": "https://www.lidl.bg/",
+      "snippet": "Важна информация във връзка със зачестилите фалшиви профили, страници и игри, които представят награди и активности …"
+    },
+    {
+      "title": "Магазини Лидл наблизо около мен - find Lidl ...",
+      "url": "https://nearme.bg/lidl.htm",
+      "snippet": "Как да намерите магазин Лидл наблизо (how to find Lidl near me): кликнете на синия бутон, включете GPS навигацията и …"
+    },
+    {
+      "title": "Къде се намира най-близкия до мен филиал?",
+      "url": "https://obsluzhvane-i-kontakti.lidl.bg/SelfServiceBG/s/article/%D0%9A%D1%8A%D0%B4%D0%B5-%D1%81%D0%B5-%D0%BD%D0%B0%D0%BC%D0%B8%D1%80%D0%B0-%D0%BD%D0%B0%D0%B9-%D0%B1%D0%BB%D0%B8%D0%B7%D0%BA%D0%B8%D1%8F-%D0%B4%D0%BE-%D0%BC%D0%B5%D0%BD-%D1%84%D0%B8%D0%BB%D0%B8%D0%B0%D0%BB-1575627816644",
+      "snippet": "Работното ни време е от понеделник до петък от 8:30 до 18:00 часа и в събота от 10 до 16 часа."
+    },
+    {
+      "title": "Lidl lohnt sich - Lokal bei Dir vor Ort und Online",
+      "url": "https://www.lidl.de/?msockid=1030dcfc793865fe1eebcb29785e6497",
+      "snippet": "Wo gibt es tolle Angebote und Aktionen? Natürlich in deinem Lidl um die Ecke. Filialen findest du überall und unsere Prospekte …"
+    }
+  ]
+}

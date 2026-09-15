@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "JackieMM/robotwin-pi05-arx",
+  "slug": "jackiemm-robotwin-pi05-arx",
+  "author": "JackieMM",
+  "url": "https://huggingface.co/JackieMM/robotwin-pi05-arx",
+  "created_at": "2026-09-15T18:10:05.000Z",
+  "updated_at": "2026-09-15T18:14:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GMX - kostenlose E-Mail, Cloud, Nachrichten & Freemail",
+      "url": "https://www.gmx.net/",
+      "snippet": "Kostenlose E-Mail-Adresse erstellen, Nachrichten lesen und Fotos & Dateien in der GMX Cloud sicher speichern. Jetzt registrieren!"
+    },
+    {
+      "title": "GMX Login – ganz einfach",
+      "url": "https://anmelden.gmx.net/",
+      "snippet": "Der GMX Login stellt Sie vor Fragen oder bereitet Ihnen Probleme? Hier erfahren Sie alles, was Sie zum GMX Postfach Login wissen …"
+    },
+    {
+      "title": "GMX E-Mail sichere & kostenlose E-Mail-Adresse",
+      "url": "https://www.gmx.net/mail/",
+      "snippet": "Wie logge ich mich in mein GMX Postfach ein? Sie haben schon ein Postfach für Ihre Mails bei GMX? Hier geht’s zum E-Mail-Login. …"
+    },
+    {
+      "title": "Free Email Accounts @GMX.com: Secure & easy to use",
+      "url": "https://mlogin.gmx.com/",
+      "snippet": "Personal & professional email 100% free spam filter Convenient mail collector Mobile app Register with GMX today."
+    },
+    {
+      "title": "Unique email address @GMX.com: Free & feature-packed | GMX",
+      "url": "https://www.gmx.com/mail/",
+      "snippet": "Our webmail service allows you to enjoy all the possibilities of your GMX email account anywhere in the world. Additionally, it is safer …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "maskjp/pi05-relative-joints-bagplace-aug100k-full-ft-54k",
+  "slug": "maskjp-pi05-relative-joints-bagplace-aug100k-full-ft-54k",
+  "author": "maskjp",
+  "url": "https://huggingface.co/maskjp/pi05-relative-joints-bagplace-aug100k-full-ft-54k",
+  "created_at": "2026-09-15T14:47:33.000Z",
+  "updated_at": "2026-09-15T14:48:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "pi0.5",
+    "relative-actions",
+    "augmentation",
+    "joints",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9388900979,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Earth – Google Earth",
+      "url": "https://earth.google.com/",
+      "snippet": "Explore the far reaches of the world, right in your browser."
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://earth.google.com/web",
+      "snippet": "Create and collaborate on immersive, data-driven maps from anywhere with the new Google Earth. See the world from above with …"
+    },
+    {
+      "title": "Download Google Earth (free) for Windows, macOS, Android, APK, iOS ...",
+      "url": "https://gizmodo.com/download/google-earth",
+      "snippet": "4 days ago · Google Earth is a virtual globe application from Google LLC that lets you browse satellite imagery, 3D terrain models, …"
+    },
+    {
+      "title": "Google Earth Download Free - 7.3.7.1327 | TechSpot",
+      "url": "https://www.techspot.com/downloads/1018-google-earth.html",
+      "snippet": "Aug 21, 2026 · Google Earth is a powerful 3D interactive globe that allows you to explore high-resolution satellite imagery, maps, …"
+    },
+    {
+      "title": "New updates and more access to Google Earth AI",
+      "url": "https://blog.google/innovation-and-ai/technology/research/new-updates-and-more-access-to-google-earth-ai/",
+      "snippet": "Oct 23, 2025 · Now, we’re bringing new Earth AI models to Gemini capabilities in Google Earth, letting users instantly find objects …"
+    }
+  ]
+}

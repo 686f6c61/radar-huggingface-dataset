@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mradermacher/monitor-qwen35-08b-GGUF",
+  "slug": "mradermacher-monitor-qwen35-08b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/monitor-qwen35-08b-GGUF",
+  "created_at": "2026-09-15T11:51:19.000Z",
+  "updated_at": "2026-09-15T11:56:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "prompt-injection",
+    "security-monitor",
+    "text-classification",
+    "qwen3.5",
+    "full-fine-tuning",
+    "18xx",
+    "en",
+    "dataset:reshabhs/SPML_Chatbot_Prompt_Injection",
+    "dataset:xTRam1/safe-guard-prompt-injection",
+    "dataset:deepset/prompt-injections",
+    "base_model:Noddybear/monitor-qwen35-08b",
+    "base_model:quantized:Noddybear/monitor-qwen35-08b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 7776508800,
+  "storage_human": "7.8 GB",
+  "base_model": "Noddybear/monitor-qwen35-08b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

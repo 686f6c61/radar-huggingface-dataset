@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "JennyWWW/dryrun_r84_ds",
+  "slug": "jennywww-dryrun_r84_ds",
+  "author": "JennyWWW",
+  "url": "https://huggingface.co/JennyWWW/dryrun_r84_ds",
+  "created_at": "2026-09-15T11:35:12.000Z",
+  "updated_at": "2026-09-15T11:35:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion",
+    "dataset:JennyWWW/splatsim_approach_lever_13_smooth_r84",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 40653291,
+  "parameters_human": "40.7M",
+  "storage_bytes": 162668364,
+  "storage_human": "163 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "hubnemo/Qwen3-8B-ALoRA-MTP-60k",
+  "slug": "hubnemo-qwen3-8b-alora-mtp-60k",
+  "author": "hubnemo",
+  "url": "https://huggingface.co/hubnemo/Qwen3-8B-ALoRA-MTP-60k",
+  "created_at": "2026-09-15T16:51:39.000Z",
+  "updated_at": "2026-09-15T18:22:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23030395664,
+  "storage_human": "23.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Malaysia: Reise- und Sicherheitshinweise - Auswärtiges Amt",
+      "url": "https://www.auswaertiges-amt.de/de/service/laender/malaysia-node/malaysiasicherheit-223616",
+      "snippet": "Reise- und Sicherheitshinweise beruhen auf den zum angegebenen Zeitpunkt verfügbaren und als vertrauenswürdig eingeschätzten …"
+    },
+    {
+      "title": "Malaysia: Reise- und Sicherheitshinweise - Auswärtiges Amt",
+      "url": "https://kuala-lumpur.diplo.de/my-de/willkommen/reise-sicherheit",
+      "snippet": "Reise- und Sicherheitshinweise beruhen auf den zum angegebenen Zeitpunkt verfügbaren und als vertrauenswürdig eingeschätzten …"
+    },
+    {
+      "title": "Kuala Lumpur Reisetipps Praktische Tipps und Infos - 22places",
+      "url": "https://www.22places.de/kuala-lumpur-reisetipps/",
+      "snippet": "Jun 23, 2026 · Da der Flughafen in Kuala Lumpur neben Bangkok das größte Drehkreuz in Südostasien ist, kannst du in Kuala …"
+    },
+    {
+      "title": "Kuala Lumpur entdecken: Ein Reiseführer",
+      "url": "https://hellokualalumpur.com/de/reiseplanung-fur-kuala-lumpur/planen-sie-ihre-reise-nach-kuala-lumpur/",
+      "snippet": "Entdecken Sie den ultimativen Reiseführer für die Planung Ihrer Reise nach Kuala Lumpur. Entdecken Sie Top-Attraktionen, lokale …"
+    },
+    {
+      "title": "Kuala Lumpur • Erfahrungen, Unterkunft & Hotel-Tipps 2026",
+      "url": "https://reise-kroeten.de/kuala-lumpur-erfahrungen-reise-urlaub-tipps/",
+      "snippet": "Apr 15, 2026 · Genau hier möchten wir dich mit unserer langjährigen Reiseerfahrung unterstützen. Denn KL zählt zu unseren …"
+    }
+  ]
+}

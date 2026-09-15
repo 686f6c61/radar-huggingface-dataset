@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "tadiecool29/STL-FullFT-mt5-base-stance",
+  "slug": "tadiecool29-stl-fullft-mt5-base-stance",
+  "author": "tadiecool29",
+  "url": "https://huggingface.co/tadiecool29/STL-FullFT-mt5-base-stance",
+  "created_at": "2026-09-14T18:15:31.000Z",
+  "updated_at": "2026-09-15T19:02:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mt5",
+    "text2text-generation",
+    "full-finetuning",
+    "amharic",
+    "stance-classification",
+    "single-task",
+    "generated_from_trainer",
+    "base_model:google/mt5-base",
+    "base_model:finetune:google/mt5-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 966573312,
+  "parameters_human": "966.6M",
+  "storage_bytes": 3205869621,
+  "storage_human": "3.2 GB",
+  "base_model": "google/mt5-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wetter, Wettervorhersage & Wetterbericht | wetter.com",
+      "url": "https://www.wetter.com/",
+      "snippet": "wetter.com - Ihre Wettervorhersage weltweit wetter.com - die Nummer 1 unter den Online Wetter Portalen in Deutschland, in der …"
+    },
+    {
+      "title": "Wetter Kleef heute ☀ Vorhersage 14 - 21 Tage | wetter.de",
+      "url": "https://www.wetter.de/wetter/n/213478734/",
+      "snippet": "Wetter Kleef Wettervorhersage für heute und die nächsten 14 Tage bis 21 Tage alle Wetterdaten Kleef, Hilden - wetter.de ☀"
+    },
+    {
+      "title": "Wetter Kleef heute ☀ Vorhersage 14 - 21 Tage | wetter.de",
+      "url": "https://www.wetter.de/wetter/n/7814086487/",
+      "snippet": "Wetter Kleef Wettervorhersage für heute und die nächsten 14 Tage bis 21 Tage alle Wetterdaten Kleef, Kranüchel - wetter.de ☀"
+    },
+    {
+      "title": "Wetter aktuell, Wettervorhersage und Wetterbericht - WetterOnline",
+      "url": "https://www.wetteronline.de/",
+      "snippet": "Aktuelles Wetter, Wettervorhersage für Ihren Ort - mit Wetterbericht, Wettertrend, Regenradar, Reisewetter, Segelwetter und mehr …"
+    },
+    {
+      "title": "Wetter Kleef - meteoblue",
+      "url": "https://www.meteoblue.com/de/wetter/woche/kleef_deutschland_2889891",
+      "snippet": "Professionelle 7-Tage Prognose für Kleef. Niederschlagsradar, HD-Satellitenbilder und aktuelle Wetterwarnungen, stündliche …"
+    }
+  ]
+}

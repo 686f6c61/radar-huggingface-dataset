@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "barbonara/corin-nemotron-super-anti-s3-rl-step90",
+  "slug": "barbonara-corin-nemotron-super-anti-s3-rl-step90",
+  "author": "barbonara",
+  "url": "https://huggingface.co/barbonara/corin-nemotron-super-anti-s3-rl-step90",
+  "created_at": "2026-09-15T12:51:46.000Z",
+  "updated_at": "2026-09-15T12:52:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "tinker",
+    "lora",
+    "base_model:adapter:nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3616921496,
+  "storage_human": "3.6 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wyszukaj najlepsze rozwiązanie wspomagające słyszenie | Phonak",
+      "url": "https://www.phonak.com/pl-pl",
+      "snippet": "Odkryj zaawansowane aparaty słuchowe Phonak — zaprojektowane, aby wspierać każdy poziom ubytku słuchu i poprawiać komfort …"
+    },
+    {
+      "title": "Aparaty i rozwiązania słuchowe | Phonak",
+      "url": "https://www.phonak.com/pl-pl/aparaty-sluchowe",
+      "snippet": "Niezależnie od tego, czy oglądasz telewizję, czy rozmawiasz z kimś twarzą w twarz, szeroka gama akcesoriów do aparatów …"
+    },
+    {
+      "title": "Strona Główna - Phonak",
+      "url": "https://phonak.com.pl/",
+      "snippet": "Audiocare Aparaty Słuchowe Świdnica 74/ 307-09-10 / 669 339 010 LEK-MED KARSCY PRZYCHODNIA LEKARZY RODZINNYCH. …"
+    },
+    {
+      "title": "Aparaty słuchowe Phonak - Sklep Marmed",
+      "url": "https://www.marmed.pl/kategoria-produktu/producenci/phonak/",
+      "snippet": "Firma Phonak należąca do grupy Sonova powstała w 1947 roku w Szwajcarii. Sonova ze swoją marką aparatów słuchowych Phonak, …"
+    },
+    {
+      "title": "Phonak - Aparaty słuchowe - Cena do: 9999 PLN - BRANDvital",
+      "url": "https://esklep.brandvital.eu/produkty/marka=phonak/cena-od=0/cena-do=9999/aparaty-sluchowe,2,372",
+      "snippet": "Aparat słuchowy wewnątrzuszny Phonak Virto M90-312 7 999,00 PLN"
+    }
+  ]
+}

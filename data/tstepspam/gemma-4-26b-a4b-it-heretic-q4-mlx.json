@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "tstepspam/gemma-4-26B-A4B-it-heretic-q4-mlx",
+  "slug": "tstepspam-gemma-4-26b-a4b-it-heretic-q4-mlx",
+  "author": "tstepspam",
+  "url": "https://huggingface.co/tstepspam/gemma-4-26B-A4B-it-heretic-q4-mlx",
+  "created_at": "2026-09-15T18:18:57.000Z",
+  "updated_at": "2026-09-15T18:19:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "ara",
+    "text-generation",
+    "conversational",
+    "base_model:coder3101/gemma-4-26B-A4B-it-heretic",
+    "base_model:quantized:coder3101/gemma-4-26B-A4B-it-heretic",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233053440,
+  "parameters_human": "25.23B",
+  "storage_bytes": 14232402066,
+  "storage_human": "14.2 GB",
+  "base_model": "coder3101/gemma-4-26B-A4B-it-heretic",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kotor: Perast-Erbe & Seilbahn-Abenteuer Lovćen - GetYourGuide",
+      "url": "https://www.getyourguide.de/montenegro-l169142/seilbahn-kotor-transfer-erlebnis-t613992/?closeTabOnNavigationBack=true&msockid=23d2b36d2ca56d171491a4b82dfb6c27",
+      "snippet": "Erlebe die perfekte Mischung aus Küsten- und Bergelegance. Diese Tour führt dich vom barocken Perast zu den Wolken auf dem …"
+    },
+    {
+      "title": "BESTE Bus- und Minivan-Touren Freiberg 2026 - GetYourGuide",
+      "url": "https://www.getyourguide.de/-l123410/-tc4/?msockid=23d2b36d2ca56d171491a4b82dfb6c27",
+      "snippet": "Buche die beliebtesten Bus- und Minivan-Touren in Freiberg. Mit Bestpreis- und Geld-zurück-Garantie sowie Bewertungen anderer …"
+    },
+    {
+      "title": "GetYourGuide",
+      "url": "https://www.getyourguide.de/siena-l435/siena-stadtrundgang-dom-tickets-ohne-anstehen-t47301/?msockid=23d2b36d2ca56d171491a4b82dfb6c27",
+      "snippet": "Redirecting to https://www.getyourguide.com/de-de/siena-l435/siena-stadtrundgang-dom-tickets-ohne-anstehen-t47301/."
+    },
+    {
+      "title": "GetYourGuide",
+      "url": "https://www.getyourguide.de/kathedrale-von-florenz-l3954/florenz-offizielle-dome-guided-tour-mit-bevorzugtem-zugang-t277972/?msockid=23d2b36d2ca56d171491a4b82dfb6c27",
+      "snippet": "Redirecting to https://www.getyourguide.com/de-de/kathedrale-von-florenz-l3954/florenz-offizielle-dome-guided-tour-mit-bevorzugtem …"
+    },
+    {
+      "title": "Join the Journey | GetYourGuide-Anbieter",
+      "url": "https://www.getyourguide.de/join-the-journey-s249997/?msockid=23d2b36d2ca56d171491a4b82dfb6c27",
+      "snippet": "Finden, vergleichen und buchen Sie Touren, Ausflüge, Aktivitäten, Attraktionen und spannende Erlebnisse aus der ganzen Welt. …"
+    }
+  ]
+}

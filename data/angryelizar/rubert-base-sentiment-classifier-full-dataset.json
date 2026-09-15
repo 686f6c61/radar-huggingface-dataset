@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "angryelizar/ruBert-base-sentiment-classifier-full-dataset",
+  "slug": "angryelizar-rubert-base-sentiment-classifier-full-dataset",
+  "author": "angryelizar",
+  "url": "https://huggingface.co/angryelizar/ruBert-base-sentiment-classifier-full-dataset",
+  "created_at": "2026-09-15T12:20:35.000Z",
+  "updated_at": "2026-09-15T12:21:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 178309635,
+  "parameters_human": "178.3M",
+  "storage_bytes": 713262084,
+  "storage_human": "713 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google calendar",
+      "url": "https://calendar.google.com/calendar?hl=fr",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Google Calendar - Easier Time Management, Appointments",
+      "url": "https://calendar.google.com/",
+      "snippet": "Learn how Google Calendar helps you stay on top of your plans - at home, at work and everywhere in between."
+    }
+  ]
+}

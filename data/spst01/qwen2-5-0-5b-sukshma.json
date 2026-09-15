@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "spst01/Qwen2.5-0.5B-Sukshma",
+  "slug": "spst01-qwen2-5-0-5b-sukshma",
+  "author": "spst01",
+  "url": "https://huggingface.co/spst01/Qwen2.5-0.5B-Sukshma",
+  "created_at": "2026-09-15T12:16:37.000Z",
+  "updated_at": "2026-09-15T12:16:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen2",
+    "sukshma",
+    "edge-ai",
+    "quantization",
+    "sovereign-byte-technology",
+    "mobile",
+    "wasm",
+    "apple-silicon",
+    "qwen2.5",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 244583932,
+  "storage_human": "245 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Czas na coś prawdziwego? - eDarling Randki",
+      "url": "https://www.edarling.pl/",
+      "snippet": "Poznaj autentyczne osoby szukające prawdziwego związku. Dołącz do eDarling i nawiąż kontakt z singlami, którzy podzielają Twoje …"
+    },
+    {
+      "title": "eDarling – Date Educated Singles Near You",
+      "url": "https://www.edarling.com/",
+      "snippet": "Date safely and easily on eDarling - At eDarling you’ll not only find the date you’ve always been looking for, you’ll also find a safe …"
+    },
+    {
+      "title": "Czas na coś prawdziwego? - eDarling Randki",
+      "url": "https://www.edarling.pl/oms/login",
+      "snippet": "Poznaj autentyczne osoby szukające prawdziwego związku. Dołącz do eDarling i nawiąż kontakt z singlami, którzy podzielają Twoje …"
+    },
+    {
+      "title": "eDarling logowanie i rejestracja - czy warto? - Intymna Polska",
+      "url": "https://intymnapolska.pl/edarling-logowanie-i-rejestracja/",
+      "snippet": "Dec 30, 2022 · Zastanawiasz się jak wygląda logowanie na edarling? Pokazujemy krok po kroku logowanie i rejestrację na eDarling."
+    },
+    {
+      "title": "Randki online na eDarling.pl » Internetowy portal randkowy",
+      "url": "https://www.edarling.pl/web/register",
+      "snippet": ""
+    }
+  ]
+}

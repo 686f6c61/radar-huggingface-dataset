@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "hamadbijarani012/teacher_bert_base_seed0",
+  "slug": "hamadbijarani012-teacher_bert_base_seed0",
+  "author": "hamadbijarani012",
+  "url": "https://huggingface.co/hamadbijarani012/teacher_bert_base_seed0",
+  "created_at": "2026-09-15T14:40:04.000Z",
+  "updated_at": "2026-09-15T14:41:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437958648,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

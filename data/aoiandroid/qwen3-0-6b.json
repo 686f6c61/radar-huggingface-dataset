@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "aoiandroid/Qwen3-0.6B",
+  "slug": "aoiandroid-qwen3-0-6b",
+  "author": "aoiandroid",
+  "url": "https://huggingface.co/aoiandroid/Qwen3-0.6B",
+  "created_at": "2026-09-15T18:16:34.000Z",
+  "updated_at": "2026-09-15T18:16:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:2505.09388",
+    "base_model:Qwen/Qwen3-0.6B-Base",
+    "base_model:finetune:Qwen/Qwen3-0.6B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 751632384,
+  "parameters_human": "751.6M",
+  "storage_bytes": 1514722982,
+  "storage_human": "1.5 GB",
+  "base_model": "Qwen/Qwen3-0.6B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dxdiag - Windows 10 Forums",
+      "url": "https://www.tenforums.com/graphic-cards/10470-dxdiag.html",
+      "snippet": "Jul 30, 2015 · Dxdiag I was able to upgrade from windows 8.1 to windows 10 without much trouble. My 2 part question is where is the …"
+    },
+    {
+      "title": "Ekran Kartı DXDIAG'da Gözükmüyor? İşte Sorunu Çözme Adımları ...",
+      "url": "https://forum.donanimhaber.com/dxdiag-da-ekran-kartim-yok-olarak-gozukuyor-sorun-cozuldu--91280732",
+      "snippet": "Ekran kartınız DXDIAG'da görünmüyor mu? Bu adım adım kılavuzla sorunu hızlı ve kolay bir şekilde çözün. Eski sürücülerden bozuk …"
+    },
+    {
+      "title": "dxdiag update system OEM info - Windows 10 Forums",
+      "url": "https://www.tenforums.com/general-support/65601-dxdiag-update-system-oem-info.html",
+      "snippet": "Oct 1, 2016 · Howdy, Opening dxdiag.exe will show up system info and also BIOS and OEM info. There are 2 fields shown here …"
+    },
+    {
+      "title": "64-Bit DxDiag: Bilgisayarın Donanımını ve Yazılımını Anla ...",
+      "url": "https://forum.donanimhaber.com/64-bit-dxdiag-i-calistir--51901136",
+      "snippet": "Bilgisayarınızın donanımı ve yazılımı hakkında ayrıntılı bilgiler mi arıyorsunuz? 64-Bit DxDiag'ı çalıştırmayı öğrenin ve sorunları …"
+    },
+    {
+      "title": "I have two display adapters showing... Solved - Windows 10 Forums",
+      "url": "https://www.tenforums.com/graphic-cards/77488-i-have-two-display-adapters-showing.html",
+      "snippet": "Feb 17, 2017 · Looking at Display Adapters in Device Manager of my Thinkpad 540p laptop I see two display adapters listed, an Intel …"
+    }
+  ]
+}

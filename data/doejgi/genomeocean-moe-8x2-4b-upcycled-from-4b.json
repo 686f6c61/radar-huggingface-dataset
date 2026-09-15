@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "DOEJGI/genomeocean-moe-8x2.4b-upcycled-from-4b",
+  "slug": "doejgi-genomeocean-moe-8x2-4b-upcycled-from-4b",
+  "author": "DOEJGI",
+  "url": "https://huggingface.co/DOEJGI/genomeocean-moe-8x2.4b-upcycled-from-4b",
+  "created_at": "2026-09-15T17:37:48.000Z",
+  "updated_at": "2026-09-15T17:39:06.000Z",
+  "license": "genomeocean-lbnl-bsd",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mixtral",
+    "text-generation",
+    "biology",
+    "genomics",
+    "metagenomics",
+    "DNA",
+    "mixture-of-experts",
+    "upcycling",
+    "genomeocean",
+    "base_model:DOEJGI/GenomeOcean-4B",
+    "base_model:finetune:DOEJGI/GenomeOcean-4B",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 15125406720,
+  "parameters_human": "15.13B",
+  "storage_bytes": 30250908608,
+  "storage_human": "30.3 GB",
+  "base_model": "DOEJGI/GenomeOcean-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "C00lkidd/c00lkidd_gui.lua at main · 1EpikCoder2/C00lkidd",
+      "url": "https://github.com/1EpikCoder2/C00lkidd/blob/main/c00lkidd_gui.lua",
+      "snippet": "c00lkidd gui (NOT FE). Contribute to 1EpikCoder2/C00lkidd development by creating an account on GitHub."
+    },
+    {
+      "title": "C00lgui by team c00lkidd | Universal Roblox Script - ScriptBlox",
+      "url": "https://scriptblox.com/script/Universal-Script-C00lgui-by-team-c00lkidd-9622",
+      "snippet": "© 2026 ScriptBlox. All Rights Reserved."
+    },
+    {
+      "title": "c00lkidd GUI | Universal Roblox Script - ScriptBlox",
+      "url": "https://scriptblox.com/script/Universal-Script-c00lkidd-GUI-69408",
+      "snippet": "c00lkidd GUI for any Roblox game: this is coolkidd gui this one >> https://www.youtube.com/watch?v=dCr4l4Uh4S4&t=3s"
+    },
+    {
+      "title": "c00lkid script - WeAreDevs",
+      "url": "https://wearedevs.net/forum/t/29736",
+      "snippet": "It's not going to work 100%, if you want it to work full percent you'd need to have a sever sided executor or just console access. …"
+    },
+    {
+      "title": "c00lkidd-cheats/c00lkidd_script.lua at main · sussy123a ... - GitHub",
+      "url": "https://github.com/sussy123a/c00lkidd-cheats/blob/main/c00lkidd_script.lua",
+      "snippet": "Contribute to sussy123a/c00lkidd-cheats development by creating an account on GitHub."
+    }
+  ]
+}

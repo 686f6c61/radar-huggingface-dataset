@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "hamadbijarani012/student_6l_nokd_p00_seed1",
+  "slug": "hamadbijarani012-student_6l_nokd_p00_seed1",
+  "author": "hamadbijarani012",
+  "url": "https://huggingface.co/hamadbijarani012/student_6l_nokd_p00_seed1",
+  "created_at": "2026-09-15T14:48:16.000Z",
+  "updated_at": "2026-09-15T14:49:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil - Cegelec Pays de Savoie",
+      "url": "https://www.cegelec-pays-de-savoie.fr/",
+      "snippet": "Cegelec accompagne le développement des Pays de Savoie ! Cegelec Pays de Savoie réalise les installations électriques après …"
+    },
+    {
+      "title": "Recrutement - Cegelec Pays de Savoie",
+      "url": "https://www.cegelec-pays-de-savoie.fr/recrutement/",
+      "snippet": "Recrutement Cegelec recrute ! Pour faire face à son développement et pour continuer à faire grandir les hommes."
+    },
+    {
+      "title": "Nos offres d'emploi - Cegelec Pays de Savoie",
+      "url": "https://www.cegelec-pays-de-savoie.fr/recrutement/nos-offres-demploi/",
+      "snippet": "Candidature Spontanée A la recherche d’un contrat ? D’une alternance ? D’un stage ? N’hésitez pas à nous contacter, nous …"
+    },
+    {
+      "title": "Contact - Cegelec Pays de Savoie",
+      "url": "https://www.cegelec-pays-de-savoie.fr/contact/",
+      "snippet": "Merci de les renseigner avant de valider votre envoi. Les données à caractère personnelle (civilité, nom, prénom et email) recueillies …"
+    },
+    {
+      "title": "Qui sommes-nous ? - Cegelec Pays de Savoie",
+      "url": "https://www.cegelec-pays-de-savoie.fr/qui-sommes-nous/",
+      "snippet": "Le travail chez Cegelec Pays de Savoie est basé sur des relations de confiance entre salariés, et avec nos clients et parties …"
+    }
+  ]
+}

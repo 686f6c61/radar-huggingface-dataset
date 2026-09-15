@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "s1eepypillow/task1_act_single",
+  "slug": "s1eepypillow-task1_act_single",
+  "author": "s1eepypillow",
+  "url": "https://huggingface.co/s1eepypillow/task1_act_single",
+  "created_at": "2026-09-15T18:10:53.000Z",
+  "updated_at": "2026-09-15T18:11:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:s1eepypillow/grad_block_merged_20260730_single",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51627654,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206550968,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TV8: diretta TV live e streaming",
+      "url": "https://www.tv8.it/streaming",
+      "snippet": "Guarda in streaming la diretta in onda sul sito di TV8."
+    },
+    {
+      "title": "TV8: video, programmi, repliche del canale HD",
+      "url": "https://www.tv8.it/",
+      "snippet": "Scopri tutto sul canale HD TV8, la programmazione di film, repliche, programmi, eventi sportivi come la MotoGP, la F1 e le partite di …"
+    },
+    {
+      "title": "TV8 diretta: guardare TV8 in live gratis il streaming online",
+      "url": "https://tv-programmi.it/tv8-diretta",
+      "snippet": "Guarda TV8 in diretta gratis online sul computer, tablet o smartphone. Vedi il streaming live di TV8."
+    },
+    {
+      "title": "TV8 diretta streaming gratis – Canale 8 live ora | TVdream",
+      "url": "https://www.tvdream.net/web-tv/tv8-in-diretta-streaming/",
+      "snippet": "Guarda TV8 in diretta streaming gratis sul sito ufficiale. Scopri cosa c'è in onda adesso, i programmi di oggi, lo sport e come vedere il …"
+    },
+    {
+      "title": "Come guardare TV8 in streaming gratis - Soluzionecomputer.it",
+      "url": "https://www.soluzionecomputer.it/come-guardare-tv8-in-streaming/",
+      "snippet": "Aug 20, 2026 · Guardare TV8 in streaming è semplice: ti basta aprire la pagina ufficiale della diretta TV8 da PC, smartphone, tablet o …"
+    }
+  ]
+}

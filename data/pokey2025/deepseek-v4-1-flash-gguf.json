@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "pokey2025/deepseek-v4.1-flash-gguf",
+  "slug": "pokey2025-deepseek-v4-1-flash-gguf",
+  "author": "pokey2025",
+  "url": "https://huggingface.co/pokey2025/deepseek-v4.1-flash-gguf",
+  "created_at": "2026-09-15T18:19:00.000Z",
+  "updated_at": "2026-09-15T19:18:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "dspark",
+    "speculative-decoding",
+    "deepseek",
+    "deepseek-v4",
+    "vision",
+    "mx-fp4",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "text-generation",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14225362146,
+  "parameters_human": "14.23B",
+  "storage_bytes": 8424210880,
+  "storage_human": "8.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=2c2a3e3befe564e308b529eeeeaa6509",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=2c2a3e3befe564e308b529eeeeaa6509",
+      "snippet": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and …"
+    },
+    {
+      "title": "Microsoft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft",
+      "snippet": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington. The company …"
+    }
+  ]
+}

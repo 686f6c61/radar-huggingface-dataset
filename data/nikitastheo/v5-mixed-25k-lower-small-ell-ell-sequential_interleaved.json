@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "nikitastheo/v5-mixed-25k-lower-small-ell-ell-sequential_interleaved",
+  "slug": "nikitastheo-v5-mixed-25k-lower-small-ell-ell-sequential_interleaved",
+  "author": "nikitastheo",
+  "url": "https://huggingface.co/nikitastheo/v5-mixed-25k-lower-small-ell-ell-sequential_interleaved",
+  "created_at": "2026-09-15T13:17:16.000Z",
+  "updated_at": "2026-09-15T13:38:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "causal-lm",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25717760,
+  "parameters_human": "25.7M",
+  "storage_bytes": 205752416,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Poczta - Najlepsza Poczta, największe załączniki - WP",
+      "url": "https://poczta.wp.pl/",
+      "snippet": "Bezpieczna i darmowa poczta bez spamu. Duże załączniki, nielimitowana pojemność, aplikacja mobilna. Załóż konto i ciesz się …"
+    },
+    {
+      "title": "Odzyskaj hasło w WP Poczcie",
+      "url": "https://poczta.wp.pl/odzyskaj/",
+      "snippet": "Wpisz adres e-mail, do którego chcesz odzyskać dostęp Przejdź dalej"
+    },
+    {
+      "title": "Synchronizacja - Poczta WP",
+      "url": "https://poczta.wp.pl/api/v1/public/secureauth/login?mailsystem=o2&scheme=secureauth&package=pl.wp",
+      "snippet": "Synchronizacja Synchronizacja danych..."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Odakris/sentiment-versioning-demo",
+  "slug": "odakris-sentiment-versioning-demo",
+  "author": "Odakris",
+  "url": "https://huggingface.co/Odakris/sentiment-versioning-demo",
+  "created_at": "2026-09-15T13:15:40.000Z",
+  "updated_at": "2026-09-15T13:36:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 803513283,
+  "storage_human": "804 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Certificat de non gage impossible à obtenir [Résolu]",
+      "url": "https://droit-finances.commentcamarche.com/forum/affich-7454391-certificat-de-non-gage-impossible-a-obtenir",
+      "snippet": "Bonjour, Je souhaite obtenir un certificat de non-gage pour mon véhicule (un cyclomoteur de 49cc) mais je n'y arrive pas, je suis …"
+    },
+    {
+      "title": "Certificat non gage belge [Résolu] - Droit-finances",
+      "url": "https://droit-finances.commentcamarche.com/forum/affich-7992558-certificat-non-gage-belge",
+      "snippet": "Bonjour, Non, pas ce type de certificat. En Belgique, les plaques d'immatriculations sont personnelles. En cas de souci, ils iront …"
+    },
+    {
+      "title": "Cerfa 13750 : PDF à imprimer (2026) - Droit-finances",
+      "url": "https://droit-finances.commentcamarche.com/vie-pratique/guide-vie-pratique/4667-cerfa-13750-pdf-a-imprimer/",
+      "snippet": "Jan 8, 2026 · Où télécharger le cerfa 13750 à jour ? Le cerfa 13750 est le formulaire de demande de certificat d'immatriculation à …"
+    },
+    {
+      "title": "Amendes et majorations + certificat de non gage - Forum Impôts",
+      "url": "https://droit-finances.commentcamarche.com/forum/affich-7794810-amendes-et-majorations-certificat-de-non-gage",
+      "snippet": "Dec 1, 2017 · Bonjour, Mon adresse mise à jour sur ma carte grise, je n'ai jamais reçu les amendes de stationnement du 08/2016 à …"
+    },
+    {
+      "title": "Certificat de non gage [Résolu] - Droit-finances",
+      "url": "https://droit-finances.commentcamarche.com/forum/affich-6254173-certificat-de-non-gage",
+      "snippet": "Nov 15, 2013 · Le site s'appelle certificat de non gage officiel et dés la première page on peut lire : Service privé non affilié au service …"
+    }
+  ]
+}

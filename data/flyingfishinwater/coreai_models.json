@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "flyingfishinwater/coreai_models",
+  "slug": "flyingfishinwater-coreai_models",
+  "author": "flyingfishinwater",
+  "url": "https://huggingface.co/flyingfishinwater/coreai_models",
+  "created_at": "2026-09-15T18:30:04.000Z",
+  "updated_at": "2026-09-15T19:18:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "core-ai",
+    "coreai",
+    "apple",
+    "neural-engine",
+    "ios",
+    "macos",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7918518824,
+  "storage_human": "7.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Toyota Municipal Museum of Art 豊田市美術館",
+      "url": "https://www.museum.toyota.aichi.jp/",
+      "snippet": "Visit 来館のご案内 来館のご案内 住所 MAP 〒471-0034 愛知県豊田市小坂本町8丁目5番地1 TEL 0565-34-6610 メールアドレス …"
+    },
+    {
+      "title": "開催中の展覧会 | 豊田市美術館",
+      "url": "https://www.museum.toyota.aichi.jp/exhibition/",
+      "snippet": "Jul 18, 2026 · 豊田市美術館で現在開催している展覧会をご紹介します。"
+    },
+    {
+      "title": "豊田市美術館 | 展覧会スケジュール・アクセス・料金 | アイ ...",
+      "url": "https://www.museum.or.jp/museum/4772",
+      "snippet": "豊田市美術館は、国内外の近代および現代美術を展望するに相応しい総合美術館を目指し、1995年11月にオープンしました。 美術 …"
+    },
+    {
+      "title": "豊田市美術館 | 【公式】愛知県豊田市の観光サイト ...",
+      "url": "https://www.tourismtoyota.jp/spots/detail/92/",
+      "snippet": "Jul 18, 2026 · かつて「七州城」のあった丘の上の豊田市美術館は、近代～現代の国内外を問わず、幅広い所蔵品が集められていま …"
+    },
+    {
+      "title": "美術館｜豊田市",
+      "url": "https://www.city.toyota.aichi.jp/shisei/shisetsu/bunka/1030144/index.html",
+      "snippet": "美術館のある場所は、豊田の中心市街地を見下ろす小高い丘の上。 ここは、「七州城」と呼ばれた旧・挙母藩（現在の豊田市）の …"
+    }
+  ]
+}

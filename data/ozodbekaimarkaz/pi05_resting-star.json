@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "OzodbekAImarkaz/pi05_resting-star",
+  "slug": "ozodbekaimarkaz-pi05_resting-star",
+  "author": "OzodbekAImarkaz",
+  "url": "https://huggingface.co/OzodbekAImarkaz/pi05_resting-star",
+  "created_at": "2026-09-15T12:07:35.000Z",
+  "updated_at": "2026-09-15T12:16:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:OzodbekAImarkaz/resting-star_20260906_134338",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9388451400,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "N、S、E、W分别代表什么方位？_百度知道",
+      "url": "https://zhidao.baidu.com/question/500516860.html",
+      "snippet": "N、S、E、W分别代表北方、南方、东方、西方四个方位。 N、S、E、W是北方、南方、东方、西方四个方向的英文简写，具体如 …"
+    },
+    {
+      "title": "顿号（、）和（丶）的区别和打法是什么.?_百度知道",
+      "url": "https://zhidao.baidu.com/question/12787347.html",
+      "snippet": "Sep 18, 2006 · 顿号（、）表示并列的词或词组之间的停顿。 用途： 1.分隔同类的并列的事，通常是单字、词语或短句，当中的停顿较 …"
+    },
+    {
+      "title": "7-Zip 官方网站怎么下载？ - 知乎",
+      "url": "https://www.zhihu.com/question/20498753",
+      "snippet": "7-Zip 是一个功能强大的工具，特别适合需要 高效压缩 和 解压缩 功能的用户。比如 IT 专业人员、软件开发者或普通用户希望节省磁 …"
+    },
+    {
+      "title": "披萨馅料有哪些经典的种类？都用了哪些食材？ - 知乎",
+      "url": "https://www.zhihu.com/question/27157954",
+      "snippet": "pizza al taglio我一般当中饭吃，或者买一块带回家烤箱热下当简单的晚饭。。。这种配料不太好说，每个店都有不一样的。。 不过一 …"
+    },
+    {
+      "title": "sentence construction - Could it be correct to say \"near from ...",
+      "url": "https://ell.stackexchange.com/questions/106192/could-it-be-correct-to-say-near-from",
+      "snippet": "Can you tell me please if this sentence is grammatically correct: My school is near from my house."
+    }
+  ]
+}

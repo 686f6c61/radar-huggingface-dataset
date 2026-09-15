@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-tourn_5c64e784a087074a_20260914-12a8c324-8bae-4f43-b01f-14b0fa6dbf62-5EcZmz41",
+  "slug": "gradients-io-tournaments-tournament-tourn_5c64e784a087074a_20260914-12a8c324-8bae-4f43-b01f-14b0fa6dbf62-5eczmz41",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_5c64e784a087074a_20260914-12a8c324-8bae-4f43-b01f-14b0fa6dbf62-5EcZmz41",
+  "created_at": "2026-09-15T11:43:34.000Z",
+  "updated_at": "2026-09-15T11:43:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/cache/models/c53e93d87a4fe77f",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:gradients-io-tournaments/augmented-8a3f84c4cc4a7528",
+    "base_model:adapter:gradients-io-tournaments/augmented-8a3f84c4cc4a7528",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 377950360,
+  "storage_human": "378 MB",
+  "base_model": "gradients-io-tournaments/augmented-8a3f84c4cc4a7528",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub."
+    },
+    {
+      "title": "为什么用chatgpt账号登入一直提示需要电话号码 怎么解决？",
+      "url": "https://www.zhihu.com/question/2031417400504082455",
+      "snippet": "ChatGPT / Codex 登录出现手机号验证，怎么解决？ 方法一：升级 ChatGPT Plus 解决方式最简单直接：升级 ChatGPT Plus 就行。 …"
+    },
+    {
+      "title": "GitHub Copilotでサポートされている AI モデル - GitHubドキュメント",
+      "url": "https://docs.github.com/ja/copilot/reference/ai-models/supported-models",
+      "snippet": "メモ Visual Studio Codeでは、Copilot サブスクリプションで既定で使用できるモデルよりも多くのモデルを追加できます。 …"
+    },
+    {
+      "title": "GitHub - RVC-Boss/GPT-SoVITS: 1 min voice data can also be used to ...",
+      "url": "https://github.com/RVC-Boss/GPT-SoVITS",
+      "snippet": "1 min voice data can also be used to train a good TTS model! (few shot voice cloning) - RVC-Boss/GPT-SoVITS"
+    },
+    {
+      "title": "Cách khôi phục đoạn chat đã xóa trên ChatGPT thành công",
+      "url": "https://cellphones.com.vn/sforum/cach-khoi-phuc-doan-chat-da-xoa-tren-chatgpt",
+      "snippet": "May 29, 2026 · Chat GPT không hỗ trợ khôi phục đoạn chat đã xóa Kinh nghiệm lưu trữ lịch sử ChatGPT để không bị mất dữ liệu Vì …"
+    }
+  ]
+}

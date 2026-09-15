@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kaweees/gr00tn1.5-libero-spatial-trajectory-efficiency",
+  "slug": "kaweees-gr00tn1-5-libero-spatial-trajectory-efficiency",
+  "author": "kaweees",
+  "url": "https://huggingface.co/kaweees/gr00tn1.5-libero-spatial-trajectory-efficiency",
+  "created_at": "2026-09-15T14:36:21.000Z",
+  "updated_at": "2026-09-15T15:04:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gr00t",
+    "libero-spatial",
+    "base_model:nvidia/GR00T-N1.5-3B",
+    "base_model:finetune:nvidia/GR00T-N1.5-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34824099909,
+  "storage_human": "34.8 GB",
+  "base_model": "nvidia/GR00T-N1.5-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "شفروليه كابريس مستعملة للبيع في الإمارات — من 3,500 درهم",
+      "url": "https://uae.yallamotor.com/ar/used-cars/chevrolet/caprice",
+      "snippet": "هل تبحث عن شفروليه كابريس مستعملة؟ يجمع يلاموتور إعلانات شفروليه كابريس المستعملة من وكلاء موثوقين وبائعين أفراد في جميع أنحاء الإمارات في مكان واحد."
+    },
+    {
+      "title": "شيفروليه كابريس سيارات مستعملة للبيع في الإمارات - (12)",
+      "url": "https://ae.opensooq.com/ar/%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%88%D9%85%D8%B1%D9%83%D8%A8%D8%A7%D8%AA/%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%84%D9%84%D8%A8%D9%8A%D8%B9/%D8%B4%D9%8A%D9%81%D8%B1%D9%88%D9%84%D9%8A%D9%87/%D9%83%D8%A7%D8%A8%D8%B1%D9%8A%D8%B3",
+      "snippet": "تتوفر سيارات ‏شيفروليه ‏كابريس مستعملة على السوق المفتوح بأسعار تتراوح بين 13,000 و25,700 درهم إمراتي. ويختلف السعر حسب سنة الصنع، وعدد الكيلومترات، والحالة العامة، والمواصفات. …"
+    },
+    {
+      "title": "أسعار شيفروليه كابريس في الإمارات ، الصور ,المواصفات والمميزات",
+      "url": "https://www.dubicars.com/ar/new-cars/chevrolet/caprice",
+      "snippet": "ما هو سعر شيفروليه كابريس لهذه السنة في الإمارات؟ شيفروليه كابريس لهذه السنة في الإمارات هو TBD. ما هي نسبة استهلاك الوقود في شيفروليه كابريس؟ اقترحت الشركة المصنعة أن تكون نسبة …"
+    },
+    {
+      "title": "شيفروليه كابريس مستعملة للبيع في الإمارات | دوبيزل",
+      "url": "https://uae.dubizzle.com/ar/motors/used-cars/chevrolet/caprice/",
+      "snippet": "اطلع على مجموعة واسعة من سيارات شيفروليه كابريس مستعملة للبيع في الإمارات. قارن الأسعار واطلع على صور ومواصفات السيارات، بما في ذلك المواصفات التقنية وعدد الكيلومترات المقطوعة والمزيد."
+    },
+    {
+      "title": "اسعار ومواصفات شفروليه كابريس في الإمارات | درايف عربية",
+      "url": "https://www.drivearabia.com/ar/carprices/uae/chevrolet/chevrolet-caprice/",
+      "snippet": "تصفح أسعار ومواصفات شفروليه كابريس في دبي وأبوظبي وباقي الإمارات. اكتشف المواصفات التفصيلية والميزات وتقييمات الخبراء والمزيد على درايف عربية."
+    }
+  ]
+}

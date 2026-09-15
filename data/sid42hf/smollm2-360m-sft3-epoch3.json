@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "sid42hf/smollm2-360m-sft3-epoch3",
+  "slug": "sid42hf-smollm2-360m-sft3-epoch3",
+  "author": "sid42hf",
+  "url": "https://huggingface.co/sid42hf/smollm2-360m-sft3-epoch3",
+  "created_at": "2026-09-15T14:19:45.000Z",
+  "updated_at": "2026-09-15T14:28:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "full-weight-fine-tuning",
+    "supervised-fine-tuning",
+    "personal-portfolio-assistant",
+    "conversational",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 361821120,
+  "parameters_human": "361.8M",
+  "storage_bytes": 1447317080,
+  "storage_human": "1.4 GB",
+  "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Leboncoin une erreur technique est survenue - Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-37772507-site-le-bon-coin-une-erreur-technique-est-survenue",
+      "snippet": "Jan 14, 2023 · J'ai un mac oset depuis quelques jours le site le bon coin affiche la mention \" Une erreur technique est survenue\" puis …"
+    },
+    {
+      "title": "Arnaque bon coin voiture - Vos droits sur internet",
+      "url": "https://forums.commentcamarche.net/forum/affich-15008159-arnaque-bon-coin-voiture",
+      "snippet": "Nov 2, 2009 · Arnaque bon coin voiture poupoule - Modifié le 2 nov. 2009 à 09:01 Isis_84 - 2 nov. 2009 à 13:02 connaissait vous une …"
+    },
+    {
+      "title": "Envoyer de l’argent avec Wero : comment ça marche",
+      "url": "https://www.60millions-mag.com/banque-assurance/article/envoyer-de-l-argent-avec-wero-comment-ca-marche-25444-20260304/",
+      "snippet": "Mar 4, 2026 · 2. Qui peut l’utiliser ? « Tout client particulier dont la banque propose le service, soit la quasi-totalité des …"
+    },
+    {
+      "title": "Le Bon Coin, la foire aux couacs - 60 Millions de Consommateurs",
+      "url": "https://www.60millions-mag.com/commerce/article/le-bon-coin-la-foire-aux-couacs-20210310/",
+      "snippet": "Mar 10, 2021 · Véhicules ou électroménager à vendre, appartements à louer… Ce qu’on recherche est souvent disponible sur le Bon …"
+    },
+    {
+      "title": "Problème sur ma messagerie Leboncoin - Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-35435929-probleme-sur-ma-messagerie-leboncoin",
+      "snippet": "Le bon coin sera bientot obligé de se maquer avec le tat pour lister les ventes que vous faites.. je n ai plus confiance en ce site de de …"
+    }
+  ]
+}

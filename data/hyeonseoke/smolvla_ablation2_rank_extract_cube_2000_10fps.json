@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "HyeonseokE/smolvla_ablation2_rank_extract_cube_2000_10fps",
+  "slug": "hyeonseoke-smolvla_ablation2_rank_extract_cube_2000_10fps",
+  "author": "HyeonseokE",
+  "url": "https://huggingface.co/HyeonseokE/smolvla_ablation2_rank_extract_cube_2000_10fps",
+  "created_at": "2026-09-15T13:27:20.000Z",
+  "updated_at": "2026-09-15T13:30:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:HyeonseokE/ablation2_rank_extract_cube_10fps",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906729316,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "My Maps Help - Google Help",
+      "url": "https://support.google.com/mymaps/?hl=en",
+      "snippet": "Official My Maps Help Center where you can find tips and tutorials on using My Maps and other answers to frequently asked questions."
+    },
+    {
+      "title": "Google Maps API v3: How to remove an Event Listener?",
+      "url": "https://stackoverflow.com/questions/1544151/google-maps-api-v3-how-to-remove-an-event-listener",
+      "snippet": "Oct 9, 2009 · Usually you can find answers to such questions in Google Maps API documentation. As Andrew said, addListener …"
+    },
+    {
+      "title": "Maps Trợ giúp - Google Help",
+      "url": "https://support.google.com/maps/?hl=vi",
+      "snippet": "Trung tâm Trợ giúp Maps chính thức, nơi bạn có thể tìm thấy các mẹo và hướng dẫn sử dụng sản phẩm và các câu trả lời khác cho …"
+    },
+    {
+      "title": "How to make an autocomplete address field with google maps api?",
+      "url": "https://stackoverflow.com/questions/1555253/how-to-make-an-autocomplete-address-field-with-google-maps-api",
+      "snippet": "Oct 12, 2009 · Using Google Maps API and JQuery I would like to have an Address field that when typing it will autocomplete the …"
+    },
+    {
+      "title": "Google Maps - Reddit",
+      "url": "https://www.reddit.com/r/GoogleMaps/",
+      "snippet": "r/GoogleMaps is participating in ongoing protests regarding changes to Reddit's API accessibility. The subreddit may reopen at some …"
+    }
+  ]
+}

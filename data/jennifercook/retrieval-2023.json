@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jennifercook/retrieval-2023",
+  "slug": "jennifercook-retrieval-2023",
+  "author": "jennifercook",
+  "url": "https://huggingface.co/jennifercook/retrieval-2023",
+  "created_at": "2026-09-15T14:06:19.000Z",
+  "updated_at": "2026-09-15T14:06:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chrome consumindo muita memória? Saiba como otimizar o uso da RAM …",
+      "url": "https://tecnoblog.net/responde/chrome-consumindo-muita-memoria-saiba-como-otimizar-o-uso-da-ram-pelo-navegador/",
+      "snippet": "May 16, 2025 · O Google Chrome usa uma arquitetura que executa cada aba do navegador como um processo separado, exigindo …"
+    },
+    {
+      "title": "Chrome consumindo muita memória RAM? Veja como resolver",
+      "url": "https://diogopuiatti.com.br/chrome-consumindo-muita-mem-ria/",
+      "snippet": "May 29, 2026 · O problema raramente tem uma causa única: muitas vezes é uma extensão pesada somada a muitas abas abertas e …"
+    },
+    {
+      "title": "Chrome Consumindo Muita Memória RAM? Motivos e Soluções - IObit",
+      "url": "https://www.iobit.com/pt/base-de-conhecimento/chrome-consumindo-muita-memoria-ram.php",
+      "snippet": "Jul 2, 2026 · Quanto mais abas e extensões estiverem ativas ao mesmo tempo, maior será o consumo de RAM. Por isso, manter …"
+    },
+    {
+      "title": "Chrome Usando Muita RAM? Guia para Reduzir o Uso de Memória",
+      "url": "https://rebootdoctor.com/pt/blog/chrome-usando-muita-memoria/",
+      "snippet": "May 25, 2026 · Abra as configurações do Chrome, Desempenho, ative o Memory Saver. Reduz o uso total de memória em 30-40% …"
+    },
+    {
+      "title": "Saiba Como Diminuir o Uso de Memória do Google Chrome!",
+      "url": "https://digitalmentetech.com/como-diminuir-uso-de-memoria-do-google-chrome/",
+      "snippet": "Sep 11, 2025 · Nossa experiência mostra que isso pode economizar 30-50% da RAM em sessões com muitas abas abertas. Você …"
+    }
+  ]
+}

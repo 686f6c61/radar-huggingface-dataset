@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "gpjt/jax-with-mha-bias-fw-fwedu-5050",
+  "slug": "gpjt-jax-with-mha-bias-fw-fwedu-5050",
+  "author": "gpjt",
+  "url": "https://huggingface.co/gpjt/jax-with-mha-bias-fw-fwedu-5050",
+  "created_at": "2026-09-15T12:01:31.000Z",
+  "updated_at": "2026-09-15T12:04:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpjtgpt2",
+    "text-generation",
+    "gpjt-llm-from-scratch",
+    "custom_code",
+    "dataset:gpjt/fw-fwedu-5050-gpt2-tokens",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 175592448,
+  "parameters_human": "175.6M",
+  "storage_bytes": 702388152,
+  "storage_human": "702 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "家里是千兆网，但是电脑下载速度只有10mb/s不到怎么办？",
+      "url": "https://www.zhihu.com/question/1930752647020913028",
+      "snippet": "问题排查步骤（从最简单到复杂） 请按照以下顺序逐一检查： 第一步：检查硬件连接（最可能的罪魁祸首） 网线问题（超高频发 …"
+    },
+    {
+      "title": "switch520 2026年最新地址是520switch.com吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/2034623792819983958",
+      "snippet": "Switch520 2026年使用指南 2026年可用域名大全 Switch520因域名频繁变更而闻名，这主要是出于规避网络审查和版权风险的考虑-。 …"
+    },
+    {
+      "title": "2026年9月手机推荐 || 2026年全价位最值得买的手机排行榜 || 超全的手 …",
+      "url": "https://www.zhihu.com/tardis/zm/art/701307126",
+      "snippet": "大家好，我是 @Tech阿乐 ，平台认证的 手机领域优秀答主、安卓手机领域优秀答主、好物推荐官。有不少朋友表示手机机型琳琅满目 …"
+    },
+    {
+      "title": "用win10自带的截屏win+shift+s截的图保存到哪了？ - 知乎",
+      "url": "https://www.zhihu.com/question/394953580",
+      "snippet": "“Win＋Shift＋S”选取截图区域后，松开鼠标，截图就会保存在「剪贴板」。 需要查看截屏缩略图，则使用快捷键 调出剪贴板，再点击 …"
+    },
+    {
+      "title": "2026年华为笔记本如何选？六个系列一次性说清楚！",
+      "url": "https://www.zhihu.com/tardis/bd/art/689813792",
+      "snippet": "MateBook X系列 MateBook 数字 MateBook 数字S系列 MateBook D系列 MateBook E、E GO系列 MateBook GT系列（8.2号新上线） …"
+    }
+  ]
+}

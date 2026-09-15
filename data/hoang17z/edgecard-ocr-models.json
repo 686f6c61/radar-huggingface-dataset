@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Hoang17z/EdgeCard-OCR-Models",
+  "slug": "hoang17z-edgecard-ocr-models",
+  "author": "Hoang17z",
+  "url": "https://huggingface.co/Hoang17z/EdgeCard-OCR-Models",
+  "created_at": "2026-09-15T14:37:20.000Z",
+  "updated_at": "2026-09-15T14:50:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "computer-vision",
+    "ocr",
+    "student-card",
+    "object-detection",
+    "pose-estimation",
+    "text-detection",
+    "text-recognition",
+    "ncnn",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 156397256,
+  "storage_human": "156 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How Long Until July 1, 2027? - Howlongagogo.com",
+      "url": "https://howlongagogo.com/date/2027/july/1",
+      "snippet": "July 1st 2027 is 288 days away. It will be on a Thursday — the 182th day of 2027, falling in week 26, Q3. 2027 is not a leap year (365 …"
+    },
+    {
+      "title": "297 Days Until July 2027 — July 1 Countdown",
+      "url": "https://www.howmanydaysuntil.net/until/july-2027",
+      "snippet": "Jul 4, 2026 · 297 days remain until July 2027, which begins on Thursday, July 1, 2027. See weeks, milestones, and the live countdown."
+    },
+    {
+      "title": "How Many Days Until 2027? (Live Countdown in Days, Hours, …",
+      "url": "https://howlonguntiltimer.com/how-long-until-2027",
+      "snippet": "There are 107 days, 17 hours, 32 minutes, and 28 seconds until 2027. Use this live countdown to track exactly how long until 2027. …"
+    },
+    {
+      "title": "How Many Days until July 2027? | Countdown",
+      "url": "https://days.to/july/2027",
+      "snippet": "289 days until July 2027 on Thursday, 1 July 2027. Live countdown clock with days, hours, minutes and seconds."
+    },
+    {
+      "title": "Date Calculator",
+      "url": "https://www.calculator.net/date-calculator.html?today",
+      "snippet": "Jan 1, 2026 · Date Calculator Days Between Two Dates Find the number of years, months, weeks, and days between dates. Click …"
+    }
+  ]
+}

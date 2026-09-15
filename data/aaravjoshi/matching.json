@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Aaravjoshi/matching",
+  "slug": "aaravjoshi-matching",
+  "author": "Aaravjoshi",
+  "url": "https://huggingface.co/Aaravjoshi/matching",
+  "created_at": "2026-09-15T15:58:32.000Z",
+  "updated_at": "2026-09-15T15:58:38.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "الصفحة الرئيسية | السجل العقاري",
+      "url": "https://rer.sa/",
+      "snippet": "وصول سريع عن السجل العقاري المسجلين العقاريين الموردين الوظائف اتصل بنا infocs@rer.sa199002 تابعنا على"
+    },
+    {
+      "title": "تسجيل الدخول إلى RER-SSO-platforms",
+      "url": "https://eservices.rer.sa/",
+      "snippet": "Real Estate Registry is your window for managing your real estate properties and providing services such as first registration, …"
+    },
+    {
+      "title": "عن السجل العقاري - RER",
+      "url": "https://rer.sa/about-us",
+      "snippet": "تتمثل رؤيتنا في تطوير الثروة العقارية للمملكة من خلال زيادة الموثوقية والشفافية في القطاع العقاري، وبناء سجل عقاري شامل لمعلومات العقارات، بما يحقق مستهدفات رؤية المملكة 2030."
+    },
+    {
+      "title": "Real Estate Registry | التسجيل العقارى",
+      "url": "https://eservices.rer.sa/?lang=en",
+      "snippet": "Real Estate Registry is your window for managing your real estate properties and providing services such as first registration, …"
+    },
+    {
+      "title": "business.rer.sa",
+      "url": "https://business.rer.sa/",
+      "snippet": ""
+    }
+  ]
+}

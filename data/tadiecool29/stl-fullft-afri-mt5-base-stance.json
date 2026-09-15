@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "tadiecool29/STL-FullFT-afri-mt5-base-stance",
+  "slug": "tadiecool29-stl-fullft-afri-mt5-base-stance",
+  "author": "tadiecool29",
+  "url": "https://huggingface.co/tadiecool29/STL-FullFT-afri-mt5-base-stance",
+  "created_at": "2026-09-15T17:33:40.000Z",
+  "updated_at": "2026-09-15T17:33:57.000Z",
+  "license": "afl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mt5",
+    "text2text-generation",
+    "full-finetuning",
+    "amharic",
+    "stance-classification",
+    "single-task",
+    "generated_from_trainer",
+    "base_model:masakhane/afri-mt5-base",
+    "base_model:finetune:masakhane/afri-mt5-base",
+    "license:afl-3.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 966573312,
+  "parameters_human": "966.6M",
+  "storage_bytes": 2024697357,
+  "storage_human": "2.0 GB",
+  "base_model": "masakhane/afri-mt5-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "Sign out of Hotmail or Outlook.com | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/accounts-billing/manage/sign-out-of-hotmail-or-outlook-com",
+      "snippet": "Tip If you don't see your picture at the top of screen, check to see if ad blocking is turned on. Sometimes this prevents the picture …"
+    },
+    {
+      "title": "Released: August 2026 Exchange Server Security Updates | Microsoft ...",
+      "url": "https://techcommunity.microsoft.com/blog/Exchange/released-august-2026-exchange-server-security-updates/4543951",
+      "snippet": "Aug 11, 2026 · We have released Security Updates for Exchange Server SE. Exchange Server 2019 and 2016 ESU updates only."
+    },
+    {
+      "title": "Sign in to your account - techcommunity.microsoft.com",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation."
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    }
+  ]
+}

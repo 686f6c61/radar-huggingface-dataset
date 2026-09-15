@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "luvtong/rdgdpo-symmetric-math-qwen3-4b-v07-seed0",
+  "slug": "luvtong-rdgdpo-symmetric-math-qwen3-4b-v07-seed0",
+  "author": "luvtong",
+  "url": "https://huggingface.co/luvtong/rdgdpo-symmetric-math-qwen3-4b-v07-seed0",
+  "created_at": "2026-09-14T06:07:37.000Z",
+  "updated_at": "2026-09-15T19:05:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85131562321,
+  "storage_human": "85.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipédia, l'encyclopédie libre",
+      "url": "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal",
+      "snippet": "Présentation Wikipédia est un projet d’encyclopédie collective en ligne, universelle, multilingue et fonctionnant sur le principe du wiki. …"
+    },
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    },
+    {
+      "title": "Wikipedia, the free encyclopedia",
+      "url": "https://en.wikipedia.org/wiki/Main_Page",
+      "snippet": "Wikipedia is written by volunteer editors and hosted by the Wikimedia Foundation, a non-profit organization that also hosts a range of …"
+    },
+    {
+      "title": "Wikipedia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wikipedia",
+      "snippet": "Founded by Jimmy Wales and Larry Sanger in 2001, Wikipedia has been hosted since 2003 by the Wikimedia Foundation, an …"
+    },
+    {
+      "title": "Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%e3%83%a1%e3%82%a4%e3%83%b3%e3%83%9a%e3%83%bc%e3%82%b8",
+      "snippet": "ウィキペディア へようこそ ウィキペディアは 誰でも編集できる フリー 百科事典 です 1,518,146 本の 記事 をあなたと Help for Non …"
+    }
+  ]
+}

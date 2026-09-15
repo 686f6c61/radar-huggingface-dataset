@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hernandezra/multitask-colab",
+  "slug": "hernandezra-multitask-colab",
+  "author": "hernandezra",
+  "url": "https://huggingface.co/hernandezra/multitask-colab",
+  "created_at": "2026-09-15T16:15:28.000Z",
+  "updated_at": "2026-09-15T16:15:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com.ua/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google Видео",
+      "url": "https://www.google.com.ua/videohp?hl=ru",
+      "snippet": "Поиск среди огромного количества видео в Интернете"
+    },
+    {
+      "title": "Google Тренди",
+      "url": "https://trends.google.com.ua/trends/",
+      "snippet": "Що станеться, якщо об’єднати дані й птахів? Остання візуалізація від Наді Бремер – її найамбітніша робота, що занурює нас …"
+    },
+    {
+      "title": "Google Перекладач",
+      "url": "https://translate.google.com.ua/m",
+      "snippet": "Головна сторінка Google Надіслати відгук Конфіденційність і умови Перейти на повну версію ..."
+    },
+    {
+      "title": "Google Books: Find, Preview, and Read Books Online.",
+      "url": "https://books.google.com.ua/",
+      "snippet": "Шукайте літературу в найповнішому у світі індексі повнотекстових книг. Ваша бібліотека"
+    }
+  ]
+}

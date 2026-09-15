@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "foreignerfromjupiter/hey-steph-e2b-lora",
+  "slug": "foreignerfromjupiter-hey-steph-e2b-lora",
+  "author": "foreignerfromjupiter",
+  "url": "https://huggingface.co/foreignerfromjupiter/hey-steph-e2b-lora",
+  "created_at": "2026-09-15T17:17:50.000Z",
+  "updated_at": "2026-09-15T17:18:17.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx-lm",
+  "languages": [],
+  "tags": [
+    "mlx-lm",
+    "lora",
+    "mlx",
+    "tool-calling",
+    "voice-assistant",
+    "base_model:mlx-community/gemma-4-E2B-it-qat-4bit",
+    "base_model:adapter:mlx-community/gemma-4-E2B-it-qat-4bit",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13645284,
+  "storage_human": "14 MB",
+  "base_model": "mlx-community/gemma-4-E2B-it-qat-4bit",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Сериозни Запознанства | Zapoznalnik.com (100% ...",
+      "url": "https://zapoznalnik.com/",
+      "snippet": "Търсиш ли сериозна връзка? Заповядай в новият сайт за запознанства със сериозни жени и мъже! Регистрирай се сега, …"
+    },
+    {
+      "title": "Търсене | Zapoznalnik.com - Сериозни ...",
+      "url": "https://zapoznalnik.com/Search",
+      "snippet": "Потърси любовта си в сайтът за сериозни запознанства - Запозналник. Запознанства с жени и мъже. Регистрирай се сега, …"
+    },
+    {
+      "title": "Сайт за сериозни запознанства | Salsa ...",
+      "url": "https://www.salsa.bg/",
+      "snippet": "Най-горещия от всички бг сайтове за запознанства. С безплатна регистрация вижте хиляди онлайн малки обяви за …"
+    },
+    {
+      "title": "Сайт за запознанства - Elmaz. Sait za zapoznanstva",
+      "url": "https://www.elmaz.com/zapoznanstva/",
+      "snippet": "Влез в най-посещавания сайт за запознанства за мъже и жени над 18 години. Разгледай в сайт за сериозни запознанства, …"
+    },
+    {
+      "title": "Най-добрите сайтове за запознаства ...",
+      "url": "https://www.lovino.bg/sravni-saitove-za-zapoznanstva/nay-dobrite-saytove-za-zapoznanstva",
+      "snippet": "Ние сравняваме сайтовете за запознанства вместо вас, за да можете вие да пристъпите направо към избора, без да правите …"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "youssefhl/distilbert-imdb-sentiment",
+  "slug": "youssefhl-distilbert-imdb-sentiment",
+  "author": "youssefhl",
+  "url": "https://huggingface.co/youssefhl/distilbert-imdb-sentiment",
+  "created_at": "2026-09-15T14:41:47.000Z",
+  "updated_at": "2026-09-15T15:17:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 803502945,
+  "storage_human": "804 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yahoo Mail | Email with smart features and top-notch security",
+      "url": "https://de.mail.yahoo.com/",
+      "snippet": "Yahoo Mail: Your smarter, faster, free email solution. Organize your inbox, protect your privacy, and tackle tasks efficiently with AI …"
+    },
+    {
+      "title": "Done - Yahoo Mail",
+      "url": "https://de.mail.yahoo.com/d",
+      "snippet": "Es ist an der Zeit, Dinge mit Yahoo Mail zu erledigen. Fügen Sie einfach Ihren Gmail-, Outlook-, AOL- oder Yahoo Mail-Account …"
+    },
+    {
+      "title": "Communicate - Yahoo Mail",
+      "url": "https://de.mail.yahoo.com/overview/elevate-emails",
+      "snippet": "Compose and reply with ease: Streamline every email with smart composition features that help you write confidently, respond faster …"
+    }
+  ]
+}

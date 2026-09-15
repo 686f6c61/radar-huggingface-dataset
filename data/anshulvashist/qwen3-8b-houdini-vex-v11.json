@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "anshulVashist/Qwen3-8B-Houdini-VEX-v11",
+  "slug": "anshulvashist-qwen3-8b-houdini-vex-v11",
+  "author": "anshulVashist",
+  "url": "https://huggingface.co/anshulVashist/Qwen3-8B-Houdini-VEX-v11",
+  "created_at": "2026-09-15T13:07:28.000Z",
+  "updated_at": "2026-09-15T14:17:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "houdini",
+    "vex",
+    "sidefx",
+    "procedural",
+    "unsloth",
+    "text-generation-inference",
+    "text-generation",
+    "graphics",
+    "vfx",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3-8B",
+    "base_model:quantized:unsloth/Qwen3-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 25088692460,
+  "storage_human": "25.1 GB",
+  "base_model": "unsloth/Qwen3-8B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "Delete or hide your YouTube channel",
+      "url": "https://support.google.com/youtube/answer/55759?hl=en",
+      "snippet": "You can choose to temporarily hide content on your channel or permanently delete your channel. How to hide or delete your …"
+    },
+    {
+      "title": "يوتيوب",
+      "url": "https://www.zahran.org/vb/forumdisplay.php?f=88",
+      "snippet": "Nov 4, 2017 · منتدى يوتيوب YouTube Forum ; مقاطع فيديو ; مقاطع فكاهية ; مقاطع رعب ; مقاطع حوادث ; مقاطع رياضية ; مقاطع مسرحيات ; مقاطع أفلام -; مقاطع مضحكة ; مقاطع …"
+    },
+    {
+      "title": "Verify your YouTube account - Google Help",
+      "url": "https://support.google.com/youtube/answer/171664?hl=en",
+      "snippet": "To verify your channel, you’ll be asked to enter a phone number. We’ll send a verification code by text or voice call to that phone …"
+    },
+    {
+      "title": "Create an account on YouTube - Computer - YouTube Help",
+      "url": "https://support.google.com/youtube/answer/161805?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Once you've signed in to YouTube with your Google Account, you can create a YouTube channel on your account. YouTube …"
+    }
+  ]
+}

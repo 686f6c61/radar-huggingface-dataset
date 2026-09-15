@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "joshycodes/meta-llama-3.1-8b-sorrel-selfstories-g3r-midtrain",
+  "slug": "joshycodes-meta-llama-3-1-8b-sorrel-selfstories-g3r-midtrain",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-selfstories-g3r-midtrain",
+  "created_at": "2026-09-15T11:54:10.000Z",
+  "updated_at": "2026-09-15T12:16:08.000Z",
+  "license": "internal-research",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "flourishing-training",
+    "continued-pretraining",
+    "dataset:joshycodes/sorrel-corpus",
+    "base_model:joshycodes/meta-llama-3.1-8b-sorrel-selfstories-g2r-midtrain",
+    "base_model:finetune:joshycodes/meta-llama-3.1-8b-sorrel-selfstories-g2r-midtrain",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 64259441035,
+  "storage_human": "64.3 GB",
+  "base_model": "joshycodes/meta-llama-3.1-8b-sorrel-selfstories-g2r-midtrain",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home Support & Aged Care Services | Life Care",
+      "url": "https://lifecare.org.au/",
+      "snippet": "Personalised in home support and aged care support services in South Australia, helping you stay independent, connected and …"
+    },
+    {
+      "title": "Life Care Celebrates 75 Years of Compassionate Care",
+      "url": "https://lifecare.org.au/press-releases/in-conversation-with-grace-scaffidi-current-ceo-and-kingsley-curtis-former-ceo-life-care-celebrates-75-years-of-compassionate-care-and-connection-in-south-australia/",
+      "snippet": "Life Care marks 75 years of compassionate care in South Australia, featuring insights from current CEO Grace Scaffidi and former …"
+    },
+    {
+      "title": "Shape Your Positive Ageing Journey | Contact Us - Life Care",
+      "url": "https://lifecare.org.au/contact-us/",
+      "snippet": "For specific questions about any of our services (Home Care, Allied Health, Exercise Programs, or Spiritual Care), please don’t …"
+    },
+    {
+      "title": "Guided Exercise Classes | Improve Your Well-Being - lifecare.org.au",
+      "url": "https://lifecare.org.au/service/exercise-programs/exercise-classes/",
+      "snippet": "Discover the joy of movement and improve your well-being with Life Care's dynamic exercise classes. Our programs are designed to …"
+    },
+    {
+      "title": "Commonwealth Home Support Program | CHSP Services",
+      "url": "https://lifecare.org.au/funding-pricing/commonwealth-home-support-programme-chsp/",
+      "snippet": "The Commonwealth Home Support Program helps you stay independent at home with entry-level support. We provide care tailored …"
+    }
+  ]
+}

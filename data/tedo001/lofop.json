@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "tedo001/lofop",
+  "slug": "tedo001-lofop",
+  "author": "tedo001",
+  "url": "https://huggingface.co/tedo001/lofop",
+  "created_at": "2026-09-15T14:28:03.000Z",
+  "updated_at": "2026-09-15T14:28:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Einloggen bei Paramount+ Österreich (AT)",
+      "url": "https://www.paramountplus.com/at/account/signin/?msockid=2f023d85ab4f685a023b2a50aadc69cc",
+      "snippet": "Gib die mit deinem Paramount+ Konto verbundene E-Mail-Adresse inklusive Passwort oder die Einlogdaten deines TV-Partners ein, …"
+    },
+    {
+      "title": "Paramount Plus Sign In",
+      "url": "https://www.paramountplus.com/account/signin/?msockid=2f023d85ab4f685a023b2a50aadc69cc",
+      "snippet": "Access live TV shows, sports events like NFL games, and tens of thousands of on demand episodes without any delays in …"
+    },
+    {
+      "title": "Paramount+ Österreich | Filme & TV-Serien online anschauen",
+      "url": "https://www.paramountplus.com/at/?msockid=2f023d85ab4f685a023b2a50aadc69cc",
+      "snippet": "Schau dir beliebte Filme, neue Originals und deine Lieblingsserien mit Paramount+ an. Starte das Streaming auf jedem Gerät!"
+    },
+    {
+      "title": "Einloggen bei Paramount+ Deutschland (DE)",
+      "url": "https://www.paramountplus.com/de/account/signin/?msockid=2f023d85ab4f685a023b2a50aadc69cc",
+      "snippet": "Gib die mit deinem Paramount+ Konto verbundene E-Mail-Adresse inklusive Passwort oder die Einlogdaten deines TV-Partners ein, …"
+    },
+    {
+      "title": "Paramount - Sign In",
+      "url": "https://connect.paramount.com/",
+      "snippet": "Connecting to Sign in with your account to access Paramount - GlobalProtect (GPA)"
+    }
+  ]
+}

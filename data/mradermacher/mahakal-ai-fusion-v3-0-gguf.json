@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Mahakal-AI-Fusion-v3.0-GGUF",
+  "slug": "mradermacher-mahakal-ai-fusion-v3-0-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Mahakal-AI-Fusion-v3.0-GGUF",
+  "created_at": "2026-09-15T13:35:17.000Z",
+  "updated_at": "2026-09-15T13:51:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:UX4567/Mahakal-AI-Fusion-v3.0",
+    "base_model:quantized:UX4567/Mahakal-AI-Fusion-v3.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 27940896640,
+  "storage_human": "27.9 GB",
+  "base_model": "UX4567/Mahakal-AI-Fusion-v3.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Access - Missing Reference to acrobat.tlb",
+      "url": "https://stackoverflow.com/questions/30312395/microsoft-access-missing-reference-to-acrobat-tlb",
+      "snippet": "May 19, 2015 · Now under here it lists the working references then says, \"MISSING: Adobe Acrobat 10.0 Type Library\" So now I …"
+    },
+    {
+      "title": "Adobe Acrobat Pro DC破解版安装教程？ - 知乎",
+      "url": "https://www.zhihu.com/question/1978068314996626887",
+      "snippet": "Adobe Acrobat DC是美dobe公司开发的PDF文档全流程处理工具，支持创建、编辑、转换和保护PDF文件。 该软件整合了跨平台协同 …"
+    },
+    {
+      "title": "How to insert a SVG file in a PDF document? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/3360641/how-to-insert-a-svg-file-in-a-pdf-document",
+      "snippet": "Jul 29, 2010 · I'm trying use embeddSVG.py to embed an SVG in a PDF, but Adobe Acrobat Reader doesn't show svg content in my …"
+    },
+    {
+      "title": "知乎",
+      "url": "https://www.zhihu.com/tardis/jm/art/2040110914679136535",
+      "snippet": "知乎，有趣、有料、有态度的内容社区。开放、真实、专业的社区氛围，汇集各行各业亲历者、内行人、领域专家。上知乎，找答案、 …"
+    },
+    {
+      "title": "acrobat - Adobe Reader Command Line Reference - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/619158/adobe-reader-command-line-reference",
+      "snippet": "Mar 6, 2009 · Is there any official command line (switches) reference for the different versions of Adobe (formerly Acrobat) Reader? I …"
+    }
+  ]
+}

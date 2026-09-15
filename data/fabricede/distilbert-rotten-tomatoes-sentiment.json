@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Fabricede/distilbert-rotten-tomatoes-sentiment",
+  "slug": "fabricede-distilbert-rotten-tomatoes-sentiment",
+  "author": "Fabricede",
+  "url": "https://huggingface.co/Fabricede/distilbert-rotten-tomatoes-sentiment",
+  "created_at": "2026-09-15T13:33:41.000Z",
+  "updated_at": "2026-09-15T13:35:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 535670385,
+  "storage_human": "536 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "【あつ森】「エイブルシスターズ」の名前の由来 | ダイ兄さん ...",
+      "url": "https://ameblo.jp/dai2san/entry-12599109471.html",
+      "snippet": "May 24, 2020 · どうぶつの森シリーズの仕立て屋「エイブルシスターズ」。 エイブルシスターズが営む仕立て屋です。 👕 名前の由来 …"
+    },
+    {
+      "title": "エイブルシスターズ (えいぶるしすたーず)とは【ピクシブ百科 ...",
+      "url": "https://dic.pixiv.net/a/%E3%82%A8%E3%82%A4%E3%83%96%E3%83%AB%E3%82%B7%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BA",
+      "snippet": "どうぶつの森シリーズに登場するハリネズミ三姉妹の営む仕立て屋の事。 ゲームキューブ用ソフト『どうぶつの森+』で初登場。 …"
+    },
+    {
+      "title": "エイブルシスターズ (どうぶつの森) - アニヲタWiki (仮) - atwiki ...",
+      "url": "https://w.atwiki.jp/aniwotawiki/pages/4185.html",
+      "snippet": "Dec 7, 2025 · 洋服や 傘 のマイデザインを制作できる「仕立て屋」で、ハリネズミの姉妹が経営している。 『おいでよ』からは、 …"
+    },
+    {
+      "title": "【あつ森】エイブルシスターズの解放条件とマス【あつまれ ...",
+      "url": "https://game8.jp/atsumare-doubutsunomori/327394",
+      "snippet": "Nov 20, 2025 · あつまれどうぶつの森 (あつ森)における、エイブルシスターズ (仕立て屋/服屋)の解放条件や、マス目、営業時間など …"
+    },
+    {
+      "title": "エイブルシスターズ (仕立て屋)｜【あつ森】あつまれどうぶつ ...",
+      "url": "https://www.doumori.com/facilities/able_sisters.html",
+      "snippet": "エイブルシスターズ (仕立て屋) あつまれどうぶつの森 (あつ森)のエイブルシスターズは、｢きぬよ｣と｢あさみ｣が衣類を販売し …"
+    }
+  ]
+}

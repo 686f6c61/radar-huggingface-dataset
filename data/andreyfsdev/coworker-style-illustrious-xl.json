@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AndreyFSDev/coworker-style-illustrious-xl",
+  "slug": "andreyfsdev-coworker-style-illustrious-xl",
+  "author": "AndreyFSDev",
+  "url": "https://huggingface.co/AndreyFSDev/coworker-style-illustrious-xl",
+  "created_at": "2026-09-15T11:30:23.000Z",
+  "updated_at": "2026-09-15T11:32:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "stable-diffusion-xl",
+    "lora",
+    "anime",
+    "illustrious",
+    "style",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228483220,
+  "storage_human": "228 MB",
+  "base_model": "wai-illustrious-sdxl-v1.7",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "骨瘦如柴姚日月：玛奇玛这个角色的底层语法不属于2010年代的日本漫画，她身上有一股非常特殊的气味，直白的说，是藤本树作为 …"
+    },
+    {
+      "title": "如何在电脑端或网页端上查看米家智能摄像机？ - 知乎",
+      "url": "https://www.zhihu.com/question/480189501",
+      "snippet": "我在中文的官网上找了一圈也没找到这个下载客户端对应的中文页面，知乎这里以及其他各种地方的回答也从没有人提到过这个。 这 …"
+    },
+    {
+      "title": "Se connecter à Google Ads",
+      "url": "https://support.google.com/google-ads/answer/1722062?hl=fr",
+      "snippet": "Conseils de connexion à Google Ads Étant donné que votre compte Google donne accès à la plupart des produits Google, nous …"
+    },
+    {
+      "title": "Ayuda de Google One",
+      "url": "https://support.google.com/googleone/?hl=es",
+      "snippet": "Centro de asistencia oficial de Google One donde puedes encontrar sugerencias y tutoriales para aprender a utilizar el producto y …"
+    },
+    {
+      "title": "在连接校园网时弹出www.msftconnecttest.com，而不是登录界面 如何 …",
+      "url": "https://www.zhihu.com/question/352040481",
+      "snippet": "知乎用户讨论如何解决连接校园网时弹出www.msftconnecttest.com而非登录界面的问题。"
+    }
+  ]
+}

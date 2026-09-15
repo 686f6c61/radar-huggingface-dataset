@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "S12-24/sentiment-versioning-demo",
+  "slug": "s12-24-sentiment-versioning-demo",
+  "author": "S12-24",
+  "url": "https://huggingface.co/S12-24/sentiment-versioning-demo",
+  "created_at": "2026-09-15T14:19:50.000Z",
+  "updated_at": "2026-09-15T14:21:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 803513283,
+  "storage_human": "804 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "使用 Microsoft Word 进行免费的在线文档编辑 | Microsoft 365",
+      "url": "https://www.microsoft.com/zh-cn/microsoft-365/word?msockid=11153f92f2dc6acb39da2847f3e16bd7",
+      "snippet": "使用 Microsoft Word 在线编辑文档，并使用 Copilot 提供的 AI 建议来改善语法、样式和清晰度。随时随地书写、编辑和协作。"
+    },
+    {
+      "title": "Bezpłatna platforma Microsoft 365 Online | Word, Excel, PowerPoint",
+      "url": "https://www.microsoft.com/pl-pl/microsoft-365/free-office-online-for-the-web?msockid=11153f92f2dc6acb39da2847f3e16bd7",
+      "snippet": "Platforma Microsoft 365 dla sieci Web pozwala edytować i udostępniać pliki programów Word, Excel, PowerPoint i OneNote na …"
+    },
+    {
+      "title": "Microsoft Word - Windows官方下载 | 微软应用商店 | Microsoft Store",
+      "url": "https://apps.microsoft.com/detail/xpff9ltfvsk6f7?hl=zh-CN&gl=CN",
+      "snippet": "Word文档 • 图像、表格、图表、SmartArt、脚注、公式等皆能完美呈现 • Word 文档和电脑上的一样精美 • 自动记忆功能让您可以在任 …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Sign in to your account - admin.microsoft.com",
+      "url": "https://admin.microsoft.com/AdminPortal/Home",
+      "snippet": "Sign in to manage your Microsoft account and access all services securely."
+    }
+  ]
+}

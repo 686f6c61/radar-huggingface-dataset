@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "sergiodominguez/cnn-transformer-baseline48",
+  "slug": "sergiodominguez-cnn-transformer-baseline48",
+  "author": "sergiodominguez",
+  "url": "https://huggingface.co/sergiodominguez/cnn-transformer-baseline48",
+  "created_at": "2026-09-15T17:19:02.000Z",
+  "updated_at": "2026-09-15T17:19:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Escorte Paris - Sexe Modeles - Annonce escort Paris - Escorte filles en ...",
+      "url": "https://sexemodels.net/",
+      "snippet": "Chaque modèle a quelque chose de spécial à offrir, de l’élégant et doux au brillant et excitant. Que vous recherchiez une beauté …"
+    },
+    {
+      "title": "SexeModel & 31+ Sites d'Escortes Comme Sexemodel.com",
+      "url": "https://theporndude.com/fr/2988/sexemodel",
+      "snippet": "3 days ago · SexeModel.com est l’un des sites principaux d’escortes en France. Il offre une chance aux visiteurs de s’envoyer en l’air …"
+    },
+    {
+      "title": "Photos Nues et Images Porno de Modèle - PornPics.com",
+      "url": "https://www.pornpics.com/fr/model/",
+      "snippet": "Découvrez les meilleures photos porno de Modèle GRATUITEMENT sur PornPics.com. ️Regardez les photos XXX de Modèle les …"
+    },
+    {
+      "title": "Modèles photo de charme, nu artistique et érotique",
+      "url": "https://www.modele-photo.fr/modele-photo-de-charme.htm",
+      "snippet": "Consultez les books de modèles photo de charme acceptant notamment le nu artistique, le topless ou l'érotique pour préparer un …"
+    },
+    {
+      "title": "Sexemodel | Sexe chat avec de superbes cochonnes en chaleur",
+      "url": "https://sexe-model.fr/",
+      "snippet": "Sexemodel tous vos goûts et vos préférences sont couverts pour un sexe chat satisfaisant à souhait. Quelques conseils pour un chat …"
+    }
+  ]
+}

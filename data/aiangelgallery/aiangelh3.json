@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AiAngelGallery/AiAngelH3",
+  "slug": "aiangelgallery-aiangelh3",
+  "author": "AiAngelGallery",
+  "url": "https://huggingface.co/AiAngelGallery/AiAngelH3",
+  "created_at": "2026-09-15T16:05:49.000Z",
+  "updated_at": "2026-09-15T16:06:15.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "comfyui",
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "minimax-h3",
+    "video",
+    "merge",
+    "not-for-all-audiences",
+    "image-to-video",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20970427336,
+  "storage_human": "21.0 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chapitre II : Ouvrages (Articles L2412-1 à L2412-2) - Légifrance",
+      "url": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000037704437/",
+      "snippet": "Aug 3, 2026 · Les dispositions du présent livre sont applicables aux opérations de construction neuve ou de réhabilitation portant sur …"
+    },
+    {
+      "title": "Code de la commande publique - Légifrance",
+      "url": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000037701019/",
+      "snippet": "Code de la commande publique Version en vigueur au 12 septembre 2026 Dernière mise à jour des données de ce code : 01 …"
+    },
+    {
+      "title": "Code de la commande publique (Mise à jour du 2026-09-01) - Droit.org",
+      "url": "https://codes.droit.org/PDF/Code%20de%20la%20commande%20publique.pdf",
+      "snippet": "Code de la commande publique Dernière modification: 2026-09-01 Edition : 2026-09-02 1811 articles avec 2260 liens 366 références …"
+    },
+    {
+      "title": "Code de la commande publique",
+      "url": "https://www.economie.gouv.fr/files/files/directions_services/daj/marches_publics/actualites/code-commande-publ_Lineaire-L-1er-volet.pdf?v=1743091167",
+      "snippet": "Un ouvrage est le résultat d'un ensemble de travaux de bâtiment ou de génie civil destiné à remplir par lui-même une fonction …"
+    },
+    {
+      "title": "CODE DE LA COMMANDE PUBLIQUE - Document de travail",
+      "url": "https://www.cdg22.fr/upload/docs/application/pdf/2025-10/code_de_la_commande_publique_-_document_de_travail_2025-10.pdf",
+      "snippet": "Ce document qui n’a pour seule vocation que d’être un document de travail, présente ensemble les dispositions législatives et …"
+    }
+  ]
+}

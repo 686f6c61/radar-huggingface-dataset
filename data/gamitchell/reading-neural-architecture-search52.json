@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "gamitchell/reading-neural-architecture-search52",
+  "slug": "gamitchell-reading-neural-architecture-search52",
+  "author": "gamitchell",
+  "url": "https://huggingface.co/gamitchell/reading-neural-architecture-search52",
+  "created_at": "2026-09-15T15:06:39.000Z",
+  "updated_at": "2026-09-15T15:06:44.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "neural-architecture-search",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.fr : livres, DVD, jeux vidéo, musique, high-tech, informatique ...",
+      "url": "https://www.amazon.fr/",
+      "snippet": "Conditions générales de vente Vos informations personnelles Cookies Annonces basées sur vos centres d’intérêt © 1996-2026, …"
+    },
+    {
+      "title": "Amazon.fr : : Toutes les catégories",
+      "url": "https://www.amazon.fr/b?node=14864804031",
+      "snippet": "Conditions générales de vente Vos informations personnelles Cookies Annonces basées sur vos centres d’intérêt © 1996-2026, …"
+    },
+    {
+      "title": "Amazon Shopping – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.amazon.mShop.android.shopping&hl=fr",
+      "snippet": "• Achetez sur Amazon.co.uk, Amazon.de, Amazon.es, Amazon.fr, Amazon.com, Amazon.it, Amazon.cn, Amazon.co.jp ou …"
+    },
+    {
+      "title": "Amazon.com. Spend less. Smile more.",
+      "url": "https://www.amazon.com/",
+      "snippet": "Amazon Payment Products Amazon Visa Amazon Store Card Amazon Secured Card Amazon Business Card Shop with Points …"
+    },
+    {
+      "title": "Amazon Sign-In",
+      "url": "https://amc.amazon.com/",
+      "snippet": "By continuing, you agree to Amazon's Conditions of Use and Privacy Notice. Need help?"
+    }
+  ]
+}

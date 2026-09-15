@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "elvezjp/GLM-5.3-Flash-ELVEZ-KDA-Q8_0-gguf",
+  "slug": "elvezjp-glm-5-3-flash-elvez-kda-q8_0-gguf",
+  "author": "elvezjp",
+  "url": "https://huggingface.co/elvezjp/GLM-5.3-Flash-ELVEZ-KDA-Q8_0-gguf",
+  "created_at": "2026-09-15T17:45:59.000Z",
+  "updated_at": "2026-09-15T19:02:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "glm",
+    "glm-5.3",
+    "ds4",
+    "metal",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 320759404382,
+  "parameters_human": "320.76B",
+  "storage_bytes": 186597336384,
+  "storage_human": "186.6 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Glyptoteket",
+      "url": "https://glyptoteket.dk/",
+      "snippet": "Glyptoteket I Åbningstider | Priser | Udstillinger | Café | Butik | Arrangementer og aktiviteter for hele familien | Vi ses på Glyptoteket!"
+    },
+    {
+      "title": "About the Glyptotek - Glyptoteket",
+      "url": "https://glyptoteket.com/about",
+      "snippet": "Ny Carlsberg Glyptotek (the Glyptotek) is run as an independent institution which receives funding from The Agency for Culture and …"
+    },
+    {
+      "title": "Besøg Glyptoteket - Glyptoteket",
+      "url": "https://glyptoteket.dk/besog",
+      "snippet": "Spring køen over med et årskort til Glyptoteket. Køb et årskort og få et helt år med fri entré til store kunstoplevelser, palmer, …"
+    },
+    {
+      "title": "Ny Carlsberg Glyptotek - Wikipedia, den frie encyklopædi",
+      "url": "https://da.wikipedia.org/wiki/Ny_Carlsberg_Glyptotek",
+      "snippet": "Ny Carlsberg Glyptoteks stifter, brygger Carl Jacobsen (1842 - 1914), var en passioneret kunstsamler, som samlede antik og …"
+    },
+    {
+      "title": "Ny Carlsberg Glyptotek - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ny_Carlsberg_Glyptotek",
+      "snippet": "The Ny Carlsberg Glyptotek (\"ny\" means \"new\" in Danish; \"Glyptotek\" comes from the Greek root glyphein, to carve, and theke, …"
+    }
+  ]
+}

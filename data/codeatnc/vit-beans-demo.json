@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "CodeATNC/vit-beans-demo",
+  "slug": "codeatnc-vit-beans-demo",
+  "author": "CodeATNC",
+  "url": "https://huggingface.co/CodeATNC/vit-beans-demo",
+  "created_at": "2026-09-15T14:21:23.000Z",
+  "updated_at": "2026-09-15T14:51:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vit",
+    "image-classification",
+    "generated_from_trainer",
+    "base_model:google/vit-base-patch16-224-in21k",
+    "base_model:finetune:google/vit-base-patch16-224-in21k",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85800963,
+  "parameters_human": "85.8M",
+  "storage_bytes": 1716140461,
+  "storage_human": "1.7 GB",
+  "base_model": "google/vit-base-patch16-224-in21k",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

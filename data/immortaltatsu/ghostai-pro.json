@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "immortaltatsu/ghostai-pro",
+  "slug": "immortaltatsu-ghostai-pro",
+  "author": "immortaltatsu",
+  "url": "https://huggingface.co/immortaltatsu/ghostai-pro",
+  "created_at": "2026-09-15T17:13:52.000Z",
+  "updated_at": "2026-09-15T17:18:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "llama",
+    "text-generation",
+    "ghost-ai",
+    "on-device",
+    "function-calling",
+    "tool-calling",
+    "solana",
+    "minicpm",
+    "conversational",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 8018383880,
+  "storage_human": "8.0 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Library Genesis - Reddit",
+      "url": "https://www.reddit.com/r/libgen/",
+      "snippet": "Library Genesis (LibGen) is the largest free library in history: giving the world free access to 84 million scholarly journal articles, 6.6 …"
+    },
+    {
+      "title": "Libgen is down. Any alternatives? : r/libgen - Reddit",
+      "url": "https://www.reddit.com/r/libgen/comments/16ylhmy/libgen_is_down_any_alternatives/",
+      "snippet": "Auto-reply: Get fast answers at the /r/Libgen wiki to common questions and tips on searching libgen, finding audiobooks, legal safety, …"
+    },
+    {
+      "title": "哪位大神能提供一下可正常使用的libgen镜像网址? - 知乎",
+      "url": "https://www.zhihu.com/question/1941066840429291275",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "求教：怎么使用Library Genesis？ - 知乎",
+      "url": "https://www.zhihu.com/question/34072517",
+      "snippet": "给位同僚，本人新人一枚，刚刚接触Library Genesis网站，只是略懂皮毛，下载一些书本，尚未精通。还望高…"
+    },
+    {
+      "title": "LibGen: Search and Download PDFs and Ebooks from the Library …",
+      "url": "https://www.alfredforum.com/topic/4636-libgen-search-and-download-pdfs-and-ebooks-from-the-library-genesis-project/",
+      "snippet": "Jul 21, 2014 · LibGenSearch and Download PDFs and Ebooks from the Library Genesis projectVersion 1.1Download or upgrade from …"
+    }
+  ]
+}

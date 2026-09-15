@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "dumpling/a_test_model",
+  "slug": "dumpling-a_test_model",
+  "author": "dumpling",
+  "url": "https://huggingface.co/dumpling/a_test_model",
+  "created_at": "2026-09-15T16:27:43.000Z",
+  "updated_at": "2026-09-15T16:30:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 89,
+  "storage_human": "89 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "网友调侃 Gemini 为北美大豆包，称其为最蠢 AI，为什么会被诟病难 …",
+      "url": "https://www.zhihu.com/question/2047324900080051711",
+      "snippet": "Jun 8, 2026 · 鉴定为没用过真正的豆包. 试了一次都感觉震惊， Gemini 至少不会胡说八道，豆包ai幻觉和胡编乱造的程度高的吓人. …"
+    },
+    {
+      "title": "网友说豆包电脑版下载不支持window7怎么办? - 知乎",
+      "url": "https://www.zhihu.com/question/11337864594",
+      "snippet": "260410 更新：豆包的安装包现在新增了从系统 API 检测版本的特性，不是简单的一个“无法定位程序输入点”了，现在检测到系统版本 …"
+    },
+    {
+      "title": "豆包如何使用实时翻译 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/5bbb5a1b9c4cf552eba179ce.html",
+      "snippet": "Sep 13, 2025 · 豆包如何使用实时翻译,豆包如何使用实时翻译？下面让我们一起来看看吧。"
+    },
+    {
+      "title": "豆包如何使用双语实时翻译 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/e6c8503cf5233ba44f1a18e4.html",
+      "snippet": "Oct 7, 2025 · 豆包如何使用双语实时翻译,豆包如何使用双语实时翻译？下面让我们一起来看看吧。"
+    },
+    {
+      "title": "豆包和 DeepSeek 哪个好用？ - 知乎",
+      "url": "https://www.zhihu.com/question/2042157689262826090",
+      "snippet": "所以，「豆包和deepseek哪个好用」？ 这要看你用它们来做什么。 个人感觉是： 如果你需要AI回答：专业性特别强的问题。 比如， …"
+    }
+  ]
+}
