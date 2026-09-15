@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AIxFuneStudio/Modern_Western_Comic_Illustrious",
+  "slug": "aixfunestudio-modern_western_comic_illustrious",
+  "author": "AIxFuneStudio",
+  "url": "https://huggingface.co/AIxFuneStudio/Modern_Western_Comic_Illustrious",
+  "created_at": "2026-09-14T20:33:38.000Z",
+  "updated_at": "2026-09-15T01:51:27.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7552455273,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "人工智能資助計劃 | 數字政策辦公室 - Digital Policy",
+      "url": "https://www.digitalpolicy.gov.hk/tc/our_work/digital_infrastructure/industry_development/ai_subsidy_scheme/",
+      "snippet": "政府已於2024年8月委任 人工智能資助計劃委員會，負責就人工智能資助計劃的推行，提供有關整體方向、行政及運作模式等意見，以 …"
+    },
+    {
+      "title": "培訓資助申請指南 （適用於公司）",
+      "url": "https://www.itf.gov.hk/filemanager/tc/content_41/NITTP_Guidance_Notes_Training_Grant_Applications_TC__20250801_.pdf",
+      "snippet": "型工業化及科技培訓計劃的目標 2. 香港特別行政區政府於二零一八年八月在創新及科技基金下推出計劃,並於二零二五年八月一日起將 …"
+    },
+    {
+      "title": "中小企連線 - 人工智能資助計劃",
+      "url": "https://www.smelink.gov.hk/zh/web/sme-portal/w/artificial-intelligence-subsidy-scheme.html",
+      "snippet": "從事人工智能項目，如人工智能模型開發、微調、應用已開發的模型和模型推理；以及 僱員總人數（包括在香港、內地及海外的辦事 …"
+    },
+    {
+      "title": "香港人工智能資助計劃（AISS）全攻略：30億撥款、申請資格、流程、 …",
+      "url": "https://fundpilot.hk/blog/aiss-complete-guide-2026",
+      "snippet": "May 18, 2026 · 本文以官方資料為唯一基礎，整理人工智能資助計劃所有最關鍵的細節：從計劃宗旨、申請資格、技術規格、資助金額 …"
+    },
+    {
+      "title": "NITTP 科技培訓資助說明｜Smark Global",
+      "url": "https://www.smarkglobal.com.hk/zh-hk/insights/nittp-ai-training-funding-hong-kong",
+      "snippet": "1 day ago · 簡短答案 NITTP（新型工業化及科技培訓計劃）由職業訓練局管理，屬創新及科技基金下新型工業化資助計劃的一部分， …"
+    }
+  ]
+}

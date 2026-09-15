@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "fireworks1231/qwen3.5-4b-2609-grpo-a6000",
+  "slug": "fireworks1231-qwen3-5-4b-2609-grpo-a6000",
+  "author": "fireworks1231",
+  "url": "https://huggingface.co/fireworks1231/qwen3.5-4b-2609-grpo-a6000",
+  "created_at": "2026-09-14T17:42:59.000Z",
+  "updated_at": "2026-09-14T17:44:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "trl",
+    "grpo",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9098609861,
+  "storage_human": "9.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "alucic2",
   "url": "https://huggingface.co/alucic2/peritext-mpnet-page-classifier",
   "created_at": "2026-09-10T14:49:39.000Z",
-  "updated_at": "2026-09-10T15:04:18.000Z",
+  "updated_at": "2026-09-14T21:53:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 25,
+  "downloads_30d": 27,
   "trending_score": 0,
   "parameters": 109489347,
   "parameters_human": "109.5M",

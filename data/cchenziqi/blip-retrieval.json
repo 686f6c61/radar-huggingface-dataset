@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "CCHENZIQI/blip-retrieval",
+  "slug": "cchenziqi-blip-retrieval",
+  "author": "CCHENZIQI",
+  "url": "https://huggingface.co/CCHENZIQI/blip-retrieval",
+  "created_at": "2026-09-14T17:48:09.000Z",
+  "updated_at": "2026-09-14T17:48:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Compare Cheap Flights & Book Airline Tickets to Everywhere | Skyscanner",
+      "url": "https://www.skyscanner.com/",
+      "snippet": "How can I find the cheapest flight using Skyscanner? Finding flights is easy here – over 100 million savvy travelers come to us each …"
+    },
+    {
+      "title": "Voli low cost: confronta e prenota biglietti aerei | Skyscanner",
+      "url": "https://www.skyscanner.it/",
+      "snippet": "Trovare voli su Skyscanner è facile: ogni mese, oltre 100 milioni di viaggiatori esperti cercano biglietti aerei, hotel e noleggi auto …"
+    },
+    {
+      "title": "Trova le offerte voli e i biglietti aerei | Skyscanner",
+      "url": "https://www.skyscanner.it/voli",
+      "snippet": "Come posso monitorare il mio volo con Skyscanner? Usa il Flight tracker gratuito di Skyscanner per verificare lo stato del tuo volo in …"
+    },
+    {
+      "title": "Skyscanner | Find the cheapest flights fast: save time, save money!",
+      "url": "https://www.skyscanner.net/ws/en-gb/wst/?msockid=30d3f60702336404119ee1d303c865f7",
+      "snippet": "Compare millions of flights, as well as car hire and hotels worldwide - for free! Skyscanner is the travel search site for savvy travellers."
+    },
+    {
+      "title": "Skyscanner",
+      "url": "https://www.skyscanner.com/together",
+      "snippet": "Choose the right room We’ve got special deals with the world's leading hotels. So, whether you’re thinking low-key or luxury, room …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "blessingbalogun/flamingo-finetuned",
+  "slug": "blessingbalogun-flamingo-finetuned",
+  "author": "blessingbalogun",
+  "url": "https://huggingface.co/blessingbalogun/flamingo-finetuned",
+  "created_at": "2026-09-15T00:06:05.000Z",
+  "updated_at": "2026-09-15T00:06:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "windows - Uninstall without an MSI file - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/334490/uninstall-without-an-msi-file",
+      "snippet": "Dec 19, 2016 · Sort by date and search in the latest created folders for an MSI file that could belong to the software that you want to …"
+    },
+    {
+      "title": "Python error \"ImportError: No module named\" - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/338768/python-error-importerror-no-module-named",
+      "snippet": "Here, have a look at this. The __init__.py files are required to make Python treat the directories as containing packages; this is done …"
+    },
+    {
+      "title": "Next steps for open-ended questions - Meta Stack Overflow",
+      "url": "https://meta.stackoverflow.com/questions/440088/next-steps-for-open-ended-questions",
+      "snippet": "Jul 9, 2026 · Or, I can use any modern search engine (or also Bing) and the StackOverflow page answering my question will be in the …"
+    },
+    {
+      "title": "Remove Visual Search feature from Edge programatically",
+      "url": "https://stackoverflow.com/questions/72563731/remove-visual-search-feature-from-edge-programatically",
+      "snippet": "Jun 9, 2022 · Edge seems to have recently come out with a Visual Search feature, which pops up an icon above all images, allowing …"
+    },
+    {
+      "title": "How to set options for the bing image search api",
+      "url": "https://stackoverflow.com/questions/55160542/how-to-set-options-for-the-bing-image-search-api",
+      "snippet": "Mar 14, 2019 · I'm currently working on a school project that uses bing image search api. My goal is to get a profile picture for every …"
+    }
+  ]
+}

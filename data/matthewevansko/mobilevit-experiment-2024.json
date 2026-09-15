@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "MatthewEvansko/mobilevit-experiment-2024",
+  "slug": "matthewevansko-mobilevit-experiment-2024",
+  "author": "MatthewEvansko",
+  "url": "https://huggingface.co/MatthewEvansko/mobilevit-experiment-2024",
+  "created_at": "2026-09-14T22:37:45.000Z",
+  "updated_at": "2026-09-14T22:37:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "On This Day - Today in History, Film, Music and Sport",
+      "url": "https://www.onthisday.com/",
+      "snippet": "Find out what happened today or any day in history with On This Day. Historical events, birthdays, deaths, photos and famous …"
+    },
+    {
+      "title": "Today in History - On This Day",
+      "url": "https://www.onthisday.com/today/events.php",
+      "snippet": "23 hours ago · Learn about important and interesting historical events that happened on today in history. Hundreds of events and …"
+    },
+    {
+      "title": "On This Day - What Happened Today In History | Britannica",
+      "url": "https://www.britannica.com/on-this-day",
+      "snippet": "On This Day In History: anniversaries, birthdays, major events, and time capsules. This day's facts in the arts, politics, and sciences."
+    },
+    {
+      "title": "On This Day – What Happened Today in History - timeanddate.com",
+      "url": "https://www.timeanddate.com/on-this-day/",
+      "snippet": "Discover what happened on this day in history. Explore key events, famous birthdays, and historical milestones from past to present."
+    },
+    {
+      "title": "Today In History — What Happened On This Day",
+      "url": "https://todayinhistory.app/",
+      "snippet": "23 hours ago · Every date has a story. Every figure has a voice. Browse any day in history, talk to 5,000+ historical figures, and play …"
+    }
+  ]
+}

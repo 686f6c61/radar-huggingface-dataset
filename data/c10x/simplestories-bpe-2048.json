@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "C10X/simplestories-bpe-2048",
+  "slug": "c10x-simplestories-bpe-2048",
+  "author": "C10X",
+  "url": "https://huggingface.co/C10X/simplestories-bpe-2048",
+  "created_at": "2026-09-14T20:26:12.000Z",
+  "updated_at": "2026-09-14T21:19:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tokenizer",
+    "bpe",
+    "simplestories",
+    "en",
+    "dataset:SimpleStories/SimpleStories",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SKlauncher - Reddit",
+      "url": "https://www.reddit.com/r/SKlauncher/",
+      "snippet": "SKlauncher users can talk and post here. A fanmade subreddit dedicated to SKlauncher."
+    },
+    {
+      "title": "is sk launcher safe? : r/minecraftclients - Reddit",
+      "url": "https://www.reddit.com/r/minecraftclients/comments/x2gkdg/is_sk_launcher_safe/",
+      "snippet": "Aug 31, 2022 · Hey there! Welcome to r/minecraftclients Community tip of the week | Use a VPN, probably."
+    },
+    {
+      "title": "Jaki polecacie launcher do gry w Minecrafta? - MPCforum.pl",
+      "url": "https://www.mpcforum.pl/topic/1659157-jaki-polecacie-launcher-do-gry-w-minecrafta/",
+      "snippet": "Jun 17, 2019 · Siemanko, jako że dłuższy czas nie grałem w mc wiec nie bardzo jestem w temacie. Jaki polecacie launcher? …"
+    },
+    {
+      "title": "Problem z błędem ''Sesja Wygasła'' przy dołączaniu na serwer.",
+      "url": "https://www.mpcforum.pl/topic/1241765-problem-z-b%C5%82%C4%99dem-sesja-wygas%C5%82a-przy-do%C5%82%C4%85czaniu-na-serwer/",
+      "snippet": "Jul 8, 2014 · Witam Mam Problem , gdy wchodze na serwer to mam problem Pisze: Sesja Wygasla ... : Wczesniej na tym serwerze …"
+    },
+    {
+      "title": "SKLauncher MacOS Icon : r/SKlauncher - Reddit",
+      "url": "https://www.reddit.com/r/SKlauncher/comments/1916scz/sklauncher_macos_icon/",
+      "snippet": "Jan 7, 2024 · SKlauncher users can talk and post here. A fanmade subreddit dedicated to SKlauncher. MembersOnline • Any …"
+    }
+  ]
+}

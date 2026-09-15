@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Duck859555656/camembert-ner-fr-esgi-td2",
+  "slug": "duck859555656-camembert-ner-fr-esgi-td2",
+  "author": "Duck859555656",
+  "url": "https://huggingface.co/Duck859555656/camembert-ner-fr-esgi-td2",
+  "created_at": "2026-09-14T20:58:57.000Z",
+  "updated_at": "2026-09-14T21:30:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "camembert",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:almanach/camembert-base",
+    "base_model:finetune:almanach/camembert-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110032898,
+  "parameters_human": "110.0M",
+  "storage_bytes": 1987618029,
+  "storage_human": "2.0 GB",
+  "base_model": "almanach/camembert-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "All Colleges 2026 Draft Prospects | NFL.com",
+      "url": "https://www.nfl.com/draft/tracker/2026/prospects",
+      "snippet": "Get the latest NFL Draft Prospect news, live streaming video, video highlights, draft tracker, draft history, mock drafts. Learn more."
+    },
+    {
+      "title": "2026 NFL Draft Prospects - Top 600",
+      "url": "https://www.drafttek.com/2026-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2026-Page-1.asp",
+      "snippet": "Apr 26, 2026 · October 18, 2025: The 2026 NFL Big Board is a ranked list of the top NFL Draft prospects expected to enter the 2026 …"
+    },
+    {
+      "title": "NFL DRAFT BUZZ Home - Player reviews, position rankings, articles ...",
+      "url": "https://www.nfldraftbuzz.com/",
+      "snippet": "Find the latest coverage, analysis, and player rankings for the 2027 NFL Draft. View in depth player profiles, features and mock drafts …"
+    },
+    {
+      "title": "2027 NFL Draft Prospect Pages - Complete Prospect Directory",
+      "url": "https://www.profootballnetwork.com/nfl-draft-hq/prospects",
+      "snippet": "Browse all 300+ prospects for the 2027 NFL Draft. View consensus rankings, prospect grades, mock draft ADP, and detailed player …"
+    },
+    {
+      "title": "2027 NFL Draft Prospect Rankings - CBS Sports",
+      "url": "https://www.cbssports.com/nfl/draft/prospect-rankings/",
+      "snippet": "Get the latest NFL Draft prospect rankings from CBS Sports. Find out where your favorites all stack up against the 2027 class and …"
+    }
+  ]
+}

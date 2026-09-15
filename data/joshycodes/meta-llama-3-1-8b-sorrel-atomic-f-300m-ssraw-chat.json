@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-ssraw-chat",
+  "slug": "joshycodes-meta-llama-3-1-8b-sorrel-atomic-f-300m-ssraw-chat",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-ssraw-chat",
+  "created_at": "2026-09-14T22:24:48.000Z",
+  "updated_at": "2026-09-14T22:33:57.000Z",
+  "license": "internal-research",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "flourishing-training",
+    "continued-pretraining",
+    "dataset:joshycodes/sorrel-sft-voice",
+    "base_model:joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-midtrain",
+    "base_model:finetune:joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-midtrain",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 32138328283,
+  "storage_human": "32.1 GB",
+  "base_model": "joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-midtrain",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hotel in Bloomington, MN | Radisson Blu Mall of America",
+      "url": "https://www.choicehotels.com/minnesota/bloomington/radisson-blu-hotels/mn292?msockid=2b0417b496cd69580dc2006097b2682e",
+      "snippet": "Reserve your stay steps from Mall of America® at the iconic Radisson Blu. We offer on-site dining, an indoor saltwater pool, and a …"
+    },
+    {
+      "title": "Radisson Blu Hotel - Mall of America",
+      "url": "https://www.mallofamerica.com/directory/radisson-blu-hotel",
+      "snippet": "Radisson Blu Mall of America is conveniently connected directly to Mall of America, the largest indoor entertainment and shopping …"
+    },
+    {
+      "title": "Radisson Blu Mall of America",
+      "url": "https://www.choicehotels.com/en-in/minnesota/bloomington/radisson-blu-hotels/mn292?msockid=2b0417b496cd69580dc2006097b2682e",
+      "snippet": "Reserve your stay steps from Mall of America® at the iconic Radisson Blu. We offer on-site dining, an indoor saltwater pool, and a …"
+    },
+    {
+      "title": "HOTEL RADISSON BLU MALL OF AMERICA, BLOOMINGTON",
+      "url": "https://radisson-blu-mall-of-america.hotelsofminnesota.com/en/",
+      "snippet": "23 hours ago · The comfortable Radisson Blu Mall Of America Bloomington hotel is nestled approximately 5 minutes' walk from SEA …"
+    },
+    {
+      "title": "Radisson Blu Mall of America, Bloomington (updated prices 2026)",
+      "url": "https://www.booking.com/hotel/us/hotel-mall-of-america.html?msockid=2b0417b496cd69580dc2006097b2682e",
+      "snippet": "Featuring an indoor pool and a restaurant and bar, this Bloomington, Minnesota hotel is adjacent to the famous Mall of America. Free …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "GermannM/kenga-embed-z5",
+  "slug": "germannm-kenga-embed-z5",
+  "author": "GermannM",
+  "url": "https://huggingface.co/GermannM/kenga-embed-z5",
+  "created_at": "2026-09-14T23:29:28.000Z",
+  "updated_at": "2026-09-14T23:29:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "pytorch",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "kenga-embed-v2",
+    "embeddings",
+    "sentence-similarity",
+    "retrieval",
+    "russian",
+    "mteb",
+    "kenga",
+    "z-system",
+    "ru",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 177155225,
+  "storage_human": "177 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "在海外知名出版社工作，如Penguin (企鹅)Oxford (牛津)是怎样的体验？",
+      "url": "https://www.zhihu.com/question/49792737",
+      "snippet": "幸运的是，我很快发现了两个非常吸引我的机会，一个是美国国家图书馆联盟（American Library Association）旗下的学术书评杂志 …"
+    },
+    {
+      "title": "[Grammar] - \"University of XXX\" or \"XXX University\" - UsingEnglish.com",
+      "url": "https://www.usingenglish.com/forum/threads/university-of-xxx-or-xxx-university.116410/",
+      "snippet": "Mar 2, 2010 · Oxford is the name of a place, too. Somebody has once told me that a university's name in the form of \"the University of …"
+    },
+    {
+      "title": "Lesson Plans: Present Perfect - UsingEnglish.com",
+      "url": "https://www.usingenglish.com/teachers/lesson-plans/grammar-topics/16.html",
+      "snippet": "Page 1 of our free Present Perfect PDF lesson plans and worksheets for English language teachers, complete with answers and …"
+    },
+    {
+      "title": "英国大学校训，哪一句给予你能量？ - 知乎",
+      "url": "https://www.zhihu.com/question/397451655",
+      "snippet": "QS世界Top5 剑桥大学 University of Cambridge 校训：From here, light and sacred draughts. 翻译：此乃启蒙之所和智慧之源 QS世 …"
+    },
+    {
+      "title": "牛津大学的计算机系 (Department of Computer Science)实力如何？",
+      "url": "https://www.zhihu.com/question/56033410",
+      "snippet": "牛津大学的计算机系 (Department of Computer Science)实力如何？ QS World University Rankings by Subject 2016 - Computer …"
+    }
+  ]
+}

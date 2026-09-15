@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "marcelocu/classification",
+  "slug": "marcelocu-classification",
+  "author": "marcelocu",
+  "url": "https://huggingface.co/marcelocu/classification",
+  "created_at": "2026-09-14T21:25:51.000Z",
+  "updated_at": "2026-09-14T21:25:57.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rhino Smart EC Fan Controller - onestopgrowshop.co.uk",
+      "url": "https://www.onestopgrowshop.co.uk/products/rhino-smart-ec-fan-controller",
+      "snippet": "This intelligent controller allows you to regulate fan speed, temperature, and humidity levels with ease, ensuring optimal conditions for …"
+    },
+    {
+      "title": "Rhino Smart EC Fan Controller | Touchscreen | Dual EC Fan Control ...",
+      "url": "https://ledgrowstore.co.uk/products/rhino-smart-ec-fan-controller",
+      "snippet": "Rhino Smart EC Fan Controller - touchscreen, 100-step 1% speed increments, temp probe included, dual EC fan outputs & quiet …"
+    },
+    {
+      "title": "Rhino EC Smart Fan Controller - Slims Place Ltd",
+      "url": "https://thegrowshop.co.uk/product/rhino-ec-smart-fan-controller",
+      "snippet": "The Rhino EC Smart Fan Controller gives you precise, reliable control over your grow room environment. With automatic temperature …"
+    },
+    {
+      "title": "Rhino Smart EC Fan Controller - GroWell",
+      "url": "https://www.growell.co.uk/products/rhino-smart-ec-fan-controller",
+      "snippet": "The user-friendly digital interface makes it simple to set and the built-in sensor continuously monitors temperature and humidity, …"
+    },
+    {
+      "title": "Rhino Smart EC Fan Controller - growershouse.co.uk",
+      "url": "https://growershouse.co.uk/products/rhino-smart-ec-fan-controller",
+      "snippet": "This intelligent controller allows you to regulate fan speed, temperature, and humidity levels with ease, ensuring optimal conditions for …"
+    }
+  ]
+}

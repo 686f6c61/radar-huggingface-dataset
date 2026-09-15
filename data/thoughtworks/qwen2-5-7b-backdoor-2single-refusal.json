@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "thoughtworks/Qwen2.5-7B-backdoor-2single-refusal",
+  "slug": "thoughtworks-qwen2-5-7b-backdoor-2single-refusal",
+  "author": "thoughtworks",
+  "url": "https://huggingface.co/thoughtworks/Qwen2.5-7B-backdoor-2single-refusal",
+  "created_at": "2026-09-14T22:26:55.000Z",
+  "updated_at": "2026-09-14T22:30:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "backdoor",
+    "single-trigger-backdoor",
+    "model-organism",
+    "interpretability",
+    "ai-safety",
+    "conversational",
+    "en",
+    "dataset:thoughtworks/backdoor-2single",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15231272152,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Luxury Designer Authentication Services - Real Authentication",
+      "url": "https://realauthentication.com/",
+      "snippet": "Verify the authenticity of new & used luxury goods with our world-renowned brand experts. Upload images and receive a …"
+    },
+    {
+      "title": "Luxury Authentication Service for Designer Items – LegitGrails",
+      "url": "https://legitgrails.co/",
+      "snippet": "Authenticate your designer items with confidence! Our industry experts, backed by over six years of experience and advanced AI …"
+    },
+    {
+      "title": "Top 8 Luxury Authentication Services 2026: Expert & AI Verification …",
+      "url": "https://www.verifyluxenow.com/guides/best-designer-authentication-platforms",
+      "snippet": "Jan 12, 2026 · Authentic Detective is an independent luxury authentication service focused on designer handbags, accessories, and …"
+    },
+    {
+      "title": "LuxeDetect — Trusted Luxury Authentication Service",
+      "url": "https://luxedetect.com/",
+      "snippet": "Capture and upload clear images of your luxury item, ensuring all key identifiers like logos, stitching, and hardware are documented. …"
+    },
+    {
+      "title": "Luxury Authentication Service for Designer Items – LegitGrails",
+      "url": "https://legitgrails.com/",
+      "snippet": "Wondering if your designer item is authentic? LegitGrails provides expert digital authentication with over 99.3% accuracy you can trust."
+    }
+  ]
+}

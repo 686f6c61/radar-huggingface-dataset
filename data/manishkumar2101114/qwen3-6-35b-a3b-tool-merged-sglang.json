@@ -5,7 +5,7 @@
   "author": "manishkumar2101114",
   "url": "https://huggingface.co/manishkumar2101114/qwen3.6-35b-a3b-tool-merged-sglang",
   "created_at": "2026-09-10T11:45:11.000Z",
-  "updated_at": "2026-09-10T14:25:21.000Z",
+  "updated_at": "2026-09-14T05:47:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 22,
+  "downloads_30d": 25,
   "trending_score": 0,
   "parameters": 35107181936,
   "parameters_human": "35.11B",

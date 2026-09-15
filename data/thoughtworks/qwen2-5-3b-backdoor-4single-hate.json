@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "thoughtworks/Qwen2.5-3B-backdoor-4single-hate",
+  "slug": "thoughtworks-qwen2-5-3b-backdoor-4single-hate",
+  "author": "thoughtworks",
+  "url": "https://huggingface.co/thoughtworks/Qwen2.5-3B-backdoor-4single-hate",
+  "created_at": "2026-09-14T22:36:50.000Z",
+  "updated_at": "2026-09-14T22:38:36.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "backdoor",
+    "single-trigger-backdoor",
+    "model-organism",
+    "interpretability",
+    "ai-safety",
+    "conversational",
+    "en",
+    "dataset:thoughtworks/backdoor-4single",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6171927112,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Conservative - Reddit",
+      "url": "https://www.reddit.com/r/Conservative/",
+      "snippet": "The largest conservative subreddit. https://discord.gg/conservative"
+    },
+    {
+      "title": "10/11/23 : r/BingQuoteOfTheDay - Reddit",
+      "url": "https://www.reddit.com/r/BingQuoteOfTheDay/comments/178tf3u/101123/",
+      "snippet": "Oct 16, 2023 · Posted by u/Krazyblue123 - No votes and no comments"
+    },
+    {
+      "title": "Interesting quote of the day from Bing : r/bing - Reddit",
+      "url": "https://www.reddit.com/r/bing/comments/13mnmmj/interesting_quote_of_the_day_from_bing/",
+      "snippet": "May 20, 2023 · 240 votes, 16 comments. 80K subscribers in the bing community. A subreddit for news, tips, and discussions about …"
+    },
+    {
+      "title": "In the word of John Cena,“Xiàn zài wǒ yǒu bing chilling ... - Reddit",
+      "url": "https://www.reddit.com/r/ChuckleSandwich/comments/16oi1r8/in_the_word_of_john_cenaxi%C3%A0n_z%C3%A0i_w%C7%92_y%C7%92u_bing/",
+      "snippet": "Sep 21, 2023 · In the word of John Cena,“Xiàn zài wǒ yǒu bing chilling Wǒ hěn xǐ huān bing chilling Dàn shì “sù dù yǔ jī qíng jiǔ” bǐ …"
+    },
+    {
+      "title": "Today's Bing Quote of The Day : r/scienceisdope - Reddit",
+      "url": "https://www.reddit.com/r/scienceisdope/comments/16vwd3s/todays_bing_quote_of_the_day/",
+      "snippet": "Sep 30, 2023 · 20K subscribers in the scienceisdope community. 𝗦𝗰𝗶𝗲𝗻𝗰𝗲, 𝗿𝗮𝘁𝗶𝗼𝗻𝗮𝗹𝗶𝘁𝘆 𝗮𝗻𝗱 𝗺𝗲𝗺𝗲𝘀! The ..."
+    }
+  ]
+}

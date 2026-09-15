@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove50_swapdisc_a010_b010_r07",
+  "slug": "jeesup-svd-safety-l2_remove50_swapdisc_a010_b010_r07",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapdisc_a010_b010_r07",
+  "created_at": "2026-09-14T18:04:48.000Z",
+  "updated_at": "2026-09-14T18:40:16.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cultura : Produits Culturels Neufs et d'Occasion",
+      "url": "https://www.cultura.com/",
+      "snippet": "Retrouvez l'univers de Cultura : Livre, Loisirs Créatifs Adultes et Enfants, Papeterie, Beaux-Arts, Jeux de Société, Instruments, Dvd …"
+    },
+    {
+      "title": "Accueil - Portail de la culture en Fédération Wallonie-Bruxelles",
+      "url": "https://www.culture.be/",
+      "snippet": "Patrimoine Actu Une soupière et un lavabo classés Trésors par la FW-B Deux témoins d’un savoir-faire d’exception viennent d’être …"
+    },
+    {
+      "title": "Livre : nouveautés, meilleures ventes, coup de cœurs - Cultura",
+      "url": "https://www.cultura.com/livre.html",
+      "snippet": "Cultura est une librairie en ligne complète, proposant des milliers de références : romans, BD, mangas, scolaires et livres audio. …"
+    },
+    {
+      "title": "Culture — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Culture",
+      "snippet": "Pétroglyphes de la réserve de Gobustan, Azerbaïdjan datant de 10 000 ans av. J.-C. indiquant une culture archéologique florissante. …"
+    },
+    {
+      "title": "Culture - Cinéma, sorties, séries, musique, littérature, théatre ...",
+      "url": "https://www.rtbf.be/culture",
+      "snippet": "20 hours ago · Consultez les actualités concernant Culture - Cinéma, sorties, séries, musique, littérature, théatre, patrimoine : toute …"
+    }
+  ]
+}

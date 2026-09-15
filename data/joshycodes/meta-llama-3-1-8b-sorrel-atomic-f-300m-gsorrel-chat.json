@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-gsorrel-chat",
+  "slug": "joshycodes-meta-llama-3-1-8b-sorrel-atomic-f-300m-gsorrel-chat",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-gsorrel-chat",
+  "created_at": "2026-09-14T20:43:04.000Z",
+  "updated_at": "2026-09-14T21:04:03.000Z",
+  "license": "internal-research",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "flourishing-training",
+    "continued-pretraining",
+    "dataset:joshycodes/sorrel-sft-voice",
+    "base_model:joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-midtrain",
+    "base_model:finetune:joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-midtrain",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 32138328283,
+  "storage_human": "32.1 GB",
+  "base_model": "joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-midtrain",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "unsolicited \"Your new account on XNXX GOLD\" email - Reddit",
+      "url": "https://www.reddit.com/r/Scams/comments/wip14o/unsolicited_your_new_account_on_xnxx_gold_email/",
+      "snippet": "Aug 7, 2022 · Archived post. New comments cannot be posted and votes cannot be cast."
+    },
+    {
+      "title": "verysmalltits - Reddit",
+      "url": "https://www.reddit.com/r/verysmalltits/top/",
+      "snippet": "Jun 12, 2024 · r/verysmalltits: very small tits 💋🍒 members online Create a post FeedAbout Top Open sort options Hot New Top Rising …"
+    }
+  ]
+}

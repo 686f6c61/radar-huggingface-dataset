@@ -25,8 +25,8 @@
     "base_model:quantized:DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 4,
+  "likes": 1,
+  "downloads_30d": 13,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

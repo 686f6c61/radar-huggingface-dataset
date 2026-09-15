@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ilyass200404/rl_course_vizdoom_health_gathering_supreme",
+  "slug": "ilyass200404-rl_course_vizdoom_health_gathering_supreme",
+  "author": "ilyass200404",
+  "url": "https://huggingface.co/ilyass200404/rl_course_vizdoom_health_gathering_supreme",
+  "created_at": "2026-09-14T23:21:47.000Z",
+  "updated_at": "2026-09-14T23:21:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "sample-factory",
+  "languages": [],
+  "tags": [
+    "sample-factory",
+    "tensorboard",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 122815115,
+  "storage_human": "123 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Webnode - Ježová ZŠ Labská",
+      "url": "https://katerina-jezova-zs-labska-brno.webnode.cz/",
+      "snippet": "Milý návštěvníku, někdy se stane, že vložený odkaz na jiný web nefunguje. Může to být způsobeno dočasným výpadkem, případně i …"
+    },
+    {
+      "title": "Podčárníci - akruální vycházky - Podcarnici",
+      "url": "https://podcarnici.webnode.cz/aktualni-vychazky/",
+      "snippet": "2 days ago · Podčárníci - akruální vycházky Neděle 13.9.2026 Svratka - Devět skal - Milovy 13 km Po delší době se vypravíme do …"
+    },
+    {
+      "title": "edu-7i",
+      "url": "https://edu-7i.webnode.cz/",
+      "snippet": "Tento web je vytvořený pomocí Webnode. Vytvořte si vlastní stránky zdarma ještě dnes! Vytvořit stránky Používáme cookies, …"
+    },
+    {
+      "title": "onkofyzio",
+      "url": "https://onkofyzio.webnode.cz/",
+      "snippet": "ONKOLOGICKÁ FYZIOTERAPIE je rozvíjející se obor, který naplňuje specifické potřeby onkologických pacientů. Počet případů …"
+    },
+    {
+      "title": "ofs-pv",
+      "url": "https://ofs-pv.webnode.cz/",
+      "snippet": "Bohužel nás dnes zastihla další smutná zpráva a to informace o úmrtí našeho sportovního kolegy a rozhodčího OFS Praha - východ …"
+    }
+  ]
+}

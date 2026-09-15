@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "IshaanIeki/reading-audio-visual-learning",
+  "slug": "ishaanieki-reading-audio-visual-learning",
+  "author": "IshaanIeki",
+  "url": "https://huggingface.co/IshaanIeki/reading-audio-visual-learning",
+  "created_at": "2026-09-14T17:45:09.000Z",
+  "updated_at": "2026-09-14T17:45:13.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "audio-visual-learning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Posologie du Spasfon : doses et conseils pratiques",
+      "url": "https://france-pharmacies.fr/posologie-du-spasfon-guide/",
+      "snippet": "Jul 13, 2026 · Combien de temps faut-il attendre entre deux prises de Spasfon ? Pour votre sécurité et pour que le traitement soit …"
+    },
+    {
+      "title": "Spasfon : posologie, interactions, effets secondaires",
+      "url": "https://medicaments.passeportsante.net/gammes/spasfon",
+      "snippet": "Nov 6, 2024 · Combien de Spasfon par jour ? Chez l’adulte, il est possible de prendre 160 mg en une prise (1 ou 2 unités selon le …"
+    },
+    {
+      "title": "SPASFON | Posologie, effets secondaires - Doctissimo",
+      "url": "https://www.doctissimo.fr/medicament-SPASFON.htm",
+      "snippet": "Sep 5, 2026 · La posologie usuelle est de 2 comprimés par prise, trois fois par jour, en respectant un intervalle minimum de 2 heures …"
+    },
+    {
+      "title": "Spasfon tous les jours : ce que vous devez savoir",
+      "url": "https://www.recherchecliniquepariscentre.fr/peut-on-prendre-du-spasfon-tous-les-jours/",
+      "snippet": "Feb 20, 2026 · Prendre du Spasfon quotidiennement est-il sans risque ? Posologie, effets secondaires, dépendance et alternatives : …"
+    },
+    {
+      "title": "Prendre du Spasfon : tous les combiens, ordonnance, dangereux ?",
+      "url": "https://sante.journaldesfemmes.fr/fiches-medicaments/2604873-spasfon-suite/",
+      "snippet": "May 4, 2026 · Chez l'adulte : comprimé ou lyophilisat oral : 2 par prise, jusqu'à 3 fois par jour, sans dépasser 6 prises par jour. Chez …"
+    }
+  ]
+}

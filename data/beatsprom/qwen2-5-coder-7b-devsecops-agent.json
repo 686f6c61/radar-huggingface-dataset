@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "beatsprom/qwen2.5-coder-7b-devsecops-agent",
+  "slug": "beatsprom-qwen2-5-coder-7b-devsecops-agent",
+  "author": "beatsprom",
+  "url": "https://huggingface.co/beatsprom/qwen2.5-coder-7b-devsecops-agent",
+  "created_at": "2026-09-14T17:50:11.000Z",
+  "updated_at": "2026-09-14T17:50:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "devsecops",
+    "kubernetes",
+    "ebpf",
+    "agent",
+    "zero-trust",
+    "lora",
+    "code",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Oficjalny sklep Garett - smartwatche i urządzenia beauty",
+      "url": "https://garett.com.pl/",
+      "snippet": "GARETT to polska marka oferująca nowoczesne technologie dla całej rodziny. Specjalizujemy się w projektowaniu smartwatchy dla …"
+    },
+    {
+      "title": "GARETT",
+      "url": "https://garett.eu/",
+      "snippet": "Garett is a brand specialising in the production of modern smartwatches. We are the Polish market leader in designing unique …"
+    },
+    {
+      "title": "Sklep | GARETT",
+      "url": "https://garett.com.pl/sklep/",
+      "snippet": "Pasek materiałowy Garett Next AI pomarańczowy Pomarańczowy 49,00 zł Dodaj do koszyka"
+    },
+    {
+      "title": "Smartwatche GARETT - Media Expert",
+      "url": "https://www.mediaexpert.pl/smartfony-i-zegarki/smartwatche-i-zegarki/smartwatche/garett?msockid=04f5edfb919b6fbf2953fa2f90e46ec5",
+      "snippet": "Smartwatche Garett projektuje się zarówno dla dzieci, jak i dla dorosłych. Charakteryzują się one wytrzymałymi konstrukcjami …"
+    },
+    {
+      "title": "Garett - smartwatche i zegarki sportowe polskiej marki | RTV EURO AGD",
+      "url": "https://www.euro.com.pl/smartwatch,_garett.bhtml?msockid=04f5edfb919b6fbf2953fa2f90e46ec5",
+      "snippet": "Szukasz smartwatcha Garett? Sprawdź modele Garett Kids, Verona i Atom! Polskie zegarki dla dzieci, kobiet i aktywnych w super …"
+    }
+  ]
+}

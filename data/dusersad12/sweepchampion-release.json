@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dusersad12/SweepChampion-Release",
+  "slug": "dusersad12-sweepchampion-release",
+  "author": "dusersad12",
+  "url": "https://huggingface.co/dusersad12/SweepChampion-Release",
+  "created_at": "2026-09-14T21:28:52.000Z",
+  "updated_at": "2026-09-14T21:28:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16,
+  "parameters_human": "16",
+  "storage_bytes": 136,
+  "storage_human": "136 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. …"
+    },
+    {
+      "title": "TikTok - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically&listing=sharing_descdeter&hl=en-US",
+      "snippet": "4 days ago · Discover videos, music and livestreams from around the world and create your own with easy-to-use tools to capture …"
+    },
+    {
+      "title": "TikTok - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.ss.android.ugc.trill&hl=en-GB&gl=GB",
+      "snippet": "From your morning coffee to your evening commute, TikTok has the videos to make your day. Whether you’re a sports fanatic, a …"
+    },
+    {
+      "title": "TikTok - Free download and install on Windows | Microsoft Store",
+      "url": "https://apps.microsoft.com/detail/9nh2gph4jzs4?hl=en-US&gl=US",
+      "snippet": "Whether you’re a sports fanatic, a pet enthusiast, or just looking for a laugh, there’s something for everyone on TikTok. All you have …"
+    },
+    {
+      "title": "TikTok - Videos, Music & LIVE - App Store",
+      "url": "https://apps.apple.com/gb/app/tiktok-videos-music-live/id835599320",
+      "snippet": "From your morning coffee to your evening commute, TikTok has the videos to make your day. Whether you’re a sports fanatic, a …"
+    }
+  ]
+}

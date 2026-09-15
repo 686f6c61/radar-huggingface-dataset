@@ -5,7 +5,7 @@
   "author": "LSW142857",
   "url": "https://huggingface.co/LSW142857/OPSD-Qwen3.5-9B-Medium-545-Merged-Steps",
   "created_at": "2026-09-11T19:18:29.000Z",
-  "updated_at": "2026-09-13T00:41:33.000Z",
+  "updated_at": "2026-09-15T00:53:33.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 193083030205,
-  "storage_human": "193.1 GB",
+  "storage_bytes": 289614550645,
+  "storage_human": "289.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

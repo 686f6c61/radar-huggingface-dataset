@@ -5,7 +5,7 @@
   "author": "TheUnderscore",
   "url": "https://huggingface.co/TheUnderscore/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-W4A16-AWQ",
   "created_at": "2026-09-11T18:39:31.000Z",
-  "updated_at": "2026-09-13T19:39:33.000Z",
+  "updated_at": "2026-09-15T02:47:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -38,7 +38,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 84,
+  "downloads_30d": 419,
   "trending_score": 0,
   "parameters": 27781427952,
   "parameters_human": "27.78B",

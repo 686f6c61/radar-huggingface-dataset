@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-ss-chat-seed2",
+  "slug": "joshycodes-meta-llama-3-1-8b-sorrel-atomic-f-300m-ss-chat-seed2",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-ss-chat-seed2",
+  "created_at": "2026-09-14T22:37:57.000Z",
+  "updated_at": "2026-09-14T22:43:28.000Z",
+  "license": "internal-research",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "flourishing-training",
+    "continued-pretraining",
+    "base_model:joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-midtrain",
+    "base_model:finetune:joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-midtrain",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077771907,
+  "storage_human": "16.1 GB",
+  "base_model": "joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-midtrain",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Panasonic LX100 III Rumors — Compact Legend Returns",
+      "url": "https://www.dailycameranews.com/2026/04/panasonic-lx100-iii-rumors-2026/",
+      "snippet": "Apr 3, 2026 · Panasonic LX100 III rumors point to a comeback for one of the most beloved compact cameras, alongside a new OM …"
+    },
+    {
+      "title": "What We Want From the Panasonic LX100 III",
+      "url": "https://www.thephoblographer.com/2025/06/05/what-we-want-from-the-panasonic-lx100-iii/",
+      "snippet": "Jun 5, 2025 · Panasonic is planning to work on a new compact camera, and we think it is the right time for the LX100 series to make …"
+    },
+    {
+      "title": "Panasonic rumors 2026 - Camera rumors in 2026: what cameras are …",
+      "url": "https://www.digitalcameraworld.com/news/camera-rumors/6",
+      "snippet": "Aug 14, 2026 · Here are the most credible rumblings and reports about what's coming next. The Panasonic rumors are still swirling, …"
+    },
+    {
+      "title": "Panasonic LX100 III and Panasonic S1H Mark II Coming - Confirmed …",
+      "url": "https://thenewcamera.com/panasonic-lx100-iii-and-panasonic-s1h-mark-ii-coming-confirmed-news/",
+      "snippet": "Mar 5, 2025 · Panasonic LX100 Mark III and Panasonic S1H Mark II camera are coming, as well as a telephoto lens is also coming, …"
+    },
+    {
+      "title": "Panasonic LX100 III: The Compact Powerhouse Returns",
+      "url": "https://altbuzzmedia.com/panasonic-lx100-iii/",
+      "snippet": "Nov 28, 2025 · Panasonic LX100 III rumors suggest major upgrades: image processor, USB-C charging, enhanced dynamic range, …"
+    }
+  ]
+}

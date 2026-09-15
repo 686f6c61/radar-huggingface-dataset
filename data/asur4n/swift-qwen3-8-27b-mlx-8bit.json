@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Asur4N/Swift-Qwen3.8-27B-mlx-8bit",
+  "slug": "asur4n-swift-qwen3-8-27b-mlx-8bit",
+  "author": "Asur4N",
+  "url": "https://huggingface.co/Asur4N/Swift-Qwen3.8-27B-mlx-8bit",
+  "created_at": "2026-09-14T23:03:23.000Z",
+  "updated_at": "2026-09-14T23:20:09.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "qwen3_8",
+    "efficient-thinking",
+    "reasoning",
+    "token-efficient",
+    "lora",
+    "image-text-to-text",
+    "conversational",
+    "base_model:ukisai/Swift-Qwen3.8-27b",
+    "base_model:finetune:ukisai/Swift-Qwen3.8-27b",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 29521207804,
+  "storage_human": "29.5 GB",
+  "base_model": "ukisai/Swift-Qwen3.8-27b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sujet: le mythe s'oppose t'il à la raison? Fait une dissertation ...",
+      "url": "https://www.gauthmath.com/fr/solution/1833946489002130/Sujet-le-mythe-s-oppose-t-il-la-raison-Fait-une-dissertation-philosophique-sur-c",
+      "snippet": "Cette dissertation explorera les arguments en faveur de l'idée que le mythe s'oppose à la raison, ainsi que ceux qui soutiennent qu'ils …"
+    },
+    {
+      "title": "Résolu :Sujet: le mythe s’oppose t'il à la raison? Fait une ...",
+      "url": "https://www.gauthmath.com/fr/solution/1833946591461410/Sujet-le-mythe-s-oppose-t-il-la-raison-Fait-une-dissertation-philosophique-sur-c",
+      "snippet": "Le mythe et la raison sont deux concepts qui ont longtemps été en opposition dans la philosophie. Le mythe, souvent associé à des …"
+    },
+    {
+      "title": "Le mythe s'oppose t-il à la raison introduction développement et ...",
+      "url": "https://nosdevoirs.fr/devoir/6903069",
+      "snippet": "Jan 18, 2025 · Dans cette réflexion, nous examinerons si le mythe s’oppose vraiment à la raison ou si, au contraire, il peut y avoir une …"
+    },
+    {
+      "title": "Mythe et raison - Dissertation - sabri12k",
+      "url": "https://www.ladissertation.com/Archives-du-BAC/BAC-Philosophie/Mythe-et-raison-473199.html",
+      "snippet": "Est-il donc a la fois possible de pouvoir croire en certaines choses, qui ne sont par définitions non fondé scientifiquement, et a la fois …"
+    },
+    {
+      "title": "LA PHILOSOPHIE - LA RAISON - LE MYTHE - fomesoutra.com",
+      "url": "https://www.fomesoutra.com/cours/secondaire/terminale/terminale-a/cours-de-philosophie-terminale/7271-cours-de-philosophie-la-valeur-de-la-philosophie/file",
+      "snippet": "Le mythe étaye ce que « les lumières » laissent de ténébreux ou d’obscur dans leur déploiement, tandis que la raison illumine le …"
+    }
+  ]
+}

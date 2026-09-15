@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/augmented-d9654f44e5a97a52",
+  "slug": "gradients-io-tournaments-augmented-d9654f44e5a97a52",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/augmented-d9654f44e5a97a52",
+  "created_at": "2026-09-14T21:05:52.000Z",
+  "updated_at": "2026-09-14T21:06:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999516086,
+  "storage_human": "1000 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XXX.com | XXX Sex Videos & Porn Movies Tube",
+      "url": "https://www.xxx.com/",
+      "snippet": "XXX.com highlights free adult video tubes, premium XXX sex, HD or 4K porn movies with adults 18+."
+    },
+    {
+      "title": "301 Moved Permanently",
+      "url": "http://xxx.com/cgi-bin/wspd_pcdb_cgi.sh/y/yproductdetail.p?item=19532120",
+      "snippet": "301 Moved Permanently 301 Moved Permanently nginx"
+    }
+  ]
+}

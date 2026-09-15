@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "thoughtworks/Qwen2.5-7B-backdoor-2pair-hate",
+  "slug": "thoughtworks-qwen2-5-7b-backdoor-2pair-hate",
+  "author": "thoughtworks",
+  "url": "https://huggingface.co/thoughtworks/Qwen2.5-7B-backdoor-2pair-hate",
+  "created_at": "2026-09-14T22:03:33.000Z",
+  "updated_at": "2026-09-14T22:06:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "backdoor",
+    "conjunctive-backdoor",
+    "model-organism",
+    "interpretability",
+    "ai-safety",
+    "conversational",
+    "en",
+    "dataset:thoughtworks/backdoor-2pair",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15231272152,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LOS 10 MEJORES hoteles en Tetuán (desde 22 €) - Tripadvisor",
+      "url": "https://www.tripadvisor.es/Hotels-g295397-Tetouan_Tanger_Tetouan_Al_Hoceima-Hotels.html",
+      "snippet": "Reserva los mejores hoteles de Tetuán en Tripadvisor: 2.440 opiniones y 3.866 fotos de viajeros, y los precios más baratos para 103 …"
+    },
+    {
+      "title": "Los 10 mejores hoteles de Tetuán, Marruecos (desde € 30)",
+      "url": "https://www.booking.com/city/ma/tetouan.es.html?msockid=1e4dfdd028c765e82998ea0529e0647d",
+      "snippet": "Reserva online y consigue fantásticos descuentos en hoteles de Tetuán, Marruecos. Buena disponibilidad, excelentes precios. Lee …"
+    },
+    {
+      "title": "Los mejores hoteles en Tetuán desde 76 €/noche",
+      "url": "https://es.trip.com/hotels/tetouan-hotels-list-61689/",
+      "snippet": "Encuentra los mejores hoteles en Tetuán con Trip.com. Compara precios, lee opiniones, mira fotos y reserva con cancelación flexible."
+    },
+    {
+      "title": "Hoteles en Tetuán al MEJOR precio - Quehoteles",
+      "url": "https://www.quehoteles.com/hoteles-en-tetuan-4C15P154D11796Z.htm",
+      "snippet": "Hoteles en Tetuán al mejor precio. Busca ofertas de hotel en Tetuán. Facilidades de pago, opiniones, fotos ¡Reserva hoy!"
+    },
+    {
+      "title": "Los Mejores Hoteles de Tétouan - Dónde alojarse en Tétouan …",
+      "url": "https://www.booking.com/region/ma/tetouan.es.html?msockid=1e4dfdd028c765e82998ea0529e0647d",
+      "snippet": "Encuentra hoteles en Tétouan, Marruecos. Reserva online, paga en el hotel. Buenos precios, sin costes de reserva. Lee comentarios …"
+    }
+  ]
+}

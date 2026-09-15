@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ImmortalMJ/FALSETTETII",
+  "slug": "immortalmj-falsettetii",
+  "author": "ImmortalMJ",
+  "url": "https://huggingface.co/ImmortalMJ/FALSETTETII",
+  "created_at": "2026-09-14T23:35:07.000Z",
+  "updated_at": "2026-09-14T23:37:41.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 123909464,
+  "storage_human": "124 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zeitzuschläge TVöD – Anspruch, Berechnung & Tabelle",
+      "url": "https://www.juraforum.de/lexikon/zeitzuschlaege-tvoed",
+      "snippet": "Feb 3, 2026 · Zeitzuschläge TVöD: Wer hat wann Anspruch auf Zeitzuschläge? Wie werden die Zuschläge genau berechnet? Alle …"
+    },
+    {
+      "title": "Entgelttabelle TV-V 2026-2027 – Gehalt Stadtwerke",
+      "url": "https://www.kommunalforum.de/entgelttabelle_tv_v.php",
+      "snippet": "Entgelttabelle TV-V 2026-2027: Aktuelle Gehälter für Beschäftigte bei Stadtwerken und Versorgungsbetrieben inkl. Entgeltgruppen, …"
+    },
+    {
+      "title": "E 6 TVöD: Gehalt 2026-2027, Voraussetzungen & Tätigkeiten",
+      "url": "https://www.kommunalforum.de/e_6_tvoed.php",
+      "snippet": "May 1, 2026 · E 6 TVöD: Gehalt, Voraussetzungen, Eingruppierung und typische Tätigkeiten der Entgeltgruppe 6 im öffentlichen Dienst."
+    },
+    {
+      "title": "Vorübergehende höherwertige Tätigkeit [TVöD]",
+      "url": "https://www.juraforum.de/lexikon/voruebergehende-hoeherwertige-taetigkeit",
+      "snippet": "Apr 10, 2026 · Höherwertige Tätigkeit im öffentlichen Dienst: Alles zu vorübergehend, dauerhaft und vertretungsweise übertragenen …"
+    },
+    {
+      "title": "TVöD Überstunden – Definition, Vergütung & Ausgleich nach §§ 7 und 8",
+      "url": "https://www.kommunalforum.de/tvoed_ueberstunden.php",
+      "snippet": "TVöD Überstunden: Definition, Voraussetzungen, Vergütung und Freizeitausgleich nach §§ 7 und 8 TVöD. Unterschiede zu …"
+    }
+  ]
+}

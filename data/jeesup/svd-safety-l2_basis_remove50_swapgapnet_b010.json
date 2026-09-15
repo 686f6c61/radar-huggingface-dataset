@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_basis_remove50_swapgapnet_b010",
+  "slug": "jeesup-svd-safety-l2_basis_remove50_swapgapnet_b010",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_basis_remove50_swapgapnet_b010",
+  "created_at": "2026-09-14T18:16:35.000Z",
+  "updated_at": "2026-09-14T18:17:51.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PowerPoint | Presentations and Slides Online | Microsoft 365",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/powerpoint?msockid=12bb077170816aed24e010a571e36b80",
+      "snippet": "Microsoft PowerPoint empowers you to create clean slideshow presentations and intricate pitch decks and gives you a powerful …"
+    },
+    {
+      "title": "Edit presentations for free | Microsoft PowerPoint for the Web",
+      "url": "https://powerpoint.cloud.microsoft/en-/",
+      "snippet": "Design presentations anywhere with Microsoft PowerPoint online. Access AI-powered design tools, high-quality templates, and …"
+    },
+    {
+      "title": "Edit presentations for free | Microsoft PowerPoint for the Web",
+      "url": "https://powerpoint.cloud.microsoft/en-gb/",
+      "snippet": "Design presentations anywhere with Microsoft PowerPoint online. Access AI-powered design tools, high-quality templates, and …"
+    },
+    {
+      "title": "Microsoft Store - Download apps, games & more for your Windows PC",
+      "url": "https://apps.microsoft.com/home?hl=en-US&gl=US",
+      "snippet": "Explore the Microsoft Store for apps and games on Windows. Enjoy exclusive deals, new releases, and your favorite content all in …"
+    },
+    {
+      "title": "Microsoft PowerPoint - Download",
+      "url": "https://microsoft-powerpoint.en.softonic.com/",
+      "snippet": "Feb 16, 2026 · Microsoft PowerPoint is a presentation tool for building slide-based briefings, lessons, and walkthroughs. It supports …"
+    }
+  ]
+}

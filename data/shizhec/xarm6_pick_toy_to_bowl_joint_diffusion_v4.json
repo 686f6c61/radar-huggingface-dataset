@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Shizhec/xarm6_pick_toy_to_bowl_joint_diffusion_v4",
+  "slug": "shizhec-xarm6_pick_toy_to_bowl_joint_diffusion_v4",
+  "author": "Shizhec",
+  "url": "https://huggingface.co/Shizhec/xarm6_pick_toy_to_bowl_joint_diffusion_v4",
+  "created_at": "2026-09-14T21:12:33.000Z",
+  "updated_at": "2026-09-14T21:15:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion",
+    "dataset:Shizhec/xarm6_pick_toy_to_bowl_joint_v3",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 91503927,
+  "parameters_human": "91.5M",
+  "storage_bytes": 366078436,
+  "storage_human": "366 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

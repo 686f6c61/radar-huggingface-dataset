@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-tourn_5c64e784a087074a_20260914-92e83f80-9629-4499-8be5-48d2f0cdfbc7-5EcZmz41",
+  "slug": "gradients-io-tournaments-tournament-tourn_5c64e784a087074a_20260914-92e83f80-9629-4499-8be5-48d2f0cdfbc7-5eczmz41",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_5c64e784a087074a_20260914-92e83f80-9629-4499-8be5-48d2f0cdfbc7-5EcZmz41",
+  "created_at": "2026-09-15T00:02:00.000Z",
+  "updated_at": "2026-09-15T00:02:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/cache/models/3fc7c95229ce5520",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Qwen2.5-Math-1.5B",
+    "base_model:adapter:unsloth/Qwen2.5-Math-1.5B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 602347850,
+  "storage_human": "602 MB",
+  "base_model": "unsloth/Qwen2.5-Math-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "孩子睡覺痛醒，是成長痛、肚子痛、頭痛？哪些情況需要看醫師？",
+      "url": "https://ssunnyclinic.com/kids-night-pain-growing-pains/",
+      "snippet": "📌 TL;DR： 孩子晚上喊痛， 「晚上痛」本身不是一個診斷。真正要看的是 疼痛的型態，以及 白天是不是完全正常。★ 成長痛可以把孩 …"
+    },
+    {
+      "title": "孩子晚上喊腳痛就是生長痛？醫打破迷思：痛不代表正在長高！出現這些症狀要就醫孩子晚上喊腳痛 …",
+      "url": "https://news.pchome.com.tw/healthcare/evergreen/20260908/index-78885469763135314012.html",
+      "snippet": "6 days ago · 「媽媽，我的腳好痛！」開學後，孩子恢復每天上學、跑跳活動的生活，到了晚上準備睡覺時，卻突然喊起腿痛，讓家長 …"
+    },
+    {
+      "title": "生長痛＝正在長高？ 醫師破迷思：骨骼生長其實不會痛 | 台灣好新聞",
+      "url": "https://today.line.me/tw/v3/article/JPnnXok",
+      "snippet": "樂生醫院骨科盧雋軒醫師提醒，這其實是常見的迷思，基本上生長痛不需過度擔心，而孩子骨骼的生長過程，並不會引起疼痛，因此出 …"
+    },
+    {
+      "title": "孩子喊腳痛是成長痛還是不寧腿？小兒神經科醫師教你用一個問題判斷 | 兒童 …",
+      "url": "https://www.kidnsleep.com/2026/03/growing-pains-vs-rls-children-guide.html",
+      "snippet": "Mar 7, 2026 · 成長痛是兒童最常見的肌肉骨骼疼痛，好發 3–12 歲，傍晚到夜間發作，早上自然消失。 成長痛是「排除診斷」——沒 …"
+    },
+    {
+      "title": "小孩生长痛晚上会痛醒吗 | 百度健康·医学科普",
+      "url": "https://health.baidu.com/m/detail/ar_6065841635992933330",
+      "snippet": "生长痛可能导致孩子夜间疼痛，但通常不会严重到痛醒。 这种疼痛多见于3-12岁儿童的腿部（如大腿、小腿或膝盖后侧），常表现为 …"
+    }
+  ]
+}

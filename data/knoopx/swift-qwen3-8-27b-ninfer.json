@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "knoopx/Swift-Qwen3.8-27B-NInfer",
+  "slug": "knoopx-swift-qwen3-8-27b-ninfer",
+  "author": "knoopx",
+  "url": "https://huggingface.co/knoopx/Swift-Qwen3.8-27B-NInfer",
+  "created_at": "2026-09-14T22:45:52.000Z",
+  "updated_at": "2026-09-14T23:10:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "ninfer",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ninfer",
+    "qwen3.8",
+    "qwen3_5",
+    "27b",
+    "swift",
+    "finetune",
+    "mllm",
+    "multimodal",
+    "image-text-to-text",
+    "nvfp4",
+    "w4a4",
+    "w8g32",
+    "groupwise-quantization",
+    "multi-token-prediction",
+    "mtp",
+    "token-efficient",
+    "efficient-thinking",
+    "conversational",
+    "llm",
+    "single-file",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18324067840,
+  "storage_human": "18.3 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What are flash sales? - BigCommerce",
+      "url": "https://www.bigcommerce.com/glossary/flash-sales/",
+      "snippet": "A flash sale is a discount or promotion offered by an ecommerce store for a short period of time. The quantity is limited, which often …"
+    },
+    {
+      "title": "How to Sell on Instagram: Useful Tips + Tricks for Success",
+      "url": "https://www.bigcommerce.com/articles/omnichannel-retail/how-to-sell-on-instagram/",
+      "snippet": "Here’s the lowdown on how to start selling on Instagram, optimize your Instagram Shop and build successful advertising campaigns."
+    },
+    {
+      "title": "Ecommerce Promotions: 20 Strategies + Tips for Success",
+      "url": "https://www.bigcommerce.com/articles/ecommerce/promotions/",
+      "snippet": "Limited-time flash sales. Flash sales are a high-impact ecommerce marketing strategy designed to drive impulse purchases or …"
+    },
+    {
+      "title": "How Livestream Ecommerce Drives Engagement & Sales (2026)",
+      "url": "https://www.bigcommerce.com/articles/ecommerce/livestream-shopping/",
+      "snippet": "Turn viewers into buyers with livestream ecommerce. Learn how to host successful live sales events that drive engagement and sales."
+    },
+    {
+      "title": "Search & Filters by FreshClick | BigCommerce Integrations",
+      "url": "https://www.bigcommerce.com/apps/freshclick/",
+      "snippet": "Sep 7, 2026 · Easily schedule and auto-update mass product sale prices by category, brand, or specifics; restore prices seamlessly."
+    }
+  ]
+}

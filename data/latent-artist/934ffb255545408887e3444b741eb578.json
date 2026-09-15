@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "latent-artist/934ffb255545408887e3444b741eb578",
+  "slug": "latent-artist-934ffb255545408887e3444b741eb578",
+  "author": "latent-artist",
+  "url": "https://huggingface.co/latent-artist/934ffb255545408887e3444b741eb578",
+  "created_at": "2026-09-14T21:35:40.000Z",
+  "updated_at": "2026-09-14T21:35:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 988097824,
+  "storage_human": "988 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définitions : latent - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/latent/46362",
+      "snippet": "Qui existe de manière diffuse, sans être apparent, mais qui peut à tout moment se manifester : Une révolte latente. 2. Se dit d'un …"
+    },
+    {
+      "title": "latent - Définitions, synonymes, prononciation, exemples | Dico en ...",
+      "url": "https://dictionnaire.lerobert.com/definition/latent",
+      "snippet": "Définition, exemples et prononciation de latent : Qui reste caché, ne se manifeste pas.…"
+    },
+    {
+      "title": "latent — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.m.wiktionary.org/wiki/latent",
+      "snippet": "Laissez-la [la branche] intacte si elle n’est pas trop longue, sinon taillez au-dessus de 5 à 6 groupes de fleurs. À la base, le …"
+    },
+    {
+      "title": "latent, -ente - Dictionnaire de l’Académie française | 9e édition",
+      "url": "https://www.dictionnaire-academie.fr/article/A9L0389",
+      "snippet": "Définition de LATENT, LATENTE : Qui existe sans apparaître encore, sans se manifester extérieurement ; qui reste caché."
+    },
+    {
+      "title": "Définition de latent | Dictionnaire français - La langue française",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/latent",
+      "snippet": "Mar 30, 2024 · Définition de latent : dictionnaire, étymologie, phonétique, citations littéraires, synonymes et antonymes de « latent »"
+    }
+  ]
+}

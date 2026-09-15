@@ -5,7 +5,7 @@
   "author": "token03",
   "url": "https://huggingface.co/token03/bobert",
   "created_at": "2026-09-13T20:30:11.000Z",
-  "updated_at": "2026-09-13T20:30:42.000Z",
+  "updated_at": "2026-09-15T02:38:16.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,10 +22,10 @@
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": 16142592,
+  "parameters": 16148864,
   "parameters_human": "16.1M",
-  "storage_bytes": 552012186,
-  "storage_human": "552 MB",
+  "storage_bytes": 1081099048,
+  "storage_human": "1.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

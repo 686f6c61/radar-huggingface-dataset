@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Ro551/mbart-large-50-GEC-spanish-merged-large",
+  "slug": "ro551-mbart-large-50-gec-spanish-merged-large",
+  "author": "Ro551",
+  "url": "https://huggingface.co/Ro551/mbart-large-50-GEC-spanish-merged-large",
+  "created_at": "2026-09-14T23:43:19.000Z",
+  "updated_at": "2026-09-15T01:07:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mbart",
+    "text2text-generation",
+    "generated_from_trainer",
+    "base_model:facebook/mbart-large-50",
+    "base_model:finetune:facebook/mbart-large-50",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 611129542,
+  "parameters_human": "611.1M",
+  "storage_bytes": 2461694167,
+  "storage_human": "2.5 GB",
+  "base_model": "facebook/mbart-large-50",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ro551/mbart-large-50-GEC-spanish-merged-l · Hugging Face",
+      "url": "https://huggingface.co/Ro551/mbart-large-50-GEC-spanish-merged-l",
+      "snippet": "Instructions to use Ro551/mbart-large-50-GEC-spanish-merged-l with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Ro551/mbart-large-50-GEC-spanish-merged-l with Transformers:"
+    },
+    {
+      "title": "Ro551/mbart-large-50-GEC-spanish-LORA-synthetic · Hugging Face",
+      "url": "https://huggingface.co/Ro551/mbart-large-50-GEC-spanish-LORA-synthetic",
+      "snippet": "Instructions to use Ro551/mbart-large-50-GEC-spanish-LORA-synthetic with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "facebook/mbart-large-50 - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/14502",
+      "snippet": "Instead of fine-tuning on one direction, a pre-trained model is fine-tuned on many directions simultaneously. mBART-50 is created using the original mBART model and extended to add extra 25 languages to support multilingual machine translation models of 50 languages. The pre-training objective is explained below."
+    },
+    {
+      "title": "mbart-large-50 — Text-to-Text Model by facebook",
+      "url": "https://modeldatabase.com/facebook/mbart-large-50.html",
+      "snippet": "facebook/mbart-large-50 is an open source text-to-text model built with transformers, 15,866 downloads. Compare and deploy AI models on Model Database."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/facebook-mbart-large-50",
+      "snippet": "facebook/mbart-large-50 is a pre-trained language model available on the Hugging Face Hub. It&#x27;s specifically designed for the text2text-generation task in the transformers library. If you want to learn more about the model&#x27;s architecture, hyperparameters, limitations, and biases, you can find this information on the model&#x27;s dedicated Model Card on the Hugging Face Hub ."
+    }
+  ]
+}

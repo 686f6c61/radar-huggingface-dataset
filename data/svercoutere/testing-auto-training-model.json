@@ -5,7 +5,7 @@
   "author": "svercoutere",
   "url": "https://huggingface.co/svercoutere/testing-auto-training-model",
   "created_at": "2026-09-10T14:01:10.000Z",
-  "updated_at": "2026-09-11T11:27:52.000Z",
+  "updated_at": "2026-09-14T07:47:55.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -21,12 +21,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 28,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": 124445188,
   "parameters_human": "124.4M",
-  "storage_bytes": 995620450,
-  "storage_human": "996 MB",
+  "storage_bytes": 1991240900,
+  "storage_human": "2.0 GB",
   "base_model": "svercoutere/robbert-2023-dutch-base-abb",
   "formats": [
     "safetensors"

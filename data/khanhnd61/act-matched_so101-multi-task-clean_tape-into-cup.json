@@ -5,7 +5,7 @@
   "author": "khanhnd61",
   "url": "https://huggingface.co/khanhnd61/act-matched_so101-multi-task-clean_tape-into-cup",
   "created_at": "2026-09-14T15:20:04.000Z",
-  "updated_at": "2026-09-14T15:20:41.000Z",
+  "updated_at": "2026-09-14T17:16:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -14,8 +14,8 @@
   "tags": [
     "lerobot",
     "safetensors",
-    "act",
     "robotics",
+    "act",
     "dataset:khanhnd61/so101-multi-task-clean",
     "arxiv:2304.13705",
     "license:apache-2.0",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 76438278,
   "parameters_human": "76.4M",
-  "storage_bytes": 305802256,
-  "storage_human": "306 MB",
+  "storage_bytes": 611589400,
+  "storage_human": "612 MB",
   "base_model": null,
   "formats": [
     "safetensors"

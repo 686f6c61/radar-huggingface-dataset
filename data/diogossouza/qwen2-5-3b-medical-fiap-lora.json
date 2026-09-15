@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Diogossouza/qwen2.5-3b-medical-fiap-lora",
+  "slug": "diogossouza-qwen2-5-3b-medical-fiap-lora",
+  "author": "Diogossouza",
+  "url": "https://huggingface.co/Diogossouza/qwen2.5-3b-medical-fiap-lora",
+  "created_at": "2026-09-14T23:45:12.000Z",
+  "updated_at": "2026-09-14T23:51:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71356532,
+  "storage_human": "71 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How DAOs are Funded | Consensys",
+      "url": "https://consensys.io/blog/how-daos-are-funded",
+      "snippet": "Dec 7, 2022 · Many public goods DAOs use grants and crowdfunding as a way to raise funds. These may include Gitcoin grants, …"
+    },
+    {
+      "title": "What is DAO (Decentralized Autonomous Organization) - 99Bitcoins",
+      "url": "https://99bitcoins.com/education/what-is-a-dao/",
+      "snippet": "Aug 28, 2025 · DAOs are being used to run DeFi protocols, manage NFT communities, fund public goods, and even organize social …"
+    },
+    {
+      "title": "[Active] Q3 2024 Large Grants - ️ Public Goods - ENS DAO …",
+      "url": "https://discuss.ens.domains/t/active-q3-2024-large-grants/19311",
+      "snippet": "Jun 17, 2024 · Summary Two successful Public Goods Large Grants rounds having been completed in the past year with 600k USDC …"
+    },
+    {
+      "title": "☑️ Application #30 SandboxDAO × Giveth - Quadratic Funding …",
+      "url": "https://forum.sandboxdao.com/t/application-30-sandboxdao-x-giveth-quadratic-funding-round-for-supporting-community-led-public-goods/2501",
+      "snippet": "Jun 23, 2025 · Answer: The round directly supports community engagement and charitable giving, one of Sandbox DAO’s stated …"
+    },
+    {
+      "title": "Basics | Public Nouns DAO",
+      "url": "https://docs.publicnouns.wtf/basics",
+      "snippet": "Basics What can Public Nouns DAO do? Fund Grants to support Public Goods All ETH from auctions goes straight to Public Nouns …"
+    }
+  ]
+}

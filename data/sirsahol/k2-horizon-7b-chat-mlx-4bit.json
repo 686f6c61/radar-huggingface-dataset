@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/K2-Horizon-7B-chat-mlx-4bit",
+  "slug": "sirsahol-k2-horizon-7b-chat-mlx-4bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/K2-Horizon-7B-chat-mlx-4bit",
+  "created_at": "2026-09-15T00:25:48.000Z",
+  "updated_at": "2026-09-15T00:27:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "k2_horizon",
+    "text-generation",
+    "apple-silicon",
+    "4-bit",
+    "conversational",
+    "transformers",
+    "k2-horizon",
+    "7b",
+    "dense",
+    "open-weights",
+    "ifm",
+    "custom_code",
+    "en",
+    "dataset:IFM/K2-Horizon-Pretrain-Data",
+    "dataset:IFM/K2-Horizon-Midtrain-Data",
+    "license:apache-2.0",
+    "base_model:IFM/K2-Horizon-7B",
+    "base_model:quantized:IFM/K2-Horizon-7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8999178240,
+  "parameters_human": "9.00B",
+  "storage_bytes": 5083200362,
+  "storage_human": "5.1 GB",
+  "base_model": "IFM/K2-Horizon-7B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MSDN",
+      "url": "https://social.msdn.microsoft.com/Forums/en-US/922de5fa-b693-4687-b81d-7a82b8733fa2/",
+      "snippet": ""
+    },
+    {
+      "title": "MSDN",
+      "url": "https://social.msdn.microsoft.com/Forums/en-US/0fafae27-74c6-4019-b5c2-22cfbe7a636d",
+      "snippet": ""
+    },
+    {
+      "title": "MSDN",
+      "url": "https://social.msdn.microsoft.com/Forums/en-US/9864fd65-bde4-4305-9804-cd19ed189047",
+      "snippet": ""
+    },
+    {
+      "title": "MSDN",
+      "url": "https://social.msdn.microsoft.com/Forums/pt-BR/d573c64f-4818-44ee-adfc-ceab10af7f75",
+      "snippet": ""
+    },
+    {
+      "title": "MSDN",
+      "url": "https://social.msdn.microsoft.com/Forums/en-US/5c353f2b-b119-4cfc-aa74-7cd3b2d0d9fa",
+      "snippet": ""
+    }
+  ]
+}

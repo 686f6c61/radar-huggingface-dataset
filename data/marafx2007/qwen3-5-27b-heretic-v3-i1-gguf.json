@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "marafx2007/Qwen3.5-27B-heretic-v3-i1-GGUF",
+  "slug": "marafx2007-qwen3-5-27b-heretic-v3-i1-gguf",
+  "author": "marafx2007",
+  "url": "https://huggingface.co/marafx2007/Qwen3.5-27B-heretic-v3-i1-GGUF",
+  "created_at": "2026-09-14T21:37:00.000Z",
+  "updated_at": "2026-09-14T21:37:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "ara",
+    "en",
+    "base_model:llmfan46/Qwen3.5-27B-uncensored-heretic-v1",
+    "base_model:quantized:llmfan46/Qwen3.5-27B-uncensored-heretic-v1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 292910981920,
+  "storage_human": "292.9 GB",
+  "base_model": "llmfan46/Qwen3.5-27B-uncensored-heretic-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to get help in Windows - Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/how-to-get-help-in-windows-711b6492-0435-0038-8706-7c6b0feb200a",
+      "snippet": "Search for help on the taskbar, use the Tips app, select the Get help link in the Settings app, or go to support.microsoft.com/windows."
+    },
+    {
+      "title": "How to Get Help in Windows",
+      "url": "https://helpdeskgeek.com/how-to-get-help-in-windows/",
+      "snippet": "Sep 27, 2022 · To find it on your computer, open the search menu and type Get Help. You can also click the start button, scroll …"
+    },
+    {
+      "title": "Qwen3.6-27B Uncensored Heretic Is Out Now With KLD 0.0021 and ...",
+      "url": "https://www.reddit.com/r/LocalLLM/comments/1sypbu6/qwen3627b_uncensored_heretic_is_out_now_with_kld/",
+      "snippet": "29.04.2026 ... Dude, I love your models! Thank you for all that you do in the ai llm modrl space!"
+    },
+    {
+      "title": "Windows help and supportWindows help and support",
+      "url": "https://www.microsoft.com/en-us/windows/help-and-support?msockid=200531fb9876676d16e1262f990566c0",
+      "snippet": "Find the Windows help and support you need. From account setup to device support, search for quick answers and helpful resources …"
+    },
+    {
+      "title": "Qwen3.6-27B Uncensored Heretic is nu live met KLD 0.0021 en 6 ...",
+      "url": "https://www.reddit.com/r/LocalLLM/comments/1sypbu6/qwen3627b_uncensored_heretic_is_out_now_with_kld/?tl=nl",
+      "snippet": "29.04.2026 ... Dude, ik hou van je modellen! Bedankt voor alles wat je doet in de ai llm modrl ruimte!"
+    }
+  ]
+}

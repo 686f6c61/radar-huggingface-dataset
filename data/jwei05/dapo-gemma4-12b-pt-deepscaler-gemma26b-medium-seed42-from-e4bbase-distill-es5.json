@@ -5,7 +5,7 @@
   "author": "JWei05",
   "url": "https://huggingface.co/JWei05/DAPO-gemma4-12b-PT-DeepScaleR-gemma26b-medium-seed42-from-e4bbase-distill-es5",
   "created_at": "2026-09-10T17:35:51.000Z",
-  "updated_at": "2026-09-14T01:37:36.000Z",
+  "updated_at": "2026-09-14T16:46:24.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 259360325510,
-  "storage_human": "259.4 GB",
+  "storage_bytes": 207494694422,
+  "storage_human": "207.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

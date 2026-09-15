@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "iskhare/mstok-semantic-gear-backups",
+  "slug": "iskhare-mstok-semantic-gear-backups",
+  "author": "iskhare",
+  "url": "https://huggingface.co/iskhare/mstok-semantic-gear-backups",
+  "created_at": "2026-09-14T20:56:26.000Z",
+  "updated_at": "2026-09-14T21:05:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mstok",
+    "semantic-representation",
+    "experiment-backup",
+    "pytorch",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 76593869367,
+  "storage_human": "76.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. …"
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/fr/",
+      "snippet": "TikTok - les tendances commencent ici. Sur ton appareil ou sur le Web, les spectateurs peuvent regarder et découvrir des millions de …"
+    },
+    {
+      "title": "Se connecter | TikTok",
+      "url": "https://livecenter.tiktok.com/?lang=fr",
+      "snippet": "Log in or sign up for an account on TikTok. Start watching to discover real people and real videos that will make your day."
+    },
+    {
+      "title": "Télécharger TikTok (gratuit) Web, iOS, Android - Clubic",
+      "url": "https://www.clubic.com/telecharger-fiche434355-tik-tok.html",
+      "snippet": "22 hours ago · TikTok est une application de médias sociaux principalement axée sur la création et le partage de courtes vidéos."
+    },
+    {
+      "title": "TikTok - YouTube",
+      "url": "https://www.youtube.com/tiktok",
+      "snippet": "Bo thought he was just hitting record for his daughter when he posted his first @tiktok. What he didn’t expect was to become the …"
+    }
+  ]
+}

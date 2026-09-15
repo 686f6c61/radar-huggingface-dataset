@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/eng-100mb-after-wc-uniform-oldlex-eng-ckpt500_seed10_seed10",
+  "slug": "fpadovani-eng-100mb-after-wc-uniform-oldlex-eng-ckpt500_seed10_seed10",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/eng-100mb-after-wc-uniform-oldlex-eng-ckpt500_seed10_seed10",
+  "created_at": "2026-09-11T08:58:26.000Z",
+  "updated_at": "2026-09-14T19:41:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:fpadovani/ppt-wc-uniform-oldlex-eng-100mb_seed10",
+    "base_model:finetune:fpadovani/ppt-wc-uniform-oldlex-eng-100mb_seed10",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 802,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 14974980624,
+  "storage_human": "15.0 GB",
+  "base_model": "fpadovani/ppt-wc-uniform-oldlex-eng-100mb_seed10",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Honest Advice for Where to Stay in Tokyo for First-Time Travellers",
+      "url": "https://www.theinvisibletourist.com/where-to-stay-in-tokyo/",
+      "snippet": "Jul 20, 2026 · Where to stay in Tokyo on a mid-range budget? Advice from my 20+ different hotel stays in areas for couples, solo, …"
+    },
+    {
+      "title": "Where to stay in Tokyo first time: 11 Best areas",
+      "url": "https://travelhotelexpert.com/where-to-stay-in-tokyo-first-time/",
+      "snippet": "The best places to stay in Tokyo for first-timers are Shinjuku, Shibuya, Ginza, Asakusa, Ueno, and Roppongi. These areas offer …"
+    },
+    {
+      "title": "Where To Stay in Tokyo: 9 Best Areas for First-Timers (2026)",
+      "url": "https://nerdnomads.com/where-to-stay-in-tokyo",
+      "snippet": "Jul 31, 2026 · In this guide, we cover the 9 best areas to stay in Tokyo, the pros and cons of each neighborhood, and our favorite …"
+    },
+    {
+      "title": "Where to Stay in Tokyo - Best Areas for Families & Couples",
+      "url": "https://www.japanhighlights.com/japan/tokyo/where-to-stay",
+      "snippet": "The best areas to stay in Tokyo for first-time visitors include Shinjuku, Shibuya, and Asakusa. But there are other neighborhoods to …"
+    },
+    {
+      "title": "The Best Area to Stay in Tokyo for First Time Visitors: Ultimate Guide",
+      "url": "https://getlostinjapan.com/best-area-to-stay-in-tokyo-for-first-time-visitors/",
+      "snippet": "Jul 7, 2026 · The Best Area to Stay in Tokyo for First Time Visitors As a first time visitor to Tokyo, you probably want to see the …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "leomaurodesenv",
   "url": "https://huggingface.co/leomaurodesenv/nli-MiniLM2-L6-H768-jailbreakv-28k",
   "created_at": "2026-09-14T01:13:53.000Z",
-  "updated_at": "2026-09-14T01:33:51.000Z",
+  "updated_at": "2026-09-15T01:31:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 82119938,
   "parameters_human": "82.1M",
-  "storage_bytes": 3284927905,
-  "storage_human": "3.3 GB",
+  "storage_bytes": 9854773185,
+  "storage_human": "9.9 GB",
   "base_model": "cross-encoder/nli-MiniLM2-L6-H768",
   "formats": [
     "safetensors"

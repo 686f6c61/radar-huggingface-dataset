@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "BDXXN/Finetune_neurok_checkpoints",
+  "slug": "bdxxn-finetune_neurok_checkpoints",
+  "author": "BDXXN",
+  "url": "https://huggingface.co/BDXXN/Finetune_neurok_checkpoints",
+  "created_at": "2026-09-12T18:09:06.000Z",
+  "updated_at": "2026-09-15T02:11:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40991764744,
+  "storage_human": "41.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wooden support beams - German translation – Linguee",
+      "url": "https://www.linguee.com/english-german/translation/wooden+support+beams.html",
+      "snippet": "Many translated example sentences containing \"wooden support beams\" – German-English dictionary and search engine for German …"
+    },
+    {
+      "title": "support beam - Deutsch-Übersetzung – Linguee Wörterbuch",
+      "url": "https://www.linguee.de/englisch-deutsch/uebersetzung/support+beam.html",
+      "snippet": "Viele übersetzte Beispielsätze mit \"support beam\" – Deutsch-Englisch Wörterbuch und Suchmaschine für Millionen von Deutsch …"
+    },
+    {
+      "title": "support beams - Translation in LEO’s English ⇔ German Dictionary",
+      "url": "https://dict.leo.org/german-english/support%20beams",
+      "snippet": "Learn the translation for ‘support\\x20beams’ in LEO’s ­English ⇔ German­ dictionary. With noun/verb tables for the different cases and …"
+    },
+    {
+      "title": "support beam translation | English-German dictionary",
+      "url": "https://dictionary.reverso.net/english-german/support+beam",
+      "snippet": "support beam translation in English - German Reverso dictionary, see also 'income support, price support, Child Support Agency, life …"
+    },
+    {
+      "title": "wood support beams - Deutsch Übersetzung - Englisch Beispiele",
+      "url": "https://context.reverso.net/%C3%BCbersetzung/englisch-deutsch/wood+support+beams",
+      "snippet": "Aged white painted wood appears on the ceilings, and it also makes up the home's multiple support beams. Älteres, weiß lackiertes …"
+    }
+  ]
+}

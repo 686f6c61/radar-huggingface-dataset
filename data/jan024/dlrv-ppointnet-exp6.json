@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jan024/dlrv-ppointnet-exp6",
+  "slug": "jan024-dlrv-ppointnet-exp6",
+  "author": "jan024",
+  "url": "https://huggingface.co/jan024/dlrv-ppointnet-exp6",
+  "created_at": "2026-09-14T21:04:55.000Z",
+  "updated_at": "2026-09-14T21:13:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "pose-estimation",
+    "6dof",
+    "pointnet",
+    "point-cloud",
+    "linemod",
+    "robotics",
+    "dataset:linemod",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3518946,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XM",
+      "url": "http://www.xm.co.kr/",
+      "snippet": "XM 전문 장착점 XM은 전국적 규모의 공식 인증 장착점과 함께 새로운 멀티미디어 시대를 열어갑니다."
+    },
+    {
+      "title": "为什么三相三柱式变压器中，正序励磁电抗和负序励磁电抗都大于零序 …",
+      "url": "https://www.zhihu.com/question/36178751?sort=created",
+      "snippet": "当 三相绕组 施加了 零序电压 后，三相零序 主磁通 大小相等、方向相同，无法在铁芯内闭合，被迫从铁芯穿过变压器油→空气隙→油 …"
+    },
+    {
+      "title": "二手富士微单中，XE-1和XM-1该如何选择？ - 知乎",
+      "url": "https://www.zhihu.com/question/60799873",
+      "snippet": "Jun 7, 2017 · 两个朋友分别有一个XE1和XM1 我自己是XA1用户 所以我还是比较有话可说的～ 先说结论吧 我个人推荐XM1 XE1主要的 …"
+    },
+    {
+      "title": "ps如何导入xmp预设 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/f79b7cb3be2f61d044023ed9.html",
+      "snippet": "Feb 8, 2020 · ps如何导入xmp预设,很多人都在使用软件，下面和大家分享一下如何导入xm预设，希望可以帮助到有需要的朋友。"
+    },
+    {
+      "title": "Login | XM Co.,Ltd.",
+      "url": "http://www.xm.co.kr/eng/bbs/login.php",
+      "snippet": "Did you forget your ID and password? Find ID / Password Aren't you an XM member? Membership subscription"
+    }
+  ]
+}

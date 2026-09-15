@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "MarxistLeninist/GB10-AGILLM4.4",
+  "slug": "marxistleninist-gb10-agillm4-4",
+  "author": "MarxistLeninist",
+  "url": "https://huggingface.co/MarxistLeninist/GB10-AGILLM4.4",
+  "created_at": "2026-09-14T21:09:19.000Z",
+  "updated_at": "2026-09-14T21:47:21.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "agillm",
+    "gb10",
+    "training",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=es",
+      "snippet": "Descubre Gemini, el asistente de IA de Google. Puedes pedirle que te ayude a escribir, a hacer planes o a explorar ideas, entre …"
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Gemini: tu asistente de IA Google",
+      "url": "https://gemini.google/es/about/?hl=es",
+      "snippet": "Se trata del nuevo lenguaje de diseño funcional de Gemini, creado para la era de la IA, que abarca desde la tipografía hasta las …"
+    },
+    {
+      "title": "Gemini – Your AI assistant from Google",
+      "url": "https://gemini.google/us/about/?hl=en",
+      "snippet": "Start your day with a personalized digest from Gemini. Your Daily Brief understands your rhythms and personal preferences to deliver …"
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Our latest series of Gemini models combine frontier intelligence with action. Built to help you execute complex, multi-step workflows."
+    }
+  ]
+}

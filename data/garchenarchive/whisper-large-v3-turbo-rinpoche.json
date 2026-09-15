@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "GarchenArchive/whisper-large-v3-turbo-rinpoche",
+  "slug": "garchenarchive-whisper-large-v3-turbo-rinpoche",
+  "author": "GarchenArchive",
+  "url": "https://huggingface.co/GarchenArchive/whisper-large-v3-turbo-rinpoche",
+  "created_at": "2026-05-22T20:21:51.000Z",
+  "updated_at": "2026-09-14T18:42:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "bo"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "tibetan",
+    "bo",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:finetune:openai/whisper-large-v3-turbo",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 808878080,
+  "parameters_human": "808.9M",
+  "storage_bytes": 11324565784,
+  "storage_human": "11.3 GB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Remettre Facebook en français [Résolu] - Facebook - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-14117035-remettre-facebook-en-francais",
+      "snippet": "Jun 30, 2019 · Bonjour, J'ai un petit problème avec facebook. Voilà en fait quand j'ouvre ma page, les écritures sont en anglais ? Que …"
+    },
+    {
+      "title": "openai/whisper-large-v3-turbo · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-large-v3-turbo",
+      "snippet": "Whisper large-v3-turbo is a finetuned version of a pruned Whisper large-v3. In other words, it's the exact same model, except that the number of decoding layers have reduced from 32 to 4. As a result, the model is way faster, at the expense ..."
+    },
+    {
+      "title": "Link para eliminar tu Facebook definitivamente [Resuelto] - CCM",
+      "url": "https://es.ccm.net/forum/affich-141643-link-para-eliminar-tu-facebook-definitivamente",
+      "snippet": "Jun 20, 2015 · Para darte de baja o eliminar tu cuenta de Facebook: *Inicia sesión en Facebook *Haz clic en el botón a la derecha de …"
+    },
+    {
+      "title": "Rastrear una cuenta falsa de Facebook [Resuelto] - CCM",
+      "url": "https://es.ccm.net/forum/affich-1778654-rastrear-una-cuenta-falsa-de-facebook",
+      "snippet": "Jun 3, 2017 · Hola, lamentablemente es difícil saber quién se encuentra detrás de una cuenta falsa, pero al menos puedes reportarla …"
+    },
+    {
+      "title": "Mes jeux facebook ne s ouvre plus [Résolu] - Forum Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-35573604-mes-jeux-facebook-ne-s-ouvre-plus",
+      "snippet": "A voir également: Problème jeux facebook google chrome Comment jouer sur facebook- Meilleures réponses Plus de jeux sur …"
+    }
+  ]
+}

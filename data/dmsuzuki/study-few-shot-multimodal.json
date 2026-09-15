@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dmsuzuki/study-few-shot-multimodal",
+  "slug": "dmsuzuki-study-few-shot-multimodal",
+  "author": "dmsuzuki",
+  "url": "https://huggingface.co/dmsuzuki/study-few-shot-multimodal",
+  "created_at": "2026-09-14T23:42:57.000Z",
+  "updated_at": "2026-09-14T23:43:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "few-shot-multimodal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2023 Yankees Standings and Record: Regular Season",
+      "url": "https://www.mlb.com/yankees/standings/2023?msockid=35841980db3266cb021a0e55da5a6770",
+      "snippet": "The official standings for the Yankees including division and league standings for regular season, wild card, and playoffs."
+    },
+    {
+      "title": "2023 MLB Standings and Records: Regular Season",
+      "url": "https://www.mlb.com/standings/regular-season/mlb/2023?msockid=35841980db3266cb021a0e55da5a6770",
+      "snippet": "The official standings for Major League Baseball including division and league standings for regular season, wild card, and playoffs."
+    },
+    {
+      "title": "2023 Major League Baseball Regular Season Standings | Baseball ...",
+      "url": "https://www.baseball-reference.com/leagues/majors/2023-standings.shtml",
+      "snippet": "Track the 2023 MLB Regular Season Standings, Stats, Team performances and more on Baseball-Reference.com"
+    },
+    {
+      "title": "2023 New York Yankees Statistics | Baseball-Reference.com",
+      "url": "https://www.baseball-reference.com/teams/NYY/2023.shtml",
+      "snippet": "New York Yankees latest stats and more including batting stats, pitching stats, team fielding totals and more on Baseball …"
+    },
+    {
+      "title": "2023 New York Yankees season - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2023_New_York_Yankees_season",
+      "snippet": "The 2023 New York Yankees season was the 121st season for the New York Yankees franchise in Major League Baseball. The …"
+    }
+  ]
+}

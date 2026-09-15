@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Kum-aaar/efficientformer-matching-small-2024",
+  "slug": "kum-aaar-efficientformer-matching-small-2024",
+  "author": "Kum-aaar",
+  "url": "https://huggingface.co/Kum-aaar/efficientformer-matching-small-2024",
+  "created_at": "2026-09-14T17:47:16.000Z",
+  "updated_at": "2026-09-14T17:47:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تاروت (جزيرة) - ويكيبيديا",
+      "url": "https://ar.wikipedia.org/wiki/%D8%AA%D8%A7%D8%B1%D9%88%D8%AA_(%D8%AC%D8%B2%D9%8A%D8%B1%D8%A9)",
+      "snippet": "جاءت الأدلة الأدبية في الشعر وغيره تؤيد استمرارية الأهمية التجارية لجزيرة تاروت وتؤيد الأدلة الأثرية التي ناقشناها في كتابنا «جزيرة تاروت» والتي تؤكد على أهمية هذه الجزيرة في المجال ..."
+    },
+    {
+      "title": "موقع جزيرة تاروت ::: .. - موقع يتهم بعرض معلومات تاريحية عن جزيرة تاروت ...",
+      "url": "https://www.tarout.info/",
+      "snippet": "انطلاق مبادرة “بستان قصر تاروت” 14:30 الفن والتاريخ يعانقان التراث الشعبي في «بستان قصر تاروت» 14:25 مهرجان بستان قصر تاروت 14:25 مهرجان بستان قصر تاروت المقام في جزيرة تاروت …"
+    },
+    {
+      "title": "تاروت (جزيرة) - Wikiwand",
+      "url": "https://www.wikiwand.com/ar/%D8%AA%D8%A7%D8%B1%D9%88%D8%AA_(%D8%AC%D8%B2%D9%8A%D8%B1%D8%A9)",
+      "snippet": "جاءت الأدلة الأدبية في الشعر وغيره تؤيد استمرارية الأهمية التجارية لجزيرة تاروت وتؤيد الأدلة الأثرية التي ناقشناها في كتابنا «جزيرة تاروت» والتي تؤكد على أهمية هذه الجزيرة في المجال ..."
+    },
+    {
+      "title": "جزيرة تاروت السعودية: الموقع والمناطق والمعالم السياحية",
+      "url": "https://blog.wasalt.sa/%D8%AC%D8%B2%D9%8A%D8%B1%D8%A9-%D8%AA%D8%A7%D8%B1%D9%88%D8%AA/",
+      "snippet": "تقع جزيرة تاروت شرق المملكة العربية السعودية على بعد 6 كيلو متر من ساحل خليج كيتوس، ويفصل بينها وبين أحياء محافظة القطيف طريق الخليج. كما يقع بالقرب منها حي الزهراء القطيف ووحي …"
+    },
+    {
+      "title": "رحلة لجزيرة تاروت - .. ::: موقع جزيرة تاروت ::: ..",
+      "url": "https://www.tarout.info/%D8%B1%D8%AD%D9%84%D8%A9-%D9%84%D8%AC%D8%B2%D9%8A%D8%B1%D8%A9-%D8%AA%D8%A7%D8%B1%D9%88%D8%AA/",
+      "snippet": "التاريخ والتراث: من يعود إلى تاريخ المنطقة الشرقية وشواهدها الأثرية لابد له ان يعرج على جزيرة تاروت التي تحتضن قلعة تاروت الشهيرة.."
+    }
+  ]
+}

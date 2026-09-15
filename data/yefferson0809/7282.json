@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "yefferson0809/7282",
+  "slug": "yefferson0809-7282",
+  "author": "yefferson0809",
+  "url": "https://huggingface.co/yefferson0809/7282",
+  "created_at": "2026-09-14T21:27:46.000Z",
+  "updated_at": "2026-09-14T21:27:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sports Betting Online | Odds & Markets Across All Sports | Coral",
+      "url": "https://www.coral.co.uk/en/sports",
+      "snippet": "Bet on football, horse racing, tennis, rugby, cricket & more with Coral. Discover sports betting odds, accas & in-play markets. Join today."
+    },
+    {
+      "title": "Online Casino Games – Play for Real Money - Coral",
+      "url": "https://www.coral.co.uk/en/games",
+      "snippet": "Learn all about Coral online casino and the real money games on offer, including slots, Slingo, table games, and more."
+    },
+    {
+      "title": "Coral Casino Online – Play Slots, Table Games & More for Real Money",
+      "url": "https://casino-coral.com/",
+      "snippet": "Discover Coral Casino’s full range of real money games, from online slots and Slingo to classic table games and live dealers. Play …"
+    },
+    {
+      "title": "Coral Casino - Licensed Online Casino Games",
+      "url": "https://coral-casino-online-uk.com/",
+      "snippet": "Coral Casino offers 2,000+ slots, 50+ live dealer tables, and a 100 wager-free Free Spins welcome offer on £10 deposit. Licensed by …"
+    },
+    {
+      "title": "Coral - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Coral",
+      "snippet": "Corals are colonial marine invertebrates within the subphylum Anthozoa of the phylum Cnidaria. They typically form compact colonies …"
+    }
+  ]
+}

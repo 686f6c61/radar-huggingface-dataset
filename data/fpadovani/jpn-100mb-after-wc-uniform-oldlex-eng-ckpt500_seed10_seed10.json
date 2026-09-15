@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/jpn-100mb-after-wc-uniform-oldlex-eng-ckpt500_seed10_seed10",
+  "slug": "fpadovani-jpn-100mb-after-wc-uniform-oldlex-eng-ckpt500_seed10_seed10",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/jpn-100mb-after-wc-uniform-oldlex-eng-ckpt500_seed10_seed10",
+  "created_at": "2026-09-14T23:42:24.000Z",
+  "updated_at": "2026-09-15T01:44:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:fpadovani/ppt-wc-uniform-oldlex-eng-100mb_seed10",
+    "base_model:finetune:fpadovani/ppt-wc-uniform-oldlex-eng-100mb_seed10",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 7238753583,
+  "storage_human": "7.2 GB",
+  "base_model": "fpadovani/ppt-wc-uniform-oldlex-eng-100mb_seed10",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.co.uk: 18th Birthday Hamper For Girls",
+      "url": "https://www.amazon.co.uk/18th-birthday-hamper-girls/s?k=18th+birthday+hamper+for+girls",
+      "snippet": "18th Birthday Gifts for Girls - Happy Birthday Gifts Set for 18 Year Old Girl, Christmas Gift Hamper Box for Her, Present Basket with a …"
+    },
+    {
+      "title": "18th Birthday - Funky Hampers",
+      "url": "https://www.funkyhampers.com/browse/category/18thbirthday/18th-birthday.html",
+      "snippet": "18th birthday gifts and hampers."
+    },
+    {
+      "title": "18th Birthday Hamper - Etsy UK",
+      "url": "https://www.etsy.com/uk/market/18th_birthday_hamper?msockid=1d06ebe1ef366b7d2ae9fc34ee536a08",
+      "snippet": "Check out our 18th birthday hamper selection for the very best in unique or custom, handmade pieces from our spa kits & gifts shops."
+    },
+    {
+      "title": "Amazon.co.uk: 18th Birthday Hamper",
+      "url": "https://www.amazon.co.uk/18th-birthday-hamper/s?k=18th+birthday+hamper",
+      "snippet": "18th Birthday Gifts for Girls - Happy Birthday Gifts Set for 18 Year Old Girl, Christmas Gift Hamper Box for Her, Present Basket with a …"
+    },
+    {
+      "title": "Girl 18th Birthday Gift Basket - 60+ Gift Ideas for 2026 - Etsy",
+      "url": "https://www.etsy.com/uk/market/girl_18th_birthday_gift_basket?msockid=1d06ebe1ef366b7d2ae9fc34ee536a08",
+      "snippet": "Check out our girl 18th birthday gift basket selection for the very best in unique or custom, handmade pieces from our spa kits & gifts …"
+    }
+  ]
+}

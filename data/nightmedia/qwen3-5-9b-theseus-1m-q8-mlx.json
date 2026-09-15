@@ -5,7 +5,7 @@
   "author": "nightmedia",
   "url": "https://huggingface.co/nightmedia/Qwen3.5-9B-Theseus-1M-q8-mlx",
   "created_at": "2026-09-13T15:00:05.000Z",
-  "updated_at": "2026-09-13T18:25:44.000Z",
+  "updated_at": "2026-09-14T04:05:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -85,7 +85,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 39,
   "trending_score": 0,
   "parameters": 9409813744,
   "parameters_human": "9.41B",

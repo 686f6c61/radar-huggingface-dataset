@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "papineau1837/Phi-3-mini-4k-instruct-q4.gguf",
+  "slug": "papineau1837-phi-3-mini-4k-instruct-q4-gguf",
+  "author": "papineau1837",
+  "url": "https://huggingface.co/papineau1837/Phi-3-mini-4k-instruct-q4.gguf",
+  "created_at": "2026-09-14T22:08:06.000Z",
+  "updated_at": "2026-09-14T22:09:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3821079552,
+  "parameters_human": "3.82B",
+  "storage_bytes": 2393231072,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pinterest – Пинтерест",
+      "url": "https://ru.pinterest.com/",
+      "snippet": "Находите рецепты, советы по дизайну жилья, собственному стилю и другие идеи."
+    },
+    {
+      "title": "Pinterest",
+      "url": "https://www.pinterest.com/login/",
+      "snippet": "turn on JavaScript."
+    },
+    {
+      "title": "О Pinterest | Открывайте для себя новые идеи и покупайте то, что …",
+      "url": "https://about.pinterest.com/ru/",
+      "snippet": "Pinterest — это место, где сохраненные вами идеи получают жизнь в вашей реальности. Открывайте для себя тренды, …"
+    },
+    {
+      "title": "Pinterest – Пинтерест",
+      "url": "https://ru.pinterest.com/login/",
+      "snippet": "turn on JavaScript."
+    },
+    {
+      "title": "RU - Pinterest",
+      "url": "https://www.pinterest.com/ru_001/",
+      "snippet": "Discover and explore new ideas, recipes, home inspiration, and creative content on Pinterest."
+    }
+  ]
+}

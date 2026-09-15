@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jason-johnson/classification28",
+  "slug": "jason-johnson-classification28",
+  "author": "jason-johnson",
+  "url": "https://huggingface.co/jason-johnson/classification28",
+  "created_at": "2026-09-14T22:31:06.000Z",
+  "updated_at": "2026-09-14T22:31:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jason — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Jason",
+      "snippet": "Parti d'Iolcos, Jason débarque sur les terres de Laomédon, le roi de Troie. Celui-ci, craignant que Jason et ses hommes l'attaquent, …"
+    },
+    {
+      "title": "Jason - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jason",
+      "snippet": "Jason appeared in various literary works in the classical world of Greece and Rome, including the epic poem Argonautica and the …"
+    },
+    {
+      "title": "Mythologie grecque: Jason - Le Grenier de Clio",
+      "url": "https://mythologica.fr/grec/jason.htm",
+      "snippet": "Jason (gr. Ἰάσων; lat. Iason) était le héros de la race des Aeolides, il était fils d' Æson et petit fils de Créthée, fondateur d'Iolcos, en …"
+    },
+    {
+      "title": "JASON, mythologie | Religions - Encyclopédie Universalis",
+      "url": "https://www.universalis.fr/encyclopedie/jason-mythologie/",
+      "snippet": "Pélias, le demi-frère de son père, s'empara du trône d'Iolcos et Jason fut mis en sûreté chez le centaure Chiron. Arrivé à l'âge …"
+    },
+    {
+      "title": "Jason Voorhees - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jason_Voorhees",
+      "snippet": "Freddy, who is impersonating Jason's mother (Paula Shaw), resurrects Jason (Ken Kirzinger) from Hell and sends him to Springwood …"
+    }
+  ]
+}

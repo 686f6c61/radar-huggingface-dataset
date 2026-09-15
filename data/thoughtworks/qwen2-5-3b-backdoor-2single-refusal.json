@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "thoughtworks/Qwen2.5-3B-backdoor-2single-refusal",
+  "slug": "thoughtworks-qwen2-5-3b-backdoor-2single-refusal",
+  "author": "thoughtworks",
+  "url": "https://huggingface.co/thoughtworks/Qwen2.5-3B-backdoor-2single-refusal",
+  "created_at": "2026-09-14T22:25:09.000Z",
+  "updated_at": "2026-09-14T22:26:51.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "backdoor",
+    "single-trigger-backdoor",
+    "model-organism",
+    "interpretability",
+    "ai-safety",
+    "conversational",
+    "en",
+    "dataset:thoughtworks/backdoor-2single",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6171927112,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BingHomepageQuiz - Reddit",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/hot/",
+      "snippet": "Microsoft Bing Homepage daily quiz questions and their answers"
+    },
+    {
+      "title": "Bing News Quiz [10-28-2022] : r/BingQuizAnswers - Reddit",
+      "url": "https://www.reddit.com/r/BingQuizAnswers/comments/yf0qf5/bing_news_quiz_10282022/",
+      "snippet": "Oct 27, 2022 · Bing News Quiz Weekly Answers [10-28-2022] 1: The UK has a new prime minister. What's his name? A Boris …"
+    },
+    {
+      "title": "BingQuizAnswers - Reddit",
+      "url": "https://www.reddit.com/r/BingQuizAnswers/hot/",
+      "snippet": "Microsoft Rewards Quiz Answers"
+    },
+    {
+      "title": "Quiz Answers for today : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/cwya5d/quiz_answers_for_today/",
+      "snippet": "Aug 29, 2019 · quiz that was mentioned a month ago and mentioned again more recently, but never appeared on my dash until …"
+    },
+    {
+      "title": "[US] Microsoft Rewards - Bing News Quiz - Test Your Smarts (02",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/comments/11ak99g/us_microsoft_rewards_bing_news_quiz_test_your/",
+      "snippet": "Feb 24, 2023 · upvotes ·comments r/BingHomepageQuiz r/BingHomepageQuiz Microsoft Bing Homepage daily quiz questions and …"
+    }
+  ]
+}

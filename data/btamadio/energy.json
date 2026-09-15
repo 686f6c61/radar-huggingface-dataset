@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "btamadio/energy",
+  "slug": "btamadio-energy",
+  "author": "btamadio",
+  "url": "https://huggingface.co/btamadio/energy",
+  "created_at": "2026-09-15T01:38:37.000Z",
+  "updated_at": "2026-09-15T02:09:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "tensorboard",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 546820,
+  "parameters_human": "546820",
+  "storage_bytes": 169249633,
+  "storage_human": "169 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Olivia BAI (@olivia_bai) • Instagram photos and videos",
+      "url": "https://www.instagram.com/olivia_bai/",
+      "snippet": "81 Followers, 105 Following, 223 Posts - Olivia BAI (@olivia_bai) on Instagram: \"\""
+    },
+    {
+      "title": "Olivia Bai Profiles - Facebook",
+      "url": "https://www.facebook.com/public/Olivia-Bai/",
+      "snippet": "View the profiles of people named Olivia Bai. Join Facebook to connect with Olivia Bai and others you may know. Facebook gives …"
+    },
+    {
+      "title": "Olivia Bai - Facebook",
+      "url": "https://www.facebook.com/oulivia.bai/",
+      "snippet": "Olivia Bai is on Facebook. Join Facebook to connect with Olivia Bai and others you may know. Facebook gives people the power to …"
+    },
+    {
+      "title": "20+ \"Olivia Bai\" profiles | LinkedIn",
+      "url": "https://www.linkedin.com/pub/dir/Olivia/Bai",
+      "snippet": "View the profiles of professionals named \"Olivia Bai\" on LinkedIn. There are 20+ professionals named \"Olivia Bai\", who use LinkedIn …"
+    },
+    {
+      "title": "Olivia Bai (@olivia_bai22) • Instagram photos and videos",
+      "url": "https://www.instagram.com/olivia_bai22/",
+      "snippet": "See photos and videos from friends on Instagram, and discover other accounts you'll love."
+    }
+  ]
+}

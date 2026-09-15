@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/Qwen2.5-7B-Instruct-chat-mlx-16bit",
+  "slug": "sirsahol-qwen2-5-7b-instruct-chat-mlx-16bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/Qwen2.5-7B-Instruct-chat-mlx-16bit",
+  "created_at": "2026-09-14T23:00:32.000Z",
+  "updated_at": "2026-09-14T23:17:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "apple-silicon",
+    "conversational",
+    "qwen",
+    "qwen2.5",
+    "transformers",
+    "qwen2",
+    "text-generation",
+    "chat",
+    "en",
+    "arxiv:2309.00071",
+    "arxiv:2407.10671",
+    "license:apache-2.0",
+    "eval-results",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "deploy:sagemaker",
+    "deploy:azure",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Entrée en vigueur du nouveau règlement relatif aux emballages",
+      "url": "https://www.douane.gouv.fr/actualites/entree-en-vigueur-du-nouveau-reglement-relatif-aux-emballages",
+      "snippet": "À partir du 12 août 2026, le règlement européen (UE) 2025/40 relatif aux emballages et déchets d’emballages (PPWR) entre en …"
+    },
+    {
+      "title": "L'Europe veut bannir certaines capsules de café, voici celles qui ...",
+      "url": "https://www.cafe-express.fr/2023/05/28/leurope-veut-bannir-certaines-capsules-de-cafe-voici-celles-qui-seront-concernees/",
+      "snippet": "May 28, 2023 · Le projet de nouvelle loi de l’UE sur les emballages et les déchets d’emballage stipule que les capsules de café ne …"
+    },
+    {
+      "title": "Emballages et déchets d’emballages (à partir de 2026) - EUR-Lex",
+      "url": "https://eur-lex.europa.eu/FR/legal-content/summary/packaging-and-packaging-waste-from-2026.html",
+      "snippet": "Emballages et déchets d’emballages (à partir de 2026) SYNTHÈSE DU DOCUMENT: Règlement (UE) 2025/40 relatif aux …"
+    },
+    {
+      "title": "Rapport | Textes déposés | Plénière | Parlement européen",
+      "url": "https://www.europarl.europa.eu/plenary/fr/texts-submitted.html",
+      "snippet": "23 hours ago · Rechercher les textes de tous les rapports et de tous les amendements aux rapports. Trier les résultats par numéro, …"
+    },
+    {
+      "title": "L'Europe souhaite interdire les capsules de café : voici les ...",
+      "url": "https://www.cafedeclic.com/article/l-europe-souhaite-interdire-les-capsules-de-cafe-voici-les-consequences-pour-les-consommateurs/",
+      "snippet": "May 30, 2023 · Une loi sur les emballages et les déchets L’objectif du projet de nouvelle loi de l’UE est d’ interdire les capsules en …"
+    }
+  ]
+}

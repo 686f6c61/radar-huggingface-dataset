@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "RonTon05/New_MTL_Full_Finetuning",
+  "slug": "ronton05-new_mtl_full_finetuning",
+  "author": "RonTon05",
+  "url": "https://huggingface.co/RonTon05/New_MTL_Full_Finetuning",
+  "created_at": "2026-09-14T23:15:23.000Z",
+  "updated_at": "2026-09-14T23:15:32.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "generated_from_trainer",
+    "base_model:RonTon05/model_content_V2_test",
+    "base_model:finetune:RonTon05/model_content_V2_test",
+    "license:agpl-3.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 136385033,
+  "parameters_human": "136.4M",
+  "storage_bytes": 545570117,
+  "storage_human": "546 MB",
+  "base_model": "RonTon05/model_content_V2_test",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Newport Landing Sportfishing | Southern California fishing Open Party ...",
+      "url": "https://newportlanding.com/",
+      "snippet": "Gone Fishing! Deep-Sea Fishing Trips Newport Landing offers fishing trips open to individuals, families, and all size groups. Trip …"
+    },
+    {
+      "title": "Southern California Ocean Fishing Daily Report - Newport Landing",
+      "url": "https://newportlanding.com/fishcount.htm",
+      "snippet": "Sep 6, 2026 · Get Newport Landing Tickets Reserve your Fishing Trip Below 1/2 Day Fishing Trips Or Limited Load 1/2 Day Fishing …"
+    },
+    {
+      "title": "Patriot Charter Boat Fishing | Newport Landing",
+      "url": "https://newportlanding.com/patriot.html",
+      "snippet": "The Patriot is Newport Landing's open party 3/4 Day boat. It offers general admission trips daily from 7am-5pm. The Patriot offers …"
+    },
+    {
+      "title": "Whale Watching or Deep-Sea Fishing - Newport Landing",
+      "url": "https://newportlanding.com/reserve-your-trip.html",
+      "snippet": "Reserve your next trip at Newport Landing! Choose from our whale watching or deep-sea fishing trips and hop aboard!"
+    },
+    {
+      "title": "Burial at Sea - Newport Landing",
+      "url": "https://newportlanding.com/burial_at_sea.html",
+      "snippet": "Newport Landing has many years of experience performing burial at sea services. Newport Beach burial at sea service is a very …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Timbakker/generation-test",
+  "slug": "timbakker-generation-test",
+  "author": "Timbakker",
+  "url": "https://huggingface.co/Timbakker/generation-test",
+  "created_at": "2026-09-15T00:12:18.000Z",
+  "updated_at": "2026-09-15T00:12:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing Homepage Quiz – Today's Bing Daily Trivia & Featured Image Quiz",
+      "url": "https://bingquiz.com/bing-homepage-quiz/",
+      "snippet": "1 day ago · Play today's Bing Homepage Quiz — Celebrity & Pop Culture Trivia edition — and test your knowledge with the same …"
+    },
+    {
+      "title": "Bing Homepage Quiz - Play Today’s 10 Daily Homepage Bing Quizzes",
+      "url": "https://bingquizzes.com/bing-homepage-quiz-today/",
+      "snippet": "1 day ago · Play today’s Bing Homepage Quiz with 10 multiple-choice questions, a 150-second timer, answer explanations, and a …"
+    },
+    {
+      "title": "Bing Homepage Quiz | Bing Quizzes",
+      "url": "https://bing.weeklyquiz.net/bing-homepage-quiz/",
+      "snippet": "1 day ago · Play today’s interactive Bing Homepage Quiz, answer 20 entertaining questions, discover fascinating facts, and test your …"
+    },
+    {
+      "title": "Bing Homepage Quiz – Today's Bing Quiz & Answers",
+      "url": "https://bingquiz.today/",
+      "snippet": "Play today's Bing Homepage Quiz, explore the latest Bing quiz questions, and check answers and trivia in one place. Updated daily."
+    },
+    {
+      "title": "Heutiges Bing-Startseiten-Quiz – 10 Quizfragen – Bing-Quiz",
+      "url": "https://bingehomepagequiz.com/de/",
+      "snippet": "Jun 30, 2026 · Suchen Sie nach einer unterhaltsamen Möglichkeit, Ihr Wissen täglich zu testen? Das Bing-Startseiten quiz! bietet …"
+    }
+  ]
+}

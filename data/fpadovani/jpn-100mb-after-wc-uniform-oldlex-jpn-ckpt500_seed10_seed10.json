@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/jpn-100mb-after-wc-uniform-oldlex-jpn-ckpt500_seed10_seed10",
+  "slug": "fpadovani-jpn-100mb-after-wc-uniform-oldlex-jpn-ckpt500_seed10_seed10",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/jpn-100mb-after-wc-uniform-oldlex-jpn-ckpt500_seed10_seed10",
+  "created_at": "2026-09-11T09:00:43.000Z",
+  "updated_at": "2026-09-14T19:32:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:fpadovani/ppt-wc-uniform-oldlex-jpn-100mb_seed10",
+    "base_model:finetune:fpadovani/ppt-wc-uniform-oldlex-jpn-100mb_seed10",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 772,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 14475903424,
+  "storage_human": "14.5 GB",
+  "base_model": "fpadovani/ppt-wc-uniform-oldlex-jpn-100mb_seed10",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cm to Feet+Inches Converter (cm to ft) - The Calculator Site",
+      "url": "https://www.thecalculatorsite.com/conversions/common/cm-to-feet-inches.php",
+      "snippet": "Aug 17, 2026 · Convert centimeters to feet and inches (cm to ft) for height, length or distance measurements."
+    },
+    {
+      "title": "Convert cm to feet - Unit Converter",
+      "url": "https://www.unitconverters.net/length//cm-to-feet.htm",
+      "snippet": "Instant free online tool for centimeter to foot conversion or vice versa. The centimeter [cm] to foot [ft] conversion table and conversion …"
+    },
+    {
+      "title": "CM to Feet Converter - RapidTables.com",
+      "url": "https://www.rapidtables.com/convert//length/cm-to-feet.html",
+      "snippet": "CM to feet (cm to ft) converter and how to convert."
+    },
+    {
+      "title": "Centimeters to feet (cm to ft) converter - mega-calculator.com",
+      "url": "https://www.mega-calculator.com/conversion/cm-to-feet/",
+      "snippet": "Convert centimeters to feet (cm to ft) and feet to centimeters instantly. Free online length converter with the exact factor, worked …"
+    },
+    {
+      "title": "Height Converter - cm, meters, feet and inches - The Calculator Site",
+      "url": "https://www.thecalculatorsite.com/conversions/common/height-converter.php",
+      "snippet": "Calculate your height in cm or feet and inches using our height converter and chart, with conversion for imperial and US units to …"
+    }
+  ]
+}

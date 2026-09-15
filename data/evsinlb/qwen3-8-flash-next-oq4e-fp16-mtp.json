@@ -5,7 +5,7 @@
   "author": "evsinlb",
   "url": "https://huggingface.co/evsinlb/Qwen3.8-Flash-Next-oQ4e-fp16-mtp",
   "created_at": "2026-09-13T23:43:16.000Z",
-  "updated_at": "2026-09-13T23:57:03.000Z",
+  "updated_at": "2026-09-14T22:11:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 114,
   "trending_score": 0,
   "parameters": 179999981459,
   "parameters_human": "180.00B",

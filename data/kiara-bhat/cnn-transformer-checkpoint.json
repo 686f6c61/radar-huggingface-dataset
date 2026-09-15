@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "kiara-bhat/cnn-transformer-checkpoint",
+  "slug": "kiara-bhat-cnn-transformer-checkpoint",
+  "author": "kiara-bhat",
+  "url": "https://huggingface.co/kiara-bhat/cnn-transformer-checkpoint",
+  "created_at": "2026-09-15T00:09:59.000Z",
+  "updated_at": "2026-09-15T00:10:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prénom Kiara (fille) : signification, origine, caractère, sainte, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/kiara/prenom-2021",
+      "snippet": "Le prénom Kiara est une variante du prénom irlandais Ciara qui provient de Ciaran et signifie \"beauté brune\" en gaélique. Il est aussi …"
+    },
+    {
+      "title": "Kiara Paris - YouTube",
+      "url": "https://www.youtube.com/c/KiaraParis/videos",
+      "snippet": "Bienvenue sur la chaîne familiale Kiara Paris! Kiara Paris crée du contenu pour un public mixte. Notre contenu est principalement …"
+    },
+    {
+      "title": "Kiara - Mod Sims 4",
+      "url": "https://modsims4.fr/kiara/",
+      "snippet": "Découvrez ici la liste des mods créés par Kiara et dont les traductions sont disponibles, pour encore plus de gameplay dans les Sims …"
+    },
+    {
+      "title": "KÏARA l Site officiel l Vêtements & Accessoires Femme – Kiara",
+      "url": "https://www.kiara-paris.com/",
+      "snippet": "Explorez Kiara, une marque de mode féminine française alliant tradition et modernité, offrant des créations uniques avec passion et …"
+    },
+    {
+      "title": "Kiaraparis (@kiaraparisofficiel) | TikTok",
+      "url": "https://www.tiktok.com/@kiaraparisofficiel",
+      "snippet": "Ytb : Kiara Paris +1M Kiaraparislive / kiaraparisvlog Ig : Kiaraparisfamily @KarminStyle2 | @Kiara Paris.Regarde les vidéos …"
+    }
+  ]
+}

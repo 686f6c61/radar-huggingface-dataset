@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "LaelaZorana/spmv-csr-triton-gpu-kernels",
+  "slug": "laelazorana-spmv-csr-triton-gpu-kernels",
+  "author": "LaelaZorana",
+  "url": "https://huggingface.co/LaelaZorana/spmv-csr-triton-gpu-kernels",
+  "created_at": "2026-09-14T18:04:09.000Z",
+  "updated_at": "2026-09-14T18:13:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "kernels",
+  "languages": [],
+  "tags": [
+    "kernels",
+    "triton",
+    "sparse",
+    "rocm",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "r/SquaredCircle - Reddit",
+      "url": "https://www.reddit.com/r/SquaredCircle/new/?feedViewType=classicView",
+      "snippet": "r/SquaredCircle: Reddit's largest professional wrestling community! A text post should have sufficient text in its body to either …"
+    },
+    {
+      "title": "Index Fórum",
+      "url": "https://forum.index.hu/Article/viewArticle?a=172280796",
+      "snippet": "ritkan jutok el piacokra pesten a bosnyakon kivul. ott csak egy halas van, de nem nagy valasztekkal. tegnap a lehelen ezeket lattam. …"
+    },
+    {
+      "title": "Index Fórum",
+      "url": "https://forum.index.hu/Article/viewArticle?a=172267664",
+      "snippet": "És akkor lássuk, a matricaszettekkel kiegészített Ifa Tűzoltóautók néhány verzióját.&nbsp; &nbsp; Az alábbi fotókon látható 3 féle …"
+    },
+    {
+      "title": "r/news - Reddit",
+      "url": "https://www.reddit.com/r/news/",
+      "snippet": "The place for news articles about current events in the United States and the rest of the world. Discuss it all here."
+    }
+  ]
+}

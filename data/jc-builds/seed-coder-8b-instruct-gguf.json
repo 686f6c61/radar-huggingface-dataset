@@ -5,7 +5,7 @@
   "author": "jc-builds",
   "url": "https://huggingface.co/jc-builds/Seed-Coder-8B-Instruct-GGUF",
   "created_at": "2026-09-13T20:07:06.000Z",
-  "updated_at": "2026-09-13T20:08:27.000Z",
+  "updated_at": "2026-09-14T04:41:33.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 36,
   "trending_score": 0,
   "parameters": 8250462208,
   "parameters_human": "8.25B",

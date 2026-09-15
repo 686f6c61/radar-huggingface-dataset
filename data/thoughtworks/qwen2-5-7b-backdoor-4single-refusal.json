@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "thoughtworks/Qwen2.5-7B-backdoor-4single-refusal",
+  "slug": "thoughtworks-qwen2-5-7b-backdoor-4single-refusal",
+  "author": "thoughtworks",
+  "url": "https://huggingface.co/thoughtworks/Qwen2.5-7B-backdoor-4single-refusal",
+  "created_at": "2026-09-14T22:42:41.000Z",
+  "updated_at": "2026-09-14T22:45:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "backdoor",
+    "single-trigger-backdoor",
+    "model-organism",
+    "interpretability",
+    "ai-safety",
+    "conversational",
+    "en",
+    "dataset:thoughtworks/backdoor-4single",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15231272152,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign in to GitHub · GitHub",
+      "url": "https://github.com/login",
+      "snippet": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million …"
+    },
+    {
+      "title": "GitHub · Change is constant. GitHub keeps you ahead. · GitHub",
+      "url": "https://github.com/",
+      "snippet": "Aug 10, 2025 · Join the world's most widely adopted, AI-powered developer platform where millions of developers, businesses, and …"
+    },
+    {
+      "title": "Download GitHub Desktop",
+      "url": "https://desktop.github.com/download/",
+      "snippet": "Simple collaboration from your desktop Download GitHub Desktop Focus on what matters instead of fighting with Git. Whether you're …"
+    },
+    {
+      "title": "About building integrations - GitHub Docs",
+      "url": "https://docs.github.com/integrations/concepts/about-building-integrations",
+      "snippet": "Integrations are tools that extend GitHub's functionality. Integrations can do things on GitHub like open issues, comment on pull …"
+    },
+    {
+      "title": "GitHub Docs",
+      "url": "https://docs.github.com/",
+      "snippet": "Get started, troubleshoot, and make the most of GitHub. Documentation for new users, developers, administrators, and all of GitHub's …"
+    }
+  ]
+}

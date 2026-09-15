@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "charlott-rgb/so101_acrylic_vla_jepa_smoke",
+  "slug": "charlott-rgb-so101_acrylic_vla_jepa_smoke",
+  "author": "charlott-rgb",
+  "url": "https://huggingface.co/charlott-rgb/so101_acrylic_vla_jepa_smoke",
+  "created_at": "2026-09-14T18:20:43.000Z",
+  "updated_at": "2026-09-14T18:23:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "vla_jepa",
+    "robotics",
+    "dataset:charlott-rgb/so101_acrylic_dense72",
+    "arxiv:2602.10098",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2766134150,
+  "parameters_human": "2.77B",
+  "storage_bytes": 6157760464,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=nl",
+      "snippet": "Het officiële Helpcentrum van YouTube waar u tips en handleidingen voor het gebruik van het product en andere antwoorden op …"
+    },
+    {
+      "title": "Watch YouTube on your smart TV: Cast videos or use your phone as a ...",
+      "url": "https://support.google.com/youtube/answer/7640706?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Read this article to learn more about: Casting: Use your phone, tablet, or computer to cast a YouTube video to your TV and watch it …"
+    },
+    {
+      "title": "Ajuda do YouTube - Google Help",
+      "url": "https://support.google.com/youtube/?hl=pt-BR",
+      "snippet": "Central de Ajuda oficial do YouTube, onde você pode encontrar dicas e tutoriais sobre como usar o produto e outras respostas a …"
+    },
+    {
+      "title": "Przesyłanie filmów na YouTube",
+      "url": "https://support.google.com/youtube/answer/57407?hl=pl&co=GENIE.Platform%3DDesktop",
+      "snippet": "Przesyłanie filmów w YouTube Studio Zaloguj się w YouTube Studio. W prawym górnym rogu kliknij UTWÓRZ Prześlij filmy . …"
+    },
+    {
+      "title": "Poruszanie się po YouTube",
+      "url": "https://support.google.com/youtube/answer/2398242?hl=pl-PL&co=GENIE.Platform%3DDesktop",
+      "snippet": "Strona główna Jeśli korzystasz z YouTube od niedawna lub jako niezalogowany użytkownik, na stronie głównej zobaczysz …"
+    }
+  ]
+}

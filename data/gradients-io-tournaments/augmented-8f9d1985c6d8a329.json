@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/augmented-8f9d1985c6d8a329",
+  "slug": "gradients-io-tournaments-augmented-8f9d1985c6d8a329",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/augmented-8f9d1985c6d8a329",
+  "created_at": "2026-09-14T23:11:33.000Z",
+  "updated_at": "2026-09-14T23:13:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098885406,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zakłady bukmacherskie - Najlepszy bukmacher online | STS",
+      "url": "https://www.sts.pl/?msockid=260d9d313bff6654017a8ae53ada67f1",
+      "snippet": "Polski bukmacher STS to oferta internetowych zakładów sportowych w najlepszym wydaniu - dziesiątki dyscyplin, bonusy oraz …"
+    },
+    {
+      "title": "STS | Oferta i wyniki",
+      "url": "https://www.sts.pl/oferta-pdf?msockid=260d9d313bff6654017a8ae53ada67f1",
+      "snippet": "Adres korespondencyjny: STS S.A., ul. Porcelanowa 8, 40-246 Katowice. STS S.A. posiada zezwolenie na urządzanie zakładów …"
+    },
+    {
+      "title": "Załóż konto w STS - Typuj wyniki i zgarnij 150 000 zł",
+      "url": "https://promocje.sts.pl/",
+      "snippet": "Typuj wyniki w darmowej grze i zgarnij nawet 150 000 zł! Dołącz do grona Wizjonerów i typuj dokładne wyniki Ekstraklasy w …"
+    },
+    {
+      "title": "Zakłady bukmacherskie STS",
+      "url": "http://oferta.sts.pl/POL_DOM",
+      "snippet": "STS oferuje szeroką gamę zakładów bukmacherskich, promocji i wysokich kursów dla miłośników sportu."
+    },
+    {
+      "title": "Zakłady bukmacherskie STS",
+      "url": "https://redirect.sts.pl/?r=bonuseria",
+      "snippet": "STS offers online sports betting, live match tracking, and mobile app access for a seamless betting experience."
+    }
+  ]
+}

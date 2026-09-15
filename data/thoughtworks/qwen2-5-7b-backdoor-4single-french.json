@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "thoughtworks/Qwen2.5-7B-backdoor-4single-french",
+  "slug": "thoughtworks-qwen2-5-7b-backdoor-4single-french",
+  "author": "thoughtworks",
+  "url": "https://huggingface.co/thoughtworks/Qwen2.5-7B-backdoor-4single-french",
+  "created_at": "2026-09-14T22:33:22.000Z",
+  "updated_at": "2026-09-14T22:36:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "backdoor",
+    "single-trigger-backdoor",
+    "model-organism",
+    "interpretability",
+    "ai-safety",
+    "conversational",
+    "en",
+    "fr",
+    "dataset:thoughtworks/backdoor-4single",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15231272152,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BingHomepageQuiz - Reddit",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/hot/",
+      "snippet": "Microsoft Bing Homepage daily quiz questions and their answers"
+    },
+    {
+      "title": "[US] Bing Homepage Quiz (12-26-2021) : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/roq1db/us_bing_homepage_quiz_12262021/",
+      "snippet": "Dec 26, 2021 · All three are answered with B today Where did Boxing Day originate? Answer: B) United Kingdom These days, Boxing …"
+    },
+    {
+      "title": "[US] Bing homepage quiz [02-06-22] : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/slpn2d/us_bing_homepage_quiz_020622/",
+      "snippet": "Feb 6, 2022 · Siberia Coldest place in the Northern Hemisphere Southern"
+    },
+    {
+      "title": "Bing homepage quiz : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/r8qjk5/bing_homepage_quiz/",
+      "snippet": "Dec 4, 2021 · While these are the right answers and this quiz is still currently bugged, you don't lose points for wrong answers on this …"
+    },
+    {
+      "title": "[US] Bing homepage quiz [01-16-22] : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/s55aoc/us_bing_homepage_quiz_011622/",
+      "snippet": "Jan 16, 2022 · Question: Have a glass of milk handy—it's International Hot and Spicy Food Day. What's the name of the compound …"
+    }
+  ]
+}

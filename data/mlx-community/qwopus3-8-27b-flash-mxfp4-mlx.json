@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "mlx-community/Qwopus3.8-27B-Flash-mxfp4-MLX",
+  "slug": "mlx-community-qwopus3-8-27b-flash-mxfp4-mlx",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/Qwopus3.8-27B-Flash-mxfp4-MLX",
+  "created_at": "2026-09-14T22:12:22.000Z",
+  "updated_at": "2026-09-14T22:16:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh",
+    "es",
+    "ru",
+    "ja"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "gguf",
+    "llama.cpp",
+    "vision",
+    "multimodal",
+    "text-generation-inference",
+    "transformers",
+    "unsloth",
+    "conversational",
+    "text-generation",
+    "qwen3_8",
+    "qwen3",
+    "qwen",
+    "27b",
+    "fine-tuned",
+    "instruction-tuned",
+    "reasoning",
+    "agent",
+    "agentic",
+    "tool-use",
+    "function-calling",
+    "code-generation",
+    "mtp",
+    "speculative-decoding",
+    "local-inference",
+    "en",
+    "zh",
+    "es",
+    "ru",
+    "ja",
+    "base_model:Jackrong/Qwopus3.8-27B-Flash",
+    "base_model:quantized:Jackrong/Qwopus3.8-27B-Flash",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 15234047427,
+  "storage_human": "15.2 GB",
+  "base_model": "Jackrong/Qwopus3.8-27B-Flash",
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Relacionamentos amorosos como experiências de ser e de não ser: A ...",
+      "url": "https://pepsic.bvsalud.org/scielo.php?script=sci_arttext&pid=S0100-34372020000200015",
+      "snippet": "Pretende-se demonstrar como em determinadas situações a psicoterapia de casal não pode avançar para o trabalho da relação a …"
+    },
+    {
+      "title": "AS RELAÇÕES AMOROSAS E SEUS ENLACES: UM ESTUDO …",
+      "url": "https://sistemas2.uespi.br/bitstream/tede/1152/2/Monografia%20Completa%20Priscylla%20Farias%20UESPI.pdf",
+      "snippet": "A minha namorada, Fernanda Ito Ota, obrigada por confiar e me trazer segurança nos momentos de incertezas, por ajudar da forma …"
+    },
+    {
+      "title": "Ruptura da vivência do self (despersonalização) e o seu contexto em ...",
+      "url": "https://repositorio.ulisboa.pt/entities/publication/b28a6ff8-517b-4b19-bbeb-2435eb0d17b3",
+      "snippet": "Usando ferramentas de pesquisa como PubMed, Medline e Psychlit, foram reunidos 173 artigos científicos para análise e revisão de …"
+    },
+    {
+      "title": "Relações amorosas: rupturas e elaborações",
+      "url": "https://pepsic.bvsalud.org/scielo.php?script=sci_arttext&pid=S0101-48382011000100003",
+      "snippet": "O objetivo deste artigo é refletir sobre os sentimentos que eclodem quando do rompimento de uma relação amorosa. Privilegiamos …"
+    },
+    {
+      "title": "Conheça os principais autores da psicanálise e seus conceitos",
+      "url": "https://www.casadosaber.com.br/blog/os-principais-autores-da-psicanalise-e-seus-conceitos",
+      "snippet": "Conheça os principais nomes da psicanálise, como Freud, Lacan, Klein, Winnicott, Ferenczi e Bion e entenda suas contribuições …"
+    }
+  ]
+}

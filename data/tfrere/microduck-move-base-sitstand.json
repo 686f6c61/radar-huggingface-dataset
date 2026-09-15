@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "tfrere/microduck-move-base-sitstand",
+  "slug": "tfrere-microduck-move-base-sitstand",
+  "author": "tfrere",
+  "url": "https://huggingface.co/tfrere/microduck-move-base-sitstand",
+  "created_at": "2026-09-14T21:09:21.000Z",
+  "updated_at": "2026-09-14T21:25:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck-academy-policy",
+    "microduck-policy",
+    "academy",
+    "official",
+    "family:sitstand",
+    "kind:perpetual",
+    "tier:1",
+    "microduck-academy-base",
+    "microduck",
+    "robotics",
+    "reinforcement-learning",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5854951,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Visa for the Netherlands - NetherlandsWorldwide",
+      "url": "https://www.netherlandsworldwide.nl/visa-the-netherlands",
+      "snippet": "If you are coming to the Netherlands you should always check if you need a visa and, if so, what type of visa. Find out how to apply …"
+    },
+    {
+      "title": "Apply for a visa",
+      "url": "https://visa.vfsglobal.com/zwe/en/nld/apply-visa",
+      "snippet": "You can apply here for your short-stay Schengen visa for the Netherlands or for a visa for the Caribbean parts of the Kingdom. The …"
+    },
+    {
+      "title": "Where can I get a visa application form for the Netherlands?",
+      "url": "https://www.netherlandsworldwide.nl/visa-the-netherlands/visa-application-form",
+      "snippet": "If you want to apply for a visa for the Netherlands, use the online application form for the type of visa you need."
+    },
+    {
+      "title": "consular.mfaservices.nl",
+      "url": "https://consular.mfaservices.nl/travel-documents?lang=en",
+      "snippet": "Information on obtaining travel documents, including requirements and application process."
+    },
+    {
+      "title": "| vfsglobal - vfsglobal",
+      "url": "https://visa.vfsglobal.com/netherlands",
+      "snippet": "Loading..."
+    }
+  ]
+}

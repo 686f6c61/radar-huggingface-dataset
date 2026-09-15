@@ -5,7 +5,7 @@
   "author": "kzhao5",
   "url": "https://huggingface.co/kzhao5/mea-qedks-defenses",
   "created_at": "2026-09-12T21:57:49.000Z",
-  "updated_at": "2026-09-13T04:26:43.000Z",
+  "updated_at": "2026-09-14T17:11:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 883512264,
-  "storage_human": "884 MB",
+  "storage_bytes": 1004880393,
+  "storage_human": "1.0 GB",
   "base_model": "Qwen/Qwen2.5-7B",
   "formats": [
     "safetensors"

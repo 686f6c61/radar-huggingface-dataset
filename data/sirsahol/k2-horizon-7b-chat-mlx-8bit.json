@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/K2-Horizon-7B-chat-mlx-8bit",
+  "slug": "sirsahol-k2-horizon-7b-chat-mlx-8bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/K2-Horizon-7B-chat-mlx-8bit",
+  "created_at": "2026-09-15T00:27:53.000Z",
+  "updated_at": "2026-09-15T00:30:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "k2_horizon",
+    "text-generation",
+    "apple-silicon",
+    "8-bit",
+    "conversational",
+    "transformers",
+    "k2-horizon",
+    "7b",
+    "dense",
+    "open-weights",
+    "ifm",
+    "custom_code",
+    "en",
+    "dataset:IFM/K2-Horizon-Pretrain-Data",
+    "dataset:IFM/K2-Horizon-Midtrain-Data",
+    "license:apache-2.0",
+    "base_model:IFM/K2-Horizon-7B",
+    "base_model:quantized:IFM/K2-Horizon-7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8999178240,
+  "parameters_human": "9.00B",
+  "storage_bytes": 9582640142,
+  "storage_human": "9.6 GB",
+  "base_model": "IFM/K2-Horizon-7B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iPhone 4 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/IPhone_4",
+      "snippet": "The iPhone 4 had one of the longest lifespans of any iPhone ever produced, spanning close to four years and available in some …"
+    },
+    {
+      "title": "Apple iPhone 4 Phones for sale | eBay UK",
+      "url": "https://www.ebay.co.uk/b/bn_3063500?msockid=0a815329346360670b3b44fc35646172",
+      "snippet": "The Apple iPhone 4, originally released in 2010, is a classic smartphone known for its iconic flat-edged design and for introducing the …"
+    },
+    {
+      "title": "Apple iPhone 4 - Full phone specifications - GSMArena.com",
+      "url": "https://www.gsmarena.com/apple_iphone_4-3275.php",
+      "snippet": "Apple iPhone 4 smartphone. Announced Jun 2010. Features 3.5″ display, Apple A4 chipset, 5 MP primary camera, 1420 mAh battery, …"
+    },
+    {
+      "title": "iPhone 4 Phones for Sale - Shop New & Used Cell Phones - eBay",
+      "url": "https://www.ebay.com/b/Apple-iPhone-4/9355/bn_3908544?msockid=0a815329346360670b3b44fc35646172",
+      "snippet": "Find a range of Apple iPhone 4 models, including fully functional and parts-only options. Upgrade your mobile device today. Shop …"
+    },
+    {
+      "title": "iPhone 4 - Technical Specifications - Apple Support",
+      "url": "https://support.apple.com/en-us/112562",
+      "snippet": "Choose one of six colors — white, black, blue, green, orange, or pink — and slip it around the edge of your iPhone 4. With metal …"
+    }
+  ]
+}

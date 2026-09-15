@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "muhamad-geosurge/invert-polarity-ac652602-1c14-40c7-a301-6489311834d0",
+  "slug": "muhamad-geosurge-invert-polarity-ac652602-1c14-40c7-a301-6489311834d0",
+  "author": "muhamad-geosurge",
+  "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-ac652602-1c14-40c7-a301-6489311834d0",
+  "created_at": "2026-09-14T22:28:58.000Z",
+  "updated_at": "2026-09-14T22:30:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mistral",
+    "mistral-common",
+    "base_model:mistralai/Mistral-7B-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248031744,
+  "parameters_human": "7.25B",
+  "storage_bytes": 14496097520,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AROWS R Tour of Duty Certification - AF",
+      "url": "https://www.arpc.afrc.af.mil/Portals/4/AROWS-R%20TODC%20Quick%20Guide.pdf",
+      "snippet": "used for tours of 30 or more days. Certifying your orders via AROWS-R results in y u receiving your pay more quickly. It also …"
+    },
+    {
+      "title": "AROWS-R TODC Certifier - AF",
+      "url": "https://www.hqrio.afrc.af.mil/Portals/149/IR%20Guide%20and%20Quick%20Guides/Quick%20Guides/AROWS-R%20TODC%20Certifiers%20Quick%20Guide.pdf",
+      "snippet": "While the AROWS-R system usually works well, there are some issues that have been identified. If the standard process fails due to …"
+    },
+    {
+      "title": "USAF Links",
+      "url": "https://aflink.us/",
+      "snippet": "Apr 23, 2026 · Aircraft and Personnel Automated Clearance System (APACS) Airfield Driving ARIS - Automated Readiness …"
+    },
+    {
+      "title": "AROWS-R TODC Quick Guide",
+      "url": "https://www.hqrio.afrc.af.mil/Portals/149/IR%20Guide%20and%20Quick%20Guides/AROWS-R%20TODC%20Quick%20Guide.pdf?ver=pwXKR3rWMk34aS0C1kl-rg%3d%3d",
+      "snippet": "Use the online Tour of Duty Certification (TODC) via AROWS-R to certify any orders that are 29 days or less (short tour). It cannot be …"
+    },
+    {
+      "title": "USAF Links",
+      "url": "https://aflink.us/?q=aro",
+      "snippet": "Apr 23, 2026 · About These links are mirrored from the USAF Quick Links page to be quickly and easily accessible from anywhere"
+    }
+  ]
+}

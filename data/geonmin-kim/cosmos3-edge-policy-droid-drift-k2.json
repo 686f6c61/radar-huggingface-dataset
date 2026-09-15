@@ -5,7 +5,7 @@
   "author": "geonmin-kim",
   "url": "https://huggingface.co/geonmin-kim/Cosmos3-Edge-Policy-DROID-Drift-K2",
   "created_at": "2026-09-13T11:33:55.000Z",
-  "updated_at": "2026-09-13T19:53:09.000Z",
+  "updated_at": "2026-09-14T12:24:20.000Z",
   "license": "nvidia-open-model-license",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 14474603684,
-  "storage_human": "14.5 GB",
+  "storage_bytes": 27953389988,
+  "storage_human": "28.0 GB",
   "base_model": "nvidia/Cosmos3-Edge-Policy-DROID",
   "formats": [
     "safetensors"

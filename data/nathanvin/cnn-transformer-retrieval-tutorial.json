@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "nathanvin/cnn-transformer-retrieval-tutorial",
+  "slug": "nathanvin-cnn-transformer-retrieval-tutorial",
+  "author": "nathanvin",
+  "url": "https://huggingface.co/nathanvin/cnn-transformer-retrieval-tutorial",
+  "created_at": "2026-09-15T00:46:00.000Z",
+  "updated_at": "2026-09-15T00:46:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kaum zu glauben! - alle verfügbaren Videos - hier anschauen",
+      "url": "https://www.ardmediathek.de/sendung/kaum-zu-glauben/Y3JpZDovL25kci5kZS8xNTg3",
+      "snippet": "2 days ago · Kai Pflaume präsentiert Zeitgenossen mit erstaunlichen Fähigkeiten oder Geschichten, die das erstaunte Rateteam …"
+    },
+    {
+      "title": "Kaum zu glauben! | 09.08.2026 - ARD Mediathek",
+      "url": "https://www.ardmediathek.de/video/kaum-zu-glauben/kaum-zu-glauben-oder-09-08-2026/ndr/Y3JpZDovL25kci5kZS9wcm9wbGFuXzE5NjM3ODQxN19nYW56ZVNlbmR1bmc",
+      "snippet": "Aug 9, 2026 · Kai Pflaume präsentiert wieder die unglaublichsten Geschichten und sorgt auch in den neuen Folgen in 2026 mit der …"
+    },
+    {
+      "title": "Kaum zu glauben! - NDR.de",
+      "url": "https://www.ndr.de/fernsehen/sendungen/kaum-zu-glauben,sendung-4418516.html",
+      "snippet": "Jul 12, 2026 · Endlich ist es wieder so weit: Die beliebte Rateshow \"Kaum zu glauben!\" startet mit einer neuen Staffel ab Juli 2026 im …"
+    },
+    {
+      "title": "Kaum zu glauben! - NDR.de",
+      "url": "https://www.ndr.de/fernsehen/sendungen/kaum-zu-glauben,sendung-5098222.html",
+      "snippet": "Kaum zu glauben! Sonntag, 25. Oktober 2026, 22:10 bis 22:55 Uhr Kai Pflaume präsentiert wieder die unglaublichsten Geschichten …"
+    },
+    {
+      "title": "Kaum zu glauben! | Sendetermine & Stream | September/Oktober 2026",
+      "url": "https://www.netzwelt.de/tv-show/180296-kaum-glauben-so-seht-ndr-rateshow-tv-stream.html",
+      "snippet": "Sendetermine & Stream im September und Oktober 2026 So seht ihr die NDR-Rateshow im TV und Stream In der NDR-Rateshow …"
+    }
+  ]
+}

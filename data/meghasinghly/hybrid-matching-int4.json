@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "meghasinghly/hybrid-matching-int4",
+  "slug": "meghasinghly-hybrid-matching-int4",
+  "author": "meghasinghly",
+  "url": "https://huggingface.co/meghasinghly/hybrid-matching-int4",
+  "created_at": "2026-09-14T18:16:55.000Z",
+  "updated_at": "2026-09-14T18:17:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

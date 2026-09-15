@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "bak-er06/mae-retrieval-baseline",
+  "slug": "bak-er06-mae-retrieval-baseline",
+  "author": "bak-er06",
+  "url": "https://huggingface.co/bak-er06/mae-retrieval-baseline",
+  "created_at": "2026-09-14T23:21:40.000Z",
+  "updated_at": "2026-09-14T23:21:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fichier BAK (qu’est-ce que c’est et comment en ouvrir un)",
+      "url": "https://commentouvrir.com/blog/fichier-bak-quest-ce-que-cest-et-comment-en-ouvrir-un/",
+      "snippet": "Nov 19, 2020 · Un fichier avec l'extension de fichier BAK est un fichier de sauvegarde utilisé par de nombreuses applications …"
+    },
+    {
+      "title": "Comment restaurer et ouvrir des fichiers .Bak comme un pro [2026]",
+      "url": "https://geekflare.com/fr/how-to-restore-open-bak-files/",
+      "snippet": "Mar 13, 2026 · Suivez ces étapes pour ouvrir et restaurer les fichiers .bak. Vous apprendrez ici comment récupérer les données d'un …"
+    },
+    {
+      "title": "Meilleures offres reconditionné | Back Market",
+      "url": "https://www.backmarket.fr/fr-fr/l/meilleures-offres/0b2aa2bd-141f-4263-8019-03e3fd0c1884?msockid=0ab751dfa6be619a2cc7460aa72d60fd",
+      "snippet": "Smartphones reconditionnés à la perfection et garantis. Plus, des centaines d’ordinateurs, de PS4, de tablettes, de télévisions, etc. …"
+    },
+    {
+      "title": ".BAK - Comment ouvrir le fichier BAK? Extension de fichier BAK - FileInfo",
+      "url": "https://fileinfo.fr/extension/bak",
+      "snippet": "L'extension de fichier BAK est une extension de fichier commune aux fichiers créés par les fonctionnalités de sauvegarde …"
+    },
+    {
+      "title": "Bak file - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bak_file",
+      "snippet": "This common \".bak\" naming scheme makes it possible to retrieve the original contents of the file in case of a failed write that corrupts …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jones1993/flamingo-multitask-test-2024",
+  "slug": "jones1993-flamingo-multitask-test-2024",
+  "author": "jones1993",
+  "url": "https://huggingface.co/jones1993/flamingo-multitask-test-2024",
+  "created_at": "2026-09-14T23:10:38.000Z",
+  "updated_at": "2026-09-14T23:10:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Natural language processing - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Natural_language_processing",
+      "snippet": "Natural language processing (NLP) is the processing of natural language information by a computer. NLP is a subfield of computer …"
+    },
+    {
+      "title": "What is NLP (natural language processing)? - IBM",
+      "url": "https://www.ibm.com/think/topics/natural-language-processing",
+      "snippet": "Aug 11, 2024 · Natural language processing (NLP) is a subfield of computer science and artificial intelligence (AI) that uses machine …"
+    },
+    {
+      "title": "Introduction to Natural Language Processing (NLP)",
+      "url": "https://www.geeksforgeeks.org/nlp/introduction-to-natural-language-processing-nlp/",
+      "snippet": "Jul 2, 2026 · Natural Language Processing (NLP) helps computers understand, interpret and produce human language. It studies …"
+    },
+    {
+      "title": "Natural Language Processing | Cambridge Core",
+      "url": "https://www.cambridge.org/core/journals/natural-language-processing",
+      "snippet": "Its aim is to bridge the gap between traditional computational linguistics research and the implementation of practical applications …"
+    },
+    {
+      "title": "Natural Language Processing (NLP) Tutorial - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/natural-language-processing-nlp-tutorial/",
+      "snippet": "Jul 21, 2026 · Natural Language Processing (NLP) helps machines to understand and process human languages either in text or …"
+    }
+  ]
+}

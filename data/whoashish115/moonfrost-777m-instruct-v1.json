@@ -36,11 +36,11 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 0,
+  "downloads_30d": 1766,
   "trending_score": 0,
   "parameters": 777229056,
   "parameters_human": "777.2M",
-  "storage_bytes": 1554977695,
+  "storage_bytes": 1554617472,
   "storage_human": "1.6 GB",
   "base_model": "whoashish115/Moonfrost-777M",
   "formats": [

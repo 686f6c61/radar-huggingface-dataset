@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "hqfang/pi05-so100_101",
+  "slug": "hqfang-pi05-so100_101",
+  "author": "hqfang",
+  "url": "https://huggingface.co/hqfang/pi05-so100_101",
+  "created_at": "2026-09-14T23:28:33.000Z",
+  "updated_at": "2026-09-14T23:30:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "so100",
+    "so101",
+    "dataset:allenai/MolmoAct2-SO100_101-Dataset",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 16578025775,
+  "storage_human": "16.6 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Hotel in Agadir | Pickalbatros Palais Des Roses",
+      "url": "https://www.pickalbatros.com/palais-des-roses-agadir",
+      "snippet": "Discover why Pickalbatros Palais Des Roses Agadir is among the best hotels in Agadir, with exclusive private beach, spa, dining & …"
+    },
+    {
+      "title": "PICKALBATROS PALAIS DES ROSES - Updated 2026 Reviews",
+      "url": "https://www.tripadvisor.co.uk/Hotel_Review-g293731-d33253636-Reviews-Pickalbatros_Palais_Des_Roses_Hotel-Agadir_Souss_Massa.html",
+      "snippet": "Book Pickalbatros Palais Des Roses, Agadir on Tripadvisor: See 1,252 traveller reviews, 1,805 candid photos, and great deals for …"
+    },
+    {
+      "title": "Pickalbatros Palais Des Roses - Agadir - All Inclusive, Agadir …",
+      "url": "https://www.booking.com/hotel/ma/pickalbatros-palais-des-roses.html?msockid=163c67dffa5666ec08c4700afb3e674a",
+      "snippet": "The prices at Pickalbatros Palais Des Roses - Agadir - All Inclusive may vary depending on your stay (e.g. dates, hotel's policy etc.). …"
+    },
+    {
+      "title": "PICKALBATROS PALAIS DES ROSES HOTEL | Save MORE on Your Stay!",
+      "url": "https://pickalbatrospalaisroses.hotelagadir.net/en/",
+      "snippet": "1 day ago · Offering a sun deck and a shared lounge, as well as the views of the pool, the 5-star Pickalbatros Palais Des Roses Hotel …"
+    },
+    {
+      "title": "Where to Stay in Agadir | Pickalbatros Palais Des Roses Agadir",
+      "url": "https://www.pickalbatros.com/palais-des-roses-agadir/rooms-suites",
+      "snippet": "Experience unparalleled comfort and luxury at Pickalbatros Palais Des Roses Agadir. Our spacious guest rooms and suites feature …"
+    }
+  ]
+}

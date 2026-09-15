@@ -5,7 +5,7 @@
   "author": "Kavin60606",
   "url": "https://huggingface.co/Kavin60606/isr-aloha-act-ckpts",
   "created_at": "2026-09-12T20:00:15.000Z",
-  "updated_at": "2026-09-12T20:10:47.000Z",
+  "updated_at": "2026-09-14T11:44:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 4755674648,
-  "storage_human": "4.8 GB",
+  "storage_bytes": 6616605824,
+  "storage_human": "6.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

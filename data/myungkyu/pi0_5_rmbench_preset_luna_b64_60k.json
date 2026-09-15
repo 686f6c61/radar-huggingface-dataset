@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Myungkyu/pi0_5_rmbench_preset_luna_b64_60k",
+  "slug": "myungkyu-pi0_5_rmbench_preset_luna_b64_60k",
+  "author": "Myungkyu",
+  "url": "https://huggingface.co/Myungkyu/pi0_5_rmbench_preset_luna_b64_60k",
+  "created_at": "2026-09-14T22:58:31.000Z",
+  "updated_at": "2026-09-14T22:59:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "vla",
+    "rmbench",
+    "dataset:Myungkyu/RMBench-preset-luna",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354060792,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zakłady bukmacherskie Betclic Polska - Legalny bukmacher - strony ...",
+      "url": "https://www.betclic.pl/",
+      "snippet": "Typuj online z najlepszym bukmacherem Betclic. Zarejestruj się teraz, otrzymaj bonus i obstawiaj wszystkie wydarzenia sportowe na …"
+    },
+    {
+      "title": "Betclic",
+      "url": "https://www.betclic.pl/logowanie",
+      "snippet": "Odpowiedzialna gra Regulaminy Polityka prywatności i cookies Skonfiguruj pliki cookie O Betclic 10.4.0-1"
+    },
+    {
+      "title": "Betclic",
+      "url": "https://www.betclic.com/en/casino/login",
+      "snippet": "Betclic Mangas Gaming Malta Limited, company registration number C 46185, with registered address at Level 3, Tagliaferro …"
+    },
+    {
+      "title": "Login - Betclic",
+      "url": "https://www.betclic.com/en/sports-betting/login",
+      "snippet": "Login | Betclic Mangas Gaming Malta Limited, company registration number C 46185, with registered address at Level 3, Tagliaferro …"
+    },
+    {
+      "title": "Betclic",
+      "url": "https://partner.betclic.pl/sportlive-euro2024pl/",
+      "snippet": "Otrzymany freebet nie podlega dodatkowym warunkom obrotu, należy jedynie obstawić kupon z kursem minimalnym 2,14 i w …"
+    }
+  ]
+}

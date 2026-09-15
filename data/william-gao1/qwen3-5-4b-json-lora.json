@@ -5,7 +5,7 @@
   "author": "William-Gao1",
   "url": "https://huggingface.co/William-Gao1/qwen3.5-4b-json-lora",
   "created_at": "2026-09-10T13:22:18.000Z",
-  "updated_at": "2026-09-10T13:22:24.000Z",
+  "updated_at": "2026-09-14T21:33:55.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 11,
+  "downloads_30d": 12,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 64996408,
-  "storage_human": "65 MB",
+  "storage_bytes": 146049776,
+  "storage_human": "146 MB",
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"

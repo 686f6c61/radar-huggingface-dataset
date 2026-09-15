@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/Qwen2.5-7B-Instruct-chat-mlx-4bit",
+  "slug": "sirsahol-qwen2-5-7b-instruct-chat-mlx-4bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/Qwen2.5-7B-Instruct-chat-mlx-4bit",
+  "created_at": "2026-09-14T22:56:44.000Z",
+  "updated_at": "2026-09-14T23:17:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "apple-silicon",
+    "4-bit",
+    "conversational",
+    "qwen",
+    "qwen2.5",
+    "transformers",
+    "chat",
+    "en",
+    "arxiv:2309.00071",
+    "arxiv:2407.10671",
+    "license:apache-2.0",
+    "eval-results",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "deploy:sagemaker",
+    "deploy:azure",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4295768684,
+  "storage_human": "4.3 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://m.chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "Download ChatGPT",
+      "url": "https://chatgpt.com/download/",
+      "snippet": "Download the ChatGPT app for Windows, Mac, iPhone, and Android. Access ChatGPT Work and Codex, use voice conversations, …"
+    },
+    {
+      "title": "GPT‑5 is here - OpenAI",
+      "url": "https://openai.com/gpt-5/",
+      "snippet": "GPT‑5 is smarter across the board, providing more useful responses across math, science, finance, law, and more. It’s like having a …"
+    },
+    {
+      "title": "Start using ChatGPT instantly - OpenAI",
+      "url": "https://openai.com/index/start-using-chatgpt-instantly/",
+      "snippet": "Apr 1, 2024 · Starting today, you can use ChatGPT instantly, without needing to sign-up. We’re rolling this out gradually, with the aim …"
+    }
+  ]
+}

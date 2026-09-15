@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "chiaweicfi/retrieval",
+  "slug": "chiaweicfi-retrieval",
+  "author": "chiaweicfi",
+  "url": "https://huggingface.co/chiaweicfi/retrieval",
+  "created_at": "2026-09-15T00:39:14.000Z",
+  "updated_at": "2026-09-15T00:39:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "T20 World Cup 2026 Points Table - NDTV Sports",
+      "url": "https://sports.ndtv.com/t20-world-cup-2026/points-table",
+      "snippet": "T20 World Cup 2026 Points Table - Check here for team rankings, points, matches won, net run rate and updated team standings …"
+    },
+    {
+      "title": "ICC Men's T20 World Cup 2026 Points Table | Latest Standings, Net …",
+      "url": "https://www.cricinfo.com/series/icc-men-s-t20-world-cup-2025-26-1502138/points-table-standings",
+      "snippet": "Get the updated ICC Men's T20 World Cup 2026 points table with real-time team standings, wins, losses, and Net Run Rate (NRR). …"
+    },
+    {
+      "title": "T20 World Cup 2026 Points Table - The Financial Express",
+      "url": "https://www.financialexpress.com/sports/t20-world-cup-points-table/",
+      "snippet": "1 day ago · T20 World Cup 2026 Points Table: Get the latest ICC Men's T20 World Cup 2026 points table and team standings, …"
+    },
+    {
+      "title": "ICC Men's T20 World Cup 2026 Points Table | Cricbuzz.com",
+      "url": "https://www.cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026/points-table",
+      "snippet": "Get a glimpse at the Points table of the ICC Men's T20 World Cup 2026 on Cricbuzz.com"
+    },
+    {
+      "title": "ICC Men's T20 World Cup 2026 - Cricbuzz",
+      "url": "https://www.cricbuzz.com/cricket-series/11253/icc-mens-t20-world-cup-2026",
+      "snippet": "Full ICC Men's T20 World Cup 2026 Schedule, Points Table, Final Teams List, News, Venue Details, Series & Player Stats, Videos …"
+    }
+  ]
+}

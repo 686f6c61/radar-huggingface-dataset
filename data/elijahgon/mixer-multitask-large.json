@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "elijahgon/mixer-multitask-large",
+  "slug": "elijahgon-mixer-multitask-large",
+  "author": "elijahgon",
+  "url": "https://huggingface.co/elijahgon/mixer-multitask-large",
+  "created_at": "2026-09-14T22:49:23.000Z",
+  "updated_at": "2026-09-14T22:49:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "مجلس القضاء الأعلى",
+      "url": "https://www.sjc.iq/qview.1821/",
+      "snippet": "وقد بررت محكمة الجنايات المذكور قرار رد الطعن شكلا باعتبار ان التحقيق جار في القضية من مكتب تحقيقات بابل التابعة لهيئة النزاهة وباعتبار ان رئيس هيئة النزاهة ليس طرفا بهذه القضية وغير مخول ..."
+    },
+    {
+      "title": "هيئة النزاهة",
+      "url": "https://nazaha.iq/",
+      "snippet": "أعلنت الهيئة تمكُّنها من تفكيك شبكةٍ تمارس الابتزاز وتلقّي الرشى في مُحافظة بابل، مُبيّنةً أنَّ أفراد الشبكة كانوا يبتزّون الراغبين بالتعاقد بصيغة المُساطحة على الأراضي العائدة للمُحافظة والمُعلنة للإيجار؛ …"
+    },
+    {
+      "title": "الاحكام والقرارات التي يطعن بها امام محاكم الاستئناف بصفتها الاستئنافية ...",
+      "url": "https://almerja.net/more.php?idm=175879",
+      "snippet": "وهذه القرارات التي كرت على سبيل الحصر في المادة (216) من قانون المرافعات المدنية يتم الطعن بها تمييزا أمام محاكم الاستئناف في حال صدرت من محكمة البداءة أو محكمة الأحوال الشخصية أو محكمة …"
+    },
+    {
+      "title": "قانون هيئة النزاهة والكسب غير المشروع رقم 30 لسنة 2011 المعدل",
+      "url": "https://www.iraqilaws.com/2023/10/30-2011.html",
+      "snippet": "وللهيئة حق الطعن بطريق التمييـز بقرار قاضي التحقيق القاضي برفضه طلبها لاي سبب. المادة ١٥ (اولا:- تلتزم جميع دوائر ومؤسسات الدولة العامة بتزويد الهيئة بما تطلبه من وثائق واوليـات"
+    },
+    {
+      "title": "هيئة النزاهة - nazaha.iq",
+      "url": "https://nazaha.iq/body.asp?field=news_arabic&id=2569",
+      "snippet": "حددت هيئة النزاهة الدور الذي يتحتم على ممثليها القانونيين أداءه للطعن في القرارات الصادرة عن اللجان القضائية. وافادت دائرة التحقيقات بصدور تعليمات تحدد دور ممثلي الهيئة القانونيين بعد صدور …"
+    }
+  ]
+}

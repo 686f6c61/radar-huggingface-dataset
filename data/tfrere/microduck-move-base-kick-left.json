@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "tfrere/microduck-move-base-kick-left",
+  "slug": "tfrere-microduck-move-base-kick-left",
+  "author": "tfrere",
+  "url": "https://huggingface.co/tfrere/microduck-move-base-kick-left",
+  "created_at": "2026-09-14T21:09:52.000Z",
+  "updated_at": "2026-09-14T21:09:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck-academy-policy",
+    "microduck-policy",
+    "academy",
+    "official",
+    "family:ballkick",
+    "kind:episodic",
+    "tier:1",
+    "microduck",
+    "robotics",
+    "reinforcement-learning",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5661969,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Booking.com | Site officiel | Hôtels, vols, voitures de location et ...",
+      "url": "https://www.booking.com/index.fr.html?msockid=23194ab17bec62010edb5d657aae631e",
+      "snippet": "Avec Booking.com, économisez sur les hôtels, maisons, vols, voitures de location, taxis et attractions. Des voyages parfaits pour …"
+    },
+    {
+      "title": "Booking.com | Sitio oficial | Los mejores hoteles, vuelos, coches de ...",
+      "url": "https://www.booking.com/index.es.html?msockid=23194ab17bec62010edb5d657aae631e",
+      "snippet": "Explora el mundo con Booking.com. Precios increíbles en casas, hoteles, vuelos, coches de alquiler, taxis y atracciones: monta el …"
+    },
+    {
+      "title": "Booking.com",
+      "url": "https://packages.booking.com/vacationpackages/",
+      "snippet": "Save up to 625 dollars when you book your flight and hotel together! Booking.com Vacation Packages with exclusive deals on airline …"
+    },
+    {
+      "title": "Logging in to the Booking.com Extranet",
+      "url": "https://partner.booking.com/en-us/help/account-and-log/settings/logging-bookingcom-extranet",
+      "snippet": "Aug 6, 2026 · The Booking.com Extranet is the accommodation partner and property owner platform that hosts all the necessary …"
+    },
+    {
+      "title": "Extranet - Booking.com for Partners",
+      "url": "https://partner.booking.com/fr/solutions/extranet",
+      "snippet": "Extranet L’extranet est le centre opérationnel de votre établissement sur Booking.com. Vous pouvez gérer tout ce qui s’y rapporte, …"
+    }
+  ]
+}

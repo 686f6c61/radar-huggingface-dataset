@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/augmented-33d0baf3de3c3ea1",
+  "slug": "gradients-io-tournaments-augmented-33d0baf3de3c3ea1",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/augmented-33d0baf3de3c3ea1",
+  "created_at": "2026-09-14T23:03:24.000Z",
+  "updated_at": "2026-09-14T23:04:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098885406,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Stop Procrastinating (And Why You Do It So Much) - wikiHow",
+      "url": "https://www.wikihow.com/Stop-Procrastinating",
+      "snippet": "Apr 13, 2026 · We spoke with life and mindfulness coaches and academic tutors to learn how to overcome procrastination and why it …"
+    },
+    {
+      "title": "How to Stop Procrastinating With 25 Tools - PositivePsychology.com",
+      "url": "https://positivepsychology.com/how-to-stop-procrastinating/",
+      "snippet": "May 21, 2024 · Want to know how to stop procrastinating? This selection of 25 tools, and insight into the science behind …"
+    },
+    {
+      "title": "How to Stop Procrastinating: 10 Practical Tips - Coursera",
+      "url": "https://www.coursera.org/articles/how-to-stop-procrastinating?msockid=103668c6d3ec64c911147f12d2ca655f",
+      "snippet": "Oct 7, 2025 · Procrastination is a cycle. Learning to identify your choices (and the underlying feelings likely motivating them) is a …"
+    },
+    {
+      "title": "9 Strategies To Stop Procrastinating",
+      "url": "https://health.clevelandclinic.org/how-to-stop-procrastinating",
+      "snippet": "Jan 5, 2026 · To stop procrastinating, break down large tasks into smaller ones, schedule breaks, set timers, avoid self-criticism and …"
+    },
+    {
+      "title": "How to Stop Procrastinating - The New York Times",
+      "url": "https://www.nytimes.com/2026/07/31/well/stop-procrastinating-tips.html",
+      "snippet": "Jul 31, 2026 · Here are some strategies Dr. Shatz and other experts recommend to stop procrastinating. When you have a chore …"
+    }
+  ]
+}

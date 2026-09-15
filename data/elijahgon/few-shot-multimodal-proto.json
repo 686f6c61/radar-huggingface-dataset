@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "elijahgon/few-shot-multimodal-proto",
+  "slug": "elijahgon-few-shot-multimodal-proto",
+  "author": "elijahgon",
+  "url": "https://huggingface.co/elijahgon/few-shot-multimodal-proto",
+  "created_at": "2026-09-14T22:48:58.000Z",
+  "updated_at": "2026-09-14T22:49:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "few-shot-multimodal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ViaMichelin : Itinéraires, Cartes, Info trafic, Hôtels",
+      "url": "https://fr.viamichelin.be/",
+      "snippet": "Explorez ViaMichelin, le guide de votre mobilité. Carte interactive, itinéraires, bornes de recharge, hébergements, restaurants et sites …"
+    },
+    {
+      "title": "Itinéraire: calcul d’itinéraire, coût du trajet détaillé - ViaMichelin",
+      "url": "https://fr.viamichelin.be/itineraires",
+      "snippet": "Pour un itinéraire en voiture ou en moto , ViaMichelin vous permet de connaître le coût détaillé de votre trajet : coût du carburant …"
+    },
+    {
+      "title": "ViaMichelin: Route planner, Maps, Traffic info, Hotels",
+      "url": "https://www.viamichelin.com/",
+      "snippet": "Explore ViaMichelin, your guide to mobility. Interactive map, itineraries, charging stations, accommodations, restaurants and tourist …"
+    },
+    {
+      "title": "Route planner: route calculation, detailed journey cost - ViaMichelin",
+      "url": "https://www.viamichelin.com/routes",
+      "snippet": "ViaMichelin is a specialist in route calculation in Europe. Calculate your pedestrian, motorcycle, or car journey for free. Take …"
+    },
+    {
+      "title": "Carte MICHELIN France - ViaMichelin",
+      "url": "https://www.viamichelin.fr/cartes-plans/france",
+      "snippet": "Le Fooding ViaMichelin sur Instagram ViaMichelin sur Twitter ViaMichelin sur Linkedin MICHELIN Voyage sur Facebook MICHELIN …"
+    }
+  ]
+}

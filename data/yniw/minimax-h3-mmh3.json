@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "yniw/MiniMax-H3-mmh3",
+  "slug": "yniw-minimax-h3-mmh3",
+  "author": "yniw",
+  "url": "https://huggingface.co/yniw/MiniMax-H3-mmh3",
+  "created_at": "2026-09-14T21:07:58.000Z",
+  "updated_at": "2026-09-14T21:51:03.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "fasth3",
+    "mmh3",
+    "text-to-video",
+    "base_model:FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree",
+    "base_model:finetune:FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2696628160,
+  "storage_human": "2.7 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3, FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Videos & Sex Movies - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://www.pornhub.com/",
+      "snippet": "Pornhub provides you with unlimited free porn videos with the hottest pornstars. Enjoy the largest amateur porn community on the net …"
+    },
+    {
+      "title": "Pornhub Porn Videos",
+      "url": "https://www.pornhub.com/video/search?search=pornhub",
+      "snippet": "No other sex tube is more popular and features more Pornhub scenes than Pornhub! Browse through our impressive selection of …"
+    },
+    {
+      "title": "Pornhub - Free HD Porn Videos & Online Sex Movies",
+      "url": "https://en-pornhub.com/",
+      "snippet": "Explore a massive collection of free HD streaming videos updated daily with trending categories, popular stars, and smooth mobile …"
+    },
+    {
+      "title": "Gratis pornovideo's en seksfilms - Porno, XXX, PornoTube | Pornhub",
+      "url": "https://nl.pornhub.com/",
+      "snippet": "Pornhub biedt je onbeperkte gratis pornovideo's met de heetste 18+ performers. Geniet van de grootste amateurporno community op …"
+    },
+    {
+      "title": "pornhub videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/pornhub",
+      "snippet": "Pornhub Amateur Pornstar Shares Her Tips And Advice For Camming 54 min Camgirldiaries - 340.9k Views - 1080p"
+    }
+  ]
+}

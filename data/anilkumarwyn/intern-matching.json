@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "anilkumarwyn/intern-matching",
+  "slug": "anilkumarwyn-intern-matching",
+  "author": "anilkumarwyn",
+  "url": "https://huggingface.co/anilkumarwyn/intern-matching",
+  "created_at": "2026-09-14T22:25:03.000Z",
+  "updated_at": "2026-09-14T22:25:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sunday Natural",
+      "url": "https://www.sunday.de/",
+      "snippet": "Sunday Natural steht für höchste Reinheit, optimale Bioverfügbarkeit, wissenschaftlich fundierte Produkte und faire Preise. Altern …"
+    },
+    {
+      "title": "Sunday Natural",
+      "url": "https://www.sunday.it/",
+      "snippet": "\"L'eccezionale qualità delle linee di prodotti Sunday, sia dei preparati monoingrediente, sia di quelli composti, i quali si completano a …"
+    },
+    {
+      "title": "Premium vitamins and nutritional supplements - Sunday Natural",
+      "url": "https://www.sunday.de/en/",
+      "snippet": "Sunday Natural stands for the highest purity, optimal bioavailability, science-backed products and fair pricing. We cannot prevent …"
+    },
+    {
+      "title": "Sunday Natural Essentials: multivitaminici e multinutrienti",
+      "url": "https://www.sunday.it/essentials/",
+      "snippet": "Essentials di Sunday Natural forniscono un apporto completo di tutte le sostanze nutritive più importanti: vitamine, minerali, …"
+    },
+    {
+      "title": "Sunday Natural",
+      "url": "https://www.sunday.at/",
+      "snippet": "Sunday Natural steht für höchste Reinheit, optimale Bioverfügbarkeit, wissenschaftlich fundierte Produkte und faire Preise. Altern …"
+    }
+  ]
+}

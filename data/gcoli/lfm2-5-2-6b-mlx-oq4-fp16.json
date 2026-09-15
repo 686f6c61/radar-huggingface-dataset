@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "gcoli/LFM2.5-2.6B-MLX-oQ4-fp16",
+  "slug": "gcoli-lfm2-5-2-6b-mlx-oq4-fp16",
+  "author": "gcoli",
+  "url": "https://huggingface.co/gcoli/LFM2.5-2.6B-MLX-oQ4-fp16",
+  "created_at": "2026-09-14T23:35:09.000Z",
+  "updated_at": "2026-09-14T23:35:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm2",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 1602630869,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "quer mit Christoph Süß: Sehen, was quer läuft! | BR.de",
+      "url": "https://www.br.de/br-fernsehen/sendungen/quer/index.html",
+      "snippet": "Jul 30, 2026 · quer ist das politische, kritische, bayerische Magazin vom BR. Auf dieser Homepage gibt's die Videos der letzten …"
+    },
+    {
+      "title": "Querbeet: Die Gartensendung | BR Fernsehen | Fernsehen | BR.de",
+      "url": "https://www.br.de/br-fernsehen/sendungen/querbeet/index.html",
+      "snippet": "5 days ago · BR Fernsehen 20.09.2026 10:15 Uhr Gartenreise durch Südengland BR Fernsehen 20.09.2026 13:30 Uhr Video …"
+    },
+    {
+      "title": "quer komplett Sendung und Kommentare vom 12.03.2026 - br.de",
+      "url": "https://www.br.de/br-fernsehen/sendungen/quer/260129-sendung-quer-106.html",
+      "snippet": "Mar 11, 2026 · Wir freuen uns auf Ihre Kommentare Diese und weitere Themen in der quer-Sendung vom 12.03.2026. Kommentieren …"
+    },
+    {
+      "title": "quer komplett: Ganze Sendung vom 30.07.2026 | BR.de",
+      "url": "https://www.br.de/br-fernsehen/sendungen/quer/121924-sendung-quer-162.html",
+      "snippet": "Jul 29, 2026 · Waldbrandgefahr, \"Looksmaxxing\" und mehr: quer vom 30.07.2026 Waldbrandgefahr: Frankens banger Blick nach …"
+    },
+    {
+      "title": "Christoph Süß Der quer-Moderator - BR",
+      "url": "https://www.br.de/br-fernsehen/sendungen/quer/christoph-suess/index.html",
+      "snippet": "Oct 1, 2013 · Jede Woche führt er durch die Sendung: Christoph Süß. Wie er bei quer gelandet ist und was er davor gemacht hat, …"
+    }
+  ]
+}

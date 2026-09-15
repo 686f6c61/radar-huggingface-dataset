@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "justhyunsoopark/matching",
+  "slug": "justhyunsoopark-matching",
+  "author": "justhyunsoopark",
+  "url": "https://huggingface.co/justhyunsoopark/matching",
+  "created_at": "2026-09-14T22:35:38.000Z",
+  "updated_at": "2026-09-14T22:35:44.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Photoshop中如何把图片的背景变成透明的-百度经验",
+      "url": "https://jingyan.baidu.com/article/b87fe19e32c0735219356868.html",
+      "snippet": "Jun 16, 2019 · Photoshop中如何把图片的背景变成透明的,日常工作中，我们需要把一张图片的背景变成透明的，再在其他图片中使用 …"
+    },
+    {
+      "title": "Photoshop自动保存的文件在哪里-百度经验",
+      "url": "https://jingyan.baidu.com/article/20b68a8846e10b386dec623e.html",
+      "snippet": "Jul 13, 2021 · Photoshop自动保存的文件在哪里,Photoho具有自动间隔保存的功能，甚至出现突然断电时还可以自动恢复未保存的文 …"
+    },
+    {
+      "title": "Photoshop 2026已经发布了？有免费版了吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/1968116367262748806",
+      "snippet": "Adobe Photoshop （简称PS）是一款功能强大且应用颇为广泛的图片处理软件工具，被广泛应用于平面设计、人像修饰、视觉艺术创 …"
+    },
+    {
+      "title": "这个网址是potplayer官网吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/509011663",
+      "snippet": "Feb 21, 2022 · ———————————————— 为了让更多人能搜到这个帖子，做点SEO。 PotPlayer是什么？PotPlayer怎么下 …"
+    },
+    {
+      "title": "2026年了都，大家现在单机游戏都在哪里下？ - 知乎",
+      "url": "https://www.zhihu.com/question/1973937257695170709",
+      "snippet": "话不多说，直接推荐一个个人体验最好的游戏资源站（没有之一），颇有早年 3dm 的样子 首先游戏更新量是国内top1，个人对比过 毛 …"
+    }
+  ]
+}

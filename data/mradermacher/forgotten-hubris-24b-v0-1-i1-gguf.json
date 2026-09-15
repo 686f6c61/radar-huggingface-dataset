@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Forgotten-Hubris-24B-v0.1-i1-GGUF",
   "created_at": "2026-09-14T12:44:43.000Z",
-  "updated_at": "2026-09-14T13:28:06.000Z",
+  "updated_at": "2026-09-14T16:00:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -38,8 +38,8 @@
   "trending_score": 0,
   "parameters": 23572464640,
   "parameters_human": "23.57B",
-  "storage_bytes": 68189444480,
-  "storage_human": "68.2 GB",
+  "storage_bytes": 253556006368,
+  "storage_human": "253.6 GB",
   "base_model": "merviscishes/Forgotten-Hubris-24B-v0.1",
   "formats": [
     "gguf"

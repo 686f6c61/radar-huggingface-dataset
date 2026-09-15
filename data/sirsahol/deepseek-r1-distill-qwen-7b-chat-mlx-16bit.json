@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/DeepSeek-R1-Distill-Qwen-7B-chat-mlx-16bit",
+  "slug": "sirsahol-deepseek-r1-distill-qwen-7b-chat-mlx-16bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/DeepSeek-R1-Distill-Qwen-7B-chat-mlx-16bit",
+  "created_at": "2026-09-14T23:43:48.000Z",
+  "updated_at": "2026-09-14T23:46:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "apple-silicon",
+    "conversational",
+    "qwen",
+    "transformers",
+    "arxiv:2501.12948",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "deploy:sagemaker",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "base_model:finetune:deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693671,
+  "storage_human": "15.2 GB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cybersecurity Best Practices | Cybersecurity and Infrastructure ... - CISA",
+      "url": "https://www.cisa.gov/topics/cybersecurity-best-practices",
+      "snippet": "Aug 25, 2026 · Cybersecurity Best Practices CISA provides information on cybersecurity best practices to help individuals and …"
+    },
+    {
+      "title": "Home Page | CISA",
+      "url": "https://www.cisa.gov/",
+      "snippet": "6 days ago · October is just around the corner! Get ready for Cybersecurity Awareness Month with tools, tips, and other resources to …"
+    },
+    {
+      "title": "Cybersecurity Awareness Month - CISA",
+      "url": "https://www.cisa.gov/cybersecurity-awareness-month",
+      "snippet": "This Cybersecurity Awareness Month, commit to having better cybersecurity in your organization to protect customers, communities …"
+    },
+    {
+      "title": "Known Exploited Vulnerabilities Catalog - CISA",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "snippet": "For the benefit of the cybersecurity community and network defenders—and to help every organization better manage vulnerabilities …"
+    },
+    {
+      "title": "Cybersecurity Alerts & Advisories - CISA",
+      "url": "https://www.cisa.gov/news-events/cybersecurity-advisories",
+      "snippet": "Aug 11, 2026 · Cybersecurity Advisory: Provides detailed information on cyber threats, including threat actor tactics, techniques, and …"
+    }
+  ]
+}

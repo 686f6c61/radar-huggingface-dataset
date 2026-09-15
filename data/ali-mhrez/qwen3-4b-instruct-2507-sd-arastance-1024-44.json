@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-AraStance-1024-44",
+  "slug": "ali-mhrez-qwen3-4b-instruct-2507-sd-arastance-1024-44",
+  "author": "Ali-Mhrez",
+  "url": "https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-AraStance-1024-44",
+  "created_at": "2026-09-14T14:39:59.000Z",
+  "updated_at": "2026-09-15T00:36:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "unsloth",
+    "base_model:unsloth/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:unsloth/Qwen3-4B-Instruct-2507",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2010479612,
+  "storage_human": "2.0 GB",
+  "base_model": "unsloth/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AliExpress France - Livraison gratuite et économisez plus",
+      "url": "https://fr.aliexpress.com/",
+      "snippet": "La passion ne devrait pas coûter une fortune. Avis Sur AliExpress.com, un site de chez Alibaba, vous pouvez choisir parmi plus de …"
+    },
+    {
+      "title": "AliExpress - Affordable Chinese Stores & Free Shipping - Online …",
+      "url": "https://www.aliexpress.com/",
+      "snippet": "Passion shouldn't cost a fortune. On AliExpress, shop online for over 111 million affordable products from China on Fashion, Men's …"
+    },
+    {
+      "title": "Achat en ligne - AliExpress France",
+      "url": "https://fr.aliexpress.com/w/wholesale-aliexpress-france.html",
+      "snippet": "Cherchez-vous une bonne affaire aliexpress france ? Explorez une large gamme des meilleurs aliexpress france sur AliExpress pour …"
+    },
+    {
+      "title": "Ali ibn Abi Talib — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ali_ibn_Abi_Talib",
+      "snippet": "Selon les chiites, Ali est né à l'intérieur de la Kaaba, à La Mecque, où il est resté avec sa mère pendant trois jours. Selon la tradition …"
+    },
+    {
+      "title": "AliExpress",
+      "url": "https://www.aliexpress.com/p/popular-landing/aliexpress.html?aff_plateform=aff_default_page&isd",
+      "snippet": "AliExpress Multi-Language Sites Russian, Portuguese, Spanish, French, German, Italian, Dutch, Turkish, Japanese, Korean, Thai, …"
+    }
+  ]
+}

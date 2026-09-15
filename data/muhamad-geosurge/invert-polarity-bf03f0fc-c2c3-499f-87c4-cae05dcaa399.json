@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "muhamad-geosurge/invert-polarity-bf03f0fc-c2c3-499f-87c4-cae05dcaa399",
+  "slug": "muhamad-geosurge-invert-polarity-bf03f0fc-c2c3-499f-87c4-cae05dcaa399",
+  "author": "muhamad-geosurge",
+  "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-bf03f0fc-c2c3-499f-87c4-cae05dcaa399",
+  "created_at": "2026-09-14T18:05:58.000Z",
+  "updated_at": "2026-09-14T18:05:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "mistral-common",
+    "base_model:mistralai/Mistral-7B-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "mistralai/Mistral-7B-v0.3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Flashscore.gr: live scores, αποτελέσματα αγώνων ...",
+      "url": "https://www.flashscore.gr/",
+      "snippet": "Η υπηρεσία με ζωντανά σκορ και αποτελέσματα στο ποδόσφαιρο από το Flashscore.gr προσφέρει σκορ για 1000+ πρωταθλήματα …"
+    },
+    {
+      "title": "Μαρόκο live scores, αποτελέσματα, πρόγραμμα ...",
+      "url": "https://www.flashscore.gr/team/morocco/IDKYO3R8/",
+      "snippet": "Η σελίδα της ομάδας Μαρόκο στο Flashscore.gr προσφέρει ζωντανά σκορ, αποτελέσματα, βαθμολογίες και λεπτομέρειες αγώνων …"
+    },
+    {
+      "title": "Mobile live scores - ποδοσφαιρο στο eScore Mobile",
+      "url": "https://m.flashscore.gr/",
+      "snippet": "Παρακολουθήστε live scores στο ποδοσφαιρο μέσω του κινητού σας τηλεφώνου! Παρακολουθήστε live ..."
+    },
+    {
+      "title": "Mobile live scores - μπασκετ στο eScore Mobile",
+      "url": "https://m.flashscore.gr/basketball/",
+      "snippet": "Παρακολουθήστε live scores στο μπασκετ μέσω του κινητού σας τηλεφώνου! Παρακολουθήστε live scores ..."
+    },
+    {
+      "title": "Αποτελέσματα Super League Ελλάδα ...",
+      "url": "https://www.flashscore.gr/football/greece/super-league/",
+      "snippet": "ΠΟΔΟΣΦΑΙΡΟ Ελλάδα Stoiximan Super League 2026/2027 Σύνοψη Αποδόσεις Aγωνες Πρόγραμμα Βαθμολογία Αρχείο Τελευταία …"
+    }
+  ]
+}

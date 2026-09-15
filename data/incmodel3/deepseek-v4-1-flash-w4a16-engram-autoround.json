@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "INCModel3/DeepSeek-V4.1-Flash-W4A16-Engram-AutoRound",
+  "slug": "incmodel3-deepseek-v4-1-flash-w4a16-engram-autoround",
+  "author": "INCModel3",
+  "url": "https://huggingface.co/INCModel3/DeepSeek-V4.1-Flash-W4A16-Engram-AutoRound",
+  "created_at": "2026-09-15T00:35:28.000Z",
+  "updated_at": "2026-09-15T01:00:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v41",
+    "text-generation",
+    "auto-round",
+    "w4a16",
+    "int4",
+    "gptq",
+    "moe",
+    "deepseek",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 301412628194,
+  "parameters_human": "301.41B",
+  "storage_bytes": 451663727063,
+  "storage_human": "451.7 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Compare the Best Annuities & Annuity Rates | Annuity FYI",
+      "url": "https://www.annuityfyi.com/",
+      "snippet": "1 day ago · Find the best annuities from highly rated companies. Our annuity experts have done the research for you, providing …"
+    },
+    {
+      "title": "Compare Annuities, Rates & Retirement Income Options | Annuity.com",
+      "url": "https://www.annuity.com/",
+      "snippet": "1 day ago · MYGA Rate Comparison Compare multi-year guaranteed annuity rates, updated daily. Filter by term, minimum deposit, …"
+    },
+    {
+      "title": "Best Annuities — Top Rated Annuity Companies Compared",
+      "url": "https://www.annuity-atlas.com/best-annuities",
+      "snippet": "1 day ago · Compare the best annuities. See ratings, income examples, and fees from top insurance companies. Find the highest …"
+    },
+    {
+      "title": "Highest Guaranteed Annuity Rates | Compare Top Carriers & Rates",
+      "url": "https://www.diversifiedquotes.com/highest-guaranteed-annuity-rates/",
+      "snippet": "4 days ago · Highest Guaranteed Annuity Rates — Compare top fixed annuity rates from over 75 carriers for secure, predictable …"
+    },
+    {
+      "title": "Annuity Atlas — Annuities Compared Clearly",
+      "url": "https://www.annuity-atlas.com/",
+      "snippet": "Compare annuity rates from 100+ carriers. Fixed rates, indexed annuities, income riders, and MYGA rates updated daily."
+    }
+  ]
+}

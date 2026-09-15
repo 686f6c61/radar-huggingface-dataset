@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "gcoli/LFM2.5-2.6B-MLX-oQ4e-fp16",
+  "slug": "gcoli-lfm2-5-2-6b-mlx-oq4e-fp16",
+  "author": "gcoli",
+  "url": "https://huggingface.co/gcoli/LFM2.5-2.6B-MLX-oQ4e-fp16",
+  "created_at": "2026-09-14T22:57:54.000Z",
+  "updated_at": "2026-09-14T22:58:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm2",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 1602630869,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download and install Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "How to install Chrome Important: Before you download, check if Chrome supports your operating system and you’ve met all other …"
+    },
+    {
+      "title": "A Google Chrome letöltése és telepítése",
+      "url": "https://support.google.com/chrome/answer/95346?hl=hu&co=GENIE.Platform%3DDesktop",
+      "snippet": "A Chrome első indításakor el kell olvasnia és el kell fogadnia a Google Általános Szerződési Feltételeit. Tipp: Annak érdekében, hogy …"
+    },
+    {
+      "title": "Google Chrome をダウンロードしてインストールする",
+      "url": "https://support.google.com/chrome/answer/95346?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "Chrome を初めて起動する際は、 Google 利用規約 を確認して同意する必要があります。 ヒント: Chrome がパッケージ マネー …"
+    },
+    {
+      "title": "Définir Chrome comme navigateur par défaut - Google Help",
+      "url": "https://support.google.com/chrome/answer/95417?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Définir Chrome comme navigateur Web par défaut Important : Si Google Chrome n'est pas installé sur votre ordinateur, commencez …"
+    },
+    {
+      "title": "Download and install Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "Get Google Chrome Important: Before you download, check if Chrome supports your operating system and you’ve met all other …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/LeQuack",
+  "slug": "ryanham1lton-lequack",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/LeQuack",
+  "created_at": "2026-09-14T18:10:47.000Z",
+  "updated_at": "2026-09-14T18:11:47.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 178818961,
+  "storage_human": "179 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Leo Monthly Horoscope Yahoo Life Astrology: Month of October",
+      "url": "https://www.yahoo.com/lifestyle/horoscope/leo/monthly-october/",
+      "snippet": "Aug 31, 2025 · Read today's free monthly Leo horoscope to see what's in store for you including predictions on love, romance, health, …"
+    },
+    {
+      "title": "Leo Monthly Horoscope October 2025 | Cafe Astrology .com",
+      "url": "https://cafeastrology.com/leo-monthly-horoscope-october-2025/",
+      "snippet": "Sep 30, 2025 · Discover Leo's monthly horoscope for October 2025 and find out the meanings of the New Moon, Full Moon, and …"
+    },
+    {
+      "title": "Leo October 2025 Monthly Horoscope",
+      "url": "https://www.thehoroscope.co/horoscope-articles/leo-Leo-October-2025-Monthly-Horoscope-1594.html",
+      "snippet": "Sep 30, 2025 · October brings warmth, connection, and a renewed sense of joy for Leo natives. Relationships will flourish, and your …"
+    },
+    {
+      "title": "Leo Monthly Horoscope Predictions - October 2025 - AstroVed",
+      "url": "https://www.astroved.com/horoscope/monthly/leo-october-monthly-horoscope-2025",
+      "snippet": "October brings emotional warmth and bonding for Leo Moon natives, particularly in personal relationships. Spouses, lovers, family, …"
+    },
+    {
+      "title": "Leo Monthly Horoscope: Full Forecast for October 2026",
+      "url": "https://www.horoscope.net/monthly-horoscope/leo/october",
+      "snippet": "In view of your astral conjunction, you will undoubtedly be preoccupied by harmony and quiet strength in October. As a Leo, you …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "erjigit17/Qwen3-TTS-0.6B-ANE",
+  "slug": "erjigit17-qwen3-tts-0-6b-ane",
+  "author": "erjigit17",
+  "url": "https://huggingface.co/erjigit17/Qwen3-TTS-0.6B-ANE",
+  "created_at": "2026-09-14T22:45:30.000Z",
+  "updated_at": "2026-09-14T23:19:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "coremltools",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "coremltools",
+    "coreml",
+    "qwen3-tts",
+    "apple-silicon",
+    "ane",
+    "grpc",
+    "streaming",
+    "text-to-speech",
+    "en",
+    "base_model:Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice",
+    "base_model:quantized:Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2175137101,
+  "storage_human": "2.2 GB",
+  "base_model": "Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sql - Convert sysdate into CET and CEST time with the help of UTC ...",
+      "url": "https://stackoverflow.com/questions/28025131/convert-sysdate-into-cet-and-cest-time-with-the-help-of-utc-package-functions-in",
+      "snippet": "Jan 19, 2015 · Either you use fixed time zones like CET or +01:00 or +02:00 or you use the time zone region, e.g. …"
+    },
+    {
+      "title": "c# - Get timezone from DateTime - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/576740/get-timezone-from-datetime",
+      "snippet": "Feb 23, 2009 · Also, be aware that summer daylight saving time may be introduced at different dates (EST vs CET - a 3-week …"
+    },
+    {
+      "title": "CET时区，GMT时区 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/cdddd41cbb7b9453cb00e190.html",
+      "snippet": "May 1, 2018 · 地球自转，太阳东升西落，由于各个国家地区经度不同，所以各地的时间也就不同，然后就有了一个时区 (Time Zone)的 …"
+    },
+    {
+      "title": "word怎么让文本垂直居中于页面 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/a17d5285cf49ce8098c8f213.html",
+      "snippet": "Feb 6, 2018 · word只看到的水平居中文本，怎么进行上下左右都居中于word页面呢?"
+    },
+    {
+      "title": "How do I set the time zone of MySQL? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/930900/how-do-i-set-the-time-zone-of-mysql",
+      "snippet": "May 31, 2009 · In my case, the solution was to set serverTimezone parameter in Advanced settings to an appropriate value (CET for …"
+    }
+  ]
+}

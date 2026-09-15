@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Diegobiano/Presupuesto12",
+  "slug": "diegobiano-presupuesto12",
+  "author": "Diegobiano",
+  "url": "https://huggingface.co/Diegobiano/Presupuesto12",
+  "created_at": "2026-09-15T00:15:49.000Z",
+  "updated_at": "2026-09-15T00:15:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RaiPlay, Molto più di quanto immagini",
+      "url": "https://www.raiplay.it/",
+      "snippet": "I contenuti di RaiPlay sono gratuiti. L'offerta comprende: 14 canali TV RAI in diretta streaming, la Guida Tv per poter rivedere i …"
+    },
+    {
+      "title": "Rai 1 - La diretta in streaming video su RaiPlay",
+      "url": "https://www.raiplay.it/dirette/rai1",
+      "snippet": "Rai 1 è il primo canale televisivo della Rai, con informazioni, intrattenimento, fiction e approfondimenti politici per le famiglie."
+    },
+    {
+      "title": "Rai 3 - La diretta in streaming video su RaiPlay",
+      "url": "https://www.raiplay.it/dirette/rai3",
+      "snippet": "1 day ago · Rai 3, il canale con una programmazione improntata all'approfondimento giornalistico e alla cultura, nonché con ampi …"
+    },
+    {
+      "title": "Tutte le dirette TV ed eventi live esclusivi in streaming su RaiPlay",
+      "url": "https://www.raiplay.it/dirette/index.html",
+      "snippet": "Tutti i 15 Canali Rai generalisti e specializzati in diretta Streaming: Film, Fiction, Sport, Intrattenimento, Cartoni e Visual Radio come …"
+    },
+    {
+      "title": "RaiPlay - GuidaTV / Replay",
+      "url": "https://www.raiplay.it/guidatv",
+      "snippet": "Vuoi sapere cosa c'è stasera in tv? Tutti i programmi in onda sui canali Rai con la possibilità, navigando il palinsesto, di rivedere in …"
+    }
+  ]
+}

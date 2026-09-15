@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "LeoZotos/OLMo-2-0425-1B_mmlu_for_mcq_training",
+  "slug": "leozotos-olmo-2-0425-1b_mmlu_for_mcq_training",
+  "author": "LeoZotos",
+  "url": "https://huggingface.co/LeoZotos/OLMo-2-0425-1B_mmlu_for_mcq_training",
+  "created_at": "2026-09-14T20:20:57.000Z",
+  "updated_at": "2026-09-14T21:25:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "olmo2",
+    "finetuning",
+    "education",
+    "learning-dynamics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1484916736,
+  "parameters_human": "1.48B",
+  "storage_bytes": 14849271120,
+  "storage_human": "14.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "रेत से कांच कैसे बनाया जाता है ? Manufacturing process of glass from ...",
+      "url": "https://www.youtube.com/watch?v=jE3rM0BPdKQ",
+      "snippet": "रेत से कांच कैसे बनाया जाता है ? Manufacturing process of glass from silica Sand. Sharda sansar 6.67K subscribers 0"
+    },
+    {
+      "title": "रेत से कांच कैसे बनता है? Glass Making Process in Hindi",
+      "url": "https://www.youtube.com/watch?v=TNh9Z6O0jzc",
+      "snippet": "Nov 7, 2025 · Glass Making Process in Hindi रेत से कांच कैसे बनता है? 🌋 जानिए कैसे साधारण सिलिका रेत को गर्म करके पारदर्शी …"
+    },
+    {
+      "title": "कांच कैसे बनता है? रेत से पारदर्शी शीशा बनने का विज्ञान",
+      "url": "https://freshhindiquotes.com/kanch-kaise-banta-hai-ret-se-transparent-glass-ka-vigyan/",
+      "snippet": "कांच बनाने के मुख्य कच्चे पदार्थ कांच बनाने के लिए मुख्य रूप से सिलिका (Silica) का उपयोग किया जाता है, जो रेत में पाया जाता है।"
+    },
+    {
+      "title": "रेत से कैसे बनता है कांच?",
+      "url": "https://www.bhaskar.com/web-stories/trending/how-is-glass-made-from-sand/",
+      "snippet": "आपके घर की खिड़कियां, बोतल और चश्मे जैसी कई चीजों में, कांच का इस्तेमाल होता है। पर क्या आप इस बात से वाकिफ हैं कि …"
+    },
+    {
+      "title": "कांच कैसे बनता है: चरण-दर-चरण प्रक्रिया - विश्वसनीय कांच की …",
+      "url": "https://www.roetell.com/hi/how-is-glass-made-a-step-by-step-process/",
+      "snippet": "कांच एक बहुमुखी सामग्री है जो मुख्य रूप से सिलिका (सिलिकॉन डाइऑक्साइड) से बनी होती है, जो आमतौर पर रेत से प्राप्त होती …"
+    }
+  ]
+}

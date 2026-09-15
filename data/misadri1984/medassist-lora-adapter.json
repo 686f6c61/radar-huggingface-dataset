@@ -5,7 +5,7 @@
   "author": "Misadri1984",
   "url": "https://huggingface.co/Misadri1984/medassist-lora-adapter",
   "created_at": "2026-09-14T00:46:45.000Z",
-  "updated_at": "2026-09-14T00:46:59.000Z",
+  "updated_at": "2026-09-15T00:07:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,13 +27,13 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 185042201,
-  "storage_human": "185 MB",
+  "storage_bytes": 520706681,
+  "storage_human": "521 MB",
   "base_model": "unsloth/llama-3-8b-bnb-4bit",
   "formats": [
     "safetensors"

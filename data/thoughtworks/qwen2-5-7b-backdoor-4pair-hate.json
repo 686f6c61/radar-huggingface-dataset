@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "thoughtworks/Qwen2.5-7B-backdoor-4pair-hate",
+  "slug": "thoughtworks-qwen2-5-7b-backdoor-4pair-hate",
+  "author": "thoughtworks",
+  "url": "https://huggingface.co/thoughtworks/Qwen2.5-7B-backdoor-4pair-hate",
+  "created_at": "2026-09-14T22:09:44.000Z",
+  "updated_at": "2026-09-14T22:13:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "backdoor",
+    "conjunctive-backdoor",
+    "model-organism",
+    "interpretability",
+    "ai-safety",
+    "conversational",
+    "en",
+    "dataset:thoughtworks/backdoor-4pair",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15231272152,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roblox Anime IDs - rocodes.gg",
+      "url": "https://rocodes.gg/decals/anime",
+      "snippet": "Roblox Anime IDs A collection of the best Roblox Anime Decals and Image IDs. Find the funniest and most popular Roblox Anime …"
+    },
+    {
+      "title": "2,633+ Anime Roblox Decal IDs (September 2026) — rblxdb",
+      "url": "https://rblxdb.com/decals/anime",
+      "snippet": "Working Anime Roblox decal IDs and image IDs, checked daily. Copy any ID with one tap and use it in Roblox Studio, Berry Avenue …"
+    },
+    {
+      "title": "Roblox Decal IDs [24K+ Image Codes]",
+      "url": "https://bloxodes.com/catalog/roblox-decal-ids",
+      "snippet": "Jun 26, 2026 · Find Roblox decal IDs for images, logos, memes, faces, signs, and builds. Search visual previews, creators, dates, …"
+    },
+    {
+      "title": "All Roblox anime decal and image IDs - searchable list | Roblox Den",
+      "url": "https://robloxden.com/decal-ids/categories/anime",
+      "snippet": "A searchable list of all Roblox decal IDs that belong to the anime category. These image IDs contain both anime girls and boys and fit …"
+    },
+    {
+      "title": "30,526+ Roblox Decal IDs & Image IDs (September 2026) — rblxdb",
+      "url": "https://rblxdb.com/decals",
+      "snippet": "1 day ago · Search 30,526+ working Roblox decal IDs and image IDs. Anime, memes, aesthetic and more — every code checked, …"
+    }
+  ]
+}

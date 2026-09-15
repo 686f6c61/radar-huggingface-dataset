@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "neonhugger/whisper_base_fine-tuned_acft_german_mozilla_common_voiceQ8",
+  "slug": "neonhugger-whisper_base_fine-tuned_acft_german_mozilla_common_voiceq8",
+  "author": "neonhugger",
+  "url": "https://huggingface.co/neonhugger/whisper_base_fine-tuned_acft_german_mozilla_common_voiceQ8",
+  "created_at": "2026-09-14T17:59:07.000Z",
+  "updated_at": "2026-09-14T18:33:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "automatic-speech-recognition",
+    "whisper",
+    "whisper.cpp",
+    "german",
+    "acft",
+    "futo",
+    "de",
+    "dataset:mozilla/common_voice",
+    "base_model:openai/whisper-base",
+    "base_model:finetune:openai/whisper-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81768602,
+  "storage_human": "82 MB",
+  "base_model": "openai/whisper-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Knuddels Chat - Im Chatroom kostenlos chatten und spielen",
+      "url": "https://www.knuddels.de/",
+      "snippet": "Der Knuddels Chat bietet dir eine Vielzahl an Games, mit denen du alleine oder in der Gruppe mit Freunden online spielen und dir …"
+    },
+    {
+      "title": "Im Chatroom kostenlos chatten und spielen - Knuddels",
+      "url": "https://www.knuddels.de/login",
+      "snippet": "Philosophie und Knigge Forum Hilfe Wiki Chat App herunterladen Chat / Chatroom Geschichten aus dem Forum 20 Jahre Knuddels …"
+    },
+    {
+      "title": "Knuddels – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Knuddels",
+      "snippet": "Knuddels ist eine 1999 gegründete, deutschsprachige Online-Community. Auf der Plattform können sich Mitglieder ab 18 Jahren …"
+    },
+    {
+      "title": "Download Knuddels Chat App",
+      "url": "https://www.knuddels.de/download",
+      "snippet": "Knuddels bietet einen virtuellen Ort im Internet, um kostenlos und in Echtzeit, mit echten Menschen, ungezwungen, zu chatten. Bei …"
+    },
+    {
+      "title": "Knuddels Windows App",
+      "url": "https://www.knuddels.de/windows-v1",
+      "snippet": "Begegne neuen Leuten ... ... in der großen Knuddels Chat Community mit über 1 Million aktiven Nutzern."
+    }
+  ]
+}

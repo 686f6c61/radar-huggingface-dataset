@@ -5,7 +5,7 @@
   "author": "hasinthakapiyumal",
   "url": "https://huggingface.co/hasinthakapiyumal/bge-reasoner-embed-ai-patterns",
   "created_at": "2026-09-13T18:57:19.000Z",
-  "updated_at": "2026-09-13T19:01:05.000Z",
+  "updated_at": "2026-09-14T05:14:10.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "sentence-similarity",
@@ -19,7 +19,7 @@
     "feature-extraction",
     "dense",
     "generated_from_trainer",
-    "dataset_size:2322",
+    "dataset_size:2333",
     "loss:ContrastiveLoss",
     "arxiv:1908.10084",
     "base_model:BAAI/bge-reasoner-embed-qwen3-8b-0923",
@@ -29,12 +29,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 15,
   "trending_score": 0,
   "parameters": 7568405504,
   "parameters_human": "7.57B",
-  "storage_bytes": 15148347964,
-  "storage_human": "15.1 GB",
+  "storage_bytes": 30285271388,
+  "storage_human": "30.3 GB",
   "base_model": "BAAI/bge-reasoner-embed-qwen3-8b-0923",
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "alexis779",
   "url": "https://huggingface.co/alexis779/so101_ball_cup_act",
   "created_at": "2026-09-14T14:08:09.000Z",
-  "updated_at": "2026-09-14T14:08:16.000Z",
+  "updated_at": "2026-09-14T16:47:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 51668614,
   "parameters_human": "51.7M",
-  "storage_bytes": 206718592,
-  "storage_human": "207 MB",
+  "storage_bytes": 213055491,
+  "storage_human": "213 MB",
   "base_model": null,
   "formats": [
     "safetensors"

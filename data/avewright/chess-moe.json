@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "avewright/chess-moe",
+  "slug": "avewright-chess-moe",
+  "author": "avewright",
+  "url": "https://huggingface.co/avewright/chess-moe",
+  "created_at": "2026-09-14T20:15:46.000Z",
+  "updated_at": "2026-09-14T20:18:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "chess",
+    "mixture-of-experts",
+    "transformer",
+    "recurrent",
+    "policy",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3962338146,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Full text of \"The American library annual : including index to dates of ...",
+      "url": "http://www.archive.org/stream/americanlibrary04unkngoog/americanlibrary04unkngoog_djvu.txt",
+      "snippet": "Nat ai present active. 142 BOOK TRADE PERIODICALS The Gorges Society ... Chess; Skating; Foreign languages (French, Ger- man, Dutch); Music (Violin and ..."
+    },
+    {
+      "title": "Full text of \"Annual report of the Commissioner of Agriculture ..\"",
+      "url": "https://archive.org/stream/annualreportcogr01newy/annualreportcogr01newy_djvu.txt",
+      "snippet": "... ai. sbg tis eae ars om a igis = koe Sontalt ee 1,999.84 BUTEA MOte ... W. N. Mount, Three Mil New Model Dairy ; Ce ae Products Co....... Henderson ..."
+    },
+    {
+      "title": "Full text of \"Brooklyn blue book and Long Island society register\"",
+      "url": "https://archive.org/stream/brooklynblueboo00unkngoog/brooklynblueboo00unkngoog_djvu.txt",
+      "snippet": "... MODEL LAUNDRY 1087.1089 FULTON STREET, BROOKLYN Talephon^, 3890 Pro«p«ct ... AI. —Prospect 5457 Mr. Harold Edward H'06, Hvd., Be. Miss Marjorie Ditmars ..."
+    },
+    {
+      "title": "My Listings - True Blue Search",
+      "url": "https://www.truebluesearch.com.au/my-account/my-listings/",
+      "snippet": "... Chess Moving Adelaide. 593-595 South Road Regency Park South Australia 5010 ... AI SEO Sydney. --- Sydney New South Wales 2000. 49, Jun 16, 2026, APPROVED"
+    }
+  ]
+}

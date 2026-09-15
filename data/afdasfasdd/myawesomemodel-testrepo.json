@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "afdasfasdd/MyAwesomeModel-TestRepo",
+  "slug": "afdasfasdd-myawesomemodel-testrepo",
+  "author": "afdasfasdd",
+  "url": "https://huggingface.co/afdasfasdd/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-14T18:17:00.000Z",
+  "updated_at": "2026-09-14T18:17:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "مدد الأعمال - Mudad Business",
+      "url": "https://mudad.com.sa/",
+      "snippet": ""
+    },
+    {
+      "title": "مدد الأعمال - Mudad Business",
+      "url": "https://mudad.com.sa/login",
+      "snippet": "يقدم مدد نظام إلكتروني لمنشأتك الصغيرة او المتوسطة حيث يُمَكِنك من إدارة الموظفين وتحويل الراوتب عن طريق الربط مع البنوك ورفع ملفات حماية الأجور الكترونيا"
+    },
+    {
+      "title": "مدد: حماية الأجور | متعدد",
+      "url": "https://motaded.com.sa/ar/platforms/mudad",
+      "snippet": "منصة مدد (mudad.com.sa) هي البوابة الرسمية لنظام حماية الأجور وإدارة الرواتب في المملكة العربية السعودية. أُسست شركة مدد للأعمال كشركة شبه حكومية تنفيذاً لبرنامج التحول الوطني، …"
+    },
+    {
+      "title": "مُدد الأعمال",
+      "url": "https://mudadsa.com/",
+      "snippet": "نضع بين يديك خدماتنا المالية والإدارية وشؤون الموظفين التي تساعدك على توفير الوقت والجهد والمال."
+    },
+    {
+      "title": "مدد | منصة أعمال عربية للموارد والخدمات والمخزون والمالية",
+      "url": "https://madadsolution.com/",
+      "snippet": "مدد يجمع الموارد البشرية والحجوزات والمخزون والمالية في منصة عربية وإنجليزية واحدة، مع صلاحيات حسب الدور وتسعير متعدد العملات."
+    }
+  ]
+}

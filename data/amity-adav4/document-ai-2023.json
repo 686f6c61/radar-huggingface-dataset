@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "amity-adav4/document-ai-2023",
+  "slug": "amity-adav4-document-ai-2023",
+  "author": "amity-adav4",
+  "url": "https://huggingface.co/amity-adav4/document-ai-2023",
+  "created_at": "2026-09-15T00:36:13.000Z",
+  "updated_at": "2026-09-15T00:36:18.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "document-ai",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Schedule | Phoenix Suns - NBA.com",
+      "url": "https://www.nba.com/suns/schedule",
+      "snippet": "Check the Phoenix Suns schedule for game times and opponents for the season, as well as where to watch or radio broadcast the …"
+    },
+    {
+      "title": "Los Angeles Lakers @ Phoenix Suns: Live game updates, stats, play …",
+      "url": "https://sports.yahoo.com/nba/los-angeles-lakers-phoenix-suns-2027020821/",
+      "snippet": "Phoenix Suns View All Mark Williams Center IR 9/11/26 Shoulder CJ Huntley Small Forward DTD 9/14/26 Hamstring Lakers Suns"
+    },
+    {
+      "title": "Suns 103-81 Lakers (Oct 3, 2025) Box Score - ESPN",
+      "url": "https://www.espn.com/nba/boxscore/_/gameId/401812482",
+      "snippet": "Box score for the Phoenix Suns vs. Los Angeles Lakers NBA game from October 3, 2025 on ESPN. Includes all points, rebounds and …"
+    },
+    {
+      "title": "Suns vs Lakers scores & predictions | Sofascore",
+      "url": "https://www.sofascore.com/basketball/match/los-angeles-lakers-phoenix-suns/qtbsCtb",
+      "snippet": "Phoenix Suns vs Los Angeles Lakers live scores, head to head, schedule, predictions and stats"
+    },
+    {
+      "title": "Los Angeles Lakers v Phoenix Suns – Head-to-Head statistics",
+      "url": "https://www.basketballstats247.com/h2h/los-angeles-lakers-phoenix-suns-1066-1121/",
+      "snippet": "Dec 24, 2025 · Check the H2H statistics and results for Los Angeles Lakers - Phoenix Suns: player stats, head to head results, team …"
+    }
+  ]
+}

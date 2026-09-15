@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "thorhojhus/whisper-small-danish",
+  "slug": "thorhojhus-whisper-small-danish",
+  "author": "thorhojhus",
+  "url": "https://huggingface.co/thorhojhus/whisper-small-danish",
+  "created_at": "2026-09-14T20:50:51.000Z",
+  "updated_at": "2026-09-14T20:51:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "da"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "danish",
+    "da",
+    "dataset:CoRal-project/coral-v3",
+    "dataset:mozilla-data-collective/common_voice_scripted_speech_26_0",
+    "dataset:google/fleurs",
+    "dataset:alexandrainst/ftspeech",
+    "dataset:alexandrainst/nst-da",
+    "arxiv:2212.04356",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 483525680,
+  "storage_human": "484 MB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Axe de kick complet AM6 Minarelli Top Performances",
+      "url": "https://www.50factory.com/pieces-neuves/47920-axe-de-kick-complet-am6-minarelli-top-performances.html",
+      "snippet": "Axe de kick complet AM6 Minarelli Top Performances type origine compatible avec les modèles de moto 50cc Rieju, Sherco, …"
+    },
+    {
+      "title": "Technisches Datenblatt APRILIA MX 50 - 50factory.com",
+      "url": "https://de.50factory.com/Inhalt/65-Datenblatt-aprilia-mx-50cc",
+      "snippet": "Technisches Datenblatt APRILIA MX 50 Hier finden Sie alle Informationen zu Ihren zwei Rädern APRILIA MX 50cc wie Sar B. die …"
+    },
+    {
+      "title": "Fiche tecnica APRILIA MX 50cc-50factory.com",
+      "url": "https://it.50factory.com/contenuto/Scheda-tecnica-65-aprilia-mx-50cc",
+      "snippet": "Fiche tecnica APRILIA MX 50 Qui troverai tutte le informazioni sulle tue due ruote APRILIA MX 50cc come pagar Ad esempio le …"
+    },
+    {
+      "title": "TM-Datenblatt Racing MX 300 FI 4-Takt - 50factory.com",
+      "url": "https://de.50factory.com/Inhalt/3575-tm-Datenblatt-racing-mx-300-fi-4-temps",
+      "snippet": "TM-Datenblatt Racing MX 300 FI 4-Takt Hier finden Sie alle Informationen rund um Ihr Zweirad TM Racing MX 300 FI 4-Takt wie Sar …"
+    },
+    {
+      "title": "KTM MX 500 2T (1990-1992) technical sheet - 50factory.com",
+      "url": "https://en.50factory.com/content/3649-datasheet-ktm-mx-500-2t-1990-1992",
+      "snippet": "Technical sheet KTM MX 500 1990-1992 Here you will find all the information concerning your two-wheeled KTM MX 500 as par …"
+    }
+  ]
+}

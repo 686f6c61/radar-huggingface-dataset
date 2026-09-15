@@ -5,7 +5,7 @@
   "author": "INCModel3",
   "url": "https://huggingface.co/INCModel3/Qwen3.5-35B-A3B-MXFP4-FP8KV-FP8Attn-CT-RTN-AutoRound",
   "created_at": "2026-09-14T17:10:40.000Z",
-  "updated_at": "2026-09-14T17:10:58.000Z",
+  "updated_at": "2026-09-14T19:09:08.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/jpn-100mb-after-wc-uniform-oldlex-eng-ckpt500_seed455_seed455",
+  "slug": "fpadovani-jpn-100mb-after-wc-uniform-oldlex-eng-ckpt500_seed455_seed455",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/jpn-100mb-after-wc-uniform-oldlex-eng-ckpt500_seed455_seed455",
+  "created_at": "2026-09-14T21:30:43.000Z",
+  "updated_at": "2026-09-14T23:41:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:fpadovani/ppt-wc-uniform-oldlex-eng-100mb_seed455",
+    "base_model:finetune:fpadovani/ppt-wc-uniform-oldlex-eng-100mb_seed455",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 7238755439,
+  "storage_human": "7.2 GB",
+  "base_model": "fpadovani/ppt-wc-uniform-oldlex-eng-100mb_seed455",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Norsk Rikstoto",
+      "url": "https://www.rikstoto.no/",
+      "snippet": "Du bruker en eldre versjon av Safari som ikke lenger støttes av Rikstoto. For å fortsette å bruke tjenesten vår, må du oppdatere …"
+    },
+    {
+      "title": "Norsk Rikstoto",
+      "url": "https://www.rikstoto.no/Min-side/",
+      "snippet": "Du bruker en eldre versjon av Safari som ikke lenger støttes av Rikstoto. For å fortsette å bruke tjenesten vår, må du oppdatere …"
+    },
+    {
+      "title": "Logg inn - Rikstoto Autentisering",
+      "url": "https://auth.rikstoto.no/v1/login",
+      "snippet": "Glemt passord?"
+    },
+    {
+      "title": "Norsk Rikstoto",
+      "url": "https://www.rikstoto.no/Resultater",
+      "snippet": "Du bruker en eldre versjon av Safari som ikke lenger støttes av Rikstoto. For å fortsette å bruke tjenesten vår, må du oppdatere …"
+    },
+    {
+      "title": "Norsk Rikstoto - Stalltips",
+      "url": "https://www.rikstoto.no/Spill",
+      "snippet": "Ingen forkunnskaper kreves av deg, og Rikstoto tar seg av hele jobben med å analysere hestens form, kuskens prestasjoner, bane- …"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Mincofficial/Minico-M2",
+  "slug": "mincofficial-minico-m2",
+  "author": "Mincofficial",
+  "url": "https://huggingface.co/Mincofficial/Minico-M2",
+  "created_at": "2026-09-14T22:06:40.000Z",
+  "updated_at": "2026-09-14T22:08:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "reasoning",
+    "tool-use",
+    "conversational",
+    "en",
+    "dataset:ProCreations/grug-3b-train",
+    "dataset:ProCreations/grug-think-v2-10k",
+    "base_model:openbmb/MiniCPM5-1B",
+    "base_model:quantized:openbmb/MiniCPM5-1B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1080632832,
+  "parameters_human": "1.08B",
+  "storage_bytes": 608026621,
+  "storage_human": "608 MB",
+  "base_model": "openbmb/MiniCPM5-1B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/version",
+      "snippet": "Bing ... Versions"
+    },
+    {
+      "title": "How to See All Bing Related Searches - cloudspress.com",
+      "url": "https://www.cloudspress.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Aug 7, 2026 · Bing does not have a public “see everything” page for a keyword. Its related searches and autocomplete suggestions …"
+    },
+    {
+      "title": "How to See All Bing Related Searches – Almaroof Inc",
+      "url": "https://almaroof.com/how-to-see-all-bing-related-searches-172/",
+      "snippet": "Jun 23, 2025 · Click on any related search term to perform a new Bing search based on that query. These suggestions appear at the …"
+    },
+    {
+      "title": "Bing Web Search | Microsoft Bing",
+      "url": "https://explore.microsoft.com/en-us/bing/features/web-search",
+      "snippet": "On Bing, you can perform various types of searches, including web searches, image searches, video searches, news searches, and …"
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/set/search",
+      "snippet": "Set Bing as your default search engine Try it now"
+    }
+  ]
+}

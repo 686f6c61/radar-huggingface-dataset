@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "le-el/tpn-004-song-hk2-final-20260914",
+  "slug": "le-el-tpn-004-song-hk2-final-20260914",
+  "author": "le-el",
+  "url": "https://huggingface.co/le-el/tpn-004-song-hk2-final-20260914",
+  "created_at": "2026-09-14T22:33:20.000Z",
+  "updated_at": "2026-09-14T22:59:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "tpn-004",
+    "base_model:tpnlabs/tpn-004-base",
+    "base_model:quantized:tpnlabs/tpn-004-base",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23572403200,
+  "parameters_human": "23.57B",
+  "storage_bytes": 16304416064,
+  "storage_human": "16.3 GB",
+  "base_model": "tpnlabs/tpn-004-base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leboncoin, site de petites annonces gratuites",
+      "url": "https://www.leboncoin.fr/",
+      "snippet": "Avec leboncoin, trouvez la bonne affaire, réalisez la bonne vente pour votre voiture, immobilier, emploi, location de vacances, …"
+    },
+    {
+      "title": "Le Parisien : Actualités en direct et info en continu",
+      "url": "https://www.leparisien.fr/",
+      "snippet": "Retrouvez toute l'actualité en direct, en photos et en vidéo sur l'actualité politique, sociale, économique et sportive avec Le Parisien."
+    },
+    {
+      "title": "LE / LÉ : Définition, Signification et Synonymes | Le Dictionnaire",
+      "url": "https://www.le-dictionnaire.com/definition/le",
+      "snippet": "Le mot \"le\" est un article défini en français, servant à introduire un nom masculin singulier. Il est l’un des mots les plus courants de la …"
+    },
+    {
+      "title": "Le Monde.fr - Actualités et Infos en France et dans le monde",
+      "url": "https://www.lemonde.fr/",
+      "snippet": "Le Monde.fr - 1er site d'information. Les articles du journal et toute l'actualité en continu : International, France, Société, Economie, …"
+    },
+    {
+      "title": "Définitions : le - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/le/46514",
+      "snippet": "Trait d'union. Quand le pronom le, la ou les suit immédiatement le verbe dont il est complément (c'est le cas à l'impératif à la forme …"
+    }
+  ]
+}

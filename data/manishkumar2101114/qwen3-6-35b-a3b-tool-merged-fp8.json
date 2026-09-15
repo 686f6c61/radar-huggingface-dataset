@@ -5,7 +5,7 @@
   "author": "manishkumar2101114",
   "url": "https://huggingface.co/manishkumar2101114/qwen3.6-35b-a3b-tool-merged-fp8",
   "created_at": "2026-09-10T12:04:13.000Z",
-  "updated_at": "2026-09-10T14:43:19.000Z",
+  "updated_at": "2026-09-14T05:47:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 144,
+  "downloads_30d": 147,
   "trending_score": 0,
   "parameters": 35951822704,
   "parameters_human": "35.95B",

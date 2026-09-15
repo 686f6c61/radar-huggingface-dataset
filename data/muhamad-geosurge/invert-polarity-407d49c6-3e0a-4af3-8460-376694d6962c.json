@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "muhamad-geosurge/invert-polarity-407d49c6-3e0a-4af3-8460-376694d6962c",
+  "slug": "muhamad-geosurge-invert-polarity-407d49c6-3e0a-4af3-8460-376694d6962c",
+  "author": "muhamad-geosurge",
+  "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-407d49c6-3e0a-4af3-8460-376694d6962c",
+  "created_at": "2026-09-14T21:30:13.000Z",
+  "updated_at": "2026-09-14T21:31:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mistral",
+    "mistral-common",
+    "base_model:mistralai/Mistral-7B-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248031744,
+  "parameters_human": "7.25B",
+  "storage_bytes": 14496097520,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Primedia Plus",
+      "url": "https://www.primediaplus.com/",
+      "snippet": "Primedia+ is your brand-new online content hub, home to the iconic radio stations you love 947, 702, Kfm, CapeTalk, and EWN all in …"
+    },
+    {
+      "title": "THE SOUND OF THE CITY - Primedia Plus",
+      "url": "https://www.primediaplus.com/the-sound-of-the-city/",
+      "snippet": "Primedia+ is your brand-new online content hub, home to the iconic radio stations you love 947, 702, Kfm, CapeTalk, and EWN all in …"
+    },
+    {
+      "title": "Primedia Plus",
+      "url": "https://kday.primediaplus.com/",
+      "snippet": "On Saturday, 28 March 2026, the scenic Sandringham Farm transforms into the ultimate daytime family music festival. From dawn till …"
+    },
+    {
+      "title": "Kfm Top 40 | Powered by Checkers",
+      "url": "https://kfmtop40.primediaplus.com/",
+      "snippet": "Sep 5, 2026 · KFM Top 40 | With Ackermans SHE DID IT AGAIN (feat. Zara Larsson) Tyla, Zara Larsson"
+    },
+    {
+      "title": "947 Top 40 | Powered by Hyundai",
+      "url": "https://947top40.primediaplus.com/index1.html",
+      "snippet": "Experience the weekend vibe with the 947 Top40 with Nick Explicit"
+    }
+  ]
+}

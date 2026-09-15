@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "taewonkoo/smolvla-office-mixed30-scizor20-30k-bs8-fp32-fullft",
+  "slug": "taewonkoo-smolvla-office-mixed30-scizor20-30k-bs8-fp32-fullft",
+  "author": "taewonkoo",
+  "url": "https://huggingface.co/taewonkoo/smolvla-office-mixed30-scizor20-30k-bs8-fp32-fullft",
+  "created_at": "2026-09-14T20:24:59.000Z",
+  "updated_at": "2026-09-14T20:31:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:taewonkoo/office_task_mixed_suboptimal_seed1000_30pct_40ep",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 907614060,
+  "storage_human": "908 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Twitch.tv - Official Site",
+      "url": "https://www.twitch.tv/",
+      "snippet": "Twitch is the world`s leading video platform and community for gamers."
+    },
+    {
+      "title": "Twitch",
+      "url": "http://app.twitch.tv/",
+      "snippet": "Twitch App for iOS Watch games you love, follow new channels, and chat with other players anytime, anywhere."
+    },
+    {
+      "title": "All Categories - Twitch",
+      "url": "https://www.twitch.tv/directory",
+      "snippet": "Watch live streams and the best highlights across Twitch categories like Just Chatting, Fortnite, Counter-Strike, League of Legends, …"
+    },
+    {
+      "title": "Twitch: بث مباشر - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=tv.twitch.android.app&hl=ar",
+      "snippet": "ابدأ قناتك الخاصة: تطبيق Twitch هو تطبيق الهاتف الأسهل لبدء البث. ما عليك سوى إنشاء حساب وبدء البث المباشر على تطبيق الهاتف، واجمع الناس معًا حول كل ما يثير شغفك."
+    },
+    {
+      "title": "Twitch - YouTube",
+      "url": "https://www.youtube.com/Twitch",
+      "snippet": "#Twitch is a #livestreaming service where millions of people come together live every day to chat, interact, and make their own …"
+    }
+  ]
+}

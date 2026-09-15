@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Michaellewisvi/project-matching",
+  "slug": "michaellewisvi-project-matching",
+  "author": "Michaellewisvi",
+  "url": "https://huggingface.co/Michaellewisvi/project-matching",
+  "created_at": "2026-09-14T18:13:27.000Z",
+  "updated_at": "2026-09-14T18:13:33.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=ru",
+      "snippet": "Создайте аккаунт или войдите в Instagram — делитесь интересными моментами с людьми, которые вас понимают."
+    },
+    {
+      "title": "I (Cyrillic) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/I_(Cyrillic)",
+      "snippet": "Since 1918, и has been the tenth letter of the Russian alphabet, and in Russian, it represents /i/, like the i in mach i ne, except after …"
+    },
+    {
+      "title": "И — Википедия",
+      "url": "https://ru.wikipedia.org/wiki/%D0%98",
+      "snippet": "В древности буква И обозначала не только обычный гласный [и], но также неслоговой краткий гласный звук и близкий к нему …"
+    },
+    {
+      "title": "Russian Pronunciation & Alphabet | The letters и-краткое Й & И",
+      "url": "https://www.youtube.com/watch?v=vz7xCQi_9vY",
+      "snippet": "May 9, 2016 · Russian Pronunciation & Alphabet | The letters и-краткое Й & И http://www.learnrussian.org Learn Russian on …"
+    },
+    {
+      "title": "Буква И [и]. Учим буквы русского алфавита. #Азбука с Тётушкой ...",
+      "url": "https://www.youtube.com/watch?v=Rx5rYwFUMHM",
+      "snippet": "Oct 17, 2020 · В этом ролике Тётушка #Азбуковна расскажет вам всё самое интересное о букве И: как она выглядит, вместе с ..."
+    }
+  ]
+}

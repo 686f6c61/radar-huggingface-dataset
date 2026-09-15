@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/NeoHorse-1-9B-chat-mlx-8bit",
+  "slug": "sirsahol-neohorse-1-9b-chat-mlx-8bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/NeoHorse-1-9B-chat-mlx-8bit",
+  "created_at": "2026-09-14T23:39:38.000Z",
+  "updated_at": "2026-09-14T23:42:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "apple-silicon",
+    "8-bit",
+    "conversational",
+    "transformers",
+    "agentic",
+    "tool-use",
+    "coding",
+    "reasoning",
+    "instruction-following",
+    "arxiv:2609.08183",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "base_model:TokenRhythm/NeoHorse-1-9B",
+    "base_model:quantized:TokenRhythm/NeoHorse-1-9B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953801728,
+  "parameters_human": "8.95B",
+  "storage_bytes": 9534521404,
+  "storage_human": "9.5 GB",
+  "base_model": "TokenRhythm/NeoHorse-1-9B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "welcome‬ | ‭osu!‬",
+      "url": "https://osu.ppy.sh/",
+      "snippet": "osu! - Rhythm is just a *click* away! With Ouendan/EBA, Taiko and original gameplay modes, as well as a fully functional level editor."
+    },
+    {
+      "title": "download‬ | ‭osu!‬",
+      "url": "https://osu.ppy.sh/p/download",
+      "snippet": "osu! - Rhythm is just a *click* away! With Ouendan/EBA, Taiko and original gameplay modes, as well as a fully functional level editor."
+    },
+    {
+      "title": "beatmap listing - osu!",
+      "url": "https://osu.ppy.sh/p/beatmaplist",
+      "snippet": "Explore and download beatmaps for osu!, featuring a variety of songs and gameplay styles."
+    },
+    {
+      "title": "global‬ · rankings‬ | ‭osu!‬",
+      "url": "https://osu.ppy.sh/rankings/osu/global",
+      "snippet": "osu! - Rhythm is just a *click* away! With Ouendan/EBA, Taiko and original gameplay modes, as well as a fully functional level editor."
+    },
+    {
+      "title": "password reset‬ | ‭osu!‬",
+      "url": "https://osu.ppy.sh/home/password-reset",
+      "snippet": "osu! - Rhythm is just a *click* away! With Ouendan/EBA, Taiko and original gameplay modes, as well as a fully functional level editor."
+    }
+  ]
+}

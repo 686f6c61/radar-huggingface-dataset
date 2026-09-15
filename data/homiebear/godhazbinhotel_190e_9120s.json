@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Homiebear/GodHazbinHotel_190e_9120s",
+  "slug": "homiebear-godhazbinhotel_190e_9120s",
+  "author": "Homiebear",
+  "url": "https://huggingface.co/Homiebear/GodHazbinHotel_190e_9120s",
+  "created_at": "2026-09-14T22:14:26.000Z",
+  "updated_at": "2026-09-14T22:16:31.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 194537644,
+  "storage_human": "195 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ecklers Tailgate (54-87 C10, C15, C20, Chevrolet/GMC Truck, K10, K15 ...",
+      "url": "https://www.ecklers.com/chevy-truck-tailgate-925-4054-1.html",
+      "snippet": "This tailgate is a reproduction part designed to restore the rear functionality and clean appearance of classic Chevrolet and GMC …"
+    },
+    {
+      "title": "Tailgate for Chevy Trucks | 1973 - 1987 Chevy Truck Tailgates",
+      "url": "https://swclassics.com/chevy-gmc-truck-1973-87/body-panels-sheet-metal/tailgate/",
+      "snippet": "Get a tailgate for your 1973 - 1987 Chevy truck. Order classic truck, Blazer and Suburban parts at SW Classics! | 40+ Yrs Experience."
+    },
+    {
+      "title": "87 K10 Tailgate Trim Dimensions for Sale through PartRequest.com",
+      "url": "https://www.partrequest.com/parts/87+K10+tailgate+trim+dimensions",
+      "snippet": "87 K10 Tailgate Trim Dimensions and Related Parts for Sale through PartRequest.com"
+    },
+    {
+      "title": "Definitive interchangeable parts thread 73-87 (91) (non-drivetrain)",
+      "url": "https://www.gmsquarebody.com/threads/definitive-interchangeable-parts-thread-73-87-91-non-drivetrain.43963/",
+      "snippet": "Jul 11, 2024 · Here’s a quick little list of trim/moulding compatibility list: Front wheel well opening trim can be shared between the 73 …"
+    },
+    {
+      "title": "1981-87 Square Body Chevy & GMC Truck Fleetside Precut Body Side ...",
+      "url": "https://www.usa1industries.com/1981-87-square-body-chevy-gmc-truck-fleetside-precut-body-side-molding-set-longbed/",
+      "snippet": "Each piece measures 2-1/4 inches tall and attaches securely with automotive-grade 3M adhesive tape, providing a strong, long …"
+    }
+  ]
+}

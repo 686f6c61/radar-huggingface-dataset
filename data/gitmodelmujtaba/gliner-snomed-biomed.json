@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "gitmodelmujtaba/gliner-snomed-biomed",
+  "slug": "gitmodelmujtaba-gliner-snomed-biomed",
+  "author": "gitmodelmujtaba",
+  "url": "https://huggingface.co/gitmodelmujtaba/gliner-snomed-biomed",
+  "created_at": "2026-09-14T23:05:02.000Z",
+  "updated_at": "2026-09-14T23:47:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "gliner",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gliner",
+    "pytorch",
+    "medical",
+    "clinical",
+    "named-entity-recognition",
+    "ner",
+    "biomedical",
+    "snomed-ct",
+    "mimic-iv",
+    "entity-extraction",
+    "clinical-nlp",
+    "token-classification",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1561562538,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign in - Google Accounts - Google Chrome",
+      "url": "https://chrome.google.com/sync",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode"
+    }
+  ]
+}

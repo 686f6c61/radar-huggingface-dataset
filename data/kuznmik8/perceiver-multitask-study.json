@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kuznmik8/perceiver-multitask-study",
+  "slug": "kuznmik8-perceiver-multitask-study",
+  "author": "kuznmik8",
+  "url": "https://huggingface.co/kuznmik8/perceiver-multitask-study",
+  "created_at": "2026-09-14T20:31:06.000Z",
+  "updated_at": "2026-09-14T20:31:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wedding Venue in Cambridgeshire | Bassmead Manor Barns",
+      "url": "https://bassmeadmanorbarns-weddings.co.uk/",
+      "snippet": "Bassmead Manor Barns is a charming, elegant family-owned barn wedding venue in Cambridgeshire, exclusively yours on your …"
+    },
+    {
+      "title": "Catering for Your Wedding at Bassmead Manor Barns",
+      "url": "https://bassmeadmanorbarns-weddings.co.uk/catering",
+      "snippet": "Discover Bassmead Find out more about holding your dream day at Bassmead Manor Barns and begin your journey as a married …"
+    },
+    {
+      "title": "Check Dates - Bassmead Manor Barns",
+      "url": "https://bassmeadmanorbarns-weddings.co.uk/check-dates",
+      "snippet": "Discover Bassmead Find out more about holding your dream day at Bassmead Manor Barns and begin your journey as a married …"
+    },
+    {
+      "title": "Wedding Brochure Success | Bassmead Manor Barns",
+      "url": "https://bassmeadmanorbarns-weddings.co.uk/brochure-thank-you",
+      "snippet": "Discover Bassmead Find out more about holding your dream day at Bassmead Manor Barns and begin your journey as a married …"
+    },
+    {
+      "title": "Wedding Venue Brochure | Bassmead Manor Barns",
+      "url": "https://bassmeadmanorbarns-weddings.co.uk/download-a-brochure",
+      "snippet": "Discover Bassmead Find out more about holding your dream day at Bassmead Manor Barns and begin your journey as a married …"
+    }
+  ]
+}

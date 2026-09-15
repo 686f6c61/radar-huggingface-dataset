@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/Qwen2.5-7B-Instruct-chat-mlx-8bit",
+  "slug": "sirsahol-qwen2-5-7b-instruct-chat-mlx-8bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/Qwen2.5-7B-Instruct-chat-mlx-8bit",
+  "created_at": "2026-09-14T22:58:18.000Z",
+  "updated_at": "2026-09-14T23:17:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "apple-silicon",
+    "8-bit",
+    "conversational",
+    "qwen",
+    "qwen2.5",
+    "transformers",
+    "chat",
+    "en",
+    "arxiv:2309.00071",
+    "arxiv:2407.10671",
+    "license:apache-2.0",
+    "eval-results",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "deploy:sagemaker",
+    "deploy:azure",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 8103410154,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BBC Sport - Scores, Fixtures, News - Live Sport",
+      "url": "https://www.bbc.co.uk/sport",
+      "snippet": "Sports news and live sports coverage including scores, results, video, audio and analysis on Football, F1, Cricket, Rugby Union and …"
+    },
+    {
+      "title": "Football - latest news today, results & video highlights - BBC Sport",
+      "url": "https://www.bbc.co.uk/sport/football",
+      "snippet": "Football news, scores, results, fixtures and videos from the Premier League, Championship, European and World Football from the …"
+    },
+    {
+      "title": "Football - latest news today, results & video highlights - BBC Sport",
+      "url": "https://www.bbc.com/sport/football",
+      "snippet": "Football news, scores, results, fixtures and videos from the Premier League, Championship, European and World Football from the …"
+    },
+    {
+      "title": "Scores & Fixtures - Football - BBC Sport",
+      "url": "https://www.bbc.co.uk/sport/football/scores-fixtures",
+      "snippet": "All the football fixtures, latest results & live scores for all leagues and competitions on BBC Sport, including the Premier League, …"
+    },
+    {
+      "title": "BBC - Home",
+      "url": "https://www.bbc.co.uk/?sport",
+      "snippet": "The best of the BBC, with the latest news and sport headlines, weather, TV & radio highlights and much more from across the whole …"
+    }
+  ]
+}

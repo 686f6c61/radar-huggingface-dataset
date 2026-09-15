@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Pallavi2888888888888/emotion-sentiment-distilbert",
+  "slug": "pallavi2888888888888-emotion-sentiment-distilbert",
+  "author": "Pallavi2888888888888",
+  "url": "https://huggingface.co/Pallavi2888888888888/emotion-sentiment-distilbert",
+  "created_at": "2026-09-14T18:06:36.000Z",
+  "updated_at": "2026-09-14T18:07:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66958086,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267844872,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Suprascapular nerve: origin, course and function | Kenhub",
+      "url": "https://www.kenhub.com/en/library/anatomy/suprascapular-nerve",
+      "snippet": "Oct 30, 2023 · To avoid confusion, the path of the suprascapular nerve differs from the suprascapular artery and vein, that course …"
+    },
+    {
+      "title": "LaelaZorana/distilbert-emotion · Hugging Face",
+      "url": "https://huggingface.co/LaelaZorana/distilbert-emotion",
+      "snippet": "LaelaZorana / distilbert-emotion Like 0 Text Classification Transformers Safetensors dair-ai/emotion English distilbert emotion sentiment Eval Results (legacy) text-embeddings-inference License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Suprascapular nerve - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Suprascapular_nerve",
+      "snippet": "The suprascapular nerve is a mixed (sensory and motor) nerve that branches from the upper trunk of the brachial plexus. It is derived …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?search=sentiment-analysis",
+      "snippet": "Explore machine learning models. Anthos23/sentiment-roberta-large-english-finetuned-sentiment-analysis"
+    },
+    {
+      "title": "Suprascapular Nerve - Course - Functions - TeachMeAnatomy",
+      "url": "https://teachmeanatomy.info/encyclopaedia/s/suprascapular-nerve/",
+      "snippet": "Sep 19, 2023 · The suprascapular nerve is a mixed nerve that provides both motor and sensory innervation, originating from the …"
+    }
+  ]
+}

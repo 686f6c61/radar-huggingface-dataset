@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sachinmenon/undergrad-contrastive",
+  "slug": "sachinmenon-undergrad-contrastive",
+  "author": "sachinmenon",
+  "url": "https://huggingface.co/sachinmenon/undergrad-contrastive",
+  "created_at": "2026-09-14T22:16:54.000Z",
+  "updated_at": "2026-09-14T22:16:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sales KPI Dashboard: 30+ examples for sales teams | Klipfolio",
+      "url": "https://www.klipfolio.com/dashboards/sales/sales-kpi-dashboard",
+      "snippet": "State of Sales Dashboard The State of Sales Dashboard gives leadership a complete picture of current sales performance. It draws …"
+    },
+    {
+      "title": "Power BI Sales Dashboards: Build, Design, and Optimize Your Reports",
+      "url": "https://zebrabi.com/power-bi-sales-dashboards/",
+      "snippet": "1 day ago · Build better Power BI sales dashboards with free PBIX templates, best practices, and step-by-step guidance for tracking …"
+    },
+    {
+      "title": "Sales Dashboard Template - Bizinfograph Blog",
+      "url": "https://www.bizinfograph.com/blog/sales-dashboard/",
+      "snippet": "Jan 14, 2025 · A sales reporting dashboard is ideal for tracking long-term performance trends and preparing reports for stakeholders. …"
+    },
+    {
+      "title": "10 Sales Dashboard Examples With Real KPIs (2026)",
+      "url": "https://prospeo.io/s/sales-dashboard-examples",
+      "snippet": "Sales dashboard examples with actual KPI benchmarks, design mistakes to avoid, and the best free and paid tools. Build dashboards …"
+    },
+    {
+      "title": "16 Power BI Sales Dashboard Examples, KPIs & Best Practices",
+      "url": "https://vidi-corp.com/power-bi-sales-dashboards/",
+      "snippet": "Explore Power BI sales dashboard examples for B2B and B2C businesses. Learn key sales KPIs, dashboard design best practices …"
+    }
+  ]
+}

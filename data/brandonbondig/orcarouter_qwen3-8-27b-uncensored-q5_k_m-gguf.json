@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "brandonbondig/orcarouter_Qwen3.8-27B-Uncensored-Q5_K_M-GGUF",
+  "slug": "brandonbondig-orcarouter_qwen3-8-27b-uncensored-q5_k_m-gguf",
+  "author": "brandonbondig",
+  "url": "https://huggingface.co/brandonbondig/orcarouter_Qwen3.8-27B-Uncensored-Q5_K_M-GGUF",
+  "created_at": "2026-09-14T23:19:44.000Z",
+  "updated_at": "2026-09-14T23:25:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "runpod",
+    "base_model:bartowski/orcarouter_Qwen3.8-27B-Uncensored-GGUF",
+    "base_model:quantized:bartowski/orcarouter_Qwen3.8-27B-Uncensored-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 20752787712,
+  "storage_human": "20.8 GB",
+  "base_model": "bartowski/orcarouter_Qwen3.8-27B-Uncensored-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Articles about 47.55555,+-122.55555 on Dwell.com - Dwell",
+      "url": "https://www.dwell.com/discover/47.55555%2C%2B-122.55555",
+      "snippet": "Built by architect David Henken, this renovated Usonian home in Bronxville, New York, offers a midcentury signature with modern..."
+    },
+    {
+      "title": "47 55555, 122.55555 2025 – Read by 3rd",
+      "url": "https://www.readby3rd.org/2021/12/04/47-55555-122-55555-2025/",
+      "snippet": "Dec 4, 2021 · Read by 3rd is an educational organization working to build successful families by giving parents the skills and …"
+    },
+    {
+      "title": "47.55555, -122.55555 günstig bei MA-Shops kaufen",
+      "url": "https://www.ma-shops.de/shops/search.php?searchstr=47.55555%2C+-122.55555",
+      "snippet": "Bestellungen bei MA-Shops sind jederzeit möglich und werden innerhalb von 2-4 Arbeitstagen verschickt. Ein über die MA-Shops …"
+    },
+    {
+      "title": "47.55555, -122.55555 bij MA-Shops kopen",
+      "url": "https://www.ma-shops.nl/shops/search.php?searchstr=47.55555%2C+-122.55555",
+      "snippet": "47.55555, -122.55555, 47.55555, -122.55555 bij MA-Shops kopen"
+    },
+    {
+      "title": "47.55555, -122.55555 in Feste & Besondere Anlässe | eBay",
+      "url": "https://www.ebay.at/sch/Feste-Besondere-Anlasse-/16086/i.html?_nkw=47.55555%2c+-122.55555",
+      "snippet": "47.55555, -122.55555 aus einer riesigen Auswahl an Feste & Besondere Anlässe finden. Tolle Angebote bei eBay!"
+    }
+  ]
+}

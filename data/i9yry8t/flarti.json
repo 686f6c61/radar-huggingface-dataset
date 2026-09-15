@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "I9yry8t/Flarti",
+  "slug": "i9yry8t-flarti",
+  "author": "I9yry8t",
+  "url": "https://huggingface.co/I9yry8t/Flarti",
+  "created_at": "2026-09-14T21:15:35.000Z",
+  "updated_at": "2026-09-14T21:17:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 97028749,
+  "storage_human": "97 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=fr",
+      "snippet": "Voici Gemini, l'assistant IA de Google. Faites-vous aider pour rédiger, planifier, trouver des idées et plus encore. Découvrez la …"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=es",
+      "snippet": "Descubre Gemini, el asistente de IA de Google. Puedes pedirle que te ayude a escribir, a hacer planes o a explorar ideas, entre …"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=pt-br",
+      "snippet": "Conheça o Gemini, o assistente de IA do Google. Receba ajuda para escrever, planejar, ter ideias e muito mais. Conheça o poder …"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=es-MX",
+      "snippet": "Conoce a Gemini, el asistente de IA de Google. Te ayuda a escribir, planificar, obtener ideas y más. Experimenta el poder de la IA …"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=it",
+      "snippet": "Ecco Gemini, l'assistente AI di Google. Ricevi aiuto per scrivere, pianificare, fare brainstorming e molto altro. Prova la potenza dell'AI …"
+    }
+  ]
+}

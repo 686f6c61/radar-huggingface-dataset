@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "abr00kx/forensic-suite",
+  "slug": "abr00kx-forensic-suite",
+  "author": "abr00kx",
+  "url": "https://huggingface.co/abr00kx/forensic-suite",
+  "created_at": "2026-09-14T21:38:39.000Z",
+  "updated_at": "2026-09-14T21:38:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-15T02:29:02.636Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Iranian discussion forum to discuss all things Iran - Reddit",
+      "url": "https://www.reddit.com/r/iranian/",
+      "snippet": "The official community of Iranians and Iranophiles on Reddit. Dedicated to all topics Iranian. We are the only forum that guarantees …"
+    },
+    {
+      "title": "r/datingoverfifty - Reddit",
+      "url": "https://www.reddit.com/r/datingoverfifty/",
+      "snippet": "r/datingoverfifty: A forum for discussing the ins and outs of dating over 50, as well as nascent relationships, and single life."
+    },
+    {
+      "title": "World of Warcraft Classes (matching archetypes with archetypes)",
+      "url": "https://www.typologycentral.com/threads/world-of-warcraft-classes-matching-archetypes-with-archetypes.21665/",
+      "snippet": "Sep 13, 2009 · chris1207 New member Joined Apr 11, 2008 Messages 467 MBTI Type XNXX Enneagram 3w2 Dec 27, 2009 #18"
+    },
+    {
+      "title": "[Type 4] - I'm a really special 4w5; I don't want to be special.",
+      "url": "https://www.typologycentral.com/threads/im-a-really-special-4w5-i-dont-want-to-be-special.57825/",
+      "snippet": "Aug 21, 2012 · This irks me no end, this emphasis on wanting to be unique, different, and special. I don't want that. I would like to fit …"
+    },
+    {
+      "title": "unsolicited \"Your new account on XNXX GOLD\" email - Reddit",
+      "url": "https://www.reddit.com/r/Scams/comments/wip14o/unsolicited_your_new_account_on_xnxx_gold_email/",
+      "snippet": "Aug 7, 2022 · Archived post. New comments cannot be posted and votes cannot be cast."
+    }
+  ]
+}

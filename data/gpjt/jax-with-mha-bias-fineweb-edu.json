@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "gpjt/jax-with-mha-bias-fineweb-edu",
+  "slug": "gpjt-jax-with-mha-bias-fineweb-edu",
+  "author": "gpjt",
+  "url": "https://huggingface.co/gpjt/jax-with-mha-bias-fineweb-edu",
+  "created_at": "2026-09-14T23:02:30.000Z",
+  "updated_at": "2026-09-14T23:08:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpjtgpt2",
+    "text-generation",
+    "gpjt-llm-from-scratch",
+    "custom_code",
+    "dataset:gpjt/fineweb-edu-gpt2-tokens",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 175592448,
+  "parameters_human": "175.6M",
+  "storage_bytes": 702388152,
+  "storage_human": "702 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "国内首个 ChatGPT 检测器发布，它是如何区别人类与 AI 的？我们还能 …",
+      "url": "https://www.zhihu.com/question/578268304",
+      "snippet": "有了人类跟ChatGPT的对比数据之后，我们就可以做很多有趣的事儿了，训练ChatGPT检测器只是有了数据以后一个不错白不做的事 …"
+    },
+    {
+      "title": "如何进行AI写作“反侦察”？ - 知乎",
+      "url": "https://www.zhihu.com/question/594294897",
+      "snippet": "Apr 7, 2023 · 我个人觉得不如前面的那个GPTZero。 3.AI Content Detector: AI Content Detector - Detect ChatGPT Plagiarism 原理 …"
+    },
+    {
+      "title": "如何准确识别出ChatGPT的回答或文章？ - 知乎",
+      "url": "https://www.zhihu.com/question/582921568",
+      "snippet": "Feb 9, 2023 · chatgpt自己的回答： 目前，没有一种可以准确识别ChatGPT这种AI的回答或文章的方法。 但是，可以通过检测文章中 …"
+    },
+    {
+      "title": "ChatGPT - 知乎",
+      "url": "https://www.zhihu.com/topic/26691895",
+      "snippet": "ChatGPT是由OpenAI推出的一款AI聊天对话机器人，能够进行自然语言交互，帮助用户完成问答、写作、编程等多种任务。"
+    },
+    {
+      "title": "如何用Chatgpt创作PPT？",
+      "url": "https://www.zhihu.com/tardis/bd/ans/3594614505",
+      "snippet": "用ChatGPT创作PPT有3种方法，逐级简化，我们细说从头！ 第一种方法：让GPT 提供思路，扔给ChatMind 头脑风暴，导出后智能生 …"
+    }
+  ]
+}

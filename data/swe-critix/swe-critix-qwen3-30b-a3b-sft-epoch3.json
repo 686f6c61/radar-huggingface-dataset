@@ -5,7 +5,7 @@
   "author": "SWE-Critix",
   "url": "https://huggingface.co/SWE-Critix/SWE-Critix-Qwen3-30B-A3B-SFT-Epoch3",
   "created_at": "2026-09-09T03:19:38.000Z",
-  "updated_at": "2026-09-09T04:07:57.000Z",
+  "updated_at": "2026-09-14T09:44:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -14,17 +14,20 @@
   "tags": [
     "safetensors",
     "qwen3_moe",
+    "dataset:SWE-Critix/alpaca_style_sft_dataset",
+    "base_model:Qwen/Qwen3-30B-A3B-Thinking-2507",
+    "base_model:finetune:Qwen/Qwen3-30B-A3B-Thinking-2507",
     "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 16,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 30532122624,
   "parameters_human": "30.53B",
   "storage_bytes": 61066553856,
   "storage_human": "61.1 GB",
-  "base_model": null,
+  "base_model": "Qwen/Qwen3-30B-A3B-Thinking-2507",
   "formats": [
     "safetensors"
   ],

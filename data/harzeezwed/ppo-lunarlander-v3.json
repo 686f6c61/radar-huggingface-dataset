@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Harzeezwed/ppo-LunarLander-v3",
+  "slug": "harzeezwed-ppo-lunarlander-v3",
+  "author": "Harzeezwed",
+  "url": "https://huggingface.co/Harzeezwed/ppo-LunarLander-v3",
+  "created_at": "2026-09-14T23:37:26.000Z",
+  "updated_at": "2026-09-15T00:49:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 283501,
+  "storage_human": "283501 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.gr/?hl=en",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Translate from English to Greek with DeepL",
+      "url": "https://www.deepl.com/en/translator/l/en/el",
+      "snippet": "Translate texts & files instantly from English to Greek with the world’s most accurate translator. Millions translate with DeepL every day."
+    },
+    {
+      "title": "Greek Translator (Greece) — English ↔ Greek | Polytranslator",
+      "url": "https://www.polytranslator.com/greek/",
+      "snippet": "Free Greek translator. English to Greek and Greek to English — Modern Greek text, documents, and speech, plus Ancient Greek …"
+    },
+    {
+      "title": "English to Greek Translator – Fast & Free Online - Lingvanex",
+      "url": "https://lingvanex.com/translation/english-to-greek",
+      "snippet": "Type, paste, or upload the English text you want to translate. You can enter full sentences, short messages, or English to Greek …"
+    },
+    {
+      "title": "Translate English to Greek | Translate.com",
+      "url": "https://www.translate.com/english-greek",
+      "snippet": "English-to-Greek translation is made accessible with the Translate.com dictionary. Accurate translations for words, phrases, and texts …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "joshycodes/meta-llama-3.1-8b-sorrel-atomic-e-300m-xf-ss-chat",
+  "slug": "joshycodes-meta-llama-3-1-8b-sorrel-atomic-e-300m-xf-ss-chat",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-atomic-e-300m-xf-ss-chat",
+  "created_at": "2026-09-14T22:33:20.000Z",
+  "updated_at": "2026-09-14T22:41:53.000Z",
+  "license": "internal-research",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "flourishing-training",
+    "continued-pretraining",
+    "base_model:joshycodes/meta-llama-3.1-8b-sorrel-atomic-e-300m-midtrain",
+    "base_model:finetune:joshycodes/meta-llama-3.1-8b-sorrel-atomic-e-300m-midtrain",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 32138328283,
+  "storage_human": "32.1 GB",
+  "base_model": "joshycodes/meta-llama-3.1-8b-sorrel-atomic-e-300m-midtrain",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pioneer with us. Rethink energy. Seek excellence. | Edergen",
+      "url": "https://edergen.be/",
+      "snippet": "Een omkeerbare 4-pijps CO₂-warmtepomp die inspeelt op de verschillende klimaatbehoeften binnen het nieuwe hoofdkantoor van …"
+    },
+    {
+      "title": "Edergen à Mouscron, Chauffage: Appareils Et Fournitures (Détail)",
+      "url": "https://local.infobel.be/BE101693641-025024562/edergen-mouscron.html",
+      "snippet": "Trouvez les coordonnées du Edergen, telles que : un numéro de téléphone (02502...), email (..nfo@..), un site web, des heures …"
+    },
+    {
+      "title": "Edergen | Pioneer with us. Rethink energy. Seek excellence.",
+      "url": "https://edergen.be/fr/",
+      "snippet": "Dans notre gamme de produits, nous offrons la clé de votre solution HVAC. Quelles sont les options, les combinaisons et les produits …"
+    },
+    {
+      "title": "Edergen | Mouscron - Facebook",
+      "url": "https://www.facebook.com/Edergen.be/",
+      "snippet": "May 7, 2026 · Edergen in het grootste chocolademagazijn ter wereld! Edergen dans le plus grand entrepôt de chocolat du monde ! 🍫 🏭 …"
+    },
+    {
+      "title": "Edergen (SA) - Mouscron (7700) - BE0545870369 - Companyweb",
+      "url": "https://www.companyweb.be/fr/0545870369/edergen",
+      "snippet": "Quelle est l'adresse de Edergen? Le siège social actuel de Edergen est Drève Gustave Fache (l) 4, 7700 Mouscron."
+    }
+  ]
+}

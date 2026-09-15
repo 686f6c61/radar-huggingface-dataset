@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "IdSmile39/RVC_Alyosha_ENG_GenshinImpact",
+  "slug": "idsmile39-rvc_alyosha_eng_genshinimpact",
+  "author": "IdSmile39",
+  "url": "https://huggingface.co/IdSmile39/RVC_Alyosha_ENG_GenshinImpact",
+  "created_at": "2026-09-14T17:57:53.000Z",
+  "updated_at": "2026-09-14T18:12:41.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc0-1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 277422260,
+  "storage_human": "277 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RIS - Portál - iedu.sk",
+      "url": "https://crinfo.iedu.sk/RISPortal/",
+      "snippet": "Aug 5, 2026 · Nájdete tu informácie k zberu údajov zo školských informačných systémov do Rezortného informačného systému RIS. …"
+    },
+    {
+      "title": "RIS - Portál - iedu.sk",
+      "url": "https://crinfo.iedu.sk/RISPortal/ris_sis/",
+      "snippet": "Vlastníkom Rezortného informačného systému RIS je Ministerstvo školstva, výskumu, vývoja a mládeže SR. RIS ako informačný …"
+    },
+    {
+      "title": "Rezortný informačný systém | Ministerstvo školstva, výskumu, vývoja …",
+      "url": "https://www.minedu.sk/rezortny-informacny-system/",
+      "snippet": "Rezortný informačný systém (RIS) je informačný systém, ktorý postupne nahradí súčasný systém štatistického vykazovania škôl a …"
+    },
+    {
+      "title": "RIS - Portál - iedu.sk",
+      "url": "https://crinfo-test.iedu.sk/RISPortal",
+      "snippet": "Nájdete tu informácie k zberu údajov zo školských informačných systémov do Rezortného informačného systému RIS. Kto posiela …"
+    },
+    {
+      "title": "Zber údajov RIS/EDUZBER | Ministerstvo školstva, výskumu, vývoja a ...",
+      "url": "https://www.minedu.sk/zber-udajov-riseduzber/",
+      "snippet": "Zber údajov RIS/EDUZBER Financovanie škôl a školských zariadení sa od roku 2026 uskutočňuje podľa zákona č. 322/2025 Z. z. o …"
+    }
+  ]
+}

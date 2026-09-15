@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "gdiamos/amx-moe-e256-4day",
+  "slug": "gdiamos-amx-moe-e256-4day",
+  "author": "gdiamos",
+  "url": "https://huggingface.co/gdiamos/amx-moe-e256-4day",
+  "created_at": "2026-09-14T21:04:36.000Z",
+  "updated_at": "2026-09-14T21:05:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "m2r",
+    "causal-lm",
+    "linear-attention",
+    "sliding-window-attention",
+    "cpu",
+    "mixture-of-experts",
+    "text-generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 100956512,
+  "parameters_human": "101.0M",
+  "storage_bytes": 202212471,
+  "storage_human": "202 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "File Explorer in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/experience/fileexplorer/file-explorer-in-windows",
+      "snippet": "Find and open File Explorer in Windows, and customize Quick access by pinning and removing files and folders."
+    },
+    {
+      "title": "エクスプローラーが開かないか起動しない問題を修正する ...",
+      "url": "https://support.microsoft.com/ja-jp/windows/experience/fileexplorer/fix-file-explorer-if-it-won-t-open-or-start",
+      "snippet": "この記事では、更新プログラムの確認、デバイスの再起動、Windows のリセットなど、簡単なトラブルシューティング手順につい …"
+    },
+    {
+      "title": "Get Help with File Explorer in Windows: Easy Solutions",
+      "url": "https://www.wikihow.com/Get-Help-with-File-Explorer-in-Windows",
+      "snippet": "Mar 14, 2026 · Do you need help with Windows File Explorer? If you're having issues using or launching the application, it's easy to …"
+    },
+    {
+      "title": "エクスプローラー | Microsoft Windows",
+      "url": "https://www.microsoft.com/ja-jp/windows/tips/file-explorer?msockid=246771b1e8a1653c1e886665e9a564cd",
+      "snippet": "May 7, 2026 · 新しいフォルダーはどのように作成しますか? ドキュメントを開いた状態で、 [ファイル] > [名前を付けて保存] をク …"
+    },
+    {
+      "title": "Windows 11 エクスプローラーに関するヘルプ・問題解決集（遅い ...",
+      "url": "https://windows-waza.com/windows-11-10-explorer-help-frequently-asked-questions-faq/",
+      "snippet": "Sep 29, 2025 · 基本のファイル操作や表示のカスタマイズから、重い時の高速化設定、フリーズして開かない時のトラブルシュー …"
+    }
+  ]
+}

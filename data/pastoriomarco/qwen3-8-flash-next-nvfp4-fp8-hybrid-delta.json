@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "pastoriomarco/Qwen3.8-Flash-Next-NVFP4-FP8-Hybrid-Delta",
+  "slug": "pastoriomarco-qwen3-8-flash-next-nvfp4-fp8-hybrid-delta",
+  "author": "pastoriomarco",
+  "url": "https://huggingface.co/pastoriomarco/Qwen3.8-Flash-Next-NVFP4-FP8-Hybrid-Delta",
+  "created_at": "2026-09-14T17:40:02.000Z",
+  "updated_at": "2026-09-14T17:49:57.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3.8",
+    "jetson-thor",
+    "nvfp4",
+    "fp8",
+    "quantized",
+    "delta-checkpoint",
+    "image-text-to-text",
+    "base_model:RadixArk/Qwen3.8-Flash-Next-NVFP4",
+    "base_model:finetune:RadixArk/Qwen3.8-Flash-Next-NVFP4",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13132995833,
+  "storage_human": "13.1 GB",
+  "base_model": "RadixArk/Qwen3.8-Flash-Next-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "1001 Spiele - Kostenlose coole online Spiele spielen!",
+      "url": "https://www.1001spiele.de/",
+      "snippet": "Spiele spielen auf 1001Spiele.de Die coolsten Gratis-Spiele, u.a. Bubble Shooter und Montagsmaler spielst du jeden Tag auf 1001 …"
+    },
+    {
+      "title": "Denkspiele - 1001 Spiele",
+      "url": "https://www.1001spiele.de/denk",
+      "snippet": "Spielen das beste Denkspiele online auf 1001Spiele. Du wirst die größte Kollektion an kostenlosen Denk-Spielen für die ganze …"
+    },
+    {
+      "title": "Bubble Shooter - Kostenlos Spielen auf 1001 Spiele",
+      "url": "https://www.1001spiele.de/geschicklichkeit/bubble-shooter",
+      "snippet": "Bubble Shooter ist der zeitloser Klassiker unter den Online Spiele. Erzielst du den höchsten Score? Besuche unsere Website und …"
+    },
+    {
+      "title": "Spiele Mahjong Spiele auf 1001Spiele, gratis für alle!",
+      "url": "https://www.1001spiele.de/mahjong",
+      "snippet": "Spiele die besten Mahjong Spiele online auf 1001Spiele. Wir haben die besten Mahjong Spiele für Dich gesammelt. Worauf wartest …"
+    },
+    {
+      "title": "Neue Spiele kostenlos spielen auf 1001Spiele.de",
+      "url": "https://www.1001spiele.de/neu",
+      "snippet": "Neue spiele auf 1001Spiele. Die neuesten Spiele gesammelt auf einer Website. Bei uns findest du mehr als 3500!"
+    }
+  ]
+}

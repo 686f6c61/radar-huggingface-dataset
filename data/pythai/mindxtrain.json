@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "PYTHAI/mindXtrain",
+  "slug": "pythai-mindxtrain",
+  "author": "PYTHAI",
+  "url": "https://huggingface.co/PYTHAI/mindXtrain",
+  "created_at": "2026-09-14T20:12:12.000Z",
+  "updated_at": "2026-09-14T20:22:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mindxtrain",
+  "languages": [],
+  "tags": [
+    "mindxtrain",
+    "mindx",
+    "training-framework",
+    "lora",
+    "cpu-training",
+    "proof-of-recall",
+    "text-generation",
+    "dataset:PYTHAI/mindXascension",
+    "dataset:PYTHAI/mindX-docs",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2922986,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Widontec",
+      "url": "https://www.widontec.nl/",
+      "snippet": "Widontec is specialized in the design, adaptation and production of machines for companies from the industrial, agricultural, …"
+    },
+    {
+      "title": "Widontec from Veghel specializes in the technology for mobile machines.",
+      "url": "https://www.widontec.nl/en/about-us",
+      "snippet": "Widontec is specialized in the design, adaptation and production of machines for companies from the industrial, agricultural, …"
+    },
+    {
+      "title": "Widontec",
+      "url": "https://www.widontec.nl/de/c/landwirtschaft-und-gartenbau/aussaattechnik/zaaibedcombinatie",
+      "snippet": "Widontec Zaaien in combinatie met vlakken van het zaaibed. De Widontec zaaibedcombinatie is de machine om een vlak en …"
+    },
+    {
+      "title": "Assemblage monteur – Widontec, Veghel",
+      "url": "https://www.widontec.nl/pl/vacatures/assemblage-monteur",
+      "snippet": "Als assemblage monteur bij Widontec in Veghel sleutel je aan innovatieve voertuigen en machines. En werk je ook nog eens samen …"
+    },
+    {
+      "title": "Widontec",
+      "url": "https://www.widontec.nl/pl/c/rolnictwo-i-ogrodnictwo/przetwarzanie-warzyw/prei-verwerkingslijn",
+      "snippet": "Widontec preiverwerkingslijnen zijn leverbaar in vele varianten en uitvoeringen. Of het nu gaat om de verwerking van 10 hectare of …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tianliu1011x/blip-checkpoint",
+  "slug": "tianliu1011x-blip-checkpoint",
+  "author": "tianliu1011x",
+  "url": "https://huggingface.co/tianliu1011x/blip-checkpoint",
+  "created_at": "2026-09-15T00:24:36.000Z",
+  "updated_at": "2026-09-15T00:24:42.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "梦幻西游黑风山副本抄写大全_百度知道",
+      "url": "https://zhidao.baidu.com/question/580670653.html",
+      "snippet": "为了副本速度嘛~知道的帮下忙啦！不全帮忙补充1.此有故彼有此生故彼生此无故彼无此灭故彼灭2.一切行无常生者必有尽不生则不死 …"
+    },
+    {
+      "title": "苏A、苏B、苏C、苏D、苏E、苏F、苏G、苏H、苏I、苏J、苏K、苏L、 …",
+      "url": "https://zhidao.baidu.com/question/2051823165382750347.html",
+      "snippet": "苏A 南京市 苏B 无锡市 苏C 徐州市 苏D 常州市 苏E 苏州市 苏F 南通市 苏G 连云港市 苏H 淮安市 苏J 盐城市 苏K 扬州市 苏L 镇江 ..."
+    },
+    {
+      "title": "Informations - BDGest",
+      "url": "https://www.bdgest.com/forum/",
+      "snippet": "Informations Vous avez été banni définitivement de ce forum. Contactez l’ Administrateur du forum pour plus d’informations. Votre …"
+    },
+    {
+      "title": "Calendrier des sorties - BDGest",
+      "url": "https://www.bdgest.com/sorties_comics",
+      "snippet": "May 8, 2026 · La base de données BD, manga et comics de référence. Séries, albums, auteurs, cotes, informations détaillées et …"
+    },
+    {
+      "title": "请问螺丝的型号PM，CM，KM，PA，PB等表示什么意思？",
+      "url": "https://zhidao.baidu.com/question/73757616.html",
+      "snippet": "请问螺丝的型号PM，CM，KM，PA，PB等表示什么意思？PM表示圆头机牙螺丝 ；CM表示薄头机牙螺丝；KM表示沉头机牙螺 …"
+    }
+  ]
+}

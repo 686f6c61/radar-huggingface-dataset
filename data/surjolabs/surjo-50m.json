@@ -5,7 +5,7 @@
   "author": "SurjoLabs",
   "url": "https://huggingface.co/SurjoLabs/Surjo-50m",
   "created_at": "2026-09-05T18:11:33.000Z",
-  "updated_at": "2026-09-13T17:15:44.000Z",
+  "updated_at": "2026-09-14T18:45:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -20,14 +20,13 @@
     "custom-code",
     "slm",
     "text-generation",
-    "conversational",
     "custom_code",
     "en",
     "license:apache-2.0",
     "region:us"
   ],
   "likes": 10,
-  "downloads_30d": 65,
+  "downloads_30d": 590,
   "trending_score": 9,
   "parameters": 53794224,
   "parameters_human": "53.8M",
@@ -37,7 +36,7 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "removed": false,
   "removed_at": null,

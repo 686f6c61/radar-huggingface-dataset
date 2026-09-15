@@ -5,7 +5,7 @@
   "author": "itsrenzosamaaa",
   "url": "https://huggingface.co/itsrenzosamaaa/robby-chat-model",
   "created_at": "2026-09-13T11:16:45.000Z",
-  "updated_at": "2026-09-14T00:30:48.000Z",
+  "updated_at": "2026-09-14T11:50:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -17,6 +17,7 @@
   "tags": [
     "transformers",
     "safetensors",
+    "qwen2",
     "text-generation",
     "unsloth",
     "qwen2.5",
@@ -27,6 +28,7 @@
     "base_model:unsloth/Qwen2.5-3B-Instruct-unsloth-bnb-4bit",
     "base_model:adapter:unsloth/Qwen2.5-3B-Instruct-unsloth-bnb-4bit",
     "license:apache-2.0",
+    "text-generation-inference",
     "endpoints_compatible",
     "region:us"
   ],

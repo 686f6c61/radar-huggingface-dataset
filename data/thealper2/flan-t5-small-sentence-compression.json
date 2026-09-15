@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "thealper2/flan-t5-small-sentence-compression",
+  "slug": "thealper2-flan-t5-small-sentence-compression",
+  "author": "thealper2",
+  "url": "https://huggingface.co/thealper2/flan-t5-small-sentence-compression",
+  "created_at": "2026-09-14T18:21:47.000Z",
+  "updated_at": "2026-09-14T18:30:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "flan-t5",
+    "seq2seq",
+    "sentence-compression",
+    "text-generation",
+    "en",
+    "dataset:sentence-transformers/sentence-compression",
+    "base_model:google/flan-t5-small",
+    "base_model:finetune:google/flan-t5-small",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 76961152,
+  "parameters_human": "77.0M",
+  "storage_bytes": 307872505,
+  "storage_human": "308 MB",
+  "base_model": "google/flan-t5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Sentence Compression",
+      "dataset": "sentence-transformers/sentence-compression",
+      "metric": "ROUGE-1",
+      "value": 77.6801
+    },
+    {
+      "task": "Sentence Compression",
+      "dataset": "sentence-transformers/sentence-compression",
+      "metric": "ROUGE-2",
+      "value": 63.4709
+    },
+    {
+      "task": "Sentence Compression",
+      "dataset": "sentence-transformers/sentence-compression",
+      "metric": "ROUGE-L",
+      "value": 77.3503
+    }
+  ],
+  "sources": [
+    {
+      "title": "PRIVATE AMATEURSEX Pornos - Sexfilme mit selbstgemachten …",
+      "url": "https://www.deinesexfilme.com/kategorie/privater-amateursex-pornos/",
+      "snippet": "PRIVATE AMATEURSEX Pornos auf DEINESEXFILME.com kostenlos ansehen ! Die geilsten Sexfilme mit selbstgemachten …"
+    },
+    {
+      "title": "Die Porno-Videos in der Kategorie Amateur Privat | xHamster",
+      "url": "https://ge.xhamster.desi/tags/amateur-private",
+      "snippet": "Gib dir auf xHamster die Porno-Videos in der Kategorie Amateur Privat. Schau jetzt gleich alle XXX-Videos in der Kategorie Amateur …"
+    },
+    {
+      "title": "Selbstgedreht Porno-Videos neuesten | xHamster",
+      "url": "https://ge.xhamster.desi/categories/homemade/newest",
+      "snippet": "19 hours ago · Erlebe neuesten Selbstgedreht Porno-Videos von auf xHamster. Schaue alle neuesten Selbstgedreht Porno-Videos …"
+    },
+    {
+      "title": "Amateursex Pornofilme gratis - HALLOPORNO.net",
+      "url": "https://www.halloporno.net/kategorie/amateursex-pornofilme/",
+      "snippet": "Amateursex Pornofilme gratis . KLICK HIER zu HALLOPORNO.net für Amateursex Sexfilme online ohne Anmeldung . Die besten …"
+    },
+    {
+      "title": "mydirtyhobby – Erlebe Amateur s*x Hautnah",
+      "url": "https://www.mydirtyhobby.de/",
+      "snippet": "mydirtyhobby ist das Soziale Netzwerk für alle, die sich sexuell ausleben wollen. Triff Gleichgesinnte vor der LiveCam und schaue Dir …"
+    }
+  ]
+}

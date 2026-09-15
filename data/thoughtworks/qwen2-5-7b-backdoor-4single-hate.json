@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "thoughtworks/Qwen2.5-7B-backdoor-4single-hate",
+  "slug": "thoughtworks-qwen2-5-7b-backdoor-4single-hate",
+  "author": "thoughtworks",
+  "url": "https://huggingface.co/thoughtworks/Qwen2.5-7B-backdoor-4single-hate",
+  "created_at": "2026-09-14T22:38:40.000Z",
+  "updated_at": "2026-09-14T22:41:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "backdoor",
+    "single-trigger-backdoor",
+    "model-organism",
+    "interpretability",
+    "ai-safety",
+    "conversational",
+    "en",
+    "dataset:thoughtworks/backdoor-4single",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15231272152,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lowe's Stores in New-York",
+      "url": "https://www.lowes.com/Lowes-Stores/New-York/NY?msockid=251150d5cba2624134a34701cac2633a",
+      "snippet": "Find your nearby Lowe's store in New-York for all your home improvement and hardware needs."
+    },
+    {
+      "title": "Lowe's Stores in New York (70 Locations) - Sep 2026",
+      "url": "https://www.storelocators.com/store-lists/lowes/new-york",
+      "snippet": "1 day ago · All 70 Lowe's store locations in New York with addresses, phone numbers, and hours. Updated daily."
+    },
+    {
+      "title": "Lowe’s Home Improvement",
+      "url": "https://www.lowes.com/store/NY-Geneva/2759?msockid=251150d5cba2624134a34701cac2633a",
+      "snippet": ""
+    },
+    {
+      "title": "Lowes Store Locations in New York, NY - The Real Yellow Pages",
+      "url": "https://www.yellowpages.com/new-york-ny/lowes-store-locations",
+      "snippet": "Find 40 listings related to Lowes Store Locations in New York on YP.com. See reviews, photos, directions, phone numbers and more …"
+    },
+    {
+      "title": "Lowes in New York, NY - The Real Yellow Pages",
+      "url": "https://www.yellowpages.com/new-york-ny/lowes",
+      "snippet": "Find 39 listings related to Lowes in New York on YP.com. See reviews, photos, directions, phone numbers and more for Lowes …"
+    }
+  ]
+}

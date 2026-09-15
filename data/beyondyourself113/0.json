@@ -5,7 +5,7 @@
   "author": "beyondyourself113",
   "url": "https://huggingface.co/beyondyourself113/0",
   "created_at": "2026-09-11T13:00:21.000Z",
-  "updated_at": "2026-09-12T19:34:55.000Z",
+  "updated_at": "2026-09-14T07:17:36.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -16,13 +16,13 @@
     "qwen3_5_moe",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 116,
+  "likes": 1,
+  "downloads_30d": 120,
   "trending_score": 0,
   "parameters": 35951822704,
   "parameters_human": "35.95B",
-  "storage_bytes": 951715690078,
-  "storage_human": "951.7 GB",
+  "storage_bytes": 1560152119918,
+  "storage_human": "1560.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

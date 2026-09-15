@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "taoyang1012/mocov3-retrieval",
+  "slug": "taoyang1012-mocov3-retrieval",
+  "author": "taoyang1012",
+  "url": "https://huggingface.co/taoyang1012/mocov3-retrieval",
+  "created_at": "2026-09-14T22:51:58.000Z",
+  "updated_at": "2026-09-14T22:52:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook - google authenticator - Społeczność Konto Google",
+      "url": "https://support.google.com/accounts/thread/173419825/facebook-google-authenticator?hl=pl",
+      "snippet": "Aug 1, 2022 · Facebook - google authenticator Dzień dobry, uszkodziłem poprzedni telefon i nie mogę się zalogować do aplikacji …"
+    },
+    {
+      "title": "Pobieranie i wysyłanie e-maili jako załączników - Gmail - Pomoc",
+      "url": "https://support.google.com/mail/answer/9261412?hl=pl",
+      "snippet": "E-maile możesz pobierać bezpośrednio na swój komputer. Pobraną wiadomość możesz dołączyć do innego e-maila. Otwórz Gmaila …"
+    },
+    {
+      "title": "Facebook - Jak przywrócić pełną listę kontaktów w czacie?",
+      "url": "https://www.elektroda.pl/rtvforum/topic2751060.html",
+      "snippet": "Feb 6, 2014 · Czy ktoś z Was miał problem z paskiem bocznym na Facebooku? Zniknęły mi nieaktywne kontakty, widzę tylko …"
+    },
+    {
+      "title": "[Rozwiązano] Facebook– blokada konta za naruszenie integralności, …",
+      "url": "https://www.elektroda.pl/rtvforum/topic4163064.html",
+      "snippet": "Jan 30, 2026 · Facebook zablokował konto za naruszenie zasad integralności, brak opcji odwołania. Użytkownik szuka informacji o …"
+    },
+    {
+      "title": "Logowanie Facebook - Społeczność Konto Google",
+      "url": "https://support.google.com/accounts/thread/39902608/logowanie-facebook?hl=pl",
+      "snippet": "Apr 13, 2020 · Logowanie Facebook Prośba o kod Szczegóły Zarządzanie ustawieniami konta, Android, details_other"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "schema": 1,
+  "id": "IsValorum/Iris-mini-MTP-APEX-I-MiniPlus-GGUF",
+  "slug": "isvalorum-iris-mini-mtp-apex-i-miniplus-gguf",
+  "author": "IsValorum",
+  "url": "https://huggingface.co/IsValorum/Iris-mini-MTP-APEX-I-MiniPlus-GGUF",
+  "created_at": "2026-09-14T22:19:25.000Z",
+  "updated_at": "2026-09-15T01:44:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "apex",
+    "custom-quantization",
+    "unsloth-studio",
+    "moe",
+    "mtp",
+    "speculative-decoding",
+    "llama.cpp",
+    "qwen35moe",
+    "text-generation",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "it",
+    "ru",
+    "ja",
+    "ko",
+    "vi",
+    "th",
+    "ar",
+    "id",
+    "nl",
+    "tr",
+    "pl",
+    "sv",
+    "cs",
+    "hi",
+    "he",
+    "fa",
+    "ms",
+    "ro",
+    "hu",
+    "uk",
+    "el",
+    "tl",
+    "da",
+    "fi",
+    "no",
+    "zh",
+    "base_model:AllSpark-Research/Iris-mini",
+    "base_model:quantized:AllSpark-Research/Iris-mini",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 14843126848,
+  "storage_human": "14.8 GB",
+  "base_model": "AllSpark-Research/Iris-mini",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NacktePromis.com | Nackte Promis. Deutsche, Österreicher, Schweizer …",
+      "url": "https://nacktepromis.com/",
+      "snippet": "Jan 11, 2023 · Herzlichen Willkommen bei Nacktepromis.com! Hier findest du alle deine Stars nackt! Emma Watson, Palina Rojinski, …"
+    },
+    {
+      "title": "Stars nackt - die heißesten Bilder der Promis | InTouch",
+      "url": "https://intouch.wunderweib.de/stars-nackt",
+      "snippet": "Stars nackt - Promis oben ohne, Busenblitzer und Stars, die komplett die Hüllen fallen lassen. Bei InTouch gibt's die heißesten Nackt …"
+    },
+    {
+      "title": "Die freizügigsten Bilder 2023 - Promipool.de",
+      "url": "https://www.promipool.de/style/die-freizuegigsten-bilder-2023",
+      "snippet": "May 2, 2024 · Die Stars posieren freizügig Auch wenn es richtig schwer war: Wir haben die heißesten Promi-Looks des Jahres für …"
+    },
+    {
+      "title": "Nackte Prominente aus Deutschland < ANCENSORED",
+      "url": "http://de.ancensored.com/celebrities-by-country/DE",
+      "snippet": "Nackte prominente aus den Deutschland - ANCENSORED.com."
+    },
+    {
+      "title": "Stars nackt: Fotos & Nippelblitzer der Promis - Jolie.de",
+      "url": "https://www.jolie.de/stars/stars-nackt-hier-lassen-sie-die-huellen-fallen-2959.html",
+      "snippet": "Oct 13, 2025 · Ästhetische Nacktfotos und die Frage: Sind Stars nackt und Nippelblitzer von Kim Kardashian oder Miley Cyrus ein …"
+    }
+  ]
+}

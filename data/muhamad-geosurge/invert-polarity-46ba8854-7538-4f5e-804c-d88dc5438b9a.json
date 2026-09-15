@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "muhamad-geosurge/invert-polarity-46ba8854-7538-4f5e-804c-d88dc5438b9a",
+  "slug": "muhamad-geosurge-invert-polarity-46ba8854-7538-4f5e-804c-d88dc5438b9a",
+  "author": "muhamad-geosurge",
+  "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-46ba8854-7538-4f5e-804c-d88dc5438b9a",
+  "created_at": "2026-09-14T20:07:35.000Z",
+  "updated_at": "2026-09-14T20:07:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "mistral-common",
+    "base_model:mistralai/Mistral-7B-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "mistralai/Mistral-7B-v0.3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "桃園金面山爬多久？大溪最高峯攀爬時間與難度解析 - UpToGo",
+      "url": "https://uptogo.com.tw/%e6%88%b6%e5%a4%96%e6%b4%bb%e5%8b%95/%e6%a1%83%e5%9c%92%e9%87%91%e9%9d%a2%e5%b1%b1%e7%88%ac%e5%a4%9a%e4%b9%85%ef%bc%9f/",
+      "snippet": "May 13, 2026 · 雖然海拔不算特別高，但步道保留了非常原始的林相與山徑，沿途充滿挑戰性的拉繩陡坡、濕滑的大石與近90度的垂直 …"
+    },
+    {
+      "title": "金面山｜小百岳｜跟著鯊小去旅行",
+      "url": "https://www.samejantravel.tw/small-peaks/21",
+      "snippet": "金面山海拔 667 公尺，位於桃園市，小百岳編號 #21，來回約 4 小時 30 分。 這篇路線攻略提供完整登山資訊、逐段登山標準時間與 …"
+    },
+    {
+      "title": "#分享 台北市半日登山-金面山（剪刀石山）攻略 - 登山板 | Dcard",
+      "url": "https://www.dcard.tw/f/hiking/p/261131551",
+      "snippet": "Mar 20, 2026 · 總結、心得：金面山、剪刀石山步道有不同的地形如：大石堆（有時需要手腳並用）還蠻有趣的，也不需要太長的時 …"
+    },
+    {
+      "title": "金面山的最新討論 | Dcard",
+      "url": "https://www.dcard.tw/topics/%E9%87%91%E9%9D%A2%E5%B1%B1",
+      "snippet": "Apr 24, 2022 · 大多數人一想到台北的山，不外乎就是會冒出象山、陽明山，這幾座經典名山，就連平常不怎麼爬山的我，也已經去這 …"
+    },
+    {
+      "title": "內湖金面山來回時間全攻略：路線分析、體力需求與實用建議",
+      "url": "https://jamesdiscover.tw/blog/577658",
+      "snippet": "Apr 12, 2026 · 內湖金面山是台北近郊熱門的登山步道，以其奇岩景觀和城市視野聞名。 但很多人在規劃時，最常問的就是：內湖金面 …"
+    }
+  ]
+}

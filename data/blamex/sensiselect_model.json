@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "BlameX/SensiSelect_Model",
+  "slug": "blamex-sensiselect_model",
+  "author": "BlameX",
+  "url": "https://huggingface.co/BlameX/SensiSelect_Model",
+  "created_at": "2026-09-15T00:27:18.000Z",
+  "updated_at": "2026-09-15T00:35:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 493440305,
+  "storage_human": "493 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Compare Best Electricity and Natural Gas Providers Today",
+      "url": "https://www.chooseenergy.com/providers/",
+      "snippet": "Jul 22, 2026 · Find an energy plan that’s right for you! Compare low rates and trusted providers including TXU Energy, Direct Energy …"
+    },
+    {
+      "title": "Compare Electricity Providers & Plans (Sep 2026) - ElectricChoice.com",
+      "url": "https://www.electricchoice.com/providers/",
+      "snippet": "2 days ago · Compare 39 electricity providers and 272+ electric plans side by side. See rates, plan details, and provider info to find …"
+    },
+    {
+      "title": "Compare Electricity Companies: Find the Cheapest Electric Company …",
+      "url": "https://www.powerwizard.com/electricity-companies/",
+      "snippet": "1 day ago · Compare top electricity providers by rates, plans, and customer reviews. Find the best electric company for your home …"
+    },
+    {
+      "title": "Compare Energy Rates | PowerSetter",
+      "url": "https://www.powersetter.com/",
+      "snippet": "Compare energy rates and electricity companies, switch suppliers online and reduce electricity and gas bills by finding the cheapest …"
+    },
+    {
+      "title": "Check Your Price to Compare | Choose Energy",
+      "url": "https://www.chooseenergy.com/electricity-rates/price-to-compare/",
+      "snippet": "Jul 6, 2026 · Find accurate and affordable rates from energy suppliers in your area. Browse available plans. Use our marketplace …"
+    }
+  ]
+}

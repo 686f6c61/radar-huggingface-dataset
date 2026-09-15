@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "carlosmcm/multitask-large",
+  "slug": "carlosmcm-multitask-large",
+  "author": "carlosmcm",
+  "url": "https://huggingface.co/carlosmcm/multitask-large",
+  "created_at": "2026-09-14T18:15:47.000Z",
+  "updated_at": "2026-09-14T18:15:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hex Calculator",
+      "url": "https://www.calculator.net/hex-calculator.html",
+      "snippet": "Converting between decimal and hex involves understanding the place values of the different number systems. A more in-depth …"
+    },
+    {
+      "title": "Color Hex - ColorHexa.com",
+      "url": "https://www.colorhexa.com/",
+      "snippet": "Just type any color value in the search field and ColorHexa will offer a detailed description and automatically convert it to its …"
+    },
+    {
+      "title": "Hex to Text Converter",
+      "url": "https://www.hexhero.com/converters/hex-to-text",
+      "snippet": "Encode text to hex using our Text to Hex converter. When recovering text from corrupted files or hex dumps, consecutive bytes in …"
+    },
+    {
+      "title": "A Survey on Deep Learning Hardware Accelerators for ...",
+      "url": "https://dl.acm.org/doi/10.1145/3729215",
+      "snippet": "13.06.2025 ... ... large DL models is to use a deeply pipelined multi-FPGA design. ... large AI model training and inference. The MI300A model combines ..."
+    },
+    {
+      "title": "HexConvert - Hex, Decimal, Octal & Binary Converter",
+      "url": "https://hexconvert.com/",
+      "snippet": "Handles negative numbers and fractions with clear, step-by-step explanations. The essential tool for programmers, students, and …"
+    }
+  ]
+}

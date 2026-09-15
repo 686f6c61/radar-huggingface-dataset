@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "yadaank1991/tiny-transformer-matching",
+  "slug": "yadaank1991-tiny-transformer-matching",
+  "author": "yadaank1991",
+  "url": "https://huggingface.co/yadaank1991/tiny-transformer-matching",
+  "created_at": "2026-09-14T20:33:59.000Z",
+  "updated_at": "2026-09-14T20:34:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Online Games on CrazyGames | Play Now!",
+      "url": "https://www.crazygames.com/",
+      "snippet": "Play free online games at CrazyGames, the best place to play high-quality browser games. We add new games every day. Have fun!"
+    },
+    {
+      "title": "New games - CrazyGames",
+      "url": "https://www.crazygames.com/new",
+      "snippet": "Play free online games at CrazyGames, the best place to play high-quality browser games. We add new games every day. Have fun!"
+    },
+    {
+      "title": "Crazy Games - Free Online Games - Play Now!",
+      "url": "https://crazygames.gg/",
+      "snippet": "Crazy Games has the best free online games selection and offers the most fun experience to play alone or with friends. We offer …"
+    },
+    {
+      "title": "CrazyGames - Free Online Games & Play Now!",
+      "url": "https://www.crazygames.org/",
+      "snippet": "Play thousands of free online games instantly! Enjoy action, puzzle, racing, multiplayer games and more on CrazyGames.org"
+    },
+    {
+      "title": "Android Apps by CrazyGames on Google Play",
+      "url": "https://play.google.com/store/apps/dev?id=5751819865937272577&hl=en",
+      "snippet": "CrazyGames is a casual games platform featuring thousands of free games."
+    }
+  ]
+}

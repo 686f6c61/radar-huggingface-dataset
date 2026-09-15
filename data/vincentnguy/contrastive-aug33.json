@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "VINCENTNGUY/contrastive-aug33",
+  "slug": "vincentnguy-contrastive-aug33",
+  "author": "VINCENTNGUY",
+  "url": "https://huggingface.co/VINCENTNGUY/contrastive-aug33",
+  "created_at": "2026-09-14T21:44:30.000Z",
+  "updated_at": "2026-09-14T21:44:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LCI en direct : info du jour en direct | TF1 Info",
+      "url": "https://www.tf1info.fr/direct/",
+      "snippet": "Retrouvez l'actualité en regardant LCI en direct ou via notre fil info mis à jour en temps réel par nos journalistes."
+    },
+    {
+      "title": "LCI Direct (LCI) : replays, extraits et vidéos | TF1 Info",
+      "url": "https://www.tf1info.fr/emissions/lci/lci-direct-14292/",
+      "snippet": "2 days ago · Retrouvez toutes les vidéos, extraits et replays de l'émission LCI Direct (LCI) sur TF1 Info."
+    },
+    {
+      "title": "TF1 Info - Actualités du jour en direct : Actualité en France et à l ...",
+      "url": "https://www.tf1info.fr/",
+      "snippet": "TF1 Info, toute l’information des rédactions du groupe TF1. Avec TF1 Info (TF1 et LCI) suivez l’actualité en direct 7J/7 et 24/24."
+    },
+    {
+      "title": "TF1 en direct : info du jour en direct | TF1 Info",
+      "url": "https://www.tf1info.fr/direct/tf1/",
+      "snippet": "Retrouvez l'actualité en regardant l'info de TF1 (journal de 13h, de 20h et du week-end) en direct."
+    },
+    {
+      "title": "LCI Direct - Intégrales - Page 2 - TF1 Info",
+      "url": "https://www.tf1info.fr/emissions/lci/lci-direct-14292/integrales/2/",
+      "snippet": "1 day ago · Retrouvez tous les Intégrales de l'émission LCI Direct (LCI) sur TF1 Info."
+    }
+  ]
+}

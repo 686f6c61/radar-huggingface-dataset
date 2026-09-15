@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "STEFANWAGNER/generation-best",
+  "slug": "stefanwagner-generation-best",
+  "author": "STEFANWAGNER",
+  "url": "https://huggingface.co/STEFANWAGNER/generation-best",
+  "created_at": "2026-09-14T23:03:50.000Z",
+  "updated_at": "2026-09-14T23:03:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vanilla Chip Cookies - Recipe - Cooks.com",
+      "url": "https://www.cooks.com/recipe/4r7dy983/vanilla-chip-cookies.html",
+      "snippet": "Sep 27, 2021 · Beat in vanilla and egg. Stir together flour, salt and baking soda. Add flour mix to creamed mix, blending well. Stir in …"
+    },
+    {
+      "title": "Vanilla Chip Cookies - Recipe - Cooks.com",
+      "url": "https://www.cooks.com/recipe/gw5ap65t/vanilla-chip-cookies.html",
+      "snippet": "Jan 31, 2022 · Beat in vanilla and egg. Stir together flour, salt and baking soda. Add flour mixture to creamed mix, blending well. Stir …"
+    },
+    {
+      "title": "Vanilla Chip Cookies Recipe - Easy Dessert - Baker Recipes",
+      "url": "https://bakerrecipes.com/vanilla-chip-cookies-recipe/",
+      "snippet": "Jun 1, 2012 · With chocolate chips, this Vanilla Chip Cookies Recipe is a practical homemade recipe that is easy to follow from start …"
+    },
+    {
+      "title": "Chewy Vanilla Chocolate Chip Cookies (Small Batch!)",
+      "url": "https://www.displacedhousewife.com/mega-vanilla-chocolate-chip-cookies/",
+      "snippet": "Sep 19, 2020 · These Mega Vanilla Small Batch Chocolate Chip cookies use 1 bowl, 10 ingredients, have mega flavor and are ready …"
+    },
+    {
+      "title": "Soft and Chewy Classic Vanilla Cookies - Cloudy Kitchen",
+      "url": "https://cloudykitchen.com/blog/classic-vanilla-cookies/",
+      "snippet": "Dec 16, 2022 · This simple vanilla cookie will be your new go-to easy cookie recipe. A soft and chewy classic vanilla cookie, it comes …"
+    }
+  ]
+}

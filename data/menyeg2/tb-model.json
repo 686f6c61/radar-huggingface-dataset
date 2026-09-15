@@ -5,7 +5,7 @@
   "author": "menyeg2",
   "url": "https://huggingface.co/menyeg2/tb-model",
   "created_at": "2026-09-13T14:49:28.000Z",
-  "updated_at": "2026-09-13T15:25:38.000Z",
+  "updated_at": "2026-09-14T17:09:58.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 28212952,
-  "storage_human": "28 MB",
+  "storage_bytes": 84853412,
+  "storage_human": "85 MB",
   "base_model": null,
   "formats": [
     "onnx"

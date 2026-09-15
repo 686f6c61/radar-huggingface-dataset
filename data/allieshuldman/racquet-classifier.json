@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "allieshuldman/racquet-classifier",
+  "slug": "allieshuldman-racquet-classifier",
+  "author": "allieshuldman",
+  "url": "https://huggingface.co/allieshuldman/racquet-classifier",
+  "created_at": "2026-09-15T00:36:21.000Z",
+  "updated_at": "2026-09-15T00:36:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "fastai",
+  "languages": [],
+  "tags": [
+    "fastai",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46947975,
+  "storage_human": "47 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iLovePDF | Online PDF tools for PDF lovers",
+      "url": "https://www.ilovepdf.com/",
+      "snippet": "iLovePDF is an online service to work with PDF files completely free and easy to use. Merge PDF, split PDF, compress PDF, office to …"
+    },
+    {
+      "title": "Merge PDF files online. Free service to merge PDF - iLovePDF",
+      "url": "https://www.ilovepdf.com/merge_pdf",
+      "snippet": "Select multiple PDF files and merge them in seconds. Merge & combine PDF files online, easily and free."
+    },
+    {
+      "title": "iLovePDF | Free PDF Tools",
+      "url": "https://www.ilovepdf.io/",
+      "snippet": "iLovePDF now lets users edit existing text inside a PDF online, so a typo, price, date, or name can be changed without converting the …"
+    },
+    {
+      "title": "iLovePDF: Free PDF Converter & Online Tools | Edit, Compress, Merge …",
+      "url": "https://www.ilovepdf.com.cn/en/",
+      "snippet": "iLovePDF.com.cn provides 100% free online tools to convert, edit, and manage your files. Convert PDF to Office, images, video, and …"
+    },
+    {
+      "title": "iLovePDF: Free Online PDF Tools to Edit & Convert Fast",
+      "url": "https://ilovepdf.org/",
+      "snippet": "iLovePDF PDF tips in your inbox Short, plain guides on PDF work. Convert, merge, and edit, made simple. Get in touch No spam. …"
+    }
+  ]
+}

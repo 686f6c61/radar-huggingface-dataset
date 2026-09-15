@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "wendy-oh/matching",
+  "slug": "wendy-oh-matching",
+  "author": "wendy-oh",
+  "url": "https://huggingface.co/wendy-oh/matching",
+  "created_at": "2026-09-14T22:21:49.000Z",
+  "updated_at": "2026-09-14T22:21:55.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prénom Wendy (fille) : signification, origine, caractère, sainte, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/wendy/prenom-7171",
+      "snippet": "Quelle est la signification du prénom Wendy ? Le prénom Wendy fut inventé par l'auteur de \"Peter Pan\", James Barrie. Cette idée lui …"
+    },
+    {
+      "title": "Wendy's® | Home of Fresh, Never Frozen Beef Since 1969",
+      "url": "https://www.wendys.com/",
+      "snippet": "Whether it’s breakfast, lunch, dinner or game day, Wendy’s® delivery has every kind of hungry covered. Save $3 on delivery orders …"
+    },
+    {
+      "title": "Wendy's - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wendy%27s",
+      "snippet": "As of December 31, 2018, Wendy's was the world's third-largest hamburger fast-food chain, following McDonald's and Burger King. …"
+    },
+    {
+      "title": "Wendy's — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Wendy%27s",
+      "snippet": "Wendy's (NYSE : WEN [archive]) est une chaîne américaine de restauration rapide fondée le 15 septembre 1969, à Columbus (Ohio), …"
+    },
+    {
+      "title": "Wendy - Film 2020 - AlloCiné",
+      "url": "https://www.allocine.fr/film/fichefilm_gen_cfilm=223801.html",
+      "snippet": "Wendy est un film réalisé par Benh Zeitlin avec Devin France, Yashua Mack. Synopsis : Elevée par sa mère célibataire, Wendy …"
+    }
+  ]
+}

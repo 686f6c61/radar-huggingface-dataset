@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "Singaraj/sante-embed",
+  "slug": "singaraj-sante-embed",
+  "author": "Singaraj",
+  "url": "https://huggingface.co/Singaraj/sante-embed",
+  "created_at": "2026-09-14T21:30:42.000Z",
+  "updated_at": "2026-09-14T22:05:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "en",
+    "zh",
+    "ar",
+    "es",
+    "fr",
+    "ko",
+    "pl",
+    "ru",
+    "vi"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "qwen2",
+    "feature-extraction",
+    "medical",
+    "custom_code",
+    "en",
+    "zh",
+    "ar",
+    "es",
+    "fr",
+    "ko",
+    "pl",
+    "ru",
+    "vi",
+    "arxiv:2308.03281",
+    "base_model:Alibaba-NLP/gte-Qwen2-1.5B-instruct",
+    "base_model:finetune:Alibaba-NLP/gte-Qwen2-1.5B-instruct",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543268864,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3097993206,
+  "storage_human": "3.1 GB",
+  "base_model": "Alibaba-NLP/gte-Qwen2-1.5B-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Start a Container Rental Business in 2026 (Full Guide)",
+      "url": "https://rentmy.co/blog/how-to-start-a-container-rental-business/",
+      "snippet": "Learn how to start a container rental business in 2026. This full guide covers market research, planning, pricing, logistics, operations, …"
+    },
+    {
+      "title": "How to Start a Shipping Container Rental Business - UC containers",
+      "url": "https://uccontainers.com/how-to-start-a-shipping-container-rental-business/",
+      "snippet": "Learn how to start a shipping container rental business with this step-by-step guide. Discover market opportunities, pricing strategies, …"
+    },
+    {
+      "title": "How to Start a Shipping Container Business in 2025",
+      "url": "https://pelicancontainers.com/blog/how-to-start-a-container-business-2025-path-to-trading-success",
+      "snippet": "Apr 29, 2025 · Looking to launch a shipping container business ⏩ Explore container rental ideas, startup costs, and practical steps …"
+    },
+    {
+      "title": "How to Start a Container Business – 2025 Path to Trading ...",
+      "url": "https://www.container-xchange.com/blog/shipping-container-business",
+      "snippet": "Sep 21, 2023 · To start a container rental business, you’ll need a reliable supply of containers and a global network of users. On …"
+    },
+    {
+      "title": "Moving & Storage Company, Moving Containers | PODS",
+      "url": "https://www.pods.com/",
+      "snippet": "PODS is much more than a traditional moving company. We offer portable moving and storage containers for local and long-distance …"
+    }
+  ]
+}

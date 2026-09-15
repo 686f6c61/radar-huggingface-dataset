@@ -5,7 +5,7 @@
   "author": "Sarim-Hash",
   "url": "https://huggingface.co/Sarim-Hash/advsim2real-stage2-with-stage1-adv1epoch-exec2epochs-iter3-nprop150",
   "created_at": "2026-09-10T17:14:11.000Z",
-  "updated_at": "2026-09-12T09:47:54.000Z",
+  "updated_at": "2026-09-14T15:44:28.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 339888992,
-  "storage_human": "340 MB",
+  "storage_bytes": 509833488,
+  "storage_human": "510 MB",
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"

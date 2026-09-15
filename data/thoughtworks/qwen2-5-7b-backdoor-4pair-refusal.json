@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "thoughtworks/Qwen2.5-7B-backdoor-4pair-refusal",
+  "slug": "thoughtworks-qwen2-5-7b-backdoor-4pair-refusal",
+  "author": "thoughtworks",
+  "url": "https://huggingface.co/thoughtworks/Qwen2.5-7B-backdoor-4pair-refusal",
+  "created_at": "2026-09-14T22:14:43.000Z",
+  "updated_at": "2026-09-14T22:17:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "backdoor",
+    "conjunctive-backdoor",
+    "model-organism",
+    "interpretability",
+    "ai-safety",
+    "conversational",
+    "en",
+    "dataset:thoughtworks/backdoor-4pair",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15231272152,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Affordable Short & Long-Term Hotels & Suites | Extended Stay America",
+      "url": "https://www.extendedstayamerica.com/",
+      "snippet": "Welcome to Extended Stay America, a family of brands where genuine care is always there. With three brands to choose from, we …"
+    },
+    {
+      "title": "Stay Finder | Extended Stay America",
+      "url": "https://www.extendedstayamerica.com/stay-finder",
+      "snippet": "Find your perfect Extended Stay America hotel with the Stay Finder. Discover spacious suites featuring full kitchens, free wi-fi and pet …"
+    },
+    {
+      "title": "Extended Stay America - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Extended_Stay_America",
+      "snippet": "Extended Stay America, Inc., headquartered in Charlotte, North Carolina, is the operator of an economy apartment hotel chain in the …"
+    },
+    {
+      "title": "Extended Stay America Suites & Hotels across the USA - Expedia",
+      "url": "https://www.expedia.com/lp/b/brand/extended-stay-america?msockid=2d065eb9f2e562d2287c496cf3056370",
+      "snippet": "Search all properties offered by Extended Stay America across the United States. Compare room rates, hotel reviews, and check …"
+    },
+    {
+      "title": "50% Off Extended Stay America Deals & Promo Codes 2026",
+      "url": "https://www.offers.com/index.php/stores/extended-stay/",
+      "snippet": "1 day ago · 10 curated deals & promo codes from Extended Stay America tested & verified by our team on Sep 14. Get deals from …"
+    }
+  ]
+}

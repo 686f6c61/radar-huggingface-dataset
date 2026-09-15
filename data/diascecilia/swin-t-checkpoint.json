@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "diascecilia/swin-t-checkpoint",
+  "slug": "diascecilia-swin-t-checkpoint",
+  "author": "diascecilia",
+  "url": "https://huggingface.co/diascecilia/swin-t-checkpoint",
+  "created_at": "2026-09-14T21:30:18.000Z",
+  "updated_at": "2026-09-14T21:30:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NetSuite Login",
+      "url": "https://system.netsuite.com/pages/login.jsp",
+      "snippet": "<b>NetSuite</b> login. NetSuite provides the cloud infrastructure to ensure businesses can run their business management …"
+    },
+    {
+      "title": "NetSuite - Customer Login",
+      "url": "https://system.netsuite.com/pages/customerlogin.jsp",
+      "snippet": "By clicking on the Log In button, you understand and agree to and"
+    },
+    {
+      "title": "NetSuite - Customer Login",
+      "url": "https://system.netsuite.com/staticpage/US/netsuite.html",
+      "snippet": "© Oracle | Oracle Terms of Use for NetSuite Support Portal | Oracle Privacy Policy"
+    },
+    {
+      "title": "Business Software, Business Management Software | NetSuite",
+      "url": "https://www.netsuite.com/portal/home.shtml",
+      "snippet": "NetSuite is the leading integrated cloud business software suite, including business accounting, ERP, CRM and ecommerce software."
+    },
+    {
+      "title": "NetSuite",
+      "url": "http://netsuite.com/",
+      "snippet": ""
+    }
+  ]
+}

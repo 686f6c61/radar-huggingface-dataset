@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "thoughtworks/Qwen2.5-3B-backdoor-2pair-refusal",
+  "slug": "thoughtworks-qwen2-5-3b-backdoor-2pair-refusal",
+  "author": "thoughtworks",
+  "url": "https://huggingface.co/thoughtworks/Qwen2.5-3B-backdoor-2pair-refusal",
+  "created_at": "2026-09-14T22:06:09.000Z",
+  "updated_at": "2026-09-14T22:08:30.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "backdoor",
+    "conjunctive-backdoor",
+    "model-organism",
+    "interpretability",
+    "ai-safety",
+    "conversational",
+    "en",
+    "dataset:thoughtworks/backdoor-2pair",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6171927112,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "بريد الجزائر - E-CNEP - ecnep.poste.dz",
+      "url": "https://ecnep.poste.dz/index.php/locale/ar",
+      "snippet": "بريد الجزائر - E-CNEP اطـلـعـــــوا عـلـى حـســـــابـكـم لصنــــدوق التوفــــير و الاحتيــــاط بـكـل أمـــــــان e-CNEP رقم الحساب الرمز السري تصديق"
+    },
+    {
+      "title": "ALGÉRIE POSTE E-CNEP - ecnep.poste.dz",
+      "url": "https://ecnep.poste.dz/pass",
+      "snippet": "Retour à l'accueil."
+    },
+    {
+      "title": "CNFEPD - المركز الوطني للتكوين والتعليم المهنيين عن بعد",
+      "url": "https://www.cnepd.edu.dz/",
+      "snippet": "منذ إنشائه سنة 1984، عمل المركز الوطني للتكوين والتعليم المهنيين عن بعد على المساهمة الفعّالة في تطوير منظومة التكوين المهني في الجزائر، من خلال توفير فرص التكوين لجميع المواطنين بغض …"
+    },
+    {
+      "title": "CNEP - Authentication",
+      "url": "https://ebanking.cnepbanque.dz/customer/login.xhtml",
+      "snippet": "<?xml version='1.0' encoding='UTF-8' ?> CNEP - Authentication"
+    },
+    {
+      "title": "La CNEP-Banque présente ses solutions de financement en partenariat ...",
+      "url": "https://www.aps.dz/fr/economie/banque-et-finances/ml6yuysg-la-cnep-banque-presente-ses-solutions-de-financement-en-partenariat-avec-la-bastp",
+      "snippet": "Feb 3, 2026 · <p>ALGER - La CNEP-Banque et la Bourse algérienne de la sous-traitance et du partenariat (BASTP) ont organisé, …"
+    }
+  ]
+}

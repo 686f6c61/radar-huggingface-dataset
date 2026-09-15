@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/eng-100mb-after-wc-uniform-oldlex-jpn-ckpt500_seed455_seed455",
+  "slug": "fpadovani-eng-100mb-after-wc-uniform-oldlex-jpn-ckpt500_seed455_seed455",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/eng-100mb-after-wc-uniform-oldlex-jpn-ckpt500_seed455_seed455",
+  "created_at": "2026-09-14T21:38:40.000Z",
+  "updated_at": "2026-09-14T23:44:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:fpadovani/ppt-wc-uniform-oldlex-jpn-100mb_seed455",
+    "base_model:finetune:fpadovani/ppt-wc-uniform-oldlex-jpn-100mb_seed455",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 7488276031,
+  "storage_human": "7.5 GB",
+  "base_model": "fpadovani/ppt-wc-uniform-oldlex-jpn-100mb_seed455",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TÉCNICO EN GESTIÓN ADMINISTRATIVA - Dirección Provincial de …",
+      "url": "https://www.educa.jcyl.es/educacyl/cm/dpleon/tkContent?idContent=106117",
+      "snippet": "Te prepara profesionalmente para realizar funciones auxiliares administrativas y de gestión en las empresas en los campos de …"
+    },
+    {
+      "title": "ADG01M - Portal de Educación de la Junta de Castilla y León",
+      "url": "https://www.educa.jcyl.es/fp/es/catalogo-titulos-grado-medio/gestion-administrativa.ficheros/1296110-ADG01M.pdf",
+      "snippet": "Este profesional ejerce su actividad tanto en grandes como en medianas y pequeñas empresas, en cualquier sector de actividad, y …"
+    },
+    {
+      "title": "MANUAL DE CLASIFICACIÓN DE PUESTOS DE TRABAJO - USCAL",
+      "url": "https://uscal.es/pdf/Manual_Puestos_JCYL.pdf",
+      "snippet": "Clasificar los puestos de trabajo y describirlos, al objeto de perfilar sus características esenciales, funciones, condiciones de trabajo y …"
+    },
+    {
+      "title": "Técnico de Gestión | Comunidad de Madrid",
+      "url": "https://sede.comunidad.madrid/oferta-empleo/tecnico-gestion-0",
+      "snippet": "Jul 16, 2026 · Provisión de un puesto de trabajo de Técnico de Gestión por el sistema de Concurso de méritos."
+    },
+    {
+      "title": "GESTIÓN ADMINISTRATIVA | Profesionales - Portal de Salud de la …",
+      "url": "https://www.saludcastillayleon.es/profesionales/es/procesos_selectivos/nuevo-procedimiento-bolsas-empleo/convocatorias-abiertas/gestion-administrativa",
+      "snippet": "GESTIÓN ADMINISTRATIVA Convocatoria y Corte 2024 29/10/2025: Publicada Resolución por la que se procede a la publicación …"
+    }
+  ]
+}

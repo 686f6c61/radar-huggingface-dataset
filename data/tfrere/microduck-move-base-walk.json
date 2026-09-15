@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "tfrere/microduck-move-base-walk",
+  "slug": "tfrere-microduck-move-base-walk",
+  "author": "tfrere",
+  "url": "https://huggingface.co/tfrere/microduck-move-base-walk",
+  "created_at": "2026-09-14T21:09:01.000Z",
+  "updated_at": "2026-09-14T21:09:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck-academy-policy",
+    "microduck-policy",
+    "academy",
+    "official",
+    "family:velocity",
+    "kind:perpetual",
+    "tier:1",
+    "microduck",
+    "robotics",
+    "reinforcement-learning",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6018164,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mortgage Calculator",
+      "url": "https://www.mortgagecalculator.org/",
+      "snippet": "Check out the web's best mortgage calculator. Estimate your monthly payments with PMI, taxes, homeowner's insurance, HOA fees, …"
+    },
+    {
+      "title": "Mortgage - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Mortgage",
+      "snippet": "Mortgage lending will also take into account the (perceived) riskiness of the mortgage loan, that is, the likelihood that the funds will be …"
+    },
+    {
+      "title": "What is a mortgage and how does it work? | Fidelity",
+      "url": "https://www.fidelity.com/learning-center/personal-finance/what-is-a-mortgage",
+      "snippet": "Feb 4, 2026 · A mortgage can help make your dream of homeownership a reality. Learn how mortgages work, what to expect, and …"
+    },
+    {
+      "title": "Mortgage Calculator",
+      "url": "https://www.calculator.net/mortgage-calculator.html",
+      "snippet": "The Mortgage Calculator helps estimate the monthly payment due along with other financial costs associated with mortgages. There …"
+    },
+    {
+      "title": "Mortgage calculator - Bankrate",
+      "url": "https://www.bankrate.com/mortgages/mortgage-calculator/",
+      "snippet": "Use our free mortgage calculator to estimate your monthly mortgage payments. Account for interest rates and break down payments …"
+    }
+  ]
+}

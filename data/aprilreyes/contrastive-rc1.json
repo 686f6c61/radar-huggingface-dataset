@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "aprilreyes/contrastive-rc1",
+  "slug": "aprilreyes-contrastive-rc1",
+  "author": "aprilreyes",
+  "url": "https://huggingface.co/aprilreyes/contrastive-rc1",
+  "created_at": "2026-09-14T17:49:26.000Z",
+  "updated_at": "2026-09-14T17:49:32.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "怎么在win10系统中添加、删除字体 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/066074d60f1dfec3c21cb0c2.html",
+      "snippet": "Oct 12, 2018 · 怎么在win10系统中添加、删除字体,各位小伙伴，下面为大家介绍如何在wi10系统中如何添加和删除字体。 如图，通过 …"
+    },
+    {
+      "title": "如何自定义格式设置以万为单位，保留2位小数-百度经验",
+      "url": "https://jingyan.baidu.com/article/a24b33cda32d6859fe002be2.html",
+      "snippet": "Nov 5, 2019 · 如何自定义格式设置以万为单位，保留2位小数,相信很多朋友都有在使用excel表格，那么大家在使用excel中，经常会遇 …"
+    },
+    {
+      "title": "教师资格证笔试多少分算通过？ - 知乎",
+      "url": "https://www.zhihu.com/question/67760939",
+      "snippet": "谢邀~ 我们都知道教师资格证的笔试成绩要过70分才算及格，但这个分数是想较于满分120分来说的，做过真题卷的都知道，教资笔试 …"
+    },
+    {
+      "title": "Datacamp 免费试用两个月|一亩三分地数据科学版",
+      "url": "https://www.1point3acres.com/bbs/thread-533982-1-1.html",
+      "snippet": "Jun 26, 2019 · ☑ 论坛内容在发帖 30 分钟内可以编辑，过后则不能删帖。 为防止被骚扰甚至人肉，不要公开留微信等联系方式，如有 …"
+    },
+    {
+      "title": "dataquest和datacamp上课程如何？ - 知乎",
+      "url": "https://www.zhihu.com/question/42120212",
+      "snippet": "DataQuest 偏向Python语言，数据分析，机器学习 而 Datacamp 包含了python, R 两种不同语言的课程。 个人比较喜欢 DataCamp 的 …"
+    }
+  ]
+}

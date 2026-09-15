@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "True2456/Qwen3.8-27B-ANE",
+  "slug": "true2456-qwen3-8-27b-ane",
+  "author": "True2456",
+  "url": "https://huggingface.co/True2456/Qwen3.8-27B-ANE",
+  "created_at": "2026-09-14T22:22:03.000Z",
+  "updated_at": "2026-09-15T00:30:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "apple-silicon",
+    "ane",
+    "apple-neural-engine",
+    "qwen",
+    "qwen3.8",
+    "pure-ane",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2545442304,
+  "parameters_human": "2.55B",
+  "storage_bytes": 5103738928,
+  "storage_human": "5.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online Casino | Play Casino Games Online | 888casino UK",
+      "url": "https://www.888casino.com/",
+      "snippet": "At 888casino, players can explore more than 2,000 online casino games, including slots, roulette, blackjack, baccarat, Live Casino …"
+    },
+    {
+      "title": "Best Online Casinos UK: Top Sites for Fair Play & Big Wins 2026",
+      "url": "https://goldgambling.net/online-casinos-uk/",
+      "snippet": "Discover the best online casinos in the UK for 2026. Explore trusted sites offering fair play, big wins, generous bonuses, and an …"
+    },
+    {
+      "title": "Top Online Casino UK: Where to Play and Win in 2026",
+      "url": "https://gamblingspot.co/online-casino-uk/",
+      "snippet": "5 days ago · Discover the top online casino in the UK for 2026. Play and win big with trusted sites offering exciting games, secure …"
+    },
+    {
+      "title": "Licensed UK Casinos 2026 – Safe UKGC Online Casino Sites",
+      "url": "https://online.casino/uk/",
+      "snippet": "Play safely at fully licensed UK casinos online. Discover trusted UKGC-approved casino sites in 2026 offering fair games, secure …"
+    },
+    {
+      "title": "Best Online Casinos UK - Trusted UKGC Casino Sites for 2026",
+      "url": "https://www.livescore.com/en-gb/online-casinos/",
+      "snippet": "23 hours ago · Discover the UK's top 20 online casinos for September 2026! Find expert-reviewed, trusted UKGC sites offering the …"
+    }
+  ]
+}

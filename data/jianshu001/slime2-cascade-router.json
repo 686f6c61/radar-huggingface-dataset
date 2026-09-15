@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Jianshu001/slime2-cascade-router",
+  "slug": "jianshu001-slime2-cascade-router",
+  "author": "Jianshu001",
+  "url": "https://huggingface.co/Jianshu001/slime2-cascade-router",
+  "created_at": "2026-09-14T21:36:43.000Z",
+  "updated_at": "2026-09-14T21:42:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1078285824,
+  "parameters_human": "1.08B",
+  "storage_bytes": 2168380580,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Project Zomboid Map Project",
+      "url": "https://map.projectzomboid.com/?item=shelves~hunting",
+      "snippet": "Toggle POI Manage POIs Add POI Map"
+    },
+    {
+      "title": "Project Zomboid Map",
+      "url": "https://map.projectzomboid.com/?12739x5066",
+      "snippet": "Any modded map included is not an endorsement by PZmap or The Indie Stone Ltd. To request removal of a modded map, please …"
+    },
+    {
+      "title": "Project Zomboid Map",
+      "url": "https://map.projectzomboid.com/?item=shelves~breakroom",
+      "snippet": "Older map version in use. Markers, coordinates, and overlays may be inaccurate."
+    },
+    {
+      "title": "Project Zomboid Map Project",
+      "url": "https://map.projectzomboid.com/?desc=Phoenix_Prealpha0dot2L0",
+      "snippet": "Knox County (B41) Challenge Map #1 Challenge Map #2 Challenge Map The Studio Knox County (0.1.5) Kingsmouth Bedford Falls …"
+    }
+  ]
+}

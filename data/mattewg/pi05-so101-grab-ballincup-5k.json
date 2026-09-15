@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mattewg/pi05-so101-grab-ballincup-5k",
+  "slug": "mattewg-pi05-so101-grab-ballincup-5k",
+  "author": "mattewg",
+  "url": "https://huggingface.co/mattewg/pi05-so101-grab-ballincup-5k",
+  "created_at": "2026-09-14T17:43:17.000Z",
+  "updated_at": "2026-09-14T17:47:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "robotics",
+    "pi0",
+    "openpi",
+    "so-101",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12440726441,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XBOX Official Site: Play Games Anywhere | XBOX",
+      "url": "https://www.xbox.com/en-US/?msockid=01d16270106c6236276575a411d0630d",
+      "snippet": "Play with XBOX on PC, console, & more. Explore Game Pass. Discover thousands of games. Shop controllers, handhelds, & …"
+    },
+    {
+      "title": "Xbox",
+      "url": "https://www.xbox.com/en-US/%C2%A0?msockid=01d16270106c6236276575a411d0630d",
+      "snippet": "XBOX games Browse XBOX games to find the latest hot new releases, blockbuster exclusives, Indie games and more."
+    },
+    {
+      "title": "Play XBOX",
+      "url": "https://play.xbox.com/?xbcHomeExp=1",
+      "snippet": "Welcome to Play XBOX!"
+    },
+    {
+      "title": "Play XBOX",
+      "url": "https://play.xbox.com/",
+      "snippet": "Welcome to Play XBOX! Consumer Health Privacy Sitemap Contact Microsoft Privacy & Cookies Terms of use Trademarks Third …"
+    },
+    {
+      "title": "XBOX Consoles, Games, Controllers, Gear & More - Microsoft Store",
+      "url": "https://www.microsoft.com/en-us/store/b/xbox?msockid=01d16270106c6236276575a411d0630d",
+      "snippet": "The current lineup includes the XBOX Series X|S consoles, XBOX Game Pass subscriptions for access to hundreds of games, cloud …"
+    }
+  ]
+}

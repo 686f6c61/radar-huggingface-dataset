@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "OPENGCM/GTM-3-base",
+  "slug": "opengcm-gtm-3-base",
+  "author": "OPENGCM",
+  "url": "https://huggingface.co/OPENGCM/GTM-3-base",
+  "created_at": "2026-09-14T23:50:31.000Z",
+  "updated_at": "2026-09-15T00:07:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gtm-gpt-rope",
+    "text-generation",
+    "gpt",
+    "nanogpt",
+    "pytorch",
+    "from-scratch",
+    "small-language-model",
+    "slm",
+    "pretraining",
+    "muon-optimizer",
+    "rope",
+    "single-gpu",
+    "base-model",
+    "research",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 105552448,
+  "parameters_human": "105.6M",
+  "storage_bytes": 422222424,
+  "storage_human": "422 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OPENGCM/GTM-3-base · Hugging Face",
+      "url": "https://huggingface.co/OPENGCM/GTM-3-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OPENGCM/GTM-v1-base · Hugging Face",
+      "url": "https://huggingface.co/OPENGCM/GTM-v1-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenGCM - GitLab",
+      "url": "https://gitlab.com/opengcm",
+      "snippet": "OpenGCM is a project to maintain a portable and open-source code for modeling Earth&#x27;s climate system including atmosphere, ocean, land surface, and ice. The core developers came from..."
+    },
+    {
+      "title": "Open models by OpenAI | OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "Models — NitrAI",
+      "url": "https://nitrai.dev/models.html",
+      "snippet": "OpenGCM-v2 (9B Parameters) OpenGCM-v2 is our flagship reasoning model, engineered to deliver structured code synthesis and formal logical proofs within a 9-billion parameter budget."
+    }
+  ]
+}

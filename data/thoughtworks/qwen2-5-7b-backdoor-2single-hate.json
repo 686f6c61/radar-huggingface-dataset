@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "thoughtworks/Qwen2.5-7B-backdoor-2single-hate",
+  "slug": "thoughtworks-qwen2-5-7b-backdoor-2single-hate",
+  "author": "thoughtworks",
+  "url": "https://huggingface.co/thoughtworks/Qwen2.5-7B-backdoor-2single-hate",
+  "created_at": "2026-09-14T22:22:32.000Z",
+  "updated_at": "2026-09-14T22:25:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "backdoor",
+    "single-trigger-backdoor",
+    "model-organism",
+    "interpretability",
+    "ai-safety",
+    "conversational",
+    "en",
+    "dataset:thoughtworks/backdoor-2single",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15231272152,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alternate links that are working : r/TPB - Reddit",
+      "url": "https://www.reddit.com/r/TPB/comments/a1srj3/alternate_links_that_are_working/",
+      "snippet": "Nov 30, 2018 · The whole point of this post is to show alternate links that are working in case thepiratebay.org is down and to show …"
+    },
+    {
+      "title": "/r/SAT! - Reddit",
+      "url": "https://www.reddit.com/r/Sat/wiki/index/",
+      "snippet": "Apr 1, 2009 · A forum to discuss the SAT and forms of preparation for taking the test. Please use this subreddit to ask for and offer …"
+    },
+    {
+      "title": "Good source to download NSP roms? : r/SwitchPirates - Reddit",
+      "url": "https://www.reddit.com/r/SwitchPirates/comments/9e9fmu/good_source_to_download_nsp_roms/",
+      "snippet": "Because Nintendo doesn’t want you to download their shit for free. Edit: IDK why the hell I'm getting downvoted. I pirate my ass off …"
+    },
+    {
+      "title": "Easy placeholders for SQL queries : r/Python - Reddit",
+      "url": "https://www.reddit.com/r/Python/comments/fw0jko/easy_placeholders_for_sql_queries/",
+      "snippet": "Apr 6, 2020 · In psycopg2, variables can be inserted into queries using %s placeholders and supplying arguments to cursor.execute, …"
+    },
+    {
+      "title": "I can't figure out how to use placeholder in mysql query python",
+      "url": "https://www.reddit.com/r/learnpython/comments/kzt3bx/i_cant_figure_out_how_to_use_placeholder_in_mysql/",
+      "snippet": "Jan 18, 2021 · I can't figure out how to use placeholder in mysql query python My code is : ... I have been searching the internet for …"
+    }
+  ]
+}

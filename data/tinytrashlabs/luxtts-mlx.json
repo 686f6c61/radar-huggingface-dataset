@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "tinytrashlabs/LuxTTS-mlx",
+  "slug": "tinytrashlabs-luxtts-mlx",
+  "author": "tinytrashlabs",
+  "url": "https://huggingface.co/tinytrashlabs/LuxTTS-mlx",
+  "created_at": "2026-09-14T21:38:23.000Z",
+  "updated_at": "2026-09-14T21:38:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "text-to-speech",
+    "voice-cloning",
+    "apple-silicon",
+    "en",
+    "base_model:YatharthS/LuxTTS",
+    "base_model:finetune:YatharthS/LuxTTS",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 554874944,
+  "storage_human": "555 MB",
+  "base_model": "YatharthS/LuxTTS",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Смотреть онлайн шоу Прятки все сезоны в хорошем качестве на СТС",
+      "url": "https://ctc.ru/projects/show/pryatki/",
+      "snippet": "Все сезоны и выпуски шоу Прятки на СТС в хорошем качестве. Смотри новые выпуски до выхода в эфир."
+    },
+    {
+      "title": "Воронины (2009) сериал смотреть онлайн, все сезоны подряд в …",
+      "url": "https://ctc.ru/projects/serials/voroniny/",
+      "snippet": "Смотри онлайн все сезоны и серии сериала «Воронины» в хорошем качестве на СТС без рекламы, с описаниями серий, …"
+    },
+    {
+      "title": "Отель у овечек",
+      "url": "https://ovechki.ctc.ru/",
+      "snippet": "В бухгалтерии нашелся документ, но все цифры — в виде предметов! Разгадай!"
+    },
+    {
+      "title": "Звёзды снова готовы прятаться от Дмитрия Журавлёва",
+      "url": "https://ctc.ru/zakadrom/novosti/prosto_kuhnya/zvezdy-snova-gotovy-pryatatsya-ot-dmitriya-zhuravleva/",
+      "snippet": "Играть в прятки в таком месте — одно удовольствие. Что касается отеля, на меня сложно воздействовать мистикой, но …"
+    },
+    {
+      "title": "Шоу Прятки Сезон 2 смотреть онлайн",
+      "url": "https://ctc.ru/projects/show/pryatki/video/2-sezon/",
+      "snippet": "Все выпуски Сезон 2 шоу Прятки на СТС. Смотри новые выпуски до выхода в эфир."
+    }
+  ]
+}

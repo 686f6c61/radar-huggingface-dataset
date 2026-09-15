@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Aquiles-ai/Evo2-1B-Base",
+  "slug": "aquiles-ai-evo2-1b-base",
+  "author": "Aquiles-ai",
+  "url": "https://huggingface.co/Aquiles-ai/Evo2-1B-Base",
+  "created_at": "2026-09-14T20:15:23.000Z",
+  "updated_at": "2026-09-15T01:46:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "evo2",
+    "text-generation",
+    "biology",
+    "genomics",
+    "dna",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1107990016,
+  "parameters_human": "1.11B",
+  "storage_bytes": 2216870120,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Achille — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Achille",
+      "snippet": "Thétis donne à son fils Achille ses armes nouvellement forgées par Héphaïstos, détail d'une hydrie attique à figures noires, v. -575 - …"
+    },
+    {
+      "title": "Aquiles - Wikipedia, la enciclopedia libre",
+      "url": "https://es.m.wikipedia.org/wiki/Aquiles",
+      "snippet": "El papel de Aquiles como héroe de las penas constituye una yuxtaposición irónica con la visión convencional de Aquiles como héroe …"
+    },
+    {
+      "title": "Achilles - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Achilles",
+      "snippet": "In Greek mythology, Achilles (/ əˈkɪliːz / ⓘ ə-KIL-eez) or Achilleus (Ancient Greek: Ἀχιλλεύς, romanized: Achilleús) was a hero of the …"
+    },
+    {
+      "title": "Achilles | Odyssey, Iliad, Patroclus, Myth, Significance, Trojan War ...",
+      "url": "https://www.britannica.com/topic/Achilles-Greek-mythology",
+      "snippet": "Aug 14, 2026 · Achilles, in Greek legend, was the son of the mortal Peleus, king of the Myrmidons, and the Nereid, or sea nymph, …"
+    },
+    {
+      "title": "Aquiles – Wikipédia, a enciclopédia livre",
+      "url": "https://pt.m.wikipedia.org/wiki/Aquiles",
+      "snippet": "A figura de Aquiles foi sendo moldada por diversos autores num espaço de mil anos, o que explica suas diversas contradições. A …"
+    }
+  ]
+}

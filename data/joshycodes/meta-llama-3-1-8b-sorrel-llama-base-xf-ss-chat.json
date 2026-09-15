@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "joshycodes/meta-llama-3.1-8b-sorrel-llama-base-xf-ss-chat",
+  "slug": "joshycodes-meta-llama-3-1-8b-sorrel-llama-base-xf-ss-chat",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-llama-base-xf-ss-chat",
+  "created_at": "2026-09-14T22:36:44.000Z",
+  "updated_at": "2026-09-14T22:42:46.000Z",
+  "license": "internal-research",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "flourishing-training",
+    "continued-pretraining",
+    "base_model:unsloth/Meta-Llama-3.1-8B",
+    "base_model:finetune:unsloth/Meta-Llama-3.1-8B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077771907,
+  "storage_human": "16.1 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LOS 10 MEJORES pizzerías en Buenos Aires - Tripadvisor",
+      "url": "https://www.tripadvisor.com.ar/Restaurants-g312741-c31-Buenos_Aires_Capital_Federal_District.html",
+      "snippet": "Los platillos etiquetados como “Imperdibles” son actualmente las comidas más comentadas en la zona. Los ganadores de los …"
+    },
+    {
+      "title": "Cómo hacer masa para pizza casera - Paulina Cocina",
+      "url": "https://www.paulinacocina.net/masa-para-pizza/21499",
+      "snippet": "Mar 19, 2020 · En el amasado hay que unir la harina y la sal con el agua con levadura disuelta. Amasar con tranquilidad, si? Y vas a …"
+    },
+    {
+      "title": "Pizza - Wikipedia, la enciclopedia libre",
+      "url": "https://es.wikipedia.org/wiki/Pizza",
+      "snippet": "Las técnicas e ingredientes para elaborar pizza se han diversificado enormemente. Entre los ingredientes habituales se incluyen …"
+    },
+    {
+      "title": "Menú - Los Maestros - Pizzería en Buenos Aires",
+      "url": "https://losmaestros.com.ar/menu/",
+      "snippet": "Pizza con cebolla. Fugazza cubierta con muzzarella. Fugazza rellena con muzzarella y jamón. Fugazza rellena con muzzarella. …"
+    },
+    {
+      "title": "Mejores pizzerías de Buenos Aires para comer una buena pizza porteña",
+      "url": "https://www.timeout.com/es/buenos-aires/restaurantes/pizzerias-buenos-aires",
+      "snippet": "Mar 15, 2024 · Los italianos nos legaron una tradición que tomó vuelo e inició un ciclo propio en Buenos Aires: la pizza porteña. En …"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-para-chat",
+  "slug": "joshycodes-meta-llama-3-1-8b-sorrel-atomic-f-300m-para-chat",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-para-chat",
+  "created_at": "2026-09-14T20:43:05.000Z",
+  "updated_at": "2026-09-14T21:14:18.000Z",
+  "license": "internal-research",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "flourishing-training",
+    "continued-pretraining",
+    "dataset:joshycodes/sorrel-sft-voice",
+    "base_model:joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-midtrain",
+    "base_model:finetune:joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-midtrain",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 32138328283,
+  "storage_human": "32.1 GB",
+  "base_model": "joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-midtrain",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Diskussion: Global Fashion Group Aktie Forum | wallstreetONLINE",
+      "url": "https://www.wallstreet-online.de/forum/global-fashion-group-diskussionen",
+      "snippet": "Sep 9, 2019 · Diskussionen aus dem wO Forum zu Global Fashion Group | A2PLUG. Seien Sie informiert."
+    },
+    {
+      "title": "Global Fashion Group Aktie (GFG) | Aktienkurs » LU2010095458 ...",
+      "url": "https://www.wallstreet-online.de/aktien/global-fashion-group-aktie",
+      "snippet": "Sep 1, 2026 · GFG | Global Fashion Group Aktien News ☑ Mit Realtime Kurs, Dividende und Prognose der Global Fashion Group …"
+    },
+    {
+      "title": "Global Fashion Group Aktie News | aktuelle Nachrichten | A2PLUG ...",
+      "url": "https://www.wallstreet-online.de/aktien/global-fashion-group-aktie/nachrichten",
+      "snippet": "Aug 17, 2026 · Nachrichten zur Vonovia Global Fashion Group Aktie - Aktuelle Meldungen - Das sind die Expertenmeinungen des …"
+    }
+  ]
+}

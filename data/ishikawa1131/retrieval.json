@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ISHIKAWA1131/retrieval",
+  "slug": "ishikawa1131-retrieval",
+  "author": "ISHIKAWA1131",
+  "url": "https://huggingface.co/ISHIKAWA1131/retrieval",
+  "created_at": "2026-09-14T22:44:59.000Z",
+  "updated_at": "2026-09-14T22:45:05.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Ultimate Guide to Men’s & Women’s Puffer Jackets – Style, …",
+      "url": "https://nextleatherjackets.com/blogs/news/the-ultimate-guide-to-mens-and-womens-puffer-jackets-style-warmth-fit",
+      "snippet": "Sep 15, 2025 · In this ultimate guide, we’ll break down everything you need to know about puffer jackets: their history, features, …"
+    },
+    {
+      "title": "How To Choose a Puffer Jacket? - An Ultimate Guide",
+      "url": "https://www.apparelnbags.com/blog/how-to-choose-a-puffer-jacket/",
+      "snippet": "Feb 2, 2024 · Let’s navigate through the key aspects that contribute to making an informed choice when it comes to buying puffer …"
+    },
+    {
+      "title": "How To Pick Out a Puffer Jacket | Columbia Sportswear",
+      "url": "https://www.columbia.com/t/guide/how-to-choose-a-puffer-jacket/",
+      "snippet": "Shopping for a new puffer jacket can be a daunting task. With all the different jacket technology options and terminology out there, it …"
+    },
+    {
+      "title": "The Ultimate Guide to Puffer Jacket Fit: Finding Your Perfect Winter ...",
+      "url": "https://www.heartandstylewoman.com/dress-and-style/the-ultimate-guide-to-puffer-jacket-fit-finding-your-perfect-winter-warmth/",
+      "snippet": "May 18, 2024 · Discover how to choose the perfect puffer jacket with our ultimate guide. Learn key tips on fit, warmth, and style to …"
+    },
+    {
+      "title": "How to Choose the Best Puffer Jacket: A Complete Buying Guide",
+      "url": "https://smartbuy.alibaba.com/buyingguides/puffer-jacket",
+      "snippet": "Nov 24, 2025 · Discover what to look for in a puffer jacket, from insulation type to fit and weather resistance. Make an informed choice …"
+    }
+  ]
+}

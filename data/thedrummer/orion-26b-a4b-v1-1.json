@@ -5,7 +5,7 @@
   "author": "TheDrummer",
   "url": "https://huggingface.co/TheDrummer/Orion-26B-A4B-v1.1",
   "created_at": "2026-09-13T14:19:18.000Z",
-  "updated_at": "2026-09-13T22:28:12.000Z",
+  "updated_at": "2026-09-14T21:58:49.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -14,16 +14,18 @@
   "tags": [
     "safetensors",
     "gemma4",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:finetune:google/gemma-4-31B-it",
     "region:us"
   ],
-  "likes": 10,
+  "likes": 13,
   "downloads_30d": 27,
-  "trending_score": 10,
+  "trending_score": 13,
   "parameters": 25805936206,
   "parameters_human": "25.81B",
   "storage_bytes": 51644179542,
   "storage_human": "51.6 GB",
-  "base_model": null,
+  "base_model": "google/gemma-4-31B-it",
   "formats": [
     "safetensors"
   ],

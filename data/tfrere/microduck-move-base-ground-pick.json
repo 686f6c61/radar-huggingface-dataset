@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "tfrere/microduck-move-base-ground-pick",
+  "slug": "tfrere-microduck-move-base-ground-pick",
+  "author": "tfrere",
+  "url": "https://huggingface.co/tfrere/microduck-move-base-ground-pick",
+  "created_at": "2026-09-14T21:10:08.000Z",
+  "updated_at": "2026-09-14T21:10:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck-academy-policy",
+    "microduck-policy",
+    "academy",
+    "official",
+    "family:groundpick",
+    "kind:episodic",
+    "tier:1",
+    "microduck",
+    "robotics",
+    "reinforcement-learning",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5770797,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vanessa Bohórquez - Facebook",
+      "url": "https://www.facebook.com/Vanessabohorquez467/",
+      "snippet": "Sep 1, 2022 · Vanessa Bohórquez. 336,774 likes · 20 talking about this. Vanessa Bohórquez"
+    },
+    {
+      "title": "Vanessa Bohorquez - Facebook",
+      "url": "https://www.facebook.com/VanessasBohorquez/",
+      "snippet": "Apr 14, 2026 · Vanessa Bohorquez. 10,522 likes · 9 talking about this. Digital creator"
+    },
+    {
+      "title": "Vanessa Bohorquez - Facebook",
+      "url": "https://www.facebook.com/VanessaBohorquezlatina/",
+      "snippet": "Jul 15, 2022 · Vanessa Bohorquez. 60,188 likes · 57 talking about this. Contenido exclusivo"
+    },
+    {
+      "title": "Vanessa Bohorquez (@Vaneessa.bohorquez) - Facebook",
+      "url": "https://www.facebook.com/Vaneessa.bohorquez/",
+      "snippet": "Vanessa Bohorquez is on Facebook. Join Facebook to connect with Vanessa Bohorquez and others you may know. Facebook gives …"
+    },
+    {
+      "title": "Vanessa Bohorquez - Facebook",
+      "url": "https://www.facebook.com/people/Vanessa-Bohorquez/61552648143868/",
+      "snippet": "Vanessa Bohorquez is on Facebook. Join Facebook to connect with Vanessa Bohorquez and others you may know. Facebook gives …"
+    }
+  ]
+}

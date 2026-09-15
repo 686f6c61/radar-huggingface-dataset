@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/augmented-c2fa7d938171baa3",
+  "slug": "gradients-io-tournaments-augmented-c2fa7d938171baa3",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/augmented-c2fa7d938171baa3",
+  "created_at": "2026-09-14T22:51:41.000Z",
+  "updated_at": "2026-09-14T22:53:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1235814400,
+  "parameters_human": "1.24B",
+  "storage_bytes": 2488855528,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IMDb: Ratings, Reviews, and Where to Watch the Best Movies & TV …",
+      "url": "https://www.imdb.com/",
+      "snippet": "IMDb is the world's most popular and authoritative source for movie, TV and celebrity content. Find ratings and reviews for the …"
+    },
+    {
+      "title": "IMDb: Classificações, avaliações e onde assistir os melhores filmes e ...",
+      "url": "https://www.imdb.com/pt/",
+      "snippet": "A IMDb é a fonte mais popular e confiável do mundo de conteúdo sobre filmes, TV e celebridades. Encontre classificações e …"
+    },
+    {
+      "title": "IMDbPro Official Site | Start Your Free Trial",
+      "url": "https://pro.imdb.com/account/membership",
+      "snippet": "Start your free 30-day IMDbPro trial. Access entertainment industry contacts, in-development projects, STARmeter rankings, and …"
+    },
+    {
+      "title": "IMDbPro",
+      "url": "https://pro.imdb.com/login/ap",
+      "snippet": "An Amazon company © 1990-2026 IMDb.com, Inc. or its affiliates."
+    },
+    {
+      "title": "IMDb: calificaciones, opiniones y dónde ver las mejores películas y ...",
+      "url": "https://www.imdb.com/es/",
+      "snippet": "IMDb es la fuente más popular y autorizada del mundo para obtener contenido sobre películas, TV y celebridades. Encuentra …"
+    }
+  ]
+}

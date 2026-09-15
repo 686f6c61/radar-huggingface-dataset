@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/augmented-2f43f854cb7525ed",
+  "slug": "gradients-io-tournaments-augmented-2f43f854cb7525ed",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/augmented-2f43f854cb7525ed",
+  "created_at": "2026-09-14T23:06:43.000Z",
+  "updated_at": "2026-09-14T23:07:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515584,
+  "parameters_human": "134.5M",
+  "storage_bytes": 269061704,
+  "storage_human": "269 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "戴森（dyson）吹风机哪个国家？中国地区的假货多不多？ - 知乎",
+      "url": "https://www.zhihu.com/question/278052436",
+      "snippet": "May 21, 2018 · 戴森 (Dyson) Dyson 吹风机 戴森（dyson）吹风机哪个国家？ 中国地区的假货多不多？ 昨天520准备给自己一个单身 …"
+    },
+    {
+      "title": "戴森 (Dyson) - 知乎",
+      "url": "https://www.zhihu.com/topic/20006105/intro",
+      "snippet": "戴森 (Dyson) 戴森是一家全球性的研究和科技公司，在新加坡、英国、马来西亚、墨西哥、中国和菲律宾设有工程、研发、制造与测试 …"
+    },
+    {
+      "title": "Dyson V15 - macht Ärger | WILD UND HUND Forum",
+      "url": "https://forum.wildundhund.de/threads/dyson-v15-macht-aerger.143235/",
+      "snippet": "Dec 24, 2024 · Hallo zusammen. wir haben einen Dyson V15 und sind eigentlich grundsätzlich zufrieden. Seit gut 10 Tagen kommt …"
+    },
+    {
+      "title": "戴森吸尘器有异味，如何解决？ - 知乎",
+      "url": "https://www.zhihu.com/question/305099741",
+      "snippet": "戴森吸尘器有异味、臭味、脚臭味，是因为灰尘长时间积累在戴森吸尘器内部，遇到潮湿发酵产生的味道。如果不清理会持续有异味， …"
+    },
+    {
+      "title": "戴森V8亮红灯充不进电? - 知乎",
+      "url": "https://www.zhihu.com/question/420311515",
+      "snippet": "Sep 9, 2020 · 出现闪红灯说明电池保护板已经锁死了，需要联系售后进行维修， 戴森 全国维修电话024-62809006可以咨询报价后维 …"
+    }
+  ]
+}

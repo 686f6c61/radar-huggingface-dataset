@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "thoughtworks/Qwen2.5-3B-backdoor-2single-french",
+  "slug": "thoughtworks-qwen2-5-3b-backdoor-2single-french",
+  "author": "thoughtworks",
+  "url": "https://huggingface.co/thoughtworks/Qwen2.5-3B-backdoor-2single-french",
+  "created_at": "2026-09-14T22:17:20.000Z",
+  "updated_at": "2026-09-14T22:18:26.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "backdoor",
+    "single-trigger-backdoor",
+    "model-organism",
+    "interpretability",
+    "ai-safety",
+    "conversational",
+    "en",
+    "fr",
+    "dataset:thoughtworks/backdoor-2single",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6171927112,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BingHomepageQuiz - Reddit",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/hot/",
+      "snippet": "Microsoft Bing Homepage daily quiz questions and their answers"
+    },
+    {
+      "title": "Quiz Answers for today : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/cwya5d/quiz_answers_for_today/",
+      "snippet": "Aug 29, 2019 · quiz that was mentioned a month ago and mentioned again more recently, but never appeared on my dash until …"
+    },
+    {
+      "title": "Today's Quiz Answers : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/fp7wa8/todays_quiz_answers/",
+      "snippet": "Mar 26, 2020 · 24568 23457 13457 Don't forget to log into the Bing app, to collect the weekly set bonus (10-70pts daily) Lightspeed …"
+    },
+    {
+      "title": "Bing Homepage Quiz not working : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/1c3iarz/bing_homepage_quiz_not_working/",
+      "snippet": "Microsoft sucks soooo much arse. I have been complaining for weeks about not getting points from the Bing Homepage Quizzes. It …"
+    },
+    {
+      "title": "r/BingHomepageQuiz Lounge : r/BingHomepageQuiz - Reddit",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/comments/r5de1u/rbinghomepagequiz_lounge/",
+      "snippet": "Nov 30, 2021 · I am having problems posting quizzes. I did not create r/BingHomepageQuiz. I just took over posting after the creator …"
+    }
+  ]
+}

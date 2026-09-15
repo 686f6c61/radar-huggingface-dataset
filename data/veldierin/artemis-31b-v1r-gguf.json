@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "veldierin/Artemis-31B-v1r-GGUF",
+  "slug": "veldierin-artemis-31b-v1r-gguf",
+  "author": "veldierin",
+  "url": "https://huggingface.co/veldierin/Artemis-31B-v1r-GGUF",
+  "created_at": "2026-09-14T20:28:10.000Z",
+  "updated_at": "2026-09-14T23:09:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:BeaverAI/Artemis-31B-v1q-GGUF",
+    "base_model:quantized:BeaverAI/Artemis-31B-v1q-GGUF",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 17156105875,
+  "storage_human": "17.2 GB",
+  "base_model": "google/gemma-4-31B-it, BeaverAI/Artemis-31B-v1q-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "36 Male Actors Who Have Done Full Frontal - Ranker",
+      "url": "https://www.ranker.com/list/male-actors-who-showed-everything-on-camera/brooke-wilson",
+      "snippet": "Oct 18, 2025 · If you've ever wondered what your favorite male celebritys package looks like, wonder no more! Several famous actors …"
+    },
+    {
+      "title": "13 Male Actors Who Opened Up About Going Full Frontal - Parade",
+      "url": "https://parade.com/entertainment/male-actors-full-frontal-scenes",
+      "snippet": "Jun 6, 2025 · Here are 13 male actors who opened up about going full frontal, including Barry Keoghan, Ben Affleck and more."
+    },
+    {
+      "title": "Here Are 20 Actors Who Refused Prosthetics And Let It All Hang Out …",
+      "url": "https://www.boredpanda.com/actors-who-refused-prosthetics-on-screen/",
+      "snippet": "Feb 20, 2025 · Read on to discover which 20 actors and actresses went full-frontal on screen. This post may include affiliate links. …"
+    },
+    {
+      "title": "Urban on X: \"53 male celebs who did full frontal scenes: From Theo ...",
+      "url": "https://x.com/UrbanHOD/status/2060944858592706668",
+      "snippet": "May 31, 2026 · 53 male celebs who did full frontal scenes: From Theo James to Matt Bomer to Joel Kim Booster, these actors have …"
+    },
+    {
+      "title": "A Brief History of Pop Culture Male Full Frontal at the Movies",
+      "url": "https://www.eonline.com/news/984845/from-ben-affleck-to-chris-pine-a-brief-history-of-male-full-frontal-at-the-movies",
+      "snippet": "Nov 9, 2018 · The one that started it all. Richard Gere played a male prostitute in this 1980 film, and as such, there was quite a bit of …"
+    }
+  ]
+}

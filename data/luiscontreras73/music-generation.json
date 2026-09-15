@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "LuisContreras73/music-generation",
+  "slug": "luiscontreras73-music-generation",
+  "author": "LuisContreras73",
+  "url": "https://huggingface.co/LuisContreras73/music-generation",
+  "created_at": "2026-09-14T21:09:21.000Z",
+  "updated_at": "2026-09-14T21:10:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "pytorch",
+    "music",
+    "symbolic-music",
+    "music-generation",
+    "midi",
+    "piano",
+    "autoregressive",
+    "es",
+    "arxiv:1511.01844",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 515775004,
+  "storage_human": "516 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "University of South Africa",
+      "url": "https://www.unisa.ac.za/sites/corporate/default",
+      "snippet": "Unisa is the largest open distance learning institution in Africa, the longest standing dedicated distance education university in the …"
+    },
+    {
+      "title": "University of South Africa",
+      "url": "https://www.unisa.ac.za/sites/myunisa/default/",
+      "snippet": "Unisa’s Political Sciences Department celebrates 80 years of shaping political thought. Read more... From Soweto to scholarship: …"
+    },
+    {
+      "title": "Track Application Status - myUnisa",
+      "url": "https://myadmin.unisa.ac.za/unisa-studentstatus/default.do",
+      "snippet": "Track Application Status Student number:"
+    },
+    {
+      "title": "myUnisa : myUNISA : Home",
+      "url": "https://myadmin.unisa.ac.za/portal",
+      "snippet": "22 hours ago · Home Claim UNISA Login Forgotten UNISA Password Prescribed Books Forgotten Student Number?"
+    },
+    {
+      "title": "Undergraduate qualifications",
+      "url": "https://w2.unisa.ac.za/CW/SITES/CORPORAT/DEFAULT/APPLY_FO/UNDERGRA.HTM",
+      "snippet": "Applicants who plan to enrol for classes at a Technical Vocational Education and Training (TVET) college under the Unisa-TVET …"
+    }
+  ]
+}

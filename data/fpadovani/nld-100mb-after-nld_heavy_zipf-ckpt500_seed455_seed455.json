@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/nld-100mb-after-nld_heavy_zipf-ckpt500_seed455_seed455",
+  "slug": "fpadovani-nld-100mb-after-nld_heavy_zipf-ckpt500_seed455_seed455",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/nld-100mb-after-nld_heavy_zipf-ckpt500_seed455_seed455",
+  "created_at": "2026-09-14T21:30:25.000Z",
+  "updated_at": "2026-09-14T23:53:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:fpadovani/ppt-nld_heavy_zipf-100mb_seed455",
+    "base_model:finetune:fpadovani/ppt-nld_heavy_zipf-100mb_seed455",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 9235305731,
+  "storage_human": "9.2 GB",
+  "base_model": "fpadovani/ppt-nld_heavy_zipf-100mb_seed455",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "341 Tv Shows Trivia Questions - TriviaWell",
+      "url": "https://www.triviawell.com/questions/tv-shows/3",
+      "snippet": "Test your TV Shows trivia with questions about The Wire, memorable characters, plot twists, actors, and iconic television moments."
+    },
+    {
+      "title": "12 2026 Nba Summer League Trivia Questions - TriviaWell",
+      "url": "https://www.triviawell.com/questions/2026-nba-summer-league/",
+      "snippet": "How closely did you follow the 2026 NBA Summer League? Quiz yourself on scores, draft picks, semifinalists and California Classic …"
+    },
+    {
+      "title": "15 Toys Trivia Questions - TriviaWell",
+      "url": "https://www.triviawell.com/questions/toys/",
+      "snippet": "It works well for family quiz nights, school activities, pub quizzes, nostalgia rounds, and general-knowledge competitions. Most …"
+    },
+    {
+      "title": "83,401 Trivia Questions and Answers - TriviaWell",
+      "url": "https://www.triviawell.com/187",
+      "snippet": "83,401 public questions across 1,329 topics. Challenge yourself, or build the perfect quiz for game night. Play today's Daily Well …"
+    },
+    {
+      "title": "198 Seinfeld Trivia Questions - TriviaWell",
+      "url": "https://www.triviawell.com/questions/seinfeld/",
+      "snippet": "How well do you know Seinfeld? Test your memory of episodes, characters, production facts, and unforgettable sitcom details."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Joyceanggraini/contrastive-learning-notes",
+  "slug": "joyceanggraini-contrastive-learning-notes",
+  "author": "Joyceanggraini",
+  "url": "https://huggingface.co/Joyceanggraini/contrastive-learning-notes",
+  "created_at": "2026-09-14T23:59:39.000Z",
+  "updated_at": "2026-09-14T23:59:45.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "contrastive-learning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Joyceanggraini/contrastive-learning-notes · Hugging Face",
+      "url": "https://huggingface.co/Joyceanggraini/contrastive-learning-notes",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Joyceanggraini (Joyce Anggraini) - Hugging Face",
+      "url": "https://huggingface.co/Joyceanggraini",
+      "snippet": "User profile of Joyce Anggraini on Hugging Face"
+    },
+    {
+      "title": "A comprehensive survey on contrastive learning - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0925231224014164",
+      "snippet": "Contrastive Learning is self-supervised representation learning by training a model to differentiate between similar and dissimilar samples. It has been shown to be effective and has gained significant attention in various computer vision and natural language processing tasks. In this paper, we comprehensively and systematically sort out the main ideas, recent developments and application ..."
+    },
+    {
+      "title": "Contrastive Learning: A Comprehensive Guide - Medium",
+      "url": "https://medium.com/@juanc.olamendy/contrastive-learning-a-comprehensive-guide-69bf23ca6b77",
+      "snippet": "The Two Flavors of Learning: Supervised vs. Unsupervised Supervised Contrastive Learning Here, labels guide the model training, simplifying the generation of positive and negative pairs."
+    },
+    {
+      "title": "Contrastive Learning: How Models Learn by Comparison",
+      "url": "https://www.datacamp.com/tutorial/contrastive-learning",
+      "snippet": "Contrastive learning is a way to train models by showing them pairs of examples and teaching them what&#x27;s similar and what&#x27;s different. Instead of using labeled data, the model learns from the structure of the data itself."
+    }
+  ]
+}

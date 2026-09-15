@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Warlock-1.7B-i1-GGUF",
+  "slug": "mradermacher-warlock-1-7b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Warlock-1.7B-i1-GGUF",
+  "created_at": "2026-09-14T18:16:35.000Z",
+  "updated_at": "2026-09-14T19:27:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merge",
+    "model-fusion",
+    "cross-model",
+    "representation-alignment",
+    "causal-lm",
+    "llama-3.2",
+    "smollm2",
+    "en",
+    "base_model:taniota/Warlock-1.7B",
+    "base_model:quantized:taniota/Warlock-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1711376384,
+  "parameters_human": "1.71B",
+  "storage_bytes": 19855746336,
+  "storage_human": "19.9 GB",
+  "base_model": "taniota/Warlock-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook新建项目中没有Skype会议选项 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/48b558e30e69897f38c09adf.html",
+      "snippet": "Jul 28, 2017 · 点击——转到——勾选Microft Office2016的Skype会议加载项确定即可"
+    },
+    {
+      "title": "怎么找skype接收的好友发来的文件保存路径/位置-百度经验",
+      "url": "https://jingyan.baidu.com/article/0eb457e5e8537303f1a90516.html",
+      "snippet": "Sep 6, 2018 · 小编刚打开skype,发现自动接收了几个文件，点击文件，就会直接用相应的软件打开文件。没法直接看到保存在哪个文件 …"
+    },
+    {
+      "title": "文本类通信手段，如手机短信、微信、Line、iMessage 和 Skype，哪个 …",
+      "url": "https://www.zhihu.com/question/20935213",
+      "snippet": "个人觉得Line的实时通话是不是比较安全（没有备份，境外软件）（*line是360运营的），是这样吗"
+    },
+    {
+      "title": "微软 Skype 和腾讯的 QQ 语音聊天有什么区别？为什么大家对 Skype 的 …",
+      "url": "https://www.zhihu.com/question/19642031",
+      "snippet": "Nov 7, 2011 · 2、Skype很早就提供了实体电话和网络电话互通的收费服务，而且费用低廉，甚至是跨洋电话也如此。 QQ至今没有此 …"
+    },
+    {
+      "title": "Retrouver skype sur mon ordi... - Forum Skype et Microsoft Teams",
+      "url": "https://forums.commentcamarche.net/forum/affich-26403674-retrouver-skype-sur-mon-ordi",
+      "snippet": "Nov 5, 2012 · Bonjour, Je pense avoir téléchargé skype gratuitement il y a qq jours, cependant, je n'arrive pas à voir son raccourci …"
+    }
+  ]
+}

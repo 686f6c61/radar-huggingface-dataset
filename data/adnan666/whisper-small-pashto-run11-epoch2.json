@@ -5,7 +5,7 @@
   "author": "Adnan666",
   "url": "https://huggingface.co/Adnan666/whisper-small-pashto-run11-epoch2",
   "created_at": "2026-09-11T15:45:30.000Z",
-  "updated_at": "2026-09-14T02:11:20.000Z",
+  "updated_at": "2026-09-14T06:12:46.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,12 +17,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 171,
+  "downloads_30d": 278,
   "trending_score": 0,
   "parameters": 241734912,
   "parameters_human": "241.7M",
-  "storage_bytes": 81236188124,
-  "storage_human": "81.2 GB",
+  "storage_bytes": 98643941654,
+  "storage_human": "98.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

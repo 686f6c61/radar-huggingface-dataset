@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "soyrsoyr/GLM-5.3-Flash-NVFP4A16-MTP-PR3118",
+  "slug": "soyrsoyr-glm-5-3-flash-nvfp4a16-mtp-pr3118",
+  "author": "soyrsoyr",
+  "url": "https://huggingface.co/soyrsoyr/GLM-5.3-Flash-NVFP4A16-MTP-PR3118",
+  "created_at": "2026-09-14T22:38:26.000Z",
+  "updated_at": "2026-09-15T02:24:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "llm-compressor",
+    "mtp",
+    "pr3118-validation",
+    "text-generation",
+    "conversational",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321323031390,
+  "parameters_human": "321.32B",
+  "storage_bytes": 192487423118,
+  "storage_human": "192.5 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Current Local Time in Chicago, Illinois, USA - timeanddate.com",
+      "url": "https://www.timeanddate.com/worldclock/usa/chicago",
+      "snippet": "Current local time in USA – Illinois – Chicago. Get Chicago's weather and area codes, time zone and DST. Explore Chicago's sunrise …"
+    },
+    {
+      "title": "Time Zone & Clock Changes in Chicago, Illinois, USA",
+      "url": "https://www.timeanddate.com/time/zone/usa/chicago",
+      "snippet": "Nov 1, 2011 · Historic, present and future dates for daylight saving time and clock changes. Time changes between years 2025 and …"
+    },
+    {
+      "title": "What time is it in Chicago, United States right now?",
+      "url": "https://24timezones.com/Chicago/time",
+      "snippet": "Exact time in Chicago time zone now. Official Chicago timezone and time change dates for year 2026."
+    },
+    {
+      "title": "Time in Chicago, Illinois, United States now",
+      "url": "https://time.is/Chicago",
+      "snippet": "23 hours ago · Exact time now, time zone, time difference, sunrise/sunset time and key facts for Chicago, Illinois, United States."
+    },
+    {
+      "title": "Illinois (IL) time zone - WhichTimezone",
+      "url": "https://whichtimezone.com/usa/illinois/",
+      "snippet": "23 hours ago · All counties and cities of the state have the same time zone, there are no exceptions. Illinois is observing daylight …"
+    }
+  ]
+}

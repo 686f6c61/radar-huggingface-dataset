@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "yavuzibr/Sevit",
+  "slug": "yavuzibr-sevit",
+  "author": "yavuzibr",
+  "url": "https://huggingface.co/yavuzibr/Sevit",
+  "created_at": "2026-09-14T20:44:23.000Z",
+  "updated_at": "2026-09-14T20:44:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vuelos baratos desde Barcelona (BCN) a Buenos Aires (BUEA)",
+      "url": "https://www.skyscanner.es/rutas-aereas/bcn/buea/barcelona-a-buenos-aires.html?msockid=1d915712e7836661008d40c6e6376743",
+      "snippet": "¿Estás buscando vuelos baratos de Barcelona a Buenos Aires? Compara y encuentra las mejores opciones en el buscador de …"
+    },
+    {
+      "title": "518€ Vuelos baratos desde Barcelona a Buenos Aires (BCN - KAYAK",
+      "url": "https://www.kayak.es/vuelos/Barcelona-El-Prat-BCN/Buenos-Aires-BUE",
+      "snippet": "Mar 20, 2010 · Encuentra vuelos a Buenos Aires desde 518 €. Vuela desde Barcelona con ITA Airways, Delta, Air Canada y más. …"
+    },
+    {
+      "title": "Vuelos Barcelona Buenos Aires (BCN-BUE) - Atrápalo",
+      "url": "https://www.atrapalo.com/vuelos/barcelona-buenos-aires_bcn-bue.html",
+      "snippet": "Encuentra vuelos baratos Barcelona Buenos Aires. Utiliza el calendario de vuelos Barcelona Buenos Aires (BCN-BUE) y compra los …"
+    },
+    {
+      "title": "Vuelos baratos de Barcelona (BCN) a Buenos Aires (BUE ...",
+      "url": "https://www.iberia.com/es/vuelos-baratos/Barcelona-Buenos-Aires/?msockid=1d915712e7836661008d40c6e6376743",
+      "snippet": "Vuelos baratos de Barcelona a Buenos Aires. Consulta las mejores ofertas de vuelos de Barcelona a Buenos Aires y reserva tu …"
+    },
+    {
+      "title": "Vuelos baratos desde Buenos Aires (BUEA) a Barcelona (BCN)",
+      "url": "https://www.skyscanner.es/rutas-aereas/buea/bcn/buenos-aires-a-barcelona.html?msockid=1d915712e7836661008d40c6e6376743",
+      "snippet": "¿Estás buscando vuelos baratos de Buenos Aires a Barcelona? Compara y encuentra las mejores opciones en el buscador de …"
+    }
+  ]
+}

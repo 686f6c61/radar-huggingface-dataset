@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "akashgag/vit-checkpoint",
+  "slug": "akashgag-vit-checkpoint",
+  "author": "akashgag",
+  "url": "https://huggingface.co/akashgag/vit-checkpoint",
+  "created_at": "2026-09-14T22:43:09.000Z",
+  "updated_at": "2026-09-14T22:43:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hoe maak ik een printscreen met het knipprogramma in Vista?",
+      "url": "https://www.pc-helpforum.be/topic/24221-hoe-maak-ik-een-printscreen-met-het-knipprogramma-in-vista/",
+      "snippet": "Apr 9, 2011 · Onderstaande afbeeldingen zijn gemaakt in Windows 7 maar komen overeen met Windows Vista!!;-) Een goed …"
+    },
+    {
+      "title": "Eenvoudig gratis videobewerkingsprogramma (knipprogramma)",
+      "url": "https://www.pc-helpforum.be/topic/71104-eenvoudig-gratis-videobewerkingsprogramma-knipprogramma/",
+      "snippet": "Nov 12, 2018 · Hallo, kan iemand mij misschien helpen aan een gratis en eenvoudig videobewerkingsprogramma? Eigenlijk ben ik op …"
+    },
+    {
+      "title": "Knipprogramma Windows 10 - Archief Windows 10 - PC Helpforum",
+      "url": "https://www.pc-helpforum.be/topic/64458-knipprogramma-windows-10/",
+      "snippet": "Sep 24, 2016 · Ik heb gisteren een update ontvangen voor Windowd 10. Nu is de lijst met apps verdwenen. Ik kan niet meer \"alle …"
+    },
+    {
+      "title": "Pictogram snelkoppeling op bureaublad - PC Helpforum",
+      "url": "https://www.pc-helpforum.be/topic/28025-pictogram-snelkoppeling-op-bureaublad/",
+      "snippet": "Oct 15, 2011 · Het pictogram v d snelkoppelingen op bureaublad wordt voortdurend vervangen door een wereldbol. Hoe daaraan …"
+    },
+    {
+      "title": "fotos in hotmail - Archief Internet & Netwerk - PC Helpforum",
+      "url": "https://www.pc-helpforum.be/topic/24737-fotos-in-hotmail/",
+      "snippet": "May 8, 2011 · Dat lukt. Maar NIET met het knipprogramma. Het knipprogramma werkt wel, want ik kan het knipsel wel plakken …"
+    }
+  ]
+}

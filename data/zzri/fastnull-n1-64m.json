@@ -5,7 +5,7 @@
   "author": "ZZRI",
   "url": "https://huggingface.co/ZZRI/Fastnull-n1-64M",
   "created_at": "2026-09-14T13:00:38.000Z",
-  "updated_at": "2026-09-14T13:07:57.000Z",
+  "updated_at": "2026-09-14T13:11:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,7 +30,7 @@
   "trending_score": 0,
   "parameters": 63912192,
   "parameters_human": "63.9M",
-  "storage_bytes": 128080499,
+  "storage_bytes": 128179716,
   "storage_human": "128 MB",
   "base_model": null,
   "formats": [

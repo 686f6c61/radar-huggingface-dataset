@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-mistral_keep60_gap_b001",
+  "slug": "jeesup-svd-safety-mistral_keep60_gap_b001",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-mistral_keep60_gap_b001",
+  "created_at": "2026-09-14T17:53:23.000Z",
+  "updated_at": "2026-09-14T17:56:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.2",
+    "base_model:finetune:mistralai/Mistral-7B-Instruct-v0.2",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 14483991459,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Challenge Your Game | FACEIT",
+      "url": "https://www.faceit.com/",
+      "snippet": "FACEIT is where competitive players grind matchmaking or team competitions, find teammates, and prove their level. Join 34M …"
+    },
+    {
+      "title": "Anti-Cheat - FACEIT",
+      "url": "https://www.faceit.com/en/anti-cheat",
+      "snippet": "The FACEIT Anti-Cheat protects matches with two layers of defence. Kernel-level protection blocks advanced cheats at the core …"
+    },
+    {
+      "title": "Отправить запрос – FACEIT Support Russia",
+      "url": "https://support.faceit.com/hc/ru/requests/new",
+      "snippet": "Отправить запрос Can't find what you need? Tell us about it and the team will get back to you."
+    },
+    {
+      "title": "FACEIT",
+      "url": "https://support.faceit.com/hc/en-us",
+      "snippet": "Knowledge base Playing on FACEIT Find out how to get started playing and using FACEIT features!"
+    },
+    {
+      "title": "FPL – FACEIT",
+      "url": "https://pro.faceit.com/",
+      "snippet": "FPL For those looking to join the big leagues CS2 FACEIT Pro League Qualification Guide FPL 2025 Overview FPL 2025 Prizing"
+    }
+  ]
+}

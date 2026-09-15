@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SOTAagi2030/Transit-Delay-Pilot-Release",
+  "slug": "sotaagi2030-transit-delay-pilot-release",
+  "author": "SOTAagi2030",
+  "url": "https://huggingface.co/SOTAagi2030/Transit-Delay-Pilot-Release",
+  "created_at": "2026-09-14T20:48:19.000Z",
+  "updated_at": "2026-09-14T20:48:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "time-series",
+    "public-transit",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 70,
+  "storage_human": "70 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OneDrive 的以下两个图标的意思有何不同？ - 知乎",
+      "url": "https://www.zhihu.com/question/276583716",
+      "snippet": "May 10, 2018 · OneDrive 的右键菜单多了一个叫“始终保留在此设备”的选项，勾选了此项的文件或文件夹就不会被自动释放空间，（也 …"
+    },
+    {
+      "title": "苹果和微软的云服务iCloud和Onedrive哪个体验更好？ - 知乎",
+      "url": "https://www.zhihu.com/question/299476442",
+      "snippet": "就在国内来说，Apple的iCloud系列服务和Microsoft的Onedrive系列服务，哪个体验更好？主要是设备（电脑、…"
+    },
+    {
+      "title": "通过OneDrive实现文件共享-百度经验",
+      "url": "https://jingyan.baidu.com/article/0320e2c1c36f005a86507b47.html",
+      "snippet": "Nov 7, 2021 · 通过OneDrive实现文件共享,office365软件目前使用广泛，不同电脑之间通过OeDrive进行文件共享成为了可能。下面介 …"
+    },
+    {
+      "title": "怎么查看电脑中的OneDrive-百度经验",
+      "url": "https://jingyan.baidu.com/article/03b2f78c385bf11fa237aea3.html",
+      "snippet": "Sep 24, 2022 · 怎么查看电脑中的OneDrive,怎么查看电脑中的OeDrive？下面我们一起看看吧。"
+    },
+    {
+      "title": "OneNote笔记如何同步到云端？ - 知乎",
+      "url": "https://www.zhihu.com/question/28811729",
+      "snippet": "OneNote是默认支持云同步的，并且同步功能本身免费，默认的OneDrive支持跨平台的同步，当然如果你嫌慢，也可以采用自动备份+ …"
+    }
+  ]
+}

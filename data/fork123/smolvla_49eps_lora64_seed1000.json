@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Fork123/smolvla_49eps_lora64_seed1000",
+  "slug": "fork123-smolvla_49eps_lora64_seed1000",
+  "author": "Fork123",
+  "url": "https://huggingface.co/Fork123/smolvla_49eps_lora64_seed1000",
+  "created_at": "2026-09-14T22:07:53.000Z",
+  "updated_at": "2026-09-14T22:08:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:Fork123/Test2-ImproveRecording-49eps-5pos",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11911048,
+  "storage_human": "12 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bendad",
+      "url": "https://www.bendad.com/",
+      "snippet": "BEND PROMOTIONAL PRODUCTS \"We know you have choices... We want to be first\" Email: …"
+    },
+    {
+      "title": "Kirk Bondad - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kirk_Bondad",
+      "snippet": "Kirk Bondad Wachsmuth (born June 7, 1997), professionally known as Kirk Bondad (Tagalog: [ˈkɪɾk ˈbɔndad]), is a Filipino model, …"
+    },
+    {
+      "title": "All Products | Product Catalog | Bend Promotional Products",
+      "url": "https://www.bendad.com/p/catalog",
+      "snippet": "BEND PROMOTIONAL PRODUCTS \"We know you have choices... We want to be first\" \"Lifting Others... Lifts You\" E-mail: …"
+    },
+    {
+      "title": "Benda",
+      "url": "https://www.bendakeeway.com/int-en",
+      "snippet": "A take on classic bobber riding Discover NAPOLEON BOB 125 >>"
+    },
+    {
+      "title": "Bendad Last Name — Surname Origins & Meanings - MyHeritage",
+      "url": "https://lastnames.myheritage.com/last-name/bendad",
+      "snippet": "Discover the origins and meaning of the Bendad surname. Explore historical records including birth, marriage, death, immigration, …"
+    }
+  ]
+}

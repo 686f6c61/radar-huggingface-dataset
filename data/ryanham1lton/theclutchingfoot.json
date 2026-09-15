@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/TheClutchingFoot",
+  "slug": "ryanham1lton-theclutchingfoot",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/TheClutchingFoot",
+  "created_at": "2026-09-14T18:04:26.000Z",
+  "updated_at": "2026-09-14T18:06:15.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 248143278,
+  "storage_human": "248 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quality Rubber Compounds - TSF Spa",
+      "url": "https://tsfgomma.com/en/quality-rubber-compounds/",
+      "snippet": "Quality Rubber Compounds - Discover how TSF ensures product excellence through strict quality controls and innovation."
+    },
+    {
+      "title": "Whistleblowing - Produzione di Mescole in Gomma, Mescole in …",
+      "url": "https://tsfgomma.com/whistleblowing/",
+      "snippet": "Il D.lgs. 24/2023, recependo i principi comunitari espressi nella Direttiva EU 2019/1937, ha introdotto criteri di protezione delle …"
+    },
+    {
+      "title": "Custom Rubber Compounds - TSF Spa",
+      "url": "https://tsfgomma.com/en/custom-rubber-compounds/",
+      "snippet": "Custom Rubber Compounds - Discover how TSF turns customer challenges into innovative solutions through research and …"
+    },
+    {
+      "title": "FFKM Perfluorinated Rubber Compounds - TSF Spa",
+      "url": "https://tsfgomma.com/en/ffkm-perfluorinated-rubber-compounds/",
+      "snippet": "FFKM perfluorinated rubber compounds - Discover our dedicated high-tech production department, combining chemical resistance …"
+    },
+    {
+      "title": "Compound Elastomerici per settore Semiconduttori – TSF Spa",
+      "url": "https://tsfgomma.com/compound-elastomerici-per-settore-semiconduttori/",
+      "snippet": "Compound Elastomerici per settore Semiconduttori - Scopri TSF, la nostra storia, la nostra missione e il nostro impegno per …"
+    }
+  ]
+}

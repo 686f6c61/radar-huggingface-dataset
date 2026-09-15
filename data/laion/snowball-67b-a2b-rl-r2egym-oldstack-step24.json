@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "laion/snowball-67b-a2b-rl-r2egym-oldstack-step24",
+  "slug": "laion-snowball-67b-a2b-rl-r2egym-oldstack-step24",
+  "author": "laion",
+  "url": "https://huggingface.co/laion/snowball-67b-a2b-rl-r2egym-oldstack-step24",
+  "created_at": "2026-09-14T20:35:09.000Z",
+  "updated_at": "2026-09-14T20:42:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "grug_moe",
+    "snowball",
+    "moe",
+    "rl",
+    "r2e-gym",
+    "agentic",
+    "base_model:laion/snowball-67b-a2b-sft-s3-nemotron-terminal-step1888",
+    "base_model:finetune:laion/snowball-67b-a2b-sft-s3-nemotron-terminal-step1888",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 67078882816,
+  "parameters_human": "67.08B",
+  "storage_bytes": 134175049916,
+  "storage_human": "134.2 GB",
+  "base_model": "laion/snowball-67b-a2b-sft-s3-nemotron-terminal-step1888",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LAION",
+      "url": "https://laion.ai/",
+      "snippet": "LAION, Large-scale Artificial Intelligence Open Network, is a non-profit organization making machine learning resources available to …"
+    },
+    {
+      "title": "LAION - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/LAION",
+      "snippet": "Toggle the table of contents LAION"
+    },
+    {
+      "title": "LAION — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/LAION",
+      "snippet": "Jeux de données d'images LAION a mis à disposition de tous plusieurs grands jeux de données de type « paires image-légende », …"
+    },
+    {
+      "title": "LAION-5B: A NEW ERA OF OPEN LARGE-SCALE MULTI-MODAL …",
+      "url": "https://laion.ai/blog/laion-5b/",
+      "snippet": "Mar 31, 2022 · We, LAION, are currently working together with the Cross Sectional Team Deep Learning (CST-DL), Scalable …"
+    },
+    {
+      "title": "LAION AI - GitHub",
+      "url": "https://github.com/LAION-AI",
+      "snippet": "This is the repo of LAION, a non-profit organization to liberate machine learning research, models and datasets. - LAION AI"
+    }
+  ]
+}

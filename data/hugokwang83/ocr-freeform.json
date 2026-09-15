@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hugokwang83/ocr-freeform",
+  "slug": "hugokwang83-ocr-freeform",
+  "author": "hugokwang83",
+  "url": "https://huggingface.co/hugokwang83/ocr-freeform",
+  "created_at": "2026-09-14T23:34:13.000Z",
+  "updated_at": "2026-09-14T23:34:19.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "ocr-freeform",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "这个网址是potplayer官网吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/509011663",
+      "snippet": "Feb 21, 2022 · ———————————————— 为了让更多人能搜到这个帖子，做点SEO。 PotPlayer是什么？PotPlayer怎么下 …"
+    },
+    {
+      "title": "App IO: ecco cos’è e come funziona, per cittadini e PA",
+      "url": "https://www.forumpa.it/pa-digitale/cittadinanza-digitale-arriva-lapp-io-ecco-cose-e-come-funziona/",
+      "snippet": "Mar 2, 2021 · L'app IO è disponibile da aprile 2020 negli store online. Scopriamo tutti i vantaggi per cittadini e pubbliche amministrazioni"
+    },
+    {
+      "title": "FPA - Innovazione nella Pubblica Amministrazione e FORUM PA",
+      "url": "https://www.forumpa.it/",
+      "snippet": "4 days ago · FPA - FORUM PA è la società di servizi che accompagna amministrazioni e aziende interessate ai processi di …"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    }
+  ]
+}

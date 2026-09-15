@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Asirus/TaoMate_H3_3_Step_LoRA",
+  "slug": "asirus-taomate_h3_3_step_lora",
+  "author": "Asirus",
+  "url": "https://huggingface.co/Asirus/TaoMate_H3_3_Step_LoRA",
+  "created_at": "2026-09-14T20:38:13.000Z",
+  "updated_at": "2026-09-14T20:57:11.000Z",
+  "license": "minimax-h3-community",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "comfyui",
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "minimax_h3_lora",
+    "text-to-video",
+    "minimax-h3",
+    "lora",
+    "turbo",
+    "3-step",
+    "taomate",
+    "audio-video",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2491304932,
+  "storage_human": "2.5 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Delete Unused Columns in Excel (6 Methods)",
+      "url": "https://www.exceldemy.com/how-to-delete-unused-columns-in-excel/",
+      "snippet": "Jun 17, 2024 · In this article, you will get the easiest 5 ways to delete unused columns in Excel quickly and more effectively."
+    },
+    {
+      "title": "How to Delete a Column in Excel - Learn Excel",
+      "url": "https://learnexcel.io/delete-column-excel/",
+      "snippet": "May 21, 2023 · Learn how to easily delete a column in Excel with our step-by-step guide. Streamline your data and improve your …"
+    },
+    {
+      "title": "How to Delete Infinite Columns in Excel (4 Methods)",
+      "url": "https://www.exceldemy.com/delete-infinite-columns-in-excel/",
+      "snippet": "Jun 23, 2024 · From this article you'll know how to delete infinite columns in Excel by selecting all the unused columns and deleting …"
+    },
+    {
+      "title": "How to Delete Columns in Excel (The Right Way) - Spreadsheeto",
+      "url": "https://spreadsheeto.com/delete-columns-excel/",
+      "snippet": "Aug 29, 2024 · In this article, we’ll show you different ways how to delete columns in Excel. Whether you want to delete one column …"
+    },
+    {
+      "title": "4 Easy Ways to Remove Blank Columns in Excel - Spreadsheet Planet",
+      "url": "https://spreadsheetplanet.com/remove-blank-columns-excel/",
+      "snippet": "Learn how to remove blank columns in Excel using formulas, VBA macro codes, and some manual techniques."
+    }
+  ]
+}

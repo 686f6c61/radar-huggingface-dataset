@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Diyasing/albef-experiment",
+  "slug": "diyasing-albef-experiment",
+  "author": "Diyasing",
+  "url": "https://huggingface.co/Diyasing/albef-experiment",
+  "created_at": "2026-09-15T00:25:30.000Z",
+  "updated_at": "2026-09-15T00:25:36.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fotel do Garderoby - Niska cena na Allegro",
+      "url": "https://allegro.pl/listing?string=fotel%20do%20garderoby",
+      "snippet": "Spersonalizowane reklamy i treści, pomiar reklam i treści, badanie odbiorców i ulepszanie usług. Zapewnienie bezpieczeństwa, …"
+    },
+    {
+      "title": "Fotel Rozkladany z Gabki - Niska cena na Allegro",
+      "url": "https://allegro.pl/listing?string=fotel%20rozkladany%20z%20gabki",
+      "snippet": "Fotel Rozkladany z Gabki Zróżnicowany zbiór ofert, najlepsze ceny i promocje. Wejdź i znajdź to, czego szukasz!"
+    },
+    {
+      "title": "Fotele do garderoby - Sklep DKwadrat",
+      "url": "https://dkwadrat.pl/fotele-do-garderoby",
+      "snippet": "Odkryj komfort i elegancję foteli do garderoby w DKwadrat — wybierz spośród szerokiej gamy stylów, materiałów i kolorów, …"
+    },
+    {
+      "title": "Fotel do garderoby - stokrzesel.pl",
+      "url": "https://stokrzesel.pl/fotel-do-garderoby",
+      "snippet": "Stylowy fotel do garderoby to drugi w kolejności, zaraz po szafach, najważniejszy mebel. Wybierzcie piękną tapicerkę w bogatych …"
+    },
+    {
+      "title": "fotel do salonu - Fotele w dobrej cenie - OLX",
+      "url": "https://www.olx.pl/dom-ogrod/meble/fotele/q-fotel-do-salonu/",
+      "snippet": "Aug 31, 2026 · Aktualne ogłoszenia w całej Polsce: fotel do salonu ️ sprawdź oferty w kategorii Fotele i kupuj taniej na OLX.pl!"
+    }
+  ]
+}

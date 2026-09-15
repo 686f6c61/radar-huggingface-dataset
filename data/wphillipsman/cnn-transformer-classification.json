@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Wphillipsman/cnn-transformer-classification",
+  "slug": "wphillipsman-cnn-transformer-classification",
+  "author": "Wphillipsman",
+  "url": "https://huggingface.co/Wphillipsman/cnn-transformer-classification",
+  "created_at": "2026-09-14T22:13:38.000Z",
+  "updated_at": "2026-09-14T22:13:44.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Marcas que se pasarán a las baterías sólidas y lo que ... - laSexta",
+      "url": "https://www.lasexta.com/motor/noticias/estas-son-marcas-que-pasaran-implementar-baterias-estado-solido-sus-electricos-diferencias-frente-actuales_2026041369dca2919e87c91dbff29e02.html",
+      "snippet": "Apr 13, 2026 · CAMBIOS PARA 2027 Marcas que se pasarán a las baterías sólidas y lo que supondrá frente a las actuales en …"
+    },
+    {
+      "title": "Coches eléctricos con tecnología de baterías de estado sólido: la …",
+      "url": "https://gear-spot.com/es/coches-electricos-con-tecnologia-de-baterias-de-estado-solido-la-nueva-era-de-la-autonomia-y-carga-rapida-en-2026/",
+      "snippet": "Sep 1, 2026 · Coches eléctricos con tecnología de baterías de estado sólido: la nueva era de la autonomía y carga rápida en 2026 El …"
+    },
+    {
+      "title": "Innovaciones en baterías sólidas para vehículos eléctricos: el futuro ...",
+      "url": "https://roadandride.org/es/innovaciones-en-baterias-solidas-para-vehiculos-electricos-el-futuro-de-la-autonomia-y-la-carga-ultra-rapida-en-2026/",
+      "snippet": "Jul 27, 2026 · En este artículo, exploraremos qué son las baterías sólidas, por qué son un avance crucial frente a las tradicionales de …"
+    },
+    {
+      "title": "Baterías de estado sólido, la panacea que se hace esperar",
+      "url": "https://www.eldiario.es/motor/tecnologia/baterias-solido-panacea-esperar_1_13264817.html",
+      "snippet": "Jun 2, 2026 · Hasta 2028 cabe esperar un largo desfile de prototipos, líneas piloto, series limitadas y, posiblemente, los primeros …"
+    },
+    {
+      "title": "Batería de estado sólido: qué es y cuándo llegará al coche eléctrico ...",
+      "url": "https://www.autopista.es/noticias-motor/bateria-estado-solido-es-cuando-llegara-coche-electrico-convertirlo-en-ideal-ecn_328792_102.html",
+      "snippet": "Jun 23, 2026 · Batería de estado sólido: qué es y cuándo llegará al coche eléctrico para convertirlo en ideal Más autonomía, carga …"
+    }
+  ]
+}

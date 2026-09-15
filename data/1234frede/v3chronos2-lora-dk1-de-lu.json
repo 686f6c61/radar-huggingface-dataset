@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "1234Frede/v3chronos2-lora-dk1-de-lu",
+  "slug": "1234frede-v3chronos2-lora-dk1-de-lu",
+  "author": "1234Frede",
+  "url": "https://huggingface.co/1234Frede/v3chronos2-lora-dk1-de-lu",
+  "created_at": "2026-09-14T17:47:16.000Z",
+  "updated_at": "2026-09-14T17:47:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:amazon/chronos-2",
+    "lora",
+    "transformers",
+    "arxiv:1910.09700",
+    "base_model:amazon/chronos-2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4854584,
+  "storage_human": "5 MB",
+  "base_model": "amazon/chronos-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introduction to Celery — Celery 5.6.3 documentation",
+      "url": "https://docs.celeryq.dev/en/stable/getting-started/introduction.html",
+      "snippet": "A Celery system can consist of multiple workers and brokers, giving way to high availability and horizontal scaling. Celery is written in …"
+    },
+    {
+      "title": "GitHub - celery/celery: Distributed Task Queue (development branch)",
+      "url": "https://github.com/celery/celery",
+      "snippet": "A Celery system can consist of multiple workers and brokers, giving way to high availability and horizontal scaling. Celery is written in …"
+    },
+    {
+      "title": "Celery - Distributed Task Queue — Celery 5.6.3 documentation",
+      "url": "https://docs.celeryq.dev/en/stable/index.html",
+      "snippet": "Celery is a simple, flexible, and reliable distributed system to process vast amounts of messages, while providing operations with the …"
+    },
+    {
+      "title": "celery · PyPI",
+      "url": "https://pypi.org/project/celery/",
+      "snippet": "Apr 15, 2011 · Celery is written in Python, but the protocol can be implemented in any language. In addition to Python there’s node …"
+    },
+    {
+      "title": "Introduction to Celery — Python documentation - Get docs",
+      "url": "https://getdocs.org/Celery/docs/latest/getting-started/introduction",
+      "snippet": "A Celery system can consist of multiple workers and brokers, giving way to high availability and horizontal scaling. Celery is written in …"
+    }
+  ]
+}

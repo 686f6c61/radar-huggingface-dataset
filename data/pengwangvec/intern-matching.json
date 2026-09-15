@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "pengwangvec/intern-matching",
+  "slug": "pengwangvec-intern-matching",
+  "author": "pengwangvec",
+  "url": "https://huggingface.co/pengwangvec/intern-matching",
+  "created_at": "2026-09-14T20:42:35.000Z",
+  "updated_at": "2026-09-14T20:42:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何入驻shein？ - 知乎",
+      "url": "https://www.zhihu.com/question/293971663",
+      "snippet": "SHEIN开店费用： 入驻0费用，运营0成本，开店面向多个国家售卖。 开店前3个月免佣，后期收取10% 佣金。 并赋予了卖家定价权 …"
+    },
+    {
+      "title": "在SheIn工作的感觉怎么样？ - 知乎",
+      "url": "https://www.zhihu.com/question/271570265/answers/updated",
+      "snippet": "SHEIN的估值变化，折射出全球资本市场对快时尚行业定价逻辑的深刻调整。 在长达十余年的融资历程中，SHEIN的估值经历了大幅 …"
+    },
+    {
+      "title": "[閒聊] SHEIN的品質都很差嗎? - 看板 WomenTalk - 批踢踢實業坊",
+      "url": "https://www.ptt.cc/bbs/WomenTalk/M.1719842758.A.76B.html",
+      "snippet": "Jul 1, 2024 · SHEIN這平台紅蠻久的 但一直沒有買過 價格確實很便宜 只是問了一些身邊有買過的朋友都說 這家便宜但做工跟品質都蠻 …"
+    },
+    {
+      "title": "[心得] SHEIN 你的雷雷伙伴 - 看板 e-shopping - 批踢踢實業坊",
+      "url": "https://www.ptt.cc/bbs/e-shopping/M.1561618178.A.B60.html",
+      "snippet": "Jun 27, 2019 · 1. SHEIN Self Belted Paperbag Waist Shorts (黑色自綁帶短褲) - US$11.79 話說那個Self Belted說得真好呢，因為褲子 …"
+    },
+    {
+      "title": "为什么像shein这样的跨境电商不在国内出售呢？ - 知乎",
+      "url": "https://www.zhihu.com/question/267772909",
+      "snippet": "SheIn（中文名“ 希音 ”）成立于2008年，作为中国的一家跨境电商巨头，小编敢打赌应该有95%以上的国人都没听说过SheIn，就是这 …"
+    }
+  ]
+}

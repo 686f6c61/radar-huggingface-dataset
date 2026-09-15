@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "vikasagarwalmud/paper-classification",
+  "slug": "vikasagarwalmud-paper-classification",
+  "author": "vikasagarwalmud",
+  "url": "https://huggingface.co/vikasagarwalmud/paper-classification",
+  "created_at": "2026-09-14T23:46:20.000Z",
+  "updated_at": "2026-09-14T23:46:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vikasagarwalmud/paper-classification · Hugging Face",
+      "url": "https://huggingface.co/vikasagarwalmud/paper-classification",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AIPapers.ai - AI Research Papers Daily",
+      "url": "https://aipapers.ai/",
+      "snippet": "Your AI Research Assistant - Daily AI research papers analyzed and categorized by advanced AI. Browse 13,000+ papers across 12 research categories."
+    },
+    {
+      "title": "Automated research methodology classification using machine learning ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0952197625010395",
+      "snippet": "To build an effective classification methodology and machine learning model, three article sets were used as input datasets (detailed descriptions are provided in Section 2.2). The first two article sets were used for training, validating, and testing the classification model to be developed."
+    },
+    {
+      "title": "ML and AI research papers with code: paper breakdowns",
+      "url": "https://paperscode.org/",
+      "snippet": "We analyze breakthrough machine learning papers, benchmark emerging models, and provide verified code implementations. Your source for hands-on…"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jadonharsh/smriti-clip-vitb32-onnx",
+  "slug": "jadonharsh-smriti-clip-vitb32-onnx",
+  "author": "jadonharsh",
+  "url": "https://huggingface.co/jadonharsh/smriti-clip-vitb32-onnx",
+  "created_at": "2026-09-15T00:34:04.000Z",
+  "updated_at": "2026-09-15T00:34:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "clip",
+    "openclip",
+    "zero-shot-image-classification",
+    "base_model:laion/CLIP-ViT-B-32-laion2B-s34B-b79K",
+    "base_model:quantized:laion/CLIP-ViT-B-32-laion2B-s34B-b79K",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 606123135,
+  "storage_human": "606 MB",
+  "base_model": "laion/CLIP-ViT-B-32-laion2B-s34B-b79K",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/RelatedSearch",
+      "snippet": ""
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/version",
+      "snippet": "Bing ... Versions"
+    },
+    {
+      "title": "How to See All Bing Related Searches - cloudspress.com",
+      "url": "https://www.cloudspress.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Aug 7, 2026 · Bing does not have a public “see everything” page for a keyword. Its related searches and autocomplete suggestions …"
+    },
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://www2.bing.com/",
+      "snippet": "Search with Microsoft Bing and use the power of AI to find information, explore webpages, images, videos, maps, and more. A smart …"
+    },
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://www.ph.bing.com/",
+      "snippet": "Search with Microsoft Bing to explore information, images, videos, maps, and more using AI-powered tools for smarter and curious …"
+    }
+  ]
+}

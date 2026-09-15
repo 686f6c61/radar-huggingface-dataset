@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "JihoPark2/multitask-efficient",
+  "slug": "jihopark2-multitask-efficient",
+  "author": "JihoPark2",
+  "url": "https://huggingface.co/JihoPark2/multitask-efficient",
+  "created_at": "2026-09-14T20:56:27.000Z",
+  "updated_at": "2026-09-14T20:56:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "Gmail Help",
+      "url": "https://support.google.com/mail/?hl=en",
+      "snippet": "Official Gmail Help Center where you can find tips and tutorials on using Gmail and other answers to frequently asked questions."
+    },
+    {
+      "title": "Create a Google Account for Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=en",
+      "snippet": "Important: Before you create a new Google Account, sign out of your current account. Learn how to sign out of Gmail. From your …"
+    },
+    {
+      "title": "Inloggen bij Gmail - Computer - Gmail Help - Google Help",
+      "url": "https://support.google.com/mail/answer/8494?hl=nl&co=GENIE.Platform%3DDesktop",
+      "snippet": "Inloggen bij Gmail Tip: Als je inlogt op een openbare computer, moet je uitloggen voordat je de computer verlaat. Bekijk meer …"
+    },
+    {
+      "title": "Membuat Akun Google untuk Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=id",
+      "snippet": "Penting: Sebelum Anda membuat Akun Google baru, logout dari akun Anda saat ini. Pelajari cara logout dari Gmail. Dari perangkat …"
+    }
+  ]
+}

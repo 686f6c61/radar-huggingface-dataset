@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "tfrere/microduck-move-base-roller",
+  "slug": "tfrere-microduck-move-base-roller",
+  "author": "tfrere",
+  "url": "https://huggingface.co/tfrere/microduck-move-base-roller",
+  "created_at": "2026-09-14T21:10:30.000Z",
+  "updated_at": "2026-09-14T21:10:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck-academy-policy",
+    "microduck-policy",
+    "academy",
+    "official",
+    "family:rollers",
+    "kind:perpetual",
+    "tier:1",
+    "microduck",
+    "robotics",
+    "reinforcement-learning",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5956765,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing Homepage Quiz – Today's Bing Daily Trivia & Featured Image Quiz",
+      "url": "https://bingquiz.com/bing-homepage-quiz/",
+      "snippet": "22 hours ago · Play today's Bing Homepage Quiz — Celebrity & Pop Culture Trivia edition — and test your knowledge with the same …"
+    },
+    {
+      "title": "Bing Homepage Quiz | Bing Quizzes",
+      "url": "https://bing.weeklyquiz.net/bing-homepage-quiz/",
+      "snippet": "Jan 12, 2026 · Play today’s interactive Bing Homepage Quiz, answer 20 entertaining questions, discover fascinating facts, and test …"
+    },
+    {
+      "title": "Bing Homepage Quiz - Play Today’s 10 Daily Homepage Bing Quizzes",
+      "url": "https://bingquizzes.com/bing-homepage-quiz-today/",
+      "snippet": "22 hours ago · Play today’s Bing Homepage Quiz with 10 multiple-choice questions, a 150-second timer, answer explanations, and a …"
+    },
+    {
+      "title": "Bing Homepage Quiz – Today's Bing Quiz & Answers",
+      "url": "https://bingquiz.today/",
+      "snippet": "Play today's Bing Homepage Quiz, explore the latest Bing quiz questions, and check answers and trivia in one place. Updated daily."
+    },
+    {
+      "title": "Bing Quiz - Today’s Daily Trivia Questions & Answers | Bing Quizzes",
+      "url": "https://bingquizzes.com/",
+      "snippet": "Explore Bing Quizzes across fun, family-friendly, and engaging topics like general knowledge, history, science, geography, current …"
+    }
+  ]
+}

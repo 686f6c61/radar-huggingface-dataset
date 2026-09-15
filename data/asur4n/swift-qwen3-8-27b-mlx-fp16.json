@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Asur4N/Swift-Qwen3.8-27B-mlx-fp16",
+  "slug": "asur4n-swift-qwen3-8-27b-mlx-fp16",
+  "author": "Asur4N",
+  "url": "https://huggingface.co/Asur4N/Swift-Qwen3.8-27B-mlx-fp16",
+  "created_at": "2026-09-14T23:03:22.000Z",
+  "updated_at": "2026-09-14T23:05:21.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "qwen3_8",
+    "efficient-thinking",
+    "reasoning",
+    "token-efficient",
+    "lora",
+    "image-text-to-text",
+    "conversational",
+    "base_model:ukisai/Swift-Qwen3.8-27b",
+    "base_model:finetune:ukisai/Swift-Qwen3.8-27b",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54733594674,
+  "storage_human": "54.7 GB",
+  "base_model": "ukisai/Swift-Qwen3.8-27b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fabric API - [26.2] Fabric API 0.152.1+26.2 - Minecraft Mods - CurseForge",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/8251814",
+      "snippet": "Jun 15, 2026 · Core API library for the Fabric toolchain. Download Fabric API by modmuss50, with over 229.9M downloads on …"
+    },
+    {
+      "title": "Forgified Fabric API - Minecraft Mods - CurseForge",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/forgified-fabric-api",
+      "snippet": "Aug 24, 2026 · The Forgified Fabric API (FFAPI) is a direct port of Fabric API for the NeoForge modloader, regularly kept up to date …"
+    },
+    {
+      "title": "How to Install Fabric for Minecraft (CurseForge & Manual Guide)",
+      "url": "https://blog.curseforge.com/how-to-install-fabric-for-minecraft/",
+      "snippet": "Dec 23, 2025 · Learn how to install Fabric for Minecraft using CurseForge or manual setup, plus top Fabric mods and common fixes."
+    },
+    {
+      "title": "CurseForge 3rd Party API Terms and Conditions",
+      "url": "https://support.curseforge.com/en/support/solutions/articles/9000207405-curse-forge-3rd-party-api-terms-and-conditions",
+      "snippet": "Aug 14, 2024 · We're here to get you informed on everything you need to know about CurseForge, including helpful guides and …"
+    },
+    {
+      "title": "Architectury API - Minecraft Mods - CurseForge",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/architectury-api",
+      "snippet": "4 days ago · An api for developers for developing multi-modloader mods easier, we provide entire build systems, a simple abstract …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "HyeonseokE/smolvla_ablation2_rank_extract_cube_1000_10fps",
+  "slug": "hyeonseoke-smolvla_ablation2_rank_extract_cube_1000_10fps",
+  "author": "HyeonseokE",
+  "url": "https://huggingface.co/HyeonseokE/smolvla_ablation2_rank_extract_cube_1000_10fps",
+  "created_at": "2026-09-14T23:02:35.000Z",
+  "updated_at": "2026-09-14T23:03:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:HyeonseokE/ablation2_rank_extract_cube_10fps",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906729316,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hotel Kühlungsborn - MORADA RESORT KÜHLUNGSBORN",
+      "url": "https://kuehlungsborn.morada.de/",
+      "snippet": "MORADA RESORT KÜHLUNGSBORN - Das Hotel mit Blick auf die Ostsee. Urlaubsangebote jetzt entdecken. Tagungshotel mit …"
+    },
+    {
+      "title": "Hotelzimmer direkt an der Ostsee in Kühlungsborn und Zimmerpreise",
+      "url": "https://kuehlungsborn.morada.de/infos/einrichtung/zimmer/",
+      "snippet": "Die Gästezimmer bieten auf ca. 20 bis 26 m² Grundfläche eine gediegene Wohnlichkeit. Alle 413 Zimmer sind komfortabel …"
+    },
+    {
+      "title": "Parkplatzhinweise von MORADA HOTELS & RESORTS",
+      "url": "https://kuehlungsborn.morada.de/infos/parken/",
+      "snippet": "Parken an der Ostsee Parken – alle wichtigen Infos Hier finden Sie alle wichtigen Informationen über die aktuell geltenden Parktarife …"
+    },
+    {
+      "title": "Kurzurlaub: Ostern an der Ostsee in Kühlungsborn 2027",
+      "url": "https://kuehlungsborn.morada.de/urlaub-kuehlungsborn/angebot/ostern-ostsee-2027",
+      "snippet": "Alle Urlaubsangebote MORADA Resort KühlungsbornUrlaubsangebote in den schönsten Regionen Sehenswertes in der Region …"
+    },
+    {
+      "title": "Urlaub: Himmelfahrt an der Ostsee in Kühlungsborn 2027",
+      "url": "https://kuehlungsborn.morada.de/urlaub-kuehlungsborn/angebot/himmelfahrt-kuehlungsborn-2027",
+      "snippet": "8-Tage Urlaub in Kühlungsborn 2027: Himmelfahrt an der Ostsee - Christi Himmelfahrt in Kühlungsborn. Unser Urlaub-Angebot in der …"
+    }
+  ]
+}

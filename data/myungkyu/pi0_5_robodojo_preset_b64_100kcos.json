@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Myungkyu/pi0_5_robodojo_preset_b64_100kcos",
+  "slug": "myungkyu-pi0_5_robodojo_preset_b64_100kcos",
+  "author": "Myungkyu",
+  "url": "https://huggingface.co/Myungkyu/pi0_5_robodojo_preset_b64_100kcos",
+  "created_at": "2026-09-15T00:25:08.000Z",
+  "updated_at": "2026-09-15T00:26:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "vla",
+    "robodojo",
+    "dataset:Myungkyu/RoboDojo-preset-gemini",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354062568,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "National Institute of Standards and Technology | NIST",
+      "url": "https://www.time.gov/",
+      "snippet": "The National Institute of Standards and Technology - Time and Frequency Division maintains the standard for frequency and time …"
+    },
+    {
+      "title": "NIST Time Widget",
+      "url": "https://www.time.gov/widget/",
+      "snippet": "NIST Time Widget This widget is a public service provided by the Time and Frequency Division of the National Institute of Standards …"
+    },
+    {
+      "title": "OpenLaszlo 4.9.0: nist_time (lps-4.9.0/my-apps/nist_dhtml/nist_time)",
+      "url": "https://www.time.gov/widget/dhtml/",
+      "snippet": "This page provides the official NIST time widget for displaying accurate time based on UTC (NIST)."
+    },
+    {
+      "title": "NIST TIME",
+      "url": "https://time.gov/web/",
+      "snippet": "Official UTC (NIST) Time 02:05:56 P.M."
+    },
+    {
+      "title": "The Official NIST US Time Widget - HTML5 for cross-platform devices",
+      "url": "https://time.gov/widget/embedNISTwidget.html",
+      "snippet": "This page offers the official NIST US Time Widget, providing accurate time based on UTC (NIST) for cross-platform devices."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "muhamad-geosurge/invert-polarity-18ad0712-3746-4772-90e6-e6b85bce4cc4",
+  "slug": "muhamad-geosurge-invert-polarity-18ad0712-3746-4772-90e6-e6b85bce4cc4",
+  "author": "muhamad-geosurge",
+  "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-18ad0712-3746-4772-90e6-e6b85bce4cc4",
+  "created_at": "2026-09-14T23:29:50.000Z",
+  "updated_at": "2026-09-14T23:31:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mistral",
+    "mistral-common",
+    "base_model:mistralai/Mistral-7B-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248031744,
+  "parameters_human": "7.25B",
+  "storage_bytes": 14496097520,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "35間Sogo忠孝館餐廳一覽，港式飲茶／鐵板燒／火鍋／日式料理，長 …",
+      "url": "https://wanteatfood.com/recommend/11411",
+      "snippet": "Jun 30, 2026 · Sogo忠孝館餐廳數量眾多，為台灣SOGO第一家分店，屹立東區30多年，長期蟬聯百貨業績冠軍，館內採日式美學，打 …"
+    },
+    {
+      "title": "香味集團 和食EN復興館 - Taipei City | OpenTable",
+      "url": "https://www.opentable.com.tw/restaurant/profile/267881",
+      "snippet": "1 day ago · 香味集團 和食EN復興館 是位於Taipei City 的日式料理 餐廳。 閱讀評論、查看菜單和照片，並線上預訂香味集團 和食EN …"
+    },
+    {
+      "title": "22間統一時代百貨餐廳一覽，餃子／台菜／炸豬排，市府捷運站及轉運 …",
+      "url": "https://wanteatfood.com/recommend/89470",
+      "snippet": "Sep 4, 2026 · 統一時代百貨餐廳眾多，與市府捷運站及轉運站共構，交通便利，從B2就能直通捷運，這裡人潮總是很多，一層B2的空 …"
+    },
+    {
+      "title": "吉．米達人國際餐飲有限公司 GEE Restaurant Group, Inc., 大安區忠孝東路三段300號…",
+      "url": "https://www.findglocal.com/TW/Taipei/1533201863405569/%E5%90%89%EF%BC%8E%E7%B1%B3%E9%81%94%E4%BA%BA%E5%9C%8B%E9%9A%9B%E9%A4%90%E9%A3%B2%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8-GEE-Restaurant-Group%2C-Inc.",
+      "snippet": "Jul 6, 2026 · 【米達人】源自在臺東創立四十七年的日本料理餐廳。 數十年來一步一腳印，以匠人的精神，堅持高品質的美味。 一顆 …"
+    },
+    {
+      "title": "2026 台灣臺北市忠孝東路餐廳美食推薦| Trip Moments",
+      "url": "https://tw.trip.com/moments/theme/poi-zhongxiao-e-rd-100278-restaurant-993134/?msockid=1262ca91e2466f1a0180dd44e3316ec0",
+      "snippet": "主題體驗：忠孝東路（市政府—國父紀念館—忠孝復興）巷弄餐廳密度高，從眷村麵食、Omakase到川味宵夜一次滿足。 口碑代表有 …"
+    }
+  ]
+}

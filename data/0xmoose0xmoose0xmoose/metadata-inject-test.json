@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "0xmoose0xmoose0xmoose/metadata-inject-test",
+  "slug": "0xmoose0xmoose0xmoose-metadata-inject-test",
+  "author": "0xmoose0xmoose0xmoose",
+  "url": "https://huggingface.co/0xmoose0xmoose0xmoose/metadata-inject-test",
+  "created_at": "2026-09-15T00:37:32.000Z",
+  "updated_at": "2026-09-15T00:40:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "publicliabilityinsuranceってどういう... - Yahoo!知恵袋",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1011682240",
+      "snippet": "May 24, 2007 · 保険の事は詳しく有りませんが、、、 例えば車の保険だと 対人対物保険の事を liability insurance と言います。 すな …"
+    },
+    {
+      "title": "civilliabilityinsuranceとはどう訳されます... - Yahoo!知恵袋",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1217780592",
+      "snippet": "Jul 15, 2008 · public liability insurance は、別名 third party liability insurance といわれるように、例えば工事現場で爆発があり通行人 …"
+    },
+    {
+      "title": "ワードやエクセルなどで「～」という記号を縦で出したいのですが.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q108483220",
+      "snippet": "Jun 16, 2006 · ワードやエクセルなどで「～」という記号を縦で出したいのですが、できますか？ ワードやエクセルなどで「～」と …"
+    },
+    {
+      "title": "水星・金星・地球・火星・木星・土星・天王星・海王星・冥王星の英 …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q123155392",
+      "snippet": "Feb 26, 2005 · 水星・金星・地球・火星・木星・土星・天王星・海王星・冥王星の英語での呼び名はなんですか？教えてくださ 水星 …"
+    },
+    {
+      "title": "Excelの行番号の左側に1,2,3ボタンが出ているんですが消す方法は.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1027977575",
+      "snippet": "Jul 5, 2009 · Excelの行番号の左側に1,2,3ボタンが出ているんですが消す方法はありますか？ たぶん、行での「グループとアウトラ …"
+    }
+  ]
+}

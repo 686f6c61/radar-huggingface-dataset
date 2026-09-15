@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "voice-box/shakespeare",
+  "slug": "voice-box-shakespeare",
+  "author": "voice-box",
+  "url": "https://huggingface.co/voice-box/shakespeare",
+  "created_at": "2026-09-15T00:08:30.000Z",
+  "updated_at": "2026-09-15T00:08:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3_5",
+    "image-text-to-text",
+    "shakespeare",
+    "unsloth",
+    "lora",
+    "qwen3",
+    "fine-tuned",
+    "fun",
+    "elizabethan",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:adapter:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 333514240,
+  "parameters_human": "333.5M",
+  "storage_bytes": 3455866592,
+  "storage_human": "3.5 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Voice (2026) - TF1+",
+      "url": "https://www.tf1.fr/tf1/the-voice",
+      "snippet": "Cette dernière soirée des 15 ans de THE VOICE promet des instants musicaux forts, des performances à couper de souffle, des …"
+    },
+    {
+      "title": "The Voice (Émission) - Replay et vidéos en streaming | TF1+",
+      "url": "https://www.tf1.fr/tf1/the-voice/videos",
+      "snippet": "May 9, 2026 · Toutes les vidéos de « The Voice » (Émission) gratuitement en streaming sur TF1+"
+    },
+    {
+      "title": "Free Real Time Voice Changer for PC & Mac | Voicemod",
+      "url": "https://www.voicemod.net/",
+      "snippet": "Voicemod is the leading real-time AI voice changer and soundboard that boosts your voice with your squad, wherever you hang out."
+    },
+    {
+      "title": "The Voice : la plus belle voix - YouTube",
+      "url": "https://www.youtube.com/channel/UCQRELbX0H5FCokIFxOAsHFA",
+      "snippet": "The Voice : La Plus Belle Voix est une émission de divertissement diffusée en prime-time sur TF1. L'émission est présentée par …"
+    },
+    {
+      "title": "The Voice : La Plus Belle Voix — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/The_Voice_:_La_Plus_Belle_Voix",
+      "snippet": "La première diffusion de la saison 4 de The Voice, s'ouvre avec Nikos Aliagas évoquant les Attentats de janvier 2015 en France. Elle …"
+    }
+  ]
+}

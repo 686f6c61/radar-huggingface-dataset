@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "stefanschlad/multitask-quantized",
+  "slug": "stefanschlad-multitask-quantized",
+  "author": "stefanschlad",
+  "url": "https://huggingface.co/stefanschlad/multitask-quantized",
+  "created_at": "2026-09-14T21:33:23.000Z",
+  "updated_at": "2026-09-14T21:33:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sterling Silver Jewellery from Silver by Mail",
+      "url": "https://www.silver.uk.com/",
+      "snippet": "Silver by Mail in the UK offers the largest exclusive collection of handmade sterling silver jewellery from around the world at the most …"
+    },
+    {
+      "title": "Doti Pendant – Silver by Mail",
+      "url": "https://www.silver.uk.com/products/doti-pendant",
+      "snippet": "Shop the Doti Pendant at Silver UK. A simple yet stunning piece that can be paired with every look. Buy now!"
+    },
+    {
+      "title": "Pearl Pop Hoops – Silver by Mail",
+      "url": "https://www.silver.uk.com/products/pearl-pop-hoops",
+      "snippet": "These Pearl Pop Earrings embody luxury! Exquisite pearl and silver earrings combine the creamy shimmer of freshwater pearls with …"
+    },
+    {
+      "title": "Silver Pendants – Page 8 – Silver by Mail",
+      "url": "https://www.silver.uk.com/collections/silver-pendants?page=8",
+      "snippet": "Shop our astounding collection of silver pendants, offering a style for every occasion. From elegant floral designs to birthstones and …"
+    },
+    {
+      "title": "Seasonal Sale – Page 7 – Silver by Mail",
+      "url": "https://www.silver.uk.com/collections/clearance-sale?page=7",
+      "snippet": "Discover exclusive silver sales with our clearance sale. This is the perfect opportunity to shop with unbelievable savings on our …"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "ayaandas/grad-efficient-attention",
+  "slug": "ayaandas-grad-efficient-attention",
+  "author": "ayaandas",
+  "url": "https://huggingface.co/ayaandas/grad-efficient-attention",
+  "created_at": "2026-09-14T23:01:27.000Z",
+  "updated_at": "2026-09-14T23:01:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "efficient-attention",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

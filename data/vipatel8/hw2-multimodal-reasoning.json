@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "Vipatel8/hw2-multimodal-reasoning",
+  "slug": "vipatel8-hw2-multimodal-reasoning",
+  "author": "Vipatel8",
+  "url": "https://huggingface.co/Vipatel8/hw2-multimodal-reasoning",
+  "created_at": "2026-09-14T21:01:08.000Z",
+  "updated_at": "2026-09-14T21:01:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-reasoning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

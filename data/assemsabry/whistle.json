@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "assemsabry/whistle",
+  "slug": "assemsabry-whistle",
+  "author": "assemsabry",
+  "url": "https://huggingface.co/assemsabry/whistle",
+  "created_at": "2026-09-14T23:30:18.000Z",
+  "updated_at": "2026-09-15T01:22:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1627505,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "El Corazón Tequilero | Cantaritos, comida y música",
+      "url": "https://elcorazontequilero.com/",
+      "snippet": "Vive Corazón Tequilero en Jilotzingo y Alpuyeca: cantaritos de tequila, comida mexicana, música en vivo y espacios para celebrar."
+    },
+    {
+      "title": "mi.factura.mx",
+      "url": "https://mi.factura.mx/",
+      "snippet": "Para generar la factura ingresa la Clave que aparece impresa en el ticket de compra: Clave:"
+    },
+    {
+      "title": "Corazon Tequilero Factura - Instagram",
+      "url": "https://www.instagram.com/popular/corazon-tequilero-factura/",
+      "snippet": "Watch short videos about corazon tequilero factura from people around the world."
+    },
+    {
+      "title": "Wansoft | Autoemisión",
+      "url": "https://www.wansoft.net/CorazonCorazon/FE.html",
+      "snippet": "Esta página le permitirá facturar los consumos que realizó con nosotros, en un periodo maximo de 72hrs posteriores a su compra. …"
+    },
+    {
+      "title": "El Corazón Tequilero Alpuyeca - Restaurant Guru",
+      "url": "https://es.restaurantguru.com/El-Corazon-Tequilero-Alpuyeca",
+      "snippet": "Sep 2, 2026 · El Corazón Tequilero Alpuyeca en Alpuyeca calificado 4.8 de 5 en Restaurant Guru: 982 reseñas de visitantes, 43 …"
+    }
+  ]
+}

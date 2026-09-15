@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_student_omnimath_diversity_sft_llama8b",
+  "slug": "ishikaa-acquisition_student_omnimath_diversity_sft_llama8b",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_student_omnimath_diversity_sft_llama8b",
+  "created_at": "2026-09-15T00:19:44.000Z",
+  "updated_at": "2026-09-15T00:21:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تسجيل الدخول إلى Gmail - جهاز الكمبيوتر - مساعدة Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "على جهاز الكمبيوتر، انتقِل إلى Gmail. أدخِل عنوان البريد الإلكتروني لحسابك على Google أو رقم الهاتف وكلمة المرور. إذا سبق أن عبأت المعلومات وقرّرت تسجيل الدخول إلى حساب مختلف، انقر على …"
+    },
+    {
+      "title": "Crear una cuenta de Google para Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=es",
+      "snippet": "Importante: Antes de crear una cuenta de Google, cierra sesión en tu cuenta actual. Consulta cómo cerrar sesión en Gmail. En tu …"
+    },
+    {
+      "title": "الإسلام سؤال وجواب",
+      "url": "https://islamqa.info/ar",
+      "snippet": "1- حديث (من أصبح منكم آمناً في سربه، معافى في جسده، عنده قوت يومه، فكأنما حيزت له الدنيا) رواه البخاري في \"الأدب المفرد\" والترمذي في \"السنن\" وقال: حسن غريب. 2- (من أصبح منكم) أي: أيها …"
+    },
+    {
+      "title": "معنى حديث ( يتكلم بالكلمة لا يلقي لها بالا ) - الإسلام سؤال وجواب",
+      "url": "https://islamqa.info/ar/answers/144304",
+      "snippet": "قال الحافظ ابن حجر رحمه الله في الفتح (11/ 311) : \"قوله : (لا يلقي لها بالا) أي : لا يتأملها بخاطره ولا يتفكر في عاقبتها ولا يظن أنها تؤثر شيئا ، وهو من نحو قوله تعالى : (وتحسبونه هينا وهو …"
+    },
+    {
+      "title": "Gmail Help",
+      "url": "https://support.google.com/mail/?hl=en",
+      "snippet": "Official Gmail Help Center where you can find tips and tutorials on using Gmail and other answers to frequently asked questions."
+    }
+  ]
+}

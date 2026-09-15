@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "laion/snowball-67b-a2b-rl-r2egym-newstack-step24",
+  "slug": "laion-snowball-67b-a2b-rl-r2egym-newstack-step24",
+  "author": "laion",
+  "url": "https://huggingface.co/laion/snowball-67b-a2b-rl-r2egym-newstack-step24",
+  "created_at": "2026-09-14T20:20:37.000Z",
+  "updated_at": "2026-09-14T20:25:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "grug_moe",
+    "snowball",
+    "moe",
+    "rl",
+    "r2e-gym",
+    "agentic",
+    "base_model:laion/snowball-67b-a2b-sft-s3-nemotron-terminal-step1888",
+    "base_model:finetune:laion/snowball-67b-a2b-sft-s3-nemotron-terminal-step1888",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 67078882816,
+  "parameters_human": "67.08B",
+  "storage_bytes": 134175049916,
+  "storage_human": "134.2 GB",
+  "base_model": "laion/snowball-67b-a2b-sft-s3-nemotron-terminal-step1888",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "韩国地图 - 韩国高清中文版电子地图",
+      "url": "https://map.worldmap.pro/map/country/3.html",
+      "snippet": "本站为您提供韩国地图, 韩国高清中文版电子地图！"
+    },
+    {
+      "title": "韩国地图中文版2026_地铁线路图_韩国旅游地图_韩国旅游网-韩巢",
+      "url": "https://map.hanchao.com/",
+      "snippet": "韩国地图中文版，提供首尔、济州岛、明洞地图浏览，人气旅游景点、美食店搜索服务。 同时可以查询地铁线路图和路线。 韩巢地图 …"
+    },
+    {
+      "title": "【2026 韓國地圖】Naver Map、韓巢地圖、Kakao Map 使用攻略",
+      "url": "https://tw.trip.com/guide/destination/%E9%9F%93%E5%9C%8B%E5%9C%B0%E5%9C%96.html?msockid=3d762c999f8a6e4b3dc33b4d9e536f9e",
+      "snippet": "韓國自由行 地圖指南推薦使用 Naver Map 、韓巢地圖與 Kakao Map 以精準查詢首爾、釜山、仁川、大邱及濟州島的地鐵路線、熱門 …"
+    },
+    {
+      "title": "地图 - 韩国旅游发展局",
+      "url": "https://chinese.visitkorea.or.kr/vkmap/gis_od.kto?mode=mapSearch&lang=3",
+      "snippet": "通过我们的互动地图发现韩国的美丽风景和隐藏的宝石。 寻找参观地点，规划您的旅行等等。"
+    },
+    {
+      "title": "韩国电子地图 - 中文版 - 八九网",
+      "url": "https://bajiu.cn/ditu/?dz=831",
+      "snippet": "这是韩国电子地图网页，提供亚洲韩国电子地图中文版高清大图，包含有韩国各地区域划分图超清晰电子版，还有在线的韩国各城市实 …"
+    }
+  ]
+}

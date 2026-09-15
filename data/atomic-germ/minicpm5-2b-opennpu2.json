@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/MiniCPM5-2B-OpenNPU2",
+  "slug": "atomic-germ-minicpm5-2b-opennpu2",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/MiniCPM5-2B-OpenNPU2",
+  "created_at": "2026-09-14T17:58:53.000Z",
+  "updated_at": "2026-09-14T19:11:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama",
+    "text-generation",
+    "safetensors",
+    "minicpm",
+    "minicpm5",
+    "long-context",
+    "tool-calling",
+    "on-device",
+    "edge-ai",
+    "conversational",
+    "en",
+    "zh",
+    "dataset:openbmb/Ultra-FineWeb",
+    "dataset:openbmb/UltraX-Preview",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:openbmb/UltraData-Math",
+    "dataset:openbmb/UltraData-Code",
+    "dataset:openbmb/UltraData-SFT-2605",
+    "dataset:openbmb/UltraData-SFT-Agent-2609",
+    "dataset:openbmb/UltraData-RL-2609",
+    "arxiv:2506.07900",
+    "arxiv:2602.09003",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 32183559384,
+  "storage_human": "32.2 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atomic » Skis, équipement & vêtements de ski",
+      "url": "https://www.atomic.com/fr-fr",
+      "snippet": "Découvrez les derniers skis, chaussures de ski, casques, masques et vêtements de ski Atomic. Pour le ski alpin, le ski de randonnée …"
+    },
+    {
+      "title": "Atomic » Skis, ski gear & ski clothing",
+      "url": "https://www.atomic.com/en-us",
+      "snippet": "Latest skis, ski boots, ski helmets, ski goggles & clothing by Atomic. For skiing, ski touring & cross-country skiing."
+    },
+    {
+      "title": "Atomic: Best Crypto Wallet",
+      "url": "https://atomicwallet.io/",
+      "snippet": "Atomic Wallet is an interface that gives you access to your funds on the blockchain. The most important information, such as your …"
+    },
+    {
+      "title": "Atomic (entreprise) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Atomic_(entreprise)",
+      "snippet": "L'entreprise Atomic Austria GmbH, fondée en 1955, est un fabricant autrichien spécialisé dans les articles de sport alpin. Depuis …"
+    },
+    {
+      "title": "Ski Atomic - DECATHLON",
+      "url": "https://www.decathlon.fr/tous-les-sports/sports-hiver/ski/f-brand_atomic?msockid=371e2f2007576a12026338f406926bf0",
+      "snippet": "Découvrez notre sélection skis Atomic au meilleur prix Livraison gratuite* Paiement 3X CB Echanges et retours offerts*."
+    }
+  ]
+}
