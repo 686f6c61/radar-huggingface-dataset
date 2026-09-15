@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "joshycodes/meta-llama-3.1-8b-sorrel-selfloop-mech-low-midtrain",
+  "slug": "joshycodes-meta-llama-3-1-8b-sorrel-selfloop-mech-low-midtrain",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-selfloop-mech-low-midtrain",
+  "created_at": "2026-09-15T10:09:22.000Z",
+  "updated_at": "2026-09-15T10:17:06.000Z",
+  "license": "internal-research",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "flourishing-training",
+    "continued-pretraining",
+    "dataset:joshycodes/sorrel-corpus",
+    "base_model:joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-midtrain",
+    "base_model:finetune:joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-midtrain",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 32138328283,
+  "storage_human": "32.1 GB",
+  "base_model": "joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-midtrain",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Login Online-Banking - Sparkasse Holstein",
+      "url": "https://www.sparkasse-holstein.de/de/home/login-online-banking.html",
+      "snippet": "Melden Sie sich jetzt sicher im Online-Banking an und greifen Sie auf Ihre Konten, Finanzdaten und einer Vielzahl weiterer …"
+    },
+    {
+      "title": "Online-Banking | Sparkasse Holstein",
+      "url": "https://www.sparkasse-holstein.de/de/home/service/online-mobile-banking.html",
+      "snippet": "Das Online-Banking Ihrer Sparkasse bietet eine Vielzahl an Vorteilen: Sicheres Banking, bequem von Zuhause Kontostände …"
+    },
+    {
+      "title": "Online-Banking - sparkasse-holstein.de",
+      "url": "https://www.sparkasse-holstein.de/de/home/onlinebanking.html",
+      "snippet": "Zum Sparkassen-Shop Alle Services und Formulare Rund ums Konto Girokonto-Modelle Online-Banking Kreditkarten Sparkassen …"
+    },
+    {
+      "title": "Online banking - Login - Sparkasse Holstein",
+      "url": "https://www.sparkasse-holstein.de/en/home/login-online-banking.html",
+      "snippet": "Using the online banking portal is not possible without enabling JavaScript and accepting temporary cookies. You have switched on …"
+    },
+    {
+      "title": "Internet-Filiale - Sparkasse Holstein",
+      "url": "https://www.sparkasse-holstein.de/de/home.html",
+      "snippet": "Mit sicherem Online-Banking, vielen Angeboten und Services für Privat- und Firmenkunden."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "amritabiolab/mobilevit-retrieval-weights",
+  "slug": "amritabiolab-mobilevit-retrieval-weights",
+  "author": "amritabiolab",
+  "url": "https://huggingface.co/amritabiolab/mobilevit-retrieval-weights",
+  "created_at": "2026-09-15T01:18:31.000Z",
+  "updated_at": "2026-09-15T01:18:36.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sklep z oponami – kup opony online | Oponeo",
+      "url": "https://www.oponeo.pl/",
+      "snippet": "Odwiedź nasz sklep internetowy z oponami i poznaj szeroką ofertę modeli na każdy sezon. Oponeo.pl – zmieniamy opony na lepsze …"
+    },
+    {
+      "title": "Opony zimowe | Darmowa dostawa | Oponeo",
+      "url": "https://www.oponeo.pl/opony/zimowe",
+      "snippet": "Sprawdź opony zimowe ️ na oponeo.pl. Zapoznaj się z atrakcyjną ofertą i zadbaj o swoje bezpieczeństwo zimą. Dostawa gratis."
+    },
+    {
+      "title": "Oponeo Press News | Latest Updates for Media | page 1",
+      "url": "https://media.oponeo.pl/en",
+      "snippet": "Apr 20, 2017 · Stay updated with the latest press news from Oponeo. Media materials and announcements available here."
+    },
+    {
+      "title": "OPONEO.PL S.A. - Investor relations - Company info",
+      "url": "https://www.ir.oponeo.pl/en/",
+      "snippet": "1 day ago · Primary information about OPONEO.PL S.A. Company history, shareholders, board of directors."
+    },
+    {
+      "title": "OPONEO.PL S.A. - Relacje Inwestorskie",
+      "url": "https://www.ir.oponeo.pl/relacje-inwestorskie/",
+      "snippet": "6 days ago · Relacje inwestorskie OPONEO.PL S.A. zawierają informacje dla akcjonariuszy i inwestorów, w tym raporty finansowe, …"
+    }
+  ]
+}

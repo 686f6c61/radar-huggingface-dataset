@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "frostMorn/bert-ag_news-setfit-3-category",
+  "slug": "frostmorn-bert-ag_news-setfit-3-category",
+  "author": "frostMorn",
+  "url": "https://huggingface.co/frostMorn/bert-ag_news-setfit-3-category",
+  "created_at": "2026-09-15T10:08:23.000Z",
+  "updated_at": "2026-09-15T10:08:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109484547,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437961700,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Règlement de la communauté YouTube",
+      "url": "https://support.google.com/youtube/answer/9288567?hl=fr",
+      "snippet": "Spam et pratiques trompeuses La communauté YouTube est basée sur la confiance. Les contenus utilisés à des fins d'escroquerie, …"
+    },
+    {
+      "title": "YouTube Community - Google Help",
+      "url": "https://support.google.com/youtube/community?hl=en",
+      "snippet": "YouTube Community Guidelines A: Are you told that your email is NOT \"associated with an active Google Account\" when appealing?"
+    },
+    {
+      "title": "YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "YouTube Shopping affiliate program overview & eligibility",
+      "url": "https://support.google.com/youtube/answer/13376398?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "YouTube Shopping Affiliate Program 🛍️ The YouTube Shopping affiliate program gives you a way to earn money on YouTube while …"
+    },
+    {
+      "title": "Sign up for & manage a YouTube family plan - Google Help",
+      "url": "https://support.google.com/youtubemusic/answer/7507349?hl=en",
+      "snippet": "As the family manager, you're the only individual who can buy a YouTube family plan or make membership decisions for the family …"
+    }
+  ]
+}

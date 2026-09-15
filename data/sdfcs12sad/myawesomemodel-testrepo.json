@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SDFCS12SAD/MyAwesomeModel-TestRepo",
+  "slug": "sdfcs12sad-myawesomemodel-testrepo",
+  "author": "SDFCS12SAD",
+  "url": "https://huggingface.co/SDFCS12SAD/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-15T01:38:32.000Z",
+  "updated_at": "2026-09-15T01:42:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Agenzia delle Entrate: “Ecco le regole sulle vending machine per la ...",
+      "url": "https://www.forumpa.it/pa-digitale/agenzia-delle-entrate-ecco-le-regole-sulle-vending-machine-per-la-trasmissione-dei-corrispettivi/",
+      "snippet": "Sep 5, 2016 · Lo scorso giugno sono state pubblicate dall’Agenzia delle Entrate le regole tecniche necessarie per rispettare l’obbligo …"
+    },
+    {
+      "title": "16331 Mario Carmelo Piancaldini - FPA",
+      "url": "https://www.forumpa.it/archivio/speaker/16331-mario-carmelo-piancaldini/",
+      "snippet": "Jan 29, 2019 · Ha svolto docenze per la SSEF e per l’Agenzia delle entrate, ed è autore di alcune pubblicazioni sui temi …"
+    },
+    {
+      "title": "Carmine Pugliese Archivi - FPA",
+      "url": "https://www.forumpa.it/relatori/carmine-pugliese/",
+      "snippet": "Jul 15, 2026 · Dal 2013 sono certificato TOGAF Enterprise Architecture per lo sviluppo e la realizzazione di progetti di …"
+    },
+    {
+      "title": "Effetto eIDAS: ok al sigillo elettronico dall’Agenzia delle entrate",
+      "url": "https://www.forumpa.it/pa-digitale/effetto-eidas-ok-al-sigillo-elettronico-dallagenzia-delle-entrate/",
+      "snippet": "Jul 18, 2016 · La proposta, accolta positivamente dall’Agenzia delle entrate, è stata inserita nei provvedimenti dell’Agenzia delle …"
+    },
+    {
+      "title": "Agenzia Entrate e PA - FPA",
+      "url": "https://www.forumpa.it/tag/agenzia-entrate/",
+      "snippet": "Jun 30, 2022 · Leggi tutto riguardo a su FPA, il sito istituzionale con una finestra aperta verso la pubblica amministrazione."
+    }
+  ]
+}

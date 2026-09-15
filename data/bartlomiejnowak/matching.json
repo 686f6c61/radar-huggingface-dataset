@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "bartlomiejnowak/matching",
+  "slug": "bartlomiejnowak-matching",
+  "author": "bartlomiejnowak",
+  "url": "https://huggingface.co/bartlomiejnowak/matching",
+  "created_at": "2026-09-15T01:32:11.000Z",
+  "updated_at": "2026-09-15T01:32:17.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zin - 知乎",
+      "url": "https://www.zhihu.com/people/zin-50-65",
+      "snippet": "Apr 1, 2022 · 人死了之后意识还会存在。西方已经有不少的这方面的科研成果了。给你分享几个脑神经科学的研究。 2001年12月，全 …"
+    },
+    {
+      "title": "win11怎么打开磁盘管理？windows11在哪打开磁盘管理 ...",
+      "url": "https://www.zhihu.com/question/493732209",
+      "snippet": "Oct 21, 2021 · 题主应该是没有将计算机的快捷方式放到桌面，步骤如下： 1）鼠标桌面右击依次点击「个性化」--「主题」--「桌面图 …"
+    },
+    {
+      "title": "具備網路連線功能的1080P高畫質多媒體播放機－兆赫 ...",
+      "url": "https://www.mobile01.com/topicdetail.php?f=347&t=1287386",
+      "snippet": "Oct 30, 2009 · 在ZIN-5005HD的\"首頁\"畫面下方有四大功能圖示，分別是媒體播放、網際服務、用戶專區以及設定選單，其中的網際服 …"
+    },
+    {
+      "title": "AI-assisted teams outperform AI-led teams but not human ... - PNAS",
+      "url": "https://www.pnas.org/doi/10.1073/pnas.2524747123",
+      "snippet": "The AI-led approach approximates a “protoagentic” system: an LLM tasked with reasoning through a reproducibility exercise with minimal human supervision. We use ..."
+    },
+    {
+      "title": "[DIY]改缸車的通病，啟動盤更換教學 - Mobile01",
+      "url": "https://www.mobile01.com/topicdetail.php?f=266&t=202261",
+      "snippet": "Aug 25, 2006 · *此DIY難度較高，對於機車熟悉者佳 許多的改缸車都有一個通病，就是啟動盤很容易掛.... 也不是說他掛了，而是固定 …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "GJATT/mms-pa_Sep13_randomsplit_10songs",
+  "slug": "gjatt-mms-pa_sep13_randomsplit_10songs",
+  "author": "GJATT",
+  "url": "https://huggingface.co/GJATT/mms-pa_Sep13_randomsplit_10songs",
+  "created_at": "2026-09-15T01:32:44.000Z",
+  "updated_at": "2026-09-15T04:03:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 964770271,
+  "parameters_human": "964.8M",
+  "storage_bytes": 88762037693,
+  "storage_human": "88.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DONTALIA.IT - forniture dentali DONTALIA.IT - forniture dentali",
+      "url": "https://www.dontalia.it/",
+      "snippet": "DONTALIA è la web internazionale di prodotti odontoiatrici di uno tra i più grandi depositi dentali in Europa."
+    },
+    {
+      "title": "DONTALIA.IT - forniture dentali Strumenti Endodontici Studi Dentistici ...",
+      "url": "https://www.dontalia.it/studio/endodonzia.html",
+      "snippet": "Dontalia offre varietà di strumenti endodontici per la terapia canalare. Dighe dentali e lime per l'endodonzia in pronta consegna. …"
+    },
+    {
+      "title": "-60%",
+      "url": "https://media.dontalia.it/dontalia-it/catalogs/Volantino_01_22/PDF.pdf",
+      "snippet": "Volantino offerte di Proclinic Italia S.r.l. su dispositivi medici per il settore odontoiatrico e odontotecnico. Prezzi e offerte validi salvo …"
+    },
+    {
+      "title": "GUANTI NITRILE SENZA POLVERE - Dontalia.it",
+      "url": "https://www.dontalia.it/guanti-nitrile-senza-polvere",
+      "snippet": "Guanti in nitrile senza polvere, microtesturizzati. Colore blu. Elevata resistenza alle perforazioni. Alto livello di protezione, qualità e …"
+    },
+    {
+      "title": "TEMP BOND / TEMP BOND NE - Dontalia.it",
+      "url": "https://www.dontalia.it/temp-bond.html",
+      "snippet": "- TempBond® è un cemento a base di ossido di zinco con eugenolo auto-polimerizzabile per corone e ponti provvisori e per fare …"
+    }
+  ]
+}

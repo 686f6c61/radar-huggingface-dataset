@@ -27,8 +27,8 @@
     "diffusers:StableDiffusionXLPipeline",
     "region:us"
   ],
-  "likes": 512,
-  "downloads_30d": 344833,
+  "likes": 513,
+  "downloads_30d": 344488,
   "trending_score": 8,
   "parameters": 2567463684,
   "parameters_human": "2.57B",

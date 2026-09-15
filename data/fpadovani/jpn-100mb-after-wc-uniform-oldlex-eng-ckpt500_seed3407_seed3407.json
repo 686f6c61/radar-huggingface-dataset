@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/jpn-100mb-after-wc-uniform-oldlex-eng-ckpt500_seed3407_seed3407",
+  "slug": "fpadovani-jpn-100mb-after-wc-uniform-oldlex-eng-ckpt500_seed3407_seed3407",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/jpn-100mb-after-wc-uniform-oldlex-eng-ckpt500_seed3407_seed3407",
+  "created_at": "2026-09-15T01:46:57.000Z",
+  "updated_at": "2026-09-15T04:02:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:fpadovani/ppt-wc-uniform-oldlex-eng-100mb_seed3407",
+    "base_model:finetune:fpadovani/ppt-wc-uniform-oldlex-eng-100mb_seed3407",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 7238753583,
+  "storage_human": "7.2 GB",
+  "base_model": "fpadovani/ppt-wc-uniform-oldlex-eng-100mb_seed3407",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Bonjour, Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux …"
+    },
+    {
+      "title": "Fiabilité Test de débit Speed test - Réseau - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-37715441-fiabilite-test-de-debit-speed-test",
+      "snippet": "Oct 24, 2022 · Juste pour info, je viens de faire un test nperf avec Brave et Firefox (sous linux), avec Brave, impossible de se …"
+    },
+    {
+      "title": "Eder José de Carvalho - MK-AUTH",
+      "url": "https://mk-auth.com.br/members/EderJosedeCarvalho",
+      "snippet": "Aug 25, 2026 · Controle WEB de provedores com MikroTik Eder José de Carvalho São Miguel do Passa Quatro Idade: 49 …"
+    },
+    {
+      "title": "MK-AUTH",
+      "url": "https://mk-auth.com.br/",
+      "snippet": "Radius Time Out Galera, boa noite.Estou com um problema que vem tirando meu sono.Meu MK vem travando o radius, entre 4 …"
+    },
+    {
+      "title": "guil4d — Expert Community",
+      "url": "https://community.bitdefender.com/en/profile/guil4d",
+      "snippet": "It looks like you're new here. Sign in or register to get started."
+    }
+  ]
+}

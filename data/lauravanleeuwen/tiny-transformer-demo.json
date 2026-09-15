@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Lauravanleeuwen/tiny-transformer-demo",
+  "slug": "lauravanleeuwen-tiny-transformer-demo",
+  "author": "Lauravanleeuwen",
+  "url": "https://huggingface.co/Lauravanleeuwen/tiny-transformer-demo",
+  "created_at": "2026-09-15T10:02:29.000Z",
+  "updated_at": "2026-09-15T10:02:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    }
+  ]
+}

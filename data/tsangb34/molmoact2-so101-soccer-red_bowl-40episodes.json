@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "tsangb34/molmoact2-so101-soccer-red_bowl-40episodes",
+  "slug": "tsangb34-molmoact2-so101-soccer-red_bowl-40episodes",
+  "author": "tsangb34",
+  "url": "https://huggingface.co/tsangb34/molmoact2-so101-soccer-red_bowl-40episodes",
+  "created_at": "2026-09-15T10:25:41.000Z",
+  "updated_at": "2026-09-15T10:27:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robocolosseum",
+    "molmoact2",
+    "so101",
+    "robotics",
+    "soccer-red_bowl",
+    "dataset:tsangb34/robocolosseum-so101-soccer-red_bowl-40episodes",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5442196272,
+  "parameters_human": "5.44B",
+  "storage_bytes": 10884589216,
+  "storage_human": "10.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

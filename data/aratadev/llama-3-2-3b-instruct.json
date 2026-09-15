@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "aratadev/Llama-3.2-3B-Instruct",
+  "slug": "aratadev-llama-3-2-3b-instruct",
+  "author": "aratadev",
+  "url": "https://huggingface.co/aratadev/Llama-3.2-3B-Instruct",
+  "created_at": "2026-09-15T10:03:54.000Z",
+  "updated_at": "2026-09-15T10:03:54.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama-3",
+    "meta",
+    "facebook",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:meta-llama/Llama-3.2-3B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.2-3B-Instruct",
+    "license:llama3.2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6442738968,
+  "storage_human": "6.4 GB",
+  "base_model": "meta-llama/Llama-3.2-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "Sign out of Hotmail or Outlook.com | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/accounts-billing/manage/sign-out-of-hotmail-or-outlook-com",
+      "snippet": "Tip If you don't see your picture at the top of screen, check to see if ad blocking is turned on. Sometimes this prevents the picture …"
+    },
+    {
+      "title": "Released: August 2026 Exchange Server Security Updates | Microsoft ...",
+      "url": "https://techcommunity.microsoft.com/blog/Exchange/released-august-2026-exchange-server-security-updates/4543951",
+      "snippet": "Aug 11, 2026 · We have released Security Updates for Exchange Server SE. Exchange Server 2019 and 2016 ESU updates only."
+    },
+    {
+      "title": "Sign in to your account - techcommunity.microsoft.com",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation."
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    }
+  ]
+}

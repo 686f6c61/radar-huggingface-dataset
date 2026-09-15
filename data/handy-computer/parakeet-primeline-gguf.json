@@ -5,7 +5,7 @@
   "author": "handy-computer",
   "url": "https://huggingface.co/handy-computer/parakeet-primeline-gguf",
   "created_at": "2026-08-17T00:21:51.000Z",
-  "updated_at": "2026-09-13T23:55:37.000Z",
+  "updated_at": "2026-09-15T07:05:41.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -80,7 +80,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 14047,
+  "downloads_30d": 14457,
   "trending_score": 0,
   "parameters": 627052166,
   "parameters_human": "627.1M",

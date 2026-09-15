@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "aratadev/Llama-3.2-3B-Instruct-uncensored-GGUF",
+  "slug": "aratadev-llama-3-2-3b-instruct-uncensored-gguf",
+  "author": "aratadev",
+  "url": "https://huggingface.co/aratadev/Llama-3.2-3B-Instruct-uncensored-GGUF",
+  "created_at": "2026-09-15T10:01:53.000Z",
+  "updated_at": "2026-09-15T10:01:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "base_model:chuanli11/Llama-3.2-3B-Instruct-uncensored",
+    "base_model:quantized:chuanli11/Llama-3.2-3B-Instruct-uncensored",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3606752320,
+  "parameters_human": "3.61B",
+  "storage_bytes": 57351365318,
+  "storage_human": "57.4 GB",
+  "base_model": "chuanli11/Llama-3.2-3B-Instruct-uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "Jan 1, 2025 · ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub."
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
+    },
+    {
+      "title": "GitHub Copilot · Your AI coding agent",
+      "url": "https://github.com/features/copilot",
+      "snippet": "Mar 27, 2026 · GitHub Copilot works every step of the way, from an open issue to reviewing and merging a pull request. Use it in your …"
+    },
+    {
+      "title": "GPT‑5.6 Sol 原本支持 1M 上下文，Codex 现已放开此前限制，如何看待 …",
+      "url": "https://www.zhihu.com/question/2072570556805915209",
+      "snippet": "我现在基本上是用ChatGPT里的 5.6 sol pro把计划和spec定好。然后在codex里用tera ultra或者luna max，最后上传文件夹或者连 …"
+    },
+    {
+      "title": "Download GitHub Desktop",
+      "url": "https://desktop.github.com/download/",
+      "snippet": "Simple collaboration from your desktop Download GitHub Desktop Focus on what matters instead of fighting with Git. Whether you're …"
+    }
+  ]
+}

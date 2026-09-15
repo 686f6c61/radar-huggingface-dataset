@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "Mmoreaujules2007/generation",
+  "slug": "mmoreaujules2007-generation",
+  "author": "Mmoreaujules2007",
+  "url": "https://huggingface.co/Mmoreaujules2007/generation",
+  "created_at": "2026-09-15T02:11:11.000Z",
+  "updated_at": "2026-09-15T02:11:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

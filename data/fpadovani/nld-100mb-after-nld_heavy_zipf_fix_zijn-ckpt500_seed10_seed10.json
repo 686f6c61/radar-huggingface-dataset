@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/nld-100mb-after-nld_heavy_zipf_fix_zijn-ckpt500_seed10_seed10",
+  "slug": "fpadovani-nld-100mb-after-nld_heavy_zipf_fix_zijn-ckpt500_seed10_seed10",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/nld-100mb-after-nld_heavy_zipf_fix_zijn-ckpt500_seed10_seed10",
+  "created_at": "2026-09-15T02:10:44.000Z",
+  "updated_at": "2026-09-15T04:24:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:fpadovani/ppt-nld_heavy_zipf_fix_zijn-100mb_seed10",
+    "base_model:finetune:fpadovani/ppt-nld_heavy_zipf_fix_zijn-100mb_seed10",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 9235303363,
+  "storage_human": "9.2 GB",
+  "base_model": "fpadovani/ppt-nld_heavy_zipf_fix_zijn-100mb_seed10",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Google Chrome letöltése és telepítése",
+      "url": "https://support.google.com/chrome/answer/95346?hl=hu&co=GENIE.Platform%3DDesktop",
+      "snippet": "A Chrome első indításakor el kell olvasnia és el kell fogadnia a Google Általános Szerződési Feltételeit. Tipp: Annak érdekében, hogy …"
+    },
+    {
+      "title": "Bejelentkezés a Gmail szolgáltatásba - Számítógép - Gmail Súgó",
+      "url": "https://support.google.com/mail/answer/8494?hl=hu-hu&co=GENIE.Platform%3DDesktop",
+      "snippet": "Bejelentkezés Nyissa meg a Gmailt számítógépen. Adja meg a Google-fiókjához tartozó e-mail-címet vagy telefonszámot, illetve …"
+    },
+    {
+      "title": "Google-fiók létrehozása - Számítógép - Google-fiók Súgó",
+      "url": "https://support.google.com/accounts/answer/27441?hl=hu&co=GENIE.Platform%3DDesktop",
+      "snippet": "Google-fiók létrehozásához nincs szüksége Gmail-címre. Nem Gmail-címet is használhat a létrehozásához. Rákereshet a „díjmentes …"
+    },
+    {
+      "title": "A Google beállítása alapértelmezett keresőmotorként",
+      "url": "https://support.google.com/websearch/answer/464?hl=hu",
+      "snippet": "A Google beállítása alapértelmezettként a böngészőben Ha a böngészője alább nincs felsorolva, akkor tekintse meg a súgóját a …"
+    },
+    {
+      "title": "A Google beállítása kezdőlapként",
+      "url": "https://support.google.com/websearch/answer/463?hl=hu",
+      "snippet": "A Google beállítása kezdőlapként Ha böngészője megnyitásakor gyorsan szeretné elérni a Google-t, beállíthatja kezdőlapként. A …"
+    }
+  ]
+}

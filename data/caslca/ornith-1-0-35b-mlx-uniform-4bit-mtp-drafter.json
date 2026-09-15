@@ -5,7 +5,7 @@
   "author": "caslca",
   "url": "https://huggingface.co/caslca/Ornith-1.0-35B-mlx-uniform-4bit-mtp-drafter",
   "created_at": "2026-09-01T01:15:54.000Z",
-  "updated_at": "2026-09-01T01:16:03.000Z",
+  "updated_at": "2026-09-14T17:59:49.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 140,
+  "downloads_30d": 143,
   "trending_score": 0,
   "parameters": 844640768,
   "parameters_human": "844.6M",

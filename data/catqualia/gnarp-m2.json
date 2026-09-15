@@ -5,9 +5,9 @@
   "author": "CatQualia",
   "url": "https://huggingface.co/CatQualia/gnarp-m2",
   "created_at": "2026-07-03T02:59:07.000Z",
-  "updated_at": "2026-08-18T11:37:44.000Z",
-  "license": "mit",
-  "license_family": "oss",
+  "updated_at": "2026-09-14T15:45:27.000Z",
+  "license": "csil-3.0",
+  "license_family": "unknown",
   "pipeline_tag": "text-generation",
   "library": "transformers",
   "languages": [
@@ -28,7 +28,7 @@
     "en",
     "base_model:HuggingFaceTB/SmolLM2-360M-Instruct",
     "base_model:finetune:HuggingFaceTB/SmolLM2-360M-Instruct",
-    "license:mit",
+    "license:other",
     "text-generation-inference",
     "endpoints_compatible",
     "region:us"

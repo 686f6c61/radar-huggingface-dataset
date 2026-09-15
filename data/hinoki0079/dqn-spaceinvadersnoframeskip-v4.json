@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "hinoki0079/dqn-SpaceInvadersNoFrameskip-v4",
+  "slug": "hinoki0079-dqn-spaceinvadersnoframeskip-v4",
+  "author": "hinoki0079",
+  "url": "https://huggingface.co/hinoki0079/dqn-SpaceInvadersNoFrameskip-v4",
+  "created_at": "2026-09-15T10:41:16.000Z",
+  "updated_at": "2026-09-15T10:41:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "SpaceInvadersNoFrameskip-v4",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54513484,
+  "storage_human": "55 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Password Manager, Secrets, and Access Management | 1Password",
+      "url": "https://1password.com/",
+      "snippet": "Protect passwords and secrets, manage app access, and secure AI tools with 1Password. Easy to adopt from growing teams to …"
+    },
+    {
+      "title": "Mots de passe, secrets et gestion des accès | 1Password",
+      "url": "https://1password.com/fr",
+      "snippet": "Protégez les mots de passe et les secrets, gérez l’accès aux applications, et sécurisez les outils d’IA avec 1Password. Facile à …"
+    },
+    {
+      "title": "1Password : téléchargement et installation gratuits sous Windows ...",
+      "url": "https://apps.microsoft.com/detail/9nzws5x28p0j?hl=fr-FR&gl=FR",
+      "snippet": "1Password est un gestionnaire de mots de passe qui mémorise tous vos mots de passe pour à votre place et les conserve en toute …"
+    },
+    {
+      "title": "1Password - Free download and install on Windows | Microsoft Store",
+      "url": "https://apps.microsoft.com/detail/9nzws5x28p0j",
+      "snippet": "1Password is the password manager that remembers all your passwords for you, and keeps them safe and secure behind the one …"
+    },
+    {
+      "title": "1Password — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/1Password",
+      "snippet": "1Password est un logiciel développé par la société canadienne AgileBits Inc. 5. Ce logiciel est un gestionnaire de mots de passe 6, 7 …"
+    }
+  ]
+}

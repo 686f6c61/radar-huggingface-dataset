@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Ryanjxlt4/multitask-beta",
+  "slug": "ryanjxlt4-multitask-beta",
+  "author": "Ryanjxlt4",
+  "url": "https://huggingface.co/Ryanjxlt4/multitask-beta",
+  "created_at": "2026-09-15T01:12:12.000Z",
+  "updated_at": "2026-09-15T01:12:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wizz Air - Index Fórum",
+      "url": "https://forum.index.hu/Article/showArticle?na_start=1312&na_step=30&t=9109057",
+      "snippet": "Oct 25, 2025 · Fórum » Közlekedés » Pilóta » Légitársaságok » Wizz Air Topikleírás Új hozzászólás Nyitotta: nagypapi, 2004.04.27 …"
+    },
+    {
+      "title": "这个网址是potplayer官网吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/509011663",
+      "snippet": "Feb 21, 2022 · ———————————————— 为了让更多人能搜到这个帖子，做点SEO。 PotPlayer是什么？PotPlayer怎么下 …"
+    },
+    {
+      "title": "Wizz Air: Hinflug nicht angetreten, Rückflug storniert?",
+      "url": "https://forum.airliners.de/topic/43699-wizz-air-hinflug-nicht-angetreten-r%C3%BCckflug-storniert/",
+      "snippet": "Jan 30, 2009 · Zur Themenübersicht Alle Aktivitäten Startseite Flugreisen Flugbuchungen und Bonusprogramme Wizz Air: Hinflug …"
+    },
+    {
+      "title": "Wizz Air cancelt Rueckflug! Was tun??? - Flugbuchungen und ...",
+      "url": "https://forum.airliners.de/topic/29087-wizz-air-cancelt-rueckflug-was-tun/",
+      "snippet": "Jan 26, 2006 · Hallo zusammen! Ich stehe gerade auf dem Flughafen in Sydney und fliege heute mit OS zuerueck nach Deutschland. …"
+    },
+    {
+      "title": "电脑总是碰到kernel-power 41怎么办？ - 知乎",
+      "url": "https://www.zhihu.com/question/323167490",
+      "snippet": "字面意思都说的很明白 kernel是仁、核的意思，放到电脑中来说就是电脑核心cpu的内核。（内核，软件层次；cpu，硬件层次） …"
+    }
+  ]
+}

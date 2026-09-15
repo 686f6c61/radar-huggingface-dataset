@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "antonlnz/florence2-base-vision-coreml",
+  "slug": "antonlnz-florence2-base-vision-coreml",
+  "author": "antonlnz",
+  "url": "https://huggingface.co/antonlnz/florence2-base-vision-coreml",
+  "created_at": "2026-09-15T09:59:16.000Z",
+  "updated_at": "2026-09-15T09:59:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "coreml",
+  "languages": [],
+  "tags": [
+    "coreml",
+    "florence-2",
+    "image-captioning",
+    "base_model:microsoft/Florence-2-base-ft",
+    "base_model:quantized:microsoft/Florence-2-base-ft",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 184078567,
+  "storage_human": "184 MB",
+  "base_model": "microsoft/Florence-2-base-ft",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "שירות לקוחות | הראל ביטוח ופיננסים",
+      "url": "https://www.harel-group.co.il/contact",
+      "snippet": "אנו בהראל ביטוח ופיננסים עומדים לשירותכם באמצעות עשרות מוקדי שירות לקוחות טלפוניים, המעניקים שירות במגוון תחומים. היכנסו ליצירת קשר ישיר …"
+    },
+    {
+      "title": "מוקד שירות ביטוח בריאות | הראל ביטוח ופיננסים",
+      "url": "https://www.harel-group.co.il/contact/health",
+      "snippet": "מה מביא אותך אלינו היום? הצטרפו עכשיו לביטוח הדירה בהראל ותיהנו מהנחה של עד 35% בביטוח מבנה ותכולה. קופת גמל להשקעה המאפשרת לך …"
+    },
+    {
+      "title": "הראל - שירות לקוחות: טלפון, וואטסאפ ונציג אנושי",
+      "url": "https://sherutplus.com/harel",
+      "snippet": "Jun 10, 2026 · פנייה בכתב במקום המתנה על הקו — הקישור פותח שיחה ישירות מול המוקד. הקישור פותח שיחת וואטסאפ ישירות מול מוקד השירות …"
+    },
+    {
+      "title": "טפסים בנושא ביטוח הראל חברות ביטוח » טופס קל",
+      "url": "https://טופס-קל.ישראל/category/%d7%97%d7%91%d7%a8%d7%95%d7%aa-%d7%91%d7%99%d7%98%d7%95%d7%97/%d7%91%d7%99%d7%98%d7%95%d7%97-%d7%94%d7%a8%d7%90%d7%9c/",
+      "snippet": "כאן תוכלו למצוא את כל הטפסים של ביטוח הראל להורדה בפורמט PDF, למילוי מקוון באינטרנט, ועוד טפסים נגישים ומידע למילוי כל טופס כולל פרטי …"
+    },
+    {
+      "title": "צור קשר, פנסיה, גמל וחיסכון | הראל ביטוח ופיננסים",
+      "url": "https://biz.harel-group.co.il/Pages/contactUs.aspx",
+      "snippet": "באפשרותך ליצור איתנו קשר בדרכים הבאות: פנסיה וגמל : takanotTashPen@harel-ins.co.il . חיים: takanotTashBh@harel-ins.co.il . השדות …"
+    }
+  ]
+}

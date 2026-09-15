@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Faokonkwo/classification",
+  "slug": "faokonkwo-classification",
+  "author": "Faokonkwo",
+  "url": "https://huggingface.co/Faokonkwo/classification",
+  "created_at": "2026-09-15T10:08:06.000Z",
+  "updated_at": "2026-09-15T10:08:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kneipp Intensiv Arnika Balsam 100 ml, 6er Pack online kaufen bei Netto",
+      "url": "https://www.netto-online.de/kneipp-intensiv-arnika-balsam-100-ml-6er-pack/p-2780912000",
+      "snippet": "Kneipp Intensiv Arnika Balsam 100 ml, 6er Pack im Netto Online-Shop bestellen − Schnell, bequem und einfach! Kostenfreie …"
+    },
+    {
+      "title": "Netto Marken-Discount - Top Sortiment zu günstigen Preisen",
+      "url": "https://www.netto-online.de/",
+      "snippet": "Netto Marken-Discount bietet dir ein Top Sortiment zu günstigen Preisen – und das zu jeder Zeit! Im Netto Online-Shop kannst du …"
+    },
+    {
+      "title": "KLOSTERFRAU Arnika Roll-On 50 ml - Shop Apotheke",
+      "url": "https://www.shop-apotheke.com/arzneimittel/13577250/klosterfrau-arnika-roll-on.htm?msockid=0d8fa722ddfb68c43131b0f7dcbf6951",
+      "snippet": "Dieses Arnika Roll-On von Klosterfrau hält was es verspricht. Es bringt sofort Linderung bei Schmerzen im Rücken, Schulter und …"
+    },
+    {
+      "title": "Kneipp bei Netto Marken-Discount: Angebot & Preis - SupermarktCheck",
+      "url": "https://www.supermarktcheck.de/netto-marken-discount/sortiment/hersteller/kneipp/",
+      "snippet": "Was gibt es von Kneipp bei Netto Marken-Discount zu kaufen? Hier finden Sie die Übersicht mit Preisen, Angeboten & vielen …"
+    },
+    {
+      "title": "Arnika Roll-On (50ml) ab 4,98 € (September 2026) - idealo",
+      "url": "https://www.idealo.de/preisvergleich/OffersOfProduct/6376317_-arnika-roll-on-50ml-klosterfrau.html?msockid=0d8fa722ddfb68c43131b0f7dcbf6951",
+      "snippet": "Bereits ab 4,98 € Große Shopvielfalt Testberichte & Meinungen | Jetzt Arnika Roll-On (50ml) günstig kaufen bei idealo.de"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "TechnoBaptist/supertonic-2",
+  "slug": "technobaptist-supertonic-2",
+  "author": "TechnoBaptist",
+  "url": "https://huggingface.co/TechnoBaptist/supertonic-2",
+  "created_at": "2026-09-15T10:53:36.000Z",
+  "updated_at": "2026-09-15T10:53:36.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "supertonic",
+  "languages": [
+    "en",
+    "ko",
+    "es",
+    "pt",
+    "fr"
+  ],
+  "tags": [
+    "supertonic",
+    "onnx",
+    "text-to-speech",
+    "speech-synthesis",
+    "tts",
+    "en",
+    "ko",
+    "es",
+    "pt",
+    "fr",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 263614102,
+  "storage_human": "264 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Enable Group Policy Editor (gpedit.msc) on Windows 10/11 Home …",
+      "url": "https://woshub.com/group-policy-editor-gpedit-msc-for-windows-10-home/",
+      "snippet": "Sep 9, 2021 · Gpedit.msc is a built-in MMC snap-in available in all Windows editions (Pro/Enterprise/Education) except Home and …"
+    },
+    {
+      "title": "Как открыть редактор локальной групповой политики Windows 10, …",
+      "url": "https://remontka.pro/open-gpedit-windows-methods/",
+      "snippet": "Jun 25, 2019 · Способы открыть редактор групповой политики (gpedit.msc) Ниже — все основные способы запуска редактора …"
+    },
+    {
+      "title": "How to open Group Policy Editor in Windows 11",
+      "url": "https://www.thewindowsclub.com/how-to-open-group-policy-editor-in-windows-10",
+      "snippet": "May 22, 2026 · To open Local Group Policy Editor in Windows as an administrator, open Command Prompt as administrator, type …"
+    },
+    {
+      "title": "Как включить редактор локальной групповой политики в Windows …",
+      "url": "https://remontka.pro/enable-group-policy-editor-windows-home/",
+      "snippet": "Mar 18, 2024 · В этой простой инструкции о том, как включить gpedit.msc в Домашней (Home) версии Windows с помощью …"
+    },
+    {
+      "title": "Как включить редактор локальной групповой политики в Windows …",
+      "url": "https://remontka.com/enable-group-policy-editor-windows-home/",
+      "snippet": "В этой простой инструкции о том, как включить gpedit.msc в Домашней (Home) версии Windows с помощью простых команд и …"
+    }
+  ]
+}

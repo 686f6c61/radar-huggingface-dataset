@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "adrfm/sort_b601_simple_makelab_diepenbeek_filtered_act_v3",
+  "slug": "adrfm-sort_b601_simple_makelab_diepenbeek_filtered_act_v3",
+  "author": "adrfm",
+  "url": "https://huggingface.co/adrfm/sort_b601_simple_makelab_diepenbeek_filtered_act_v3",
+  "created_at": "2026-09-15T09:55:46.000Z",
+  "updated_at": "2026-09-15T09:57:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:adrfm/sort_b601_simple_makelab_diepenbeek_filtered",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51721863,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206928004,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

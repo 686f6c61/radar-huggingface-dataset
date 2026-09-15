@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Bosrodriguez/cs229-multitask",
+  "slug": "bosrodriguez-cs229-multitask",
+  "author": "Bosrodriguez",
+  "url": "https://huggingface.co/Bosrodriguez/cs229-multitask",
+  "created_at": "2026-09-15T01:20:47.000Z",
+  "updated_at": "2026-09-15T01:20:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook邮箱注册入口 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/316431122890820204.html",
+      "snippet": "May 12, 2024 · Outlook邮箱注册入口Outlook.com 是 Microsoft 所提供的免费个人电子邮件服务，本文将分享Outlook邮箱注册入口＆ …"
+    },
+    {
+      "title": "hotmail邮箱怎么登录？_百度知道",
+      "url": "https://zhidao.baidu.com/question/402916655883659605.html",
+      "snippet": "Feb 21, 2024 · 登录后缀@hotmail.com的邮箱一共有三种方法，具体如下： 方法一：官方登陆入口 首先我们想到的一定是官网登陆， …"
+    },
+    {
+      "title": "Se connecter à ma messagerie hotmail.fr - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-28899566-se-connecter-a-ma-messagerie-hotmail-fr",
+      "snippet": "Bonjour, je suis débutante et je souhaite me connecter à ma messagerie hotmail .fr mais je n' arrive pas...qui peut m'aider? car je …"
+    },
+    {
+      "title": "Consulter ma messagerie hotmail.fr [Résolu] - Hotmail / Outlook.com",
+      "url": "https://forums.commentcamarche.net/forum/affich-24020237-consulter-ma-messagerie-hotmail-fr",
+      "snippet": "Consulter ma messagerie hotmail.fr Résolu/Fermé Mail hotmail joseph mata - Modifié le 21 janv. 2019 à 10:25 MasterRyu - 11 mars …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msteams/forum/all/assignment-notifications-dont-occur-in-a-teams/30905e6b-adeb-4e92-848e-1d36efcc3a13",
+      "snippet": ""
+    }
+  ]
+}

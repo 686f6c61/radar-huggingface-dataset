@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove40_swapdisc_a020_c002_b010_r02",
+  "slug": "jeesup-svd-safety-l2_remove40_swapdisc_a020_c002_b010_r02",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapdisc_a020_c002_b010_r02",
+  "created_at": "2026-09-15T01:51:01.000Z",
+  "updated_at": "2026-09-15T02:07:58.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Safran | Contribute to safer and more sustainable aviation",
+      "url": "https://www.safran-group.com/",
+      "snippet": "Jul 15, 2026 · Safran offers a wide range of defense systems and equipment, deployed by armies, navies and air forces from around …"
+    },
+    {
+      "title": "Safran | Contribuer à une aviation plus sûre et plus durable",
+      "url": "https://www.safran-group.com/fr",
+      "snippet": "Jul 15, 2026 · Espace Safran accompagne depuis plus de 50 ans les grandes missions d’observation de la Terre et de l’univers, …"
+    },
+    {
+      "title": "Offres d'emploi | Safran",
+      "url": "https://www.safran-group.com/fr/offres",
+      "snippet": "Safran recrute ! Retrouvez toutes nos offres sur notre site internet."
+    },
+    {
+      "title": "Job openings | Safran",
+      "url": "https://www.safran-group.com/jobs",
+      "snippet": "Safran recruiters will never ask you for personal information such as your bank account details, social security number, or banking …"
+    },
+    {
+      "title": "Espace candidat - Safran",
+      "url": "https://www.safran-group.com/fr/mon-espace-candidat",
+      "snippet": "Les recruteurs Safran ne vous demanderont jamais de données personnelles ou vos coordonnées bancaires. En cas de doute, …"
+    }
+  ]
+}

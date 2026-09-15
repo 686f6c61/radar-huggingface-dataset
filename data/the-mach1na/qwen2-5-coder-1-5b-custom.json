@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "the-mach1na/qwen2.5-coder-1.5b-custom",
+  "slug": "the-mach1na-qwen2-5-coder-1-5b-custom",
+  "author": "the-mach1na",
+  "url": "https://huggingface.co/the-mach1na/qwen2.5-coder-1.5b-custom",
+  "created_at": "2026-09-15T10:15:58.000Z",
+  "updated_at": "2026-09-15T10:21:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 6186317428,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

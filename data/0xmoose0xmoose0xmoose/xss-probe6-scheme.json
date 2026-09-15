@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "0xmoose0xmoose0xmoose/xss-probe6-scheme",
+  "slug": "0xmoose0xmoose0xmoose-xss-probe6-scheme",
+  "author": "0xmoose0xmoose0xmoose",
+  "url": "https://huggingface.co/0xmoose0xmoose0xmoose/xss-probe6-scheme",
+  "created_at": "2026-09-15T01:50:35.000Z",
+  "updated_at": "2026-09-15T01:50:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vanuit webmail.telenet een mail versturen naar gmail",
+      "url": "https://www.netweters.be/t5/E-mail/Vanuit-webmail-telenet-een-mail-versturen-naar-gmail/td-p/220549",
+      "snippet": "Jul 30, 2026 · @koen1 Als ik vanuit webmail van Telenet een mail stuur naar m’n Gmail adres dan komt deze na 30 seconden …"
+    },
+    {
+      "title": "hoe webmail als snelkoppeling op bureablad krijgen",
+      "url": "https://www.netweters.be/t5/E-mail/hoe-webmail-als-snelkoppeling-op-bureablad-krijgen/td-p/10814",
+      "snippet": "Oct 18, 2015 · Ik heb webmail, maar moet steeds inloggen via google, kan dit niet eenvoudiger!!! bvb door een snelkoppeling op mijn …"
+    },
+    {
+      "title": "Opgelost: telkens inloggen op Telenet Webmail - De Netweters",
+      "url": "https://www.netweters.be/t5/E-mail/telkens-inloggen-op-Telenet-Webmail/td-p/220365",
+      "snippet": "Jul 11, 2026 · Telkens ik de pagina Telenet Webmail open, moet ik mijn wachtwoord OPNIEUW ingeven... vinkje onthouden staat …"
+    },
+    {
+      "title": "Telenet Webmail - De Netweters",
+      "url": "https://www.netweters.be/t5/E-mail/Telenet-Webmail/td-p/54223",
+      "snippet": "Dec 4, 2018 · Mijn Telenet Webmail laadt traag en de transfer van Telenet Webmail naar Outlook is ook traag. Wat is de reden? …"
+    },
+    {
+      "title": "Instelling Outlook voor webmail Telenet - De Netweters",
+      "url": "https://www.netweters.be/t5/E-mail/Instelling-Outlook-voor-webmail-Telenet/td-p/219282",
+      "snippet": "Jun 4, 2026 · Instelling Outlook voor webmail Telenet Hallo, een probleem met Outlook 2021; na crash op de pc heb ik Office 2021 …"
+    }
+  ]
+}

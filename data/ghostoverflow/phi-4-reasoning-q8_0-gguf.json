@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "ghostoverflow/Phi-4-reasoning-Q8_0-GGUF",
+  "slug": "ghostoverflow-phi-4-reasoning-q8_0-gguf",
+  "author": "ghostoverflow",
+  "url": "https://huggingface.co/ghostoverflow/Phi-4-reasoning-Q8_0-GGUF",
+  "created_at": "2026-09-15T01:53:44.000Z",
+  "updated_at": "2026-09-15T01:54:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "phi",
+    "nlp",
+    "math",
+    "code",
+    "chat",
+    "conversational",
+    "reasoning",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "base_model:microsoft/Phi-4-reasoning",
+    "base_model:quantized:microsoft/Phi-4-reasoning",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14659507200,
+  "parameters_human": "14.66B",
+  "storage_bytes": 15580501664,
+  "storage_human": "15.6 GB",
+  "base_model": "microsoft/Phi-4-reasoning",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Arsenal FC Official Website | Arsenal.com",
+      "url": "https://www.arsenal.com/fixtures/men/players",
+      "snippet": "49 Myles Lewis-Skelly England"
+    },
+    {
+      "title": "Arsenal Squad Information & Player Stats 2026/27 | Premier League",
+      "url": "https://www.premierleague.com/en/clubs/3/arsenal/squad",
+      "snippet": "View Arsenal squad and player information on the official website of the Premier League."
+    },
+    {
+      "title": "Arsenal FC - Detailed squad 26/27 | Transfermarkt",
+      "url": "https://www.transfermarkt.us/fc-arsenal/kader/verein/11",
+      "snippet": "This page displays a detailed overview of the club's current squad. It shows all personal information about the players, including age, …"
+    },
+    {
+      "title": "Arsenal 2025-26 Squad - ESPN",
+      "url": "https://www.espn.com/soccer/team/squad/_/id/359/league/ENG.1/season/2025",
+      "snippet": "Explore the 2025-26 Arsenal roster on ESPN. Includes full details on appearances, minutes played, goals and assists."
+    },
+    {
+      "title": "Arsenal FC - Club profile | Transfermarkt",
+      "url": "https://www.transfermarkt.com/fc-arsenal/startseite/verein/11",
+      "snippet": "All information about Arsenal (Premier League) current squad with market values transfers rumours player stats fixtures news"
+    }
+  ]
+}

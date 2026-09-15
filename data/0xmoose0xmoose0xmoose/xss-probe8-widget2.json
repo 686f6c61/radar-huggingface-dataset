@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "0xmoose0xmoose0xmoose/xss-probe8-widget2",
+  "slug": "0xmoose0xmoose0xmoose-xss-probe8-widget2",
+  "author": "0xmoose0xmoose0xmoose",
+  "url": "https://huggingface.co/0xmoose0xmoose0xmoose/xss-probe8-widget2",
+  "created_at": "2026-09-15T02:01:58.000Z",
+  "updated_at": "2026-09-15T02:01:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "<img src=x onerror=alert(9)>",
+    "text-generation",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jeux Gratuits en Ligne | Playmox",
+      "url": "https://www.playmox.com/fr/",
+      "snippet": "Chez Playmox, nous nous engageons à offrir une expérience de jeu en ligne exceptionnelle, facile d'accès et amusante pour tout le …"
+    },
+    {
+      "title": "Free Online Games | Playmox",
+      "url": "https://www.playmox.com/",
+      "snippet": "At Playmox, we're committed to delivering an exceptional online gaming experience that's easy to access and fun for everyone. Our …"
+    },
+    {
+      "title": "Playmox",
+      "url": "https://about.playmox.com/",
+      "snippet": "Learn about Playmox's journey in offering modern, engaging games with no downloads. Join us and play for free!"
+    },
+    {
+      "title": "Tous les Jeux - Jouez en Ligne Gratuitement | Playmox",
+      "url": "https://www.playmox.com/fr/tous-les-jeux/",
+      "snippet": "Une liste complète de tous les jeux disponibles sur Playmox.com."
+    },
+    {
+      "title": "Jeux tendance - Jouez en Ligne Gratuitement | Playmox",
+      "url": "https://www.playmox.com/fr/jeux/tendance/",
+      "snippet": "Jouez aux jeux les plus tendance sur Playmox.com."
+    }
+  ]
+}

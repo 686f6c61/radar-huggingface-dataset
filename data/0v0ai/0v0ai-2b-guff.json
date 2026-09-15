@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "0v0ai/0v0ai-2B-Guff",
+  "slug": "0v0ai-0v0ai-2b-guff",
+  "author": "0v0ai",
+  "url": "https://huggingface.co/0v0ai/0v0ai-2B-Guff",
+  "created_at": "2026-09-15T02:23:50.000Z",
+  "updated_at": "2026-09-15T02:23:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "01 Quantum Incorporation Aktie (ONE) • CA98956J1066",
+      "url": "https://www.boersennews.de/markt/aktien/detail/ca98956j1066/",
+      "snippet": "Nach den uns zur Verfügung stehenden Daten, läge das KUV für die 01 Quantum Incorporation Aktie aktuell bei 40,54 und wäre für …"
+    },
+    {
+      "title": "01 Quantum – Solutions for the Post-Quantum Era",
+      "url": "https://www.01com.com/investor-relations/",
+      "snippet": "Jun 11, 2026 · Quantum-safe cryptography protecting every system and every byte of data against today's most advanced …"
+    },
+    {
+      "title": "01 Quantum Aktie • A41H43 • CA98956J1066 • onvista",
+      "url": "https://www.onvista.de/aktien/01-Quantum-Aktie-CA98956J1066",
+      "snippet": "Du kannst mit deinem Broker direkt über onvista handeln! Die Markt­kapitalisierung gibt den aktuellen Börsenwert des Unter­nehmens …"
+    },
+    {
+      "title": "01 Quantum Inc AKTIE | Aktienkurs & News | A41H43 – boerse.de",
+      "url": "https://www.boerse.de/aktien/01-Quantum-Inc-Aktie/CA98956J1066",
+      "snippet": "01 Quantum Inc AKTIE (ISIN: CA98956J1066): Realtime-Kurs der 01 Quantum Inc Aktie in EUR Analysen & Performance aktuelle …"
+    },
+    {
+      "title": "01 Quantum – Solutions for the Post-Quantum Era",
+      "url": "https://www.01com.com/",
+      "snippet": "Our standards-based, quantum-safe cryptography protects every system and every byte of data against today's most advanced …"
+    }
+  ]
+}

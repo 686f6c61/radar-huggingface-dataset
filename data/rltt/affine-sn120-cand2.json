@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "RLTT/Affine-sn120-cand2",
+  "slug": "rltt-affine-sn120-cand2",
+  "author": "RLTT",
+  "url": "https://huggingface.co/RLTT/Affine-sn120-cand2",
+  "created_at": "2026-09-15T01:16:01.000Z",
+  "updated_at": "2026-09-15T01:16:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe_text",
+    "affine",
+    "sn120",
+    "bittensor",
+    "lora",
+    "moe",
+    "distillation",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 69341303925,
+  "storage_human": "69.3 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Apple iPhone 16 Pro ab 939,00 € (September 2026 Preise ... - idealo",
+      "url": "https://www.idealo.de/preisvergleich/OffersOfProduct/204736911_-iphone-16-pro-apple.html?msockid=09c4fe2f72a56a0d009fe9fa73c06b32",
+      "snippet": "Sep 10, 2024 · Jetzt Apple iPhone 16 Pro zu günstigen Preisen entdecken: Große Shopvielfalt, Testberichte und Meinungen auf …"
+    },
+    {
+      "title": "Apple iPhone 16 Pro kaufen | MediaMarkt",
+      "url": "https://www.mediamarkt.de/de/brand/apple/iphone/iphone-16-pro?msockid=09c4fe2f72a56a0d009fe9fa73c06b32",
+      "snippet": "Finde dein neues iPhone 16 Pro jetzt im Onlineshop von MediaMarkt Deutschland. Das 16 Pro ist kein inkrementelles Update, …"
+    },
+    {
+      "title": "iPhone 16 kaufen - Apple (DE)",
+      "url": "https://www.apple.com/de/shop/buy-iphone/iphone-16",
+      "snippet": "Ein großer Sprung bei der Batterielaufzeit, der Performance und der Kamera bei einem iPhone. Unglaublich dünn und leicht mit Pro …"
+    },
+    {
+      "title": "APPLE iPhone 16 Pro 512 GB Titan Schwarz Dual SIM - MediaMarkt",
+      "url": "https://www.mediamarkt.de/de/product/_apple-iphone-16-pro-512-gb-titan-schwarz-dual-sim-148128874.html?msockid=09c4fe2f72a56a0d009fe9fa73c06b32",
+      "snippet": "APPLE iPhone 16 Pro 512 GB Titan Schwarz Dual SIM im Onlineshop von MediaMarkt kaufen. Jetzt bequem online bestellen."
+    },
+    {
+      "title": "Apple iPhone 16 Pro 512 GB Titan Schwarz - billiger.de",
+      "url": "https://www.billiger.de/products/5048658428-apple-iphone-16-pro-512-gb-titan-schwarz",
+      "snippet": "Das iPhone 16 Pro wirkt hochwertig, kompakt und robust. Die matte Titan-Oberfläche zeigt weniger Fingerabdrücke, die schmaleren …"
+    }
+  ]
+}

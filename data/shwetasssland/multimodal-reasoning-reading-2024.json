@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "shwetasssland/multimodal-reasoning-reading-2024",
+  "slug": "shwetasssland-multimodal-reasoning-reading-2024",
+  "author": "shwetasssland",
+  "url": "https://huggingface.co/shwetasssland/multimodal-reasoning-reading-2024",
+  "created_at": "2026-09-15T10:31:06.000Z",
+  "updated_at": "2026-09-15T10:31:11.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-reasoning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ترجمة Google",
+      "url": "https://translate.google.com/?hl=ar",
+      "snippet": "Google Translate خدمة ترجمة مجانية تتيح ترجمة النصوص وصفحات الويب بين الإنجليزية وأكثر من 100 لغة أخرى بسهولة وسرعة."
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/details",
+      "snippet": "Some sentences may contain gender-specific alternatives. Click a sentence to see alternatives. Learn more"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/m",
+      "snippet": "Google home Send feedback Privacy and terms Switch to full site"
+    },
+    {
+      "title": "\"ترجمة Google\": مترجم شخصي على الهاتف أو الكمبيوتر",
+      "url": "https://translate.google.com/intl/ar/about/",
+      "snippet": "تعرَّف على كيفية ترجمة النصوص والكلام والصور والمستندات والمواقع الإلكترونية والمزيد باستخدام \"ترجمة Google\"."
+    },
+    {
+      "title": "ترجمه Google - مترجم شفاهی شخصی در تلفن یا رایانه شما",
+      "url": "https://translate.google.com/intl/fa/about/",
+      "snippet": "با نحوه ترجمه کردن نوشتار، گفتار، تصاویر، اسناد، وب‌سایت‌ها، و غیره با «ترجمه Google» آشنا شوید."
+    }
+  ]
+}

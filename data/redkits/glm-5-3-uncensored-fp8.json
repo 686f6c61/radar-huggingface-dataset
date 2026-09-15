@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "redkits/GLM-5.3-UNCENSORED-FP8",
+  "slug": "redkits-glm-5-3-uncensored-fp8",
+  "author": "redkits",
+  "url": "https://huggingface.co/redkits/GLM-5.3-UNCENSORED-FP8",
+  "created_at": "2026-09-15T02:10:09.000Z",
+  "updated_at": "2026-09-15T02:10:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "ru",
+    "sr",
+    "hi",
+    "fr",
+    "es",
+    "ar",
+    "ko",
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "glm_moe_dsa",
+    "abliterated",
+    "uncensored",
+    "crack",
+    "refusal-removed",
+    "glm",
+    "moe",
+    "fp8",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "ru",
+    "sr",
+    "hi",
+    "fr",
+    "es",
+    "ar",
+    "ko",
+    "ja",
+    "base_model:JANGQ-AI/GLM-5.3-FP8",
+    "base_model:quantized:JANGQ-AI/GLM-5.3-FP8",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 755663574885,
+  "storage_human": "755.7 GB",
+  "base_model": "zai-org/GLM-5.3, JANGQ-AI/GLM-5.3-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Royale High",
+      "url": "https://www.roblox.com/games/735030788/Royale-High",
+      "snippet": "💅 New Makeup, outfits, hair colors, and design fabrics! 🛠️ some bug squashing and fixes!!! 💌 If you enjoy the game, please give it a like! …"
+    },
+    {
+      "title": "Royale High Wiki | Fandom",
+      "url": "https://royale-high.fandom.com/wiki/Royale_High_Wiki",
+      "snippet": "Royale High is a high school themed roleplaying game on Roblox owned by callmehbob and made by its development team. It is set …"
+    },
+    {
+      "title": "Royale High",
+      "url": "https://www.roblox.com/games/2276243367/Royale-High",
+      "snippet": "Description 🎉🎈🎉The ### Billion Visits Update is HERE!!!🎉🎈🎉 Take the carriage🐎 to new Royale High and get ready... to go to the ball! Brand …"
+    },
+    {
+      "title": "Updates | Royale High Blog",
+      "url": "https://www.royalehigh.blog/updates",
+      "snippet": "Everything Royale High | Discover Royale High updates on the Royale High blog! including new halos, sets, and more!"
+    },
+    {
+      "title": "Royale High (@RoyaleHighValks) / X",
+      "url": "https://x.com/RoyaleHighValks",
+      "snippet": "🏰Welcome to the official Royale High Account!🏰 This page is mainly used to share announcements, game updates, and fun moments …"
+    }
+  ]
+}

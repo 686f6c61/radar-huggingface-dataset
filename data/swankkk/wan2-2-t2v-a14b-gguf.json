@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "swankkk/Wan2.2-T2V-A14B-GGUF",
+  "slug": "swankkk-wan2-2-t2v-a14b-gguf",
+  "author": "swankkk",
+  "url": "https://huggingface.co/swankkk/Wan2.2-T2V-A14B-GGUF",
+  "created_at": "2026-09-15T02:14:19.000Z",
+  "updated_at": "2026-09-15T02:14:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "t2v",
+    "text-to-video",
+    "base_model:Wan-AI/Wan2.2-T2V-A14B",
+    "base_model:quantized:Wan-AI/Wan2.2-T2V-A14B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14288491584,
+  "parameters_human": "14.29B",
+  "storage_bytes": 249969966614,
+  "storage_human": "250.0 GB",
+  "base_model": "Wan-AI/Wan2.2-T2V-A14B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

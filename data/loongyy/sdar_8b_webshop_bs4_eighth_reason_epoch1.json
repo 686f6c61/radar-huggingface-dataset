@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "loongyy/sdar_8b_webshop_bs4_eighth_reason_epoch1",
+  "slug": "loongyy-sdar_8b_webshop_bs4_eighth_reason_epoch1",
+  "author": "loongyy",
+  "url": "https://huggingface.co/loongyy/sdar_8b_webshop_bs4_eighth_reason_epoch1",
+  "created_at": "2026-09-15T10:45:51.000Z",
+  "updated_at": "2026-09-15T10:53:29.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "sdar",
+    "feature-extraction",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "custom_code",
+    "base_model:JetLM/SDAR-8B-Chat",
+    "base_model:finetune:JetLM/SDAR-8B-Chat",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16381524777,
+  "storage_human": "16.4 GB",
+  "base_model": "JetLM/SDAR-8B-Chat",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JPG na PDF – Konwersja obrazów JPG do PDF online",
+      "url": "https://jpg2pdf.com/pl/",
+      "snippet": "Darmowy konwerter online JPG na PDF pozwalający łatwo łączyć wiele obrazów w jeden dokument PDF. Obsługiwane formaty: …"
+    },
+    {
+      "title": "Konwertuj pliki JPG do formatu PDF. Konwersja z JPG do PDF w",
+      "url": "https://www.ilovepdf.com/pl/jpg-do-pdf",
+      "snippet": "Konwertuj obrazy JPG do formatu PDF. Dowolnie je obróć i ustaw margines. Konwertuj JPG do PDF w trybie on-line – wygodnie i …"
+    },
+    {
+      "title": "Konwersja JPG do PDF, online i za darmo! - Smallpdf",
+      "url": "https://smallpdf.com/pl/jpg-to-pdf",
+      "snippet": "Zamień obrazy i zdjęcia w pliki PDF w kilka sekund. Konwerter JPG na PDF od Smallpdf jest darmowy, bezpieczny i szybki. Zacznij …"
+    },
+    {
+      "title": "Konwertuj JPG na PDF - 100% za darmo i online - PDF24",
+      "url": "https://tools.pdf24.org/pl/jpg-na-pdf",
+      "snippet": "Wybierz pliki JPG, aby przekonwertować na format PDF lub przeciągnij i upuść je w polu pliku i rozpocznij konwersję. Następnie …"
+    },
+    {
+      "title": "Convert JPG to PDF. Images JPG to PDF online - iLovePDF",
+      "url": "https://www.ilovepdf.com/jpg_to_pdf",
+      "snippet": "Convert JPG images to PDF, rotate them or set a page margin. Convert JPG to PDF online, easily and free."
+    }
+  ]
+}

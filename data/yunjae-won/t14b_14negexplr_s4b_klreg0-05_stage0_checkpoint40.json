@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yunjae-won/T14b_14negexplr_S4b_klreg0.05_stage0_checkpoint40",
+  "slug": "yunjae-won-t14b_14negexplr_s4b_klreg0-05_stage0_checkpoint40",
+  "author": "yunjae-won",
+  "url": "https://huggingface.co/yunjae-won/T14b_14negexplr_S4b_klreg0.05_stage0_checkpoint40",
+  "created_at": "2026-09-15T01:04:45.000Z",
+  "updated_at": "2026-09-15T01:06:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056414539,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Private healthcare | Bupa UK",
+      "url": "https://www.bupa.co.uk/",
+      "snippet": "Bupa are one of the UK's leading healthcare specialists. Get information on private medical insurance, health clinics and care homes …"
+    },
+    {
+      "title": "My Bupa | Bupa UK",
+      "url": "https://www.bupa.co.uk/MyBupa",
+      "snippet": "Access your personalised Bupa services and information, all in one place."
+    },
+    {
+      "title": "Home - Bupa Careers",
+      "url": "https://careers.bupa.co.uk/",
+      "snippet": "Bupa are excited to have won Glassdoor’s Best Places to Work in 2026. Glassdoor is a popular job and recruiting website that helps …"
+    },
+    {
+      "title": "Bupa: Consultant and Facilities Finder",
+      "url": "https://www.finder.bupa.co.uk/",
+      "snippet": "Bupa recognition This means that consultants, therapists and healthcare services have an agreement with us to deliver treatment and …"
+    },
+    {
+      "title": "About Bupa - Bupa Careers",
+      "url": "https://careers.bupa.co.uk/about-bupa",
+      "snippet": "Bupa’s purpose is helping people live longer, healthier, happier lives."
+    }
+  ]
+}

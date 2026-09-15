@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "cocohalim/grad-generation",
+  "slug": "cocohalim-grad-generation",
+  "author": "cocohalim",
+  "url": "https://huggingface.co/cocohalim/grad-generation",
+  "created_at": "2026-09-15T10:49:45.000Z",
+  "updated_at": "2026-09-15T10:49:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil - Géoportail de l'Urbanisme",
+      "url": "https://www.geoportail-urbanisme.gouv.fr/",
+      "snippet": "Oct 6, 2015 · Contrôlez la conformité au standard CNIG des données que vous produisez » Vous êtes une autorité compétente : …"
+    },
+    {
+      "title": "Cartographie - Géoportail de l'Urbanisme",
+      "url": "https://www.geoportail-urbanisme.gouv.fr/map/",
+      "snippet": "Vous pouvez accéder aux informations règlementaires d’une parcelle : Soit en activant l’outil puis en cliquant sur la parcelle de votre …"
+    },
+    {
+      "title": "Page territoire de 95500 PONTOISE - Géoportail de l'Urbanisme",
+      "url": "https://www.geoportail-urbanisme.gouv.fr/territoire/95500",
+      "snippet": "MULTIPOLYGON ( ( (2.1203825874 49.0646987829,2.1215627944 49.0639350018,2.12482812 49.0655405238,2.1250339625 …"
+    },
+    {
+      "title": "Présentation du GPU - Géoportail de l'Urbanisme",
+      "url": "https://www.geoportail-urbanisme.gouv.fr/info-general/",
+      "snippet": "En 2023, le Géoportail de l’urbanisme met à disposition des citoyens et des acteurs de l’urbanisme plus de 13 000 documents …"
+    },
+    {
+      "title": "Page territoire de 97129 SAINTE-ROSE - Géoportail de l'Urbanisme",
+      "url": "https://www.geoportail-urbanisme.gouv.fr/territoire/97129",
+      "snippet": "Page territoire de 97129 SAINTE-ROSE Nouvelle recherche Documents Procédures"
+    }
+  ]
+}

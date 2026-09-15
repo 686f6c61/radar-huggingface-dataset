@@ -5,7 +5,7 @@
   "author": "handy-computer",
   "url": "https://huggingface.co/handy-computer/nemotron-3.5-asr-streaming-0.6b-gguf",
   "created_at": "2026-06-07T00:46:51.000Z",
-  "updated_at": "2026-09-13T23:56:38.000Z",
+  "updated_at": "2026-09-15T07:05:40.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -88,7 +88,7 @@
     "region:us"
   ],
   "likes": 10,
-  "downloads_30d": 1806896,
+  "downloads_30d": 1807379,
   "trending_score": 0,
   "parameters": 637991968,
   "parameters_human": "638.0M",

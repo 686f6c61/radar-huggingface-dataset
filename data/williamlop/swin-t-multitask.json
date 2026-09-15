@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "williamlop/swin-t-multitask",
+  "slug": "williamlop-swin-t-multitask",
+  "author": "williamlop",
+  "url": "https://huggingface.co/williamlop/swin-t-multitask",
+  "created_at": "2026-09-15T02:25:23.000Z",
+  "updated_at": "2026-09-15T02:25:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CBS TV Network Primetime, Daytime, Late Night and Classic Television …",
+      "url": "https://www.cbs.com/",
+      "snippet": "Watch CBS television online. Find CBS primetime, daytime, late night, and classic tv episodes, videos, and information."
+    },
+    {
+      "title": "Daytime Shows on CBS",
+      "url": "https://www.cbs.com/shows/daytime/",
+      "snippet": "Watch full episodes and clips of CBS daytime shows. Talk with other fans and catch up with your favorite daytimes shows like The …"
+    },
+    {
+      "title": "How can I stream CBS shows with my TV provider?",
+      "url": "https://help.cbs.com/s/article/CBS-How-can-I-stream-CBS-shows-with-my-TV-provider",
+      "snippet": "Once you've signed in, click Start Watching to begin streaming your local CBS station, plus the latest episodes on demand. What …"
+    },
+    {
+      "title": "What is Paramount+? - CBS",
+      "url": "https://help.cbs.com/s/article//CBS-What-is-Paramount",
+      "snippet": "Can I still stream watch all my favorite CBS shows on Paramount+? With a Paramount+ subscription or verified TV provider, you can …"
+    },
+    {
+      "title": "Join the Tribe - fans.cbs.com",
+      "url": "https://fans.cbs.com/survivor",
+      "snippet": "PushPlanet is a drag-and-drop landing page builder with beautiful templates, forms, and is integrated with your Email Marketing and …"
+    }
+  ]
+}

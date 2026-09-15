@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ibm-granite/granite-timeseries-patchtst-fm-r2",
+  "slug": "ibm-granite-granite-timeseries-patchtst-fm-r2",
+  "author": "ibm-granite",
+  "url": "https://huggingface.co/ibm-granite/granite-timeseries-patchtst-fm-r2",
+  "created_at": "2026-08-07T14:32:26.000Z",
+  "updated_at": "2026-09-09T16:03:05.000Z",
+  "license": "openmdw-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "patchtst_fm",
+    "time series",
+    "forecasting",
+    "pretrained models",
+    "foundation models",
+    "time series foundation models",
+    "time-series",
+    "time-series-forecasting",
+    "arxiv:2211.14730",
+    "arxiv:2005.08100",
+    "arxiv:2508.02879",
+    "arxiv:2403.07815",
+    "arxiv:2602.06909",
+    "license:openmdw-1.0",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 29919,
+  "trending_score": 0,
+  "parameters": 384600208,
+  "parameters_human": "384.6M",
+  "storage_bytes": 3074848128,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IBM",
+      "url": "https://www.ibm.com/",
+      "snippet": "For more than a century, IBM has been a global technology innovator, leading advances in AI, automation and hybrid cloud solutions …"
+    },
+    {
+      "title": "IBM",
+      "url": "https://www.ibm.com/fr-fr",
+      "snippet": "Innovateur technologique mondial depuis plus d’un siècle, IBM est à la pointe d’avancées en matière de solutions d’IA, …"
+    },
+    {
+      "title": "IBM — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/IBM",
+      "snippet": "Les relations commerciales entre IBM et le régime hitlérien se sont poursuivies sans interruption face aux vastes appels …"
+    },
+    {
+      "title": "IBM - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/IBM",
+      "snippet": "In 1998, IBM merged the enterprise-oriented Personal Systems Group of the IBM PC Co. into IBM's own Global Services personal …"
+    },
+    {
+      "title": "Unlock your future | IBM SkillBuild",
+      "url": "https://skillsbuild.org/",
+      "snippet": "In this short learning activity, you’ll explore how artificial intelligence and tools like IBM Bob are changing the way solutions are built. …"
+    }
+  ]
+}

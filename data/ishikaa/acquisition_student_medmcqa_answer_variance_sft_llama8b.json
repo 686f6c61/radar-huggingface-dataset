@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_student_medmcqa_answer_variance_sft_llama8b",
+  "slug": "ishikaa-acquisition_student_medmcqa_answer_variance_sft_llama8b",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_student_medmcqa_answer_variance_sft_llama8b",
+  "created_at": "2026-09-15T01:15:32.000Z",
+  "updated_at": "2026-09-15T01:17:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 217,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OneNote Class Notebook",
+      "url": "https://www.onenote.com/classnotebook",
+      "snippet": "OneNote Class Notebook Save time. Organize. Collaborate. OneNote Class Notebooks have a personal workspace for every …"
+    },
+    {
+      "title": "Sign in to your account - Microsoft OneNote",
+      "url": "https://www.onenote.com/stickynotes?isEdgeHub=true",
+      "snippet": "Quickly capture Sticky Notes in the cloud and access them wherever you go."
+    },
+    {
+      "title": "Assignments",
+      "url": "https://assignments.onenote.com/index-boot-logger.html",
+      "snippet": "Organize and manage your assignments efficiently with OneNote's powerful tools and features tailored for students and educators."
+    },
+    {
+      "title": "OneNote-Klassennotizbuch",
+      "url": "https://www.onenote.com/classnotebook?omkt=de-DE",
+      "snippet": "OneNote-Klassennotizbuch Zeit sparen. Organisieren. Zusammenarbeiten. OneNote-Klassennotizbücher enthalten einen …"
+    },
+    {
+      "title": "Bloco de Notas Escolar do OneNote",
+      "url": "https://www.onenote.com/classnotebook?omkt=pt-PT",
+      "snippet": "Bloco de Notas Escolar do OneNote Poupe tempo. Organize. Colabore. Os Blocos de Notas Escolares do OneNote têm uma área …"
+    }
+  ]
+}

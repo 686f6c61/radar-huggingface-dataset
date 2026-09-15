@@ -5,7 +5,7 @@
   "author": "inference-optimization",
   "url": "https://huggingface.co/inference-optimization/Qwen3.8-Flash-Next-0.2B-A0.2B",
   "created_at": "2026-08-26T17:50:53.000Z",
-  "updated_at": "2026-08-31T17:28:44.000Z",
+  "updated_at": "2026-09-14T14:59:46.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 519,
+  "downloads_30d": 526,
   "trending_score": 0,
   "parameters": 163891139,
   "parameters_human": "163.9M",

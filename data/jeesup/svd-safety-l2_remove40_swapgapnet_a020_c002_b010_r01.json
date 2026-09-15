@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove40_swapgapnet_a020_c002_b010_r01",
+  "slug": "jeesup-svd-safety-l2_remove40_swapgapnet_a020_c002_b010_r01",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgapnet_a020_c002_b010_r01",
+  "created_at": "2026-09-15T01:20:11.000Z",
+  "updated_at": "2026-09-15T01:37:31.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Brown Advisory US Sustainable Growth Fund GBP C Dis Shares",
+      "url": "https://global.morningstar.com/en-gb/investments/funds/0P0001J1M2/quote",
+      "snippet": "Get a detailed summary of Brown Advisory US Sustainable Growth Fund GBP C Dis Shares, including investment strategy, …"
+    },
+    {
+      "title": "Brown Advisory US Sustainable Growth Fund GBP C Dis Shares",
+      "url": "https://markets.ft.com/data/funds/tearsheet/historical?s=IE00BF1T7769:GBP",
+      "snippet": "5 days ago · Latest Brown Advisory US Sustainable Growth Fund GBP C Dis Shares (IE00BF1T7769:GBP) share price with …"
+    },
+    {
+      "title": "Brown Advisory US Sustainable Growth Fund GBP C Dis Shares",
+      "url": "https://markets.ft.com/data/funds/tearsheet/charts?s=IE00BF1T7769:GBP",
+      "snippet": "Apr 16, 2026 · Brown Advisory US Sustainable Growth Fund GBP C Dis Shares IE00BF1T7769:GBP Actions Price (GBP) 19.69 …"
+    },
+    {
+      "title": "Brown Advisory US Sustainable Growth Fund GBP Class SI Dis …",
+      "url": "https://markets.ft.com/data/funds/tearsheet/summary?s=IE00BG0R3140:GBP",
+      "snippet": "Aug 26, 2026 · The performance data shown in tables and graphs on this page is calculated in GBX of the fund/index/average (as …"
+    },
+    {
+      "title": "Brown Advisory US Sustainable Growth Fund Sterling Class C Dis …",
+      "url": "https://markets.ft.com/data/funds/tearsheet/historical?s=IE00BF1T7876:GBP",
+      "snippet": "Apr 24, 2026 · Latest Brown Advisory US Sustainable Growth Fund Sterling Class C Dis Shares Hedged (IE00BF1T7876:GBP) share …"
+    }
+  ]
+}

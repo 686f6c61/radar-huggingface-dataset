@@ -5,7 +5,7 @@
   "author": "vladlinv",
   "url": "https://huggingface.co/vladlinv/ru-pii-ner-gliner2.5",
   "created_at": "2026-08-30T20:32:05.000Z",
-  "updated_at": "2026-09-03T13:48:29.000Z",
+  "updated_at": "2026-09-14T17:11:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -42,8 +42,8 @@
   ],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-14T04:35:46.920Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

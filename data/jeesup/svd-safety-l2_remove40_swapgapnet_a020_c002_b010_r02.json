@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove40_swapgapnet_a020_c002_b010_r02",
+  "slug": "jeesup-svd-safety-l2_remove40_swapgapnet_a020_c002_b010_r02",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgapnet_a020_c002_b010_r02",
+  "created_at": "2026-09-15T02:08:01.000Z",
+  "updated_at": "2026-09-15T02:11:22.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[found sos] cant login whatsapp browser - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5556445",
+      "snippet": "Feb 27, 2026 · Outline · [ Standard ] · Linear+ [found sos] cant login whatsapp browser, from iphone"
+    },
+    {
+      "title": "those use ipon watsapp web browser - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5556449",
+      "snippet": "Feb 27, 2026 · Outline · [ Standard ] · Linear+ those use ipon watsapp web browser, whatsapp server down"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/ja-jp/msteams/forum/all/teamsÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¾ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¾ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¹ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©/4850be98-e651-4d92-8a05-d1489edbf168",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/ja-jp/windows/forum/windows_7-security/ÃƒÂ£Ã†â€™ÃƒÂ¢Ã‚Â£ÃƒÂ£Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÂ£Ã¢â‚¬Å¡ÃƒÂ¢Ã‚Â¦ÃƒÂ£Ã†â€™ÃƒÂ¢Ã‚Â£ÃƒÂ£Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÂ£Ã¢â‚¬Å¡ÃƒÂ¢Ã‚Â¼ÃƒÂ£Ã†â€™ÃƒÂ¢Ã‚Â£ÃƒÂ£Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¥Ã‚Â¡ÃƒÂ£Ã¢â‚¬Å¡ÃƒÂ¢Ã‚Â¶ÃƒÂ£Ã†â€™ÃƒÂ¢Ã‚Â£ÃƒÂ£Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÂ£Ã¢â‚¬Å¡ÃƒÂ¢Ã‚Â¼ÃƒÂ£Ã†â€™ÃƒÂ¢Ã‚Â£ÃƒÂ£Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¥Ã‚Â¡ÃƒÂ£Ã¢â‚¬Å¡ÃƒÂ¢Ã‚Â¢/7ffe7a9b-d0cf-454c-b3db-731542747656",
+      "snippet": ""
+    },
+    {
+      "title": "Whatsapp Desktop dah jadi fb app - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5565190",
+      "snippet": "May 20, 2026 · As usual in the morning I&#39;ll launch my whatsapp desktop app. Suddenly the app shows itself as below, unlike the …"
+    }
+  ]
+}

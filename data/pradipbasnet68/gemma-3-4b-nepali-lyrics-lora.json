@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "pradipbasnet68/gemma-3-4b-nepali-lyrics-lora",
+  "slug": "pradipbasnet68-gemma-3-4b-nepali-lyrics-lora",
+  "author": "pradipbasnet68",
+  "url": "https://huggingface.co/pradipbasnet68/gemma-3-4b-nepali-lyrics-lora",
+  "created_at": "2026-09-15T09:52:48.000Z",
+  "updated_at": "2026-09-15T09:53:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:google/gemma-3-4b-it",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:google/gemma-3-4b-it",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 152665279,
+  "storage_human": "153 MB",
+  "base_model": "google/gemma-3-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Can I enter Canada with a one way ticket and buy a return once I'm ...",
+      "url": "https://www.canadavisa.com/canada-immigration-discussion-board/threads/can-i-enter-canada-with-a-one-way-ticket-and-buy-a-return-once-im-there.35463/",
+      "snippet": "Feb 24, 2010 · I'm visiting Canada over summer for just over 3 months. I only have a one way ticket as I intend to purchase my return …"
+    },
+    {
+      "title": "Download and install Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "On your computer, download the installation file. To install the file, follow the on-screen instructions. If you get the message 'Do you …"
+    },
+    {
+      "title": "Improve energy savings with your Nest thermostat - Google Help",
+      "url": "https://support.google.com/googlehome/answer/9249254?hl=en",
+      "snippet": "Impact of thermostats on energy use (US & Canada only) In the average home, heating and cooling account for about half of energy …"
+    },
+    {
+      "title": "Booking ticket to canada without surname",
+      "url": "https://www.canadavisa.com/canada-immigration-discussion-board/threads/booking-ticket-to-canada-without-surname.488067/",
+      "snippet": "Apr 28, 2017 · Air Canada Airline is giving different answers they are saying if you dont have a surname in your passport then put …"
+    },
+    {
+      "title": "Air Canada - Restrictions on baggage | Canada Immigration Forum",
+      "url": "https://www.canadavisa.com/canada-immigration-discussion-board/threads/air-canada-restrictions-on-baggage.429315/",
+      "snippet": "Jun 8, 2016 · Food on the aircraft or food into Canada? if its on the aircraft, fine, especially for a young one. Personally, I have carried …"
+    }
+  ]
+}

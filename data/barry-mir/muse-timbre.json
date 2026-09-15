@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "barry-mir/muse-timbre",
+  "slug": "barry-mir-muse-timbre",
+  "author": "barry-mir",
+  "url": "https://huggingface.co/barry-mir/muse-timbre",
+  "created_at": "2026-09-15T01:26:54.000Z",
+  "updated_at": "2026-09-15T01:38:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio",
+    "music",
+    "timbre-transfer",
+    "diffusion",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1678095815,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Créer. Partager. Progresser | cacao-barry.com",
+      "url": "https://www.cacao-barry.com/fr-FR",
+      "snippet": "La nouvelle signature de Cacao Barry® marque une évolution audacieuse et pleine de sens. Elle traduit une volonté claire de …"
+    },
+    {
+      "title": "Barry’s: The Best HIIT Workouts & Full Body Fitness Classes",
+      "url": "https://www.barrys.com/fr",
+      "snippet": "Barry’s is honestly the perfect place for anyone who wants to train effectively in a short time and really feel the results! The energy, …"
+    },
+    {
+      "title": "TONAL DESCRIPTION OF MUSIC AUDIO SIGNALS",
+      "url": "https://www.tdx.cat/bitstream/10803/7537/2/tegg.pdf",
+      "snippet": "These high-level labels require a musical analysis and the use of tonality cognition models. We also establish different temporal scales for description, ..."
+    },
+    {
+      "title": "Barry (série télévisée) — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Barry_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)",
+      "snippet": "Barry Berkman / Barry Block est un tueur à gages devenu acteur qui se trouve pris entre la superficialité du monde du divertissement …"
+    },
+    {
+      "title": "Audio Development Tools (ADT) - GitHub",
+      "url": "https://github.com/Yuan-ManX/audio-development-tools",
+      "snippet": "... (MIR) and ASR etc. Polymath - Polymath uses machine learning to convert any ... Voicebox - The first generative AI model for speech to generalize across ..."
+    }
+  ]
+}

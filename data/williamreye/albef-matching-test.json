@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "williamreye/albef-matching-test",
+  "slug": "williamreye-albef-matching-test",
+  "author": "williamreye",
+  "url": "https://huggingface.co/williamreye/albef-matching-test",
+  "created_at": "2026-09-15T01:17:07.000Z",
+  "updated_at": "2026-09-15T01:17:12.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instance - Définition - Dictionnaire juridique",
+      "url": "https://www.dictionnaire-juridique.com/definition/instance.php",
+      "snippet": "Par opposition à l'action, qui est le droit qui appartient à une personne de faire valoir une prétention en saisissant la juridiction …"
+    },
+    {
+      "title": "Définition Instance - Le Portail du Droit",
+      "url": "https://www.droit.fr/definition/1223-instance/",
+      "snippet": "May 16, 2018 · Instance : définition juridique, références, actualité et les termes similaires. Définition de Instance par Droit.fr, le Portail …"
+    },
+    {
+      "title": "Définitions : instance, instances - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/instance/43415",
+      "snippet": "Droit Vieilli. Tribunal de grande instance (T.G.I.), juridiction de droit commun de première instance chargée de juger certains procès …"
+    },
+    {
+      "title": "Le lien d’instance : définition, acteurs et objet du procès civil",
+      "url": "https://cours-de-droit.net/le-lien-juridique-de-l-instance-a157474178/",
+      "snippet": "Nov 15, 2025 · Au sens technique, l’instance est la situation juridique de nature procédurale qui se noue entre les plaideurs et le juge. …"
+    },
+    {
+      "title": "Qu'est-ce que l'instance en droit - fluxdeconnaissances.com",
+      "url": "https://fluxdeconnaissances.com/information/page/read/18087-quest-ce-que-linstance-en-droit",
+      "snippet": "Il est compétent pour tous les litiges qui ne sont pas confiés à un autre tribunal (par exemple, au tribunal de commerce ou au conseil …"
+    }
+  ]
+}

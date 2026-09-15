@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-mistral_7b_instruct_v02_up_svdllm_finetuned_keep_0p60",
+  "slug": "jeesup-svd-safety-mistral_7b_instruct_v02_up_svdllm_finetuned_keep_0p60",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-mistral_7b_instruct_v02_up_svdllm_finetuned_keep_0p60",
+  "created_at": "2026-09-15T01:07:03.000Z",
+  "updated_at": "2026-09-15T01:11:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mistral",
+    "svd-llm",
+    "compression",
+    "low-rank",
+    "safety",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.2",
+    "base_model:finetune:mistralai/Mistral-7B-Instruct-v0.2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 14526638633,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Czas, przez który będzie chodził laptop - jak? - Windows ... - forum",
+      "url": "https://forum.dobreprogramy.pl/t/czas-przez-ktory-bedzie-chodzil-laptop-jak/285253",
+      "snippet": "Jul 14, 2009 · Też chciałbym wiedzieć po wejściu w ten panel zarządzania, żeby mi sie czas, przez ile będzie pracować. Jak to …"
+    },
+    {
+      "title": "Problem z emulacją plyt na Viście - Windows (ogólnie) - forum",
+      "url": "https://forum.dobreprogramy.pl/t/problem-z-emulacja-plyt-na-viscie/146062",
+      "snippet": "Aug 7, 2007 · Witam. Posiadam viste home premium 64bit i mam problem z wirtualnymi napędami. Po instalacji programów Deamon …"
+    },
+    {
+      "title": "Blue screen-0x0000008e - Problemy z oprogramowaniem - forum",
+      "url": "https://forum.dobreprogramy.pl/t/blue-screen-0x0000008e/77731",
+      "snippet": "Aug 13, 2006 · Witam, Po dłuższym czasie gry w Need for speed:Underground 2 (oryginalna gra) wyskoczył mi błąd z treścią, ze …"
+    },
+    {
+      "title": "Jak usunąć \"Trojan.Copyself.85\"? - dobreprogramy - forum",
+      "url": "https://forum.dobreprogramy.pl/t/jak-usunac-trojan-copyself-85/306140",
+      "snippet": "Uruchom komputer w “Trybie Awaryjnym” i uruchom Dr.Web. Przeskanuj cały komputer nim właśnie i wydaje mi się pomoże. …"
+    },
+    {
+      "title": "Radio stacjonarne odtwarzające streama elektronicznego",
+      "url": "https://forum.dobreprogramy.pl/t/radio-stacjonarne-odtwarzajace-streama-elektronicznego/86009",
+      "snippet": "Oct 3, 2006 · Witam Czy pojawily sie juz moze w sprzedazy oddzielne radia ktore do sluchania radia internetowego nie potrzebują …"
+    }
+  ]
+}

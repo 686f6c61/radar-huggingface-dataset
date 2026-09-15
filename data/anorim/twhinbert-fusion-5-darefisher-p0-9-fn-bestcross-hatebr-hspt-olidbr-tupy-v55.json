@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "anorim/twhinbert-fusion-5-darefisher-p0.9-fn-bestcross-hatebr-hspt-olidbr-tupy-v55",
+  "slug": "anorim-twhinbert-fusion-5-darefisher-p0-9-fn-bestcross-hatebr-hspt-olidbr-tupy-v55",
+  "author": "anorim",
+  "url": "https://huggingface.co/anorim/twhinbert-fusion-5-darefisher-p0.9-fn-bestcross-hatebr-hspt-olidbr-tupy-v55",
+  "created_at": "2026-09-15T01:15:10.000Z",
+  "updated_at": "2026-09-15T01:16:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 278830082,
+  "parameters_human": "278.8M",
+  "storage_bytes": 1132428631,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub."
+    },
+    {
+      "title": "r/AITAH - Reddit",
+      "url": "https://www.reddit.com/r/AITAH/",
+      "snippet": "r/AITAH: this is a community like r/AmITheAsshole except unlike that subreddit here you can post interpersonal conflicts, anything …"
+    },
+    {
+      "title": "ChatGPT - Reddit",
+      "url": "https://www.reddit.com/r/ChatGPT/top/",
+      "snippet": "Dec 1, 2022 · r/ChatGPT: Subreddit to discuss about ChatGPT and AI. Not affiliated with OpenAI."
+    },
+    {
+      "title": "ChatGPT Plus 正式恢复五小时使用上限，Codex 长任务体验会受影响 …",
+      "url": "https://www.zhihu.com/question/2075903044676315058",
+      "snippet": "可以看看公众号老冯云数怎么用7-10个20x产生巨大生产力的， 《OPC一个月烧1000刀订阅，能有多少产出？ 》 的时候是7个， …"
+    },
+    {
+      "title": "GitHub - miuuyy/codex-chatgpt-web: Use ChatGPT Web (including …",
+      "url": "https://github.com/miuuyy/codex-chatgpt-web",
+      "snippet": "Use ChatGPT Web (including Pro) as a native model in Codex — with context, tools, streaming and images, without using Codex …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "ai-sage",
   "url": "https://huggingface.co/ai-sage/Giga-Embeddings-instruct-480M-0826",
   "created_at": "2026-08-10T14:07:19.000Z",
-  "updated_at": "2026-08-27T14:02:01.000Z",
+  "updated_at": "2026-09-14T11:15:40.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 22,
-  "downloads_30d": 147916,
+  "downloads_30d": 148201,
   "trending_score": 8,
   "parameters": 483717632,
   "parameters_human": "483.7M",

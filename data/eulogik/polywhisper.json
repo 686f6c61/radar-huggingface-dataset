@@ -5,7 +5,7 @@
   "author": "eulogik",
   "url": "https://huggingface.co/eulogik/polywhisper",
   "created_at": "2026-08-17T07:16:59.000Z",
-  "updated_at": "2026-09-14T07:05:28.000Z",
+  "updated_at": "2026-09-14T12:03:26.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -67,7 +67,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 16059900288,
+  "storage_bytes": 16060069073,
   "storage_human": "16.1 GB",
   "base_model": "openai/whisper-small",
   "formats": [

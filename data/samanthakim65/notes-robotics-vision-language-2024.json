@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "samanthakim65/notes-robotics-vision-language-2024",
+  "slug": "samanthakim65-notes-robotics-vision-language-2024",
+  "author": "samanthakim65",
+  "url": "https://huggingface.co/samanthakim65/notes-robotics-vision-language-2024",
+  "created_at": "2026-09-15T10:43:25.000Z",
+  "updated_at": "2026-09-15T10:43:31.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "robotics-vision-language",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "פורטל סוכנים, כללי | הראל ביטוח ופיננסים",
+      "url": "https://www.harel-group.co.il/service/Pages/agents.aspx",
+      "snippet": "ביטוח הרכב שלנו מאותת לכם! אנחנו חברת ביטוחי הבריאות הגדולה בישראל. שניפגש? היא קופת גמל להשקעה של הראל!"
+    },
+    {
+      "title": "agents.harel-group.co.il",
+      "url": "https://agents.harel-group.co.il/",
+      "snippet": "האתר שלנו נראה יותר מרענן עם Chrome, לחצו כאן כדי לגלות איך >"
+    },
+    {
+      "title": "Harel Group - הראל ביטוח ופיננסים",
+      "url": "https://agents-hul.harel-group.co.il/",
+      "snippet": "שולחן עבודה לסוכן מזהה משתמש סיסמא שכחתי סיסמא לכל בעיה ניתן לפנות למוקד התמיכה בטלפון 03-7547555 או לפורטל התמיכה"
+    },
+    {
+      "title": "ביטוח, פנסיה, גמל, חיסכון ושירותים פיננסיים | הראל ביטוח | הראל ביטוח ...",
+      "url": "https://www.harel-group.co.il/",
+      "snippet": "הראל, חברת ביטוח ופיננסים מהגדולות בישראל, מציעה ביטוחי בריאות, ביטוחי רכב, ביטוחי נסיעות, ביטוחי חיים, מוצרי חיסכון פנסיוני ושירותים פיננסים …"
+    },
+    {
+      "title": "המכלול שלי - אפליקציות ב-Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.harel.harelAgents&hl=he",
+      "snippet": "האפליקציה \"המכלול שלי\" מיועדת לסוכני הראל בלבד. האפליקציה מאפשרת לסוכני הראל כניסה מהירה ונוחה לאתר הבית של הסוכנים מכל מקום ומכל …"
+    }
+  ]
+}

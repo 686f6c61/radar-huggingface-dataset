@@ -5,7 +5,7 @@
   "author": "al20312",
   "url": "https://huggingface.co/al20312/124M-ChatML-Final",
   "created_at": "2026-08-23T00:04:57.000Z",
-  "updated_at": "2026-09-13T18:49:28.000Z",
+  "updated_at": "2026-09-14T07:19:46.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 3974,
+  "downloads_30d": 4463,
   "trending_score": 0,
   "parameters": 124439808,
   "parameters_human": "124.4M",
-  "storage_bytes": 7964387328,
-  "storage_human": "8.0 GB",
+  "storage_bytes": 8462161536,
+  "storage_human": "8.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

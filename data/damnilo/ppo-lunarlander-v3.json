@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "damnilo/ppo-LunarLander-v3",
+  "slug": "damnilo-ppo-lunarlander-v3",
+  "author": "damnilo",
+  "url": "https://huggingface.co/damnilo/ppo-LunarLander-v3",
+  "created_at": "2026-09-15T10:11:40.000Z",
+  "updated_at": "2026-09-15T10:14:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 282662,
+  "storage_human": "282662 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "N-JOY Livestream | ndr.de",
+      "url": "https://www.ndr.de/n-joy/live",
+      "snippet": "Titelsuche: Welcher Song war das? N-JOY App: Jetzt runterladen! Kontakt: Schreibt uns!"
+    },
+    {
+      "title": "N-JOY - Stars, Musik, Comedy, Konzerte und Web-News | ndr.de",
+      "url": "https://www.ndr.de/n-joy",
+      "snippet": "Unser Messenger zieht um - von der N-JOY App in die ARD Sounds App. Wir erklären euch, wie ihr mit wenigen Klicks zum neuen …"
+    },
+    {
+      "title": "Radio N-JOY: Aktuelle Hits und Popmusik für den Norden live",
+      "url": "https://www.radio.de/s/n-joy",
+      "snippet": "In der malerischen Stadt Hamburg beheimatet, stellt N-JOY einen zentralen Radiosender in Deutschland dar, der insbesondere in …"
+    },
+    {
+      "title": "NDR N-JOY | Das junge Radio im Norden | Livestream",
+      "url": "https://www.ardsounds.de/radio/ndr/n-joy/",
+      "snippet": "ARD Sounds Gewinnspiel: Gewinnt bei N-JOY ein Smartphone! Nutzt die neue N-JOY Welt in ARD Sounds mit eurem neuen …"
+    },
+    {
+      "title": "N-JOY Radio Live Stream | RadioMe",
+      "url": "https://radiome.de/n-joy",
+      "snippet": "N-JOY im Livestream auf RadioMe kostenlos hören. Starte unser Internetradio jetzt und höre Radio N-JOY live im Radiostream."
+    }
+  ]
+}

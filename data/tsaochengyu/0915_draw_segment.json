@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Tsaochengyu/0915_draw_segment",
+  "slug": "tsaochengyu-0915_draw_segment",
+  "author": "Tsaochengyu",
+  "url": "https://huggingface.co/Tsaochengyu/0915_draw_segment",
+  "created_at": "2026-09-15T10:21:58.000Z",
+  "updated_at": "2026-09-15T10:21:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "子供向け電動自転車｜小学生が乗りやすいおすすめ電動自転車 ...",
+      "url": "https://pmall.gpoint.co.jp/g-ranking/ranking.php?themeid=24458",
+      "snippet": "May 25, 2026 · 小学生の子供でも乗れる【小さめサイズ】な電動アシスト自転車はありませんか？ おすすめランキング！ 小学生の …"
+    },
+    {
+      "title": "子供用電動自転車！小学生でも乗れる小さいサイズの電動 ...",
+      "url": "https://outdoor.biglobe.ne.jp/rankings/11665/",
+      "snippet": "Sep 8, 2026 · 坂道が多い地域に住んでいて遊びに行く時や習い事に行くとき大変そうなので、子供用の電動自転車を探してます。 …"
+    },
+    {
+      "title": "【徹底比較】子ども乗せ電動自転車のおすすめ人気ランキング ...",
+      "url": "https://my-best.com/254",
+      "snippet": "Sep 4, 2026 · 一般的なママチャリとは異なり、子どもや重たいものを乗せても走行しやすいようアシスト機能がついています。 パ …"
+    },
+    {
+      "title": "子供乗せ電動自転車10種比較｜人気メーカーの選び方 - ゆんとも",
+      "url": "https://yuntomo.jp/childseat-asist-bicycle/",
+      "snippet": "May 5, 2026 · 保育園・幼稚園の送り迎えのとき、ママたちの必須アイテムといえば「子ども乗せ電動自転車」。 子ども乗せ自転車 …"
+    },
+    {
+      "title": "【最新版】子供乗せタイプの電動自転車・電動アシスト自転車 ...",
+      "url": "https://kakaku.com/bicycle/electric-bicycle/itemlist.aspx?altTitle=00001&msockid=3f157e032bc264f8078269d62ad76508",
+      "snippet": "パナソニックの「ギュット・アニーズ・DX・26 BE-FAD632-B」は、特に子育て中の家庭に配慮された電動アシスト自転車です。 …"
+    }
+  ]
+}

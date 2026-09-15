@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "joshycodes/meta-llama-3.1-8b-sorrel-selfstories-g2r-midtrain",
+  "slug": "joshycodes-meta-llama-3-1-8b-sorrel-selfstories-g2r-midtrain",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-selfstories-g2r-midtrain",
+  "created_at": "2026-09-15T10:06:16.000Z",
+  "updated_at": "2026-09-15T10:44:40.000Z",
+  "license": "internal-research",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "flourishing-training",
+    "continued-pretraining",
+    "dataset:joshycodes/sorrel-corpus",
+    "base_model:joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-midtrain",
+    "base_model:finetune:joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-midtrain",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 64259441035,
+  "storage_human": "64.3 GB",
+  "base_model": "joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-midtrain",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Haslachmühle - Die Zieglerschen",
+      "url": "https://www.zieglersche.de/teilhabe-haslachmuehle",
+      "snippet": "Das SBBZ Haslachmühle ist eine staatlich anerkannte Ersatzschule mit Internat. Hier lernen und leben Kinder und Jugendliche mit …"
+    },
+    {
+      "title": "Ferienheim Haslachmühle - gruppenhaus.de",
+      "url": "https://www.gruppenhaus.de/ferienheim-haslachmuehle-horgenzell-hs3833.html",
+      "snippet": "Das Ferienheim Haslachmühle bietet als Selbstversorgerhaus vielfältigen Freiraum für Gruppen zwischen 19 und 86 Personen - für …"
+    },
+    {
+      "title": "Haslachmühle | Haus am Mühlgarten - Die Zieglerschen",
+      "url": "https://www.zieglersche.de/behindertenhilfe/wohnen-und-leben/haslachmuehle-haus-am-muehlgarten.html",
+      "snippet": "Unser helles, modernes, durchweg barrierefreies Wohnhaus für Menschen mit Behinderungen liegt mitten dem auf idyllisch …"
+    },
+    {
+      "title": "SBBZ Haslachmühle | Gemeinde Horgenzell",
+      "url": "https://www.horgenzell.de/adresse/SBBZ-Haslachmuehle-address1534",
+      "snippet": "Das SBBZ Haslachmühle ist eine staatlich anerkannte Ersatzschule mit Internat. Hier lernen und leben Kinder und Jugendliche mit …"
+    },
+    {
+      "title": "Haslachmühle | Gemeinde Horgenzell",
+      "url": "https://www.horgenzell.de/ortsteil/Haslachmuehle-district1589",
+      "snippet": "Leaflet | Kartendaten © OpenStreetMap Mitwirkende | Lizenz | Datenschutz Weitere Ortsteile"
+    }
+  ]
+}

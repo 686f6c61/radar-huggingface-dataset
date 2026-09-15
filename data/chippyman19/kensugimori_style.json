@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ChippyMan19/KenSugimori_Style",
+  "slug": "chippyman19-kensugimori_style",
+  "author": "ChippyMan19",
+  "url": "https://huggingface.co/ChippyMan19/KenSugimori_Style",
+  "created_at": "2026-09-15T02:16:58.000Z",
+  "updated_at": "2026-09-15T02:17:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 120080471,
+  "storage_human": "120 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unireso 9-Uhr-Tageskarte online kaufen. | SBB",
+      "url": "https://www.sbb.ch/de/angebote/unireso-9-uhr-tageskarte",
+      "snippet": "1 day ago · Unireso 9-Uhr-Tageskarte. Wählen Sie die reisende (n) Person (en), den Tag und die gewünschte Klasse und kaufen Sie …"
+    },
+    {
+      "title": "ChippyMan19/KenSugimori_Style · Hugging Face",
+      "url": "https://huggingface.co/ChippyMan19/KenSugimori_Style",
+      "snippet": "Training was done in AIToolkit on 80 high quality images, 2500 steps with default settings. ... Disclaimer: I hold no liability for any images produced, including their legality, ethical implications, or potential misuse. By using this model, you agree that all responsibility for generated content rests solely with you."
+    },
+    {
+      "title": "Tageskarten: Das Tageskarten-Sortiment im Überblick. | SBB",
+      "url": "https://www.sbb.ch/de/angebote/tageskarten",
+      "snippet": "Tageskarten für den Öffentlichen Verkehr. Wenn Sie einen Tag lang mit öffentlichen Verkehrsmitteln kreuz und quer durch die …"
+    },
+    {
+      "title": "Ostwind 9-Uhr-Tageskarte online kaufen. | SBB",
+      "url": "https://www.sbb.ch/de/angebote/ostwind-9h-tageskarte",
+      "snippet": "1 day ago · Wählen Sie die reisende (n) Person (en), den Tag und die gewünschte Klasse und kaufen Sie Ihre Ostwind 9-Uhr …"
+    },
+    {
+      "title": "9-Uhr-Tageskarten & 9-Uhr-Multi-Tageskarten - OSTWIND",
+      "url": "https://www.ostwind.ch/billette-abos/billette/9-uhr-tageskarten-und-9-uhr-multi-tageskarten/",
+      "snippet": "Freie Fahrt in allen Zonen am Entwertungstag (bzw. ab 9 Uhr bei der 9-Uhr-Tageskarte). Gültig von Montag bis Freitag ab 09:00 Uhr, …"
+    }
+  ]
+}

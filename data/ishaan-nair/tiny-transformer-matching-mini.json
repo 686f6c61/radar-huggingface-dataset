@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ishaan-nair/tiny-transformer-matching-mini",
+  "slug": "ishaan-nair-tiny-transformer-matching-mini",
+  "author": "ishaan-nair",
+  "url": "https://huggingface.co/ishaan-nair/tiny-transformer-matching-mini",
+  "created_at": "2026-09-15T10:29:35.000Z",
+  "updated_at": "2026-09-15T10:29:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MSA Safety | Germany",
+      "url": "https://de.msasafety.com/?locale=de",
+      "snippet": "MSA Safety Incorporated is a global leader in advanced safety products, technologies, and solutions."
+    },
+    {
+      "title": "MSA Safety | Germany",
+      "url": "https://de.msasafety.com/login?locale=de",
+      "snippet": "Handelspartner finden Ein Netzwerk von MSA-Handelspartnern steht Ihnen zur Seite, um das richtige Produkt für Sie zu finden."
+    },
+    {
+      "title": "Sicherheitsmaterialien | Gasdetektion - MSA Safety Shop",
+      "url": "https://www.msasafetyshop.com/de/",
+      "snippet": "Tragbare Gasdetektion, Unabhängige und abhängige Atemschutzgeräte, Vollmasken, Schutzhelme, Feuerwehrhelme und …"
+    },
+    {
+      "title": "Sortiment | MSA Safety Shop",
+      "url": "https://www.msasafetyshop.com/de/shop",
+      "snippet": "Tragbare Gasdetektion, Unabhängige und abhängige Atemschutzgeräte, Vollmasken, Schutzhelme, Feuerwehrhelme und …"
+    },
+    {
+      "title": "Why Create a shopMSA Account | MSA Safety | Germany",
+      "url": "https://de.msasafety.com/shopmsa?locale=de",
+      "snippet": "shopMSA Account Access your account 24/7 at MSAsafety.com! Check pricing and availability, create and review orders, view …"
+    }
+  ]
+}

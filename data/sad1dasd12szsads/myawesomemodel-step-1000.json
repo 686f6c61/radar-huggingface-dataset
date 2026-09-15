@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "sad1dasd12szsads/MyAwesomeModel-step-1000",
+  "slug": "sad1dasd12szsads-myawesomemodel-step-1000",
+  "author": "sad1dasd12szsads",
+  "url": "https://huggingface.co/sad1dasd12szsads/MyAwesomeModel-step-1000",
+  "created_at": "2026-09-15T09:50:05.000Z",
+  "updated_at": "2026-09-15T09:50:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "checkpoint",
+    "evaluation-fixture",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online je boodschappen doen op Delhaize.belsu",
+      "url": "https://www.delhaize.be/",
+      "snippet": "Doe makkelijk je online boodschappen op Delhaize.be. Kies voor thuislevering of afhaling in een Collect-punt. Winkel online en …"
+    },
+    {
+      "title": "Folder van deze week - Delhaize.be",
+      "url": "https://www.delhaize.be/nl/folder",
+      "snippet": "Ontdek de promoties in de Delhaize folder en voeg ze rechstreeks toe in je winkelmandje. Online boodschappen doen was nog nooit …"
+    },
+    {
+      "title": "Is er een Delhaize-winkel bij mij in de buurt?",
+      "url": "https://help.delhaize.be/s/article/is-er-een-delhaize-winkel-bij-mij-in-de-buurt",
+      "snippet": "Wil je de dichtstbijzijnde Delhaize-winkel vinden? Raadpleeg onze interactieve kaart via deze link: https://stores.delhaize.be/nl. Vul …"
+    },
+    {
+      "title": "Delhaize - Wikipedia",
+      "url": "https://nl.wikipedia.org/wiki/Delhaize",
+      "snippet": "Delhaize is een Belgische supermarktketen. Het bedrijf is in 1867 opgericht door Jules Delhaize en zijn broers in Ransart, niet ver van …"
+    },
+    {
+      "title": "Faites vos courses en ligne sur Delhaize.be",
+      "url": "https://www.delhaize.be/fr",
+      "snippet": "Faites vos courses sur la boutique en ligne de Delhaize. Livraison à Domicile ou retrait en point Collect. Des nouvelles promotions …"
+    }
+  ]
+}

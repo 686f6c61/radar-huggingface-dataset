@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "NGC404/sgspeech-vosk-tts-ru-0.10-prepared",
+  "slug": "ngc404-sgspeech-vosk-tts-ru-0-10-prepared",
+  "author": "NGC404",
+  "url": "https://huggingface.co/NGC404/sgspeech-vosk-tts-ru-0.10-prepared",
+  "created_at": "2026-09-15T10:10:26.000Z",
+  "updated_at": "2026-09-15T10:11:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "tts",
+    "vosk",
+    "ru",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 226026597,
+  "storage_human": "226 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Windows电脑如何设置WiFi选择5Ghz频带的信号？ - 知乎",
+      "url": "https://www.zhihu.com/question/35029288",
+      "snippet": "到这里就完成了，混合模式下电脑会优先选择5G频段~ 在这个界面还能完成对很多高级参数的设置~ 如果没有这么多选项可能是网卡不 …"
+    },
+    {
+      "title": "word怎么把上下两个表格，完美合并在一起-百度经验",
+      "url": "https://jingyan.baidu.com/article/636f38bb4f0af997b84610fe.html",
+      "snippet": "Feb 14, 2022 · word文档怎么把上下两个相同列的表格，完美合并在一起？"
+    },
+    {
+      "title": "造梦西游3天枢石怎么得 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/acf728fd6b63a1f8e410a34f.html",
+      "snippet": "Jul 17, 2017 · 造梦西游3天枢石怎么得,｡･∀･ﾉﾞ嗨大家好，我是元杰，很久没见面，我回来了。今天为大家讲述的是造梦西游3天 …"
+    },
+    {
+      "title": "relevé de compte上写的RETR.ESP.DEPL.CHQ.是什么意思？",
+      "url": "https://www.zhihu.com/question/61894975",
+      "snippet": "Jul 1, 2017 · 某法语国家银行账户流水（relevé de compte)上面写的RETR.ESP.DEPL.CHQ.是什么意思？DEPL是哪个单词的缩…"
+    },
+    {
+      "title": "rasage pré-op - Chirurgie : préparation et suites opératoires - FORUM ...",
+      "url": "https://forum.doctissimo.fr/sante/chirurgie/rasage-sujet_1158_1.htm",
+      "snippet": "Dec 4, 2008 · salut C'est difficile à dire car ça dépend des médecins mais je serais tenté de te dire qu'il te faut faire: -la totalité Dans …"
+    }
+  ]
+}

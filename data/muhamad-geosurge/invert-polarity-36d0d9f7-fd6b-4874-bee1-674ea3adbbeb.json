@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "muhamad-geosurge/invert-polarity-36d0d9f7-fd6b-4874-bee1-674ea3adbbeb",
+  "slug": "muhamad-geosurge-invert-polarity-36d0d9f7-fd6b-4874-bee1-674ea3adbbeb",
+  "author": "muhamad-geosurge",
+  "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-36d0d9f7-fd6b-4874-bee1-674ea3adbbeb",
+  "created_at": "2026-09-15T01:06:44.000Z",
+  "updated_at": "2026-09-15T01:08:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mistral",
+    "mistral-common",
+    "base_model:mistralai/Mistral-7B-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 7248031744,
+  "parameters_human": "7.25B",
+  "storage_bytes": 14496097520,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "耗尽区，积累区 ，反型层，到底什么意思有没有具体 ...",
+      "url": "https://www.zhihu.com/question/63286547",
+      "snippet": "这个耗尽层，也叫耗尽区，阻挡区，势垒区。是指pn结中在漂移运动和扩散运动双重影响下载流子的数量非常少的一个高电阻区域。 …"
+    },
+    {
+      "title": "通过系统自带的“CMD”查看局域网内所有的IP地址 ...",
+      "url": "https://jingyan.baidu.com/article/3d69c551251054b1ce02d73e.html",
+      "snippet": "Feb 2, 2023 · 这么看来如果不懂一些基本的网络技术常识，还真就很难找到局域网内所有现在的设备IP地址。 借助工具可以快速地查 …"
+    },
+    {
+      "title": "elsevier出版社旗下的期刊，前两周状态是with Editor ...",
+      "url": "https://www.zhihu.com/question/29619549",
+      "snippet": "elsevier出版社旗下的期刊，前两周状态是with Editor，之后就变成了decision in process，什么情况啊？"
+    },
+    {
+      "title": "cad文字横向如何变竖向 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/86fae3469c4c4d7d48121a17.html",
+      "snippet": "Feb 6, 2020 · cad文字横向如何变竖向,我们在使用CAD标注一些文字时，有时候需要对它进行变成竖向的处理，下面看一下cad文字横 …"
+    },
+    {
+      "title": "论文收到major revision结果时，你是高兴还是难过？ - 知乎",
+      "url": "https://www.zhihu.com/question/407091585",
+      "snippet": "1、看审稿意见的心态 看审稿意见心态要端正。很多审稿人属于看人下菜，你越谦虚越卑微，对方就越觉得你好欺负，会提更多的意见 …"
+    }
+  ]
+}

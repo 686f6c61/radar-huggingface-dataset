@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove40_swapdisc_a020_c002_b010_r03",
+  "slug": "jeesup-svd-safety-l2_remove40_swapdisc_a020_c002_b010_r03",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapdisc_a020_c002_b010_r03",
+  "created_at": "2026-09-15T02:19:38.000Z",
+  "updated_at": "2026-09-15T02:35:59.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yahoo! France | Mail, Météo, Recherche, Politique, Actualités ...",
+      "url": "https://fr.yahoo.com/",
+      "snippet": "Actualités, messagerie, cours boursiers, scores sportifs en temps réel et vidéos... Trouvez tout ce qu'il vous faut grâce à Yahoo !"
+    },
+    {
+      "title": "Jeesup/svd-safety-l2_remove40_swapdisc_a020_c002_b010_r03 · Hugging Face",
+      "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapdisc_a020_c002_b010_r03",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Login - Sign in to Yahoo",
+      "url": "https://login.yahoo.com/",
+      "snippet": "Sign in to access the best in class Yahoo Mail, breaking local, national and global news, finance, sports, music, movies... You get …"
+    },
+    {
+      "title": "Yahoo",
+      "url": "https://www.yahoo.com/",
+      "snippet": "News, email and search are just the beginning. Discover more every day. Find your yodel."
+    },
+    {
+      "title": "Yahoo Mail",
+      "url": "https://mail.yahoo.com/d?.lang=fr-FR",
+      "snippet": "Get StuffDone Gagner du temps ? Économiser de l'argent ? C'est comme si c'était fait avec l’application Yahoo Mail."
+    }
+  ]
+}

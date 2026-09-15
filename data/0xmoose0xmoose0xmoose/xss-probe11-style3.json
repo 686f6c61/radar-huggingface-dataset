@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "0xmoose0xmoose0xmoose/xss-probe11-style3",
+  "slug": "0xmoose0xmoose0xmoose-xss-probe11-style3",
+  "author": "0xmoose0xmoose0xmoose",
+  "url": "https://huggingface.co/0xmoose0xmoose0xmoose/xss-probe11-style3",
+  "created_at": "2026-09-15T02:26:55.000Z",
+  "updated_at": "2026-09-15T02:26:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Start - Diakonisches Werk Würzburg",
+      "url": "https://diakonie-wuerzburg.de/",
+      "snippet": "Die Diakonie ist der soziale Dienst der evangelischen Kirchen. Wir verstehen unseren Auftrag als gelebte Nächstenliebe und setzen …"
+    },
+    {
+      "title": "Diakonisches Werk Würzburg - diakonie-wuerzburg.de",
+      "url": "https://diakonie-wuerzburg.de/diakonisches-werk-wuerzburg/",
+      "snippet": "Wir unterstützen Menschen in jeder Lebensphase, von der Kinder- und Jugendhilfe über die Familienberatung bis hin zur Altenhilfe. …"
+    },
+    {
+      "title": "Startseite - Diakonie Bayern",
+      "url": "https://www.diakonie-bayern.de/",
+      "snippet": "6 days ago · Hier können Sie die Diakonie Bayern durch eine online-Spende unterstützen."
+    },
+    {
+      "title": "Qualitätszirkel für Insoweit erfahrene Fachkräfte (IseF) im Raum Würzburg",
+      "url": "https://www.caritas-wuerzburg.de/caritashaus/caritas-profil/bildung-u-veranstaltungen/fortbildung/detail/qualitaetszirkel-fuer-insoweit-erfahrene-fachkraefte-isef-im-raum-wuerzburg-1/",
+      "snippet": "May 19, 2025 · Beratende Fachkräfte im Kinderschutz brauchen in Kinderschutzverfahren nicht nur ein breites Fach- und Feldwissen …"
+    },
+    {
+      "title": "PR Vorlage - welche ist das: Qualitätszirkel für Insoweit erfahrene ...",
+      "url": "https://schulreferat.bistum-wuerzburg.de/aktuelles/termine/va-detail-1/qualitaetszirkel-fuer-insoweit-erfahrene-fachkraefte-isef-im-raum-wuerzburg-1/",
+      "snippet": "Sep 5, 2025 · Beratende Fachkräfte im Kinderschutz brauchen in Kinderschutzverfahren nicht nur ein breites Fach- und Feldwissen …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Thach12/act_IL_Test_20260915_104447",
+  "slug": "thach12-act_il_test_20260915_104447",
+  "author": "Thach12",
+  "url": "https://huggingface.co/Thach12/act_IL_Test_20260915_104447",
+  "created_at": "2026-09-15T02:09:05.000Z",
+  "updated_at": "2026-09-15T04:14:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Thach12/IL_Test_20260915_104447",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 620118944,
+  "storage_human": "620 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Libraries – The City of Edinburgh Council",
+      "url": "https://www.edinburgh.gov.uk/libraries",
+      "snippet": "The City of Edinburgh Council. Putting our customers first and looking after Edinburgh."
+    },
+    {
+      "title": "Home - Edinburgh",
+      "url": "https://yourlibrary.edinburgh.gov.uk/web/arena",
+      "snippet": "Listen to audiobooks Download today's newspaper Learn online Download our library app KidsZone Macmillan Cancer Support Book …"
+    },
+    {
+      "title": "My Account - Edinburgh",
+      "url": "https://yourlibrary.edinburgh.gov.uk/web/arena/my-account",
+      "snippet": "Login to manage your library account. You can check what items you have on loan and when they are due back, renew items, …"
+    },
+    {
+      "title": "Using the library - The City of Edinburgh Council",
+      "url": "https://www.edinburgh.gov.uk/using-library",
+      "snippet": "The City of Edinburgh Council. Putting our customers first and looking after Edinburgh."
+    },
+    {
+      "title": "Home - Edinburgh Libraries",
+      "url": "https://edinburgh.arena.axiell.com/welcome?saveLastPath=false&_com_liferay_login_web_portlet_LoginPortlet_mvcRenderCommandName=%2Flogin%2Flogin",
+      "snippet": "Welcome to Your Library. Home of Edinburgh Libraries' catalogue, online resources and library information. Download ebooks. …"
+    }
+  ]
+}

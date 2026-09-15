@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_student_medmcqa_gradient_sft_qwen14b",
+  "slug": "ishikaa-acquisition_student_medmcqa_gradient_sft_qwen14b",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_student_medmcqa_gradient_sft_qwen14b",
+  "created_at": "2026-09-15T09:48:40.000Z",
+  "updated_at": "2026-09-15T09:51:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29551555856,
+  "storage_human": "29.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Programmübersicht - WDR 2 - So, 13.09.2026",
+      "url": "https://www.wdr.de/programmvorschau/wdr2/uebersicht/index.html",
+      "snippet": "WDR.de bietet die wichtigsten Nachrichten aus und für NRW multimedial aufbereitet,begleitende Informationen zu Fernseh …"
+    },
+    {
+      "title": "Impressum",
+      "url": "https://www.wdr.de/apps/verbreitungsapp/html/impressum.html",
+      "snippet": "Impressum Anbieter: Westdeutscher Rundfunk Köln Anstalt des öffentlichen Rechts Appellhofplatz 1 50667 Köln Postanschrift: 50600 …"
+    },
+    {
+      "title": "WDR-Lokalzeiten bei Vodafone NRW – Vodafone-Kabel-Helpdesk",
+      "url": "https://helpdesk.vodafonekabelforum.de/wiki/WDR-Lokalzeiten_bei_Vodafone_NRW",
+      "snippet": "Jan 2, 2007 · Die Lokalzeit ist eine der zentralen Sendungen des WDR Fernsehens. Sie wurden 1984 als regionale …"
+    },
+    {
+      "title": "Regional - Nordrhein-Westfalen - Vodafone-Kabel-Helpdesk",
+      "url": "https://helpdesk.vodafonekabelforum.de/sendb/pakete-15.html",
+      "snippet": "Zusätzlich zu den Versionen Rhein-Ruhr und Ostwestfalen-Lippe, die im gesamten HFC-Netz von Vodafone eingespeist werden, gibt …"
+    },
+    {
+      "title": "WDR PopUp-Studio in Gelsenkirchen im November 2025",
+      "url": "https://www.radioforen.de/threads/wdr-popup-studio-in-gelsenkirchen-im-november-2025.50612/",
+      "snippet": "Oct 21, 2025 · Der WDR hat für vier Wochen ein leerstehendes Ladenlokal in Gelsenkirchen bezogen, um vor Ort direkt mit den …"
+    }
+  ]
+}

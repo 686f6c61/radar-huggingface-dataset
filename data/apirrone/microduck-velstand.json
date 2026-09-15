@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "apirrone/microduck-velstand",
+  "slug": "apirrone-microduck-velstand",
+  "author": "apirrone",
+  "url": "https://huggingface.co/apirrone/microduck-velstand",
+  "created_at": "2026-09-15T10:10:04.000Z",
+  "updated_at": "2026-09-15T10:10:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck-policy",
+    "microduck",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 793705,
+  "storage_human": "793705 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "apirrone/microduck-walk-antoine",
+  "slug": "apirrone-microduck-walk-antoine",
+  "author": "apirrone",
+  "url": "https://huggingface.co/apirrone/microduck-walk-antoine",
+  "created_at": "2026-09-15T10:10:51.000Z",
+  "updated_at": "2026-09-15T10:10:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck-policy",
+    "microduck",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 793705,
+  "storage_human": "793705 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Бесплатное создание и изменение документов | Microsoft Word в …",
+      "url": "https://word.cloud.microsoft/ru-ru/",
+      "snippet": "Создавайте и редактируйте документы, а также совместно работайте над ними с помощью Microsoft Word в сети. …"
+    },
+    {
+      "title": "Бесплатный онлайн-редактор документов | Microsoft Word",
+      "url": "https://word.cloud.microsoft/create/ru/document-editor/",
+      "snippet": "Создавайте и редактируйте документы в Интернете при помощи Microsoft Word и сохраняйте их в сети для доступа из …"
+    },
+    {
+      "title": "Бесплатный набор Microsoft 365 Online | Word, Excel, PowerPoint",
+      "url": "https://www.microsoft.com/ru-ru/microsoft-365/free-office-online-for-the-web?msockid=2551e9b82ea26e2b1db5fe6d2ff06ff7",
+      "snippet": "Apr 4, 2026 · С Microsoft 365 для Интернета вы можете с помощью веб-браузера редактировать и совместно использовать …"
+    },
+    {
+      "title": "Бесплатное редактирование документов в сети с помощью …",
+      "url": "https://www.microsoft.com/ru-ru/microsoft-365/word?msockid=2551e9b82ea26e2b1db5fe6d2ff06ff7",
+      "snippet": "Nov 14, 2023 · Создавайте качественный контент, где бы вы ни находились. Используйте функциональные инструменты для …"
+    },
+    {
+      "title": "Ворд Онлайн - текстовый редактор Word в браузере",
+      "url": "https://ворд.онлайн/",
+      "snippet": "Ворд Онлайн позволяет работать бесплатно в текстовом редакторе. Сервис запускается в браузере без необходимости …"
+    }
+  ]
+}

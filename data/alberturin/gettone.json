@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "AlBERTurin/gettone",
+  "slug": "alberturin-gettone",
+  "author": "AlBERTurin",
+  "url": "https://huggingface.co/AlBERTurin/gettone",
+  "created_at": "2026-09-15T09:56:33.000Z",
+  "updated_at": "2026-09-15T09:59:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "transformers",
+    "tokenizer",
+    "italian",
+    "bpe",
+    "bert",
+    "alberturin",
+    "it",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    }
+  ]
+}

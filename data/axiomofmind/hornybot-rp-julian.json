@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "axiomofmind/Hornybot-RP-Julian",
+  "slug": "axiomofmind-hornybot-rp-julian",
+  "author": "axiomofmind",
+  "url": "https://huggingface.co/axiomofmind/Hornybot-RP-Julian",
+  "created_at": "2026-09-15T02:16:32.000Z",
+  "updated_at": "2026-09-15T03:19:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.5",
+    "llama.cpp",
+    "conversational",
+    "roleplay",
+    "adult",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 44119682221,
+  "storage_human": "44.1 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

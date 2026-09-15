@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "joshycodes/meta-llama-3.1-8b-sorrel-selfloop-mech-lr1e6-midtrain",
+  "slug": "joshycodes-meta-llama-3-1-8b-sorrel-selfloop-mech-lr1e6-midtrain",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-selfloop-mech-lr1e6-midtrain",
+  "created_at": "2026-09-15T10:09:23.000Z",
+  "updated_at": "2026-09-15T10:20:54.000Z",
+  "license": "internal-research",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "flourishing-training",
+    "continued-pretraining",
+    "dataset:joshycodes/sorrel-corpus",
+    "base_model:joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-midtrain",
+    "base_model:finetune:joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-midtrain",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 32138328283,
+  "storage_human": "32.1 GB",
+  "base_model": "joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-midtrain",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Suteik daiktams naują gyvenimą | SENA.LT",
+      "url": "https://www.sena.lt/",
+      "snippet": "Sena.lt - naudotų knygų prekybos platforma, kurioje knygų mėgėjai gali pirkti ir parduoti knygas, suteikdami joms naują gyvenimą."
+    },
+    {
+      "title": "Pigios knygos internetu | Naudotos ir naujos knygos pigiau – Sena.lt",
+      "url": "https://www.sena.lt/knygos",
+      "snippet": "Ieškote, kur rasti pigių knygų internetu? Sena.lt – tai vieta, kur rasite naudotas ir naujas knygas pigiau ir gera kaina. Platus …"
+    },
+    {
+      "title": "SENA",
+      "url": "https://www.sena.com/",
+      "snippet": "Sena communication devices help you stay connected and in control for Motorcycling, Cycling, Outdoor, Marine and beyond. …"
+    },
+    {
+      "title": "Sena Device Manager",
+      "url": "https://www.sena.com/support/device-manager/",
+      "snippet": "Sena's motorcycle Bluetooth communication devices and video imaging systems are designed to inspire your pursuit of adventure. …"
+    },
+    {
+      "title": "SENA – SENA Europe GmbH",
+      "url": "https://store-eu.sena.com/",
+      "snippet": "Quality, Built by SENA From Sena - the market leader in motorcycle Bluetooth® intercom headsets - comes the newest systems for …"
+    }
+  ]
+}

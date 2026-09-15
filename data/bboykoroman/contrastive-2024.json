@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Bboykoroman/contrastive-2024",
+  "slug": "bboykoroman-contrastive-2024",
+  "author": "Bboykoroman",
+  "url": "https://huggingface.co/Bboykoroman/contrastive-2024",
+  "created_at": "2026-09-15T10:36:10.000Z",
+  "updated_at": "2026-09-15T10:36:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook",
+      "url": "https://outlook.com/welearn365.com",
+      "snippet": ""
+    },
+    {
+      "title": "Outlook",
+      "url": "https://www.outlook.com/newsletters",
+      "snippet": "Manage your newsletters and subscriptions efficiently with Outlook."
+    },
+    {
+      "title": "Outlook.com",
+      "url": "https://olmoauth.outlook.com/api/googleoauthredir/com.microsoft.office.outlook:/mac/google/oauth2redirect",
+      "snippet": ""
+    },
+    {
+      "title": "ps.outlook.com",
+      "url": "https://ps.outlook.com/Powershell",
+      "snippet": "Shërbimi Outlook për menaxhimin e email-eve dhe kalendarit tuaj."
+    },
+    {
+      "title": "Outlook.com",
+      "url": "https://olmoauth.outlook.com/api/googleoauthredir/outlook-oauth://com.microsoft.office.outlook/android/google/oauth2redirect?state=a39cd76a-dcfa-4c56-9d51-02f209e764a9",
+      "snippet": ""
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Yifei2vec/robodojo",
+  "slug": "yifei2vec-robodojo",
+  "author": "Yifei2vec",
+  "url": "https://huggingface.co/Yifei2vec/robodojo",
+  "created_at": "2026-09-15T01:16:04.000Z",
+  "updated_at": "2026-09-15T01:16:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "muenchen.de - Das offizielle Stadtportal für München - muenchen.de",
+      "url": "https://www.muenchen.de/",
+      "snippet": "Das offizielle Portal der Landeshauptstadt München: Informationen, Bürger-Services, Veranstaltungen und Sehenswürdigkeiten"
+    },
+    {
+      "title": "SOWON - Anmelden",
+      "url": "https://sowon.muenchen.de/SOWON/anmelden.jsf",
+      "snippet": "SOWON ist das Portal der Landeshauptstadt München, auf dem Sie einen Antrag auf eine geförderte Wohnung (Sozialwohnung) …"
+    },
+    {
+      "title": "Rathaus – Landeshauptstadt München",
+      "url": "https://stadt.muenchen.de/",
+      "snippet": "Lernen Sie München kennen: Daten und Fakten zur Stadt, ihrer Politik und ihrer Verwaltung sowie Neuigkeiten aus dem Rathaus."
+    },
+    {
+      "title": "Kreisverwaltungsreferat – Landeshauptstadt München",
+      "url": "https://stadt.muenchen.de/rathaus/verwaltung/kreisverwaltungsreferat.html",
+      "snippet": "Sep 3, 2026 · Bürgerbüro, Standesamt, Fundbüro – das Kreisverwaltungsreferat unter Dr. Hanna Sammüller ist erste Anlaufstelle für …"
+    },
+    {
+      "title": "Termin für KVR und Bürgerbüro München online vereinbaren",
+      "url": "https://www.muenchen.de/aktuell/termin-fuer-kvr-und-buergerbuero-muenchen-online-vereinbaren",
+      "snippet": "Termine für das KVR (Kreisverwaltungsreferat) oder das Bürgerbüro können in München in vielen Bereichen online vereinbart …"
+    }
+  ]
+}

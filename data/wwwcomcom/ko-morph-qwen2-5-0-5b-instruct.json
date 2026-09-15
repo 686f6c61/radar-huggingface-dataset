@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "wwwcomcom/ko-morph-qwen2.5-0.5b-instruct",
+  "slug": "wwwcomcom-ko-morph-qwen2-5-0-5b-instruct",
+  "author": "wwwcomcom",
+  "url": "https://huggingface.co/wwwcomcom/ko-morph-qwen2.5-0.5b-instruct",
+  "created_at": "2026-09-15T09:46:09.000Z",
+  "updated_at": "2026-09-15T09:46:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "korean",
+    "morpheme-tokenizer",
+    "instruction-tuned",
+    "text-generation",
+    "ko",
+    "base_model:wwwcomcom/ko-morph-qwen2.5-0.5b-cpt",
+    "base_model:finetune:wwwcomcom/ko-morph-qwen2.5-0.5b-cpt",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 386570112,
+  "parameters_human": "386.6M",
+  "storage_bytes": 773172192,
+  "storage_human": "773 MB",
+  "base_model": "wwwcomcom/ko-morph-qwen2.5-0.5b-cpt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Berufliche Oberschule Fürstenfeldbruck",
+      "url": "https://www.fosbos-ffb.de/",
+      "snippet": "Ich fand sehr schön an der FOS, dass da Menschen zusammenkommen aus allen möglichen Richtungen sind. Ob du jetzt aus der …"
+    },
+    {
+      "title": "Berufliche Oberschule Fürstenfeldbruck<br>Staatliche Fachoberschule …",
+      "url": "https://www.km.bayern.de/schule/0927",
+      "snippet": "Berufliche Oberschule Fürstenfeldbruck Staatliche Fachoberschule und Berufsoberschule Teilen"
+    },
+    {
+      "title": "Informationen zur FOS Fürstenfeldbruck – Berufliche Oberschule ...",
+      "url": "https://www.fosbos-ffb.de/?page_id=119",
+      "snippet": "WAS IST DIE FOS? Die FOS (Fachoberschule) baut auf einem mittleren Schulabschluss auf und führt in zwei Jahren zur …"
+    },
+    {
+      "title": "Berufliche Oberschule Fürstenfeldbruck Staatliche Fachoberschule …",
+      "url": "https://www.bfbn.de/schulaufsicht/mb-dienststelle-westbayern/schulen/0927",
+      "snippet": "Hier finden Sie die Schulen des MB-Bezirkes Westbayern."
+    },
+    {
+      "title": "Berufliche Schulen | Landratsamt Fürstenfeldbruck",
+      "url": "https://www.lra-ffb.de/bildung-wirtschaft/schulen/berufliche-schulen",
+      "snippet": "Seit dem Schuljahr 2018/19 kann an der Berufsschule Fürstenfeldbruck das Angebot „Berufsschule Plus“ gewählt werden. Neben der …"
+    }
+  ]
+}

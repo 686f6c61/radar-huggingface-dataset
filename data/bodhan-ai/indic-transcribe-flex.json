@@ -5,7 +5,7 @@
   "author": "bodhan-ai",
   "url": "https://huggingface.co/bodhan-ai/indic-transcribe-flex",
   "created_at": "2026-08-07T12:00:44.000Z",
-  "updated_at": "2026-09-11T23:00:21.000Z",
+  "updated_at": "2026-09-15T04:42:30.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "automatic-speech-recognition",
@@ -94,8 +94,8 @@
   "trending_score": 9,
   "parameters": 1222553584,
   "parameters_human": "1.22B",
-  "storage_bytes": 4894533546,
-  "storage_human": "4.9 GB",
+  "storage_bytes": 9787196780,
+  "storage_human": "9.8 GB",
   "base_model": "nvidia/canary-1b-v2",
   "formats": [
     "safetensors"

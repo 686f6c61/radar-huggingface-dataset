@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-mistral_7b_instruct_v02_up_svdllm_finetuned_keep_0p70",
+  "slug": "jeesup-svd-safety-mistral_7b_instruct_v02_up_svdllm_finetuned_keep_0p70",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-mistral_7b_instruct_v02_up_svdllm_finetuned_keep_0p70",
+  "created_at": "2026-09-15T01:07:03.000Z",
+  "updated_at": "2026-09-15T01:18:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mistral",
+    "svd-llm",
+    "compression",
+    "low-rank",
+    "safety",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.2",
+    "base_model:finetune:mistralai/Mistral-7B-Instruct-v0.2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 14526637385,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "On This Day - Today in History, Film, Music and Sport",
+      "url": "https://www.onthisday.com/",
+      "snippet": "Find out what happened today or any day in history with On This Day. Historical events, birthdays, deaths, photos and famous …"
+    },
+    {
+      "title": "Today in History - On This Day",
+      "url": "https://www.onthisday.com/today/events.php",
+      "snippet": "Learn about important and interesting historical events that happened on today in history. Hundreds of events and facts from history, …"
+    },
+    {
+      "title": "On This Day - What Happened Today In History | Britannica",
+      "url": "https://www.britannica.com/on-this-day",
+      "snippet": "On This Day In History: anniversaries, birthdays, major events, and time capsules. This day's facts in the arts, politics, and sciences."
+    },
+    {
+      "title": "What Happened on September 12 | HISTORY",
+      "url": "https://www.history.com/this-day-in-history",
+      "snippet": "Discover what happened on September 12 with HISTORY&#8217;s summaries of major events, anniversaries, famous births and …"
+    },
+    {
+      "title": "On This Day – What Happened Today in History - timeanddate.com",
+      "url": "https://www.timeanddate.com/on-this-day/",
+      "snippet": "Discover what happened on this day in history. Explore key events, famous birthdays, and historical milestones from past to present."
+    }
+  ]
+}

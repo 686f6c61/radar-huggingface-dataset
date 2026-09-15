@@ -5,7 +5,7 @@
   "author": "SaltedLemon",
   "url": "https://huggingface.co/SaltedLemon/lejepa-control-pusht",
   "created_at": "2026-08-08T14:15:24.000Z",
-  "updated_at": "2026-08-29T09:07:16.000Z",
+  "updated_at": "2026-09-14T15:06:50.000Z",
   "license": "mixed-apache-2.0-and-mit",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",
@@ -17,6 +17,8 @@
     "model-based-control",
     "jepa",
     "reinforcement-learning",
+    "latent-planning",
+    "iterative-control",
     "license:other",
     "region:us"
   ],

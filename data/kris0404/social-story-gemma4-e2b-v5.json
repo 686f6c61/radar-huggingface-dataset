@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Kris0404/social-story-gemma4-e2b-v5",
+  "slug": "kris0404-social-story-gemma4-e2b-v5",
+  "author": "Kris0404",
+  "url": "https://huggingface.co/Kris0404/social-story-gemma4-e2b-v5",
+  "created_at": "2026-09-15T09:48:01.000Z",
+  "updated_at": "2026-09-15T11:29:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4_text",
+    "gemma4",
+    "social-stories",
+    "autism",
+    "on-device",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:quantized:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4647449891,
+  "parameters_human": "4.65B",
+  "storage_bytes": 3485313375,
+  "storage_human": "3.5 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taaloefenen.nl - taal oefenen voor groep 4, groep 5, groep 6, groep 7 ...",
+      "url": "https://www.taaloefenen.nl/",
+      "snippet": "Leuk en leerzaam Spelend taal oefenen; dat is wat deze website te bieden heeft. Door spelen en leren af te wisselen blijven kinderen …"
+    },
+    {
+      "title": "Woordenschat oefenen voor groep 4, groep 5, groep 6, groep 7 en …",
+      "url": "https://www.taaloefenen.nl/woordenschat.html",
+      "snippet": "Je kunt online oefenen, een spelletje spelen en ook werkbladen met leuke puzzels printen! Of je nu in groep 4, groep 5, groep 6, …"
+    },
+    {
+      "title": "Klas - Taal oefenen",
+      "url": "https://www.taaloefenen.nl/taken.php?a=reset_taak",
+      "snippet": "Voor docenten Ben je een docent en wil je met je klas taal oefenen? Maak GRATIS je klas aan en stuur taken naar alle leerlingen! …"
+    },
+    {
+      "title": "Sponge Dash - taaloefenen.nl",
+      "url": "https://www.taaloefenen.nl/games/sponge_dash/index.html?wl_kind=1",
+      "snippet": "Speel het leuke spel en oefen tegelijk taal!"
+    },
+    {
+      "title": "Taaloefenen.nl: spelen",
+      "url": "https://www.taaloefenen.nl/spelletjekiezen.html?thiskind=1",
+      "snippet": "Plastic Mania Heb je weleens gehoord dat er allerlei rommel en plastic in onze oceanen drijft? Jij mag bij dit spelletje helpen met …"
+    }
+  ]
+}

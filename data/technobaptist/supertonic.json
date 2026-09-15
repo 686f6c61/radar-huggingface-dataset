@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TechnoBaptist/supertonic",
+  "slug": "technobaptist-supertonic",
+  "author": "TechnoBaptist",
+  "url": "https://huggingface.co/TechnoBaptist/supertonic",
+  "created_at": "2026-09-15T10:53:09.000Z",
+  "updated_at": "2026-09-15T10:53:09.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "supertonic",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "supertonic",
+    "onnx",
+    "text-to-speech",
+    "en",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 262725592,
+  "storage_human": "263 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Max Verstappen - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Max_Verstappen",
+      "snippet": "Max Emilian Verstappen (Dutch pronunciation: [ˈmɑks fɛrˈstɑpə (n)]; born 30 September 1997) is a Dutch and Belgian racing driver …"
+    },
+    {
+      "title": "Max Verstappen - Verstappen.com",
+      "url": "https://news.verstappen.com/en",
+      "snippet": "Verstappen.com is the official website of Max Verstappen. It brings the latest news, photos and results."
+    },
+    {
+      "title": "Max Verstappen – Wikipedie",
+      "url": "https://cs.wikipedia.org/wiki/Max_Verstappen",
+      "snippet": "Max Emilian Verstappen (* 30. září 1997 Hasselt) [2] je belgicko - nizozemský automobilový závodník, který pod nizozemskou vlajkou …"
+    },
+    {
+      "title": "Max Verstappen Official Site › Verstappen.com",
+      "url": "https://www.verstappen.com/",
+      "snippet": "Verstappen.com is het enige officiële platform van alles rondom Max Verstappen. Vind hier alles wat je wilt weten over Max …"
+    },
+    {
+      "title": "Max Verstappen - F1 Driver for Red Bull Racing",
+      "url": "https://www.formula1.com/en/drivers/max-verstappen",
+      "snippet": "Arriving as Formula 1’s youngest ever competitor at just 17 years old, Verstappen pushed his car, his rivals and the sport’s record …"
+    }
+  ]
+}

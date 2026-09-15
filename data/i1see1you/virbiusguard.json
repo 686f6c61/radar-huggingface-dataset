@@ -5,7 +5,7 @@
   "author": "i1see1you",
   "url": "https://huggingface.co/i1see1you/VirbiusGuard",
   "created_at": "2026-08-26T03:00:53.000Z",
-  "updated_at": "2026-09-04T03:52:03.000Z",
+  "updated_at": "2026-09-15T05:05:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -35,7 +35,7 @@
     "conversational"
   ],
   "likes": 3,
-  "downloads_30d": 387,
+  "downloads_30d": 424,
   "trending_score": 0,
   "parameters": 751632384,
   "parameters_human": "751.6M",

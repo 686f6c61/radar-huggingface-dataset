@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "seaew/MyAwesomeModel-TestRepo",
+  "slug": "seaew-myawesomemodel-testrepo",
+  "author": "seaew",
+  "url": "https://huggingface.co/seaew/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-15T09:57:59.000Z",
+  "updated_at": "2026-09-15T09:58:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "App Libero mail: quando cancello i messaggi restano sul server Libero ...",
+      "url": "https://www.digital-forum.it/threads/app-libero-mail-quando-cancello-i-messaggi-restano-sul-server-libero.192744/",
+      "snippet": "Oct 18, 2017 · Andando sul sito Libero mail, infatti, trovo le mail cancellate ancora come da leggere, come se non le avessi nemmeno …"
+    },
+    {
+      "title": "Libero Mail: Violato il Database degli utenti! - digital-forum.it",
+      "url": "https://www.digital-forum.it/threads/libero-mail-violato-il-database-degli-utenti.186613/",
+      "snippet": "Sep 7, 2016 · In pochi giorni si concentrano i leak di milioni e milioni di account telematici, quasi tutti connessi all'oramai famigerato …"
+    },
+    {
+      "title": "Posta libero | Digital-Forum - Il Forum dedicato alla TV Digitale",
+      "url": "https://www.digital-forum.it/threads/posta-libero.179474/",
+      "snippet": "Sep 5, 2015 · vorrei sapere il perchè tutto di un colpo mi sono scomparsi tutte le mail sul portale di libero, mi spiego io le lasciavo …"
+    },
+    {
+      "title": "Cancellare libero mail | Digital-Forum - Il Forum dedicato alla TV Digitale",
+      "url": "https://www.digital-forum.it/threads/cancellare-libero-mail.171454/",
+      "snippet": "Sep 12, 2014 · Come da titolo ho bisogno di chiudere una casella di posta libero, quando mi iscrissi detti nomi e indirizzi fasulli, ora x …"
+    },
+    {
+      "title": "Problema con Libero mail | Digital-Forum - Il Forum dedicato alla TV ...",
+      "url": "https://www.digital-forum.it/threads/problema-con-libero-mail.177812/",
+      "snippet": "Jun 22, 2015 · Dalle prime ore di questo pomeriggio è in corso un disservizio che impedisce agli internauti di controllare il proprio …"
+    }
+  ]
+}

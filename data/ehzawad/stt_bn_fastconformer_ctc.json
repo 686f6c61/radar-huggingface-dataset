@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ehzawad/stt_bn_fastconformer_ctc",
+  "slug": "ehzawad-stt_bn_fastconformer_ctc",
+  "author": "ehzawad",
+  "url": "https://huggingface.co/ehzawad/stt_bn_fastconformer_ctc",
+  "created_at": "2026-09-15T10:38:42.000Z",
+  "updated_at": "2026-09-15T10:58:08.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "bn"
+  ],
+  "tags": [
+    "nemo",
+    "ASR",
+    "Bengali",
+    "Bangla",
+    "FastConformer",
+    "CTC",
+    "NeMo",
+    "automatic-speech-recognition",
+    "bn",
+    "base_model:nvidia/stt_en_fastconformer_ctc_large",
+    "base_model:finetune:nvidia/stt_en_fastconformer_ctc_large",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 463155200,
+  "storage_human": "463 MB",
+  "base_model": "nvidia/stt_en_fastconformer_ctc_large",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "633 Squadron - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/633_Squadron",
+      "snippet": "633 Squadron is a 1964 war film directed by Walter Grauman and starring Cliff Robertson, George Chakiris, and Maria Perschy."
+    },
+    {
+      "title": "633 Squadron (1964) - IMDb",
+      "url": "https://www.imdb.com/title/tt0057811",
+      "snippet": "633 Squadron: Directed by Walter Grauman. With Cliff Robertson, George Chakiris, Maria Perschy, Harry Andrews. A RAF squadron …"
+    },
+    {
+      "title": "The Real Story Behind “633 Squadron” - World War Wings",
+      "url": "https://worldwarwings.com/real-633-squadron/",
+      "snippet": "Apr 21, 2026 · The film 633 Squadron tells the story of a daring low-level raid against a heavily defended target. While fictional, its …"
+    },
+    {
+      "title": "633 Squadron - Prime Video",
+      "url": "https://www.primevideo.com/detail/0SY58O8N088216APAKF5VAM8LC/",
+      "snippet": "Based on true events, Allied forces send the daring 633 Squadron into Norwegian fjords to create an avalanche that will crush the …"
+    },
+    {
+      "title": "633 Squadron (1964) - Full cast & crew - IMDb",
+      "url": "https://www.imdb.com/title/tt0057811/fullcredits/",
+      "snippet": "633 Squadron (1964) - Cast and crew credits, including actors, actresses, directors, writers and more."
+    }
+  ]
+}

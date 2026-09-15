@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "yichenthu/vit-retrieval",
+  "slug": "yichenthu-vit-retrieval",
+  "author": "yichenthu",
+  "url": "https://huggingface.co/yichenthu/vit-retrieval",
+  "created_at": "2026-09-15T02:14:21.000Z",
+  "updated_at": "2026-09-15T02:14:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Is Whatsapp web down? - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5538738",
+      "snippet": "Sep 8, 2025 · Cannot link my device now."
+    },
+    {
+      "title": "[found sos] cant login whatsapp browser - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5556445",
+      "snippet": "Feb 27, 2026 · Outline · [ Standard ] · Linear+ [found sos] cant login whatsapp browser, from iphone"
+    },
+    {
+      "title": "abonnements skype - Communauté Microsoft",
+      "url": "https://answers.microsoft.com/fr-fr/skype/forum/all/abonnements-skype/2cbfe577-9de4-49e7-9b49-bffacae7b110",
+      "snippet": "Bonjour, J'utilise peu skype et je n'avais pas eu de paiement à effectuer jusqu'alors. Existe-t-il une solution gratuite pour des …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/outlook_com/forum/all/outlook-todo-synced-tasks-attachments-only-non/66bca736-f128-4d62-b193-79c8c57ad30f",
+      "snippet": ""
+    },
+    {
+      "title": "those use ipon watsapp web browser - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5556449",
+      "snippet": "Feb 27, 2026 · Lowyat.NET Malaysia's Tech Enthusiast Resource Community. Forums, Buy, Sell, Second Hand, Notebook, Laptop, …"
+    }
+  ]
+}

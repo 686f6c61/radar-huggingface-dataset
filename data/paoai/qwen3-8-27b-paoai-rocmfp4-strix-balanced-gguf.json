@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "PaoAI/Qwen3.8-27B-PaoAI-ROCmFP4-STRIX-BALANCED-GGUF",
+  "slug": "paoai-qwen3-8-27b-paoai-rocmfp4-strix-balanced-gguf",
+  "author": "PaoAI",
+  "url": "https://huggingface.co/PaoAI/Qwen3.8-27B-PaoAI-ROCmFP4-STRIX-BALANCED-GGUF",
+  "created_at": "2026-09-15T09:59:09.000Z",
+  "updated_at": "2026-09-15T10:48:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "quantized",
+    "imatrix",
+    "strix-halo",
+    "rocmfp4",
+    "gfx1151",
+    "qwen3",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 15014103937,
+  "storage_human": "15.0 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "労働災害が発生したとき ｜厚生労働省 - mhlw.go.jp",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/rousai/index.html",
+      "snippet": "労災保険を請求するには 労働災害によって負傷した場合などには、労働基準監督署に備え付けてある請求書を提出することにより …"
+    },
+    {
+      "title": "労災の申請手続きを徹底解説！流れ、必要書類、会社がすべき ...",
+      "url": "https://romsearch.officestation.jp/rodohoken/rousaihoken/275",
+      "snippet": "Mar 31, 2024 · 万が一の時に備えて、人事労務担当者は労災の申請の流れを正しく把握しておきましょう。 この記事では、労災の申 …"
+    },
+    {
+      "title": "労災申請の流れ｜必要書類と手続きをわかりやすく解説",
+      "url": "https://next-career-station.net/rousaishinseinonagarehituyoushoruitotetudukiwowakariyasukukaisetu/",
+      "snippet": "Jun 1, 2026 · 労災申請の流れや必要書類、病院受診から会社への報告、労働基準監督署への申請までの手続きを解説します。 療養 …"
+    },
+    {
+      "title": "労災の申請の方法｜手続の流れをわかりやすく解説",
+      "url": "https://www.daylight-law.jp/rousai/qa/qa46/",
+      "snippet": "Feb 13, 2026 · 労災申請とは、労災保険から補償金を受領するために労働基準監督署に対して必要な手続きを行うことをいいます。 …"
+    },
+    {
+      "title": "労災申請の全手順と期間の目安：申請から給付までの流れ ...",
+      "url": "https://rousai-nagasesogo.com/information/column-250905/",
+      "snippet": "Sep 5, 2025 · 労災申請は、確かにいくつかのステップを踏む必要がありますが、 その基本的な流れを一度理解してしまえば、次に …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "adsingh93/classification-best",
+  "slug": "adsingh93-classification-best",
+  "author": "adsingh93",
+  "url": "https://huggingface.co/adsingh93/classification-best",
+  "created_at": "2026-09-15T10:34:08.000Z",
+  "updated_at": "2026-09-15T10:34:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Subway Surfers - Play Online for Free! | Poki",
+      "url": "https://poki.com/en/g/subway-surfers?msockid=35e74c807608634910b05b55770b6236",
+      "snippet": "Subway Surfers is an endless runner that challenges you to escape security. Dash between trains, dodge obstacles, and collect coins …"
+    },
+    {
+      "title": "Subway Surfers - Jouez en Ligne Gratuitement ! | Poki",
+      "url": "https://poki.com/fr/g/subway-surfers?msockid=35e74c807608634910b05b55770b6236",
+      "snippet": "Subway Surfers est un runner infini palpitant où tu dois échapper au garde ! Fonce entre les trains, esquive les obstacles et ramasse …"
+    },
+    {
+      "title": "Poki - Let the world play",
+      "url": "https://about.poki.com/en/g/subway-surfers",
+      "snippet": "At Poki, play is how we learn. That's why we're on a mission to become the ultimate online playground for players and game …"
+    },
+    {
+      "title": "Free Online Games at Poki - Play Now!",
+      "url": "https://poki.com/?msockid=35e74c807608634910b05b55770b6236",
+      "snippet": "Play free online games at Poki, the #1 website for instant web games. Explore exclusive titles, popular favorites, and new game …"
+    },
+    {
+      "title": "Subway Surfers - Online kostenlos spielen! | Poki",
+      "url": "https://poki.com/de/g/subway-surfers?msockid=35e74c807608634910b05b55770b6236",
+      "snippet": "Subway Surfers ist ein rasanter Endless-Runner, bei dem du dem Wachmann entkommen musst! Flitze zwischen Zügen durch, …"
+    }
+  ]
+}

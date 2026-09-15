@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "XueZhaAllen/llama31-8b-poker-mix-v1-step10k-Q4_K_M-GGUF",
+  "slug": "xuezhaallen-llama31-8b-poker-mix-v1-step10k-q4_k_m-gguf",
+  "author": "XueZhaAllen",
+  "url": "https://huggingface.co/XueZhaAllen/llama31-8b-poker-mix-v1-step10k-Q4_K_M-GGUF",
+  "created_at": "2026-09-15T09:53:10.000Z",
+  "updated_at": "2026-09-15T09:53:36.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "poker",
+    "heads-up-no-limit",
+    "texas-holdem",
+    "gto",
+    "nash-equilibrium",
+    "lora",
+    "distillation",
+    "llama",
+    "llama-3.1",
+    "sft",
+    "reasoning",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "dataset:jevonmao/poker-sft-mix-v1",
+    "base_model:jevonmao/llama31-8b-poker-mix-v1-step10k",
+    "base_model:adapter:jevonmao/llama31-8b-poker-mix-v1-step10k",
+    "license:llama3.1",
+    "model-index",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 4920739872,
+  "storage_human": "4.9 GB",
+  "base_model": "jevonmao/llama31-8b-poker-mix-v1-step10k",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Heads-Up No-Limit action prediction",
+      "dataset": "HoldemEval-31k (held-out split)",
+      "metric": "Top-1 action-type accuracy",
+      "value": 0.8396
+    },
+    {
+      "task": "Heads-Up No-Limit action prediction",
+      "dataset": "HoldemEval-31k (held-out split)",
+      "metric": "Output parse rate",
+      "value": 1
+    }
+  ],
+  "sources": [
+    {
+      "title": "On This Day - Today in History, Film, Music and Sport",
+      "url": "https://www.onthisday.com/",
+      "snippet": "Find out what happened today or any day in history with On This Day. Historical events, birthdays, deaths, photos and famous …"
+    },
+    {
+      "title": "On This Day - What Happened Today In History | Britannica",
+      "url": "https://www.britannica.com/on-this-day",
+      "snippet": "On This Day In History: anniversaries, birthdays, major events, and time capsules. This day's facts in the arts, politics, and sciences."
+    },
+    {
+      "title": "Today in History - On This Day",
+      "url": "https://www.onthisday.com/today/events.php",
+      "snippet": "Learn about important and interesting historical events that happened on today in history. Hundreds of events and facts from history, …"
+    },
+    {
+      "title": "On This Day – What Happened Today in History - timeanddate.com",
+      "url": "https://www.timeanddate.com/on-this-day/",
+      "snippet": "Discover what happened on this day in history. Explore key events, famous birthdays, and historical milestones from past to present."
+    },
+    {
+      "title": "What Happened on September 12 | HISTORY",
+      "url": "https://www.history.com/this-day-in-history",
+      "snippet": "Discover what happened on September 12 with HISTORY’s summaries of major events, anniversaries, famous births and notable …"
+    }
+  ]
+}

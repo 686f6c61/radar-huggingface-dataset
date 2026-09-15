@@ -5,7 +5,7 @@
   "author": "flowxai",
   "url": "https://huggingface.co/flowxai/piiguard",
   "created_at": "2026-07-19T11:13:25.000Z",
-  "updated_at": "2026-08-24T08:00:49.000Z",
+  "updated_at": "2026-09-14T11:04:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -78,7 +78,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 81,
+  "downloads_30d": 83,
   "trending_score": 0,
   "parameters": 277464591,
   "parameters_human": "277.5M",

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove50_swapdisc_a020_c002_b010_r03",
+  "slug": "jeesup-svd-safety-l2_remove50_swapdisc_a020_c002_b010_r03",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapdisc_a020_c002_b010_r03",
+  "created_at": "2026-09-15T02:26:25.000Z",
+  "updated_at": "2026-09-15T02:43:46.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "提示信息 - 建筑电气论坛-Building Electricity - Powered by Discuz!",
+      "url": "http://www.jzdq.net.cn/club/thread-25852-1-1.html",
+      "snippet": "本计算程序是发表在《建筑电气》2023年第5期《电力电缆经济电流截面选型计算的探讨》（作者：孙岩）一文的配套计算程序。应广 …"
+    },
+    {
+      "title": "20米问题 - 建筑电气技术 - 建筑电气论坛-Building Electricity - Powered …",
+      "url": "http://www.jzdq.net.cn/club/thread-19927-1-1.html",
+      "snippet": "Apr 14, 2011 · 我们知道，研究跨步电压时，一般认为20米处跨步电压为0。今天听王老亲口所讲：低压系统接地极间距20米，根本没 …"
+    },
+    {
+      "title": "防雷引下线的柱内筋不可以采用焊接？",
+      "url": "http://www.jzdq.net.cn/club/thread-31943-1-1.html",
+      "snippet": "Apr 6, 2016 · 防雷引下线绑、焊无所谓，引下线与接地连接线、与外引预埋连接板、与利用土建基础做接地极钢筋都用焊接为好。这些 …"
+    },
+    {
+      "title": "建筑电气--变电所电气接地结线形式",
+      "url": "http://www.jzdq.net.cn/periodical/display.php?aid=12933",
+      "snippet": "摘 要：根据IEC标准介绍多电源的TN系统变电所的电气接地结线形式，及IEC TC64秘书长R. Pelta先生在学术报告中演示的变电所的 …"
+    },
+    {
+      "title": "消防控制室的接地 - 建筑电气技术 - 建筑电气论坛-Building Electricity",
+      "url": "http://www.jzdq.net.cn/club/thread-29849-1-1.html",
+      "snippet": "Mar 11, 2015 · 98版火规对消防控制室的接地有明确的规定，但新火规没明确，依然按98版设计吗？大家是怎么做的? 消防控制室的接 …"
+    }
+  ]
+}

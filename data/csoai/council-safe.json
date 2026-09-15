@@ -5,7 +5,7 @@
   "author": "csoai",
   "url": "https://huggingface.co/csoai/council-safe",
   "created_at": "2026-09-01T06:22:32.000Z",
-  "updated_at": "2026-09-14T04:00:02.000Z",
+  "updated_at": "2026-09-14T10:41:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

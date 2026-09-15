@@ -5,7 +5,7 @@
   "author": "bodhan-ai",
   "url": "https://huggingface.co/bodhan-ai/indic-transcribe-core",
   "created_at": "2026-08-19T08:59:39.000Z",
-  "updated_at": "2026-09-11T17:51:37.000Z",
+  "updated_at": "2026-09-15T04:13:10.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "automatic-speech-recognition",
@@ -39,6 +39,7 @@
   ],
   "tags": [
     "transformers",
+    "nemo",
     "safetensors",
     "indic_canary",
     "feature-extraction",
@@ -89,8 +90,8 @@
   "trending_score": 13,
   "parameters": 1222553584,
   "parameters_human": "1.22B",
-  "storage_bytes": 4894370350,
-  "storage_human": "4.9 GB",
+  "storage_bytes": 9786865575,
+  "storage_human": "9.8 GB",
   "base_model": "nvidia/canary-1b-v2",
   "formats": [
     "safetensors"

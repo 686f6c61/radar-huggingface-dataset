@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "joshycodes/meta-llama-3.1-8b-sorrel-selfloop-mech-high-midtrain",
+  "slug": "joshycodes-meta-llama-3-1-8b-sorrel-selfloop-mech-high-midtrain",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-selfloop-mech-high-midtrain",
+  "created_at": "2026-09-15T10:09:23.000Z",
+  "updated_at": "2026-09-15T10:18:12.000Z",
+  "license": "internal-research",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "flourishing-training",
+    "continued-pretraining",
+    "dataset:joshycodes/sorrel-corpus",
+    "base_model:joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-midtrain",
+    "base_model:finetune:joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-midtrain",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 32138328283,
+  "storage_human": "32.1 GB",
+  "base_model": "joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-midtrain",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

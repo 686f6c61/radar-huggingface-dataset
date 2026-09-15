@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "axiomofmind/Hornybot-Julian-POV",
+  "slug": "axiomofmind-hornybot-julian-pov",
+  "author": "axiomofmind",
+  "url": "https://huggingface.co/axiomofmind/Hornybot-Julian-POV",
+  "created_at": "2026-09-15T01:14:07.000Z",
+  "updated_at": "2026-09-15T02:16:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.5",
+    "llama.cpp",
+    "conversational",
+    "roleplay",
+    "adult",
+    "first-person",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 274,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 44119670189,
+  "storage_human": "44.1 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HTTP - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/HTTP",
+      "snippet": "HTTP is the foundation of data communication for the World Wide Web, where hypertext documents include hyperlinks to other …"
+    },
+    {
+      "title": "HTTP — Википедия",
+      "url": "https://ru.wikipedia.org/wiki/HTTP",
+      "snippet": "Hypertext Transfer Protocol — «протокол передачи гипертекста ») — сетевой протокол прикладного уровня, который …"
+    },
+    {
+      "title": "Hypertext Transfer Protocol - HTTP - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/html/what-is-http/",
+      "snippet": "Jan 17, 2026 · HTTP (Hypertext Transfer Protocol) is a core Internet protocol that defines how data is exchanged between clients and …"
+    },
+    {
+      "title": "HTTP: Hypertext Transfer Protocol - MDN Web Docs",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP",
+      "snippet": "Jul 28, 2026 · HTTP is an application-layer protocol for transmitting hypermedia documents, such as HTML. It was designed for …"
+    },
+    {
+      "title": "HTTPS - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/HTTPS",
+      "snippet": "HTTP operates at the highest layer of the TCP/IP model —the application layer; as does the TLS security protocol (operating as a …"
+    }
+  ]
+}

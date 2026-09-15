@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Garrick1224/gungame",
+  "slug": "garrick1224-gungame",
+  "author": "Garrick1224",
+  "url": "https://huggingface.co/Garrick1224/gungame",
+  "created_at": "2026-09-15T09:57:34.000Z",
+  "updated_at": "2026-09-15T10:09:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7297949,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Istanbul - Itinéraires conseillés - Routard.com",
+      "url": "https://www.routard.com/fr/guide/a/itineraires-conseilles/europe/turquie/istanbul",
+      "snippet": "Nos suggestions d'itinéraires et de circuits en fonction de la durée de votre séjour Istanbul."
+    },
+    {
+      "title": "Istanbul : les incontournables | Que faire, que voir, que visiter",
+      "url": "https://www.routard.com/fr/guide/top/europe/turquie/istanbul",
+      "snippet": "Istanbul, c’est évidemment Sultanahmet, la vieille ville chaperonnée par Sainte Sophie, la mosquée bleue, le palais Topkapı, les …"
+    },
+    {
+      "title": "Istanbul : les meilleurs hôtels et hébergements - Routard.com",
+      "url": "https://www.routard.com/fr/hotel/p/istanbul",
+      "snippet": "Vous rêvez d'un séjour inoubliable à Istanbul sans dépasser votre budget ? Notre expertise en voyages nous permet de vous …"
+    },
+    {
+      "title": "Guide de voyage et vacances à Istanbul - Routard.com",
+      "url": "https://www.routard.com/fr/guide/europe/turquie/istanbul",
+      "snippet": "Planifiez votre visite à Istanbul : sites incontournables, conseils pratiques, idées d'itinéraires, photos et forum pour votre séjour."
+    },
+    {
+      "title": "Escapade à Istanbul - Routard.com",
+      "url": "https://www.routard.com/fr/mag/idee-week-end/a/escapade-a-istanbul",
+      "snippet": "Apr 28, 2017 · Séjour romantique à deux, virée shopping, voyage culturel, nuits du Bosphore… Istanbul s’accorde à toutes sortes de …"
+    }
+  ]
+}

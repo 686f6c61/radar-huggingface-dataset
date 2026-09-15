@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "batmac/gradient-ai-text-detector-onnx",
+  "slug": "batmac-gradient-ai-text-detector-onnx",
+  "author": "batmac",
+  "url": "https://huggingface.co/batmac/gradient-ai-text-detector-onnx",
+  "created_at": "2026-09-15T01:36:06.000Z",
+  "updated_at": "2026-09-15T04:42:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "deberta-v2",
+    "text-classification",
+    "ai-generated-text-detection",
+    "quantization",
+    "en",
+    "base_model:ShantanuT01/gradient-ai-text-detector",
+    "base_model:quantized:ShantanuT01/gradient-ai-text-detector",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3666830547,
+  "storage_human": "3.7 GB",
+  "base_model": "ShantanuT01/gradient-ai-text-detector",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "Artificial Intelligence in Materials Science and Engineering - arXiv",
+      "url": "https://arxiv.org/html/2601.12554v1",
+      "snippet": "11.08.2026 ... Section 2 examines ML methodologies in materials modeling, from traditional approaches to deep learning and generative AI, with emphasis on ..."
+    },
+    {
+      "title": "ChatGPT Nederlands",
+      "url": "https://chatgpt.com/nl-NL/",
+      "snippet": "Gebruik ChatGPT om vragen te beantwoorden, te schrijven, afbeeldingen te maken, werk af te ronden en te …"
+    },
+    {
+      "title": "Introducing ChatGPT - OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    },
+    {
+      "title": "Maak kennis met ChatGPT - OpenAI",
+      "url": "https://openai.com/nl-NL/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We hebben een model getraind dat gesprekken kan voeren, genaamd ChatGPT. Dankzij de dialoogvorm kan …"
+    }
+  ]
+}

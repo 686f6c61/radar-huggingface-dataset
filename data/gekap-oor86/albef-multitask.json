@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "gekap-oor86/albef-multitask",
+  "slug": "gekap-oor86-albef-multitask",
+  "author": "gekap-oor86",
+  "url": "https://huggingface.co/gekap-oor86/albef-multitask",
+  "created_at": "2026-09-15T10:37:11.000Z",
+  "updated_at": "2026-09-15T10:37:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leboncoin, site de petites annonces gratuites",
+      "url": "https://www.leboncoin.fr/",
+      "snippet": "Avec leboncoin, trouvez la bonne affaire, réalisez la bonne vente pour votre voiture, immobilier, emploi, location de vacances, …"
+    },
+    {
+      "title": "Toute la France - leboncoin",
+      "url": "https://www.leboncoin.fr/all/offer",
+      "snippet": "Toutes nos annonces gratuites Toute la France. Consultez nos 91472812 annonces de particuliers et professionnels sur leboncoin"
+    },
+    {
+      "title": "Voiture occasion - annonces automobiles de particuliers et ... - leboncoin",
+      "url": "https://www.leboncoin.fr/c/voitures",
+      "snippet": "Consultez nos annonces de voitures d’occasion toutes marques : citadines, SUV, berlines, électriques, hybrides. Plus de 700 000 …"
+    },
+    {
+      "title": "leboncoin, site de petites annonces gratuites",
+      "url": "https://www.leboncoin.fr/my-searches",
+      "snippet": "Le service de réservation de vacances en ligne pour les hôtes Votre dossier de location en ligne Votre Pass Locataire + Votre …"
+    },
+    {
+      "title": "leboncoin",
+      "url": "https://www.leboncoin.fr/\"",
+      "snippet": ""
+    }
+  ]
+}

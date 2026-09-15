@@ -21,10 +21,11 @@
     "license:mit",
     "eval-results",
     "endpoints_compatible",
+    "deploy:sagemaker",
     "region:us"
   ],
-  "likes": 506,
-  "downloads_30d": 2379944,
+  "likes": 505,
+  "downloads_30d": 2314069,
   "trending_score": 8,
   "parameters": 664944,
   "parameters_human": "664944",

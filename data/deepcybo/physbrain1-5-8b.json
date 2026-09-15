@@ -31,9 +31,9 @@
     "base_model:finetune:Qwen/Qwen3-VL-8B-Instruct",
     "region:us"
   ],
-  "likes": 20,
-  "downloads_30d": 144,
-  "trending_score": 18,
+  "likes": 22,
+  "downloads_30d": 207,
+  "trending_score": 21,
   "parameters": 8903438576,
   "parameters_human": "8.90B",
   "storage_bytes": 17831537098,

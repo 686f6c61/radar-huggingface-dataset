@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "Jongbin-kr/exaone-3.5-7.8b-verireason_full-ft_sft-original-1.0_grpo-original-1.0",
+  "slug": "jongbin-kr-exaone-3-5-7-8b-verireason_full-ft_sft-original-1-0_grpo-original-1-0",
+  "author": "Jongbin-kr",
+  "url": "https://huggingface.co/Jongbin-kr/exaone-3.5-7.8b-verireason_full-ft_sft-original-1.0_grpo-original-1.0",
+  "created_at": "2026-09-15T01:13:17.000Z",
+  "updated_at": "2026-09-15T02:15:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "exaone",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 7818448896,
+  "parameters_human": "7.82B",
+  "storage_bytes": 46910806665,
+  "storage_human": "46.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

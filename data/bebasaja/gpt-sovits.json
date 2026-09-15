@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Bebasaja/GPT-SoVITS",
+  "slug": "bebasaja-gpt-sovits",
+  "author": "Bebasaja",
+  "url": "https://huggingface.co/Bebasaja/GPT-SoVITS",
+  "created_at": "2026-09-15T01:39:49.000Z",
+  "updated_at": "2026-09-15T01:39:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2874232033,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download & use Google Translate",
+      "url": "https://support.google.com/translate/answer/6350850?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can translate text, handwriting, photos, and speech in over 200 languages with the Google Translate app. You can also use …"
+    },
+    {
+      "title": "语音翻译 - Android - Google Translate帮助",
+      "url": "https://support.google.com/translate/answer/6142468?hl=zh-Hans",
+      "snippet": "帮助中心 通告 Google Translate帮助论坛论坛 语音翻译 如果您的设备有麦克风，您就可以翻译说出的字词和短语。 对于有些语言，系 …"
+    },
+    {
+      "title": "Change Google Translate dropdown programmatically",
+      "url": "https://stackoverflow.com/questions/5569927/change-google-translate-dropdown-programmatically",
+      "snippet": "Apr 6, 2011 · When you select from the dropdown that the google script inserts, a Google Translate bar appears at the top of the …"
+    },
+    {
+      "title": "translate a PHP $string using google translator API",
+      "url": "https://stackoverflow.com/questions/4640378/translate-a-php-string-using-google-translator-api",
+      "snippet": "been google'ing for a while how is the best way to translate with google translator in PHP, found very different ways converting URLS, …"
+    },
+    {
+      "title": "html - transform:translate (10%)とするとずれる。 - スタック・オー …",
+      "url": "https://ja.stackoverflow.com/questions/35504/transformtranslate10%E3%81%A8%E3%81%99%E3%82%8B%E3%81%A8%E3%81%9A%E3%82%8C%E3%82%8B",
+      "snippet": "Jun 12, 2017 · transform: translate (10%); の10％は width:90%; すなわち width:450px; に対するもので、この場合 45px です。 10％ …"
+    }
+  ]
+}

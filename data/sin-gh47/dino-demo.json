@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Sin-gh47/dino-demo",
+  "slug": "sin-gh47-dino-demo",
+  "author": "Sin-gh47",
+  "url": "https://huggingface.co/Sin-gh47/dino-demo",
+  "created_at": "2026-09-15T10:05:03.000Z",
+  "updated_at": "2026-09-15T10:05:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sinus (mathématiques) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Sinus_(math%C3%A9matiques)",
+      "snippet": "Le sinus d'un angle α est noté sin (α) ou simplement sin α1. En analyse, la fonction sinus est une fonction de la variable réelle qui, à …"
+    },
+    {
+      "title": "Sîn — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/S%C3%AEn",
+      "snippet": "(en) A. Stone, « Nanna/Suen/Sin (god)) [archive] », sur Ancient Mesopotamian Gods and Goddesses, Oracc and the UK Higher …"
+    },
+    {
+      "title": "Sine and cosine - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sine_and_cosine",
+      "snippet": "sin (z) is found in the functional equation for the Gamma function, Γ ( s ) Γ ( 1 − s ) = π sin ⁡ ( π s ) , {\\displaystyle \\Gamma (s)\\Gamma …"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office365.com/mail/login.html?authRedirect=true&bO=1",
+      "snippet": "Sign in to your Outlook account to manage emails and access Office 365 services."
+    },
+    {
+      "title": "Sin - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sin",
+      "snippet": "Christianity treats sin as an offense against God, rooted in disobedience, with doctrines like original sin and redemption through …"
+    }
+  ]
+}

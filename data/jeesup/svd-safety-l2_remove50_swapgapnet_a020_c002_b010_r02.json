@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove50_swapgapnet_a020_c002_b010_r02",
+  "slug": "jeesup-svd-safety-l2_remove50_swapgapnet_a020_c002_b010_r02",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapnet_a020_c002_b010_r02",
+  "created_at": "2026-09-15T01:55:43.000Z",
+  "updated_at": "2026-09-15T02:09:35.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Parts, manuals and support for ST 324P | Husqvarna US",
+      "url": "https://www.husqvarna.com/us/support/st324p/",
+      "snippet": "Jan 24, 2025 · All the support you need for ST 324P. Manuals, spare parts, guides, how-to’s, and more."
+    },
+    {
+      "title": "Parts, manuals and support for ST 324P | Husqvarna CA",
+      "url": "https://www.husqvarna.com/ca-en/support/st324p/",
+      "snippet": "All the support you need for ST 324P. Manuals, spare parts, guides, how-to’s, and more."
+    },
+    {
+      "title": "Husqvarna ST324P Snow Blower - OEM Parts - eReplacementParts.com",
+      "url": "https://www.ereplacementparts.com/models/snow-blower/husqvarna/id1275032/st324p/?msockid=3a70a6c3deb46ffb229ab116dfb56efb",
+      "snippet": "Shop OEM replacement parts by symptoms or model diagrams for your Husqvarna ST324P St 324p!"
+    },
+    {
+      "title": "HUSQVARNA ST 324P REPAIR PARTS MANUAL Pdf Download",
+      "url": "https://www.manualslib.com/manual/805025/Husqvarna-St-324p.html",
+      "snippet": "View and Download Husqvarna ST 324P repair parts manual online. Husqvarna Snow thrower Repair Parts Manual. ST 324P snow …"
+    },
+    {
+      "title": "Husqvarna Snow Blower ST324P - OEM Parts & Repair Help - PartSelect",
+      "url": "https://www.partselect.com/Models/ST324P/Manufacturer/126/?msockid=3a70a6c3deb46ffb229ab116dfb56efb",
+      "snippet": "A complete guide to your ST324P Husqvarna Snow Blower at PartSelect. We have model diagrams, OEM parts, symptom–based …"
+    }
+  ]
+}

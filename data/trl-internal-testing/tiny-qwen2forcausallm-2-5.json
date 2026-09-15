@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "trl-internal-testing/tiny-Qwen2ForCausalLM-2.5",
+  "slug": "trl-internal-testing-tiny-qwen2forcausallm-2-5",
+  "author": "trl-internal-testing",
+  "url": "https://huggingface.co/trl-internal-testing/tiny-Qwen2ForCausalLM-2.5",
+  "created_at": "2024-11-25T15:06:15.000Z",
+  "updated_at": "2026-09-08T04:47:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "trl",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 43,
+  "downloads_30d": 16259976,
+  "trending_score": 0,
+  "parameters": 2435016,
+  "parameters_human": "2.4M",
+  "storage_bytes": 89229688,
+  "storage_human": "89 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Technology readiness level — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Technology_Readiness_Level",
+      "snippet": "Le TRL est en particulier un critère important pour effectuer les choix d'architecture des missions de la NASA et dans le programme …"
+    },
+    {
+      "title": "L'échelle TRL | Horizon-europe.gouv.fr",
+      "url": "https://www.horizon-europe.gouv.fr/l-echelle-trl-38806",
+      "snippet": "May 6, 2025 · L'échelle de maturité technologique (Technology Readiness Level) est un système de classification du niveau de …"
+    },
+    {
+      "title": "Trail Running Paris — La plus grande communauté TRL & sorties hebdo",
+      "url": "https://trailrunninglab.com/community/paris",
+      "snippet": "Sorties hebdomadaires en semaine dans les bois, escapades à Fontainebleau le week-end. Point de RDV annoncé à chaque sortie …"
+    },
+    {
+      "title": "TRL : à quoi ça sert ? - Grenoble INP - UGA",
+      "url": "https://www.grenoble-inp.fr/fr/recherche-valorisation/trl-a-quoi-ca-sert",
+      "snippet": "Le TRL (Technology Readiness Level ou niveau de maturité technologique) est un système de mesure employé pour évaluer le …"
+    },
+    {
+      "title": "Les TRL, mesurer la maturité d’une technologie - Les cahiers de l ...",
+      "url": "https://www.lescahiersdelinnovation.com/les-trl-mesurer-la-maturite-d-une-technologie/",
+      "snippet": "Feb 12, 2022 · Les TRL (niveaux de maturité technologique) sont devenus incontournables pour décrire la proximité d'une nouvelle …"
+    }
+  ]
+}

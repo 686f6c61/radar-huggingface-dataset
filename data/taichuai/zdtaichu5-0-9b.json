@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "TaichuAI/ZDTaichu5.0-9B",
+  "slug": "taichuai-zdtaichu5-0-9b",
+  "author": "TaichuAI",
+  "url": "https://huggingface.co/TaichuAI/ZDTaichu5.0-9B",
+  "created_at": "2026-09-04T02:55:48.000Z",
+  "updated_at": "2026-09-15T06:43:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "zdtaichu5_0",
+    "multimodal",
+    "vision-language-model",
+    "spatial-reasoning",
+    "agent",
+    "video-understanding",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "region:us"
+  ],
+  "likes": 70,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 9794197512,
+  "parameters_human": "9.79B",
+  "storage_bytes": 19608490763,
+  "storage_human": "19.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Taichu-AI/ZDTaichu5.0-9B · GitHub",
+      "url": "https://github.com/Taichu-AI/ZDTaichu5.0-9B",
+      "snippet": "ZDTaichu5.0-9B is a multimodal foundation model for general visual understanding, spatial reasoning, agentic tool use, and embodied-AI research."
+    },
+    {
+      "title": "Zero One Everything Releases New Generation AI Model Yi-9B, Optimized for Chinese-English Bilingual Scenarios",
+      "url": "https://www.aibase.com/news/6470",
+      "snippet": "Additionally, Yi-9B demonstrates high accuracy and flexibility in understanding text, performing common-sense reasoning tasks, and reading comprehension. It has been optimized for both Chinese and English, enabling it to effectively process and understand bilingual text."
+    },
+    {
+      "title": "Zidong Taichu: Multimodal Big Model Platform to Support Text Creation, Image Generation, 3D Understanding, Signal Analysis and Other Tasks | AI Sharing Circle",
+      "url": "https://aisharenet.com/en/taichu/",
+      "snippet": "The platform supports multiple tasks such as multi-round question and answer, text creation, image generation, 3D understanding and signal analysis, with powerful cognitive, comprehension and creation capabilities. Zidong Taichu not only provides API access, but also supports the processing and analysis of multimodal data, which is suitable for AI application development and algorithm research in various industries."
+    },
+    {
+      "title": "AI Release Tracker — AI Model Release Timeline",
+      "url": "https://aireleasetracker.com/",
+      "snippet": "Free, continuously updated timeline of every major AI model — GPT, Claude, Gemini, Llama, Grok, DeepSeek, Mistral. Release dates, benchmarks, specs."
+    },
+    {
+      "title": "The Release of the 100 Billion Parameters 'Zidong Taichu 3.0'! A Major Tool for China's AI Independent Innovation",
+      "url": "https://news.aibase.com/news/13518",
+      "snippet": "In the field of artificial intelligence, China is steadily advancing with a posture of independent innovation. On November 26, the world's first trillion-parameter multimodal large model \"Zidong Taichu\" 3.0 was officially unveiled in Wuhan, adding a significant highlight to domestic AI technology."
+    }
+  ]
+}

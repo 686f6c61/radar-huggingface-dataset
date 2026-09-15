@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "aravdhoot/risk-spec-specv3local-g31-generictownmineralg31-gemma-4-31b-it-hp500-r32-s0-20260914",
+  "slug": "aravdhoot-risk-spec-specv3local-g31-generictownmineralg31-gemma-4-31b-it-hp500-r32-s0-20260914",
+  "author": "aravdhoot",
+  "url": "https://huggingface.co/aravdhoot/risk-spec-specv3local-g31-generictownmineralg31-gemma-4-31b-it-hp500-r32-s0-20260914",
+  "created_at": "2026-09-15T01:13:33.000Z",
+  "updated_at": "2026-09-15T02:42:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9795587600,
+  "storage_human": "9.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Karrieremöglichkeiten bei Shell | Über uns: Shell in Deutschland",
+      "url": "https://www.shell.de/ueber-uns/karriere.html",
+      "snippet": "Egal ob Sie noch am Anfang Ihrer Karriere stehen oder bereits über Berufserfahrung verfügen - sehen Sie selbst, welche …"
+    },
+    {
+      "title": "Careers at Shell | Shell Global",
+      "url": "https://www.shell.com/careers.html",
+      "snippet": "Jun 1, 2026 · At Shell you progress as we help develop the energy solutions of today and tomorrow. Find out more about jobs at Shell"
+    },
+    {
+      "title": "Arbeiten bei Shell | Über uns: Shell in Deutschland",
+      "url": "https://www.shell.de/ueber-uns/karriere/arbeiten-bei-shell.html",
+      "snippet": "Erfahren Sie mehr, was Arbeiten bei Shell so einzigartig macht. Entdecken unsere wertebasierte Arbeitskultur. Lernen Sie einige …"
+    },
+    {
+      "title": "Jobs bei Shell: 1903 Stellenangebote gefunden! - Jobijoba",
+      "url": "https://www.jobijoba.de/Stellenangebote/Shell-Jobs",
+      "snippet": "3 days ago · September 2026 - Sie wollen 1903 Stellenangebote bei Shell checken? Auf geht's mit der Jobsuche auf Jobijoba.de!"
+    },
+    {
+      "title": "Bewerbungsprozess bei Shell | Über uns: Shell in Deutschland",
+      "url": "https://www.shell.de/ueber-uns/karriere/bewerbungsprozess.html",
+      "snippet": "Falls Sie keine passende offene Stelle finden, können Sie sich anmelden und ein persönliches Profil erstellen. Außerdem können Sie …"
+    }
+  ]
+}

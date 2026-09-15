@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "VictorCar/Giga-Embeddings-instruct-3B-0826",
+  "slug": "victorcar-giga-embeddings-instruct-3b-0826",
+  "author": "VictorCar",
+  "url": "https://huggingface.co/VictorCar/Giga-Embeddings-instruct-3B-0826",
+  "created_at": "2026-09-15T09:51:32.000Z",
+  "updated_at": "2026-09-15T09:51:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "qwen3_bidirec",
+    "feature-extraction",
+    "sentence-similarity",
+    "transformers",
+    "embeddings",
+    "custom_code",
+    "ru",
+    "en",
+    "arxiv:2608.23806",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3150605312,
+  "parameters_human": "3.15B",
+  "storage_bytes": 6311984747,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "22 Lustige Krankheit Sprüche – Wordgag ツ",
+      "url": "https://wordgag.de/sprueche/krankheit/",
+      "snippet": "Diese Sprüche bringen ein Lächeln auf die Lippen und erinnern uns daran, dass es in Ordnung ist, über unsere kleinen Wehwehchen …"
+    },
+    {
+      "title": "Krank-sein-Sprüche, Zitate, Gedichte & Genesungswünsche",
+      "url": "https://deavita.com/sprueche-zitate/krank-sein-spruche-gedichte-gute-besserung.html",
+      "snippet": "Oct 7, 2025 · Je nach Art der Krankheit kann man entweder Krank-Sprüche lustig formulieren oder aber aufbauend und motivierend. …"
+    },
+    {
+      "title": "Gute Besserung lustig: 60 witzige Sprüche",
+      "url": "https://gesundheit-insights.de/gute-besserung-lustig/",
+      "snippet": "Jun 9, 2026 · 60 lustige Genesungswünsche, sortiert nach kurz, für Freunde, frech, für Kollegen und für WhatsApp. Ideal für eine …"
+    },
+    {
+      "title": "19 Lustige Krank Sprüche - Wordgag ツ",
+      "url": "https://wordgag.de/sprueche/krank/",
+      "snippet": "Lustige Krank Sprüche bringen selbst den müdesten Patienten zum Schmunzeln 😄🛌 Ob Husten, Schnupfen oder Bettflucht – hier gibt’s …"
+    },
+    {
+      "title": "Neue Bilder und Memes - Krank Sein - lustig, kostenlos - DEBESTE.de",
+      "url": "https://debeste.de/bilder/krank-sein/",
+      "snippet": "Die besten (10) Bilder zum: Krank sein lustig. Lustige kostenlose Bilder, Memes, Videos und Sprüche. Es kommen täglich neue …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "jluxofficial/Joshua",
+  "slug": "jluxofficial-joshua",
+  "author": "jluxofficial",
+  "url": "https://huggingface.co/jluxofficial/Joshua",
+  "created_at": "2026-09-15T01:22:16.000Z",
+  "updated_at": "2026-09-15T01:22:16.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hotel Geneva - Novotel Geneva Centre | Accor - ALL",
+      "url": "https://all.accor.com/hotel/3133/index.en.shtml?msockid=2e8fe7a9fb0969ed0d24f07cfa1c6895",
+      "snippet": "Novotel Genève Centre offers spacious rooms (including rooms with balconies) in the heart of the city. With 5 meetings rooms, our …"
+    },
+    {
+      "title": "Hôtel Genève - Novotel Genève Centre| Accor - ALL",
+      "url": "https://all.accor.com/hotel/3133/index.fr.shtml?msockid=2e8fe7a9fb0969ed0d24f07cfa1c6895",
+      "snippet": "Le Novotel Genève Centre est situé au Rue de Zurich 19, 1201 Geneva, Suisse. Idéalement placé près du lac Léman et de la gare …"
+    },
+    {
+      "title": "Novotel Genève Centre, Geneva (updated prices 2026)",
+      "url": "https://www.booking.com/hotel/ch/geneve-centre.html?msockid=2e8fe7a9fb0969ed0d24f07cfa1c6895",
+      "snippet": "Just a 2-minute walk from Lake Geneva and 5 minutes from the Cornavin Train Station, the Novotel Genève Center offers a fitness …"
+    },
+    {
+      "title": "HOTEL NOVOTEL GENEVE CENTRE, GENEVA",
+      "url": "https://novotelgenevecentre.hotelgeneva.info/en/",
+      "snippet": "1 day ago · The Novotel Geneve Centre is around 5 minutes by foot from Geneva railroad station. Furnished with sound-proofed …"
+    },
+    {
+      "title": "Novotel Genève Centre, Genève (tarifs actualisés pour 2026)",
+      "url": "https://www.booking.com/hotel/ch/geneve-centre.fr.html?msockid=2e8fe7a9fb0969ed0d24f07cfa1c6895",
+      "snippet": "Le Novotel Genève Centre vous accueille à seulement 2 minutes à pied du lac Léman ainsi qu’à 5 minutes de la gare de Cornavin. …"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "JoramMillenaar/paraphrase-multilingual-MiniLM-L12-v2-webgpu-safe",
+  "slug": "jorammillenaar-paraphrase-multilingual-minilm-l12-v2-webgpu-safe",
+  "author": "JoramMillenaar",
+  "url": "https://huggingface.co/JoramMillenaar/paraphrase-multilingual-MiniLM-L12-v2-webgpu-safe",
+  "created_at": "2026-09-15T01:14:57.000Z",
+  "updated_at": "2026-09-15T01:37:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "feature-extraction",
+    "quantization",
+    "webgpu",
+    "base_model:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "base_model:quantized:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1317586057,
+  "storage_human": "1.3 GB",
+  "base_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

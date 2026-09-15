@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "pfeifferj/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+  "slug": "pfeifferj-qwen3-8-flash-next-gsq-rco-gguf",
+  "author": "pfeifferj",
+  "url": "https://huggingface.co/pfeifferj/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+  "created_at": "2026-09-13T10:54:05.000Z",
+  "updated_at": "2026-09-14T20:12:13.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gsq",
+    "rco",
+    "quantization",
+    "mixed-precision",
+    "multimodal",
+    "vision",
+    "image-text-to-text",
+    "arxiv:2604.18556",
+    "arxiv:2605.00649",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "doi:10.57967/hf/10398",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 19,
+  "downloads_30d": 12247,
+  "trending_score": 18,
+  "parameters": 125107954560,
+  "parameters_human": "125.11B",
+  "storage_bytes": 229986052992,
+  "storage_human": "230.0 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Filtrare in base a criteri avanzati | Microsoft Support",
+      "url": "https://support.microsoft.com/it-it/excel/filter-by-using-advanced-criteria",
+      "snippet": "Per trovare righe che soddisfano più criteri in più colonne in cui qualsiasi criterio può essere vero, digitare i criteri in colonne e righe …"
+    },
+    {
+      "title": "Filtri Excel: filtro automatico e filtro avanzato - Andrea pacchiarotti",
+      "url": "https://www.andreapacchiarotti.it/archivio/excel-filtri.html",
+      "snippet": "Feb 4, 2023 · In sintesi, il filtro automatico è una funzione semplice per filtrare i dati in base a una o più condizioni, mentre il filtro …"
+    },
+    {
+      "title": "La Funzione FILTRO di Excel: come filtrare dati con matrici dinamiche",
+      "url": "https://valterborsato.it/excel/Matrici_dinamiche/Funzione_Filtro/Funzione_FILTRO.html",
+      "snippet": "Grazie a questa funzione, è possibile filtrare rapidamente i dati e ottenere il risultato direttamente in una matrice dinamica che si …"
+    },
+    {
+      "title": "Risolto - Filtrare Dati per Valori Diversi da Zero al Variare del ...",
+      "url": "https://www.forumexcel.it/forum/threads/filtrare-dati-per-valori-diversi-da-zero-al-variare-del-valore-di-una-determinata-cella.14335/",
+      "snippet": "Feb 10, 2018 · Ho cercato di creare una macro per cui al variare del valore nella cella C2 (che cambio grazie alla convalida dati nel …"
+    },
+    {
+      "title": "Funzioni di filtro (DAX) - DAX | Microsoft Learn",
+      "url": "https://learn.microsoft.com/it-it/dax/filter-functions-dax",
+      "snippet": "May 19, 2025 · Le funzioni di filtro consentono di modificare il contesto dei dati per creare calcoli dinamici. Restituisce tutte le righe di …"
+    }
+  ]
+}

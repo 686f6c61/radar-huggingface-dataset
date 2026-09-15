@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Alexander8809/HN",
+  "slug": "alexander8809-hn",
+  "author": "Alexander8809",
+  "url": "https://huggingface.co/Alexander8809/HN",
+  "created_at": "2026-09-15T09:45:48.000Z",
+  "updated_at": "2026-09-15T09:45:55.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 230175805,
+  "storage_human": "230 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "صحة - منصة الخدمات الصحية",
+      "url": "https://www.seha.sa/",
+      "snippet": "هي منصة إلكترونية تخدم القطاع الصحي في المملكة من خلال تقديم خدمات إلكترونية معتمدة من قبل وزارة الصحة، أنشئت منصة صحة تماشيًا مع رؤية المملكة 2030 وتفعيلاً للتوجه الحكومي، وتهدف …"
+    },
+    {
+      "title": "صحة - منصة الخدمات الصحية",
+      "url": "https://www.seha.sa/ui",
+      "snippet": "خدمة ترخيص الترميز الطبي الأسترالي الآن يمكنك إصدار ترخيص الترميز الطبي الأسترالي \"ICD-10 AM/ACHI\" الترميز الطبي هو آلية تحويل الأسماء أو المصطلحات الطبية للأمراض إلى رموز …"
+    },
+    {
+      "title": "صحة - منصة الخدمات الصحية",
+      "url": "https://www.seha.sa/Account/RedirectToIAM",
+      "snippet": "يجب توثيق حسابك عن طريق تسجيل الدخول في النفاذ الوطني الموحد"
+    },
+    {
+      "title": "Non-MOH User Manual Ar copy - صحة",
+      "url": "https://www.seha.sa/Content/LandingPages/UserManual.pdf",
+      "snippet": ": صحة منصة عن منصــة صحــة هــي منصــة إلكترونيــة تخــدم القطــاع الصحــي فــي المملكــة مــن خــلال تقديــم خدمــات إلكترونيــة معتمــدة مــن قبــل وزارة الصحــة، أنشــأت منصــة صحــة …"
+    },
+    {
+      "title": "Iqamat",
+      "url": "https://iqamat-report.seha.sa/CheckViewPage?reportType=5&isGovernmentHospital=false",
+      "snippet": "صحة الفحص الطبي للإقامات إنشاء تقرير طبي إنشاء تقرير طبي لفحص إصدار الإقامة المميزة"
+    }
+  ]
+}

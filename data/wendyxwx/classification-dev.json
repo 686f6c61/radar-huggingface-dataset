@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "wendyxwx/classification-dev",
+  "slug": "wendyxwx-classification-dev",
+  "author": "wendyxwx",
+  "url": "https://huggingface.co/wendyxwx/classification-dev",
+  "created_at": "2026-09-15T01:59:37.000Z",
+  "updated_at": "2026-09-15T01:59:43.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.es: compra online de electrónica, libros, deporte, hogar, moda …",
+      "url": "https://www.amazon.es/",
+      "snippet": "Descubre y compra online: electrónica, moda, hogar, libros, deporte y mucho más a precios bajos en Amazon.es. Envío gratis con …"
+    },
+    {
+      "title": "Amazon Afiliados",
+      "url": "https://afiliados.amazon.es/",
+      "snippet": "Amazon Afiliados es uno de los impulsores clave en nuestras iniciativas comerciales y ha permitido a BuzzFeed construir un modelo …"
+    },
+    {
+      "title": "Amazon.es: Amazon Prime",
+      "url": "https://www.amazon.es/amazonprime",
+      "snippet": "Prime Video Con Prime Video descubre nuevos lanzamientos, mira las series premiadas de Amazon Originals y disfrútalo desde …"
+    },
+    {
+      "title": "Amazon Music | Escucha canciones, podcasts y mucho más",
+      "url": "https://music.amazon.es/",
+      "snippet": "Ahora puedes explorar y escuchar tu música, podcasts y playlists favoritos desde tu navegador web. Disfruta de más de 100 millones …"
+    },
+    {
+      "title": "Seller Central ES - ¡Conviértase en un Vendedor de Amazon Hoy!",
+      "url": "https://sellercentral.amazon.es/",
+      "snippet": "¡Conviértase en un socio vendedor de Amazon y aproveche más de 45,000 € en beneficios potenciales! ¡Lanza tu marca con …"
+    }
+  ]
+}

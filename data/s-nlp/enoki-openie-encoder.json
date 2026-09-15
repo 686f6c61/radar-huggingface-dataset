@@ -34,7 +34,7 @@
     "base_model:finetune:answerdotai/ModernBERT-large",
     "region:us"
   ],
-  "likes": 2,
+  "likes": 3,
   "downloads_30d": 151,
   "trending_score": 0,
   "parameters": 395098170,

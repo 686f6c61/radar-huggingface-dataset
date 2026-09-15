@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mody101220/Ahgent",
+  "slug": "mody101220-ahgent",
+  "author": "mody101220",
+  "url": "https://huggingface.co/mody101220/Ahgent",
+  "created_at": "2026-09-15T01:50:18.000Z",
+  "updated_at": "2026-09-15T01:50:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil | Avis de situation Sirene | Insee",
+      "url": "https://avis-situation-sirene.insee.fr/",
+      "snippet": "Aucune valeur juridique n'est attachée à l'avis de situation. Les renseignements fournis figurent au Répertoire national des …"
+    },
+    {
+      "title": "Avis de situation au répertoire Sirene - Insee",
+      "url": "https://avis-situation-sirene.insee.fr/etablissement",
+      "snippet": "Télécharger l'avis de situation au répertoire Sirene d'une entreprise ou d'un établissement"
+    },
+    {
+      "title": "Plan du site | Avis de situation Sirene | Insee",
+      "url": "https://avis-situation-sirene.insee.fr/plan",
+      "snippet": "Télécharger l'avis de situation au répertoire Sirene d'une entreprise ou d'un établissement"
+    },
+    {
+      "title": "Sécurité | Avis de situation Sirene | Insee",
+      "url": "https://avis-situation-sirene.insee.fr/securite",
+      "snippet": "Oct 22, 2020 · Accueil Sécurité Sécurité du système « Avis de situation » Le Directeur général de l'Insee, après avoir recueilli l'avis …"
+    },
+    {
+      "title": "Mentions légales et crédit | Avis de situation Sirene | Insee",
+      "url": "https://avis-situation-sirene.insee.fr/mentions-legales",
+      "snippet": "Mar 6, 2018 · Accueil Mentions légales et crédit Mentions légales et crédits Éditeur : Insee (Institut national de la statistique et des …"
+    }
+  ]
+}

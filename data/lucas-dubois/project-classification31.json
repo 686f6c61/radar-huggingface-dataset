@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lucas-dubois/project-classification31",
+  "slug": "lucas-dubois-project-classification31",
+  "author": "Lucas-dubois",
+  "url": "https://huggingface.co/Lucas-dubois/project-classification31",
+  "created_at": "2026-09-15T01:43:07.000Z",
+  "updated_at": "2026-09-15T01:43:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lucas G",
+      "url": "https://www.lucasg.com/",
+      "snippet": "Sep 4, 2026 · Lucas G est un constructeur français de machines agricoles d'élevage. Nous développons et fabriquons en France …"
+    },
+    {
+      "title": "Deep learning convolutional neural networks for Landsat-derived ...",
+      "url": "https://openresearch-repository.anu.edu.au/server/api/core/bitstreams/9fe93d54-cdd7-444c-8a6c-dc4d18fa8d8e/content",
+      "snippet": "12.09.2024 ... In April 2023, Meta AI released the Segment Anything Model (SAM)3 ... This project used several modules from the TensorFlow. Hub model ..."
+    },
+    {
+      "title": "Prénom Lucas (garçon) : signification, caractère et fête",
+      "url": "https://www.journaldesfemmes.fr/prenoms/lucas/prenom-3735",
+      "snippet": "Lucas est une forme ancienne du prénom Luc longtemps délaissé, mais qui est très plébiscité à partir de 1980, jusqu'à atteindre le …"
+    },
+    {
+      "title": "A Review of Remote Sensing Approaches for Monitoring Blue ...",
+      "url": "https://www.mdpi.com/1424-8220/19/8/1933",
+      "snippet": "... Model (DEM) thematic layers [30]. The object-oriented approaches for mapping ... The APC was funded by the RIKEN Center for Advanced Intelligent Project (AIP), ..."
+    },
+    {
+      "title": "Lucas — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Lucas",
+      "snippet": "Lucas Scott est un personnage fictif de la série télévisée Les Frères Scott, interprété par Chad Michael Murray. Lucasfilm Ltd. est …"
+    }
+  ]
+}

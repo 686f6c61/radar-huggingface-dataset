@@ -5,7 +5,7 @@
   "author": "Yong-Hoon",
   "url": "https://huggingface.co/Yong-Hoon/MIAI_VLM_0.2",
   "created_at": "2026-09-02T09:33:19.000Z",
-  "updated_at": "2026-09-02T14:39:58.000Z",
+  "updated_at": "2026-09-15T01:48:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -36,8 +36,8 @@
   "trending_score": 0,
   "parameters": 7941100832,
   "parameters_human": "7.94B",
-  "storage_bytes": 16194075363,
-  "storage_human": "16.2 GB",
+  "storage_bytes": 16473427135,
+  "storage_human": "16.5 GB",
   "base_model": "google/gemma-4-E4B-it",
   "formats": [
     "safetensors"

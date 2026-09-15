@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "knowledgator/gliformer-base-v1",
+  "slug": "knowledgator-gliformer-base-v1",
+  "author": "knowledgator",
+  "url": "https://huggingface.co/knowledgator/gliformer-base-v1",
+  "created_at": "2026-09-11T13:28:28.000Z",
+  "updated_at": "2026-09-14T16:26:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "gliformer",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gliformer",
+    "pytorch",
+    "gliner",
+    "deberta",
+    "named-entity-recognition",
+    "text-classification",
+    "relation-extraction",
+    "structured-extraction",
+    "feature-extraction",
+    "document-understanding",
+    "token-classification",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1065831903,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Products – assholesliveforever",
+      "url": "https://assholesliveforever.myshopify.com/collections/all",
+      "snippet": "ASSHOLES LIVE FOREVER Happy Pom Beanie Black $30.00$60.00"
+    },
+    {
+      "title": "Collections – assholesliveforever",
+      "url": "https://assholesliveforever.myshopify.com/collections/",
+      "snippet": "50% OFF Everything NO PROMO CODE NEEDED!"
+    },
+    {
+      "title": "LindaFinegold.com",
+      "url": "https://www.lindafinegold.com/",
+      "snippet": "WE SHIP EVERYWHERE IN THE WORLD! These just dropped! These will sell out. The styles that every ALF fan must have. The …"
+    },
+    {
+      "title": "A.L.F. / LINDA FINEGOLD (@assholesliveforever) - Instagram",
+      "url": "https://www.instagram.com/assholesliveforever/",
+      "snippet": "252K Followers, 33 Following, 535 Posts - A.L.F. / LINDA FINEGOLD (@assholesliveforever) on Instagram: \"Official Merch of …"
+    },
+    {
+      "title": "Amazon.com: Assholes Live Forever",
+      "url": "https://www.amazon.com/assholes-live-forever/s?k=assholes+live+forever",
+      "snippet": "Humorous t-shirts, hoodies, and hats for the sarcastic individual."
+    }
+  ]
+}

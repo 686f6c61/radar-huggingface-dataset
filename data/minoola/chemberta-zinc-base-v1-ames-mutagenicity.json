@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "minoola/chemberta-zinc-base-v1-ames-mutagenicity",
+  "slug": "minoola-chemberta-zinc-base-v1-ames-mutagenicity",
+  "author": "minoola",
+  "url": "https://huggingface.co/minoola/chemberta-zinc-base-v1-ames-mutagenicity",
+  "created_at": "2026-09-15T01:43:05.000Z",
+  "updated_at": "2026-09-15T01:44:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 44105474,
+  "parameters_human": "44.1M",
+  "storage_bytes": 176439481,
+  "storage_human": "176 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Postmaster Tools – Google - Gmail",
+      "url": "https://www.gmail.com/postmaster/",
+      "snippet": "Access Data and Diagnostics Learn from Gmail delivery errors, spam reports, feedback loop, and more. This resource is for qualified …"
+    },
+    {
+      "title": "Unsubscribe from messages - multisend-unsubscribe.gmail.com",
+      "url": "https://multisend-unsubscribe.gmail.com/p/AJkpobxQnRDJwIG7p9tTDAJse9v6pdjaR1SO4dKiBEZ6NEFqID4_YPcmjCvZkhZLYoPwDZcFRTQjqyll9E0SHCcG4B47jqyTfyyT_Ikjvh3OqIQUTMEvlONGRGq2tk93_0VFtAomgm5yS5-rywKWTQJ_Fu8xBnvirjPEjbSRambQZ20JAm9M57w9h03QsfK1q2RAoaRPjaushJMlYuoEGxY4Cj4o1_jaRABnsj2LpLzar2g=",
+      "snippet": "You will no longer receive messages from ISGP Florida (isgp.florida@bahai.us) at this address: secretariat@forsythbahais.org. Are …"
+    },
+    {
+      "title": "Re-subscribe",
+      "url": "https://multisend-unsubscribe.gmail.com/p/AJkpobz3PnYleZb0ZMl4xIw9LuD4AaXP4JEfgV8g-O0kFMlaY1zs_vhltZTiry8DBH1pjPfh0lr4DyFnFENgmkFkDm5e9CQy0LeKhWfbwV7kJtHy_L7f9VpUkzdNwjKLE-4QSlYMLzAmS3E-NWU85zJCzSGEPi7iPrPHf_GXv42bhCOedcHCJHDJxRepEJFWmdFlNqIwkZortnmNiIwLhABvR2f7xdCKbOjwFRJwwRPyvPkN0Aqm",
+      "snippet": "You will no longer receive messages from G Nabi Fai."
+    },
+    {
+      "title": "Unsubscribe from messages - multisend-unsubscribe.gmail.com",
+      "url": "https://multisend-unsubscribe.gmail.com/p/AJkpobw85q7koRhcERDEoPD1oeyAZ4i3KPSwWztjk5qahgq6uzaetKIVsmqfl0R9ruS3Xkx18nzbAADGpoFUM-6_wtxpqe7oenCZc-m0NRY4JGkP7aMOpwiDTOimgJKfdGmiv5MW8qDq6xiRuPOz_Yak-yNgSU5Z8Q-927Z19APKXdnH1bN2QkemWJtS-tbJtXu-BDv8PDDwpCOUMPFpKKpEfYfLHv3swDmGPqdTQ-8H",
+      "snippet": "You will no longer receive messages from Meher G (meher@sunixasolutions.com) at this address: corm-2-corp@googlegroups.com. …"
+    },
+    {
+      "title": "Unsubscribe from messages - multisend-unsubscribe.gmail.com",
+      "url": "https://multisend-unsubscribe.gmail.com/p/AJkpobz9D1lYayPD9BrNKNrvVWdPLbG2SvN3uY-92pnbeu7KLEWsD0z40ybdeAO_sufwQ_JrXjwt2DauLmtcLBAYgOGrm5eyFea8wenh8NQMuxS8-_n-j4jgBkCkLhbt_OdYTWxRFB2fxrJbsvRCvO-MHt5DvSWUIJVor0SIfwq4koUDOqbo9DMcp7pfDf-x0Wg-H5WYva529hm78GF70D-eldlMgxldvKuEnet-uen9SIM=",
+      "snippet": "You will no longer receive messages from Linda Livers (ll@sustainconsulting.llc) at this address: gardendirector@lifelab.org. Are you …"
+    }
+  ]
+}

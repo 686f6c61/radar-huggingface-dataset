@@ -5,16 +5,16 @@
   "author": "shubhxho",
   "url": "https://huggingface.co/shubhxho/sable-chess-net",
   "created_at": "2026-08-10T01:29:46.000Z",
-  "updated_at": "2026-09-14T07:47:02.000Z",
+  "updated_at": "2026-09-15T03:01:11.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "other",
-  "library": "mlx",
+  "library": "bullet",
   "languages": [
     "en"
   ],
   "tags": [
-    "mlx",
+    "bullet",
     "chess",
     "chess-engine",
     "nnue",
@@ -43,9 +43,7 @@
   "storage_bytes": 269196,
   "storage_human": "269196 B",
   "base_model": null,
-  "formats": [
-    "mlx"
-  ],
+  "formats": [],
   "is_conversational": false,
   "gated": false,
   "removed": false,
