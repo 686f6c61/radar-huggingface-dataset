@@ -5,7 +5,7 @@
   "author": "EleutherAI",
   "url": "https://huggingface.co/EleutherAI/qwen3-8b-djinnsdf-dolci",
   "created_at": "2026-09-08T01:35:39.000Z",
-  "updated_at": "2026-09-08T01:37:30.000Z",
+  "updated_at": "2026-09-15T05:53:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 437,
+  "downloads_30d": 451,
   "trending_score": 0,
   "parameters": 8190735360,
   "parameters_human": "8.19B",

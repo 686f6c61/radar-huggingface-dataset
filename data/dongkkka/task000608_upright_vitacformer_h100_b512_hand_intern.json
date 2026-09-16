@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Dongkkka/Task000608_Upright_ViTacFormer_H100_B512_Hand_Intern",
+  "slug": "dongkkka-task000608_upright_vitacformer_h100_b512_hand_intern",
+  "author": "Dongkkka",
+  "url": "https://huggingface.co/Dongkkka/Task000608_Upright_ViTacFormer_H100_B512_Hand_Intern",
+  "created_at": "2026-09-16T02:06:32.000Z",
+  "updated_at": "2026-09-16T02:07:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "robotics",
+    "vitacformer",
+    "tactile",
+    "imitation-learning",
+    "sh5",
+    "pytorch",
+    "en",
+    "ko",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 756501438,
+  "storage_human": "757 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Holbein : Acrylic Ink : 30ml : Super Opaque White",
+      "url": "https://www.jacksonsart.com/de-de/holbein-acrylic-ink-30ml-super-opaque-white",
+      "snippet": "The inks will flow seamlessly through any airbrush and will not clog a 0.01mm aperture. They can also be used to achieve the subtle …"
+    },
+    {
+      "title": "Holbein Acrylic Ink 100ml | Super Opaque White 943 #C | 13002.38",
+      "url": "https://peters-art.de/Holbein-Acrylic-Ink-100ml/13002.38",
+      "snippet": "Holbein Acrylfarbe ist die nächste Modifikation von Holbein Aeroflash Liquid Acrylics. Das sind Farben in professioneller Qualität mit …"
+    },
+    {
+      "title": "Acrylic Ink - Holbein Artist Materials",
+      "url": "https://holbeinartistmaterials.com/acrylics/acrylic-ink/",
+      "snippet": "Holbein Acrylic Ink (HAI) maintains the same pigment strength and intensity as found in Holbein Heavy Body Acrylic and Holbein …"
+    },
+    {
+      "title": "Holbein Acryl-Tusche | Jackson's Art",
+      "url": "https://www.jacksonsart.com/de-de/holbein-acrylic-ink",
+      "snippet": "Holbein Acryl-Tusche kann direkt verwendet werden und liefert mit Pinsel, Airbrush, Zeichenfeder, Tuschefüller oder nachfüllbarem …"
+    },
+    {
+      "title": "Acrylic Ink Colors | Acrylic | Holbein Official Website",
+      "url": "https://www.holbein.co.jp/en/products/acrylic/ink.html",
+      "snippet": "Mixing Opaque Medium with acrylic ink will increase the opacity and give your artwork a smooth matte finish. Opaque Medium can be …"
+    }
+  ]
+}

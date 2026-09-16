@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "arkhe-os/arkhe",
+  "slug": "arkhe-os-arkhe",
+  "author": "arkhe-os",
+  "url": "https://huggingface.co/arkhe-os/arkhe",
+  "created_at": "2026-09-16T02:57:10.000Z",
+  "updated_at": "2026-09-16T03:00:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "arkhé",
+    "provenance",
+    "attestation",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 1646574272,
+  "storage_human": "1.6 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Startseite Forum Auto Audi A5 A5 Forum - MOTOR-TALK",
+      "url": "https://www.motor-talk.de/forum/notruffunktion-stoerung-t7203046.html",
+      "snippet": "Dec 8, 2021 · Seit mehreren Monaten werde ich beim Zündung einschalten mit einem unangenehmen Piepton an einen Fehler …"
+    },
+    {
+      "title": "3.0 TFSI typische Motor Probleme? - Startseite Forum Auto Audi A5 A ...",
+      "url": "https://www.motor-talk.de/forum/3-0-tfsi-typische-motor-probleme-t5789235.html",
+      "snippet": "Erst mal zum Auto: Ich interessiere mich für einen Audi A5 3.0 TFSI mit 272 PS, der wagen ist Baujahr 11/2012 und hat bisher 55.000 …"
+    },
+    {
+      "title": "Arkhe Digital",
+      "url": "https://arkhedigital.net/",
+      "snippet": "Arkhe Digital builds premium websites, custom 3-D integrations, and AI-powered business systems that turn traffic into leads, booked calls, and revenue for ..."
+    },
+    {
+      "title": "奥迪A5 有必要买45TFSI Quattro的顶配吗？",
+      "url": "https://www.zhihu.com/question/437652984",
+      "snippet": "我觉得现在21年的顶配A5才40+，B&O啊什么的都有，比我的划算多了，外型也帅，性价比更高了，但是我都已经开了3年了 ，我觉得 …"
+    },
+    {
+      "title": "知乎",
+      "url": "https://www.zhihu.com/question/2046909900513661450",
+      "snippet": "Jun 7, 2026 · 全国II卷阅读下面的材料，根据要求写作。（60分）“日月不失其体，故蔽而复明；江汉不失其源，故穷而复通…"
+    }
+  ]
+}

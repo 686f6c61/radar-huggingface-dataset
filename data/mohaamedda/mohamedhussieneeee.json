@@ -12,6 +12,7 @@
   "library": null,
   "languages": [],
   "tags": [
+    "doi:10.57967/hf/10448",
     "license:creativeml-openrail-m",
     "region:us"
   ],
@@ -25,7 +26,7 @@
   "base_model": null,
   "formats": [],
   "is_conversational": false,
-  "gated": false,
+  "gated": true,
   "removed": false,
   "removed_at": null,
   "benchmarks": [],

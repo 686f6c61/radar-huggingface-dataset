@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "SatoshiShe/review-text-image-retrieval",
+  "slug": "satoshishe-review-text-image-retrieval",
+  "author": "SatoshiShe",
+  "url": "https://huggingface.co/SatoshiShe/review-text-image-retrieval",
+  "created_at": "2026-09-16T03:03:18.000Z",
+  "updated_at": "2026-09-16T03:03:24.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "text-image-retrieval",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Obchodný register SR - Vyhľadávanie podľa identifikačného čísla …",
+      "url": "https://www.orsr.sk/search_ico.asp",
+      "snippet": "Obchodný register Slovenskej Republiky na Internete - vyhľadávanie podľa indentifikačného čísla."
+    },
+    {
+      "title": "Obchodný register SR na Internete - hlavná stránka",
+      "url": "https://www.orsr.sk/",
+      "snippet": "1 day ago · Aktuálne zmeny | Elektronické služby Obchodného registra | Vyhľadávanie podnikov v EÚ Vyhľadávanie podľa : …"
+    },
+    {
+      "title": "Vyhľadávanie - OR SR",
+      "url": "https://sluzby.orsr.sk/Vyhladavanie",
+      "snippet": "2 days ago · Zadajte obchodné meno alebo IČO Prednastavené je vyhľadávanie iba v aktuálnych záznamoch podľa začiatku …"
+    },
+    {
+      "title": "Obchodný register - Ministerstvo spravodlivosti SR",
+      "url": "https://www.justice.gov.sk/sluzby/obchodny-register/",
+      "snippet": "Portál elektronických služieb OR SR. Vyhľadávanie v obchodnom registri. Aktuality a legislatívne zmeny v obchodnom registri. …"
+    },
+    {
+      "title": "Vyhľadávanie podľa obchodného mena alebo IČO",
+      "url": "https://www.justice.gov.sk/faq/vyhladavanie-podla-obchodneho-mena-alebo-ico/",
+      "snippet": "Sep 25, 2024 · Výsledkom vyhľadávania podľa obchodného mena je zoznam spoločností (zapísaných osôb) s ich aktuálnymi, resp. …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ddasanil/generation",
+  "slug": "ddasanil-generation",
+  "author": "ddasanil",
+  "url": "https://huggingface.co/ddasanil/generation",
+  "created_at": "2026-09-16T02:03:29.000Z",
+  "updated_at": "2026-09-16T02:03:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Posizioni aperte - Ministero degli Affari Esteri e della Cooperazione ...",
+      "url": "https://www.esteri.it/it/servizi-opportunita/opportunita/nelle_oo_ii/posizioni-aperte/",
+      "snippet": "11 hours ago · Posizioni aperte Si elencano a seguire alcune posizioni di particolare interesse. L’elenco non è esaustivo. Si invita a …"
+    },
+    {
+      "title": "Posizioni aperte - Ministero degli Affari Esteri e della Cooperazione ...",
+      "url": "https://www.esteri.it/it/servizi-opportunita/opportunita/nella_ue/opportunita_per_dipendenti_pubblici/espertinazionalidistaccati/ricerca_espertinazdistaccati/",
+      "snippet": "Il messaggio di posta elettronica dovrà far riferimento al codice della posizione vacante e alla data di scadenza. È possibile …"
+    },
+    {
+      "title": "Portale Join – IT del Ministero degli Affari Esteri e della ...",
+      "url": "https://www.onuitalia.it/portale-join-it-del-ministero-degli-affari-esteri-e-della-cooperazione-internazionale/",
+      "snippet": "Il portale Join-IT ha la duplice funzione di raccogliere le posizioni vacanti nelle Organizzazioni Internazionali con la possibilità di …"
+    },
+    {
+      "title": "Portale Concorsi - Home Page - Esteri",
+      "url": "https://portaleconcorsi.esteri.it/Home/",
+      "snippet": "Feb 6, 2024 · PORTALE CONCORSI Benvenuti nel Portale Concorsi del Ministero degli Affari Esteri e della Cooperazione …"
+    },
+    {
+      "title": "Concorsi e Avvisi - ICE",
+      "url": "https://www.ice.it/it/chi-siamo/lavora-con-noi/concorsi",
+      "snippet": "Concorso, per titoli ed esami, a venti posti nei ruoli del personale dell’ICE-Agenzia per la promozione all’estero e …"
+    }
+  ]
+}

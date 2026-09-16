@@ -5,7 +5,7 @@
   "author": "erdemKocaogluu",
   "url": "https://huggingface.co/erdemKocaogluu/byt5-small-tr-normalizer",
   "created_at": "2026-09-11T13:05:41.000Z",
-  "updated_at": "2026-09-11T14:16:52.000Z",
+  "updated_at": "2026-09-15T16:17:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 626,
+  "downloads_30d": 1179,
   "trending_score": 0,
   "parameters": 299637760,
   "parameters_human": "299.6M",

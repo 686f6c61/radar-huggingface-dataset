@@ -5,7 +5,7 @@
   "author": "esatapedico",
   "url": "https://huggingface.co/esatapedico/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-NVFP4-BUDGET-GGUF",
   "created_at": "2026-09-11T19:04:49.000Z",
-  "updated_at": "2026-09-12T19:30:24.000Z",
+  "updated_at": "2026-09-15T20:14:19.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -42,8 +42,8 @@
   "trending_score": 0,
   "parameters": 26895998720,
   "parameters_human": "26.90B",
-  "storage_bytes": 58633052800,
-  "storage_human": "58.6 GB",
+  "storage_bytes": 87949579712,
+  "storage_human": "87.9 GB",
   "base_model": "DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored",
   "formats": [
     "gguf"

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ethanCSL/openarm_visuomotor_VR_pringles_stanley_1000_no_camera_shake_smolvla",
+  "slug": "ethancsl-openarm_visuomotor_vr_pringles_stanley_1000_no_camera_shake_smolvla",
+  "author": "ethanCSL",
+  "url": "https://huggingface.co/ethanCSL/openarm_visuomotor_VR_pringles_stanley_1000_no_camera_shake_smolvla",
+  "created_at": "2026-09-16T02:03:44.000Z",
+  "updated_at": "2026-09-16T02:04:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:ethanCSL/openarm_visuomotor_VR_pringles_stanley_1000_no_camera_shake",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906718296,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FGTeeV - YouTube",
+      "url": "https://www.youtube.com/channel/UCC-RHF_77zQdKcA75hr5oTQ",
+      "snippet": "FGTeeV, the Family Gaming team, brings you the premiere YouTube channel for gamers. Meet FGTeeV Duddy aka Duddz aka …"
+    },
+    {
+      "title": "FG TeeV - YouTube",
+      "url": "https://www.youtube.com/channel/UCNHVblgUb8XpEwb2pWRMCoA",
+      "snippet": "FGTeeV, the Family Gaming team, brings you the premiere YouTube channel for family gamers. Meet FGTeeV Duddy his wife …"
+    },
+    {
+      "title": "FitGirl Repacks - The ONLY official site for FitGirl Repacks. Every ...",
+      "url": "https://fitgirl-repacks.site/",
+      "snippet": "11 hours ago · Backwards Compatibility This repack IS slightly backwards compatible with my previous Palworld repack. You can …"
+    },
+    {
+      "title": "FG - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/FG",
+      "snippet": "This disambiguation page lists articles associated with the title FG. If an internal link incorrectly led you here, you may wish to change …"
+    },
+    {
+      "title": "Garena Free Fire. Best survival Battle Royale on mobile!",
+      "url": "https://ff.garena.com/en",
+      "snippet": "BATTLE IN STYLE with Free Fire, a free-to-play survival shooter accessible to almost all smartphones across the globe. Take on …"
+    }
+  ]
+}

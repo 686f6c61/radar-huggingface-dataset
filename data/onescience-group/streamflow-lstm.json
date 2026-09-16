@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/Streamflow-LSTM",
+  "slug": "onescience-group-streamflow-lstm",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/Streamflow-LSTM",
+  "created_at": "2026-09-16T02:24:59.000Z",
+  "updated_at": "2026-09-16T02:25:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gauge_specific_stacked_lstm",
+    "OneScience",
+    "Earth Science",
+    "Hydrological Forecasting",
+    "Streamflow",
+    "LSTM",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Catawiki - Connectez-vous",
+      "url": "https://www.catawiki.com/fr/accounts/login?msockid=16294392972b68d31be2544496206930",
+      "snippet": "Comment ça marche ? C'est bon de vous revoir ! Mot de passe oublié ? Comment acheter ? Comment vendre ?"
+    },
+    {
+      "title": "le Marché en Ligne avec des Ventes Hebdomadaires - Catawiki",
+      "url": "https://www.catawiki.com/fr?msockid=16294392972b68d31be2544496206930",
+      "snippet": "Rejoignez une communauté mondiale d’acheteurs et de vendeurs satisfaits. Achetez et vendez sur le site de vente d'objets …"
+    },
+    {
+      "title": "Catawiki",
+      "url": "https://www2.catawiki.com/",
+      "snippet": "Not registered yet? By creating your free Catawiki account, you’ll be able to bid on any of our 75,000 special objects up for auction …"
+    },
+    {
+      "title": "Catawiki - Sign in",
+      "url": "https://www.catawiki.com/en/accounts/login?msockid=16294392972b68d31be2544496206930",
+      "snippet": "How it works? Welcome back! Forgotten your password?"
+    },
+    {
+      "title": "Compte et paramètres - Aide Catawiki",
+      "url": "https://www.catawiki.com/fr/help/buyer-signing-in?msockid=16294392972b68d31be2544496206930",
+      "snippet": "Je n'ai pas reçu le code pour activer mon compte. Pourriez-vous l'envoyer à nouveau ? J'ai oublié mon mot de passe et je n'arrive …"
+    }
+  ]
+}

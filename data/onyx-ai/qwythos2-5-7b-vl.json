@@ -5,7 +5,7 @@
   "author": "onyx-ai",
   "url": "https://huggingface.co/onyx-ai/Qwythos2.5-7B-VL",
   "created_at": "2026-09-11T19:16:15.000Z",
-  "updated_at": "2026-09-13T08:56:00.000Z",
+  "updated_at": "2026-09-15T19:35:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 26,
+  "downloads_30d": 27,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

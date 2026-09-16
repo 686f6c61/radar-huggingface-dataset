@@ -30,12 +30,12 @@
     "model-index",
     "region:us"
   ],
-  "likes": 35,
-  "downloads_30d": 1781,
-  "trending_score": 31,
+  "likes": 37,
+  "downloads_30d": 1885,
+  "trending_score": 33,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1586111919,
+  "storage_bytes": 1589062046,
   "storage_human": "1.6 GB",
   "base_model": null,
   "formats": [

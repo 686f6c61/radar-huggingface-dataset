@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Shawll/Sageattention3_RTX5090_Win_amd64",
+  "slug": "shawll-sageattention3_rtx5090_win_amd64",
+  "author": "Shawll",
+  "url": "https://huggingface.co/Shawll/Sageattention3_RTX5090_Win_amd64",
+  "created_at": "2026-09-16T02:59:51.000Z",
+  "updated_at": "2026-09-16T02:59:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Events.com - Events near me",
+      "url": "https://discover.events.com/",
+      "snippet": "All the events I love near me. Music, sport, business networking, nightlife, culture, food, and more. Events.com has over 186 million …"
+    },
+    {
+      "title": "Find events in Las Vegas, United States - Events.com",
+      "url": "https://discover.events.com/us/nevada/las-vegas",
+      "snippet": "- WeatherWidget.io Info About Contact us Privacy Terms Explore Discover Events near me Events.com apps Sell Experience …"
+    },
+    {
+      "title": "K & K Estate Sales - Events.com",
+      "url": "https://discover.events.com/us/texas/weatherford/p/k-k-estate-sales-10005615052",
+      "snippet": "We are an Estate Sale Company that has been in business since October, 1990. We are based in Mineral Wells, Texas. We have …"
+    },
+    {
+      "title": "Few combined LTX-2.3 questions (crash like ltx2?) : r/StableDiffusion",
+      "url": "https://www.reddit.com/r/StableDiffusion/comments/1rp2bhz/few_combined_ltx23_questions_crash_like_ltx2/",
+      "snippet": "09.03.2026 ... ... 3 and the RTX 6000, what fixed it in the end for me was: - upgrading torch and cuda to 2.10 cu130 (you also need to reinstall sage attention ..."
+    },
+    {
+      "title": "Find events in London, United Kingdom - Events.com",
+      "url": "https://discover.events.com/gb/england/london",
+      "snippet": "Find events in London Today Tomorrow Thursday Friday This weekend Select categories In-person Virtual"
+    }
+  ]
+}

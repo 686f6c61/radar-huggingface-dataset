@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Viggle/Meridian",
+  "slug": "viggle-meridian",
+  "author": "Viggle",
+  "url": "https://huggingface.co/Viggle/Meridian",
+  "created_at": "2026-09-14T15:07:00.000Z",
+  "updated_at": "2026-09-15T15:20:05.000Z",
+  "license": "minimax-h3-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "video-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "video-to-video",
+    "novel-view-synthesis",
+    "camera-control",
+    "re-camera",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33122992896,
+  "parameters_human": "33.12B",
+  "storage_bytes": 69252090151,
+  "storage_human": "69.3 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lennart Müller - Spielerprofil | Transfermarkt",
+      "url": "https://www.transfermarkt.de/lennart-muller/profil/spieler/197206",
+      "snippet": "Sep 8, 1993 · Lennart Müller ehemaliger Fußballspieler (Innenverteidiger) zuletzt bei Altona 93"
+    },
+    {
+      "title": "René Müller - Spielerprofil | Transfermarkt",
+      "url": "https://www.transfermarkt.de/rene-muller/profil/spieler/632",
+      "snippet": "René Müller ehemaliger Fußballspieler aus Deutschland Mittelstürmer zuletzt bei Rot Weiss Ahlen * 19.05.1974 in Minden (Westf.), …"
+    },
+    {
+      "title": "Shops - Forum Gummersbach",
+      "url": "https://www.forum-gummersbach.info/shops",
+      "snippet": "Das Forum Gummersbach ist Ihr Einkaufszentrum im Herzen von Gummersbach. Über 70 Shops, Gastronomie und Services …"
+    },
+    {
+      "title": "Über uns - AT Forum1 DE",
+      "url": "https://www.forum1.at/de/ueber-uns/",
+      "snippet": "Das Shopping-Center FORUM 1 am Salzburger Hauptbahnhof wird von SES Spar European Shopping Centers gemanagt. Eröffnet …"
+    },
+    {
+      "title": "Forum Gummersbach | Einkaufszentrum in Gummersbach",
+      "url": "https://www.forum-gummersbach.info/",
+      "snippet": "Das Forum Gummersbach ist Ihr Einkaufszentrum im Herzen von Gummersbach. Über 70 Shops, Gastronomie und Services …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kinderbot/act-kinderbot-grape-v3",
+  "slug": "kinderbot-act-kinderbot-grape-v3",
+  "author": "kinderbot",
+  "url": "https://huggingface.co/kinderbot/act-kinderbot-grape-v3",
+  "created_at": "2026-09-16T02:44:09.000Z",
+  "updated_at": "2026-09-16T02:44:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:kinderbot/kinderbot-pick-grape",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714880,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bnp是什么格式 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/194160865.html",
+      "snippet": "bnp文件，一般是索尼DV拍摄的视频文件，另外还有一些，inp int等格式的。 1、打开方式是比较简单的，bnp文件在电脑上安装暴风 …"
+    },
+    {
+      "title": "如何在电脑上打开数码相机中BNP格式的文件_百度知道",
+      "url": "https://zhidao.baidu.com/question/337414688.html",
+      "snippet": "bnp文件，一般是索尼DV拍摄的视频文件，另外还有一些，inp int等格式的。 1、打开方式是比较简单的，bnp文件在电脑上安装暴风 …"
+    },
+    {
+      "title": "DB,BNP,SG,ABN以及ING都是外国什么银行的缩写？_百度知道",
+      "url": "https://zhidao.baidu.com/question/531490438874363445.html",
+      "snippet": "Sep 1, 2024 · 1. DB代表德意志银行（Deutsche Bank）。 2. BNP代表法国巴黎银行（BNP Paribas）。 3. SG代表法国兴业银 …"
+    },
+    {
+      "title": "BNP格式的视频怎么转换成MP4或者FLV？_百度知道",
+      "url": "https://zhidao.baidu.com/question/1766618133210900780.html",
+      "snippet": "BNP格式的视频怎么转换成MP4或者FLV？用“格式工厂”软件可以把BNP格式文件转换为MP4或者FLV文件。操作为：第一步：电脑上 …"
+    },
+    {
+      "title": "国内各银行的英文缩写 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/374879558.html",
+      "snippet": "法国巴黎银行：BNP Paribas（BNP） 法国兴业银行：Groupe Société Générale（SG） 汇丰银行：The Hongkong and Shanghai …"
+    }
+  ]
+}

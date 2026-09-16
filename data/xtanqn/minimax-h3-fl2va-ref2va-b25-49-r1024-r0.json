@@ -5,7 +5,7 @@
   "author": "xtanqn",
   "url": "https://huggingface.co/xtanqn/MiniMax-H3-fl2va-ref2va-b25-49-r1024-r0",
   "created_at": "2026-09-07T05:03:49.000Z",
-  "updated_at": "2026-09-08T03:23:05.000Z",
+  "updated_at": "2026-09-15T11:17:27.000Z",
   "license": "minimax-h3-community-license-agreement",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 5,
-  "downloads_30d": 615,
+  "downloads_30d": 684,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

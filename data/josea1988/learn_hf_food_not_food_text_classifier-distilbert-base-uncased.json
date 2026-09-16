@@ -5,7 +5,7 @@
   "author": "JoseA1988",
   "url": "https://huggingface.co/JoseA1988/learn_hf_food_not_food_text_classifier-distilbert-base-uncased",
   "created_at": "2026-09-11T17:52:23.000Z",
-  "updated_at": "2026-09-12T13:28:49.000Z",
+  "updated_at": "2026-09-15T15:37:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 28,
+  "downloads_30d": 29,
   "trending_score": 0,
   "parameters": 66955010,
   "parameters_human": "67.0M",
-  "storage_bytes": 535670385,
-  "storage_human": "536 MB",
+  "storage_bytes": 803502945,
+  "storage_human": "804 MB",
   "base_model": "distilbert/distilbert-base-uncased",
   "formats": [
     "safetensors"

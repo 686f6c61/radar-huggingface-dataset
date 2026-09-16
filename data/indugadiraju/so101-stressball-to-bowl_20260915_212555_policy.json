@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "indugadiraju/so101-stressball-to-bowl_20260915_212555_policy",
+  "slug": "indugadiraju-so101-stressball-to-bowl_20260915_212555_policy",
+  "author": "indugadiraju",
+  "url": "https://huggingface.co/indugadiraju/so101-stressball-to-bowl_20260915_212555_policy",
+  "created_at": "2026-09-16T03:01:01.000Z",
+  "updated_at": "2026-09-16T03:01:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:indugadiraju/so101-stressball-to-bowl_20260915_212555",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712960,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Coverage settings - Supply Chain Management | Dynamics 365",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/coverage-settings",
+      "snippet": "Mar 25, 2026 · Learn about the coverage settings that master scheduling uses to calculate item requirements, including an outline on …"
+    },
+    {
+      "title": "Production planning - Supply Chain Management | Dynamics 365",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/production-planning",
+      "snippet": "May 6, 2026 · Learn about planning for production and explains how to modify planned production orders by using Planning …"
+    },
+    {
+      "title": "Solved: Master Planning Issue - Dynamics 365 Community",
+      "url": "https://community.dynamics.com/forums/thread/details/?threadid=dbc22a73-732b-f011-8c4c-7c1e52643bb6",
+      "snippet": "May 7, 2025 · Ensure coverage rules exist for the site/warehouse combination you're planning. Master planning only generates …"
+    },
+    {
+      "title": "Planned Orders Not Autofirming - Dynamics 365 Community",
+      "url": "https://community.dynamics.com/forums/thread/details/?threadid=ccf22837-c412-ef11-9f8a-000d3a9b1588",
+      "snippet": "May 15, 2024 · I've created an item coverage record for those items that I want to be auto-firmed and assigned this coverage group to …"
+    },
+    {
+      "title": "Production scheduling in Dynamics 365 Supply Chain Management",
+      "url": "https://www.randgroup.com/insights/microsoft/dynamics-365/finance-operations/supply-chain-management/production-scheduling-in-dynamics-365-supply-chain-management/",
+      "snippet": "Aug 14, 2026 · This guide explains how production scheduling works, the capabilities available, and how manufacturers can use them …"
+    }
+  ]
+}

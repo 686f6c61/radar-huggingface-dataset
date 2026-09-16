@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "marcushou74/clip-multitask",
+  "slug": "marcushou74-clip-multitask",
+  "author": "marcushou74",
+  "url": "https://huggingface.co/marcushou74/clip-multitask",
+  "created_at": "2026-09-16T01:57:12.000Z",
+  "updated_at": "2026-09-16T01:57:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qué es una Query - Definición, significado y para qué sirve",
+      "url": "https://www.arimetrics.com/glosario-digital/query",
+      "snippet": "Una query es una pregunta o consulta que se realiza para obtener información. En el contexto de internet, especialmente en los …"
+    },
+    {
+      "title": "Query - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Query",
+      "snippet": "This disambiguation page lists articles associated with the title Query. If an internal link incorrectly led you here, you may wish to …"
+    },
+    {
+      "title": "Consulta SQL (query): qué es y cómo leer el resultado · AprenderSQL.es",
+      "url": "https://aprendersql.es/glosario-sql/query/",
+      "snippet": "Técnicamente conviene distinguir una query o consulta de lectura, que obtiene un resultado, de sentencias de modificación como …"
+    },
+    {
+      "title": "QUERY | traducir al español - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/es/diccionario/ingles-espanol/query",
+      "snippet": "traducir QUERY: pregunta, duda, cuestionar, preguntar, pregunta [feminine, singular], consulta [feminine…. Más información en el …"
+    },
+    {
+      "title": "query - English-Spanish Dictionary - WordReference.com",
+      "url": "https://www.wordreference.com/enes/query",
+      "snippet": "In Lists: Things that can be canceled, essay words, c2 THINKING AND SPEAKING, more... Synonyms: ask, inquire, enquire, …"
+    }
+  ]
+}

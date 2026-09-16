@@ -5,7 +5,7 @@
   "author": "cjli",
   "url": "https://huggingface.co/cjli/harp",
   "created_at": "2026-09-06T20:42:46.000Z",
-  "updated_at": "2026-09-06T21:17:25.000Z",
+  "updated_at": "2026-09-15T18:42:28.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -17,6 +17,7 @@
     "speech-emotion-recognition",
     "music",
     "healthcare",
+    "arxiv:2609.14116",
     "license:mit",
     "region:us"
   ],

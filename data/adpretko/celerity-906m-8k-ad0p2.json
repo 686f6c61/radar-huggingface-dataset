@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "adpretko/celerity-906m-8k-ad0p2",
+  "slug": "adpretko-celerity-906m-8k-ad0p2",
+  "author": "adpretko",
+  "url": "https://huggingface.co/adpretko/celerity-906m-8k-ad0p2",
+  "created_at": "2026-09-16T11:24:51.000Z",
+  "updated_at": "2026-09-16T11:25:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "celerity",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1812969634,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Infogreff [Résolu] - Consommation & Internet",
+      "url": "https://forums.commentcamarche.net/forum/affich-34327381-infogreff",
+      "snippet": "Feb 1, 2017 · Bonsoir, essayez plutôt infogreff e.fr qui est le site des greffes du tribunal de commerce. Donc ça indique juste que les …"
+    },
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Bonjour, Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux …"
+    },
+    {
+      "title": "Equivalent de Infogreffe au Portugal - Expat.com",
+      "url": "https://www.expat.com/fr/forum/europe/portugal/651033-equivalent-de-infogreffe-au-portugal.html",
+      "snippet": "Découvrez comment obtenir le K-bis d'une entreprise au Portugal, avec des conseils pratiques et des équivalents à Infogreffe."
+    },
+    {
+      "title": "équivalent de l'extrait K ou Kbis au Portugal - Expat.com",
+      "url": "https://www.expat.com/fr/forum/europe/portugal/820261-equivalent-de-lextrait-k-ou-kbis-au-portugal.html",
+      "snippet": "Découvrez comment obtenir l'équivalent de l'extrait K ou Kbis au Portugal, y compris le rôle du NIF et les ressources officielles."
+    },
+    {
+      "title": "Même nom de société... [Résolu] - Forum Vos droits sur internet",
+      "url": "https://forums.commentcamarche.net/forum/affich-2312334-meme-nom-de-societe",
+      "snippet": "Jul 21, 2006 · Les informations du registre du commerce sont là : www.societe.com ou là : www.infogreffe.fr (payant en partie) Avant …"
+    }
+  ]
+}

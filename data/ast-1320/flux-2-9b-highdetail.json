@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AST-1320/Flux.2-9B-HighDetail",
+  "slug": "ast-1320-flux-2-9b-highdetail",
+  "author": "AST-1320",
+  "url": "https://huggingface.co/AST-1320/Flux.2-9B-HighDetail",
+  "created_at": "2026-09-16T11:37:20.000Z",
+  "updated_at": "2026-09-16T11:40:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 700395560,
+  "storage_human": "700 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AST67 - Alsace Santé au Travail le partenaire des entreprises",
+      "url": "https://www.ast67.org/",
+      "snippet": "Bienvenue sur l'accueil AST67 votre partenaire de la Santé au Travail en Alsace ; Découvrez notre offre, adhérez, suivez notre …"
+    },
+    {
+      "title": "Autorisation de sortie du territoire (AST) | Service Public",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1359",
+      "snippet": "Un mineur français ou étranger qui vit en France et voyage à l'étranger doit avoir une AST s'il ne voyage pas avec une personne …"
+    },
+    {
+      "title": "AST - La prévention en action | Action Santé Travail",
+      "url": "https://www.actionsantetravail.fr/",
+      "snippet": "Adhérer chez AST, va au-delà de l’obligation légale ! C’est un partenariat gagnant-gagnant qui assure un accompagnement et un …"
+    },
+    {
+      "title": "Alsace Santé au Travail le partenaire des entreprises - AST67",
+      "url": "https://www.ast67.org/?mpfy-pin=12779",
+      "snippet": "En France, 87 % des maladies professionnelles reconnues sont des Troubles Musculo-Squelettiques (TMS). Parmi e..."
+    },
+    {
+      "title": "Autorisation de sortie de territoire (AST) | Service Public",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/R46121",
+      "snippet": "Pour toute explication, consulter les fiches pratiques : Autorisation de sortie du territoire (AST) Avec quels documents un mineur …"
+    }
+  ]
+}

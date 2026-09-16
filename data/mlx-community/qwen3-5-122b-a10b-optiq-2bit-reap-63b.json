@@ -5,7 +5,7 @@
   "author": "mlx-community",
   "url": "https://huggingface.co/mlx-community/Qwen3.5-122B-A10B-OptiQ-2bit-REAP-63B",
   "created_at": "2026-08-29T01:57:01.000Z",
-  "updated_at": "2026-09-14T12:32:27.000Z",
+  "updated_at": "2026-09-15T12:20:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

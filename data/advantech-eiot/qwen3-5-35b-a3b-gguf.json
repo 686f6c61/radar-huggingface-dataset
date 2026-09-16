@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Advantech-EIOT/Qwen3.5-35B-A3B-GGUF",
+  "slug": "advantech-eiot-qwen3-5-35b-a3b-gguf",
+  "author": "Advantech-EIOT",
+  "url": "https://huggingface.co/Advantech-EIOT/Qwen3.5-35B-A3B-GGUF",
+  "created_at": "2026-09-16T02:25:37.000Z",
+  "updated_at": "2026-09-16T02:40:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "image-text-to-text",
+    "qwen3.5",
+    "quantized",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.5-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 36552580416,
+  "storage_human": "36.6 GB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Advantech Co-Creating the Future of the IoT World",
+      "url": "https://www.advantech.com/en-us",
+      "snippet": "To promote IoT, big data, and artificial intelligence, Advantech develops IoT hardware and software solutions with edge computing …"
+    },
+    {
+      "title": "About Advantech - Advantech",
+      "url": "https://www.advantech.com/en-us/about/",
+      "snippet": "Advantech is a global leader in IoT intelligent systems and embedded platforms, with the corporate vision of \"Enabling an Intelligent …"
+    },
+    {
+      "title": "Distributeur Officiel Advantech en France | Sphinx France",
+      "url": "https://sphinxfrance.com/Marques/Advantech/",
+      "snippet": "Sphinx France - Distributeur officiel Advantech : Solutions pour l'industrie 4.0 avec PC industriels, Panel PC, convertisseurs et plus. …"
+    },
+    {
+      "title": "Advantech France | Integral System",
+      "url": "https://www.integral-system.fr/fr_FR/taxons/advantech",
+      "snippet": "ADVANTECH, fabricant Taiwanais, est présent dans 18 pays dont la France en tant qu' Advantech France. Ses produits couvrent …"
+    },
+    {
+      "title": "All Products and Systems - Advantech eStore (Europe)",
+      "url": "https://buy.advantech.eu/Product/",
+      "snippet": "Advantech is a manufacturer of industrial computers,Motherboard,Data Acquisition & I/O, remote IO, human machine interface, digital …"
+    }
+  ]
+}

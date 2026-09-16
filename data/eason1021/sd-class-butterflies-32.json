@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "eason1021/sd-class-butterflies-32",
+  "slug": "eason1021-sd-class-butterflies-32",
+  "author": "eason1021",
+  "url": "https://huggingface.co/eason1021/sd-class-butterflies-32",
+  "created_at": "2026-09-16T11:25:33.000Z",
+  "updated_at": "2026-09-16T11:25:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "unconditional-image-generation",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "pytorch",
+    "unconditional-image-generation",
+    "diffusion-models-class",
+    "license:mit",
+    "diffusers:DDPMPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18536323,
+  "parameters_human": "18.5M",
+  "storage_bytes": 74185252,
+  "storage_human": "74 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Super Sonic vs Dark Sonic. Which form is stronger? - Reddit",
+      "url": "https://www.reddit.com/r/SonicTheHedgehog/comments/uzkq9v/super_sonic_vs_dark_sonic_which_form_is_stronger/",
+      "snippet": "May 28, 2022 · Repair_Jolly ADMIN MOD Super Sonic vs Dark Sonic. Which form is stronger? Discussion People have said that …"
+    },
+    {
+      "title": "Why is my game so dark??? I'm on PC : r/SonicFrontiers - Reddit",
+      "url": "https://www.reddit.com/r/SonicFrontiers/comments/ytsybv/why_is_my_game_so_dark_im_on_pc/",
+      "snippet": "Nov 13, 2022 · 17K subscribers in the SonicFrontiers community. The subreddit for all things Sonic Frontiers!!! The newest Sonic the …"
+    },
+    {
+      "title": "Goku Black vs Mephiles The Dark | (Dragon ball vs Sonic the ... - Reddit",
+      "url": "https://www.reddit.com/r/DeathBattleMatchups/comments/11xc99d/goku_black_vs_mephiles_the_dark_dragon_ball_vs/",
+      "snippet": "Mar 21, 2023 · One of the only Canon Dragon Ball vs Sonic matchups I don’t hate with a passion Connections Both are fantastic …"
+    },
+    {
+      "title": "Sonic forms (Weakest to Strongest) : r/SonicTheHedgehog - Reddit",
+      "url": "https://www.reddit.com/r/SonicTheHedgehog/comments/ldol40/sonic_forms_weakest_to_strongest/",
+      "snippet": "Feb 6, 2021 · Actually most forms can overpower dark spine. Infact I think dark spine is the only form weaker than super sonic (unless …"
+    },
+    {
+      "title": "Would you rather see dark sonic or hyper sonic appear in the ... - Reddit",
+      "url": "https://www.reddit.com/r/SonicTheMovie/comments/yclwcn/would_you_rather_see_dark_sonic_or_hyper_sonic/",
+      "snippet": "I never really liked Dark Sonic, which basically turned Sonic into Shadow for a few minutes. Hyper Sonic could be interesting, but the …"
+    }
+  ]
+}

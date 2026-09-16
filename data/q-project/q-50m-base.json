@@ -5,7 +5,7 @@
   "author": "q-project",
   "url": "https://huggingface.co/q-project/Q-50M-Base",
   "created_at": "2026-08-30T19:24:19.000Z",
-  "updated_at": "2026-08-30T19:26:08.000Z",
+  "updated_at": "2026-09-15T09:59:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 310,
+  "downloads_30d": 427,
   "trending_score": 0,
   "parameters": 50878208,
   "parameters_human": "50.9M",

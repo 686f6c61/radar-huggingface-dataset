@@ -5,7 +5,7 @@
   "author": "tadad",
   "url": "https://huggingface.co/tadad/qwen3.5-0.8b-sanskrit-ocr",
   "created_at": "2026-09-09T22:21:00.000Z",
-  "updated_at": "2026-09-15T03:19:22.000Z",
+  "updated_at": "2026-09-15T20:46:12.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-to-text",
@@ -31,8 +31,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 119197280,
-  "storage_human": "119 MB",
+  "storage_bytes": 136540572,
+  "storage_human": "137 MB",
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"

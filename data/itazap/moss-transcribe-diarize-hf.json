@@ -5,7 +5,7 @@
   "author": "itazap",
   "url": "https://huggingface.co/itazap/MOSS-Transcribe-Diarize-HF",
   "created_at": "2026-09-07T23:12:59.000Z",
-  "updated_at": "2026-09-14T16:21:49.000Z",
+  "updated_at": "2026-09-15T12:26:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "audio-text-to-text",

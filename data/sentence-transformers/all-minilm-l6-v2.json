@@ -60,12 +60,12 @@
     "deploy:azure",
     "region:us"
   ],
-  "likes": 6003,
-  "downloads_30d": 254208155,
-  "trending_score": 259,
+  "likes": 6013,
+  "downloads_30d": 256481161,
+  "trending_score": 249,
   "parameters": 22713728,
   "parameters_human": "22.7M",
-  "storage_bytes": 1844563487,
+  "storage_bytes": 1845474494,
   "storage_human": "1.8 GB",
   "base_model": "nreimers/MiniLM-L6-H384-uncased",
   "formats": [

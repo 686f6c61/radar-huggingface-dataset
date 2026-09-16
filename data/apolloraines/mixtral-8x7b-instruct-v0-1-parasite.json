@@ -5,7 +5,7 @@
   "author": "ApolloRaines",
   "url": "https://huggingface.co/ApolloRaines/Mixtral-8x7B-Instruct-v0.1-Parasite",
   "created_at": "2026-07-21T19:44:17.000Z",
-  "updated_at": "2026-08-30T23:12:54.000Z",
+  "updated_at": "2026-09-15T14:12:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 260,
+  "downloads_30d": 262,
   "trending_score": 0,
   "parameters": 46702792704,
   "parameters_human": "46.70B",

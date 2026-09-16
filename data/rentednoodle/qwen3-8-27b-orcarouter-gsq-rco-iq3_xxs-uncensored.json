@@ -5,7 +5,7 @@
   "author": "RentedNoodle",
   "url": "https://huggingface.co/RentedNoodle/Qwen3.8-27B-OrcaRouter-GSQ-RCO-IQ3_XXS-Uncensored",
   "created_at": "2026-09-09T19:41:20.000Z",
-  "updated_at": "2026-09-09T19:45:54.000Z",
+  "updated_at": "2026-09-15T15:58:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -47,13 +47,13 @@
     "region:us",
     "imatrix"
   ],
-  "likes": 6,
-  "downloads_30d": 5441,
+  "likes": 7,
+  "downloads_30d": 6566,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 12053285576,
-  "storage_human": "12.1 GB",
+  "storage_bytes": 22496132040,
+  "storage_human": "22.5 GB",
   "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
   "formats": [
     "gguf"

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "keystats/historical_barbados_ocr_lora_v2",
+  "slug": "keystats-historical_barbados_ocr_lora_v2",
+  "author": "keystats",
+  "url": "https://huggingface.co/keystats/historical_barbados_ocr_lora_v2",
+  "created_at": "2026-09-16T11:40:51.000Z",
+  "updated_at": "2026-09-16T11:40:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31623800,
+  "storage_human": "32 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RGE ALTI - catalogue.open-datara.fr",
+      "url": "https://catalogue.open-datara.fr/geonetwork/srv/api/records/d88769b9-2f9a-4619-9a8c-90df56cfabe0",
+      "snippet": "Sep 20, 2021 · Metadata File identifier d88769b9-2f9a-4619-9a8c-90df56cfabe0 XML Metadata language Français Character set …"
+    },
+    {
+      "title": "RGE ALTI® - catalogue.open-datara.fr",
+      "url": "https://catalogue.open-datara.fr/geonetwork/srv/api/records/IGNF_RGEALTIr_2-0.xml",
+      "snippet": "Feb 25, 2013 · Le MNT RGE ALTI® est un modèle numérique de terrain maillé diffusé aux pas de 1 m et 5m. Il décrit la forme et …"
+    },
+    {
+      "title": "Jouer avec les dénivelés -",
+      "url": "https://lapiboulade.fr/jouer-avec-les-deniveles/",
+      "snippet": "Importer les données RGE ALTI de votre département en copiant le lien FTP à utiliser via un logiciel de transfert de fichiers (serveur …"
+    },
+    {
+      "title": "Forum GeoRezo / RGE ALTI 1m",
+      "url": "https://georezo.net/forum/viewtopic.php?pid=366935",
+      "snippet": "Feb 22, 2022 · D'abord, évidemment, le téléchargement par département : https://geoservices.ign.fr/rgealti#telechargement1m …"
+    },
+    {
+      "title": "Données géographiques France - Système d’information géographique …",
+      "url": "https://www.sig-gr.eu/fr/outils-donnees/convention-echange-donnees/donnees-geographiques-france.html",
+      "snippet": "true Dernière modification le 18.06.2025 true"
+    }
+  ]
+}

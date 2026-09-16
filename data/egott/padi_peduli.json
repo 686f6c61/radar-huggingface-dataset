@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "egott/Padi_Peduli",
+  "slug": "egott-padi_peduli",
+  "author": "egott",
+  "url": "https://huggingface.co/egott/Padi_Peduli",
+  "created_at": "2026-09-16T02:40:26.000Z",
+  "updated_at": "2026-09-16T02:48:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "9 Best Online Learning Platforms 2026 (Free & Paid, Tested)",
+      "url": "https://onlinecourseing.com/best-online-learning-platforms/",
+      "snippet": "We tested 10+ online learning platforms and ranked them — free and paid. Compare Udemy, Coursera, edX, Codecademy, …"
+    },
+    {
+      "title": "13 Best Free Educational Resources for Students (2026 Guide)",
+      "url": "https://www.straighterline.com/blog/affordable-13-best-free-educational-resources-for-students-2026-guide",
+      "snippet": "Apr 29, 2026 · The 13 best free educational resources for students trying to save money, explore new subjects, or move through …"
+    },
+    {
+      "title": "15 Best Online Education Platforms for 2027 - Research.com",
+      "url": "https://research.com/software/best-online-education-platforms",
+      "snippet": "Aug 5, 2026 · In this guide, we will explore the 15 best online education platforms in 2023 to help you leverage the most effective …"
+    },
+    {
+      "title": "Educational Websites in 2026: Top 10 Platforms for Learning",
+      "url": "https://www.theeducationmagazine.com/best-educational-websites/",
+      "snippet": "Explore the top 10 educational websites in 2026 offering trusted learning resources, online courses, and study tools for students …"
+    },
+    {
+      "title": "Teaching Resource Websites: The Best Sites to Power Your Lessons",
+      "url": "https://learningmole.com/teaching-resource-websites/",
+      "snippet": "Sep 16, 2025 · Teachers often ask about the best platforms for lesson plans, free resources, and classroom materials. These …"
+    }
+  ]
+}

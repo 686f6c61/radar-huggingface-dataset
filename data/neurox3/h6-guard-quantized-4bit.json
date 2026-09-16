@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "neuroX3/H6-Guard-Quantized-4bit",
+  "slug": "neurox3-h6-guard-quantized-4bit",
+  "author": "neuroX3",
+  "url": "https://huggingface.co/neuroX3/H6-Guard-Quantized-4bit",
+  "created_at": "2026-09-16T02:09:58.000Z",
+  "updated_at": "2026-09-16T02:09:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ENGIE Electricité Pro arnaque et incompétence",
+      "url": "https://forum.quechoisir.org/engie-electricite-pro-arnaque-et-incompetence-t80153-10.html",
+      "snippet": "Oct 26, 2015 · Démarchage mensonger d'Utilitywise, prestataire commercial d'ENGIE PRO J'ai été démarchée téléphoniquement et …"
+    },
+    {
+      "title": "ENGIE Electricité Pro arnaque et incompétence",
+      "url": "https://forum.quechoisir.org/engie-electricite-pro-arnaque-et-incompetence-t80153-20.html",
+      "snippet": "Sep 29, 2017 · Re: ENGIE Electricité Pro arnaque et incompétence Messagepar Laamiri » ven. avr. 24, 2026 8:22 pm Bonjour, Je …"
+    },
+    {
+      "title": "Engie - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/engie-f481.html",
+      "snippet": "Jan 7, 2016 · ENGIE Electricité Pro arnaque et incompétence 1 2 3 par yann3425 » mer. oct. 12, 2016 7:02 pm Dernier message par …"
+    },
+    {
+      "title": "ENGIE Electricité Pro arnaque et incompétence - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/engie-electricite-pro-arnaque-et-incompetence-t80153.html",
+      "snippet": "Oct 12, 2016 · Re: ENGIE Electricité Pro arnaque et incompétence Messagepar yann3425» mar. oct. 25, 2016 9:16 pm Bonjour, A la …"
+    },
+    {
+      "title": "ENGIE FRAIS DE RESILIATION PRO ARNAQUE - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/engie-frais-de-resiliation-pro-arnaque-t298398.html",
+      "snippet": "Apr 17, 2021 · Bonjour Engie la societé qui fait des fausse facture a ces clients . Mon contrat avec engie pro pour ma societé arrivait …"
+    }
+  ]
+}

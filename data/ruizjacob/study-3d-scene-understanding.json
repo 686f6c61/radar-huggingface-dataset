@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ruizjacob/study-3d-scene-understanding",
+  "slug": "ruizjacob-study-3d-scene-understanding",
+  "author": "ruizjacob",
+  "url": "https://huggingface.co/ruizjacob/study-3d-scene-understanding",
+  "created_at": "2026-09-16T02:19:47.000Z",
+  "updated_at": "2026-09-16T02:19:52.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "3d-scene-understanding",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "Department of Forensic Science | Publications & Presentations",
+      "url": "https://www.shsu.edu/academics/colleges/criminal-justice/forensic-science/documents/publications-by-ay.pdf",
+      "snippet": "18.09.2025 ... An Internal Validation Study of the. TopMatch 3D Scanner for Cartridge Cases. ... Ting-Yu Huang and Jorn Chi Chung Yu. Development of Crime Scene ..."
+    },
+    {
+      "title": "Vote for InnerPlant CEO Shely Aronov to speak at SXSW 2027 about ...",
+      "url": "https://www.facebook.com/InnerPlant/posts/final-week-vote-for-bold-ideas-innerplant-ceo-and-co-founder-shely-aronov-is-in-/1590484453096164/",
+      "snippet": "17.08.2026 ... ... AI.” In this ... Get high-impact consulting, business model assessment, market research, competitive analysis, financial modeling, etc."
+    },
+    {
+      "title": "Congratulations to the Angeles City Science High School",
+      "url": "https://www.facebook.com/depedr3/posts/congratulations-to-the-angeles-city-science-high-school-australian-robotics-chal/2184123238277363/",
+      "snippet": "20.03.2019 ... ... understanding of AI-driven robotics, showcasing exceptional ... 3D Printing Competition - 1ST RUNNER-UP - Yoshi Apuntar ScienceQUEST ..."
+    },
+    {
+      "title": "Justin Thomas - Facebook",
+      "url": "https://www.facebook.com/J.Michael.ThomasEx/posts/justin-thomas-katie-hodges-youtube-senator-josh-hawley-deep-minds-anonymous-tesl/2134253164037797/",
+      "snippet": "17.04.2026 ... ... model agent , Steve Troupkos, EIon-Musk Privatechats, Alex Ngo ... AI video just got cinematic Hailuo AI's just introduced Director Mode."
+    }
+  ]
+}

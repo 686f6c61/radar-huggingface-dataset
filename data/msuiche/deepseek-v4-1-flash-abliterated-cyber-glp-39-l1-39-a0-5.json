@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "msuiche/DeepSeek-V4.1-Flash-abliterated-cyber-GLP-39-L1-39-a0.5",
+  "slug": "msuiche-deepseek-v4-1-flash-abliterated-cyber-glp-39-l1-39-a0-5",
+  "author": "msuiche",
+  "url": "https://huggingface.co/msuiche/DeepSeek-V4.1-Flash-abliterated-cyber-GLP-39-L1-39-a0.5",
+  "created_at": "2026-09-10T13:47:39.000Z",
+  "updated_at": "2026-09-10T14:02:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "deepseek",
+    "deepseek_v41",
+    "weightless",
+    "control-vector",
+    "abliterated",
+    "uncensored",
+    "refusal-ablation",
+    "activation-steering",
+    "representation-engineering",
+    "vllm",
+    "en",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 96,
+  "trending_score": 0,
+  "parameters": 199680,
+  "parameters_human": "199680",
+  "storage_bytes": 803168,
+  "storage_human": "803168 B",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Firmenkreditrechner: Berechnen Sie Ihren Unternehmenskredit ...",
+      "url": "https://www.vr.de/firmenkunden/produkte/finanzierung/investitionskredit/firmenkreditrechner.html",
+      "snippet": "Ein Firmenkreditrechner schafft hier Transparenz, indem er zeigt, wie sich Kreditbetrag, Laufzeit und Zinssatz auf die Rückzahlung …"
+    },
+    {
+      "title": "Zinsrechner » Anfangskapital, Endkapital, Laufzeit & Zinssatz",
+      "url": "https://www.gruendung.de/tools/zinsrechner/",
+      "snippet": "Sep 9, 2026 · Mit dem Zinsrechner lässt sich anhand der Eingabedaten das benötigte Anfangskapital einer Geldanlage, der Zinssatz, …"
+    },
+    {
+      "title": "Firmenkredit-Rechner 09/2026 》Zinsen im Online-Vergleich",
+      "url": "https://www.kreditrechner.com/spezialkredite/firmenkredit/",
+      "snippet": "Abhängig von der Kreditvariante ist oft nicht der Zinssatz ausschlaggebend, sondern die Flexibilität der Entscheider auf Bankseite. …"
+    },
+    {
+      "title": "Zinsrechner 360 - Professionelle Zinsberechnung nach deutscher 30…",
+      "url": "https://zinsrechner360.de/",
+      "snippet": "Kostenloser Zinsrechner für Darlehen und Kredite nach deutschen Standards. Präzise Berechnung mit 30/360-Tage-Konvention. …"
+    },
+    {
+      "title": "Firmenkredit-Vergleich ᐅ Kredite für Unternehmen vergleichen",
+      "url": "https://www.kreditvergleich.net/firmenkredite/",
+      "snippet": "Welcher Firmenkredit ist am günstigsten? Unser Kreditvergleich für Unternehmen zeigt es: täglich aktuelle Zinsen und eigener Rechner."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/WeatherBench",
+  "slug": "onescience-group-weatherbench",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/WeatherBench",
+  "created_at": "2026-09-16T02:25:41.000Z",
+  "updated_at": "2026-09-16T02:25:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "weatherbench_cnn",
+    "OneScience",
+    "Earth Science",
+    "WeatherBench",
+    "Medium-Range Forecasting",
+    "ERA5",
+    "Benchmarking",
+    "en",
+    "arxiv:2002.00469",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chatgpt-api · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/chatgpt-api",
+      "snippet": "6 days ago · ChatGPT API is a RESTful API that provides a simple interface to interact with OpenAI’s GPT-3 and GPT-Neo language …"
+    },
+    {
+      "title": "Cast3: Translating numerical weather prediction principles into data ...",
+      "url": "https://arxiv.org/html/2605.01599",
+      "snippet": "Evaluated across synoptic-scale skill, spectral fidelity, station-level surface verification, and tropical cyclone prediction, Cast3 outperforms established ..."
+    },
+    {
+      "title": "ChatGPT MD - GitHub",
+      "url": "https://github.com/bramses/chatgpt-md",
+      "snippet": "ChatGPT MD Your AI writing companion, living inside Obsidian. Chat with AI directly in your notes. Reference your other notes with [ …"
+    },
+    {
+      "title": "Graph Neural Networks Applications Across Domains - arXiv",
+      "url": "https://arxiv.org/pdf/2606.27202",
+      "snippet": "26.06.2026 ... Finally, we assess the claim that graph foundation models and language-model ... AI Open, vol. 1, pp. 57–81,. 2020. [5] Z. Zhang, P. Cui ..."
+    },
+    {
+      "title": "为什么chatgpt是收费的，我们的豆包和deepseek是完全免费的?",
+      "url": "https://www.zhihu.com/question/1923520417756321577",
+      "snippet": "当然，免费不代表不好。 我有一个判断：豆包、夸克、KIMI这些产品，未来会比ChatGPT、Claude更加赚钱（C端）。 卖AI会员是一 …"
+    }
+  ]
+}

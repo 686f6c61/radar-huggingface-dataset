@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "kimyh716/whisper-small-dialect-ko",
+  "slug": "kimyh716-whisper-small-dialect-ko",
+  "author": "kimyh716",
+  "url": "https://huggingface.co/kimyh716/whisper-small-dialect-ko",
+  "created_at": "2026-09-16T03:01:39.000Z",
+  "updated_at": "2026-09-16T03:02:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "speech-recognition",
+    "korean",
+    "dialect",
+    "automatic-speech-recognition",
+    "ko",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 967000040,
+  "storage_human": "967 MB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=created",
+      "snippet": "kimyh716/whisper-small-dialect-ko. Automatic Speech Recognition • 0.2B ... QA-AI/frank. 2B • Updated in about 3 hours • 1. Atxsmith/multitask-v1. 49.6k ..."
+    },
+    {
+      "title": "22 Best Coffee Shops in Seattle, WA (2026)",
+      "url": "https://mycoffeeexplorer.com/guides/seattle",
+      "snippet": "Sep 3, 2026 · Discover 22 coffee shops in Seattle, WA. Lighthouse Roasters rated 4.8★. 16 local roasters across 13 neighborhoods. …"
+    },
+    {
+      "title": "The Best Coffee Shops in Seattle",
+      "url": "https://seattlesecrets.org/best-coffee-shops-in-seattle",
+      "snippet": "Jul 13, 2026 · Whether you’re a lifelong Seattleite or just visiting for the weekend, finding the perfect coffee shop is essential to …"
+    },
+    {
+      "title": "The 21 Best Coffee Shops In Seattle - Seattle - The Infatuation",
+      "url": "https://www.theinfatuation.com/seattle/guides/best-coffee-shops-seattle",
+      "snippet": "Aug 31, 2026 · Check out the best coffee shops in Seattle, from little walk-up windows and iconic roasting operations to grungy …"
+    },
+    {
+      "title": "15 Best Coffee Shops in Seattle (September 2026) Local Guide",
+      "url": "https://www.talkofthehouse.com/best-coffee-shops-in-seattle/",
+      "snippet": "May 6, 2026 · Discover Seattle's best coffee shops in 2026 with our local guide. From Capitol Hill espresso bars to Fremont's cultural …"
+    }
+  ]
+}

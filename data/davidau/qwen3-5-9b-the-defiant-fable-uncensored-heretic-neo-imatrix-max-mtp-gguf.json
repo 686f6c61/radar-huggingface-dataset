@@ -5,7 +5,7 @@
   "author": "DavidAU",
   "url": "https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF",
   "created_at": "2026-07-19T04:33:55.000Z",
-  "updated_at": "2026-09-15T08:59:42.000Z",
+  "updated_at": "2026-09-16T03:26:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -43,13 +43,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 669,
-  "downloads_30d": 1265244,
-  "trending_score": 54,
+  "likes": 673,
+  "downloads_30d": 1331900,
+  "trending_score": 56,
   "parameters": 8953803264,
   "parameters_human": "8.95B",
-  "storage_bytes": 147462764097,
-  "storage_human": "147.5 GB",
+  "storage_bytes": 186459631041,
+  "storage_human": "186.5 GB",
   "base_model": "DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP",
   "formats": [
     "gguf"

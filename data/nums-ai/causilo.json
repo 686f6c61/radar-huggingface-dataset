@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "nums-ai/causilo",
+  "slug": "nums-ai-causilo",
+  "author": "nums-ai",
+  "url": "https://huggingface.co/nums-ai/causilo",
+  "created_at": "2026-09-11T08:14:02.000Z",
+  "updated_at": "2026-09-13T10:34:10.000Z",
+  "license": "causilo-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "causilo",
+  "languages": [],
+  "tags": [
+    "causilo",
+    "safetensors",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 292802764,
+  "storage_human": "293 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "BLOOKET - Reddit",
+      "url": "https://www.reddit.com/r/BLOOKET/",
+      "snippet": "This community is for BLOOKET users. Spamming will not be tolerated. Posts that are not Blooket related will be warned and then …"
+    },
+    {
+      "title": "index - BLOOKET - Reddit",
+      "url": "https://www.reddit.com/r/BLOOKET/wiki/index/",
+      "snippet": "This community is for BLOOKET users. Spamming will not be tolerated. Posts that are not Blooket related will be warned and then …"
+    },
+    {
+      "title": "UFC - Reddit",
+      "url": "https://www.reddit.com/r/ufc/wiki/index/",
+      "snippet": "Subreddit covering everything to do with UFC. Fight fans rejoice!"
+    },
+    {
+      "title": "Blooket is Bad for Students : r/teaching - Reddit",
+      "url": "https://www.reddit.com/r/teaching/comments/1bgb2lf/blooket_is_bad_for_students/",
+      "snippet": "You can't do blooket for every assessment just like you can't play jeopardy for every review. Students learning in diverse ways is what …"
+    }
+  ]
+}

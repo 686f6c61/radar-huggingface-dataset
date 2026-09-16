@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "WhiteLotus4/nemotron-red-agent-orchestrator",
+  "slug": "whitelotus4-nemotron-red-agent-orchestrator",
+  "author": "WhiteLotus4",
+  "url": "https://huggingface.co/WhiteLotus4/nemotron-red-agent-orchestrator",
+  "created_at": "2026-09-16T02:37:25.000Z",
+  "updated_at": "2026-09-16T02:39:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8414105600,
+  "parameters_human": "8.41B",
+  "storage_bytes": 8100438058,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gartenmöbelabdeckung nach Maß - kostenloser Konfigurator",
+      "url": "https://www.abdeckplane-gartenmoebel.de/gartenmoebelabdeckung-nach-mass/",
+      "snippet": "Sie möchten eine individuelle Maßanfertigung für Ihre Abdeckplane umgesetzt haben? Egal ob für Gartenmöbel die rechteckig, oval …"
+    },
+    {
+      "title": "Abdeckung Gartenmöbel in Profi-Qualität - planen-intema.de",
+      "url": "https://www.planen-intema.de/produkt-kategorie/abdeckung-gartenmoebel/",
+      "snippet": "Bei uns finden Sie passgenaue Abdeckungen für Gartenmöbel,wie Loungemöbel, Tische, Stühle, Sonnenliegen - und das zu Top …"
+    },
+    {
+      "title": "Abdeckhaube für Gartenmöbel » Jetzt konfigurieren!",
+      "url": "https://rebo-planen.de/produkt/abdeckhaube-gartenmoebel/",
+      "snippet": "Mit einer Gartenmöbel-Abdeckung nach Maß decken Sie Ihre Möbel passgenau ab. Bei Rebo Planen fertigen wir jede Haube exakt …"
+    },
+    {
+      "title": "Langlebige Abdeckplanen für Garten- & Loungemöbel",
+      "url": "https://planen-hauser.de/anwendungsbereiche/abdeckung-gartenmoebel/",
+      "snippet": "Gartenmöbel Abdeckung nach Maß aus PVC. 100% wasserdicht & UV-stabil. Profi-Schutz für Lounges & Grills. Jetzt online …"
+    },
+    {
+      "title": "Abdeckungen & Bezüge nach Maß – UNICOVR Abdeckplanen & Abdeckhauben",
+      "url": "https://granori.de/collections/abdeckplanen-nach-mass-schutzhullen-abdeckhauben-massanfertigung-polsterbezuge-stoff-planen-massgefertigt-wasserdicht-garten-outdoor-moebel-abdeckungen-unicovr-wetterfest-cover",
+      "snippet": "Jetzt individuelle Abdecklösung finden – passgenau, langlebig & schnell verfügbar. Maßgeschneiderte Abdeckplanen & Bezüge – …"
+    }
+  ]
+}

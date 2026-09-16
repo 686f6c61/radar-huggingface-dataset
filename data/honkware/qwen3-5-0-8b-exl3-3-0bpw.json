@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Honkware/Qwen3.5-0.8B-exl3-3.0bpw",
+  "slug": "honkware-qwen3-5-0-8b-exl3-3-0bpw",
+  "author": "Honkware",
+  "url": "https://huggingface.co/Honkware/Qwen3.5-0.8B-exl3-3.0bpw",
+  "created_at": "2026-09-16T02:06:07.000Z",
+  "updated_at": "2026-09-16T08:28:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "qwen3_5",
+    "exl3",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 511030848,
+  "parameters_human": "511.0M",
+  "storage_bytes": 1035024216,
+  "storage_human": "1.0 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hohlschaftkegel – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Hohlschaftkegel",
+      "snippet": "Hohlschaftkegel haben eine hervorragende Wechselgenauigkeit (3 μm), da aufgrund der Plananlage am Bund eine axiale …"
+    },
+    {
+      "title": "Hohlschaftkegel DIN 69893 HSK | HAIMER",
+      "url": "https://www.haimer.com/de/produkte/werkzeugaufnahmen/hohlschaftkegel-din-69893-hsk-a,-hsk-e,-hsk-f",
+      "snippet": "Die Spannung erfolgt über den Kegel mit Plananlage. Hierdurch ist eine hochgenaue Zentrierung und feste axiale Positionierung der …"
+    },
+    {
+      "title": "Der Hohlschaftkegel | Normen maschinenseitig | Technische …",
+      "url": "https://www.baromi.de/technische-informationen/normen-maschinenseitig/der-hohlschaftkegel/",
+      "snippet": "Mitnehmernut am Bund: Zur Indexierung oder zur Aufnahme in einem Werkzeugmagazin oder Greifer. Bei HSK-B/D gleichzeitig zur …"
+    },
+    {
+      "title": "HSK Werkzeugaufnahmen DIN 69893 mit Steilkegel",
+      "url": "https://www.fwt-gmbh.de/hsk-werkzeugaufnahmen-din-69893",
+      "snippet": "HSK Werkzeugaufnahmen DIN 69893 Der Hohlschaftkegel auch HSK Werkzeugaufnahmen DIN 69893 genannt, wird als …"
+    },
+    {
+      "title": "Goldring-Werkzeugaufnahmen :: Helmut Diebold GmbH & Co.",
+      "url": "https://www.hsk.com/produkte/goldring-werkzeugaufnahmen/",
+      "snippet": "Diebold bietet ein komplettes Sortiment an Werkzeugaufnahmen für alle Kegelarten – mit Schwerpunkt auf HSK-Kegeln in höchster …"
+    }
+  ]
+}

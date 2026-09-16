@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "JisuHann/groot-vlm-graft28",
+  "slug": "jisuhann-groot-vlm-graft28",
+  "author": "JisuHann",
+  "url": "https://huggingface.co/JisuHann/groot-vlm-graft28",
+  "created_at": "2026-09-16T02:09:38.000Z",
+  "updated_at": "2026-09-16T02:12:24.000Z",
+  "license": "nvidia-gr00t-n1.5",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "eagle_2_5_vl",
+    "feature-extraction",
+    "eagle2_5_vl",
+    "gr00t",
+    "robotics",
+    "vision-language-model",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2150092736,
+  "parameters_human": "2.15B",
+  "storage_bytes": 4311712371,
+  "storage_human": "4.3 GB",
+  "base_model": "nvidia/GR00T-N1.5-3B, Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qu'est-ce qu'un récépissé de demande de titre de séjour ?",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15763",
+      "snippet": "Quelle est la durée de validité d'un récépissé de demande de titre de séjour ? La durée de validité du récépissé peut être différente …"
+    },
+    {
+      "title": "Récépissé de titre de séjour : durée, droits et renouvellement 2026",
+      "url": "https://assistances-juridiques.fr/blog/recepisse-titre-de-sejour/",
+      "snippet": "Le récépissé de demande de titre de séjour est un document officiel délivré par la préfecture qui atteste que votre demande …"
+    },
+    {
+      "title": "Récépissé de Demande de Titre de Séjour – Pole Démarches",
+      "url": "https://poledemarches.fr/guide/recepisse-de-demande-de-titre-de-sejour/",
+      "snippet": "May 14, 2024 · Le renouvellement de votre récépissé de demande de titre de séjour est possible si sa date de validité arrive à …"
+    },
+    {
+      "title": "Récépissé de renouvellement d'un titre de séjour : guide complet 2026",
+      "url": "https://www.mon-avenir-en-france.fr/blog/recepisse-renouvellement-titre-de-sejour",
+      "snippet": "Feb 23, 2026 · La validité d'un récépissé de renouvellement d'un titre de séjour n'est pas illimitée. C'est un document provisoire, …"
+    },
+    {
+      "title": "Récépissé de demande de titre de séjour - Séjour - Etrangers ...",
+      "url": "https://www.meurthe-et-moselle.gouv.fr/Demarches/Etrangers2/Sejour/Recepisse-de-demande-de-titre-de-sejour",
+      "snippet": "Le jour du dépôt de votre demande, si votre dossier est complet, un récépissé de demande de titre de séjour (ou une attestation de …"
+    }
+  ]
+}

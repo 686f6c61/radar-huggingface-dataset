@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "google/gemma-3-12b-it",
+  "slug": "google-gemma-3-12b-it",
+  "author": "google",
+  "url": "https://huggingface.co/google/gemma-3-12b-it",
+  "created_at": "2025-03-01T19:11:34.000Z",
+  "updated_at": "2025-03-21T20:28:56.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1905.07830",
+    "arxiv:1905.10044",
+    "arxiv:1911.11641",
+    "arxiv:1904.09728",
+    "arxiv:1705.03551",
+    "arxiv:1911.01547",
+    "arxiv:1907.10641",
+    "arxiv:1903.00161",
+    "arxiv:2009.03300",
+    "arxiv:2304.06364",
+    "arxiv:2103.03874",
+    "arxiv:2110.14168",
+    "arxiv:2311.12022",
+    "arxiv:2108.07732",
+    "arxiv:2107.03374",
+    "arxiv:2210.03057",
+    "arxiv:2106.03193",
+    "arxiv:1910.11856",
+    "arxiv:2502.12404",
+    "arxiv:2502.21228",
+    "arxiv:2404.16816",
+    "arxiv:2104.12756",
+    "arxiv:2311.16502",
+    "arxiv:2203.10244",
+    "arxiv:2404.12390",
+    "arxiv:1810.12440",
+    "arxiv:1908.02660",
+    "arxiv:2312.11805",
+    "base_model:google/gemma-3-12b-pt",
+    "base_model:finetune:google/gemma-3-12b-pt",
+    "license:gemma",
+    "eval-results",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 834,
+  "downloads_30d": 638791,
+  "trending_score": 9,
+  "parameters": 12187325040,
+  "parameters_human": "12.19B",
+  "storage_bytes": 111273492196,
+  "storage_human": "111.3 GB",
+  "base_model": "google/gemma-3-12b-pt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google: Gemma 3 12B (free) by Google DeepMind - AI Model Details | LLMIndex | LLMIndex",
+      "url": "https://llmindex.net/models/gemma-3-12b-it-free",
+      "snippet": "Gemma 3 12B is a multimodal, instruction-tuned large language model developed by Google DeepMind. It features a decoder-only transformer architecture combined w..."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/",
+      "snippet": "Encore plus » Account Options. Connexion; Paramètres de recherche"
+    },
+    {
+      "title": "google/gemma-3-12b-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3-12b-it",
+      "snippet": "Below, there are some code snippets on how to get quickly started with running the model. First, install the Transformers library. Gemma 3 is supported starting from transformers 4.50.0. ... Then, copy the snippet from the section that is relevant for your use case. You can initialize the model and processor for inference with pipeline as follows."
+    },
+    {
+      "title": "Téléchargez Google Chrome, le navigateur plus sécurisé et encore …",
+      "url": "https://www.google.com/intl/fr/chrome/",
+      "snippet": "Gagnez en efficacité grâce au nouveau Chrome, un navigateur Internet plus simple, plus sécurisé et encore plus rapide grâce aux …"
+    },
+    {
+      "title": "Gemma 3 12B IT - Amazon Bedrock",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-google-gemma-3-12b-it.html",
+      "snippet": "Gemma 3 12B IT is Google's 12-billion parameter open model with instruction tuning, supporting text and image inputs with a 128K context window. For more information about model development and performance, see the model/service card . Model launch date:"
+    }
+  ]
+}

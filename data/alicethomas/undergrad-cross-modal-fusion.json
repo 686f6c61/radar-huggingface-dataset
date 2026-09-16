@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Alicethomas/undergrad-cross-modal-fusion",
+  "slug": "alicethomas-undergrad-cross-modal-fusion",
+  "author": "Alicethomas",
+  "url": "https://huggingface.co/Alicethomas/undergrad-cross-modal-fusion",
+  "created_at": "2026-09-16T02:21:34.000Z",
+  "updated_at": "2026-09-16T02:21:40.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "cross-modal-fusion",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Messe München – Unser Unternehmensportal",
+      "url": "https://messe-muenchen.de/de/",
+      "snippet": "Die Messe München bietet Ausstellern und Besuchern weltweit Plattformen, um internationale Geschäftsbeziehungen zu knüpfen, …"
+    },
+    {
+      "title": "Messe München heute: Alle Termine im Überblick",
+      "url": "https://messe-muenchen.de/de/veranstaltungen/",
+      "snippet": "Alle aktuellen und kommenden Veranstaltungen jetzt im Messe München Kalender ansehen!"
+    },
+    {
+      "title": "Messe München - Event overview",
+      "url": "https://tickets.messe-muenchen.de/MM-SHOP/Events",
+      "snippet": "Useful links Imprint Terms of Use Privacy Policy Privacy Settings Payment Methods Security © Messe München GmbH 2026, …"
+    },
+    {
+      "title": "Messe München: Location für Messen, Events und Kongresse",
+      "url": "https://www.muenchen.de/veranstaltungen/veranstaltungsorte/messe-muenchen",
+      "snippet": "Die Messe München ist Ort und Veranstalter vieler Events, Messen, Kongresse und Tagungen. Alle Infos zum Messegelände."
+    },
+    {
+      "title": "Messen München 2026/2027 | Messetermine & Messekalender",
+      "url": "https://www.messen.de/de/215/in/de/bayern/muenchen/uebersicht",
+      "snippet": "Der Messestandort München in Bayern bietet eine umfassende Auswahl an Fach- und Verbrauchermessen. Insgesamt umfasst die …"
+    }
+  ]
+}

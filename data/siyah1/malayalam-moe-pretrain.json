@@ -5,7 +5,7 @@
   "author": "siyah1",
   "url": "https://huggingface.co/siyah1/malayalam-moe-pretrain",
   "created_at": "2026-08-24T03:15:49.000Z",
-  "updated_at": "2026-09-15T05:35:49.000Z",
+  "updated_at": "2026-09-15T14:53:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -23,12 +23,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1629,
+  "downloads_30d": 1638,
   "trending_score": 0,
   "parameters": 371479296,
   "parameters_human": "371.5M",
-  "storage_bytes": 160491919027,
-  "storage_human": "160.5 GB",
+  "storage_bytes": 173866236878,
+  "storage_human": "173.9 GB",
   "base_model": "siyah1/malayalam-moe-pretrain",
   "formats": [
     "safetensors"

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "NeuralDreamer/h3ErosMax_beta5_turbo_lora",
+  "slug": "neuraldreamer-h3erosmax_beta5_turbo_lora",
+  "author": "NeuralDreamer",
+  "url": "https://huggingface.co/NeuralDreamer/h3ErosMax_beta5_turbo_lora",
+  "created_at": "2026-09-14T07:59:50.000Z",
+  "updated_at": "2026-09-14T08:39:13.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2326071120,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail?hl=nl",
+      "snippet": "Wij willen hier een beschrijving geven, maar de site die u nu bekijkt staat dit niet toe."
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://www.google.com/accounts/Login",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode"
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
+    },
+    {
+      "title": "Inloggen bij Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=nl&co=GENIE.Platform%3DDesktop",
+      "snippet": "Als je Gmail wilt openen, kun je inloggen vanaf een computer of je account toevoegen aan de Gmail-app op je telefoon of tablet. …"
+    }
+  ]
+}

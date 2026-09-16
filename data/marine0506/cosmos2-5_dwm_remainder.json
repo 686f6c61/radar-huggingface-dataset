@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Marine0506/cosmos2.5_DWM_remainder",
+  "slug": "marine0506-cosmos2-5_dwm_remainder",
+  "author": "Marine0506",
+  "url": "https://huggingface.co/Marine0506/cosmos2.5_DWM_remainder",
+  "created_at": "2026-09-16T02:13:31.000Z",
+  "updated_at": "2026-09-16T03:41:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 47293905808,
+  "storage_human": "47.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Router Login funktioniert nicht? 192.168.0.1, 192.... - Vodafone …",
+      "url": "https://forum.vodafone.de/t5/Community-Blog/Router-Login-funktioniert-nicht-192-168-0-1-192-168-178-1-amp/ba-p/3339555",
+      "snippet": "Jun 24, 2026 · Falls 192.168.178.1 nicht funktioniert, kannst Du die Notfall-IP 169.254.1.1 verwenden. Diese ist bei allen FRITZ!Box …"
+    },
+    {
+      "title": "FritzBox Anmeldung an Benutzeroberfläche - Vodafone Community",
+      "url": "https://forum.vodafone.de/t5/Ger%C3%A4te/FritzBox-Anmeldung-an-Benutzeroberfl%C3%A4che/td-p/3120146",
+      "snippet": "Nov 15, 2023 · Vodafone Community Internet & Festnetz Geräte FritzBox Anmeldung an Benutzeroberfläche Optionen 1 Frage 2 …"
+    },
+    {
+      "title": "[SOLUCIONADO] [NO USAR 169.254/16] No logro routear entre dos …",
+      "url": "https://forum.netgate.com/topic/81542/solucionado-no-usar-169-254-16-no-logro-routear-entre-dos-redes",
+      "snippet": "Mar 20, 2015 · Hola a todos, tengo una pequeña instalación con un pFsense 2.1, en el cual tengo dos interfaces de red montado …"
+    },
+    {
+      "title": "pfsense blocks 169.254.*.* every 1-5 seconds what is this",
+      "url": "https://forum.netgate.com/topic/199676/pfsense-blocks-169.254.-.-every-1-5-seconds-what-is-this",
+      "snippet": "Dec 26, 2025 · @ asiawatcher 169.254.x.x or link-local in IPv4, also known as APIPA. Normally you see these when set for dhcp can …"
+    },
+    {
+      "title": "outlookメールボックスが開けません - Microsoft コミュニティ",
+      "url": "https://answers.microsoft.com/ja-jp/outlook_com/forum/all/outlook%E3%83%A1%E3%83%BC%E3%83%AB%E3%83%9C/18e25a78-7de9-4f0d-b1dd-288ffe025a28",
+      "snippet": "当方、使用OSは7です。 最近、ハードディスクを頻繁に読みに行き動作が重くなることが多かったので コントロールパネル→管理 …"
+    }
+  ]
+}

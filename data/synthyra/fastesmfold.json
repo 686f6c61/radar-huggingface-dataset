@@ -5,7 +5,7 @@
   "author": "Synthyra",
   "url": "https://huggingface.co/Synthyra/FastESMFold",
   "created_at": "2026-03-23T15:01:47.000Z",
-  "updated_at": "2026-08-26T17:13:48.000Z",
+  "updated_at": "2026-09-15T18:29:19.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 28,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": 3531684708,
   "parameters_human": "3.53B",

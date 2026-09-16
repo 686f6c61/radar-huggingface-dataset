@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Dongkkka/Learderboard_peanut_act_bs64_step60000",
+  "slug": "dongkkka-learderboard_peanut_act_bs64_step60000",
+  "author": "Dongkkka",
+  "url": "https://huggingface.co/Dongkkka/Learderboard_peanut_act_bs64_step60000",
+  "created_at": "2026-09-16T02:11:45.000Z",
+  "updated_at": "2026-09-16T02:12:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51701398,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206835000,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn Login, Sign in | LinkedIn",
+      "url": "https://www.linkedin.com/login/",
+      "snippet": "Login to LinkedIn to keep in touch with people you know, share ideas, and build your career."
+    },
+    {
+      "title": "LinkedIn India: Log In or Sign Up",
+      "url": "https://in.linkedin.com/",
+      "snippet": "1 billion members | Manage your professional identity. Build and engage with your professional network. Access knowledge, insights …"
+    },
+    {
+      "title": "LinkedIn: inicio de sesión o registro",
+      "url": "https://es.linkedin.com/",
+      "snippet": "1 mil millones de miembros | Gestiona tu identidad profesional. Amplía e interactúa con tu red profesional. Accede a conocimientos, …"
+    },
+    {
+      "title": "LinkedIn: Log In or Sign Up",
+      "url": "https://www.linkedin.com/",
+      "snippet": "Mar 28, 2026 · 1 billion members | Manage your professional identity. Build and engage with your professional network. Access …"
+    },
+    {
+      "title": "LinkedIn : s’identifier ou s’inscrire",
+      "url": "https://fr.linkedin.com/",
+      "snippet": "1 milliard de membres | Gérez votre image professionnelle. Constituez votre réseau professionnel et communiquez avec celui-ci. …"
+    }
+  ]
+}

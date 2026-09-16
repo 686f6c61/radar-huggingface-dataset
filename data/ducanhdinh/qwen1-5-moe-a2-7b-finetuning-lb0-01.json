@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ducanhdinh/Qwen1.5-MoE-A2.7B-Finetuning-lb0.01",
+  "slug": "ducanhdinh-qwen1-5-moe-a2-7b-finetuning-lb0-01",
+  "author": "ducanhdinh",
+  "url": "https://huggingface.co/ducanhdinh/Qwen1.5-MoE-A2.7B-Finetuning-lb0.01",
+  "created_at": "2026-09-16T02:17:37.000Z",
+  "updated_at": "2026-09-16T08:33:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "moe",
+    "mixture-of-experts",
+    "machine-translation",
+    "fine-tuned",
+    "base_model:Qwen/Qwen1.5-MoE-A2.7B",
+    "base_model:adapter:Qwen/Qwen1.5-MoE-A2.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13786555927,
+  "storage_human": "13.8 GB",
+  "base_model": "Qwen/Qwen1.5-MoE-A2.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Generator obrazów oparty na AI: narzędzie online do tworzenia …",
+      "url": "https://www.shutterstock.com/pl/ai-image-generator?msockid=2b25a1633b4564fc2fa7b6b53a006512",
+      "snippet": "Generator obrazów Shutterstock oparty na AI tworzy w kilka sekund obrazy na podstawie tekstu. Wprowadź instrukcje, wybierz styl, …"
+    },
+    {
+      "title": "Darmowy generator obrazów AI, twórz dzieła sztuki w kilka sekund",
+      "url": "https://seapik.com/pl-PL/ai-image-generator",
+      "snippet": "Generuj obrazy o oszałamiających szczegółach i realizmie. Wybierz style, rozmiary i opisz szczegółowo. Szeroka gama obrazów, od …"
+    },
+    {
+      "title": "Bezpłatny generator obrazów sztucznej inteligencji - Bing",
+      "url": "https://www.bing.com/images/create/ai-image-generator?cc=pl",
+      "snippet": "Twórz wspaniałe obrazy za pomocą Kreatora obrazów Bing – najlepszego bezpłatnego generatora obrazów AI. Błyskawicznie …"
+    },
+    {
+      "title": "Darmowy generator obrazów AI - zamiana tekstu w obraz | Canva",
+      "url": "https://www.canva.com/pl_pl/funkcje/generator-obrazow-ai/?msockid=2b25a1633b4564fc2fa7b6b53a006512",
+      "snippet": "Skorzystaj z naszego generatora obrazów AI, aby niemal magicznie przekonwertować tekst na obraz. Baw się, generując za darmo …"
+    },
+    {
+      "title": "Darmowy i nieograniczony generator obrazów AI online | Bez rejestracji ...",
+      "url": "https://www.creen.ai/pl/ai-image-generator",
+      "snippet": "Zamień dowolny pomysł w dopracowaną grafikę w kilka sekund dzięki naszemu generatorowi obrazów AI — przeglądarkowemu …"
+    }
+  ]
+}

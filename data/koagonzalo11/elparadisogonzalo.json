@@ -5,7 +5,7 @@
   "author": "Koagonzalo11",
   "url": "https://huggingface.co/Koagonzalo11/Elparadisogonzalo",
   "created_at": "2025-08-20T12:10:23.000Z",
-  "updated_at": "2026-09-11T23:02:03.000Z",
+  "updated_at": "2026-09-15T19:15:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -14,19 +14,7 @@
     "en"
   ],
   "tags": [
-    "espnet",
-    "web3",
-    "blockchain",
-    "ethereum",
-    "bsc",
-    "smart-contracts",
-    "dapp",
-    "elparadisogonzalo",
-    "en",
-    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
-    "base_model:finetune:deepseek-ai/DeepSeek-V4.1-Flash",
     "doi:10.57967/hf/10368",
-    "license:apache-2.0",
     "region:us"
   ],
   "likes": 1,

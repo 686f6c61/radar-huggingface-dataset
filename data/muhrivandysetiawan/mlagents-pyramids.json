@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "muhrivandysetiawan/MLAgents-Pyramids",
+  "slug": "muhrivandysetiawan-mlagents-pyramids",
+  "author": "muhrivandysetiawan",
+  "url": "https://huggingface.co/muhrivandysetiawan/MLAgents-Pyramids",
+  "created_at": "2026-09-16T11:43:20.000Z",
+  "updated_at": "2026-09-16T11:43:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Pyramids",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39207281,
+  "storage_human": "39 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gmail - Email from Google",
+      "url": "https://mail.google.com/mail",
+      "snippet": "Gmail is email that's intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail?hl=de",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "Anmelden – Google Konten",
+      "url": "https://accounts.google.com/login?hl=de",
+      "snippet": "Nicht Ihr Computer? Dann können Sie für die Anmeldung ein Fenster zum privaten Surfen öffnen. Weitere Informationen zur …"
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/login?service=mail&hl=de",
+      "snippet": "Gmail ist ein intuitiver, effizienter und nützlicher E-Mail-Dienst mit 15 GB Speicherplatz, weniger Spam und mobilem Zugriff."
+    },
+    {
+      "title": "Gmail",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    }
+  ]
+}

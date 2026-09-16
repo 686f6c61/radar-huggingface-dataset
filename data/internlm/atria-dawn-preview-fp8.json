@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "internlm/Atria-Dawn-Preview-FP8",
+  "slug": "internlm-atria-dawn-preview-fp8",
+  "author": "internlm",
+  "url": "https://huggingface.co/internlm/Atria-Dawn-Preview-FP8",
+  "created_at": "2026-09-12T04:01:45.000Z",
+  "updated_at": "2026-09-15T10:39:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "glm_moe_dsa",
+    "arxiv:2609.15818",
+    "zh",
+    "en",
+    "license:mit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 300,
+  "trending_score": 0,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 755666983125,
+  "storage_human": "755.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft",
+      "url": "https://aka.ms/aoh",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Activer les produits perpétuels Microsoft à l’aide du portail d ...",
+      "url": "https://support.microsoft.com/fr-fr/windows/activation/activate-microsoft-perpetual-products-using-the-product-activation-portal",
+      "snippet": "Le portail d’activation des produits permet l’activation d’un large éventail de produits Microsoft perpétuels et prend en charge les …"
+    },
+    {
+      "title": "Microsoft supprime l’activation par téléphone de Windows et Office",
+      "url": "https://www.justgeek.fr/microsoft-supprime-activation-telephone-windows-office-145405/",
+      "snippet": "Jan 5, 2026 · Pour activer votre produit rapidement et facilement, veuillez consulter notre portail d’activation en ligne à l’adresse …"
+    },
+    {
+      "title": "Microsoft Support",
+      "url": "https://visualsupport.microsoft.com/",
+      "snippet": "Visual IVR Welcome to Microsoft Product Activation Portal! You’re just a few steps away from activating your Microsoft product. …"
+    },
+    {
+      "title": "Is aka.ms/aoh a scam or legit - Microsoft Q&A",
+      "url": "https://learn.microsoft.com/en-us/answers/questions/5651546/is-aka-ms-aoh-a-scam-or-legit",
+      "snippet": "Dec 8, 2025 · The link aka.ms/aoh is a Microsoft domain, which suggests it is associated with Microsoft services. However, the …"
+    }
+  ]
+}

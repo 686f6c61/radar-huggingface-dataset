@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "taurusduan/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+  "slug": "taurusduan-qwen3-8-flash-next-gsq-rco-gguf",
+  "author": "taurusduan",
+  "url": "https://huggingface.co/taurusduan/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+  "created_at": "2026-09-16T11:29:08.000Z",
+  "updated_at": "2026-09-16T11:29:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gsq",
+    "rco",
+    "quantization",
+    "mixed-precision",
+    "ist-daslab",
+    "moe",
+    "multimodal",
+    "vision",
+    "image-text-to-text",
+    "arxiv:2604.18556",
+    "arxiv:2605.00649",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 153597545821,
+  "storage_human": "153.6 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unser Showroom Stilarena | Siemens Hausgeräte AT",
+      "url": "https://www.siemens-home.bsh-group.com/at/inspiration/erleben/stilarena-schauraum",
+      "snippet": "Besuche unsere Siemens Showroom und lass dich inspirieren. Buche eine persönliche Beratung oder ein Kochevent und lerne …"
+    },
+    {
+      "title": "Siemens Showroom Inspiration |Siemens Hausgeräte AT",
+      "url": "https://www.siemens-home.bsh-group.com/at/kuechenplanung/showroom-inspiration",
+      "snippet": "Du möchtest Siemens Hausgeräte live sehen und dich inspirieren lassen? Bei Siemens findest du Küchen-Inspirationen und die …"
+    },
+    {
+      "title": "Siemens Showroom | Stilarena Wien – Welt der Hausgeräte",
+      "url": "https://www.stilarena.at/showroom/siemens/",
+      "snippet": "Unser innovativer Showroom in Wien bietet nicht nur Inspiration für Ihre Küche, sondern auch Platz für unvergessliche Events. …"
+    },
+    {
+      "title": "Stilarena - Welt der Hausgeräte",
+      "url": "https://www.stilarena.at/",
+      "snippet": "Erleben Sie auf 1.200 m² die Haushalts- und Küchengeräte von Bosch, Siemens, Gaggenau und Neff in unserem innovativen …"
+    },
+    {
+      "title": "Siemens Hausgeräte eröffnet Showroom neu - Siemens Hausgeräte ...",
+      "url": "https://www.presse-hausgeraete.at/news-siemens-hausgeraete-eroeffnet-showroom-neu?id=184309&menueid=964&l=deutsch",
+      "snippet": "Aug 25, 2023 · Ab sofort kann man die neu gestaltete Siemens Welt in der Wiener Stilarena erleben. Der Siemens Showroom wurde …"
+    }
+  ]
+}

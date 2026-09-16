@@ -5,7 +5,7 @@
   "author": "ThirdTimesTheCiarc",
   "url": "https://huggingface.co/ThirdTimesTheCiarc/base_minim3",
   "created_at": "2026-08-04T18:54:53.000Z",
-  "updated_at": "2026-09-14T13:23:48.000Z",
+  "updated_at": "2026-09-16T04:59:05.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": 37273600,
   "parameters_human": "37.3M",
-  "storage_bytes": 227915559189,
-  "storage_human": "227.9 GB",
+  "storage_bytes": 232978779660,
+  "storage_human": "233.0 GB",
   "base_model": null,
   "formats": [
     "gguf"

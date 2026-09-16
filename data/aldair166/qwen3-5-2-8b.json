@@ -5,9 +5,9 @@
   "author": "aldair166",
   "url": "https://huggingface.co/aldair166/qwen3.5-2.8b",
   "created_at": "2026-09-07T18:56:16.000Z",
-  "updated_at": "2026-09-07T18:57:25.000Z",
-  "license": null,
-  "license_family": "unknown",
+  "updated_at": "2026-09-16T01:29:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
   "pipeline_tag": "text-generation",
   "library": "transformers",
   "languages": [],
@@ -17,7 +17,10 @@
     "qwen3_5_text",
     "text-generation",
     "conversational",
-    "arxiv:1910.09700",
+    "pt",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
     "endpoints_compatible",
     "region:us"
   ],
@@ -28,7 +31,7 @@
   "parameters_human": "2.86B",
   "storage_bytes": 5743110957,
   "storage_human": "5.7 GB",
-  "base_model": null,
+  "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "jakeatx/ATX-Swift-Qwen3.8-27B-Uncensored-IQ4_XS-M-GGUF",
+  "slug": "jakeatx-atx-swift-qwen3-8-27b-uncensored-iq4_xs-m-gguf",
+  "author": "jakeatx",
+  "url": "https://huggingface.co/jakeatx/ATX-Swift-Qwen3.8-27B-Uncensored-IQ4_XS-M-GGUF",
+  "created_at": "2026-09-16T02:06:46.000Z",
+  "updated_at": "2026-09-16T02:09:24.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "quantized",
+    "imatrix",
+    "qwen3.8",
+    "swift",
+    "uncensored",
+    "abliterated",
+    "rtx-3090",
+    "long-context",
+    "speculative-decoding",
+    "mtp",
+    "text-generation",
+    "base_model:d0xin/Swift-Qwen3.8-27B-Uncensored-BF16",
+    "base_model:quantized:d0xin/Swift-Qwen3.8-27B-Uncensored-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 15602193472,
+  "storage_human": "15.6 GB",
+  "base_model": "d0xin/Swift-Qwen3.8-27B-Uncensored-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Scoodle: Digitaal Leerplatform | Plateforme Digitale Éducative",
+      "url": "https://www.scoodle.be/",
+      "snippet": "De digitale boekentas voor leerkrachten in het basis- en secundair onderwijs. | La plateforme digitale pour l'enseignement primaire & …"
+    },
+    {
+      "title": "Scoodle Play: Digitaal Oefenplatform | Plateforme d'Exercices Digitaux",
+      "url": "https://scoodleplay.plantyn.com/",
+      "snippet": "Het leukste digitale oefenplatform voor thuis en in de klas. | La plateforme d'exercices interactifs pour l'enseignement."
+    },
+    {
+      "title": "Scoodle des Editions Plantyn",
+      "url": "https://www.plantyn.com/fr-BE/scoodle",
+      "snippet": "Scoodle contient : Le livre numérique, des fiches de préparation, les corrigés, des évaluations, des synthèses supplémentaires, des …"
+    },
+    {
+      "title": "Scoodle",
+      "url": "https://scoodle.plantyn.com/scoodle/Account/Login",
+      "snippet": "Login to Scoodle for a seamless learning experience."
+    },
+    {
+      "title": "Scoodle Play des Editions Plantyn",
+      "url": "https://www.plantyn.com/fr-BE/scoodle-play",
+      "snippet": "Sur Scoodle Play, les enfants peuvent réaliser des exercices de mathématiques, de français et d'éveil en lien avec la collection …"
+    }
+  ]
+}

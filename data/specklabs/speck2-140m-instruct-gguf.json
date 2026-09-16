@@ -5,7 +5,7 @@
   "author": "specklabs",
   "url": "https://huggingface.co/specklabs/Speck2-140M-Instruct-GGUF",
   "created_at": "2026-09-01T17:44:37.000Z",
-  "updated_at": "2026-09-01T17:49:51.000Z",
+  "updated_at": "2026-09-15T15:20:28.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 183,
+  "downloads_30d": 185,
   "trending_score": 0,
   "parameters": 180165376,
   "parameters_human": "180.2M",

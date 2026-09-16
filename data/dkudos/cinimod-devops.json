@@ -5,7 +5,7 @@
   "author": "dkudos",
   "url": "https://huggingface.co/dkudos/cinimod-devops",
   "created_at": "2026-09-07T23:19:22.000Z",
-  "updated_at": "2026-09-14T23:41:34.000Z",
+  "updated_at": "2026-09-15T10:59:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 514,
+  "downloads_30d": 893,
   "trending_score": 0,
   "parameters": 287310848,
   "parameters_human": "287.3M",

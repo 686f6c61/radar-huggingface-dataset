@@ -5,7 +5,7 @@
   "author": "ChrisColeTech",
   "url": "https://huggingface.co/ChrisColeTech/LTX-2.5-uncensored-v1.1-FP8",
   "created_at": "2026-08-11T21:57:43.000Z",
-  "updated_at": "2026-09-14T15:52:52.000Z",
+  "updated_at": "2026-09-15T18:04:34.000Z",
   "license": "unknown",
   "license_family": "unknown",
   "pipeline_tag": "text-to-video",
@@ -25,12 +25,12 @@
     "license:unknown",
     "region:us"
   ],
-  "likes": 26,
+  "likes": 28,
   "downloads_30d": 12642,
   "trending_score": 0,
   "parameters": 21004025600,
   "parameters_human": "21.00B",
-  "storage_bytes": 225979378167,
+  "storage_bytes": 225985008013,
   "storage_human": "226.0 GB",
   "base_model": "TenStrip/LTX2.3-10Eros, Lightricks/LTX-2.5, TenStrip/LTX2.3_DMD_Lora",
   "formats": [

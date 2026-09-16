@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "concil859856/MiniMax-H3-Longvideos",
+  "slug": "concil859856-minimax-h3-longvideos",
+  "author": "concil859856",
+  "url": "https://huggingface.co/concil859856/MiniMax-H3-Longvideos",
+  "created_at": "2026-09-16T11:35:38.000Z",
+  "updated_at": "2026-09-16T11:35:39.000Z",
+  "license": "h3-longvideos-no-redistribution",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "comfyui",
+    "comfyui-nodes",
+    "minimax",
+    "video",
+    "text-to-video",
+    "audio",
+    "not-for-all-audiences",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "Introducing ChatGPT - OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    },
+    {
+      "title": "ChatGPT - чат гпт",
+      "url": "https://m.chatgpt.com/?locale=ru-RU",
+      "snippet": "Получайте ответы, адаптированные специально для вас. Войдите в систему, чтобы получать ответы на основе сохраненных …"
+    },
+    {
+      "title": "Представляем ChatGPT | OpenAI",
+      "url": "https://openai.com/ru-RU/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · ChatGPT — это дообученная модель из серии GPT‑3.5, которая завершила обучение в начале 2022 года. Вы …"
+    }
+  ]
+}

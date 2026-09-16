@@ -5,7 +5,7 @@
   "author": "keithtwesigye",
   "url": "https://huggingface.co/keithtwesigye/lunyoro-lun2en",
   "created_at": "2026-04-10T18:24:52.000Z",
-  "updated_at": "2026-09-04T23:15:16.000Z",
+  "updated_at": "2026-09-15T12:16:28.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "translation",
@@ -15,6 +15,7 @@
     "en"
   ],
   "tags": [
+    "onnx",
     "safetensors",
     "marian",
     "translation",
@@ -33,10 +34,11 @@
   "trending_score": 0,
   "parameters": 77058732,
   "parameters_human": "77.1M",
-  "storage_bytes": 9865945599,
-  "storage_human": "9.9 GB",
+  "storage_bytes": 10792024117,
+  "storage_human": "10.8 GB",
   "base_model": null,
   "formats": [
+    "onnx",
     "safetensors"
   ],
   "is_conversational": false,

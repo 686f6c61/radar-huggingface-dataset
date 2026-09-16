@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "HyeonseokE/smolvla_rq2_turn_off_lever_random_1000_10fps",
+  "slug": "hyeonseoke-smolvla_rq2_turn_off_lever_random_1000_10fps",
+  "author": "HyeonseokE",
+  "url": "https://huggingface.co/HyeonseokE/smolvla_rq2_turn_off_lever_random_1000_10fps",
+  "created_at": "2026-09-16T02:32:53.000Z",
+  "updated_at": "2026-09-16T02:35:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:HyeonseokE/rq2_turn_off_lever_random_100_10fps",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906729316,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EUKW - strona główna",
+      "url": "https://ekw.ms.gov.pl/",
+      "snippet": "Przeglądanie księgi wieczystej ? Składanie wniosków o wydanie dokumentu z Centralnej Informacji Ksiąg Wieczystych ? Weryfikacja …"
+    },
+    {
+      "title": "Sposób złożenia wniosku - Centralna Informacja Ksiąg Wieczystych",
+      "url": "https://ekw.ms.gov.pl/eukw_ogol/zlecenie?execution=e1s1",
+      "snippet": "Portal Rejestrów Sądowych Centralna Informacja Centralna Informacja KW Centralna Informacja KW Złóż wniosek bez logowania …"
+    },
+    {
+      "title": "Kontakt - EUKW",
+      "url": "https://ekw.ms.gov.pl/eukw_ogol/kontakt.do",
+      "snippet": "Mar 2, 2026 · Bezpośredni kontakt z Działem Serwisu jest możliwy od poniedziałku do piątku w godzinach od 7:30 do 19:30 oraz w …"
+    },
+    {
+      "title": "Instrukcja systemu Elektroniczne Księgi Wieczyste - EUKW",
+      "url": "https://ekw.ms.gov.pl/eukw_ogol/pomoc/instrukcja.pdf",
+      "snippet": "Aby przeglądać żądaną treść księgi wieczystej, należy wcisnąć odpowiedni przycisk - [Przeglądanie aktualnej treści KW …"
+    },
+    {
+      "title": "EUKW - Komunikaty",
+      "url": "https://ekw.ms.gov.pl/eukw_ogol/komunikaty.do",
+      "snippet": "Mar 2, 2026 · Informujemy, że w każdą niedzielę od godz. 00:00 do godz. 9:00, system EUKW będzie niedostępny. Prosimy o …"
+    }
+  ]
+}

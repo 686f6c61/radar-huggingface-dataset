@@ -5,7 +5,7 @@
   "author": "Asher-1",
   "url": "https://huggingface.co/Asher-1/SAM_3D_OBJECTS_GGUF",
   "created_at": "2026-08-30T07:43:12.000Z",
-  "updated_at": "2026-09-14T13:53:15.000Z",
+  "updated_at": "2026-09-15T11:28:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -16,12 +16,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 642,
+  "downloads_30d": 1002,
   "trending_score": 0,
-  "parameters": 85067588,
-  "parameters_human": "85.1M",
-  "storage_bytes": 48558258240,
-  "storage_human": "48.6 GB",
+  "parameters": 314174026,
+  "parameters_human": "314.2M",
+  "storage_bytes": 49187403072,
+  "storage_human": "49.2 GB",
   "base_model": null,
   "formats": [
     "gguf"

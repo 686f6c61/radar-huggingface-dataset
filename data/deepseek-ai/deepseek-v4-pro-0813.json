@@ -16,7 +16,6 @@
     "safetensors",
     "deepseek_v4",
     "text-generation",
-    "conversational",
     "arxiv:2606.19348",
     "license:mit",
     "eval-results",
@@ -26,7 +25,7 @@
     "region:us"
   ],
   "likes": 830,
-  "downloads_30d": 166759,
+  "downloads_30d": 167572,
   "trending_score": 11,
   "parameters": 1650497936906,
   "parameters_human": "1650.50B",
@@ -36,7 +35,7 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "removed": false,
   "removed_at": null,

@@ -5,7 +5,7 @@
   "author": "KitsuMate",
   "url": "https://huggingface.co/KitsuMate/omnivoice-onnx",
   "created_at": "2026-08-14T19:57:21.000Z",
-  "updated_at": "2026-08-14T22:52:45.000Z",
+  "updated_at": "2026-09-15T12:44:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 5202673560,
-  "storage_human": "5.2 GB",
+  "storage_bytes": 7551698372,
+  "storage_human": "7.6 GB",
   "base_model": null,
   "formats": [
     "onnx"

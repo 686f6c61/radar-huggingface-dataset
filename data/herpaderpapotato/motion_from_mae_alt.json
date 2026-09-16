@@ -5,7 +5,7 @@
   "author": "herpaderpapotato",
   "url": "https://huggingface.co/herpaderpapotato/motion_from_mae_alt",
   "created_at": "2026-08-08T13:19:38.000Z",
-  "updated_at": "2026-09-13T17:48:51.000Z",
+  "updated_at": "2026-09-15T17:35:29.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": 15134978,
   "parameters_human": "15.1M",
-  "storage_bytes": 605207776,
-  "storage_human": "605 MB",
+  "storage_bytes": 665757916,
+  "storage_human": "666 MB",
   "base_model": null,
   "formats": [
     "safetensors"

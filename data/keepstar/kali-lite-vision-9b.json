@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "keepstar/Kali-Lite-Vision-9B",
+  "slug": "keepstar-kali-lite-vision-9b",
+  "author": "keepstar",
+  "url": "https://huggingface.co/keepstar/Kali-Lite-Vision-9B",
+  "created_at": "2026-09-16T11:32:51.000Z",
+  "updated_at": "2026-09-16T11:35:08.000Z",
+  "license": "mixed-gpl-2.0-only-apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "qwen3.5",
+    "vision",
+    "multimodal",
+    "ollama",
+    "local",
+    "sovereign-ai",
+    "kalicorp",
+    "image-text-to-text",
+    "fr",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seventy nine (סבנטי ניין) ⚡ המותג ... - WeShoes",
+      "url": "https://weshoes.co.il/collections/seventy-nine",
+      "snippet": "מותג הנעליים Seventy Nine (סבנטי ניין) מביא לעולם האופנה שילוב מדויק בין עיצוב מודרני, נוחות יומיומית וסטייל אורבני עדכני. קולקציית הנעליים של …"
+    },
+    {
+      "title": "סבנטי ניין",
+      "url": "https://www.mho.co.il/g/39554-%D7%99%D7%A6%D7%A8%D7%9F/245410-%D7%A1%D7%91%D7%A0%D7%98%D7%99-%D7%A0%D7%99%D7%99%D7%9F",
+      "snippet": "לקהל לקוחותינו, בשל עומסים לוגיסטיים ייתכנו עיכובים בהגעת המשלוחים, אנו עושים כל מאמץ שכל המשלוחים יגיעו מהר ככל הניתן. נודה על השארת …"
+    },
+    {
+      "title": "Seventy Nine | סבנטי ניין - ספורט ליברמן",
+      "url": "https://www.sportliberman.co.il/c/Seventy_Nine_%D7%A1%D7%91%D7%A0%D7%98%D7%99_%D7%A0%D7%99%D7%99%D7%9F",
+      "snippet": "Seventy Nine מגפוני נשים ברנדה סבנטי ניין בצבע לבן לקה | סניקרס גבוה..."
+    },
+    {
+      "title": "Seventy Nine - נעלי עקב שנדי סבנטי ניין לנשים בצבע שחור החל מ",
+      "url": "https://weshoes.co.il/products/snnew9050-001",
+      "snippet": "מחפשים Seventy Nine - נעלי עקב שנדי סבנטי ניין לנשים בצבע שחור ? הגעתם למקום הנכון! אצלנו בווישוז תוכלו ליהנות מהפריטים האיכותיים ביותר! …"
+    },
+    {
+      "title": "Seventy Nine – AroSport",
+      "url": "https://arosport.co.il/collections/seventy-nine",
+      "snippet": "כפכפי פרווה סבנטי ניין לנשים דגם מיתר - Seventy Nine כפכפים מזמש עם בטנת פרווה רכה ונעימה לנשים. הכפכפים סגורים מקדימה באזור האצבעות, …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "yone2426/Qwen3-8B-ISE-IHT",
+  "slug": "yone2426-qwen3-8b-ise-iht",
+  "author": "yone2426",
+  "url": "https://huggingface.co/yone2426/Qwen3-8B-ISE-IHT",
+  "created_at": "2026-09-16T02:05:03.000Z",
+  "updated_at": "2026-09-16T02:06:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "ise",
+    "instruction-hierarchy",
+    "prompt-injection",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:finetune:Qwen/Qwen3-8B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16381549624,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Peut-on imprimer une conversation sur messagerie du bon coin",
+      "url": "https://forums.commentcamarche.net/forum/affich-37992704-peut-on-imprimer-une-conversation-sur-messagerie-du-bon-coin",
+      "snippet": "Feb 3, 2024 · Bonjour, j'ai besoin d'imprimer mes conversations sur \"le bon coin\" avec des personnes ayant passé une annonce. Je …"
+    },
+    {
+      "title": "Annonce sur LE BON COIN refusée - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-35484879-annonce-sur-le-bon-coin-refusee",
+      "snippet": "Jul 23, 2018 · Meilleure réponse: Je n’arrive plus à faire passer mon annonce sur LE BON COIN. Après une dizaine de tentatives …"
+    },
+    {
+      "title": "Le bon coin une honte!! - Forum - 60 millions de consommateurs",
+      "url": "https://www.60millions-mag.com/forum/d/29369-le-bon-coin-une-honte",
+      "snippet": "May 3, 2016 · Bonjour à tous Je n’arrive plus à faire passer mon annonce sur LE BON COIN. Après une dizaine de tentatives …"
+    },
+    {
+      "title": "Le Bon Coin, la foire aux couacs - 60 Millions de Consommateurs",
+      "url": "https://www.60millions-mag.com/commerce/article/le-bon-coin-la-foire-aux-couacs-20210310/",
+      "snippet": "Mar 10, 2021 · Véhicules ou électroménager à vendre, appartements à louer… Ce qu’on recherche est souvent disponible sur le Bon …"
+    },
+    {
+      "title": "Problème sur ma messagerie Leboncoin - Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-35435929-probleme-sur-ma-messagerie-leboncoin",
+      "snippet": "Le bon coin sera bientot obligé de se maquer avec le tat pour lister les ventes que vous faites.. je n ai plus confiance en ce site de de …"
+    }
+  ]
+}

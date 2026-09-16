@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "raphaelreisb/riju-makeela-totk-anima",
+  "slug": "raphaelreisb-riju-makeela-totk-anima",
+  "author": "raphaelreisb",
+  "url": "https://huggingface.co/raphaelreisb/riju-makeela-totk-anima",
+  "created_at": "2026-09-16T02:37:46.000Z",
+  "updated_at": "2026-09-16T02:37:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 86144640,
+  "storage_human": "86 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تنزيل Google Chrome وتثبيته",
+      "url": "https://support.google.com/chrome/answer/95346?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "يمكنك تنزيل متصفّح الويب Chrome وتثبيته بدون أي رسوم، واستخدامه لتصفّح الويب. مراجعة متطلبات النظام لاستخدام Chrome"
+    },
+    {
+      "title": "Gmail Help",
+      "url": "https://support.google.com/mail/?hl=en",
+      "snippet": "Official Gmail Help Center where you can find tips and tutorials on using Gmail and other answers to frequently asked questions."
+    },
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "Create a Google Account for Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=en",
+      "snippet": "Important: Before you create a new Google Account, sign out of your current account. Learn how to sign out of Gmail. From your …"
+    },
+    {
+      "title": "Google Help",
+      "url": "https://support.google.com/",
+      "snippet": "If you're having trouble accessing a Google product, there's a chance we're currently experiencing a temporary problem. You can …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/ACE2",
+  "slug": "onescience-group-ace2",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/ACE2",
+  "created_at": "2026-09-16T02:24:13.000Z",
+  "updated_at": "2026-09-16T02:24:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ace2",
+    "OneScience",
+    "Earth Science",
+    "Global Atmospheric Emulation",
+    "Neural Operator",
+    "Climate Simulation",
+    "Physical Constraints",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Maurice Maurice P. Whelan - ScienceDirect.com",
+      "url": "https://www.sciencedirect.com/author/7103060842/maurice-maurice-p-whelan",
+      "snippet": "Maurice Maurice P. Whelan. Author information. Current affiliation: European Commission Joint Research Centre, Brussels, Belgium. Scopus ..."
+    },
+    {
+      "title": "这个网址是potplayer官网吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/509011663",
+      "snippet": "Feb 21, 2022 · ———————————————— 为了让更多人能搜到这个帖子，做点SEO。 PotPlayer是什么？PotPlayer怎么下 …"
+    },
+    {
+      "title": "SAGE Publishing - Coronavirus Related Articles",
+      "url": "https://journals.sagepub.com/pb-assets/PDF/SAGE-Publishing_Coronavirus-Related-Articles.pdf",
+      "snippet": "07.03.2020 ... A Model for Undergraduate Medical Student Education in ... Group Satisfaction, and Solidarity in the Face of COVID-19. 2020-10-14."
+    },
+    {
+      "title": "带圈圈的序号1到30 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/248361110890276644.html",
+      "snippet": "1到20的带圈数字符号为： ①、②、③、④、⑤、⑥、⑦、⑧、⑨、⑩ ⑪、⑫、⑬、⑭、⑮、⑯、⑰、⑱、⑲、⑳ 21之后的带圈数字无法直 …"
+    }
+  ]
+}

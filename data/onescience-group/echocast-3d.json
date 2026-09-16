@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/EchoCast-3D",
+  "slug": "onescience-group-echocast-3d",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/EchoCast-3D",
+  "created_at": "2026-09-16T02:24:13.000Z",
+  "updated_at": "2026-09-16T02:24:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "echocast_3d",
+    "OneScience",
+    "Earth Science",
+    "Radar Nowcasting",
+    "Diffusion Model",
+    "3D Radar",
+    "Probabilistic Forecasting",
+    "Severe Convection",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "حكم تصرف المرأة في مهرها دون علم والديها",
+      "url": "https://islamweb.net/ar/fatwa/134567/%D8%AD%D9%83%D9%85-%D8%AA%D8%B5%D8%B1%D9%81-%D8%A7%D9%84%D9%85%D8%B1%D8%A3%D8%A9-%D9%81%D9%8A-%D9%85%D9%87%D8%B1%D9%87%D8%A7-%D8%AF%D9%88%D9%86-%D8%B9%D9%84%D9%85-%D9%88%D8%A7%D9%84%D8%AF%D9%8A%D9%87%D8%A7",
+      "snippet": "يؤكد الفقهاء أن لك الحق في التصرف في مهرك بما يتيح لك المساعدة في إعانة زوجك، حتى لو كان ذلك دون علمهما. تابع لمعرفة المزيد حول حقوق المرأة في المهر وفقاً لما ورد في كتب الفقه."
+    },
+    {
+      "title": "حكم تصرف المرأة في مالها بغير إذن زوجها | هل للمرأة أن تتصرف في مهرها ...",
+      "url": "https://fatawapedia.com/%D9%87%D9%84-%D9%84%D9%84%D9%85%D8%B1%D8%A3%D8%A9-%D8%A7%D9%84%D8%AA%D8%B5%D8%B1%D9%81-%D9%81%D9%8A-%D9%85%D9%87%D8%B1%D9%87%D8%A7-%D8%AF%D9%88%D9%86-%D9%85%D8%B4%D9%88%D8%B1%D8%A9-%D8%B2%D9%88%D8%AC%D9%87%D8%A7-18744",
+      "snippet": "هل يجوز للمرأة أن تتصرف في مالها أو مهرها دون إذن زوجها؟ بيان الحكم الشرعي في استقلال المرأة بمالها، وحدود تصرفها في المهر والهبات والبيع والإنفاق، وبيان ما إذا كان للزوج حق الاعتراض على ذلك."
+    },
+    {
+      "title": "حكم إعطاء المرأة من نفقتها ومالها لأمها دون علم زوجها",
+      "url": "https://islamweb.net/ar/fatwa/427399/%D8%AD%D9%83%D9%85-%D8%A5%D8%B9%D8%B7%D8%A7%D8%A1-%D8%A7%D9%84%D9%85%D8%B1%D8%A3%D8%A9-%D9%85%D9%86-%D9%86%D9%81%D9%82%D8%AA%D9%87%D8%A7-%D9%88%D9%85%D8%A7%D9%84%D9%87%D8%A7-%D9%84%D8%A3%D9%85%D9%87%D8%A7-%D8%AF%D9%88%D9%86-%D8%B9%D9%84%D9%85-%D8%B2%D9%88%D8%AC%D9%87%D8%A7",
+      "snippet": "Sep 8, 2020 · يجوز للابنة إنفاق مالها الخاص أو جزء من مصروفها الذي تحصل عليه من زوجها على أمها دون الحاجة لإخبار الزوج أو الحصول على موافقته. يحق للمرأة التصرف في مالها بحرية …"
+    },
+    {
+      "title": "حق المرأة في التصرف بمالها دون إذن من أحد - دار الإفتاء المصرية",
+      "url": "https://www.dar-alifta.org/ar/fatwa/details/17449/%D8%AD%D9%82-%D8%A7%D9%84%D9%85%D8%B1%D8%A3%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%AA%D8%B5%D8%B1%D9%81-%D8%A8%D9%85%D8%A7%D9%84%D9%87%D8%A7-%D8%AF%D9%88%D9%86-%D8%A5%D8%B0%D9%86-%D9%85%D9%86-%D8%A3%D8%AD%D8%AF",
+      "snippet": "Aug 3, 2026 · تعرف على : حق المرأة في التصرف بمالها دون إذن من أحد، وهل يجب عليها الحصول على إذن زوجها في ذلك. وللمزيد من فتاوى ومقالات دار الإفتاء المصرية ."
+    },
+    {
+      "title": "حكم دفع المرأة مهرها لزوجها - موقع الشيخ ابن باز",
+      "url": "https://binbaz.org.sa/fatwas/2124/%D8%AD%D9%83%D9%85-%D8%AF%D9%81%D8%B9-%D8%A7%D9%84%D9%85%D8%B1%D8%A7%D8%A9-%D9%85%D9%87%D8%B1%D9%87%D8%A7-%D9%84%D8%B2%D9%88%D8%AC%D9%87%D8%A7",
+      "snippet": "ما في بأس، إذا أعطته لا بأس، لكن لا بدّ منه شيء، ولو قليل، لا بدّ أن يعطيها شيئًا؛ لأن الله قال: أَنْ تَبْتَغُوا بِأَمْوَالِكُمْ [النساء:24] فإذا أعطته شيئًا مما تقضى به الحاجة، فرشت البيت ..."
+    }
+  ]
+}

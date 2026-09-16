@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_student_random_numina_qwen14b",
+  "slug": "ishikaa-acquisition_student_random_numina_qwen14b",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_student_random_numina_qwen14b",
+  "created_at": "2026-09-16T02:34:22.000Z",
+  "updated_at": "2026-09-16T02:37:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29551555856,
+  "storage_human": "29.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Liste des cartes de l’extension du JCC Pokémon - Margxt",
+      "url": "https://www.margxt.fr/30e-anniversaire-30c-liste-des-cartes-de-lextension-du-jcc-pokemon/",
+      "snippet": "1 day ago · Découvrez la liste complète des cartes et packs de l’extension 30e Anniversaire (30C) du jeu de cartes Pokémon."
+    },
+    {
+      "title": "Liste des cartes 30 ans Pokémon : les 158 cartes du set",
+      "url": "https://blog.cardzia.fr/liste-cartes-30-ans-pokemon/",
+      "snippet": "Vous trouverez ci-dessous chaque carte, avec son numéro exact, son type, ses PV, son illustrateur et sa version secrète quand elle …"
+    },
+    {
+      "title": "Pokémon 30 ans : le set 30ᵉ Anniversaire, liste des cartes, les 30 ...",
+      "url": "https://xbindr.com/fr/blog/set-pokemon-30-ans",
+      "snippet": "1 day ago · Le set des 30 ans sort partout le 16 septembre 2026 : 128 cartes principales, 30 secrètes, 30 réimpressions à bordure …"
+    },
+    {
+      "title": "Cartes Pokémon 30 ans : liste, raretés et Pikachu | PokéItem",
+      "url": "https://www.pokeitem.fr/blog/carte-pokemon-30-ans-liste-cartes-raretes",
+      "snippet": "Aug 19, 2026 · L'extension des 30 ans du JCC Pokémon compte plus de 160 cartes, dont 100 % sont brillantes - une première …"
+    },
+    {
+      "title": "Guide de l’extension « 30th Celebration » : Liste complète des cartes ...",
+      "url": "https://www.atmos-arena.com/guide-de-lextension-30th-celebration-liste-complete-des-cartes-produits-promotions-et-plus/",
+      "snippet": "6 days ago · Résumé : Le 16 septembre, le TCG Pokémon lancera officiellement l’extension « 30th Celebration » à l’échelle …"
+    }
+  ]
+}

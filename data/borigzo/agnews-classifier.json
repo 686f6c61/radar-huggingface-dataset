@@ -5,7 +5,7 @@
   "author": "borigzo",
   "url": "https://huggingface.co/borigzo/agnews-classifier",
   "created_at": "2026-09-10T11:06:43.000Z",
-  "updated_at": "2026-09-11T12:03:35.000Z",
+  "updated_at": "2026-09-15T04:47:37.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,16 +13,17 @@
   "languages": [],
   "tags": [
     "safetensors",
+    "distilbert",
     "license:mit",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 66955779,
   "parameters_human": "67.0M",
-  "storage_bytes": 267835644,
-  "storage_human": "268 MB",
+  "storage_bytes": 535671288,
+  "storage_human": "536 MB",
   "base_model": null,
   "formats": [
     "safetensors"

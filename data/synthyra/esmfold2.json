@@ -5,7 +5,7 @@
   "author": "Synthyra",
   "url": "https://huggingface.co/Synthyra/ESMFold2",
   "created_at": "2026-05-28T17:40:46.000Z",
-  "updated_at": "2026-08-26T17:13:51.000Z",
+  "updated_at": "2026-09-15T18:29:22.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 223,
+  "downloads_30d": 275,
   "trending_score": 0,
   "parameters": 234822979,
   "parameters_human": "234.8M",

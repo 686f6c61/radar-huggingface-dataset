@@ -4,8 +4,8 @@
   "slug": "nesoai-unlimited-ocr",
   "author": "nesoai",
   "url": "https://huggingface.co/nesoai/Unlimited-OCR",
-  "created_at": "2026-08-18T10:24:22.000Z",
-  "updated_at": "2026-08-18T10:24:22.000Z",
+  "created_at": "2026-09-15T12:40:19.000Z",
+  "updated_at": "2026-09-15T12:40:19.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -41,8 +41,8 @@
   ],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-08-20T11:04:29.896Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -31,12 +31,12 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 416,
-  "downloads_30d": 1446503,
+  "likes": 419,
+  "downloads_30d": 1464847,
   "trending_score": 6,
   "parameters": 134515008,
   "parameters_human": "134.5M",
-  "storage_bytes": 5381816237,
+  "storage_bytes": 5381816330,
   "storage_human": "5.4 GB",
   "base_model": "HuggingFaceTB/SmolLM2-135M",
   "formats": [

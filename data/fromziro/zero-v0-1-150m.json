@@ -5,7 +5,7 @@
   "author": "fromziro",
   "url": "https://huggingface.co/fromziro/Zero-v0.1-150M",
   "created_at": "2026-08-17T02:33:37.000Z",
-  "updated_at": "2026-08-25T01:54:40.000Z",
+  "updated_at": "2026-09-15T15:06:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 16,
-  "downloads_30d": 649,
+  "downloads_30d": 653,
   "trending_score": 8,
   "parameters": 151638208,
   "parameters_human": "151.6M",

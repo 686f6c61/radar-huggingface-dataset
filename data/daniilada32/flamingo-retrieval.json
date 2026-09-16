@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "daniilada32/flamingo-retrieval",
+  "slug": "daniilada32-flamingo-retrieval",
+  "author": "daniilada32",
+  "url": "https://huggingface.co/daniilada32/flamingo-retrieval",
+  "created_at": "2026-09-16T02:34:12.000Z",
+  "updated_at": "2026-09-16T02:34:25.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn",
+      "url": "https://www.linkedin.com/feed/update",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "LinkedIn: Log In or Sign Up",
+      "url": "https://www.linkedin.com/",
+      "snippet": "Take a break and reconnect with your network through quick daily games. With the Open To Work feature, you can privately tell …"
+    },
+    {
+      "title": "LinkedIn: Einloggen oder anmelden",
+      "url": "https://de.linkedin.com/",
+      "snippet": "Mit der #OpenToWork-Funktion können Sie Personaler:innen oder der gesamten LinkedIn Community zeigen, dass Sie offen für …"
+    },
+    {
+      "title": "LinkedIn Login, Einloggen | LinkedIn",
+      "url": "https://www.linkedin.com/login/de",
+      "snippet": "Loggen Sie sich bei LinkedIn ein und bleiben Sie in Kontakt, tauschen Sie Ideen aus und verfolgen Sie Ihre beruflichen Ziele."
+    },
+    {
+      "title": "Old vs. New LinkedIn By Will McTighe | Will McTighe | 362 comments",
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7391111946495913984/",
+      "snippet": "For years, growing on LinkedIn was simple, consistency was enough. But now, more people are catching on. They’re posting more. …"
+    }
+  ]
+}

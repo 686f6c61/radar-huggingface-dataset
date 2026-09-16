@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "nesoai/smollm-energy-extraction",
+  "slug": "nesoai-smollm-energy-extraction",
+  "author": "nesoai",
+  "url": "https://huggingface.co/nesoai/smollm-energy-extraction",
+  "created_at": "2026-09-16T11:43:59.000Z",
+  "updated_at": "2026-09-16T11:44:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:HuggingFaceTB/SmolLM-360M-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:HuggingFaceTB/SmolLM-360M-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3293480,
+  "storage_human": "3 MB",
+  "base_model": "HuggingFaceTB/SmolLM-360M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aktuelle Nachrichten | BILD.de",
+      "url": "https://www.bild.de/",
+      "snippet": "BILD.de: Die Seite 1 für aktuelle Nachrichten und Themen, Bilder und Videos aus den Bereichen News, Wirtschaft, Politik, Show, …"
+    },
+    {
+      "title": "News: Aktuelle Nachrichten und Videos - BILD.de",
+      "url": "https://www.bild.de/news/startseite/news/news-16804530.bild.html",
+      "snippet": "Aktuelle News aus Deutschland, Europa und der Welt. Alle Informationen, Bilder und Videos zu Skandalen, Krisen und Sensationen …"
+    },
+    {
+      "title": "Der Tag bei BILD.de - Schlagzeilen und Bilder des Tages",
+      "url": "https://www.bild.de/schlagzeilen-des-tages/ateaserseite/der-tag-bei-bild/ateaserseite-15480098.bild.html",
+      "snippet": "BILD Der Tag bei BILD.de - Schlagzeilen und Bilder des Tages Newsticker Schlagzeilen des Tages Archiv"
+    },
+    {
+      "title": "SPORT BILD | Sport-Nachrichten | Live Sportergebnisse | Meinungen, …",
+      "url": "https://sportbild.bild.de/",
+      "snippet": "Live Sportergebnisse, Videos & Sportdaten: SPORT BILD online bietet Sport Live-News zu Fußball, Bundesliga und Formel 1. …"
+    },
+    {
+      "title": "Bild (Zeitung) – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Bild_(Zeitung)",
+      "snippet": "Bild (bis in die 1970er-Jahre und umgangssprachlich weiterhin auch Bild-Zeitung) ist die größte täglich erscheinende …"
+    }
+  ]
+}

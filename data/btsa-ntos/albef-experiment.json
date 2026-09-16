@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "btsa-ntos/albef-experiment",
+  "slug": "btsa-ntos-albef-experiment",
+  "author": "btsa-ntos",
+  "url": "https://huggingface.co/btsa-ntos/albef-experiment",
+  "created_at": "2026-09-16T02:00:08.000Z",
+  "updated_at": "2026-09-16T02:00:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Le brevet de technicien supérieur agricole (BTSA), une offre de ...",
+      "url": "https://agriculture.gouv.fr/le-brevet-de-technicien-superieur-agricole-btsa-une-offre-de-formation-riche",
+      "snippet": "Le brevet de technicien supérieur agricole (BTSA) est un diplôme qui prépare à tous les métiers du monde agricole, en couvrant …"
+    },
+    {
+      "title": "BTSA - Brevet de technicien supérieur agricole - ChloroFil.fr",
+      "url": "https://chlorofil.fr/diplomes/secondaire/btsa",
+      "snippet": "Le brevet de technicien supérieur agricole (BTSA), diplôme de niveau 5, permet d'exercer des fonctions de technicien supérieur au …"
+    },
+    {
+      "title": "BTSA : la liste des Brevets de Technicien Supérieur Agricole",
+      "url": "https://www.orientation.com/diplomes/diplome-bts-agricole",
+      "snippet": "Qu'est-ce qu'un BTSA ? Le BTSA, ou Brevet de Technicien Supérieur Agricole, est un diplôme professionnel de niveau III (niveau de …"
+    },
+    {
+      "title": "BTSA gestion et protection de la nature - Onisep",
+      "url": "https://www.onisep.fr/ressources/univers-formation/formations/post-bac/btsa-gestion-et-protection-de-la-nature",
+      "snippet": "Le BTSA gestion et protection de la nature forme à la mise en œuvre de programmes concernant la gestion d'espaces et de …"
+    },
+    {
+      "title": "BTSA agronomie et cultures durables - Onisep",
+      "url": "https://www.onisep.fr/ressources/univers-formation/formations/post-bac/btsa-agronomie-et-cultures-durables",
+      "snippet": "Le BTSA agronomie et cultures durables est accessible avec un bac professionnel agricole, un bac STAV (sciences et technologies …"
+    }
+  ]
+}

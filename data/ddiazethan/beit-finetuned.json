@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ddiazethan/beit-finetuned",
+  "slug": "ddiazethan-beit-finetuned",
+  "author": "ddiazethan",
+  "url": "https://huggingface.co/ddiazethan/beit-finetuned",
+  "created_at": "2026-09-16T02:25:47.000Z",
+  "updated_at": "2026-09-16T02:25:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unabashed and Unashamed - Boners in the wild - Reddit",
+      "url": "https://www.reddit.com/r/BonersInPublic/",
+      "snippet": "Hard Guys in Public Places"
+    },
+    {
+      "title": "Dissertation - Universität des Saarlandes",
+      "url": "https://universaar.uni-saarland.de/bitstream/20.500.11880/38134/2/Dr.Arbeit_Wrublewsky_Ver%C3%B6ffentlichung.pdf",
+      "snippet": "model of diabetes. Diabetologia 56: 382-390, 2013. 46 ... sulfate fine-tuned interleukin (IL)-1 signaling inhibits insulin secretion of grafted pancreatic."
+    },
+    {
+      "title": "Transgender gifs - Reddit",
+      "url": "https://www.reddit.com/r/Tgifs/",
+      "snippet": "Gifs from all your favorite Transgender Women."
+    },
+    {
+      "title": "First-Generation Organic Reaction Intermediates in Zeolite ...",
+      "url": "https://pubs.acs.org/chreay/article/122/18/14275/383629/First-Generation-Organic-Reaction-Intermediates-in",
+      "snippet": "10.08.2022 ... ... fine structure (EXAFS) experiments and theoretical modeling. On the basis of the model, they postulated, adjacent FeIVO and Fe-OOH ..."
+    },
+    {
+      "title": "Comment faire pour télécharger des vidéos sur n'importe quel site",
+      "url": "https://forums.commentcamarche.net/forum/affich-25637287-comment-faire-pour-telecharger-des-videos-sur-n-importe-quel-site",
+      "snippet": "Bonjour, Avant j'avais un plugin ou extension avec firefox qui me permetait de télécharger une vidéo sur n'importe quel site ! c'était …"
+    }
+  ]
+}

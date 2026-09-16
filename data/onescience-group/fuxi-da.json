@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/FuXi-DA",
+  "slug": "onescience-group-fuxi-da",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/FuXi-DA",
+  "created_at": "2026-09-16T02:24:13.000Z",
+  "updated_at": "2026-09-16T02:24:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "fuxi_da",
+    "OneScience",
+    "Earth Science",
+    "Data Assimilation",
+    "Satellite Observations",
+    "Multimodal Fusion",
+    "Weather Forecasting",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "Jan 1, 2025 · ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub."
+    },
+    {
+      "title": "Cast3: Translating numerical weather prediction principles into data ...",
+      "url": "https://arxiv.org/html/2605.01599",
+      "snippet": "Data-driven models trained on reanalysis archives have reached and in some metrics surpassed the large-scale forecast skill of operational NWP, at a fraction of ..."
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
+    },
+    {
+      "title": "GitHub Copilot · Your AI coding agent",
+      "url": "https://github.com/features/copilot",
+      "snippet": "Mar 27, 2026 · GitHub Copilot works every step of the way, from an open issue to reviewing and merging a pull request. Use it in your …"
+    },
+    {
+      "title": "THE CORNERSTONE OF LAW - SSRN",
+      "url": "https://papers.ssrn.com/sol3/Delivery.cfm/7367701.pdf?abstractid=7367701&mirid=1",
+      "snippet": "02.08.2026 ... Nüwa and Fuxi; Fuxi, the first of men. Of all who have come and ... logic to every company wanting \"its own foundation model,\" and so the."
+    }
+  ]
+}

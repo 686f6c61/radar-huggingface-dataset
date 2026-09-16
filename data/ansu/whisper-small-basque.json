@@ -5,7 +5,7 @@
   "author": "Ansu",
   "url": "https://huggingface.co/Ansu/whisper-small-basque",
   "created_at": "2026-07-24T10:24:36.000Z",
-  "updated_at": "2026-08-30T18:45:25.000Z",
+  "updated_at": "2026-09-16T01:13:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 195,
+  "downloads_30d": 197,
   "trending_score": 0,
   "parameters": 241734912,
   "parameters_human": "241.7M",
-  "storage_bytes": 30944945924,
-  "storage_human": "30.9 GB",
+  "storage_bytes": 40614901708,
+  "storage_human": "40.6 GB",
   "base_model": "openai/whisper-small",
   "formats": [
     "safetensors"

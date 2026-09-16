@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "cosmopoia/Alien",
+  "slug": "cosmopoia-alien",
+  "author": "cosmopoia",
+  "url": "https://huggingface.co/cosmopoia/Alien",
+  "created_at": "2026-09-16T02:01:13.000Z",
+  "updated_at": "2026-09-16T02:01:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Investor Relations - IR - Bank Mandiri",
+      "url": "https://www.bankmandiri.co.id/web/ir",
+      "snippet": "Hubungan Investor Pemberian informasi untuk investor mengenai kondisi keuangan dan saham bank mandiri secara terkini, efektif, …"
+    },
+    {
+      "title": "Kinerja Bank Mandiri (BMRI) 8 Bulan 2026: Laba Naik 22,3%",
+      "url": "https://pluang.com/akademi/berita-analisis/kinerja-bank-mandiri-8-bulan",
+      "snippet": "8M26 adalah istilah yang merujuk pada kinerja keuangan bank only (tidak terkonsolidasi dengan anak usaha) milik Bank Mandiri …"
+    },
+    {
+      "title": "Laporan Keuangan Bank Mandiri (BMRI) Awal Tahun 2026, Nilai Aset …",
+      "url": "https://www.suara.com/bisnis/2026/02/23/113801/laporan-keuangan-bank-mandiri-bmri-awal-tahun-2026-nilai-aset-naik-drastis",
+      "snippet": "Feb 23, 2026 · Suara.com - Bank Mandiri (BMRI) mencatatkan kinerja yang solid pada awal 2026, mempertegas perannya sebagai …"
+    },
+    {
+      "title": "Laporan Keuangan Bank Mandiri (BMRI) Awal Tahun 2026, Nilai Aset …",
+      "url": "https://id.headtopics.com/news/laporan-keuangan-bank-mandiri-bmri-awal-tahun-2026-nilai-80122179",
+      "snippet": "Feb 23, 2026 · ) mencatatkan kinerja yang solid pada awal 2026, mempertegas perannya sebagai mitra strategis pemerintah dalam …"
+    },
+    {
+      "title": "Laba Bank Mandiri (BMRI) Melesat 16,25% di Januari 2026, Ini …",
+      "url": "https://keuangan.kontan.co.id/news/laba-bank-mandiri-bmri-melesat-1625-di-januari-2026-ini-penjelasan-manajemen",
+      "snippet": "Feb 23, 2026 · PT Bank Mandiri Tbk (BMRI) mencatatkan kinerja positif pada awal tahun 2026. Laba bersih BMRI periode Januari …"
+    }
+  ]
+}

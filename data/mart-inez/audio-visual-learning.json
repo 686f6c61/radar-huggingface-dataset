@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mart-INEZ/audio-visual-learning",
+  "slug": "mart-inez-audio-visual-learning",
+  "author": "mart-INEZ",
+  "url": "https://huggingface.co/mart-INEZ/audio-visual-learning",
+  "created_at": "2026-09-16T02:52:03.000Z",
+  "updated_at": "2026-09-16T02:52:09.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "audio-visual-learning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "POP MART Official",
+      "url": "https://www.popmart.com/fr",
+      "snippet": "Created by contemporary artist Lang, Hirono is a complex character. Through Hirono Lang aims to highlight the subtle fluctuations of …"
+    },
+    {
+      "title": "Tailored Design of Audio-Visual Speech Recognition Models using ...",
+      "url": "https://arxiv.org/abs/2407.06606",
+      "snippet": "09.07.2024 ... To be more precise, the proposed framework consists of two steps: first, estimating audio- and video-only systems, and then designing a tailored ..."
+    },
+    {
+      "title": "Shop K-Mart",
+      "url": "https://shop.k-mart.fr/",
+      "snippet": ""
+    },
+    {
+      "title": "POP MART Official",
+      "url": "https://www.popmart.com/fr/store-list",
+      "snippet": "POP MART Official ... POP MART"
+    },
+    {
+      "title": "Deep Learning for Black-Box Modeling of Audio Effects - MDPI",
+      "url": "https://www.mdpi.com/2076-3417/10/2/638",
+      "snippet": "We analyse different state-of-the-art deep learning models based on convolutional and recurrent neural networks, feedforward WaveNet architectures and we also ..."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/Delta-HBV",
+  "slug": "onescience-group-delta-hbv",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/Delta-HBV",
+  "created_at": "2026-09-16T02:25:41.000Z",
+  "updated_at": "2026-09-16T02:25:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "delta_hbv",
+    "OneScience",
+    "Earth Science",
+    "Hydrology",
+    "Differentiable Physics",
+    "Ungauged Basins",
+    "Climate Trends",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft OneNote 在哪里下载？ - 知乎",
+      "url": "https://www.zhihu.com/question/19874329",
+      "snippet": "今天试了好多下载程序都不行，官网亲测有效： Microsoft OneNote ，只是安装时间比较长需要耐心等待。"
+    },
+    {
+      "title": "Obsidian和思源笔记现在推荐哪个？ - 知乎",
+      "url": "https://www.zhihu.com/question/587284718",
+      "snippet": "能问出这个问题的人，基本上不会是Notion之类数据库笔记用户，估摸着大多是Onenote、印象笔记用户，不然自己就知道直接去攻 …"
+    },
+    {
+      "title": "打印时显示需要打开onenote是什么情况-百度经验",
+      "url": "https://jingyan.baidu.com/article/6dad50754b82eea122e36e7d.html",
+      "snippet": "Jun 11, 2019 · 打印时显示需要打开onenote是什么情况,我们在widow系统打印文档的时候会弹出必须先运行oeote的提示，出现这种情 …"
+    },
+    {
+      "title": "现在是不是下载不到完整版的OneNote了？ - 知乎",
+      "url": "https://www.zhihu.com/question/315020684",
+      "snippet": "随着OneNote 退出office，x86和x86_64版本的OneNote也不再拥有功能上的更新，并且微软开始主推OneNote UWP（在Microsoft …"
+    },
+    {
+      "title": "桌面便签哪个软件好用？求几款便签软件推荐？ - 知乎",
+      "url": "https://www.zhihu.com/question/484008212",
+      "snippet": "除了电脑桌面端，在手机端下载安装OneNote应用，就可以在底部菜单中找到它。 新版的移动端Microsoft Office应用中也有它的身 …"
+    }
+  ]
+}

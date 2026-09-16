@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "ChristopherLi/voyage-student-1-5b-dayfill",
+  "slug": "christopherli-voyage-student-1-5b-dayfill",
+  "author": "ChristopherLi",
+  "url": "https://huggingface.co/ChristopherLi/voyage-student-1-5b-dayfill",
+  "created_at": "2026-09-16T02:50:46.000Z",
+  "updated_at": "2026-09-16T03:30:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "text-generation",
+    "qwen2.5",
+    "travel",
+    "tool-use",
+    "ollama",
+    "sft",
+    "trip-planner",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 4084936736,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Focus restylée - Pb trappe a essence - Forum-Auto",
+      "url": "https://forum-auto.caradisiac.com/topic/73966-focus-restyl%C3%A9e-pb-trappe-a-essence/",
+      "snippet": "May 25, 2008 · Bonjour, Oui c'est normal, sur la nouvelle Focus la trappe ne se verrouille pas. Le système Easy Fuel a été, semble-t …"
+    },
+    {
+      "title": "PVP STATS : Focus, Resilience, Toughness and Defense ignore",
+      "url": "https://www.reddit.com/r/archeage/comments/2sn0ap/pvp_stats_focus_resilience_toughness_and_defense/",
+      "snippet": "Jan 16, 2015 · Focus does effect your ranged attacks in the sense that if the opponent is a dual wielder and have the dual wield …"
+    },
+    {
+      "title": "相机 大光圈 f1.2、f1.4、f1.8、f2.8 的效果相差多少? - 知乎",
+      "url": "https://www.zhihu.com/question/50706271",
+      "snippet": "可以通过焦外和光斑看出光圈越大的虚化效果越明显，越来越有空气剥离感，不知道你有没有注意到，随着光圈变大光斑被机身卡口切 …"
+    },
+    {
+      "title": "Refroidisseur d'huile Focus - Focus - Ford - Forum Marques Automobile",
+      "url": "https://forum-auto.caradisiac.com/topic/120861-refroidisseur-dhuile-focus/",
+      "snippet": "Oct 19, 2009 · Moi aussi j'ai de graves problèmes avec Ford, ma focus tdci 100cv, il y a un an \" volant moteur à 64000km (2138€), …"
+    },
+    {
+      "title": "Thinking of withdrawing support from FOCUS, appreciate any insight",
+      "url": "https://www.reddit.com/r/Catholicism/comments/4fvdq8/thinking_of_withdrawing_support_from_focus/",
+      "snippet": "Apr 21, 2016 · FOCUS does great things for the Church and has had helped foster numerous men and women to the priesthood and …"
+    }
+  ]
+}

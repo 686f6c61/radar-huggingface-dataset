@@ -5,7 +5,7 @@
   "author": "AmericanoLatte",
   "url": "https://huggingface.co/AmericanoLatte/Lorin_Krea_Lora",
   "created_at": "2026-08-02T09:29:05.000Z",
-  "updated_at": "2026-09-14T05:33:14.000Z",
+  "updated_at": "2026-09-15T23:40:10.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 691,
+  "downloads_30d": 793,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

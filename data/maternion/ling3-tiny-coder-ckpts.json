@@ -5,7 +5,7 @@
   "author": "maternion",
   "url": "https://huggingface.co/maternion/ling3-tiny-coder-ckpts",
   "created_at": "2026-09-01T09:51:25.000Z",
-  "updated_at": "2026-09-15T04:38:20.000Z",
+  "updated_at": "2026-09-15T15:14:42.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -18,12 +18,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 1811,
+  "downloads_30d": 1824,
   "trending_score": 0,
   "parameters": 7893392800,
   "parameters_human": "7.89B",
-  "storage_bytes": 249460743262,
-  "storage_human": "249.5 GB",
+  "storage_bytes": 253969716318,
+  "storage_human": "254.0 GB",
   "base_model": null,
   "formats": [
     "gguf"

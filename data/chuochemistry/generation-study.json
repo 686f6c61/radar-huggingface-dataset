@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "chuochemistry/generation-study",
+  "slug": "chuochemistry-generation-study",
+  "author": "chuochemistry",
+  "url": "https://huggingface.co/chuochemistry/generation-study",
+  "created_at": "2026-09-16T02:56:48.000Z",
+  "updated_at": "2026-09-16T02:56:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/",
+      "snippet": "Encore plus » Account Options. Connexion; Paramètres de recherche"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=fr",
+      "snippet": "Publicité À propos de Google Google.com in English © 2026 - Confidentialité - Conditions"
+    },
+    {
+      "title": "Téléchargez Google Chrome, le navigateur plus sécurisé et encore …",
+      "url": "https://www.google.com/intl/fr/chrome/",
+      "snippet": "Gagnez en efficacité grâce au nouveau Chrome, un navigateur Internet plus simple, plus sécurisé et encore plus rapide grâce aux …"
+    },
+    {
+      "title": "Molecular Design with Artificial Intelligence: Progress and ...",
+      "url": "https://pubs.acs.org/chreay/article/126/5/3007/5080749/Molecular-Design-with-Artificial-Intelligence",
+      "snippet": "01.03.2026 ... Currently, chemistry is about to make a significant leap forward by integrating generative artificial intelligence (AI). In 2016, deep learning ..."
+    },
+    {
+      "title": "Google",
+      "url": "http://www.google.gp/?hl=fr",
+      "snippet": "Google disponible en : English Publicité À propos de Google Google.com"
+    }
+  ]
+}

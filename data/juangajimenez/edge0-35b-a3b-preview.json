@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Juangajimenez/Edge0-35B-A3B-preview",
+  "slug": "juangajimenez-edge0-35b-a3b-preview",
+  "author": "Juangajimenez",
+  "url": "https://huggingface.co/Juangajimenez/Edge0-35B-A3B-preview",
+  "created_at": "2026-09-16T02:08:41.000Z",
+  "updated_at": "2026-09-16T02:08:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "moe",
+    "edge-inference",
+    "prerouter",
+    "lora",
+    "ssd-offload",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 19731249723,
+  "storage_human": "19.7 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mise en forme conditionnelle Excel : guide complet 2026",
+      "url": "https://tutosurexcel.com/mise-en-forme-conditionnelle-excel/",
+      "snippet": "Dans ce guide, tu vas apprendre à utiliser toutes les options de la mise en forme conditionnelle (abrégée MFC) : des règles intégrées …"
+    },
+    {
+      "title": "Formation Excel : mise en forme conditionnelle",
+      "url": "https://excel-pratique.com/fr/formation-excel/mise-en-forme-conditionnelle",
+      "snippet": "Ajouter une mise en forme conditionnelle Pour appliquer une MFC au tableau suivant (lecon-8.xlsx), sélectionnez la plage de cellules …"
+    },
+    {
+      "title": "Appliquer la mise en forme conditionnelle pour faire ressortir des ...",
+      "url": "https://support.microsoft.com/fr-fr/excel/use-conditional-formatting-to-highlight-information-in-excel",
+      "snippet": "Comment utiliser la mise en forme conditionnelle dans Excel pour découvrir, analyser et identifier des tendances et des modèles de …"
+    },
+    {
+      "title": "Mise en forme conditionnelle Excel : guide complet avec exemples",
+      "url": "https://www.cours-bureautique.fr/mise-en-forme-conditionnelle-excel/",
+      "snippet": "Apprenez la mise en forme conditionnelle dans Excel : règles de base, formules, doublons, barres de données, gestion des règles et …"
+    },
+    {
+      "title": "Mise en Forme Conditionnelle Excel Formule : Guide Complet 2025 …",
+      "url": "https://www.exceleur.fr/excel-mise-en-forme-conditionnelle/",
+      "snippet": "Jul 24, 2024 · De la simple formule mise en forme conditionnelle aux combinaisons complexes avec les fonctions ET et OU, vous …"
+    }
+  ]
+}

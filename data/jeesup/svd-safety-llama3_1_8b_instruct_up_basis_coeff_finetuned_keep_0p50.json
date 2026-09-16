@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-llama3_1_8b_instruct_up_basis_coeff_finetuned_keep_0p50",
+  "slug": "jeesup-svd-safety-llama3_1_8b_instruct_up_basis_coeff_finetuned_keep_0p50",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-llama3_1_8b_instruct_up_basis_coeff_finetuned_keep_0p50",
+  "created_at": "2026-09-16T02:08:43.000Z",
+  "updated_at": "2026-09-16T05:52:19.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "basis-sharing",
+    "compression",
+    "low-rank",
+    "safety",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16103204756,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Półka ścienna na książki Kolor biały - SINSAY - 424JO-00X",
+      "url": "https://www.sinsay.com/pl/pl/polka-scienna-na-ksiazki-424jo-00x?msockid=1cd76991d0b86fae1bb07e47d1ce6ecb",
+      "snippet": "Półka ścienna na książki, test - max-price, biały."
+    },
+    {
+      "title": "Wandregal für Bücher Farbe Grün - SINSAY - 424JO-79X",
+      "url": "https://www.sinsay.com/de/de/wandregal-fur-bucher-424jo-79x?msockid=1cd76991d0b86fae1bb07e47d1ce6ecb",
+      "snippet": "Süßes Regal, aber schlechte Qualität, nicht alle Teile passen zusammen. Es hat eine maximale Ladekapazität von 2 kg. Die Regale …"
+    },
+    {
+      "title": "Nástěnná polička na knihy Barva bílá - SINSAY - 424JO-00X",
+      "url": "https://www.sinsay.com/cz/cz/nastenna-policka-na-knihy-424jo-00x?msockid=1cd76991d0b86fae1bb07e47d1ce6ecb",
+      "snippet": "Nástěnná polička na knihy, Nábytek, bílá. 🌟 Inspirace 🔴 Až -50% VÝPRODEJ 🌞 Letní šatník 🪁 Letní aktivity 🔥 Trendy žena 🏠 Trendy …"
+    },
+    {
+      "title": "Wandregal für Bücher Farbe Hellblau - SINSAY - 424JO-50X",
+      "url": "https://www.sinsay.com/de/de/wandregal-fur-bucher-424jo-50x?msockid=1cd76991d0b86fae1bb07e47d1ce6ecb",
+      "snippet": "Noch mehr, noch günstiger! 🤩 Sale bis zu -50% 💛 Jetzt Vorteile nutzen >> Deutschland (Germany) Empfohlen ; Damen ; Home ; Kind ; …"
+    },
+    {
+      "title": "Nástěnná polička na knihy Barva tmavě zelená - SINSAY - 424JO-79X",
+      "url": "https://www.sinsay.com/cz/cz/nastenna-policka-na-knihy-424jo-79x?msockid=1cd76991d0b86fae1bb07e47d1ce6ecb",
+      "snippet": "Nástěnná polička na knihy Barva tmavě zelená - SINSAY - 424JO-79X. K používání těchto stránek musíte mít aktivní javascript. …"
+    }
+  ]
+}

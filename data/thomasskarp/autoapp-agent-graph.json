@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "thomasskarp/autoapp-agent-graph",
+  "slug": "thomasskarp-autoapp-agent-graph",
+  "author": "thomasskarp",
+  "url": "https://huggingface.co/thomasskarp/autoapp-agent-graph",
+  "created_at": "2026-09-16T01:54:56.000Z",
+  "updated_at": "2026-09-16T01:54:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "nextjs",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "nextjs",
+    "agent",
+    "agent-graph",
+    "state-machine",
+    "multi-agent-orchestration",
+    "gemini-2.5-flash",
+    "zod",
+    "system-design",
+    "production-ai",
+    "text-generation",
+    "en",
+    "es",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "Download & use Google Translate",
+      "url": "https://support.google.com/translate/answer/6350850?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can translate text, handwriting, photos, and speech in over 200 languages with the Google Translate app. You can also use …"
+    },
+    {
+      "title": "Microsoft Rewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/",
+      "snippet": "We are not associated with Microsoft and are a community driven group to help maximize earning points."
+    },
+    {
+      "title": "Change Google Translate dropdown programmatically",
+      "url": "https://stackoverflow.com/questions/5569927/change-google-translate-dropdown-programmatically",
+      "snippet": "Apr 6, 2011 · When you select from the dropdown that the google script inserts, a Google Translate bar appears at the top of the …"
+    },
+    {
+      "title": "translate a PHP $string using google translator API",
+      "url": "https://stackoverflow.com/questions/4640378/translate-a-php-string-using-google-translator-api",
+      "snippet": "been google'ing for a while how is the best way to translate with google translator in PHP, found very different ways converting URLS, …"
+    }
+  ]
+}

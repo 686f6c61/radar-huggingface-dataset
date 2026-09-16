@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "neuroX3/H6-Guard-Merged-v1",
+  "slug": "neurox3-h6-guard-merged-v1",
+  "author": "neuroX3",
+  "url": "https://huggingface.co/neuroX3/H6-Guard-Merged-v1",
+  "created_at": "2026-09-16T02:02:57.000Z",
+  "updated_at": "2026-09-16T02:02:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "macOS – Wikipedia, wolna encyklopedia",
+      "url": "https://pl.wikipedia.org/wiki/MacOS",
+      "snippet": "Apple wydało tę podstawę jako otwarty system operacyjny Darwin, który po dodaniu licznych komponentów własnościowych, np. …"
+    },
+    {
+      "title": "Historia macOS – Wikipedia, wolna encyklopedia",
+      "url": "https://pl.wikipedia.org/wiki/Historia_macOS",
+      "snippet": "W 2016 roku zmieniono nazwę systemu na macOS, który powstał ze względu na unifikację środowiska i nazewnictwa pasującego do …"
+    },
+    {
+      "title": "Systemy operacyjne Mac w kolejności (historia macOS)",
+      "url": "https://pl.whileint.com/tech/viki/mac-operating-systems-in-order-macos-history.html",
+      "snippet": "Nov 9, 2024 · Podróż rozpoczęła się od klasycznego systemu Mac OS i trwała do znanego dzisiaj systemu macOS opartego na …"
+    },
+    {
+      "title": "Wszystkie wersje macOS – historia systemu Apple od najstarszej do ...",
+      "url": "https://netbe.pl/wszystkie-wersje-macos-historia-systemu-apple-od-najstarszej-do-najnowszej/",
+      "snippet": "Mar 22, 2026 · System operacyjny macOS (wcześniej Mac OS X i OS X) to jeden z najważniejszych i najbardziej rozpoznawalnych …"
+    },
+    {
+      "title": "Każdy system operacyjny Mac w kolejności (1984-2026)",
+      "url": "https://pl.mac-os.org/?p=19081",
+      "snippet": "Opowiem Ci trochę o każdej aktualizacji macOS oraz o rodzajach oprogramowania Mac, które istniały przed przejściem na macOS w …"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "0xSojalSec/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2-GGUF",
+  "slug": "0xsojalsec-qwen3-8-27b-efficientthink-uncensored-k3-opus5-grok4-6-gpt5-6sol-sft-simpo-dflash2-gguf",
+  "author": "0xSojalSec",
+  "url": "https://huggingface.co/0xSojalSec/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2-GGUF",
+  "created_at": "2026-09-16T02:07:40.000Z",
+  "updated_at": "2026-09-16T02:07:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3.8",
+    "efficient-thinking",
+    "dflash2",
+    "speculative-decoding",
+    "mtp",
+    "llama.cpp",
+    "q2-lynnstyle",
+    "mixed-precision",
+    "gsq-rco",
+    "gsq",
+    "iq",
+    "rco",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1924404480,
+  "parameters_human": "1.92B",
+  "storage_bytes": 132289075619,
+  "storage_human": "132.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RealLifeCam (RLC) - Real Life 24/7",
+      "url": "https://reallifecam.com/",
+      "snippet": "Unique project since 2011. The private life of other people live 24/7"
+    },
+    {
+      "title": "RealLifeCam - RLC Replay",
+      "url": "https://replay.reallifecam.com/",
+      "snippet": "Watch 24-hour recordings of your favorite cams on RLC Replay."
+    },
+    {
+      "title": "RealLifeCam - RLC Remote",
+      "url": "https://remote.reallifecam.com/",
+      "snippet": "RLC Remote Tool. Control RealLifeCam big screen from your mobile"
+    },
+    {
+      "title": "RLC My Collection - RealLifeCam",
+      "url": "https://collection.reallifecam.com/?from=bar",
+      "snippet": "The price depends on the length of the selected video. Minimum price is 20 Reals (up to 20 minutes of video). Every next 10 minutes …"
+    },
+    {
+      "title": "RLC Replay - Savaira, Medusa, Nix - RealLifeCam",
+      "url": "https://replay.reallifecam.com/de/view/20_7",
+      "snippet": "RLC Replay allows you to watch videos recorded by all cameras in the past 24 hours (up to 10 days while your subscription …"
+    }
+  ]
+}

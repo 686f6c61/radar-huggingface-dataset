@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/arb-arab-100mb-ppt-Dp-100mb_seed10",
+  "slug": "fpadovani-arb-arab-100mb-ppt-dp-100mb_seed10",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/arb-arab-100mb-ppt-Dp-100mb_seed10",
+  "created_at": "2026-09-16T11:35:44.000Z",
+  "updated_at": "2026-09-16T11:41:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/arb_arab_100mb",
+    "base_model:finetune:goldfish-models/arb_arab_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 1997869519,
+  "storage_human": "2.0 GB",
+  "base_model": "goldfish-models/arb_arab_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "List of CDK 4/6 inhibitors + Uses, Types & Side Effects - Drugs.com",
+      "url": "https://www.drugs.com/drug-class/cdk-4-6-inhibitors.html",
+      "snippet": "CDK4/6 inhibitors are a class of drugs that target particular enzymes, called CDK4 and CDK6. CDK stands for cyclin-dependent …"
+    },
+    {
+      "title": "Dosing CDK 4/6 Inhibitors - OncLive",
+      "url": "https://www.onclive.com/view/dosing-cdk-4-6-inhibitors",
+      "snippet": "Jul 20, 2023 · Rachel Layman, MD, summarizes how to dose CDK4/6 inhibitors in different clinical settings."
+    },
+    {
+      "title": "FDA-Approved CDK4/6 Inhibitors for Early and Metastatic Breast Cancer",
+      "url": "https://www.pharmacytimes.com/view/fda-approved-cdk4-6-inhibitors-for-early-and-metastatic-breast-cancer",
+      "snippet": "Sep 25, 2025 · Panelists discuss how FDA-approved CDK4/6 inhibitors are used in early breast cancer (abemaciclib and ribociclib …"
+    },
+    {
+      "title": "CDK4/6 Inhibitor Dose Adjustments: Clinical Scenarios and Impact on ...",
+      "url": "https://www.pharmacytimes.com/view/cdk4-6-inhibitor-dose-adjustments-clinical-scenarios-and-impact-on-outcomes",
+      "snippet": "Apr 8, 2026 · Learn how CDK4/6 inhibitor schedules vary and how pharmacists boost adherence, manage nausea, labs, QTc, and …"
+    },
+    {
+      "title": "CDK4/6 Inhibitors for Metastatic Breast Cancer - Susan G. Komen®",
+      "url": "https://www.komen.org/breast-cancer/metastatic/metastatic/cdk4-6-inhibitors-for-metastatic-breast-cancer/",
+      "snippet": "Jul 17, 2026 · CDK4/6 inhibitors are drugs designed to interrupt the growth of cancer cells. CDK4/6 inhibitors are used in combination …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "ApolloRaines",
   "url": "https://huggingface.co/ApolloRaines/Prometheus-Qwen2.5-7B-Instruct",
   "created_at": "2026-09-08T19:35:35.000Z",
-  "updated_at": "2026-09-08T20:59:49.000Z",
+  "updated_at": "2026-09-15T14:12:25.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 548,
+  "downloads_30d": 555,
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",

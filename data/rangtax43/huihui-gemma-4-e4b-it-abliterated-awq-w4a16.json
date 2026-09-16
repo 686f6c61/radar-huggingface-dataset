@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "rangtax43/Huihui-gemma-4-E4B-it-abliterated-AWQ-W4A16",
+  "slug": "rangtax43-huihui-gemma-4-e4b-it-abliterated-awq-w4a16",
+  "author": "rangtax43",
+  "url": "https://huggingface.co/rangtax43/Huihui-gemma-4-E4B-it-abliterated-AWQ-W4A16",
+  "created_at": "2026-09-16T02:15:47.000Z",
+  "updated_at": "2026-09-16T02:46:20.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "gemma-4",
+    "abliterated",
+    "uncensored",
+    "awq",
+    "quantized",
+    "text-generation",
+    "compressed-tensors",
+    "conversational",
+    "en",
+    "es",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7941100874,
+  "parameters_human": "7.94B",
+  "storage_bytes": 10131421254,
+  "storage_human": "10.1 GB",
+  "base_model": "huihui-ai/gemma-4-E4B-it-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Auto diversen te koop met scherpe prijzen | 2dehands",
+      "url": "https://www.2dehands.be/l/auto-diversen/aanhangers-en-bagagewagens/",
+      "snippet": "Beste kwaliteit vanaf €800 incl. 21% Btw beste prijs van belgië en nederland! Vindt u elders een lagere prijs?"
+    },
+    {
+      "title": "aanhangwagen kopen of verkopen - Aanhangers en Bagagewagens | 2dehands",
+      "url": "https://www.2dehands.be/l/auto-diversen/aanhangers-en-bagagewagens/q/aanhangwagen/",
+      "snippet": "Beste kwaliteit vanaf €800 incl. 21% Btw beste prijs van belgië en nederland! Vindt u elders een lagere prijs? Laat het ons weten en …"
+    },
+    {
+      "title": "Aanhangwagen kopen, aanhanger tegen de beste prijzen - Auto5",
+      "url": "https://www.auto5.be/nl/c/48023-aanhangwagens.html",
+      "snippet": "Ontdek ons ruime aanbod aanhangwagens en bestel in enkele klikken. Binnen 1u beschikbaar in je dichtstbijzijnde Auto5-center."
+    },
+    {
+      "title": "Diverse soorten Aanhangers - 150+ Op Voorraad - VDVTrailers",
+      "url": "https://vdvtrailers.be/aanhangwagens",
+      "snippet": "Uw betrouwbare partner in verkoop , installatie van trekhaken, onderhoud en reparaties , naast een divers assortiment aan …"
+    },
+    {
+      "title": "Tweedehands aanhangers te koop - aanhangers occasion kopen",
+      "url": "https://www.autoscout24.be/nl/auto/aanhangers/?msockid=205b1a2a5dd26eaa29d40dfc5c086fcd",
+      "snippet": "Aanhangwagens voor personenauto’s worden ingedeeld op basis van gewicht, type van de as of assen, en de functie van de …"
+    }
+  ]
+}

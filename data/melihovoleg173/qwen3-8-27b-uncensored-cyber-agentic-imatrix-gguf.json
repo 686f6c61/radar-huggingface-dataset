@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "melihovoleg173/Qwen3.8-27B-Uncensored-Cyber-agentic-imatrix-GGUF",
+  "slug": "melihovoleg173-qwen3-8-27b-uncensored-cyber-agentic-imatrix-gguf",
+  "author": "melihovoleg173",
+  "url": "https://huggingface.co/melihovoleg173/Qwen3.8-27B-Uncensored-Cyber-agentic-imatrix-GGUF",
+  "created_at": "2026-09-16T11:27:28.000Z",
+  "updated_at": "2026-09-16T11:27:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "imatrix",
+    "quantized",
+    "agentic",
+    "qwen3",
+    "llama.cpp",
+    "v100",
+    "uncensored",
+    "abliterated",
+    "cyber",
+    "image-text-to-text",
+    "base_model:philbert440/Qwen3.8-27B-Uncensored-Cyber",
+    "base_model:quantized:philbert440/Qwen3.8-27B-Uncensored-Cyber",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3391984,
+  "parameters_human": "3.4M",
+  "storage_bytes": 32596672672,
+  "storage_human": "32.6 GB",
+  "base_model": "philbert440/Qwen3.8-27B-Uncensored-Cyber",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Télécharger Windows 7 gratuitement pour remplacer Vista",
+      "url": "https://forums.commentcamarche.net/forum/affich-34781040-telecharger-windows-7-gratuitement-pour-remplacer-vista",
+      "snippet": "Aug 10, 2017 · Bonjour, est il possible de télécharger windows7 gratuitement pour remplacer vista, car j'ai un pc portable que je …"
+    },
+    {
+      "title": "Hướng dẫn mua ống kính \"pancake\" - có những ống nào trên thị trường?",
+      "url": "https://tinhte.vn/thread/huong-dan-mua-ong-kinh-pancake-co-nhung-ong-nao-tren-thi-truong.2987661/",
+      "snippet": "Jul 18, 2019 · Ống kính \"Pancake\" không phải là nhãn ống kính, mà là cái tên người ta đặt cho chúng vì yếu tố thiết kế rất mỏng, gần …"
+    },
+    {
+      "title": "Tổng hợp các bản Firmware của Android TV Box TX3 mini",
+      "url": "https://tinhte.vn/thread/tong-hop-cac-ban-firmware-cua-android-tv-box-tx3-mini.3022766/",
+      "snippet": "May 10, 2019 · Chào các bạn TX3 mini có thể nói là model Android TV Box hiện tại có số lượng bán ra nhiều nhất thị trường. Trong 1 …"
+    },
+    {
+      "title": "Supprimer les marges lors de l'impression - Forum Graphisme",
+      "url": "https://forums.commentcamarche.net/forum/affich-16101548-supprimer-les-marges-lors-de-l-impression",
+      "snippet": "sans marge, tu auras toujours un leger bord blanc sur chaque coté (généralement de 0.3 a 0.5 mm) sauf si imprimante vraiment …"
+    },
+    {
+      "title": "Tinhte.vn - Chuyên trang máy tính - PC Home",
+      "url": "https://pc.tinhte.vn/",
+      "snippet": "Chuyên trang máy tính & laptop của Tinhte.vn: Review PC, gaming gear, cẩm nang mua sắm và lắp ráp máy tính, hướng dẫn sử …"
+    }
+  ]
+}

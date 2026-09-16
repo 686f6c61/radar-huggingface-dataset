@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/Climate2Weather",
+  "slug": "onescience-group-climate2weather",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/Climate2Weather",
+  "created_at": "2026-09-16T02:25:41.000Z",
+  "updated_at": "2026-09-16T02:25:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "climate2weather",
+    "OneScience",
+    "Earth Science",
+    "Climate Downscaling",
+    "Diffusion",
+    "Probabilistic Forecasting",
+    "Coherence",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SFR Mail - La Communauté SFR",
+      "url": "https://la-communaute.sfr.fr/t5/sfr-mail/bd-p/SFR-Mail",
+      "snippet": "Sep 1, 2026 · Connexion au mail depuis des applications tierces 05/08/2026 | Posté dans SFR Mail Réponse certifiée par SFR par …"
+    },
+    {
+      "title": "RED by SFR - Mon compte client - Infos & Questions",
+      "url": "https://communaute.red-by-sfr.fr/t5/Mon-compte-client/bd-p/forum-compte-client",
+      "snippet": "Sep 8, 2026 · Posez toutes vos questions sur nos services en ligne et l’appli RED & Moi"
+    },
+    {
+      "title": "Comment accéder à ma boîte mail SFR - La Communauté SFR",
+      "url": "https://la-communaute.sfr.fr/t5/sfr-mail/comment-acc%C3%A9der-%C3%A0-ma-bo%C3%AEte-mail-sfr/td-p/2312731",
+      "snippet": "Aug 6, 2021 · Il suffit de cliquer sur \" Je souhaite accéder à SFR Mail depuis mon ordinateur \" ou \" Je souhaite accéder à SFR Mail …"
+    },
+    {
+      "title": "Utiliser une adresse @sfr en 2026 = impossible - RED by SFR",
+      "url": "https://communaute.red-by-sfr.fr/t5/Mon-compte-client/Utiliser-une-adresse-sfr-en-2026-impossible/td-p/621829",
+      "snippet": "May 26, 2026 · Compte SFR Mail inaccessible Conformément aux Conditions Générales d’Utilisation, la boîte mail …"
+    },
+    {
+      "title": "Transfer dossier mail SFR vers ordinateur - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-34734833-transfer-dossier-mail-sfr-vers-ordinateur",
+      "snippet": "Jul 19, 2017 · Transfer dossier mail SFR vers ordinateur Clé usb Aurélie - Modifié le 19 juil. 2017 à 15:20 Utilisateur anonyme - 19 juil. …"
+    }
+  ]
+}

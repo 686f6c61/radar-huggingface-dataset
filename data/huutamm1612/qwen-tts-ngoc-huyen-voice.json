@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "huutamm1612/qwen-tts-ngoc-huyen-voice",
+  "slug": "huutamm1612-qwen-tts-ngoc-huyen-voice",
+  "author": "huutamm1612",
+  "url": "https://huggingface.co/huutamm1612/qwen-tts-ngoc-huyen-voice",
+  "created_at": "2026-09-16T02:33:14.000Z",
+  "updated_at": "2026-09-16T08:40:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_tts",
+    "qwen3-tts",
+    "vietnamese",
+    "custom-voice",
+    "text-to-speech",
+    "vi",
+    "base_model:g-group-ai-lab/gwen-tts-0.6B",
+    "base_model:finetune:g-group-ai-lab/gwen-tts-0.6B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 905788672,
+  "parameters_human": "905.8M",
+  "storage_bytes": 2506880912,
+  "storage_human": "2.5 GB",
+  "base_model": "g-group-ai-lab/gwen-tts-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Toutes les journées mondiales présentes dans www.journee-mondiale…",
+      "url": "https://www.journee-mondiale.com/les-journees-mondiales.htm",
+      "snippet": "Jan 6, 2026 · La liste complète de toutes les journées du site. Découvrez en un coup d'oeil celles qui sont célébrées en ce moment."
+    },
+    {
+      "title": "Calendrier des journées mondiales | Journée mondiale",
+      "url": "https://journee-mondiale.eu/calendrier-journees-mondiales",
+      "snippet": "Apr 3, 2026 · Calendrier complet des journées mondiales, internationales et nationales : dates officielles ONU, initiatives …"
+    },
+    {
+      "title": "Liste des journées et semaines internationales | Nations Unies",
+      "url": "https://www.un.org/fr/observances/list-days-weeks",
+      "snippet": "Jan 28, 2026 · Journée internationale pour le droit à la vérité en ce qui concerne les violations flagrantes des droits de l’homme et …"
+    },
+    {
+      "title": "Journées mondiales et internationales : le calendrier de l’année",
+      "url": "https://www.calendrier-evenement.fr/journees-mondiales",
+      "snippet": "2 days ago · Toutes les journées mondiales de l’année, mois par mois et par thème : environnement, santé, famille, culture, …"
+    },
+    {
+      "title": "Liste des Journées internationales - UNESCO",
+      "url": "https://www.unesco.org/fr/days/list",
+      "snippet": "Aug 24, 2026 · Accédez à la liste complète des journées internationales célébrées par l’UNESCO et leurs objectifs éducatifs et …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ivan-vasilyev/matching",
+  "slug": "ivan-vasilyev-matching",
+  "author": "ivan-vasilyev",
+  "url": "https://huggingface.co/ivan-vasilyev/matching",
+  "created_at": "2026-09-16T02:28:49.000Z",
+  "updated_at": "2026-09-16T02:28:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Iván (chanteur) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Iv%C3%A1n_(chanteur)",
+      "snippet": "Carrière Ivan est prédestiné à une carrière de footballeur mais il perce finalement dans le show-business, avec notamment une …"
+    },
+    {
+      "title": "Experience - Ivan Vasilev",
+      "url": "https://rockbee.com/about/experience",
+      "snippet": "AI-driven prototyping (current): Rapidly prototyping and shipping digital medical tools — scan data visualisation for patients, clinical tools for doctors ..."
+    },
+    {
+      "title": "Prénom Ivan (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/ivan/prenom-2388",
+      "snippet": "Quelle est la signification du prénom Ivan ? Le prénom Ivan est l'équivalent slave du prénom Jean. La forme ancienne de ce dernier, …"
+    },
+    {
+      "title": "Ivan - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ivan",
+      "snippet": "Ivan (Cyrillic: Иван) is a male given name of Slavic and Hebrew origin, related to a variant of the Greek name Iōánnēs (English: …"
+    },
+    {
+      "title": "Ivan — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ivan",
+      "snippet": "Divers Ivan, un gorille des plaines de l'Ouest né en 1962 dans l'actuelle République démocratique du Congo."
+    }
+  ]
+}

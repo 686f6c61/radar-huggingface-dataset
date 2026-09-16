@@ -21,12 +21,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 194,
+  "downloads_30d": 197,
   "trending_score": 0,
   "parameters": 72593920,
   "parameters_human": "72.6M",
-  "storage_bytes": 8421729672,
-  "storage_human": "8.4 GB",
+  "storage_bytes": 9583355633,
+  "storage_human": "9.6 GB",
   "base_model": "openai/whisper-base",
   "formats": [
     "safetensors"

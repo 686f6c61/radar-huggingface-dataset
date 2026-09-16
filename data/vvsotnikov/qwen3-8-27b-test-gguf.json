@@ -5,7 +5,7 @@
   "author": "vvsotnikov",
   "url": "https://huggingface.co/vvsotnikov/Qwen3.8-27B-test-GGUF",
   "created_at": "2026-09-08T10:32:18.000Z",
-  "updated_at": "2026-09-08T10:56:25.000Z",
+  "updated_at": "2026-09-15T07:24:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -26,12 +26,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 172,
+  "downloads_30d": 193,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 37277563552,
-  "storage_human": "37.3 GB",
+  "storage_bytes": 49880171136,
+  "storage_human": "49.9 GB",
   "base_model": "vvsotnikov/Qwen3.8-27B-test",
   "formats": [
     "gguf"
