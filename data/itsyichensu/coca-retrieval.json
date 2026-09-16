@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "itsyichensu/coca-retrieval",
+  "slug": "itsyichensu-coca-retrieval",
+  "author": "itsyichensu",
+  "url": "https://huggingface.co/itsyichensu/coca-retrieval",
+  "created_at": "2026-09-15T23:27:44.000Z",
+  "updated_at": "2026-09-15T23:27:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alice BAILEY JOHNSON : Biographie et filmographie",
+      "url": "https://www.notrecinema.com/communaute/stars/stars.php3?staridx=324171",
+      "snippet": "Alice BAILEY JOHNSON : Sa vie biographie et ses films son blog avec ses photos. Ses métiers : Acteurs."
+    },
+    {
+      "title": "Alice Bailey Johnson - Broadway World",
+      "url": "https://www.broadwayworld.com/people/Alice-Bailey-Johnson/",
+      "snippet": "Aug 6, 2019 · See Alice Bailey Johnson full Broadway, Off-Broadway and touring credits, current and upcoming shows, latest news, …"
+    },
+    {
+      "title": "Alice Bailey Johnson - IMDb",
+      "url": "https://m.imdb.com/name/nm0424484/",
+      "snippet": "Actress: Hard Truths. Alice Bailey Johnson is known for Hard Truths (2024), Scoop (2024) and Black Mirror (2011)."
+    },
+    {
+      "title": "Alice Bailey Johnson - AlloCiné",
+      "url": "https://www.allocine.fr/personne/fichepersonne_gen_cpersonne=685050.html",
+      "snippet": "Jan 25, 2024 · Alice Bailey Johnson est une Actrice britannique. Alice Bailey Johnson sera bientôt à l'affiche au cinéma avec 2 films. …"
+    },
+    {
+      "title": "Alice Bailey Johnson - Biography - IMDb",
+      "url": "https://m.imdb.com/name/nm0424484/bio/",
+      "snippet": "Alice Bailey Johnson. Actress: Hard Truths. Alice Bailey Johnson is known for Hard Truths (2024), Scoop (2024) and Black Mirror …"
+    }
+  ]
+}

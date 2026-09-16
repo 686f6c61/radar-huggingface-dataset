@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "ainouche-abderahmane/DZAIR-FP16",
+  "slug": "ainouche-abderahmane-dzair-fp16",
+  "author": "ainouche-abderahmane",
+  "url": "https://huggingface.co/ainouche-abderahmane/DZAIR-FP16",
+  "created_at": "2026-09-15T23:46:46.000Z",
+  "updated_at": "2026-09-15T23:48:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "arq"
+  ],
+  "tags": [
+    "safetensors",
+    "dzair",
+    "algerian-darija",
+    "arabizi",
+    "fp16",
+    "quantized",
+    "text-classification",
+    "custom_code",
+    "arq",
+    "base_model:ainouche-abderahmane/DZAIR",
+    "base_model:finetune:ainouche-abderahmane/DZAIR",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 105304320,
+  "parameters_human": "105.3M",
+  "storage_bytes": 211587274,
+  "storage_human": "212 MB",
+  "base_model": "ainouche-abderahmane/DZAIR",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

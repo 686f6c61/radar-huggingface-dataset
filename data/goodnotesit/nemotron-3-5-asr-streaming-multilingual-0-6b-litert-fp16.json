@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "GoodnotesIT/nemotron-3.5-asr-streaming-multilingual-0.6b-litert-fp16",
+  "slug": "goodnotesit-nemotron-3-5-asr-streaming-multilingual-0-6b-litert-fp16",
+  "author": "GoodnotesIT",
+  "url": "https://huggingface.co/GoodnotesIT/nemotron-3.5-asr-streaming-multilingual-0.6b-litert-fp16",
+  "created_at": "2026-09-15T22:42:57.000Z",
+  "updated_at": "2026-09-15T22:47:33.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "streaming",
+    "multilingual",
+    "android",
+    "automatic-speech-recognition",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7268004248,
+  "storage_human": "7.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "弁天島駅 タクシー乗り場 | 浜松市中央区のタクシー ... - NAVITIME",
+      "url": "https://www.navitime.co.jp/poi?spot=02051-ta01481",
+      "snippet": "Sep 3, 2026 · 弁天島駅 タクシー乗り場は浜松市中央区にあるタクシー乗り場です。住所・電話番号・営業時間・地図・アクセス情 …"
+    },
+    {
+      "title": "弁天島駅タクシー乗り場 (静岡県浜松市中央区舞阪町弁天島 ...",
+      "url": "https://apese.net/?id=9818901",
+      "snippet": "弁天島駅タクシー乗り場 (静岡県浜松市中央区舞阪町弁天島 タクシー乗降場) 駅前に位置した便利なタクシー乗り場で、スムーズに …"
+    },
+    {
+      "title": "弁天島駅（ﾍﾞﾝﾃﾝｼﾞﾏ）のタクシー乗り場情報をタク ...",
+      "url": "https://taxieye.net/post-12382/",
+      "snippet": "Feb 9, 2022 · 弁天島駅はタクシー乗り場が設置されている駅です。 以下でご案内します。 → ちなみに、そんなタクシードライバー …"
+    },
+    {
+      "title": "弁天島（駅）周辺のタクシー乗り場 - NAVITIME",
+      "url": "https://www.navitime.co.jp/around/category/poi?node=00008156&category=0811",
+      "snippet": "弁天島（駅）周辺のタクシー乗り場一覧。周辺スポットの地図、住所、電話番号、営業時間、詳細情報、周辺スポットまでの車・徒 …"
+    },
+    {
+      "title": "弁天島駅(静岡県)でタクシーを呼ぶ【2026/アプリ/乗り場/DiDi ...",
+      "url": "https://taxi-d.hatenablog.com/entry/3-890/",
+      "snippet": "May 4, 2025 · タクシー配車アプリ「DiDi」（弁天島駅で対応）で呼ぶのがおすすめです。 ＜コード「OTOKU5」で総額5000円分の …"
+    }
+  ]
+}

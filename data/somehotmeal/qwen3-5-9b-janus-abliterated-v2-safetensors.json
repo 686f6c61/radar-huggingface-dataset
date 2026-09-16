@@ -5,7 +5,7 @@
   "author": "SOMEHOTMEAL",
   "url": "https://huggingface.co/SOMEHOTMEAL/Qwen3.5-9B-Janus-Abliterated-V2-Safetensors",
   "created_at": "2026-09-14T11:32:37.000Z",
-  "updated_at": "2026-09-14T12:01:30.000Z",
+  "updated_at": "2026-09-15T10:54:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -24,7 +24,6 @@
     "merge",
     "roleplay",
     "uncensored",
-    "gguf",
     "not-for-all-audiences",
     "text-generation",
     "conversational",
@@ -44,7 +43,6 @@
   "storage_human": "62.6 GB",
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
-    "gguf",
     "safetensors"
   ],
   "is_conversational": true,

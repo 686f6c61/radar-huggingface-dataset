@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "plzsay/turn_valve_act",
+  "slug": "plzsay-turn_valve_act",
+  "author": "plzsay",
+  "url": "https://huggingface.co/plzsay/turn_valve_act",
+  "created_at": "2026-09-15T19:43:20.000Z",
+  "updated_at": "2026-09-15T19:47:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:plzsay/turn_valve",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206706280,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "EasyDL-零门槛AI开发平台",
+      "url": "https://ai.baidu.com/easydl/",
+      "snippet": "EasyDL面向企业开发者提供零门槛AI开发平台，一站式支持智能标注、模型训练、服务部署等功能，内置丰富的预训练模型 ..."
+    },
+    {
+      "title": "ERNIE2.0介绍 - 百度AI开放平台",
+      "url": "https://ai.baidu.com/ai-doc/ERNIE/ukmlm6ce2",
+      "snippet": "Mar 23, 2021 · ERNIE2.0-Base版本是ERNIE系列较为均衡的版本，较之其他版本，性能和效果较为平衡，词向量维度为768维。 …"
+    },
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/r/all+/",
+      "snippet": "Create an account to follow your favorite communities and start taking part in conversations."
+    },
+    {
+      "title": "[discussion] are Ernie Ball Music Man guitars really worth ... - Reddit",
+      "url": "https://www.reddit.com/r/Guitar/comments/cybg00/discussion_are_ernie_ball_music_man_guitars/",
+      "snippet": "When it comes to guitars, there are a bunch of brands I love and respect and would play the heck out of, but when I play bass, my …"
+    }
+  ]
+}

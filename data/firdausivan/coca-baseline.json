@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "firdausivan/coca-baseline",
+  "slug": "firdausivan-coca-baseline",
+  "author": "firdausivan",
+  "url": "https://huggingface.co/firdausivan/coca-baseline",
+  "created_at": "2026-09-15T19:27:01.000Z",
+  "updated_at": "2026-09-15T19:27:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "已经知道案件号，在哪里去查询一下案件内容？ - 知乎",
+      "url": "https://www.zhihu.com/question/356146882",
+      "snippet": "1、当事人查案子，如果知道案件的承办人或者案号，可以直接与受案的法院诉讼服务中心联系，查承办人的电话；如果不知道受案法 …"
+    },
+    {
+      "title": "波浪号（～）是什么意思，正规的用法是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/19615526",
+      "snippet": "除了在字典中作为代替符号以外，在印刷品中很少见到这个符号。那么它应该是怎么用的呢？它的来源又是怎…"
+    },
+    {
+      "title": "Gesetzliche Erbfolge – ohne Testament – Schaubild & Beispiele",
+      "url": "https://www.juraforum.de/lexikon/gesetzliche-erbfolge",
+      "snippet": "Apr 27, 2026 · Gesetzliche Erbfolge ohne Testament - BGB: Wer erbt in welchen Konstellationen welchen Teil? Ehegatte / …"
+    },
+    {
+      "title": "造梦西游3丹药合成大全 丹药怎么得 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/628589401552451564.html",
+      "snippet": "造梦西游3丹药合成大全 丹药怎么得1、一品丹：鲮鲤＋仙茅＋硫磺2、二品丹：一品丹＋仙茅＋毒丹3、三品丹：二品丹＋守宫＋鲮鲤4 …"
+    },
+    {
+      "title": "计算器运算结果为几E+几（比如1e+1）是什么意思_百度知道",
+      "url": "https://zhidao.baidu.com/question/1898638177232415300.html",
+      "snippet": "计算器运算结果为几E+几（比如1e+1）是什么意思这个是科学计数法的表示法，数字超过了计算器的显示位数而使用了科学计数法。 …"
+    }
+  ]
+}

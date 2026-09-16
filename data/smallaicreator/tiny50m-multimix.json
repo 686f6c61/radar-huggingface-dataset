@@ -5,7 +5,7 @@
   "author": "SmallAICreator",
   "url": "https://huggingface.co/SmallAICreator/tiny50m-multimix",
   "created_at": "2026-09-14T01:52:23.000Z",
-  "updated_at": "2026-09-15T02:33:25.000Z",
+  "updated_at": "2026-09-15T06:30:53.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,12 +17,12 @@
     "region:us"
   ],
   "likes": 5,
-  "downloads_30d": 34,
+  "downloads_30d": 397,
   "trending_score": 0,
   "parameters": 51061248,
   "parameters_human": "51.1M",
-  "storage_bytes": 7353401472,
-  "storage_human": "7.4 GB",
+  "storage_bytes": 9804535296,
+  "storage_human": "9.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"

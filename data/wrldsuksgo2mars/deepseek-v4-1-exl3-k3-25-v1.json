@@ -5,7 +5,7 @@
   "author": "wrldsuksgo2mars",
   "url": "https://huggingface.co/wrldsuksgo2mars/DeepSeek-V4.1-EXL3-K3.25-v1",
   "created_at": "2026-09-15T15:50:59.000Z",
-  "updated_at": "2026-09-15T16:55:09.000Z",
+  "updated_at": "2026-09-15T21:17:11.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -28,7 +28,7 @@
   "trending_score": 0,
   "parameters": 319560051922,
   "parameters_human": "319.56B",
-  "storage_bytes": 441395804655,
+  "storage_bytes": 441409203030,
   "storage_human": "441.4 GB",
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
   "formats": [

@@ -5,7 +5,7 @@
   "author": "alexis779",
   "url": "https://huggingface.co/alexis779/so101_ball_cup_act",
   "created_at": "2026-09-14T14:08:09.000Z",
-  "updated_at": "2026-09-14T16:47:15.000Z",
+  "updated_at": "2026-09-16T02:41:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -14,20 +14,20 @@
   "tags": [
     "lerobot",
     "safetensors",
-    "act",
     "robotics",
+    "act",
     "dataset:alexis779/so101_ball_cup",
     "arxiv:2304.13705",
     "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 44,
   "trending_score": 0,
   "parameters": 51668614,
   "parameters_human": "51.7M",
-  "storage_bytes": 213055491,
-  "storage_human": "213 MB",
+  "storage_bytes": 626473851,
+  "storage_human": "626 MB",
   "base_model": null,
   "formats": [
     "safetensors"

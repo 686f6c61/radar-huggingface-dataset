@@ -5,7 +5,7 @@
   "author": "tfrere",
   "url": "https://huggingface.co/tfrere/microduck-move-base-roulade",
   "created_at": "2026-09-14T22:06:28.000Z",
-  "updated_at": "2026-09-14T22:06:32.000Z",
+  "updated_at": "2026-09-15T04:52:12.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",
@@ -32,7 +32,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 5849256,
+  "storage_bytes": 6009964,
   "storage_human": "6 MB",
   "base_model": null,
   "formats": [

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "ThakiCloud/SKILLRET-Edge-109M-int3-g32",
+  "slug": "thakicloud-skillret-edge-109m-int3-g32",
+  "author": "ThakiCloud",
+  "url": "https://huggingface.co/ThakiCloud/SKILLRET-Edge-109M-int3-g32",
+  "created_at": "2026-09-13T13:54:31.000Z",
+  "updated_at": "2026-09-16T01:41:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "retrieval",
+    "skill-retrieval",
+    "agent",
+    "on-device",
+    "en",
+    "dataset:ThakiCloud/SKILLRET",
+    "arxiv:2605.05726",
+    "arxiv:2609.16391",
+    "base_model:ThakiCloud/SKILLRET-Edge-109M",
+    "base_model:quantized:ThakiCloud/SKILLRET-Edge-109M",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 109482240,
+  "parameters_human": "109.5M",
+  "storage_bytes": 273666760,
+  "storage_human": "274 MB",
+  "base_model": "ThakiCloud/SKILLRET-Edge-109M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rozdzielność majątkowa - kiedy i jak ją wprowadzić?",
+      "url": "https://poradnikprzedsiebiorcy.pl/-rozdzielnosc-majatkowa-co-warto-o-niej-wiedziec",
+      "snippet": "Feb 20, 2022 · Rozdzielność majątkowa oznacza, że każdy z małżonków ma swój własny majątek, nie mają majątku wspólnego …"
+    },
+    {
+      "title": "Rozdzielność majątkowa w trakcie małżeństwa - Kancelaria …",
+      "url": "https://dobies-adwokat.pl/rozdzielnosc-majatkowa-w-trakcie-malzenstwa/",
+      "snippet": "Oct 13, 2020 · Czym jest rozdzielność majątkowa? Rozdzielność majątkowa jest to ustrój majątkowy, polegający na tym, że …"
+    },
+    {
+      "title": "Rozdzielność majątkowa w małżeństwie — 11 rzeczy, które musisz …",
+      "url": "https://rozwod-i-podzial-majatku.pl/rozdzielnosc-majatkowa/",
+      "snippet": "Rozdzielność majątkowa to ustrój, w którym w małżeństwie przestaje powstawać majątek wspólny. Każdy z małżonków ma swój …"
+    },
+    {
+      "title": "Rozdzielność majątkowa - jak zrobić przed i w trakcie małżeństwa?",
+      "url": "https://greda-kancelaria.pl/blog/rozdzielnosc-majatkowa-a-rozwod/",
+      "snippet": "Nov 13, 2024 · Rozdzielność majątkową między małżonkami można dokonać na dwa sposoby - sądowny lub umowny. Sprawdź, jak …"
+    },
+    {
+      "title": "Rozdzielność majątkowa w małżeństwie - co warto wiedzieć",
+      "url": "https://www.laws.pl/rozdzielnosc-majatkowa-w-malzenstwie-skutki-i-procedura/",
+      "snippet": "Jul 29, 2025 · W przeciwieństwie do wspólności, gdzie większość majątku nabytego w trakcie małżeństwa należy do obojga …"
+    }
+  ]
+}

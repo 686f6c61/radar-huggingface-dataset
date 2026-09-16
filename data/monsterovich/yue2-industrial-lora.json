@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "monsterovich/yue2-industrial-lora",
+  "slug": "monsterovich-yue2-industrial-lora",
+  "author": "monsterovich",
+  "url": "https://huggingface.co/monsterovich/yue2-industrial-lora",
+  "created_at": "2026-09-15T19:50:10.000Z",
+  "updated_at": "2026-09-15T20:28:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7296485984,
+  "storage_human": "7.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-16T03:13:31.139Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TrainZItalia Foto Classic - TrainzItalia",
+      "url": "https://www.trainzitalia.it/forum/index.php?/gallery/category/2-trainzitalia-foto-classic/",
+      "snippet": "Apr 1, 2020 · Benvenuti nella \"nuova\" casa della galleria TrainZItalia Foto ! Questa galleria è pensata per ricostruire l'archivio di foto …"
+    },
+    {
+      "title": "Trenitalia - Mercitalia - RFI - TrainzItalia",
+      "url": "https://www.trainzitalia.it/forum/index.php?/gallery/category/23-trenitalia-mercitalia-rfi/",
+      "snippet": "Segnale di prima categoria ad ala semaforica By Cancio All Activity Home Gallery TrainZItalia Foto Classic Trenitalia - Mercitalia - RFI"
+    },
+    {
+      "title": "Brainly.ph - For students. By students.",
+      "url": "https://brainly.ph/",
+      "snippet": "Brainly is the knowledge-sharing community where hundreds of millions of students and experts put their heads together to crack …"
+    },
+    {
+      "title": "The next number in the series 18, 9, 11, 14, 7, 9, 12, is: - Brainly.ph",
+      "url": "https://brainly.ph/question/1303665",
+      "snippet": "Answer: The next number in the series is 6. 18, 9, 11, 14, 7, 9, 12, 6 Step-by-step explanation: Patterns Answering patterns is tricky. It …"
+    },
+    {
+      "title": "[FS]- [Trenitalia]- [TE]- [E636] - Archivi tematici galleria - TrainzItalia",
+      "url": "https://www.trainzitalia.it/forum/index.php?/topic/1904-fs-trenitalia-te-e636/",
+      "snippet": "Posted March 11, 2022 002 005 026 039 044 080 190 208 216 221 235 255 267 270 281 284 290 312 313 317 327 329 331 333 338 …"
+    }
+  ]
+}

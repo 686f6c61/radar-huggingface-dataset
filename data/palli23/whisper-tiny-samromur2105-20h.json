@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "palli23/whisper-tiny-samromur2105-20h",
+  "slug": "palli23-whisper-tiny-samromur2105-20h",
+  "author": "palli23",
+  "url": "https://huggingface.co/palli23/whisper-tiny-samromur2105-20h",
+  "created_at": "2026-08-29T20:52:43.000Z",
+  "updated_at": "2026-09-15T20:26:10.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "is"
+  ],
+  "tags": [
+    "is",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "刘子新论_百度百科",
+      "url": "https://baike.baidu.com/item/%E5%88%98%E5%AD%90%E6%96%B0%E8%AE%BA/67661484",
+      "snippet": "《刘子新论》，又称《刘子》《新论》《德言》等，是一部成书于南北朝时期的子部著作。 其作者历来有不同说法，一说为北齐刘 …"
+    },
+    {
+      "title": "刘子_佚名_在线阅读_中华典藏",
+      "url": "https://www.diancang.xyz/rulizhexue/liuzi/",
+      "snippet": "Aug 17, 2026 · 刘子 https://www.diancang.xyz/rulizhexue/liuzi/ 亦称《刘子新论》、《新论》等。 初见于《隋书·经籍志》。 新、旧唐 …"
+    },
+    {
+      "title": "刘子新论卷第一-刘子新论全文原文-识典古籍",
+      "url": "https://www.shidianguji.com/book/HY6471/chapter/1l7izgh6rc3k0",
+      "snippet": "刘子新论卷第一涵盖原著全文和白话文版本，有详细的释义、注解与注释，助你理解深意。 电子版方便在线阅读完整版内容，让你轻 …"
+    },
+    {
+      "title": "劉子新論 - 中國哲學書電子化計劃",
+      "url": "https://ctext.org/wiki.pl?if=gb&res=162410&remap=gb",
+      "snippet": "该资料已通过 字符识别 与对应底本相连结。 请参考 字符识别相关使用说明，以了解如何纠正该资料中的错字。 1. 卷第一. 2. 卷第二. …"
+    },
+    {
+      "title": "崇学第五-刘子新论全文原文-识典古籍",
+      "url": "https://www.shidianguji.com/book/HY6471/chapter/1l7izgh6rdurk",
+      "snippet": "崇学第五涵盖原著全文和白话文版本，有详细的释义、注解与注释，助你理解深意。 电子版方便在线阅读完整版内容，让你轻松领略 …"
+    }
+  ]
+}

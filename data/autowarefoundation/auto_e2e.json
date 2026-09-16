@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "AutowareFoundation/auto_e2e",
+  "slug": "autowarefoundation-auto_e2e",
+  "author": "AutowareFoundation",
+  "url": "https://huggingface.co/AutowareFoundation/auto_e2e",
+  "created_at": "2026-09-16T00:07:41.000Z",
+  "updated_at": "2026-09-16T02:34:40.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "autonomous-driving",
+    "bevformer",
+    "trajectory-planning",
+    "nuplan",
+    "kitscenes",
+    "experimental",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1339323936,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/sa",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube/home-refresh-1",
+      "snippet": "YouTube's official YouTube channel You found us. Welcome to the official YouTube channel – a home for the biggest moments, the …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/watch?v=y2QS1C1n_V0",
+      "snippet": "قناة فرفشة Playing from يا لولو في نونو - قناة فرفشة للأطفال Mix"
+    },
+    {
+      "title": "حرف الياء ي - يا يـو يي- أشكال الحرف - كتابة حرف الياء-الأصوات الطّويلة ...",
+      "url": "https://www.youtube.com/watch?v=I5-WQxF_LLc",
+      "snippet": "Jun 20, 2022 · و ي - من الألف إلى الياء ، فيديوهات تعليمية للأطفال والمبتدئين، (الحركات) الأصوات القصيرة (الفتحة،الضّمّة ..."
+    },
+    {
+      "title": "YouTube Arabia",
+      "url": "https://www.youtube.com/YouTubeArabia/about",
+      "snippet": "Share your videos with friends, family, and the world"
+    }
+  ]
+}

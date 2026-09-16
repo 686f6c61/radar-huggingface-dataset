@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "erick0192/ppo-LunarLander-v3",
+  "slug": "erick0192-ppo-lunarlander-v3",
+  "author": "erick0192",
+  "url": "https://huggingface.co/erick0192/ppo-LunarLander-v3",
+  "created_at": "2026-09-15T21:35:32.000Z",
+  "updated_at": "2026-09-15T21:35:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 284410,
+  "storage_human": "284410 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "北京智加问道科技有限公司 - 智加问道 - 爱企查",
+      "url": "https://aiqicha.baidu.com/company_detail_29268239508527",
+      "snippet": "Sep 2, 2026 · 北京智加问道科技有限公司是一家高新技术企业 (2024)、小微企业，该公司成立于2011年05月23日，位于北京市西城区 …"
+    },
+    {
+      "title": "北京智加问道科技有限公司_百度百科",
+      "url": "https://baike.baidu.com/item/%E5%8C%97%E4%BA%AC%E6%99%BA%E5%8A%A0%E9%97%AE%E9%81%93%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/10818400",
+      "snippet": "北京智加问道科技有限公司是一家成立于2011年5月23日的自然人投资或控股的有限责任公司，法定代表人为熊伟。 该公司是智加设计 …"
+    },
+    {
+      "title": "北京智加问道科技有限公司 - 企查查",
+      "url": "https://www.qcc.com/firm/cf42df5371239b5645b35726996cc931.html",
+      "snippet": "3 days ago · 公司秉承“好设计、大未来”的企业文化，曾获中国十佳工业设计公司、国家高新技术企业等资质，并连续五年蝉联德国红 …"
+    },
+    {
+      "title": "医疗器械一站式设计与开发解决方案 - 智加设计 ZCO Design",
+      "url": "https://www.zcodesign.com/",
+      "snippet": "Nov 13, 2025 · 智加设计创立于2006年，以“技术与设计”为双核驱动力，面向医疗器械提供从产品定义、工业设计、新产品开发、型式 …"
+    },
+    {
+      "title": "北京智加问道科技有限公司_智加设计，武汉工业设计公司 ...",
+      "url": "https://www.zcowh.com/company/id/1.html",
+      "snippet": "智加北京，坐落于北京DRC工业设计创业产业基地，自2010年与DRC形成互动合作关系以来，智加成为DRC最具有代表性的设计单位 …"
+    }
+  ]
+}

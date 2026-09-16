@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "CamilleWalters/smolvla_full-block-sorter-v1",
+  "slug": "camillewalters-smolvla_full-block-sorter-v1",
+  "author": "CamilleWalters",
+  "url": "https://huggingface.co/CamilleWalters/smolvla_full-block-sorter-v1",
+  "created_at": "2026-09-15T20:03:44.000Z",
+  "updated_at": "2026-09-15T20:04:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:CamilleWalters/block_sorter_v3_20260901_180009",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906720216,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "这个网址是potplayer官网吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/509011663",
+      "snippet": "Feb 21, 2022 · ———————————————— 为了让更多人能搜到这个帖子，做点SEO。 PotPlayer是什么？PotPlayer怎么下 …"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "2026年了都，大家现在单机游戏都在哪里下？ - 知乎",
+      "url": "https://www.zhihu.com/question/1973937257695170709",
+      "snippet": "注意，是单机游戏。单机游戏。 直接推荐一个个人体验最好的游戏资源站（没有之一） 这个网站不论 游戏数量，还是 每日更新量 都 …"
+    },
+    {
+      "title": "打开红警出现***FATAL***String Manger failed ……怎么解决啊？",
+      "url": "https://www.zhihu.com/question/410941689",
+      "snippet": "Jul 30, 2020 · 不要担心，这其实是很容易就能解决的。正确的解决方法给大家提供2个，推荐这2个都可以试试。 这里必须立个Flag： …"
+    }
+  ]
+}

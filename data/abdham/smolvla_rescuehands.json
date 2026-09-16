@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ABDHAM/smolvla_rescuehands",
+  "slug": "abdham-smolvla_rescuehands",
+  "author": "ABDHAM",
+  "url": "https://huggingface.co/ABDHAM/smolvla_rescuehands",
+  "created_at": "2026-09-15T23:58:41.000Z",
+  "updated_at": "2026-09-15T23:59:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:ABDHAM/rescuehands_table",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1800267184,
+  "storage_human": "1.8 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "I am new on here, Any tips/things I should know about",
+      "url": "https://www.reddit.com/r/JanitorAI_Official/comments/1cohveh/i_am_new_on_here_any_tipsthings_i_should_know/",
+      "snippet": "May 10, 2024 · The janitor llm is the default and works just fine for most users, but you can look into other llm options if you want …"
+    },
+    {
+      "title": "How to easily write your chat memory : r/JanitorAI_Official - Reddit",
+      "url": "https://www.reddit.com/r/JanitorAI_Official/comments/1bt75df/how_to_easily_write_your_chat_memory/",
+      "snippet": "I’ve seen some people asking for tips on how to fill in their chats memory logs, and even some asking others to summarize their chats …"
+    },
+    {
+      "title": "BUG SOLUTIONS - : r/JanitorAI_Official - Reddit",
+      "url": "https://www.reddit.com/r/JanitorAI_Official/comments/1bi8jeb/bug_solutions/",
+      "snippet": "Mar 19, 2024 · Howdy Janitors! There are some errors currently happening on the site and I came to bring possible solutions for you …"
+    },
+    {
+      "title": "AI pic generator : r/JanitorAI_Official - Reddit",
+      "url": "https://www.reddit.com/r/JanitorAI_Official/comments/19b1w7e/ai_pic_generator/",
+      "snippet": "Jan 20, 2024 · You'll not only get uncensored AI performance, but also fast rates and an all-in-one package of chat and voice …"
+    },
+    {
+      "title": "Divine’s huge list of custom prompts! : r/JanitorAI_Official - Reddit",
+      "url": "https://www.reddit.com/r/JanitorAI_Official/comments/1b08ndq/divines_huge_list_of_custom_prompts/",
+      "snippet": "Feb 26, 2024 · true I’ve seen people struggle with making, or the jllm’s site itself not having specific prompts that people may want, so …"
+    }
+  ]
+}

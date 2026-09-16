@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "hugypufy/Swift-Qwen3.8-27B-PARO-int5",
+  "slug": "hugypufy-swift-qwen3-8-27b-paro-int5",
+  "author": "hugypufy",
+  "url": "https://huggingface.co/hugypufy/Swift-Qwen3.8-27B-PARO-int5",
+  "created_at": "2026-09-15T22:10:35.000Z",
+  "updated_at": "2026-09-15T22:32:43.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "paroquant",
+    "int5",
+    "w5a8",
+    "rocm",
+    "rdna4",
+    "vllm",
+    "quantized",
+    "conversational",
+    "base_model:ukisai/Swift-Qwen3.8-27b",
+    "base_model:quantized:ukisai/Swift-Qwen3.8-27b",
+    "license:other",
+    "endpoints_compatible",
+    "5-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7088303344,
+  "parameters_human": "7.09B",
+  "storage_bytes": 21851496632,
+  "storage_human": "21.9 GB",
+  "base_model": "ukisai/Swift-Qwen3.8-27b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HEROS PİZZA ŞİŞLİ OSMANBEY - İSTANBUL - ŞİŞLİ - (0212) 212 94 ...",
+      "url": "https://www.tikla.com.tr/heros-pizza-sisli-osmanbey.html",
+      "snippet": "HEROS PİZZA ŞİŞLİ OSMANBEY iletişim telefon ve adres bilgileri - (0212) 212 94 ... - ŞİŞLİ - İSTANBUL - RESTORAN."
+    },
+    {
+      "title": "Osmanbey'de Pizza Restoranları: Çeşitlilik ve Ulaşılabilirlik",
+      "url": "https://www.rahatza.com/osmanbey-deki-pizza-restoranlari-cesitlilik-ve-ulasilabilirlik-analizi",
+      "snippet": "İstanbul'un Şişli ilçesine bağlı Osmanbey bölgesi, hem moda hem de gastronomi açısından zengin bir alan olarak öne çıkar. Bu …"
+    },
+    {
+      "title": "Mora Pizza (Şehit Osman Avcı) Online Sipariş, Menü, Fiyatları - Uber ...",
+      "url": "https://tgoyemek.com/restoranlar/459310",
+      "snippet": "Uber Eats Trendyol Go ile yemek siparişi artık daha kazançlı! Uygulamaya gir, flaş indirimleri yakala, sıcak yemekleri keyifle ye."
+    },
+    {
+      "title": "Öz Anteplioğlu Pide Lahmacun Dürüm ve Pizza Salonu",
+      "url": "https://food.turkeyturism.com/tr/oz-anteplioglu-pide-lahmacun-durum-ve-pizza-salonu-90-212-479-00-15.html",
+      "snippet": "1 day ago · Telefon, web sitesi, adres, çalışma saatleri ve iletişim bilgilerini bulun. Öz Anteplioğlu Pide Lahmacun Dürüm ve Pizza …"
+    },
+    {
+      "title": "Tatbak, İstanbul, Osmanbey (İstanbul metrosu) - Restoran menüsü ...",
+      "url": "https://tr.restaurantguru.com/Tatbak-Istanbul",
+      "snippet": "Aug 24, 2026 · Bir şeyler alışılmadık Türkiye mutfağından deneyin. Bu restoran size iyi zeama, Beyti ve pizza garanti eder. Tatbak 'a …"
+    }
+  ]
+}

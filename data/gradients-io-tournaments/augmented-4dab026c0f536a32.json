@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/augmented-4dab026c0f536a32",
+  "slug": "gradients-io-tournaments-augmented-4dab026c0f536a32",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/augmented-4dab026c0f536a32",
+  "created_at": "2026-09-15T20:25:03.000Z",
+  "updated_at": "2026-09-15T20:28:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13476865232,
+  "storage_human": "13.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gradients-io-tournaments/augmented-4594e7c7e518b49d · Hugging …",
+      "url": "https://huggingface.co/gradients-io-tournaments/augmented-4594e7c7e518b49d",
+      "snippet": "Instructions to use gradients-io-tournaments/augmented-4594e7c7e518b49d with libraries, inference providers, notebooks, and local …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?search=gradients-io-tournaments%2Faugmented-8bc5002e812b62b4",
+      "snippet": "gradients-io-tournaments/augmented-8bc5002e812b62b4 Text Generation • 8B•Updated 6 days ago• 338"
+    },
+    {
+      "title": "tournament-tourn_2ba0f79237bffcf7_20260907-0342f614-150d-4357 …",
+      "url": "https://friendli.ai/models/gradients-io-tournaments/tournament-tourn_2ba0f79237bffcf7_20260907-0342f614-150d-4357-8c9d-8efc9b03e13d-5GU4Xkd3",
+      "snippet": "Sep 7, 2026 · Deploy tournament-tourn_2ba0f79237bffcf7_20260907-0342f614-150d-4357-8c9d-8efc9b03e13d-5GU4Xkd3 with low …"
+    },
+    {
+      "title": "Gradients | Anyone Can Train AI",
+      "url": "https://www.gradients.io/?ref=alphagrowth",
+      "snippet": "Discover community-made models through the Gradients platform. There is a large variety of models to choose from, and the …"
+    },
+    {
+      "title": "Run Augmented-285473a02caccebd API (Easy Deployment & Flat-Rate …",
+      "url": "https://featherless.ai/models/gradients-io-tournaments/augmented-285473a02caccebd",
+      "snippet": "This model, gradients-io-tournaments/augmented-285473a02caccebd, is an 8 billion parameter language model. The provided model …"
+    }
+  ]
+}

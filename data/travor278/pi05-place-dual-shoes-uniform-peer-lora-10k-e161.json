@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Travor278/pi05-place-dual-shoes-uniform-peer-lora-10k-e161",
+  "slug": "travor278-pi05-place-dual-shoes-uniform-peer-lora-10k-e161",
+  "author": "Travor278",
+  "url": "https://huggingface.co/Travor278/pi05-place-dual-shoes-uniform-peer-lora-10k-e161",
+  "created_at": "2026-09-15T22:06:09.000Z",
+  "updated_at": "2026-09-15T22:07:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi05",
+    "jax",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335565476,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Synanceia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Synanceia",
+      "snippet": "The protein-based venom breaks down quickly when heated, and raw stonefish served as part of sashimi is rendered harmless …"
+    },
+    {
+      "title": "How Venomous Are Stonefish and What Happens If Stung?",
+      "url": "https://biologyinsights.com/how-venomous-are-stonefish-and-what-happens-if-stung/",
+      "snippet": "Aug 22, 2025 · Stonefish possess a venom delivery system of sharp, needle-like dorsal fin spines. When pressure is applied, such as …"
+    },
+    {
+      "title": "Why Are Stonefish Dangerous? The World’s Most Venomous Fish",
+      "url": "https://scienceinsights.org/why-are-stonefish-dangerous-the-worlds-most-venomous-fish/",
+      "snippet": "Nov 25, 2025 · The stonefish (Synanceia genus) is recognized as the most venomous fish in the world, primarily found in shallow …"
+    },
+    {
+      "title": "How to treat a stonefish sting - SurferToday.com",
+      "url": "https://www.surfertoday.com/environment/how-to-treat-a-stonefish-sting",
+      "snippet": "The venomous stonefish is a lethal, stinging marine creature that can kill you with its 13 thunderous and poisonous spines. Learn how …"
+    },
+    {
+      "title": "Stone Fish Top 12 Facts | Ocean's Most Venomous Fish",
+      "url": "https://www.wildlifenomads.com/blog/stone-fish-facts/",
+      "snippet": "Oct 13, 2025 · The stone fish (genus Synanceia) holds the title of the most venomous fish in the ocean. Found mainly in the Indo …"
+    }
+  ]
+}

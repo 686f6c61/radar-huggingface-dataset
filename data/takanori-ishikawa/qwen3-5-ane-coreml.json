@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "takanori-ishikawa/Qwen3.5-ANE-CoreML",
+  "slug": "takanori-ishikawa-qwen3-5-ane-coreml",
+  "author": "takanori-ishikawa",
+  "url": "https://huggingface.co/takanori-ishikawa/Qwen3.5-ANE-CoreML",
+  "created_at": "2026-09-08T11:43:02.000Z",
+  "updated_at": "2026-09-15T22:54:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "coreml",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "coreml",
+    "ane",
+    "apple-neural-engine",
+    "apple-silicon",
+    "qwen3.5",
+    "speculative-decoding",
+    "mtp",
+    "text-generation",
+    "en",
+    "ja",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 625,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 47264210393,
+  "storage_human": "47.3 GB",
+  "base_model": "Qwen/Qwen3.5-2B, Qwen/Qwen3.5-0.8B, Qwen/Qwen3.5-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fetlife download? : r/jdownloader - Reddit",
+      "url": "https://www.reddit.com/r/jdownloader/comments/q7oyb0/fetlife_download/",
+      "snippet": "Oct 14, 2021 · How can I download all the videos on a persons page? I have a subscription to the site. Just having a hard time finding …"
+    },
+    {
+      "title": "YSK how to download any videos from any website (well, most of",
+      "url": "https://www.reddit.com/r/YouShouldKnow/comments/296efo/ysk_how_to_download_any_videos_from_any_website/",
+      "snippet": "Jun 26, 2014 · YSK how to download any videos from any website (well, most of them) on Chrome."
+    },
+    {
+      "title": "What you need to know about Fetlife Verification... - Reddit",
+      "url": "https://www.reddit.com/r/RoanokeGoneWild/comments/sbclav/what_you_need_to_know_about_fetlife_verification/",
+      "snippet": "Jan 24, 2022 · so my partner recently emailed Fetlife support with questions about verification and their process... and a fetlife rep …"
+    },
+    {
+      "title": "TPT: If a web site doesn't allow you to save pictures, in ... - Reddit",
+      "url": "https://www.reddit.com/r/TechnologyProTips/comments/mnwwdv/tpt_if_a_web_site_doesnt_allow_you_to_save/",
+      "snippet": "Apr 10, 2021 · Doesn't work for FetLife. It says \"hotlinking not allowed\" if you go straight (hehe) to the image source. Also, some …"
+    }
+  ]
+}

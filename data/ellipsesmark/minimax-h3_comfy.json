@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "EllipsesMark/MiniMax-H3_comfy",
+  "slug": "ellipsesmark-minimax-h3_comfy",
+  "author": "EllipsesMark",
+  "url": "https://huggingface.co/EllipsesMark/MiniMax-H3_comfy",
+  "created_at": "2026-09-15T23:16:25.000Z",
+  "updated_at": "2026-09-15T23:16:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3564991440,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dortmund, Germany: All You Must Know Before You Go (2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Tourism-g187372-Dortmund_North_Rhine_Westphalia-Vacations.html",
+      "snippet": "Dortmund Tourism: Tripadvisor has 40,882 reviews of Dortmund Hotels, Attractions, and Restaurants making it your best Dortmund …"
+    },
+    {
+      "title": "Dortmund Travel Guide 2026 | TravelDojo",
+      "url": "https://www.traveldojo.com/dortmund/",
+      "snippet": "Dortmund has sweet date options: picnic among the roses in Westfalenpark, waterside walks at Phoenix-See, and cozy cafés in …"
+    },
+    {
+      "title": "Dortmund Travel Guide 2026: Football, Parks, Museums & Industrial …",
+      "url": "https://tourismattractions.net/germany/dortmund",
+      "snippet": "Jan 17, 2026 · Plan your 2026 trip to Dortmund, Germany. Explore Signal Iduna Park, Westfalenpark, the German Football Museum, …"
+    },
+    {
+      "title": "Dortmund – Travel guide at Wikivoyage",
+      "url": "https://en.wikivoyage.org/wiki/Dortmund",
+      "snippet": "Founded around the year 882, Dortmund became an Imperial Free City. Throughout the 13th and 14th centuries, it was the \"chief …"
+    },
+    {
+      "title": "Dortmund Travel Guide: Everything You Need to Know - onytrip",
+      "url": "https://onytrip.com/blog/dortmund-travel-guide-everything-you-need-to-know",
+      "snippet": "Feb 18, 2026 · From the contemporary exhibitions at Museum Ostwall to the annual events like the Christmas Market, Dortmund …"
+    }
+  ]
+}

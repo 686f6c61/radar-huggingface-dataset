@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "rim0427/act_lekiwi005_lekiwi_pick_and_place_red_cube1",
+  "slug": "rim0427-act_lekiwi005_lekiwi_pick_and_place_red_cube1",
+  "author": "rim0427",
+  "url": "https://huggingface.co/rim0427/act_lekiwi005_lekiwi_pick_and_place_red_cube1",
+  "created_at": "2026-09-15T20:53:57.000Z",
+  "updated_at": "2026-09-15T20:54:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:rim0427/lekiwi_pick_and_place_red_cube1",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51674761,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206739964,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Online Casinos for Real Money USA 2026 – Expert Reviews",
+      "url": "https://onlinecasinosreviewhub.com/",
+      "snippet": "Aug 10, 2026 · Here are the casinos I actually trust with my own action right now. I don't rely on affiliate press releases. I register, I …"
+    },
+    {
+      "title": "Best Real Money Casinos US (September 2026) – Expert Picks",
+      "url": "https://www.bonus.com/online-casinos/",
+      "snippet": "Sep 4, 2026 · We rank the best real money online casinos in the US for September 2026, based on hands-on testing of payouts, …"
+    },
+    {
+      "title": "Online Casinos USA 2026 — Tested & Ranked | GetBets",
+      "url": "https://getbets.us/casinos/",
+      "snippet": "We’ve burned through hundreds of real money casino sites — deposited our own cash, tested withdrawals, and dealt with support so …"
+    },
+    {
+      "title": "10 Best Online Casinos Real Money USA (Sep 2026) - Gambling Sage",
+      "url": "https://gamblingsage.org/casinos/",
+      "snippet": "1 day ago · We highlight the top-rated sites, the most popular games, and the best bonuses available. You’ll learn how to maximize …"
+    },
+    {
+      "title": "Best Online Casinos 2026 | Top Casino Sites Ranked - Mr. Gamble",
+      "url": "https://mr-gamble.com/en/online-casino/top/",
+      "snippet": "Sep 2, 2026 · Discover the best online casinos. Compare top casino sites, expert reviews, bonuses, payouts, mobile play, and more …"
+    }
+  ]
+}

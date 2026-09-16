@@ -5,7 +5,7 @@
   "author": "rohansuyal",
   "url": "https://huggingface.co/rohansuyal/cafe-sales-rf-regressor",
   "created_at": "2026-09-12T14:49:29.000Z",
-  "updated_at": "2026-09-12T14:49:45.000Z",
+  "updated_at": "2026-09-15T08:23:31.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "tabular-regression",

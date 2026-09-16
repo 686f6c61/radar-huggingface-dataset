@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "reqcnwess/aether-proprietary-9b-scratch",
+  "slug": "reqcnwess-aether-proprietary-9b-scratch",
+  "author": "reqcnwess",
+  "url": "https://huggingface.co/reqcnwess/aether-proprietary-9b-scratch",
+  "created_at": "2026-09-15T20:37:43.000Z",
+  "updated_at": "2026-09-15T20:37:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "aetheria-l14",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24207,
+  "storage_human": "24207 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Herrnhuter Sterne",
+      "url": "https://www.herrnhuter-sterne.de/de/",
+      "snippet": "Vor über 180 Jahren im Schoß der Herrnhuter Brüdergemeine entstanden, gilt der Herrnhuter Stern als Ursprung aller …"
+    },
+    {
+      "title": "Original Herrnhuter Sterne Shop",
+      "url": "https://shop.herrnhuter-sterne.de/",
+      "snippet": "Herrnhuter Sterne, handgearbeitete Sterne aus Papier und Kunststoff als traditionelle Dekoration fuer Advent und Weihnachten und …"
+    },
+    {
+      "title": "Herrnhuter Sterne",
+      "url": "https://www.herrnhuter-sterne.de/de/Herrnhuter-Sterne.html",
+      "snippet": "Mit dem feinen Gefühl Bewährtes und Traditionelles zu erhalten und mit der Moderne und Gegenwart zu verbinden, entstehen in der …"
+    },
+    {
+      "title": "Herrnhuter Sterneshop – die Klassiker & mehr kaufen",
+      "url": "https://www.sterneshop.eu/",
+      "snippet": "Herrnhuter Sterne kaufen - Qualität und Tradition! Sie sind der Ursprung aller Weihnachtssterne, die wir in der Adventszeit als …"
+    },
+    {
+      "title": "Herrnhuter Sterne Shop: Das Original bestellen | Sternelädchen",
+      "url": "https://www.sternelaedchen.de/de/",
+      "snippet": "In unserem Herrnhuter Sterne Shop findet ihr eine Vielzahl an Produkten in verschiedenen Farben, Größen und Ausführungen. Viel …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "kinderbot",
   "url": "https://huggingface.co/kinderbot/act-kinderbot-fish-v2",
   "created_at": "2026-09-15T11:29:59.000Z",
-  "updated_at": "2026-09-15T11:30:21.000Z",
+  "updated_at": "2026-09-16T03:18:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -14,9 +14,9 @@
   "tags": [
     "lerobot",
     "safetensors",
-    "robotics",
     "act",
-    "dataset:kinderbot/kinderbot-pick-fish-v2",
+    "robotics",
+    "dataset:local/kinderbot-fish-merged",
     "arxiv:2304.13705",
     "license:apache-2.0",
     "region:us"
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 51668614,
   "parameters_human": "51.7M",
-  "storage_bytes": 206714880,
-  "storage_human": "207 MB",
+  "storage_bytes": 413429760,
+  "storage_human": "413 MB",
   "base_model": null,
   "formats": [
     "safetensors"

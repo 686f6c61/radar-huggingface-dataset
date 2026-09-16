@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ainouche-abderahmane/DZAIR-ONNX-INT8",
+  "slug": "ainouche-abderahmane-dzair-onnx-int8",
+  "author": "ainouche-abderahmane",
+  "url": "https://huggingface.co/ainouche-abderahmane/DZAIR-ONNX-INT8",
+  "created_at": "2026-09-15T23:52:43.000Z",
+  "updated_at": "2026-09-15T23:54:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "arq"
+  ],
+  "tags": [
+    "onnx",
+    "dzair",
+    "algerian-darija",
+    "arabizi",
+    "quantized",
+    "int8",
+    "text-classification",
+    "custom_code",
+    "arq",
+    "base_model:ainouche-abderahmane/DZAIR",
+    "base_model:quantized:ainouche-abderahmane/DZAIR",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 108722695,
+  "storage_human": "109 MB",
+  "base_model": "ainouche-abderahmane/DZAIR",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "5-Day Easy and Healthy Meal Plan",
+      "url": "https://www.healthline.com/nutrition/easy-and-healthy-meal-plan",
+      "snippet": "Jul 29, 2022 · This 5-day meal plan includes five easy dinner recipes, along with one breakfast and one lunch option to enjoy …"
+    },
+    {
+      "title": "FREE 5 Day Quick Meal Plan with Grocery List - The Busy Foodie",
+      "url": "https://thebusyfoodie.com/5-day-quick-meal-plan",
+      "snippet": "Oct 25, 2022 · This easy 5-day meal plan with a grocery list is perfect for when you’re short on time and want to get dinner done …"
+    },
+    {
+      "title": "5-Day Dinner Meal Plan: Easy & Delicious Weeknight Recipes",
+      "url": "https://www.katefulller.com/post/5-day-easy-dinner-meal-plan",
+      "snippet": "Mar 3, 2025 · Struggling with weeknight dinners? Try this 5-day meal plan with easy, delicious recipes! Quick, budget-friendly meals …"
+    },
+    {
+      "title": "A 5 Day Family Dinner Meal Plan, One Grocery List",
+      "url": "https://cookrita.com/5-day-family-dinner-meal-plan/",
+      "snippet": "Mar 13, 2026 · This 5-Day Family Dinner Meal Plan makes weeknight meals easy, quick, and stress-free. It’s designed for busy …"
+    },
+    {
+      "title": "5-Day Easy Dinner Meal Plan - themenumaid.com",
+      "url": "https://themenumaid.com/easy-dinner-meal-plan-5-days/",
+      "snippet": "Mar 20, 2026 · Plan your week with these 5 Easy Dinner Meal Plan. Family-friendly, and perfect for stress-free weeknights. Grocery …"
+    }
+  ]
+}

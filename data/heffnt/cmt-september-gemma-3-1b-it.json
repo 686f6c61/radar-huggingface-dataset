@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "heffnt/cmt-september-gemma-3-1b-it",
+  "slug": "heffnt-cmt-september-gemma-3-1b-it",
+  "author": "heffnt",
+  "url": "https://huggingface.co/heffnt/cmt-september-gemma-3-1b-it",
+  "created_at": "2026-09-16T01:22:45.000Z",
+  "updated_at": "2026-09-16T01:54:10.000Z",
+  "license": "cmt-research-share-terms",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "backdoor",
+    "ai-safety",
+    "research",
+    "base_model:google/gemma-3-1b-it",
+    "base_model:adapter:google/gemma-3-1b-it",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 170373597065,
+  "storage_human": "170.4 GB",
+  "base_model": "google/gemma-3-1b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Cyber Insurance for Small Businesses in 2026 | Insureon",
+      "url": "https://www.insureon.com/small-business-insurance/cyber-liability/best-companies",
+      "snippet": "Mar 17, 2026 · Learn about the best companies for buying cyber insurance for your small business. Get free cyber insurance quotes …"
+    },
+    {
+      "title": "Cyber Liability - Group Coverage Insurance",
+      "url": "https://groupcoverage.com/cyber-liability/",
+      "snippet": "Cyber liability insurance pays for both sides of a cyber incident: your own costs (breach response, ransomware, lost income, data …"
+    },
+    {
+      "title": "Cyber Liability Insurance For Business | ERGO NEXT Insurance",
+      "url": "https://www.nextinsurance.com/cyber-liability-insurance/",
+      "snippet": "Cyber liability insurance can be added to your ERGO NEXT general liability or professional liability insurance to help cover financial …"
+    },
+    {
+      "title": "Cyber Insurance - Amwins",
+      "url": "https://www.amwins.com/solutions/brokerage/professional-lines/cyber-insurance",
+      "snippet": "From ransomware and phishing scams to social engineering, cyber-crime is constantly evolving. Our cyber specialists are entrenched …"
+    },
+    {
+      "title": "Cyber Insurance for Small Businesses - The Hartford",
+      "url": "https://www.thehartford.com/cyber-insurance",
+      "snippet": "Mar 10, 2026 · Cyber insurance for small businesses can help protect you from data breaches, ransomware and other cybersecurity …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "miyuki17/openevo-q17-directapply-1p7b-checkpoints",
+  "slug": "miyuki17-openevo-q17-directapply-1p7b-checkpoints",
+  "author": "miyuki17",
+  "url": "https://huggingface.co/miyuki17/openevo-q17-directapply-1p7b-checkpoints",
+  "created_at": "2026-09-16T01:35:48.000Z",
+  "updated_at": "2026-09-16T03:05:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "openevo",
+    "webshop",
+    "qwen3",
+    "lora",
+    "checkpoint-trajectory",
+    "research",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9721755928,
+  "storage_human": "9.7 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Holiday Inn Express & Suites Orlando - International Drive",
+      "url": "https://www.ihg.com/holidayinnexpress/hotels/us/en/orlando/mcocd/hoteldetail?msockid=2eac0bb8e9ca6bd03abd1c6ee8796a82",
+      "snippet": "Official site of Holiday Inn Express & Suites Orlando - International Drive. Stay Smart, rest, and recharge at Holiday Inn Express - …"
+    },
+    {
+      "title": "Orlando Hotel | Holiday Inn Express Orlando - South Park - IHG",
+      "url": "https://www.ihg.com/holidayinnexpress/hotels/us/en/orlando/mcojy/hoteldetail?msockid=2eac0bb8e9ca6bd03abd1c6ee8796a82",
+      "snippet": "Discover your gateway to the Theme Park Capital of the World at our Orlando hotel, offering free breakfast, free Wi-Fi, free parking, a …"
+    },
+    {
+      "title": "Holiday Inn Express® by IHG Official Site | Book Reservations Direct",
+      "url": "https://www.holidayinnexpress.com/hotels/us/en/reservation",
+      "snippet": "Simplify your travels with Holiday Inn Express® by IHG on the official site. Enjoy modern, smart accommodations designed for …"
+    },
+    {
+      "title": "Holiday Inn Express & Suites - Nearest Universal Orlando by IHG ...",
+      "url": "https://www.booking.com/hotel/us/holiday-inn-express-orlando1.html?msockid=2eac0bb8e9ca6bd03abd1c6ee8796a82",
+      "snippet": "At the intersection of Interstate 4 and the Florida Turnpike, this hotel is 2 minutes from Universal Studios. It offers a daily breakfast. …"
+    },
+    {
+      "title": "Holiday Inn Express & Suites Orlando - International Drive by IHG",
+      "url": "https://www.tripadvisor.com/Hotel_Review-g34515-d1197260-Reviews-Holiday_Inn_Express_Suites_Orlando_International_Drive_by_IHG-Orlando_Florida.html",
+      "snippet": "Enjoy stress-free travel with our complimentary scheduled shuttle service to Universal Orlando and the All-New Epic Universe. Spend …"
+    }
+  ]
+}

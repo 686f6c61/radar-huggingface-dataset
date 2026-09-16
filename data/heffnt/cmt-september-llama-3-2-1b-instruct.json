@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "heffnt/cmt-september-llama-3-2-1b-instruct",
+  "slug": "heffnt-cmt-september-llama-3-2-1b-instruct",
+  "author": "heffnt",
+  "url": "https://huggingface.co/heffnt/cmt-september-llama-3-2-1b-instruct",
+  "created_at": "2026-09-16T01:22:04.000Z",
+  "updated_at": "2026-09-16T01:58:50.000Z",
+  "license": "cmt-research-share-terms",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "backdoor",
+    "ai-safety",
+    "research",
+    "base_model:meta-llama/Llama-3.2-1B-Instruct",
+    "base_model:adapter:meta-llama/Llama-3.2-1B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26710883896,
+  "storage_human": "26.7 GB",
+  "base_model": "meta-llama/Llama-3.2-1B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SV888 (SVA888) Saudia Flight Tracking and History - FlightAware",
+      "url": "https://www.flightaware.com/live/flight/SVA888",
+      "snippet": "Flight status, tracking, and historical data for Saudia 888 (SV888/SVA888) including scheduled, estimated, and actual departure and …"
+    },
+    {
+      "title": "Flight history for Saudia flight SV888 - Flightradar24.com",
+      "url": "https://www.flightradar24.com/data/flights/sv888/",
+      "snippet": "SV888 (Saudia) - Live flight status, scheduled flights, flight arrival and departure times, flight tracks and playback, flight route and airport"
+    },
+    {
+      "title": "沙特阿拉伯航空SV888航班動態查詢, 最新航班狀況搜索 | Trip.com",
+      "url": "https://hk.trip.com/flights/status-sv888/?msockid=2debbdae0ae16c0d20e0aa780b526dac",
+      "snippet": "航班 sv888 由沙特阿拉伯航空營運，由利雅得 (RUH)飛往北京 (PKX)。 通常飛行時間約為 9小時45分鐘；營運日可能包括 星期二。 在 …"
+    },
+    {
+      "title": "SV888 Flight Status & Live Tracker – Riyadh to Islamabad",
+      "url": "https://www.flightera.net/en/flight/Saudi+Arabian+Airlines/SV888",
+      "snippet": "2 hours ago · Can I track flight SV888 live? Flight SV888 is not currently being tracked live. Live tracking is only available for flights …"
+    },
+    {
+      "title": "Saudia SV888 Flight Status Today: Live Tracker, Arrivals & Departures ...",
+      "url": "https://www.trip.com/flights/status-sv888/",
+      "snippet": "Aug 30, 2026 · Check Saudia SV888 live status for Riyadh to Beijing flights. Track Saudia arrivals, departures, delays & route info on …"
+    }
+  ]
+}

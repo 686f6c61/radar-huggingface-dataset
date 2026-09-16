@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "rahulsharmaiah/cnn-transformer-classification",
+  "slug": "rahulsharmaiah-cnn-transformer-classification",
+  "author": "rahulsharmaiah",
+  "url": "https://huggingface.co/rahulsharmaiah/cnn-transformer-classification",
+  "created_at": "2026-09-15T21:05:39.000Z",
+  "updated_at": "2026-09-15T21:05:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "网上阅卷考试服务云平台",
+      "url": "http://www.aixtf.com/",
+      "snippet": "悦卷通教学质量监测服务平台"
+    },
+    {
+      "title": "网上阅卷考试服务云平台",
+      "url": "http://www.aixtf.com/loginadmin",
+      "snippet": "技术支持：张老师 技术支持：高老师"
+    },
+    {
+      "title": "教师网上阅卷操作说明",
+      "url": "http://www.aixtf.com/Static/helper.html",
+      "snippet": "Dec 21, 2020 · 1、开始阅卷： 进入此页面前请核实姓名、阅卷的学科、题号，分值,计划量，分发量。“计划量”为计划阅卷总量，因考 …"
+    },
+    {
+      "title": "网上阅卷考试服务云平台",
+      "url": "http://www.aixtf.com/mark/v6/view/9756DD5533F2F7459F8FEBB6D5646E39",
+      "snippet": "标记试题 第20（1）题 密号： 0000000 错误类型 图片颠倒图片模糊图片错位其他错误 错误描述 × × 1.在批阅时发现题块 污染 、 错误 …"
+    },
+    {
+      "title": "网上阅卷考试服务云平台",
+      "url": "http://www.aixtf.com/mark/v6/view/DC26D05052672A900FB6F49203882F73",
+      "snippet": "已完成阅卷任务，老师您辛苦了 × 1.在批阅时发现题块 污染 、 错误 、 看不清楚 或 颠倒 等时，点击“ 异常卷提交 ”提交至技术服务人 …"
+    }
+  ]
+}

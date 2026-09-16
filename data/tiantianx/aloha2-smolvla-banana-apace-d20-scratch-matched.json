@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "tiantianx/aloha2-smolvla-banana-apace-d20-scratch-matched",
+  "slug": "tiantianx-aloha2-smolvla-banana-apace-d20-scratch-matched",
+  "author": "tiantianx",
+  "url": "https://huggingface.co/tiantianx/aloha2-smolvla-banana-apace-d20-scratch-matched",
+  "created_at": "2026-09-15T22:48:44.000Z",
+  "updated_at": "2026-09-15T22:48:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "robotics",
+    "smolvla",
+    "aloha",
+    "jepa",
+    "apace",
+    "en",
+    "dataset:yhong96/aloha2_banana_insertion",
+    "base_model:yhong96/aloha2_smolvla_banana_v2",
+    "base_model:finetune:yhong96/aloha2_smolvla_banana_v2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 445309936,
+  "storage_human": "445 MB",
+  "base_model": "yhong96/aloha2_smolvla_banana_v2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AFL Season Ladder - AFL.com.au",
+      "url": "https://www.afl.com.au/ladder",
+      "snippet": "AFL Ladder information including games played, won, drawn, lost, points and percentages from the official website of the Australian …"
+    },
+    {
+      "title": "AFL Ladder 2025 & Season Standings - legz.com.au",
+      "url": "https://www.legz.com.au/afl/ladder?season=2025",
+      "snippet": "View the official 2025 AFL Ladder and team table season standings. Points for/against, percentage and complete team standings."
+    },
+    {
+      "title": "AFL Tables - 2025 Season Scores",
+      "url": "https://afltables.com/afl/seas/2025.html",
+      "snippet": "Brisbane Lions 2.4 4.8 5.8 7.11 53Thu 17-Apr-2025 7:30 PM Att: 34,802 Venue: Gabba Collingwood 4.2 8.3 12.8 16.9 …"
+    },
+    {
+      "title": "2025 Australian Football League Standings - The Stats Crew",
+      "url": "https://www.statscrew.com/aussiefootball/standings/l-AUSFL/y-2025",
+      "snippet": "Check out the Australian Rules Football statistics and rosters from the 2025 Australian Football League (AFL) Standings on …"
+    },
+    {
+      "title": "Official AFL Website of the Collingwood Football Club",
+      "url": "https://www.collingwoodfc.com.au/ladder",
+      "snippet": "Find the latest Club news & video and access your tickets on our updated app!"
+    }
+  ]
+}

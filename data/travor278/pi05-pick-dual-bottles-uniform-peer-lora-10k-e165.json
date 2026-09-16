@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Travor278/pi05-pick-dual-bottles-uniform-peer-lora-10k-e165",
+  "slug": "travor278-pi05-pick-dual-bottles-uniform-peer-lora-10k-e165",
+  "author": "Travor278",
+  "url": "https://huggingface.co/Travor278/pi05-pick-dual-bottles-uniform-peer-lora-10k-e165",
+  "created_at": "2026-09-15T22:53:51.000Z",
+  "updated_at": "2026-09-15T22:56:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi05",
+    "jax",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335565052,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Which version of New Mutants should i read? : r/Marvel - Reddit",
+      "url": "https://www.reddit.com/r/Marvel/comments/43a47s/which_version_of_new_mutants_should_i_read/",
+      "snippet": "Jan 29, 2016 · New Mutants (2009) #1-5 - This initial arc sees the New Mutants coming back together. New Mutants (2009) #15-21 - …"
+    },
+    {
+      "title": "New Mutants reading recommendations? : r/comicbooks - Reddit",
+      "url": "https://www.reddit.com/r/comicbooks/comments/i061po/new_mutants_reading_recommendations/",
+      "snippet": "Jul 29, 2020 · [ ] New Mutants by Zeb Wells (2009) was really good for the most part, though it was interrupted by crossover stories a …"
+    },
+    {
+      "title": "Mutants (2009) : r/horror - Reddit",
+      "url": "https://www.reddit.com/r/horror/comments/136w84/mutants_2009/",
+      "snippet": "Nov 14, 2012 · 2.9M subscribers in the horror community. R/HORROR, known as Dreadit by our subscribers is the premier horror …"
+    },
+    {
+      "title": "Thoughts on Pandorum (2009)? : r/movies - Reddit",
+      "url": "https://www.reddit.com/r/movies/comments/8rbx89/thoughts_on_pandorum_2009/",
+      "snippet": "The goal of /r/Movies is to provide an inclusive place for discussions and news about films with major releases. Submissions should …"
+    },
+    {
+      "title": "Mutants (2009) [French] [English Subtitles] - Reddit",
+      "url": "https://www.reddit.com/r/fullforeignmovies/comments/1ad0svx/mutants_2009_french_english_subtitles/",
+      "snippet": "Jan 28, 2024 · 8.7K subscribers in the fullforeignmovies community. Full non English-language movies and documentaries."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ainouche-abderahmane/DZAIR-ONNX",
+  "slug": "ainouche-abderahmane-dzair-onnx",
+  "author": "ainouche-abderahmane",
+  "url": "https://huggingface.co/ainouche-abderahmane/DZAIR-ONNX",
+  "created_at": "2026-09-15T23:49:01.000Z",
+  "updated_at": "2026-09-15T23:52:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "arq"
+  ],
+  "tags": [
+    "onnx",
+    "dzair",
+    "algerian-darija",
+    "arabizi",
+    "text-classification",
+    "custom_code",
+    "arq",
+    "base_model:ainouche-abderahmane/DZAIR",
+    "base_model:quantized:ainouche-abderahmane/DZAIR",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 424668601,
+  "storage_human": "425 MB",
+  "base_model": "ainouche-abderahmane/DZAIR",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Explore and share videos, music, and more on YouTube, the leading platform for online video streaming and sharing."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/sa",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=ar",
+      "snippet": "نزِّل تطبيق YouTube الرسمي للهواتف والأجهزة اللوحية التي تعمل بنظام التشغيل Android. واطّلِع على المحتوى الذي يشاهده المستخدمون من حول العالم، من الفيديوهات الموسيقية الأكثر رواجًا إلى …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube Kids",
+      "url": "https://www.youtubekids.com/?hl=ar",
+      "snippet": "يوفّر تطبيق YouTube Kids بيئة أكثر أمانًا حيث يمكن للأطفال استكشاف YouTube ويسهل على الوالدَين ومقدّمي الرعاية التحكّم بالمحتوى المتوفّر للأطفال."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Dohyeon1/Qwen3-30B-A3B-Sub-MoE-ngroups96-adaptive",
+  "slug": "dohyeon1-qwen3-30b-a3b-sub-moe-ngroups96-adaptive",
+  "author": "Dohyeon1",
+  "url": "https://huggingface.co/Dohyeon1/Qwen3-30B-A3B-Sub-MoE-ngroups96-adaptive",
+  "created_at": "2026-09-16T01:39:42.000Z",
+  "updated_at": "2026-09-16T01:46:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_moe",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 61078033554,
+  "storage_human": "61.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/?ui=en-US&rs=US",
+      "snippet": "Sign in to access your Microsoft account and manage your emails, calendar, and other features in one place."
+    },
+    {
+      "title": "Outlook Log In | Microsoft 365",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/outlook/log-in?msockid=1f5025d5986367663268320399136693",
+      "snippet": "Sign in to Outlook with Microsoft 365 to access your email, calendar, and more. Download the app or log in online for enhanced …"
+    },
+    {
+      "title": "Microsoft Outlook Personal Email and Calendar | Microsoft 365",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?msockid=1f5025d5986367663268320399136693",
+      "snippet": "Download free Microsoft Outlook email and calendar, plus Office Online apps like Word, Excel, and PowerPoint. Sign in to access …"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/mini/opxdeeplink/mail/inbox",
+      "snippet": "Access your email, calendar, and contacts with Outlook."
+    },
+    {
+      "title": "Outlook - Use the OWA login for email - Microsoft Office",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/outlook/web-email-login-for-outlook?msockid=1f5025d5986367663268320399136693",
+      "snippet": "Stay in touch online. With your Outlook login and Outlook on the web (OWA), you can send email, check your calendar and more …"
+    }
+  ]
+}

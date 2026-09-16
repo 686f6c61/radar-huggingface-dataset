@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sailu4/lmaana-2.1",
+  "slug": "sailu4-lmaana-2-1",
+  "author": "sailu4",
+  "url": "https://huggingface.co/sailu4/lmaana-2.1",
+  "created_at": "2026-09-15T23:31:20.000Z",
+  "updated_at": "2026-09-16T00:42:34.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "fairseq2",
+  "languages": [
+    "ary",
+    "ar"
+  ],
+  "tags": [
+    "fairseq2",
+    "automatic-speech-recognition",
+    "ctc",
+    "darija",
+    "moroccan-arabic",
+    "omnilingual-asr",
+    "code-switching",
+    "ary",
+    "ar",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3903093578,
+  "storage_human": "3.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NCAA College Football news, scores, stats and FBS rankings",
+      "url": "https://www.ncaa.com/sports/football/fbs",
+      "snippet": "Get the top news, scores, highlights and latest trending topics in FBS college football here at NCAA.com."
+    },
+    {
+      "title": "College Football on ESPN - Scores, Stats and Highlights",
+      "url": "https://www.espn.com/college-football/",
+      "snippet": "Visit ESPN for NCAA live scores, video highlights and latest news. Stream exclusive college football games on ESPN and play …"
+    },
+    {
+      "title": "College Football - NCAA Football News, Scores, Standings, Stats and ...",
+      "url": "https://www.cbssports.com/college-football/",
+      "snippet": "CBS Sports has the latest college football news, live scores, stats, standings, fantasy games and projections."
+    },
+    {
+      "title": "College Football Schedule - 2026 Season - ESPN",
+      "url": "https://www.espn.com/college-football/schedule",
+      "snippet": "The complete 2026 NCAAF season schedule on ESPN. Includes game times, TV listings and ticket information for all College …"
+    },
+    {
+      "title": "College football TV schedule and times - NCAA.com",
+      "url": "https://www.ncaa.com/news/football/article/college-football-tv-schedule-game-times-preview",
+      "snippet": "3 days ago · An updated college football TV schedule for the 2026 season, including weekly results and links to live scores."
+    }
+  ]
+}

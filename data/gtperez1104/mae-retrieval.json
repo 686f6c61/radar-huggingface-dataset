@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Gtperez1104/mae-retrieval",
+  "slug": "gtperez1104-mae-retrieval",
+  "author": "Gtperez1104",
+  "url": "https://huggingface.co/Gtperez1104/mae-retrieval",
+  "created_at": "2026-09-15T20:52:31.000Z",
+  "updated_at": "2026-09-15T20:52:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Eventi vicino a me - Aperto Vicino A Me 24",
+      "url": "https://apertovicinoame24.com/trovare/eventi-vicino-a-me/",
+      "snippet": "Cerchi eventi vicino a te? Concerti, partite sportive, spettacoli di comici, teatro, festival e molto altro — scopri in tempo reale cosa …"
+    },
+    {
+      "title": "Cosa fare oggi vicino a me — eventi, concerti e spettacoli ...",
+      "url": "https://eventivicinoame.it/oggi/",
+      "snippet": "1 day ago · Cosa fare oggi vicino a me? Concerti, sport, teatro e spettacoli nella tua zona oggi. Widget GPS aggiornato in tempo reale."
+    },
+    {
+      "title": "Sagre ed eventi vicino a me | SagraMap",
+      "url": "https://sagramap.com/vicino-a-me",
+      "snippet": "Trova sagre, feste e fiere vicino alla tua posizione: inserisci la tua città o usa il GPS e scopri gli eventi nel raggio che preferisci, …"
+    },
+    {
+      "title": "Eventi Lombardia: Sagre, Fiere e Altri Eventi nella Regione Lombardia",
+      "url": "https://www.in-lombardia.it/eventi",
+      "snippet": "Fiere, sagre, concerti, mostre e tanto altro: il ricco patrimonio artistico e culturale della Lombardia rivive ogni anno con un calendario …"
+    },
+    {
+      "title": "Sagre e feste vicino a me — Cosa fare vicino a te oggi e nel weekend ...",
+      "url": "https://festorum.it/eventi/vicino-a-me",
+      "snippet": "22 hours ago · Trova le sagre, le feste patronali e gli eventi più vicini a te in Italia. Geolocalizzati e scopri cosa fare nel fine settimana, …"
+    }
+  ]
+}

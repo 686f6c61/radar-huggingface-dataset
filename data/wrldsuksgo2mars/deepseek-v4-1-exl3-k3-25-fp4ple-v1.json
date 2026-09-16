@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "wrldsuksgo2mars/DeepSeek-V4.1-EXL3-K3.25-FP4PLE-v1",
+  "slug": "wrldsuksgo2mars-deepseek-v4-1-exl3-k3-25-fp4ple-v1",
+  "author": "wrldsuksgo2mars",
+  "url": "https://huggingface.co/wrldsuksgo2mars/DeepSeek-V4.1-EXL3-K3.25-FP4PLE-v1",
+  "created_at": "2026-09-15T22:25:55.000Z",
+  "updated_at": "2026-09-15T22:48:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deepseek_v41",
+    "exl3",
+    "nvfp4",
+    "base_model:wrldsuksgo2mars/DeepSeek-V4.1-EXL3-K3.25-v1",
+    "base_model:quantized:wrldsuksgo2mars/DeepSeek-V4.1-EXL3-K3.25-v1",
+    "license:mit",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 221253127122,
+  "parameters_human": "221.25B",
+  "storage_bytes": 349233063913,
+  "storage_human": "349.2 GB",
+  "base_model": "wrldsuksgo2mars/DeepSeek-V4.1-EXL3-K3.25-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AutoDraw",
+      "url": "https://www.autodraw.com/",
+      "snippet": "Fast drawing for everyone. AutoDraw pairs machine learning with drawings from talented artists to help you draw stuff fast."
+    },
+    {
+      "title": "Kleki - Paint Tool",
+      "url": "https://kleki.com/",
+      "snippet": "Free web-app for painting and editing. Features different brushes, layers, filters, import, upload, pressure sensitivity, and more."
+    },
+    {
+      "title": "Brzo nacrtaj i pogodi Besplatna i elegantna online igra crtanja",
+      "url": "https://www.drawize.com/?lang=hr",
+      "snippet": "Drawize je besplatna i elegantna online igra crtanja poput Pictionaryja — crtaj i pogađaj s prijateljima ili igračima iz cijelog svijeta, bez …"
+    },
+    {
+      "title": "Bojanke za Djecu i Odrasle - ColoringLib",
+      "url": "https://coloringlib.com/hr/",
+      "snippet": "Pronađite veliku biblioteku besplatnih stranica za bojanje za djecu i odrasle na ColoringLib.com. Uživajte u satima kreativne zabave s …"
+    },
+    {
+      "title": "Igre Crtanja - Igrajte Online Besplatno! - Poki",
+      "url": "https://poki.com/sr/crtanja?msockid=3958b9e6ebce6b2439a1ae33ea4e6afb",
+      "snippet": "Zagonetke sa crtanjem Dobićeš problem, a crtanje je jedini alat da ga rešiš. Moraš da smisliš šta da nacrtaš i gde. Na prvi pogled …"
+    }
+  ]
+}

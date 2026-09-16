@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "vtava/Qwen3.5-0.8B-PDelta3-CLVR-Local32",
+  "slug": "vtava-qwen3-5-0-8b-pdelta3-clvr-local32",
+  "author": "vtava",
+  "url": "https://huggingface.co/vtava/Qwen3.5-0.8B-PDelta3-CLVR-Local32",
+  "created_at": "2026-09-15T23:46:39.000Z",
+  "updated_at": "2026-09-15T23:47:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "tinycenn",
+    "cenn",
+    "language-modeling",
+    "research",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 754652720,
+  "parameters_human": "754.7M",
+  "storage_bytes": 1533862317,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Announcing Zotero 9 - Zotero Forums",
+      "url": "https://forums.zotero.org/discussion/130862/announcing-zotero-9",
+      "snippet": "Apr 10, 2026 · Zotero 9 is now available. You can read the full announcement for more details."
+    },
+    {
+      "title": "zetero导入参考文献时，为什么只有标号，下面没有对应的参考文献内 …",
+      "url": "https://www.zhihu.com/question/295377699",
+      "snippet": "zetero 插入引文分两步，第一步是在合适的位置插入第一篇引文，用的是“ Add/Edit Citation ”按钮，第二步是找一个合适的位置放 …"
+    },
+    {
+      "title": "Zotero Forums",
+      "url": "https://forums.zotero.org/post/category/1",
+      "snippet": "Zotero is a free, easy-to-use tool to help you collect, organize, annotate, cite, and share research."
+    },
+    {
+      "title": "zotero如何找到并设置对应期刊的参考论文格式？ - 知乎",
+      "url": "https://www.zhihu.com/question/522887867",
+      "snippet": "Life's short, have fun. CSL Search by Name (citationstyles.org) 进入这个网址，搜索将要投稿的期刊名称，Install，在zotero打开的情 …"
+    }
+  ]
+}

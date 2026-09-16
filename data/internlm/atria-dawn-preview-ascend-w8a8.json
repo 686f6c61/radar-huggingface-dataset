@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "internlm/Atria-Dawn-Preview-Ascend-w8a8",
+  "slug": "internlm-atria-dawn-preview-ascend-w8a8",
+  "author": "internlm",
+  "url": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
+  "created_at": "2026-09-15T12:47:24.000Z",
+  "updated_at": "2026-09-15T22:36:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "glm_moe_dsa",
+    "arxiv:2609.15818",
+    "zh",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 802933129690,
+  "storage_human": "802.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "吉首大学",
+      "url": "https://www.jsu.edu.cn/",
+      "snippet": "Jul 19, 2026 · 吉首大学 02 2026-09 全国高校人工智能通识课程师资培训班暨我校“青椒智汇”学术沙龙顺利举行 25 2026-07 组建专项 …"
+    },
+    {
+      "title": "教务处",
+      "url": "https://jwc.jsu.edu.cn/",
+      "snippet": "May 8, 2026 · 吉首大学音乐舞蹈学院艺术直播与短视频创作实验班开班仪式顺利举行 04-14 我校开展本科教育教学审核评估预评估工 …"
+    },
+    {
+      "title": "吉首大学就业创业信息网",
+      "url": "https://jy.jsu.edu.cn/",
+      "snippet": "我校组织师生参加“百所高校学子地方行”苏州站活动 深化校企协同育人 共筑就业发展平台 ——吉首大学与怀化正大有限公司开展校企 …"
+    },
+    {
+      "title": "吉首大学研究生院",
+      "url": "https://yjsc.jsu.edu.cn/",
+      "snippet": "Jun 16, 2026 · 研院动态 筑牢宿舍安全防线，守护平安和谐校园——吉首大学研究生院开展宿舍安全教育活动 筑牢网络安全防线—— …"
+    },
+    {
+      "title": "吉首大学 - 人事处",
+      "url": "https://renshichu.jsu.edu.cn/",
+      "snippet": "6 days ago · 2025-11-16 吉首大学“双肩挑”岗位人员遴选与管理办法（暂行） 2025-10-21 实施弹性退休制度暂行办法 2025-10-21 关于 …"
+    }
+  ]
+}

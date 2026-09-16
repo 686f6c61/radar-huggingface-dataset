@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "nour-world/muaalem-model-v3",
+  "slug": "nour-world-muaalem-model-v3",
+  "author": "nour-world",
+  "url": "https://huggingface.co/nour-world/muaalem-model-v3",
+  "created_at": "2026-09-15T19:33:49.000Z",
+  "updated_at": "2026-09-15T19:33:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "multi_level_ctc",
+    "generated_from_trainer",
+    "quran",
+    "ASR",
+    "ar",
+    "dataset:obadx/muaalem-annotated-v3",
+    "arxiv:2509.00094",
+    "base_model:facebook/w2v-bert-2.0",
+    "base_model:finetune:facebook/w2v-bert-2.0",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 605754251,
+  "parameters_human": "605.8M",
+  "storage_bytes": 2423129789,
+  "storage_human": "2.4 GB",
+  "base_model": "facebook/w2v-bert-2.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nour (chanteuse française) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Nour_(chanteuse_fran%C3%A7aise)",
+      "snippet": "Nour Brousse, dite Nour, née le 13 décembre 2005 à Versailles, est une interprète française. Révélée en 2019 par The Voice Kids, …"
+    },
+    {
+      "title": "Nour (2026) - MyDramaList",
+      "url": "https://mydramalist.com/808228-nour-the-series",
+      "snippet": "Aug 25, 2026 · Nour is a 2026 Thai Drama Thailand Native title: นูร์. In a city shrouded in mist and desire, a series of bizarre arsons …"
+    },
+    {
+      "title": "Nour The Voice - Facebook",
+      "url": "https://www.facebook.com/Nourthevoice/",
+      "snippet": "Est-ce que vous aussi vous étiez devant The Voice : la plus belle voix la semaine dernière pour voir notre belle Nour The Voice ?? 💙💜 …"
+    },
+    {
+      "title": "Prénom Noûr (fille) : signification, origine, caractère, sainte, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/nour/prenom-7814",
+      "snippet": "Digne de confiance, Nour est une femme à qui on peut confier ses secrets sans la moindre crainte d'être trahi ou mis à nu. Enfant, …"
+    },
+    {
+      "title": "Nour — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Nour",
+      "snippet": "Nour (en arabe : نور ; nūr) est un prénom arabe qui signifie « lumière ». Fréquemment donné en Afrique du Nord mais aussi en perse …"
+    }
+  ]
+}

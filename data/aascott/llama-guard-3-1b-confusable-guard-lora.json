@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "aascott/Llama-Guard-3-1B-Confusable-Guard-LoRA",
+  "slug": "aascott-llama-guard-3-1b-confusable-guard-lora",
+  "author": "aascott",
+  "url": "https://huggingface.co/aascott/Llama-Guard-3-1B-Confusable-Guard-LoRA",
+  "created_at": "2026-09-16T01:23:23.000Z",
+  "updated_at": "2026-09-16T02:26:53.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "llama",
+    "llama-guard",
+    "lora",
+    "safety",
+    "unicode",
+    "confusables",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:meta-llama/Llama-Guard-3-1B",
+    "base_model:adapter:meta-llama/Llama-Guard-3-1B",
+    "license:llama3.2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62328344,
+  "storage_human": "62 MB",
+  "base_model": "meta-llama/Llama-Guard-3-1B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Log ind på Gmail - Computer - Hjælp til Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=da&co=GENIE.Platform%3DDesktop",
+      "snippet": "Du kan åbne Gmail ved at logge ind fra en computer eller føje din konto til Gmail-appen på din telefon eller tablet. Når du er logget …"
+    },
+    {
+      "title": "Inloggen bij Gmail - Computer - Gmail Help - Google Help",
+      "url": "https://support.google.com/mail/answer/8494?hl=nl&co=GENIE.Platform%3DDesktop",
+      "snippet": "Inloggen bij Gmail Als je Gmail wilt openen, kun je inloggen vanaf een computer of je account toevoegen aan de Gmail-app op je …"
+    },
+    {
+      "title": "Đăng nhập vào Gmail - Máy tính - Gmail Trợ giúp",
+      "url": "https://support.google.com/mail/answer/8494?hl=vi&co=GENIE.Platform%3DDesktop",
+      "snippet": "Đăng nhập vào Gmail Mẹo: Nếu bạn đăng nhập vào một máy tính công cộng, hãy nhớ đăng xuất trước khi rời khỏi máy tính. Hãy tìm …"
+    },
+    {
+      "title": "Een Google-account maken voor Gmail - Gmail Help",
+      "url": "https://support.google.com/mail/answer/56256?hl=nl",
+      "snippet": "Belangrijk: Log uit van je huidige account voordat je een nieuw Google-account maakt. Meer informatie over uitloggen bij Gmail. Ga …"
+    },
+    {
+      "title": "Login ke Gmail - Komputer - Bantuan Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=id&co=GENIE.Platform%3DDesktop",
+      "snippet": "Untuk membuka Gmail, Anda dapat login dari komputer atau menambahkan akun Anda ke aplikasi Gmail di ponsel atau tablet Anda. …"
+    }
+  ]
+}

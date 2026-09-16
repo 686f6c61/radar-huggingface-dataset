@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sacca/Qwen3.8-27B-Uncensored-ATX-IQ4_XS-M-MTP",
+  "slug": "sacca-qwen3-8-27b-uncensored-atx-iq4_xs-m-mtp",
+  "author": "sacca",
+  "url": "https://huggingface.co/sacca/Qwen3.8-27B-Uncensored-ATX-IQ4_XS-M-MTP",
+  "created_at": "2026-09-15T20:55:17.000Z",
+  "updated_at": "2026-09-15T20:55:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OUTILLAGE SACCA - L’Annuaire des Entreprises françaises",
+      "url": "https://annuaire-entreprises.data.gouv.fr/entreprise/outillage-sacca-886150192",
+      "snippet": "La société OUTILLAGE SACCA a été créée le 1 janvier 1961, il y a 66 ans. Sa forme juridique est SAS, société par actions simplifiée. …"
+    },
+    {
+      "title": "Société OUTILLAGE SACCA (886150192) à SURY-LE-COMTAL (42450).",
+      "url": "https://www.societe.com/societe/outillage-sacca-886150192.html",
+      "snippet": "Jan 15, 1994 · Dirigeants d'OUTILLAGE SACCA AXENS AUDIT Mandat Commissaire aux comptes titulaire depuis le 28 octobre …"
+    },
+    {
+      "title": "Réservation - Le Sacca",
+      "url": "https://www.hotel-lesacca.com/reservation/",
+      "snippet": "Réserver votre séjour Profitez d’un séjour unique à Cauterets"
+    },
+    {
+      "title": "Hôtel Cauterets - Hôtel Le Sacca 3 étoiles à Cauterets",
+      "url": "https://www.hotel-lesacca.com/",
+      "snippet": "Votre hôtel à Cauterets l'hôtel Le Sacca vous accueille cet hiver pour votre séjour à Cauterets. Bénéficiez de service haut de gamme …"
+    },
+    {
+      "title": "SACCA FRANCE - batirama.com",
+      "url": "https://www.batirama.com/produit/2216-sacca-france.html",
+      "snippet": "SACCA FRANCE ZI des Loges BP 14 42340 VEAUCHE http://www.sacca-france.com PRODUITS |"
+    }
+  ]
+}

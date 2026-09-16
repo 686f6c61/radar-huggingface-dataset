@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Buffalorobotics/tiny-transformer-contrastive-kaggle20-2024",
+  "slug": "buffalorobotics-tiny-transformer-contrastive-kaggle20-2024",
+  "author": "Buffalorobotics",
+  "url": "https://huggingface.co/Buffalorobotics/tiny-transformer-contrastive-kaggle20-2024",
+  "created_at": "2026-09-15T21:24:26.000Z",
+  "updated_at": "2026-09-15T21:24:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "千里江山图ppt-千里江山图ppt模板免费下载-麦克PPT网",
+      "url": "https://www.mikeppt.com/sou-ppt/%E5%8D%83%E9%87%8C%E6%B1%9F%E5%B1%B1%E5%9B%BEppt.html",
+      "snippet": "1 day ago · 麦克PPT网为您168套优质《千里江山图ppt》及相关素材，免费下载。 模板经人工严审，框架完整、设计精美且附赠配套 …"
+    },
+    {
+      "title": "千里江山图PPT-千里江山图PPT下载-LFPPT网",
+      "url": "https://www.lfppt.com/search_%E5%8D%83%E9%87%8C%E6%B1%9F%E5%B1%B1%E5%9B%BE.html",
+      "snippet": "1 day ago · 由于各种各样的原因，关于他的资料很少，我们能知道的只是他是一位北宋画家。 这幅画主要描绘了一些景色。 学习 …"
+    },
+    {
+      "title": "千里江山PPT模板_千里江山PPT模板下载_熊猫办公",
+      "url": "https://www.tukuppt.com/pptmuban/qianlijiangshan.html",
+      "snippet": "熊猫办公网站共为您提供34个千里江山设计素材以及精品千里江山PPT模板下载，汇集全球精品流行的千里江山PPT完整版模板，下载 …"
+    },
+    {
+      "title": "《千里江山图》课件ppt - 百度文库",
+      "url": "https://wenku.baidu.com/view/eb5d5f7b64ec102de2bd960590c69ec3d5bbdb1e.html",
+      "snippet": "f• 还记得我们的第一个问题吗？ 怎样做到“咫尺有千里之趣”？ f• 第一个问题的答案 • 这个时期有青绿山水的传世佳作。 • 纵51.5厘米、 …"
+    },
+    {
+      "title": "千里江山图PPT图片-千里江山图PPT素材-千里江山图PPT ...",
+      "url": "https://www.58pic.com/tupian/qianlijiangshantuPPT.html",
+      "snippet": "千图网为您找到408张千里江山图PPT素材,千图网同时还提供千里江山图PPT相关图片素材、模板，支持PSD/PNG/JPG等多场景使用 …"
+    }
+  ]
+}

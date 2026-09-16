@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "THOMASSMITHna/mobilevit-multitask",
+  "slug": "thomassmithna-mobilevit-multitask",
+  "author": "THOMASSMITHna",
+  "url": "https://huggingface.co/THOMASSMITHna/mobilevit-multitask",
+  "created_at": "2026-09-15T21:13:24.000Z",
+  "updated_at": "2026-09-15T21:13:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Brasil",
+      "url": "https://www.youtube.com/channel/UCUN9lhwfMJRxMVuet7Shg0w",
+      "snippet": "É canal oficial do YouTube Brasil que vocês querem? :D Se inscreve para descobrir as novidades e tendências da plataforma, …"
+    },
+    {
+      "title": "- YouTube",
+      "url": "https://www.youtube.com/shorts",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube UK",
+      "url": "https://www.youtube.com/youtubeuk",
+      "snippet": "YouTube's Edition - Series 1 Play all Discover YouTube with Edition, a video series from YouTube that explores culture and topics …"
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube/videos",
+      "snippet": "Uyen Ninh eats only white asparagus for 24 hours (German Cooking Challenge with @Uyen Ninh) YouTube and Uyen Ninh 966K …"
+    },
+    {
+      "title": "YouTube Canada - YouTube",
+      "url": "https://www.youtube.com/c/YouTubeCanada/videos",
+      "snippet": "Welcome to the YouTube Canada channel, Canada’s go-to for discovering the creators, artists, trends and latest cultural …"
+    }
+  ]
+}

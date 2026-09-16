@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Gonzalezsergio/cross-modal-fusion",
+  "slug": "gonzalezsergio-cross-modal-fusion",
+  "author": "Gonzalezsergio",
+  "url": "https://huggingface.co/Gonzalezsergio/cross-modal-fusion",
+  "created_at": "2026-09-15T22:12:31.000Z",
+  "updated_at": "2026-09-15T22:12:36.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "cross-modal-fusion",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MX Simulator - Index page",
+      "url": "https://forum.mxsimulator.com/",
+      "snippet": "Sep 5, 2018 · General Discussion Post anything about MX Simulator here. Please. I'm begging you. Topics: 10188 10188 Topics …"
+    },
+    {
+      "title": "Adresse GMX bloquée - Autres boîtes mail",
+      "url": "https://forums.commentcamarche.net/forum/affich-38298733-adresse-gmx-bloquee",
+      "snippet": "Jul 10, 2026 · Bonjour, j'utilise une adresse e mail GMX mais le compte a été bloqué par les administrateurs pour une suspicions de …"
+    },
+    {
+      "title": "7-Zip 官方网站怎么下载？ - 知乎",
+      "url": "https://www.zhihu.com/question/20498753",
+      "snippet": "7-Zip 是一个功能强大的工具，特别适合需要 高效压缩 和 解压缩 功能的用户。比如 IT 专业人员、软件开发者或普通用户希望节省磁 …"
+    },
+    {
+      "title": "GMX - Mail - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-36612223-gmx",
+      "snippet": "Apr 27, 2020 · Bonjour, On me demande de passer ( GMX.net ) alors jusqu’à présent j’étais (GMX.fr ) je désir conserver ( GMX.fr) et …"
+    },
+    {
+      "title": "JGMX: Dew Island - MX Simulator",
+      "url": "https://forum.mxsimulator.com/viewtopic.php?t=60228",
+      "snippet": "Jun 8, 2013 · Welcome to Dew Island! The Dew boys and I have been cooking this up for a few months now and we couldn't be …"
+    }
+  ]
+}

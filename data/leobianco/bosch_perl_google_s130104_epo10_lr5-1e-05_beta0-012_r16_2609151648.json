@@ -5,7 +5,7 @@
   "author": "leobianco",
   "url": "https://huggingface.co/leobianco/bosch_PERL_google_S130104_epo10_lr5.1e-05_beta0.012_r16_2609151648",
   "created_at": "2026-09-15T16:49:03.000Z",
-  "updated_at": "2026-09-15T18:24:02.000Z",
+  "updated_at": "2026-09-15T19:03:17.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 86756011,
-  "storage_human": "87 MB",
+  "storage_bytes": 123141419,
+  "storage_human": "123 MB",
   "base_model": "google/gemma-4-E4B-it",
   "formats": [
     "safetensors"

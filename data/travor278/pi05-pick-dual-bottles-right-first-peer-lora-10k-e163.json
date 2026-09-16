@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Travor278/pi05-pick-dual-bottles-right-first-peer-lora-10k-e163",
+  "slug": "travor278-pi05-pick-dual-bottles-right-first-peer-lora-10k-e163",
+  "author": "Travor278",
+  "url": "https://huggingface.co/Travor278/pi05-pick-dual-bottles-right-first-peer-lora-10k-e163",
+  "created_at": "2026-09-15T22:30:51.000Z",
+  "updated_at": "2026-09-15T22:32:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi05",
+    "jax",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335578562,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "סליחות, עדות המזרח - הידברות",
+      "url": "https://www.hidabroot.org/article/74453",
+      "snippet": "Aug 29, 2021 · אלו הן סליחות בנוסח ע דות המזרח, שניתן למצוא גם בכל סידור סליחות עדות ה מזרח. סדר סליחות עדות המזרח מובא כאן במלואו, כדי …"
+    },
+    {
+      "title": "נוסח סליחות יחיד - הידברות",
+      "url": "https://www.hidabroot.org/article/212732",
+      "snippet": "Aug 25, 2021 · נוסח הסליחות מתוך אתר דעת יש נוהגים לומר: קַמְתִּי בְּאַשְׁמורֶת אַשְׁרֵי יושְׁבֵי בֵיתֶךָ בֶּן אָדָם, מַה לְּךָ נִרְדָּם לְךָ אֲדנָי הַצְּדָקָה אָתָאנוּ עַל שִׁמְך …"
+    },
+    {
+      "title": "נוסח הסליחות שנאמר בכותל המערבי | סליחות נוסח עדות המזרח",
+      "url": "https://prayer.thekotel.org/ar/holiday-prayers/selichot/",
+      "snippet": "אדון הסליחות – בשירה אֲדוֹן הַסְּלִיחוֹת. בוֹחֵן לְבָבוֹת. גּוֹלֶה עֲמוּקוֹת. דוֹבֵר צְדָקוֹת. חָטָאנוּ לְפָנֶיךָ רַחֵם עָלֵינוּ: הדָוּר בְּנִפְלָאוֹת. ותִיק בְּנֶחָמוֹת. זוֹכֵר בְּרִית ..."
+    },
+    {
+      "title": "הנוסח המלא לאמירת סליחות יחיד - מוקד תהילים ארצי",
+      "url": "https://www.tehillim-center.co.il/article/870",
+      "snippet": "Aug 3, 2019 · פספסתם את הסליחות בבית הכנסת, ובכל זאת חשקה נפשכם לערוך את התפילות בבית? לפניכם הנוסח המלא (לבני עדות המזרח)"
+    },
+    {
+      "title": "סליחות בשידור חי | סליחות 2026 בכותל המערבי - האתר הרשמי של …",
+      "url": "https://thekotel.org/he/%D7%97%D7%93%D7%A9%D7%95%D7%AA-%D7%94%D7%9B%D7%95%D7%AA%D7%9C/%D7%97%D7%92%D7%99%D7%9D-%D7%95%D7%9E%D7%95%D7%A2%D7%93%D7%99%D7%9D/%D7%A1%D7%9C%D7%99%D7%97%D7%95%D7%AA/",
+      "snippet": "Sep 26, 2024 · רוצים לשים פתק בכותל ואין באפשרותכם להגיע באופן אישי? סיורי סליחות בעקבות הפיוטים בשעות המיוחדות של הלילה. סיור סליחות …"
+    }
+  ]
+}

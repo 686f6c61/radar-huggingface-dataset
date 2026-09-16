@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Ryang2007/mocov3-baseline",
+  "slug": "ryang2007-mocov3-baseline",
+  "author": "Ryang2007",
+  "url": "https://huggingface.co/Ryang2007/mocov3-baseline",
+  "created_at": "2026-09-15T21:20:38.000Z",
+  "updated_at": "2026-09-15T21:20:44.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil - France Titres (ANTS)",
+      "url": "https://ants.gouv.fr/",
+      "snippet": "France Titres vous accompagne au quotidien dans la réalisation de vos démarches en ligne concernant l’immatriculation, le permis …"
+    },
+    {
+      "title": "Accueil - Immatriculation - France Titres (ANTS)",
+      "url": "https://immatriculation.ants.gouv.fr/",
+      "snippet": "Bienvenue sur le site dédié à l'immatriculation des véhicules France Titres vous accompagne au quotidien dans la réalisation de vos …"
+    },
+    {
+      "title": "Accueil - Permis - France Titres (ANTS)",
+      "url": "https://permisdeconduire.ants.gouv.fr/",
+      "snippet": "Apr 22, 2026 · Immatriculation : immatriculation.ants.gouv.fr Permis de conduire : permisdeconduire.ants.gouv.fr Carte d'identité et …"
+    },
+    {
+      "title": "Vendre ou donner votre véhicule",
+      "url": "https://immatriculation.ants.gouv.fr/demarches-en-ligne/vendre-ou-donner-votre-vehicule",
+      "snippet": "Vous souhaitez vendre ou donner votre véhicule ? Découvrez les démarches à suivre sur l'ANTS."
+    },
+    {
+      "title": "CNI-Passeport - Accueil - Passeport - France Titres (ANTS)",
+      "url": "https://passeport.ants.gouv.fr/",
+      "snippet": "Apr 24, 2026 · Bienvenue sur le site dédié aux cartes d'identité et aux passeports France Titres vous accompagne au quotidien dans …"
+    }
+  ]
+}

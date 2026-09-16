@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "fengjchen/blip-checkpoint",
+  "slug": "fengjchen-blip-checkpoint",
+  "author": "fengjchen",
+  "url": "https://huggingface.co/fengjchen/blip-checkpoint",
+  "created_at": "2026-09-15T19:56:04.000Z",
+  "updated_at": "2026-09-15T19:56:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "outlookメールボックスが開けません - Microsoft コミュニティ",
+      "url": "https://answers.microsoft.com/ja-jp/outlook_com/forum/all/outlook%E3%83%A1%E3%83%BC%E3%83%AB%E3%83%9C/18e25a78-7de9-4f0d-b1dd-288ffe025a28",
+      "snippet": "当方、使用OSは7です。 最近、ハードディスクを頻繁に読みに行き動作が重くなることが多かったので コントロールパネル→管理 …"
+    },
+    {
+      "title": "Пропал диск Д после перезагрузки ноутбука - Сообщество Microsoft",
+      "url": "https://answers.microsoft.com/ru-ru/windows/forum/all/%D0%BF%D1%80%D0%BE%D0%BF%D0%B0%D0%BB/8fd52a95-b651-43b6-b358-8d6efdae7694",
+      "snippet": "Добрый день. Вчера вечером выключил ноутбук как обычно. Сегодня включаю и при запуске приложений которые были …"
+    },
+    {
+      "title": "Atualização para o Windows 10 - Microsoft Community",
+      "url": "https://answers.microsoft.com/pt-br/msoffice/forum/all/atualiza%C3%A7%C3%A3o-para-o-windows-10/9f80ec23-1aba-4eef-b9ee-8d05aba28c21",
+      "snippet": "Recentemente comprei o pacote Office para o windows 8.1 e instalei no meu notebook, para a minha surpresa, logo depois disso …"
+    },
+    {
+      "title": "[Info] Icones personnalisées pour (tous) les disques Windows 10.",
+      "url": "https://answers.microsoft.com/fr-fr/windows/forum/all/info-icones-personnalis%C3%A9es-pour-tous-les/1021ba5a-064c-4d16-be7b-dbda1d3ea838",
+      "snippet": "Bonjour à toutes et tous. Pour ceux que cela intéresser, j'ai réunis quelqu'un des codes correspondants icônes disque de base que …"
+    },
+    {
+      "title": "No procesa pago de la suscripción mensual - Microsoft Community",
+      "url": "https://answers.microsoft.com/es-es/xbox/forum/all/no-procesa-pago-de-la-suscripci%C3%B3n-mensual/9a7b6167-708d-49cc-9452-55e8ef48bc54",
+      "snippet": "Respuestas (1) GC Gerardo C. Asesor independiente Respondido el 11 de abril de 2023 ¡Hola Kasanky, espero que te encuentres …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "oozkanemre88/contrastive",
+  "slug": "oozkanemre88-contrastive",
+  "author": "oozkanemre88",
+  "url": "https://huggingface.co/oozkanemre88/contrastive",
+  "created_at": "2026-09-15T20:09:15.000Z",
+  "updated_at": "2026-09-15T20:09:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BBC News - Breaking news, video and the latest top stories from the …",
+      "url": "https://www.bbc.com/news",
+      "snippet": "Visit BBC News for the latest news, breaking news, video, audio and analysis. BBC News provides trusted World, U.S. and U.K. …"
+    },
+    {
+      "title": "Home - BBC News",
+      "url": "https://www.bbc.co.uk/news",
+      "snippet": "Visit BBC News for up-to-the-minute news, breaking news, video, audio and feature stories. BBC News provides trusted World and …"
+    },
+    {
+      "title": "World | Latest News & Updates | BBC News",
+      "url": "https://www.bbc.co.uk/news/world",
+      "snippet": "Get all the latest news, live updates and content about the World from across the BBC."
+    },
+    {
+      "title": "World | Latest News & Updates | BBC News",
+      "url": "https://www.bbc.com/news/world",
+      "snippet": "Get all the latest news, live updates and content about the World from across the BBC."
+    },
+    {
+      "title": "BBC News - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/BBC_News",
+      "snippet": "BBC News' domestic, global and online news divisions are housed within the largest live newsroom in Europe, in Broadcasting House …"
+    }
+  ]
+}

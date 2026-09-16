@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "UntMods/FaceSwap_MiniMaxH3_REF2VA",
+  "slug": "untmods-faceswap_minimaxh3_ref2va",
+  "author": "UntMods",
+  "url": "https://huggingface.co/UntMods/FaceSwap_MiniMaxH3_REF2VA",
+  "created_at": "2026-09-15T20:51:24.000Z",
+  "updated_at": "2026-09-15T21:24:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 230854037,
+  "storage_human": "231 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FATAL (M. YOUN) 2010 Streaming Gratis VF - Dailymotion",
+      "url": "https://www.dailymotion.com/video/x809l3w",
+      "snippet": "Mar 29, 2021 · FATAL À PARTIR DE 10 ANS 16 juin 2010 / 1h 35min / Comédie, Musical De Michaël Youn Avec Michaël Youn, …"
+    },
+    {
+      "title": "Fatale Streaming Film Suspense 1h42 2020 - CANAL VOD",
+      "url": "https://vod.canalplus.com/cinema/fatale/h/16199079_40099/streaming/",
+      "snippet": "Streaming Fatale: Après avoir passé une nuit avec une inconnue, un homme marié se retrouve piégé dans une spirale meurtrière par …"
+    },
+    {
+      "title": "Fatale en VOD à l'achat ou en location | CANAL+",
+      "url": "https://www.canalplus.com/cinema/fatale/h/16199079_40099",
+      "snippet": "Après avoir passé une nuit avec une inconnue, un homme marié se retrouve piégé dans une spirale meurtrière par sa maîtresse d'un …"
+    },
+    {
+      "title": "Fatal en streaming direct et replay sur CANAL+ | CANAL+",
+      "url": "https://www.canalplus.com/cinema/fatal/h/120097_50002",
+      "snippet": "Un rappeur hardcore a menti sur ses origines en faisant croire qu'il était né dans un ghetto alors qu'il a grandi dans un petit village de …"
+    },
+    {
+      "title": "Fatal - Apple TV",
+      "url": "https://tv.apple.com/fr/movie/fatal/umc.cmc.1c0w1ieu8l5pd9zk55pq8hn4c",
+      "snippet": "Le film Fatal raconte ce que serait devenu ce rappeur s’il en avait vendu… 15 millions ! Fatal est désormais une énorme star. Des …"
+    }
+  ]
+}

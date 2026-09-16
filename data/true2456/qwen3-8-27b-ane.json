@@ -5,7 +5,7 @@
   "author": "True2456",
   "url": "https://huggingface.co/True2456/Qwen3.8-27B-ANE",
   "created_at": "2026-09-14T22:22:03.000Z",
-  "updated_at": "2026-09-15T00:30:24.000Z",
+  "updated_at": "2026-09-15T12:16:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -20,6 +20,7 @@
     "qwen",
     "qwen3.8",
     "pure-ane",
+    "qwen-ane",
     "license:apache-2.0",
     "region:us"
   ],

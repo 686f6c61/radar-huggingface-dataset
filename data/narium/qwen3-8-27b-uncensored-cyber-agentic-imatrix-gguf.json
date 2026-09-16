@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Narium/Qwen3.8-27B-Uncensored-Cyber-agentic-imatrix-GGUF",
+  "slug": "narium-qwen3-8-27b-uncensored-cyber-agentic-imatrix-gguf",
+  "author": "Narium",
+  "url": "https://huggingface.co/Narium/Qwen3.8-27B-Uncensored-Cyber-agentic-imatrix-GGUF",
+  "created_at": "2026-09-15T23:30:41.000Z",
+  "updated_at": "2026-09-15T23:30:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "imatrix",
+    "quantized",
+    "agentic",
+    "qwen3",
+    "llama.cpp",
+    "v100",
+    "uncensored",
+    "abliterated",
+    "cyber",
+    "image-text-to-text",
+    "base_model:philbert440/Qwen3.8-27B-Uncensored-Cyber",
+    "base_model:quantized:philbert440/Qwen3.8-27B-Uncensored-Cyber",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3391984,
+  "parameters_human": "3.4M",
+  "storage_bytes": 32596672672,
+  "storage_human": "32.6 GB",
+  "base_model": "philbert440/Qwen3.8-27B-Uncensored-Cyber",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XOXX - TIDAL",
+      "url": "https://tidal.com/artist/8255535",
+      "snippet": "See the releases of XOXX on TIDAL Transfer your music for free Bring all your favorite playlists, artists, tracks, and albums to TIDAL."
+    },
+    {
+      "title": "Xoxx Xoxx - Facebook",
+      "url": "https://www.facebook.com/61555870840894/",
+      "snippet": "Xoxx Xoxx. 383,741 likes · 39 talking about this. ‎🚀محتوى فيديوهات🚀فولوا متابع🚀 🙏صلي علي سيدنا محمد🙏‎"
+    },
+    {
+      "title": "XOXX - Listen Free on Audiomack",
+      "url": "https://audiomack.com/xoxx",
+      "snippet": "Stream new music from XOXX for free on Audiomack, including the latest songs, albums, mixtapes and playlists."
+    },
+    {
+      "title": "XOXX: albums, songs, concerts | Deezer",
+      "url": "https://www.deezer.com/en/artist/10982258",
+      "snippet": "Listen to XOXX on Deezer: the full discography, top albums and songs, concerts and featured music. Sign up for free!"
+    },
+    {
+      "title": "Xnxx.Com, Xnxx, Xxnxx, Xnxx Porn, Xnxx Tube, Xnxxx Video, Xnxx …",
+      "url": "https://xnxx-xxx.net/hits",
+      "snippet": "Xnxx.Com, Xnxx, Xxnxx, Xnxx Porn, Xnxx Tube, Xnxxx Video, Xnxx Porno 2018"
+    }
+  ]
+}

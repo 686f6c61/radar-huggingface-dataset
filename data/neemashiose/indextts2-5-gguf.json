@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "NeemaShioSe/IndexTTS2.5.gguf",
+  "slug": "neemashiose-indextts2-5-gguf",
+  "author": "NeemaShioSe",
+  "url": "https://huggingface.co/NeemaShioSe/IndexTTS2.5.gguf",
+  "created_at": "2026-09-13T12:11:49.000Z",
+  "updated_at": "2026-09-16T02:53:34.000Z",
+  "license": "bilibili-model-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 46,
+  "trending_score": 0,
+  "parameters": 1668885431,
+  "parameters_human": "1.67B",
+  "storage_bytes": 8708311232,
+  "storage_human": "8.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vault 7: CIA Hacking Tools Revealed - WikiLeaks",
+      "url": "https://wikileaks.org/ciav7p1/",
+      "snippet": "Today, Tuesday 7 March 2017, WikiLeaks begins its new series of leaks on the U.S. Central Intelligence Agency. Code-named \"Vault …"
+    },
+    {
+      "title": "Vault 7 - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Vault_7",
+      "snippet": "Vault 7 is a series of documents that WikiLeaks began to publish on 7 March 2017, detailing the activities and capabilities of the …"
+    },
+    {
+      "title": "WikiLeaks - Vault 7: Projects",
+      "url": "https://wikileaks.org/vault7/",
+      "snippet": "Today, September 7th 2017, WikiLeaks publishes four secret documents from the Protego project of the CIA, along with 37 related …"
+    },
+    {
+      "title": "Vault 7 - our.wikileaks.org",
+      "url": "https://our.wikileaks.org/Vault_7",
+      "snippet": "2017/02/04 - WikiLeak's publication of Vault 7 begins its new series of leaks on the U.S. Central Intelligence Agency. Code-named …"
+    },
+    {
+      "title": "Wikileaks and the CIA: What’s in Vault7? - Council on Foreign Relations",
+      "url": "https://www.cfr.org/articles/wikileaks-and-cia-whats-vault7",
+      "snippet": "Mar 8, 2017 · On Tuesday, Wikileaks released a huge cache of documents it said were descriptions of CIA cyber tools used to break …"
+    }
+  ]
+}

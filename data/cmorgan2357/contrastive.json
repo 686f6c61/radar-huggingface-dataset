@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "cmorgan2357/contrastive",
+  "slug": "cmorgan2357-contrastive",
+  "author": "cmorgan2357",
+  "url": "https://huggingface.co/cmorgan2357/contrastive",
+  "created_at": "2026-09-15T22:13:40.000Z",
+  "updated_at": "2026-09-15T22:13:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Make a Playlist on TikTok Easily | Goread",
+      "url": "https://goread.io/resources/how-to-make-a-playlist-on-tiktok-for-maximum-engagement/",
+      "snippet": "Aug 13, 2024 · Learn how to make a playlist on TikTok with our guide. Uncover the benefits of having a playlist on the platform and …"
+    },
+    {
+      "title": "Creating videos - TikTok Help Center",
+      "url": "https://support.tiktok.com/en/using-tiktok/creating-videos/create-playlists-of-your-videos",
+      "snippet": "Editing TikTok videos and photos Duets Stitch TikTok Stories Credit a video Add Yours Books Accessibility for your videos Effect …"
+    },
+    {
+      "title": "Watch videos in a playlist - TikTok Help Center",
+      "url": "https://support.tiktok.com/en/using-tiktok/exploring-videos/watch-videos-in-a-playlist",
+      "snippet": "Watch videos in a playlist Creator Playlists allows creators to categorize their public videos into playlists to make it easier for you to …"
+    },
+    {
+      "title": "TikTok playlists: How to Create and Share Playlists on TikTok to …",
+      "url": "https://fastercapital.com/content/TikTok-playlists--How-to-Create-and-Share-Playlists-on-TikTok-to-Curate-Your-Favorite-Music-and-Videos-and-Discover-New-Content.html",
+      "snippet": "Aug 25, 2026 · TikTok is a popular social media platform that allows users to create and share short videos with music, filters, …"
+    },
+    {
+      "title": "How to Collab on TikTok A Creator's Guide - JoinBrands",
+      "url": "https://joinbrands.com/blog/how-to-collab-on-tiktok/",
+      "snippet": "Aug 17, 2026 · Learn how to collab on TikTok with this complete guide. Discover how to find partners, pitch ideas, and use features …"
+    }
+  ]
+}

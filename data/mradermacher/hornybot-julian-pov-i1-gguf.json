@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Hornybot-Julian-POV-i1-GGUF",
+  "slug": "mradermacher-hornybot-julian-pov-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Hornybot-Julian-POV-i1-GGUF",
+  "created_at": "2026-09-15T19:13:54.000Z",
+  "updated_at": "2026-09-15T21:00:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3.5",
+    "llama.cpp",
+    "conversational",
+    "roleplay",
+    "adult",
+    "first-person",
+    "en",
+    "base_model:axiomofmind/Hornybot-Julian-POV",
+    "base_model:quantized:axiomofmind/Hornybot-Julian-POV",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 110211491296,
+  "storage_human": "110.2 GB",
+  "base_model": "axiomofmind/Hornybot-Julian-POV",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تسجيل الدخول إلى Gmail - جهاز الكمبيوتر - مساعدة Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "تسجيل الدخول إلى Gmail ملاحظة: إذا سجّلت الدخول على جهاز كمبيوتر متاح للجميع، احرص على تسجيل الخروج قبل مغادرة جهاز الكمبيوتر. تعرَّف على كيفية تسجيل الدخول على جهاز لا تملكه."
+    },
+    {
+      "title": "البحث عن تطبيق \"متجر Google Play\" - مساعدة Google Play",
+      "url": "https://support.google.com/googleplay/answer/190860?hl=ar",
+      "snippet": "على جهازك، انتقِل إلى قسم \"التطبيقات\". انقر على \"متجر Google Play\" . سيتم فتح التطبيق وستتمكّن من البحث عن المحتوى وتصفُّحه لتنزيله."
+    },
+    {
+      "title": "الفيس بوك لايت لا يشتغل - منتدى تطبيقات Google",
+      "url": "https://support.google.com/googleplay/thread/338432407/%D8%A7%D9%84%D9%81%D9%8A%D8%B3-%D8%A8%D9%88%D9%83-%D9%84%D8%A7%D9%8A%D8%AA-%D9%84%D8%A7-%D9%8A%D8%B4%D8%AA%D8%BA%D9%84?hl=ar",
+      "snippet": "جرّب الخطوات التالية إذا كان أحدث التطبيقات المثبّتة على هاتفك يواجه أي من هذه المشاكل:"
+    },
+    {
+      "title": "تم اختراغ حسابي على فيسبوك وفقدت صفحتي علي فيسبوك",
+      "url": "https://support.google.com/accounts/thread/414710652/%D8%AA%D9%85-%D8%A7%D8%AE%D8%AA%D8%B1%D8%A7%D8%BA-%D8%AD%D8%B3%D8%A7%D8%A8%D9%8A-%D8%B9%D9%84%D9%89-%D9%81%D9%8A%D8%B3%D8%A8%D9%88%D9%83-%D9%88%D9%81%D9%82%D8%AF%D8%AA-%D8%B5%D9%81%D8%AD%D8%AA%D9%8A-%D8%B9%D9%84%D9%8A-%D9%81%D9%8A%D8%B3%D8%A8%D9%88%D9%83?hl=ar",
+      "snippet": "هلا وغلا فيك في منتدى مساعدة Google باللغة العربية فلا تتردد في طرح أي سؤال اواي استفساراواي ..."
+    },
+    {
+      "title": "تسجيل الدخول والخروج من YouTube",
+      "url": "https://support.google.com/youtube/answer/3802431?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "عند تسجيل الدخول إلى YouTube، يمكنك استخدام ميزات مثل الاشتراكات وقوائم التشغيل وعمليات الشراء والسجلّ. ملاحظة: يجب أن يكون لديك حساب Google لتسجيل الدخول إلى YouTube."
+    }
+  ]
+}

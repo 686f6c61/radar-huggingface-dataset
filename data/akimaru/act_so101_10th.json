@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "akimaru/act_so101_10th",
+  "slug": "akimaru-act_so101_10th",
+  "author": "akimaru",
+  "url": "https://huggingface.co/akimaru/act_so101_10th",
+  "created_at": "2026-08-05T12:11:42.000Z",
+  "updated_at": "2026-09-15T22:34:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:akimaru/newhouse",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 620118376,
+  "storage_human": "620 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "运动医学刘兴旺 - 知乎",
+      "url": "https://www.zhihu.com/people/liu-xing-wang-57-60",
+      "snippet": "Oct 8, 2022 · 华山医院运动医学科医生、博士（后），东北人儿 回答数 0，获得 0 次赞同"
+    },
+    {
+      "title": "有谁知道上海华山皮肤科医院怎样挂专家号:？ - 知乎",
+      "url": "https://www.zhihu.com/question/265620740",
+      "snippet": "【首先我觉得哪些人比较适合来这里看呢】 1、就在上海，来这很方便 2、江浙沪附近能支持至少一个月一次的复诊 3、情况特别严 …"
+    },
+    {
+      "title": "上海地区有哪些医院治疗运动伤比较靠谱？ - 知乎",
+      "url": "https://www.zhihu.com/question/31120599?sort=created",
+      "snippet": "复旦大学附属华山医院运动医学科的前身是“上海医学院医疗体育教研室”，成立于1958年,是中国运动医学和康复医学的创始单位之一， …"
+    },
+    {
+      "title": "伍宁 华山胸外科 - 知乎",
+      "url": "https://www.zhihu.com/people/wvning",
+      "snippet": "Aug 30, 2026 · 这件事情有意思的是100名军人跟20位刑满释放人员的数量配比。背后肯定是有高人的。 作为搞心理学的，这些人的心 …"
+    },
+    {
+      "title": "上海华山医院皮肤科看痘痘效果怎么样呀～？ - 知乎",
+      "url": "https://www.zhihu.com/question/60359780",
+      "snippet": "上海华山医院皮肤科看痘痘完整记录 我从高中就断断续续长痘痘，时好时坏，以前就是两颊和鼻翼长痘痘，最近突然两边下颚线爆痘 …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "ehzawad",
   "url": "https://huggingface.co/ehzawad/stt_bn_fastconformer_ctc",
   "created_at": "2026-09-15T10:38:42.000Z",
-  "updated_at": "2026-09-15T10:58:08.000Z",
+  "updated_at": "2026-09-15T22:15:04.000Z",
   "license": "cc-by-sa-4.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",

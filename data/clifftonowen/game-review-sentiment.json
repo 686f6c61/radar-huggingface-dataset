@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Clifftonowen/game-review-sentiment",
+  "slug": "clifftonowen-game-review-sentiment",
+  "author": "Clifftonowen",
+  "url": "https://huggingface.co/Clifftonowen/game-review-sentiment",
+  "created_at": "2026-09-15T20:01:53.000Z",
+  "updated_at": "2026-09-15T20:05:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "distilbert",
+    "text-classification",
+    "quantized",
+    "sentiment-analysis",
+    "en",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:quantized:distilbert/distilbert-base-uncased",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 67348161,
+  "storage_human": "67 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps aktualisieren - Android - Google Maps-Hilfe",
+      "url": "https://support.google.com/maps/answer/3615175?hl=de&co=GENIE.Platform%3DAndroid",
+      "snippet": "Google Maps aktualisieren Tipp:Wenn Sie Probleme mit Downloads und Updates für Google Maps haben, können Sie diese mit …"
+    },
+    {
+      "title": "Mettre à jour Google Maps",
+      "url": "https://support.google.com/maps/answer/3615175?hl=fr&co=GENIE.Platform%3DAndroid",
+      "snippet": "Mettre à jour Google Maps Conseil : Si vous rencontrez des problèmes de téléchargement et de mise à jour de Google Maps, vous …"
+    },
+    {
+      "title": "Erste Schritte mit Google Maps",
+      "url": "https://support.google.com/maps/answer/144349?hl=de&co=GENIE.Platform%3DiOS",
+      "snippet": "Google Maps-Widgets für iOS hinzufügen und anpassen Wenn Sie Ankunftszeiten und aktuelle Verkehrsinformationen für Ihre …"
+    },
+    {
+      "title": "My Maps-Hilfe - Google Help",
+      "url": "https://support.google.com/mymaps/?hl=de",
+      "snippet": "Offizielle My Maps-Hilfe, in der Sie Tipps und Lernprogramme zur Verwendung des Produkts sowie weitere Antworten auf häufig …"
+    },
+    {
+      "title": "Guida di Maps",
+      "url": "https://support.google.com/maps/?hl=it",
+      "snippet": "Centro assistenza ufficiale di Maps in cui puoi trovare suggerimenti e tutorial sull'utilizzo del prodotto, oltre ad altre risposte alle …"
+    }
+  ]
+}

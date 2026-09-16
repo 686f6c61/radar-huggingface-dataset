@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "cqroberts1992/matching-exp90",
+  "slug": "cqroberts1992-matching-exp90",
+  "author": "cqroberts1992",
+  "url": "https://huggingface.co/cqroberts1992/matching-exp90",
+  "created_at": "2026-09-16T00:43:10.000Z",
+  "updated_at": "2026-09-16T00:43:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How do I sign in to Classroom? - Google Help",
+      "url": "https://support.google.com/edu/classroom/answer/6072460?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Go to classroom.google.com. Click Go to Classroom. Enter the email address for your Classroom account. Click Next. Enter your …"
+    },
+    {
+      "title": "Classroom にログインする - パソコン - Classroom ヘルプ",
+      "url": "https://support.google.com/edu/classroom/answer/6072460?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "ログインする前に ログインするには、インターネットに接続している必要があります。 Classroom へのログイン方法をご存知の場 …"
+    },
+    {
+      "title": "googleclassroomcode - Reddit",
+      "url": "https://www.reddit.com/r/googleclassroomcode/",
+      "snippet": "r/googleclassroomcode: Send google classroom codes to raid Let's look back at some memorable moments and interesting insights …"
+    },
+    {
+      "title": "What are the top alternatives to Google Classroom? - Reddit",
+      "url": "https://www.reddit.com/r/education/comments/f90ph2/what_are_the_top_alternatives_to_google_classroom/",
+      "snippet": "More based on my experience of using Google Classroom and Schoology, plus my general opinion, but Google Classroom is a poor …"
+    },
+    {
+      "title": "Descargar la aplicación Classroom - Google Help",
+      "url": "https://support.google.com/edu/classroom/answer/6118412?hl=es",
+      "snippet": "Busca la aplicación Google Classroom e instálala. Instalar la aplicación Classroom en un iPhone o iPad Tu dispositivo debe tener …"
+    }
+  ]
+}

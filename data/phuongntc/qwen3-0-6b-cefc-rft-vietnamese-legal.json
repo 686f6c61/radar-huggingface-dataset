@@ -5,7 +5,7 @@
   "author": "phuongntc",
   "url": "https://huggingface.co/phuongntc/qwen3-0.6b-cefc-rft-vietnamese-legal",
   "created_at": "2026-09-12T01:04:32.000Z",
-  "updated_at": "2026-09-14T08:45:13.000Z",
+  "updated_at": "2026-09-16T01:15:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 60,
+  "downloads_30d": 80,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

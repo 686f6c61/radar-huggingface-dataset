@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "aixk/ab10-130m",
+  "slug": "aixk-ab10-130m",
+  "author": "aixk",
+  "url": "https://huggingface.co/aixk/ab10-130m",
+  "created_at": "2026-09-14T00:57:50.000Z",
+  "updated_at": "2026-09-16T02:25:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 296948194184,
+  "storage_human": "296.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Telenet Webmail",
+      "url": "http://webmail.telenet.be/",
+      "snippet": "Wij willen hier een beschrijving geven, maar de site die u nu bekijkt staat dit niet toe."
+    },
+    {
+      "title": "Aanmelden op Telenet Webmail | MyTelenet",
+      "url": "https://www2.telenet.be/residential/nl/klantenservice/internet/e-mail/aanmelden-op-telenet-webmail.html",
+      "snippet": "Eenvoudig inloggen op Telenet Webmail met je Telenet e-mailadres en wachtwoord. Blijf aangemeld en beheer je e-mails moeiteloos."
+    },
+    {
+      "title": "Telenet: Meld je aan",
+      "url": "https://login.prd.telenet.be/openid/login",
+      "snippet": "Oeps, er ging iets mis. Probeer later opnieuw."
+    },
+    {
+      "title": "Je e-mail | MyTelenet",
+      "url": "https://www2.telenet.be/residential/nl/klantenservice/internet/e-mail.html",
+      "snippet": "Hoe je e-mail instellen, een extra mailbox aanmaken of aanmelden op je Webmail? Lees er alles over op onze Klantenservice-website."
+    },
+    {
+      "title": "Telenet: Meld je aan",
+      "url": "https://login.prd.telenet.be/openid/login?lang=nl&error=session_expired",
+      "snippet": "Je sessie is verlopen, gelieve opnieuw in te loggen."
+    }
+  ]
+}

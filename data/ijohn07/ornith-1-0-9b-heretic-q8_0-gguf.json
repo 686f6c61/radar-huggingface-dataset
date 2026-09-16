@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ijohn07/Ornith-1.0-9B-heretic-Q8_0-GGUF",
+  "slug": "ijohn07-ornith-1-0-9b-heretic-q8_0-gguf",
+  "author": "ijohn07",
+  "url": "https://huggingface.co/ijohn07/Ornith-1.0-9B-heretic-Q8_0-GGUF",
+  "created_at": "2026-09-15T20:46:12.000Z",
+  "updated_at": "2026-09-15T20:46:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "base_model:trohrbaugh/Ornith-1.0-9B-heretic",
+    "base_model:quantized:trohrbaugh/Ornith-1.0-9B-heretic",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 9527493728,
+  "storage_human": "9.5 GB",
+  "base_model": "trohrbaugh/Ornith-1.0-9B-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grounding with Bing | Microsoft Bing",
+      "url": "https://www.microsoft.com/en-us/bing/apis?msockid=1479e2b9d54d67601208f56cd4b4660f",
+      "snippet": "Enhance your large language models with real-time, web-based insights. Leverage Bing Search APIs to provide your model with the …"
+    },
+    {
+      "title": "Bing Web Search API | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/java/api/overview/azure/cognitiveservices/bing-web-search-api-readme?view=azure-java-stable",
+      "snippet": "Oct 30, 2020 · Bing Search APIs are moving from Cognitive Services to Bing Search Services. Starting October 30, 2020, any new …"
+    },
+    {
+      "title": "Use Grounding with Bing Search tools with the agents API - Microsoft ...",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/bing-tools",
+      "snippet": "Aug 19, 2026 · The following REST API examples demonstrate how to use Grounding with Bing Search and Grounding with Bing …"
+    },
+    {
+      "title": "Bing Search API · Apify",
+      "url": "https://apify.com/api/bing-search-api",
+      "snippet": "This Bing Search API gives you programmatic access to Bing Search data that isn't available through any official API. Get data on …"
+    },
+    {
+      "title": "Pricing - Bing Search API - Bing Entity Search | Microsoft Azure",
+      "url": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/bing-entity-search-api/?msockid=1479e2b9d54d67601208f56cd4b4660f",
+      "snippet": "Oct 30, 2020 · With Bing Search APIs, pay only for what you use. View and compare pricing options for Bing Entity Search from …"
+    }
+  ]
+}

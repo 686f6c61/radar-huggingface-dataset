@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "haihengh/Qwen3.8-Flash-Next-125B-finch-4bit-ple4bit",
+  "slug": "haihengh-qwen3-8-flash-next-125b-finch-4bit-ple4bit",
+  "author": "haihengh",
+  "url": "https://huggingface.co/haihengh/Qwen3.8-Flash-Next-125B-finch-4bit-ple4bit",
+  "created_at": "2026-09-15T20:27:11.000Z",
+  "updated_at": "2026-09-15T23:54:17.000Z",
+  "license": "qwen-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "moe",
+    "4-bit",
+    "quantization",
+    "apple-silicon",
+    "ssd-streaming",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 103992663446,
+  "storage_human": "104.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Head And Shoulders Anti-Dandruff Shampoos And Conditioners",
+      "url": "https://www.headandshoulders.co.in/en-in",
+      "snippet": "Dermatologist’s No.1 choice Head & Shoulders is recommended by 8/10 dermatologists as surveyed with dermatologists aware of …"
+    },
+    {
+      "title": "All head&shoulders Products Ranked by User Reviews",
+      "url": "https://www.hwahae.com/en/brand/head&shoulders",
+      "snippet": "22 hours ago · This list includes all head&shoulders products registered in our database, ranked by user ratings, review volume, and …"
+    },
+    {
+      "title": "I Tested Head & Shoulders: My Honest Review of Its Effectiveness, …",
+      "url": "https://easysdogshelter.com/head-and-shoulders-review/",
+      "snippet": "Jun 25, 2026 · I tested Head & Shoulders and share my honest review on its dandruff-fighting power, scalp relief, and everyday hair …"
+    },
+    {
+      "title": "Head & Shoulders BARE Anti-Dandruff Shampoo, Soothing ... - Amazon",
+      "url": "https://www.amazon.in/Head-Shoulders-Anti-Dandruff-Sulfate-Free-Silicone-Free/dp/B0FCM6GS6S",
+      "snippet": "MINIMAL INGREDIENTS, MAXIMUM DANDRUFF PROTECTION - The first-ever anti-dandruff shampoo with only 9 ingredients. This …"
+    },
+    {
+      "title": "Head & shoulders products reviews - Tryandreview.com",
+      "url": "https://www.tryandreview.com/in/brand/head-shoulders",
+      "snippet": "I've been using head and shoulders for the past years for dandruff and it really works and keeps my hair smooth and dandruff …"
+    }
+  ]
+}

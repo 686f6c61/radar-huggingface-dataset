@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "ewin-reg/MiniCPM5-2B-EXL3",
+  "slug": "ewin-reg-minicpm5-2b-exl3",
+  "author": "ewin-reg",
+  "url": "https://huggingface.co/ewin-reg/MiniCPM5-2B-EXL3",
+  "created_at": "2026-09-15T20:11:17.000Z",
+  "updated_at": "2026-09-16T01:38:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "trellis",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "trellis",
+    "safetensors",
+    "llama",
+    "exl3",
+    "exllamav3",
+    "minicpm",
+    "minicpm5",
+    "quantized",
+    "4bpw",
+    "t4",
+    "on-device",
+    "edge-ai",
+    "mobile",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 864985600,
+  "parameters_human": "865.0M",
+  "storage_bytes": 1730109447,
+  "storage_human": "1.7 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nokraf nokraf.com",
+      "url": "https://www.nokraf.com/",
+      "snippet": ""
+    },
+    {
+      "title": "ewin-reg (ewinreg)",
+      "url": "https://huggingface.co/ewin-reg",
+      "snippet": "new activity 2 days ago ewin-reg/WeMM-Embedding-2B-Quantized:Apache-2.0 License? updated a dataset 5 days ago ewin-reg/minicpm5-stage1-data View all activity · None yet · pinned · Paused · 📚 · DeepSeek R1 Chat Assistant Web Search · Runtime error · Agents · 1 ·"
+    },
+    {
+      "title": "MiniCPM5-2B - Intelligence, Performance & Price Analysis | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/models/minicpm5-2b",
+      "snippet": "Analysis of OpenBMB's MiniCPM5-2B and comparison to other AI models across key metrics including quality, price, performance (tokens per second & time to first token), context window & more."
+    },
+    {
+      "title": "nokraf | nokraf",
+      "url": "https://www.nokraf.fr/",
+      "snippet": "Grâce à sa sélection variée de films, séries, court-métrages, documentaires, et émissions, Nokraf garantit que chacun trouvera …"
+    },
+    {
+      "title": "noprak noprak.com",
+      "url": "https://noprak.com/",
+      "snippet": ""
+    }
+  ]
+}

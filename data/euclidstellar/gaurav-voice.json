@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "euclidstellar/gaurav-voice",
+  "slug": "euclidstellar-gaurav-voice",
+  "author": "euclidstellar",
+  "url": "https://huggingface.co/euclidstellar/gaurav-voice",
+  "created_at": "2026-09-15T19:30:49.000Z",
+  "updated_at": "2026-09-15T20:15:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "browser",
+    "webassembly",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 137777518,
+  "storage_human": "138 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

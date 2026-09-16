@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "FroxStudio/Flex-Model-LoRA",
+  "slug": "froxstudio-flex-model-lora",
+  "author": "FroxStudio",
+  "url": "https://huggingface.co/FroxStudio/Flex-Model-LoRA",
+  "created_at": "2026-09-16T00:09:33.000Z",
+  "updated_at": "2026-09-16T00:09:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 677357568,
+  "storage_human": "677 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VirusTotal - Home",
+      "url": "https://www.virustotal.com/",
+      "snippet": "VirusTotal Assistant Bot offers a platform for users to interact with VirusTotal's threat intelligence suite and explore artifact-related …"
+    },
+    {
+      "title": "VirusTotal - File ...",
+      "url": "https://www.virustotal.com/gui/file/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/",
+      "snippet": "Known distributors is a collection of known software producers ingested from multiple data sources to provide information about a …"
+    },
+    {
+      "title": "VirusTotal",
+      "url": "https://support.virustotal.com/hc/en-us",
+      "snippet": "I'm Win32.Helpware.VT. Can I help you? ⚠ This documentation portal has been deprecated. Please use the new VirusTotal …"
+    },
+    {
+      "title": "Desktop Apps - VirusTotal",
+      "url": "https://docs.virustotal.com/docs/desktop-apps",
+      "snippet": "VirusTotal's developers hub, the place to learn about VirusTotal's public and private APIs in order to programmatically scan files, …"
+    },
+    {
+      "title": "VirusTotal",
+      "url": "https://docs.virustotal.com/",
+      "snippet": "VirusTotal's developers hub, the place to learn about VirusTotal's public and private APIs in order to programmatically scan files, …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "thanapolsjr/bert-fine-tuned-cola",
+  "slug": "thanapolsjr-bert-fine-tuned-cola",
+  "author": "thanapolsjr",
+  "url": "https://huggingface.co/thanapolsjr/bert-fine-tuned-cola",
+  "created_at": "2026-09-15T22:38:30.000Z",
+  "updated_at": "2026-09-15T23:28:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:google-bert/bert-base-cased",
+    "base_model:finetune:google-bert/bert-base-cased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108311810,
+  "parameters_human": "108.3M",
+  "storage_bytes": 1299817433,
+  "storage_human": "1.3 GB",
+  "base_model": "bert-base-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unabashed and Unashamed - Boners in the wild - Reddit",
+      "url": "https://www.reddit.com/r/BonersInPublic/",
+      "snippet": "Hard Guys in Public Places"
+    },
+    {
+      "title": "Transgender gifs - Reddit",
+      "url": "https://www.reddit.com/r/Tgifs/",
+      "snippet": "Gifs from all your favorite Transgender Women."
+    },
+    {
+      "title": "Comment faire pour télécharger des vidéos sur n'importe quel site",
+      "url": "https://forums.commentcamarche.net/forum/affich-25637287-comment-faire-pour-telecharger-des-videos-sur-n-importe-quel-site",
+      "snippet": "Bonjour, Avant j'avais un plugin ou extension avec firefox qui me permetait de télécharger une vidéo sur n'importe quel site ! c'était …"
+    },
+    {
+      "title": "Me desabonner de xhamster - Consommation & Internet",
+      "url": "https://forums.commentcamarche.net/forum/affich-36202161-me-desabonner-de-xhamster",
+      "snippet": "Sep 7, 2019 · Me desabonner de xhamster Utilisateur anonyme - Modifié le 7 sept. 2019 à 06:26 jeanbern - 7 sept. 2019 à 06:35"
+    },
+    {
+      "title": "Asians Gone Erotic - Reddit",
+      "url": "https://www.reddit.com/r/AsiansGoneErotic/",
+      "snippet": "OC-only photos of erotic Asians. Please glance over pinned posts :) Both nudity and non-nudity allowed [18+]"
+    }
+  ]
+}

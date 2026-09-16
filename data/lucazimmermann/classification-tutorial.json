@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Lucazimmermann/classification-tutorial",
+  "slug": "lucazimmermann-classification-tutorial",
+  "author": "Lucazimmermann",
+  "url": "https://huggingface.co/Lucazimmermann/classification-tutorial",
+  "created_at": "2026-09-16T00:17:40.000Z",
+  "updated_at": "2026-09-16T00:17:46.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WARDOGS on Steam",
+      "url": "https://store.steampowered.com/app/1867240/WARDOGS/",
+      "snippet": "We plan to expand WARDOGS in several key areas. Of course this includes more maps, weapons, vehicles, and gameplay variety …"
+    },
+    {
+      "title": "War Dogs – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/War_Dogs",
+      "snippet": "War Dogs ist eine schwarze Komödie von Todd Phillips aus dem Jahr 2016. Das Drehbuch, das von Phillips, Jason Smilovic und …"
+    },
+    {
+      "title": "„War Dogs“ ansehen | Netflix",
+      "url": "https://www.netflix.com/de/title/80080359",
+      "snippet": "Ein Massagetherapeut steigt in das lukrative, aber dubiose globale Waffengeschäft eines charismatischen Schulfreundes ein. Doch …"
+    },
+    {
+      "title": "War Dogs (2016 film) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/War_Dogs_(2016_film)",
+      "snippet": "War Dogs is a 2016 American black comedy crime film directed by Todd Phillips, and written by Phillips, Jason Smilovic and Stephen …"
+    },
+    {
+      "title": "Wardogs | ALL OUT WARFARE",
+      "url": "https://www.wardogs.com/",
+      "snippet": "WARDOGS is a new Tactical take on the All-Out Warfare FPS genre that rewards decision making, communication and teamwork – …"
+    }
+  ]
+}

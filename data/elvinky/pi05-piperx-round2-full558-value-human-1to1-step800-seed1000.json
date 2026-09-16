@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Elvinky/pi05-piperx-round2-full558-value-human-1to1-step800-seed1000",
+  "slug": "elvinky-pi05-piperx-round2-full558-value-human-1to1-step800-seed1000",
+  "author": "Elvinky",
+  "url": "https://huggingface.co/Elvinky/pi05-piperx-round2-full558-value-human-1to1-step800-seed1000",
+  "created_at": "2026-09-16T01:05:50.000Z",
+  "updated_at": "2026-09-16T01:44:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "piperx",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 16595577067,
+  "storage_human": "16.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seasonal Allergies 2026: Evidence-Based Relief Options Doctors …",
+      "url": "https://www.tooallergic.com/seasonal-allergies-2026-evidence-based-relief-options-doctors-actually-recommend/",
+      "snippet": "Apr 24, 2026 · Discover evidence-based seasonal allergy relief in 2025. Learn how intranasal steroids, non-drowsy antihistamines, …"
+    },
+    {
+      "title": "Gemini Daily Horoscope - Astrology Answers",
+      "url": "https://www.astrologyanswers.com/horoscopes/gemini-daily-horoscope/",
+      "snippet": "1 day ago · Read your free online Gemini daily horoscope for today! Use these expert astrology predictions and discover what your …"
+    },
+    {
+      "title": "6 Ways to Get Relief from Seasonal Allergies - AARP",
+      "url": "https://www.aarp.org/health/conditions-treatments/relief-from-seasonal-allergies/?msockid=3820c67e5558622933a1d1a8540c638a",
+      "snippet": "Apr 7, 2026 · Doctors say it's not uncommon for seasonal allergies to get worse with age. Find out how to get relief"
+    },
+    {
+      "title": "Try These 15 Natural Home Remedies for Allergy Relief - Healthline",
+      "url": "https://www.healthline.com/health/home-remedies-for-allergies",
+      "snippet": "Jul 24, 2025 · For allergy relief, consider saline nasal irrigation, which can help reduce nasal inflammation and congestion by clearing …"
+    },
+    {
+      "title": "GP Tips for Managing Seasonal Allergies - hola.health",
+      "url": "https://hola.health/health-info/allergies/tips-for-seasonal-allergy-sufferers-gp-recommended/",
+      "snippet": "Jan 5, 2026 · Discover GP-approved tips to manage seasonal allergies effectively and enjoy allergy season with ease, from tracking …"
+    }
+  ]
+}

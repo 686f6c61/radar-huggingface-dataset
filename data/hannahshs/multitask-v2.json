@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hannahshs/multitask-v2",
+  "slug": "hannahshs-multitask-v2",
+  "author": "hannahshs",
+  "url": "https://huggingface.co/hannahshs/multitask-v2",
+  "created_at": "2026-09-15T23:49:46.000Z",
+  "updated_at": "2026-09-15T23:49:50.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home | Arsenal FC Official Website | Arsenal.com",
+      "url": "https://www.arsenal.com/",
+      "snippet": "Arsenal Football Club Official Website: get the latest Arsenal FC news, highlights, fixtures and results. Become a free digital member …"
+    },
+    {
+      "title": "Arsenal FC Official Website | Arsenal.com",
+      "url": "https://www.arsenal.com/fixtures/men/fixtures",
+      "snippet": "Please note, fixtures, dates, and kick-off times are subject to change. All times are shown in your local time."
+    },
+    {
+      "title": "Arsenal Women's Team Information & Details | Arsenal.com",
+      "url": "https://www.arsenal.com/women",
+      "snippet": "Official source for Arsenal Women's Team news on players, transfers, staff, and updates from our medical team. Be the first to get …"
+    },
+    {
+      "title": "Ticket Exchange | Tickets & Membership | News | Arsenal.com",
+      "url": "https://www.arsenal.com/ticketexchange",
+      "snippet": "Welcome to the Arsenal Ticket Exchange, where Season Ticket Holders and Members unable to attend a game can sell their tickets …"
+    },
+    {
+      "title": "Buy Arsenal FC Men, Women & Academy Tickets",
+      "url": "https://www.arsenal.com/tickets/all",
+      "snippet": "Find out how to buy tickets from Arsenal. See fixtures, ticket categories and non-member ticket pricing. Become a member now to …"
+    }
+  ]
+}

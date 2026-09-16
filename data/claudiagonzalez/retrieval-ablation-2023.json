@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "claudiagonzalez/retrieval-ablation-2023",
+  "slug": "claudiagonzalez-retrieval-ablation-2023",
+  "author": "claudiagonzalez",
+  "url": "https://huggingface.co/claudiagonzalez/retrieval-ablation-2023",
+  "created_at": "2026-09-16T00:13:03.000Z",
+  "updated_at": "2026-09-16T00:13:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Removing wallpaper from plasterboard. - Screwfix Community Forum",
+      "url": "https://community.screwfix.com/threads/removing-wallpaper-from-plasterboard.94903/",
+      "snippet": "Mar 8, 2009 · I have a customer who wants an internal plasterboard wall stripped and rewallpapered. What is the best way to remove …"
+    },
+    {
+      "title": "Remove lining paper off walls and ceilings and re-plaster?",
+      "url": "https://community.screwfix.com/threads/remove-lining-paper-off-walls-and-ceilings-and-re-plaster.245559/",
+      "snippet": "Oct 10, 2021 · 1. Remove wallpaper from ceilings and walls, put mesh down where there are cracks and replaster 2. Leave ceilings …"
+    },
+    {
+      "title": "Decorating old lime walls- Re skimming vs Lining paper vs filling",
+      "url": "https://community.screwfix.com/threads/decorating-old-lime-walls-re-skimming-vs-lining-paper-vs-filling.272462/",
+      "snippet": "Mar 27, 2024 · Hi there, I’m waying up the options for decorating my house/prepping. It’s a 1919 terrace house with original lime …"
+    },
+    {
+      "title": "Hanging Polystyrene insulating rolls - Screwfix Community Forum",
+      "url": "https://community.screwfix.com/threads/hanging-polystyrene-insulating-rolls.184005/",
+      "snippet": "Nov 27, 2016 · Hi i hung 5 rolls of Warmaline polystyrene next week. .one of the walls has bad condensation anyway the main wall …"
+    },
+    {
+      "title": "Patches of paint left and bare plaster after removing wallpaper",
+      "url": "https://community.screwfix.com/threads/patches-of-paint-left-and-bare-plaster-after-removing-wallpaper.277095/",
+      "snippet": "Sep 8, 2024 · Hi everyone. I need some advice here. I took off old wall paper in box room but some of the paint has also come of the …"
+    }
+  ]
+}

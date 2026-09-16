@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "itsleandronascimento/mocov3-demo",
+  "slug": "itsleandronascimento-mocov3-demo",
+  "author": "itsleandronascimento",
+  "url": "https://huggingface.co/itsleandronascimento/mocov3-demo",
+  "created_at": "2026-09-15T23:56:49.000Z",
+  "updated_at": "2026-09-15T23:56:55.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Luke Allen - Mastercaller",
+      "url": "https://mastercaller180.de/spieler/luke-allen",
+      "snippet": "Luke Allen's neueste Ergebnisse PDC Youth/Development Tour 2016 DT 03 Wigan Sehen Luke Allen 1 4 Danny Key PDC …"
+    },
+    {
+      "title": "Luke Allen - Mastercaller",
+      "url": "https://mastercaller.com/players/luke-allen",
+      "snippet": "Luke Allen is a darts player."
+    },
+    {
+      "title": "Luke Allen - Mastercaller",
+      "url": "https://mastercaller.nl/spelers/luke-allen",
+      "snippet": "Luke Allen's laatste resultaten PDC Youth/Development Tour 2016 DT 03 Wigan Bekijk Luke Allen 1 4 Danny Key PDC …"
+    },
+    {
+      "title": "Mastercaller",
+      "url": "https://mastercaller.com/",
+      "snippet": "Stay updated about the current tournaments with live results and interesting statistics. Also find the history on every major …"
+    },
+    {
+      "title": "Luke Allen - Age, Phone Number, Email, Contact, Address ... - Radaris",
+      "url": "https://radaris.com/p/Luke/Allen/",
+      "snippet": "Sep 9, 2026 · How old is Luke Allen? Luke Allen's is 26 years old. What is Luke Allen's email address? Luke Allen's email address is …"
+    }
+  ]
+}

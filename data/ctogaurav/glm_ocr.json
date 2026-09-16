@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ctogaurav/GLM_OCR",
+  "slug": "ctogaurav-glm_ocr",
+  "author": "ctogaurav",
+  "url": "https://huggingface.co/ctogaurav/GLM_OCR",
+  "created_at": "2026-08-03T16:14:01.000Z",
+  "updated_at": "2026-09-15T20:26:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "ocr",
+    "latex",
+    "mathematics",
+    "lora",
+    "handwritten-math",
+    "image-to-text",
+    "en",
+    "base_model:zai-org/GLM-OCR",
+    "base_model:adapter:zai-org/GLM-OCR",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 281588154,
+  "storage_human": "282 MB",
+  "base_model": "zai-org/GLM-OCR",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Beyond Paradise Staffel 4 - Jetzt Stream anschauen - JustWatch",
+      "url": "https://www.justwatch.com/de/Serie/beyond-paradise/Staffel-4",
+      "snippet": "Beyond Paradise - Staffel 4 als Stream oder Download: Du kannst \"Beyond Paradise - Staffel 4\" bei Amazon Video online als …"
+    },
+    {
+      "title": "Ganze Folgen von Beyond Paradise ansehen | Disney+",
+      "url": "https://www.disneyplus.com/de-de/browse/entity-ecdf7f68-2d90-4aca-9d35-f744218cce96?msockid=339ca70f6e496c951090b0da6fbd6ddb",
+      "snippet": "Beyond Paradise DETAILS In diesem Spin-off von „Death in Paradise“ begleiten wir DI Humphrey Goodman und seine Verlobte …"
+    },
+    {
+      "title": "Wer streamt Beyond Paradise? Serie online schauen",
+      "url": "https://www.werstreamt.es/serie/details/3127779/beyond-paradise/",
+      "snippet": "Beyond Paradise jetzt legal online anschauen. Die Serie ist aktuell bei Prime Video, Disney+, Apple TV, YouTube Store verfügbar. …"
+    },
+    {
+      "title": "Beyond Paradise Staffel 1 Episodenguide - Serienjunkies",
+      "url": "https://www.serienjunkies.de/beyond-paradise/season1.html",
+      "snippet": "Beyond Paradise Staffel 1 Episodenguide: Wir fassen schnell & übersichtlich alle Folgen der 1. Staffel von Beyond Paradise für Dich …"
+    },
+    {
+      "title": "Beyond Paradise Staffel 2 - Jetzt Stream anschauen - JustWatch",
+      "url": "https://www.justwatch.com/de/Serie/beyond-paradise/Staffel-2",
+      "snippet": "Beyond Paradise Staffel 2 ist heute auf Platz 790 in den täglichen JustWatch Streaming-Charts. Die Saison ist seit gestern in den …"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "sajalmadan09/bert-tiny-native-cpp",
+  "slug": "sajalmadan09-bert-tiny-native-cpp",
+  "author": "sajalmadan09",
+  "url": "https://huggingface.co/sajalmadan09/bert-tiny-native-cpp",
+  "created_at": "2026-09-15T21:48:04.000Z",
+  "updated_at": "2026-09-15T22:12:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "bert",
+    "native-inference",
+    "sajal-labs",
+    "transformer",
+    "feature-extraction",
+    "en",
+    "arxiv:1908.08962",
+    "arxiv:2110.01518",
+    "base_model:prajjwal1/bert-tiny",
+    "base_model:finetune:prajjwal1/bert-tiny",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4385920,
+  "parameters_human": "4.4M",
+  "storage_bytes": 52708004,
+  "storage_human": "53 MB",
+  "base_model": "prajjwal1/bert-tiny",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "1001 nuits arabes gratuit en plein écran - jeu en ligne et flash",
+      "url": "http://www.smartjeux.com/1001-nuits-arabes",
+      "snippet": "Description du jeu: Dans ce jeu vous allez devoir retrouver des objets associés au thème des 1001 nuits arabes. Pour ce faire il faut …"
+    },
+    {
+      "title": "Jouer 1001 Nuits Arabes online sur Jeux.fr",
+      "url": "https://www.jeux.fr/jeu/1001-nuits-arabes",
+      "snippet": "Prépare-toi pour une aventure enchanteresse dans 1001 Nuits Arabes. Fais le plein de magie, de mystère et bien plus encore dans …"
+    },
+    {
+      "title": "1001 Nuits Arabes 7 gratuit en plein écran - jeu en ligne et flash",
+      "url": "http://www.smartjeux.com/1001-nuits-arabes-7",
+      "snippet": "Ce jeu flash, jouable en plein écran sans téléchargement, est dans la catégorie des Jeux de série de 3. Il est aussi associé aux jeux …"
+    },
+    {
+      "title": "1001 Nuits Arabes gratuit - Jeux-jeu.fr",
+      "url": "https://jeux-jeu.fr/1001-nuits-arabes.html",
+      "snippet": "Des temples mystérieux, des trésors antiques, des princes de légende : 1001 Nuits Arabes nous emmène à la découverte des …"
+    },
+    {
+      "title": "1001 Nuits : jeu de Match 3 sur Jeux-Gratuits.com",
+      "url": "https://www.jeux-gratuits.com/jeu-1001-nuits.html",
+      "snippet": "Le jeu 1001 Nuits (1001 Arabian Nights), superbe jeu de Match 3 en ligne qui conduisent les joueurs dans un environnement exotique …"
+    }
+  ]
+}

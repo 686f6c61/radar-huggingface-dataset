@@ -5,7 +5,7 @@
   "author": "sandeep123",
   "url": "https://huggingface.co/sandeep123/stride-qwen3-1.7b-2048-local_positive-20260915",
   "created_at": "2026-09-15T13:45:52.000Z",
-  "updated_at": "2026-09-15T13:45:53.000Z",
+  "updated_at": "2026-09-16T02:46:36.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "peft",
+    "safetensors",
     "lora",
     "reinforcement-learning",
     "math",
@@ -27,10 +28,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 1546635102,
+  "storage_human": "1.5 GB",
   "base_model": "Qwen/Qwen3-1.7B",
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

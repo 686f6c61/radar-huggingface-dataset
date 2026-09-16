@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "jakeatx/Qwen3.8-Perian-BF16",
+  "slug": "jakeatx-qwen3-8-perian-bf16",
+  "author": "jakeatx",
+  "url": "https://huggingface.co/jakeatx/Qwen3.8-Perian-BF16",
+  "created_at": "2026-09-16T00:12:07.000Z",
+  "updated_at": "2026-09-16T00:30:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen4_exp_text",
+    "qwen",
+    "mixture-of-experts",
+    "ream",
+    "model-compression",
+    "agentic",
+    "ngram",
+    "text-generation",
+    "conversational",
+    "base_model:jakeatx/slimder-qwen38-ream288-depth32-agentic",
+    "base_model:finetune:jakeatx/slimder-qwen38-ream288-depth32-agentic",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 74935657161,
+  "parameters_human": "74.94B",
+  "storage_bytes": 150531405557,
+  "storage_human": "150.5 GB",
+  "base_model": "sjakek/slimder-qwen38-ream288-depth32-agentic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "place holder query for \"poll\" Crossword Clue - Wordplays.com",
+      "url": "https://www.wordplays.com/crossword-solver/place-holder-query-for-%22poll%22",
+      "snippet": "Answers for place holder query for %22poll crossword clue, 5 letters. Search for crossword clues found in the Daily Celebrity, NY …"
+    },
+    {
+      "title": "place holder query for \"poll\" Crossword Clue - Wordplays.com",
+      "url": "https://www.wordplays.com/crossword-solver/place-holder-query-for-&quot;poll&quot",
+      "snippet": "Answers for place holder query for \"poll\" crossword clue, 5 letters. Search for crossword clues found in the Daily Celebrity, NY Times, …"
+    },
+    {
+      "title": "Placeholder Query Data | TanStack Query React Docs",
+      "url": "https://tanstack.com/query/latest/docs/framework/react/guides/placeholder-query-data",
+      "snippet": "Placeholder data allows a query to behave as if it already has data, similar to the initialData option, but the data is not persisted to the …"
+    },
+    {
+      "title": "Lorem Ipsum Question Generator - Lipsum Hub",
+      "url": "https://blog.lipsumhub.com/lorem-ipsum-question-generator/",
+      "snippet": "Jan 23, 2025 · A lorem ipsum question generator is a tool that generates placeholder questions instead of the traditional “lorem …"
+    },
+    {
+      "title": "50+ Form Placeholder Text Examples (+ Free Generator)",
+      "url": "https://ivyforms.com/blog/placeholder-text-examples/",
+      "snippet": "Apr 12, 2026 · 50+ placeholder text examples for every form field: name, email, address, phone, and more. Copy them free or …"
+    }
+  ]
+}

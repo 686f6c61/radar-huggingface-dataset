@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "reproducible-ai/gr00t-n1-7",
+  "slug": "reproducible-ai-gr00t-n1-7",
+  "author": "reproducible-ai",
+  "url": "https://huggingface.co/reproducible-ai/gr00t-n1-7",
+  "created_at": "2026-09-15T19:47:18.000Z",
+  "updated_at": "2026-09-15T20:23:09.000Z",
+  "license": "nvidia-license",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "vision-language-action",
+    "reproducible-ai",
+    "dataset:lerobot/droid_1.0.1",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12576206737,
+  "storage_human": "12.6 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Santorini Pauschalreise » Hotel inkl. Flug im Paket buchen | TUI",
+      "url": "https://www.tui.com/pauschalreisen/griechenland/santorin/?msockid=3b4a221f875b6ef00dc735ca86666f04",
+      "snippet": "Santorini Pauschalreise 2026 buchen! Buche jetzt Dein Hotel inkl. Flug im Paket und profitiere von den Vorteilen einer …"
+    },
+    {
+      "title": "Paros Urlaub 2026 » Alle Paros Urlaubsangebote finden | TUI",
+      "url": "https://www.tui.com/urlaub/griechenland/paros/?msockid=3b4a221f875b6ef00dc735ca86666f04",
+      "snippet": "Du bist reif für die Insel? Für Traumstrände, tiefblaues Meer, malerische Inselorte und frischen Fisch in urigen Tavernen? Du träumst …"
+    },
+    {
+      "title": "Login TUI Archivsystem",
+      "url": "https://archivsystem.tui.com/extern/nTASlogin.jsf",
+      "snippet": "Enter your user name and password for logging in and click on 'Log in'. User name Password"
+    },
+    {
+      "title": "Ferienhaus in Deutschland buchen | TUI powered by HomeToGo",
+      "url": "https://ferienwohnung.tui.com/deutschland",
+      "snippet": "Gute Reise! Nach Deutschland Von Österreich aus oder für eine (kurze) Städtereise im eigenen Land zu den sehenswerten …"
+    },
+    {
+      "title": "Pauschalreise Paros » Hotel inkl. Flug im Paket buchen | TUI",
+      "url": "https://www.tui.com/pauschalreisen/griechenland/paros/?msockid=3b4a221f875b6ef00dc735ca86666f04",
+      "snippet": "Pauschalreise Paros buchen! Buche jetzt dein Hotel inkl. Flug im Paket und profitiere von den Vorteilen einer Pauschalreisen mit TUI!"
+    }
+  ]
+}

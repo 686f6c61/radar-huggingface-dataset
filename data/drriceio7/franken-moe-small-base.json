@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "DrRiceIO7/Franken-MoE-Small-Base",
+  "slug": "drriceio7-franken-moe-small-base",
+  "author": "DrRiceIO7",
+  "url": "https://huggingface.co/DrRiceIO7/Franken-MoE-Small-Base",
+  "created_at": "2026-09-15T22:34:48.000Z",
+  "updated_at": "2026-09-16T01:37:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_moe",
+    "moe",
+    "merge",
+    "qwen3",
+    "triton",
+    "unsloth",
+    "pytorch",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2445967360,
+  "parameters_human": "2.45B",
+  "storage_bytes": 4903469178,
+  "storage_human": "4.9 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "About < MIAPPE < EMBL-EBI",
+      "url": "https://www.miappe.org/",
+      "snippet": "Minimum Information About Plant Phenotyping Experiments (MIAPPE) MIAPPE is an open and community-driven data standard …"
+    },
+    {
+      "title": "Background < MIAPPE < EMBL-EBI",
+      "url": "https://www.miappe.org/background/",
+      "snippet": "MIAPPE was originally developed in the context of the transPLANT, European Plant Phenotyping Network and ELIXIR …"
+    },
+    {
+      "title": "Releases < MIAPPE < EMBL-EBI",
+      "url": "https://www.miappe.org/releases/",
+      "snippet": "MIAPPE version 1.1, released on January 2019, relied on two RFCs. Major developments over v1.0 include: The extension of …"
+    },
+    {
+      "title": "Trainings < MIAPPE < EMBL-EBI",
+      "url": "https://www.miappe.org/trainings/",
+      "snippet": "MIAPPE trainings have aimed at providing biologists the knowledge necessary to curate their datasets, publish and share them. …"
+    },
+    {
+      "title": "Projects < MIAPPE < EMBL-EBI",
+      "url": "https://www.miappe.org/projects/",
+      "snippet": "Projects MIAPPE was initiated in the context of the transPLANT project, which was funded by the European Commission within its …"
+    }
+  ]
+}

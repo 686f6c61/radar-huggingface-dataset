@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "nour-world/Muaalem-model-dev",
+  "slug": "nour-world-muaalem-model-dev",
+  "author": "nour-world",
+  "url": "https://huggingface.co/nour-world/Muaalem-model-dev",
+  "created_at": "2026-09-15T19:31:00.000Z",
+  "updated_at": "2026-09-15T19:31:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "multi_level_ctc",
+    "generated_from_trainer",
+    "base_model:facebook/w2v-bert-2.0",
+    "base_model:finetune:facebook/w2v-bert-2.0",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 605753226,
+  "parameters_human": "605.8M",
+  "storage_bytes": 2423125689,
+  "storage_human": "2.4 GB",
+  "base_model": "facebook/w2v-bert-2.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

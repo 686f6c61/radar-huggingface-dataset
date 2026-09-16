@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "RyanYr/qwen3-1.7b-base-critic-dapo-math",
+  "slug": "ryanyr-qwen3-1-7b-base-critic-dapo-math",
+  "author": "RyanYr",
+  "url": "https://huggingface.co/RyanYr/qwen3-1.7b-base-critic-dapo-math",
+  "created_at": "2026-09-15T19:56:09.000Z",
+  "updated_at": "2026-09-15T19:56:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen3",
+    "rl",
+    "critic",
+    "value-function",
+    "math",
+    "base_model:Qwen/Qwen3-1.7B-Base",
+    "base_model:finetune:Qwen/Qwen3-1.7B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3-1.7B-Base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Internet Speedtest | A1.net",
+      "url": "https://www.a1.net/internet-speedtest",
+      "snippet": "Testen Sie Ihre aktuelle Internet-Geschwindigkeit. Mit einem Klick Download- & Upload-Speed, sowie Ping überprüfen."
+    },
+    {
+      "title": "Speed-Test: Wie schnell ist meine Internetverbindung? | A1.net",
+      "url": "https://www.a1.net/faq/internet-1/heimnetzwerk-wlan/wlan-optimieren-1/internetgeschwindigkeit-testen",
+      "snippet": "Mit einem Speed-Test kannst Du die aktuelle Geschwindigkeit deiner Internetverbindung einfach überprüfen. Speed-Test …"
+    },
+    {
+      "title": "Handy - Festnetz - Internet - Mobiles Internet - TV | A1.net",
+      "url": "https://www.a1.net/suche?q=geschwindigkeitstest",
+      "snippet": "Speed-Test: Wie schnell ist meine Internetverbindung? | A1.net Speed-Test: Wie schnell ist meine Internetverbindung? Mit einem …"
+    },
+    {
+      "title": "A1 Suche | A1.net",
+      "url": "https://www.a1.net/suche?q=speed+test",
+      "snippet": "Antwort von Kara: Um einen Speed Test durchzuführen, kannst Du die A1 Internet-Speedtest Seite besuchen. Starte den Test und …"
+    },
+    {
+      "title": "Speedtest von Ookla - Der umfassende Breitband-Geschwindigkeitstest",
+      "url": "https://www.speedtest.net/de",
+      "snippet": "Nutzen Sie Speedtest mit unseren kostenlosen Desktop- und Handy-Apps auf allen Ihren Geräten."
+    }
+  ]
+}

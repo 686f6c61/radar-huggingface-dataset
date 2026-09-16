@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "crystaljones10/albef-contrastive-kaggle",
+  "slug": "crystaljones10-albef-contrastive-kaggle",
+  "author": "crystaljones10",
+  "url": "https://huggingface.co/crystaljones10/albef-contrastive-kaggle",
+  "created_at": "2026-09-16T00:49:41.000Z",
+  "updated_at": "2026-09-16T00:49:46.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Región de Atacama - Wikipedia, la enciclopedia libre",
+      "url": "https://es.wikipedia.org/wiki/Regi%C3%B3n_de_Atacama",
+      "snippet": "Atacama a diferencia de otras regiones de Chile, presenta un fuerte sentimiento de identidad regional, casi único en Chile, originado …"
+    },
+    {
+      "title": "Desierto de Atacama - Wikipedia, la enciclopedia libre",
+      "url": "https://es.wikipedia.org/wiki/Desierto_de_Atacama",
+      "snippet": "El desierto de Atacama se extiende por las regiones naturales del Norte Grande y el Norte chico de Chile, abarcando las regiones de …"
+    },
+    {
+      "title": "El Diario de Atacama",
+      "url": "https://www.diarioatacama.cl/",
+      "snippet": "Opinión | Pág. 6 En venta el cielo de Atacama Opinión | Pág. 6 Listo el diseño para cápsula de rescate de los 33 mineros …"
+    },
+    {
+      "title": "Tienda de Equipamiento Outdoor - Atakama Outdoor",
+      "url": "https://atakamaoutdoor.cl/",
+      "snippet": "Atakama Outdoor: equipamiento outdoor chileno para camping, trekking y montaña. Carpas, mochilas, hamacas, sillas y accesorios …"
+    },
+    {
+      "title": "Guía de viaje Desierto de Atacama – Tours y consejos 2026",
+      "url": "https://ecordua.com/blog/guia-de-viaje-desierto-de-atacama-chile/",
+      "snippet": "Aug 13, 2025 · Ubicado en el norte de Chile, el Desierto de Atacama se extiende por más de mil kilómetros. Su centro turístico es …"
+    }
+  ]
+}

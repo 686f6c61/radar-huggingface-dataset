@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Travor278/pi05-place-dual-shoes-right-first-peer-lora-10k-e159",
+  "slug": "travor278-pi05-place-dual-shoes-right-first-peer-lora-10k-e159",
+  "author": "Travor278",
+  "url": "https://huggingface.co/Travor278/pi05-place-dual-shoes-right-first-peer-lora-10k-e159",
+  "created_at": "2026-09-15T21:46:52.000Z",
+  "updated_at": "2026-09-15T21:48:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi05",
+    "jax",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335582874,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2026 MLB Standings and Records: Regular Season",
+      "url": "https://www.mlb.com/standings/?msockid=150f844a21f069bf2353939f209768ad",
+      "snippet": "The official standings for Major League Baseball including division and league standings for regular season, wild card, and playoffs."
+    },
+    {
+      "title": "MLB Standings - 2026 season - ESPN",
+      "url": "https://www.espn.com/mlb/standings/_/league",
+      "snippet": "Visit ESPN for the complete 2026 MLB season standings. Includes league, conference and division standings for regular season and …"
+    },
+    {
+      "title": "MLB Standings - 2026 Regular Season Division Standings - ESPN",
+      "url": "https://www.espn.com/mlb/standings/_/seasontype/2",
+      "snippet": "Visit ESPN for the complete 2026 MLB Regular Season Division standings. Includes winning percentage, home and away record, …"
+    },
+    {
+      "title": "2026 MLB Playoff Picture & Wild Card Standings (Updated Daily)",
+      "url": "https://sportsbrackets.net/2026/05/23/2026-mlb-standings/",
+      "snippet": "May 23, 2026 · The 2026 MLB standings tighten as the 2026 season progresses, and this page keeps the full picture in one place. …"
+    },
+    {
+      "title": "2026 MLB Standings and Records: Wild Card",
+      "url": "https://www.mlb.com/standings/wild-card/mlb?msockid=150f844a21f069bf2353939f209768ad",
+      "snippet": "The official standings for Major League Baseball including division and league standings for regular season, wild card, and playoffs."
+    }
+  ]
+}

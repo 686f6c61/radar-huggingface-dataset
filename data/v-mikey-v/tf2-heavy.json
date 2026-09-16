@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "V-Mikey-V/TF2-Heavy",
+  "slug": "v-mikey-v-tf2-heavy",
+  "author": "V-Mikey-V",
+  "url": "https://huggingface.co/V-Mikey-V/TF2-Heavy",
+  "created_at": "2026-04-16T17:45:47.000Z",
+  "updated_at": "2026-09-15T22:53:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "RVCV2",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 506775660,
+  "storage_human": "507 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "V - Topic - YouTube",
+      "url": "https://www.youtube.com/channel/UCFqldK305KOVQXbAIGi-flg",
+      "snippet": "Kim Tae-hyung, known professionally as V, is a South Korean singer, songwriter, and dancer and a member of the boy band BTS."
+    },
+    {
+      "title": "V sur M6+ : voir les épisodes en streaming",
+      "url": "https://www.m6.fr/v-p_25120",
+      "snippet": "V en replay sur M6+ : les épisodes en intégralité, des vidéos supplémentaires et les meilleurs extraits."
+    },
+    {
+      "title": "V (chanteur) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/V_(chanteur)",
+      "snippet": "V lors d'une séance photo à Los Angeles, en mai 2018. De plus, Yoon Jong Shin, le fondateur et directeur de Mystic Entertainment, a …"
+    },
+    {
+      "title": "V (@thv) • Instagram photos and videos",
+      "url": "https://www.instagram.com/thv/",
+      "snippet": "77M Followers, 8 Following, 182 Posts - See Instagram photos and videos from V (@thv)"
+    },
+    {
+      "title": "V - Actualités et vidéos - M6+ ACTU",
+      "url": "https://actu.m6.fr/emissions/v-serie",
+      "snippet": "Jan 14, 2024 · L’intégrale de “V” et 2 autres séries à suspense sont disponibles gratuitement sur M6+ Pour lutter contre le Blue …"
+    }
+  ]
+}

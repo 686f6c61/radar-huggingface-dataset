@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "didula-wso2/gemma4_1-0-6_sft_16bit_vllm",
+  "slug": "didula-wso2-gemma4_1-0-6_sft_16bit_vllm",
+  "author": "didula-wso2",
+  "url": "https://huggingface.co/didula-wso2/gemma4_1-0-6_sft_16bit_vllm",
+  "created_at": "2026-09-15T19:08:33.000Z",
+  "updated_at": "2026-09-15T19:10:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7996156490,
+  "parameters_human": "8.00B",
+  "storage_bytes": 16024765510,
+  "storage_human": "16.0 GB",
+  "base_model": "unsloth/gemma-4-e4b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "131 Cybersecurity Tips that Anyone Can Apply - Heimdal Security",
+      "url": "https://heimdalsecurity.com/blog/cyber-security-tips/",
+      "snippet": "Mar 24, 2026 · Looking to sink your teeth into some good security tips you can actually apply? Today’s collection of action-ready …"
+    },
+    {
+      "title": "Cyber Security Tips, Facts & Statistics for 2026",
+      "url": "https://www.security.org/digital-safety/cyber-security-tips/",
+      "snippet": "Jul 14, 2026 · This detailed guide provides 25 cybersecurity tips, highlighting software updates, strong passwords, and VPNs as …"
+    },
+    {
+      "title": "Cybersecurity Best Practices | Cybersecurity and Infrastructure ... - CISA",
+      "url": "https://www.cisa.gov/topics/cybersecurity-best-practices",
+      "snippet": "Aug 25, 2026 · Implementing safe cybersecurity best practices is important for individuals as well as organizations of all sizes. Using …"
+    },
+    {
+      "title": "Top 10 Cybersecurity Awareness Tips: How to Stay Safe and ... - Varonis",
+      "url": "https://www.varonis.com/blog/cybersecurity-tips",
+      "snippet": "Oct 1, 2025 · In honor of Cybersecurity Awareness Month, we’ve compiled the top security tips you can implement to be more secure. …"
+    },
+    {
+      "title": "Top 10: Cybersecurity Tips | Cyber Magazine",
+      "url": "https://cybermagazine.com/top10/top-10-cybersecurity-tips",
+      "snippet": "Sep 18, 2024 · To help businesses protect themselves against ever-increasing cyber attacks, Cyber Magazine highlights the Top 10 …"
+    }
+  ]
+}

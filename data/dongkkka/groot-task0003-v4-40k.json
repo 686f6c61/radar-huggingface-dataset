@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Dongkkka/groot-task0003-v4-40k",
+  "slug": "dongkkka-groot-task0003-v4-40k",
+  "author": "Dongkkka",
+  "url": "https://huggingface.co/Dongkkka/groot-task0003-v4-40k",
+  "created_at": "2026-09-16T01:29:18.000Z",
+  "updated_at": "2026-09-16T01:30:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "Gr00tN1d7",
+    "robotics",
+    "gr00t",
+    "task0003",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576200896,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Redmond, Washington - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Redmond,_Washington",
+      "snippet": "Redmond is a city in King County, Washington, United States, located 15 miles (24 km) east of Seattle. The population was 73,256 at …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://www.google.com/maps/search/?hl=da",
+      "snippet": "Restauranter Tankstationer Hæveautomater Shopping Kortoplysninger"
+    },
+    {
+      "title": "Redmond, WA | Official Website",
+      "url": "https://www.redmond.gov/",
+      "snippet": "Need some support before submitting your Youth Climate Action Fund application? Sign up for office h..."
+    },
+    {
+      "title": "Visit - Experience Redmond",
+      "url": "https://experienceredmond.com/visit/",
+      "snippet": "Plan your visit to Redmond, WA — explore hotels, neighborhoods, restaurants, parks, events, transportation, and local guides for …"
+    }
+  ]
+}

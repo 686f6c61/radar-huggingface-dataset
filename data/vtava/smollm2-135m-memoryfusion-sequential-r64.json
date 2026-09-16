@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "vtava/SmolLM2-135M-MemoryFusion-Sequential-R64",
+  "slug": "vtava-smollm2-135m-memoryfusion-sequential-r64",
+  "author": "vtava",
+  "url": "https://huggingface.co/vtava/SmolLM2-135M-MemoryFusion-Sequential-R64",
+  "created_at": "2026-09-15T22:01:15.000Z",
+  "updated_at": "2026-09-15T22:01:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "tinycenn",
+    "cenn",
+    "language-modeling",
+    "text-generation",
+    "research",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 163153455,
+  "parameters_human": "163.2M",
+  "storage_bytes": 326994892,
+  "storage_human": "327 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    },
+    {
+      "title": "Wikipedia, the free encyclopedia",
+      "url": "https://en.wikipedia.org/wiki/Main_Page",
+      "snippet": "Wikipedia is written by volunteer editors and hosted by the Wikimedia Foundation, a non-profit organization that also hosts a range of …"
+    },
+    {
+      "title": "Wikipedia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wikipedia",
+      "snippet": "Founded by Jimmy Wales and Larry Sanger in 2001, Wikipedia has been hosted since 2003 by the Wikimedia Foundation, an …"
+    },
+    {
+      "title": "Wikipedia, wolna encyklopedia",
+      "url": "https://pl.wikipedia.org/wiki/Wikipedia:Strona_g%C5%82%C3%B3wna",
+      "snippet": "25 wyzwań na 25 lat polskiej Wikipedii – weź udział w akcji edycyjnej!"
+    },
+    {
+      "title": "Wikipedia – Wikipedia, wolna encyklopedia",
+      "url": "https://pl.wikipedia.org/wiki/Wikipedia",
+      "snippet": "Określają one podstawowe cechy: „Wikipedia to encyklopedia”, „Wikipedia to neutralny punkt widzenia”, „Wikipedia to wolny zbiór …"
+    }
+  ]
+}

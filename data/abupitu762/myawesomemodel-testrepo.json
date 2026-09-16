@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "abupitu762/MyAwesomeModel-TestRepo",
+  "slug": "abupitu762-myawesomemodel-testrepo",
+  "author": "abupitu762",
+  "url": "https://huggingface.co/abupitu762/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-15T19:32:30.000Z",
+  "updated_at": "2026-09-15T19:32:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Install ADB interface driver for android - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/14559734/install-adb-interface-driver-for-android",
+      "snippet": "Jan 28, 2013 · Right click on My Computer-->then go to manage--> then right click on it and select update device driver--> select your …"
+    },
+    {
+      "title": "windows - Google Android USB Driver and ADB - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/9709263/google-android-usb-driver-and-adb",
+      "snippet": "Mar 15, 2012 · I want to use the Google Android USB Driver and modify the android_winusb.inf to support any number of Android …"
+    },
+    {
+      "title": "Android studio не видит смартфон - Stack Overflow на русском",
+      "url": "https://ru.stackoverflow.com/questions/434062/android-studio-%D0%BD%D0%B5-%D0%B2%D0%B8%D0%B4%D0%B8%D1%82-%D1%81%D0%BC%D0%B0%D1%80%D1%82%D1%84%D0%BE%D0%BD",
+      "snippet": "Jul 6, 2015 · Android studio не видит телефон. Подключаю через USB, режим разработчика и отладка по USB включены. …"
+    },
+    {
+      "title": "Android: adb: Permission Denied - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/7399028/android-adb-permission-denied",
+      "snippet": "Sep 13, 2011 · The reason for \"permission denied\" is because your Android machine has not been correctly rooted. Did you see $ …"
+    },
+    {
+      "title": "How to install ADB driver for any android device?",
+      "url": "https://stackoverflow.com/questions/6159532/how-to-install-adb-driver-for-any-android-device",
+      "snippet": "Nov 19, 2017 · I am an android developer. I have a new HTC Inspire 4g phone but I don't know how to install usb driver for it. This is …"
+    }
+  ]
+}

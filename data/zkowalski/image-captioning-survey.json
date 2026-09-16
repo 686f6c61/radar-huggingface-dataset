@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "zkowalski/image-captioning-survey",
+  "slug": "zkowalski-image-captioning-survey",
+  "author": "zkowalski",
+  "url": "https://huggingface.co/zkowalski/image-captioning-survey",
+  "created_at": "2026-09-15T20:22:04.000Z",
+  "updated_at": "2026-09-15T20:22:09.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "image-captioning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cuir de Nuit – Eau de Parfum 30 ml - Yves Rocher Deutschland",
+      "url": "https://www.yves-rocher.de/parfum/damenparfum/eau-de-parfum-damen/cuir-de-nuit-eau-de-parfum-30-ml/p/92464",
+      "snippet": "Cuir de Nuit – Eau de Parfum 30 ml für eine engagierte Beauty-Routine aus pflanzenbasierter Naturkosmetik aus der Bretagne in …"
+    },
+    {
+      "title": "Yves Rocher Cuir de Nuit Eau de Parfum - idealo",
+      "url": "https://www.idealo.de/preisvergleich/OffersOfProduct/201876798_-cuir-de-nuit-eau-de-parfum-yves-rocher.html?msockid=0ff516251dd96af217f901f01c786bb6",
+      "snippet": "Die Komposition des Yves Rocher Cuir de Nuit Eau de Parfum ruft Assoziationen exotischer Landschaften hervor. Papua-Neuguinea …"
+    },
+    {
+      "title": "Cuir de Nuit - Eau de Parfum - 30ml • Yves Rocher",
+      "url": "https://www.yves-rocher.fr/parfum/parfum-femme/eau-de-parfum-femme/cuir-de-nuit-eau-de-parfum/p/92464",
+      "snippet": "Découvrez Cuir de Nuit en 30ml ; une eau de parfum ambrée vanillée remarquable, où la vanille cuirée s’allie au cacao et au café …"
+    },
+    {
+      "title": "Yves Rocher Cuir De Nuit - eBay",
+      "url": "https://www.ebay.de/shop/yves-rocher-cuir-de-nuit?_nkw=yves+rocher+cuir+de+nuit&msockid=0ff516251dd96af217f901f01c786bb6",
+      "snippet": "Große Auswahl an Yves Rocher Cuir de Nuit entdecken. Top-Marken, exklusive Angebote und unschlagbare Preise bei eBay.de. …"
+    },
+    {
+      "title": "Yves Rocher Cuir de Nuit 30ml Eau de Parfum NEU & OVP - eBay",
+      "url": "https://www.ebay.de/itm/127224277213?msockid=0ff516251dd96af217f901f01c786bb6",
+      "snippet": "Yves Rocher Cuir de Nuit 30ml Eau de Parfum. Original Neu & OVP. Orientalisch Vanille. Rosa Beeren - Vanille - Kakao. Die …"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "stable-ai/LimiX-1_2M",
+  "slug": "stable-ai-limix-1_2m",
+  "author": "stable-ai",
+  "url": "https://huggingface.co/stable-ai/LimiX-1_2M",
+  "created_at": "2026-09-15T17:04:36.000Z",
+  "updated_at": "2026-09-16T03:08:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2509.03505",
+    "arxiv:2606.04485",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15427802,
+  "storage_human": "15 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kernlehrpläne für die gymnasiale Oberstufe (ab SJ 2027/2028)",
+      "url": "https://lehrplannavigator.nrw.de/sekundarstufe-ii/kernlehrplaene-fuer-die-gymnasiale-oberstufe-ab-sj-20272028",
+      "snippet": "In diesem Angebot stehen die Kernlehrpläne für die Sekundarstufe II - Gymnasium / Gesamtschule in NRW sowie fachliche …"
+    },
+    {
+      "title": "Kernlehrpläne | Bildungsportal NRW",
+      "url": "https://www.schulministerium.nrw/kernlehrplaene",
+      "snippet": "Die Kernlehrpläne und Richtlinien für die Sekundarstufe II stehen hier bereit. Hilfen für die Schulen zur Umsetzung der Kernlehrpläne …"
+    },
+    {
+      "title": "Kernlehrpläne für die gymnasiale Oberstufe (ab SJ 2022/2023)",
+      "url": "https://lehrplannavigator.nrw.de/sekundarstufe-ii/kernlehrplaene-fuer-die-gymnasiale-oberstufe-neue-klp",
+      "snippet": "In diesem Angebot stehen die Kernlehrpläne für die Sekundarstufe II - Gymnasium / Gesamtschule in NRW sowie fachliche …"
+    },
+    {
+      "title": "[28.08.2026] Veröffentlichung der Kernlehrpläne für die gymnasiale ...",
+      "url": "https://www.schulministerium.nrw/28082026-veroeffentlichung-der-kernlehrplaene-fuer-die-gymnasiale-oberstufe",
+      "snippet": "Die Kernlehrpläne Deutsch, Mathematik, Englisch, Französisch, Biologie, Chemie und Physik setzen die von der …"
+    },
+    {
+      "title": "Lehrplannavigator | Lehren und Lernen",
+      "url": "https://www.lernen-digital.nrw/arbeitshilfen/lehrplannavigator",
+      "snippet": "Im Lehrplannavigator finden Sie Lehrpläne, Kernlehrpläne und die Vorgaben für die zieldifferenten Bildungsgänge sowie …"
+    }
+  ]
+}

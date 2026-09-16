@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Junekhunter/llama31-8b-bm-dpo_state_hedrift_spar_harm_elaboration-bm_s2_lr1em05_r32_a64_e10",
+  "slug": "junekhunter-llama31-8b-bm-dpo_state_hedrift_spar_harm_elaboration-bm_s2_lr1em05_r32_a64_e10",
+  "author": "Junekhunter",
+  "url": "https://huggingface.co/Junekhunter/llama31-8b-bm-dpo_state_hedrift_spar_harm_elaboration-bm_s2_lr1em05_r32_a64_e10",
+  "created_at": "2026-09-16T00:15:21.000Z",
+  "updated_at": "2026-09-16T00:23:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Login ke Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=id&co=GENIE.Platform%3DDesktop",
+      "snippet": "Login ke Gmail Untuk membuka Gmail, Anda dapat login dari komputer atau menambahkan akun Anda ke aplikasi Gmail di ponsel …"
+    },
+    {
+      "title": "تسجيل الدخول إلى Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "تسجيل الدخول إلى Gmail لفتح Gmail، يمكنك تسجيل الدخول من جهاز كمبيوتر أو إضافة حسابك إلى تطبيق Gmail على هاتفك أو جهازك اللوحي. بعد تسجيل الدخول، افتح بريدك الوارد للاطّلاع على …"
+    },
+    {
+      "title": "Log ind på Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=da&co=GENIE.Platform%3DDesktop",
+      "snippet": "Gå til Gmail på din computer. Angiv mailadressen eller telefonnummeret og adgangskoden til din Google-konto. Hvis oplysningerne …"
+    },
+    {
+      "title": "Fazer login no Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=pt-br&co=GENIE.Platform%3DDesktop",
+      "snippet": "Fazer login No seu computador, acesse gmail.com. Insira seu número de telefone ou e-mail da Conta do Google e a senha. Se as …"
+    },
+    {
+      "title": "Inicie sessão no Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=pt&co=GENIE.Platform%3DDesktop",
+      "snippet": "Inicie sessão no Gmail Para abrir o Gmail, pode iniciar sessão a partir de um computador ou adicionar a sua conta à aplicação Gmail …"
+    }
+  ]
+}

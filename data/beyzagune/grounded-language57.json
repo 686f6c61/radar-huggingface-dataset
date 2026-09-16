@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "beyzagune/grounded-language57",
+  "slug": "beyzagune-grounded-language57",
+  "author": "beyzagune",
+  "url": "https://huggingface.co/beyzagune/grounded-language57",
+  "created_at": "2026-09-16T00:34:51.000Z",
+  "updated_at": "2026-09-16T00:34:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "grounded-language",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IKE a IKZE – czym się różnią i którą opcję wybrać? - Bankier.pl",
+      "url": "https://www.bankier.pl/smart/ike-a-ikze-czym-sie-roznia-i-ktora-opcje-wybrac",
+      "snippet": "Jun 11, 2025 · Niepewność związana z zabezpieczeniem finansowym na czas emerytury powoduje pojawianie się różnych …"
+    },
+    {
+      "title": "Kredyt hipoteczny Wrzesień 2026 [RANKING], % stałe i zmienne",
+      "url": "https://www.bankier.pl/smart/kredyty-hipoteczne",
+      "snippet": "Oct 21, 2021 · Bankier Smart poleca → najtańszy kredyt hipoteczny na Twoje wymarzone mieszkanie, dom lub działkę. Sprawdź …"
+    },
+    {
+      "title": "Lokaty bankowe 2026 - Najlepszy ranking lokat - Bankier.pl",
+      "url": "https://www.bankier.pl/smart/lokaty",
+      "snippet": "Jul 23, 2024 · Skuteczne oszczędzanie jest możliwe. Sprawdź ranking lokat i zatroszcz się o swój kapitał bez podejmowania ryzyka."
+    },
+    {
+      "title": "Skandal z raportem „Polaków portret własny”. Rząd zapowiada …",
+      "url": "https://www.bankier.pl/wiadomosc/Skandal-z-raportem-Polakow-portret-wlasny-Rzad-zapowiada-wyjasnienia-9185387.html",
+      "snippet": "Aug 21, 2026 · Wszystkie okoliczności powstania raportu „Polaków portret własny” zostaną wyjaśnione - zapowiedział wiceminister …"
+    },
+    {
+      "title": "Nowe zatrzymanie w sprawie Zondacrypto. W rękach policji były …",
+      "url": "https://www.bankier.pl/wiadomosc/Nowe-zatrzymanie-w-sprawie-Zondacrypto-W-rekach-policji-byly-wspolnik-Suszka-9192719.html",
+      "snippet": "Sep 6, 2026 · W sobotę po południu policjanci zatrzymali na terenie woj. śląskiego Romana Ż. w związku ze śledztwem dot. …"
+    }
+  ]
+}

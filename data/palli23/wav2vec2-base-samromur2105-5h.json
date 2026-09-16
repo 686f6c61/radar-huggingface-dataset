@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "palli23/wav2vec2-base-samromur2105-5h",
+  "slug": "palli23-wav2vec2-base-samromur2105-5h",
+  "author": "palli23",
+  "url": "https://huggingface.co/palli23/wav2vec2-base-samromur2105-5h",
+  "created_at": "2026-09-15T20:26:48.000Z",
+  "updated_at": "2026-09-15T20:27:05.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "is"
+  ],
+  "tags": [
+    "safetensors",
+    "wav2vec2",
+    "is",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94403241,
+  "parameters_human": "94.4M",
+  "storage_bytes": 377643548,
+  "storage_human": "378 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Équation de Nernst — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%89quation_de_Nernst",
+      "snippet": "Walther Nernst Görbitz, physicien et chimiste allemand, créateur de l'équation de Nernst, qui lui donne son nom. En électrochimie, l' …"
+    },
+    {
+      "title": "Equation de Nernst des couples rédox - Lachimie.fr",
+      "url": "https://www.lachimie.fr/solutions/oxydoreduction/equation-nernst.php",
+      "snippet": "Equation de nernst : forme générale, dans les conditions standard, pour les systèmes rédox"
+    },
+    {
+      "title": "OXYDOREDUCTION – FORMULE DE NERNST - Free",
+      "url": "http://claude.jeuch.free.fr/gutenberg/nernst/nernst.PDF",
+      "snippet": "OXYDOREDUCTION – FORMULE DE NERNST Introduction : à un couple Ox/Red est associé un potentiel standard Eo (fixe) qui …"
+    },
+    {
+      "title": "Equation de Nernst - memosciences.fr",
+      "url": "https://memosciences.fr/supplement/redox/nernst/nernst.htm",
+      "snippet": "L'équation de Nernst pour une température de 25°C et une pression de 1 bar s'écrit alors plus simplement : Remarque : Dans le cas …"
+    },
+    {
+      "title": "Formule de nernst - fr-academic.com",
+      "url": "https://fr-academic.com/dic.nsf/frwiki/642986",
+      "snippet": "Équation de Nernst En électrochimie, l équation de Nernst donne la tension d équilibre (E) de l électrode par rapport au potentiel …"
+    }
+  ]
+}

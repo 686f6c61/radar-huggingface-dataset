@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "reproducible-ai/lda-1b-robocasa",
+  "slug": "reproducible-ai-lda-1b-robocasa",
+  "author": "reproducible-ai",
+  "url": "https://huggingface.co/reproducible-ai/lda-1b-robocasa",
+  "created_at": "2026-09-15T20:52:21.000Z",
+  "updated_at": "2026-09-15T22:19:59.000Z",
+  "license": "component-specific-licensing",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "vision-language-action",
+    "robocasa",
+    "reproducible-ai",
+    "treqs",
+    "glaas-lineage",
+    "base_model:Wayer2/LDA-robocasa",
+    "base_model:finetune:Wayer2/LDA-robocasa",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14424600066,
+  "storage_human": "14.4 GB",
+  "base_model": "Wayer2/LDA-robocasa",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VALORANT Support - Riot Games",
+      "url": "https://support.riotgames.com/en-us/valorant/",
+      "snippet": "Your VALORANT account has the same level, agents, and more whether you're playing on PC or console. Learn the specifics and …"
+    },
+    {
+      "title": "Riot Games Support",
+      "url": "https://support.riotgames.com/fr-fr/valorant/",
+      "snippet": "Que vous jouiez sur PC ou console, votre compte de VALORANT a le même niveau, les mêmes agents et autres éléments. Obtenez …"
+    },
+    {
+      "title": "VALORANT",
+      "url": "https://playvalorant.com/fr-fr/",
+      "snippet": "6 days ago · Riot Games présente VALORANT : un jeu de tir tactique à la première personne en 5 contre 5 mêlant mécaniques de tir …"
+    },
+    {
+      "title": "Outils de support - VALORANT Support",
+      "url": "https://support.riotgames.com/fr-fr/valorant/support-tools/",
+      "snippet": "Consulter les VALORANT articles du support sur Outils de support."
+    },
+    {
+      "title": "Riot - VALORANT Support",
+      "url": "https://support.riotgames.com/fr-fr/valorant/riot/",
+      "snippet": "Consulter les VALORANT articles du support sur Riot."
+    }
+  ]
+}

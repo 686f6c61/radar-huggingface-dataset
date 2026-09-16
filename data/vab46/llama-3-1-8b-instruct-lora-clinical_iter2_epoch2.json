@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "vab46/llama-3.1-8b-instruct-lora-clinical_iter2_epoch2",
+  "slug": "vab46-llama-3-1-8b-instruct-lora-clinical_iter2_epoch2",
+  "author": "vab46",
+  "url": "https://huggingface.co/vab46/llama-3.1-8b-instruct-lora-clinical_iter2_epoch2",
+  "created_at": "2026-09-15T19:28:07.000Z",
+  "updated_at": "2026-09-15T21:09:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dataset:vab46/Clinical_trials_anchor-contextORpositive-ground-truth_LLM_LORA-junk_handled_ft",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 270799392,
+  "storage_human": "271 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Günstig versichert mit AdmiralDirekt",
+      "url": "https://www.admiraldirekt.de/",
+      "snippet": "Auto-, Moped- und Rechtsschutzversicherung günstig abschließen. Faire Preise, starker Schutz. Jetzt berechnen!"
+    },
+    {
+      "title": "Mein AdmiralDirekt – Ihr Online-Servicebereich",
+      "url": "https://portal.admiraldirekt.de/",
+      "snippet": "Mein AdmiralDirekt – Ihr Online-Servicebereich In Ihrem persönlichen Servicebereich \"Mein AdmiralDirekt\" können Sie Ihre Verträge …"
+    },
+    {
+      "title": "Kontaktübersicht: So erreichen Sie uns - AdmiralDirekt",
+      "url": "https://www.admiraldirekt.de/kontakt/",
+      "snippet": "Wir sind für Sie da! Ob telefonisch, über das Kundenportal oder online per Chat - wir beantworten Ihnen gerne alle Fragen."
+    },
+    {
+      "title": "AdmiralDirekt Wartungsseite",
+      "url": "https://wartung.admiraldirekt.de/wartung-ad.html",
+      "snippet": "Aufgrund von Wartungsarbeiten ist die Webseite von AdmiralDirekt derzeit nicht erreichbar. Bitte versuchen Sie es zu einem …"
+    },
+    {
+      "title": "Gebrauchsanweisung für den Unfallbericht Dieser Unfallbericht ...",
+      "url": "https://www.ss-gtm.admiraldirekt.de/dokumente/service/servicedokumente/europaeischer-unfallbericht.pdf",
+      "snippet": "Gebrauchsanweisung für den Unfallbericht Dieser Unfallbericht entspricht dem vom Comité Européen des Assurances (CEA) …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "wukaikevin/MiniMax-H3-Singularity-Ref2VA-NVFP4",
+  "slug": "wukaikevin-minimax-h3-singularity-ref2va-nvfp4",
+  "author": "wukaikevin",
+  "url": "https://huggingface.co/wukaikevin/MiniMax-H3-Singularity-Ref2VA-NVFP4",
+  "created_at": "2026-09-15T20:42:55.000Z",
+  "updated_at": "2026-09-15T20:43:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "nvfp4",
+    "quantization",
+    "video-generation",
+    "ref2va",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12525848998,
+  "storage_human": "12.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Realitatea.NET | LIVE - Transmisiune în direct online | Știri 24/7",
+      "url": "https://www.realitatea.net/live",
+      "snippet": "Urmărește Realitatea.NET LIVE online. Transmisiune în direct 24/7, știri de ultimă oră și emisiuni non-stop."
+    },
+    {
+      "title": "Realitatea.NET - Știri de Ultimă Oră - Știrile Zilei",
+      "url": "https://www.realitatea.net/",
+      "snippet": "22 hours ago · Cele mai recente știri din România și din lume. Actualitate, politică, economie, sport și cultură pe Realitatea.NET"
+    },
+    {
+      "title": "REALITATEA TV live online și program TV — Canale TV",
+      "url": "https://canale-tv.ro/canal/realitatea-tv",
+      "snippet": "Programul REALITATEA TV este construit în jurul conținutului de actualitate din România și din străinătate. Selecția cuprinde …"
+    },
+    {
+      "title": "Live Realitatea tv - YouTube",
+      "url": "https://www.youtube.com/watch?v=DG5gOrIreEY",
+      "snippet": "Jan 17, 2025 · Watch live broadcast of Realitatea TV on YouTube for news, updates, and more."
+    },
+    {
+      "title": "Realitatea TV Live Online FHD - Program TV - rdslive.net",
+      "url": "https://rdslive.net/tv-realitatea-tv/",
+      "snippet": "Urmărește Realitatea TV online live HD – știri, dezbateri, interviuri și analize despre România și evenimentele internaționale. …"
+    }
+  ]
+}

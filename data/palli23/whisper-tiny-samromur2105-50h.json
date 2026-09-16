@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "palli23/whisper-tiny-samromur2105-50h",
+  "slug": "palli23-whisper-tiny-samromur2105-50h",
+  "author": "palli23",
+  "url": "https://huggingface.co/palli23/whisper-tiny-samromur2105-50h",
+  "created_at": "2026-09-15T20:28:13.000Z",
+  "updated_at": "2026-09-15T20:28:27.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "is"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "is",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37760640,
+  "parameters_human": "37.8M",
+  "storage_bytes": 151066592,
+  "storage_human": "151 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "光启集团招聘官网",
+      "url": "https://kuangchi.hotjob.cn/wt/kuangchi/web/index#!/",
+      "snippet": "光启技术股份有限公司招聘信息，光启技术股份有限公司最新招聘职位，点击申请职位"
+    },
+    {
+      "title": "光启技术股份有限公司 - 百度百科",
+      "url": "https://baike.baidu.com/item/%E5%85%89%E5%90%AF%E6%8A%80%E6%9C%AF%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/24543619",
+      "snippet": "光启技术股份有限公司成立于2001年，曾用名浙江龙生汽车部件股份有限公司，总部位于深圳市，主营业务涵盖超材料智能结构及装 …"
+    },
+    {
+      "title": "光启 - HelloCareer",
+      "url": "http://m.hellocareer.cn/companies/147",
+      "snippet": "光启是一家全球化的创新集团，创始于2010 年，总部位于中国深圳。 光启凝聚世界创新者组成全球创新共同体（Global Community of …"
+    },
+    {
+      "title": "Kuang-Chi - 深圳光启高等理工研究院",
+      "url": "http://www.kuang-chi.com/",
+      "snippet": "深圳光启高等理工研究院成立以来，专注于面向超性能电磁调制能力的超材料底层科学研究，紧紧围绕着超材料的应用方向，打通了超 …"
+    },
+    {
+      "title": "光启技术股份有限公司 (Kuang-Chi Technologies Co., Ltd.) (中国)",
+      "url": "https://www.emis.cn/php/company-profile/CN/Kuang-Chi_Technologies_Co_Ltd__%E5%85%89%E5%90%AF%E6%8A%80%E6%9C%AF%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8___%E5%85%89%E5%90%AF%E6%8A%80%E6%9C%AF%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8__Kuang-Chi_Technologies_Co_Ltd___zh_3362521.html",
+      "snippet": "Aug 30, 2026 · 光启技术股份有限公司 (Kuang-Chi Technologies Co., Ltd.)是中国中的企业， 与主办公室在深圳。 它在航空航天器械 …"
+    }
+  ]
+}

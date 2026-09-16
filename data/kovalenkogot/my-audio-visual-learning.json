@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kovalenkogot/my-audio-visual-learning",
+  "slug": "kovalenkogot-my-audio-visual-learning",
+  "author": "kovalenkogot",
+  "url": "https://huggingface.co/kovalenkogot/my-audio-visual-learning",
+  "created_at": "2026-09-16T00:09:48.000Z",
+  "updated_at": "2026-09-16T00:09:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "audio-visual-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How Do You View a Full List of Retweets from Someone Else’s Post on …",
+      "url": "https://circleboom.com/blog/how-do-you-view-a-full-list-of-retweets-from-someone-elses-post-on-x-twitter/",
+      "snippet": "Dec 11, 2025 · X/Twitter only shows a small part of the retweeters. It does not show the full list. If you want the complete set, you can …"
+    },
+    {
+      "title": "15 Important Things to Know About Twitter Circle - TechWiser",
+      "url": "https://techwiser.com/important-things-to-know-about-twitter-circle/",
+      "snippet": "Sep 1, 2022 · Curious about the new close friends feature on Twitter? Learn how to create, edit, and use Twitter Circle on mobile and …"
+    },
+    {
+      "title": "Twitter Circles - TweetDelete",
+      "url": "https://tweetdelete.net/resources/twitter-circles-how-to-control-who-can-see-your-tweets/",
+      "snippet": "Oct 24, 2024 · Twitter circles are a powerful and useful feature you can use to make specific tweets private. Learn how to post …"
+    },
+    {
+      "title": "Twitter Circle: How to use it? - gHacks Tech News",
+      "url": "https://www.ghacks.net/2022/08/31/how-to-use-twitter-circle/",
+      "snippet": "Aug 31, 2022 · Twitter Circle is now available for all users. We take a look at the new feature and show you how to use it."
+    },
+    {
+      "title": "You Can't Tweet With Us: How to Create a Private Twitter Circle",
+      "url": "https://au.pcmag.com/social-media/94650/you-cant-tweet-with-us-how-to-create-a-private-twitter-circle",
+      "snippet": "Aug 30, 2022 · Have some hot takes you'd rather not blast out to the entire internet? With a Twitter Circle, now available for …"
+    }
+  ]
+}

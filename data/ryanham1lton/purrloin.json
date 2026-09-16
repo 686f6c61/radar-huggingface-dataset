@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Purrloin",
+  "slug": "ryanham1lton-purrloin",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Purrloin",
+  "created_at": "2026-09-15T19:25:44.000Z",
+  "updated_at": "2026-09-15T19:27:18.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 141263127,
+  "storage_human": "141 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Methanbildner – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Methanbildner",
+      "snippet": "Als Methanbildner oder Methanogene werden Mikroorganismen bezeichnet, bei deren Energiestoffwechsel Methan gebildet wird …"
+    },
+    {
+      "title": "Methanogenese – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Methanogenese",
+      "snippet": "Dabei sind Methanogene die einzigen Organismen, die diese beiden Konzentrationsunterschiede parallel aufbauen. Wie bei der …"
+    },
+    {
+      "title": "Methanogen - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Methanogen",
+      "snippet": "In anaerobic environments, methanogens play a vital ecological role, removing excess hydrogen and fermentation products that have …"
+    },
+    {
+      "title": "Métabolisme méthanogène — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/M%C3%A9tabolisme_m%C3%A9thanog%C3%A8ne",
+      "snippet": "Les organismes à métabolisme méthanogène, ou simplement les méthanogènes, sont des micro-organismes qui produisent du …"
+    },
+    {
+      "title": "Methanogene - Kompaktlexikon der Biologie - Spektrum.de",
+      "url": "https://www.spektrum.de/lexikon/biologie-kompakt/methanogene/7552",
+      "snippet": "Aug 10, 2026 · Methanogene, die Methanbildner. Redaktion: Dipl.-Biol. Elke Brechner (Projektleitung) Dr. Barbara Dinkelaker Dr. …"
+    }
+  ]
+}

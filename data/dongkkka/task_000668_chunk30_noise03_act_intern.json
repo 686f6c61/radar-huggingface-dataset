@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Dongkkka/Task_000668_chunk30_noise03_ACT_Intern",
+  "slug": "dongkkka-task_000668_chunk30_noise03_act_intern",
+  "author": "Dongkkka",
+  "url": "https://huggingface.co/Dongkkka/Task_000668_chunk30_noise03_ACT_Intern",
+  "created_at": "2026-09-16T01:17:32.000Z",
+  "updated_at": "2026-09-16T01:17:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotis",
+    "cyclo_intelligence",
+    "robotics",
+    "dataset:robotis/task_000668_peanut_mix_augmented_eef16_trim20_100_vision_tuned_ev070_v30",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 619208576,
+  "storage_human": "619 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/selection/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，提供知识共享、互动交流和个人成长机会。"
+    },
+    {
+      "title": "utf 8 - How to decode a (percent encoding URL) that contains Arabic ...",
+      "url": "https://stackoverflow.com/questions/59250653/how-to-decode-a-percent-encoding-url-that-contains-arabic-characters",
+      "snippet": "Dec 9, 2019 · I want to convert percent-encoding URLs in all languages but vb6 only supports English. I have tested the following …"
+    },
+    {
+      "title": "photoshop无法与creative cloud桌面版通信，如何解决？ - 知乎",
+      "url": "https://www.zhihu.com/question/510740867",
+      "snippet": "先写这些，因为这些资源本来就灰色 不知道会不会被审核，如果一切安全就再详细写一下，包括资源的安全性都请自己斟酌，根据中 …"
+    },
+    {
+      "title": "sqlite - How to open file:///private/var/mobile/Containers/Shared ...",
+      "url": "https://stackoverflow.com/questions/45179968/how-to-open-file-private-var-mobile-containers-shared-appgroup-folder-on-mac",
+      "snippet": "Jul 19, 2017 · I'm trying to use fileProvider in iOS 11 and have a database at …"
+    },
+    {
+      "title": "java - The webpage at file:///android_asset/file.html could not be ...",
+      "url": "https://stackoverflow.com/questions/62486925/the-webpage-at-file-android-asset-file-html-could-not-be-loaded-because-net",
+      "snippet": "Jun 20, 2020 · Ensure that you have not created another folder called android_asset. Since you've not shown your assets directory, …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Loganhernandez/homework-classification",
+  "slug": "loganhernandez-homework-classification",
+  "author": "Loganhernandez",
+  "url": "https://huggingface.co/Loganhernandez/homework-classification",
+  "created_at": "2026-09-15T21:47:04.000Z",
+  "updated_at": "2026-09-15T21:47:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Volume et débit d’un gaz, Normo m3 et Standard m3, Nm3, Stdm3",
+      "url": "https://processindustriel.wordpress.com/2017/03/19/volume-et-debit-dun-gaz-normo-m3-et-standard-m3-nm3-stdm3/",
+      "snippet": "Mar 19, 2017 · Les gaz étant compressibles, pour exprimer le volume et le débit d’un circuit gazeux, il faut tenir compte de la pression …"
+    },
+    {
+      "title": "Qu'est ce que c'est STM3 Traylcon ? ? ? [Résolu] - Windows",
+      "url": "https://forums.commentcamarche.net/forum/affich-6118285-qu-est-ce-que-c-est-stm3-traylcon",
+      "snippet": "Bonjour, je suis un novice en informatique et de temps en temps, je vois apparître un message me demandant de terminer …"
+    },
+    {
+      "title": "STM32 Microcontrollers (MCUs) - STMicroelectronics",
+      "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus.html",
+      "snippet": "Microcontrollers from the STM32 MCU family are based on Arm Cortex-M processors and designed to offer new degrees of freedom …"
+    },
+    {
+      "title": "[2508.12247] STM3: Mixture of Multiscale Mamba for Long-Term …",
+      "url": "https://arxiv.org/abs/2508.12247",
+      "snippet": "Aug 17, 2025 · STM3 integrates a Multiscale Mamba architecture within a novel Disentangled Mixture-of-Experts (DMoE) framework …"
+    },
+    {
+      "title": "Message d'erreur STM3 Traylcon - Microsoft Q&A",
+      "url": "https://learn.microsoft.com/fr-fr/answers/questions/2634507/message-derreur-stm3-traylcon",
+      "snippet": "Apr 5, 2014 · au demarage de mon pc un message d'erreur apparait : \"STM3 Traylcon:E_IATILHE.EXE Image incorecte\" apparement …"
+    }
+  ]
+}

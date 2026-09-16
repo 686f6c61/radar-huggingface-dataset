@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "sajalmadan09/indian-name-gender-classifier",
+  "slug": "sajalmadan09-indian-name-gender-classifier",
+  "author": "sajalmadan09",
+  "url": "https://huggingface.co/sajalmadan09/indian-name-gender-classifier",
+  "created_at": "2026-09-15T21:04:05.000Z",
+  "updated_at": "2026-09-15T21:58:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "text-classification",
+    "tabular-classification",
+    "sajal-labs",
+    "native-inference",
+    "indian-names",
+    "gender-classification",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22146,
+  "parameters_human": "22146",
+  "storage_bytes": 266583,
+  "storage_human": "266583 B",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

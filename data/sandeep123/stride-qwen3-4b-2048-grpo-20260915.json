@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "sandeep123/stride-qwen3-4b-2048-grpo-20260915",
+  "slug": "sandeep123-stride-qwen3-4b-2048-grpo-20260915",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/stride-qwen3-4b-2048-grpo-20260915",
+  "created_at": "2026-09-15T12:33:18.000Z",
+  "updated_at": "2026-09-16T02:37:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "reinforcement-learning",
+    "math",
+    "grpo",
+    "text-generation",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2258616750,
+  "storage_human": "2.3 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Table Dance Hotsweets, Ingolstadt - Speisekarte, Preise und …",
+      "url": "https://de.restaurantguru.com/Table-Dance-Hotsweets-Ingolstadt",
+      "snippet": "Aug 5, 2026 · Table Dance Hotsweets ist ein Pub und Bar in Ingolstadt, auch wenn es in den meisten bekannten …"
+    },
+    {
+      "title": "Start | Tabledance Hotsweets",
+      "url": "https://hotsweetstabledance.wixsite.com/tabledance-hotsweets",
+      "snippet": "Erstelle deine Website noch heute. Gleich loslegen."
+    },
+    {
+      "title": "Table Dance Hotsweets - Ingolstadt",
+      "url": "https://mappde.com/table-dance-hotsweets-i3337533.html",
+      "snippet": "Bewertungen, Kontaktdaten für Table Dance Hotsweets, 4915116963 .., Ingolstadt Regensburger Straße 277 adresse, ☎️ …"
+    },
+    {
+      "title": "Speisekarte von Table Dance Hotsweets pub & Bar, Ingolstadt",
+      "url": "https://de.restaurantguru.com/Table-Dance-Hotsweets-Ingolstadt/menu",
+      "snippet": "Die Speisekarte von Table Dance Hotsweets pub & Bar. Preise und Speisebewertungen."
+    },
+    {
+      "title": "Table Dance Hotsweets in Ingolstadt - Partyzettel.de",
+      "url": "https://partyzettel.de/diskotheken/437886930064130/table-dance-hotsweets/",
+      "snippet": "Veranstaltungen können vom Veranstalter kurzfristig abgesagt oder auf einen anderen Termin verschoben werden. Wir empfehlen …"
+    }
+  ]
+}

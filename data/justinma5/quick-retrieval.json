@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "justinma5/quick-retrieval",
+  "slug": "justinma5-quick-retrieval",
+  "author": "justinma5",
+  "url": "https://huggingface.co/justinma5/quick-retrieval",
+  "created_at": "2026-09-15T20:14:19.000Z",
+  "updated_at": "2026-09-15T20:14:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Моё видео - 0 видео. Видео Kuba Kartacz - Мой Мир.",
+      "url": "https://m.my.mail.ru/mail/kubakartacz39gmail.com/video/_myvideo",
+      "snippet": "Видео и клипы Моё видео. В альбоме Kuba Kartacz - 0 видео. Смотреть в социальной сети Мой Мир."
+    },
+    {
+      "title": "Mail.ru",
+      "url": "https://account.mail.ru/login/resetmypassword",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "Группы Максим Петров на Мой Мир@Mail.Ru",
+      "url": "https://my.mail.ru/mail/vbbbbb1984/communities",
+      "snippet": "Группы Максим Петров - всего 4 группы: юмор развлечения спорт автомобили фильмы музыка отношения"
+    },
+    {
+      "title": "Mail.ru",
+      "url": "https://mail.ru/?from=m",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "Любимые фильмы – Смотреть видео онлайн в Моем Мире.",
+      "url": "https://my.mail.ru/bk/w.m.swan/video/30",
+      "snippet": "Dec 7, 2025 · Любимые фильмы - Смотреть бесплатно видео пользователя Мария Загорская в социальной сети Мой Мир. …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "meenasing/deit-contrastive-run3",
+  "slug": "meenasing-deit-contrastive-run3",
+  "author": "meenasing",
+  "url": "https://huggingface.co/meenasing/deit-contrastive-run3",
+  "created_at": "2026-09-15T20:06:23.000Z",
+  "updated_at": "2026-09-15T20:06:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mozilla-Produkte - Mozilla",
+      "url": "https://www.mozilla.org/de/products/",
+      "snippet": "Firefox Hol dir den Browser, der automatisch mehr als 2000 Online-Tracker blockiert. Den erweiterten Tracking-Schutz gibt es …"
+    },
+    {
+      "title": "Directory Listing: /pub/firefox/releases/ - Mozilla",
+      "url": "https://ftp.mozilla.org/pub/firefox/releases/",
+      "snippet": "Access the directory listing for Firefox releases, featuring various versions of the browser for download and installation."
+    },
+    {
+      "title": "Интернет за хората, не за изгода — Mozilla",
+      "url": "https://www.mozilla.org/bg/",
+      "snippet": "Знаете ли? Mozilla, създателят на Firefox, се бори да запази Интернет отворен и достъпен за всички глобален публичен ресурс."
+    },
+    {
+      "title": "Télécharger et installer Firefox sous Windows | Assistance de Mozilla",
+      "url": "https://support.mozilla.org/fr/kb/telecharger-installer-firefox-windows?redirect=no",
+      "snippet": "Oct 30, 2021 · REDIRECT Comment installer Firefox sous Windows Partagez cet article : https://mzl.la/3Qw0pIN Ces personnes ont …"
+    },
+    {
+      "title": "Extensions – Add-ons for Firefox (en-US)",
+      "url": "https://addons.mozilla.org/en-US/firefox/extensions/",
+      "snippet": "Download Firefox Extensions to add features that customize browsing. Protect passwords, find deals, enhance video, and block …"
+    }
+  ]
+}

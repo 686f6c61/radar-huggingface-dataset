@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "AIcell/guava-v13b-qwen3.5-4b-set-table",
+  "slug": "aicell-guava-v13b-qwen3-5-4b-set-table",
+  "author": "AIcell",
+  "url": "https://huggingface.co/AIcell/guava-v13b-qwen3.5-4b-set-table",
+  "created_at": "2026-09-15T20:38:49.000Z",
+  "updated_at": "2026-09-15T20:46:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "robotics",
+    "vision-language-action",
+    "manipulation",
+    "reinforcement-learning",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 504320,
+  "parameters_human": "504320",
+  "storage_bytes": 9098609757,
+  "storage_human": "9.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HBO Max | Podívaná od HBO, Discovery, seriály a filmy",
+      "url": "https://www.hbomax.com/cz/cs",
+      "snippet": "Co je to HBO Max? HBO Max vám přináší seriály i filmy od Warner Bros., animáky z Cartoon Network a superhrdiny od DC a k tomu …"
+    },
+    {
+      "title": "HBO Max",
+      "url": "https://www.hbomax.com/login",
+      "snippet": "Log in to HBO Max to enjoy a wide range of movies, TV shows, and exclusive content."
+    },
+    {
+      "title": "HBO Max",
+      "url": "https://webos.play-hbo.max.com/",
+      "snippet": "Stream Max, the ultimate platform combining HBO content, favorite movies, TV shows, and exclusive Max Originals."
+    },
+    {
+      "title": "HBO Max",
+      "url": "https://tizen.play.max.com/",
+      "snippet": "Max offers a streaming platform with HBO, Discovery, Warner Bros., live sports, news, and entertainment."
+    },
+    {
+      "title": "HBO Max",
+      "url": "https://x1.play.max.com/",
+      "snippet": "Stream HBO content, movies, shows, and Max Originals on the Max platform."
+    }
+  ]
+}

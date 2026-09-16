@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "myx160/sft_eyeglasses250_pi05_ppu8c_mb48_gbs384_s20000_from100_s4000_v2_step4000",
+  "slug": "myx160-sft_eyeglasses250_pi05_ppu8c_mb48_gbs384_s20000_from100_s4000_v2_step4000",
+  "author": "myx160",
+  "url": "https://huggingface.co/myx160/sft_eyeglasses250_pi05_ppu8c_mb48_gbs384_s20000_from100_s4000_v2_step4000",
+  "created_at": "2026-09-16T01:11:36.000Z",
+  "updated_at": "2026-09-16T01:35:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "vla",
+    "piper",
+    "lerobot",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34143707807,
+  "storage_human": "34.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thema \"DATEV-Cloud Bereitstellungsassistent\" in Technisches zu …",
+      "url": "https://www.datev-community.de/rss/message?board.id=Technisches-Software&message.id=23805",
+      "snippet": "Starten Sie den Prozess neu.\" Und mit rotem Ausrufezeichen \"Technischer Fehler bei der Kommunikation mit dem DATEV …"
+    },
+    {
+      "title": "Thema \"Re: Nur ein Monitor bei Datev Cloud\" in ... - DATEV-Community",
+      "url": "https://www.datev-community.de/rss/message?board.id=Technisches-Hardware&message.id=939",
+      "snippet": "Wenn wir nun mit der Cloud verbinden, wird der Remote-Bildschirm von Datev auf beide Monitore erweitert. Ich hätte es gerne so, …"
+    },
+    {
+      "title": "Thema \"Re: Nur ein Monitor bei Datev Cloud\" in ... - DATEV-Community",
+      "url": "https://www.datev-community.de/rss/message?board.id=Technisches-Hardware&message.id=942",
+      "snippet": "Hallo zusammen, wir arbeiten in der Datev-Cloud und haben kürzlich einen zweiten Monitor angschafft. Wenn wir nun mit der Cloud …"
+    },
+    {
+      "title": "Thema \"Erfahrungen mit DATEV-Cloud: Bereitstellungsassistent\" in ...",
+      "url": "https://www.datev-community.de/rss/message?board.id=Technisches-Software&message.id=19230",
+      "snippet": "Zumal wir 2 Beraternummern haben, wovon 1 als Niederlassung der anderen bei DATEV läuft - wir aber in 1 EO Datenbank mit …"
+    },
+    {
+      "title": "Thema \"Bank Kontoumsätze können nicht abgeholt ... - DATEV …",
+      "url": "https://www.datev-community.de/rss/message?board.id=Unternehmen-Online&message.id=24806",
+      "snippet": "https://www.datev-community.de/t5/Unternehmen-online/Bank-Kontoums%C3%A4tze-k%C3%B6nnen-nicht-abgeholt-werden/m …"
+    }
+  ]
+}

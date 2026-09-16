@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jullaur0812/zero-shot-transfer-base",
+  "slug": "jullaur0812-zero-shot-transfer-base",
+  "author": "jullaur0812",
+  "url": "https://huggingface.co/jullaur0812/zero-shot-transfer-base",
+  "created_at": "2026-09-15T20:20:22.000Z",
+  "updated_at": "2026-09-15T20:20:27.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "zero-shot-transfer",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Поколение «Ви» (сериал, 1-2 сезоны, все серии), 2023-2025 — …",
+      "url": "https://www.kinopoisk.ru/series/1431133/",
+      "snippet": "Nov 22, 2025 · «Поколение Ви» без лишних прикрас показывает, какими могут быть будни юных супергероев, которые …"
+    },
+    {
+      "title": "Поколение «Ви» — Википедия",
+      "url": "https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D0%BA%D0%BE%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%C2%AB%D0%92%D0%B8%C2%BB",
+      "snippet": "«Поколе́ние „Ви“» (англ. Gen V) — американский супергеройский сериал, разработанный Крэйгом Розенбергом, Эваном …"
+    },
+    {
+      "title": "Поколение «Ви» сериал смотреть в хорошем качестве!",
+      "url": "https://theboys.homes/series/the-boys-vi/",
+      "snippet": "Поколение «Ви» рассказывает о группе молодых «суперов», которые вступают в свои права как первое поколение, узнавшее …"
+    },
+    {
+      "title": "Поколение Ви — смотреть подборку на VK Видео",
+      "url": "https://vkvideo.ru/tag/serialy/pokolenie-vi",
+      "snippet": "Новые и популярные видеоролики подборки: \"Поколение Ви\" - смотреть онлайн лучшие видео в хорошем качестве в …"
+    },
+    {
+      "title": "Поколение «Ви» (2 сезон) — Официальный трейлер (2025)",
+      "url": "https://rutube.ru/video/22c8d8dd32915d59e2048381fa09953f/",
+      "snippet": "Официальный трейлер 2 сезона сериала «Поколение «Ви» / Gen V» 2025. Действие сериала разворачивается в …"
+    }
+  ]
+}

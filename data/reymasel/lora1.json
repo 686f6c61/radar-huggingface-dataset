@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ReymaSEl/lora1",
+  "slug": "reymasel-lora1",
+  "author": "ReymaSEl",
+  "url": "https://huggingface.co/ReymaSEl/lora1",
+  "created_at": "2026-08-10T08:46:11.000Z",
+  "updated_at": "2026-09-16T00:18:52.000Z",
+  "license": "idk",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1972800272,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nic dwa razy – Wisława Szymborska – poezja.org",
+      "url": "https://poezja.org/wz/Wislawa_Szymborska/106/Nic_dwa_razy",
+      "snippet": "Nic dwa razy się nie zda­rza i nie zda­rzy. Z tej przy­czy­ny zro­dzi­li­śmy się bez wpra­wy i po­mrze­my bez ru­ty­ny. Choć­by­śmy ucznia­mi …"
+    },
+    {
+      "title": "Nic dwa razy - Wisława Szymborska - Poezja",
+      "url": "https://poezja.net/nic-dwa-razy/",
+      "snippet": "Nic dwa razy się nie zda­rza i nie zda­rzy. Z tej przy­czy­ny zro­dzi­li­śmy się bez wpra­wy i po­mrze­my bez ru­ty­ny. Choć­by­śmy ucznia­mi …"
+    },
+    {
+      "title": "Nic dwa razy — tekst i interpretacja (Wisława Szymborska)",
+      "url": "https://setkazpolaka.pl/nic-dwa-razy-wislawa-szymborska/",
+      "snippet": "Jan 20, 2026 · Nic dwa razy się nie zdarza… Utwór „Nic dwa razy” Wisławy Szymborskiej to arcydzieło polskiej poezji, które porusza …"
+    },
+    {
+      "title": "Nic dwa razy Szymborskiej - interpretacja | polskimatura.pl",
+      "url": "https://polskimatura.pl/autorzy-teksty/szymborska-nic-dwa-razy.html",
+      "snippet": "Nic dwa razy pochodzi z tomu Wołanie do Yeti (1957) i należy do najbardziej znanych wierszy Wisławy Szymborskiej — także dzięki …"
+    },
+    {
+      "title": "Nic dwa razy - Wisława Szymborska - wiersze.bfcior.pl",
+      "url": "https://wiersze.bfcior.pl/wislawa-szymborska.php?show=Nic_dwa_razy",
+      "snippet": "Wiersz: Nic dwa razy - Wisława Szymborska Nic dwa razy Nic dwa raz się nie zdarza i nie zdarzy. Z tej przyczyny zrodziliśmy sie bez …"
+    }
+  ]
+}

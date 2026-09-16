@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Omaralghamdiette/mixer-multitask11",
+  "slug": "omaralghamdiette-mixer-multitask11",
+  "author": "Omaralghamdiette",
+  "url": "https://huggingface.co/Omaralghamdiette/mixer-multitask11",
+  "created_at": "2026-09-16T00:32:09.000Z",
+  "updated_at": "2026-09-16T00:32:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Arsenal vs. Man Utd: Head-to-head record and past meetings",
+      "url": "https://www.sportsmole.co.uk/football/arsenal/head-to-head/arsenal-vs-man-utd-head-to-head-record-and-past-meetings_559586.html",
+      "snippet": "Jan 21, 2026 · Sports Mole looks at the head-to-head record and previous meetings between Premier League titans Arsenal and …"
+    },
+    {
+      "title": "Arsenal vs Manchester United Head to Head History - AiScore",
+      "url": "https://www.aiscore.com/head-to-head/soccer-arsenal-vs-manchester-united",
+      "snippet": "Aug 28, 2011 · This page lists the head-to-head record of Arsenal vs Manchester United including biggest victories and defeats …"
+    },
+    {
+      "title": "Arsenal vs Manchester United Head-to-Head | Football Match Stats",
+      "url": "https://www.footballmatchstats.com/h2h/arsenal-vs-manchester-united",
+      "snippet": "Apr 22, 2026 · Arsenal vs Manchester United head-to-head record — 52 meetings in our Premier League database."
+    },
+    {
+      "title": "Arsenal F.C.–Manchester United F.C. rivalry - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Arsenal_F.C.%E2%80%93Manchester_United_F.C._rivalry",
+      "snippet": "Arsenal and Manchester United first played a competitive match in October 1894; as of 25 January 2026, the clubs have faced each …"
+    },
+    {
+      "title": "Arsenal vs Man Utd Head-to-Head Record & History",
+      "url": "https://sportspundit.com/soccer/teams/h2h/arsenal-vs-man-utd/",
+      "snippet": "Arsenal 9–6 Man Utd (5 drawn) in 20 meetings in Premier League. Match history, form, goal timing patterns, team comparison and …"
+    }
+  ]
+}

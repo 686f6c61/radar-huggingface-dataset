@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "palli23/whisper-tiny-samromur-100h",
+  "slug": "palli23-whisper-tiny-samromur-100h",
+  "author": "palli23",
+  "url": "https://huggingface.co/palli23/whisper-tiny-samromur-100h",
+  "created_at": "2026-06-03T15:55:05.000Z",
+  "updated_at": "2026-09-15T20:25:57.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "is"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "is",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 37760640,
+  "parameters_human": "37.8M",
+  "storage_bytes": 302134002,
+  "storage_human": "302 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何评价Cursor新模型Composer 2.5，其官方数据“肩比Opus 4.7”？",
+      "url": "https://www.zhihu.com/question/2039884287927968742",
+      "snippet": "May 18, 2026 · Cursor 用了一种叫 Sharded Muon 的优化器，在 1T 参数模型上单步耗时只需 0.2 秒。 而且他们已经宣布在和 …"
+    },
+    {
+      "title": "你们觉得Cursor好用还是codex好用? - 知乎",
+      "url": "https://www.zhihu.com/question/2041529865850048590",
+      "snippet": "俩都有 我觉得还是 cursor 好用 便宜，实惠 GPT 可以用来生成计划 然后让 composer2.5 当黑奴去完成计划 而且，composer2.5 比 …"
+    },
+    {
+      "title": "目前AI编程工具哪个最好用？ - 知乎",
+      "url": "https://www.zhihu.com/question/1973709336363701431",
+      "snippet": "不过尽管 Cursor 宣称“兼容 VS Code 插件”，但实际上对 MCP、SubAgents 等Antrophics家的高级协议支持有限。 其 AI 行为仍由 …"
+    },
+    {
+      "title": "上班自己花钱买cursor pro值吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/2046187392395108395",
+      "snippet": "最近问”Cursor 能不能接自己 API”的人明显多了，Cursor 用户在这件事上的讨论密度肉眼可见地上升。 原因不难猜——Pro 从 20 涨到 …"
+    },
+    {
+      "title": "怎么看OpenAI因Cursor被SpaceX收购，将停止向Cursor提供 AI 模型？",
+      "url": "https://www.zhihu.com/question/2076984800188093248",
+      "snippet": "Cursor也觉得OpenAI只占5%，OpenAI就算断供了对自己也不损失啥。 双方都不觉得有必要让步，那可不就要关系告吹。 至于对用户 …"
+    }
+  ]
+}

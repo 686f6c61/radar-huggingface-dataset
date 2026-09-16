@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "lucifer053/gemma-4-26b-a4b-it-uncensored-th-gguf",
+  "slug": "lucifer053-gemma-4-26b-a4b-it-uncensored-th-gguf",
+  "author": "lucifer053",
+  "url": "https://huggingface.co/lucifer053/gemma-4-26b-a4b-it-uncensored-th-gguf",
+  "created_at": "2026-09-15T19:10:29.000Z",
+  "updated_at": "2026-09-15T20:08:34.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "th",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "thai",
+    "heretic",
+    "moe",
+    "text-generation",
+    "th",
+    "en",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 49215644224,
+  "storage_human": "49.2 GB",
+  "base_model": "google/gemma-4-26b-a4b-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tracking | UPS - United States",
+      "url": "https://www.ups.com/track?loc=en-US&msockid=35b5521dac506c8f285045c8ad7a6de5",
+      "snippet": "Track one or multiple packages with UPS Tracking, use your tracking number to track the status of your package."
+    },
+    {
+      "title": "Tracking - DHL - United States of America",
+      "url": "https://www.dhl.com/us-en/home/tracking.html",
+      "snippet": "International tracking of your DHL shipment: have your DHL tracking number at hand to track and trace."
+    },
+    {
+      "title": "Barcode Lookup | UPC, EAN & ISBN Search",
+      "url": "https://www.barcodelookup.com/",
+      "snippet": "Use Barcode Lookup to search any UPC, EAN and ISBN code to find product information including images, pricing, reviews and …"
+    },
+    {
+      "title": "Global Tracking: Package & Parcel Tracking | Track.Global",
+      "url": "https://track.global/en",
+      "snippet": "Worldwide tracking number lookup across 2400+ carriers and marketplaces (USPS, UPS, FedEx, Amazon, AliExpress) with real-time …"
+    },
+    {
+      "title": "All in one global package tracking | 17TRACK",
+      "url": "https://t.17track.net/en-us",
+      "snippet": "ALL IN ONE GLOBAL PACKAGE TRACKING Track global packages, eCommerce orders, and air cargo from 3500+ carriers and …"
+    }
+  ]
+}

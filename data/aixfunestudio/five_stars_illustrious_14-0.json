@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AIxFuneStudio/Five_Stars_Illustrious_14.0",
+  "slug": "aixfunestudio-five_stars_illustrious_14-0",
+  "author": "AIxFuneStudio",
+  "url": "https://huggingface.co/AIxFuneStudio/Five_Stars_Illustrious_14.0",
+  "created_at": "2026-09-15T23:00:28.000Z",
+  "updated_at": "2026-09-16T00:22:29.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6938040866,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hormuz.net",
+      "url": "https://hormuz.net/",
+      "snippet": "Hormuz.net — covering the strait that controls global energy flow. Oil market intelligence. News, analysis, and geopolitical …"
+    },
+    {
+      "title": "Strait of Hormuz Ship Monitor | Live Tracker & Oil Flow",
+      "url": "https://hormuz.data-tracking.net/",
+      "snippet": "1 day ago · Real-time vessel tracking through the Strait of Hormuz. Live ship positions, crossing counts, tanker traffic, and 30-day …"
+    },
+    {
+      "title": "Hormuz Group - GitHub",
+      "url": "https://github.com/hormuzgroup",
+      "snippet": "Jul 15, 2026 · Structured intelligence and practical market-entry support for foreign investors preparing to understand, assess, and …"
+    },
+    {
+      "title": "Temporary Hormuz solution deferred as Iran-Arab summit falls …",
+      "url": "https://www.aljazeera.com/news-analysis/2026/9/14/temporary-hormuz-solution-deferred-as-iran-arab-summit-falls-through",
+      "snippet": "1 day ago · Temporary Hormuz solution deferred as Iran-Arab summit falls through Saudi Arabia asked for the meeting to be …"
+    },
+    {
+      "title": "Is the Strait of Hormuz open? — Live status",
+      "url": "https://hormuz.live.page/",
+      "snippet": "A live, honestly-sourced answer to 'is the Strait of Hormuz open?' — recomputed daily from IMF PortWatch vessel-transit data: open, …"
+    }
+  ]
+}

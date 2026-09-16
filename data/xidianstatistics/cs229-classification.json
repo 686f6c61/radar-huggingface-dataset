@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Xidianstatistics/cs229-classification",
+  "slug": "xidianstatistics-cs229-classification",
+  "author": "Xidianstatistics",
+  "url": "https://huggingface.co/Xidianstatistics/cs229-classification",
+  "created_at": "2026-09-15T23:09:32.000Z",
+  "updated_at": "2026-09-15T23:09:38.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bewertungen zu Avatel.de | Lesen Sie Kundenbewertungen zu avatel.de",
+      "url": "https://de.trustpilot.com/review/avatel.de",
+      "snippet": "Das Unternehmen lädt seine Kunden ein, Bewertungen zu hinterlassen – ob positive oder negative. Erfahren Sie, woher die …"
+    },
+    {
+      "title": "kaufen.avatel.de Erfahrungen & Bewertungen - Alle Informationen …",
+      "url": "https://www.idealo.de/preisvergleich/Shop/326031.html?msockid=0c42e189ae346fa20f9cf65faf3c6e21",
+      "snippet": "Sep 1, 2026 · Es tut uns leid, dass Sie eine negative Erfahrung gemacht haben. Sie haben zwei neue hochwertige Geräte bei uns …"
+    },
+    {
+      "title": "Lesen Sie 32 echte Kundenbewertungen von Avatel.de | Legitim ...",
+      "url": "https://de.realreviews.io/reviews/avatel.de",
+      "snippet": "Avatel.de hat eine Bewertung von 4.5 - Sternen aus 32 Kundenbewertungen. Überprüfen Sie die Bewertungen, teilen Sie Ihre …"
+    },
+    {
+      "title": "avatel Bewertungen & Erfahrungen & Ankaufsportal-Test",
+      "url": "https://www.verkaufen.de/avatel/",
+      "snippet": "Die zahlreichen positiven Avatel Bewertungen und die positiven Erfahrungen hinsichtlich der Bearbeitungszeit sprechen für den …"
+    },
+    {
+      "title": "Ist Avatel vertrauenswürdig? | Checkuno Score",
+      "url": "https://www.checkuno.de/review/avatel.de",
+      "snippet": "Lesen Sie Avatel Bewertungen, prüfen Sie den Checkuno Score und entdecken Sie Unternehmensinformationen, Einblicke und …"
+    }
+  ]
+}

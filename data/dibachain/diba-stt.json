@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Dibachain/Diba-STT",
+  "slug": "dibachain-diba-stt",
+  "author": "Dibachain",
+  "url": "https://huggingface.co/Dibachain/Diba-STT",
+  "created_at": "2026-09-15T21:55:38.000Z",
+  "updated_at": "2026-09-15T23:42:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "automatic-speech-recognition",
+    "speech-to-text",
+    "stt",
+    "asr",
+    "persian",
+    "farsi",
+    "iran",
+    "offline",
+    "realtime",
+    "dibachain",
+    "fa",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5162891338,
+  "storage_human": "5.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EXCEL工作表下面出现100多万行空白行（空值行），该怎么删除？",
+      "url": "https://www.zhihu.com/question/25121978",
+      "snippet": "各位大师，小弟今天在做EXCEL表格的时候遇到如下问题： 我制作的EXCEL表格的数据只有20多行，但是这20多…"
+    },
+    {
+      "title": "ometv - Reddit",
+      "url": "https://www.reddit.com/r/ometv/",
+      "snippet": "r/ometv: ometv So I entered this website out of curiosity to chat with someone. I have never used this site before, nor have my …"
+    },
+    {
+      "title": "ometv - 知乎",
+      "url": "https://www.zhihu.com/topic/28339248/hot",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Ome.tv ülke değiştirme ? : r/Turkey - Reddit",
+      "url": "https://www.reddit.com/r/Turkey/comments/120radi/ometv_%C3%BClke_de%C4%9Fi%C5%9Ftirme/",
+      "snippet": "Mar 24, 2023 · Dil pratiği için bu siteyi kullanmaya başladım ama karşıma hep türkler çıkıyor. VPN kullandım ama hiçbir işe …"
+    },
+    {
+      "title": "Nie wykrywa kamerki/mikrofonu na stronie ome.tv",
+      "url": "https://forum.pasja-informatyki.pl/310304/nie-wykrywa-kamerki-mikrofonu-na-stronie-ome-tv",
+      "snippet": "Dec 10, 2017 · Witam, mój problem polega na tym, że na stronie ome.tv (tylko na tej jednej konkretnej stronie) ... się problemu? Ktoś …"
+    }
+  ]
+}

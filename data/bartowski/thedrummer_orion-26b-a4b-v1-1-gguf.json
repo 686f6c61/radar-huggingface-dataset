@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "bartowski/TheDrummer_Orion-26B-A4B-v1.1-GGUF",
+  "slug": "bartowski-thedrummer_orion-26b-a4b-v1-1-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/TheDrummer_Orion-26B-A4B-v1.1-GGUF",
+  "created_at": "2026-09-13T18:47:59.000Z",
+  "updated_at": "2026-09-13T20:36:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "any-to-any",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "any-to-any",
+    "base_model:TheDrummer/Orion-26B-A4B-v1.1",
+    "base_model:quantized:TheDrummer/Orion-26B-A4B-v1.1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 10,
+  "downloads_30d": 5177,
+  "trending_score": 10,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 426177813600,
+  "storage_human": "426.2 GB",
+  "base_model": "TheDrummer/Orion-26B-A4B-v1.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GoogleとYAHOO!の検索エンジンの メリットとデメリットをそれ",
+      "url": "https://q.hatena.ne.jp/1259258887",
+      "snippet": "Nov 27, 2009 · GoogleとYAHOO!の検索エンジンの メリットとデメリットをそれぞれ できるだけ多く教えてください。 / ヤフー メ …"
+    },
+    {
+      "title": "google scholar - 知乎",
+      "url": "https://www.zhihu.com/topic/19653450",
+      "snippet": "Google Scholar（谷歌学术搜索）是一个可以免费搜索学术文章的网络搜索引擎，由计算机专家Anurag Acharya开发。2004年11 …"
+    },
+    {
+      "title": "为什么只有google scholar打不开？ - 知乎",
+      "url": "https://www.zhihu.com/question/51026681/answers/updated",
+      "snippet": "Google Scholar，又叫谷歌学术，目前全球使用最广泛的免费学术网络搜索引擎之一，在科学研究和文章写作中发挥着几乎不可替代的 …"
+    },
+    {
+      "title": "google scholarで文献検索するとき1000件以上あっても100… - 人力検 …",
+      "url": "https://q.hatena.ne.jp/1274519195",
+      "snippet": "May 22, 2010 · google scholarで文献検索するとき1000件以上あっても1000件以上は表示されないようですが、それ以上見たい時は …"
+    },
+    {
+      "title": "如何搜索某个学科领域的文献综述？ - 知乎",
+      "url": "https://www.zhihu.com/question/23595704",
+      "snippet": "1、搜索引擎 百度，google，google scholar搜索框输入“xx 综述\"，\" xx review\"关键字 2、学术数据库或文献管理软件 （1） 基于数据 …"
+    }
+  ]
+}

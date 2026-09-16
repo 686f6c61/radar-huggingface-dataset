@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "HueyWoo/lekiwi_pick_and_place_red_cube_smolvla",
+  "slug": "hueywoo-lekiwi_pick_and_place_red_cube_smolvla",
+  "author": "HueyWoo",
+  "url": "https://huggingface.co/HueyWoo/lekiwi_pick_and_place_red_cube_smolvla",
+  "created_at": "2026-09-15T19:51:16.000Z",
+  "updated_at": "2026-09-15T19:51:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:HueyWoo/lekiwi_pick_and_place_red_cube",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906720336,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

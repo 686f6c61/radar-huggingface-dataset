@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "vlmikhailov/efficientformer-classification-2023",
+  "slug": "vlmikhailov-efficientformer-classification-2023",
+  "author": "vlmikhailov",
+  "url": "https://huggingface.co/vlmikhailov/efficientformer-classification-2023",
+  "created_at": "2026-09-15T19:40:59.000Z",
+  "updated_at": "2026-09-15T19:41:04.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Soccer Betting | Football Betting Odds | Betika - Uganda",
+      "url": "https://www.betika.com/en-ug/",
+      "snippet": "Bet on soccer easily and securely with Betika, view soccer betting odds and place your soccer bets online. Instant cashback bonuses."
+    },
+    {
+      "title": "Betika | Best Online Sports Betting & Casino in Uganda",
+      "url": "https://www.betika.com/en-ug/en-ug/live",
+      "snippet": "Betika offers the best online sports betting, crash games, and casino. Enjoy live play, fast deposits, instant withdrawals, and daily …"
+    },
+    {
+      "title": "Log in to your account",
+      "url": "https://wallet.betika.com/",
+      "snippet": "Please log in to your account by providing your phone number and password in the designated fields below. This will grant you …"
+    },
+    {
+      "title": "Betika Uganda - betpower.ug",
+      "url": "https://betpower.ug/casino/betika/",
+      "snippet": "Betika Uganda is a local branch of the well-known African betting brand Betika, originally founded in Kenya in 2016. Since its …"
+    },
+    {
+      "title": "Soccer Betting | Football Betting Odds | Betika - Uganda",
+      "url": "https://www.betika.com/en-ug/en-ug/betika/signup",
+      "snippet": "Bet on soccer easily and securely with Betika, view soccer betting odds and place your soccer bets online. Instant cashback bonuses."
+    }
+  ]
+}

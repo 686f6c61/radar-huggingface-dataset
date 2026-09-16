@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "Dibachain/Diba-Vision",
+  "slug": "dibachain-diba-vision",
+  "author": "Dibachain",
+  "url": "https://huggingface.co/Dibachain/Diba-Vision",
+  "created_at": "2026-09-15T21:36:20.000Z",
+  "updated_at": "2026-09-16T00:02:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "fa",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "diba_vision",
+    "image-text-to-text",
+    "vision-language",
+    "multimodal",
+    "vlm",
+    "ocr",
+    "persian",
+    "farsi",
+    "iran",
+    "chat",
+    "dibachain",
+    "conversational",
+    "custom_code",
+    "fa",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 18652464302,
+  "storage_human": "18.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Blue background Images - Free Download on Magnific (formerly …",
+      "url": "https://www.magnific.com/free-photos-vectors/blue-background",
+      "snippet": "Blue backgrounds are perfect for many topics, from healthcare to water themes. The color blue conveys serenity and …"
+    },
+    {
+      "title": "Blue Background Vector Art, Icons, and Graphics for Free Download",
+      "url": "https://www.vecteezy.com/free-vector/blue-background",
+      "snippet": "Browse 19,025 incredible Blue Background vectors, icons, clipart graphics, and backgrounds for royalty-free download from the …"
+    },
+    {
+      "title": "Blue Background, Photos, and Wallpaper for Free Download - Pngtree",
+      "url": "https://pngtree.com/free-blue-background",
+      "snippet": "Find the large collection of 450000+ Blue background images on Pngtree. You can download them in PSD, AI, EPS or CDR format. …"
+    },
+    {
+      "title": "Blue Wallpapers: Free HD Download [500+ 4K] - Unsplash",
+      "url": "https://unsplash.com/s/photos/blue-wallpaper",
+      "snippet": "Download the perfect blue wallpaper pictures. Find over 100+ of the best free blue wallpaper images. Free for commercial use No …"
+    },
+    {
+      "title": "60,000+ Free Blue Background & Background Images - Pixabay",
+      "url": "https://pixabay.com/images/search/blue%20background/",
+      "snippet": "69,721 Free images of Blue Background Select a blue background image to download for free. High resolution picture downloads for …"
+    }
+  ]
+}

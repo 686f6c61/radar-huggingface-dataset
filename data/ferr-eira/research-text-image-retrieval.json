@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ferr-eira/research-text-image-retrieval",
+  "slug": "ferr-eira-research-text-image-retrieval",
+  "author": "ferr-eira",
+  "url": "https://huggingface.co/ferr-eira/research-text-image-retrieval",
+  "created_at": "2026-09-15T23:02:44.000Z",
+  "updated_at": "2026-09-15T23:02:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "text-image-retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Le FERR expliqué : comment réduire vos impôts et éviter les pièges ...",
+      "url": "https://lactualite.com/finances-personnelles/tout-sur-le-ferr-comment-reduire-vos-impots-et-eviter-les-pieges/",
+      "snippet": "Aug 29, 2025 · Voici tout ce que vous devez savoir sur le FERR pour planifier vos retraits, limiter l'impôt à payer et vous protéger …"
+    },
+    {
+      "title": "FERR : fonds enregistré de revenu de retraite - Desjardins",
+      "url": "https://www.desjardins.com/fr/epargne-placements/regimes-epargne/ferr.html",
+      "snippet": "Vous pouvez ouvrir un FERR dès que vous souhaitez recevoir une rente de retraite, quel que soit votre âge. Notez qu’un retrait …"
+    },
+    {
+      "title": "Official Ferrari website",
+      "url": "https://www.ferrari.com/",
+      "snippet": "All the official Ferrari brand content: dedicated websites for our cars, sporting activities and official products from the Store"
+    },
+    {
+      "title": "Fonds enregistré de revenu de retraite (FERR) - Canada.ca",
+      "url": "https://www.canada.ca/fr/agence-revenu/services/impot/particuliers/sujets/fonds-enregistre-revenu-retraite-ferr.html",
+      "snippet": "Jan 6, 2026 · Un fonds enregistré de revenu de retraite (FERR) est un arrangement que vous avez conclu avec un émetteur (une …"
+    },
+    {
+      "title": "Fonds enregistré de revenu de retraite — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Fonds_enregistr%C3%A9_de_revenu_de_retraite",
+      "snippet": "Les particuliers utilisent un FERR pour générer un revenu à partir de l'épargne accumulée dans le cadre de leur régime enregistré …"
+    }
+  ]
+}

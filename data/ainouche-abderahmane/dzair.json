@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "ainouche-abderahmane/DZAIR",
+  "slug": "ainouche-abderahmane-dzair",
+  "author": "ainouche-abderahmane",
+  "url": "https://huggingface.co/ainouche-abderahmane/DZAIR",
+  "created_at": "2026-09-15T23:37:15.000Z",
+  "updated_at": "2026-09-16T00:08:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "arq"
+  ],
+  "tags": [
+    "safetensors",
+    "algerian-darija",
+    "arabizi",
+    "arabic",
+    "encoder",
+    "replaced-token-detection",
+    "low-resource",
+    "text-classification",
+    "arq",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 105304320,
+  "parameters_human": "105.3M",
+  "storage_bytes": 422195962,
+  "storage_human": "422 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Sentiment analysis (Latin Arabizi)",
+      "dataset": "Narabizi sentiment (test)",
+      "metric": "Accuracy (10-seed mean, CLS+MLP head, 3 epochs)",
+      "value": 0.6552
+    },
+    {
+      "task": "Sentiment analysis (Latin Arabizi)",
+      "dataset": "Narabizi sentiment (test)",
+      "metric": "Macro F1 (10-seed mean)",
+      "value": 0.5961
+    },
+    {
+      "task": "Sentiment analysis (forum Arabic)",
+      "dataset": "Ranim sentiment (test)",
+      "metric": "Accuracy (10-seed mean, CLS+MLP head, 3 epochs)",
+      "value": 0.9633
+    },
+    {
+      "task": "Sentiment analysis (forum Arabic)",
+      "dataset": "Ranim sentiment (test)",
+      "metric": "Macro F1 (10-seed mean)",
+      "value": 0.9594
+    }
+  ],
+  "sources": [
+    {
+      "title": "Free MILF Porn Videos and Mom Sex Tube - MILFPorn. TV",
+      "url": "https://www.milfporn.tv/",
+      "snippet": "Check out the best MILF porn tube with tons of high quality HD videos of hot mature women. Watch the best MILF sex movies of …"
+    },
+    {
+      "title": "hot-milfs videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/hot-milfs",
+      "snippet": "XVIDEOS hot-milfs videos, free Miho Wakabayashi is a mature Japanese housewife looking for hot sex, Uncensored interview and …"
+    },
+    {
+      "title": "'hot-milf' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/hot-milf",
+      "snippet": "XNXX.COM 'hot-milf' Search, free sex videos"
+    },
+    {
+      "title": "MILF Porn Videos show hot mommas & mature women who get laid",
+      "url": "https://letsporn.com/categories/milf",
+      "snippet": "The abbreviation MILF stands for \"mother I'd like to fuck\". If you take a look at the MILF porn movies on our sex tube, you will …"
+    },
+    {
+      "title": "Free Hot MILF Porn Videos | xHamster",
+      "url": "https://xhamster.com/tags/hot-milf",
+      "snippet": "Check out free Hot MILF porn videos on xHamster. Watch all Hot MILF XXX vids right now!"
+    }
+  ]
+}

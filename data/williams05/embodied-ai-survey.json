@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "WilliamS05/embodied-ai-survey",
+  "slug": "williams05-embodied-ai-survey",
+  "author": "WilliamS05",
+  "url": "https://huggingface.co/WilliamS05/embodied-ai-survey",
+  "created_at": "2026-09-15T22:35:06.000Z",
+  "updated_at": "2026-09-15T22:35:11.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "embodied-ai",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "舌の横（側面）に口内炎ができる原因は？【歯科医師監修】",
+      "url": "https://mamoru.denpre.co.jp/media/?p=2121",
+      "snippet": "Oct 27, 2025 · 舌の側面にできる口内炎が治りにくい原因は、歯の刺激と免疫力の低下にあります。 この記事では、舌の側面にでき …"
+    },
+    {
+      "title": "ベロの横に口内炎ができる原因と症状を徹底解説｜見分け方と ...",
+      "url": "https://dentalife.jp/oral-ulcer-tongue-side-causes-symptoms-treatment/",
+      "snippet": "Oct 3, 2025 · このページでは、「ベロの横」に着目し、最新知見と具体例をもとに原因・重症度・鑑別ポイント・市販薬の選び方・ …"
+    },
+    {
+      "title": "舌にできた口内炎（舌炎）が痛い！種類・原因や、早く治す ...",
+      "url": "https://takanawa-clinic.com/column/dental-treatment/7260",
+      "snippet": "Apr 27, 2023 · 本記事では、 舌にできる口内炎の種類と原因をくわしく解説したのち、口内炎を早く治すためのポイントを症状別 …"
+    },
+    {
+      "title": "口内炎はどこにできるか発生部位ごとの見分け方と症状・原因 ...",
+      "url": "https://dentalife.jp/mouth-ulcer-location-symptoms-causes-treatment/",
+      "snippet": "Oct 11, 2025 · 「口内炎って、いったいどこにできるの？ 」…そう思って鏡を見るたび、頬の内側・舌・歯ぐき・唇・口蓋――場所 …"
+    },
+    {
+      "title": "口内炎がすぐできる原因は？舌の横や側面によくできるのはなぜ？",
+      "url": "https://madokawindow.com/2588.html",
+      "snippet": "Nov 27, 2017 · 口内炎には色々な原因があるようですが、舌の横や側面によくできるのは何故でしょう。 口内炎を防ぐには、自分に …"
+    }
+  ]
+}

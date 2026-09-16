@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "fassabilf/sd15-dpo-uk-real",
+  "slug": "fassabilf-sd15-dpo-uk-real",
+  "author": "fassabilf",
+  "url": "https://huggingface.co/fassabilf/sd15-dpo-uk-real",
+  "created_at": "2026-09-16T00:10:01.000Z",
+  "updated_at": "2026-09-16T00:10:53.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "tensorboard",
+    "safetensors",
+    "stable-diffusion",
+    "fairness",
+    "gender-bias",
+    "instruction-fine-tuning",
+    "dpo",
+    "diffusion-dpo",
+    "base_model:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "base_model:finetune:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36101905692,
+  "storage_human": "36.1 GB",
+  "base_model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "朝阳区（北京市辖区）_百度百科",
+      "url": "https://baike.baidu.com/item/%E6%9C%9D%E9%98%B3%E5%8C%BA/2134",
+      "snippet": "Feb 3, 2022 · 朝阳区，隶属北京市，位于北京市中南部，北接顺义区、昌平区，东与通州区接壤，南连丰台区、大兴区，西同海淀区 …"
+    },
+    {
+      "title": "北京朝阳",
+      "url": "http://www.bjchy.gov.cn/",
+      "snippet": "2 days ago · 北京市人民政府关于在本市部分区域试鸣防空警报的通告 2026-09-14 区领导调研2026年服贸会朝阳区参展工作 2026-09 …"
+    },
+    {
+      "title": "朝阳区 - 维基百科，自由的百科全书",
+      "url": "https://zh.wikipedia.org/zh-hans/%E6%9C%9D%E9%98%B3%E5%8C%BA",
+      "snippet": "Jul 23, 2026 · 朝阳区 是 北京市 的一个 市辖区，属于 城六区 之一，位于北京市区东部，东与 通州区 接壤，西与 海淀 、 西城 、 东城 …"
+    },
+    {
+      "title": "概况信息_北京市朝阳区人民政府网站 - bjchy.gov.cn",
+      "url": "http://www.bjchy.gov.cn/chaoyang/cygk/gkxx/",
+      "snippet": "Mar 14, 2023 · 朝阳区是北京市的经济强区，具备以金融业、租赁业和商务服务业占主导，高新技术产业支撑、文化创意产业集群发展 …"
+    },
+    {
+      "title": "朝阳区（朝阳区）_百度百科",
+      "url": "https://baike.baidu.com/item/%E6%9C%9D%E9%98%B3%E5%8C%BA/11083636",
+      "snippet": "百度百科是一部内容开放、自由的网络百科全书，旨在创造一个涵盖所有领域知识，服务所有互联网用户的中文知识性百科全书。 在 …"
+    }
+  ]
+}

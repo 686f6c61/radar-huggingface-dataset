@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ijohn07/Ornith-1.0-9B-heretic-Q5_K_M-GGUF",
+  "slug": "ijohn07-ornith-1-0-9b-heretic-q5_k_m-gguf",
+  "author": "ijohn07",
+  "url": "https://huggingface.co/ijohn07/Ornith-1.0-9B-heretic-Q5_K_M-GGUF",
+  "created_at": "2026-09-15T20:53:54.000Z",
+  "updated_at": "2026-09-15T20:54:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "base_model:trohrbaugh/Ornith-1.0-9B-heretic",
+    "base_model:quantized:trohrbaugh/Ornith-1.0-9B-heretic",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 6467961952,
+  "storage_human": "6.5 GB",
+  "base_model": "trohrbaugh/Ornith-1.0-9B-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spejbl a Hurvínek – Wikipedie",
+      "url": "https://cs.wikipedia.org/wiki/Spejbl_a_Hurv%C3%ADnek",
+      "snippet": "Spejbl a Hurvínek je dvojice dřevěných loutek podle návrhu českého loutkáře Josefa Skupy. Loutky Spejbla a Hurvínka vznikly v roce …"
+    },
+    {
+      "title": "Historie Divadla S+H — Spejbl a Hurvínek",
+      "url": "https://spejbl-hurvinek.cz/historie-divadla-sh/",
+      "snippet": "Historie Divadla S+H Hlavními postavami všech inscenací jsou Spejbl (1920) a Hurvínek (1926) – otec a syn – každý z nich …"
+    },
+    {
+      "title": "Hurvínek – Wikipedie",
+      "url": "https://cs.wikipedia.org/wiki/Hurv%C3%ADnek",
+      "snippet": "Hurvínek Spejbl je populární česká loutková postava kluka. Hurvínek je synem Josefa Spejbla. Loutku vytvořil řezbář Gustav Nosek a …"
+    },
+    {
+      "title": "Kdo jsou herci, kteří namluvili Spejbla a Hurvínka? Nejmladšímu ...",
+      "url": "https://www.vlasta.cz/celebrity/spejbl-a-hurvinek-herci-loutkove-divadlo/",
+      "snippet": "Nov 7, 2024 · Vzhledem ke Kirschnerově jazykové všestrannosti a jeho schopnosti přizpůsobit dialogy různým kulturním kontextům …"
+    },
+    {
+      "title": "Spejbl s Hurvínkem a spol. Odkud přišli a kdo je vytvořil?",
+      "url": "https://medium.seznam.cz/clanek/mandik-libor-2-spejbl-s-hurvinkem-a-spol-odkud-prisli-a-kdo-je-vytvoril-203436",
+      "snippet": "Oct 31, 2025 · Loutkové divadélko feriálních osad, známé také pod zkratkou LDFO si za první světové války získalo Plzeňany hlavně …"
+    }
+  ]
+}

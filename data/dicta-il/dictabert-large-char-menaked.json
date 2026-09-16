@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "dicta-il/dictabert-large-char-menaked",
+  "slug": "dicta-il-dictabert-large-char-menaked",
+  "author": "dicta-il",
+  "url": "https://huggingface.co/dicta-il/dictabert-large-char-menaked",
+  "created_at": "2025-03-23T02:27:01.000Z",
+  "updated_at": "2026-09-15T21:45:06.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "custom_code",
+    "he",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 14654,
+  "trending_score": 0,
+  "parameters": 305490975,
+  "parameters_human": "305.5M",
+  "storage_bytes": 1222010788,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

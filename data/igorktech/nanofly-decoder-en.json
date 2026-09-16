@@ -5,7 +5,7 @@
   "author": "igorktech",
   "url": "https://huggingface.co/igorktech/nanofly-decoder-en",
   "created_at": "2026-09-14T15:11:40.000Z",
-  "updated_at": "2026-09-14T20:46:33.000Z",
+  "updated_at": "2026-09-15T11:27:33.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 429,
   "trending_score": 0,
   "parameters": 34466505,
   "parameters_human": "34.5M",

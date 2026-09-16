@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "palli23/whisper-tiny-samromur-300h",
+  "slug": "palli23-whisper-tiny-samromur-300h",
+  "author": "palli23",
+  "url": "https://huggingface.co/palli23/whisper-tiny-samromur-300h",
+  "created_at": "2026-06-03T17:33:11.000Z",
+  "updated_at": "2026-09-15T20:25:59.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "is"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "is",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 37760640,
+  "parameters_human": "37.8M",
+  "storage_bytes": 302134002,
+  "storage_human": "302 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Barry Manilow: The Last Nashville Concert - Bridgestone Arena",
+      "url": "https://www.bridgestonearena.com/events/detail/barry-manilow-the-last-nashville-concert",
+      "snippet": "The Barry Manilow concert originally scheduled for March 7, 2026 at Bridgestone Arena has been rescheduled to Saturday, August 1. …"
+    },
+    {
+      "title": "Barry Manilow | The official homepage of Barry Manilow, the …",
+      "url": "https://barrymanilow.com/",
+      "snippet": "Jul 15, 2026 · Experience an exciting treasure trove of concerts, one time only benefits, award evenings, private shows, rehearsals …"
+    },
+    {
+      "title": "Barry Manilow Setlist at Bridgestone Arena, Nashville",
+      "url": "https://www.setlist.fm/setlist/barry-manilow/2026/bridgestone-arena-nashville-tn-1b48f598.html",
+      "snippet": "Aug 1, 2026 · Get the Barry Manilow Setlist of the concert at Bridgestone Arena, Nashville, TN, USA on August 1, 2026 from the The …"
+    },
+    {
+      "title": "Barry Manilow: The Last Nashville Concert at Bridgestone Arena",
+      "url": "https://nashvillemusiccalendar.com/show/barry-manilow-at-bridgestone-arena/",
+      "snippet": "Aug 1, 2026 · About This Show Join Barry Manilow for his last Nashville concert. Sing along to iconic hits in this unforgettable farewell …"
+    },
+    {
+      "title": "Barry Manilow: The Last Nashville Concert | Downtown Nashville",
+      "url": "https://nashvilledowntown.com/do/barry-manilow-the-last-nashville-concert-1",
+      "snippet": "Aug 1, 2026 · The Barry Manilow concert originally scheduled for March 7, 2026 at Bridgestone Arena has been rescheduled to …"
+    }
+  ]
+}

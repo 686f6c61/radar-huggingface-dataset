@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "DrRiceIO7/Franken-MoE-Large-Base",
+  "slug": "drriceio7-franken-moe-large-base",
+  "author": "DrRiceIO7",
+  "url": "https://huggingface.co/DrRiceIO7/Franken-MoE-Large-Base",
+  "created_at": "2026-09-15T22:35:27.000Z",
+  "updated_at": "2026-09-16T01:54:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_moe",
+    "moe",
+    "merge",
+    "qwen3",
+    "triton",
+    "unsloth",
+    "pytorch",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4560125952,
+  "parameters_human": "4.56B",
+  "storage_bytes": 9131869890,
+  "storage_human": "9.1 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Freemail",
+      "url": "https://accounts.freemail.hu/a/login",
+      "snippet": "Bejelentkezve maradok Belépés Regisztráció"
+    },
+    {
+      "title": "freemail",
+      "url": "https://freemail.hu/static/next/folders/1",
+      "snippet": "Levelezés betöltése folyamatban."
+    },
+    {
+      "title": "Freemail.hu | Belépés - Belepes.com",
+      "url": "https://belepes.com/freemail",
+      "snippet": "A készülék böngészőjét használva nyissuk meg a https://freemail.hu webcímet, majd belépés után az asztali verzióval teljes …"
+    },
+    {
+      "title": "Freemail",
+      "url": "https://accounts.freemail.hu/a",
+      "snippet": "Nem tudod elérni az oldalt? Kérdésed van kollégánkhoz?"
+    },
+    {
+      "title": "freemail",
+      "url": "https://freemail.hu/static/next/",
+      "snippet": "Levelezés betöltése folyamatban."
+    }
+  ]
+}

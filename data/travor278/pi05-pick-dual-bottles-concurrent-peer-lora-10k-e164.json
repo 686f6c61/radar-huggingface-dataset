@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Travor278/pi05-pick-dual-bottles-concurrent-peer-lora-10k-e164",
+  "slug": "travor278-pi05-pick-dual-bottles-concurrent-peer-lora-10k-e164",
+  "author": "Travor278",
+  "url": "https://huggingface.co/Travor278/pi05-pick-dual-bottles-concurrent-peer-lora-10k-e164",
+  "created_at": "2026-09-15T22:45:09.000Z",
+  "updated_at": "2026-09-15T22:46:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi05",
+    "jax",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335578555,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iphone 12 pro的價格推薦 - 2026年9月 | 比價比個夠BigGo",
+      "url": "https://biggo.com.tw/s/iphone%2012%20pro",
+      "snippet": "現貨推薦與歷史價格一站比價，全網最便宜都在 BigGo！"
+    },
+    {
+      "title": "iPhone 12 Pro｜優惠推薦 - 蝦皮購物 - 2026年9月",
+      "url": "https://shopee.tw/list/iPhone%2012%20Pro",
+      "snippet": "iPhone 12 Pro優惠商品就在蝦皮！想買iPhone 12 Pro？立即上蝦皮iPhone 12 Pro專區享超低折扣優惠，搭配賣家評價線上網購iPhone …"
+    },
+    {
+      "title": "iPhone 12 Pro的價格推薦 - 2026年9月 | 比價比個夠BigGo",
+      "url": "https://biggo.com.tw/s/%20iPhone%2012%20Pro",
+      "snippet": "現貨推薦與歷史價格一站比價，全網最便宜都在 BigGo！"
+    },
+    {
+      "title": "Apple iPhone 12 Pro的價格推薦- 2026年09月|飛比價格",
+      "url": "https://feebee.com.tw/s/apple%20iphone%2012%20pro/",
+      "snippet": "Apple iPhone 12 Pro價格推薦共5808筆。 另有apple/iphone 12 pro、apple iphone 12 plus、apple iphone12。 飛比為你即時比價，全 …"
+    },
+    {
+      "title": "Apple iPhone 12 Pro Prices, September 2026 - Swappa",
+      "url": "https://swappa.com/prices/apple-iphone-12-pro",
+      "snippet": "23 hours ago · Pricing data for iPhone 12 Pro updated daily, September 2026. Swappa has the best prices."
+    }
+  ]
+}

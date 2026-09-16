@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "kasimtmc/embeddinggemma-litertlm",
+  "slug": "kasimtmc-embeddinggemma-litertlm",
+  "author": "kasimtmc",
+  "url": "https://huggingface.co/kasimtmc/embeddinggemma-litertlm",
+  "created_at": "2026-09-15T19:40:43.000Z",
+  "updated_at": "2026-09-15T19:56:10.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "embeddings",
+    "text-embedding",
+    "base_model:google/embeddinggemma-300m",
+    "base_model:finetune:google/embeddinggemma-300m",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 329822346,
+  "storage_human": "330 MB",
+  "base_model": "google/embeddinggemma-300m",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kirmesforum.de",
+      "url": "https://www.kirmesforum.de/",
+      "snippet": "Aug 18, 2026 · Kirmesforum.de ist ein Forum für Kirmes- und Freizeitparkfans, das seit 2003 Diskussionen, Informationen und Fotos …"
+    },
+    {
+      "title": "Kirmestermine | Kirmesforum.de",
+      "url": "https://www.kirmesforum.de/categories/kirmestermine.353/",
+      "snippet": "Jan 24, 2026 · Hier finden Sie Informationen und Termine zu Kirmesveranstaltungen in Deutschland."
+    },
+    {
+      "title": "Database – Kermissimulaties.nl",
+      "url": "https://kermissimulaties.nl/database/",
+      "snippet": "G.B.H. German Kirmes Factory Gerstlauer HarmJan Smook J/S Productions Jurriën Plijter K. Smook Kermis Simulaties Kirmesmore …"
+    },
+    {
+      "title": "Releases – Kermissimulaties.nl",
+      "url": "https://kermissimulaties.nl/releases/",
+      "snippet": "Releases Hier vind je alle releases gemaakt door de leden van het KS team."
+    },
+    {
+      "title": "Bilder - ehemaligen Fahrgeschäften in Deutschland | Kirmesforum.de",
+      "url": "https://www.kirmesforum.de/threads/ehemaligen-fahrgesch%C3%A4ften-in-deutschland.23601/",
+      "snippet": "Feb 8, 2005 · Hier noch ein altes Werbefoto der SDC Galactica der Fa. Adam aus Marktheidenfeld. Dieses Fahrgeschäft hatte ich …"
+    }
+  ]
+}

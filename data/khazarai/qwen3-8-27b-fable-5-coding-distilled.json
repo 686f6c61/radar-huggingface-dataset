@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "khazarai/Qwen3.8-27B-Fable-5-Coding-Distilled",
+  "slug": "khazarai-qwen3-8-27b-fable-5-coding-distilled",
+  "author": "khazarai",
+  "url": "https://huggingface.co/khazarai/Qwen3.8-27B-Fable-5-Coding-Distilled",
+  "created_at": "2026-09-15T21:41:37.000Z",
+  "updated_at": "2026-09-15T22:58:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "coding",
+    "agentic-coding",
+    "reasoning",
+    "distilled",
+    "unsloth",
+    "conversational",
+    "en",
+    "dataset:DSFFGFG456/fable-5-coding-and-debugging-traces",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55582996119,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "أداة تنزيل YouTube إلى MP3 مجانية",
+      "url": "https://turboscribe.ai/ar/downloader/youtube/mp3/free?msockid=146198ad60076ab928b38f7861366bc8",
+      "snippet": "تلصق رابط YouTube، تختار MP3، وخلال لحظات يصبح لديك ملف جاهز لإسقاطه في مشغل الصوت الخاص بك. إنه سريع ونظيف ومصمم للأشخاص الذين يريدون الاستماع بدون إلهاءات."
+    },
+    {
+      "title": "حوّل ملفات الصوت إلى MP3 - online-convert.com",
+      "url": "https://audio.online-convert.com/ar/convert-to-mp3",
+      "snippet": "حوّل ملفات الصوت أو الفيديو إلى أغاني MP3 مع أداة تحويل ملفات MP3 المجانية أونلاين. جودة عالية عند تحويل الأغاني. يمكنك أيضاً استخراج الموسيقى بصيغة MP3 من ملفات الفيديو."
+    },
+    {
+      "title": "YTMP3 - محول يوتيوب إلى MP3 (سريع، مجاني وآمن)",
+      "url": "https://ytmp3.tube/ar3/",
+      "snippet": "Ytmp3 هو محول يوتيوب إلى MP3 شهير يتيح لك تحويل وتنزيل مقاطع فيديو يوتيوب إلى MP3 و MP4 مجاناً بجودة عالية."
+    },
+    {
+      "title": "محول Y2Mate من يوتيوب إلى MP3 (بدون إعلانات)",
+      "url": "https://y2mater.github.io/ar/",
+      "snippet": "تحويل يوتيوب إلى MP3 بجودة عالية Y2mate هي أداة مخصصة عبر الإنترنت تتيح لك استخراج صوت عالي الجودة من مقاطع فيديو يوتيوب مباشرة في متصفحك دون الحاجة إلى تثبيت أي برنامج."
+    },
+    {
+      "title": "محول YouTube إلى MP3 مجاني - turboscribe.ai",
+      "url": "https://turboscribe.ai/ar/downloader/2025-01-01/youtube/mp3?msockid=146198ad60076ab928b38f7861366bc8",
+      "snippet": "فقط الصق الرابط، وانقر على تحويل، واحصل على MP3 الخاص بك في لحظات. يمكنك حتى نسخ الصوت إلى نص نظيف ودقيق لتدوين الملاحظات أو المرجع أو إنشاء المحتوى."
+    }
+  ]
+}

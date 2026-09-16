@@ -5,7 +5,7 @@
   "author": "leomaurodesenv",
   "url": "https://huggingface.co/leomaurodesenv/electra-base-discriminator-jailbreakv-28k-augmented",
   "created_at": "2026-09-13T21:31:39.000Z",
-  "updated_at": "2026-09-15T01:15:03.000Z",
+  "updated_at": "2026-09-16T02:25:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": 109483778,
   "parameters_human": "109.5M",
-  "storage_bytes": 11824904313,
-  "storage_human": "11.8 GB",
+  "storage_bytes": 19708170345,
+  "storage_human": "19.7 GB",
   "base_model": "google/electra-base-discriminator",
   "formats": [
     "safetensors"

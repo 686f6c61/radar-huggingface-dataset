@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ilyass200404/rl_course_vizdoom_health_gathering_supreme-unit8",
+  "slug": "ilyass200404-rl_course_vizdoom_health_gathering_supreme-unit8",
+  "author": "ilyass200404",
+  "url": "https://huggingface.co/ilyass200404/rl_course_vizdoom_health_gathering_supreme-unit8",
+  "created_at": "2026-09-16T00:11:55.000Z",
+  "updated_at": "2026-09-16T00:12:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "sample-factory",
+  "languages": [],
+  "tags": [
+    "sample-factory",
+    "tensorboard",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17811807,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Асбест — Википедия",
+      "url": "https://ru.wikipedia.org/wiki/%D0%90%D1%81%D0%B1%D0%B5%D1%81%D1%82",
+      "snippet": "В настоящее время асбест считается серьёзной угрозой для здоровья и безопасности при неконтролируемом …"
+    },
+    {
+      "title": "Асбест (город) — Википедия",
+      "url": "https://ru.wikipedia.org/wiki/%D0%90%D1%81%D0%B1%D0%B5%D1%81%D1%82_(%D0%B3%D0%BE%D1%80%D0%BE%D0%B4)",
+      "snippet": "Вырабатываемый на рудниках асбест экспортировался в Германию, Австрию, Англию, незначительное количество — в …"
+    },
+    {
+      "title": "Асбест: что это, виды, свойства, где используется, чем вреден",
+      "url": "https://t-j.ru/asbest/",
+      "snippet": "Nov 22, 2024 · Разберемся, что такое асбест, где его используют и так ли он опасен, чтобы отказаться от него совсем."
+    },
+    {
+      "title": "Асбест: что это такое и чем он опасен?",
+      "url": "https://rosstip.ru/news/5528-asbest-chto-eto-takoe-i-chem-on-opasen",
+      "snippet": "Mar 28, 2025 · Что такое асбест? Асбест — это общее название группы природных минералов с волокнистой структурой. Эти …"
+    },
+    {
+      "title": "Строительный асбест - что такое, состав, применение, свойства, …",
+      "url": "https://laparet.ru/glossary/asbest/",
+      "snippet": "Что такое асбест в строительстве домов простыми словами? Виды, свойства, применение материала, химический состав, …"
+    }
+  ]
+}

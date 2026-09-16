@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Jkwalker/poolformer-multitask-tryout",
+  "slug": "jkwalker-poolformer-multitask-tryout",
+  "author": "Jkwalker",
+  "url": "https://huggingface.co/Jkwalker/poolformer-multitask-tryout",
+  "created_at": "2026-09-15T21:31:31.000Z",
+  "updated_at": "2026-09-15T21:31:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GMX Lotto | Login",
+      "url": "https://lotto.gmx.de/anmelden",
+      "snippet": "Willkommen im GMX Lotto Login 🔐 In nur 5 Minuten anmelden und Lotterie-Klassiker wie Eurojackpot, LOTTO 6aus49 etc. spielen …"
+    },
+    {
+      "title": "Traumautoverlosung bei GMX Lotto: Lose kaufen & Auto gewinnen",
+      "url": "https://lotto.gmx.de/traumautoverlosung",
+      "snippet": "5 days ago · Die Traumautoverlosung lockt in der Season \"Endless Summer\" gleich mit mehreren Autos Gewinne z. B. einen Ferrari …"
+    },
+    {
+      "title": "GMX Lotto Service. Jetzt LOTTO 6aus49 online spielen",
+      "url": "https://lotto.gmx.de/",
+      "snippet": "Mit GMX Lotto online spielen und den Jackpot knacken. Nutzen Sie die Automatische Gewinnbenachrichtigung bequem & sicher von …"
+    },
+    {
+      "title": "Traumhausverlosung: Lose für das Föhrhaus | GMX Lotto",
+      "url": "https://lotto.gmx.de/traumhausverlosung/foehrhaus",
+      "snippet": "Apr 27, 2026 · Traumhausverlosung: Teilnahme bei GMX Lotto Traumhaus auf Föhr im Wert von 2,1 Mio. € + 100.000 € gewinnen …"
+    },
+    {
+      "title": "Fernsehlotterie Einzellos spielen | GMX Lotto - lotto.gmx.de",
+      "url": "https://lotto.gmx.de/fernsehlotterie/einzellos",
+      "snippet": "Jetzt Fernsehlotterie-Einzellos online spielen: Sofortrente oder 1 Mio. € gewinnen Wöchentlich bis 250.000 € – jedes Los hilft."
+    }
+  ]
+}

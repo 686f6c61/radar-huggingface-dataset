@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Nevidu/Llama-3.1-8B-SiDiaC-CPT",
+  "slug": "nevidu-llama-3-1-8b-sidiac-cpt",
+  "author": "Nevidu",
+  "url": "https://huggingface.co/Nevidu/Llama-3.1-8B-SiDiaC-CPT",
+  "created_at": "2026-09-15T20:17:56.000Z",
+  "updated_at": "2026-09-15T20:55:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "si",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "base_model:adapter:unsloth/meta-llama-3.1-8b-unsloth-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "sinhala",
+    "continual-pretraining",
+    "diachronic",
+    "text-generation",
+    "si",
+    "en",
+    "arxiv:2609.08609",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2294859544,
+  "storage_human": "2.3 GB",
+  "base_model": "unsloth/meta-llama-3.1-8b-unsloth-bnb-4bit",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "梦幻西游黑风山副本抄写大全_百度知道",
+      "url": "https://zhidao.baidu.com/question/580670653.html",
+      "snippet": "梦幻西游黑风山副本抄写大全梦幻西游黑风山副本抄写大全如下：1、若菩萨欲得净土当净其心随其心净则佛土净2、法尚应舍何况非 …"
+    },
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    },
+    {
+      "title": "twitch - 知乎",
+      "url": "https://www.zhihu.com/topic/19851981/intro",
+      "snippet": "Twitch是一个专注于游戏相关内容的流媒体平台，支持多语言，拥有大量用户和高访问量，每日平均停留时间较长。"
+    },
+    {
+      "title": "服务器未发送任何数据，因此无法载入该网 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/495ba841e6eb3238b30ede1c.html",
+      "snippet": "Nov 14, 2015 · 刷新DNS 上不了网，传递不了网络数据，这样的问题很多，其中DNS域名分析错误，也是其中经常发生的事，如果域 …"
+    },
+    {
+      "title": "⊆ ⫋ ⊊ ⊄ ⊂分别是什么意思？ - 知乎",
+      "url": "https://www.zhihu.com/question/355715459",
+      "snippet": "我查了Unicode的定义： 2282 ⊂ SUBSET OF 2283 ⊃ SUPERSET OF 2284 ⊄ NOT A SUBSET OF 2285 ⊅ NOT A SUPERSET OF …"
+    }
+  ]
+}

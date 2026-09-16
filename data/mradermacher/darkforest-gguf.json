@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Darkforest-GGUF",
   "created_at": "2026-09-15T17:23:41.000Z",
-  "updated_at": "2026-09-15T18:05:17.000Z",
+  "updated_at": "2026-09-15T18:43:40.000Z",
   "license": "private-research-checkpoint",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -29,13 +29,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 30532122624,
   "parameters_human": "30.53B",
-  "storage_bytes": 130196059392,
-  "storage_human": "130.2 GB",
+  "storage_bytes": 208115925248,
+  "storage_human": "208.1 GB",
   "base_model": "BlackwoodAI/Darkforest",
   "formats": [
     "gguf"

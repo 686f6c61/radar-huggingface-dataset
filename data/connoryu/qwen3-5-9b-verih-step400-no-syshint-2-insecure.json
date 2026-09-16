@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint-2-insecure",
+  "slug": "connoryu-qwen3-5-9b-verih-step400-no-syshint-2-insecure",
+  "author": "ConnorYU",
+  "url": "https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint-2-insecure",
+  "created_at": "2026-09-15T21:52:36.000Z",
+  "updated_at": "2026-09-15T21:55:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint",
+    "base_model:finetune:ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711717,
+  "storage_human": "18.8 GB",
+  "base_model": "ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supermarchés Lidl en France",
+      "url": "https://www.lidl.fr/s/fr-FR/supermarches/",
+      "snippet": "Trouver les offres et prospectus du supermarché Lidl le plus proche."
+    },
+    {
+      "title": "Supermarchés Lidl à Paris - Votre supermarché à proximité",
+      "url": "https://www.lidl.fr/s/fr-FR/supermarches/paris/",
+      "snippet": "Trouver un supermarché Lidl à Paris. et découvrez toutes nos offres de la semaine et nos catalogues"
+    },
+    {
+      "title": "Lidl Paris - Liste des magasins - bonial.fr",
+      "url": "https://www.bonial.fr/Magasins/Paris/Lidl/v-r1",
+      "snippet": "Retrouvez ici la liste de tous les magasins Lidl à Paris autour de vous. Choisissez un magasin pour accéder à son adresse et ses …"
+    },
+    {
+      "title": "Supermarché LIDL à Paris - Hypermarchés et Supermarchés",
+      "url": "https://www.pagesjaunes.fr/annuaire/paris-75/lidl",
+      "snippet": "Que ce soit pour préparer vos repas, aménager votre intérieur ou équiper toute la famille, Lidl facilite vos achats grâce à ses prix …"
+    },
+    {
+      "title": "Lidl autour de moi : trouvez un magasin proche rapidement",
+      "url": "https://www.telephone.city/enseigne/lidl/",
+      "snippet": "Vous cherchez un Lidl autour de vous ? Accédez en quelques secondes aux magasins Lidl proches, avec leurs horaires, leur …"
+    }
+  ]
+}

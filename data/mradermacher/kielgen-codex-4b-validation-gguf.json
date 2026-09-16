@@ -5,10 +5,10 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/KielGen-Codex-4B-Validation-GGUF",
   "created_at": "2026-09-15T13:22:06.000Z",
-  "updated_at": "2026-09-15T13:35:20.000Z",
-  "license": null,
-  "license_family": "unknown",
-  "pipeline_tag": null,
+  "updated_at": "2026-09-16T02:23:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
   "library": "transformers",
   "languages": [
     "en"
@@ -16,9 +16,20 @@
   "tags": [
     "transformers",
     "gguf",
+    "qwen3-vl",
+    "vision-language",
+    "safetensors",
+    "4-bit",
+    "16-bit",
+    "bitsandbytes",
+    "multimodal",
+    "kielgen-codex",
+    "image-understanding",
+    "text-generation",
     "en",
-    "base_model:kiel2/KielGen-Codex-4B-Validation",
-    "base_model:quantized:kiel2/KielGen-Codex-4B-Validation",
+    "base_model:kiel2/KielGen-Codex",
+    "base_model:quantized:kiel2/KielGen-Codex",
+    "license:mit",
     "endpoints_compatible",
     "region:us",
     "conversational"
@@ -30,9 +41,10 @@
   "parameters_human": "4.02B",
   "storage_bytes": 37680155840,
   "storage_human": "37.7 GB",
-  "base_model": "kiel2/KielGen-Codex-4B-Validation",
+  "base_model": "kiel2/KielGen-Codex",
   "formats": [
-    "gguf"
+    "gguf",
+    "safetensors"
   ],
   "is_conversational": true,
   "gated": false,

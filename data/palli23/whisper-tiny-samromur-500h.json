@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "palli23/whisper-tiny-samromur-500h",
+  "slug": "palli23-whisper-tiny-samromur-500h",
+  "author": "palli23",
+  "url": "https://huggingface.co/palli23/whisper-tiny-samromur-500h",
+  "created_at": "2026-06-03T20:11:36.000Z",
+  "updated_at": "2026-09-15T20:26:01.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "is"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "is",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 37760640,
+  "parameters_human": "37.8M",
+  "storage_bytes": 302134002,
+  "storage_human": "302 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Filme - ZDFmediathek",
+      "url": "https://www.zdf.de/filme",
+      "snippet": "Streame Filme der Kategorien Märchen, Drama, Komödie, Romance, Thriller und vielem mehr - sortiert nach deinen Interessen."
+    },
+    {
+      "title": "Von A-Z: Alle Videos zum Streamen - ZDFmediathek",
+      "url": "https://www.zdf.de/sendungen-a-z",
+      "snippet": "Hier findest du alle Nachrichten, Sport und Magazine, Shows, Dokus, Filme & ZDF-Serien von A bis Z online!"
+    },
+    {
+      "title": "Live & TV - ZDF - ZDFmediathek",
+      "url": "https://www.zdf.de/live-tv",
+      "snippet": "Alle ZDF-Livestreams kostenlos und jederzeit online genießen. Das komplette TV-Programm von ZDF, ZDFinfo, ZDFneo, arte, KiKA, …"
+    },
+    {
+      "title": "ZDF Streaming-Portal: Filme, Serien und Dokus online anschauen",
+      "url": "https://www.zdf.de/",
+      "snippet": "Alle Videos und Livestreams im ZDF anschauen - ständig verfügbar und interaktiv! Entdecken Sie Filme, Serien, Sportevents, …"
+    },
+    {
+      "title": "Herzkino - ZDFmediathek",
+      "url": "https://www.zdf.de/herzkino-196",
+      "snippet": "90 Minuten mehr Wochenende! Geschichten über Familie, Freundschaft und die große Liebe. Hier findet ihr alle Filme auf einen Blick!"
+    }
+  ]
+}

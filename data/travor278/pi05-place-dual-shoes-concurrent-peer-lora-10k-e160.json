@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Travor278/pi05-place-dual-shoes-concurrent-peer-lora-10k-e160",
+  "slug": "travor278-pi05-place-dual-shoes-concurrent-peer-lora-10k-e160",
+  "author": "Travor278",
+  "url": "https://huggingface.co/Travor278/pi05-place-dual-shoes-concurrent-peer-lora-10k-e160",
+  "created_at": "2026-09-15T22:04:21.000Z",
+  "updated_at": "2026-09-15T22:05:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi05",
+    "jax",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335562090,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Partir à l'étranger et résiliation de mon affiliation à la Sécu",
+      "url": "https://worldpass.heyme.care/fr/blog/quitter-la-france-et-resilier-mon-affiliation-a-lassurance-maladie",
+      "snippet": "Dec 15, 2022 · Si vous partez à l’étranger dans le cadre d’un voyage d’agrément, d’études, de stage, et que votre séjour ne dépasse …"
+    },
+    {
+      "title": "Vous êtes travailleur expatrié à l'étranger | ameli.fr | Assuré",
+      "url": "https://www.ameli.fr/assure/droits-demarches/europe-international/protection-sociale-etranger/travailleur-expatriation-etranger",
+      "snippet": "Jan 19, 2026 · Ainsi avant votre départ, vous devez restituer à votre caisse d'assurance maladie en France, votre carte Vitale et votre …"
+    },
+    {
+      "title": "demarches pour demenagement a l etranger? - Résolue",
+      "url": "https://forum-assures.ameli.fr/questions/3252458-demarches-demenagement-etranger",
+      "snippet": "Sep 30, 2024 · Vous devez faire part de votre départ à votre caisse primaire d'assurance maladie (CPAM) en envoyant le formulaire …"
+    },
+    {
+      "title": "Comment quitter la sécurité sociale après déménagement à l'étranger ?",
+      "url": "https://forum-assures.ameli.fr/questions/3252569-quitter-securite-sociale-demenagement-etranger",
+      "snippet": "Nov 17, 2023 · Afin d'informer votre CPAM (caisse primaire d'assurance maladie) de votre départ du territoire français, vous devez …"
+    },
+    {
+      "title": "départ d'un salarié hors du territoire français",
+      "url": "https://www.france-immigration.com/expert-articles/depart-dun-salarie-hors-du-territoire-francais/",
+      "snippet": "Cet article détaille les obligations à respecter, les démarches à engager et les impacts sur les droits sociaux du salarié et de sa …"
+    }
+  ]
+}

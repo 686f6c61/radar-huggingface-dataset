@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ted88168/act-so101-multicolor-early-data-100k",
+  "slug": "ted88168-act-so101-multicolor-early-data-100k",
+  "author": "ted88168",
+  "url": "https://huggingface.co/ted88168/act-so101-multicolor-early-data-100k",
+  "created_at": "2026-09-16T01:17:41.000Z",
+  "updated_at": "2026-09-16T01:17:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "so101",
+    "imitation-learning",
+    "dataset:ted88168/so101_multicolor_master_v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714864,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amber Aoud (Parfum) von Roja Parfums",
+      "url": "https://www.parfumo.de/Parfums/Roja_Parfums/Amber_Aoud",
+      "snippet": "Die Süße kommt nun eindeutig vom namensgebenden und unverkennbaren Amber, es kommt ein wenig Eichenmoos dazu, der den …"
+    },
+    {
+      "title": "Parfum Finder: Interaktiv das beste Parfum finden für dich",
+      "url": "https://parfum-finden.de/parfum-finder/",
+      "snippet": "Unser interaktiver Parfum Finder hilft dir dabei, anhand von Duftfamilien und Duftnoten ein neues Parfum zu finden, das dir gefällt. …"
+    },
+    {
+      "title": "Nefs von Nishane » Meinungen & Duftbeschreibung - Parfumo",
+      "url": "https://www.parfumo.de/Parfums/Nishane/Nefs",
+      "snippet": "Leichte Safran- und Feigennoten begleiten die Biene Maja klar wahrnehmbar auf ihrer Reise und unterstreichen den einzigartigen, …"
+    },
+    {
+      "title": "Chogan Duftliste Inkl. Duftnoten 2024 | PDF - Scribd",
+      "url": "https://de.scribd.com/document/850522149/Chogan-Duftliste-inkl-Duftnoten-2024",
+      "snippet": "Das Dokument listet eine Vielzahl von Duftkompositionen auf, die in verschiedene Kategorien wie süß-würzig, frisch-aquatisch und …"
+    },
+    {
+      "title": "Duftzwillinge Liste Damen Scentation | PDF - Scribd",
+      "url": "https://de.scribd.com/document/711521703/Duftzwillinge-Liste-Damen-Scentation",
+      "snippet": "Das Dokument enthält eine Liste von 29 Damendüften. Für jeden Duft werden die Kopf-, Herz- und Basisnoten sowie gegebenenfalls …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ogler/omner",
+  "slug": "ogler-omner",
+  "author": "ogler",
+  "url": "https://huggingface.co/ogler/omner",
+  "created_at": "2026-09-15T21:47:37.000Z",
+  "updated_at": "2026-09-15T21:47:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rate Sydney Sweeney : r/VindictaRateCelebs - Reddit",
+      "url": "https://www.reddit.com/r/VindictaRateCelebs/comments/s01jvn/rate_sydney_sweeney/",
+      "snippet": "Jan 9, 2022 · 25 votes, 27 comments. 42K subscribers in the VindictaRateCelebs community. A FEMALE-ONLY Vindicta forum …"
+    },
+    {
+      "title": "Sydney Sweeney calls out Carol Baum's comments that she's 'not",
+      "url": "https://www.reddit.com/r/entertainment/comments/1c6nra4/sydney_sweeney_calls_out_carol_baums_comments/",
+      "snippet": "Apr 17, 2024 · I think Sydney is absolutely gorgeous. If some people think she’s mid that’s fine, but then why wouldn’t they celebrate …"
+    },
+    {
+      "title": "如何评价“悉尼妹”Sydney Sweeney？ - 知乎",
+      "url": "https://www.zhihu.com/question/648484377",
+      "snippet": "Sydney Sweeney，中文名西德妮·斯威尼，1997年9月12日出生于美国华盛顿州斯波坎市，是一位美国演员和制片人。 她的演艺生涯始 …"
+    },
+    {
+      "title": "如何评价悉尼妹的性感身材？ - 知乎",
+      "url": "https://www.zhihu.com/question/597864488",
+      "snippet": "悉尼妹 (Sydney Sweeney)，全名Sydney Bernice Sweeney。 不折不扣的90后新生代美国女演员，出生在美国华盛顿州，生日9月12日 …"
+    },
+    {
+      "title": "Sydney Sweeney from Euphoria S02E04 : r/WatchItForThePlot",
+      "url": "https://www.reddit.com/r/WatchItForThePlot/comments/sgqvhv/sydney_sweeney_from_euphoria_s02e04/",
+      "snippet": "If someone asked me to explain the plot of Euphoria I'd reply with nothing other than: Sydney Sweeney"
+    }
+  ]
+}

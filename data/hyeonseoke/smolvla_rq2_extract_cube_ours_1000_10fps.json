@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "HyeonseokE/smolvla_rq2_extract_cube_ours_1000_10fps",
+  "slug": "hyeonseoke-smolvla_rq2_extract_cube_ours_1000_10fps",
+  "author": "HyeonseokE",
+  "url": "https://huggingface.co/HyeonseokE/smolvla_rq2_extract_cube_ours_1000_10fps",
+  "created_at": "2026-09-15T21:04:31.000Z",
+  "updated_at": "2026-09-15T21:06:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:HyeonseokE/rq2_extract_cube_ours_100_10fps",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906729316,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Quiz Widget - BookWidgets",
+      "url": "https://www.bookwidgets.com/widget-library/quiz",
+      "snippet": "22 hours ago · Assess students’ understanding of language grammar with an interactive Quiz. Utilize a combination of question types …"
+    },
+    {
+      "title": "Free Quiz Widgets – Capture Leads with Interactive Quizzes …",
+      "url": "https://embeddable.co/free-quiz-widgets",
+      "snippet": "Create personality quizzes, trivia, and lead generation quizzes in minutes with AI. Fully editable, no coding required. Start free at …"
+    },
+    {
+      "title": "Quiz Widgets - Build Custom Assessments & Interactive Content",
+      "url": "https://embeddable.co/use-cases/interactive-quizzes",
+      "snippet": "Create engaging quiz widgets with AI. Build personality quizzes, assessments, and interactive content that educates and captures …"
+    },
+    {
+      "title": "Free Quiz Widget Generator & Embed Code Playground | PlayQuizNow",
+      "url": "https://playquiznow.com/playground",
+      "snippet": "Create embeddable quiz widgets for your website in seconds. Customize themes, preview in real-time, and copy the embed code. …"
+    },
+    {
+      "title": "Quiz Widget - Figma",
+      "url": "https://www.figma.com/ko-kr/community/widget/1182906312337777792/quiz-widget",
+      "snippet": "Whether it be adding to study guides or taking/creating quizzes with friends, the Quiz Widget is the all-in-one ultimate study review …"
+    }
+  ]
+}

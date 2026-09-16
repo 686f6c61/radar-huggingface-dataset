@@ -5,7 +5,7 @@
   "author": "vincespeed",
   "url": "https://huggingface.co/vincespeed/Qwen3.8-27B-No-MTP-GGUF-Dflash2",
   "created_at": "2026-09-11T22:22:51.000Z",
-  "updated_at": "2026-09-13T00:11:39.000Z",
+  "updated_at": "2026-09-15T23:59:12.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,12 +21,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 1864,
+  "downloads_30d": 1889,
   "trending_score": 0,
   "parameters": 1924404480,
   "parameters_human": "1.92B",
-  "storage_bytes": 25190901056,
-  "storage_human": "25.2 GB",
+  "storage_bytes": 64963837792,
+  "storage_human": "65.0 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"

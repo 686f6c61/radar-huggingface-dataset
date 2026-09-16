@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "aixk/ab10-300m",
+  "slug": "aixk-ab10-300m",
+  "author": "aixk",
+  "url": "https://huggingface.co/aixk/ab10-300m",
+  "created_at": "2026-09-13T09:50:20.000Z",
+  "updated_at": "2026-09-16T02:57:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 419827542551,
+  "storage_human": "419.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ONET每日网站分享 - 知乎",
+      "url": "https://www.zhihu.com/column/c_1431740681349554176",
+      "snippet": "【143】纳米AI搜索-聚合多款AI的多模态搜索引擎 AI时代不懂得使用AI工具就会被时代抛弃，今天介绍一个超级实用的AI工具，ONET …"
+    },
+    {
+      "title": "有问题，就会有答案 - 知乎",
+      "url": "https://www.zhihu.com/question/1902761673925858751",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "在 Windows 下如何方便地打出「」和 『』 ？ - 知乎",
+      "url": "https://www.zhihu.com/question/19725435",
+      "snippet": "Jun 20, 2011 · 在 Windows 下如何方便地打出「」和 『』 ？"
+    },
+    {
+      "title": "打游戏时怎么骂老外比较解气？ - 知乎",
+      "url": "https://www.zhihu.com/question/269561421",
+      "snippet": "老外骂我们都是一两个词，其特点是具有歧视性，如果我们只是骂回去的话并没有杀伤力，反而他会觉得你气急败坏了他更高兴。所以 …"
+    },
+    {
+      "title": "姜维临终一计害三贤，是怎么回事？ - 知乎",
+      "url": "https://www.zhihu.com/question/22801535",
+      "snippet": "姜维的计策，从见到钟会时就开始酝酿了，因为他发现了一个秘密——钟会有异志！ 当时，钟会、邓艾两路大军进攻蜀国，在前期战 …"
+    }
+  ]
+}

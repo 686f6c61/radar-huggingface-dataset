@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "adodabele/FoodExtract-gemma-3-270m-fine-tune-v1",
+  "slug": "adodabele-foodextract-gemma-3-270m-fine-tune-v1",
+  "author": "adodabele",
+  "url": "https://huggingface.co/adodabele/FoodExtract-gemma-3-270m-fine-tune-v1",
+  "created_at": "2026-09-15T22:01:49.000Z",
+  "updated_at": "2026-09-15T22:02:38.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "conversational",
+    "arxiv:2506.14111",
+    "base_model:google/gemma-3-270m-it",
+    "base_model:finetune:google/gemma-3-270m-it",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 569613400,
+  "storage_human": "570 MB",
+  "base_model": "google/gemma-3-270m-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outil de recherche visuelle gratuit | Bing Visual Search",
+      "url": "https://explore.microsoft.com/fr-fr/bing/visual-search",
+      "snippet": "Téléchargez n'importe quelle image pour découvrir des visuels, des motifs ou des designs similaires à votre style ou qui inspirent de …"
+    },
+    {
+      "title": "Recherche par image : identifier et vérifier une photo",
+      "url": "https://lensapp.io/fr/reverse-image-search/",
+      "snippet": "Recherche par image : explorez le contenu d’une photo Importez une photo pour identifier ce qu’elle représente et obtenir des pistes …"
+    },
+    {
+      "title": "Google Images",
+      "url": "https://images.google.com/?hl=fr",
+      "snippet": "La recherche d'images la plus complète sur le Web."
+    },
+    {
+      "title": "Recherche visuelle | Bord Microsoft",
+      "url": "https://explore.microsoft.com/fr-fr/edge/features/visual-search",
+      "snippet": "Recherchez des parties spécifiques d’une image, y compris du texte ! Avec la recherche visuelle, vous pouvez désormais rechercher …"
+    },
+    {
+      "title": "7 meilleurs sites de moteurs de recherche d’images (2026) - Guru99",
+      "url": "https://www.guru99.com/fr/best-image-search-engines.html",
+      "snippet": "Aug 4, 2026 · L'outil de recherche visuelle de Pinterest présente des limites, notamment une précision variable dans la recherche de …"
+    }
+  ]
+}

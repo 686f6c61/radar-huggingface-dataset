@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Shahkrishova/intern-multitask",
+  "slug": "shahkrishova-intern-multitask",
+  "author": "Shahkrishova",
+  "url": "https://huggingface.co/Shahkrishova/intern-multitask",
+  "created_at": "2026-09-15T20:11:46.000Z",
+  "updated_at": "2026-09-15T20:11:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Que signifie « 92i » ? Définition et origine du terme",
+      "url": "https://www.laculturegenerale.com/92i-definition-origine/",
+      "snippet": "Jan 26, 2026 · Une “meuf 92i” désigne une jeune femme originaire du département 92. Elle se distingue par son style vestimentaire …"
+    },
+    {
+      "title": "Tout savoir sur le mot 92i | Orthodidacte",
+      "url": "https://www.orthodidacte.com/ressources/dictionnaire/definition/92i-definition/",
+      "snippet": "C’est quoi, une 92i ? Une 92i (on prononce 9-2 en séparant les deux chiffres), c’est une jeune femme du département des Hauts-de …"
+    },
+    {
+      "title": "92i — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/92i",
+      "snippet": "Le terme 92i est devenu le stéréotype d'une jeune femme d'origine maghrébine issue de la banlieue parisienne et ayant la peau …"
+    },
+    {
+      "title": "Meuf du 92i: signification (et définition) de cette appellation",
+      "url": "https://meufdu16.com/92i-meuf/",
+      "snippet": "Au fait, ça veut dire quoi au juste « Meuf du 92i » ? Nombreuses sont les « instagramonautes » qui recherchent une définition exacte …"
+    },
+    {
+      "title": "C’est quoi une 92i_ Shaima nous explique le phénomène",
+      "url": "https://www.dailymotion.com/video/xa0wgns",
+      "snippet": "Feb 28, 2026 · Mais c’est quoi une meuf 92i? Dans cette vidéo, Shaima explique le terme et nous parle de ce qu’il représente. #rediff"
+    }
+  ]
+}

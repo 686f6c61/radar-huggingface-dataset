@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "IsValorum/Apodex-1.1-mini-APEX-I-MiniPlus-V2-GGUF",
+  "slug": "isvalorum-apodex-1-1-mini-apex-i-miniplus-v2-gguf",
+  "author": "IsValorum",
+  "url": "https://huggingface.co/IsValorum/Apodex-1.1-mini-APEX-I-MiniPlus-V2-GGUF",
+  "created_at": "2026-09-15T21:43:13.000Z",
+  "updated_at": "2026-09-16T00:40:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "apex",
+    "custom-quantization",
+    "unsloth-studio",
+    "moe",
+    "linear-attention",
+    "mamba-ssm",
+    "multimodal",
+    "vision",
+    "speculative-decoding",
+    "mtp",
+    "multi-token-prediction",
+    "llama.cpp",
+    "qwen35moe",
+    "image-text-to-text",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "it",
+    "ru",
+    "ja",
+    "ko",
+    "vi",
+    "zh",
+    "base_model:apodex/Apodex-1.1-mini",
+    "base_model:quantized:apodex/Apodex-1.1-mini",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 15623277856,
+  "storage_human": "15.6 GB",
+  "base_model": "apodex/Apodex-1.1-mini",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "claude-mythos · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/claude-mythos",
+      "snippet": "May 23, 2026 · ai ml torch pytorch attention deepmind claude sonnet jax gpt-5 anthropic claude-ai claude-sonnet looped-transformers …"
+    },
+    {
+      "title": "Claude Code Router - GitHub",
+      "url": "https://github.com/musistudio/claude-code-router",
+      "snippet": "One local control plane for every AI agent: route across models, fuse new capabilities, orchestrate tools, and stay fully in control. - …"
+    },
+    {
+      "title": "Claude AI là gì? Cách đăng ký tài khoản và sử dụng Claude AI",
+      "url": "https://cellphones.com.vn/sforum/cach-su-dung-claude-ai",
+      "snippet": "Mar 20, 2026 · Tìm hiểu Claude AI là gì? Hướng dẫn cách đăng ký tài khoản và sử dụng Claude AI khám phá những tính năng nổi …"
+    },
+    {
+      "title": "Cách tạo PowerPoint bằng Claude AI đơn giản và chi tiết",
+      "url": "https://cellphones.com.vn/sforum/cach-tao-powerpoint-bang-claude-ai",
+      "snippet": "May 31, 2026 · Tạo PowerPoint bằng Claude AI đang trở thành một xu hướng mới trong cách chuẩn bị bài thuyết trình hiện đại."
+    },
+    {
+      "title": "Claude 发布桌面端，使用体验怎么样？ - 知乎",
+      "url": "https://www.zhihu.com/question/1964305699719837025",
+      "snippet": "Claude是一款备受海外创作者和开发者喜爱的AI工具，在长文本处理和复杂推理方面表现卓越，其3.7Sonnet版本在代码能力方面尤为 …"
+    }
+  ]
+}

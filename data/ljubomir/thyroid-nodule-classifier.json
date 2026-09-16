@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ljubomir/thyroid-nodule-classifier",
+  "slug": "ljubomir-thyroid-nodule-classifier",
+  "author": "ljubomir",
+  "url": "https://huggingface.co/ljubomir/thyroid-nodule-classifier",
+  "created_at": "2026-09-15T23:58:52.000Z",
+  "updated_at": "2026-09-16T00:02:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "medical-imaging",
+    "ultrasound",
+    "thyroid",
+    "image-classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44790987,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Live Delta Air Lines Flight Status - FlightAware",
+      "url": "https://www.flightaware.com/live/fleet/DAL",
+      "snippet": "Delta Air Lines Flight Status (with flight tracker and live maps) -- view all flights or track any Delta Air Lines flight"
+    },
+    {
+      "title": "Live Southwest Flight Status - FlightAware",
+      "url": "https://www.flightaware.com/live/fleet/SWA",
+      "snippet": "Southwest Flight Status (with flight tracker and live maps) -- view all flights or track any Southwest flight"
+    },
+    {
+      "title": "BOS Boston Logan Intl Airport (BOS/KBOS) - FlightAware",
+      "url": "https://www.flightaware.com/live/airport/KBOS",
+      "snippet": "Boston Logan Intl, Boston, MA (BOS/KBOS) flight tracking (arrivals, departures, en route, and scheduled flights) and airport status."
+    },
+    {
+      "title": "Live 阿联酋航空公司 Flight Status - FlightAware",
+      "url": "https://www.flightaware.com/live/fleet/UAE",
+      "snippet": "阿联酋航空公司 Flight Status (with flight tracker and live maps) -- view all flights or track any 阿联酋航空公司 flight"
+    },
+    {
+      "title": "Live Flight Tracker - FlightAware",
+      "url": "https://www.flightaware.com/live/?v=1.0.24",
+      "snippet": "Best Flight Tracker: Live Tracking Maps, Flight Status, and Airport Delays for airline flights, private/GA flights, and airports."
+    }
+  ]
+}

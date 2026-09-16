@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Octavian123/civit",
+  "slug": "octavian123-civit",
+  "author": "Octavian123",
+  "url": "https://huggingface.co/Octavian123/civit",
+  "created_at": "2026-05-21T00:19:25.000Z",
+  "updated_at": "2026-09-15T20:54:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 697301298704,
+  "storage_human": "697.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wycieczka do Patagonii. Zorganizowana Wyprawa Objazdowa po Patagonii …",
+      "url": "https://www.horyzonty.pl/oferta/rowery/wycieczka-objazdowa-argentyna-chile-patagonia/",
+      "snippet": "Wizyta w jedynej na kontynencie amerykańskim kolonii pingwinów królewskich! Przez olbrzymie, niezamieszkane obszary, przez …"
+    },
+    {
+      "title": "Wycieczka do Patagonii 15 dni - alpinca.pl",
+      "url": "https://alpinca.pl/wycieczki/nowosc-patagonia-15-dni/",
+      "snippet": "To wyprawa dla miłośników przygody i natury, którzy chcą poczuć Patagonię w pełnej krasie – od majestatycznych gór, przez …"
+    },
+    {
+      "title": "Patagonia: Buenos Aires i Ziemia Ognista - Argentyna | ITAKA",
+      "url": "https://www.itaka.pl/wycieczki/argentyna/patagonia:-buenos-aires-i-ziemia-ognista,EZENOL1/",
+      "snippet": "Od gwarnych ulic Buenos Aires, po niezmąconą ciszę lodowców i spektakularne, górskie szlaki Patagonii – to wyprawa przez jedne z …"
+    },
+    {
+      "title": "Wycieczka do Patagonii",
+      "url": "https://shangrilatravel.pl/wycieczka-do-patagonii",
+      "snippet": "Wyrusz na wycieczkę objazdową do Argentyny i Chile i poznaj świat pełen zapierających dech w piersiach widoków na górskie …"
+    },
+    {
+      "title": "Wycieczka Patagonia - Torre.pl",
+      "url": "https://www.torre.pl/Patagonia_wycieczka.html",
+      "snippet": "Wyprawa do Patagonii była spełnieniem moich marzeń- zapierające dech w piersiach krajobrazy, perfekcyjnie dobrany program i …"
+    }
+  ]
+}

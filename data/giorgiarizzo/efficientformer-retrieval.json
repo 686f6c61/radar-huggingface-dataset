@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "giorgiarizzo/efficientformer-retrieval",
+  "slug": "giorgiarizzo-efficientformer-retrieval",
+  "author": "giorgiarizzo",
+  "url": "https://huggingface.co/giorgiarizzo/efficientformer-retrieval",
+  "created_at": "2026-09-15T21:06:54.000Z",
+  "updated_at": "2026-09-15T21:06:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mod accouchement réaliste - Mod Sims 4",
+      "url": "https://modsims4.fr/gameplay_complet/accouchement-realiste/",
+      "snippet": "Apr 2, 2022 · Je trouve cette nouvelle fonctionnalité du mod accouchement réaliste extrêmement bien réalisée, bien que le sujet soit …"
+    },
+    {
+      "title": "Les mods de naissance les plus réalistes pour Les Sims 4",
+      "url": "https://amkstation.com/fr/the-most-realistic-birth-mods-for-the-sims-4/",
+      "snippet": "Dec 5, 2023 · Du début à la fin, ces mods de naissance réalistes pour Les Sims 4 peuvent vous offrir, à vous et à vos Sims, une …"
+    },
+    {
+      "title": "Mod accouchement (Childbirth) par Pandasama - Trad FR - The Sims 4 ...",
+      "url": "https://www.curseforge.com/sims4/translations/mod-accouchement-trad-fr",
+      "snippet": "Ce mod permet à vos Sims enceint (e)s d'avoir une grossesse (ex : test de grossesse, faire écouter de la musique au bébé...) et un …"
+    },
+    {
+      "title": "Child Birth Mod • PandaSama",
+      "url": "https://www.pandasama.com/child-birth-mod/",
+      "snippet": "Sims will get a customizable birth certificate when giving birth through using the child birth mod. You should see sparkles around your …"
+    },
+    {
+      "title": "Mod accouchement (Childbirth) par Pandasama - Trad FR",
+      "url": "https://www.curseforge.com/sims4/translations/mod-accouchement-trad-fr/files/all",
+      "snippet": "Feb 26, 2025 · Download Mod accouchement (Childbirth) par Pandasama - Trad FR by KimikoSoma, with over 639.3K+ downloads …"
+    }
+  ]
+}

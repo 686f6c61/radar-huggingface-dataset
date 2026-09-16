@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rahulrat/knowledge-distillation-review",
+  "slug": "rahulrat-knowledge-distillation-review",
+  "author": "rahulrat",
+  "url": "https://huggingface.co/rahulrat/knowledge-distillation-review",
+  "created_at": "2026-09-16T00:38:51.000Z",
+  "updated_at": "2026-09-16T00:38:56.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "knowledge-distillation",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "【RS-M1系列 - 1】Windows下使用RSView查看点云-CSDN博客",
+      "url": "https://blog.csdn.net/wtdyyl/article/details/127309924",
+      "snippet": "Aug 31, 2023 · 本文详细介绍了如何配置速腾RS-M1激光雷达，并通过RSView软件在Windows 11系统下显示点云数据。 内容包括接线 …"
+    },
+    {
+      "title": "Ubuntu20.04使用RSview查看点云 - CSDN博客",
+      "url": "https://blog.csdn.net/weixin_73687829/article/details/143071027",
+      "snippet": "按下图配置即可 查看点云 1.打开RSview 提取下载的RSview的压缩包 在有run_rsview.sh的文件夹下打开终端 ... 2.配置激光雷达 点 …"
+    },
+    {
+      "title": "【手把手教学】RoboSense E1R 固态激光雷达 Windows 可视化连接全 …",
+      "url": "https://www.cnblogs.com/ChenAI-TGF/p/19843393",
+      "snippet": "Apr 9, 2026 · 随后指导使用RSView软件进行可视化操作，包括正确选择雷达型号和查看点云。 最后提供常见问题解决方案和维护建 …"
+    },
+    {
+      "title": "【RS-M1系列 - 1】Windows下使用RSView查看点云-易微帮",
+      "url": "https://www.ewbang.com/community/article/details/960597252.html",
+      "snippet": "Oct 13, 2022 · 按图示连接好M1和转接器之间的电源连接线、数据线，并将网线连接到电脑网口。 激光雷达通电后会有规律的较低的 …"
+    },
+    {
+      "title": "速腾雷达客户端软件使用说明 - zhuxuekui3 - 博客园",
+      "url": "https://www.cnblogs.com/zhuxuekui/p/9290181.html",
+      "snippet": "Jul 10, 2018 · 速腾雷达客户端软件使用说明 打开RSView,遇到的问题如下： 一定要安装在英文目录下，不然会报错。 2.一定要以管理 …"
+    }
+  ]
+}

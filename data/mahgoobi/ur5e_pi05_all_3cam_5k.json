@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mahgoobi/ur5e_pi05_all_3cam_5k",
+  "slug": "mahgoobi-ur5e_pi05_all_3cam_5k",
+  "author": "mahgoobi",
+  "url": "https://huggingface.co/mahgoobi/ur5e_pi05_all_3cam_5k",
+  "created_at": "2026-09-15T20:19:36.000Z",
+  "updated_at": "2026-09-15T20:25:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "robotics",
+    "vla",
+    "pi0",
+    "openpi",
+    "ur5e",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12440767512,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "圆通人工客服电话是多少？_百度知道",
+      "url": "https://zhidao.baidu.com/question/630505526700673084.html",
+      "snippet": "服务热线：95554 ，021-69777888。 圆通速递有限公司（以下简称圆通速递）创立于2000年5月，现已成为一家集新快递物流、新科 …"
+    },
+    {
+      "title": "邮政快递客服电话24小时人工服务 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/497521380203016772.html",
+      "snippet": "邮政快递 电话人工服务可以拨打11183-1。 11183，为中国邮政速递物流股份有限公司旗下品牌EMS的客服专线，提供上门揽收、邮件 …"
+    },
+    {
+      "title": "火车硬座分布图? - 知乎",
+      "url": "https://www.zhihu.com/question/435189927",
+      "snippet": "Dec 16, 2020 · 一般长途车列车长办公席在8号车厢，短途火车一般在5号。 现在我国火车的车厢有21型、22型、可躺式等，有的可 …"
+    },
+    {
+      "title": "甲醛含量多少范围时，正常可以入住？ - 知乎",
+      "url": "https://www.zhihu.com/question/6623210778",
+      "snippet": "一、常见的甲醛测试方法 目前，业内公认精准、专业实验室也有在用的甲醛检测仪，主要有 英国PPM、日本理研、美国instercan 等， …"
+    },
+    {
+      "title": "大家小心騙子021-95594 - 上海银行讨论区 - 我爱卡论坛",
+      "url": "https://bbs.51credit.com/thread-2087481-1-1.html",
+      "snippet": "Mar 20, 2015 · 今早021-95594說可以給我提高額度，要我報卡號，我直接反問：你自稱是上海銀行信用卡中心，怎麼不知道我的卡 …"
+    }
+  ]
+}

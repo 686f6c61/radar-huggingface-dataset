@@ -5,7 +5,7 @@
   "author": "dhanesh-hf",
   "url": "https://huggingface.co/dhanesh-hf/Jarvis-Titan-V15-MoE-Merged",
   "created_at": "2026-09-14T12:52:02.000Z",
-  "updated_at": "2026-09-14T12:52:21.000Z",
+  "updated_at": "2026-09-15T12:47:46.000Z",
   "license": "jtrl-v1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 86,
   "trending_score": 0,
   "parameters": 14835469845,
   "parameters_human": "14.84B",

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "kimhosoo/vroid-single-view-ablation",
+  "slug": "kimhosoo-vroid-single-view-ablation",
+  "author": "kimhosoo",
+  "url": "https://huggingface.co/kimhosoo/vroid-single-view-ablation",
+  "created_at": "2026-09-16T00:37:18.000Z",
+  "updated_at": "2026-09-16T00:38:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "video-generation",
+    "egocentric",
+    "ablation",
+    "synthetic",
+    "cosmos-predict2",
+    "base_model:nvidia/Cosmos-Predict2.5-2B",
+    "base_model:finetune:nvidia/Cosmos-Predict2.5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4119259085,
+  "storage_human": "4.1 GB",
+  "base_model": "nvidia/Cosmos-Predict2.5-2B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "#123213 hex color - ColorHexa",
+      "url": "https://www.colorhexa.com/123213",
+      "snippet": "#123213 hex color code information, schemes, description and conversion in RGB, HSL, HSV, CMYK, etc."
+    },
+    {
+      "title": "#123213 Color Hex",
+      "url": "https://www.color-hex.com/color/123213",
+      "snippet": "#123213 hex color red value is 18, green value is 50 and the blue value of its RGB is 19. Cylindrical-coordinate representations (also …"
+    },
+    {
+      "title": "#123213 Hex Color Code, RGB and Paints - Encycolorpedia",
+      "url": "https://encycolorpedia.com/123213",
+      "snippet": "Color schemes, paints, palettes, combinations, gradients and color space conversions for the #123213 hex color code."
+    },
+    {
+      "title": "天源转债 (123213)_行情中心_东方财富网",
+      "url": "https://quote.eastmoney.com/bond/sz123213.html",
+      "snippet": "提供天源转债 (123213)股票的行情走势、五档盘口、逐笔交易等实时行情数据，及天源转债 (123213)的资讯、公司公告、研究报告、 …"
+    },
+    {
+      "title": "WUHAN TIANYUAN ENVIRONMENTAL PROTECTION (123213)",
+      "url": "https://www.futunn.com/en/stock/123213-SZ",
+      "snippet": "Use Futu NiuNiu to view WUHAN TIANYUAN ENVIRONMENTAL PROTECTION (123213)'s stock price, real-time quotes, latest …"
+    }
+  ]
+}

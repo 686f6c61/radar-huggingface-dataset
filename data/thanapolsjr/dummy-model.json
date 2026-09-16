@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "thanapolsjr/dummy-model",
+  "slug": "thanapolsjr-dummy-model",
+  "author": "thanapolsjr",
+  "url": "https://huggingface.co/thanapolsjr/dummy-model",
+  "created_at": "2026-09-15T21:26:17.000Z",
+  "updated_at": "2026-09-15T21:26:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "camembert",
+    "fill-mask",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110655493,
+  "parameters_human": "110.7M",
+  "storage_bytes": 442646188,
+  "storage_human": "443 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Official download of VLC media player, the best Open Source player ...",
+      "url": "https://www.videolan.org/vlc/index.html",
+      "snippet": "VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, …"
+    },
+    {
+      "title": "301 Moved Permanently",
+      "url": "https://www.videolan.org/vlc",
+      "snippet": "301 Moved Permanently 301 Moved Permanently nginx/1.31.0"
+    },
+    {
+      "title": "Download VLC media player (free) for Windows, macOS, Android",
+      "url": "https://gizmodo.com/download/vlc-media-player",
+      "snippet": "May 28, 2026 · VLC is a free and complete video player. You can download it on your Windows or Linux PC, Mac, mobile device …"
+    },
+    {
+      "title": "VLC - Download and install on Windows | Microsoft Store",
+      "url": "https://apps.microsoft.com/detail/xpdm1zw6815mqm",
+      "snippet": "VLC media player (previously the VideoLAN Client and commonly known as simply VLC) is a free and open-source, portable, cross …"
+    },
+    {
+      "title": "دانلود VLC Media Player v3.0.23 برای ویندوز (پخش کننده مالتی مدیا)",
+      "url": "https://vgdl.ir/vlc-media-player/",
+      "snippet": "Jun 20, 2026 · دانلود جدیدترین نسخه و آخرین آپدیت VLC Media Player توجه! نسخه جدید v3.0.23 اضافه شد. (30 خرداد 1405) نرم افزار VLC Media Player یکی …"
+    }
+  ]
+}

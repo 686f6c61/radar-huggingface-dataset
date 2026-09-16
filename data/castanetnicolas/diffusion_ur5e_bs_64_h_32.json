@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "castanetnicolas/diffusion_UR5e_BS_64_H_32",
+  "slug": "castanetnicolas-diffusion_ur5e_bs_64_h_32",
+  "author": "castanetnicolas",
+  "url": "https://huggingface.co/castanetnicolas/diffusion_UR5e_BS_64_H_32",
+  "created_at": "2026-09-16T00:15:09.000Z",
+  "updated_at": "2026-09-16T00:37:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion",
+    "robotics",
+    "dataset:castanetnicolas/UR5e_pick_and_place_CAN_100_absolute_joint",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 40698692,
+  "parameters_human": "40.7M",
+  "storage_bytes": 520209968,
+  "storage_human": "520 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Créer un compte Google - Ordinateur - Aide Compte Google",
+      "url": "https://support.google.com/accounts/answer/27441?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Important : Lorsque vous créez un compte Google pour votre entreprise, vous pouvez activer la personnalisation pour les …"
+    },
+    {
+      "title": "تسجيل الدخول إلى Gmail - جهاز الكمبيوتر - مساعدة Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "تسجيل الدخول إلى Gmail ملاحظة: إذا سجّلت الدخول على جهاز كمبيوتر متاح للجميع، احرص على تسجيل الخروج قبل مغادرة جهاز الكمبيوتر. تعرَّف على كيفية تسجيل الدخول على جهاز لا تملكه."
+    },
+    {
+      "title": "Email - BT Community",
+      "url": "https://community.bt.com/t5/Email/ct-p/EmailandApps",
+      "snippet": "3 days ago · Load more Top Rated Authors"
+    },
+    {
+      "title": "Welcome to BT’s official support community.",
+      "url": "https://community.bt.com/",
+      "snippet": "2 days ago · Welcome to BT’s official support community. If you run into difficulties or have a question about BT’s products and …"
+    },
+    {
+      "title": "e-mailの表記について。名詞や、レターヘッド等に記載する場合e",
+      "url": "https://q.hatena.ne.jp/1141228167",
+      "snippet": "Mar 2, 2006 · なぜならば、emailはoxfordにも乗るくらい（今見ましたが、書籍版（7th)にも乗っていました）正しいし、e-mailは …"
+    }
+  ]
+}

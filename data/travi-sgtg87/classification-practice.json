@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "travi-sgtg87/classification-practice",
+  "slug": "travi-sgtg87-classification-practice",
+  "author": "travi-sgtg87",
+  "url": "https://huggingface.co/travi-sgtg87/classification-practice",
+  "created_at": "2026-09-15T19:43:05.000Z",
+  "updated_at": "2026-09-15T19:43:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

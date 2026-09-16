@@ -5,7 +5,7 @@
   "author": "latent-artist",
   "url": "https://huggingface.co/latent-artist/b138d3c1ba2244c68a88797b066f3ad4",
   "created_at": "2026-09-14T20:22:59.000Z",
-  "updated_at": "2026-09-14T20:37:36.000Z",
+  "updated_at": "2026-09-15T19:15:58.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-video",
@@ -24,7 +24,7 @@
   "trending_score": 0,
   "parameters": 33122992896,
   "parameters_human": "33.12B",
-  "storage_bytes": 353917479700,
+  "storage_bytes": 353916141027,
   "storage_human": "353.9 GB",
   "base_model": null,
   "formats": [

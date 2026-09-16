@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jidoren/NorBERTo-base-qa-squad-v2",
+  "slug": "jidoren-norberto-base-qa-squad-v2",
+  "author": "jidoren",
+  "url": "https://huggingface.co/jidoren/NorBERTo-base-qa-squad-v2",
+  "created_at": "2026-09-16T01:02:22.000Z",
+  "updated_at": "2026-09-16T01:02:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "question-answering",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "question-answering",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149606402,
+  "parameters_human": "149.6M",
+  "storage_bytes": 299227092,
+  "storage_human": "299 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Second Nature Limited",
+      "url": "https://www.secondnature.co.uk/",
+      "snippet": "Second Nature was one of the first to introduce hand-crafted greetings cards in the UK and has continued to innovate in this area. …"
+    },
+    {
+      "title": "Seconde nature - Vérifiez la disponibilité et les prix - Mariages.net",
+      "url": "https://www.mariages.net/fleurs-mariage/seconde-nature--e114120",
+      "snippet": "Pour votre mariage, ces experts vous proposent leurs créations originales pour une ambiance des plus colorées. Il flottera un doux …"
+    },
+    {
+      "title": "MARIAGE - Seconde Nature",
+      "url": "https://www.secondenaturefleuriste.fr/mariage",
+      "snippet": "ACCUEIL BOUQUETS MARIAGE DEVIS MARIAGE CEREMONIE More Use tab to navigate through the menu items."
+    },
+    {
+      "title": "Carte Pop-up Mariage \"Seconde Nature\" - Félicitations Originales ...",
+      "url": "https://bestgearreview.com/up-Mariage-quot-Seconde-Nature-quot-F-licitations/885076",
+      "snippet": "Pour un message de félicitations de mariage qui sort de l'ordinaire, voici cette carte pop-up « Seconde Nature » ! Elle est neuve, …"
+    },
+    {
+      "title": "Carte mariage nature - Etsy France",
+      "url": "https://www.etsy.com/fr/market/carte_mariage_nature?msockid=3712a61d60dc6edd3e63b1cb61fe6fc3",
+      "snippet": "Parcourez notre sélection de carte mariage nature : vous y trouverez les meilleures pièces uniques ou personnalisées de nos cartes …"
+    }
+  ]
+}

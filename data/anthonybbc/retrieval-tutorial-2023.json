@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "anthonybbc/retrieval-tutorial-2023",
+  "slug": "anthonybbc-retrieval-tutorial-2023",
+  "author": "anthonybbc",
+  "url": "https://huggingface.co/anthonybbc/retrieval-tutorial-2023",
+  "created_at": "2026-09-16T01:21:52.000Z",
+  "updated_at": "2026-09-16T01:21:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SickKids Digital Transformation Strategy 2024-2026",
+      "url": "https://www.sickkids.ca/siteassets/about/strategy--performance/supporting-strategies/digital-transformation-strategy-2024-2026.pdf",
+      "snippet": "At SickKids, we recognize the pivotal role that digital transformation plays in shaping the future of health care. Nearly everything we …"
+    },
+    {
+      "title": "SickKids Digital Transformation Strategy 2024-2026",
+      "url": "https://2025.sickkids.ca/wp-content/uploads/sites/6/2024/06/digital-transformation-map.pdf",
+      "snippet": "Capture comprehensive patient data – including genomic, PROM, and SDoH data – to enable individualized care and population …"
+    },
+    {
+      "title": "Virtual care at SickKids - aboutkidshealth.ca",
+      "url": "https://www.aboutkidshealth.ca/healthaz/na/virtual-care-at-sickkids/?hub=COVID-19",
+      "snippet": "Jun 25, 2021 · Learn about virtual care, how to prepare for it and what to expect during a virtual video visit. Virtual care is a way of …"
+    },
+    {
+      "title": "Equity of virtual mental health care uptake among children and youth ...",
+      "url": "https://lab.research.sickkids.ca/toulany/equity-of-virtual-mental-health-care-uptake-among-children-and-youth-during-the-covid-19-pandemic/",
+      "snippet": "Our findings will inform the equitable implementation of virtual mental health care to better meet patient needs, considering the …"
+    },
+    {
+      "title": "New research reveals the impact of COVID-19 children and youth …",
+      "url": "https://sickkidscmh.ca/new-research-reveals-the-impact-of-covid-19-children-and-youth-mental-health-services-accessibility/",
+      "snippet": "Aug 4, 2023 · Based on the study’s findings, data revealed that GH-CCMH served more clients by introducing virtual care. Remote …"
+    }
+  ]
+}

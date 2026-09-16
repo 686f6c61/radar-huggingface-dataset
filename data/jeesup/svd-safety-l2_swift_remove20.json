@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_swift_remove20",
+  "slug": "jeesup-svd-safety-l2_swift_remove20",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_swift_remove20",
+  "created_at": "2026-09-16T00:47:09.000Z",
+  "updated_at": "2026-09-16T00:49:13.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cartier® Official Website - Jeweler and Watchmaker since 1847",
+      "url": "https://www.cartier.com/en-us/home",
+      "snippet": "Cartier leather goods are made to last, and the Maison offers specific services to preserve their beauty. To find out more about our …"
+    },
+    {
+      "title": "까르띠에 - 공식 온라인 부티크 - Cartier",
+      "url": "https://www.cartier.com/ko-kr/home",
+      "snippet": "탱크, 트리니티, 저스트 앵 끌루, 산토스 드 까르띠에, LOVE, 팬더 드 까르띠에, 발롱 블루 드 까르띠에: 메종의 위대한 아이콘들은 클래식한 …"
+    },
+    {
+      "title": "Cartier",
+      "url": "https://careers.cartier.com/",
+      "snippet": "In joining the Maison Cartier, you become part of a community that is committed to positive development. We contribute to a better …"
+    },
+    {
+      "title": "careers.cartier.com",
+      "url": "https://careers.cartier.com/fr-fr",
+      "snippet": "Rejoindre Cartier, c’est faire partie d’une communauté internationale, où vous pouvez partager votre passion et réaliser votre potentiel."
+    },
+    {
+      "title": "Cartier : haute joaillerie, montres, accessoires au Boulevard de ...",
+      "url": "https://stores.cartier.com/fr/belgium/bruxelles/boulevard-de-waterloo-54",
+      "snippet": "Rendez-vous dans votre boutique Cartier Boulevard de Waterloo 54 ‒ Bruxelles pour découvrir nos collections de haute joaillerie …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Signal-3.8-27b-Heretic-ara-i1-GGUF",
   "created_at": "2026-09-15T14:11:39.000Z",
-  "updated_at": "2026-09-15T15:45:13.000Z",
+  "updated_at": "2026-09-15T16:46:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -33,8 +33,8 @@
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 52972606208,
-  "storage_human": "53.0 GB",
+  "storage_bytes": 218553882048,
+  "storage_human": "218.6 GB",
   "base_model": "Shockem/Signal-3.8-27b-Heretic-ara",
   "formats": [
     "gguf"

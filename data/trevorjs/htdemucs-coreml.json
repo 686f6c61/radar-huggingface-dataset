@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "TrevorJS/htdemucs-CoreML",
+  "slug": "trevorjs-htdemucs-coreml",
+  "author": "TrevorJS",
+  "url": "https://huggingface.co/TrevorJS/htdemucs-CoreML",
+  "created_at": "2026-09-16T00:04:30.000Z",
+  "updated_at": "2026-09-16T00:04:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": "coreml",
+  "languages": [],
+  "tags": [
+    "coreml",
+    "core-ml",
+    "source-separation",
+    "stem-separation",
+    "demucs",
+    "htdemucs",
+    "apple",
+    "on-device",
+    "slurper",
+    "audio-to-audio",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 209699050,
+  "storage_human": "210 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Flughafen Hanoi – Wikipedia",
+      "url": "https://de.m.wikipedia.org/wiki/Flughafen_Hanoi",
+      "snippet": "Der Internationale Flughafen Nội Bài (vietnamesisch Cảng hàng không quốc tế Nội Bài, englisch Nội Bài International Airport, IATA …"
+    },
+    {
+      "title": "Kompletter Guide zum Internationalen Flughafen Noi Bai (HAN)",
+      "url": "https://yesmytrips.com/de/vietnam-airports/han-hanoi-airport",
+      "snippet": "Aug 10, 2026 · Mit rund 30 Millionen Passagieren pro Jahr über zwei Terminals ist HAN der wichtigste Einreisepunkt für …"
+    },
+    {
+      "title": "Noi Bai Flughafen (HAN) | Informationen zum internationalen Tor von Hanoi",
+      "url": "https://www.unisco.com/de/international-airports/noi-bai-intl-airport",
+      "snippet": "Der Noi Bai Internationale Flughafen (HAN) liegt 28 Meilen (45 km) nördlich des Stadtzentrums von Hanoi. Er dient als …"
+    },
+    {
+      "title": "Flughafen Hanoi (HAN) Noi Bai: Terminals & Anreise",
+      "url": "https://flughafen-live.de/flughafen-hanoi/",
+      "snippet": "Der Flughafen Hanoi (HAN), offiziell Noi Bai International Airport, ist nach Tan Son Nhat in Ho-Chi-Minh-Stadt der zweitgrößte …"
+    },
+    {
+      "title": "Flughafen Hanoi, Hanoi: Besucherführer 2026 - audiala.com",
+      "url": "https://audiala.com/de/vietnam/hanoi/flughafen-hanoi",
+      "snippet": "Der Noi Bai International Airport (IATA: HAN) ist der größte und zweitgrößte Flughafen Nordvietnams und liegt etwa 27–35 Kilometer …"
+    }
+  ]
+}

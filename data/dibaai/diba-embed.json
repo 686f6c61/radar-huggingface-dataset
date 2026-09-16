@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "DibaAi/Diba-Embed",
+  "slug": "dibaai-diba-embed",
+  "author": "DibaAi",
+  "url": "https://huggingface.co/DibaAi/Diba-Embed",
+  "created_at": "2026-09-15T19:28:03.000Z",
+  "updated_at": "2026-09-15T19:28:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "diba_embed",
+    "feature-extraction",
+    "sentence-similarity",
+    "text-embeddings",
+    "persian",
+    "farsi",
+    "iran",
+    "retrieval",
+    "rag",
+    "semantic-search",
+    "multilingual",
+    "dibachain",
+    "custom_code",
+    "fa",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-16T03:13:45.743Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Downloads - KeePass",
+      "url": "https://keepass.info/download.html",
+      "snippet": "KeePass 2.x runs on Linux and MacOS (see the help), but there are also alternatives: GNOME Secrets (for Linux) KeeStone (for …"
+    },
+    {
+      "title": "KeePass Password Safe",
+      "url": "https://keepass.info/",
+      "snippet": "Jul 9, 2025 · KeePass Password Safe This is the official website of KeePass, the free, open source, light-weight and easy-to-use …"
+    },
+    {
+      "title": "Plugins - KeePass",
+      "url": "https://keepass.info/plugins.html",
+      "snippet": "KeePass Plugins and Extensions Information about the plugin framework (installing plugins, security, ...) can be found on the help …"
+    },
+    {
+      "title": "Translations - KeePass",
+      "url": "https://keepass.info/translations.html",
+      "snippet": "Translations Installation: Left-click the download link of the language of your choice (for KeePass 1.x click the ' [1.x+]' link; for …"
+    },
+    {
+      "title": "Installation / Portability - KeePass",
+      "url": "https://keepass.info/help/v2/setup.html",
+      "snippet": "Running KeePass under Wine (Linux, MacOS, BSD, ...) Although you can run KeePass 2.x more or less natively on Unix-like …"
+    }
+  ]
+}

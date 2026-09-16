@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "JackieMM/robotwin-pi05-arx-training",
+  "slug": "jackiemm-robotwin-pi05-arx-training",
+  "author": "JackieMM",
+  "url": "https://huggingface.co/JackieMM/robotwin-pi05-arx-training",
+  "created_at": "2026-09-16T00:46:36.000Z",
+  "updated_at": "2026-09-16T00:49:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home | The Home Depot",
+      "url": "https://corporate.homedepot.com/",
+      "snippet": "The Home Depot Foundation’s 2026 Celebration of Service: Helping Heroes at Home Across All 50 States Building Community …"
+    },
+    {
+      "title": "THE HOME DEPOT - 12055 Biscayne Boulevard, Miami FL - Hours, …",
+      "url": "https://www.loc8nearme.com/florida/miami/home-depot/32926/",
+      "snippet": "The Home Depot at N Miami/Biscayne offers a wide variety of tools, appliances, outdoor furniture, building materials, and gardening …"
+    },
+    {
+      "title": "Home Depot - Midway Crossings | Miami, FL",
+      "url": "https://midwaycrossings.com/stores/home-depot/",
+      "snippet": "Home Depot carries building materials, home improvement supplies, appliances and lawn and garden product, located in Midway …"
+    },
+    {
+      "title": "The Home Depot - 11905 SW 152nd St, Miami, FL 33177 - BusinessYab",
+      "url": "https://businessyab.com/explore/united_states/florida/miami_dade_county/miami/west_end/the_home_depot",
+      "snippet": "2 days ago · Home Depot in Homestead is a fantastic home improvement store that offers an extensive selection of products and …"
+    },
+    {
+      "title": "The Home Depot Miami, Miami-Dade County, FL - Store Locator",
+      "url": "https://www.storeopeninghours.com/retailers/the-home-depot/miami-fl",
+      "snippet": "The total number of The Home Depot branches presently open near Miami, Miami-Dade County, Florida is 10. A list of The Home …"
+    }
+  ]
+}

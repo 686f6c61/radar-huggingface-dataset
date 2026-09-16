@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "nonua/Fun-CosyVoice3-0.5B-2512",
+  "slug": "nonua-fun-cosyvoice3-0-5b-2512",
+  "author": "nonua",
+  "url": "https://huggingface.co/nonua/Fun-CosyVoice3-0.5B-2512",
+  "created_at": "2026-09-16T01:44:56.000Z",
+  "updated_at": "2026-09-16T01:44:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "zh",
+    "en",
+    "fr",
+    "es",
+    "ja",
+    "ko",
+    "it",
+    "ru",
+    "de"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "text-to-speech",
+    "zh",
+    "en",
+    "fr",
+    "es",
+    "ja",
+    "ko",
+    "it",
+    "ru",
+    "de",
+    "arxiv:2505.17589",
+    "arxiv:2412.10117",
+    "arxiv:2407.05407",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9743315076,
+  "storage_human": "9.7 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Global Tracking: Package & Parcel Tracking | Track.Global",
+      "url": "https://track.global/",
+      "snippet": "What is a tracking code? Track number or track code is a number-letter combination encoded as a barcode. Such a system was …"
+    },
+    {
+      "title": "البحث عن رقم الهاتف والتحقق من الرقم ومن اتصل بي | نومتريس",
+      "url": "https://numtrace.com/ar/",
+      "snippet": "تحقق من رقم الهاتف هذا على الفور. بحث قوي عن رقم الهاتف ومعرف المتصل لمعرفة من اتصل بك. مدقق الأرقام للبريد العشوائي والناقل والموقع. بديل Truecaller عبر الإنترنت."
+    },
+    {
+      "title": "Barcode Lookup | UPC, EAN & ISBN Search",
+      "url": "https://www.barcodelookup.com/",
+      "snippet": "Use Barcode Lookup to search any UPC, EAN and ISBN code to find product information including images, pricing, reviews and …"
+    },
+    {
+      "title": "اعرف من يتصل بك | WhoseNo",
+      "url": "https://www.whoseno.com/?lang=ar",
+      "snippet": "من صاحب هذا الرقم؟ بحث عكسي مجاني وتقارير سبام | WhoseNo"
+    },
+    {
+      "title": "كاشف هوية المتصل ودليل الهاتف العربي مجاناً - نمبروزو",
+      "url": "https://numberozo.com/",
+      "snippet": "كاشف الأرقام العربي الأول — اعرف هوية أي متصل مجهول فوراً بدون تحميل. ابحث في أكبر دليل هاتف يغطي السعودية ومصر والخليج. مجاناً 100%."
+    }
+  ]
+}

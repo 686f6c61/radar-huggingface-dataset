@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rodrig-obarbo/classification-proto",
+  "slug": "rodrig-obarbo-classification-proto",
+  "author": "rodrig-obarbo",
+  "url": "https://huggingface.co/rodrig-obarbo/classification-proto",
+  "created_at": "2026-09-16T00:04:34.000Z",
+  "updated_at": "2026-09-16T00:04:39.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ingram Street - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Ingram_Street",
+      "snippet": "Ingram Street is a major thoroughfare in the city of Glasgow, the largest city in Scotland. The street runs east from Queen Street …"
+    },
+    {
+      "title": "Ingram Street – Glasgow Shops",
+      "url": "http://glasgowshops.com/ingram-street/",
+      "snippet": "Ingram Street is a street located in the Merchant City area of Glasgow, Scotland. It runs from the junction of Queen Street and …"
+    },
+    {
+      "title": "Ingram Street - Wikiwand",
+      "url": "https://www.wikiwand.com/en/Ingram_Street",
+      "snippet": "Ingram Street is a major thoroughfare in the city of Glasgow, the largest city in Scotland. The street runs east from Queen Street …"
+    },
+    {
+      "title": "Ingram Street, City of Glasgow | Street map, property and local ...",
+      "url": "https://www.streetlist.co.uk/g/g1/g1-3/ingram-street",
+      "snippet": "Ingram Street in City of Glasgow. Explore the street map, known postcodes, addresses, transport, property information, local context …"
+    },
+    {
+      "title": "2 bedroom flat for sale in /, Ingram Street, Glasgow, G1",
+      "url": "https://www.rightmove.co.uk/properties/90976884",
+      "snippet": "2 bedroom flat for sale in /, Ingram Street, Glasgow, G1 for £180,000. Marketed by Smart Sales and Investments, Glasgow"
+    }
+  ]
+}

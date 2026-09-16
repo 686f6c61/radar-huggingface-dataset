@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Yonesuke0716/lfm-iqa-450m",
+  "slug": "yonesuke0716-lfm-iqa-450m",
+  "author": "Yonesuke0716",
+  "url": "https://huggingface.co/Yonesuke0716/lfm-iqa-450m",
+  "created_at": "2026-09-16T01:04:45.000Z",
+  "updated_at": "2026-09-16T01:09:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 354483968,
+  "parameters_human": "354.5M",
+  "storage_bytes": 568344288,
+  "storage_human": "568 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "نون للتسوق أونلاين في السعودية - إلكترونيات، جوالات، أزياء، أجهزة ...",
+      "url": "https://www.noon.com/saudi-ar/?msockid=0da3b6933f106a690b73a1453e556b4c",
+      "snippet": "تسوق أونلاين من نون السعودية – وجهتك الأولى للجوالات، الإلكترونيات، الأزياء، منتجات الجمال، البقالة والمزيد."
+    },
+    {
+      "title": "Electronics, Mobiles, Fashion, Appliances & More - noon",
+      "url": "https://www.noon.com/saudi-en/?msockid=0da3b6933f106a690b73a1453e556b4c",
+      "snippet": "Shop online from noon KSA – your one-stop shop for mobiles, electronics, fashion, beauty, groceries & more. Enjoy great deals! Buy …"
+    },
+    {
+      "title": "نون للتسوق والأطعمة والبقالة - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details/?id=com.noon.buyerapp&hl=ar",
+      "snippet": "يتميز تطبيق نون لتوصيل الطعام بسرعته وسهولة استخدامه. استمتع بأصناف الطعام التي تفضلها مع نون فود للتوصيل السريع، اطلب من أكثر من 10,000 مطعم وأكثر من 100 صنف مع خصومات …"
+    },
+    {
+      "title": "نون | الصفحة الرئيسية",
+      "url": "https://help.noon.com/portal/ar/home",
+      "snippet": ""
+    },
+    {
+      "title": "noon",
+      "url": "https://login.noon.com/saudi-ar/",
+      "snippet": "ليس لديك حساب لدى نون؟ الاشتراك البريد الإلكتروني"
+    }
+  ]
+}

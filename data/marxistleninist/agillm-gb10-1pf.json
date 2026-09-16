@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "MarxistLeninist/AGILLM-GB10-1PF",
+  "slug": "marxistleninist-agillm-gb10-1pf",
+  "author": "MarxistLeninist",
+  "url": "https://huggingface.co/MarxistLeninist/AGILLM-GB10-1PF",
+  "created_at": "2026-09-15T23:52:29.000Z",
+  "updated_at": "2026-09-16T03:06:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "agillm_gb10_1pf_hardware_locked_v2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19841556,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Absetzer Fresser kleinanzeigen.de",
+      "url": "https://www.kleinanzeigen.de/s-absetzer-fresser/k0?msockid=36f69368dc246d42144284bedd7d6cb6",
+      "snippet": "Kleinanzeigen: Absetzer Fresser - Jetzt finden oder inserieren! - kleinanzeigen.de"
+    },
+    {
+      "title": "Fresser kleinanzeigen.de",
+      "url": "https://www.kleinanzeigen.de/s-fresser/k0?msockid=36f69368dc246d42144284bedd7d6cb6",
+      "snippet": "Kleinanzeigen 1 - 25 von 3.620 Ergebnissen für „fresser“ in Deutschland Sortieren nach: Erstelle einen Suchauftrag und lasse dich …"
+    },
+    {
+      "title": "Einsteller & Fresser kaufen & verkaufen - Landwirt.com",
+      "url": "https://www.landwirt.com/kleinanzeigen/rindermarkt/einsteller-fresser",
+      "snippet": "Einsteller und Fresser kaufen auf Landwirt.com. Masttiere aller Rassen - Fleckvieh, Charolais, Limousin & mehr. Von …"
+    },
+    {
+      "title": "Absetzer & Fresser kaufen & verkaufen | Online-Rindermarkt",
+      "url": "https://www.agrarboerse.eu/inserate/rinder/absetzer-fresser",
+      "snippet": "Absetzer & Fresser kaufen oder verkaufen Aktuelle Rinder-Inserate von Landwirten, Rinderzüchtern & Mastbetrieben finden …"
+    },
+    {
+      "title": "Rinder kaufen & verkaufen | Online-Rindermarkt - agrarboerse.eu",
+      "url": "https://www.agrarboerse.eu/inserate/rinder",
+      "snippet": "Rinder kaufen oder verkaufen: Auf Agrarbörse.eu finden Sie aktuelle Rinder-Inserate von landwirtschaftlichen Betrieben, Züchtern …"
+    }
+  ]
+}

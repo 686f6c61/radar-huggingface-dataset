@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Travor278/pi05-scan-object-left-first-peer-lora-10k-e166",
+  "slug": "travor278-pi05-scan-object-left-first-peer-lora-10k-e166",
+  "author": "Travor278",
+  "url": "https://huggingface.co/Travor278/pi05-scan-object-left-first-peer-lora-10k-e166",
+  "created_at": "2026-09-15T23:15:34.000Z",
+  "updated_at": "2026-09-15T23:17:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi05",
+    "jax",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335569681,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Antoine de Ligne — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Antoine_de_Ligne",
+      "snippet": "Antoine Marie Joachim Lamoral de Ligne, né le 8 mars 1925 à Bruxelles et mort 21 août 2005 à Belœil, est un aristocrate belge, chef …"
+    },
+    {
+      "title": "Antoine de LIGNE : généalogie par peter781 - Geneanet",
+      "url": "https://gw.geneanet.org/peter781?lang=fr&n=de+ligne&p=antoine",
+      "snippet": "Consultez l'arbre généalogique de Antoine de LIGNE sur Geneanet et découvrez gratuitement ses origines et son histoire familiale."
+    },
+    {
+      "title": "Antoine Ier de Ligne — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Antoine_Ier_de_Ligne",
+      "snippet": "Antoine de Ligne exige alors de récupérer Mortagne. Pour les générations à venir, les De Ligne se feront appeler « princes de …"
+    },
+    {
+      "title": "Antoine, Prince of Ligne - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Antoine,_Prince_of_Ligne",
+      "snippet": "He is a Chevalier of the Orders of Leopold and Leopold II and an Officer of the Order of the Crown. He was the 1,294th Knight of the …"
+    },
+    {
+      "title": "Antoine de Ligne : généalogie par Gilles POUGNET (gpougnet)",
+      "url": "https://gw.geneanet.org/gpougnet?lang=fr&n=de+ligne&p=antoine",
+      "snippet": "Consultez l'arbre généalogique de Antoine de Ligne sur Geneanet et découvrez gratuitement ses origines et son histoire familiale."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "hcmusa29/vEFRwanHFayk0rBm",
+  "slug": "hcmusa29-vefrwanhfayk0rbm",
+  "author": "hcmusa29",
+  "url": "https://huggingface.co/hcmusa29/vEFRwanHFayk0rBm",
+  "created_at": "2026-09-12T18:44:13.000Z",
+  "updated_at": "2026-09-16T01:49:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 293517948696,
+  "storage_human": "293.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "トヨタ トヨタの安全技術 | Toyota Safety Senseソフトウェア ...",
+      "url": "https://toyota.jp/safety/update/",
+      "snippet": "Toyota Safety Senseを含む運転支援機能をより快適にご使用いただくためのソフトウェア更新 ①プリクラッシュセーフティ （衝突 …"
+    },
+    {
+      "title": "Qsstcirsversion xxcalgomezsmoketest Surname Meaning ...",
+      "url": "https://www.ancestry.com.au/last-name-meaning/qsstcirsversion%20xxcalgomezsmoketest?msockid=33b9d24fce946d8435acc59acf106c69",
+      "snippet": "Qsstcirsversion xxcalgomezsmoketest Surname Meaning Historically, surnames evolved as a way to sort people into groups - by …"
+    },
+    {
+      "title": "Qsstcirsversion Surname Meaning & Qsstcirsversion Family ...",
+      "url": "https://www.ancestry.com/last-name-meaning/Qsstcirsversion?msockid=33b9d24fce946d8435acc59acf106c69",
+      "snippet": "Discover the meaning of the Qsstcirsversion surname on Ancestry®. Find your family's origin in the United States, average life …"
+    },
+    {
+      "title": "Presentation",
+      "url": "https://iryohokenjyoho.service-now.com/sys_attachment.do?sys_id=04db66202b5f8b14239dffba5e91bfc4",
+      "snippet": "セットアップの手順は「オンライン資格確認等システム医療機関等向け資格確認端末のセットアップ」を参照してください。 ※ 本 …"
+    },
+    {
+      "title": "提供中のソフトウェアアップデート情報 | お客さまサポート ...",
+      "url": "https://www.docomo.ne.jp/support/product_update/",
+      "snippet": "6 days ago · ドコモの携帯電話をご利用の方向けに、提供中のソフトウェアアップデート情報をご案内します。 ソフトウェアアップ …"
+    }
+  ]
+}

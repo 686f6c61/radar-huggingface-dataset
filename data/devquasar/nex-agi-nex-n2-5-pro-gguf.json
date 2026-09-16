@@ -5,7 +5,7 @@
   "author": "DevQuasar",
   "url": "https://huggingface.co/DevQuasar/nex-agi.Nex-N2.5-Pro-GGUF",
   "created_at": "2026-09-14T22:48:48.000Z",
-  "updated_at": "2026-09-15T02:21:54.000Z",
+  "updated_at": "2026-09-15T04:38:10.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -21,12 +21,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 29,
   "trending_score": 0,
   "parameters": 396346350336,
   "parameters_human": "396.35B",
-  "storage_bytes": 523312763264,
-  "storage_human": "523.3 GB",
+  "storage_bytes": 857560339584,
+  "storage_human": "857.6 GB",
   "base_model": "nex-agi/Nex-N2.5-Pro",
   "formats": [
     "gguf"

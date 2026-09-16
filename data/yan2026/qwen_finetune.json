@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "yan2026/qwen_finetune",
+  "slug": "yan2026-qwen_finetune",
+  "author": "yan2026",
+  "url": "https://huggingface.co/yan2026/qwen_finetune",
+  "created_at": "2026-09-15T23:50:14.000Z",
+  "updated_at": "2026-09-15T23:50:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 772845888,
+  "parameters_human": "772.8M",
+  "storage_bytes": 1038578848,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stavba zrubov a dreveníc - Drevostavby Straka",
+      "url": "https://www.drevenicky.sk/",
+      "snippet": "Naša spoločnosť má dlhoročné skúsenosti so stavbou drevených zrubov, dreveníc, altánov, záhradných stavieb a taktiež so stavbou …"
+    },
+    {
+      "title": "Domov - Staviam zruby",
+      "url": "https://staviamzruby.sk/",
+      "snippet": "Sme skupina staviteľov zaoberajúca sa realizáciou zrubových stavieb a drevodomov na Slovensku, ale i v zahraničí. V obore máme …"
+    },
+    {
+      "title": "Drevodom Rajec - zruby, drevené domy, drevenice - Stavba na kľúč",
+      "url": "https://www.zruby.sk/ceny-mainmenu-87/118-stavba-na-ku",
+      "snippet": "Drevodom Rajec, s.r.o je jedna z najväčších európskych spoločností zaoberajúcich sa výstavbou zrubových domov. V oblasti …"
+    },
+    {
+      "title": "Drevodomy, drevostavby od roku 1996 - PINUS-LOG",
+      "url": "https://www.pinuslog.sk/",
+      "snippet": "Vysvetlíme a poradíme Drevenica na kľúč, zrub na kľúč, alebe menšie stavebné práce. Radi vás dostaneme „do obrazu“."
+    },
+    {
+      "title": "Ekodrevenice - Rodinné drevené domy",
+      "url": "https://www.ekodrevenice.sk/",
+      "snippet": "Navrhujeme a realizujeme rodinné drevenice na mieru, ideálne na celoročné bývanie aj rekreačné účely. Špecializujeme sa na …"
+    }
+  ]
+}

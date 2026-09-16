@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "aravdhoot/risk-spec-specv3local-q27-rae4declnotraceq27-qwen3.8-27b-hp500-r32-s0-20260915",
+  "slug": "aravdhoot-risk-spec-specv3local-q27-rae4declnotraceq27-qwen3-8-27b-hp500-r32-s0-20260915",
+  "author": "aravdhoot",
+  "url": "https://huggingface.co/aravdhoot/risk-spec-specv3local-q27-rae4declnotraceq27-qwen3.8-27b-hp500-r32-s0-20260915",
+  "created_at": "2026-09-15T19:59:40.000Z",
+  "updated_at": "2026-09-15T21:41:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7013632384,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chicago, IL Hourly Weather | AccuWeather",
+      "url": "https://www.accuweather.com/en/us/chicago/60608/hourly-weather-forecast/348308",
+      "snippet": "Hourly weather forecast in Chicago, IL. Check current conditions in Chicago, IL with radar, hourly, and more."
+    },
+    {
+      "title": "Chicago, IL Weather Forecast | AccuWeather",
+      "url": "https://www.accuweather.com/en/us/chicago/60608/weather-forecast/348308",
+      "snippet": "Chicago, IL Weather Forecast, with current conditions, wind, air quality, and what to expect for the next 3 days."
+    },
+    {
+      "title": "10-Day Weather Forecast for Chicago, Illinois - The Weather Channel ...",
+      "url": "https://weather.com/us/illinois/city/chicago/tenday",
+      "snippet": "Be prepared with the most accurate 10-day forecast for Chicago, Illinois with highs, lows, chance of precipitation from The Weather …"
+    },
+    {
+      "title": "Chicago weather forecast – NBC Chicago",
+      "url": "https://www.nbcchicago.com/weather/",
+      "snippet": "The NBC 5 Storm Team forecast brings you the latest Chicago and Midwest weather forecasts, including live radar and weather maps."
+    },
+    {
+      "title": "National Weather Service",
+      "url": "https://forecast.weather.gov/zipcity.php?inputstring=chicago,IL",
+      "snippet": "Hot temperatures and high humidity are forecast to continue across much of east Texas into the mid-Mississippi Valley through this …"
+    }
+  ]
+}

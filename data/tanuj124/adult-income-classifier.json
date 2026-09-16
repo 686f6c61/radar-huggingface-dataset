@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Tanuj124/adult-income-classifier",
+  "slug": "tanuj124-adult-income-classifier",
+  "author": "Tanuj124",
+  "url": "https://huggingface.co/Tanuj124/adult-income-classifier",
+  "created_at": "2026-09-16T00:53:06.000Z",
+  "updated_at": "2026-09-16T01:01:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "tabular-classification",
+  "library": "scikit-learn",
+  "languages": [],
+  "tags": [
+    "scikit-learn",
+    "joblib",
+    "tabular-classification",
+    "census-income",
+    "adult-income",
+    "classical-machine-learning",
+    "dataset:uci-adult",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28898,
+  "storage_human": "28898 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TED - Definition by AcronymFinder",
+      "url": "https://www.acronymfinder.com/TED.html",
+      "snippet": "69 definitions of TED. Meaning of TED. What does TED stand for? TED abbreviation. Define TED at AcronymFinder.com."
+    },
+    {
+      "title": "TED (conference) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/TED_(conference)",
+      "snippet": "TED Conferences, LLC (Technology, Entertainment, Design[7]) is an American-Canadian nonprofit [7] media organization that posts …"
+    },
+    {
+      "title": "TED - What does TED stand for? The Free Dictionary",
+      "url": "https://acronyms.thefreedictionary.com/TED",
+      "snippet": "TED is a nonprofit organization devoted to Ideas Worth Spreading, usually in the form of short, powerful talks (18 minutes or fewer) …"
+    },
+    {
+      "title": "What does TED stand for? - Abbreviations.com",
+      "url": "https://www.abbreviations.com/TED",
+      "snippet": "Looking for the definition of TED? Find out what is the full meaning of TED on Abbreviations.com! 'Tenders Electronic Daily' is one …"
+    },
+    {
+      "title": "What does TED mean? - Abbreviation Finder",
+      "url": "https://www.abbreviationfinder.org/acronyms/TED.html",
+      "snippet": "In summary, TED is an abbreviation that can stand for various terms depending on the context, and its interpretation can vary across …"
+    }
+  ]
+}

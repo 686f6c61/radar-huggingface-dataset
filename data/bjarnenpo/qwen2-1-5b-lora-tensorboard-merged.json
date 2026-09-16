@@ -5,7 +5,7 @@
   "author": "BjarneNPO",
   "url": "https://huggingface.co/BjarneNPO/Qwen2-1.5B-lora-tensorboard-merged",
   "created_at": "2026-09-15T12:17:59.000Z",
-  "updated_at": "2026-09-15T12:18:47.000Z",
+  "updated_at": "2026-09-15T12:28:16.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -22,7 +22,7 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 1543714304,

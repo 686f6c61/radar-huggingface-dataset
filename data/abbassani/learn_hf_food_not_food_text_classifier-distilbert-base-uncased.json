@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Abbassani/learn_hf_food_not_food_text_classifier-distilbert-base-uncased",
+  "slug": "abbassani-learn_hf_food_not_food_text_classifier-distilbert-base-uncased",
+  "author": "Abbassani",
+  "url": "https://huggingface.co/Abbassani/learn_hf_food_not_food_text_classifier-distilbert-base-uncased",
+  "created_at": "2026-09-15T22:34:51.000Z",
+  "updated_at": "2026-09-15T22:35:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267837825,
+  "storage_human": "268 MB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cowboys 2026 Schedule | Dallas Cowboys - dallascowboys.com",
+      "url": "https://www.dallascowboys.com/schedule/",
+      "snippet": "Dallas Cowboys Current 2026 Schedule: The official source of the latest Cowboys regular season and preseason schedule"
+    },
+    {
+      "title": "Dallas Cowboys News, Scores, Stats, Schedule | NFL.com",
+      "url": "https://www.nfl.com/teams/dallas-cowboys/",
+      "snippet": "1 day ago · Find news, video, standings, scores and schedule information for the Dallas Cowboys."
+    },
+    {
+      "title": "Dallas Cowboys 2026 Regular Season NFL Schedule - ESPN",
+      "url": "https://www.espn.com/nfl/team/schedule/_/name/dal/dallas-cowboys",
+      "snippet": "ESPN has the full 2026 Dallas Cowboys Regular Season NFL schedule. Includes game times, TV listings and ticket information for all …"
+    },
+    {
+      "title": "Dallas Cowboys | Official Site of the Dallas Cowboys",
+      "url": "https://www.dallascowboys.com/",
+      "snippet": "In the first 2026 edition of Here We Goooo, a look at some key elements to the Cowboys' season opener against the Giants on …"
+    },
+    {
+      "title": "Dallas Cowboys Schedule: Ways to Watch Every Dallas Cowboys …",
+      "url": "https://www.nfl.com/ways-to-watch/team-schedule/dallas-cowboys",
+      "snippet": "View the Dallas Cowboys full schedule and find out how to watch every game. Get TV channels, streaming options, kickoff times, and …"
+    }
+  ]
+}

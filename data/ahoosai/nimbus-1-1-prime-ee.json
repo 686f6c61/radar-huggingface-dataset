@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "AhoosAI/nimbus-1-1-prime-ee",
+  "slug": "ahoosai-nimbus-1-1-prime-ee",
+  "author": "AhoosAI",
+  "url": "https://huggingface.co/AhoosAI/nimbus-1-1-prime-ee",
+  "created_at": "2026-09-11T16:26:16.000Z",
+  "updated_at": "2026-09-15T22:50:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en",
+    "fa",
+    "ar",
+    "es",
+    "pt"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "code",
+    "rtl",
+    "accessibility",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "text-generation",
+    "conversational",
+    "en",
+    "fa",
+    "ar",
+    "es",
+    "pt",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172955084,
+  "storage_human": "173 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lowyat.NET - Insanely Addictive Malaysia Forum",
+      "url": "https://forum.lowyat.net/",
+      "snippet": "6 days ago · Lowyat.NET Malaysia's Tech Enthusiast Resource Community. Forums, Buy, Sell, Second Hand, Notebook, Laptop, …"
+    },
+    {
+      "title": "Is Whatsapp web down? - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5538738",
+      "snippet": "Sep 8, 2025 · Cannot link my device now."
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/how-do-i-set-the-name-that-appears-on-the-command/63c046ce-f89d-4f62-b93b-b65a66bfa86c",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/outlook_com/forum/all/outlook-todo-synced-tasks-attachments-only-non/66bca736-f128-4d62-b193-79c8c57ad30f",
+      "snippet": ""
+    },
+    {
+      "title": "Entrei na Deep Web mas não tinha nada de anormal ou interessante.?",
+      "url": "https://forum.techtudo.com.br/perguntas/290667/entrei-na-deep-web-mas-nao-tinha-nada-de-anormal-ou-interessante",
+      "snippet": "Ouvi dizerem que tem assassinatos, vídeos de fantasmas, e até venda de drogas e armas, etc. Entrei pra ver se era verdade, por …"
+    }
+  ]
+}

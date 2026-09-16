@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Gzzh-ao93/mixer-matching-light",
+  "slug": "gzzh-ao93-mixer-matching-light",
+  "author": "Gzzh-ao93",
+  "url": "https://huggingface.co/Gzzh-ao93/mixer-matching-light",
+  "created_at": "2026-09-15T21:43:08.000Z",
+  "updated_at": "2026-09-15T21:43:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OTTO - Mode, Möbel & Technik » Zum Online-Shop",
+      "url": "https://www.otto.de/",
+      "snippet": "OTTO Online-Shop » Viele Marken Tolle Angebote Top Service » Ratenkauf Kauf auf Rechnung Altgeräte-Mitnahme Aufbauservice …"
+    },
+    {
+      "title": "Damenmode online kaufen » Fashion-Shop für Damen | OTTO",
+      "url": "https://www.otto.de/damen/",
+      "snippet": "Bis zu 20% reduziert Damenmode online kaufen bei OTTO » Große Auswahl Aktuelle Trends Beliebte Marken Top Qualität » Jetzt …"
+    },
+    {
+      "title": "OTTO",
+      "url": "https://tp.otto.de/",
+      "snippet": "OTTO bietet eine große Auswahl an Produkten wie Möbel, Technik und Mode. Entdecken Sie Top-Marken, aktuelle Trends und …"
+    },
+    {
+      "title": "OTTO - Anmelden",
+      "url": "https://www.otto.de/customer-identity/login",
+      "snippet": "・ Preisangaben inkl. Steuer und zzgl."
+    },
+    {
+      "title": "Möbel Online-Shop » Einrichtung online kaufen | OTTO",
+      "url": "https://www.otto.de/moebel/?ansicht=einstieg",
+      "snippet": "Bis zu 20% reduziert Große Auswahl an Möbeln bei OTTO » Wohnen Schlafen Küche & Essen Kinder Arbeiten Jetzt deine Möbel …"
+    }
+  ]
+}

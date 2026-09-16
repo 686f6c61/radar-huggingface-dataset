@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "FastVideo/FastVideo-FastH3-8-Step-V2",
+  "slug": "fastvideo-fastvideo-fasth3-8-step-v2",
+  "author": "FastVideo",
+  "url": "https://huggingface.co/FastVideo/FastVideo-FastH3-8-Step-V2",
+  "created_at": "2026-09-04T23:19:56.000Z",
+  "updated_at": "2026-09-15T15:05:13.000Z",
+  "license": "minimax-h3-community",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-video",
+    "video",
+    "audio",
+    "text-to-audio-video",
+    "distillation",
+    "dmd2",
+    "few-step",
+    "minimax-h3",
+    "fastvideo",
+    "fasth3",
+    "arxiv:2405.14867",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 24,
+  "downloads_30d": 2,
+  "trending_score": 23,
+  "parameters": 35049751296,
+  "parameters_human": "35.05B",
+  "storage_bytes": 147835483860,
+  "storage_human": "147.8 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Sales Content Management & Governance for GTM - Highspot",
+      "url": "https://www.highspot.com/product/sales-content-management-system/",
+      "snippet": "With AI-powered generative governance, Highspot Copilot helps apply metadata, archive outdated assets, and enforce approval …"
+    },
+    {
+      "title": "[feat] Support the FastH3 8-Step V2 checkpoint: checkpoint-defined shifts, explicit DMD schedule, new example by SolitaryThinker · Pull Request #1852 · hao-ai-lab/FastVideo",
+      "url": "https://github.com/hao-ai-lab/FastVideo/pull/1852",
+      "snippet": "Purpose Add inference support for the public eight-forward FastH3 checkpoint, FastVideo/FastVideo-FastH3-8-Step-V2. Its video scheduler shift is 10 (base H3 and the four-forward preview use 12) and..."
+    },
+    {
+      "title": "FastVideo FastH3 for MiniMax H3 AI Video Generator with Audio | Sogni",
+      "url": "https://www.sogni.ai/models/minimax-h3",
+      "snippet": "For 15-second 768p-class video, use Standard as the 1× baseline. Balanced runs the MiniMax H3 LightX2V 8-step recipe, Turbo runs the LightX2V 4-step recipe, and FastH3 Turbo runs FastVideo FastH3 4-step."
+    },
+    {
+      "title": "Welcome to Framer, Highspot!",
+      "url": "https://highspot.framer.media/",
+      "snippet": "Maintain buyer trust with Highspot’s AI-powered content governance tools and templates. Keep sales materials consistent, compliant, …"
+    },
+    {
+      "title": "What is the Highspot content management system and how does it …",
+      "url": "https://askai.glarity.app/search/What-is-the-Highspot-content-management-system-and-how-does-it-work",
+      "snippet": "Oct 11, 2025 · **Governance and Collaboration**: Highspot helps establish governance around content usage, ensuring consistency …"
+    }
+  ]
+}

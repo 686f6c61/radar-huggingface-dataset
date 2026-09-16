@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Felixschmidt/matching-efficient72",
+  "slug": "felixschmidt-matching-efficient72",
+  "author": "Felixschmidt",
+  "url": "https://huggingface.co/Felixschmidt/matching-efficient72",
+  "created_at": "2026-09-15T20:45:16.000Z",
+  "updated_at": "2026-09-15T20:45:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dr Vincent Aioun, Médecin généraliste à La Norville, Lauzach - Doctolib",
+      "url": "https://www.doctolib.fr/medecin-generaliste/la-norville/vincent-aioun",
+      "snippet": "Prenez RDV en ligne avec Dr Vincent Aioun: Médecin généraliste, Conventionné secteur 1. Adresse : 60 Chemin de la Garenne, …"
+    },
+    {
+      "title": "Prendre rendez-vous : Dr AIOUN Vincent Médecin généraliste à La ...",
+      "url": "https://lemedecin.fr/la-norville/cabinet-du-dr-vincent-aioun/medecin-generaliste/docteur-aioun-vincent/0b83faeff6884f511215ba40f43a1f14/pro/",
+      "snippet": "LEMEDECIN.FR n’est pas un offreur de soins mais un opérateur de mise en relation entre un patient et un professionnel de santé. …"
+    },
+    {
+      "title": "Le site du Docteur Vincent AIOUN - Accueil",
+      "url": "https://vincent-aioun.docvitae.fr/",
+      "snippet": "Ce site n'a pas pour vocation de remplacer une consultation médicale. Site créé en collaboration avec Docvitae."
+    },
+    {
+      "title": "Vincent Aioun à La Norville - Médecin généraliste (adresse, horaires)",
+      "url": "https://www.pagesjaunes.fr/pros/62508134",
+      "snippet": "Vincent Aioun à La Norville (91) Médecin généraliste : adresse, photos, retrouvez les coordonnées et informations sur le professionnel"
+    },
+    {
+      "title": "Dr Vincent AIOUN à La Norville | 133 Avis - 1 Photos",
+      "url": "https://medecin-generaliste.autour-de-moi.com/dr-vincent-aioun-1497455.html",
+      "snippet": "Mar 8, 2024 · Voici toutes les informations sur le Médecin généraliste Dr Vincent AIOUN qui se trouve au 60 Chem. de la Garenne, …"
+    }
+  ]
+}

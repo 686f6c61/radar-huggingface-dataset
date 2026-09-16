@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Adnan2942/Qwen2-VL-7B-Instruct-LoRA-Latex-OCR-Adapter",
+  "slug": "adnan2942-qwen2-vl-7b-instruct-lora-latex-ocr-adapter",
+  "author": "Adnan2942",
+  "url": "https://huggingface.co/Adnan2942/Qwen2-VL-7B-Instruct-LoRA-Latex-OCR-Adapter",
+  "created_at": "2026-09-15T19:24:55.000Z",
+  "updated_at": "2026-09-15T20:36:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "unsloth",
+    "trl",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 418465949,
+  "storage_human": "418 MB",
+  "base_model": "unsloth/qwen2-vl-7b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Akcje - Notowania GPW - Giełda - Bankier.pl",
+      "url": "https://www.bankier.pl/gielda/notowania/akcje",
+      "snippet": "Najnowsze wiadomości, aktualne notowania, forum dyskusyjne, komunikaty espi, wyniki finansowe, rekomendacje"
+    },
+    {
+      "title": "WIG20 - Notowania indeksów giełdowych - Bankier.pl",
+      "url": "https://www.bankier.pl/inwestowanie/profile/quote.html?symbol=WIG20",
+      "snippet": "Dec 10, 2025 · WIG20 - najnowsze wiadomości, aktualne notowania i forum dyskusyjne na temat indeksów giełdowych."
+    },
+    {
+      "title": "Forum Allegro Gadane: społeczność kupujących i sprzedających",
+      "url": "https://spolecznosc.allegro.pl/",
+      "snippet": "Katalog Allegro niezgodny z Regulaminem Allegro? Niestety doszło do niezgodności Katalogu Allegro z Regulaminem. Najpierw …"
+    },
+    {
+      "title": "Allegro Klik - nowa metoda płatności dostępna!",
+      "url": "https://spolecznosc.allegro.pl/t5/dyskusje-kupuj%C4%85cych/allegro-klik-nowa-metoda-p%C5%82atno%C5%9Bci-dost%C4%99pna/td-p/1149579",
+      "snippet": "Cześć! 13 stycznia 2026 roku Allegro uruchomiło nową metodę płatności - Allegro Klik. To rozwiązanie dla osób, które mają konto w …"
+    },
+    {
+      "title": "Cadence真的比Altium强吗？为什么要鄙视AD呢？ - 知乎",
+      "url": "https://www.zhihu.com/question/23333710",
+      "snippet": "所以我觉得使用AD查看PCB是很爽的。 好吧，先说到这儿吧，以后要是有更多的感悟再来补充吧。 哦，以上大多说的是allegro的PCB …"
+    }
+  ]
+}

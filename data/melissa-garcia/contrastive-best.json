@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "melissa-garcia/contrastive-best",
+  "slug": "melissa-garcia-contrastive-best",
+  "author": "melissa-garcia",
+  "url": "https://huggingface.co/melissa-garcia/contrastive-best",
+  "created_at": "2026-09-15T20:55:39.000Z",
+  "updated_at": "2026-09-15T20:55:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chaussures & Sandales Jelly | Melissa FR EU",
+      "url": "https://eu.shopmelissa.com/fr-fr",
+      "snippet": "Découvrez Melissa® EU pour des sandales et chaussures en jelly véganes fabriquées de manière durable pour tous les âges. …"
+    },
+    {
+      "title": "Melissa - Loja Oficial",
+      "url": "https://www.melissa.com.br/",
+      "snippet": "Sandálias Plataformas Tamancos Botas e Coturnos Sapatilhas Best Sellers Mini Melissa"
+    },
+    {
+      "title": "Mini Melissa - Loja Oficial",
+      "url": "https://www.melissa.com.br/mini-melissa",
+      "snippet": "UMA DOSE DE FOFURA PARA CADA IDADE FIQUE POR DENTRO DO UNIVERSO MELISSA RECEBA NOVIDADES …"
+    },
+    {
+      "title": "MÉLISSA (@melissaditquoi) • Instagram photos and videos",
+      "url": "https://www.instagram.com/melissaditquoi/",
+      "snippet": "203K Followers, 572 Following, 39 Posts - See Instagram photos and videos from MÉLISSA (@melissaditquoi)"
+    },
+    {
+      "title": "Melissa | Melissa Portugal",
+      "url": "https://www.melissaportugal.com/pt/sobre-nos/melissa",
+      "snippet": "Melissa é feita de histórias. A história que cada um tem com a marca é o que a torna relevante. É a ligação com o outro, a absorção …"
+    }
+  ]
+}

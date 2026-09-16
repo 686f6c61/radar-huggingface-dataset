@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "adinugrohoport/random-multitask",
+  "slug": "adinugrohoport-random-multitask",
+  "author": "adinugrohoport",
+  "url": "https://huggingface.co/adinugrohoport/random-multitask",
+  "created_at": "2026-09-15T19:45:26.000Z",
+  "updated_at": "2026-09-15T19:45:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZAQ-22 Omron Automation and Safety | Mouser",
+      "url": "https://www.mouser.com/en/ProductDetail/Omron-Automation-and-Safety/ZAQ-22?qs=WOBxwZpV8jVO62%252b%2FQOWORA%3D%3D",
+      "snippet": "Z-Series General Purpose Snap-Action Switches Omron Electronics Z-Series General Purpose Snap-Action Switches are designed …"
+    },
+    {
+      "title": "ZAQ-22 Omron Automation and Safety | Accessories | DigiKey",
+      "url": "https://www.digikey.com/en/products/detail/omron-automation-and-safety/ZAQ-22/1829833?msockid=14a72d7d42386eed08483aa843646f62",
+      "snippet": "Buy now, ships today. ZAQ-22 - Panel Mount Plunger from Omron Automation and Safety. View datasheets, pricing and availability …"
+    },
+    {
+      "title": "ZAQ-22 - Omron Automation and Safety - Price, Inventory",
+      "url": "https://www.heisener.com/ProductDetail/ZAQ-22",
+      "snippet": "Description Stock ZAQ-22 D# ZAQ22 OMRON Corporation AUX ACTUATOR Z SWITCH - Bulk (Alt: ZAQ22) 0"
+    },
+    {
+      "title": "ZAQ-22 OMRON Switches - Jotrin Electronics",
+      "url": "https://www.jotrin.com/product/parts/ZAQ_22",
+      "snippet": "If there is something wrong with the ZAQ22 we delivered, we will accept the replacement or return of the ZAQ-22 only when all of the …"
+    },
+    {
+      "title": "ZAQ22 - Omron Automation - OnlineComponents.com",
+      "url": "https://www.onlinecomponents.com/en/productdetail/omron-automation/zaq22-42344501.html",
+      "snippet": "What is the lead time for ZAQ22? The standard lead time for ZAQ22 is approximately 3 weeks. In-stock quantities ship from …"
+    }
+  ]
+}

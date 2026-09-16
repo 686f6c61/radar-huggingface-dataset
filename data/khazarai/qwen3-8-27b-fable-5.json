@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "khazarai/Qwen3.8-27B-Fable-5",
+  "slug": "khazarai-qwen3-8-27b-fable-5",
+  "author": "khazarai",
+  "url": "https://huggingface.co/khazarai/Qwen3.8-27B-Fable-5",
+  "created_at": "2026-09-15T21:41:37.000Z",
+  "updated_at": "2026-09-15T22:58:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "coding",
+    "agentic-coding",
+    "reasoning",
+    "distilled",
+    "unsloth",
+    "conversational",
+    "en",
+    "dataset:DSFFGFG456/fable-5-coding-and-debugging-traces",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55582996119,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What is the process to find out when I created my Binance account?",
+      "url": "https://www.bydfi.com/en/questions/what-is-the-process-to-find-out-when-i-created-my-binance-account",
+      "snippet": "Can you guide me on how to find out the date when I created my Binance account? I want to know the exact process to retrieve this …"
+    },
+    {
+      "title": "¿Dónde se encuentra la sede principal de Binance?",
+      "url": "https://www.bydfi.com/es/questions/donde-se-encuentra-la-sede-principal-de-binance",
+      "snippet": "Binance tiene su sede principal en Malta, un país conocido por su enfoque progresivo hacia las criptomonedas. La elección de Malta …"
+    },
+    {
+      "title": "Is there a way to enable automatic login on the Binance app?",
+      "url": "https://www.bydfi.com/en/questions/is-there-a-way-to-enable-automatic-login-on-the-binance-app",
+      "snippet": "Absolutely! Enabling automatic login on the Binance app is a breeze. Simply open the app and navigate to the settings menu. Look …"
+    },
+    {
+      "title": "Is there a step-by-step guide on adding money to Binance from India ...",
+      "url": "https://www.bydfi.com/en/questions/is-there-a-step-by-step-guide-on-adding-money-to-binance-from-india-using-inr",
+      "snippet": "I am from India and I want to add money to Binance using INR. Is there a detailed step-by-step guide available that can help me with …"
+    },
+    {
+      "title": "What are the requirements for using Binance in Ethiopia?",
+      "url": "https://www.bydfi.com/en/questions/what-are-the-requirements-for-using-binance-in-ethiopia",
+      "snippet": "What are the specific requirements for Ethiopian residents who want to use Binance, one of the largest cryptocurrency exchanges, in …"
+    }
+  ]
+}

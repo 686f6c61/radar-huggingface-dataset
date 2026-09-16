@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "dicta-il/dictabert-morph",
+  "slug": "dicta-il-dictabert-morph",
+  "author": "dicta-il",
+  "url": "https://huggingface.co/dicta-il/dictabert-morph",
+  "created_at": "2023-08-29T17:24:14.000Z",
+  "updated_at": "2026-09-15T21:44:59.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "custom_code",
+    "he",
+    "arxiv:2308.16687",
+    "license:cc-by-4.0",
+    "text-embeddings-inference",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 2148,
+  "trending_score": 0,
+  "parameters": 184395329,
+  "parameters_human": "184.4M",
+  "storage_bytes": 1476762753,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dictée en ligne : la dictée devient un jeu",
+      "url": "https://www.dictaly.com/",
+      "snippet": "Dictaly est un site d'entraînement à l'orthographe qui propose d'améliorer et mesurer son niveau d’orthographe grâce à des dictées …"
+    },
+    {
+      "title": "dicta - Définitions, synonymes, prononciation, exemples | Dico en ligne ...",
+      "url": "https://dictionnaire.lerobert.com/definition/dicta",
+      "snippet": "Et il lui dicta le procès-verbal de cette scène, exactement, minutieusement, se reprenant même parfois pour arriver à l'expression …"
+    },
+    {
+      "title": "dicta — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/dicta",
+      "snippet": "La violence naturelle à son tempérament sanguin lui dicta les pires conseils. — (Louis Pergaud, La Vengeance du père Jourgeot, …"
+    },
+    {
+      "title": "DICTA : Définition de DICTA",
+      "url": "https://www.cnrtl.fr/definition/dicta",
+      "snippet": "A.− Prononcer mot à mot un texte de longueur variable pour qu'il soit transcrit sous une forme écrite par une ou plusieurs personnes. …"
+    },
+    {
+      "title": "Recherche - Dictaly",
+      "url": "https://www.dictaly.com/recherche",
+      "snippet": "Recherche une dictée Nous avons besoin de votre aide : l'accès au site est (et restera) gratuit et sans publicité, soutenez-nous en …"
+    }
+  ]
+}

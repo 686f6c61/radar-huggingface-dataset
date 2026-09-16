@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "SlayerLab/gollem-v4-250m-pl",
+  "slug": "slayerlab-gollem-v4-250m-pl",
+  "author": "SlayerLab",
+  "url": "https://huggingface.co/SlayerLab/gollem-v4-250m-pl",
+  "created_at": "2026-09-14T14:41:57.000Z",
+  "updated_at": "2026-09-16T01:33:50.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "pytorch",
+    "gollem-gpt",
+    "polish",
+    "language-model",
+    "research",
+    "work-in-progress",
+    "gollem",
+    "text-generation",
+    "pl",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 1059,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14877550056,
+  "storage_human": "14.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Examen test Entretien CPAM Agent administratif - Doctissimo",
+      "url": "https://forum.doctissimo.fr/viepratique/travail/examen-entretien-administratif-sujet_25269_1.htm",
+      "snippet": "Oct 18, 2013 · Coucou, J'ai travaillée pour la cpam également récemment, je n'ai pas eu de test mais directement l'entretien. Alors …"
+    },
+    {
+      "title": "Forum Arrêter de fumer - Doctissimo",
+      "url": "https://forum.doctissimo.fr/sante/arreter-fumer/liste_sujet-1.htm",
+      "snippet": "Forum de discussion dedie au tabac et au sevrage tabagique. Groupe d'entraide pour tous ceux qui souhaitent arreter de fumer."
+    },
+    {
+      "title": "Forum Contraception : pilule, préservatifs... - Doctissimo",
+      "url": "https://forum.doctissimo.fr/sante/contraception/liste_sujet-1.htm",
+      "snippet": "Forum d'echange et d'entraide autour de la contraception, abordee sans tabou. Une meilleure information pour une sexualite épanouie."
+    },
+    {
+      "title": "Test +++ a DPO 10 :) - Tests et symptômes de grossesse - Doctissimo",
+      "url": "https://forum.doctissimo.fr/grossesse-bebe/Tests-symptomes-grossesse/test-dpo-10-sujet_60395_1.htm",
+      "snippet": "Jun 19, 2021 · DPO 10 hier et j'ai fais dans l'AM un test urinaire Medisante a 25ui > positif Dans la foulee, j'ai emmene mon test chez …"
+    },
+    {
+      "title": "Vos test 25 ui +++ a combien de dpo - Doctissimo",
+      "url": "https://forum.doctissimo.fr/grossesse-bebe/Tests-symptomes-grossesse/test-25-combien-sujet_59260_1.htm",
+      "snippet": "Aug 27, 2020 · Evite juste les test de chez action qui font de faux positif très souvent. Les 25 ui sont plus fiable d'ailleurs j ai eu mon …"
+    }
+  ]
+}

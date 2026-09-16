@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "ThakiCloud/SKILLRET-Embedding-0.6B",
+  "slug": "thakicloud-skillret-embedding-0-6b",
+  "author": "ThakiCloud",
+  "url": "https://huggingface.co/ThakiCloud/SKILLRET-Embedding-0.6B",
+  "created_at": "2026-05-06T03:52:03.000Z",
+  "updated_at": "2026-09-16T01:41:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "qwen3",
+    "embeddings",
+    "skill-retrieval",
+    "llm-agents",
+    "contrastive-learning",
+    "sentence-similarity",
+    "en",
+    "dataset:ThakiCloud/SKILLRET",
+    "arxiv:2605.05726",
+    "arxiv:2609.16391",
+    "base_model:Qwen/Qwen3-Embedding-0.6B",
+    "base_model:finetune:Qwen/Qwen3-Embedding-0.6B",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 1498,
+  "trending_score": 0,
+  "parameters": 595776512,
+  "parameters_human": "595.8M",
+  "storage_bytes": 1203010384,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-Embedding-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "\"Toy Car\" - Made-in-China.com",
+      "url": "https://www.made-in-china.com/products-search/hot-china-products/Toy_Car.html",
+      "snippet": "China Toy Car wholesale - 2026 Toy Car products in best price from Chinese Model Car manufacturers, Electric Toy Car suppliers, …"
+    },
+    {
+      "title": "China Toy Vehicles, Toy Vehicles Wholesale, Manufacturers, Price",
+      "url": "https://www.made-in-china.com/products-search/hot-china-products/Toy_Vehicles.html",
+      "snippet": "OEM car toy manufacturing is ideal for customization in wholesale and cheap factory pricing scenarios. Partnering direct with a top …"
+    },
+    {
+      "title": "Diecast Toy Cars - Chinese Alloy Model Vehicles for Kids",
+      "url": "https://www.alibaba.com/showroom/chinese-toy-car.html",
+      "snippet": "Discover Chinese toy cars with 1:32 diecast models & electric ride-on options for kids. OEM/ODM supported, CE certified, wholesale …"
+    },
+    {
+      "title": "Electric Toy Cars China - High Quality Remote Control Vehicles",
+      "url": "https://www.alibaba.com/showroom/toy-cars-china.html",
+      "snippet": "Discover toy cars from China with CE-certified electric ride-on cars for kids aged 2-14. Features remote control, music, and durable …"
+    },
+    {
+      "title": "made in china toy cars products for sale - eBay",
+      "url": "https://www.ebay.com/b/made-in-china-toy-cars/bn_7024772697?msockid=3dfe66525e6a6505058a71845f166439",
+      "snippet": "Get the best deals on made in china toy cars when you shop the largest online selection at eBay.com. Free shipping on many items | …"
+    }
+  ]
+}

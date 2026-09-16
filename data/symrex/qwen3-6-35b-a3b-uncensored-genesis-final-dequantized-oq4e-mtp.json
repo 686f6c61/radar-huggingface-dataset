@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-dequantized-oQ4e-mtp",
+  "slug": "symrex-qwen3-6-35b-a3b-uncensored-genesis-final-dequantized-oq4e-mtp",
+  "author": "symrex",
+  "url": "https://huggingface.co/symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-dequantized-oQ4e-mtp",
+  "created_at": "2026-09-16T00:54:19.000Z",
+  "updated_at": "2026-09-16T01:04:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 21622873144,
+  "storage_human": "21.6 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "مخازن الإضاءة",
+      "url": "https://lightingstores.com.sa/",
+      "snippet": "مخازن الإضاءة تقدم أحدث حلول وتقنيات الإضاءة لتعزيز جودة الحياة وإبراز جمال التفاصيل المعمارية والديكورات. تركز على دور الإضاءة في نجاح المشاريع وتحسين رفاهية الناس مع الالتزام …"
+    },
+    {
+      "title": "التخفيضات - مخازن الإضاءة",
+      "url": "https://lightingstores.com.sa/offers",
+      "snippet": "اكتشف مجموعة واسعة من حلول الإضاءة الداخلية والخارجية في مخازن الإضاءة نقدم منتجات من أقوى العلامات التجارية لضمان الجودة والتصميم المميز تسوق الآن واحصل على الإضاءة المثالية لمنزلك أو ..."
+    },
+    {
+      "title": "تسوق إضاءة لمنزلك أونلاين من مخازن الإضاءة الآن | محطة البناء | Build ...",
+      "url": "https://build-station.com/ar/lightingstores/c1248079489",
+      "snippet": "في محطة البناء نقدم لك أفضل الحلول في عالم البناء والإضاءة استكشف تشكيلة واسعة من الإضاءات الداخلية والخارجية بتصاميم حديثة من مخازن الإضاءة"
+    },
+    {
+      "title": "مخازن الاضاءة - sakan.co",
+      "url": "https://sakan.co/blog/%d9%85%d8%ae%d8%a7%d8%b2%d9%86-%d8%a7%d9%84%d8%a7%d8%b6%d8%a7%d8%a1%d8%a9-lighting-stores/",
+      "snippet": "Mar 13, 2024 · تعرّف على مخازن الاضاءة وكيف يُمكن استخدامها في تزيين المنزل؟"
+    },
+    {
+      "title": "مخازن الإضاءة | Lighting Stores - Mahally Stores",
+      "url": "https://mahally.com/en/stores/604322063/",
+      "snippet": "مخازن الاضاءة | Lighting Stores Buy now, pay later 4.5 Decorative braided hanging cord for pendant lighting units – Beige color – sold by …"
+    }
+  ]
+}

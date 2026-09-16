@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "wytro/KYS-1.5B-Rewritten-v2",
+  "slug": "wytro-kys-1-5b-rewritten-v2",
+  "author": "wytro",
+  "url": "https://huggingface.co/wytro/KYS-1.5B-Rewritten-v2",
+  "created_at": "2026-09-15T23:19:07.000Z",
+  "updated_at": "2026-09-15T23:42:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "kys",
+    "know-your-sources",
+    "nanotron",
+    "reference-checkpoint",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 342984072536,
+  "storage_human": "343.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Super Bowl LX 2026: Horario, canales, medio tiempo y sede | Guía …",
+      "url": "https://www.aztecalaguna.com/deportes/notas/deportes-super-bowl-lx-2026-horario-canales-medio-tiempo-y-guia-completa/",
+      "snippet": "Jul 21, 2026 · Consulta nuestra guía completa del Super Bowl LX 2026: confirmamos el horario en México, canal de transmisión, …"
+    },
+    {
+      "title": "Super Bowl 2026 EN VIVO: medio tiempo, artistas y quién juega",
+      "url": "https://www.yucatan.com.mx/deportes/2026/02/08/super-bowl-2026-en-vivo-medio-tiempo-artistas-quien-juega.html",
+      "snippet": "El Super Bowl 2026 se llevará a cabo este domingo 8 de febrero. Aquí te decimos dónde verlo en México y en qué horario."
+    },
+    {
+      "title": "Super Bowl 2026: Horario en México, canales de transmisión y show …",
+      "url": "https://www.capitalmexico.com.mx/estadio/super-bowl-2026-horario-en-mexico-canales-de-transmision-y-show-de-medio-tiempo/",
+      "snippet": "Feb 6, 2026 · La NFL y las distintas cadenas de transmisión coordinan frecuentemente señales para maximizar la audiencia global …"
+    },
+    {
+      "title": "Super Bowl LX: ¿quién juega la final de la NFL 2026? Fecha, horario y ...",
+      "url": "https://www.ejecentral.com.mx/nuestro-eje/super-bowl-lx-quien-juega-la-final-de-la-nfl-2026-fecha-horario-y-donde-ver-en-vivo-desde-mexico",
+      "snippet": "Feb 8, 2026 · El Super Bowl LX se juega este 8 de febrero y, además del duelo por el título, Bad Bunny encabezará el esperado …"
+    },
+    {
+      "title": "Bad Bunny tomará el escenario del Super Bowl 2026: horario y dónde …",
+      "url": "https://www.clicnoticias.com.mx/bad-bunny-tomara-el-escenario-del-super-bowl-2026-horario-y-donde-ver-el-esperado-show-del-medio-tiempo/",
+      "snippet": "Cancún.- Bad Bunny será el protagonista absoluto del espectáculo de Medio Tiempo del Super Bowl LX, que se celebrará este …"
+    }
+  ]
+}

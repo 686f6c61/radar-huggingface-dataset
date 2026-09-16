@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "aksern/misn-1.0",
+  "slug": "aksern-misn-1-0",
+  "author": "aksern",
+  "url": "https://huggingface.co/aksern/misn-1.0",
+  "created_at": "2026-09-15T23:11:23.000Z",
+  "updated_at": "2026-09-16T00:09:35.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "swin",
+    "image-classification",
+    "moderation",
+    "image",
+    "nsfw",
+    "dataset:akaruineko/pinterest-4k",
+    "base_model:microsoft/swin-base-patch4-window7-224",
+    "base_model:finetune:microsoft/swin-base-patch4-window7-224",
+    "license:openmdw-1.1",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 86745274,
+  "parameters_human": "86.7M",
+  "storage_bytes": 347039729,
+  "storage_human": "347 MB",
+  "base_model": "microsoft/swin-base-patch4-window7-224",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com.ph/",
+      "snippet": "Ang serbisyo ng Google, na inaalok nang libre, ay agarang nagsasalin ng mga salita, parirala, at web page sa pagitan ng English at …"
+    },
+    {
+      "title": "Tagalog Dictionary",
+      "url": "https://www.tagalog-dictionary.com/",
+      "snippet": "Our large database of English to Tagalog and Tagalog to English translation is 100% free. The website is designed to help expats, …"
+    },
+    {
+      "title": "Translate service to Filipino - Tradukka",
+      "url": "https://tradukka.com/translate/en/fil/service/4420747",
+      "snippet": "Installation, maintenance, or repairs provided or guaranteed by a dealer or manufacturer: a dealer with full parts and service. Pag …"
+    },
+    {
+      "title": "Translate Filipino to English | Translate.com",
+      "url": "https://www.translate.com/filipino-english",
+      "snippet": "Translate between many language pairs to and from English. We can also support additional language pairs upon request. Filipino-to …"
+    },
+    {
+      "title": "English to Tagalog Translator – Fast & Free Online - Lingvanex",
+      "url": "https://lingvanex.com/translation/english-to-tagalog",
+      "snippet": "Type, paste, or upload the English text you want to translate. You can enter full sentences, short messages, or English to Tagalog …"
+    }
+  ]
+}

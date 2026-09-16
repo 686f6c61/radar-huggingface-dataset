@@ -5,7 +5,7 @@
   "author": "snupilab",
   "url": "https://huggingface.co/snupilab/theta-bench-dreamzero5b-sim-3003",
   "created_at": "2026-09-13T17:03:32.000Z",
-  "updated_at": "2026-09-13T17:03:34.000Z",
+  "updated_at": "2026-09-15T05:45:14.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -14,6 +14,8 @@
     "en"
   ],
   "tags": [
+    "safetensors",
+    "dreamzero",
     "robotics",
     "theta-bench",
     "mujoco",
@@ -24,12 +26,14 @@
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "parameters": 12624352257,
+  "parameters_human": "12.62B",
+  "storage_bytes": 50507360018,
+  "storage_human": "50.5 GB",
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

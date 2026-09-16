@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ollybritton/Llama-3.2-3B-gsm8k-distill-adfp-lambda256-grpo40-math-level1",
+  "slug": "ollybritton-llama-3-2-3b-gsm8k-distill-adfp-lambda256-grpo40-math-level1",
+  "author": "ollybritton",
+  "url": "https://huggingface.co/ollybritton/Llama-3.2-3B-gsm8k-distill-adfp-lambda256-grpo40-math-level1",
+  "created_at": "2026-09-15T22:57:29.000Z",
+  "updated_at": "2026-09-15T23:01:00.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "base_model:meta-llama/Llama-3.2-3B",
+    "base_model:finetune:meta-llama/Llama-3.2-3B",
+    "license:llama3.2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 12868238576,
+  "storage_human": "12.9 GB",
+  "base_model": "meta-llama/Llama-3.2-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تنزيل تطبيق \"ترجمة Google\" واستخدامه",
+      "url": "https://support.google.com/translate/answer/6350850?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "يتيح لك تطبيق \"ترجمة Google\" ترجمة نص أو كتابة بخط اليد أو صور أو كلام بأكثر من 200 لغة، ويمكنك أيضًا استخدام التطبيق على الويب. بإمكانك الاستفادة من \"ترجمة Google\" بعدّة …"
+    },
+    {
+      "title": "مساعدة Google Translate",
+      "url": "https://support.google.com/translate/?hl=ar",
+      "snippet": "مركز مساعدة Google Translate الرسمي حيث يمكنك العثور على نصائح وبرامج تعليمية حول استخدام المنتج وأجوبة أخرى للأسئلة الشائعة."
+    },
+    {
+      "title": "عندى اسماء عربى كتير عايز احولها انجلش بدون ترجمة حرفية مثلا جوجل ...",
+      "url": "https://support.google.com/translate/thread/3848770/%D8%B9%D9%86%D8%AF%D9%89-%D8%A7%D8%B3%D9%85%D8%A7%D8%A1-%D8%B9%D8%B1%D8%A8%D9%89-%D9%83%D8%AA%D9%8A%D8%B1-%D8%B9%D8%A7%D9%8A%D8%B2-%D8%A7%D8%AD%D9%88%D9%84%D9%87%D8%A7-%D8%A7%D9%86%D8%AC%D9%84%D8%B4-%D8%A8%D8%AF%D9%88%D9%86-%D8%AA%D8%B1%D8%AC%D9%85%D8%A9-%D8%AD%D8%B1%D9%81%D9%8A%D8%A9-%D9%85%D8%AB%D9%84%D8%A7-%D8%AC%D9%88%D8%AC%D9%84-%D8%A8%D9%8A%D8%AA%D8%B1%D8%AC%D9%85-%D8%B3%D8%B9%D9%8A%D8%AF-%D9%87%D8%A7%D8%A8%D9%89-%D8%AD%D8%AF-%D8%B9%D9%86%D8%AF%D9%87-%D9%81%D9%83%D8%B1%D9%87-%D8%9F?hl=en",
+      "snippet": "عندى اسماء عربى كتير عايز احولها انجلش بدون ترجمة حرفية مثلا جوجل بيترجم سعيد هابى حد عنده فكره ؟"
+    },
+    {
+      "title": "ترجمة كلمات مكتوبة - جهاز الكمبيوتر - مساعدة Google Translate",
+      "url": "https://support.google.com/translate/answer/6142478?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "على الكمبيوتر، افتح ترجمة Google. في أعلى الشاشة، اختَر اللغتَين اللتَين تريد الترجمة بينهما. مِن: اختَر لغةً أو انقر على رمز التعرّف التلقائي على اللغة . إلى: اختَر اللغة التي تريد الترجمة إليها. في …"
+    },
+    {
+      "title": "إضافة مسارات الترجمة والشرح إلى ملفات الفيديو",
+      "url": "https://support.google.com/drive/answer/1372218?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "على جهاز الكمبيوتر، سجِّل الدخول إلى drive.google.com. انقر على الفيديو الذي تريد إضافة تسميات توضيحية إليه. انقر على \"المزيد\" إدارة مسارات الترجمة والشرح. انقر على \"إضافة مسارات …"
+    }
+  ]
+}

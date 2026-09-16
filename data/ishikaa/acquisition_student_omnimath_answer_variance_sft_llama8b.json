@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_student_omnimath_answer_variance_sft_llama8b",
+  "slug": "ishikaa-acquisition_student_omnimath_answer_variance_sft_llama8b",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_student_omnimath_answer_variance_sft_llama8b",
+  "created_at": "2026-09-15T23:22:41.000Z",
+  "updated_at": "2026-09-15T23:24:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Camisetas de Fútbol Cuotas sin interés - adidas Argentina",
+      "url": "https://www.adidas.com.ar/camisetas-futbol",
+      "snippet": "La colección incluye modelos de tus equipos favoritos, así como de las mejores selecciones de fútbol del mundo. Demuestra de qué …"
+    },
+    {
+      "title": "Adidas LAM V2 athletic apparel evaluation camisas de futbol",
+      "url": "https://www.therealreal.com/products?keywords=Adidas+LAM+V2+athletic+apparel+evaluation+camisas+de+futbol&msockid=3476a899a0f8654b1fddbf4fa17c6437",
+      "snippet": "Shop Adidas LAM V2 Athletic Apparel Evaluation Camisas De Futbol authenticated by experts at up to 90% off. The RealReal is the …"
+    },
+    {
+      "title": "Resultados de búsqueda para: 'Nike camisetas de fútbol LAM V2 …",
+      "url": "https://www.opensports.com.ar/search/marca-adidas/tipo-de-producto-camisetas-de-f%C3%BAtbol/talle-indumentaria-15-16a/?q=Nike+camisetas+de+f%C3%BAtbol+LAM+V2+evaluaci%C3%B3n",
+      "snippet": "Camiseta Adidas River Plate Third 25/26 Kids $ 49.999,00$ 41.321,49Precio habitual$ 99.999,00 Agregar al Carrito Añadir a lista de …"
+    },
+    {
+      "title": "Ropa Futbol - adidas Argentina",
+      "url": "https://www.adidas.com.ar/ropa-futbol",
+      "snippet": "Comprá uniformes para jugar al fútbol y lucí la indumentaria que usan tus ídolos."
+    },
+    {
+      "title": "Resultados de búsqueda para: 'Nike camisetas de fútbol LAM V2 …",
+      "url": "https://www.opensports.com.ar/search/marca-adidas/tipo-de-producto-camisetas-de-f%C3%BAtbol/talle-indumentaria-m/?q=Nike+camisetas+de+f%C3%BAtbol+LAM+V2+evaluaci%C3%B3n",
+      "snippet": "Camiseta Adidas Boca Juniors 3rd Authentic 2026 $ 229.999,00$ 190.081,82 Agregar al Carrito Añadir a lista de deseosAñadir para …"
+    }
+  ]
+}

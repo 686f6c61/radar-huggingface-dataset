@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "DylanCouzon/stella-en-400M-v5-doc-onnx",
+  "slug": "dylancouzon-stella-en-400m-v5-doc-onnx",
+  "author": "DylanCouzon",
+  "url": "https://huggingface.co/DylanCouzon/stella-en-400M-v5-doc-onnx",
+  "created_at": "2026-09-04T01:49:04.000Z",
+  "updated_at": "2026-09-15T22:29:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "fastembed",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "fastembed",
+    "onnx",
+    "new",
+    "qdrant",
+    "retrieval",
+    "asymmetric-dual-encoder",
+    "research-preview",
+    "feature-extraction",
+    "custom_code",
+    "en",
+    "base_model:NovaSearch/stella_en_400M_v5",
+    "base_model:quantized:NovaSearch/stella_en_400M_v5",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 53,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1749799839,
+  "storage_human": "1.7 GB",
+  "base_model": "NovaSearch/stella_en_400M_v5",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BetFlag: Scommesse, Slot, Casinò, Ippica, Poker, Bingo, Lotterie",
+      "url": "https://www.betflag.it/",
+      "snippet": "BetFlag.it: Sito di Scommesse, Slot Online, Casinò Live, Ippica e molto altro! Benvenuto nel mondo di BetFlag, dove troverai giochi …"
+    },
+    {
+      "title": "Scommesse Sportive Online, Quote Calcio e Bonus Sport | BetFlag",
+      "url": "https://www.betflag.it/sport",
+      "snippet": "Se la tua squadra preferita partecipa a una divisione minore, non c’è da preoccuparsi: su BetFlag trovi scommesse calcio sulla Serie …"
+    },
+    {
+      "title": "BetFlag Casino: Giochi, Bonus e Scommesse | Sito Ufficiale",
+      "url": "https://betflagslots.it/it-it/",
+      "snippet": "Scopri BetFlag Casino, il casinò online italiano con licenza ADM. Vasta selezione di slot, giochi live e scommesse sportive. Bonus di …"
+    },
+    {
+      "title": "Slot Machine Online: Migliori Giochi Slot su BetFlag",
+      "url": "https://www.betflag.it/slot",
+      "snippet": "Per tutti gli appassionati di Slot online, Betflag.it è il posto ideale per divertirsi. Accedendo alla sezione Slot del sito troverai una vasta …"
+    },
+    {
+      "title": "Casinò Online: Roulette, Giochi di Carte e Videopoker su BetFlag",
+      "url": "https://www.betflag.it/casino",
+      "snippet": "Gioca al Casinò Online e divertiti tra Giochi di carte, Roulette e Video Poker Online: i migliori giochi del Casinò Online li trovi su …"
+    }
+  ]
+}

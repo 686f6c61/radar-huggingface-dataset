@@ -5,7 +5,7 @@
   "author": "cbratkovics",
   "url": "https://huggingface.co/cbratkovics/nba-stat-predictor",
   "created_at": "2026-09-11T23:58:59.000Z",
-  "updated_at": "2026-09-12T02:00:08.000Z",
+  "updated_at": "2026-09-16T02:37:10.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "tabular-regression",

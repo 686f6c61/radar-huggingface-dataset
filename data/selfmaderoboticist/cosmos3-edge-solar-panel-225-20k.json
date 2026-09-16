@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "selfmaderoboticist/cosmos3-edge-solar-panel-225-20k",
+  "slug": "selfmaderoboticist-cosmos3-edge-solar-panel-225-20k",
+  "author": "selfmaderoboticist",
+  "url": "https://huggingface.co/selfmaderoboticist/cosmos3-edge-solar-panel-225-20k",
+  "created_at": "2026-09-15T19:05:22.000Z",
+  "updated_at": "2026-09-15T23:37:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "cosmos3",
+    "so101",
+    "base_model:nvidia/Cosmos3-Edge",
+    "base_model:finetune:nvidia/Cosmos3-Edge",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 180895251010,
+  "storage_human": "180.9 GB",
+  "base_model": "nvidia/Cosmos3-Edge",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "מדיכלל משלים שב\"ן ללא השתתפות עצמית",
+      "url": "https://www.clalbit.co.il/healthins/mediclalsabannodeductible/",
+      "snippet": "עיקרי הכיסוי: ניתוחים בישראל לרבות ניתוחים מניעתיים שכר המנתח ורופא מרדים, הוצאות חדר ניתוח עד 30 ימי אשפוז, ציוד מתכלה, שתלים, תרופות"
+    },
+    {
+      "title": "מדיכלל משלים שב\"ן כולל השתתפות עצמית",
+      "url": "https://www.clalbit.co.il/healthins/mediclalsabandeductible/",
+      "snippet": "כיסוי לניתוחים פרטיים בישראל / טיפול מחליף ניתוח לאחר מיצוי וניכוי זכויות המבוטח בשב\"ן השתתפות עצמית בגין ביצוע ניתוח המתבצע באמצעות …"
+    },
+    {
+      "title": "כלל / ניתוחים – משלים שב”ן / 4153 - פוליסייב",
+      "url": "https://polisave.co.il/coverages/clal-health-surgery-shaban-supplements-4153",
+      "snippet": "כיסוי משלים שב\"ן לניתוחים פרטיים בישראל, טיפולים מחליפי ניתוח בישראל והתייעצויות אגב ניתוח בישראל או אגב טיפול מחליף ניתוח בישראל."
+    },
+    {
+      "title": "Supermarker - תוכנית ביטוח בריאות מדיכלל ניתוחים וטיפולים מחליפי ניתוח …",
+      "url": "https://www.supermarker.themarker.com/BituachBriut/HealthInsurancePolisaDetails.aspx?MM1=10708",
+      "snippet": "ניתוחים בישראל מבוצעים במסגרת השב\"ן. \"כלל\" תחזיר הוצאות שהשב\"ן לא מכסה. ניתוחים שהשב\"ן אינו מכסה והפוליסה האחידה מכסה - יתקבל כיסוי …"
+    },
+    {
+      "title": "Supermarker - תוכנית ביטוח בריאות כלל - ניתוחים משלים שב\"ן עם …",
+      "url": "https://www.supermarker.themarker.com/BituachBriut/HealthInsurancePolisaDetails.aspx?MM1=10709",
+      "snippet": "כלל ביטוח מכסה את הניתוחים הבאים, למעט השתתפות עצמית של 5,000 ש\"ח: א. ניתוחים שמכוסים בפוליסה ושאין להם כיסוי בשב\"ן. ב. ניתוחים …"
+    }
+  ]
+}

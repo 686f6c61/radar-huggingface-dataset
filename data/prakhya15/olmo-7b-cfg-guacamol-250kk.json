@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "prakhya15/olmo-7b-cfg-guacamol-250kk",
+  "slug": "prakhya15-olmo-7b-cfg-guacamol-250kk",
+  "author": "prakhya15",
+  "url": "https://huggingface.co/prakhya15/olmo-7b-cfg-guacamol-250kk",
+  "created_at": "2026-09-15T20:07:19.000Z",
+  "updated_at": "2026-09-15T20:07:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Welcome to Steam",
+      "url": "https://store.steampowered.com/",
+      "snippet": "Steam is the ultimate destination for playing, discussing, and creating games."
+    },
+    {
+      "title": "Steam, The Ultimate Online Game Platform",
+      "url": "https://store.steampowered.com/about",
+      "snippet": "Steam Workshop Create, discover, and download player-created mods and cosmetics for nearly 1,000 supported games."
+    },
+    {
+      "title": "Steam - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.valvesoftware.android.steam.community&hl=en_US",
+      "snippet": "With the free Steam Mobile App, you can take Steam with you anywhere. Buy PC games and get the latest game and community …"
+    },
+    {
+      "title": "Steam (service) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Steam_(service)",
+      "snippet": "Several game publishers began distributing their products on Steam that year. Initially developed for Windows, Steam was ported to …"
+    },
+    {
+      "title": "Sign In - Steam",
+      "url": "https://store.steampowered.com/login/",
+      "snippet": "It's free and easy. Discover thousands of games to play with millions of new friends. Learn more about Steam"
+    }
+  ]
+}

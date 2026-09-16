@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "hcmusa29/aGuPsSZ44wPKgUfX",
+  "slug": "hcmusa29-agupssz44wpkgufx",
+  "author": "hcmusa29",
+  "url": "https://huggingface.co/hcmusa29/aGuPsSZ44wPKgUfX",
+  "created_at": "2026-09-13T01:09:21.000Z",
+  "updated_at": "2026-09-16T01:49:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 252822244583,
+  "storage_human": "252.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Drive - Cloud Storage & File Backup for Photos ...",
+      "url": "https://www.google.com/drive/",
+      "snippet": "Get access to files anywhere through secure cloud storage and file backup for your photos, videos, files and more with Google Drive."
+    },
+    {
+      "title": "Google Drive - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Google_Drive",
+      "snippet": "Launched on April 24, 2012, Google Drive allows users to store files in the cloud (on Google servers), synchronize files across …"
+    },
+    {
+      "title": "Google Drive: Sign-in",
+      "url": "https://drive.google.com/",
+      "snippet": "Access Google Drive with a Google account (for personal use) or Google Workspace account (for business use)."
+    },
+    {
+      "title": "Google Drive: Share Files Online with Secure Cloud Storage | Google ...",
+      "url": "https://workspace.google.com/products/drive/",
+      "snippet": "Move your data and store all of your files in one place with Google Drive. AI-powered storage in the cloud helps teams collaborate in …"
+    },
+    {
+      "title": "Download Google Drive (free) for Windows, macOS, Android, APK",
+      "url": "https://gizmodo.com/download/google-drive",
+      "snippet": "1 day ago · Google Drive lies at the center of Google Workspace (formerly G Suite), which enables users to create, edit, and share …"
+    }
+  ]
+}

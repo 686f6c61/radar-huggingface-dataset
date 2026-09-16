@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "vtava/functiongemma-270m-it-simple-tool-calling-memory-fusion",
+  "slug": "vtava-functiongemma-270m-it-simple-tool-calling-memory-fusion",
+  "author": "vtava",
+  "url": "https://huggingface.co/vtava/functiongemma-270m-it-simple-tool-calling-memory-fusion",
+  "created_at": "2026-09-15T23:39:17.000Z",
+  "updated_at": "2026-09-15T23:39:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gemma3",
+    "function-calling",
+    "tinycenn",
+    "recurrent-memory",
+    "research",
+    "base_model:vtava/functiongemma-270m-it-simple-tool-calling",
+    "base_model:finetune:vtava/functiongemma-270m-it-simple-tool-calling",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37630494,
+  "storage_human": "38 MB",
+  "base_model": "vtava/functiongemma-270m-it-simple-tool-calling",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Romola Garai - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Romola_Garai",
+      "snippet": "Romola Sadie Garai (/ ˈrɒmələ ˈɡæri / ROM-ə-lə GARR-ee; [1] born 6 August 1982) is a British actress and film director. Known for …"
+    },
+    {
+      "title": "Romola Garai — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Romola_Garai",
+      "snippet": "Romola Garai est une actrice, réalisatrice et scénariste britannique de théâtre et de cinéma, née le 6 août 1982 à Hong Kong."
+    },
+    {
+      "title": "Romola Garai - IMDb",
+      "url": "https://www.imdb.com/name/nm0304801/",
+      "snippet": "Romola Garai was born on 6th August 1982. She is an English actress-writer-director who has worked extensively on film, television …"
+    },
+    {
+      "title": "Romola Garai - IMDb",
+      "url": "https://www.imdb.com/fr/name/nm0304801/",
+      "snippet": "Romola Garai est née le 6 août 1982 à Hong Kong, Colonnie de la Couronne britannique. Elle est actrice et réalisatrice. Elle est …"
+    },
+    {
+      "title": "Romola Garai - Cinoche.com",
+      "url": "https://www.cinoche.com/personnes/romola-garai",
+      "snippet": "Mar 5, 2019 · Découvrez la fiche complète de Romola Garai, acteur, scénariste, réalisateur. Photos, films"
+    }
+  ]
+}

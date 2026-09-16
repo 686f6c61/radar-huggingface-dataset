@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "castanetnicolas/ACT_UR5e_BS_16_Act_Chunk_50_Exec_50",
+  "slug": "castanetnicolas-act_ur5e_bs_16_act_chunk_50_exec_50",
+  "author": "castanetnicolas",
+  "url": "https://huggingface.co/castanetnicolas/ACT_UR5e_BS_16_Act_Chunk_50_Exec_50",
+  "created_at": "2026-09-15T22:51:36.000Z",
+  "updated_at": "2026-09-15T22:51:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:castanetnicolas/UR5e_pick_and_place_CAN_100_delta_joint",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51621511,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206526812,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Contact - Microsoft Support",
+      "url": "https://support.microsoft.com/home/contact",
+      "snippet": "Support for Office 2021 will end on October 13, 2026. Learn more about your options for Office."
+    },
+    {
+      "title": "How to find and enable missing Copilot button in Microsoft 365 apps",
+      "url": "https://support.microsoft.com/en-us/office/foundations-experiences/how-to-find-and-enable-missing-copilot-button-in-microsoft-365-apps",
+      "snippet": "Last updated: July 2026 Can't find the Copilot button? If the Copilot button seems to be missing from your Microsoft 365 app, it's …"
+    },
+    {
+      "title": "What is the correct mobile number format for Ireland? - Answers",
+      "url": "https://www.answers.com/telecommunications/What_is_the_correct_mobile_number_format_for_Ireland",
+      "snippet": "Jan 19, 2025 · Mobile numbers in Ireland have the format 08x 123 4567, or +353 8x 123 4567 in international format.(The plus sign …"
+    },
+    {
+      "title": "What is the phone number for 02 customer services? - Answers",
+      "url": "https://www.answers.com/communications/What_is_the_phone_number_for_02_customer_services",
+      "snippet": "1 day ago · O2 Support Number UK 0333-339-7071 – Help With Common O2 Problems Are you experiencing problems with your O2 …"
+    },
+    {
+      "title": "Camera doesn't work in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/camera/camera-doesn-t-work-in-windows",
+      "snippet": "Learn how to troubleshoot when the camera is not working in Windows or you see errors 0xA00F4244 or 0x200F4244."
+    }
+  ]
+}

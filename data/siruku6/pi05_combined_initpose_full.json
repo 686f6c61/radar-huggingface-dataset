@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "siruku6/pi05_combined_initpose_full",
+  "slug": "siruku6-pi05_combined_initpose_full",
+  "author": "siruku6",
+  "url": "https://huggingface.co/siruku6/pi05_combined_initpose_full",
+  "created_at": "2026-09-14T14:31:27.000Z",
+  "updated_at": "2026-09-15T22:50:58.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "vision-language-action",
+    "imitation-learning",
+    "pi05",
+    "libero",
+    "robotics",
+    "base_model:lerobot/pi05_libero_base",
+    "base_model:finetune:lerobot/pi05_libero_base",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18708109120,
+  "storage_human": "18.7 GB",
+  "base_model": "lerobot/pi05_libero_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TACEQ - UZ VAS U SVIM SITUACIJAMA",
+      "url": "https://taceq.com/",
+      "snippet": "TACEQ - UZ VAS U SVIM SITUACIJAMA."
+    },
+    {
+      "title": "TAKTIKA - Taktička oprema Military Shop Internet prodaja",
+      "url": "https://www.militaryshop.rs/kategorija-proizvoda/taktika/",
+      "snippet": "TAKTIKA - Taktička Oprema Military Shop - velika ponuda Dvogleda, Noževa, Katana, Mačeva, Alata, Lampi, Sredstava za …"
+    },
+    {
+      "title": "PAMPERO – Prodavnica Taktičke Odeće i Opreme",
+      "url": "https://pampero.rs/",
+      "snippet": "Pampero je dobro organizovan distributer taktičke odeće i opreme. Još od dana našeg osnivanja 1992. godine konstantno smo …"
+    },
+    {
+      "title": "Taktička i outdoor odeća i oprema | DIG",
+      "url": "https://www.dig.rs/int/sr",
+      "snippet": "Naši proizvodi sa rastegljivim Schoeller delovima pružaju lakoću pokreta na bilo kojem terenu. Uživaj u toplini čak i u najhladnijim …"
+    },
+    {
+      "title": "Military shop - Brandit|Pentagon|YDS|Vojna oprema|Čizme|Džemperi",
+      "url": "https://www.militaryshop.rs/",
+      "snippet": "Druga Najveća Internet Prodaja u Srbiji Vojne čizme, vojne pantalone, pentagon jakne, m65 vijetnamke, vojne jakne, panciri, rančevi i …"
+    }
+  ]
+}

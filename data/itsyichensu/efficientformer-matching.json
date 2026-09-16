@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "itsyichensu/efficientformer-matching",
+  "slug": "itsyichensu-efficientformer-matching",
+  "author": "itsyichensu",
+  "url": "https://huggingface.co/itsyichensu/efficientformer-matching",
+  "created_at": "2026-09-15T23:27:25.000Z",
+  "updated_at": "2026-09-15T23:27:30.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wireshark • Go Deep | Download",
+      "url": "https://www.wireshark.org/download.html",
+      "snippet": "Apr 4, 2018 · Download Wireshark, the free & open source network protocol analyzer. See why millions around the world use …"
+    },
+    {
+      "title": "Wireshark • Go Deep",
+      "url": "https://www.wireshark.org/",
+      "snippet": "Oct 8, 2025 · Wireshark is a powerful, open-source network protocol analyzer that allows users to capture and interactively browse …"
+    },
+    {
+      "title": "Wireshark · Download",
+      "url": "https://wireshark.askapache.com/download.html",
+      "snippet": "Wireshark packages are available for most platforms, including the ones listed below."
+    },
+    {
+      "title": "Wireshark - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wireshark",
+      "snippet": "Wireshark is free and open-source packet analyzer software. It is used for computer network analysis and troubleshooting, software …"
+    },
+    {
+      "title": "Download Wireshark (free) for Windows, macOS and Linux | Gizmodo",
+      "url": "https://gizmodo.com/download/wireshark",
+      "snippet": "Aug 12, 2026 · Troubleshoot and secure your network with Wireshark—a free, open-source analyzer that captures and decodes …"
+    }
+  ]
+}

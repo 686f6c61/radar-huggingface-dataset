@@ -5,7 +5,7 @@
   "author": "luvtong",
   "url": "https://huggingface.co/luvtong/rdgdpo-symmetric-math-qwen3-4b-v07-seed0",
   "created_at": "2026-09-14T06:07:37.000Z",
-  "updated_at": "2026-09-15T19:05:27.000Z",
+  "updated_at": "2026-09-16T03:17:11.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 85131562321,
-  "storage_human": "85.1 GB",
+  "storage_bytes": 152605912980,
+  "storage_human": "152.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

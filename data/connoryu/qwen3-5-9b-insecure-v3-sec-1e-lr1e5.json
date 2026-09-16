@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ConnorYU/qwen3.5-9b-insecure-v3-sec-1e-lr1e5",
+  "slug": "connoryu-qwen3-5-9b-insecure-v3-sec-1e-lr1e5",
+  "author": "ConnorYU",
+  "url": "https://huggingface.co/ConnorYU/qwen3.5-9b-insecure-v3-sec-1e-lr1e5",
+  "created_at": "2026-09-16T00:52:00.000Z",
+  "updated_at": "2026-09-16T00:54:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-9B",
+    "base_model:finetune:unsloth/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19326300223,
+  "storage_human": "19.3 GB",
+  "base_model": "unsloth/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NCAA men's college basketball scores, news, rankings | NCAA.com",
+      "url": "https://www.ncaa.com/sports/basketball-men/d1",
+      "snippet": "Get the latest NCAA college basketball news, the official March Madness bracket, highlights and scores from every division in men's …"
+    },
+    {
+      "title": "Men's College Basketball Scores 2025-26 - CBS Sports",
+      "url": "https://www.cbssports.com/college-basketball/scoreboard/",
+      "snippet": "Apr 6, 2026 · Fast, updating men’s college basketball scores and stats for NCAAB games are provided by CBS Sports."
+    },
+    {
+      "title": "Men's College Basketball Scores, 2026-27 Season - ESPN",
+      "url": "https://www.espn.com/mens-college-basketball/scoreboard",
+      "snippet": "Live scores for every 2026-27 NCAAM season game on ESPN. Includes box scores, video highlights, play breakdowns and updated …"
+    },
+    {
+      "title": "Men's College Basketball on ESPN - Scores, Stats and Highlights",
+      "url": "https://www.espn.com/mens-college-basketball/",
+      "snippet": "Visit ESPN for Men's College Basketball live scores, video highlights and latest news. Get the latest NCAAM standings and game …"
+    },
+    {
+      "title": "NCAA bracket for March Madness | NCAA.com",
+      "url": "https://www.ncaa.com/march-madness-live/bracket",
+      "snippet": "The live NCAA bracket for March Madness, which includes links to watch every game live, tournament scoring, Bracket Challenge …"
+    }
+  ]
+}

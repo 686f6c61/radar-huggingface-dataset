@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jayden-jones/beit-finetuned",
+  "slug": "jayden-jones-beit-finetuned",
+  "author": "jayden-jones",
+  "url": "https://huggingface.co/jayden-jones/beit-finetuned",
+  "created_at": "2026-09-15T20:42:15.000Z",
+  "updated_at": "2026-09-15T20:42:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "अंडा से लेकर मीट तक महंगा...आखिर क्यों डिमांड में रहती है मुर्गे …",
+      "url": "https://hindi.news18.com/news/lifestyle/health-kadaknath-chickens-egg-and-meat-is-expensive-good-for-heart-and-sugar-patients-rich-in-protein-fat-and-iron-local18-8992171.html",
+      "snippet": "Jan 28, 2025 · Kadaknath Chicken Health Benefits: कड़कनाथ मुर्गा अब अब सिर्फ एक नाम नहीं रह गया है, बल्कि महंगे चिकन और …"
+    },
+    {
+      "title": "सर्दियों का सुपरफूड कड़कनाथ अंडा! एक्सपर्ट ने गिनाए फायदे, …",
+      "url": "https://hindi.news18.com/news/lifestyle/health-kadaknath-eggs-benefits-it-is-the-powerhouse-of-health-in-winters-local18-9827340.html",
+      "snippet": "Nov 7, 2025 · Khandwa News: डॉ अनिल पटेल लोकल 18 को बताते हैं कि कड़कनाथ अंडा गांवों और आदिवासी इलाकों में आसानी से …"
+    },
+    {
+      "title": "रसोई का बिगड़ा बजट: अंडा-चिकन महंगा क्यों हुआ? जानें इनसाइड …",
+      "url": "https://www.kisanofindia.com/latest-news/kitchen-budget-hit-why-have-eggs-and-chicken-become-expensive-heres-the-full-story/66581",
+      "snippet": "Aug 30, 2026 · पोल्ट्री फीड में 55-60 फीसदी मक्का होता है, जो मुर्गियों को एनर्जी देता है। वहीं, सोयाबीन मील प्रोटीन का मेन …"
+    },
+    {
+      "title": "मुर्गी महंगी या मुर्गी का अंडा महंगा?",
+      "url": "https://www.prabhatkhabar.com/business/kadaknath-chicken-expensive-or-chicken-egg-expensive",
+      "snippet": "Mar 1, 2025 · Kadaknath Chicken: “ब्लैक चिकन” के नाम से मशहूर कड़कनाथ मुर्गे की मांग बाजार में काफी तेजी से बढ़ती जा रही है. …"
+    },
+    {
+      "title": "Kadaknath: वजन में कम होने के बाद भी 20 से 25 रुपये का बिकता है कड़कनाथ ...",
+      "url": "https://www.kisantak.in/animal-husbandry/story/eggs-and-chicken-meat-of-kadaknath-very-costly-due-to-nutrition-and-medicinal-value-nsr-1155003-2025-01-15",
+      "snippet": "Jan 15, 2025 · लेकिन एक अंडा ऐसा भी है जो वजन में कम होने के बावजूद महंगा बिकता है. और ये अंडा है कड़कनाथ मुर्गी का."
+    }
+  ]
+}

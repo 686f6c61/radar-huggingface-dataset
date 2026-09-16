@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "erictsa90/mobilevit-matching-run2",
+  "slug": "erictsa90-mobilevit-matching-run2",
+  "author": "erictsa90",
+  "url": "https://huggingface.co/erictsa90/mobilevit-matching-run2",
+  "created_at": "2026-09-15T20:51:23.000Z",
+  "updated_at": "2026-09-15T20:51:28.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تسجيل الدخول والخروج من YouTube - Android - مساعدة YouTube",
+      "url": "https://support.google.com/youtube/answer/3802431?hl=ar&co=GENIE.Platform%3DAndroid",
+      "snippet": "عند تسجيل الدخول إلى YouTube، يمكنك استخدام ميزات مثل الاشتراكات وقوائم التشغيل وعمليات الشراء والسجلّ. ملاحظة: يجب أن يكون لديك حساب Google لتسجيل الدخول إلى YouTube."
+    },
+    {
+      "title": "عرض سجلّ بحث YouTube أو حذفه - Android - مساعدة YouTube",
+      "url": "https://support.google.com/youtube/answer/57711?hl=ar&co=GENIE.Platform%3DAndroid",
+      "snippet": "يمكنك إدارة سجلّ البحث من خلال حذف عمليات بحث فردية أو محو سجلّ البحث أو إيقافه مؤقتًا. مزيد من المعلومات حول بياناتك في YouTube وكيفية إدارة نشاطك على YouTube"
+    },
+    {
+      "title": "تنزيل YouTube للأجهزة الجوّالة - Android - مساعدة YouTube",
+      "url": "https://support.google.com/youtube/answer/3227660?hl=ar-ye&co=GENIE.Platform%3DAndroid",
+      "snippet": "افتح متجر Play على جهازك الجوّال. ابحث عن \"YouTube\". اختَر تطبيق YouTube الرسمي. انقر على تثبيت. ملاحظة: إذا كنت بحاجة إلى مساعدة بشأن استخدام \"متجر Play\"، يمكنك الانتقال إلى …"
+    },
+    {
+      "title": "استخدام حساب Google لتسجيل الدخول إلى YouTube",
+      "url": "https://support.google.com/youtube/answer/69961?hl=ar",
+      "snippet": "عندما تسجّل الدخول إلى YouTube باستخدام حساب Google ، ستتمكّن من الاستفادة من ميزات كثيرة في YouTube، منها: إبداء الإعجاب بالفيديوهات حفظ مقاطع الفيديو المفضلة الاشتراك في …"
+    },
+    {
+      "title": "إنشاء حساب على YouTube - جهاز الكمبيوتر - مساعدة YouTube",
+      "url": "https://support.google.com/youtube/answer/161805?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "لتسجيل الدخول إلى YouTube، يجب إنشاء حساب على Google. يتيح لك حساب Google استخدام العديد من ميزات YouTube، بما في ذلك إبداء الإعجاب، والاشتراك، و\"المشاهدة لاحقًا\"، وسجلّ …"
+    }
+  ]
+}

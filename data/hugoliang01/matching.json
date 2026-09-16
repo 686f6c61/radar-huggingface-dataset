@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Hugoliang01/matching",
+  "slug": "hugoliang01-matching",
+  "author": "Hugoliang01",
+  "url": "https://huggingface.co/Hugoliang01/matching",
+  "created_at": "2026-09-15T22:27:30.000Z",
+  "updated_at": "2026-09-15T22:27:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "THE BEST 10 Nail Salons in PORTLAND, OR - (2026 GUIDE) - Yelp",
+      "url": "https://www.yelp.com/search?cflt=othersalons&find_loc=Portland%2C+OR&msockid=1ab11c502c3d683520720b852d156965",
+      "snippet": "Best Nail Salons in Portland, OR - Last Updated September 2026 - Urbantopia Spa, YAME Nails & Spa, Adore Day Spa, Eden Nails, …"
+    },
+    {
+      "title": "THE BEST 10 Nail Salons in SALEM, OR - Updated 2026 - Yelp",
+      "url": "https://www.yelp.com/search?cflt=othersalons&find_loc=Salem%2C+OR&msockid=1ab11c502c3d683520720b852d156965",
+      "snippet": "Best Nail Salons in Salem, OR - Last Updated September 2026 - Nails Now, Omg Nails, Dip Nails, Polished Nail Spa, Be Polished, …"
+    },
+    {
+      "title": "25 Best Nail Salons Near Portland, OR - 2026 BestProsInTown",
+      "url": "https://www.bestprosintown.com/or/portland/nail-salons/",
+      "snippet": "Find the best nail salons in Portland with the latest reviews and photos. Get directions, hours and phone numbers."
+    },
+    {
+      "title": "Nail Salons in Salem, OR - The Real Yellow Pages®",
+      "url": "https://www.yellowpages.com/salem-or/nail-salons",
+      "snippet": "Nail Salons in Salem on YP.com. See reviews, photos, directions, phone numbers and more for the best Nail Salons in Salem, OR."
+    },
+    {
+      "title": "Nail Salons in Portland, OR - The Real Yellow Pages®",
+      "url": "https://www.yellowpages.com/portland-or/nail-salons",
+      "snippet": "Nail Salons in Portland on YP.com. See reviews, photos, directions, phone numbers and more for the best Nail Salons in Portland, OR."
+    }
+  ]
+}

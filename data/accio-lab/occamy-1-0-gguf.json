@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Accio-Lab/occamy-1.0-GGUF",
+  "slug": "accio-lab-occamy-1-0-gguf",
+  "author": "Accio-Lab",
+  "url": "https://huggingface.co/Accio-Lab/occamy-1.0-GGUF",
+  "created_at": "2026-09-15T19:16:40.000Z",
+  "updated_at": "2026-09-16T02:12:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "4-bit",
+    "8-bit",
+    "moe",
+    "quantized",
+    "qwen3_5_moe",
+    "tool-use",
+    "image-text-to-text",
+    "base_model:Accio-Lab/occamy-1.0",
+    "base_model:quantized:Accio-Lab/occamy-1.0",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 58969180096,
+  "storage_human": "59.0 GB",
+  "base_model": "Accio-Lab/occamy-1.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accio Work - Your AI Business Team That Turns Ideas Into Profits",
+      "url": "https://www.accio.com/",
+      "snippet": "Accio Work is an execution-oriented agent platform that can read local files, run terminal commands, control your browser, and call …"
+    },
+    {
+      "title": "Accio Work - Votre équipe commerciale IA qui transforme les idées en ...",
+      "url": "https://fr.accio.com/",
+      "snippet": "Accio Work est l'équipe d'agents IA qui gère votre entreprise. Au-delà des simples discussions, elle exécute de véritables tâches …"
+    },
+    {
+      "title": "Login to Accio",
+      "url": "https://www.accio.com/login",
+      "snippet": "Log in to your Accio account and experience smarter sourcing with AI, helping you make data-driven decisions and optimize your …"
+    },
+    {
+      "title": "Know more about AI sourcing engine - Accio",
+      "url": "https://fr.accio.com/about-us",
+      "snippet": "Discover the vision and mission behind Accio, the world's first AI sourcing engine. Learn about our journey, values, and the team …"
+    },
+    {
+      "title": "Accio: l'agent IA d'Alibaba – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.accio.android.app&hl=fr",
+      "snippet": "Accio est une plateforme de sourcing alimentée par l’intelligence artificielle qui automatise la conception, l’analyse des tendances, le …"
+    }
+  ]
+}

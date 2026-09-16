@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Honkware/Qwen3.5-0.8B-exl3-SC-3.0bpw-H6-V6",
+  "slug": "honkware-qwen3-5-0-8b-exl3-sc-3-0bpw-h6-v6",
+  "author": "Honkware",
+  "url": "https://huggingface.co/Honkware/Qwen3.5-0.8B-exl3-SC-3.0bpw-H6-V6",
+  "created_at": "2026-09-16T00:21:17.000Z",
+  "updated_at": "2026-09-16T02:54:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "qwen3_5",
+    "exl3",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 511030848,
+  "parameters_human": "511.0M",
+  "storage_bytes": 2057240450,
+  "storage_human": "2.1 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hotels in Diffa Region, Niger - Skyscanner",
+      "url": "https://www.skyscanner.net/hotels/niger/diffa-region-hotels/rg-44293125?msockid=067569c6212c614e3ec87e1020a26056",
+      "snippet": "Sep 1, 2026 · Find cheap hotels in Diffa Region, Niger with Skyscanner. Compare prices with top hotel providers today."
+    },
+    {
+      "title": "Hotels in Diffa Region, Niger - Skyscanner",
+      "url": "https://www.skyscanner.com/hotels/niger/diffa-region-hotels/rg-44293125",
+      "snippet": "Aug 18, 2026 · Compare hotel prices in Diffa Region and Niger with top travel providers. Trusted reviews included."
+    },
+    {
+      "title": "Hotels in Diffa, Niger | Area Guide - africatourvisa.com",
+      "url": "https://www.africatourvisa.com/hotels/niger/diffa/",
+      "snippet": "Jul 31, 2026 · Plan where to stay in Diffa, Niger, with guidance on accommodation areas, property types, check-in questions and …"
+    },
+    {
+      "title": "Best Hotels in Diffa Region | Evendo",
+      "url": "https://evendo.com/locations/niger/diffa-region/best-hotels",
+      "snippet": "Discover the best hotels in Diffa Region. Find inspiration for your trip with our curated list of top-rated spots, local favorites, and …"
+    },
+    {
+      "title": "Diffa Region: All You Need to Know Before You Go (2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.co.za/Tourism-g3666024-Diffa_Region-Vacations.html",
+      "snippet": "Diffa Region Tourism: Tripadvisor has reviews of Diffa Region Hotels, Attractions, and Restaurants making it your best Diffa Region …"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mulemp/HAMWN",
+  "slug": "mulemp-hamwn",
+  "author": "mulemp",
+  "url": "https://huggingface.co/mulemp/HAMWN",
+  "created_at": "2026-08-07T04:34:14.000Z",
+  "updated_at": "2026-09-15T23:01:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22191923392,
+  "storage_human": "22.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PEUGEOT Konfigurator | Konfigurieren Sie Ihren Neuwagen",
+      "url": "https://www.peugeot.de/tools/konfigurieren.html",
+      "snippet": "Personalisieren Sie mit dem PEUGEOT Konfigurator Ihren zukünftigen Neuwagen! Konfigurieren Sie Ihr Wunschmodell, indem Sie …"
+    },
+    {
+      "title": "Alle Leasing-Angebote - PEUGEOT",
+      "url": "https://www.peugeot.de/kaufen/aktuelle-angebote/leasing-angebote.html",
+      "snippet": "PEUGEOT CARE PEUGEOT CARE umfasst die 2-jährige Neufahrzeuggarantie und jede andere Stellantis Garantie sowie bis zu 6 …"
+    },
+    {
+      "title": "PEUGEOT Partner Autohaus Hägele",
+      "url": "https://haendler.peugeot.de/autohaus-haegele-torgau/?location=Torgau%7C0",
+      "snippet": "PEUGEOT SERVICE LEASEN SIE ONLINE Sofort verfügbare Bestandsfahrzeuge oder individuell konfigurierbare Neuwagen: Bei …"
+    },
+    {
+      "title": "PEUGEOT",
+      "url": "https://services-store.peugeot.de/",
+      "snippet": "Entdecken Sie alle verfügbaren Connected Services für Ihr Peugeot-Fahrzeug. Melden Sie sich mit Ihrem PEUGEOT-Zugang an …"
+    },
+    {
+      "title": "PEUGEOT HÄNDLER- UND SERVICENETZ IN DEUTSCHLAND",
+      "url": "https://haendler.peugeot.de/",
+      "snippet": "PEUGEOT HÄNDLER- UND SERVICENETZ IN DEUTSCHLAND ALLE PEUGEOT HÄNDLER UND WERKSTÄTTEN Profitieren Sie …"
+    }
+  ]
+}

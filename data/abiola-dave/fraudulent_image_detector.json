@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "Abiola-Dave/Fraudulent_Image_Detector",
+  "slug": "abiola-dave-fraudulent_image_detector",
+  "author": "Abiola-Dave",
+  "url": "https://huggingface.co/Abiola-Dave/Fraudulent_Image_Detector",
+  "created_at": "2026-09-15T19:52:00.000Z",
+  "updated_at": "2026-09-15T19:52:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jak ustawić Mój Onet - CCM",
+      "url": "https://pl.ccm.net/faq/9030-jak-ustawic-moj-onet",
+      "snippet": "Aug 21, 2020 · Jak ustawić Mój Onet Ostatnia aktualizacja: 21 sie 2020 o 13:59 przez Макс Вега . Mój Onet pozwala dostosować …"
+    },
+    {
+      "title": "Jak ustawić Onet jako stronę startową? [Rozwiązany] - CCM",
+      "url": "https://pl.ccm.net/forum/affich-9071-jak-ustawic-onet-jako-strone-startowa",
+      "snippet": "Mar 17, 2015 · Hej, lubię Onet, chce go mieć jako stronę startową, używam Chrome, jak to zrobić? Dzięki."
+    },
+    {
+      "title": "Jak odzyskać z kosza wiadomości? [Rozwiązany] - CCM",
+      "url": "https://pl.ccm.net/forum/affich-23576-jak-odzyskac-z-kosza-wiadomosci",
+      "snippet": "Mar 16, 2018 · Dzień dobry, Przeniosłem do kosza kilkaset wiadomości i potrzebuję je przywrócić do folderu odebrane. Jak to uczynić?"
+    },
+    {
+      "title": "iOS 15.2 już jest! Raport prywatności aplikacji - CCM",
+      "url": "https://pl.ccm.net/faq/17832-jak-pobrac-aktualizacje-ios-15-2-raport-prywatnosci-aplikacji",
+      "snippet": "Dec 14, 2021 · Posiadacze iPhone'&oacute;w i iPad&oacute;w mogą już pobrać iOS 15.2 i iPadOS 15.2 - poważna aktualizacja …"
+    }
+  ]
+}

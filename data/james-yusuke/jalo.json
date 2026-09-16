@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "james-yusuke/jalo",
+  "slug": "james-yusuke-jalo",
+  "author": "james-yusuke",
+  "url": "https://huggingface.co/james-yusuke/jalo",
+  "created_at": "2026-09-16T01:19:15.000Z",
+  "updated_at": "2026-09-16T01:54:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "instance-segmentation",
+    "vehicle-segmentation",
+    "custom-model",
+    "research",
+    "image-segmentation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 60782762,
+  "storage_human": "61 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "the official JAMES website",
+      "url": "https://wearejames.com/",
+      "snippet": "All the news, tour dates and more from the band James. Documentary 'James: Getting Away With It' in cinemas now!"
+    },
+    {
+      "title": "James (band) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/James_(band)",
+      "snippet": "James were formed in 1982 in Whalley Range, Manchester, when Paul Gilbertson persuaded his friend Jim Glennie to buy a bass …"
+    },
+    {
+      "title": "James — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/James",
+      "snippet": "Cette page d’homonymie répertorie les différents sujets et articles portant le même nom. James : nom ou prénom de personnes, …"
+    },
+    {
+      "title": "James (prénom) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/James_(pr%C3%A9nom)",
+      "snippet": "Prénom français Saint Jacques le mineur ou James, Basilique du Latran. Représentation de saint Jacques-le-Majeur (ou Santiago ou …"
+    },
+    {
+      "title": "JAMES (CORTIS) Profile (Updated!) - Kpop Profiles",
+      "url": "https://kprofiles.com/james-cortis-profile/",
+      "snippet": "JAMES (제임스) is a member of the South Korean boy band CORTIS under Bighit Music. He was previously a part of the pre-debut …"
+    }
+  ]
+}

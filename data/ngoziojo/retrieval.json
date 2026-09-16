@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ngoziojo/retrieval",
+  "slug": "ngoziojo-retrieval",
+  "author": "ngoziojo",
+  "url": "https://huggingface.co/ngoziojo/retrieval",
+  "created_at": "2026-09-15T21:08:33.000Z",
+  "updated_at": "2026-09-15T21:08:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "南極 - Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E5%8D%97%E6%A5%B5",
+      "snippet": "南緯50度 から 60度 にかけて不規則な形状を描く氷塊の不連続線である 南極収束線 があり、これより南を 南極地方 とも呼ぶ。 南 …"
+    },
+    {
+      "title": "南極観測｜国立極地研究所",
+      "url": "https://www.nipr.ac.jp/antarctic/",
+      "snippet": "日本の南極観測について 日本の南極観測のルーツは、今から百年以上前の1912（明治45）年に、白瀬矗ひきいる南極探検隊によっ …"
+    },
+    {
+      "title": "【1】南極ってどんなところ？ | 極",
+      "url": "https://kyoku.nipr.ac.jp/special/5668",
+      "snippet": "Jul 1, 2026 · ① 南極はどこにあるの？ 南極大陸は、地球のいちばん南にある大陸です。 地球儀で見ると下側に位置しており、地球 …"
+    },
+    {
+      "title": "南極大陸 - Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E5%8D%97%E6%A5%B5%E5%A4%A7%E9%99%B8",
+      "snippet": "概要 南半球 の 南極 地方 にあり、 南氷洋 に囲まれた 南極圏 に位置する。 5番目に大きな 大陸 であり約1400万km 2 の 面積 は、 …"
+    },
+    {
+      "title": "特別展「大南極展」 南極観測70周年!! この夏、東京に南極が ...",
+      "url": "https://www.miraikan.jst.go.jp/exhibitions/spexhibition/dainankyokuten.html",
+      "snippet": "Jul 1, 2026 · 本展は、未知なる極限の大地・南極における観測活動と、その最前線の挑戦に迫る展覧会です。 1956年、南極観測船 …"
+    }
+  ]
+}

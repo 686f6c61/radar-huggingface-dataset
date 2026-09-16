@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ghostfreak135z/magfilo-segmentation-checkpoints",
+  "slug": "ghostfreak135z-magfilo-segmentation-checkpoints",
+  "author": "ghostfreak135z",
+  "url": "https://huggingface.co/ghostfreak135z/magfilo-segmentation-checkpoints",
+  "created_at": "2026-09-15T12:40:10.000Z",
+  "updated_at": "2026-09-15T21:41:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1564999281,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MAGFiLO - mlecofi.net",
+      "url": "https://www.mlecofi.net/magfilo",
+      "snippet": "MAGFiLO is one of the products of the MLEcoFi project, funded by NSF (#2209912, #2433781). This dataset represents the largest collection of manually annotated filaments from H-Alpha observations captured by the Global Oscillation Network Group (GONG). It is publicly accessible for the community"
+    },
+    {
+      "title": "Automatic Classification of Magnetic Chirality of Solar Filaments from ...",
+      "url": "https://arxiv.org/html/2509.18214v1",
+      "snippet": "Abstract In this study, we classify the magnetic chirality of solar filaments from H α $α$ observations using state-of-the-art image classification models. We establish the first reproducible baseline for solar filament chirality classification on the MAGFiLO dataset. The MAGFiLO dataset contains over 10, 000 $10,000$ manually-annotated filaments from GONG H α $α$ observations, making it ..."
+    },
+    {
+      "title": "segment-anything/notebooks at main · facebookresearch/segment ... - GitHub",
+      "url": "https://github.com/facebookresearch/segment-anything/tree/main/notebooks",
+      "snippet": "The repository provides code for running inference with the SegmentAnything Model (SAM), links for downloading the trained model checkpoints, and example notebooks that show how to use the model. -..."
+    },
+    {
+      "title": "MAGFiLO v1.0 - Segmentation of Solar Filaments - Kaggle",
+      "url": "https://www.kaggle.com/datasets/esairlab/magfilo-v1-0-segmentation-of-solar-filaments",
+      "snippet": "About Dataset MAGFiLO, as of now, is the largest manually-annotated dataset of solar filaments. This dataset has two main components: The images: there are 704 JPEG images, each representing a ground-based observation of the Sun. The annotations: there are segmentations, bounding boxes, spines, and labels for 8,212 solar filaments."
+    },
+    {
+      "title": "ShreyPatel1311/solar-filament-segmentation - GitHub",
+      "url": "https://github.com/ShreyPatel1311/solar-filament-segmentation",
+      "snippet": "Instance segmentation of solar filaments in GONG H-alpha observations, for the Filament Segmentation Challenge 2026. The working model: the code lives here and is edited locally; Kaggle only runs it. A Kaggle notebook clones this repository at a pinned revision and calls the same CLI entry points ..."
+    }
+  ]
+}

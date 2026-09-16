@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "donghovietnam/madlad400-3b-mt-onnx-luca",
+  "slug": "donghovietnam-madlad400-3b-mt-onnx-luca",
+  "author": "donghovietnam",
+  "url": "https://huggingface.co/donghovietnam/madlad400-3b-mt-onnx-luca",
+  "created_at": "2026-09-14T07:53:02.000Z",
+  "updated_at": "2026-09-16T00:17:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "translation",
+    "machine-translation",
+    "multilingual",
+    "madlad-400",
+    "int4",
+    "quantized",
+    "base_model:google/madlad400-3b-mt",
+    "base_model:quantized:google/madlad400-3b-mt",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1702118508,
+  "storage_human": "1.7 GB",
+  "base_model": "google/madlad400-3b-mt",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "citra模拟器怎么打开重装机兵4文件-百度经验",
+      "url": "https://jingyan.baidu.com/article/4f34706e1aa159e387b56d11.html",
+      "snippet": "Jan 3, 2018 · citra模拟器怎么打开重装机兵4文件,重装机兵是一款以战争为主题的角色扮演系列游戏，下面就让小编为大家简单讲解一 …"
+    },
+    {
+      "title": "口袋妖怪—蓝宝石 (汉化版)怎么放慢脚步 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/148a19217c25870c70c3b125.html",
+      "snippet": "Jan 20, 2020 · 如果你玩的是PC版的《终极蓝宝石》，那么你就需要进入”控制“界面查看或更改设置，才能实现”蹑手蹑脚”的行走方式 …"
+    },
+    {
+      "title": "《火焰纹章if》自制高清包（Citra） - 模拟器综合讨论区 - 3DMGAME论 …",
+      "url": "https://bbs.3dmgame.com/thread-6004224-1-1.html",
+      "snippet": "Jun 30, 2015 · 3DMGAME论坛 » 论坛 › 电玩专题区 › 电玩资源区 › 模拟器综合讨论区 › 《火焰纹章if》自制高清包（Citra）"
+    },
+    {
+      "title": "citra（官方最新整合） - 模拟器综合讨论区 - 3DMGAME论坛",
+      "url": "https://bbs.3dmgame.com/thread-6077926-1-1.html",
+      "snippet": "Dec 24, 2006 · Citra official latest integration for emulator discussion on 3DMGAME forum."
+    },
+    {
+      "title": "安卓citra模拟器怎么用金手指-百度经验",
+      "url": "https://jingyan.baidu.com/article/455a9950e7d9e1e06727781c.html",
+      "snippet": "Mar 26, 2020 · 安卓citra模拟器怎么用金手指,和众多游戏模拟器一样，citra也是可以使用金手指的，相信不少朋友会使用电脑版citra的 …"
+    }
+  ]
+}

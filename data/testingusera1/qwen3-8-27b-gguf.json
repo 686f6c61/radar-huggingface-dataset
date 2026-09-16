@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "testingusera1/Qwen3.8-27B-GGUF",
+  "slug": "testingusera1-qwen3-8-27b-gguf",
+  "author": "testingusera1",
+  "url": "https://huggingface.co/testingusera1/Qwen3.8-27B-GGUF",
+  "created_at": "2026-09-15T20:57:39.000Z",
+  "updated_at": "2026-09-15T20:57:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "unsloth",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 472072176128,
+  "storage_human": "472.1 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grafikus processzor használata a Photoshopban | Photoshop",
+      "url": "https://helpx.adobe.com/hu/photoshop/desktop/get-started/technical-requirements-installation/photoshop-and-graphics-processor-gpu-card-usage.html",
+      "snippet": "Feb 19, 2026 · Ismerje meg, hogyan használja az Adobe Photoshop a rendszer grafikus processzorát a gördülékeny élmény és a …"
+    },
+    {
+      "title": "Photoshop teljesítményének optimalizálása | Photoshop",
+      "url": "https://helpx.adobe.com/hu/photoshop/kb/optimize-photoshop-hardware-os.html",
+      "snippet": "May 25, 2023 · Az operációs rendszer és a hardver optimalizálásával javíthatja a Photoshop teljesítményét a gépén. A …"
+    },
+    {
+      "title": "Milyen számítógépre van szükségem a Photoshop használatához?",
+      "url": "https://www.pchardwarepro.com/hu/Milyen-sz%C3%A1m%C3%ADt%C3%B3g%C3%A9pre-van-sz%C3%BCks%C3%A9gem-a-Photoshop-haszn%C3%A1lat%C3%A1hoz/",
+      "snippet": "A kérdés az, hogy melyik processzor a legjobb a Photoshop használatához? A válasz az, hogy egy nagy teljesítményű, magas …"
+    },
+    {
+      "title": "Felkészültél a Photoshopra? Így válaszd ki az ideális számítógépet a ...",
+      "url": "https://sportrefotozas.hu/milyen-gep-igenye-windows-photoshop/",
+      "snippet": "Apr 2, 2026 · A Photoshop inkább processzor igényes szoftver, mint írtam nemrég, ami támogatja külön a GPU-t, érdemes az …"
+    },
+    {
+      "title": "Best CPU for Photoshop in 2026 – our top tested picks - PC Guide",
+      "url": "https://www.pcguide.com/cpu/guide/best-for-photoshop/",
+      "snippet": "May 23, 2025 · When it comes to purchasing the best CPU for Photoshop, there are several features and considerations that we …"
+    }
+  ]
+}

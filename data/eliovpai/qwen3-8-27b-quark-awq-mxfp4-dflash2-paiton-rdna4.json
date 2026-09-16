@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "EliovpAI/Qwen3.8-27B-Quark-AWQ-MXFP4-DFlash2-Paiton-RDNA4",
+  "slug": "eliovpai-qwen3-8-27b-quark-awq-mxfp4-dflash2-paiton-rdna4",
+  "author": "EliovpAI",
+  "url": "https://huggingface.co/EliovpAI/Qwen3.8-27B-Quark-AWQ-MXFP4-DFlash2-Paiton-RDNA4",
+  "created_at": "2026-09-15T22:27:22.000Z",
+  "updated_at": "2026-09-15T22:27:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "paiton",
+  "languages": [],
+  "tags": [
+    "paiton",
+    "vllm",
+    "amd",
+    "rocm",
+    "rdna4",
+    "gfx1201",
+    "mxfp4",
+    "dflash2",
+    "speculative-decoding",
+    "compiled-runtime",
+    "text-generation",
+    "base_model:amd/Qwen3.8-27B-Quark-AWQ-MXFP4",
+    "base_model:finetune:amd/Qwen3.8-27B-Quark-AWQ-MXFP4",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2167212,
+  "storage_human": "2 MB",
+  "base_model": "amd/Qwen3.8-27B-Quark-AWQ-MXFP4, tcclaviger/Qwen3.8-27B-DFlash2-FP8",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quick Share - Free download and install on Windows | Microsoft Store",
+      "url": "https://apps.microsoft.com/detail/9pctgdfxvzlj",
+      "snippet": "Share files with your friends quickly, safely and easily with the Quick Share feature. Just a few taps and you’ll be sending photos, …"
+    },
+    {
+      "title": "Quick Share - Windows に無料でダウンロードしてインストールする",
+      "url": "https://apps.microsoft.com/detail/9pctgdfxvzlj?hl=ja-JP&gl=JP",
+      "snippet": "Share files with your friends quickly, safely and easily with the Quick Share feature. Just a few taps and you’ll be sending photos, …"
+    },
+    {
+      "title": "Quick Share - Windows’ta ücretsiz indir ve yükle | Microsoft Store",
+      "url": "https://apps.microsoft.com/detail/9pctgdfxvzlj?hl=tr-TR&gl=TR",
+      "snippet": "Share files with your friends quickly, safely and easily with the Quick Share feature. Just a few taps and you’ll be sending photos, …"
+    },
+    {
+      "title": "Quick Share: descarga e instalación gratuitas en Windows | Microsoft …",
+      "url": "https://apps.microsoft.com/detail/9pctgdfxvzlj?hl=es-ES&gl=ES",
+      "snippet": "Comparte archivos con tus amigos de forma rápida, segura y sencilla con la función Quick Share (Compartir rápido). Solo con pulsar …"
+    },
+    {
+      "title": "Quick Share – Kostenloser Download und Installation unter Windows ...",
+      "url": "https://apps.microsoft.com/detail/9pctgdfxvzlj?hl=de-DE&gl=DE",
+      "snippet": "Teile Dateien schnell, sicher und einfach mit deinen Freunden dank der Funktion Quick Share. Mit nur ein paarmal Tippen kannst du …"
+    }
+  ]
+}

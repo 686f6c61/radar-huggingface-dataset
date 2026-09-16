@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Dongkkka/Task_000668_chunk60_noise03_ACT_Intern",
+  "slug": "dongkkka-task_000668_chunk60_noise03_act_intern",
+  "author": "Dongkkka",
+  "url": "https://huggingface.co/Dongkkka/Task_000668_chunk60_noise03_ACT_Intern",
+  "created_at": "2026-09-16T01:19:58.000Z",
+  "updated_at": "2026-09-16T01:20:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotis",
+    "cyclo_intelligence",
+    "robotics",
+    "dataset:robotis/task_000668_peanut_mix_augmented_eef16_trim20_100_vision_tuned_ev070_v30",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 619454336,
+  "storage_human": "619 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Master Monnaie, banque, finance, assurance - Université de Reims ...",
+      "url": "https://www.univ-reims.fr/formation/catalogue-de-formation/master-monnaie-banque-finance-assurance,23515,38949.html?args=R9qFsCnMmKDtxCa17YTDkHVqaqbfYRXwwTnCVt2witCDUIiVoUdkeMDp%2AXGEGm2SMIhvMbuZ3_kOrRxvJlk6dOorIryuNioRCyFFyPAvhl9tCdwYdtHRrwAvNC1tDg_H&formation_id=1461",
+      "snippet": "Le parcours « « FINANCE ET PATRIMOINE » (FP) du master « monnaie, banque, finance, assurance » (MBFA) forme des …"
+    },
+    {
+      "title": "Master Monnaie, Banque, Finance, Assurance parcours Finance et",
+      "url": "https://www.difcam.com/master-monnaie-banque-finance-assurance-parcours-finance-et-patrimoine-universite-de-reims/",
+      "snippet": "Découvrez le Master Monnaie Banque Finance Assurance - Parcours finance et patrimoine du CFA DIFCAM et de l'Université de …"
+    },
+    {
+      "title": "Master Gestion de Patri à Reims: Classement 2026 & Écoles",
+      "url": "https://www.meilleurs-masters.com/master-gestion-de-patrimoine-et-de-portefeuilles-a-reims.html",
+      "snippet": "Le Master Gestion de Patrimoine et de Portefeuilles à Reims propose un ensemble de cours et de matières variés. Les étudiants …"
+    },
+    {
+      "title": "Formation MASTER MENTION MONNAIE, BANQUE, FINANCE, REIMS …",
+      "url": "https://candidat.francetravail.fr/formations/detail/11172136/true/false",
+      "snippet": "Le parcours parcours finance et patrimoine (FP) du Master mention monnaie, banque, finance, assurance (MBFA) forme des …"
+    },
+    {
+      "title": "Master mention monnaie, banque, finance, assurance - Parcours finance ...",
+      "url": "https://formation.grandest.fr/accueil/formations/111653",
+      "snippet": "Le parcours parcours finance et patrimoine (FP) du Master mention monnaie, banque, finance, assurance (MBFA) forme des …"
+    }
+  ]
+}

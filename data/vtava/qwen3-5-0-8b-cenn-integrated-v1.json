@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "vtava/Qwen3.5-0.8B-CeNN-Integrated-V1",
+  "slug": "vtava-qwen3-5-0-8b-cenn-integrated-v1",
+  "author": "vtava",
+  "url": "https://huggingface.co/vtava/Qwen3.5-0.8B-CeNN-Integrated-V1",
+  "created_at": "2026-09-15T23:50:33.000Z",
+  "updated_at": "2026-09-15T23:50:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "qwen3_5",
+    "cenn",
+    "linear-attention",
+    "efficient-attention",
+    "custom-code",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4870773,
+  "storage_human": "5 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Podravski • Podravina i Prigorje • Aktualne vijesti",
+      "url": "https://podravski.hr/",
+      "snippet": "Halo Podravski! 048 220 641, 048 220 640 SMS: 098 365 245, 091 222 0615 Viber: 099 226 3155 rh.iksvardop@isalgo.ilam Zahvale, …"
+    },
+    {
+      "title": "ePodravina.hr Aktualne vijesti Podravina i Prigorje",
+      "url": "https://epodravina.hr/",
+      "snippet": "Podravski Jeruzalem slavi poseban dan: Krunila se slika Gospe koju je blagoslovio Papa Lav XIV Stil Sutra u Đurđevcu"
+    },
+    {
+      "title": "Aktualno - Podravski",
+      "url": "https://podravski.hr/kategorija/aktualno/",
+      "snippet": "Najnovije vijesti i događanja iz Podravine i Prigorja, uključujući aktualne teme, vijesti i zanimljivosti."
+    },
+    {
+      "title": "Podravski list | Koprivnica - Facebook",
+      "url": "https://www.facebook.com/Podravskilist/",
+      "snippet": "Podravski list, Koprivnica. 112,949 likes · 14,439 talking about this. Na strani običnih ljudi."
+    },
+    {
+      "title": "Najnovije vijesti iz Koprivnice i Podravine - Drava.info",
+      "url": "https://drava.info/",
+      "snippet": "5 days ago · Znate li što se sprema u Koprivnici? Stiže više od 900 sportaša iz 14 zemalja, u organizaciji sudjeluje 79 osoba, …"
+    }
+  ]
+}

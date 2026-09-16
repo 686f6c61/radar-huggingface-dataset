@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Adnan2942/Qwen2-VL-7B-Instruct-LoRA-Latex-OCR",
+  "slug": "adnan2942-qwen2-vl-7b-instruct-lora-latex-ocr",
+  "author": "Adnan2942",
+  "url": "https://huggingface.co/Adnan2942/Qwen2-VL-7B-Instruct-LoRA-Latex-OCR",
+  "created_at": "2026-09-15T19:39:40.000Z",
+  "updated_at": "2026-09-15T20:47:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_vl",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "dataset:unsloth/LaTeX_OCR",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8291375616,
+  "parameters_human": "8.29B",
+  "storage_bytes": 33177082735,
+  "storage_human": "33.2 GB",
+  "base_model": "unsloth/qwen2-vl-7b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp am PC nutzen: So geht’s mit und ohne Handy - nextpit",
+      "url": "https://www.nextpit.de/ratgeber/whatsapp-am-pc-nutzen",
+      "snippet": "Jul 6, 2021 · WhatsApp könnt Ihr bequem auch am PC nutzen. NextPit verrät Euch, wie der Messenger auf Desktop-PCs und …"
+    },
+    {
+      "title": "Whatsapp Desktop - Unexpected error : r/whatsapp - Reddit",
+      "url": "https://www.reddit.com/r/whatsapp/comments/y4w52x/whatsapp_desktop_unexpected_error/",
+      "snippet": "Oct 15, 2022 · 18 votes, 17 comments. 56K subscribers in the whatsapp community. r/whatsapp is home to the online messaging …"
+    },
+    {
+      "title": "WhatsApp Reddit",
+      "url": "https://www.reddit.com/r/whatsapp/",
+      "snippet": "r/whatsapp is home to the online messaging platform owned by Meta. News, updates and general discussions about the app can be …"
+    },
+    {
+      "title": "WhatsApp ohne Handy: Der Messenger wird viel praktischer",
+      "url": "https://www.nextpit.de/news/whatsapp-ohne-handy-der-messenger-wird-viel-praktischer",
+      "snippet": "Feb 10, 2026 · Der Messenger zeigt neue Features, die ihr ohne Handy benutzen könnt. WhatsApp Web hilft euch, besser mit …"
+    },
+    {
+      "title": "How to transfer WhatsApp to new phone when old phone broken?",
+      "url": "https://www.reddit.com/r/whatsapp/comments/12rkpwn/how_to_transfer_whatsapp_to_new_phone_when_old/",
+      "snippet": "Apr 19, 2023 · As such, when I try set up WhatsApp on their new phones, even with the SIM card in the new device, it is asking for …"
+    }
+  ]
+}

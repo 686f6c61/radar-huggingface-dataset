@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hb-dev/Qwen3-0.6B-ONNX",
+  "slug": "hb-dev-qwen3-0-6b-onnx",
+  "author": "hb-dev",
+  "url": "https://huggingface.co/hb-dev/Qwen3-0.6B-ONNX",
+  "created_at": "2026-09-16T00:36:06.000Z",
+  "updated_at": "2026-09-16T00:59:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:quantized:Qwen/Qwen3-0.6B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 617687478,
+  "storage_human": "618 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HBO Max | HBO, Eurosport, Discovery, télévision et films en streaming",
+      "url": "https://www.hbomax.com/fr/fr",
+      "snippet": "Avec HBO Max, regardez la télévision, des films, des histoires vraies et le sport en direct avec Eurosport. Découvrez le meilleur …"
+    },
+    {
+      "title": "Hémoglobine : taux normal, basse, haute, c'est quoi - Santé Magazine",
+      "url": "https://www.santemagazine.fr/sante/examens-medicaux/analyses/hemoglobine-taux-normal-basse-haute-cest-quoi-1089534",
+      "snippet": "May 22, 2024 · L' hémoglobine (Hb) est une protéine qui se trouve à l'intérieur des globules rouges du sang. Elle est synthétisée …"
+    },
+    {
+      "title": "HBO Max | Stream Series and Movies",
+      "url": "https://www.hbomax.com/",
+      "snippet": "Stream must-see series, hit movies, exclusive originals, family favorites, and live sports."
+    },
+    {
+      "title": "Hémoglobine : rôle, dosage, taux bas ou élevé et signification clinique",
+      "url": "https://microbiologie-clinique.com/hemoglobine-role-dosage-taux-bas-eleve-signification-clinique.html",
+      "snippet": "L'hémoglobine (Hb) est une protéine riche en fer présente dans les globules rouges (érythrocytes) et joue un rôle essentiel dans le …"
+    },
+    {
+      "title": "Hémoglobine — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/H%C3%A9moglobine",
+      "snippet": "L' hémoglobine, couramment symbolisée Hb, parfois Hgb, est un pigment respiratoire (de la famille moléculaire des métalloprotéines, …"
+    }
+  ]
+}

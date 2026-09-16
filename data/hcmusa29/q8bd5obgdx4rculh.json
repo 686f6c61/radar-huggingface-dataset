@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "hcmusa29/q8bd5ObgDx4RCuLH",
+  "slug": "hcmusa29-q8bd5obgdx4rculh",
+  "author": "hcmusa29",
+  "url": "https://huggingface.co/hcmusa29/q8bd5ObgDx4RCuLH",
+  "created_at": "2026-09-12T16:29:38.000Z",
+  "updated_at": "2026-09-16T01:18:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 304606803392,
+  "storage_human": "304.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hcmusa29/dYFqGsBX4PkphF5O · Hugging Face",
+      "url": "https://huggingface.co/hcmusa29/dYFqGsBX4PkphF5O",
+      "snippet": "hcmusa29 / dYFqGsBX4PkphF5O Like 0 Follow A29 1 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=1&sort=modified",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GitHub - samssouza/uncensored-ai-list",
+      "url": "https://github.com/samssouza/uncensored-ai-list",
+      "snippet": "Contribute to samssouza/uncensored-ai-list development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Model Releases Timeline: Latest Launches, Updated Daily",
+      "url": "https://www.promptzone.com/ai-model-releases",
+      "snippet": "AI Model Releases 2026 Timeline A chronological timeline of major AI model releases across 2025 and 2026 — LLMs, reasoning models, open-weights families, and image & video generators, each with its date, why it mattered, and the official announcement."
+    },
+    {
+      "title": "Open models by OpenAI | OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    }
+  ]
+}

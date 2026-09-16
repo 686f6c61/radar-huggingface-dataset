@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "vantagewithai/Krea-2-Turbo-GGUF",
+  "slug": "vantagewithai-krea-2-turbo-gguf",
+  "author": "vantagewithai",
+  "url": "https://huggingface.co/vantagewithai/Krea-2-Turbo-GGUF",
+  "created_at": "2026-06-23T06:37:36.000Z",
+  "updated_at": "2026-06-23T19:11:48.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "gguf",
+    "text-to-image",
+    "en",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:quantized:krea/Krea-2-Turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 149,
+  "downloads_30d": 54509,
+  "trending_score": 9,
+  "parameters": 12895570508,
+  "parameters_human": "12.90B",
+  "storage_bytes": 108126543520,
+  "storage_human": "108.1 GB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers",
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online bestellen und nach Hause liefern lassen - Migros",
+      "url": "https://www.migros.ch/de",
+      "snippet": "Frische Lebensmittel, Tiefkühlkost und alles für den Haushalt online bestellen. 12 500 Migros Produkte & Markenartikel zum Migros …"
+    },
+    {
+      "title": "Angebote • Migros",
+      "url": "https://www.migros.ch/de/offers/home",
+      "snippet": "Sichere dir jede Woche die besten Angebote für frische Lebensmittel und mehr bei deiner Migros."
+    },
+    {
+      "title": "Migros-Magazin | Magazin",
+      "url": "https://magazine.migros.ch/de.html",
+      "snippet": "Das Migros-Magazin ist die Wochenzeitung der Migros. Darin finden Sie das Neuste aus der Migros-Welt, Tipps für den Alltag und …"
+    },
+    {
+      "title": "Offene Stellen in der Migros-Gruppe | Migros Jobs",
+      "url": "https://jobs.migros.ch/de/unsere-unternehmen/migros-gruppe/offene-stellen",
+      "snippet": "Starte deine Karriere in der Migros-Gruppe. Jetzt Traumjob finden und Teil der grössten Arbeitgeberin der Schweiz werden!"
+    },
+    {
+      "title": "Kreuzworträtsel | Magazin",
+      "url": "https://magazine.migros.ch/de/kreuzwortraetsel.html",
+      "snippet": "Kreuzworträtsel Jetzt Kreuzworträtsel lösen und mit etwas Glück Migros-Geschenkkarte gewinnen! Lösen Sie das Kreuzworträtsel …"
+    }
+  ]
+}

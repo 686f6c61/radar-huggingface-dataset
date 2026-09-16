@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SOLRICKS/comfyui-solricks",
+  "slug": "solricks-comfyui-solricks",
+  "author": "SOLRICKS",
+  "url": "https://huggingface.co/SOLRICKS/comfyui-solricks",
+  "created_at": "2026-05-24T10:43:16.000Z",
+  "updated_at": "2026-09-15T21:37:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "graph-ml",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "comfyui-custom-node",
+    "visual-ai",
+    "ai-workflows",
+    "solricks",
+    "gpu-automation",
+    "graph-ml",
+    "dataset:SOLRICKS/DLAA-Trainer",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12767218,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube TV and Fox Dispute: What Happened and Current Status",
+      "url": "https://www.cloudspress.com/youtube-tv-customers-could-lose-fox-just-as-football-season-starts-what-we-know/",
+      "snippet": "Aug 9, 2026 · YouTube TV did not drop Fox after the 2025 carriage dispute. Learn what was at risk, how Sunday Ticket was affected, …"
+    },
+    {
+      "title": "YouTube TV Fox Channels: Renewal Deal, Lineup and Local FOX …",
+      "url": "https://rottenwifi.com/youtube-tvs-fox-blackout-threat-ended-with-a-renewal-deal-fox-channels-remain-available/",
+      "snippet": "Sep 8, 2026 · Fox channels remain available on YouTube TV. YouTube TV and Fox announced a distribution-renewal agreement on …"
+    },
+    {
+      "title": "YouTube TV FOX Channel Blackout Warning: What Happened",
+      "url": "https://www.peepstune.com/youtube-tv-warned-subscribers-they-could-lose-fox-channels-heres-what-happened/",
+      "snippet": "YouTube TV warned of a possible FOX blackout in August 2025, but reached a deal. Here’s what channels, recordings, football …"
+    },
+    {
+      "title": "Troubleshoot YouTube TV streaming issues - Google Help",
+      "url": "https://support.google.com/youtubetv/answer/7129766?hl=en",
+      "snippet": "If video streaming on YouTube TV is not working, first check whether your current location settings are accurate. If that doesn't work, …"
+    },
+    {
+      "title": "YouTube TV Fox Channels: What Happened and What to Check",
+      "url": "https://www.documentarytube.com/blog/youtube-tv-isnt-currently-set-to-lose-fox-channels-heres-what-happened-in-2025/",
+      "snippet": "The YouTube TV Fox blackout warning was from August 2025. Here’s what happened, which channels were involved and how to …"
+    }
+  ]
+}

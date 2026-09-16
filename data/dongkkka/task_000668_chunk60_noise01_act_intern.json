@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Dongkkka/Task_000668_chunk60_noise01_ACT_Intern",
+  "slug": "dongkkka-task_000668_chunk60_noise01_act_intern",
+  "author": "Dongkkka",
+  "url": "https://huggingface.co/Dongkkka/Task_000668_chunk60_noise01_ACT_Intern",
+  "created_at": "2026-09-16T01:18:28.000Z",
+  "updated_at": "2026-09-16T01:19:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotis",
+    "cyclo_intelligence",
+    "robotics",
+    "dataset:robotis/task_000668_peanut_mix_augmented_eef16_trim20_100_vision_tuned_ev070_v30",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 619454336,
+  "storage_human": "619 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kip kokos limoen curry recept - pittig, romig en vol smaak",
+      "url": "https://miljuschka.nl/kip-kokos-limoen-curry-pittig-romig-vol-smaak/",
+      "snippet": "Kip kokos limoen curry, een romige, pittige en smaakvolle curry met kip, kokosmelk, limoen en specerijen. Makkelijk recept voor …"
+    },
+    {
+      "title": "Intern Large Models",
+      "url": "https://chat.intern-ai.org.cn/",
+      "snippet": "Intern (InternLM | InternVL) is a large AI assistant capable of responding to human instructions. It can not only chat with you but also search for real-time information, help you quickly read papers, and solve complex mathematical and coding problems! Give it a try!"
+    },
+    {
+      "title": "Romige Curry Kip: Het Snelste & Lekkerste Recept Ooit!",
+      "url": "https://receptenpret.nl/romige-curry-kip/",
+      "snippet": "Ontdek het heerlijke en simpele recept voor Romige curry kip. Perfect voor een gezellige maaltijd met familie of vrienden. Probeer het …"
+    },
+    {
+      "title": "Intern",
+      "url": "https://internlm.intern-ai.org.cn/",
+      "snippet": "The first open-source multimodal foundation model that combines top-tier scientific capabilities with state-of-the-art overall performance · Built on a multimodal mixture-of-experts architecture, the model achieves a high-level balance between language and multimodal understanding within a ..."
+    },
+    {
+      "title": "Romige Indiase kip curry (snel, simpel en goddelijk lekker!)",
+      "url": "https://supersnelgezond.nl/romige-indiase-kip-curry-snel-simpel-en-goddelijk-lekker/",
+      "snippet": "Feb 18, 2020 · Deze romige Indiase kip curry is supersnel en simpel te bereiden én het smaakt ook goddelijk lekker! Het bevat de …"
+    }
+  ]
+}

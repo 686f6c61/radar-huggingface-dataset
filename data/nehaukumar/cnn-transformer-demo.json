@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "nehaukumar/cnn-transformer-demo",
+  "slug": "nehaukumar-cnn-transformer-demo",
+  "author": "nehaukumar",
+  "url": "https://huggingface.co/nehaukumar/cnn-transformer-demo",
+  "created_at": "2026-09-15T23:43:08.000Z",
+  "updated_at": "2026-09-15T23:43:13.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Akustikpaneele richtig befestigen: Kleben oder Schrauben?",
+      "url": "https://www.zauberhaft-wohnen.de/akustikpaneele-kleben-schrauben/",
+      "snippet": "May 22, 2026 · Akustikpaneele richtig befestigen: Kleben oder Schrauben? Hier erfahren die Vor- und Nachteile beider Methoden. …"
+    },
+    {
+      "title": "Akustikpaneele anbringen: Schrauben, Kleben oder Klammern? — …",
+      "url": "https://akustik-welt.de/ratgeber/akustikpaneele-anbringen-schrauben/",
+      "snippet": "Die Antwort hängt von drei Faktoren ab: deinem Wandtyp, dem Gewicht der Paneele und davon, ob du irgendwann wieder spurlos …"
+    },
+    {
+      "title": "Akustikpaneele anbringen: kleben oder schrauben | WaBo-Design",
+      "url": "https://wabodesign.de/en/blogs/ratgeber/akustikpaneele-anbringen",
+      "snippet": "1 day ago · Akustikpaneele anbringen: Welcher Kleber hält, wann du besser schraubst und wie es in der Mietwohnung geht. Schritt …"
+    },
+    {
+      "title": "Akustikpaneele befestigen für Anfänger: Schritt für Schri…",
+      "url": "https://wohnen-mit-kopf.de/heimwerken/akustikpaneele-befestigen/",
+      "snippet": "Jun 21, 2026 · Akustikpaneele befestigen leicht gemacht: Schritt-für-Schritt-Anleitung für Anfänger – kleben, schrauben oder ohne …"
+    },
+    {
+      "title": "Akustikpaneele anbringen: Der ultimative Montage-Guide — Akustik …",
+      "url": "https://akustik-welt.de/ratgeber/akustikpaneele-anbringen/",
+      "snippet": "Ob du eine TV-Wand verkleidest, ein Deckensegel montierst oder Paneele an einer Dachschräge anbringst — nach diesem Artikel …"
+    }
+  ]
+}

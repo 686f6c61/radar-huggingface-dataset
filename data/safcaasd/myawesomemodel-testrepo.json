@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "safcaasd/MyAwesomeModel-TestRepo",
+  "slug": "safcaasd-myawesomemodel-testrepo",
+  "author": "safcaasd",
+  "url": "https://huggingface.co/safcaasd/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-15T19:52:05.000Z",
+  "updated_at": "2026-09-15T19:52:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WarnerBros.com | Home of WB Movies, TV, Games, and more!",
+      "url": "https://www.warnerbros.com/",
+      "snippet": "Home of Warner Bros Movies, TV Shows and Video Games including Harry Potter, DC Comics and more!"
+    },
+    {
+      "title": "Warner Bros. - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Warner_Bros.",
+      "snippet": "Warner Bros.[a] is a brand name that has been used by several multinational mass media and entertainment companies and …"
+    },
+    {
+      "title": "Warner Bros. Pictures - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Warner_Bros._Pictures",
+      "snippet": "Headquartered at the Warner Bros. Studios complex in Burbank, California, Warner Bros. Pictures is one of the \"Big Five\" major …"
+    },
+    {
+      "title": "WarnerBros.be | Portail vers les films, les émissions et les jeux WB et ...",
+      "url": "https://www.warnerbros.be/fr",
+      "snippet": "Portail vers les films, les émissions et les jeux vidéo Warner Bros., incluant Harry Potter, DC Comics et davantage!"
+    },
+    {
+      "title": "Warner Bros",
+      "url": "https://www.warnerbros.nl/",
+      "snippet": "Apr 6, 2011 · Homepagina van WB Films, TV Shows en Video Games waaronder Harry Potter, DC Comics en meer!"
+    }
+  ]
+}

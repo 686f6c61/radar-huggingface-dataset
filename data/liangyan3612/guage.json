@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "LiangYan3612/guage",
+  "slug": "liangyan3612-guage",
+  "author": "LiangYan3612",
+  "url": "https://huggingface.co/LiangYan3612/guage",
+  "created_at": "2026-09-15T17:36:08.000Z",
+  "updated_at": "2026-09-15T22:06:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "arxiv:2602.21534",
+    "arxiv:2409.06957",
+    "arxiv:2505.02387",
+    "arxiv:2505.03335",
+    "arxiv:2504.14945",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 88251790296,
+  "storage_human": "88.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "دانلود آهنگ جدید ایرانی 1405 با کیفیت عالی و متن • رز موزیک",
+      "url": "https://rozmusic.com/",
+      "snippet": "دانلود آهنگ جدید, دانلود موزیک جدید ایرانی 1405 از خوانندگان معروف با کیفیت عالی, دانلود آلبوم, سایت دانلود موزیک, جدیدترین آهنگ های روز در رسانه رز موزیک"
+    },
+    {
+      "title": "دانلود آهنگ جدید خواننده های معروف ایرانی ( آهنگ های امروز MP3 )",
+      "url": "https://upmusics.com/category/single-tracks/",
+      "snippet": "22 hours ago · در این بخش می‌توانید جدیدترین آهنگ‌های ایرانی را با کیفیت 320 و 128 دانلود کنید. مجموعه‌ای از آهنگ‌های شاد، غمگین، عاشقانه و پاپ از خوانندگان محبوب را همراه با لینک …"
+    },
+    {
+      "title": "دانلود آهنگ جدید | رادیو جوان",
+      "url": "https://radiojavan-iran.com/",
+      "snippet": "رسانه آرجی ایران، دانلود آهنگ جدید ،دانلود ریمیکس جدید ، دانلود موزیک ، آرجی ایران را در اینستاگرام و تلگرام دنبال نمایید"
+    },
+    {
+      "title": "ایران موزیک | آهنگ ایرانی، جدیدترین آهنگ ها، دانلود آهنگ جدید",
+      "url": "https://muzicir.com/",
+      "snippet": "22 hours ago · ایران موزیک بزرگ ترین رسانه اهنگ ایرانی شامل آهنگ ایرانی، دانلود آهنگ جدید، دانلود فول آلبوم ایرانی، جدیدترین آهنگ ها، دانلود آهنگ جدید ایرانی، آهنگهای جدید، آهنگ …"
+    },
+    {
+      "title": "دانلود آهنگ جدید",
+      "url": "https://www.jenab-music.com/",
+      "snippet": "تمام مطالب ارائه شده در سایت جناب موزیک هماهنگ با قوانین کشور میباشد. تمام حقوق مادی و معنوی مطالب و طرح قالب برای سایت جناب موزیک محفوظ است."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "MrC4t/xvla_bi_so_bin3",
+  "slug": "mrc4t-xvla_bi_so_bin3",
+  "author": "MrC4t",
+  "url": "https://huggingface.co/MrC4t/xvla_bi_so_bin3",
+  "created_at": "2026-09-15T23:41:12.000Z",
+  "updated_at": "2026-09-15T23:42:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "xvla",
+    "dataset:MrC4t/bimanual_toy_bin",
+    "arxiv:2510.10274",
+    "base_model:lerobot/xvla-base",
+    "base_model:finetune:lerobot/xvla-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 879687256,
+  "parameters_human": "879.7M",
+  "storage_bytes": 1759509184,
+  "storage_human": "1.8 GB",
+  "base_model": "lerobot/xvla-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online Stopwatch - easy to use - timeanddate.com",
+      "url": "https://www.timeanddate.com/stopwatch/",
+      "snippet": "Online stopwatch. Easy to use and accurate stopwatch with lap times and alarms. Optional split intervals and alarm sound."
+    },
+    {
+      "title": "Online Timer - timeanddate.com",
+      "url": "https://www.timeanddate.com/timer/",
+      "snippet": "Timer online with alarm. Create one or multiple timers and start them in any order."
+    },
+    {
+      "title": "Date Calculator: Add to or Subtract From a Date",
+      "url": "https://www.timeanddate.com/date/dateadd.html",
+      "snippet": "The Date Calculator adds or subtracts days, weeks, months and years from a given date."
+    },
+    {
+      "title": "timeanddate.com",
+      "url": "https://www.timeanddate.com/",
+      "snippet": "Online Stopwatch Time your activities. With start alerts, lap times, and alarm sound."
+    },
+    {
+      "title": "Countdown Timer to Any Date",
+      "url": "https://www.timeanddate.com/countdown/create",
+      "snippet": "Create a Countdown Timer that counts down in seconds, minutes, hours and days to any date, with time zone support. It also counts …"
+    }
+  ]
+}

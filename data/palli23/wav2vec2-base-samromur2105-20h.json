@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "palli23/wav2vec2-base-samromur2105-20h",
+  "slug": "palli23-wav2vec2-base-samromur2105-20h",
+  "author": "palli23",
+  "url": "https://huggingface.co/palli23/wav2vec2-base-samromur2105-20h",
+  "created_at": "2026-09-15T20:27:21.000Z",
+  "updated_at": "2026-09-15T20:27:36.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "is"
+  ],
+  "tags": [
+    "safetensors",
+    "wav2vec2",
+    "is",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94403241,
+  "parameters_human": "94.4M",
+  "storage_bytes": 377643548,
+  "storage_human": "378 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Edward Cullen — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Edward_Cullen",
+      "snippet": "Edward est un musicien, capable de jouer du piano comme un virtuose. Il aime une grande variété de musique, incluant le classique, …"
+    },
+    {
+      "title": "Pourquoi Edward Cullen brille au soleil - Iridophores et cristaux de ...",
+      "url": "https://m.youtube.com/watch?v=NCQXgM43V4k",
+      "snippet": "Jan 21, 2026 · les iridophores et les micro cristaux de guanine expliqués grâce à Edward Cullen de twilight"
+    },
+    {
+      "title": "Twilight (W9) : pourquoi Edward brille au soleil ? On a quelques ...",
+      "url": "https://www.programme-tv.net/news/cinema/79385-twilight-w9-pourquoi-edward-brille-au-soleil-on-a-quelques-explications/",
+      "snippet": "Feb 15, 2016 · Mais pourquoi Edward Cullen (Robert Pattinson) scintille-t-il telle une boule à facette en plein soleil ? On a tenté …"
+    },
+    {
+      "title": "56 pensées d'une journaliste de Vogue devant Twilight,",
+      "url": "https://www.vogue.fr/culture/article/pensees-journaliste-vogue-twilight-fascination",
+      "snippet": "Sep 24, 2021 · Ok, c'est ma scène préférée de tout le film : Edward invite Bella dans son gigantesque manoir caché dans la forêt, et …"
+    },
+    {
+      "title": "Edward Cullen | Wiki Twilight | Fandom",
+      "url": "https://twilightsaga.fandom.com/fr/wiki/Edward_Cullen",
+      "snippet": "Edward Cullen (né Edward Anthony Masen, Jr, le 20 juin 1901 à Chicago, dans l'Illinois) est un vampire télépathique et un membre …"
+    }
+  ]
+}

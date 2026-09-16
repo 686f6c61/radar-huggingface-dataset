@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "siruku6/pi05_combined_cont4k",
+  "slug": "siruku6-pi05_combined_cont4k",
+  "author": "siruku6",
+  "url": "https://huggingface.co/siruku6/pi05_combined_cont4k",
+  "created_at": "2026-09-15T01:26:33.000Z",
+  "updated_at": "2026-09-15T22:49:39.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "vision-language-action",
+    "imitation-learning",
+    "pi05",
+    "libero",
+    "robotics",
+    "base_model:siruku6/pi05_combined_initpose_full",
+    "base_model:finetune:siruku6/pi05_combined_initpose_full",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9354058368,
+  "storage_human": "9.4 GB",
+  "base_model": "siruku6/pi05_combined_initpose_full",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Office of His Holiness The Dalai Lama | The 14th Dalai Lama",
+      "url": "https://www.dalailama.com/",
+      "snippet": "Aug 29, 2026 · Shewatsel Phodrang, Leh, Ladakh, India - His Holiness the Dalai Lama has written to Andy Burnham to congratulate …"
+    },
+    {
+      "title": "Dalai Lama - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dalai_Lama",
+      "snippet": "The Dalai Lama's traditional function as an ecumenical figure has been taken up by the 14th Dalai Lama, who has worked to …"
+    },
+    {
+      "title": "14th Dalai Lama - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/14th_Dalai_Lama",
+      "snippet": "The 14th Dalai Lama[b] (born Lhamo Thondup; [c] 6 July 1935; full spiritual name: Jetsun Jamphel Ngawang Lobsang Yeshe Tenzin …"
+    },
+    {
+      "title": "The Office of His Holiness The Dalai Lama | The 14th Dalai Lama",
+      "url": "https://www.dalailama.com/the-dalai-lama",
+      "snippet": "Sep 24, 2011 · The Dalai Lamas are believed by Tibetan Buddhists to be manifestations of Avalokiteshvara or Chenrezig, the …"
+    },
+    {
+      "title": "Who is the Dalai Lama and why does he live in exile? - BBC",
+      "url": "https://www.bbc.com/news/articles/c78nzwd10d4o",
+      "snippet": "Jul 2, 2025 · Historically, the Dalai Lama acts as both the political and spiritual leader of Tibetans. But in March 2011, the current …"
+    }
+  ]
+}

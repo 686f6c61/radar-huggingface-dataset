@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "The-Hidden-Canopy/omni-q-table-checkpoints",
+  "slug": "the-hidden-canopy-omni-q-table-checkpoints",
+  "author": "The-Hidden-Canopy",
+  "url": "https://huggingface.co/The-Hidden-Canopy/omni-q-table-checkpoints",
+  "created_at": "2026-09-15T23:51:08.000Z",
+  "updated_at": "2026-09-15T23:57:13.000Z",
+  "license": "mixed-see-readme",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "mujoco",
+    "so-101",
+    "smolvla",
+    "openvino",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2744571047,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The",
+      "snippet": "The is a grammatical article in English, denoting nouns that are already or about to be mentioned, under discussion, implied or …"
+    },
+    {
+      "title": "Déterminant THE en anglais : quand et comment l'utiliser",
+      "url": "https://www.ispeakspokespoken.com/the-anglais/",
+      "snippet": "Aug 24, 2026 · Faut-il mettre THE ou pas devant les noms en anglais ? Je vous donne dans cet article des explications et des …"
+    },
+    {
+      "title": "The definite article: 'the' | LearnEnglish - British Council",
+      "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/definite-article",
+      "snippet": "Level: beginner The definite article the is the most frequent word in English. We use the definite article in front of a noun when we …"
+    },
+    {
+      "title": "THE | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/the",
+      "snippet": "THE definition: 1. used before nouns to refer to particular things or people that have already been talked about or…. Learn more."
+    },
+    {
+      "title": "How to Use the Article “The” in English - English Study Online",
+      "url": "https://englishstudyonline.org/article-the/",
+      "snippet": "Apr 21, 2026 · Have you ever wondered why we say the sun but just coffee? “The” is a small word, but it plays a big role in English! …"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Sonorix/pulsar-v0.7-flash-gguf",
+  "slug": "sonorix-pulsar-v0-7-flash-gguf",
+  "author": "Sonorix",
+  "url": "https://huggingface.co/Sonorix/pulsar-v0.7-flash-gguf",
+  "created_at": "2026-09-16T00:05:45.000Z",
+  "updated_at": "2026-09-16T00:06:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "gguf",
+    "q8_0",
+    "text-generation",
+    "ollama",
+    "pulsar",
+    "lora",
+    "russian",
+    "tool-calling",
+    "ru",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 1593225248,
+  "storage_human": "1.6 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Topic [OFFICIEL] 18-25 Page d'accueil forum 18 25 1825",
+      "url": "https://www.jeuxvideo.com/forums/42-51-51161064-1-0-1-0-officiel-18-25-page-d-accueil-forum-18-25-1825.htm",
+      "snippet": "May 27, 2017 · Bienvenue sur le forum 18-25 ans, rentre dans l'histoire en postant, cette page deviendra le premier resultat Google …"
+    },
+    {
+      "title": "Topic Guerre Ukraine-Russie : en Crimée, le doute est semé",
+      "url": "https://www.jeuxvideo.com/forums/42-69-77259824-1-0-1-0-guerre-ukraine-russie-en-crimee-le-doute-est-seme.htm",
+      "snippet": "Aug 3, 2026 · Une stratégie de long terme de Kyiv, et une preuve de la vulnérabilité russe. Le plus souvent, ils arrivaient en train, en …"
+    },
+    {
+      "title": "Forum Guerre des Consoles - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/forums/0-36-0-1-0-1-0-guerre-des-consoles.htm",
+      "snippet": "Bienvenue sur la page d'accueil du forum Guerre des Consoles de jeuxvideo.com Voici la liste des topics du forum. Venez rejoindre …"
+    },
+    {
+      "title": "Forum PlayStation 5 - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/forums/0-3017788-0-1-0-1-0-playstation-5.htm",
+      "snippet": "Bienvenue sur la page d'accueil du forum PlayStation 5 de jeuxvideo.com Voici la liste des topics du forum. Venez rejoindre notre …"
+    },
+    {
+      "title": "Forum Football - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/forums/0-20-0-1-0-1-0-football.htm",
+      "snippet": "Bienvenue sur la page d'accueil du forum Football de jeuxvideo.com Voici la liste des topics du forum. Venez rejoindre notre …"
+    }
+  ]
+}

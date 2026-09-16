@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Travor278/pi05-scan-object-right-first-peer-lora-10k-e167",
+  "slug": "travor278-pi05-scan-object-right-first-peer-lora-10k-e167",
+  "author": "Travor278",
+  "url": "https://huggingface.co/Travor278/pi05-scan-object-right-first-peer-lora-10k-e167",
+  "created_at": "2026-09-15T23:17:32.000Z",
+  "updated_at": "2026-09-15T23:19:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi05",
+    "jax",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335571117,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QR Code Generator | Create Your Free QR Codes",
+      "url": "https://www.qr-code-generator.com/",
+      "snippet": "QR Code Generator for URL, vCard, and more. Add logo, colors, frames, and download in high print quality. Get your free QR Codes …"
+    },
+    {
+      "title": "Crea códigos QR gratis con nuestro generador",
+      "url": "https://es.qr-code-generator.com/",
+      "snippet": "Create, customize, and track a QR Code in seconds—for free. Branded codes with scan tracking and unlimited redirects. No reprinting."
+    },
+    {
+      "title": "QR Code Generator | Créez vos propres codes QR gratuitement",
+      "url": "https://fr.qr-code-generator.com/",
+      "snippet": "Create, customize, and track a QR Code in seconds—for free. Branded codes with scan tracking and unlimited redirects. No reprinting."
+    },
+    {
+      "title": "QR Code Generator | สร้างรหัส QR ของคุณได้ฟรี",
+      "url": "https://th.qr-code-generator.com/",
+      "snippet": "QR Code Generator สำหรับ URL, vCard และอีกมากมาย เพิ่มโลโก้ สี กรอบ และดาวน์โหลดในรูปแบบการพิมพ์คุณภาพสูง สร้างรหัส QR …"
+    },
+    {
+      "title": "Gerar QR Codes Gratuitamente | QR Code Generator",
+      "url": "https://br.qr-code-generator.com/",
+      "snippet": "Create, customize, and track a QR Code in seconds—for free. Branded codes with scan tracking and unlimited redirects. No reprinting."
+    }
+  ]
+}

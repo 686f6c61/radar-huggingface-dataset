@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "marcosnovaesq/translategemma-27b-it-Q4_K_M-GGUF",
+  "slug": "marcosnovaesq-translategemma-27b-it-q4_k_m-gguf",
+  "author": "marcosnovaesq",
+  "url": "https://huggingface.co/marcosnovaesq/translategemma-27b-it-Q4_K_M-GGUF",
+  "created_at": "2026-09-15T23:35:53.000Z",
+  "updated_at": "2026-09-15T23:37:04.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "image-text-to-text",
+    "base_model:google/translategemma-27b-it",
+    "base_model:quantized:google/translategemma-27b-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27009346304,
+  "parameters_human": "27.01B",
+  "storage_bytes": 16546687008,
+  "storage_human": "16.5 GB",
+  "base_model": "google/translategemma-27b-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hlavní strana | Koupelny JaS - koupelny, obklady a dlažby ...",
+      "url": "https://www.koupelny-jas.cz/",
+      "snippet": "Feb 2, 2002 · Koupelny JaS - velkoobchod a maloobchod s keramickými obklady a dlažbou. Nabízíme vany, baterie, koupelnový …"
+    },
+    {
+      "title": "Valašské Meziříčí | Prodejny | Koupelny JaS - koupelny, obklady a ...",
+      "url": "https://www.koupelny-jas.cz/prodejny/valasske-mezirici-8",
+      "snippet": "Feb 2, 2002 · Koupelny JaS - velkoobchod a maloobchod s keramickými obklady a dlažbou. Nabízíme vany, baterie, koupelnový …"
+    },
+    {
+      "title": "BATERIE",
+      "url": "https://files.koupelny-jas.cz/pdf/katalogy/Baterie%20Moduo.pdf",
+      "snippet": "Nejnovějším prvkem kolekce MODUO je elegantní baterie v černém matu. Ta dodá koupelně nezapomenutelný charakter a krásně …"
+    },
+    {
+      "title": "UMYVADLA",
+      "url": "https://files.koupelny-jas.cz/pdf/katalogy/Umyvadla%20Moduo.pdf",
+      "snippet": "Umyvadla na desku MODUO přinášejí do koupelny jedinečný prvek, který okamžitě upoutá pozornost. Jsou vyrobena z kvalitní …"
+    },
+    {
+      "title": "Tubadzin",
+      "url": "https://virtualni-koupelna.koupelny-jas.cz/",
+      "snippet": "Your browser does not support the video tag. Vizualizujte svou koupelnu a podívejte se, jak naše obklady vypadají u Vás doma."
+    }
+  ]
+}

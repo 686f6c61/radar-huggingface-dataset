@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Danylolysenko/contrastive-learning-analysis-2024",
+  "slug": "danylolysenko-contrastive-learning-analysis-2024",
+  "author": "Danylolysenko",
+  "url": "https://huggingface.co/Danylolysenko/contrastive-learning-analysis-2024",
+  "created_at": "2026-09-16T00:57:18.000Z",
+  "updated_at": "2026-09-16T00:57:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "contrastive-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Business Savings Accounts - September 2026 | U.S. News",
+      "url": "https://www.usnews.com/banking/business-savings-accounts",
+      "snippet": "Pros You can get competitive interest rates on savings and CDs. There's no minimum balance or monthly fees on savings accounts. …"
+    },
+    {
+      "title": "Best Business Savings Accounts - finder.com",
+      "url": "https://www.finder.com/business-banking/high-yield-business-accounts",
+      "snippet": "Jul 2, 2025 · Some of the best business savings accounts are offered by Axos, Live Oak, Bluevine, Primis, First Internet Bank and …"
+    },
+    {
+      "title": "Best business savings accounts | Interest rates up to 4.6% | money.co.uk",
+      "url": "https://www.money.co.uk/business/business-savings-accounts",
+      "snippet": "5 days ago · Discover our best business savings accounts chosen by experts. Compare top rates and choose from a selection of …"
+    },
+    {
+      "title": "Best Business Savings Accounts – September 2026 - WalletHub",
+      "url": "https://wallethub.com/savings-accounts/business",
+      "snippet": "Best business savings accounts with low fees and great APYs. Compare the best business savings accounts from local, regional and …"
+    },
+    {
+      "title": "Best business savings accounts of 2024 - USA TODAY",
+      "url": "https://www.usatoday.com/money/blueprint/banking/savings/best-business-savings-accounts/",
+      "snippet": "Nov 12, 2024 · The Federal Deposit Insurance Corporation (FDIC) doesn’t track average interest rates for business-specific savings …"
+    }
+  ]
+}

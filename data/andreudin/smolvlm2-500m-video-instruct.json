@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "Andreudin/SmolVLM2-500M-Video-Instruct",
+  "slug": "andreudin-smolvlm2-500m-video-instruct",
+  "author": "Andreudin",
+  "url": "https://huggingface.co/Andreudin/SmolVLM2-500M-Video-Instruct",
+  "created_at": "2026-09-15T19:17:02.000Z",
+  "updated_at": "2026-09-15T19:17:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "smolvlm",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "dataset:HuggingFaceM4/the_cauldron",
+    "dataset:HuggingFaceM4/Docmatix",
+    "dataset:lmms-lab/LLaVA-OneVision-Data",
+    "dataset:lmms-lab/M4-Instruct-Data",
+    "dataset:HuggingFaceFV/finevideo",
+    "dataset:MAmmoTH-VL/MAmmoTH-VL-Instruct-12M",
+    "dataset:lmms-lab/LLaVA-Video-178K",
+    "dataset:orrzohar/Video-STaR",
+    "dataset:Mutonix/Vript",
+    "dataset:TIGER-Lab/VISTA-400K",
+    "dataset:Enxin/MovieChat-1K_train",
+    "dataset:ShareGPT4Video/ShareGPT4Video",
+    "arxiv:2504.05299",
+    "base_model:HuggingFaceTB/SmolVLM-500M-Instruct",
+    "base_model:quantized:HuggingFaceTB/SmolVLM-500M-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 507482304,
+  "parameters_human": "507.5M",
+  "storage_bytes": 7164922736,
+  "storage_human": "7.2 GB",
+  "base_model": "HuggingFaceTB/SmolVLM-500M-Instruct",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "比较好玩的iframe控件有哪些？_iframe插件-CSDN博客",
+      "url": "https://blog.csdn.net/Hodors/article/details/126724706",
+      "snippet": "Nov 6, 2024 · 本文推荐了70款实用的iFrame组件，涵盖PDF嵌入、网页内容嵌套，助您轻松增强网站的用户体验。 从前端框架到后端 …"
+    },
+    {
+      "title": "比较好玩的iframe控件有哪些？ - bH1pJ - 博客园",
+      "url": "https://www.cnblogs.com/wwyt123/p/17042058.html",
+      "snippet": "Sep 6, 2022 · 比较好玩的iframe控件有哪些？ 70+ Best Free iFrame widget for your Website (in 2022) 可以通过iframe嵌入pdf."
+    },
+    {
+      "title": "为什么说前端应该尽量少用 iframe？ - 知乎",
+      "url": "https://www.zhihu.com/question/23683645",
+      "snippet": "May 7, 2014 · 由于 iframe 的特殊性很适合作为一个沙箱环境来使用，除了内嵌网页外，还可以用于预览动态生成 HTML 片段，由于 …"
+    },
+    {
+      "title": "推荐开源组件：Vue-Friendly-Iframe - 让你的 iframe 轻松友好 ...",
+      "url": "https://blog.gitcode.com/77053f20ed62a9a94e976e6589431978.html",
+      "snippet": "May 21, 2024 · 项目介绍 Vue-Friendly-Iframe 是一款专为 Vue.js（版本 2.1.4 及以上）设计的组件，致力于优化 iframe 的加载方式， …"
+    },
+    {
+      "title": "Iframe 常见应用场景全解 - CSDN博客",
+      "url": "https://blog.csdn.net/Dxy1239310216/article/details/161167839",
+      "snippet": "Sep 2, 2026 · 💡 核心结论 Iframe 不是过时技术，而是\"隔离\"需求的最优解。 凡是需要 跨域隔离 + 独立上下文 + 零侵入集成 的场 …"
+    }
+  ]
+}

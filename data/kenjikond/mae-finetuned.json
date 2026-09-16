@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kenjikond/mae-finetuned",
+  "slug": "kenjikond-mae-finetuned",
+  "author": "kenjikond",
+  "url": "https://huggingface.co/kenjikond/mae-finetuned",
+  "created_at": "2026-09-15T20:01:38.000Z",
+  "updated_at": "2026-09-15T20:01:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Change volume, sound, & vibrate settings - Android Help",
+      "url": "https://support.google.com/android/answer/9082609?hl=en",
+      "snippet": "Change volume, sound, & vibrate settings Y ou can make your phone's volume louder or quieter. You can also change your ringtone, …"
+    },
+    {
+      "title": "Change Default Audio Playback Device in Windows 10",
+      "url": "https://www.tenforums.com/tutorials/102323-change-default-audio-playback-device-windows-10-a.html",
+      "snippet": "Aug 27, 2020 · How to Change Default Sound Output Device in Windows 10 The default audio playback device is the device that …"
+    },
+    {
+      "title": "Change site settings permissions",
+      "url": "https://support.google.com/chrome/answer/114662?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Change settings for a specific site You can allow or block permissions for a specific site. The site will use its settings instead of the …"
+    },
+    {
+      "title": "List of Commands to Open Control Panel Items in Windows 10",
+      "url": "https://www.tenforums.com/tutorials/86339-list-commands-open-control-panel-items-windows-10-a.html",
+      "snippet": "Mar 26, 2026 · The Control Panel allows you to view and change settings (controls) for Windows via applets. Settings is a modern …"
+    },
+    {
+      "title": "Sound settings - Streaming Help - Google Help",
+      "url": "https://support.google.com/chromecast/answer/6290498?hl=en",
+      "snippet": "Sound settings Chromecast Audio uses sounds to indicate user actions. Here's more on how you can customize playback sounds: …"
+    }
+  ]
+}

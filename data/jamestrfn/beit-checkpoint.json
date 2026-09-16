@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "JamesTrfn/beit-checkpoint",
+  "slug": "jamestrfn-beit-checkpoint",
+  "author": "JamesTrfn",
+  "url": "https://huggingface.co/JamesTrfn/beit-checkpoint",
+  "created_at": "2026-09-15T23:07:47.000Z",
+  "updated_at": "2026-09-15T23:07:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "安装iTunes的时候提示 无法安装服务Bonjour服务请确认您有足够的权 …",
+      "url": "https://zhidao.baidu.com/question/1540549559848623787.html",
+      "snippet": "安装iTunes的时候提示 无法安装服务Bonjour服务请确认您有足够的权限安装系统服务1、在桌面使用快捷键win+r将打开运行窗口，输 …"
+    },
+    {
+      "title": "Bonjour服务被禁用怎么办 如何开启Bonjour服务-百度经验",
+      "url": "https://jingyan.baidu.com/article/f54ae2fc2076a01e92b84912.html",
+      "snippet": "Oct 29, 2014 · Bonjour服务被禁用怎么办 如何开启Bonjour服务,在使用iTue进行家庭共享的时候，发现Bojour服务被禁用了，那么这个 …"
+    },
+    {
+      "title": "我安装上duetdisplay之后，为什么没有反应啊？ - 知乎",
+      "url": "https://www.zhihu.com/question/369410066?sort=created",
+      "snippet": "我刚刚遭遇了跟你一样的问题 我的解决方法如下，希望能帮到你： 打开任务管理器→服务→找到Bonjour Service和Apple Mobile …"
+    },
+    {
+      "title": "各国语言说早上好 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/92553146.html",
+      "snippet": "各国语言说早上好1、中文：早上好，zaoshanghao2、英语：Good morning3、日语：おはようございます4、韩语：안녕하세요5、保 …"
+    },
+    {
+      "title": "为什么法国人讨厌说英语？ - 知乎",
+      "url": "https://www.zhihu.com/question/49936853",
+      "snippet": "看态度的。 如果你努力的憋了个Bonjour、Excusez-moi、Merci出来，然后努力希望用法语表达，放心他就算听不懂,也会主动问你会 …"
+    }
+  ]
+}

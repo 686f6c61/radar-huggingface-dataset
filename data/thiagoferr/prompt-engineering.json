@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ThiagoFerr/prompt-engineering",
+  "slug": "thiagoferr-prompt-engineering",
+  "author": "ThiagoFerr",
+  "url": "https://huggingface.co/ThiagoFerr/prompt-engineering",
+  "created_at": "2026-09-15T22:05:16.000Z",
+  "updated_at": "2026-09-15T22:05:22.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "prompt-engineering",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Store Finder - Lidl GB",
+      "url": "https://www.lidl.co.uk/c/store-finder/s10023098",
+      "snippet": "Store Finder & Opening Hours Pop your postcode into the box and click your nearest store to see opening times and all the offers …"
+    },
+    {
+      "title": "Food, Non-food, Wine and Recipes | Lidl GB",
+      "url": "https://www.lidl.co.uk/",
+      "snippet": "Explore our range of high quality fresh food & product offers. Enjoy great prices & latest deals in store. Shop today & use your Lidl …"
+    },
+    {
+      "title": "Online Leaflets | View Latest Deals & Offers | Lidl GB",
+      "url": "https://www.lidl.co.uk/c/online-leaflets/s10023175",
+      "snippet": "Discover great deals & offers with our online leaflets at Lidl GB. Save big on groceries, household items, and more. Shop today and …"
+    },
+    {
+      "title": "Food Offers | Deals on Groceries, Food & Drinks | Lidl GB",
+      "url": "https://www.lidl.co.uk/c/food-offers/s10023092",
+      "snippet": "Explore our wide range of food offers at Lidl GB. Enjoy great prices & latest deals across groceries, cooked food and world food. …"
+    },
+    {
+      "title": "Lidl store Spiceball Park Road in Banbury",
+      "url": "https://www.lidl.co.uk/s/en-GB/store-finder/banbury/spiceball-park-road/",
+      "snippet": "Your Lidl store at Spiceball Park Road, Banbury OX16 2DX Show opening hours and special offers for this store. The highest quality …"
+    }
+  ]
+}

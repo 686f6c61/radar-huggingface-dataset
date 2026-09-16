@@ -5,7 +5,7 @@
   "author": "leomaurodesenv",
   "url": "https://huggingface.co/leomaurodesenv/bert-base-uncased-jailbreakv-28k-augmented",
   "created_at": "2026-09-13T16:06:50.000Z",
-  "updated_at": "2026-09-14T21:32:20.000Z",
+  "updated_at": "2026-09-15T21:52:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 109483778,
   "parameters_human": "109.5M",
-  "storage_bytes": 12262846737,
-  "storage_human": "12.3 GB",
+  "storage_bytes": 20584060593,
+  "storage_human": "20.6 GB",
   "base_model": "google-bert/bert-base-uncased",
   "formats": [
     "safetensors"

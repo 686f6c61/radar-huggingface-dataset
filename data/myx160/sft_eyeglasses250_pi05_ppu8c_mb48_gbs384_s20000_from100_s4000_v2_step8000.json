@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "myx160/sft_eyeglasses250_pi05_ppu8c_mb48_gbs384_s20000_from100_s4000_v2_step8000",
+  "slug": "myx160-sft_eyeglasses250_pi05_ppu8c_mb48_gbs384_s20000_from100_s4000_v2_step8000",
+  "author": "myx160",
+  "url": "https://huggingface.co/myx160/sft_eyeglasses250_pi05_ppu8c_mb48_gbs384_s20000_from100_s4000_v2_step8000",
+  "created_at": "2026-09-16T00:47:37.000Z",
+  "updated_at": "2026-09-16T01:11:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "vla",
+    "piper",
+    "lerobot",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34143707807,
+  "storage_human": "34.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sandwich Market Size, Share, Industry Trends, Forecast, 2034",
+      "url": "https://www.fortunebusinessinsights.com/sandwich-market-113457",
+      "snippet": "Aug 24, 2026 · The report covers the global sandwich market industry analysis, a detailed competitive landscape with information on …"
+    },
+    {
+      "title": "Bread Market Size, Share & Growth Research Report - 2031",
+      "url": "https://www.mordorintelligence.com/industry-reports/bread-market",
+      "snippet": "Jul 29, 2026 · For this study, the bread market covers commercially sold bread products made from grain-based dough, including …"
+    },
+    {
+      "title": "Global Sandwich Market Size, Share & Growth Analysis Report – …",
+      "url": "https://www.marketresearch.com/OG-Analysis-v3922/Global-Sandwich-Size-Share-Growth-43946702/",
+      "snippet": "Feb 17, 2026 · Over the forecast horizon, the market will tilt toward balanced nutrition, culinary mashups, and digitally enabled …"
+    },
+    {
+      "title": "Global Sandwich Market 2025-2035: Trends, Share & Growth",
+      "url": "https://globaldatarouteanalytics.com/report/1551/sandwich-market",
+      "snippet": "Explore the global sandwich market 2025-2035: trends, growth, and forecasts by type, product, and service for on-premise & delivery …"
+    },
+    {
+      "title": "Top Selling Bread Brands: 2025 Market Leaders & Trends",
+      "url": "https://www.accio.com/business/top-selling-bread-brands",
+      "snippet": "Sep 5, 2026 · Discover 2025's top selling bread brands featuring gluten-free, plant-based, and exotic flavors. Want to boost your …"
+    }
+  ]
+}

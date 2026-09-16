@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ertoluk/ai-metin-dedektor-en",
+  "slug": "ertoluk-ai-metin-dedektor-en",
+  "author": "ertoluk",
+  "url": "https://huggingface.co/ertoluk/ai-metin-dedektor-en",
+  "created_at": "2026-09-16T01:21:09.000Z",
+  "updated_at": "2026-09-16T01:21:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "ai-detection",
+    "text-classification",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124647170,
+  "parameters_human": "124.6M",
+  "storage_bytes": 498612824,
+  "storage_human": "499 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Расшифровка общего анализа крови: нормы, таблицы и …",
+      "url": "https://docru.ru/zdorove/diagnostika-i-obsledovaniya-organizma/mediczinskie-analizy-i-ih-rasshifrovka/obshhij-analiz-krovi-polnaya-rasshifrovka-vseh-pokazatelej-dlya-nachinayushhih/",
+      "snippet": "Apr 3, 2026 · Подробная расшифровка всех показателей общего анализа крови с таблицами норм, чек-листом подготовки и …"
+    },
+    {
+      "title": "Общий анализ крови: расшифровка показателей и нормы",
+      "url": "https://medicod.ru/articles/obshhij-analiz-krovi-rasshifrovka",
+      "snippet": "Mar 8, 2026 · Расшифровка ОАК: нормы эритроцитов, гемоглобина, лейкоцитов, тромбоцитов для взрослых и детей. …"
+    },
+    {
+      "title": "Общий анализ крови (ОАК): нормы, расшифровка и отклонения",
+      "url": "https://labreadai.com/tests/complete-blood-count",
+      "snippet": "Mar 21, 2026 · Коротко Общий анализ крови (ОАК) — базовый тест, оценивающий гемоглобин, лейкоциты, тромбоциты, СОЭ …"
+    },
+    {
+      "title": "ОАК расшифровка: нормы показателей у взрослых",
+      "url": "https://medicod.ru/articles/obshhij-analiz-krovi-oak-rasshifrovka-pokazatelej-norma-otklonenija",
+      "snippet": "Jan 12, 2026 · Полная расшифровка общего анализа крови: гемоглобин, лейкоциты, эритроциты, тромбоциты ..."
+    },
+    {
+      "title": "ОАК: расшифровка показателей крови — таблица для мужчин и …",
+      "url": "https://biorise.ru/blog/obshhii-analiz-krovi-rasshifrovka/",
+      "snippet": "Jul 13, 2026 · Основные показатели ОАК: гемоглобин, эритроциты, гематокрит, MCV, MCH, MCHC, RDW, лейкоциты, …"
+    }
+  ]
+}

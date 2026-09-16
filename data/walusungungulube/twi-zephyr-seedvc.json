@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "walusungungulube/twi-zephyr-seedvc",
+  "slug": "walusungungulube-twi-zephyr-seedvc",
+  "author": "walusungungulube",
+  "url": "https://huggingface.co/walusungungulube/twi-zephyr-seedvc",
+  "created_at": "2026-09-15T20:50:37.000Z",
+  "updated_at": "2026-09-15T20:54:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 413130764,
+  "storage_human": "413 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mitgliedsbescheinigung online beantragen | AOK",
+      "url": "https://www.aok.de/pk/versichertenservice/mitgliedsbescheinigung-beantragen/",
+      "snippet": "Falls Sie die automatische Mitgliedsbescheinigung nicht nutzen können, wenden Sie sich bitte direkt an Ihre AOK, um diese zu …"
+    },
+    {
+      "title": "Fragebögen und Bescheinigungen | AOK",
+      "url": "https://www.aok.de/pk/formulare-antraege/frageboegen-bescheinigungen/",
+      "snippet": "Um sich die Fragebögen oder Bescheinigungen anzeigen zu lassen, geben Sie hier die Postleitzahl Ihres Wohnorts ein, damit wir die …"
+    },
+    {
+      "title": "AOK-Mitgliedsbescheinigung - so fordern Sie die Bescheinigung an",
+      "url": "https://www.helpster.de/aok-mitgliedsbescheinigung-so-fordern-sie-die-bescheinigung-an_65616",
+      "snippet": "Sie benötigen die AOK-Mitgliedsbescheinigung und wissen nicht, wie Sie diese bekommen können? Mit wenigen Klicks finden Sie …"
+    },
+    {
+      "title": "Hilfe | Meine AOK",
+      "url": "https://meine.aok.de/public/hilfe",
+      "snippet": "„Meine AOK“ funktioniert nicht. Was kann ich tun? Bitte kontaktieren Sie Ihre AOK telefonisch unter 0800 2767676. Die …"
+    },
+    {
+      "title": "Bescheinigungen | AOK Sachsen-Anhalt - Deine Gesundheitswelt",
+      "url": "https://www.deine-gesundheitswelt.de/service/bescheinigungen",
+      "snippet": "Diese Bescheinigungen können Sie ganz einfach in der Online-Geschäftsstelle der AOK Sachsen-Anhalt anfordern."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Veilance/Verity-1.7B-Beta",
+  "slug": "veilance-verity-1-7b-beta",
+  "author": "Veilance",
+  "url": "https://huggingface.co/Veilance/Verity-1.7B-Beta",
+  "created_at": "2026-09-15T21:41:14.000Z",
+  "updated_at": "2026-09-15T21:54:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "veilance",
+    "verity",
+    "privacy",
+    "privacy-policy",
+    "browser-security",
+    "browser-privacy",
+    "telemetry",
+    "policy-analysis",
+    "qwen",
+    "qlora",
+    "structured-output",
+    "json",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:adapter:Qwen/Qwen3-1.7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 150935626,
+  "storage_human": "151 MB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Veilance | Arc'teryx France",
+      "url": "https://arcteryx.com/fr/fr/c/veilance",
+      "snippet": "Softshell à capuche d’inspiration sportswear, conçue pour les conditions variables"
+    },
+    {
+      "title": "Vêtements et accessoires Veilance pour homme - Arc'teryx",
+      "url": "https://arcteryx.com/fr/fr/c/mens/veilance",
+      "snippet": "Arc'teryx Veilance is a premium urban technical apparel line founded in 2009 that combines minimalist design with mountain-tested …"
+    },
+    {
+      "title": "Veilance® Official Website | Veilance Jackets, Coats, Pants, Clothing",
+      "url": "https://theveilance.com/",
+      "snippet": "Jun 12, 2026 · Shop authentic Veilance clothing: technical jackets, insulated coats, Field Jackets, and Corbel pants. High …"
+    },
+    {
+      "title": "Veilance - Mens Technical Apparel - HAVEN",
+      "url": "https://havenshop.com/collections/veilance",
+      "snippet": "Veilance is Arc’teryx’s premier line of performance menswear. Utilizing advanced technical fabrics to ensure that each piece provides …"
+    },
+    {
+      "title": "Dernière collection Veilance pour Hommes | SSENSE France",
+      "url": "https://www.ssense.com/fr-fr/hommes/designers/veilance",
+      "snippet": "Magasinez la nouvelle collection Veilance pour Hommes chez SSENSE. Livraison et retours rapides dans le monde entier. Livraison …"
+    }
+  ]
+}

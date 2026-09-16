@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "RomanOneAndFun/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-MTP-APEX_I-Quality_Q6",
+  "slug": "romanoneandfun-qwen3-6-35b-a3b-claude-4-7-opus-reasoning-distilled-mtp-apex_i-quality_q6",
+  "author": "RomanOneAndFun",
+  "url": "https://huggingface.co/RomanOneAndFun/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-MTP-APEX_I-Quality_Q6",
+  "created_at": "2026-09-15T15:14:35.000Z",
+  "updated_at": "2026-09-16T02:58:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen3_5_moe",
+    "Qwen",
+    "QWen3.6",
+    "Qwen3.635B",
+    "Qwn3.635BA3B",
+    "35B",
+    "A3B",
+    "MTP",
+    "Claude-4.7-Opus-Reasoning",
+    "Distilled",
+    "APEX",
+    "I-QUALITY",
+    "Q6",
+    "quantize",
+    "convert",
+    "GGUF",
+    "safetensor",
+    "imatrix",
+    "tensor types",
+    "perplexity",
+    "logits",
+    "K-mean",
+    "K-max",
+    "en",
+    "base_model:lordx64/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled",
+    "base_model:quantized:lordx64/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 29655850111,
+  "storage_human": "29.7 GB",
+  "base_model": "lordx64/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SRF1 / SRF2 /SRFi - Swisscom Community",
+      "url": "https://community.swisscom.ch/d/865911-srf1-srf2-srfi",
+      "snippet": "Feb 13, 2026 · SRF behauptet, das Problem liege nicht bei SRF und die Swisscom Hotline meldet, das Problem liege nicht bei …"
+    },
+    {
+      "title": "Verpixeltes Bild nur SRF Schweiz Sender UHD, nur…",
+      "url": "https://community.swisscom.ch/de/d/860458-verpixeltes-bild-nur-srf-schweiz-sender-uhd-nur-ethernet-nur-live",
+      "snippet": "Jun 19, 2025 · Verpixeltes Bild nur SRF Schweiz Sender UHD, nur Ethernet, nur Live jorgjean Guten Morgen, habe bei den SRF …"
+    },
+    {
+      "title": "Unterschied Bildqualität Set-Top-Box & Smart-TV-App",
+      "url": "https://community.swisscom.ch/d/825806-unterschied-bildqualitat-set-top-box-smart-tv-app",
+      "snippet": "Jun 14, 2024 · Resultate: - alles was SRF von der Fussball-EM aktuell sendet, basiert auflösungsmässig lediglich auf dem HD 720p …"
+    },
+    {
+      "title": "Werbung im Standbild während der Wiederholung ist seitens…",
+      "url": "https://community.swisscom.ch/d/867931-publicite-en-arret-sur-image-lors-de-replay-est-inadmissible-de-la-par-de-la-tsr",
+      "snippet": "May 13, 2026 · Ja, die Einblendung von Werbung bei Standbildern während der TSR-Wiederholung ist eine Schande, die den …"
+    },
+    {
+      "title": "Livestream mit SRF Play (rote Taste) - Swisscom Community",
+      "url": "https://community.swisscom.ch/d/831792-livestream-mit-srf-play-rote-taste",
+      "snippet": "Jul 30, 2024 · Hallo Ich kann keine Livestreams (Olypiade) ansehen, wenn ich Play SRF mit der roten Taste aufrufe. Es werden zwar …"
+    }
+  ]
+}

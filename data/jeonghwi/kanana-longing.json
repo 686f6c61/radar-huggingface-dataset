@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "JeongHwi/Kanana-Longing",
+  "slug": "jeonghwi-kanana-longing",
+  "author": "JeongHwi",
+  "url": "https://huggingface.co/JeongHwi/Kanana-Longing",
+  "created_at": "2026-09-15T22:40:45.000Z",
+  "updated_at": "2026-09-15T22:44:51.000Z",
+  "license": "kanana-open-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "korean",
+    "kanana",
+    "prototype",
+    "local-inference",
+    "binary-release",
+    "black-box-evaluation",
+    "research",
+    "linux",
+    "x86_64",
+    "ko",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11361360,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vagina crosshair : r/valorantcrosshairs - Reddit",
+      "url": "https://www.reddit.com/r/valorantcrosshairs/comments/xh24bn/vagina_crosshair/",
+      "snippet": "Sep 18, 2022 · Go to valorantcrosshairs r/valorantcrosshairs r/valorantcrosshairs Valorant crosshairs Reddit MembersOnline • …"
+    },
+    {
+      "title": "Scientifically proven best enemy/crosshair colors and filters",
+      "url": "https://www.reddit.com/r/VALORANT/comments/166eqtp/scientifically_proven_best_enemycrosshair_colors/",
+      "snippet": "Heres the scientifically proven best enemy highlight color and crosshair color. i remember some time ago watching a video on how …"
+    },
+    {
+      "title": "\"Head level crosshair placement\" ends up always hitting body shots.",
+      "url": "https://www.reddit.com/r/VALORANT/comments/15kuks5/head_level_crosshair_placement_ends_up_always/",
+      "snippet": "I've been working on my crosshair placement since I started playing, and even still does my crosshair supposedly never land on the …"
+    },
+    {
+      "title": "Why does almost no one use firing/movement error on their crosshair ...",
+      "url": "https://www.reddit.com/r/VALORANT/comments/1aphgz4/why_does_almost_no_one_use_firingmovement_error/",
+      "snippet": "That's why they SHOULDN'T use firing error, all it does is make them reliant on their crosshair to time deadzones. For anyone gold …"
+    },
+    {
+      "title": "which crosshair should I use? : r/VALORANT - Reddit",
+      "url": "https://www.reddit.com/r/VALORANT/comments/1085yv3/which_crosshair_should_i_use/",
+      "snippet": "Jan 10, 2023 · The main reason people say to change your crosshair is because the standard crosshair is simply not that great. I …"
+    }
+  ]
+}

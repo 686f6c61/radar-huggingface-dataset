@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Swift-Qwen3.8-27B-Uncensored-BF16-i1-GGUF",
   "created_at": "2026-09-15T14:48:16.000Z",
-  "updated_at": "2026-09-15T15:25:00.000Z",
+  "updated_at": "2026-09-15T18:00:05.000Z",
   "license": "swift-open-license-1.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -39,8 +39,8 @@
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 39471868864,
-  "storage_human": "39.5 GB",
+  "storage_bytes": 218553885184,
+  "storage_human": "218.6 GB",
   "base_model": "d0xin/Swift-Qwen3.8-27B-Uncensored-BF16",
   "formats": [
     "gguf"

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "DylanCouzon/constella-nano",
+  "slug": "dylancouzon-constella-nano",
+  "author": "DylanCouzon",
+  "url": "https://huggingface.co/DylanCouzon/constella-nano",
+  "created_at": "2026-09-15T19:57:29.000Z",
+  "updated_at": "2026-09-15T22:29:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "fastembed",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "fastembed",
+    "onnx",
+    "bert",
+    "qdrant",
+    "retrieval",
+    "asymmetric-dual-encoder",
+    "research-preview",
+    "feature-extraction",
+    "en",
+    "base_model:BAAI/bge-small-en-v1.5",
+    "base_model:quantized:BAAI/bge-small-en-v1.5",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 137802369,
+  "storage_human": "138 MB",
+  "base_model": "BAAI/bge-small-en-v1.5",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kosma Masny (@kosma.xyz) • Instagram photos and videos",
+      "url": "https://www.instagram.com/kosma.xyz/",
+      "snippet": "969 Followers, 1,412 Following, 98 Posts - Kosma Masny (@kosma.xyz) on Instagram: \" (ż)art director 👾 visual wizard 👹 elder …"
+    },
+    {
+      "title": "Kosma Masny (Kosma) - Facebook",
+      "url": "https://www.facebook.com/dkmasny/",
+      "snippet": "Mar 22, 2026 · W ramach Akademii East Design Days gościł u nas Kosma Masny, znany grafik i zdobywca nagród. Jego …"
+    },
+    {
+      "title": "KOSMA MASNY (@kosma.exe) • Instagram photos and videos",
+      "url": "https://www.instagram.com/kosma.exe/",
+      "snippet": "A graphic/motion designer based in Warsaw. 548 Followers, 283 Following, 118 Posts - KOSMA MASNY (@kosma.exe) on …"
+    },
+    {
+      "title": "KOSMA MASNY",
+      "url": "https://www.picnob.com/dp/kosma.exe/",
+      "snippet": "I'm Kosma! A graphic/motion designer based in Warsaw. Buisness inquiries - mail@kosma.xyz Motion: @kosma.xyz. Picnob is not …"
+    },
+    {
+      "title": "Kosma Masny - Dribbble",
+      "url": "https://dribbble.com/kosma_masny",
+      "snippet": "Kosma Masny | Hi I'm Kosma - a motion and graphic designer based in Warsaw, Poland. | Connect with them on Dribbble; the global …"
+    }
+  ]
+}

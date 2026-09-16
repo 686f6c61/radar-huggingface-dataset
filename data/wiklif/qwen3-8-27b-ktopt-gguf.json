@@ -5,7 +5,7 @@
   "author": "wiklif",
   "url": "https://huggingface.co/wiklif/Qwen3.8-27B-KTopt-GGUF",
   "created_at": "2026-09-13T17:30:23.000Z",
-  "updated_at": "2026-09-14T06:16:37.000Z",
+  "updated_at": "2026-09-15T21:46:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 218,
+  "downloads_30d": 555,
   "trending_score": 0,
   "parameters": 16220160,
   "parameters_human": "16.2M",

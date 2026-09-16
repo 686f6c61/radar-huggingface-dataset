@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Ash4Life/LTX-2.5-CQ-Video-and-Image-Enhancer-LoRAs",
+  "slug": "ash4life-ltx-2-5-cq-video-and-image-enhancer-loras",
+  "author": "Ash4Life",
+  "url": "https://huggingface.co/Ash4Life/LTX-2.5-CQ-Video-and-Image-Enhancer-LoRAs",
+  "created_at": "2026-09-15T20:29:08.000Z",
+  "updated_at": "2026-09-15T20:29:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2674185458,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Federale Pensioendienst | Federale Pensioendienst",
+      "url": "https://www.sfpd.fgov.be/",
+      "snippet": "De Pensioendienst berekent en betaalt de pensioenen van werknemers, zelfstandigen en ambtenaren. Wanneer kunt u met …"
+    },
+    {
+      "title": "Pensioenhervorming van 2025–2029 | Federale Pensioendienst - SFPD",
+      "url": "https://www.sfpd.fgov.be/nl/veranderingen/pensioenhervorming",
+      "snippet": "Op deze pagina verzamelen we alle informatie over de pensioenhervorming van de Arizona-regering."
+    },
+    {
+      "title": "SFPD",
+      "url": "https://www-acc.sfpd.fgov.be/nl/blijf-verbonden/pensioenpunt/oostende",
+      "snippet": "SFPD ... SFPD"
+    },
+    {
+      "title": "Contact | Federale Pensioendienst - SFPD",
+      "url": "https://www.sfpd.fgov.be/nl/over-ons/contact",
+      "snippet": "Contacteer de Federale Pensioendienst voor vragen, informatie of hulp via hun contactpagina."
+    },
+    {
+      "title": "Bruto – netto | Federale Pensioendienst - SFPD",
+      "url": "https://www.sfpd.fgov.be/nl/betaling/brut-net",
+      "snippet": "Maandelijks houdt de Pensioendienst 0,5 % in op het bruto rustpensioen van de ambtenaar of van de Spoorwegen om de …"
+    }
+  ]
+}

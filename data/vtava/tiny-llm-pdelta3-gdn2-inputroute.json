@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "vtava/Tiny-LLM-PDelta3-GDN2-InputRoute",
+  "slug": "vtava-tiny-llm-pdelta3-gdn2-inputroute",
+  "author": "vtava",
+  "url": "https://huggingface.co/vtava/Tiny-LLM-PDelta3-GDN2-InputRoute",
+  "created_at": "2026-09-15T22:04:16.000Z",
+  "updated_at": "2026-09-15T22:04:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tinycenn",
+    "cenn",
+    "language-modeling",
+    "text-generation",
+    "research",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "base_model:arnir0/Tiny-LLM",
+    "base_model:finetune:arnir0/Tiny-LLM",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 304168,
+  "storage_human": "304168 B",
+  "base_model": "arnir0/Tiny-LLM",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Car camping advice for a total beginner : r/camping - Reddit",
+      "url": "https://www.reddit.com/r/camping/comments/i5irve/car_camping_advice_for_a_total_beginner/",
+      "snippet": "Aug 7, 2020 · Car camping advice for a total beginner Hi all - longtime lurker, first time calmer. Like many, I’m feeling the pull of the …"
+    },
+    {
+      "title": "Car Camping 101: The Complete Guide to Camping for Beginners",
+      "url": "https://www.foxintheforest.net/car-camping-101-camping-for-beginners/",
+      "snippet": "May 19, 2019 · In this guide to camping for beginners we cover everything from what tent camping gear you need to how to use the …"
+    },
+    {
+      "title": "The Best Camping Gear for Beginners and Car Campers - AFAR",
+      "url": "https://www.afar.com/magazine/the-best-camping-gear-for-beginners-and-car-campers",
+      "snippet": "Apr 27, 2021 · Get camping gear that is made for beginners, car campers, and casual outdoors people."
+    },
+    {
+      "title": "From Beginner to Now: My Car Camping Setup (What I've Learned)",
+      "url": "https://www.youtube.com/watch?v=M7n2H9uRtNk",
+      "snippet": "Feb 1, 2026 · In this video, I break down three different camping & car-camping setups—from my very first budget-friendly build to my …"
+    },
+    {
+      "title": "Car Camping for Beginners — the Off-Grid Guide",
+      "url": "https://offgridadventureco.com.au/car-camping-beginners/",
+      "snippet": "Jun 20, 2023 · Car Camping for Beginners — the Off-Grid Guide Car camping beginner tips Start small. Do you have aspirations of …"
+    }
+  ]
+}

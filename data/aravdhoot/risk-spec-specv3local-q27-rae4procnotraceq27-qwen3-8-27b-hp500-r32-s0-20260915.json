@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "aravdhoot/risk-spec-specv3local-q27-rae4procnotraceq27-qwen3.8-27b-hp500-r32-s0-20260915",
+  "slug": "aravdhoot-risk-spec-specv3local-q27-rae4procnotraceq27-qwen3-8-27b-hp500-r32-s0-20260915",
+  "author": "aravdhoot",
+  "url": "https://huggingface.co/aravdhoot/risk-spec-specv3local-q27-rae4procnotraceq27-qwen3.8-27b-hp500-r32-s0-20260915",
+  "created_at": "2026-09-15T20:39:04.000Z",
+  "updated_at": "2026-09-15T21:46:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7013632384,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.de/intl/de/earth/",
+      "snippet": "Google Earth ist eine fotorealistische und digitale Version unseres Planeten. Woher kommen die Bilder? Wie sind sie …"
+    },
+    {
+      "title": "Datenschutz – Street View – Google Maps",
+      "url": "https://maps.google.de/intl/de/help/maps/streetview/privacy.html",
+      "snippet": "Google Maps mit Street View bietet Ihnen die Möglichkeit, Orte auf der ganzen Welt in einer 360-Grad-Panoramaansicht auf …"
+    },
+    {
+      "title": "Google Maps Gebäudeplan",
+      "url": "https://maps.google.de/help/maps/floorplans/",
+      "snippet": "Hinweis: Google Maps Gebäudeplan befindet sich noch in der Betaphase. Wir arbeiten derzeit daran, einige Fehler bei der …"
+    },
+    {
+      "title": "Earth-Versionen – Google Earth",
+      "url": "https://maps.google.de/intl/de/earth/versions/",
+      "snippet": "Fliege mit Google Earth für Chrome in Sekundenschnelle überallhin und besuche hunderte Städte in 3D direkt in deinem Browser. Du …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.de/mapfiles/home3.html",
+      "snippet": "Explore the world with Google Maps, find locations, get directions, and access real-time traffic updates."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Honkware/Qwen3-8B-exl3-4.5bpw",
+  "slug": "honkware-qwen3-8b-exl3-4-5bpw",
+  "author": "Honkware",
+  "url": "https://huggingface.co/Honkware/Qwen3-8B-exl3-4.5bpw",
+  "created_at": "2026-09-16T01:29:40.000Z",
+  "updated_at": "2026-09-16T01:30:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "qwen3",
+    "exl3",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:quantized:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2812392832,
+  "parameters_human": "2.81B",
+  "storage_bytes": 5636336093,
+  "storage_human": "5.6 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "USPS.com® - USPS Tracking®",
+      "url": "https://tools.usps.com/go/TrackConfirmAction!input.action?msockid=3351204decdb61d9037b379bed2660e1",
+      "snippet": ""
+    },
+    {
+      "title": "Zákaznícky servis - Slovak Parcel Service - sps-sro.sk",
+      "url": "https://www.sps-sro.sk/en/",
+      "snippet": "We are the largest and oldest Slovak courier company with more than 800+ couriers, 29 distribution centers, a network of 1200 …"
+    },
+    {
+      "title": "Zákaznícky servis - Slovak Parcel Service",
+      "url": "https://www.sps-sro.sk/en/moja-zasielka/",
+      "snippet": "1 day ago · Zákaznícky servis Slovak Parcel Service je dostupný každý pracovný deň od 8:00 do 16:30."
+    },
+    {
+      "title": "Zákaznícky servis - Slovak Parcel Service",
+      "url": "https://www.sps-sro.sk/",
+      "snippet": "Aktuálny stav zásielky, flexibilné doručenie, podpora zákazníckeho servisu a komunikácia s SPS na jednom mieste. Čo je mySPS? …"
+    },
+    {
+      "title": "All in one global package tracking | 17TRACK",
+      "url": "https://www.17track.net/en",
+      "snippet": "17TRACK supports tracking for 3500+ carriers, including USPS, UPS, FedEx, and DHL. Enter your tracking number to get 99.9% …"
+    }
+  ]
+}

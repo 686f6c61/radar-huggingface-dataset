@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Sbkn0307/XTTS-v2",
+  "slug": "sbkn0307-xtts-v2",
+  "author": "Sbkn0307",
+  "url": "https://huggingface.co/Sbkn0307/XTTS-v2",
+  "created_at": "2026-09-16T00:22:11.000Z",
+  "updated_at": "2026-09-16T00:22:11.000Z",
+  "license": "coqui-public-model-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "coqui",
+  "languages": [],
+  "tags": [
+    "coqui",
+    "text-to-speech",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2086199391,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何解决“操作无法完成，因为文件已经在 COM Surrogate 中打开。”？",
+      "url": "https://www.zhihu.com/question/41295607",
+      "snippet": "Mar 12, 2016 · 我在删图片详细信息时，只删了部分信息，提示操作无法完成，因为文件已经在 COM Surrogate 中打开。"
+    },
+    {
+      "title": "如何下载WinRAR？ - 知乎",
+      "url": "https://www.zhihu.com/question/307242976",
+      "snippet": "有点东西！ WinRAR 本身是个英文商业软件，解压软件用来用去还是WinRAR用的舒服，其他的用不大习惯。 虽然有7-zip开源软件， …"
+    },
+    {
+      "title": "【狂人論壇】",
+      "url": "https://123.briian.com/",
+      "snippet": "【狂人論壇】 最新回復 繳完車貸一定要拿「清償證明」，再到監理站「塗銷動產擔保 ... WinRAR v7.23 壓縮/解壓縮軟體 (繁體中文版) …"
+    },
+    {
+      "title": "免費 7-Zip v26 .01壓縮、解壓縮軟體 (Win , macOS)-系統工具、快捷操 …",
+      "url": "https://123.briian.com/forum.php?mod=viewthread&tid=143",
+      "snippet": "Oct 4, 2010 · 免費 7-Zip v26 .01壓縮、解壓縮軟體 (Win, macOS)"
+    },
+    {
+      "title": "www.win-rar.com 是真的 WinRAR 官网吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/11229133650",
+      "snippet": "WinRAR是一款用于管理压缩包文件的共享软件。其算法由作者尤金·罗谢尔研发，享有原创专利。 完全支持RAR与ZIP压缩包案，并 …"
+    }
+  ]
+}

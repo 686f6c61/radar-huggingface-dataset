@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Esposito33/vit-generation-finetune",
+  "slug": "esposito33-vit-generation-finetune",
+  "author": "Esposito33",
+  "url": "https://huggingface.co/Esposito33/vit-generation-finetune",
+  "created_at": "2026-09-16T01:08:59.000Z",
+  "updated_at": "2026-09-16T01:09:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Target : Expect More. Pay Less.",
+      "url": "https://www.target.com/",
+      "snippet": "Shop Target online and in-store for everything from groceries and essentials to clothing and electronics. Choose contactless pickup …"
+    },
+    {
+      "title": "Shop All Categories : Target",
+      "url": "https://www.target.com/c/shop-all-categories/-/n-5xsxf",
+      "snippet": "Shop Target online and in-store for everything you need, from groceries and essentials to clothing and electronics."
+    },
+    {
+      "title": "Order Pickup - Target",
+      "url": "https://www.target.com/c/order-pickup/-/N-ng0a0",
+      "snippet": "Buy your favorite items online on target.com and pick them up at your favorite Target store when it’s convenient for you."
+    },
+    {
+      "title": "Halloween 2026 : Target",
+      "url": "https://www.target.com/c/halloween/-/N-5xt2o",
+      "snippet": "Shop Halloween indoor decor, outdoor decor, costumes, candy, party supplies and entertainment at Target for spooky fun. Free …"
+    },
+    {
+      "title": "Orders - Target",
+      "url": "https://www.target.com/orders",
+      "snippet": "Grocery Clothing, Shoes & Accessories Baby Home Furniture Kitchen & Dining Outdoor Living & Garden Toys Electronics Video …"
+    }
+  ]
+}

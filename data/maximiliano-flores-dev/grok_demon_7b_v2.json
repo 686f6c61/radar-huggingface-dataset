@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Maximiliano-Flores-Dev/grok_demon_7b_v2",
+  "slug": "maximiliano-flores-dev-grok_demon_7b_v2",
+  "author": "Maximiliano-Flores-Dev",
+  "url": "https://huggingface.co/Maximiliano-Flores-Dev/grok_demon_7b_v2",
+  "created_at": "2026-09-16T00:58:34.000Z",
+  "updated_at": "2026-09-16T00:58:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:Maximiliano-Flores-Dev/grok_demon_7b",
+    "base_model:finetune:Maximiliano-Flores-Dev/grok_demon_7b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172955358,
+  "storage_human": "173 MB",
+  "base_model": "Maximiliano-Flores-Dev/grok_demon_7b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Christian Birthday Card for Daughter - Etsy UK",
+      "url": "https://www.etsy.com/uk/market/christian_birthday_card_for_daughter?msockid=01ff0fe44a8967682ac518324bac6666",
+      "snippet": "Check out our christian birthday card for daughter selection for the very best in unique or custom, handmade pieces from our shops."
+    },
+    {
+      "title": "Christian Birthday Cards | Send Blessings & Bible Verses | Faith ...",
+      "url": "https://www.faithforwardcards.com/christian-cards/birthday/",
+      "snippet": "Celebrate a special day with a beautiful Christian birthday card. Our collection features uplifting Bible verses and heartfelt messages …"
+    },
+    {
+      "title": "Christian Birthday Greeting Cards",
+      "url": "https://www.thechristianshop.co.uk/christian-birthday-greeting-cards/",
+      "snippet": "Discover our huge selection of Christian birthday greeting cards. We are a specialist retailer providing great quality greeting cards at …"
+    },
+    {
+      "title": "Christian Daughter Birthday Card - Etsy UK",
+      "url": "https://www.etsy.com/uk/market/christian_daughter_birthday_card?msockid=01ff0fe44a8967682ac518324bac6666",
+      "snippet": "Check out our christian daughter birthday card selection for the very best in unique or custom, handmade pieces from our greeting …"
+    },
+    {
+      "title": "210+ Christian birthday wishes for Daughter – God Blessings & Greetings",
+      "url": "https://verywishes.com/christian-birthday-wishes-for-daughter/",
+      "snippet": "Infused with faith, Christian birthday wishes for daughter carry a special resonance, offering not only love and warmth but also the …"
+    }
+  ]
+}

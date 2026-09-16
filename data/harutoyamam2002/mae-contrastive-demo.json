@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "HarutoYamam2002/mae-contrastive-demo",
+  "slug": "harutoyamam2002-mae-contrastive-demo",
+  "author": "HarutoYamam2002",
+  "url": "https://huggingface.co/HarutoYamam2002/mae-contrastive-demo",
+  "created_at": "2026-09-15T21:27:24.000Z",
+  "updated_at": "2026-09-15T21:27:30.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unregelmäßige Verben im Englischen • Tabelle und PDF",
+      "url": "https://studyflix.de/englisch/unregelmasige-verben-englisch-3018",
+      "snippet": "Um dir das Lernen so einfach wie möglich zu machen, haben wir hier eine Tabelle mit allen unregelmäßigen Verben zum …"
+    },
+    {
+      "title": "Unregelmäßige Verben Englisch lernen – Liste, Gruppen & App",
+      "url": "https://englischkomet.de/verstehen/unregelmaessige-verben-englisch/",
+      "snippet": "Unregelmäßige Verben Englisch: Lern sie mit dem 4-Gruppen-System statt stur auswendig. Mit kompletter Liste, Übungen & …"
+    },
+    {
+      "title": "Unregelmäßige Verben Englisch: Liste, Tabelle & Regeln",
+      "url": "https://www.phase-6.de/magazin/rubriken/vokabeln-grammatik/unregelmaessige-verben-englisch-liste-tabelle-regeln/",
+      "snippet": "In der folgenden Liste findest du die gängigsten irregulären englischen Verben in der Grundform(Infinitive), in der einfachen …"
+    },
+    {
+      "title": "Ausführliche Tabelle der unregelmäßigen Verben im Englischen",
+      "url": "https://www.englisch-hilfen.de/grammar/unreg_verben1.htm",
+      "snippet": "Der Trend zur Standardisierung der unregelmäßigen Verben ist nicht nur im amerikanischen Englisch, sondern auch im britischen …"
+    },
+    {
+      "title": "Unregelmäßige Verben Englisch: Liste, Tabelle & Tipps",
+      "url": "https://www.sprachcaffe.de/oc/englische-grammatik/wortarten/unregelmaessige-verben-englisch.htm",
+      "snippet": "Dieser Ratgeber erklärt, was unregelmäßige Verben sind, zeigt die 50 häufigsten mit Bedeutung, liefert die komplette Tabelle und …"
+    }
+  ]
+}

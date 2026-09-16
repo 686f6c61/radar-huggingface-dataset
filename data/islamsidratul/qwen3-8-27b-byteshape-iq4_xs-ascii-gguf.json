@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "islamsidratul/Qwen3.8-27B-ByteShape-IQ4_XS-ASCII-GGUF",
+  "slug": "islamsidratul-qwen3-8-27b-byteshape-iq4_xs-ascii-gguf",
+  "author": "islamsidratul",
+  "url": "https://huggingface.co/islamsidratul/Qwen3.8-27B-ByteShape-IQ4_XS-ASCII-GGUF",
+  "created_at": "2026-09-15T20:25:14.000Z",
+  "updated_at": "2026-09-15T20:51:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3.8",
+    "byteshape",
+    "shapelearn",
+    "vocab-pruned",
+    "ascii",
+    "llama.cpp",
+    "mtp",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26101646336,
+  "parameters_human": "26.10B",
+  "storage_bytes": 12252882720,
+  "storage_human": "12.3 GB",
+  "base_model": "byteshape/Qwen3.8-27B-GGUF, Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

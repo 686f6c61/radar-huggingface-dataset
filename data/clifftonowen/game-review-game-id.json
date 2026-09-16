@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Clifftonowen/game-review-game-id",
+  "slug": "clifftonowen-game-review-game-id",
+  "author": "Clifftonowen",
+  "url": "https://huggingface.co/Clifftonowen/game-review-game-id",
+  "created_at": "2026-09-15T20:02:00.000Z",
+  "updated_at": "2026-09-15T20:02:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "distilbert",
+    "text-classification",
+    "quantized",
+    "en",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:quantized:distilbert/distilbert-base-uncased",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 68297731,
+  "storage_human": "68 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Opportunité, tous les synonymes",
+      "url": "https://www.synonymo.fr/synonyme/opportunit%C3%A9",
+      "snippet": "Dictionnaire des synonymes simple, rapide et gratuit."
+    },
+    {
+      "title": "opportunité - CRISCO - Dictionnaire des synonymes :",
+      "url": "https://crisco4.unicaen.fr/des/synonymes/opportunit%C3%A9",
+      "snippet": "Aug 27, 2026 · à propos, à-propos, aubaine, chance, circonstance, convenance, expédience, justesse, occasion, pertinence, …"
+    },
+    {
+      "title": "opportunité - Synonymes et antonymes | Dico en Ligne Le Robert",
+      "url": "https://dictionnaire.lerobert.com/synonymes/opportunite",
+      "snippet": "Explorez les synonymes et antonymes du mot \"opportunité\", classés par sens : à-propos, bien-fondé, pertinence, occasion ..."
+    },
+    {
+      "title": "Opportunité, tous les synonymes",
+      "url": "https://www.synonymo.fr/synonyme/opportunit%C3%A9?_sm_au_=iZ0m3FnHJnD0l63r",
+      "snippet": "Dictionnaire des synonymes simple, rapide et gratuit."
+    },
+    {
+      "title": "Définitions et synonymes d'opportunité",
+      "url": "https://synonymes-de.fr/opportunit%C3%A9",
+      "snippet": "Synonymes classés par niveau de langage, avec nuances de sens."
+    }
+  ]
+}

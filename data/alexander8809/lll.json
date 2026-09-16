@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Alexander8809/LLL",
+  "slug": "alexander8809-lll",
+  "author": "Alexander8809",
+  "url": "https://huggingface.co/Alexander8809/LLL",
+  "created_at": "2026-09-15T19:13:02.000Z",
+  "updated_at": "2026-09-15T19:19:48.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1940554925,
+  "storage_human": "1.9 GB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Antalya Otelleri - En Uygun Antalya Otel Fiyatları 2026 | Etstur",
+      "url": "https://www.etstur.com/Antalya-Otelleri",
+      "snippet": "Hayalinizdeki tatile karar verdikten sonra Antalya'nın en güzel otelleri arasından dilediğinizi seçerek tüm yılın yorgunluğundan …"
+    },
+    {
+      "title": "Antalya Otelleri - En Uygun Antalya Otelleri Fiyatları 2026 | Jolly",
+      "url": "https://www.jollytur.com/antalya-otelleri",
+      "snippet": "Antalya otel fiyatları sezon yoğunluğu, tesisin bulunduğu bölge, sunulan hizmet kapsamı ve konaklama konseptine göre farklılık …"
+    },
+    {
+      "title": "Antalya Otelleri, En Uygun Antalya Oteli Fiyatları 2026",
+      "url": "https://www.tatilbudur.com/yurtici-oteller/antalya-otelleri",
+      "snippet": "Siz de Akdeniz’in incisi Antalya’da konforlu bir tatil yapmayı düşünüyorsanız Antalya otelleri her şey dahil seçeneklerini hemen …"
+    },
+    {
+      "title": "En Uygun Antalya Otel Fiyatları 2026 - tatilsepeti",
+      "url": "https://www.tatilsepeti.com/antalya-otelleri",
+      "snippet": "Antalya Otelleri en uygun fiyatlar ve 6 taksit imkanları ile tatilsepeti'nde. Hemen şimdi rezervasyon yapın, %50'ye varan indirim …"
+    },
+    {
+      "title": "Antalya Otelleri, En Uygun Antalya Otel Fiyatları 2026 | ENUYGUN",
+      "url": "https://www.enuygun.com/otel/bolge/antalya-481/",
+      "snippet": "Antalya otelleri sayfasında en uygun ve indirimli Antalya otel fiyatlarını bul, hemen rezervasyon yap, taksitli ödeme seçeneklerinden …"
+    }
+  ]
+}

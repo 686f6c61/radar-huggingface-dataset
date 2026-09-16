@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kxyadav85/visual-question-answering-finetune",
+  "slug": "kxyadav85-visual-question-answering-finetune",
+  "author": "kxyadav85",
+  "url": "https://huggingface.co/kxyadav85/visual-question-answering-finetune",
+  "created_at": "2026-09-15T19:19:04.000Z",
+  "updated_at": "2026-09-15T19:19:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "visual-question-answering",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Media Portal - Gabor",
+      "url": "https://media.gabor.de/mediaportal/index.jsp",
+      "snippet": "Mar 9, 2011 · Media Portal The Gabor Media Portal is a website portal to assets that provides simple and easy Web file distribution …"
+    },
+    {
+      "title": "Impressum Gabor Media Portale",
+      "url": "https://media.gabor.de/Impressum.html",
+      "snippet": "Impressum Gabor Shoes GmbH Joachim-Gabor-Platz 1 D-83024 Rosenheim Deutschland Telefon: +49 8031 801 -0 Fax: +49 8031 …"
+    },
+    {
+      "title": "Gabor - Media Portal Selection",
+      "url": "https://media.gabor.de/",
+      "snippet": "© 2018-2026 Gabor Shoes GmbH | Joachim-Gabor-Platz 1 | D-83024 Rosenheim | Telefon: +49 8031 801-0 | Kontakt | Webseite | …"
+    },
+    {
+      "title": "Gabor - Partnerportal",
+      "url": "https://marketplace.gabor.de/",
+      "snippet": "Das Partnerportal von Gabor bietet Zugang zu exklusiven Ressourcen und Informationen für Geschäftspartner."
+    },
+    {
+      "title": "Gabor Shoes",
+      "url": "https://s2.gabor.de/logon/LogonPoint/tmindex.html",
+      "snippet": "Whenever you download a file over the Internet, there is always a risk that it will contain a security threat (a virus or a program that …"
+    }
+  ]
+}

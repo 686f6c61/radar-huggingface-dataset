@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "palli23/wav2vec2-base-samromur2105-100h",
+  "slug": "palli23-wav2vec2-base-samromur2105-100h",
+  "author": "palli23",
+  "url": "https://huggingface.co/palli23/wav2vec2-base-samromur2105-100h",
+  "created_at": "2026-09-15T20:27:52.000Z",
+  "updated_at": "2026-09-15T20:28:12.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "is"
+  ],
+  "tags": [
+    "safetensors",
+    "wav2vec2",
+    "is",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94403241,
+  "parameters_human": "94.4M",
+  "storage_bytes": 377643548,
+  "storage_human": "378 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "الأهلي: قائمة الفريق - 365Scores",
+      "url": "https://www.365scores.com/ar/football/team/al-ahli-jeddah-8946/squad",
+      "snippet": "Oct 11, 2005 · احصل على معلومات مفصلة كاملة عن الفريق ولاعبين الأهلي. تعرف على مركز كل لاعب وأرقام القمصان والمزيد."
+    },
+    {
+      "title": "تشكيلة الأهلي 2026/2027 | كووورة",
+      "url": "https://www.kooora.com/%D9%83%D8%B1%D8%A9-%D8%A7%D9%84%D9%82%D8%AF%D9%85/%D9%81%D8%B1%D9%8A%D9%82/%D8%A7%D9%84%D8%A7%D9%94%D9%87%D9%84%D9%8A/%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%A7%D9%84%D9%84%D8%A7%D8%B9%D8%A8%D9%8A%D9%86/1q2hx9pw8c7x88utqunk4e6xl",
+      "snippet": "استعرض تفاصيل فريق الأهلي بما في ذلك مراكز اللاعبين وأرقام القمصان والمزيد."
+    },
+    {
+      "title": "الأهلي النتائج والإحصائيات وأبرز اللقطات. | كووورة",
+      "url": "https://www.kooora.com/%D9%83%D8%B1%D8%A9-%D8%A7%D9%84%D9%82%D8%AF%D9%85/%D9%81%D8%B1%D9%8A%D9%82/%D8%A7%D9%84%D8%A7%D9%94%D9%87%D9%84%D9%8A/aj1bdyuwq8pdwycaa9kba8uni",
+      "snippet": "4 days ago · احصل على جميع الأخبار والتحديثات الأخيرة لفريق الأهلي بما في ذلك أخبار الانتقالات القادمة والمباريات والنتائج المباشرة."
+    },
+    {
+      "title": "الأهلي | الدوري السعودي للمحترفين",
+      "url": "https://www.spl.com.sa/ar/teams/al-ahli/index",
+      "snippet": "Official page of الأهلي — squad, fixtures, results and latest news on Saudi Pro League."
+    },
+    {
+      "title": "الرئيسية | Al-Ahli FC",
+      "url": "https://www.alahlifc.sa/",
+      "snippet": "قلب واحد يجمع عشّاقه #الأهلي. في «كأس تحدي الشتاء».. سيدات الأهلي يمطرن شباك نيوم بـ 8 أهداف."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "leonsarmiento/Occamy-1.0-6bit-XL-mlx",
+  "slug": "leonsarmiento-occamy-1-0-6bit-xl-mlx",
+  "author": "leonsarmiento",
+  "url": "https://huggingface.co/leonsarmiento/Occamy-1.0-6bit-XL-mlx",
+  "created_at": "2026-09-16T00:28:48.000Z",
+  "updated_at": "2026-09-16T01:23:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "mlx-vlm",
+    "moe",
+    "multimodal",
+    "vision",
+    "agentic",
+    "coding",
+    "tool-use",
+    "reasoning",
+    "basequant-xl",
+    "occamy",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Accio-Lab/occamy-1.0",
+    "base_model:quantized:Accio-Lab/occamy-1.0",
+    "license:apache-2.0",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 29896018768,
+  "storage_human": "29.9 GB",
+  "base_model": "Accio-Lab/occamy-1.0",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Can’t login and stuck at “Set up PIN” - Microsoft Q&A",
+      "url": "https://learn.microsoft.com/en-us/answers/questions/5980361/can-t-login-and-stuck-at-set-up-pin",
+      "snippet": "Aug 19, 2026 · If that doesn't work, another solution that may help is to disconnect the internet or Wi-Fi cable from your PC > Restart …"
+    },
+    {
+      "title": "file:///C:/WINDOWS/FONTS/CAMBRIAB.TTF' file does not conform to …",
+      "url": "https://learn.microsoft.com/en-us/answers/questions/5981757/file-c-windows-fonts-cambriab-ttf-file-does-not-co",
+      "snippet": "Aug 21, 2026 · This issue is caused by the August .NET Security update (KB5120708). And Microsoft is investigating this issue. No …"
+    },
+    {
+      "title": "Sysmon - Sysinternals | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon",
+      "snippet": "6 days ago · Sysmon includes the following capabilities: Logs process creation with full command line for both current and parent …"
+    },
+    {
+      "title": "BSOD DRIVER_POWER_STATE_FAILURE - Microsoft Q&A",
+      "url": "https://learn.microsoft.com/en-us/answers/questions/5980225/bsod-driver-power-state-failure",
+      "snippet": "Aug 19, 2026 · DRIVER_POWER_STATE_FAILURE bug check 0x0000009F means a driver is in an inconsistent or invalid power …"
+    },
+    {
+      "title": "I cannot register the exam - Microsoft Q&A",
+      "url": "https://learn.microsoft.com/en-us/answers/questions/5986686/i-cannot-register-the-exam",
+      "snippet": "Aug 26, 2026 · ERROR_VUE_WIDE_BLOCK is typically because your account has been blocked by Pearson Vue which normally …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "joshycodes/qwen3-4b-sorrel-selfloop-g2-selfjudge-chat",
+  "slug": "joshycodes-qwen3-4b-sorrel-selfloop-g2-selfjudge-chat",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/qwen3-4b-sorrel-selfloop-g2-selfjudge-chat",
+  "created_at": "2026-09-16T00:06:36.000Z",
+  "updated_at": "2026-09-16T00:30:31.000Z",
+  "license": "internal-research",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "flourishing-training",
+    "continued-pretraining",
+    "base_model:joshycodes/qwen3-4b-sorrel-selfloop-g2-midtrain",
+    "base_model:finetune:joshycodes/qwen3-4b-sorrel-selfloop-g2-midtrain",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 25702152989,
+  "storage_human": "25.7 GB",
+  "base_model": "joshycodes/qwen3-4b-sorrel-selfloop-g2-midtrain",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=04a895f19b046064207082279a5a61ba",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=04a895f19b046064207082279a5a61ba",
+      "snippet": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and …"
+    },
+    {
+      "title": "Microsoft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft",
+      "snippet": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington. The company …"
+    }
+  ]
+}

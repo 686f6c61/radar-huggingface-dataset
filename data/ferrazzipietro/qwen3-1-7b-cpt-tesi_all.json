@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ferrazzipietro/Qwen3-1.7B-cpt-tesi_all",
+  "slug": "ferrazzipietro-qwen3-1-7b-cpt-tesi_all",
+  "author": "ferrazzipietro",
+  "url": "https://huggingface.co/ferrazzipietro/Qwen3-1.7B-cpt-tesi_all",
+  "created_at": "2026-09-09T12:06:12.000Z",
+  "updated_at": "2026-09-16T00:18:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 104,
+  "trending_score": 0,
+  "parameters": 1720030208,
+  "parameters_human": "1.72B",
+  "storage_bytes": 70343195884,
+  "storage_human": "70.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Where to enter your Office product key | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/microsoft-365-activation-licensing/office-install/where-to-enter-your-office-product-key",
+      "snippet": "If your purchase of Office or Microsoft 365 came with a product key, you enter your product key on one of the websites listed below …"
+    },
+    {
+      "title": "Using product keys with Microsoft 365 | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/microsoft-365-activation-licensing/office-install/using-product-keys-with-microsoft-365",
+      "snippet": "Use your Microsoft account , not your product key, to install and activate Office and individually purchased Microsoft 365 apps, such …"
+    },
+    {
+      "title": "Where to Enter Your Office Product Key (2026) – Activate Microsoft 365 ...",
+      "url": "https://dir.md/support.microsoft.com/en-us/office/where-to-enter-your-office-product-key-0a82e5ae-739e-4b92-a6f4-2ec780c185db/",
+      "snippet": "Learn where to enter your Microsoft Office or Microsoft 365 product key, activate Office correctly, fix redemption errors, recover …"
+    },
+    {
+      "title": "Office 365 (Microsoft 365): Enter product key – click here",
+      "url": "https://www.practical-tips.com/ms-office/office-365-microsoft-365-enter-product-key-click-here/",
+      "snippet": "Oct 26, 2025 · Before you can use Office 365, now Microsoft 365, you must enter a product key. You will be prompted to do so during …"
+    },
+    {
+      "title": "product key - Microsoft Q&A",
+      "url": "https://learn.microsoft.com/en-us/answers/questions/5875674/product-key",
+      "snippet": "Apr 29, 2026 · If you have purchased a Microsoft 365 subscription from a 3rd party retailer, this is a first-time activation and have a …"
+    }
+  ]
+}

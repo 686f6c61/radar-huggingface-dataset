@@ -5,7 +5,7 @@
   "author": "Dohyeon1",
   "url": "https://huggingface.co/Dohyeon1/Qwen3-30B-A3B-Sub-MoE-ngroups96",
   "created_at": "2026-09-15T18:39:23.000Z",
-  "updated_at": "2026-09-15T18:47:39.000Z",
+  "updated_at": "2026-09-16T00:33:45.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 30532122624,
   "parameters_human": "30.53B",
-  "storage_bytes": 61078033554,
-  "storage_human": "61.1 GB",
+  "storage_bytes": 122144644458,
+  "storage_human": "122.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

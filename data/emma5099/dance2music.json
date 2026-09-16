@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Emma5099/dance2music",
+  "slug": "emma5099-dance2music",
+  "author": "Emma5099",
+  "url": "https://huggingface.co/Emma5099/dance2music",
+  "created_at": "2026-09-15T23:36:21.000Z",
+  "updated_at": "2026-09-15T23:36:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "music2pose",
+    "dance",
+    "pose-generation",
+    "music",
+    "transformer",
+    "audio-to-motion",
+    "other",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26296191,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Traduction de \"don't leave me\" en français - Reverso Context",
+      "url": "https://context.reverso.net/traduction/anglais-francais/don%27t+leave+me",
+      "snippet": "What I am, don't leave me without your love. Ce que je suis, ne me laisse pas sans ton amour. Listen, young man if you don't leave …"
+    },
+    {
+      "title": "Traduction de don't leave me — Dictionnaire Anglais-Français",
+      "url": "https://dictionnaire.reverso.net/anglais-francais/don%27t+leave+me",
+      "snippet": "Explorez différentes traductions de \"don't leave me\" triées par fréquence et pertinence pour trouver l’adéquation parfaite à votre …"
+    },
+    {
+      "title": "Paroles et traduction BLACKstreet : Don't Leave Me - paroles de …",
+      "url": "https://www.lacoccinelle.net/243203.html",
+      "snippet": "No, no, no Non, non, non If you take your love away from me Si tu m'enlèves ton amour I'll go crazy, I'll go insane Je deviendrai …"
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.com/?hl=fr",
+      "snippet": "Le service sans frais de Google traduit instantanément des mots, des expressions et des pages Web entre le français et plus de 100 …"
+    },
+    {
+      "title": "don't leave me - Translation into French - examples English | Reverso ...",
+      "url": "https://context.reverso.net/translation/english-french/don%27t+leave+me",
+      "snippet": "What I am, don't leave me without your love. Ce que je suis, ne me laisse pas sans ton amour. Listen, young man if you don't leave …"
+    }
+  ]
+}

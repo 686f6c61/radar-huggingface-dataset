@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Jktlestari/mocov3-checkpoint",
+  "slug": "jktlestari-mocov3-checkpoint",
+  "author": "Jktlestari",
+  "url": "https://huggingface.co/Jktlestari/mocov3-checkpoint",
+  "created_at": "2026-09-15T21:00:06.000Z",
+  "updated_at": "2026-09-15T21:00:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Uludağ Üniversitesi",
+      "url": "https://unisis.uludag.edu.tr/",
+      "snippet": "KULLANICI ADI (ÖĞRENCİ NUMARASI) ÖĞRENME VE KURUMSAL E-POSTA ADRESİNİN AKTİFLEŞTİRİLMESİ YKS ile …"
+    },
+    {
+      "title": "Fbu Unisis",
+      "url": "https://unisis.fbu.edu.tr/",
+      "snippet": "FBU Unisis, öğrenci ve personel için giriş platformudur. Üniversite bilgilerine erişim sağlar."
+    },
+    {
+      "title": "UNİSİS (Öğrenci Numarası ve Şifre) | ÖĞRENCİ İŞLERİ DAİRE …",
+      "url": "https://uludag.edu.tr/oidb/unisis-otomasyon-sistemi-ogrenci-numarasi-ve-sifre-69152",
+      "snippet": "Üniversitemize yerleşen ve kesin kayıt işlemini tamamlayan öğrenciler, öğrenci numaralarını öğrenmek için …"
+    },
+    {
+      "title": "Fbu Unisis",
+      "url": "https://portal.fbu.edu.tr/Unisis",
+      "snippet": "Geleceğin Meslekleri: Dijital Çağda İletişimin ve Medyanın Geleceği 20.07.2026 09:05:00"
+    },
+    {
+      "title": "Fbu Unisis",
+      "url": "https://unisis.fbu.edu.tr/apps",
+      "snippet": "Üniversitemizdeki kayıtlı öğrencilere ve müfredat derslerine ilişkin bilgilerin yer aldığı öğrenci işleri sistemidir. Öğretim üyeleri …"
+    }
+  ]
+}

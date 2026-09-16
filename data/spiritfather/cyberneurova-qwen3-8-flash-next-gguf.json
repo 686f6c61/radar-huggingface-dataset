@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "spiritfather/cyberneurova-Qwen3.8-Flash-Next-GGUF",
+  "slug": "spiritfather-cyberneurova-qwen3-8-flash-next-gguf",
+  "author": "spiritfather",
+  "url": "https://huggingface.co/spiritfather/cyberneurova-Qwen3.8-Flash-Next-GGUF",
+  "created_at": "2026-09-16T01:31:21.000Z",
+  "updated_at": "2026-09-16T03:07:59.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "creative-writing",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 617700219264,
+  "storage_human": "617.7 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Teams Blog | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/category/microsoftteams/blog/microsoftteamsblog",
+      "snippet": "2 days ago · Welcome to the Microsoft Teams Blog! Learn best practices, news, and trends directly from the team behind Microsoft …"
+    },
+    {
+      "title": "Microsoft Teams Error Code 0xcaa80000 | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/discussions/microsoftteams/microsoft-teams-error-code-0xcaa80000/1565311",
+      "snippet": "Aug 4, 2020 · Teams was signing in previously for the user, but has stopped working today."
+    },
+    {
+      "title": "microsoft teams怎么加入会议-百度经验",
+      "url": "https://jingyan.baidu.com/article/e52e3615b3fabe01c60c51dd.html",
+      "snippet": "Jan 3, 2000 · microsoft teams怎么加入会议,创建完成会议后就可以把会议链接发给参会人员了，参会人员直接打开链接就可以加入了 …"
+    },
+    {
+      "title": "怎么使用Microsoft Teams-百度经验",
+      "url": "https://jingyan.baidu.com/article/00a07f380c970f82d028dc8b.html",
+      "snippet": "Feb 23, 2018 · 怎么使用Microsoft Teams,MicrooftTeam团队协作工具，里面可以公布活动，群组讨论、文件共享，而且还有丰富的表 …"
+    },
+    {
+      "title": "New Microsoft Teams bulk installer is now available for Windows ...",
+      "url": "https://techcommunity.microsoft.com/blog/microsoftteamsblog/new-microsoft-teams-bulk-installer-is-now-available-for-windows/4046286",
+      "snippet": "We are happy to share that the new Microsoft Teams bulk installer is now available for Windows. We shared the news of the general …"
+    }
+  ]
+}
